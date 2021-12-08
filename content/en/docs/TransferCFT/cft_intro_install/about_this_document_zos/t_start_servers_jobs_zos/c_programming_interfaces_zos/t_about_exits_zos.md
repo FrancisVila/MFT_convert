@@ -52,7 +52,7 @@ To create exits with Assembler, access the following files:
 
 | File  | Definition  |
 | --- | --- |
-|  AEX*DLL  |  Sample program in Assembler. This sample provides the 3 steps needed in a Transfer CFT exit.  |
+|  AEX*DLL  |  Sample  program in Assembler. This sample provides the 3 steps needed in a Transfer CFT exit.  |
 |  AEX*UST  |  Macro containing the DSECTs of the exchange areas with the Transfer CFT.  |
 
 
@@ -184,7 +184,7 @@ Calls to a Transfer CFT synchronous API are only supported in DLL.
 |  CEXADLL  |  I91APICP  |  LINRDXG0  |  LINKEXLE  |  CFTDXG0  |
 |  CEXEDLL  |  I91APICP  |  LINRDXG1  |  LINKEXLE  |  CFTDXG1  |
 |  CEXFDLL  |  I91APICP  |  LINRDXG2  |  LINKEXLE  |  CFTDXG2  |
-| CEXBDLL  | I91APICP  | LINRDXG9  | LINKEXLE  | CFTDXG9  |
+| CEXBDLL    | I91APICP    | LINRDXG9    | LINKEXLE      | CFTDXG9  |
 
 
 **Exit examples summary for Assembler**

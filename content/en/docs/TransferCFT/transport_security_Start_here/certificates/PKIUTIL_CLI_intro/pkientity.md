@@ -8,8 +8,7 @@ This topic describes how to create lists of certificate authority IDs in the PKI
 
 The maximum number of CAs that you can enter for the ROOTCID parameter of the CFTSSL command is 10. To overcome this limitation, use the PKIENTITY object  to create a list of up to 100 certificate authority IDs. You can then enter up to ten PKIENTITY objects in the CFTSSL ROOTCID parameter, to enable a maximum of 1000 certificate authorities IDs in the PKI database.
 
-> **Note:**
->
+> **Note**  
 > You can directly update PKIENTITY content in the PKI internal datafile without  modifying Transfer CFT parameter settings.
 
 ## Define a certificate list
@@ -21,8 +20,7 @@ To define a certificate list, use the PKIENTITY command with the following param
 -   MODE: An action on the certificate, CREATE, REPLACE, or DELETE.  (default = REPLACE)
 -   PKIFNAME: The name of the PKI internal datafile to use. (default = $CFTPKU)
 
-> **Note:**
->
+> **Note**  
 > See the PKICER command for more information on certificate parameters and settings.
 
 **Caution**  The PKIENTITY command neither checks nor manages the existing certificates in the internal PKI internal datafile when creating a new certificates list.
@@ -37,8 +35,7 @@ PKIUTIL PKIENTITY id = new_entity, certificates = "(‘CA1’, ‘CA2’, ‘CA3
 
 In the CFTSSL definition that follows, the `rootcid `parameter has two identifiers. However, you cannot distinguish in this definition if the identifiers correspond to a PKIENTITY or a PKICER object.
 
-> **Note:**
->
+> **Note**  
 > The rootcid parameter in the CFTSSL object can contain certificate IDs  (Root and Intermediate CAs), entities, or both.
 
 ```

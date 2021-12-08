@@ -4,8 +4,7 @@
     "weight": "200"
 }Use the CFTSSH command to describe a security profile.
 
-> **Note:**
->
+> **Note**  
 > When using the SFTP protocol, the CFTSSH definition contains the SSH connection parameters for  server or client mode.
 
 ## Server
@@ -16,15 +15,15 @@ The CFTSSH object parameters for a server definition (DIRECT = SERVER).
 | Parameter  | Description  |
 | --- | --- |
 |  ID = identifier  |  Identifier of the security profile.  |
-|  CIPHLIST = {(num, num, ..)}  |  List of allowed ciphers (encryption methods).<br/>Each value defines three algorithms:<br/> • Authentication algorithm<br/> • Encryption algorithm<br/> • Sealing algorithm<br/>This list is compared with the list proposed by the client in order of preference, for the purpose of determining the suite to be negotiated.<br/>{{< TransferCFT/componentlongname  >}} supports the following: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc, 3des-cbc, blowfish-cbc. <blockquote> **Note:**<br/>If the field is empty, the default list is: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc. </blockquote>  |
-| CLIPUBKEY  |  When DIRECT=SERVER<br/>Key Id containing the client public key (RSA). When defined, the Transfer CFT server checks that the client public key referenced in CLIPUBKEY matches the public key provided by the client. If an error occurs, the connection is rejected with a DIAGI 433.  |
+|  CIPHLIST = {(num, num, ..)}  |  List of allowed ciphers (encryption methods).<br/>Each value defines three algorithms:<br/> • Authentication algorithm<br/> • Encryption algorithm<br/> • Sealing algorithm<br/>This list is compared with the list proposed by the client in order of preference, for the purpose of determining the suite to be negotiated.<br/>{{< TransferCFT/componentlongname  >}} supports  the following: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc, 3des-cbc, blowfish-cbc. <blockquote> **Note**<br/>If the field is empty, the default list is: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc. </blockquote>  |
+| CLIPUBKEY  |  When DIRECT=SERVER<br/>Key Id  containing the client public key (RSA). When defined, the Transfer CFT server checks that the client public key referenced in CLIPUBKEY matches the public key provided by the client. If an error occurs, the connection is rejected with a DIAGI 433.  |
 | Comment  | Free comment.  |
 |  DIRECT<br/>  |  The security profile is applicable in this mode (SERVER).  |
 | HMAC  |  List of accepted HMAC (keyed-hash message authentication code).<br/> • Choose from the following: hmac-sha2-512, hmac-sha2-256, hmac-sha1, none.<br /> <br/> • If the field is empty, the default list is hmac-sha2-512, hmac-sha2-256, hmac-sha1.</li>  |
 | KEYEXCHG  |  List of key exchange methods to use.<br/>Choose from the following: curve25519-sha256@libssh.org, ecdh-sha2-nistp256, diffie-hellman-group14-sha1, diffie-hellman-group1-sha1.  |
 |  MODE = {REPLACE | CREATE | DELETE}  |  Action for the command. For DELETE mode, the command is deleted from the PARAMETERS database; only the ID and DIRECT parameters are required.  |
 | ORIGIN = string  | This parameter indicates the object's origin.  |
-| SRVPRIVKEY  |  When DIRECT=SERVER:<br/>Key Id containing the server private key (RSA) to use with key authentication.  |
+| SRVPRIVKEY  |  When DIRECT=SERVER:<br/>Key Id  containing the server private key (RSA) to use with key authentication.  |
 
 
 ## Client
@@ -35,15 +34,15 @@ The CFTSSH object parameters for a client definition (DIRECT = CLIENT).
 | Parameter  | Description  |
 | --- | --- |
 |  ID = identifier  |  Identifier of the security profile.  |
-|  CIPHLIST = {(num, num, ..)}  |  List of allowed ciphers (encryption methods).<br/>Each value defines three algorithms:<br/> • Authentication algorithm<br/> • Encryption algorithm<br/> • Sealing algorithm<br/>This list is compared with the list proposed by the client in order of preference, for the purpose of determining the suite to be negotiated.<br/>{{< TransferCFT/componentlongname  >}} supports the following: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc, 3des-cbc, blowfish-cbc. <blockquote> **Note:**<br/>If the field is empty, the default list is: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc. </blockquote>  |
-| CLIPRIVKEY  | When DIRECT=CLIENT Key Id containing the client private key (RSA) to use with key authentication. When defined, Transfer CFT uses key authentication. If an error occurs, the connection is rejected with a DIAGI 433.  |
+|  CIPHLIST = {(num, num, ..)}  |  List of allowed ciphers (encryption methods).<br/>Each value defines three algorithms:<br/> • Authentication algorithm<br/> • Encryption algorithm<br/> • Sealing algorithm<br/>This list is compared with the list proposed by the client in order of preference, for the purpose of determining the suite to be negotiated.<br/>{{< TransferCFT/componentlongname  >}} supports  the following: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc, 3des-cbc, blowfish-cbc. <blockquote> **Note**<br/>If the field is empty, the default list is: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc. </blockquote>  |
+| CLIPRIVKEY  | When DIRECT=CLIENT Key Id  containing the client private key (RSA) to use with key authentication. When defined, Transfer CFT uses key authentication. If an error occurs, the connection is rejected with a DIAGI 433.  |
 | Comment  | Free comment.  |
 |  DIRECT  |  The security profile is applicable in this mode (CLIENT).  |
 | HMAC  |  List of accepted HMAC (keyed-hash message authentication code).<br/> • Choose from the following: hmac-sha2-512, hmac-sha2-256, hmac-sha1, none.<br /> <br/> • If the field is empty, the default list is hmac-sha2-512, hmac-sha2-256, hmac-sha1.</li>  |
 | KEYEXCHG  | List of key exchange methods to use. Choose from the following: curve25519-sha256@libssh.org, ecdh-sha2-nistp256, diffie-hellman-group14-sha1, diffie-hellman-group1-sha1.  |
 |  MODE = {REPLACE | CREATE | DELETE}  |  Action for the command. For DELETE mode, the command is deleted from the PARAMETERS database; only the ID and DIRECT parameters are required.  |
 | ORIGIN = string  | This parameter indicates the object's origin.  |
-| SRVPUBKEY  |  When DIRECT=CLIENT:<br/>Key Id containing the server public key (RSA) for the server. When defined, the Transfer CFT client checks that the public key referenced by SRVPUBKEY matches the key provided by the server.<br/>If an error occurs, the connection is rejected with a DIAGI 264.  |
+| SRVPUBKEY  |  When DIRECT=CLIENT:<br/>Key Id  containing the server public key (RSA) for the server. When defined, the Transfer CFT client checks that the public key referenced by SRVPUBKEY matches the key provided by the server.<br/>If an error occurs, the connection is rejected with a DIAGI 264.  |
 
 
 Example 1

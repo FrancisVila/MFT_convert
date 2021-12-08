@@ -29,7 +29,7 @@ topics
 |  <a href="../../../command_summary/parameter_intro/exit">EXIT</a>  |  Identifier of the CFTEXIT command associated with this transfer.  |
 |  <a href="../../../command_summary/parameter_intro/faction">FACTION</a>  |  Action on the file for a receive transfer.  |
 |  <a href="../../../command_summary/parameter_intro/fblksize">FBLKSIZE</a>  |  This parameter (in bytes) controls the "blocking factor" of the receiver file records: according to the system, it defines the disk block size and/or the file input/output buffer size.  |
-| <a href="../../../command_summary/parameter_intro/fcharset">FCHARSET</a>  | Defines the local file encoding.  |
+| <a href="../../../command_summary/parameter_intro/fcharset">FCHARSET</a>  | Defines the local file  encoding.  |
 |  <a href="../../../command_summary/parameter_intro/fcheck">FCHECK</a>  |  Checks record length attributes.  |
 |  <a href="../../../command_summary/parameter_intro/fcode#fcode_CFTSEND">FCODE</a>  |  Code of the receiver file data (local data code).  |
 |  <a href="../../../command_summary/parameter_intro/fdisp#fdisp_CFTRECV">FDISP</a>  |  Presence check indicator of the receiver file used to determine the action of the Transfer CFT monitor.  |
@@ -50,7 +50,7 @@ topics
 |  <a href="../../../command_summary/parameter_intro/maxtime">MAXTIME</a>  |  Transfer validity limit time for the final date (MAXDATE).  |
 |  <a href="../../../command_summary/parameter_intro/mindate">MINDATE</a>  |  Minimum transfer validity date.  |
 |  <a href="../../../command_summary/parameter_intro/mintime">MINTIME</a>  |  Transfer initial validity time, from the first day (MINDATE).  |
-| <a href="../../../command_summary/parameter_intro/ncharset">NCHARSET</a>  | Defines the destination file encoding that is used on a file to encode or decode network data.  |
+| <a href="../../../command_summary/parameter_intro/ncharset">NCHARSET</a>  | Defines the destination file encoding that is used on a file to encode or decode network  data.  |
 | <a href="../../../command_summary/parameter_intro/ncode">NCODE</a>  | The network data code when receiving transfers. *Available only when using SFTP.*  |
 |  <a href="../../../command_summary/parameter_intro/ncomp">NCOMP</a>  |  Compression of on-line data requested by the receiver.  |
 |  <a href="../../../command_summary/parameter_intro/netband">NETBAND</a>  |  Select the outgoing port range.  |
@@ -58,7 +58,7 @@ topics
 |  <a href="../../../command_summary/parameter_intro/opermsg">OPERMSG</a>  |  Defines the categories of transfer information messages intended for the operator (all the messages also being written in the log file).  |
 |  <a href="../../../command_summary/parameter_intro/pri">PRI</a>  |  Receive request selection priority.  |
 |  <a href="../../../command_summary/parameter_intro/ruser">RUSER</a>  |  Identifier of the file receiver user.  |
-| <a href="../../../command_summary/parameter_intro/sourceappl">SOURCEAPPL</a>  | The identifier of the local file sender application.  |
+| <a href="../../../command_summary/parameter_intro/sourceappl">SOURCEAPPL</a>  | The identifier of the local file sender application.          |
 |  <a href="../../../command_summary/parameter_intro/state">STATE</a>  |  Defines the transfer request state.  |
 |  <a href="../../../command_summary/parameter_intro/suser">SUSER</a>  |  Identifier of the file sender user.  |
 | <a href="../../../command_summary/parameter_intro/targetappl">TARGETAPPL</a>  | Identifier of the local file receiver application.  |

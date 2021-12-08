@@ -29,8 +29,7 @@ commands with the same ID are required:
 -   The other containing
     IMPL = YES
 
-> **Note:**
->
+> **Note**  
 > The default CFTSEND object for its part applies to all the other
 > model files in the case of an explicit SEND: it is taken into account
 > whenever the SEND IDF does not correspond to a CFTSEND command containing

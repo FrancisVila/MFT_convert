@@ -14,8 +14,7 @@
 
 The  file type. Some FTYPE parameter values are OS specific. Refer to the Transfer CFT OS-specific documentation for more information.
 
-> **Note:**
->
+> **Note**  
 > When using the SFTP protocol and FTYPE = T, O, X, J or F, the file is considered a text file and there is no specific treatment according to the value. This means that the newline character (EOL character) can be  the CRLF (x0Dx0A)  or LF (x0A) on Windows, or LF (x0A) on UNIX systems.
 
 UNIX<span id="UNIX_ftype"></span>
@@ -43,7 +42,7 @@ Windows
 |  B  |  BINARY  | Binary  |
 |  V  |  BINARY  | Binary file emulating locally a variable file format  |
 |  T  |  ASCII  | Text file with LF or CRLF as end-of-line separator  |
-| F  | ASCII  | Text file where the last character '1A' is transmitted (is not considered an EOF character)  |
+| F  | ASCII  | Text file where the last character '1A' is transmitted (is not    considered an EOF character)  |
 | O  | ASCII  | Text file with CRLF as end-of-line separator  |
 | X  | ASCII  | Text file with LF as end-of-line separator  |
 | J  | ASCII  |  Stream text<br/>Using stream text (J) allows a text type file to be sent that contains records that exceed 32 KB. As opposed to text type (FTYPE=T), stream text does not add an EOL sequence (LF or CRLF) to the received file.<br/>When using stream text (FTYPE=J), the sender and the receiver must both have the FTYPE set to J. Setting only the sender or receiver to FTYPE=J results in unexpected content for the transferred file.  |
@@ -80,8 +79,7 @@ HFS file characteristics
 | J  | EBCDIC  |  Stream text<br/>Using stream text (J) allows a text type file to be sent that contains records that exceed 32 KB. As opposed to text type (FTYPE=T), stream text does not add an EOL sequence (LF or CRLF) to the received file.<br/>When using stream text (FTYPE=J), the sender and the receiver must both have the FTYPE set to J. Setting only the sender or receiver to FTYPE=J results in unexpected content for the transferred file.  |
 
 
-> **Note:**
->
+> **Note**  
 > FTYPE values are OS specific. Refer to the Transfer CFT z/OS documentation for more information.
 
 IBM i (OS400)
@@ -90,21 +88,54 @@ Native files
 
 The following table lists the different types of files that can be used according to the type of data to transfer.
 
-> **Note:**
->
+> **Note**  
 > Bold  values indicate a recommended combination. For example, FTYPE=D and FRECFM=V, are the recommended settings for PF-DTA files with variable data.
 
-
-|  FTYPE  |  FRECFM  |  Supported files and data organizations (if applicable).  |
-| --- | --- | --- |
-| ‘D’  | ‘F’  | **PF-DTA with fixed data**, PF-DTA with variable data, PF-SRC, SAVF  |
-| ‘V’  | PF-DTA with fixed data, **PF-DTA with variable data**, PF-SRC, SAVF  |
-| ‘S’  | ‘F’  |  PF-DTA with fixed data, PF-DTA with variable data, **PF-SRC**  |
-|   | ‘V’  | PF-DTA with fixed data, PF-DTA with variable data, PF-SRC  |
-| ‘E’  | ‘F’  | PF-DTA with fixed data, PF-DTA with variable data, **PF-SRC**  |
-|   | ‘V’  | PF-DTA with fixed data, PF-DTA with variable data, PF-SRC  |
-| ‘Z’  | ‘F’, ‘V’  | **SAVF**  |
-
+<table>
+   <thead>
+      <tr>
+<th ><p>FTYPE</p>         </th>
+<th ><p>FRECFM</p>         </th>
+<th ><p>Supported files and data organizations (if applicable).</p>         </th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td rowspan="2" >‘D’         </td>
+         <td >‘F’         </td>
+         <td ><strong>PF-DTA with fixed data</strong>, PF-DTA with variable data, PF-SRC, SAVF         </td>
+      </tr>
+      <tr>
+         <td >‘V’         </td>
+         <td >PF-DTA with fixed data, <strong>PF-DTA with variable data</strong>, PF-SRC, SAVF         </td>
+      </tr>
+      <tr>
+         <td >‘S’         </td>
+         <td >‘F’         </td>
+         <td ><p>PF-DTA with fixed data, PF-DTA with variable data, <strong>PF-SRC</strong></p>         </td>
+      </tr>
+      <tr>
+         <td >          </td>
+         <td >‘V’         </td>
+         <td >PF-DTA with fixed data, PF-DTA with variable data, PF-SRC         </td>
+      </tr>
+      <tr>
+         <td >‘E’         </td>
+         <td >‘F’         </td>
+         <td >PF-DTA with fixed data, PF-DTA with variable data, <strong>PF-SRC</strong>         </td>
+      </tr>
+      <tr>
+         <td >          </td>
+         <td >‘V’         </td>
+         <td >PF-DTA with fixed data, PF-DTA with variable data, PF-SRC         </td>
+      </tr>
+      <tr>
+         <td >‘Z’         </td>
+         <td >‘F’, ‘V’         </td>
+         <td ><strong>SAVF</strong>         </td>
+      </tr>
+   </tbody>
+</table>
 
 Default FTYPE or FRECFM value
 
@@ -126,15 +157,14 @@ The following table lists the different types of files that can be used accordin
 
 | FTYPE  | FRECFM  | Type of file  |
 | --- | --- | --- |
-|  ‘S’  | ‘V’, ‘F’, ‘ ’  | Text  |
-|  ‘D’ , ‘ ’  | ‘V’, ‘F’, ‘ ’  | Text  |
-|  ‘E’  | ‘V’, ‘F’, ‘ ’  | Text  |
-|  ‘Z’  | ‘V’, ‘F’, ‘ ’  | Binary  |
-|  ‘J’  | ‘V’, ‘F’, ‘ ’  |  Stream text is an alternative way to transfer a text file. Every line of a file must end with an LF or CR/LF. However, during a transfer the CR/LF are changed to LFs. This enables a quicker reading, and a faster transfer.<br/>When using stream text (FTYPE=J), the sender and the receiver must both have the FTYPE set to J. Setting only the sender or receiver to FTYPE=J results in unexpected content for the transferred file. <blockquote> **Note:**<br/>This transfer mode is not available for native side transfers. </blockquote>  |
+|              ‘S’  | ‘V’, ‘F’, ‘ ’  | Text    |
+|             ‘D’ , ‘ ’  | ‘V’, ‘F’,  ‘ ’  | Text  |
+|              ‘E’  | ‘V’, ‘F’,  ‘ ’  | Text  |
+|              ‘Z’  | ‘V’, ‘F’, ‘ ’  | Binary  |
+|              ‘J’  | ‘V’, ‘F’,  ‘ ’  |  Stream text  is an alternative way to transfer a text file. Every line of a file must end with an LF or CR/LF. However, during a transfer the CR/LF are changed to LFs. This enables a quicker reading, and a faster transfer.<br/>When using stream text (FTYPE=J), the sender and the receiver must both have the FTYPE set to J. Setting only the sender or receiver to FTYPE=J results in unexpected content for the transferred file. <blockquote> **Note**<br/>This transfer mode is not available for native side transfers. </blockquote>  |
 
 
-> **Note:**
->
+> **Note**  
 > FTYPE values are OS specific. Refer to the Transfer CFT IBM i Installation and Operations Guide for more information.
 
 **HP NonStop**
@@ -150,7 +180,7 @@ For Unix files, use the values in the Unix [table](#UNIX_ftype) above. For nativ
 |  T  |  ASCII  | Text file with LF or CRLF as end-of-line separator  |
 |  O  |  ASCII  | Text file with CRLF as end-of-line separator  |
 |  X  |  ASCII  | Text file with LF as end-of-line separator  |
-| J  | ASCII  |  Text file with LF or CRLF as end-of-line separator<br/>FTYPE = J refers to stream text. The stream text type allows sending a text file that contains records that are larger than 32 KB. Unlike classical text types (T, O, X) the stream text type does not add an EOL sequence (LF or CRLF) at the end of the received file.  |
+| J  | ASCII  |  Text file with LF or CRLF as end-of-line separator<br/>FTYPE = J refers to stream text. The stream text type allows sending a text file that contains records  that are larger than 32 KB. Unlike classical text types (T, O, X) the stream text type does not add an EOL sequence (LF or CRLF) at the end of the received file.  |
 | E  | ASCII  | Edit native files.  |
 | N  | BINARY  | Non-edit native file (force the detection of native files rather than OSS ones).  |
 

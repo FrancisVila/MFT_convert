@@ -18,35 +18,35 @@ The A05ALL JCL automatically runs the following members.
    </thead>
    <tbody>
       <tr>
-         <td>1         </td>
-         <td>Create and initialize instance files: UCONF, UCONFRUN, FTEST, MONLOG, and LOG.         </td>
-         <td>A06FILES         </td>
+         <td >1         </td>
+         <td >Create and initialize instance files: UCONF, UCONFRUN, FTEST, MONLOG, and LOG.         </td>
+         <td >A06FILES         </td>
       </tr>
       <tr>
-         <td>2         </td>
-         <td><p>Assemble and link-edit SGINSTAL for Transfer CFT z/OS options.</p>
+         <td >2         </td>
+         <td ><p>Assemble and link-edit SGINSTAL for Transfer CFT z/OS options.</p>
 <p>Non-SMP/E installation mode.
                         &lt;/p&gt;</p>         </td>
-         <td>A12AOPTS         </td>
+         <td >A12AOPTS         </td>
       </tr>
       <tr>
-         <td>3         </td>
-         <td><p>Link-edit all Transfer CFT modules.</p>
+         <td >3         </td>
+         <td ><p>Link-edit all Transfer CFT modules.</p>
 <p>Non-SMP/E installation mode.
                         &lt;/p&gt;</p>         </td>
-         <td>B20LINK         </td>
+         <td >B20LINK         </td>
       </tr>
       <tr>
-         <td>4         </td>
-         <td>Generate an encryption key. See also <a href="../t_customize_instance_zos#Password">Password encryption</a>.         </td>
-         <td>CFTGNKEY         </td>
+         <td >4         </td>
+         <td >Generate an encryption key. See also <a href="../t_customize_instance_zos#Password">Password encryption</a>.         </td>
+         <td >CFTGNKEY         </td>
       </tr>
       <tr>
-         <td>5.A <em>or</em> 5.B         </td>
+         <td colspan="3" >5.A <em>or</em> 5.B         </td>
       </tr>
       <tr>
-         <td>5.A         </td>
-         <td><p>If cgenable is set to no:</p>
+         <td >5.A         </td>
+         <td ><p>If cgenable is set to no:</p>
 <ul>
 <li>Sets the uconf variables:
 <ul>
@@ -57,154 +57,154 @@ The A05ALL JCL automatically runs the following members.
 <li>Generates the SAMPLE(CFTPARM) parameter sample from the SAMPLE(ZCFTPARM) template</li>
 <li>Generates the SFTP  SAMPLE(CFTSFTP) parameter sample from the  SAMPLE(ZCFTSFTP) template</li>
 </ul>         </td>
-         <td>CFT$SET         </td>
+         <td >CFT$SET         </td>
       </tr>
       <tr>
-         <td>5.B         </td>
-         <td><p>If cgenable is set to yes:</p>
+         <td >5.B         </td>
+         <td ><p>If cgenable is set to yes:</p>
 <ul>
 <li>Sets the uconf variables for Central Governance</li>
 <li>Generates the Transfer CFT parameters sample from a template</li>
 </ul>         </td>
-         <td>CFT$SETC         </td>
+         <td >CFT$SETC         </td>
       </tr>
       <tr>
-         <td>6         </td>
-         <td><p>Create Transfer CFT files (Parm, Part, Catalog, Com(file),       account).</p>         </td>
-         <td>D40INIT         </td>
+         <td >6         </td>
+         <td ><p>Create Transfer CFT files (Parm, Part, Catalog, Com(file),       account).</p>         </td>
+         <td >D40INIT         </td>
       </tr>
       <tr>
-         <td>7         </td>
-         <td><p>Loads the Transfer CFT default settings.</p>         </td>
-         <td>E50PARM         </td>
+         <td >7         </td>
+         <td ><p>Loads the Transfer CFT default settings.</p>         </td>
+         <td >E50PARM         </td>
       </tr>
       <tr>
-         <td>  PKI         </td>
-         <td>          </td>
+         <td colspan="2" >  PKI         </td>
+         <td >          </td>
       </tr>
       <tr>
-         <td>9         </td>
-         <td><p>Creates Data base PKI using the sample certificates.</p>         </td>
-         <td>D43PKI         </td>
+         <td >9         </td>
+         <td ><p>Creates Data base PKI using the sample certificates.</p>         </td>
+         <td >D43PKI         </td>
       </tr>
       <tr>
-         <td>10         </td>
-         <td><p>If pkitype=passport: Enable PassPort PKI configuration.</p>         </td>
-         <td>D44PASS         </td>
+         <td >10         </td>
+         <td ><p>If pkitype=passport: Enable PassPort PKI configuration.</p>         </td>
+         <td >D44PASS         </td>
       </tr>
       <tr>
-         <td>11         </td>
-         <td><p>If pkitype=system:   Enable the PKI system.                          </p>         </td>
-         <td>D47SYST         </td>
+         <td >11         </td>
+         <td ><p>If pkitype=system:   Enable the PKI system.                          </p>         </td>
+         <td >D47SYST         </td>
       </tr>
       <tr>
-         <td>   Central Governance         </td>
-         <td>          </td>
+         <td colspan="2" >   Central Governance         </td>
+         <td >          </td>
       </tr>
       <tr>
-         <td>15         </td>
-         <td><p>If cgenable=yes:</p>
+         <td >15         </td>
+         <td ><p>If cgenable=yes:</p>
 <p>       Create the Axway Demonstration Root Certificate.</p>         </td>
-         <td>CFTCGPKI         </td>
+         <td >CFTCGPKI         </td>
       </tr>
       <tr>
-         <td>16         </td>
-         <td><p>If cgenable=yes:</p>
+         <td >16         </td>
+         <td ><p>If cgenable=yes:</p>
 <p>         Transfer CFT to registration.                          </p>         </td>
-         <td>CFTCGREG         </td>
+         <td >CFTCGREG         </td>
       </tr>
       <tr>
-         <td>   Sentinel         </td>
-         <td>          </td>
+         <td colspan="2" >   Sentinel         </td>
+         <td >          </td>
       </tr>
       <tr>
-         <td>20         </td>
-         <td>If snenable = yes:
+         <td >20         </td>
+         <td >If snenable = yes:
 <p>         Sentinel parameters are activated (TCP configuration).</p>
 <blockquote>
-<p><strong>Note:</strong></p>
+<p><strong>Note</strong></p>
 <p>This JCL does not create Sentinel tracker logstream.</p>
 </blockquote>         </td>
-         <td>SN05CONF         </td>
+         <td >SN05CONF         </td>
       </tr>
       <tr>
-         <td>25         </td>
-         <td><p>If sntlgcre = yes:</p>
+         <td >25         </td>
+         <td ><p>If sntlgcre = yes:</p>
 <p>Delete /define log stream – DASDONLY.</p>         </td>
-         <td>SN10CLGR         </td>
+         <td >SN10CLGR         </td>
       </tr>
       <tr>
-         <td>   Copilot         </td>
-         <td>          </td>
+         <td colspan="2" >   Copilot         </td>
+         <td >          </td>
       </tr>
       <tr>
-         <td>30         </td>
-         <td><p>If copenable=yes:</p>
+         <td >30         </td>
+         <td ><p>If copenable=yes:</p>
 <p>Copilot files are transferred in the USS environment (HFS/ZFS).</p>         </td>
-         <td>COPA010         </td>
+         <td >COPA010         </td>
       </tr>
       <tr>
-         <td>31         </td>
-         <td><p>If copenable=yes:</p>
+         <td >31         </td>
+         <td ><p>If copenable=yes:</p>
 <p>Updates Copilot UCONF parameters.</p>         </td>
-         <td>COPA020         </td>
+         <td >COPA020         </td>
       </tr>
       <tr>
-         <td>32         </td>
-         <td>REST API configuration.         </td>
-         <td>RESTCFG         </td>
+         <td >32         </td>
+         <td >REST API configuration.         </td>
+         <td >RESTCFG         </td>
       </tr>
       <tr>
-         <td>   Secure Relay         </td>
-         <td>          </td>
+         <td colspan="2" >   Secure Relay         </td>
+         <td >          </td>
       </tr>
       <tr>
-         <td>40         </td>
-         <td><p>If Secure Relay is enabled:</p>
+         <td >40         </td>
+         <td ><p>If Secure Relay is enabled:</p>
 <p>         Install on USS environment, the files for Secure Relay Master Agent.</p>         </td>
-         <td>XSRA010         </td>
+         <td >XSRA010         </td>
       </tr>
       <tr>
-         <td>41         </td>
-         <td><p>If Secure Relay enabled:</p>
+         <td >41         </td>
+         <td ><p>If Secure Relay enabled:</p>
 <p>         Create the runtime directory for the Transfer CFT          Secure Relay Master Agent.</p>         </td>
-         <td>XSRA015         </td>
+         <td >XSRA015         </td>
       </tr>
       <tr>
-         <td>42         </td>
-         <td><p>If Secure Relay is enabled:</p>
+         <td >42         </td>
+         <td ><p>If Secure Relay is enabled:</p>
 <p>         Updating Secure Relay parameters (UCONF)</p>         </td>
-         <td>XSRA020         </td>
+         <td >XSRA020         </td>
       </tr>
       <tr>
-         <td>45         </td>
-         <td>Configure SAML.         </td>
-         <td>CFTSAML         </td>
+         <td >45         </td>
+         <td >Configure SAML.         </td>
+         <td >CFTSAML         </td>
       </tr>
       <tr>
-         <td>   Optional steps         </td>
-         <td>          </td>
+         <td colspan="2" >   Optional steps         </td>
+         <td >          </td>
       </tr>
       <tr>
-         <td>50         </td>
-         <td><p>Exits and API(s) samples compilation (ASM, C and COBOL).</p>
+         <td >50         </td>
+         <td ><p>Exits and API(s) samples compilation (ASM, C and COBOL).</p>
 <p>      For COBOL, C: variable LNGPRFX must be customized (I91APICP).</p>         </td>
-         <td>I91APICP         </td>
+         <td >I91APICP         </td>
       </tr>
       <tr>
-         <td>51         </td>
-         <td>API(s) link-edit.         </td>
-         <td>I92APILK         </td>
+         <td >51         </td>
+         <td >API(s) link-edit.         </td>
+         <td >I92APILK         </td>
       </tr>
       <tr>
-         <td>52         </td>
-         <td>Exits (ASM, C, and COBOL) link-edit.         </td>
-         <td>LINKEXLE         </td>
+         <td >52         </td>
+         <td >Exits (ASM, C, and COBOL) link-edit.         </td>
+         <td >LINKEXLE         </td>
       </tr>
       <tr>
-         <td>60         </td>
-         <td>Activate the Transfer CFT heartbeat.         </td>
-         <td>CFTHEART         </td>
+         <td >60         </td>
+         <td >Activate the Transfer CFT heartbeat.         </td>
+         <td >CFTHEART         </td>
       </tr>
    </tbody>
 </table>

@@ -34,10 +34,10 @@ protocol is only available in requester mode.
    </thead>
    <tbody>
       <tr>
-         <td><p>TCP/IP </p>         </td>
-         <td><p>1 to 15<br />
+         <td   data-valign="top" width="14%"><p>TCP/IP </p>         </td>
+         <td colspan="2"   data-valign="top"><p>1 to 15<br />
  </p>         </td>
-         <td><p>Number of the local monitoring port on which the Transfer CFT
+         <td   data-valign="top"><p>Number of the local monitoring port on which the Transfer CFT
 can be called, expressed in the form of the:</p>
 <ul>
 <li>real number used

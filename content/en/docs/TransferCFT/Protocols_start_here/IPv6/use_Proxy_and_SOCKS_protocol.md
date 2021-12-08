@@ -73,8 +73,7 @@ Additionally, at least one file transfer protocol (CFTPROT command) must be decl
 for the CFTNET command (describing an access via a proxy for a
 protocol).
 
-> **Note:**
->
+> **Note**  
 > Transfer CFT only accepts outgoing calls.
 
 The protocols (CFTPROT) and the networks (CFTNET)
@@ -112,18 +111,18 @@ The following tables lists common parameters for either SOCKS 4 or SOCKS 5. The 
 | Parameters  | Value  | Description  |
 | --- | --- | --- |
 |  **ID**  | STRING max_length=32  |  Network resource identifier.  |
-|  CALL  | STRING max_length=0  |  Call direction possible through this network resource. ('<u>INOUT</u>','OUT','IN')  |
+|  CALL  | STRING max_length=0  |  Call direction possible through this network resource.   ('<u>INOUT</u>','OUT','IN')  |
 |  CLASS  | Number &lt;1&gt; min=0 max=64  |  Logical class for the physical link.  |
 |  MAXCNX  | Number &lt;32&gt; min=1 max=2000  |  Maximum number of simultaneous connections that Transfer CFT accepts to establish on this network resource.  |
 |  TYPE  | TCP  |  Defines the type of network resource.  |
 | BUFLEN  | Number &lt;0&gt; min=32 max=32766  | Size of buffers.  |
-| COMMENT  | STRING max_length=80  |  Free comment.  |
-| ORIGIN  |  STRING max_length=0  | Values include 'CFTUTIL','<u>C</u>','DESIGNER','D','COPILOT','O'.  |
-| **INET**  | STRING max_length=32  |  Identifier of the CFTNET command defining access to the first network  |
-| **HOST**  |  String max_length=64  | Resource address  |
-| **PORT**  |  Number &lt;0&gt; min=1 max=65535  | Listening port of the proxy/proxies in the first network  |
+| COMMENT  | STRING max_length=80  |                                    Free comment.  |
+| ORIGIN  |            STRING max_length=0  | Values include 'CFTUTIL','<u>C</u>','DESIGNER','D','COPILOT','O'.  |
+| **INET**  | STRING max_length=32                            |             Identifier of the CFTNET command defining access to the first network  |
+| **HOST**  |             String max_length=64  | Resource address  |
+| **PORT**  |             Number &lt;0&gt; min=1 max=65535  | Listening port of the proxy/proxies in the first network  |
 | USER  | String max_length=32  | User name transmitted in the connection request addressed to the proxy  |
-| PASSWORD  |  String max_length=32  |  *SOCKS 5 only*<br/>User password transmitted in the connection request addressed to the proxy.  |
+| PASSWORD  |          String max_length=32  |  *SOCKS 5 only*<br/>User password transmitted in the connection request addressed to the proxy.  |
 
 
 Example

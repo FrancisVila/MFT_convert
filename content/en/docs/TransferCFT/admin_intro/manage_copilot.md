@@ -34,8 +34,7 @@ To kill all  Copilot server processes,  run:
 copstop -kill
 ```
 
-> **Note:**
->
+> **Note**  
 > For details on starting in your specific operating system, refer to the corresponding Transfer CFT 3.9 Installation Guide.
 
 <span id="Check__status"></span>
@@ -71,14 +70,12 @@ COPRUN is an example of a JCL statement that starts the Transfer CFT Copilot ser
 
 When the <span class="code">copilot.misc.CreateProcessAsUser</span> variable is set, STEPLIB or JOBLIB can be non-APF. Only a <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>/PassPort user can sign on to Copilot user interface.
 
-> **Note:**
->
+> **Note**  
 > When the ‘cft.mvs.copilot.check\_apf’ uconf variable is set to ‘Yes’, CFTCOPL must be APF authorized to start.
 
 LOG message: <span class="code">+CFTI42E Copilot must be APF-authorized.</span>
 
-> **Note:**
->
+> **Note**  
 > CFTCOPL must be APF authorized to start if the UCONF cft.mvs.copilot.check\_apf variable is set to Yes. Otherwise, the  Transfer CFT log displays CFTI42E Copilot must be APF-authorized.
 
 #### Stop
@@ -344,16 +341,44 @@ The certificate type is dictated by the file name extension (.p12, .pkcs12, .der
 -   <span class="code">copilot.ssl.sslkeyfile=&lt;not set></span> and <span class="code">copilot.ssl.sslcertpassword=&lt;set></span>, then  the format is PKCS12
 -   <span class="code">copilot.ssl.sslkeyfile= &lt;set></span> and <span class="code">copilot.ssl.sslcertpassword=&lt;not set></span>, then the format is PEM
 
-
-| Supported format  | Type  | Extension  |
-| --- | --- | --- |
-| Certificate  | PKCS#12  | p12, pfx, pkcs12  |
-| PEM  | pem  |
-| DER  | der  |
-| Private key  | PEM  | pem  |
-| DER  | der  |
-| PKCS#8  | key, pem  |
-
+<table>
+   <thead>
+      <tr>
+<th >Supported format         </th>
+<th >Type         </th>
+<th >Extension         </th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td rowspan="3" >Certificate         </td>
+         <td >PKCS#12         </td>
+         <td >p12, pfx, pkcs12         </td>
+      </tr>
+      <tr>
+         <td >PEM         </td>
+         <td >pem         </td>
+      </tr>
+      <tr>
+         <td >DER         </td>
+         <td >der         </td>
+      </tr>
+      <tr>
+         <td rowspan="3" >Private key         </td>
+         <td >PEM         </td>
+         <td >pem         </td>
+      </tr>
+      <tr>
+         <td >DER         </td>
+         <td >der         </td>
+      </tr>
+      <tr>
+         <td >PKCS#8         </td>
+         <td >key,
+pem         </td>
+      </tr>
+   </tbody>
+</table>
 
 How to define a PKCS#12 certificate
 

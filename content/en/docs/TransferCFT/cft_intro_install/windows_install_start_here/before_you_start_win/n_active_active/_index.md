@@ -12,8 +12,7 @@ When installing a Transfer CFT multi-node architecture in Windows, the user perf
 -   Be the same user for all machines.
 -   Have all rights (create/modify/delete) to the shared disk on all machines when {{< TransferCFT/componentlongname >}} is installed in a multi-host architecture.
 
-> **Note:**
->
+> **Note**  
 > You must configure the system prior to the multi-node installation, and the shared disk should be ready when you start the Transfer CFT Copilot server. See Shared file system prerequisites for details.
 
 ## Overview
@@ -30,8 +29,7 @@ A cluster installation of Transfer CFT with multi-node (HA):
     -   One or several hosts are active.
     -   All Transfer CFT runtime environments (Transfer CFT nodes) are running.
 
-> **Note:**
->
+> **Note**  
 > Transfer CFT binaries can be patched on each host one after the other without stopping the Transfer CFT instance (all of the Transfer CFT nodes).
 
 Shared directory
@@ -40,8 +38,7 @@ This is the path and name of the directory where you want to create a shared dir
 
 *Windows only* - When installing a Windows multi-host Transfer CFT architecture, we recommend that you use UNC notation, which defines the path to a shared folder using the format` \\server\sharename.`
 
-> **Note:**
->
+> **Note**  
 > Transfer CFT supports all POSIX file systems.
 
 Installation directory
@@ -54,8 +51,7 @@ The path and name of the local directory where you want to install the first clu
 
 {{< TransferCFT/componentshortname  >}} in multi-node architecture requires a shared file system for use of a multi-node architecture on several hosts (active/active). Additionally, the system must be configured prior to the multi-node installation and the shared disk ready when starting the Copilot server.
 
-> **Note:**
->
+> **Note**  
 > See Shared file system prerequisites for details.
 
 You can use a single key for  a multi-node installation, as either:
@@ -78,7 +74,7 @@ Create as many copies of the initialize.properties file as you have hosts in the
 | --- | --- |
 | Runtimedir  | The runtime directory must be in a shared directory.  |
 | Multinode_Enable  |  Enable the multi-node architecture.<br/>To use a multi-node architecture, you must define the multi-node option in the initialize.properties file.  |
-| Multinode_Number  | Enter the number of nodes.  |
+| Multinode_Number    | Enter the number of nodes.  |
 | LoadBalancer_Host  |  Specify the host address of the load balancer.<br/>When using an ACTIVE/ACTIVE or ACTIVE/PASSIVE deployment, you require a load balancer to connect to the Transfer CFT Copilot server.  |
 | LoadBalancer_Port  | Specify the load balancer port, which is redirected to the Central Governance dedicated port of the Transfer CFT UI Server. When using ACTIVE/ACTIVE or ACTIVE/PASSIVE deployment, you require a load balancer to connect to the Transfer CFT Copilot server.  |
 

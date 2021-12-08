@@ -9,14 +9,12 @@ server. The configuration change can be:
 -   Creating or deleting
     a CFTFILE object (PARM, PART, CAT, LOG…)
 
-> **Note:**
->
+> **Note**  
 > The configuration change tracking feature described in this section is not available when using Central Governance or Flow Manager as Transfer CFT configuration changes are tracked by those products. Consequently, you cannot set the parameters described in this section using either of these products.
 
 ## Procedure
 
-> **Note:**
->
+> **Note**  
 > To enable the configuration change audit, set the Sentinel parameter value  to  uconf:sentinel.xfb.audit=yes in the unified configuration (UCONF).
 
 **Example**
@@ -48,7 +46,7 @@ containing:
 
 | CFTA0nX  | Details  |
 | --- | --- |
-|  n=1  | CFTPARM file  |
+|  n=1    | CFTPARM file  |
 |  n=2  | CFTPART file  |
 |  n=3  | CFTCAT file  |
 |  n=4  | CFTCOM file  |
@@ -66,7 +64,7 @@ containing:
 | Attribute  | Details  |
 | --- | --- |
 | Action=&amp;act  |  &amp;act is the action on an object (“CREATE” , “MODIFY” , “DELETE”)  |
-| Object=&amp;obj  | &amp;obj is the object identifier (type of object for the CFTFILE command)  |
+| Object=&amp;obj  | &amp;obj is the object identifier  (type of object for the CFTFILE command)  |
 | id=&amp;id  |   |
 | user=&amp;user  |  &amp;user is the user that modified the object  |
 | groupid=&amp;group  | &amp;group is the user group that modified the object  |

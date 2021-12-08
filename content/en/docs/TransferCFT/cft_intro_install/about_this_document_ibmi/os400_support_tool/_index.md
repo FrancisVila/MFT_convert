@@ -40,8 +40,7 @@ Collected information for the Transfer CFT platform includes these different CFT
 
 The CFTSUPPORT command executes the CFTSUPPORT program, which retrieves information about the Transfer CFT and stores it in a tar file.
 
-> **Note:**
->
+> **Note**  
 > CFTSUPPORT is currently not supported with an independent ASP (IASP).
 
 You can use Transfer CFT IBM i command line to execute the command:
@@ -49,8 +48,7 @@ You can use Transfer CFT IBM i command line to execute the command:
 1.  Enter the CFTSUPPORT command and press PF4.
 2.  Enter the IFS path where the CFTSUPPORT.tar file should be created. If the IFS path does not exist it will be created.
 
-> **Note:**
->
+> **Note**  
 > Alternatively, from the CFT menu select 3. Administration commands then 2.  Submit CFT support request.
 
 If the generated CFTSUPPORT.tar  is too large, you can compress it prior to sending it to Axway support.

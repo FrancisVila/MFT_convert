@@ -81,8 +81,7 @@ Use the A33GSND JCL to transfer the following elements via FTP:
 -   Master copy
 -   The components necessary to restore the master copy
 
-> **Note:**
->
+> **Note**  
 > Customize variables  before submitting the JCL.
 
 -   Common variables:
@@ -123,8 +122,7 @@ This creates an instance.
 
 This completes the specific part of the Transfer CFT installation. Remaining tasks in include the APF, creating the STC  in PROCLIB, etc.
 
-> **Note:**
->
+> **Note**  
 > ZFS file creation  is not taken into account in this process.
 
 <span id="Generate"></span>
@@ -175,8 +173,7 @@ This creates a remote UPLIB library.
 
 ## Apply the patch or service pack
 
-> **Note:**
->
+> **Note**  
 > Save the Transfer CFT LOAD, as well as the Copilot USS environment prior to applying a patch.
 
 1.  Customize the A33IPTF JCL delivered in the UPLIB library, and transferred by A33GSND:  

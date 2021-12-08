@@ -154,8 +154,7 @@ If DIRECT = SEND (or = BOTH), the file (FNAME) contains the description
 of the send translation table (FCODE to NCODE) and if DIRECT = RECV (or
 = BOTH), it contains the description of the receive table (NCODE to FCODE).
 
-> **Note:**
->
+> **Note**  
 > If FCODE or NCODE are  BINARY no translation
 > takes place.
 

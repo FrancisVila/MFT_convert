@@ -71,8 +71,7 @@ task:
 Exit tasks are not mutually exclusive. Several types of exit tasks may
 be initiated for a given transfer request.
 
-> **Note:**
->
+> **Note**  
 > For
 > information on transport security exits, see Configuring
 > Transport Security.

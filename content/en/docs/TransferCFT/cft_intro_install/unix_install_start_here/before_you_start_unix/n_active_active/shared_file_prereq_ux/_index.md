@@ -46,9 +46,9 @@ The following non-exhaustive table lists shared file systems that have been test
 | --- | --- | --- |
 | AIX  | GPFS, NFSv4*  | NFSv3, CXFS, VeritasSF  |
 | HP-UX  | NFSv4*  | NFSv3, CXFS, VeritasSF  |
-| Linux-x86  | GPFS, GFS2, NFSv4*, AWS EFS  | NFSv3, CXFS, ACFS, OCFSv1, OCFSv2, QFS, VeritasSF  |
+| Linux-x86  | GPFS, GFS2, NFSv4*, AWS EFS  | NFSv3, CXFS,  ACFS, OCFSv1, OCFSv2, QFS, VeritasSF  |
 | Solaris  | NFSv4*  | NFSv3, CXFS, QFS, VeritasSF  |
-| Windows-x86  | SMB/CIFS, GPFS  | CXFS, NFS  |
+| Windows-x86  | SMB/CIFS, GPFS  | CXFS,  NFS  |
 | z/OS  | Sharing DASD across Sysplex  |   |
 
 

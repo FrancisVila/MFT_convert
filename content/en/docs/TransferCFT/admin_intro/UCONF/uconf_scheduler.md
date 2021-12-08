@@ -63,8 +63,7 @@ This example defines a schedule where the value of cft.purge.sx  can be changed 
     CFTUTIL reconfig type=UCONF
     ```
 
-> **Note:**
->
+> **Note**  
 >  
 
 -   The same configuration value can be scheduled several times in a day.

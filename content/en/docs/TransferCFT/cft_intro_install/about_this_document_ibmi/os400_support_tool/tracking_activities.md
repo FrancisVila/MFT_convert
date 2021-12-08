@@ -37,8 +37,7 @@ The output spool files (QPRINT) contain:
 
 CFT ACCNT, accounting, the file designated by the CFTACCNT configuration command \[A\]FNAME parameter, is used to store information on all terminated transfers.
 
-> **Note:**
->
+> **Note**  
 > The file and data management systems display a system code (40000000 &lt; SC &lt; 5FFFFFFF) if an error is detected on transferred files. An associated error label, when it is not stored in any of the ways described above, can be retrieved from a file containing all CFT file management system error codes and labels:DSPPFM FILE (CFTPGM/FMDM3ERR).The hexadecimal value of the error code must be used in the search profile.
 
 In the line-sharing mode, unlike the exclusive mode, Transfer CFT checks the status of the line without implementing it. If the line is not operational, a message is displayed:

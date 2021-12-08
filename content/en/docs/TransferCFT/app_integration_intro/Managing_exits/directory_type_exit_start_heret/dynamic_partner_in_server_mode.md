@@ -27,8 +27,7 @@ by default, in association with the definition of the protocol used CFTPROT.
 This feature can be used by all protocols, but is not compatible with
 the routing and switching mechanism.
 
-> **Note:**
->
+> **Note**  
 > For security reasons, the
 > DYNAM = mechanism is rarely used
 > without also executing additional checks in a directory EXIT task.
@@ -88,8 +87,7 @@ be used for several partners.
 
 The parameters IMINTIME and IMAXTIME are also checked.
 
-> **Note:**
->
+> **Note**  
 > Apart
 > from checking the resource class, the above checks can be made (or remade)
 > in the directory type EXIT task, if the latter is defined in the protocol

@@ -1,4 +1,6 @@
-baseURL = "https://axway-open-docs.netlify.app/"
+# fvila edited
+# baseURL = "https://axway-open-docs.netlify.app/"
+baseURL = "https://axway-mft-convert.netlify.app/"
 title = "Axway-Open-Docs"
 
 enableRobotsTXT = true

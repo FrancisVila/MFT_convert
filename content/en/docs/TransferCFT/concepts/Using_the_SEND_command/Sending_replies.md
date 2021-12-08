@@ -67,49 +67,49 @@ the partner.         </th>
    </thead>
    <tbody>
       <tr>
-         <td><p>Parameters</p>         </td>
-         <td><p>FOR OPTIONAL
+         <td rowspan="8"  width="19.982%"><p>Parameters</p>         </td>
+         <td colspan="2" ><p>FOR OPTIONAL
 PARAMETERS COMMON TO SEND: see the <a href="../../../c_intro_userinterfaces/command_summary#SEND">SEND</a>
 command.</p>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/exec">EXEC</a></p>         </td>
-         <td><p>Filename.</p>         </td>
+         <td ><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/exec">EXEC</a></p>         </td>
+         <td  width="59.777%"><p>Filename.</p>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/ida">IDA</a> </p>         </td>
-         <td><p>Local transfer identifier assigned by the user or user
+         <td ><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/ida">IDA</a> </p>         </td>
+         <td  width="59.777%"><p>Local transfer identifier assigned by the user or user
 application. The maximum length is 64 characters.</p>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/idm">IDM</a> </p>         </td>
-         <td><p>Message identifier. The value of this identifier is unrestricted.</p>         </td>
+         <td ><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/idm">IDM</a> </p>         </td>
+         <td  width="59.777%"><p>Message identifier. The value of this identifier is unrestricted.</p>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/idu">IDT</a> </p>         </td>
-         <td><p>Identifier of the original transfer acknowledged by this
+         <td ><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/idu">IDT</a> </p>         </td>
+         <td  width="59.777%"><p>Identifier of the original transfer acknowledged by this
 message.</p>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/msg">MSG</a></p>         </td>
-         <td><p>Message</p>         </td>
+         <td ><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/msg">MSG</a></p>         </td>
+         <td  width="59.777%"><p>Message</p>         </td>
       </tr>
       <tr>
-         <td><p><strong><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/part">PART</a> </strong></p>         </td>
-         <td><p>Transfer partner identifier.</p>         </td>
+         <td ><p><strong><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/part">PART</a> </strong></p>         </td>
+         <td  width="59.777%"><p>Transfer partner identifier.</p>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/pri">PRI</a></p>         </td>
-         <td><p>Request selection priority.</p>         </td>
+         <td ><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/pri">PRI</a></p>         </td>
+         <td  width="59.777%"><p>Request selection priority.</p>         </td>
       </tr>
       <tr>
-         <td><p> </p>         </td>
-         <td><p><strong><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/type">TYPE</a> =
+         <td  width="19.982%"><p> </p>         </td>
+         <td ><p><strong><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/type">TYPE</a> =
 REPLY</strong></p>         </td>
-         <td><p>Characterizes a reply send transfer.</p>         </td>
+         <td  width="59.777%"><p>Characterizes a reply send transfer.</p>         </td>
       </tr>
       <tr>
-         <td>         </td>
+         <td colspan="3"  width="100%">         </td>
       </tr>
    </tbody>
 </table>

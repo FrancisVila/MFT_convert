@@ -16,8 +16,7 @@ Use the following command to install Transfer CFT in silent mode.
 `./Transfer_CFT_3.7_<Install>_<OS>_<BN>.exe --mode unattended --conf-file initialize.properties`
 ```
 
-> **Note:**
->
+> **Note**  
 > You cannot install Transfer CFT if you have a profile already loaded.
 
 <table>
@@ -29,16 +28,16 @@ Use the following command to install Transfer CFT in silent mode.
    </thead>
    <tbody>
       <tr>
-         <td>Welcome         </td>
-         <td>Welcome to Transfer CFT landing page.         </td>
+         <td >Welcome         </td>
+         <td >Welcome to Transfer CFT landing page.         </td>
       </tr>
       <tr>
-         <td>License agreement         </td>
-         <td>Select the check-box "<code>I accept...</code>" to continue with the installation.         </td>
+         <td >License agreement         </td>
+         <td >Select the check-box "<code>I accept...</code>" to continue with the installation.         </td>
       </tr>
       <tr>
-         <td>Installation architecture         </td>
-         <td><p>Select to install on a single machine, a Cluster - first host, or cluster - additional host.</p>
+         <td >Installation architecture         </td>
+         <td ><p>Select to install on a single machine, a Cluster - first host, or cluster - additional host.</p>
 <ul>
 <li>Single - Installs a single instance of Transfer CFT on a machine.</li>
 <li>Cluster - Installs Transfer CFT on several machines. Select this option if you want to install Transfer CFT in multi-host/multi-node or in active/passive mode.</li>
@@ -52,33 +51,33 @@ Use the following command to install Transfer CFT in silent mode.
 </ul>         </td>
       </tr>
       <tr>
-         <td>Installation Directory         </td>
-         <td>Specify the directory where you want to install Transfer
+         <td >Installation Directory         </td>
+         <td >Specify the directory where you want to install Transfer
 CFT. This is the directory where the Transfer CFT product files  are installed.         </td>
       </tr>
       <tr>
-         <td>Configuration filename         </td>
-         <td><p>Enter the path, or navigate, to the configuration file (initialize.properties file) containing details for the Transfer CFT installation. This file defines settings such as hostname, license key, governance options, and so on.</p>
+         <td >Configuration filename         </td>
+         <td ><p>Enter the path, or navigate, to the configuration file (initialize.properties file) containing details for the Transfer CFT installation. This file defines settings such as hostname, license key, governance options, and so on.</p>
 <p>If you do not specify a file, you can continue with the installation, but the installation procedure does not create the runtime directory. (Run the <code>initialize </code>command post installation if you opt to create the runtime directory at a later date.)</p>         </td>
       </tr>
       <tr>
-         <td>Generate Encryption Key         </td>
-         <td><p>Enter your password and reenter it to confirm.</p>         </td>
+         <td >Generate Encryption Key         </td>
+         <td ><p>Enter your password and reenter it to confirm.</p>         </td>
       </tr>
       <tr>
-         <td><p>Ready to install</p>         </td>
-         <td><p>Click <strong>Next</strong> to complete the installation process, or <strong>Back</strong> to review or modify installation options.</p>         </td>
+         <td ><p>Ready to install</p>         </td>
+         <td ><p>Click <strong>Next</strong> to complete the installation process, or <strong>Back</strong> to review or modify installation options.</p>         </td>
       </tr>
       <tr>
-         <td>If you plan to integrate Transfer CFT with and also plan to use Service mode, please refer to the additional instructions in <a href="../../post_install_transfercft#Service">Service mode set up when using Central Governance</a>.         </td>
+         <td colspan="2" >If you plan to integrate Transfer CFT with and also plan to use Service mode, please refer to the additional instructions in <a href="../../post_install_transfercft#Service">Service mode set up when using Central Governance</a>.         </td>
       </tr>
       <tr>
-         <td>Transfer CFT Server Service         </td>
-         <td>Enter the Service Mode parameters for Transfer CFT.         </td>
+         <td >Transfer CFT Server Service         </td>
+         <td >Enter the Service Mode parameters for Transfer CFT.         </td>
       </tr>
       <tr>
-         <td>Transfer CFT UI Server Service         </td>
-         <td>Enter the Service Mode parameters for the {{< TransferCFT/transfercftname  >}} UI.         </td>
+         <td >Transfer CFT UI Server Service         </td>
+         <td >Enter the Service Mode parameters for the {{< TransferCFT/transfercftname  >}} UI.         </td>
       </tr>
    </tbody>
 </table>

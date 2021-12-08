@@ -6,8 +6,7 @@
 
 ### pkifname
 
-> **Note:**
->
+> **Note**  
 > In Transfer CFT 3.5, deprecated the use of referencing a certificate  using the format (PKIFNAME=TXT://certificate).
 
 #### CFTPARM

@@ -36,13 +36,13 @@ The symbolic variable syntax is as follows:
 
 | Character  | Indicates...  |
 | --- | --- |
-| +  | That the variable toggles to upper case  |
-| -  | That the variable toggles to lower case  |
+| +  | That the variable  toggles to upper case  |
+| -  | That the variable  toggles to lower case  |
 | :  | That the right padding of the variable is suppressed  |
 | &lt;  | The left justification of the variable (default value)  |
 | &gt;  | The right justification of the variable  |
 | %  | Indicates use of the <a href="#Separate">separator syntax</a>  |
-|   |  These characters can be used in combination, such as **+:** or **&gt;+:**. <br/>See the <a href="#Examples" class="MCXref xref">Example using optional characters</a>  |
+|   |  These characters can be used in combination, such as **+:** or **&gt;+:**. <br/>See the <a href="#Examples" >Example using optional characters</a>  |
 
 
 -   Optionally followed
@@ -179,8 +179,7 @@ remarks are valid:
 
 This allows identifiers of length less than p to be selected, for example.
 
-> **Note:**
->
+> **Note**  
 > &.VAR is substituted as &VAR. The &lt;char\_symb> concatenated
 > with a point is substituted as &lt;char\_symb>. The rule applies even
 > if VAR is not an identifier known to  Transfer CFT. For example, for the
@@ -251,8 +250,7 @@ Given the syntax FNAME=&(-PREF)(+SUF)(=DUMMY)PARM,
 -   If &PARM is empty, FNAME gets the value DUMMY
 -   If &PARM is not empty, FNAME gets the value PREF&PARMSUFF
 
-> **Note:**
->
+> **Note**  
 > To add a closing parenthesis within the str\_prefix, str\_suffix and str\_alternate, it must be preceded by the character ‘&’:
 
 -   Given the syntax FNAME=&(+(1234&))PARM
@@ -275,8 +273,7 @@ the syntax &VAR. The substituted value, corresponding to the effective
 value of the identifier ‘VAR’ (truncated of the blank characters on the
 right), is also indicated.
 
-> **Note:**
->
+> **Note**  
 > The other syntax shown above may also be used, for each of the identifiers
 > listed.
 
@@ -295,687 +292,687 @@ value         </th>
    <tbody>
       <tr>
 <th rowspan="8"  data-valign="top" width="21%">PARTNERS          </th>
-         <td><p>&amp;PART </p>         </td>
-         <td>32         </td>
-         <td><p>Partner name (ID of CFTPART) </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;PART </p>         </td>
+         <td  >32         </td>
+         <td  data-valign="top"><p>Partner name (ID of CFTPART) </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;GROUP </p>         </td>
-         <td>32         </td>
-         <td><p>Group to which the partner belongs </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;GROUP </p>         </td>
+         <td  >32         </td>
+         <td  data-valign="top"><p>Group to which the partner belongs </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;SPART </p>         </td>
-         <td>32         </td>
-         <td><p>Sending partner name </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;SPART </p>         </td>
+         <td  >32         </td>
+         <td  data-valign="top"><p>Sending partner name </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;RPART </p>         </td>
-         <td>32         </td>
-         <td><p>Receiving partner name </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;RPART </p>         </td>
+         <td  >32         </td>
+         <td  data-valign="top"><p>Receiving partner name </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;IPART </p>         </td>
-         <td>32         </td>
-         <td><p>Intermediate partner name </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;IPART </p>         </td>
+         <td  >32         </td>
+         <td  data-valign="top"><p>Intermediate partner name </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;NPART </p>         </td>
-         <td>32         </td>
-         <td><p>Network name of partner sending data (NSPART or NRPART
+         <td  data-valign="top" width="26%"><p>&amp;NPART </p>         </td>
+         <td  >32         </td>
+         <td  data-valign="top"><p>Network name of partner sending data (NSPART or NRPART
 according to the transfer direction) </p>         </td>
       </tr>
       <tr>
-         <td>&amp;NSPART         </td>
-         <td>24         </td>
-         <td>Network identifier by which the
+         <td  data-valign="top" width="26%">&amp;NSPART         </td>
+         <td  >24         </td>
+         <td  data-valign="top">Network identifier by which the
 local  {{< TransferCFT/componentshortname  >}} identifies itself to its partner         </td>
       </tr>
       <tr>
-         <td>&amp;NRPART         </td>
-         <td>24         </td>
-         <td><p>Network identifier by which the
+         <td  data-valign="top" width="26%">&amp;NRPART         </td>
+         <td  >24         </td>
+         <td  data-valign="top"><p>Network identifier by which the
 remote partner identifies itself to the local {{< TransferCFT/componentlongname  >}}</p>         </td>
       </tr>
       <tr>
 <th rowspan="7"  data-valign="top" width="21%"><p>USER </p>         </th>
-         <td><p>&amp;SUSER </p>         </td>
-         <td>32         </td>
-         <td><p>Sending user name </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;SUSER </p>         </td>
+         <td  >32         </td>
+         <td  data-valign="top"><p>Sending user name </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;RUSER </p>         </td>
-         <td>32         </td>
-         <td><p>Receiving user name </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;RUSER </p>         </td>
+         <td  >32         </td>
+         <td  data-valign="top"><p>Receiving user name </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;USERID </p>         </td>
-         <td>32         </td>
-         <td><p>Local user identifier </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;USERID </p>         </td>
+         <td  >32         </td>
+         <td  data-valign="top"><p>Local user identifier </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;GROUPID</p>         </td>
-         <td>32         </td>
-         <td><p>Group identifier linked to the userid</p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;GROUPID</p>         </td>
+         <td  >32         </td>
+         <td  data-valign="top"><p>Group identifier linked to the userid</p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;COMMENT </p>         </td>
-         <td>160         </td>
-         <td><p>Comment indicated in CFTSEND/SEND or CFTRECV/RECV </p>
+         <td  data-valign="top" width="26%"><p>&amp;COMMENT </p>         </td>
+         <td  >160         </td>
+         <td  data-valign="top"><p>Comment indicated in CFTSEND/SEND or CFTRECV/RECV </p>
 In listcat content=debug this is attribute is MSG         </td>
       </tr>
       <tr>
-         <td><p>&amp;NOTIFY </p>         </td>
-         <td>8         </td>
-         <td><p>User notified on transfer </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;NOTIFY </p>         </td>
+         <td  >8         </td>
+         <td  data-valign="top"><p>User notified on transfer </p>         </td>
       </tr>
       <tr>
-         <td>&amp;SJOBNAME         </td>
-         <td>15         </td>
-         <td>{{< TransferCFT/componentshortname  >}} job name, can be used in exec and cronjob procedures         </td>
+         <td  data-valign="top" width="26%">&amp;SJOBNAME         </td>
+         <td  >15         </td>
+         <td  data-valign="top">{{< TransferCFT/componentshortname  >}} job name, can be used in exec and cronjob procedures         </td>
       </tr>
       <tr>
 <th rowspan="5"  data-valign="top" width="21%"><p>APPLICATIONS </p>         </th>
-         <td><p>&amp;SAPPL</p>         </td>
-         <td><p> </p>
+         <td  data-valign="top" width="26%"><p>&amp;SAPPL</p>         </td>
+         <td  ><p> </p>
 <p>8</p>
 <p>48</p>         </td>
-         <td><p>Sending application name </p>
+         <td  data-valign="top"><p>Sending application name </p>
 <p>PeSIT E</p>
 <p>PeSIT E CFT/CFT</p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;RAPPL </p>         </td>
-         <td><p> </p>
+         <td  data-valign="top" width="26%"><p>&amp;RAPPL </p>         </td>
+         <td  ><p> </p>
 <p>8</p>
 <p>48</p>         </td>
-         <td><p>Receiving application name</p>
+         <td  data-valign="top"><p>Receiving application name</p>
 PeSIT E
 <p>PeSIT E CFT/CFT</p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;IDA </p>         </td>
-         <td>64         </td>
-         <td><p>Application identifier </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;IDA </p>         </td>
+         <td  >64         </td>
+         <td  data-valign="top"><p>Application identifier </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;PARM </p>         </td>
-         <td>512         </td>
-         <td><p>Parameter </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;PARM </p>         </td>
+         <td  >512         </td>
+         <td  data-valign="top"><p>Parameter </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;PI99 </p>         </td>
-         <td>512         </td>
-         <td><p>PI99 contents (PeSIT E) </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;PI99 </p>         </td>
+         <td  >512         </td>
+         <td  data-valign="top"><p>PI99 contents (PeSIT E) </p>         </td>
       </tr>
       <tr>
 <th rowspan="22"  data-valign="top" width="21%"><p>TRANSFER </p>         </th>
-         <td><p>&amp;IDT</p>         </td>
-         <td>8         </td>
-         <td><p>Transfer identifier </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;IDT</p>         </td>
+         <td  >8         </td>
+         <td  data-valign="top"><p>Transfer identifier </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;NIDT </p>         </td>
-         <td>8         </td>
-         <td><p>Protocol transfer identifier </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;NIDT </p>         </td>
+         <td  >8         </td>
+         <td  data-valign="top"><p>Protocol transfer identifier </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;IDTU </p>         </td>
-         <td>8         </td>
-         <td><p>Local transfer counter (unique)</p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;IDTU </p>         </td>
+         <td  >8         </td>
+         <td  data-valign="top"><p>Local transfer counter (unique)</p>         </td>
       </tr>
       <tr>
-         <td>&amp;PIDTU         </td>
-         <td>8         </td>
-         <td>Parent idtu of the child transfers         </td>
+         <td  data-valign="top" width="26%">&amp;PIDTU         </td>
+         <td  >8         </td>
+         <td  data-valign="top">Parent idtu of the child transfers         </td>
       </tr>
       <tr>
-         <td>&amp;PHASE         </td>
-         <td>1         </td>
-         <td>Processing phases to help manage transfer flows         </td>
+         <td  data-valign="top" width="26%">&amp;PHASE         </td>
+         <td  >1         </td>
+         <td  data-valign="top">Processing phases to help manage transfer flows         </td>
       </tr>
       <tr>
-         <td>&amp;PHASESTEP         </td>
-         <td>1         </td>
-         <td>Step in processing phase         </td>
+         <td  data-valign="top" width="26%">&amp;PHASESTEP         </td>
+         <td  >1         </td>
+         <td  data-valign="top">Step in processing phase         </td>
       </tr>
       <tr>
-         <td>&amp;APPSTATE         </td>
-         <td>32         </td>
-         <td>State step for the processing
+         <td  data-valign="top" width="26%">&amp;APPSTATE         </td>
+         <td  >32         </td>
+         <td  data-valign="top">State step for the processing
 script to restart  if relaunched         </td>
       </tr>
       <tr>
-         <td><p>&amp;NSUB </p>         </td>
-         <td>4         </td>
-         <td><p>Counter for the submitting of end-of-transfer procedures,
+         <td  data-valign="top" width="26%"><p>&amp;NSUB </p>         </td>
+         <td  >4         </td>
+         <td  data-valign="top"><p>Counter for the submitting of end-of-transfer procedures,
 error procedures and procedures submitted by SUBMIT.<br />
 If 4 characters long, the counter is reset to 1 after 9999 </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;DIAGI </p>         </td>
-         <td>8         </td>
-         <td><p>Internal diagnostic code value </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;DIAGI </p>         </td>
+         <td  >8         </td>
+         <td  data-valign="top"><p>Internal diagnostic code value </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;DIAGP </p>         </td>
-         <td>64         </td>
-         <td><p>Protocol diagnostic code value </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;DIAGP </p>         </td>
+         <td  >64         </td>
+         <td  data-valign="top"><p>Protocol diagnostic code value </p>         </td>
       </tr>
       <tr>
-         <td>&amp;DIAGC         </td>
-         <td>254         </td>
-         <td>Complimentary diagnostic code value         </td>
+         <td  data-valign="top" width="26%">&amp;DIAGC         </td>
+         <td  >254         </td>
+         <td  data-valign="top">Complimentary diagnostic code value         </td>
       </tr>
       <tr>
-         <td><p>&amp;COMP </p>         </td>
-         <td>2         </td>
-         <td><p>Compression negotiated for the transfer</p>
+         <td  data-valign="top" width="26%"><p>&amp;COMP </p>         </td>
+         <td  >2         </td>
+         <td  data-valign="top"><p>Compression negotiated for the transfer</p>
 <p>Compression negotiated for the transfer</p>
 <p>When listcat content=debug this is attribute is FCOMP / COMPNEG</p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;NBT </p>         </td>
-         <td>20         </td>
-         <td><p>Number of bytes transferred </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;NBT </p>         </td>
+         <td  >20         </td>
+         <td  data-valign="top"><p>Number of bytes transferred </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;PRI </p>         </td>
-         <td>3         </td>
-         <td><p>{{< TransferCFT/componentshortname  >}} priority for the transfer (0 to 255) </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;PRI </p>         </td>
+         <td  >3         </td>
+         <td  data-valign="top"><p>{{< TransferCFT/componentshortname  >}} priority for the transfer (0 to 255) </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;QQ </p>         </td>
-         <td>3         </td>
-         <td><p>Number of the day in the year associated with the transfer
+         <td  data-valign="top" width="26%"><p>&amp;QQ </p>         </td>
+         <td  >3         </td>
+         <td  data-valign="top"><p>Number of the day in the year associated with the transfer
 identifier </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;SELFNAME </p>         </td>
-         <td>512         </td>
-         <td><p>Name of the generic transfer selection file </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;SELFNAME </p>         </td>
+         <td  >512         </td>
+         <td  data-valign="top"><p>Name of the generic transfer selection file </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;FCODE </p>         </td>
-         <td>1         </td>
-         <td><p>Code for the data in a file </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;FCODE </p>         </td>
+         <td  >1         </td>
+         <td  data-valign="top"><p>Code for the data in a file </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;TRTYPE</p>         </td>
-         <td>8         </td>
-         <td><p>Available at the end of transfer to designate FILE, MESSAGE,
+         <td  data-valign="top" width="26%"><p>&amp;TRTYPE</p>         </td>
+         <td  >8         </td>
+         <td  data-valign="top"><p>Available at the end of transfer to designate FILE, MESSAGE,
 REPLY, or NACK</p>
 <p>When using listcat content=debug the attribute is TYPE</p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;NCODE </p>         </td>
-         <td>1         </td>
-         <td><p>Code for the data sent over the network </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;NCODE </p>         </td>
+         <td  >1         </td>
+         <td  data-valign="top"><p>Code for the data sent over the network </p>         </td>
       </tr>
       <tr>
-         <td>&amp;EXITFREE               </td>
-         <td>64         </td>
-         <td>Free communication area between multiple exits         </td>
+         <td  data-valign="top" width="26%">&amp;EXITFREE               </td>
+         <td  >64         </td>
+         <td  data-valign="top">Free communication area between multiple exits         </td>
       </tr>
       <tr>
-         <td>&amp;XLATE         </td>
-         <td>32         </td>
-         <td>Transcoding table used during transfer         </td>
+         <td  data-valign="top" width="26%">&amp;XLATE         </td>
+         <td  >32         </td>
+         <td  data-valign="top">Transcoding table used during transfer         </td>
       </tr>
       <tr>
-         <td>&amp;MODE         </td>
-         <td>1         </td>
-         <td><p>Server mode = ‘S’ transfer</p>
+         <td  data-valign="top" width="26%">&amp;MODE         </td>
+         <td  >1         </td>
+         <td  data-valign="top"><p>Server mode = ‘S’ transfer</p>
 <p>Requester mode =     ‘R’ transfer</p>         </td>
       </tr>
       <tr>
 <th rowspan="33"  data-valign="top" width="21%"><p>FILE</p>         </th>
-         <td><p>&amp;IDF </p>         </td>
-         <td>32         </td>
-         <td><p>Model file identifier (logical name)  </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;IDF </p>         </td>
+         <td  >32         </td>
+         <td  data-valign="top"><p>Model file identifier (logical name)  </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;FNAME</p>         </td>
-         <td>512         </td>
-         <td><p>Physical file local name </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;FNAME</p>         </td>
+         <td  >512         </td>
+         <td  data-valign="top"><p>Physical file local name </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;FKEYLEN </p>         </td>
-         <td>5         </td>
-         <td><p>Length (received) of the indexed file key at the sender’s
+         <td  data-valign="top" width="26%"><p>&amp;FKEYLEN </p>         </td>
+         <td  >5         </td>
+         <td  data-valign="top"><p>Length (received) of the indexed file key at the sender’s
 site </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;FKEYPOS </p>         </td>
-         <td>5         </td>
-         <td><p>Position (received) of the indexed file key at the sender’s
+         <td  data-valign="top" width="26%"><p>&amp;FKEYPOS </p>         </td>
+         <td  >5         </td>
+         <td  data-valign="top"><p>Position (received) of the indexed file key at the sender’s
 site </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;NBR </p>         </td>
-         <td>20         </td>
-         <td><p>Number of records in the file</p>
+         <td  data-valign="top" width="26%"><p>&amp;NBR </p>         </td>
+         <td  >20         </td>
+         <td  data-valign="top"><p>Number of records in the file</p>
 <p>For listcat=content debug, this attribute is FRECS</p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;BLKNUM </p>         </td>
-         <td>6         </td>
-         <td><p>Catalog block number </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;BLKNUM </p>         </td>
+         <td  >6         </td>
+         <td  data-valign="top"><p>Catalog block number </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;XLATE </p>         </td>
-         <td>32         </td>
-         <td><p>Identifier of the translation table used </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;XLATE </p>         </td>
+         <td  >32         </td>
+         <td  data-valign="top"><p>Identifier of the translation table used </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;NBC </p>         </td>
-         <td>20         </td>
-         <td><p>Number of bytes in the transferred file</p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;NBC </p>         </td>
+         <td  >20         </td>
+         <td  data-valign="top"><p>Number of bytes in the transferred file</p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;NIDF </p>         </td>
-         <td>512         </td>
-         <td><p>Model file network identifier </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;NIDF </p>         </td>
+         <td  >512         </td>
+         <td  data-valign="top"><p>Model file network identifier </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;FDB </p>         </td>
-         <td>64         </td>
-         <td><p>Database name </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;FDB </p>         </td>
+         <td  >64         </td>
+         <td  data-valign="top"><p>Database name </p>         </td>
       </tr>
       <tr>
-         <td>&amp;FCHARSET         </td>
-         <td>32         </td>
-         <td>Local file  encoding         </td>
+         <td  data-valign="top" width="26%">&amp;FCHARSET         </td>
+         <td  >32         </td>
+         <td  data-valign="top">Local file  encoding         </td>
       </tr>
       <tr>
-         <td>&amp;NCHARSET         </td>
-         <td>32         </td>
-         <td>Destination file encoding for network  data         </td>
+         <td  data-valign="top" width="26%">&amp;NCHARSET         </td>
+         <td  >32         </td>
+         <td  data-valign="top">Destination file encoding for network  data         </td>
       </tr>
       <tr>
-         <td>&amp;WORKINGDIR         </td>
-         <td>512         </td>
-         <td>Specify a directory other than the default directory         </td>
+         <td  data-valign="top" width="26%">&amp;WORKINGDIR         </td>
+         <td  >512         </td>
+         <td  data-valign="top">Specify a directory other than the default directory         </td>
       </tr>
       <tr>
-         <td>&amp;HOME         </td>
-         <td>512         </td>
-         <td>Keyword that allows different users to work with files placed in their home directory         </td>
+         <td  data-valign="top" width="26%">&amp;HOME         </td>
+         <td  >512         </td>
+         <td  data-valign="top">Keyword that allows different users to work with files placed in their home directory         </td>
       </tr>
       <tr>
-         <td>Receiving         </td>
+         <td colspan="3"  data-valign="top" width="26%">Receiving         </td>
       </tr>
       <tr>
-         <td><p>&amp;NFNAME </p>         </td>
-         <td>512         </td>
-         <td><p>Physical file network name </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;NFNAME </p>         </td>
+         <td  >512         </td>
+         <td  data-valign="top"><p>Physical file network name </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;FROOT </p>         </td>
-         <td>512         </td>
-         <td><p>Root (file name) </p>
+         <td  data-valign="top" width="26%"><p>&amp;FROOT </p>         </td>
+         <td  >512         </td>
+         <td  data-valign="top"><p>Root (file name) </p>
 <p>Based on the SFNAME (remote sending file)</p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;FSUF </p>         </td>
-         <td>512         </td>
-         <td><p>File name suffix -</p>
+         <td  data-valign="top" width="26%"><p>&amp;FSUF </p>         </td>
+         <td  >512         </td>
+         <td  data-valign="top"><p>File name suffix -</p>
 <p>Based on the SFNAME (remote sending file)</p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;FPATH </p>         </td>
-         <td>512         </td>
-         <td><p>Prefix (file path)  -</p>
+         <td  data-valign="top" width="26%"><p>&amp;FPATH </p>         </td>
+         <td  >512         </td>
+         <td  data-valign="top"><p>Prefix (file path)  -</p>
 <p>Based on the SFNAME (remote sending file)</p>         </td>
       </tr>
       <tr>
-         <td>&amp;FUNITC          </td>
-         <td>512         </td>
-         <td><p>Physical file unit (z/OS) -</p>
+         <td  data-valign="top" width="26%">&amp;FUNITC          </td>
+         <td  >512         </td>
+         <td  data-valign="top"><p>Physical file unit (z/OS) -</p>
 <p>Based on the SFNAME (remote sending file)</p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;FUNIT</p>
+         <td  data-valign="top" width="26%"><p>&amp;FUNIT</p>
 <p> </p>         </td>
-         <td>512         </td>
-         <td><p>Physical file volume -</p>
+         <td  >512         </td>
+         <td  data-valign="top"><p>Physical file volume -</p>
 <p>Based on the SFNAME (remote sending file)</p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;UNIT </p>         </td>
-         <td>512         </td>
-         <td><p>Physical file volume name for received file</p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;UNIT </p>         </td>
+         <td  >512         </td>
+         <td  data-valign="top"><p>Physical file volume name for received file</p>         </td>
       </tr>
       <tr>
-         <td>&amp;UNITC          </td>
-         <td>512         </td>
-         <td>Physical file unit class for received file (z/OS)         </td>
+         <td  data-valign="top" width="26%">&amp;UNITC          </td>
+         <td  >512         </td>
+         <td  data-valign="top">Physical file unit class for received file (z/OS)         </td>
       </tr>
       <tr>
-         <td><p>&amp;PATH</p>         </td>
-         <td>512         </td>
-         <td><p>Local file path of the received file</p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;PATH</p>         </td>
+         <td  >512         </td>
+         <td  data-valign="top"><p>Local file path of the received file</p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;ROOT</p>         </td>
-         <td>512         </td>
-         <td><p>Local file root for the received file</p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;ROOT</p>         </td>
+         <td  >512         </td>
+         <td  data-valign="top"><p>Local file root for the received file</p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;SUF</p>         </td>
-         <td>512         </td>
-         <td><p>Local file suffix for the received file</p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;SUF</p>         </td>
+         <td  >512         </td>
+         <td  data-valign="top"><p>Local file suffix for the received file</p>         </td>
       </tr>
       <tr>
-         <td>Sending         </td>
+         <td colspan="3"  data-valign="top" width="26%">Sending         </td>
       </tr>
       <tr>
-         <td>&amp;SFNAME         </td>
-         <td>512         </td>
-         <td>Name of file to send         </td>
+         <td  data-valign="top" width="26%">&amp;SFNAME         </td>
+         <td  >512         </td>
+         <td  data-valign="top">Name of file to send         </td>
       </tr>
       <tr>
-         <td><p>&amp;FUNIT</p>
+         <td  data-valign="top" width="26%"><p>&amp;FUNIT</p>
 <p> </p>         </td>
-         <td>512         </td>
-         <td><p>Physical file volume name for sending file</p>         </td>
+         <td  >512         </td>
+         <td  data-valign="top"><p>Physical file volume name for sending file</p>         </td>
       </tr>
       <tr>
-         <td>&amp;FUNITC          </td>
-         <td>512         </td>
-         <td>Physical file unit for sending file (z/OS)         </td>
+         <td  data-valign="top" width="26%">&amp;FUNITC          </td>
+         <td  >512         </td>
+         <td  data-valign="top">Physical file unit for sending file (z/OS)         </td>
       </tr>
       <tr>
-         <td><p>&amp;FPATH </p>         </td>
-         <td>512         </td>
-         <td><p>Prefix (file path) of the sending file</p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;FPATH </p>         </td>
+         <td  >512         </td>
+         <td  data-valign="top"><p>Prefix (file path) of the sending file</p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;FROOT </p>         </td>
-         <td>512         </td>
-         <td><p>Root (actual file name) of the sending file</p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;FROOT </p>         </td>
+         <td  >512         </td>
+         <td  data-valign="top"><p>Root (actual file name) of the sending file</p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;FSUF </p>         </td>
-         <td>512         </td>
-         <td><p>Suffix associated with file name of the sending file</p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;FSUF </p>         </td>
+         <td  >512         </td>
+         <td  data-valign="top"><p>Suffix associated with file name of the sending file</p>         </td>
       </tr>
       <tr>
 <th rowspan="2"  data-valign="top" width="21%"><p>MESSAGES</p>         </th>
-         <td><p>&amp;IDM</p>         </td>
-         <td>32         </td>
-         <td><p>Message identifier </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;IDM</p>         </td>
+         <td  >32         </td>
+         <td  data-valign="top"><p>Message identifier </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;MSG </p>         </td>
-         <td><p> </p>
+         <td  data-valign="top" width="26%"><p>&amp;MSG </p>         </td>
+         <td  ><p> </p>
 <p>80</p>
 <p>512</p>         </td>
-         <td><p>Message text </p>
+         <td  data-valign="top"><p>Message text </p>
 <p>PeSIT D CFT</p>
 <p>PeSIT E</p>         </td>
       </tr>
       <tr>
 <th rowspan="5"  data-valign="top" width="21%"><p>DATE and TIME associated with a FILE </p>         </th>
-         <td><p>&amp;FDATE </p>         </td>
-         <td>8         </td>
-         <td><p>Date associated with the file </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;FDATE </p>         </td>
+         <td  >8         </td>
+         <td  data-valign="top"><p>Date associated with the file </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;FTIME </p>         </td>
-         <td>8         </td>
-         <td><p>Time associated with the file </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;FTIME </p>         </td>
+         <td  >8         </td>
+         <td  data-valign="top"><p>Time associated with the file </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;FYEAR </p>         </td>
-         <td>2         </td>
-         <td><p>Year associated with the file </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;FYEAR </p>         </td>
+         <td  >2         </td>
+         <td  data-valign="top"><p>Year associated with the file </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;FMONTH </p>         </td>
-         <td>2         </td>
-         <td><p>Month associated with the file </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;FMONTH </p>         </td>
+         <td  >2         </td>
+         <td  data-valign="top"><p>Month associated with the file </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;FDAY </p>         </td>
-         <td>2         </td>
-         <td><p>Day associated with the file </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;FDAY </p>         </td>
+         <td  >2         </td>
+         <td  data-valign="top"><p>Day associated with the file </p>         </td>
       </tr>
       <tr>
 <th rowspan="5"  data-valign="top" width="21%"><p>DATE and TIME associated with a CATALOG </p>         </th>
-         <td><p>&amp;CDATE </p>         </td>
-         <td>8         </td>
-         <td><p>Catalog entry date </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;CDATE </p>         </td>
+         <td  >8         </td>
+         <td  data-valign="top"><p>Catalog entry date </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;CTIME </p>         </td>
-         <td>8         </td>
-         <td><p>Catalog entry time </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;CTIME </p>         </td>
+         <td  >8         </td>
+         <td  data-valign="top"><p>Catalog entry time </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;CYEAR </p>         </td>
-         <td>2         </td>
-         <td><p>Catalog entry year </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;CYEAR </p>         </td>
+         <td  >2         </td>
+         <td  data-valign="top"><p>Catalog entry year </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;CMONTH </p>         </td>
-         <td>2         </td>
-         <td><p>Catalog entry month </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;CMONTH </p>         </td>
+         <td  >2         </td>
+         <td  data-valign="top"><p>Catalog entry month </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;CDAY </p>         </td>
-         <td>2         </td>
-         <td><p>Catalog entry day </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;CDAY </p>         </td>
+         <td  >2         </td>
+         <td  data-valign="top"><p>Catalog entry day </p>         </td>
       </tr>
       <tr>
 <th rowspan="11"  data-valign="top" width="21%"><p>DATE and TIME associated with a TRANSFER </p>         </th>
-         <td><p>&amp;BDATE </p>         </td>
-         <td>8         </td>
-         <td><p>Transfer start date </p>
+         <td  data-valign="top" width="26%"><p>&amp;BDATE </p>         </td>
+         <td  >8         </td>
+         <td  data-valign="top"><p>Transfer start date </p>
 <p>When listcat content=debug the start date is</p>
 <p>DATEB instead of BDATE</p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;BTIME </p>         </td>
-         <td>8         </td>
-         <td><p>Transfer start time </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;BTIME </p>         </td>
+         <td  >8         </td>
+         <td  data-valign="top"><p>Transfer start time </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;BYEAR </p>         </td>
-         <td>2         </td>
-         <td><p>Start year for the transfer</p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;BYEAR </p>         </td>
+         <td  >2         </td>
+         <td  data-valign="top"><p>Start year for the transfer</p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;BMONTH </p>         </td>
-         <td>2         </td>
-         <td><p>Start month for the transfer</p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;BMONTH </p>         </td>
+         <td  >2         </td>
+         <td  data-valign="top"><p>Start month for the transfer</p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;BDAY </p>         </td>
-         <td>2         </td>
-         <td><p>Transfer start day </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;BDAY </p>         </td>
+         <td  >2         </td>
+         <td  data-valign="top"><p>Transfer start day </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;EDATE </p>         </td>
-         <td>8         </td>
-         <td><p>Transfer end date</p>
+         <td  data-valign="top" width="26%"><p>&amp;EDATE </p>         </td>
+         <td  >8         </td>
+         <td  data-valign="top"><p>Transfer end date</p>
 <p>When listcat content=debug the end date is</p>
 <p>DATEE instead of EDATE</p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;ETIME </p>         </td>
-         <td>8         </td>
-         <td><p>Transfer end time f</p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;ETIME </p>         </td>
+         <td  >8         </td>
+         <td  data-valign="top"><p>Transfer end time f</p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;EYEAR </p>         </td>
-         <td>2         </td>
-         <td><p>Transfer end year</p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;EYEAR </p>         </td>
+         <td  >2         </td>
+         <td  data-valign="top"><p>Transfer end year</p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;EMONTH </p>         </td>
-         <td>2         </td>
-         <td><p>Transfer end month</p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;EMONTH </p>         </td>
+         <td  >2         </td>
+         <td  data-valign="top"><p>Transfer end month</p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;EDAY </p>         </td>
-         <td>2         </td>
-         <td><p>Transfer end day</p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;EDAY </p>         </td>
+         <td  >2         </td>
+         <td  data-valign="top"><p>Transfer end day</p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;TT </p>         </td>
-         <td>10         </td>
-         <td><p>Transmission duration in seconds (TIMES attribute in the  {{< TransferCFT/componentshortname  >}} catalog)</p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;TT </p>         </td>
+         <td  >10         </td>
+         <td  data-valign="top"><p>Transmission duration in seconds (TIMES attribute in the  {{< TransferCFT/componentshortname  >}} catalog)</p>         </td>
       </tr>
       <tr>
 <th rowspan="3"  data-valign="top" width="21%">CONTROL OUTPUT          </th>
-         <td><p>&amp;FLOG </p>         </td>
-         <td>512         </td>
-         <td><p>Name of last log file used by  {{< TransferCFT/componentshortname  >}} </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;FLOG </p>         </td>
+         <td  >512         </td>
+         <td  data-valign="top"><p>Name of last log file used by  {{< TransferCFT/componentshortname  >}} </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;FACCNT </p>         </td>
-         <td>512         </td>
-         <td><p>Name of last statistics file used by  {{< TransferCFT/componentshortname  >}} </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;FACCNT </p>         </td>
+         <td  >512         </td>
+         <td  data-valign="top"><p>Name of last statistics file used by  {{< TransferCFT/componentshortname  >}} </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;FCAT</p>         </td>
-         <td>512         </td>
-         <td><p>Name of catalog used by  {{< TransferCFT/componentshortname  >}}</p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;FCAT</p>         </td>
+         <td  >512         </td>
+         <td  data-valign="top"><p>Name of catalog used by  {{< TransferCFT/componentshortname  >}}</p>         </td>
       </tr>
       <tr>
 <th rowspan="2"  data-valign="top" width="21%"><p>TRACKING</p>         </th>
-         <td><p>&amp;XFRCYCID </p>         </td>
-         <td>250         </td>
-         <td><p>Processing cycle identifier (set of tracked instances that
+         <td  data-valign="top" width="26%"><p>&amp;XFRCYCID </p>         </td>
+         <td  >250         </td>
+         <td  data-valign="top"><p>Processing cycle identifier (set of tracked instances that
 concern a single transfer) </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;XFROBJID </p>         </td>
-         <td>32         </td>
-         <td><p>Tracked object name </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;XFROBJID </p>         </td>
+         <td  >32         </td>
+         <td  data-valign="top"><p>Tracked object name </p>         </td>
       </tr>
       <tr>
 <th rowspan="9"  data-valign="top" width="21%"><p>SSL (1) </p>         </th>
-         <td><p>&amp;SSL</p>         </td>
-         <td>1         </td>
-         <td><p>Indicates if the session the transfer was carried out on
+         <td  data-valign="top" width="26%"><p>&amp;SSL</p>         </td>
+         <td  >1         </td>
+         <td  data-valign="top"><p>Indicates if the session the transfer was carried out on
 was secured (‘1’) or not (‘0’) </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;SSLMODE </p>         </td>
-         <td>1         </td>
-         <td><p>SSL session mode on which the transfer was carried out.
+         <td  data-valign="top" width="26%"><p>&amp;SSLMODE </p>         </td>
+         <td  >1         </td>
+         <td  data-valign="top"><p>SSL session mode on which the transfer was carried out.
 (C: Client / S: Server) </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;SSLAUTH </p>         </td>
-         <td>1         </td>
-         <td><p>Authentication rule<br />
+         <td  data-valign="top" width="26%"><p>&amp;SSLAUTH </p>         </td>
+         <td  >1         </td>
+         <td  data-valign="top"><p>Authentication rule<br />
 (A: Anonymous /S: Server / B: Both) </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;SSLCIPH </p>         </td>
-         <td>2         </td>
-         <td><p>SSL cipher suite </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;SSLCIPH </p>         </td>
+         <td  >2         </td>
+         <td  data-valign="top"><p>SSL cipher suite </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;SSLPROF </p>         </td>
-         <td>32         </td>
-         <td><p>SSL profile identifier </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;SSLPROF </p>         </td>
+         <td  >32         </td>
+         <td  data-valign="top"><p>SSL profile identifier </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;SSLPARM </p>         </td>
-         <td>64         </td>
-         <td><p>SSL user parameter Parm parameter of the CFTSSL command </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;SSLPARM </p>         </td>
+         <td  >64         </td>
+         <td  data-valign="top"><p>SSL user parameter Parm parameter of the CFTSSL command </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;SSLRMCA </p>         </td>
-         <td>256         </td>
-         <td><p>Certificate identifier of the authority that signed the
+         <td  data-valign="top" width="26%"><p>&amp;SSLRMCA </p>         </td>
+         <td  >256         </td>
+         <td  data-valign="top"><p>Certificate identifier of the authority that signed the
 certificate presented by the remote partner </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;SSLUSER </p>         </td>
-         <td>256         </td>
-         <td><p>Identifier of the user certificate used locally for authentication
+         <td  data-valign="top" width="26%"><p>&amp;SSLUSER </p>         </td>
+         <td  >256         </td>
+         <td  data-valign="top"><p>Identifier of the user certificate used locally for authentication
 by the remote partner </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;SSLCFNAM </p>         </td>
-         <td>64         </td>
-         <td><p>Physical name of the file in which the certificate chain
+         <td  data-valign="top" width="26%"><p>&amp;SSLCFNAM </p>         </td>
+         <td  >64         </td>
+         <td  data-valign="top"><p>Physical name of the file in which the certificate chain
 presented by the remote partner was recorded </p>
 <p>This is the same as the CFTSSL CERFNAME parameter value</p>         </td>
       </tr>
       <tr>
 <th rowspan="4"  data-valign="top" width="21%"><p>SYSTEM </p>         </th>
-         <td><p>&amp;SYSDATE </p>         </td>
-         <td>8         </td>
-         <td><p>System date </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;SYSDATE </p>         </td>
+         <td  >8         </td>
+         <td  data-valign="top"><p>System date </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;SYSTIME </p>         </td>
-         <td>8         </td>
-         <td><p>System time </p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;SYSTIME </p>         </td>
+         <td  >8         </td>
+         <td  data-valign="top"><p>System time </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;SYSQQ </p>         </td>
-         <td>3         </td>
-         <td><p>Number of the day in the year associated with the system
+         <td  data-valign="top" width="26%"><p>&amp;SYSQQ </p>         </td>
+         <td  >3         </td>
+         <td  data-valign="top"><p>Number of the day in the year associated with the system
 date </p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;SYSDAY</p>         </td>
-         <td>1         </td>
-         <td><p>Day of the week (Sunday = 0, 6 = Saturday)</p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;SYSDAY</p>         </td>
+         <td  >1         </td>
+         <td  data-valign="top"><p>Day of the week (Sunday = 0, 6 = Saturday)</p>         </td>
       </tr>
       <tr>
 <th rowspan="9"  data-valign="top" width="21%"><p>CAT/ ACCOUNT </p>
 <p>ENVIRONMENT</p>         </th>
-         <td><p>&amp;CFTNAME</p>         </td>
-         <td>32         </td>
-         <td><p>Name of the  {{< TransferCFT/componentshortname  >}} (CFTPARM PART parameter)</p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;CFTNAME</p>         </td>
+         <td  >32         </td>
+         <td  data-valign="top"><p>Name of the  {{< TransferCFT/componentshortname  >}} (CFTPARM PART parameter)</p>         </td>
       </tr>
       <tr>
-         <td><p>&amp;CFTEVENT</p>         </td>
-         <td>16         </td>
-         <td><p>The type of job submitted by  {{< TransferCFT/componentshortname  >}}, see (2) below</p>         </td>
+         <td  data-valign="top" width="26%"><p>&amp;CFTEVENT</p>         </td>
+         <td  >16         </td>
+         <td  data-valign="top"><p>The type of job submitted by  {{< TransferCFT/componentshortname  >}}, see (2) below</p>         </td>
       </tr>
       <tr>
-         <td>&amp;SJOBNAME         </td>
-         <td>15         </td>
-         <td>The  {{< TransferCFT/componentshortname  >}} jobname, which is the name of the job submitting the cronjob or exec procedure (z/OS)         </td>
+         <td  data-valign="top" width="26%">&amp;SJOBNAME         </td>
+         <td  >15         </td>
+         <td  data-valign="top">The  {{< TransferCFT/componentshortname  >}} jobname, which is the name of the job submitting the cronjob or exec procedure (z/OS)         </td>
       </tr>
       <tr>
-         <td>&amp;CFTVERSION         </td>
-         <td>16         </td>
-         <td>The Transfer CFT version         </td>
+         <td  data-valign="top" width="26%">&amp;CFTVERSION         </td>
+         <td  >16         </td>
+         <td  data-valign="top">The Transfer CFT version         </td>
       </tr>
       <tr>
-         <td>&amp;CFTSP         </td>
-         <td>16         </td>
-         <td>The latest SP applied to the Transfer CFT          </td>
+         <td  data-valign="top" width="26%">&amp;CFTSP         </td>
+         <td  >16         </td>
+         <td  data-valign="top">The latest SP applied to the Transfer CFT          </td>
       </tr>
       <tr>
-         <td>&amp;CFTPATCH         </td>
-         <td>16         </td>
-         <td>The latest patch applied to the Transfer CFT          </td>
+         <td  data-valign="top" width="26%">&amp;CFTPATCH         </td>
+         <td  >16         </td>
+         <td  data-valign="top">The latest patch applied to the Transfer CFT          </td>
       </tr>
       <tr>
-         <td>&amp;CFTTARGET         </td>
-         <td>16         </td>
-         <td>The  Transfer CFT platform with additional details required for a support ticket, for example         </td>
+         <td  data-valign="top" width="26%">&amp;CFTTARGET         </td>
+         <td  >16         </td>
+         <td  data-valign="top">The  Transfer CFT platform with additional details required for a support ticket, for example         </td>
       </tr>
       <tr>
-         <td>&amp;CFTHOSTOS         </td>
-         <td>64         </td>
-         <td>The  Transfer CFT hostname         </td>
+         <td  data-valign="top" width="26%">&amp;CFTHOSTOS         </td>
+         <td  >64         </td>
+         <td  data-valign="top">The  Transfer CFT hostname         </td>
       </tr>
       <tr>
-         <td>&amp;CFTHOSTMACHINE         </td>
-         <td>64         </td>
-         <td>The  machine processor name where Transfer CFT is running         </td>
+         <td >&amp;CFTHOSTMACHINE         </td>
+         <td   data-valign="top" width="26%">64         </td>
+         <td  >The  machine processor name where Transfer CFT is running         </td>
       </tr>
    </tbody>
 </table>
@@ -985,8 +982,7 @@ date </p>         </td>
 
 (2): EXEC in SEND, EXECSF,  EXECSM, EXEC in RECV, EXECRF, EXECRM, EXECE, EXECSE, EXECRE, EXECA, EXECSFA, EXECSMA, PREEXEC, EXITEOT, EXECSUB, EXECSUBA, EXECSUBPRE
 
-> **Note:**
->
+> **Note**  
 > The symbolic variable formats concerning dates and times are:
 
 -   Time: HHMMSSCC
@@ -1025,12 +1021,12 @@ Symbolic variables can be used:
 
 | Parameter  | Symbolic variables  |
 | --- | --- |
-| WFNAME, NFNAME, FNAME for the CFTSEND/SEND and CFTRECV/RECV commands  |  <li>&amp;FDATE, &amp;FTIME, &amp;FYEAR, &amp;FMONTH, &amp;FDAY<br /> <br/> • &amp;BDATE, &amp;BTIME, &amp;BYEAR, &amp;BMONTH, &amp;BDAY<br /> <br/> • &amp;SPART, &amp;RPART, &amp;PART, &amp;NPART, &amp;GROUP<br /> <br/> • &amp;SUSER, &amp;RUSER<br /> <br/> • &amp;SAPPL, &amp;RAPPL<br /> <br/> • &amp;IDF, &amp;PARM, &amp;IDA<br /> <br/> • &amp;NIDF<br /> <br/> • &amp;NFNAME (only for FNAME and WFNAME)<br /> <br/> • &amp;IDT (only the FNAME and WFNAME parameters when you receive a file)<br /> <br/> • &amp;SYSQQ<br/> • &amp;WORKINGDIR</li>  |
-|  EXEC, EXECE, PREEXEC for the CFTSEND/SEND and CFTRECV/RECV commands<br/>EXECRE, EXECSE, EXECRF, EXECSF, EXECSFA, EXECSM, EXECRM, EXECSMA for CFTPARM command  |  <li>&amp;SPART, &amp;RPART, &amp;PART, &amp;GROUP, &amp;NRPART, &amp;NSPART, &amp;USERID,&amp;GROUPID<br/> • &amp;BDATE, &amp;BTIME, &amp;BYEAR, &amp;BMONTH, &amp;BDAY<br/> • &amp;CDATE, &amp;CTIME, &amp;CYEAR, &amp;CMONTH, &amp;CDAY<br/> • &amp;FDATE, &amp;FTIME, &amp;FYEAR, &amp;FMONTH, &amp;FDAY<br/> • &amp;EDATE, &amp;ETIME, &amp;EYEAR, &amp;EMONTH, &amp;EDAY<br/> • &amp;COMMENT<br/> • &amp;SUSER, &amp;RUSER<br /> </li> <li>&amp;SAPPL, &amp;RAPPL<br /> </li> <li>&amp;PARM, &amp;MSG, &amp;PI99<br /> </li> <li>&amp;DIAGI, &amp;DIAGP, &amp;DIAGC<br /> </li> <li>&amp;FNAME*, &amp;UNIT*, &amp;UNITC*, &amp;NFNAME*, &amp;NFVER*, &amp;FDB*, &amp;SELFNAME*, &amp;FUNITC*, &amp;FUNIT*, &amp;FPATH*, &amp;FROOT*, &amp;SFNAME*, &amp;WORKINGDIR*, &amp;HOME*<br /> </li> <li>&amp;IDF*, &amp;PIDTU, &amp;IDTU, &amp;IDT, &amp;NIDT, &amp;NIDF*, &amp;IDA, &amp;IDM, &amp;NSUB, &amp;PATH*, &amp;ROOT*, &amp;SUF*<br /> </li> <li>&amp;FCODE, &amp;NCODE, &amp;fcharset, &amp;ncharset<br /> </li> <li>&amp;BLKNUM<br /> </li> <li>&amp;CFTEVENT, &amp;CFTNAME</li> <li>&amp;FMCL, &amp;MODE, &amp;TRTYPE</li> <li>&amp;FBLKSIZE*, &amp;FKEYLEN*, &amp;FKEYPOS*, &amp;NKEYLEN*, &amp;NKEYPOS*, &amp;FLRECL*, &amp;FORG*, &amp;FRECFM*, &amp;FSPACE*, &amp;FTYPE*</li> <li>&amp;NBR*, &amp;NBC*, &amp;NBT*, &amp;TT, &amp;QQ, &amp;COMP, &amp;NOTIFY, &amp;SYSQQ</li> <li>&amp;SSLAUTH, &amp;SSLCIPH, &amp;SSLMODE, &amp;SSLPROF, &amp;SSLPARM, &amp;SSLRMCN, &amp;SSLRMCA, &amp;SSLUSER, &amp;SSLCFNA, &amp;SSL (See <a href="#Transport_security_symbolic_variables">Transport security symbolic variables</a>)</li> <li>&amp;XLATE</li> <li>&amp;SYSDATE, &amp;SYSTIME, &amp;SYSDAY</li> <li>&amp;PRI</li> <li>&amp;XFRCYCID, &amp;XFROBJID</li> <li>&amp;EXITFREE</li> <li>&amp;JOBNAME, &amp;NCHARSET</li> <li>&amp;APPSTATE, &amp;PHASESTEP, &amp;PHASE</li> <li>&amp;<a href="../parameter_intro/sourceappl">SOURCEAPPL</a>, &amp;<a href="../parameter_intro/targetappl">TARGETAPPL</a></li> <blockquote> **Note:**<br/>You cannot use the variables designated by asterisk (*) in procedures associated with the EXEC* parameters relative to message transfers. </blockquote>  |
+| WFNAME, NFNAME, FNAME for the CFTSEND/SEND and CFTRECV/RECV commands  |  <li>&amp;FDATE, &amp;FTIME, &amp;FYEAR, &amp;FMONTH, &amp;FDAY<br /> <br/> • &amp;BDATE, &amp;BTIME, &amp;BYEAR, &amp;BMONTH, &amp;BDAY<br /> <br/> • &amp;SPART, &amp;RPART, &amp;PART, &amp;NPART, &amp;GROUP<br /> <br/> • &amp;SUSER, &amp;RUSER<br /> <br/> • &amp;SAPPL, &amp;RAPPL<br /> <br/> • &amp;IDF, &amp;PARM, &amp;IDA<br /> <br/> • &amp;NIDF<br /> <br/> • &amp;NFNAME (only for FNAME and WFNAME)<br /> <br/> • &amp;IDT (only  the FNAME and WFNAME parameters when you receive a file)<br /> <br/> • &amp;SYSQQ<br/> • &amp;WORKINGDIR</li>  |
+|  EXEC, EXECE, PREEXEC for the CFTSEND/SEND and CFTRECV/RECV commands<br/>EXECRE, EXECSE, EXECRF, EXECSF, EXECSFA, EXECSM, EXECRM, EXECSMA for CFTPARM command  |  <li>&amp;SPART, &amp;RPART, &amp;PART, &amp;GROUP, &amp;NRPART, &amp;NSPART, &amp;USERID,&amp;GROUPID<br/> • &amp;BDATE, &amp;BTIME, &amp;BYEAR, &amp;BMONTH, &amp;BDAY<br/> • &amp;CDATE, &amp;CTIME, &amp;CYEAR, &amp;CMONTH, &amp;CDAY<br/> • &amp;FDATE, &amp;FTIME, &amp;FYEAR, &amp;FMONTH, &amp;FDAY<br/> • &amp;EDATE, &amp;ETIME, &amp;EYEAR, &amp;EMONTH, &amp;EDAY<br/> • &amp;COMMENT<br/> • &amp;SUSER, &amp;RUSER<br /> </li> <li>&amp;SAPPL, &amp;RAPPL<br /> </li> <li>&amp;PARM, &amp;MSG, &amp;PI99<br /> </li> <li>&amp;DIAGI, &amp;DIAGP, &amp;DIAGC<br /> </li> <li>&amp;FNAME*, &amp;UNIT*, &amp;UNITC*, &amp;NFNAME*, &amp;NFVER*, &amp;FDB*, &amp;SELFNAME*, &amp;FUNITC*, &amp;FUNIT*, &amp;FPATH*, &amp;FROOT*, &amp;SFNAME*, &amp;WORKINGDIR*, &amp;HOME*<br /> </li> <li>&amp;IDF*, &amp;PIDTU, &amp;IDTU, &amp;IDT, &amp;NIDT, &amp;NIDF*, &amp;IDA, &amp;IDM, &amp;NSUB, &amp;PATH*, &amp;ROOT*, &amp;SUF*<br /> </li> <li>&amp;FCODE, &amp;NCODE, &amp;fcharset, &amp;ncharset<br /> </li> <li>&amp;BLKNUM<br /> </li> <li>&amp;CFTEVENT, &amp;CFTNAME</li> <li>&amp;FMCL, &amp;MODE, &amp;TRTYPE</li> <li>&amp;FBLKSIZE*, &amp;FKEYLEN*, &amp;FKEYPOS*, &amp;NKEYLEN*, &amp;NKEYPOS*, &amp;FLRECL*, &amp;FORG*, &amp;FRECFM*, &amp;FSPACE*, &amp;FTYPE*</li> <li>&amp;NBR*, &amp;NBC*, &amp;NBT*, &amp;TT, &amp;QQ, &amp;COMP, &amp;NOTIFY, &amp;SYSQQ</li> <li>&amp;SSLAUTH, &amp;SSLCIPH, &amp;SSLMODE, &amp;SSLPROF, &amp;SSLPARM, &amp;SSLRMCN, &amp;SSLRMCA, &amp;SSLUSER, &amp;SSLCFNA, &amp;SSL (See <a href="#Transport_security_symbolic_variables">Transport security symbolic variables</a>)</li> <li>&amp;XLATE</li> <li>&amp;SYSDATE, &amp;SYSTIME, &amp;SYSDAY</li> <li>&amp;PRI</li> <li>&amp;XFRCYCID, &amp;XFROBJID</li> <li>&amp;EXITFREE</li> <li>&amp;JOBNAME, &amp;NCHARSET</li> <li>&amp;APPSTATE, &amp;PHASESTEP, &amp;PHASE</li> <li>&amp;<a href="../parameter_intro/sourceappl">SOURCEAPPL</a>, &amp;<a href="../parameter_intro/targetappl">TARGETAPPL</a></li> <blockquote> **Note**<br/>You cannot use the variables designated by asterisk (*) in procedures associated with the EXEC* parameters relative to message transfers. </blockquote>  |
 | EXEC for CFTACCNT or CFTLOG  | &amp;FACCNT, &amp;FLOG  |
 | TLVCEXEC, TLVWEXEC for CFTCAT  | &amp;FCAT  |
 | USERID parameter of the CFTSEND and CFTRECV commands  | &amp;RUSER, &amp;SUSER, &amp;PART  |
-| EXIT of the {{< TransferCFT/componentshortname  >}} CFTSEND/SEND and CFTRECV/RECV commands  | &amp;IDF  |
+| EXIT of the  {{< TransferCFT/componentshortname  >}} CFTSEND/SEND and CFTRECV/RECV commands  | &amp;IDF  |
 | FNAME parameter of CFTDEST  |  <li>&amp;FDATE, &amp;FTIME, &amp;FYEAR, &amp;FMONTH, &amp;FDAY<br /> </li> <li>&amp;PART, &amp;RPART, &amp;SPART, &amp;NPART, &amp;GROUP<br /> </li> <li>&amp;SUSER, &amp;RUSER<br /> </li> <li>&amp;SAPPL, &amp;RAPPL<br /> </li> <li>&amp;IDF, &amp;PARM, &amp;IDA<br /> </li> <li>&amp;NIDF<br /> </li> <li>&amp;NFNAME, &amp;NFVER</li>  |
 | The name of the identifier of the IDF parameter of the CFTPROT command  |  <li>&amp;NIDF</li>  |
 | The IDA parameter of SEND and CFTSEND  |  <li>&amp;FNAME, &amp;FUNITC, &amp;FUNIT, &amp;FPATH, &amp;FROOT, &amp;FSUF, &amp;NFNAME, &amp;PART, &amp;IDF, &amp;IDTU, &amp;IDT, &amp;IDM, &amp;COMMENT, &amp;SYSDATE, &amp;SYSTIME</li>  |

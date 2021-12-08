@@ -80,24 +80,24 @@ media</a>
 <table>
    <tbody>
       <tr>
-         <td><p>Description</p>         </td>
-         <td><p>Use this command to redefine the data media with which
+         <td  width="19.982%"><p>Description</p>         </td>
+         <td colspan="2"  width="80.018%"><p>Use this command to redefine the data media with which
 the CFTUTIL utility operates.</p>         </td>
       </tr>
       <tr>
-         <td><p>Parameters</p>         </td>
-         <td><p><a href="../../command_summary/parameter_intro/fname">FNAME</a></p>
+         <td rowspan="4"  width="19.982%"><p>Parameters</p>         </td>
+         <td  width="20.241%"><p><a href="../../command_summary/parameter_intro/fname">FNAME</a></p>
 <p> </p>         </td>
-         <td><p>For
+         <td  width="59.777%"><p>For
 TYPE = {CAT | INPUT | OUTPUT | PARM | PART }</p>
 <p>Name of the file associated with the medium type accessed
 by CFTUTIL.</p>
 <p> </p>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../command_summary/parameter_intro/fname">FNAME</a></p>
+         <td  width="20.241%"><p><a href="../../command_summary/parameter_intro/fname">FNAME</a></p>
 <p> </p>         </td>
-         <td><p>For TYPE = COM</p>
+         <td  width="59.777%"><p>For TYPE = COM</p>
 <p>There must be a correspondence with the CFTCOM NAME
 parameter  that
 defines the communication medium as seen from Transfer CFT.</p>
@@ -111,13 +111,13 @@ file (filename)</li>
 </ul>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../command_summary/parameter_intro/mediacom">MEDIACOM</a> </p>         </td>
-         <td><p>Defines the communication medium type if this medium is
+         <td  width="20.241%"><p><a href="../../command_summary/parameter_intro/mediacom">MEDIACOM</a> </p>         </td>
+         <td  width="59.777%"><p>Defines the communication medium type if this medium is
 relevant to the system.</p>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../command_summary/parameter_intro/type#type_CONFIG">TYPE</a> </p>         </td>
-         <td><p>Defines the medium concerned.</p>         </td>
+         <td  width="20.241%"><p><a href="../../command_summary/parameter_intro/type#type_CONFIG">TYPE</a> </p>         </td>
+         <td  width="59.777%"><p>Defines the medium concerned.</p>         </td>
       </tr>
    </tbody>
 </table>

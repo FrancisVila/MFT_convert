@@ -5,8 +5,7 @@
 }This page describes the <span id="CLEARCMD_command"></span>CLEARCMD. Use this
 command  to delete a transfer request from the communication file. A log message is generated to trace who has cleared which command.
 
-> **Note:**
->
+> **Note**  
 > You must include either the COMMAND or JOBNAME parameter when using this command.
 
 
@@ -14,7 +13,7 @@ command  to delete a transfer request from the communication file. A log message
  --- | --- | --- |
 |  COMMAND  |  Request keyword.  |
 |  INDEX  |  Request number as displayed by the LISTCOM command.<br/>For example:<br/> • <code>INDEX=*</code> Selects all record numbers.<br/> • <code>INDEX=12345</code> Selects the record number 12345 in the COM file.</li>  |
-| JOBNAME  |  Jobname (string 15), which you can combine with wildcard characters.<br/>For example:<br/> • JOBNAME=12345<br/> • JOBNAME=123*<br/> • JOBNAME=12?45</li>  |
+| JOBNAME  |  Jobname   (string 15), which you can combine with wildcard characters.<br/>For example:<br/> • JOBNAME=12345<br/> • JOBNAME=123*<br/> • JOBNAME=12?45</li>  |
 |  USERID  |  Identifier of the request owner.  |
 
 

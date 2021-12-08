@@ -150,7 +150,7 @@ the command (CFTRECV ID = COMMUT) has to be customized explicitly on the
 store and forward site. If not, the store and forward is refused.
 
 
-           |  **PeSIT SIT profile**  |  For the PeSIT SIT profile, the model file identifier is subjected to the format constraint (Fnnnnn). See <a href="../../../../protocols_start_here/about_pesit">Protocols: PeSIT</a>.  |
+           |  **PeSIT SIT profile**  |  For the PeSIT SIT profile, the model file identifier is subjected to the format constraint (Fnnnnn). See  <a href="../../../../protocols_start_here/about_pesit">Protocols: PeSIT</a>.  |
  --- | --- | --- |
 
 
@@ -165,7 +165,7 @@ Local
 identifier of the model file (IDF) to be sent.
 
 
-|  PeSIT SIT profile  |  In the PeSIT protocol with the SIT profile, the model file identifier is subject to the format constraint (Fnnnnn). See <a href="../../../../protocols_start_here/about_pesit">Protocols: PeSIT</a>.  |
+|  PeSIT SIT profile  |  In the PeSIT protocol with the SIT profile, the model file identifier is subject to the format constraint (Fnnnnn). See  <a href="../../../../protocols_start_here/about_pesit">Protocols: PeSIT</a>.  |
 | --- | --- |
 
 

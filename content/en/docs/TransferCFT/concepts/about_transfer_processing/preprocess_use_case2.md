@@ -41,6 +41,5 @@ Results
 
 The script replaces ` _user_` in the **Hello** file with the PARTNER name, and then   compress this modified file. At the end of the preprocessing , the tar file is sent to the partner. The partner can set an exec for this idf, `test `in our example, that will untar the received file.
 
-> **Note:**
->
+> **Note**  
 > Notification is done by the CFTUTIL end istate=no, where no is the default istate value.

@@ -75,8 +75,7 @@ To enable the Transfer CFT PKI system, access the CONFIG file. The job responsib
 
 A sample named RACDCERT is delivered in the cftv2.INSTALL library. This RACDCERT show how to create a RING named XFBCFT, and to add test certificates: AXWMFTCA and AXWMFTUS. Additionally, the sample adds RACF authorizations for the Transfer CFT userid.
 
-> **Note:**
->
+> **Note**  
 > Transfer CFT no longer delivers sample certificates.
 
 For information on SAF compatible security products, such as ACF/2 or TOP-SECRET, refer to the product-supplied documentation.

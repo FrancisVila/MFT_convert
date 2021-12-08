@@ -10,8 +10,7 @@ The A00CUSTO JOB customizes the installation files. The customization is done di
 
 ### Installed directories
 
-> **Note:**
->
+> **Note**  
 > Do            NOT customize the distribution environment.
 
 

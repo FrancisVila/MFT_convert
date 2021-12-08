@@ -42,8 +42,7 @@ This section describes the effect of setting either a high or especially low val
 
 You may want to use a low DISCTD value when you have a lot of partners and you reach or exceed the MAXTRANS number of transfers. For example, if there is a central hub diffusing to a large distribution list, this allows a session to close so that you can quickly establish a new session for another partner.
 
-> **Note:**
->
+> **Note**  
 > Caution  
 >  Setting DISCTD to 0 (zero) creates an infinite timeout, and does not indicate zero seconds.
 
@@ -81,8 +80,7 @@ In a situation where all sessions are active, and no additional sessions are ava
 -   A new connection can be established when at least one transfer completes and the session has closed
 -   In this particular scenario where all sessions are active, setting DISTCS to a high value negatively impacts performance due to the effect on latency
 
-> **Note:**
->
+> **Note**  
 > Caution  
 >  Setting DISCTD to 0 (zero) creates an infinite timeout (and does not indicate zero seconds).
 
@@ -127,8 +125,7 @@ In some cases you may find that your Transfer CFT instance is not configured us
 
 Transfers are only scheduled after WSCAN minutes, so this value can negatively affect either a remote MAXTRANS or a local MAXCNX.
 
-> **Note:**
->
+> **Note**  
 > The default value is 5, and should in almost all cases be modified. We recommend that you modify the value  to 1. Not changing the value could lead to latency issues for either remote MAXTRANS local MAXCNX. See table above.
 
 #### DISCTS/DISCTD value is set to zero
@@ -143,8 +140,7 @@ A potential issue when set to too high of a value is that  incoming/outgoing ses
 
 If RETRYW minutes are set to a high value, this has an impact on when the remote MAXCNX is reached. This can affect performance as transfers are rejected and then rescheduled in RETRYW minutes (for example, the default value is 7 minutes).
 
-> **Note:**
->
+> **Note**  
 > A good rule of thumb is to set this value to 1.
 
 ### Negative impact on transfer times

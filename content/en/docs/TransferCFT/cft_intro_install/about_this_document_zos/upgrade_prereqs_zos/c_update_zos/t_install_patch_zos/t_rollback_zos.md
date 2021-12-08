@@ -30,6 +30,5 @@ Before submitting the JOB configure the following JCL in automatic mode:
 -   Set the parameter 'ID' with the last six characters of the patch id. For example,  0E0500 for the patch id CF0E0500.
 -   Submit the JCL.
 
-> **Note:**
->
+> **Note**  
 > This operation is displayed in the distlib.LOG file.

@@ -61,62 +61,60 @@ code</p>         </th>
    </thead>
    <tbody>
       <tr>
-         <td><p>U</p>         </td>
-         <td><p># 101</p>         </td>
-         <td><p>Binary stream</p>         </td>
-         <td><p>' '</p>         </td>
-         <td><p>U</p>         </td>
-         <td>SEQ         </td>
+         <td ><p>U</p>         </td>
+         <td ><p># 101</p>         </td>
+         <td ><p>Binary stream</p>         </td>
+         <td ><p>' '</p>         </td>
+         <td ><p>U</p>         </td>
+         <td >SEQ         </td>
       </tr>
       <tr>
-         <td><p>U</p>         </td>
-         <td><p>= 101</p>         </td>
-         <td><p>Edit file</p>         </td>
-         <td><p>E</p>         </td>
-         <td><p>U</p>         </td>
-         <td>SEQ         </td>
+         <td ><p>U</p>         </td>
+         <td ><p>= 101</p>         </td>
+         <td ><p>Edit file</p>         </td>
+         <td ><p>E</p>         </td>
+         <td ><p>U</p>         </td>
+         <td >SEQ         </td>
       </tr>
       <tr>
-         <td><p>E</p>         </td>
-         <td><p># 1</p>         </td>
-         <td><p>Fixed sequential</p>         </td>
-         <td><p>' '</p>         </td>
-         <td><p>F</p>         </td>
-         <td>SEQ         </td>
+         <td ><p>E</p>         </td>
+         <td ><p># 1</p>         </td>
+         <td ><p>Fixed sequential</p>         </td>
+         <td ><p>' '</p>         </td>
+         <td ><p>F</p>         </td>
+         <td >SEQ         </td>
       </tr>
       <tr>
-         <td><p>E</p>         </td>
-         <td><p>= 1</p>         </td>
-         <td><p>Sequential, variable emulation</p>         </td>
-         <td><p>' '</p>         </td>
-         <td><p>V</p>         </td>
-         <td>SEQ         </td>
+         <td ><p>E</p>         </td>
+         <td ><p>= 1</p>         </td>
+         <td ><p>Sequential, variable emulation</p>         </td>
+         <td ><p>' '</p>         </td>
+         <td ><p>V</p>         </td>
+         <td >SEQ         </td>
       </tr>
       <tr>
-         <td><p>R</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Direct fixed</p>         </td>
-         <td><p>' '</p>         </td>
-         <td><p>F [1]</p>         </td>
-         <td>DIR         </td>
+         <td ><p>R</p>         </td>
+         <td ><p> </p>         </td>
+         <td ><p>Direct fixed</p>         </td>
+         <td ><p>' '</p>         </td>
+         <td ><p>F [1]</p>         </td>
+         <td >DIR         </td>
       </tr>
       <tr>
-         <td><p>K</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Fixed indexed sequential</p>         </td>
-         <td><p>' '</p>         </td>
-         <td><p>F  [1]</p>         </td>
-         <td>IDX         </td>
+         <td ><p>K</p>         </td>
+         <td ><p> </p>         </td>
+         <td ><p>Fixed indexed sequential</p>         </td>
+         <td ><p>' '</p>         </td>
+         <td ><p>F  [1]</p>         </td>
+         <td >IDX         </td>
       </tr>
    </tbody>
 </table>
 
-> **Note:**
->
+> **Note**  
 > Empty cells indicate that the information is not significant.
 
-> **Note:**
->
+> **Note**  
 > \[1\] You can also send variable length record files by setting FRECFM = V.
 
 FTYPE, FRECFM, and FORG values for receive operations
@@ -134,12 +132,10 @@ FTYPE, FRECFM, and FORG values for receive operations
 |   | V  | IDX [2]  | Indexed sequential, variable emulation  | K  | 1  |
 
 
-> **Note:**
->
+> **Note**  
 > Empty cells indicate that the information is not significant.
 
-> **Note:**
->
+> **Note**  
 > \[2\] Read the file organization from the network, explicitly set FORG  to FORG= ‘ ‘. Otherwise, FORG is always sequential (FORG = SEQ).
 
 ## Platform specific parameters and values
@@ -180,6 +176,5 @@ If specified, this parameter forces the BUFFERED attribute for the Guardian file
 
 The received file is created with a BUFFERED attribute set.
 
-> **Note:**
->
+> **Note**  
 > If a received file has the BUFFERED option, the file write cache is flushed while the PeSIT synchronization points are set. This means that there is no data loss (the file is not altered) if the file transfer is restarted. This applies whether BUFFERED is set on Transfer CFT or by an explicit file creation operation.

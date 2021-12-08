@@ -39,8 +39,7 @@ CFTY13E CTX=200006 SSL Handshake local error [HANDSHAKE_FAILURE] CR=40 (Handshak
 
 When using mutual authentication, the client does not have a certificate to provide to the remote SSL server . For example, the client has no user certificate corresponding to one of the CAs provided by the server.
 
-> **Note:**
->
+> **Note**  
 > Tip  
 > Analyze the situation on the partner side and correct depending on the server.
 
@@ -70,8 +69,7 @@ CFTH11E Error Opening session <PART=SEID EV=VVTIMO ST=SUP01>
 CFTT75E connect reject <IDTU=A00002EN PART=SEID IDF=D_615M IDT=J0615002 260 TLSDOWN>
 ```
 
-> **Note:**
->
+> **Note**  
 > Tip  
 > A conversion of the certificate format  is required.
 
@@ -89,8 +87,7 @@ Requester CFTT56I file closed <IDTU=A000001R PART=ARVAL IDF=GEDTEST IDT=D2015423
 Requester CFTT54I file deselected <IDTU=A000001R PART=ARVAL IDF=GEDTEST IDT=D2015423>
 ```
 
-> **Note:**
->
+> **Note**  
 > Tip  
 > Insert the user certificate’s private key in the PKI based.
 

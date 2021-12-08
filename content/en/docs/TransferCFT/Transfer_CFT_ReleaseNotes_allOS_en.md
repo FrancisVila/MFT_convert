@@ -51,176 +51,176 @@ The table below lists the available Transfer CFT 3.8 features according to the v
    </thead>
    <tbody>
       <tr>
-         <td>Google Cloud storage         </td>
-         <td>-         </td>
-         <td>3.8         </td>
-         <td>-         </td>
-         <td>-         </td>
-         <td>-         </td>
+         <td  >Google Cloud storage         </td>
+         <td  >-         </td>
+         <td  >3.8         </td>
+         <td  >-         </td>
+         <td  >-         </td>
+         <td  >-         </td>
       </tr>
       <tr>
-         <td>Flow Manager         </td>
-         <td>3.3.2         </td>
-         <td>3.3.2         </td>
-         <td>3.3.2         </td>
-         <td>3.3.2         </td>
-         <td>3.3.2         </td>
+         <td  >Flow Manager         </td>
+         <td  >3.3.2         </td>
+         <td  >3.3.2         </td>
+         <td  >3.3.2         </td>
+         <td  >3.3.2         </td>
+         <td  >3.3.2         </td>
       </tr>
       <tr>
-         <td>Flow Manager SaaS         </td>
-         <td>3.6         </td>
-         <td>3.6         </td>
-         <td>3.6         </td>
-         <td>3.6         </td>
-         <td>3.6         </td>
+         <td  >Flow Manager SaaS         </td>
+         <td  >3.6         </td>
+         <td  >3.6         </td>
+         <td  >3.6         </td>
+         <td  >3.6         </td>
+         <td  >3.6         </td>
       </tr>
       <tr>
-         <td><p>Using tracking with</p>
+         <td  ><p>Using tracking with</p>
 <p>Edge Agent</p>         </td>
-         <td>3.5         </td>
-         <td>3.5         </td>
-         <td>3.5         </td>
-         <td>3.5         </td>
-         <td>3.5         </td>
+         <td  >3.5         </td>
+         <td  >3.5         </td>
+         <td  >3.5         </td>
+         <td  >3.5         </td>
+         <td  >3.5         </td>
       </tr>
       <tr>
-         <td>SAML         </td>
-         <td>3.5         </td>
-         <td>3.5         </td>
-         <td>3.6         </td>
-         <td>3.6 SP1         </td>
-         <td>3.5         </td>
+         <td  >SAML         </td>
+         <td  >3.5         </td>
+         <td  >3.5         </td>
+         <td  >3.6         </td>
+         <td  >3.6 SP1         </td>
+         <td  >3.5         </td>
       </tr>
       <tr>
-         <td>REST API          </td>
-         <td>3.2.4         </td>
-         <td>3.2.4         </td>
-         <td>3.2.4         </td>
-         <td>3.2.4         </td>
-         <td>3.2.4         </td>
+         <td  >REST API          </td>
+         <td  >3.2.4         </td>
+         <td  >3.2.4         </td>
+         <td  >3.2.4         </td>
+         <td  >3.2.4         </td>
+         <td  >3.2.4         </td>
       </tr>
       <tr>
-         <td>New browser-based user interface         </td>
-         <td>3.3.2         </td>
-         <td>3.3.2         </td>
-         <td>3.3.2         </td>
-         <td>3.3.2         </td>
-         <td>3.3.2         </td>
+         <td  >New browser-based user interface         </td>
+         <td  >3.3.2         </td>
+         <td  >3.3.2         </td>
+         <td  >3.3.2         </td>
+         <td  >3.3.2         </td>
+         <td  >3.3.2         </td>
       </tr>
       <tr>
-         <td>Central Governance management         </td>
-         <td>3.1.3         </td>
-         <td>3.1.3         </td>
-         <td>3.1.3         </td>
-         <td>3.1.3         </td>
-         <td>3.2.4         </td>
+         <td  >Central Governance management         </td>
+         <td  >3.1.3         </td>
+         <td  >3.1.3         </td>
+         <td  >3.1.3         </td>
+         <td  >3.1.3         </td>
+         <td  >3.2.4         </td>
       </tr>
       <tr>
-         <td>Folder monitoring         </td>
-         <td>3.1.2         </td>
-         <td>3.1.2         </td>
-         <td>3.1.3<sup>4</sup>         </td>
-         <td>3.1.3<sup>4</sup>         </td>
-         <td>3.2.4         </td>
+         <td  >Folder monitoring         </td>
+         <td  >3.1.2         </td>
+         <td  >3.1.2         </td>
+         <td  >3.1.3<sup>4</sup>         </td>
+         <td  >3.1.3<sup>4</sup>         </td>
+         <td  >3.2.4         </td>
       </tr>
       <tr>
-         <td>Secure Relay         </td>
-         <td>3.1.2         </td>
-         <td>3.1.2         </td>
-         <td>3.1.3         </td>
-         <td>3.1.3         </td>
-         <td>-         </td>
+         <td  >Secure Relay         </td>
+         <td  >3.1.2         </td>
+         <td  >3.1.2         </td>
+         <td  >3.1.3         </td>
+         <td  >3.1.3         </td>
+         <td  >-         </td>
       </tr>
       <tr>
-         <td>Multi-node architecture         </td>
-         <td>3.0.1         </td>
-         <td>3.0.1<sup>1</sup>         </td>
-         <td>3.0.1         </td>
-         <td>-         </td>
-         <td>-         </td>
+         <td  >Multi-node architecture         </td>
+         <td  >3.0.1         </td>
+         <td  >3.0.1<sup>1</sup>         </td>
+         <td  >3.0.1         </td>
+         <td  >-         </td>
+         <td  >-         </td>
       </tr>
       <tr>
-         <td>TrustedFile (PGP S-MIME CMS)         </td>
-         <td>3.0.1<sup>3</sup>         </td>
-         <td>3.0.1<sup>1</sup>         </td>
-         <td>3.0.1         </td>
-         <td>-         </td>
-         <td>-         </td>
+         <td  >TrustedFile (PGP S-MIME CMS)         </td>
+         <td  >3.0.1<sup>3</sup>         </td>
+         <td  >3.0.1<sup>1</sup>         </td>
+         <td  >3.0.1         </td>
+         <td  >-         </td>
+         <td  >-         </td>
       </tr>
       <tr>
-         <td>PassPort AM         </td>
-         <td>2.7.1         </td>
-         <td>2.7.1<sup>1</sup>         </td>
-         <td>3.0.1         </td>
-         <td>3.0.1         </td>
-         <td>3.2.4         </td>
+         <td  >PassPort AM         </td>
+         <td  >2.7.1         </td>
+         <td  >2.7.1<sup>1</sup>         </td>
+         <td  >3.0.1         </td>
+         <td  >3.0.1         </td>
+         <td  >3.2.4         </td>
       </tr>
       <tr>
-         <td>SFTP         </td>
-         <td>3.4         </td>
-         <td>3.4 <sup>5</sup>         </td>
-         <td>3.5 <sup>6</sup>         </td>
-         <td>-         </td>
-         <td>3.6<sup>6</sup>         </td>
+         <td  >SFTP         </td>
+         <td  >3.4         </td>
+         <td  >3.4 <sup>5</sup>         </td>
+         <td  >3.5 <sup>6</sup>         </td>
+         <td  >-         </td>
+         <td  >3.6<sup>6</sup>         </td>
       </tr>
       <tr>
-         <td>IPv6         </td>
-         <td>2.7.1         </td>
-         <td>2.7.1<sup>1</sup>         </td>
-         <td>2.7.1         </td>
-         <td>2.7.1         </td>
-         <td>3.3.2         </td>
+         <td  >IPv6         </td>
+         <td  >2.7.1         </td>
+         <td  >2.7.1<sup>1</sup>         </td>
+         <td  >2.7.1         </td>
+         <td  >2.7.1         </td>
+         <td  >3.3.2         </td>
       </tr>
       <tr>
-         <td>pTCP         </td>
-         <td>2.7.1         </td>
-         <td>2.7.1<sup>1</sup>         </td>
-         <td>-         </td>
-         <td>-         </td>
-         <td>-         </td>
+         <td  >pTCP         </td>
+         <td  >2.7.1         </td>
+         <td  >2.7.1<sup>1</sup>         </td>
+         <td  >-         </td>
+         <td  >-         </td>
+         <td  >-         </td>
       </tr>
       <tr>
-         <td>UDT (excluding multi-node)         </td>
-         <td>2.7.1         </td>
-         <td>2.7.1<sup>2</sup>         </td>
-         <td>-         </td>
-         <td>-         </td>
-         <td>-         </td>
+         <td  >UDT (excluding multi-node)         </td>
+         <td  >2.7.1         </td>
+         <td  >2.7.1<sup>2</sup>         </td>
+         <td  >-         </td>
+         <td  >-         </td>
+         <td  >-         </td>
       </tr>
       <tr>
-         <td>SOCKS         </td>
-         <td>2.7.1         </td>
-         <td>2.7.1         </td>
-         <td>3.0.1         </td>
-         <td>2.7.1         </td>
-         <td>3.3.2         </td>
+         <td  >SOCKS         </td>
+         <td  >2.7.1         </td>
+         <td  >2.7.1         </td>
+         <td  >3.0.1         </td>
+         <td  >2.7.1         </td>
+         <td  >3.3.2         </td>
       </tr>
       <tr>
-         <td>Heartbeat functionality         </td>
-         <td>2.7.1         </td>
-         <td>2.7.1         </td>
-         <td>2.7.1         </td>
-         <td>2.7.1         </td>
-         <td>3.2.4         </td>
+         <td  >Heartbeat functionality         </td>
+         <td  >2.7.1         </td>
+         <td  >2.7.1         </td>
+         <td  >2.7.1         </td>
+         <td  >2.7.1         </td>
+         <td  >3.2.4         </td>
       </tr>
       <tr>
-         <td>Bandwidth control         </td>
-         <td>3.0.1         </td>
-         <td>3.0.1         </td>
-         <td>3.0.1         </td>
-         <td>3.0.1         </td>
-         <td>3.3.2         </td>
+         <td  >Bandwidth control         </td>
+         <td  >3.0.1         </td>
+         <td  >3.0.1         </td>
+         <td  >3.0.1         </td>
+         <td  >3.0.1         </td>
+         <td  >3.3.2         </td>
       </tr>
       <tr>
-         <td>System users (USERCTRL)         </td>
-         <td>2.7.0         </td>
-         <td>2.6.2         </td>
-         <td>3.2.2         </td>
-         <td>3.1.3         </td>
-         <td>-         </td>
+         <td  >System users (USERCTRL)         </td>
+         <td  >2.7.0         </td>
+         <td  >2.6.2         </td>
+         <td  >3.2.2         </td>
+         <td  >3.1.3         </td>
+         <td  >-         </td>
       </tr>
       <tr>
-         <td><p><sup>1</sup>Enabled for all UNIX except SCO, UnixWare, IRIX, Tru64.</p>
+         <td colspan="6"  ><p><sup>1</sup>Enabled for all UNIX except SCO, UnixWare, IRIX, Tru64.</p>
 <p><sup>2</sup> Enabled only for Linux-x86-32, Linux-x86-64, Linux-ia64-64.</p>
 <p><sup>3</sup>Enabled   for versions 3.0.1 to 3.3.2 on Windows 32-bit systems. As of Transfer CFT 3.4, Trusted File is supported on Windows 64-bit systems.</p>
 <p><sup>4</sup>Limited to USS (z/OS) and IFS (IBM i) systems. On IBM i, native files folder monitoring is available for Transfer CFT 3.3.2 SP2 and higher.</p>
@@ -314,8 +314,7 @@ Sharing DASD across Sysplex
 
 Transfer CFT on Windows  requires the **Visual C++ Redistributable Package for Visual Studio 2019** for proper functioning.  This provides the necessary library files (DLL) for Transfer CFT. You must install `vcredist_x64.exe` prior to installing or upgrading Transfer CFT.
 
-> **Note:**
->
+> **Note**  
 > If the redistribution package is already installed on your Windows system, there is no need to reinstall.
 
 ### Secure Relay

@@ -35,7 +35,7 @@ Use this command to define network parameter settings.
 |  <a href="../../../command_summary/parameter_intro/rto">RTO</a>  |  Network monitoring time-out (in seconds) excluding the protocol connection/disconnection/break phase.<br/>Corresponds to the wait time-out of a reply to an FPDU before disconnection (READ TIME OUT). If the value is 0, the wait time-out is infinite.  |
 |  <a href="../../../command_summary/parameter_intro/sap">SAP</a>  |  Name of the local SAP, Service Access Point, associated with this protocol. Used to identify the "access point" at which incoming connection requests for this communication protocol are placed. The SAP supplied by a requester partner when making its connection request is retrieved by the local Transfer CFT which uses it to deduce the protocol to be used. Each CFTPROT object in a given resource class must include its specific SAP. The value of this parameter may be expressed in hexadecimal form. In this case, the first character must be "#" (number sign) (for example: #31 is understood as the ASCII character ‘1’).  |
 |  <a href="../../../command_summary/parameter_intro/scomp">SCOMP</a>  |  Maximum authorized compression for sending a file. This compression is negotiated between the sender and the receiver. A zero value corresponds to no compression.  |
-|  <a href="../../../command_summary/parameter_intro/srin">SRIN</a>  |  Controls the direction of transfers authorized for the Transfer CFT when it is server, accepter of the protocol connection.  |
+|  <a href="../../../command_summary/parameter_intro/srin">SRIN</a>  |  Controls the direction of transfers authorized for the Transfer CFT  when it is server, accepter of the protocol connection.  |
 |  <a href="../../../command_summary/parameter_intro/srout">SROUT</a>  |  Controls the direction of transfers authorized for the Transfer CFT when it is requester (initiator of the protocol connection).  |
 |  <a href="../../../command_summary/parameter_intro/type#type_CFTPROT">TYPE</a>  |  Type of file transfer protocol.  |
 
@@ -72,13 +72,13 @@ and specifics regarding the use of this particular protocol.
 <table>
    <tbody>
       <tr>
-         <td><p>Description</p>         </td>
-         <td><p>Use this command to describe the ODETTE transfer protocol.</p>         </td>
+         <td  width="19.982%"><p>Description</p>         </td>
+         <td colspan="2"  width="80.018%"><p>Use this command to describe the ODETTE transfer protocol.</p>         </td>
       </tr>
       <tr>
-         <td><p>Parameters</p>         </td>
-         <td><p><a href="../../../command_summary/parameter_intro/eerp">EERP</a></p>         </td>
-         <td><p>Used to interpret the value of the ORIGINATOR and DESTINATOR
+         <td rowspan="8"  width="19.982%"><p>Parameters</p>         </td>
+         <td  width="21.773%"><p><a href="../../../command_summary/parameter_intro/eerp">EERP</a></p>         </td>
+         <td  width="58.245%"><p>Used to interpret the value of the ORIGINATOR and DESTINATOR
 fields contained in the EERP message, according to the protocol version.</p>
 <p>The End to End ResPonse service generates a message called
 EERP. This message informs the file sender that the data sent arrived
@@ -103,8 +103,8 @@ and receiver have different versions, it is not possible to acknowledge
 the transfer.</p>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/pad">PAD</a> </p>         </td>
-         <td><p><em>Deprecated in</em> {{< TransferCFT/componentlongname  >}}<em></em>{{< TransferCFT/releasenumber  >}}</p>
+         <td  width="21.773%"><p><a href="../../../command_summary/parameter_intro/pad">PAD</a> </p>         </td>
+         <td  width="58.245%"><p><em>Deprecated in</em> {{< TransferCFT/componentlongname  >}}<em></em>{{< TransferCFT/releasenumber  >}}</p>
 <p>Option applying "SPECIAL LOGIC" to the data exchange
 buffers.</p>
 <p>This option is negotiated with the partner when the protocol
@@ -112,22 +112,22 @@ session is established (in the SSID FPDU). If the option is set to NO
 for one of the partners, the "special logic" is not applied.</p>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/rcredit">RCREDIT</a> </p>         </td>
-         <td><p>Value of the "credit" (expressed as a number
+         <td  width="21.773%"><p><a href="../../../command_summary/parameter_intro/rcredit">RCREDIT</a> </p>         </td>
+         <td  width="58.245%"><p>Value of the "credit" (expressed as a number
 of "DATA" messages) proposed by Transfer CFT when it is server.</p>
 <p>This value is negotiated with the value proposed by the
 requester (see the SCREDIT parameter) when the protocol session is established.</p>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/resync">RESYNC</a> </p>         </td>
-         <td><p>Option for restarting a transfer following an interruption.</p>
+         <td  width="21.773%"><p><a href="../../../command_summary/parameter_intro/resync">RESYNC</a> </p>         </td>
+         <td  width="58.245%"><p>Option for restarting a transfer following an interruption.</p>
 <p>This option is negotiated with the partner when the connection
 is established: if the option is set to NO for one of the partners, transfer
 restarts are not managed.</p>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/rrusize">RRUSIZE</a></p>         </td>
-         <td><p>Maximum size of NSDUs (Network Service Data Unit) being
+         <td  width="21.773%"><p><a href="../../../command_summary/parameter_intro/rrusize">RRUSIZE</a></p>         </td>
+         <td  width="58.245%"><p>Maximum size of NSDUs (Network Service Data Unit) being
 received.</p>
 <p>This parameter is negotiated with the partner (SRUSIZE
 parameter if Transfer CFT), the smallest value is selected as the size
@@ -136,8 +136,8 @@ of NSDUs sent.</p>
 topics</a> to optimize the definition of the value of this parameter.</p>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/scredit">SCREDIT</a></p>         </td>
-         <td><p>Value of the "credit" (expressed as a number
+         <td  width="21.773%"><p><a href="../../../command_summary/parameter_intro/scredit">SCREDIT</a></p>         </td>
+         <td  width="58.245%"><p>Value of the "credit" (expressed as a number
 of "DATA" messages) proposed by Transfer CFT when it is the
 requester.</p>
 <p>Transfer CFT is authorized to send a number of "DATA"
@@ -146,8 +146,8 @@ the protocol session is established), before waiting for a new "credit"
 to be sent by the server.</p>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/srusize">SRUSIZE</a></p>         </td>
-         <td><p>Maximum size of NSDUs (Network Service Data Unit) being
+         <td  width="21.773%"><p><a href="../../../command_summary/parameter_intro/srusize">SRUSIZE</a></p>         </td>
+         <td  width="58.245%"><p>Maximum size of NSDUs (Network Service Data Unit) being
 sent.</p>
 <p>This parameter is negotiated with the partner (RRUSIZE
 parameter if Transfer CFT), the smallest value being selected
@@ -157,8 +157,8 @@ topics</a> to optimize the definition of the value of this parameter.</p>
 <p>MVS connection, the maximum value of SRUSIZE is equal to the value configured in the NCP (or the equivalent) less (-) 6 bytes.</p>         </td>
       </tr>
       <tr>
-         <td><p>TCP </p>         </td>
-         <td><p>Processing method used for protocol messages:</p>
+         <td  width="21.773%"><p>TCP </p>         </td>
+         <td  width="58.245%"><p>Processing method used for protocol messages:</p>
 <ul>
 <li>Transfer
 CFT: activation of the method specific to Transfer CFT</li>
@@ -186,8 +186,7 @@ In PeSIT, the user can specify parameters controlling the:
 -   compression algorithms
 -   CRC calculation
 
-> **Note:**
->
+> **Note**  
 > In certain environments,
 > the mechanisms for repositioning in the transferred files are not operational
 > with all the files supported: after a transfer interruption, transfers
@@ -439,8 +438,8 @@ CFTPROT
 <table>
    <tbody>
       <tr>
-         <td><p>Description</p>         </td>
-         <td><p>Use the CFTPROT object to set:</p>
+         <td  width="25.067%"><p>Description</p>         </td>
+         <td colspan="2"  width="74.933%"><p>Use the CFTPROT object to set:</p>
 <ul>
 <li>Default
 security profile in requester mode</li>
@@ -449,9 +448,9 @@ profile in server mode</li>
 </ul>         </td>
       </tr>
       <tr>
-         <td><p>Parameter</p>         </td>
-         <td><p><a href="../../../command_summary/parameter_intro/ssl">SSL</a></p>         </td>
-         <td><p>SSL commands Identifier  used
+         <td  width="25.067%"><p>Parameter</p>         </td>
+         <td  width="27.391%"><p><a href="../../../command_summary/parameter_intro/ssl">SSL</a></p>         </td>
+         <td  width="47.542%"><p>SSL commands Identifier  used
 for security profiles.</p>         </td>
       </tr>
    </tbody>

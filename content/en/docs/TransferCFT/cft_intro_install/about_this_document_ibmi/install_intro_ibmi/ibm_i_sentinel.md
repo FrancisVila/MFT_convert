@@ -12,9 +12,9 @@ The following table lists the Sentinel parameters in the unified configuration a
 | UCONF parameter  | Default  |  Former Sentinel parameter<br/>TRKCNF  |
 | --- | --- | --- |
 | sentinel.xfb.enable  | NO  | XFB.Sentinel (TRKCNF)  |
-|  sentinel.xfb.transfer  |  ALL  |  XFB.Transfer (TRKCNF) &lt;/p&gt;  |
-|  sentinel.xfb.shut  |  0 &lt;/p&gt;  |  XFB.Shut (TRKCNF) &lt;/p&gt;  |
-|  sentinel.xfb.log  |  IEWF  |  XFB.Log (TRKCNF) &lt;/p&gt;  |
+|  sentinel.xfb.transfer                              |  ALL  |  XFB.Transfer (TRKCNF)                             &lt;/p&gt;  |
+|  sentinel.xfb.shut                              |  0                             &lt;/p&gt;  |  XFB.Shut (TRKCNF)                             &lt;/p&gt;  |
+|  sentinel.xfb.log                              |  IEWF  |  XFB.Log (TRKCNF)                             &lt;/p&gt;  |
 |  sentinel.trktname  |  $(cft.runtime_dir)<br /> /data/trkapi.buf  |  TRKTNAME (TRKCNF)  |
 |  sentinel.trksharedfile  |  No  |  TRKSHAREDFILE  |
 |  sentinel.trklenmsg  |   |  TRKLENMSG  |
@@ -38,7 +38,7 @@ The following table lists the Sentinel parameters in the unified configuration a
 |  sentinel.trkgmtdiff  |  60  |  TRKGMTDIFF  |
 |  sentinel.trktrcfile  |  $(cft.runtime_dir)<br /> /run/sentinel.trc  |  TRKTRCFILE  |
 |  sentinel.trktrace  |  0  |  TRKTRACE  |
-|  sentinel.xfb.transfer_progress_period<br/>The frequency in seconds in which Transfer CFT notifies Sentinel (for both SENDING and RECEIVING states) that a transfer is running.<br/>0 = no notification  | 60  |   |
+|  sentinel.xfb.transfer_progress_period<br/>The frequency in seconds in which Transfer CFT notifies Sentinel   (for both SENDING and RECEIVING states) that a transfer is running.<br/>0 = no notification  | 60  |   |
 |  sentinel.xfb.transfer.send_relay_site_nidf<br/>Enables an NIDF on the relay site. This uses an NIDF instead of COMMUT when sending an event to Sentinel using the XFBTransfer object.  | No  |   |
 
 
@@ -60,7 +60,7 @@ Each Transfer CFT environment number n (from 1 to 5) has its own corresponding H
 | Unified configuration parameter  | Default value  | Description  |
 | --- | --- | --- |
 | sentinel.heartbeat.enable  | NO  |  Enables sending Heartbeats to the Sentinel Server.  |
-| sentinel.heartbeat.periodicity  | 300  | The delay in seconds between sending Heartbeats.  |
+| sentinel.heartbeat.periodicity  | 300  | The delay in seconds between sending Heartbeats.    |
 | sentinel.heartbeat.script  |  CFTPROD/HEARTBEAT  | Script for executing Heartbeats.  |
 
 

@@ -18,7 +18,7 @@ topics
 | Parameter  | Description  |
 | --- | --- |
 | <a href="../../../command_summary/parameter_intro/ackexec">ACKEXEC</a>  | Name of the file describing the procedure to be executed when receiving an acknowledgement reply for the transfer.  |
-| ARCHIVEFNAME  |  The archived source file name after transfer completion if FACTION=ARCHIVE. <blockquote> **Note:**<br/>The fname and archivefname must be on the same volume (all platforms). </blockquote>  |
+| ARCHIVEFNAME  |  The archived source file name  after transfer completion if FACTION=ARCHIVE. <blockquote> **Note**<br/>The fname and archivefname must be on the same volume (all platforms). </blockquote>  |
 |  <a href="../../../command_summary/parameter_intro/comment">COMMENT</a>  |  Local alphanumeric comment associated with the send transfer.  |
 |  <a href="../../../command_summary/parameter_intro/cycdate">CYCDATE</a>  |  Upper final date for activating the first transfer of a cycle.  |
 |  <a href="../../../command_summary/parameter_intro/cycle">CYCLE</a>  |  Number of units defining the transfer cycle period.  |
@@ -65,11 +65,11 @@ topics
 |  <a href="../../../command_summary/parameter_intro/ntype">NTYPE</a>  |  File type, in protocol terms.  |
 |  <a href="../../../command_summary/parameter_intro/opermsg">OPERMSG</a>  |  Defines the categories of transfer information messages intended for the operator, with all the messages also being written in the log file.  |
 |  <a href="../../../command_summary/parameter_intro/parm">PARM</a>  |  User parameter sent to the receiver.  |
-| <a href="../../../command_summary/parameter_intro/preexec">PREEXEC</a>  | Name of the file describing the procedure to be executed before the transfer, as per the preprocessing phase.  |
+| <a href="../../../command_summary/parameter_intro/preexec">PREEXEC</a>  | Name of the file describing the procedure to be executed before  the transfer, as per the preprocessing phase.  |
 |  <a href="../../../command_summary/parameter_intro/pri">PRI</a>  |  Send request selection priority.  |
 |  <a href="../../../command_summary/parameter_intro/ruser">RUSER</a>  |  Identifier of the file receiver user.  |
-|  <a href="../../../command_summary/parameter_intro/selfname">SELFNAME</a>  |  Name of the file that contains the list of files selected for sending. <blockquote> **Note:**<br/>When using SELFNAME and FACTION=DELETE, the FNAME must be a directory and not a MASK. For example, #dir is deleted, whereas #dir/* is ignored. </blockquote>  |
-| <a href="../../../command_summary/parameter_intro/sourceappl">SOURCEAPPL</a>  | The identifier of the local file sender application.  |
+|  <a href="../../../command_summary/parameter_intro/selfname">SELFNAME</a>  |  Name of the file that contains the list of files selected for sending. <blockquote> **Note**<br/>When using SELFNAME and FACTION=DELETE, the FNAME must be a directory and not a MASK. For example, #dir is deleted, whereas #dir/* is ignored. </blockquote>  |
+| <a href="../../../command_summary/parameter_intro/sourceappl">SOURCEAPPL</a>  | The identifier of the local file sender application.          |
 |  <a href="../../../command_summary/parameter_intro/spart">SPART</a>  |  Network designation by which the local Transfer CFT monitor identifies itself to its partner.  |
 |  <a href="../../../command_summary/parameter_intro/state">STATE</a>  |  Defines the transfer request state.  |
 |  <a href="../../../command_summary/parameter_intro/suser">SUSER</a>  |  Identifier of the file sender user.  |

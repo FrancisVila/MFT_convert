@@ -145,8 +145,7 @@ RDEFINE safcftcl APPL.TEXT  UACC(NONE) OWNER(GRPCFT)
 
 PERMIT APPL.TEXT CLASS(safcftcl) ID(Usrtso1) ACCESS(CONTROL)
 
-> **Note:**
->
+> **Note**  
 > As end-of-transfer commands are submitted from the transfer owner account (Usrtso2), these procedures cannot execute certain commands (DELETE, START, KEEP, and so on) unless the USRTSO2 user corresponds to a RACF profile type:PERMIT APPL.TEXT CLASS(safcftcl) ID(usrtso2) ACCESS(CONTROL)orPERMIT ALL\_CAT.\*\* CLASS(safcftcl) ID(usrtso2) ACCESS(CONTROL)
 
 <span id="Controll5"></span>
@@ -236,6 +235,5 @@ PERMIT MESSAGE.TEXT.R.BANK CLASS(safcftcl) –
 ID(Usrtso3) ACCESS(CONTROL)
 ```
 
-> **Note:**
->
+> **Note**  
 > Objects whose VALUE parameter contains the &FNAME variable generate a resource name that takes into account the physical file name. RACF profiles must anticipate the differing cases, in particular PDS or GDG members.

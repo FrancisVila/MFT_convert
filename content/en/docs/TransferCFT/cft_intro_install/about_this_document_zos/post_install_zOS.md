@@ -22,8 +22,7 @@ Once you install the product, the following subdirectories are available:
 | Transfer_CFT_mvs_J2IICFT.txt  |  JCL that installs Transfer CFT instance environment.<br/>Name: distlib.UPLIB(J2IICFT)mode  |
 
 
-> **Note:**
->
+> **Note**  
 > The act of installing Transfer CFT creates a distribution environment that  contains product binaries and templates. Do no store any personal files in this environment, or modify existing files in this environment, as they are erased during updates.
 
 -   EULA.html: License agreement (html format)

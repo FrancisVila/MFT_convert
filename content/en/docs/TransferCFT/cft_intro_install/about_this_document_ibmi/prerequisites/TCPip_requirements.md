@@ -37,8 +37,7 @@ A partner address of 192.1.1.1 and the 255.255.255.0 mask are used to separate t
 
 The SAPs used in the Transfer CFT configuration commands must be declared as ports for the TCP/IP protocol. They must also be associated with the Transfer CFT user profile.
 
-> **Note:**
->
+> **Note**  
 > Ports 1 to 1023 are reserved and must not be used by Transfer CFT.
 
 ### Checking the network configuration

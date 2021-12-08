@@ -266,8 +266,7 @@ as there are locked for sending mode commands at the server end; the activation
 of a RECV command identified by an EXPLICIT IDF unlocks the FIRST transfer
 at the server end.  
 
-> **Note:**
->
+> **Note**  
 > You cannot use this option in implicit send mode, as the implicit send mode is defined using a parameter setting command with
 > a unique identifier.
 
@@ -367,8 +366,7 @@ at the requester end:
     a physical file identified by a *generic IDF* partially defined using
     a character string and a wildcard character at the end of this string
 
-> **Note:**
->
+> **Note**  
 > This wildcard character is specific to each system ; in the rest of
 > this manual it is generically designated by the character ‘\*’. Such an
 > IDF value is called a mask and is referred to as &lt;mask>.

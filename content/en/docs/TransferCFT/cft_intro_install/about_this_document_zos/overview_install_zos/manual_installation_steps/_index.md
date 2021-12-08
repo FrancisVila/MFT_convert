@@ -16,55 +16,55 @@ The following JCLs are contained in the INSTALL library. Execute the JCLs in the
    </thead>
    <tbody>
       <tr>
-         <td>Target customization         </td>
+         <td colspan="3" >Target customization         </td>
       </tr>
       <tr>
-         <td>1         </td>
-         <td><p><a href="../t_customize_instance_zos#Modifying_A03PARM">A03PARM</a></p>         </td>
-         <td><p>Customize file parameters</p>         </td>
+         <td >1         </td>
+         <td ><p><a href="../t_customize_instance_zos#Modifying_A03PARM">A03PARM</a></p>         </td>
+         <td ><p>Customize file parameters</p>         </td>
       </tr>
       <tr>
-         <td>2         </td>
-         <td><p><a href="../installation_parameters_to_customize">A00CUSTO</a></p>         </td>
-         <td><p>Customize  JOBs installation</p>         </td>
+         <td >2         </td>
+         <td ><p><a href="../installation_parameters_to_customize">A00CUSTO</a></p>         </td>
+         <td ><p>Customize  JOBs installation</p>         </td>
       </tr>
       <tr>
-         <td>3         </td>
-         <td>A06FILES         </td>
-         <td>Create and initialize instance files         </td>
+         <td >3         </td>
+         <td >A06FILES         </td>
+         <td >Create and initialize instance files         </td>
       </tr>
       <tr>
-         <td>4         </td>
-         <td><p>A12OPTS</p>         </td>
-         <td><p>Select options for Transfer CFT operations</p>
+         <td >4         </td>
+         <td ><p>A12OPTS</p>         </td>
+         <td ><p>Select options for Transfer CFT operations</p>
 <p><em>Optional step</em></p>         </td>
       </tr>
       <tr>
-         <td>After performing  Steps 1 -4,  you can either continue with the following step-by-step instructions, or start the JOB A05ALL, which uses the customized settings in the A03PARM file to run.         </td>
+         <td colspan="3" >After performing  Steps 1 -4,  you can either continue with the following step-by-step instructions, or start the JOB A05ALL, which uses the customized settings in the A03PARM file to run.         </td>
       </tr>
       <tr>
-         <td>5         </td>
-         <td><p>B20LINK</p>         </td>
-         <td><p>General LINK-EDIT of Transfer CFT modules. Submit for non-SMP/E installations.</p>         </td>
+         <td >5         </td>
+         <td ><p>B20LINK</p>         </td>
+         <td ><p>General LINK-EDIT of Transfer CFT modules. Submit for non-SMP/E installations.</p>         </td>
       </tr>
       <tr>
-         <td>6         </td>
-         <td>CFTGNKEY         </td>
-         <td>Generate an encryption key. See also <a href="../t_customize_instance_zos#Password">Password encryption</a>.         </td>
+         <td >6         </td>
+         <td >CFTGNKEY         </td>
+         <td >Generate an encryption key. See also <a href="../t_customize_instance_zos#Password">Password encryption</a>.         </td>
       </tr>
       <tr>
-         <td>7         </td>
-         <td><p>COPA010</p>         </td>
-         <td>          </td>
+         <td >7         </td>
+         <td ><p>COPA010</p>         </td>
+         <td >          </td>
       </tr>
       <tr>
-         <td>Transfer CFT installation customization         </td>
+         <td colspan="3" >Transfer CFT installation customization         </td>
       </tr>
       <tr>
-         <td>8         </td>
-         <td><p><a href="../zos_auto_install_a05all/t_customize_install_zos#JOB%C2%A0H80EXEC">CFT$SET</a></p>
+         <td >8         </td>
+         <td ><p><a href="../zos_auto_install_a05all/t_customize_install_zos#JOB%C2%A0H80EXEC">CFT$SET</a></p>
 <p>CFT$SETC </p>         </td>
-         <td><p>Select one of the two options available for this step to set the UCONF variables and create Transfer CFT parameters from a template.</p>
+         <td ><p>Select one of the two options available for this step to set the UCONF variables and create Transfer CFT parameters from a template.</p>
 <ul>
 <li>CFT$SET: When not using Central Governance.</li>
 <li>CFT$SETC: When using Central Governance.</li>
@@ -72,34 +72,34 @@ The following JCLs are contained in the INSTALL library. Execute the JCLs in the
 <p> </p>         </td>
       </tr>
       <tr>
-         <td>9         </td>
-         <td><p><a href="../zos_auto_install_a05all/t_customize_install_zos#D40INIT">D40INIT</a></p>         </td>
-         <td><p>Format the Transfer CFT work files</p>         </td>
+         <td >9         </td>
+         <td ><p><a href="../zos_auto_install_a05all/t_customize_install_zos#D40INIT">D40INIT</a></p>         </td>
+         <td ><p>Format the Transfer CFT work files</p>         </td>
       </tr>
       <tr>
-         <td>10         </td>
-         <td><a href="../t_customize_instance_zos">E50PARM</a>         </td>
-         <td>CFTPARM configuration example         </td>
+         <td >10         </td>
+         <td ><a href="../t_customize_instance_zos">E50PARM</a>         </td>
+         <td >CFTPARM configuration example         </td>
       </tr>
       <tr>
-         <td>11         </td>
-         <td><p><a href="t_configure_navigator_server_zos">COPA020</a></p>         </td>
-         <td><p><a href="t_configure_navigator_server_zos">Configure Transfer CFT Copilot server</a></p>         </td>
+         <td >11         </td>
+         <td ><p><a href="t_configure_navigator_server_zos">COPA020</a></p>         </td>
+         <td ><p><a href="t_configure_navigator_server_zos">Configure Transfer CFT Copilot server</a></p>         </td>
       </tr>
       <tr>
-         <td>Optional steps         </td>
+         <td colspan="3" >Optional steps         </td>
       </tr>
       <tr>
-         <td>12         </td>
-         <td><p>C32XMEM</p>         </td>
-         <td><p>Communication server</p>         </td>
+         <td >12         </td>
+         <td ><p>C32XMEM</p>         </td>
+         <td ><p>Communication server</p>         </td>
       </tr>
       <tr>
-         <td>13         </td>
-         <td><p><a href="t_configure_optional_features_zos#Create%20a%20Transfer%20CFT%20PKI%20file%C2%A0D43PKI">D43PKI</a></p>
+         <td >13         </td>
+         <td ><p><a href="t_configure_optional_features_zos#Create%20a%20Transfer%20CFT%20PKI%20file%C2%A0D43PKI">D43PKI</a></p>
 <p><a href="t_configure_optional_features_zos#Connect%20with%20PassPort%C2%A0D44PASS">D44PASS</a></p>
 <p><a href="t_configure_optional_features_zos">D47SYST</a></p>         </td>
-         <td><p>Select one of the options listed for Step 12:</p>
+         <td ><p>Select one of the options listed for Step 12:</p>
 <ul>
 <li>D43PKI: Create internal datafile for PKI data</li>
 <li>D44PASS: Declare link to PassPort server</li>
@@ -107,59 +107,59 @@ The following JCLs are contained in the INSTALL library. Execute the JCLs in the
 </ul>         </td>
       </tr>
       <tr>
-         <td>14         </td>
-         <td><p><a href="t_install_sentinel_zos">SN05CONF</a></p>         </td>
-         <td><p><a href="t_install_sentinel_zos">Customize Sentinel</a> configuration file</p>         </td>
+         <td >14         </td>
+         <td ><p><a href="t_install_sentinel_zos">SN05CONF</a></p>         </td>
+         <td ><p><a href="t_install_sentinel_zos">Customize Sentinel</a> configuration file</p>         </td>
       </tr>
       <tr>
-         <td>15         </td>
-         <td>CFTHEART         </td>
-         <td>Activate Transfer CFT Heartbeats for Sentinel Dashboards         </td>
+         <td >15         </td>
+         <td >CFTHEART         </td>
+         <td >Activate Transfer CFT Heartbeats for Sentinel Dashboards         </td>
       </tr>
       <tr>
-         <td>16         </td>
-         <td>CFTCGREG         </td>
-         <td>Register {{< TransferCFT/transfercftname  >}} with         </td>
+         <td >16         </td>
+         <td >CFTCGREG         </td>
+         <td >Register {{< TransferCFT/transfercftname  >}} with         </td>
       </tr>
       <tr>
-         <td>17         </td>
-         <td>CFTCGPKI         </td>
-         <td>Used to register {{< TransferCFT/transfercftname  >}} with         </td>
+         <td >17         </td>
+         <td >CFTCGPKI         </td>
+         <td >Used to register {{< TransferCFT/transfercftname  >}} with         </td>
       </tr>
       <tr>
-         <td>18         </td>
-         <td>XSRRUN         </td>
-         <td><p>Launches the Java virtual machine (JVM).</p>
+         <td >18         </td>
+         <td >XSRRUN         </td>
+         <td ><p>Launches the Java virtual machine (JVM).</p>
 <blockquote>
-<p><strong>Note:</strong></p>
+<p><strong>Note</strong></p>
 <p>Customize JOB card.</p>
 </blockquote>         </td>
       </tr>
       <tr>
-         <td>19         </td>
-         <td>XSRA010         </td>
-         <td>Install files for the Secure Relay Master Agent
+         <td >19         </td>
+         <td >XSRA010         </td>
+         <td >Install files for the Secure Relay Master Agent
 on the USS environment.         </td>
       </tr>
       <tr>
-         <td>20         </td>
-         <td>XSRA015         </td>
-         <td>Create the Runtime directory for the Transfer CFT Secure Relay Master Agent.         </td>
+         <td >20         </td>
+         <td >XSRA015         </td>
+         <td >Create the Runtime directory for the Transfer CFT Secure Relay Master Agent.         </td>
       </tr>
       <tr>
-         <td>21         </td>
-         <td>XSRA020         </td>
-         <td>Update the Secure Relay parameters for UCONF.         </td>
+         <td >21         </td>
+         <td >XSRA020         </td>
+         <td >Update the Secure Relay parameters for UCONF.         </td>
       </tr>
       <tr>
-         <td>22         </td>
-         <td>XSRA050         </td>
-         <td>Update the Transfer CFT parameters samples.         </td>
+         <td >22         </td>
+         <td >XSRA050         </td>
+         <td >Update the Transfer CFT parameters samples.         </td>
       </tr>
       <tr>
-         <td>23         </td>
-         <td>RESTCFG         </td>
-         <td>REST API configuration.         </td>
+         <td >23         </td>
+         <td >RESTCFG         </td>
+         <td >REST API configuration.         </td>
       </tr>
    </tbody>
 </table>
@@ -198,12 +198,10 @@ The CFTMAIN/CFTMA31 programs are copied in an authorized APF library for the cas
 -   Uses a shared catalog cache.
 -   Frees unused space for received files.
 
-> **Note:**
->
+> **Note**  
 > The return code generated by the LINK-EDIT must be 0.
 
-> **Note:**
->
+> **Note**  
 > IMPORTANT - If you have applied a patch, resubmitting the JCL B20LINK resets all the executable files generated by this procedure to their original versions and therefore cancels any and all applied patches.
 
 <span id="JOB B25LKWS LINK-EDIT Web services "></span>
@@ -232,8 +230,7 @@ You can use the JCL COPA010 to set up the Transfer CFT Copilot files in USS.
 2.  Transfer and install the files that are used by Transfer CFT Copilot. Use the pax command via a REXX procedure to perform this task. 
 3.  Execute the command: pax -rvf "//'tempory.seq.fix’" -o saveext
 
-> **Note:**
->
+> **Note**  
 > The file access rights are Read only for Group and others. Users must have rights to read the file system where the Transfer CFT Copilot USS files are installed. To get the file system name, enter the command: df .
 
 **Example**

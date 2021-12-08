@@ -21,8 +21,7 @@ Defines the number of keys that display.
 
 The  {{< TransferCFT/componentshortname  >}} user key. You can enter a string of up to 80 characters, which is comprised of the indirection character and file name (file containing the key).
 
-> **Note:**
->
+> **Note**  
 > You do not directly set the key with this parameter.
 
 Enter the name of the indirection file (preceded by the &lt;file-symb> character specific to each system) that contains the set of keys associated with the  {{< TransferCFT/componentshortname  >}}. The post-installation default values are:

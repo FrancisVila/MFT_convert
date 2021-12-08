@@ -365,8 +365,7 @@ As this mode does not comply with the PeSIT external to SIT standard,
 it is recommended that you leave the default LOGON value when the partners
 concerned do not all use Transfer CFT.
 
-> **Note:**
->
+> **Note**  
 >  
 
 -   When Transfer CFT
@@ -463,65 +462,65 @@ to the functional levels negotiated.
    </thead>
    <tbody>
       <tr>
-         <td><p> </p>
+         <td  data-bgcolor="#C0C0C0" data-valign="top" width="27%"><p> </p>
 <p>CFTPROT parameter </p>         </td>
-         <td><p>PeSIT E  </p>         </td>
-         <td><p>PeSIT E</p>
+         <td  data-bgcolor="#C0C0C0" data-valign="top" width="18%"><p>PeSIT E  </p>         </td>
+         <td  data-bgcolor="#C0C0C0" data-valign="top" width="-1%"><p>PeSIT E</p>
 <p>+</p>
 <p>CFT extensions </p>         </td>
       </tr>
       <tr>
-         <td><p>DISCTD </p>         </td>
-         <td><p>0..3600<br />
+         <td  data-valign="top" width="27%"><p>DISCTD </p>         </td>
+         <td  data-valign="top" width="18%"><p>0..3600<br />
 (dft: 120) </p>         </td>
-         <td><p>0..3600<br />
+         <td  data-valign="top" width="-1%"><p>0..3600<br />
 (dft: 120) </p>         </td>
       </tr>
       <tr>
-         <td><p>DISCTS </p>         </td>
-         <td><p>0..3600<br />
+         <td  data-valign="top" width="27%"><p>DISCTS </p>         </td>
+         <td  data-valign="top" width="18%"><p>0..3600<br />
 (dft: 165) </p>         </td>
-         <td><p>0..3600<br />
+         <td  data-valign="top" width="-1%"><p>0..3600<br />
 (dft: 65) </p>         </td>
       </tr>
       <tr>
-         <td><p>LOGON </p>         </td>
-         <td><p>YES, NO </p>         </td>
-         <td><p>YES, NO </p>         </td>
+         <td  data-valign="top" width="27%"><p>LOGON </p>         </td>
+         <td  data-valign="top" width="18%"><p>YES, NO </p>         </td>
+         <td  data-valign="top" width="-1%"><p>YES, NO </p>         </td>
       </tr>
       <tr>
-         <td><p>PAD (<em>deprecated</em>)</p>         </td>
-         <td><p>NO, YES </p>         </td>
-         <td><p>NO, YES </p>         </td>
+         <td  data-valign="top" width="27%"><p>PAD (<em>deprecated</em>)</p>         </td>
+         <td  data-valign="top" width="18%"><p>NO, YES </p>         </td>
+         <td  data-valign="top" width="-1%"><p>NO, YES </p>         </td>
       </tr>
       <tr>
-         <td><p>RCOMP </p>         </td>
-         <td><p>0, 2, 8, 10<br />
+         <td  data-valign="top" width="27%"><p>RCOMP </p>         </td>
+         <td  data-valign="top" width="18%"><p>0, 2, 8, 10<br />
 (dft: 10) </p>         </td>
-         <td><p>0..15<br />
+         <td  data-valign="top" width="-1%"><p>0..15<br />
 (dft: 15) </p>         </td>
       </tr>
       <tr>
-         <td><p>REVERSE </p>         </td>
-         <td><p>NO, YES </p>         </td>
-         <td><p>NO, YES </p>         </td>
+         <td  data-valign="top" width="27%"><p>REVERSE </p>         </td>
+         <td  data-valign="top" width="18%"><p>NO, YES </p>         </td>
+         <td  data-valign="top" width="-1%"><p>NO, YES </p>         </td>
       </tr>
       <tr>
-         <td><p>SCOMP </p>         </td>
-         <td><p>0, 2, 8, 10<br />
+         <td  data-valign="top" width="27%"><p>SCOMP </p>         </td>
+         <td  data-valign="top" width="18%"><p>0, 2, 8, 10<br />
 (dft: 10) </p>         </td>
-         <td><p>0..15<br />
+         <td  data-valign="top" width="-1%"><p>0..15<br />
 (dft: 15) </p>         </td>
       </tr>
       <tr>
-         <td><p>SEGMENT </p>         </td>
-         <td><p>NO, YES </p>         </td>
-         <td><p>NO, YES </p>         </td>
+         <td  data-valign="top" width="27%"><p>SEGMENT </p>         </td>
+         <td  data-valign="top" width="18%"><p>NO, YES </p>         </td>
+         <td  data-valign="top" width="-1%"><p>NO, YES </p>         </td>
       </tr>
       <tr>
-         <td><p>SSERV </p>         </td>
-         <td><p>"PESIT " </p>         </td>
-         <td><p>"PESIT " </p>         </td>
+         <td  data-valign="top" width="27%"><p>SSERV </p>         </td>
+         <td  data-valign="top" width="18%"><p>"PESIT " </p>         </td>
+         <td  data-valign="top" width="-1%"><p>"PESIT " </p>         </td>
       </tr>
    </tbody>
 </table>

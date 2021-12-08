@@ -4,16 +4,15 @@
     "weight": "260"
 }This section describes ATM traces and how to implement them.
 
-> **Note:**
->
+> **Note**  
 > ATM traces are only available when using the Local Administration version of Transfer CFT. We recommend using Central Governance to manage Transfer CFT.
 
 
 | Topic  | Description  |
 | --- | --- |
 |  <a href="trace_management">Trace management concepts</a>  |  Describes the concepts behind performing an ATM trace in Transfer CFT.  |
-|  <a href="parameter_settings">Defining trace in {{< TransferCFT/componentshortname  >}} parameters</a>  |  Describes the Transfer CFT general parameter for a trace.  |
-|  <a href="defining_a_trace_file_externally">Defining a trace file externally (CFTTRACE utility)</a>  |  Describes how to create or remove a trace file, or to reinitialize it with an empty useable content.  |
+|  <a href="parameter_settings">Defining trace in {{< TransferCFT/componentshortname  >}}  parameters</a>  |  Describes the Transfer CFT general parameter for a trace.  |
+|  <a href="defining_a_trace_file_externally">Defining a trace file externally (CFTTRACE utility)</a>  |  Describes how to create or remove a trace file,  or to reinitialize it with an empty useable content.  |
 |  <a href="defining_the_internal_trace_file">Defining the internal trace file (CFTUTIL command)</a>  |  Describes how to create a trace when Transfer CFT starts, with the possibility of tracing an initialization sequence, or during Transfer CFT operations.  |
 |  Using the start trace command  |  Describes the start trace command, which is associated with a unique identifier, defines and describes the conditions for starting and selecting traced data, and associates a file identifier.  |
 

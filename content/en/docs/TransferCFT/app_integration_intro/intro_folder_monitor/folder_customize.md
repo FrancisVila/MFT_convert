@@ -18,7 +18,7 @@ A STRJCMP pattern-matching filter can contain the asterisk (\*) and/or the ques
 | Character  | Description  | Example  |
 | --- | --- | --- |
 | *  | Indicates any sequence of zero or more characters.  | The filter "*.dat" selects any file name that has the extension ".dat".  |
-| ?  | Indicates any single character.  | The filter "T*.???" selects any file name starting with a 'T' and having an extension of exactly three characters.  |
+| ?  | Indicates any single character.  | The filter "T*.???"  selects any file name starting with a 'T' and having an extension of exactly three characters.  |
 
 
 <span id="WILDMAT"></span>
@@ -33,12 +33,12 @@ The WILDMAT  pattern-matching filter offers more operations than the STRJCMP fil
 | Character  | Description  | Example  |
 | --- | --- | --- |
 | *  | Indicates any sequence of zero or more characters.  | The filter "*.dat" selects any file name that has the extension ".dat".  |
-| ?  | Indicates any single character.  | The filter "T*.???" selects any file name starting with a 'T' and having an extension of exactly three characters.  |
-| \x  | Indicates that when x is a special character, x is interpreted as a normal character.  | This is generally used to invalidate the meaning of the * and ? characters.  |
-| [x...y]  | Indicates a single character set defined by "x...y".  |  The filter [0-9] <br/>indicates any decimal digit.  |
+| ?  | Indicates any single character.  | The filter "T*.???"  selects any file name starting with a 'T' and having an extension of exactly three characters.  |
+| \x  | Indicates that when x is a special character,  x is interpreted as a normal character.  | This is generally used to invalidate the meaning of the * and ? characters.  |
+| [x...y]  | Indicates a single character set defined by "x...y".  |  The filter [0-9]          <br/>indicates any decimal digit.  |
 | -  |  Indicates a range of characters. However, the minus character (or hyphen) has no special meaning if it is either the first or the last character in the set.  | The filter [0-9a-zA-Z] indicates any alphanumeric character (in English).  |
 | ]  | Has no special meaning if it is the first character in the set.  |   |
-| [^x...y]  | Indicates any character other than those specified in the set "x...y".  |  The filter [^0-9] <br/>indicates any character that is not a decimal digit.<br/>The filter [^]-] indicates any character other than a closed bracket or minus sign.  |
+| [^x...y]  | Indicates any character other than those specified in the set "x...y".  |  The filter [^0-9]  <br/>indicates any character that is not a decimal digit.<br/>The filter [^]-]   indicates any character other than a closed bracket or minus sign.  |
 | *.[tT][xX][tT]  | Indicates any string terminated by .TXT regardless of the case.  |   |
 
 
@@ -64,8 +64,7 @@ In POSIX-Extended regular expressions, all characters match themselves meaning t
 | $  | End of string  | *.*? the end$* matches this is the end  |
 
 
-> **Note:**
->
+> **Note**  
 > EREGEX refers to POSIX Extended Regular Expression. There are multiple tutorials available online to aid in creating search patterns; for additional information on expression syntax please refer to Regular expressions.
 
 ## Use case

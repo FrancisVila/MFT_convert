@@ -22,8 +22,8 @@ Parameters that appear in Master agent configuration file are in bold.
 |  secure_relay.ma.start_timeout  |  Int  |  30 sec  | Amount of time, in seconds, in which Secure Relay can start before a timeout.  |
 |  secure_relay.ma.start_options  |  String  |  -Xmx512m -Xrs  | Secure Relay Master Agent start options.  |
 |  secure_relay.ma.conf_fname  |  String  |  $(cft.runtime.run_dir)XsrConf.xml  | Secure Relay Master Agent configuration file.  |
-|  secure_relay.ma. ca_cert_fname  |  String  |   |  Secure Relay certificate authority.<br/>This is a mandatory field, however certificates are not delivered with Transfer CFT.  |
-|  secure_relay.ma.cert_fname  |  String  |   |  Secure Relay Master Agent user certificate.<br/>This is a mandatory field, however certificates are not delivered with Transfer CFT.  |
+|  secure_relay.ma. ca_cert_fname  |  String  |   |  Secure Relay certificate authority.<br/>This is a mandatory field, however  certificates are not delivered with Transfer CFT.  |
+|  secure_relay.ma.cert_fname  |  String  |   |  Secure Relay Master Agent user certificate.<br/>This is a mandatory field, however  certificates are not delivered with Transfer CFT.  |
 |  secure_relay.ma.cert_password_fname  |  String  |  $(cft.runtime.run_dir)/XsrPwd.dat  | Secure Relay Master Agent certificate password file.  |
 |  secure_relay.ma.cert_password  |  String  |  test  | Secure Relay Master Agent certificate password.  |
 |  secure_relay.ma.host  |  String  |  127.0.0.1  | Secure Relay Master Agent listening IP address or FQDN.  |
@@ -51,7 +51,7 @@ In the Secure Relay parameters table below:
 |  secure_relay.ra.N.dmz  |  String  |  DMZ0  | Logical name of the DMZ where the Router Agent is running, with a maximum of 32 characters.  |
 |  secure_relay.ra.N.host  |  String  |  None  |  Router Agent IP address or FQDN.  |
 |  secure_relay.ra.N.admin_port  |  Int  |  6810  |  Router Agent administration port.  |
-|  secure_relay.ra.N.comm_port  |  Int  |  6811  |  Router Agent communication port. This parameter is specific to each {{< TransferCFT/componentshortname  >}} using the Router Agent. If more than one {{< TransferCFT/componentshortname  >}} uses the same Router Agent, each {{< TransferCFT/componentshortname  >}} must have a unique value.  |
+|  secure_relay.ra.N.comm_port  |  Int  |  6811  |  Router Agent communication port. This parameter is specific to each {{< TransferCFT/componentshortname  >}} using the  Router Agent. If more than one {{< TransferCFT/componentshortname  >}} uses the same Router Agent, each {{< TransferCFT/componentshortname  >}} must have a unique value.  |
 |  secure_relay.ra.N. nb_data_connections  |  Int  |  5  | Number of data connections between the Master Agent and the Router Agent.  |
 |  secure_relay.ra.N. data_channel_ciphering  |  Bool  |  No  |  Activates data connections ciphering.  |
 |  secure_relay.ra.N. outcall_network_interface  |  String  |  None  |  Address to bind for outgoing calls.  |

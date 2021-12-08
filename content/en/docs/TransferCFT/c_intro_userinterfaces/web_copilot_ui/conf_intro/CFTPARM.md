@@ -38,7 +38,7 @@ Use this command to:
 |  <a href="../../../command_summary/parameter_intro/com">COM</a>  |  List of the identifiers of the communication media description commands (<a href="../../../../admin_intro/admin_config_commands/communication_media_concepts">Defining the communication media</a>).  |
 |  <a href="../../../command_summary/parameter_intro/comment">COMMENT</a>  |  Character comment field.  |
 |  CTLPASSW  |  Obsolete.  |
-|  <a href="../../../command_summary/parameter_intro/default">DEFAULT</a>  |  Default identifier, generically indicated as &lt;defaut&gt;, of the CFTRECV, CFTSEND, and CFTXLATE commands.  |
+|  <a href="../../../command_summary/parameter_intro/default">DEFAULT</a>  |  Default identifier, generically indicated as &lt;defaut&gt;, of the CFTRECV, CFTSEND, and CFTXLATE  commands.  |
 |  <a href="../../../command_summary/parameter_intro/execre">EXECRE</a>  |  Generic name of the file describing the procedures to be executed, following an incident (Error) occurring during a receive transfer, the transfer changing to the H or K state.  |
 |  <a href="../../../command_summary/parameter_intro/execrf">EXECRF</a>  |  Generic name of the file describing the procedures to be executed on completion of reception of a file.  |
 |  <a href="../../../command_summary/parameter_intro/execrm">EXECRM</a>  |  Generic name of the file describing the procedures to be executed on completion of reception of a message.  |
@@ -51,7 +51,7 @@ Use this command to:
 |  <a href="../../../command_summary/parameter_intro/exiteot">EXITEOT</a>  |  EXIT identifier. To activate an end-of-transfer EXIT task, this identifier must point to a CFTEXIT command.  |
 |  <a href="../../../command_summary/parameter_intro/id">ID</a>  |  Identifier of the CFTPARM command.  |
 |  <a href="../../../command_summary/parameter_intro/key">KEY</a>  |  The name of the indirection file preceded by the &lt;file-symb&gt; character, which is system specific, and containing the set of keys associated with the Transfer CFT.  |
-|  <a href="../../../command_summary/parameter_intro/lenappl">LENAPPL</a>  |  Length to be taken into account when comparing the file/message identifier, IDF or IDM, with the identifier of a CFTAPPL command.<br/>See, Security concepts: Start here.  |
+|  <a href="../../../command_summary/parameter_intro/lenappl">LENAPPL</a>  |  Length to be taken into account when comparing the file/message identifier, IDF or IDM, with the identifier of a CFTAPPL command.<br/>See,  Security concepts: Start here.  |
 |  <a href="../../../command_summary/parameter_intro/log">LOG</a>  |  Identifier of the monitor event log file description command CFTLOG.<br/>If this parameter is not defined, the Transfer CFT writes logging messages to the standard output of the monitor.  |
 |  <a href="../../../command_summary/parameter_intro/maxtask">MAXTASK</a>  |  Number of file access tasks authorized.  |
 |  <a href="../../../command_summary/parameter_intro/maxtrans">MAXTRANS</a>  |  The maximum authorized number of transfers in parallel. When using multi node, this is the number of transfers per node.  |

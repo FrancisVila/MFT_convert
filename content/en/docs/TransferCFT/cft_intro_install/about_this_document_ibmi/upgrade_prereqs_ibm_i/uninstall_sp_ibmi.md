@@ -28,8 +28,7 @@ SAVF name of previous version  .   SPXSAV      Name
 
 1.  Press Enter. The patch or service pack is removed, and you are returned to the previous version.
 
-> **Note:**
->
+> **Note**  
 > As with other Transfer CFT commands, ensure that your program library (CFTPGM) and production library are present in your EDTLIBL before calling the UNINSTALL command.
 
 ## Uninstall a patch

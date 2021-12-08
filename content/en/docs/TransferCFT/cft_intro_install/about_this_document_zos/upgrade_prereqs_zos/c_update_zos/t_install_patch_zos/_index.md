@@ -19,8 +19,7 @@ Information includes:
 
 A PTF file results from the fixed formatting (80) of an ADRDSSU-type file containing the update libraries. The PTF format is used by all delivery and distribution modes. The PTF files are available at               [support.axway.com](http://support.axway.com/).
 
-> **Note:**
->
+> **Note**  
 > PTF files are cumulative. A basic Transfer CFT z/OS installation can integrate PTFs. If you use this method, apply the PTFs one at a time.
 
 Libraries taken into account during a DUMP ADRDSSU
@@ -32,7 +31,7 @@ Libraries taken into account during a DUMP ADRDSSU
 |  SAMPLE  |  Update the SAMPLES  |
 |  SAMPLEO  |  Update the COBOL samples  |
 |  SAMPLEC  |  Update the C samples  |
-| SAMPLEA  | Update the ASM samples  |
+| SAMPLEA  | Update  the ASM samples  |
 |  PFTOBJ  |  Update OBJECT modules  |
 |  DOC  |  Update documentation  |
 |  CNTL  |  Control files  |
@@ -101,85 +100,85 @@ All of the A13\* JCLs are used to update or apply a Service Pack to Transfer CFT
    </thead>
    <tbody>
       <tr>
-         <td>A13AUTO         </td>
-         <td>To automatically apply fixes.         </td>
+         <td >A13AUTO         </td>
+         <td >To automatically apply fixes.         </td>
       </tr>
       <tr>
-         <td>A13PTFFT         </td>
-         <td>To transfer a patch to the distlib.UPLIB in binary mode (using FTP - mode GET).         </td>
+         <td >A13PTFFT         </td>
+         <td >To transfer a patch to the distlib.UPLIB in binary mode (using FTP - mode GET).         </td>
       </tr>
       <tr>
-         <td>A13PTFLD         </td>
-         <td>To update the distribution libraries. (ADRDSSU)         </td>
+         <td >A13PTFLD         </td>
+         <td >To update the distribution libraries. (ADRDSSU)         </td>
       </tr>
       <tr>
-         <td>A13PTFLI         </td>
-         <td>To update the distribution libraries. (XMIT)         </td>
+         <td >A13PTFLI         </td>
+         <td >To update the distribution libraries. (XMIT)         </td>
       </tr>
       <tr>
-         <td>A13PTFLK         </td>
-         <td>To apply a patch in the Transfer CFT loadlib (create a save library/link-edit).         </td>
+         <td >A13PTFLK         </td>
+         <td >To apply a patch in the Transfer CFT loadlib (create a save library/link-edit).         </td>
       </tr>
       <tr>
-         <td>A13RSTOR         </td>
-         <td>To restore the loadlib from a save library.         </td>
+         <td >A13RSTOR         </td>
+         <td >To restore the loadlib from a save library.         </td>
       </tr>
       <tr>
-         <td>A13SDEL         </td>
-         <td>To delete a save-load library when a patch is validated, or if the loadlib is restored to reapply a patch.         </td>
+         <td >A13SDEL         </td>
+         <td >To delete a save-load library when a patch is validated, or if the loadlib is restored to reapply a patch.         </td>
       </tr>
       <tr>
-         <td>  Transfer CFT Copilot update         </td>
+         <td colspan="2" >  Transfer CFT Copilot update         </td>
       </tr>
       <tr>
-         <td>A13UCOPA         </td>
-         <td>To apply a patch to Transfer CFT Copilot (Create a save file).         </td>
+         <td >A13UCOPA         </td>
+         <td >To apply a patch to Transfer CFT Copilot (Create a save file).         </td>
       </tr>
       <tr>
-         <td>A13UCOPR         </td>
-         <td>To restore the Transfer CFT Navigator environment from a save file in USS environment.         </td>
+         <td >A13UCOPR         </td>
+         <td >To restore the Transfer CFT Navigator environment from a save file in USS environment.         </td>
       </tr>
       <tr>
-         <td>A13UCOPD         </td>
-         <td>To delete a save file when a patch is validated.         </td>
+         <td >A13UCOPD         </td>
+         <td >To delete a save file when a patch is validated.         </td>
       </tr>
       <tr>
-         <td>  Transfer CFT - Secure Relay - Master Agent update         </td>
+         <td colspan="2" >  Transfer CFT - Secure Relay - Master Agent update         </td>
       </tr>
       <tr>
-         <td>A13UXSRA         </td>
-         <td>To apply a patch to Secure Relay - Master Agent (creates a save file).         </td>
+         <td >A13UXSRA         </td>
+         <td >To apply a patch to Secure Relay - Master Agent (creates a save file).         </td>
       </tr>
       <tr>
-         <td>A13UXSRR         </td>
-         <td>To restore the Transfer CFT {{< TransferCFT/securerelayname  >}} environment from a save file in USS environment.         </td>
+         <td >A13UXSRR         </td>
+         <td >To restore the Transfer CFT {{< TransferCFT/securerelayname  >}} environment from a save file in USS environment.         </td>
       </tr>
       <tr>
-         <td>A13UXSRD         </td>
-         <td>To delete a save file when a patch is validated.         </td>
+         <td >A13UXSRD         </td>
+         <td >To delete a save file when a patch is validated.         </td>
       </tr>
       <tr>
-         <td>  Other JCL         </td>
+         <td colspan="2" >  Other JCL         </td>
       </tr>
       <tr>
-         <td>A13JCL         </td>
-         <td>To customize the patched JCL.         </td>
+         <td >A13JCL         </td>
+         <td >To customize the patched JCL.         </td>
       </tr>
       <tr>
-         <td>A13UCONF         </td>
-         <td>To update the unified configuration parameter definitions.         </td>
+         <td >A13UCONF         </td>
+         <td >To update the unified configuration parameter definitions.         </td>
       </tr>
       <tr>
-         <td>A13XML         </td>
-         <td>To update the XML library.         </td>
+         <td >A13XML         </td>
+         <td >To update the XML library.         </td>
       </tr>
       <tr>
-         <td>A13WDEL         </td>
-         <td><p>To delete work files.</p>         </td>
+         <td >A13WDEL         </td>
+         <td ><p>To delete work files.</p>         </td>
       </tr>
       <tr>
-         <td>A13RBACK         </td>
-         <td>To automatically execute the three jobs A13RSTOR, A13UCOPR, and A13UXSRR.         </td>
+         <td >A13RBACK         </td>
+         <td >To automatically execute the three jobs A13RSTOR, A13UCOPR, and A13UXSRR.         </td>
       </tr>
    </tbody>
 </table>
@@ -206,8 +205,7 @@ This JOB takes place in several stages:
 4.  Copies (with replace) PTF components in the distribution libraries.
 5.  Deletes the PTF temporary libraries.
 
-> **Note:**
->
+> **Note**  
 > This operation is displayed in the file distlib.LOG.
 
 For more information, you can consult the patch documentation located in the distlib.DOC library and named DCxxxxxx  (xxxxxx are the patch identifiers). These documents describe known incidents, corrections and  PTF specifics (exits, and so on). Additionally the library, PTFINFO member, lists all corrected incidents.
@@ -236,8 +234,7 @@ This JOB runs in several phases:
 
 -   LINK-EDIT
 
-> **Note:**
->
+> **Note**  
 > This operation is displayed in the file distlib.LOG.
 
 ## Deleting a backup file version
@@ -248,16 +245,14 @@ Use this JOB to delete a backup file after you have validated the application of
 
 //DELSAV EXEC PDELSAV,ID=’xxxxxx’
 
-> **Note:**
->
+> **Note**  
 > This operation is displayed in the file distlib.LOG.
 
 ## Updating the Copilot server
 
 When you apply a patch to the Transfer CFT Copilot server, the update is not automatic.
 
-> **Note:**
->
+> **Note**  
 > The user applying the PTFs should have write access rights for the ‘cftroot\\wwwroot’ \* directory. The \* cftroot is a customizable parameter (A03PARM member in the target.INSTALL library).
 
 The following three JCLs mange the PTFs for Copilot:
@@ -266,8 +261,7 @@ The following three JCLs mange the PTFs for Copilot:
 -   A13UCOPD: Deletes the save file that is associated with a PTF application
 -   A13UCOPR: Restores files from the save file
 
-> **Note:**
->
+> **Note**  
 > All of these operations are displayed in the file distlib.LOG.
 
 Before submitting the JCL, modify the value associated with the ID=, where xxxxxx is the identifier of the PTF to apply:

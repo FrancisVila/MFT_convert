@@ -13,7 +13,7 @@ The delivered sample provides two services, authentication and permissions check
 
 | Sample  | Authentication  | Permissions checking  |
 | --- | --- | --- |
-| examsmp1.c  | System authentication ()  | Flat file based on flat <a href="" class="MCTextPopup popup popupHead">RBAC</a> model  |
+| examsmp1.c  | System authentication ()  | Flat file based on flat <a href="" >RBAC</a> model  |
 
 
 ### Building the dynamic library associated with the sample
@@ -48,7 +48,7 @@ Where:
 | &lt;role&gt;  | The role for which the permission must be assigned  |
 | &lt;resource&gt;  | Name of the resource  |
 | &lt;actions&gt;  | List of actions with each action separated by a comma  |
-| &lt;policy&gt;  | ACCEPT: accept the actions on the resource<br /> REFUSE: refuse the actions on the resource  |
+| &lt;policy&gt;  | ACCEPT: accept the actions on the resource<br />                         REFUSE: refuse the actions on the resource  |
 
 
 Examples

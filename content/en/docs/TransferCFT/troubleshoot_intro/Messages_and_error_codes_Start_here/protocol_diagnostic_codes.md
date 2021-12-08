@@ -199,7 +199,7 @@ Induced internal event (eg: VIABORT) 
 Error code descriptions
 
 
-|  Error Code &lt;/th&gt;  |  FPDU &lt;/th&gt;  |  Meaning &lt;/th&gt;  |
+|                             Error Code                         &lt;/th&gt;  |                             FPDU                         &lt;/th&gt;  |                             Meaning                         &lt;/th&gt;  |
 | --- | --- | --- |
 |  100  |  RESYNC  |  Transmission error (invalid CRC)  |
 |  139  |   |  Invalid file attributes  |
@@ -309,215 +309,215 @@ diagnostic         </th>
    </thead>
    <tbody>
       <tr>
-         <td><p>Diagnostics imposing a re-synchronization </p>         </td>
+         <td colspan="4"  data-bgcolor="#FFFFFF" data-valign="top"><p>Diagnostics imposing a re-synchronization </p>         </td>
       </tr>
       <tr>
-         <td><p>100 </p>         </td>
-         <td><p>Transmission error </p>         </td>
-         <td><p>720 </p>         </td>
-         <td><p>F.RESTART </p>         </td>
+         <td  data-valign="top" width="13%"><p>100 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Transmission error </p>         </td>
+         <td  data-valign="top" width="16%"><p>720 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.RESTART </p>         </td>
       </tr>
       <tr>
-         <td><p>Diagnostics imposing a restart </p>         </td>
+         <td colspan="4"  data-bgcolor="#FFFFFF" data-valign="top"><p>Diagnostics imposing a restart </p>         </td>
       </tr>
       <tr>
-         <td><p>200 </p>         </td>
-         <td><p>File characteristics insufficient </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.CREATE<br />
+         <td  data-valign="top" width="13%"><p>200 </p>         </td>
+         <td  data-valign="top" width="49%"><p>File characteristics insufficient </p>         </td>
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.CREATE<br />
 F.SELECT </p>         </td>
       </tr>
       <tr>
-         <td><p>201 </p>         </td>
-         <td><p>System resources temporarily insufficient </p>         </td>
-         <td><p>916 </p>         </td>
-         <td><p>F.CREATE<br />
+         <td  data-valign="top" width="13%"><p>201 </p>         </td>
+         <td  data-valign="top" width="49%"><p>System resources temporarily insufficient </p>         </td>
+         <td  data-valign="top" width="16%"><p>916 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.CREATE<br />
 F.SELECT </p>         </td>
       </tr>
       <tr>
-         <td><p>202 </p>         </td>
-         <td><p>User resources temporarily insufficient </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.CREATE<br />
+         <td  data-valign="top" width="13%"><p>202 </p>         </td>
+         <td  data-valign="top" width="49%"><p>User resources temporarily insufficient </p>         </td>
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.CREATE<br />
 F.SELECT </p>         </td>
       </tr>
       <tr>
-         <td><p>203 </p>         </td>
-         <td><p>Transfer not overriding </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.CREATE<br />
+         <td  data-valign="top" width="13%"><p>203 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Transfer not overriding </p>         </td>
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.CREATE<br />
 F.SELECT </p>         </td>
       </tr>
       <tr>
-         <td><p>204 </p>         </td>
-         <td><p>File already exists </p>         </td>
-         <td><p>613 </p>         </td>
-         <td><p>F.CREATE<br />
+         <td  data-valign="top" width="13%"><p>204 </p>         </td>
+         <td  data-valign="top" width="49%"><p>File already exists </p>         </td>
+         <td  data-valign="top" width="16%"><p>613 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.CREATE<br />
 F.SELECT </p>         </td>
       </tr>
       <tr>
-         <td><p>205 </p>         </td>
-         <td><p>File does not exist </p>         </td>
-         <td><p>610 </p>         </td>
-         <td><p>F.CREATE<br />
+         <td  data-valign="top" width="13%"><p>205 </p>         </td>
+         <td  data-valign="top" width="49%"><p>File does not exist </p>         </td>
+         <td  data-valign="top" width="16%"><p>610 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.CREATE<br />
 F.SELECT </p>         </td>
       </tr>
       <tr>
-         <td><p>206 </p>         </td>
-         <td><p>Reception of the file will cause an overflow of the disk
+         <td  data-valign="top" width="13%"><p>206 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Reception of the file will cause an overflow of the disk
 quota </p>         </td>
-         <td><p>611 </p>         </td>
-         <td><p>F.CREATE<br />
+         <td  data-valign="top" width="16%"><p>611 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.CREATE<br />
 F.SELECT </p>         </td>
       </tr>
       <tr>
-         <td><p>207 </p>         </td>
-         <td><p>File occupied </p>         </td>
-         <td><p>635 </p>         </td>
-         <td><p>F.CREATE<br />
+         <td  data-valign="top" width="13%"><p>207 </p>         </td>
+         <td  data-valign="top" width="49%"><p>File occupied </p>         </td>
+         <td  data-valign="top" width="16%"><p>635 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.CREATE<br />
 F.SELECT </p>         </td>
       </tr>
       <tr>
-         <td><p>208 </p>         </td>
-         <td><p>File too old </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.CREATE<br />
+         <td  data-valign="top" width="13%"><p>208 </p>         </td>
+         <td  data-valign="top" width="49%"><p>File too old </p>         </td>
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.CREATE<br />
 F.SELECT </p>         </td>
       </tr>
       <tr>
-         <td><p>209 </p>         </td>
-         <td><p>Message of this type not accepted on the reference installation </p>         </td>
-         <td><p>920 </p>         </td>
-         <td><p>F.CREATE<br />
+         <td  data-valign="top" width="13%"><p>209 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Message of this type not accepted on the reference installation </p>         </td>
+         <td  data-valign="top" width="16%"><p>920 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.CREATE<br />
 F.SELECT </p>         </td>
       </tr>
       <tr>
-         <td><p>210 </p>         </td>
-         <td><p>Presentation context negotiation failure </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.OPEN </p>         </td>
+         <td  data-valign="top" width="13%"><p>210 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Presentation context negotiation failure </p>         </td>
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.OPEN </p>         </td>
       </tr>
       <tr>
-         <td><p>211 </p>         </td>
-         <td><p>Not possible to open file </p>         </td>
-         <td><p>604 </p>         </td>
-         <td><p>F.OPEN </p>         </td>
+         <td  data-valign="top" width="13%"><p>211 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Not possible to open file </p>         </td>
+         <td  data-valign="top" width="16%"><p>604 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.OPEN </p>         </td>
       </tr>
       <tr>
-         <td><p>212 </p>         </td>
-         <td><p>Not possible to close file normally  </p>         </td>
-         <td><p>605 </p>         </td>
-         <td><p>F.CLOSE </p>         </td>
+         <td  data-valign="top" width="13%"><p>212 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Not possible to close file normally  </p>         </td>
+         <td  data-valign="top" width="16%"><p>605 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.CLOSE </p>         </td>
       </tr>
       <tr>
-         <td><p>213 </p>         </td>
-         <td><p>Inhibiting input/output error </p>         </td>
-         <td><p>600 </p>         </td>
-         <td><p>F.READ<br />
+         <td  data-valign="top" width="13%"><p>213 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Inhibiting input/output error </p>         </td>
+         <td  data-valign="top" width="16%"><p>600 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.READ<br />
 F.WRITE<br />
 F.DATA.END<br />
 F.CANCEL </p>         </td>
       </tr>
       <tr>
-         <td><p>214 </p>         </td>
-         <td><p>Restart point negotiation failure  </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.READ<br />
+         <td  data-valign="top" width="13%"><p>214 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Restart point negotiation failure  </p>         </td>
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.READ<br />
 F.DATA.END<br />
 F.CANCEL </p>         </td>
       </tr>
       <tr>
-         <td><p>215 </p>         </td>
-         <td><p>Specific system error </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.DATA.END<br />
+         <td  data-valign="top" width="13%"><p>215 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Specific system error </p>         </td>
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.DATA.END<br />
 F.CANCEL </p>         </td>
       </tr>
       <tr>
-         <td><p>216 </p>         </td>
-         <td><p>Intentional premature halt </p>         </td>
-         <td><p>621 </p>         </td>
-         <td><p>F.DATA.END<br />
+         <td  data-valign="top" width="13%"><p>216 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Intentional premature halt </p>         </td>
+         <td  data-valign="top" width="16%"><p>621 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.DATA.END<br />
 F.CANCEL </p>         </td>
       </tr>
       <tr>
-         <td><p>217 </p>         </td>
-         <td><p>Too many synchronization points not acknowledged </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.DATA.END<br />
+         <td  data-valign="top" width="13%"><p>217 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Too many synchronization points not acknowledged </p>         </td>
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.DATA.END<br />
 F.CANCEL </p>         </td>
       </tr>
       <tr>
-         <td><p>218 </p>         </td>
-         <td><p>Re-synchronization not possible </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.DATA.END<br />
+         <td  data-valign="top" width="13%"><p>218 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Re-synchronization not possible </p>         </td>
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.DATA.END<br />
 F.CANCEL </p>         </td>
       </tr>
       <tr>
-         <td><p>219 </p>         </td>
-         <td><p>File space full </p>         </td>
-         <td><p>614 </p>         </td>
-         <td><p>F.DATA.END<br />
+         <td  data-valign="top" width="13%"><p>219 </p>         </td>
+         <td  data-valign="top" width="49%"><p>File space full </p>         </td>
+         <td  data-valign="top" width="16%"><p>614 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.DATA.END<br />
 F.CANCEL </p>         </td>
       </tr>
       <tr>
-         <td><p>220 </p>         </td>
-         <td><p>Article longer than expected </p>         </td>
-         <td><p>626 </p>         </td>
-         <td><p>F.DATA.END<br />
+         <td  data-valign="top" width="13%"><p>220 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Article longer than expected </p>         </td>
+         <td  data-valign="top" width="16%"><p>626 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.DATA.END<br />
 F.CANCEL </p>         </td>
       </tr>
       <tr>
-         <td><p>221 </p>         </td>
-         <td><p>Expected end of transmission time </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.DATA.END<br />
+         <td  data-valign="top" width="13%"><p>221 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Expected end of transmission time </p>         </td>
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.DATA.END<br />
 F.CANCEL </p>         </td>
       </tr>
       <tr>
-         <td><p>222 </p>         </td>
-         <td><p>Too much data without synchronization points </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.DATA.END<br />
+         <td  data-valign="top" width="13%"><p>222 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Too much data without synchronization points </p>         </td>
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.DATA.END<br />
 F.CANCEL </p>         </td>
       </tr>
       <tr>
-         <td><p>223 </p>         </td>
-         <td><p>Abnormal end of transfer </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.TRANSFER.END<br />
+         <td  data-valign="top" width="13%"><p>223 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Abnormal end of transfer </p>         </td>
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.TRANSFER.END<br />
 F.DESELECT </p>         </td>
       </tr>
       <tr>
-         <td><p>224 </p>         </td>
-         <td><p>The size of the file sent is greater than the one announced
+         <td  data-valign="top" width="13%"><p>224 </p>         </td>
+         <td  data-valign="top" width="49%"><p>The size of the file sent is greater than the one announced
 in F.CREATE </p>         </td>
-         <td><p>600 </p>         </td>
-         <td><p>F.TRANSFER.END<br />
+         <td  data-valign="top" width="16%"><p>600 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.TRANSFER.END<br />
 F.DESELECT </p>         </td>
       </tr>
       <tr>
-         <td><p>225 </p>         </td>
-         <td><p>Workstation application congested: the file has effectively
+         <td  data-valign="top" width="13%"><p>225 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Workstation application congested: the file has effectively
 been received but SCRS has not been able to give it to the workstation
 application  </p>         </td>
-         <td><p>600 </p>         </td>
-         <td><p>F.TRANSFER.END<br />
+         <td  data-valign="top" width="16%"><p>600 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.TRANSFER.END<br />
 F.DESELECT </p>         </td>
       </tr>
       <tr>
-         <td><p>226 </p>         </td>
-         <td><p>Transfer refusal </p>         </td>
-         <td><p>904 </p>         </td>
-         <td><p>F.CREATE<br />
+         <td  data-valign="top" width="13%"><p>226 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Transfer refusal </p>         </td>
+         <td  data-valign="top" width="16%"><p>904 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.CREATE<br />
 F.SELECT </p>         </td>
       </tr>
       <tr>
-         <td><p>299 </p>         </td>
-         <td><p>Other </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.CREATE<br />
+         <td  data-valign="top" width="13%"><p>299 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Other </p>         </td>
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.CREATE<br />
 F.SELECT<br />
 F.OPEN<br />
 F.CLOSE<br />
@@ -530,166 +530,166 @@ F.DESELECT<br />
 F.RESTART </p>         </td>
       </tr>
       <tr>
-         <td><p>Diagnostics imposing a reconnection </p>         </td>
+         <td colspan="4"  data-bgcolor="#FFFFFF" data-valign="top"><p>Diagnostics imposing a reconnection </p>         </td>
       </tr>
       <tr>
-         <td><p>300 </p>         </td>
-         <td><p>Local communication system congested  </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.CONNECT  </p>         </td>
+         <td  data-valign="top" width="13%"><p>300 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Local communication system congested  </p>         </td>
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.CONNECT  </p>         </td>
       </tr>
       <tr>
-         <td><p>301 </p>         </td>
-         <td><p>Identification requested not known </p>         </td>
-         <td><p>909 </p>         </td>
-         <td><p>F.CONNECT  </p>         </td>
+         <td  data-valign="top" width="13%"><p>301 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Identification requested not known </p>         </td>
+         <td  data-valign="top" width="16%"><p>909 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.CONNECT  </p>         </td>
       </tr>
       <tr>
-         <td><p>302 </p>         </td>
-         <td><p>Requested system not attached to a SSAP </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.CONNECT </p>         </td>
+         <td  data-valign="top" width="13%"><p>302 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Requested system not attached to a SSAP </p>         </td>
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.CONNECT </p>         </td>
       </tr>
       <tr>
-         <td><p>303 </p>         </td>
-         <td><p>Remote communication system congested<br />
+         <td  data-valign="top" width="13%"><p>303 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Remote communication system congested<br />
 (too many connections) </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.CONNECT  </p>         </td>
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.CONNECT  </p>         </td>
       </tr>
       <tr>
-         <td><p>304 </p>         </td>
-         <td><p>Requested identification not authorized (security) </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.CONNECT<br />
+         <td  data-valign="top" width="13%"><p>304 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Requested identification not authorized (security) </p>         </td>
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.CONNECT<br />
 F.ABORT<br />
 F.CREATE<br />
 F.ABORT </p>         </td>
       </tr>
       <tr>
-         <td><p>305 </p>         </td>
-         <td><p>Negotiation failure (SELECT) </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.CONNECT </p>         </td>
+         <td  data-valign="top" width="13%"><p>305 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Negotiation failure (SELECT) </p>         </td>
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.CONNECT </p>         </td>
       </tr>
       <tr>
-         <td><p>306 </p>         </td>
-         <td><p>Negotiation failure (RESYN) </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.CONNECT </p>         </td>
+         <td  data-valign="top" width="13%"><p>306 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Negotiation failure (RESYN) </p>         </td>
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.CONNECT </p>         </td>
       </tr>
       <tr>
-         <td><p>307 </p>         </td>
-         <td><p>Negotiation failure (SYNC) </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.CONNECT </p>         </td>
+         <td  data-valign="top" width="13%"><p>307 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Negotiation failure (SYNC) </p>         </td>
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.CONNECT </p>         </td>
       </tr>
       <tr>
-         <td><p>308 </p>         </td>
-         <td><p>Version number not supported  </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.CONNECT </p>         </td>
+         <td  data-valign="top" width="13%"><p>308 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Version number not supported  </p>         </td>
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.CONNECT </p>         </td>
       </tr>
       <tr>
-         <td><p>309 </p>         </td>
-         <td><p>Too many connections already in process for this processing
+         <td  data-valign="top" width="13%"><p>309 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Too many connections already in process for this processing
 centre </p>         </td>
-         <td><p>916 </p>         </td>
-         <td><p>F.CONNECT<br />
+         <td  data-valign="top" width="16%"><p>916 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.CONNECT<br />
 F.ABORT </p>         </td>
       </tr>
       <tr>
-         <td><p>310 </p>         </td>
-         <td><p>Network incident </p>         </td>
-         <td><p>802 </p>         </td>
-         <td><p>F.ABORT </p>         </td>
+         <td  data-valign="top" width="13%"><p>310 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Network incident </p>         </td>
+         <td  data-valign="top" width="16%"><p>802 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.ABORT </p>         </td>
       </tr>
       <tr>
-         <td><p>311 </p>         </td>
-         <td><p>Remote PeSIT protocol error </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.ABORT </p>         </td>
+         <td  data-valign="top" width="13%"><p>311 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Remote PeSIT protocol error </p>         </td>
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.ABORT </p>         </td>
       </tr>
       <tr>
-         <td><p>312 </p>         </td>
-         <td><p>Service closure requested by the user </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.RELEASE<br />
+         <td  data-valign="top" width="13%"><p>312 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Service closure requested by the user </p>         </td>
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.RELEASE<br />
 F.ABORT </p>         </td>
       </tr>
       <tr>
-         <td><p>313 </p>         </td>
-         <td><p>Connection broken at the end of the TD inactivity interval </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.RELEASE<br />
+         <td  data-valign="top" width="13%"><p>313 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Connection broken at the end of the TD inactivity interval </p>         </td>
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.RELEASE<br />
 F.ABORT </p>         </td>
       </tr>
       <tr>
-         <td><p>314 </p>         </td>
-         <td><p>Connection used to host a new connection </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.RELEASE<br />
+         <td  data-valign="top" width="13%"><p>314 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Connection used to host a new connection </p>         </td>
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.RELEASE<br />
 F.ABORT </p>         </td>
       </tr>
       <tr>
-         <td><p>315 </p>         </td>
-         <td><p>Negotiation failure </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.ABORT </p>         </td>
+         <td  data-valign="top" width="13%"><p>315 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Negotiation failure </p>         </td>
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.ABORT </p>         </td>
       </tr>
       <tr>
-         <td><p>316 </p>         </td>
-         <td><p>Connection broken as a result of an administration command
+         <td  data-valign="top" width="13%"><p>316 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Connection broken as a result of an administration command
  </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.RELEASE<br />
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.RELEASE<br />
 F.ABORT </p>         </td>
       </tr>
       <tr>
-         <td><p>317 </p>         </td>
-         <td><p>Time-out </p>         </td>
-         <td><p>740 </p>         </td>
-         <td><p>F.ABORT </p>         </td>
+         <td  data-valign="top" width="13%"><p>317 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Time-out </p>         </td>
+         <td  data-valign="top" width="16%"><p>740 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.ABORT </p>         </td>
       </tr>
       <tr>
-         <td><p>318 </p>         </td>
-         <td><p>Mandatory PI absent or illegal PI contents </p>         </td>
-         <td><p>722 </p>         </td>
-         <td><p>F.ABORT </p>         </td>
+         <td  data-valign="top" width="13%"><p>318 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Mandatory PI absent or illegal PI contents </p>         </td>
+         <td  data-valign="top" width="16%"><p>722 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.ABORT </p>         </td>
       </tr>
       <tr>
-         <td><p>319 </p>         </td>
-         <td><p>Number of bytes or articles incorrect </p>         </td>
-         <td><p>620 </p>         </td>
-         <td><p>F.ABORT </p>         </td>
+         <td  data-valign="top" width="13%"><p>319 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Number of bytes or articles incorrect </p>         </td>
+         <td  data-valign="top" width="16%"><p>620 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.ABORT </p>         </td>
       </tr>
       <tr>
-         <td><p>320 </p>         </td>
-         <td><p>Excessive number of resynchronizations for a transfer </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.ABORT </p>         </td>
+         <td  data-valign="top" width="13%"><p>320 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Excessive number of resynchronizations for a transfer </p>         </td>
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.ABORT </p>         </td>
       </tr>
       <tr>
-         <td><p>321 </p>         </td>
-         <td><p>Call the backup number </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.CONNECT<br />
+         <td  data-valign="top" width="13%"><p>321 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Call the backup number </p>         </td>
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.CONNECT<br />
 F.CREATE<br />
 F.ABORT </p>         </td>
       </tr>
       <tr>
-         <td><p>322 </p>         </td>
-         <td><p>Call back later </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.CONNECT<br />
+         <td  data-valign="top" width="13%"><p>322 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Call back later </p>         </td>
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.CONNECT<br />
 F.CREATE<br />
 F.ABORT </p>         </td>
       </tr>
       <tr>
-         <td><p>399 </p>         </td>
-         <td><p>Other </p>         </td>
-         <td><p>730 </p>         </td>
-         <td><p>F.CONNECT<br />
+         <td  data-valign="top" width="13%"><p>399 </p>         </td>
+         <td  data-valign="top" width="49%"><p>Other </p>         </td>
+         <td  data-valign="top" width="16%"><p>730 </p>         </td>
+         <td  data-valign="top" width="22%"><p>F.CONNECT<br />
 F.RELEASE<br />
 F.CREATE<br />
 F.ABORT </p>         </td>

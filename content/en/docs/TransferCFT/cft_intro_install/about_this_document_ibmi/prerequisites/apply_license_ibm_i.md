@@ -53,6 +53,5 @@ Description . . . . . : System serial number
 
 In this example, you would provide the CPU ID` 06890AP`.
 
-> **Note:**
->
+> **Note**  
 > Your values will differ from those shown in the examples.

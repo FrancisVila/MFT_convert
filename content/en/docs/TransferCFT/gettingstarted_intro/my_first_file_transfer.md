@@ -57,8 +57,7 @@ The purpose of the My first file transfer section is to help you feel comfortabl
 
 In the following sections, we'll take a look at additional {{< TransferCFT/componentshortname  >}} transfer modes, as well as some useful configuration parameters. With Transfer CFT, the transfer initiator  can be either the sender  of the file or the receiver, as indicated in the examples below. Additionally, in these examples we will use the convention that the requester is the client, so the transfer description may read **Requester/Sender** if the client is supplying the file.
 
-> **Note:**
->
+> **Note**  
 > For more information on a command and a list of available parameters, enter CFTUTIL help cmd=&lt;name of command>.
 
 <span id="Perform2"></span>
@@ -351,7 +350,7 @@ This mode is similar to the FTP put command. It allows you to define the file na
 
 | Requester/Sender  | Server/Receiver  |
 | --- | --- |
-|  Conf <ol> <li>Create a partner.<br/> • Create a CFTSEND with fname=&lt;FILE_TO_SEND&gt;, nfname=cft/filpub/fic.txt …</li> </ol> Runtime <ol start="3"> <li>Run the transfer.</li> </ol> <ol start="4"> <li>Check the catalog.</li> </ol>  |  Conf <ol> <li>Create a partner.<br/> • Create an CFTRECV fname=&amp;nfname…<br/>The syntax ‘fname=&amp;nfname’ means that the receiver allows the open mode. </li> </ol> Runtime <ol start="3"> <li>The file has been stored in the path defined by the client/sender, in this example: cft/filpub/fic.txt.<br/> • Check the catalog.</li> </ol>  |
+|  Conf <ol> <li>Create a partner.<br/> • Create a CFTSEND with fname=&lt;FILE_TO_SEND&gt;, nfname=cft/filpub/fic.txt …</li> </ol> Runtime <ol start="3"> <li>Run the transfer.</li> </ol> <ol start="4"> <li>Check the catalog.</li> </ol>  |  Conf <ol> <li>Create a partner.<br/> • Create an CFTRECV  fname=&amp;nfname…<br/>The syntax ‘fname=&amp;nfname’ means that the receiver allows the open mode. </li> </ol> Runtime <ol start="3"> <li>The file has been stored in the path defined by the client/sender, in this example: cft/filpub/fic.txt.<br/> • Check the catalog.</li> </ol>  |
 
 
 View an example
@@ -409,7 +408,7 @@ This mode is similar to FTP get command. It allows the receiver to get a file fr
 
 |  Requester/Receiver  | Server/Sender  |
 | --- | --- |
-|  Configuration <ol> <li>Create a partner.<br/> • Create an CFTRECV that defines the fname.</li> </ol> Runtime <ol start="3"> <li>Request the file stored on the remote server. Run the command: CFTUTIL RECV… nfname=&lt;remote_requested_file&gt;.</li> </ol> <ol start="4"> <li>The file retrieved is stored in the fname location.<br/> • Check the catalog.</li> </ol>  |  Configuration <ol> <li>Create a partner.<br/> • Create an CFTSEND where impl=yes, fname=&amp;nfname.<br/>The syntax ‘fname=&amp;nfname’ means that the server/sender allows the open mode. </li> </ol> Runtime <ol start="3"> <li>The file stored locally in &lt;remote_requested_file&gt; is sent to the client.</li> </ol> <ol start="4"> <li>Verify the catalog</li> </ol>  |
+|  Configuration <ol> <li>Create a partner.<br/> • Create an CFTRECV that defines the fname.</li> </ol> Runtime <ol start="3"> <li>Request the file  stored on the remote server. Run the command: CFTUTIL RECV… nfname=&lt;remote_requested_file&gt;.</li> </ol> <ol start="4"> <li>The file retrieved is stored in the fname location.<br/> • Check the catalog.</li> </ol>  |  Configuration <ol> <li>Create a partner.<br/> • Create an CFTSEND where impl=yes, fname=&amp;nfname.<br/>The syntax ‘fname=&amp;nfname’ means that the server/sender allows the open mode. </li> </ol> Runtime <ol start="3"> <li>The file stored locally in &lt;remote_requested_file&gt; is sent to the client.</li> </ol> <ol start="4"> <li>Verify the catalog</li> </ol>  |
 
 
 View an example
@@ -561,7 +560,7 @@ More information...
 
 | Client/Receiver  |  Server/Sender<br/>PHOENIX  |  Server/Sender<br/>NEW YORK  |
 | --- | --- | --- |
-|  Configuration <ol> <li>Create a first partner.<br/> • Create a second partner.<br/> • Create a collect list containing both NEW YORK and PHOENIX.<br/> • Create a CFTRECV.</li> </ol> Runtime <ol start="5"> <li>Using a single command, receive a file from both (all) partners using the defined collect list.</li> </ol> <ol start="6"> <li>Both files are received from both partners at the same time</li> </ol> <ol start="7"> <li>Check the catalog. You should have 3 entries in the catalog, one generic entry and one entry per partner.</li> </ol>  |  Configuration <ol> <li>Create this partner.<br/> • Create an CFTSEND.</li> </ol> Runtime <ol start="3"> <li>This partner makes a file available for the client SEND state=HOLD.</li> </ol> <ol start="4"> <li>The first partner sends the file.</li> </ol> <ol start="5"> <li>Check the catalog, there should be one entry.</li> </ol>  |  Configuration <ol> <li>Create a this partner.<br/> • Create an CFTSEND.</li> </ol> Runtime <ol start="3"> <li>This partner makes a file available for the client SEND state=HOLD.</li> </ol> <ol start="4"> <li>The second partner sends the file.<br/> • Check the catalog, there should be one entry.</li> </ol>  |
+|  Configuration <ol> <li>Create a first partner.<br/> • Create a second partner.<br/> • Create a collect list containing both NEW YORK and PHOENIX.<br/> • Create a CFTRECV.</li> </ol> Runtime <ol start="5"> <li>Using a single command, receive a file from both (all) partners using the defined collect list.</li> </ol> <ol start="6"> <li>Both files are received from both partners at the same time</li> </ol> <ol start="7"> <li>Check the catalog. You should have 3 entries in the catalog, one generic entry and one entry per partner.</li> </ol>  |  Configuration <ol> <li>Create this partner.<br/> • Create an CFTSEND.</li> </ol> Runtime <ol start="3"> <li>This partner makes a file available for the client  SEND state=HOLD.</li> </ol> <ol start="4"> <li>The first partner sends the file.</li> </ol> <ol start="5"> <li>Check the catalog, there should be one entry.</li> </ol>  |  Configuration <ol> <li>Create a this partner.<br/> • Create an CFTSEND.</li> </ol> Runtime <ol start="3"> <li>This partner makes a file available for the client  SEND state=HOLD.</li> </ol> <ol start="4"> <li>The second partner sends the file.<br/> • Check the catalog, there should be one entry.</li> </ol>  |
 
 
 View an example
@@ -639,8 +638,7 @@ SEND IDF=ORDER, STATE=HOLD
 LISTCAT
 ```
 
-> **Note:**
->
+> **Note**  
 > In these examples we created partners using the default MODE value, which is REPLACE. You can also use the MODE=CREATE, to create a new Transfer CFT partner.
 
 #### Additional information

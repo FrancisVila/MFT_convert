@@ -76,8 +76,7 @@ the following:
     in [Transport
     Security](../../../transport_security_start_here/configuring_transport_security_start_here)
 
-> **Note:**
->
+> **Note**  
 > In general, the
 > parameters beginning with an S control the send transfers operation, and
 > those beginning with an R control the receive transfers operation. This does

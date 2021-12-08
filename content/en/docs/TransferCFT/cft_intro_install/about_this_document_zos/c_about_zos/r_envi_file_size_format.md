@@ -35,7 +35,7 @@ The tables in this section provide information about the files and allocation re
 |  LOG  |  Installation log PS – VB – 255 DSNTYPE=LIBRARY (NON-SMP/E INSTALLATION)  |  1  |
 |  UPARM  |  Configuration parameters PO – VB – 255 DSNTYPE=LIBRARY  |  2  |
 | EXEC  |  Transfer CFT procedures PO – FB 80 DSNTYPE=LIBRARY  | 2  |
-| XMLLIB  |  XML components (CSD, etc.) PO – VB - 4090 DSNTYPE=LIBRARY  | 2  |
+| XMLLIB      |  XML components (CSD, etc.) PO – VB - 4090 DSNTYPE=LIBRARY  | 2  |
 | PKIMSG  |  Trusted File messages PO – FB - 4090 DSNTYPE=LIBRARY  | 1  |
 
 
@@ -59,7 +59,7 @@ The following allocations are required per {{< TransferCFT/componentshortname  >
 |  XMLLIB  |  PO – VB – 4090<br/>DSNTYPE=LIBRARY  |  SPACE = (27998,(100,50,-))  |
 |  CERTIF  |  PO – VB – 4090<br/>DSNTYPE=LIBRARY  | SPACE = (27998,(10,5,-))  |
 |  LOAD  |  DSNTYPE=LIBRARY  |  SPACE = (CYL,(120,50,-))  |
-| <span id="USER.load"></span>USER.LOAD  | DSNTYPE=LIBRARY  | SPACE = (CYL,(50,20,-))  |
+| <span id="USER.load"></span>USER.LOAD  | DSNTYPE=LIBRARY  | SPACE  = (CYL,(50,20,-))  |
 |  UCONF  |  Runtime configuration parameters<br/>PS – VB - 2048  |  SPACE = (TRK,(5,2))  |
 | UCONFRUN  |  Runtime configuration parameters<br/>PS – VB – 2048  | SPACE=(TRK,(5,2))  |
 | USER.OBJ  |  API and exits objects<br/>PO – FB – 80<br/>DSNTYPE=LIBRARY  | SPACE=(3200,(200,100,-))  |
@@ -71,12 +71,11 @@ The following allocations are required per {{< TransferCFT/componentshortname  >
 | MONLOG  |  Started Transfer CFT server log for multi-node PS – VB – 255  | SPACE = (TRK,(20,10))  |
 | UPLOAD  |  Upload library used by Central Governance PO – FB – 80 DSNTYPE=LIBRARY  | SPACE = (TRK,(20,10))  |
 | LOG  | Installation LOG PS – VB - 255  | SPACE = (TRK,(10,50))  |
-| CRYPKEY  | File name containing the private key that enciphers data  |   |
+| CRYPKEY    | File name containing the private key that enciphers data  |   |
 | CRYPSALT  | File name containing the salt used to create the private key  |   |
 
 
-> **Note:**
->
+> **Note**  
 >  
 
 -   The *Instance environment* list above does not include files that Transfer CFT creates in its implementation, such as CATALOG, PARM, PART, COM, PKIFILE, LOG, ACCOUNT etc.

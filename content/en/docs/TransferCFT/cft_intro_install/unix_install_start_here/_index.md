@@ -46,14 +46,12 @@ When installing a cluster for high availability, after enabling the cluster opti
 -   [Solaris
     Sun cluster](run_first_time_ux/aix_with_ibm_hacmp_intro/solaris_sun_cluster_start_here)
 
-> **Note:**
->
+> **Note**  
 > The term
 >   Transfer CFT is used to designate the Transfer
 > CFT software package on UNIX platforms.
 
-> **Note:**
->
+> **Note**  
 > Transfer CFT supports all POSIX file systems.
 
 ## Installation schematic overview

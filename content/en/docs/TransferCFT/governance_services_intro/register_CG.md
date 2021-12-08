@@ -60,8 +60,7 @@ uconfunset id=sentinel.xfb.enable
 uconfset id=pki.type, value=cft
 ```
 
-> **Note:**
->
+> **Note**  
 > When running in a z/OS environment you must additionally set the am.passport.superuser with the user that will start the Copilot server.
 
 #### Define UCONF parameters used for {{< TransferCFT/componentlongname  >}} instance identification

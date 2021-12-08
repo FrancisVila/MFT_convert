@@ -14,8 +14,7 @@ In general, you should base your MAXTRANS on the transfer peak in your daily act
 
 **Answer**: On a UNIX or Windows system, with an unlimited license, the maximum number of possible simultaneous connections between the 2 {{< TransferCFT/componentlongname  >}}s is 1000.
 
-> **Note:**
->
+> **Note**  
 > More simultaneous sessions to a partner does not necessary give you the fastest transfer performance.
 
 #### Q: Why doesn't the number of active simultaneous transfers match  my license key maximum?

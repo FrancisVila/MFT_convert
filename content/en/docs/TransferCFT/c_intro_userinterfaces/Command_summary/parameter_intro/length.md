@@ -12,8 +12,7 @@
 
 Size of log file records. In general, this value should not be modified.
 
-> **Note:**
->
+> **Note**  
 > The default value for z/OS and IBM i environments is 256 (160 is for all other platforms).
 
 [Return to Command index](../../)

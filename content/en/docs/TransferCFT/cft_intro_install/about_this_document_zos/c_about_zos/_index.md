@@ -43,7 +43,7 @@ Again, there are 2 product packaging formats in the **`Components\Transfer_CFT_V
 | --- | --- |
 |  Transfer_CFT_&lt;version&gt;_mvs_&lt;format&gt;.bin  |  Product  |
 |  Transfer_CFT_&lt;version&gt;_mvs_&lt;format&gt;_J1IDIST.txt  |  JCL that creates the distribution environment  |
-|  Transfer_CFT_&lt;version&gt;_mvs_&lt;format&gt;_J2IICFT.txt  |  JCL that creates the instance environment  |
+|  Transfer_CFT_&lt;version&gt;_mvs_&lt;format&gt;_J2IICFT.txt  |  JCL that creates the  instance environment  |
 
 
 <span id="kanchor15"></span>

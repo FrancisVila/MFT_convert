@@ -42,8 +42,7 @@ return a specified parameter to the default value.
 UCONFUNSET id=PARAMETER-KEY
 ```
 
-> **Note:**
->
+> **Note**  
 > Certain uconf values are integrally linked to node type uconf values. If you modify these related values, and then delete the node value, the modified parameters remain in the configuration.
 
 **LISTUCONF**
@@ -58,8 +57,7 @@ RECONFIG TYPE=UCONF
 
 When TYPE=UCONF , the UCONF reconfigurable variables are reloaded. Note that only the UCONF parameters flagged with RECONFIG / IRECONFIG are affected.
 
-> **Note:**
->
+> **Note**  
 > Tip  
 > You can use the listuconf content=extract function with fout to extract the configuration with the passwords in clear text (normally passwords are hidden in uconf). Example: CFTUTIL LISTUCONF CONTENT=EXTRACT, FOUT=UCONF
 

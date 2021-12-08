@@ -29,8 +29,7 @@ Perform the following steps on the Edge Agent for MFT implementations that use 
 4.  Upload the `MFT.json` file from the package to the `<Edge_Agent_install_dir>/conf/agent/report` directory.
 5.  Restart the Edge Agent. Refer to the [AMPLIFY Usage Metering and Reporting Guide](https://docs.axway.com/bundle/subusage_en).
 
-> **Note:**
->
+> **Note**  
 > The MFT.json file name is the configurationName that you use when querying the Edge Agent.
 
 ## Configure Transfer CFT
@@ -70,9 +69,8 @@ Set the following uconf parameters to the Edge Agent values:
 
 When you are using the Event Router to send both usage tracking to the Edge Agent and  monitoring to Sentinel, you must customize the Event Router. In the following configuration steps, `XFBTransfer `and `CycleLink `are sent to both the Edge Agent and Sentinel. However, `XFBCFTInfo `and `STXFBINFO `are only sent to the Edge Agent.
 
-> **Note:**
->
-> The default target  is called SENTINEL in the steps below QQQ.
+> **Note**  
+> The default target  is called SENTINEL in the steps below.
 
 1.  Access the `<install_dir>/SentinelEventRouter/conf `directory.
 2.  Edit the `target.xml` file to route the usage information to Sentinel and the Edge Agent (`EDGEAGENT`).
@@ -143,6 +141,5 @@ Example
 </TrkEventRouterCfg>
 ```
 
-> **Note:**
->
+> **Note**  
 > Do not modify the \[PRODUCTIPADDR\].

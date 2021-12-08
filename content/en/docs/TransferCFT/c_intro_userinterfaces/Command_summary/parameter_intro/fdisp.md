@@ -20,16 +20,13 @@ File sharing option:
 -   CHECK:
     If the file is modified during a transfer, the transfer is aborted.
 
-> **Note:**
->
+> **Note**  
 > The value "OLD" is deprecated and no longer available for SEND/CFTSEND.
 
-> **Note:**
->
+> **Note**  
 > The CHECK feature is disabled on z/OS platforms (no action occurs when FDISP=CHECK).
 
-> **Note:**
->
+> **Note**  
 > Caution  
 > When FDISP is set to CHECK, Transfer CFT performs an FSTAT for each record, which has a significant negative impact on performance.
 
@@ -53,8 +50,7 @@ action of the  {{< TransferCFT/componentshortname  >}}:
 
 The following table shows the combined effect of the FDISP and FACTION parameters when used in a RECV command.
 
-> **Note:**
->
+> **Note**  
 > There no impact on FDISP when used in combination with RENAME or RETRYRENAME.
 
 
@@ -63,7 +59,7 @@ The following table shows the combined effect of the FDISP and FACTION parameter
 | both  | delete  | If no file exists, the file is created. If file exists it is deleted and recreated (regardless of if it is empty or not).  |
 | both  | erase  | If no file exists, the file is created. If file exists it is overwritten (no matter if it is empty or not).  |
 | both  | verify  | If no file exists, the file is created. If file exists and it is not empty, the transfer is aborted. If file exists but it is empty, the file is overwritten.  |
-| new  | verify  | If no file exists, the file is created. If file exists the transfer is aborted (regardless of if it is empty or not).  |
+| new  | verify  | If no file exists, the file is created. If file exists the transfer is aborted (regardless of  if it is empty or not).  |
 | old  | delete  | If no file exists, the transfer is aborted. If file exists the file is deleted and recreated (regardless of if it is empty or not).  |
 | old  | erase  | If no file exists, the transfer is aborted. If file exists the file is overwritten (regardless of if it is empty or not).  |
 | old  | verify  | If no file exists, the transfer is aborted. If file exists and it is not empty, the transfer is aborted. If file exists but it is empty, the file is overwritten.  |

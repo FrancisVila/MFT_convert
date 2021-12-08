@@ -51,7 +51,7 @@ This example uses the most basic type of authentication. However, the `cft-sftp.
 
 -   Password: TheUser1Password  
 
-    > **Note:**
+    > **Note**
     >
     > Tip  
     > The username and password are case sensitive.

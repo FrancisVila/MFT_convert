@@ -45,52 +45,52 @@ The following table describes Transfer CFT's Amazon S3-related parameters.
    </thead>
    <tbody>
       <tr>
-         <td>ssl.certificates.ca_cert_bundle         </td>
-         <td>string         </td>
-         <td><p>Path to the CA certificate bundle. This path can point to either a file containing the CA certificates (for example, <code>/etc/ssl/certs/ca-certificates.crt</code>) or to a directory containing the CA certificates  (for example, <code>/etc/ssl/certs/</code>), which are stored individually with their filenames in a hash format.</p>
+         <td >ssl.certificates.ca_cert_bundle         </td>
+         <td >string         </td>
+         <td ><p>Path to the CA certificate bundle. This path can point to either a file containing the CA certificates (for example, <code>/etc/ssl/certs/ca-certificates.crt</code>) or to a directory containing the CA certificates  (for example, <code>/etc/ssl/certs/</code>), which are stored individually with their filenames in a hash format.</p>
 <p>You can refer to the <a href="https://curl.haxx.se/docs/manpage.html#--cacert">cURL man page</a> for information on the <code>cacert </code>and <code>capath </code>options.</p>
 <blockquote>
-<p><strong>Note:</strong></p>
+<p><strong>Note</strong></p>
 <p>You can set this parameter on UNIX systems, however it is not applicable on Windows.</p>
 </blockquote>
 <p>If  the certificate bundle is not available on your system, you can download it from: <a href="https://curl.haxx.se/docs/caextract.html">curl.haxx.se/docs/caextract.html</a> (see <a href="https://curl.haxx.se/ca/cacert.pem">cacert.pem</a>).</p>         </td>
       </tr>
       <tr>
-         <td><p><strong>Credentials</strong></p>
+         <td colspan="3" ><p><strong>Credentials</strong></p>
 <p>Credential parameters identify who is making a request and whether access is allowed.</p>         </td>
       </tr>
       <tr>
-         <td>aws.credentials         </td>
-         <td>node         </td>
-         <td>List of <a href="#storageaccount">STORAGEACCOUNT</a> values where each STORAGEACCOUNT consists of an access key pair.         </td>
+         <td >aws.credentials         </td>
+         <td >node         </td>
+         <td >List of <a href="#storageaccount">STORAGEACCOUNT</a> values where each STORAGEACCOUNT consists of an access key pair.         </td>
       </tr>
       <tr>
-         <td>aws.credentials.&lt;storageaccount&gt;.access_key_id         </td>
-         <td>string         </td>
-         <td><p>Access key ID, a 20-character, alphanumeric sequence.</p>         </td>
+         <td >aws.credentials.&lt;storageaccount&gt;.access_key_id         </td>
+         <td >string         </td>
+         <td ><p>Access key ID, a 20-character, alphanumeric sequence.</p>         </td>
       </tr>
       <tr>
-         <td>aws.credentials.&lt;storageaccount&gt;.secret_access_key         </td>
-         <td>passwd         </td>
-         <td><p>Secret access key, a 40-character sequence.</p>         </td>
+         <td >aws.credentials.&lt;storageaccount&gt;.secret_access_key         </td>
+         <td >passwd         </td>
+         <td ><p>Secret access key, a 40-character sequence.</p>         </td>
       </tr>
       <tr>
-         <td><strong>Region</strong>         </td>
+         <td colspan="3" ><strong>Region</strong>         </td>
       </tr>
       <tr>
-         <td>aws.credentials.&lt;storageaccount&gt;.region         </td>
-         <td>string         </td>
-         <td><p>Region to use; this value overrides the parsing of the WORKINGDIR and the config/env settings.</p>
+         <td >aws.credentials.&lt;storageaccount&gt;.region         </td>
+         <td >string         </td>
+         <td ><p>Region to use; this value overrides the parsing of the WORKINGDIR and the config/env settings.</p>
 <p>When using the endpoint format for WORKINGDIR, you can use this parameter to set the  AWS Signature Version 4 region to something other than the default (us-east-1).</p>         </td>
       </tr>
       <tr>
-         <td><p><strong>Server-side encryption</strong></p>
+         <td colspan="3" ><p><strong>Server-side encryption</strong></p>
 <p>Server-side encryption type with Amazon S3.</p>         </td>
       </tr>
       <tr>
-         <td>aws.credentials.&lt;storageaccount&gt;.encryption_type         </td>
-         <td>string         </td>
-         <td><p>Type of server-side encryption to use:</p>
+         <td >aws.credentials.&lt;storageaccount&gt;.encryption_type         </td>
+         <td >string         </td>
+         <td ><p>Type of server-side encryption to use:</p>
 <ul>
 <li>None: No encryption on Amazon S3 objects</li>
 <li>sse-s3: Server-side encryption with AES 256</li>
@@ -99,18 +99,18 @@ The following table describes Transfer CFT's Amazon S3-related parameters.
 <p>See the <a href="#globally_encrypt">example</a> for details on encrypting  files.</p>         </td>
       </tr>
       <tr>
-         <td>aws.credentials.&lt;storageaccount&gt;.encryption_key_id         </td>
-         <td>string         </td>
-         <td><p>Key identifier  for SSE-KMS encryption use; you must provide the full ID of the encryption key for the server.</p>         </td>
+         <td >aws.credentials.&lt;storageaccount&gt;.encryption_key_id         </td>
+         <td >string         </td>
+         <td ><p>Key identifier  for SSE-KMS encryption use; you must provide the full ID of the encryption key for the server.</p>         </td>
       </tr>
       <tr>
-         <td><p><strong>Access Control List</strong></p>
+         <td colspan="3" ><p><strong>Access Control List</strong></p>
 <p>The ACL policy to apply to files when uploading a file to AWS. Please refer to the <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl">AWS documentation</a> for details.</p>         </td>
       </tr>
       <tr>
-         <td>aws.credentials.&lt;storageaccount&gt;.acl         </td>
-         <td>string         </td>
-         <td><p>Type of ACL policy to apply to files when uploading a file to AWS:</p>
+         <td >aws.credentials.&lt;storageaccount&gt;.acl         </td>
+         <td >string         </td>
+         <td ><p>Type of ACL policy to apply to files when uploading a file to AWS:</p>
 <ul>
 <li>private</li>
 <li>public-read</li>
@@ -122,33 +122,33 @@ The following table describes Transfer CFT's Amazon S3-related parameters.
 </ul>         </td>
       </tr>
       <tr>
-         <td><p><strong>Proxy parameters</strong></p>
+         <td colspan="3" ><p><strong>Proxy parameters</strong></p>
 <p>Connect to AWS S3 through an HTTP proxy for file uploads/downloads.</p>         </td>
       </tr>
       <tr>
-         <td>aws.credentials.&lt;storageaccount&gt;.proxy_scheme         </td>
-         <td>string         </td>
-         <td>Proxy scheme to use (HTTP or HTTPS).         </td>
+         <td >aws.credentials.&lt;storageaccount&gt;.proxy_scheme         </td>
+         <td >string         </td>
+         <td >Proxy scheme to use (HTTP or HTTPS).         </td>
       </tr>
       <tr>
-         <td>aws.credentials.&lt;storageaccount&gt;.proxy_host         </td>
-         <td>string         </td>
-         <td>Proxy IP address or FQDN.         </td>
+         <td >aws.credentials.&lt;storageaccount&gt;.proxy_host         </td>
+         <td >string         </td>
+         <td >Proxy IP address or FQDN.         </td>
       </tr>
       <tr>
-         <td>aws.credentials.&lt;storageaccount&gt;.proxy_port         </td>
-         <td>string         </td>
-         <td>Proxy port.         </td>
+         <td >aws.credentials.&lt;storageaccount&gt;.proxy_port         </td>
+         <td >string         </td>
+         <td >Proxy port.         </td>
       </tr>
       <tr>
-         <td>aws.credentials.&lt;storageaccount&gt;.proxy_username         </td>
-         <td>string         </td>
-         <td>Proxy user name.         </td>
+         <td >aws.credentials.&lt;storageaccount&gt;.proxy_username         </td>
+         <td >string         </td>
+         <td >Proxy user name.         </td>
       </tr>
       <tr>
-         <td>aws.credentials.&lt;storageaccount&gt;.proxy_password         </td>
-         <td>password         </td>
-         <td>Proxy password.         </td>
+         <td >aws.credentials.&lt;storageaccount&gt;.proxy_password         </td>
+         <td >password         </td>
+         <td >Proxy password.         </td>
       </tr>
    </tbody>
 </table>
@@ -173,7 +173,7 @@ You must include the following parameters in your [CFTSEND/CFTRECV](../../c_intr
 | Parameter<span id="storageaccount"></span>  | Type  | Description  |
 | --- | --- | --- |
 | fname  | string (key)  | The fname field corresponds to the S3 services key.  |
-| workingdir  | string  |  There are two supported formats. For either, the workingdir field must start with <code>s3://</code> and be followed by the designated items in the order listed:<br/> • <code>s3://bucket.region</code><br /> <li>the bucket name<br/> • a period (.)<br/> • the region</li> <br/> • <code>s3://http[s]://endpoint[:port]/bucket</code><br /> <li>http:// or https:// for secure communication<br/> • the endpoint, which can be an IP address or the server's hostname<br/> • a colon (:) and port (if not using the default of 80 for HTTP, 443 for HTTPS)<br/> • a slash (/)<br/> • the bucket name</li> </li>  |
+| workingdir  | string  |  There are two supported formats. For either, the workingdir field must start with <code>s3://</code> and be followed by the designated items in the order listed:<br/> • <code>s3://bucket.region</code><br /> <li>the bucket name<br/> • a period (.)<br/> • the region</li> <br/> • <code>s3://http[s]://endpoint[:port]/bucket</code><br /> <li>http:// or https:// for secure communication<br/> • the endpoint, which can be an IP address or the server's hostname<br/> • a colon (:) and port (if not using the default of 80 for HTTP, 443 for HTTPS)<br/> • a slash  (/)<br/> • the bucket name</li> </li>  |
 | storageaccount  | string  | Points to the access key identifier(s) and the access key secret(s) stored in UCONF. See also <a href="../../c_intro_userinterfaces/command_summary/parameter_intro/storageaccount">storageaccount</a>.  |
 
 

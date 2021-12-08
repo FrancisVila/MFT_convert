@@ -18,8 +18,7 @@ ipv6.disable_listen
 **No** indicates that an address or name used by  {{< TransferCFT/componentshortname >}} to listen for incoming connections may be either an IPV4 or an IPV6 address.
 When using a name, this parameter can refer to a list of addresses, of any type.
 
-> **Note:**
-> It is recommended that you do not set ipv6.disable_listen to No, and ipv6.disable_connect to Yes.  
+> **Note**   It is recommended that you do not set ipv6.disable_listen to No, and ipv6.disable_connect to Yes.  
 
 ```
 

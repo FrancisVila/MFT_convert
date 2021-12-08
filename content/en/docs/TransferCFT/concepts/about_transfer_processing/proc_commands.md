@@ -9,8 +9,7 @@
 -   `Ackexec`: for acknowledge processing
 -   `Exece`: for transfer errors
 
-> **Note:**
->
+> **Note**  
 > The exceptions to these rules are described in the following sections.
 
 ## Methods for executing processing scripts
@@ -99,8 +98,7 @@ If a command is incorrect and cannot be executed,  the transfer remains in the p
 -   The system does not support executing this type of file
 -   A loop exists in symbolic links encountered during resolution of the path or file argument
 
-> **Note:**
->
+> **Note**  
 > Tip  
 > Refer to man execve for an exhaustive list, since after a fork in the processes Transfer CFT does not retrieve the EXEC failure.
 
@@ -112,8 +110,7 @@ You can use the Premindate/Premintime, Postmindate/Postmintime, and Ackmindate/A
 
 In some cases you may want to limit the number of scripts launched in parallel by {{< TransferCFT/transfercftname  >}} to reduce processing bottlenecks. To do so, set the UCONF `cft.server.max_processing_scripts` parameter to a positive integer to enable and control the number of executed processes.
 
-> **Note:**
->
+> **Note**  
 > Caution  
 > When using this parameter, every end-of-transfer procedure must notify Transfer CFT once the processing is complete. This can be done either via an END or KEEP command (in the case of an error). Failure to signal that processing is complete means that new procedures cannot start once the cft.server.max\_processing\_scripts value is reached.
 
@@ -121,8 +118,7 @@ In some cases you may want to limit the number of scripts launched in parallel b
 uconfset id=`cft.server.max_processing_scripts`, value=64
 ```
 
-> **Note:**
->
+> **Note**  
 > This parameter does not apply to the execution of transfer error scripts.
 
 ## Commands in scripts
@@ -264,24 +260,95 @@ Group of files: execution policy for acknowledgement phase.
 
 ### END
 
-
-| Command  | Parameter  | Value  | Description  |
-| --- | --- | --- | --- |
-| END  | DIAGC  | string  | Specify a comment.  |
-| FNAME  | string  | Modify the FNAME.  |
-| NFNAME  | string  | Modify the NFNAME.  |
-| SIGFNAME  | string  | Modify the SIGFNAME.  |
-| RAPPL  | string  | Modify the RAPPL.  |
-| SAPPL  | string  | Modify the SAPPL.  |
-| RUSER  | string  | Modify the RUSER.  |
-| SUSER  | string  | Modify the SUSER.  |
-| RPASSWD  | string  | Modify the RPASSWD.  |
-| SPASSWD  | string  | Modify the SPASSWD.  |
-| ISTATE  | NO/YES  |  Indicates:<br/> • YES: The END command is only a checkpoint.<br/> • NO (default): This is the final end command indicating that the processing is over. Once the END completes, the transfer enters the next phase.</li>  |
-| PHASE  | char  | The transfer phase at which the command is applied.  |
-| PHASE STEP  | char  | The phase step at which the command is applied.  |
-| APPSTATE  | string  | Specify an application state for the processing script that will help the script to restart at the right step if the script is relaunched.  |
-
+<table>
+   <thead>
+      <tr>
+<th >Command         </th>
+<th >Parameter         </th>
+<th >Value         </th>
+<th >Description         </th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td rowspan="14" >END           </td>
+         <td >DIAGC         </td>
+         <td >string         </td>
+         <td >Specify a comment.         </td>
+      </tr>
+      <tr>
+         <td >FNAME         </td>
+         <td >string         </td>
+         <td >Modify the FNAME.         </td>
+      </tr>
+      <tr>
+         <td >NFNAME         </td>
+         <td >string         </td>
+         <td >Modify the NFNAME.         </td>
+      </tr>
+      <tr>
+         <td >SIGFNAME         </td>
+         <td >string         </td>
+         <td >Modify the SIGFNAME.         </td>
+      </tr>
+      <tr>
+         <td >RAPPL         </td>
+         <td >string         </td>
+         <td >Modify the RAPPL.         </td>
+      </tr>
+      <tr>
+         <td >SAPPL         </td>
+         <td >string         </td>
+         <td >Modify the SAPPL.         </td>
+      </tr>
+      <tr>
+         <td >RUSER         </td>
+         <td >string         </td>
+         <td >Modify the RUSER.         </td>
+      </tr>
+      <tr>
+         <td >SUSER         </td>
+         <td >string         </td>
+         <td >Modify the SUSER.         </td>
+      </tr>
+      <tr>
+         <td >RPASSWD         </td>
+         <td >string         </td>
+         <td >Modify the RPASSWD.         </td>
+      </tr>
+      <tr>
+         <td >SPASSWD         </td>
+         <td >string         </td>
+         <td >Modify the SPASSWD.         </td>
+      </tr>
+      <tr>
+         <td >ISTATE         </td>
+         <td >NO/YES         </td>
+         <td ><p>Indicates:</p>
+<ul>
+<li>YES: The END command is only a checkpoint.</li>
+<li>NO (default): This is the final end command indicating that the processing is over. Once the END completes, the transfer enters  the next phase.</li>
+</ul>         </td>
+      </tr>
+      <tr>
+         <td >PHASE         </td>
+         <td >char         </td>
+         <td >The transfer phase at which the command is applied.         </td>
+      </tr>
+      <tr>
+         <td >PHASE STEP                 </td>
+         <td >char         </td>
+         <td >The phase step at which the command is applied.         </td>
+      </tr>
+      <tr>
+         <td >APPSTATE         </td>
+         <td >string         </td>
+         <td >Specify an application state for the processing
+script that will help the script to restart at the right step if the
+script is relaunched.         </td>
+      </tr>
+   </tbody>
+</table>
 
 ### KEEP
 

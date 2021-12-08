@@ -127,7 +127,7 @@ The user ID you use must have read access to the SAF facility class resources GI
 
     Submit the job.
 
-    > **Note:**
+    > **Note**
     >
     > The Transfer CFT dataset files, the instance customization, and build steps are described in the COMMON INSTALLATION chapter.
 

@@ -39,8 +39,7 @@ Action on the file after a send transfer:
 **\[FACTION = {<span style="text-decoration: underline;">VERIFY</span>
 | DELETE | ERASE | RENAME | RETRYRENAME }\]**
 
-> **Note:**
->
+> **Note**  
 > The RENAME option is only available on Unix platforms.
 
 Action on a file before a receive transfer except when using RENAME or RETRYRENAME, which are post transfer actions.
@@ -63,8 +62,7 @@ Requirements when using RENAME or RETRYRENAME:
 
 The following table shows the combined effect of the FDISP and FACTION parameters when used in a RECV command.
 
-> **Note:**
->
+> **Note**  
 > There no impact on FDISP when used in combination with RENAME or RETRYRENAME.
 
 
@@ -73,7 +71,7 @@ The following table shows the combined effect of the FDISP and FACTION parameter
 | both  | delete  | If no file exists, the file is created. If file exists it is deleted and recreated (regardless of if it is empty or not).  |
 | both  | erase  | If no file exists, the file is created. If file exists it is overwritten (no matter if it is empty or not).  |
 | both  | verify  | If no file exists, the file is created. If file exists and it is not empty, the transfer is aborted. If file exists but it is empty, the file is overwritten.  |
-| new  | verify  | If no file exists, the file is created. If file exists the transfer is aborted (regardless of if it is empty or not).  |
+| new  | verify  | If no file exists, the file is created. If file exists the transfer is aborted (regardless of  if it is empty or not).  |
 | old  | delete  | If no file exists, the transfer is aborted. If file exists the file is deleted and recreated (regardless of if it is empty or not).  |
 | old  | erase  | If no file exists, the transfer is aborted. If file exists the file is overwritten (regardless of if it is empty or not).  |
 | old  | verify  | If no file exists, the transfer is aborted. If file exists and it is not empty, the transfer is aborted. If file exists but it is empty, the file is overwritten.  |

@@ -28,8 +28,7 @@ cftpart id=store1, idf=dailysales
 send part=store1
 ```
 
-> **Note:**
->
+> **Note**  
 > When using Central Governance, be sure to use a SEND command syntax that includes an IDF corresponding to a flow created in Central Governance.
 
 ### Override the  model file default values
@@ -40,8 +39,7 @@ You can create your own model files to use with an existing partner. When specif
 send part=store1, idf=newmodel
 ```
 
-> **Note:**
->
+> **Note**  
 > If you enter the name of a model file identifier that does not exist, the partner's default model file is used. If no IDF is defined for the partner then BIN, the global model file default, is used.
 
 ### Override the model file values
@@ -82,8 +80,7 @@ Use the appropriate indirection character (@ or #) to send all files that are l
 send part=store1, idf=newmodel, fname=@pub/sourcefiles/list
 ```
 
-> **Note:**
->
+> **Note**  
 > The indirection character means that you are reading the file as if it contains file. Be careful that the file you are using contains a list of files.
 
 For more information, see <a href="send_group_of_files_cl#Sending_files_designated_by_an_indirection_file" class="MCXref xref">Use an indirection file</a>.
@@ -153,8 +150,7 @@ send open mode.
 send part=store1, idf=newmodel, nfname=remotefile
 ```
 
-> **Note:**
->
+> **Note**  
 > If you precede the NFNAME with an asterisk \*, the receiver can choose
 > to keep the current transmitted name (in open mode) or rename the file.
 
@@ -170,7 +166,7 @@ You can use the send command with STATE parameters so that the send occurs once 
 | D = disp  |  Transfers are carried out immediately. (default)  |
 | --- | --- |
 |  H = hold  |  A practical application for this method is to make files available for a partner to download when the partner is ready. This can be started by the START command or a RECV command.  |
-|  K = keep  |  You can use this status to store several transfers, for example, until all are ready to go. A manual START command would trigger the transfers.  |
+|  K = keep  |  You can use this status to store several transfers, for example,  until all are ready to go. A manual START command would trigger the transfers.  |
 
 
 ```
@@ -223,8 +219,7 @@ send part=store1, idf=endofdayresults, fname=@myfolder/\*, wfname=results.zip
 See also [WFNAME](../../c_intro_userinterfaces/command_summary/parameter_intro/wfname).
         &lt;/p>
 
-> **Note:**
->
+> **Note**  
 > Not managed by Central Unified Flow Management.
 
 <span id="Execute"></span>
@@ -254,8 +249,7 @@ error procedures](../about_transfer_processing/transfer_related_procedures) for 
 send part=store1, idf=model, exece=exec/errorexec.cmd
 ```
 
-> **Note:**
->
+> **Note**  
 > You can use the \_NONE\_ keyword in send and receive commands to disable the EXECSF, EXECRF, EXECSE, EXECRE and EXECSFA procedures that are defined in the general Transfer CFT environment parameter settings (CFTPARM).
 
 <span id="Use4"></span>

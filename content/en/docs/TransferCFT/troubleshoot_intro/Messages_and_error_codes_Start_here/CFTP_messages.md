@@ -264,7 +264,7 @@ Remove the unsupported protocols if you no longer want this message to display.
 ```
 
 
-|  V23 format<br/>V24 format Warning  |  <span id="CFTP24W"></span>CFTP25W CFTCOM &amp;id uses TYPE 'MBX' Disabled<br/>CFTP25W CFTCOM &amp;id uses TYPE 'MBX' Disabled  |
+|  V23 format<br/>V24 format Warning  |  <span id="CFTP24W"></span>CFTP25W CFTCOM &amp;id uses TYPE 'MBX' Disabled<br/>CFTP25W CFTCOM &amp;id  uses TYPE 'MBX' Disabled  |
 | --- | --- |
 | Explanation  | The CFTCOM mailbox is no longer supported on z/OS, Windows platforms.  |
 | Action  | Remove the unsupported TYPE.  |

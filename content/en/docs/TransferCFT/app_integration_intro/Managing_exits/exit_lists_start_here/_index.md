@@ -44,8 +44,7 @@ RESERV = 16384,
 PROG = FileExe
 ```
 
-> **Note:**
->
+> **Note**  
 > We recommend that you use the value 16384 for the RESERV
 > and not modify this parameter value.
 

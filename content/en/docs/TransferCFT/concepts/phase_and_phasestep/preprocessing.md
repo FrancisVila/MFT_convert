@@ -6,8 +6,7 @@
 
 To notify the end of the processing to Transfer CFT, the preprocessing script must perform an END command with istate=no.
 
-> **Note:**
->
+> **Note**  
 > Caution  
 > The transfer request remains in phase=A and phasestep=C until Transfer CFT receives the END command related to this transfer request.
 
@@ -40,6 +39,5 @@ The following preprocessing actions occur according to the status of the prestat
 -   Preprocessing then send on receive
     -   IMPL=YES
 
-> **Note:**
->
+> **Note**  
 > See Processing commands: general usage for a description of the processing command parameters and values.

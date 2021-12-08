@@ -29,7 +29,7 @@ and grouped into the following categories:
 | --- | --- |
 |  cft.uconf.default_fname  |  $(cft.install_dir)/distrib/conf/cftuconf-common.dat  |
 |  cft.uconf.instance_fname  |  $(cft.runtime_dir)/data/cftuconf.dat  |
-| cft.uconf.runtime_fname  | $(cft.runtime_dir)/data/cftuconf-run.dat  |
+| cft.uconf.runtime_fname    | $(cft.runtime_dir)/data/cftuconf-run.dat    |
 
 
 <span id="Instance"></span>
@@ -89,8 +89,8 @@ The following table lists the UCONF identifiers, default values, and former Wind
 
 | ID  | Default  | Description  |
 | --- | --- | --- |
-|  cft.working_dir  |  $(cft.runtime_dir)  |  Sets the {{< TransferCFT/componentshortname  >}} work-environment  |
-|  cft.idparm  |  IDPARM0  |  Sets the IDPARM to use in Copilot (GUI) and {{< TransferCFT/componentshortname  >}} (optional)  |
+|  cft.working_dir  |  $(cft.runtime_dir)  |  Sets the  {{< TransferCFT/componentshortname  >}} work-environment  |
+|  cft.idparm  |  IDPARM0  |  Sets the IDPARM to use in Copilot (GUI) and  {{< TransferCFT/componentshortname  >}} (optional)  |
 
 
 <span id="Common"></span>
@@ -171,7 +171,7 @@ Use the following parameters to define  {{< TransferCFT/componentshortname  >}} 
 | copilot.startup.catalog.filter  | Errors  | Filter to use for the catalog display on start up.  |
 | copilot.startup.log  | Yes  | Display/hide log at start up.  |
 | copilot.startup.log.filter  | None  | Filter to use for the log display on start up.  |
-| cft.cftlog.switch_on_stop  | No  |  Dictates if the switch log occurs at {{< TransferCFT/componentshortname  >}} server shutdown  |
+| cft.cftlog.switch_on_stop  | No  |     Dictates if the switch log occurs at  {{< TransferCFT/componentshortname  >}} server shutdown  |
 
 
 ## Automatically expand the catalog
@@ -179,7 +179,7 @@ Use the following parameters to define  {{< TransferCFT/componentshortname  >}} 
 
 | Parameter  | Default  | Description  |
 | --- | --- | --- |
-| cft.cftcat.auto_expand_percent  | 0  |  This value indicates the factor increase, as a percentage, that the catalog will automatically expand.<br/>The value 0 disables the automatic expansion feature. <blockquote> **Note:**<br/>Tip We recommend that you set this to a relatively high value, at least 50. When repeatedly expanded, the catalog's internal structure may become fragmented and, consequently, catalog access less efficient. </blockquote>  |
+| cft.cftcat.auto_expand_percent  | 0  |  This value indicates the factor increase, as a percentage, that the catalog will automatically expand.<br/>The value 0 disables the automatic expansion feature. <blockquote> **Note**<br/>Tip We recommend that you set this to a relatively high value, at least 50. When repeatedly expanded, the catalog's internal structure may become fragmented and, consequently, catalog access less efficient. </blockquote>  |
 | cft.cftcat.auto_expand_max_size  | 1M  |  The maximum number of records for the automatic catalog expansion option.  |
 
 
@@ -218,8 +218,8 @@ PURGE when starting  {{< TransferCFT/componentshortname  >}} is now configurable
 
 | Parameter  | Default  | Description  |
 | --- | --- | --- |
-| cft.purge.enable_on_start  | Yes  | Condition if the purge must be run on {{< TransferCFT/componentshortname  >}} startup.  |
-| cft.purge.background_on_start  | Yes  | Condition if the purge must be run on {{< TransferCFT/componentshortname  >}} startup.  |
+| cft.purge.enable_on_start  | Yes  | Condition if the purge must be run on  {{< TransferCFT/componentshortname  >}} startup.  |
+| cft.purge.background_on_start  | Yes  | Condition if the purge must be run on  {{< TransferCFT/componentshortname  >}} startup.  |
 | cft.purge.quantity  | 10  | Number of transfers to delete at once step (only for background).  |
 | cft.purge.periodicity  | 0  | Amount of time between each automatic purge.  |
 
@@ -271,7 +271,7 @@ This parameter lets you use the SEND or RECV command without requiring an [IDF](
 
 | Parameter  | Default  | Description  |
 | --- | --- | --- |
-| cft.accnt.enable_extended_byte_fields  | No  |  For each completed transfer, {{< TransferCFT/componentshortname  >}} can record the number of characters in the file (FBYTE) and the number of characters sent over the line (NBYTE).<br/>Possible values are:<br/> • No: The FBYTE and NBYTE fields are filled.<br/> • Yes: The FBYTE_EXTENDED and NBYTE_EXTENDED fields are filled (length=15), and FBYTE and NBYTE are empty (either 0 or blank depending on the CFTACCNT LANG parameter setting).</li>  |
+| cft.accnt.enable_extended_byte_fields  | No  |  For each completed transfer,  {{< TransferCFT/componentshortname  >}} can record the number of characters in the file (FBYTE) and the number of characters sent over the line (NBYTE).<br/>Possible values are:<br/> • No: The FBYTE and NBYTE fields are filled.<br/> • Yes: The FBYTE_EXTENDED and NBYTE_EXTENDED fields are filled   (length=15), and FBYTE and NBYTE are empty (either 0 or blank depending on the CFTACCNT LANG parameter setting).</li>  |
 
 
 <span id="Compatib"></span>

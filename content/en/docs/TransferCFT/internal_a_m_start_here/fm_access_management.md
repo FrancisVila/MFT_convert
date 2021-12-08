@@ -13,8 +13,7 @@ If you have opted to use the {{< TransferCFT/flowmanager  >}} for {{< TransferCF
 3.  If the login is successful, {{< TransferCFT/flowmanager >}} returns the list of roles for the user.  
 4.  The user login is complete. Transfer CFT then stores these roles in the cache and applies them accordingly. The information about this user is stored in the cache and is only updated when a new login is performed.
 
-> **Note:**
->
+> **Note**  
 > All role and permission definitions are stored in CFTPARM.
 
 However, if you are an `am.superuser` user, {{< TransferCFT/transfercftname  >}} does not check your access  for resources, and permissions are granted unconditionally. Additionally, it is useful to note that if you define a service account  during {{< TransferCFT/componentlongname  >}} installation, this user is automatically added to the UCONF `am.superuser` parameter's list.

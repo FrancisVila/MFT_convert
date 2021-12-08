@@ -8,8 +8,7 @@
 
 {{< TransferCFT/componentshortname  >}} in multi-node architecture requires a shared file system for use of a multi-node architecture on several hosts (active/active). Additionally, the system must be configured prior to the multi-node installation and the shared disk ready when starting the Copilot server.
 
-> **Note:**
->
+> **Note**  
 > See Shared file system prerequisites for details.
 
 You can use a single key for  a multi-node installation, as either:
@@ -32,7 +31,7 @@ Create as many copies of the initialize.properties file as you have hosts in the
 | --- | --- |
 | Runtimedir  | The runtime directory must be in a shared directory.  |
 | Multinode_Enable  |  Enable the multi-node architecture.<br/>To use a multi-node architecture, you must define the multi-node option in the initialize.properties file.  |
-| Multinode_Number  | Enter the number of nodes.  |
+| Multinode_Number    | Enter the number of nodes.  |
 | LoadBalancer_Host  |  Specify the host address of the load balancer.<br/>When using an ACTIVE/ACTIVE or ACTIVE/PASSIVE deployment, you require a load balancer to connect to the Transfer CFT Copilot server.  |
 | LoadBalancer_Port  | Specify the load balancer port, which is redirected to the Central Governance dedicated port of the Transfer CFT UI Server. When using ACTIVE/ACTIVE or ACTIVE/PASSIVE deployment, you require a load balancer to connect to the Transfer CFT Copilot server.  |
 

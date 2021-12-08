@@ -58,17 +58,17 @@ CFTEXIT id=my_exitbot, type=bot, language=C, prog=$(CFTDIRRUNTIME)/bin/CFTEXIB
    </thead>
    <tbody>
       <tr>
-         <td><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/id">ID</a></p>
+         <td ><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/id">ID</a></p>
 <p>(Mandatory)</p>         </td>
-         <td><p>CFTPARM object identifier.</p>         </td>
+         <td ><p>CFTPARM object identifier.</p>         </td>
       </tr>
       <tr>
-         <td><p>EXITBOT </p>         </td>
-         <td><p>EXIT identifier. To activate a beginning-of-transfer EXIT, you
+         <td ><p>EXITBOT </p>         </td>
+         <td ><p>EXIT identifier. To activate a beginning-of-transfer EXIT, you
 must specify an identifier that points to a CFTEXIT object.</p>         </td>
       </tr>
       <tr>
-         <td>Please refer to the <a href="../../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftparm">CFTPARM</a> page for additional parameters and details.         </td>
+         <td colspan="2" >Please refer to the <a href="../../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftparm">CFTPARM</a> page for additional parameters and details.         </td>
       </tr>
    </tbody>
 </table>

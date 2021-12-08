@@ -133,8 +133,7 @@ Where:
 
 -   nnnnnnnn: Number of cards submitted
 
-> **Note:**
->
+> **Note**  
 > The SUBOPT parameter in the SGINSTAL macro (A12OPTS member) may affect the automation.
 
 ### Support for the SHUT RESTART=YES command

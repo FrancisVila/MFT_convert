@@ -74,8 +74,7 @@ CFTT58I Requester transfer ended     <IDTU=  <transfer C> PART=PARIS IDF=BIN
 CFTR12I END [for transfer C] Treated for USER <my user> <PART=PARIS IDF=BIN  >
 ```
 
-> **Note:**
->
+> **Note**  
 > SEND requests are not serialized with RECV request. Send and receive procedures can have two different values for the SERIAL parameter.
 
 **<span id="Example_3"></span>Example 3**

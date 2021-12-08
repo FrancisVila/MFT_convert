@@ -25,20 +25,37 @@ Security for Cop**i**lot GUI
 
 | Parameter  | Description  |
 | --- | --- |
-| copilot.http.onlyssl  | Enter Yes to restrict the access of the {{< TransferCFT/componentshortname  >}} UI with https.  |
+| copilot.http.onlyssl  | Enter Yes to   restrict the access of the  {{< TransferCFT/componentshortname  >}} UI with  https.  |
 
 
 View available drives
 
 To view available drives from the **Edit a file** icon in the graphical user interface, define the following:
 
-
-| Parameter  | Options  | Description  |
-| --- | --- | --- |
-| copilot.nt.rootdrives  | @REMOVABLE_DRIVES  | To view removable drives such as a USB key, CD, and so on.  |
-| @LOCAL_DRIVES  | To view hard drives.  |
-| @NET_DRIVES  | To view network drives.  |
-
+<table>
+   <thead>
+      <tr>
+<th >Parameter         </th>
+<th >Options         </th>
+<th >Description         </th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td rowspan="3" >copilot.nt.rootdrives         </td>
+         <td >@REMOVABLE_DRIVES         </td>
+         <td >To view removable drives such as a USB key, CD, and so on.         </td>
+      </tr>
+      <tr>
+         <td >@LOCAL_DRIVES         </td>
+         <td >To view hard drives.         </td>
+      </tr>
+      <tr>
+         <td >@NET_DRIVES         </td>
+         <td >To view network drives.         </td>
+      </tr>
+   </tbody>
+</table>
 
 Client keep-alive
 
@@ -67,8 +84,8 @@ Use this parameter to define the {{< TransferCFT/componentshortname  >}} Web Ser
 
 | Parameter  | Value  | Former value  |
 | --- | --- | --- |
-| copilot.webservices.wsicomplience  | (bool) No  | [WEBSERVICES] WsiComplience  |
-| copilot.webservices.upload_directory  | (dir) $(cft.runtime_dir)/conf/ws_upload  | NA  |
+| copilot.webservices.wsicomplience    | (bool) No  | [WEBSERVICES] WsiComplience  |
+| copilot.webservices.upload_directory    | (dir) $(cft.runtime_dir)/conf/ws_upload  | NA  |
 
 
 Configure Copilot with HTTPS
@@ -91,16 +108,44 @@ The certificate type is dictated by the file name extension (.p12, .pkcs12, .der
 -   `copilot.ssl.sslkeyfile=<not set>` and `copilot.ssl.sslcertpassword=<set>`, then  the format is PKCS12
 -   `copilot.ssl.sslkeyfile= <set>` and `copilot.ssl.sslcertpassword=<not set>`, then the format is PEM
 
-
-| Supported format  | Type  | Extension  |
-| --- | --- | --- |
-| Certificate  | PKCS#12  | p12, pfx, pkcs12  |
-| PEM  | pem  |
-| DER  | der  |
-| Private key  | PEM  | pem  |
-| DER  | der  |
-| PKCS#8  | key, pem  |
-
+<table>
+   <thead>
+      <tr>
+<th >Supported format         </th>
+<th >Type         </th>
+<th >Extension         </th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td rowspan="3" >Certificate         </td>
+         <td >PKCS#12         </td>
+         <td >p12, pfx, pkcs12         </td>
+      </tr>
+      <tr>
+         <td >PEM         </td>
+         <td >pem         </td>
+      </tr>
+      <tr>
+         <td >DER         </td>
+         <td >der         </td>
+      </tr>
+      <tr>
+         <td rowspan="3" >Private key         </td>
+         <td >PEM         </td>
+         <td >pem         </td>
+      </tr>
+      <tr>
+         <td >DER         </td>
+         <td >der         </td>
+      </tr>
+      <tr>
+         <td >PKCS#8         </td>
+         <td >key,
+pem         </td>
+      </tr>
+   </tbody>
+</table>
 
 How to define a PKCS#12 certificate
 

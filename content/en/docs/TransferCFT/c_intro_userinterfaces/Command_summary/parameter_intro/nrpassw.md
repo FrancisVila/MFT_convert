@@ -22,8 +22,7 @@ used in the transfer.
 
 This parameter value is case sensitive in CFTUTIL commands if you enclose the value in " " quotes.
 
-> **Note:**
->
+> **Note**  
 > If you begin a password with an indirection character (Unix @, Windows #) when using SFTP, it is  considered a reference to a file and not part of the password. Please see the SFTP pages for more information.
 
  

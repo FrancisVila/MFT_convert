@@ -9,8 +9,7 @@
 You can customize the switch procedure  depending on your production needs. The symbolic variable &FACCNT
 represents the statistical file.
 
-> **Note:**
->
+> **Note**  
 > At least one of the two files (either the statistical or alternate statistical file) must be empty prior to starting Transfer CFT.
 
 This example automatically executes the switch procedure at noon.

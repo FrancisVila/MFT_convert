@@ -226,7 +226,7 @@ Transfer CFT 3.3.2
 -   \[CORE\] Added charset encoding support for messages being sent to the Sentinel server using the UCONF sentinel.trkmsgencoding parameter. SP1 [Details](../admin_intro/uconf/uconf_directory)
 -   \[CORE\] When using the folder monitoring feature, improved the file name filtering by adding a new UCONF parameter folder\_monitoring.folders.&lt;logical\_name>.filter\_type. SP1
 -   \[CORE\] Added policy support for EXECE. [Details](../concepts/about_transfer_processing/processing_exec_policy)
--                       \[CORE\] Added a new policy to manage the behavior when sending a group of files using an indirection file. &lt;a href="../concepts/using\_the\_send\_command/send\_group\_of\_files\_cl">Details&lt;/a>
+-   \[CORE\] Added a new policy to manage the behavior when sending a group of files using an indirection file. [Details](../concepts/using_the_send_command/send_group_of_files_cl)
 -   \[CORE\] Use a shared disk as the data transfer medium.
 -   \[CG\] Certificate renewal. [Details](../governance_services_intro/cg_postregister)
 -   \[CG\] SP and patch deployment via . *Unix/Windows only*[Details](../governance_services_intro/cg_postregister)

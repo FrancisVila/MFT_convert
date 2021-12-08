@@ -20,8 +20,7 @@ The  JCL MNINIT is delivered with the Transfer CFT product. It describes  th
 
 Edit the MNINIT JCL located in the INSTALL Library as described in the following steps.
 
-> **Note:**
->
+> **Note**  
 > You only perform steps 4 and 8  if you are setting up a multi host multi-node configuration (not for a mono host, multi-node configuration).
 
 ```
@@ -65,8 +64,7 @@ PARM=uconfset
 ID=copilot.GENERAL.ServerHost,value=&COPVIPA'
 ```
 
-> **Note:**
->
+> **Note**  
 > JCL variables to customize as described in the table above:
 
 -   EXTPARM: Transfer CFT configuration file

@@ -17,8 +17,7 @@ Use this field to define the file access control. You can use the UserCtrl param
     {{< TransferCFT/componentshortname >}} checks the user access rights on the file to be transferred.
 -   NO: No check is performed.
 
-> **Note:**
->
+> **Note**  
 > Caution  
 > Windows only - You cannot use a UNC or mapped drive (as opposed to files on a local disk) when USERCTRL=YES. Note though that even when USERCTRL=NO,  you cannot access files on a local or remote disk under another account.
 

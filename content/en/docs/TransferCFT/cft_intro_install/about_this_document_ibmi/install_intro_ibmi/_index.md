@@ -9,8 +9,7 @@ You require the following before you begin the Transfer CFT installation:
 -   Download the ESD file from {{< TransferCFT/companyname >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a>.
 -   An FTP client that permits the transfer of files to the IBM i host.
 
-> **Note:**
->
+> **Note**  
 > ISO files were deprecated in version 3.0.1.
 
 -   To install the Transfer CFT IBM i product you need adequate space, as the file to upload is approximately 280 MB.

@@ -15,8 +15,7 @@ Transfer CFT in multi-host architecture requires:
 
 {{< TransferCFT/componentshortname  >}} in multi-node architecture requires a shared file system for use of a multi-node architecture on several hosts (active/active). Additionally, the system must be configured prior to the multi-node installation and the shared disk ready when starting the Copilot server.
 
-> **Note:**
->
+> **Note**  
 > See Shared file system prerequisites for details.
 
 You can use a single key for  a multi-node installation, as either:
@@ -38,7 +37,7 @@ Create as many copies of the initialize.properties file as you have hosts in the
 | CFT_Full_Hostname  |  Host Address of the local server: FQDN (Fully Qualified Domain Name) or IP Address.<br/>When you re installing a cluster, there are two ways to define this parameter:<br/> • If you do not set this in the silent file, the installation determines it (if the machine is correctly configured) <br/> • Set the FQDN for each machine in the cluster, that is, for each host installation</li>  |
 | --- | --- |
 | Runtimedir  | The runtime directory must be in a shared directory.  |
-| LoadBalancer_Host  |  Specify the host address of the load balancer, which is the cluster's public IP address in an active/passive deployment. <blockquote> **Note:**<br/>The load balancer is used to connect to the Transfer CFT Copilot server. </blockquote>  |
+| LoadBalancer_Host  |  Specify the host address of the load balancer, which is the cluster's public IP address in an active/passive deployment. <blockquote> **Note**<br/>The load balancer is used to connect to the Transfer CFT Copilot server. </blockquote>  |
 | LoadBalancer_Port  | Specify the load balancer port, which is redirected to the Central Governance dedicated port of the Transfer CFT UI Server.  |
 
 

@@ -8,8 +8,7 @@ parameters and their values. These rules apply equally for any additional
 parameter information, or information pertaining to the operating system
 or the transfer protocols.
 
-> **Note:**
->
+> **Note**  
 > Use the Command
 > index to help locate a command, and the Parameter
 > index for parameter details.
@@ -141,7 +140,7 @@ table.
 |  String containing between n and m characters  |  stringn..m  |  LUNAME = string3..8<br /> String containing between 3 and 8 characters  |
 |  String containing exactly n characters  |  stringn  |  KEY = string21<br /> 21-character string  |
 |  Constant-type value (preset)  |  VALUE  |  TYPE = PESIT  |
-|  Password type value: string containing between n and m characters  | string  |   |
+|  Password  type value: string containing between n and m characters  | string  |   |
 
 
 The string notation is used generically, in lists indicating
@@ -183,8 +182,7 @@ The following conventions apply when using double quotes (hereafter referred to 
 -   Enclosing in quotes " " keeps case sensitivity for applicable parameters as listed in the **Note** below.
 -   Enclosing in a single quote ' ' keeps spaces in the value
 
-> **Note:**
->
+> **Note**  
 > Parameters affected by the quote sensitivity include: FLOWNAME, RAPPL, RUSER, SAPPL, SOURCEAPPL, SUSER, TARGETAPPL, NRPASSW, NSPART, NSPASSW.
 
 Lastly, to use the quote character in a parameter string you have to repeat it, for example:
@@ -208,7 +206,7 @@ in the following table.
 |  Identifier: alphanumeric string of 1 to 32 alphanumeric characters and additional characters:<br/>@ # &amp; % ! : - _ + \ / | ? { } [ ] ; * &lt; &gt; ~ ^  |  identifier  |
 |  Mask: string containing wildcard characters (* and ?) :<br/>When referring to ReGEX expressions, other value are possible.  |  mask  |
 |  Time: string containing 2 to 8 digits  |  HHMMSSSS  |
-|  Transfer identifier assigned by {{< TransferCFT/componentshortname  >}}  |  transid  |
+|  Transfer identifier assigned by  {{< TransferCFT/componentshortname  >}}  |  transid  |
 
 
 <span id="OS_specificities"></span>
@@ -301,8 +299,8 @@ protocol variants, indicated as follows:
 
 | Protocol  | Description  |
 | --- | --- |
-|  PeSIT  |  PeSIT protocol (standard)  |
-|  PeSIT CFT/CFT  |  PeSIT protocol used between two {{< TransferCFT/componentshortname  >}}s  |
+|  PeSIT  |  PeSIT  protocol (standard)  |
+|  PeSIT  CFT/CFT  |  PeSIT protocol used between two  {{< TransferCFT/componentshortname  >}}s  |
 
 
 <span id="Command_syntax"></span>

@@ -20,8 +20,7 @@ to establish on a given network resource.
 -   Recommended value is the same as the MAXTRANS value
 -   Default = 384
 
-> **Note:**
->
+> **Note**  
 > On Unix systems, setting the MAXCNX value to higher than 1020  has no impact.
 
 [Return to Command index](../../)

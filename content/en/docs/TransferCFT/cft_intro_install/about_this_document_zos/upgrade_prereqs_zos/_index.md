@@ -8,8 +8,7 @@ This section describes how to upgrade or migrate to Transfer CFT {{< TransferCFT
 
 See the section <a href="../c_about_zos/r_prerequistes_zos" class="MCXref xref">System requirements</a> for details on system prerequisites.
 
-> **Note:**
->
+> **Note**  
 > You should not modify the CSD files (library XMLLIB: members CSDCFT and CSDCG) or the UCONF dictionary (library UPARM: member DEFAULT), as these items are updated in the instance (runtime) during the following procedures.
 
 ## Update procedure
@@ -38,6 +37,5 @@ This procedure involves a change in product version and the replacement of binar
 -   You require a new license key if you are migrating from a version 2.x {{< TransferCFT/componentshortname >}} to a version 3.x.
 -   For details on how to apply or update a license key, and the new license key location, see the section **Apply a license key**.
 
-> **Note:**
->
+> **Note**  
 > You require  as many keys as instances of Transfer CFT running at same time. For example, two Transfer CFT instances cannot run at the same time, on the same server, using the same license key.

@@ -55,8 +55,7 @@ The [UCONF parameters topic](uconf_directory) contains a complete listing of al
 -     EXPERIMENTAL: Unsupported feature.
 -   OBSOLETE: No longer used.
 
-> **Note:**
->
+> **Note**  
 > By default, all UCONF parameters are static and require a restart. Only parameters with the RECONFIG or IRECONFIG flags are dynamic; for these dynamic parameters only you can use the reconfig command and no restart is required.
 
 ### UCONF data

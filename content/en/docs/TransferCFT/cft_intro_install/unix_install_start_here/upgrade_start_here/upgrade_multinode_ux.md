@@ -12,8 +12,7 @@ As of {{< TransferCFT/componentlongname  >}} 3.4 there is no separate upgrade pa
 
 Before beginning the upgrade procedure, download the Transfer CFT installation kit  available at [support.axway.com](https://support.axway.com/).
 
-> **Note:**
->
+> **Note**  
 > Remember that Transfer CFT clusters must be fully stopped while performing an upgrade.
 
 ## Limitation

@@ -163,7 +163,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
  
 
 
-|  V23 format<br/>V24 format<br/>Information  |  <span id="CFTR17I"></span>CFTR17I &amp;cmd In progress for USER &amp;user &amp;message<br/>CFTR17I &amp;cmd &amp;message In progress for USER &amp;user  |
+|  V23 format<br/>V24 format<br/>Information  |  <span id="CFTR17I"></span>CFTR17I &amp;cmd In progress for USER &amp;user  &amp;message<br/>CFTR17I &amp;cmd &amp;message In progress for USER &amp;user  |
 | --- | --- |
 |  Explanation  |  This information message displays at the beginning of the processing for the &amp;cmd.<br/> • Cmd =DELETE/END<br/> • Message where PART=&amp;part IDF=&amp;idf [ IDT=&amp;idt IDTU=&amp;idtu IDA=&amp;ida STATE=&amp;state]</li>  |
 
@@ -193,7 +193,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 |  V23 format<br/>V24 format<br/>Error  |  <span id="CFTR20E"></span>CFTR20E &amp;message<br/>CFTR20E &amp;message  |
 |  Explanation  |  Error messages originating from the folder monitoring functionality.<br/>Usually triggered by error conditions encountered on file manipulation as renaming, deleting.  |
 | Warning  | CFTR20W &amp;message  |
-|  Explanation  |  Warning message related to the folder monitoring feature.<br/>Indicates that a system error concerning the event subsystem occurred (see <a href="../../../app_integration_intro/intro_folder_monitor/configure_folder_monitoring">USEFSEVENT</a>=YES).  |
+|  Explanation  |  Warning message related to the folder monitoring feature.<br/>Indicates that  a system error concerning the event subsystem occurred (see <a href="../../../app_integration_intro/intro_folder_monitor/configure_folder_monitoring">USEFSEVENT</a>=YES).  |
 |  V23 format<br/>V24 format<br/>Fatal  |  <span id="CFTR20F"></span>CFTR20F &amp;message<br/>CFTR20F &amp;message  |
 |  Explanation  |  Fatal messages originating from the folder monitoring functionality.<br/>Indicates that a severe error condition was encountered and is preventing this functionality from proceeding normally.  |
 
@@ -219,7 +219,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
  
 
 
-|  V23 format<br/>V24 format<br/>Information  |  CFTR23I On &amp;time UserId=&amp;userid, JobName=&amp;jobname ran the command &amp;command <br/>CFTR23I On &amp;time UserId=&amp;userid, JobName=&amp;jobname ran the command &amp;command  |
+|  V23 format<br/>V24 format<br/>Information  |  CFTR23I On &amp;time UserId=&amp;userid, JobName=&amp;jobname ran the command &amp;command  <br/>CFTR23I On &amp;time UserId=&amp;userid, JobName=&amp;jobname ran the command &amp;command  |
 | --- | --- |
 |  Explanation  |  This message traces who has cleared what and with which command.  |
 

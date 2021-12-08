@@ -768,8 +768,7 @@ CFTS40F CFTACCNT FORMAT=(V23|V24) not available for &fname
 Explanation
 An error occurred in the FORMAT=V23/V24 (V23 default) parameter of CFTFILE  TYPE=ACCNT. When using the V23 format, the saved description (for ACCOUNT  files) is the same as in previous versions. However when using the V24  format, the length for saving is 2048, and  the saved description takes into  account the new longer field lengths.
 
-> **Note:**
-> The FORMAT parameter for the  CFTACCNT command must be the same setting as for CFTFILE TYPE=ACCNT. If not,  a message displays in the LOG and Transfer CFT doesnot start.
+> **Note**   The FORMAT parameter for the  CFTACCNT command must be the same setting as for CFTFILE TYPE=ACCNT. If not,  a message displays in the LOG and Transfer CFT doesnot start.
 
 The message is  either:
    CFTS40F CFTACCNT FORMAT=V24 not available for CFT.ACCNT      

@@ -12,8 +12,7 @@ You can use Central Governance in your MFT architecture to easily create and de
 
 <img src="/Images/TransferCFT/data_exchange_env.png" class="maxWidth" alt="Multiple Transfer CFTs can send events from the data exchange environment towards Central Governance" />
 
-> **Note:**
->
+> **Note**  
 > Connectivity may include connection to other  or third-party products that are outside of  the MFT reference solution.
 
 ### Additional documentation
@@ -52,7 +51,7 @@ Begin by planning your MFT architecture and deployment strategy. After installi
 Transfer CFTs running under {{< TransferCFT/centralgovernancename  >}}  or {{< TransferCFT/flowmanager  >}} can manage or have support for the following features.
 
 
-| Feature  |  Manage using {{< TransferCFT/flowmanager  >}} or  | Supported but not configurable using Central Governance or {{< TransferCFT/flowmanager  >}}  |
+| Feature  |  Manage using  {{< TransferCFT/flowmanager  >}} or  | Supported but  not configurable using Central Governance  or {{< TransferCFT/flowmanager  >}}  |
 | --- | --- | --- |
 | Folder monitoring  | yes  | yes  |
 | Multi-node architecture  | no  | yes  |
@@ -64,14 +63,14 @@ Transfer CFTs running under {{< TransferCFT/centralgovernancename  >}}  or {{< T
 | UDT (UNIX/Windows only)  | yes  | yes  |
 | SOCKS  | no  | yes  |
 | Heartbeat  | embedded  | yes  |
-| Interoperability &lt;/th&gt;  |   |   |
+| Interoperability                 &lt;/th&gt;  |   |   |
 | Secure Relay  | no  | yes  |
 | TrustedFile (UNIX/Windows/and z/OS)  | no  |  yes  |
 | PassPort AM  | embedded  | no (*)  |
 | PassPort PS  | no  | yes  |
 | Sentinel  | embedded  | yes  |
 | Composer  | no  | no  |
-| Protocols &lt;/th&gt;  |   |   |
+| Protocols                 &lt;/th&gt;  |   |   |
 | PeSIT  | yes  | yes  |
 | ODETTE  | no  | yes  |
 | SFTP *(UNIX, Windows)*  | no  | yes  |

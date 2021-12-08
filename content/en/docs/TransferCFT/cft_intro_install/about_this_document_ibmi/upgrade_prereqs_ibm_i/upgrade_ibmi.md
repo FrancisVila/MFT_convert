@@ -4,12 +4,10 @@
     "weight": "230"
 }This page describes two upgrade procedures for Transfer CFT 3.7  IBM i. The automatic upgrade procedure requires fewer user inputs than the manual procedure, and is the procedure of choice. This upgrade procedure enables you to change the version of an installed Transfer CFT to a more recent version while conserving its current configuration. Additionally, you can use the [rollback](#) feature if a situation arises where you  need to return to a previous version.
 
-> **Note:**
->
+> **Note**  
 > The UPGRADE procedure delivered in the installation package performs the same steps as those described in the manual upgrade procedure. However, we strongly recommend using the automatic upgrade procedure instead of the manual upgrade.
 
-> **Note:**
->
+> **Note**  
 > Tip  
 > CFTPGM is the standard name for the program library, and CFTPROD is the standard name for the library where the configuration files are usually located.
 
@@ -64,8 +62,7 @@ Start the UPGRADE process  by uploading the Transfer CFT installation package in
     ADDLIBLE LIB(CFTTMP) POSITION(\*FIRST)
     ```
 
-> **Note:**
->
+> **Note**  
 > The  user performing the upgrade requires the same rights as for a regular installation or update (\*JOBCTL, \*SPLCTL, and \*ALLOBJ).
 
 ### Executing the UPGRADE command
@@ -120,8 +117,7 @@ The UPGRADE procedure supports multi-node configurations, where your configurat
 
 The procedure supports the upgrade of {{< TransferCFT/transfercftname  >}} installed on an IASP. The process remains the same, the UPGRADE procedure itself detects  if the {{< TransferCFT/transfercftname  >}} is an installation on ASP, and then keeps the {{< TransferCFT/transfercftname  >}} in the same ASP.
 
-> **Note:**
->
+> **Note**  
 > The UPGRADE procedure does not support the upgrade from a non-IASP CFT to an IASP Transfer CFT or vice versa. In the same spirit, an upgrade from one type of IASP to another is not supported.
 
 <span id="Manual"></span>
@@ -207,7 +203,7 @@ CRTLIB LIB(CFTUPGLIB)
 
     -   Import specific procedures to your production, for example APIs, EXITs, and execs from the CFTUPGLIB backup library.
 
-    > **Note:**
+    > **Note**
     >
     > You must recompile these after upgrading.
 
@@ -283,7 +279,7 @@ CRTLIB LIB(CFTUPGLIB)
     -   Import the communication media file using the CFTMI command:
         -   For each communication media file, enter:
         -   For each node, enter:
-    -                       Import specific procedures to your production, for example APIs, EXITs, and execs from the CFTUPGLIB backup library.                   &lt;blockquote>&lt;html>&lt;body>&lt;p>&lt;b>Note:&lt;/b>&lt;/p>&lt;/body>&lt;/html>You must recompile these after upgrading.&lt;/blockquote>&lt;/li>&lt;/ul>&lt;/li>
+    -                       Import specific procedures to your production, for example APIs, EXITs, and execs from the CFTUPGLIB backup library.                   &lt;blockquote>&lt;html>&lt;body>&lt;p>&lt;b>Note&lt;/b>&lt;/p>&lt;/body>&lt;/html>You must recompile these after upgrading.&lt;/blockquote>&lt;/li>&lt;/ul>&lt;/li>
 
 ### Check the new version
 

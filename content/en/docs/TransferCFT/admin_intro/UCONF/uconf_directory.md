@@ -28,8 +28,7 @@ Parameter list
 
 The following table is an exhaustive list of the unified configuration (UCONF) values.
 
-> **Note:**
->
+> **Note**  
 > Caution  
 > Do not modify the UCONF dictionary located in the home directory unless specifically directed to do so by Axway.
 
@@ -42,8 +41,7 @@ The following table is an exhaustive list of the unified configuration (UCONF) v
 -     EXPERIMENTAL: Unsupported feature.
 -   OBSOLETE: No longer used.
 
-> **Note:**
->
+> **Note**  
 > By default, all UCONF parameters are static and require a restart. Only parameters with the RECONFIG or IRECONFIG flags are dynamic; for these dynamic parameters only you can use the reconfig command and no restart is required.
 
 

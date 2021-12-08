@@ -54,29 +54,29 @@ refer to [Transfer control commands](../../../../concepts/transfer_command_overv
    </thead>
    <tbody>
       <tr>
-         <td><p>Use this command to query the information associated with
+         <td colspan="2" ><p>Use this command to query the information associated with
 the selected transfers, recorded in the Transfer CFT catalog.</p>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/content">CONTENT</a> </p>         </td>
-         <td><p>Used to obtain part or all of the information of a catalog
+         <td ><p><a href="../../../command_summary/parameter_intro/content">CONTENT</a> </p>         </td>
+         <td ><p>Used to obtain part or all of the information of a catalog
 entry.</p>         </td>
       </tr>
       <tr>
-         <td><a href="../../../command_summary/parameter_intro/datetimemax">DATETIMEMAX</a>         </td>
-         <td>Use to display catalog transfers that happened  on or before this end date and time according to the transfer record creation (DATEK, TIMEK).         </td>
+         <td ><a href="../../../command_summary/parameter_intro/datetimemax">DATETIMEMAX</a>         </td>
+         <td >Use to display catalog transfers that happened  on or before this end date and time according to the transfer record creation (DATEK, TIMEK).         </td>
       </tr>
       <tr>
-         <td><a href="../../../command_summary/parameter_intro/datetimemin">DATETIMEMIN</a>         </td>
-         <td>Use to display catalog transfers that happened on or after this start date and time according to the transfer record creation (DATEK, TIMEK).         </td>
+         <td ><a href="../../../command_summary/parameter_intro/datetimemin">DATETIMEMIN</a>         </td>
+         <td >Use to display catalog transfers that happened on or after this start date and time according to the transfer record creation (DATEK, TIMEK).         </td>
       </tr>
       <tr>
-         <td><a href="../../../command_summary/parameter_intro/diagi">DIAGI</a>         </td>
-         <td>Define the diagi catalog transfer field display.         </td>
+         <td ><a href="../../../command_summary/parameter_intro/diagi">DIAGI</a>         </td>
+         <td >Define the diagi catalog transfer field display.         </td>
       </tr>
       <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/direct">DIRECT</a> </p>         </td>
-         <td><p>Transfer direction.</p>
+         <td ><p><a href="../../../command_summary/parameter_intro/direct">DIRECT</a> </p>         </td>
+         <td ><p>Transfer direction.</p>
 <p>The possible values are:</p>
 <ul>
 <li>BOTH <em>or</em> *</li>
@@ -85,46 +85,46 @@ entry.</p>         </td>
 </ul>         </td>
       </tr>
       <tr>
-         <td><p>FILE = see the comment</p>         </td>
-         <td><p>Complete name or logical name of the catalog file.</p>
+         <td ><p>FILE = see the comment</p>         </td>
+         <td ><p>Complete name or logical name of the catalog file.</p>
 <p>The default value for this parameter is fixed. </p>
 <p>To designate the current catalog of the monitor, this parameter
 should be defined with the filename set in the FNAME parameter of the
 CFTCAT command.</p>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/ida#ida">IDA</a> </p>         </td>
-         <td><p>Local identifier of the transfer assigned by the user or
+         <td ><p><a href="../../../command_summary/parameter_intro/ida#ida">IDA</a> </p>         </td>
+         <td ><p>Local identifier of the transfer assigned by the user or
 the user application.</p>
 <p>Several catalog entries may be associated with a given
 IDA.</p>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/idf#idf_CFTCAT">IDF</a> </p>         </td>
-         <td><p>Model file identifier.</p>
+         <td ><p><a href="../../../command_summary/parameter_intro/idf#idf_CFTCAT">IDF</a> </p>         </td>
+         <td ><p>Model file identifier.</p>
 <p>Several catalog entries may be associated with a given
 IDF.</p>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/idu#idt">IDT</a> </p>         </td>
-         <td><p>Transfer identifier.</p>
+         <td ><p><a href="../../../command_summary/parameter_intro/idu#idt">IDT</a> </p>         </td>
+         <td ><p>Transfer identifier.</p>
 <p>Identifies a transfer for a given partner and transfer
 direction.</p>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/idtu">IDTU</a> </p>         </td>
-         <td><p>Unique local transfer reference identifier.</p>         </td>
+         <td ><p><a href="../../../command_summary/parameter_intro/idtu">IDTU</a> </p>         </td>
+         <td ><p>Unique local transfer reference identifier.</p>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/npart">NPART</a> </p>         </td>
-         <td><p>Network identifier of the partner(s) for the selected transfers.</p>
+         <td ><p><a href="../../../command_summary/parameter_intro/npart">NPART</a> </p>         </td>
+         <td ><p>Network identifier of the partner(s) for the selected transfers.</p>
 <p>The information displayed for LISTCAT CONTENT = BRIEF is
 different, according to whether the NPART parameter is defined or not
 (see the paragraphs below).</p>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/part">PART</a> </p>         </td>
-         <td><p>Partner identifier for the selected transfers.</p>
+         <td ><p><a href="../../../command_summary/parameter_intro/part">PART</a> </p>         </td>
+         <td ><p>Partner identifier for the selected transfers.</p>
 <p>The value of this parameter may be:</p>
 <ul>
 <li>An identifier</li>
@@ -135,18 +135,18 @@ different, according to whether the NPART parameter is defined or not
 ignored.</p>         </td>
       </tr>
       <tr>
-         <td><a href="../../../command_summary/parameter_intro/sortby">SORTBY</a>         </td>
-         <td>Sorts the LISTCAT command information in an alphabetical/alphanumberic order.         </td>
+         <td ><a href="../../../command_summary/parameter_intro/sortby">SORTBY</a>         </td>
+         <td >Sorts the LISTCAT command information in an alphabetical/alphanumberic order.         </td>
       </tr>
       <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/state">STATE</a></p>         </td>
-         <td><p>Possible states of a catalog entry.</p>
+         <td ><p><a href="../../../command_summary/parameter_intro/state">STATE</a></p>         </td>
+         <td ><p>Possible states of a catalog entry.</p>
 <p>The catalog entries in the state indicated by this parameter
 are selected. Any combination of the various states (D,C,H,K,T,X) is authorized.</p>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/type">TYPE</a> </p>         </td>
-         <td><p>Type of catalog entry.</p>
+         <td ><p><a href="../../../command_summary/parameter_intro/type">TYPE</a> </p>         </td>
+         <td ><p>Type of catalog entry.</p>
 <p>If TYPE = * <em>or</em> ALL, no selection is made: all transfers present
 in the catalog (files, messages, reply messages) are displayed if they
 fulfill the selection criteria which may be defined by other parameters.</p>         </td>
@@ -193,7 +193,7 @@ LISTCAT CONTENT = COMMUT
 | Heading  | Meaning  |
 | --- | --- |
 |  1  |  Intermediate transfer (IPART)  |
-|  2  |  State transfer<br /> The DTSA characters represent:<br/> • Direction = S/R (Send/Receive)<br/> • Type = F/M/R (File/Message/Reply)<br/> • State = D/C/H/K/T/X (Disp/Current/Hold/Keep/Terminated/eXecuted)<br/> • Ack = A (Acknowledge)</li> <blockquote> **Note:**<br/>If the UCONF compatibility option is set to the default value (no), the format is DTSAPP to include Phase and PhaseStep. For more information, see Backward compatibility. </blockquote>  |
+|  2  |  State transfer<br /> The DTSA characters represent:<br/> • Direction = S/R (Send/Receive)<br/> • Type = F/M/R (File/Message/Reply)<br/> • State = D/C/H/K/T/X (Disp/Current/Hold/Keep/Terminated/eXecuted)<br/> • Ack = A (Acknowledge)</li> <blockquote> **Note**<br/>If  the UCONF compatibility option is set to the default value (no), the format is DTSAPP to include Phase and PhaseStep. For more information, see Backward compatibility. </blockquote>  |
 |  3  |  File network identifier (NFNAME)  |
 |  4  |  Transfer protocol identifier (NIDT)  |
 |  5  |  Local transfer identifier (IDTU)  |
@@ -208,7 +208,7 @@ LISTCAT CONTENT = EXTEND 
 | Heading  | Meaning  |
 | --- | --- |
 |  1  |  Local partner identifier described in the CFTPART (ID) or CFTDEST command (one of the PARTS of the broadcasting list)  |
-|  2  |  Transfer state<br /> The DTSA characters mean:<br/> • Direction = S/R (Send/Receive)<br/> • Type = F/M/R (File/Message/Reply)<br/> • State = D/C/H/K/T/X (Disp/Current/Hold/Keep/Terminated/eXecuted)<br/> • Ack = A (Acknowledge)</li> <blockquote> **Note:**<br/>If the UCONF compatibility option is set to the default value (no), the format is DTSAPP to include Phase and PhaseStep. For more information, see Backward compatibility. </blockquote>  |
+|  2  |  Transfer state<br /> The DTSA characters mean:<br/> • Direction = S/R (Send/Receive)<br/> • Type = F/M/R (File/Message/Reply)<br/> • State = D/C/H/K/T/X (Disp/Current/Hold/Keep/Terminated/eXecuted)<br/> • Ack = A (Acknowledge)</li> <blockquote> **Note**<br/>If  the UCONF compatibility option is set to the default value (no), the format is DTSAPP to include Phase and PhaseStep. For more information, see Backward compatibility. </blockquote>  |
 |  3  |  File identifier (IDF)  |
 |  4  |  Transfer identifier (IDT)  |
 |  5  |  Identifier of the application associated to the transfer (IDA)  |

@@ -11,8 +11,7 @@ To install you will perform the following tasks:
 3.  Download product.
 4.  Install products.
 
-> **Note:**
->
+> **Note**  
 > Transfer CFT 3.7 is available as a 64-bit installation. If you are using and existing 32-bit Transfer CFT, you can use the Transfer CFT 3.7 install kit to move from the existing version to  Transfer CFT 3.7 64-bit.
 
 ## License keys
@@ -27,8 +26,7 @@ For information on applying a license key post installation, or if you have a pr
 
 {{< TransferCFT/componentshortname  >}} in multi-node architecture requires a shared file system for use of a multi-node architecture on several hosts (active/active). Additionally, the system must be configured prior to the multi-node installation and the shared disk ready when starting the Copilot server.
 
-> **Note:**
->
+> **Note**  
 > See Shared file system prerequisites for details.
 
 You can use a single key for  a multi-node installation, as either:

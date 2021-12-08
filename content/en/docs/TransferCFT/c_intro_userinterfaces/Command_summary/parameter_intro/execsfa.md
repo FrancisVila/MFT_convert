@@ -33,8 +33,7 @@ the  {{< TransferCFT/componentshortname  >}} *Operations Guide* corresponding to
 The procedure to execute on receiving an
 acknowledgement following a file send operation.
 
-> **Note:**
->
+> **Note**  
 > To use direct script execution instead of the template script processing, preface the &lt;EXEC>value with 'cmd:'. For example, &lt;EXEC>='cmd:myscript.sh &PART &IDT &IDTU'. See Directly processing a program or script for details, examples, restrictions, and support.
 
 [Return to Command index](../../)

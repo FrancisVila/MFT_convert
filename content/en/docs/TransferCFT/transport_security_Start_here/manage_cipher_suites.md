@@ -126,12 +126,10 @@ MD5
                         
 ```
 
-> **Note:**
->
+> **Note**  
 > \* To comply with security standards, as of Transfer CFT version 3.2.0 the use of the cipher suites 59, 60, and 61 is restricted to TLS 1.2 exclusively. This means that you cannot negotiate a session with another partner (monitor) that is using a TLS version lower than 1.2 with these cipher suites.
 
-> **Note:**
->
+> **Note**  
 > \*\* These cipher suites are only available for Transfer CFT 3.2.2 and higher and are restricted to use with TLS 1.2.
 
 ## Set the cipher suites for file transfers

@@ -26,8 +26,7 @@ Use the following uconf parameters to configure the name and size of the overflo
     -   If   `sentinel.xfb.shut` is set to any value other than 0, Transfer CFT stops.
     -   If  `sentinel.xfb.shut` is set to 0,  Transfer CFT continues to run.
 
-> **Note:**
->
+> **Note**  
 > The sentinel.trktmaxmsg parameter is obsolete. Sentinel.xfb.buffer\_size defines the maximum number of messages in the sentinel.trktname overflow file.
 
 ## Sentinel configuration parameters
@@ -38,9 +37,9 @@ The following table lists the Sentinel parameters in the unified configuration a
 | Unified configuration parameter  | Default value  |  Former Sentinel parameter name<br/>trkapi.cfg  |
 | --- | --- | --- |
 | sentinel.xfb.enable  | NO  | XFB.Sentinel (trkapi.cfg)  |
-|  sentinel.xfb.transfer  |  ALL  |  XFB.Transfer (trkapi.cfg) &lt;/p&gt;  |
-|  sentinel.xfb.shut  |  0 &lt;/p&gt;  |  XFB.Shut (trkapi.cfg) &lt;/p&gt;  |
-|  sentinel.xfb.log  |  IEWF <blockquote> **Note:**<br/>To disable, set to ' '. </blockquote>  |  XFB.Log (trkapi.cfg) &lt;/p&gt;  |
+|  sentinel.xfb.transfer                              |  ALL  |  XFB.Transfer (trkapi.cfg)                             &lt;/p&gt;  |
+|  sentinel.xfb.shut                              |  0                             &lt;/p&gt;  |  XFB.Shut (trkapi.cfg)                             &lt;/p&gt;  |
+|  sentinel.xfb.log                              |  IEWF <blockquote> **Note**<br/>To disable, set to ' '. </blockquote>  |  XFB.Log (trkapi.cfg)                             &lt;/p&gt;  |
 |  sentinel.trktname  |  $(cft.runtime_dir)/data/trkapi.buf  |  TRKTNAME (trkapi.cfg)  |
 |  sentinel.trksharedfile  |  No  |  TRKSHAREDFILE  |
 |  sentinel.trklenmsg  |   |  TRKLENMSG  |
@@ -77,8 +76,8 @@ The following table lists the Heartbeat parameters that you can set in the unifi
 | Unified configuration parameter  | Default value  | Description  |
 | --- | --- | --- |
 | sentinel.heartbeat.enable  | NO  |  Enables sending Heartbeats to the Sentinel Server.  |
-| sentinel.heartbeat.periodicity  | 300  | The delay in seconds between sending Heartbeats.  |
-| sentinel.heartbeat.script  |  $(cft.install_dir)<br/>/extras/sentinel/MFTheartbeat.sh<br/>$(cft.install_dir)<br/>\extras\sentinel\MFTheartbeat.bat  | Script for executing Heartbeats.  |
+| sentinel.heartbeat.periodicity  | 300  | The delay in seconds between sending Heartbeats.    |
+| sentinel.heartbeat.script  |  $(cft.install_dir)<br/>/extras/sentinel/MFTheartbeat.sh<br/>$(cft.install_dir)<br/>\extras\sentinel\MFTheartbeat.bat          | Script for executing Heartbeats.  |
 
 
 ## Sentinel parameters
@@ -88,7 +87,7 @@ The following table lists the parameters that you can set in the unified configu
 
 | Unified configuration parameter  | Default value  | Description  |
 | --- | --- | --- |
-| sentinel.xfb.transfer_progress_period  | 60  |  The frequency in seconds in which Transfer CFT notifies Sentinel (for both SENDING and RECEIVING states) that a transfer is running.<br/>0 = no notification<br/>  |
+| sentinel.xfb.transfer_progress_period  | 60  |  The frequency in seconds in which Transfer CFT notifies Sentinel   (for both SENDING and RECEIVING states) that a transfer is running.<br/>0 = no notification<br/>  |
 | sentinel.xfb.transfer.send_relay_site_nidf  | No  | Enables an NIDF on the relay site. This uses an NIDF instead of COMMUT when sending an event to Sentinel using the XFBTransfer object.  |
 
 

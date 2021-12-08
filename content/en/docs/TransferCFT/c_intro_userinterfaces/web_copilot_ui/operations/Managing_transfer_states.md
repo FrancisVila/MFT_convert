@@ -112,8 +112,7 @@ Optionally you can select a **Layout** in the drop-down menu to use a customized
 -   Add or remove the filters you want to display in your page layout.
 -   Click **Save as** and name the layout.
 
-> **Note:**
->
+> **Note**  
 > These page customizations are defined in the CFTUIPREF object.  
 
 ## Troubleshooting transfer filters

@@ -29,8 +29,7 @@ not manage:
     the RCOMP and SCOMP parameters are not applicable, or receive
     transfer requests
 
-> **Note:**
->
+> **Note**  
 > A sender
 > in the PeSIT SIT profile cannot segment a record sent in several data
 > FPDUs or group several records sent in the same data FPDU.
@@ -53,8 +52,7 @@ Additional facilities are provided between two Transfer
 CFTs, while conforming with the PeSIT E standard.
 These facilities are based on the use of the PI 99 (free PI).
 
-> **Note:**
->
+> **Note**  
 > In server mode, the PROF parameter
 > can take either the EXTERN, CFT, or ANY values (corresponding to the “non-SIT”
 > profiles): indeed, in server mode, the  Transfer CFT automatically

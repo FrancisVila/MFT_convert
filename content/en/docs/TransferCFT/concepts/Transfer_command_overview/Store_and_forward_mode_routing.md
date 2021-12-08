@@ -9,12 +9,10 @@ In the same way, a file to be sent to clients that are dependent on
 the final receiver may transmit via intermediate systems and be sent on. This transfer is accomplished using the same protocol from one end to
 another.
 
-> **Note:**
->
+> **Note**  
 > This document describes the relay process as it relates to Transfer CFT. You can perform relay transfers using other Axway  products as the intermediary site.
 
-> **Note:**
->
+> **Note**  
 > If you are using access management, you must define the CFTAPPL with the ID=COMMUT.
 
 The following illustration features 3 Transfer CFTs, where the protocol may be the same or different between relay points:
@@ -76,8 +74,8 @@ the {{< TransferCFT/componentshortname  >}} on the store and forward site is as 
 | --- | --- | --- |
 | YES  | Yes, immediately  | The a file is immediately sent to the intended partner. Default value.  |
 | NO  | No, no file forwarding  | The file transfer is refused because the partner is not able to perform the store and forward.  |
-| SERVER  | Yes, after processing  | Sending the file occurs at the initiative of the store and forward site. This mode is also known as <a href="#VAN_server_Store_and_forward_processing">Store and forward with a VAN server</a>.  |
-| PART  | Yes, immediately  | This forced store and forward occurs in server mode. If the recipient that is defined in the IPART parameter is not the final recipient, the received file is immediately sent on to the target partner.  |
+| SERVER  | Yes, after processing  | Sending the file occurs at the initiative of the store and forward site. This mode is also known as  <a href="#VAN_server_Store_and_forward_processing">Store and forward with a VAN server</a>.  |
+| PART  | Yes,  immediately  | This forced store and forward occurs in server mode. If the recipient that is defined in the IPART parameter is not the final recipient, the received file is immediately sent on to the target partner.  |
 
 
 There are two ways for the sender  to initiate a store and forward transfer:
@@ -210,8 +208,7 @@ must be indicated as a partner in the RECV command:
 
 The difference lies in the type of protocols.
 
-> **Note:**
->
+> **Note**  
 > entries and that these entries are linked. In the example above, there would be two entries for the single "report" transfer.
 
 <span id="Store"></span>
@@ -236,8 +233,7 @@ If the transferred data code (NCODE) differs from the store and forward site's d
 
 When all the transfers have been correctly completed, the generic transfer (virtual) associated with the broadcast (entry designated in the catalog by a “DIAGP” code equal to “DIFFUS”) changes to the T state. Transfer CFT then activates any end of transfer procedure  associated with this generic transfer.
 
-> **Note:**
->
+> **Note**  
 > Caution  
 > Unlike a simple transfer in store and forward mode, the file created on the intermediate site is not deleted. This deletion may be handled by the end of transfer procedure, since the &DIAGP variable is used to determine whether the transfer is a broadcast (DIAGP = DIFFUS).
 

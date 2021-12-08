@@ -57,7 +57,7 @@ OBJECT = STATS or PROBE
 | --- | --- |
 | OBJECT  | Options: <u>CACHE</u> | SYSTEM | STATS | PROBE | TRACE (obsolete)  |
 | NAME  |  The options available for the NAME depend on the type of OBJECT to be queried.<br/>If the object = cache (default) then the name can be set to:<br/> • CAT: Query of the catalog cache<br/> • COMMAND: Query of the command cache<br/> • CRON: Query the {{< TransferCFT/componentshortname  >}} CRON cache<br/> • DMZ: Query of the DMZ cache<br/> • STAT</li>  |
-| CONTENT  |  If OBJECT=CACHE then you can select from the following values:<br/>BRIEF| FULL | STAT - or - XMLBRIEF| XMLFULL | RAW  |
+| CONTENT  |  If OBJECT=CACHE then you can select from the following values:<br/>BRIEF| FULL | STAT - or -   XMLBRIEF| XMLFULL | RAW  |
 
 
 ### Examples

@@ -86,8 +86,7 @@ Authorize users or groups: (RACF sample)
 NOTE: ACCESS must be set to **READ**.
 ```
 
-> **Note:**
->
+> **Note**  
 > The load libraries must be APF.
 
 ### Using file as the internal access management

@@ -13,6 +13,5 @@
 
 1.  Define the CFTSSL PARM fields or ROOTCID/USERCID fields.
 
-> **Note:**
->
+> **Note**  
 > A SAF PKI implementation in Transfer CFT requires that the ‘ring-specific profile checking' (RDATALIB class) be activated.

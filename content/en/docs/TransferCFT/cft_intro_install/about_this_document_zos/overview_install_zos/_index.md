@@ -22,8 +22,7 @@ The Transfer CFT installation creates the following environments:
 
 The act of installing Transfer CFT creates a distribution environment that  contains product binaries and templates. Do no store any personal files in this environment, or modify existing files in this environment, as they are erased during updates.
 
-> **Note:**
->
+> **Note**  
 > You use the distribution environment to create the instance environment, which is your target (runtime).
 
 The directories that are installed during the installation procedure are described in [Verify your installation](../post_install_zos).

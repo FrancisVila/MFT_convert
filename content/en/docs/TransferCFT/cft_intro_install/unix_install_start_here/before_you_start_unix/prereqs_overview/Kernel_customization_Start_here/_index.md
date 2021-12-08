@@ -22,8 +22,7 @@ customization procedures are described for the following systems:
 -   [Linux](customizing_linux)
 -   [Solaris](customizing_solaris)
 
-> **Note:**
->
+> **Note**  
 > No additional steps are necessary to modify the IBM AIX kernel as the ODM (Object Data Manager) manages this.
 
 For additional information on customization issues,

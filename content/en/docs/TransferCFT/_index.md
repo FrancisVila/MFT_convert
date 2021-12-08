@@ -8,11 +8,17 @@ You can configure {{< TransferCFT/transfercftname  >}} and manage flows using {{
 
 Additionally, the Transfer CFT {{< TransferCFT/doctypeuser  >}} explains standalone options for users who have not yet activated or Flow Manager. Axway encourages {{< TransferCFT/componentlongname  >}} users to discover the benefits of centralized management.
 
-> **Note:**
->
+> **Note**  
 > Visit the Changelog for details on new features in this version as well as previous versions.
 
- 
+{{< alert title="Note" color="primary" >}}
+
+Visit the Changelog for details on new features in this version as well as previous versions.
+
+{{< /alert >}}
+
+
+
 
 <table>
    <tbody>
@@ -65,7 +71,7 @@ Additionally, the Transfer CFT {{< TransferCFT/doctypeuser  >}} explains standa
 <p>Go to Axway <a href="https://support.axway.com/">support</a> to find documentation for Sentinel versions earlier than 4.2.0.</p>         </td>
       </tr>
       <tr>
-         <td><h4 id="join-the-discussion-in-axway-community">Join the discussion in <a href="https://community.axway.com">Axway Community</a>!  </h4>         </td>
+         <td colspan="2" data-mc-conditions="axway_conditions.NotPublish"><h4 id="join-the-discussion-in-axway-community">Join the discussion in <a href="https://community.axway.com">Axway Community</a>!  </h4>         </td>
       </tr>
    </tbody>
 </table>

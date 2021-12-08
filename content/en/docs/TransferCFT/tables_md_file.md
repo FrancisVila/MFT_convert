@@ -1,6 +1,263 @@
 
 
 
+============================== table nb count(1) table stayed in HTML ========================================
+
+<table >
+<tbody>
+<tr >
+<td><h2 id="for-new-users">For new users</h2>
+<p><a href="overview_intro/about_transfer_cft">About {{&lt; TransferCFT/componentshortname &gt;}}</a></p>
+<p><a href="overview_intro/c_cg_concepts" >What are governance services?</a></p>
+<p><a href="c_intro_userinterfaces/about_cftutil">Useqqqdoublespaceqqqcommand line</a></p>
+<p><a href="admin_intro/start_stop_cft">Basic administrative tasks</a></p>
+<p><a href="gettingstarted_intro/my_first_transfer_flow_using_cg" >My first transfer flow</a></p>
+<p><a href="gettingstarted_intro/my_first_file_transfer" >My first file transfer (CL)</a></p>
+<p><a href="gettingstarted_intro/my_first_transfer_flow_using_cg">CFTUTIL basics and help</a></p>
+<h2 id="for-existing-users">For existing users</h2>
+<p><a href="app_integration_intro/intro_folder_monitor/configure_folder_monitoring">Configure folder monitoring</a></p>
+<p><a href="about_multinode">Manage multi-node architecture</a></p>
+<p><a href="cft_intro_install/about_this_document_zos/using_apis">Use API services</a></p>
+<p>Check platform specifics</p>
+<p><a href="admin_intro/uconf/uconf_directory">Set UCONF parameters</a></p>
+<h2 id="migration-and-upgrades">Migration and upgrades</h2>
+<p><a href="cft_intro_install/mig_impact_considerations">Impact and considerations</a></p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p><a href="troubleshoot_intro">Troubleshooting information</a></p>
+<p><a href="troubleshoot_intro/messages_and_error_codes_start_here">Messages and error codes</a></p>
+<p><a href="troubleshoot_intro/messages_and_error_codes_start_here/diagi_diagnostic_codes">Diagnostic codes</a></p></td>
+<td><h2 id="documentation">Documentation</h2>
+<p>Transfer CFT User Guide <a href="https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_PDF/resource/Transfer_CFT_UsersGuide_allOS_en.pdf">PDF</a> | <a href="">Webhelp (Download)</a></p>
+<p>Release Notes <a href="https://docs.axway.com/bundle/TransferCFT_38_ReleaseNotes_allOS_en_HTML5/page/Content/release_notes/Transfer_CFT_ReleaseNotes_allOS_en.htm">HTML</a> | <a href="https://docs.axway.com/bundle/TransferCFT_38_ReleaseNotes_allOS_en_PDF/resource/Transfer_CFT_ReleaseNotes_allOS_en.pdf">PDF</a></p>
+<p>Install Unix <a href="https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/UNIX/unix_install_start_here.htm">HTML</a> | <a href="https://docs.axway.com/bundle/TransferCFT_38_InstallationGuide_unix_en_PDF/resource/TransferCFT_InstallationGuide_unix_en.pdf">PDF</a></p>
+<p>Install Windows <a href="https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/Windows/Windows/windows_install_start_here.htm">HTML</a> | <a href="https://docs.axway.com/bundle/TransferCFT_38_InstallationGuide_windows_en_PDF/resource/TransferCFT_InstallationGuide_windows_en.pdf">PDF</a></p>
+<p>Install z/OS <a href="https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/about_this_document_zos.htm">HTML</a> | <a href="https://docs.axway.com/bundle/TransferCFT_38_InstallationGuide_mvs_en_PDF/resource/TransferCFT_InstallationGuide_mvs_en.pdf">PDF</a></p>
+<p>Install IBM i  <a href="https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/about_this_document_ibmi.htm">HTML</a> | <a href="https://docs.axway.com/bundle/TransferCFT_38_InstallationGuide_os400_en_PDF/resource/TransferCFT_InstallationGuide_os400_en.pdf">PDF</a></p>
+<p>Install HP NonStop <a href="https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/HP_NS/preface.htm">HTML</a> | <a href="https://docs.axway.com/bundle/TransferCFT_38_InstallationGuide_hp_nonstop_en_PDF/resource/TransferCFT_InstallationGuide_hp_nonstop_en.pdf">PDF</a></p>
+<p>Transfer CFT Security Guide (login required) <a href="https://docs.axway.com/bundle/TransferCFT_38_SecurityGuide_allOS_en_HTML5/page/Content/AxwayStartsecurity.htm">HTML </a>| <a href="https://docs.axway.com/bundle/TransferCFT_38_SecurityGuide_allOS_en_PDF/resource/Transfer_CFT_SecurityGuide_allOS_en.pdf">PDF</a></p>
+<p>Swagger Doc <a href="http://apidocs.axway.com/swagger-ui/index.html?productname=transfercft&amp;productversion=3.8&amp;filename=transfercft-swagger-api.json">v1.7</a></p>
+<p><a href="https://docs.axway.com/bundle/AccessibilityVPATS_allOS_en_HTML5/page/Content/accessibility.htm">VPAT</a></p>
+<p>Third-Party Licenses (login required) <a href="https://support.axway.com/en/documents/document-details/id/1448127">PDF </a></p>
+<h2 id="additional-resources">Additional resources</h2>
+<p><a href="https://apidocs.axway.com/swagger-ui/index.html?productname=transfercft&amp;productversion=3.8&amp;filename=transfercft-swagger-api.json" >Transfer CFT REST API Swagger</a></p>
+<p><a href="https://docs.axway.com/bundle/Axway_Products_SupportedPlatforms_allOS_en/resource/Axway_Products_SupportedPlatforms_allOS_en.pdf" >Axway Supported Platforms</a></p>
+<p><a href="https://apidocs.axway.com/swagger-ui/index.html?productname=transfercft&amp;productversion=3.8&amp;filename=transfercft-swagger-api.json" >Axway Flow Manager</a></p>
+<p><a href="https://support.axway.com/" >Axway Support</a></p>
+<p><a href="https://community.axway.com/s/" >Axway Community</a></p>
+<h2 id="search-tips">Search tips</h2>
+<ul>
+<li>Use filters to narrow searches.</li>
+<li>Put words in quotes “like this” for exact matches of phrases.</li>
+<li>Log in with your Axway ID to access documents that are not available for public users.</li>
+</ul>
+<h2 id="other">Other</h2>
+<p>Go to Axway <a href="https://support.axway.com/">support</a> to find documentation for Sentinel versions earlier than 4.2.0.</p></td>
+</tr>
+<tr >
+<td colspan="2" data-mc-conditions="axway_conditions.NotPublish"><h4 id="join-the-discussion-in-axway-community">Join the discussion in <a href="https://community.axway.com">Axway Community</a>!  </h4></td>
+</tr>
+</tbody>
+</table>
+
+
+============================== table nb count(2) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<thead>
+<tr  data-mc-conditions="">
+<th rowspan="2"  >Function</th>
+<th colspan="5"  >  OS</th>
+</tr>
+<tr  data-mc-conditions="">
+<th  >Windows</th>
+<th  >UNIX</th>
+<th  >z/OS</th>
+<th  >IBM i</th>
+<th  >HP NS</th>
+</tr>
+</thead>
+<tbody>
+<tr  data-mc-conditions="">
+<td  >Google Cloud storage</td>
+<td  >-</td>
+<td  >3.8</td>
+<td  >-</td>
+<td  >-</td>
+<td  >-</td>
+</tr>
+<tr  data-mc-conditions="">
+<td  >Flow Manager</td>
+<td  >3.3.2</td>
+<td  >3.3.2</td>
+<td  >3.3.2</td>
+<td  >3.3.2</td>
+<td  >3.3.2</td>
+</tr>
+<tr  data-mc-conditions="">
+<td  >Flow Manager SaaS</td>
+<td  >3.6</td>
+<td  >3.6</td>
+<td  >3.6</td>
+<td  >3.6</td>
+<td  >3.6</td>
+</tr>
+<tr  data-mc-conditions="">
+<td  ><p>Using tracking with</p>
+<p>Edge Agent</p></td>
+<td  >3.5</td>
+<td  >3.5</td>
+<td  >3.5</td>
+<td  >3.5</td>
+<td  >3.5</td>
+</tr>
+<tr  data-mc-conditions="">
+<td  >SAML</td>
+<td  >3.5</td>
+<td  >3.5</td>
+<td  >3.6</td>
+<td  >3.6 SP1</td>
+<td  >3.5</td>
+</tr>
+<tr  data-mc-conditions="">
+<td  >REST API </td>
+<td  >3.2.4</td>
+<td  >3.2.4</td>
+<td  >3.2.4</td>
+<td  >3.2.4</td>
+<td  >3.2.4</td>
+</tr>
+<tr  data-mc-conditions="">
+<td  >New browser-based user interface</td>
+<td  >3.3.2</td>
+<td  >3.3.2</td>
+<td  >3.3.2</td>
+<td  >3.3.2</td>
+<td  >3.3.2</td>
+</tr>
+<tr  data-mc-conditions="">
+<td  >Central Governance management</td>
+<td  >3.1.3</td>
+<td  >3.1.3</td>
+<td  >3.1.3</td>
+<td  >3.1.3</td>
+<td  >3.2.4</td>
+</tr>
+<tr  data-mc-conditions="">
+<td  >Folder monitoring</td>
+<td  >3.1.2</td>
+<td  >3.1.2</td>
+<td  >3.1.3<sup>4</sup></td>
+<td  >3.1.3<sup>4</sup></td>
+<td  >3.2.4</td>
+</tr>
+<tr  data-mc-conditions="">
+<td  >Secure Relay</td>
+<td  >3.1.2</td>
+<td  >3.1.2</td>
+<td  >3.1.3</td>
+<td  >3.1.3</td>
+<td  >-</td>
+</tr>
+<tr  data-mc-conditions="">
+<td  >Multi-node architecture</td>
+<td  >3.0.1</td>
+<td  >3.0.1<sup>1</sup></td>
+<td  >3.0.1</td>
+<td  >-</td>
+<td  >-</td>
+</tr>
+<tr  data-mc-conditions="">
+<td  >TrustedFile (PGP S-MIME CMS)</td>
+<td  >3.0.1<sup>3</sup></td>
+<td  >3.0.1<sup>1</sup></td>
+<td  >3.0.1</td>
+<td  >-</td>
+<td  >-</td>
+</tr>
+<tr  data-mc-conditions="">
+<td  >PassPort AM</td>
+<td  >2.7.1</td>
+<td  >2.7.1<sup>1</sup></td>
+<td  >3.0.1</td>
+<td  >3.0.1</td>
+<td  >3.2.4</td>
+</tr>
+<tr  data-mc-conditions="">
+<td  >SFTP</td>
+<td  >3.4</td>
+<td  >3.4 <sup>5</sup></td>
+<td  >3.5 <sup>6</sup></td>
+<td  >-</td>
+<td  >3.6<sup>6</sup></td>
+</tr>
+<tr  data-mc-conditions="">
+<td  >IPv6</td>
+<td  >2.7.1</td>
+<td  >2.7.1<sup>1</sup></td>
+<td  >2.7.1</td>
+<td  >2.7.1</td>
+<td  >3.3.2</td>
+</tr>
+<tr  data-mc-conditions="">
+<td  >pTCP</td>
+<td  >2.7.1</td>
+<td  >2.7.1<sup>1</sup></td>
+<td  >-</td>
+<td  >-</td>
+<td  >-</td>
+</tr>
+<tr  data-mc-conditions="">
+<td  >UDT (excluding multi-node)</td>
+<td  >2.7.1</td>
+<td  >2.7.1<sup>2</sup></td>
+<td  >-</td>
+<td  >-</td>
+<td  >-</td>
+</tr>
+<tr  data-mc-conditions="">
+<td  >SOCKS</td>
+<td  >2.7.1</td>
+<td  >2.7.1</td>
+<td  >3.0.1</td>
+<td  >2.7.1</td>
+<td  >3.3.2</td>
+</tr>
+<tr  data-mc-conditions="">
+<td  >Heartbeat functionality</td>
+<td  >2.7.1</td>
+<td  >2.7.1</td>
+<td  >2.7.1</td>
+<td  >2.7.1</td>
+<td  >3.2.4</td>
+</tr>
+<tr  data-mc-conditions="">
+<td  >Bandwidth control</td>
+<td  >3.0.1</td>
+<td  >3.0.1</td>
+<td  >3.0.1</td>
+<td  >3.0.1</td>
+<td  >3.3.2</td>
+</tr>
+<tr  data-mc-conditions="">
+<td  >System users (USERCTRL)</td>
+<td  >2.7.0</td>
+<td  >2.6.2</td>
+<td  >3.2.2</td>
+<td  >3.1.3</td>
+<td  >-</td>
+</tr>
+<tr  data-mc-conditions="">
+<td colspan="6"  ><p><sup>1</sup>Enabled for all UNIX except SCO, UnixWare, IRIX, Tru64.</p>
+<p><sup>2</sup> Enabled only for Linux-x86-32, Linux-x86-64, Linux-ia64-64.</p>
+<p><sup>3</sup>Enabledqqqdoublespaceqqq for versions 3.0.1 to 3.3.2 on Windows 32-bit systems. As of Transfer CFT 3.4, Trusted File is supported on Windows 64-bit systems.</p>
+<p><sup>4</sup>Limited to USS (z/OS) and IFS (IBM i) systems. On IBM i, native files folder monitoring is available for Transfer CFT 3.3.2 SP2 and higher.</p>
+<p><sup>5</sup>Available on AIX, HPUX ia64, Linux, Solaris, Windows</p>
+<p><sup>6</sup>For UNIX type files only</p></td>
+</tr>
+</tbody>
+</table>
+
+
 ============================== table nb count(3) table converted to MD ========================================
 
 
@@ -54,11 +311,11 @@
 
 |   | Step  | Details  | More info  |
 | --- | --- | --- | --- |
-| 1  | Complete prerequisites  | Check and fulfill prerequisites such as obtaining a key or system-specific prerequisites.  | <a href="prereqs_overview" class="MCXref xref">Prerequisites</a>  |
-| 2  | Download and unzip  | Download the installation package from the support site and unzip.  | <a href="#Download" class="MCXref xref">Install Transfer CFT</a>  |
-| 3  | Customize the properties file  |  Some installation parameters are mandatory to run Transfer CFT.<br/>You can customize the <code>initialize.properties</code> file before the install, use your own file, or use the unmodified default file, but you cannot start Transfer CFT until the mandatory values are set.  | <a href="new_install_ux" class="MCXref xref">Customize the initialize.properties file</a> <a href="../../windows_install_start_here/before_you_start_win/properties_file_win"></a>  |
-|   | Run chmod  | Make the file executable.  | <a href="install_transfer_cft_1#Make" class="MCXref xref">Make the file executable</a>  |
-| 4  | Start the installation  | Select the installation mode and run using either the default configuration file or your customized file.  | <a href="install_transfer_cft_1" class="MCXref xref">Start the installation</a>  |
+| 1  | Complete prerequisites  | Check and fulfill prerequisites such as obtaining a key or system-specific prerequisites.  | <a href="prereqs_overview" >Prerequisites</a>  |
+| 2  | Download and unzip  | Download the installation package from the support site and unzip.  | <a href="#Download" >Install Transfer CFT</a>  |
+| 3  | Customize the properties file  |  Some installation parameters are mandatory to run Transfer CFT.<br/>You can customize the <code>initialize.properties</code> file before the install, use your own file, or use the unmodified default file, but you cannot start Transfer CFT until the mandatory values are set.  | <a href="new_install_ux" >Customize the initialize.properties file</a> <a href="../../windows_install_start_here/before_you_start_win/properties_file_win"></a>  |
+|   | Run chmod  | Make the file executable.  | <a href="install_transfer_cft_1#Make" >Make the file executable</a>  |
+| 4  | Start the installation  | Select the installation mode and run using either the default configuration file or your customized file.  | <a href="install_transfer_cft_1" >Start the installation</a>  |
 | *  | Optional customization  | If you used the default configuration file, you must customize the Transfer CFT settings before starting the product.  |   |
 
 
@@ -72,13 +329,13 @@
 | msgmnb  | 32768  | Maximum size in bytes on a single IPC message queue.  |
 | msgmni  |  48 per {{&lt; TransferCFT/componentlongname &gt;}} instance<br/>See <a href="#note_linux">NOTE</a>**  |  Maximum number of IPC message queue resources allowed.<br/>You require as many message queues as processes per Transfer CFT instance (when using multiple instances, multiply the number of instances by the number of Transfer CFT processes).  |
 |  shmall<br/>(shmall*PAGE_SIZE)  |  2097152<br/>(8 GB when page_size = 4096)  |  The total amount of shared memory available on the system is 2097152*4096 bytes (shmall*PAGE_SIZE) which is 8 GB.<br/>This number may be affected by the use of a very large number of Transfer CFT instances.  |
-| shmmax  |  3554432: for fewer than 512 transfers in parallel<br/>67108864: for more than 512 transfers in parallel  | Maximum size in bytes for a shared memory segment.  |
-| shmmni  | 4096  |  Number of shared memory segment identifiers in the system.<br/>For each Transfer CFT instance you need 2 shared memory segments, so when using multiple instances or multi-node, multiply the number of instances by 2.  |
-| shmseg  | 10  | Maximum number of shared memory segments per process.  |
-| semmsl  | 250  | Maximum number of IPC semaphores per set.  |
+| shmmax  |  3554432: for fewer than 512 transfers in parallel<br/>67108864: for more than 512 transfers in parallel  | Maximum size in bytes for aqqqdoublespaceqqqshared memory segment.  |
+| shmmni  | 4096  |  Number ofqqqdoublespaceqqqshared memory segment identifiers in the system.<br/>For each Transfer CFT instance you need 2 shared memory segments, so when using multiple instances or multi-node, multiply the number of instances by 2.  |
+| shmseg  | 10  | Maximum number ofqqqdoublespaceqqqshared memory segments per process.  |
+| semmsl  | 250  | Maximum number ofqqqdoublespaceqqqIPC semaphores per set.  |
 | semmns  | 32000  | Number of IPC system-wide semaphores.  |
 | semopm  | 100  | Maximum number of semaphore operations that can be performed per semop(2).  |
-| semmni  | 128  |  Maximum number of IPC system-wide semaphore sets.<br/>For each Transfer CFT instance you need 2 semaphore sets, so when using multiple instances or multi-node, multiply the number of instances by 2.  |
+| semmni  | 128  |  Maximum number ofqqqdoublespaceqqqIPC system-wide semaphore sets.<br/>For each Transfer CFT instance you need 2 semaphore sets, so when using multiple instances or multi-node, multiply the number of instances by 2.  |
 
 
 
@@ -112,20 +369,426 @@
 
 
 
-============================== table nb count(11) table converted to MD ========================================
+============================== table nb count(10) table stayed in HTML ========================================
 
-
-| Screen  | Description  |
-| --- | --- |
-| Welcome  | Welcome to Transfer CFT landing page.  |
-| License agreement  | Select the check-box "<code>I accept...</code>" to continue with the installation.  |
-| Installation architecture  |  Select to install on a single machine, a Cluster - first host, or cluster - additional host.<br/> • Single - Installs a single instance of Transfer CFT on a machine.<br/> • Cluster - Installs Transfer CFT on several machines. Select this option if you want to install Transfer CFT in multi-host/multi-node or in active/passive mode.<br/> • Cluster - First host: Install on a first machine before adding additional machines (nodes). You must install on a first node before you can select the option to install on additional nodes.<br/> • Cluster - Additional host: After installing on the first machine, you can select this option to install on an additional machine(s).<br/> • If you are performing a cluster installation and you enable the multi-node option in the configuration file, this creates an active/active Transfer CFT installation. Otherwise, the installation is active/passive.</li>  |
-|   |
-| Installation Directory  | Specify the directory where you want to install Transfer CFT. This is the directory where the Transfer CFT product files are installed. <blockquote> **Note:**<br/>Directory paths cannot contain spaces. </blockquote>  |
-| Configuration filename  |  Enter the path, or navigate, to the configuration file (initialize.properties file) containing details for the Transfer CFT installation. This file defines settings such as hostname, license key, governance options, and so on.<br/>If you do not specify a file, you can continue with the installation, but the installation procedure does not create the runtime directory. (Run the <code>initialize </code>command post installation if you opt to create the runtime directory at a later date.)  |
-| Generate Encryption Key  |  Enter your password and reenter it to confirm.  |
-|  Ready to install  |  Click **Next**to complete the installation process, or **Back**to review or modify installation options.  |
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th >Parameter</th>
+<th >Automatic or default</th>
+<th >Description</th>
+<th >UCONF </th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td colspan="3" ><strong>Silent installation</strong></td>
+<td > </td>
+</tr>
+<tr >
+<td >Installation architecture</td>
+<td >@default = single</td>
+<td ><p>Defines single or cluster mode installation.</p>
+<p>Values: single, first_host, additional_host</p></td>
+<td >N/A</td>
+</tr>
+<tr >
+<td >installdir</td>
+<td > </td>
+<td >Transfer CFT installation directory.</td>
+<td >cft.install_dir</td>
+</tr>
+<tr >
+<td colspan="3" ><strong>Basic installation</strong></td>
+<td > </td>
+</tr>
+<tr >
+<td >runtimeDir</td>
+<td >./runtime</td>
+<td ><p>Transfer CFT runtime directory.</p>
+<p>Specify the directory where you want to install the Transfer
+CFT runtime directory.</p>
+<p>By default, the runtime directory is installed in a sub-directory of the Transfer CFT installation directory. Use the default directory, or
+specify a new directory. A runtime directory will be created if it does not already exist.</p>
+<p>Directory paths cannot contain spaces.</p></td>
+<td >cft.runtime_dir</td>
+</tr>
+<tr >
+<td ><p>Full_Hostname</p></td>
+<td >@automatic</td>
+<td ><p>Host Address of the local server: FQDN (Fully Qualified Domain Name) or IP Address. See <strong>Note</strong>*</p></td>
+<td >cft.full_hostname</td>
+</tr>
+<tr >
+<td >multinode_hostname</td>
+<td >@automatic</td>
+<td ><p>When not defined, this field is filled with the hostname of the machine where you are installing {{&lt; TransferCFT/transfercftname &gt;}}, whether it is the first host or an additional host.</p>
+<p>If the hostname contains a "." period, the value used consists of the name of the host preceding the first period. For example, "myhost.fqdn.net"qqqdoublespaceqqqwould be shortened to "myhost".</p></td>
+<td >cft.multi_node.hostnames</td>
+</tr>
+<tr >
+<td >multinode_host_address</td>
+<td >@automatic</td>
+<td ><p>If you do not specify a value, the machine's FQDN address isqqqdoublespaceqqqused.</p>
+<p>Note that if there is an error in the machine's configuration, the value taken could be incorrect. Be sure to check that you can ping the address, and that it is the value for the cluster network.</p></td>
+<td >cft.multi_node.hostnames.&lt;hostname&gt;.host</td>
+</tr>
+<tr >
+<td ><p>Instance_ID</p></td>
+<td >@default
+<p> </p></td>
+<td >The maximum length is 24.</td>
+<td >cft.instance_id</td>
+</tr>
+<tr >
+<td >Instance_Group</td>
+<td > </td>
+<td ><p>Transfer CFT instance group.</p>
+<p>The maximum length is 1000.</p></td>
+<td >cft.instance_group</td>
+</tr>
+<tr >
+<td colspan="3" ><strong>Security configuration</strong></td>
+<td > </td>
+</tr>
+<tr >
+<td ><p>CryptoKey_Password</p></td>
+<td >@mandatory</td>
+<td ><p>Seed password to generate the encryption key.</p>
+<p>The password must contains at least 8 characters, contain upper and</p>
+<p>lower case characters as well as numeric and special characters (*$!?+-@).</p></td>
+<td >N/A</td>
+</tr>
+<tr >
+<td ><p>CryptoKey_Key_File</p></td>
+<td >qqqdoublespaceqqq@default = $CFTDIRRUNTIME/data/crypto/crypkey</td>
+<td >Location that stores the generated key file.</td>
+<td >crypto.key_fname     </td>
+</tr>
+<tr >
+<td ><p>CryptoKey_Salt_File</p></td>
+<td >@default = $CFTDIRRUNTIME/data/crypto/crypsalt</td>
+<td >Location that stores the generated salt file.</td>
+<td >crypto.salt_fname</td>
+</tr>
+<tr >
+<td colspan="3" ><strong>Runtime configuration</strong></td>
+<td > </td>
+</tr>
+<tr >
+<td ><p>Key</p></td>
+<td > </td>
+<td ><p>qqqdoublespaceqqqKey for Transfer CFT. The key is stored in the $CFTDIRRUNTIME/conf/cft.key.</p>
+<p>Without the key you can install, but not start the product.</p></td>
+<td > </td>
+</tr>
+<tr >
+<td >Catalog_File_Size</td>
+<td >@default= 10000</td>
+<td ><p>Sets the default catalog size.</p></td>
+<td >cft.cftcat.default_size</td>
+</tr>
+<tr >
+<td >Communication_File_Size</td>
+<td >@default = 1000</td>
+<td >Sets the default communication file size.</td>
+<td >cft.cftcom.default_size</td>
+</tr>
+<tr >
+<td >PESIT_Port</td>
+<td >@default = 1761</td>
+<td ><p>The port number of the PeSiT protocol.</p>
+<p> </p></td>
+<td >samples.pesitany_sap.value</td>
+</tr>
+<tr >
+<td >PESIT_SSL_Port</td>
+<td >@default = 1762</td>
+<td >The port number of the PeSIT protocol using SSL.</td>
+<td >samples.pesitssl_sap.value</td>
+</tr>
+<tr >
+<td >COMS_Port</td>
+<td >@default = 1765</td>
+<td ><p>The port number of the COMS synchronous communication media.</p>
+<p> </p></td>
+<td >samples.coms_port.value</td>
+</tr>
+<tr >
+<td >Copilot_Port</td>
+<td >@default = 1766</td>
+<td ><p>Sets the port number for the Transfer CFT Copilot server that listens for</p>
+<p>incoming unsecured and secured (SSL) connections.</p>
+<p>The same port number is used for the Graphical User Interfaceqqqdoublespaceqqqand Webservices</p>
+<p>with or without SSL.</p></td>
+<td >copilot.general.serverport</td>
+</tr>
+<tr >
+<td >Copilot_OnlySSL</td>
+<td >@default = Yes</td>
+<td ><p>When you set to <strong>Yes</strong>, Copilot only allows SSL connections, and disables use of the HTTP server.</p>
+<p>This  affects the old Transfer CFT UI, Webservices, and JPI.</p>
+<p> </p></td>
+<td >copilot.http.onlyssl</td>
+</tr>
+<tr >
+<td >Copilot_SSL_Port</td>
+<td >@default = 1767</td>
+<td >Sets the port number for the Transfer CFT Copilot server that listens for
+incoming secured (SSL with mutual authentication) connections.
+Only used by the Governance.</td>
+<td >copilot.general.ssl_serverport</td>
+</tr>
+<tr >
+<td ><p>UI_DefaultUser_Username</p>
+<p>UI_DefaultUser_Password</p></td>
+<td ></td>
+<td ><p><em>UNIX systems only</em></p>
+<p>The default Transfer CFT UI user/password.</p></td>
+<td >N/A</td>
+</tr>
+<tr >
+<td ><p>RESTAPI_Enable</p>
+<p> </p>
+<p> </p></td>
+<td >@default = Yes</td>
+<td ><p>Activates the Transfer CFT REST API Server.</p>
+<p>The port number used to connect to the REST API server.</p></td>
+<td >copilot.restapi.enable</td>
+</tr>
+<tr >
+<td >RESTAPI_Port</td>
+<td >1768</td>
+<td ><p>The port number used to connect to the REST API server.</p></td>
+<td >copilot.restapi.serverport</td>
+</tr>
+<tr >
+<td ><p>RESTAPI_Certificate_Path</p>
+<p>RESTAPI_Cert_Pass</p></td>
+<td > </td>
+<td ><p>Sets the certificate and its password to be used by the Transfer</p>
+<p>CFT REST API Server and for HTTPS connections with Copilot (old</p>
+<p>Transfer CFT UI, Web services, and JPI).</p>
+<ul>
+<li>When REST API is enabled, these cannot be empty</li>
+<li>When Copilot_OnlySSL is activated, these cannot be empty.</li>
+</ul>
+<p>When using Central Governance, the REST API server automatically uses the SSL business certificate generated during the registration; there is no need to pre-define this value if you are going to register Transfer CFT with Central Governance.</p></td>
+<td >copilot.ssl.SslCertFile</td>
+</tr>
+<tr >
+<td colspan="4" ><strong>Multi-node and Cluster</strong></td>
+</tr>
+<tr >
+<td >Multinode_Enable</td>
+<td >@default = No</td>
+<td ><p>Enable the multi-node architecture.</p>
+<p>To use a multi-node architecture, you must define the multinode option in the initialize.properties file.</p></td>
+<td >cft.multi_node.enable</td>
+</tr>
+<tr >
+<td >Multinode_Numberqqqdoublespaceqqq</td>
+<td >@default = 2</td>
+<td >Enter the number of nodes.</td>
+<td >cft.multi_node.nodes</td>
+</tr>
+<tr >
+<td >LoadBalancer_Host</td>
+<td > </td>
+<td >Specify the host address of the load balancer.
+<p>When using an ACTIVE/ACTIVE or ACTIVE/PASSIVE deployment, you require a load
+balancer to connect to the Transfer CFT Copilot server.</p></td>
+<td >cft.multi_node.load_balancer.host</td>
+</tr>
+<tr >
+<td >LoadBalancer_Port</td>
+<td > </td>
+<td ><p>Specify the load balancer port, which is redirected to the
+Central Governance dedicated port of the Transfer CFT UI Server.</p>
+When using ACTIVE/ACTIVE or ACTIVE/PASSIVE deployment, you require a load
+balancer to connect to the Transfer CFT Copilot server.</td>
+<td >cft.multi_node.load_balancer.port</td>
+</tr>
+<tr >
+<td colspan="4" ><strong>Central Governance</strong></td>
+</tr>
+<tr >
+<td ><p>qqqdoublespaceqqq CG_Enable</p></td>
+<td ><p>@default = No</p></td>
+<td >Enter Yes to enable Central Governance connectivity.</td>
+<td >cg.enable</td>
+</tr>
+<tr >
+<td >CG_Host</td>
+<td > </td>
+<td ><p>The Central Governance host address.</p>
+<p>If you enabled {{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field.</p></td>
+<td >cg.host</td>
+</tr>
+<tr >
+<td ><p>CG_Port</p></td>
+<td >@default = 12553</td>
+<td ><p>Central Governance port.</p>
+<p>qqqdoublespaceqqqWhen CG is enabled, this cannot be empty.</p></td>
+<td >cg.port</td>
+</tr>
+<tr >
+<td >CG_Mutual_Port</td>
+<td >@default = 12554</td>
+<td ><p>The Central Governance port for Mutual Authentication.</p>
+<p>If you enabled {{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field.</p></td>
+<td >cg.mutual_auth_port</td>
+</tr>
+<tr >
+<td >CG_RestAPI_Port</td>
+<td >@defaultqqqdoublespaceqqq= 8081</td>
+<td ><p>Specify the port to use to communicate with Central Governance's REST API (this port is only used when am.type=cg).</p>
+<p>If you enabled {{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field.</p></td>
+<td >cg.restapi_port</td>
+</tr>
+<tr >
+<td >CG_SharedSecret</td>
+<td > </td>
+<td ><p>Specify the shared secret, which is needed to register with the Central Governance server.</p>
+<p>If you enabled {{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field.</p></td>
+<td >cg.shared_secret</td>
+</tr>
+<tr >
+<td >CG_ConfigurationPolicyqqqdoublespaceqqq</td>
+<td > </td>
+<td >Specify Central Governance configuration policy to apply on the Transfer CFT
+instance.</td>
+<td >cg.configuration_policy</td>
+</tr>
+<tr >
+<td >CG_Certificate_Path</td>
+<td >@default = $CFTDIRRUNTIME/conf/pki/passportCA.pem</td>
+<td >Specify Custom Certificate to authenticate Central Governance.</td>
+<td >N/A</td>
+</tr>
+<tr >
+<td colspan="4" ><strong>Sentinel Connector</strong></td>
+</tr>
+<tr >
+<td >Sentinel_Enable</td>
+<td >@default = No</td>
+<td ><p>Set to Yes to enable Sentinel.</p>
+<p>Do not enable this if you have enabled {{&lt; TransferCFT/centralgovernancename &gt;}}.</p></td>
+<td >sentinel.xfb.enable</td>
+</tr>
+<tr >
+<td >Sentinel_Host</td>
+<td > </td>
+<td >Enter the Sentinel host address.</td>
+<td >sentinel.trkipaddr</td>
+</tr>
+<tr >
+<td >Sentinel_Port</td>
+<td >@default= 1305</td>
+<td ><p>Enter the Sentinel port.</p>
+<p>You do not need to define this field if you are registering Transfer CFT with {{&lt; TransferCFT/centralgovernancename &gt;}}.</p></td>
+<td >sentinel.trkipport</td>
+</tr>
+<tr >
+<td >Sentinel_Log_Filter</td>
+<td >@default = EWF</td>
+<td ><p>Sentinel Log Filter: (I)nformation, (W)arning, (E)rror, (F)atal
+Authorized characters are only I, W, E, F</p>
+<p>You can only use each letter once.</p></td>
+<td >sentinel.xfb.log</td>
+</tr>
+<tr >
+<td >Sentinel_Transfer_Filter</td>
+<td >@default = ALL</td>
+<td ><p>Sentinel Transfer Filter</p>
+<p>Possible values are: ALL, SUMMARY, NO, ERROR</p></td>
+<td >sentinel.xfb.transfer</td>
+</tr>
+<tr >
+<td >Sentinel_Use_SSL </td>
+<td >@default = Yes</td>
+<td >Enables an SSL connection with Sentinel.</td>
+<td >sentinel.xfb.use_ssl</td>
+</tr>
+<tr >
+<td >Sentinel_Certificate_Path</td>
+<td >@default=$CFTDIRRUNTIME/conf/pki/passportCA.pem</td>
+<td >Sentinel root certificate.</td>
+<td >N/A</td>
+</tr>
+<tr >
+<td colspan="4" ><strong>Miscellaneous</strong></td>
+</tr>
+<tr >
+<td >JAVA_BINARY_PATH</td>
+<td > </td>
+<td >Java binary path used to start Transfer CFT jar files.</td>
+<td >cft.jre.java_binary_path</td>
+</tr>
+</tbody>
+</table>
 
+
+============================== table nb count(11) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th >Screen</th>
+<th >Description</th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td >Welcome</td>
+<td >Welcome to Transfer CFT landing page.</td>
+</tr>
+<tr >
+<td >License agreement</td>
+<td >Select the check-box "<code>I accept...</code>" to continue with the installation.</td>
+</tr>
+<tr >
+<td >Installation architecture</td>
+<td rowspan="2" ><p>Select to install on a single machine, a Cluster - first host, or cluster - additional host.</p>
+<ul>
+<li>Single - Installs a single instance of Transfer CFT on a machine.</li>
+<li>Cluster - Installs Transfer CFT on several machines. Select this option if you want to install Transfer CFT in multi-host/multi-node or in active/passive mode.</li>
+</ul>
+<ul>
+<li>Cluster - First host: Install on a first machine before adding additional machines (nodes). You must install on a first node before you can select the option to install on additional nodes.</li>
+<li>Cluster - Additional host: After installing on the first machine, you can select this option to install on an additional machine(s).</li>
+</ul>
+<ul>
+<li>If you are performing a cluster installation and you enable the multi-node option in the configuration file, this creates an active/active Transfer CFT installation. Otherwise, the installation is active/passive.</li>
+</ul></td>
+</tr>
+<tr >
+<td > </td>
+</tr>
+<tr >
+<td >Installation Directory</td>
+<td >Specify the directory where you want to install Transfer
+CFT. This is the directory where the Transfer CFT product filesqqqdoublespaceqqqare installed.
+<blockquote>
+<p><strong>Note</strong></p>
+<p>Directory paths cannot contain spaces.</p>
+</blockquote></td>
+</tr>
+<tr >
+<td >Configuration filename</td>
+<td ><p>Enter the path, or navigate, to the configuration file (initialize.properties file) containing details for the Transfer CFT installation. This file defines settings such as hostname, license key, governance options, and so on.</p>
+<p>If you do not specify a file, you can continue with the installation, but the installation procedure does not create the runtime directory. (Run the <code>initialize </code>command post installation if you opt to create the runtime directory at a later date.)</p></td>
+</tr>
+<tr >
+<td >Generate Encryption Key</td>
+<td ><p>Enter your password and reenter it to confirm.</p></td>
+</tr>
+<tr >
+<td ><p>Ready to install</p></td>
+<td ><p>Click <strong>Next</strong>to complete the installation process, or <strong>Back</strong>to review or modify installation options.</p></td>
+</tr>
+</tbody>
+</table>
 
 
 ============================== table nb count(12) table converted to MD ========================================
@@ -135,7 +798,7 @@
 | --- | --- |
 | Runtimedir  | The runtime directory must be in a shared directory.  |
 | Multinode_Enable  |  Enable the multi-node architecture.<br/>To use a multi-node architecture, you must define the multi-node option in the initialize.properties file.  |
-| Multinode_Number  | Enter the number of nodes.  |
+| Multinode_Numberqqqdoublespaceqqq  | Enter the number of nodes.  |
 | LoadBalancer_Host  |  Specify the host address of the load balancer.<br/>When using an ACTIVE/ACTIVE or ACTIVE/PASSIVE deployment, you require a load balancer to connect to the Transfer CFT Copilot server.  |
 | LoadBalancer_Port  | Specify the load balancer port, which is redirected to the Central Governance dedicated port of the Transfer CFT UI Server. When using ACTIVE/ACTIVE or ACTIVE/PASSIVE deployment, you require a load balancer to connect to the Transfer CFT Copilot server.  |
 
@@ -161,9 +824,9 @@
 | --- | --- | --- |
 | AIX  | GPFS, NFSv4*  | NFSv3, CXFS, VeritasSF  |
 | HP-UX  | NFSv4*  | NFSv3, CXFS, VeritasSF  |
-| Linux-x86  | GPFS, GFS2, NFSv4*, AWS EFS  | NFSv3, CXFS, ACFS, OCFSv1, OCFSv2, QFS, VeritasSF  |
+| Linux-x86  | GPFS, GFS2, NFSv4*, AWS EFS  | NFSv3, CXFS,qqqdoublespaceqqqACFS, OCFSv1, OCFSv2, QFS, VeritasSF  |
 | Solaris  | NFSv4*  | NFSv3, CXFS, QFS, VeritasSF  |
-| Windows-x86  | SMB/CIFS, GPFS  | CXFS, NFS  |
+| Windows-x86  | SMB/CIFS, GPFS  | CXFS,qqqdoublespaceqqqNFS  |
 | z/OS  | Sharing DASD across Sysplex  |   |
 
 
@@ -174,8 +837,8 @@
 | Client  | Server  | Internal data  | Transferable data  | Performance  |
 | --- | --- | --- | --- | --- |
 | Sync  | Sync  | 1  | 1  | Low  |
-| Sync  | Async  | 2 (secure the NFS server)  | 2 (secure the NFS server)  | Medium  |
-| Async  | Sync  | 1 (if cft.server.catalog.<br /> sync.enable=Yes)  | 1 (when using sync points)  | Medium - high  |
+| Sync  | Async  | 2qqqdoublespaceqqq (secure the NFS server)  | 2qqqdoublespaceqqq(secure the NFS server)  | Medium  |
+| Async  | Sync  | 1qqqdoublespaceqqq (if cft.server.catalog.<br /> sync.enable=Yes)  | 1qqqdoublespaceqqq (when using sync points)  | Medium - high  |
 | Async  | Async  | 3  | 3  | High  |
 
 
@@ -186,7 +849,7 @@
 | CFT_Full_Hostname  |  Host Address of the local server: FQDN (Fully Qualified Domain Name) or IP Address.<br/>When you re installing a cluster, there are two ways to define this parameter:<br/> • If you do not set this in the silent file, the installation determines it (if the machine is correctly configured) <br/> • Set the FQDN for each machine in the cluster, that is, for each host installation</li>  |
 | --- | --- |
 | Runtimedir  | The runtime directory must be in a shared directory.  |
-| LoadBalancer_Host  |  Specify the host address of the load balancer, which is the cluster's public IP address in an active/passive deployment. <blockquote> **Note:**<br/>The load balancer is used to connect to the Transfer CFT Copilot server. </blockquote>  |
+| LoadBalancer_Host  |  Specify the host address of the load balancer, which is the cluster's public IP address in an active/passive deployment. <blockquote> **Note**<br/>The load balancer is used to connect to the Transfer CFT Copilot server. </blockquote>  |
 | LoadBalancer_Port  | Specify the load balancer port, which is redirected to the Central Governance dedicated port of the Transfer CFT UI Server.  |
 
 
@@ -209,10 +872,10 @@
 
 |  Utility  |  Definition  |
 | --- | --- |
-| <a href="#cftinit">cftinit</a>  | General Transfer CFT initialization utility.  |
-| <a href="#cftutil">cftutil</a>  | Simplified display of the standard CFTUTIL commands.  |
-| <a href="#cftupdate">cftupdate</a>  | Management Utility updating the Transfer CFT configuration.  |
-|  <a href="#cftcatal">cftcatal</a>  |  Utility migrating and/or extending the {{&lt; TransferCFT/componentshortname &gt;}} catalog file.  |
+| <a href="#cftinit">cftinit</a>  | General Transfer CFT initialization utility.qqqdoublespaceqqq  |
+| <a href="#cftutil">cftutil</a>  | Simplified display of the standard CFTUTIL commands.qqqdoublespaceqqq  |
+| <a href="#cftupdate">cftupdate</a>  | Management Utility updating the Transfer CFT configuration.qqqdoublespaceqqq  |
+|  <a href="#cftcatal">cftcatal</a>  |  Utility migrating and/or extending theqqqdoublespaceqqq{{&lt; TransferCFT/componentshortname &gt;}} catalog file.  |
 |  <a href="#xfbadm">xfbadmgrp</a>  |  Group management utility (all users accessing the Transfer CFT Copilot server).  |
 |  <a href="#xfbadmusr1">xfbadmusr</a>  |  Utility managing users accessing the Transfer CFT Copilot server.  |
 |  <a href="#xvi">xvi</a>  |  Utility processing the conversion tables.  |
@@ -289,6 +952,511 @@
 
 
 
+============================== table nb count(24) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th >Parameter</th>
+<th >Automatic or default</th>
+<th >Description</th>
+<th >UCONF </th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td colspan="3" ><strong>Silent installation</strong></td>
+<td > </td>
+</tr>
+<tr >
+<td >Installation architecture</td>
+<td >@default = single</td>
+<td ><p>Defines single or cluster mode installation.</p>
+<p>Values: single, first_host, additional_host</p></td>
+<td >N/A</td>
+</tr>
+<tr >
+<td >installdir</td>
+<td > </td>
+<td >Transfer CFT installation directory.</td>
+<td >cft.install_dir</td>
+</tr>
+<tr >
+<td colspan="3" ><strong>Basic installation</strong></td>
+<td > </td>
+</tr>
+<tr >
+<td >runtimeDir</td>
+<td >./runtime</td>
+<td ><p>Transfer CFT runtime directory.</p>
+<p>Specify the directory where you want to install the Transfer
+CFT runtime directory.</p>
+<p>By default, the runtime directory is installed in a sub-directory of the Transfer CFT installation directory. Use the default directory, or
+specify a new directory. A runtime directory will be created if it does not already exist.</p></td>
+<td >cft.runtime_dir</td>
+</tr>
+<tr >
+<td ><p>Full_Hostname</p></td>
+<td >@automatic</td>
+<td ><p>Host Address of the local server: FQDN (Fully Qualified Domain Name) or IP Address. See <strong>Note</strong>*</p></td>
+<td >cft.full_hostname</td>
+</tr>
+<tr >
+<td >multinode_hostname</td>
+<td >@automatic</td>
+<td ><p>When not defined, this field is filled with the hostname of the machine where you are installing {{&lt; TransferCFT/transfercftname &gt;}}, whether it is the first host or an additional host.</p>
+<p>If the hostname contains a "." period, the value used consists of the name of the host preceding the first period. For example, "myhost.fqdn.net"qqqdoublespaceqqqwould be shortened to "myhost".</p></td>
+<td >cft.multi_node.hostnames</td>
+</tr>
+<tr >
+<td >multinode_host_address</td>
+<td >@automatic</td>
+<td ><p>If you do not specify a value, the machine's FQDN address isqqqdoublespaceqqqused.</p>
+<p>Note that if there is an error in the machine's configuration, the value taken could be incorrect. Be sure to check that you can ping the address, and that it is the value for the cluster network.</p></td>
+<td >cft.multi_node.hostnames.&lt;hostname&gt;.host</td>
+</tr>
+<tr >
+<td ><p>Instance_ID</p></td>
+<td >@default
+<p> </p></td>
+<td >The maximum length is 24.</td>
+<td >cft.instance_id</td>
+</tr>
+<tr >
+<td >Instance_Group</td>
+<td > </td>
+<td ><p>Transfer CFT instance group.</p>
+<p>The maximum length is 1000.</p></td>
+<td >cft.instance_group</td>
+</tr>
+<tr >
+<td colspan="3" ><strong>Security configuration</strong></td>
+<td > </td>
+</tr>
+<tr >
+<td ><p>CryptoKey_Password</p></td>
+<td >@mandatory</td>
+<td ><p>Seed password to generate the encryption key.</p>
+<p>The password must contains at least 8 characters, contain upper and</p>
+<p>lower case characters as well as numeric and special characters (*$!?+-@).</p></td>
+<td >N/A</td>
+</tr>
+<tr >
+<td ><p>CryptoKey_Key_File</p></td>
+<td >qqqdoublespaceqqq@default = $CFTDIRRUNTIME/data/crypto/crypkey</td>
+<td >Location that stores the generated key file.</td>
+<td >crypto.key_fname     </td>
+</tr>
+<tr >
+<td ><p>CryptoKey_Salt_File</p></td>
+<td >@default = $CFTDIRRUNTIME/data/crypto/crypsalt</td>
+<td >Location that stores the generated salt file.</td>
+<td >crypto.salt_fname</td>
+</tr>
+<tr >
+<td colspan="3" ><strong>Runtime configuration</strong></td>
+<td > </td>
+</tr>
+<tr >
+<td ><p>Key</p></td>
+<td > </td>
+<td ><p>qqqdoublespaceqqqEnter the license key for the Transfer CFT product.</p>
+<p>The key is stored in the $CFTDIRRUNTIME/conf/cft.key.</p>
+<p><em>Without the key you can install, but not start the product.</em></p></td>
+<td > </td>
+</tr>
+<tr >
+<td >Catalog_File_Size</td>
+<td >@default= 10000</td>
+<td ><p>Sets the default catalog size.</p></td>
+<td >cft.cftcat.default_size</td>
+</tr>
+<tr >
+<td >Communication_File_Size</td>
+<td >@default = 1000</td>
+<td >Sets the default communication file size.</td>
+<td >cft.cftcom.default_size</td>
+</tr>
+<tr >
+<td >PESIT_Port</td>
+<td >@default = 1761</td>
+<td ><p>The port number of the PeSiT protocol.</p>
+<p> </p></td>
+<td >samples.pesitany_sap.value</td>
+</tr>
+<tr >
+<td >PESIT_SSL_Port</td>
+<td >@default = 1762</td>
+<td >The port number of the PeSIT protocol using SSL.</td>
+<td >samples.pesitssl_sap.value</td>
+</tr>
+<tr >
+<td >COMS_Port</td>
+<td >@default = 1765</td>
+<td ><p>The port number of the COMS synchronous communication media.</p>
+<p> </p></td>
+<td >samples.coms_port.value</td>
+</tr>
+<tr >
+<td >Copilot_Port</td>
+<td >@default = 1766</td>
+<td ><p>Sets the port number for the Transfer CFT Copilot server that listens for</p>
+<p>incoming unsecured and secured (SSL) connections.</p>
+<p>The same port number is used for the Graphical User Interfaceqqqdoublespaceqqqand Web Services</p>
+<p>with or without SSL.</p></td>
+<td >copilot.general.serverport</td>
+</tr>
+<tr >
+<td >Copilot_OnlySSL</td>
+<td >@default = Yes</td>
+<td ><p>Copilot only allows SSL connection.</p>
+<p>This value applies to the old Transfer CFT UI, Webservices and JPI.</p>
+<p>If you set this to Yes, it disables the use of the HTTP server when an SSL context is
+defined (HTTPS only).</p></td>
+<td >copilot.http.onlyssl</td>
+</tr>
+<tr >
+<td >Copilot_SSL_Port</td>
+<td >@default = 1767</td>
+<td >Sets the port number for the Transfer CFT Copilot server that listens for
+incoming secured (SSL with mutual authentication) connections.
+Only used by the Governance.</td>
+<td >copilot.general.ssl_serverport</td>
+</tr>
+<tr >
+<td ><p>UI_DefaultUser_Username</p>
+<p>UI_DefaultUser_Password</p></td>
+<td ></td>
+<td ><p><em>UNIX systems only</em></p>
+<p>The default Transfer CFT UI user/password.</p></td>
+<td >N/A</td>
+</tr>
+<tr >
+<td ><p>RESTAPI_Enable</p>
+<p> </p>
+<p> </p></td>
+<td >@default = Yes</td>
+<td ><p>Setting this to Yes activates the Transfer CFT REST API Server.</p></td>
+<td >copilot.restapi.enable</td>
+</tr>
+<tr >
+<td >RESTAPI_Port</td>
+<td >1768</td>
+<td ><p>The port number used to connect to the REST API server.</p></td>
+<td >copilot.restapi.serverport</td>
+</tr>
+<tr >
+<td ><p>RESTAPI_Certificate_Path</p>
+<p>RESTAPI_Cert_Pass</p></td>
+<td > </td>
+<td ><p>Sets the certificate and the corresponding password to be used by the Transfer</p>
+<p>CFT REST API Server and for HTTPS connections with Copilot (the old Transfer CFT UI, Web services, and JPI).</p>
+<ul>
+<li>When REST API is enabled, you must complete these fields.</li>
+<li>When Copilot_OnlySSL is activated, you must complete these fields.</li>
+</ul>
+<p>When using Central Governance, the REST API server automatically uses the SSL business certificate generated during the registration; there is no need to pre-define this value if you are going to register Transfer CFT with Central Governance.</p></td>
+<td >copilot.ssl.SslCertFile</td>
+</tr>
+<tr >
+<td colspan="4" ><strong>Multi-node and Cluster</strong></td>
+</tr>
+<tr >
+<td >Multinode_Enable</td>
+<td >@default = No</td>
+<td ><p>Enable the multi-node architecture.</p>
+<p>To use a multi-node architecture, you must define the multi-node option in the initialize.properties file.</p></td>
+<td >cft.multi_node.enable</td>
+</tr>
+<tr >
+<td >Multinode_Numberqqqdoublespaceqqq</td>
+<td >@default = 2</td>
+<td >Enter the number of nodes.</td>
+<td >cft.multi_node.nodes</td>
+</tr>
+<tr >
+<td >LoadBalancer_Host</td>
+<td > </td>
+<td ><p>Specify the host address of the load balancer.</p>
+<p>When using an ACTIVE/ACTIVE or ACTIVE/PASSIVE deployment, you require a load
+balancer to connect to the Transfer CFT Copilot server.</p></td>
+<td >cft.multi_node.load_balancer.host</td>
+</tr>
+<tr >
+<td >LoadBalancer_Port</td>
+<td > </td>
+<td >Specify the load balancer port, which is redirected to the
+Central Governance dedicated port of the Transfer CFT UI Server.
+<p>When using ACTIVE/ACTIVE or ACTIVE/PASSIVE deployment, you require a load
+balancer to connect to the Transfer CFT Copilot server.</p></td>
+<td >cft.multi_node.load_balancer.port</td>
+</tr>
+<tr >
+<td colspan="4" ><strong>Central Governance</strong></td>
+</tr>
+<tr >
+<td ><p>qqqdoublespaceqqq CG_Enable</p></td>
+<td ><p>@default = No</p></td>
+<td >Enter Yes to enable Central Governance connectivity.</td>
+<td >cg.enable</td>
+</tr>
+<tr >
+<td >CG_Host</td>
+<td > </td>
+<td ><p>The Central Governance host address.</p>
+<p>If you enabled {{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field.</p></td>
+<td >cg.host</td>
+</tr>
+<tr >
+<td ><p>CG_Port</p></td>
+<td >@default = 12553</td>
+<td ><p>The Central Governance port.</p>
+<p>If you enabled {{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field.</p></td>
+<td >cg.port</td>
+</tr>
+<tr >
+<td >CG_Mutual_Port</td>
+<td >@default = 12554</td>
+<td ><p>The Central Governance port for Mutual Authentication.</p>
+<p>If you enabled {{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field.</p></td>
+<td >cg.mutual_auth_port</td>
+</tr>
+<tr >
+<td >CG_RestAPI_Port</td>
+<td >@defaultqqqdoublespaceqqq= 8081</td>
+<td ><p>Specify the port to use to communicate with Central Governance's REST API (this port is only used when am.type=cg).</p>
+<p>If you enabled {{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field.</p></td>
+<td >cg.restapi_port</td>
+</tr>
+<tr >
+<td >CG_SharedSecret</td>
+<td > </td>
+<td ><p>Specify the shared secret, which is needed to register with the Central Governance server.</p>
+<p>If you enabled {{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field.</p></td>
+<td >cg.shared_secret</td>
+</tr>
+<tr >
+<td >CG_ConfigurationPolicyqqqdoublespaceqqq</td>
+<td > </td>
+<td >Specify Central Governance configuration policy to apply to the Transfer CFT
+instance.</td>
+<td >cg.configuration_policy</td>
+</tr>
+<tr >
+<td >CG_Certificate_Path</td>
+<td >@default = $CFTDIRRUNTIME/conf/pki/passportCA.pem</td>
+<td >Specify the Custom Certificate to authenticate Central Governance.</td>
+<td >N/A</td>
+</tr>
+<tr >
+<td colspan="4" ><strong>Sentinel Connector</strong></td>
+</tr>
+<tr >
+<td >Sentinel_Enable</td>
+<td >@default = No</td>
+<td ><p>Set to Yes to enable Sentinel.</p>
+<p>Do not enable this if you have enabled {{&lt; TransferCFT/centralgovernancename &gt;}}.</p></td>
+<td >sentinel.xfb.enable</td>
+</tr>
+<tr >
+<td >Sentinel_Host</td>
+<td > </td>
+<td >Enter the Sentinel host address.</td>
+<td >sentinel.trkipaddr</td>
+</tr>
+<tr >
+<td >Sentinel_Port</td>
+<td >@default= 1305</td>
+<td ><p>Enter the Sentinel port.</p>
+<p>You do not need to define this field if you are registering Transfer CFT with {{&lt; TransferCFT/centralgovernancename &gt;}}.</p></td>
+<td >sentinel.trkipport</td>
+</tr>
+<tr >
+<td >Sentinel_Log_Filter</td>
+<td >@default = EWF</td>
+<td ><p>Sentinel Log Filter: (I)nformation, (W)arning, (E)rror, (F)atal
+Authorized characters are only I, W, E, F</p>
+<p>You can only use each letter once.</p></td>
+<td >sentinel.xfb.log</td>
+</tr>
+<tr >
+<td >Sentinel_Transfer_Filter</td>
+<td >@default = ALL</td>
+<td ><p>Sentinel Transfer Filter</p>
+<p>Possible values are: ALL, SUMMARY, NO, ERROR</p></td>
+<td >sentinel.xfb.transfer</td>
+</tr>
+<tr >
+<td >Sentinel_Use_SSL </td>
+<td >@default = Yes</td>
+<td >Enables an SSL connection with Sentinel.</td>
+<td >sentinel.xfb.use_ssl</td>
+</tr>
+<tr >
+<td >Sentinel_Certificate_Path</td>
+<td >@default=$CFTDIRRUNTIME/conf/pki/passportCA.pem</td>
+<td >Sentinel root certificate.</td>
+<td >N/A</td>
+</tr>
+<tr >
+<td colspan="4" >Windows Services</td>
+</tr>
+<tr >
+<td >CFT_StartAsService</td>
+<td >@default = No</td>
+<td >Start Transfer CFT Server using service mode.</td>
+<td >cft.nt.service_mode</td>
+</tr>
+<tr >
+<td ><p>CFT_ServiceName</p>
+<p>CFT_ServiceDisplayName</p></td>
+<td ><p>@default= Transfer_CFT</p>
+<p>@default= AMPLIFY Transfer CFT</p></td>
+<td ><p>Transfer CFT Server Service name.</p>
+<p>You cannot have spaces in the CFT_ServiceName.</p></td>
+<td > cft.nt.service_name</td>
+</tr>
+<tr >
+<td >CFT_ServiceSpecificUser</td>
+<td >@default= No</td>
+<td >Use a specific account to start the Transfer CFT Server Service.</td>
+<td >N/A</td>
+</tr>
+<tr >
+<td ><p>CFT_ServiceUsername</p>
+<p>CFT_ServicePassword</p></td>
+<td > </td>
+<td >The Username (Domain\User) of the user who will start the Transfer CFT Server.</td>
+<td >N/A</td>
+</tr>
+<tr >
+<td >CFT_StartType</td>
+<td >@default= auto</td>
+<td >Transfer CFT Server service start type: auto, manual, disabled</td>
+<td >N/A</td>
+</tr>
+<tr >
+<td >CFTUI_StartAsService</td>
+<td >@default= No</td>
+<td >Start Transfer CFT UI Server using service mode.</td>
+<td >copilot.nt.service_mode</td>
+</tr>
+<tr >
+<td >CFTUI_ServiceName
+CFTUI_ServiceDisplayName</td>
+<td ><p>@default= Transfer_CFT_UI</p>
+<p>@default= AMPLIFY Transfer CFT UI</p></td>
+<td ><p>Transfer CFT UI Server Service name.</p>
+<p>You cannot have spaces in theqqqdoublespaceqqqCFTUI_ServiceName.</p></td>
+<td >copilot.nt.service_name</td>
+</tr>
+<tr >
+<td >CFTUI_ServiceSpecificUser</td>
+<td >@default= No</td>
+<td >Use a specific account to start the Transfer CFT UI Server Service.</td>
+<td >N/A</td>
+</tr>
+<tr >
+<td >CFTUI_ServiceUsername
+CFTUI_ServicePassword</td>
+<td > </td>
+<td >The Username (Domain\User) of the user who will start the Transfer CFT UI Server.</td>
+<td >N/A</td>
+</tr>
+<tr >
+<td >CFTUI_StartType</td>
+<td >@default= auto</td>
+<td >The Transfer CFT UI Server service start type: auto, manual, disabled</td>
+<td >N/A</td>
+</tr>
+<tr >
+<td colspan="4" ><strong>Miscellaneous</strong></td>
+</tr>
+<tr >
+<td >JAVA_BINARY_PATH</td>
+<td > </td>
+<td >Java binary path used to start Transfer CFT jar files.</td>
+<td >cft.jre.java_binary_path</td>
+</tr>
+<tr >
+<td colspan="4" ><strong>SAML</strong></td>
+</tr>
+<tr >
+<td >Enable SAML</td>
+<td >@default = No</td>
+<td > </td>
+<td >am.type= 'saml'</td>
+</tr>
+</tbody>
+</table>
+
+
+============================== table nb count(25) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th >Screen</th>
+<th >Description</th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td >Welcome</td>
+<td >Welcome to Transfer CFT landing page.</td>
+</tr>
+<tr >
+<td >License agreement</td>
+<td >Select the check-box "<code>I accept...</code>" to continue with the installation.</td>
+</tr>
+<tr >
+<td >Installation architecture</td>
+<td ><p>Select to install on a single machine, a Cluster - first host, or cluster - additional host.</p>
+<ul>
+<li>Single - Installs a single instance of Transfer CFT on a machine.</li>
+<li>Cluster - Installs Transfer CFT on several machines. Select this option if you want to install Transfer CFT in multi-host/multi-node or in active/passive mode.</li>
+</ul>
+<ul>
+<li>Cluster - First host: Install on a first machine before adding additional machines (nodes). You must install on a first node before you can select the option to install on additional nodes.</li>
+<li>Cluster - Additional host: After installing on the first machine, you can select this option to install on an additional machine(s).</li>
+</ul>
+<ul>
+<li>If you are performing a cluster installation and you enable the multi-node option in the configuration file, this creates an active/active Transfer CFT installation. Otherwise, the installation is active/passive.</li>
+</ul></td>
+</tr>
+<tr >
+<td >Installation Directory</td>
+<td >Specify the directory where you want to install Transfer
+CFT. This is the directory where the Transfer CFT product filesqqqdoublespaceqqqare installed.</td>
+</tr>
+<tr >
+<td >Configuration filename</td>
+<td ><p>Enter the path, or navigate, to the configuration file (initialize.properties file) containing details for the Transfer CFT installation. This file defines settings such as hostname, license key, governance options, and so on.</p>
+<p>If you do not specify a file, you can continue with the installation, but the installation procedure does not create the runtime directory. (Run the <code>initialize </code>command post installation if you opt to create the runtime directory at a later date.)</p></td>
+</tr>
+<tr >
+<td >Generate Encryption Key</td>
+<td ><p>Enter your password and reenter it to confirm.</p></td>
+</tr>
+<tr >
+<td ><p>Ready to install</p></td>
+<td ><p>Click <strong>Next</strong> to complete the installation process, or <strong>Back</strong> to review or modify installation options.</p></td>
+</tr>
+<tr >
+<td colspan="2" >If you plan to integrate Transfer CFT with and also plan to use Service mode, please refer to the additional instructions in <a href="../../post_install_transfercft#Service">Service mode set up when using Central Governance</a>.</td>
+</tr>
+<tr >
+<td >Transfer CFT Server Service</td>
+<td >Enter the Service Mode parameters for Transfer CFT.</td>
+</tr>
+<tr >
+<td >Transfer CFT UI Server Service</td>
+<td >Enter the Service Mode parameters for the {{&lt; TransferCFT/transfercftname &gt;}} UI.</td>
+</tr>
+</tbody>
+</table>
+
+
 ============================== table nb count(26) table converted to MD ========================================
 
 
@@ -296,7 +1464,7 @@
 | --- | --- |
 | Runtimedir  | The runtime directory must be in a shared directory.  |
 | Multinode_Enable  |  Enable the multi-node architecture.<br/>To use a multi-node architecture, you must define the multi-node option in the initialize.properties file.  |
-| Multinode_Number  | Enter the number of nodes.  |
+| Multinode_Numberqqqdoublespaceqqq  | Enter the number of nodes.  |
 | LoadBalancer_Host  |  Specify the host address of the load balancer.<br/>When using an ACTIVE/ACTIVE or ACTIVE/PASSIVE deployment, you require a load balancer to connect to the Transfer CFT Copilot server.  |
 | LoadBalancer_Port  | Specify the load balancer port, which is redirected to the Central Governance dedicated port of the Transfer CFT UI Server. When using ACTIVE/ACTIVE or ACTIVE/PASSIVE deployment, you require a load balancer to connect to the Transfer CFT Copilot server.  |
 
@@ -322,9 +1490,9 @@
 | --- | --- | --- |
 | AIX  | GPFS, NFSv4*  | NFSv3, CXFS, VeritasSF  |
 | HP-UX  | NFSv4*  | NFSv3, CXFS, VeritasSF  |
-| Linux-x86  | GPFS, GFS2, NFSv4*, AWS EFS  | NFSv3, CXFS, ACFS, OCFSv1, OCFSv2, QFS, VeritasSF  |
+| Linux-x86  | GPFS, GFS2, NFSv4*, AWS EFS  | NFSv3, CXFS,qqqdoublespaceqqqACFS, OCFSv1, OCFSv2, QFS, VeritasSF  |
 | Solaris  | NFSv4*  | NFSv3, CXFS, QFS, VeritasSF  |
-| Windows-x86  | SMB/CIFS, GPFS  | CXFS, NFS  |
+| Windows-x86  | SMB/CIFS, GPFS  | CXFS,qqqdoublespaceqqqNFS  |
 | z/OS  | Sharing DASD across Sysplex  |   |
 
 
@@ -335,7 +1503,7 @@
 | CFT_Full_Hostname  |  Host Address of the local server: FQDN (Fully Qualified Domain Name) or IP Address.<br/>When you re installing a cluster, there are two ways to define this parameter:<br/> • If you do not set this in the silent file, the installation determines it (if the machine is correctly configured) <br/> • Set the FQDN for each machine in the cluster, that is, for each host installation</li>  |
 | --- | --- |
 | Runtimedir  | The runtime directory must be in a shared directory.  |
-| LoadBalancer_Host  |  Specify the host address of the load balancer, which is the cluster's public IP address in an active/passive deployment. <blockquote> **Note:**<br/>The load balancer is used to connect to the Transfer CFT Copilot server. </blockquote>  |
+| LoadBalancer_Host  |  Specify the host address of the load balancer, which is the cluster's public IP address in an active/passive deployment. <blockquote> **Note**<br/>The load balancer is used to connect to the Transfer CFT Copilot server. </blockquote>  |
 | LoadBalancer_Port  | Specify the load balancer port, which is redirected to the Central Governance dedicated port of the Transfer CFT UI Server.  |
 
 
@@ -347,7 +1515,7 @@
 | --- | --- |
 |  Transfer_CFT_&lt;version&gt;_mvs_&lt;format&gt;.bin  |  Product  |
 |  Transfer_CFT_&lt;version&gt;_mvs_&lt;format&gt;_J1IDIST.txt  |  JCL that creates the distribution environment  |
-|  Transfer_CFT_&lt;version&gt;_mvs_&lt;format&gt;_J2IICFT.txt  |  JCL that creates the instance environment  |
+|  Transfer_CFT_&lt;version&gt;_mvs_&lt;format&gt;_J2IICFT.txt  |  JCL that creates theqqqdoublespaceqqqinstance environment  |
 
 
 
@@ -387,7 +1555,7 @@
 |  LOG  |  Installation log PS – VB – 255 DSNTYPE=LIBRARY (NON-SMP/E INSTALLATION)  |  1  |
 |  UPARM  |  Configuration parameters PO – VB – 255 DSNTYPE=LIBRARY  |  2  |
 | EXEC  |  Transfer CFT procedures PO – FB 80 DSNTYPE=LIBRARY  | 2  |
-| XMLLIB  |  XML components (CSD, etc.) PO – VB - 4090 DSNTYPE=LIBRARY  | 2  |
+| XMLLIBqqqdoublespaceqqqqqqdoublespaceqqq  |  XML components (CSD, etc.) PO – VB - 4090 DSNTYPE=LIBRARY  | 2  |
 | PKIMSG  |  Trusted File messages PO – FB - 4090 DSNTYPE=LIBRARY  | 1  |
 
 
@@ -408,7 +1576,7 @@
 |  XMLLIB  |  PO – VB – 4090<br/>DSNTYPE=LIBRARY  |  SPACE = (27998,(100,50,-))  |
 |  CERTIF  |  PO – VB – 4090<br/>DSNTYPE=LIBRARY  | SPACE = (27998,(10,5,-))  |
 |  LOAD  |  DSNTYPE=LIBRARY  |  SPACE = (CYL,(120,50,-))  |
-| <span id="USER.load"></span>USER.LOAD  | DSNTYPE=LIBRARY  | SPACE = (CYL,(50,20,-))  |
+| <span id="USER.load"></span>USER.LOAD  | DSNTYPE=LIBRARY  | SPACEqqqdoublespaceqqq= (CYL,(50,20,-))  |
 |  UCONF  |  Runtime configuration parameters<br/>PS – VB - 2048  |  SPACE = (TRK,(5,2))  |
 | UCONFRUN  |  Runtime configuration parameters<br/>PS – VB – 2048  | SPACE=(TRK,(5,2))  |
 | USER.OBJ  |  API and exits objects<br/>PO – FB – 80<br/>DSNTYPE=LIBRARY  | SPACE=(3200,(200,100,-))  |
@@ -420,7 +1588,7 @@
 | MONLOG  |  Started Transfer CFT server log for multi-node PS – VB – 255  | SPACE = (TRK,(20,10))  |
 | UPLOAD  |  Upload library used by Central Governance PO – FB – 80 DSNTYPE=LIBRARY  | SPACE = (TRK,(20,10))  |
 | LOG  | Installation LOG PS – VB - 255  | SPACE = (TRK,(10,50))  |
-| CRYPKEY  | File name containing the private key that enciphers data  |   |
+| CRYPKEYqqqdoublespaceqqq  | File name containing the private key that enciphers data  |   |
 | CRYPSALT  | File name containing the salt used to create the private key  |   |
 
 
@@ -547,7 +1715,7 @@
 | Value  | Default value  | Description  |
 | --- | --- | --- |
 |  &amp;cftinstall  | AXWAY.XFB.D332  | Library prefix qualifiers for distribution environment  |
-|  &amp;distlev  | CF030000  | Distribution prefix level  |
+|  &amp;distlevqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq  | CF030000  | Distribution prefix level  |
 |  &amp;hostuplib  |  AXWAY.XFB.D332.CF030000.UPLIB  | Library prefix to upload product  |
 |  &amp;cftruntime  | AXWAY.V332  | Library for the runtime creation of the target environment  |
 |  &amp;patch  | N/A  | Information about last patch applied  |
@@ -557,7 +1725,7 @@
 |  &amp;password  | N/A  | z/OS password  |
 |  &amp;installvol  | N/A  | Volume Serial for distribution environment  |
 |  &amp;runtimevol  | N/A  | Volume Serial for runtime environment  |
-|  &amp;account  | ()  | Accounting  |
+|  &amp;accountqqqdoublespaceqqq  | ()  | Accounting  |
 |  &amp;class  | A  | Class  |
 |  &amp;unit  | 3390  | Unit  |
 |  &amp;submit  | Y  | Submit JCL for the runtime creation  |
@@ -573,7 +1741,7 @@
 |  userid  | '&amp;SYSUID'  |  Name of user authorized to submit the installation JCLs.  |
 |  account  | 'valacc'  |  Account number with which the installation JCLs are submitted **(*)**.  |
 |  msgclass  | 'MSGCLASS=R,'  |  Message output class. To add other JOB statement parameter use, for example: 'MSGCLASS=R,REGION=0M,'  |
-|  class  | 'CLASS=P,'  |  JCL installation execution class **(*)**.<br/>Keyword and value with a comma. The keyword can be omitted by using (two) single quotation marks ''.  |
+|  class  | 'CLASS=P,'  |  JCL installation execution class **(*)**.<br/>Keyword and value with a comma. The keyword can be omitted by using (two) single quotation marks ''.qqqdoublespaceqqq  |
 |  jobparm  | '//*JOBPARM ROOM=CFTx'  |  Parameters relating to JES2 installation JOBs **( //* if none)**.  |
 |  sysout  | '*'  |  Execution report output class.  |
 |  sysda  | 'VIO'  |  UNITNAME for the LINK-EDIT temporary files (VIO/SYSDA).  |
@@ -582,13 +1750,13 @@
 |  isppfx  | 'ISP'  |  ISPF libraries prefix.  |
 |  asmcmp  | 'ASMA90'  |  High Level Assembler.  |
 |  lcobol  | 'IGY'  |  COBOL data set prefix that is used in JCL I91APICP.  |
-| acmp  | 'yes'  |  Compile/link ASM EXITs and APIs.  |
-| cobcmp  |  'yes'  |  Compile/link COBOL EXITs and APIs.  |
-| ccmp  |  'yes'  | Compile/link C EXITs and APIs.  |
+| acmp  | 'yes'  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq Compile/link ASMqqqdoublespaceqqq EXITs and APIs.qqqdoublespaceqqq  |
+| cobcmp  | qqqdoublespaceqqq'yes'  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq Compile/link COBOL EXITs and APIs.  |
+| ccmp  | qqqdoublespaceqqq'yes'  | Compile/link Cqqqdoublespaceqqqqqqdoublespaceqqq EXITs and APIs.  |
 |  cftvol  | 'volsert'  |  Name of the volume for Transfer CFT z/OS file creation **(*)**.  |
 |  cftunit  | '3390'  |  Disk unit type.  |
 |  cftv2  | '&amp;&amp;TARGET'  |  Transfer CFT z/OS file creation alias **(*)**.  |
-| hostadd  | '&amp;&amp;HOSTBYADDR'  | Host address (or '&amp;&amp;HOSTID')  |
+| hostadd  | '&amp;&amp;HOSTBYADDR'  | Host addressqqqdoublespaceqqq (or '&amp;&amp;HOSTID')  |
 
 
 
@@ -612,14 +1780,14 @@
 | <span id="pswfname"></span>pswfname  | '&amp;&amp;TARGET".UPARM(GENKEY)"'  |  The password, required to generate the key for installation, is temporarily stored in the 'pswfname' file (and is removed after installation).<br/>**Syntax**: <code>--pass &lt;password&gt;</code>  |
 | keyfname  | '&amp;&amp;TARGET".CRYPKEY"'  | File in which the generated key is stored.  |
 | sltfname  | '&amp;&amp;TARGET".CRYPSALT"'  | File in which the computed salt is stored.  |
-| stacompat  | 'NO'  | Catalog state compatibility: cft.state_compat  |
-| lstcompat  | 'NO'  | Catalog state compatibility: cft.listcat_compat  |
+| stacompat  | 'NO'  | Catalog state compatibility: cft.state_compatqqqdoublespaceqqq  |
+| lstcompat  | 'NO'  | Catalog state compatibility:qqqdoublespaceqqqcft.listcat_compat  |
 | pesitany  | '1761'  | Port id defined in the protocol PeSIT ANY parameter.  |
 | pesitssl  | '1762'  | Protocol PeSIT SSL port.  |
-| sftpprot  | '1763'  | Protocol SFTP port.  |
-|  apisp  | '1765'  |  Synchronous API TCP/IP port (The address is 127.0.0.1 in* ..SAMPLE(CFTPARM) cftcom).  |
-| idparm  |  'IDPARM0'  |  CFTPARM identifier: (cft.idparm).<br/> • This parameter is set during installation.<br/> • JCL CFTMAIN uses this parameter, where MNRMAIN (PARM=).</li>  |
-| cftinst  | '&amp;%"Z11"$pesitany'  |  The Transfer CFT instance ID, CFTPARM partner (value size &lt;= 24). This value identifies the Transfer CFT and must be unique (cft.instance_id).<br/>If Composer is enabled, the naming conventions differs:<br/> • Value size &lt;= 8<br/> • First alphabetic character<br/> • Naming convention: the same as the PDS’s member<br/>The sentence '&amp;%Mvsvar("SYSNAME")" "$pesitany' is replaced with the result of the REXX function Mvsvar("SYSNAME")" concatenated with the value of the previously customized pesitany field.<br/>"Z11" represents the z/OS partition’s name. For example, $pesitany corresponds to the value assigned to keyword 'pesitany'.  |
+| sftpprot  | '1763'  | Protocol SFTPqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqport.  |
+|  apisp  | '1765'  |  Synchronous API TCP/IP port (The address is 127.0.0.1 in*qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq ..SAMPLE(CFTPARM) cftcom).  |
+| idparm  | qqqdoublespaceqqq'IDPARM0'  |  CFTPARM identifier: (cft.idparm).<br/> • This parameter is set during installation.<br/> • JCL CFTMAIN uses this parameter, where MNRMAIN (PARM=).</li>  |
+| cftinst  | '&amp;%"Z11"$pesitany'  |  The Transfer CFT instance ID, CFTPARM partner (value size &lt;= 24). This value identifies the Transfer CFT and must be unique (cft.instance_id).<br/>If Composer is enabled,qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqthe naming conventions differs:<br/> • Value size &lt;= 8<br/> • First alphabetic character<br/> • Naming convention: the same as the PDS’s member<br/>The sentence '&amp;%Mvsvar("SYSNAME")" "$pesitany'qqqdoublespaceqqqis replaced with the result of the REXX functionqqqdoublespaceqqqMvsvar("SYSNAME")" concatenated with the value of the previously customized pesitany field.<br/>"Z11" represents theqqqdoublespaceqqqz/OS partition’s name. For example, $pesitany corresponds to the value assigned to keyword 'pesitany'.qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq  |
 | cftgroup  | 'Production.zos'  |  Transfer CFT instance GROUP  |
 
 
@@ -631,9 +1799,9 @@
 | --- | --- | --- |
 |  copenable  | 'yes'  |  Enable the {{&lt; TransferCFT/transfercftname &gt;}} {{&lt; TransferCFT/copilotname &gt;}} server.  |
 |  copladdr  | '&amp;&amp;HOSTBYADDR'  |  Transfer CFT {{&lt; TransferCFT/copilotname &gt;}} server TCP/IP address. The key word '&amp;&amp;HOSTBYADDR' is substituted by the result of the REXX function socket ("GETHOSTBYADDR"). (copilot.general.serverhost)  |
-|  coplport  | '1766'  |  Transfer CFT {{&lt; TransferCFT/copilotname &gt;}} listening port (copilot.general.serverport).  |
-| coplsslp  | '1767'  |  Copilot server SSL listening port. *Mandatory for (copilot.general.ssl_serverport).  |
-| coppath  | '/home/AXWAY/CFT32X/inst/cop'  | USS directory for Transfer CFT {{&lt; TransferCFT/copilotname &gt;}} server files. (copilot.http.httprootdir)  |
+|  coplport  | '1766'  |  Transfer CFT {{&lt; TransferCFT/copilotname &gt;}}qqqdoublespaceqqqlistening port (copilot.general.serverport).  |
+| coplsslp  | '1767'  |  Copilot server SSL listening port. *Mandatory for qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq(copilot.general.ssl_serverport).  |
+| coppathqqqdoublespaceqqq  | '/home/AXWAY/CFT32X/inst/cop'  | USS directory for Transfer CFT {{&lt; TransferCFT/copilotname &gt;}} server files. (copilot.http.httprootdir)  |
 | restenable  | 'yes'  | Enable Copilot REST API (Yes/No).  |
 | restport  | '1768'  | Copilot REST API server port  |
 
@@ -644,8 +1812,8 @@
 
 | Keyword  | Default  | Description  |
 | --- | --- | --- |
-| jobcft  | 'S:&amp;:1.8SJOBNAME'  | Transfer CFT job name.  |
-| jobcop  | 'N:COPP'  |  Transfer CFT Copilot server port.<br/>* 'COPP' is a keyword, and the asterisk value * is found via the uconf file.  |
+| jobcftqqqdoublespaceqqq  | 'S:&amp;:1.8SJOBNAME'  | Transfer CFT job name.  |
+| jobcopqqqdoublespaceqqq  | 'N:COPP'  |  Transfer CFT Copilot server port.<br/>*qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq 'COPP' is a keyword, and the asterisk value * is found via the uconf file.  |
 
 
 
@@ -654,7 +1822,7 @@
 
 | Keyword  | Default  | Description  |
 | --- | --- | --- |
-| xpkiopt  | 'YES'  |  Exit PKI used (YES or NO)<br/>Note that xpkiopt=YES is mandatory when **pkitype**=system, and that you should use the YES option when possible, even if using pkitype=**cft** or pkitype=**passport**.  |
+| xpkiopt  | 'YES'  |  Exit PKI used (YES or NO)<br/>Note that xpkiopt=YES is mandatory when **pkitype**=system, and that you should use the YES option when possible,qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqeven if using pkitype=**cft** orqqqdoublespaceqqqpkitype=**passport**.  |
 | csflib  | 'CSF.SCSFMOD0'  | CSF library, mandatory if xpkiopt=yes  |
 | pkitype  | 'cft'  |  Possible values:<br/> • cft: certificates are stored in a PKI internal datafile<br/> • passport: manages certificates via PassPort<br/> • system: PKI system is activated</li>  |
 |  pasaddr  | 'pasaddr'  |  If pkitype=**passport** then the PassPort server TCP/IP listening address.  |
@@ -705,13 +1873,13 @@
 | icftpart  | 'PART'  | Transfer CFT partner file identifier  |
 | icftpki  | 'PKIFILE'  | Transfer CFT PKI file identifier  |
 |  cftloga  |  'LOG1'  |  Transfer CFT log file identifier  |
-|  cftlogb  | 'LOG2'  | Transfer CFT log alternate file identifier  |
-| cftacca  | 'ACCNT1'  | Transfer CFT account file identifier  |
-| cftaccb  | 'ACCNT2'  | Transfer CFT account alternate file identifier  |
+|  cftlogb  | 'LOG2'  | Transfer CFT log alternate fileqqqdoublespaceqqqidentifier  |
+| cftacca  | 'ACCNT1'  | Transfer CFT account fileqqqdoublespaceqqqidentifier  |
+| cftaccb  | 'ACCNT2'  | Transfer CFT account alternate fileqqqdoublespaceqqqidentifier  |
 | cftuconf  | 'UCONF'  | Unified configuration file  |
 | cftucrun  | 'UCONFRUN'  | Unified configuration file runtime identifier  |
 | cftuparm  | 'UPARM'  | The unified configuration file definition (member DEFAULT)  |
-| secini  | 'SECINI'  |  Security files identifier  |
+| seciniqqqdoublespaceqqq  | 'SECINI'  |  qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq Security files identifier  |
 | secact  | 'SECACT'  | Security actions  |
 | secobj  | 'SECOBJ'  | Security objects  |
 
@@ -736,13 +1904,13 @@
 | Keyword  | Default  | Description  |
 | --- | --- | --- |
 | srenable  | 'no'  | Enable/disable {{&lt; TransferCFT/securerelayname &gt;}}.  |
-| srmapath  | '/home/AXWAY/CFT32X/inst'  |  USS directory for Secure Relay Master Agent (/xsr is automatically added). &lt;/p&gt; <blockquote> **Note:**<br/>Read only, you can share the directory with other Transfer CFTs. </blockquote>  |
-| srmarun  | '/home/AXWAY/CFT32X/runtime/xsr'  | Runtime directory for Secure Relay Master Agent; one per instance, with Read/Write rights for {{&lt; TransferCFT/componentshortname &gt;}}.  |
-| srmacopo  | 'srmacopo'  | Secure Relay Master Agent communication port.  |
-| srrahost  | 'srrahost'  | Secure Relay Router Agent host.  |
-| srraadpo  | '6810'  | Secure Relay Router Agent administration port.  |
-| srracopo  | '6811'  | Secure Relay Router Agent communication port, with one port per Transfer CFT instance.  |
-| srrasap  | 'srrasap'  |  Transfer CFT/Secure Relay configuration listening port on Router Agent side.  |
+| srmapath  | '/home/AXWAY/CFT32X/inst'  |  qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqUSS directory for Secure Relay Master Agentqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq (/xsr is automatically added).qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq &lt;/p&gt; <blockquote> **Note**<br/>Read only, you can share the directoryqqqdoublespaceqqqwith other Transfer CFTs. </blockquote>  |
+| srmarunqqqdoublespaceqqq  | '/home/AXWAY/CFT32X/runtime/xsr'  | Runtime directory for Secure Relay Master Agent; one per instance, with Read/Write rights for {{&lt; TransferCFT/componentshortname &gt;}}.qqqdoublespaceqqq qqqdoublespaceqqq  |
+| srmacopo  | 'srmacopo'  | Secure Relay Master Agent communicationqqqdoublespaceqqqport.  |
+| srrahost  | 'srrahost'  | Secure Relay Router Agent host.qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq  |
+| srraadpo  | '6810'  | Secure Relay Router Agent administration port.qqqdoublespaceqqq  |
+| srracopo  | '6811'  | Secure Relay Router Agent communicationqqqdoublespaceqqqport, with one port per Transfer CFT instance.qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq  |
+| srrasap  | 'srrasap'  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq Transfer CFT/Secure Relay configurationqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq listeningqqqdoublespaceqqqqqqdoublespaceqqq port on Router Agent side.qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq  |
 | srrassap  | 'srrassap'  | SSL listening port on Router Agent side.  |
 
 
@@ -753,11 +1921,11 @@
 | Keyword  | Default  | Description  | Example  |
 | --- | --- | --- | --- |
 | saml_enable  | no  | Enable SAML as the authentication method for this Transfer CFT (the UCONF am.type=saml).  |   |
-| saml_client_id  | '$(cft.instance_id)'  | Specify the Client_ID value to use as issuer for SAML requests. This should match the Identity Provider configuration.  |   |
-| authserver_host  | ' '  |  Specify the SAML endpoint for AuthnRequest (HTTP-Redirect binding).<br/> If Keycloak is the Identity Provider, this should resemble: <code>https://authserver.host/auth/realms/\{realm-name}/protocol/saml. authserver_host ' '</code>  | 'https://aa.bb.cc.int:8443'  |
+| saml_client_id  | '$(cft.instance_id)'  | Specify the Client_ID value to use as issuer for SAML requests. This should match the Identity Provider configuration.qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq  |   |
+| authserver_host  | ' '  |  Specify the SAML endpoint for AuthnRequestqqqdoublespaceqqq (HTTP-Redirect binding).<br/>qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq If Keycloak is the Identity Provider, this should resemble:qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq <code>https://authserver.host/auth/realms/\{realm-name}/protocol/saml.qqqdoublespaceqqqqqqdoublespaceqqq qqqdoublespaceqqqauthserver_host ' '</code>  | 'https://aa.bb.cc.int:8443'  |
 | saml_idp_signonservice  | ' '  |  Specify the SAML endpoint for SignonRequest (HTTP-Redirect binding).<br/>If Keycloak is the Identity Provider, this should resemble:<br/>https://authserver.host/auth/realms/\{realm-name}/protocol/saml.<br/>saml_idp_signonservice ' '  | '/auth/realms/synapses/protocol/saml'  |
 | saml_idp_logoutservice  | ' '  |  Specify the endpoint for SAML LogoutRequest (HTTP-Redirect binding).<br/>If Keycloak is the Identity Provider, this should resemble:<br/>https://authserver.host/auth/realms/\{realm-name}/protocol/saml.<br/>saml_idp_logoutservice ' '  | '/auth/realms/synapses/protocol/saml'  |
-| saml_idp_certificate_path  | ' '  | Specify the path to the certificate that verifies the SAML Identity Provider server's signatures. This certificate is stored in the internal PKI database.  |   |
+| saml_idp_certificate_path  | ' '  | Specify the path to the certificate that verifies the SAML Identity Providerqqqdoublespaceqqq server's signatures.qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq This certificate is stored in the internal PKI database.  |   |
 
 
 
@@ -784,33 +1952,33 @@
 | Parameters that can be used as the &lt;keyword&gt;=&lt;value&gt;  | Description  |
 | --- | --- |
 |  SYST = MVS  |  Transfer CFT operating system support type.  |
-|  [ARM = {<u>YES</u> | NO}]  |  Transfer CFT transfer support of the Automatic Restart Manager component:<br/> • YES (default value): Transfer CFT is authorized (APF) and registers with the ARM component.<br /> Transfer CFT uses an element named Xidparm, where idparm is the startup parameter for Transfer CFT. For details, refer to Using Services &gt; Automatic Restart Manager.<br/> • NO: Transfer CFT does not register with ARM.</li> <blockquote> **Note:**<br/>The delivered sample uses the value 'ARM=NO'. </blockquote>  |
-|  [BLKSIZE = {27920 | n}] {4100…32760}  |  Maximum value used to calculate the BLKSIZE for files created by Transfer CFT, when this information is absent.<br/>You may reduce the default value by 32 if you want to create DF/SMS managed EXTENDED or LARGE format data sets. <blockquote> **Note:**<br/>The delivered sample uses the value 'BLKSIZE=27998'. </blockquote>  |
+|  [ARM = {<u>YES</u> | NO}]  |  Transfer CFT transfer support of the Automatic Restart Manager component:<br/> • YES (default value): Transfer CFT is authorized (APF) and registers with the ARM component.<br /> Transfer CFT uses an element named Xidparm, where idparm is the startup parameter for Transfer CFT. For details, refer to Using Services &gt; Automatic Restart Manager.<br/> • NO: Transfer CFT does not register with ARM.</li> <blockquote> **Note**<br/>The delivered sample uses the value 'ARM=NO'. </blockquote>  |
+|  [BLKSIZE = {27920 | n}] {4100…32760}  |  Maximum value used to calculate the BLKSIZE for files created by Transfer CFT, when this information is absent.<br/>You may reduce the default value by 32 if you want to create DF/SMS managed EXTENDED or LARGE format data sets. <blockquote> **Note**<br/>The delivered sample uses the value 'BLKSIZE=27998'. </blockquote>  |
 | [ALLPRIM = {100 | n}]{1…255}  | The % factor applied to the primary allocation computed to create a single volume file.  |
 | [ALLSEC = {10 | n}]{1…255}  | The % of the primary space used as the secondary allocation when creating a single volume file.  |
 | [VOLNUM = {20 | n}]{1…127}  | The maximum number of volumes in a multi-volume allocation.  |
-| [ALLONE = {100 | n}]{1…255}  |  The % factor applied to the primary allocation computed to create a multi-volume file. <br/>Use extreme care when changing this parameter.  |
-| [ALLNEXT= {100 | n}]{1…255}  |  The % factor applied to the secondary allocation when creating a multi-volume file. <br/>Use extreme care when changing this parameter.  |
+| [ALLONE = {100 | n}]{1…255}  |  The % factor applied to the primary allocation computed to create a multi-volume file.qqqdoublespaceqqq<br/>Use extreme care when changing this parameter.  |
+| [ALLNEXT= {100 | n}]{1…255}  |  The % factor applied to the secondary allocation when creating a multi-volume file.qqqdoublespaceqqq<br/>Use extreme care when changing this parameter.  |
 | [DSNTYPE = { <u>NONE</u> | EXTPREF/EXTREQ/LARGE}  | Values other than NONE (default value) are added to create DF/SMS managed EXTENDED or LARGE files. You can also control the DSNTYPE via DF/SMS customization.  |
 |  [BLKPDS = {150 | n}]{1…32760}  |  Number of PDS blocks allocated while creating a partitioned file by Transfer CFT.  |
 |  [DESC = { Value of the DESCRIPTOR CODE field of the WTO | n} ]  |  The left bit corresponds to 1. The right bit corresponds to 16.  |
 | [EMCSOPT = { <u>USER</u> | MONITOR | IGNORE}]  |  How Transfer CFT processes a MODIFY command issued from a program using SVC 34:<br/> • USER (default value): the left 8 bytes of EMCS console name are used as the user id issuing the command.<br/> • MONITOR: the USERID associated with the monitor is always used.<br/> • IGNORE: MODIFY commands issued from SVC 34 are ignored.<br/>*See Note.  |
 |  [FORMATVB = {YES | <u>NO</u>}]  |  <li>YES: Active. You receive a file with a V-type RECFM, and the file is created with the type VB.<br/> • NO: Default value.</li>  |
-|  [HSMASYNC = {YES | <u>NO</u>}]  |  <li>NO (default value): For all Transfer CFT handled files, the HSM recall is performed synchronously. <br/> • YES: If a file to be sent is migrated, the HSM recall is performed asynchronously, and the transfer is delayed until HSM completes the request. Transfer CFT will always wait for the HSM recall of received files. </li> <blockquote> **Note:**<br/>If a Transfer CFT EXEC procedure is HSM migrated, it is not executed. An error message indicating this is displayed in the Transfer CFT LOG: CFTS02E migrated. </blockquote> <blockquote> **Note:**<br/>The delivered sample uses the value ‘HSMASYNC=YES’. </blockquote>  |
+|  [HSMASYNC = {YES | <u>NO</u>}]  |  <li>NO (default value): For all Transfer CFT handled files, the HSM recall is performed synchronously. <br/> • YES: If a file to be sent is migrated, the HSM recall is performed asynchronously, and the transfer is delayed until HSM completes the request. Transfer CFT will always wait for the HSM recall of received files. </li> <blockquote> **Note**<br/>If a Transfer CFT EXEC procedure is HSM migrated, it is not executed. An error message indicating this is displayed in the Transfer CFT LOG: CFTS02E migrated. </blockquote> <blockquote> **Note**<br/>The delivered sample uses the value ‘HSMASYNC=YES’. </blockquote>  |
 |  [MAXAB = {15 | n}]{1…255}  |  Number of ABENDs allowed by Transfer CFT before shutting down.  |
 |  [MAXDUMP = {2 | n}] {1…255}<br/>  |  Number of ABENDs that are the object of a Transfer CFT requested DUMP.<br/>Additional ABENDs do not provoke a DUMP.  |
 |  [MAXTRACE = {80000 | n}]  |  Size limit for SGTRACE.  |
-| [MCSOPT = { <u>CHECK</u> |MONITOR}]  |  How Transfer CFT adds a user id to a z/OS MODIFY command:<br/> • CHECK (default value): The console name is checked for a valid security definition, and is used if yes. Else the user id associated with the monitor is used. SAF checking applies only if Transfer CFT is running APF authorized.<br/> • MONITOR: The USERID associated with the monitor is always used.<br/>*See Note.  |
-| PDSESHARING [ <u>NO</u> | YES]  |  <li>NO (default) = Do not allow others to write to PDSE in sharing mode.<br/> • YES = Allow simultaneous writing to a PDSE file type. Other intervening applications must also use the shared mode option though for sharing to occur.</li> <blockquote> **Note:**<br/>On a shared SYSPLEX you must customize the following z/OS system parameter, either: </blockquote> <li>NORMAL: SYSn.PARMLIB member IGDSMSxx to specify PDSESHARING, or<br/> • EXTENDED: SYSn.PARMLIB member IGDSMSxx to specify PDSESHARING</li> <blockquote> **Note:**<br/>The delivered sample uses the value ‘PDSESHARING=YES’. </blockquote>  |
+| [MCSOPT = { <u>CHECK</u> |MONITOR}]  |  How Transfer CFT adds a user id to a z/OS MODIFYqqqdoublespaceqqqcommand:<br/> • CHECK (default value): The console name is checked for a valid security definition, and is used if yes. Else the user id associated with the monitor is used. SAF checking applies only if Transfer CFT is running APF authorized.<br/> • MONITOR: The USERID associated with the monitor is always used.<br/>*See Note.  |
+| PDSESHARING [ <u>NO</u> | YES]  |  <li>NO (default) = Do not allow others to write to PDSE in sharing mode.<br/> • YES = Allow simultaneous writing to a PDSE file type. Other intervening applications must also use the shared mode option though for sharing to occur.</li> <blockquote> **Note**<br/>On a shared SYSPLEX you must customize the following z/OS system parameter, either: </blockquote> <li>NORMAL: SYSn.PARMLIB member IGDSMSxx to specify PDSESHARING, or<br/> • EXTENDED: SYSn.PARMLIB member IGDSMSxx to specify PDSESHARING</li> <blockquote> **Note**<br/>The delivered sample uses the value ‘PDSESHARING=YES’. </blockquote>  |
 |  [ROUTCDE = {Value of the ROUTCODE CODE field of the WTO | n}]  |  The left bit corresponds to 1. The right bit corresponds to 16. The default value ROUTCDE=X‘0008’ corresponds to ROUTCDE=(13).<br/>This value is used with the ‘OPERMSG’ option of the ‘CFTLOG’ parameter.<br/>For the options DESC and ROUTCE, refer to the IBM document Supervisor services and macros, which explains the use of DESCRIPTOR CODES and ROUTCODES.  |
 | [SDSFOPT = { <u>USER</u> | MONITOR | IGNORE}]  |  How Transfer CFT processes a MODIFY command issued from SDSF:<br/> • USER (default value): the console name defined in SDSF options is used as the user id issuing the command.<br/> • MONITOR: the USERID associated with the monitor is used.<br/> • IGNORE: MODIFY commands issued from SDSF are ignored.<br/>*See Note.  |
-|  [SHARECAT = { **YES** | NO | INACT }]  |  <li>YES (default value): The catalog is cached in a common dataspace that is shared with the Copilot user interface, the CFTUTIL utility, and so on. This parameter improves catalog reading, especially from the Copilot user interface, when enabled. <li> If the catalog is full and an extension is created (using either the <code>cft.cftcat.auto_expand_*</code> parameters or <code>RECONFIG TYPE=CAT</code>), new records are stored in the extension and not in the cache. Accessing records in the extension may negatively impact performance. <br/> • Do not use YES when implementing a multi-node architecture.</li> <br/> • NO: The catalog is cached in a dataspace, but the dataspace is not shared.<br/> • INACT: The catalog is not cached, and no dataspace is created.<br/>NO: The catalog is cached in a dataspace, but the dataspace is not shared.<br/>INACT: The catalog is not cached, and no dataspace is created. <blockquote> **Note:**<br/>When the Transfer CFT is an APF-authorized program (Authorized Program Facility), specify if the catalog dataspace cache is available to be read by other Transfer CFT applications. </blockquote> <blockquote> **Note:**<br/>The delivered sample uses the value ‘SHARECAT=YES’. </blockquote>  |
-|  [SGTRACE = {0 | n}] {1…65535}  |  Initial value of the SGTRACE trace file. A value other than 0 may be used if requested by Transfer CFT customer support. Possible combinations are:<br/> • 1: Network actions (TCP)<br/> • 2: Erroneous actions<br/> • 4: File manager actions<br/> • 8: Read/write to files</li> <li>16: C functions</li> <li>32: Long messages</li> <li>64: Inter-task communication actions</li> <li>128: Program calls and return messages</li> <li>256: Interactive interface actions</li> <li>512: User exit calls</li> <blockquote> **Note:** When you use the SGTRACE options with the Transfer CFT interface under VTAM, the non-encrypted passwords are listed in the trace records. </blockquote>  |
-| [SUBOPT = { 0 | 1 | 3 } ]  |  Manages 2 statistic lines for a job submitted by Transfer CFT:<br/> • 0: Default. Generates 2 lines at the end of JCL //* SUBMITTED BY:jobname AT DD/MM/YY hh:mm:ss ,USERID=username ,CARDS= 0000000 // .</li> <li>1: Generates only the statistic line at the end of the JCL and no card ‘//’ //* SUBMITTED BY:jobname AT DD/MM/YY hh:mm:ss ,USERID=username ,CARDS= 0000000 .</li> <li>3: Does not generate a line at the end of the JCL.</li>  |
+|  [SHARECAT = { **YES** | NO | INACT }]  |  <li>YES (default value): The catalog is cached in a common dataspace that is shared with the Copilot user interface, the CFTUTIL utility, and so on. This parameter improves catalog reading, especially from the Copilot user interface, when enabled. <li> If the catalog is full and an extension is created (using either the <code>cft.cftcat.auto_expand_*</code> parameters or <code>RECONFIG TYPE=CAT</code>), new records are stored in the extension and not in the cache. Accessing records in the extension may negatively impact performance. <br/> • Do not use YES when implementing a multi-node architecture.</li> <br/> • NO: The catalog is cached in a dataspace, but the dataspace is not shared.<br/> • INACT: The catalog is not cached, and no dataspace is created.<br/>NO: The catalog is cached in a dataspace, but the dataspace is not shared.<br/>INACT: The catalog is not cached, and no dataspace is created. <blockquote> **Note**<br/>When the Transfer CFT is an APF-authorized program (Authorized Program Facility),qqqdoublespaceqqqspecify if the catalog dataspace cache is available to be read by other Transfer CFT applications. </blockquote> <blockquote> **Note**<br/>The delivered sample uses the value ‘SHARECAT=YES’. </blockquote>  |
+|  [SGTRACE = {0 | n}] {1…65535}  |  Initial value of the SGTRACE trace file. A value other than 0 may be used if requested by Transfer CFT customer support. Possible combinations are:<br/> • 1: Network actions (TCP)<br/> • 2: Erroneous actions<br/> • 4: File manager actions<br/> • 8: Read/write to files</li> <li>16: C functions</li> <li>32: Long messages</li> <li>64: Inter-task communication actions</li> <li>128: Program calls and return messages</li> <li>256: Interactive interface actions</li> <li>512: User exit calls</li> <blockquote> **Note** When you use the SGTRACE options with the Transfer CFT interface under VTAM, the non-encrypted passwords are listed in the trace records. </blockquote>  |
+| [SUBOPT = { 0 | 1 | 3 } ]  |  Manages 2 statistic lines for a job submitted by Transfer CFT:<br/> • 0: Default. Generates 2 linesqqqdoublespaceqqqat the end of JCL //* SUBMITTED BY:jobname AT DD/MM/YY hh:mm:ss ,USERID=username ,CARDS= 0000000 // .</li> <li>1: Generates only the statistic lineqqqdoublespaceqqqat the end of the JCL and no card ‘//’ //* SUBMITTED BY:jobname AT DD/MM/YY hh:mm:ss ,USERID=username ,CARDS= 0000000 .</li> <li>3: Does not generate a line at the end of the JCL.</li>  |
 |  [TRACE = { <u>128</u> | n}] {4…16383}  |  Transfer CFT internal trace size (in Kb).  |
-|  [TAPE = {NOTSUP | <u>UPDATE</u> | OUTPUT}]  |  <li>NOTSUP: Forbids access to tape files for all Transfer CFT programs.</li> <li>UPDATE: Default. Enables writing of tape files protected by means of a retaining date or tape library management software.</li> <li>OUPUT: The transfer fails in ABDEND 713 if the tape is write-protected by tape library management software, or an expiration date.</li> <blockquote> **Note:** The delivered sample uses the value ‘TAPE=OUTPUT’. </blockquote>  |
-|  [TSOEDIT = { <u>NO</u> | YES}]  |  File support with sequence number in columns 73 to 80:<br/> • YES: If the ISPF editor with the ‘NUMBER ON’ option creates them, then the input files read by CFTUTIL can contain an eight-digit sequence number in columns 73 to 80. This sequence number is then ignored by Transfer CFT z/OS.</li> <li>NO: Input files are read without changes from CFTUTIL.</li> <blockquote> **Note:** The delivered sample uses the value ‘TSOEDIT=YES’. </blockquote>  |
-| [VSAMSUFS = { <u>SHORT</u> | LONG }]  |  <li>SHORT: VSAM component suffixes are created with .D for KSDS and ESDS, and .I for KSDS. </li> <li>LONG: VSAM component suffixes are created with .DATA for KSDS and ESDS, and .INDEX for KSDS.<br/>Alternatively, you can set this parameter using: <code>UCONFSET ID=cft.mvs.sginstal.vsamsufs,value=x</code>  |
+|  [TAPE = {NOTSUP | <u>UPDATE</u> | OUTPUT}]  |  <li>NOTSUP: Forbids access to tape files for all Transfer CFT programs.</li> <li>UPDATE: Default. Enables writing of tape files protected by means of a retaining date or tape library management software.</li> <li>OUPUT: The transfer fails in ABDEND 713 if the tape is write-protected by tape library management software, or an expiration date.</li> <blockquote> **Note** The delivered sample uses the value ‘TAPE=OUTPUT’. </blockquote>  |
+|  [TSOEDIT = { <u>NO</u> | YES}]  |  File support with sequence number in columns 73 to 80:<br/> • YES: If the ISPF editor with the ‘NUMBER ON’ option creates them, then the input files read by CFTUTIL can contain an eight-digit sequence number in columns 73 to 80. This sequence number is then ignored by Transfer CFT z/OS.</li> <li>NO: Input files are read without changes from CFTUTIL.</li> <blockquote> **Note** The delivered sample uses the value ‘TSOEDIT=YES’. </blockquote>  |
+| [VSAMSUFS = { <u>SHORT</u> | LONG }]  |  <li>SHORT:qqqdoublespaceqqqVSAM component suffixes are created with .D for KSDS and ESDS, and .I for KSDS.qqqdoublespaceqqq</li> <li>LONG:qqqdoublespaceqqqVSAM component suffixes are created with .DATA for KSDS and ESDS, and .INDEX for KSDS.<br/>Alternatively, you can set this parameter using: <code>UCONFSET ID=cft.mvs.sginstal.vsamsufs,value=x</code>  |
 
 
 
@@ -823,6 +1991,371 @@
 |  DISTLIB  |  Three first qualifiers of the distribution environment.<br/>Example: Axway.XFB.CFT00332  |
 |  DISTLEV  |  Fourth qualifier of the distribution environment (level of distribution)<br/>Example: CF030000  |
 
+
+
+============================== table nb count(59) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th >Step</th>
+<th >Description</th>
+<th >Member</th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td >1</td>
+<td >Create and initialize instance files: UCONF, UCONFRUN, FTEST, MONLOG, and LOG.</td>
+<td >A06FILES</td>
+</tr>
+<tr >
+<td >2</td>
+<td ><p>Assemble and link-edit SGINSTAL for Transfer CFT z/OS options.</p>
+<p>Non-SMP/E installation mode.
+qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/p&gt;</p></td>
+<td >A12AOPTS</td>
+</tr>
+<tr >
+<td >3</td>
+<td ><p>Link-edit all Transfer CFT modules.</p>
+<p>Non-SMP/E installation mode.
+qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/p&gt;</p></td>
+<td >B20LINK</td>
+</tr>
+<tr >
+<td >4</td>
+<td >Generate an encryption key. See also <a href="../t_customize_instance_zos#Password">Password encryption</a>.</td>
+<td >CFTGNKEY</td>
+</tr>
+<tr >
+<td colspan="3" >5.A <em>or</em> 5.B</td>
+</tr>
+<tr >
+<td >5.A</td>
+<td ><p>If cgenable is set to no:</p>
+<ul>
+<li>Sets the uconf variables:
+<ul>
+<li>qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqcft.runtime_dir</li>
+<li>qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqcft.listcat_compat</li>
+<li>qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqcft.state_compat</li>
+</ul></li>
+<li>Generates the SAMPLE(CFTPARM) parameter sample from the SAMPLE(ZCFTPARM) template</li>
+<li>Generates the SFTPqqqdoublespaceqqqSAMPLE(CFTSFTP) parameter sample from the  SAMPLE(ZCFTSFTP) template</li>
+</ul></td>
+<td >CFT$SET</td>
+</tr>
+<tr >
+<td >5.B</td>
+<td ><p>If cgenable is set to yes:</p>
+<ul>
+<li>Sets the uconf variables for Central Governance</li>
+<li>Generates the Transfer CFT parameters sample from a template</li>
+</ul></td>
+<td >CFT$SETC</td>
+</tr>
+<tr >
+<td >6</td>
+<td ><p>Create Transfer CFT files (Parm, Part, Catalog, Com(file),qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq account).</p></td>
+<td >D40INIT</td>
+</tr>
+<tr >
+<td >7</td>
+<td ><p>Loads the Transfer CFT default settings.</p></td>
+<td >E50PARM</td>
+</tr>
+<tr >
+<td colspan="2" >  PKI</td>
+<td > </td>
+</tr>
+<tr >
+<td >9</td>
+<td ><p>Creates Data base PKI using the sample certificates.</p></td>
+<td >D43PKI</td>
+</tr>
+<tr >
+<td >10</td>
+<td ><p>If pkitype=passport: Enable PassPort PKI configuration.</p></td>
+<td >D44PASS</td>
+</tr>
+<tr >
+<td >11</td>
+<td ><p>If pkitype=system:qqqdoublespaceqqq Enable the PKI system.qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq</p></td>
+<td >D47SYST</td>
+</tr>
+<tr >
+<td colspan="2" > qqqdoublespaceqqqCentral Governance</td>
+<td > </td>
+</tr>
+<tr >
+<td >15</td>
+<td ><p>If cgenable=yes:</p>
+<p>qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq Create the Axway Demonstration Root Certificate.</p></td>
+<td >CFTCGPKI</td>
+</tr>
+<tr >
+<td >16</td>
+<td ><p>If cgenable=yes:</p>
+<p>qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq Transfer CFT to registration.qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq</p></td>
+<td >CFTCGREG</td>
+</tr>
+<tr >
+<td colspan="2" > qqqdoublespaceqqqSentinel</td>
+<td > </td>
+</tr>
+<tr >
+<td >20</td>
+<td >If snenable = yes:
+<p>qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq Sentinel parameters are activated (TCP configuration).</p>
+<blockquote>
+<p><strong>Note</strong></p>
+<p>This JCL does not create Sentinel tracker logstream.</p>
+</blockquote></td>
+<td >SN05CONF</td>
+</tr>
+<tr >
+<td >25</td>
+<td ><p>If sntlgcre = yes:</p>
+<p>Delete /define log stream – DASDONLY.</p></td>
+<td >SN10CLGR</td>
+</tr>
+<tr >
+<td colspan="2" > qqqdoublespaceqqqCopilot</td>
+<td > </td>
+</tr>
+<tr >
+<td >30</td>
+<td ><p>If copenable=yes:</p>
+<p>Copilot files are transferred in the USS environment (HFS/ZFS).</p></td>
+<td >COPA010</td>
+</tr>
+<tr >
+<td >31</td>
+<td ><p>If copenable=yes:</p>
+<p>Updates Copilot UCONF parameters.</p></td>
+<td >COPA020</td>
+</tr>
+<tr >
+<td >32</td>
+<td >REST API configuration.</td>
+<td >RESTCFG</td>
+</tr>
+<tr >
+<td colspan="2" > qqqdoublespaceqqqSecure Relay</td>
+<td > </td>
+</tr>
+<tr >
+<td >40</td>
+<td ><p>If Secure Relay is enabled:</p>
+<p>qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq Install on USS environment, the files for Secure Relay Master Agent.</p></td>
+<td >XSRA010</td>
+</tr>
+<tr >
+<td >41</td>
+<td ><p>If Secure Relay enabled:</p>
+<p>qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq Create the runtime directory for the Transfer CFTqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqSecure Relay Master Agent.</p></td>
+<td >XSRA015</td>
+</tr>
+<tr >
+<td >42</td>
+<td ><p>If Secure Relay is enabled:</p>
+<p>qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq Updating Secure Relay parameters (UCONF)</p></td>
+<td >XSRA020</td>
+</tr>
+<tr >
+<td >45</td>
+<td >Configure SAML.</td>
+<td >CFTSAML</td>
+</tr>
+<tr >
+<td colspan="2" > qqqdoublespaceqqqOptional steps</td>
+<td > </td>
+</tr>
+<tr >
+<td >50</td>
+<td ><p>Exits and API(s) samples compilation (ASM, C and COBOL).</p>
+<p>qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqFor COBOL, C: variable LNGPRFX must be customized (I91APICP).</p></td>
+<td >I91APICP</td>
+</tr>
+<tr >
+<td >51</td>
+<td >API(s) link-edit.</td>
+<td >I92APILK</td>
+</tr>
+<tr >
+<td >52</td>
+<td >Exits (ASM, C, and COBOL) link-edit.</td>
+<td >LINKEXLE</td>
+</tr>
+<tr >
+<td >60</td>
+<td >Activate the Transfer CFT heartbeat.</td>
+<td >CFTHEART</td>
+</tr>
+</tbody>
+</table>
+
+
+============================== table nb count(60) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th >Step</th>
+<th >JCL</th>
+<th >Description</th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td colspan="3" >Target customization</td>
+</tr>
+<tr >
+<td >1</td>
+<td ><p><a href="../t_customize_instance_zos#Modifying_A03PARM">A03PARM</a></p></td>
+<td ><p>Customize file parameters</p></td>
+</tr>
+<tr >
+<td >2</td>
+<td ><p><a href="../installation_parameters_to_customize">A00CUSTO</a></p></td>
+<td ><p>CustomizeqqqdoublespaceqqqJOBs installation</p></td>
+</tr>
+<tr >
+<td >3</td>
+<td >A06FILES</td>
+<td >Create and initialize instance files</td>
+</tr>
+<tr >
+<td >4</td>
+<td ><p>A12OPTS</p></td>
+<td ><p>Select options for Transfer CFT operations</p>
+<p><em>Optional step</em></p></td>
+</tr>
+<tr >
+<td colspan="3" >After performingqqqdoublespaceqqqSteps 1 -4,qqqdoublespaceqqqyou can either continue with the following step-by-step instructions, or start the JOB A05ALL, which uses the customized settings in the A03PARM file to run.</td>
+</tr>
+<tr >
+<td >5</td>
+<td ><p>B20LINK</p></td>
+<td ><p>General LINK-EDIT of Transfer CFT modules. Submit for non-SMP/E installations.</p></td>
+</tr>
+<tr >
+<td >6</td>
+<td >CFTGNKEY</td>
+<td >Generate an encryption key. See also <a href="../t_customize_instance_zos#Password">Password encryption</a>.</td>
+</tr>
+<tr >
+<td >7</td>
+<td ><p>COPA010</p></td>
+<td > </td>
+</tr>
+<tr >
+<td colspan="3" >Transfer CFT installation customization</td>
+</tr>
+<tr >
+<td >8</td>
+<td ><p><a href="../zos_auto_install_a05all/t_customize_install_zos#JOB%C2%A0H80EXEC">CFT$SET</a></p>
+<p>CFT$SETC </p></td>
+<td ><p>Select one of the two options available for this step to set the UCONF variables and create Transfer CFT parameters from a template.</p>
+<ul>
+<li>CFT$SET: When not using Central Governance.</li>
+<li>CFT$SETC: When using Central Governance.</li>
+</ul>
+<p> </p></td>
+</tr>
+<tr >
+<td >9</td>
+<td ><p><a href="../zos_auto_install_a05all/t_customize_install_zos#D40INIT">D40INIT</a></p></td>
+<td ><p>Format the Transfer CFT work files</p></td>
+</tr>
+<tr >
+<td >10</td>
+<td ><a href="../t_customize_instance_zos">E50PARM</a></td>
+<td >CFTPARM configuration example</td>
+</tr>
+<tr >
+<td >11</td>
+<td ><p><a href="t_configure_navigator_server_zos">COPA020</a></p></td>
+<td ><p><a href="t_configure_navigator_server_zos">Configure Transfer CFT Copilot server</a></p></td>
+</tr>
+<tr >
+<td colspan="3" >Optional steps</td>
+</tr>
+<tr >
+<td >12</td>
+<td ><p>C32XMEM</p></td>
+<td ><p>Communication server</p></td>
+</tr>
+<tr >
+<td >13</td>
+<td ><p><a href="t_configure_optional_features_zos#Create%20a%20Transfer%20CFT%20PKI%20file%C2%A0D43PKI">D43PKI</a></p>
+<p><a href="t_configure_optional_features_zos#Connect%20with%20PassPort%C2%A0D44PASS">D44PASS</a></p>
+<p><a href="t_configure_optional_features_zos">D47SYST</a></p></td>
+<td ><p>Select one of the options listed for Step 12:</p>
+<ul>
+<li>D43PKI: Create internal datafile for PKI data</li>
+<li>D44PASS: Declare link to PassPort server</li>
+<li>D47SYST: Enable use of system PKI</li>
+</ul></td>
+</tr>
+<tr >
+<td >14</td>
+<td ><p><a href="t_install_sentinel_zos">SN05CONF</a></p></td>
+<td ><p><a href="t_install_sentinel_zos">Customize Sentinel</a> configuration file</p></td>
+</tr>
+<tr >
+<td >15</td>
+<td >CFTHEART</td>
+<td >Activate Transfer CFT Heartbeats for Sentinel Dashboards</td>
+</tr>
+<tr >
+<td >16</td>
+<td >CFTCGREG</td>
+<td >Register {{&lt; TransferCFT/transfercftname &gt;}} with</td>
+</tr>
+<tr >
+<td >17</td>
+<td >CFTCGPKI</td>
+<td >Used to register {{&lt; TransferCFT/transfercftname &gt;}} with</td>
+</tr>
+<tr >
+<td >18</td>
+<td >XSRRUN</td>
+<td ><p>Launches the Java virtual machine (JVM).</p>
+<blockquote>
+<p><strong>Note</strong></p>
+<p>Customize JOB card.</p>
+</blockquote></td>
+</tr>
+<tr >
+<td >19</td>
+<td >XSRA010</td>
+<td >Install files for the Secure Relay Master Agent
+on the USS environment.</td>
+</tr>
+<tr >
+<td >20</td>
+<td >XSRA015</td>
+<td >Create the Runtime directory for the Transfer CFT Secure Relay Master Agent.</td>
+</tr>
+<tr >
+<td >21</td>
+<td >XSRA020</td>
+<td >Update the Secure Relay parameters for UCONF.</td>
+</tr>
+<tr >
+<td >22</td>
+<td >XSRA050</td>
+<td >Update the Transfer CFT parameters samples.</td>
+</tr>
+<tr >
+<td >23</td>
+<td >RESTCFG</td>
+<td >REST API configuration.</td>
+</tr>
+</tbody>
+</table>
 
 
 ============================== table nb count(61) table converted to MD ========================================
@@ -859,11 +2392,11 @@
 | --- | --- |
 | 1  | If you have not done so, customize <a href="../t_mninit_multinode_zos">MNINIT</a>.  |
 | 2  |  Customize the UPARM(TC*) members.<br/>The example (below) demonstrates how to customize LPAR1 and LPAR2. If you have additional machines in your configuration, repeat this step for each host machine. For a single host installation, you only customize UPARM(TCPSHAP1).  |
-| 3  |  Perform a Transfer CFT configuration check:<br/> • Verify that the CFTNET object host parameter corresponds with what you defined for the VIPA.<br/> • Verify that the CFTNET command SRCPORT parameter is set to 1.</li>  |
+| 3  |  Perform a Transfer CFT configuration check:<br/> • Verify that the CFTNET object host parameter corresponds with what you defined for the VIPA.<br/> • Verify thatqqqdoublespaceqqqthe CFTNET command SRCPORT parameter is set to 1.</li>  |
 | 4  | Submit the MNINIT. The Transfer CFT is now configured for multi-node.  |
 |   | Steps 5 and 6, which use the VARY OBEYFILE commands, require administrator rights.  |
-| 5  | Execute the VARY OBEYFILE command for each UPARM(TC*) member.  |
-| 6  | For a z/OS restart, the administrator must do all of the VIPA OBEYFILE commands performed in Step 5 on the z/OS machine.  |
+| 5  | Execute the VARY OBEYFILE commandqqqdoublespaceqqqfor each UPARM(TC*) member.  |
+| 6  | For a z/OS restart, the administrator must do all of the VIPA OBEYFILE commands performed in Step 5qqqdoublespaceqqqon the z/OS machine.  |
 
 
 
@@ -878,7 +2411,7 @@
 | cft.multi_node.<br /> cftcom.dispatcher_policy  |  Specifies the dispatching policy.<br/>- round_robin: Random dispatching across all nodes occurs.<br/>- node_affinity: Creates a one to one link between a partner and a node. Transfer requests for a given partner will always be performed by the same node.  | round_robin  |  round_robin,<br/>node_affinity  | Yes  |
 |  cft.multi_node.<br /> sharedidt.fname  |  Shared file for global IDT calculation in multi-node  |  $(cft.runtime_dir)/data/cftsidt  |  fname  | Yes  |
 |  cft.multi_node.<br /> sharedidt.enable  |  Use global IDT calculation method  |  No  |  Yes, No  | Yes  |
-|  cft.multi_node.<br /> shared.filesystem.type  |  Used to select appropriate consistency enforcement strategy.<br/>If {{&lt; TransferCFT/componentshortname &gt;}} is using NFSv4, you must enter the value <code>nfs </code>in lower case.  |  unknown  |  unknown, posix, nfs, cifs  | Yes  |
+|  cft.multi_node.<br /> shared.filesystem.type  |  Used to select appropriate consistency enforcement strategy.<br/>Ifqqqdoublespaceqqq{{&lt; TransferCFT/componentshortname &gt;}} is using NFSv4, you must enter the value <code>nfs </code>in lower case.  |  unknown  |  unknown, posix, nfs, cifs  | Yes  |
 |  cft.multi_node.<br /> transfer_recovery_timeout  |  Timeout in seconds for transfer recovery process (seconds)  |  30  |  integer  | Yes  |
 |  cft.multi_node.<br /> transfer_recovery_retry_delay  |  Delay in seconds for transfer recovery retry (seconds)  |  20  |  integer  | Yes  |
 |  cft.multi_node.<br /> connection_retry_delay  |  Delay in seconds for connection retry between nodes (seconds)  |  10  |  integer  | Yes  |
@@ -930,9 +2463,9 @@
 | Unified configuration parameter  | Default value  |  Former Sentinel parameter name<br/>trkapi.cfg  |
 | --- | --- | --- |
 | sentinel.xfb.enable  | NO  | XFB.Sentinel (trkapi.cfg)  |
-|  sentinel.xfb.transfer  |  ALL  |  XFB.Transfer (trkapi.cfg) &lt;/p&gt;  |
-|  sentinel.xfb.shut  |  0 &lt;/p&gt;  |  XFB.Shut (trkapi.cfg) &lt;/p&gt;  |
-|  sentinel.xfb.log  |  IEWF  |  XFB.Log (trkapi.cfg) &lt;/p&gt;  |
+|  sentinel.xfb.transferqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq  |  ALL  |  XFB.Transfer (trkapi.cfg) qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/p&gt;  |
+|  sentinel.xfb.shutqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq  |  0 qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/p&gt;  |  XFB.Shut (trkapi.cfg) qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/p&gt;  |
+|  sentinel.xfb.logqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq  |  IEWF  |  XFB.Log (trkapi.cfg) qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/p&gt;  |
 |  sentinel.trktname  |  $(cft.runtime_dir)/data/trkapi.buf  |  TRKTNAME (trkapi.cfg)  |
 |  sentinel.trksharedfile  |  No  |  TRKSHAREDFILE  |
 |  sentinel.trklenmsg  |   |  TRKLENMSG  |
@@ -959,27 +2492,77 @@
 
 
 
-============================== table nb count(68) table converted to MD ========================================
+============================== table nb count(68) table stayed in HTML ========================================
 
-
-|   | ER  | TRKUTIL  | Transfer CFT  |
-| --- | --- | --- | --- |
-| Configuration file  | USEPARIN  | TRKCONF  | UCONF  |
-| SVC  |  (SYSTEM)<br/>svc_nb=nnn  | TRKSVC=nnn  | UCONFSET ID=sentinel.TRKSVC,VALUE=nnn  |
-| XCF definition  | (AGENT)queue=  | TRKQUEUE=  | UCONFSET ID=sentinel.TRKQUEUE,VALUE=xxxx  |
-| TRKTYPE=XCF  | UCONFSET ID=sentinel.TRKTYPE,VALUE=XCF  |
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th > </th>
+<th >ER</th>
+<th >TRKUTIL</th>
+<th >Transfer CFT</th>
+</tr>
+</thead>
+<tbody>
+<tr  data-mc-conditions="">
+<td >Configuration file</td>
+<td >USEPARIN</td>
+<td >TRKCONF</td>
+<td >UCONF</td>
+</tr>
+<tr  data-mc-conditions="">
+<td >SVC</td>
+<td ><p>(SYSTEM)</p>
+<p>svc_nb=nnn</p></td>
+<td >TRKSVC=nnn</td>
+<td >UCONFSET ID=sentinel.TRKSVC,VALUE=nnn</td>
+</tr>
+<tr  data-mc-conditions="">
+<td rowspan="2" >XCF definition</td>
+<td rowspan="2" >(AGENT)queue=</td>
+<td >TRKQUEUE=</td>
+<td >UCONFSET ID=sentinel.TRKQUEUE,VALUE=xxxx</td>
+</tr>
+<tr  data-mc-conditions="">
+<td >TRKTYPE=XCF</td>
+<td >UCONFSET ID=sentinel.TRKTYPE,VALUE=XCF</td>
+</tr>
+</tbody>
+</table>
 
 
+============================== table nb count(69) table stayed in HTML ========================================
 
-============================== table nb count(69) table converted to MD ========================================
-
-
-|   | Event Router  | TRKUTIL  | Transfer CFT  |
-| --- | --- | --- | --- |
-| Configuration file  | USEPARIN  | TRKCONF  | UCONF  |
-| Logger file  |  (AGENT)<br/>api_file=  | TRKTNAME=  | UCONFSET ID=sentinel.TRKTNAME, VALUE=xxxx.xxxx.xxx  |
-|   | TRKSHAREDFILE=YES  | UCONFSET ID=sentinel.TRKSHAREDFILE,VALUE=YES  |
-
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th > </th>
+<th >Event Router</th>
+<th >TRKUTIL</th>
+<th >Transfer CFT</th>
+</tr>
+</thead>
+<tbody>
+<tr  data-mc-conditions="">
+<th >Configuration file</th>
+<td >USEPARIN</td>
+<td >TRKCONF</td>
+<td >UCONF</td>
+</tr>
+<tr  data-mc-conditions="">
+<th rowspan="2" >Logger file</th>
+<td ><p>(AGENT)</p>
+<p>api_file=</p></td>
+<td >TRKTNAME=</td>
+<td >UCONFSET ID=sentinel.TRKTNAME, VALUE=xxxx.xxxx.xxx</td>
+</tr>
+<tr  data-mc-conditions="">
+<td > </td>
+<td >TRKSHAREDFILE=YES</td>
+<td >UCONFSET ID=sentinel.TRKSHAREDFILE,VALUE=YES</td>
+</tr>
+</tbody>
+</table>
 
 
 ============================== table nb count(70) table converted to MD ========================================
@@ -1054,7 +2637,7 @@
 
 | File  | Definition  |
 | --- | --- |
-|  AEX*DLL  |  Sample program in Assembler. This sample provides the 3 steps needed in a Transfer CFT exit.  |
+|  AEX*DLL  |  Sampleqqqdoublespaceqqqprogram in Assembler. This sample provides the 3 steps needed in a Transfer CFT exit.  |
 |  AEX*UST  |  Macro containing the DSECTs of the exchange areas with the Transfer CFT.  |
 
 
@@ -1121,7 +2704,7 @@
 |  CEXADLL  |  I91APICP  |  LINRDXG0  |  LINKEXLE  |  CFTDXG0  |
 |  CEXEDLL  |  I91APICP  |  LINRDXG1  |  LINKEXLE  |  CFTDXG1  |
 |  CEXFDLL  |  I91APICP  |  LINRDXG2  |  LINKEXLE  |  CFTDXG2  |
-| CEXBDLL  | I91APICP  | LINRDXG9  | LINKEXLE  | CFTDXG9  |
+| CEXBDLLqqqdoublespaceqqq  | I91APICPqqqdoublespaceqqq  | LINRDXG9qqqdoublespaceqqq  | LINKEXLEqqqdoublespaceqqqqqqdoublespaceqqq  | CFTDXG9  |
 
 
 
@@ -1165,6 +2748,82 @@
 
 
 
+============================== table nb count(85) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th >FORG</th>
+<th >FTYPE</th>
+<th colspan="2" >FRECFM</th>
+<th >  Type of receive file</th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td ><p>SEQ</p></td>
+<td ><p> </p></td>
+<td colspan="2" ><p>F/V/U</p></td>
+<td ><p>Disk sequential file</p></td>
+</tr>
+<tr >
+<td ><p>PART</p></td>
+<td ><p> </p></td>
+<td colspan="2" ><p>F/V/U</p></td>
+<td ><p>Member of PDS files (1 transfer per member)</p></td>
+</tr>
+<tr >
+<td ><p>SEQ</p></td>
+<td ><p> </p></td>
+<td colspan="2" ><p>F/V/U</p></td>
+<td ><p>Version designated -1 to 0 of a file in GDG</p></td>
+</tr>
+<tr >
+<td ><p>SEQ</p></td>
+<td ><p> </p></td>
+<td ><p>F/V/U</p></td>
+<td colspan="2" ><p>Multivolume disk file</p></td>
+</tr>
+<tr >
+<td ><p>DIRECT</p></td>
+<td ><p> </p></td>
+<td ><p>F/V</p></td>
+<td colspan="2" ><p>VSAM ESDS file</p></td>
+</tr>
+<tr >
+<td ><p>INDEXED</p></td>
+<td ><p> </p></td>
+<td ><p>F/V</p></td>
+<td colspan="2" ><p>VSAM KSDS file (already exists but empty)</p></td>
+</tr>
+<tr >
+<td ><p>SEQ</p></td>
+<td ><p>A</p></td>
+<td ><p>F/V/U</p></td>
+<td colspan="2" ><p>Print file with ASA jump code (z/OS to z/OS)</p></td>
+</tr>
+<tr >
+<td ><p>SEQ</p></td>
+<td ><p>M</p></td>
+<td ><p>F/V/U</p></td>
+<td colspan="2" ><p>Print file with machine jump code (z/OS to z/OS)</p></td>
+</tr>
+<tr >
+<td ><p>SEQ</p></td>
+<td ><p>S</p></td>
+<td ><p>V</p></td>
+<td colspan="2" ><p>File in spanned variable format (z/OS to z/OS)</p></td>
+</tr>
+<tr >
+<td ><p>SEQ</p></td>
+<td ><p> </p></td>
+<td ><p>F/V/U</p></td>
+<td colspan="2" ><p>Magnetic tape or cartridge file in position 1 (with STANDARD LABELS)</p></td>
+</tr>
+</tbody>
+</table>
+
+
 ============================== table nb count(86) table converted to MD ========================================
 
 
@@ -1189,7 +2848,7 @@
 | CATALOG  | MIGRCAT  |
 | COM  | MIGRCOM  |
 | LOG  | No migration step; you must create the file if you migrated.  |
-| ACCNT  |  No migration step; you must create the file if you migrated.<br/>For format=V24, some field lengths were modified, but the total size of record remains the same.  |
+| ACCNT  |  No migration step; you must create the fileqqqdoublespaceqqqif you migrated.<br/>For format=V24, some field lengths were modified, but the total size of record remains the same.  |
 | UCONF, unified configuration file  | MIGRUCNF.  |
 | PKI file  | As of Transfer CFT 3.4, MIGRPKI was split into 2 procedures, MIGRPKI1 and MIGRPKI2.  |
 | Exits/API  | The use of DLL mode is mandatory (otherwise you must rework the Exits and API). In any case, you must compile and link the exits and API.  |
@@ -1199,7 +2858,7 @@
 ============================== table nb count(88) table converted to MD ========================================
 
 
-|  Member Name &lt;/th&gt;  |  Description &lt;/th&gt;  |
+| qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqMember Name qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqDescription qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  |
 | --- | --- |
 | $C10RECV  |  UNPAX the Maintenance archive package and RECEIVE the Maintenance Pack.  |
 
@@ -1208,7 +2867,7 @@
 ============================== table nb count(89) table converted to MD ========================================
 
 
-|  Member Name &lt;/th&gt;  |  Description &lt;/th&gt;  |
+| qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqMember Name qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqDescription qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  |
 | --- | --- |
 | $C30PAPP  | Performs an APPLY (with the CHECK operand) to install the PTFs in the target zone and libraries.  |
 
@@ -1217,7 +2876,7 @@
 ============================== table nb count(90) table converted to MD ========================================
 
 
-|  Member Name &lt;/th&gt;  |  Description &lt;/th&gt;  |
+| qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqMember Name qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqDescription qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  |
 | --- | --- |
 | $C30PREM  | Performs a RESTORE (to remove) for the PTF elements from the target zone.  |
 | $C60PACC  | Performs an ACCEPT (with the CHECK operand) of the PTFs in the distribution zone and libraries.  |
@@ -1227,7 +2886,7 @@
 ============================== table nb count(91) table converted to MD ========================================
 
 
-|  Member Name &lt;/th&gt;  |  Description &lt;/th&gt;  |
+| qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqMember Name qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqDescription qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  |
 | --- | --- |
 |  A13SMPE  |  Applies maintenance to the Transfer CFT product instance.  |
 |  A13UCOP  |  Applies maintenance to Copilot.  |
@@ -1244,7 +2903,7 @@
 |  SAMPLE  |  Update the SAMPLES  |
 |  SAMPLEO  |  Update the COBOL samples  |
 |  SAMPLEC  |  Update the C samples  |
-| SAMPLEA  | Update the ASM samples  |
+| SAMPLEA  | Updateqqqdoublespaceqqqthe ASM samples  |
 |  PFTOBJ  |  Update OBJECT modules  |
 |  DOC  |  Update documentation  |
 |  CNTL  |  Control files  |
@@ -1257,6 +2916,101 @@
 | XMLLIB  | Update XML components.  |
 | EXEC  | Update Transfer CFT procedures.  |
 
+
+
+============================== table nb count(93) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th >JCL</th>
+<th >Description</th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td >A13AUTO</td>
+<td >To automatically apply fixes.</td>
+</tr>
+<tr >
+<td >A13PTFFT</td>
+<td >To transfer a patch to the distlib.UPLIB in binary mode (using FTP - mode GET).</td>
+</tr>
+<tr >
+<td >A13PTFLD</td>
+<td >To update the distribution libraries. (ADRDSSU)</td>
+</tr>
+<tr >
+<td >A13PTFLI</td>
+<td >To update the distribution libraries. (XMIT)</td>
+</tr>
+<tr >
+<td >A13PTFLK</td>
+<td >To apply a patch in the Transfer CFT loadlib (create a save library/link-edit).</td>
+</tr>
+<tr >
+<td >A13RSTOR</td>
+<td >To restore the loadlib from a save library.</td>
+</tr>
+<tr >
+<td >A13SDEL</td>
+<td >To delete a save-load library when a patch is validated, or if the loadlib is restored to reapply a patch.</td>
+</tr>
+<tr >
+<td colspan="2" >  Transfer CFT Copilot update</td>
+</tr>
+<tr >
+<td >A13UCOPA</td>
+<td >To apply a patch to Transfer CFT Copilot (Create a save file).</td>
+</tr>
+<tr >
+<td >A13UCOPR</td>
+<td >To restore the Transfer CFT Navigator environment from a save file in USS environment.</td>
+</tr>
+<tr >
+<td >A13UCOPD</td>
+<td >To delete a save file when a patch is validated.</td>
+</tr>
+<tr >
+<td colspan="2" >  Transfer CFT - Secure Relay - Master Agent update</td>
+</tr>
+<tr >
+<td >A13UXSRA</td>
+<td >To apply a patch to Secure Relay - Master Agent (creates a save file).</td>
+</tr>
+<tr >
+<td >A13UXSRR</td>
+<td >To restore the Transfer CFT {{&lt; TransferCFT/securerelayname &gt;}} environment from a save file in USS environment.</td>
+</tr>
+<tr >
+<td >A13UXSRD</td>
+<td >To delete a save file when a patch is validated.</td>
+</tr>
+<tr >
+<td colspan="2" >  Other JCL</td>
+</tr>
+<tr >
+<td >A13JCL</td>
+<td >To customize the patched JCL.</td>
+</tr>
+<tr >
+<td >A13UCONF</td>
+<td >To update the unified configuration parameter definitions.</td>
+</tr>
+<tr >
+<td >A13XML</td>
+<td >To update the XML library.</td>
+</tr>
+<tr >
+<td >A13WDEL</td>
+<td ><p>To delete work files.</p></td>
+</tr>
+<tr >
+<td >A13RBACK</td>
+<td >To automatically execute the three jobs A13RSTOR, A13UCOPR, and A13UXSRR.</td>
+</tr>
+</tbody>
+</table>
 
 
 ============================== table nb count(94) table converted to MD ========================================
@@ -1354,9 +3108,9 @@
 | UCONF parameter  | Default  |  Former Sentinel parameter<br/>TRKCNF  |
 | --- | --- | --- |
 | sentinel.xfb.enable  | NO  | XFB.Sentinel (TRKCNF)  |
-|  sentinel.xfb.transfer  |  ALL  |  XFB.Transfer (TRKCNF) &lt;/p&gt;  |
-|  sentinel.xfb.shut  |  0 &lt;/p&gt;  |  XFB.Shut (TRKCNF) &lt;/p&gt;  |
-|  sentinel.xfb.log  |  IEWF  |  XFB.Log (TRKCNF) &lt;/p&gt;  |
+|  sentinel.xfb.transferqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq  |  ALL  |  XFB.Transfer (TRKCNF) qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/p&gt;  |
+|  sentinel.xfb.shutqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq  |  0 qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/p&gt;  |  XFB.Shut (TRKCNF) qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/p&gt;  |
+|  sentinel.xfb.logqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq  |  IEWF  |  XFB.Log (TRKCNF) qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/p&gt;  |
 |  sentinel.trktname  |  $(cft.runtime_dir)<br /> /data/trkapi.buf  |  TRKTNAME (TRKCNF)  |
 |  sentinel.trksharedfile  |  No  |  TRKSHAREDFILE  |
 |  sentinel.trklenmsg  |   |  TRKLENMSG  |
@@ -1380,7 +3134,7 @@
 |  sentinel.trkgmtdiff  |  60  |  TRKGMTDIFF  |
 |  sentinel.trktrcfile  |  $(cft.runtime_dir)<br /> /run/sentinel.trc  |  TRKTRCFILE  |
 |  sentinel.trktrace  |  0  |  TRKTRACE  |
-|  sentinel.xfb.transfer_progress_period<br/>The frequency in seconds in which Transfer CFT notifies Sentinel (for both SENDING and RECEIVING states) that a transfer is running.<br/>0 = no notification  | 60  |   |
+|  sentinel.xfb.transfer_progress_period<br/>The frequency in seconds in which Transfer CFT notifies Sentinelqqqdoublespaceqqq (for both SENDING and RECEIVING states) that a transfer is running.<br/>0 = no notification  | 60  |   |
 |  sentinel.xfb.transfer.send_relay_site_nidf<br/>Enables an NIDF on the relay site. This uses an NIDF instead of COMMUT when sending an event to Sentinel using the XFBTransfer object.  | No  |   |
 
 
@@ -1391,7 +3145,7 @@
 | Unified configuration parameter  | Default value  | Description  |
 | --- | --- | --- |
 | sentinel.heartbeat.enable  | NO  |  Enables sending Heartbeats to the Sentinel Server.  |
-| sentinel.heartbeat.periodicity  | 300  | The delay in seconds between sending Heartbeats.  |
+| sentinel.heartbeat.periodicity  | 300  | The delay in seconds between sending Heartbeats.qqqdoublespaceqqq  |
 | sentinel.heartbeat.script  |  CFTPROD/HEARTBEAT  | Script for executing Heartbeats.  |
 
 
@@ -1432,21 +3186,111 @@
 
 
 
-============================== table nb count(105) table converted to MD ========================================
+============================== table nb count(105) table stayed in HTML ========================================
 
-
-| FTYPE  | FRECFM  |  PF-DTA<br/>Fixed data  |  PF-DTA<br/>Variable data  | PF-SRC  | SAVF  |
-| --- | --- | --- | --- | --- | --- |
-|   |   | FRECFL  | FRECFL  | FRECFL  |   |
-|  ‘D’  |  ‘F’  |  **RCDLEN**  |  RCDLEN <sup>1</sup>  |  RCDLEN  |  528  |
-|  ‘V’  |  RCDLEN  |  **RCDLEN-5** <sup>2</sup>  |  RCDLEN  |  528  |
-|  ‘S’  |  ‘F’  |  RCDLEN  |  RCDLEN <sup>1</sup>  |  **RCDLEN**  |  Error<br /> DIAGI: 102<br /> DIAGP: 1140850696  |
-|  ‘V’  |  RCDLEN  |  RCDLEN-5 <sup>2</sup>  |  RCDLEN  |  Error<br /> DIAGI: 102<br /> DIAGP: 1140850696  |
-|  ‘E’  |  ‘F’  |  RCDLEN  |  RCDLEN <sup>1</sup>  |  **RCDLEN-12** <sup>3</sup>  |  Error<br /> DIAGI: 102<br /> DIAGP: 1140850696  |
-|  ‘V’  |  RCDLEN  |  RCDLEN-5 <sup>2</sup>  |  RCDLEN-12 <sup>3</sup>  |  Error<br /> DIAGI: 102<br /> DIAGP: 1140850696  |
-|  ‘Z’<br/>  |  ‘F’  |  Error<br /> DIAGI: 102<br /> DIAGP: 1140850696  |  Error<br /> DIAGI: 102<br /> DIAGP: 1140850696  |  Error<br /> DIAGI: 102<br /> DIAGP: 1140850696  |  **528**  |
-|  ‘V’  |  Error<br /> DIAGI: 102<br /> DIAGP: 1140850696  |  Error<br /> DIAGI: 102<br /> DIAGP: 1140850696  |  Error<br /> DIAGI: 102<br /> DIAGP: 1140850696  |  528  |
-
+<table  data-cellspacing="0" >
+<tbody>
+<tr >
+<td  >FTYPE</td>
+<td  >FRECFM</td>
+<td  ><p>PF-DTA</p>
+<p>Fixed data</p></td>
+<td  ><p>PF-DTA</p>
+<p>Variable data</p></td>
+<td  >PF-SRC</td>
+<td  >SAVF</td>
+</tr>
+<tr >
+<td  > </td>
+<td  > </td>
+<td  >FRECFL</td>
+<td  >FRECFL</td>
+<td  >FRECFL</td>
+<td  > </td>
+</tr>
+<tr >
+<td rowspan="2" ><p>‘D’</p></td>
+<td ><p> ‘F’</p></td>
+<td ><p><strong>RCDLEN</strong></p></td>
+<td ><p>RCDLEN <sup>1</sup></p></td>
+<td ><p>RCDLEN</p></td>
+<td ><p>528</p></td>
+</tr>
+<tr >
+<td ><p>‘V’</p></td>
+<td ><p>RCDLEN</p></td>
+<td ><p><strong>RCDLEN-5</strong> <sup>2</sup></p></td>
+<td ><p>RCDLEN</p></td>
+<td ><p>528</p></td>
+</tr>
+<tr >
+<td rowspan="2" ><p>‘S’</p></td>
+<td ><p> ‘F’</p></td>
+<td ><p>RCDLEN</p></td>
+<td ><p>RCDLEN <sup>1</sup></p></td>
+<td ><p><strong>RCDLEN</strong></p></td>
+<td ><p>Error<br />
+DIAGI: 102<br />
+DIAGP: 1140850696</p></td>
+</tr>
+<tr >
+<td ><p>‘V’</p></td>
+<td ><p>RCDLEN</p></td>
+<td ><p>RCDLEN-5 <sup>2</sup></p></td>
+<td ><p>RCDLEN</p></td>
+<td ><p>Error<br />
+DIAGI: 102<br />
+DIAGP: 1140850696</p></td>
+</tr>
+<tr >
+<td rowspan="2" ><p>‘E’</p></td>
+<td ><p> ‘F’</p></td>
+<td ><p>RCDLEN</p></td>
+<td ><p>RCDLEN <sup>1</sup></p></td>
+<td ><p><strong>RCDLEN-12</strong> <sup>3</sup></p></td>
+<td ><p> Error<br />
+DIAGI: 102<br />
+DIAGP: 1140850696</p></td>
+</tr>
+<tr >
+<td ><p>‘V’</p></td>
+<td ><p>RCDLEN</p></td>
+<td ><p>RCDLEN-5 <sup>2</sup></p></td>
+<td ><p>RCDLEN-12 <sup>3</sup></p></td>
+<td ><p>Error<br />
+DIAGI: 102<br />
+DIAGP: 1140850696</p></td>
+</tr>
+<tr >
+<td rowspan="2" ><p>‘Z’</p>
+<p> </p></td>
+<td ><p> ‘F’</p></td>
+<td ><p>Error<br />
+DIAGI: 102<br />
+DIAGP: 1140850696 </p></td>
+<td ><p> Error<br />
+DIAGI: 102<br />
+DIAGP: 1140850696</p></td>
+<td ><p>Error<br />
+DIAGI: 102<br />
+DIAGP: 1140850696 </p></td>
+<td ><p> <strong>528</strong></p></td>
+</tr>
+<tr >
+<td ><p> ‘V’</p></td>
+<td ><p>Error<br />
+DIAGI: 102<br />
+DIAGP: 1140850696</p></td>
+<td ><p> Error<br />
+DIAGI: 102<br />
+DIAGP: 1140850696</p></td>
+<td ><p> Error<br />
+DIAGI: 102<br />
+DIAGP: 1140850696</p></td>
+<td ><p> 528</p></td>
+</tr>
+</tbody>
+</table>
 
 
 ============================== table nb count(106) table converted to MD ========================================
@@ -1459,6 +3303,147 @@
 | ‘D’  | ‘F’  | PF-SRC  |
 | ‘Z’  | ‘F’  | SAVF  |
 
+
+
+============================== table nb count(107) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th rowspan="2" >FTYPE</th>
+<th rowspan="2" >FRECFM</th>
+<th colspan="2" >Created file</th>
+</tr>
+<tr >
+<th >Type</th>
+<th >Max record length</th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td rowspan="2" ><p>‘D’</p></td>
+<td ><p>‘F’</p></td>
+<td ><p>PF-DTA </p></td>
+<td ><p>FLRECL</p></td>
+</tr>
+<tr >
+<td ><p>‘V’</p></td>
+<td ><p>PF-DTA</p></td>
+<td ><p>FLRECL + 5 bytes <sup>1</sup></p></td>
+</tr>
+<tr >
+<td rowspan="2" ><p>‘S’</p></td>
+<td ><p>‘F’</p></td>
+<td ><p>PF-SRC</p></td>
+<td ><p>FLRECL</p></td>
+</tr>
+<tr >
+<td ><p>‘V’</p></td>
+<td ><p>PF-SRC</p></td>
+<td ><p>FLRECL</p></td>
+</tr>
+<tr >
+<td rowspan="2" ><p>‘E’</p></td>
+<td ><p>‘F’</p></td>
+<td ><p>PF-SRC</p></td>
+<td ><p>FLRECL  +12  bytes <sup>2</sup></p></td>
+</tr>
+<tr >
+<td ><p>‘V’</p></td>
+<td ><p>PF-SRC</p></td>
+<td ><p>FLRECL  +12  bytes <sup>2</sup></p></td>
+</tr>
+<tr >
+<td ><p>‘Z’</p></td>
+<td ><p>-</p></td>
+<td ><p>SAVF</p></td>
+<td ><p>NA</p></td>
+</tr>
+</tbody>
+</table>
+
+
+============================== table nb count(108) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th rowspan="2" >  FTYPE</th>
+<th rowspan="2" >  FRECFM</th>
+<th  colspan="3" >Existing file</th>
+</tr>
+<tr >
+<th ><p>PF-DTA</p>
+<p>Record length / member header</p></th>
+<th ><p>PF-SRC</p>
+<p>Record length / member header</p></th>
+<th ><p>Overwriting on a SAVF</p>
+<p>with FACTION=ERASE</p></th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td rowspan="2" ><p>‘D’</p></td>
+<td ><p>‘F’</p></td>
+<td ><p><strong>FLRECL / No</strong></p></td>
+<td ><p>FLRECL / No</p></td>
+<td ><p>Yes <sup>3</sup></p></td>
+</tr>
+<tr >
+<td ><p>‘V’</p></td>
+<td ><p>FLRECL+5 / 5</p></td>
+<td ><p><strong>FLRECL+5 / 5</strong></p></td>
+<td ><p>Yes <sup>3</sup></p></td>
+</tr>
+<tr >
+<td rowspan="2" ><p>‘S’</p>
+<p> </p></td>
+<td ><p>‘F’</p></td>
+<td ><p>FLRECL / 0  OK</p></td>
+<td ><p><strong>FLRECL / 12</strong></p></td>
+<td ><p>Error</p>
+<p>DIAGI: 102</p>
+<p>DIAGP: 1140850696</p></td>
+</tr>
+<tr >
+<td ><p>‘V’</p></td>
+<td ><p>FLRECL+17 /  17</p></td>
+<td ><p>FLRECL+17 /  17</p></td>
+<td ><p>Error</p>
+<p>DIAGI: 102</p>
+<p>DIAGP: 1140850696</p></td>
+</tr>
+<tr >
+<td rowspan="2" ><p>‘E’</p></td>
+<td ><p>‘F’</p></td>
+<td ><p>FLRECL +12 / 0</p></td>
+<td ><p><strong>FLRECL +12 / 12</strong></p></td>
+<td ><p>Error</p>
+<p>DIAGI: 102</p>
+<p>DIAGP: 1140850696</p></td>
+</tr>
+<tr >
+<td ><p>‘V’</p></td>
+<td ><p>FLRECL+17 /17</p>
+<p> </p></td>
+<td ><p>FLRECL+17 /  5</p></td>
+<td ><p>Error</p>
+<p>DIAGI: 102</p>
+<p>DIAGP: 1140850696</p></td>
+</tr>
+<tr >
+<td ><p>‘Z’</p></td>
+<td ><p>-</p></td>
+<td ><p>Error</p>
+<p>DIAGI: 102</p>
+<p>DIAGP: 1140850696</p></td>
+<td ><p>Error</p>
+<p>DIAGI: 101</p>
+<p>DIAGP: 11409169</p></td>
+<td ><p>Yes <sup>3</sup></p></td>
+</tr>
+</tbody>
+</table>
 
 
 ============================== table nb count(109) table converted to MD ========================================
@@ -1566,7 +3551,7 @@
 | Subvolume  | Description  |
 | --- | --- |
 | &lt;subvolume&gt;IE  |  Contains the Transfer CFT samples.<br/>Some of these samples are copied in the user configuration volume &lt;subvolume&gt;UP, where they can be modified.  |
-| &lt;subvolume&gt;IF  |  Contains the EMS dictionary and DDL template files.<br/>CFTPLATE contains the Transfer CFT templates to be concatenated with the system template for an EMS collector. See the XCFTDDL section in <a href="">Event messages</a>, which describes the DDL template.  |
+| &lt;subvolume&gt;IF  |  Contains the EMS dictionary and DDL template files.<br/>CFTPLATE contains the Transfer CFT templates to be concatenated with the system template for an EMS collector. Seeqqqdoublespaceqqqthe XCFTDDL section in <a href="">Event messages</a>, which describes the DDL template.  |
 | &lt;subvolume&gt;IX  |  Transfer CFT executables and procedures.  |
 | &lt;subvolume&gt;IP  | Program samples.  |
 | &lt;subvolume&gt;IH  | Headers.  |
@@ -1593,20 +3578,20 @@
 
 |  Parameter  |  Default  |  Description  |
 | --- | --- | --- |
-|  <span id="cft.guardian.cftwrk"></span>cft.guardian.cftwrk  |   |  The default working directory for the TACL and NETBATCH scripts.<br/>The parameter is set with the default value of “<code>&lt;</code><code>subvolume</code><code>&gt;UD</code>” (see <a href="#Guardian" class="MCXref xref">Guardian files</a>) during the Guardian files installation.  |
+|  <span id="cft.guardian.cftwrk"></span>cft.guardian.cftwrk  |   |  The default working directory for the TACL and NETBATCH scripts.<br/>The parameter is setqqqdoublespaceqqqwith the default value of “<code>&lt;</code><code>subvolume</code><code>&gt;UD</code>” (see <a href="#Guardian" >Guardian files</a>) during the Guardian files installation.  |
 |  <span id="cft.guardian.process_name_prefix"></span>cft.guardian.process_name_prefix  |  LA  |  The first two letters of the Guardian process names.<br/>Each Transfer CFT process is assigned a name using this prefix and a suffix, which depends on the executable name.<br/>For instance, using the default setting, CFTLOG is run with the name $LALOG with the Guardian convention (or /G/LALOG with the OSS convention).<br/>If empty, no Guardian process name is given.<br/>If you plan to run several instances of Transfer CFT at the same time on the same machine, you should assign each instance a unique value.  |
-|  <span id="cft.guardian.processor"></span>cft.guardian.processor  |  -1  |  Processor on which Transfer CFT is started.<br/> • -1 indicates that Transfer CFT is started on the processor from which the start-up command is executed<br/> • Processor number</li>  |
-|  <span id="cft.guardian.backup_processor"></span>cft.guardian.backup_processor  |  -1  |  Backup processor on which Transfer CFT is started.<br/> • -1 indicates that no processor number is assigned<br/> • Backup processor number</li>  |
-|  <span id="cft.guardian.priority"></span>cft.guardian.priority  |  -1  |  Guardian execution priority of the CFT processes.<br/> • -1 means that CFT is started with the execution priority of the parent process.<br/> • Process priority</li>  |
-|  <span id="cft.guardian.hometerm"></span>cft.guardian.hometerm  |   |  The Guardian home terminal for Transfer CFT processes.<br/> • An empty value means that CFT is started with the OSS shell’s home terminal<br/> • The value should be either set using the Guardian form ($ZTNT.#PTY4, $TTY), or the OSS form (/G/ZTNT/#PTY, /G/TTY)</li>  |
+|  <span id="cft.guardian.processor"></span>cft.guardian.processor  |  -1  |  Processor on which Transfer CFT is started.<br/> • qqqdoublespaceqqq-1 indicates that Transfer CFT is started on the processor from which the start-up command is executed<br/> • Processor number</li>  |
+|  <span id="cft.guardian.backup_processor"></span>cft.guardian.backup_processor  |  -1  |  Backup processor on which Transfer CFT is started.<br/> • qqqdoublespaceqqq-1 indicates that no processor number is assigned<br/> • Backup processor number</li>  |
+|  <span id="cft.guardian.priority"></span>cft.guardian.priority  |  -1  |  Guardian execution priority of the CFT processes.<br/> • qqqdoublespaceqqq-1 means that CFT is started with the execution priority of the parent process.<br/> • qqqdoublespaceqqqProcess priority</li>  |
+|  <span id="cft.guardian.hometerm"></span>cft.guardian.hometerm  |   |  The Guardian home terminal for Transfer CFT processes.<br/> • qqqdoublespaceqqqAn empty value means that CFT is started with the OSS shell’s home terminal<br/> • The value should be either set using the Guardian form ($ZTNT.#PTY4, $TTY), or the OSS form (/G/ZTNT/#PTY, /G/TTY)</li>  |
 |  cft.guardian.tcpip_resolver_name  |   |  The TCPIP resolver name for Transfer CFT processes. Equivalent to the Guardian DEFINE TCPIP^RESOLVER^NAME. If set, the value should be a Unix pathname pointing to an existing resolver file.  |
-|  cft.guardian.tacl.processor  |  -1  |  Processor on which TACL is started.<br/> • -1 means that TACL is started on same processor where Transfer CFT is running<br/> • Processor number</li>  |
+|  cft.guardian.tacl.processor  |  -1  |  Processor on which TACL is started.<br/> • qqqdoublespaceqqq-1 means that TACL is started on same processor where Transfer CFT is running<br/> • qqqdoublespaceqqqProcessor number</li>  |
 |  cft.guardian.tacl.backup_processor  |  -1  |  Backup processor on which TACL is started. Valid only if different from -1 and from the cft.guardian.tacl.value.  |
 |  cft.guardian.tacl.priority  |  90  |  Priority of a started TACL.  |
 |  cft.guardian.tacl.output  |  '$S.#ABTT'  |  Output destination of the started TACL.  |
 |  cft.guardian.tacl.home_terminal  |  '$ZHOME'  |  TACL home terminal.  |
 |  cft.guardian.netbatch.process  |  '$ZBAT'  |  NetBatch process with which you send a request.<br/>You can override this value in the <a href="#CFT%5EBT%5EFORCE%5EZBAT">first line of a TACL procedure</a>.  |
-|  cft.guardian.netbatch.jobname_prefix  |  'ZBBT'  |  A jobname prefix used to build a jobname having 8 characters, and comprised of:<br/> • This prefix<br/> • A suffix that is composed of the last characters of the temporary file name<br/>You can override this value in the <a href="#CFT%5EBT%5EFORCE%5EZBAT">first line of a TACL procedure</a>.  |
+|  cft.guardian.netbatch.jobname_prefix  |  'ZBBT'  |  A jobname prefix used to build a jobname having 8 characters, and comprised of:<br/> • This prefix<br/> • qqqdoublespaceqqqA suffix that is composed of the last characters of the temporary file name<br/>You can override this value in the <a href="#CFT%5EBT%5EFORCE%5EZBAT">first line of a TACL procedure</a>.  |
 |  <span id="cft.guardian.netbatch.attachment_set"></span>cft.guardian.netbatch.attachment_set  |  'NBASCFTLI'  |  NetBatch attachment-set name.<br/>You can override this value in the <a href="#CFT%5EBT%5EFORCE%5EZBAT">first line of a TACL procedure</a>.  |
 |  cft.guardian.netbatch.priority  |  90  |  Priority of TACL run started.  |
 |  cft.guardian.netbatch.selpri  |  4  |  JOB selection priority.  |
@@ -1673,6 +3658,82 @@
 |  ' '  |  BINARY  |
 |  E  |  ASCII  |
 
+
+
+============================== table nb count(124) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th rowspan="2" > 
+<p>Guardian<br />
+type</p></th>
+<th rowspan="2" > 
+<p>Guardian<br />
+code</p></th>
+<th rowspan="2" > 
+<p>File type</p></th>
+<th colspan="3" >Implicit value for...</th>
+</tr>
+<tr >
+<th ><p>FTYPE<br />
+</p></th>
+<th ><p>FRECFM<br />
+</p></th>
+<th >FORG</th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td ><p>U</p></td>
+<td ><p># 101</p></td>
+<td ><p>Binary stream</p></td>
+<td ><p>' '</p></td>
+<td ><p>U</p></td>
+<td >SEQ</td>
+</tr>
+<tr >
+<td ><p>U</p></td>
+<td ><p>= 101</p></td>
+<td ><p>Edit file</p></td>
+<td ><p>E</p></td>
+<td ><p>U</p></td>
+<td >SEQ</td>
+</tr>
+<tr >
+<td ><p>E</p></td>
+<td ><p># 1</p></td>
+<td ><p>Fixed sequential</p></td>
+<td ><p>' '</p></td>
+<td ><p>F</p></td>
+<td >SEQ</td>
+</tr>
+<tr >
+<td ><p>E</p></td>
+<td ><p>= 1</p></td>
+<td ><p>Sequential, variable emulation</p></td>
+<td ><p>' '</p></td>
+<td ><p>V</p></td>
+<td >SEQ</td>
+</tr>
+<tr >
+<td ><p>R</p></td>
+<td ><p> </p></td>
+<td ><p>Direct fixed</p></td>
+<td ><p>' '</p></td>
+<td ><p>F [1]</p></td>
+<td >DIR</td>
+</tr>
+<tr >
+<td ><p>K</p></td>
+<td ><p> </p></td>
+<td ><p>Fixed indexed sequential</p></td>
+<td ><p>' '</p></td>
+<td ><p>Fqqqdoublespaceqqq[1]</p></td>
+<td >IDX</td>
+</tr>
+</tbody>
+</table>
 
 
 ============================== table nb count(125) table converted to MD ========================================
@@ -1763,7 +3824,7 @@
 
 | Requester/Sender  | Server/Receiver  |
 | --- | --- |
-|  Conf <ol> <li>Create a partner.<br/> • Create a CFTSEND with fname=&lt;FILE_TO_SEND&gt;, nfname=cft/filpub/fic.txt …</li> </ol> Runtime <ol start="3"> <li>Run the transfer.</li> </ol> <ol start="4"> <li>Check the catalog.</li> </ol>  |  Conf <ol> <li>Create a partner.<br/> • Create an CFTRECV fname=&amp;nfname…<br/>The syntax ‘fname=&amp;nfname’ means that the receiver allows the open mode. </li> </ol> Runtime <ol start="3"> <li>The file has been stored in the path defined by the client/sender, in this example: cft/filpub/fic.txt.<br/> • Check the catalog.</li> </ol>  |
+|  Conf <ol> <li>Create a partner.<br/> • Create a CFTSEND with fname=&lt;FILE_TO_SEND&gt;, nfname=cft/filpub/fic.txt …</li> </ol> Runtime <ol start="3"> <li>Run the transfer.</li> </ol> <ol start="4"> <li>Check the catalog.</li> </ol>  |  Conf <ol> <li>Create a partner.<br/> • Create an CFTRECVqqqdoublespaceqqqfname=&amp;nfname…<br/>The syntax ‘fname=&amp;nfname’ means that the receiver allows the open mode. </li> </ol> Runtime <ol start="3"> <li>The file has been stored in the path defined by the client/sender, in this example: cft/filpub/fic.txt.<br/> • Check the catalog.</li> </ol>  |
 
 
 
@@ -1772,7 +3833,7 @@
 
 |  Requester/Receiver  | Server/Sender  |
 | --- | --- |
-|  Configuration <ol> <li>Create a partner.<br/> • Create an CFTRECV that defines the fname.</li> </ol> Runtime <ol start="3"> <li>Request the file stored on the remote server. Run the command: CFTUTIL RECV… nfname=&lt;remote_requested_file&gt;.</li> </ol> <ol start="4"> <li>The file retrieved is stored in the fname location.<br/> • Check the catalog.</li> </ol>  |  Configuration <ol> <li>Create a partner.<br/> • Create an CFTSEND where impl=yes, fname=&amp;nfname.<br/>The syntax ‘fname=&amp;nfname’ means that the server/sender allows the open mode. </li> </ol> Runtime <ol start="3"> <li>The file stored locally in &lt;remote_requested_file&gt; is sent to the client.</li> </ol> <ol start="4"> <li>Verify the catalog</li> </ol>  |
+|  Configuration <ol> <li>Create a partner.<br/> • Create an CFTRECV that defines the fname.</li> </ol> Runtime <ol start="3"> <li>Request the fileqqqdoublespaceqqqstored on the remote server. Run the command: CFTUTIL RECV… nfname=&lt;remote_requested_file&gt;.</li> </ol> <ol start="4"> <li>The file retrieved is stored in the fname location.<br/> • Check the catalog.</li> </ol>  |  Configuration <ol> <li>Create a partner.<br/> • Create an CFTSEND where impl=yes, fname=&amp;nfname.<br/>The syntax ‘fname=&amp;nfname’ means that the server/sender allows the open mode. </li> </ol> Runtime <ol start="3"> <li>The file stored locally in &lt;remote_requested_file&gt; is sent to the client.</li> </ol> <ol start="4"> <li>Verify the catalog</li> </ol>  |
 
 
 
@@ -1790,8 +3851,48 @@
 
 | Client/Receiver  |  Server/Sender<br/>PHOENIX  |  Server/Sender<br/>NEW YORK  |
 | --- | --- | --- |
-|  Configuration <ol> <li>Create a first partner.<br/> • Create a second partner.<br/> • Create a collect list containing both NEW YORK and PHOENIX.<br/> • Create a CFTRECV.</li> </ol> Runtime <ol start="5"> <li>Using a single command, receive a file from both (all) partners using the defined collect list.</li> </ol> <ol start="6"> <li>Both files are received from both partners at the same time</li> </ol> <ol start="7"> <li>Check the catalog. You should have 3 entries in the catalog, one generic entry and one entry per partner.</li> </ol>  |  Configuration <ol> <li>Create this partner.<br/> • Create an CFTSEND.</li> </ol> Runtime <ol start="3"> <li>This partner makes a file available for the client SEND state=HOLD.</li> </ol> <ol start="4"> <li>The first partner sends the file.</li> </ol> <ol start="5"> <li>Check the catalog, there should be one entry.</li> </ol>  |  Configuration <ol> <li>Create a this partner.<br/> • Create an CFTSEND.</li> </ol> Runtime <ol start="3"> <li>This partner makes a file available for the client SEND state=HOLD.</li> </ol> <ol start="4"> <li>The second partner sends the file.<br/> • Check the catalog, there should be one entry.</li> </ol>  |
+|  Configuration <ol> <li>Create a first partner.<br/> • Create a second partner.<br/> • Create a collect list containing both NEW YORK and PHOENIX.<br/> • Create a CFTRECV.</li> </ol> Runtime <ol start="5"> <li>Using a single command, receive a file from both (all) partners using the defined collect list.</li> </ol> <ol start="6"> <li>Both files are received from both partners at the same time</li> </ol> <ol start="7"> <li>Check the catalog. You should have 3 entries in the catalog, one generic entry and one entry per partner.</li> </ol>  |  Configuration <ol> <li>Create this partner.<br/> • Create an CFTSEND.</li> </ol> Runtime <ol start="3"> <li>This partner makes a file available for the clientqqqdoublespaceqqqSEND state=HOLD.</li> </ol> <ol start="4"> <li>The first partner sends the file.</li> </ol> <ol start="5"> <li>Check the catalog, there should be one entry.</li> </ol>  |  Configuration <ol> <li>Create a this partner.<br/> • Create an CFTSEND.</li> </ol> Runtime <ol start="3"> <li>This partner makes a file available for the clientqqqdoublespaceqqqSEND state=HOLD.</li> </ol> <ol start="4"> <li>The second partner sends the file.<br/> • Check the catalog, there should be one entry.</li> </ol>  |
 
+
+
+============================== table nb count(136) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th > </th>
+<th >Task</th>
+<th >Description</th>
+<th >Details</th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td >1</td>
+<td ><p>Check your Transfer CFTs in .<br />
+</p></td>
+<td ><p>In select <strong>Products</strong> on the top toolbar to open the <strong>Product List</strong> page and note the host name of the {{&lt; TransferCFT/componentshortname &gt;}}s to use in these exercises.</p></td>
+<td ><a href="intro_cg_task_catalog/t_view_products_in_cg"><img src="/Images/TransferCFT/mapArrow.png" /></a></td>
+</tr>
+<tr >
+<td >2</td>
+<td >Add an application.</td>
+<td >In this example, create three applications to represent the MainOffice, Store_66, and Store_89.</td>
+<td ><a href="intro_cg_task_catalog/t_declareapplication"><img src="/Images/TransferCFT/mapArrow.png" /></a></td>
+</tr>
+<tr >
+<td colspan="4" > 
+<p>Notice the association between the application <strong>Name</strong> and the <strong>Transfer CFT</strong> instance identifier. You will need the Transfer CFT identifier, for example <code>CFTlptxumcft4-01</code> in the example below, to use in your transfer commands.</p>
+<p>Your <strong>Name</strong> list should look like this:</p>
+<p><img src="/Images/TransferCFT/application_list_complete.png"  alt="Application list in Central Governance showing 3 example applications to use in flows" /></p>
+<p> </p>
+<blockquote>
+<p><strong>Note</strong></p>
+<p>Tip  The Transfer CFT field in Central Governance maps to the Transfer CFT PART parameter.</p>
+</blockquote></td>
+</tr>
+</tbody>
+</table>
 
 
 ============================== table nb count(137) table converted to MD ========================================
@@ -1799,10 +3900,10 @@
 
 |   | Task  | Description  | Details  |
 | --- | --- | --- | --- |
-| 1  |  Define a flow.<br />  |  In define a flow named Simple_flow and give it the identifier flow01.<br/>Use Store_66 as the Source and the MainOffice as the Target.<br /> Note: You cannot modify the Protocol until you have defined both the Source and Target.  | <a href="intro_cg_task_catalog/t_defineflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 1  |  Define a flow.<br />  |  In define a flow named Simple_flow and give it the identifierqqqdoublespaceqqqflow01.<br/>Use Store_66 as the Source and the MainOffice as the Target.<br /> Note: You cannot modify the Protocol until you have defined both the Source and Target.  | <a href="intro_cg_task_catalog/t_defineflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 | 2  |  Deploy the flow.  | In you can save now and deploy at a later date, or click Deploy to save and deploy.  | <a href="intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 | 3  | Create a file to exchange.  | For this example, create a file named SALES_report, and place it in the Store_66's {{&lt; TransferCFT/componentshortname &gt;}} runtime\pub folder .  | <a href="intro_cg_task_catalog/t_create_sample_files"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 4  | Run the SEND command.  |  In {{&lt; TransferCFT/componentshortname &gt;}}, run the following command:<br /> CFTUTIL SEND part=&lt;instance_MainOffice&gt;, idf=flow01, fname=pub\SALES_report<br/>Remember, replace &lt;instance_MainOffice&gt; with the Transfer CFT instance for the MainOffice as it displays in the list of applications. <blockquote> **Note:**<br/>Tip The flow Identifier field is equivalent to the Transfer CFT IDF parameter. </blockquote>  | <a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 4  | Run the SEND command.  |  In {{&lt; TransferCFT/componentshortname &gt;}},qqqdoublespaceqqqrun the following command:<br /> CFTUTIL SEND part=&lt;instance_MainOffice&gt;, idf=flow01, fname=pub\SALES_report<br/>Remember, replace &lt;instance_MainOffice&gt; with the Transfer CFT instance for the MainOffice as it displays in the list of applications. <blockquote> **Note**<br/>Tip The flow Identifier field is equivalent to the Transfer CFT IDF parameter. </blockquote>  | <a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 | 5  | Monitor the flow.  | In , check the status of the file exchange.  | <a href="intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 
 
@@ -1812,11 +3913,11 @@
 
 |   | Task  | Description  | Details  |
 | --- | --- | --- | --- |
-| 1  |  Create a flow.<br />  |  In define a flow called <code>flow02 </code>with Store_66 as the Source, and the MainOffice as the Target.<br />  | <a href="intro_cg_task_catalog/t_multiple_filesflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 1  |  Create a flow.<br />  |  In define a flow called <code>flow02 </code>withqqqdoublespaceqqqStore_66 as the Source, andqqqdoublespaceqqqthe MainOffice as the Target.<br />  | <a href="intro_cg_task_catalog/t_multiple_filesflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 | 2  |  Enable multiple files for the exchange.  |  Select the Source, and then File properties. Enable Multiple files.  | <a href="intro_cg_task_catalog/t_multiple_files"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 | 3  | Create the files for the exchange.  |  For this example, create a folder called Store_66 in the Store_66 {{&lt; TransferCFT/componentshortname &gt;}} <code>runtime\pub\ </code>directory.<br/>Copy three files to this folder and call them <code>SALES_report</code>, <code>DAILY_news</code>, and <code>INVENTORY</code>.  |   |
 | 4  | Deploy the flow.  | In you can save, and deploy later, or save and deploy immediately.  | <a href="intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 5  | Run the SEND command.  | In {{&lt; TransferCFT/componentshortname &gt;}}, run the following command: <code>CFTUTIL SEND part=&lt;instance_MainOffice&gt;, idf=flow02, fname=#pub\Store_66\*</code> Remember, replace <code>&lt;instance_MainOffice&gt;</code> with the Transfer CFT instance for the MainOffice as it displays in the list of applications.  | <a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 5  | Run the SEND command.  | In {{&lt; TransferCFT/componentshortname &gt;}},qqqdoublespaceqqqrun the following command: <code>CFTUTIL SEND part=&lt;instance_MainOffice&gt;, idf=flow02, fname=#pub\Store_66\*</code> Remember, replace <code>&lt;instance_MainOffice&gt;</code> with the Transfer CFT instance for the MainOffice as it displays in the list of applications.  | <a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 | 6  | Monitor the flow.  | In , check the status of the file exchange.  | <a href="intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 
 
@@ -1826,10 +3927,10 @@
 
 |   | Task  | Description  | Details  |
 | --- | --- | --- | --- |
-| 1  |  Create an implicit flow.<br />  |  In define a flow called <code>flow03</code>.<br/>To enable implicit mode, you select **Target pulls file** in the flow's page.<br/>Continue to define the flow with the MainOffice as the Target, which will pull the file, and Store_89 as the file Source.<br />  | <img src="/Images/TransferCFT/mapArrow.png" />  |
+| 1  |  Create an implicit flow.<br />  |  In define a flow calledqqqdoublespaceqqq<code>flow03</code>.<br/>To enable implicit mode, you select **Target pulls file** in the flow's page.<br/>Continue to define the flow with the MainOffice as the Target, which will pull the file, and Store_89 as the file Source.<br />  | <img src="/Images/TransferCFT/mapArrow.png" />  |
 | 2  | Define the path to the file location.  |  In the File properties of the Source, define the path to the file to be sent.<br/>In our example, use the TEST file located in the {{&lt; TransferCFT/componentshortname &gt;}} runtime /pub folder.  |   |
 | 3  |  Deploy the flow.  | In you can save and deploy later, or save and deploy.  | <a href="intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 4  | Run the RECV command.  | In {{&lt; TransferCFT/componentshortname &gt;}}, run the following command: <code>CFTUTIL RECV PART=&lt;instance_Store_89&gt;, IDF=flow03</code> Remember, replace <code>&lt;instance_Store_89&gt;</code> with the Transfer CFT instance for Store_89 as it displays in the list of applications.  | <a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 4  | Run the RECV command.  | In {{&lt; TransferCFT/componentshortname &gt;}},qqqdoublespaceqqqrun the following command: <code>CFTUTIL RECV PART=&lt;instance_Store_89&gt;, IDF=flow03</code> Remember, replace <code>&lt;instance_Store_89&gt;</code> with the Transfer CFT instance for Store_89 as it displays in the list of applications.  | <a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 | 5  | Monitor the flow.  | In , check the status of the file exchange.  | <a href="intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 
 
@@ -1839,11 +3940,11 @@
 
 |   | Task  | Description  | Details  |
 | --- | --- | --- | --- |
-| 1  |  Create a flow.<br />  |  In define a flow called <code>flow04</code>. In this flow the MainOffice is the Source with the two stores as the Targets.  | <a href="intro_cg_task_catalog/t_defineflow_broadcast"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 1  |  Create a flow.<br />  |  In define a flow called <code>flow04</code>. In this flow theqqqdoublespaceqqqMainOffice is the Source with the two stores as the Targets.qqqdoublespaceqqq  | <a href="intro_cg_task_catalog/t_defineflow_broadcast"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 | 2  | Enable broadcasting mode.  | In the Source Transfer properties, enable Broadcast list.  | <a href="intro_cg_task_catalog/t_defineflow_broadcast#enable_broadcast_cg"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 | 3  |   | For this example, copy a file SALES_report to transfer in the Store_66 {{&lt; TransferCFT/componentshortname &gt;}} runtime\pub folder.  |   |
 | 4  |  Deploy the flow.  | In you can save and deploy at a later date, or both save and deploy now.  | <a href="intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 5  | Run the SEND command.  |  In {{&lt; TransferCFT/componentshortname &gt;}}, run the following command:<br/><code>CFTUTIL SEND PART=DEST_stores, IDF=flow04, FNAME=pub/SALES_report</code>  | <a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 5  | Run the SEND command.  |  In {{&lt; TransferCFT/componentshortname &gt;}},qqqdoublespaceqqqrun the following command:<br/><code>CFTUTIL SEND PART=DEST_stores, IDF=flow04, FNAME=pub/SALES_report</code>  | <a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 | 6  | Monitor the flow.  | In , check the status of the file exchange.  | <a href="intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 
 
@@ -1857,7 +3958,7 @@
 | 2  | Enable collect mode.  | In the Collect_flow definition, modify to Target pulls file.  | <a href="intro_cg_task_catalog/t_defineflow_collect"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 | 3  | Define the path to the Target file for each store.  | In the Target (each store) select File properties. In Path field, enter the path to the file to send.  | <a href="intro_cg_task_catalog/t_collect_target_properties"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 | 4  |  Deploy the flow.  | In you can save and deploy later, or save and deploy.  | <a href="intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 5  | Run the RECV command.  | In {{&lt; TransferCFT/componentshortname &gt;}}, run the following command: <code>CFTUTIL RECV PART=DEST_Stores, IDF=flow05</code>  | <a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 5  | Run the RECV command.  | In {{&lt; TransferCFT/componentshortname &gt;}},qqqdoublespaceqqqrun the following command: <code>CFTUTIL RECV PART=DEST_Stores, IDF=flow05</code>  | <a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 | 6  | Monitor the flow.  | In , check the status of the file exchange.  | <a href="intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 
 
@@ -1878,13 +3979,87 @@
 
 |   | Task  | Description  | Details  |
 | --- | --- | --- | --- |
-|  1<br/> <br/>  |  Create a flow.<br/> <br/><br />  |  In click **Flows** &gt; **Add flow**.<br/>Create a flow named **multiple_files_flow**, and give it the identifier **flow02**.<br/>Define Store_66 as the Source, and MainOffice as the Target.<br/><br />  | <a href="../intro_cg_task_catalog/t_multiple_filesflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-|  2<br/>  |  Enable a multiple files exchange.<br/>  |  Select the Source, and then **File properties**.<br/>Under Filename select **Multiple**.<br/>  | <a href="../intro_cg_task_catalog/t_multiple_files"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+|  1<br/> <br/>  |  Create a flow.<br/> <br/><br />  |  In click **Flows** &gt; **Add flow**.<br/>Create a flow named **multiple_files_flow**, and give it the identifier **flow02**.<br/>Define Store_66 as the Source, andqqqdoublespaceqqqMainOffice as the Target.<br/><br />  | <a href="../intro_cg_task_catalog/t_multiple_filesflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+|  2<br/>  |  Enable a multiple filesqqqdoublespaceqqqexchange.<br/>  |  Select the Source, and then **File properties**.<br/>Under Filename select **Multiple**.<br/>  | <a href="../intro_cg_task_catalog/t_multiple_files"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 |  3<br/>  |  Deploy the flow.<br/>  |  In click **Deploy** to save and deploy.<br/>  | <a href="../intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 |  4<br/> <br/>  |  Add three files for the exchange.  |  Create a folder, you can name it **Store_66**, in the Store_66 {{&lt; TransferCFT/componentshortname &gt;}} <code>runtime/pub </code>directory. Copy three test files to this folder, for example SALES_report, DAILY_news, and INVENTORY.  |   |
-|  5  |  Execute the SEND command.  | From the source {{&lt; TransferCFT/componentshortname &gt;}}, run the following command: <code>CFTUTIL SEND part=&lt;instance_target&gt;, idf=flow02, fname=#pub/Store_66/*</code> Remember to replace <code>&lt;instance_target&gt;</code> with the Transfer CFT instance for the target as it displays in your application list.  | <a href="../../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+|  5  |  Execute the SEND command.  | From the source {{&lt; TransferCFT/componentshortname &gt;}},qqqdoublespaceqqqrun the following command: <code>CFTUTIL SEND part=&lt;instance_target&gt;, idf=flow02, fname=#pub/Store_66/*</code> Remember to replace <code>&lt;instance_target&gt;</code> with the Transfer CFT instance for the target as it displays in your application list.  | <a href="../../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 | 6  | Monitor the transfer status.  | In the **Flows** tab, click **Monitoring** to check the status of the file exchange.  | <a href="../intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 
+
+
+============================== table nb count(144) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th  colspan="2" >  Task</th>
+<th  >Description</th>
+<th >Details</th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td  ><p>1</p>
+<p> </p>
+<p> </p>
+<p> </p></td>
+<td  ><p>Create a flow where the target is the requester.</p>
+<p> </p>
+<p> </p>
+<p><br />
+</p></td>
+<td  ><p>In click <strong>Flows</strong> &gt; <strong>Add flow</strong>.</p>
+<p>Create a flow named <strong>implicit_flow</strong> and define the identifier as <strong>flow03</strong>.</p>
+<p>To enable implicit mode, select <strong>Target pulls file</strong>.</p>
+<p>Define the MainOffice as the Target, which will pull the file, and Store_89 as the file Source.</p>
+<p><br />
+</p></td>
+<td ><a href="../intro_cg_task_catalog/t_defineflow"><img src="/Images/TransferCFT/mapArrow.png" /></a></td>
+</tr>
+<tr >
+<td  ><p>2</p>
+<p> </p>
+<p> </p></td>
+<td  ><p>Define the path to the file location.</p>
+<p> </p>
+<p> </p></td>
+<td  ><p>In the File properties of the Source, define the path to the file to be sent.</p>
+<p>You can use, for example, the <code>TEST </code>file located by default in the source {{&lt; TransferCFT/componentshortname &gt;}}'s <code>runtime/pub</code> folder.</p>
+<p> </p></td>
+<td > </td>
+</tr>
+<tr >
+<td  ><p>3</p>
+<p> </p></td>
+<td  ><p>Deploy the flow.</p>
+<p> </p></td>
+<td  ><p>In click <strong>Deploy</strong> to save and deploy.</p>
+<p> </p></td>
+<td ><a href="../intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a></td>
+</tr>
+<tr >
+<td  ><p>4</p>
+<p> </p>
+<p> </p>
+<p> </p></td>
+<td  ><p>Execute the RECV command.</p>
+<p> </p>
+<p> </p>
+<p> </p></td>
+<td  >From theqqqdoublespaceqqq{{&lt; TransferCFT/componentshortname &gt;}} (MainOffice),qqqdoublespaceqqqrun the following command: <code>CFTUTIL RECV PART=&lt;instance_source&gt;, IDF=flow03</code>
+<p>Remember in our example the source is Store_89, you should replace <code>&lt;instance_source&gt;</code> with the Transfer CFT instance as it appears in your applications.</p>
+<p> </p></td>
+<td ><a href="../../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a></td>
+</tr>
+<tr >
+<td  >5</td>
+<td  >Monitor the file transfer status.</td>
+<td  >In select the <strong>Flows</strong> tab, and click <strong>Monitoring</strong>.</td>
+<td ><a href="../intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a></td>
+</tr>
+</tbody>
+</table>
 
 
 ============================== table nb count(145) table converted to MD ========================================
@@ -1927,6 +4102,147 @@
 
 
 
+============================== table nb count(148) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th  colspan="2" >  Task</th>
+<th  >Description</th>
+<th  >Details</th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td  ><p>1</p>
+<p> </p></td>
+<td  ><p>Create a flow.</p>
+<p> </p>
+<p><br />
+</p></td>
+<td  ><p>In click <strong>Flows</strong> &gt; <strong>Add flow</strong>.</p>
+<p>Create  a flow named <strong>Broadcast_flow</strong>, and give it the identifier <strong>flow04</strong>.</p>
+<p>In this flow theqqqdoublespaceqqqMainOffice is the Source with the two stores as the Targets.</p></td>
+<td  ><a href="../intro_cg_task_catalog/t_defineflow_broadcast"><img src="/Images/TransferCFT/mapArrow.png" /></a></td>
+</tr>
+<tr >
+<td  ><p>2</p>
+<p> </p></td>
+<td  ><p>Enable broadcasting mode.</p>
+<p> </p></td>
+<td  ><p> </p>
+<p>In the Source Transfer properties, enable Broadcast list.</p>
+<p> </p></td>
+<td  ><a href="../intro_cg_task_catalog/t_defineflow_broadcast#enable_broadcast_cg"><img src="/Images/TransferCFT/mapArrow.png" /></a></td>
+</tr>
+<tr >
+<td  ><p>3</p>
+<p> </p></td>
+<td  ><p>Deploy the flow.</p>
+<p> </p></td>
+<td  ><p>In click <strong>Deploy</strong> to save and deploy the flow.</p>
+<p> </p></td>
+<td  ><a href="../intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a></td>
+</tr>
+<tr >
+<td  ><p>4</p>
+<p> </p></td>
+<td  ><p>Create a file for the flow.</p>
+<p> </p></td>
+<td  ><p>For this example, copy a file SALES_report to transfer in the Store_66 {{&lt; TransferCFT/componentshortname &gt;}}<code> runtime/pub </code>folder.</p>
+<p> </p></td>
+<td  > </td>
+</tr>
+<tr >
+<td  ><p>5</p>
+<p> </p></td>
+<td  ><p>Execute the SEND command.</p>
+<p> </p></td>
+<td  ><p>From the source {{&lt; TransferCFT/componentshortname &gt;}},qqqdoublespaceqqqrun the following command:</p>
+<p><code>CFTUTIL SEND PART=DEST_stores, IDF=flow04, FNAME=pub/SALES_report</code></p>
+<p> </p></td>
+<td  ><a href="../../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a></td>
+</tr>
+<tr >
+<td  >6</td>
+<td  >Monitor the file transfer status.</td>
+<td  >In select the <strong>Flows</strong> tab, and click <strong>Monitoring</strong>.</td>
+<td  ><a href="../intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a></td>
+</tr>
+</tbody>
+</table>
+
+
+============================== table nb count(149) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th  colspan="2" >  Task</th>
+<th  >Description</th>
+<th >Details</th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td  ><p>1</p>
+<p> </p></td>
+<td  ><p>Create a flow.</p>
+<p><br />
+</p></td>
+<td  ><p>In define a flow named <strong>Collect_flow</strong>, and give it the identifier <strong>flow05</strong>.qqqdoublespaceqqq</p>
+<p>Use the Source as MainOffice and the stores as the Target.<br />
+</p></td>
+<td ><a href="../intro_cg_task_catalog/t_define_simpleflow"><img src="/Images/TransferCFT/mapArrow.png" /></a></td>
+</tr>
+<tr >
+<td  ><p>2</p>
+<p> </p></td>
+<td  ><p>Enable collect mode.</p>
+<p> </p></td>
+<td  ><p> </p>
+<p>In the Collect_flow definition, modify so that the Target pulls file.</p>
+<p> </p></td>
+<td ><a href="../intro_cg_task_catalog/t_defineflow_collect"><img src="/Images/TransferCFT/mapArrow.png" /></a></td>
+</tr>
+<tr >
+<td  ><p>3</p>
+<p> </p></td>
+<td  >Define the path to the Target file for each store.</td>
+<td  ><p>In the Target (each store) select File properties. In Path field, enter the path to the file to send.</p>
+<p> </p></td>
+<td ><a href="../intro_cg_task_catalog/t_collect_target_properties"><img src="/Images/TransferCFT/mapArrow.png" /></a></td>
+</tr>
+<tr >
+<td  ><p>4</p>
+<p> </p></td>
+<td  ><p>Deploy the flow.</p>
+<p> </p></td>
+<td  ><p>In you can save and deploy the flow.</p>
+<p> </p></td>
+<td ><a href="../intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a></td>
+</tr>
+<tr >
+<td  ><p>5</p>
+<p> </p></td>
+<td  ><p>Run the RECV command.</p>
+<p> </p></td>
+<td  >In {{&lt; TransferCFT/componentshortname &gt;}},qqqdoublespaceqqqrun the following command: <code></code><code>CFTUTIL RECV PART=DEST_Stores, IDF=flow05</code>
+<p> </p></td>
+<td ><a href="../../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a></td>
+</tr>
+<tr >
+<td  ><p>6</p>
+<p> </p></td>
+<td  ><p>Monitor the file transfer status.</p>
+<p> </p></td>
+<td  ><p>In select the <strong>Flows</strong> tab, and click <strong>Monitoring</strong>.</p></td>
+<td ><a href="../intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a></td>
+</tr>
+</tbody>
+</table>
+
+
 ============================== table nb count(150) table converted to MD ========================================
 
 
@@ -1963,7 +4279,7 @@
 |  String containing between n and m characters  |  stringn..m  |  LUNAME = string3..8<br /> String containing between 3 and 8 characters  |
 |  String containing exactly n characters  |  stringn  |  KEY = string21<br /> 21-character string  |
 |  Constant-type value (preset)  |  VALUE  |  TYPE = PESIT  |
-|  Password type value: string containing between n and m characters  | string  |   |
+|  Passwordqqqdoublespaceqqqtype value: string containing between n and m characters  | string  |   |
 
 
 
@@ -1978,7 +4294,7 @@
 |  Identifier: alphanumeric string of 1 to 32 alphanumeric characters and additional characters:<br/>@ # &amp; % ! : - _ + \ / | ? { } [ ] ; * &lt; &gt; ~ ^  |  identifier  |
 |  Mask: string containing wildcard characters (* and ?) :<br/>When referring to ReGEX expressions, other value are possible.  |  mask  |
 |  Time: string containing 2 to 8 digits  |  HHMMSSSS  |
-|  Transfer identifier assigned by {{&lt; TransferCFT/componentshortname &gt;}}  |  transid  |
+|  Transfer identifier assigned byqqqdoublespaceqqq{{&lt; TransferCFT/componentshortname &gt;}}  |  transid  |
 
 
 
@@ -1987,8 +4303,8 @@
 
 | Protocol  | Description  |
 | --- | --- |
-|  PeSIT  |  PeSIT protocol (standard)  |
-|  PeSIT CFT/CFT  |  PeSIT protocol used between two {{&lt; TransferCFT/componentshortname &gt;}}s  |
+|  PeSIT  |  PeSITqqqdoublespaceqqqprotocol (standard)  |
+|  PeSITqqqdoublespaceqqqCFT/CFT  |  PeSIT protocol used between twoqqqdoublespaceqqq{{&lt; TransferCFT/componentshortname &gt;}}s  |
 
 
 
@@ -2029,7 +4345,7 @@
 | User id  | string, max 32, empty by default  |  CFTSEND, userid  | Identifier of the transfer owner. If this parameter is not defined, its default value is the system "userid" of the {{&lt; TransferCFT/componentshortname &gt;}}.  |
 | Detect duplicate transfers  | string max 512, empty by default  | CFTSEND, duplicat  | This field is used in detecting duplicate transfers and may contain a list of symbolic variables separated by a period ".".  |
 | Compress file  | Yes: default,<br /> No  | CFTSEND, comp<br /> <br /> Yes → 15<br /> No → 0  | Indicates whether files are compressed before they are transferred.<br /> Same value will be used for the compression on target side  |
-| On file modification  | Continue transfer: default, <br /> Stop transfer  | CFTSEND , fdisp<br /> Continue transfer -&gt; SHR<br /> Stop transfer-&gt; CHECK  | Available only in source side.<br /> Specify what happens if files are modified during the transfer.  |
+| On file modification  | Continue transfer: default,qqqdoublespaceqqq<br /> Stop transfer  | CFTSEND , fdisp<br /> Continue transfer -&gt; SHR<br /> Stop transfer-&gt; CHECK  | Available only in source side.<br /> Specify what happens if files are modified during the transfer.  |
 | Action after transfer  | Delete file ,<br /> Delete file content,<br /> None: default  | CFTSEND, faction<br /> <br /> Delete file -&gt; Delete<br /> Delete file content -&gt; Erase<br /> None-&gt; None: default  | Specifies what happens to the file in source side when the transfer is complete.<br /> Delete file – Deletes the file.<br /> Delete file content – Removes the contents of the file but leaves the "end of file" mark at the beginning of the file.<br /> None – No action is performed on the file.  |
 | Delete file on purge  | Ready (D) ,<br /> Transferring (C), On Hold (H),<br /> Kept (K), Transferred (T), Executed (X) default: no selection  | CFTSEND, fdelete<br /> <br /> Ready (D) -&gt;D<br /> Transferring (C) -&gt; C<br /> On Hold (H) -&gt; H<br /> Kept (K) -&gt; K<br /> Transferred (T) -&gt; T<br /> Executed (X) -&gt; X  | Indicates the transfer states of files that will be deleted when you remove the associated transfers from the transfer list or when you purge the transfer list. You can select any combination of statuses. If you do not select anything, files are not deleted even when the associated transfers are removed from the transfer list.<br /> Ready – The transfer is available and can start immediately.<br /> Transferring – The transfer is being executed.<br /> On hold – The transfer was interrupted due to an error, such as a network failure, or by a user.<br /> Kept – The transfer was suspended by {{&lt; TransferCFT/componentshortname &gt;}} or by a user.<br /> Transferred – The transfer was successfully completed.<br /> Executed – The transfer was ended by an application or user.  |
 | Additional information  | string max 512, empty by default  | CFTSEND, parm  | Use this field for any information you want to provide.  |
@@ -2039,7 +4355,7 @@
 ============================== table nb count(158) table converted to MD ========================================
 
 
-|  CG parameter &lt;/th&gt;  | CG values  | CFTUTIL parameter  | Description  |
+| qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqCG parameterqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  | CG values  | CFTUTIL parameter  | Description  |
 | --- | --- | --- | --- |
 | Single - &gt; Path  | string max 64  | CFTSEND, fname  | Indicate the single file to be sent.  |
 | Multiple -&gt; Path  | string max 64  | CFTSEND, fname  | If you selected Multiple, the value you enter can be:<br /> A directory name – All the files in this directory will be transferred.<br /> A generic file name, including wildcard characters – Only files that match are transferred. For example, mydirectory/toto*.  |
@@ -2056,15 +4372,15 @@
 | CG parameter  | CFTUTIL parameter  | Description  |
 | --- | --- | --- |
 | Binary  | CFTSEND, fcode =B  | Specify whether the file is a binary file.  |
-| Text  |  CFTSEND, see configuration for FTYPE=TEXT  | Specify whether the file is a text file.  |
-| Record format  |  CFTSEND, see configuration for record format  | Indicate whether the records in the file are fixed or variable length.  |
+| Text  |  CFTSEND, seeqqqdoublespaceqqqconfiguration for FTYPE=TEXT  | Specify whether the file is a text file.  |
+| Record format  |  CFTSEND, seeqqqdoublespaceqqqconfiguration for record format  | Indicate whether the records in the file are fixed or variable length.  |
 
 
 
 ============================== table nb count(160) table converted to MD ========================================
 
 
-|  CG parameter &lt;/th&gt;  | CG values  | CFTUTIL parameter  | Description  |
+| qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqCG parameterqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  | CG values  | CFTUTIL parameter  | Description  |
 | --- | --- | --- | --- |
 | Script -&gt; Filename  | if Custom, Filename field: string of max 512c  | CFTSEND, preexec  | Specify the script to be executed before the file is transferred.  |
 | State  | Ready: default,<br /> On hold  | CFTSEND, prestate<br /> Ready -&gt;DISP : default<br /> On hold -&gt; HOLD  | Indicate the status of the transfer on the source. The script is run only if the transfer is in the specified state.<br /> Ready – Indicates that the transfer is available and can start immediately.<br /> On hold – Indicates that the transfer is deferred until a remote receive request is accepted, or until a local START command changes this transfer to the ready state.  |
@@ -2075,7 +4391,7 @@
 ============================== table nb count(161) table converted to MD ========================================
 
 
-|  CG parameter &lt;/th&gt;  | CG values  | CFTUTIL parameter  | Description  |
+| qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqCG parameterqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  | CG values  | CFTUTIL parameter  | Description  |
 | --- | --- | --- | --- |
 | Script -&gt; Filename  | if Custom, Filename field: string of max 512c  | CFTSEND, exec  | Specify the script to be executed after the file is transferred.  |
 | Apply to group of files  | On main request: Default,<br /> For each file in group,<br /> Both  | CFTSEND, execsub<br /> On main request -&gt; LIST<br /> For each file in group -&gt; FILE<br /> Both -&gt; SUBF  | This field is displayed if you enabled a broadcast list in source transfer properties.<br /> Values – On main request | For each target in the list | Both<br /> On main request – Executes the script only on the main request.<br /> For each target in the list – Executes the script only for each target in the list.<br /> Both – Executes the script both for the main request and for each target in the list.  |
@@ -2086,7 +4402,7 @@
 ============================== table nb count(162) table converted to MD ========================================
 
 
-|  CG parameter &lt;/th&gt;  | CG values  | CFTUTIL parameter  | Description  |
+| qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqCG parameterqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  | CG values  | CFTUTIL parameter  | Description  |
 | --- | --- | --- | --- |
 | Script -&gt; Filename  | if Custom, Filename field: string of max 512c  | CFTSEND, ackexec  | Specify the script to be executed after an acknowledgement is received for a sent file.  |
 | State  | Require,<br /> Ignore: default  | CFTSEND, ackstate<br /> Require -&gt; REQUIRE<br /> Ignore -&gt; IGNORE  | Indicate if the transfer must wait for an acknowledgement.<br /> Require – The transfer must wait for an acknowledgement before it can be considered complete.<br /> Ignore – The transfer can be considered complete, even if an acknowledgement is not received.  |
@@ -2098,7 +4414,7 @@
 ============================== table nb count(163) table converted to MD ========================================
 
 
-|  CG parameter &lt;/th&gt;  | CG values  | CFTUTIL parameter  | Description  |
+| qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqCG parameterqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  | CG values  | CFTUTIL parameter  | Description  |
 | --- | --- | --- | --- |
 | Script -&gt; Filename  | if Custom, Filename field: string of max 512c  | CFTSEND, exece  | Specify the script to be executed after an error occurs during a transfer.  |
 
@@ -2135,8 +4451,8 @@
 | CG parameter  | CFTUTIL parameter  | Description  |
 | --- | --- | --- |
 | Binary  | CFTRECV, fcode =B  | Specify whether the file is a binary file.  |
-| Text  |  CFTRECV, see configuration for FTYPE=TEXT  | Specify whether the file is a text file.  |
-| Record format  |  CFTRECV, see configuration for record format  | Indicate whether the records in the file are fixed or variable length.  |
+| Text  |  CFTRECV, seeqqqdoublespaceqqqconfiguration for FTYPE=TEXT  | Specify whether the file is a text file.  |
+| Record format  |  CFTRECV, seeqqqdoublespaceqqqconfiguration for record format  | Indicate whether the records in the file are fixed or variable length.  |
 
 
 
@@ -2176,9 +4492,9 @@
 
 | Authentication method  | copilot.restapi.authentication_method  | Details  |
 | --- | --- | --- |
-| Operating System  | system  |  The user/password is checked against the operating system. <blockquote> **Note:**<br/>We strongly recommend that you set copilot.misc.createprocessasuser=yes when using the system option. </blockquote> **Unix**<br/>You must use <code>cftsu </code>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to <a href="" class="MCXref xref">Using system users - UNIX</a> for details.<br/> • Create a group "group1":<br/> • Add user "user1" to group "group1":<br/>**Windows**<br/>You require a superuser (administrative user account) to create a group and assign a user to a group.<br/> • Create a group "group1":<br/> • Add user "user1" to group "group1":</li> <blockquote> **Note:**<br/>For a user belonging to a domain, use: domain\user1 instead of user1 </blockquote>  |
+| Operating System  | system  |  The user/password isqqqdoublespaceqqqchecked against the operating system. <blockquote> **Note**<br/>We strongly recommend that you set copilot.misc.createprocessasuser=yes when using the system option. </blockquote> **Unix**<br/>You must use <code>cftsu </code>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer toqqqdoublespaceqqq<a href="" >Using system users - UNIX</a> for details.<br/> • Create a group "group1":<br/> • Add user "user1" to group "group1":<br/>**Windows**<br/>You require a superuser (administrative user account) to create a group and assign a user to a group.<br/> • Create a group "group1":<br/> • Add user "user1" to group "group1":</li> <blockquote> **Note**<br/>For a user belonging to a domain, use: domain\user1 instead of user1 </blockquote>  |
 | Access Management  | am  |  This methods uses an indirection towards the Access Management system. The user/password is checked by the configured access management system: {{&lt; TransferCFT/flowmanager &gt;}}, PassPort AM, or internal AM.  |
-|  xfbadm database <br/>(UNIX and HP NonStop exclusively)  | xfbadm  |  The user/password is checked using the xfbadm base (see the <a href="../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).<br/>A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <code>profile </code>from the runtime directory. <ol> <li>Create a group "group1" with gid=200:<br/> • From the user prompt, to add a user "user1" to group "group1"enter:</li> </ol>  |
+|  xfbadm databaseqqqdoublespaceqqq<br/>(UNIX and HP NonStop exclusively)  | xfbadm  |  The user/password is checked using the xfbadm base (see the <a href="../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).<br/>A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <code>profile </code>from the runtime directory. <ol> <li>Create a group "group1" with gid=200:<br/> • From the user prompt, to add a user "user1" to group "group1"enter:</li> </ol>  |
 
 
 
@@ -2193,7 +4509,7 @@
 |  <a href="../../../command_summary/parameter_intro/com">COM</a>  |  List of the identifiers of the communication media description commands (<a href="../../../../admin_intro/admin_config_commands/communication_media_concepts">Defining the communication media</a>).  |
 |  <a href="../../../command_summary/parameter_intro/comment">COMMENT</a>  |  Character comment field.  |
 |  CTLPASSW  |  Obsolete.  |
-|  <a href="../../../command_summary/parameter_intro/default">DEFAULT</a>  |  Default identifier, generically indicated as &lt;defaut&gt;, of the CFTRECV, CFTSEND, and CFTXLATE commands.  |
+|  <a href="../../../command_summary/parameter_intro/default">DEFAULT</a>  |  Default identifier, generically indicated as &lt;defaut&gt;, of the CFTRECV, CFTSEND, and CFTXLATEqqqdoublespaceqqqcommands.  |
 |  <a href="../../../command_summary/parameter_intro/execre">EXECRE</a>  |  Generic name of the file describing the procedures to be executed, following an incident (Error) occurring during a receive transfer, the transfer changing to the H or K state.  |
 |  <a href="../../../command_summary/parameter_intro/execrf">EXECRF</a>  |  Generic name of the file describing the procedures to be executed on completion of reception of a file.  |
 |  <a href="../../../command_summary/parameter_intro/execrm">EXECRM</a>  |  Generic name of the file describing the procedures to be executed on completion of reception of a message.  |
@@ -2206,7 +4522,7 @@
 |  <a href="../../../command_summary/parameter_intro/exiteot">EXITEOT</a>  |  EXIT identifier. To activate an end-of-transfer EXIT task, this identifier must point to a CFTEXIT command.  |
 |  <a href="../../../command_summary/parameter_intro/id">ID</a>  |  Identifier of the CFTPARM command.  |
 |  <a href="../../../command_summary/parameter_intro/key">KEY</a>  |  The name of the indirection file preceded by the &lt;file-symb&gt; character, which is system specific, and containing the set of keys associated with the Transfer CFT.  |
-|  <a href="../../../command_summary/parameter_intro/lenappl">LENAPPL</a>  |  Length to be taken into account when comparing the file/message identifier, IDF or IDM, with the identifier of a CFTAPPL command.<br/>See, Security concepts: Start here.  |
+|  <a href="../../../command_summary/parameter_intro/lenappl">LENAPPL</a>  |  Length to be taken into account when comparing the file/message identifier, IDF or IDM, with the identifier of a CFTAPPL command.<br/>See,qqqdoublespaceqqqSecurity concepts: Start here.  |
 |  <a href="../../../command_summary/parameter_intro/log">LOG</a>  |  Identifier of the monitor event log file description command CFTLOG.<br/>If this parameter is not defined, the Transfer CFT writes logging messages to the standard output of the monitor.  |
 |  <a href="../../../command_summary/parameter_intro/maxtask">MAXTASK</a>  |  Number of file access tasks authorized.  |
 |  <a href="../../../command_summary/parameter_intro/maxtrans">MAXTRANS</a>  |  The maximum authorized number of transfers in parallel. When using multi node, this is the number of transfers per node.  |
@@ -2235,23 +4551,23 @@
 |  <a href="../../../command_summary/parameter_intro/id">ID</a>  |  Name identifying the CFTCAT command.  |
 |  <a href="../../../command_summary/parameter_intro/fname">FNAME</a>  |  Catalog file name.  |
 |  <a href="../../../command_summary/parameter_intro/cache">CACHE</a>  |  Size parameter for the monitor cache memory buffer size, containing the transfers waiting for resources.  |
-|  <a href="../../../command_summary/parameter_intro/rh">RH</a>  |  Number of days (where a day equals a 24-hour interval) after which the catalog entries of "unterminated" receive requests ( H or K state) are automatically purged.  |
+|  <a href="../../../command_summary/parameter_intro/rh">RH</a>  |  Number of daysqqqdoublespaceqqq(where a day equals a 24-hour interval) after which the catalog entries of "unterminated" receive requests ( H or K state) are automatically purged.  |
 |  <a href="../../../command_summary/parameter_intro/rkerror">RKERROR</a>  |  Action to be taken if a transfer aborts during the selection phase in server mode.  |
 |  <a href="../../../command_summary/parameter_intro/rt">RT</a>  |  Number of days (where a day equals a 24-hour interval) after which the catalog entries of terminated receive transfers (RT state) are automatically purged.  |
 |  <a href="../../../command_summary/parameter_intro/rx">RX</a>  |  Number of days after which the catalog entries of receive transfers for which the end of reception procedure is correctly executed (RX state) are automatically purged.  |
-| RY  | Number of days after which the catalog entries of receive transfers that are the in post-processing phase (RY state) are automatically purged.  |
+| RY  | Number of days after which the catalog entries of receive transfers that are theqqqdoublespaceqqqin post-processing phase (RY state) are automatically purged.  |
 |  <a href="../../../command_summary/parameter_intro/sh">SH</a>  |  Number of days (where a day equals a 24-hour interval) after which the catalog entries for "unterminated" send requests (H or K state) are automatically purged.  |
 |  <a href="../../../command_summary/parameter_intro/st">ST</a>  |  Number of days (where a day equals a 24-hour interval) after which the catalog entries of terminated send transfers (ST state) are automatically purged.  |
 |  <a href="../../../command_summary/parameter_intro/sx">SX</a>  |  Number of days (where a day equals a 24-hour interval) after which the catalog entries of terminated send transfers, for which the end-of-send transfer procedure was correctly executed (SX state), are automatically purged.  |
-| SY  | Number of days (where a day equals a 24-hour interval) after which the catalog entries of send transfers that are in the post-processing phase (SY state), are automatically purged.  |
+| SY  | Number of days (where a day equals a 24-hour interval) after which the catalog entries of send transfers thatqqqdoublespaceqqqare in the post-processing phase (SY state), are automatically purged.  |
 |  <a href="../../../command_summary/parameter_intro/tlvclear">TLVCLEAR</a>  |  Level below which the alert ceases, as a percentage of filling, where 0% indicates the file is empty and 100% that it is full.  |
 |  <a href="../../../command_summary/parameter_intro/tlvcexec">TLVCEXEC</a>  |  Batch to execute when the alert ends.  |
 |  <a href="../../../command_summary/parameter_intro/tlvwrate">TLVWRATE</a>  |  The minimum amount of time, in seconds, to wait before resending an alert.  |
 |  <a href="../../../command_summary/parameter_intro/tlvwexec">TLVWEXEC</a>  |  Batch to execute when CFTCAT/TLVWARN is reached.  |
 |  <a href="../../../command_summary/parameter_intro/tlvwarn">TLVWARN</a>  |  Catalog usage limit before issuing an alert, as is a percentage of filling, where 0% indicates the file is empty, and 100% that it is full.<br/>When this limit is reached, the CFTCAT/TLVWEXEC is executed.  |
-|  <a href="../../../command_summary/parameter_intro/timep">TIMEP</a>  |  Daily purge time chosen by the user.<br/>The user can program an automatic, cyclic catalog purge. The default purge time is midnight. <blockquote> **Note:**<br/>To completely deactivate purging, set TIMEP = 00000000. Use this option with caution as no automatic purging is performed (at a selected time or at midnight). </blockquote>  |
+|  <a href="../../../command_summary/parameter_intro/timep">TIMEP</a>  |  Daily purge time chosen by the user.<br/>The user can program an automatic, cyclic catalog purge. The default purge time is midnight. <blockquote> **Note**<br/>To completely deactivate purging, set TIMEP = 00000000. Use this option with caution as no automatic purging is performed (at a selected time or at midnight). </blockquote>  |
 |  <a href="../../../command_summary/parameter_intro/updat">UPDAT</a>  |  Number of synchronization points between two consecutive updates of the catalog file during a transfer.  |
-|  <a href="../../../command_summary/parameter_intro/wscan">WSCAN</a>  | Enter the frequency (in minutes) with which {{&lt; TransferCFT/componentshortname &gt;}} scans the catalog file when restarting a transfer: <li>5 (default value)<br/> • 1 to 60</li>  |
+|  <a href="../../../command_summary/parameter_intro/wscan">WSCAN</a>  | Enter the frequency (in minutes) with which {{&lt; TransferCFT/componentshortname &gt;}} scans the catalog file whenqqqdoublespaceqqqrestarting a transfer: <li>5 (default value)<br/> • 1 to 60</li>  |
 
 
 
@@ -2325,10 +4641,178 @@
 |  <a href="../../../command_summary/parameter_intro/rto">RTO</a>  |  Network monitoring time-out (in seconds) excluding the protocol connection/disconnection/break phase.<br/>Corresponds to the wait time-out of a reply to an FPDU before disconnection (READ TIME OUT). If the value is 0, the wait time-out is infinite.  |
 |  <a href="../../../command_summary/parameter_intro/sap">SAP</a>  |  Name of the local SAP, Service Access Point, associated with this protocol. Used to identify the "access point" at which incoming connection requests for this communication protocol are placed. The SAP supplied by a requester partner when making its connection request is retrieved by the local Transfer CFT which uses it to deduce the protocol to be used. Each CFTPROT object in a given resource class must include its specific SAP. The value of this parameter may be expressed in hexadecimal form. In this case, the first character must be "#" (number sign) (for example: #31 is understood as the ASCII character ‘1’).  |
 |  <a href="../../../command_summary/parameter_intro/scomp">SCOMP</a>  |  Maximum authorized compression for sending a file. This compression is negotiated between the sender and the receiver. A zero value corresponds to no compression.  |
-|  <a href="../../../command_summary/parameter_intro/srin">SRIN</a>  |  Controls the direction of transfers authorized for the Transfer CFT when it is server, accepter of the protocol connection.  |
+|  <a href="../../../command_summary/parameter_intro/srin">SRIN</a>  |  Controls the direction of transfers authorized for the Transfer CFTqqqdoublespaceqqqwhen it is server, accepter of the protocol connection.  |
 |  <a href="../../../command_summary/parameter_intro/srout">SROUT</a>  |  Controls the direction of transfers authorized for the Transfer CFT when it is requester (initiator of the protocol connection).  |
 |  <a href="../../../command_summary/parameter_intro/type#type_CFTPROT">TYPE</a>  |  Type of file transfer protocol.  |
 
+
+
+============================== table nb count(177) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<tbody>
+<tr  data-valign="top">
+<td  width="19.982%"><p>Description</p></td>
+<td colspan="2"  width="80.018%"><p>Use this command to describe the ODETTE transfer protocol.</p></td>
+</tr>
+<tr  data-valign="top">
+<td rowspan="8"  width="19.982%"><p>Parameters</p></td>
+<td  width="21.773%"><p><a href="../../../command_summary/parameter_intro/eerp">EERP</a></p></td>
+<td  width="58.245%"><p>Used to interpret the value of the ORIGINATOR and DESTINATOR
+fields contained in the EERP message, according to the protocol version.</p>
+<p>The End to End ResPonse service generates a message called
+EERP. This message informs the file sender that the data sent arrived
+correctly.</p>
+<p>The first version of the protocol (1986) specifies that:</p>
+<ul>
+<li>the ORIGINATOR
+protocol field corresponds to the file sender</li>
+<li>the DESTINATOR
+protocol field corresponds to the file receiver</li>
+</ul>
+<p>The second version (1991) specifies that:</p>
+<ul>
+<li>the ORIGINATOR
+protocol field corresponds to the EERP sender (i.e. the file receiver)</li>
+<li>the DESTINATOR
+protocol field corresponds to the EERP receiver (i.e. the file sender)</li>
+</ul>
+<p>Note: heck the
+consistency of the customized values from one end to another. If the sender
+and receiver have different versions, it is not possible to acknowledge
+the transfer.</p></td>
+</tr>
+<tr  data-valign="top">
+<td  width="21.773%"><p><a href="../../../command_summary/parameter_intro/pad">PAD</a> </p></td>
+<td  width="58.245%"><p><em>Deprecated in</em> {{&lt; TransferCFT/componentlongname &gt;}}<em></em>{{&lt; TransferCFT/releasenumber &gt;}}</p>
+<p>Option applying "SPECIAL LOGIC" to the data exchange
+buffers.</p>
+<p>This option is negotiated with the partner when the protocol
+session is established (in the SSID FPDU). If the option is set to NO
+for one of the partners, the "special logic" is not applied.</p></td>
+</tr>
+<tr  data-valign="top">
+<td  width="21.773%"><p><a href="../../../command_summary/parameter_intro/rcredit">RCREDIT</a> </p></td>
+<td  width="58.245%"><p>Value of the "credit" (expressed as a number
+of "DATA" messages) proposed by Transfer CFT when it is server.</p>
+<p>This value is negotiated with the value proposed by the
+requester (see the SCREDIT parameter) when the protocol session is established.</p></td>
+</tr>
+<tr  data-valign="top">
+<td  width="21.773%"><p><a href="../../../command_summary/parameter_intro/resync">RESYNC</a> </p></td>
+<td  width="58.245%"><p>Option for restarting a transfer following an interruption.</p>
+<p>This option is negotiated with the partner when the connection
+is established: if the option is set to NO for one of the partners, transfer
+restarts are not managed.</p></td>
+</tr>
+<tr  data-valign="top">
+<td  width="21.773%"><p><a href="../../../command_summary/parameter_intro/rrusize">RRUSIZE</a></p></td>
+<td  width="58.245%"><p>Maximum size of NSDUs (Network Service Data Unit) being
+received.</p>
+<p>This parameter is negotiated with the partner (SRUSIZE
+parameter if Transfer CFT), the smallest value is selected as the size
+of NSDUs sent.</p>
+<p>Refer to the Transfer CFT <a href="../../../../protocols_start_here">Protocol
+topics</a> to optimize the definition of the value of this parameter.</p></td>
+</tr>
+<tr  data-valign="top">
+<td  width="21.773%"><p><a href="../../../command_summary/parameter_intro/scredit">SCREDIT</a></p></td>
+<td  width="58.245%"><p>Value of the "credit" (expressed as a number
+of "DATA" messages) proposed by Transfer CFT when it is the
+requester.</p>
+<p>Transfer CFT is authorized to send a number of "DATA"
+protocol messages equal to the result of the negotiation (performed when
+the protocol session is established), before waiting for a new "credit"
+to be sent by the server.</p></td>
+</tr>
+<tr  data-valign="top">
+<td  width="21.773%"><p><a href="../../../command_summary/parameter_intro/srusize">SRUSIZE</a></p></td>
+<td  width="58.245%"><p>Maximum size of NSDUs (Network Service Data Unit) being
+sent.</p>
+<p>This parameter is negotiated with the partner (RRUSIZE
+parameter if Transfer CFT), the smallest value being selected
+as the size of NSDUs sent.</p>
+<p>Refer to the  <a href="../../../../protocols_start_here">Protocol
+topics</a> to optimize the definition of the value of this parameter.</p>
+<p>MVS connection, the maximum value of SRUSIZE is equal to the value configured in the NCP (or the equivalent) less (-) 6 bytes.</p></td>
+</tr>
+<tr  data-valign="top">
+<td  width="21.773%"><p>TCP </p></td>
+<td  width="58.245%"><p>Processing method used for protocol messages:</p>
+<ul>
+<li>Transfer
+CFT: activation of the method specific to Transfer CFT</li>
+<li>OFTP (default value):
+activation of the standard method (RFC 2204)</li>
+</ul>
+<p>This parameter applies in both initiator and responder
+modes. </p></td>
+</tr>
+</tbody>
+</table>
+
+
+============================== table nb count(178) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<tbody>
+<tr  data-valign="top">
+<td  width="25.067%"><p>Description</p></td>
+<td colspan="2"  width="74.933%"><p>Use the CFTPROT object to set:</p>
+<ul>
+<li>Default
+security profile in requester mode</li>
+<li>Security
+profile in server mode</li>
+</ul></td>
+</tr>
+<tr  data-valign="top">
+<td  width="25.067%"><p>Parameter</p></td>
+<td  width="27.391%"><p><a href="../../../command_summary/parameter_intro/ssl">SSL</a></p></td>
+<td  width="47.542%"><p>SSL commands Identifier  used
+for security profiles.</p></td>
+</tr>
+</tbody>
+</table>
+
+
+============================== table nb count(179) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th > </th>
+<th >Parameter</th>
+<th >Description</th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td rowspan="4" ><p>Parameters</p></td>
+<td ><p><a href="../../../command_summary/parameter_intro/class">CLASS</a></p></td>
+<td ><p>Class associated with this network resource.</p>
+<p>This concept is used to group resources of the same type,
+so that they can be used indifferently to establish connections with partners.</p></td>
+</tr>
+<tr >
+<td ><p><a href="../../../command_summary/parameter_intro/host">HOST</a> </p></td>
+<td ><p>IP address of the local resource.</p></td>
+</tr>
+<tr >
+<td ><p><a href="../../../command_summary/parameter_intro/maxcnx">MAXCNX</a></p></td>
+<td ><p>The maximum number of simultaneous connections
+that Transfer CFT accepts to establish on a given network resource.</p></td>
+</tr>
+<tr >
+<td ><p><a href="../../../command_summary/parameter_intro/call">CALL</a></p></td>
+<td ><p>Call direction possible through this network
+resource.</p></td>
+</tr>
+<tr >
+<td colspan="3" ><p> </p></td>
+</tr>
+</tbody>
+</table>
 
 
 ============================== table nb count(180) table converted to MD ========================================
@@ -2416,7 +4900,7 @@
 |  <a href="../../../command_summary/parameter_intro/commut">COMMUT</a> <br/>Only applicable for a store and forward site  |  Type of switching supported for this partner.<br/>The following types are possible:<br/> • YES: corresponds to "store and forward" switching<br/> • SERVER: corresponds to "VAN server switching"<br/> • NO: switching is refused for this partner<br/> • PART: store and forward mode is forced in server mode if the recipient specified in the IPART parameter is not the final receiver<br/>Processing according to the switching type is described in Transfer with routing - Store and forward.  |
 | COS  | Class of service parameter as it relates to bandwidth control.  |
 |  <a href="../../../command_summary/parameter_intro/ctrlpart">CTRLPART</a>  | Optional parameter that is relevant only in server mode. When a transfer is initiated by a remote partner, Transfer CFT always controls its identity. If the remote sender is not the initial sender, store and forward mode, the Transfer CFT can choose to control the initial sender identity according to CTRLPART parameter.  |
-| <a href="../../../command_summary/parameter_intro/fcharset">FCHARSET</a>  | Defines the local file encoding. See also <a href="../../../command_summary/parameter_intro/ncharset">ncharset.</a>  |
+| <a href="../../../command_summary/parameter_intro/fcharset">FCHARSET</a>  | Defines the local fileqqqdoublespaceqqqencoding. See also <a href="../../../command_summary/parameter_intro/ncharset">ncharset.</a>  |
 |  <a href="../../../command_summary/parameter_intro/fprefix">FPREFIX</a>  |  File name.<br/>This parameter is used to associate a file name with a partner. During a send or receive operation (CFTSEND or SEND, CFTRECV or RECV), this file name is concatenated with the name specified in the FNAME parameter.  |
 |  <a href="../../../command_summary/parameter_intro/group">GROUP</a>  |  Group the partner belongs to.<br/>This parameter is used to locally define the symbolic variable &amp;GROUP.  |
 |  <a href="../../../command_summary/parameter_intro/id">ID</a>  |  Local partner identifier.  |
@@ -2440,7 +4924,7 @@
 |  <a href="../../../command_summary/parameter_intro/state">STATE</a>  |  Partner state.  |
 |  <a href="../../../command_summary/parameter_intro/syst">SYST</a>  |  Type of operating system supporting the partner.<br/>If this parameter is not defined, the partner is considered to have the same operating system as the local computer.<br/>This parameter allows the monitor:<br/> • To find the data code on the partner computer (see the comment for the FCODE parameter of the <a href="../../../../concepts/cft_configuration_concepts_start_here/translation_table_concepts">CFTXLATE</a> command)<br/> • To declare the file type, in this profile and when the partner is the receiver, in terms of its operating system, to the partner Transfer CFT (NTYPE parameter)</li>  |
 |  <a href="../../../command_summary/parameter_intro/trk">TRK</a>  |  Specification of how much detail Transfer CFT provides Sentinel about transfers. Transfer CFT sends detail about the transfers in the form of tracked instances.  |
-|  <a href="../../../command_summary/parameter_intro/xlate">XLATE</a>  |  Identifier of the translation table used for transfers with this partner.<br/>The translation table is defined by the CFTXLATE ID= &lt;xlate&gt; object. If this parameter is not defined, the translation tables may also be specified in the SEND/CFTSEND (or RECV/CFTRECV) commands. If these tables are not defined in these commands, the CFTXLATE command ID=&lt;default&gt; specifies them by default. If this command is not included for messages as well as for files, the translation tables that are internal to the monitor are used. See also <a href="../../../../concepts/cft_configuration_concepts_start_here/translation_table_concepts">Conversion tables: Translation</a>.  |
+|  <a href="../../../command_summary/parameter_intro/xlate">XLATE</a>  |  Identifier of the translation table used for transfers with this partner.<br/>The translation table is defined by the CFTXLATE ID= &lt;xlate&gt; object. If this parameter is not defined, the translation tables may also be specified in the SEND/CFTSEND (or RECV/CFTRECV) commands. If these tables are not defined in these commands, the CFTXLATE command ID=&lt;default&gt; specifies them by default. If this command is not included for messages as well as for files, the translation tables that are internal to the monitor are used. See alsoqqqdoublespaceqqq <a href="../../../../concepts/cft_configuration_concepts_start_here/translation_table_concepts">Conversion tables: Translation</a>.  |
 
 
 
@@ -2464,7 +4948,7 @@
 | Parameter  | Description  |
 | --- | --- |
 | <a href="../../../command_summary/parameter_intro/ackexec">ACKEXEC</a>  | Name of the file describing the procedure to be executed when receiving an acknowledgement reply for the transfer.  |
-| ARCHIVEFNAME  |  The archived source file name after transfer completion if FACTION=ARCHIVE. <blockquote> **Note:**<br/>The fname and archivefname must be on the same volume (all platforms). </blockquote>  |
+| ARCHIVEFNAME  |  The archived source file nameqqqdoublespaceqqqafter transfer completion if FACTION=ARCHIVE. <blockquote> **Note**<br/>The fname and archivefname must be on the same volume (all platforms). </blockquote>  |
 |  <a href="../../../command_summary/parameter_intro/comment">COMMENT</a>  |  Local alphanumeric comment associated with the send transfer.  |
 |  <a href="../../../command_summary/parameter_intro/cycdate">CYCDATE</a>  |  Upper final date for activating the first transfer of a cycle.  |
 |  <a href="../../../command_summary/parameter_intro/cycle">CYCLE</a>  |  Number of units defining the transfer cycle period.  |
@@ -2511,11 +4995,11 @@
 |  <a href="../../../command_summary/parameter_intro/ntype">NTYPE</a>  |  File type, in protocol terms.  |
 |  <a href="../../../command_summary/parameter_intro/opermsg">OPERMSG</a>  |  Defines the categories of transfer information messages intended for the operator, with all the messages also being written in the log file.  |
 |  <a href="../../../command_summary/parameter_intro/parm">PARM</a>  |  User parameter sent to the receiver.  |
-| <a href="../../../command_summary/parameter_intro/preexec">PREEXEC</a>  | Name of the file describing the procedure to be executed before the transfer, as per the preprocessing phase.  |
+| <a href="../../../command_summary/parameter_intro/preexec">PREEXEC</a>  | Name of the file describing the procedure to be executed beforeqqqdoublespaceqqqthe transfer, as per the preprocessing phase.  |
 |  <a href="../../../command_summary/parameter_intro/pri">PRI</a>  |  Send request selection priority.  |
 |  <a href="../../../command_summary/parameter_intro/ruser">RUSER</a>  |  Identifier of the file receiver user.  |
-|  <a href="../../../command_summary/parameter_intro/selfname">SELFNAME</a>  |  Name of the file that contains the list of files selected for sending. <blockquote> **Note:**<br/>When using SELFNAME and FACTION=DELETE, the FNAME must be a directory and not a MASK. For example, #dir is deleted, whereas #dir/* is ignored. </blockquote>  |
-| <a href="../../../command_summary/parameter_intro/sourceappl">SOURCEAPPL</a>  | The identifier of the local file sender application.  |
+|  <a href="../../../command_summary/parameter_intro/selfname">SELFNAME</a>  |  Name of the file that contains the list of files selected for sending. <blockquote> **Note**<br/>When using SELFNAME and FACTION=DELETE, the FNAME must be a directory and not a MASK. For example, #dir is deleted, whereas #dir/* is ignored. </blockquote>  |
+| <a href="../../../command_summary/parameter_intro/sourceappl">SOURCEAPPL</a>  | The identifier of the local file sender application.qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq  |
 |  <a href="../../../command_summary/parameter_intro/spart">SPART</a>  |  Network designation by which the local Transfer CFT monitor identifies itself to its partner.  |
 |  <a href="../../../command_summary/parameter_intro/state">STATE</a>  |  Defines the transfer request state.  |
 |  <a href="../../../command_summary/parameter_intro/suser">SUSER</a>  |  Identifier of the file sender user.  |
@@ -2551,7 +5035,7 @@
 |  <a href="../../../command_summary/parameter_intro/exit">EXIT</a>  |  Identifier of the CFTEXIT command associated with this transfer.  |
 |  <a href="../../../command_summary/parameter_intro/faction">FACTION</a>  |  Action on the file for a receive transfer.  |
 |  <a href="../../../command_summary/parameter_intro/fblksize">FBLKSIZE</a>  |  This parameter (in bytes) controls the "blocking factor" of the receiver file records: according to the system, it defines the disk block size and/or the file input/output buffer size.  |
-| <a href="../../../command_summary/parameter_intro/fcharset">FCHARSET</a>  | Defines the local file encoding.  |
+| <a href="../../../command_summary/parameter_intro/fcharset">FCHARSET</a>  | Defines the local fileqqqdoublespaceqqqencoding.  |
 |  <a href="../../../command_summary/parameter_intro/fcheck">FCHECK</a>  |  Checks record length attributes.  |
 |  <a href="../../../command_summary/parameter_intro/fcode#fcode_CFTSEND">FCODE</a>  |  Code of the receiver file data (local data code).  |
 |  <a href="../../../command_summary/parameter_intro/fdisp#fdisp_CFTRECV">FDISP</a>  |  Presence check indicator of the receiver file used to determine the action of the Transfer CFT monitor.  |
@@ -2572,7 +5056,7 @@
 |  <a href="../../../command_summary/parameter_intro/maxtime">MAXTIME</a>  |  Transfer validity limit time for the final date (MAXDATE).  |
 |  <a href="../../../command_summary/parameter_intro/mindate">MINDATE</a>  |  Minimum transfer validity date.  |
 |  <a href="../../../command_summary/parameter_intro/mintime">MINTIME</a>  |  Transfer initial validity time, from the first day (MINDATE).  |
-| <a href="../../../command_summary/parameter_intro/ncharset">NCHARSET</a>  | Defines the destination file encoding that is used on a file to encode or decode network data.  |
+| <a href="../../../command_summary/parameter_intro/ncharset">NCHARSET</a>  | Defines the destination file encoding that is used on a file to encode or decode networkqqqdoublespaceqqqdata.  |
 | <a href="../../../command_summary/parameter_intro/ncode">NCODE</a>  | The network data code when receiving transfers. *Available only when using SFTP.*  |
 |  <a href="../../../command_summary/parameter_intro/ncomp">NCOMP</a>  |  Compression of on-line data requested by the receiver.  |
 |  <a href="../../../command_summary/parameter_intro/netband">NETBAND</a>  |  Select the outgoing port range.  |
@@ -2580,7 +5064,7 @@
 |  <a href="../../../command_summary/parameter_intro/opermsg">OPERMSG</a>  |  Defines the categories of transfer information messages intended for the operator (all the messages also being written in the log file).  |
 |  <a href="../../../command_summary/parameter_intro/pri">PRI</a>  |  Receive request selection priority.  |
 |  <a href="../../../command_summary/parameter_intro/ruser">RUSER</a>  |  Identifier of the file receiver user.  |
-| <a href="../../../command_summary/parameter_intro/sourceappl">SOURCEAPPL</a>  | The identifier of the local file sender application.  |
+| <a href="../../../command_summary/parameter_intro/sourceappl">SOURCEAPPL</a>  | The identifier of the local file sender application.qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq  |
 |  <a href="../../../command_summary/parameter_intro/state">STATE</a>  |  Defines the transfer request state.  |
 |  <a href="../../../command_summary/parameter_intro/suser">SUSER</a>  |  Identifier of the file sender user.  |
 | <a href="../../../command_summary/parameter_intro/targetappl">TARGETAPPL</a>  | Identifier of the local file receiver application.  |
@@ -2599,7 +5083,7 @@
 | --- | --- |
 |  <a href="../../../command_summary/parameter_intro/id">ID</a>  |  Authorization list identifier. If the identifier is prefixed by"<code>NOT</code>", the object indicates a list of forbidden file identifiers.  |
 |  <a href="../../../command_summary/parameter_intro/fname">FNAME</a>  |  The name of the file where authorized or unauthorized file identifiers (IDF) are listed.<br/>Each element of the list in this file can be:<br/> • An explicit file identifier, or<br/> • A mask (using wildcards '*?'), where all of the file identifiers corresponding to this mask are affected<br/>There is no limit to the number of identifiers in this list.  |
-|  <a href="../../../command_summary/parameter_intro/idf">IDF</a>  |  List of authorized or unauthorized IDFs.<br/>The value associated with each of these IDFs may be:<br/> • An explicit file identifier, or<br/> • A mask (using wildcards '*?'), where all of the file identifiers corresponding to this mask are affected by the command</li>  |
+|  <a href="../../../command_summary/parameter_intro/idf">IDF</a>  |  List of authorized or unauthorized IDFs.<br/>The value associated with each of these IDFs may be:<br/> • An explicit file identifier, or<br/> • A mask (using wildcards '*?'), where all of theqqqdoublespaceqqqfile identifiers corresponding to this mask are affected by the command</li>  |
 
 
 
@@ -2613,6 +5097,73 @@
 |  <a href="../../../command_summary/parameter_intro/part">PART</a>  |  Local identifier of the partner for which the IDF/NIDF correspondence is valid.<br/>Same value as the value of the ID parameter of CFTPART.  |
 |  <a href="../../../command_summary/parameter_intro/type">TYPE</a>  |  Transfer direction for which this correspondence is valid.<br/>The values indicated are:<br/> • SEND for send transfers<br/> • RECV for receive transfers</li>  |
 
+
+
+============================== table nb count(192) table stayed in HTML ========================================
+
+<table  data-cellspacing="0"  width="90%">
+<colgroup>
+<col  />
+<col  />
+<col  />
+</colgroup>
+<thead>
+<tr  data-mc-conditions="">
+<th ><p>Rule</p></th>
+<th ><p>Syntax</p></th>
+<th ><p>Alternate syntax</p></th>
+</tr>
+</thead>
+<tbody>
+<tr  data-mc-conditions="" data-valign="top">
+<td   width="23.077%"><p>time</p></td>
+<td   width="35.647%"><p>time_element; time</p>
+<p>time_element</p></td>
+<td   width="38.274%"><p> </p></td>
+</tr>
+<tr  data-mc-conditions="" data-valign="top">
+<td   width="23.077%"><p>time_element</p></td>
+<td   width="35.647%"><p>seconds= content</p>
+<p>minutes= content</p>
+<p>hours= content</p>
+<p>monthdays= content</p>
+<p>weekdays= content</p>
+<p>months= content</p></td>
+<td   width="38.274%"><p>s= content</p>
+<p>m= content</p>
+<p>h= content</p>
+<p>D= content</p>
+<p>W= content</p>
+<p>M= content</p></td>
+</tr>
+<tr  data-mc-conditions="" data-valign="top">
+<td   width="23.077%"><p>content</p></td>
+<td   width="35.647%"><p>content_elt, content</p>
+<p>content_elt</p></td>
+<td   width="38.274%"><p> </p></td>
+</tr>
+<tr  data-valign="top">
+<td   width="23.077%"><p>content_elt</p></td>
+<td   width="35.647%"><p>a</p>
+<p>content_set / c</p></td>
+<td   width="38.274%"><p> </p></td>
+</tr>
+<tr  data-valign="top">
+<td colspan="2"   width="58.724%"><p> </p></td>
+<td   width="38.274%"><p>z/OS (MVS) specific syntax</p></td>
+</tr>
+<tr  data-valign="top">
+<td   width="23.077%"><p>content_set</p></td>
+<td   width="35.647%"><p>[a:b] [a:b]</p>
+<p>[a:]</p>
+<p>[:b]</p>
+<p>*</p></td>
+<td   width="38.274%"><p>&lt;a:b&gt;</p>
+<p>&lt;a:&gt;</p>
+<p>&lt;:b&gt;</p></td>
+</tr>
+</tbody>
+</table>
 
 
 ============================== table nb count(193) table converted to MD ========================================
@@ -2678,26 +5229,26 @@
 | --- | --- | --- | --- |
 |  same as in UCONF<br/>&lt;folder_monitoring.enable&gt;  | Boolean  | No  |  <li>No: No folder monitoring occurs.<br/> • Yes: Enable {{&lt; TransferCFT/componentshortname &gt;}} folder monitoring.</li>  |
 |  ID<br/>**Mandatory**  | node  | None  |  Add the logical folders to monitor (list of logical identifiers).<br/>You should provide a unique name to identify the set of configuration parameters corresponding to this directory. If you have more than one Folder to monitor, use a space between each logical value.  |
-| STATE  | Boolean  | Active  |  Enables a scan of the folder. <blockquote> **Note:**<br/>NO = NOACTIVE. </blockquote>  |
+| STATE  | Boolean  | Active  |  Enables a scan of the folder. <blockquote> **Note**<br/>NO = NOACTIVE. </blockquote>  |
 |  SCANDIR *Mandatory*  | string  | None  |  Absolute path name of the top level directory to scan.<br/>This directory must exist before restarting Transfer CFT.<br/>*See <a href="#char_note">NOTE</a>.  |
-|  WORKDIR *Mandatory*  | string  | None  |  Absolute path name of the top level directory available for file state information.<br/> • If you are using the MOVE method, files that are ready to be submitted are available in the work_dir.<br/> • If you are using the FILE method, the .met files are stored in the work_dir.</li> <blockquote> **Note:**<br/>Caution Never delete any .met files. </blockquote> *See <a href="#char_note">NOTE</a>.  |
+|  WORKDIR *Mandatory*  | string  | None  |  Absolute path name of the top level directory available for file state information.<br/> • If you are using the MOVE method, files that are ready to be submitted are available in the work_dir.<br/> • If you are using the FILE method, the .met files are stored in the work_dir.</li> <blockquote> **Note**<br/>Caution Never delete any .met files. </blockquote> *See <a href="#char_note">NOTE</a>.  |
 | ENABLESUBDIR  | Boolean  | Yes  |  Values:<br/> • Yes: The entire scan_dir sub-directory tree is monitored.<br/> • No: No scan is performed.</li>  |
-| <span id="METHOD"></span>METHOD  | enum  | MOVE  |  Values:<br/> • MOVE: Files are moved to the work_dir prior to being submitted.<br/> • FILE: Files are left in the scan_dir, and a state file with the same name is created in work_dir prior to submitting the file.</li> <blockquote> **Note:**<br/>Before changing the method from FILE to MOVE, you should remove all files (metadata .met files) located in the associated working directory. </blockquote> <blockquote> **Note:**<br/>Changing the method from MOVE to FILE, deletes all files located in the associated working directory. Therefore, we recommend removing all files from the scan and working directory before changing the METHOD type. </blockquote> Please see the <a href="../../../../app_integration_intro/intro_folder_monitor#Limitati">Limitations</a> for multi-host system recommendations.  |
+| <span id="METHOD"></span>METHOD  | enum  | MOVE  |  Values:<br/> • MOVE: Files are moved to the work_dir prior to being submitted.<br/> • FILE: Files are left in the scan_dir, and a state file with the same name is created in work_dir prior to submitting the file.</li> <blockquote> **Note**<br/>Before changing the method from FILE to MOVE, you should remove all files (metadata .met files) located in the associated working directory. </blockquote> <blockquote> **Note**<br/>Changing the method from MOVE to FILE, deletes all files located in the associated working directory. Therefore, we recommend removing all files from the scan and working directory before changing the METHOD type. </blockquote> Please see the <a href="../../../../app_integration_intro/intro_folder_monitor#Limitati">Limitations</a> for multi-host system recommendations.  |
 | ARCHIVEDIR  | String  |   | Archive directory where a source file is moved to after a successful transfer. This means the source file is moved from the WORKDIR for METHOD=MOVE or SCANDIR for METHOD=FILE to the ARCHIVEDIR.  |
 | FILEIDLEDELAY  | integer  | 5  | If the state of a file has not changed within this delay in seconds, the file becomes a candidate for submission.  |
 | GROUPID  | String  |   | Complementary information for the USERID. Maximum length 32 characters.  |
-|  IDF<br/>*Mandatory*  | string  | ""  |  The IDF name to use in the SEND command. Use one of the following:<br/> • A fixed name.<br/> • "(0)": The name of the first directory sub-level is used.<br/> • "(1)": The name of the second directory sub-level is used.</li> <blockquote> **Note:**<br/>In the Directory C example/home/CFT/fr/dir_c/scan/newyork/idf1, the (0) represents newyork, and (1) represents idf1. </blockquote>  |
-|  PART *Mandatory*  | string  | ""  |  The PART name to use in the SEND command. Use one of the following:<br/> • A fixed name.<br/> • "(0)": The name of the first directory sub-level is used.<br/> • "(1)": The name of the second directory sub-level is used.</li> <blockquote> **Note:**<br/>In the Directory C example/home/CFT/fr/dir_c/scan/newyork/idf1, the (0) represents newyork, and (1) represents idf1. </blockquote>  |
+|  IDF<br/>*Mandatory*  | string  | ""  |  The IDFqqqdoublespaceqqqname to use in the SEND command. Use one of the following:<br/> • A fixed name.<br/> • "(0)":qqqdoublespaceqqqThe name of the first directory sub-level is used.<br/> • "(1)": The name of the second directory sub-level is used.</li> <blockquote> **Note**<br/>In the Directory C example/home/CFT/fr/dir_c/scan/newyork/idf1, the (0) represents newyork, and (1) represents idf1. </blockquote>  |
+|  PART *Mandatory*  | string  | ""  |  The PART name to use in the SEND command. Use one of the following:<br/> • A fixed name.<br/> • "(0)": The name of the first directory sub-level is used.<br/> • "(1)": The name of the second directory sub-level is used.</li> <blockquote> **Note**<br/>In the Directory C example/home/CFT/fr/dir_c/scan/newyork/idf1, the (0) represents newyork, and (1) represents idf1. </blockquote>  |
 | INTERVAL  | int  | 60  | The interval between two scans of the directory files in seconds.  |
 | FILECOUNT  | int  | 0  |  Maximum number of file submissions for each scan. Using the default value indicates that there is no maximum.  |
 | FILESIZEMIN  | int  | 0  |  Files shorter than this value, in bytes, are not candidates for submission. Using the default value indicates that there is no lower limit on the file size.  |
 | FILESIZEMAX  | int  | 0  |  Files larger than this value, in bytes, are not candidates for submission. Using the default value indicates that there is no upper limit on the file size.  |
 | INCLUDEFILTER  | string  | ""  | If this parameter is defined, only files whose names match this pattern are monitored.  |
 | EXCLUDEFILTER  | string  | ""  | If this parameter is defined, files whose names match this pattern are not monitored.  |
-| RESUBMITCHANGED  | Boolean  | Yes  |  This parameter has no effect when the configured method is MOVE.<br/>When the method parameter value is set to FILE:<br/> • Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.<br/> • No: Files are not resubmitted, regardless of changes.</li> <blockquote> **Note:**<br/>The file is resubmitted after any change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name. </blockquote>  |
-| FILTERTYPE  | enum  | WILDMAT  |  Defines the pattern matching algorithm to use for file name filtering.<br/>Values:<br/> • STRJCMP: The Transfer CFT pattern matching algorithm. <br/> • WILDMAT: A well known public domain algorithm, and is the default. **Unix/Windows only**<br/> • EREGEX: Extended regular expression syntax.<br/>See <a href="../../../../app_integration_intro/intro_folder_monitor/folder_customize#Defining">Create inclusion and exclusion filters</a> for details.  |
-| RENAMEMETHOD  | Enum  | TIMESTAMP  |  This parameter applies only to the MOVE method. When set to TIMESTAMP, a timestamp of the pattern YYYYMMDDHHMMSS is added at the end of the name of the renamed file but before the last '.'. For example, using timestamp_separators=".": <li>myfile is renamed myfile.20131025<br/> • myfile.txt is renamed myfile.20131025.txt</li> <blockquote> **Note:**<br/>Unset the default value and use " " to MOVE without adding a timestamp. </blockquote>  |
-| RENAMESEPARATOR  | string  |  "."  |  This parameter only applies to the MOVE method. You can use no more than two characters from among the following: .[]()_- The first character defines the separator before the timestamp. The second one, when present, defines the separator after the timestamp. For example, using timestamp_separators "[]": - myfile is renamed myfile.[20131025] - myfile.txt is renamed myfile.[20131025].txt  |
+| RESUBMITCHANGED  | Boolean  | Yes  |  This parameterqqqdoublespaceqqqhas no effect when the configured method is MOVE.<br/>When the method parameter value is set to FILE:<br/> • Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.<br/> • No: Files are not resubmitted, regardless of changes.</li> <blockquote> **Note**<br/>The file is resubmitted after any change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name. </blockquote>  |
+| FILTERTYPE  | enum  | WILDMAT  |  Defines the pattern matching algorithm to use for file name filtering.<br/>Values:<br/> • STRJCMP: The Transfer CFT pattern matching algorithm. qqqdoublespaceqqq<br/> • WILDMAT: A well known public domain algorithm, and is the default. **Unix/Windows only**<br/> • EREGEX: Extended regular expression syntax.<br/>Seeqqqdoublespaceqqq<a href="../../../../app_integration_intro/intro_folder_monitor/folder_customize#Defining">Create inclusion and exclusion filters</a> for details.  |
+| RENAMEMETHOD  | Enum  | TIMESTAMP  |  This parameter applies only to the MOVE method. When set to TIMESTAMP, a timestamp of the pattern YYYYMMDDHHMMSS is added at the end of the name of the renamed file but before the last '.'. For example, using timestamp_separators=".": <li>myfileqqqdoublespaceqqqqqqdoublespaceqqq is renamed myfile.20131025<br/> • myfile.txt is renamed myfile.20131025.txt</li> <blockquote> **Note**<br/>Unset the default value and use " " to MOVE without adding a timestamp. </blockquote>  |
+| RENAMESEPARATOR  | string  |  "."  |  This parameter only applies to the MOVE method. You can use no more than two characters from among the following: .[]()_- The first character defines the separator before the timestamp. The second one, when present, defines the separator after the timestamp. For example, using timestamp_separators "[]": - myfileqqqdoublespaceqqqqqqdoublespaceqqq is renamed myfile.[20131025] - myfile.txt is renamed myfile.[20131025].txt  |
 | N/A in this version  | string  |   | Metadata used to control user changes.  |
 |  USEFSEVENTS <a href="#Enable">More information</a>  | Boolean  | No  | Set to YES to enable the file system events monitoring service to detect newly available files.  |
 | <a href="../../../command_summary/parameter_intro/userid">USERID</a>  | String  |   |  *Available on UNIX and* ** Identifier for a user who can scan a folder. See the section, <a href="../../../../app_integration_intro/intro_folder_monitor/configure_folder_monitoring#Folder2">Folder monitoring using USERCTRL</a>.  |
@@ -2710,15 +5261,15 @@
 | Parameter  | Description  |
 | --- | --- |
 |  ID = identifier  |  Identifier of the security profile.  |
-|  CIPHLIST = {(num, num, ..)}  |  List of allowed ciphers (encryption methods).<br/>Each value defines three algorithms:<br/> • Authentication algorithm<br/> • Encryption algorithm<br/> • Sealing algorithm<br/>This list is compared with the list proposed by the client in order of preference, for the purpose of determining the suite to be negotiated.<br/>{{&lt; TransferCFT/componentlongname &gt;}} supports the following: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc, 3des-cbc, blowfish-cbc. <blockquote> **Note:**<br/>If the field is empty, the default list is: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc. </blockquote>  |
-| CLIPUBKEY  |  When DIRECT=SERVER<br/>Key Id containing the client public key (RSA). When defined, the Transfer CFT server checks that the client public key referenced in CLIPUBKEY matches the public key provided by the client. If an error occurs, the connection is rejected with a DIAGI 433.  |
+|  CIPHLIST = {(num, num, ..)}  |  List of allowed ciphers (encryption methods).<br/>Each value defines three algorithms:<br/> • Authentication algorithm<br/> • Encryption algorithm<br/> • Sealing algorithm<br/>This list is compared with the list proposed by the client in order of preference, for the purpose of determining the suite to be negotiated.<br/>{{&lt; TransferCFT/componentlongname &gt;}} supportsqqqdoublespaceqqqthe following: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc, 3des-cbc, blowfish-cbc. <blockquote> **Note**<br/>If the field is empty, the default list is: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc. </blockquote>  |
+| CLIPUBKEY  |  When DIRECT=SERVER<br/>Key Idqqqdoublespaceqqqcontaining the client public key (RSA). When defined, the Transfer CFT server checks that the client public key referenced in CLIPUBKEY matches the public key provided by the client. If an error occurs, the connection is rejected with a DIAGI 433.  |
 | Comment  | Free comment.  |
 |  DIRECT<br/>  |  The security profile is applicable in this mode (SERVER).  |
 | HMAC  |  List of accepted HMAC (keyed-hash message authentication code).<br/> • Choose from the following: hmac-sha2-512, hmac-sha2-256, hmac-sha1, none.<br /> <br/> • If the field is empty, the default list is hmac-sha2-512, hmac-sha2-256, hmac-sha1.</li>  |
 | KEYEXCHG  |  List of key exchange methods to use.<br/>Choose from the following: curve25519-sha256@libssh.org, ecdh-sha2-nistp256, diffie-hellman-group14-sha1, diffie-hellman-group1-sha1.  |
 |  MODE = {REPLACE | CREATE | DELETE}  |  Action for the command. For DELETE mode, the command is deleted from the PARAMETERS database; only the ID and DIRECT parameters are required.  |
 | ORIGIN = string  | This parameter indicates the object's origin.  |
-| SRVPRIVKEY  |  When DIRECT=SERVER:<br/>Key Id containing the server private key (RSA) to use with key authentication.  |
+| SRVPRIVKEY  |  When DIRECT=SERVER:<br/>Key Idqqqdoublespaceqqqcontaining the server private key (RSA) to use with key authentication.  |
 
 
 
@@ -2728,15 +5279,15 @@
 | Parameter  | Description  |
 | --- | --- |
 |  ID = identifier  |  Identifier of the security profile.  |
-|  CIPHLIST = {(num, num, ..)}  |  List of allowed ciphers (encryption methods).<br/>Each value defines three algorithms:<br/> • Authentication algorithm<br/> • Encryption algorithm<br/> • Sealing algorithm<br/>This list is compared with the list proposed by the client in order of preference, for the purpose of determining the suite to be negotiated.<br/>{{&lt; TransferCFT/componentlongname &gt;}} supports the following: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc, 3des-cbc, blowfish-cbc. <blockquote> **Note:**<br/>If the field is empty, the default list is: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc. </blockquote>  |
-| CLIPRIVKEY  | When DIRECT=CLIENT Key Id containing the client private key (RSA) to use with key authentication. When defined, Transfer CFT uses key authentication. If an error occurs, the connection is rejected with a DIAGI 433.  |
+|  CIPHLIST = {(num, num, ..)}  |  List of allowed ciphers (encryption methods).<br/>Each value defines three algorithms:<br/> • Authentication algorithm<br/> • Encryption algorithm<br/> • Sealing algorithm<br/>This list is compared with the list proposed by the client in order of preference, for the purpose of determining the suite to be negotiated.<br/>{{&lt; TransferCFT/componentlongname &gt;}} supportsqqqdoublespaceqqqthe following: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc, 3des-cbc, blowfish-cbc. <blockquote> **Note**<br/>If the field is empty, the default list is: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc. </blockquote>  |
+| CLIPRIVKEY  | When DIRECT=CLIENT Key Idqqqdoublespaceqqqcontaining the client private key (RSA) to use with key authentication. When defined, Transfer CFT uses key authentication. If an error occurs, the connection is rejected with a DIAGI 433.  |
 | Comment  | Free comment.  |
 |  DIRECT  |  The security profile is applicable in this mode (CLIENT).  |
 | HMAC  |  List of accepted HMAC (keyed-hash message authentication code).<br/> • Choose from the following: hmac-sha2-512, hmac-sha2-256, hmac-sha1, none.<br /> <br/> • If the field is empty, the default list is hmac-sha2-512, hmac-sha2-256, hmac-sha1.</li>  |
 | KEYEXCHG  | List of key exchange methods to use. Choose from the following: curve25519-sha256@libssh.org, ecdh-sha2-nistp256, diffie-hellman-group14-sha1, diffie-hellman-group1-sha1.  |
 |  MODE = {REPLACE | CREATE | DELETE}  |  Action for the command. For DELETE mode, the command is deleted from the PARAMETERS database; only the ID and DIRECT parameters are required.  |
 | ORIGIN = string  | This parameter indicates the object's origin.  |
-| SRVPUBKEY  |  When DIRECT=CLIENT:<br/>Key Id containing the server public key (RSA) for the server. When defined, the Transfer CFT client checks that the public key referenced by SRVPUBKEY matches the key provided by the server.<br/>If an error occurs, the connection is rejected with a DIAGI 264.  |
+| SRVPUBKEY  |  When DIRECT=CLIENT:<br/>Key Idqqqdoublespaceqqqcontaining the server public key (RSA) for the server. When defined, the Transfer CFT client checks that the public key referenced by SRVPUBKEY matches the key provided by the server.<br/>If an error occurs, the connection is rejected with a DIAGI 264.  |
 
 
 
@@ -2748,7 +5299,7 @@
 |  <a href="../../../command_summary/parameter_intro/pkifname">PKIFNAME</a>:  |  The PKI database file ($CFTPKU by default) *only in command line*  |
 | <a href="../../../command_summary/parameter_intro/id">ID</a>:  | The PKIKEY identifier  |
 | <a href="../../../command_summary/parameter_intro/comment">COMMENT</a>:  | Free comment  |
-| <a href="../../../command_summary/parameter_intro/state">STATE</a>:  | The state of the imported key (ACT or INACT). You cannot use deactivated keys (state=INACT) for SFTP  |
+| <a href="../../../command_summary/parameter_intro/state">STATE</a>:  | The state of the imported key (ACT or INACT). You cannot use deactivated keys (state=INACT)qqqdoublespaceqqqfor SFTP  |
 | IKDATA:  | Use base-64 data instead of a file (where the format corresponds with ikform)  |
 | <a href="../../../command_summary/parameter_intro/iform">IKFORM</a>:  | The key format (DER, PEM, PKCS8, SSH or KPRIV). The "SSH" value includes the SSH2 format and the ssh-rsa format  |
 |  <a href="../../../command_summary/parameter_intro/ikname">IKNAME</a>:  | The key file to import *only in command line*  |
@@ -2786,8 +5337,8 @@
 | Parameter  | Description  |
 | --- | --- |
 | ID  | An identifier is a case-insensitive string with a maximum of 32 characters. If the identifier contains spaces, enclose the identifier in single quotes. (*mandatoryparameter*)  |
-| CERTIFICATES<br />  | A list of up to 100 certificate IDs. Each ID is a case-insensitive string with a maximum of 32 characters. There is no check other than syntax when you insert this parameter, so if you use an ID in the CERTIFICATES list that is the same as a PKIENTITY object ID {{&lt; TransferCFT/componentshortname &gt;}} ignores this ID when loading CFTSSL properties.  |
-|  MODE  |  An action on the certificate, CREATE, REPLACE, or DELETE. (default = REPLACE)  |
+| CERTIFICATES<br />  | A list of up to 100 certificate IDs. Each ID is a case-insensitive string with a maximum of 32 characters.qqqdoublespaceqqqThere is no check other than syntax when you insert this parameter,qqqdoublespaceqqqso if you use an ID in the CERTIFICATES list that is the same as a PKIENTITY object ID {{&lt; TransferCFT/componentshortname &gt;}} ignores this ID when loading CFTSSL properties.  |
+|  MODE  |  An action on the certificate, CREATE, REPLACE, or DELETE.qqqdoublespaceqqq(default = REPLACE)  |
 | PKIFNAME  | The name of the PKI internal datafile to use. (default = $CFTPKU) *only in command line*  |
 
 
@@ -2817,7 +5368,7 @@
 
 | CFTA0nX  | Details  |
 | --- | --- |
-|  n=1  | CFTPARM file  |
+|  n=1qqqdoublespaceqqq  | CFTPARM file  |
 |  n=2  | CFTPART file  |
 |  n=3  | CFTCAT file  |
 |  n=4  | CFTCOM file  |
@@ -2834,7 +5385,7 @@
 | Attribute  | Details  |
 | --- | --- |
 | Action=&amp;act  |  &amp;act is the action on an object (“CREATE” , “MODIFY” , “DELETE”)  |
-| Object=&amp;obj  | &amp;obj is the object identifier (type of object for the CFTFILE command)  |
+| Object=&amp;obj  | &amp;obj is the object identifierqqqdoublespaceqqq(type of object for the CFTFILE command)  |
 | id=&amp;id  |   |
 | user=&amp;user  |  &amp;user is the user that modified the object  |
 | groupid=&amp;group  | &amp;group is the user group that modified the object  |
@@ -2899,6 +5450,54 @@
 
 
 
+============================== table nb count(210) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<tbody>
+<tr  data-valign="top">
+<td  width="19.982%"><p>Description</p></td>
+<td colspan="2"  width="80.018%"><p>Use this command to redefine the data media with which
+the CFTUTIL utility operates.</p></td>
+</tr>
+<tr  data-valign="top">
+<td rowspan="4"  width="19.982%"><p>Parameters</p></td>
+<td  width="20.241%"><p><a href="../../command_summary/parameter_intro/fname">FNAME</a></p>
+<p> </p></td>
+<td  width="59.777%"><p>For
+TYPE = {CAT | INPUT | OUTPUT | PARM | PART }</p>
+<p>Name of the file associated with the medium type accessed
+by CFTUTIL.</p>
+<p> </p></td>
+</tr>
+<tr  data-valign="top">
+<td  width="20.241%"><p><a href="../../command_summary/parameter_intro/fname">FNAME</a></p>
+<p> </p></td>
+<td  width="59.777%"><p>For TYPE = COM</p>
+<p>There must be a correspondence with the CFTCOM NAME
+parameter  that
+defines the communication medium as seen from Transfer CFT.</p>
+<p>For a communication medium supported by TCP/IP (MEDIACOM=TCPIP)
+this is either:</p>
+<ul>
+<li>A host
+name (string) using the format: "protocol://machine:port", or</li>
+<li>A configuration
+file (filename)</li>
+</ul></td>
+</tr>
+<tr  data-valign="top">
+<td  width="20.241%"><p><a href="../../command_summary/parameter_intro/mediacom">MEDIACOM</a> </p></td>
+<td  width="59.777%"><p>Defines the communication medium type if this medium is
+relevant to the system.</p></td>
+</tr>
+<tr  data-valign="top">
+<td  width="20.241%"><p><a href="../../command_summary/parameter_intro/type#type_CONFIG">TYPE</a> </p></td>
+<td  width="59.777%"><p>Defines the medium concerned.</p></td>
+</tr>
+</tbody>
+</table>
+
+
 ============================== table nb count(211) table converted to MD ========================================
 
 
@@ -2922,6 +5521,86 @@
 
 
 
+============================== table nb count(213) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<colgroup>
+<col  />
+<col  />
+</colgroup>
+<thead>
+<tr >
+<th >Parameters</th>
+<th >Description</th>
+</tr>
+</thead>
+<tbody>
+<tr  data-valign="top">
+<td colspan="2" ><p>Use this command to extract all or part of the data from
+the parameter and partner files.</p></td>
+</tr>
+<tr  data-valign="top">
+<td ><p><a href="../../../command_summary/parameter_intro/id">ID</a> </p></td>
+<td   width="49.916%"><p>Identifier of the parameter to be extracted.</p>
+<p>The value of this identifier is the value of the ID of
+the command CFTxxxx corresponding to the TYPE parameter; this allows the
+extraction to be limited:</p>
+<ul>
+<li>To an
+explicitly indicated value (identifier)</li>
+<li>Or to
+a group of values designated through the use of a mask using "wildcard"
+characters</li>
+</ul>
+<p>When this parameter is not defined, all the occurrences
+of the parameter type (defined by TYPE) are extracted.</p></td>
+</tr>
+<tr  data-valign="top">
+<td ><a href="../../../command_summary/parameter_intro/content">CONTENT</a></td>
+<td   width="49.916%"><p>Level of content included in output:</p>
+<ul>
+<li>BRIEF = Empty or default value parameters are omitted</li>
+<li>FULL = All parameters are included</li>
+</ul></td>
+</tr>
+<tr  data-valign="top">
+<td ><p><a href="../../../command_summary/parameter_intro/fout">FOUT</a> </p></td>
+<td   width="49.916%"><p>Name of the file to which the command’s standard output
+will be redirected.</p>
+<p>This generated file can then be interpreted directly by
+CFTUTIL.</p>
+<p>When this parameter is not filled, all occurrences of the
+type parameter (defined in the TYPE parameter) are extracted.</p></td>
+</tr>
+<tr  data-valign="top">
+<td ><p><a href="../../../command_summary/parameter_intro/fparm">FPARM</a></p>
+<p>{see the comment |
+filename} </p>
+<p>Except for TYPE = PART</p></td>
+<td   width="49.916%"><p>Name of the Parameter input file.</p>
+<p>Default value: default name of the Parameter file defined
+for CFTUTIL for the system concerned. Refer to the Transfer CFT <em>Operations
+Guide</em> that corresponds with your OS.</p></td>
+</tr>
+<tr  data-valign="top">
+<td ><p><a href="../../../command_summary/parameter_intro/fpart">FPART</a> </p>
+<p>{see the
+comment | filename}]</p>
+<p>For TYPE = {ALL | PART}</p></td>
+<td   width="49.916%"><p>Name of the Partner input file.</p>
+<p>Default value: default
+name of the Partner file defined for CFTUTIL for the system concerned.
+Refer to the Transfer CFT <span >Operations Guide</span> that corresponds with
+your OS.</p></td>
+</tr>
+<tr  data-valign="top">
+<td ><p><a href="../../../command_summary/parameter_intro/type">TYPE</a> </p></td>
+<td   width="49.916%"><p>This parameter defines the parameter type to be extracted.</p></td>
+</tr>
+</tbody>
+</table>
+
+
 ============================== table nb count(214) table converted to MD ========================================
 
 
@@ -2941,7 +5620,7 @@
 |  <a href="../../../command_summary/parameter_intro/rto">RTO</a>  |  Network monitoring time-out (in seconds) excluding the protocol connection/disconnection/break phase.<br/>Corresponds to the wait time-out of a reply to an FPDU before disconnection (READ TIME OUT). If the value is 0, the wait time-out is infinite.  |
 |  <a href="../../../command_summary/parameter_intro/sap">SAP</a>  |  Name of the local SAP, Service Access Point, associated with this protocol. Used to identify the "access point" at which incoming connection requests for this communication protocol are placed. The SAP supplied by a requester partner when making its connection request is retrieved by the local Transfer CFT which uses it to deduce the protocol to be used. Each CFTPROT object in a given resource class must include its specific SAP. The value of this parameter may be expressed in hexadecimal form. In this case, the first character must be "#" (number sign) (for example: #31 is understood as the ASCII character ‘1’).  |
 |  <a href="../../../command_summary/parameter_intro/scomp">SCOMP</a>  |  Maximum authorized compression for sending a file. This compression is negotiated between the sender and the receiver. A zero value corresponds to no compression.  |
-|  <a href="../../../command_summary/parameter_intro/srin">SRIN</a>  |  Controls the direction of transfers authorized for the Transfer CFT when it is server, accepter of the protocol connection.  |
+|  <a href="../../../command_summary/parameter_intro/srin">SRIN</a>  |  Controls the direction of transfers authorized for the Transfer CFTqqqdoublespaceqqqwhen it is server, accepter of the protocol connection.  |
 |  <a href="../../../command_summary/parameter_intro/srout">SROUT</a>  |  Controls the direction of transfers authorized for the Transfer CFT when it is requester (initiator of the protocol connection).  |
 |  <a href="../../../command_summary/parameter_intro/type#type_CFTPROT">TYPE</a>  |  Type of file transfer protocol.  |
 
@@ -3049,15 +5728,15 @@
 | Parameter  | Description  |
 | --- | --- |
 | id='string'  | Model ID, call within the DISPLAY command with the content parameter  |
-| mode = 'column | line'  | Output orientation (line or column)  |
-| title_size = '-1 | NUM'  |  Title size, only in column mode (undefined or number)  |
-| title_align = 'left | center | right'  | Title alignment (column mode only)  |
-| line_prefix = '&lt;LF&gt;|STR'  | Prefix in line mode (empty or string)  |
-| line_suffix = '| STR'  | Suffix in line mode (empty or string)  |
-| default_prefix = '| STR'  | Default prefix (empty or string)  |
-| default_suffix = ' | STR'  |  Default suffix ('' in column mode and 'Line Feed' in line mode) (empty or string)  |
-| default_empty = '| STR'  | Default String if empty (empty or string)  |
-| default_na = '| STR'  | Default String if not applicable (empty or string)  |
+| mode = 'column | line'  | Output orientationqqqdoublespaceqqq (line or column)  |
+| title_sizeqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq= '-1 | NUM'  | qqqdoublespaceqqqTitle size, only in column mode (undefined or number)  |
+| title_alignqqqdoublespaceqqqqqqdoublespaceqqq = 'left | center | right'  | Title alignment (column mode only)  |
+| line_prefixqqqdoublespaceqqqqqqdoublespaceqqq = '&lt;LF&gt;|STR'  | Prefix in line mode (empty or string)  |
+| line_suffixqqqdoublespaceqqqqqqdoublespaceqqq = '| STR'  | Suffix in line mode (empty or string)  |
+| default_prefixqqqdoublespaceqqq= '| STR'  | Default prefix (empty or string)  |
+| default_suffixqqqdoublespaceqqq= ' | STR'  | qqqdoublespaceqqqDefault suffix ('' in column mode and 'Line Feed' in line mode)qqqdoublespaceqqq(empty or string)  |
+| default_emptyqqqdoublespaceqqq = '| STR'  | Default String if empty (empty or string)  |
+| default_naqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq= '| STR'  | Default String if not applicable (empty or string)  |
 
 
 
@@ -3069,12 +5748,12 @@
 | id  | This parameter is mandatory and should be the same as the listcat id parameter  |
 | title  | Title of the column / line.  |
 | maxlength : -1 | NUM  | Max length: -1 means no maxlength  |
-| minlength : -1 | NUM  |  Min length: -1 means no minlength  |
+| minlength : -1 | NUM  | qqqdoublespaceqqqMin length: -1 means no minlength  |
 | prefix =' | STR'  | Prefix (empty or string)  |
 | suffix =' | STR'  | Suffix (empty or string)  |
 | align = left | center | right  | Field alignment  |
-| na = '| STR' : default  | String if empty (empty or string)  |
-| empty = '| STR' : default  | String if not applicable (empty or string)  |
+| na = '| STR'qqqdoublespaceqqq: default  | String if empty (empty or string)  |
+| empty = '| STR'qqqdoublespaceqqq: default  | String if not applicable (empty or string)  |
 
 
 
@@ -3083,33 +5762,145 @@
 
 <colgroup>  |  Parameter  |  Description  |
  --- | --- | --- |
-| CONTENT  | Filter to use on the messages written in the active LOG file.  |
-| DATETIMEMAX  | Use to display catalog transfers that happened on or before this end date and time according to the transfer record creation (DATEK, TIMEK).  |
+| CONTENTqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq  | Filter to use on the messages written in the active LOG file.  |
+| DATETIMEMAX  | Use to display catalog transfers that happenedqqqdoublespaceqqqon or before this end date and time according to the transfer record creation (DATEK, TIMEK).  |
 | DATETIMEMIN  | Use to display catalog transfers that happened on or after this start date and time according to the transfer record creation (DATED, TIMED).  |
 | DIAGI  |  Define the diagi catalog transfer field display:<br/> • DIAGI=0: select transfers that have a DIAGI=0<br/> • DIAGI=ERROR: select transfers that have a DIAGI other than 0<br/> • DIAGI=* : select all transfers (default value)</li>  |
 | DIRECT  | Transfer direction of the requests.  |
-|  EMPTY  |  Use this parameter to replace the default output of **Empty** values, usually empty string values.<br/>The default string <span style="font-weight: bold;">ANY</span> means that EMPTY is specified in the model. The default EMPTY used is '-' if it is not defined in the model.  |
+|  EMPTY  |  Use this parameter to replace the default output of **Empty** values, usually empty string values.<br/>The default string <span >ANY</span> means that EMPTY is specified in the model. The default EMPTY used is '-' if it is not defined in the model.  |
 | FILE  | Enter file name  |
 |  FMODEL  |  Complete name or logical name of the XML model file.<br/>This parameter default value is fixed.  |
-| FOUT  | <span class="bold_in_para">PeSIT</span> You can extract Transfer CFT messages from the Catalog file, and forward these messages to a specified file using the fout parameter.<br/>The message length for PeSIT ANY profile, when forwarding a message from one CFT to another, has increased from 512 to 4096 bytes. The S/RRUSIZE must be greater than the maximum message length and message information combined (for example, 4127).<br/>The fout parameter enables you to redirect output to a specified file.  |
+| FOUT  | <span >PeSIT</span> You can extract Transfer CFT messages from the Catalog file, and forward these messages to a specified file using theqqqdoublespaceqqqfout parameter.<br/>The message length for PeSIT ANY profile, when forwarding a message from one CFT to another, has increased from 512 to 4096 bytes. The S/RRUSIZE must be greater than the maximum message length and message information combined (for example, 4127).<br/>The fout parameter enables you to redirect output to a specified file.  |
 |  HELP  |  Displays help information:<br/> • FIELDS: Output all the fields name available for display model creation<br/> • MODELS: Output all the models available in the current model file</li>  |
 | IDA  | Local transfer identifier assigned by the user or user application. This identifier may be a search criterion for the catalog entry asso  |
 | IDF  | File type identifier.  |
-| IDT  | Transfer identifier. Identifies a transfer for a given partner and transfer direction.  |
+| IDTqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq  | Transfer identifier. Identifies a transfer for a given partner and transfer direction.  |
 | IDTU  | Catalog identifier. It is a unique, local reference to a transfer.  |
-|  MODE  |  This parameter is used to force a model's output mode.<br/>Two modes are available:<br/> • COLUMN: This mode outputs the catalog fields in columns with a title bar (see <a href="../brief_catalog_listing">LISTCAT CONTENT=BRIEF</a>).<br/> • LINE: This mode outputs the catalog fields with one field per line prefixed by its title.<br/>The default value ANY means that the mode is specified in the model. The default mode COLUMN is used if not defined in the model either.  |
+|  MODE  |  This parameter is used to force a model's output mode.<br/>Two modes are available:<br/> • COLUMN: This mode outputs the catalog fields in columns with a title bar (see <a href="../brief_catalog_listing">LISTCAT CONTENT=BRIEF</a>).<br/> • LINE: This mode outputs the catalog fields with one field per line prefixed by its title.<br/>The default value ANY means that the mode is specified in the model. The default mode COLUMN is usedqqqdoublespaceqqqif not defined in the model either.  |
 |  NA  |  Use this parameter to replace the default output of "Non Applicable" values. <br/>A Non Applicable value is a value that does not mean anything for the concerned transfer. For instance, the message content field doesn't mean anything for a file transfer, so the NA string will be displayed instead.<br/>The default string 'ANY' means that the NA is specified in the model. The default NA used will be '#' if not defined in the model either.  |
 | NPART  | Network name of the transfer partner.  |
 | PART  | The local identifier for the site where the monitor runs.  |
-| PHASE  | Refers to the highest level in the transfer flow cycle, for example X (done).  |
-| PHASESTEP  | The processing phase step.  |
-| PIDTU  | The parent idtu is the idtu of the generic transfer. This means that for a group of files, file collection, or for broadcasting, the child transfers are now linked to the parent via the PIDTU.  |
+| PHASEqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq  | Refers to the highest level in the transfer flow cycle,qqqdoublespaceqqqfor example X (done).  |
+| PHASESTEPqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq  | The processing phase step.  |
+| PIDTUqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq  | The parent idtu is the idtu of the generic transfer. This means that for a group of files, file collection, or for broadcasting, the child transfers are now linked to the parent via the PIDTU.  |
 |  RUSER  |  Displays value as defined in the CONTENT parameter.  |
-| SORTBY  |  Use this parameter to display information in an alphabetical/alphanumberic order.<br/>For example, to sort by partner name and identifier, enter:<br/><span class="code">CFTUTIL DISPLAY SORTBY=(PART,IDF)</span><br/>Additionally, you can add a prefix to define the criteria direction. Use <span class="code">+</span> to increase (default) or <span class="code">-</span> to decrease. For example:<br/>CFTUTIL DISPLAY SORTBY=(-IDTU)  |
+| SORTBY  |  Use this parameter to display information in an alphabetical/alphanumberic order.<br/>For example, to sort by partner name and identifier, enter:<br/><span >CFTUTIL DISPLAY SORTBY=(PART,IDF)</span><br/>Additionally, you can add a prefix to define the criteria direction. Use <span >+</span> to increase (default) or <span >-</span> to decrease. For example:<br/>CFTUTIL DISPLAY SORTBY=(-IDTU)  |
 | STATE  | Defines the transfer request state.  |
 |  SUSER  |  Displays value as defined in the CONTENT parameter.  |
-| TYPE  | Defines the concerned type (object, medium, etc.).  |
+| TYPE  | Defines the concernedqqqdoublespaceqqqtype (object, medium, etc.).  |
 
+
+
+============================== table nb count(224) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th >Parameter</th>
+<th ><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td colspan="2" ><p>Use this command to query the information associated with
+the selected transfers, recorded in the Transfer CFT catalog.</p></td>
+</tr>
+<tr >
+<td ><p><a href="../../../command_summary/parameter_intro/content">CONTENT</a> </p></td>
+<td ><p>Used to obtain part or all of the information of a catalog
+entry.</p></td>
+</tr>
+<tr >
+<td ><a href="../../../command_summary/parameter_intro/datetimemax">DATETIMEMAX</a></td>
+<td >Use to display catalog transfers that happenedqqqdoublespaceqqqon or before this end date and time according to the transfer record creation (DATEK, TIMEK).</td>
+</tr>
+<tr >
+<td ><a href="../../../command_summary/parameter_intro/datetimemin">DATETIMEMIN</a></td>
+<td >Use to display catalog transfers that happened on or after this start date and time according to the transfer record creation (DATEK, TIMEK).</td>
+</tr>
+<tr >
+<td ><a href="../../../command_summary/parameter_intro/diagi">DIAGI</a></td>
+<td >Define the diagi catalog transfer field display.</td>
+</tr>
+<tr >
+<td ><p><a href="../../../command_summary/parameter_intro/direct">DIRECT</a> </p></td>
+<td ><p>Transfer direction.</p>
+<p>The possible values are:</p>
+<ul>
+<li>BOTH <em>or</em> *</li>
+<li>SEND</li>
+<li>RECV</li>
+</ul></td>
+</tr>
+<tr >
+<td ><p>FILE = see the comment</p></td>
+<td ><p>Complete name or logical name of the catalog file.</p>
+<p>The default value for this parameter is fixed. </p>
+<p>To designate the current catalog of the monitor, this parameter
+should be defined with the filename set in the FNAME parameter of the
+CFTCAT command.</p></td>
+</tr>
+<tr >
+<td ><p><a href="../../../command_summary/parameter_intro/ida#ida">IDA</a> </p></td>
+<td ><p>Local identifier of the transfer assigned by the user or
+the user application.</p>
+<p>Several catalog entries may be associated with a given
+IDA.</p></td>
+</tr>
+<tr >
+<td ><p><a href="../../../command_summary/parameter_intro/idf#idf_CFTCAT">IDF</a> </p></td>
+<td ><p>Model file identifier.</p>
+<p>Several catalog entries may be associated with a given
+IDF.</p></td>
+</tr>
+<tr >
+<td ><p><a href="../../../command_summary/parameter_intro/idu#idt">IDT</a> </p></td>
+<td ><p>Transfer identifier.</p>
+<p>Identifies a transfer for a given partner and transfer
+direction.</p></td>
+</tr>
+<tr >
+<td ><p><a href="../../../command_summary/parameter_intro/idtu">IDTU</a> </p></td>
+<td ><p>Unique local transfer reference identifier.</p></td>
+</tr>
+<tr >
+<td ><p><a href="../../../command_summary/parameter_intro/npart">NPART</a> </p></td>
+<td ><p>Network identifier of the partner(s) for the selected transfers.</p>
+<p>The information displayed for LISTCAT CONTENT = BRIEF is
+different, according to whether the NPART parameter is defined or not
+(see the paragraphs below).</p></td>
+</tr>
+<tr >
+<td ><p><a href="../../../command_summary/parameter_intro/part">PART</a> </p></td>
+<td ><p>Partner identifier for the selected transfers.</p>
+<p>The value of this parameter may be:</p>
+<ul>
+<li>An identifier</li>
+<li>A mask</li>
+<li>Omitted*</li>
+</ul>
+<p>If the NPART parameter is defined, the PART parameter is
+ignored.</p></td>
+</tr>
+<tr >
+<td ><a href="../../../command_summary/parameter_intro/sortby">SORTBY</a></td>
+<td >Sorts the LISTCAT command information in an alphabetical/alphanumberic order.</td>
+</tr>
+<tr >
+<td ><p><a href="../../../command_summary/parameter_intro/state">STATE</a></p></td>
+<td ><p>Possible states of a catalog entry.</p>
+<p>The catalog entries in the state indicated by this parameter
+are selected. Any combination of the various states (D,C,H,K,T,X) is authorized.</p></td>
+</tr>
+<tr >
+<td ><p><a href="../../../command_summary/parameter_intro/type">TYPE</a> </p></td>
+<td ><p>Type of catalog entry.</p>
+<p>If TYPE = * <em>or</em> ALL, no selection is made: all transfers present
+in the catalog (files, messages, reply messages) are displayed if they
+fulfill the selection criteria which may be defined by other parameters.</p></td>
+</tr>
+</tbody>
+</table>
 
 
 ============================== table nb count(225) table converted to MD ========================================
@@ -3118,7 +5909,7 @@
 | Heading  | Meaning  |
 | --- | --- |
 |  1  |  Intermediate transfer (IPART)  |
-|  2  |  State transfer<br /> The DTSA characters represent:<br/> • Direction = S/R (Send/Receive)<br/> • Type = F/M/R (File/Message/Reply)<br/> • State = D/C/H/K/T/X (Disp/Current/Hold/Keep/Terminated/eXecuted)<br/> • Ack = A (Acknowledge)</li> <blockquote> **Note:**<br/>If the UCONF compatibility option is set to the default value (no), the format is DTSAPP to include Phase and PhaseStep. For more information, see Backward compatibility. </blockquote>  |
+|  2  |  State transfer<br /> The DTSA characters represent:<br/> • Direction = S/R (Send/Receive)<br/> • Type = F/M/R (File/Message/Reply)<br/> • State = D/C/H/K/T/X (Disp/Current/Hold/Keep/Terminated/eXecuted)<br/> • Ack = A (Acknowledge)</li> <blockquote> **Note**<br/>Ifqqqdoublespaceqqqthe UCONF compatibility option is set to the default value (no), the format is DTSAPP to include Phase and PhaseStep. For more information, see Backward compatibility. </blockquote>  |
 |  3  |  File network identifier (NFNAME)  |
 |  4  |  Transfer protocol identifier (NIDT)  |
 |  5  |  Local transfer identifier (IDTU)  |
@@ -3132,7 +5923,7 @@
 | Heading  | Meaning  |
 | --- | --- |
 |  1  |  Local partner identifier described in the CFTPART (ID) or CFTDEST command (one of the PARTS of the broadcasting list)  |
-|  2  |  Transfer state<br /> The DTSA characters mean:<br/> • Direction = S/R (Send/Receive)<br/> • Type = F/M/R (File/Message/Reply)<br/> • State = D/C/H/K/T/X (Disp/Current/Hold/Keep/Terminated/eXecuted)<br/> • Ack = A (Acknowledge)</li> <blockquote> **Note:**<br/>If the UCONF compatibility option is set to the default value (no), the format is DTSAPP to include Phase and PhaseStep. For more information, see Backward compatibility. </blockquote>  |
+|  2  |  Transfer state<br /> The DTSA characters mean:<br/> • Direction = S/R (Send/Receive)<br/> • Type = F/M/R (File/Message/Reply)<br/> • State = D/C/H/K/T/X (Disp/Current/Hold/Keep/Terminated/eXecuted)<br/> • Ack = A (Acknowledge)</li> <blockquote> **Note**<br/>Ifqqqdoublespaceqqqthe UCONF compatibility option is set to the default value (no), the format is DTSAPP to include Phase and PhaseStep. For more information, see Backward compatibility. </blockquote>  |
 |  3  |  File identifier (IDF)  |
 |  4  |  Transfer identifier (IDT)  |
 |  5  |  Identifier of the application associated to the transfer (IDA)  |
@@ -3195,16 +5986,16 @@
 | Parameter  | Default  | Description  |
 | --- | --- | --- |
 | loglevel  | I  |  Minimum severity level for the log lines to display.<br/> • I: INFORMATION<br/> • E: ERROR<br/> • W: WARNING<br/> • F: FATAL</li>  |
-| lines  | -100  |  Defines the number of lines to display from all log files, both current and backup.<br/> • A positive value displays the *x* oldest lines.<br/> • The value zero (0) displays all of the lines.<br/> • A negative value displays the **x** most recent lines.<br/>Enter zero (0), or a positive or negative value between 1 and 10,000.  |
+| linesqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq  | -100  |  Defines the number of lines to display from allqqqdoublespaceqqqlog files, both current and backup.<br/> • A positive value displays the *x* oldest lines.<br/> • The value zero (0) displays all of the lines.<br/> • A negative value displays the **x** most recent lines.<br/>Enter zero (0), or a positive or negative value between 1 and 10,000.  |
 | datemin  | 0  |  There are multiple formats to use to define the minimum date for log display.<br/> • Use the format YYMMDD to display logs that happened on or after this date.<br/> • Use a partial date for a more generic display. For example, <code>1604 </code>displays the log since April 2016.<br/> • Use a negative value to display logs for x number of days prior to today. For example, entering -2 displays the log since the day before yesterday, and -0 displays today’s log.</li>  |
 |  datetimemin  | 0  | Use to display logs that happened on or after this start date and time.  |
 |  datetimemax  | 99123123595999  | Use to display logs that happened on or before this end date and time.  |
-| datemax  | 991231  |  There are multiple formats to use to define the maximum date for log display.<br/> • Use to display logs that happened on or before this date. Use the format: YYMMDD<br/> • You can also enter a partial date. For example, <code>16 </code>displays the log prior to 2016.<br/> • A negative value is interpreted as a number of days before today. For example, -1 displays the log till yesterday (included).</li>  |
-| timemin  | 0  |  <li>Logs only happened at this time or after this time during the day. Use the format HHMMSSss.<br/> • A negative value is interpreted as a number of minutes before the current time. For example, -20 displays the log for the last 20 minutes.<br/><a href="#Time" class="MCXref xref">Time log precision</a>  |
-| timemax  | 23595999  |  <li>Logs only happened at this time or before this time during the day. Use the format HHMMSSss.<br/> • <br/><a href="#Time" class="MCXref xref">Time log precision</a>  |
+| datemax  | 991231  |  There are multiple formats to use to define the maximum date for log display.<br/> • Use to display logs that happened on or before this date.qqqdoublespaceqqqUse the format: YYMMDD<br/> • You can also enter a partial date. For example, <code>16 </code>displays the log prior to 2016.<br/> • A negative value is interpreted as a number of days before today. For example, -1 displays the log till yesterday (included).</li>  |
+| timemin  | 0  |  <li>Logs only happened atqqqdoublespaceqqqthis time or after this time during the day. Use the format HHMMSSss.<br/> • A negative value is interpreted as a number of minutes before the current time. For example, -20 displays the log for the last 20 minutes.<br/><a href="#Time" >Time log precision</a>  |
+| timemax  | 23595999  |  <li>Logs only happened atqqqdoublespaceqqqthis time or before this time during the day. Use the format HHMMSSss.<br/> • <br/><a href="#Time" >Time log precision</a>  |
 | pattern  |   | Only displays the log lines that match this specific pattern. Enter any pattern with a maximum of 63 characters.  |
 | displaynodeid  | YES  |  Defines if the node ID displays at the beginning of each line in the log. Enter:<br/> • YES: display<br/> • NO: does not display</li>  |
-| node  | -  |  Defines which nodes you want to display the log for. Specify the node by entering the node number :<br/> • Empty: if you do not define this parameter LISTLOG displays all nodes<br/> • Enter the node number(s) and separate with a comma. Node numbers cannot be more than two digits. For example: 00, 01, 02</li>  |
+| node  | -  |  Defines which nodes you want to display the log for. Specify the node by entering the node number :<br/> • Empty: if you do not define this parameter LISTLOG displays all nodes<br/> • Enter the node number(s) and separate with a comma. Node numbers cannot beqqqdoublespaceqqqmore than two digits. For example: 00, 01, 02</li>  |
 
 
 
@@ -3224,14 +6015,715 @@
 
 | Character  | Indicates...  |
 | --- | --- |
-| +  | That the variable toggles to upper case  |
-| -  | That the variable toggles to lower case  |
+| +  | That the variableqqqdoublespaceqqqtoggles to upper case  |
+| -  | That the variableqqqdoublespaceqqqtoggles to lower case  |
 | :  | That the right padding of the variable is suppressed  |
 | &lt;  | The left justification of the variable (default value)  |
 | &gt;  | The right justification of the variable  |
 | %  | Indicates use of the <a href="#Separate">separator syntax</a>  |
-|   |  These characters can be used in combination, such as **+:** or **&gt;+:**. <br/>See the <a href="#Examples" class="MCXref xref">Example using optional characters</a>  |
+|   |  These characters can be used in combination, such as **+:** or **&gt;+:**. <br/>See the <a href="#Examples" >Example using optional characters</a>  |
 
+
+
+============================== table nb count(233) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th >Domain</th>
+<th >Symbolic variable</th>
+<th  >Maximum length</th>
+<th >Corresponding substituted
+value</th>
+</tr>
+</thead>
+<tbody>
+<tr  data-valign="middle">
+<th rowspan="8"  data-valign="top" width="21%">PARTNERS </th>
+<td  data-valign="top" width="26%"><p>&amp;PART </p></td>
+<td  >32</td>
+<td  data-valign="top"><p>Partner name (ID of CFTPART) </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;GROUP </p></td>
+<td  >32</td>
+<td  data-valign="top"><p>Group to which the partner belongs </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;SPART </p></td>
+<td  >32</td>
+<td  data-valign="top"><p>Sending partner name </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;RPART </p></td>
+<td  >32</td>
+<td  data-valign="top"><p>Receiving partner name </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;IPART </p></td>
+<td  >32</td>
+<td  data-valign="top"><p>Intermediate partner name </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;NPART </p></td>
+<td  >32</td>
+<td  data-valign="top"><p>Network name of partner sending data (NSPART or NRPART
+according to the transfer direction) </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%">&amp;NSPART</td>
+<td  >24</td>
+<td  data-valign="top">Network identifier by which the
+localqqqdoublespaceqqq{{&lt; TransferCFT/componentshortname &gt;}} identifies itself to its partner</td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%">&amp;NRPART</td>
+<td  >24</td>
+<td  data-valign="top"><p>Network identifier by which the
+remote partner identifies itself to the local {{&lt; TransferCFT/componentlongname &gt;}}</p></td>
+</tr>
+<tr  data-valign="middle">
+<th rowspan="7"  data-valign="top" width="21%"><p>USER </p></th>
+<td  data-valign="top" width="26%"><p>&amp;SUSER </p></td>
+<td  >32</td>
+<td  data-valign="top"><p>Sending user name </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;RUSER </p></td>
+<td  >32</td>
+<td  data-valign="top"><p>Receiving user name </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;USERID </p></td>
+<td  >32</td>
+<td  data-valign="top"><p>Local user identifier </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;GROUPID</p></td>
+<td  >32</td>
+<td  data-valign="top"><p>Group identifier linked to the userid</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;COMMENT </p></td>
+<td  >160</td>
+<td  data-valign="top"><p>Comment indicated in CFTSEND/SEND or CFTRECV/RECV </p>
+In listcat content=debug this is attribute is MSG</td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;NOTIFY </p></td>
+<td  >8</td>
+<td  data-valign="top"><p>User notified on transfer </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%">&amp;SJOBNAME</td>
+<td  >15</td>
+<td  data-valign="top">{{&lt; TransferCFT/componentshortname &gt;}} job name, can be used in exec and cronjob procedures</td>
+</tr>
+<tr  data-valign="middle">
+<th rowspan="5"  data-valign="top" width="21%"><p>APPLICATIONS </p></th>
+<td  data-valign="top" width="26%"><p>&amp;SAPPL</p></td>
+<td  ><p> </p>
+<p>8</p>
+<p>48</p></td>
+<td  data-valign="top"><p>Sending application name </p>
+<p>PeSIT E</p>
+<p>PeSIT E CFT/CFT</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;RAPPL </p></td>
+<td  ><p> </p>
+<p>8</p>
+<p>48</p></td>
+<td  data-valign="top"><p>Receiving application name</p>
+PeSIT E
+<p>PeSIT E CFT/CFT</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;IDA </p></td>
+<td  >64</td>
+<td  data-valign="top"><p>Application identifier </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;PARM </p></td>
+<td  >512</td>
+<td  data-valign="top"><p>Parameter </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;PI99 </p></td>
+<td  >512</td>
+<td  data-valign="top"><p>PI99 contents (PeSIT E) </p></td>
+</tr>
+<tr  data-valign="middle">
+<th rowspan="22"  data-valign="top" width="21%"><p>TRANSFER </p></th>
+<td  data-valign="top" width="26%"><p>&amp;IDT</p></td>
+<td  >8</td>
+<td  data-valign="top"><p>Transfer identifier </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;NIDT </p></td>
+<td  >8</td>
+<td  data-valign="top"><p>Protocol transfer identifier </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;IDTU </p></td>
+<td  >8</td>
+<td  data-valign="top"><p>Local transfer counter (unique)</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%">&amp;PIDTU</td>
+<td  >8</td>
+<td  data-valign="top">Parent idtu of the child transfers</td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%">&amp;PHASE</td>
+<td  >1</td>
+<td  data-valign="top">Processing phases to help manage transfer flows</td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%">&amp;PHASESTEP</td>
+<td  >1</td>
+<td  data-valign="top">Step in processing phase</td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%">&amp;APPSTATE</td>
+<td  >32</td>
+<td  data-valign="top">State step for the processing
+script to restartqqqdoublespaceqqqif relaunched</td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;NSUB </p></td>
+<td  >4</td>
+<td  data-valign="top"><p>Counter for the submitting of end-of-transfer procedures,
+error procedures and procedures submitted by SUBMIT.<br />
+If 4 characters long, the counter is reset to 1 after 9999 </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;DIAGI </p></td>
+<td  >8</td>
+<td  data-valign="top"><p>Internal diagnostic code value </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;DIAGP </p></td>
+<td  >64</td>
+<td  data-valign="top"><p>Protocol diagnostic code value </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%">&amp;DIAGC</td>
+<td  >254</td>
+<td  data-valign="top">Complimentary diagnostic code value</td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;COMP </p></td>
+<td  >2</td>
+<td  data-valign="top"><p>Compression negotiated for the transfer</p>
+<p>Compression negotiated for the transfer</p>
+<p>When listcat content=debug this is attribute is FCOMP / COMPNEG</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;NBT </p></td>
+<td  >20</td>
+<td  data-valign="top"><p>Number of bytes transferred </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;PRI </p></td>
+<td  >3</td>
+<td  data-valign="top"><p>{{&lt; TransferCFT/componentshortname &gt;}} priority for the transfer (0 to 255) </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;QQ </p></td>
+<td  >3</td>
+<td  data-valign="top"><p>Number of the day in the year associated with the transfer
+identifier </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;SELFNAME </p></td>
+<td  >512</td>
+<td  data-valign="top"><p>Name of the generic transfer selection file </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;FCODE </p></td>
+<td  >1</td>
+<td  data-valign="top"><p>Code for the data in a file </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;TRTYPE</p></td>
+<td  >8</td>
+<td  data-valign="top"><p>Available at the end of transfer to designate FILE, MESSAGE,
+REPLY, or NACK</p>
+<p>When using listcat content=debug the attribute is TYPE</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;NCODE </p></td>
+<td  >1</td>
+<td  data-valign="top"><p>Code for the data sent over the network </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%">&amp;EXITFREEqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq</td>
+<td  >64</td>
+<td  data-valign="top">Free communication area between multiple exits</td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%">&amp;XLATE</td>
+<td  >32</td>
+<td  data-valign="top">Transcoding table used during transfer</td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%">&amp;MODE</td>
+<td  >1</td>
+<td  data-valign="top"><p>Server mode = ‘S’ transfer</p>
+<p>Requester mode =qqqdoublespaceqqqqqqdoublespaceqqq ‘R’ transfer</p></td>
+</tr>
+<tr  data-valign="middle">
+<th rowspan="33"  data-valign="top" width="21%"><p>FILE</p></th>
+<td  data-valign="top" width="26%"><p>&amp;IDF </p></td>
+<td  >32</td>
+<td  data-valign="top"><p>Model file identifier (logical name)  </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;FNAME</p></td>
+<td  >512</td>
+<td  data-valign="top"><p>Physical file local name </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;FKEYLEN </p></td>
+<td  >5</td>
+<td  data-valign="top"><p>Length (received) of the indexed file key at the sender’s
+site </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;FKEYPOS </p></td>
+<td  >5</td>
+<td  data-valign="top"><p>Position (received) of the indexed file key at the sender’s
+site </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;NBR </p></td>
+<td  >20</td>
+<td  data-valign="top"><p>Number of records in the file</p>
+<p>For listcat=content debug, this attribute is FRECS</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;BLKNUM </p></td>
+<td  >6</td>
+<td  data-valign="top"><p>Catalog block number </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;XLATE </p></td>
+<td  >32</td>
+<td  data-valign="top"><p>Identifier of the translation table used </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;NBC </p></td>
+<td  >20</td>
+<td  data-valign="top"><p>Number of bytes in the transferred file</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;NIDF </p></td>
+<td  >512</td>
+<td  data-valign="top"><p>Model file network identifier </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;FDB </p></td>
+<td  >64</td>
+<td  data-valign="top"><p>Database name </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%">&amp;FCHARSET</td>
+<td  >32</td>
+<td  data-valign="top">Local fileqqqdoublespaceqqqencoding</td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%">&amp;NCHARSET</td>
+<td  >32</td>
+<td  data-valign="top">Destination file encoding for networkqqqdoublespaceqqqdata</td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%">&amp;WORKINGDIR</td>
+<td  >512</td>
+<td  data-valign="top">Specify a directory other than the default directory</td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%">&amp;HOME</td>
+<td  >512</td>
+<td  data-valign="top">Keyword that allows different users to work with files placed in their home directory</td>
+</tr>
+<tr  data-valign="middle">
+<td colspan="3"  data-valign="top" width="26%">Receiving</td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;NFNAME </p></td>
+<td  >512</td>
+<td  data-valign="top"><p>Physical file network name </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;FROOT </p></td>
+<td  >512</td>
+<td  data-valign="top"><p>Root (file name) </p>
+<p>Based on the SFNAME (remote sending file)</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;FSUF </p></td>
+<td  >512</td>
+<td  data-valign="top"><p>File name suffix -</p>
+<p>Based on the SFNAME (remote sending file)</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;FPATH </p></td>
+<td  >512</td>
+<td  data-valign="top"><p>Prefix (file path)  -</p>
+<p>Based on the SFNAME (remote sending file)</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%">&amp;FUNITC </td>
+<td  >512</td>
+<td  data-valign="top"><p>Physical file unit (z/OS) -</p>
+<p>Based on the SFNAME (remote sending file)</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;FUNIT</p>
+<p> </p></td>
+<td  >512</td>
+<td  data-valign="top"><p>Physical file volume -</p>
+<p>Based on the SFNAME (remote sending file)</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;UNIT </p></td>
+<td  >512</td>
+<td  data-valign="top"><p>Physical file volume name for received file</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%">&amp;UNITC </td>
+<td  >512</td>
+<td  data-valign="top">Physical file unit class for received file (z/OS)</td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;PATH</p></td>
+<td  >512</td>
+<td  data-valign="top"><p>Local file path of the received file</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;ROOT</p></td>
+<td  >512</td>
+<td  data-valign="top"><p>Local file root for the received file</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;SUF</p></td>
+<td  >512</td>
+<td  data-valign="top"><p>Local file suffix for the received file</p></td>
+</tr>
+<tr  data-valign="middle">
+<td colspan="3"  data-valign="top" width="26%">Sending</td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%">&amp;SFNAME</td>
+<td  >512</td>
+<td  data-valign="top">Name of file to send</td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;FUNIT</p>
+<p> </p></td>
+<td  >512</td>
+<td  data-valign="top"><p>Physical file volume name for sending file</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%">&amp;FUNITC </td>
+<td  >512</td>
+<td  data-valign="top">Physical file unit for sending file (z/OS)</td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;FPATH </p></td>
+<td  >512</td>
+<td  data-valign="top"><p>Prefix (file path) of the sending file</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;FROOT </p></td>
+<td  >512</td>
+<td  data-valign="top"><p>Root (actual file name) of the sending file</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;FSUF </p></td>
+<td  >512</td>
+<td  data-valign="top"><p>Suffix associated with file name of the sending file</p></td>
+</tr>
+<tr  data-valign="middle">
+<th rowspan="2"  data-valign="top" width="21%"><p>MESSAGES</p></th>
+<td  data-valign="top" width="26%"><p>&amp;IDM</p></td>
+<td  >32</td>
+<td  data-valign="top"><p>Message identifier </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;MSG </p></td>
+<td  ><p> </p>
+<p>80</p>
+<p>512</p></td>
+<td  data-valign="top"><p>Message text </p>
+<p>PeSIT D CFT</p>
+<p>PeSIT E</p></td>
+</tr>
+<tr  data-valign="middle">
+<th rowspan="5"  data-valign="top" width="21%"><p>DATE and TIME associated with a FILE </p></th>
+<td  data-valign="top" width="26%"><p>&amp;FDATE </p></td>
+<td  >8</td>
+<td  data-valign="top"><p>Date associated with the file </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;FTIME </p></td>
+<td  >8</td>
+<td  data-valign="top"><p>Time associated with the file </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;FYEAR </p></td>
+<td  >2</td>
+<td  data-valign="top"><p>Year associated with the file </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;FMONTH </p></td>
+<td  >2</td>
+<td  data-valign="top"><p>Month associated with the file </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;FDAY </p></td>
+<td  >2</td>
+<td  data-valign="top"><p>Day associated with the file </p></td>
+</tr>
+<tr  data-valign="middle">
+<th rowspan="5"  data-valign="top" width="21%"><p>DATE and TIME associated with a CATALOG </p></th>
+<td  data-valign="top" width="26%"><p>&amp;CDATE </p></td>
+<td  >8</td>
+<td  data-valign="top"><p>Catalog entry date </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;CTIME </p></td>
+<td  >8</td>
+<td  data-valign="top"><p>Catalog entry time </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;CYEAR </p></td>
+<td  >2</td>
+<td  data-valign="top"><p>Catalog entry year </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;CMONTH </p></td>
+<td  >2</td>
+<td  data-valign="top"><p>Catalog entry month </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;CDAY </p></td>
+<td  >2</td>
+<td  data-valign="top"><p>Catalog entry day </p></td>
+</tr>
+<tr  data-valign="middle">
+<th rowspan="11"  data-valign="top" width="21%"><p>DATE and TIME associated with a TRANSFER </p></th>
+<td  data-valign="top" width="26%"><p>&amp;BDATE </p></td>
+<td  >8</td>
+<td  data-valign="top"><p>Transfer start date </p>
+<p>When listcat content=debug the start date is</p>
+<p>DATEB instead of BDATE</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;BTIME </p></td>
+<td  >8</td>
+<td  data-valign="top"><p>Transfer start time </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;BYEAR </p></td>
+<td  >2</td>
+<td  data-valign="top"><p>Start year for the transfer</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;BMONTH </p></td>
+<td  >2</td>
+<td  data-valign="top"><p>Start month for the transfer</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;BDAY </p></td>
+<td  >2</td>
+<td  data-valign="top"><p>Transfer start day </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;EDATE </p></td>
+<td  >8</td>
+<td  data-valign="top"><p>Transfer end date</p>
+<p>When listcat content=debug the end date is</p>
+<p>DATEE instead of EDATE</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;ETIME </p></td>
+<td  >8</td>
+<td  data-valign="top"><p>Transfer end time f</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;EYEAR </p></td>
+<td  >2</td>
+<td  data-valign="top"><p>Transfer end year</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;EMONTH </p></td>
+<td  >2</td>
+<td  data-valign="top"><p>Transfer end month</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;EDAY </p></td>
+<td  >2</td>
+<td  data-valign="top"><p>Transfer end day</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;TT </p></td>
+<td  >10</td>
+<td  data-valign="top"><p>Transmission duration in seconds (TIMES attribute in theqqqdoublespaceqqq{{&lt; TransferCFT/componentshortname &gt;}} catalog)</p></td>
+</tr>
+<tr  data-valign="middle">
+<th rowspan="3"  data-valign="top" width="21%">CONTROL OUTPUT </th>
+<td  data-valign="top" width="26%"><p>&amp;FLOG </p></td>
+<td  >512</td>
+<td  data-valign="top"><p>Name of last log file used byqqqdoublespaceqqq{{&lt; TransferCFT/componentshortname &gt;}} </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;FACCNT </p></td>
+<td  >512</td>
+<td  data-valign="top"><p>Name of last statistics file used byqqqdoublespaceqqq{{&lt; TransferCFT/componentshortname &gt;}} </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;FCAT</p></td>
+<td  >512</td>
+<td  data-valign="top"><p>Name of catalog used byqqqdoublespaceqqq{{&lt; TransferCFT/componentshortname &gt;}}</p></td>
+</tr>
+<tr  data-valign="middle">
+<th rowspan="2"  data-valign="top" width="21%"><p>TRACKING</p></th>
+<td  data-valign="top" width="26%"><p>&amp;XFRCYCID </p></td>
+<td  >250</td>
+<td  data-valign="top"><p>Processing cycle identifier (set of tracked instances that
+concern a single transfer) </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;XFROBJID </p></td>
+<td  >32</td>
+<td  data-valign="top"><p>Tracked object name </p></td>
+</tr>
+<tr  data-valign="middle">
+<th rowspan="9"  data-valign="top" width="21%"><p>SSL (1) </p></th>
+<td  data-valign="top" width="26%"><p>&amp;SSL</p></td>
+<td  >1</td>
+<td  data-valign="top"><p>Indicates if the session the transfer was carried out on
+was secured (‘1’) or not (‘0’) </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;SSLMODE </p></td>
+<td  >1</td>
+<td  data-valign="top"><p>SSL session mode on which the transfer was carried out.
+(C: Client / S: Server) </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;SSLAUTH </p></td>
+<td  >1</td>
+<td  data-valign="top"><p>Authentication rule<br />
+(A: Anonymous /S: Server / B: Both) </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;SSLCIPH </p></td>
+<td  >2</td>
+<td  data-valign="top"><p>SSL cipher suite </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;SSLPROF </p></td>
+<td  >32</td>
+<td  data-valign="top"><p>SSL profile identifier </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;SSLPARM </p></td>
+<td  >64</td>
+<td  data-valign="top"><p>SSL user parameter Parm parameter of the CFTSSL command </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;SSLRMCA </p></td>
+<td  >256</td>
+<td  data-valign="top"><p>Certificate identifier of the authority that signed the
+certificate presented by the remote partner </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;SSLUSER </p></td>
+<td  >256</td>
+<td  data-valign="top"><p>Identifier of the user certificate used locally for authentication
+by the remote partner </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;SSLCFNAM </p></td>
+<td  >64</td>
+<td  data-valign="top"><p>Physical name of the file in which the certificate chain
+presented by the remote partner was recorded </p>
+<p>This is the same as the CFTSSL CERFNAME parameter value</p></td>
+</tr>
+<tr  data-valign="middle">
+<th rowspan="4"  data-valign="top" width="21%"><p>SYSTEM </p></th>
+<td  data-valign="top" width="26%"><p>&amp;SYSDATE </p></td>
+<td  >8</td>
+<td  data-valign="top"><p>System date </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;SYSTIME </p></td>
+<td  >8</td>
+<td  data-valign="top"><p>System time </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;SYSQQ </p></td>
+<td  >3</td>
+<td  data-valign="top"><p>Number of the day in the year associated with the system
+date </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;SYSDAY</p></td>
+<td  >1</td>
+<td  data-valign="top"><p>Day of the week (Sunday = 0, 6 = Saturday)</p></td>
+</tr>
+<tr  data-valign="middle">
+<th rowspan="9"  data-valign="top" width="21%"><p>CAT/ ACCOUNT </p>
+<p>ENVIRONMENT</p></th>
+<td  data-valign="top" width="26%"><p>&amp;CFTNAME</p></td>
+<td  >32</td>
+<td  data-valign="top"><p>Name of theqqqdoublespaceqqq{{&lt; TransferCFT/componentshortname &gt;}} (CFTPARM PART parameter)</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%"><p>&amp;CFTEVENT</p></td>
+<td  >16</td>
+<td  data-valign="top"><p>The type of job submitted byqqqdoublespaceqqq{{&lt; TransferCFT/componentshortname &gt;}}, see (2) below</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%">&amp;SJOBNAME</td>
+<td  >15</td>
+<td  data-valign="top">Theqqqdoublespaceqqq{{&lt; TransferCFT/componentshortname &gt;}} jobname, which is the name of the job submitting the cronjob or exec procedure (z/OS)</td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%">&amp;CFTVERSION</td>
+<td  >16</td>
+<td  data-valign="top">The Transfer CFT version</td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%">&amp;CFTSP</td>
+<td  >16</td>
+<td  data-valign="top">The latest SP applied to the Transfer CFT </td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%">&amp;CFTPATCH</td>
+<td  >16</td>
+<td  data-valign="top">The latest patch applied to the Transfer CFT </td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%">&amp;CFTTARGET</td>
+<td  >16</td>
+<td  data-valign="top">TheqqqdoublespaceqqqTransfer CFT platform with additional details required for a support ticket, for example</td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="26%">&amp;CFTHOSTOS</td>
+<td  >64</td>
+<td  data-valign="top">TheqqqdoublespaceqqqTransfer CFT hostname</td>
+</tr>
+<tr  data-valign="middle">
+<td >&amp;CFTHOSTMACHINE</td>
+<td   data-valign="top" width="26%">64</td>
+<td  >Theqqqdoublespaceqqqmachine processor name where Transfer CFT is running</td>
+</tr>
+</tbody>
+</table>
 
 
 ============================== table nb count(234) table converted to MD ========================================
@@ -3239,12 +6731,12 @@
 
 | Parameter  | Symbolic variables  |
 | --- | --- |
-| WFNAME, NFNAME, FNAME for the CFTSEND/SEND and CFTRECV/RECV commands  |  <li>&amp;FDATE, &amp;FTIME, &amp;FYEAR, &amp;FMONTH, &amp;FDAY<br /> <br/> • &amp;BDATE, &amp;BTIME, &amp;BYEAR, &amp;BMONTH, &amp;BDAY<br /> <br/> • &amp;SPART, &amp;RPART, &amp;PART, &amp;NPART, &amp;GROUP<br /> <br/> • &amp;SUSER, &amp;RUSER<br /> <br/> • &amp;SAPPL, &amp;RAPPL<br /> <br/> • &amp;IDF, &amp;PARM, &amp;IDA<br /> <br/> • &amp;NIDF<br /> <br/> • &amp;NFNAME (only for FNAME and WFNAME)<br /> <br/> • &amp;IDT (only the FNAME and WFNAME parameters when you receive a file)<br /> <br/> • &amp;SYSQQ<br/> • &amp;WORKINGDIR</li>  |
-|  EXEC, EXECE, PREEXEC for the CFTSEND/SEND and CFTRECV/RECV commands<br/>EXECRE, EXECSE, EXECRF, EXECSF, EXECSFA, EXECSM, EXECRM, EXECSMA for CFTPARM command  |  <li>&amp;SPART, &amp;RPART, &amp;PART, &amp;GROUP, &amp;NRPART, &amp;NSPART, &amp;USERID,&amp;GROUPID<br/> • &amp;BDATE, &amp;BTIME, &amp;BYEAR, &amp;BMONTH, &amp;BDAY<br/> • &amp;CDATE, &amp;CTIME, &amp;CYEAR, &amp;CMONTH, &amp;CDAY<br/> • &amp;FDATE, &amp;FTIME, &amp;FYEAR, &amp;FMONTH, &amp;FDAY<br/> • &amp;EDATE, &amp;ETIME, &amp;EYEAR, &amp;EMONTH, &amp;EDAY<br/> • &amp;COMMENT<br/> • &amp;SUSER, &amp;RUSER<br /> </li> <li>&amp;SAPPL, &amp;RAPPL<br /> </li> <li>&amp;PARM, &amp;MSG, &amp;PI99<br /> </li> <li>&amp;DIAGI, &amp;DIAGP, &amp;DIAGC<br /> </li> <li>&amp;FNAME*, &amp;UNIT*, &amp;UNITC*, &amp;NFNAME*, &amp;NFVER*, &amp;FDB*, &amp;SELFNAME*, &amp;FUNITC*, &amp;FUNIT*, &amp;FPATH*, &amp;FROOT*, &amp;SFNAME*, &amp;WORKINGDIR*, &amp;HOME*<br /> </li> <li>&amp;IDF*, &amp;PIDTU, &amp;IDTU, &amp;IDT, &amp;NIDT, &amp;NIDF*, &amp;IDA, &amp;IDM, &amp;NSUB, &amp;PATH*, &amp;ROOT*, &amp;SUF*<br /> </li> <li>&amp;FCODE, &amp;NCODE, &amp;fcharset, &amp;ncharset<br /> </li> <li>&amp;BLKNUM<br /> </li> <li>&amp;CFTEVENT, &amp;CFTNAME</li> <li>&amp;FMCL, &amp;MODE, &amp;TRTYPE</li> <li>&amp;FBLKSIZE*, &amp;FKEYLEN*, &amp;FKEYPOS*, &amp;NKEYLEN*, &amp;NKEYPOS*, &amp;FLRECL*, &amp;FORG*, &amp;FRECFM*, &amp;FSPACE*, &amp;FTYPE*</li> <li>&amp;NBR*, &amp;NBC*, &amp;NBT*, &amp;TT, &amp;QQ, &amp;COMP, &amp;NOTIFY, &amp;SYSQQ</li> <li>&amp;SSLAUTH, &amp;SSLCIPH, &amp;SSLMODE, &amp;SSLPROF, &amp;SSLPARM, &amp;SSLRMCN, &amp;SSLRMCA, &amp;SSLUSER, &amp;SSLCFNA, &amp;SSL (See <a href="#Transport_security_symbolic_variables">Transport security symbolic variables</a>)</li> <li>&amp;XLATE</li> <li>&amp;SYSDATE, &amp;SYSTIME, &amp;SYSDAY</li> <li>&amp;PRI</li> <li>&amp;XFRCYCID, &amp;XFROBJID</li> <li>&amp;EXITFREE</li> <li>&amp;JOBNAME, &amp;NCHARSET</li> <li>&amp;APPSTATE, &amp;PHASESTEP, &amp;PHASE</li> <li>&amp;<a href="../parameter_intro/sourceappl">SOURCEAPPL</a>, &amp;<a href="../parameter_intro/targetappl">TARGETAPPL</a></li> <blockquote> **Note:**<br/>You cannot use the variables designated by asterisk (*) in procedures associated with the EXEC* parameters relative to message transfers. </blockquote>  |
+| WFNAME, NFNAME, FNAME for the CFTSEND/SEND and CFTRECV/RECV commands  |  <li>&amp;FDATE, &amp;FTIME, &amp;FYEAR, &amp;FMONTH, &amp;FDAY<br /> <br/> • &amp;BDATE, &amp;BTIME, &amp;BYEAR, &amp;BMONTH, &amp;BDAY<br /> <br/> • &amp;SPART, &amp;RPART, &amp;PART, &amp;NPART, &amp;GROUP<br /> <br/> • &amp;SUSER, &amp;RUSER<br /> <br/> • &amp;SAPPL, &amp;RAPPL<br /> <br/> • &amp;IDF, &amp;PARM, &amp;IDA<br /> <br/> • &amp;NIDF<br /> <br/> • &amp;NFNAME (only for FNAME and WFNAME)<br /> <br/> • &amp;IDT (onlyqqqdoublespaceqqqthe FNAME and WFNAME parameters when you receive a file)<br /> <br/> • &amp;SYSQQ<br/> • &amp;WORKINGDIR</li>  |
+|  EXEC, EXECE, PREEXEC for the CFTSEND/SEND and CFTRECV/RECV commands<br/>EXECRE, EXECSE, EXECRF, EXECSF, EXECSFA, EXECSM, EXECRM, EXECSMA for CFTPARM command  |  <li>&amp;SPART, &amp;RPART, &amp;PART, &amp;GROUP, &amp;NRPART, &amp;NSPART, &amp;USERID,&amp;GROUPID<br/> • &amp;BDATE, &amp;BTIME, &amp;BYEAR, &amp;BMONTH, &amp;BDAY<br/> • &amp;CDATE, &amp;CTIME, &amp;CYEAR, &amp;CMONTH, &amp;CDAY<br/> • &amp;FDATE, &amp;FTIME, &amp;FYEAR, &amp;FMONTH, &amp;FDAY<br/> • &amp;EDATE, &amp;ETIME, &amp;EYEAR, &amp;EMONTH, &amp;EDAY<br/> • &amp;COMMENT<br/> • &amp;SUSER, &amp;RUSER<br /> </li> <li>&amp;SAPPL, &amp;RAPPL<br /> </li> <li>&amp;PARM, &amp;MSG, &amp;PI99<br /> </li> <li>&amp;DIAGI, &amp;DIAGP, &amp;DIAGC<br /> </li> <li>&amp;FNAME*, &amp;UNIT*, &amp;UNITC*, &amp;NFNAME*, &amp;NFVER*, &amp;FDB*, &amp;SELFNAME*, &amp;FUNITC*, &amp;FUNIT*, &amp;FPATH*, &amp;FROOT*, &amp;SFNAME*, &amp;WORKINGDIR*, &amp;HOME*<br /> </li> <li>&amp;IDF*, &amp;PIDTU, &amp;IDTU, &amp;IDT, &amp;NIDT, &amp;NIDF*, &amp;IDA, &amp;IDM, &amp;NSUB, &amp;PATH*, &amp;ROOT*, &amp;SUF*<br /> </li> <li>&amp;FCODE, &amp;NCODE, &amp;fcharset, &amp;ncharset<br /> </li> <li>&amp;BLKNUM<br /> </li> <li>&amp;CFTEVENT, &amp;CFTNAME</li> <li>&amp;FMCL, &amp;MODE, &amp;TRTYPE</li> <li>&amp;FBLKSIZE*, &amp;FKEYLEN*, &amp;FKEYPOS*, &amp;NKEYLEN*, &amp;NKEYPOS*, &amp;FLRECL*, &amp;FORG*, &amp;FRECFM*, &amp;FSPACE*, &amp;FTYPE*</li> <li>&amp;NBR*, &amp;NBC*, &amp;NBT*, &amp;TT, &amp;QQ, &amp;COMP, &amp;NOTIFY, &amp;SYSQQ</li> <li>&amp;SSLAUTH, &amp;SSLCIPH, &amp;SSLMODE, &amp;SSLPROF, &amp;SSLPARM, &amp;SSLRMCN, &amp;SSLRMCA, &amp;SSLUSER, &amp;SSLCFNA, &amp;SSL (See <a href="#Transport_security_symbolic_variables">Transport security symbolic variables</a>)</li> <li>&amp;XLATE</li> <li>&amp;SYSDATE, &amp;SYSTIME, &amp;SYSDAY</li> <li>&amp;PRI</li> <li>&amp;XFRCYCID, &amp;XFROBJID</li> <li>&amp;EXITFREE</li> <li>&amp;JOBNAME, &amp;NCHARSET</li> <li>&amp;APPSTATE, &amp;PHASESTEP, &amp;PHASE</li> <li>&amp;<a href="../parameter_intro/sourceappl">SOURCEAPPL</a>, &amp;<a href="../parameter_intro/targetappl">TARGETAPPL</a></li> <blockquote> **Note**<br/>You cannot use the variables designated by asterisk (*) in procedures associated with the EXEC* parameters relative to message transfers. </blockquote>  |
 | EXEC for CFTACCNT or CFTLOG  | &amp;FACCNT, &amp;FLOG  |
 | TLVCEXEC, TLVWEXEC for CFTCAT  | &amp;FCAT  |
 | USERID parameter of the CFTSEND and CFTRECV commands  | &amp;RUSER, &amp;SUSER, &amp;PART  |
-| EXIT of the {{&lt; TransferCFT/componentshortname &gt;}} CFTSEND/SEND and CFTRECV/RECV commands  | &amp;IDF  |
+| EXIT of theqqqdoublespaceqqq{{&lt; TransferCFT/componentshortname &gt;}} CFTSEND/SEND and CFTRECV/RECV commands  | &amp;IDF  |
 | FNAME parameter of CFTDEST  |  <li>&amp;FDATE, &amp;FTIME, &amp;FYEAR, &amp;FMONTH, &amp;FDAY<br /> </li> <li>&amp;PART, &amp;RPART, &amp;SPART, &amp;NPART, &amp;GROUP<br /> </li> <li>&amp;SUSER, &amp;RUSER<br /> </li> <li>&amp;SAPPL, &amp;RAPPL<br /> </li> <li>&amp;IDF, &amp;PARM, &amp;IDA<br /> </li> <li>&amp;NIDF<br /> </li> <li>&amp;NFNAME, &amp;NFVER</li>  |
 | The name of the identifier of the IDF parameter of the CFTPROT command  |  <li>&amp;NIDF</li>  |
 | The IDA parameter of SEND and CFTSEND  |  <li>&amp;FNAME, &amp;FUNITC, &amp;FUNIT, &amp;FPATH, &amp;FROOT, &amp;FSUF, &amp;NFNAME, &amp;PART, &amp;IDF, &amp;IDTU, &amp;IDT, &amp;IDM, &amp;COMMENT, &amp;SYSDATE, &amp;SYSTIME</li>  |
@@ -3281,7 +6773,7 @@
 |  Separator character (volume)<br/>For example, a file name can be represented as follows: &lt;unit&gt;&lt;Separator&gt;&lt;unitc&gt;&lt;Separator&gt;&lt;path&gt;&lt;root&gt;&lt;suf&gt;<br/>In a z/OS environment: UNIT%UNITC%PATH.ROOT.SUF  | none  | none  |  x' 6C'<br/>285 = %<br/>297 = %  |  x '5E'<br/>285 = ;<br/>297 = ;  |
 | Symbolic variable prefix  | &amp;  | &amp;  |  x'50' 285 = &amp; 297 = &amp;  |  x'6F' 285 = ? 297 = ?  |
 |  Indirection file name prefix Used in a group of files or for an indirection file. For example, FNAME=&lt;Indirection prefix&gt;file name  | #  | @  |  x'7B’ 285 = # 297 = £  |  x'B1' 285 = [ 297 = #  |
-|  Character introducing the path name of the FNAME parameter (CFTRECV) from which a tree structure is created. On Windows, for example, FNAME=pub\+dir1\dir2\ftest  | +  | +  |  + Limited to USS files  |  + Limited to HFS files  |
+|  Character introducing the path name of the FNAME parameter (CFTRECV) from which a tree structure is created. On Windows, for example, FNAME=pub\+dir1\dir2\ftest  | +  | +  |  + Limited to USS files  |  +qqqdoublespaceqqq Limited to HFS files  |
 
 
 
@@ -3324,7 +6816,7 @@
 
 | Protocol  | Default value  |
 | --- | --- |
-|  PeSIT ANY profile  |  60  |
+|  PeSITqqqdoublespaceqqqANY profile  |  60  |
 |  ODETTE  |  65  |
 
 
@@ -3337,7 +6829,7 @@
 | both  | delete  | If no file exists, the file is created. If file exists it is deleted and recreated (regardless of if it is empty or not).  |
 | both  | erase  | If no file exists, the file is created. If file exists it is overwritten (no matter if it is empty or not).  |
 | both  | verify  | If no file exists, the file is created. If file exists and it is not empty, the transfer is aborted. If file exists but it is empty, the file is overwritten.  |
-| new  | verify  | If no file exists, the file is created. If file exists the transfer is aborted (regardless of if it is empty or not).  |
+| new  | verify  | If no file exists, the file is created. If file exists the transfer is aborted (regardless ofqqqdoublespaceqqqif it is empty or not).  |
 | old  | delete  | If no file exists, the transfer is aborted. If file exists the file is deleted and recreated (regardless of if it is empty or not).  |
 | old  | erase  | If no file exists, the transfer is aborted. If file exists the file is overwritten (regardless of if it is empty or not).  |
 | old  | verify  | If no file exists, the transfer is aborted. If file exists and it is not empty, the transfer is aborted. If file exists but it is empty, the file is overwritten.  |
@@ -3361,7 +6853,7 @@
 | both  | delete  | If no file exists, the file is created. If file exists it is deleted and recreated (regardless of if it is empty or not).  |
 | both  | erase  | If no file exists, the file is created. If file exists it is overwritten (no matter if it is empty or not).  |
 | both  | verify  | If no file exists, the file is created. If file exists and it is not empty, the transfer is aborted. If file exists but it is empty, the file is overwritten.  |
-| new  | verify  | If no file exists, the file is created. If file exists the transfer is aborted (regardless of if it is empty or not).  |
+| new  | verify  | If no file exists, the file is created. If file exists the transfer is aborted (regardless ofqqqdoublespaceqqqif it is empty or not).  |
 | old  | delete  | If no file exists, the transfer is aborted. If file exists the file is deleted and recreated (regardless of if it is empty or not).  |
 | old  | erase  | If no file exists, the transfer is aborted. If file exists the file is overwritten (regardless of if it is empty or not).  |
 | old  | verify  | If no file exists, the transfer is aborted. If file exists and it is not empty, the transfer is aborted. If file exists but it is empty, the file is overwritten.  |
@@ -3431,7 +6923,7 @@
 |  B  |  BINARY  | Binary  |
 |  V  |  BINARY  | Binary file emulating locally a variable file format  |
 |  T  |  ASCII  | Text file with LF or CRLF as end-of-line separator  |
-| F  | ASCII  | Text file where the last character '1A' is transmitted (is not considered an EOF character)  |
+| F  | ASCII  | Text file where the last character '1A' is transmitted (is not qqqdoublespaceqqq considered an EOF character)  |
 | O  | ASCII  | Text file with CRLF as end-of-line separator  |
 | X  | ASCII  | Text file with LF as end-of-line separator  |
 | J  | ASCII  |  Stream text<br/>Using stream text (J) allows a text type file to be sent that contains records that exceed 32 KB. As opposed to text type (FTYPE=T), stream text does not add an EOL sequence (LF or CRLF) to the received file.<br/>When using stream text (FTYPE=J), the sender and the receiver must both have the FTYPE set to J. Setting only the sender or receiver to FTYPE=J results in unexpected content for the transferred file.  |
@@ -3465,19 +6957,53 @@
 
 
 
-============================== table nb count(250) table converted to MD ========================================
+============================== table nb count(250) table stayed in HTML ========================================
 
-
-|  FTYPE  |  FRECFM  |  Supported files and data organizations (if applicable).  |
-| --- | --- | --- |
-| ‘D’  | ‘F’  | **PF-DTA with fixed data**, PF-DTA with variable data, PF-SRC, SAVF  |
-| ‘V’  | PF-DTA with fixed data, **PF-DTA with variable data**, PF-SRC, SAVF  |
-| ‘S’  | ‘F’  |  PF-DTA with fixed data, PF-DTA with variable data, **PF-SRC**  |
-|   | ‘V’  | PF-DTA with fixed data, PF-DTA with variable data, PF-SRC  |
-| ‘E’  | ‘F’  | PF-DTA with fixed data, PF-DTA with variable data, **PF-SRC**  |
-|   | ‘V’  | PF-DTA with fixed data, PF-DTA with variable data, PF-SRC  |
-| ‘Z’  | ‘F’, ‘V’  | **SAVF**  |
-
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th ><p>FTYPE</p></th>
+<th ><p>FRECFM</p></th>
+<th ><p>Supported files and data organizations (if applicable).</p></th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td rowspan="2" >‘D’</td>
+<td >‘F’</td>
+<td ><strong>PF-DTA with fixed data</strong>, PF-DTA with variable data, PF-SRC, SAVF</td>
+</tr>
+<tr >
+<td >‘V’</td>
+<td >PF-DTA with fixed data, <strong>PF-DTA with variable data</strong>, PF-SRC, SAVF</td>
+</tr>
+<tr >
+<td >‘S’</td>
+<td >‘F’</td>
+<td ><p>PF-DTA with fixed data, PF-DTA with variable data, <strong>PF-SRC</strong></p></td>
+</tr>
+<tr >
+<td > </td>
+<td >‘V’</td>
+<td >PF-DTA with fixed data, PF-DTA with variable data, PF-SRC</td>
+</tr>
+<tr >
+<td >‘E’</td>
+<td >‘F’</td>
+<td >PF-DTA with fixed data, PF-DTA with variable data, <strong>PF-SRC</strong></td>
+</tr>
+<tr >
+<td > </td>
+<td >‘V’</td>
+<td >PF-DTA with fixed data, PF-DTA with variable data, PF-SRC</td>
+</tr>
+<tr >
+<td >‘Z’</td>
+<td >‘F’, ‘V’</td>
+<td ><strong>SAVF</strong></td>
+</tr>
+</tbody>
+</table>
 
 
 ============================== table nb count(251) table converted to MD ========================================
@@ -3497,11 +7023,11 @@
 
 | FTYPE  | FRECFM  | Type of file  |
 | --- | --- | --- |
-|  ‘S’  | ‘V’, ‘F’, ‘ ’  | Text  |
-|  ‘D’ , ‘ ’  | ‘V’, ‘F’, ‘ ’  | Text  |
-|  ‘E’  | ‘V’, ‘F’, ‘ ’  | Text  |
-|  ‘Z’  | ‘V’, ‘F’, ‘ ’  | Binary  |
-|  ‘J’  | ‘V’, ‘F’, ‘ ’  |  Stream text is an alternative way to transfer a text file. Every line of a file must end with an LF or CR/LF. However, during a transfer the CR/LF are changed to LFs. This enables a quicker reading, and a faster transfer.<br/>When using stream text (FTYPE=J), the sender and the receiver must both have the FTYPE set to J. Setting only the sender or receiver to FTYPE=J results in unexpected content for the transferred file. <blockquote> **Note:**<br/>This transfer mode is not available for native side transfers. </blockquote>  |
+| qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq ‘S’  | ‘V’, ‘F’, ‘ ’  | Textqqqdoublespaceqqq  |
+| qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq‘D’ , ‘ ’  | ‘V’, ‘F’,qqqdoublespaceqqq‘ ’  | Text  |
+| qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq ‘E’  | ‘V’, ‘F’,qqqdoublespaceqqq‘ ’  | Text  |
+| qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq ‘Z’  | ‘V’, ‘F’, ‘ ’  | Binary  |
+| qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq ‘J’  | ‘V’, ‘F’,qqqdoublespaceqqq‘ ’  |  Stream textqqqdoublespaceqqqis an alternative way to transfer a text file. Every line of a file must end with an LF or CR/LF. However, during a transfer the CR/LF are changed to LFs. This enables a quicker reading, and a faster transfer.<br/>When using stream text (FTYPE=J), the sender and the receiver must both have the FTYPE set to J. Setting only the sender or receiver to FTYPE=J results in unexpected content for the transferred file. <blockquote> **Note**<br/>This transfer mode is not available for native side transfers. </blockquote>  |
 
 
 
@@ -3516,7 +7042,7 @@
 |  T  |  ASCII  | Text file with LF or CRLF as end-of-line separator  |
 |  O  |  ASCII  | Text file with CRLF as end-of-line separator  |
 |  X  |  ASCII  | Text file with LF as end-of-line separator  |
-| J  | ASCII  |  Text file with LF or CRLF as end-of-line separator<br/>FTYPE = J refers to stream text. The stream text type allows sending a text file that contains records that are larger than 32 KB. Unlike classical text types (T, O, X) the stream text type does not add an EOL sequence (LF or CRLF) at the end of the received file.  |
+| J  | ASCII  |  Text file with LF or CRLF as end-of-line separator<br/>FTYPE = J refers to stream text. The stream text type allows sending a text file that contains recordsqqqdoublespaceqqqthat are larger than 32 KB. Unlike classical text types (T, O, X) the stream text type does not add an EOL sequence (LF or CRLF) at the end of the received file.  |
 | E  | ASCII  | Edit native files.  |
 | N  | BINARY  | Non-edit native file (force the detection of native files rather than OSS ones).  |
 
@@ -3537,7 +7063,7 @@
 ============================== table nb count(255) table converted to MD ========================================
 
 
-<colgroup>  |  **PeSIT SIT profile**  |  For the PeSIT SIT profile, the model file identifier is subjected to the format constraint (Fnnnnn). See <a href="../../../../protocols_start_here/about_pesit">Protocols: PeSIT</a>.  |
+<colgroup>  |  **PeSIT SIT profile**  |  For the PeSIT SIT profile, the model file identifier is subjected to the format constraint (Fnnnnn). Seeqqqdoublespaceqqq<a href="../../../../protocols_start_here/about_pesit">Protocols: PeSIT</a>.  |
  --- | --- | --- |
 
 
@@ -3545,7 +7071,7 @@
 ============================== table nb count(256) table converted to MD ========================================
 
 
-|  PeSIT SIT profile  |  In the PeSIT protocol with the SIT profile, the model file identifier is subject to the format constraint (Fnnnnn). See <a href="../../../../protocols_start_here/about_pesit">Protocols: PeSIT</a>.  |
+|  PeSIT SIT profile  |  In the PeSIT protocol with the SIT profile, the model file identifier is subject to the format constraint (Fnnnnn). Seeqqqdoublespaceqqq<a href="../../../../protocols_start_here/about_pesit">Protocols: PeSIT</a>.  |
 | --- | --- |
 
 
@@ -3593,10 +7119,46 @@
 ============================== table nb count(260) table converted to MD ========================================
 
 
-|  PeSIT E standard  |  In standard PeSIT E, the RUSER parameter value is transported in the PI 04, but its length is limited to 8-characters. Therefore, the PI 04 contains the concatenated value along with the value of the RAPPL parameter.  |
+|  PeSIT E standard  |  In standard PeSIT E, theqqqdoublespaceqqqRUSER parameter value is transported in the PI 04, but its length is limited to 8-characters. Therefore, the PI 04 contains the concatenated value along with the value of the RAPPL parameter.  |
 | --- | --- |
-|  **<br /> **PeSIT E CFT/CFT  |  In PeSIT E between 2 {{&lt; TransferCFT/componentshortname &gt;}}s, the RUSER parameter value is transported in the PI 99 if this value exceeds 8 characters.  |
+|  **<br /> **PeSIT E CFT/CFT  |  In PeSIT E between 2qqqdoublespaceqqq{{&lt; TransferCFT/componentshortname &gt;}}s,qqqdoublespaceqqqthe RUSER parameter value isqqqdoublespaceqqqtransported in the PI 99 if this value exceeds 8 characters.  |
 
+
+
+============================== table nb count(261) table stayed in HTML ========================================
+
+<table  data-border="1" data-cellspacing="0" >
+<thead>
+<tr >
+<th >Access method</th>
+<th colspan="2" ><p>Size in characters </p></th>
+<th >Details</th>
+</tr>
+</thead>
+<tbody>
+<tr  data-valign="middle">
+<td   data-valign="top" width="14%"><p>TCP/IP </p></td>
+<td colspan="2"   data-valign="top"><p>1 to 15<br />
+ </p></td>
+<td   data-valign="top"><p>Number of the local monitoring port on which the Transfer CFT
+can be called, expressed in the form of the:</p>
+<ul>
+<li>real number used
+by TCP/IP:</li>
+<li>authorized
+numbers: between 1025 and 65535</li>
+<li>recommended
+numbers: 1761, 1762, 1763, 1764, 1765, 1766, 1767, 1768 <strong>(1)</strong></li>
+<li>logical name
+associated with the number used by TCP/IP and configured in the SERVICES
+file (if this file exists)<br />
+<br />
+recommended logical names: cft-0, cft-1, cft-2, cft-3, cft-4, cft-5,
+cft-6, cft-7 <strong>(1)</strong></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
 
 
 ============================== table nb count(262) table converted to MD ========================================
@@ -3614,7 +7176,7 @@
 
 <colgroup>  |  PeSIT E standard  |  In standard PeSIT E, the SUSER parameter is transported in the PI 03, and its length is limited to 8-characters. Therefore, the PI 03 contains the concatenated value along with the value of the SAPPL parameter.  |
  --- | --- | --- |
-|  **<br /> **PeSIT E CFT/CFT  |  In PeSIT E between 2 {{&lt; TransferCFT/componentshortname &gt;}}s, the SUSER parameter value is transported in the PI 99 if this value is longer than 8 characters.  |
+|  **<br /> **PeSIT E CFT/CFT  |  In PeSIT E between 2qqqdoublespaceqqq{{&lt; TransferCFT/componentshortname &gt;}}s,qqqdoublespaceqqqthe SUSER parameter value isqqqdoublespaceqqqtransported in the PI 99 if this value is longer than 8 characters.  |
 
 
 
@@ -3646,7 +7208,7 @@
 |  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/pkifname">PKIFNAME</a>:  |  The PKI database file ($CFTPKU by default) *only in command line*  |
 | <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/id">ID</a>:  | The PKIKEY identifier  |
 | <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/comment">COMMENT</a>:  | Free comment  |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/state">STATE</a>:  | The state of the imported key (ACT or INACT). You cannot use deactivated keys (state=INACT) for SFTP  |
+| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/state">STATE</a>:  | The state of the imported key (ACT or INACT). You cannot use deactivated keys (state=INACT)qqqdoublespaceqqqfor SFTP  |
 | IKDATA:  | Use base-64 data instead of a file (where the format corresponds with ikform)  |
 | <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/iform">IKFORM</a>:  | The key format (DER, PEM, PKCS8, SSH or KPRIV). The "SSH" value includes the SSH2 format and the ssh-rsa format  |
 |  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/ikname">IKNAME</a>:  | The key file to import *only in command line*  |
@@ -3666,6 +7228,477 @@
 |  Response  |  RSP  |  Answer a request  |
 |  Confirmation  |  CNF  |  Confirm the arrival of a response to a previous request  |
 
+
+
+============================== table nb count(268) table stayed in HTML ========================================
+
+<table  data-cellspacing="0"  width="90%">
+<thead>
+<tr >
+<th colspan="4" >Sending a file</th>
+</tr>
+</thead>
+<tbody>
+<tr  data-valign="middle">
+<td > </td>
+<td >FPDU</td>
+<td > </td>
+<td > </td>
+</tr>
+<tr  data-valign="middle">
+<td  data-bgcolor="#FFFFFF" data-valign="top" width="252px"><p>PeSIT</p></td>
+<td > </td>
+<td  data-bgcolor="#FFFFFF" data-valign="top" width="105.1pt"><p>  </p></td>
+<td  data-bgcolor="#FFFFFF" data-valign="top" width="178.4pt"><p>PeSIT</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-bgcolor="#FFFFFF" data-valign="top" width="252px"><p>INITIATOR</p></td>
+<td > </td>
+<td  data-bgcolor="#FFFFFF" data-valign="top" width="105.1pt"><p>  </p></td>
+<td  data-bgcolor="#FFFFFF" data-valign="top" width="178.4pt"><p>RESPONDER</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="252px"><p>  </p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>idle</p></td>
+<td  data-valign="top" width="178.4pt"><p>  </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="252px"><p>F.CONNECT, REQ ------&gt;</p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>  </p></td>
+<td  data-valign="top" width="178.4pt"><p>------&gt;IND, F.CONNECT</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="252px"><p>F.CONNECT, CNF &lt;------</p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>  </p></td>
+<td  data-valign="top" width="178.4pt"><p>&lt;------RSP, F.CONNECT</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="252px"><p>  </p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>connected</p></td>
+<td  data-valign="top" width="178.4pt"><p>  </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="252px"><p>F.CREATE, REQ ------&gt;</p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>  </p></td>
+<td  data-valign="top" width="178.4pt"><p>------&gt;IND, F.CREATE</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="252px"><p>F.CREATE, CNF &lt;------</p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>  </p></td>
+<td  data-valign="top" width="178.4pt"><p>&lt;------RSP, F.CREATE</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="252px"><p>  </p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>file selected</p></td>
+<td  data-valign="top" width="178.4pt"><p>  </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="252px"><p>F.OPEN, REQ ------&gt;</p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>  </p></td>
+<td  data-valign="top" width="178.4pt"><p>------&gt;IND, F.OPEN</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="252px"><p>F.OPEN, CNF &lt;------</p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>  </p></td>
+<td  data-valign="top" width="178.4pt"><p>&lt;------RSP, F.OPEN</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="252px"><p>  </p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>file opened</p></td>
+<td  data-valign="top" width="178.4pt"><p>  </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="252px"><p>F.WRITE, REQ ------&gt;</p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>  </p></td>
+<td  data-valign="top" width="178.4pt"><p>------&gt;IND, F.WRITE</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="252px"><p>F.WRITE, CNF &lt;------</p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>  </p></td>
+<td  data-valign="top" width="178.4pt"><p>&lt;------RSP, F.WRITE</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="252px"><p>  </p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>transfer started</p></td>
+<td  data-valign="top" width="178.4pt"><p>  </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="252px"><p>F.DATA, REQ -------&gt;</p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>data transfer</p></td>
+<td  data-valign="top" width="178.4pt"><p>------&gt;IND, F.DATA</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="252px"><p>F.DATA, REQ -------&gt;</p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>  </p></td>
+<td  data-valign="top" width="178.4pt"><p>------&gt;IND, F.DATA</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="252px"><p>F.CHECK, REQ -------&gt;</p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>synchronization point</p></td>
+<td  data-valign="top" width="178.4pt"><p>------&gt;IND, F.CHECK</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="252px"><p>F.DATA, REQ -------&gt;</p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>  </p></td>
+<td  data-valign="top" width="178.4pt"><p>------&gt;IND, F.DATA</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="252px"><p>F.DATA, REQ -------&gt;</p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>  </p></td>
+<td  data-valign="top" width="178.4pt"><p>------&gt;IND, F.DATA</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="252px"><p>F.CHECK, REQ -------&gt;</p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>  </p></td>
+<td  data-valign="top" width="178.4pt"><p>------&gt;IND, F.CHECK</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="252px"><p>F.DATA, REQ -------&gt;</p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>  </p></td>
+<td  data-valign="top" width="178.4pt"><p>------&gt;IND, F.DATA</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="252px"><p>F.DATA-END, REQ -----&gt;</p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>  </p></td>
+<td  data-valign="top" width="178.4pt"><p>------&gt;IND, F.DATA-END</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="252px"><p>  </p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>  </p></td>
+<td  data-valign="top" width="178.4pt"><p>  </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="252px"><p>F.TRANSFER-END, REQ -----&gt;</p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>  </p></td>
+<td  data-valign="top" width="178.4pt"><p>------&gt;IND,F.TRANSFER-END</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="252px"><p>F.TRANSFER-END, CNF &lt;-----</p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>  </p></td>
+<td  data-valign="top" width="178.4pt"><p>&lt;------RSP,F.TRANSFER-END</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="252px"><p>  </p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>transfer ended</p></td>
+<td  data-valign="top" width="178.4pt"><p>  </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="252px"><p>F.CLOSE, REQ ------&gt;</p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>  </p></td>
+<td  data-valign="top" width="178.4pt"><p>------&gt;IND, F.CLOSE</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="252px"><p>F.CLOSE, CNF &lt;------</p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>  </p></td>
+<td  data-valign="top" width="178.4pt"><p>&lt;------RSP, F.CLOSE</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  width="252px"><p>  </p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>file closed</p></td>
+<td  data-valign="top" width="178.4pt"><p>  </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  width="252px"><p>F.DESELECT, REQ ------&gt;</p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>  </p></td>
+<td  data-valign="top" width="178.4pt"><p>------&gt;IND, F.DESELECT</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  width="252px"><p>F.DESELECT, CNF &lt;------</p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>  </p></td>
+<td  data-valign="top" width="178.4pt"><p>&lt;------RSP, F.DESELECT</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  width="252px"><p>  </p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>file deselected</p></td>
+<td  data-valign="top" width="178.4pt"><p>  </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  width="252px"><p>F.RELEASED, REQ ------&gt;</p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>  </p></td>
+<td  data-valign="top" width="178.4pt"><p>------&gt;IND, F.RELEASED</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  width="252px"><p>F.RELEASED, CNF &lt;------</p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>  </p></td>
+<td  data-valign="top" width="178.4pt"><p>&lt;------RSP, F.RELEASED</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  width="252px"><p>  </p></td>
+<td > </td>
+<td  data-valign="top" width="105.1pt"><p>disconnected</p></td>
+<td  data-valign="top" width="178.4pt"><p>  </p></td>
+</tr>
+</tbody>
+</table>
+
+
+============================== table nb count(269) table stayed in HTML ========================================
+
+<table  data-cellspacing="0"  width="90%">
+<thead>
+<tr >
+<th colspan="3" >Receiving a file</th>
+</tr>
+</thead>
+<tbody>
+<tr  data-valign="middle">
+<td  data-valign="top" width="108.6pt"><p>PeSIT</p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="243.1pt"><p>PeSIT</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="108.6pt"><p>INITIATOR</p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="243.1pt"><p>RESPONDER</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="108.6pt"><p>  </p></td>
+<td  data-valign="top" width="109.1pt"><p>connected</p></td>
+<td  data-valign="top" width="243.1pt"><p>  </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="108.6pt"><p>F.SELECT, REQ ------&gt;</p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="243.1pt"><p>------&gt;IND, F.SELECT</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="108.6pt"><p>F.SELECT, CNF &lt;------</p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="243.1pt"><p>&lt;------RSP, F.SELECT</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="108.6pt"><p>  </p></td>
+<td  data-valign="top" width="109.1pt"><p>file selected</p></td>
+<td  data-valign="top" width="243.1pt"><p>  </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="108.6pt"><p>F.OPEN, REQ ------&gt;</p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="243.1pt"><p>------&gt;IND, F.OPEN</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="108.6pt"><p>F.OPEN, CNF &lt;------</p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="243.1pt"><p>&lt;------RSP, F.OPEN</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="108.6pt"><p>  </p></td>
+<td  data-valign="top" width="109.1pt"><p>file opened</p></td>
+<td  data-valign="top" width="243.1pt"><p>  </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="108.6pt"><p>F.READ, REQ ------&gt;</p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="243.1pt"><p>------&gt;IND, F.READ</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="108.6pt"><p>F.READ, CNF &lt;------</p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="243.1pt"><p>&lt;------RSP, F.READ</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="108.6pt"><p>  </p></td>
+<td  data-valign="top" width="109.1pt"><p>transfer started</p></td>
+<td  data-valign="top" width="243.1pt"><p>  </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="108.6pt"><p>F.DATA, IND &lt;------</p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="243.1pt"><p>&lt;------REQ, F.DATA</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="108.6pt"><p>F.DATA, IND &lt;------</p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="243.1pt"><p>&lt;------REQ, F.DATA</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="108.6pt"><p>F.CHECK, IND &lt;------</p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="243.1pt"><p>&lt;------REQ, F.CHECK</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="108.6pt"><p>F.DATA, IND &lt;------</p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="243.1pt"><p>&lt;------REQ, F.DATA</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="108.6pt"><p>F.DATA, IND &lt;------</p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="243.1pt"><p>&lt;------REQ, F.DATA</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="108.6pt"><p>F.CHECK, IND &lt;------</p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="243.1pt"><p>&lt;------REQ, F.CHECK</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="108.6pt"><p>F.DATA, IND &lt;------</p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="243.1pt"><p>&lt;------REQ, F.DATA</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="108.6pt"><p>F.DATA-END, IND</p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="243.1pt"><p>&lt;------REQ, F.DATA-END</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="108.6pt"><p>  </p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="243.1pt"><p>  </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="108.6pt"><p>F.TRANSFER-END, REQ -----&gt;</p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="243.1pt"><p>------&gt;IND,F.TRANSFER-END</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="108.6pt"><p>F.TRANSFER-END, CNF &lt;-----</p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="243.1pt"><p>&lt;------RSP,F.TRANSFER-END</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="108.6pt"><p>  </p></td>
+<td  data-valign="top" width="109.1pt"><p>transfer ended</p></td>
+<td  data-valign="top" width="243.1pt"><p>  </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="108.6pt"><p>F.CLOSE, REQ ------&gt;</p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="243.1pt"><p>------&gt;IND, F.CLOSE</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="108.6pt"><p>F.CLOSE, CNF &lt;------</p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="243.1pt"><p>&lt;------RSP, F.CLOSE</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="108.6pt"><p>  </p></td>
+<td  data-valign="top" width="109.1pt"><p>file closed </p></td>
+<td  data-valign="top" width="243.1pt"><p>  </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="108.6pt"><p>F.DESELECT, REQ ------&gt;</p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="243.1pt"><p>------&gt;IND, F.DESELECT</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="108.6pt"><p>F.DESELECT, CNF &lt;------</p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="243.1pt"><p>&lt;------RSP, F.DESELECT</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="108.6pt"><p>  </p></td>
+<td  data-valign="top" width="109.1pt"><p>file deselected</p></td>
+<td  data-valign="top" width="243.1pt"><p>  </p></td>
+</tr>
+</tbody>
+</table>
+
+
+============================== table nb count(270) table stayed in HTML ========================================
+
+<table  data-cellspacing="0"  width="90%">
+<thead>
+<tr >
+<th colspan="3" >Sending a message</th>
+</tr>
+</thead>
+<tbody>
+<tr  data-valign="middle">
+<td  data-valign="top" width="109.9pt"><p>PeSIT</p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="241.6pt"><p>PeSIT</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="109.9pt"><p>INITIATOR</p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="241.6pt"><p>RESPONDER</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="109.9pt"><p>  </p></td>
+<td  data-valign="top" width="109.1pt"><p>idle</p></td>
+<td  data-valign="top" width="241.6pt"><p>  </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="109.9pt"><p>F.CONNECT, REQ ------&gt;</p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="241.6pt"><p>------&gt;IND, F.CONNECT</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="109.9pt"><p>F.CONNECT, CNF &lt;------</p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="241.6pt"><p>&lt;------RSP, F.CONNECT</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="109.9pt"><p>  </p></td>
+<td  data-valign="top" width="109.1pt"><p>connected </p></td>
+<td  data-valign="top" width="241.6pt"><p>  </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="109.9pt"><p>F.MESSAGE, REQ ------&gt;</p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="241.6pt"><p>------&gt;IND, F.MESSAGE</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="109.9pt"><p>F.MESSAGE, CNF &lt;------</p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="241.6pt"><p>&lt;------RSP, F.MESSAGE</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="109.9pt"><p>  </p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="241.6pt"><p>  </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="109.9pt"><p>F.RELEASED, REQ ------&gt;</p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="241.6pt"><p>------&gt;IND, F.RELEASED</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="109.9pt"><p>F.RELEASED, CNF &lt;------</p></td>
+<td  data-valign="top" width="109.1pt"><p>  </p></td>
+<td  data-valign="top" width="241.6pt"><p>&lt;------RSP, F.RELEASED</p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="109.9pt"><p>  </p></td>
+<td  data-valign="top" width="109.1pt"><p>disconnected</p></td>
+<td  data-valign="top" width="241.6pt"><p>  </p></td>
+</tr>
+</tbody>
+</table>
 
 
 ============================== table nb count(271) table converted to MD ========================================
@@ -3688,6 +7721,80 @@
 |  SROUT = BOTH  |  Mixed access  |
 |  SROUT = NONE  |  Transfer CFT refuses to perform the transfer. This value has no protocol reality, since no connection request is sent  |
 
+
+
+============================== table nb count(273) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th colspan="3" >Negotiated functional level </th>
+</tr>
+</thead>
+<tbody>
+<tr  data-valign="middle">
+<td  data-bgcolor="#C0C0C0" data-valign="top" width="27%"><p> </p>
+<p>CFTPROT parameter </p></td>
+<td  data-bgcolor="#C0C0C0" data-valign="top" width="18%"><p>PeSIT E  </p></td>
+<td  data-bgcolor="#C0C0C0" data-valign="top" width="-1%"><p>PeSIT E</p>
+<p>+</p>
+<p>CFT extensions </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="27%"><p>DISCTD </p></td>
+<td  data-valign="top" width="18%"><p>0..3600<br />
+(dft: 120) </p></td>
+<td  data-valign="top" width="-1%"><p>0..3600<br />
+(dft: 120) </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="27%"><p>DISCTS </p></td>
+<td  data-valign="top" width="18%"><p>0..3600<br />
+(dft: 165) </p></td>
+<td  data-valign="top" width="-1%"><p>0..3600<br />
+(dft: 65) </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="27%"><p>LOGON </p></td>
+<td  data-valign="top" width="18%"><p>YES, NO </p></td>
+<td  data-valign="top" width="-1%"><p>YES, NO </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="27%"><p>PAD (<em>deprecated</em>)</p></td>
+<td  data-valign="top" width="18%"><p>NO, YES </p></td>
+<td  data-valign="top" width="-1%"><p>NO, YES </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="27%"><p>RCOMP </p></td>
+<td  data-valign="top" width="18%"><p>0, 2, 8, 10<br />
+(dft: 10) </p></td>
+<td  data-valign="top" width="-1%"><p>0..15<br />
+(dft: 15) </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="27%"><p>REVERSE </p></td>
+<td  data-valign="top" width="18%"><p>NO, YES </p></td>
+<td  data-valign="top" width="-1%"><p>NO, YES </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="27%"><p>SCOMP </p></td>
+<td  data-valign="top" width="18%"><p>0, 2, 8, 10<br />
+(dft: 10) </p></td>
+<td  data-valign="top" width="-1%"><p>0..15<br />
+(dft: 15) </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="27%"><p>SEGMENT </p></td>
+<td  data-valign="top" width="18%"><p>NO, YES </p></td>
+<td  data-valign="top" width="-1%"><p>NO, YES </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="27%"><p>SSERV </p></td>
+<td  data-valign="top" width="18%"><p>"PESIT " </p></td>
+<td  data-valign="top" width="-1%"><p>"PESIT " </p></td>
+</tr>
+</tbody>
+</table>
 
 
 ============================== table nb count(274) table converted to MD ========================================
@@ -3759,7 +7866,7 @@
 
 | Parameter  | Value  | Description  |
 | --- | --- | --- |
-| ipv6.disable_connect  | <u>YES</u> | NO  |  The value NO enables IPV6 resolution for hostnames used by Transfer CFT to connect to remote servers.  |
+| ipv6.disable_connect  | <u>YES</u> | NO  |  The value NO enables IPV6 resolution for hostnames used by Transfer CFT to connect to remote servers.qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq  |
 | ipv6.disable_listen  | <u>YES</u> | NO  | The value NO enables IPV6 resolution for hostnames used by Transfer CFT to listen for incoming connections.  |
 
 
@@ -3770,9 +7877,38 @@
 | Parameter  | Default  | Description  |
 | --- | --- | --- |
 |  cft.ipv6.set_ai_numerichost  | Yes  |  <li>**Yes**: Use when the host name is numeric to prevent the API system getaddrinfo from performing unnecessary DNS requests for numeric hostnames.<br/> • **No**: Use DNS requests for all hostnames, including numeric.</li>  |
-| cft.ipv6.set_ai_numericserv  | Yes  |  <li>**Yes**: Use when the service name is numeric (port number) to prevent the API system getaddrinfo from performing an unnecessary service name translation.<br/> • **No**: The getaddrinfo system API will perform a service name translation even if unnecessary.</li>  |
-| cft.ipv6.use_ipv4_legacy_resolver  | No  |  <li>**Yes**: Use legacy IPv4 only with the host and service names resolution APIs, gethostbyname() and getservbyname(). This detects if a performance issue involves IPv6 specific elements such as configuration settings, system API implementation, etc.<br/> • **No**: Use IPv6 functionality.</li>  |
+| cft.ipv6.set_ai_numericserv  | Yes  |  <li>**Yes**: Use when the service name is numeric (port number) to prevent the API system getaddrinfoqqqdoublespaceqqqfrom performing an unnecessary service name translation.<br/> • **No**: The getaddrinfo system API will perform a service name translation even if unnecessary.</li>  |
+| cft.ipv6.use_ipv4_legacy_resolver  | No  |  <li>**Yes**: Use legacy IPv4 only with the host and qqqdoublespaceqqqservice names resolution APIs, gethostbyname() and getservbyname(). qqqdoublespaceqqqThis detects if a performance issue involvesqqqdoublespaceqqq IPv6 specific elements such as configuration settings, system API implementation, qqqdoublespaceqqqetc.<br/> • **No**: Use IPv6 functionality.</li>  |
 
+
+
+============================== table nb count(280) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th >Parameter</th>
+<th >Description</th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td ><p>ipv6.disable_connect</p></td>
+<td ><p><strong>No</strong> indicates that an address or a name used byqqqdoublespaceqqq{{&lt; TransferCFT/componentshortname &gt;}} to connect to a host may be either an IPV4 or an IPV6 address. When using a name, this parameter can refer to a list of addresses, of any type.</p></td>
+</tr>
+<tr >
+<td >ipv6.disable_listen</td>
+<td ><p><strong>No</strong> indicates that an address or name used byqqqdoublespaceqqq{{&lt; TransferCFT/componentshortname &gt;}} to listen for incoming connections may be either an IPV4 or an IPV6 address.</p>
+<p>When using a name, this parameter can refer to a list of addresses, of any type.</p></td>
+</tr>
+<tr >
+<td colspan="2" ><blockquote>
+<p><strong>Note</strong></p>
+<p>It is recommended that you do not set ipv6.disable_listen to No, and ipv6.disable_connect to Yes.</p>
+</blockquote></td>
+</tr>
+</tbody>
+</table>
 
 
 ============================== table nb count(281) table converted to MD ========================================
@@ -3781,18 +7917,18 @@
 | Parameters  | Value  | Description  |
 | --- | --- | --- |
 |  **ID**  | STRING max_length=32  |  Network resource identifier.  |
-|  CALL  | STRING max_length=0  |  Call direction possible through this network resource. ('<u>INOUT</u>','OUT','IN')  |
+|  CALL  | STRING max_length=0  |  Call direction possible through this network resource.qqqdoublespaceqqq ('<u>INOUT</u>','OUT','IN')  |
 |  CLASS  | Number &lt;1&gt; min=0 max=64  |  Logical class for the physical link.  |
 |  MAXCNX  | Number &lt;32&gt; min=1 max=2000  |  Maximum number of simultaneous connections that Transfer CFT accepts to establish on this network resource.  |
 |  TYPE  | TCP  |  Defines the type of network resource.  |
 | BUFLEN  | Number &lt;0&gt; min=32 max=32766  | Size of buffers.  |
-| COMMENT  | STRING max_length=80  |  Free comment.  |
-| ORIGIN  |  STRING max_length=0  | Values include 'CFTUTIL','<u>C</u>','DESIGNER','D','COPILOT','O'.  |
-| **INET**  | STRING max_length=32  |  Identifier of the CFTNET command defining access to the first network  |
-| **HOST**  |  String max_length=64  | Resource address  |
-| **PORT**  |  Number &lt;0&gt; min=1 max=65535  | Listening port of the proxy/proxies in the first network  |
+| COMMENT  | STRING max_length=80  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq Free comment.  |
+| ORIGIN  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq STRING max_length=0  | Values include 'CFTUTIL','<u>C</u>','DESIGNER','D','COPILOT','O'.  |
+| **INET**  | STRING max_length=32qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqIdentifier of the CFTNET command defining access to the first network  |
+| **HOST**  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqString max_length=64  | Resource address  |
+| **PORT**  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqNumber &lt;0&gt; min=1 max=65535  | Listening port of the proxy/proxies in the first network  |
 | USER  | String max_length=32  | User name transmitted in the connection request addressed to the proxy  |
-| PASSWORD  |  String max_length=32  |  *SOCKS 5 only*<br/>User password transmitted in the connection request addressed to the proxy.  |
+| PASSWORD  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq String max_length=32  |  *SOCKS 5 only*<br/>User password transmitted in the connection request addressed to the proxy.  |
 
 
 
@@ -3845,8 +7981,8 @@
 | --- | --- | --- |
 | YES  | Yes, immediately  | The a file is immediately sent to the intended partner. Default value.  |
 | NO  | No, no file forwarding  | The file transfer is refused because the partner is not able to perform the store and forward.  |
-| SERVER  | Yes, after processing  | Sending the file occurs at the initiative of the store and forward site. This mode is also known as <a href="#VAN_server_Store_and_forward_processing">Store and forward with a VAN server</a>.  |
-| PART  | Yes, immediately  | This forced store and forward occurs in server mode. If the recipient that is defined in the IPART parameter is not the final recipient, the received file is immediately sent on to the target partner.  |
+| SERVER  | Yes, after processing  | Sending the file occurs at the initiative of the store and forward site. This mode is also known asqqqdoublespaceqqq<a href="#VAN_server_Store_and_forward_processing">Store and forward with a VAN server</a>.  |
+| PART  | Yes,qqqdoublespaceqqqimmediately  | This forced store and forward occurs in server mode. If the recipient that is defined in the IPART parameter is not the final recipient, the received file is immediately sent on to the target partner.  |
 
 
 
@@ -3892,26 +8028,137 @@
 
 
 
-============================== table nb count(288) table converted to MD ========================================
+============================== table nb count(288) table stayed in HTML ========================================
 
-
-| Command  | Parameter  | Value  | Description  |
-| --- | --- | --- | --- |
-| END  | DIAGC  | string  | Specify a comment.  |
-| FNAME  | string  | Modify the FNAME.  |
-| NFNAME  | string  | Modify the NFNAME.  |
-| SIGFNAME  | string  | Modify the SIGFNAME.  |
-| RAPPL  | string  | Modify the RAPPL.  |
-| SAPPL  | string  | Modify the SAPPL.  |
-| RUSER  | string  | Modify the RUSER.  |
-| SUSER  | string  | Modify the SUSER.  |
-| RPASSWD  | string  | Modify the RPASSWD.  |
-| SPASSWD  | string  | Modify the SPASSWD.  |
-| ISTATE  | NO/YES  |  Indicates:<br/> • YES: The END command is only a checkpoint.<br/> • NO (default): This is the final end command indicating that the processing is over. Once the END completes, the transfer enters the next phase.</li>  |
-| PHASE  | char  | The transfer phase at which the command is applied.  |
-| PHASE STEP  | char  | The phase step at which the command is applied.  |
-| APPSTATE  | string  | Specify an application state for the processing script that will help the script to restart at the right step if the script is relaunched.  |
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th >Command</th>
+<th >Parameter</th>
+<th >Value</th>
+<th >Description</th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td rowspan="14" >ENDqqqdoublespaceqqq</td>
+<td >DIAGC</td>
+<td >string</td>
+<td >Specify a comment.</td>
+</tr>
+<tr >
+<td >FNAME</td>
+<td >string</td>
+<td >Modify the FNAME.</td>
+</tr>
+<tr >
+<td >NFNAME</td>
+<td >string</td>
+<td >Modify the NFNAME.</td>
+</tr>
+<tr >
+<td >SIGFNAME</td>
+<td >string</td>
+<td >Modify the SIGFNAME.</td>
+</tr>
+<tr >
+<td >RAPPL</td>
+<td >string</td>
+<td >Modify the RAPPL.</td>
+</tr>
+<tr >
+<td >SAPPL</td>
+<td >string</td>
+<td >Modify the SAPPL.</td>
+</tr>
+<tr >
+<td >RUSER</td>
+<td >string</td>
+<td >Modify the RUSER.</td>
+</tr>
+<tr >
+<td >SUSER</td>
+<td >string</td>
+<td >Modify the SUSER.</td>
+</tr>
+<tr >
+<td >RPASSWD</td>
+<td >string</td>
+<td >Modify the RPASSWD.</td>
+</tr>
+<tr >
+<td >SPASSWD</td>
+<td >string</td>
+<td >Modify the SPASSWD.</td>
+</tr>
+<tr >
+<td >ISTATE</td>
+<td >NO/YES</td>
+<td ><p>Indicates:</p>
+<ul>
+<li>YES: The END command is only a checkpoint.</li>
+<li>NO (default): This is the final end command indicating that the processing is over. Once the END completes, the transfer entersqqqdoublespaceqqqthe next phase.</li>
+</ul></td>
+</tr>
+<tr >
+<td >PHASE</td>
+<td >char</td>
+<td >The transfer phase at which the command is applied.</td>
+</tr>
+<tr >
+<td >PHASE STEPqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq</td>
+<td >char</td>
+<td >The phase step at which the command is applied.</td>
+</tr>
+<tr >
+<td >APPSTATE</td>
+<td >string</td>
+<td >Specify an application state for the processing
+script that will help the script to restart at the right step if the
+script is relaunched.</td>
+</tr>
+</tbody>
+</table>
 
+
+============================== table nb count(289) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<tbody>
+<tr >
+<td > </td>
+<td colspan="4" ><p>EXECPRE/EXEC/EXECA for a CFTDEST broadcast request</p></td>
+</tr>
+<tr >
+<td colspan="2"  > </td>
+<td >PART</td>
+<td >DEST</td>
+<td >CHILDREN</td>
+</tr>
+<tr >
+<td rowspan="3"  >EXECSUBPRE/EXECSUB/EXECSUBA<br />
+for
+<p>CFTSEND/SEND/CFTRECV/RECV</p>
+<p>Group of files request</p></td>
+<td >FILE</td>
+<td >L1 + L2 + L3</td>
+<td >L1</td>
+<td >L2 + L3</td>
+</tr>
+<tr >
+<td >LIST</td>
+<td >L1 + L2</td>
+<td >L1</td>
+<td >L2</td>
+</tr>
+<tr >
+<td >SUBF</td>
+<td >L1 + L3</td>
+<td >L1</td>
+<td >L3</td>
+</tr>
+</tbody>
+</table>
 
 
 ============================== table nb count(290) table converted to MD ========================================
@@ -3920,7 +8167,7 @@
 | D = disp  |  Transfers are carried out immediately. (default)  |
 | --- | --- |
 |  H = hold  |  A practical application for this method is to make files available for a partner to download when the partner is ready. This can be started by the START command or a RECV command.  |
-|  K = keep  |  You can use this status to store several transfers, for example, until all are ready to go. A manual START command would trigger the transfers.  |
+|  K = keep  |  You can use this status to store several transfers, for example,qqqdoublespaceqqquntil all are ready to go. A manual START command would trigger the transfers.  |
 
 
 
@@ -3952,7 +8199,7 @@
 | Character  | Description  | Example  |
 | --- | --- | --- |
 | *  | Indicates any sequence of zero or more characters.  | The filter "*.dat" selects any file name that has the extension ".dat".  |
-| ?  | Indicates any single character.  | The filter "T*.???" selects any file name starting with a 'T' and having an extension of exactly three characters.  |
+| ?  | Indicates any single character.  | The filter "T*.???"qqqdoublespaceqqqselects any file name starting with a 'T' and having an extension of exactly three characters.  |
 
 
 
@@ -3995,6 +8242,136 @@
 | Parent  | 1  |   | H  | 200  |
 | Child  | 2  | 1  | K  | 132  |
 
+
+
+============================== table nb count(297) table stayed in HTML ========================================
+
+<table  data-cellspacing="0"  width="90%">
+<colgroup>
+<col  />
+<col />
+<col  />
+</colgroup>
+<thead>
+<tr >
+<th >Description</th>
+<th colspan="2" >Use this command to initiates the sending of a message
+of a particular type. This message is a reply to a previous transfer from
+the partner.</th>
+</tr>
+</thead>
+<tbody>
+<tr  data-valign="top">
+<td rowspan="8"  width="19.982%"><p>Parameters</p></td>
+<td colspan="2" ><p>FOR OPTIONAL
+PARAMETERS COMMON TO SEND: see the <a href="../../../c_intro_userinterfaces/command_summary#SEND">SEND</a>
+command.</p></td>
+</tr>
+<tr  data-valign="top">
+<td ><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/exec">EXEC</a></p></td>
+<td  width="59.777%"><p>Filename.</p></td>
+</tr>
+<tr  data-valign="top">
+<td ><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/ida">IDA</a> </p></td>
+<td  width="59.777%"><p>Local transfer identifier assigned by the user or user
+application. The maximum length is 64 characters.</p></td>
+</tr>
+<tr  data-valign="top">
+<td ><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/idm">IDM</a> </p></td>
+<td  width="59.777%"><p>Message identifier. The value of this identifier is unrestricted.</p></td>
+</tr>
+<tr  data-valign="top">
+<td ><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/idu">IDT</a> </p></td>
+<td  width="59.777%"><p>Identifier of the original transfer acknowledged by this
+message.</p></td>
+</tr>
+<tr  data-valign="top">
+<td ><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/msg">MSG</a></p></td>
+<td  width="59.777%"><p>Message</p></td>
+</tr>
+<tr   data-valign="top">
+<td ><p><strong><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/part">PART</a> </strong></p></td>
+<td  width="59.777%"><p>Transfer partner identifier.</p></td>
+</tr>
+<tr   data-valign="top">
+<td ><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/pri">PRI</a></p></td>
+<td  width="59.777%"><p>Request selection priority.</p></td>
+</tr>
+<tr   data-valign="top">
+<td  width="19.982%"><p> </p></td>
+<td ><p><strong><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/type">TYPE</a> =
+REPLY</strong></p></td>
+<td  width="59.777%"><p>Characterizes a reply send transfer.</p></td>
+</tr>
+<tr   data-valign="top">
+<td colspan="3"  width="100%"></td>
+</tr>
+</tbody>
+</table>
+
+
+============================== table nb count(298) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th >Parameter</th>
+<th >Default</th>
+<th >Description</th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td >uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.weight_in</td>
+<td >unlimited</td>
+<td >This value is used to compute the nominal rate of incoming data for this class of service. **</td>
+</tr>
+<tr >
+<td >uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.weight_out</td>
+<td >unlimited</td>
+<td >This value is used to compute the nominal rate of outgoing data for this class of service. **</td>
+</tr>
+<tr >
+<td colspan="3" ><p>** Do not configure the parameters <strong>weight_in</strong> and <strong>weight_out</strong>qqqdoublespaceqqqfor the class-of-service 0, as they cannot be used in this context. Seeqqqdoublespaceqqq<a href="#Concepts">Concepts.</a></p></td>
+</tr>
+<tr >
+<td >uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.max_rate_out</td>
+<td >unlimited</td>
+<td >Maximum rate of incoming data for that class-of-service</td>
+</tr>
+<tr >
+<td >uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.max_rate_out</td>
+<td >unlimited</td>
+<td >Maximum rate of outgoing data for that class-of-service</td>
+</tr>
+<tr >
+<td >uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.session_rate_in</td>
+<td >unlimited</td>
+<td >Maximum rate of incoming data for sessions under that class-of-service</td>
+</tr>
+<tr >
+<td >uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.session_rate_out</td>
+<td >unlimited</td>
+<td >Maximum rate of outgoing data for sessions under that class-of-service</td>
+</tr>
+<tr >
+<td >uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.parent</td>
+<td  >0</td>
+<td >Parent class-of-service</td>
+</tr>
+<tr >
+<td >uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.comment</td>
+<td  >“”</td>
+<td >User comment that describes the class-of-service</td>
+</tr>
+<tr >
+<td >uconf:cft.server.bandwidth.cosqqqdoublespaceqqqqqqdoublespaceqqq</td>
+<td  >1</td>
+<td >Total number of class-of-services including the
+qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq class number zero.</td>
+</tr>
+</tbody>
+</table>
 
 
 ============================== table nb count(299) table converted to MD ========================================
@@ -4123,6 +8500,50 @@
 
 
 
+============================== table nb count(309) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<tbody>
+<tr  data-valign="top">
+<td  width="22.124%"><p>Description</p></td>
+<td colspan="2"  width="77.876%"><p>Use the ACT and INACT commandsqqqdoublespaceqqqto activate or deactivate
+one or more certificates in the local database. If a root
+or intermediate authority certificate is deactivated, all dependent certificates
+(user or intermediate authorities) are automatically deactivated.</p>
+<p>The syntax is the same for both commands.</p></td>
+</tr>
+<tr  data-valign="top">
+<td rowspan="4"  width="22.124%"><p>Parameters</p></td>
+<td  width="30.803%"><p>ID = string1..8</p></td>
+<td  width="47.073%"><p>Unique local identifier of the certificate(s) to be activated
+or deactivated, depending on the command.</p>
+<p>The * and ? wildcard characters are accepted for the ID
+parameter value.</p></td>
+</tr>
+<tr  data-valign="top">
+<td  width="30.803%">[ INUM= number1..99]</td>
+<td  width="47.073%"><p>Internal number for the intermediate certificates in an imported chain of certificates (in the PKI database).</p></td>
+</tr>
+<tr  data-valign="top">
+<td  width="30.803%">[PKIFNAME = string1..64]</td>
+<td  width="47.073%">[PKIFNAME = string1..64] <em>Obsolete for Windows/Unix.</em></td>
+</tr>
+<tr  data-valign="top">
+<td  width="30.803%"><p>ROOTCID = string1..8</p></td>
+<td  width="47.073%"><p>Local identifier of the authority of the certificates to
+be enabled/disabled.</p>
+<p>This parameter must even be indicated for an authority certificate.
+In this case, the ID and ROOTCID parameters have the same value.</p></td>
+</tr>
+<tr  data-valign="top">
+<td > </td>
+<td  width="30.803%">TYPE = KEY</td>
+<td  width="47.073%">To activate/deactivate the PKIKEY.</td>
+</tr>
+</tbody>
+</table>
+
+
 ============================== table nb count(310) table converted to MD ========================================
 
 
@@ -4162,7 +8583,7 @@
 |  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/pkifname">PKIFNAME</a>:  |  The PKI database file ($CFTPKU by default) *only in command line*  |
 | <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/id">ID</a>:  | The PKIKEY identifier  |
 | <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/comment">COMMENT</a>:  | Free comment  |
-| <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/state">STATE</a>:  | The state of the imported key (ACT or INACT). You cannot use deactivated keys (state=INACT) for SFTP  |
+| <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/state">STATE</a>:  | The state of the imported key (ACT or INACT). You cannot use deactivated keys (state=INACT)qqqdoublespaceqqqfor SFTP  |
 | IKDATA:  | Use base-64 data instead of a file (where the format corresponds with ikform)  |
 | <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/iform">IKFORM</a>:  | The key format (DER, PEM, PKCS8, SSH or KPRIV). The "SSH" value includes the SSH2 format and the ssh-rsa format  |
 |  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/ikname">IKNAME</a>:  | The key file to import *only in command line*  |
@@ -4172,18 +8593,72 @@
 
 
 
-============================== table nb count(313) table converted to MD ========================================
+============================== table nb count(313) table stayed in HTML ========================================
 
-
-<colgroup>  |  Parameters  | ID  |  Identifier of either the certificate or key to be extracted.<br/>When this parameter is not defined, all of the certificates and keys are extracted pending if TYPE is defined.  |
- --- | --- | --- | --- |
-| BASE64  |  Export base64 data:<br/> • Yes<br/> • No (default)<br/>When exporting data from the PKI database, you can request Base64 data instead of files. This way, additional files are not created.  |
-|  FOUT  |  Name of the file where the command’s standard output is redirected.<br/>This generated file can then be interpreted directly by PKIUTIL.<br/>If this parameter is not defined, the standard output is displayed.  |
-| [ INUM = {number0...99} ]  | Internal number for the intermediate certificates in an imported chain of certificates (in the PKI database). You can use this option to select a specific intermediate certificate.  |
-| PASSWORD  |  The password length must be between 4 and 64 characters.<br/> • When using a password, PKIEXT exports a certificate/key pair in PKCS#12 format instead of DER (certificate) and KPRIV (key). &lt;/li&gt;<br/> • When using a password, PKIEXT exports a key in PKCS#8 format instead of KPRIV. &lt;/li&gt;</li>  |
-| ROOTCID  | The certificate authority ID. See an example usage in <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/rootcid">ROOTCID</a>.  |
-| TYPE  |  This parameter defines the certificate or key type to be extracted.<br/>Possible values:<br/> • ALL: extracts ROOT, INTER, and USER in PKICER, PKIKEY, and PKIENTITY<br/> • USER<br/> • ROOT<br/> • INTER<br/> • ENTITY<br/> • KEY<br/> • CERT: extracts ROOT, INTER, and USER in PKICER</li>  |
-
+<table  data-cellspacing="0" >
+<colgroup>
+<col  />
+<col  />
+<col  />
+</colgroup>
+<tbody>
+<tr  data-valign="top">
+<td rowspan="7"   width="19.982%"><p>Parameters</p></td>
+<td >ID</td>
+<td   width="49.916%"><p>Identifier of either the certificate or key to be extracted.</p>
+<p>When this parameter is not defined, all of the certificates and keys are extracted pending if TYPE is defined.</p></td>
+</tr>
+<tr  data-valign="top">
+<td >BASE64</td>
+<td   width="49.916%"><p>Export base64 data:</p>
+<ul>
+<li>Yes</li>
+<li>No (default)</li>
+</ul>
+<p>When exporting data from the PKI database, you can request Base64 data instead of files.
+This way, additional files are not created.</p></td>
+</tr>
+<tr  data-valign="top">
+<td ><p>FOUT</p></td>
+<td   width="49.916%"><p>Name of the file where the command’s standard output
+isqqqdoublespaceqqqredirected.</p>
+<p>This generated file can then be interpreted directly by
+PKIUTIL.</p>
+<p>If this parameter is not defined, the standard output is displayed.</p></td>
+</tr>
+<tr  data-valign="top">
+<td   width="28.162%">[ INUM  = {number0...99} ]</td>
+<td   width="49.916%">Internal number for the intermediate certificates in an imported chain of certificates (in the PKI database). You can use this option to select a specific intermediate certificate.</td>
+</tr>
+<tr  data-valign="top">
+<td   width="28.162%">PASSWORD</td>
+<td   width="49.916%"><p>The password length must be between 4 and 64 characters.</p>
+<ul>
+<li>qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqWhen using a password, PKIEXT exports a certificate/key pair in PKCS#12 format instead of DER (certificate) and KPRIV (key). &lt;/li&gt;</li>
+<li>When using a password, PKIEXT exports a keyqqqdoublespaceqqqin PKCS#8 format instead of KPRIV.
+qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/li&gt;</li>
+</ul></td>
+</tr>
+<tr  data-valign="top">
+<td   width="28.162%">ROOTCID</td>
+<td   width="49.916%">Theqqqdoublespaceqqqcertificate authority ID. See an example usage in <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/rootcid">ROOTCID</a>.</td>
+</tr>
+<tr  data-valign="top">
+<td   width="28.162%">TYPE</td>
+<td   width="49.916%"><p>This parameter defines the certificate or key type to be extracted.</p>
+<p>Possible values:</p>
+<ul>
+<li>ALL: extracts ROOT, INTER, and USER in PKICER, PKIKEY, and PKIENTITY</li>
+<li>USER</li>
+<li>ROOT</li>
+<li>INTER</li>
+<li>ENTITY</li>
+<li>KEY</li>
+<li>CERT: extracts ROOT, INTER, and USER in PKICER</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
 
 
 ============================== table nb count(314) table converted to MD ========================================
@@ -4213,8 +8688,8 @@
 | Script  | Description  |
 | --- | --- |
 | &lt;CFTDIRRUNTIME&gt;/exec/tf_decipher.cmd  | Trusted File deciphering script  |
-| &lt;CFTDIRRUNTIME&gt;/exec/tf_cipher.cmd  | Trusted File ciphering script  |
-| &lt;CFTDIRRUNTIME&gt;/exec/tf_delfile.cmd  | End of transfer procedure to delete the sent ciphered file  |
+| &lt;CFTDIRRUNTIME&gt;/exec/tf_cipher.cmdqqqdoublespaceqqq  | Trusted File ciphering script  |
+| &lt;CFTDIRRUNTIME&gt;/exec/tf_delfile.cmdqqqdoublespaceqqqqqqdoublespaceqqq  | End of transfer procedure to delete the sent ciphered file  |
 
 
 
@@ -4224,8 +8699,8 @@
 | Script  | Description  |
 | --- | --- |
 | &lt;CFTDIRRUNTIME&gt;/exec/tf_decipher.bat  | Trusted File deciphering script  |
-| &lt;CFTDIRRUNTIME&gt;/exec/tf_cipher.bat  | Trusted File ciphering script  |
-| &lt;CFTDIRRUNTIME&gt;/exec/tf_delfile.bat  | End of transfer procedure to delete the sent ciphered file  |
+| &lt;CFTDIRRUNTIME&gt;/exec/tf_cipher.batqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq  | Trusted File ciphering script  |
+| &lt;CFTDIRRUNTIME&gt;/exec/tf_delfile.batqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq  | End of transfer procedure to delete the sent ciphered file  |
 
 
 
@@ -4250,8 +8725,8 @@
 | --- | --- |
 | &lt;CFTDIRRUNTIME&gt;/conf/tf/certs/priv/xppuser1.p12  | Private delivered “user1” certificate  |
 | &lt;CFTDIRRUNTIME&gt;/conf/tf/certs/priv/xppuser2.p12  | Private delivered “user2” certificate  |
-| &lt;CFTDIRRUNTIME&gt;/conf/tf/certs/pub/xppuser1.pem  | Public delivered “user1” certificate  |
-| &lt;CFTDIRRUNTIME&gt;/conf/tf/certs/pub/xppuser2.pem  | Public delivered “user2” certificate  |
+| &lt;CFTDIRRUNTIME&gt;/conf/tf/certs/pub/xppuser1.pem  | Publicqqqdoublespaceqqqdelivered “user1” certificate  |
+| &lt;CFTDIRRUNTIME&gt;/conf/tf/certs/pub/xppuser2.pem  | Publicqqqdoublespaceqqqdelivered “user2” certificate  |
 
 
 
@@ -4260,7 +8735,7 @@
 
 | Table  | Description  |
 | --- | --- |
-| &lt;CFTDIRINSTALL&gt;/distrib/tf/tables/iso_atoe.tbl  | Converts Latin ASCII to French EBCDIC  |
+| &lt;CFTDIRINSTALL&gt;/distrib/tf/tables/iso_atoe.tbl  | Convertsqqqdoublespaceqqq Latin ASCII to French EBCDIC  |
 | &lt;CFTDIRINSTALL&gt;/distrib/tf/tables/iso_etoa.tbl  | Converts French EBCDIC to Latin ASCII  |
 | &lt;CFTDIRINSTALL&gt;/distrib/tf/tables/std_atoe.tbl  | Converts IBM-PC850 to French EBCDIC  |
 | &lt;CFTDIRINSTALL&gt;/distrib/tf/tables/std_etoa.tbl  | Converts French EBCDIC to IBM-PC850  |
@@ -4322,8 +8797,8 @@
 |  secure_relay.ma.start_timeout  |  Int  |  30 sec  | Amount of time, in seconds, in which Secure Relay can start before a timeout.  |
 |  secure_relay.ma.start_options  |  String  |  -Xmx512m -Xrs  | Secure Relay Master Agent start options.  |
 |  secure_relay.ma.conf_fname  |  String  |  $(cft.runtime.run_dir)XsrConf.xml  | Secure Relay Master Agent configuration file.  |
-|  secure_relay.ma. ca_cert_fname  |  String  |   |  Secure Relay certificate authority.<br/>This is a mandatory field, however certificates are not delivered with Transfer CFT.  |
-|  secure_relay.ma.cert_fname  |  String  |   |  Secure Relay Master Agent user certificate.<br/>This is a mandatory field, however certificates are not delivered with Transfer CFT.  |
+|  secure_relay.ma. ca_cert_fname  |  String  |   |  Secure Relay certificate authority.<br/>This is a mandatory field, howeverqqqdoublespaceqqqcertificates are not delivered with Transfer CFT.  |
+|  secure_relay.ma.cert_fname  |  String  |   |  Secure Relay Master Agent user certificate.<br/>This is a mandatory field, howeverqqqdoublespaceqqqcertificates are not delivered with Transfer CFT.  |
 |  secure_relay.ma.cert_password_fname  |  String  |  $(cft.runtime.run_dir)/XsrPwd.dat  | Secure Relay Master Agent certificate password file.  |
 |  secure_relay.ma.cert_password  |  String  |  test  | Secure Relay Master Agent certificate password.  |
 |  secure_relay.ma.host  |  String  |  127.0.0.1  | Secure Relay Master Agent listening IP address or FQDN.  |
@@ -4344,7 +8819,7 @@
 |  secure_relay.ra.N.dmz  |  String  |  DMZ0  | Logical name of the DMZ where the Router Agent is running, with a maximum of 32 characters.  |
 |  secure_relay.ra.N.host  |  String  |  None  |  Router Agent IP address or FQDN.  |
 |  secure_relay.ra.N.admin_port  |  Int  |  6810  |  Router Agent administration port.  |
-|  secure_relay.ra.N.comm_port  |  Int  |  6811  |  Router Agent communication port. This parameter is specific to each {{&lt; TransferCFT/componentshortname &gt;}} using the Router Agent. If more than one {{&lt; TransferCFT/componentshortname &gt;}} uses the same Router Agent, each {{&lt; TransferCFT/componentshortname &gt;}} must have a unique value.  |
+|  secure_relay.ra.N.comm_port  |  Int  |  6811  |  Router Agent communication port. This parameter is specific to each {{&lt; TransferCFT/componentshortname &gt;}} using theqqqdoublespaceqqqRouter Agent. If more than one {{&lt; TransferCFT/componentshortname &gt;}} uses the same Router Agent, each {{&lt; TransferCFT/componentshortname &gt;}} must have a unique value.  |
 |  secure_relay.ra.N. nb_data_connections  |  Int  |  5  | Number of data connections between the Master Agent and the Router Agent.  |
 |  secure_relay.ra.N. data_channel_ciphering  |  Bool  |  No  |  Activates data connections ciphering.  |
 |  secure_relay.ra.N. outcall_network_interface  |  String  |  None  |  Address to bind for outgoing calls.  |
@@ -4366,9 +8841,9 @@
 
 | Authentication method  | copilot.restapi.authentication_method  | Details  |
 | --- | --- | --- |
-| Operating System  | system  |  The user/password is checked against the operating system. <blockquote> **Note:**<br/>We strongly recommend that you set copilot.misc.createprocessasuser=yes when using the system option. </blockquote> **Unix**<br/>You must use <code>cftsu </code>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to <a href="" class="MCXref xref">Using system users - UNIX</a> for details.<br/> • Create a group "group1":<br/> • Add user "user1" to group "group1":<br/>**Windows**<br/>You require a superuser (administrative user account) to create a group and assign a user to a group.<br/> • Create a group "group1":<br/> • Add user "user1" to group "group1":</li> <blockquote> **Note:**<br/>For a user belonging to a domain, use: domain\user1 instead of user1 </blockquote>  |
+| Operating System  | system  |  The user/password isqqqdoublespaceqqqchecked against the operating system. <blockquote> **Note**<br/>We strongly recommend that you set copilot.misc.createprocessasuser=yes when using the system option. </blockquote> **Unix**<br/>You must use <code>cftsu </code>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer toqqqdoublespaceqqq<a href="" >Using system users - UNIX</a> for details.<br/> • Create a group "group1":<br/> • Add user "user1" to group "group1":<br/>**Windows**<br/>You require a superuser (administrative user account) to create a group and assign a user to a group.<br/> • Create a group "group1":<br/> • Add user "user1" to group "group1":</li> <blockquote> **Note**<br/>For a user belonging to a domain, use: domain\user1 instead of user1 </blockquote>  |
 | Access Management  | am  |  This methods uses an indirection towards the Access Management system. The user/password is checked by the configured access management system: {{&lt; TransferCFT/flowmanager &gt;}}, PassPort AM, or internal AM.  |
-|  xfbadm database <br/>(UNIX and HP NonStop exclusively)  | xfbadm  |  The user/password is checked using the xfbadm base (see the <a href="../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).<br/>A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <code>profile </code>from the runtime directory. <ol> <li>Create a group "group1" with gid=200:<br/> • From the user prompt, to add a user "user1" to group "group1"enter:</li> </ol>  |
+|  xfbadm databaseqqqdoublespaceqqq<br/>(UNIX and HP NonStop exclusively)  | xfbadm  |  The user/password is checked using the xfbadm base (see the <a href="../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).<br/>A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <code>profile </code>from the runtime directory. <ol> <li>Create a group "group1" with gid=200:<br/> • From the user prompt, to add a user "user1" to group "group1"enter:</li> </ol>  |
 
 
 
@@ -4455,8 +8930,8 @@
 
 | AM Parameters  | Default  | Description  |
 | --- | --- | --- |
-| am.internal.group_database  |  file (z/OS)<br/>system (all other platforms)  |  Group database where group members are defined.<br/> • system (UNIX, Windows, and IBM i): the groups are defined in the OS group database (Unix, Windows, IBM i - see <a href="../../cft_intro_install/about_this_document_ibmi/install_intro_ibmi/access-managment_ibmi">security base</a>)<br/> • system (z/OS only): the service 'IRRSEQ00' is used to recall the user's groups from RACF, for example: <li> USER001 ADMIN OPERATOR PARTNER DESIGNER TRANSFER <br/> • USER002 DESIGNER </li> <br/> • safClass (z/OS only): the resources are defined in the SAF (System Authorization Facility) where Transfer CFT maps the groups to resources - see the *<a href="../../cft_intro_install/about_this_document_zos">*Transfer CFT z/OS Installation and Operation Guide*</a>* for details <br/> • file (z/OS): a variable file containing a users list and a groups list<br/> • xfbadm (UNIX, HP NonStop): the groups are defined in the xfbadm database; see Transfer CFT control utilities</li>  |
-| am.internal.group_database.fname  |   |  If you set am.internal.group_database=file, you must define this file name, which is a variable file containing the groups associated with each user.<br/>For example:<br/> • USER001 group01 group02 group04<br/> • USER002 group04 group05<br/>Where the groups are mapped as shown in the example <a href="#Mapping">mapping</a> table below.  |
+| am.internal.group_database  |  file (z/OS)<br/>system (all other platforms)  |  Group database where group members are defined.<br/> • systemqqqdoublespaceqqq(UNIX,qqqdoublespaceqqqWindows, and IBM i): the groups are defined in the OS group database (Unix, Windows, IBM i - see <a href="../../cft_intro_install/about_this_document_ibmi/install_intro_ibmi/access-managment_ibmi">security base</a>)<br/> • system (z/OS only): the service 'IRRSEQ00' is used to recall the user's groups from RACF, for example: <li> USER001qqqdoublespaceqqqADMIN OPERATOR PARTNER DESIGNER TRANSFER <br/> • USER002qqqdoublespaceqqqDESIGNER </li> <br/> • safClass (z/OS only): the resources are defined in the SAF (System Authorization Facility) where Transfer CFT maps the groupsqqqdoublespaceqqqto resources - see the *<a href="../../cft_intro_install/about_this_document_zos">*Transfer CFT z/OS Installation and Operation Guide*</a>* for details <br/> • file (z/OS): a variable file containing a users list and a groups list<br/> • xfbadm (UNIX, HP NonStop): the groups are defined in the xfbadm database; seeqqqdoublespaceqqqTransfer CFT control utilities</li>  |
+| am.internal.group_database.fname  |   |  If you set am.internal.group_database=file, you must define this file name, which is a variable file containing the groups associated with each user.<br/>For example:<br/> • USER001qqqdoublespaceqqqgroup01 group02 group04<br/> • USER002qqqdoublespaceqqqgroup04 group05<br/>Where the groups are mapped as shown in the example <a href="#Mapping">mapping</a> table below.  |
 | am.internal.role.admin  |   |  Admin role and groups mapping. This role enables you to perform all administrative tasks.<br/> • List of groups (blank separator)</li>  |
 | am.internal.role.helpdesk  |   |  Help Desk role and groups mapping. This role enables you to view the log, transfers and configuration.<br/> • List of groups (blank separator)</li>  |
 | am.internal.role.partnermanager  |   |  Partner Manager role and groups mapping. This role enables you to create and manage partner.<br/> • List of groups (blank separator)</li>  |
@@ -4497,13 +8972,13 @@
 
 <colgroup>  | Parameter  | Description  |
  --- | --- | --- |
-| <div class="indentTable"> am.passport.hostname </div>  | <div class="indentTable"> PassPort AM server hostname/IP address. </div>  |
-| <div class="indentTable"> am.passport.port </div>  | <div class="indentTable"> PassPort AM server port. </div>  |
-| am.passport.srchost  |  The PassPort AM local network interface for outgoing connections.  |
-| <div class="indentTable"> am.passport.instance_id </div>  |  Transfer CFT instance ID for PassPort AM <br/> • You must determine your Transfer CFT's PassPort instance name. If it does not match the instance name of **default**, you must add an instance with the correct name.<br/> • The passport.instance_id corresponds to the instance (An instance name is a unique identifier of the installed instance of the component. Check that PassPort and your Transfer CFT have the SAME instance name) of the CSD that is available in PassPort.<br/> • In PassPort, you can view this by selecting **Access** &gt; **Components** &gt; **Transfer CFT** and checking the screen display (default value: default (when you import a component, PassPort assigns it the instance name **default** )).</li>  |
-| <div class="indentTable"> am.passport.login </div>  | <div class="indentTable"> Transfer CFT login for PassPort AM. This user must exist in PassPort and have an Administrator role. This user represents an application user with which Transfer CFT makes requests. </div>  |
-| <div class="indentTable"> am.passport.password </div>  | <div class="indentTable"> Transfer CFT Instance ID Password for PassPort AM, see above. </div>  |
-| <div class="indentTable"> am.passport.superuser </div>  |  Enables users to perform any type of action without PassPort AM permission checks.<br/>You *must* set up at least one superuser. Doing so enables you to deactivate or change the PassPort AM connector configuration if the server is not responding.<br/>If the user's name for a session contains a space in the name, you must insert the backslash **\** character where the space occurs.<br/>Example<br/>If you are defining the users "firstname lastname" and "johndoe" as superusers, you would set the am.passport.superuser parameter value to "firstname**\** lastname johndoe".<br/>So for this example, the command is:<br/>CFTUTIL uconfset id = am.passport.superuser, value = "'firstname\ lastname johndoe'"  |
+| <div > am.passport.hostname </div>  | <div > PassPort AM server hostname/IP address. </div>  |
+| <div > am.passport.port </div>  | <div > PassPort AM server port. </div>  |
+| am.passport.srchost  |  The PassPort AM local network interface for outgoingqqqdoublespaceqqqconnections.  |
+| <div > am.passport.instance_id </div>  |  Transfer CFT instance ID for PassPort AM <br/> • You must determine your Transfer CFT's PassPort instance name. If it does not match the instance name of **default**, you must add an instance with the correct name.<br/> • The passport.instance_id corresponds to the instance (An instance name is a unique identifier of the installed instance of the component. Check that PassPort and your Transfer CFT have the SAME instance name) of the CSD that is available in PassPort.<br/> • In PassPort, you can view this by selectingqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq**Access** &gt; **Components** &gt; **Transfer CFT** and checking the screen display (default value: default (when you import a component, PassPort assigns it the instance nameqqqdoublespaceqqq**default** )).</li>  |
+| <div > am.passport.login </div>  | <div > Transfer CFT login for PassPort AM. This user must exist in PassPort and have an Administrator role. This user represents an application user with which Transfer CFT makes requests. </div>  |
+| <div > am.passport.password </div>  | <div > Transfer CFT Instance ID Password for PassPort AM, see above. </div>  |
+| <div > am.passport.superuser </div>  |  Enables users to perform any type of action without PassPort AM permission checks.<br/>You *must* set up at least one superuser. Doing so enables you to deactivate or change the PassPort AM connector configuration if the server is not responding.<br/>If theqqqdoublespaceqqquser's name for a session contains a space in the name, you mustqqqdoublespaceqqqinsert the backslash **\** character where the space occurs.<br/>Example<br/>If you are defining the users "firstname lastname" and "johndoe" as superusers, you would set the am.passport.superuser parameter value to "firstname**\** lastname johndoe".<br/>So for this example, the command is:<br/>CFTUTIL uconfset id = am.passport.superuser, value = "'firstname\ lastname johndoe'"  |
 | am.passport.use_ssl  |  Enables SSL with PassPort AM.<br/>The server port is *not* the same as the default port when using SSL.  |
 | am.passport.ca_cert  | Certification Authority (CA) public certificate to authenticate the PassPort AM server.  |
 | am.passport.csd_file  | Transfer CFT Component Security descriptor file for PassPort AM. The default value is $(cft.install_dir)/extras/PassPort/csd_Transfer_CFT.xml.  |
@@ -4515,7 +8990,7 @@
 
 | Parameter  | Definition  |
 | --- | --- |
-| am.passport.userctrl.check_permissions_on_transfer_execution  |  <span id="Check"></span>Check the permissions for the execute action on the transfer resource when the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> user control is enabled (<a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/userctrl">USERCTRL</a>=YES). To disable the permission check, set the following parameter to No. The default is Yes.  |
+| am.passport.userctrl.check_permissions_on_transfer_execution  |  <span id="Check"></span>Check the permissions for the execute action on the transfer resource when theqqqdoublespaceqqq<span >Transfer CFT</span> user control is enabled (<a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/userctrl">USERCTRL</a>=YES). To disable the permission check, set the following parameter to No. The default is Yes.  |
 | am.passport.domain  | PassPort AM domain.  |
 | am.passport.max_connections  | Maximum number of connections with PassPort.  |
 | am.passport.pipe_priority  | Pipelining priority mode.  |
@@ -4556,7 +9031,7 @@
 
 | Sample  | Authentication  | Permissions checking  |
 | --- | --- | --- |
-| examsmp1.c  | System authentication ()  | Flat file based on flat <a href="" class="MCTextPopup popup popupHead">RBAC</a> model  |
+| examsmp1.c  | System authentication ()  | Flat file based on flat <a href="" >RBAC</a> model  |
 
 
 
@@ -4569,7 +9044,7 @@
 | &lt;role&gt;  | The role for which the permission must be assigned  |
 | &lt;resource&gt;  | Name of the resource  |
 | &lt;actions&gt;  | List of actions with each action separated by a comma  |
-| &lt;policy&gt;  | ACCEPT: accept the actions on the resource<br /> REFUSE: refuse the actions on the resource  |
+| &lt;policy&gt;  | ACCEPT: accept the actions on the resource<br /> qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqREFUSE: refuse the actions on the resource  |
 
 
 
@@ -4617,18 +9092,33 @@
 |  Unix  | NO  |
 |  Windows  | YES  |
 | IBM i  | YES  |
-|  z/OS  |  This functionality was modified in Transfer CFT 3.2.4 SP1:<br/> • Post-SP1: The default value for <code>createprocessasuser </code>is YES.<br/> • Pre-SP1: There is no definable value. The equivalent of <code>createprocessasuser </code>depends on the use of APF. If JOBLIB is not defined as an APF, it is the equivalent of NO. If defined, this is the equivalent of YES.</li>  |
+| qqqdoublespaceqqqz/OS  |  This functionality was modified in Transfer CFT 3.2.4 SP1:<br/> • Post-SP1: The default value for <code>createprocessasuser </code>is YES.<br/> • Pre-SP1: There is no definable value. The equivalent of <code>createprocessasuser </code>depends on the use of APF. If JOBLIB is not defined as an APF, it is the equivalent of NO. If defined, this is the equivalent of YES.</li>  |
 
 
 
-============================== table nb count(344) table converted to MD ========================================
+============================== table nb count(344) table stayed in HTML ========================================
 
-
-|  Operating<br/>System  |  USERCTRL  |  Description  |
-| --- | --- | --- |
-| ALL OS  | NO  | The Transfer CFT user, that is, the account that started {{&lt; TransferCFT/componentlongname &gt;}}, performs all file actions. Default value.  |
-| YES  | The USERID performs all file actions.  |
-
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th ><p>Operating</p>
+<p>System</p></th>
+<th  ><p>USERCTRL</p></th>
+<th ><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td rowspan="2" >ALL OS</td>
+<td  >NO</td>
+<td >The Transfer CFT user, that is, the account that started {{&lt; TransferCFT/componentlongname &gt;}}, performs all file actions. Default value.</td>
+</tr>
+<tr >
+<td  >YES</td>
+<td >The USERID performs all file actions.</td>
+</tr>
+</tbody>
+</table>
 
 
 ============================== table nb count(345) table converted to MD ========================================
@@ -4637,7 +9127,7 @@
 | User type  | CG role(s)  | Machine1 user  | File access  |
 | --- | --- | --- | --- |
 |  Monitoring Assistant  |  Help Desk<br/>for Transfer CFT  | Not defined  | N/A  |
-| Operator  | IT Manager for CG  | Defined  |  All permissions on runtime files, but does not have access to other user's working directories  |
+| Operator  | IT Manager for CG  | Defined  |  All permissions on runtime files,qqqdoublespaceqqqbut does not have access to other user's working directories  |
 | Partner Manager  | CG Admin  | Not defined  | No privileges on the physical files  |
 | Flow Manager  |  Middleware<br/>Manager for CG, and Application for Transfer CFT  | Defined  | Rights on Machine1, and his own working directory  |
 | Superuser  | N/A  | Defined  | Rights on all runtime files on Machine1, but no rights on user's working directories  |
@@ -4647,7 +9137,7 @@
 ============================== table nb count(346) table converted to MD ========================================
 
 
-| Feature  |  Manage using {{&lt; TransferCFT/flowmanager &gt;}} or  | Supported but not configurable using Central Governance or {{&lt; TransferCFT/flowmanager &gt;}}  |
+| Feature  |  Manage usingqqqdoublespaceqqq{{&lt; TransferCFT/flowmanager &gt;}} or  | Supported butqqqdoublespaceqqqnot configurable using Central Governanceqqqdoublespaceqqqor {{&lt; TransferCFT/flowmanager &gt;}}  |
 | --- | --- | --- |
 | Folder monitoring  | yes  | yes  |
 | Multi-node architecture  | no  | yes  |
@@ -4659,14 +9149,14 @@
 | UDT (UNIX/Windows only)  | yes  | yes  |
 | SOCKS  | no  | yes  |
 | Heartbeat  | embedded  | yes  |
-| Interoperability &lt;/th&gt;  |   |   |
+| Interoperability qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  |   |   |
 | Secure Relay  | no  | yes  |
 | TrustedFile (UNIX/Windows/and z/OS)  | no  |  yes  |
 | PassPort AM  | embedded  | no (*)  |
 | PassPort PS  | no  | yes  |
 | Sentinel  | embedded  | yes  |
 | Composer  | no  | no  |
-| Protocols &lt;/th&gt;  |   |   |
+| Protocols qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  |   |   |
 | PeSIT  | yes  | yes  |
 | ODETTE  | no  | yes  |
 | SFTP *(UNIX, Windows)*  | no  | yes  |
@@ -4678,7 +9168,7 @@
 
 | Parameter  | Value  |
 | --- | --- |
-| am.passport.cg.organization  |  Org <blockquote> **Note:**<br/>You must restart both Transfer CFT and Copilot following a change to this parameter. </blockquote>  |
+| am.passport.cg.organization  |  Org <blockquote> **Note**<br/>You must restart both Transfer CFT and Copilot following a change to this parameter. </blockquote>  |
 | am.passport.domain  |  CG  |
 | am.passport.hostname  | &lt; host name &gt;  |
 | am.passport.instance_id  | $(cft.instance_group).$(cft.instance_id)  |
@@ -4702,7 +9192,7 @@
 | cft.server.bandwitdth.enable  | No  |
 | cg.mutual_auth_port  | &lt;secured communications port&gt;  |
 | copilot.misc.createprocessasuser  | No  |
-| pki.type  |  cft <blockquote> **Note:**<br/>Except when using a SAF-based PKI Transfer CFT, in which case system is the value. </blockquote>  |
+| pki.type  |  cft <blockquote> **Note**<br/>Except when using a SAF-based PKI Transfer CFT, in which case system is the value. </blockquote>  |
 | sentinel.trkipaddr  | &lt;Sentinel – Front-end host &gt;  |
 | sentinel.trkipport  | &lt;Sentinel - Font-end port&gt;  |
 | sentinel.xfb.enable  | Yes  |
@@ -4717,26 +9207,26 @@
 | --- | --- | --- | --- |
 |  same as in UCONF<br/>&lt;folder_monitoring.enable&gt;  | Boolean  | No  |  <li>No: No folder monitoring occurs.<br/> • Yes: Enable {{&lt; TransferCFT/componentshortname &gt;}} folder monitoring.</li>  |
 |  ID<br/>**Mandatory**  | node  | None  |  Add the logical folders to monitor (list of logical identifiers).<br/>You should provide a unique name to identify the set of configuration parameters corresponding to this directory. If you have more than one Folder to monitor, use a space between each logical value.  |
-| STATE  | Boolean  | Active  |  Enables a scan of the folder. <blockquote> **Note:**<br/>NO = NOACTIVE. </blockquote>  |
+| STATE  | Boolean  | Active  |  Enables a scan of the folder. <blockquote> **Note**<br/>NO = NOACTIVE. </blockquote>  |
 |  SCANDIR *Mandatory*  | string  | None  |  Absolute path name of the top level directory to scan.<br/>This directory must exist before restarting Transfer CFT.<br/>*See <a href="#char_note">NOTE</a>.  |
-|  WORKDIR *Mandatory*  | string  | None  |  Absolute path name of the top level directory available for file state information.<br/> • If you are using the MOVE method, files that are ready to be submitted are available in the work_dir.<br/> • If you are using the FILE method, the .met files are stored in the work_dir.</li> <blockquote> **Note:**<br/>Caution Never delete any .met files. </blockquote> *See <a href="#char_note">NOTE</a>.  |
+|  WORKDIR *Mandatory*  | string  | None  |  Absolute path name of the top level directory available for file state information.<br/> • If you are using the MOVE method, files that are ready to be submitted are available in the work_dir.<br/> • If you are using the FILE method, the .met files are stored in the work_dir.</li> <blockquote> **Note**<br/>Caution Never delete any .met files. </blockquote> *See <a href="#char_note">NOTE</a>.  |
 | ENABLESUBDIR  | Boolean  | Yes  |  Values:<br/> • Yes: The entire scan_dir sub-directory tree is monitored.<br/> • No: No scan is performed.</li>  |
-| <span id="METHOD"></span>METHOD  | enum  | MOVE  |  Values:<br/> • MOVE: Files are moved to the work_dir prior to being submitted.<br/> • FILE: Files are left in the scan_dir, and a state file with the same name is created in work_dir prior to submitting the file.</li> <blockquote> **Note:**<br/>Before changing the method from FILE to MOVE, you should remove all files (metadata .met files) located in the associated working directory. </blockquote> <blockquote> **Note:**<br/>Changing the method from MOVE to FILE, deletes all files located in the associated working directory. Therefore, we recommend removing all files from the scan and working directory before changing the METHOD type. </blockquote> Please see the <a href="../#Limitati">Limitations</a> for multi-host system recommendations.  |
+| <span id="METHOD"></span>METHOD  | enum  | MOVE  |  Values:<br/> • MOVE: Files are moved to the work_dir prior to being submitted.<br/> • FILE: Files are left in the scan_dir, and a state file with the same name is created in work_dir prior to submitting the file.</li> <blockquote> **Note**<br/>Before changing the method from FILE to MOVE, you should remove all files (metadata .met files) located in the associated working directory. </blockquote> <blockquote> **Note**<br/>Changing the method from MOVE to FILE, deletes all files located in the associated working directory. Therefore, we recommend removing all files from the scan and working directory before changing the METHOD type. </blockquote> Please see the <a href="../#Limitati">Limitations</a> for multi-host system recommendations.  |
 | ARCHIVEDIR  | String  |   | Archive directory where a source file is moved to after a successful transfer. This means the source file is moved from the WORKDIR for METHOD=MOVE or SCANDIR for METHOD=FILE to the ARCHIVEDIR.  |
 | FILEIDLEDELAY  | integer  | 5  | If the state of a file has not changed within this delay in seconds, the file becomes a candidate for submission.  |
 | GROUPID  | String  |   | Complementary information for the USERID. Maximum length 32 characters.  |
-|  IDF<br/>*Mandatory*  | string  | ""  |  The IDF name to use in the SEND command. Use one of the following:<br/> • A fixed name.<br/> • "(0)": The name of the first directory sub-level is used.<br/> • "(1)": The name of the second directory sub-level is used.</li> <blockquote> **Note:**<br/>In the Directory C example/home/CFT/fr/dir_c/scan/newyork/idf1, the (0) represents newyork, and (1) represents idf1. </blockquote>  |
-|  PART *Mandatory*  | string  | ""  |  The PART name to use in the SEND command. Use one of the following:<br/> • A fixed name.<br/> • "(0)": The name of the first directory sub-level is used.<br/> • "(1)": The name of the second directory sub-level is used.</li> <blockquote> **Note:**<br/>In the Directory C example/home/CFT/fr/dir_c/scan/newyork/idf1, the (0) represents newyork, and (1) represents idf1. </blockquote>  |
+|  IDF<br/>*Mandatory*  | string  | ""  |  The IDFqqqdoublespaceqqqname to use in the SEND command. Use one of the following:<br/> • A fixed name.<br/> • "(0)":qqqdoublespaceqqqThe name of the first directory sub-level is used.<br/> • "(1)": The name of the second directory sub-level is used.</li> <blockquote> **Note**<br/>In the Directory C example/home/CFT/fr/dir_c/scan/newyork/idf1, the (0) represents newyork, and (1) represents idf1. </blockquote>  |
+|  PART *Mandatory*  | string  | ""  |  The PART name to use in the SEND command. Use one of the following:<br/> • A fixed name.<br/> • "(0)": The name of the first directory sub-level is used.<br/> • "(1)": The name of the second directory sub-level is used.</li> <blockquote> **Note**<br/>In the Directory C example/home/CFT/fr/dir_c/scan/newyork/idf1, the (0) represents newyork, and (1) represents idf1. </blockquote>  |
 | INTERVAL  | int  | 60  | The interval between two scans of the directory files in seconds.  |
 | FILECOUNT  | int  | 0  |  Maximum number of file submissions for each scan. Using the default value indicates that there is no maximum.  |
 | FILESIZEMIN  | int  | 0  |  Files shorter than this value, in bytes, are not candidates for submission. Using the default value indicates that there is no lower limit on the file size.  |
 | FILESIZEMAX  | int  | 0  |  Files larger than this value, in bytes, are not candidates for submission. Using the default value indicates that there is no upper limit on the file size.  |
 | INCLUDEFILTER  | string  | ""  | If this parameter is defined, only files whose names match this pattern are monitored.  |
 | EXCLUDEFILTER  | string  | ""  | If this parameter is defined, files whose names match this pattern are not monitored.  |
-| RESUBMITCHANGED  | Boolean  | Yes  |  This parameter has no effect when the configured method is MOVE.<br/>When the method parameter value is set to FILE:<br/> • Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.<br/> • No: Files are not resubmitted, regardless of changes.</li> <blockquote> **Note:**<br/>The file is resubmitted after any change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name. </blockquote>  |
-| FILTERTYPE  | enum  | WILDMAT  |  Defines the pattern matching algorithm to use for file name filtering.<br/>Values:<br/> • STRJCMP: The Transfer CFT pattern matching algorithm. <br/> • WILDMAT: A well known public domain algorithm, and is the default. **Unix/Windows only**<br/> • EREGEX: Extended regular expression syntax.<br/>See <a href="../folder_customize#Defining">Create inclusion and exclusion filters</a> for details.  |
-| RENAMEMETHOD  | Enum  | TIMESTAMP  |  This parameter applies only to the MOVE method. When set to TIMESTAMP, a timestamp of the pattern YYYYMMDDHHMMSS is added at the end of the name of the renamed file but before the last '.'. For example, using timestamp_separators=".": <li>myfile is renamed myfile.20131025<br/> • myfile.txt is renamed myfile.20131025.txt</li> <blockquote> **Note:**<br/>Unset the default value and use " " to MOVE without adding a timestamp. </blockquote>  |
-| RENAMESEPARATOR  | string  |  "."  |  This parameter only applies to the MOVE method. You can use no more than two characters from among the following: .[]()_- The first character defines the separator before the timestamp. The second one, when present, defines the separator after the timestamp. For example, using timestamp_separators "[]": - myfile is renamed myfile.[20131025] - myfile.txt is renamed myfile.[20131025].txt  |
+| RESUBMITCHANGED  | Boolean  | Yes  |  This parameterqqqdoublespaceqqqhas no effect when the configured method is MOVE.<br/>When the method parameter value is set to FILE:<br/> • Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.<br/> • No: Files are not resubmitted, regardless of changes.</li> <blockquote> **Note**<br/>The file is resubmitted after any change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name. </blockquote>  |
+| FILTERTYPE  | enum  | WILDMAT  |  Defines the pattern matching algorithm to use for file name filtering.<br/>Values:<br/> • STRJCMP: The Transfer CFT pattern matching algorithm. qqqdoublespaceqqq<br/> • WILDMAT: A well known public domain algorithm, and is the default. **Unix/Windows only**<br/> • EREGEX: Extended regular expression syntax.<br/>Seeqqqdoublespaceqqq<a href="../folder_customize#Defining">Create inclusion and exclusion filters</a> for details.  |
+| RENAMEMETHOD  | Enum  | TIMESTAMP  |  This parameter applies only to the MOVE method. When set to TIMESTAMP, a timestamp of the pattern YYYYMMDDHHMMSS is added at the end of the name of the renamed file but before the last '.'. For example, using timestamp_separators=".": <li>myfileqqqdoublespaceqqqqqqdoublespaceqqq is renamed myfile.20131025<br/> • myfile.txt is renamed myfile.20131025.txt</li> <blockquote> **Note**<br/>Unset the default value and use " " to MOVE without adding a timestamp. </blockquote>  |
+| RENAMESEPARATOR  | string  |  "."  |  This parameter only applies to the MOVE method. You can use no more than two characters from among the following: .[]()_- The first character defines the separator before the timestamp. The second one, when present, defines the separator after the timestamp. For example, using timestamp_separators "[]": - myfileqqqdoublespaceqqqqqqdoublespaceqqq is renamed myfile.[20131025] - myfile.txt is renamed myfile.[20131025].txt  |
 | N/A in this version  | string  |   | Metadata used to control user changes.  |
 |  USEFSEVENTS <a href="../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftfolder#Enable">More information</a>  | Boolean  | No  | Set to YES to enable the file system events monitoring service to detect newly available files.  |
 | <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/userid">USERID</a>  | String  |   |  *Available on UNIX and* ** Identifier for a user who can scan a folder. See the section, <a href="#Folder2">Folder monitoring using USERCTRL</a>.  |
@@ -4749,7 +9239,7 @@
 | Character  | Description  | Example  |
 | --- | --- | --- |
 | *  | Indicates any sequence of zero or more characters.  | The filter "*.dat" selects any file name that has the extension ".dat".  |
-| ?  | Indicates any single character.  | The filter "T*.???" selects any file name starting with a 'T' and having an extension of exactly three characters.  |
+| ?  | Indicates any single character.  | The filter "T*.???"qqqdoublespaceqqqselects any file name starting with a 'T' and having an extension of exactly three characters.  |
 
 
 
@@ -4759,12 +9249,12 @@
 | Character  | Description  | Example  |
 | --- | --- | --- |
 | *  | Indicates any sequence of zero or more characters.  | The filter "*.dat" selects any file name that has the extension ".dat".  |
-| ?  | Indicates any single character.  | The filter "T*.???" selects any file name starting with a 'T' and having an extension of exactly three characters.  |
-| \x  | Indicates that when x is a special character, x is interpreted as a normal character.  | This is generally used to invalidate the meaning of the * and ? characters.  |
-| [x...y]  | Indicates a single character set defined by "x...y".  |  The filter [0-9] <br/>indicates any decimal digit.  |
+| ?  | Indicates any single character.  | The filter "T*.???"qqqdoublespaceqqqselects any file name starting with a 'T' and having an extension of exactly three characters.  |
+| \x  | Indicates that when x is a special character,qqqdoublespaceqqqx is interpreted as a normal character.  | This is generally used to invalidate the meaning of the * and ? characters.  |
+| [x...y]  | Indicates a single character set defined by "x...y".  |  The filter [0-9]qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq<br/>indicates any decimal digit.  |
 | -  |  Indicates a range of characters. However, the minus character (or hyphen) has no special meaning if it is either the first or the last character in the set.  | The filter [0-9a-zA-Z] indicates any alphanumeric character (in English).  |
 | ]  | Has no special meaning if it is the first character in the set.  |   |
-| [^x...y]  | Indicates any character other than those specified in the set "x...y".  |  The filter [^0-9] <br/>indicates any character that is not a decimal digit.<br/>The filter [^]-] indicates any character other than a closed bracket or minus sign.  |
+| [^x...y]  | Indicates any character other than those specified in the set "x...y".  |  The filter [^0-9]qqqdoublespaceqqq<br/>indicates any character that is not a decimal digit.<br/>The filter [^]-]qqqdoublespaceqqq indicates any character other than a closed bracket or minus sign.  |
 | *.[tT][xX][tT]  | Indicates any string terminated by .TXT regardless of the case.  |   |
 
 
@@ -4811,11 +9301,11 @@
 | ID  | folder_monitoring.folders  | node  | None  | None  |  Add the logical folders to monitor (list of logical identifiers).<br/>You should provide a unique name to identify the set of configuration parameters corresponding to this directory. If you have more than one Folder to monitor, use a space between each logical value.<br/>See the **Comment***** below this table for additional information.  |
 | STATE  |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.enable  | Boolean  | Yes  | Active  |  Enables a scan of the folder.<br/>Note: NO = NOACTIVE.  |
 | SCANDIR  |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.scan_dir  | string  | None  | None  |  Absolute path name of the top level directory to scan.<br/>This directory must exist before restarting Transfer CFT.<br/>*See NOTE.  |
-| WORKDIR  |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.work_dir  | string  | None  | None  |  Absolute path name of the top level directory available for file state information. Do not use the same name as you are using for the corresponding SCANDIR.<br/> • If you are using the MOVE method, files that are ready to be submitted are available in the work_dir.<br/> • If you are using the FILE method, the .met files are stored in the work_dir.</li> <blockquote> **Note:**<br/>Caution Never delete any .met files. </blockquote> *See NOTE.  |
+| WORKDIR  |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.work_dir  | string  | None  | None  |  Absolute path name of the top level directory available for file state information. Do not use the same name as you are using for the corresponding SCANDIR.<br/> • If you are using the MOVE method, files that are ready to be submitted are available in the work_dir.<br/> • If you are using the FILE method, the .met files are stored in the work_dir.</li> <blockquote> **Note**<br/>Caution Never delete any .met files. </blockquote> *See NOTE.  |
 | ENABLESUBDIR  |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.enable_subdir  | Boolean  | Yes  | Yes  |  Values:<br/> • Yes: The entire scan_dir sub-directory tree is monitored.<br/> • No: No scan is performed.</li>  |
 | METHOD  |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.method  | enum  | MOVE  | MOVE  |  Values:<br/> • MOVE: Files are moved (by renaming), to the work_dir prior to being submitted.<br/> • FILE: Files are left in the scan_dir, and a state file with the same name is created in work_dir prior to submitting the file.</li>  |
 | FILEIDLEDELAY  |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.file_idle_delay  | integer  | 5  | 5  | If the state of a file has not changed within this delay in seconds, the file becomes a candidate for submission.  |
-| IDF  |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.idf  | string  | ""  | ""  |  The IDF name to use in the SEND command. Use one of the following:<br/> • A fixed name.<br/> • "(0)": The name of the first directory sub-level is used.<br/> • "(1)": The name of the second directory sub-level is used.</li>  |
+| IDF  |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.idf  | string  | ""  | ""  |  The IDFqqqdoublespaceqqqname to use in the SEND command. Use one of the following:<br/> • A fixed name.<br/> • "(0)":qqqdoublespaceqqqThe name of the first directory sub-level is used.<br/> • "(1)": The name of the second directory sub-level is used.</li>  |
 | PART  |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.part  | string  | ""  | ""  |  The PART name to use in the SEND command. Use one of the following:<br/> • A fixed name.<br/> • "(0)": The name of the first directory sub-level is used.<br/> • "(1)": The name of the second directory sub-level is used.</li>  |
 | INTERVAL  |  folder_monitoring.folders. &lt;logical_name&gt;.interval  | int  | 60  | 60  | The interval between two scans of the directory files in seconds.  |
 | FILECOUNT  |  folder_monitoring.folders. &lt;logical_name&gt;.file_count  | int  | -1  | 0  |  Maximum number of file submissions for each scan. Using the default value indicates that there is no maximum.  |
@@ -4823,10 +9313,10 @@
 | FILESIZEMAX  |  folder_monitoring.folders. &lt;logical_name&gt;.file_size_max  | int  | -1  | 0  | Files larger than this value, in bytes, are not candidates for submission. Using the default value indicates that there is no upper limit on the file size.  |
 | INCLUDEFILTER  |  folder_monitoring.folders. &lt;logical_name&gt;.file_include_filter  | string  | ""  | ""  | If this parameter is defined, only files whose names match this pattern are monitored.  |
 | EXCLUDEFILTER  |  folder_monitoring.folders. &lt;logical_name&gt;.file_exclude_filter  | string  | ""  | ""  | If this parameter is defined, files whose names match this pattern are not monitored.  |
-| RESUBMITCHANGED  |  folder_monitoring.folders. &lt;logical_name&gt;.resubmit_changed_file  | Boolean  | Yes  | Yes  |  This parameter has no effect when the configured method is MOVE. When the method parameter value is set to FILE:<br/> • Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.<br/> • No: Files are not resubmitted, regardless of changes.</li> <blockquote> **Note:** The file is resubmitted after any change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name. </blockquote>  |
-| FILTERTYPE  |  folder_monitoring.folders. &lt;logical_name&gt;.filter_type  | enum  | WILDMAT  | WILDMAT  |  Defines the pattern matching algorithm to use for file name filtering. Values: <br/> • STRJCMP: The Transfer CFT pattern matching algorithm. <br/> • WILDMAT: A well known public domain algorithm, and is the default. **Unix/Windows only**<br/>See <a href="#Defining">Create inclusion and exclusion filters</a> for details.  |
-| RENAMEMETHOD  |  folder_monitoring.folders. &lt;logical_name&gt;.renaming_method  | Enum  | TIMESTAMP  | TIMESTAMP  |  This parameter applies only to the MOVE method.<br/> • NONE or " ": The filename is unchanged (no timestamp is added). If the file already exists in the work directory, the MOVE process fails.<br/> • TIMESTAMP, a timestamp of the pattern YYYYMMDDHHMMSS is added at the end of the name of the renamed file but before the last '.'.</li> For example, using timestamp_separators=".": <li>myfile is renamed myfile.20131025<br/> • myfile.txt is renamed myfile.20131025.txt</li>  |
-| RENAMESEPARATOR  |  folder_monitoring.folders. &lt;logical_name&gt;.renaming_separators  | string  |   |   |  This parameter only applies to the MOVE method. It must contain at most 2 characters from among the following: .[]()i_- The first character defines the separator before the timestamp. The second one, when present, defines the separator after the timestamp. For example, using timestamp_separators "[]": - myfile is renamed myfile.[20131025] - myfile.txt is renamed myfile.[20131025].txt  |
+| RESUBMITCHANGED  |  folder_monitoring.folders. &lt;logical_name&gt;.resubmit_changed_file  | Boolean  | Yes  | Yes  |  This parameterqqqdoublespaceqqqhas no effect when the configured method is MOVE. When the method parameter value is set to FILE:<br/> • Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.<br/> • No: Files are not resubmitted, regardless of changes.</li> <blockquote> **Note** The file is resubmitted after any change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name. </blockquote>  |
+| FILTERTYPE  |  folder_monitoring.folders. &lt;logical_name&gt;.filter_type  | enum  | WILDMAT  | WILDMAT  |  Defines the pattern matching algorithm to use for file name filtering. Values: qqqdoublespaceqqq<br/> • STRJCMP: The Transfer CFT pattern matching algorithm. qqqdoublespaceqqq<br/> • WILDMAT: A well known public domain algorithm, and is the default. **Unix/Windows only**<br/>Seeqqqdoublespaceqqq<a href="#Defining">Create inclusion and exclusion filters</a> for details.  |
+| RENAMEMETHOD  |  folder_monitoring.folders. &lt;logical_name&gt;.renaming_method  | Enum  | TIMESTAMP  | TIMESTAMP  |  This parameter applies only to the MOVE method.<br/> • NONE or " ": The filename is unchanged (no timestamp is added).qqqdoublespaceqqq If the file already exists in the work directory, the MOVE process fails.<br/> • TIMESTAMP, a timestamp of the pattern YYYYMMDDHHMMSS is added at the end of the name of the renamed file but before the last '.'.</li> For example, using timestamp_separators=".": <li>myfileqqqdoublespaceqqqqqqdoublespaceqqq is renamed myfile.20131025<br/> • myfile.txt is renamed myfile.20131025.txt</li>  |
+| RENAMESEPARATOR  |  folder_monitoring.folders. &lt;logical_name&gt;.renaming_separators  | string  |   |   |  This parameter only applies to the MOVE method. It must contain at most 2 characters from among the following: .[]()i_- The first character defines the separator before the timestamp. The second one, when present, defines the separator after the timestamp. For example, using timestamp_separators "[]": - myfileqqqdoublespaceqqqqqqdoublespaceqqq is renamed myfile.[20131025] - myfile.txt is renamed myfile.[20131025].txt  |
 | N/A in this version  |  folder_monitoring.folders. &lt;logical_name&gt;.control  | string  |   |   | Metadata used to control user changes.  |
 |  USEFSEVENTS  |  folder_monitoring.folders. &lt;logical_name&gt;. use_file_system_events <a href="../folder_monitor_uconf#File-sys">More information</a>  | Boolean  | No  | No  | Set to YES to enable the file system events monitoring service to detect newly available files.  |
 | USERID  | N/A  | N/A  | N/A  | N/A  | This feature is not available in UCONF folder monitoring.  |
@@ -4842,25 +9332,146 @@
 | folder_monitoring.folders  | node  | None  |  Add the logical folders to monitor (list of logical identifiers).<br/>You should provide a unique name to identify the set of configuration parameters corresponding to this directory. If you have more than one Folder to monitor, use a space between each logical value.<br/>See the **Comment***** below this table for additional information.  |
 |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.enable  | Boolean  | Yes  |  Enables a scan of the folder, where NO deactivates folder monitoring.  |
 |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.scan_dir  | string  | None  |  Absolute path name of the top level directory to scan.<br/>This directory must exist before restarting CFT.<br/>*See NOTE.  |
-|  folder_monitoring.folders.<br/>&lt;logical_name&gt;.work_dir  | string  | None  |  Absolute path name of the top level directory available for file state information.<br/> • If you are using the MOVE method, files that are ready to be submitted are available in the work_dir.<br/> • If you are using the FILE method, the .met files are stored in the work_dir.</li> <blockquote> **Note:**<br/>Caution Never delete any .met files. </blockquote> *See NOTE.  |
+|  folder_monitoring.folders.<br/>&lt;logical_name&gt;.work_dir  | string  | None  |  Absolute path name of the top level directory available for file state information.<br/> • If you are using the MOVE method, files that are ready to be submitted are available in the work_dir.<br/> • If you are using the FILE method, the .met files are stored in the work_dir.</li> <blockquote> **Note**<br/>Caution Never delete any .met files. </blockquote> *See NOTE.  |
 |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.enable_subdir  | Boolean  | Yes  |  Values:<br/> • Yes: The entire scan_dir sub-directory tree is monitored.<br/> • No: No scan is performed.</li>  |
 |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.method  | enum  | MOVE  |  Values:<br/> • MOVE: Files are moved (by renaming), to the work_dir prior to being submitted.<br/> • FILE: Files are left in the scan_dir, and a state file with the same name is created in work_dir prior to submitting the file.<br/>See also <a href="../#Configur2">Configuring file tracking options (MOVE option)</a>.  |
 |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.file_idle_delay  | integer  | 5  | If the state of a file has not changed within this delay in seconds, the file becomes a candidate for submission.  |
-|  folder_monitoring.folders.<br/>&lt;logical_name&gt;.idf  | string  | ""  |  The IDF name to use in the SEND command. Use one of the following:<br/> • A fixed name.<br/> • "(0)": The name of the first directory sub-level is used.<br/> • "(1)": The name of the second directory sub-level is used.</li>  |
+|  folder_monitoring.folders.<br/>&lt;logical_name&gt;.idf  | string  | ""  |  The IDFqqqdoublespaceqqqname to use in the SEND command. Use one of the following:<br/> • A fixed name.<br/> • "(0)":qqqdoublespaceqqqThe name of the first directory sub-level is used.<br/> • "(1)": The name of the second directory sub-level is used.</li>  |
 |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.part  | string  | ""  |  The PART name to use in the SEND command. Use one of the following:<br/> • A fixed name.<br/> • "(0)": The name of the first directory sub-level is used.<br/> • "(1)": The name of the second directory sub-level is used.</li>  |
 |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.interval  | int  | 60  | The interval between two scans of the directory files in seconds.  |
-|  folder_monitoring.folders.<br/>&lt;logical_name&gt;.file_count  | int  | -1  |  Maximum number of file submissions for each scan. Using the default value indicates that there is no maximum.  |
+|  folder_monitoring.folders.<br/>&lt;logical_name&gt;.file_count  | int  | -1  |  Maximum number of file submissions for each scan.qqqdoublespaceqqqUsing the default value indicates that there is no maximum.  |
 |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.file_size_min  | int  | -1  | Files shorter than this value, in bytes, are not candidates for submission. Using the default value indicates that there is no lower limit on the file size.  |
 |  folder_monitoring.folders. &lt;logical_name&gt;.file_size_max  | int  | -1  | Files larger than this value, in bytes, are not candidates for submission. Using the default value indicates that there is no upper limit on the file size.  |
 |  folder_monitoring.folders. &lt;logical_name&gt;.file_include_filter  | string  | ""  | If this parameter is defined, only files whose names match this pattern are monitored.  |
 |  folder_monitoring.folders. &lt;logical_name&gt;.file_exclude_filter  | string  | ""  | If this parameter is defined, files whose names match this pattern are not monitored.  |
-|  folder_monitoring.folders. &lt;logical_name&gt;.resubmit_changed_file  | Boolean  | Yes  |  This parameter has no effect when the configured method is MOVE. When the method parameter value is set to FILE:<br/> • Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.<br/> • No: Files are not resubmitted, regardless of changes.</li> <blockquote> **Note:** The file is resubmitted after any change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name. </blockquote>  |
-|  folder_monitoring.folders. &lt;logical_name&gt;.filter_type  | enum  | WILDMAT  |  Defines the pattern matching algorithm to use for file name filtering. Values: <br/> • STRJCMP: The Transfer CFT pattern matching algorithm. <br/> • WILDMAT: A well known public domain algorithm, and is the default. **Unix/Windows only**<br/>See <a href="../folder_customize#Defining">Create inclusion and exclusion filters</a> for details.  |
-|  folder_monitoring.folders. &lt;logical_name&gt;.renaming_method  | Enum  | TIMESTAMP  |  This parameter applies only to the MOVE method.<br/> • NONE or " ": The filename is unchanged (no timestamp is added). If the file already exists in the work directory, the MOVE process fails.<br/> • TIMESTAMP: A timestamp having the format YYYYMMDDHHMMSS is added at the end of the name of the renamed file but before the last '.'.</li> For example, using timestamp_separators=".": <li>myfile is renamed myfile.20131025<br/> • myfile.txt is renamed myfile.20131025.txt</li>  |
-|  folder_monitoring.folders. &lt;logical_name&gt;.renaming_separators  | string  |   |  This parameter only applies to the MOVE method. It must contain at most 2 characters from among the following: .[]()i_- The first character defines the separator before the timestamp. The second one, when present, defines the separator after the timestamp. For example, using timestamp_separators "[]": - myfile is renamed myfile.[20131025] - myfile.txt is renamed myfile.[20131025].txt  |
+|  folder_monitoring.folders. &lt;logical_name&gt;.resubmit_changed_file  | Boolean  | Yes  |  This parameterqqqdoublespaceqqqhas no effect when the configured method is MOVE. When the method parameter value is set to FILE:<br/> • Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.<br/> • No: Files are not resubmitted, regardless of changes.</li> <blockquote> **Note** The file is resubmitted after any change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name. </blockquote>  |
+|  folder_monitoring.folders. &lt;logical_name&gt;.filter_type  | enum  | WILDMAT  |  Defines the pattern matching algorithm to use for file name filtering. Values: qqqdoublespaceqqq<br/> • STRJCMP: The Transfer CFT pattern matching algorithm. qqqdoublespaceqqq<br/> • WILDMAT: A well known public domain algorithm, and is the default. **Unix/Windows only**<br/>Seeqqqdoublespaceqqq<a href="../folder_customize#Defining">Create inclusion and exclusion filters</a> for details.  |
+|  folder_monitoring.folders. &lt;logical_name&gt;.renaming_method  | Enum  | TIMESTAMP  |  This parameter applies only to the MOVE method.<br/> • NONE or " ": The filename is unchanged (no timestamp is added).qqqdoublespaceqqq If the file already exists in the work directory, the MOVE process fails.<br/> • TIMESTAMP: A timestamp having the format YYYYMMDDHHMMSS is added at the end of the name of the renamed file but before the last '.'.</li> For example, using timestamp_separators=".": <li>myfileqqqdoublespaceqqqqqqdoublespaceqqq is renamed myfile.20131025<br/> • myfile.txt is renamed myfile.20131025.txt</li>  |
+|  folder_monitoring.folders. &lt;logical_name&gt;.renaming_separators  | string  |   |  This parameter only applies to the MOVE method. It must contain at most 2 characters from among the following: .[]()i_- The first character defines the separator before the timestamp. The second one, when present, defines the separator after the timestamp. For example, using timestamp_separators "[]": - myfileqqqdoublespaceqqqqqqdoublespaceqqq is renamed myfile.[20131025] - myfile.txt is renamed myfile.[20131025].txt  |
 |  folder_monitoring.folders. &lt;logical_name&gt;.control  | string  |   | Metadata used to control user changes.  |
 |  folder_monitoring.folders. &lt;logical_name&gt;. use_file_system_events <a href="#File-sys">More information</a>  | Boolean  | No  | Set to YES to enable the file system events monitoring service to detect newly available files.  |
 
+
+
+============================== table nb count(355) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th >Parameter</th>
+<th >Type</th>
+<th >Description</th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td >ssl.certificates.ca_cert_bundle</td>
+<td >string</td>
+<td ><p>Path to the CA certificate bundle. This path can point to either a file containing the CA certificates (for example, <code>/etc/ssl/certs/ca-certificates.crt</code>) or to a directory containing the CA certificatesqqqdoublespaceqqq(for example, <code>/etc/ssl/certs/</code>), which are stored individually with their filenames in a hash format.</p>
+<p>You can refer to the <a href="https://curl.haxx.se/docs/manpage.html#--cacert">cURL man page</a> for information on the <code>cacert </code>and <code>capath </code>options.</p>
+<blockquote>
+<p><strong>Note</strong></p>
+<p>You can set this parameter on UNIX systems, however it is not applicable on Windows.</p>
+</blockquote>
+<p>Ifqqqdoublespaceqqqthe certificate bundle is not available on your system, you can download it from: <a href="https://curl.haxx.se/docs/caextract.html">curl.haxx.se/docs/caextract.html</a> (see <a href="https://curl.haxx.se/ca/cacert.pem">cacert.pem</a>).</p></td>
+</tr>
+<tr >
+<td colspan="3" ><p><strong>Credentials</strong></p>
+<p>Credential parameters identify who is making a request and whether access is allowed.</p></td>
+</tr>
+<tr >
+<td >aws.credentials</td>
+<td >node</td>
+<td >List of <a href="#storageaccount">STORAGEACCOUNT</a> values where each STORAGEACCOUNT consists of an access key pair.</td>
+</tr>
+<tr >
+<td >aws.credentials.&lt;storageaccount&gt;.access_key_id</td>
+<td >string</td>
+<td ><p>Access key ID, a 20-character, alphanumeric sequence.</p></td>
+</tr>
+<tr >
+<td >aws.credentials.&lt;storageaccount&gt;.secret_access_key</td>
+<td >passwd</td>
+<td ><p>Secret access key, a 40-character sequence.</p></td>
+</tr>
+<tr >
+<td colspan="3" ><strong>Region</strong></td>
+</tr>
+<tr >
+<td >aws.credentials.&lt;storageaccount&gt;.region</td>
+<td >string</td>
+<td ><p>Region to use; this value overrides the parsing of the WORKINGDIR and the config/env settings.</p>
+<p>When using the endpoint format for WORKINGDIR, you can use this parameter to set theqqqdoublespaceqqqAWS Signature Version 4 region to something other than the default (us-east-1).</p></td>
+</tr>
+<tr >
+<td colspan="3" ><p><strong>Server-side encryption</strong></p>
+<p>Server-side encryption type with Amazon S3.</p></td>
+</tr>
+<tr >
+<td >aws.credentials.&lt;storageaccount&gt;.encryption_type</td>
+<td >string</td>
+<td ><p>Type of server-side encryption to use:</p>
+<ul>
+<li>None: No encryption on Amazon S3 objects</li>
+<li>sse-s3: Server-side encryption with AES 256</li>
+<li>sse-kms: Server-side encryption with Key Management Service</li>
+</ul>
+<p>See the <a href="#globally_encrypt">example</a> for details on encryptingqqqdoublespaceqqqfiles.</p></td>
+</tr>
+<tr >
+<td >aws.credentials.&lt;storageaccount&gt;.encryption_key_id</td>
+<td >string</td>
+<td ><p>Key identifierqqqdoublespaceqqqfor SSE-KMS encryption use; you must provide the full ID of the encryption key for the server.</p></td>
+</tr>
+<tr >
+<td colspan="3" ><p><strong>Access Control List</strong></p>
+<p>The ACL policy to apply to files when uploading a file to AWS. Please refer to the <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl">AWS documentation</a> for details.</p></td>
+</tr>
+<tr >
+<td >aws.credentials.&lt;storageaccount&gt;.acl</td>
+<td >string</td>
+<td ><p>Type of ACL policy to apply to files when uploading a file to AWS:</p>
+<ul>
+<li>private</li>
+<li>public-read</li>
+<li>public-read-write</li>
+<li>aws-exec-read</li>
+<li>authenticated-read</li>
+<li>bucket-owner-read</li>
+<li>bucket-owner-full-control</li>
+</ul></td>
+</tr>
+<tr >
+<td colspan="3" ><p><strong>Proxy parameters</strong></p>
+<p>Connect to AWS S3 through an HTTP proxy for file uploads/downloads.</p></td>
+</tr>
+<tr >
+<td >aws.credentials.&lt;storageaccount&gt;.proxy_scheme</td>
+<td >string</td>
+<td >Proxy scheme to use (HTTP or HTTPS).</td>
+</tr>
+<tr >
+<td >aws.credentials.&lt;storageaccount&gt;.proxy_host</td>
+<td >string</td>
+<td >Proxy IP address or FQDN.</td>
+</tr>
+<tr >
+<td >aws.credentials.&lt;storageaccount&gt;.proxy_port</td>
+<td >string</td>
+<td >Proxy port.</td>
+</tr>
+<tr >
+<td >aws.credentials.&lt;storageaccount&gt;.proxy_username</td>
+<td >string</td>
+<td >Proxy user name.</td>
+</tr>
+<tr >
+<td >aws.credentials.&lt;storageaccount&gt;.proxy_password</td>
+<td >password</td>
+<td >Proxy password.</td>
+</tr>
+</tbody>
+</table>
 
 
 ============================== table nb count(356) table converted to MD ========================================
@@ -4869,7 +9480,7 @@
 | Parameter<span id="storageaccount"></span>  | Type  | Description  |
 | --- | --- | --- |
 | fname  | string (key)  | The fname field corresponds to the S3 services key.  |
-| workingdir  | string  |  There are two supported formats. For either, the workingdir field must start with <code>s3://</code> and be followed by the designated items in the order listed:<br/> • <code>s3://bucket.region</code><br /> <li>the bucket name<br/> • a period (.)<br/> • the region</li> <br/> • <code>s3://http[s]://endpoint[:port]/bucket</code><br /> <li>http:// or https:// for secure communication<br/> • the endpoint, which can be an IP address or the server's hostname<br/> • a colon (:) and port (if not using the default of 80 for HTTP, 443 for HTTPS)<br/> • a slash (/)<br/> • the bucket name</li> </li>  |
+| workingdir  | string  |  There are two supported formats. For either, the workingdir field must start with <code>s3://</code> and be followed by the designated items in the order listed:<br/> • <code>s3://bucket.region</code><br /> <li>the bucket name<br/> • a period (.)<br/> • the region</li> <br/> • <code>s3://http[s]://endpoint[:port]/bucket</code><br /> <li>http:// or https:// for secure communication<br/> • the endpoint, which can be an IP address or the server's hostname<br/> • a colon (:) and port (if not using the default of 80 for HTTP, 443 for HTTPS)<br/> • a slashqqqdoublespaceqqq(/)<br/> • the bucket name</li> </li>  |
 | storageaccount  | string  | Points to the access key identifier(s) and the access key secret(s) stored in UCONF. See also <a href="../../c_intro_userinterfaces/command_summary/parameter_intro/storageaccount">storageaccount</a>.  |
 
 
@@ -4879,7 +9490,7 @@
 
 | Parameter  | Type  | Description  |
 | --- | --- | --- |
-| ssl.certificates.ca_cert_bundle  | string  |  Path to the CA certificate bundle. This path can point to either a file containing the CA certificates (for example, <code>/etc/ssl/certs/ca-certificates.crt</code>) or to a directory containing the CA certificates (for example, <code>/etc/ssl/certs/</code>), which are stored individually with their filenames in a hash format.<br/>Please refer to the <a href="https://curl.haxx.se/docs/manpage.html#--cacert">cURL man page</a> for information on the <code>cacert </code>and <code>capath </code>options.<br/>If the certificate bundle is not available on your system, you can download it from: <a href="https://curl.haxx.se/docs/caextract.html">curl.haxx.se/docs/caextract.html</a> (download from <a href="https://curl.haxx.se/ca/cacert.pem">cacert.pem</a>).  |
+| ssl.certificates.ca_cert_bundle  | string  |  Path to the CA certificate bundle. This path can point to either a file containing the CA certificates (for example, <code>/etc/ssl/certs/ca-certificates.crt</code>) or to a directory containing the CA certificatesqqqdoublespaceqqq(for example, <code>/etc/ssl/certs/</code>), which are stored individually with their filenames in a hash format.<br/>Please refer to the <a href="https://curl.haxx.se/docs/manpage.html#--cacert">cURL man page</a> for information on the <code>cacert </code>and <code>capath </code>options.<br/>Ifqqqdoublespaceqqqthe certificate bundle is not available on your system, you can download it from: <a href="https://curl.haxx.se/docs/caextract.html">curl.haxx.se/docs/caextract.html</a> (download from <a href="https://curl.haxx.se/ca/cacert.pem">cacert.pem</a>).  |
 
 
 
@@ -5005,10 +9616,10 @@
  --- | --- | --- |
 |  mtype  |  Transfer stage<br /> The possible values are:<br/> • 0 (ALLOC_TYP) before the file is allocated<br/> • 1 (OPEN_TYP) before the file is opened<br/> • 2 (TRANS_TYP) before the start of the transfer<br/> • 3 (DATA_TYP) before a record is sent or after it is received<br/> • 4 (CHECK_TYP) after a synchronization point<br/> • 5 (RESTART_TYP) before repositioning<br/> • 6 (DTEND_TYP) before the end of the file<br/> • 7 (CLOSE_TYP) before the file is closed<br/> • 8 (ENDTR_TYP) before the end of the transfer<br/> • 9 (ABORT_TYP) after a transfer interruption </li>  |
 |  **masc**  |  Mask for selecting stages<br /> This field comprises 16 bytes; each byte can take the value 0 or 1 and is associated with a stage:<br/> • Byte 0 =&gt; ALLOC_TYP<br/> • Byte 1 =&gt; OPEN_TYP<br/> • Byte 2 =&gt; TRANS_TYP<br/> • Byte 3 =&gt; DATA_TYP<br/> • Byte 4 =&gt; CHECK_TYP<br/> • Byte 5 =&gt; RESTART_TYP<br/> • Byte 6 =&gt; DTEND_TYP<br/> • Byte 7 =&gt; CLOSE_TYP</li> <li>Byte 8 =&gt; ENDTR_TYP</li> <li>Byte 9 =&gt; ABORT_TYP</li> <li>Bytes 10 to 15 =&gt; Reserved<br/>Byte 0 always equals 1.<br/>If you set a byte to 1, it means that you want to take control during the associated stage<br /> The value of the field mtype indicates the rank of the byte associated with the stage  |
-|  access  |  File access managements under the control of:<br/> • Transfer CFT if set to 0<br /> <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> takes charge of all operations; you can, however, change certain features of the file (name, size, format, etc.) at the allocation and opening stages</li> <li>The user if set to 1<br /> You are responsible for all operations performed on the file: allocation, opening, read/write, closing, de-allocation</li>  |
+|  access  |  File access managements under the control of:<br/> • Transfer CFT if set to 0<br /> <span >Transfer CFT</span> takes charge of all operations; you can, however, change certain features of the file (name, size, format, etc.) at the allocation and opening stages</li> <li>The user if set to 1<br /> You are responsible for all operations performed on the file: allocation, opening, read/write, closing, de-allocation</li>  |
 |  retsync  |  The return is:<br/> • 0 : synchronous<br /> The user function processes the stage and returns control to the interface.</li> <li>1: asynchronous<br /> The user function returns control to the interface before processing the stage (deferred processing). The transfer is suspended and the interface waits for an end of processing message from the user.<br/>As the user does not yet have the information or tools required to use the possibility of an asynchronous return, the return will always be synchronous  |
 |  ret1  |  Return code:<br/> • 0 = processing ok</li> <li>9 = refusal and end of transfer<br/>Other values are defined depending on the transfer stage. For more information, refer to the <a href="../using_file_exit_comm_area">Using the Communication Structure</a>.  |
-|  ret2  |  Error message.<br /> This message appears in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> catalog in the DIAGP field (protocol diagnosis).  |
+|  ret2  |  Error message.<br /> This message appears in theqqqdoublespaceqqq<span >Transfer CFT</span> catalog in the DIAGP field (protocol diagnosis).  |
 |  us_sem  |  Reserved  |
 |  us_ctx  |  Reserved  |
 |  idexit  |  EXIT identifier  |
@@ -5110,6 +9721,33 @@
 
 
 
+============================== table nb count(367) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th ><p>Parameter</p></th>
+<th ><p>Definition</p></th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td ><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/id">ID</a></p>
+<p>(Mandatory)</p></td>
+<td ><p>CFTPARM object identifier.</p></td>
+</tr>
+<tr >
+<td ><p>EXITBOT </p></td>
+<td ><p>EXIT identifier. To activate a beginning-of-transfer EXIT, you
+must specify an identifier that points to a CFTEXIT object.</p></td>
+</tr>
+<tr >
+<td colspan="2" >Please refer to the <a href="../../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftparm">CFTPARM</a> page for additional parameters and details.</td>
+</tr>
+</tbody>
+</table>
+
+
 ============================== table nb count(368) table converted to MD ========================================
 
 
@@ -5130,11 +9768,11 @@
 |  Parameter  |  Definition  |
 | --- | --- |
 |  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/id">ID</a> <br/>(Mandatory)  |  Command identifier (32 +1). The value of this identifier corresponds to the identifier defined in the EXITEOT parameter of the related CFTPARM object.  |
-|  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/format">FORMAT</a>  |  Indicates the format for the communication area.<br/> • V23 (Default value): The communication area between {{&lt; TransferCFT/componentshortname &gt;}} and user’s exits remains the same.<br/> • V24: The communication area takes into account the length of the new identifier.</li>  |
+|  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/format">FORMAT</a>  |  Indicates the format for the communication area.<br/> • V23 (Default value): The communication area betweenqqqdoublespaceqqq{{&lt; TransferCFT/componentshortname &gt;}} and user’s exits remains the same.<br/> • V24: The communication area takes into account the length of the new identifier.</li>  |
 |  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/language">LANGUAGE</a>  |  Language in which the user program is written.<br/>The possible values are COBOL and C language.<br/>{{&lt; TransferCFT/componentshortname &gt;}} uses this attribute to exchange data with the program using the EXIT via the structure best suited to the language in which it is implemented.  |
 |  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/parm">PARM</a>  |  Free user field (64 +1).  |
 |  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/prog">PROG</a>  |  Name of the executable module associated with the EXIT task (512 +1). This module is built from the interface provided with Transfer CFT linked to the program written by the user. In order to facilitate identification of the associated module, it is advised to name it CFTEXIE.  |
-|  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/reserv">RESERV</a>  |  Size of the working area reserved for the user.<br/>This area is not used by the {{&lt; TransferCFT/componentshortname &gt;}} interface. You can use it to save data required for the processing of the program that you have written. This area is de-allocated when the {{&lt; TransferCFT/componentshortname &gt;}} interface de-selects the file.  |
+|  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/reserv">RESERV</a>  |  Size of the working area reserved for the user.<br/>This area is not used by theqqqdoublespaceqqq{{&lt; TransferCFT/componentshortname &gt;}} interface. You can use it to save data required for the processing of the program that you have written. This area is de-allocated when theqqqdoublespaceqqq{{&lt; TransferCFT/componentshortname &gt;}} interface de-selects the file.  |
 |  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/type">TYPE</a> <br/>(Mandatory)  |  EXEC  |
 |  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/waittask">WAITTASK</a>  |  Time during which a file access task is inactive (in minutes) before being shut down  |
 
@@ -5150,18 +9788,46 @@
 
 
 
-============================== table nb count(371) table converted to MD ========================================
+============================== table nb count(371) table stayed in HTML ========================================
 
-
-| Supported format  | Type  | Extension  |
-| --- | --- | --- |
-| Certificate  | PKCS#12  | p12, pfx, pkcs12  |
-| PEM  | pem  |
-| DER  | der  |
-| Private key  | PEM  | pem  |
-| DER  | der  |
-| PKCS#8  | key, pem  |
-
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th >Supported format</th>
+<th >Type</th>
+<th >Extension</th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td rowspan="3" >Certificate</td>
+<td >PKCS#12</td>
+<td >p12, pfx, pkcs12</td>
+</tr>
+<tr >
+<td >PEM</td>
+<td >pem</td>
+</tr>
+<tr >
+<td >DER</td>
+<td >der</td>
+</tr>
+<tr >
+<td rowspan="3" >Private key</td>
+<td >PEM</td>
+<td >pem</td>
+</tr>
+<tr >
+<td >DER</td>
+<td >der</td>
+</tr>
+<tr >
+<td >PKCS#8</td>
+<td >key,
+pem</td>
+</tr>
+</tbody>
+</table>
 
 
 ============================== table nb count(372) table converted to MD ========================================
@@ -5954,7 +10620,7 @@
 | --- | --- |
 |  cft.uconf.default_fname  |  $(cft.install_dir)/distrib/conf/cftuconf-common.dat  |
 |  cft.uconf.instance_fname  |  $(cft.runtime_dir)/data/cftuconf.dat  |
-| cft.uconf.runtime_fname  | $(cft.runtime_dir)/data/cftuconf-run.dat  |
+| cft.uconf.runtime_fnameqqqdoublespaceqqq  | $(cft.runtime_dir)/data/cftuconf-run.datqqqdoublespaceqqq  |
 
 
 
@@ -6008,8 +10674,8 @@
 
 | ID  | Default  | Description  |
 | --- | --- | --- |
-|  cft.working_dir  |  $(cft.runtime_dir)  |  Sets the {{&lt; TransferCFT/componentshortname &gt;}} work-environment  |
-|  cft.idparm  |  IDPARM0  |  Sets the IDPARM to use in Copilot (GUI) and {{&lt; TransferCFT/componentshortname &gt;}} (optional)  |
+|  cft.working_dir  |  $(cft.runtime_dir)  |  Sets theqqqdoublespaceqqq{{&lt; TransferCFT/componentshortname &gt;}} work-environment  |
+|  cft.idparm  |  IDPARM0  |  Sets the IDPARM to use in Copilot (GUI) andqqqdoublespaceqqq{{&lt; TransferCFT/componentshortname &gt;}} (optional)  |
 
 
 
@@ -6083,7 +10749,7 @@
 | copilot.startup.catalog.filter  | Errors  | Filter to use for the catalog display on start up.  |
 | copilot.startup.log  | Yes  | Display/hide log at start up.  |
 | copilot.startup.log.filter  | None  | Filter to use for the log display on start up.  |
-| cft.cftlog.switch_on_stop  | No  |  Dictates if the switch log occurs at {{&lt; TransferCFT/componentshortname &gt;}} server shutdown  |
+| cft.cftlog.switch_on_stop  | No  | qqqdoublespaceqqqqqqdoublespaceqqqDictates if the switch log occurs atqqqdoublespaceqqq{{&lt; TransferCFT/componentshortname &gt;}} server shutdown  |
 
 
 
@@ -6092,7 +10758,7 @@
 
 | Parameter  | Default  | Description  |
 | --- | --- | --- |
-| cft.cftcat.auto_expand_percent  | 0  |  This value indicates the factor increase, as a percentage, that the catalog will automatically expand.<br/>The value 0 disables the automatic expansion feature. <blockquote> **Note:**<br/>Tip We recommend that you set this to a relatively high value, at least 50. When repeatedly expanded, the catalog's internal structure may become fragmented and, consequently, catalog access less efficient. </blockquote>  |
+| cft.cftcat.auto_expand_percent  | 0  |  This value indicates the factor increase, as a percentage, that the catalog will automatically expand.<br/>The value 0 disables the automatic expansion feature. <blockquote> **Note**<br/>Tip We recommend that you set this to a relatively high value, at least 50. When repeatedly expanded, the catalog's internal structure may become fragmented and, consequently, catalog access less efficient. </blockquote>  |
 | cft.cftcat.auto_expand_max_size  | 1M  |  The maximum number of records for the automatic catalog expansion option.  |
 
 
@@ -6129,8 +10795,8 @@
 
 | Parameter  | Default  | Description  |
 | --- | --- | --- |
-| cft.purge.enable_on_start  | Yes  | Condition if the purge must be run on {{&lt; TransferCFT/componentshortname &gt;}} startup.  |
-| cft.purge.background_on_start  | Yes  | Condition if the purge must be run on {{&lt; TransferCFT/componentshortname &gt;}} startup.  |
+| cft.purge.enable_on_start  | Yes  | Condition if the purge must be run onqqqdoublespaceqqq{{&lt; TransferCFT/componentshortname &gt;}} startup.  |
+| cft.purge.background_on_start  | Yes  | Condition if the purge must be run onqqqdoublespaceqqq{{&lt; TransferCFT/componentshortname &gt;}} startup.  |
 | cft.purge.quantity  | 10  | Number of transfers to delete at once step (only for background).  |
 | cft.purge.periodicity  | 0  | Amount of time between each automatic purge.  |
 
@@ -6173,7 +10839,7 @@
 
 | Parameter  | Default  | Description  |
 | --- | --- | --- |
-| cft.accnt.enable_extended_byte_fields  | No  |  For each completed transfer, {{&lt; TransferCFT/componentshortname &gt;}} can record the number of characters in the file (FBYTE) and the number of characters sent over the line (NBYTE).<br/>Possible values are:<br/> • No: The FBYTE and NBYTE fields are filled.<br/> • Yes: The FBYTE_EXTENDED and NBYTE_EXTENDED fields are filled (length=15), and FBYTE and NBYTE are empty (either 0 or blank depending on the CFTACCNT LANG parameter setting).</li>  |
+| cft.accnt.enable_extended_byte_fields  | No  |  For each completed transfer,qqqdoublespaceqqq{{&lt; TransferCFT/componentshortname &gt;}} can record the number of characters in the file (FBYTE) and the number of characters sent over the line (NBYTE).<br/>Possible values are:<br/> • No: The FBYTE and NBYTE fields are filled.<br/> • Yes: The FBYTE_EXTENDED and NBYTE_EXTENDED fields are filledqqqdoublespaceqqq (length=15), and FBYTE and NBYTE are empty (either 0 or blank depending on the CFTACCNT LANG parameter setting).</li>  |
 
 
 
@@ -6202,19 +10868,36 @@
 
 | Parameter  | Description  |
 | --- | --- |
-| copilot.http.onlyssl  | Enter Yes to restrict the access of the {{&lt; TransferCFT/componentshortname &gt;}} UI with https.  |
+| copilot.http.onlyssl  | Enter Yes toqqqdoublespaceqqq restrict the access of theqqqdoublespaceqqq{{&lt; TransferCFT/componentshortname &gt;}} UI withqqqdoublespaceqqqhttps.  |
 
 
 
-============================== table nb count(401) table converted to MD ========================================
+============================== table nb count(401) table stayed in HTML ========================================
 
-
-| Parameter  | Options  | Description  |
-| --- | --- | --- |
-| copilot.nt.rootdrives  | @REMOVABLE_DRIVES  | To view removable drives such as a USB key, CD, and so on.  |
-| @LOCAL_DRIVES  | To view hard drives.  |
-| @NET_DRIVES  | To view network drives.  |
-
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th >Parameter</th>
+<th >Options</th>
+<th >Description</th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td rowspan="3" >copilot.nt.rootdrives</td>
+<td >@REMOVABLE_DRIVES</td>
+<td >To view removable drives such as a USB key, CD, and so on.</td>
+</tr>
+<tr >
+<td >@LOCAL_DRIVES</td>
+<td >To view hard drives.</td>
+</tr>
+<tr >
+<td >@NET_DRIVES</td>
+<td >To view network drives.</td>
+</tr>
+</tbody>
+</table>
 
 
 ============================== table nb count(402) table converted to MD ========================================
@@ -6240,23 +10923,51 @@
 
 | Parameter  | Value  | Former value  |
 | --- | --- | --- |
-| copilot.webservices.wsicomplience  | (bool) No  | [WEBSERVICES] WsiComplience  |
-| copilot.webservices.upload_directory  | (dir) $(cft.runtime_dir)/conf/ws_upload  | NA  |
+| copilot.webservices.wsicomplienceqqqdoublespaceqqq  | (bool) No  | [WEBSERVICES] WsiComplience  |
+| copilot.webservices.upload_directoryqqqdoublespaceqqq  | (dir) $(cft.runtime_dir)/conf/ws_upload  | NA  |
 
 
 
-============================== table nb count(405) table converted to MD ========================================
+============================== table nb count(405) table stayed in HTML ========================================
 
-
-| Supported format  | Type  | Extension  |
-| --- | --- | --- |
-| Certificate  | PKCS#12  | p12, pfx, pkcs12  |
-| PEM  | pem  |
-| DER  | der  |
-| Private key  | PEM  | pem  |
-| DER  | der  |
-| PKCS#8  | key, pem  |
-
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th >Supported format</th>
+<th >Type</th>
+<th >Extension</th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td rowspan="3" >Certificate</td>
+<td >PKCS#12</td>
+<td >p12, pfx, pkcs12</td>
+</tr>
+<tr >
+<td >PEM</td>
+<td >pem</td>
+</tr>
+<tr >
+<td >DER</td>
+<td >der</td>
+</tr>
+<tr >
+<td rowspan="3" >Private key</td>
+<td >PEM</td>
+<td >pem</td>
+</tr>
+<tr >
+<td >DER</td>
+<td >der</td>
+</tr>
+<tr >
+<td >PKCS#8</td>
+<td >key,
+pem</td>
+</tr>
+</tbody>
+</table>
 
 
 ============================== table nb count(406) table converted to MD ========================================
@@ -6337,16 +11048,16 @@
 | --- | --- |
 |  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/create">CREATE</a>  |  Output file creation option.  |
 |  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/iblksize">IBLKSIZE</a>  |  Defines the block size of the input file, in bytes.<br/>  |
-| ICHARSET  | Defines the input file encoding.  |
-|  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/icode">ICODE</a>  |  Codes the input file data. Internal code managed by the system, either ASCII, or EBCDIC.  |
+| ICHARSET  | Defines the input fileqqqdoublespaceqqqencoding.  |
+|  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/icode">ICODE</a>  |  Codes the input file data.qqqdoublespaceqqqInternal code managed by the system, either ASCII, or EBCDIC.  |
 |  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/icomp">ICOMP</a>  |  Compresses the input file data.<br/>The value 0 means that there is no compression. The possible values (cpr) are indicated in <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/compression">Compression</a>.  |
 |  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/ict">ICT</a>  |  Type of input file data compression. The value of ICOMP must be compatible with the compression type.  |
 |  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/ifname">IFNAME</a>  |  Name of the input file to be copied.  |
 |  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/ilrecl">ILRECL</a><br/><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/ilrecl">see comments</a><br/>  |  For records of:<br/> • Fixed format (IFRECFM = F): input file record size<br/> • Variable format (IFRECFM = V): maximum record size</li>  |
 |  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/irecfm">IRECFM</a><br/>see the specific Operations Guide  |  Input file record format:<br/> • F: fixed<br/> • V: variable<br/> • U: undefined</li>  |
 |  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/itype">ITYPE</a>  |  Input file type.<br/>Refer to the Operations Guide corresponding to your OS.  |
-|  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/oblksize">OBLKSIZE</a> OS  |  Output file block size (in bytes). The value indicated must be greater than the value of the OLRECL parameter.  |
-| OCHARSET  | Defines the output file encoding.  |
+|  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/oblksize">OBLKSIZE</a>qqqdoublespaceqqq OS  |  Output file block size (in bytes). The value indicated must be greater than the value of the OLRECL parameter.  |
+| OCHARSET  | Defines the output fileqqqdoublespaceqqqencoding.  |
 |  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/ocode">OCODE</a>  |  Codes the output file data.  |
 |  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/ocomp">OCOMP</a>  |  Compresses the output file data.  |
 |  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/oct">OCT</a>  |  Type of output file data compression. The value of OCOMP must be compatible with the compression type.  |
@@ -6396,6 +11107,124 @@
 
 
 
+============================== table nb count(415) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th >Description</th>
+<th colspan="2" >Use this command to delete one or more catalog entries.</th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td rowspan="13" ><p>Parameters</p></td>
+<td ><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/blknum">BLKNUM</a> </p></td>
+<td ><p>Block number. If the values '*' or ' ' are used then all
+transfers are selected regardless of the block that they belong to.</p></td>
+</tr>
+<tr >
+<td ><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/direct">DIRECT</a> </p></td>
+<td ><p>Transfer direction for the requests in question.</p>
+<p>The possible values are:</p>
+<ul>
+<li>BOTH:
+(default) takes both send transfers and receive transfers into account</li>
+<li>RECV:
+limits the action to receive transfers</li>
+<li>SEND:
+limits the action to send transfers</li>
+</ul></td>
+</tr>
+<tr >
+<td ><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/ida">IDA</a> </p></td>
+<td ><p>Local identifier of the transfer assigned by the user or
+user application. The maximum length is 64 characters.</p>
+<p>Several catalog entries may be associated with a given
+IDA. There is no default value.</p></td>
+</tr>
+<tr >
+<td ><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/idf">IDF</a> </p></td>
+<td ><p>Model file identifier.</p>
+<p>Several catalog entries may be associated with a given
+IDF. There is no default value.</p>
+<p>If a set of transfers is selected, transfers are processed
+in batches of 20 every 5 seconds.</p></td>
+</tr>
+<tr >
+<td ><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/idu">IDT</a> </p></td>
+<td ><p>Transfer identifier.</p>
+<p>This identifies a transfer for a given partner and direction.
+The value ‘*’ means that no selection is required using the IDT
+parameter (default value).</p></td>
+</tr>
+<tr >
+<td ><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/idtu">IDTU</a> </p></td>
+<td ><p>Transfer local counter identifier.</p></td>
+</tr>
+<tr >
+<td >KDATE</td>
+<td >Command deposit date</td>
+</tr>
+<tr >
+<td >KTIME</td>
+<td >Command deposit time</td>
+</tr>
+<tr >
+<td ><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/part">PART</a></p>
+<p>(Mandatory)</p></td>
+<td ><p>Partner identifier.</p></td>
+</tr>
+<tr >
+<td >PHASE</td>
+<td >Phase of a catalog entry</td>
+</tr>
+<tr >
+<td >PHASESTEP</td>
+<td >Phase step of a catalog entry</td>
+</tr>
+<tr >
+<td ><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/scope">SCOPE</a></td>
+<td >Scope &lt;PARENT&gt;qqqdoublespaceqqq('PARENT','ALL','CHILDREN')</td>
+</tr>
+<tr >
+<td ><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/state">STATE</a> </p></td>
+<td ><p>Transfer state.</p>
+<p>The default value * means no selection is required
+to be made on the transfer state. (refer
+to the Transfer-related successive phases and actions).</p></td>
+</tr>
+<tr >
+<td colspan="3" ><p>Example 1</p>
+<div>
+```
+DELETE        PART = SIE??
+```
+</div>
+<p>This command deletes all transfers, IDT = * by default, in the send
+and receive directions, DIRECT = BOTH by default, for the partners whose
+identifier begins with "SIE" and contains 5 characters in all.</p>
+<p>Example 2</p>
+<div>
+```
+DELETE
+PART = HQ,
+ 
+ 
+DIRECT = SEND,
+ 
+ 
+IDF = ACCNT
+ 
+```
+</div>
+<p>This command deletes all transfers, IDT = * by default, in the send
+direction (DIRECT = SEND) of the model file ACCNT to the partner HQ.</p></td>
+</tr>
+</tbody>
+</table>
+
+
 ============================== table nb count(416) table converted to MD ========================================
 
 
@@ -6403,7 +11232,7 @@
 | --- | --- |
 | OBJECT  | Options: <u>CACHE</u> | SYSTEM | STATS | PROBE | TRACE (obsolete)  |
 | NAME  |  The options available for the NAME depend on the type of OBJECT to be queried.<br/>If the object = cache (default) then the name can be set to:<br/> • CAT: Query of the catalog cache<br/> • COMMAND: Query of the command cache<br/> • CRON: Query the {{&lt; TransferCFT/componentshortname &gt;}} CRON cache<br/> • DMZ: Query of the DMZ cache<br/> • STAT</li>  |
-| CONTENT  |  If OBJECT=CACHE then you can select from the following values:<br/>BRIEF| FULL | STAT - or - XMLBRIEF| XMLFULL | RAW  |
+| CONTENT  |  If OBJECT=CACHE then you can select from the following values:<br/>BRIEF| FULL | STAT - or -qqqdoublespaceqqq XMLBRIEF| XMLFULL | RAW  |
 
 
 
@@ -6412,7 +11241,7 @@
 
 | Parameter  | Default  | Description  |
 | --- | --- | --- |
-| cft.cftcat.auto_expand_percent  | 0  |  This value indicates the factor increase, as a percentage, that the catalog will automatically expand.<br/>The value 0 disables the automatic expansion feature. <blockquote> **Note:**<br/>Tip We recommend that you set this to a relatively high value, at least 50. When repeatedly expanded, the catalog's internal structure may become fragmented and, consequently, catalog access less efficient. </blockquote>  |
+| cft.cftcat.auto_expand_percent  | 0  |  This value indicates the factor increase, as a percentage, that the catalog will automatically expand.<br/>The value 0 disables the automatic expansion feature. <blockquote> **Note**<br/>Tip We recommend that you set this to a relatively high value, at least 50. When repeatedly expanded, the catalog's internal structure may become fragmented and, consequently, catalog access less efficient. </blockquote>  |
 | cft.cftcat.auto_expand_max_size  | 1M  |  The maximum number of records for the automatic catalog expansion option.  |
 
 
@@ -6422,7 +11251,7 @@
 
 | CFTA0nX  | Details  |
 | --- | --- |
-|  n=1  | CFTPARM file  |
+|  n=1qqqdoublespaceqqq  | CFTPARM file  |
 |  n=2  | CFTPART file  |
 |  n=3  | CFTCAT file  |
 |  n=4  | CFTCOM file  |
@@ -6439,7 +11268,7 @@
 | Attribute  | Details  |
 | --- | --- |
 | Action=&amp;act  |  &amp;act is the action on an object (“CREATE” , “MODIFY” , “DELETE”)  |
-| Object=&amp;obj  | &amp;obj is the object identifier (type of object for the CFTFILE command)  |
+| Object=&amp;obj  | &amp;obj is the object identifierqqqdoublespaceqqq(type of object for the CFTFILE command)  |
 | id=&amp;id  |   |
 | user=&amp;user  |  &amp;user is the user that modified the object  |
 | groupid=&amp;group  | &amp;group is the user group that modified the object  |
@@ -6456,7 +11285,7 @@
 
 | Parameter  | Default  | Description  |
 | --- | --- | --- |
-| cft.cftcat.auto_expand_percent  | 0  |  This value indicates the factor increase, as a percentage, that the catalog will automatically expand.<br/>The value 0 disables the automatic expansion feature. <blockquote> **Note:**<br/>Tip We recommend that you set this to a relatively high value, at least 50. When repeatedly expanded, the catalog's internal structure may become fragmented and, consequently, catalog access less efficient. </blockquote>  |
+| cft.cftcat.auto_expand_percent  | 0  |  This value indicates the factor increase, as a percentage, that the catalog will automatically expand.<br/>The value 0 disables the automatic expansion feature. <blockquote> **Note**<br/>Tip We recommend that you set this to a relatively high value, at least 50. When repeatedly expanded, the catalog's internal structure may become fragmented and, consequently, catalog access less efficient. </blockquote>  |
 | cft.cftcat.auto_expand_max_size  | 1M  |  The maximum number of records for the automatic catalog expansion option.  |
 
 
@@ -6482,7 +11311,7 @@
 |  ProductName  |  String  |  50  |  Name of the product that generated the relevant Tracked-Event. For customer applications this name is defined via the Universal Agent.  |  uconf: sentinel.trkproductname  |
 |  ProductIPAddr  |  String  |  20  |  Domain Name Server (DNS) of the product/application that generated the relevant Tracked Event.  |  uconf: sentinel.trkproductipaddr  |
 |  ProductOS  |  String.  |  20  |  Operating system of the application that generated the relevant Tracked Event.  |  {{&lt; TransferCFT/componentshortname &gt;}} target  |
-|  State  |  String  |  29  |  Status of the relevant Tracked Event. The possible values of this attribute depend on the tracked application/product and file transfer protocol used. See <a href="#List" class="MCXref xref">List of Sentinel states</a> .  |  PHASE/PHASESTEP combination  |
+|  State  |  String  |  29  |  Status of the relevant Tracked Event. The possible values of this attribute depend on the tracked application/product and file transfer protocol used. See <a href="#List" >List of Sentinel states</a> .  |  PHASE/PHASESTEP combination  |
 
 
 
@@ -6680,7 +11509,7 @@
 |  EndDate  |  Date  |  -  |  If the value of the State attribute is:<br/> • SENT: The value of this attribute is the date on which the Sender stopped sending the transfer.<br/> • RECEIVED: The value of this attribute is the date on which the Receiver stopped receiving the transfer.<br/>These dates are expressed in dd.mm.yyyy format.  |  DATEE  |
 |  EndTime  |  Time  |  -  |  If the value of the State attribute is:<br/> • SENT: The value of this attribute is the local time at which the Sender stopped sending the transfer.<br/> • RECEIVED: The value of this attribute is the local time at which the Receiver stopped receiving the transfer.<br/>These times are expressed in hh:mn:ss format.  |  TIMEE  |
 |  RequestCreationDate  |  Date  |  -  |  If the value of the State attribute is:<br/> • SENT: The value of this attribute is local date of the creation of the file on the Sender side.<br/> • RECEIVED: The value of this attribute is the date of the creation of the file on the Sender side.</li>  |  DATEK  |
-|  RequestCreationTime  |  Time  |  -  |  If the value of the State attribute is:<br/> • SENT: The value of this attribute is local time of the creation of the file on the Sender side.<br/> • RECEIVED: The value of this attribute is the time of the creation of the file on the Sender side. </li>  |  TIMEK  |
+|  RequestCreationTime  |  Time  |  -  |  If the value of the State attribute is:<br/> • SENT: The value of this attribute is local time of the creation of the file on the Sender side.<br/> • RECEIVED: The value of this attribute is the time of the creation of the file on the Sender side.qqqdoublespaceqqq</li>  |  TIMEK  |
 |  TransmissionDuration  |  Integer  |  -  |  Transfer duration, expressed in seconds.  |  TIMES  |
 
 
@@ -6690,9 +11519,9 @@
 
 |  Sentinel<br/>attribute  |  Data type  |  Length  |  Description  |  Name in<br/>{{&lt; TransferCFT/componentshortname &gt;}}  |
 | --- | --- | --- | --- | --- |
-|  Protocol  |  String  |  25  |  Name of the protocol that operates at the Protocol Layer of the transfer. Possible values:<br/> • CFT (PeSIT, version CFT)<br/> • PSIT_HS_E (PeSIT, version E) <br/> • PSIT_HS_D (PeSIT, version D) <br/> • ODT (ODETTE File Transfer Protocol) </li>  |  Protocol  |
+|  Protocol  |  String  |  25  |  Name of the protocol that operates at the Protocol Layer of the transfer. Possible values:<br/> • CFT (PeSIT, version CFT)<br/> • PSIT_HS_E (PeSIT, version E)qqqdoublespaceqqq<br/> • PSIT_HS_D (PeSIT, version D)qqqdoublespaceqqq<br/> • ODT (ODETTE File Transfer Protocol)qqqdoublespaceqqq</li>  |  Protocol  |
 |  IsSSL  |  String  |  1  |  <li>1: SSL/TLS used for the transfer.<br/> • 0: SSL/TLS not used for the transfer.</li>  |  SSLMODE  |
-|  SSLAuth  |  String  |  1  |  <li>S: The Server sent X.509 certificates to the Requester.<br/> • B: Both the Server and the Requester sent X.509 certificates to each other.<br/> • N: Neither the Server nor the Requester sent X.509 certificates. </li>  |  SSLAUTH  |
+|  SSLAuth  |  String  |  1  |  <li>S: The Server sent X.509 certificates to the Requester.<br/> • B: Both the Server and the Requester sent X.509 certificates to each other.<br/> • N: Neither the Server nor the Requester sent X.509 certificates.qqqdoublespaceqqq</li>  |  SSLAUTH  |
 |  SSLCypher  |  String  |  2  |  The cipher suite that the Server and the Requester used during the SSL/TLS session.  |  SSLCIPH  |
 
 
@@ -6717,8 +11546,8 @@
 
 |  Sentinel<br/>attribute  |  Data type  |  Length  |  Description  |  Name in<br/>{{&lt; TransferCFT/componentshortname &gt;}}  |
 | --- | --- | --- | --- | --- |
-|  FileSize  |  Integer  |  -  |  Size of the transferred file. This size is expressed in bytes. <blockquote> **Note:**<br/>For PeSIT, an estimation of size is given at the beginning of the transfer. This value is updated upon completion of the transfer with the real value. </blockquote>  |  FSPACE  |
-|  TransmittedBytes  |  Integer  |  -  |  Number of bytes transferred, after decompression, to transfer the file. This size is expressed in bytes. <blockquote> **Note:**<br/>For PeSIT, this value sent is crosschecked by both the sender and receiver. </blockquote>  |  NCAR  |
+|  FileSize  |  Integer  |  -  |  Size of the transferred file. This size is expressed in bytes. <blockquote> **Note**<br/>For PeSIT, an estimation of size is given at the beginning of the transfer. This value is updated upon completion of the transfer with the real value. </blockquote>  |  FSPACE  |
+|  TransmittedBytes  |  Integer  |  -  |  Number of bytes transferred, after decompression, to transfer the file. This size is expressed in bytes. <blockquote> **Note**<br/>For PeSIT, this value sent is crosschecked by both the sender and receiver. </blockquote>  |  NCAR  |
 
 
 
@@ -6729,8 +11558,8 @@
 | --- | --- | --- | --- | --- |
 |  CommandType  |  String  |  1  |  <li>F: File transfer<br/> • M: Message transfer<br/> • A: Message reply<br/> • N: Message nack</li>  |  TYPE  |
 |  FileOrganization  |  String  |  25  |  <li>org_sequential: The transferred data is not indexed.<br/> • indexed: The transferred data is indexed.<br/> • direct: The transferred data is assigned relative access.</li>  |  FORG  |
-|  FileType  |  String  |  60  |  <li>B: The transferred file is a binary file. <br/> • J, T, O, X: The transferred file is a text file. </li>  |  FTYPE  |
-|  RecordNumber  |  Integer  |   |  Number of record in the file. This size is expressed in bytes. <blockquote> **Note:**<br/>For PeSIT, this value sent is crosschecked by both the sender and receiver. </blockquote>  |  FREC  |
+|  FileType  |  String  |  60  |  <li>B: The transferred file is a binary file.qqqdoublespaceqqq<br/> • J, T, O, X: The transferred file is a text file.qqqdoublespaceqqq</li>  |  FTYPE  |
+|  RecordNumber  |  Integer  |   |  Number of record in the file. This size is expressed in bytes. <blockquote> **Note**<br/>For PeSIT, this value sent is crosschecked by both the sender and receiver. </blockquote>  |  FREC  |
 |  RecordFormat  |  String  |  64  |  <li>F: fixed - The transferred data contains fixed-length records.<br/> • V: variable - The transferred data contains variable-length records.<br/> • U: undefined - The structure of the transferred data is unknown.</li>  |  FRECFM  |
 |  RecordSize  |  Integer  |   |  <li>If the value of RecordFormat attribute is fixed, the value of this attribute is the size of all records in the transferred file, expressed in bytes.<br/> • If the value of RecordFormat is variable or undefined, the value of this attribute is the size of the largest record in the transferred file, expressed in bytes.</li>  |  FLRECL  |
 |  Transcoding  |  Integer  |   |  Character code of the transferred data:<br/> • A: ASCII<br/> • B: Binary<br/> • E: EBCDIC</li>  |  FCODE  |
@@ -6749,48 +11578,169 @@
 
 
 
-============================== table nb count(440) table converted to MD ========================================
+============================== table nb count(440) table stayed in HTML ========================================
 
-
-|  Offset  |  Length  |  PI  |  Description  |
-| --- | --- | --- | --- |
-|  1  |  4  |  “SUIV”  |  Eye catcher  |
-|  5  |  24  |  PI3 CONNECT  |  For transmission  |
-|  PI4 CONNECT  |  For reception  |
-|  29  |  24  |  PI4 CONNECT  |  For transmission  |
-|  PI3 CONNECT  |  For reception  |
-|  53  |  5  |  "0"  |  "0"  |
-|  "65535"  |
-|  "REPLY"  |
-|  58  |  76  |  PI12  |  Virtual filename  |
-|  134  |  8  |  PI13  | Sequence number  |
-|  142  |  12  |  PI51  |  Date YYMMDD padded to 12 with spaces on the right  |
-|  154  |  1  |  E  |  For transmission  |
-|  R  |  For reception  |
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th ><p>Offset</p></th>
+<th ><p>Length</p></th>
+<th ><p>PI</p></th>
+<th ><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td ><p>1</p></td>
+<td ><p>4</p></td>
+<td ><p>“SUIV”</p></td>
+<td ><p>Eye catcher</p></td>
+</tr>
+<tr >
+<td rowspan="2" ><p>5</p></td>
+<td rowspan="2" ><p>24</p></td>
+<td ><p>PI3 CONNECT</p></td>
+<td ><p>For transmission</p></td>
+</tr>
+<tr >
+<td ><p>PI4 CONNECT</p></td>
+<td ><p>For reception</p></td>
+</tr>
+<tr >
+<td rowspan="2" ><p>29</p></td>
+<td rowspan="2" ><p>24</p></td>
+<td ><p>PI4 CONNECT</p></td>
+<td ><p>For transmission</p></td>
+</tr>
+<tr >
+<td ><p>PI3 CONNECT</p></td>
+<td ><p>For reception</p></td>
+</tr>
+<tr >
+<td rowspan="3" ><p>53</p></td>
+<td rowspan="3" ><p>5</p></td>
+<td ><p>"0"</p></td>
+<td rowspan="3" ><p>"0"</p></td>
+</tr>
+<tr >
+<td ><p>"65535"</p></td>
+</tr>
+<tr >
+<td ><p>"REPLY"</p></td>
+</tr>
+<tr >
+<td ><p>58</p></td>
+<td ><p>76</p></td>
+<td ><p>PI12</p></td>
+<td ><p>Virtual filename</p></td>
+</tr>
+<tr >
+<td ><p>134</p></td>
+<td ><p>8</p></td>
+<td ><p>PI13</p></td>
+<td >Sequence number</td>
+</tr>
+<tr >
+<td ><p>142</p></td>
+<td ><p>12</p></td>
+<td ><p>PI51</p></td>
+<td ><p>Date YYMMDD padded to 12 with spaces on the right</p></td>
+</tr>
+<tr >
+<td rowspan="2" ><p>154</p></td>
+<td rowspan="2" ><p>1</p></td>
+<td ><p>E</p></td>
+<td ><p>For transmission</p></td>
+</tr>
+<tr >
+<td ><p>R</p></td>
+<td ><p>For reception</p></td>
+</tr>
+</tbody>
+</table>
 
 
+============================== table nb count(441) table stayed in HTML ========================================
 
-============================== table nb count(441) table converted to MD ========================================
-
-
-|  Offset  |  Length  | Value  |  Description  |
-| --- | --- | --- | --- |
-|  1  |  4  |  “SUIV”<br/>"TEMP"  |  Eye catcher  |
-|  5  |  24  | Sender identifier  |  Sender account login name.<br/> • SEND: System login of the process that runs the SFTP client<br/> • RECV: SFTP login name sends by the client to connect to the SFTP server</li>  |
-|  29  |  24  | Receiver identifier  |  Receiver login name<br/> • SEND: SFTP login name sends by the client to connect to the SFTP server<br/> • RECV: System login of the process that runs the SFTP client</li>  |
-|  53  |  5  | "0"  |  For file transfer  |
-|  58  |  76  | Virtual Filename  |  Logical file name, NIDF for Transfer CFT  |
-|  134  |  8  | Sequence number  |  Unique number identifying the transfer sent, NIDT for Transfer CFT  |
-|  142  |  12  | Date YYMMDD padded to 12 with spaces on the right  |  Only the date is used (YYMMDD), and the time is filled in 6 spaces  |
-|  154  |  1  | E  |  For transmission  |
-| R  |  For reception  |
-
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th ><p>Offset</p></th>
+<th ><p>Length</p></th>
+<th >Value</th>
+<th ><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td ><p>1</p></td>
+<td ><p>4</p></td>
+<td ><p>“SUIV”</p>
+<p>"TEMP"</p></td>
+<td ><p>Eye catcher</p></td>
+</tr>
+<tr >
+<td ><p>5</p></td>
+<td ><p>24</p></td>
+<td >Sender identifier</td>
+<td ><p>Sender account login name.</p>
+<ul>
+<li>SEND: System login of the process that runs the SFTP client</li>
+<li>RECV: SFTP login name sends by the client to connect to the SFTP server</li>
+</ul></td>
+</tr>
+<tr >
+<td ><p>29</p></td>
+<td ><p>24</p></td>
+<td >Receiver identifier</td>
+<td ><p>Receiver login name</p>
+<ul>
+<li>SEND: SFTP login name sends by the client to connect to the SFTP server</li>
+<li>RECV: System login of the process that runs the SFTP client</li>
+</ul></td>
+</tr>
+<tr >
+<td ><p>53</p></td>
+<td ><p>5</p></td>
+<td >"0"</td>
+<td ><p>For file transfer</p></td>
+</tr>
+<tr >
+<td ><p>58</p></td>
+<td ><p>76</p></td>
+<td >Virtual Filename</td>
+<td ><p>Logical file name, NIDF for Transfer CFT</p></td>
+</tr>
+<tr >
+<td ><p>134</p></td>
+<td ><p>8</p></td>
+<td >Sequence number</td>
+<td ><p>Unique number identifying the transfer sent, NIDT for Transfer CFT</p></td>
+</tr>
+<tr >
+<td ><p>142</p></td>
+<td ><p>12</p></td>
+<td >Date YYMMDD padded to 12 with spaces on the right</td>
+<td ><p>Only the date is used (YYMMDD), and the time is filled in 6 spaces</p></td>
+</tr>
+<tr >
+<td rowspan="2" ><p>154</p></td>
+<td rowspan="2" ><p>1</p></td>
+<td >E</td>
+<td ><p>For transmission</p></td>
+</tr>
+<tr >
+<td >R</td>
+<td ><p>For reception</p></td>
+</tr>
+</tbody>
+</table>
 
 
 ============================== table nb count(442) table converted to MD ========================================
 
 
-| Definition  | NO  | ALL  | SUMMARY  | ERROR  | UNDEFINED  |
+| Definition  | NOqqqdoublespaceqqq  | ALLqqqdoublespaceqqq  | SUMMARYqqqdoublespaceqqq  | ERROR  | UNDEFINED  |
 | --- | --- | --- | --- | --- | --- |
 | 1. Transfer requests (SEND/RECV in requester mode only)  | No tracking  | Full tracking  | First and last  | Errors only  | Uses the transfer definition  |
 |  2. Transfer models (CFTSEND/CFTRECV)  |  No tracking  |  Full tracking  |  First and last  | Errors only  | Uses the partner definition  |
@@ -6835,9 +11785,9 @@
 | Unified configuration parameter  | Default value  |  Former Sentinel parameter name<br/>trkapi.cfg  |
 | --- | --- | --- |
 | sentinel.xfb.enable  | NO  | XFB.Sentinel (trkapi.cfg)  |
-|  sentinel.xfb.transfer  |  ALL  |  XFB.Transfer (trkapi.cfg) &lt;/p&gt;  |
-|  sentinel.xfb.shut  |  0 &lt;/p&gt;  |  XFB.Shut (trkapi.cfg) &lt;/p&gt;  |
-|  sentinel.xfb.log  |  IEWF <blockquote> **Note:**<br/>To disable, set to ' '. </blockquote>  |  XFB.Log (trkapi.cfg) &lt;/p&gt;  |
+|  sentinel.xfb.transferqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq  |  ALL  |  XFB.Transfer (trkapi.cfg) qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/p&gt;  |
+|  sentinel.xfb.shutqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq  |  0 qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/p&gt;  |  XFB.Shut (trkapi.cfg) qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/p&gt;  |
+|  sentinel.xfb.logqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq  |  IEWF <blockquote> **Note**<br/>To disable, set to ' '. </blockquote>  |  XFB.Log (trkapi.cfg) qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/p&gt;  |
 |  sentinel.trktname  |  $(cft.runtime_dir)/data/trkapi.buf  |  TRKTNAME (trkapi.cfg)  |
 |  sentinel.trksharedfile  |  No  |  TRKSHAREDFILE  |
 |  sentinel.trklenmsg  |   |  TRKLENMSG  |
@@ -6871,8 +11821,8 @@
 | Unified configuration parameter  | Default value  | Description  |
 | --- | --- | --- |
 | sentinel.heartbeat.enable  | NO  |  Enables sending Heartbeats to the Sentinel Server.  |
-| sentinel.heartbeat.periodicity  | 300  | The delay in seconds between sending Heartbeats.  |
-| sentinel.heartbeat.script  |  $(cft.install_dir)<br/>/extras/sentinel/MFTheartbeat.sh<br/>$(cft.install_dir)<br/>\extras\sentinel\MFTheartbeat.bat  | Script for executing Heartbeats.  |
+| sentinel.heartbeat.periodicity  | 300  | The delay in seconds between sending Heartbeats.qqqdoublespaceqqq  |
+| sentinel.heartbeat.script  |  $(cft.install_dir)<br/>/extras/sentinel/MFTheartbeat.sh<br/>$(cft.install_dir)<br/>\extras\sentinel\MFTheartbeat.batqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq  | Script for executing Heartbeats.  |
 
 
 
@@ -6881,7 +11831,7 @@
 
 | Unified configuration parameter  | Default value  | Description  |
 | --- | --- | --- |
-| sentinel.xfb.transfer_progress_period  | 60  |  The frequency in seconds in which Transfer CFT notifies Sentinel (for both SENDING and RECEIVING states) that a transfer is running.<br/>0 = no notification<br/>  |
+| sentinel.xfb.transfer_progress_period  | 60  |  The frequency in seconds in which Transfer CFT notifies Sentinelqqqdoublespaceqqq (for both SENDING and RECEIVING states) that a transfer is running.<br/>0 = no notification<br/>  |
 | sentinel.xfb.transfer.send_relay_site_nidf  | No  | Enables an NIDF on the relay site. This uses an NIDF instead of COMMUT when sending an event to Sentinel using the XFBTransfer object.  |
 
 
@@ -6921,7 +11871,7 @@
 | Location  | String  | 31  | Unique and logical identifier for the product.  | PART parameter of the CFTPARM object.  | local_site_alias  | LOCNAME of PELPARMS  |
 | Monitor  | String  | 4  | Product name.  | “CFT”  | MSG_PROD_MONITOR_PEL &gt; "PEL"  | "PEL"  |
 | MonitorVersion  | String  | 25  | Product version.  | Product version  |  Computation of:<br/>MSG_XFB_MONITOR_VERSION &gt; "6.6.3"  | "732"  |
-| Machine  | String  | 25  | Name of the application and platform that run on a Transfer CFT  |  PRODUCT_TYPE:<br/>"CFT-UNIX" "CFTL-NT" "CFT-MVS" "CFT-400" "CFT-NSK" "CFT-VMS"  |  PRODUCT_TYPE:<br/>"PEL-UNIX" "PEL-NT" "PEL-400" "PEL-NSK"  | PELIMVS  |
+| Machine  | String  | 25  | Name of theqqqdoublespaceqqqapplication and platform that run on a Transfer CFT  |  PRODUCT_TYPE:<br/>"CFT-UNIX" "CFTL-NT" "CFT-MVS" "CFT-400" "CFT-NSK" "CFT-VMS"  |  PRODUCT_TYPE:<br/>"PEL-UNIX" "PEL-NT" "PEL-400" "PEL-NSK"  | PELIMVS  |
 | ProductName  | String  | 50  | N/A  | uconf: sentinel.trkproductname  | local_site_alias  | N/A  |
 
 
@@ -6975,25 +11925,183 @@
 
 
 
-============================== table nb count(454) table converted to MD ========================================
+============================== table nb count(454) table stayed in HTML ========================================
 
-
-| Sentinel  | Data type  | Length  | Description  | Name in  | InterPEL Core  | InterPEL MVS  |
-| --- | --- | --- | --- | --- | --- | --- |
-| CreationDate  | Date  | N/A  |  By default, the system date on which the Sender sent the transfer.<br/> • The Sender can set this date.<br/> • The Receiver can filter transfers based on this date.</li>  | From FDATE (Catalog)  | From hist_create_date: date  | CDATE=aaqqq  |
-| CreationTime  | Time  | N/A  |  By default, the system time at which the Sender sent the transfer.<br/> • The Sender can set this time.<br/> • The Receiver can filter transfers based on this time.</li>  | From FTIME (Catalog)  | From hist_create_date: time  | CTIME=hhmmss  |
-| SendDate  | Date  | N/A  |  If the value of the Direction attribute is:<br/> • E (Sender): The value of this attribute is the date on which the Sender recorded the transfer in the transfer catalog.<br/> • R (Receiver): The value of this attribute is the date on which the Receiver recorded the transfer in the transfer catalog. The Sender and the Receiver record each transfer only once.</li>  | From DATEK (Catalog)  | N/A  | N/A  |
-| SendTime  | Time  | N/A  |  If the value of the Direction attribute is:<br/> • E (Sender): The value of this attribute is the local time at which the Sender recorded the transfer in the transfer catalog.<br/> • R (Receiver): The value of this attribute is the local time at which the Receiver recorded the transfer in the transfer catalog.</li> The Sender and the Receiver record each transfer only once.  | From TIMEK (Catalog)  | N/A  | N/A  |
-| AckDate  | Date  | N/A  | Date on which the Receiver acknowledged the transfer (if any).  | From Current Date when ack  | N/A  | N/A  |
-| AckTime  | Time  | N/A  | Time at which the Receiver acknowledged the transfer (if any).  |
-| StartDate  | Date  | N/A  |  If the value of the State attribute is:<br/> • SENT: The value of this attribute is the date on which the Sender began sending the transfer.<br/> • RECEIVED: The value of this attribute is the date on which the Receiver began receiving the transfer.<br/>These dates are expressed in dd.mm.yyyy format.  | From DATEB (Catalog)  | From date_begin: date  |  (MVS) SDATE, MLHDATDT  |
-| StartTime  | Time  | N/A  |  If the value of the State attribute is:<br/> • SENT: The value of this attribute is the local time at which the Sender began sending the transfer.<br/> • RECEIVED: The value of this attribute is the local time at which the Receiver began receiving the transfer.<br/>These times are expressed in hh:mn:ss format.  | From TIMEB (Catalog)  | From date_begin: time  |  MLHHEUDT<br/>(MVS does not exist in Pelica2 requests)  |
-| EndDate  | Date  | N/A  |  If the value of the State attribute is:<br/> • SENT: The value of this attribute is the date on which the Sender stopped sending the transfer.<br/> • RECEIVED: The value of this attribute is the date on which the Receiver stopped receiving the transfer.<br/>These dates are expressed in dd.mm.yyyy format.  | From DATEE (Catalog)  | From date_end: date  |  MLHDATFT  |
-| EndTime  | Time  | N/A  |  If the value of the State attribute is:<br/> • SENT: The value of this attribute is the local time at which the Sender stopped sending the transfer.<br/> • RECEIVED: The value of this attribute is the local time at which the Receiver stopped receiving the transfer.<br/>These times are expressed in hh:mn:ss format.  | From TIMEE (Catalog)  | From date_end: time  |  MLHHEUFT  |
-| RequestCreationDate  | Date  | N/A  |  If the value of the State attribute is:<br/> • SENT: The value of this attribute is local date of the creation of the file on the Sender side.<br/> • </li>  | From FDATE (Catalog)  | From date_create: date  |  MLHDATR  |
-| RequestCreationTime  | Time  | N/A  |  If the value of the State attribute is:<br/> • SENT: The value of this attribute is local time of the creation of the file on the Sender side.<br/> • </li>  | From FTIME (Catalog)  | From date_create: time  |  MLHTIMR  |
-| TransmissionDuration  | Integer  | N/A  | Transfer duration, expressed in seconds.  | From TIMES (Catalog)  | date_end-date_begin  | MLHDATDT - MLHDATFT  |
-
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th >Sentinel</th>
+<th >Data type</th>
+<th >Length</th>
+<th >Description</th>
+<th >Name in</th>
+<th >InterPEL Core</th>
+<th >InterPEL MVS</th>
+</tr>
+</thead>
+<tbody>
+<tr  >
+<td >CreationDate</td>
+<td >Date</td>
+<td >N/A</td>
+<td ><p>By default, the system date on which the Sender sent the transfer.</p>
+<ul>
+<li>The Sender can set this date.</li>
+<li>The Receiver can filter transfers based on this date.</li>
+</ul></td>
+<td >From FDATE (Catalog)</td>
+<td >From hist_create_date: date</td>
+<td >CDATE=aaqqq</td>
+</tr>
+<tr  >
+<td >CreationTime</td>
+<td >Time</td>
+<td >N/A</td>
+<td ><p>By default, the system time at which the Sender sent the transfer.</p>
+<ul>
+<li>The Sender can set this time.</li>
+<li>The Receiver can filter transfers based on this time.</li>
+</ul></td>
+<td >From FTIME (Catalog)</td>
+<td >From hist_create_date: time</td>
+<td >CTIME=hhmmss</td>
+</tr>
+<tr  >
+<td >SendDate</td>
+<td >Date</td>
+<td >N/A</td>
+<td ><p>If the value of the Direction attribute is:</p>
+<ul>
+<li>E (Sender): The value of this attribute is the date on which the Sender recorded the transfer in the transfer catalog.</li>
+<li>R (Receiver): The value of this attribute is the date on which the Receiver recorded the transfer in the transfer catalog. The Sender and the Receiver record each transfer only once.</li>
+</ul></td>
+<td >From DATEK (Catalog)</td>
+<td >N/A</td>
+<td >N/A</td>
+</tr>
+<tr  >
+<td >SendTime</td>
+<td >Time</td>
+<td >N/A</td>
+<td ><p>If the value of the Direction attribute is:</p>
+<ul>
+<li>E (Sender): The value of this attribute is the local time at which the Sender recorded the transfer in the transfer catalog.</li>
+<li>R (Receiver): The value of this attribute is the local time at which the Receiver recorded the transfer in the transfer catalog.</li>
+</ul>
+The Sender and the Receiver record each transfer only once.</td>
+<td >From TIMEK (Catalog)</td>
+<td >N/A</td>
+<td >N/A</td>
+</tr>
+<tr  >
+<td >AckDate</td>
+<td >Date</td>
+<td >N/A</td>
+<td >Date on which the Receiver acknowledged the transfer (if any).</td>
+<td rowspan="2" >From Current Date when ack</td>
+<td rowspan="2" >N/A</td>
+<td rowspan="2" >N/A</td>
+</tr>
+<tr  >
+<td >AckTime</td>
+<td >Time</td>
+<td >N/A</td>
+<td >Time at which the Receiver acknowledged the transfer (if any).</td>
+</tr>
+<tr  >
+<td >StartDate</td>
+<td >Date</td>
+<td >N/A</td>
+<td ><p>If the value of the State attribute is:</p>
+<ul>
+<li>SENT: The value of this attribute is the date on which the Sender began sending the transfer.</li>
+<li>RECEIVED: The value of this attribute is the date on which the Receiver began receiving the transfer.</li>
+</ul>
+<p>These dates are expressed in dd.mm.yyyy format.</p></td>
+<td >From DATEB (Catalog)</td>
+<td >From date_begin: date</td>
+<td > (MVS) SDATE, MLHDATDT</td>
+</tr>
+<tr  >
+<td >StartTime</td>
+<td >Time</td>
+<td >N/A</td>
+<td ><p>If the value of the State attribute is:</p>
+<ul>
+<li>SENT: The value of this attribute is the local time at which the Sender began sending the transfer.</li>
+<li>RECEIVED: The value of this attribute is the local time at which the Receiver began receiving the transfer.</li>
+</ul>
+<p>These times are expressed in hh:mn:ss format.</p></td>
+<td >From TIMEB (Catalog)</td>
+<td >From date_begin: time</td>
+<td ><p>  MLHHEUDT</p>
+<p>(MVS does not exist in Pelica2 requests)</p></td>
+</tr>
+<tr  >
+<td >EndDate</td>
+<td >Date</td>
+<td >N/A</td>
+<td ><p>If the value of the State attribute is:</p>
+<ul>
+<li>SENT: The value of this attribute is the date on which the Sender stopped sending the transfer.</li>
+<li>RECEIVED: The value of this attribute is the date on which the Receiver stopped receiving the transfer.</li>
+</ul>
+<p>These dates are expressed in dd.mm.yyyy format.</p></td>
+<td >From DATEE (Catalog)</td>
+<td >From date_end: date</td>
+<td >  MLHDATFT</td>
+</tr>
+<tr  >
+<td >EndTime</td>
+<td >Time</td>
+<td >N/A</td>
+<td ><p>If the value of the State attribute is:</p>
+<ul>
+<li>SENT: The value of this attribute is the local time at which the Sender stopped sending the transfer.</li>
+<li>RECEIVED: The value of this attribute is the local time at which the Receiver stopped receiving the transfer.</li>
+</ul>
+<p>These times are expressed in hh:mn:ss format.</p></td>
+<td >From TIMEE (Catalog)</td>
+<td >From date_end: time</td>
+<td >  MLHHEUFT</td>
+</tr>
+<tr  >
+<td >RequestCreationDate</td>
+<td >Date</td>
+<td >N/A</td>
+<td ><p>If the value of the State attribute is:</p>
+<ul>
+<li>SENT: The value of this attribute is local date of the creation of the file on the Sender side.</li>
+<li></li>
+</ul></td>
+<td >From FDATE (Catalog)</td>
+<td >From date_create: date</td>
+<td >  MLHDATR</td>
+</tr>
+<tr  >
+<td >RequestCreationTime</td>
+<td >Time</td>
+<td >N/A</td>
+<td ><p>If the value of the State attribute is:</p>
+<ul>
+<li>SENT: The value of this attribute is local time of the creation of the file on the Sender side.</li>
+<li></li>
+</ul></td>
+<td >From FTIME (Catalog)</td>
+<td >From date_create: time</td>
+<td >  MLHTIMR</td>
+</tr>
+<tr  >
+<td >TransmissionDuration</td>
+<td >Integer</td>
+<td >N/A</td>
+<td >Transfer duration, expressed in seconds.</td>
+<td >From TIMES (Catalog)</td>
+<td >date_end-date_begin</td>
+<td >MLHDATDT - MLHDATFT</td>
+</tr>
+</tbody>
+</table>
 
 
 ============================== table nb count(455) table converted to MD ========================================
@@ -7013,15 +12121,193 @@
 
 | Sentinel  | Data type  | Length  | Description  | Transfer CFT  | InterPEL Core  | InterPEL MVS  |
 | --- | --- | --- | --- | --- | --- | --- |
-| Compression  | String  | 1  |  One of the following:<br/> • 0: Undefined<br/> • 1: Horizontal<br/> • 2: Vertical<br/> • 3: Both horizontal and vertical<br/> • 4: Not compressed<br/> • 5: Zlib</li>  |  From NCOMP (Catalog)<br/>ncomp = 0: 4<br/>0 &lt; ncomp = &lt; 8: 1<br/>ncomp = 8: 2<br/>8 &lt; ncomp = &lt; 16: 3<br/>ncomp = 16: 5  | From compression: same values  |  MLHCOMP  |
+| Compression  | String  | 1  |  One of the following:<br/> • 0: Undefined<br/> • 1: Horizontal<br/> • 2: Vertical<br/> • 3: Both horizontal and vertical<br/> • 4: Not compressed<br/> • 5: Zlib</li>  |  From NCOMP (Catalog)<br/>ncomp = 0: 4<br/>0 &lt; ncomp = &lt; 8: 1<br/>ncomp = 8: 2<br/>8qqqdoublespaceqqq&lt; ncomp = &lt; 16: 3<br/>ncomp = 16: 5  | From compression: same values  |  MLHCOMP  |
 | EOTProcedure  | String  | 255  | Name of the end-of-transfer procedure executed upon the completion of the transfer.  | EXEC  | end_xfer_scriptpath  | N/A  |
 | Priority  | Integer  | N/A  |  Transfer priority. Receivers process transfers in the order of their priority.<br/>The range of possible values for this attribute is 0 to 255.<br/>The lowest priority is zero. The highest priority is 255.  | PRI  | priority  | MLHPRIO  |
 | RetryMaxNumber  | Integer  | N/A  | Maximum number of times that the Sender can attempt to send transfers.  | RETRYM  | retry_count_max  | MLHRETMX  |
 | RetryNumber  | Integer  | N/A  |  Number of times that the Sender attempted to send the transfer.<br/>Each time the Sender established a connection with the Receiver, the Sender counted one attempt.  | RETRY  | retry_count  | MLHRETRY  |
-| RequestType  | String  | 1  |  One of the following:<br/> • S: The Sender sent a single transfer to a single Receiver.<br/> • F: The Sender sent a group of transfers to a single Receiver. For each transfer in the group, the product generated one Processing Cycle.<br/> • D: The Sender sent a single transfer to a group of Receivers (diffusion). For each Receiver in the group, the product generated one Processing Cycle.<br/> • P: Cyclic transfer.</li>  |  From DIFTYP and FILTYP (Catalog)  | from type : "S", "D".  |  N/A  |
+| RequestType  | String  | 1  |  One of the following:<br/> • S: The Sender sent a single transfer to a single Receiver.<br/> • F: The Sender sent a group of transfers to a single Receiver. For each transfer in the group, the product generated one Processing Cycle.<br/> • D: The Sender sent a single transfer to a group of Receivers (diffusion). For each Receiver in the group, the product generated one Processing Cycle.<br/> • P: Cyclic transfer.</li>  |  From DIFTYP and FILTYPqqqdoublespaceqqq(Catalog)  | from type : "S", "D".  |  N/A  |
 | TransferType  | String  | 1  |  One of the following:<br/> • S: The Sender sent a single transfer to a single Receiver.<br/> • F: The transfer belongs to a group of transfers that the Sender sent to a single Receiver. For each transfer in the group, the product generated one Processing Cycle.<br/> • D: The Receiver belongs to a group of Receivers to whom the Sender sent the transfer (diffusion). For each Receiver in the group, the product generated one Processing Cycle.</li>  | Same as box above  | N/A (Gateway value)  |  MLHLDFKL  |
 | IsPermanent  | Char  | N/A  | Permanent transfer  | N/A  | perm  | N/A  |
 
+
+
+============================== table nb count(457) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th >Sentinel attribute</th>
+<th >Data type</th>
+<th >Length</th>
+<th colspan="3" >Description</th>
+<th ><p>Transfer CFT</p></th>
+<th >InterPEL Core</th>
+<th >InterPEL MVS</th>
+</tr>
+</thead>
+<tbody>
+<tr  >
+<td >FileSize</td>
+<td >Integer</td>
+<td >N/A</td>
+<td colspan="3" ><p>Size of the transferred file. This size is expressed in bytes.  </p>
+<blockquote>
+<p><strong>Note</strong></p>
+<p>For PeSIT, an estimation of size is given at the beginning of the transfer. This value is updated upon completion of the transfer with the real value.</p>
+</blockquote></td>
+<td >FCARS</td>
+<td >  file_size</td>
+<td >  MLHNBYTE</td>
+</tr>
+<tr  >
+<td >TransmittedBytes</td>
+<td >Integer</td>
+<td >N/A</td>
+<td colspan="3" ><p>Number of bytes transferred, after decompression, to transfer the file. This size is expressed in bytes.  </p>
+<blockquote>
+<p><strong>Note</strong></p>
+<p>For PeSIT, this value sent is crosschecked by both the sender and receiver.</p>
+</blockquote></td>
+<td >NCARS</td>
+<td >x_bytes</td>
+<td >MLHABYTE</td>
+</tr>
+</tbody>
+</table>
+
+
+============================== table nb count(458) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th >Sentinel attribute</th>
+<th >Data type</th>
+<th >Length</th>
+<th colspan="3" >Description</th>
+<th ><p>Transfer CFT</p></th>
+<th >InterPEL Core</th>
+<th >InterPEL MVS</th>
+</tr>
+</thead>
+<tbody>
+<tr  >
+<td >CommandType</td>
+<td >String</td>
+<td >1</td>
+<td colspan="3" ><ul>
+<li>F: File transfer</li>
+<li>M: Message transfer</li>
+<li>A: Message reply</li>
+<li>N: Message nack</li>
+</ul></td>
+<td >TYPE</td>
+<td >type F or M (ack/nack is in "State")</td>
+<td ><p>TYPEREQ={S|C or M}</p></td>
+</tr>
+<tr  >
+<td ></td>
+<td >String</td>
+<td >25</td>
+<td colspan="3" ><ul>
+<li>org_sequential: The transferred data is not indexed.</li>
+<li>indexed: The transferred data is indexed.</li>
+<li>direct: The transferred data is assigned relative access.</li>
+</ul></td>
+<td >FORG</td>
+<td >file_org</td>
+<td >GENFILE FORG={AUTO|SEQ|…}</td>
+</tr>
+<tr  >
+<td rowspan="2" >FileType</td>
+<td rowspan="2" >String</td>
+<td rowspan="2" >60</td>
+<td colspan="3" >B: The transferred file is a binary file.</td>
+<td rowspan="2" >FTYPE</td>
+<td rowspan="2" >file_type</td>
+<td rowspan="2" >GENFILE RECFM= {FB | … }</td>
+</tr>
+<tr  >
+<td colspan="3" >J, T, O, X: The transferred file is a text file.</td>
+</tr>
+<tr  >
+<td >RecordNumber</td>
+<td >Integer</td>
+<td >N/A</td>
+<td colspan="3" ><p>Number of record in the file. This size is expressed in bytes.  </p>
+<blockquote>
+<p><strong>Note</strong></p>
+<p>For PeSIT, this value sent is crosschecked by both the sender and receiver.</p>
+</blockquote></td>
+<td >FREC</td>
+<td >rec_count</td>
+<td >MLHNBRER</td>
+</tr>
+<tr  >
+<td >RecordFormat</td>
+<td >String</td>
+<td >64</td>
+<td colspan="3" ><ul>
+<li>F: Fixed - The transferred data contains fixed-length records.</li>
+<li>V: Variable - The transferred data contains variable-length records.</li>
+<li>U: Undefined - The structure of the transferred data is unknown.</li>
+</ul></td>
+<td >FRECFM</td>
+<td ><p>xfer_rec_fmt:</p>
+<p>"F", "V",</p>
+<p>"S": Stream</p>
+<p>"T" : Text</p></td>
+<td >  MLH1RECF</td>
+</tr>
+<tr  >
+<td >RecordSize</td>
+<td >Integer</td>
+<td >N/A</td>
+<td colspan="3" ><p>If the value of RecordFormat attribute is fixed, the value of this attribute is the size of all records in the transferred file, expressed in bytes.</p>
+<p>If the value of RecordFormat is variable or undefined, the value of this attribute is the size of the largest record in the transferred file, expressed in bytes.</p></td>
+<td >FLRECL</td>
+<td >rec_len</td>
+<td >GENFILE LRECL=nnn</td>
+</tr>
+<tr  >
+<td >Transcoding</td>
+<td ></td>
+<td >(ITP Core: 25)</td>
+<td colspan="3" ><p>Character code of the transferred data:</p>
+<ul>
+<li>A: ASCII</li>
+<li>B: Binary</li>
+<li>E: EBCDIC</li>
+</ul></td>
+<td >FCODE</td>
+<td ><p>From: xfer_data_code,data_code:</p>
+<p>A/AT: ASCII (with Transco)</p>
+<p>E/ET: EBCDIC (with Transco)</p>
+<p>B/BT: Binary (with Transco)</p>
+<p>U/UT: Undefined (with Transco)</p></td>
+<td >  FILECODE {A|E|B}</td>
+</tr>
+<tr  >
+<td >TranslationTableId</td>
+<td >String</td>
+<td >25</td>
+<td colspan="3" >Name of the local translation table use during the transfer (if any).</td>
+<td >XLATE</td>
+<td >N/A (data_code, not set)</td>
+<td >N/A</td>
+</tr>
+<tr  >
+<td >BlockSize</td>
+<td >Integer</td>
+<td >N/A</td>
+<td colspan="3" >File block size (used by some OS)</td>
+<td >From FBLKSIZE (Catalog)</td>
+<td >block_size</td>
+<td >N/A</td>
+</tr>
+</tbody>
+</table>
 
 
 ============================== table nb count(459) table converted to MD ========================================
@@ -7034,7 +12320,7 @@
 | ParentCycleid  | String  | 250  | The identifier of the event which is the parent of the current event.  | ParentCycleid  | N/A  | N/A  |
 | CycleId  | String  | 250  | CycleId  | From TRKR (Catalog) symbolic variable &amp;XFRCYCID  | this_cycle_id (not stored)  | MLHTKCID  |
 | InternalCycleId  | String  | 155  | CycleID before hash.  | Not stored  | this_extended_cycle_id (not stored)  | Not stored  |
-| State  | String  | 20  | Transfer state.  |  From: STATE,PHASE,<br/>PHASESTEP,STATED,<br/>DIRECT,DIAGI,FLAF<br/>(Catalog):<br/>"CONSUMED", "SENDING",<br/>"SENT" "RECEIVING",<br/>"RECEIVED", "TO_EXECUTE",<br/>"CANCELED", "DELETED",<br/>"SUSPENDED"<br/>"INTERRUPTED", "CREATED",<br/>"TO_ROUTE","ACKED", "ENDED_TO_ACK",<br/>"AVAILABLE", "ROUTED","NACKED",<br/>"ENDED_TO-NACK",<br/>"PRE_PROC",<br/>"PRE_PROC_ABORT",<br/>"POST_PROC",<br/>"POST_PROC_ABORT", "POST_PROC-ACK", "POST_PROC_ACK_ABORT", "ACK_EXPECTED", "COMPLETED", "DELETED"  |  From state, direction, mode, user_processed, route_state:&lt;/p&gt; "CONSUMED", "SENDING", "SENT" "RECEIVING", "RECEIVED", "TO_EXECUTE", "CANCELED", "DELETED", "SUSPENDED" "INTERRUPTED", "CREATED", "TO_ROUTE", "TO_SIGN", "ACKED", "ENDED_TO_ACK", "AVAILABLE", "ROUTED", "ROUTE_FAILED"  | MLHSTATU  |
+| State  | String  | 20  | Transfer state.  |  From: STATE,PHASE,<br/>PHASESTEP,STATED,<br/>DIRECT,DIAGI,FLAF<br/>(Catalog):<br/>"CONSUMED", "SENDING",<br/>"SENT" "RECEIVING",<br/>"RECEIVED", "TO_EXECUTE",<br/>"CANCELED", "DELETED",<br/>"SUSPENDED"<br/>"INTERRUPTED", "CREATED",<br/>"TO_ROUTE","ACKED", "ENDED_TO_ACK",<br/>"AVAILABLE", "ROUTED","NACKED",<br/>"ENDED_TO-NACK",<br/>"PRE_PROC",<br/>"PRE_PROC_ABORT",<br/>"POST_PROC",<br/>"POST_PROC_ABORT", "POST_PROC-ACK", "POST_PROC_ACK_ABORT", "ACK_EXPECTED", "COMPLETED", "DELETED"  |  Fromqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqstate, qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqdirection, qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqmode, user_processed, qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqroute_state:&lt;/p&gt; "CONSUMED", "SENDING", "SENT" "RECEIVING", "RECEIVED", "TO_EXECUTE", "CANCELED", "DELETED", "SUSPENDED" "INTERRUPTED", "CREATED", "TO_ROUTE", "TO_SIGN", "ACKED", "ENDED_TO_ACK", "AVAILABLE", "ROUTED", "ROUTE_FAILED"  | MLHSTATU  |
 | ReturnCode  | String  | 20  | Last transfer diagnostic.  | From DIAGI and DIAGP (Catalog)  | last_end_diag  | MLHPDTSE + MLHPDCSE  |
 | UserState  | String  | 20  | Transfer user state.  | From APPSTATE (Catalog)  | user_state  | N/A  |
 
@@ -7058,8 +12344,82 @@
 | IsEnd  | Integer  | N/A  | End of message. (multi-messages)  | N/A  | 1  | N/A  |
 | SeverityClass  | String  | 10  | N/A  | N/A  |  From log message severity:<br/>"I" &gt; "IG"<br/>"W" &gt; "AV"<br/>"E" &gt; "EC"  |  From log message severity:<br/>"I" &gt; "IG"<br/>"W" &gt; "AV"<br/>"E" &gt; "EC"  |
 | Severity  | Integer  | N/A  | N/A  | N/A  |  From log message severity:<br/>"I" &gt; 1<br/>"W" &gt; 2<br/>"E" &gt; 3  | N/A  |
-| IsAlert  | Integer  | N/A  | Log message is an alert  | From log message severity: E,F &gt; "1"  |  From log message severity:<br/>"W",<br/>"E" &gt; "1"  | From Alert indication  |
+| IsAlert  | Integer  | N/A  | Log message is an alert  | From log message severity: E,F &gt; "1"  |  From log message severity:<br/>"W",<br/>"E" &gt; "1"  | FromqqqdoublespaceqqqAlert indication  |
 
+
+
+============================== table nb count(461) table stayed in HTML ========================================
+
+<table  data-cellspacing="0"  width="90%">
+<colgroup>
+<col  />
+<col  />
+</colgroup>
+<thead>
+<tr >
+<th >Step</th>
+<th >Your remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr  data-valign="top">
+<td colspan="2"  >1. Identify the symptoms</td>
+</tr>
+<tr  data-valign="top">
+<td   width="50%"><p>Did the system crash?</p></td>
+<td   width="50%"><p> </p></td>
+</tr>
+<tr  data-valign="top">
+<td   width="50%"><p>Is the error message due to a transfer request, a transfer
+in server mode, or other?</p></td>
+<td   width="50%"><p> </p></td>
+</tr>
+<tr  data-valign="top">
+<td   width="50%"><p>Is Transfer CFT functioning abnormally?</p></td>
+<td   width="50%"><p> </p></td>
+</tr>
+<tr  data-valign="top">
+<td   width="50%"><p>Is the symptom persistent?</p></td>
+<td   width="50%"><p> </p></td>
+</tr>
+<tr  data-valign="top">
+<td   width="50%"><p>Can you reproduce the symptom?</p></td>
+<td   width="50%"><p> </p></td>
+</tr>
+<tr  data-valign="top">
+<td colspan="2"   width="50%"><p>2. Locate the problem</p></td>
+</tr>
+<tr  data-valign="top">
+<td   width="50%"><p>Which component and function are concerned?</p></td>
+<td   width="50%"><p> </p></td>
+</tr>
+<tr  data-valign="top">
+<td   width="50%"><p>Can you identify the source of the problem?</p></td>
+<td   width="50%"><p> </p></td>
+</tr>
+<tr  data-valign="top">
+<td   width="50%"><p>Can you bypass the problem?</p></td>
+<td   width="50%"><p> </p></td>
+</tr>
+<tr  data-valign="top">
+<td colspan="2"   width="50%"><p>3. Find the cause</p></td>
+</tr>
+<tr  data-valign="top">
+<td   width="50%"><p>Has your system or Transfer CFT recently been re-configured?</p></td>
+<td   width="50%"><p> </p></td>
+</tr>
+<tr  data-valign="top">
+<td   width="50%"><p>Have you installed a new component, either hardware or
+software?</p></td>
+<td   width="50%"><p> </p></td>
+</tr>
+<tr  data-valign="top">
+<td   width="50%"><p>Has the problem only recently occurred, or has it existed
+for some time?</p></td>
+<td   width="50%"><p> </p></td>
+</tr>
+</tbody>
+</table>
 
 
 ============================== table nb count(462) table converted to MD ========================================
@@ -7084,7 +12444,7 @@
 |  Try with a telnet (&lt;host&gt; &lt;sap&gt;) or ftp (&lt;host&gt; &lt;sap&gt;)  |  <li> The remote port is reachable via telnet when you have the following message: "Escape character is '^]'." (Ctrl+$ to escape) <br/> • The remote port is reachable via ftp when you have the following message: Connected to &lt;host&gt; (Ctrl + C to escape) </li>  |
 |  Host and port are reachable but I still have the diagnostic code 302  |   |
 |  Check the diagp error  |  If diagp = R 0 2f2, the remote partner closed the connection due to the following reasons:<br/> • Incompatibility between TCP and pTCP (the remote is configured in pTCP network protocol whereas you are in TCP) <br/> • The cft.server.max_session value is not equal to 0 but is less than the MAXCNX one (in CFTNET object) <br/> • The remote MAXCNX is reached </li>  |
-|   |  If diagp = R 01 280 or R 00 280, the timeout was reached because of:<br/> • A network issue (router, firewall, or other application...) <br/> • An incompatibility in the IP protocol version: </li> <ol> <li> Check that locally and remotely all is configured with the same IP version (IPV4 , IPV6). &lt;/li&gt;&lt;li value="2"&gt;Check the following uconf values: cft.ipv6.disable_listen cft.ipv6.disable_connect &lt;br/&gt;HOST value (CFTNET object).yes (the default value) &lt;/li&gt;&lt;/ol&gt; &lt;ul&gt;&lt;li&gt;&lt;p&gt;Try a Transfer CFT packet analyzer such as &lt;a class="Hyperlink_1" href="https://www.wireshark.org/"&gt;Wireshark&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;</li> </ol>  |
+|   |  If diagp = R 01 280 or R 00 280, the timeout was reached because of:<br/> • A network issue (router, firewall, or other application...) <br/> • An incompatibility in the IP protocol version: </li> <ol> <li>qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqCheck that locally and remotely all is configured with the same IP version (IPV4 , IPV6). &lt;/li&gt;&lt;li value="2"&gt;Check the following uconf values: cft.ipv6.disable_listen cft.ipv6.disable_connect &lt;br/&gt;HOST value (CFTNET object).yes (the default value) qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/li&gt;&lt;/ol&gt; &lt;ul&gt;&lt;li&gt;&lt;p&gt;Try a Transfer CFTqqqdoublespaceqqq packet analyzer such as &lt;a  href="https://www.wireshark.org/"&gt;Wireshark&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;</li> </ol>  |
 |  Still have the diagnostic code 302 and don't understand the diagp  |   |
 | Check the traces  |  Check the contents of the following file:<br/>UNIX: Transfer_CFT/runtime/run folder &gt; cft.out file<br/> • Windows: Transfer_CFT\runtime\run folder &gt; cftnet.trc file </li>  |
 
@@ -7129,6 +12489,79 @@
 
 
 
+============================== table nb count(468) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th >Issue</th>
+<th colspan="5" >Typical causes</th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td > </td>
+<td ><p>Hard disk bottleneck</p></td>
+<td ><p>Catalog</p>
+<p>full</p></td>
+<td ><p>Network</p>
+<p>bottleneck</p></td>
+<td ><p>Memory or processor bottleneck*</p></td>
+<td ><p>Corrupt</p>
+<p>file or DB **</p></td>
+</tr>
+<tr >
+<td >Performance</td>
+<td >Disk check</td>
+<td > </td>
+<td >Network checks</td>
+<td >Check application</td>
+<td > </td>
+</tr>
+<tr >
+<td >Start issue</td>
+<td >Disk check</td>
+<td >Catalog check</td>
+<td >Network checks</td>
+<td >timeout</td>
+<td >Checkqqqdoublespaceqqq{{&lt; TransferCFT/componentlongname &gt;}} files</td>
+</tr>
+<tr >
+<td >Unexpected stop</td>
+<td >Disk check</td>
+<td >Catalog check</td>
+<td >Network checks</td>
+<td > </td>
+<td >Checkqqqdoublespaceqqq{{&lt; TransferCFT/componentlongname &gt;}} files</td>
+</tr>
+<tr >
+<td >Transfer freeze or infinite looping</td>
+<td >Disk check</td>
+<td > </td>
+<td >Network checks</td>
+<td >Check application</td>
+<td >Checkqqqdoublespaceqqq{{&lt; TransferCFT/componentlongname &gt;}} files</td>
+</tr>
+<tr >
+<td >SP and updates</td>
+<td >Disk check</td>
+<td > </td>
+<td > </td>
+<td > </td>
+<td > </td>
+</tr>
+<tr >
+<td >Crash</td>
+<td >Disk check</td>
+<td > </td>
+<td >Network checks</td>
+<td > </td>
+<td >Checkqqqdoublespaceqqq{{&lt; TransferCFT/componentlongname &gt;}} files</td>
+</tr>
+</tbody>
+</table>
+
+
 ============================== table nb count(469) table converted to MD ========================================
 
 
@@ -7147,7 +12580,7 @@
  --- | --- | --- |
 |  COMMAND  |  Request keyword.  |
 |  INDEX  |  Request number as displayed by the LISTCOM command.<br/>For example:<br/> • <code>INDEX=*</code> Selects all record numbers.<br/> • <code>INDEX=12345</code> Selects the record number 12345 in the COM file.</li>  |
-| JOBNAME  |  Jobname (string 15), which you can combine with wildcard characters.<br/>For example:<br/> • JOBNAME=12345<br/> • JOBNAME=123*<br/> • JOBNAME=12?45</li>  |
+| JOBNAME  |  Jobnameqqqdoublespaceqqq (string 15), which you can combine with wildcard characters.<br/>For example:<br/> • JOBNAME=12345<br/> • JOBNAME=123*<br/> • JOBNAME=12?45</li>  |
 |  USERID  |  Identifier of the request owner.  |
 
 
@@ -7168,7 +12601,7 @@
 
 |  V23 format<br/>V24 format Information  |  <span id="CFTC08I"></span>CFTC08I &amp;str<br/>CFTC08I &amp;str  |
 | --- | --- |
-| Explanation  |  Possible values for &amp;str are described here. The following messages are displayed when the catalog is purged on {{&lt; TransferCFT/componentshortname &gt;}} startup, or at the time set for the daily purge. For example:<br/>When there are no transfers to delete: <div class="indentTableNested"> Purge Started<br /> Purge catalog-size=1000 in-use=0 pre-filtered=0(0%)<br /> Purge Treated: catalog empty<br /> Purge deleted= n treated=n(d%) match=d%.<br /> Purge Treated<br /> Purge Treated: no record found to delete </div> When there are transfers to delete: <div class="indentTableNested"> Catalog: Loading...<br /> Catalog: Load Done<br /> Catalog: Size=100, Used=8(8%)<br /> Purge Started.<br /> Purge catalog-size=100 in-use=8 pre-filtered=8(100)<br /> Purge deleted=1 treated=1(12) match=100<br /> Purge deleted=2 treated=2(25) match=100<br /> ….<br /> Purge deleted=8 treated=8(100) match=100<br /> Purge Treated. </div> When {{&lt; TransferCFT/componentshortname &gt;}} starts: <div class="indentTableNested"> If there are no transfers to delete: <div class="indentTableNested"> Catalog: Loading...<br /> Catalog: Load Done<br /> Catalog: Size= &amp;00, Used=0(0%)<br /> </div> If there are transfers to delete: <div class="indentTableNested"> Catalog: Loading...<br /> Catalog: Load Done<br /> Catalog: Size=100, Used=8(8%) </div> </div> If there is a problem with the catalog INIT: <div class="indentTableNested"> Catalog: Recovering<br /> Catalog: Recovery Done: n errors<br /> Catalog Recovery: n transfers from C to D state </div>  |
+| Explanation  |  Possible values for &amp;str are described here. The following messages are displayed when the catalog is purged on {{&lt; TransferCFT/componentshortname &gt;}} startup, or at the time set for the daily purge. For example:<br/>When there are no transfers to delete: <div > Purge Started<br /> Purge catalog-size=1000 in-use=0 pre-filtered=0(0%)<br /> Purge Treated: catalog empty<br /> Purge deleted= n treated=n(d%) match=d%.<br /> Purge Treated<br /> Purge Treated: no record found to delete </div> When there are transfers to delete: <div > Catalog: Loading...<br /> Catalog: Load Done<br /> Catalog: Size=100, Used=8(8%)<br /> Purge Started.<br /> Purge catalog-size=100 in-use=8 pre-filtered=8(100)<br /> Purge deleted=1 treated=1(12) match=100<br /> Purge deleted=2 treated=2(25) match=100<br /> ….<br /> Purge deleted=8 treated=8(100) match=100<br /> Purge Treated. </div> When {{&lt; TransferCFT/componentshortname &gt;}} starts: <div > If there are no transfers to delete: <div > Catalog: Loading...<br /> Catalog: Load Done<br /> Catalog: Size= &amp;00, Used=0(0%)<br /> </div> If there are transfers to delete: <div > Catalog: Loading...<br /> Catalog: Load Done<br /> Catalog: Size=100, Used=8(8%) </div> </div> If there is a problem with the catalog INIT: <div > Catalog: Recovering<br /> Catalog: Recovery Done: n errors<br /> Catalog Recovery: n transfers from C to D state </div>  |
 
 
 
@@ -7186,7 +12619,7 @@
 
 |  V23 format<br/>V24 format<br/>Fatal  |  <span id="CFTI01F"></span>CFTI01F &amp;str <br/>CFTI01F &amp;str  |
 | --- | --- |
-|  Explanation  |  Internal {{&lt; TransferCFT/componentshortname &gt;}} execution error.<br/>The field "&amp;str" can have the following values:<br/> • CFT error &amp;scs:{{&lt; TransferCFT/componentshortname &gt;}} inter-task communication system problem (waiting for the CFTMAIN scheduler task queue)<br/> • CFT error _ usage expired:The {{&lt; TransferCFT/componentshortname &gt;}} user key (CFTPARM KEY) does not authorize {{&lt; TransferCFT/componentshortname &gt;}} execution beyond the expired period<br/> • CFT error _ CFT usage not authorized:The {{&lt; TransferCFT/componentshortname &gt;}} user key (CFTPARM KEY) does not authorize {{&lt; TransferCFT/componentshortname &gt;}} execution on this operating system or computer<br/> • CFT error _ file keys not available: The {{&lt; TransferCFT/componentshortname &gt;}} user keys are stored in an indirection file (CFTPARM KEY parameter); this file cannot be accessed by {{&lt; TransferCFT/componentshortname &gt;}}<br/> • CFT error &amp;scs _ Common_area allocation failed:Definition of the memory area common to the {{&lt; TransferCFT/componentshortname &gt;}} tasks has failed. This can be caused by insufficient memory<br/> • CFT error &amp;scs _ Mailbox definition failed: {{&lt; TransferCFT/componentshortname &gt;}} is unable to link to a mailbox defined by the *CFTOM command<br/> • CFT error &amp;scs _ CFT semaphore definition failed:{{&lt; TransferCFT/componentshortname &gt;}} is unable to define an inter-task communications queue<br/> • CFT error _ CFTEXIT ID=&amp;id missing: A {{&lt; TransferCFT/componentshortname &gt;}} task dedicated to file EXITs could not be activated (the CFTEXIT command relating to the identifier mentioned (ID) was not found)<br/> • CFT error _ Maximum process CFTEXIT running reached: A {{&lt; TransferCFT/componentshortname &gt;}} task dedicated to file EXITs could not be activated (the maximum number of EXIT processes that can be activated has already been reached)<br/> • CFT error &amp;cs _ Initializing process CFTEXIT: A {{&lt; TransferCFT/componentshortname &gt;}} task dedicated to file EXITs could not be activated (the maximum number of EXIT processes that can be activated has already been reached)<br/> • CFT error _ &amp;Net Network Access Method Option not authorized by license key:The {{&lt; TransferCFT/componentshortname &gt;}} is NOT authorized to use the optional network access method designated by &amp;Net (TCP/IP).<br/> • CFT error _ SSL Protocol Option not authorized by license key:A protocol defined in the CFTPARM object uses the SSL option, but the SSL option is not available with this license key.<br/> • CFT error _ FIPS Compliance Option not authorized by license key:The uconf:cft.fips.enable_compliance parameter is set to Yes, but the FIPS option is not available with this license key.<br/> • CFT error _ File Transfer Acceleration Option not authorized by license key:The uconf:acceleration.enable parameter is set to Yes, but the acceleration option is not available with this license key.</li>  |
+|  Explanation  |  Internal {{&lt; TransferCFT/componentshortname &gt;}} execution error.<br/>The field "&amp;str" can have the following values:<br/> • CFT error &amp;scs:{{&lt; TransferCFT/componentshortname &gt;}} inter-task communication system problem (waiting for the CFTMAIN scheduler task queue)<br/> • CFT error _ usage expired:The {{&lt; TransferCFT/componentshortname &gt;}} user key (CFTPARM KEY) does not authorize {{&lt; TransferCFT/componentshortname &gt;}} execution beyond the expired period<br/> • CFT error _ CFT usage not authorized:The {{&lt; TransferCFT/componentshortname &gt;}} user key (CFTPARM KEY) does not authorize {{&lt; TransferCFT/componentshortname &gt;}} execution on this operating system or computer<br/> • CFT error _ file keys not available: The {{&lt; TransferCFT/componentshortname &gt;}} user keys are stored in an indirection file (CFTPARM KEY parameter); this file cannot be accessed by {{&lt; TransferCFT/componentshortname &gt;}}<br/> • CFT error &amp;scs _ Common_area allocation failed:Definition of the memory area common to the {{&lt; TransferCFT/componentshortname &gt;}} tasks has failed. This can be caused by insufficient memory<br/> • CFT error &amp;scs _ Mailbox definition failed: {{&lt; TransferCFT/componentshortname &gt;}} is unable to link to a mailbox defined by the *CFTOM command<br/> • CFT error &amp;scs _ CFT semaphore definition failed:{{&lt; TransferCFT/componentshortname &gt;}} is unable to define an inter-task communications queue<br/> • CFT error _ CFTEXIT ID=&amp;id missing: A {{&lt; TransferCFT/componentshortname &gt;}} task dedicated to file EXITs could not be activated (the CFTEXIT command relating to the identifier mentioned (ID) was not found)<br/> • CFT error _ Maximum process CFTEXIT running reached: A {{&lt; TransferCFT/componentshortname &gt;}} task dedicated to file EXITs could not be activated (the maximum number of EXIT processes that can be activated has already been reached)<br/> • CFT error &amp;cs _ Initializing process CFTEXIT: A {{&lt; TransferCFT/componentshortname &gt;}} task dedicated to file EXITs could not be activated (the maximum number of EXIT processes that can be activated has already been reached)<br/> • CFT error _ &amp;Net Network Access Method Option not authorized by license key:The {{&lt; TransferCFT/componentshortname &gt;}} is NOT authorized to use the optional network access method designated by &amp;Net (TCP/IP).<br/> • CFT error _ SSL Protocol Option not authorized by license key:A protocol defined in the CFTPARM object uses the SSL option, but the SSL option is not available with this license key.<br/> • CFT error _ FIPS Compliance Option not authorized by license key:The uconf:cft.fips.enable_compliance parameter is set to Yes, but the FIPS option is not available with this license key.<br/> • CFT error _ File Transfer AccelerationqqqdoublespaceqqqOption not authorized by license key:The uconf:acceleration.enable parameter is set to Yes, but the acceleration option is not available with this license key.</li>  |
 |  Consequence  |  The transfer concerned by the incident is interrupted, which is the K status.  |
 |  Action  |  Check parameter settings, analyze the &amp;cs code value to determine, if necessary, the origin of the error:<br/> • CFT error &amp;scs _ LOG stop failed: The message logging task cannot be stopped<br/> • CFT error &amp;scs _ mailbox delete failed: A mailbox defined by a CFTCOM command cannot be deleted</li>  |
 |  Consequence  |  The Transfer CFT initialization phase has stopped.  |
@@ -7367,7 +12800,7 @@
 
 |  V23 format<br/>V24 format<br/>Information  |  <span id="CFTI18I"></span>CFTI18I _ &amp;str<br/>CFTI18I _ &amp;str  |
 | --- | --- |
-|  Explanation  |  This is a {{&lt; TransferCFT/componentshortname &gt;}} welcome message describing the computer environment and the main runtime characteristics, according to the options activated by the software key (KEY parameter):<br/> • Usage of this product is strictly limited to &amp;cpu_id machine: The {{&lt; TransferCFT/componentshortname &gt;}} can only be executed on the computer with the designated CPU<br/> • Usage of this product is strictly limited to &amp;label: The {{&lt; TransferCFT/componentshortname &gt;}} can only be executed within a specific framework, as designated by &amp;label<br/> • Usage of this product is strictly limited until &amp;date: The {{&lt; TransferCFT/componentshortname &gt;}} cannot be executed after the date designated by &amp;date<br/> • &amp;Maxtrans simultaneous transfer(s) is(are) authorized: {{&lt; TransferCFT/componentshortname &gt;}} cannot process more than &amp;Maxtrans simultaneous transfers. This value overrides the MAXTRANS parameter in the CFTPARM command<br/> • &amp;Net Network Access Method Option is authorized: The {{&lt; TransferCFT/componentshortname &gt;}} is authorized to use the optional network access method designated by &amp;Net (TCP/IP) <li>The information in this message is related to the UCONF setting for server.authentication_method.<br/> • For more information on Access Management parameters, see the Password authentication for synchronous communication media section in <a href="../../../internal_a_m_start_here/about_passport_am/unconf_access_management">Access Management and PassPort AM parameters</a>.</li> <br/> • &amp;Prot Protocol Option is authorized: {{&lt; TransferCFT/componentshortname &gt;}} is authorized to use the protocol option designated by &amp;Prot (Secure PeSIT)<br/>If an attempt is made to use an unauthorized option, such as a network access method or protocol option, {{&lt; TransferCFT/componentshortname &gt;}} does not start, and displays a message.<br /> Information messages include: <div class="indentTable"> <li>FNAME: CFTLOG name<br/> • AFNAME: CFTALOG name<br/> • TYPE: File FNAME: file communication name<br/> • TYPE :Mbx FNAME : mailbox name<br/> • TYPE :TCPIP HOST: host name PORT: port if synchronous communication</li> </div> If PassPort is used for SSL:<br/> • CFTI18I hostname : addrhost<br/> • CFTI18I port : port number<br/> • See also <a href="../../../internal_a_m_start_here/about_passport_am/unconf_access_management">Access Management and PassPort AM parameters</a>.</li>  |
+|  Explanation  |  This is a {{&lt; TransferCFT/componentshortname &gt;}} welcome message describing the computer environment and the main runtime characteristics, according to the options activated by the software key (KEY parameter):<br/> • Usage of this product is strictly limited to &amp;cpu_id machine: The {{&lt; TransferCFT/componentshortname &gt;}} can only be executed on the computer with the designated CPU<br/> • Usage of this product is strictly limited to &amp;label: The {{&lt; TransferCFT/componentshortname &gt;}} can only be executed within a specific framework, as designated by &amp;label<br/> • Usage of this product is strictly limited until &amp;date: The {{&lt; TransferCFT/componentshortname &gt;}} cannot be executed after the date designated by &amp;date<br/> • &amp;Maxtrans simultaneous transfer(s) is(are) authorized: {{&lt; TransferCFT/componentshortname &gt;}} cannot process more than &amp;Maxtrans simultaneous transfers. This value overrides the MAXTRANS parameter in the CFTPARM command<br/> • &amp;Net Network Access Method Option is authorized: The {{&lt; TransferCFT/componentshortname &gt;}} is authorized to use the optional network access method designated by &amp;Net (TCP/IP) <li>The information in this message is related to the UCONF setting for server.authentication_method.<br/> • For more information on Access Management parameters, see the Password authentication for synchronous communication media section inqqqdoublespaceqqq <a href="../../../internal_a_m_start_here/about_passport_am/unconf_access_management">Access Management and PassPort AM parameters</a>.</li> <br/> • &amp;Prot Protocol Option is authorized: {{&lt; TransferCFT/componentshortname &gt;}} is authorized to use the protocol option designated by &amp;Prot (Secure PeSIT)<br/>If an attempt is made to use an unauthorized option, such as a network access method or protocol option, {{&lt; TransferCFT/componentshortname &gt;}} does not start, and displays a message.<br /> Information messages include: <div > <li>FNAME:qqqdoublespaceqqqCFTLOG name<br/> • AFNAME: CFTALOG name<br/> • TYPE: Fileqqqdoublespaceqqq FNAME: file communication name<br/> • TYPE :MbxqqqdoublespaceqqqFNAME : mailbox name<br/> • TYPE :TCPIP HOST: host name PORT: portqqqdoublespaceqqqqqqdoublespaceqqqif synchronous communication</li> </div> If PassPort is used for SSL:<br/> • CFTI18Iqqqdoublespaceqqqqqqdoublespaceqqqhostname : addrhost<br/> • CFTI18Iqqqdoublespaceqqqqqqdoublespaceqqqportqqqdoublespaceqqqqqqdoublespaceqqq: port number<br/> • See also <a href="../../../internal_a_m_start_here/about_passport_am/unconf_access_management">Access Management and PassPort AM parameters</a>.</li>  |
 |  Consequence  |  {{&lt; TransferCFT/componentshortname &gt;}} is stopped during the initialization phase.  |
 
 
@@ -7398,7 +12831,7 @@
 |  V23 format<br/>V24 format<br/>Fatal  |  <span id="CFTI20F"></span>CFTI20F Semaphore definition failure CR=&amp;cr CS= &amp;scs<br/>CFTI20F Semaphore definition failure CR=&amp;cr CS= &amp;scs  |
 | --- | --- |
 |  Explanation  |  Cannot define the internal communications queue.  |
-|  Consequence  |  {{&lt; TransferCFT/componentshortname &gt;}} is stopped during its initialization phase.  |
+|  Consequence  |  {{&lt; TransferCFT/componentshortname &gt;}}qqqdoublespaceqqqis stopped during its initialization phase.  |
 
 
 
@@ -7408,7 +12841,7 @@
 |  V23 format<br/>V24 format<br/>Error  |  <span id="CFTI21F"></span>CFTI21F CFTNET=&amp;id Resource define failure CS=&amp;ncs<br/>CFTI21F CFTNET=&amp;id Resource define failure CS=&amp;ncs  |
 | --- | --- |
 |  Explanation  |  Cannot define the resource. The resource identifier for this CFTNET command displays in the message.  |
-|  Consequence  |  {{&lt; TransferCFT/componentshortname &gt;}} is stopped during its initialization phase.  |
+|  Consequence  |  {{&lt; TransferCFT/componentshortname &gt;}}qqqdoublespaceqqqis stopped during its initialization phase.  |
 
 
 
@@ -7418,7 +12851,7 @@
 |  V23 format<br/>V24 format<br/>Error  |  <span id="CFTI22F"></span>CFTI22F CFTPROT=&amp;id Register request failure CS=&amp;ncs<br/>CFTI22F CFTPROT=&amp;id Register request failure CS=&amp;ncs  |
 | --- | --- |
 |  Explanation  |  Cannot register the protocol defined in this CFTPROT command.  |
-|  Consequence  |  {{&lt; TransferCFT/componentshortname &gt;}} is stopped during its initialization phase.  |
+|  Consequence  |  {{&lt; TransferCFT/componentshortname &gt;}}qqqdoublespaceqqqis stopped during its initialization phase.  |
 
 
 
@@ -7444,9 +12877,9 @@
 ============================== table nb count(499) table converted to MD ========================================
 
 
-|  V23 format<br/>V24 format<br/>Information  |  <span id="CFTI25I"></span>CFTI25I Init complete _ Security active [&amp;str]<br/>CFTI25I Init complete _ Security active [&amp;str]  |
+|  V23 format<br/>V24 format<br/>Information  |  <span id="CFTI25I"></span>CFTI25I Init complete _ Securityqqqdoublespaceqqqactive [&amp;str]<br/>CFTI25I Init complete _ Securityqqqdoublespaceqqqactive [&amp;str]  |
 | --- | --- |
-|  Explanation  |  The description of the message &amp;str specifies the activated security options:<br/> • HAB: Normal end of initialization with activation of the {{&lt; TransferCFT/componentshortname &gt;}} security system<br/> • SSL: Normal end of initialization with activation of the SSL protocol<br/>The information in this message is affected by the UCONF setting for access management. For more information, see the am.type parameter and access management options in <a href="../../../internal_a_m_start_here/about_passport_am/unconf_access_management">Access Management and PassPort AM parameters</a>.  |
+|  Explanation  |  The description of the message &amp;str specifies theqqqdoublespaceqqqactivated security options:<br/> • HAB:qqqdoublespaceqqqNormal end of initialization with activation of the {{&lt; TransferCFT/componentshortname &gt;}} securityqqqdoublespaceqqqsystem<br/> • SSL: Normal end of initialization with activation of theqqqdoublespaceqqqSSL protocol<br/>The information in this message is affected by the UCONF setting for access management. For more information, see the am.type parameter and access management options in <a href="../../../internal_a_m_start_here/about_passport_am/unconf_access_management">Access Management and PassPort AM parameters</a>.  |
 
 
 
@@ -7475,7 +12908,7 @@
 
 |  V23 format<br/>V24 format<br/>Information  |  <span id="CFTI28I"></span>CFTI28I Init complete <br/>CFTI28I Init complete  |
 | --- | --- |
-|  Explanation  |  Message on initialization of CFTMAIN. With following Message CFTI18I FNAME :catalog name.  |
+|  Explanation  |  Message on initialization of CFTMAIN. With following Message CFTI18IqqqdoublespaceqqqqqqdoublespaceqqqFNAMEqqqdoublespaceqqq:catalog name.  |
 
 
 
@@ -7502,7 +12935,7 @@
 
 |  V23 format<br/>V24 format<br/>Information  |  <span id="CFTI36I"></span>CFTI36I CRONJOB: ID=&amp;idcron, CRONTAB=&amp;cronname &amp;str<br/>CFTI36I CRONJOB: ID=&amp;idcron, CRONTAB=&amp;cronname &amp;str  |
 | --- | --- |
-|  Explanation  |  &amp;Idcron = CFTCRON command identifier<br/>&amp;Cronname = id of the list in CRONTABS in CFTPARM<br/>&amp;Str=<br/> • INSERT OK: NEXT= date time ,TIME=&amp;str - (&amp;str= TIME of CFTCRON command defined by ID)<br/> • INSERT OK: NOACTIVE- The CFTCRON with a STATE=NOACTIVE in the configuration is not activated.<br/> • Not enabled - (cronname not defined in the CRONTABS list)</li>  |
+|  Explanation  |  &amp;Idcron = CFTCRON command identifier<br/>&amp;Cronname =qqqdoublespaceqqqid ofqqqdoublespaceqqqthe listqqqdoublespaceqqqinqqqdoublespaceqqqCRONTABS in CFTPARM<br/>&amp;Str=<br/> • INSERT OK: NEXT= date time ,TIME=&amp;str - (&amp;str= TIME of CFTCRON command defined by ID)<br/> • INSERT OK: NOACTIVE- The CFTCRON with a STATE=NOACTIVE in the configuration is not activated.<br/> • Not enabled - (cronname not defined in the CRONTABS list)</li>  |
 
 
 
@@ -7520,7 +12953,7 @@
 
 |  V23 format<br/>V24 format<br/>Information  |  <span id="CFTI39I"></span>CFTI39I &amp;str<br/>CFTI39I &amp;str  |
 | --- | --- |
-|  Explanation  |  Displays information about the {{&lt; TransferCFT/componentshortname &gt;}} Heartbeat. Possible states:<br/> • Enable<br/> • Update UCONF parameters<br/> • Disable</li>  |
+|  Explanation  |  Displays information about the {{&lt; TransferCFT/componentshortname &gt;}} Heartbeat. Possible states:<br/> • Enable<br/> • UpdateqqqdoublespaceqqqUCONF parameters<br/> • Disable</li>  |
 
 
 
@@ -7547,37 +12980,37 @@
 
 |  V23 format<br/>V24 format<br/>Error  |  <span id="CFTI42E"></span>CFTI42E PID=&amp;pid &amp;task Task startup error failed to lock resource '&amp;pid_file_name': resource already locked<br/>CFTI42E PID=&amp;pid &amp;task Task startup error failed to lock resource '&amp;pid_file_name': resource already locked  |
 | --- | --- |
-|  Explanation  |  The pid_file_name that is used to ensure process uniqueness could not be locked, causing the task to fail.<br/>Locate and stop the locked process. If this does not resolve the issue, restart the server using the "force-stop" mode.  |
+|  Explanation  |  The pid_file_name that is usedqqqdoublespaceqqqto ensure process uniqueness could not be locked, causing the task to fail.<br/>Locate and stop the locked process. If this does not resolve the issue, restart the server using the "force-stop" mode.  |
 
 
 
 ============================== table nb count(511) table converted to MD ========================================
 
 
-|  V23 format<br/>V24 format<br/>Information  |  <span id="CFTI42E"></span><span id="CFTI43I"></span>CFTI43I Attention: The Transfer CFT license expires in n days<br/>CFTI43I Attention: The Transfer CFT license expires in n days  |
+|  V23 format<br/>V24 format<br/>Information  |  <span id="CFTI42E"></span><span id="CFTI43I"></span>CFTI43IqqqdoublespaceqqqAttention: The Transfer CFT license expires in n days<br/>CFTI43IqqqdoublespaceqqqAttention: The Transfer CFT license expires in n days  |
 | --- | --- |
 |  Explanation  |  There are 7 days remaining on the license key for Transfer CFT.  |
-| Action  |  To obtain a new key: <ol> <li>For an existing installation, use the command <code>cftutil about</code> to retrieve your system information. The **ABOUT** command displays the Transfer CFT product, host, and key information, and characteristics of the platform on which Transfer CFT is installed.<br/> • Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key. <li>For a US key, contact: <code>fulfillment@us.axway.com</code><br/> • For an EMEA or APAC key, contact: <code>product.key@axway.com</code></li> <br/> • Provide the hostname and system information for the installed or updated Transfer CFT.</li> </ol> To apply the key:<br/>To apply the license key from the Axway Fulfillment team, either:<br/> • Enter the key directly.<br/> • Enter the key(s) in the indirection file.</li> <blockquote> **Note:**<br/>When working in multi-node you must have one key per node and host. </blockquote> See the *Apply a license key* section in the Transfer CFT Installation Guide that corresponds with your OS for details.  |
+| Action  |  To obtain a new key: <ol> <li>For an existing installation, use theqqqdoublespaceqqqcommand <code>cftutil about</code> to retrieve your system information. The **ABOUT** command displays the Transfer CFT product, host, and key information, and characteristics of the platform on which Transfer CFT is installed.<br/> • Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key. <li>For a US key, contact:qqqdoublespaceqqq<code>fulfillment@us.axway.com</code><br/> • For an EMEA or APAC key, contact: <code>product.key@axway.com</code></li> <br/> • Provide the hostname and system information for the installed or updated Transfer CFT.</li> </ol> To apply the key:<br/>To apply the license key from the Axway Fulfillment team, either:<br/> • Enter the key directly.<br/> • Enter the key(s) in the indirection file.</li> <blockquote> **Note**<br/>When working in multi-node you must have one key per node and host. </blockquote> See theqqqdoublespaceqqq*Apply a license key* section in the Transfer CFT Installation Guide that corresponds with your OS for details.  |
 
 
 
 ============================== table nb count(512) table converted to MD ========================================
 
 
-|  V23 format<br/>V24 format<br/>Warning  |  <span id="CFTI42E"></span><span id="CFTI43W"></span>CFTI43W Attention: The Transfer CFT license expires in n days<br/>CFTI43W Attention: The Transfer CFT license expires in n days  |
+|  V23 format<br/>V24 format<br/>Warning  |  <span id="CFTI42E"></span><span id="CFTI43W"></span>CFTI43WqqqdoublespaceqqqAttention: The Transfer CFT license expires in n days<br/>CFTI43WqqqdoublespaceqqqAttention: The Transfer CFT license expires in n days  |
 | --- | --- |
 |  Explanation  |  There are fewer than 7 days remaining on the license key for Transfer CFT.  |
-| Action  |  To obtain a new key: <ol> <li>For an existing installation, use the command <code>cftutil about</code> to retrieve your system information. The **ABOUT** command displays the Transfer CFT product, host, and key information, and characteristics of the platform on which Transfer CFT is installed.<br/> • Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key. <li>For a US key, contact: <code>fulfillment@us.axway.com</code><br/> • For an EMEA or APAC key, contact: <code>product.key@axway.com</code></li> <br/> • Provide the hostname and system information for the installed or updated Transfer CFT.</li> </ol> To apply the key:<br/>To apply the license key from the Axway Fulfillment team, either:<br/> • Enter the key directly.<br/> • Enter the key(s) in the indirection file.</li> <blockquote> **Note:**<br/>When working in multi-node you must have one key per node and host. </blockquote> See the *Apply a license key* section in the Transfer CFT Installation Guide that corresponds with your OS for details.  |
+| Action  |  To obtain a new key: <ol> <li>For an existing installation, use theqqqdoublespaceqqqcommand <code>cftutil about</code> to retrieve your system information. The **ABOUT** command displays the Transfer CFT product, host, and key information, and characteristics of the platform on which Transfer CFT is installed.<br/> • Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key. <li>For a US key, contact:qqqdoublespaceqqq<code>fulfillment@us.axway.com</code><br/> • For an EMEA or APAC key, contact: <code>product.key@axway.com</code></li> <br/> • Provide the hostname and system information for the installed or updated Transfer CFT.</li> </ol> To apply the key:<br/>To apply the license key from the Axway Fulfillment team, either:<br/> • Enter the key directly.<br/> • Enter the key(s) in the indirection file.</li> <blockquote> **Note**<br/>When working in multi-node you must have one key per node and host. </blockquote> See theqqqdoublespaceqqq*Apply a license key* section in the Transfer CFT Installation Guide that corresponds with your OS for details.  |
 
 
 
 ============================== table nb count(513) table converted to MD ========================================
 
 
-|  V23 format<br/>V24 format<br/>Error  |  <span id="CFTI42E"></span><span id="CFTI43E"></span>CFTI43E Attention: The Transfer CFT license has expired<br/>CFTI43E Attention: The Transfer CFT license has expired  |
+|  V23 format<br/>V24 format<br/>Error  |  <span id="CFTI42E"></span><span id="CFTI43E"></span>CFTI43EqqqdoublespaceqqqAttention: The Transfer CFT license has expired<br/>CFTI43EqqqdoublespaceqqqAttention: The Transfer CFT license has expired  |
 | --- | --- |
 |  Explanation  |  The Transfer CFT license key is no longer valid.  |
-| Action  |  To obtain a new key: <ol> <li>For an existing installation, use the command <code>cftutil about</code> to retrieve your system information. The **ABOUT** command displays the Transfer CFT product, host, and key information, and characteristics of the platform on which Transfer CFT is installed.<br/> • Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key. <li>For a US key, contact: <code>fulfillment@us.axway.com</code><br/> • For an EMEA or APAC key, contact: <code>product.key@axway.com</code></li> <br/> • Provide the hostname and system information for the installed or updated Transfer CFT.</li> </ol> To apply the key:<br/>To apply the license key from the Axway Fulfillment team, either:<br/> • Enter the key directly.<br/> • Enter the key(s) in the indirection file.</li> <blockquote> **Note:**<br/>When working in multi-node you must have one key per node and host. </blockquote> See the *Apply a license key* section in the Transfer CFT Installation Guide that corresponds with your OS for details.  |
+| Action  |  To obtain a new key: <ol> <li>For an existing installation, use theqqqdoublespaceqqqcommand <code>cftutil about</code> to retrieve your system information. The **ABOUT** command displays the Transfer CFT product, host, and key information, and characteristics of the platform on which Transfer CFT is installed.<br/> • Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key. <li>For a US key, contact:qqqdoublespaceqqq<code>fulfillment@us.axway.com</code><br/> • For an EMEA or APAC key, contact: <code>product.key@axway.com</code></li> <br/> • Provide the hostname and system information for the installed or updated Transfer CFT.</li> </ol> To apply the key:<br/>To apply the license key from the Axway Fulfillment team, either:<br/> • Enter the key directly.<br/> • Enter the key(s) in the indirection file.</li> <blockquote> **Note**<br/>When working in multi-node you must have one key per node and host. </blockquote> See theqqqdoublespaceqqq*Apply a license key* section in the Transfer CFT Installation Guide that corresponds with your OS for details.  |
 
 
 
@@ -7799,7 +13232,7 @@
 ============================== table nb count(534) table converted to MD ========================================
 
 
-|  V23 format<br/>V24 format Warning  |  <span id="CFTP24W"></span>CFTP25W CFTCOM &amp;id uses TYPE 'MBX' Disabled<br/>CFTP25W CFTCOM &amp;id uses TYPE 'MBX' Disabled  |
+|  V23 format<br/>V24 format Warning  |  <span id="CFTP24W"></span>CFTP25W CFTCOM &amp;id uses TYPE 'MBX' Disabled<br/>CFTP25W CFTCOM &amp;idqqqdoublespaceqqquses TYPE 'MBX' Disabled  |
 | --- | --- |
 | Explanation  | The CFTCOM mailbox is no longer supported on z/OS, Windows platforms.  |
 | Action  | Remove the unsupported TYPE.  |
@@ -7968,7 +13401,7 @@
 ============================== table nb count(550) table converted to MD ========================================
 
 
-|  V23 format<br/>V24 format<br/>Information  |  <span id="CFTR17I"></span>CFTR17I &amp;cmd In progress for USER &amp;user &amp;message<br/>CFTR17I &amp;cmd &amp;message In progress for USER &amp;user  |
+|  V23 format<br/>V24 format<br/>Information  |  <span id="CFTR17I"></span>CFTR17I &amp;cmd In progress for USER &amp;userqqqdoublespaceqqq&amp;message<br/>CFTR17I &amp;cmd &amp;message In progress for USER &amp;user  |
 | --- | --- |
 |  Explanation  |  This information message displays at the beginning of the processing for the &amp;cmd.<br/> • Cmd =DELETE/END<br/> • Message where PART=&amp;part IDF=&amp;idf [ IDT=&amp;idt IDTU=&amp;idtu IDA=&amp;ida STATE=&amp;state]</li>  |
 
@@ -8001,7 +13434,7 @@
 |  V23 format<br/>V24 format<br/>Error  |  <span id="CFTR20E"></span>CFTR20E &amp;message<br/>CFTR20E &amp;message  |
 |  Explanation  |  Error messages originating from the folder monitoring functionality.<br/>Usually triggered by error conditions encountered on file manipulation as renaming, deleting.  |
 | Warning  | CFTR20W &amp;message  |
-|  Explanation  |  Warning message related to the folder monitoring feature.<br/>Indicates that a system error concerning the event subsystem occurred (see <a href="../../../app_integration_intro/intro_folder_monitor/configure_folder_monitoring">USEFSEVENT</a>=YES).  |
+|  Explanation  |  Warning message related to the folder monitoring feature.<br/>Indicates thatqqqdoublespaceqqqa system error concerning the event subsystem occurred (see <a href="../../../app_integration_intro/intro_folder_monitor/configure_folder_monitoring">USEFSEVENT</a>=YES).  |
 |  V23 format<br/>V24 format<br/>Fatal  |  <span id="CFTR20F"></span>CFTR20F &amp;message<br/>CFTR20F &amp;message  |
 |  Explanation  |  Fatal messages originating from the folder monitoring functionality.<br/>Indicates that a severe error condition was encountered and is preventing this functionality from proceeding normally.  |
 
@@ -8030,7 +13463,7 @@
 ============================== table nb count(556) table converted to MD ========================================
 
 
-|  V23 format<br/>V24 format<br/>Information  |  CFTR23I On &amp;time UserId=&amp;userid, JobName=&amp;jobname ran the command &amp;command <br/>CFTR23I On &amp;time UserId=&amp;userid, JobName=&amp;jobname ran the command &amp;command  |
+|  V23 format<br/>V24 format<br/>Information  |  CFTR23I On &amp;time UserId=&amp;userid, JobName=&amp;jobname ran the command &amp;commandqqqdoublespaceqqq<br/>CFTR23I On &amp;time UserId=&amp;userid, JobName=&amp;jobname ran the command &amp;command  |
 | --- | --- |
 |  Explanation  |  This message traces who has cleared what and with which command.  |
 
@@ -8308,7 +13741,7 @@
 |  15034  |  Private and Public key incompatible  |  Public and private keys incompatible  |
 |  15035  |  CA Certificate not found  |  Root authority certificate cannot be found  |
 |  15036  |  Signature check failed  |  Signature invalid  |
-| 15038  | PKI record conflict: existing entity  | Cannot insert/modify the certificate (User, Root, Inter, or Other type), because there is already an entity using the same ID in the PKI database  |
+| 15038  | PKI record conflict: existing entity  | Cannot insert/modify the certificateqqqdoublespaceqqq(User, Root, Inter, or Other type), because there is already an entity using the same ID in the PKI database  |
 | 15039  | PKI record conflict: existing certificate  | Cannot insert/modify the entity, because there is already a certificate using the same ID in the PKI database  |
 |  15099  |  Format not yet supported  |  Certificate type not supported  |
 
@@ -8317,7 +13750,7 @@
 ============================== table nb count(561) table converted to MD ========================================
 
 
-|  Error Code &lt;/th&gt;  |  FPDU &lt;/th&gt;  |  Meaning &lt;/th&gt;  |
+| qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqError Code qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqFPDU qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqMeaning qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  |
 | --- | --- | --- |
 |  100  |  RESYNC  |  Transmission error (invalid CRC)  |
 |  139  |   |  Invalid file attributes  |
@@ -8414,6 +13847,409 @@
 
 
 
+============================== table nb count(562) table stayed in HTML ========================================
+
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th >qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqPeSIT reason code&lt;/th&gt;</th>
+<th >qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqDescription&lt;/th&gt;</th>
+<th >{{&lt; TransferCFT/componentshortname &gt;}} internal
+diagnostic</th>
+<th >qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqService item concerned&lt;/th&gt;</th>
+</tr>
+</thead>
+<tbody>
+<tr  data-valign="middle">
+<td colspan="4"  data-bgcolor="#FFFFFF" data-valign="top"><p>Diagnostics imposing a re-synchronization </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>100 </p></td>
+<td  data-valign="top" width="49%"><p>Transmission error </p></td>
+<td  data-valign="top" width="16%"><p>720 </p></td>
+<td  data-valign="top" width="22%"><p>F.RESTART </p></td>
+</tr>
+<tr  data-valign="middle">
+<td colspan="4"  data-bgcolor="#FFFFFF" data-valign="top"><p>Diagnostics imposing a restart </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>200 </p></td>
+<td  data-valign="top" width="49%"><p>File characteristics insufficient </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.CREATE<br />
+F.SELECT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>201 </p></td>
+<td  data-valign="top" width="49%"><p>System resources temporarily insufficient </p></td>
+<td  data-valign="top" width="16%"><p>916 </p></td>
+<td  data-valign="top" width="22%"><p>F.CREATE<br />
+F.SELECT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>202 </p></td>
+<td  data-valign="top" width="49%"><p>User resources temporarily insufficient </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.CREATE<br />
+F.SELECT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>203 </p></td>
+<td  data-valign="top" width="49%"><p>Transfer not overriding </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.CREATE<br />
+F.SELECT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>204 </p></td>
+<td  data-valign="top" width="49%"><p>File already exists </p></td>
+<td  data-valign="top" width="16%"><p>613 </p></td>
+<td  data-valign="top" width="22%"><p>F.CREATE<br />
+F.SELECT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>205 </p></td>
+<td  data-valign="top" width="49%"><p>File does not exist </p></td>
+<td  data-valign="top" width="16%"><p>610 </p></td>
+<td  data-valign="top" width="22%"><p>F.CREATE<br />
+F.SELECT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>206 </p></td>
+<td  data-valign="top" width="49%"><p>Reception of the file will cause an overflow of the disk
+quota </p></td>
+<td  data-valign="top" width="16%"><p>611 </p></td>
+<td  data-valign="top" width="22%"><p>F.CREATE<br />
+F.SELECT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>207 </p></td>
+<td  data-valign="top" width="49%"><p>File occupied </p></td>
+<td  data-valign="top" width="16%"><p>635 </p></td>
+<td  data-valign="top" width="22%"><p>F.CREATE<br />
+F.SELECT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>208 </p></td>
+<td  data-valign="top" width="49%"><p>File too old </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.CREATE<br />
+F.SELECT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>209 </p></td>
+<td  data-valign="top" width="49%"><p>Message of this type not accepted on the reference installation </p></td>
+<td  data-valign="top" width="16%"><p>920 </p></td>
+<td  data-valign="top" width="22%"><p>F.CREATE<br />
+F.SELECT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>210 </p></td>
+<td  data-valign="top" width="49%"><p>Presentation context negotiation failure </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.OPEN </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>211 </p></td>
+<td  data-valign="top" width="49%"><p>Not possible to open file </p></td>
+<td  data-valign="top" width="16%"><p>604 </p></td>
+<td  data-valign="top" width="22%"><p>F.OPEN </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>212 </p></td>
+<td  data-valign="top" width="49%"><p>Not possible to close file normally  </p></td>
+<td  data-valign="top" width="16%"><p>605 </p></td>
+<td  data-valign="top" width="22%"><p>F.CLOSE </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>213 </p></td>
+<td  data-valign="top" width="49%"><p>Inhibiting input/output error </p></td>
+<td  data-valign="top" width="16%"><p>600 </p></td>
+<td  data-valign="top" width="22%"><p>F.READ<br />
+F.WRITE<br />
+F.DATA.END<br />
+F.CANCEL </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>214 </p></td>
+<td  data-valign="top" width="49%"><p>Restart point negotiation failure  </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.READ<br />
+F.DATA.END<br />
+F.CANCEL </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>215 </p></td>
+<td  data-valign="top" width="49%"><p>Specific system error </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.DATA.END<br />
+F.CANCEL </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>216 </p></td>
+<td  data-valign="top" width="49%"><p>Intentional premature halt </p></td>
+<td  data-valign="top" width="16%"><p>621 </p></td>
+<td  data-valign="top" width="22%"><p>F.DATA.END<br />
+F.CANCEL </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>217 </p></td>
+<td  data-valign="top" width="49%"><p>Too many synchronization points not acknowledged </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.DATA.END<br />
+F.CANCEL </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>218 </p></td>
+<td  data-valign="top" width="49%"><p>Re-synchronization not possible </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.DATA.END<br />
+F.CANCEL </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>219 </p></td>
+<td  data-valign="top" width="49%"><p>File space full </p></td>
+<td  data-valign="top" width="16%"><p>614 </p></td>
+<td  data-valign="top" width="22%"><p>F.DATA.END<br />
+F.CANCEL </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>220 </p></td>
+<td  data-valign="top" width="49%"><p>Article longer than expected </p></td>
+<td  data-valign="top" width="16%"><p>626 </p></td>
+<td  data-valign="top" width="22%"><p>F.DATA.END<br />
+F.CANCEL </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>221 </p></td>
+<td  data-valign="top" width="49%"><p>Expected end of transmission time </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.DATA.END<br />
+F.CANCEL </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>222 </p></td>
+<td  data-valign="top" width="49%"><p>Too much data without synchronization points </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.DATA.END<br />
+F.CANCEL </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>223 </p></td>
+<td  data-valign="top" width="49%"><p>Abnormal end of transfer </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.TRANSFER.END<br />
+F.DESELECT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>224 </p></td>
+<td  data-valign="top" width="49%"><p>The size of the file sent is greater than the one announced
+in F.CREATE </p></td>
+<td  data-valign="top" width="16%"><p>600 </p></td>
+<td  data-valign="top" width="22%"><p>F.TRANSFER.END<br />
+F.DESELECT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>225 </p></td>
+<td  data-valign="top" width="49%"><p>Workstation application congested: the file has effectively
+been received but SCRS has not been able to give it to the workstation
+application  </p></td>
+<td  data-valign="top" width="16%"><p>600 </p></td>
+<td  data-valign="top" width="22%"><p>F.TRANSFER.END<br />
+F.DESELECT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>226 </p></td>
+<td  data-valign="top" width="49%"><p>Transfer refusal </p></td>
+<td  data-valign="top" width="16%"><p>904 </p></td>
+<td  data-valign="top" width="22%"><p>F.CREATE<br />
+F.SELECT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>299 </p></td>
+<td  data-valign="top" width="49%"><p>Other </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.CREATE<br />
+F.SELECT<br />
+F.OPEN<br />
+F.CLOSE<br />
+F.READ<br />
+F.WRITE<br />
+F.DATA.END<br />
+F.CANCEL<br />
+F.TRANSFER.END<br />
+F.DESELECT<br />
+F.RESTART </p></td>
+</tr>
+<tr  data-valign="middle">
+<td colspan="4"  data-bgcolor="#FFFFFF" data-valign="top"><p>Diagnostics imposing a reconnection </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>300 </p></td>
+<td  data-valign="top" width="49%"><p>Local communication system congested  </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.CONNECT  </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>301 </p></td>
+<td  data-valign="top" width="49%"><p>Identification requested not known </p></td>
+<td  data-valign="top" width="16%"><p>909 </p></td>
+<td  data-valign="top" width="22%"><p>F.CONNECT  </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>302 </p></td>
+<td  data-valign="top" width="49%"><p>Requested system not attached to a SSAP </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.CONNECT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>303 </p></td>
+<td  data-valign="top" width="49%"><p>Remote communication system congested<br />
+(too many connections) </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.CONNECT  </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>304 </p></td>
+<td  data-valign="top" width="49%"><p>Requested identification not authorized (security) </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.CONNECT<br />
+F.ABORT<br />
+F.CREATE<br />
+F.ABORT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>305 </p></td>
+<td  data-valign="top" width="49%"><p>Negotiation failure (SELECT) </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.CONNECT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>306 </p></td>
+<td  data-valign="top" width="49%"><p>Negotiation failure (RESYN) </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.CONNECT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>307 </p></td>
+<td  data-valign="top" width="49%"><p>Negotiation failure (SYNC) </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.CONNECT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>308 </p></td>
+<td  data-valign="top" width="49%"><p>Version number not supported  </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.CONNECT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>309 </p></td>
+<td  data-valign="top" width="49%"><p>Too many connections already in process for this processing
+centre </p></td>
+<td  data-valign="top" width="16%"><p>916 </p></td>
+<td  data-valign="top" width="22%"><p>F.CONNECT<br />
+F.ABORT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>310 </p></td>
+<td  data-valign="top" width="49%"><p>Network incident </p></td>
+<td  data-valign="top" width="16%"><p>802 </p></td>
+<td  data-valign="top" width="22%"><p>F.ABORT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>311 </p></td>
+<td  data-valign="top" width="49%"><p>Remote PeSIT protocol error </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.ABORT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>312 </p></td>
+<td  data-valign="top" width="49%"><p>Service closure requested by the user </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.RELEASE<br />
+F.ABORT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>313 </p></td>
+<td  data-valign="top" width="49%"><p>Connection broken at the end of the TD inactivity interval </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.RELEASE<br />
+F.ABORT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>314 </p></td>
+<td  data-valign="top" width="49%"><p>Connection used to host a new connection </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.RELEASE<br />
+F.ABORT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>315 </p></td>
+<td  data-valign="top" width="49%"><p>Negotiation failure </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.ABORT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>316 </p></td>
+<td  data-valign="top" width="49%"><p>Connection broken as a result of an administration command
+ </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.RELEASE<br />
+F.ABORT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>317 </p></td>
+<td  data-valign="top" width="49%"><p>Time-out </p></td>
+<td  data-valign="top" width="16%"><p>740 </p></td>
+<td  data-valign="top" width="22%"><p>F.ABORT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>318 </p></td>
+<td  data-valign="top" width="49%"><p>Mandatory PI absent or illegal PI contents </p></td>
+<td  data-valign="top" width="16%"><p>722 </p></td>
+<td  data-valign="top" width="22%"><p>F.ABORT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>319 </p></td>
+<td  data-valign="top" width="49%"><p>Number of bytes or articles incorrect </p></td>
+<td  data-valign="top" width="16%"><p>620 </p></td>
+<td  data-valign="top" width="22%"><p>F.ABORT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>320 </p></td>
+<td  data-valign="top" width="49%"><p>Excessive number of resynchronizations for a transfer </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.ABORT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>321 </p></td>
+<td  data-valign="top" width="49%"><p>Call the backup number </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.CONNECT<br />
+F.CREATE<br />
+F.ABORT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>322 </p></td>
+<td  data-valign="top" width="49%"><p>Call back later </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.CONNECT<br />
+F.CREATE<br />
+F.ABORT </p></td>
+</tr>
+<tr  data-valign="middle">
+<td  data-valign="top" width="13%"><p>399 </p></td>
+<td  data-valign="top" width="49%"><p>Other </p></td>
+<td  data-valign="top" width="16%"><p>730 </p></td>
+<td  data-valign="top" width="22%"><p>F.CONNECT<br />
+F.RELEASE<br />
+F.CREATE<br />
+F.ABORT </p></td>
+</tr>
+</tbody>
+</table>
+
+
 ============================== table nb count(563) table converted to MD ========================================
 
 
@@ -8483,12 +14319,12 @@
 
 | RC  | Error  | Description  | Action  |
 | --- | --- | --- | --- |
-| 80  | APIS_SWAITCAT_FAILED  | Transfer error.The transfer reached the K or H state.  | Check the diagnostic, correct problem if necessary, and restart.  |
+| 80  | APIS_SWAITCAT_FAILED  | Transfer error.The transfer reached the K or H state.qqqdoublespaceqqqqqqdoublespaceqqq  | Check the diagnostic, correct problem if necessary, and restart.  |
 | 81  | APIS_SWAITCAT_TIMEOUT  | The transfer was not completed within the time specified by the timeout value. After this timeout error, the transfer can have the status C (current) or D (for example if the network went down), but note that it was not completed.  |  Check the diagnostic, correct problem if necessary.<br/>Repeat SWAITCAT, you may need to repeat several times.  |
-| 82  | APIS_SWAITCAT_NFOUND  | The idtu was not found. The selected criteria provided in the command SWAITCAT cannot find the transfer.  | Verify the selection parameters in the SWAITCAT command.  |
-| 83  | APIS_SWAITCAT_DELETED  | Cannot find the transfer (transfer was deleted).  | The transfer was created but for some reason it was removed, for example by the DELETE command.  |
-| 84  | APIS_SWAITCAT_PARAM_ERROR  | The command contained an invalid parameter.  |  Error in the command syntax.<br/>Check the command parameters <a href="../../../app_integration_intro/synch_comm_tcpip_intro/sync_transfer_request_tasks">here</a>.  |
-| 87  | APIS_SWAITCAT_TOO_MANY  | The number of transfers corresponding to the filter selection for the SWAITCAT command was greater than 1. You cannot select more than 1 transfer.  | Refine the selection criteria for the command so that it returns a single transfer.  |
+| 82  | APIS_SWAITCAT_NFOUND  | The idtuqqqdoublespaceqqqwas not found. The selected criteria provided in the command SWAITCAT cannot find the transfer.qqqdoublespaceqqqqqqdoublespaceqqq  | Verify the selection parameters in the SWAITCAT command.  |
+| 83  | APIS_SWAITCAT_DELETED  | Cannot find the transfer (transfer was deleted).qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq  | The transfer was created but for some reason it was removed, for example by the DELETE command.  |
+| 84  | APIS_SWAITCAT_PARAM_ERROR  | The command contained an invalid parameter.qqqdoublespaceqqqqqqdoublespaceqqq  |  Error in the command syntax.<br/>Check the command parameters <a href="../../../app_integration_intro/synch_comm_tcpip_intro/sync_transfer_request_tasks">here</a>.  |
+| 87  | APIS_SWAITCAT_TOO_MANYqqqdoublespaceqqqqqqdoublespaceqqq  | The number of transfers corresponding to the filter selection for the SWAITCAT command was greater than 1.qqqdoublespaceqqqYou cannot select more than 1 transfer.  | Refine the selection criteria for the command so that it returns a single transfer.  |
 
 
 
@@ -8498,8 +14334,8 @@
 | Topic  | Description  |
 | --- | --- |
 |  <a href="trace_management">Trace management concepts</a>  |  Describes the concepts behind performing an ATM trace in Transfer CFT.  |
-|  <a href="parameter_settings">Defining trace in {{&lt; TransferCFT/componentshortname &gt;}} parameters</a>  |  Describes the Transfer CFT general parameter for a trace.  |
-|  <a href="defining_a_trace_file_externally">Defining a trace file externally (CFTTRACE utility)</a>  |  Describes how to create or remove a trace file, or to reinitialize it with an empty useable content.  |
+|  <a href="parameter_settings">Defining trace in {{&lt; TransferCFT/componentshortname &gt;}}qqqdoublespaceqqqparameters</a>  |  Describes the Transfer CFT general parameter for a trace.  |
+|  <a href="defining_a_trace_file_externally">Defining a trace file externally (CFTTRACE utility)</a>  |  Describes how to create or remove a trace file,qqqdoublespaceqqqor to reinitialize it with an empty useable content.  |
 |  <a href="defining_the_internal_trace_file">Defining the internal trace file (CFTUTIL command)</a>  |  Describes how to create a trace when Transfer CFT starts, with the possibility of tracing an initialization sequence, or during Transfer CFT operations.  |
 |  Using the start trace command  |  Describes the start trace command, which is associated with a unique identifier, defines and describes the conditions for starting and selecting traced data, and associates a file identifier.  |
 
@@ -8508,7 +14344,7 @@
 ============================== table nb count(568) table converted to MD ========================================
 
 
-|  Action &lt;/th&gt;  |  Command &lt;/th&gt;  |
+| qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqAction qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqCommand qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  |
 | --- | --- |
 |  Define the trace file or files:<br/> • Before Transfer CFT starts <br/> • During Transfer CFT operations </li>  |  <br/> • TRCFILE<br/> • SETTRC</li>  |
 |  Start information collection:<br/> • Transfer CFT start<br/> • During Transfer CFT operations </li>  |  STARTTRC  |
@@ -8520,7 +14356,7 @@
 ============================== table nb count(569) table converted to MD ========================================
 
 
-|  Trace file definition  |  Command &lt;/th&gt;  |  Parameter &lt;/th&gt;  |  Description &lt;/th&gt;  |
+|  Trace file definition  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqCommand qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqParameter qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqDescription qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  |
 | --- | --- | --- | --- |
 |  Before starting<br /> Transfer CFT  |  CFTPARM  |  TRACE=identifier  |  CFTTRACE command identifier  |
 |   |  CFTTRACE  |   |   |
@@ -8532,7 +14368,7 @@
 ============================== table nb count(570) table converted to MD ========================================
 
 
-|  Starting information collection &lt;/th&gt;  |  Command used to define the file &lt;/th&gt;  |  Parameter &lt;/th&gt;  |  Command to enter &lt;/th&gt;  |
+| qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqStarting information collection qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqCommand used to define the file qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqParameter qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqCommand to enter qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  |
 | --- | --- | --- | --- |
 |  When starting up Transfer CFT  |  CFTTRACE  |  START=CFT  |   |
 |   |  TRCFILE (1)  |  START=CFT  |  CFTTRACE  |
@@ -8544,7 +14380,7 @@
 ============================== table nb count(571) table converted to MD ========================================
 
 
-|  Action &lt;/th&gt;  |  Define the file with &lt;/th&gt;  |  Enter the command &lt;/th&gt;  |
+| qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqAction qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqDefine the file with qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqEnter the command qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  |
 | --- | --- | --- |
 |  Stop information collection  |  CFTTRACE  |  STOPTRC  |
 |   |  SETTR  |  STOPTRC  |
@@ -8556,7 +14392,7 @@
 ============================== table nb count(572) table converted to MD ========================================
 
 
-|  Action &lt;/th&gt;  |  Command &lt;/th&gt;  |
+| qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqAction qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqCommand qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  |
 | --- | --- |
 |  Update the general parameters before Transfer CFT start-up  |  CFTPARM  |
 |  Define the trace file or files:<br/> • Before Transfer CFT starts <br/> • During Transfer CFT operations </li>  |  CFTTRACE<br />  |
@@ -8567,7 +14403,7 @@
 ============================== table nb count(573) table converted to MD ========================================
 
 
-|  Trace file definition  |  Command &lt;/th&gt;  |  Parameter &lt;/th&gt;  |  Description &lt;/th&gt;  |
+|  Trace file definition  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqCommand qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqParameter qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqDescription qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  |
 | --- | --- | --- | --- |
 |  Before starting<br /> Transfer CFT  |  CFTPARM  |  TRACE=identifier  |  CFTTRACE command identifier  |
 |   |  CFTTRACE  |   |   |
@@ -8577,7 +14413,7 @@
 ============================== table nb count(574) table converted to MD ========================================
 
 
-|  Starting information collection &lt;/th&gt;  |  Command used to define the file &lt;/th&gt;  |  Parameter &lt;/th&gt;  |  Command to enter &lt;/th&gt;  |
+| qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqStarting information collection qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqCommand used to define the file qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqParameter qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqCommand to enter qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  |
 | --- | --- | --- | --- |
 |  When starting up Transfer CFT  |  CFTTRACE  |  START=CFT  |   |
 |   |  TRCFILE (1)  |  START=CFT  |  CFTTRACE  |
@@ -8589,7 +14425,7 @@
 ============================== table nb count(575) table converted to MD ========================================
 
 
-|  Action &lt;/th&gt;  |  Define the file with &lt;/th&gt;  |  Enter the command &lt;/th&gt;  |
+| qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqAction qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqDefine the file with qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  | qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqEnter the command qqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqqqqqdoublespaceqqq&lt;/th&gt;  |
 | --- | --- | --- |
 |  Stop information collection  |  CFTTRACE  |  STOPTRC  |
 |  Stop collection, close the files and shutdown the process  |  CFTTRACE  |  STOPTRC<br />  |

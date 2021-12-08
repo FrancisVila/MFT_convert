@@ -22,8 +22,7 @@ alert generates 2 actions:
 -   Executes a batch
     to react to the alert (when CFTCAT/[TLVWARN](../tlvwarn) is reached)
 
-> **Note:**
->
+> **Note**  
 > To use direct script execution instead of the template script processing, preface the &lt;EXEC>value with 'cmd:'. For example, &lt;EXEC>='cmd:myscript.sh &PART &IDT &IDTU'. See Directly processing a program or script for details, examples, restrictions, and support.
 
 #### CFTCOM FILE
@@ -42,8 +41,7 @@ alert generates 2 actions:
 -   Executes a batch
     to react to the alert (when CFTCOM/[TLVWARN](../tlvwarn) is reached)
 
-> **Note:**
->
+> **Note**  
 > To use direct script execution instead of the template script processing, preface the &lt;EXEC>value with 'cmd:'. For example, &lt;EXEC>='cmd:myscript.sh &PART &IDT &IDTU'. See Directly processing a program or script for details, examples, restrictions, and support.
 
 For CFTCOM,  the symbolic variables that you can use in the batch are restricted to: &SYSDATE, &SYSTIME, &CFTEVENT, &SYSDAY, &CFTNAME, &RUNTIMEDIR.

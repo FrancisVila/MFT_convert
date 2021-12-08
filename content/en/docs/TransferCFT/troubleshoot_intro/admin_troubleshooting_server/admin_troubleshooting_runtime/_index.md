@@ -22,63 +22,63 @@
    </thead>
    <tbody>
       <tr>
-         <td>          </td>
-         <td><p>Hard disk bottleneck</p>         </td>
-         <td><p>Catalog</p>
+         <td >          </td>
+         <td ><p>Hard disk bottleneck</p>         </td>
+         <td ><p>Catalog</p>
 <p>full</p>         </td>
-         <td><p>Network</p>
+         <td ><p>Network</p>
 <p>bottleneck</p>         </td>
-         <td><p>Memory or processor bottleneck*</p>         </td>
-         <td><p>Corrupt</p>
+         <td ><p>Memory or processor bottleneck*</p>         </td>
+         <td ><p>Corrupt</p>
 <p>file or DB **</p>         </td>
       </tr>
       <tr>
-         <td>Performance         </td>
-         <td>Disk check         </td>
-         <td>          </td>
-         <td>Network checks         </td>
-         <td>Check application         </td>
-         <td>          </td>
+         <td >Performance         </td>
+         <td >Disk check         </td>
+         <td >          </td>
+         <td >Network checks         </td>
+         <td >Check application         </td>
+         <td >          </td>
       </tr>
       <tr>
-         <td>Start issue         </td>
-         <td>Disk check         </td>
-         <td>Catalog check         </td>
-         <td>Network checks         </td>
-         <td>timeout         </td>
-         <td>Check  {{< TransferCFT/componentlongname  >}} files         </td>
+         <td >Start issue         </td>
+         <td >Disk check         </td>
+         <td >Catalog check         </td>
+         <td >Network checks         </td>
+         <td >timeout         </td>
+         <td >Check  {{< TransferCFT/componentlongname  >}} files         </td>
       </tr>
       <tr>
-         <td>Unexpected stop         </td>
-         <td>Disk check         </td>
-         <td>Catalog check         </td>
-         <td>Network checks         </td>
-         <td>          </td>
-         <td>Check  {{< TransferCFT/componentlongname  >}} files         </td>
+         <td >Unexpected stop         </td>
+         <td >Disk check         </td>
+         <td >Catalog check         </td>
+         <td >Network checks         </td>
+         <td >          </td>
+         <td >Check  {{< TransferCFT/componentlongname  >}} files         </td>
       </tr>
       <tr>
-         <td>Transfer freeze or infinite looping         </td>
-         <td>Disk check         </td>
-         <td>          </td>
-         <td>Network checks         </td>
-         <td>Check application         </td>
-         <td>Check  {{< TransferCFT/componentlongname  >}} files         </td>
+         <td >Transfer freeze or infinite looping         </td>
+         <td >Disk check         </td>
+         <td >          </td>
+         <td >Network checks         </td>
+         <td >Check application         </td>
+         <td >Check  {{< TransferCFT/componentlongname  >}} files         </td>
       </tr>
       <tr>
-         <td>SP and updates         </td>
-         <td>Disk check         </td>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
+         <td >SP and updates         </td>
+         <td >Disk check         </td>
+         <td >          </td>
+         <td >          </td>
+         <td >          </td>
+         <td >          </td>
       </tr>
       <tr>
-         <td>Crash         </td>
-         <td>Disk check         </td>
-         <td>          </td>
-         <td>Network checks         </td>
-         <td>          </td>
-         <td>Check  {{< TransferCFT/componentlongname  >}} files         </td>
+         <td >Crash         </td>
+         <td >Disk check         </td>
+         <td >          </td>
+         <td >Network checks         </td>
+         <td >          </td>
+         <td >Check  {{< TransferCFT/componentlongname  >}} files         </td>
       </tr>
    </tbody>
 </table>

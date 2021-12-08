@@ -31,13 +31,11 @@ To implement a relay in conjunction with :
     ```
 3.  Optionally you can configure target post-processing to automatically send a reply.
 
-> **Note:**
->
+> **Note**  
 > Tip  
 > You can use the script delivered with Transfer CFT in the runtime/exec directory/BIN\_re.cmd as a basis for your ACK reply from the target application.
 
-> **Note:**
->
+> **Note**  
 > When viewing the final transfer  in the CG View Cycle Graph, you see the number of Transfer CFTs involved minus 1.
 
 <span id="Store2"></span>
@@ -75,12 +73,10 @@ Configure the following for the final receiver (Site C):
 
 -   Define both the initiator and the relay CFTPART partner definitions.
 
-> **Note:**
->
+> **Note**  
 > To enable acknowledgments from the receiver C to the sender A, in the receiver (C) configuration you must set the sender (A) CFTPART with OMINTIME and OMAXTIME parameters equal to zero, and define the relay (B) as the IPART.
 
-> **Note:**
->
+> **Note**  
 > If the initial sender A is not
 > required to establish any direct physical connection with the final receiver
 > C, then the command  CFTTCP ID=ID\_C has no impact. Similarly, there is no need to set CFTTCP ID=ID\_A
@@ -127,8 +123,7 @@ Configure the following for the final receiver (Site C):
 
 -   Define both the initiator and the relay CFTPART partner definitions.
 
-> **Note:**
->
+> **Note**  
 > In the example, the receiver (C) configuration defines the sender (Site A) CFTPART with OMINTIME and OMAXTIME parameters equal to zero, and defines the relay (Site B) as the IPART, which enables acknowledgments from the receiver C to the sender A.
 
 Intentional VAN store and forward
@@ -174,8 +169,7 @@ Configure the final receiver
 
 -   Define the CFTPART partner definition for the second relay (Intermediate Site 2).
 
-> **Note:**
->
+> **Note**  
 > To enable acknowledgments from the receiver to the sender, add the IPART for each CFTPART definition in each relay. For example:
 
 -   For the Intermediate Site 2 in the CFTPART ID=IDGWAY, set the IPART=IDDEP1, which refers to the Intermediate Site 1.
@@ -193,8 +187,7 @@ Forced store and forward
 
 <img src="/Images/TransferCFT/Forced_Store_and_forward.gif" width="1183" height="1018" />
 
-> **Note:**
->
+> **Note**  
 > The REPLY command may be sent when the end of transfer procedure is
 > executed (EXECRF). The acknowledgement message is then transferred in the same way, via
 > all the intermediate sites until it reaches the initial site (IPART =

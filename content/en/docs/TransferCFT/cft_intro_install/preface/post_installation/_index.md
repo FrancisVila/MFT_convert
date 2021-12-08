@@ -4,8 +4,7 @@
     "weight": "180"
 }This chapter describes a series of checks that you should perform to verify your Transfer CFT installation. For more information on performing commands and using CFTUTIL, refer to the *Transfer CFT {{< TransferCFT/releasenumber  >}} [{{< TransferCFT/doctypeuser  >}}](https://docs.axway.com/u/documentation/transfer_cft/index.htm?version=3.2.4)*.
 
-> **Note:**
->
+> **Note**  
 > The information in the Unix Management utilities page applies equally to the Unix-like interface used in HP NonStop.
 
 ## Verify the installation

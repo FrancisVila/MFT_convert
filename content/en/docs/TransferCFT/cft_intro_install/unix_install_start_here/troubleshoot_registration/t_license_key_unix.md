@@ -14,7 +14,7 @@
 
 2.  After completing the installation, or for an existing installation, use the  command `cftutil about` to retrieve your system information.
 
-    > **Note:**
+    > **Note**
     >
     > Use the ABOUT command to display
     > the Transfer CFT product, host, and key information. This command displays the characteristics of the platform

@@ -12,8 +12,7 @@ indirection character,  to trigger SEND operations that correspond to:
     -   In heterogeneous mode
     -   Using a file name filter
 
-> **Note:**
->
+> **Note**  
 > If FNAME designates a generic name and the &lt;file\_symb>
 > indirection character is omitted, SEND FNAME = FIL\* for example, the SEND
 > command triggers a single transfer, in which pseudo-records each of which corresponds
@@ -55,8 +54,7 @@ CFTUTIL SEND part=tokyo, idf=myfiles, fname=@REPORTS
 
 The files file1, file2 and file3 will be sent.
 
-> **Note:**
->
+> **Note**  
 > You cannot use a file name with an asterisk, for example fil\*, as that denotes the beginning of a file not a directory.
 
 If there are N files to be sent, a SEND IDF = ID\_EM, FNAME = #GROUP (or @GROUP)
@@ -81,8 +79,7 @@ If there are N files to be sent, a SEND IDF = ID\_EM, FNAME = #GROUP (or @GROUP)
     -   If one of the files in the group cannot be sent (for example an unknown file), the other transfers are not affected,
         but the generic entry for the group is not set to the **T** state (or **X** depending on the mode).
 
-> **Note:**
->
+> **Note**  
 > See also COMPAT mode, if using backward compatibility.
 
 For the receiver:
@@ -91,8 +88,7 @@ For the receiver:
 -   The name of each file can be specified using the
     &FPATH, &FROOT and &FSUF symbolic variables
 
-> **Note:**
->
+> **Note**  
 > You can specify a list of directories to be sent in the indirection
 > file.
 > However, do not mix files and directories in the same indirection file.
@@ -221,8 +217,7 @@ Unix/Windows
 
 #### Sending to a remote site in homogeneous mode
 
-> **Note:**
->
+> **Note**  
 > The following is valid when using the same system type and heterogeneous mode is not forced. When using Central Governance remember that heterogeneous mode is the default setting.
 
 The files to be transferred are copied and concatenated in a work file
@@ -395,7 +390,7 @@ A STRJCMP pattern-matching filter can contain the asterisk (\*) and/or the ques
 | Character  | Description  | Example  |
 | --- | --- | --- |
 | *  | Indicates any sequence of zero or more characters.  | The filter "*.dat" selects any file name that has the extension ".dat".  |
-| ?  | Indicates any single character.  | The filter "T*.???" selects any file name starting with a 'T' and having an extension of exactly three characters.  |
+| ?  | Indicates any single character.  | The filter "T*.???"  selects any file name starting with a 'T' and having an extension of exactly three characters.  |
 
 
 ## EREGEX filter
@@ -420,8 +415,7 @@ In POSIX-Extended regular expressions, all characters match themselves meaning t
 | $  | End of string  | *.*? the end$* matches this is the end  |
 
 
-> **Note:**
->
+> **Note**  
 > EREGEX refers to POSIX Extended Regular Expression. There are multiple tutorials available online to aid in creating search patterns; for additional information on expression syntax please refer to Regular expressions.
 
 <span id="SNDINDFILEERR"></span>

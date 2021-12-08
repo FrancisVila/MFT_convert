@@ -18,8 +18,7 @@ After installing Transfer CFT, you must customize this Transfer CFT from a stan
 
 The process consists of customizing the z/OS specific programs and members, checking the Transfer CFT configuration, and then executing the customized programs.
 
-> **Note:**
->
+> **Note**  
 > To execute the multi-node customization you require administrator rights.
 
 ```
@@ -47,6 +46,5 @@ Customize [MNINIT](../t_mninit_multinode_zos).
 [Execute](../t_submit_mninit_zos)  the customized MNINIT.
 ```
 
-> **Note:**
->
+> **Note**  
 > Depending on the type of installation you are performing, a Transfer CFT CATALOG file may be created during installation. Additionally, files having the format CATALOG.Nxx (where Nxx represents the node identifier) are created by the MNINIT JCL. The CATALOG file without a suffix is not used, so you can delete this file (the one without the .Nxx suffix). We recommend that you comment the //CFTCAT DD cards in the JCL and procedures. For example, comment the cards in the PCFTUTIL procedure and CFTINC member.

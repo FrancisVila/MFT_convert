@@ -81,20 +81,20 @@ minutes, while an upper case M defines months.
    </thead>
    <tbody>
       <tr>
-         <td><p>time</p>         </td>
-         <td><p>time_element; time</p>
+         <td   width="23.077%"><p>time</p>         </td>
+         <td   width="35.647%"><p>time_element; time</p>
 <p>time_element</p>         </td>
-         <td><p> </p>         </td>
+         <td   width="38.274%"><p> </p>         </td>
       </tr>
       <tr>
-         <td><p>time_element</p>         </td>
-         <td><p>seconds= content</p>
+         <td   width="23.077%"><p>time_element</p>         </td>
+         <td   width="35.647%"><p>seconds= content</p>
 <p>minutes= content</p>
 <p>hours= content</p>
 <p>monthdays= content</p>
 <p>weekdays= content</p>
 <p>months= content</p>         </td>
-         <td><p>s= content</p>
+         <td   width="38.274%"><p>s= content</p>
 <p>m= content</p>
 <p>h= content</p>
 <p>D= content</p>
@@ -102,28 +102,28 @@ minutes, while an upper case M defines months.
 <p>M= content</p>         </td>
       </tr>
       <tr>
-         <td><p>content</p>         </td>
-         <td><p>content_elt, content</p>
+         <td   width="23.077%"><p>content</p>         </td>
+         <td   width="35.647%"><p>content_elt, content</p>
 <p>content_elt</p>         </td>
-         <td><p> </p>         </td>
+         <td   width="38.274%"><p> </p>         </td>
       </tr>
       <tr>
-         <td><p>content_elt</p>         </td>
-         <td><p>a</p>
+         <td   width="23.077%"><p>content_elt</p>         </td>
+         <td   width="35.647%"><p>a</p>
 <p>content_set / c</p>         </td>
-         <td><p> </p>         </td>
+         <td   width="38.274%"><p> </p>         </td>
       </tr>
       <tr>
-         <td><p> </p>         </td>
-         <td><p>z/OS (MVS) specific syntax</p>         </td>
+         <td colspan="2"   width="58.724%"><p> </p>         </td>
+         <td   width="38.274%"><p>z/OS (MVS) specific syntax</p>         </td>
       </tr>
       <tr>
-         <td><p>content_set</p>         </td>
-         <td><p>[a:b] [a:b]</p>
+         <td   width="23.077%"><p>content_set</p>         </td>
+         <td   width="35.647%"><p>[a:b] [a:b]</p>
 <p>[a:]</p>
 <p>[:b]</p>
 <p>*</p>         </td>
-         <td><p>&lt;a:b&gt;</p>
+         <td   width="38.274%"><p>&lt;a:b&gt;</p>
 <p>&lt;a:&gt;</p>
 <p>&lt;:b&gt;</p>         </td>
       </tr>

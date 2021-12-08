@@ -175,12 +175,10 @@ Customize MIGR$SET:
 6.  Submit MIGRCOM (\*for multi-node configuration).
 7.  Submit MIGRUCNF (\* for upgrades from 3.3.2 to 3.6, 3.7, or 3.8).
 
-> **Note:**
->
+> **Note**  
 > The MIGRCAT procedure migrates the catalog files, one catalog file at a time. You must modify and execute this procedure for each  node.
 
-> **Note:**
->
+> **Note**  
 > The JCL MIGRUCNF was fixed in 3.6 SP3.
 
 ### Customize the step PMIGR2 JCL MIGRCAT

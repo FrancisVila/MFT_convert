@@ -38,12 +38,12 @@ Command syntax: <span style="font-weight: bold;">[CFTEXT](../../../command_summa
    </thead>
    <tbody>
       <tr>
-         <td><p>Use this command to extract all or part of the data from
+         <td colspan="2" ><p>Use this command to extract all or part of the data from
 the parameter and partner files.</p>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/id">ID</a> </p>         </td>
-         <td><p>Identifier of the parameter to be extracted.</p>
+         <td ><p><a href="../../../command_summary/parameter_intro/id">ID</a> </p>         </td>
+         <td   width="49.916%"><p>Identifier of the parameter to be extracted.</p>
 <p>The value of this identifier is the value of the ID of
 the command CFTxxxx corresponding to the TYPE parameter; this allows the
 extraction to be limited:</p>
@@ -58,16 +58,16 @@ characters</li>
 of the parameter type (defined by TYPE) are extracted.</p>         </td>
       </tr>
       <tr>
-         <td><a href="../../../command_summary/parameter_intro/content">CONTENT</a>         </td>
-         <td><p>Level of content included in output:</p>
+         <td ><a href="../../../command_summary/parameter_intro/content">CONTENT</a>         </td>
+         <td   width="49.916%"><p>Level of content included in output:</p>
 <ul>
 <li>BRIEF = Empty or default value parameters are omitted</li>
 <li>FULL = All parameters are included</li>
 </ul>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/fout">FOUT</a> </p>         </td>
-         <td><p>Name of the file to which the command’s standard output
+         <td ><p><a href="../../../command_summary/parameter_intro/fout">FOUT</a> </p>         </td>
+         <td   width="49.916%"><p>Name of the file to which the command’s standard output
 will be redirected.</p>
 <p>This generated file can then be interpreted directly by
 CFTUTIL.</p>
@@ -75,29 +75,29 @@ CFTUTIL.</p>
 type parameter (defined in the TYPE parameter) are extracted.</p>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/fparm">FPARM</a></p>
+         <td ><p><a href="../../../command_summary/parameter_intro/fparm">FPARM</a></p>
 <p>{see the comment |
 filename} </p>
 <p>Except for TYPE = PART</p>         </td>
-         <td><p>Name of the Parameter input file.</p>
+         <td   width="49.916%"><p>Name of the Parameter input file.</p>
 <p>Default value: default name of the Parameter file defined
 for CFTUTIL for the system concerned. Refer to the Transfer CFT <em>Operations
 Guide</em> that corresponds with your OS.</p>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/fpart">FPART</a> </p>
+         <td ><p><a href="../../../command_summary/parameter_intro/fpart">FPART</a> </p>
 <p>{see the
 comment | filename}]</p>
 <p>For TYPE = {ALL | PART}</p>         </td>
-         <td><p>Name of the Partner input file.</p>
+         <td   width="49.916%"><p>Name of the Partner input file.</p>
 <p>Default value: default
 name of the Partner file defined for CFTUTIL for the system concerned.
 Refer to the Transfer CFT <span >Operations Guide</span> that corresponds with
 your OS.</p>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/type">TYPE</a> </p>         </td>
-         <td><p>This parameter defines the parameter type to be extracted.</p>         </td>
+         <td ><p><a href="../../../command_summary/parameter_intro/type">TYPE</a> </p>         </td>
+         <td   width="49.916%"><p>This parameter defines the parameter type to be extracted.</p>         </td>
       </tr>
    </tbody>
 </table>

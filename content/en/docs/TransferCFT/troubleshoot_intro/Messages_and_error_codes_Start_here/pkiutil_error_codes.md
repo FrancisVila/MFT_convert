@@ -43,7 +43,7 @@ PKIUTIL error codes
 |  15034  |  Private and Public key incompatible  |  Public and private keys incompatible  |
 |  15035  |  CA Certificate not found  |  Root authority certificate cannot be found  |
 |  15036  |  Signature check failed  |  Signature invalid  |
-| 15038  | PKI record conflict: existing entity  | Cannot insert/modify the certificate (User, Root, Inter, or Other type), because there is already an entity using the same ID in the PKI database  |
+| 15038  | PKI record conflict: existing entity  | Cannot insert/modify the certificate  (User, Root, Inter, or Other type), because there is already an entity using the same ID in the PKI database  |
 | 15039  | PKI record conflict: existing certificate  | Cannot insert/modify the entity, because there is already a certificate using the same ID in the PKI database  |
 |  15099  |  Format not yet supported  |  Certificate type not supported  |
 

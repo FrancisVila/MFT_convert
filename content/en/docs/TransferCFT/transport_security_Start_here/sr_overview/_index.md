@@ -12,8 +12,7 @@ The following additional topics describe how to configure Transfer CFT to use Se
 -   [UCONF parameters for Secure Relay](sr_parameters)
 -   [Troubleshoot Secure Relay](sr_troubleshooting)
 
-> **Note:**
->
+> **Note**  
 > Secure Relay was formerly called XSR, and some documentation may still use this reference.
 
 ## Overview

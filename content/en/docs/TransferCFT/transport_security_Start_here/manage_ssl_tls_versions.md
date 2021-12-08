@@ -33,8 +33,7 @@ DIRECT=SERVER
 
 In server mode, the header length is automatically detected for all SSL versions (SSLV3, TLSV1, SSLV3COMP, TLSV1COMP).
 
-> **Note:**
->
+> **Note**  
 > It is recommended that you set the server to use TLSV1COMP.
 
 ## Enable TLS 1.1 and 1.2

@@ -63,8 +63,7 @@ Id.          Root         iNum T S C K E  Exp.Date     Delivered to   Delive
 
 List of certificate authorities, where the total length of all identifiers cannot exceed 256 characters for CFTSSL. This list references a maximum of 10 identifiers  in the local certificate database.
 
-> **Note:**
->
+> **Note**  
 > To use more than 10 identifiers, you can refer to the PKIENTITY information.
 
 In client mode, this list is used to check the server

@@ -43,60 +43,60 @@ the following table. It can serve as a guideline for gathering information, whic
    </thead>
    <tbody>
       <tr>
-         <td>1. Identify the symptoms         </td>
+         <td colspan="2"  >1. Identify the symptoms         </td>
       </tr>
       <tr>
-         <td><p>Did the system crash?</p>         </td>
-         <td><p> </p>         </td>
+         <td   width="50%"><p>Did the system crash?</p>         </td>
+         <td   width="50%"><p> </p>         </td>
       </tr>
       <tr>
-         <td><p>Is the error message due to a transfer request, a transfer
+         <td   width="50%"><p>Is the error message due to a transfer request, a transfer
 in server mode, or other?</p>         </td>
-         <td><p> </p>         </td>
+         <td   width="50%"><p> </p>         </td>
       </tr>
       <tr>
-         <td><p>Is Transfer CFT functioning abnormally?</p>         </td>
-         <td><p> </p>         </td>
+         <td   width="50%"><p>Is Transfer CFT functioning abnormally?</p>         </td>
+         <td   width="50%"><p> </p>         </td>
       </tr>
       <tr>
-         <td><p>Is the symptom persistent?</p>         </td>
-         <td><p> </p>         </td>
+         <td   width="50%"><p>Is the symptom persistent?</p>         </td>
+         <td   width="50%"><p> </p>         </td>
       </tr>
       <tr>
-         <td><p>Can you reproduce the symptom?</p>         </td>
-         <td><p> </p>         </td>
+         <td   width="50%"><p>Can you reproduce the symptom?</p>         </td>
+         <td   width="50%"><p> </p>         </td>
       </tr>
       <tr>
-         <td><p>2. Locate the problem</p>         </td>
+         <td colspan="2"   width="50%"><p>2. Locate the problem</p>         </td>
       </tr>
       <tr>
-         <td><p>Which component and function are concerned?</p>         </td>
-         <td><p> </p>         </td>
+         <td   width="50%"><p>Which component and function are concerned?</p>         </td>
+         <td   width="50%"><p> </p>         </td>
       </tr>
       <tr>
-         <td><p>Can you identify the source of the problem?</p>         </td>
-         <td><p> </p>         </td>
+         <td   width="50%"><p>Can you identify the source of the problem?</p>         </td>
+         <td   width="50%"><p> </p>         </td>
       </tr>
       <tr>
-         <td><p>Can you bypass the problem?</p>         </td>
-         <td><p> </p>         </td>
+         <td   width="50%"><p>Can you bypass the problem?</p>         </td>
+         <td   width="50%"><p> </p>         </td>
       </tr>
       <tr>
-         <td><p>3. Find the cause</p>         </td>
+         <td colspan="2"   width="50%"><p>3. Find the cause</p>         </td>
       </tr>
       <tr>
-         <td><p>Has your system or Transfer CFT recently been re-configured?</p>         </td>
-         <td><p> </p>         </td>
+         <td   width="50%"><p>Has your system or Transfer CFT recently been re-configured?</p>         </td>
+         <td   width="50%"><p> </p>         </td>
       </tr>
       <tr>
-         <td><p>Have you installed a new component, either hardware or
+         <td   width="50%"><p>Have you installed a new component, either hardware or
 software?</p>         </td>
-         <td><p> </p>         </td>
+         <td   width="50%"><p> </p>         </td>
       </tr>
       <tr>
-         <td><p>Has the problem only recently occurred, or has it existed
+         <td   width="50%"><p>Has the problem only recently occurred, or has it existed
 for some time?</p>         </td>
-         <td><p> </p>         </td>
+         <td   width="50%"><p> </p>         </td>
       </tr>
    </tbody>
 </table>

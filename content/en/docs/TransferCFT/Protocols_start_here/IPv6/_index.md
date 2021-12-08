@@ -21,7 +21,7 @@ To enable IPv6 name resolution for Transfer CFT, set the following unified confi
 
 | Parameter  | Value  | Description  |
 | --- | --- | --- |
-| ipv6.disable_connect  | <u>YES</u> | NO  |  The value NO enables IPV6 resolution for hostnames used by Transfer CFT to connect to remote servers.  |
+| ipv6.disable_connect  | <u>YES</u> | NO  |  The value NO enables IPV6 resolution for hostnames used by Transfer CFT to connect to remote servers.                                                                                                                                                                                                                                                                                                                                                                                    |
 | ipv6.disable_listen  | <u>YES</u> | NO  | The value NO enables IPV6 resolution for hostnames used by Transfer CFT to listen for incoming connections.  |
 
 
@@ -84,8 +84,8 @@ Tuning parameters
 | Parameter  | Default  | Description  |
 | --- | --- | --- |
 |  cft.ipv6.set_ai_numerichost  | Yes  |  <li>**Yes**: Use when the host name is numeric to prevent the API system getaddrinfo from performing unnecessary DNS requests for numeric hostnames.<br/> • **No**: Use DNS requests for all hostnames, including numeric.</li>  |
-| cft.ipv6.set_ai_numericserv  | Yes  |  <li>**Yes**: Use when the service name is numeric (port number) to prevent the API system getaddrinfo from performing an unnecessary service name translation.<br/> • **No**: The getaddrinfo system API will perform a service name translation even if unnecessary.</li>  |
-| cft.ipv6.use_ipv4_legacy_resolver  | No  |  <li>**Yes**: Use legacy IPv4 only with the host and service names resolution APIs, gethostbyname() and getservbyname(). This detects if a performance issue involves IPv6 specific elements such as configuration settings, system API implementation, etc.<br/> • **No**: Use IPv6 functionality.</li>  |
+| cft.ipv6.set_ai_numericserv  | Yes  |  <li>**Yes**: Use when the service name is numeric (port number) to prevent the API system getaddrinfo  from performing an unnecessary service name translation.<br/> • **No**: The getaddrinfo system API will perform a service name translation even if unnecessary.</li>  |
+| cft.ipv6.use_ipv4_legacy_resolver  | No  |  <li>**Yes**: Use legacy IPv4 only with the host and   service names resolution APIs, gethostbyname() and getservbyname().   This detects if a performance issue involves   IPv6 specific elements such as configuration settings, system API implementation,   etc.<br/> • **No**: Use IPv6 functionality.</li>  |
 
 
 ### IPv6 support
@@ -103,17 +103,17 @@ Enable IPv6
    </thead>
    <tbody>
       <tr>
-         <td><p>ipv6.disable_connect</p>         </td>
-         <td><p><strong>No</strong> indicates that an address or a name used by  {{< TransferCFT/componentshortname  >}} to connect to a host may be either an IPV4 or an IPV6 address. When using a name, this parameter can refer to a list of addresses, of any type.</p>         </td>
+         <td ><p>ipv6.disable_connect</p>         </td>
+         <td ><p><strong>No</strong> indicates that an address or a name used by  {{< TransferCFT/componentshortname  >}} to connect to a host may be either an IPV4 or an IPV6 address. When using a name, this parameter can refer to a list of addresses, of any type.</p>         </td>
       </tr>
       <tr>
-         <td>ipv6.disable_listen         </td>
-         <td><p><strong>No</strong> indicates that an address or name used by  {{< TransferCFT/componentshortname  >}} to listen for incoming connections may be either an IPV4 or an IPV6 address.</p>
+         <td >ipv6.disable_listen         </td>
+         <td ><p><strong>No</strong> indicates that an address or name used by  {{< TransferCFT/componentshortname  >}} to listen for incoming connections may be either an IPV4 or an IPV6 address.</p>
 <p>When using a name, this parameter can refer to a list of addresses, of any type.</p>         </td>
       </tr>
       <tr>
-         <td><blockquote>
-<p><strong>Note:</strong></p>
+         <td colspan="2" ><blockquote>
+<p><strong>Note</strong></p>
 <p>It is recommended that you do not set ipv6.disable_listen to No, and ipv6.disable_connect to Yes.</p>
 </blockquote>         </td>
       </tr>

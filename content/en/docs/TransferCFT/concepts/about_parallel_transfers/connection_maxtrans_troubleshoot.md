@@ -136,8 +136,7 @@ In this example, we have a distribution list with 5 partners, which shows an exa
 
 The transfers are executed quickly, in rapid succession because {{< TransferCFT/componentlongname  >}} is not limited by the session. As soon as the first 3 transfers are completed, the 2 remaining are executed immediately.
 
-> **Note:**
->
+> **Note**  
 > Remember one session is kept for incoming connections, so in this case only two sessions were used.
 
 MAXTRANS=3, MAXCNX=6, DISCTD=120 (seconds session is still open)
@@ -168,8 +167,7 @@ MAXTRANS=3, MAXCNX=6, DISCTD=120 (seconds session is still open)
 
 In Scenario 2 Transfer CFT is limited by the session, meaning that the same 5 partner transfers as in Scenario 1 now take over 120 seconds (the DISCTD time defined to keep the session open).
 
-> **Note:**
->
+> **Note**  
 > DISCTD has an effect on latency.
 
 MAXTRANS=6, MAXCNX=3, DISCTD=120 (seconds session is still open)

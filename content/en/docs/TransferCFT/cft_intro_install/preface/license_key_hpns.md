@@ -11,7 +11,7 @@
 
 1.  After completing the installation, or for an existing installation, use the  command `cftutil about` to retrieve your system information.
 
-    > **Note:**
+    > **Note**
     >
     > Use the ABOUT command to display
     > the Transfer CFT product, host, and key information. This command displays the characteristics of the platform
@@ -30,8 +30,7 @@ To apply the license key, enter the Transfer CFT key in the  indirection file, w
 -   The file can contain one or multiple license keys, but it must have one key per line.
 -   On start up the first valid key is used.
 
-> **Note:**
->
+> **Note**  
 > See the  KEY parameter for an example and details.
 
 ## About command

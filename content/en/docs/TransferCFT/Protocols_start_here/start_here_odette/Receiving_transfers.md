@@ -79,8 +79,7 @@ If the FRECFM and FLRECL parameters are not defined or imposed , data
 are saved, by default, in a file of variable format , with a maximum record
 length of 2048 bytes.
 
-> **Note:**
->
+> **Note**  
 > To avoid protocol-related
 > problems, a Transfer CFT user subscribing to Atlas400 must request the
 > &lt;CR>/&lt;LF> insert option from their Transpac sales branch.

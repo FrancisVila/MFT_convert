@@ -35,8 +35,7 @@ the following action(s) to manage your product:
 -   ENABLE_NODE
 -   DISABLE_NODE
 
-> **Note:**
-> CFTMN is the equivalent of cft script for UNIX or
+> **Note**   CFTMN is the equivalent of cft script for UNIX or
 > Windows.
 
 ```

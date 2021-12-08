@@ -29,8 +29,7 @@ a response and a confirmation to be complete.
 The following table illustrates the communication flows
 between Initiator and Responder during file transmission.
 
-> **Note:**
->
+> **Note**  
 > A file exchange involves more than just sending a file's data. Control information also has to be conveyed before, during and after the data transfer. This extra information is contained in protocol messages called FPDU (File Protocol Data Unit).
 
 <table>
@@ -41,226 +40,226 @@ between Initiator and Responder during file transmission.
    </thead>
    <tbody>
       <tr>
-         <td>          </td>
-         <td>FPDU         </td>
-         <td>          </td>
-         <td>          </td>
+         <td >          </td>
+         <td >FPDU         </td>
+         <td >          </td>
+         <td >          </td>
       </tr>
       <tr>
-         <td><p>PeSIT</p>         </td>
-         <td>          </td>
-         <td><p>  </p>         </td>
-         <td><p>PeSIT</p>         </td>
+         <td  data-bgcolor="#FFFFFF" data-valign="top" width="252px"><p>PeSIT</p>         </td>
+         <td >          </td>
+         <td  data-bgcolor="#FFFFFF" data-valign="top" width="105.1pt"><p>  </p>         </td>
+         <td  data-bgcolor="#FFFFFF" data-valign="top" width="178.4pt"><p>PeSIT</p>         </td>
       </tr>
       <tr>
-         <td><p>INITIATOR</p>         </td>
-         <td>          </td>
-         <td><p>  </p>         </td>
-         <td><p>RESPONDER</p>         </td>
+         <td  data-bgcolor="#FFFFFF" data-valign="top" width="252px"><p>INITIATOR</p>         </td>
+         <td >          </td>
+         <td  data-bgcolor="#FFFFFF" data-valign="top" width="105.1pt"><p>  </p>         </td>
+         <td  data-bgcolor="#FFFFFF" data-valign="top" width="178.4pt"><p>RESPONDER</p>         </td>
       </tr>
       <tr>
-         <td><p>  </p>         </td>
-         <td>          </td>
-         <td><p>idle</p>         </td>
-         <td><p>  </p>         </td>
+         <td  data-valign="top" width="252px"><p>  </p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>idle</p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>  </p>         </td>
       </tr>
       <tr>
-         <td><p>F.CONNECT, REQ ------&gt;</p>         </td>
-         <td>          </td>
-         <td><p>  </p>         </td>
-         <td><p>------&gt;IND, F.CONNECT</p>         </td>
+         <td  data-valign="top" width="252px"><p>F.CONNECT, REQ ------&gt;</p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>------&gt;IND, F.CONNECT</p>         </td>
       </tr>
       <tr>
-         <td><p>F.CONNECT, CNF &lt;------</p>         </td>
-         <td>          </td>
-         <td><p>  </p>         </td>
-         <td><p>&lt;------RSP, F.CONNECT</p>         </td>
+         <td  data-valign="top" width="252px"><p>F.CONNECT, CNF &lt;------</p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>&lt;------RSP, F.CONNECT</p>         </td>
       </tr>
       <tr>
-         <td><p>  </p>         </td>
-         <td>          </td>
-         <td><p>connected</p>         </td>
-         <td><p>  </p>         </td>
+         <td  data-valign="top" width="252px"><p>  </p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>connected</p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>  </p>         </td>
       </tr>
       <tr>
-         <td><p>F.CREATE, REQ ------&gt;</p>         </td>
-         <td>          </td>
-         <td><p>  </p>         </td>
-         <td><p>------&gt;IND, F.CREATE</p>         </td>
+         <td  data-valign="top" width="252px"><p>F.CREATE, REQ ------&gt;</p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>------&gt;IND, F.CREATE</p>         </td>
       </tr>
       <tr>
-         <td><p>F.CREATE, CNF &lt;------</p>         </td>
-         <td>          </td>
-         <td><p>  </p>         </td>
-         <td><p>&lt;------RSP, F.CREATE</p>         </td>
+         <td  data-valign="top" width="252px"><p>F.CREATE, CNF &lt;------</p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>&lt;------RSP, F.CREATE</p>         </td>
       </tr>
       <tr>
-         <td><p>  </p>         </td>
-         <td>          </td>
-         <td><p>file selected</p>         </td>
-         <td><p>  </p>         </td>
+         <td  data-valign="top" width="252px"><p>  </p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>file selected</p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>  </p>         </td>
       </tr>
       <tr>
-         <td><p>F.OPEN, REQ ------&gt;</p>         </td>
-         <td>          </td>
-         <td><p>  </p>         </td>
-         <td><p>------&gt;IND, F.OPEN</p>         </td>
+         <td  data-valign="top" width="252px"><p>F.OPEN, REQ ------&gt;</p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>------&gt;IND, F.OPEN</p>         </td>
       </tr>
       <tr>
-         <td><p>F.OPEN, CNF &lt;------</p>         </td>
-         <td>          </td>
-         <td><p>  </p>         </td>
-         <td><p>&lt;------RSP, F.OPEN</p>         </td>
+         <td  data-valign="top" width="252px"><p>F.OPEN, CNF &lt;------</p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>&lt;------RSP, F.OPEN</p>         </td>
       </tr>
       <tr>
-         <td><p>  </p>         </td>
-         <td>          </td>
-         <td><p>file opened</p>         </td>
-         <td><p>  </p>         </td>
+         <td  data-valign="top" width="252px"><p>  </p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>file opened</p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>  </p>         </td>
       </tr>
       <tr>
-         <td><p>F.WRITE, REQ ------&gt;</p>         </td>
-         <td>          </td>
-         <td><p>  </p>         </td>
-         <td><p>------&gt;IND, F.WRITE</p>         </td>
+         <td  data-valign="top" width="252px"><p>F.WRITE, REQ ------&gt;</p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>------&gt;IND, F.WRITE</p>         </td>
       </tr>
       <tr>
-         <td><p>F.WRITE, CNF &lt;------</p>         </td>
-         <td>          </td>
-         <td><p>  </p>         </td>
-         <td><p>&lt;------RSP, F.WRITE</p>         </td>
+         <td  data-valign="top" width="252px"><p>F.WRITE, CNF &lt;------</p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>&lt;------RSP, F.WRITE</p>         </td>
       </tr>
       <tr>
-         <td><p>  </p>         </td>
-         <td>          </td>
-         <td><p>transfer started</p>         </td>
-         <td><p>  </p>         </td>
+         <td  data-valign="top" width="252px"><p>  </p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>transfer started</p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>  </p>         </td>
       </tr>
       <tr>
-         <td><p>F.DATA, REQ -------&gt;</p>         </td>
-         <td>          </td>
-         <td><p>data transfer</p>         </td>
-         <td><p>------&gt;IND, F.DATA</p>         </td>
+         <td  data-valign="top" width="252px"><p>F.DATA, REQ -------&gt;</p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>data transfer</p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>------&gt;IND, F.DATA</p>         </td>
       </tr>
       <tr>
-         <td><p>F.DATA, REQ -------&gt;</p>         </td>
-         <td>          </td>
-         <td><p>  </p>         </td>
-         <td><p>------&gt;IND, F.DATA</p>         </td>
+         <td  data-valign="top" width="252px"><p>F.DATA, REQ -------&gt;</p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>------&gt;IND, F.DATA</p>         </td>
       </tr>
       <tr>
-         <td><p>F.CHECK, REQ -------&gt;</p>         </td>
-         <td>          </td>
-         <td><p>synchronization point</p>         </td>
-         <td><p>------&gt;IND, F.CHECK</p>         </td>
+         <td  data-valign="top" width="252px"><p>F.CHECK, REQ -------&gt;</p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>synchronization point</p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>------&gt;IND, F.CHECK</p>         </td>
       </tr>
       <tr>
-         <td><p>F.DATA, REQ -------&gt;</p>         </td>
-         <td>          </td>
-         <td><p>  </p>         </td>
-         <td><p>------&gt;IND, F.DATA</p>         </td>
+         <td  data-valign="top" width="252px"><p>F.DATA, REQ -------&gt;</p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>------&gt;IND, F.DATA</p>         </td>
       </tr>
       <tr>
-         <td><p>F.DATA, REQ -------&gt;</p>         </td>
-         <td>          </td>
-         <td><p>  </p>         </td>
-         <td><p>------&gt;IND, F.DATA</p>         </td>
+         <td  data-valign="top" width="252px"><p>F.DATA, REQ -------&gt;</p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>------&gt;IND, F.DATA</p>         </td>
       </tr>
       <tr>
-         <td><p>F.CHECK, REQ -------&gt;</p>         </td>
-         <td>          </td>
-         <td><p>  </p>         </td>
-         <td><p>------&gt;IND, F.CHECK</p>         </td>
+         <td  data-valign="top" width="252px"><p>F.CHECK, REQ -------&gt;</p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>------&gt;IND, F.CHECK</p>         </td>
       </tr>
       <tr>
-         <td><p>F.DATA, REQ -------&gt;</p>         </td>
-         <td>          </td>
-         <td><p>  </p>         </td>
-         <td><p>------&gt;IND, F.DATA</p>         </td>
+         <td  data-valign="top" width="252px"><p>F.DATA, REQ -------&gt;</p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>------&gt;IND, F.DATA</p>         </td>
       </tr>
       <tr>
-         <td><p>F.DATA-END, REQ -----&gt;</p>         </td>
-         <td>          </td>
-         <td><p>  </p>         </td>
-         <td><p>------&gt;IND, F.DATA-END</p>         </td>
+         <td  data-valign="top" width="252px"><p>F.DATA-END, REQ -----&gt;</p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>------&gt;IND, F.DATA-END</p>         </td>
       </tr>
       <tr>
-         <td><p>  </p>         </td>
-         <td>          </td>
-         <td><p>  </p>         </td>
-         <td><p>  </p>         </td>
+         <td  data-valign="top" width="252px"><p>  </p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>  </p>         </td>
       </tr>
       <tr>
-         <td><p>F.TRANSFER-END, REQ -----&gt;</p>         </td>
-         <td>          </td>
-         <td><p>  </p>         </td>
-         <td><p>------&gt;IND,F.TRANSFER-END</p>         </td>
+         <td  data-valign="top" width="252px"><p>F.TRANSFER-END, REQ -----&gt;</p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>------&gt;IND,F.TRANSFER-END</p>         </td>
       </tr>
       <tr>
-         <td><p>F.TRANSFER-END, CNF &lt;-----</p>         </td>
-         <td>          </td>
-         <td><p>  </p>         </td>
-         <td><p>&lt;------RSP,F.TRANSFER-END</p>         </td>
+         <td  data-valign="top" width="252px"><p>F.TRANSFER-END, CNF &lt;-----</p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>&lt;------RSP,F.TRANSFER-END</p>         </td>
       </tr>
       <tr>
-         <td><p>  </p>         </td>
-         <td>          </td>
-         <td><p>transfer ended</p>         </td>
-         <td><p>  </p>         </td>
+         <td  data-valign="top" width="252px"><p>  </p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>transfer ended</p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>  </p>         </td>
       </tr>
       <tr>
-         <td><p>F.CLOSE, REQ ------&gt;</p>         </td>
-         <td>          </td>
-         <td><p>  </p>         </td>
-         <td><p>------&gt;IND, F.CLOSE</p>         </td>
+         <td  data-valign="top" width="252px"><p>F.CLOSE, REQ ------&gt;</p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>------&gt;IND, F.CLOSE</p>         </td>
       </tr>
       <tr>
-         <td><p>F.CLOSE, CNF &lt;------</p>         </td>
-         <td>          </td>
-         <td><p>  </p>         </td>
-         <td><p>&lt;------RSP, F.CLOSE</p>         </td>
+         <td  data-valign="top" width="252px"><p>F.CLOSE, CNF &lt;------</p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>&lt;------RSP, F.CLOSE</p>         </td>
       </tr>
       <tr>
-         <td><p>  </p>         </td>
-         <td>          </td>
-         <td><p>file closed</p>         </td>
-         <td><p>  </p>         </td>
+         <td  width="252px"><p>  </p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>file closed</p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>  </p>         </td>
       </tr>
       <tr>
-         <td><p>F.DESELECT, REQ ------&gt;</p>         </td>
-         <td>          </td>
-         <td><p>  </p>         </td>
-         <td><p>------&gt;IND, F.DESELECT</p>         </td>
+         <td  width="252px"><p>F.DESELECT, REQ ------&gt;</p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>------&gt;IND, F.DESELECT</p>         </td>
       </tr>
       <tr>
-         <td><p>F.DESELECT, CNF &lt;------</p>         </td>
-         <td>          </td>
-         <td><p>  </p>         </td>
-         <td><p>&lt;------RSP, F.DESELECT</p>         </td>
+         <td  width="252px"><p>F.DESELECT, CNF &lt;------</p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>&lt;------RSP, F.DESELECT</p>         </td>
       </tr>
       <tr>
-         <td><p>  </p>         </td>
-         <td>          </td>
-         <td><p>file deselected</p>         </td>
-         <td><p>  </p>         </td>
+         <td  width="252px"><p>  </p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>file deselected</p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>  </p>         </td>
       </tr>
       <tr>
-         <td><p>F.RELEASED, REQ ------&gt;</p>         </td>
-         <td>          </td>
-         <td><p>  </p>         </td>
-         <td><p>------&gt;IND, F.RELEASED</p>         </td>
+         <td  width="252px"><p>F.RELEASED, REQ ------&gt;</p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>------&gt;IND, F.RELEASED</p>         </td>
       </tr>
       <tr>
-         <td><p>F.RELEASED, CNF &lt;------</p>         </td>
-         <td>          </td>
-         <td><p>  </p>         </td>
-         <td><p>&lt;------RSP, F.RELEASED</p>         </td>
+         <td  width="252px"><p>F.RELEASED, CNF &lt;------</p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>&lt;------RSP, F.RELEASED</p>         </td>
       </tr>
       <tr>
-         <td><p>  </p>         </td>
-         <td>          </td>
-         <td><p>disconnected</p>         </td>
-         <td><p>  </p>         </td>
+         <td  width="252px"><p>  </p>         </td>
+         <td >          </td>
+         <td  data-valign="top" width="105.1pt"><p>disconnected</p>         </td>
+         <td  data-valign="top" width="178.4pt"><p>  </p>         </td>
       </tr>
    </tbody>
 </table>
@@ -278,154 +277,154 @@ between Initiator and Responder during file reception.
    </thead>
    <tbody>
       <tr>
-         <td><p>PeSIT</p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>PeSIT</p>         </td>
+         <td  data-valign="top" width="108.6pt"><p>PeSIT</p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="243.1pt"><p>PeSIT</p>         </td>
       </tr>
       <tr>
-         <td><p>INITIATOR</p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>RESPONDER</p>         </td>
+         <td  data-valign="top" width="108.6pt"><p>INITIATOR</p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="243.1pt"><p>RESPONDER</p>         </td>
       </tr>
       <tr>
-         <td><p>  </p>         </td>
-         <td><p>connected</p>         </td>
-         <td><p>  </p>         </td>
+         <td  data-valign="top" width="108.6pt"><p>  </p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>connected</p>         </td>
+         <td  data-valign="top" width="243.1pt"><p>  </p>         </td>
       </tr>
       <tr>
-         <td><p>F.SELECT, REQ ------&gt;</p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>------&gt;IND, F.SELECT</p>         </td>
+         <td  data-valign="top" width="108.6pt"><p>F.SELECT, REQ ------&gt;</p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="243.1pt"><p>------&gt;IND, F.SELECT</p>         </td>
       </tr>
       <tr>
-         <td><p>F.SELECT, CNF &lt;------</p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>&lt;------RSP, F.SELECT</p>         </td>
+         <td  data-valign="top" width="108.6pt"><p>F.SELECT, CNF &lt;------</p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="243.1pt"><p>&lt;------RSP, F.SELECT</p>         </td>
       </tr>
       <tr>
-         <td><p>  </p>         </td>
-         <td><p>file selected</p>         </td>
-         <td><p>  </p>         </td>
+         <td  data-valign="top" width="108.6pt"><p>  </p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>file selected</p>         </td>
+         <td  data-valign="top" width="243.1pt"><p>  </p>         </td>
       </tr>
       <tr>
-         <td><p>F.OPEN, REQ ------&gt;</p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>------&gt;IND, F.OPEN</p>         </td>
+         <td  data-valign="top" width="108.6pt"><p>F.OPEN, REQ ------&gt;</p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="243.1pt"><p>------&gt;IND, F.OPEN</p>         </td>
       </tr>
       <tr>
-         <td><p>F.OPEN, CNF &lt;------</p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>&lt;------RSP, F.OPEN</p>         </td>
+         <td  data-valign="top" width="108.6pt"><p>F.OPEN, CNF &lt;------</p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="243.1pt"><p>&lt;------RSP, F.OPEN</p>         </td>
       </tr>
       <tr>
-         <td><p>  </p>         </td>
-         <td><p>file opened</p>         </td>
-         <td><p>  </p>         </td>
+         <td  data-valign="top" width="108.6pt"><p>  </p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>file opened</p>         </td>
+         <td  data-valign="top" width="243.1pt"><p>  </p>         </td>
       </tr>
       <tr>
-         <td><p>F.READ, REQ ------&gt;</p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>------&gt;IND, F.READ</p>         </td>
+         <td  data-valign="top" width="108.6pt"><p>F.READ, REQ ------&gt;</p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="243.1pt"><p>------&gt;IND, F.READ</p>         </td>
       </tr>
       <tr>
-         <td><p>F.READ, CNF &lt;------</p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>&lt;------RSP, F.READ</p>         </td>
+         <td  data-valign="top" width="108.6pt"><p>F.READ, CNF &lt;------</p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="243.1pt"><p>&lt;------RSP, F.READ</p>         </td>
       </tr>
       <tr>
-         <td><p>  </p>         </td>
-         <td><p>transfer started</p>         </td>
-         <td><p>  </p>         </td>
+         <td  data-valign="top" width="108.6pt"><p>  </p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>transfer started</p>         </td>
+         <td  data-valign="top" width="243.1pt"><p>  </p>         </td>
       </tr>
       <tr>
-         <td><p>F.DATA, IND &lt;------</p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>&lt;------REQ, F.DATA</p>         </td>
+         <td  data-valign="top" width="108.6pt"><p>F.DATA, IND &lt;------</p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="243.1pt"><p>&lt;------REQ, F.DATA</p>         </td>
       </tr>
       <tr>
-         <td><p>F.DATA, IND &lt;------</p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>&lt;------REQ, F.DATA</p>         </td>
+         <td  data-valign="top" width="108.6pt"><p>F.DATA, IND &lt;------</p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="243.1pt"><p>&lt;------REQ, F.DATA</p>         </td>
       </tr>
       <tr>
-         <td><p>F.CHECK, IND &lt;------</p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>&lt;------REQ, F.CHECK</p>         </td>
+         <td  data-valign="top" width="108.6pt"><p>F.CHECK, IND &lt;------</p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="243.1pt"><p>&lt;------REQ, F.CHECK</p>         </td>
       </tr>
       <tr>
-         <td><p>F.DATA, IND &lt;------</p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>&lt;------REQ, F.DATA</p>         </td>
+         <td  data-valign="top" width="108.6pt"><p>F.DATA, IND &lt;------</p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="243.1pt"><p>&lt;------REQ, F.DATA</p>         </td>
       </tr>
       <tr>
-         <td><p>F.DATA, IND &lt;------</p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>&lt;------REQ, F.DATA</p>         </td>
+         <td  data-valign="top" width="108.6pt"><p>F.DATA, IND &lt;------</p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="243.1pt"><p>&lt;------REQ, F.DATA</p>         </td>
       </tr>
       <tr>
-         <td><p>F.CHECK, IND &lt;------</p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>&lt;------REQ, F.CHECK</p>         </td>
+         <td  data-valign="top" width="108.6pt"><p>F.CHECK, IND &lt;------</p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="243.1pt"><p>&lt;------REQ, F.CHECK</p>         </td>
       </tr>
       <tr>
-         <td><p>F.DATA, IND &lt;------</p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>&lt;------REQ, F.DATA</p>         </td>
+         <td  data-valign="top" width="108.6pt"><p>F.DATA, IND &lt;------</p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="243.1pt"><p>&lt;------REQ, F.DATA</p>         </td>
       </tr>
       <tr>
-         <td><p>F.DATA-END, IND</p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>&lt;------REQ, F.DATA-END</p>         </td>
+         <td  data-valign="top" width="108.6pt"><p>F.DATA-END, IND</p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="243.1pt"><p>&lt;------REQ, F.DATA-END</p>         </td>
       </tr>
       <tr>
-         <td><p>  </p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>  </p>         </td>
+         <td  data-valign="top" width="108.6pt"><p>  </p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="243.1pt"><p>  </p>         </td>
       </tr>
       <tr>
-         <td><p>F.TRANSFER-END, REQ -----&gt;</p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>------&gt;IND,F.TRANSFER-END</p>         </td>
+         <td  data-valign="top" width="108.6pt"><p>F.TRANSFER-END, REQ -----&gt;</p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="243.1pt"><p>------&gt;IND,F.TRANSFER-END</p>         </td>
       </tr>
       <tr>
-         <td><p>F.TRANSFER-END, CNF &lt;-----</p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>&lt;------RSP,F.TRANSFER-END</p>         </td>
+         <td  data-valign="top" width="108.6pt"><p>F.TRANSFER-END, CNF &lt;-----</p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="243.1pt"><p>&lt;------RSP,F.TRANSFER-END</p>         </td>
       </tr>
       <tr>
-         <td><p>  </p>         </td>
-         <td><p>transfer ended</p>         </td>
-         <td><p>  </p>         </td>
+         <td  data-valign="top" width="108.6pt"><p>  </p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>transfer ended</p>         </td>
+         <td  data-valign="top" width="243.1pt"><p>  </p>         </td>
       </tr>
       <tr>
-         <td><p>F.CLOSE, REQ ------&gt;</p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>------&gt;IND, F.CLOSE</p>         </td>
+         <td  data-valign="top" width="108.6pt"><p>F.CLOSE, REQ ------&gt;</p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="243.1pt"><p>------&gt;IND, F.CLOSE</p>         </td>
       </tr>
       <tr>
-         <td><p>F.CLOSE, CNF &lt;------</p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>&lt;------RSP, F.CLOSE</p>         </td>
+         <td  data-valign="top" width="108.6pt"><p>F.CLOSE, CNF &lt;------</p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="243.1pt"><p>&lt;------RSP, F.CLOSE</p>         </td>
       </tr>
       <tr>
-         <td><p>  </p>         </td>
-         <td><p>file closed </p>         </td>
-         <td><p>  </p>         </td>
+         <td  data-valign="top" width="108.6pt"><p>  </p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>file closed </p>         </td>
+         <td  data-valign="top" width="243.1pt"><p>  </p>         </td>
       </tr>
       <tr>
-         <td><p>F.DESELECT, REQ ------&gt;</p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>------&gt;IND, F.DESELECT</p>         </td>
+         <td  data-valign="top" width="108.6pt"><p>F.DESELECT, REQ ------&gt;</p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="243.1pt"><p>------&gt;IND, F.DESELECT</p>         </td>
       </tr>
       <tr>
-         <td><p>F.DESELECT, CNF &lt;------</p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>&lt;------RSP, F.DESELECT</p>         </td>
+         <td  data-valign="top" width="108.6pt"><p>F.DESELECT, CNF &lt;------</p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="243.1pt"><p>&lt;------RSP, F.DESELECT</p>         </td>
       </tr>
       <tr>
-         <td><p>  </p>         </td>
-         <td><p>file deselected</p>         </td>
-         <td><p>  </p>         </td>
+         <td  data-valign="top" width="108.6pt"><p>  </p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>file deselected</p>         </td>
+         <td  data-valign="top" width="243.1pt"><p>  </p>         </td>
       </tr>
    </tbody>
 </table>
@@ -443,64 +442,64 @@ between Initiator and Responder during message transmission.
    </thead>
    <tbody>
       <tr>
-         <td><p>PeSIT</p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>PeSIT</p>         </td>
+         <td  data-valign="top" width="109.9pt"><p>PeSIT</p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="241.6pt"><p>PeSIT</p>         </td>
       </tr>
       <tr>
-         <td><p>INITIATOR</p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>RESPONDER</p>         </td>
+         <td  data-valign="top" width="109.9pt"><p>INITIATOR</p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="241.6pt"><p>RESPONDER</p>         </td>
       </tr>
       <tr>
-         <td><p>  </p>         </td>
-         <td><p>idle</p>         </td>
-         <td><p>  </p>         </td>
+         <td  data-valign="top" width="109.9pt"><p>  </p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>idle</p>         </td>
+         <td  data-valign="top" width="241.6pt"><p>  </p>         </td>
       </tr>
       <tr>
-         <td><p>F.CONNECT, REQ ------&gt;</p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>------&gt;IND, F.CONNECT</p>         </td>
+         <td  data-valign="top" width="109.9pt"><p>F.CONNECT, REQ ------&gt;</p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="241.6pt"><p>------&gt;IND, F.CONNECT</p>         </td>
       </tr>
       <tr>
-         <td><p>F.CONNECT, CNF &lt;------</p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>&lt;------RSP, F.CONNECT</p>         </td>
+         <td  data-valign="top" width="109.9pt"><p>F.CONNECT, CNF &lt;------</p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="241.6pt"><p>&lt;------RSP, F.CONNECT</p>         </td>
       </tr>
       <tr>
-         <td><p>  </p>         </td>
-         <td><p>connected </p>         </td>
-         <td><p>  </p>         </td>
+         <td  data-valign="top" width="109.9pt"><p>  </p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>connected </p>         </td>
+         <td  data-valign="top" width="241.6pt"><p>  </p>         </td>
       </tr>
       <tr>
-         <td><p>F.MESSAGE, REQ ------&gt;</p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>------&gt;IND, F.MESSAGE</p>         </td>
+         <td  data-valign="top" width="109.9pt"><p>F.MESSAGE, REQ ------&gt;</p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="241.6pt"><p>------&gt;IND, F.MESSAGE</p>         </td>
       </tr>
       <tr>
-         <td><p>F.MESSAGE, CNF &lt;------</p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>&lt;------RSP, F.MESSAGE</p>         </td>
+         <td  data-valign="top" width="109.9pt"><p>F.MESSAGE, CNF &lt;------</p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="241.6pt"><p>&lt;------RSP, F.MESSAGE</p>         </td>
       </tr>
       <tr>
-         <td><p>  </p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>  </p>         </td>
+         <td  data-valign="top" width="109.9pt"><p>  </p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="241.6pt"><p>  </p>         </td>
       </tr>
       <tr>
-         <td><p>F.RELEASED, REQ ------&gt;</p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>------&gt;IND, F.RELEASED</p>         </td>
+         <td  data-valign="top" width="109.9pt"><p>F.RELEASED, REQ ------&gt;</p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="241.6pt"><p>------&gt;IND, F.RELEASED</p>         </td>
       </tr>
       <tr>
-         <td><p>F.RELEASED, CNF &lt;------</p>         </td>
-         <td><p>  </p>         </td>
-         <td><p>&lt;------RSP, F.RELEASED</p>         </td>
+         <td  data-valign="top" width="109.9pt"><p>F.RELEASED, CNF &lt;------</p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>  </p>         </td>
+         <td  data-valign="top" width="241.6pt"><p>&lt;------RSP, F.RELEASED</p>         </td>
       </tr>
       <tr>
-         <td><p>  </p>         </td>
-         <td><p>disconnected</p>         </td>
-         <td><p>  </p>         </td>
+         <td  data-valign="top" width="109.9pt"><p>  </p>         </td>
+         <td  data-valign="top" width="109.1pt"><p>disconnected</p>         </td>
+         <td  data-valign="top" width="241.6pt"><p>  </p>         </td>
       </tr>
    </tbody>
 </table>

@@ -22,8 +22,7 @@ Upgrading, as compared to migration, has the following advantages:
 -   You can perform this automatically using the Installer, and you can revert to previous state if needed
 -   Scripts and APIs remain intact and only require  a recompilation for the APIs
 
-> **Note:**
->
+> **Note**  
 > You cannot perform an upgrade on versions older than version 3.1.3.
 
 Transfer CFT 3.8 and higher
@@ -34,8 +33,7 @@ After performing a Transfer CFT upgrade, you must execute the `profile `before 
 
 A migration means that an initial {{< TransferCFT/componentshortname  >}} is installed in a directory that is not removed or overwritten by the procedure.
 
-> **Note:**
->
+> **Note**  
 > When migrating from a previous version of Transfer CFT, be sure to check the Release Notes for new as well as deprecated features and supported platforms for that release.
 
 The general procedure for migrating from a previous version of Transfer CFT  to Transfer CFT {{< TransferCFT/componentversion  >}} is as follows:
@@ -54,8 +52,7 @@ Central Governance simplifies the management of Transfer CFT and provides identi
 
 Central governance allows you to update to the latest Transfer CFT Service Pack or patch, or use the installation package to upgrade {{< TransferCFT/componentlongname  >}} (as of {{< TransferCFT/componentlongname  >}} 3.2.4)  to a new {{< TransferCFT/componentlongname  >}} version. However, you cannot migrate Transfer CFT using .
 
-> **Note:**
->
+> **Note**  
 > You cannot perform an upgrade from Central Governance on the following platforms: z/OS or IBM i.
 
 ## Prerequisites

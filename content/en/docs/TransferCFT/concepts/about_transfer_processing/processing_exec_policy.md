@@ -57,36 +57,36 @@ The processing level that is executed when you mix EXEXPRE/EXEC/EXECA and EXESUB
 <table>
    <tbody>
       <tr>
-         <td>          </td>
-         <td><p>EXECPRE/EXEC/EXECA for a CFTDEST broadcast request</p>         </td>
+         <td >          </td>
+         <td colspan="4" ><p>EXECPRE/EXEC/EXECA for a CFTDEST broadcast request</p>         </td>
       </tr>
       <tr>
-         <td>          </td>
-         <td>PART         </td>
-         <td>DEST         </td>
-         <td>CHILDREN         </td>
+         <td colspan="2"  >          </td>
+         <td >PART         </td>
+         <td >DEST         </td>
+         <td >CHILDREN         </td>
       </tr>
       <tr>
-         <td>EXECSUBPRE/EXECSUB/EXECSUBA<br />
+         <td rowspan="3"  >EXECSUBPRE/EXECSUB/EXECSUBA<br />
 for
 <p>CFTSEND/SEND/CFTRECV/RECV</p>
 <p>Group of files request</p>         </td>
-         <td>FILE         </td>
-         <td>L1 + L2 + L3         </td>
-         <td>L1         </td>
-         <td>L2 + L3         </td>
+         <td >FILE         </td>
+         <td >L1 + L2 + L3         </td>
+         <td >L1         </td>
+         <td >L2 + L3         </td>
       </tr>
       <tr>
-         <td>LIST         </td>
-         <td>L1 + L2         </td>
-         <td>L1         </td>
-         <td>L2         </td>
+         <td >LIST         </td>
+         <td >L1 + L2         </td>
+         <td >L1         </td>
+         <td >L2         </td>
       </tr>
       <tr>
-         <td>SUBF         </td>
-         <td>L1 + L3         </td>
-         <td>L1         </td>
-         <td>L3         </td>
+         <td >SUBF         </td>
+         <td >L1 + L3         </td>
+         <td >L1         </td>
+         <td >L3         </td>
       </tr>
    </tbody>
 </table>

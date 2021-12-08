@@ -24,43 +24,43 @@ The following table lists the different types of files that can be created on an
    </thead>
    <tbody>
       <tr>
-         <td><p>‘D’</p>         </td>
-         <td><p>‘F’</p>         </td>
-         <td><p>PF-DTA </p>         </td>
-         <td><p>FLRECL</p>         </td>
+         <td rowspan="2" ><p>‘D’</p>         </td>
+         <td ><p>‘F’</p>         </td>
+         <td ><p>PF-DTA </p>         </td>
+         <td ><p>FLRECL</p>         </td>
       </tr>
       <tr>
-         <td><p>‘V’</p>         </td>
-         <td><p>PF-DTA</p>         </td>
-         <td><p>FLRECL + 5 bytes <sup>1</sup></p>         </td>
+         <td ><p>‘V’</p>         </td>
+         <td ><p>PF-DTA</p>         </td>
+         <td ><p>FLRECL + 5 bytes <sup>1</sup></p>         </td>
       </tr>
       <tr>
-         <td><p>‘S’</p>         </td>
-         <td><p>‘F’</p>         </td>
-         <td><p>PF-SRC</p>         </td>
-         <td><p>FLRECL</p>         </td>
+         <td rowspan="2" ><p>‘S’</p>         </td>
+         <td ><p>‘F’</p>         </td>
+         <td ><p>PF-SRC</p>         </td>
+         <td ><p>FLRECL</p>         </td>
       </tr>
       <tr>
-         <td><p>‘V’</p>         </td>
-         <td><p>PF-SRC</p>         </td>
-         <td><p>FLRECL</p>         </td>
+         <td ><p>‘V’</p>         </td>
+         <td ><p>PF-SRC</p>         </td>
+         <td ><p>FLRECL</p>         </td>
       </tr>
       <tr>
-         <td><p>‘E’</p>         </td>
-         <td><p>‘F’</p>         </td>
-         <td><p>PF-SRC</p>         </td>
-         <td><p>FLRECL  +12  bytes <sup>2</sup></p>         </td>
+         <td rowspan="2" ><p>‘E’</p>         </td>
+         <td ><p>‘F’</p>         </td>
+         <td ><p>PF-SRC</p>         </td>
+         <td ><p>FLRECL  +12  bytes <sup>2</sup></p>         </td>
       </tr>
       <tr>
-         <td><p>‘V’</p>         </td>
-         <td><p>PF-SRC</p>         </td>
-         <td><p>FLRECL  +12  bytes <sup>2</sup></p>         </td>
+         <td ><p>‘V’</p>         </td>
+         <td ><p>PF-SRC</p>         </td>
+         <td ><p>FLRECL  +12  bytes <sup>2</sup></p>         </td>
       </tr>
       <tr>
-         <td><p>‘Z’</p>         </td>
-         <td><p>-</p>         </td>
-         <td><p>SAVF</p>         </td>
-         <td><p>NA</p>         </td>
+         <td ><p>‘Z’</p>         </td>
+         <td ><p>-</p>         </td>
+         <td ><p>SAVF</p>         </td>
+         <td ><p>NA</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -69,8 +69,7 @@ File type when the file already exists
 
 The following table describes the {{< TransferCFT/hflongproductname  >}} behavior when trying to receive data in an existing file on the native side of an IBM i system.
 
-> **Note:**
->
+> **Note**  
 > Bold  values indicate a recommended combination. For example, when FTYPE=D and FRECFM=V then FLRECL+5 / 5 is the recommended PF-SRC.
 
 <table>
@@ -91,64 +90,64 @@ The following table describes the {{< TransferCFT/hflongproductname  >}} behavio
    </thead>
    <tbody>
       <tr>
-         <td><p>‘D’</p>         </td>
-         <td><p>‘F’</p>         </td>
-         <td><p><strong>FLRECL / No</strong></p>         </td>
-         <td><p>FLRECL / No</p>         </td>
-         <td><p>Yes <sup>3</sup></p>         </td>
+         <td rowspan="2" ><p>‘D’</p>         </td>
+         <td ><p>‘F’</p>         </td>
+         <td ><p><strong>FLRECL / No</strong></p>         </td>
+         <td ><p>FLRECL / No</p>         </td>
+         <td ><p>Yes <sup>3</sup></p>         </td>
       </tr>
       <tr>
-         <td><p>‘V’</p>         </td>
-         <td><p>FLRECL+5 / 5</p>         </td>
-         <td><p><strong>FLRECL+5 / 5</strong></p>         </td>
-         <td><p>Yes <sup>3</sup></p>         </td>
+         <td ><p>‘V’</p>         </td>
+         <td ><p>FLRECL+5 / 5</p>         </td>
+         <td ><p><strong>FLRECL+5 / 5</strong></p>         </td>
+         <td ><p>Yes <sup>3</sup></p>         </td>
       </tr>
       <tr>
-         <td><p>‘S’</p>
+         <td rowspan="2" ><p>‘S’</p>
 <p> </p>         </td>
-         <td><p>‘F’</p>         </td>
-         <td><p>FLRECL / 0  OK</p>         </td>
-         <td><p><strong>FLRECL / 12</strong></p>         </td>
-         <td><p>Error</p>
+         <td ><p>‘F’</p>         </td>
+         <td ><p>FLRECL / 0  OK</p>         </td>
+         <td ><p><strong>FLRECL / 12</strong></p>         </td>
+         <td ><p>Error</p>
 <p>DIAGI: 102</p>
 <p>DIAGP: 1140850696</p>         </td>
       </tr>
       <tr>
-         <td><p>‘V’</p>         </td>
-         <td><p>FLRECL+17 /  17</p>         </td>
-         <td><p>FLRECL+17 /  17</p>         </td>
-         <td><p>Error</p>
+         <td ><p>‘V’</p>         </td>
+         <td ><p>FLRECL+17 /  17</p>         </td>
+         <td ><p>FLRECL+17 /  17</p>         </td>
+         <td ><p>Error</p>
 <p>DIAGI: 102</p>
 <p>DIAGP: 1140850696</p>         </td>
       </tr>
       <tr>
-         <td><p>‘E’</p>         </td>
-         <td><p>‘F’</p>         </td>
-         <td><p>FLRECL +12 / 0</p>         </td>
-         <td><p><strong>FLRECL +12 / 12</strong></p>         </td>
-         <td><p>Error</p>
+         <td rowspan="2" ><p>‘E’</p>         </td>
+         <td ><p>‘F’</p>         </td>
+         <td ><p>FLRECL +12 / 0</p>         </td>
+         <td ><p><strong>FLRECL +12 / 12</strong></p>         </td>
+         <td ><p>Error</p>
 <p>DIAGI: 102</p>
 <p>DIAGP: 1140850696</p>         </td>
       </tr>
       <tr>
-         <td><p>‘V’</p>         </td>
-         <td><p>FLRECL+17 /17</p>
+         <td ><p>‘V’</p>         </td>
+         <td ><p>FLRECL+17 /17</p>
 <p> </p>         </td>
-         <td><p>FLRECL+17 /  5</p>         </td>
-         <td><p>Error</p>
+         <td ><p>FLRECL+17 /  5</p>         </td>
+         <td ><p>Error</p>
 <p>DIAGI: 102</p>
 <p>DIAGP: 1140850696</p>         </td>
       </tr>
       <tr>
-         <td><p>‘Z’</p>         </td>
-         <td><p>-</p>         </td>
-         <td><p>Error</p>
+         <td ><p>‘Z’</p>         </td>
+         <td ><p>-</p>         </td>
+         <td ><p>Error</p>
 <p>DIAGI: 102</p>
 <p>DIAGP: 1140850696</p>         </td>
-         <td><p>Error</p>
+         <td ><p>Error</p>
 <p>DIAGI: 101</p>
 <p>DIAGP: 11409169</p>         </td>
-         <td><p>Yes <sup>3</sup></p>         </td>
+         <td ><p>Yes <sup>3</sup></p>         </td>
       </tr>
    </tbody>
 </table>

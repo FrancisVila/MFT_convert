@@ -15,8 +15,7 @@ Contents include:
 -   [Multi-node recommendations](multi_node_simultaneous_transfers)
 -   [FAQ and troubleshooting](faq)
 
-> **Note:**
->
+> **Note**  
 > Some parameters benefit from further tuning if using a multi node architecture. See also Multi-node partner configuration.
 
 <span id="Global"></span>
@@ -51,8 +50,7 @@ An established session is either active or inactive. An active session means tha
 
 You can also set the maximum number of simultaneous sessions  using the UCONF parameter `cft.server.max_session`. The default value is 0  and the maximum number of supported simultaneous transfer is 2000 (2 x 1000).
 
-> **Note:**
->
+> **Note**  
 > We recommend using the default value for cft.server.max\_session.
 
 #### DISCTD/DISCTS
@@ -73,8 +71,7 @@ CFTPROT id=PESIT, DISCTS=8, DISCTD=
 CFTPROT id=PESIT, DISCTS=, DISCTD=7
 ```
 
-> **Note:**
->
+> **Note**  
 > We recommend setting these values to 60 seconds or less.
 
 ### Transfer execution
@@ -138,8 +135,7 @@ This parameter controls the number of CFTTFIL processes that can run. Since more
 CFTPARM ID=IDPARM0,MAXTASK=n, ...
 ```
 
-> **Note:**
->
+> **Note**  
 > There is a one to one relationship between a transfer and its task. That is, the task cannot be shared, so it is recommended to set the MAXTASK to less than or equal to MAXTRANS.
 
 #### TRANTASK
@@ -169,8 +165,7 @@ TRANTASK = 4,
 
 This parameter defines the frequency, in minutes, with which Transfer CFT scans the catalog file when  restarting a transfer. That is, WSCAN reschedules transfers that have a remote MAXTRANS or local MAXCNX diagnostic. The default value is 5, but we recommend setting this value to 1.
 
-> **Note:**
->
+> **Note**  
 > The WSCAN scheduling retries continues indefinitely until the transfer can be executed.
 
 <span id="Partner"></span>
@@ -233,8 +228,7 @@ When using a stand alone Transfer CFT to another stand alone Transfer CFT (or ot
 
 This parameter defines the retry period following a network interruption. This is one of 3 parameters that control the retry policy for rescheduling following a network connection interruption. The  RETRYW value is an approximate time in order to avoid all blocked transfers being rescheduled at the same time overloading the system.
 
-> **Note:**
->
+> **Note**  
 > The RETRYW scheduling retries is limited by the RETRYM number.
 
 #### RETRYM

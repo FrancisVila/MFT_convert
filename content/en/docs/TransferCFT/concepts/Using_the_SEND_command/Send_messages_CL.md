@@ -17,8 +17,7 @@ CFTUTIL SEND part=PART, idm=MSG, type=message, msg=’hello’CFTUTIL DISPLAY co
 
 The resulting msgfile will contain the message 'hello'.
 
-> **Note:**
->
+> **Note**  
 > The &lt;TransferCFTinstallation>\\runtime\\conf folder contains the dspcnf.xml file, a DISPLAY command template, which includes a specific filter templatel id='msg' that enables message extraction.
 
 ### Sending messages

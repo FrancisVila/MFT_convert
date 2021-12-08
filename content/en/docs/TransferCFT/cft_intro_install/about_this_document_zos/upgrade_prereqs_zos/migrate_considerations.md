@@ -14,7 +14,7 @@
 | CATALOG  | MIGRCAT  |
 | COM  | MIGRCOM  |
 | LOG  | No migration step; you must create the file if you migrated.  |
-| ACCNT  |  No migration step; you must create the file if you migrated.<br/>For format=V24, some field lengths were modified, but the total size of record remains the same.  |
+| ACCNT  |  No migration step; you must create the file  if you migrated.<br/>For format=V24, some field lengths were modified, but the total size of record remains the same.  |
 | UCONF, unified configuration file  | MIGRUCNF.  |
 | PKI file  | As of Transfer CFT 3.4, MIGRPKI was split into 2 procedures, MIGRPKI1 and MIGRPKI2.  |
 | Exits/API  | The use of DLL mode is mandatory (otherwise you must rework the Exits and API). In any case, you must compile and link the exits and API.  |

@@ -35,8 +35,8 @@ Indicates whether you are sending a single file or multiple files.
 | CG parameter  | CFTUTIL parameter  | Description  |
 | --- | --- | --- |
 | Binary  | CFTRECV, fcode =B  | Specify whether the file is a binary file.  |
-| Text  |  CFTRECV, see configuration for FTYPE=TEXT  | Specify whether the file is a text file.  |
-| Record format  |  CFTRECV, see configuration for record format  | Indicate whether the records in the file are fixed or variable length.  |
+| Text  |  CFTRECV, see  configuration for FTYPE=TEXT  | Specify whether the file is a text file.  |
+| Record format  |  CFTRECV, see  configuration for record format  | Indicate whether the records in the file are fixed or variable length.  |
 
 
 ## Processing scripts &gt; post-processing

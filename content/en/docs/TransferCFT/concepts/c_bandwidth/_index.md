@@ -13,8 +13,7 @@ Class-of-service defines a common set of parameters for all network session esta
 
 All rates, either configured as rates or computed from weights, represent a number of Kbytes per second.
 
-> **Note:**
->
+> **Note**  
 > In Central Governance see the Bandwidth Allocation section on the product configuration page, and Bandwidth Allocation in the Transfer Properties of the flow definition,  for  supported bandwidth features and details.
 
 ## Parameters
@@ -42,52 +41,52 @@ Transfers are assigned to a specific class of bandwidth through the **COS** fiel
    </thead>
    <tbody>
       <tr>
-         <td>uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.weight_in         </td>
-         <td>unlimited         </td>
-         <td>This value is used to compute the nominal rate of incoming data for this class of service. **         </td>
+         <td >uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.weight_in         </td>
+         <td >unlimited         </td>
+         <td >This value is used to compute the nominal rate of incoming data for this class of service. **         </td>
       </tr>
       <tr>
-         <td>uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.weight_out         </td>
-         <td>unlimited         </td>
-         <td>This value is used to compute the nominal rate of outgoing data for this class of service. **         </td>
+         <td >uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.weight_out         </td>
+         <td >unlimited         </td>
+         <td >This value is used to compute the nominal rate of outgoing data for this class of service. **         </td>
       </tr>
       <tr>
-         <td><p>** Do not configure the parameters <strong>weight_in</strong> and <strong>weight_out</strong>  for the class-of-service 0, as they cannot be used in this context. See  <a href="#Concepts">Concepts.</a></p>         </td>
+         <td colspan="3" ><p>** Do not configure the parameters <strong>weight_in</strong> and <strong>weight_out</strong>  for the class-of-service 0, as they cannot be used in this context. See  <a href="#Concepts">Concepts.</a></p>         </td>
       </tr>
       <tr>
-         <td>uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.max_rate_out         </td>
-         <td>unlimited         </td>
-         <td>Maximum rate of incoming data for that class-of-service         </td>
+         <td >uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.max_rate_out         </td>
+         <td >unlimited         </td>
+         <td >Maximum rate of incoming data for that class-of-service         </td>
       </tr>
       <tr>
-         <td>uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.max_rate_out         </td>
-         <td>unlimited         </td>
-         <td>Maximum rate of outgoing data for that class-of-service         </td>
+         <td >uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.max_rate_out         </td>
+         <td >unlimited         </td>
+         <td >Maximum rate of outgoing data for that class-of-service         </td>
       </tr>
       <tr>
-         <td>uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.session_rate_in         </td>
-         <td>unlimited         </td>
-         <td>Maximum rate of incoming data for sessions under that class-of-service         </td>
+         <td >uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.session_rate_in         </td>
+         <td >unlimited         </td>
+         <td >Maximum rate of incoming data for sessions under that class-of-service         </td>
       </tr>
       <tr>
-         <td>uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.session_rate_out         </td>
-         <td>unlimited         </td>
-         <td>Maximum rate of outgoing data for sessions under that class-of-service         </td>
+         <td >uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.session_rate_out         </td>
+         <td >unlimited         </td>
+         <td >Maximum rate of outgoing data for sessions under that class-of-service         </td>
       </tr>
       <tr>
-         <td>uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.parent         </td>
-         <td>0         </td>
-         <td>Parent class-of-service         </td>
+         <td >uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.parent         </td>
+         <td  >0         </td>
+         <td >Parent class-of-service         </td>
       </tr>
       <tr>
-         <td>uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.comment         </td>
-         <td>“”         </td>
-         <td>User comment that describes the class-of-service         </td>
+         <td >uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.comment         </td>
+         <td  >“”         </td>
+         <td >User comment that describes the class-of-service         </td>
       </tr>
       <tr>
-         <td>uconf:cft.server.bandwidth.cos             </td>
-         <td>1         </td>
-         <td>Total number of class-of-services including the
+         <td >uconf:cft.server.bandwidth.cos             </td>
+         <td  >1         </td>
+         <td >Total number of class-of-services including the
                                      class number zero.         </td>
       </tr>
    </tbody>

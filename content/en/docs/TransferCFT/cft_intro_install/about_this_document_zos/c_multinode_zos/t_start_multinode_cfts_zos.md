@@ -8,12 +8,10 @@
 
 The node manager submits a JCL defined by the UCONF `cft.multi_node.start_node.proc_fname` parameter to start a node. (The default value is ..INSTALL(MNRMON)).
 
-> **Note:**
->
+> **Note**  
 > You can use the UCONF parameter cft.multi\_node.start\_node.user to define a specific node user,  but in this case the LOAD must be APF defined. Otherwise, if not set, the node is submitted using the node manager owner by default.
 
-> **Note:**
->
+> **Note**  
 > Because the JCL MNRMON is an intermediate JCL, you must customize it.
 
 ###    Select the start mode for the node

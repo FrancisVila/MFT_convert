@@ -45,8 +45,7 @@ to in CFTPARM. See [Symbolic variables](../../symbolic_variables).
 -   If this EXEC parameter is not defined, the EXECSF or EXECRF parameter
     of the CFTPARM command is taken into account.
 
-> **Note:**
->
+> **Note**  
 > To use direct script execution instead of the template script processing, preface the &lt;EXEC>value with 'cmd:'. For example, &lt;EXEC>='cmd:myscript.sh &PART &IDT &IDTU'. See Directly processing a program or script for details, examples, restrictions, and support.
 
 <span id="exec_CFTLOG"></span>
@@ -104,8 +103,7 @@ mode.
 
 Specify the name of the file that describes the CRONJOB procedure.
 
-> **Note:**
->
+> **Note**  
 > To use direct script execution instead of the template script processing, preface the &lt;EXEC>value with 'cmd:'. For example, &lt;EXEC>='cmd:myscript.sh &PART &IDT &IDTU'. See Directly processing a program or script for details, examples, restrictions, and support.
 
 [Return to Command index](../../)

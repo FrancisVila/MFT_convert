@@ -133,7 +133,7 @@ CFT catalog entry for partner &part, with identifier &idf, idt
 
 |  V23 format<br/>V24 format Information  |  <span id="CFTC08I"></span>CFTC08I &amp;str<br/>CFTC08I &amp;str  |
 | --- | --- |
-| Explanation  |  Possible values for &amp;str are described here. The following messages are displayed when the catalog is purged on {{< TransferCFT/componentshortname  >}} startup, or at the time set for the daily purge. For example:<br/>When there are no transfers to delete: <div class="indentTableNested"> Purge Started<br /> Purge catalog-size=1000 in-use=0 pre-filtered=0(0%)<br /> Purge Treated: catalog empty<br /> Purge deleted= n treated=n(d%) match=d%.<br /> Purge Treated<br /> Purge Treated: no record found to delete </div> When there are transfers to delete: <div class="indentTableNested"> Catalog: Loading...<br /> Catalog: Load Done<br /> Catalog: Size=100, Used=8(8%)<br /> Purge Started.<br /> Purge catalog-size=100 in-use=8 pre-filtered=8(100)<br /> Purge deleted=1 treated=1(12) match=100<br /> Purge deleted=2 treated=2(25) match=100<br /> ….<br /> Purge deleted=8 treated=8(100) match=100<br /> Purge Treated. </div> When {{< TransferCFT/componentshortname  >}} starts: <div class="indentTableNested"> If there are no transfers to delete: <div class="indentTableNested"> Catalog: Loading...<br /> Catalog: Load Done<br /> Catalog: Size= &amp;00, Used=0(0%)<br /> </div> If there are transfers to delete: <div class="indentTableNested"> Catalog: Loading...<br /> Catalog: Load Done<br /> Catalog: Size=100, Used=8(8%) </div> </div> If there is a problem with the catalog INIT: <div class="indentTableNested"> Catalog: Recovering<br /> Catalog: Recovery Done: n errors<br /> Catalog Recovery: n transfers from C to D state </div>  |
+| Explanation  |  Possible values for &amp;str are described here. The following messages are displayed when the catalog is purged on {{< TransferCFT/componentshortname  >}} startup, or at the time set for the daily purge. For example:<br/>When there are no transfers to delete: <div > Purge Started<br /> Purge catalog-size=1000 in-use=0 pre-filtered=0(0%)<br /> Purge Treated: catalog empty<br /> Purge deleted= n treated=n(d%) match=d%.<br /> Purge Treated<br /> Purge Treated: no record found to delete </div> When there are transfers to delete: <div > Catalog: Loading...<br /> Catalog: Load Done<br /> Catalog: Size=100, Used=8(8%)<br /> Purge Started.<br /> Purge catalog-size=100 in-use=8 pre-filtered=8(100)<br /> Purge deleted=1 treated=1(12) match=100<br /> Purge deleted=2 treated=2(25) match=100<br /> ….<br /> Purge deleted=8 treated=8(100) match=100<br /> Purge Treated. </div> When {{< TransferCFT/componentshortname  >}} starts: <div > If there are no transfers to delete: <div > Catalog: Loading...<br /> Catalog: Load Done<br /> Catalog: Size= &amp;00, Used=0(0%)<br /> </div> If there are transfers to delete: <div > Catalog: Loading...<br /> Catalog: Load Done<br /> Catalog: Size=100, Used=8(8%) </div> </div> If there is a problem with the catalog INIT: <div > Catalog: Recovering<br /> Catalog: Recovery Done: n errors<br /> Catalog Recovery: n transfers from C to D state </div>  |
 
 
  
@@ -185,8 +185,7 @@ command on the catalog.
 Consequence
 The command is ignored.  
 
-> **Note:**
-> This message
+> **Note**   This message
 > is followed by the CFTX01W message.
 
 ```
@@ -264,8 +263,7 @@ CFTC15I Deprecated command not executed BLKNUM=&blknum PART=&part IDT=&idt : Cmd
 Explanation
 Set the uconf parameter `cft.cftcat.enable_deprecated_blknum=Yes` to enable BLKNUM.
 
-> **Note:**
-> Regardless of the  cft.cftcat.enable_deprecated_blknum parameter setting, BLKNUM  is disabled in a multi-node configuration (uconf:cft.multi_node.enable=Yes), and this message is displayed.
+> **Note**   Regardless of the  cft.cftcat.enable_deprecated_blknum parameter setting, BLKNUM  is disabled in a multi-node configuration (uconf:cft.multi_node.enable=Yes), and this message is displayed.
 
 Consequence
 The command is ignored.

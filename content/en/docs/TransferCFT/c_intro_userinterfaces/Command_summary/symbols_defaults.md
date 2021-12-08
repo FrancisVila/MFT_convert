@@ -21,7 +21,7 @@ CFT that are specific to each operating system and comprises:
 |  Separator character (volume)<br/>For example, a file name can be represented as follows: &lt;unit&gt;&lt;Separator&gt;&lt;unitc&gt;&lt;Separator&gt;&lt;path&gt;&lt;root&gt;&lt;suf&gt;<br/>In a z/OS environment: UNIT%UNITC%PATH.ROOT.SUF  | none  | none  |  x' 6C'<br/>285 = %<br/>297 = %  |  x '5E'<br/>285 = ;<br/>297 = ;  |
 | Symbolic variable prefix  | &amp;  | &amp;  |  x'50' 285 = &amp; 297 = &amp;  |  x'6F' 285 = ? 297 = ?  |
 |  Indirection file name prefix Used in a group of files or for an indirection file. For example, FNAME=&lt;Indirection prefix&gt;file name  | #  | @  |  x'7B’ 285 = # 297 = £  |  x'B1' 285 = [ 297 = #  |
-|  Character introducing the path name of the FNAME parameter (CFTRECV) from which a tree structure is created. On Windows, for example, FNAME=pub\+dir1\dir2\ftest  | +  | +  |  + Limited to USS files  |  + Limited to HFS files  |
+|  Character introducing the path name of the FNAME parameter (CFTRECV) from which a tree structure is created. On Windows, for example, FNAME=pub\+dir1\dir2\ftest  | +  | +  |  + Limited to USS files  |  +   Limited to HFS files  |
 
 
 ## Default files used by CFTUTIL

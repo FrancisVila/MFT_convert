@@ -47,8 +47,7 @@ Usage:
 -   -uconf: Regenerates the uconf file.
 -   -inst: Creates the initial runtime environment, which is used exclusively by the Installer.
 
-> **Note:**
->
+> **Note**  
 > You must use double quotes when indicating a path that contains spaces.
 
 **Example 1**

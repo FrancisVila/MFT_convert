@@ -39,8 +39,7 @@ To submit a Support request, you can do the following:
 
 The cft\_support tool collects all of the needed information from the customer's Transfer CFT installation  environment, including the static configuration (PARM/PART), Unified Configuration parameters (UCONF), catalog information, communication media file status (CFTCOM), log files, execution environment (variables), disk space, and so on. This information is then packaged into a archive file called **cft-support-&lt;date>(.tar.gz|.zip)**.
 
-> **Note:**
->
+> **Note**  
 > When using the cft\_support tool on other Operating Systems, refer to the OS-specific guide for the correct syntax.
 
 ### Using Copilot
@@ -92,8 +91,7 @@ Additionally, two options are available for CFTSUPPORT:
 
 `CFTSUPPORT IFSPATH('/home/cft/axway/cft/runtime/cftsupport')DBGCATFIL('IDTU=A0000002')`
 
-> **Note:**
->
+> **Note**  
 > CFTSUPPORT is currently not supported with an independent ASP (IASP).
 
 #### z/OS
@@ -104,8 +102,7 @@ Run the JCL XSUPPORA. You can transfer the resulting file to a Windows system, 
 
 ### Activating Transfer CFT traces when a problem occurs during the transfer
 
-> **Note:**
->
+> **Note**  
 > ATM traces are available only when using Transfer CFT Local Administration. However Central Governance managed Transfer CFT is the recommended version.
 
 Transfer CFT traces are managed by the Advanced

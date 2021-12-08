@@ -12,8 +12,7 @@ The following characters are system-restricted characters:
 -   UNIX: /\*? $()
 -   Windows: /\\:\*?"&lt;&gt;
 
-> **Note:**
->
+> **Note**  
 > You can use the $ character on UNIX systems as an environment variable. To have a file created  when the name includes one or more $ characters (without resolving the environment variable), see the UCONF cft.unix.throw\_error\_on\_envvar\_not\_found variable.
 
 ## Naming the local file to be sent FNAME=filename
@@ -69,8 +68,7 @@ and the send transfer is implicit, that is when CFTSEND IMPL=YES. In this
 case, the physical filename proposed by the receiver requester partner
 can be taken into account at each transfer.
 
-> **Note:**
->
+> **Note**  
 > When the file sent corresponds exactly to the one the partner
 > requested (FNAME= &NFNAME), this corresponds to the open operating
 > mode.
@@ -190,8 +188,7 @@ The name of the indirection file is preceded by the &lt;file-symb>
 character specific to each system. In most environments, the ‘#’ symbol
 is used.
 
-> **Note:**
->
+> **Note**  
 > Refer to the table of platform-specific characters  that corresponds to your operating system.
 
 A catalog entry is created for each file. Each file is transferred in

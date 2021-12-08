@@ -40,6 +40,5 @@ You do not usually need to switch users to perform a resource release. To activa
 2.  USERCTRL=YES   USERID=TEST
                 &lt;ul>&lt;li>A send is performed by the user    TEST&lt;/li>&lt;li>The transfer procedure is submitted by TEST&lt;/li>&lt;/ul>&lt;/li>
 
-> **Note:**
->
+> **Note**  
 > Setting the UCONF cft.server.exec\_as\_user variable to ‘NO’ also directly effects the transfer procedure.

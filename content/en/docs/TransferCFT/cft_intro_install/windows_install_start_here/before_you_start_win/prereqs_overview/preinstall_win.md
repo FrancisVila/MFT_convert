@@ -45,8 +45,7 @@ For Windows versions prior to the versions listed above,  perform the following 
 1.  Navigate to**&gt;&gt;** **&gt;**.
 2.  From the tree, select **&gt;&gt;**.
 
-> **Note:**
->
+> **Note**  
 > On some systems the path may be Start &gt; Control Panel &gt; System and Security &gt; Administrative Tools &gt; Local Security Policy.
 
 ### Set administration rights if UAC is enabled

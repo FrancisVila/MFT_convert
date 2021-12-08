@@ -59,9 +59,9 @@ The table below lists the UCONF values that are used in Transfer CFT to define S
 | Unified configuration parameter  | Default value  |  Former Sentinel parameter name<br/>trkapi.cfg  |
 | --- | --- | --- |
 | sentinel.xfb.enable  | NO  | XFB.Sentinel (trkapi.cfg)  |
-|  sentinel.xfb.transfer  |  ALL  |  XFB.Transfer (trkapi.cfg) &lt;/p&gt;  |
-|  sentinel.xfb.shut  |  0 &lt;/p&gt;  |  XFB.Shut (trkapi.cfg) &lt;/p&gt;  |
-|  sentinel.xfb.log  |  IEWF  |  XFB.Log (trkapi.cfg) &lt;/p&gt;  |
+|  sentinel.xfb.transfer                              |  ALL  |  XFB.Transfer (trkapi.cfg)                             &lt;/p&gt;  |
+|  sentinel.xfb.shut                              |  0                             &lt;/p&gt;  |  XFB.Shut (trkapi.cfg)                             &lt;/p&gt;  |
+|  sentinel.xfb.log                              |  IEWF  |  XFB.Log (trkapi.cfg)                             &lt;/p&gt;  |
 |  sentinel.trktname  |  $(cft.runtime_dir)/data/trkapi.buf  |  TRKTNAME (trkapi.cfg)  |
 |  sentinel.trksharedfile  |  No  |  TRKSHAREDFILE  |
 |  sentinel.trklenmsg  |   |  TRKLENMSG  |
@@ -98,14 +98,41 @@ The following parameters define communication with the Event Router via XCF. In 
 -   The XCF definition (queue=xxxx) is the XCF member name representing the ER server
 -   The XCF group is   PELISCOP by default. You can modify this default by setting queue = “member group”
 
-
-|   | ER  | TRKUTIL  | Transfer CFT  |
-| --- | --- | --- | --- |
-| Configuration file  | USEPARIN  | TRKCONF  | UCONF  |
-| SVC  |  (SYSTEM)<br/>svc_nb=nnn  | TRKSVC=nnn  | UCONFSET ID=sentinel.TRKSVC,VALUE=nnn  |
-| XCF definition  | (AGENT)queue=  | TRKQUEUE=  | UCONFSET ID=sentinel.TRKQUEUE,VALUE=xxxx  |
-| TRKTYPE=XCF  | UCONFSET ID=sentinel.TRKTYPE,VALUE=XCF  |
-
+<table>
+   <thead>
+      <tr>
+<th >          </th>
+<th >ER         </th>
+<th >TRKUTIL         </th>
+<th >Transfer CFT         </th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td >Configuration file         </td>
+         <td >USEPARIN         </td>
+         <td >TRKCONF         </td>
+         <td >UCONF         </td>
+      </tr>
+      <tr>
+         <td >SVC         </td>
+         <td ><p>(SYSTEM)</p>
+<p>svc_nb=nnn</p>         </td>
+         <td >TRKSVC=nnn         </td>
+         <td >UCONFSET ID=sentinel.TRKSVC,VALUE=nnn         </td>
+      </tr>
+      <tr>
+         <td rowspan="2" >XCF definition         </td>
+         <td rowspan="2" >(AGENT)queue=         </td>
+         <td >TRKQUEUE=         </td>
+         <td >UCONFSET ID=sentinel.TRKQUEUE,VALUE=xxxx         </td>
+      </tr>
+      <tr>
+         <td >TRKTYPE=XCF         </td>
+         <td >UCONFSET ID=sentinel.TRKTYPE,VALUE=XCF         </td>
+      </tr>
+   </tbody>
+</table>
 
 <span id="Overflow file definition"></span>
 
@@ -118,13 +145,36 @@ The following table describes the overflow file definition for the Logger file. 
 -   TRKSHAREDFILE=YES is MANDATORY when the logger file is shared between the {{< TransferCFT/eventroutername >}} and other applications. Set this to NO if the applications are sending messages directly to the Sentinel server without going through the {{< TransferCFT/eventroutername >}}
 -   The log structure is ONLY used to define  a logger file shared between the partitions of the SYSPLEX, and is NOT referenced in any parameters
 
-
-|   | Event Router  | TRKUTIL  | Transfer CFT  |
-| --- | --- | --- | --- |
-| Configuration file  | USEPARIN  | TRKCONF  | UCONF  |
-| Logger file  |  (AGENT)<br/>api_file=  | TRKTNAME=  | UCONFSET ID=sentinel.TRKTNAME, VALUE=xxxx.xxxx.xxx  |
-|   | TRKSHAREDFILE=YES  | UCONFSET ID=sentinel.TRKSHAREDFILE,VALUE=YES  |
-
+<table>
+   <thead>
+      <tr>
+<th >          </th>
+<th >Event Router         </th>
+<th >TRKUTIL         </th>
+<th >Transfer CFT         </th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+<th >Configuration file         </th>
+         <td >USEPARIN         </td>
+         <td >TRKCONF         </td>
+         <td >UCONF         </td>
+      </tr>
+      <tr>
+<th rowspan="2" >Logger file         </th>
+         <td ><p>(AGENT)</p>
+<p>api_file=</p>         </td>
+         <td >TRKTNAME=         </td>
+         <td >UCONFSET ID=sentinel.TRKTNAME, VALUE=xxxx.xxxx.xxx         </td>
+      </tr>
+      <tr>
+         <td >          </td>
+         <td >TRKSHAREDFILE=YES         </td>
+         <td >UCONFSET ID=sentinel.TRKSHAREDFILE,VALUE=YES         </td>
+      </tr>
+   </tbody>
+</table>
 
 Related topics
 

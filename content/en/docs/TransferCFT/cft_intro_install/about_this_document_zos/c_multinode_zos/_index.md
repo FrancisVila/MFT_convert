@@ -90,8 +90,7 @@ The node manager monitors all nodes that are part of the Transfer CFT multi-node
 
 Typically, when a node is not running correctly, the node manager tries to start it locally.
 
-> **Note:**
->
+> **Note**  
 > Copilot can be registered to ARM (A12OPTS ARM=YES), but the Transfer CFTs cannot. If a host fails, the ARM will not restart that host's Copilot on another host.
 
 ### PORT statement (connection dispatcher)
@@ -133,8 +132,7 @@ The following databases are node specific, and the filename is flagged by the no
 -   Log files (..LOG1.N00, ..LOG2.N00, ..LOG1.N01, ..LOG2.N01, ,...)
 -   Account file (..ACCNT1.N00, ..ACCNT2.N00, ..ACCNT1.N01, ..ACCNT2.N01 ,...)
 
-> **Note:**
->
+> **Note**  
 > When using multi-node architecture, the allocated space in the catalog file is 10% greater than when working in a standalone Transfer CFT.
 
 ## Recovery

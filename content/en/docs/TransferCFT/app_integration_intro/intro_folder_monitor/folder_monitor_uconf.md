@@ -10,8 +10,7 @@
 -   [Directory configuration examples](#Director)
 -   [File-system event monitoring](#File-sys)
 
-> **Note:**
->
+> **Note**  
 > There are two ways to implement Transfer CFT folder monitoring, either using UCONF or Transfer CFT objects. We recommend the CFTFOLDER method of configuring folder monitoring. Users that presently are using UCONF to manage folder monitoring can migrate to a CFTFOLDER configuration as described in Migrate to CFTFOLDER folder monitoring.
 
 <span id="Configur"></span>
@@ -64,28 +63,27 @@ Parameter descriptions
 | folder_monitoring.folders  | node  | None  |  Add the logical folders to monitor (list of logical identifiers).<br/>You should provide a unique name to identify the set of configuration parameters corresponding to this directory. If you have more than one Folder to monitor, use a space between each logical value.<br/>See the **Comment***** below this table for additional information.  |
 |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.enable  | Boolean  | Yes  |  Enables a scan of the folder, where NO deactivates folder monitoring.  |
 |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.scan_dir  | string  | None  |  Absolute path name of the top level directory to scan.<br/>This directory must exist before restarting CFT.<br/>*See NOTE.  |
-|  folder_monitoring.folders.<br/>&lt;logical_name&gt;.work_dir  | string  | None  |  Absolute path name of the top level directory available for file state information.<br/> • If you are using the MOVE method, files that are ready to be submitted are available in the work_dir.<br/> • If you are using the FILE method, the .met files are stored in the work_dir.</li> <blockquote> **Note:**<br/>Caution Never delete any .met files. </blockquote> *See NOTE.  |
+|  folder_monitoring.folders.<br/>&lt;logical_name&gt;.work_dir  | string  | None  |  Absolute path name of the top level directory available for file state information.<br/> • If you are using the MOVE method, files that are ready to be submitted are available in the work_dir.<br/> • If you are using the FILE method, the .met files are stored in the work_dir.</li> <blockquote> **Note**<br/>Caution Never delete any .met files. </blockquote> *See NOTE.  |
 |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.enable_subdir  | Boolean  | Yes  |  Values:<br/> • Yes: The entire scan_dir sub-directory tree is monitored.<br/> • No: No scan is performed.</li>  |
 |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.method  | enum  | MOVE  |  Values:<br/> • MOVE: Files are moved (by renaming), to the work_dir prior to being submitted.<br/> • FILE: Files are left in the scan_dir, and a state file with the same name is created in work_dir prior to submitting the file.<br/>See also <a href="../#Configur2">Configuring file tracking options (MOVE option)</a>.  |
 |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.file_idle_delay  | integer  | 5  | If the state of a file has not changed within this delay in seconds, the file becomes a candidate for submission.  |
-|  folder_monitoring.folders.<br/>&lt;logical_name&gt;.idf  | string  | ""  |  The IDF name to use in the SEND command. Use one of the following:<br/> • A fixed name.<br/> • "(0)": The name of the first directory sub-level is used.<br/> • "(1)": The name of the second directory sub-level is used.</li>  |
+|  folder_monitoring.folders.<br/>&lt;logical_name&gt;.idf  | string  | ""  |  The IDF  name to use in the SEND command. Use one of the following:<br/> • A fixed name.<br/> • "(0)":  The name of the first directory sub-level is used.<br/> • "(1)": The name of the second directory sub-level is used.</li>  |
 |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.part  | string  | ""  |  The PART name to use in the SEND command. Use one of the following:<br/> • A fixed name.<br/> • "(0)": The name of the first directory sub-level is used.<br/> • "(1)": The name of the second directory sub-level is used.</li>  |
 |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.interval  | int  | 60  | The interval between two scans of the directory files in seconds.  |
-|  folder_monitoring.folders.<br/>&lt;logical_name&gt;.file_count  | int  | -1  |  Maximum number of file submissions for each scan. Using the default value indicates that there is no maximum.  |
+|  folder_monitoring.folders.<br/>&lt;logical_name&gt;.file_count  | int  | -1  |  Maximum number of file submissions for each scan.  Using the default value indicates that there is no maximum.  |
 |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.file_size_min  | int  | -1  | Files shorter than this value, in bytes, are not candidates for submission. Using the default value indicates that there is no lower limit on the file size.  |
 |  folder_monitoring.folders. &lt;logical_name&gt;.file_size_max  | int  | -1  | Files larger than this value, in bytes, are not candidates for submission. Using the default value indicates that there is no upper limit on the file size.  |
 |  folder_monitoring.folders. &lt;logical_name&gt;.file_include_filter  | string  | ""  | If this parameter is defined, only files whose names match this pattern are monitored.  |
 |  folder_monitoring.folders. &lt;logical_name&gt;.file_exclude_filter  | string  | ""  | If this parameter is defined, files whose names match this pattern are not monitored.  |
-|  folder_monitoring.folders. &lt;logical_name&gt;.resubmit_changed_file  | Boolean  | Yes  |  This parameter has no effect when the configured method is MOVE. When the method parameter value is set to FILE:<br/> • Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.<br/> • No: Files are not resubmitted, regardless of changes.</li> <blockquote> **Note:** The file is resubmitted after any change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name. </blockquote>  |
-|  folder_monitoring.folders. &lt;logical_name&gt;.filter_type  | enum  | WILDMAT  |  Defines the pattern matching algorithm to use for file name filtering. Values: <br/> • STRJCMP: The Transfer CFT pattern matching algorithm. <br/> • WILDMAT: A well known public domain algorithm, and is the default. **Unix/Windows only**<br/>See <a href="../folder_customize#Defining">Create inclusion and exclusion filters</a> for details.  |
-|  folder_monitoring.folders. &lt;logical_name&gt;.renaming_method  | Enum  | TIMESTAMP  |  This parameter applies only to the MOVE method.<br/> • NONE or " ": The filename is unchanged (no timestamp is added). If the file already exists in the work directory, the MOVE process fails.<br/> • TIMESTAMP: A timestamp having the format YYYYMMDDHHMMSS is added at the end of the name of the renamed file but before the last '.'.</li> For example, using timestamp_separators=".": <li>myfile is renamed myfile.20131025<br/> • myfile.txt is renamed myfile.20131025.txt</li>  |
-|  folder_monitoring.folders. &lt;logical_name&gt;.renaming_separators  | string  |   |  This parameter only applies to the MOVE method. It must contain at most 2 characters from among the following: .[]()i_- The first character defines the separator before the timestamp. The second one, when present, defines the separator after the timestamp. For example, using timestamp_separators "[]": - myfile is renamed myfile.[20131025] - myfile.txt is renamed myfile.[20131025].txt  |
+|  folder_monitoring.folders. &lt;logical_name&gt;.resubmit_changed_file  | Boolean  | Yes  |  This parameter  has no effect when the configured method is MOVE. When the method parameter value is set to FILE:<br/> • Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.<br/> • No: Files are not resubmitted, regardless of changes.</li> <blockquote> **Note** The file is resubmitted after any change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name. </blockquote>  |
+|  folder_monitoring.folders. &lt;logical_name&gt;.filter_type  | enum  | WILDMAT  |  Defines the pattern matching algorithm to use for file name filtering. Values:   <br/> • STRJCMP: The Transfer CFT pattern matching algorithm.   <br/> • WILDMAT: A well known public domain algorithm, and is the default. **Unix/Windows only**<br/>See  <a href="../folder_customize#Defining">Create inclusion and exclusion filters</a> for details.  |
+|  folder_monitoring.folders. &lt;logical_name&gt;.renaming_method  | Enum  | TIMESTAMP  |  This parameter applies only to the MOVE method.<br/> • NONE or " ": The filename is unchanged (no timestamp is added).   If the file already exists in the work directory, the MOVE process fails.<br/> • TIMESTAMP: A timestamp having the format YYYYMMDDHHMMSS is added at the end of the name of the renamed file but before the last '.'.</li> For example, using timestamp_separators=".": <li>myfile     is renamed myfile.20131025<br/> • myfile.txt is renamed myfile.20131025.txt</li>  |
+|  folder_monitoring.folders. &lt;logical_name&gt;.renaming_separators  | string  |   |  This parameter only applies to the MOVE method. It must contain at most 2 characters from among the following: .[]()i_- The first character defines the separator before the timestamp. The second one, when present, defines the separator after the timestamp. For example, using timestamp_separators "[]": - myfile     is renamed myfile.[20131025] - myfile.txt is renamed myfile.[20131025].txt  |
 |  folder_monitoring.folders. &lt;logical_name&gt;.control  | string  |   | Metadata used to control user changes.  |
 |  folder_monitoring.folders. &lt;logical_name&gt;. use_file_system_events <a href="#File-sys">More information</a>  | Boolean  | No  | Set to YES to enable the file system events monitoring service to detect newly available files.  |
 
 
-> **Note:**
->
+> **Note**  
 > \*You cannot use the following characters in the SCANDIR or WORKDIR definition. Additionally you cannot use a comma (,) in the CFTFOLDER SCANDIR or WORKDIR definition.
 
 -   /
@@ -147,8 +145,7 @@ This section presents an example that consists of configuring 3 directories for 
 
 Note that the configuration parameter folder\_monitoring must contain a list with these directory names, separated by blanks. Additionally, you must enable the folder monitoring functionality.
 
-> **Note:**
->
+> **Note**  
 > In all of the examples in this topic, you must enter CFTUTIL in upper case.
 
 For this example,  you would execute the following command:
@@ -159,8 +156,7 @@ CFTUTIL uconfset id=folder_monitoring.folders , value= 'A B C'
 \*Note that the "' '"characters are used to protect the spaces between each folder monitoring nodes declarations.
 ```
 
-> **Note:**
->
+> **Note**  
 > All of the examples in this section were written for a UNIX platform. Modify to suit your environment accordingly.
 
 #### Directory A requirements

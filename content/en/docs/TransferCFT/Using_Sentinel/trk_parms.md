@@ -18,12 +18,11 @@ Parameters to regulate level of monitoring messages
 
 The parameter definitions are taken into account in the order listed below. For example, the transfer request definition takes precedence over the partner definition.
 
-> **Note:**
->
+> **Note**  
 > When using Central Governance to manage Transfer CFT, you can only use TRK at the flow level, which corresponds to transfer models, but not for partners and general parameters.
 
 
-| Definition  | NO  | ALL  | SUMMARY  | ERROR  | UNDEFINED  |
+| Definition  | NO    | ALL    | SUMMARY    | ERROR  | UNDEFINED  |
 | --- | --- | --- | --- | --- | --- |
 | 1. Transfer requests (SEND/RECV in requester mode only)  | No tracking  | Full tracking  | First and last  | Errors only  | Uses the transfer definition  |
 |  2. Transfer models (CFTSEND/CFTRECV)  |  No tracking  |  Full tracking  |  First and last  | Errors only  | Uses the partner definition  |

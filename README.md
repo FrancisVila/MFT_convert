@@ -38,10 +38,15 @@ To try out this repo locally on your computer:
 
      [localhost:1313/docs/](localhost:1313/docs/)
 
-
 ## Contribute
 
-We welcome your contributions! To get started, go to <https://axway-open-docs.netlify.com/> and click **Documentation** in the top menu. Browse the documentation and use the options in the right navigation to edit any page using GitHub or Netlify CMS.
+We welcome your contributions! Here are some URLs related to this project: 
+
+- The Netlify admin page (may not be open): <https://app.netlify.com/sites/axway-mft-convert/overview> 
+
+- Browse the Netlify deployment site: <https://axway-mft-convert.netlify.app/docs/transfercft/>
+
+ **Documentation** in the top menu. Browse the documentation and use the options in the right navigation to edit any page using GitHub or Netlify CMS.
 
 Before you start contributing, please read the [contribution guidelines](https://axway-open-docs.netlify.com/docs/contribution_guidelines/).
 

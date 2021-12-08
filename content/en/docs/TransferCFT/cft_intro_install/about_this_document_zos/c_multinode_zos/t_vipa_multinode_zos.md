@@ -17,11 +17,11 @@ To customize the hosts in your setup and submit the customization, perform the t
 | --- | --- |
 | 1  | If you have not done so, customize <a href="../t_mninit_multinode_zos">MNINIT</a>.  |
 | 2  |  Customize the UPARM(TC*) members.<br/>The example (below) demonstrates how to customize LPAR1 and LPAR2. If you have additional machines in your configuration, repeat this step for each host machine. For a single host installation, you only customize UPARM(TCPSHAP1).  |
-| 3  |  Perform a Transfer CFT configuration check:<br/> • Verify that the CFTNET object host parameter corresponds with what you defined for the VIPA.<br/> • Verify that the CFTNET command SRCPORT parameter is set to 1.</li>  |
+| 3  |  Perform a Transfer CFT configuration check:<br/> • Verify that the CFTNET object host parameter corresponds with what you defined for the VIPA.<br/> • Verify that  the CFTNET command SRCPORT parameter is set to 1.</li>  |
 | 4  | Submit the MNINIT. The Transfer CFT is now configured for multi-node.  |
 |   | Steps 5 and 6, which use the VARY OBEYFILE commands, require administrator rights.  |
-| 5  | Execute the VARY OBEYFILE command for each UPARM(TC*) member.  |
-| 6  | For a z/OS restart, the administrator must do all of the VIPA OBEYFILE commands performed in Step 5 on the z/OS machine.  |
+| 5  | Execute the VARY OBEYFILE command  for each UPARM(TC*) member.  |
+| 6  | For a z/OS restart, the administrator must do all of the VIPA OBEYFILE commands performed in Step 5  on the z/OS machine.  |
 
 
 ## Customize the UPARM(TC\*) members
@@ -96,8 +96,7 @@ This means that in the example configuration, the cluster will work with the mac
 
 For each listening port  configuration (for the SYSPLEX distributor incoming calls), you can have one dvipa address for Copilot, where there is one Copilot for each host.
 
-> **Note:**
->
+> **Note**  
 > There is no PORT statement for Copilot. An external Copilot passes via the SYSPLEX distributor directly to the host Copilot. There is one Copilot per host, regardless of the number of Transfer CFT nodes on the host.
 
               Two command samples contain the VIPAdistribute Statement, which concerns the SYSPLEX distributor. There is also a command also for Copilot.

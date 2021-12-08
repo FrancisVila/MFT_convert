@@ -23,8 +23,7 @@
 
 -   Restart Transfer CFT
 
-> **Note:**
->
+> **Note**  
 > Universal Agent installation is necessary only for end-to-end application monitoring.
 
 ## Procedure
@@ -50,8 +49,7 @@ You can set the Sentinel parameters in the unified configuration. If the Sentine
 
 For a description of the general parameters refer to the Event Router information in the *Sentinel* documentation.
 
-> **Note:**
->
+> **Note**  
 > If the communication mode between Transfer CFT and the Event Router is an XCF type, and the TRKSVC is equal to 0, then you must define the Transfer CFT executable library as APF authorized.
 
 <span id="Activate the unified configuration file parameters SN05CONF"></span>
@@ -122,8 +120,7 @@ STRUCTNAME(&userstr)
 &LGRID is the logger file name
 ```
 
-> **Note:**
->
+> **Note**  
 > You must be a system administrator to perform these operations.
 
 <span id="Overflow file definition"></span>

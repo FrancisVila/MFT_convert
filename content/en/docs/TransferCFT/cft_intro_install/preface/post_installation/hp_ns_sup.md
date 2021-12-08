@@ -117,8 +117,7 @@ Actions \[ START | STOP | STATUS | KILL | SHUT (for Transfer CFT server on
 
 -   KILL is only valid for the Transfer CFT and Transfer CFT Copilot servers.
 
-> **Note:**
->
+> **Note**  
 > The SHUT option only apply to the Transfer CFT sever.
 
 -   CFTUTIL SHUT FAST=YES the equivalent is cftsup CFT SHUT FAST=YES

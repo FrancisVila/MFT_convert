@@ -71,28 +71,28 @@ Defining network resources topic.
    </thead>
    <tbody>
       <tr>
-         <td><p>Parameters</p>         </td>
-         <td><p><a href="../../../command_summary/parameter_intro/class">CLASS</a></p>         </td>
-         <td><p>Class associated with this network resource.</p>
+         <td rowspan="4" ><p>Parameters</p>         </td>
+         <td ><p><a href="../../../command_summary/parameter_intro/class">CLASS</a></p>         </td>
+         <td ><p>Class associated with this network resource.</p>
 <p>This concept is used to group resources of the same type,
 so that they can be used indifferently to establish connections with partners.</p>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/host">HOST</a> </p>         </td>
-         <td><p>IP address of the local resource.</p>         </td>
+         <td ><p><a href="../../../command_summary/parameter_intro/host">HOST</a> </p>         </td>
+         <td ><p>IP address of the local resource.</p>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/maxcnx">MAXCNX</a></p>         </td>
-         <td><p>The maximum number of simultaneous connections
+         <td ><p><a href="../../../command_summary/parameter_intro/maxcnx">MAXCNX</a></p>         </td>
+         <td ><p>The maximum number of simultaneous connections
 that Transfer CFT accepts to establish on a given network resource.</p>         </td>
       </tr>
       <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/call">CALL</a></p>         </td>
-         <td><p>Call direction possible through this network
+         <td ><p><a href="../../../command_summary/parameter_intro/call">CALL</a></p>         </td>
+         <td ><p>Call direction possible through this network
 resource.</p>         </td>
       </tr>
       <tr>
-         <td><p> </p>         </td>
+         <td colspan="3" ><p> </p>         </td>
       </tr>
    </tbody>
 </table>

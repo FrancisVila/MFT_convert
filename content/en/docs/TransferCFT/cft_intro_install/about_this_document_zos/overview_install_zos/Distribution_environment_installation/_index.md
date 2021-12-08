@@ -32,8 +32,7 @@ To define an alias, adapt the parameters  in bold to suit your environment. Ente
 -   An FTP client that permits the transfer of files to the z/OS host
 -   Download the ESD file from {{< TransferCFT/companyname >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a>
 
-> **Note:**
->
+> **Note**  
 > ISO files were deprecated in version 3.0.1.
 
 To install the Transfer CFT z/OS product, you need approximately:
@@ -141,7 +140,7 @@ Before you start the silent installation you must update the silent\_install.con
 | Value  | Default value  | Description  |
 | --- | --- | --- |
 |  &amp;cftinstall  | AXWAY.XFB.D332  | Library prefix qualifiers for distribution environment  |
-|  &amp;distlev  | CF030000  | Distribution prefix level  |
+|  &amp;distlev          | CF030000  | Distribution prefix level  |
 |  &amp;hostuplib  |  AXWAY.XFB.D332.CF030000.UPLIB  | Library prefix to upload product  |
 |  &amp;cftruntime  | AXWAY.V332  | Library for the runtime creation of the target environment  |
 |  &amp;patch  | N/A  | Information about last patch applied  |
@@ -151,7 +150,7 @@ Before you start the silent installation you must update the silent\_install.con
 |  &amp;password  | N/A  | z/OS password  |
 |  &amp;installvol  | N/A  | Volume Serial for distribution environment  |
 |  &amp;runtimevol  | N/A  | Volume Serial for runtime environment  |
-|  &amp;account  | ()  | Accounting  |
+|  &amp;account    | ()  | Accounting  |
 |  &amp;class  | A  | Class  |
 |  &amp;unit  | 3390  | Unit  |
 |  &amp;submit  | Y  | Submit JCL for the runtime creation  |
@@ -203,8 +202,7 @@ To customize the JCL, apply a `change all` command on the following parameters:
 
 -   storclass: SMS Storage class, used to override the default value. If used, the statement marked as a comment must be activated
 
-> **Note:**
->
+> **Note**  
 > The distribution files are restored with 5 qualifiers (ADRDSSU). You can modify 4 of these qualifiers, for example AXWAY.XFB.CFT332.CF030000, using the ADRDSSU parameter, step ADRD020 in J1IDISTA, but the fifth qualifier is hard coded.
 
 <span id="kanchor57"></span>

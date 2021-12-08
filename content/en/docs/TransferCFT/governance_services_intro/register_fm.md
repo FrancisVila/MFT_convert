@@ -82,8 +82,7 @@ uconfset id=cg.proxy.out.login, value= <proxy_login>
 uconfset id=cg.proxy.out.password, value= <proxy_login_password>  
 ```
 
-> **Note:**
->
+> **Note**  
 > Transfer CFT can use the Flow Manager Agent as the outgoing HTTP proxy when connecting to the Flow Manager SaaS.
 
 #### Import the root certificate for the {{< TransferCFT/flowmanager  >}} certificate
@@ -110,8 +109,7 @@ Set the shared secret that  the Flow Manager administrator generated and provide
 uconfset id=cg.shared_secret, value=<Shared_Secret>
 ```
 
-> **Note:**
->
+> **Note**  
 > If the shared secret is incorrect, Transfer CFT may be rejected with a 403 HTTP code. If this happens, the cg.enable mode becomes disabled on your Transfer CFT to avoid sending repeat requests to Flow Manager.
 
 #### Optionally define the configuration policy for registration

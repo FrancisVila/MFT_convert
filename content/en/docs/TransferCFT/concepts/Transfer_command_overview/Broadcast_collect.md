@@ -12,8 +12,7 @@ requester mode:
     Receive one or more files or messages from several partners by activating
     a single RECV command
 
-> **Note:**
->
+> **Note**  
 > When using these features with Central Governance, you must enable broadcasting for the flow. For more information, refer to the Central Governance documentation.
 
 <span id="Broadcasting_mode"></span>
@@ -73,8 +72,7 @@ The associated post processing procedure  is only executed when
 all the transfers are correctly completed (DIFFUS entry changes to the
 T or X state, depending on the compat mode).
 
-> **Note:**
->
+> **Note**  
 > If the CFTDEST command includes the EXEC=PART parameter, the end of
 > send procedure is executed on completion of each transfer.
 

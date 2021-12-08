@@ -115,8 +115,7 @@ defined by the FNAME parameter of the CFTSEND parameter setting command.
 The value of this parameter may be explicit or locally defined using symbolic
 variables (see the previous paragraph).
 
-> **Note:**
->
+> **Note**  
 > If a requester defines FNAME=&NFNAME and the server has not defined
 > NFNAME, or vice-versa, the transfer fails and is interrupted. If the server/sender
 > defines NFNAME and the file name is preceded with "\*", the requester/receiver
@@ -146,8 +145,7 @@ parameter of the CFTRECV parameter setting command). The value of this
 parameter may be explicit or locally defined using symbolic variables
 (see previous paragraph).
 
-> **Note:**
->
+> **Note**  
 > If a requester defines NFNAME and the server has not defined FNAME
 > = &NFNAME, or vice-versa, the transfer fails and is interrupted.
 

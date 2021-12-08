@@ -232,8 +232,7 @@ PRINT msg = 'The length of the session is %duration% seconds'
 
 The \_user function returns the name of current user.
 
-> **Note:**
->
+> **Note**  
 > The PARM parameter must be entered in upper case.
 
 ```
@@ -265,8 +264,7 @@ PRINT msg='The current user is %USERNAME%'
 
 The \_Job function returns the name of the current process with the operating system.
 
-> **Note:**
->
+> **Note**  
 > The PARM parameter must be entered in upper case.
 
 ```

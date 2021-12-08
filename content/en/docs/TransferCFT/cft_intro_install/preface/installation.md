@@ -4,8 +4,7 @@
     "weight": "160"
 }This section describes the steps to perform a Transfer CFT HP NonStop installation, as well as the automatic steps that occur when you run the installation procedure.
 
-> **Note:**
->
+> **Note**  
 > To accommodate changing product versions, the convention &lt;version> may be used in place of the actual product version in examples and lists. You should replace &lt;placeholders>, or example values used for demonstrative purposes, with your actual values and target platform details.
 
 ## Upload the Transfer CFT archive
@@ -37,8 +36,7 @@ inflating: EULA.html
 
 In the example, Transfer CFT package is unzipped in the `Transfer_CFT_OtherUnixes_V3.8` directory.
 
-> **Note:**
->
+> **Note**  
 > Be certain to read the end-user license agreement.
 
 ## Add execution rights
@@ -113,7 +111,7 @@ For example, `/G/data14/cft38b` creates files where the volume name is $DATA14, 
 | Subvolume  | Description  |
 | --- | --- |
 | &lt;subvolume&gt;IE  |  Contains the Transfer CFT samples.<br/>Some of these samples are copied in the user configuration volume &lt;subvolume&gt;UP, where they can be modified.  |
-| &lt;subvolume&gt;IF  |  Contains the EMS dictionary and DDL template files.<br/>CFTPLATE contains the Transfer CFT templates to be concatenated with the system template for an EMS collector. See the XCFTDDL section in <a href="">Event messages</a>, which describes the DDL template.  |
+| &lt;subvolume&gt;IF  |  Contains the EMS dictionary and DDL template files.<br/>CFTPLATE contains the Transfer CFT templates to be concatenated with the system template for an EMS collector. See  the XCFTDDL section in <a href="">Event messages</a>, which describes the DDL template.  |
 | &lt;subvolume&gt;IX  |  Transfer CFT executables and procedures.  |
 | &lt;subvolume&gt;IP  | Program samples.  |
 | &lt;subvolume&gt;IH  | Headers.  |

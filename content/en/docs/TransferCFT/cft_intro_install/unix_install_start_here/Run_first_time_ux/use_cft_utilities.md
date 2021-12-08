@@ -6,8 +6,7 @@
 CFT UNIX utilities located in the `cft/<installdir>/bin/`
 sub-directory after completing installation.
 
-> **Note:**
->
+> **Note**  
 > In this section, the term
 >   Transfer CFT designates the Transfer
 > CFT software package on UNIX platforms.
@@ -23,10 +22,10 @@ The following utilities are detailed in this page.
 
 |  Utility  |  Definition  |
 | --- | --- |
-| <a href="#cftinit">cftinit</a>  | General Transfer CFT initialization utility.  |
-| <a href="#cftutil">cftutil</a>  | Simplified display of the standard CFTUTIL commands.  |
-| <a href="#cftupdate">cftupdate</a>  | Management Utility updating the Transfer CFT configuration.  |
-|  <a href="#cftcatal">cftcatal</a>  |  Utility migrating and/or extending the {{< TransferCFT/componentshortname  >}} catalog file.  |
+| <a href="#cftinit">cftinit</a>  | General Transfer CFT initialization utility.    |
+| <a href="#cftutil">cftutil</a>  | Simplified display of the standard CFTUTIL commands.    |
+| <a href="#cftupdate">cftupdate</a>  | Management Utility updating the Transfer CFT configuration.    |
+|  <a href="#cftcatal">cftcatal</a>  |  Utility migrating and/or extending the  {{< TransferCFT/componentshortname  >}} catalog file.  |
 |  <a href="#xfbadm">xfbadmgrp</a>  |  Group management utility (all users accessing the Transfer CFT Copilot server).  |
 |  <a href="#xfbadmusr1">xfbadmusr</a>  |  Utility managing users accessing the Transfer CFT Copilot server.  |
 |  <a href="#xvi">xvi</a>  |  Utility processing the conversion tables.  |
@@ -62,8 +61,7 @@ the CFTPARM, CFTLOG cards, and so on).
 
 cftinit partners.cft the\_rest.cft
 
-> **Note:**
->
+> **Note**  
 >  
 
 -   If no file name
@@ -82,8 +80,7 @@ The *cftupdate* utility is used to update the configuration.
 
 cftupdate &lt;filename> \[&lt;filename> ...\]
 
-> **Note:**
->
+> **Note**  
 >  
 
 -   You can only update

@@ -22,8 +22,7 @@ This section describes the general steps that occurs during the registration pro
 
 Starting  Copilot after installation begins the connection and registration process with   or {{< TransferCFT/flowmanager  >}}.
 
-> **Note:**
->
+> **Note**  
 > Transfer CFT requires the Central Governance  or Flow Manager shared secret to register. See the Central Governance  or Flow Manager documentation for details.
 
 1\. Copilot connects to Central Governance  or {{< TransferCFT/flowmanager  >}} and submits its registration.
@@ -33,7 +32,7 @@ Starting  Copilot after installation begins the connection and registration proc
     -   Information about the {{< TransferCFT/componentshortname >}} instance, including its instance name, host, port and version.
     -   Two Certificate Signing Requests (CSRs) for to process.
 
-    > **Note:**
+    > **Note**
     >
     > If you use an intermediate certificate as a governance CA certificate, you must add the root CA certificate that signs  this intermediate certificate in the Transfer CFT PKI database.
 
@@ -97,7 +96,7 @@ The client and server security profiles must be mutually authenticated. However,
 
 | Parameter  | Value  |
 | --- | --- |
-| am.passport.cg.organization  |  Org <blockquote> **Note:**<br/>You must restart both Transfer CFT and Copilot following a change to this parameter. </blockquote>  |
+| am.passport.cg.organization  |  Org <blockquote> **Note**<br/>You must restart both Transfer CFT and Copilot following a change to this parameter. </blockquote>  |
 | am.passport.domain  |  CG  |
 | am.passport.hostname  | &lt; host name &gt;  |
 | am.passport.instance_id  | $(cft.instance_group).$(cft.instance_id)  |
@@ -121,7 +120,7 @@ The client and server security profiles must be mutually authenticated. However,
 | cft.server.bandwitdth.enable  | No  |
 | cg.mutual_auth_port  | &lt;secured communications port&gt;  |
 | copilot.misc.createprocessasuser  | No  |
-| pki.type  |  cft <blockquote> **Note:**<br/>Except when using a SAF-based PKI Transfer CFT, in which case system is the value. </blockquote>  |
+| pki.type  |  cft <blockquote> **Note**<br/>Except when using a SAF-based PKI Transfer CFT, in which case system is the value. </blockquote>  |
 | sentinel.trkipaddr  | &lt;Sentinel – Front-end host &gt;  |
 | sentinel.trkipport  | &lt;Sentinel - Font-end port&gt;  |
 | sentinel.xfb.enable  | Yes  |

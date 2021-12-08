@@ -10,8 +10,7 @@ As of {{< TransferCFT/componentlongname  >}} 3.4 there is no separate upgrade pa
 
 All passwords stored in the UCONF dictionary, or in the {{< TransferCFT/componentlongname  >}} databases (for example, CFTPART, CFTPARM) are cyphered using the key generated at installation. If you are performing an upgrade, all passwords are cyphered using a hard-coded key. We recommend that you generate an encryption key.
 
-> **Note:**
->
+> **Note**  
 > See also silent mode for details on using the silent installation method.
 
 <span id="Before"></span>
@@ -70,8 +69,7 @@ You can set these using command line or the configuration file. The values passe
 
 ## Upgrade Transfer CFT 3.1.3, 3.2.x, or 3.3.2 to
 
-> **Note:**
->
+> **Note**  
 > Remember to update the product key between versions.
 
 **Step 1: Upgrade to the latest Transfer CFT 3.1.3, 3.2.x, or 3.3.2 Service Pack**
@@ -86,14 +84,12 @@ Run the Axway Installer in update mode.
 
     Example: Transfer\_CFT\_3.1.3\_SP3\_aix-power-64\_BN8712000.zip
 
-> **Note:**
->
+> **Note**  
 > In this step you are working with a zip file (not a jar as in earlier Installer versions). Do NOT unzip/uncompress the zip file.
 
 Step 2: Upgrade to Transfer CFT {{< TransferCFT/releasenumber  >}}
 
-> **Note:**
->
+> **Note**  
 > Caution  
 > This operation removes the old Axway Installer and all its content, so no rollback is available. You should backup the content of your installation directory if you want to have the option of undoing this operation.
 

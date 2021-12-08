@@ -16,8 +16,7 @@ Enter the number of authorized file access tasks (default = 8). This refers to t
 The following table indicates the maximum number supported for each
 system.
 
-> **Note:**
->
+> **Note**  
 > When MAXTASK is set to one, a high TRANTASK value is useless.
 
 

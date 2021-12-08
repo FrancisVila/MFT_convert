@@ -35,7 +35,7 @@ Use this command to define network parameter settings.
 |  <a href="../../../command_summary/parameter_intro/rto">RTO</a>  |  Network monitoring time-out (in seconds) excluding the protocol connection/disconnection/break phase.<br/>Corresponds to the wait time-out of a reply to an FPDU before disconnection (READ TIME OUT). If the value is 0, the wait time-out is infinite.  |
 |  <a href="../../../command_summary/parameter_intro/sap">SAP</a>  |  Name of the local SAP, Service Access Point, associated with this protocol. Used to identify the "access point" at which incoming connection requests for this communication protocol are placed. The SAP supplied by a requester partner when making its connection request is retrieved by the local Transfer CFT which uses it to deduce the protocol to be used. Each CFTPROT object in a given resource class must include its specific SAP. The value of this parameter may be expressed in hexadecimal form. In this case, the first character must be "#" (number sign) (for example: #31 is understood as the ASCII character ‘1’).  |
 |  <a href="../../../command_summary/parameter_intro/scomp">SCOMP</a>  |  Maximum authorized compression for sending a file. This compression is negotiated between the sender and the receiver. A zero value corresponds to no compression.  |
-|  <a href="../../../command_summary/parameter_intro/srin">SRIN</a>  |  Controls the direction of transfers authorized for the Transfer CFT when it is server, accepter of the protocol connection.  |
+|  <a href="../../../command_summary/parameter_intro/srin">SRIN</a>  |  Controls the direction of transfers authorized for the Transfer CFT  when it is server, accepter of the protocol connection.  |
 |  <a href="../../../command_summary/parameter_intro/srout">SROUT</a>  |  Controls the direction of transfers authorized for the Transfer CFT when it is requester (initiator of the protocol connection).  |
 |  <a href="../../../command_summary/parameter_intro/type#type_CFTPROT">TYPE</a>  |  Type of file transfer protocol.  |
 
@@ -165,8 +165,7 @@ In PeSIT, the user can specify parameters controlling the:
 -   compression algorithms
 -   CRC calculation
 
-> **Note:**
->
+> **Note**  
 > In certain environments,
 > the mechanisms for repositioning in the transferred files are not operational
 > with all the files supported: after a transfer interruption, transfers

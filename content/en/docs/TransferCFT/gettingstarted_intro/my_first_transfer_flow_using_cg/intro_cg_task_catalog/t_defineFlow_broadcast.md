@@ -20,8 +20,7 @@
 
 ![](/Images/TransferCFT/broadcast_list.png)
 
-> **Note:**
->
+> **Note**  
 > Tip  
 > You can refer to the Transfer CFT to Central Governance parameter mapping Flow definition: Target and Flow definition: Source to further customize your flow.
 
