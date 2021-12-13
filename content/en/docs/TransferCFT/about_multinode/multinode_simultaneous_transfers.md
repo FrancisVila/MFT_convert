@@ -9,7 +9,7 @@
 > The diag 916 and 418 errors relate to these settings.  See DIAGI - Diagnostic
 > codes.
 
-## Global settings
+## Global settings 
 
 The MAXCNX and MAXTRANS parameters  control the Transfer CFT maximum number of simultaneous connections and authorized parallel transfers respectively. It is important to remember that the MAXCNX and MAXTRANS values in a multi-node architecture apply to each node. This means that if there are 3 nodes, multiply the MAXCNX value by 3 to have the actual value for that Transfer CFT.
 
