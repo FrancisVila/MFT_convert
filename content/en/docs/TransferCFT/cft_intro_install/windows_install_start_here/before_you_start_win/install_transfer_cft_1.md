@@ -1,7 +1,7 @@
 {
     "title": "Start the installation ",
     "linkTitle": "4. Perform a standard installation",
-    "weight": "160"
+    "weight": "170"
 }Use the following command to begin the Transfer CFT installation in graphical mode:
 
 ```
@@ -16,7 +16,8 @@ Use the following command to install Transfer CFT in silent mode.
 `./Transfer_CFT_3.7_<Install>_<OS>_<BN>.exe --mode unattended --conf-file initialize.properties`
 ```
 
-> **Note**  
+> **Note**
+>
 > You cannot install Transfer CFT if you have a profile already loaded.
 
 <table>

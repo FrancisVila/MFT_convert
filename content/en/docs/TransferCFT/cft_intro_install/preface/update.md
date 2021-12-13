@@ -21,7 +21,8 @@ If you are not familiar with the installation procedure, you may want to first r
 -   Example  
     The following example demonstrates a Transfer CFT {{< TransferCFT/releasenumber >}} SP4 installation over an existing product  installed in `/home/cftuser/CFT33x`.
 
-> **Note**  
+> **Note**
+>
 >  
 
 When you install a service pack, the contents of the home directory are updated, but the runtime directory remains untouched. This is so that your customizations, such as APIs, are not overwritten.

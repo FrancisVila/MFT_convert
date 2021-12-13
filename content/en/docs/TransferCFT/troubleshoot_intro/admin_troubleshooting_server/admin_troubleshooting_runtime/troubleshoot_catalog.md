@@ -1,7 +1,7 @@
 {
     "title": "Troubleshoot the catalog",
     "linkTitle": "Troubleshoot the catalog",
-    "weight": "330"
+    "weight": "410"
 }## The catalog is full and {{< TransferCFT/componentlongname  >}} has stopped
 
 Symptom

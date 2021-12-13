@@ -1,7 +1,7 @@
 {
     "title": "XFBTransfer system attributes",
     "linkTitle": "XFBTransfer system attributes",
-    "weight": "220"
+    "weight": "230"
 }This section provides information on the following attributes:
 
 -   <a href="#Monitori" class="MCXref xref">Monitoring errors</a>

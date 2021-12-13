@@ -1,12 +1,13 @@
 {
     "title": "Configure receive mode for files (IFS)",
-    "linkTitle": "Configure receive mode (IFS)",
+    "linkTitle": "Configure receive mode &#40;IFS&#41;",
     "weight": "230"
 }## File types
 
 The following table lists the different types of files that can be received on an IBM i system when using IFS.
 
-> **Note**  
+> **Note**
+>
 > The FRECFM possibilities for all FTYPE are: ‘V’, ‘F’, and ‘ ’ .
 
 ```
@@ -27,7 +28,8 @@ Binary
 Stream text  is an alternative way to transfer a text file. Every line of a file must end with an LF or CR/LF. However, during a transfer the CR/LF are changed to LFs. This enables a quicker reading, and a faster transfer.
 When using stream text (FTYPE=J), the sender and the receiver must both have the FTYPE set to J. Setting only the sender or receiver to FTYPE=J results in unexpected content for the transferred file.
 
-> **Note**   This transfer mode is not available for native side transfers.
+> **Note**
+> This transfer mode is not available for native side transfers.
 
 ```
 

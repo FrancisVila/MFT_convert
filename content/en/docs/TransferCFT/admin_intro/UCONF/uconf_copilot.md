@@ -79,7 +79,7 @@ Use this parameter to define the client timeout in minutes. The default value is
 
 Web services
 
-Use this parameter to define the {{< TransferCFT/componentshortname  >}} Web Services. See also [Setting up Web Services]().
+Use this parameter to define the {{< TransferCFT/componentshortname  >}} Web Services. See also [Setting up Web Services](../../../cft_intro_install/about_this_document_ibmi/using_apis/about_web_services).
 
 
 | Parameter  | Value  | Former value  |

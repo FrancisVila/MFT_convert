@@ -1,7 +1,7 @@
 {
     "title": "impl",
     "linkTitle": "impl",
-    "weight": "1660"
+    "weight": "1670"
 }<span id="impl"></span>
 
 ### impl
@@ -18,7 +18,8 @@ command (state=HOLD) entered in the catalog for this file identifier,
 the IMPL parameter set to "YES" allows the  {{< TransferCFT/componentshortname  >}} to make available the corresponding file, by automatically generating
 a send request. This makes a file permanently available.
 
-> **Note**  
+> **Note**
+>
 > Caution  
 > If the RECV command specifies an IDF in “identifier” form (no mask) and if the corresponding model files, at the server end, are declared in implicit send mode (IMPL = YES), the option FILE = ALL initiates an uninterrupted repetition of the transfer, concerning the first file waiting to be sent.
 

@@ -1,7 +1,7 @@
 {
     "title": "Read commands",
     "linkTitle": "Read commands",
-    "weight": "290"
+    "weight": "310"
 }The QUERY, TEST, and WAITCAT commands can locate the first transfer that meets a certain set of criteria. But, if there are other transfers that meet this same criteria, they are overlooked. To overcome this limitation and find these additional transfers, you can use the read commands.
 
 Three read commands are available and described in this section:

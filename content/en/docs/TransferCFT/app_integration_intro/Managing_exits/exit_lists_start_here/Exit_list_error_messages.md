@@ -1,7 +1,7 @@
 {
     "title": "Exit  list error messages",
     "linkTitle": "Exit list error messages",
-    "weight": "320"
+    "weight": "330"
 }The error messages stored in the  {{< TransferCFT/componentshortname  >}} log
 have the following syntax:
 

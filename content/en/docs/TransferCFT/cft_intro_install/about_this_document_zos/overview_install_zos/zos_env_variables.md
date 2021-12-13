@@ -4,7 +4,8 @@
     "weight": "190"
 }You must define the environment variables  in the `..UPARM (CNFENV)` file with the DDname `STDENV`.
 
-> **Note**  
+> **Note**
+>
 > The ENVAR runtime option is: envar("\_CEE\_ENVFILE\_S=DD:STDENV".
 
 This file must contain the following definition: `CFTUCONF=dd:UCONF `(initialized when creating the instance - do not change this value).

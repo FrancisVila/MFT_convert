@@ -45,7 +45,8 @@ To apply a service pack:
 
     Results, for example, after applying SP4:
 
-> **Note**  
+> **Note**
+>
 >  
 
 When you install a service pack, the contents of the home directory are updated, but the runtime directory remains untouched. This is so that your customizations, such as APIs, are not overwritten.

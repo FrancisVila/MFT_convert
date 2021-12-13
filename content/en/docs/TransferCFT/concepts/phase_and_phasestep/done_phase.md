@@ -6,5 +6,6 @@
 
 This is the final phase and phase step on the flow.
 
-> **Note**  
+> **Note**
+>
 > See Processing commands: general usage for a description of the processing command parameters and values.

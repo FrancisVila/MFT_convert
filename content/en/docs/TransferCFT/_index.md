@@ -8,17 +8,11 @@ You can configure {{< TransferCFT/transfercftname  >}} and manage flows using {{
 
 Additionally, the Transfer CFT {{< TransferCFT/doctypeuser  >}} explains standalone options for users who have not yet activated or Flow Manager. Axway encourages {{< TransferCFT/componentlongname  >}} users to discover the benefits of centralized management.
 
-> **Note**  
+> **Note**
+>
 > Visit the Changelog for details on new features in this version as well as previous versions.
 
-{{< alert title="Note" color="primary" >}}
-
-Visit the Changelog for details on new features in this version as well as previous versions.
-
-{{< /alert >}}
-
-
-
+ 
 
 <table>
    <tbody>

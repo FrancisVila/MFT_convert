@@ -1,10 +1,11 @@
 {
     "title": "Keys - PKIKEY",
-    "linkTitle": "Keys - PKIKEY",
+    "linkTitle": "Keys &#45; PKIKEY",
     "weight": "220"
 }This page describes how to manage keys via the user interface.
 
-> **Note**  
+> **Note**
+>
 > Some command line  parameters are not available in the user interface.
 
 ## About keys in {{< TransferCFT/transfercftname  >}}
@@ -28,7 +29,8 @@ The PKIKEY command is similar to the PKICER command. Parameters include:
 | <a href="../../../command_summary/parameter_intro/mode">MODE</a>:  | The action to perform (CREATE, REPLACE, DELETE) *only in command line*  |
 
 
-> **Note**  
+> **Note**
+>
 > See the PKIKEYGEN command for details on how to generate and use your own keys.
 
 ### Restrictions

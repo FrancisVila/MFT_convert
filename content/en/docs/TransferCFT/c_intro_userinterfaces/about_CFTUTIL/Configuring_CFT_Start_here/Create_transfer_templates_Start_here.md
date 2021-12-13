@@ -1,7 +1,7 @@
 {
     "title": "Creating  transfer templates",
     "linkTitle": "Ongoing CFTRECV",
-    "weight": "300"
+    "weight": "430"
 }<span id="About_the_Ongoing_CFTRECV_object"></span>
 
 ## About the ongoing CFTRECV object

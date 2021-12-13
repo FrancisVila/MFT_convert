@@ -2,11 +2,11 @@
     "title": "Configure optional  features",
     "linkTitle": "Configure optional features",
     "weight": "250"
-}<span id="Create a Transfer CFT PKI file D43PKI"></span><span id="kanchor32"></span>
+}<span id="Create a Transfer CFT PKI file D43PKI"></span><span id="kanchor30"></span>
 
 ## Create a Transfer CFT PKI file D43PKI
 
-The <span id="kanchor33"></span>PKI file contains all information necessary to use the SSL component:
+The <span id="kanchor31"></span>PKI file contains all information necessary to use the SSL component:
 
 -   Certification authorities
 -   Certificates
@@ -22,7 +22,7 @@ It is important to follow these guidelines:
 -   Take all appropriate security measures to guarantee the confidentiality of the security data.
 -   The usage of data ciphering is subject to legal restrictions that vary from country to country.
 
-<span id="Connect with PassPort D44PASS"></span><span id="kanchor34"></span><span id="kanchor35"></span>
+<span id="Connect with PassPort D44PASS"></span><span id="kanchor32"></span><span id="kanchor33"></span>
 
 ## Connect with PassPort D44PASS
 
@@ -75,7 +75,8 @@ To enable the Transfer CFT PKI system, access the CONFIG file. The job responsib
 
 A sample named RACDCERT is delivered in the cftv2.INSTALL library. This RACDCERT show how to create a RING named XFBCFT, and to add test certificates: AXWMFTCA and AXWMFTUS. Additionally, the sample adds RACF authorizations for the Transfer CFT userid.
 
-> **Note**  
+> **Note**
+>
 > Transfer CFT no longer delivers sample certificates.
 
 For information on SAF compatible security products, such as ACF/2 or TOP-SECRET, refer to the product-supplied documentation.
@@ -139,7 +140,7 @@ The SAF definitions are described in the IBM documentation SA22-7691 Security Se
 
 Transfer CFT will perform the DATAGETFIRST/DATAGETNEXT and the CHECKSTATUS operations.
 
-<span id="Communication server C32XMEM"></span><span id="kanchor36"></span>
+<span id="Communication server C32XMEM"></span><span id="kanchor34"></span>
 
 ## Communication server C32XMEM
 

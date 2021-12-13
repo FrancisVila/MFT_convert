@@ -57,7 +57,8 @@ The purpose of the My first file transfer section is to help you feel comfortabl
 
 In the following sections, we'll take a look at additional {{< TransferCFT/componentshortname  >}} transfer modes, as well as some useful configuration parameters. With Transfer CFT, the transfer initiator  can be either the sender  of the file or the receiver, as indicated in the examples below. Additionally, in these examples we will use the convention that the requester is the client, so the transfer description may read **Requester/Sender** if the client is supplying the file.
 
-> **Note**  
+> **Note**
+>
 > For more information on a command and a list of available parameters, enter CFTUTIL help cmd=&lt;name of command>.
 
 <span id="Perform2"></span>
@@ -638,7 +639,8 @@ SEND IDF=ORDER, STATE=HOLD
 LISTCAT
 ```
 
-> **Note**  
+> **Note**
+>
 > In these examples we created partners using the default MODE value, which is REPLACE. You can also use the MODE=CREATE, to create a new Transfer CFT partner.
 
 #### Additional information

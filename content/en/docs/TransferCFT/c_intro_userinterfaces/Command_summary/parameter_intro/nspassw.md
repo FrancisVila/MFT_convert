@@ -1,7 +1,7 @@
 {
     "title": "nspassw",
     "linkTitle": "nspassw",
-    "weight": "2340"
+    "weight": "2350"
 }<span id="nspassw"></span>
 
 ### nspassw
@@ -21,7 +21,8 @@ CFTPART.
 
 This parameter value is case sensitive in CFTUTIL commands if you enclose the value in " " quotes.
 
-> **Note**  
+> **Note**
+>
 > If you begin a password with an indirection character (Unix @, Windows #) when using SFTP, it is  considered a reference to a file and not part of the password. Please see the SFTP pages for more information.
 
 [Return to Command index](../../)

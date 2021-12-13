@@ -1,8 +1,8 @@
 {
     "title": "Start A00CUSTO to customize installation files",
-    "linkTitle": " Customize installation files (A00CUSTO)",
+    "linkTitle": " Customize installation files &#40;A00CUSTO&#41;",
     "weight": "200"
-}<span id="Customizing JCL A00CUSTO parameters"></span><span id="kanchor73"></span>
+}<span id="Customizing JCL A00CUSTO parameters"></span><span id="kanchor71"></span>
 
 ## Customize JCL A00CUSTO parameters
 
@@ -10,7 +10,8 @@ The A00CUSTO JOB customizes the installation files. The customization is done di
 
 ### Installed directories
 
-> **Note**  
+> **Note**
+>
 > Do            NOT customize the distribution environment.
 
 

@@ -1,7 +1,7 @@
 {
     "title": "fdisp",
     "linkTitle": "fdisp",
-    "weight": "1130"
+    "weight": "1140"
 }<span id="fdisp"></span>
 
 ### fdisp
@@ -20,13 +20,16 @@ File sharing option:
 -   CHECK:
     If the file is modified during a transfer, the transfer is aborted.
 
-> **Note**  
+> **Note**
+>
 > The value "OLD" is deprecated and no longer available for SEND/CFTSEND.
 
-> **Note**  
+> **Note**
+>
 > The CHECK feature is disabled on z/OS platforms (no action occurs when FDISP=CHECK).
 
-> **Note**  
+> **Note**
+>
 > Caution  
 > When FDISP is set to CHECK, Transfer CFT performs an FSTAT for each record, which has a significant negative impact on performance.
 
@@ -50,7 +53,8 @@ action of the  {{< TransferCFT/componentshortname  >}}:
 
 The following table shows the combined effect of the FDISP and FACTION parameters when used in a RECV command.
 
-> **Note**  
+> **Note**
+>
 > There no impact on FDISP when used in combination with RENAME or RETRYRENAME.
 
 

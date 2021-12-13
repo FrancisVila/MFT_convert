@@ -1,7 +1,7 @@
 {
     "title": "Configure  the environment",
     "linkTitle": "Configuring the environment",
-    "weight": "320"
+    "weight": "330"
 }This topic describes how to configure the environment for a *file
 type exit*. Before you submit an exit, you must customize the following
   {{< TransferCFT/componentshortname  >}} objects:

@@ -1,7 +1,7 @@
 {
     "title": "Using  the communication area ",
     "linkTitle": "Using the communication area",
-    "weight": "350"
+    "weight": "360"
 }<span id="Communication_area_structure__End_of_transfer_exit"></span>This topic describes basic rules for the communication area for an end-of-transfer
 type exit.
 

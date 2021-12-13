@@ -1,7 +1,7 @@
 {
     "title": "Defining  functions",
     "linkTitle": "Defining functions",
-    "weight": "350"
+    "weight": "360"
 }<span id="About_the_Functions"></span>This topic describes the directory exit task components and functions.
 A directory EXIT task comprises two modules:
 

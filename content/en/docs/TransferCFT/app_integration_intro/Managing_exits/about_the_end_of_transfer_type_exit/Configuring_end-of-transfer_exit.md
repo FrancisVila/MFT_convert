@@ -1,7 +1,7 @@
 {
     "title": "Configuring  the environment",
     "linkTitle": "Configuring the environment",
-    "weight": "360"
+    "weight": "370"
 }This topic describes how to configure the environment for an end-of-transfer
 type exit. Before you submit this EXIT, you must customize the following
   {{< TransferCFT/componentshortname  >}} objects:

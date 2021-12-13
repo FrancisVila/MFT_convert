@@ -1,7 +1,7 @@
 {
     "title": "fbufsize",
     "linkTitle": "fbufsize",
-    "weight": "1060"
+    "weight": "1070"
 }<span id="fbufsize"></span>
 
 ### fbufsize
@@ -14,7 +14,8 @@ Size of CFTTFIL buffer used for interprocess communication, where the default va
 
 It is recommended that you not modify this value unless instructed to do so by an Axway representative.
 
-> **Note**  
+> **Note**
+>
 > The FBUFSIZE range is 0 to 8180 in OpenVMS environments.
 
 [Return to Command index](../../)

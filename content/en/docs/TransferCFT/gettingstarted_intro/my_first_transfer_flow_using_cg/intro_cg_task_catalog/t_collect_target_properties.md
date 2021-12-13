@@ -4,7 +4,8 @@
     "weight": "360"
 }For each Target in the collection flow, set the File properties to make the file available.
 
-> **Note**  
+> **Note**
+>
 > Tip  
 > Existing Transfer CFT users may want to refer to the Transfer CFT to Central Governance parameter mapping in the sections see Flow definition: Target and Flow definition: Source.
 

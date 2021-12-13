@@ -179,7 +179,8 @@ remarks are valid:
 
 This allows identifiers of length less than p to be selected, for example.
 
-> **Note**  
+> **Note**
+>
 > &.VAR is substituted as &VAR. The &lt;char\_symb> concatenated
 > with a point is substituted as &lt;char\_symb>. The rule applies even
 > if VAR is not an identifier known to  Transfer CFT. For example, for the
@@ -250,7 +251,8 @@ Given the syntax FNAME=&(-PREF)(+SUF)(=DUMMY)PARM,
 -   If &PARM is empty, FNAME gets the value DUMMY
 -   If &PARM is not empty, FNAME gets the value PREF&PARMSUFF
 
-> **Note**  
+> **Note**
+>
 > To add a closing parenthesis within the str\_prefix, str\_suffix and str\_alternate, it must be preceded by the character ‘&’:
 
 -   Given the syntax FNAME=&(+(1234&))PARM
@@ -273,7 +275,8 @@ the syntax &VAR. The substituted value, corresponding to the effective
 value of the identifier ‘VAR’ (truncated of the blank characters on the
 right), is also indicated.
 
-> **Note**  
+> **Note**
+>
 > The other syntax shown above may also be used, for each of the identifiers
 > listed.
 
@@ -982,7 +985,8 @@ date </p>         </td>
 
 (2): EXEC in SEND, EXECSF,  EXECSM, EXEC in RECV, EXECRF, EXECRM, EXECE, EXECSE, EXECRE, EXECA, EXECSFA, EXECSMA, PREEXEC, EXITEOT, EXECSUB, EXECSUBA, EXECSUBPRE
 
-> **Note**  
+> **Note**
+>
 > The symbolic variable formats concerning dates and times are:
 
 -   Time: HHMMSSCC

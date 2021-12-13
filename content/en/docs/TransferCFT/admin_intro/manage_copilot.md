@@ -34,7 +34,8 @@ To kill all  Copilot server processes,  run:
 copstop -kill
 ```
 
-> **Note**  
+> **Note**
+>
 > For details on starting in your specific operating system, refer to the corresponding Transfer CFT 3.9 Installation Guide.
 
 <span id="Check__status"></span>
@@ -70,12 +71,14 @@ COPRUN is an example of a JCL statement that starts the Transfer CFT Copilot ser
 
 When the <span class="code">copilot.misc.CreateProcessAsUser</span> variable is set, STEPLIB or JOBLIB can be non-APF. Only a <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>/PassPort user can sign on to Copilot user interface.
 
-> **Note**  
+> **Note**
+>
 > When the ‘cft.mvs.copilot.check\_apf’ uconf variable is set to ‘Yes’, CFTCOPL must be APF authorized to start.
 
 LOG message: <span class="code">+CFTI42E Copilot must be APF-authorized.</span>
 
-> **Note**  
+> **Note**
+>
 > CFTCOPL must be APF authorized to start if the UCONF cft.mvs.copilot.check\_apf variable is set to Yes. Otherwise, the  Transfer CFT log displays CFTI42E Copilot must be APF-authorized.
 
 #### Stop
@@ -218,7 +221,7 @@ Enter an integer for the timeout in minutes.
 
 #### Web services
 
-Use these parameter to define the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> Web Services. See also [Setting up Web Services]().
+Use these parameter to define the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> Web Services. See also [Setting up Web Services](../../cft_intro_install/about_this_document_ibmi/using_apis/about_web_services).
 
 ```
 
@@ -238,7 +241,7 @@ NA
 
 #### REST API server
 
-Use these parameter to configure the REST API server. See also [Transfer CFT REST API concepts]().
+Use these parameter to configure the REST API server. See also [Transfer CFT REST API concepts](../../app_integration_intro/using_apis/api_intro).
 
 ```
 
@@ -295,7 +298,7 @@ int
 copilot.restapi.catalog.retry_timeout
 int
 30
-The default value of the [apiTimeout](#Manage) parameter as defined in the request URL.
+The default value of the [apiTimeout](../../app_integration_intro/using_apis/api_intro/api_commands#Manage) parameter as defined in the request URL.
 Available exclusively for POST requests.
 ```
 <span id="Configur"></span>

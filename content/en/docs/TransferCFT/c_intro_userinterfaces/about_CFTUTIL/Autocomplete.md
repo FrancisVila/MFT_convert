@@ -20,10 +20,12 @@ To simplify the use of Transfer CFT commands, you can use the bash autocompletio
     -   <a href="#Auto-com" class="MCXref xref">Use the Bash autocompletion keys</a>
     -   [UCONF parameter specifics](#UCONF%C2%A0pa)
 
-> **Note**  
+> **Note**
+>
 > Bash autocompletion does not display if you enter a command  directly after the CFTUTIL keyword. For example, no commands are suggested if you type: CFTUTIL SEND
 
-> **Note**  
+> **Note**
+>
 > You require bash version 2.0.5 or higher.  Additionally, Bash must be loaded prior to loading the Transfer CFT profile.
 
 <span id="Special"></span>

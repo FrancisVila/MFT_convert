@@ -20,5 +20,6 @@ The following diagram illustrates a simplified view of the architecture.
 
 You can deploy a single Central Governance instance  with one computer per network. The system supports active/passive resiliency, and can bring another instance of Central Governance  online if the primary fails.
 
-> **Note**  
+> **Note**
+>
 > Flow Manager offers services that are similar to Central Governance, but with the addition of predefined templates and API functionality in a container setting.

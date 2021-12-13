@@ -8,7 +8,8 @@ If you are installing {{< TransferCFT/componentlongname  >}} as part of a manage
 
 If you want to enable {{< TransferCFT/centralgovernancename  >}} during installation, please check that your license includes {{< TransferCFT/centralgovernancename  >}} and that you have the required information, such as the shared secret, to activate connectivity. For more information, please refer to the {{< TransferCFT/centralgovernancename  >}}  documentation.
 
-> **Note**  
+> **Note**
+>
 > In this section, replace &lt;OS> with your operating system and &lt;BN> with the build number, for example,  Transfer\_CFT\_3.7\_Install\_win-x86-64\_BN12548232.exe.
 
 ### Installation overview
@@ -80,7 +81,8 @@ If you want to use symbolic links, the link path must use a slash delimiter as s
 
 To install Transfer CFT using symbolic links, you must use the silent mode, `option '--mode unattended'`, and assign all parameters using only the configuration file    (do not use parameters in the command line except the conf-file).
 
-> **Note**  
+> **Note**
+>
 > If  an installation that uses symbolic links fails, once you have corrected the silent files, you must delete the Transfer CFT home installation directory, to which the symbolic link points, prior to retrying the installation.
 
 ### Run as administrator

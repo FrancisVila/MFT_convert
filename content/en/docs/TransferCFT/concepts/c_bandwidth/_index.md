@@ -13,7 +13,8 @@ Class-of-service defines a common set of parameters for all network session esta
 
 All rates, either configured as rates or computed from weights, represent a number of Kbytes per second.
 
-> **Note**  
+> **Note**
+>
 > In Central Governance see the Bandwidth Allocation section on the product configuration page, and Bandwidth Allocation in the Transfer Properties of the flow definition,  for  supported bandwidth features and details.
 
 ## Parameters

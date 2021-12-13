@@ -1,7 +1,7 @@
 {
     "title": "Troubleshoot 240 or 740 RTO",
     "linkTitle": "Troubleshoot RTO 240 or 740",
-    "weight": "390"
+    "weight": "480"
 }Issue: An error occurs with a 240 or 740 RTO
 
 This error may occur when a transfer CFT timeout occurs  between the select and deselect file steps during the transfer phase.

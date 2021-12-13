@@ -81,7 +81,8 @@ FMODEL
 
 The path to the file containing the models. If no model is found, the default format, which is the same as for the DISPLAY command, is used.
 
-> **Note**  
+> **Note**
+>
 > Transfer CFT 3.7 and higher uses the  dspcnf.xml model fileby default. To have the display format from a previous version, use FMODEL=NONE.
 
 ROOTCID

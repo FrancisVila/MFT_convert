@@ -1,7 +1,7 @@
 {
     "title": "Protocol  diagnostic codes",
     "linkTitle": "Protocol diagnostic codes",
-    "weight": "490"
+    "weight": "500"
 }<span id="PeSIT_Protocol_Diagnostic_Codes"></span>
 
 ## PeSIT protocol diagnostic codes

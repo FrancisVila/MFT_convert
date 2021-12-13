@@ -36,7 +36,8 @@ After installing  {{< TransferCFT/componentshortname  >}}
     cftinit conf/cft-tcp.conf conf/cft-tcp-part.conf
     ```
 
-> **Note**  
+> **Note**
+>
 > Caution  
 > These commands generate an initial configuration by creating the configuration files. Any previous configurations, and any data in the communication file, catalog, or log files will be lost.
 
@@ -65,7 +66,8 @@ The following table lists the commands according to {{< TransferCFT/componentlon
 | cft force-stop –kill  | cftstop -forcedkill  |
 
 
-> **Note**  
+> **Note**
+>
 > The cftstart and cftstop commands, from version 2.7.0 and earlier, are redirected to the standardized commands for continued compatibility.
 
 <span id="Configuring_CFT_"></span>

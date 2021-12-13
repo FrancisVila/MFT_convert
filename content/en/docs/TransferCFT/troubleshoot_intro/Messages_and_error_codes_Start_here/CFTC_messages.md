@@ -1,7 +1,7 @@
 {
     "title": "Transfer CFT messages: CFTC",
     "linkTitle": "CFTC messages",
-    "weight": "280"
+    "weight": "290"
 }This topic lists the CFTC  (CFT xnnx) messages and provides the type,  a description, consequence, and corrective actions when applicable.
 
 **Message format**
@@ -185,7 +185,8 @@ command on the catalog.
 Consequence
 The command is ignored.  
 
-> **Note**   This message
+> **Note**
+> This message
 > is followed by the CFTX01W message.
 
 ```
@@ -263,7 +264,8 @@ CFTC15I Deprecated command not executed BLKNUM=&blknum PART=&part IDT=&idt : Cmd
 Explanation
 Set the uconf parameter `cft.cftcat.enable_deprecated_blknum=Yes` to enable BLKNUM.
 
-> **Note**   Regardless of the  cft.cftcat.enable_deprecated_blknum parameter setting, BLKNUM  is disabled in a multi-node configuration (uconf:cft.multi_node.enable=Yes), and this message is displayed.
+> **Note**
+> Regardless of the  cft.cftcat.enable_deprecated_blknum parameter setting, BLKNUM  is disabled in a multi-node configuration (uconf:cft.multi_node.enable=Yes), and this message is displayed.
 
 Consequence
 The command is ignored.

@@ -4,7 +4,8 @@
     "weight": "180"
 }This command is used to request the reception of files from a designated partner.
 
-> **Note**  
+> **Note**
+>
 > When using the PeSIT protocol, you cannot create a request for messages or replies.
 
 The RECV command is executed at the level of a receiver/requester (requester because it initiated the connection). The partner is therefore the sender/server.

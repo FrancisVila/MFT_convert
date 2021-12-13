@@ -1,13 +1,14 @@
 {
     "title": "Start and stop the server JOBs",
-    "linkTitle": "Post-installation",
+    "linkTitle": "Post&#45;installation",
     "weight": "170"
 }This section presents JCL examples that you can use to create the JOBs necessary to run Transfer CFT. All of the JCLs are located in the **target.INSTALL** library.
 
 -   [Starting Transfer CFT JOB CFTMAIN](#Starting%20the%20CFTMAIN%20example)
 -   [Transfer CFT user interface server commands](#Transfer%20CFT%20user%20interface%20server)
 
-> **Note**  
+> **Note**
+>
 > If you installed Transfer CFT along with Central Governance, the uconf copilot.misc.cftstart.enable is automatically set to Yes. This allows Central Governance to control stopping and starting your Transfer CFT.
 
 <span id="Starting the CFTMAIN example"></span>
@@ -20,7 +21,8 @@ You can perform Transfer CFT commands using the CFTUTIL utility, the {{< Transfe
 
 Start the CFTMAIN JCL in the  target.INSTALL library.
 
-> **Note**  
+> **Note**
+>
 > CFTMAIN must be APF authorized to start if the UCONF cft.mvs.monitor.check\_apf variable is set to Yes. Otherwise, the  Transfer CFT log displays CFTI01F CFT error CFT is not APF-authorized.
 
 ## Stop Transfer CFT 
@@ -77,12 +79,14 @@ COPRUN is an example of a JCL statement that starts the Transfer CFT Copilot ser
 
 When the `copilot.misc.CreateProcessAsUser` variable is set, STEPLIB or JOBLIB can be non-APF. Only a {{< TransferCFT/centralgovernancename  >}}/PassPort user can sign on to Copilot user interface.
 
-> **Note**  
+> **Note**
+>
 > When the ‘cft.mvs.copilot.check\_apf’ uconf variable is set to ‘Yes’, CFTCOPL must be APF authorized to start.
 
 LOG message: `+CFTI42E Copilot must be APF-authorized.`
 
-> **Note**  
+> **Note**
+>
 > CFTCOPL must be APF authorized to start if the UCONF cft.mvs.copilot.check\_apf variable is set to Yes. Otherwise, the  Transfer CFT log displays CFTI42E Copilot must be APF-authorized.
 
 ### Stopping user interface (Copilot) server

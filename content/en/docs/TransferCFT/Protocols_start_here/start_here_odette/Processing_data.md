@@ -22,7 +22,8 @@ The COMPRESSION option is negotiated during the connection phase, on
 sending the Start File Session IDentification
 FPDU.
 
-> **Note**  
+> **Note**
+>
 > The SCOMP and RCOMP parameters of CFTPROT are used as a basis for
 > this compression option negotiation.
 
@@ -187,7 +188,8 @@ EERP parameter value:
     protocol field corresponds to the EERP receiver (i.e. to the sender of
     the file).
 
-> **Note**  
+> **Note**
+>
 > Check the consistency of the end-to-end parameter value settings.
 > If a sender has a different version from a receiver, it will not be possible
 > to acknowledge the transfer.

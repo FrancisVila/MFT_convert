@@ -10,7 +10,7 @@ The Transfer CFT *instance* is the environment that the user configures for oper
 
 The tables in this section provide information about the files and allocation requirements for the distribution and instance environments. Note that an ESD installation requires an additional 1100 disk cylinders (3390 disk) of space.
 
-<span id="Distribution_environment file_formats_and_requirements_"></span><span id="kanchor70"></span>
+<span id="Distribution_environment file_formats_and_requirements_"></span><span id="kanchor67"></span>
 
 ## Distribution environment file formats and requirements
 
@@ -39,7 +39,7 @@ The tables in this section provide information about the files and allocation re
 | PKIMSG  |  Trusted File messages PO – FB - 4090 DSNTYPE=LIBRARY  | 1  |
 
 
-<span id="Instance"></span><span id="kanchor71"></span>
+<span id="Instance"></span><span id="kanchor68"></span>
 
 ## Instance environment file formats and requirements
 
@@ -75,7 +75,8 @@ The following allocations are required per {{< TransferCFT/componentshortname  >
 | CRYPSALT  | File name containing the salt used to create the private key  |   |
 
 
-> **Note**  
+> **Note**
+>
 >  
 
 -   The *Instance environment* list above does not include files that Transfer CFT creates in its implementation, such as CATALOG, PARM, PART, COM, PKIFILE, LOG, ACCOUNT etc.

@@ -1,7 +1,7 @@
 {
     "title": "ncomp",
     "linkTitle": "ncomp",
-    "weight": "2120"
+    "weight": "2130"
 }<span id="ncomp"></span>
 
 ### ncomp

@@ -1,7 +1,7 @@
 {
     "title": "ctrlpart",
     "linkTitle": "ctrlpart",
-    "weight": "520"
+    "weight": "530"
 }<span id="ctrlpart"></span>
 
 ### ctrlpart

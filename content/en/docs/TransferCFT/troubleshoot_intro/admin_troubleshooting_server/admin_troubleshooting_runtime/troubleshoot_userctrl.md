@@ -1,7 +1,7 @@
 {
     "title": "Troubleshoot user control (USERCTRL)",
-    "linkTitle": "Troubleshoot user control (USERCTRL)",
-    "weight": "340"
+    "linkTitle": "Troubleshoot user control &#40;USERCTRL&#41;",
+    "weight": "420"
 }Homogeneous transfers fail on UNIX systems
 
 ```

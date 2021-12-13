@@ -1,7 +1,7 @@
 {
     "title": "About exit  lists",
     "linkTitle": "Exit list",
-    "weight": "280"
+    "weight": "290"
 }An exit list is an  optional component supplied with certain Transfer
 CFT products. The Exit list is a file exit designed to allow remote partners to consult
 the  {{< TransferCFT/componentshortname  >}} server's catalog. The  {{< TransferCFT/componentshortname  >}}
@@ -44,7 +44,8 @@ RESERV = 16384,
 PROG = FileExe
 ```
 
-> **Note**  
+> **Note**
+>
 > We recommend that you use the value 16384 for the RESERV
 > and not modify this parameter value.
 

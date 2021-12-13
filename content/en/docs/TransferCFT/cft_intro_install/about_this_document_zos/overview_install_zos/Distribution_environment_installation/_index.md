@@ -1,15 +1,15 @@
 {
     "title": "Non-SMP/E: Create the distribution environment ",
-    "linkTitle": "Non-SMP/E: create distribution environment",
+    "linkTitle": "Non&#45;SMP/E: create distribution environment",
     "weight": "170"
-}This section describes how to install the **<span id="kanchor52"></span>distribution** **environment**. After installing the distribution environment, you should not need to modify it. Later you will use the installed distribution environment to create a Transfer CFT <span id="kanchor53"></span>[*instance* *environment*](t_install_instance_envr_zos) (runtime). The term instance replaces the former notion of a  *target* environment in Transfer CFT.
+}This section describes how to install the **<span id="kanchor49"></span>distribution** **environment**. After installing the distribution environment, you should not need to modify it. Later you will use the installed distribution environment to create a Transfer CFT <span id="kanchor50"></span>[*instance* *environment*](t_install_instance_envr_zos) (runtime). The term instance replaces the former notion of a  *target* environment in Transfer CFT.
 
 When you install the Transfer CFT you can create the following environments in a single step:
 
 -   Distribution environment
 -   Transfer CFT run-time instance environment
 
-<span id="kanchor54"></span>
+<span id="kanchor51"></span>
 
 ## Define a Transfer CFT alias
 
@@ -32,7 +32,8 @@ To define an alias, adapt the parameters  in bold to suit your environment. Ente
 -   An FTP client that permits the transfer of files to the z/OS host
 -   Download the ESD file from {{< TransferCFT/companyname >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a>
 
-> **Note**  
+> **Note**
+>
 > ISO files were deprecated in version 3.0.1.
 
 To install the Transfer CFT z/OS product, you need approximately:
@@ -43,7 +44,7 @@ To install the Transfer CFT z/OS product, you need approximately:
 
 -   450 additional cylinders of disk space to unpack the installation files
 
-<span id="Installa"></span><span id="kanchor55"></span>
+<span id="Installa"></span><span id="kanchor52"></span>
 
 ## Installation files 
 
@@ -168,7 +169,7 @@ Use one of the following methods to unpack the installation files:
 -   Decompress using the ADRDSSU format, *or*
 -   Decompress using double Xmit format
 
-<span id="kanchor56"></span>
+<span id="kanchor53"></span>
 
 ### Decompress using the ADRDSSU format
 
@@ -202,10 +203,11 @@ To customize the JCL, apply a `change all` command on the following parameters:
 
 -   storclass: SMS Storage class, used to override the default value. If used, the statement marked as a comment must be activated
 
-> **Note**  
+> **Note**
+>
 > The distribution files are restored with 5 qualifiers (ADRDSSU). You can modify 4 of these qualifiers, for example AXWAY.XFB.CFT332.CF030000, using the ADRDSSU parameter, step ADRD020 in J1IDISTA, but the fifth qualifier is hard coded.
 
-<span id="kanchor57"></span>
+<span id="kanchor54"></span>
 
 ### Decompress using double Xmit
 

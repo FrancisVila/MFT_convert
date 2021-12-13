@@ -1,10 +1,11 @@
 {
     "title": "CFTSSH - Security profile",
-    "linkTitle": "SSH Security Profiles - CFTSSH",
+    "linkTitle": "SSH Security Profiles &#45; CFTSSH",
     "weight": "200"
 }Use the CFTSSH command to describe a security profile.
 
-> **Note**  
+> **Note**
+>
 > When using the SFTP protocol, the CFTSSH definition contains the SSH connection parameters for  server or client mode.
 
 ## Server

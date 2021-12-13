@@ -8,9 +8,9 @@
 
 This section introduces prerequisite information as well as installation and information on operating Transfer CFT in Windows.
 
--   [Operating the product]()
+-   [Operating the product](windows_install_start_here/running_cft_for_the_first_time_windows)
 -   [Specific system
-    functions]()
+    functions](windows_install_start_here/specific_system_functions)
 -   Programming
     interfaces
 -   {{< TransferCFT/componentshortname >}}

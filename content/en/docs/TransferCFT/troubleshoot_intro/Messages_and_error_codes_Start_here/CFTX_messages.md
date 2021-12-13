@@ -1,7 +1,7 @@
 {
     "title": " Transfer CFT messages:  CFTW and CFTX",
     "linkTitle": "CFTX messages",
-    "weight": "390"
+    "weight": "400"
 }This topic lists the  CFTWxx and CFTXxx  messages and provides the type,  a description, consequence, and corrective actions when applicable.
 
 **Message format**

@@ -71,7 +71,8 @@ Use the following OS-specific information to customize users.
 
 This feature allows system users to execute end-of-transfer procedures themselves. On the sender side, the system user who initiates the SEND is used to execute the end-of-transfer procedure by default. On receiver side, the USERID is specified in the corresponding CFTRECV object.
 
-> **Note**  
+> **Note**
+>
 > When referring to USERID, the same rules apply when using the optional GROUPID parameter.
 
 To enable this feature:
@@ -79,7 +80,8 @@ To enable this feature:
 1.  Set `cft.server.exec_as_user` to `Yes`. Scripts are then executed as if  by the defined in [USERID](../../../c_intro_userinterfaces/command_summary/parameter_intro/userid).
 2.  Define the CFTRECV **USERID **option.
 
-> **Note**  
+> **Note**
+>
 > Additionally, you can use substitution variables to set the USERID for CFTSEND and CFTRECV objects (&RUSER, &SUSER, &RAPPL,&SAPPL, and so on).
 
 Related topics

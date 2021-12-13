@@ -1,6 +1,6 @@
 {
     "title": "Windows-specific prerequisites ",
-    "linkTitle": "Windows-specific prerequisites",
+    "linkTitle": "Windows&#45;specific prerequisites",
     "weight": "170"
 }The following are tasks to perform or issues to address before installing Transfer CFT.
 
@@ -45,7 +45,8 @@ For Windows versions prior to the versions listed above,  perform the following 
 1.  Navigate to**&gt;&gt;** **&gt;**.
 2.  From the tree, select **&gt;&gt;**.
 
-> **Note**  
+> **Note**
+>
 > On some systems the path may be Start &gt; Control Panel &gt; System and Security &gt; Administrative Tools &gt; Local Security Policy.
 
 ### Set administration rights if UAC is enabled
@@ -74,12 +75,12 @@ There are certain Windows-specific tasks you must perform to enable system user 
 
 The following sections describe how to:
 
--   [Define rights before starting the   Copilot server (REST API/Transfer CFT UI)](#Define%20rights%20before%20starting%20the%20CFT%C2%A0Navigator%20server)
--   [Define rights before logging on the    Copilot server](#Define%20rights%20before%20logging%20on%20the%20CFT%C2%A0Navigator%20server)
--   [Define rights before starting  ](#Define_rights_before_starting_Transfer_CFT)
--   [Define a domain user](#Define%20domain%20user)
--   [Define folder rights](#Define)
--   [Define system user access](#Define2)
+-   [Define rights before starting the   Copilot server (REST API/Transfer CFT UI)](../../../windows_install_start_here/running_cft_for_the_first_time_windows/user_rights_and_interface_win#Define%20rights%20before%20starting%20the%20CFT%C2%A0Navigator%20server)
+-   [Define rights before logging on the    Copilot server](../../../windows_install_start_here/running_cft_for_the_first_time_windows/user_rights_and_interface_win#Define%20rights%20before%20logging%20on%20the%20CFT%C2%A0Navigator%20server)
+-   [Define rights before starting  ](../../../windows_install_start_here/running_cft_for_the_first_time_windows/user_rights_and_interface_win#Define_rights_before_starting_Transfer_CFT)
+-   [Define a domain user](../../../windows_install_start_here/running_cft_for_the_first_time_windows/user_rights_and_interface_win#Define%20domain%20user)
+-   [Define folder rights](../../../windows_install_start_here/running_cft_for_the_first_time_windows/user_rights_and_interface_win#Define)
+-   [Define system user access](../../../windows_install_start_here/running_cft_for_the_first_time_windows/user_rights_and_interface_win#Define2)
 
 ## Run as administrator
 

@@ -1,10 +1,11 @@
 {
     "title": "Folder monitoring CFTFOLDER",
-    "linkTitle": "Folder monitoring - CFTFOLDER",
+    "linkTitle": "Folder monitoring &#45; CFTFOLDER",
     "weight": "270"
 }This section provides a description of how to use Transfer CFT objects to manage folder monitoring.
 
-> **Note**  
+> **Note**
+>
 > There are two ways to implement Transfer CFT folder monitoring, either using UCONF or Transfer CFT objects. We recommend the CFTFOLDER method of configuring folder monitoring. Users that presently are using UCONF to manage folder monitoring can migrate to a CFTFOLDER configuration as described in Migrate to CFTFOLDER folder monitoring.
 
 ## CFTFOLDER object
@@ -45,7 +46,8 @@ Use the following CFTFOLDER parameters to configure folder monitoring for each 
 | <a href="../../../command_summary/parameter_intro/userid">USERID</a>  | String  |   |  *Available on UNIX and* ** Identifier for a user who can scan a folder. See the section, <a href="../../../../app_integration_intro/intro_folder_monitor/configure_folder_monitoring#Folder2">Folder monitoring using USERCTRL</a>.  |
 
 
-> **Note**  
+> **Note**
+>
 > \*You cannot use the following characters in the SCANDIR or WORKDIR definition. Additionally you cannot use a comma (,) in the CFTFOLDER SCANDIR or WORKDIR definition.
 
 -   /

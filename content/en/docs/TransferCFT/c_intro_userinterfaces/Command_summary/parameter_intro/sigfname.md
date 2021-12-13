@@ -1,7 +1,7 @@
 {
     "title": "sigfname",
     "linkTitle": "sigfname",
-    "weight": "3180"
+    "weight": "3190"
 }### sigfname
 
 \[ SIGFNAME = { string }\]

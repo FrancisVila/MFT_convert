@@ -1,6 +1,6 @@
 {
     "title": "Deprecated folder monitoring (UCONF)",
-    "linkTitle": "Deprecated folder monitoring (UCONF)",
+    "linkTitle": "Deprecated folder monitoring &#40;UCONF&#41;",
     "weight": "230"
 }This section provides a description of how to use Transfer CFT UCONF values to manage folder monitoring. This method is no longer recommended; you should use the CFTFOLDER object method.
 
@@ -10,7 +10,8 @@
 -   [Directory configuration examples](#Director)
 -   [File-system event monitoring](#File-sys)
 
-> **Note**  
+> **Note**
+>
 > There are two ways to implement Transfer CFT folder monitoring, either using UCONF or Transfer CFT objects. We recommend the CFTFOLDER method of configuring folder monitoring. Users that presently are using UCONF to manage folder monitoring can migrate to a CFTFOLDER configuration as described in Migrate to CFTFOLDER folder monitoring.
 
 <span id="Configur"></span>
@@ -83,7 +84,8 @@ Parameter descriptions
 |  folder_monitoring.folders. &lt;logical_name&gt;. use_file_system_events <a href="#File-sys">More information</a>  | Boolean  | No  | Set to YES to enable the file system events monitoring service to detect newly available files.  |
 
 
-> **Note**  
+> **Note**
+>
 > \*You cannot use the following characters in the SCANDIR or WORKDIR definition. Additionally you cannot use a comma (,) in the CFTFOLDER SCANDIR or WORKDIR definition.
 
 -   /
@@ -145,7 +147,8 @@ This section presents an example that consists of configuring 3 directories for 
 
 Note that the configuration parameter folder\_monitoring must contain a list with these directory names, separated by blanks. Additionally, you must enable the folder monitoring functionality.
 
-> **Note**  
+> **Note**
+>
 > In all of the examples in this topic, you must enter CFTUTIL in upper case.
 
 For this example,  you would execute the following command:
@@ -156,7 +159,8 @@ CFTUTIL uconfset id=folder_monitoring.folders , value= 'A B C'
 \*Note that the "' '"characters are used to protect the spaces between each folder monitoring nodes declarations.
 ```
 
-> **Note**  
+> **Note**
+>
 > All of the examples in this section were written for a UNIX platform. Modify to suit your environment accordingly.
 
 #### Directory A requirements

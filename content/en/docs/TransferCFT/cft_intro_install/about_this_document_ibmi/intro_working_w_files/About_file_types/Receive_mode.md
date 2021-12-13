@@ -1,6 +1,6 @@
 {
     "title": " Configure receive mode (native)",
-    "linkTitle": "Configure receive mode (native)",
+    "linkTitle": "Configure receive mode &#40;native&#41;",
     "weight": "220"
 }## File type
 
@@ -69,7 +69,8 @@ File type when the file already exists
 
 The following table describes the {{< TransferCFT/hflongproductname  >}} behavior when trying to receive data in an existing file on the native side of an IBM i system.
 
-> **Note**  
+> **Note**
+>
 > Bold  values indicate a recommended combination. For example, when FTYPE=D and FRECFM=V then FLRECL+5 / 5 is the recommended PF-SRC.
 
 <table>

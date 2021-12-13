@@ -1,7 +1,7 @@
 {
     "title": "cycdate",
     "linkTitle": "cycdate",
-    "weight": "570"
+    "weight": "580"
 }<span id="cycdate"></span>
 
 ### cycdate

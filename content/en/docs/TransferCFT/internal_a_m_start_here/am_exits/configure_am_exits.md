@@ -24,7 +24,8 @@ Configure the AM exit using the parameters in the following table.
 | am.exit.custom.ldap_port.value  |   | LDAP server port that is used by the Access Management exit sample.  |
 
 
-> **Note**  
+> **Note**
+>
 > When the AM exit is enabled these conditions apply:
 
 -   uconf:am.exit.check\_login=No: the native authentication procedure is still performed

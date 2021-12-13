@@ -1,7 +1,7 @@
 {
     "title": "faction",
     "linkTitle": "faction",
-    "weight": "1030"
+    "weight": "1040"
 }<span id="faction"></span>
 
 ### faction
@@ -39,7 +39,8 @@ Action on the file after a send transfer:
 **\[FACTION = {<span style="text-decoration: underline;">VERIFY</span>
 | DELETE | ERASE | RENAME | RETRYRENAME }\]**
 
-> **Note**  
+> **Note**
+>
 > The RENAME option is only available on Unix platforms.
 
 Action on a file before a receive transfer except when using RENAME or RETRYRENAME, which are post transfer actions.
@@ -62,7 +63,8 @@ Requirements when using RENAME or RETRYRENAME:
 
 The following table shows the combined effect of the FDISP and FACTION parameters when used in a RECV command.
 
-> **Note**  
+> **Note**
+>
 > There no impact on FDISP when used in combination with RENAME or RETRYRENAME.
 
 

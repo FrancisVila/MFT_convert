@@ -1,7 +1,7 @@
 {
     "title": "ftype",
     "linkTitle": "ftype",
-    "weight": "1380"
+    "weight": "1390"
 }<span id="ftype"></span>
 
 ### ftype
@@ -14,7 +14,8 @@
 
 The  file type. Some FTYPE parameter values are OS specific. Refer to the Transfer CFT OS-specific documentation for more information.
 
-> **Note**  
+> **Note**
+>
 > When using the SFTP protocol and FTYPE = T, O, X, J or F, the file is considered a text file and there is no specific treatment according to the value. This means that the newline character (EOL character) can be  the CRLF (x0Dx0A)  or LF (x0A) on Windows, or LF (x0A) on UNIX systems.
 
 UNIX<span id="UNIX_ftype"></span>
@@ -50,7 +51,7 @@ Windows
 
 \*Supports ASCII file handling (X'1A') (SEND/RECV FTYPE=F).
 
-See also, [Windows &gt; Transferable files]().
+See also, [Windows &gt; Transferable files](../../../../cft_intro_install/windows_install_start_here/windows_install_start_here/specific_system_functions/transferable_files_win).
 
 z/OS
 
@@ -79,7 +80,8 @@ HFS file characteristics
 | J  | EBCDIC  |  Stream text<br/>Using stream text (J) allows a text type file to be sent that contains records that exceed 32 KB. As opposed to text type (FTYPE=T), stream text does not add an EOL sequence (LF or CRLF) to the received file.<br/>When using stream text (FTYPE=J), the sender and the receiver must both have the FTYPE set to J. Setting only the sender or receiver to FTYPE=J results in unexpected content for the transferred file.  |
 
 
-> **Note**  
+> **Note**
+>
 > FTYPE values are OS specific. Refer to the Transfer CFT z/OS documentation for more information.
 
 IBM i (OS400)
@@ -88,7 +90,8 @@ Native files
 
 The following table lists the different types of files that can be used according to the type of data to transfer.
 
-> **Note**  
+> **Note**
+>
 > Bold  values indicate a recommended combination. For example, FTYPE=D and FRECFM=V, are the recommended settings for PF-DTA files with variable data.
 
 <table>
@@ -164,7 +167,8 @@ The following table lists the different types of files that can be used accordin
 |              ‘J’  | ‘V’, ‘F’,  ‘ ’  |  Stream text  is an alternative way to transfer a text file. Every line of a file must end with an LF or CR/LF. However, during a transfer the CR/LF are changed to LFs. This enables a quicker reading, and a faster transfer.<br/>When using stream text (FTYPE=J), the sender and the receiver must both have the FTYPE set to J. Setting only the sender or receiver to FTYPE=J results in unexpected content for the transferred file. <blockquote> **Note**<br/>This transfer mode is not available for native side transfers. </blockquote>  |
 
 
-> **Note**  
+> **Note**
+>
 > FTYPE values are OS specific. Refer to the Transfer CFT IBM i Installation and Operations Guide for more information.
 
 **HP NonStop**

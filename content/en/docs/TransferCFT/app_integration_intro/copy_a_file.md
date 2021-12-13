@@ -49,7 +49,8 @@ Where:
 
 This creates an empty file that is transferred from COPY\_SRC to COPY\_DST. The empty file is then used to create the catalog record.
 
-> **Note**  
+> **Note**
+>
 > On a z/OS platform, use the following syntax and prefix the nfname with an asterisk ‘\*’.
 
 ```
@@ -85,7 +86,8 @@ The same concepts apply for all OS, but there is a different syntax depending on
 
 When you view the transfer record for a copied file, either in the  catalog or in {{< TransferCFT/centralgovernancename  >}}, only certain transfer details display. For the actual copied file,  only the FNAMEs, that is the source filename in the sent transfer and the destination filename on reception, are displayed. Other parameters related to the copied file, such as FLRECL, FRECS, FSPACE, and so on, are not available.
 
-> **Note**  
+> **Note**
+>
 > When using this functionality, the resulting catalog entry does not display the correct file size.
 
 ### OS specifics

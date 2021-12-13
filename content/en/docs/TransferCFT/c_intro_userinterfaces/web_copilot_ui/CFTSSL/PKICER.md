@@ -1,6 +1,6 @@
 {
     "title": "Certificates - PKICER",
-    "linkTitle": "Certificates - PKICER",
+    "linkTitle": "Certificates &#45; PKICER",
     "weight": "230"
 }This section describes how to:
 
@@ -16,7 +16,8 @@
 Users with several certificates signed by different authorities
 can import all their certificates with the same identifier.
 
-> **Note**  
+> **Note**
+>
 > Some command line  parameters are not available in the user interface.
 
 ## Parameters

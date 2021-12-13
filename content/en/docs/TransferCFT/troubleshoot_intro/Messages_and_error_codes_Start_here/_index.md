@@ -1,7 +1,7 @@
 {
     "title": "Transfer CFT messages  and error codes",
     "linkTitle": "Messages and error codes",
-    "weight": "250"
+    "weight": "260"
 }This section lists the different types of messages that   {{< TransferCFT/componentlongname  >}} generates, and corrective actions when applicable. It begins with this section, which describes message formats, severity, and additional conventions used in this documentation.
 
 ## Message format

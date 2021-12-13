@@ -1,7 +1,7 @@
 {
     "title": "Transfer CFT messages: CFTY",
     "linkTitle": "CFTY messages",
-    "weight": "400"
+    "weight": "410"
 }This topic lists the CFTYxx  (CFT xnnx) messages and provides the type,  a description, consequence, and corrective actions when applicable.
 
 **Message format**

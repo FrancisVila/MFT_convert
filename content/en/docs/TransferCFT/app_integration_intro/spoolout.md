@@ -1,6 +1,6 @@
 {
     "title": "Post-transfer file renaming",
-    "linkTitle": "Post-transfer file renaming",
+    "linkTitle": "Post&#45;transfer file renaming",
     "weight": "230"
 }You can configure  post-transfer, file renaming on the receiver side of a flow. The file is renamed on transfer completion, in the post processing phase, and includes a configurable retry mechanism.
 

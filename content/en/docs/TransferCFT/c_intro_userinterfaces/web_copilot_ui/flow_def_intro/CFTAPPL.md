@@ -1,6 +1,6 @@
 {
     "title": "Assigning  a transfer owner",
-    "linkTitle": "Transfer owner assignment - CFTAPPL",
+    "linkTitle": "Transfer owner assignment &#45; CFTAPPL",
     "weight": "240"
 }This section describes how to configure access management when not using .
 

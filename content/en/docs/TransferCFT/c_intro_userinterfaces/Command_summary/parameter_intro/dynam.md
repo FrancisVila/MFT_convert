@@ -1,7 +1,7 @@
 {
     "title": "dynam",
     "linkTitle": "dynam",
-    "weight": "790"
+    "weight": "800"
 }<span id="dynam"></span>
 
 ### dynam

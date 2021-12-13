@@ -1,6 +1,6 @@
 {
     "title": "Manage multi-node  ",
-    "linkTitle": "Manage multi-node",
+    "linkTitle": "Manage multi&#45;node",
     "weight": "250"
 }This section describes how to set up and manage your multi-node environment.
 
@@ -34,7 +34,8 @@ Execute the following command to add a new node: **`add_node (JCL MNANODE)`**
 
 The node 2 is created. The cluster is composed of three nodes: node 0, node 1 and node 2. All associated files associated with node 2 are initialized and its node state is set to DISABLED.
 
-> **Note**  
+> **Note**
+>
 > When adding a node, you must add the corresponding new license for that node in a  license-key file  ..UPARM(PRODKEY) by default.
 
 ### Enable a node
@@ -47,7 +48,8 @@ The node 2 can be started using the command:**` start -n 2 (JCL MNSTART)`**
 
 ## Remove a node from the Transfer CFT cluster
 
-> **Note**  
+> **Note**
+>
 > Only the last node can be removed.
 
 ### Disable the last node

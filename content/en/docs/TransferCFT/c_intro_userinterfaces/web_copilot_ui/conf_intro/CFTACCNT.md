@@ -1,8 +1,8 @@
 {
     "title": "Accounting records - CFTACCNT  ",
-    "linkTitle": "Accounting - CFTACCNT",
+    "linkTitle": "Accounting &#45; CFTACCNT",
     "weight": "240"
-}<span id="About_CFTACCNT"></span>This page describes the <span id="kanchor43"></span>CFTACCNT command.
+}<span id="About_CFTACCNT"></span>This page describes the <span id="kanchor41"></span>CFTACCNT command.
 
 Use this command to define the recording mode of the statistical data
 concerning correctly terminated transfers (T or X state).

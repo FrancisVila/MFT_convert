@@ -1,7 +1,7 @@
 {
     "title": "itype",
     "linkTitle": "itype",
-    "weight": "1730"
+    "weight": "1740"
 }<span id="itype"></span>
 
 ### itype

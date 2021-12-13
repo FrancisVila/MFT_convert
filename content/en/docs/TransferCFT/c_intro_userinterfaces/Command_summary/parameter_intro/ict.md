@@ -1,7 +1,7 @@
 {
     "title": "ict",
     "linkTitle": "ict",
-    "weight": "1500"
+    "weight": "1510"
 }#### COPYFILE
 
 \[ICT = {H | C},\]

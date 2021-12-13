@@ -71,7 +71,8 @@ The log page is displayed where you can:
 -   Sort the entries by newest or oldest.
 -   Filter the entries, saving filters for future use.
 
-> **Note**  
+> **Note**
+>
 > For details on starting, stopping and viewing the Transfer CFT refer to the Central Governance User Guide.
 
 ## Register with

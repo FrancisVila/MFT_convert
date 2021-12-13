@@ -1,7 +1,7 @@
 {
     "title": "UCONF: Sentinel options",
     "linkTitle": "UCONF: Sentinel options",
-    "weight": "240"
+    "weight": "250"
 }This section describes how to configure the Sentinel monitoring agent, which is part of Transfer CFT, using the following groups of UCONF parameters:
 
 -   sentinel.trkxxxxx: These parameters correspond to the trkxxxxx parameter described in the [Sentinel Universal Agent User Guide]() .
@@ -26,7 +26,8 @@ Use the following uconf parameters to configure the name and size of the overflo
     -   If   `sentinel.xfb.shut` is set to any value other than 0, Transfer CFT stops.
     -   If  `sentinel.xfb.shut` is set to 0,  Transfer CFT continues to run.
 
-> **Note**  
+> **Note**
+>
 > The sentinel.trktmaxmsg parameter is obsolete. Sentinel.xfb.buffer\_size defines the maximum number of messages in the sentinel.trktname overflow file.
 
 ## Sentinel configuration parameters

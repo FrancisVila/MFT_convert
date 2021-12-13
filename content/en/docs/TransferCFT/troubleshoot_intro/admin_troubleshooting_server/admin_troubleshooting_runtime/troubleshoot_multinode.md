@@ -1,7 +1,7 @@
 {
     "title": "Troubleshoot multi-node",
-    "linkTitle": "Troubleshoot multi-node",
-    "weight": "370"
+    "linkTitle": "Troubleshoot multi&#45;node",
+    "weight": "450"
 }## Multi-node starts but is not functional
 
 Symptom

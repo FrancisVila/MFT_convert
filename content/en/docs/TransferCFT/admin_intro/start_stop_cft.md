@@ -31,7 +31,8 @@ When opening a new session  to manage your {{< TransferCFT/componentshortname  >
     -   [Start/stop](#Start/st)
     -   [Check status](#Perform)
 
-> **Note**  
+> **Note**
+>
 > The commands listed in this section  apply generally to all supported platforms for this version, except for Transfer CFT z/OS. For more information, please refer to the OS-specific Installation Guide.
 
 ### Autocomplete command

@@ -1,7 +1,7 @@
 {
     "title": "class",
     "linkTitle": "class",
-    "weight": "400"
+    "weight": "410"
 }<span id="class"></span>
 
 ### class
@@ -12,7 +12,8 @@
 
 Class of the local resource used to establish a connection with a partner. Class associated with this network resource.
 
-> **Note**  
+> **Note**
+>
 > You cannot define two CFTNETs that have the same CLASS value.
 
 #### CFTTCP

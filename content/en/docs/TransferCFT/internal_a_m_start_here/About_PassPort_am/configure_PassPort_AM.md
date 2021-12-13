@@ -35,7 +35,8 @@ PassPort AM connector parameters
 
 1.  Set the access management type parameter to PassPort: <span style="font-family: 'Courier New'; font-size: 11pt;">am.type = passport</span>
 
-> **Note**  
+> **Note**
+>
 > The am.type is the last parameter to set when activating PassPort AM and the first to unset when deactivating it.
 
 1.  Restart the Transfer CFT and Copilot servers.
@@ -89,6 +90,6 @@ Related topics
 
 [PassPort AM CSD](../passport_am_csd)
 
-[Defining user rights Windows]()
+[Defining user rights Windows](../../../cft_intro_install/windows_install_start_here/windows_install_start_here/running_cft_for_the_first_time_windows/user_rights_and_interface_win)
 
 [Defining user rights Unix]()

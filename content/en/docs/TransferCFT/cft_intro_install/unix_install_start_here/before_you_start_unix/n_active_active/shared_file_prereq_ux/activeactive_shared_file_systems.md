@@ -8,7 +8,8 @@
 
 In a multi-node context, a shared file system allows multiple applications to access the same files  at the same time. Two typical shared file system implementations are NAS (network attached storage) and SAN (storage area network). This section describes GPFS, NFSv4, AWS EFS, and SMB/CIFS as they pertain to Transfer CFT multi-node installations.
 
-> **Note**  
+> **Note**
+>
 > In Transfer CFT, you can use any Portable Operating System Interface (POSIX) compliant shared file system for transferable application files.
 
 <span id="Using_GPFS_..5"></span><span id="Using_GPFS"></span>
@@ -152,7 +153,8 @@ This possible data corruption is not detectable at the time of occurrence, becau
 
 Enables replies to requests only after the changes have been committed to stable storage.
 
-> **Note**  
+> **Note**
+>
 > For more information on these options, refer to NFS mount and export options in the UNIX man pages (for example, here).
 
 <span id="Synchronous___asynchronous_option_impact_..22"></span><span id="Synchronous___asynchronous_option_impact"></span><span id="Impact"></span>
@@ -182,7 +184,8 @@ Legend:
 
 The NFSv4 locking lease period affects the Transfer CFT delay required to detect  node failovers. The default value for this parameter is typically 90 seconds. On systems where this parameter is tunable, configuring a shorter value can significantly reduce Transfer CFT node failovers.
 
-> **Note**  
+> **Note**
+>
 > You should configure the lease time  together with the UCONF copilot.node\_manager.watchperiod parameter, noting the restriction that NFS lease time &gt; 2 \* copilot.node\_manager.watchperiod.
 
 ### Perform a NAS failover
@@ -234,5 +237,6 @@ It is recommended that you use SMB version 2 or higher with Transfer CFT.
 
 CIFS, Common Internet File System, is an out-dated SMB protocol variant.
 
-> **Note**  
+> **Note**
+>
 > Samba suite usage is not recommended with Transfer CFT.

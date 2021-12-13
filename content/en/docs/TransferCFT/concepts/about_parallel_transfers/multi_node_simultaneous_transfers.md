@@ -1,10 +1,11 @@
 {
     "title": "Configure multi-node simultaneous transfers",
-    "linkTitle": "Configure multi-node simultaneous transfers",
+    "linkTitle": "Configure multi&#45;node simultaneous transfers",
     "weight": "270"
 }The Transfer CFT session management in a multi-node architecture differs from a standalone  implementation. This section describes parameters you can use to customize a multi-node environment, and offers some recommendations.
 
-> **Note**  
+> **Note**
+>
 > The diag 916 and 418 errors relate to these settings.  See DIAGI - Diagnostic
 > codes.
 
@@ -28,7 +29,8 @@ In the following example, the formulas  calculate optimal values to help you avo
 
 You can reverse the formula for the remote Transfer CFT.
 
-> **Note**  
+> **Note**
+>
 > This calculation takes into consideration that a single node may have to handle all of the incoming connections from the partner.
 
 Related topics

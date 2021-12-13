@@ -6,7 +6,8 @@
 
 The following outlines tasks for defining a flow. Optional steps, such as defining source and target properties, have default values in the user interface and are not described in this introductory section.
 
-> **Note**  
+> **Note**
+>
 > You cannot modify the Protocol until you have defined both the Source and Target.
 
 In the **Flow List** page click **Add flow** and perform the following steps:
@@ -19,7 +20,8 @@ In the **Flow List** page click **Add flow** and perform the following steps:
 4.  Optionally, select Protocol and define.
 5.  Save the flow, or save and deploy the flow.
 
-> **Note**  
+> **Note**
+>
 > Tip  
 > You can refer to the Transfer CFT to Central Governance parameter mapping Flow definition: Target and Flow definition: Source to further customize your flow.
 

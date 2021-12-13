@@ -1,14 +1,14 @@
 {
     "title": "Password management (SPASSWD)",
     "linkTitle": "Password management",
-    "weight": "240"
+    "weight": "250"
 }This section describes how to implement three different types of password management. For each of these methods, an example is provided that shows the server side configuration and an example user command from the client side. These management types are:
 
 -   [Static passwords](#Static)
 -   [External flat files](#External)
 -   [System level authentication](#System)
 
-<span id="kanchor29"></span><span id="kanchor30"></span>
+<span id="kanchor27"></span><span id="kanchor28"></span>
 
 ## About RPASSWD and SPASSWD
 
@@ -152,10 +152,12 @@ The supported authentication methods are:
 
 <img src="/Images/TransferCFT/authentication_copilot_server.png" class="maxWidth" />
 
-> **Note**  
+> **Note**
+>
 > 1\. If copilot.restapi.authentication\_method = system, then your access management type must be set to either am.type= none, or both am.type=internal and am.internal.group\_database = system.
 
-> **Note**  
+> **Note**
+>
 > 2.  If copilot.restapi.authentication\_method = xbfadm, then your access management type must be set to either am.type= none, or both am.type=internal and am.internal.group\_database = xbfadm.
 
 ### Sending a file  to the server

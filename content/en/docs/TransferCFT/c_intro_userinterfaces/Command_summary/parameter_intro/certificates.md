@@ -1,7 +1,7 @@
 {
     "title": "certificates",
     "linkTitle": "certificates",
-    "weight": "370"
+    "weight": "380"
 }### certificates
 
 #### PKIENTITY

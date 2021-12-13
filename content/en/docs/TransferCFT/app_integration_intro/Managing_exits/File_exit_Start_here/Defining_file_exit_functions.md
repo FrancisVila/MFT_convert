@@ -1,7 +1,7 @@
 {
     "title": "Define  functions",
     "linkTitle": "Defining functions",
-    "weight": "330"
+    "weight": "340"
 }This topic describes the functions in an exit task and the parameters
 involved. It is comprised of the following sections:
 

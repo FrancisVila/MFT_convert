@@ -1,7 +1,7 @@
 {
     "title": "Using beginning-of-transfer exits",
-    "linkTitle": "Beginning-of-transfer exit",
-    "weight": "310"
+    "linkTitle": "Beginning&#45;of&#45;transfer exit",
+    "weight": "320"
 }This page describes how to configure the environment for a beginning-of-transfer
 type exit, EXITBOT. This  EXIT task lets you set the IDF to use, and is executed only in SERVER mode for CFTRECV (if not the requester), for CFTSEND (HOLD state), or for an implicit SEND.
 

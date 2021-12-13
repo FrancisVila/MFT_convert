@@ -1,6 +1,6 @@
 {
     "title": "Scheduling script execution - CFTCRON",
-    "linkTitle": "Cron jobs - CFTCRON",
+    "linkTitle": "Cron jobs &#45; CFTCRON",
     "weight": "260"
 }The <a href="" class="MCTextPopup popup popupHead">CRONJOB</a> feature enables Transfer CFT to execute scripts at predetermined
 dates and times. An example script, `cron-wlog.cmd`, is delivered in the installed product

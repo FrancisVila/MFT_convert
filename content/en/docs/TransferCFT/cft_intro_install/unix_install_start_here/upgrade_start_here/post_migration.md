@@ -1,12 +1,13 @@
 {
     "title": "Post-migration procedure",
-    "linkTitle": "Post-migration procedure",
+    "linkTitle": "Post&#45;migration procedure",
     "weight": "220"
 }## Post manual migration or auto import
 
 If you performed an install and auto import or a manual migration, you must manually import compiled objects and exec scripts from the old configuration. There are no {{< TransferCFT/componentshortname  >}} commands to import these compiled objects and exec scripts, and they are not included in the auto import process.
 
-> **Note**  
+> **Note**
+>
 > After completing an upgrade or a migration procedure, you must update to the most recent SP.
 
 ### Compiled objects: APIs and Exits

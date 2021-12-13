@@ -1,7 +1,7 @@
 {
     "title": "Apply a license key ",
     "linkTitle": "Apply a license key ",
-    "weight": "190"
+    "weight": "200"
 }## Check your authorization
 
 Verify that you can access Sphere by going to [support.axway.com](https://support.axway.com/) and logging in. If you do not have an account, follow the instructions in your welcome letter.
@@ -25,7 +25,8 @@ You need to apply a valid license key to Transfer CFT in the following situatio
 -   To ramp up a Transfer CFT Disaster Recovery instance (for example, on a DR LPAR for z/OS systems).
 -   If you are migrating from a version 2.x {{< TransferCFT/componentshortname >}} to a version 3.x.
 
-> **Note**  
+> **Note**
+>
 > You require  as many keys as instances of Transfer CFT running at same time, including when running in multi-node. For example, two Transfer CFT instances cannot run at the same time, on the same server, using the same license key.
 
 ## Obtain  a license key
@@ -73,5 +74,6 @@ Access the &lt;TARGET>.INSTALL library, and run the JCL called **CFTABOUT**. Nea
 
 In this example, you would provide the CPU ID **000000000ABC1234**.
 
-> **Note**  
+> **Note**
+>
 > Your cpuid will differ from those shown in the examples.

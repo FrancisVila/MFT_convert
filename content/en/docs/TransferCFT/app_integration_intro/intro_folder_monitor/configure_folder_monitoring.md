@@ -4,7 +4,8 @@
     "weight": "190"
 }This section provides a description of how to use Transfer CFT objects to manage folder monitoring.
 
-> **Note**  
+> **Note**
+>
 > There are two ways to implement Transfer CFT folder monitoring, either using UCONF or Transfer CFT objects. We recommend the CFTFOLDER method of configuring folder monitoring. Users that presently are using UCONF to manage folder monitoring can migrate to a CFTFOLDER configuration as described in Migrate to CFTFOLDER folder monitoring.
 
 ## Folder monitoring set up
@@ -81,7 +82,8 @@ Parameter descriptions
 | <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/userid">USERID</a>  | String  |   |  *Available on UNIX and* ** Identifier for a user who can scan a folder. See the section, <a href="#Folder2">Folder monitoring using USERCTRL</a>.  |
 
 
-> **Note**  
+> **Note**
+>
 > \*You cannot use the following characters in the SCANDIR or WORKDIR definition. Additionally you cannot use a comma (,) in the CFTFOLDER SCANDIR or WORKDIR definition.
 
 -   /
@@ -185,14 +187,16 @@ INACT TYPE=FOLDER, ID=<myfolder>
 CFTFOLDER ID=<myfolder>, MODE=DELETE
 ```
 
-> **Note**  
+> **Note**
+>
 > If you delete an active folder object  while Transfer CFT is running without first deactivating the folder (INACT), you must execute a RECONFIG TYPE=FOLDER. If you do not, the folder remains active.
 
 ## Directory configuration examples
 
 This section presents an example that consists of configuring 3 directories for monitoring, each having a different set of configuration parameter values. In this example, the three different directories are called A, B, and C.
 
-> **Note**  
+> **Note**
+>
 > All of the examples in this section were written for a UNIX platform. Modify to suit your environment accordingly.
 
 ### Directory A requirements
@@ -315,7 +319,8 @@ Archiving is a way to store files after they have been moved from the scanned fo
 
 The following example describes how to scan a folder, send any new file, and then store a backup of the file. Additionally, the scenario provides instructions on how to  then rename the transferred file as it is stored in the backup folder.
 
-> **Note**  
+> **Note**
+>
 > If you create a new transfer with the same name as a previous file, it overwrites the existing file in the archive folder.
 
 ### Prerequisites
@@ -384,9 +389,10 @@ In the **Steps** below, we use the absolute paths, that is, the folders are loca
 
 ### Folder monitoring using USERCTRL
 
-The following example demonstrates how to use the [USERCTRL](../../../c_intro_userinterfaces/command_summary/parameter_intro/userctrl) parameter to define access control for another user. See the sections on user rights in <a href="" class="MCXref xref">Using system users - UNIX</a> or <a href="" class="MCXref xref">How to enable system users - Windows</a> for details.
+The following example demonstrates how to use the [USERCTRL](../../../c_intro_userinterfaces/command_summary/parameter_intro/userctrl) parameter to define access control for another user. See the sections on user rights in <a href="" class="MCXref xref">Using system users - UNIX</a> or <a href="../../../cft_intro_install/windows_install_start_here/windows_install_start_here/running_cft_for_the_first_time_windows/add_system_user_windows" class="MCXref xref">How to enable system users - Windows</a> for details.
 
-> **Note**  
+> **Note**
+>
 > USEFSEVENTS=YES is not supported on UNIX systems in this use case.
 
 1.  Enable USERCTRL in the CFTPARM command:  

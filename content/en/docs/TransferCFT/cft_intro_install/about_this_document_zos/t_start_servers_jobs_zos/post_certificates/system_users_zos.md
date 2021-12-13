@@ -6,7 +6,8 @@
 
 To enable user control for file actions, you require an APF.
 
-> **Note**  
+> **Note**
+>
 > An APF allows an installation to identify system or user programs that can use sensitive system functions.
 
  

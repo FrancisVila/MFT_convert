@@ -1,7 +1,7 @@
 {
     "title": "Use an internal trace (CFTUTIL command)",
-    "linkTitle": "Use an internal trace (CFTUTIL command)",
-    "weight": "310"
+    "linkTitle": "Use an internal trace &#40;CFTUTIL command&#41;",
+    "weight": "320"
 }Depending on how the trace is started, the file defined is available:
 
 -   When Transfer CFT

@@ -1,7 +1,7 @@
 {
     "title": "General  parameters definition",
-    "linkTitle": "CFTPARM - General parameters definition ",
-    "weight": "270"
+    "linkTitle": "CFTPARM &#45; General parameters definition ",
+    "weight": "280"
 }This topic describes how to define the general  {{< TransferCFT/componentshortname  >}} parameter, which corresponds to the CFTPARM object
 in the command line operations.
 

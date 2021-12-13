@@ -22,7 +22,8 @@ This section describes the general steps that occurs during the registration pro
 
 Starting  Copilot after installation begins the connection and registration process with   or {{< TransferCFT/flowmanager  >}}.
 
-> **Note**  
+> **Note**
+>
 > Transfer CFT requires the Central Governance  or Flow Manager shared secret to register. See the Central Governance  or Flow Manager documentation for details.
 
 1\. Copilot connects to Central Governance  or {{< TransferCFT/flowmanager  >}} and submits its registration.

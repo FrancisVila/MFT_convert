@@ -1,7 +1,7 @@
 {
     "title": "Transfer CFT messages:  CFTI",
     "linkTitle": "CFTI messages",
-    "weight": "320"
+    "weight": "330"
 }This topic lists the CFTIxx  (CFT xnnx) messages and provides the type,  a description, consequence, and corrective actions when applicable.
 
 **Message format**

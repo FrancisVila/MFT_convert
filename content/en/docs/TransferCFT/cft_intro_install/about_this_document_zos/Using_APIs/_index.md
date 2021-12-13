@@ -1,7 +1,7 @@
 {
     "title": "About APIs ",
     "linkTitle": "Appendix A: Delivered samples ",
-    "weight": "200"
+    "weight": "210"
 }Application Programming Interfaces, or APIs, are a set of functions
 that use a service. The service is followed by an application program.
 
@@ -9,9 +9,9 @@ Each of these services is described in one of the following sections, which prov
 of the service. Applications can address requests to  {{< TransferCFT/componentshortname  >}} via
 service call functions:
 
--   [REST API]()
--   [Web services]()
--   [Using JPI]()
+-   [REST API](../../../app_integration_intro/using_apis/api_intro)
+-   [Web services](../../about_this_document_ibmi/using_apis/about_web_services)
+-   [Using JPI](../../about_this_document_ibmi/using_apis/java_api)
 -   Transfer
     services
 -   Synchronous

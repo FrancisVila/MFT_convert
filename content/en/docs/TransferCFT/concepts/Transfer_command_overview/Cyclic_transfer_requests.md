@@ -22,7 +22,8 @@ and CYCDATE/CYCTIME parameters,  where:
     a transfer in a cycle, where the value is recalculated for each new cycle.
 -   CYCTIME: End time for activating a transfer in a cycle, where the value is recalculated for each new cycle.
 
-> **Note**  
+> **Note**
+>
 > The CYCDATE/CYCTIME is equivalent to the MAXDATE/MAXTIME for a request. If the request is not executed before the date/time, then the request is not executed (times out).
 
 The start  time/date and cycle duration

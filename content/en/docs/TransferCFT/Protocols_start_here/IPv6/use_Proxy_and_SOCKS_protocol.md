@@ -1,6 +1,6 @@
 {
     "title": "Use  a proxy with SOCKS protocol",
-    "linkTitle": "Proxy and SOCKS (CFTNET)",
+    "linkTitle": "Proxy and SOCKS &#40;CFTNET&#41;",
     "weight": "170"
 }A proxy is a program
 that acts as an intermediary between a client and server. It is often
@@ -73,7 +73,8 @@ Additionally, at least one file transfer protocol (CFTPROT command) must be decl
 for the CFTNET command (describing an access via a proxy for a
 protocol).
 
-> **Note**  
+> **Note**
+>
 > Transfer CFT only accepts outgoing calls.
 
 The protocols (CFTPROT) and the networks (CFTNET)

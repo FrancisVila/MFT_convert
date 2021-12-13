@@ -1,7 +1,7 @@
 {
     "title": "duplicat",
     "linkTitle": "duplicat",
-    "weight": "770"
+    "weight": "780"
 }### duplicat
 
 CFTSEND, CFTRECV

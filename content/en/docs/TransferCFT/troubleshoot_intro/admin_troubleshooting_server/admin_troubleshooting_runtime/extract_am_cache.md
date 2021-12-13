@@ -1,7 +1,7 @@
 {
     "title": "Extract the Access Management Cache",
     "linkTitle": "Extract the Access Management Cache",
-    "weight": "300"
+    "weight": "360"
 }If you need to check the {{< TransferCFT/componentlongname  >}} rights for a specific user, you can use the `EXTAMCACHE `command to obtain this information.
 
 Command syntax: EXTAMCACHE

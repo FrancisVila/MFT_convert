@@ -1,7 +1,7 @@
 {
     "title": "bufsize",
     "linkTitle": "bufsize",
-    "weight": "330"
+    "weight": "340"
 }<span id="bufsize"></span>
 
 ### bufsize

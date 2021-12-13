@@ -1,7 +1,7 @@
 {
     "title": "ntype",
     "linkTitle": "ntype",
-    "weight": "2350"
+    "weight": "2360"
 }<span id="ntype"></span>
 
 ### ntype

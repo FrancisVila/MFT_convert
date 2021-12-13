@@ -6,7 +6,7 @@
 
 Password authentication lets you control remote users that perform CFTUTIL commands via a synchronous communication media.
 
-<span id="kanchor25"></span>
+<span id="kanchor23"></span>
 
 ## Enabling password authentication on a Transfer CFT server
 

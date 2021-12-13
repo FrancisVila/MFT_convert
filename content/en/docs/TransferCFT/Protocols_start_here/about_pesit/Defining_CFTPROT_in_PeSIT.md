@@ -365,7 +365,8 @@ As this mode does not comply with the PeSIT external to SIT standard,
 it is recommended that you leave the default LOGON value when the partners
 concerned do not all use Transfer CFT.
 
-> **Note**  
+> **Note**
+>
 >  
 
 -   When Transfer CFT

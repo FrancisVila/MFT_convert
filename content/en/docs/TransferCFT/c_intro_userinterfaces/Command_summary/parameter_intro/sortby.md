@@ -1,7 +1,7 @@
 {
     "title": "sortby",
     "linkTitle": "sortby",
-    "weight": "3210"
+    "weight": "3220"
 }### sortby
 
 If you do not define this parameter, the order is the actual catalog record order.

@@ -39,7 +39,8 @@ If Copilot starts, but the Transfer CFT either does not display in the **Produc
 -   In check **Administration > Services** to ensure that Central Governance is correctly started.
 -   Verify the shared secret for Central Governance  used in the Transfer CFT configuration.
 
-> **Note**  
+> **Note**
+>
 > See the Central Governance documentation for additional information and details.
 
 ### Cannot register {{< TransferCFT/transfercftname  >}} with {{< TransferCFT/centralgovernancename  >}} (error: (1103))

@@ -1,10 +1,11 @@
 {
     "title": "Sentinel to Transfer CFT to InterPEL mapping",
     "linkTitle": "Sentinel to Transfer CFT to InterPEL mapping",
-    "weight": "260"
+    "weight": "270"
 }The following tables list parameter correspondence between Transfer CFT, Sentinel, and InterPEL. You find this mapping using in migrating from InterPEL to Transfer CFT.
 
-> **Note**  
+> **Note**
+>
 > The fields prefixed with "MLH" are fields that are specific to the PeSIT Hors SIT protocol, which are contained in the recording transfer from the Mailbox and are accessible by the Assembly Exits.
 
 ## XFBTransfer tracked object

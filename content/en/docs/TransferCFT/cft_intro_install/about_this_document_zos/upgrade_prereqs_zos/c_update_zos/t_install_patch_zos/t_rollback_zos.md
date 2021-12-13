@@ -1,6 +1,6 @@
 {
     "title": "Roll back a service pack or patch",
-    "linkTitle": "Rollback a service pack or patch (non-SMP/E)",
+    "linkTitle": "Rollback a service pack or patch &#40;non&#45;SMP/E&#41;",
     "weight": "260"
 }The following procedure enables you to rollback after applying a SP or patch to its previous state. This is useful in the case of an incident during the application of a PTF, or when testing the patch validation.
 
@@ -30,5 +30,6 @@ Before submitting the JOB configure the following JCL in automatic mode:
 -   Set the parameter 'ID' with the last six characters of the patch id. For example,  0E0500 for the patch id CF0E0500.
 -   Submit the JCL.
 
-> **Note**  
+> **Note**
+>
 > This operation is displayed in the distlib.LOG file.

@@ -32,7 +32,8 @@ Use the following command to install Transfer CFT in silent mode.
 `./Transfer_CFT_3.7_<Install>_<OS>_<BN>.run --mode unattended --conf-file initialize.properties`
 ```
 
-> **Note**  
+> **Note**
+>
 > You cannot install Transfer CFT if you have a profile already loaded.
 
 <table>

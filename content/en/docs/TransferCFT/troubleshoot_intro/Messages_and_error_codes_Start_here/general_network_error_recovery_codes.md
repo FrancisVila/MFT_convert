@@ -1,7 +1,7 @@
 {
     "title": "RECOV: General  network error recovery codes",
     "linkTitle": "General network error recovery codes",
-    "weight": "440"
+    "weight": "450"
 }<span id="RECOV___General_Network_Error_Recovery_Codes"></span>RECOV corresponds to the code common to all network access methods,
 providing a general indication about the cause of the error.
 

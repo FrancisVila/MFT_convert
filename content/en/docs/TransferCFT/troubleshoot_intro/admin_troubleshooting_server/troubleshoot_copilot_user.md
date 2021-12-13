@@ -1,7 +1,7 @@
 {
     "title": "Troubleshoot the Copilot server",
     "linkTitle": "Troubleshoot the Copilot server",
-    "weight": "260"
+    "weight": "270"
 }## Failed cftsu
 
 ### {{< TransferCFT/unix  >}}

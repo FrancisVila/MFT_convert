@@ -85,7 +85,8 @@ transfer data again is granted at the next application connection request
 the local CREDIT value to the CREDIT value negotiated during the connection
 phase.
 
-> **Note**  
+> **Note**
+>
 > In accordance with the operation
 > of the Transfer CFT transfer monitor, a transfer in process is acknowledged
 > by determining synchronization points. These points acknowledge the data

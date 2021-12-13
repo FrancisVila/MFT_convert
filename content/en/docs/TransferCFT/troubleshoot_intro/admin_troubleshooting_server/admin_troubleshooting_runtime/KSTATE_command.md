@@ -1,7 +1,7 @@
 {
     "title": "KSTATE - Suspend a transfer when offline",
     "linkTitle": "Suspend a transfer when offline",
-    "weight": "320"
+    "weight": "390"
 }The KSTATE
 command is used to suspend a transfer in the catalog when the Transfer CFT is offline. {{< TransferCFT/componentlongname  >}} must
 be shut down before the command is run and then restarted. The transfer

@@ -37,7 +37,7 @@ Describes how to display a full listing of Catalog information.
 Describes how to list the communication media records in
 non-ciphered text, even if these records are ciphered.
 [SWAITCAT
-- Wait before processing]()
+- Wait before processing](../managing_transfer_states/swaitcat_concepts)
 The SWAITCAT command enables a client (CFTUTIL/CAPI/...)
 to wait until a given transfer reaches a particular predefined state before
 acting.

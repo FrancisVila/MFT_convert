@@ -1,7 +1,7 @@
 {
     "title": "Functions",
     "linkTitle": "Functions",
-    "weight": "210"
+    "weight": "220"
 }The function expression syntax is modeled on the following, while still respecting basic command rules:
 
 -   A unique keyword that identifies the function (id\_func). This keyword is always preceded by the character \_ (underscore).

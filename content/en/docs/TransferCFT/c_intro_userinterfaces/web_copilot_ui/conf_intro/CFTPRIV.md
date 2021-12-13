@@ -1,6 +1,6 @@
 {
     "title": "CFTPRIV",
-    "linkTitle": "Privileges - CFTPRIV",
+    "linkTitle": "Privileges &#45; CFTPRIV",
     "weight": "260"
 }Use this procedure to view a list of  privileges and descriptions and perform related tasks in the user interface.  See also <a href="../../../../internal_a_m_start_here/fm_access_management" class="MCXref xref">Access Management using Flow Manager</a>
 

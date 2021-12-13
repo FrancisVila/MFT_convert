@@ -1,7 +1,7 @@
 {
     "title": "About Directory  exits ",
     "linkTitle": "Directory exit",
-    "weight": "300"
+    "weight": "310"
 }## What is a directory exit?
 
 You can use the directory exit

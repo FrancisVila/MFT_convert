@@ -9,6 +9,6 @@
 -   Purging residual Transfer CFT objects
 -   [Programming interface applications](../../post_install_intro_ibmi/api_and_exits_intro_ibmi/apis_intro_ibmi)
 -   [Using CFTUTIL  specific commands](using_cftutil)
--   [Using the support tool](../../os400_support_tool)
+-   Using the support tool
 
 In this document, the terms Transfer CFT OS/400 and Transfer CFT IBM i  may be used interchangeably.

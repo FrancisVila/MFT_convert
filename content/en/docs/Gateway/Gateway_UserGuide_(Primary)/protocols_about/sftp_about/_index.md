@@ -11,8 +11,8 @@
 <span id="sftp_intro"></span>
 
 ## SFTP Introduction
-
-The SSH File Transfer Protocol (SFTP) is an application-level protocol used as a generic protocol for communication between users, proxies, or gateways and other Internet systems.
+<span>CCC</span>
+The SSH File Transfer Protocol (SFTP) is an application-level protocol used as a generic protocol for communication between users, proxies, or gateways and other Internet systems. <a href="#" onclick="alert('HHHHH')">DDDDD</a>
 
 Gateway supports SFTP versions 0, 1, 2, 3 and 6 in client and server modes. SFTP is defined as standard file transfer with SSH (Secure SHell) providing secure login over an insecure network. SFTP has no inherent identification mechanism and therefore relies on the SSH (version 2) protocol for user authentication and a secure connection.
 

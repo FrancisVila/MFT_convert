@@ -1,7 +1,7 @@
 {
     "title": "UCONF: Configuration scheduling",
     "linkTitle": "Configuration scheduling",
-    "weight": "330"
+    "weight": "340"
 }In  {{< TransferCFT/componentshortname  >}} you can define daily periods where dynamic configuration variables can be changed. For example, you might want to schedule that the  value for cft.purge.sx can be modified during the period between 15:30 and 19:30.
 
 Steps overview
@@ -63,7 +63,8 @@ This example defines a schedule where the value of cft.purge.sx  can be changed 
     CFTUTIL reconfig type=UCONF
     ```
 
-> **Note**  
+> **Note**
+>
 >  
 
 -   The same configuration value can be scheduled several times in a day.

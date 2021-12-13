@@ -1,6 +1,6 @@
 {
     "title": "Transfer CFT maintenance (SMP/E)",
-    "linkTitle": "Transfer CFT maintenance (SMP/E)",
+    "linkTitle": "Transfer CFT maintenance &#40;SMP/E&#41;",
     "weight": "230"
 }## Receive the SMP/E PTFs
 

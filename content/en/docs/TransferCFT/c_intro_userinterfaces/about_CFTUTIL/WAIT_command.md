@@ -1,6 +1,6 @@
 {
     "title": " Suspend or quit CFTUTIL",
-    "linkTitle": "WAIT - Suspend CFTUTIL",
+    "linkTitle": "WAIT &#45; Suspend CFTUTIL",
     "weight": "220"
 }## WAIT
 

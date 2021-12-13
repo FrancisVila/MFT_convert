@@ -1,7 +1,7 @@
 {
     "title": "DIAGI - Diagnostic  codes",
-    "linkTitle": "DIAGI - Diagnostic codes",
-    "weight": "420"
+    "linkTitle": "DIAGI &#45; Diagnostic codes",
+    "weight": "430"
 }<span id="Internal_diagnostic_codes"></span>
 
 ## {{< TransferCFT/componentshortname  >}} internal diagnostic codes
@@ -95,7 +95,8 @@ the transaction:
     path to reach the partner: another IP address, another protocol or a
     backup partner.
 
-> **Note**  
+> **Note**
+>
 > Protocol switching also means
 > communication system (network) switching. The switching mechanism does
 > not provide for use of other network resources (CFTNET commands associated
@@ -327,14 +328,14 @@ access the file</p>
 <p>2. FILE - The file cannot be deleted before the receive
 file has been created (FDISP = DELETE case)Protected file</p>         </td>
          <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE in requester mode</p>
-<p>Please see the <a href="../../../internal_a_m_start_here" class="MCXref xref">Access management</a> sections for more information.</p>         </td>
+<p>Please see the Access management sections for more information.</p>         </td>
       </tr>
       <tr>
          <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>3. FILE - The sent file cannot be deleted following
 a deletion request</p>
 <p>(FACTION = DELETE case) Protected file</p>         </td>
          <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>Please see the <a href="../../../internal_a_m_start_here" class="MCXref xref">Access management</a> sections for more information.</p>         </td>
+<p>Please see the Access management sections for more information.</p>         </td>
       </tr>
       <tr>
          <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>120</p>         </td>

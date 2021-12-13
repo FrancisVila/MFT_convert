@@ -37,7 +37,8 @@ You can import the following formats in the PKI database:
 -   SSH2 format, beginning with “BEGIN SSH2 PUBLIC KEY”
 -   ssh-rsa format, beginning with “ssh-rsa”
 
-> **Note**  
+> **Note**
+>
 > When using the ssh-keygen tool, keys are usually generated in encrypted PEM format, which you can import using the PKIKEY command.
 
 Restrictions
@@ -93,7 +94,8 @@ DEK-Info: AES-128-CBC,9E18D04529594FB617BC471F9958C8A7
 
 -----END RSA PRIVATE KEY---------
 
-> **Note**  
+> **Note**
+>
 > If a PEM encrypted key is generated using OpenSSL with FIPS, for example with "ssh-keygen", you cannot import it into Transfer CFT. To use this key,  convert it to PKCS#8 using the command: openssl pkcs8 -topk8 -v2 aes128 -in &lt;key> -out &lt;key.pk8>
 
 Import with private.rsa format

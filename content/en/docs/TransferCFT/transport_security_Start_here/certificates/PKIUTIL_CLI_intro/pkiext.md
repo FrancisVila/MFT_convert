@@ -125,5 +125,6 @@ Due to native OS encoding (for example, ASCII on Linux and EBCDIC on z/OS), when
 
 Use the correct encoding and put the PKIPASSW  in a file, for example, the ASCII string "`password`" on an EBCDIC system. Then point the CFTPARM PKIPASSW  to this file, for example` PKIPASSW=#|@/path/to/pkipass_file`. The PKIPASSW is consequently read with the correct encoding, and the file is correctly deciphered.
 
-> **Note**  
+> **Note**
+>
 > In earlier versions of Transfer CFT, the PKIPASSW parameter was used for encryption in multiple PKI commands. This functionality is now replaced by the UCONF crypto.key\_fname parameter.

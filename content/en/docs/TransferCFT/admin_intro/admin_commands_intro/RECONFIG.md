@@ -1,7 +1,7 @@
 {
     "title": "Manage configuration updates - RECONFIG",
-    "linkTitle": "RECONFIG - Modify the configuration",
-    "weight": "310"
+    "linkTitle": "RECONFIG &#45; Modify the configuration",
+    "weight": "320"
 }Use this command to manage configuration updates for the types listed below.
 
 Syntax

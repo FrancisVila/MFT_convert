@@ -18,7 +18,8 @@ From {{< TransferCFT/centralgovernancename  >}} you can modify Transfer CFT con
 
 Certificate and key renewal can refer to business and/or governance certificates. The request is initiated by the  Copilot.
 
-> **Note**  
+> **Note**
+>
 > The Transfer CFT must be registered.
 
 ### Automatic certificate renewal
@@ -33,7 +34,8 @@ If uconf `cg.renewal_period `is set to 60 days, the renewal procedure executes 6
 
 To force a certificate renewal, execute the following commands. To force an immediate renewal, use a date that occurred in the past.
 
-> **Note**  
+> **Note**
+>
 > The datetime used for the renewal is in UTC and not local time.
 
 #### Set the following parameter to renew the governance certificate
@@ -56,7 +58,8 @@ Where YYYYMMDDHHMMSS is the date and time of the renewal. For example, August 7 
 
 You can configure the key length for either a governance or business certificate from the default value of 2048 to 4096 either when you install {{< TransferCFT/transfercftname  >}}, or post-installation if you have a {{< TransferCFT/transfercftname  >}} that is already registered with {{< TransferCFT/centralgovernancename  >}} or {{< TransferCFT/flowmanager  >}}.
 
-> **Note**  
+> **Note**
+>
 > Caution  
 > If you modify the key length  of the governance certificate and you use access tokens,  please refer to the Access Token and Bearer authentication sections for details before proceeding.
 
@@ -77,5 +80,6 @@ You can configure the key length for either a governance or business certificate
 
 Central Governance can apply updates, including service packs, patches, and version upgrades, remotely to registered Transfer CFTs. Download the update package  from the [Axway support website](https://support.axway.com/), and upload it to Central Governance. Please refer to [Manage product updates](https://docs.axway.com/bundle/CentralGovernance_113_UsersGuide_allOS_en_HTML5/page/Content/updates/t_update_crud.htm) for details.
 
-> **Note**  
+> **Note**
+>
 > Available on Unix and Windows, though this service is not available for multi-node.

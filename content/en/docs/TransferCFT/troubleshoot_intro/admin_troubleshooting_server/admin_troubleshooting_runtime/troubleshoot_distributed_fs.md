@@ -1,7 +1,7 @@
 {
     "title": "Troubleshoot distributed file systems",
     "linkTitle": "Troubleshoot distributed file systems",
-    "weight": "350"
+    "weight": "430"
 }## NFS lock daemon issue with no error message
 
 When transferring files that are located in a **N**etwork **F**ile **S**ystem, an NFS locking issue (lockd) may occur if the correct port is not open on the firewall.

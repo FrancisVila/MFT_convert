@@ -75,7 +75,8 @@ A CFTPART object represents an application, with one SFTP user per application 
 -   NRPART: Corresponds to the client login. You cannot have 2 partners with the same NRPART value.
 -   PROT: Refers to the SFTP protocol
 
-> **Note**  
+> **Note**
+>
 > The following sections detail authentication for the partner in flows.
 
 ## Set the type of authentication
@@ -95,7 +96,8 @@ There are two ways for you to configure how the server will check the client pas
 
 -   Uconf definition: When NRPASSW=\_AUTH\_, authentication is  specified in `uconf:cft.server.authentication_method `is used.
 
-> **Note**  
+> **Note**
+>
 > If you do not define NRPASSW, there is no password authentication.
 
 ```
@@ -159,7 +161,8 @@ CFTSSH id         = SSH_USER2,
 
 ```
 
-> **Note**  
+> **Note**
+>
 > Do not forget that you must import the client's public key in the server's database as shown below:
 
 ```
@@ -247,10 +250,12 @@ See the examples in [SFTP use case examples](../cftssh_example#top).
 
 If the provided IDF does not belong to either the SAUTH or RAUTH list, on the server side, the connection is rejected and the {{< TransferCFT/transfercftname  >}} client returns a DIAGI 413.
 
-> **Note**  
+> **Note**
+>
 > For a put command on the client side, the IDF must be defined in the RAUTH on the server side. For a get command, the IDF must be defined in the SAUTH on the server side.
 
-> **Note**  
+> **Note**
+>
 > If you are using both the SAUTH and RAUTH parameters, then you must use the same value for the SAUTH (sending files) and RAUTH (receiving files) for a given CFTPART definition. This means that the client will see only the directories that are authorized by these parameters.
 
 Server mode password authentication using restricted flow models

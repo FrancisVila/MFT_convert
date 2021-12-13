@@ -8,7 +8,8 @@ In this chapter, event-message tokens and their values are represented in DDL. F
 
 For general information on how an application obtains event messages from a subsystem, refer to the EMS Manual.
 
-> **Note**  
+> **Note**
+>
 > For any HP documentation referenced in this guide, you should check for the most recent version on the HP Support Center.
 
 ## Event messages format
@@ -55,7 +56,8 @@ You can use the NOTIFY parameter of the CFTLOG object to combine the two destina
     -   This number is the sum of the values that correspond to the types of messages you want to filter
     -   For example, Operating error messages=16, System error messages=32, Operating fatal error messages=64, System fatal error messages=128 giving a total of 240
 
-> **Note**  
+> **Note**
+>
 > Refer to the Transfer CFT 3.9 Users Guide, available on the documentation portal, for a description of the CFTLOG object parameters.
 
 **Example**

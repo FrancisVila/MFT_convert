@@ -1,7 +1,7 @@
 {
     "title": "After a transfer interruption",
     "linkTitle": "Stage After a transfer interruption",
-    "weight": "370"
+    "weight": "380"
 }This event occurs if there is a:
 
 -   Mains supply cut

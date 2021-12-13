@@ -1,7 +1,7 @@
 {
     "title": "After a synchronization point",
     "linkTitle": "Stage After a synchronization point",
-    "weight": "420"
+    "weight": "430"
 }The value of the synchronization point designates:
 
 -   For the sender, the position of

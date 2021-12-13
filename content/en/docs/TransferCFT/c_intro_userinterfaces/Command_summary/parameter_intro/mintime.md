@@ -1,7 +1,7 @@
 {
     "title": "mintime",
     "linkTitle": "mintime",
-    "weight": "1990"
+    "weight": "2000"
 }<span id="mintime"></span>
 
 #### mintime

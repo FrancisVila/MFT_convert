@@ -41,7 +41,8 @@ These scenarios are based on a single {{< TransferCFT/hflongproductname  >}},  *
 
 Remember that these are examples and your system users, assigned roles, and file rights will vary.
 
-> **Note**  
+> **Note**
+>
 > When referring to user's working directories, in these use cases the working directories are located outside of the runtime directory.
 
 <span id="Security"></span>
@@ -50,7 +51,8 @@ Remember that these are examples and your system users, assigned roles, and file
 
 In this security scenario, the central governance roles are the exclusive defining security system (i.e. the parameters USERCTRL and copilot.misc are set to NO, the default settings).
 
-> **Note**  
+> **Note**
+>
 > Tip  
 > The transfer owner in this scenario is the user that started Transfer CFT. All actions are done by the user that started the Copilot server,  pending rights given by the Central Governance roles. This applies to all of the registered Central Governance users. The superuser however  can perform actions only by using CFTUTIL, but not via the Transfer CFT UI.
 
@@ -104,7 +106,8 @@ Using CFTUTIL this user can perform configuration actions and transfers, but can
 
 The following scenario consists of a single {{< TransferCFT/hflongproductname  >}} with the USERCTRL parameter set to **yes**.
 
-> **Note**  
+> **Note**
+>
 > Reminder, when copilot.misc.createprocessasuser=no, the user may be known by Central Governance, though not necessarily known by Machine1. All actions in  Transfer CFT client are done as if the user was the user who started   server.
 
 USERCTRL is set to YES and file rights are assigned to each specific type of user. Rights depend on user/role type (limitation).
@@ -153,7 +156,8 @@ Using CFTUTIL this user can perform configuration actions and transfers, but can
 -   Modify configuration: YES
 -   Start/stop Transfer CFT: YES, but only via CFTUTIL
 
-> **Note**  
+> **Note**
+>
 > When copilot.misc.createprocessasuser=no, the user may be known on Central Governance, but not necessarily known on Machine1. All actions in  Transfer CFT client are done as if the user was the user who started   server.
 
 <span id="Security3"></span>

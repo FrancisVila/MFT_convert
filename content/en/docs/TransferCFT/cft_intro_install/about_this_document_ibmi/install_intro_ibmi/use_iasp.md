@@ -1,6 +1,6 @@
 {
     "title": "Use an independent ASP (optionally)",
-    "linkTitle": "Use an IASP (optionally)",
+    "linkTitle": "Use an IASP &#40;optionally&#41;",
     "weight": "210"
 }## About independent ASPs (IASP)
 

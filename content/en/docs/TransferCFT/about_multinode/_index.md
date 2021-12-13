@@ -1,6 +1,6 @@
 {
     "title": "Multi-node architecture",
-    "linkTitle": "Multi-node architecture",
+    "linkTitle": "Multi&#45;node architecture",
     "weight": "170"
 }This topic describes the  {{< TransferCFT/componentshortname  >}} multi-node feature, which provides you with horizontal scalability and high availability for failovers. Following a brief review of terms, this topic describes:
 
@@ -56,7 +56,8 @@ The active/passive architecture requires a shared file system.
 
 The Transfer CFT multi-node architecture is based on hosts, nodes, a shared file system and a load balancer. Regardless of the number of servers hosting the nodes from outside the cluster, all of the nodes are viewed as a single Transfer CFT instance.
 
-> **Note**  
+> **Note**
+>
 > This section, and the multi-node sections that follow, are based on an active/active installation.
 
 The multi-node setup comprises:
@@ -95,11 +96,10 @@ The following internal datafiles are node specific, and the filename is flagged 
 -   Output file (cft00.out, cft01.out,...) located in &lt;cft\_runtime\_dir>/run
 -   Account file (cftaccnt00, cftaccnt01,...) located in &lt;cft\_runtime\_dir>/accnt
 
-> **Note**  
+> **Note**
+>
 > Caution  
 > Transfer CFT is sensitive to the shared file system's performance, as transfer requests perform concurrent access to the database (COM, catalog, parameters). We recommend a high-performance shared file system, a solid-state drive (SSD), a dedicated network link between the clients and the file system server, and low latency &lt; 2ms.
-
-
 
 ## Failover recovery
 
@@ -158,7 +158,8 @@ There are two types of requests, which may be handled differently depending on t
 
 All remote requests are going through a load balancer, server transfers, SOAP web-service requests, REST API requests, UI requests (Copilot applet application).
 
-> **Note**  
+> **Note**
+>
 > For z/OS platforms, refer to VIPA load balancing in the Transfer CFT z/OS Installation and Operation Guide.
 
 #### Server transfer dispatching

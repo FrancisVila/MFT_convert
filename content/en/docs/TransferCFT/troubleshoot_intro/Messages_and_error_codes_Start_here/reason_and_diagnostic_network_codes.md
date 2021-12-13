@@ -1,7 +1,7 @@
 {
     "title": "Reason  and diagnostic network codes",
     "linkTitle": "Reason and diagnostic network codes",
-    "weight": "500"
+    "weight": "510"
 }<span id="Reason_codes"></span>Reason codes: REASON codes provide a general explanation of the error detected, or
 the refusal.
 

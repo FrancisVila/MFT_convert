@@ -91,7 +91,8 @@ WFNAME=‘AN.MVS.DSNAME,keword1=value1,keyword2=value2’
 
 FNAME=‘AN.MVS.DSNAME,keword1=value1,keyword2=value2’
 
-> **Note**  
+> **Note**
+>
 > Keywords are separated with comma, and must be enclosed in quotes.
 
 Supported keywords and values include:
@@ -104,7 +105,8 @@ Supported keywords and values include:
 -   RETPD=nnnn
 -   EXPDT=yyyyddd *or* yyddd
 
-> **Note**  
+> **Note**
+>
 > Concerning expiration dates:
 
 > -   Expiration dates of 1999365 and 1999366 are considered “never-scratch”.  
@@ -125,7 +127,8 @@ To force the creation of the received file in the EAV section of a volume:
 
 CFTRECV FNAME=A.GDG(+1),ATTSUSER=’DSNTYPE=EXTREQ,EATTR=OPT’, WFNAME=’WORK.&PART.&IDTU’
 
-> **Note**  
+> **Note**
+>
 > The ATTSUSER field is presently not managed by Central Governance.
 
 Example 2

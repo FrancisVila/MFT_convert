@@ -83,7 +83,8 @@ Etc.
 
 In this case cftu, cfti, and cftc are defined as pointer functions (see OCFTAPD2).
 
-> **Note**  
+> **Note**
+>
 > If the pointers are not initialized by OAPIFC an abend 0C1 occurs.
 
 -   Delivered samples:  

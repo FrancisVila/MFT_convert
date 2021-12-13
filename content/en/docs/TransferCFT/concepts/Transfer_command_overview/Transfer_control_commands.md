@@ -27,17 +27,17 @@ Action
 
 [DELETE](../../../admin_intro/admin_commands_intro/delete_command)
 Deletes a catalog entry 
-[HALT]()
+[HALT](../../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/halt_command)
 Stops a transfer and sets it to the HOLD state 
-[KEEP]()
+[KEEP](../../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/keep_command)
 Stops a transfer and sets it to the KEEP state 
-[START]()
+[START](../../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/start_command)
 Reactivates a transfer 
-[SUBMIT]()
+[SUBMIT](../../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/submit_command)
 Runs a preprocessing, a post-processing or an acknowledgment processing procedure according to the current phase of the transfer request.
-[END]()
+[END](../../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/end_command)
 Declares the processing subsequent to the transfer terminated 
-[RESUME]()
+[RESUME](../../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/resume_command)
 Retrieves, in the server mode, a blocked send request having
 the hold status
 ```

@@ -18,7 +18,8 @@ Before performing a migration or upgrade procedure, you must:
 -   Set the Transfer CFT profile.
 -   Stop the existing version of Transfer CFT and the UI server.
 
-> **Note**  
+> **Note**
+>
 > You can uninstall an upgrade if needed. However, doing so rolls back to the previous version before the upgrade, so all transfers and configuration modifications that were performed since the upgrade are lost.
 
 <span id="Migrate"></span>
@@ -33,7 +34,8 @@ This section describes how to migrate the following elements:
 
 Before performing a migration be certain to review the section [Important information](#Importan).
 
-> **Note**  
+> **Note**
+>
 > You cannot migrate the Transfer CFT Guardian 2.3.2 catalog and communication files to Transfer CFT HP NonStop 3.9.
 
 ### Partner and parameter files

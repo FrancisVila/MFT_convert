@@ -1,7 +1,7 @@
 {
     "title": "Use  the CFTTRACE utility for traces",
-    "linkTitle": "Use an external trace (CFTTRC utility)",
-    "weight": "300"
+    "linkTitle": "Use an external trace &#40;CFTTRC utility&#41;",
+    "weight": "310"
 }<span id="Using_the_start_trace_command"></span>The CFTTRACE utility parameter setting commands, grouped by function, are presented in the
 following table.
 

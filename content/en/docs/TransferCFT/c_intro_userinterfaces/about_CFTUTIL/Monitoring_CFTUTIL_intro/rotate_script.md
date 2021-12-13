@@ -1,7 +1,7 @@
 {
     "title": "Log management using the rotate script",
     "linkTitle": "Using the rotate script",
-    "weight": "350"
+    "weight": "360"
 }The command CFTLOG manages the Transfer CFT log files and switch process for your multi node configuration. The switch procedure is performed using a script, rotate.cmd/bat by default, and creates log files in the following format:
 
 -   For node 00: cftlog00.1, cftlog00.2, cftlog00.3...

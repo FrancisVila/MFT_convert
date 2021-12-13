@@ -1,7 +1,7 @@
 {
     "title": "XFBLog Tracked Object",
     "linkTitle": "XFBLog Tracked Object",
-    "weight": "220"
+    "weight": "230"
 }When you configure Sentinel to monitor Transfer CFT, you can import
 the XFBLog Tracked Object. The XFBLog is a Tracked Object that describes
 the contents of an Transfer CFT log file. This log stores traces of the

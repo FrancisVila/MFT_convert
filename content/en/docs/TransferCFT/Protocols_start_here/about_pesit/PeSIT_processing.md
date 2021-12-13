@@ -29,7 +29,8 @@ a response and a confirmation to be complete.
 The following table illustrates the communication flows
 between Initiator and Responder during file transmission.
 
-> **Note**  
+> **Note**
+>
 > A file exchange involves more than just sending a file's data. Control information also has to be conveyed before, during and after the data transfer. This extra information is contained in protocol messages called FPDU (File Protocol Data Unit).
 
 <table>

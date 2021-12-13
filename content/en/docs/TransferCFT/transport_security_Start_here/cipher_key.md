@@ -16,7 +16,8 @@
 
 All passwords stored in the UCONF dictionary, or in the {{< TransferCFT/componentlongname  >}} databases (for example, CFTPART, CFTPARM) are cyphered using the key generated at installation. If you are performing an upgrade, all passwords are cyphered using a hard-coded key. We recommend that you generate an encryption key as described in [Generate an encryption](#Generate).
 
-> **Note**  
+> **Note**
+>
 > The encryption key is mandatory to use the embedded SecureRelay.
 
 ## cftcrypt command
@@ -47,7 +48,8 @@ Renewkey options:
 -   oldpass: Old password.
 -   tmpfname: Temporary file where the Transfer CFT configuration is stored.
 
-> **Note**  
+> **Note**
+>
 > Passwords  must contain at least 8 characters, lower case, upper case, numeric and special characters(\*#$!?+-@).
 
 Use the following command to generate an encryption key using the provided password. This creates the  `--keyfname` and `--saltfname` files, and references them in UCONF.
@@ -114,5 +116,6 @@ It is highly recommended that you generate an encryption key when you upgrade a 
     CFTUTIL config type=input,fname=cft332.cfg
     ```
 
-> **Note**  
+> **Note**
+>
 > On z/OS platforms, use the JCL CFTGNKEY to generate the key.

@@ -1,7 +1,7 @@
 {
     "title": "Transfer CFT batch commands",
     "linkTitle": "Transfer CFT batch commands",
-    "weight": "260"
+    "weight": "280"
 }This section describes the following Transfer CFT commands:
 
 -   QUERY

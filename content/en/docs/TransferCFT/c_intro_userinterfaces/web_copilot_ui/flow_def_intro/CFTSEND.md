@@ -1,6 +1,6 @@
 {
     "title": "CFTSEND - Send template",
-    "linkTitle": "Send templates - CFTSEND ",
+    "linkTitle": "Send templates &#45; CFTSEND ",
     "weight": "210"
 }This topic describes how to define the CFTSEND
 template. Use this command to SEND a file or files to a partner.

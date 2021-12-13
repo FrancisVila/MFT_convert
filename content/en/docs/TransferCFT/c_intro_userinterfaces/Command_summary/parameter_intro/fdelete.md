@@ -1,7 +1,7 @@
 {
     "title": "fdelete",
     "linkTitle": "fdelete",
-    "weight": "1120"
+    "weight": "1130"
 }### fdelete
 
 #### CFTSEND/CFTRECV

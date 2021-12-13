@@ -1,7 +1,7 @@
 {
     "title": "Communication structure - directory type",
     "linkTitle": "Communication structure",
-    "weight": "330"
+    "weight": "340"
 }This topic describes the structure for the communication area in a directory
 exit for C language as well as COBOL.
 

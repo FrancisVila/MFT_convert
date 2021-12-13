@@ -28,7 +28,8 @@ to a remote file transfer controller.
 
 When you define a partner you require two sets of information to create a minimal configuration, the partner and the network definitions - the CFTPART and CFTxxx objects - respectively.
 
-> **Note**  
+> **Note**
+>
 > For the Transfer CFT network definition, the typical usage is CFTTCP.
 
 #### Partner definition
@@ -57,7 +58,8 @@ You can use the CFTPART command to create, modify, or delete a partner. Within t
 -   NSPART: The local partner - your local name, which must match the remote partner's NRPART
 -   You also need to refer to a protocol definition, the CFTPROT object in your local environment, which you and the partner have agreed upon
 
-> **Note**  
+> **Note**
+>
 > Tip  
 > Think of the NSPART partner as having an "S" for self, and NRPART having an "R" for the remote partner.
 
@@ -117,7 +119,8 @@ information if necessary.
 
 From there you can use SEND and RECV commands to perform file and message transfers, using default settings or new object definitions.
 
-> **Note**  
+> **Note**
+>
 > Tip  
 > Transfer CFT delivers configuration samples with each installation that allow you to begin performing transfers with a minimum of information. Refer to the dedicated sections in this User's Guide for information on the more complex parameter settings for your flows.
 

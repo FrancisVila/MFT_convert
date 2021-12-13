@@ -104,7 +104,8 @@ The Internet Assigned Numbers Authority (IANA) reserves the  TCP ports 1761-1768
 |  {{< TransferCFT/securerelayname  >}} RA<br/> • ra.comm_port<br/> • ra.admin_port</li>  |  <br/> • 6811<br/> • 6810</li>  |
 
 
-> **Note**  
+> **Note**
+>
 > In this document,  the terms Transfer CFT OS/400 and Transfer CFT IBM i may be used interchangeably.
 
 ## Third party licenses

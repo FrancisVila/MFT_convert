@@ -6,7 +6,8 @@
 
 Customize  the `initialize.properties ` file. Use the table below to help you with parameter settings; note that the `CryptoKey_Password` is mandatory. Be sure that if you want to use special characters in a configuration file field, you protect the value by enclosing it in double quotation marks ("").
 
-> **Note**  
+> **Note**
+>
 > If you are installing Transfer CFT but have  another Transfer CFT profile loaded, you cannot have environment variables in the initialize.properties file for the new installation.
 
 Example
@@ -17,10 +18,12 @@ CryptoKey\_Password = "Aedft#439"
 
 If you do not enclose this value in "", the string is interpreted as: `CryptoKey_Password = Aedft`
 
-> **Note**  
+> **Note**
+>
 > Some parameters can be calculated during the installation (flagged by @automatic); you can leave these fields blank.
 
-> **Note**  
+> **Note**
+>
 > Parameters that have default values are flagged by @default.
 
 <table>
@@ -380,7 +383,8 @@ Authorized characters are only I, W, E, F</p>
    </tbody>
 </table>
 
-> **Note**  
+> **Note**
+>
 > \*This host address defines:
 
 -       The unconf `sentinel.trkproductipaddr `parameter, which is the host address that identifies    this host

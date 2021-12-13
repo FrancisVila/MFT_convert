@@ -46,7 +46,7 @@ This section describes the UCONF parameter settings required for SAML implement
 
 ## Set up SAML 
 
-1.  Configure the {{< TransferCFT/componentlongname >}} REST API server, as Transfer CFT UI relies on the REST API. See [Configure the REST API server]().
+1.  Configure the {{< TransferCFT/componentlongname >}} REST API server, as Transfer CFT UI relies on the REST API. See [Configure the REST API server](../../../app_integration_intro/using_apis/api_intro/api_configure).
 2.  Insert the IdP certificate, used to sign SAML messages, in the PKI database:  
     PKIUTIL PKICER id=idp, iname=&lt;path to the idp certificate>
 3.  Set the following UCONF parameters.

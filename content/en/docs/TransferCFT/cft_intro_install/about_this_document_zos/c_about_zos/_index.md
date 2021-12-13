@@ -36,7 +36,7 @@ Again, there are 2 product packaging formats in the **`Components\Transfer_CFT_V
 -   \\adrdssu 
 -   \\xmit
 
-**<span id="kanchor14"></span>Installation directory contents**
+**<span id="kanchor12"></span>Installation directory contents**
 
 
 | File  | Description  |
@@ -46,7 +46,7 @@ Again, there are 2 product packaging formats in the **`Components\Transfer_CFT_V
 |  Transfer_CFT_&lt;version&gt;_mvs_&lt;format&gt;_J2IICFT.txt  |  JCL that creates the  instance environment  |
 
 
-<span id="kanchor15"></span>
+<span id="kanchor13"></span>
 
 ## Transfer CFT z/OS components
 

@@ -1,6 +1,6 @@
 {
     "title": "Transfer log file",
-    "linkTitle": "Log file - CFTLOG",
+    "linkTitle": "Log file &#45; CFTLOG",
     "weight": "200"
 }Use this command to defines the log file declarations. Transfer CFT
 records any significant events that occur during a transfer.

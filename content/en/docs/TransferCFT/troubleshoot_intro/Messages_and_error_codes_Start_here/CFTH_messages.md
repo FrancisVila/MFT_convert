@@ -1,7 +1,7 @@
 {
     "title": "Transfer CFT messages: CFTH",
     "linkTitle": "CFTH messages",
-    "weight": "310"
+    "weight": "320"
 }This topic lists the CFTHxx  (CFT xnnx) messages and provides the type,  a description, consequence, and corrective actions when applicable.
 
 **Message format**

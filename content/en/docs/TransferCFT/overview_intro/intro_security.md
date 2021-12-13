@@ -23,7 +23,8 @@ Transfer CFT implements the cryptographic protocol TLS (Transport Layer Security
 
 Transport Security is ensured through a public key infrastructure (PKI), which you can managed either using Transfer CFT, PassPort PS or an external PKI.
 
-> **Note**  
+> **Note**
+>
 > Check the security options
 > included in the license key before attempting to implement in your environment.
 

@@ -12,7 +12,8 @@ You can use Central Governance in your MFT architecture to easily create and de
 
 <img src="/Images/TransferCFT/data_exchange_env.png" class="maxWidth" alt="Multiple Transfer CFTs can send events from the data exchange environment towards Central Governance" />
 
-> **Note**  
+> **Note**
+>
 > Connectivity may include connection to other  or third-party products that are outside of  the MFT reference solution.
 
 ### Additional documentation

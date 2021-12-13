@@ -1,6 +1,6 @@
 {
     "title": "Broadcast lists - CFTDEST ",
-    "linkTitle": "Broadcast lists - CFTDEST",
+    "linkTitle": "Broadcast lists &#45; CFTDEST",
     "weight": "200"
 }This topic describes how to manages the list of partners for distribute/collect
 operations using the CFTDEST object.

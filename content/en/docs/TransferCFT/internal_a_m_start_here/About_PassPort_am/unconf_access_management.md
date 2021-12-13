@@ -6,7 +6,8 @@
 
 When enabled, {{< TransferCFT/componentshortname  >}} retrieves all permissions from the PassPort AM server and stores this information in the cache. This allows {{< TransferCFT/componentshortname  >}} to continue to operate using the stored information if the PassPort AM server is non-operational.
 
-> **Note**  
+> **Note**
+>
 > The user/password login are not stored in the cache. This means that if the PassPort server is down, you cannot connect to Copilot, Transfer CFT REST APIs, or the Transfer CFT UI.
 
 
@@ -32,12 +33,14 @@ When Transfer CFT  or Copilot is configured to use PassPort AM , it periodically
 3.  Check that CFTSXPAM is enabled, `am.passport.persistency.cftsxpam.enable = yes`.
 4.  Execute the command: `CFTSXPAM`
 
-> **Note**  
+> **Note**
+>
 > On z/OS platforms the offline version of the CFTSXPAM process is called CFTUXPAM.
 
 #### Recommendation
 
 When using LDAP in PassPort or for access management, it is highly recommended that you run the CFTSXPAM process offline prior to starting Transfer CFT, or the Transfer CFT Copilot server, if the persistent cache does not exist. Neglecting to do so could result in a significant delay in the first login.
 
-> **Note**  
+> **Note**
+>
 > If you need to troubleshoot the cache, you can see the information in Extract the Access Management Cache.

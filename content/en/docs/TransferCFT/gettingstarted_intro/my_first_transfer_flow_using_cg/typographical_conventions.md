@@ -8,7 +8,8 @@ parameters and their values. These rules apply equally for any additional
 parameter information, or information pertaining to the operating system
 or the transfer protocols.
 
-> **Note**  
+> **Note**
+>
 > Use the Command
 > index to help locate a command, and the Parameter
 > index for parameter details.
@@ -182,7 +183,8 @@ The following conventions apply when using double quotes (hereafter referred to 
 -   Enclosing in quotes " " keeps case sensitivity for applicable parameters as listed in the **Note** below.
 -   Enclosing in a single quote ' ' keeps spaces in the value
 
-> **Note**  
+> **Note**
+>
 > Parameters affected by the quote sensitivity include: FLOWNAME, RAPPL, RUSER, SAPPL, SOURCEAPPL, SUSER, TARGETAPPL, NRPASSW, NSPART, NSPASSW.
 
 Lastly, to use the quote character in a parameter string you have to repeat it, for example:

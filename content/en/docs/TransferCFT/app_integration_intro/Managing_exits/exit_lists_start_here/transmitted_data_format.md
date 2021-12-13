@@ -1,7 +1,7 @@
 {
     "title": "Critera file and data format",
     "linkTitle": "Transmitted data format",
-    "weight": "310"
+    "weight": "320"
 }This section describes  the criteria file format, which corresponds to
 the system version, and the physical characteristics
 of the transmitted data.

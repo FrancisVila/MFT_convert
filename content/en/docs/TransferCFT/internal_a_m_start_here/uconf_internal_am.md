@@ -67,7 +67,8 @@ To use the feature you will need to map the list of groups in the database to th
 
 In addition to the out-of-the box roles, you can create new roles  or modify existing roles using either the {{< TransferCFT/transfercftname  >}} user interface or a {{< TransferCFT/transfercftname  >}} configuration file. You can use new or modified roles on their own or in combination with predefined roles. Please refer to  Internal AM use cases for role-based use case scenarios.
 
-> **Note**  
+> **Note**
+>
 > When Central Governance is managing your Transfer CFTs, you should manage CFTROLE and CFTPRIVILEGE locally for each Transfer CFT.
 
 ### Using the configuration file

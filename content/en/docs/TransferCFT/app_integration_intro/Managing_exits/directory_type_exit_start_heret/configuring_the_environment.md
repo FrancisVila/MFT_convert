@@ -1,7 +1,7 @@
 {
     "title": "Configuring  the environment",
     "linkTitle": "Configuring the environment",
-    "weight": "340"
+    "weight": "350"
 }This topic describes how to configure the environment for a directory
 type exit. Before you submit a directory type EXIT, you must customize
 the following  {{< TransferCFT/componentshortname  >}} objects:

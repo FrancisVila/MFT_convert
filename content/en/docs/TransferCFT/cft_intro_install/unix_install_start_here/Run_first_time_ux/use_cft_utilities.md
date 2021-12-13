@@ -6,7 +6,8 @@
 CFT UNIX utilities located in the `cft/<installdir>/bin/`
 sub-directory after completing installation.
 
-> **Note**  
+> **Note**
+>
 > In this section, the term
 >   Transfer CFT designates the Transfer
 > CFT software package on UNIX platforms.
@@ -61,7 +62,8 @@ the CFTPARM, CFTLOG cards, and so on).
 
 cftinit partners.cft the\_rest.cft
 
-> **Note**  
+> **Note**
+>
 >  
 
 -   If no file name
@@ -80,7 +82,8 @@ The *cftupdate* utility is used to update the configuration.
 
 cftupdate &lt;filename> \[&lt;filename> ...\]
 
-> **Note**  
+> **Note**
+>
 >  
 
 -   You can only update

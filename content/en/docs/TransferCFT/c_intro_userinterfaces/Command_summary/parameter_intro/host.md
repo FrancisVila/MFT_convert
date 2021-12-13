@@ -1,7 +1,7 @@
 {
     "title": "host",
     "linkTitle": "host",
-    "weight": "1460"
+    "weight": "1470"
 }<span id="host"></span>
 
 ### host
@@ -22,7 +22,8 @@ can be either:
 An address may either be expressed as an IP address (*nnn.nnn.nnn.nnn*
 numerical format) or a host name.
 
-> **Note**  
+> **Note**
+>
 > The host field can specify IPv4 or IPv6:
 
 > CFTNET TYPE = TCP

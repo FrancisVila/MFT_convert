@@ -41,7 +41,8 @@ in a list cannot itself be a broadcasting list.
 -   An entry for each
     partner in the list
 
-> **Note**  
+> **Note**
+>
 > The number of entries is not cross-checked against
 > the number of partners in the list.
 

@@ -1,10 +1,11 @@
 {
     "title": "Active/passive installation - Windows",
     "linkTitle": "Active/passive installation",
-    "weight": "180"
+    "weight": "190"
 }This section describes how to install an active/passive architecture, as described in [About Multi-node architecture.](../../../../about_multinode)
 
-> **Note**  
+> **Note**
+>
 > Transfer CFT supports all POSIX file systems. Active/passive shared disks must be POSIX compliant!
 
 A cluster installation of Transfer CFT without multi-node is an active/passive installation as described below:
@@ -20,7 +21,8 @@ A cluster installation of Transfer CFT without multi-node is an active/passive i
     -   Only one host is active
     -   Only one Transfer CFT runtime environment is running on the active host
 
-> **Note**  
+> **Note**
+>
 > After installing applications in active/passive mode, you must implement the cft start, cft stop, and cft status scripts for the cluster.
 
 Shared Directory
@@ -39,7 +41,8 @@ The path and name of the local directory where you want to install the first clu
 
 {{< TransferCFT/componentshortname  >}} in multi-node architecture requires a shared file system for use of a multi-node architecture on several hosts (active/active). Additionally, the system must be configured prior to the multi-node installation and the shared disk ready when starting the Copilot server.
 
-> **Note**  
+> **Note**
+>
 > See Shared file system prerequisites for details.
 
 You can use a single key for  a multi-node installation, as either:

@@ -1,7 +1,7 @@
 {
     "title": "Uninstall ",
     "linkTitle": "Uninstall",
-    "weight": "150"
+    "weight": "160"
 }This page describes how to uninstall Transfer CFT. When you uninstall a Transfer CFT, you lose the complete Transfer CFT
 configuration. To avoid this,  save your environment (samples, exits, etc.) before removing the Transfer CFT.
 

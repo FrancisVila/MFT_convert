@@ -10,7 +10,8 @@ To create new systems users:
     For example, create the system users Flow Manager, Partner Manager, and Monitoring Assistant.
 2.  Define the user rights for actions on files (USERCTRL) for these same new users for the local system where Transfer CFT is installed.
 
-> **Note**  
+> **Note**
+>
 > Superusers have all rights on Transfer CFT (you can check the uconf am.passport.superuser parameter, providing a list of superusers). It is important to remember that in UNIX/Windows, the user that installs Transfer CFT is the superuser. This means that even if you restrict a user's roles in Central Governance, if that user is the superuser it can still perform all actions on files. Additionally, if you define a system user during installation, that user is automatically added to the am.superuser list of users.
 
 For users that have not yet implemented {{< TransferCFT/centralgovernancename  >}}, either create user permissions in Passport, or continue on to Step 2.

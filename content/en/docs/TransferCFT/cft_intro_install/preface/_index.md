@@ -46,7 +46,8 @@ Transfer CFT provides a complete set of documentation, covering all aspects of u
 -   {{< TransferCFT/componentshortname >}}   Release Notes
 -   {{< TransferCFT/platformorsuitelongname >}} Supported Platforms Guide
 
-> **Note**  
+> **Note**
+>
 > This document makes references to HP Nonstop documents, such as the EMS Manuel. For any HP documentation referenced in this guide, you should check for the most recent version on the HP Support Center.
 
 ## Support services

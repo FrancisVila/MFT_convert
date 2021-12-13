@@ -1,7 +1,7 @@
 {
     "title": "Transfer CFT messages: CFTB",
     "linkTitle": "CFTAB messages",
-    "weight": "270"
+    "weight": "280"
 }This topic lists the  CFTBxx  messages and provides a type,  a description, and when applicable a consequence and corrective action.
 
 **Message format**

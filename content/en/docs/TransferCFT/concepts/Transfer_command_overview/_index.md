@@ -53,15 +53,15 @@ Receive files 
 Actions on transfers 
 [DELETE](../../admin_intro/admin_commands_intro/delete_command)
 Delete catalog entries 
-[HALT]()
+[HALT](../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/halt_command)
 Stop transfers 
-[KEEP]()
+[KEEP](../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/keep_command)
 Suspend transfers 
-[START]()
+[START](../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/start_command)
 Restart transfers 
-[SUBMIT]()
+[SUBMIT](../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/submit_command)
 Submit an end-of-transfer procedure
-[END]()
+[END](../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/end_command)
 Declare that flow is finished
 ```
 

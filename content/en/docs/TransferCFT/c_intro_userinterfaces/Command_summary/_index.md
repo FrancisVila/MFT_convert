@@ -2645,10 +2645,10 @@ Syntax
 [USERID](parameter_intro/userid)
 = string
 
-[INDEX](parameter_intro/index2)
+INDEX
 = number
 
-[CLEARCMD details](../../troubleshoot_intro/admin_troubleshooting_server/admin_troubleshooting_runtime/clearcmd_command)
+[CLEARCMD details](../about_cftutil/managing_transfer_states/clearcmd_command)
 
 <span id="CONFIG"></span>
 
@@ -3005,7 +3005,7 @@ Syntax
 
 \[ [STATE](parameter_intro/state)  = string \]
 
-[END details]()
+[END details](../about_cftutil/managing_transfer_states/end_command)
 
 <span id="HALT"></span>
 
@@ -3058,7 +3058,7 @@ Syntax
 
 \[ [SCOPE](parameter_intro/scope) = string \]
 
-[Halting a transfer]()
+[Halting a transfer](../about_cftutil/managing_transfer_states/halt_command)
 
 #### HELP
 
@@ -3142,7 +3142,7 @@ Syntax
 
 \[ [SCOPE](parameter_intro/scope) = string \]
 
-<span style="font-weight: bold;"> </span>[Suspend transfers]()
+<span style="font-weight: bold;"> </span>[Suspend transfers](../about_cftutil/managing_transfer_states/keep_command)
 
 <span id="KSTATE"></span>
 
@@ -3156,7 +3156,7 @@ Syntax
 [PART](parameter_intro/part)
 = partner identifier
 
-[KSTATE details](../../troubleshoot_intro/admin_troubleshooting_server/admin_troubleshooting_runtime/kstate_command)
+[KSTATE details](../about_cftutil/managing_transfer_states/kstate_command)
 
 <span id="LISTCAT"></span>
 
@@ -3654,7 +3654,7 @@ Syntax
 
 \[ [SCOPE](parameter_intro/scope) = string \]
 
-[RESUME details]()
+[RESUME details](../about_cftutil/managing_transfer_states/resume_command)
 
 <span style="font-weight: normal;"> </span>
 
@@ -4225,7 +4225,7 @@ Syntax
 
 \[ [SCOPE](parameter_intro/scope) = string \]
 
-[Restart transfers]()
+[Restart transfers](../about_cftutil/managing_transfer_states/start_command)
 
 <span id="SUBMIT"></span>
 
@@ -4276,7 +4276,7 @@ string \]
 
 \[ PHASESTEP = string \]
 
-[SUBMIT details]()
+[SUBMIT details](../about_cftutil/managing_transfer_states/submit_command)
 
 <span id="SWAITCAT"></span>
 
@@ -4299,9 +4299,9 @@ Syntax
 \[ [TIMEOUT](parameter_intro/timeout)
 = integer \]
 
-[SWAITCAT concepts]() 
+[SWAITCAT concepts](../about_cftutil/managing_transfer_states/swaitcat_concepts) 
 
-[SWAITCAT examples](../../app_integration_intro/synch_comm_tcpip_intro/sync_transfer_request_tasks)
+[SWAITCAT examples](../about_cftutil/managing_transfer_states/sync_transfer_request_tasks)
 
 <span id="SWITCH"></span>
 

@@ -40,7 +40,8 @@ The **phasestep** refers to the details that can occur during any given phase:
 
 ![](/Images/TransferCFT/temp_phase_steps.png)
 
-> **Note**  
+> **Note**
+>
 > The CFTSTATE in the Transfer CFT catalog corresponds to the transfer state in diagrams and tables.
 
 ```
@@ -138,5 +139,6 @@ For continued compatibility and to help in transitioning, clients may still use 
 
 This guide provides the following usage example for implementation: [Adding a zip script.](../about_transfer_processing/preprocess_use_case2)
 
-> **Note**  
+> **Note**
+>
 > See Processing commands: general usage for a description of the processing command parameters and values.

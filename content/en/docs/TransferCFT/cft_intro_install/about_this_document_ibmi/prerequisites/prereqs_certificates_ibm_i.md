@@ -1,12 +1,13 @@
 {
     "title": "Certificates",
     "linkTitle": "Certificates",
-    "weight": "170"
+    "weight": "180"
 }## Delivered certificates
 
 The use of the default certificate supplied with {{< TransferCFT/componentshortname  >}} is strongly discouraged in a production environment. You should use your own certificates to enhance security.
 
-> **Note**  
+> **Note**
+>
 > Caution  
 > You must store certificates  on the native side of the machine. Certificates located on the IFS partition are not supported.
 
@@ -52,7 +53,8 @@ put USER.pem    USERPEM
 put USERK.pem    USERKPEM
 ```
 
-> **Note**  
+> **Note**
+>
 > If you have multiple certificates, repeat the process for each.
 
 ### Using binary certificates and keys

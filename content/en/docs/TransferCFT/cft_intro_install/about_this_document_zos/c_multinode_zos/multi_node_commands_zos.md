@@ -1,6 +1,6 @@
 {
     "title": "Multi-node commands",
-    "linkTitle": "Multi-node commands",
+    "linkTitle": "Multi&#45;node commands",
     "weight": "230"
 }This topic describes how to manage Transfer CFT nodes, and related actions such as restarting a stopped node, or rebalancing after a fail over.
 
@@ -66,7 +66,8 @@ COPSTOP
 
 The `start `command starts one or all nodes. If no node is specified, all nodes are started.
 
-> **Note**  
+> **Note**
+>
 > You must first start the node manager.
 
 **Syntax**
@@ -121,7 +122,8 @@ Stops node 0.
 
 The` restart` command restarts one or all nodes. If no node is specified all nodes are restarted.
 
-> **Note**  
+> **Note**
+>
 > You must first start the node manager.
 
 **Syntax**
@@ -277,7 +279,8 @@ Use the CFTUTIL `listlog `command to display the log content, which can be defi
 
 Use the CFTUTIL `display `or CFTUTIL `listcat `to show catalog transfer records. In multi-node, these commands aggregate all catalog internal datafiles to show catalog transfer records as a unique catalog.
 
-> **Note**  
+> **Note**
+>
 > The first character in the IDTU corresponds to the node number.
 
 ## listnode

@@ -1,7 +1,7 @@
 {
     "title": "About end-of-transfer exits",
-    "linkTitle": "End-of-transfer exit",
-    "weight": "320"
+    "linkTitle": "End&#45;of&#45;transfer exit",
+    "weight": "330"
 }The exit interface provides
 the user program with a structure containing information relating to the
 transfer. This book describes the end-of-transfer exit. It begins with this topic, which explains the

@@ -6,7 +6,8 @@
 
 To notify the end of the processing to Transfer CFT, the acknowledgment processing script must perform a END command with istate=no.
 
-> **Note**  
+> **Note**
+>
 > Caution  
 > The transfer request remains in phase=Z and phasestep=C until Transfer CFT receives the END command related to this transfer request
 
@@ -42,5 +43,6 @@ There are two possibilities for ackstate:
 -   Backward compatible:  
     We launch the ackexec/execsfa/execsma, if applicable, as soon as the Acknowledgement is received regardless of the current Phase. Consequently,this Acknowledgement phase is not seen. After the end of the previous step (post-processing if applicable, or transfer), it moves directly to the next Done phase.
 
-> **Note**  
+> **Note**
+>
 > See Processing commands: general usage for a description of the processing command parameters and values.

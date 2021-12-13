@@ -1,6 +1,6 @@
 {
     "title": "Set the default CFTUTIL file names (CONFIG)",
-    "linkTitle": "CONFIG - Set default file names",
+    "linkTitle": "CONFIG &#45; Set default file names",
     "weight": "210"
 }The <span id="CONFIG_command"></span>CONFIG command redefines the data media
 that the CFTUTIL utility uses. A medium refers to any data medium or local

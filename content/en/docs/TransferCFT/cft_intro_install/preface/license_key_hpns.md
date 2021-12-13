@@ -30,7 +30,8 @@ To apply the license key, enter the Transfer CFT key in the  indirection file, w
 -   The file can contain one or multiple license keys, but it must have one key per line.
 -   On start up the first valid key is used.
 
-> **Note**  
+> **Note**
+>
 > See the  KEY parameter for an example and details.
 
 ## About command

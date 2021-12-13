@@ -1,7 +1,7 @@
 {
     "title": "Control commands",
     "linkTitle": "Control commands",
-    "weight": "250"
+    "weight": "260"
 }This section describes the control commands.
 
 -   IF

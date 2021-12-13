@@ -1,7 +1,7 @@
 {
     "title": "Before repositioning",
     "linkTitle": "Stage Before repositioning",
-    "weight": "400"
+    "weight": "410"
 }At the receiver end (DIRECT = R)
 with file accessing managed by the user, the user function has to reposition
 using the information (rpos, frecs and fcars) the  {{< TransferCFT/componentshortname  >}} provides.

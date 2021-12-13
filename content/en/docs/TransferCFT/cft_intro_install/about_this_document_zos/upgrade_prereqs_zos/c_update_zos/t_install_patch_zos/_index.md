@@ -1,6 +1,6 @@
 {
     "title": "Transfer CFT maintenance (non-SMP/E)",
-    "linkTitle": "Transfer CFT maintenance (non-SMP/E)",
+    "linkTitle": "Transfer CFT maintenance &#40;non&#45;SMP/E&#41;",
     "weight": "240"
 }## Update or apply a service pack (non-SMP/E)
 
@@ -19,7 +19,8 @@ Information includes:
 
 A PTF file results from the fixed formatting (80) of an ADRDSSU-type file containing the update libraries. The PTF format is used by all delivery and distribution modes. The PTF files are available at               [support.axway.com](http://support.axway.com/).
 
-> **Note**  
+> **Note**
+>
 > PTF files are cumulative. A basic Transfer CFT z/OS installation can integrate PTFs. If you use this method, apply the PTFs one at a time.
 
 Libraries taken into account during a DUMP ADRDSSU
@@ -205,7 +206,8 @@ This JOB takes place in several stages:
 4.  Copies (with replace) PTF components in the distribution libraries.
 5.  Deletes the PTF temporary libraries.
 
-> **Note**  
+> **Note**
+>
 > This operation is displayed in the file distlib.LOG.
 
 For more information, you can consult the patch documentation located in the distlib.DOC library and named DCxxxxxx  (xxxxxx are the patch identifiers). These documents describe known incidents, corrections and  PTF specifics (exits, and so on). Additionally the library, PTFINFO member, lists all corrected incidents.
@@ -234,7 +236,8 @@ This JOB runs in several phases:
 
 -   LINK-EDIT
 
-> **Note**  
+> **Note**
+>
 > This operation is displayed in the file distlib.LOG.
 
 ## Deleting a backup file version
@@ -245,14 +248,16 @@ Use this JOB to delete a backup file after you have validated the application of
 
 //DELSAV EXEC PDELSAV,ID=’xxxxxx’
 
-> **Note**  
+> **Note**
+>
 > This operation is displayed in the file distlib.LOG.
 
 ## Updating the Copilot server
 
 When you apply a patch to the Transfer CFT Copilot server, the update is not automatic.
 
-> **Note**  
+> **Note**
+>
 > The user applying the PTFs should have write access rights for the ‘cftroot\\wwwroot’ \* directory. The \* cftroot is a customizable parameter (A03PARM member in the target.INSTALL library).
 
 The following three JCLs mange the PTFs for Copilot:
@@ -261,7 +266,8 @@ The following three JCLs mange the PTFs for Copilot:
 -   A13UCOPD: Deletes the save file that is associated with a PTF application
 -   A13UCOPR: Restores files from the save file
 
-> **Note**  
+> **Note**
+>
 > All of these operations are displayed in the file distlib.LOG.
 
 Before submitting the JCL, modify the value associated with the ID=, where xxxxxx is the identifier of the PTF to apply:

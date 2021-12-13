@@ -4,7 +4,8 @@
     "weight": "350"
 }Click **Flows** on the top toolbar to open the **Flows Monitoring** page.
 
-> **Note**  
+> **Note**
+>
 > You cannot modify the Protocol until you have defined both the Source and Target.
 
 In the **Flow List** page click **Add flow** and perform the following steps:
@@ -16,7 +17,8 @@ In the **Flow List** page click **Add flow** and perform the following steps:
     The source is the owner of the data being transferred. The target is the receiver of the exchange.
 3.  Save the flow, or save and deploy the flow.
 
-> **Note**  
+> **Note**
+>
 > Tip  
 > You can refer to the Transfer CFT to Central Governance parameter mapping Flow definition: Target and Flow definition: Source to further customize your flow.
 

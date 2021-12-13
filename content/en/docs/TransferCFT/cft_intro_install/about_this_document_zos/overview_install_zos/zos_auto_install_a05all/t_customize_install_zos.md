@@ -197,7 +197,7 @@ You can run the JCL  multiple times, once to create the member .. SAMPLE (CFTPAR
 
 <span id="D40INIT"></span>
 
-## Format Transfer CFT work files <span id="kanchor40"></span>D40INIT
+## Format Transfer CFT work files <span id="kanchor38"></span>D40INIT
 
   The JOB D40INIT prepares the Transfer CFT z/OS files. Before submitting this JOB,  adapt the following points to the requirements of the operating service:
 
@@ -242,7 +242,7 @@ The following data is required to use the basic Transfer CFT installation custom
 
 <span id="JOB E50PARM CFTPARM"></span>
 
-## CFTPARM configuration update <span id="kanchor41"></span>E50PARM
+## CFTPARM configuration update <span id="kanchor39"></span>E50PARM
 
 The JCL E50PARM, located in the target.INSTALL library, updates the Transfer CFT configuration PARAM and PART files (PARM step).
 

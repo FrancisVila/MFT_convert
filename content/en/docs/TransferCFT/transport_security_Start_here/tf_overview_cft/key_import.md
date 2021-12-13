@@ -108,7 +108,8 @@ There are several options you can add to the command line:
 |  -masterPassPkcs12  |  (only for ElGamal) Passphrase of the PKCS#12 file used to sign the new generated certificate.  |
 
 
-> **Note**  
+> **Note**
+>
 > The following options are required: -userIdPacket and -passSecRing. By default (without -secRing or -pubRing options), the feature exports Public Keyring and Secret Keyring.If you do not need to export the Secret Keyring, add - secRing no to the command line.If you do not need to export the Public Keyring, add  - pubRing no to the command line.
 
 ### Example commands

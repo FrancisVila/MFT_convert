@@ -6,7 +6,8 @@
 
 Before starting a Transfer CFT session, you must add the value \*none in the initial program call to call a screen menu directly. Otherwise the session cannot start.
 
-> **Note**  
+> **Note**
+>
 > CFTPGM is the standard name for the programs library.
 
 Begin the installation process by uploading the Transfer CFT  installation package, in binary mode, to the IBM i system:

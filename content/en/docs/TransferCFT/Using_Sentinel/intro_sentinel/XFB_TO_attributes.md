@@ -1,7 +1,7 @@
 {
     "title": "XFBTransfer Tracked Object attributes",
     "linkTitle": "XFBTransfer Tracked Object attribute",
-    "weight": "230"
+    "weight": "240"
 }## Roles
 
 

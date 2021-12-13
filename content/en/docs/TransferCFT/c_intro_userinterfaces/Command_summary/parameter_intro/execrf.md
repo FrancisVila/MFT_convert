@@ -1,7 +1,7 @@
 {
     "title": "execrf",
     "linkTitle": "execrf",
-    "weight": "860"
+    "weight": "870"
 }<span id="execrf"></span>
 
 ### execrf
@@ -28,7 +28,8 @@ This name may include the following symbolic variables:
 The character ‘&’ designates the char\_symb character defined in
 the  {{< TransferCFT/componentshortname  >}} *Operations Guide* corresponding to your OS.
 
-> **Note**  
+> **Note**
+>
 > To use direct script execution instead of the template script processing, preface the &lt;EXEC>value with 'cmd:'. For example, &lt;EXEC>='cmd:myscript.sh &PART &IDT &IDTU'. See Directly processing a program or script for details, examples, restrictions, and support.
 
 [Return to Command index](../../)

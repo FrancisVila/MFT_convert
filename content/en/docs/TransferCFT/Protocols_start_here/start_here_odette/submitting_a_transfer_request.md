@@ -84,7 +84,8 @@ Set the RECFM parameter to:
 -   U for a file in
     undefined format
 
-> **Note**  
+> **Note**
+>
 > Do not set the NTYPE parameter.
 
 For fixed and variable formats, set the NLRECL parameter to indicate

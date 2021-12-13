@@ -1,7 +1,7 @@
 {
     "title": "fname",
     "linkTitle": "fname",
-    "weight": "1220"
+    "weight": "1230"
 }<span id="fname"></span>
 
 ### fname
@@ -246,7 +246,8 @@ The relative filename is converted into an absolute filename on completion
 of the transfer. The temporary file is then renamed with the name defined
 by FNAME.
 
-> **Note**  
+> **Note**
+>
 > When
 > a temporary file is used, the WFNAME parameter, there may be restrictions
 > related to the operating system. On IBM systems, for example,
@@ -270,7 +271,8 @@ directory specified by FNAME.
 &lt;file-symb>filename | &lt;file-symb>mask | &lt;file-symb>dirname}\]    {string
 512}
 
-> **Note**  
+> **Note**
+>
 > here  the &lt;file-symb> character is specific to each system (for example # on Windows and @ on UNIX environments).
 
 Name of the local file, directory, indirection file, selection mask

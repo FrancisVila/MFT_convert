@@ -1,6 +1,6 @@
 {
     "title": " Secure Relay with a multi-node architecture",
-    "linkTitle": "Secure Relay with a multi-node architecture",
+    "linkTitle": "Secure Relay with a multi&#45;node architecture",
     "weight": "250"
 }You can install {{< TransferCFT/componentlongname  >}} in an active/active architecture where you add multiple SecureRelay Router Agents behind a load balancer. The architecture could resemble the diagrams in the [Example architectures](#Examples) section of this page.
 

@@ -20,7 +20,8 @@ Result
 
 <img src="/Images/TransferCFT/new_flow_cg_w_store.png" class="maxWidth" />
 
-> **Note**  
+> **Note**
+>
 > Tip  
 > Existing Transfer CFT users may want to refer to the Transfer CFT to Central Governance parameter mapping in the sections see Flow definition: Target and Flow definition: Source.
 

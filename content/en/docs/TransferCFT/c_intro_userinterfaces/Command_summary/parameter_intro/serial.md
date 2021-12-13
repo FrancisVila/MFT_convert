@@ -1,7 +1,7 @@
 {
     "title": "serial",
     "linkTitle": "serial",
-    "weight": "3140"
+    "weight": "3150"
 }### serial
 
 #### SEND/RECV CFTSEND/CFTRECV

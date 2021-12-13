@@ -79,7 +79,8 @@ You can use the following command to repair the runtime if there was an issue du
 
 To install Transfer CFT using symbolic links, you must use the silent mode, `option '--mode unattended'`, and assign all parameters using only the configuration file    (do not use parameters in the command line except the conf-file).
 
-> **Note**  
+> **Note**
+>
 > If  an installation that uses symbolic links fails, once you have corrected the silent files, you must delete the Transfer CFT home installation directory, to which the symbolic link points, prior to retrying the installation.
 
 ### Get help

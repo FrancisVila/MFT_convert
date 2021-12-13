@@ -8,7 +8,8 @@
 
 The following table lists IPC tuning parameters to consider customizing and recommended values.
 
-> **Note**  
+> **Note**
+>
 > To aid in correctly calculating semaphores, remember that each Transfer CFT has two semaphores per instance.
 
 
@@ -27,5 +28,6 @@ The following table lists IPC tuning parameters to consider customizing and reco
 | semmni  | 128  |  Maximum number of  IPC system-wide semaphore sets.<br/>For each Transfer CFT instance you need 2 semaphore sets, so when using multiple instances or multi-node, multiply the number of instances by 2.  |
 
 
-> **Note**  
+> **Note**
+>
 > \*\*This value is based on the number of processes started by the Transfer CFT. This minimum is typically 7, but can be in excess of 40 depending on the values for maxtask, sslmtask, Sentinel if enabled, one task for each exit, etc.

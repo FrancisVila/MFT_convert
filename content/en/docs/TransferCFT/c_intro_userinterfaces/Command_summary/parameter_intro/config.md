@@ -1,7 +1,7 @@
 {
     "title": "config",
     "linkTitle": "config",
-    "weight": "490"
+    "weight": "500"
 }<span id="config"></span>
 
 ### config

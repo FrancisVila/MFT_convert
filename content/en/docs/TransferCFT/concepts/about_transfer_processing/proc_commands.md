@@ -9,7 +9,8 @@
 -   `Ackexec`: for acknowledge processing
 -   `Exece`: for transfer errors
 
-> **Note**  
+> **Note**
+>
 > The exceptions to these rules are described in the following sections.
 
 ## Methods for executing processing scripts
@@ -98,7 +99,8 @@ If a command is incorrect and cannot be executed,  the transfer remains in the p
 -   The system does not support executing this type of file
 -   A loop exists in symbolic links encountered during resolution of the path or file argument
 
-> **Note**  
+> **Note**
+>
 > Tip  
 > Refer to man execve for an exhaustive list, since after a fork in the processes Transfer CFT does not retrieve the EXEC failure.
 
@@ -110,7 +112,8 @@ You can use the Premindate/Premintime, Postmindate/Postmintime, and Ackmindate/A
 
 In some cases you may want to limit the number of scripts launched in parallel by {{< TransferCFT/transfercftname  >}} to reduce processing bottlenecks. To do so, set the UCONF `cft.server.max_processing_scripts` parameter to a positive integer to enable and control the number of executed processes.
 
-> **Note**  
+> **Note**
+>
 > Caution  
 > When using this parameter, every end-of-transfer procedure must notify Transfer CFT once the processing is complete. This can be done either via an END or KEEP command (in the case of an error). Failure to signal that processing is complete means that new procedures cannot start once the cft.server.max\_processing\_scripts value is reached.
 
@@ -118,7 +121,8 @@ In some cases you may want to limit the number of scripts launched in parallel b
 uconfset id=`cft.server.max_processing_scripts`, value=64
 ```
 
-> **Note**  
+> **Note**
+>
 > This parameter does not apply to the execution of transfer error scripts.
 
 ## Commands in scripts

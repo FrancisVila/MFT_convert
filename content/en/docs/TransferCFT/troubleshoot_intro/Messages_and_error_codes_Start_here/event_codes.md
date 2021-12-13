@@ -1,7 +1,7 @@
 {
     "title": "DIAGP: Event  codes",
     "linkTitle": "Event codes",
-    "weight": "430"
+    "weight": "440"
 }This code is common to all protocols. When a value is specific to a
 protocol, the indication appears in brackets.
 

@@ -4,7 +4,8 @@
     "weight": "160"
 }This section describes the steps to perform a Transfer CFT HP NonStop installation, as well as the automatic steps that occur when you run the installation procedure.
 
-> **Note**  
+> **Note**
+>
 > To accommodate changing product versions, the convention &lt;version> may be used in place of the actual product version in examples and lists. You should replace &lt;placeholders>, or example values used for demonstrative purposes, with your actual values and target platform details.
 
 ## Upload the Transfer CFT archive
@@ -36,7 +37,8 @@ inflating: EULA.html
 
 In the example, Transfer CFT package is unzipped in the `Transfer_CFT_OtherUnixes_V3.8` directory.
 
-> **Note**  
+> **Note**
+>
 > Be certain to read the end-user license agreement.
 
 ## Add execution rights

@@ -1,7 +1,7 @@
 {
     "title": "Internal commands",
     "linkTitle": "Internal commands",
-    "weight": "200"
+    "weight": "210"
 }The following sections describe the available internal commands. These internal commands are divided into four categories:
 
 -   Data processing: These commands are used to define and manipulate data (Assignments, Operations).

@@ -1,10 +1,10 @@
 {
     "title": "Common installation steps (A03PARM and A12OPTSP)",
-    "linkTitle": "Common installation steps (A03PARM and A12OPTSP)",
+    "linkTitle": "Common installation steps &#40;A03PARM and A12OPTSP&#41;",
     "weight": "180"
 }This section applies to either an SMP/E or non-SMP/E installation.
 
-<span id="kanchor27"></span>
+<span id="kanchor25"></span>
 
 ## Customize parameters in the JCL
 
@@ -73,7 +73,8 @@ The password is temporarily stored in the '`pswfname`' file, with the syntax   `
 
 {{< TransferCFT/componentlongname  >}} z/OS allows you to concatenate two libraries, a user library and the product library. The user library is not mandatory, but is strongly advised, and should be positioned first.
 
-> **Note**  
+> **Note**
+>
 >  
 
 -   A `..USER.LOAD` load is created during the installation.
@@ -258,7 +259,8 @@ You can customize specific prefixes for the following Transfer CFT files.
 | pfx_uconf  | '*'  | Uconf runtime file  |
 
 
-> **Note**  
+> **Note**
+>
 > \(1\) The UCONF and UCONFRUN files are created at the same time as the instance environment, so you must manually re-create when a specific prefix is used (recfm= VB, lrecl=2048).
 
 <span id="Selectin"></span>
@@ -318,7 +320,8 @@ For continued compatibility, you can generate the Transfer CFT z/OS options tabl
 | [VSAMSUFS = { <u>SHORT</u> | LONG }]  |  <li>SHORT:  VSAM component suffixes are created with .D for KSDS and ESDS, and .I for KSDS.  </li> <li>LONG:  VSAM component suffixes are created with .DATA for KSDS and ESDS, and .INDEX for KSDS.<br/>Alternatively, you can set this parameter using: <code>UCONFSET ID=cft.mvs.sginstal.vsamsufs,value=x</code>  |
 
 
-> **Note**  
+> **Note**
+>
 > \*MCSOPT, SDSFOPT, EMCSOPT: A user id is added only to CFTUTIL commands. The z/OS PAUSE command is interpreted as a CFTUTIL SHUT FAST=YES command. Transfer CFT diagnosis commands are not associated with a used id, for example MODIFY cft or ECHO.
 
 When you start Transfer CFT, all parameters are printed in the transfer CFT LOG, for example:

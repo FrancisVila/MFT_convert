@@ -1,7 +1,7 @@
 {
     "title": "General Transfer CFT protocol diagnostics",
     "linkTitle": "General protocol diagnostics",
-    "weight": "450"
+    "weight": "460"
 }<span id="Diagnostics_format"></span>
 
 ## Diagnostics format

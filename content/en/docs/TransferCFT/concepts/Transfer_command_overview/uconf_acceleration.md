@@ -96,7 +96,8 @@ Refer to the [UCONF parameters](../../../admin_intro/uconf/uconf_directory) tab
 
 Refer to the [UCONF parameters](../../../admin_intro/uconf/uconf_directory) table `acceleration.ptcp.<logicalID>`.
 
-> **Note**  
+> **Note**
+>
 > Transfer CFT versions that use the newer pTCP protocol cannot perform pTCP exchanges with  Transfer CFTs using the earlier pTCP version. See Protocols and networks for more information.
 
 <span id="uconf_ptcp"></span>

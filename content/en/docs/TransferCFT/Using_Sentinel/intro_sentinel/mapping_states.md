@@ -1,7 +1,7 @@
 {
     "title": "Map Transfer CFT and Sentinel states",
     "linkTitle": "Mapping Transfer CFT and Sentinel states",
-    "weight": "250"
+    "weight": "260"
 }You can use the **Mapping states** table to find equivalent states and phases as described below.
 
 -   Phase: The phase indicates where you are in your transfer.

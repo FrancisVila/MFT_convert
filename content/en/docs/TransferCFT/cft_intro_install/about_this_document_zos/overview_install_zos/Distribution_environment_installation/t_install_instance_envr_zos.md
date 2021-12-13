@@ -6,7 +6,8 @@
 
 If during installation you created both the distribution environment and the Transfer CFT instance environment, you may go directly to [](../../t_customize_instance_zos). Otherwise, you must first create your runtime environment.
 
-> **Note**  
+> **Note**
+>
 > You require an installed Distribution environment before you can install the instance environment. See              Distribution environment installation.
 
 Prerequisites
@@ -25,4 +26,4 @@ This procedure:
 
 After creating the target environment, leave the distribution environment in its original state. You should now work exclusively in the target environment.
 
-Next, execute the installation JCLs as described in the table [JCL installation steps](../../manual_installation_steps).
+Next, execute the installation JCLs as described in the table JCL installation steps.

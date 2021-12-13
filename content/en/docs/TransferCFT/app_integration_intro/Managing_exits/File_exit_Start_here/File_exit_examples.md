@@ -1,7 +1,7 @@
 {
     "title": "File  exit examples",
     "linkTitle": "File exit examples",
-    "weight": "340"
+    "weight": "350"
 }This topic provides examples of file exits and the parameter values
 for these exits.
 

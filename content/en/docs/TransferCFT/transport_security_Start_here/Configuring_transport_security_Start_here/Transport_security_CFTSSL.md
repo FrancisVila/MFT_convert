@@ -30,7 +30,8 @@ profile. The DIRECT parameter indicates the mode to which the security
 profile applies: DIRECT=CLIENT for client mode or DIRECT=SERVER for server
 mode.
 
-> **Note**  
+> **Note**
+>
 > The Transfer CFT CFTSSL object in client mode is a dynamic object. However, when set to server mode this object is static (you must restart Transfer CFT for the value to be taken into account).
 
 ### Client mode SSL
@@ -222,9 +223,11 @@ None
 MD5
                         
 
-> **Note**   \* To comply with security standards, as of Transfer CFT version 3.2.0 the use of the cipher suites 59, 60, and 61 is restricted to TLS 1.2 exclusively. This means that you cannot negotiate a session with another partner (monitor) that is using a TLS version lower than 1.2 with these cipher suites.
+> **Note**
+> \* To comply with security standards, as of Transfer CFT version 3.2.0 the use of the cipher suites 59, 60, and 61 is restricted to TLS 1.2 exclusively. This means that you cannot negotiate a session with another partner (monitor) that is using a TLS version lower than 1.2 with these cipher suites.
 
-> **Note**   \*\* These cipher suites are only available for Transfer CFT 3.2.2 and higher and are restricted to use with TLS 1.2.
+> **Note**
+> \*\* These cipher suites are only available for Transfer CFT 3.2.2 and higher and are restricted to use with TLS 1.2.
 
 [DEPTH = {10 | num}]
 Maximum number of intermediate authorities authorized for
@@ -287,7 +290,8 @@ In client mode, this list is used to check the server
 certificate. Only certificates signed by one of the authorities in the
 ROOTCID parameter are accepted.
 
-> **Note**   To use more than 10 identifiers, you can refer to the PKIENTITY information.
+> **Note**
+> To use more than 10 identifiers, you can refer to the PKIENTITY information.
 
 [TRACE = number ]
 SSL trace level.
@@ -452,7 +456,8 @@ This list has two functions:
     client must be authenticated, the list of authority DNs supported by the
     server is supplied
 
-> **Note**   To use more than 10 identifiers,  refer to the PKIENTITY information.
+> **Note**
+> To use more than 10 identifiers,  refer to the PKIENTITY information.
 
 [TRACE = number ]
 SSL trace level.
@@ -464,7 +469,8 @@ If the server
 requires client authentication, it provides the client with the list of
 authority DNs supported during the SSL protocol negotiation phase.
 
-> **Note**   This parameter
+> **Note**
+> This parameter
 > is ignored when the CFTSSL command is used for additional controls in
 > the server mode (CFTSSL command indicated by a CFTPART command).
 
@@ -474,7 +480,8 @@ Sets the authentication mode requirement.
 The VERIFY and USERCID parameters set the security profile
 authentication mode.
 
-> **Note**   With the SSL
+> **Note**
+> With the SSL
 > protocol, the server determines whether the client must be authenticated.
 > If the server wants the client to be authenticated, then the server must
 > first be authenticated by the client. Due to the algorithms supported

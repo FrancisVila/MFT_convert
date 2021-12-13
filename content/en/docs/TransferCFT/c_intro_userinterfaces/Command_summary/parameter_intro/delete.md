@@ -1,7 +1,7 @@
 {
     "title": "delete",
     "linkTitle": "delete",
-    "weight": "660"
+    "weight": "670"
 }<span id="Delete"></span>
 
 #### delete

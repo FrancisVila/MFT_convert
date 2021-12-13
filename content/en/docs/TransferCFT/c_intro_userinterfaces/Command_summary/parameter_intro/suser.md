@@ -1,7 +1,7 @@
 {
     "title": "suser",
     "linkTitle": "suser",
-    "weight": "3410"
+    "weight": "3420"
 }<span id="suser"></span>
 
 ### suser
@@ -27,7 +27,8 @@ partner  sends and controls this parameter, where:
 |  **<br /> **PeSIT E CFT/CFT  |  In PeSIT E between 2  {{< TransferCFT/componentshortname  >}}s,  the SUSER parameter value is  transported in the PI 99 if this value is longer than 8 characters.  |
 
 
-> **Note**  
+> **Note**
+>
 > You can use the RUSER and SUSER  fields when performing a catalog search. Additionally these fields are integrated into the catalog index. See RUSER.
 
 See PeSIT extension PI codes for information on PI codes.

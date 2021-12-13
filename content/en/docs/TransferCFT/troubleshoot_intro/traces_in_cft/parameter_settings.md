@@ -1,7 +1,7 @@
 {
     "title": "Defining the trace in CFTPARM",
-    "linkTitle": "Define the trace in general parameters (CFTPARM)",
-    "weight": "290"
+    "linkTitle": "Define the trace in general parameters &#40;CFTPARM&#41;",
+    "weight": "300"
 }When you define the TRACE parameter, you prompt the loading of the
 trace items defined in the CFTTRACE command when Transfer CFT
 is started. See also [Defining

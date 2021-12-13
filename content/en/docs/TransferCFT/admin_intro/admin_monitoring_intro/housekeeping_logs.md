@@ -40,7 +40,8 @@ You can manage the switch procedure using various methods that include, but not 
 
 -   Archiving: Transfer CFT log files are stored in the runtime directory, log file names are cftlog-&lt;timestamp> where timestamp is the date and time the switch procedure switch.cmd is triggered by {{< TransferCFT/componentshortname >}}.
 
-> **Note**  
+> **Note**
+>
 > At least one of the two files (either the log or alternate log file) must be empty prior to starting Transfer CFT.
 
 #### Use the SWITCH command

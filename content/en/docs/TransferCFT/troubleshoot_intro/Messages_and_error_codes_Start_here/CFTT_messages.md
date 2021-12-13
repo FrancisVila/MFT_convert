@@ -1,7 +1,7 @@
 {
     "title": "Transfer CFT messages: CFTT ",
     "linkTitle": "CFTT messages",
-    "weight": "370"
+    "weight": "380"
 }This topic lists the CFTTxx  (CFT xnnx) messages and provides the type,  a description, consequence, and corrective actions when applicable.
 
 **Message format**

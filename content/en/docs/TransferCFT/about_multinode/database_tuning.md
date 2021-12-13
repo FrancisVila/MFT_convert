@@ -1,7 +1,7 @@
 {
     "title": "Tuning the database cache",
     "linkTitle": "Tuning the database cache",
-    "weight": "210"
+    "weight": "230"
 }This section describes how you can enhance performance using the database cache feature.
 
 ## Overview

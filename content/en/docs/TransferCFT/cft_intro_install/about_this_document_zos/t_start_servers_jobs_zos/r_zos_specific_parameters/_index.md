@@ -40,7 +40,8 @@ File characteristics that are found automatically for sending are listed in the 
 |  Spanned variable format file (z/OS to z/OS)  |  S  |  V  |
 
 
-> **Note**  
+> **Note**
+>
 > Variable SPANNED files can be routed through an intermediary Transfer CFT for the PeSIT protocol only (ANY profile). In this case, the file received on Transfer CFT z/OS is always in the ‘U’ format.
 
 The PDS files copied by IEBCOPY are also received in the ‘U’ format, which is compatible with IEBCOPY.

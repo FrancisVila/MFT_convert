@@ -97,7 +97,8 @@ FILENAME
 /path/file.extension
 ```
 
-> **Note**  
+> **Note**
+>
 > The two % signs are mandatory only if the VOLUME parameter or the UNIT parameter has been specified.
 
 <span id="Filename"></span>
@@ -212,7 +213,8 @@ Transfer CFT z/OS handles PDS files one member at a time. Transfer CFT z/OS proc
 
 -   For the entire PDS, by setting FNAME=#DSNAME or #DSNAME(\*)
 
-> **Note**  
+> **Note**
+>
 > The second syntax is recommended as it is the syntax to use for heterogeneous transfers.
 
 -   For a selected subset of members, using the ’\*’ character to replace a character string or ’?’ to replace one character and by setting FNAME=#DSNAME(ME?BER\*)
@@ -242,7 +244,8 @@ FNAME=NAME1.NAMEX(+n)
             
 ```
 
-> **Note**  
+> **Note**
+>
 > Transfer CFT z/OS does not allow the concatenation of all versions of a GDG file.
 
 Delivered templates:

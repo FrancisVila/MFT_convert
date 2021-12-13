@@ -38,7 +38,7 @@ No equivalent parameter
 Copy an existing transfer request
 Restart
 [Restarting
-transfers]()
+transfers](../../../about_cftutil/managing_transfer_states/start_command)
 Restart transfers in the H or K state in the catalog
 Delete
 [Deleting
@@ -46,36 +46,36 @@ catalog entries](../../../../admin_intro/admin_commands_intro/delete_command)
 Delete one or more catalog entries
  
 [Suspending
-transfers]()
+transfers](../../../about_cftutil/managing_transfer_states/keep_command)
 Suspend one or all of the send and/or receive transfers
 with selected partners
  
 [Submitting
-an end-of-tranfser]()
+an end-of-tranfser](../../../about_cftutil/managing_transfer_states/submit_command)
 Submit an end-of-transfer procedure for each selected
 transfer
 Halt
 [Halting
-a transfer]()
+a transfer](../../../about_cftutil/managing_transfer_states/halt_command)
 Suspend one or all the send and/or receive transfers,
 with the partners selected
 End
 [Declaring
-executed transfers]()
+executed transfers](../../../about_cftutil/managing_transfer_states/end_command)
 Declare that all the operations related to the end-of-transfer,
 send and receive, have been executed correctly
  
 [Retrieving
-a blocked request]()
+a blocked request](../../../about_cftutil/managing_transfer_states/resume_command)
 Retrieves, in server mode, a blocked send request that
 has the *hold* status, if the diagnostic codes are not null
  
 [Suspending
-a catalog request](../../../../troubleshoot_intro/admin_troubleshooting_server/admin_troubleshooting_runtime/kstate_command)
+a catalog request](../../../about_cftutil/managing_transfer_states/kstate_command)
 Suspend a transfer in the catalog
  
 [Deleting
-a transfer request](../../../../troubleshoot_intro/admin_troubleshooting_server/admin_troubleshooting_runtime/clearcmd_command)
+a transfer request](../../../about_cftutil/managing_transfer_states/clearcmd_command)
 Delete a transfer request from the communication file
 Ack
 <a href="../../../../concepts/using_the_send_command/sending_replies" class="MCXref xref">Use the SEND acknowledgement commands  </a>
@@ -112,7 +112,8 @@ Optionally you can select a **Layout** in the drop-down menu to use a customized
 -   Add or remove the filters you want to display in your page layout.
 -   Click **Save as** and name the layout.
 
-> **Note**  
+> **Note**
+>
 > These page customizations are defined in the CFTUIPREF object.  
 
 ## Troubleshooting transfer filters

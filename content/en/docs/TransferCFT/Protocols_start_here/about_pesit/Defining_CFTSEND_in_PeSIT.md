@@ -54,7 +54,8 @@ on hold, SEND TYPE = HOLD, and then by default based on an implicit send,
 CFTSEND IMPL = YES. The request is however ignored if the parameters set
 in the command are different from those sent by the receiver partner.
 
-> **Note**  
+> **Note**
+>
 > If the requester/receiver does
 > not set any parameters, it uses the corresponding value sent by the server/sender.
 

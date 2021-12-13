@@ -1,7 +1,7 @@
 {
     "title": "eerp",
     "linkTitle": "eerp",
-    "weight": "800"
+    "weight": "810"
 }<span id="EERP"></span>
 
 ### EERP
@@ -26,7 +26,8 @@ The second version (1991) specifies that:
 -   the DESTINATOR
     protocol field corresponds to the EERP receiver (i.e. the file sender)
 
-> **Note**  
+> **Note**
+>
 > You must check the consistency of the customized values from one
 > end to another. Indeed, if the sender and receiver have different versions,
 > it is not possible to acknowledge the transfer.

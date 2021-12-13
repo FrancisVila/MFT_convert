@@ -1,7 +1,7 @@
 {
     "title": "CFTPROT  - Transfer protocols",
-    "linkTitle": "CFTPROT - Transfer protocol",
-    "weight": "290"
+    "linkTitle": "CFTPROT &#45; Transfer protocol",
+    "weight": "410"
 }The following table lists the parameters which are common to all protocols.The CFTPROT TYPE = xxx commands are explained in the tables following the general parameters.
 
 For network resources of the  asynchronous type (not SAP), there
@@ -165,7 +165,8 @@ In PeSIT, the user can specify parameters controlling the:
 -   compression algorithms
 -   CRC calculation
 
-> **Note**  
+> **Note**
+>
 > In certain environments,
 > the mechanisms for repositioning in the transferred files are not operational
 > with all the files supported: after a transfer interruption, transfers

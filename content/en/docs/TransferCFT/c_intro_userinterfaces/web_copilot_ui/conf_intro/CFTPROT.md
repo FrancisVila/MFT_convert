@@ -1,6 +1,6 @@
 {
     "title": "CFTPROT  - Transfer protocols",
-    "linkTitle": "Protocol - CFTPROT",
+    "linkTitle": "Protocol &#45; CFTPROT",
     "weight": "220"
 }The CFTPROT command defines a file transfer protocol application. This page describes the parameter setting command, and explains the parameters that are negotiated with the remote partner at the time the protocol connection is established.
 
@@ -186,7 +186,8 @@ In PeSIT, the user can specify parameters controlling the:
 -   compression algorithms
 -   CRC calculation
 
-> **Note**  
+> **Note**
+>
 > In certain environments,
 > the mechanisms for repositioning in the transferred files are not operational
 > with all the files supported: after a transfer interruption, transfers

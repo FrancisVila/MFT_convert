@@ -1,7 +1,7 @@
 {
     "title": "Check the runtime",
     "linkTitle": "Troubleshoot the Transfer CFT runtime",
-    "weight": "270"
+    "weight": "280"
 }Runtime issues can include the following for the server, Copilot, CFTUTIL and other system services:
 
 -   Abend

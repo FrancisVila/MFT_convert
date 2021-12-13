@@ -1,7 +1,7 @@
 {
     "title": "PURGE  - Purging the catalog",
-    "linkTitle": "PURGE - Purge the catalog",
-    "weight": "300"
+    "linkTitle": "PURGE &#45; Purge the catalog",
+    "weight": "310"
 }This topic describes how to delete records which have exceeded the retention
 time in the catalog. Transfer CFT provides the following purge options:
 

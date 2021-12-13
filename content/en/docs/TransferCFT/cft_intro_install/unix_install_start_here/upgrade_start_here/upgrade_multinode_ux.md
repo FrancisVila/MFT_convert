@@ -1,6 +1,6 @@
 {
     "title": "Upgrade a Transfer CFT multi-node installation",
-    "linkTitle": "Upgrade a multi-node installation",
+    "linkTitle": "Upgrade a multi&#45;node installation",
     "weight": "180"
 }This section describes how to upgrade from a Transfer CFT 3.1.3, 3.2.x,  3.3.2, or 3.4 multi-node, multihost installation to Transfer CFT {{< TransferCFT/releasenumber  >}}.
 
@@ -12,7 +12,8 @@ As of {{< TransferCFT/componentlongname  >}} 3.4 there is no separate upgrade pa
 
 Before beginning the upgrade procedure, download the Transfer CFT installation kit  available at [support.axway.com](https://support.axway.com/).
 
-> **Note**  
+> **Note**
+>
 > Remember that Transfer CFT clusters must be fully stopped while performing an upgrade.
 
 ## Limitation

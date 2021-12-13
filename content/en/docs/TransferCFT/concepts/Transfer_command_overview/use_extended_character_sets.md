@@ -1,7 +1,7 @@
 {
     "title": "Use extended character sets",
     "linkTitle": "Using extended character sets ",
-    "weight": "330"
+    "weight": "340"
 }Character transcoding (using extended character sets) defines how data are encoded during the transfer process.  This is important when transferring files that do not have the same coding requirements on the sending and receiving systems.
 
 ## What is extended transcoding?
@@ -26,7 +26,8 @@ The UCONF cft.cft\_charsets parameter defines the Transfer CFT character sets m
 
 For example, if you define an NCHARSET as CFT\_ISO8859-1, the parameter is translated as 'iso88591' for HPUX OSes, as '00819' for IBM i, and as 'ISO8859-1' for all other platforms. We strongly recommend that you use this option.
 
-> **Note**  
+> **Note**
+>
 > On versions of OS/400 prior to Transfer CFT 3.1.3, use the charset number only without the CFT\_ prefix.
 
 ### Using the //IGNORE functionality

@@ -178,7 +178,8 @@ Parameter mapping and descriptions
 | USERID  | N/A  | N/A  | N/A  | N/A  | This feature is not available in UCONF folder monitoring.  |
 
 
-> **Note**  
+> **Note**
+>
 > \*You cannot use the following characters in the SCANDIR or WORKDIR definition. Additionally you cannot use a comma (,) in the CFTFOLDER SCANDIR or WORKDIR definition.
 
 -   /

@@ -1,7 +1,7 @@
 {
     "title": "XFBTransfer predefined requests",
     "linkTitle": "XFBTransfer predefined requests",
-    "weight": "230"
+    "weight": "240"
 }## XFBTransfer requests
 
 When you configure Sentinel, you can import a set of predefined XFBTransfer

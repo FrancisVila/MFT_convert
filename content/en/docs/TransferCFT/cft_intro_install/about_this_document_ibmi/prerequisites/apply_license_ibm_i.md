@@ -1,7 +1,7 @@
 {
     "title": "Apply a license key",
     "linkTitle": "Apply a license key",
-    "weight": "160"
+    "weight": "170"
 }You need to apply a valid license key to Transfer CFT in the following situations:
 
 -   You perform an initial Transfer CFT installation.
@@ -53,5 +53,6 @@ Description . . . . . : System serial number
 
 In this example, you would provide the CPU ID` 06890AP`.
 
-> **Note**  
+> **Note**
+>
 > Your values will differ from those shown in the examples.

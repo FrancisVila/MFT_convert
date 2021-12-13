@@ -9,10 +9,12 @@ In the same way, a file to be sent to clients that are dependent on
 the final receiver may transmit via intermediate systems and be sent on. This transfer is accomplished using the same protocol from one end to
 another.
 
-> **Note**  
+> **Note**
+>
 > This document describes the relay process as it relates to Transfer CFT. You can perform relay transfers using other Axway  products as the intermediary site.
 
-> **Note**  
+> **Note**
+>
 > If you are using access management, you must define the CFTAPPL with the ID=COMMUT.
 
 The following illustration features 3 Transfer CFTs, where the protocol may be the same or different between relay points:
@@ -208,7 +210,8 @@ must be indicated as a partner in the RECV command:
 
 The difference lies in the type of protocols.
 
-> **Note**  
+> **Note**
+>
 > entries and that these entries are linked. In the example above, there would be two entries for the single "report" transfer.
 
 <span id="Store"></span>
@@ -233,7 +236,8 @@ If the transferred data code (NCODE) differs from the store and forward site's d
 
 When all the transfers have been correctly completed, the generic transfer (virtual) associated with the broadcast (entry designated in the catalog by a “DIAGP” code equal to “DIFFUS”) changes to the T state. Transfer CFT then activates any end of transfer procedure  associated with this generic transfer.
 
-> **Note**  
+> **Note**
+>
 > Caution  
 > Unlike a simple transfer in store and forward mode, the file created on the intermediate site is not deleted. This deletion may be handled by the end of transfer procedure, since the &DIAGP variable is used to determine whether the transfer is a broadcast (DIAGP = DIFFUS).
 

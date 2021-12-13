@@ -1,7 +1,7 @@
 {
     "title": "CycleId calculation",
     "linkTitle": "CycleId calculation",
-    "weight": "240"
+    "weight": "250"
 }The internal CycleId is an XFBTransfer Tracked Object attribute. This field has the structure described in the following table.
 
 Internal CycleID structure PeSIT

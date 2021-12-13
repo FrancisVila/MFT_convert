@@ -102,7 +102,7 @@ When using the Transfer CFT UI the first media identifier listed in the server'
 
 ## Using SWAITCAT
 
-For information on the wait period for a catalog value to reach a certain, predefined state (such as T terminated), see [SWAITCAT](define_transfer_wait_period) and the [Request examples](sync_transfer_request_tasks) topics.
+For information on the wait period for a catalog value to reach a certain, predefined state (such as T terminated), see [SWAITCAT](define_transfer_wait_period) and the [Request examples](../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/sync_transfer_request_tasks) topics.
 
 ## Using password management
 

@@ -1,8 +1,8 @@
 {
     "title": "           INACT  - Deactivate an object",
-    "linkTitle": "INACT - Deactivating objects",
+    "linkTitle": "INACT &#45; Deactivating objects",
     "weight": "270"
-}<span id="kanchor63"></span>
+}<span id="kanchor60"></span>
 
 This page describes the INACT command and its parameters. You can use the INACT command to deactivate:
 
@@ -11,7 +11,8 @@ This page describes the INACT command and its parameters. You can use the INACT 
 -   CRON object (CFTCRON)
 -   Folder object (CFTFOLDER)
 
-> **Note**  
+> **Note**
+>
 > This command cannot be applied to partners whose definition was provided
 > or modified by a directory EXIT.
 

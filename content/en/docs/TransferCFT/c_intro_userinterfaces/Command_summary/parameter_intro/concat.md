@@ -1,7 +1,7 @@
 {
     "title": "concat",
     "linkTitle": "concat",
-    "weight": "480"
+    "weight": "490"
 }<span id="concat"></span>
 
 ### concat

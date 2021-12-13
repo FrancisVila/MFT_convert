@@ -1,7 +1,7 @@
 {
     "title": "TRK configuration parameters",
     "linkTitle": "TRK configuration parameters",
-    "weight": "210"
+    "weight": "220"
 }To limit the number of messages related to monitoring the XFB.Transfer class, due to a large number of transfers, you can set the monitoring parameters as described in this section.
 
 Parameters to regulate monitoring can have one of the following values:
@@ -18,7 +18,8 @@ Parameters to regulate level of monitoring messages
 
 The parameter definitions are taken into account in the order listed below. For example, the transfer request definition takes precedence over the partner definition.
 
-> **Note**  
+> **Note**
+>
 > When using Central Governance to manage Transfer CFT, you can only use TRK at the flow level, which corresponds to transfer models, but not for partners and general parameters.
 
 

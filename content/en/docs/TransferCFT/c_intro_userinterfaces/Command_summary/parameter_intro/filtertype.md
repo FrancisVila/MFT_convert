@@ -1,7 +1,7 @@
 {
     "title": "filtertype",
     "linkTitle": "filtertype",
-    "weight": "1160"
+    "weight": "1170"
 }\[ filtertype = { <u>STRJCMP</u> | EREGEX } \]
 
 Defines the type of filter to be applied when sending a generic transfer.

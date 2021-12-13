@@ -1,6 +1,6 @@
 {
     "title": "Post-installation",
-    "linkTitle": "Post-installation",
+    "linkTitle": "Post&#45;installation",
     "weight": "160"
 }## Transfer CFT in production
 
@@ -69,7 +69,8 @@ See the installation  if you encounter problems with starting {{< TransferCFT/co
 
 The act of installing Transfer CFT creates a library that contains product binaries and templates. Do no store any personal files in this library, or modify existing files in this library, as both are erased during updates.
 
-> **Note**  
+> **Note**
+>
 > By default, this  library is called CFTPGM.
 
 ## Register with

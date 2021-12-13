@@ -1,7 +1,7 @@
 {
     "title": "Defining  CFTTCP",
-    "linkTitle": "CFTXXX - Default networks",
-    "weight": "330"
+    "linkTitle": "CFTXXX &#45; Default networks",
+    "weight": "470"
 }This topic describes the CFTTCP command. Use this command to define the network parameters of partners
 for a given type of network.
 

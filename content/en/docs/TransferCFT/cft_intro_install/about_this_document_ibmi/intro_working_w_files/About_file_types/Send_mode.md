@@ -1,12 +1,13 @@
 {
     "title": "Configure send mode (native)",
-    "linkTitle": "Configure send mode (native)",
+    "linkTitle": "Configure send mode &#40;native&#41;",
     "weight": "210"
 }## Native file type definitions
 
 The following table lists the different types of files that can be used according to the type of data to be sent.
 
-> **Note**  
+> **Note**
+>
 > Bold  values indicate a recommended combination. For example, when FTYPE=D and FRECFM=V then RCDLEN-5 is the recommended PF-DTA with variable data.
 
 <table>

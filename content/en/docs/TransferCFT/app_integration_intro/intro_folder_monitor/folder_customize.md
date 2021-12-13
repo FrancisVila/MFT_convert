@@ -64,7 +64,8 @@ In POSIX-Extended regular expressions, all characters match themselves meaning t
 | $  | End of string  | *.*? the end$* matches this is the end  |
 
 
-> **Note**  
+> **Note**
+>
 > EREGEX refers to POSIX Extended Regular Expression. There are multiple tutorials available online to aid in creating search patterns; for additional information on expression syntax please refer to Regular expressions.
 
 ## Use case

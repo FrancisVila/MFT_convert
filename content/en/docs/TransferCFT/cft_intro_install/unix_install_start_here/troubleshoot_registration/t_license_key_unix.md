@@ -1,7 +1,7 @@
 {
     "title": "Apply a license key",
     "linkTitle": "Apply a license key",
-    "weight": "180"
+    "weight": "190"
 }You need to apply a valid license key   to Transfer CFT in the following situations:
 
 -   You perform an initial Transfer CFT installation.

@@ -141,7 +141,8 @@ The second letter refers to the state (CFTSTATE).
 -   \(T\) Ack phase and all phasesteps
 -   \(X\) Done phase and Done phasestep
 
-> **Note**  
+> **Note**
+>
 > Transfers in phase (Y) and phasestep (D) are not purged when purging the catalog. To purge these records, you must execute an END command that modifies the state  to (X).
 
 **Compatibility mode**
@@ -160,7 +161,8 @@ For example, set the following where the sx represents 10 days (where a day equa
 UCONFSET id=cft.purge.sx, value=10D
 ```
 
-> **Note**  
+> **Note**
+>
 > The amount of time is entered in days (x or xD), in hours (xH) or in minutes (xM). If set to -1, the CFTCAT value is used.
 
 To schedule a periodic purge every 30 minutes:
@@ -254,5 +256,6 @@ For example, to remove both the file and the record when sending a file.
 CFTSEND ID=CLEANUP,FNAME=<FILENAME>,DELETE=YES,FDELETE=CDKHTX
 ```
 
-> **Note**  
+> **Note**
+>
 > The DELETE/FDELETE options are also valid for a CFTRECV, but note that setting FDELETE=CDKHTX deletes the file regardless of the state at the end of the transfer.

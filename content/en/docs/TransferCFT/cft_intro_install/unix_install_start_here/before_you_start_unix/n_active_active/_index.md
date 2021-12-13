@@ -8,7 +8,8 @@
 
 {{< TransferCFT/componentshortname  >}} in multi-node architecture requires a shared file system for use of a multi-node architecture on several hosts (active/active). Additionally, the system must be configured prior to the multi-node installation and the shared disk ready when starting the Copilot server.
 
-> **Note**  
+> **Note**
+>
 > See Shared file system prerequisites for details.
 
 You can use a single key for  a multi-node installation, as either:

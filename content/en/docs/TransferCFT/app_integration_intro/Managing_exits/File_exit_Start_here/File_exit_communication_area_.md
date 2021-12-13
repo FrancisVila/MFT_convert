@@ -1,7 +1,7 @@
 {
     "title": "About  the communication area",
     "linkTitle": "About the communication area",
-    "weight": "310"
+    "weight": "320"
 }This section describes the file exit communication area structure and describes the fields of the communication structure.
 
 

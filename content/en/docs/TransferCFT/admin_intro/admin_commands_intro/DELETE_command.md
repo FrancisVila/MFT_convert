@@ -1,7 +1,7 @@
 {
     "title": "DELETE - Delete  catalog entries",
-    "linkTitle": "DELETE - Deleting catalog entries",
-    "weight": "280"
+    "linkTitle": "DELETE &#45; Deleting catalog entries",
+    "weight": "290"
 }The DELETE command is used to <span id="delete_command"></span>delete one
 or more catalog entries. A transfer in process is interrupted and its
 transfer request disappears from the catalog.

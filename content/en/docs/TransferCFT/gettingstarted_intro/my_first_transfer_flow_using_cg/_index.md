@@ -12,7 +12,8 @@
 -   [Create an implicit mode flow](implicit_first_transfer_flow_using_cg)
 -   [Perform broadcast and collect operations](broadcast_first_transfer_flow_using_cg)
 
-> **Note**  
+> **Note**
+>
 > Tip  
 > Existing Transfer CFT users may want to refer to the Transfer CFT to Central Governance parameter mapping.
 

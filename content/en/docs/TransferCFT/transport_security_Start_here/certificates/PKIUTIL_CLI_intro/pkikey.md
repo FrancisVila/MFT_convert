@@ -25,7 +25,8 @@ The PKIKEY command is similar to the PKICER command. Parameters include:
 | <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/mode">MODE</a>:  | The action to perform (CREATE, REPLACE, DELETE) *only in command line*  |
 
 
-> **Note**  
+> **Note**
+>
 > See the PKIKEYGEN command for details on how to generate and use your own keys.
 
 ### Restrictions
@@ -60,7 +61,8 @@ DEK-Info: AES-128-CBC,9E18D04529594FB617BC471F9958C8A7
 
 -----END RSA PRIVATE KEY---------
 
-> **Note**  
+> **Note**
+>
 > If a PEM encrypted key is generated using OpenSSL with FIPS, for example with "ssh-keygen", you cannot import it into Transfer CFT. To use this key,  convert it to PKCS#8 using the command: openssl pkcs8 -topk8 -v2 aes128 -in &lt;key> -out &lt;key.pk8>
 
 Import with private.rsa format

@@ -1,7 +1,7 @@
 {
     "title": "mode",
     "linkTitle": "mode",
-    "weight": "2000"
+    "weight": "2010"
 }<span id="mode"></span>
 
 ### mode
@@ -17,7 +17,8 @@ to all commands that affect  {{< TransferCFT/componentshortname  >}} databases. 
 -   CREATE
 -   DELETE
 
-> **Note**  
+> **Note**
+>
 > Applicable for CFTACCNT, CFTAUTH, CFTCAT, CFTCOM, CFTDEST, CFTEXIT, CFTFILE, CFTIDF,
 > CFTLOG,  CFTNET, CFTPARM, CFTPART, CFTPROT, CFTRECV, CFTSEND,
 > CFTTCP, CFTTRACE,  CFTXLATE.
@@ -54,7 +55,8 @@ Mode to be reactivated:
 
 You can use the shortcuts B, R, and S in place of the keywords.
 
-> **Note**  
+> **Note**
+>
 > The MODE parameter is absolute. If you run ACT MODE=SERVER followed by
 > ACT MODE=REQUESTER, the partner is not reactivated in both modes,
 > only in REQUESTER mode (corresponding to the most recent command).

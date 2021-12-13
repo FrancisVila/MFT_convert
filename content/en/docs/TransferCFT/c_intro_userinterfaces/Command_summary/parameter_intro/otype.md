@@ -1,7 +1,7 @@
 {
     "title": "otype",
     "linkTitle": "otype",
-    "weight": "2500"
+    "weight": "2510"
 }<span id="otype"></span>
 
 ### 

@@ -37,7 +37,8 @@ To enable recursive processing for a group of files, use the following syntax \*
 FNAME =/home/qualcft/\*\*
 ```
 
-> **Note**  
+> **Note**
+>
 > A single asterisk \* only selects the file in the immediate folder.
 
 ### HFS file characteristics

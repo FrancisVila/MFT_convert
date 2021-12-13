@@ -1,7 +1,7 @@
 {
     "title": "flowname",
     "linkTitle": "flowname",
-    "weight": "1200"
+    "weight": "1210"
 }### flowname
 
 #### CFTSEND, CFTRECV

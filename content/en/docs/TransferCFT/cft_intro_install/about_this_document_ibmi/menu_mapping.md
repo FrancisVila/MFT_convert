@@ -1,7 +1,7 @@
 {
     "title": "Appendix B: Menu mapping",
     "linkTitle": "Appendix B: Menu mapping",
-    "weight": "220"
+    "weight": "230"
 }
 | <span id="_Toc429559254"></span> <h2 id="transfercftcomponentlongname-2.7.1">{{< TransferCFT/componentlongname  >}} 2.7.1</h2>  |
 | --- |

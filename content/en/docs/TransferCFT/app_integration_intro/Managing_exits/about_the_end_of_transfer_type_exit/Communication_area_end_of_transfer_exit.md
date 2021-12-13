@@ -1,7 +1,7 @@
 {
     "title": "About  the communication area",
     "linkTitle": "About the communication area",
-    "weight": "340"
+    "weight": "350"
 }This topic describes the end-of-transfer exit communication area. The
 communication area contains the fields which are described in the tables
 below:

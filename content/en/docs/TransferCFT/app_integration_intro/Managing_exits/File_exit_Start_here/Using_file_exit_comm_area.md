@@ -1,7 +1,7 @@
 {
     "title": "Use the communication structure",
     "linkTitle": "Using the communication structure",
-    "weight": "360"
+    "weight": "370"
 }The following topics describe the stages in a file transfer. These are:
 
 -   [Before

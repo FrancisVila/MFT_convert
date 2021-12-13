@@ -6,15 +6,16 @@
 
 The UCONF `copilot.restapi.api_token_validity` parameter sets the access token's expiration period. By default, the value is set to 0, which disables expiration. You can modify this parameter if you want access tokens to have a specific expiration period. The` token_validity` parameter applies to tokens at the time they are created. Tokens that exist prior to modifying this value retain the expiration date that was set at the time they were created.
 
-> **Note**  
+> **Note**
+>
 > If you modify the UCONF copilot.restapi.api\_token\_validity parameter, you must restart Copilot for the change to be taken into account.
 
 Related information includes:
 
--   Using access tokens with REST APIs, see  [Using the Swagger UI]()
+-   Using access tokens with REST APIs, see  [Using the Swagger UI](../../../../app_integration_intro/using_apis/api_intro/swagger_intro)
 -   Token keys and renewal, please see <a href="../../use_saml" class="MCXref xref">SSO using SAML</a>
 -   [Changing the key length](../../../../governance_services_intro/register_cg#manually_activate_cg) for a {{< TransferCFT/centralgovernancename >}} certificate
--   [Bearer authentication]()
+-   [Bearer authentication](../../../../app_integration_intro/using_apis/api_intro/api_authentication)
 
 ## Create a token
 
@@ -57,5 +58,6 @@ If you change the private key, you must:
 2.  From the {{< TransferCFT/transfercftname >}} user interface, regenerate the API tokens.
 3.  Update each REST API client application with the new API token.
 
-> **Note**  
+> **Note**
+>
 > If you are reregistering Transfer CFT with either Central Governance or Flow Manager, you must revoke and recreate all the tokens from this Transfer CFT.

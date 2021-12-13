@@ -255,7 +255,8 @@ The ADRDSSU command also uses the parameter:
 
 The combination RENAMEU+REPLACEU will always replace existing files.
 
-> **Note**  
+> **Note**
+>
 >  
 
 -   The created files are identical to the initial file.

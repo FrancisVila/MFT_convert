@@ -1,7 +1,7 @@
 {
     "title": "Using requester mode",
     "linkTitle": "Using requester mode",
-    "weight": "390"
+    "weight": "400"
 }The communication structure is defined by the interface before
 the user function is called. You must provide, complete, or modify the
 parameters that  {{< TransferCFT/componentshortname  >}} needs to establish network and protocol connections.

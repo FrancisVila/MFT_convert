@@ -9,8 +9,10 @@
 
 The installation package is a zip archive. It contains the product, a configuration template file called `initialize.properties`, and the installation program files. For details on customizing the template file, see <a href="../new_install_ux" class="MCXref xref">Customize the initialize.properties file</a>
 
-> **Note**  
+> **Note**
+>
 > In this section, replace &lt;OS> with your operating system and &lt;BN> with the build number, for example,  Transfer\_CFT\_3.8\_Install\_linux-x86-64\_11256000.run.
 
-> **Note**  
+> **Note**
+>
 > On Windows systems, see the  for  prerequisites including DLL requirements for x86.

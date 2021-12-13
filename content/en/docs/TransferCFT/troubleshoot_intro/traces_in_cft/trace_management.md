@@ -1,7 +1,7 @@
 {
     "title": "Trace  management concepts",
     "linkTitle": "Trace management concepts",
-    "weight": "280"
+    "weight": "290"
 }ATM trace management is comprised of two stages:
 
 -   Collect information,

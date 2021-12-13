@@ -75,10 +75,12 @@ The supported authentication methods are:
 
 <img src="/Images/TransferCFT/authentication_copilot_server.png" class="maxWidth" />
 
-> **Note**  
+> **Note**
+>
 > 1\. If copilot.restapi.authentication\_method = system, then your access management type must be set to either am.type= none, or both am.type=internal and am.internal.group\_database = system.
 
-> **Note**  
+> **Note**
+>
 > 2.  If copilot.restapi.authentication\_method = xbfadm, then your access management type must be set to either am.type= none, or both am.type=internal and am.internal.group\_database = xbfadm.
 
  
@@ -110,7 +112,8 @@ You can use the following UCONF parameters to manage this option:
 -   `copilot.general.login_failures_fname`:  A file that stores data shared between Transfer CFT and Copilot.
 -   `copilot.general.max_login_failures`: An integer that sets the maximum number of login failures for a user (default is 3, and 0 disables this option).
 
-> **Note**  
+> **Note**
+>
 > In a multi-host environment, an attacker may have up to the copilot.general.max\_login\_failures \* &lt;number of host> tries before the user is locked if the file is not in a directory shared by all hosts.
 
 When the maximum number of login failures is reached, the user account is locked for 30 seconds.
@@ -134,7 +137,8 @@ Keyboard shortcuts provide a way to navigate the user interface from the keyboar
 -   From the **New** \[Transfer\] page, for example, press Enter to begin a new request.
 -   To navigate across the page using keyboard shortcuts, use Tab to move to the next field, or Shift + Tab to go back.
 
-> **Note**  
+> **Note**
+>
 > Keyboard shortcuts on Firefox are largely nonfunctional.
 
 ## Limitations

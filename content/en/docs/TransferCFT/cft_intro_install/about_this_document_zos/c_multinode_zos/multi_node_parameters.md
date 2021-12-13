@@ -1,6 +1,6 @@
 {
     "title": "Configuration parameters",
-    "linkTitle": "Multi-node configuration parameters",
+    "linkTitle": "Multi&#45;node configuration parameters",
     "weight": "240"
 }This section presents the **multi-node** parameters and their default values. The column **Modify** indicates a strong recommendation that you should not modify this value if **No** is indicated.
 

@@ -1,10 +1,11 @@
 {
     "title": "How to use ATM traces",
     "linkTitle": "Using ATM traces",
-    "weight": "260"
+    "weight": "270"
 }This section describes ATM traces and how to implement them.
 
-> **Note**  
+> **Note**
+>
 > ATM traces are only available when using the Local Administration version of Transfer CFT. We recommend using Central Governance to manage Transfer CFT.
 
 

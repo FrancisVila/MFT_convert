@@ -1,7 +1,7 @@
 {
     "title": "About  the communication area",
     "linkTitle": "About the communication area",
-    "weight": "320"
+    "weight": "330"
 }This topic describes the communication area structure. The communication
 area contains:
 

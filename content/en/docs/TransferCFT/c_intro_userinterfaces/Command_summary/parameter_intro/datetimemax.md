@@ -1,7 +1,7 @@
 {
     "title": "datetimemax",
     "linkTitle": "datetimemax",
-    "weight": "630"
+    "weight": "640"
 }### datetimemax
 
 \[ DATETIMEMAX = { 0 | 99123123595999 } \]

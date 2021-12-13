@@ -1,7 +1,7 @@
 {
     "title": "Using  server mode",
     "linkTitle": "Using server mode",
-    "weight": "380"
+    "weight": "390"
 }This topic describes how to use the communication area for a directory
 exit in server mode. The [next topic](../using_requester_mode)
 explains a directory exit in the requester mode.
