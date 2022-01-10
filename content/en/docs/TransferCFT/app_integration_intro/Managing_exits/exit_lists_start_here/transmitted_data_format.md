@@ -8,7 +8,7 @@ of the transmitted data.
 
 <span id="Format_of_the_record_sent_in_V2"></span>
 
-## File selection criteria  
+## File selection criteria
 
 Example
 
@@ -20,11 +20,11 @@ RECV STATE = CDHKTX
 
 Where:
 
--   PARM: General
+- PARM: General
     parameters
--   LRECL: The length
+- LRECL: The length
     of the records sent
--   FORMAT: Indicates the file format of the communication area.
+- FORMAT: Indicates the file format of the communication area.
 
 ## Format of sent records
 
@@ -34,32 +34,32 @@ Format 1
 
 Displays using the same format as in {{< TransferCFT/hflongproductname  >}} 3.5 and lower.
 
--   Format V23: The record is truncated if LRECL&lt;503 or padded with spaces if LRECL>503.
--   Format V24: The record is truncated if LRECL&lt;1569 or padded with spaces if LRECL>1569.
+- Format V23: The record is truncated if LRECL&lt;503 or padded with spaces if LRECL>503.
+- Format V24: The record is truncated if LRECL&lt;1569 or padded with spaces if LRECL>1569.
 
 
 | Type  | V24 length  | V23 length  | Description  |
 | --- | --- | --- | --- |
-|  CHAR  |  1  |  1  |  'L': start of record marker  |
-|  CHAR  |  1  |  1  |  SEND/RECV flag  |
-|  CHAR  |  1  |  1  |  STATE  |
-|  CHAR  |  32  |  8  |  Send PARTner  |
-|  CHAR  |  32  |  8  |  Receive PARTner  |
-|  CHAR  |  32  |  8  |  IDF file identifier  |
-|  CHAR  |  8  |  8  |  IDT transfer identifier  |
-|  CHAR  |  10  |  10  |  Number of records  |
-|  CHAR  |  512  |  64  |  Filename  |
-|  CHAR  |  3  |  3  |  Transfer priority  |
-|  CHAR  |  8  |  8  |  Date of submission to catalog  |
-|  CHAR  |  8  |  8  |  Time of submission to catalog or time of last modification  |
-|  CHAR  |  512  |  80  |  User PARaMeter  |
-|  CHAR  |  28  |  15  |  Send USER  |
-|  CHAR  |  28  |  15  |  Receive USER  |
-|  CHAR  |  4  |  4  |  Local parameter length  |
-|  CHAR  |  160  |  160  |  Local user parameter  |
-|  CHAR  |  3  |  3  |  Diagi  |
-|  CHAR  |  64  |  8  |  Diagp  |
-|  Total  |  1569  |  503 bytes  |   |
+| CHAR  | 1  | 1  | 'L': start of record marker  |
+| CHAR  | 1  | 1  | SEND/RECV flag  |
+| CHAR  | 1  | 1  | STATE  |
+| CHAR  | 32 | 8  | Send PARTner  |
+| CHAR  | 32 | 8  | Receive PARTner  |
+| CHAR  | 32 | 8  | IDF file identifier  |
+| CHAR  | 8 | 8  | IDT transfer identifier  |
+| CHAR  | 10 | 10  | Number of records  |
+| CHAR  | 512 | 64  | Filename  |
+| CHAR  | 3 | 3  | Transfer priority  |
+| CHAR  | 8 | 8  | Date of submission to catalog |
+| CHAR  | 8 | 8  | Time of submission to catalog or time of last modification  |
+| CHAR  | 512 | 80  | User PARaMeter  |
+| CHAR  | 28 | 15  | Send USER  |
+| CHAR  | 28 | 15  | Receive USER  |
+| CHAR  | 4 | 4  | Local parameter length  |
+| CHAR  | 160 | 160  | Local user parameter  |
+| CHAR  | 3 | 3  | Diagi  |
+| CHAR  | 64 | 8  | Diagp  |
+| Total | 1569 | 503 bytes  |   |
 
 
 Format 2
@@ -67,28 +67,28 @@ Format 2
 The fields are as described in the following table, where the field size depends on the format version (V23 or V24).
 
 
-|  Type  |  V24 length  |  V23 length  |  Description  |
+| Type | V24 length | V23 length | Description |
 | --- | --- | --- | --- |
-|  CHAR  |  1  |  1  |  'L': start of record marker  |
-|  CHAR  |  1  |  1  |  SEND/RECV flag  |
-|  CHAR  |  1  |  1  |  STATE  |
-|  CHAR  |  1  |  1  |  PHASE  |
-|  CHAR  |  1  |  1  |  PHASESTEP  |
-|  CHAR  |  64  |  8  |  Send partner (PART)  |
-|  CHAR  |  64  |  8  |  Receive partner (PART)  |
-|  CHAR  |  32  |  8  |  IDF file identifier  |
-|  CHAR  |  8  |  8  |  IDT transfer identifier  |
-|  CHAR  |  10  |  10  |  Number of records  |
-|  CHAR  |  512  |  64  |  Filename  |
-|  CHAR  |  3  |  3  |  Transfer priority  |
-|  CHAR  |  8  |  8  |  Date of submission to catalog  |
-|  CHAR  |  8  |  8  |  Time submitted to catalog, or time of last modification  |
-|  CHAR  |  512  |  80  |  User parameter (PARM)  |
-|  CHAR  |  32  |  15  |  Send USER  |
-|  CHAR  |  32  |  15  |  Receive USER  |
-|  CHAR  |  160  |  160  |  Local user parameter  |
-|  CHAR  |  3  |  3  |  Diagi  |
-|  CHAR  |  64  |  8  |  Diagp  |
+| CHAR  | 1  | 1  | 'L': start of record marker  |
+| CHAR  | 1  | 1  | SEND/RECV flag  |
+| CHAR  | 1  | 1  | STATE  |
+| CHAR | 1 | 1 | PHASE |
+| CHAR | 1 | 1 | PHASESTEP |
+| CHAR  | 64 | 8  | Send partner (PART) |
+| CHAR  | 64 | 8  | Receive partner (PART) |
+| CHAR  | 32 | 8  | IDF file identifier  |
+| CHAR  | 8 | 8  | IDT transfer identifier  |
+| CHAR  | 10 | 10  | Number of records  |
+| CHAR  | 512 | 64  | Filename  |
+| CHAR  | 3 | 3  | Transfer priority  |
+| CHAR  | 8 | 8  | Date of submission to catalog |
+| CHAR  | 8 | 8  | Time submitted to catalog, or time of last modification  |
+| CHAR  | 512 | 80  | User parameter (PARM) |
+| CHAR  | 32 | 15  | Send USER  |
+| CHAR  | 32 | 15  | Receive USER  |
+| CHAR  | 160 | 160  | Local user parameter  |
+| CHAR  | 3 | 3  | Diagi  |
+| CHAR  | 64 | 8  | Diagp  |
 
 
 Format C: CSV - Comma Separated Value
@@ -121,32 +121,32 @@ Format X: XML
 If **LRECL>4096** or **LRECL&lt;109**, the record length is
 forced to 503.
 
--   The unused *Cata* field is forced blank or to
+- The unused *Cata* field is forced blank or to
     0, in the case of a length.  
     The record is truncated if LRECL&lt;503 or padded with spaces if LRECL>503
     (LRECL is a PARM parameter).
--   The **User parameter** field corresponds to the PARM parameter of
+- The **User parameter** field corresponds to the PARM parameter of
     the CFTSEND or SEND command.
--   The **Send user** field corresponds to the SUSER parameter of the
+- The **Send user** field corresponds to the SUSER parameter of the
     CFTSEND or SEND command.
--   The **Receive user** field corresponds to the RUSER parameter of
+- The **Receive user** field corresponds to the RUSER parameter of
     the CFTSEND or SEND command.
--   The **Local user parameter** field corresponds to the COMMENT parameter
+- The **Local user parameter** field corresponds to the COMMENT parameter
     of the CFTSEND or SEND command for a send transaction or the COMMENT parameter
     of the CFTRECV or RECV command for a receive transaction.
 
 The **Send partner** (SPART) field contains:
 
--   For a send, the
+- For a send, the
     local partner, the PART parameter of the CFTPARM object
--   For a receive,
+- For a receive,
     the partner identifier, the ID parameter of the CFTPART object
 
 The **Receive partner** (RPART) field contains:
 
--   For a receive,
+- For a receive,
     the local partner, the PART parameter of the CFTPARM object
--   For a send, the
+- For a send, the
     partner identifier, the ID parameter of the CFTPART object
 
 The commands have the same syntax as CFTUTIL:
@@ -157,13 +157,13 @@ Comment \*/
 
 The commands are processed as follows:
 
--   If the criteria
+- If the criteria
     file is not found, the exit-list generates a file opening error
--   The criteria file
+- The criteria file
     must contain at least one SEND command or one RECV command
--   All the commands
+- All the commands
     present must include at least one parameter
--   The absence of
+- The absence of
     a SEND or RECV command implicitly means **no selection**. In the absence
     of a SEND command, no send transfer (SFD, SFH records, etc.) is selected.
     In the absence of a RECV command, no receive transfer (RFD, RFH records,
@@ -182,9 +182,9 @@ Format version V24
 
 629 is the minimum length. If n&lt;629 or n>4096, the default value 1569 is used.
 
--   SEND = selection
+- SEND = selection
     criteria for send transfers
--   RECV = selection
+- RECV = selection
     criteria for received transfers:
     -   STATE: transfer
         status

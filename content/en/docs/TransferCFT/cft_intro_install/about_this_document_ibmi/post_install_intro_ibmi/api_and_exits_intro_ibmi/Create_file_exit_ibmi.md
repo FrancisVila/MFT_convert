@@ -8,14 +8,14 @@
 
 You require the ICC and GMAKE utilities for IBM i platforms:
 
--   gmake: GNU compiler (make)
--   icc: Intel C/C++ compiler (calls ILE)
+- gmake: GNU compiler (make)
+- icc: Intel C/C++ compiler (calls ILE)
 
 ## Application components
 
 The `<installdir>/runtime/src/exit/` subdirectory contains:
 
--   The `exfxmp1.c` sample source module with its associated  `exfus.h` include file. This program
+- The `exfxmp1.c` sample source module with its associated `exfus.h` include file. This program
     demonstrates the various user functions:
     -   ALLOC\_TYP:
         the EXIT allocates the file
@@ -26,49 +26,49 @@ The `<installdir>/runtime/src/exit/` subdirectory contains:
 
 <!-- -->
 
--   The `makefile `
+- The `makefile `
     compilation procedure, which uses `exfxmp2.c` to generate the CFTEXITF
     program
 
-The CFTPGM library  contains the `libcftexf.srvpgm`
-module. This library allows you to use the  {{< TransferCFT/componentshortname  >}} file EXITs.
+The CFTPGM library contains the `libcftexf.srvpgm`
+module. This library allows you to use the {{< TransferCFT/componentshortname  >}} file EXITs.
 
 ## Generating the exit
 
 To generate the sample CFTEXITF application:
 
-1.  Access the `<installdir>/runtime/src/exit/` directory.
-2.  Enter the command: `gmake`
+1. Access the `<installdir>/runtime/src/exit/` directory.
+1. Enter the command: `gmake`
 
 ## Testing the exit
 
-1.  Connect to the IBM session with your Transfer CFT user.
+1. Connect to the IBM session with your Transfer CFT user.
 
-2.  Generate the  {{< TransferCFT/componentshortname >}} internal datafiles
+1. Generate the {{< TransferCFT/componentshortname >}} internal datafiles
     using the `cftinit `utility with the configuration file:
 
     CALL PGM(CFTINIT) PARM('CFTPROD/UTIN(TCPPARAM)')
 
-3.  When the `cftinit complete`
-    message is displayed, run  {{< TransferCFT/componentshortname >}} using the `cftstart `utility:
+1. When the `cftinit complete`
+    message is displayed, run {{< TransferCFT/componentshortname >}} using the `cftstart `utility:
 
     cftstart
 
-4.  When the `CFTMAIN process   ID is xxxxx `message is displayed, run a transfer using the command:
+1. When the `CFTMAIN process   ID is xxxxx `message is displayed, run a transfer using the command:
 
     CALL PGM(CFTUTIL) PARM(SEND 'part=BOSTON, idf=fic1')
 
-5.  After a few seconds, you can
+1. After a few seconds, you can
     check the transfer state by entering the following command. If the transfers have not terminated, repeat thecommand.
 
     CALL PGM(CFTUTIL) PARM(LISTCAT)  
 
-6.  Stop  {{< TransferCFT/componentshortname >}} using the `cftstop`
+1. Stop {{< TransferCFT/componentshortname >}} using the `cftstop`
     utility:
 
     cftstop
 
-7.  Examine the contents of the `CFTPROD/LOG. sav` file in the `CFTPROD `library and locate the messages inserted by the EXIT.  
+1. Examine the contents of the `CFTPROD/LOG. sav` file in the `CFTPROD `library and locate the messages inserted by the EXIT.  
       
     The files created in the `CFTPROD `library are empty, as the sample EXIT is
     only a simulation.

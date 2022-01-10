@@ -19,11 +19,11 @@ FULL | DEBUG \]
 
 Result display mode.
 
--   FULL: All contents display
+- FULL: All contents display
 
--   DEBUG: All contents and additional general information display
+- DEBUG: All contents and additional general information display
 
--   BRIEF: a 79-character entry is displayed
+- BRIEF: a 79-character entry is displayed
     for each certificate. Additionally, when using the BRIEF value to display content:
 
     -   Items display showing a clear parent/child relationship
@@ -51,30 +51,30 @@ USER | ROOT | INTER | KEY | CERT | |  ENTITY \]
 
 Type of certificate to display:
 
--   ALL:
+- ALL:
     all certificates
--   USER:
+- USER:
     user certificates
--   ROOT:
+- ROOT:
     root authority certificates
--   INTER:
+- INTER:
     intermediate authority certificates
--   KEY: list PKIKEY items
--   CERT: list ROOT, INTER, and USER certificates for PKICER only
--   ENTITY: any entity identifier created using PKIENTITY command
+- KEY: list PKIKEY items
+- CERT: list ROOT, INTER, and USER certificates for PKICER only
+- ENTITY: any entity identifier created using PKIENTITY command
 
 \[STATE = ALL | ACT
 | INACT | EXPIRED\]
 
 Status of the certificates to display:
 
--   ALL:
+- ALL:
     all statuses
--   ACT:
+- ACT:
     all activated certificates
--   INACT:
+- INACT:
     all deactivated certificates
--   EXPIRED:
+- EXPIRED:
     all expired certificates
 
 FMODEL
@@ -83,19 +83,19 @@ The path to the file containing the models. If no model is found, the default fo
 
 > **Note**
 >
-> Transfer CFT 3.7 and higher uses the  dspcnf.xml model fileby default. To have the display format from a previous version, use FMODEL=NONE.
+> Transfer CFT 3.7 and higher uses the dspcnf.xml model fileby default. To have the display format from a previous version, use FMODEL=NONE.
 
 ROOTCID
 
-The  certificate authority ID.  See an example in [ROOTCID](../../../../c_intro_userinterfaces/command_summary/parameter_intro/rootcid).
+The certificate authority ID. See an example in [ROOTCID](../../../../c_intro_userinterfaces/command_summary/parameter_intro/rootcid).
 
 HELP 
 
 Provides helps for the available fields for the different elements, or lists the available MODELS for the given file. Values include:
 
--   NONE (default)
--   FIELDS
--   MODELS
+- NONE (default)
+- FIELDS
+- MODELS
 
 <span id="CONTENT_BRIEF_Display"></span>
 
@@ -132,16 +132,16 @@ Miscellaneous
 
 Miscellaneous certificate information (the letter only displays in when using the old format or no model):
 
--   T: Type of Certificate: R for
+- T: Type of Certificate: R for
     Root (Root Authority), I for Intermediate (Intermediate Authority),
     U for User
--   S: Certificate state: A for
+- S: Certificate state: A for
     active or I for inactive
--   C: x denotes if the certificate
+- C: x denotes if the certificate
     is in the database
--   K: x denotes if the private
+- K: x denotes if the private
     key associated with the certificate exists
--   E: Certificate expired (!) or otherwise
+- E: Certificate expired (!) or otherwise
 
 Exp. Date
 
@@ -234,20 +234,20 @@ PKIUTIL LISTPKI CONTENT=BRIEF, STATE=ACT
 Resulting in:
 
 ```
-Id.              Root         Type    State Exp.Date       K   Delivered to Delivered by
-EXPIRED      EXPIRED  ROOT   ACT     01/09/2015 !      4k_ca        4k_ca
-EXPIRED    EXPIRED   USER    ACT    01/09/2030 ? x 4k_user      4k_ca
-ROOT            ROOT         ROOT   ACT    22/07/2029       2k_root      2k_root
-INTER1      ROOT         INTER  ACT    22/07/2029       2k_l1_ca     2k_root
-?       USER2  ROOT        USER   ACT    22/07/2029   x  2k_l3_user1  2k_l2_ca
-USER1     ROOT         USER    ACT    22/07/2029   x  2k_l2_user1  2k_l1_ca
-USER0       ROOT         USER    ACT    22/07/2029   x  2k_l1_user1  2k_root
->      7 Certificates selected
+Id.      Root      Type   State Exp.Date   K   Delivered to Delivered by
+EXPIRED  EXPIRED  ROOT   ACT   01/09/2015 !    4k_ca 4k_ca
+EXPIRED  EXPIRED   USER   ACT   01/09/2030 ? x 4k_user 4k_ca
+ROOT     ROOT      ROOT   ACT   22/07/2029   2k_root 2k_root
+INTER1   ROOT      INTER  ACT   22/07/2029   2k_l1_ca 2k_root
+? USER2  ROOT      USER   ACT  22/07/2029 x  2k_l3_user1 2k_l2_ca
+USER1    ROOT      USER   ACT  22/07/2029 x  2k_l2_user1 2k_l1_ca
+USER0    ROOT      USER   ACT  22/07/2029 x  2k_l1_user1 2k_root
+> 7 Certificates selected
 ```
 
 Key to indicators and symbols:
 
--   The "EXPIRED" ROOT certificate displays the "!" symbol in the "K" column.
--   The "EXPIRED" USER certificate displays the "?" symbol in the "K" column, indicating one if his issuer is expired.
--   The "?" before their ID indicates that their issuer is not shown, although available.
--   If a certificate displays an explanation mark "!" before the ID, it indicates that their issuer is not available (error).
+- The "EXPIRED" ROOT certificate displays the "!" symbol in the "K" column.
+- The "EXPIRED" USER certificate displays the "?" symbol in the "K" column, indicating one if his issuer is expired.
+- The "?" before their ID indicates that their issuer is not shown, although available.
+- If a certificate displays an explanation mark "!" before the ID, it indicates that their issuer is not available (error).

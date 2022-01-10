@@ -25,21 +25,21 @@ The media interfacing
 with those used by the Transfer CFT. The data associated with
 these media is used by CFTUTIL to:
 
--   Configure
+- Configure
     and query the Transfer CFT parameters with the option TYPE =PARM
--   Configure
+- Configure
     and query the partners managed by the Transfer CFT with the option
     TYPE = PART
--   Query the
+- Query the
     catalog used by the Transfer CFT with the option TYPE = CAT
--   Communicate
+- Communicate
     with the Transfer CFT with the option TYPE = COM, through
     the communication media managed by the Transfer CFT
 
 The media specific
 to CFTUTIL used to:
 
--   Send the
+- Send the
     commands to be processed (by CFTUTIL) with the option TYPE = INPUT
 
 For TYPE = PARM, TYPE = PART, and TYPE = CAT, the associated media can
@@ -56,13 +56,13 @@ CFTUTIL commands are read in the new input medium mentioned.
 For TYPE = COM and depending on the system involved, the associated
 media can be:
 
--   A file
--   TCPIP communication
+- A file
+- TCPIP communication
 
 For a communication medium based on TCP/IP the media can be:
 
--   Host name
--   Configuration file
+- Host name
+- Configuration file
     name
 
 If this file does not exist or does not have the correct syntax, you are notified only during the processing of the first transfer request.
@@ -70,57 +70,26 @@ If this file does not exist or does not have the correct syntax, you are notifie
 By using this syntax, you can dynamically modify the communication media
 since the file is analyzed at each new transfer request.
 
-You use the CONFIG command  to change the Transfer CFT
+You use the CONFIG command to change the Transfer CFT
 communication medium (MEDIACOM parameter). The media that can be used for a given system and the default communication
 medium associated with this system. <a href="../../../admin_intro/admin_config_commands/communication_media_concepts" class="MCXref xref">Communication
 media</a>
 
-**Command syntax**:  [CONFIG](../../command_summary#CONFIG)
+**Command syntax**: [CONFIG](../../command_summary#CONFIG)
 
-<table>
-   <tbody>
-      <tr>
-         <td  width="19.982%"><p>Description</p>         </td>
-         <td colspan="2"  width="80.018%"><p>Use this command to redefine the data media with which
-the CFTUTIL utility operates.</p>         </td>
-      </tr>
-      <tr>
-         <td rowspan="4"  width="19.982%"><p>Parameters</p>         </td>
-         <td  width="20.241%"><p><a href="../../command_summary/parameter_intro/fname">FNAME</a></p>
-<p> </p>         </td>
-         <td  width="59.777%"><p>For
-TYPE = {CAT | INPUT | OUTPUT | PARM | PART }</p>
-<p>Name of the file associated with the medium type accessed
-by CFTUTIL.</p>
-<p> </p>         </td>
-      </tr>
-      <tr>
-         <td  width="20.241%"><p><a href="../../command_summary/parameter_intro/fname">FNAME</a></p>
-<p> </p>         </td>
-         <td  width="59.777%"><p>For TYPE = COM</p>
-<p>There must be a correspondence with the CFTCOM NAME
-parameter  that
-defines the communication medium as seen from Transfer CFT.</p>
-<p>For a communication medium supported by TCP/IP (MEDIACOM=TCPIP)
-this is either:</p>
-<ul>
-<li>A host
-name (string) using the format: "protocol://machine:port", or</li>
-<li>A configuration
-file (filename)</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td  width="20.241%"><p><a href="../../command_summary/parameter_intro/mediacom">MEDIACOM</a> </p>         </td>
-         <td  width="59.777%"><p>Defines the communication medium type if this medium is
-relevant to the system.</p>         </td>
-      </tr>
-      <tr>
-         <td  width="20.241%"><p><a href="../../command_summary/parameter_intro/type#type_CONFIG">TYPE</a> </p>         </td>
-         <td  width="59.777%"><p>Defines the medium concerned.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+QQQ\_QQQ\_QQQ
+
+Use the CONFIG command to redefine the data media with which
+the CFTUTIL utility operates.
+
+
+| Parameter  | Description  |
+| --- | --- |
+| <a href="../../command_summary/parameter_intro/fname">FNAME</a><br/>  | For TYPE = {CAT | INPUT | OUTPUT | PARM | PART }<br/> Name of the file associated with the medium type accessed by CFTUTIL.<br/>  |
+| <a href="../../command_summary/parameter_intro/fname">FNAME</a><br/>  | For TYPE = COM<br/> There must be a correspondence with the CFTCOM NAME parameter that defines the communication medium as seen from Transfer CFT.<br/> For a communication medium supported by TCP/IP (MEDIACOM=TCPIP) this is either:<br/> • A host name (string) using the format: "protocol://machine:port", or<br/> • A configuration file (filename) |
+| <a href="../../command_summary/parameter_intro/mediacom">MEDIACOM</a>  | Defines the communication medium type if this medium is relevant to the system. |
+| <a href="../../command_summary/parameter_intro/type#type_CONFIG">TYPE</a>  | Defines the medium concerned. |
+
 
 ## Examples
 
@@ -137,7 +106,7 @@ FNAME = <filename>
 
 Example 2: define filename
 
-Use this command  to define the file with the generic
+Use this command to define the file with the generic
 &lt;filename> as the Transfer CFT communication medium.
 
 ```
@@ -150,7 +119,7 @@ Example 3: MEDIACOM=FILE
 
 Use to select a specific communication file.
 
-If the {{< TransferCFT/hflongproductname  >}} configuration file refers to 2 communication files, for example  cftcom1 and cftcom2:
+If the {{< TransferCFT/hflongproductname  >}} configuration file refers to 2 communication files, for example cftcom1 and cftcom2:
 
 ```
 CFTPARM ID=IDPARM0, ..., COM=(COM1,COM2),....
@@ -166,7 +135,7 @@ CONFIG TYPE=COM,MEDIACOM=FILE,FNAME=$CFTDIRRUNTIME/data/cftcom2
 
 Example 4: MEDIACOM=TCPIP
 
-Use to select   a TCPIP communication media.
+Use to select a TCPIP communication media.
 
 If the {{< TransferCFT/hflongproductname  >}} configuration file refers to a communication file and a TCPIP communication media:
 

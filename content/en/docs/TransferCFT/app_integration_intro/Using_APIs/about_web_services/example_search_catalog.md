@@ -134,7 +134,7 @@ Executing the this request when Copilot is running but {{< TransferCFT/component
 >
 > &lt;CAT\_APPSTATE/>
 
-## Response  when there is no IDTU
+## Response when there is no IDTU
 
 In the following response the return code is 3, successful, but the LISCAT\_ARRAY is empty.
 

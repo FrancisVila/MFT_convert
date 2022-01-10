@@ -10,6 +10,6 @@
 
 \[DATA = string {1...32}\]
 
-User data in the  call packet.
+User data in the call packet.
 
 [Return to Command index](../../)

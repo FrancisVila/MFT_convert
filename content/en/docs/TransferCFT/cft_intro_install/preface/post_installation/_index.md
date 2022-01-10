@@ -12,12 +12,12 @@
 
 ### Check the Transfer CFT server
 
-1.  Load the Transfer CFT profile:
-2.  Verify the Transfer CFT version:
-3.  *Optionally*, change the Transfer CFT Guardian process names *if you are performing multiple installations*. Because each Transfer CFT process is assigned a Guardian process name, these names should be globally unique.
+1. Load the Transfer CFT profile:
+1. Verify the Transfer CFT version:
+1. *Optionally*, change the Transfer CFT Guardian process names *if you are performing multiple installations*. Because each Transfer CFT process is assigned a Guardian process name, these names should be globally unique.
 
--   Use the  [cft.guardian.process\_name\_prefix](../intro_os_features/hp_ns_batch#cft.guardian.process_name_prefix) UCONF parameter as described in the UCONF parameters section.
--   Be certain to change this parameter's default value if you are running several Transfer CFT installations  at the same time.
+- Use the  [cft.guardian.process\_name\_prefix](../intro_os_features/hp_ns_batch#cft.guardian.process_name_prefix) UCONF parameter as described in the UCONF parameters section.
+- Be certain to change this parameter's default value if you are running several Transfer CFT installations at the same time.
 
 ```
 CFTUTIL uconfset id=cft.guardian.process_name_prefix,value=LB
@@ -31,14 +31,13 @@ cft start
 
 Verify that the default ports used in `$CFTDIRRUNTIME/conf/cft-tcp.conf` are available:
 
--   1761 (PeSIT Any protocol)
--   1762 (PeSIT Any protocol with SSL authentication)
+- 1761 (PeSIT Any protocol)
+- 1762 (PeSIT Any protocol with SSL authentication)
 
 If the ports are not available, modify the port(s) and re-apply the configuration:
 
 ```
 cftupdate $CFTDIRRUNTIME/conf/cft-tcp.conf
-                        
 ```
 
 Check that Transfer CFT server is started:
@@ -76,8 +75,8 @@ cftping –v
 
 If you intend to use one of the following, configure it now:
 
--   Central Governance: see [Activate Central Governance connectivity](../../../governance_services_intro/register_cg)
--   Transfer CFT user interface: see [Using the web browser user interface](../../../c_intro_userinterfaces/web_copilot_ui)
+- Central Governance: see [Activate Central Governance connectivity](../../../governance_services_intro/register_cg)
+- Transfer CFT user interface: see [Using the web browser user interface](../../../c_intro_userinterfaces/web_copilot_ui)
 
 After having configured one of these, you can run the Copilot server:
 

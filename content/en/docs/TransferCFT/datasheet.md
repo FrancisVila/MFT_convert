@@ -6,57 +6,57 @@
 
 ## Platforms
 
-{{< TransferCFT/componentshortname  >}} is deployed on the  operating systems and browsers listed in this information sheet.
+{{< TransferCFT/componentshortname  >}} is deployed on the operating systems and browsers listed in this information sheet.
 
 ### Operating systems for x64
 
--   CentOS 6, 7
--   Debian 7, 8, 9
--   Oracle Linux 6, 7
--   Oracle Solaris 10, 11
--   Red Hat Enterprise Linux  6, 7, 8
--   SUSE Linux Enterprise Server 11, 12, 15
--   Ubuntu 16.04, 18.04, 20.04
--   Windows  10
--   Windows Server  2012, 2012 R2, 2016, 2019
+- CentOS 6, 7
+- Debian 7, 8, 9
+- Oracle Linux 6, 7
+- Oracle Solaris 10, 11
+- Red Hat Enterprise Linux 6, 7, 8
+- SUSE Linux Enterprise Server 11, 12, 15
+- Ubuntu 16.04, 18.04, 20.04
+- Windows 10
+- Windows Server 2012, 2012 R2, 2016, 2019
 
 ### Operating systems for Z
 
--   Red Hat Enterprise Linux 5, 6, 7
--   SUSE Linux Enterprise Server 11
--   z/OS 2.1, 2.2, 2.3, 2.4
+- Red Hat Enterprise Linux 5, 6, 7
+- SUSE Linux Enterprise Server 11
+- z/OS 2.1, 2.2, 2.3, 2.4
 
 ### Operating systems for Power
 
--   IBM AIX  7.1, 7.2
+- IBM AIX 7.1, 7.2
 
 ### Operating systems for SPARC
 
--   Oracle Solaris 10, 11 for SPARC
+- Oracle Solaris 10, 11 for SPARC
 
 ### Additional operating systems
 
--   HP-UX 11.31 for PA-RISC
--   HP-UX 11.31 for ia64
--   HP NonStop H and J series for ia64
--   HP NonStop L series for x86-32
--   IBM i 7.2, 7.3, 7.4
+- HP-UX 11.31 for PA-RISC
+- HP-UX 11.31 for ia64
+- HP NonStop H and J series for ia64
+- HP NonStop L series for x86-32
+- IBM i 7.2, 7.3, 7.4
 
 <span id="Virtuali"></span>
 
 ## Virtualization support
 
--   Amazon Elastic Compute Cloud (EC2) instance
--   Google Cloud Platform (GCP) VM instances
--   Microsoft Azure VM instances
--   VMware EXSi Virtual Machine
--   Other: Axway provides support for Axway products running in a virtual environment in a manner identical to Axway products running on any other major x86-based system. If, however, Axway suspects that the virtualization layer is the root cause of an incident, then the customer is required to contact the appropriate virtualization support provider to resolve the virtualization issue.
+- Amazon Elastic Compute Cloud (EC2) instance
+- Google Cloud Platform (GCP) VM instances
+- Microsoft Azure VM instances
+- VMware EXSi Virtual Machine
+- Other: Axway provides support for Axway products running in a virtual environment in a manner identical to Axway products running on any other major x86-based system. If, however, Axway suspects that the virtualization layer is the root cause of an incident, then the customer is required to contact the appropriate virtualization support provider to resolve the virtualization issue.
 
 ## Web browsers
 
--   Microsoft Edge – latest version
--   Mozilla Firefox – latest version
--   Google Chrome – latest version
+- Microsoft Edge – latest version
+- Mozilla Firefox – latest version
+- Google Chrome – latest version
 
 ## File systems for multi-node
 
@@ -77,8 +77,8 @@
 
 Available on Linux-x64 and Windows x64
 
--   Amazon Web Services S3 (Amazon Simple Storage Service).
--   Ceph Storage Cluster using the Ceph Object Gateway and its S3 compatible API.
+- Amazon Web Services S3 (Amazon Simple Storage Service).
+- Ceph Storage Cluster using the Ceph Object Gateway and its S3 compatible API.
 
 ## Java
 
@@ -86,10 +86,10 @@ If you are implementing either {{< TransferCFT/trustedfilename  >}} or {{< Trans
 
 ## Standard defaults
 
-The Internet Assigned Numbers Authority (IANA) reserves the  TCP ports 1761-1768  for {{< TransferCFT/componentshortname  >}}. For more information, refer to: [www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?&page=31).
+The Internet Assigned Numbers Authority (IANA) reserves the TCP ports 1761-1768 for {{< TransferCFT/componentshortname  >}}. For more information, refer to: [www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?&page=31).
 
 
-| Component  |  Port  |
+| Component  | Port |
 | --- | --- |
 | PeSIT  | 1761  |
 | SSL  | 1762  |
@@ -100,13 +100,13 @@ The Internet Assigned Numbers Authority (IANA) reserves the  TCP ports 1761-1768
 | REST API  | 1768  |
 |   | 12553  |
 | {{< TransferCFT/centralgovernancename  >}} SSL  | 12554  |
-|  {{< TransferCFT/securerelayname  >}} MA<br/>ma.comm_port  |  <br/>6801  |
-|  {{< TransferCFT/securerelayname  >}} RA<br/> • ra.comm_port<br/> • ra.admin_port</li>  |  <br/> • 6811<br/> • 6810</li>  |
+| {{< TransferCFT/securerelayname  >}} MA<br/> ma.comm_port |  <br/> 6801 |
+| {{< TransferCFT/securerelayname  >}} RA<br/> • ra.comm_port<br/> • ra.admin_port |  <br/> • 6811<br/> • 6810 |
 
 
 > **Note**
 >
-> In this document,  the terms Transfer CFT OS/400 and Transfer CFT IBM i may be used interchangeably.
+> In this document, the terms Transfer CFT OS/400 and Transfer CFT IBM i may be used interchangeably.
 
 ## Third party licenses
 

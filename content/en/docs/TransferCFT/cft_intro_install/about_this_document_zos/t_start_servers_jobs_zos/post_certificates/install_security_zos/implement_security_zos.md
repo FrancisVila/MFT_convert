@@ -6,13 +6,13 @@
 
 This section describes how to customize and implement the Transfer CFT z/OS security by:
 
--   Creating Profiles for Transfer CFT Objects (H84SAFDF)
--   Authorizing Access to Transfer CFT Objects (H85SAFPR)
--   Creating SECINI File (H86SAFCR)
--   Creating Dictionaries (H87SECEN)
--   Creating the DEFAULT CFTAPPL (H88PARM)
--   Protecting Transfer CFT Files (H89SAFAS)
--   Authorizing Transfer CFT Users (H89SAFAU)
+- Creating Profiles for Transfer CFT Objects (H84SAFDF)
+- Authorizing Access to Transfer CFT Objects (H85SAFPR)
+- Creating SECINI File (H86SAFCR)
+- Creating Dictionaries (H87SECEN)
+- Creating the DEFAULT CFTAPPL (H88PARM)
+- Protecting Transfer CFT Files (H89SAFAS)
+- Authorizing Transfer CFT Users (H89SAFAU)
 
 ## Customize and implement Transfer CFT z/OS security
 
@@ -46,15 +46,15 @@ You cannot enable the security system on an existing TransferCFT environment. Ba
 
 The H88INIT job comprises three steps:
 
-1.  Backs up the cftv2.PARM and cftv2.PART files in a cftv2.BACKUP file. The cftv2.COM and cftv2.CATALOG files are not backed up in this procedure. If necessary, users must back them up before running H88INIT.
+1. Backs up the cftv2.PARM and cftv2.PART files in a cftv2.BACKUP file. The cftv2.COM and cftv2.CATALOG files are not backed up in this procedure. If necessary, users must back them up before running H88INIT.
 
 <!-- -->
 
-1.  Deletes and recreates the cftv2.PARM, cftv2.PART, cftv2.COM and cftv2.CATALOG files with the HABFNAME=security\_file\_name parameter.
+1. Deletes and recreates the cftv2.PARM, cftv2.PART, cftv2.COM and cftv2.CATALOG files with the HABFNAME=security\_file\_name parameter.
 
 <!-- -->
 
-1.  Restores the cftv2.PARM and cftv2.PART files from the backup in the cftv2.BACKUP file.
+1. Restores the cftv2.PARM and cftv2.PART files from the backup in the cftv2.BACKUP file.
 
 ### Create the DEFAULT CFTAPPL (H88PARM)
 
@@ -80,16 +80,16 @@ If required, update the CFTENV member:
 
 Use this job to provide a model for the commands to be executed to allow:
 
--   A user to update the Transfer CFT configuration (example: CFTSEND command)
+- A user to update the Transfer CFT configuration (example: CFTSEND command)
 
 <!-- -->
 
--   A user to submit transfer requests  (example: SEND command)
+- A user to submit transfer requests  (example: SEND command)
 
 <!-- -->
 
--   A transfer owner to send or receive a file (example: APPL object)
+- A transfer owner to send or receive a file (example: APPL object)
 
 <!-- -->
 
--   Users to be associated with a group so that they can be granted Transfer CFT file access rights
+- Users to be associated with a group so that they can be granted Transfer CFT file access rights

@@ -14,11 +14,11 @@ If you performed an install and auto import or a manual migration, you must manu
 
 To manually migrate your API and exit binary files after migrating, copy your program's source code to the new Transfer CFT {{< TransferCFT/componentversion  >}} runtime directory and compile them.
 
-1.  Copy the API source code to &lt;new\_Transfer CFT\_{{< TransferCFT/componentversion >}}\_installation\_dir>/runtime/src/capi and compile.
+1. Copy the API source code to &lt;new\_Transfer CFT\_{{< TransferCFT/componentversion >}}\_installation\_dir>/runtime/src/capi and compile.
 
 <!-- -->
 
-1.  Copy the Exit source code to &lt;new\_Transfer CFT\_{{< TransferCFT/componentversion >}}\_installation\_dir>/runtime/src/exit and compile.
+1. Copy the Exit source code to &lt;new\_Transfer CFT\_{{< TransferCFT/componentversion >}}\_installation\_dir>/runtime/src/exit and compile.
 
 ### Exec scripts
 
@@ -31,15 +31,15 @@ Copy the exec scripts to &lt;new\_Transfer CFT\_{{< TransferCFT/componentversion
 You must manually migrate UCONF parameters for versions prior to {{< TransferCFT/componentshortname  >}} 2.5.1. The UCONF configuration
 replaces the following configuration files:
 
--   Sentinel configuration
+- Sentinel configuration
     file (trkapi.cfg, trkapi.conf, and so on...)  
     The parameters in the Sentinel file are integrated
     in UCONF as sentinel.FORMER-PARAMETER-NAME. For example, TRKTNAME becomes
     sentinel.TRKTNAME.
--   Copilot ini file
+- Copilot ini file
     (copconf.ini)  
-    This file no longer exists. All former Copilot parameters are named  `copilot.SECTION.PARAMETER-NAME` in the UCONF interface. For example, the parameter ServerPort, located in the general section, is now `copilot.general.serverport`.
--   The profile file, formerly ENV\_CFT or cft.ini, now
+    This file no longer exists. All former Copilot parameters are named `copilot.SECTION.PARAMETER-NAME` in the UCONF interface. For example, the parameter ServerPort, located in the general section, is now `copilot.general.serverport`.
+- The profile file, formerly ENV\_CFT or cft.ini, now
     uses UCONF to set the environment variables.
 
 ## Post upgrade

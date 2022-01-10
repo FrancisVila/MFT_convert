@@ -8,7 +8,7 @@ For details on upgrading a multi-node installation, see <a href="../upgrade_mult
 
 ## About upgrades
 
-As of {{< TransferCFT/componentlongname  >}} 3.4 there is no separate upgrade package, you use the installation package  to perform an upgrade procedure as described in the sections below.
+As of {{< TransferCFT/componentlongname  >}} 3.4 there is no separate upgrade package, you use the installation package to perform an upgrade procedure as described in the sections below.
 
 All passwords stored in the UCONF dictionary, or in the {{< TransferCFT/componentlongname  >}} databases (for example, CFTPART, CFTPARM) are cyphered using the key generated at installation. If you are performing an upgrade, all passwords are cyphered using a hard-coded key. We recommend that you generate an encryption key.
 
@@ -18,20 +18,20 @@ All passwords stored in the UCONF dictionary, or in the {{< TransferCFT/compone
 
 > **Note**
 >
-> When upgrading, the same type of user that did the initial installation  must start the installer.
+> When upgrading, the same type of user that did the initial installation must start the installer.
 
 ## Before you start
 
 Before beginning the upgrade procedure:
 
--   Download the Transfer CFT installation kit,  available at [support.axway.com](https://support.axway.com/).
--   Stop the Transfer CFT server and the Transfer CFT Copilot server, by entering:
+- Download the Transfer CFT installation kit, available at [support.axway.com](https://support.axway.com/).
+- Stop the Transfer CFT server and the Transfer CFT Copilot server, by entering:
     -   cft stop
     -   copstop -f
 
 ### Windows Application Experience recommendation
 
-You should enable the "Application Experience" service  when using Transfer CFT. Otherwise you may encounter issues in accessing files when installing/upgrading the product.
+You should enable the "Application Experience" service when using Transfer CFT. Otherwise you may encounter issues in accessing files when installing/upgrading the product.
 
 ## Limitations
 
@@ -47,33 +47,33 @@ Please refer to the [Central Governance documentation](https://docs.axway.com/bu
 
 <span id="Upgrade"></span>
 
-## Upgrade  options
+## Upgrade options
 
 You can use the following installer options for {{< TransferCFT/transfercftname  >}} 3.4 when performing an upgrade:
 
 **--architecture &lt;architecture>**: Installation architecture (single or cluster mode).
 
--   Default: single
--   Allowed: single first\_host additional\_host
+- Default: single
+- Allowed: single first\_host additional\_host
 
 **--runtimedir &lt;runtimedir>**: Shared Runtime Directory. On LEGACY upgrades, this is the shared data directory where the Axway Installer was installed.
 
--   Only used when architecture=additional\_host
+- Only used when architecture=additional\_host
 
 **--installdir &lt;installdir>**: Directory where the Transfer CFT is installed/upgraded. On LEGACY upgrades, this is the directory where the Axway Installer was installed.
 
--   Not used when architecture=additional\_host
--   Default:&lt;Current Drive>:\\axway\\cft
+- Not used when architecture=additional\_host
+- Default:&lt;Current Drive>:\\axway\\cft
 
 **--conf-file &lt;conf-file>**: File used to personalize installation of Transfer CFT
 
--   In this type of installation only 2 parameters are used:
+- In this type of installation only 2 parameters are used:
     -   \- architecture and installdir (if architecture = single/first\_host), or
     -   \- architecture and runtimedir (if architecture = additional\_host)
 
 You can set these using command line or the configuration file. The values passed in command line take precedence over the values in the configuration file.
 
-## Upgrade Transfer CFT  3.1.3  through 3.7 to {{< TransferCFT/releasenumber  >}}
+## Upgrade Transfer CFT 3.1.3  through 3.7 to {{< TransferCFT/releasenumber  >}}
 
 > **Note**
 >
@@ -83,11 +83,11 @@ You can set these using command line or the configuration file. The values passe
 
 Run the Axway Installer in update mode.
 
-1.  Launch the Axway Installer:
+1. Launch the Axway Installer:
 
-2.  Apply the Transfer\_CFT\_3.1.3\_SP\*\*\*\*\*.zip
+1. Apply the Transfer\_CFT\_3.1.3\_SP\*\*\*\*\*.zip
 
-    Where \*\*\*\*\* represents the SP level and the  platform
+    Where \*\*\*\*\* represents the SP level and the platform
 
     Example: Transfer\_CFT\_3.1.3\_SP3\_aix-power-64\_BN8712000.zip
 
@@ -102,25 +102,25 @@ Step 2: Upgrade to Transfer CFT {{< TransferCFT/releasenumber  >}}
 > Caution  
 > This operation removes the old Axway Installer and all its content, so no rollback is available. You should backup the content of your installation directory if you want to have the option of undoing this operation.
 
-1.  Uncompress the Transfer CFT installation kit.
-2.  From the Transfer CFT installation kit, enter:  
+1. Uncompress the Transfer CFT installation kit.
+1. From the Transfer CFT installation kit, enter:  
     ```
     ./Transfer_CFT_3.4_Install_<OS>_<BN>.exe [<options>]
     ```
-3.  Accept the license and the appropriate installation mode (e.g. single).
-4.  When prompted for the installation directory, enter the path to the existing Transfer CFT installation directory.
+1. Accept the license and the appropriate installation mode (e.g. single).
+1. When prompted for the installation directory, enter the path to the existing Transfer CFT installation directory.
 
 Available options
 
-The following available options are described in detail in [Upgrade  options](#Upgrade):
+The following available options are described in detail in [Upgrade options](#Upgrade):
 
--   --architecture &lt;architecture>
--   --runtimedir &lt;runtimedir> (only available when architecture = additional\_hosts)
--   --installdir &lt;installdir>
--   --conf-file &lt;conf-file>
--   --help
--   --debuglevel
--   --mode
+- --architecture &lt;architecture>
+- --runtimedir &lt;runtimedir> (only available when architecture = additional\_hosts)
+- --installdir &lt;installdir>
+- --conf-file &lt;conf-file>
+- --help
+- --debuglevel
+- --mode
 
 ## Post upgrade
 

@@ -16,20 +16,20 @@ CFTUTIL ‘file\_symb’file\_in file\_out
 
 In this syntax:
 
--   ‘file\_symb’ designates a character specific to
+- ‘file\_symb’ designates a character specific to
     each environment. Refer to the Transfer CFT Operating Guide that corresponds
     to your OS
 
 
-           |  OS  |  file_symb  |
- --- | --- | --- |
-|  Windows  |  #  |
-|  UNIX  |  @  |
+| OS |  file_symb |
+| --- | --- |
+| Windows | # |
+| UNIX |  @ |
 
 
--   file\_in is a file
+- file\_in is a file
     containing the Transfer CFT commands
--   file\_out is a file
+- file\_out is a file
     into which the results of the commands are written
 
 Specifying parameters is optional, the default values are the
@@ -41,17 +41,17 @@ relative to the current directory.
 
 On all systems:
 
--   CFTUTIL standard
+- CFTUTIL standard
     input and standard output are equivalent to:
     -   CFTUTIL ‘file\_symb’
         CFTIN CFTOUT
--   CFTIN and CFTOUT
+- CFTIN and CFTOUT
     are reserved words corresponding to the standard input and output
--   Standard input
+- Standard input
     and output to a file: CFTUTIL ‘file\_symb’ CFTIN file\_out
--   File input and
+- File input and
     standard output: CFTUTIL ‘file\_symb’ file\_in CFTOUT
--   File input, file
+- File input, file
     output: CFTUTIL ‘file\_symb’ file\_in file\_out
 
 #### CONFIG TYPE=...,FNAME=...

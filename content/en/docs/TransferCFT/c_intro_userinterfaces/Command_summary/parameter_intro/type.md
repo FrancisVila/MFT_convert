@@ -24,11 +24,11 @@ the Transfer CFT product, host, and key information.
 
 Type of object to be deactivated.
 
--   PART
+- PART
     = Partner
--   TRK
+- TRK
     = Select to restart Sentinel notification
--   CRON
+- CRON
     = Enables the cronjob CRON=ID
 
 #### INACT
@@ -38,12 +38,12 @@ Type of object to be deactivated.
 
 Type of object to be deactivated.
 
--   PART
+- PART
     = Partner
--   TRK
+- TRK
     = Select to stop dynamic Sentinel notification. All further
     messages are lost.
--   CRON
+- CRON
     = Disables the cronjob CRON=ID
 
 <span id="type_CFTCOM"></span>
@@ -51,15 +51,15 @@ Type of object to be deactivated.
 #### CFTCOM
 
 TYPE = { FILE
-|  TCPIP}
+| TCPIP}
 
-Type of  {{< TransferCFT/componentshortname  >}} communication medium.
+Type of {{< TransferCFT/componentshortname  >}} communication medium.
 
 This parameter can take the following values:
 
--   FILE:
+- FILE:
     communication is accomplished through a file
--   TCPIP:
+- TCPIP:
     communication is performed through the synchronous communication medium
 
 <span id="type_CFTNET"></span>
@@ -71,7 +71,7 @@ This parameter can take the following values:
 Defines the type of network resource. This parameter can take the following
 values, according to the system:
 
--   TCP: TCP/IP
+- TCP: TCP/IP
     network access resource
 
 #### CFTIDF
@@ -81,9 +81,9 @@ TYPE = { RECV | SEND}
 The transfer direction for which this correspondence is valid. Select
 either:
 
--   SEND:
+- SEND:
     for send transfers
--   RECV:
+- RECV:
     for receive transfer
 
 <span id="type_CFTEXIT"></span>
@@ -95,11 +95,11 @@ either:
 
 The type of exit program, as follows:
 
--   FILE (default value): Data is recorded
+- FILE (default value): Data is recorded
     in the monitor files
--   ACCESS: To use a directory type EXIT
--   EXEC: To use an end-of-transfer type EXIT
--   BOT: To use a beginning-of-transfer type EXIT
+- ACCESS: To use a directory type EXIT
+- EXEC: To use an end-of-transfer type EXIT
+- BOT: To use a beginning-of-transfer type EXIT
 
 <span id="type_CFTACCNT"></span>
 
@@ -110,10 +110,10 @@ The type of exit program, as follows:
 
 This defines the accounting type. CFTACCNT TYPE parameters are:
 
--   FILE (default value): Data is recorded
+- FILE (default value): Data is recorded
     in the {{< TransferCFT/componentlongname >}} files defined in the fname
     and afname fields.
--   SYST: Data is recorded in the files
+- SYST: Data is recorded in the files
     of the operating system accounting utility. Available
     only on z/OS (MVS).
 
@@ -121,42 +121,34 @@ This defines the accounting type. CFTACCNT TYPE parameters are:
 
 #### CFTPROT
 
-\[TYPE = {PeSIT |  ODETTE  }\]
+\[TYPE = {PeSIT | ODETTE  }\]
 
 Type
 of transfer protocol.
 
--   PeSIT:
+- PeSIT:
     PeSIT protocol
--   ODETTE:
+- ODETTE:
     OFTP (ODETTE) protocol
--   SFTP: SFTP protocol
+- SFTP: SFTP protocol
 
 #### LISTPART
 
-TYPE ={ALL | DEST |  PART  | TCP}
+TYPE ={ALL | DEST | PART | TCP}
 
 <span id="Type_table1"></span>
 
 #### Type table
 
-```
-Value 
-Meaning 
-ALL 
-Used to query the general and network characteristics of
-partners
-Parameters of the PARTNER file
-DEST 
-Used to query the parameters configured in the CFTDEST
-command: concern the broadcasting lists 
-PART 
-Used to query the parameters configured in the CFTPART
-command: description of the general data relative to partners 
-TCP
-Used to query the parameters configured in the CFTTCP command:
-TCP/IP network parameters associated with each partner supporting TCP/IP 
-```
+
+| Value  | Meaning  |
+| --- | --- |
+| ALL  | Used to query the general and network characteristics of partners<br /> Parameters of the PARTNER file |
+| DEST  | Used to query the parameters configured in the CFTDEST command: concern the broadcasting lists  |
+| PART  | Used to query the parameters configured in the CFTPART command: description of the general data relative to partners  |
+| TCP | Used to query the parameters configured in the CFTTCP command: TCP/IP network parameters associated with each partner supporting TCP/IP  |
+
+
 <span id="type_CONFIG"></span>
 
 #### CONFIG
@@ -166,22 +158,17 @@ TYPE = {CAT | COM | INPUT | OUTPUT
 
 Defines the medium concerned.
 
-```
-Value 
-Medium concerned 
-CAT 
-Catalog file 
-COM 
-Communication medium 
-INPUT 
-Command input file 
-OUTPUT 
-Report output file 
-PARM 
-Parameter file 
-PART 
-Partner file 
-```
+
+| Value  | Medium concerned  |
+| --- | --- |
+| CAT  | Catalog file  |
+| COM  | Communication medium  |
+| INPUT  | Command input file  |
+| OUTPUT  | Report output file  |
+| PARM  | Parameter file  |
+| PART  | Partner file  |
+
+
 <span id="type_SWITCH"></span>
 
 #### SWITCH
@@ -190,7 +177,7 @@ Partner file 
 
 Defines the switch action for CFTLOG or CFTACCNT. File types are:
 
--   LOG:
+- LOG:
     The SWITCH command stops message writing on the current log file, switches
     to the alternate log file, and then executes the procedure specified in
     the EXEC parameter of the CFTLOG
@@ -198,7 +185,7 @@ Defines the switch action for CFTLOG or CFTACCNT. File types are:
 
 <!-- -->
 
--   ACCNT:
+- ACCNT:
     The SWITCH command stops statistics from being written on the current
     statistical file, switches the writing to the alternate statistical file,
     and then executes the procedure specified in the EXEC
@@ -215,60 +202,27 @@ Defines the parameters to extract.
 
 #### Type table
 
-```
-Value 
-Meaning 
-Command
-ALL 
-All the parameter types of the CFTPARM and CFTPART files 
- 
-ACCNT 
-Description of the statistical files 
-CFTACCNT 
-AUTH 
-List of authorized files 
-CFTAUTH 
-CAT 
-Catalog definition 
-CFTCAT 
-COM 
-Description of  {{< TransferCFT/componentshortname >}} communication methods
- 
-CFTCOM 
-IDF 
-File "network" identifier 
-CFTIDF 
-LOG 
-Log file description 
-CFTLOG 
-NET 
-Network description 
-CFTNET 
-PARM 
-General parameters 
-CFTPARM 
-PART 
-Partner definition  
-CFTPART and  {{< TransferCFT/componentshortname >}} network 
-PROT 
-Protocol definition 
-CFTPROT 
-RECV 
-Description of the files to be received 
-CFTRECV 
-SEND 
-Description of the files to be sent 
-CFTSEND 
-XLATE 
-Translation table definition 
-CFTXLATE 
-TCP 
-TCP/IP partner definition 
-CFTTCP 
-UCONF
-Unified configuration
-CFTEXT
-```
+
+| Value  | Meaning  | Command |
+| --- | --- | --- |
+| ALL  | All the parameter types of the CFTPARM and CFTPART files  |   |
+| ACCNT  | Description of the statistical files  | CFTACCNT  |
+| AUTH  | List of authorized files  | CFTAUTH  |
+| CAT  | Catalog definition  | CFTCAT  |
+| COM  | Description of {{< TransferCFT/componentshortname  >}} communication methods  | CFTCOM  |
+| IDF  | File "network" identifier  | CFTIDF  |
+| LOG  | Log file description  | CFTLOG  |
+| NET  | Network description  | CFTNET  |
+| PARM  | General parameters  | CFTPARM  |
+| PART  | Partner definition  | CFTPART and {{< TransferCFT/componentshortname  >}} network  |
+| PROT  | Protocol definition  | CFTPROT  |
+| RECV  | Description of the files to be received  | CFTRECV  |
+| SEND  | Description of the files to be sent  | CFTSEND  |
+| XLATE  | Translation table definition  | CFTXLATE  |
+| TCP  | TCP/IP partner definition  | CFTTCP  |
+| UCONF  | Unified configuration  | CFTEXT  |
+
+
 <span id="type_LISTPARM"></span>
 
 #### LISTPARM
@@ -278,79 +232,44 @@ ALL | AUTH | CAT | COM | ETB | IDF | LOG | NET |PARM | PROT | RECV | SEND
 | XLATE }
 
 Defines the type of parameters to
-list from the  {{< TransferCFT/componentshortname  >}} parameter file.
+list from the {{< TransferCFT/componentshortname  >}} parameter file.
 
 TYPE can take the predefined values indicated in the Type table below.
 
 #### Type table
 
-```
-Value 
-Definition 
-ACCNT 
-Used to query statistical file parameters
-These parameters are submitted when CFTACCNT commands are entered 
-ALL 
-Used to query all the parameters indicated in the PARAMETER
-file 
-AUTH 
-Used to query file authorization lists
-These lists are customized by the CFTAUTH commands 
-CAT 
-Used to query catalog parameters
-These parameters are submitted when CFTCAT commands are entered 
-COM 
-Used to query communication media parameters
-These parameters are submitted when CFTCOM commands are entered 
-IDF 
-Used to query file "network" identifiers
-Identifiers are customized by the CFTIDF commands 
-LOG 
-Used to query log file parameters
-These parameters are submitted when CFTLOG commands are entered 
-NET 
-Used to query network characteristic parameters
-These parameters are submitted when CFTNET commands are entered and differ
-according to the type of network configured 
-PARM 
-Used to query general parameters
-These parameters are submitted when CFTPARM commands are entered 
-PROT 
-Used to query protocol parameters
-These parameters are submitted when CFTPROT commands are entered and differ
-according to the protocol configured 
-RECV 
-Used to query the parameters of the files to be received
-These parameters are submitted when CFTRECV commands are entered 
-SEND 
-Used to query the parameters of the files to be sent
-These parameters are submitted when CFTSEND commands are entered 
-XLATE 
-Used to query translation tables
-Translation tables are customized by the CFTXLATE object
-CFTFILE
-Used to create, empty, or delete  {{< TransferCFT/componentshortname >}} files
-LISTCAT
-Used to query the information associated with the selected
-transfers, recorded in the  {{< TransferCFT/componentshortname >}} catalog
-DISPLAY
-Used to query the information as with the LISTCAT command.
-It uses an external XML file that lists and describes customized models.
-These models are used to format the output
-ABOUT
-Used to display the  {{< TransferCFT/componentshortname >}} computer characteristics
-```
+
+| Value  | Definition  |
+| --- | --- |
+| ACCNT  | Used to query statistical file parameters<br /> These parameters are submitted when CFTACCNT commands are entered  |
+| ALL  | Used to query all the parameters indicated in the PARAMETER file  |
+| AUTH  | Used to query file authorization lists<br /> These lists are customized by the CFTAUTH commands  |
+| CAT  | Used to query catalog parameters<br /> These parameters are submitted when CFTCAT commands are entered  |
+| COM  | Used to query communication media parameters<br /> These parameters are submitted when CFTCOM commands are entered  |
+| IDF  | Used to query file "network" identifiers<br /> Identifiers are customized by the CFTIDF commands  |
+| LOG  | Used to query log file parameters<br /> These parameters are submitted when CFTLOG commands are entered  |
+| NET  | Used to query network characteristic parameters<br /> These parameters are submitted when CFTNET commands are entered and differ according to the type of network configured  |
+| PARM  | Used to query general parameters<br /> These parameters are submitted when CFTPARM commands are entered  |
+| PROT  | Used to query protocol parameters<br /> These parameters are submitted when CFTPROT commands are entered and differ according to the protocol configured  |
+| RECV  | Used to query the parameters of the files to be received<br /> These parameters are submitted when CFTRECV commands are entered  |
+| SEND  | Used to query the parameters of the files to be sent<br /> These parameters are submitted when CFTSEND commands are entered  |
+| XLATE  | Used to query translation tables<br /> Translation tables are customized by the CFTXLATE object |
+| CFTFILE | Used to create, empty, or delete {{< TransferCFT/componentshortname  >}} files |
+| LISTCAT | Used to query the information associated with the selected transfers, recorded in the {{< TransferCFT/componentshortname  >}} catalog |
+| DISPLAY | Used to query the information as with the LISTCAT command. It uses an external XML file that lists and describes customized models. These models are used to format the output |
+| ABOUT | Used to display the {{< TransferCFT/componentshortname  >}} computer characteristics |
+
 
 #### RECONFIG
 
 TYPE = { CRON | UCONF | CAT | FOLDER | PARMCACHE | AM}
 
--   CAT: Resize the catalog while the Transfer CFT is running (hot catalog resizing)
--   CRON: Reload the CFTCRON objects
--   FOLDER: Reload the CFTFOLDER objects
--   UCONF: Reload the dynamic UCONF parameters
--   PARMCACHE: Clear the parameter cache
--   AM: Reload roles and privileges
+- CAT: Resize the catalog while the Transfer CFT is running (hot catalog resizing)
+- CRON: Reload the CFTCRON objects
+- FOLDER: Reload the CFTFOLDER objects
+- UCONF: Reload the dynamic UCONF parameters
+- PARMCACHE: Clear the parameter cache
+- AM: Reload roles and privileges
 
 #### CFTUIPREF
 

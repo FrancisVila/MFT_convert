@@ -4,10 +4,10 @@
     "weight": "230"
 }This topic describes how to manage the ciphering key using the **cftcrypt** tool,  which ciphers all passwords. Information includes:
 
--   Overview
--   Command description
--   Renew a key
--   Upgrade a Transfer CFT
+- Overview
+- Command description
+- Renew a key
+- Upgrade a Transfer CFT
     -   Export the configuration    
     -   Generate a key
     -   Import the configuration
@@ -28,31 +28,31 @@ cftcrypt -- ACTION -- OPTION
 
 Actions:
 
--   genkey: Generate an encryption key using a password.
--   renewkey: Regenerate an encryption key using a new password along with the old password.
--   help: Display this help.
+- genkey: Generate an encryption key using a password.
+- renewkey: Regenerate an encryption key using a new password along with the old password.
+- help: Display this help.
 
 Genkey options:
 
--   keyfname: File where the generated key is stored.
--   saltfname: File where the computed salt is stored.
--   pass: Password.
+- keyfname: File where the generated key is stored.
+- saltfname: File where the computed salt is stored.
+- pass: Password.
 
 Renewkey options:
 
--   pkitmp: Temporary file where the PKI configuration is stored.
--   pkipref : Prefix for certificates temporary files (z/OS only, on all other systems the non modifiable `cftcrtmp ` value is the prefix, for example, an exported certificate could have a name such as "cftcrtmpROOT0001").
--   noremove: Do not remove the temporary file; you can use this  to keep track of what has been exported.
--   nopki:       Do not export/import the PKI base.
--   pass: Password.
--   oldpass: Old password.
--   tmpfname: Temporary file where the Transfer CFT configuration is stored.
+- pkitmp: Temporary file where the PKI configuration is stored.
+- pkipref : Prefix for certificates temporary files (z/OS only, on all other systems the non modifiable `cftcrtmp ` value is the prefix, for example, an exported certificate could have a name such as "cftcrtmpROOT0001").
+- noremove: Do not remove the temporary file; you can use this to keep track of what has been exported.
+- nopki:  Do not export/import the PKI base.
+- pass: Password.
+- oldpass: Old password.
+- tmpfname: Temporary file where the Transfer CFT configuration is stored.
 
 > **Note**
 >
-> Passwords  must contain at least 8 characters, lower case, upper case, numeric and special characters(\*#$!?+-@).
+> Passwords must contain at least 8 characters, lower case, upper case, numeric and special characters(\*#$!?+-@).
 
-Use the following command to generate an encryption key using the provided password. This creates the  `--keyfname` and `--saltfname` files, and references them in UCONF.
+Use the following command to generate an encryption key using the provided password. This creates the `--keyfname` and `--saltfname` files, and references them in UCONF.
 
 ```
 cftcrypt --genkey --keyfname FILENAME --saltfname FILENAME --pass PASSWORD
@@ -63,7 +63,7 @@ Encryption parameters in UCONF
 
 | Parameter  | Description  |
 | --- | --- |
-| crypto.key_fname  |  The path to the encryption key, which is required at {{< TransferCFT/componentlongname  >}} runtime.<br/>If this parameter is not set (empty), at runtime {{< TransferCFT/hflongproductname  >}} uses a hard-coded key and operates as in {{< TransferCFT/hflongproductname  >}} 3.2.4.  |
+| crypto.key_fname  | The path to the encryption key, which is required at {{< TransferCFT/componentlongname  >}} runtime.<br/> If this parameter is not set (empty), at runtime {{< TransferCFT/hflongproductname  >}} uses a hard-coded key and operates as in {{< TransferCFT/hflongproductname  >}} 3.2.4. |
 | crypto.salt_fname  | The path to the salt file, which is required to renew the key.  |
 
 
@@ -79,14 +79,14 @@ The command succeeds if the referenced key and salt files exist and the `oldpass
 
 Platform specifics
 
--   z/OS: Use the JCL CFTRNKEY for key renewal.
+- z/OS: Use the JCL CFTRNKEY for key renewal.
 
 ### Troubleshoot the key renewal
 
 The cftcrypt tool automatically exports/imports the PKI database when you perform a key renewal. However, to avoid potential issues, the process stops and an error is returned if an issue is detected during the PKI export/import.
 
--   To perform a key renewal with an empty PKI base or without a PKI file, you can use: ` cftcrypt --renewkey --nopki `
--   To facilitate debugging, you can use the `--noremove` option, so that the temporary files used by cftcrypt are not deleted. See the `cftcrypt --help `for more information.
+- To perform a key renewal with an empty PKI base or without a PKI file, you can use: ` cftcrypt --renewkey --nopki `
+- To facilitate debugging, you can use the `--noremove` option, so that the temporary files used by cftcrypt are not deleted. See the `cftcrypt --help `for more information.
 
 <span id="Generate"></span>
 
@@ -94,24 +94,24 @@ The cftcrypt tool automatically exports/imports the PKI database when you perfor
 
 It is highly recommended that you generate an encryption key when you upgrade a Transfer CFT 3.2.4 or lower to Transfer CFT 3.3.2 or higher. For example:
 
-1.  From the {{< TransferCFT/hflongproductname >}} runtime directory, perform the extract to export the configuration.  
+1. From the {{< TransferCFT/hflongproductname >}} runtime directory, perform the extract to export the configuration.  
     ```
     CFTUTIL cftext fout=cft332.cfg
     ```
-2.  Export the PKI database.  
+1. Export the PKI database.  
     ```
     PKIUTIL PKIEXT FOUT=PKI.EXT
     ```
-3.  Generate a new encryption key.  
+1. Generate a new encryption key.  
     ```
     cftcrypt --genkey --keyfname data/crypto/cryptkey --saltfname data/crypto/cryptsalt --pass MyPassword1\*
     ```
-4.  Import the PKI database.  
+1. Import the PKI database.  
     ```
     PKIUTIL @ PKI.EXT
     (or PKIUTIL # PKI.EXT depending on your system)
     ```
-5.  Import the configuration.  
+1. Import the configuration.  
     ```
     CFTUTIL config type=input,fname=cft332.cfg
     ```

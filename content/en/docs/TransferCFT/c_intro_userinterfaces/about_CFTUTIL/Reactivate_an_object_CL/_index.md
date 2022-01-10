@@ -5,19 +5,19 @@
 }This topic describes the ACT command and its parameters. You can use
 the ACT command to reactivate:
 
--   One or more partners (CFTPART)
--   Sentinel notifications
--   CRON object (CFTCRON)
--   Folder object (CFTFOLDER)
+- One or more partners (CFTPART)
+- Sentinel notifications
+- CRON object (CFTCRON)
+- Folder object (CFTFOLDER)
 
-Command  guide: [ACT](../../command_summary#ACT)
+Command guide: [ACT](../../command_summary#ACT)
 
 
-|  Parameter  |  Description  |
+| Parameter | Description |
 | --- | --- |
-|  <a href="../../command_summary/parameter_intro/id">ID</a>  |  Identifier for the object to be reactivated. To reactivate several objects with a single command, use wildcard characters or meta characters.  |
-|  <a href="../../command_summary/parameter_intro/mode">MODE</a>  |  Mode to be reactivated on partners (only when TYPE=PART object):<br/> • BOTH (default)<br/> • REQUESTER<br/> • SERVER<br/>You can use the shortcuts B, R and S in place of the keywords.  |
-|  <a href="../../command_summary/parameter_intro/type">TYPE</a>  |  Object to reactivate:<br/> • PART<br/> • TRK<br/> • CRON<br/> • FOLDER</li>  |
+| <a href="../../command_summary/parameter_intro/id">ID</a>  | Identifier for the object to be reactivated. To reactivate several objects with a single command, use wildcard characters or meta characters. |
+| <a href="../../command_summary/parameter_intro/mode">MODE</a> | Mode to be reactivated on partners (only when TYPE=PART object):<br/> • BOTH (default)<br/> • REQUESTER<br/> • SERVER<br/> You can use the shortcuts B, R and S in place of the keywords. |
+| <a href="../../command_summary/parameter_intro/type">TYPE</a>  | Object to reactivate:<br/> • PART<br/> • TRK<br/> • CRON<br/> • FOLDER |
 
 
 ## Using the ACT command
@@ -34,8 +34,8 @@ ACT TYPE=PART,ID=<CFTPART_ID>,MODE=<mode>
 
 Where:
 
--   is the identifier for the partner to activate. To activate several partners with a single command, use wildcard characters or meta characters
--   is the mode to be activated, with values: "BOTH" , "B", "REQUESTER", "R" , "SERVER", "S"
+- is the identifier for the partner to activate. To activate several partners with a single command, use wildcard characters or meta characters
+- is the mode to be activated, with values: "BOTH" , "B", "REQUESTER", "R" , "SERVER", "S"
 
 Example
 
@@ -59,9 +59,9 @@ provided or modified by a directory EXIT.
 When a partner is reactivated, transfer requests that were suspended
 by the INACT command:
 
--   Are restarted automatically
+- Are restarted automatically
     in requester mode (diagnostics code 430)
--   Must be restarted
+- Must be restarted
     with the START command in all other cases
 
 ### Activate Sentinel notifications

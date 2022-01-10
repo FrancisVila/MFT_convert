@@ -3,7 +3,7 @@
     "linkTitle": "Transfer states",
     "weight": "280"
 }This section describes transfers, and how to create and
-manage your transfer operations using {{< TransferCFT/componentshortname  >}}.  
+manage your transfer operations using {{< TransferCFT/componentshortname  >}}.
 
 {{< TransferCFT/componentshortname  >}} can execute both file and message transfers. A transfer
 consists of a set of processes that result in the exchange of files between
@@ -15,90 +15,45 @@ file transfer may consist of sending a file, group of files, or a message.
 
 To view the transfers log:
 
-1.  In the left pane, click **Transfer**.
-2.  In the main pane, select a transfer.
-3.  Click the transfer action.  
-    <img src="/Images/TransferCFT/ui_transfers.png" class="maxWidth" />
+1. In the left pane, click **Transfer**.
+1. In the main pane, select a transfer.
+1. Click the transfer action.  
+    ![]($1)
 
 Available actions to include in the Transfers page include:
 
-```
 
-UI
+| UI  | Parameter details  | Description  |
+| --- | --- | --- |
+| New  | <a href="../../../concepts" >Managing transfers and partners</a>  | Create a new transfer request  |
+| Clone  | No equivalent parameter  | Copy an existing transfer request  |
+| Restart  | <a href="start_command">Restarting transfers</a> | Restart transfers in the H or K state in the catalog |
+| Delete  | <a href="../../../admin_intro/admin_commands_intro/delete_command">Deleting catalog entries</a> | Delete one or more catalog entries |
+|   | <a href="keep_command">Suspending transfers</a> | Suspend one or all of the send and/or receive transfers with selected partners |
+|   | <a href="submit_command">Submitting an end-of-tranfser</a> | Submit an end-of-transfer procedure for each selected transfer |
+| Halt  | <a href="halt_command">Halting a transfer</a> | Suspend one or all the send and/or receive transfers, with the partners selected |
+| End  | <a href="end_command">Declaring executed transfers</a> | Declare that all the operations related to the end-of-transfer, send and receive, have been executed correctly |
+|   | <a href="resume_command">Retrieving a blocked request</a> | Retrieves, in server mode, a blocked send request that has the *hold* status, if the diagnostic codes are not null |
+|   | <a href="kstate_command">Suspending a catalog request</a> | Suspend a transfer in the catalog |
+|   | <a href="clearcmd_command">Deleting a transfer request</a> | Delete a transfer request from the communication file |
+| Ack  | <a href="../../../concepts/using_the_send_command/sending_replies" >Use the SEND acknowledgement commands</a>  | Send a transfer acknowledgement  |
+| Nack  | <a href="../../../concepts/using_the_send_command/transfers_neg_ack_pesit" >Sending a negative acknowledgement</a>  | Send a notification indicating an error occurred  |
 
-Parameter details
 
-Description
-
-New
-<a href="../../../concepts" class="MCXref xref">Managing transfers and partners</a>
-Create a new transfer request
-Clone
-No equivalent parameter
-Copy an existing transfer request
-Restart
-[Restarting
-transfers](start_command)
-Restart transfers in the H or K state in the catalog
-Delete
-[Deleting
-catalog entries](../../../admin_intro/admin_commands_intro/delete_command)
-Delete one or more catalog entries
- 
-[Suspending
-transfers](keep_command)
-Suspend one or all of the send and/or receive transfers
-with selected partners
- 
-[Submitting
-an end-of-tranfser](submit_command)
-Submit an end-of-transfer procedure for each selected
-transfer
-Halt
-[Halting
-a transfer](halt_command)
-Suspend one or all the send and/or receive transfers,
-with the partners selected
-End
-[Declaring
-executed transfers](end_command)
-Declare that all the operations related to the end-of-transfer,
-send and receive, have been executed correctly
- 
-[Retrieving
-a blocked request](resume_command)
-Retrieves, in server mode, a blocked send request that
-has the *hold* status, if the diagnostic codes are not null
- 
-[Suspending
-a catalog request](kstate_command)
-Suspend a transfer in the catalog
- 
-[Deleting
-a transfer request](clearcmd_command)
-Delete a transfer request from the communication file
-Ack
-<a href="../../../concepts/using_the_send_command/sending_replies" class="MCXref xref">Use the SEND acknowledgement commands  </a>
-Send a transfer acknowledgement
-Nack
-<a href="../../../concepts/using_the_send_command/transfers_neg_ack_pesit" class="MCXref xref">Sending a negative acknowledgement</a>
-Send a notification indicating an error occurred
-```
-
-## Create  transfer requests filters
+## Create transfer requests filters
 
 To create a new transfer request filter or modify an existing filter:
 
-1.  Click an exiting filter to use as the basis for the filter or click the filter icon ![](/Images/TransferCFT/filter_create.png) .
-2.  Customize the filter.
-3.  Click **Save** if you are modifying and existing filter or **Save as...** if this is a new filter.
+1. Click an exiting filter to use as the basis for the filter or click the filter icon ![](/Images/TransferCFT/filter_create.png) .
+1. Customize the filter.
+1. Click **Save** if you are modifying and existing filter or **Save as...** if this is a new filter.
 
 ## Display transfer request details
 
 To display transfer request details:
 
--   Click any line to expand details that include the severity, timing, code, and message.
--   Click the IDTU to display the request details.
+- Click any line to expand details that include the severity, timing, code, and message.
+- Click the IDTU to display the request details.
 
 For details on the transfer states in Transfer CFT,
 refer to Transfer states
@@ -108,13 +63,13 @@ topic.
 
 Optionally you can select a **Layout** in the drop-down menu to use a customized column or filter display. To create a new layout:
 
--   Click the settings icon ![](/Images/TransferCFT/settings_icon.png)to open the column options. You can use the filter field to help you find fields more quickly.
--   Add or remove the filters you want to display in your page layout.
--   Click **Save as** and name the layout.
+- Click the settings icon ![](/Images/TransferCFT/settings_icon.png)to open the column options. You can use the filter field to help you find fields more quickly.
+- Add or remove the filters you want to display in your page layout.
+- Click **Save as** and name the layout.
 
 > **Note**
 >
-> These page customizations are defined in the CFTUIPREF object.  
+> These page customizations are defined in the CFTUIPREF object.
 
 ## Troubleshooting transfer filters
 

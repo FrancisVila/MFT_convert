@@ -10,60 +10,19 @@ File type when the file does not exist
 
 The following table lists the different types of files that can be created on an IBM i system if the file to receive does not already exist:
 
-<table>
-   <thead>
-      <tr>
-<th rowspan="2" >FTYPE         </th>
-<th rowspan="2" >FRECFM         </th>
-<th colspan="2" >Created file         </th>
-      </tr>
-      <tr>
-<th >Type         </th>
-<th >Max record length         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td rowspan="2" ><p>‘D’</p>         </td>
-         <td ><p>‘F’</p>         </td>
-         <td ><p>PF-DTA </p>         </td>
-         <td ><p>FLRECL</p>         </td>
-      </tr>
-      <tr>
-         <td ><p>‘V’</p>         </td>
-         <td ><p>PF-DTA</p>         </td>
-         <td ><p>FLRECL + 5 bytes <sup>1</sup></p>         </td>
-      </tr>
-      <tr>
-         <td rowspan="2" ><p>‘S’</p>         </td>
-         <td ><p>‘F’</p>         </td>
-         <td ><p>PF-SRC</p>         </td>
-         <td ><p>FLRECL</p>         </td>
-      </tr>
-      <tr>
-         <td ><p>‘V’</p>         </td>
-         <td ><p>PF-SRC</p>         </td>
-         <td ><p>FLRECL</p>         </td>
-      </tr>
-      <tr>
-         <td rowspan="2" ><p>‘E’</p>         </td>
-         <td ><p>‘F’</p>         </td>
-         <td ><p>PF-SRC</p>         </td>
-         <td ><p>FLRECL  +12  bytes <sup>2</sup></p>         </td>
-      </tr>
-      <tr>
-         <td ><p>‘V’</p>         </td>
-         <td ><p>PF-SRC</p>         </td>
-         <td ><p>FLRECL  +12  bytes <sup>2</sup></p>         </td>
-      </tr>
-      <tr>
-         <td ><p>‘Z’</p>         </td>
-         <td ><p>-</p>         </td>
-         <td ><p>SAVF</p>         </td>
-         <td ><p>NA</p>         </td>
-      </tr>
-   </tbody>
-</table>
+QQQ\_QQQ\_QQQ
+
+
+| FTYPE  | FRECFM  | Created file<br /> Type  | Created file<br /> Max record length  |
+| --- | --- | --- | --- |
+| ‘D’ | ‘F’ | PF-DTA  | FLRECL |
+| ‘D’  | ‘V’ | PF-DTA | FLRECL + 5 bytes <sup>1</sup> |
+| ‘S’ | ‘F’ | PF-SRC | FLRECL |
+| ‘S’  | ‘V’ | PF-SRC | FLRECL |
+| ‘E’ | ‘F’ | PF-SRC | FLRECL +12 bytes <sup>2</sup> |
+| ‘E’  | ‘V’ | PF-SRC | FLRECL +12 bytes <sup>2</sup> |
+| ‘Z’ | - | SAVF | NA |
+
 
 File type when the file already exists
 
@@ -73,85 +32,19 @@ The following table describes the {{< TransferCFT/hflongproductname  >}} behavio
 >
 > Bold  values indicate a recommended combination. For example, when FTYPE=D and FRECFM=V then FLRECL+5 / 5 is the recommended PF-SRC.
 
-<table>
-   <thead>
-      <tr>
-<th rowspan="2" >  FTYPE         </th>
-<th rowspan="2" >  FRECFM         </th>
-<th  colspan="3" >Existing file         </th>
-      </tr>
-      <tr>
-<th ><p>PF-DTA</p>
-<p>Record length / member header</p>         </th>
-<th ><p>PF-SRC</p>
-<p>Record length / member header</p>         </th>
-<th ><p>Overwriting on a SAVF</p>
-<p>with FACTION=ERASE</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td rowspan="2" ><p>‘D’</p>         </td>
-         <td ><p>‘F’</p>         </td>
-         <td ><p><strong>FLRECL / No</strong></p>         </td>
-         <td ><p>FLRECL / No</p>         </td>
-         <td ><p>Yes <sup>3</sup></p>         </td>
-      </tr>
-      <tr>
-         <td ><p>‘V’</p>         </td>
-         <td ><p>FLRECL+5 / 5</p>         </td>
-         <td ><p><strong>FLRECL+5 / 5</strong></p>         </td>
-         <td ><p>Yes <sup>3</sup></p>         </td>
-      </tr>
-      <tr>
-         <td rowspan="2" ><p>‘S’</p>
-<p> </p>         </td>
-         <td ><p>‘F’</p>         </td>
-         <td ><p>FLRECL / 0  OK</p>         </td>
-         <td ><p><strong>FLRECL / 12</strong></p>         </td>
-         <td ><p>Error</p>
-<p>DIAGI: 102</p>
-<p>DIAGP: 1140850696</p>         </td>
-      </tr>
-      <tr>
-         <td ><p>‘V’</p>         </td>
-         <td ><p>FLRECL+17 /  17</p>         </td>
-         <td ><p>FLRECL+17 /  17</p>         </td>
-         <td ><p>Error</p>
-<p>DIAGI: 102</p>
-<p>DIAGP: 1140850696</p>         </td>
-      </tr>
-      <tr>
-         <td rowspan="2" ><p>‘E’</p>         </td>
-         <td ><p>‘F’</p>         </td>
-         <td ><p>FLRECL +12 / 0</p>         </td>
-         <td ><p><strong>FLRECL +12 / 12</strong></p>         </td>
-         <td ><p>Error</p>
-<p>DIAGI: 102</p>
-<p>DIAGP: 1140850696</p>         </td>
-      </tr>
-      <tr>
-         <td ><p>‘V’</p>         </td>
-         <td ><p>FLRECL+17 /17</p>
-<p> </p>         </td>
-         <td ><p>FLRECL+17 /  5</p>         </td>
-         <td ><p>Error</p>
-<p>DIAGI: 102</p>
-<p>DIAGP: 1140850696</p>         </td>
-      </tr>
-      <tr>
-         <td ><p>‘Z’</p>         </td>
-         <td ><p>-</p>         </td>
-         <td ><p>Error</p>
-<p>DIAGI: 102</p>
-<p>DIAGP: 1140850696</p>         </td>
-         <td ><p>Error</p>
-<p>DIAGI: 101</p>
-<p>DIAGP: 11409169</p>         </td>
-         <td ><p>Yes <sup>3</sup></p>         </td>
-      </tr>
-   </tbody>
-</table>
+QQQ\_QQQ\_CHECK Does **Existing file** apply to col 5?
+
+
+| FTYPE  | FRECFM  | Existing file: PF-DTA<br/> Record length / member header | Existing file: PF-SRC<br/> Record length / member header | Overwriting on a SAVF<br/> with FACTION=ERASE |
+| --- | --- | --- | --- | --- |
+| ‘D’ | ‘F’ | **FLRECL / No** | FLRECL / No | Yes <sup>3</sup> |
+| ‘D’  | ‘V’ | FLRECL+5 / 5 | **FLRECL+5 / 5** | Yes <sup>3</sup> |
+| ‘S’ | ‘F’ | FLRECL / 0 OK | **FLRECL / 12** | Error<br/> DIAGI: 102<br/> DIAGP: 1140850696 |
+| ‘S’  | ‘V’ | FLRECL+17 / 17 | FLRECL+17 / 17 | Error<br/> DIAGI: 102<br/> DIAGP: 1140850696 |
+| ‘E’ | ‘F’ | FLRECL +12 / 0 | **FLRECL +12 / 12** | Error<br/> DIAGI: 102<br/> DIAGP: 1140850696 |
+| ‘E’  | ‘V’ | FLRECL+17 /17<br/>  | FLRECL+17 / 5 | Error<br/> DIAGI: 102<br/> DIAGP: 1140850696 |
+| ‘Z’ | - | Error<br/> DIAGI: 102<br/> DIAGP: 1140850696 | Error<br/> DIAGI: 101<br/> DIAGP: 11409169 | Yes <sup>3</sup> |
+
 
 <sup>1</sup> The file is created with a record length corresponding to the record length of the original file, plus 5 bytes corresponding to five header bytes in each record. These 5 bytes indicate the length of useful data.
 

@@ -2,7 +2,7 @@
     "title": "Upgrade Transfer CFT IBM i",
     "linkTitle": "Upgrade Transfer CFT IBM i",
     "weight": "230"
-}This page describes two upgrade procedures for Transfer CFT 3.7  IBM i. The automatic upgrade procedure requires fewer user inputs than the manual procedure, and is the procedure of choice. This upgrade procedure enables you to change the version of an installed Transfer CFT to a more recent version while conserving its current configuration. Additionally, you can use the [rollback](#) feature if a situation arises where you  need to return to a previous version.
+}This page describes two upgrade procedures for Transfer CFT 3.7 IBM i. The automatic upgrade procedure requires fewer user inputs than the manual procedure, and is the procedure of choice. This upgrade procedure enables you to change the version of an installed Transfer CFT to a more recent version while conserving its current configuration. Additionally, you can use the [rollback](#) feature if a situation arises where you need to return to a previous version.
 
 > **Note**
 >
@@ -19,8 +19,8 @@
 
 Before beginning the upgrade procedure:
 
--   Check that you can access the Transfer CFT upgrade pack available for download from Axway at [support.axway.com](https://support.axway.com/).
--   Stop the Transfer CFT server and the Transfer CFT Copilot (UI) server. Enter:
+- Check that you can access the Transfer CFT upgrade pack available for download from Axway at [support.axway.com](https://support.axway.com/).
+- Stop the Transfer CFT server and the Transfer CFT Copilot (UI) server. Enter:
 
 ```
 CFTSTOP
@@ -38,12 +38,12 @@ CFTUTIL about
 
 ### Uploading the installation package
 
-Start the UPGRADE process  by uploading the Transfer CFT installation package in binary mode to the IBM i system:
+Start the UPGRADE process by uploading the Transfer CFT installation package in binary mode to the IBM i system:
 
-1.  Log in with the `CFTINST `user.
-2.  Create a temporary library: `CRTLIB CFTTMP`
-3.  Create a SAVF file: `CRTSAVF FILE(CFTTMP/CFT37)`
-4.  Upload the installation package to the SAVF in binary mode using FTP:  
+1. Log in with the `CFTINST `user.
+1. Create a temporary library: `CRTLIB CFTTMP`
+1. Create a SAVF file: `CRTSAVF FILE(CFTTMP/CFT37)`
+1. Upload the installation package to the SAVF in binary mode using FTP:  
     ```
     binary
     cd CFTTMP
@@ -52,21 +52,21 @@ Start the UPGRADE process  by uploading the Transfer CFT installation package in
 
 <!-- -->
 
-1.  Restore the SAVF file in the temporary library:  
+1. Restore the SAVF file in the temporary library:  
     ```
     RSTLIB SAVLIB(CFTPG) DEV(\*SAVF) SAVF(CFTTMP/CFT37) OPTION(\*NEW) RSTLIB(CFTTMP)
     ```
 
 <!-- -->
 
-1.  After restoring the SAVF, you must add the library name in the first position of the library list for the user profile. Execute the command:  
+1. After restoring the SAVF, you must add the library name in the first position of the library list for the user profile. Execute the command:  
     ```
     ADDLIBLE LIB(CFTTMP) POSITION(\*FIRST)
     ```
 
 > **Note**
 >
-> The  user performing the upgrade requires the same rights as for a regular installation or update (\*JOBCTL, \*SPLCTL, and \*ALLOBJ).
+> The user performing the upgrade requires the same rights as for a regular installation or update (\*JOBCTL, \*SPLCTL, and \*ALLOBJ).
 
 ### Executing the UPGRADE command
 
@@ -82,12 +82,12 @@ Are you rolling back? . . . . . .ROLLBACK       '2'      
 
 The following fields are mandatory; you should complete as per your system details:
 
--   CFTEXTLIB: Enter the name of the temporary library used to process the upgrade. This can be existing or non-existent library, but its content is cleared during the process.
--   CFTPGM: Enter the name of the library containing the binaries of your Transfer CFT to upgrade.
--   CFTPROD: Enter the name of the library containing the working files of your Transfer CFT to upgrade.
--   ROLLBACK: '1': Enables the rollback mode (YES).    
+- CFTEXTLIB: Enter the name of the temporary library used to process the upgrade. This can be existing or non-existent library, but its content is cleared during the process.
+- CFTPGM: Enter the name of the library containing the binaries of your Transfer CFT to upgrade.
+- CFTPROD: Enter the name of the library containing the working files of your Transfer CFT to upgrade.
+- ROLLBACK: '1': Enables the rollback mode (YES).  
     ‘2’: Indicates that you are NOT rolling back to a previous {{< TransferCFT/transfercftname >}} version (NO).
--   SAVF: This field only displays when you enter '1' in the ROLLBACK field. In this case, enter the name of the SAVF for the version you want to apply. The default value is the name of SAVF for the version that you downloaded. See [Rolling back an upgrade](#Rolling) for details.
+- SAVF: This field only displays when you enter '1' in the ROLLBACK field. In this case, enter the name of the SAVF for the version you want to apply. The default value is the name of SAVF for the version that you downloaded. See [Rolling back an upgrade](#Rolling) for details.
 
 ### Check the new version
 
@@ -101,24 +101,24 @@ CFTUTIL about
 
 Running the UPGRADE command:
 
-1.  Creates a temporary library.
-2.  Extracts your configuration, COM file, CAT file into this temporary library.
-3.  Saves your IFS directories by moving them to new directories having the same name but which are suffixed by “\_save”.
-4.  Saves your {{< TransferCFT/transfercftname >}} libraries in the SAVF located in the temporary lib.
-5.  Replaces the binaries in your CFTPGM libraries by those of the new {{< TransferCFT/transfercftname >}} version.
-6.  Replaces your IFS directories by those of the new {{< TransferCFT/transfercftname >}} version.
-7.  Imports your configuration into your upgraded {{< TransferCFT/transfercftname >}}.
+1. Creates a temporary library.
+1. Extracts your configuration, COM file, CAT file into this temporary library.
+1. Saves your IFS directories by moving them to new directories having the same name but which are suffixed by “\_save”.
+1. Saves your {{< TransferCFT/transfercftname >}} libraries in the SAVF located in the temporary lib.
+1. Replaces the binaries in your CFTPGM libraries by those of the new {{< TransferCFT/transfercftname >}} version.
+1. Replaces your IFS directories by those of the new {{< TransferCFT/transfercftname >}} version.
+1. Imports your configuration into your upgraded {{< TransferCFT/transfercftname >}}.
 
 As a result, your {{< TransferCFT/transfercftname  >}} binaries are upgraded, but their location is conserved.
 
 ### Upgrading multi-node installations
 
 The UPGRADE procedure supports multi-node configurations, where your configuration remains strictly the same.
-        &lt;/p>
+&lt;/p>
 
 ### About IASP installations
 
-The procedure supports the upgrade of {{< TransferCFT/transfercftname  >}} installed on an IASP. The process remains the same, the UPGRADE procedure itself detects  if the {{< TransferCFT/transfercftname  >}} is an installation on ASP, and then keeps the {{< TransferCFT/transfercftname  >}} in the same ASP.
+The procedure supports the upgrade of {{< TransferCFT/transfercftname  >}} installed on an IASP. The process remains the same, the UPGRADE procedure itself detects if the {{< TransferCFT/transfercftname  >}} is an installation on ASP, and then keeps the {{< TransferCFT/transfercftname  >}} in the same ASP.
 
 > **Note**
 >
@@ -136,15 +136,15 @@ This section explains how to upgrade an existing Transfer CFT IBM i from 2.7.1,
 
 The manual upgrade procedure is similar to the migration procedure.
 
-1.  Load the former Transfer CFT CFT 2.7.1, 3.0.1, or 3.1.3 environment.
-2.  Stop Transfer CFT.
-3.  Create a backup library to save your configuration:
+1. Load the former Transfer CFT CFT 2.7.1, 3.0.1, or 3.1.3 environment.
+1. Stop Transfer CFT.
+1. Create a backup library to save your configuration:
 
 ```
 CRTLIB LIB(CFTUPGLIB)
 ```
 
-1.  Export your configuration.
+1. Export your configuration.
     -   Export your static configuration objects using the command CFTUTIL CFTEXT:
 
     ```
@@ -167,8 +167,7 @@ CRTLIB LIB(CFTUPGLIB)
     ```
     -   Additionally, you must export any procedures that are specific to your production, sample APIs, exits, and execs to your backup library.
 
-2.  Rename the INSTALL directory, the RUNTIME directory, and the Transfer CFT libraries.
-                
+1. Rename the INSTALL directory, the RUNTIME directory, and the Transfer CFT libraries.
     ```
     STRQSH CMD('mv /home/cft/install /home/cft/install_save')
     STRQSH CMD('mv /home/cft/runtime /home/cft/runtime_save')
@@ -176,14 +175,14 @@ CRTLIB LIB(CFTUPGLIB)
     RNMOBJ OBJ(QSYS/CFTPGM) OBJTYPE(\*LIB) NEWOBJ(CFTPGMSAV)
     ```
 
-3.  You can now install the new Transfer CFT version. See <a href="../../install_intro_ibmi/use_install_command" class="MCXref xref">About the INSTALL command</a>.
+1. You can now install the new Transfer CFT version. See <a href="../../install_intro_ibmi/use_install_command" class="MCXref xref">About the INSTALL command</a>.
 
-4.  Import the configuration.
+1. Import the configuration.
 
     -   Import your static configuration objects using the command:
 
     ```
-    CFTINIT FILES('CFTUPGLIB/EXTCONF')  
+    CFTINIT FILES('CFTUPGLIB/EXTCONF')
     ```
 
     -   Import your PKI certificates using the PKIUTIL command:
@@ -224,15 +223,15 @@ CFTUTIL about
 
 The multi-node procedure is similar to the single instance upgrade procedure. **However, when exporting CAT and COM, you must export your configuration for each node.**
 
-1.  Load the former Transfer CFT 2.7.1, 3.0.1, or 3.1.3 environment.
-2.  Stop Transfer CFT IBM i.
-3.  Create a temporary library for your exported configuration:  
+1. Load the former Transfer CFT 2.7.1, 3.0.1, or 3.1.3 environment.
+1. Stop Transfer CFT IBM i.
+1. Create a temporary library for your exported configuration:
 
 ```
 CRTLIB LIB(CFTUPGLIB)
 ```
 
-1.  Export your configuration.
+1. Export your configuration.
     -   Export your static configuration objects using the command:
 
     ```
@@ -255,17 +254,16 @@ CRTLIB LIB(CFTUPGLIB)
     <!-- -->
 
     -   You must also export any procedures that are specific to your production, such as APIs, exits, execs, etc. (Copy your API, exit sources, exec, and specific scripts.)
-2.  Change the hostname for each Transfer CFT.
-    Rename the INSTALL and RUNTIME directories, and the Transfer CFT libraries:              
+1. Change the hostname for each Transfer CFT.
+    Rename the INSTALL and RUNTIME directories, and the Transfer CFT libraries:  
     ```
     STRQSH CMD('mv /home/cft/install /home/cft/install_save')
     STRQSH CMD('mv /home/cft/runtime /home/cft/runtime_save')
     RNMOBJ OBJ(QSYS/CFTPROD) OBJTYPE(\*LIB) NEWOBJ(CFTPRODSAV)
     RNMOBJ OBJ(QSYS/CFTPGM) OBJTYPE(\*LIB) NEWOBJ(CFTPGMSAV)
     ```
-3.  You can now install the new Transfer CFT version. See <a href="../../install_intro_ibmi/use_install_command" class="MCXref xref">About the INSTALL command</a>.
-4.  Import the configuration that you saved previously in the temporary directory created in Step 3:
-                
+1. You can now install the new Transfer CFT version. See <a href="../../install_intro_ibmi/use_install_command" class="MCXref xref">About the INSTALL command</a>.
+1. Import the configuration that you saved previously in the temporary directory created in Step 3:
     ```
     CFTINIT FILES('CFTUPGLIB/EXTCONF')
     ```
@@ -283,7 +281,7 @@ CRTLIB LIB(CFTUPGLIB)
     -   Import the communication media file using the CFTMI command:
         -   For each communication media file, enter:
         -   For each node, enter:
-    -                       Import specific procedures to your production, for example APIs, EXITs, and execs from the CFTUPGLIB backup library.                   &lt;blockquote>&lt;html>&lt;body>&lt;p>&lt;b>Note&lt;/b> &lt;/p>&lt;/body>&lt;/html>You must recompile these after upgrading.&lt;/blockquote>&lt;/li>&lt;/ul>&lt;/li>
+    -   Import specific procedures to your production, for example APIs, EXITs, and execs from the CFTUPGLIB backup library. &lt;blockquote>&lt;html>&lt;body>&lt;p>&lt;b>Note&lt;/b> &lt;/p>&lt;/body>&lt;/html>You must recompile these after upgrading.&lt;/blockquote>&lt;/li>&lt;/ul>&lt;/li>
 
 ### Check the new version
 

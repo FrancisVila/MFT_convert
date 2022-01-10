@@ -6,7 +6,7 @@
 
 #### SEND, RECV
 
-\[EXECE             {   string max\_length=512}\]
+\[EXECE { string max\_length=512}\]
 
 Error file to execute when an error leads to the K (killed) PHASESTEP. This value overrides the CFTPARM [EXECRE](../execre)/[EXECSE](../execse) value.
 

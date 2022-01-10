@@ -14,9 +14,9 @@ An upgrade is the process of updating to a newer, enhanced version of the softwa
 
 This mode has the following advantages:
 
--   Allows you to update in the same location
--   You can perform this upgrade yet still revert to the previous state if needed
--   Scripts and APIs remain intact and only require a recompilation for the APIs
+- Allows you to update in the same location
+- You can perform this upgrade yet still revert to the previous state if needed
+- Scripts and APIs remain intact and only require a recompilation for the APIs
 
 ## About migrations
 
@@ -24,8 +24,8 @@ A migration means that an initial Transfer CFT is installed in a directory that 
 
 This mode has the following advantages:
 
--   The new installation occurs in a new location, and the existing configuration in the existing Transfer CFT environment  is not affected.
--   You can choose to use either of the versions, if needed, in case of an issue with one of the installations.
+- The new installation occurs in a new location, and the existing configuration in the existing Transfer CFT environment is not affected.
+- You can choose to use either of the versions, if needed, in case of an issue with one of the installations.
 
 > **Note**
 >
@@ -33,51 +33,51 @@ This mode has the following advantages:
 
 This mode has the following restriction:
 
--   You must copy scripts and APIs from the previous version to the new installation.
+- You must copy scripts and APIs from the previous version to the new installation.
 
 ## About manual migrations
 
-The manual migration procedure,  used to migrate an existing Transfer CFT to Transfer CFT {{< TransferCFT/releasenumber  >}}, is  described in this document.
+The manual migration procedure, used to migrate an existing Transfer CFT to Transfer CFT {{< TransferCFT/releasenumber  >}}, is described in this document.
 
 The general procedure for migrating from a previous version of Transfer CFT to Transfer CFT {{< TransferCFT/releasenumber  >}} is:
 
-1.  Export existing information from the previous version. Details vary depending on the existing Transfer CFT version.
-2.  Import the exported information into Transfer CFT {{< TransferCFT/releasenumber >}}.
+1. Export existing information from the previous version. Details vary depending on the existing Transfer CFT version.
+1. Import the exported information into Transfer CFT {{< TransferCFT/releasenumber >}}.
 
 This mode has the following advantages:
 
--   Because it is manual, you can customize as needed.
--   You can migrate from versions older than version 2.7.x.
+- Because it is manual, you can customize as needed.
+- You can migrate from versions older than version 2.7.x.
 
 ## Prerequisites
 
 ### Important information before performing an upgrade or migration procedure
 
--   You must update your {{< TransferCFT/componentshortname >}} to the most recent service pack version.
--   Backup {{< TransferCFT/componentshortname >}} before beginning an upgrade or migration procedure.
--   Before beginning the upgrade or migration procedure stop the existing version of Transfer CFT  and the UI server. (I.e., you must stop all cluster nodes  as a database migration occurs when performing an upgrade.)
+- You must update your {{< TransferCFT/componentshortname >}} to the most recent service pack version.
+- Backup {{< TransferCFT/componentshortname >}} before beginning an upgrade or migration procedure.
+- Before beginning the upgrade or migration procedure stop the existing version of Transfer CFT and the UI server. (I.e., you must stop all cluster nodes as a database migration occurs when performing an upgrade.)
 
 ### About license keys
 
--   You require a new license key if you are migrating from a version 2.x {{< TransferCFT/componentshortname >}} to a version 3.x.
--   For details on how to apply or update a license key, and the new license key location, see the section **Apply a license key**.
+- You require a new license key if you are migrating from a version 2.x {{< TransferCFT/componentshortname >}} to a version 3.x.
+- For details on how to apply or update a license key, and the new license key location, see the section **Apply a license key**.
 
 > **Note**
 >
-> You require  as many keys as instances of Transfer CFT running at same time. For example, two Transfer CFT instances cannot run at the same time, on the same server, using the same license key.
+> You require as many keys as instances of Transfer CFT running at same time. For example, two Transfer CFT instances cannot run at the same time, on the same server, using the same license key.
 
 ## Prior to upgrading with a service pack
 
 Upgrading Transfer CFT by applying a new service pack can overwrite your Transfer CFT program and production library. Therefore, as a precaution, prior to upgrading you must:     
 
--   Copy the existing Transfer CFT program library, for example CFTPGM in CFTPGM.O.
--   Copy the existing Transfer CFT production library, for example CFTPROD in CFTPROD.O.
+- Copy the existing Transfer CFT program library, for example CFTPGM in CFTPGM.O.
+- Copy the existing Transfer CFT production library, for example CFTPROD in CFTPROD.O.
 
 The CFTPROD library contains your personal data and should not be cleared. Data may include:
 
--   Files, the UCONF file, Transfer CFT batch procedures, system objects (\*datara,\*jobd, \*sbsd,\*cls,\*jobq, etc.)
--   Scripts, procedures, files used by the Transfer CFT Enabler OS/400 Connector
--   Internal Access Management files
+- Files, the UCONF file, Transfer CFT batch procedures, system objects (\*datara,\*jobd, \*sbsd,\*cls,\*jobq, etc.)
+- Scripts, procedures, files used by the Transfer CFT Enabler OS/400 Connector
+- Internal Access Management files
 
 > **Note**
 >
@@ -89,13 +89,13 @@ To facilitate migrations and upgrades, you may want to customize the TCPPARAM fi
 
 For example:
 
-1.  Create a new library:  
+1. Create a new library:  
     CRTLIB CFTEXEC
-2.  Create a file that will contain your procedures:  
+1. Create a file that will contain your procedures:  
     CRTSRCPF FILE(CFTEXEC/UTIN) RCLEN(240)
-3.  Copy or create your procedures in the CFTEXEC/UTIN file.
-4.  Update the Transfer CFT configuration, meaning all exec values in the TCPPARAM, to use this new library.
+1. Copy or create your procedures in the CFTEXEC/UTIN file.
+1. Update the Transfer CFT configuration, meaning all exec values in the TCPPARAM, to use this new library.
 
 ## Register with
 
-If you intend to implement  , please refer to the {{< TransferCFT/componentlongname  >}} *User's Guide &gt; [*Register with*](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.
+If you intend to implement , please refer to the {{< TransferCFT/componentlongname  >}} *User's Guide &gt; [*Register with*](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.

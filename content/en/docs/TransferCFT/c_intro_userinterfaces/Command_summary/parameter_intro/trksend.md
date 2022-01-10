@@ -16,11 +16,11 @@ value is not defined.
 
 Select one of the following options:
 
--   **NO** <span style="font-style: normal;">(default value): the monitor never sends
+- **NO** <span style="font-style: normal;">(default value): the monitor never sends
     Tracked Instances to Sentinel</span>
--   <span style="font-weight: bold;">ALL</span>: for each step of each transfer
+- <span style="font-weight: bold;">ALL</span>: for each step of each transfer
     process, the monitor sends a Tracked Instance to Sentinel
--   <span style="font-weight: bold;">SUMMARY</span>:
+- <span style="font-weight: bold;">SUMMARY</span>:
     for both the initial step and the final step of each transfer process,
     the monitor sends a Tracked Instance to Sentinel
 

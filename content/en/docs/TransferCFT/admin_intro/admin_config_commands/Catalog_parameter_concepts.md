@@ -4,14 +4,14 @@
     "weight": "240"
 }-   Command syntax
     [CFTCAT](../../../c_intro_userinterfaces/command_summary#CFTCAT)
--   Parameter list
+- Parameter list
     [CFTCAT](../../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftcat)
 
 <span id="About_the_CFTCAT_object"></span>
 
 ### About the CFTCAT object
 
-The  {{< TransferCFT/componentshortname  >}} catalog displays all  {{< TransferCFT/componentshortname  >}} transfers in list
+The {{< TransferCFT/componentshortname  >}} catalog displays all {{< TransferCFT/componentshortname  >}} transfers in list
 form. The catalog file contains control data that is associated with transfers.
 A record, that corresponds with a status indicator, exists for each transfer.
 
@@ -31,14 +31,14 @@ associated CFTCAT.
 
 ### Catalog levels
 
-Catalog levels enable  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> to issue alerts
+Catalog levels enable <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> to issue alerts
 when a critical fill threshold, the [TLVWARN](../../../c_intro_userinterfaces/command_summary/parameter_intro/tlvwarn)
 parameter Threshold Limit Value Warning, for the catalog file is reached.
 This alert triggers:
 
--   Sending
+- Sending
     a message to the LOG and to Sentinel
--   Executing
+- Executing
     a batch to react to the alert (TLVWEXEC parameter)
 
 Once an alert is issued, these two actions are repeated

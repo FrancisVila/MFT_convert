@@ -19,10 +19,10 @@ When set to YES, user authentication is controlled by the system where Transfer 
 
 | OS  | Default  |
 | --- | --- |
-|  Unix  | NO  |
-|  Windows  | YES  |
+| Unix | NO  |
+| Windows | YES  |
 | IBM i  | YES  |
-|   z/OS  |  This functionality was modified in Transfer CFT 3.2.4 SP1:<br/> • Post-SP1: The default value for <code>createprocessasuser </code>is YES.<br/> • Pre-SP1: There is no definable value. The equivalent of <code>createprocessasuser </code>depends on the use of APF. If JOBLIB is not defined as an APF, it is the equivalent of NO. If defined, this is the equivalent of YES.</li>  |
+| z/OS  | This functionality was modified in Transfer CFT 3.2.4 SP1:<br/> • Post-SP1: The default value for <code>createprocessasuser </code>is YES.<br/> • Pre-SP1: There is no definable value. The equivalent of <code>createprocessasuser </code>depends on the use of APF. If JOBLIB is not defined as an APF, it is the equivalent of NO. If defined, this is the equivalent of YES. |
 
 
 > **Note**
@@ -31,11 +31,11 @@ When set to YES, user authentication is controlled by the system where Transfer 
 
 When createprocessasuser is set to YES, you must perform the OS specific tasks as described in the appropriate Installation Guide.
 
--   Refer to the {{< TransferCFT/transfercftname >}} {{< TransferCFT/componentversion >}} *Installation Guide Unix> Unix operations > Using system users* for detailed instructions.
--   Refer to the {{< TransferCFT/transfercftname >}}{{< TransferCFT/componentversion >}} *Installation Guide Windows > Windows operations > Using system users* for detailed instructions.
+- Refer to the {{< TransferCFT/transfercftname >}} {{< TransferCFT/componentversion >}} *Installation Guide Unix> Unix operations > Using system users* for detailed instructions.
+- Refer to the {{< TransferCFT/transfercftname >}}{{< TransferCFT/componentversion >}} *Installation Guide Windows > Windows operations > Using system users* for detailed instructions.
 
 Related topics
 
--   [About system users](../)
--   [User rights use case scenarios](../user_rights_security_scenarios)
--   [Recommendations and troubleshooting](../user_rights_tips)
+- [About system users](../)
+- [User rights use case scenarios](../user_rights_security_scenarios)
+- [Recommendations and troubleshooting](../user_rights_tips)

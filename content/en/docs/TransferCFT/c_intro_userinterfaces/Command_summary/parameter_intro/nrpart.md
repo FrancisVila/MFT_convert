@@ -9,9 +9,9 @@
 **\[NRPART = {<u>value of the NPART
 parameter of CFTPARM</u> | *string*}\]**
 
--   string24     PeSIT  
--   string25     ODETTE
--   string64     SFTP  
+- string24     PeSIT  
+- string25     ODETTE
+- string64     SFTP  
 
 Network identifier by which the
 remote partner identifies itself to the local {{< TransferCFT/componentlongname  >}} (for incoming calls).

@@ -2,20 +2,20 @@
     "title": "CFTPRIV",
     "linkTitle": "Privileges &#45; CFTPRIV",
     "weight": "260"
-}Use this procedure to view a list of  privileges and descriptions and perform related tasks in the user interface.  See also <a href="../../../../internal_a_m_start_here/fm_access_management" class="MCXref xref">Access Management using Flow Manager</a>
+}Use this procedure to view a list of privileges and descriptions and perform related tasks in the user interface. See also <a href="../../../../internal_a_m_start_here/fm_access_management" class="MCXref xref">Access Management using Flow Manager</a>
 
 ### Using CFTPRIV
 
 Privileges give users authorization to access and perform actions in the user interface. Examples of actions include CREATE, DELETE, VIEW, EDIT (use \* to assign all actions).
 
 
-|  Field  |  Type  |  Comment  |
+| Field | Type | Comment |
 | --- | --- | --- |
-|  id  |  String32  |  Privilege identifier  |
-|  comment  |  String80  |  Comment  |
-|  resource  |  String32  |  Resource on which this privilege applies  |
-|  actions  |  List of String32  |  Actions authorized on the resource (1 to 16 actions)  |
-|  condition  |  String256  |  Condition to check for authorizing (<a href="#Specifyi">see below</a>)  |
+| id | String32 | Privilege identifier |
+| comment | String80 | Comment |
+| resource | String32 | Resource on which this privilege applies |
+| actions | List of String32 | Actions authorized on the resource (1 to 16 actions) |
+| condition | String256 | Condition to check for authorizing (<a href="#Specifyi">see below</a>) |
 
 
 Example of CFTPRIV in a configuration file:
@@ -38,7 +38,7 @@ Conditions allow you to assign finer control on resources and actions by specify
 
 Examples
 
-In these examples `PART `and `ID `are properties of the resource being checked. As you can see, you can use parenthesis and logical operators  `&&` (AND) and `||` (OR).
+In these examples `PART `and `ID `are properties of the resource being checked. As you can see, you can use parenthesis and logical operators `&&` (AND) and `||` (OR).
 
 ```
 PART=="PARIS" && ID=="IDFDEF"
@@ -47,11 +47,11 @@ PART=="PARIS" && ID=="IDFDEF"
 
 Comparison operators include:
 
--   == : equals
--   != : not equal
--   ~= : matches (use \* and ? for jokers)
--   /= : not matching (use \* and ? for jokers)
--   &lt; : inferior to
--   &gt; : superior to
--   &lt;= : inferior or equal to
--   &gt;= :superior or equal to
+- == : equals
+- != : not equal
+- ~= : matches (use \* and ? for jokers)
+- /= : not matching (use \* and ? for jokers)
+- &lt; : inferior to
+- &gt; : superior to
+- &lt;= : inferior or equal to
+- &gt;= :superior or equal to

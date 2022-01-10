@@ -4,12 +4,12 @@
     "weight": "60"
 }The Transfer CFT installation and migration documentation provides instructions for installing, upgrading, migrating, and deploying your {{< TransferCFT/componentshortname  >}}, and includes the following information:
 
--   How to prepare for installation
--   How to  install
--   How to install in command line
--   How to install in various installation architectures
--   Known limitations
--   Information for additional resources and Axway Global Support
+- How to prepare for installation
+- How to install
+- How to install in command line
+- How to install in various installation architectures
+- Known limitations
+- Information for additional resources and Axway Global Support
 
 Your Transfer CFT installation procedure is dependent on the options you have selected and your environment.
 
@@ -17,8 +17,8 @@ Your Transfer CFT installation procedure is dependent on the options you have se
 
 In this version, the following actions are not available:
 
--   How to create a product deployment package (ExpressPackage)
--   Automatic migration
+- How to create a product deployment package (ExpressPackage)
+- Automatic migration
 
 ## Installation and Operation Guides
 
@@ -40,14 +40,14 @@ Refer to the {{< TransferCFT/transfercftname  >}} {{< TransferCFT/releasenumber 
 
 ## Migration or upgrade impact and considerations
 
-You should be aware of the following  features or parameters, which were modified since their inception, and how these changes may impact your upgrade or migration. Please see, <a href="mig_impact_considerations" class="MCXref xref">Migration or upgrade impact and considerations</a> .
+You should be aware of the following features or parameters, which were modified since their inception, and how these changes may impact your upgrade or migration. Please see, <a href="mig_impact_considerations" class="MCXref xref">Migration or upgrade impact and considerations</a> .
 
 ### More information
 
--   Additional documentation is available at {{< TransferCFT/companyname >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a>.
+- Additional documentation is available at {{< TransferCFT/companyname >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a>.
 
 <!-- -->
 
--   Refer to the Axway [Supported Platforms](https://docs.axway.com/bundle/Axway_Products_SupportedPlatforms_allOS_en/resource/Axway_Products_SupportedPlatforms_allOS_en.pdf) document for a complete platform and version listing.
+- Refer to the Axway [Supported Platforms](https://docs.axway.com/bundle/Axway_Products_SupportedPlatforms_allOS_en/resource/Axway_Products_SupportedPlatforms_allOS_en.pdf) document for a complete platform and version listing.
 
  

@@ -4,10 +4,10 @@
     "weight": "220"
 }This topic describes the following PeSIT transfer procedure processes and concepts:
 
--   [Establishing a connection](#Establishing_a_connection)
--   [Transfer concatenation](#Transfer_Concatenation)
--   [Transfer identifiers](#Transfer_Identifier)
--   [Transfer retries](#Transfer_Retries)
+- [Establishing a connection](#Establishing_a_connection)
+- [Transfer concatenation](#Transfer_Concatenation)
+- [Transfer identifiers](#Transfer_Identifier)
+- [Transfer retries](#Transfer_Retries)
 
 For a detailed example of the transfer settings for a server and requester site, see the Example of transfer parameters (PeSIT) topic.
 
@@ -17,9 +17,9 @@ For a detailed example of the transfer settings for a server and requester site,
 
 Following a transfer request, the requesting Transfer CFT:
 
--   Opens a network
+- Opens a network
     session
--   Sends a protocol
+- Sends a protocol
     connection frame
 
 At the server end, Transfer
@@ -63,7 +63,7 @@ being degraded by the systematic establishing of a protocol connection.
 
 #### Time-out role
 
-<img src="/Images/TransferCFT/Timeout_role3.gif" class="maxWidth" width="730" height="439" alt="Protocol session time out role betweeen a requester and server " />
+![$2]($1)
 
 #### PeSIT E
 
@@ -82,11 +82,11 @@ for which it was initially server.
 
 #### One-way protocol connection
 
-<img src="/Images/TransferCFT/One_way_protocol_connection.gif" class="maxWidth" width="714" height="439" alt="One way protocol session connection between requester and server" />
+![$2]($1)
 
 #### Two-way protocol connection
 
-<img src="/Images/TransferCFT/Two_way_protocol_connection.gif" class="maxWidth" width="722" height="372" alt="Two way protocol session connection between requester and server" />
+![$2]($1)
 
 <span id="Transfer_Identifier"></span>
 
@@ -104,7 +104,7 @@ command.
 ### PeSIT E
 
 Caution:
-In the E version  of the PeSIT protocol, the IDT
+In the E version of the PeSIT protocol, the IDT
 is not the transfer identifier used by the protocol (PI 13). Indeed, the
 IDT is represented as 8 alphanumerical characters whereas PI 13 is a binary
 value stored as 3 bytes at the most. The PI 13 identifier, which is used
@@ -155,16 +155,16 @@ For the two PeSIT partners in communication, the following common protocol
 information is used to uniquely identify a transfer and is consequently
 saved in the catalog with the associated context:
 
--   File type (PI 11)
--   File identifier
+- File type (PI 11)
+- File identifier
     (PI 12)
--   PeSIT transfer
+- PeSIT transfer
     identifier (PI 13)
 
 The following four modes should be distinguished when processing a retry
 request:
 
--   In requester/receiver
+- In requester/receiver
     mode, the retry request is of local origin.  
     Using the PART and IDT parameters of the START command, Transfer CFT
     looks for the transfer context in the catalog. It then actualizes PI 11,
@@ -172,7 +172,7 @@ request:
 
 <!-- -->
 
--   In server/sender
+- In server/sender
     mode, on receipt of an FPDU SELECT indicating a retry request, the
     associated PI 11, 12 and 13 fields serve as search criteria in the catalog.  
     If the context of the transfer to be restarted is not found, Transfer
@@ -182,7 +182,7 @@ request:
 
 <!-- -->
 
--   In requester/sender
+- In requester/sender
     mode, the retry request is of local origin  
     Using the PART and IDT parameters of the START command, Transfer CFT
     looks for the transfer context in the catalog. It then actualizes PI 11,
@@ -190,12 +190,12 @@ request:
 
 <!-- -->
 
--   In server/receiver
+- In server/receiver
     mode, on receipt of an FPDU CREATE indicating a retry request,
     the associated PI 11, 12 and 13 are searched for in the catalog.  
     If no corresponding transfer context is found, Transfer CFT sends a
     negative acknowledgement (FPDU AckCREATE) with a protocol diagnostic with
     a value of 214 (negotiation failure at retry point).
 
-For  protocol fields PI 11,
+For protocol fields PI 11,
 12 and 13 details refer to [PeSIT PI codes](../pesit_pi_codes).

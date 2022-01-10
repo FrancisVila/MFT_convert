@@ -2,54 +2,54 @@
     "title": "SWAITCAT - Wait for a predefined status",
     "linkTitle": "SWAITCAT &#45; Wait before processing",
     "weight": "380"
-}The SWAITCAT command enables a client  to wait until
+}The SWAITCAT command enables a client to wait until
 a given transfer reaches a particular predefined phase, phasestep, or state before acting.
 
 Command syntax:
 
 Task examples: [SWAITCAT tasks](../sync_transfer_request_tasks)
 
-Alternatively, you can use the parameters WSTATES and WTIMEOUT to replace SWAITCAT functionality.
+Alternatively, you can use the parameters [WSTATES]() and [WTIMEOUT]() to replace SWAITCAT functionality.
 
 ## Command features
 
 The SWAITCAT command enables you to perform the following functions:
 
--   Serialize transfers
--   Remotely control
+- Serialize transfers
+- Remotely control
     transfers using synchronous communication
--   Synchronize the
+- Synchronize the
     termination of a collection of simultaneous transfers
--   Enhance script
+- Enhance script
     functioning
 
 SWAITCAT uses synchronous communication for notification when a predefined
-phase, phasestep or state is reached. Or, conversely, it can notify CFTUTIL  if the
+phase, phasestep or state is reached. Or, conversely, it can notify CFTUTIL if the
 phase, phasestep, or state
 is not reached (K or H phasestep).
 
 If the command fails, CFTUTIL sends the return code 8. The SWAITCAT
 command specific errors are:
 
--   SWAITCAT\_FAILED:
+- SWAITCAT\_FAILED:
     the transfer reached the K or H phasestep
--   SWAITCAT\_TIMEOUT:
+- SWAITCAT\_TIMEOUT:
     the defined timeout was reached
--   SWAITCAT\_NFOUND:
+- SWAITCAT\_NFOUND:
     no matching transfer was found
--   SWAITCAT\_DELETED:
+- SWAITCAT\_DELETED:
     the transfer was deleted
--   SWAITCAT\_PARAM\_ERROR: invalid parameter
--   SWAITCAT\_TOO\_MANY:
+- SWAITCAT\_PARAM\_ERROR: invalid parameter
+- SWAITCAT\_TOO\_MANY:
     too many transfers were selected (more than 2)
 
 ### Parameters
 
--   [SELECT](../../../command_summary/parameter_intro/select)
--   [STATES](../../../command_summary/parameter_intro/states)
--   [PHASES](../../../command_summary/parameter_intro/phases)
--   [PHASESTEPS](../../../command_summary/parameter_intro/phasesteps)
--   [TIMEOUT](../../../command_summary/parameter_intro/timeout)
+- [SELECT](../../../command_summary/parameter_intro/select)
+- [STATES](../../../command_summary/parameter_intro/states)
+- [PHASES](../../../command_summary/parameter_intro/phases)
+- [PHASESTEPS](../../../command_summary/parameter_intro/phasesteps)
+- [TIMEOUT](../../../command_summary/parameter_intro/timeout)
 
 ### Select
 
@@ -76,34 +76,34 @@ CAT\_ID OP VALUE && CAT\_ID OP VALUE
 
 CAT\_ID OP VALUE || CAT\_ID OP VALUE
 
-Possible values  for CAT\_ID, which filters on the current state:
+Possible values for CAT\_ID, which filters on the current state:
 
--   IDTU
--   IDT
--   PART
--   PHASE (A, T, Y, Z, X)
--   PHASESTEP (D, C, H, K, X)
--   STATE   (D,C,T,X,H,K)
--   DIRECT  (RECV,SEND)
--   TYPE    (FILE,MESSAGE,REPLY)
--   MODE    (REQUESTER,SERVER)
--   IDF     
--   IDA
--   COMMENT
+- IDTU
+- IDT
+- PART
+- PHASE (A, T, Y, Z, X)
+- PHASESTEP (D, C, H, K, X)
+- STATE   (D,C,T,X,H,K)
+- DIRECT  (RECV,SEND)
+- TYPE    (FILE,MESSAGE,REPLY)
+- MODE    (REQUESTER,SERVER)
+- IDF     
+- IDA
+- COMMENT
 
 Possible values for OP:
 
--   == equal
--   != different
--   ~= match pattern
+- == equal
+- != different
+- ~= match pattern
     (value with \*,?)
--   /= doesn't match
+- /= doesn't match
     pattern
--   &gt;  greater
--   &lt;  lower
--   &gt;= greater or
+- &gt;  greater
+- &lt;  lower
+- &gt;= greater or
     equal
--   &lt;= lower  or
+- &lt;= lower  or
     equal
 
 VALUE can be anything between double " or two single ' ' quotes.
@@ -112,22 +112,22 @@ VALUE can be anything between double " or two single ' ' quotes.
 
 The Phases parameter is a string that can be composed of A, T, Y, Z, X and waits on the expected final phase.
 
--   \(A\) Pre-processing: All pre-transfer script execution occurs here
--   \(T\) Transferring: All transfer execution occurs in this phase
--   \(Y\) Post-processing: All post-transfer script execution occurs here
--   \(Z\) Acknowledgement: Acknowledgement reception/send steps and ack script execution occur here
--   \(X\) Done: End condition when all of the previous phases are completed
+- \(A\) Pre-processing: All pre-transfer script execution occurs here
+- \(T\) Transferring: All transfer execution occurs in this phase
+- \(Y\) Post-processing: All post-transfer script execution occurs here
+- \(Z\) Acknowledgement: Acknowledgement reception/send steps and ack script execution occur here
+- \(X\) Done: End condition when all of the previous phases are completed
 
 ### Phasesteps
 
 The Phasesteps parameter is a string that can be composed of D, H, C, K, X, E and waits on the expected final phasestep.
 
--   \(D\) At disposal: The processing of the Phase is ready to be executed; it is ready to go.
--   \(H\) Hold: The processing of the Phase is on hold and waiting for an action to be executed.
--   \(C\) Processing/Current: The  Phase processing is being executed.
--   \(R\) Retry: Retries renaming the file using the `FACTION retryrename `value.
--   \(X\) Done: This phase step only exists for the Done phase, once all previous phases are complete.
--   \(E\) Exit EOT: This phase step only exists for the Post-processing phase, to signal an [end-of-transfer exit](../../../../app_integration_intro/managing_exits/about_the_end_of_transfer_type_exit).
+- \(D\) At disposal: The processing of the Phase is ready to be executed; it is ready to go.
+- \(H\) Hold: The processing of the Phase is on hold and waiting for an action to be executed.
+- \(C\) Processing/Current: The Phase processing is being executed.
+- \(R\) Retry: Retries renaming the file using the `FACTION retryrename `value.
+- \(X\) Done: This phase step only exists for the Done phase, once all previous phases are complete.
+- \(E\) Exit EOT: This phase step only exists for the Post-processing phase, to signal an [end-of-transfer exit](../../../../app_integration_intro/managing_exits/about_the_end_of_transfer_type_exit).
 
 ### States
 
@@ -135,20 +135,20 @@ The states parameter is a string that can be composed of the T, X, Y, Z, N and A
 
 Possible values for the states parameter are:
 
--   T: the transfer
+- T: the transfer
     is completed
--   TX: the transfer is completed or reached the X state
--   A: the
+- TX: the transfer is completed or reached the X state
+- A: the
     transfer is acknowledged
--   TA: the transfer is completed and acknowledged
--   TXA: the transfer is completed and acknowledged, or the transfer reached the X state and is acknowledged
--   X: the transfer
+- TA: the transfer is completed and acknowledged
+- TXA: the transfer is completed and acknowledged, or the transfer reached the X state and is acknowledged
+- X: the transfer
     reached the X state
--   XA: the transfer
+- XA: the transfer
     reached the X state and is acknowledged
--   Y: the transfer completed the post-processing phase
--   Z: the transfer completed the acknowledged phase
--   N: the transfer completed and received a negative acknowledgment
+- Y: the transfer completed the post-processing phase
+- Z: the transfer completed the acknowledged phase
+- N: the transfer completed and received a negative acknowledgment
 
 ### Timeout
 

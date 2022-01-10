@@ -13,16 +13,18 @@ Syntax
 
 \[ [RESTART](../../../c_intro_userinterfaces/command_summary/parameter_intro/restart) = { YES | NO } \]
 
-```
+QQQ\_QQQ\_QQQ split table
 
-Parameter
-
-Description
+**Description**
 
 Use this command to request the Transfer CFT immediate
 or delayed shutdown.
-[FAST](../../../c_intro_userinterfaces/command_summary/parameter_intro/fast) 
-Type of shutdown.
-[RESTART](../../../c_intro_userinterfaces/command_summary/parameter_intro/restart)
-Manages restart.
-```
+
+**Parameters**
+
+
+| Parameter  | Description  |
+| --- | --- |
+| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/fast">FAST</a>  | Type of shutdown. |
+| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/restart">RESTART</a>  | Manages restart.  |
+

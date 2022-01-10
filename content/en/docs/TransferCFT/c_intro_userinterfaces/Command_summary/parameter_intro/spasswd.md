@@ -26,7 +26,7 @@ Example
 
 > **Note**
 >
-> If you begin a password with an indirection character (Unix @, Windows #), it is  considered a reference to a file and not part of the password.
+> If you begin a password with an indirection character (Unix @, Windows #), it is considered a reference to a file and not part of the password.
 
 [Return to Command index](../../)
 

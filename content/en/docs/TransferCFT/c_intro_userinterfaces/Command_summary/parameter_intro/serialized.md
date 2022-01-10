@@ -4,15 +4,15 @@
     "weight": "3160"
 }### serialized
 
-#### LISTCAT,   DISPLAY  
+#### LISTCAT,  DISPLAY
 
-\[SERIALIZED ={ <u>All</u> | Yes |  No } \]
+\[SERIALIZED ={ <u>All</u> | Yes | No } \]
 
 Filters the LISTCAT or DISPLAY output.
 
--   All (default): Displays all records regardless of the `serial `parameter definition.
--   Yes: Displays only those records whose `serial `parameter is set to a phase (Y or Z).
--   No: Displays any records that do not have a defined `serial `parameter (the space character).
+- All (default): Displays all records regardless of the `serial `parameter definition.
+- Yes: Displays only those records whose `serial `parameter is set to a phase (Y or Z).
+- No: Displays any records that do not have a defined `serial `parameter (the space character).
 
 Example
 

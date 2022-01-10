@@ -18,16 +18,16 @@ expressed in minutes, days, or months as defined in the [tcycle](../tcycle) fiel
 
 Enter one of the following values:
 
--   0
+- 0
     (default value)
--   any other value
+- any other value
     from 0 to 32767
 
 #### CFTPROT
 
 \[CYCLE = {10 | n}\]   {1..32767}
 
-The cycle parameter forms part of the  {{< TransferCFT/componentshortname  >}} definition. This
+The cycle parameter forms part of the {{< TransferCFT/componentshortname  >}} definition. This
 parameter is only available for PeSIT DMZ. Use this parameter to set the
 periodicity for creating a protocol session.
 

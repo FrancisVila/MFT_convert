@@ -19,10 +19,10 @@ You can enter any string as a UCONF value. Additionally, the values that
 you enter can refer to other UCONF values or even environment variables.
 For example:
 
--   $(IDENTIFIER.IDENTIFIER...):
+- $(IDENTIFIER.IDENTIFIER...):
     references another UCONF parameter value and contains a period
     in the value name
--   $(IDENTIFIER):
+- $(IDENTIFIER):
     refers to an environment variable
 
 You can see in the above example that the difference between the UCONF value and the environment
@@ -35,9 +35,9 @@ as a fname, path,  or
 directory (dir). This translation enables uniform file specification across
 platforms:
 
--   a/b/c becomes a\\b\\c
+- a/b/c becomes a\\b\\c
     in Windows
--   a\\b\\c becomes a/b/c
+- a\\b\\c becomes a/b/c
     in UNIX
 
 ## UCONF directory
@@ -48,12 +48,12 @@ The [UCONF parameters topic](uconf_directory) contains a complete listing of al
 
 **UCONF flags legend**
 
--     EXPERT: Extra care must be taken; only advanced users should change this value.
--   RECONFIG: Can be changed dynamically with a CFTUTIL RECONFIG type=UCONF,                  and a notification is displayed in the LOG.
--   IRECONFIG: Can be changed dynamically with a CFTUTIL RECONFIG type=UCONF,                   but no notification is displayed in the LOG.
--   RUNTIME MUTABLE READ\_ONLY: Cannot be changed by a user.
--     EXPERIMENTAL: Unsupported feature.
--   OBSOLETE: No longer used.
+- EXPERT: Extra care must be taken; only advanced users should change this value.
+- RECONFIG: Can be changed dynamically with a CFTUTIL RECONFIG type=UCONF, and a notification is displayed in the LOG.
+- IRECONFIG: Can be changed dynamically with a CFTUTIL RECONFIG type=UCONF, but no notification is displayed in the LOG.
+- RUNTIME MUTABLE READ\_ONLY: Cannot be changed by a user.
+- EXPERIMENTAL: Unsupported feature.
+- OBSOLETE: No longer used.
 
 > **Note**
 >
@@ -61,11 +61,11 @@ The [UCONF parameters topic](uconf_directory) contains a complete listing of al
 
 ### UCONF data
 
-When you install Transfer CFT, the `home` directory is created and populated under the `Transfer_CFT` installation directory. This `home `directory contains installation libraries, binaries, and templates. Do not  store any personal files in the `home `directory, as they  are erased during updates.
+When you install Transfer CFT, the `home` directory is created and populated under the `Transfer_CFT` installation directory. This `home `directory contains installation libraries, binaries, and templates. Do not store any personal files in the `home `directory, as they are erased during updates.
 
 The UCONF data are stored in both a dictionary located in the `Transfer_CFT>home `directory, and in a runtime file in the` Transfer_CFT>runtime>data` directory. You should not modify the default values stored in the `home `UCONF dictionary.
 
 Related topics
 
--   [Using UCONF in CFTUTIL](uconf_w_cftutil)
--   [UCONF parameters](uconf_directory): complete listing
+- [Using UCONF in CFTUTIL](uconf_w_cftutil)
+- [UCONF parameters](uconf_directory): complete listing

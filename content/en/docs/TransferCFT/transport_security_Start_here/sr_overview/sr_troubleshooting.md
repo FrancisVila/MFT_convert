@@ -4,9 +4,9 @@
     "weight": "280"
 }Should you incur an issue, you can begin by checking for information in the following files:
 
--   Secure Relay Master Agent log file: secure\_relay.ma.log\_fname      = C:\\cft35\\runtime\\log\\xsrMaster.log
--   Secure Relay Router Agent log file: located by default in the &lt;install\_dir>/SecureRelayRA/log/router.log
--   Transfer CFT log messages: check for the messages CFTS63F and CFTS64I, which provide information about the SecureRelay status
+- Secure Relay Master Agent log file: secure\_relay.ma.log\_fname = C:\\cft35\\runtime\\log\\xsrMaster.log
+- Secure Relay Router Agent log file: located by default in the &lt;install\_dir>/SecureRelayRA/log/router.log
+- Transfer CFT log messages: check for the messages CFTS63F and CFTS64I, which provide information about the SecureRelay status
 
 You can refer to the [Secure Relay documentation](https://docs.axway.com/bundle/SecureRelay_271_AdministratorsGuide_allOS_en_HTML5/page/Content/AxwayStartPageRA_admin.htm) for additional information.
 
@@ -34,7 +34,7 @@ Possible cause: Problem related to secure\_relay.ma.ca\_cert\_fname
 CFTI09F Init error _ Communication process CFTI10F Init error _ failed to start the Secure Relay Master Agent
 ```
 
-**Possible cause: Firewall or SAP overlap  issue**
+**Possible cause: Firewall or SAP overlap issue**
 
 The following messages may display indicating a SAP overlap (SAP is already used) or that there is a firewall issue:
 
@@ -46,7 +46,7 @@ CFTI22F CFTPROT=PESIT Register request failure CS=00000098
 
 ## Transfer CFT and the Master Agent fail to start
 
-Possible cause: After changing the MA certificate, the  secure\_relay.ma.cert\_fname parameter points to an invalid file
+Possible cause: After changing the MA certificate, the secure\_relay.ma.cert\_fname parameter points to an invalid file
 
 Transfer CFT fails to start and displays a message similar to the following in the` cft.out` file:
 

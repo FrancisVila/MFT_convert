@@ -10,109 +10,21 @@ The following table lists the different types of files that can be used accordin
 >
 > Bold  values indicate a recommended combination. For example, when FTYPE=D and FRECFM=V then RCDLEN-5 is the recommended PF-DTA with variable data.
 
-<table>
-   <tbody>
-      <tr>
-         <td  >FTYPE         </td>
-         <td  >FRECFM         </td>
-         <td  ><p>PF-DTA</p>
-<p>Fixed data</p>         </td>
-         <td  ><p>PF-DTA</p>
-<p>Variable data</p>         </td>
-         <td  >PF-SRC         </td>
-         <td  >SAVF         </td>
-      </tr>
-      <tr>
-         <td  >          </td>
-         <td  >          </td>
-         <td  >FRECFL         </td>
-         <td  >FRECFL         </td>
-         <td  >FRECFL         </td>
-         <td  >          </td>
-      </tr>
-      <tr>
-         <td rowspan="2" ><p>‘D’</p>         </td>
-         <td ><p> ‘F’</p>         </td>
-         <td ><p><strong>RCDLEN</strong></p>         </td>
-         <td ><p>RCDLEN <sup>1</sup></p>         </td>
-         <td ><p>RCDLEN</p>         </td>
-         <td ><p>528</p>         </td>
-      </tr>
-      <tr>
-         <td ><p>‘V’</p>         </td>
-         <td ><p>RCDLEN</p>         </td>
-         <td ><p><strong>RCDLEN-5</strong> <sup>2</sup></p>         </td>
-         <td ><p>RCDLEN</p>         </td>
-         <td ><p>528</p>         </td>
-      </tr>
-      <tr>
-         <td rowspan="2" ><p>‘S’</p>         </td>
-         <td ><p> ‘F’</p>         </td>
-         <td ><p>RCDLEN</p>         </td>
-         <td ><p>RCDLEN <sup>1</sup></p>         </td>
-         <td ><p><strong>RCDLEN</strong></p>         </td>
-         <td ><p>Error<br />
-DIAGI: 102<br />
-DIAGP: 1140850696</p>         </td>
-      </tr>
-      <tr>
-         <td ><p>‘V’</p>         </td>
-         <td ><p>RCDLEN</p>         </td>
-         <td ><p>RCDLEN-5 <sup>2</sup></p>         </td>
-         <td ><p>RCDLEN</p>         </td>
-         <td ><p>Error<br />
-DIAGI: 102<br />
-DIAGP: 1140850696</p>         </td>
-      </tr>
-      <tr>
-         <td rowspan="2" ><p>‘E’</p>         </td>
-         <td ><p> ‘F’</p>         </td>
-         <td ><p>RCDLEN</p>         </td>
-         <td ><p>RCDLEN <sup>1</sup></p>         </td>
-         <td ><p><strong>RCDLEN-12</strong> <sup>3</sup></p>         </td>
-         <td ><p> Error<br />
-DIAGI: 102<br />
-DIAGP: 1140850696</p>         </td>
-      </tr>
-      <tr>
-         <td ><p>‘V’</p>         </td>
-         <td ><p>RCDLEN</p>         </td>
-         <td ><p>RCDLEN-5 <sup>2</sup></p>         </td>
-         <td ><p>RCDLEN-12 <sup>3</sup></p>         </td>
-         <td ><p>Error<br />
-DIAGI: 102<br />
-DIAGP: 1140850696</p>         </td>
-      </tr>
-      <tr>
-         <td rowspan="2" ><p>‘Z’</p>
-<p> </p>         </td>
-         <td ><p> ‘F’</p>         </td>
-         <td ><p>Error<br />
-DIAGI: 102<br />
-DIAGP: 1140850696 </p>         </td>
-         <td ><p> Error<br />
-DIAGI: 102<br />
-DIAGP: 1140850696</p>         </td>
-         <td ><p>Error<br />
-DIAGI: 102<br />
-DIAGP: 1140850696 </p>         </td>
-         <td ><p> <strong>528</strong></p>         </td>
-      </tr>
-      <tr>
-         <td ><p> ‘V’</p>         </td>
-         <td ><p>Error<br />
-DIAGI: 102<br />
-DIAGP: 1140850696</p>         </td>
-         <td ><p> Error<br />
-DIAGI: 102<br />
-DIAGP: 1140850696</p>         </td>
-         <td ><p> Error<br />
-DIAGI: 102<br />
-DIAGP: 1140850696</p>         </td>
-         <td ><p> 528</p>         </td>
-      </tr>
-   </tbody>
-</table>
+QQQ\_QQQ\_QQQ
+
+
+| FTYPE  | FRECFM  | PF-DTA<br/> Fixed data | PF-DTA<br/> Variable data | PF-SRC  | SAVF  |
+| --- | --- | --- | --- | --- | --- |
+|   |   | FRECFL  | FRECFL  | FRECFL  |   |
+| ‘D’ |  ‘F’ | **RCDLEN** | RCDLEN <sup>1</sup> | RCDLEN | 528 |
+| ‘D’  | ‘V’ | RCDLEN | **RCDLEN-5** <sup>2</sup> | RCDLEN | 528 |
+| ‘S’ |  ‘F’ | RCDLEN | RCDLEN <sup>1</sup> | **RCDLEN** | Error<br /> DIAGI: 102<br /> DIAGP: 1140850696 |
+| ‘S’  | ‘V’ | RCDLEN | RCDLEN-5 <sup>2</sup> | RCDLEN | Error<br /> DIAGI: 102<br /> DIAGP: 1140850696 |
+| ‘E’ |  ‘F’ | RCDLEN | RCDLEN <sup>1</sup> | **RCDLEN-12** <sup>3</sup> |  Error<br /> DIAGI: 102<br /> DIAGP: 1140850696 |
+| ‘E’  | ‘V’ | RCDLEN | RCDLEN-5 <sup>2</sup> | RCDLEN-12 <sup>3</sup> | Error<br /> DIAGI: 102<br /> DIAGP: 1140850696 |
+| ‘Z’ |  ‘F’ | Error<br /> DIAGI: 102<br /> DIAGP: 1140850696  |  Error<br /> DIAGI: 102<br /> DIAGP: 1140850696 | Error<br /> DIAGI: 102<br /> DIAGP: 1140850696  |  **528** |
+| ‘Z’  |  ‘V’ | Error<br /> DIAGI: 102<br /> DIAGP: 1140850696 |  Error<br /> DIAGI: 102<br /> DIAGP: 1140850696 |  Error<br /> DIAGI: 102<br /> DIAGP: 1140850696 |  528 |
+
 
 Key
 
@@ -127,10 +39,10 @@ Default FTYPE or FRECFM value
 The behavior of the values ‘’ and ‘ ’, for FTYPE and FRECFM respectively, are not detailed in the following table. These values correspond to `undefined`, meaning that the transfer in emission takes the value of both the file type and the member content.
 
 
-|  FTYPE  |  FRECFM  |  Supported files and data organizations (if applicable).  |
+| FTYPE | FRECFM | Supported files and data organizations (if applicable). |
 | --- | --- | --- |
-| ‘D’  | ‘F’  |  PF-DTA Member containing fixed data  |
-| ‘D’  | ‘V’  |  PF-DTA Member containing variable data  |
+| ‘D’  | ‘F’  | PF-DTA Member containing fixed data |
+| ‘D’  | ‘V’  | PF-DTA Member containing variable data |
 | ‘D’  | ‘F’  | PF-SRC  |
 | ‘Z’  | ‘F’  | SAVF  |
 

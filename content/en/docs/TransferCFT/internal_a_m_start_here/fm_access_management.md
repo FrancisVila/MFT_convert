@@ -8,24 +8,24 @@ How it works
 
 If you have opted to use the {{< TransferCFT/flowmanager  >}} for {{< TransferCFT/transfercftname  >}} access management, after configuring both {{< TransferCFT/transfercftname  >}} and {{< TransferCFT/flowmanager  >}}:
 
-1.  A user logs in via the {{< TransferCFT/transfercftname >}} UI, CFTUTIL, or other.
-2.  A login request is sent to {{< TransferCFT/flowmanager >}}.
-3.  If the login is successful, {{< TransferCFT/flowmanager >}} returns the list of roles for the user.  
-4.  The user login is complete. Transfer CFT then stores these roles in the cache and applies them accordingly. The information about this user is stored in the cache and is only updated when a new login is performed.
+1. A user logs in via the {{< TransferCFT/transfercftname >}} UI, CFTUTIL, or other.
+1. A login request is sent to {{< TransferCFT/flowmanager >}}.
+1. If the login is successful, {{< TransferCFT/flowmanager >}} returns the list of roles for the user.
+1. The user login is complete. Transfer CFT then stores these roles in the cache and applies them accordingly. The information about this user is stored in the cache and is only updated when a new login is performed.
 
 > **Note**
 >
 > All role and permission definitions are stored in CFTPARM.
 
-However, if you are an `am.superuser` user, {{< TransferCFT/transfercftname  >}} does not check your access  for resources, and permissions are granted unconditionally. Additionally, it is useful to note that if you define a service account  during {{< TransferCFT/componentlongname  >}} installation, this user is automatically added to the UCONF `am.superuser` parameter's list.
+However, if you are an `am.superuser` user, {{< TransferCFT/transfercftname  >}} does not check your access for resources, and permissions are granted unconditionally. Additionally, it is useful to note that if you define a service account during {{< TransferCFT/componentlongname  >}} installation, this user is automatically added to the UCONF `am.superuser` parameter's list.
 
 See also, {{< TransferCFT/flowmanager  >}} *Security Guide &gt;*[Predefined roles](https://docs.axway.com/bundle/FlowManager_20_allOS_en_HTML5/page/predefined_roles.html) and [Predefined privileges](https://docs.axway.com/bundle/FlowManager_20_allOS_en_HTML5/page/predefined_privileges.html) (requires account login).
 
-<img src="/Images/TransferCFT/cg_am.jpg" class="mediumWidth" />
+![]($1)
 
 Limitations
 
--   {{< TransferCFT/hflongproductname >}} ROLES are stored on {{< TransferCFT/hflongproductname >}} in upper case. This means that if you create roles **XXX** and **Xxx** on {{< TransferCFT/flowmanager >}}, there is only one ROLE in {{< TransferCFT/hflongproductname >}}, which is `ID=XXX`.
+- {{< TransferCFT/hflongproductname >}} ROLES are stored on {{< TransferCFT/hflongproductname >}} in upper case. This means that if you create roles **XXX** and **Xxx** on {{< TransferCFT/flowmanager >}}, there is only one ROLE in {{< TransferCFT/hflongproductname >}}, which is `ID=XXX`.
 
 <span id="Using"></span>
 
@@ -37,18 +37,18 @@ Conversely, you can create roles and privileges locally in Transfer CFT, as you 
 
 ### Using CFTROLE
 
-A role is a  general profile that can be associated with a user. A role is based on one or more privileges, and a privilege is based on a resource. There are two types of roles: predefined and user-defined. Predefined roles are available by default to assign to users.
+A role is a general profile that can be associated with a user. A role is based on one or more privileges, and a privilege is based on a resource. There are two types of roles: predefined and user-defined. Predefined roles are available by default to assign to users.
 
-You can assign users  to one or more roles. Typically, users with multiple roles have more privileges than users with fewer roles.
+You can assign users to one or more roles. Typically, users with multiple roles have more privileges than users with fewer roles.
 
 Examples of roles can be ADMINISTRATOR, PARTNER MANAGER, IT MANAGER, and so on.
 
 
-|  Field  |  Type  |  Comment  |
+| Field | Type | Comment |
 | --- | --- | --- |
-|  id  |  String32  |  Role identifier  |
-|  comment  |  String80  |  Comment  |
-|  privs[]  |  List of String32  |  List of privileges associated to this role (1 to 128)  |
+| id | String32 | Role identifier |
+| comment | String80 | Comment |
+| privs[] | List of String32 | List of privileges associated to this role (1 to 128) |
 
 
 Example of CFTROLE in a configuration file:
@@ -77,13 +77,13 @@ CFTROLE      ID          = 'Application',
 Privileges give users authorization to access and perform actions in the user interface. Examples of actions include CREATE, DELETE, VIEW, EDIT (use \* to assign all actions).
 
 
-|  Field  |  Type  |  Comment  |
+| Field | Type | Comment |
 | --- | --- | --- |
-|  id  |  String32  |  Privilege identifier  |
-|  comment  |  String80  |  Comment  |
-|  resource  |  String32  |  Resource on which this privilege applies  |
-|  actions  |  List of String32  |  Actions authorized on the resource (1 to 16 actions)  |
-|  condition  |  String256  |  Condition to check for authorizing (<a href="#Specifyi">see below</a>)  |
+| id | String32 | Privilege identifier |
+| comment | String80 | Comment |
+| resource | String32 | Resource on which this privilege applies |
+| actions | List of String32 | Actions authorized on the resource (1 to 16 actions) |
+| condition | String256 | Condition to check for authorizing (<a href="#Specifyi">see below</a>) |
 
 
 Example of CFTPRIV in a configuration file:
@@ -106,7 +106,7 @@ Conditions allow you to assign finer control on resources and actions by specify
 
 Examples
 
-In these examples `PART `and `ID `are properties of the resource being checked. As you can see, you can use parenthesis and logical operators  `&&` (AND) and `||` (OR).
+In these examples `PART `and `ID `are properties of the resource being checked. As you can see, you can use parenthesis and logical operators `&&` (AND) and `||` (OR).
 
 ```
 PART=="PARIS" && ID=="IDFDEF"
@@ -115,76 +115,76 @@ PART=="PARIS" && ID=="IDFDEF"
 
 Comparison operators include:
 
--   == : equals
--   != : not equal
--   ~= : matches (use \* and ? for jokers)
--   /= : not matching (use \* and ? for jokers)
--   &lt; : inferior to
--   &gt; : superior to
--   &lt;= : inferior or equal to
--   &gt;= :superior or equal to
+- == : equals
+- != : not equal
+- ~= : matches (use \* and ? for jokers)
+- /= : not matching (use \* and ? for jokers)
+- &lt; : inferior to
+- &gt; : superior to
+- &lt;= : inferior or equal to
+- &gt;= :superior or equal to
 
-### Resource properties  in privileges
+### Resource properties in privileges
 
 The following table is an exhaustive list of all properties for all resources. These properties are available regardless of the action to be checked. However, if a resource has no properties, setting a condition for it has no impact.
 
 
-|  Resource  |  Actions  |  Properties  |
+| Resource | Actions | Properties |
 | --- | --- | --- |
-|  CONFIGURATION:PKICER  |  CREATE, DELETE, VIEW, EDIT, ACTIVATE, DEACTIVATE  |  ID  |
-|  CONFIGURATION:PKIENTITY  |  CREATE, DELETE, VIEW, EDIT, ACTIVATE, DEACTIVATE  |  ID  |
-|  CONFIGURATION:PKIKEY  |  CREATE, DELETE, VIEW, EDIT, ACTIVATE, DEACTIVATE  |  ID  |
-|  CONFIGURATION:CFTPARM  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
-|  CONFIGURATION:CFTNET  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
-|  CONFIGURATION:CFTPROT  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
-|  CONFIGURATION: CFTSEND  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
-|  CONFIGURATION: CFTSENDI <sup>(1)</sup>  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
-|  CONFIGURATION: CFTRECV  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
-|  CONFIGURATION:CFTAUTH  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
-|  CONFIGURATION:CFTXLATE  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
-|  CONFIGURATION:CFTLOG  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
-|  CONFIGURATION:CFTCAT  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
-|  CONFIGURATION:CFTCOM  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
-|  CONFIGURATION:CFTACCNT  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
-|  CONFIGURATION:CFTEXIT  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
-|  CONFIGURATION:CFTIDF  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
-|  CONFIGURATION:CFTFOLDER  |  CREATE, DELETE, VIEW, EDIT, ACTIVATE, DEACTIVATE  |  ID  |
-|  CONFIGURATION:CFTETB  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
-|  CONFIGURATION:CFTAPPL  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
-|  CONFIGURATION:CFTSSL  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
-|  CONFIGURATION:CFTCRON  |  CREATE, DELETE, VIEW, EDIT, ACTIVATE, DEACTIVATE, RELOAD  |  ID  |
-|  CONFIGURATION:CFTPART  |  CREATE, DELETE, VIEW, EDIT, ACTIVATE, DEACTIVATE, TURN  |  ID  |
-|  CONFIGURATION:CFTDEST  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
-|  CONFIGURATION:CFTTCP  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
-|  CONFIGURATION:CFTUCONF  |  DELETE, VIEW, EDIT  |  ID  |
+| CONFIGURATION:PKICER | CREATE, DELETE, VIEW, EDIT, ACTIVATE, DEACTIVATE | ID |
+| CONFIGURATION:PKIENTITY | CREATE, DELETE, VIEW, EDIT, ACTIVATE, DEACTIVATE | ID |
+| CONFIGURATION:PKIKEY | CREATE, DELETE, VIEW, EDIT, ACTIVATE, DEACTIVATE | ID |
+| CONFIGURATION:CFTPARM | CREATE, DELETE, VIEW, EDIT | ID |
+| CONFIGURATION:CFTNET | CREATE, DELETE, VIEW, EDIT | ID |
+| CONFIGURATION:CFTPROT | CREATE, DELETE, VIEW, EDIT | ID |
+| CONFIGURATION: CFTSEND | CREATE, DELETE, VIEW, EDIT | ID |
+| CONFIGURATION: CFTSENDI <sup>(1)</sup> | CREATE, DELETE, VIEW, EDIT | ID |
+| CONFIGURATION: CFTRECV | CREATE, DELETE, VIEW, EDIT | ID |
+| CONFIGURATION:CFTAUTH | CREATE, DELETE, VIEW, EDIT | ID |
+| CONFIGURATION:CFTXLATE | CREATE, DELETE, VIEW, EDIT | ID |
+| CONFIGURATION:CFTLOG | CREATE, DELETE, VIEW, EDIT | ID |
+| CONFIGURATION:CFTCAT | CREATE, DELETE, VIEW, EDIT | ID |
+| CONFIGURATION:CFTCOM | CREATE, DELETE, VIEW, EDIT | ID |
+| CONFIGURATION:CFTACCNT | CREATE, DELETE, VIEW, EDIT | ID |
+| CONFIGURATION:CFTEXIT | CREATE, DELETE, VIEW, EDIT | ID |
+| CONFIGURATION:CFTIDF | CREATE, DELETE, VIEW, EDIT | ID |
+| CONFIGURATION:CFTFOLDER | CREATE, DELETE, VIEW, EDIT, ACTIVATE, DEACTIVATE | ID |
+| CONFIGURATION:CFTETB | CREATE, DELETE, VIEW, EDIT | ID |
+| CONFIGURATION:CFTAPPL | CREATE, DELETE, VIEW, EDIT | ID |
+| CONFIGURATION:CFTSSL | CREATE, DELETE, VIEW, EDIT | ID |
+| CONFIGURATION:CFTCRON | CREATE, DELETE, VIEW, EDIT, ACTIVATE, DEACTIVATE, RELOAD | ID |
+| CONFIGURATION:CFTPART | CREATE, DELETE, VIEW, EDIT, ACTIVATE, DEACTIVATE, TURN | ID |
+| CONFIGURATION:CFTDEST | CREATE, DELETE, VIEW, EDIT | ID |
+| CONFIGURATION:CFTTCP | CREATE, DELETE, VIEW, EDIT | ID |
+| CONFIGURATION:CFTUCONF | DELETE, VIEW, EDIT | ID |
 |   |   |   |
-|  SERVICE:BATCH <sup>(2)</sup>  |  EXECUTE  |  ID, FNAME  |
-|  SERVICE:UI <sup>(3)</sup>  |  CONNECT  |  TYPE, ID, GROUP  |
-|  SERVICE:BATCH  |  EXECUTE  |  ID, FNAME  |
-|  SERVICE:CATALOG  |  PURGE  |   |
-|  SERVICE:LOG  |  SWITCH  |   |
-|  SERVICE:ACCOUNT  |  SWITCH  |   |
-|  SERVICE:CFTSRV  |  STARTUP, SHUTDOWN  |   |
-|  SERVICE:COM  |  DELETE, VIEW  |   |
+| SERVICE:BATCH <sup>(2)</sup> | EXECUTE | ID, FNAME |
+| SERVICE:UI <sup>(3)</sup> | CONNECT | TYPE, ID, GROUP |
+| SERVICE:BATCH | EXECUTE | ID, FNAME |
+| SERVICE:CATALOG | PURGE |   |
+| SERVICE:LOG | SWITCH |   |
+| SERVICE:ACCOUNT | SWITCH |   |
+| SERVICE:CFTSRV | STARTUP, SHUTDOWN |   |
+| SERVICE:COM | DELETE, VIEW |   |
 |   |   |   |
-|  COMMAND:EXTRACT  |  EXECUTE  |   |
-|  COMMAND:MQUERY  |  EXECUTE  |   |
-|  COMMAND:TURN  |  EXECUTE  |   |
-|  COMMAND:CFTSUPPORT  |  EXECUTE  |   |
-|  TRANSFER  |  CREATE, DELETE, VIEW, EDIT, CANCEL, RESUME, PAUSE, EXECUTE, SUBMIT, END, VIEWIFLE, EDITFILE, DELETEFILE  |  IDAPPL, ID, PART, SPART, RPART, IPART, TYPE, DIRECT, MODE, FNAME, MESSAGE, SUSER, RUSER, SAPPL, RAPPL, NFNAME  |
-|  AM:RIGHTS <sup>(4)</sup>  |  VIEW_SELF, VIEW_OTHERS  |  ID  |
-|  FILTER:CATALOG  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
-|  FILTER:LOG  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
-|  FILE <sup>(5)</sup>  |  CREATE, DELETE, VIEW, EDIT  |  FNAME  |
-|  URL <sup>(6)</sup>  |  VIEW  |  URL  |
+| COMMAND:EXTRACT | EXECUTE |   |
+| COMMAND:MQUERY | EXECUTE |   |
+| COMMAND:TURN | EXECUTE |   |
+| COMMAND:CFTSUPPORT | EXECUTE |   |
+| TRANSFER | CREATE, DELETE, VIEW, EDIT, CANCEL, RESUME, PAUSE, EXECUTE, SUBMIT, END, VIEWIFLE, EDITFILE, DELETEFILE | IDAPPL, ID, PART, SPART, RPART, IPART, TYPE, DIRECT, MODE, FNAME, MESSAGE, SUSER, RUSER, SAPPL, RAPPL, NFNAME |
+| AM:RIGHTS <sup>(4)</sup> | VIEW_SELF, VIEW_OTHERS | ID |
+| FILTER:CATALOG | CREATE, DELETE, VIEW, EDIT | ID |
+| FILTER:LOG | CREATE, DELETE, VIEW, EDIT | ID |
+| FILE <sup>(5)</sup> | CREATE, DELETE, VIEW, EDIT | FNAME |
+| URL <sup>(6)</sup> | VIEW | URL |
 
 
-1.  Manage implicit SEND object definitions.
-2.  Manage batch files.
-3.  Connect to user interface.
-4.  Rights from PassPort AM.
-5.  Manage Transfer CFT file definition objects.
-6.  Manage file name definitions.
+1. Manage implicit SEND object definitions.
+1. Manage batch files.
+1. Connect to user interface.
+1. Rights from PassPort AM.
+1. Manage Transfer CFT file definition objects.
+1. Manage file name definitions.
 
 ## Use cases
 
@@ -192,22 +192,22 @@ The following table is an exhaustive list of all properties for all resources. T
 
 As an Administrator, you want to authorize a user to work only with a given partner and a specific IDF.
 
-This user can preform the following operations  only with an IDF name equal to "MYIDF" and the PART name equal to "MYPART":
+This user can preform the following operations only with an IDF name equal to "MYIDF" and the PART name equal to "MYPART":
 
--   View transfers (LISTCAT and DISPLAY)
--   Create transfers
--   Delete transfers
--   Cancel transfers
--   Resume transfers
--   Execute transfers
+- View transfers (LISTCAT and DISPLAY)
+- Create transfers
+- Delete transfers
+- Cancel transfers
+- Resume transfers
+- Execute transfers
 
-In this use case, you assign the user  a role that references  a privilege having these characteristics:
+In this use case, you assign the user a role that references a privilege having these characteristics:
 
--   RESOURCE  = 'TRANSFER',
--   ACTIONS    = ( ‘VIEW’, ‘CREATE’, ‘DELETE’, ‘CANCEL', 'RESUME', ‘EXECUTE’ ),
--   CONDITION  = ' IDF=="MYIDF" && PART=="MYPART" '
+- RESOURCE = 'TRANSFER',
+- ACTIONS = ( ‘VIEW’, ‘CREATE’, ‘DELETE’, ‘CANCEL', 'RESUME', ‘EXECUTE’ ),
+- CONDITION = ' IDF=="MYIDF" && PART=="MYPART" '
 
-The following is an example of the {{< TransferCFT/transfercftname  >}} configuration  for this use case (the ROLE must exist in {{< TransferCFT/flowmanager  >}}, and be available for required users):
+The following is an example of the {{< TransferCFT/transfercftname  >}} configuration for this use case (the ROLE must exist in {{< TransferCFT/flowmanager  >}}, and be available for required users):
 
 ```
 CFTROLE      ID          = '',
@@ -266,17 +266,17 @@ CFTPRIV       ID          = '',
 
 ### Add an administrator role
 
-As an administrator, you want to assign a role equivalent to classic 'Administrator' role to a user, but I would like to restrict access in the UI (Copilot or CFTUI) to a given Transfer CFT Name or a Group of Transfer CFTs, based on the Transfer CFT instance ID and  instance group.
+As an administrator, you want to assign a role equivalent to classic 'Administrator' role to a user, but I would like to restrict access in the UI (Copilot or CFTUI) to a given Transfer CFT Name or a Group of Transfer CFTs, based on the Transfer CFT instance ID and instance group.
 
 In this use case, you assign the user role that refers to a privilege having these characteristics:
 
--   RESOURCE  = SERVICE:UI,
--   ACTIONS    = ( 'CONNECT'  ),
--   CONDITION  = ' GROUP=="PRODUCTION" && ID~=''CFT-PROD-ITEM\*'' '
+- RESOURCE = SERVICE:UI,
+- ACTIONS = ( 'CONNECT' ),
+- CONDITION = ' GROUP=="PRODUCTION" && ID~=''CFT-PROD-ITEM\*'' '
 
 A user with this privilege can only connect to a Transfer CFT server whose UCONF `cft.instance_group` value is set to PRODUCTION, and whose `cft.instance_id` value begins with CFT-PROD-ITEM.
 
-The following is an example of the {{< TransferCFT/transfercftname  >}} configuration  for this use case (the ROLE must exist in {{< TransferCFT/flowmanager  >}}, and be available for required users):
+The following is an example of the {{< TransferCFT/transfercftname  >}} configuration for this use case (the ROLE must exist in {{< TransferCFT/flowmanager  >}}, and be available for required users):
 
 ```
 CFTROLE      ID          = '',

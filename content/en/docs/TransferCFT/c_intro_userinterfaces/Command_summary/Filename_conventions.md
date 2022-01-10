@@ -9,41 +9,41 @@ provides examples of filenames, and file naming conventions.
 
 The following characters are system-restricted characters:
 
--   UNIX: /\*? $()
--   Windows: /\\:\*?"&lt;&gt;
+- UNIX: /\*? $()
+- Windows: /\\:\*?"&lt;&gt;
 
 > **Note**
 >
-> You can use the $ character on UNIX systems as an environment variable. To have a file created  when the name includes one or more $ characters (without resolving the environment variable), see the UCONF cft.unix.throw\_error\_on\_envvar\_not\_found variable.
+> You can use the $ character on UNIX systems as an environment variable. To have a file created when the name includes one or more $ characters (without resolving the environment variable), see the UCONF cft.unix.throw\_error\_on\_envvar\_not\_found variable.
 
 ## Naming the local file to be sent FNAME=filename
 
 The fname is a complete physical filename. It can either:
 
--   Be created dynamically
+- Be created dynamically
     from symbolic variables, or
--   Correspond to the
+- Correspond to the
     name of a version file
 
 ## Using symbolic variables
 
 The following variables can be used to form the FNAME character string:
 
--   &FDATE,
+- &FDATE,
     &FTIME, &FYEAR, &FMONTH, &FDAY
--   &SPART,
+- &SPART,
     &RPART, &PART, &NPART, &GROUP
--   &SUSER,
+- &SUSER,
     &RUSER
--   &SAPPL,
+- &SAPPL,
     &RAPPL
--   &IDF,
+- &IDF,
     &PARM, &IDA
--   &NIDF,
+- &NIDF,
     &IDTU
--   &BDATE,
+- &BDATE,
     &BTIME, &BYEAR, &BMONTH, &BDAY
--   &NFNAME,
+- &NFNAME,
     &NFVER (see details
     below)
 
@@ -55,7 +55,7 @@ used in FNAME except in the case of an implicit SEND command.
 The ‘&’ character used here replaces the char\_symb character specific
 to each operating system .
 
-Refer to the  {{< TransferCFT/componentshortname  >}} *Installation and Operations Guide* that
+Refer to the {{< TransferCFT/componentshortname  >}} *Installation and Operations Guide* that
 corresponds to your OS.
 
 ### Reconstitute a filename
@@ -84,10 +84,10 @@ as shown in the following table.
 
 | Command  | Version  | Parameter  | Conversion to an absolute name  |
 | --- | --- | --- | --- |
-|  CFTSEND  |  0 or -n  |  IMPL=YES  |  at the start of the transfer  |
-|   |   |  IMPL=NO  |  when the request is placed in the catalog  |
-|  SEND  |  <li>be 0 or -n<br/> • specific case of z/OS (MVS) (1)</li>  |  FNAMEABS=YES  |  when the request is placed in the catalog  |
-|   |   |  FNAMEABS=NO  |  at the start of the transfer  |
+| CFTSEND  | 0 or -n  | IMPL=YES  | at the start of the transfer  |
+|   |   | IMPL=NO  | when the request is placed in the catalog  |
+| SEND  |  • be 0 or -n<br/> • specific case of z/OS (MVS) (1) | FNAMEABS=YES  | when the request is placed in the catalog  |
+|   |   | FNAMEABS=NO  | at the start of the transfer  |
 
 
 \(1\) the version number may be 0 or
@@ -121,9 +121,9 @@ FNAME={dirname | mask}
 The name specified can be a generic file name or a directory name. It
 can include:
 
--   Specific symbolic
+- Specific symbolic
     variables, such as &PART and &IDF
--   The \* and ? wildcard
+- The \* and ? wildcard
     characters
 
 This mode is used, for example, to send the list of a local directory
@@ -143,9 +143,9 @@ The name specified can be a generic file name or a directory name.
 
 It can include:
 
--   Specific symbolic
+- Specific symbolic
     variables, such as &PART and &IDF
--   The \* and ? wildcard
+- The \* and ? wildcard
     characters
 
 The directory name represents any structure specific to the environment
@@ -192,19 +192,19 @@ is used.
 
 > **Note**
 >
-> Refer to the table of platform-specific characters  that corresponds to your operating system.
+> Refer to the table of platform-specific characters that corresponds to your operating system.
 
 A catalog entry is created for each file. Each file is transferred in
 the same way as any other file.
 
 For more information, see [Broadcasting: Sending
-a set of files with the same IDF in send mode](../../../concepts/transfer_command_overview/broadcast_collect).    
+a set of files with the same IDF in send mode](../../../concepts/transfer_command_overview/broadcast_collect).
 
 Additionally, when sending a group of files:
 
--   You can specify
+- You can specify
     a list of directories to be sent in the indirection file. The copy/concatenation
     mechanism works in the same way for each directory as for the other generic
     send modes.
--   Do not mix files
+- Do not mix files
     and directories in the same indirection file.

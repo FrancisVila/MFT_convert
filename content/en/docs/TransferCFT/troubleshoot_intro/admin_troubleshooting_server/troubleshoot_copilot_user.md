@@ -18,9 +18,9 @@ The following message may be due to one of the causes listed below.
 /home/cft/company/Transfer_CFT/home/bin/**cftsu must be launch as setuid root!**
 ```
 
-1.  The owner is not root.  Check:  
+1. The owner is not root. Check:  
     ```
-    ls -l cftsu-rwsrwxrwx 1 cft cft  cftsu
+    ls -l cftsu-rwsrwxrwx 1 cft cft cftsu
     ```
 
     Fix: Set the root using the chown root:root &lt;file> command.
@@ -29,9 +29,9 @@ The following message may be due to one of the causes listed below.
     ls -l cftsu-rwsrwxrwx 1 **root root** cftsu
     ```
 
-2.  The setuid option (s) is not set for the cftsu file.  Check:  
+1. The setuid option (s) is not set for the cftsu file. Check:  
     ```
-    ls -l cftsu-rwxrwxrwx 1 root root  cftsu
+    ls -l cftsu-rwxrwxrwx 1 root root cftsu
     ```
 
     Fix: Set using the chmod u+s &lt;file> command.
@@ -41,8 +41,8 @@ The following message may be due to one of the causes listed below.
     -rw<u>s</u>rwxrwx 1 root root cftsu
     ```
 
-3.  The nosuid option is set for the disk. Check by executing the mount command:  
+1. The nosuid option is set for the disk. Check by executing the mount command:  
     ``` > mount
     devpts on /dev/pts type devpts (rw,**nosuid**,gid=5,mode=620)
     ```
-    1.  If the nosuid flag displays, you cannot set the SetUID (set group id) bit  on this disk. You can, though, copy the file to another disk and use the UCONF `copilot.unix.cftsu.fname` parameter to set the path to the new file (see the *Transfer CFT Installation Guide - Unix* for more information).
+    1.  If the nosuid flag displays, you cannot set the SetUID (set group id) bit on this disk. You can, though, copy the file to another disk and use the UCONF `copilot.unix.cftsu.fname` parameter to set the path to the new file (see the *Transfer CFT Installation Guide - Unix* for more information).

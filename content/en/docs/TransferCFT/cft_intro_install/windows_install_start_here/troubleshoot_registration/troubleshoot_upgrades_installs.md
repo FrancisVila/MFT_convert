@@ -6,26 +6,26 @@
 
 If an issue occurs while performing an installation or an upgrade, check for errors in the following places. Perform these steps before attempting to roll back in the case of an upgrade.
 
-1.  If you performed an upgrade from a version prior to v3.6, look for errors in the `install.log`  located in the `axway.installer` directory.
-2.  Check for errors in the `install.log` in the `CFT` directory (if this is a new installation or you upgraded from a version that did not use the Axway installer).
-3.  Navigate to the runtime directory and check the `.up `folder contents.
-4.  Again from the runtime directory, check the `copupd `folder contents. This folder is only available after performing a {{< TransferCFT/transfercftname >}} update or upgrade when using {{< TransferCFT/centralgovernancename >}} or {{< TransferCFT/flowmanager >}}. In the `copupd `folder, navigate to the` log > install` file.
-5.  Be ready to supply all of these files to Axway support if you cannot troubleshoot the issue with any errors found in the logs.
+1. If you performed an upgrade from a version prior to v3.6, look for errors in the `install.log` located in the `axway.installer` directory.
+1. Check for errors in the `install.log` in the `CFT` directory (if this is a new installation or you upgraded from a version that did not use the Axway installer).
+1. Navigate to the runtime directory and check the `.up `folder contents.
+1. Again from the runtime directory, check the `copupd `folder contents. This folder is only available after performing a {{< TransferCFT/transfercftname >}} update or upgrade when using {{< TransferCFT/centralgovernancename >}} or {{< TransferCFT/flowmanager >}}. In the `copupd `folder, navigate to the` log > install` file.
+1. Be ready to supply all of these files to Axway support if you cannot troubleshoot the issue with any errors found in the logs.
 
 ## Transfer CFT Copilot server issues
 
 ### Copilot doesn't start
 
--   Check that the port is not already used by another application.
--   Close all active sessions, use the syntax: `copstop -f`
--   Check that there are no orphan "`cop*`" processes. If there are, manually kill these processes.
+- Check that the port is not already used by another application.
+- Close all active sessions, use the syntax: `copstop -f`
+- Check that there are no orphan "`cop*`" processes. If there are, manually kill these processes.
 
 {{< TransferCFT/componentshortname  >}} server
 
 ### Cannot start my {{< TransferCFT/componentshortname  >}}
 
--   Check your {{< TransferCFT/componentshortname >}} log in Central Governance.
--   From the local {{< TransferCFT/componentshortname >}} runtime, try to manually start the server. If you cannot manually start the server, refer to *[Support tools](https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/Troubleshooting/support_tools.htm)* in the {{< TransferCFT/componentlongname >}}{{< TransferCFT/doctypeuser >}}.
+- Check your {{< TransferCFT/componentshortname >}} log in Central Governance.
+- From the local {{< TransferCFT/componentshortname >}} runtime, try to manually start the server. If you cannot manually start the server, refer to *[Support tools](https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/Troubleshooting/support_tools.htm)* in the {{< TransferCFT/componentlongname >}}{{< TransferCFT/doctypeuser >}}.
 
 ### Runtime directory error
 
@@ -37,10 +37,10 @@ Additionally, you cannot perform an installation in a directory if the runtime a
 
 If you get a **Warning***Problem running post-install step* message at the end of an installation, check the installation log file. The message `ERR: Unable to decrypt the password` indicates that there is an issue related to the PasswordsEncryptionKey.
 
-1.  In the `initialize.properties` file, locate all encrypted passwords and enter the passwords in clear text, then ensure that the `PasswordsEncryptionKey` field is empty.
-2.  Save the file.
-3.  Remove the files created by the unsuccessful installation.
-4.  Repeat the installation procedure.
+1. In the `initialize.properties` file, locate all encrypted passwords and enter the passwords in clear text, then ensure that the `PasswordsEncryptionKey` field is empty.
+1. Save the file.
+1. Remove the files created by the unsuccessful installation.
+1. Repeat the installation procedure.
 
 ## Multi-node multihost installation issues
 
@@ -58,10 +58,10 @@ is not writable by the current user
 
 To resolve this issue, using a different user perform the following commands on all hosts that are involved in the multihost, multi-node installation:
 
-1.  Open an SSH session on the machine and run the following command to change the UID, for example:  
+1. Open an SSH session on the machine and run the following command to change the UID, for example:  
     `sudo usermod -u 1005 ithomas`  
     Where `1005 `is the desired common UID, and `ithomas `is the user common to all of the UNIX hosts.
-2.  Run the command to change the GID, for example:  
+1. Run the command to change the GID, for example:  
     `sudo groupmod -g 1006 ithomas`  
     Where `1006 `is the desired common GID, and `ithomas `is the group to which the user `ithomas `belongs.
 

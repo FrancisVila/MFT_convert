@@ -10,8 +10,8 @@ When using governance services, provides visibility services for {{< TransferCFT
 
 provides:
 
--   Monitoring of registered Transfer CFTs status through heartbeats. Transfer CFT and its Copilot send heartbeats via the persistent mutually authenticated connection with Central Governance.
--   Deployment monitoring for:
+- Monitoring of registered Transfer CFTs status through heartbeats. Transfer CFT and its Copilot send heartbeats via the persistent mutually authenticated connection with Central Governance.
+- Deployment monitoring for:
     -   Configurations: The state of the last deployment configuration on a {{< TransferCFT/componentlongname >}} instance.
     -   Policies: The state of a policy deployment on each Transfer CFT linked to the policy.
     -   Flows: The state of a flow deployment on each Transfer CFT the flow uses.

@@ -10,55 +10,55 @@ Physical Files.
 For each transfer, the Transfer
 CFT can operate in one of four modes:
 
--   In
+- In
     requester mode: it is then the initiator of the transfer
 
-In PeSIT  protocol, the initiator of a network connection
+In PeSIT protocol, the initiator of a network connection
 keeps the requester role, for the transfer(s) performed over this connection.
 
--   In
+- In
     server mode: it accepts transfer requests
 
-In PeSIT  protocol, it is also the acceptor of the incoming
+In PeSIT protocol, it is also the acceptor of the incoming
 connection.
 
 A Transfer
 CFT can perform four roles:
 
--   Sender requester
--   Receiver requester
--   Sender server
--   Receiver server
+- Sender requester
+- Receiver requester
+- Sender server
+- Receiver server
 
 According to the protocol used, two transfer modes can be managed:
 
--   Transfers between
+- Transfers between
     a sender/requester monitor and a receiver/server monitor: sender/requester
     transfer or write transfer, for all protocols
--   Transfers between
+- Transfers between
     a receiver/requester monitor and a sender/server monitor: receiver/requester
     transfer or read transfer
 
 This second mode can only be used in the following protocols:
 
--   PeSIT D EXTERN
+- PeSIT D EXTERN
     profile
--   PeSIT D CFT profile
--   PeSIT E
+- PeSIT D CFT profile
+- PeSIT E
 
 Each of these modes applied to a file transfer is represented in the
 following figure.
 
 **File transfer mode**
 
-<img src="/Images/TransferCFT/File_transfer_mode.gif" width="491" height="484" />
+![]($1)
 
 The processes described in this topic are only applicable for file transfers (sending
 or receiving).
 
 ### What is a model file identifier?
 
-During a transfer,  {{< TransferCFT/componentshortname  >}} assigns a file identifier. The file
+During a transfer, {{< TransferCFT/componentshortname  >}} assigns a file identifier. The file
 is identified with a model file identifier called an IDF. An IDF can be
 seen as a logical class containing one or more physical files.
 
@@ -71,7 +71,7 @@ as required.
 
 The IDF is at the basis of the organization of the local operation:
 control of transfers, connection convention between applications (upstream/downstream)
-and the  {{< TransferCFT/componentshortname  >}}.
+and the {{< TransferCFT/componentshortname  >}}.
 
 Although the local operation IDF and the IDF agreed with the remote
 partner generally have the same value, it is possible to use correspondence
@@ -94,7 +94,7 @@ send transmission is activated by a SEND transfer command.
 
 The following commands are associated with this command:
 
--   A CFTSEND parameter
+- A CFTSEND parameter
     setting command with an identifier equal to the IDF defined in the SEND
     transfer command
 
@@ -104,7 +104,7 @@ take priority over those defined in the SEND command (FORCE parameter
 In this case, a message informs the user that his command has been partially
 taken into account.
 
--   Or, if no CFTSEND
+- Or, if no CFTSEND
     command has been defined, the CFTSEND ID=&lt;*default*&gt; command,
     where &lt;*default*&gt; is the default value defined in the DEFAULT
     parameter of CFTPARM
@@ -130,12 +130,12 @@ type of transfer:
 **Implementing a sender/requester transfer
 (write) - Explicit parameter setting**
 
-<img src="/Images/TransferCFT/Imp_send_rec_write_explicit.gif" width="796" height="158" />
+![]($1)
 
 Implementing a sender/requester transfer
 (write) - Default parameter setting
 
-<img src="/Images/TransferCFT/Impl_send_rec_write_default.gif" width="796" height="150" />
+![]($1)
 
 #### Implementing a Receiver/Requester Transfer
 
@@ -147,10 +147,10 @@ The environment for implementing a read transfer is as follows :
 reception is activated by a RECV transfer command. The following commands
 are associated with this command:
 
--   A CFTRECV parameter
+- A CFTRECV parameter
     setting command with an identifier equal to the model file identifier
     defined in RECV (IDF)
--   If no CFTRECV command
+- If no CFTRECV command
     has been defined, the command CFTRECV ID = &lt;*default*&gt;, where
     &lt;*default*&gt; is the default value defined in the DEFAULT parameter
     of CFTPARM
@@ -163,7 +163,7 @@ in *Partner*).
 characteristics associated with this request may be managed in two ways,
 according to operating constraints:
 
--   Either using a
+- Either using a
     locked-for-sending command previously saved in the server catalog
 
 This mode is activated by the transfer command SEND STATE=HOLD, the
@@ -172,10 +172,10 @@ of the corresponding catalog entry).
 
 The following are associated with this command in local mode:
 
--   A CFTSEND parameter
+- A CFTSEND parameter
     setting command with an identifier equal to the model file identifier
     defined in SEND (IDF)
--   Or, if no CFTSEND
+- Or, if no CFTSEND
     command has been defined, the CFTSEND ID = &lt;*default*&gt; command,
     where &lt;*default*&gt; is the default value defined in the DEFAULT
     parameter of CFTPARM
@@ -183,7 +183,7 @@ The following are associated with this command in local mode:
 This transmission relates to the partner (REQUESTER) indicated in the
 PART parameter (see *Parameter setting example* in *Partner*).
 
--   Or using an "implicit
+- Or using an "implicit
     send" defined by a parameter setting command CFTSEND IMPL = YES
 
 This implicit mode is used to send in server mode any authorized file
@@ -193,9 +193,9 @@ The default setting of a CFTSEND command is explicit (IMPL = NO).
 
 On receiving a transfer request, the monitor:
 
--   First selects the
+- First selects the
     locked for sending commands (if any)
--   And then the implicit
+- And then the implicit
     send commands
 
 The following figures summarize the mechanisms
@@ -219,7 +219,7 @@ characteristics being defined for each partner using a common IDF naming
 and data type convention. This file management mode is known as the closed
 mode.
 
-In PeSIT D CFT profile and PeSIT E protocol, the  {{< TransferCFT/componentshortname  >}}
+In PeSIT D CFT profile and PeSIT E protocol, the {{< TransferCFT/componentshortname  >}}
 also allows a partner to remotely manage this physical file location.
 This management mode is known as the "open mode".
 
@@ -236,7 +236,7 @@ a relative name that consists of a stem and a version number.
 
 Transferring a file designated by an absolute name involves no particularities.
 On the other hand, when the sent or received file is designated by a relative
-name,  {{< TransferCFT/componentshortname  >}} systematically looks for the corresponding absolute
+name, {{< TransferCFT/componentshortname  >}} systematically looks for the corresponding absolute
 name, to make sure to be able to return to the same data in the event
 of an incident. Indeed, if the initial relative name is used when restarting
 a transfer, there is a risk of accessing different data (a changeover
@@ -274,12 +274,12 @@ at the server end.
 To facilitate the use of the facility, the monitor provides the possibility
 of:
 
--   Receiving all the
+- Receiving all the
     files with the same IDF in locked for sending mode at the server level
     with ONE command at the receiver/requester end
--   Sending several
+- Sending several
     files with the same IDF with ONE command
--   Listing a remote
+- Listing a remote
     directory
 
 #### Receiving a Set of Files with the Same IDF in Receiver/Requester Mode
@@ -322,7 +322,7 @@ partner.
 **Example of receiving a set of files with
 the same IDF**
 
-<img src="/Images/TransferCFT/receive_set_of_files_with_the_same_IDF.gif" width="846" height="377" />
+![]($1)
 
 #### Sending a Set of Files with the Same IDF in Sender Mode
 
@@ -335,15 +335,15 @@ used are described in the *Sending of a group of files topic*.
 To list a remote directory, a receiver/requester transfer must be implemented
 with the following definitions:
 
--   On the server side,
+- On the server side,
     open mode send  
     (CFTSEND IMPL = YES, FNAME = &NFNAME)
--   On the receiver
+- On the receiver
     side, physical location, NFNAME parameter in the RECV command, by entering
     the name of a remote directory (*dirname*) or a generic name, or
     mask, using wildcard characters (*mask*)  
     The syntax convention used corresponds to the one recognized by the
-    sender  {{< TransferCFT/componentshortname >}}.
+    sender {{< TransferCFT/componentshortname >}}.
 
 In response, the sender/server selects the files, creates an entry in
 the catalog (with FNAME= *dirname* or *mask*) and send a series
@@ -356,14 +356,14 @@ associated with the text file type on your system.
 
 **Example listing a remote directory**
 
-<img src="/Images/TransferCFT/listing_remote_directory.gif" width="696" height="369" />
+![]($1)
 
 ### Request to receive several model files
 
 {{< TransferCFT/componentshortname  >}} provides the possibility of activating the following
 at the requester end:
 
--   The reception of
+- The reception of
     a physical file identified by a *generic IDF* partially defined using
     a character string and a wildcard character at the end of this string
 
@@ -373,10 +373,10 @@ at the requester end:
 > this manual it is generically designated by the character ‘\*’. Such an
 > IDF value is called a mask and is referred to as &lt;mask>.
 
--   *Selective
+- *Selective
     receptions* of several physical files associated with generic IDFs
     identified using a mask
--   *Global
+- *Global
     receptions* of IDFs of value not specified by the requester. This possibility
     is the generalization of a partially specified IDF. The value used for
     this IDF is, for all the systems, the character ‘\*’ (the character indicated
@@ -389,7 +389,7 @@ be in locked for sending mode (SEND STATE = HOLD).
 
 **PeSIT D CFT profile, PeSIT E**
 
-A Generic IDF scenario is possible between two  {{< TransferCFT/componentshortname  >}}s using either
+A Generic IDF scenario is possible between two {{< TransferCFT/componentshortname  >}}s using either
 the PeSIT D profile, or PeSIT E.
 
 This mechanism is used to receive ONE physical file identified at the
@@ -404,9 +404,9 @@ at the server end, the transfer SEND IDF = IDF1, STATE = HOLD, FNAME =
 Y... , the first transfer pending.
 
 **Example of the first transfer pending
-unlocked by  {{< TransferCFT/componentshortname  >}}**
+unlocked by {{< TransferCFT/componentshortname  >}}**
 
-<img src="/Images/TransferCFT/First_tx_pending_unlocked_by_CFT.gif" width="828" height="384" />
+![]($1)
 
 #### Selective Reception
 
@@ -434,62 +434,47 @@ An example of this mechanism is displayed in the figure. In this example,
 the names of the files received are defined using the following symbolic
 variables:
 
--   &IDT which
+- &IDT which
     is used to recover the identifier associated with the transfer in process
     for a given partner
--   &IDF which
+- &IDF which
     is used to recover the IDF sent by the server during a transfer
 
 **Example of selective reception using a
 generic IDF**
 
-<img src="/Images/TransferCFT/select_reception_generic_IDF.gif" width="837" height="378" />
+![]($1)
 
 #### Global Receptions
 
-```
-**ODETTE, PeSIT D CFT profile,
-PeSIT E** 
-Available only with the protocols mentioned above. 
-```
+
+| **ODETTE, PeSIT D CFT profile, PeSIT E**  | Available only with the protocols mentioned above.  |
+| --- | --- |
+
 
 This mechanism allows the requester to receive all the files pending
 at the server end.
 
-```
-**ODETTE** 
-Only the following receive command is valid:
-RECV IDF = \*
-Although sequencing is at the sender’s initiative, the receiver end catalog
-will contain a record corresponding to the global reception request and
-a record for each reception, in the same way as for the other protocols.
-This command provides the possibility to change direction and hence globally
-receive all the files pending at the remote partner end. 
-**PeSIT D CFT profile** 
-To activate a reception from a requester  {{< TransferCFT/componentshortname >}} to
-a server monitor, only the following commands are valid:
-RECV IDF = \* and RECV IDF = \*, FILE = ALL
-**PeSIT D CFT profile, PeSIT
-E** 
-Possible between two  {{< TransferCFT/componentshortname >}}s, using one of these
-two protocols.
-Between two CFTs, this is a special case of selective reception, the command
-being RECV IDF = \*, FILE = ALL 
-```
+
+| **ODETTE**  | Only the following receive command is valid:<br /> RECV IDF = *<br /> Although sequencing is at the sender’s initiative, the receiver end catalog will contain a record corresponding to the global reception request and a record for each reception, in the same way as for the other protocols. This command provides the possibility to change direction and hence globally receive all the files pending at the remote partner end.  |
+| --- | --- |
+| **PeSIT D CFT profile**  | To activate a reception from a requester {{< TransferCFT/componentshortname  >}} to a server monitor, only the following commands are valid:<br /> RECV IDF = * and RECV IDF = *, FILE = ALL |
+| **PeSIT D CFT profile, PeSIT E**  | Possible between two {{< TransferCFT/componentshortname  >}}s, using one of these two protocols.<br /> Between two CFTs, this is a special case of selective reception, the command being RECV IDF = *, FILE = ALL  |
+
 
 ### Protection of the model file identifier
 
 The CFTAUTH command is used to define the list of IDFs authorized for
 a given partner according to the transfer direction: sending or receiving.
 
-Before activating a SEND command,  {{< TransferCFT/componentshortname  >}} checks that the receiving
+Before activating a SEND command, {{< TransferCFT/componentshortname  >}} checks that the receiving
 partner has the right to receive the specified IDF. This mechanism is
 implemented through the parameter setting relationships indicated in the
 following figure.
 
 **IDF sending protection**
 
-<img src="/Images/TransferCFT/IDF_send_protection.gif" width="729" height="440" />
+![]($1)
 
 Similarly, when a RECV command is activated, {{< TransferCFT/componentshortname  >}} checks that
 the sending partner is authorized to send the requested IDF.
@@ -500,7 +485,7 @@ indicated in the following figure.
 **Checking that a partner is authorized
 to send the requested IDF**
 
-<img src="/Images/TransferCFT/Check_partner_authorizd_send_reqd_IDF.gif" width="729" height="440" />
+![]($1)
 
  
 

@@ -16,28 +16,28 @@
 that create application services.
 Each of these services is described in the following sections:
 
--   REST APIs
--   Web services
--   JPI
--   Transfer services
--   Synchronous communication
--   Catalog querying services
--   Delivered API templates described per operating system
--   Services in C
--   Services in COBOL
+- REST APIs
+- Web services
+- JPI
+- Transfer services
+- Synchronous communication
+- Catalog querying services
+- Delivered API templates described per operating system
+- Services in C
+- Services in COBOL
 
 [Managing exits](managing_exits)
-                - Provides the information about exit
+- Provides the information about exit
 task concepts, exit
 task architecture, types of exits and how to implement.
 
-[Force heterogeneous mode for a group of files](../admin_intro/uconf/uconf_heterogeneous_mode) - Describes how to disable the default settings in case you want  to ensure that groups of files are transferred using only the heterogeneous mode.  
+[Force heterogeneous mode for a group of files](../admin_intro/uconf/uconf_heterogeneous_mode) - Describes how to disable the default settings in case you want to ensure that groups of files are transferred using only the heterogeneous mode.
 
 [Script execution scheduling](../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftcron) - Describes the CRONJOB feature, which allows Transfer CFT to execute jobs at predetermined
 dates and times. These jobs can perform functions such as periodically
 scan one or more directories and issue a SEND command.
 
-Defining maximum simultaneous transfers - Describes  how to  optimize the number of parallel transfers, the number of transfer sessions, and how parameter dependencies affect transfer rates.
+Defining maximum simultaneous transfers - Describes how to optimize the number of parallel transfers, the number of transfer sessions, and how parameter dependencies affect transfer rates.
 
-[Command Guide](../gettingstarted_intro/my_first_transfer_flow_using_cg/typographical_conventions) - This section provides a comprehensive listing of  {{< TransferCFT/componentshortname  >}} commands,
+[Command Guide](../gettingstarted_intro/my_first_transfer_flow_using_cg/typographical_conventions) - This section provides a comprehensive listing of {{< TransferCFT/componentshortname  >}} commands,
 typographical conventions, command syntax and parameters.

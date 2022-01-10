@@ -12,18 +12,18 @@ The Transfer CFT service called (CFTI, CFTU or CFTC) executes the request, eithe
 
 The client application receives from Transfer CFT:
 
--   A return code
+- A return code
 
 <!-- -->
 
--   The requested data, if applicable
+- The requested data, if applicable
 
 ## Prerequisites
 
 You require the ICC and GMAKE utilities for IBM i platforms:
 
--   gmake: GNU compiler (make)
--   icc: Intel C/C++ compiler (calls ILE)
+- gmake: GNU compiler (make)
+- icc: Intel C/C++ compiler (calls ILE)
 
 ## Call from a COBOL/ILE or RPG/ILE program
 
@@ -47,57 +47,57 @@ RPG/ILE programming examples
 
 Refer to the programming examples, RPG COPY clauses, and procedures, which are supplied in the Transfer CFT library CFTPGM/CFTSRC (CPYRPGCILE, CPYRPGIILE, CPYRPGCIL4, CPYRPGIIL4):
 
--   TCFTI2\_RPG (API structure V24)
--   TCFTU\_RP1 (API asynchronous)
--   TCFTU\_RP2 (API synchronous)
--   I\_TCFTI\_RP (executes CFTI or CFTIX functions)
--   I\_TCFTU\_RP (executes CFTU function), etc.
+- TCFTI2\_RPG (API structure V24)
+- TCFTU\_RP1 (API asynchronous)
+- TCFTU\_RP2 (API synchronous)
+- I\_TCFTI\_RP (executes CFTI or CFTIX functions)
+- I\_TCFTU\_RP (executes CFTU function), etc.
 
 ## Creating an API application
 
-The  `TCPPARAM`  configuration sample is located in `CFTPROD/UTIN`.
+The `TCPPARAM` configuration sample is located in `CFTPROD/UTIN`.
 
 ## Application components
 
 The `<installdir>/runtime/src/capi `subdirectory contains the:
 
--   Sample source module,
-    called `apixmp1.c,` which interacts with  {{< TransferCFT/componentshortname >}}. This program
-    reads the  {{< TransferCFT/componentshortname >}} catalog and displays its contents in part or in
+- Sample source module,
+    called `apixmp1.c,` which interacts with {{< TransferCFT/componentshortname >}}. This program
+    reads the {{< TransferCFT/componentshortname >}} catalog and displays its contents in part or in
     full, depending on the restrictions set in the command line.
--   `makefile`
+- `makefile`
     compilation procedure, which uses the` apixmp1.c `sample source module
     to generate the APIXMPI executable file.
 
 The `CFTPGM `library subdirectory contains the `libapisrv1.srvpgm`
-module required to use  {{< TransferCFT/componentshortname  >}} APIs.
+module required to use {{< TransferCFT/componentshortname  >}} APIs.
 
 ## Generating the application
 
 To generate the *APIXMP1* sample program:
 
-1.  Access the `<installdir>/runtime/src/capi `directory.
-2.  Enter the command:  `gmake`
+1. Access the `<installdir>/runtime/src/capi `directory.
+1. Enter the command:  `gmake`
 
 ## Testing the configuration
 
 To test the configuration:
 
-1.  Connect to the IBM session with your Transfer CFT user.
-2.  Generate the  {{< TransferCFT/componentshortname >}} internal datafiles
+1. Connect to the IBM session with your Transfer CFT user.
+1. Generate the {{< TransferCFT/componentshortname >}} internal datafiles
     using `cftinit` with the configuration file:  
     CALL PGM(CFTINIT) PARM('CFTPROD/UTIN(TCPPARAM)')
-3.  When the` cftinit complete`
-    message is displayed, run  {{< TransferCFT/componentshortname >}} using the command:  
+1. When the` cftinit complete`
+    message is displayed, run {{< TransferCFT/componentshortname >}} using the command:  
     cftstart
-4.  When the `CFTMAIN process   ID is xxxxx `message is displayed, perform a transfer:  
+1. When the `CFTMAIN process   ID is xxxxx `message is displayed, perform a transfer:  
     CALL PGM(CFTUTIL) PARM(SEND 'part=boston,idf=txt')
-5.  Check that the transfer is
+1. Check that the transfer is
     complete:  
     CALL PGM(CFTUTIL) PARM(LISTCAT)
-6.  Run the sample program in the IFS environment:  
+1. Run the sample program in the IFS environment:  
     cd &lt;installdir>/runtime; . ./profile; APIXMP1
-7.  Run the sample program on NATIF environment:  
+1. Run the sample program on NATIF environment:  
     CALL PGM(APIXMP1)
 
 **Results**
@@ -108,6 +108,6 @@ The result should correspond to the catalog contents:
 > PART=BOSTON ,IDT=&lt;dynamic identifier>,IDF=TXT  
 > APIXMP1 \_ 2 record(s) found
 
-Stop  {{< TransferCFT/componentshortname  >}}:
+Stop {{< TransferCFT/componentshortname  >}}:
 
      cftstop

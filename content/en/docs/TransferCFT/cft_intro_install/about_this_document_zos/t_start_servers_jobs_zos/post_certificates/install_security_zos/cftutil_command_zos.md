@@ -4,647 +4,108 @@
     "weight": "350"
 }This section lists the Transfer CFT z/OS CFTUTIL commands, and additional object and class information for:
 
--   Users with all rights
+- Users with all rights
 
 <!-- -->
 
--   Users with all rights except for the $CFTOPER class
+- Users with all rights except for the $CFTOPER class
 
 ## User with all rights
 
-```
-Command
-Object
-Class
-VARS
-UserID
-Actions
-File/ACC
-Notes
-ABOUT
- 
- 
- 
- 
- 
- 
-No control
-PURGE
- 
- 
- 
- 
- 
-COM(UPDATE)
-No control
-COPYFILE
- 
- 
- 
- 
- 
- 
-No control
-CFTFILE
- 
- 
- 
- 
-Cr/De
-PART(ALTER)
-PARM(ALTER)
-CATLG(ALTER)
-LOG(ALTER)
-COM(ALTER)
-No control
-CFTPARM
-CFTPARM
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTCOM
-CFTCOM
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTCAT
-CFTCAT
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTLOG
-CFTLOG
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTACCNT
-CFTACCNT
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTAPPL
-CFTAPPL
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTSEND
-CFTSEND
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTSEND IMPL=YES
-CFTSENDI
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTRECV
-CFTRECV
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTEXIT
-CFTEXIT
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTAUTH
-CFTAUTH
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTIDF
-CFTIDF
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTXLATE
-CFTXLATE
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTNET
-CFTNET
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTPROT
-CFTPROT
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTETB
-CFTETB
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTPART
-CFTPART
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PART(UPDATE)
- 
-CFTDEST
-CFTDEST
-parmcls
-&ID
-Cmduse
-Cr/De/Mo
-PART(UPDATE)
- 
-CFTTCP
-CFTTCP
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PART(UPDATE)
- 
- 
- 
- 
- 
- 
- 
- 
- 
-UCONFGET
-UCONF
- 
-&ID
-Cmduser
-Read
-UCONF(READ)
- 
-UCONFSUBST
-UCONF
- 
-&ID
-Cmduser
-Read
-UCONF(READ)
- 
-LISTCUCONF
-UCONF
- 
-&ID
-Cmduser
-Read
-UCONF(UPDATE)
- 
-UCONFSET
-UCONF
- 
-&ID
-Cmduser
-Modify
-UCONF(UPDATE)
- 
-UCONFUNSET
-UCONF
- 
-&ID
-Cmduser
-Delete
-UCONF(UPDATE)
- 
- 
- 
- 
- 
- 
- 
- 
- 
-CFTEXT
-ALL_PARM
-opercls
-&FNAME
-Cmduser
-Read
-PARM(READ)
- 
-ALL_PART
-opercls
-&FNAME
-Cmduser
-Read
-PART(READ)
- 
-LISTCAT
-ALL_CAT
-opercls
-&FNAME
-Cmduser
-Read
-CATLG(READ)
- 
-LISTPARM
-ALL_PARM
-opercls
-&FNAME
-Cmduser
-Read
-PARM(READ)
- 
-LISTPART
-ALL_PART
-opercls
-&FNAME
-Cmduser
-Read
-PART(READ)
- 
-LISTCOM
-ALL_COM
-opercls
-&FNAME
-Cmduser
-Read
-COM(READ)
- 
- 
- 
- 
- 
- 
- 
- 
- 
-ACT
-ACT
-cmdecls
- 
-Cmduser
-Create
-PART(UPDATE)
- 
-ALL_PART
-opercls
-&FNAME
-Cmduser
-Read
-CFTPART
-parmcls
-&ID
-Cmduser
-Control
-INACT
- 
-INACT
-cmdercls
- 
-Cmduser
-Create
-PART(UPDATE)
- 
-ALL_PART
-opercls
-&FNAME
-Cmduser
-Read
-CFTPART
-parmcls
-&ID
-Cmduser
-Control
- 
+QQQ\_QQQ\_QQQ split table
+
+
+| Command  | Object  | Class  | VARS  | UserID  | Actions  | File/ACC  | Notes  |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ABOUT |   |   |   |   |   |   | No control |
+| PURGE |   |   |   |   |   | COM(UPDATE) | No control |
+| COPYFILE |   |   |   |   |   |   | No control |
+| CFTFILE |   |   |   |   | Cr/De | PART(ALTER)<br/> PARM(ALTER)<br/> CATLG(ALTER)<br/> LOG(ALTER)<br/> COM(ALTER) | No control |
+| CFTPARM | CFTPARM | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTCOM | CFTCOM | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTCAT | CFTCAT | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTLOG | CFTLOG | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTACCNT | CFTACCNT | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTAPPL | CFTAPPL | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTSEND | CFTSEND | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTSEND IMPL=YES | CFTSENDI | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTRECV | CFTRECV | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTEXIT | CFTEXIT | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTAUTH | CFTAUTH | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTIDF | CFTIDF | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTXLATE | CFTXLATE | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTNET | CFTNET | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTPROT | CFTPROT | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTETB | CFTETB | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTPART | CFTPART | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PART(UPDATE) |   |
+| CFTDEST | CFTDEST | parmcls | &amp;ID | Cmduse | Cr/De/Mo | PART(UPDATE) |   |
+| CFTTCP | CFTTCP | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PART(UPDATE) |   |
+|   |   |   |   |   |   |   |   |
+| UCONFGET | UCONF |   | &amp;ID | Cmduser | Read | UCONF(READ) |   |
+| UCONFSUBST | UCONF |   | &amp;ID | Cmduser | Read | UCONF(READ) |   |
+| LISTCUCONF | UCONF |   | &amp;ID | Cmduser | Read | UCONF(UPDATE) |   |
+| UCONFSET | UCONF |   | &amp;ID | Cmduser | Modify | UCONF(UPDATE) |   |
+| UCONFUNSET | UCONF |   | &amp;ID | Cmduser | Delete | UCONF(UPDATE) |   |
+|   |   |   |   |   |   |   |   |
+| CFTEXT | ALL_PARM | opercls | &amp;FNAME | Cmduser | Read | PARM(READ) |   |
+| - " -  | ALL_PART | opercls | &amp;FNAME | Cmduser | Read | PART(READ) |   |
+| LISTCAT | ALL_CAT | opercls | &amp;FNAME | Cmduser | Read | CATLG(READ) |   |
+| LISTPARM | ALL_PARM | opercls | &amp;FNAME | Cmduser | Read | PARM(READ) |   |
+| LISTPART | ALL_PART | opercls | &amp;FNAME | Cmduser | Read | PART(READ) |   |
+| LISTCOM | ALL_COM | opercls | &amp;FNAME | Cmduser | Read | COM(READ) |   |
+|   |   |   |   |   |   |   |   |
+| ACT | ACT | cmdecls |   | Cmduser | Create | PART(UPDATE) |   |
+| - " -  | ALL_PART | opercls | &amp;FNAME | Cmduser | Read |  - " -  |   |
+| - " -  | CFTPART | parmcls | &amp;ID | Cmduser | Control |  - " -  |   |
+| INACT | INACT | cmdercls |   | Cmduser | Create | PART(UPDATE) |   |
+| - " -  | ALL_PART | opercls | &amp;FNAME | Cmduser | Read |  - " -  |   |
+| - " -  | CFTPART | parmcls | &amp;ID | Cmduser | Control |  - " -  |   |
+
+
 Cmduser = System user (TSO) of the user submitting the command.
-```
 
 ## User with all rights except the $CFTOPER class
 
-```
-Command
-Object
-Class
-VARS
-UserID
-Actions
-File/ACC
-Notes
-ABOUT
- 
- 
- 
- 
- 
- 
-No control
-PURGE
- 
- 
- 
- 
- 
-COM(UPDATE)
-No control
-COPYFILE
- 
- 
- 
- 
- 
- 
-No control
-CFTFILE
- 
- 
- 
- 
-Cr/De
- 
-PART(ALTER)
-PARM(ALTER)
-CATLG(ALTER)
-LOG(ALTER)
-COM(ALTER)
-No control
-CFTPARM
-CFTPARM
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTCOM
-CFTCOM
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTCAT
-CFTCAT
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE
- 
-CFTLOG
-CFTLOG
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTACCNT
-CFTACCNT
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTAPPL
-CFTAPPL
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTSEND
-CFTSEND
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTSEND IMPL=YES
-CFTSENDI
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTRECV
-CFTRECV
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTEXIT
-CFTEXIT
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTAUTH
-CFTAUTH
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTIDF
-CFTIDF
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTXLATE
-CFTXLATE
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTNET
-CFTNET
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTPROT
-CFTPROT
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTETB
-CFTETB
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PARM(UPDATE)
- 
-CFTPART
-CFTPART
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PART(UPDATE)
- 
-CFTDEST
-CFTDEST
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PART(UPDATE)
- 
-CFTTCP
-CFTTCP
-parmcls
-&ID
-Cmduser
-Cr/De/Mo
-PART(UPDATE)
- 
-CFTEXT
-CFTxxx\*
-parmcls
-&ID
-Cmduser
-Read
-PARM(READ)
-CFTyyy\*
-parmcls
-&ID
-Cmduser
-Read
-PART(READ)
-LISTPARM
-CFTxxx\*
-parmcls
-&ID
-Cmduser
-Read
-PARM(READ)
- 
-LISTPART
-CFTyyy\*
-parmcls
-&ID
-Cmduser
-Read
-PART(READ)
- 
-LISTCAT
-APPL
-applcls
-&ID
-Cmduser
-Read
-CATLG(READ)
- 
-LISTCOM
- 
- 
- 
- 
- 
- 
-Access denied
-ACT
- 
-ACT
-cmdecls
- 
-Cmduser
-Create
-PART(UPDATE)
- 
-CFTPART
-parmcls
-&ID
-Cmduser
-Read
-CFTPART
-parmcls
-&ID
-Cmduser
-Control
-INACT
- 
-INACT
-cmdecls
- 
-Cmduser
-Create
-PART(UPDATE)
- 
-CFTPART
-parmcls
-&ID
-Cmduser
-Read
-CFTPART
-parmcls
-&ID
-Cmduser
-Control
- 
+
+| Command  | Object  | Class  | VARS  | UserID  | Actions  | File/ACC  | Notes  |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ABOUT |   |   |   |   |   |   | No control |
+| PURGE |   |   |   |   |   | COM(UPDATE) | No control |
+| COPYFILE |   |   |   |   |   |   | No control |
+| CFTFILE |   |   |   |   | Cr/De<br/>  | PART(ALTER)<br/> PARM(ALTER)<br/> CATLG(ALTER)<br/> LOG(ALTER)<br/> COM(ALTER) | No control |
+| CFTPARM | CFTPARM | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTCOM | CFTCOM | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTCAT | CFTCAT | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE |   |
+| CFTLOG | CFTLOG | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTACCNT | CFTACCNT | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTAPPL | CFTAPPL | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTSEND | CFTSEND | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTSEND IMPL=YES | CFTSENDI | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTRECV | CFTRECV | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTEXIT | CFTEXIT | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTAUTH | CFTAUTH | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTIDF | CFTIDF | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTXLATE | CFTXLATE | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTNET | CFTNET | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTPROT | CFTPROT | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTETB | CFTETB | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PARM(UPDATE) |   |
+| CFTPART | CFTPART | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PART(UPDATE) |   |
+| CFTDEST | CFTDEST | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PART(UPDATE) |   |
+| CFTTCP | CFTTCP | parmcls | &amp;ID | Cmduser | Cr/De/Mo | PART(UPDATE) |   |
+| CFTEXT | CFTxxx* | parmcls | &amp;ID | Cmduser | Read | PARM(READ) |   |
+| - " -  | CFTyyy* | parmcls | &amp;ID | Cmduser | Read | PART(READ) |   |
+| LISTPARM | CFTxxx* | parmcls | &amp;ID | Cmduser | Read | PARM(READ) |   |
+| LISTPART | CFTyyy* | parmcls | &amp;ID | Cmduser | Read | PART(READ) |   |
+| LISTCAT | APPL | applcls | &amp;ID | Cmduser | Read | CATLG(READ) |   |
+| LISTCOM |   |   |   |   |   |   | Access denied |
+| ACT | ACT | cmdecls |   | Cmduser | Create | PART(UPDATE) |   |
+| - " -  | CFTPART | parmcls | &amp;ID | Cmduser | Read |  - " -  |   |
+| - " -  | CFTPART | parmcls | &amp;ID | Cmduser | Control |  - " -  |   |
+| INACT | INACT | cmdecls |   | Cmduser | Create | PART(UPDATE) |   |
+| - " -  | CFTPART | parmcls | &amp;ID | Cmduser | Read |  - " -  |   |
+| - " -  | CFTPART | parmcls | &amp;ID | Cmduser | Control |  - " -  |   |
+
+
 CFTxxx\* = PARM file configuration commands.
+
 CFTyyy\* = PART file configuration commands.
-```

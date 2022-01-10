@@ -7,109 +7,49 @@
 {{< TransferCFT/componentlongname  >}} Guardian specific values
 
 
-|  Notation  |  Object  |  Value  |
+| Notation | Object | Value |
 | --- | --- | --- |
-|  char_file  |  Prefix for logical names  |  =  |
-|  char_mask  |  Wildcard character  |  ?  |
-|  char_symb  |  Prefix for symbolic variables  |  ^  |
-|  file_symb  |  Prefix for a file name passed to CFTUTIL as a parameter  |  @  |
+| char_file | Prefix for logical names | = |
+| char_mask | Wildcard character | ? |
+| char_symb | Prefix for symbolic variables | ^ |
+| file_symb | Prefix for a file name passed to CFTUTIL as a parameter | @ |
 
 
 File properties automatically retrieved for send operations
 
 
-|  Notation  |  Object  |
+| Notation | Object |
 | --- | --- |
-|  FSPACE  |  YES  |
-|  FLRECL  |  YES  |
-|  FBLKSIZE  |  YES  |
-|  FRECFM  |  YES  |
-|  FTYPE  |  YES  |
+| FSPACE | YES |
+| FLRECL | YES |
+| FBLKSIZE | YES |
+| FRECFM | YES |
+| FTYPE | YES |
 
 
-FTYPE  values and associated implicit FCODE default values for send operations
+FTYPE values and associated implicit FCODE default values for send operations
 
 
-|  FTYPE  |  FCODE  |
+| FTYPE | FCODE |
 | --- | --- |
-|  ' '  |  BINARY  |
-|  E  |  ASCII  |
+| ' ' | BINARY |
+| E | ASCII |
 
 
 FTYPE, FRECFM, and FORG combinations for send operations
 
-<table>
-   <thead>
-      <tr>
-<th rowspan="2" > 
-<p>Guardian<br />
-type</p>         </th>
-<th rowspan="2" > 
-<p>Guardian<br />
-code</p>         </th>
-<th rowspan="2" > 
-<p>File type</p>         </th>
-<th colspan="3" >Implicit value for...         </th>
-      </tr>
-      <tr>
-<th ><p>FTYPE<br />
-</p>         </th>
-<th ><p>FRECFM<br />
-</p>         </th>
-<th >FORG         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td ><p>U</p>         </td>
-         <td ><p># 101</p>         </td>
-         <td ><p>Binary stream</p>         </td>
-         <td ><p>' '</p>         </td>
-         <td ><p>U</p>         </td>
-         <td >SEQ         </td>
-      </tr>
-      <tr>
-         <td ><p>U</p>         </td>
-         <td ><p>= 101</p>         </td>
-         <td ><p>Edit file</p>         </td>
-         <td ><p>E</p>         </td>
-         <td ><p>U</p>         </td>
-         <td >SEQ         </td>
-      </tr>
-      <tr>
-         <td ><p>E</p>         </td>
-         <td ><p># 1</p>         </td>
-         <td ><p>Fixed sequential</p>         </td>
-         <td ><p>' '</p>         </td>
-         <td ><p>F</p>         </td>
-         <td >SEQ         </td>
-      </tr>
-      <tr>
-         <td ><p>E</p>         </td>
-         <td ><p>= 1</p>         </td>
-         <td ><p>Sequential, variable emulation</p>         </td>
-         <td ><p>' '</p>         </td>
-         <td ><p>V</p>         </td>
-         <td >SEQ         </td>
-      </tr>
-      <tr>
-         <td ><p>R</p>         </td>
-         <td ><p> </p>         </td>
-         <td ><p>Direct fixed</p>         </td>
-         <td ><p>' '</p>         </td>
-         <td ><p>F [1]</p>         </td>
-         <td >DIR         </td>
-      </tr>
-      <tr>
-         <td ><p>K</p>         </td>
-         <td ><p> </p>         </td>
-         <td ><p>Fixed indexed sequential</p>         </td>
-         <td ><p>' '</p>         </td>
-         <td ><p>F  [1]</p>         </td>
-         <td >IDX         </td>
-      </tr>
-   </tbody>
-</table>
+QQQ\_QQQ\_CHECK phrase below
+
+
+| Guardian<br /> type | Guardian<br /> code | File type | FTYPE  | FRECFM  | FORG  |
+| --- | --- | --- | --- | --- | --- |
+| U | # 101 | Binary stream | ' ' | U | SEQ  |
+| U | = 101 | Edit file | E | U | SEQ  |
+| E | # 1 | Fixed sequential | ' ' | F | SEQ  |
+| E | = 1 | Sequential, variable emulation | ' ' | V | SEQ  |
+| R |   | Direct fixed | ' ' | F [1] | DIR  |
+| K |   | Fixed indexed sequential | ' ' | F [1] | IDX  |
+
 
 > **Note**
 >
@@ -122,12 +62,12 @@ code</p>         </th>
 FTYPE, FRECFM, and FORG values for receive operations
 
 
-|  FTYPE  |  FRECFM  | FORG  |  File Type  |  Guardian Type  |  Guardian Code  |
+| FTYPE | FRECFM | FORG  | File Type | Guardian Type | Guardian Code |
 | --- | --- | --- | --- | --- | --- |
-|   |  U  |   |  Binary stream  |  U  |  0  |
-|  E  |   |   |  Edit file  |  U  |  101  |
-|   |  F  | SEQ  |  Fixed sequential  |  E  |  0  |
-|   |  V  |   |  Sequential, variable emulation  |  E  |  1  |
+|   | U |   | Binary stream | U | 0 |
+| E |   |   | Edit file | U | 101 |
+|   | F | SEQ  | Fixed sequential | E | 0 |
+|   | V |   | Sequential, variable emulation | E | 1 |
 |   | F  | DIR[2]  | Direct fixed  | R  | 0  |
 |   | V  | DIR [2]  | Direct fixed, variable emulation  | R  | 1  |
 |   | F  | IDX [2]  | Fixed indexed sequential  | K  | 0  |
@@ -140,7 +80,7 @@ FTYPE, FRECFM, and FORG values for receive operations
 
 > **Note**
 >
-> \[2\] Read the file organization from the network, explicitly set FORG  to FORG= ‘ ‘. Otherwise, FORG is always sequential (FORG = SEQ).
+> \[2\] Read the file organization from the network, explicitly set FORG to FORG= ‘ ‘. Otherwise, FORG is always sequential (FORG = SEQ).
 
 ## Platform specific parameters and values
 
@@ -154,7 +94,7 @@ Forces the file CODE attribute. This value should be consistent with the file st
 
 **Example**: `ATTSUSER    = 'FCODE=180'`
 
-The received file is created with  180 as the code.
+The received file is created with 180 as the code.
 
 FORMAT
 

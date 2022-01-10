@@ -7,7 +7,7 @@
 ### id
 
 Identifier. The maximum length for an identifier value-type is 32 characters.
-This affects all  {{< TransferCFT/componentshortname  >}} commands.
+This affects all {{< TransferCFT/componentshortname  >}} commands.
 
 <span id="id_CFTAUTH"></span>
 
@@ -68,10 +68,10 @@ commands listed below.
 
 | EXIT type  | Command  | Parameter  |
 | --- | --- | --- |
-| Directory  |  CFTPROT  |  EXITA  |
-|   |   |  EXIT  |
-| File  |  CFTSEND, SEND, CFTRECV, RECV  |  EXIT  |
-| End of transfer  |  CFTPARM  |  EXITEOT  |
+| Directory  | CFTPROT | EXITA  |
+|   |   | EXIT  |
+| File  | CFTSEND, SEND, CFTRECV, RECV  | EXIT  |
+| End of transfer  | CFTPARM  | EXITEOT  |
 
 
 <span id="id_CFTPARM"></span>
@@ -144,14 +144,14 @@ of DIRECT, FCODE or NCODE are different.
 Local model file identifier (IDF)
 
 The "COMMUT" value for this parameter takes a particular meaning
-for  {{< TransferCFT/componentshortname  >}}: it corresponds to the description of the files received
+for {{< TransferCFT/componentshortname  >}}: it corresponds to the description of the files received
 as an intermediate partner. For the store and forward to be accepted,
 the command (CFTRECV ID = COMMUT) has to be customized explicitly on the
 store and forward site. If not, the store and forward is refused.
 
 
-           |  **PeSIT SIT profile**  |  For the PeSIT SIT profile, the model file identifier is subjected to the format constraint (Fnnnnn). See  <a href="../../../../protocols_start_here/about_pesit">Protocols: PeSIT</a>.  |
- --- | --- | --- |
+| **PeSIT SIT profile** | For the PeSIT SIT profile, the model file identifier is subjected to the format constraint (Fnnnnn). See <a href="../../../../protocols_start_here/about_pesit">Protocols: PeSIT</a>. |
+| --- | --- |
 
 
 <span id="id_CFTSEND"></span>
@@ -165,7 +165,7 @@ Local
 identifier of the model file (IDF) to be sent.
 
 
-|  PeSIT SIT profile  |  In the PeSIT protocol with the SIT profile, the model file identifier is subject to the format constraint (Fnnnnn). See  <a href="../../../../protocols_start_here/about_pesit">Protocols: PeSIT</a>.  |
+| PeSIT SIT profile | In the PeSIT protocol with the SIT profile, the model file identifier is subject to the format constraint (Fnnnnn). See <a href="../../../../protocols_start_here/about_pesit">Protocols: PeSIT</a>. |
 | --- | --- |
 
 
@@ -175,7 +175,7 @@ identifier of the model file (IDF) to be sent.
 
 Network resource identifier.
 
-#### CFTACCNT, CFTCOM, CFTIDF,  CFTNET, CFTTCP, CFTTRACE, CFTAPPL, CFTSSL,  CFTEXT, LISTPARM, LISTPART
+#### CFTACCNT, CFTCOM, CFTIDF, CFTNET, CFTTCP, CFTTRACE, CFTAPPL, CFTSSL, CFTEXT, LISTPARM, LISTPART
 
 \[ID = identifier \]
 

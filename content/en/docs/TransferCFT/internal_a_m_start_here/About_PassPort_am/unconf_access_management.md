@@ -13,25 +13,25 @@ When enabled, {{< TransferCFT/componentshortname  >}} retrieves all permissions 
 
 | Parameters  | Default  | Description  |
 | --- | --- | --- |
-| am.passport.persistency.enable  | Yes  |  Enables persistent support for PassPort AM.  |
+| am.passport.persistency.enable  | Yes  | Enables persistent support for PassPort AM. |
 | am.passport.persistency.fname  | $(cft.runtime_dir)/data/CFTAM  | Persistent cache file name for PassPort AM.  |
-| am.passport.persistency.check_interval  | 600  |  Interval in seconds between two checks of access management updates.<br/>See also the information concerning CFTSXPAM or copsxpam below.  |
+| am.passport.persistency.check_interval  | 600  | Interval in seconds between two checks of access management updates.<br/> See also the information concerning CFTSXPAM or copsxpam below. |
 | am.passport.persistency.cftsxpam.enable  | Yes  | Enable the CFTSXPAM process, which updates the PassPort AM cache.  |
 
 
 ## Updating the cache
 
-When Transfer CFT  or Copilot is configured to use PassPort AM , it periodically scans  for changes  in user rights.  The changes are then saved in the file defined in `am.passport.persistency.fname`. These scans occur at regular intervals as defined by the `am.passport.persistency.check_interval` parameter.
+When Transfer CFT or Copilot is configured to use PassPort AM , it periodically scans for changes in user rights. The changes are then saved in the file defined in `am.passport.persistency.fname`. These scans occur at regular intervals as defined by the `am.passport.persistency.check_interval` parameter.
 
--   To force an immediate cache update, you can manually run CFTSXPAM (as described below).
--   If a user (a non-superuser) is not listed in the cache and tries to start Transfer CFT, Transfer CFT cannot start and displays the [CFTX03W](../../../troubleshoot_intro/messages_and_error_codes_start_here/cftx_messages) error in the log. To fix, you can manually execute CFTSXPAM and restart Transfer CFT.
+- To force an immediate cache update, you can manually run CFTSXPAM (as described below).
+- If a user (a non-superuser) is not listed in the cache and tries to start Transfer CFT, Transfer CFT cannot start and displays the [CFTX03W](../../../troubleshoot_intro/messages_and_error_codes_start_here/cftx_messages) error in the log. To fix, you can manually execute CFTSXPAM and restart Transfer CFT.
 
 ### Manually run CFTSXPAM
 
-1.  Log on as a Transfer CFT superuser, meaning a user that is defined in `am.passport.superuser`.
-2.  Load the Transfer CFT profile.
-3.  Check that CFTSXPAM is enabled, `am.passport.persistency.cftsxpam.enable = yes`.
-4.  Execute the command: `CFTSXPAM`
+1. Log on as a Transfer CFT superuser, meaning a user that is defined in `am.passport.superuser`.
+1. Load the Transfer CFT profile.
+1. Check that CFTSXPAM is enabled, `am.passport.persistency.cftsxpam.enable = yes`.
+1. Execute the command: `CFTSXPAM`
 
 > **Note**
 >

@@ -13,7 +13,7 @@
 Name of the Parameter input file.
 
 Default value: default name of the Parameter file defined
-for CFTUTIL for the system concerned. Refer to the  {{< TransferCFT/componentshortname  >}} *Operations
+for CFTUTIL for the system concerned. Refer to the {{< TransferCFT/componentshortname  >}} *Operations
 Guide* that corresponds with your OS.
 
 [Return to Command index](../../)

@@ -23,13 +23,13 @@ system.
 
 | OS  | Maximum number supported  |
 | --- | --- |
-|  UNIX  |  64  |
-|  Windows  |  64  |
-|  z/OS (MVS)  |  400  |
-|  IBM i  |  64  |
+| UNIX  | 64 |
+| Windows  | 64 |
+| z/OS (MVS) | 400 |
+| IBM i | 64 |
 
 
-The following CFTI18I  message displays in the CFTLOG when Transfer CFT is started so that you can  view the actual MAXTRANS, MAXTASK, TRANTASK values.
+The following CFTI18I  message displays in the CFTLOG when Transfer CFT is started so that you can view the actual MAXTRANS, MAXTASK, TRANTASK values.
 
 Example
 

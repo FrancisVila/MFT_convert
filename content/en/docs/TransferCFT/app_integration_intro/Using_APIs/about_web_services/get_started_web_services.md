@@ -2,32 +2,32 @@
     "title": "Get started with Web services",
     "linkTitle": "Get started with Web services",
     "weight": "310"
-}This section describes how to get started using Web services with {{< TransferCFT/componentlongname  >}}. You can use a tool such as SoapUI to create and test SOAP requests. A typical usage for Web services  when running Transfer CFT is:
+}This section describes how to get started using Web services with {{< TransferCFT/componentlongname  >}}. You can use a tool such as SoapUI to create and test SOAP requests. A typical usage for Web services when running Transfer CFT is:
 
--   To use  web services to submit a high number of transfer requests.
--   To trace exchanges using the transfer requests' IDT and IDTU.
+- To use web services to submit a high number of transfer requests.
+- To trace exchanges using the transfer requests' IDT and IDTU.
 
-When using Web services with {{< TransferCFT/hflongproductname  >}}, select the type media communication type, either COM FILE or COM TCP, to use for transfer requests (SEND/RECV), or administration services (such as HALT). If you are using Web services with TCP as the selected COM media type, refer to  [About synchronous communication](../../../synch_comm_tcpip_intro) for information on configuring the client.
+When using Web services with {{< TransferCFT/hflongproductname  >}}, select the type media communication type, either COM FILE or COM TCP, to use for transfer requests (SEND/RECV), or administration services (such as HALT). If you are using Web services with TCP as the selected COM media type, refer to [About synchronous communication](../../../synch_comm_tcpip_intro) for information on configuring the client.
 
 ## Prerequisites
 
 You require a tool for developing Web services requests, such as SoapUI.
 
--   SoapUI information: [www.soapui.org/about-soapui/what-is-soapui-.html](http://www.soapui.org/about-soapui/what-is-soapui-.html)
--   SoapUI download:  [www.soapui.org/downloads/latest-release.html](http://www.soapui.org/downloads/latest-release.html)
+- SoapUI information: [www.soapui.org/about-soapui/what-is-soapui-.html](http://www.soapui.org/about-soapui/what-is-soapui-.html)
+- SoapUI download: [www.soapui.org/downloads/latest-release.html](http://www.soapui.org/downloads/latest-release.html)
 
 ## View available operations
 
-You can  access a full list of available operations at: &lt;Transfer\_CFT\_install\_dir>\\home\\distrib\\copilot\\wsdl\\doc\\index.html
+You can access a full list of available operations at: &lt;Transfer\_CFT\_install\_dir>\\home\\distrib\\copilot\\wsdl\\doc\\index.html
 
 ## Select communication media
 
-Regardless of the mode you select, COM FILE or [COM TCP](../../../synch_comm_tcpip_intro), the service is the same; the only  difference in comportment is the performance and error management (including transfer tracking).
+Regardless of the mode you select, COM FILE or [COM TCP](../../../synch_comm_tcpip_intro), the service is the same; the only difference in comportment is the performance and error management (including transfer tracking).
 
 ### COM FILE
 
--   Pros: There is no effect on persistence; if {{< TransferCFT/hflongproductname >}} stops the request is stored in the COM file. Additionally, there is no need to implement error handling on the client side except if the communication file is full (see Note below).
--   Cons: The performance response time per request is at the very least  `copilot.cft.timerwaitcftcata` seconds, where the maximum time could be `copilot.cft.timerwaitcftcata` multiplied by the `copilot.cft.nbwaitcftcata` value.
+- Pros: There is no effect on persistence; if {{< TransferCFT/hflongproductname >}} stops the request is stored in the COM file. Additionally, there is no need to implement error handling on the client side except if the communication file is full (see Note below).
+- Cons: The performance response time per request is at the very least `copilot.cft.timerwaitcftcata` seconds, where the maximum time could be `copilot.cft.timerwaitcftcata` multiplied by the `copilot.cft.nbwaitcftcata` value.
 
 > **Note**
 >
@@ -35,12 +35,12 @@ Regardless of the mode you select, COM FILE or [COM TCP](../../../synch_comm_tc
 
 ### COM TCP
 
--   Pros: Performance is improved due to a faster request response time (under ideal conditions less than 1 second, however the actual time depends on the Transfer CFT process load, as opposed to `copilot.cft.timerwaitcftcata` seconds   at the very least if you are using COM FILE).
--   Cons: There is an effect on persistence - if {{< TransferCFT/hflongproductname >}} stops the request is not recorded. Additionally, error handling must be implemented on the client.
+- Pros: Performance is improved due to a faster request response time (under ideal conditions less than 1 second, however the actual time depends on the Transfer CFT process load, as opposed to `copilot.cft.timerwaitcftcata` seconds at the very least if you are using COM FILE).
+- Cons: There is an effect on persistence - if {{< TransferCFT/hflongproductname >}} stops the request is not recorded. Additionally, error handling must be implemented on the client.
 
 ## Customize the Transfer CFT COM configuration
 
-According to the mode you select,  FILE or TCP, you can modify the following parameters in the unified configuration to optimize performance and tracking.
+According to the mode you select, FILE or TCP, you can modify the following parameters in the unified configuration to optimize performance and tracking.
 
 ### COM FILE
 
@@ -50,9 +50,9 @@ Concerning errors when using COM TCP mode, if CFTMAIN stops the connection is l
 
 ### COM TCP or COM FILE
 
-When using either COM FILE or COM TCP, the  `copilot.misc.maxnbprocess` defines the maximum number of parallel sessions accepted by the Transfer CFT Copilot server (default is 20). You can modify this value in function with the peaks in parallel requests your system experiences (maximum is 64), however consider the impact of having a high number of parallel processes. Lastly note that each process treats  only one application at a time.
+When using either COM FILE or COM TCP, the `copilot.misc.maxnbprocess` defines the maximum number of parallel sessions accepted by the Transfer CFT Copilot server (default is 20). You can modify this value in function with the peaks in parallel requests your system experiences (maximum is 64), however consider the impact of having a high number of parallel processes. Lastly note that each process treats only one application at a time.
 
-Any requests that exceed the limit cause a network error  with either a " connection refused" or "connection closed by remote" type of error.
+Any requests that exceed the limit cause a network error with either a " connection refused" or "connection closed by remote" type of error.
 
 > **Note**
 >
@@ -62,26 +62,26 @@ Any requests that exceed the limit cause a network error  with either a " connec
 
 The following procedure is based on using the SoapUI tool. The exact steps may vary depending on the Web services tool you use.
 
-1.  Start SoapUI.
-2.  From the File menu, select New SOAP Project to create a project:
+1. Start SoapUI.
+1. From the File menu, select New SOAP Project to create a project:
     -   Project Name: Transfer\_CFT
     -   Initial WSDL: &lt;CFTINSTALLDIR>\\home\\distrib\\copilot\\wsdl\\copilotcft.wsdl
-3.  Select and expand the service to use, for example:
+1. Select and expand the service to use, for example:
     -   XFER\_CMD\_SEND\_FILE to send a file, or
     -   XFER\_CAT\_SELECT to monitor a transfer request
-4.  Enter the Copilot server URL in the request window: &lt;host>:&lt;copilot server port>
-5.  Modify the request as needed. See also:
+1. Enter the Copilot server URL in the request window: &lt;host>:&lt;copilot server port>
+1. Modify the request as needed. See also:
     -   [Perform a send file request](../example_send_request)
     -   [Perform a catalog search request](../example_search_catalog)
-6.  Submit the request.
-7.  Check the result. See  [successful or unsuccessful responses.](../example_send_request)
+1. Submit the request.
+1. Check the result. See [successful or unsuccessful responses.](../example_send_request)
 
 ## Return codes
 
 When using Web services the return codes are as follows:
 
 
-| Name  | Description  |  XTS <br/>mapping  |
+| Name  | Description  | XTS <br/> mapping |
 | --- | --- | --- |
 | RCVA_RESPONSE_NOK_VALUE_ERROR  | Value error  | 10  |
 | RCVA_RESPONSE_NOK_NOT_FOUND  | Not found  | 11  |

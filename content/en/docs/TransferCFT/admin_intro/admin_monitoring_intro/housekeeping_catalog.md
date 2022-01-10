@@ -10,9 +10,9 @@ This section describes how to manage the log, catalog, and output files to keep 
 
 Transfer CFT records all file transfers in its local database, the catalog. The size of the Catalog is defined to store a maximum number of file transfer records.
 
-### Automatic  catalog expansion
+### Automatic catalog expansion
 
-Thecatalog option lets you  enlarge the catalog by a preset percentage when  an alert  is sent that the catalog is reaching its threshold. Additionally you can indicate a script to execute if this expanded limit is exceeded.
+Thecatalog option lets you enlarge the catalog by a preset percentage when an alert is sent that the catalog is reaching its threshold. Additionally you can indicate a script to execute if this expanded limit is exceeded.
 
 #### Overview
 
@@ -20,43 +20,43 @@ Once the catalog exceeds the minimum alert level, it can be expanded to the amou
 
 If you defined a limit for catalog alerts, TLVCLEAR, once the usage surpasses the allotted value one of the following occurs:
 
--   The catalog is expanded and a message  sent to the log, but no script is executed
--   The catalog is expanded, a message  is sent to the log, and the TLVCEXEC script executes.
+- The catalog is expanded and a message sent to the log, but no script is executed
+- The catalog is expanded, a message is sent to the log, and the TLVCEXEC script executes.
 
 #### Steps
 
-To enable the auto-expand option, with  {{< TransferCFT/componentshortname  >}} running:
+To enable the auto-expand option, with {{< TransferCFT/componentshortname  >}} running:
 
-1.  Set the uconf values for:
+1. Set the uconf values for:
     -   cft.cftcat.auto\_expand\_percent
     -   cft.cftcat.auto\_expand\_max\_size
-2.  To activate the new values, run the command: CFTUTIL reconfig type = uconf
+1. To activate the new values, run the command: CFTUTIL reconfig type = uconf
     -   If {{< TransferCFT/componentshortname >}} is stopped when setting uconf values, you do not need to execute the reconfig command.
 
 
 | Parameter  | Default  | Description  |
 | --- | --- | --- |
-| cft.cftcat.auto_expand_percent  | 0  |  This value indicates the factor increase, as a percentage, that the catalog will automatically expand.<br/>The value 0 disables the automatic expansion feature. <blockquote> **Note**<br/>Tip We recommend that you set this to a relatively high value, at least 50. When repeatedly expanded, the catalog's internal structure may become fragmented and, consequently, catalog access less efficient. </blockquote>  |
-| cft.cftcat.auto_expand_max_size  | 1M  |  The maximum number of records for the automatic catalog expansion option.  |
+| cft.cftcat.auto_expand_percent  | 0  | This value indicates the factor increase, as a percentage, that the catalog will automatically expand.<br/> The value 0 disables the automatic expansion feature.<br/> <blockquote> **Note**<br/> Tip We recommend that you set this to a relatively high value, at least 50. When repeatedly expanded, the catalog's internal structure may become fragmented and, consequently, catalog access less efficient.<br/> </blockquote>  |
+| cft.cftcat.auto_expand_max_size  | 1M  | The maximum number of records for the automatic catalog expansion option. |
 
 
 Related parameters:
 
--   TLVCLEAR: Level below which the alert stops.
--   TLVCEXEC: Batch to execute when the alert ends.
--   TLVWRATE: The minimum amount of time, in seconds, to wait before resending an alert.
--   TLVWEXEC: Batch to execute when CFTCAT/TLVWARN is reached.
--   TLVWARN: Catalog usage limit before issuing an alert. When this limit is reached, the CFTCAT/TLVWEXEC is executed.
+- TLVCLEAR: Level below which the alert stops.
+- TLVCEXEC: Batch to execute when the alert ends.
+- TLVWRATE: The minimum amount of time, in seconds, to wait before resending an alert.
+- TLVWEXEC: Batch to execute when CFTCAT/TLVWARN is reached.
+- TLVWARN: Catalog usage limit before issuing an alert. When this limit is reached, the CFTCAT/TLVWEXEC is executed.
 
 Example
 
 The example is based on the following settings:
 
--   catalog size = 100
--   cft.cftcat.auto\_expand\_percent = 20
--   cft.cftcat.auto\_expand\_max\_size = 140
--   TLVCLEAR = 70
--   TLVWARN = 80
+- catalog size = 100
+- cft.cftcat.auto\_expand\_percent = 20
+- cft.cftcat.auto\_expand\_max\_size = 140
+- TLVCLEAR = 70
+- TLVWARN = 80
 
 When you reach the TLVWARN (level=80%), the following messages are sent to the log:
 
@@ -74,7 +74,7 @@ The new fill rate is now 80/120 = ~67%, which is below TLVCLEAR (70), so the ale
    12/10/17 17:54:16  CFTC30W Catalog Alert cleared : level=67% ID=CAT0
 ```
 
-The message indicates that the catalog is sufficient.  If it were not, the catalog would be extended again at next alert in TLVWRATE seconds.
+The message indicates that the catalog is sufficient. If it were not, the catalog would be extended again at next alert in TLVWRATE seconds.
 
 The catalog continues to fill until it reaches 80%. Expanding 20% more would resize the catalog to 144 records, which exceeds the limit (140). If you exceed the limit the following log messages display:
 
@@ -109,25 +109,18 @@ The local file transfer internal datafile rules include standard purge rules tha
 There are 6 parameters that manage the purge, depending on the transfer status and direction. For each of the following you can set the number, in days, for the purge to occur. In our example, the purge is set for 10 days.
 
 ```
-CFTCAT       ID          = 'CAT0',
-            
+CFTCAT ID = 'CAT0',
 
-FNAME       = '$CFTCATA',
-             WSCAN       = '1',
-            
-TIMEP       = '23595999',
-             UPDAT       = '1',
-             SH          = '10',
-            
-ST          = '10',
-            
-SX          = '10',
-            
-RH          = '10',
-            
-RT          = '10',
-            
-RX          = '10',
+FNAME = '$CFTCATA',
+WSCAN = '1',
+TIMEP = '23595999',
+UPDAT = '1',
+SH = '10',
+ST = '10',
+SX = '10',
+RH = '10',
+RT = '10',
+RX = '10',
 
 ```
 
@@ -137,19 +130,19 @@ The second letter refers to the state (CFTSTATE).
 
 **Normal mode**
 
--   \(H\) Transfer phase and hold  phasestep, or Transfer phase and kill phasestep
--   \(T\) Ack phase and all phasesteps
--   \(X\) Done phase and Done phasestep
+- \(H\) Transfer phase and hold phasestep, or Transfer phase and kill phasestep
+- \(T\) Ack phase and all phasesteps
+- \(X\) Done phase and Done phasestep
 
 > **Note**
 >
-> Transfers in phase (Y) and phasestep (D) are not purged when purging the catalog. To purge these records, you must execute an END command that modifies the state  to (X).
+> Transfers in phase (Y) and phasestep (D) are not purged when purging the catalog. To purge these records, you must execute an END command that modifies the state to (X).
 
 **Compatibility mode**
 
--   \(H\) Hold, keep, or preprocessing status
--   \(T\) Completed status
--   \(X\) Executed status
+- \(H\) Hold, keep, or preprocessing status
+- \(T\) Completed status
+- \(X\) Executed status
 
 #### Purge using UCONF settings
 
@@ -184,8 +177,7 @@ For information on the RECONFIG command, please see <a href="../../admin_command
 When defining CFTSEND or CFTRECV templates you can set a parameter to purge the records after the transfer completes.
 
 ```
-CFTSEND       DELETE=YES
-            
+CFTSEND DELETE=YES
 ```
 
 #### Purge records with the keep status
@@ -193,8 +185,7 @@ CFTSEND       DELETE=YES
 Delete all file transfer records in keep status (K) due to a file creation error.
 
 ```
-CFTRECV       RKERROR=YES
-            
+CFTRECV RKERROR=YES
 ```
 
 #### Manually delete catalog records
@@ -213,8 +204,7 @@ of 20 transfers every 5 seconds.
 For example, delete all executed transfers from the catalog.
 
 ```
-DELETE      STATE=X
-            
+DELETE STATE=X
 ```
 
 #### Manage transfer events sent to Sentinel
@@ -247,8 +237,8 @@ CFTSEND ID=CLEANUP,FNAME=<FILENAME>,FACTION=DELETE
 
 If you would additionally like to delete the catalog records, as well as the file after it's transfer (defined according to the transfer state).
 
--   The FDELETE option removes the file once the catalog record is deleted.
--   You can use the DELETE=YES option in conjunction with FDELETE to remove both the file and the record.
+- The FDELETE option removes the file once the catalog record is deleted.
+- You can use the DELETE=YES option in conjunction with FDELETE to remove both the file and the record.
 
 For example, to remove both the file and the record when sending a file.
 

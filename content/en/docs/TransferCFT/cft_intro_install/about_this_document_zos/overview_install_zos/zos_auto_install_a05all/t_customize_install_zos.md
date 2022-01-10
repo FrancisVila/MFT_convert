@@ -18,20 +18,20 @@ Or
 
 Before INCLUDE MEMBER=CFTENV add directives
 
-//     EXPORT SYSMLIST=\*
+// EXPORT SYSMLIST=\*
 
-//     INCLUDE MEMBER=CFTENV
+// INCLUDE MEMBER=CFTENV
 
 Example:
 
 ```
-// LIB    JCLLIB ORDER=(MY.CFTPROD.PROCLIB)
+// LIB JCLLIB ORDER=(MY.CFTPROD.PROCLIB)
 
-> //     EXPORT SYSMLIST=\*
-> //     INCLUDE MEMBER=CFTENV
-> //CFTSND   EXEC PCFTUTIL,PARM='',QUAL=&CFTENV,OUT=&OUT
-> //CFTPARM   DD  DUMMY    to optimize
-> //CFTIN     DD  \*,SYMBOLS=(CNVTSYS,SUBSLOG)
+> // EXPORT SYSMLIST=\*
+> // INCLUDE MEMBER=CFTENV
+> //CFTSND EXEC PCFTUTIL,PARM='',QUAL=&CFTENV,OUT=&OUT
+> //CFTPARM DD DUMMY to optimize
+> //CFTIN DD \*,SYMBOLS=(CNVTSYS,SUBSLOG)
 > SEND PART=PARIS,IDF=BIN,
 > FNAME=&CFTENV..FTEST,
 > IDA=’&SYSNAME-&ZOSLVL-&SYSCLONE’
@@ -46,16 +46,16 @@ You can use the CFTINC member in an INCLUDE statement to reference a list of Tra
 Example:
 
 ```
-// LIB    JCLLIB ORDER=(MY.CFTPROD.PROCLIB
-//       INCLUDE MEMBER=CFTENV
-//STREX  EXEC PGM=IKJEFT01,REGION=32M,PARM='%REX4CFT'
+// LIB JCLLIB ORDER=(MY.CFTPROD.PROCLIB
+//  INCLUDE MEMBER=CFTENV
+//STREX EXEC PGM=IKJEFT01,REGION=32M,PARM='%REX4CFT'
 //STEPLIB DD DISP=SHR,DSN=&CFTLOAD
-//SYSPROC  DD  DISP=SHR,
-//          DSN=MY.SYSPROC
-//SYSTSPRT DD  SYSOUT=&OUT
-//SYSTSIN  DD  DUMMY
-//       SET QUAL=&CFTENV
-//         **INCLUDE MEMBER=CFTINC**
+//SYSPROC DD DISP=SHR,
+//  DSN=MY.SYSPROC
+//SYSTSPRT DD SYSOUT=&OUT
+//SYSTSIN DD DUMMY
+//    SET QUAL=&CFTENV
+//    **INCLUDE MEMBER=CFTINC**
 ```
 
 ## PCFTUTIL / PCFTUTL procedures
@@ -64,29 +64,29 @@ It is recommended that you use only procedures to access the Transfer CFT utilit
 
 We provide two procedure examples:
 
--   PCFTUTIL: All Transfer CFT files are allocated, except for the PKI database and LOG.
--   PCFTUTL: Same procedure that PCFTUTIL, but CATALOG, COM, PART, PARM file are not allocated.
+- PCFTUTIL: All Transfer CFT files are allocated, except for the PKI database and LOG.
+- PCFTUTL: Same procedure that PCFTUTIL, but CATALOG, COM, PART, PARM file are not allocated.
 
 These procedures are customized during installation phase.
 
 To run a CFTUTIL executable (default), for example:
 
 ```
-//LIB    JCLLIB ORDER=(MY.CFTPROD.PROCLIB)
-//        INCLUDE MEMBER=CFTENV
-//ABOUT    EXEC PCFTUTL,PARM='ABOUT TYPE=CFT',
-//          QUAL=&CFTENV
+//LIB JCLLIB ORDER=(MY.CFTPROD.PROCLIB)
+//   INCLUDE MEMBER=CFTENV
+//ABOUT EXEC PCFTUTL,PARM='ABOUT TYPE=CFT',
+//   QUAL=&CFTENV
 ```
 
 To run another CFTUTIL executable, for example CFTPKI:
 
 ```
-//LIB    JCLLIB ORDER=(MY.CFTPROD.PROCLIB)
-//       INCLUDE MEMBER=CFTENV
-//LISPKI   EXEC PCFTUTL,PG=CFTPKI,PARM='',
-//          QUAL=&CFTENV
-//MYPKI    DD  DISP=SHR,DSN=&CFTENV..PKIFILE
-//CFTIN    DD  \*
+//LIB JCLLIB ORDER=(MY.CFTPROD.PROCLIB)
+//  INCLUDE MEMBER=CFTENV
+//LISPKI EXEC PCFTUTL,PG=CFTPKI,PARM='',
+//  QUAL=&CFTENV
+//MYPKI DD DISP=SHR,DSN=&CFTENV..PKIFILE
+//CFTIN DD \*
 LISTPKI PKIFNAME = $MYPKI,CONTENT=FULL
 /\*
 ```
@@ -99,10 +99,10 @@ It is recommended as far as possible not to point directly to the product librar
 
 To do this, copy the following members into a specific PROCLIB:
 
--   CFTENV
--   CFTINC
--   PCFTUTIL
--   PCFTUTL
+- CFTENV
+- CFTINC
+- PCFTUTIL
+- PCFTUTL
 
 When changing the Transfer CFT version, you should get the new version of these members. A rollback is done by copying the backups of these members. This also applies to the end-of-transfer procedures.
 
@@ -112,25 +112,25 @@ When changing the Transfer CFT version, you should get the new version of these 
 
 The target.EXEC library contains an example of Transfer CFT procedures:
 
--   EXECSF: End of file send procedure
--   EXECRF: End of file reception procedure
--   SWIACC: Procedure submitted when SWITCHING the Transfer CFT accounting file
--   SWILOG: Procedure submitted when switching the Transfer CFT log file
--   EXECCRON: Procedure submitted by a CFTCRON command
--   COPXLOG: Sample of JCL submitted by Transfer CFT Navigator (with dynamic parameter)
--   COPEXT: Sample of JCL submitted by Transfer CFT Navigator to extract Transfer CFT parameter in a file
--   CFTHEART: HEARTBEAT JCL for SENTINEL dashboards
--   SNTLEXEC: End of file reception procedure including SENTINEL
--   TFCIPH: Transfer CFT Preprocessing script for TrustedFile
--   TFDCIPH: Transfer CFT End of transfer script for TrustedFile
--   TFDELFIL: Transfer CFT Send exec script for TrustedFile
--   CA7POST:          Indicates to CA7 that the creation of a data set has completed
--   COPYFILR and COPYFILS: templates that use the COPYFILE command
--   CRONSTAR: Sample of the JCL that is submitted at Transfer CFT STARTUP
--   CRONSHUT: Sample of the JCL that is submitted at Transfer CFT shutdown
--   EXECIDF: End of file reception procedure sample with conditional steps
--   EXECIFD2: The value of the IDF is checked among a list of values ​​by a REXX that sets a return code
--   EXECIDF3: The JCL is conditional and uses the )SEL and )ENDSEL syntax - see <a href="#Syntax" class="MCXref xref">Syntax for )SEL and )ENDSEL</a>
+- EXECSF: End of file send procedure
+- EXECRF: End of file reception procedure
+- SWIACC: Procedure submitted when SWITCHING the Transfer CFT accounting file
+- SWILOG: Procedure submitted when switching the Transfer CFT log file
+- EXECCRON: Procedure submitted by a CFTCRON command
+- COPXLOG: Sample of JCL submitted by Transfer CFT Navigator (with dynamic parameter)
+- COPEXT: Sample of JCL submitted by Transfer CFT Navigator to extract Transfer CFT parameter in a file
+- CFTHEART: HEARTBEAT JCL for SENTINEL dashboards
+- SNTLEXEC: End of file reception procedure including SENTINEL
+- TFCIPH: Transfer CFT Preprocessing script for TrustedFile
+- TFDCIPH: Transfer CFT End of transfer script for TrustedFile
+- TFDELFIL: Transfer CFT Send exec script for TrustedFile
+- CA7POST: Indicates to CA7 that the creation of a data set has completed
+- COPYFILR and COPYFILS: templates that use the COPYFILE command
+- CRONSTAR: Sample of the JCL that is submitted at Transfer CFT STARTUP
+- CRONSHUT: Sample of the JCL that is submitted at Transfer CFT shutdown
+- EXECIDF: End of file reception procedure sample with conditional steps
+- EXECIFD2: The value of the IDF is checked among a list of values ​​by a REXX that sets a return code
+- EXECIDF3: The JCL is conditional and uses the )SEL and )ENDSEL syntax - see <a href="#Syntax" class="MCXref xref">Syntax for )SEL and )ENDSEL</a>
 
 These procedures are customized during the A00CUSTO phase.
 
@@ -146,10 +146,10 @@ The test is systematically performed on the length of the first argument, enabli
 
 The maximum number of nested )SELs is 32, where:
 
--   argument = constant, variable in the &xxx format
--   op = condition operator
+- argument = constant, variable in the &xxx format
+- op = condition operator
 
-> =  EQU or EQ: equal to
+> = EQU or EQ: equal to
 
 > &gt; or GT: greater than
 >
@@ -183,74 +183,74 @@ The parameters in this JCL were customized during the (A00CUSTO) process, while 
 
 List of updated variables:
 
--   cft.runtime\_dir
--   cft.full\_hostname
--   cft.state\_compat
--   cft.listcat\_compat
--   cft.instance\_id
--   cft.instance\_group
--   samples.pesitany\_sap.value
--   samples.pesitssl\_sap.value
--   samples.coms\_port.value
+- cft.runtime\_dir
+- cft.full\_hostname
+- cft.state\_compat
+- cft.listcat\_compat
+- cft.instance\_id
+- cft.instance\_group
+- samples.pesitany\_sap.value
+- samples.pesitssl\_sap.value
+- samples.coms\_port.value
 
-You can run the JCL  multiple times, once to create the member .. SAMPLE (CFTPARM), which the procedure does not modify.
+You can run the JCL multiple times, once to create the member .. SAMPLE (CFTPARM), which the procedure does not modify.
 
 <span id="D40INIT"></span>
 
-## Format Transfer CFT work files <span id="kanchor38"></span>D40INIT
+## Format Transfer CFT work files <span id="kanchor44"></span>D40INIT
 
-  The JOB D40INIT prepares the Transfer CFT z/OS files. Before submitting this JOB,  adapt the following points to the requirements of the operating service:
+The JOB D40INIT prepares the Transfer CFT z/OS files. Before submitting this JOB, adapt the following points to the requirements of the operating service:
 
--   File names (if the default values in the samples are not usable)
+- File names (if the default values in the samples are not usable)
     -   By default file names are defined in JCL INCLUDE=CFTENV
 
 <!-- -->
 
--   The values of the parameters RECNB and FSPACE
+- The values of the parameters RECNB and FSPACE
 
 The following data is required to use the basic Transfer CFT installation customization parameters. These work files are:
 
--   CFTPARM: VSAM KSDS file, Transfer CFT parameters descriptions
+- CFTPARM: VSAM KSDS file, Transfer CFT parameters descriptions
 
 <!-- -->
 
--   CFTPART: VSAM KSDS file, Transfer CFT partners description
+- CFTPART: VSAM KSDS file, Transfer CFT partners description
 
 <!-- -->
 
--   CFTCAT: VSAM ESDS file, Transfer CFT catalog
+- CFTCAT: VSAM ESDS file, Transfer CFT catalog
 
 <!-- -->
 
--   CFTLOG1: Sequential file used as the log file by Transfer CFT
+- CFTLOG1: Sequential file used as the log file by Transfer CFT
 
 <!-- -->
 
--   CFTLOG2: Sequential file used by Transfer CFT as the alternate log file
+- CFTLOG2: Sequential file used by Transfer CFT as the alternate log file
 
 <!-- -->
 
--   CFTACNT1: Sequential file used as the account file by Transfer CFT
+- CFTACNT1: Sequential file used as the account file by Transfer CFT
 
 <!-- -->
 
--   CFTACNT2:  Sequential file used by Transfer CFT as the alternate account file
+- CFTACNT2:  Sequential file used by Transfer CFT as the alternate account file
 
 <!-- -->
 
--   CFTCOM: VSAM ESDS file used by Transfer CFT as a buffer for the Transfer CFT commands submitted by CFTUTIL, a BATCH program, a TSO user, the Transfer CFT Copilot, or the Transfer CFT UI
+- CFTCOM: VSAM ESDS file used by Transfer CFT as a buffer for the Transfer CFT commands submitted by CFTUTIL, a BATCH program, a TSO user, the Transfer CFT Copilot, or the Transfer CFT UI
 
 <span id="JOB E50PARM CFTPARM"></span>
 
-## CFTPARM configuration update <span id="kanchor39"></span>E50PARM
+## CFTPARM configuration update <span id="kanchor45"></span>E50PARM
 
 The JCL E50PARM, located in the target.INSTALL library, updates the Transfer CFT configuration PARAM and PART files (PARM step).
 
 To activate the SFTP parameters:
 
-1.  -   In the CFTPARM MEMBER, uncomment the `/*   sftp,sftpcli, */` line.
+1. -   In the CFTPARM MEMBER, uncomment the `/*   sftp,sftpcli, */` line.
 
-2.  -   Uncomment the following:
+1. -   Uncomment the following:
         -   //\* DD DISP=SHR,
         -   //\* DSN=<u>&QUAL</u>..SAMPLE(CFTSFTP)
 
@@ -263,7 +263,7 @@ E50PARM
 // DSN=&QUAL..SAMPLE(CFTPARM)
 //\*     DD DISP=SHR,
 //\* DSN=&QUAL..SAMPLE(CFTSFTP)
-The underlined parameters  are substituted during the submit phase.
+The underlined parameters are substituted during the submit phase.
 ```
 
-1.  Use the JCL SAMPLE(PKIKEY) as an example for handling keys required for SFTP.
+1. Use the JCL SAMPLE(PKIKEY) as an example for handling keys required for SFTP.

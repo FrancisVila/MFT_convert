@@ -10,8 +10,8 @@ for developing exits.
 
 The following source examples are supplied in the toolkit:
 
--   File exit
--   Directory EXIT
+- File exit
+- Directory EXIT
 
 ## Development environment compilers
 
@@ -23,14 +23,14 @@ Before you begin developing exits
 You are strongly advised to do the following before starting the development
 work itself:
 
-1.  Read the general section relating to
+1. Read the general section relating to
     the [developing exits](../../../../../app_integration_intro/managing_exits).
-2.  Read this section.
-3.  Familiarize yourself with the sample sources in `runtime\src\exit`.
-4.  Reconstruct the executable
+1. Read this section.
+1. Familiarize yourself with the sample sources in `runtime\src\exit`.
+1. Reconstruct the executable
     in the sample from the C source and the other files supplied: libraries,
     definition files, make files.
-5.  Test the exit of the sample
+1. Test the exit of the sample
     you want to construct.
 
 <span id="Functions_associated_with_exits"></span>
@@ -43,16 +43,16 @@ user. See Using exits.
 
 This section describes:
 
--   The different types of exits:
--   File exits
--   Exit list
--   Directory exits
+- The different types of exits:
+- File exits
+- Exit list
+- Directory exits
 
 <!-- -->
 
--   How to proceed
+- How to proceed
     when developing an exit
--   How to define Transfer
+- How to define Transfer
     CFT parameters so that it will take account of the different types of
     exits
 
@@ -75,18 +75,18 @@ in the Transfer CFT parameterization.
 The way the EXIT functions depends on the NSPART and NSPASSW parameters
 in the CFTPART command:
 
--   If these parameters
+- If these parameters
     contain any text strings, these strings will be used when the connection
     is made.
--   If these parameters
+- If these parameters
     contain the string of "\*" (excluding the quotation marks), NSPART
     and NSPASSW are entered from a dialog box when the first connection is
     made to the partner.
--   If these parameters
+- If these parameters
     contain the string of "\*\*" (excluding the quotation marks),
     NSPART and NSPASSW are entered from a dialog box every time a connection
     is made to the partner.
--   NSPART and NSPASSW
+- NSPART and NSPASSW
     may contain different strings; so if NSPART is entered and NSPASSW = \*\*,
     then only the password will be requested each time a connection is made
     to the partner.  
@@ -106,7 +106,7 @@ the password NSPASSW to be entered every time a connection is made.
 ### Exit list
 
 The Transfer CFT EXIT list is an exit that enables remote partners to consult the Transfer
-CFT catalog on the central site or on a server. The            *Exit list guide* describes the functions provided by
+CFT catalog on the central site or on a server. The *Exit list guide* describes the functions provided by
 the Exit list and gives the indications required to implement them.
 
 Transfer CFT Windows supplies the exit list in the form

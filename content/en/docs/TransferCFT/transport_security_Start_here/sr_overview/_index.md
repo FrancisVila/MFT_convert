@@ -6,11 +6,11 @@
 
 The following additional topics describe how to configure Transfer CFT to use Secure Relay for exchanges.
 
--   [Secure Relay in a standalone architecture](cft_sr_configuration)
--   [Secure Relay in a multi-node architecture](cft_sr_conf_multinode)
--   [Configuring SSL termination for exchanges](sr_ssl)
--   [UCONF parameters for Secure Relay](sr_parameters)
--   [Troubleshoot Secure Relay](sr_troubleshooting)
+- [Secure Relay in a standalone architecture](cft_sr_configuration)
+- [Secure Relay in a multi-node architecture](cft_sr_conf_multinode)
+- [Configuring SSL termination for exchanges](sr_ssl)
+- [UCONF parameters for Secure Relay](sr_parameters)
+- [Troubleshoot Secure Relay](sr_troubleshooting)
 
 > **Note**
 >
@@ -24,7 +24,7 @@ The following diagram illustrates how Transfer CFT and Secure Relay interact wit
 
 Network to DMZ overview
 
-<img src="/Images/TransferCFT/sr_new4.png" class="maxWidth" alt="View of link between Transfer CFT and the Master Agent in the private network, with the Router Agent in the DMZ" />
+![$2]($1)
 
 Legend
 
@@ -40,15 +40,15 @@ Secure Relay is not aware of data sent to, or received from, Transfer CFT and re
 
 You can install {{< TransferCFT/componentlongname  >}} in an active/active architecture where you add multiple SecureRelay Router Agents behind a load balancer. The architecture could resemble the following diagram (SSL is not used in this example). See <a href="cft_sr_conf_multinode" class="MCXref xref">Secure Relay with a multi-node architecture</a> for details on setting up multiple Router Agents.
 
-<img src="/Images/TransferCFT/sec_relay_multi_RA.png" class="maxWidth" />
+![]($1)
 
-<img src="/Images/TransferCFT/sr_add_node.png" class="maxWidth" />
+![]($1)
 
 ## Prerequisites
 
--   The {{< TransferCFT/componentshortname >}} license key must include the Secure Relay option.
--   Ensure that you have Java JRE 8 installed.
--   Prior to setting up Secure Relay to {{< TransferCFT/componentshortname >}} interoperability, you should already have installed Secure Relay 2.7.3. Refer to the Secure Relay documentation available at {{< TransferCFT/companyname >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a> and on the Axway [documentation portal](https://docs.axway.com/).
+- The {{< TransferCFT/componentshortname >}} license key must include the Secure Relay option.
+- Ensure that you have Java JRE 8 installed.
+- Prior to setting up Secure Relay to {{< TransferCFT/componentshortname >}} interoperability, you should already have installed Secure Relay 2.7.3. Refer to the Secure Relay documentation available at {{< TransferCFT/companyname >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a> and on the Axway [documentation portal](https://docs.axway.com/).
 
 ## Certificates
 
@@ -60,7 +60,7 @@ Transfer CFT 3.6 and higher delivers an embedded Secure Relay MA 2.7.3. You mus
 
 ## Limitations
 
--   SecureRelay is not operational with the {{< TransferCFT/componentshortname >}} acceleration option.
--   Secure Relay only supports TLSV1COMP as the SSL version when using Router Agent SSL termination.
--   When using Secure Relay with Transfer CFT for SFTP exchanges, SSH termination is not supported.
--   Transfer CFT cannot perform exchanges using Router Agent SSL termination if the Secure Relay FIPS mode is enabled. However, you can perform end-to-end SSL exchanges with the FIPS mode enabled as described in <a href="sr_ssl" class="MCXref xref">Configure exchanges that use SSL</a> > *How to enable Secure Relay FIPS mode*.
+- SecureRelay is not operational with the {{< TransferCFT/componentshortname >}} acceleration option.
+- Secure Relay only supports TLSV1COMP as the SSL version when using Router Agent SSL termination.
+- When using Secure Relay with Transfer CFT for SFTP exchanges, SSH termination is not supported.
+- Transfer CFT cannot perform exchanges using Router Agent SSL termination if the Secure Relay FIPS mode is enabled. However, you can perform end-to-end SSL exchanges with the FIPS mode enabled as described in <a href="sr_ssl" class="MCXref xref">Configure exchanges that use SSL</a> > *How to enable Secure Relay FIPS mode*.

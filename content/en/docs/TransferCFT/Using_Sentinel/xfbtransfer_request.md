@@ -12,9 +12,9 @@ from XFBTransfer.
 
 | Request  | Retrieves...  |
 | --- | --- |
-|  CurrentTransfers  |  All Tracked Instances from the Current Table of XFBTransfer.  |
-|  CurrentTransfersToday  |  Tracked Instances from the Current Table of XFBTransfer that correspond to the current date.  |
-|  CurrentTransfersAlert  |  Tracked Instances from the Current Table of XFBTransfer that correspond to an Alert.  |
+| CurrentTransfers | All Tracked Instances from the Current Table of XFBTransfer. |
+| CurrentTransfersToday | Tracked Instances from the Current Table of XFBTransfer that correspond to the current date. |
+| CurrentTransfersAlert | Tracked Instances from the Current Table of XFBTransfer that correspond to an Alert. |
 
 
 ## XFBLog request
@@ -26,4 +26,4 @@ a {{< TransferCFT/componentshortname  >}} log.
 
 Related topics
 
--   [XFBLog Tracked Object](../xfblog)
+- [XFBLog Tracked Object](../xfblog)

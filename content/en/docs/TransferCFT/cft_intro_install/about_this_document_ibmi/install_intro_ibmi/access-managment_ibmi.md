@@ -11,10 +11,10 @@ With **system** access management, you define the mapping between predefined rol
 For system access management, you must create different Groups to associate with your users, creating a Groups in the same way as you do a user.
 
 ```
-CRTUSRPRF USRPRF(ADMIN)     TEXT('CFT admin group') SPCAUT(\*JOBCTL \*SPLCTL \*ALLOBJ)
-CRTUSRPRF USRPRF(APPLI)     TEXT('CFT application group') SPCAUT(\*NONE)
-CRTUSRPRF USRPRF(DESIGNER)  TEXT('CFT designer group') SPCAUT(\*NONE)
-CRTUSRPRF USRPRF(HELPDESK)  TEXT('CFT helpdesk group') SPCAUT(\*NONE)
+CRTUSRPRF USRPRF(ADMIN) TEXT('CFT admin group') SPCAUT(\*JOBCTL \*SPLCTL \*ALLOBJ)
+CRTUSRPRF USRPRF(APPLI) TEXT('CFT application group') SPCAUT(\*NONE)
+CRTUSRPRF USRPRF(DESIGNER) TEXT('CFT designer group') SPCAUT(\*NONE)
+CRTUSRPRF USRPRF(HELPDESK) TEXT('CFT helpdesk group') SPCAUT(\*NONE)
 CRTUSRPRF USRPRF(PARTMANAG) TEXT('CFT partnermanager group') SPCAUT(\*NONE)
 ```
 
@@ -22,7 +22,7 @@ You can then associate your users with the various groups you created.
 
 **Example**
 
-To grant CFTUSER1  access to transfers and the configuration,  associate this user with the previously created HELPDESK group using the command:
+To grant CFTUSER1 access to transfers and the configuration, associate this user with the previously created HELPDESK group using the command:
 
 ```
 CHGUSRPRF USRPRF(CFTUSER1) GRPPRF(HELPDESK)
@@ -31,11 +31,11 @@ CHGUSRPRF USRPRF(CFTUSER1) GRPPRF(HELPDESK)
 You can now activate the access management in {{< TransferCFT/componentlongname  >}} according to your different groups:
 
 ```
-UCONFSET id=am.type                          ,value = internal
-UCONFSET id=am.internal.group_database       ,value = system
-UCONFSET id=am.internal.role.admin           ,value = ADMIN
-UCONFSET id=am.internal.role.application     ,value = APPLI
-UCONFSET id=am.internal.role.designer        ,value = DESIGNER
-UCONFSET id=am.internal.role.helpdesk        ,value = HELPDESK
-UCONFSET id=am.internal.role.partnermanager  ,value = PARTMANAG
+UCONFSET id=am.type ,value = internal
+UCONFSET id=am.internal.group_database ,value = system
+UCONFSET id=am.internal.role.admin ,value = ADMIN
+UCONFSET id=am.internal.role.application ,value = APPLI
+UCONFSET id=am.internal.role.designer ,value = DESIGNER
+UCONFSET id=am.internal.role.helpdesk ,value = HELPDESK
+UCONFSET id=am.internal.role.partnermanager ,value = PARTMANAG
 ```

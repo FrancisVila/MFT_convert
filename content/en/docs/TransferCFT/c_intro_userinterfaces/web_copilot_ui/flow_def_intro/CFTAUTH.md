@@ -15,9 +15,9 @@ authorized/unauthorized identifiers list](../../../../concepts/cft_configuration
 
 | Parameter  | Description  |
 | --- | --- |
-|  <a href="../../../command_summary/parameter_intro/id">ID</a>  |  Authorization list identifier. If the identifier is prefixed by"<code>NOT</code>", the object indicates a list of forbidden file identifiers.  |
-|  <a href="../../../command_summary/parameter_intro/fname">FNAME</a>  |  The name of the file where authorized or unauthorized file identifiers (IDF) are listed.<br/>Each element of the list in this file can be:<br/> • An explicit file identifier, or<br/> • A mask (using wildcards '*?'), where all of the file identifiers corresponding to this mask are affected<br/>There is no limit to the number of identifiers in this list.  |
-|  <a href="../../../command_summary/parameter_intro/idf">IDF</a>  |  List of authorized or unauthorized IDFs.<br/>The value associated with each of these IDFs may be:<br/> • An explicit file identifier, or<br/> • A mask (using wildcards '*?'), where all of the  file identifiers corresponding to this mask are affected by the command</li>  |
+| <a href="../../../command_summary/parameter_intro/id">ID</a> | Authorization list identifier. If the identifier is prefixed by"<code>NOT</code>", the object indicates a list of forbidden file identifiers. |
+| <a href="../../../command_summary/parameter_intro/fname">FNAME</a> | The name of the file where authorized or unauthorized file identifiers (IDF) are listed.<br/> Each element of the list in this file can be:<br/> • An explicit file identifier, or<br/> • A mask (using wildcards '*?'), where all of the file identifiers corresponding to this mask are affected<br/> There is no limit to the number of identifiers in this list. |
+| <a href="../../../command_summary/parameter_intro/idf">IDF</a> | List of authorized or unauthorized IDFs.<br/> The value associated with each of these IDFs may be:<br/> • An explicit file identifier, or<br/> • A mask (using wildcards '*?'), where all of the file identifiers corresponding to this mask are affected by the command |
 
 
 <span id="CFTAUTH_example"></span>Example
@@ -37,15 +37,15 @@ CFTAUTH      ID = RBULGC8,
 IDF = fil21
 ```
 
-Transfer CFT can only receive  BULGC8 files with identifiers
+Transfer CFT can only receive BULGC8 files with identifiers
 of the idfdef, idf1, idf2, idf3 type from the partner.
 
 Where the fil21 file contains:
 
--   idfdef
--   idf1
--   idf2
--   idf3
+- idfdef
+- idf1
+- idf2
+- idf3
 
 Please refer to [Create
 authorized/unauthorized identifiers list](../../../../concepts/cft_configuration_concepts_start_here/authorization_list_concepts) for an example of how to define a list of unauthorized (excluded) IDFs.

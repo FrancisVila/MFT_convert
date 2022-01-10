@@ -6,19 +6,19 @@
 
 To generate certificates, for example using the XCA utility (X Certificate and Key management), perform the following steps.
 
-1.  Create a **New database**.
+1. Create a **New database**.
 
     -   Enter a password to protect the database that contains your certificate.
 
     ![Certificate and key management screen shot](/Images/TransferCFT/XCA_db_tab.png)
 
-2.  Select the **Certificates** tab.
+1. Select the **Certificates** tab.
     -   Select: **New Certificate**
 
-3.  Select the **Source** tab.
-    -   In  the **Signature algorithm** field, select **MD5**.
+1. Select the **Source** tab.
+    -   In the **Signature algorithm** field, select **MD5**.
 
-4.  Select the **Subject** tab.
+1. Select the **Subject** tab.
     -   Complete the fields for your certificate.
 
     <!-- -->
@@ -29,7 +29,7 @@ To generate certificates, for example using the XCA utility (X Certificate and K
         -   Select Keytype
         -   Click **Create**
 
-5.  In the **Extensions** tab:
+1. In the **Extensions** tab:
 
     -   In "Type": select End Entity
 
@@ -47,7 +47,7 @@ To generate certificates, for example using the XCA utility (X Certificate and K
 
     ![Create certificate screen with selected Extension tab](/Images/TransferCFT/XCA_tab.png)
 
-6.  In the **Key Usage** tab:
+1. In the **Key Usage** tab:
     -   In "Key Usage", select :
         -   Digital Signature
 
@@ -68,12 +68,12 @@ To generate certificates, for example using the XCA utility (X Certificate and K
     -   In "Extended Key usage", select:
         -   E-mail Protection
 
-7.  Click  **OK** to generate the certificate.
+1. Click  **OK** to generate the certificate.
 
 ## Export the certificate that has been created.
 
-1.  In **Certificates** tab, select the certificate you want to export.
-2.  Select Export.
+1. In **Certificates** tab, select the certificate you want to export.
+1. Select Export.
     -   In Export Format: choose "PEM" for export PUBLIC CERTIFICATE.
 
     <!-- -->
@@ -83,10 +83,10 @@ To generate certificates, for example using the XCA utility (X Certificate and K
     <!-- -->
 
     -   Select Export.
-3.  Select the certificate you want to export (filename).
+1. Select the certificate you want to export (filename).
     -   In Export Format: choose "PKCS #12" for export PRIVATE CERTIFICATE
     -   Click **OK** .
-4.  Enter a password to protect your private certificates.
+1. Enter a password to protect your private certificates.
 
 ## How to generate a certificate with OpenSSL
 
@@ -114,7 +114,7 @@ Example
 
 CFTTF –pw Axway
 
-OUTPUT:   m8ZWaOMdkj70UzJZD+wv8gSsi1ycSTEJ5c0H6SH6dLE=
+OUTPUT: m8ZWaOMdkj70UzJZD+wv8gSsi1ycSTEJ5c0H6SH6dLE=
 
 ## Update the entity.xml file
 

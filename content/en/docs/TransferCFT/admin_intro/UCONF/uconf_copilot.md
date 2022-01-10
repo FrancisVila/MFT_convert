@@ -8,7 +8,7 @@ Refer to the [UCONF parameters](../uconf_directory) table for information on `c
 
 Alias management
 
-You can access customized file system directories via the  {{< TransferCFT/componentshortname  >}} user interface HTTP server using aliases.
+You can access customized file system directories via the {{< TransferCFT/componentshortname  >}} user interface HTTP server using aliases.
 
 To add a new alias, access the Unified Configuration uconf and configure the following:
 
@@ -25,37 +25,22 @@ Security for Cop**i**lot GUI
 
 | Parameter  | Description  |
 | --- | --- |
-| copilot.http.onlyssl  | Enter Yes to   restrict the access of the  {{< TransferCFT/componentshortname  >}} UI with  https.  |
+| copilot.http.onlyssl  | Enter Yes to restrict the access of the {{< TransferCFT/componentshortname  >}} UI with https.  |
 
 
 View available drives
 
 To view available drives from the **Edit a file** icon in the graphical user interface, define the following:
 
-<table>
-   <thead>
-      <tr>
-<th >Parameter         </th>
-<th >Options         </th>
-<th >Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td rowspan="3" >copilot.nt.rootdrives         </td>
-         <td >@REMOVABLE_DRIVES         </td>
-         <td >To view removable drives such as a USB key, CD, and so on.         </td>
-      </tr>
-      <tr>
-         <td >@LOCAL_DRIVES         </td>
-         <td >To view hard drives.         </td>
-      </tr>
-      <tr>
-         <td >@NET_DRIVES         </td>
-         <td >To view network drives.         </td>
-      </tr>
-   </tbody>
-</table>
+QQQ\_QQQ\_QQQ
+
+
+| Parameter  | Options  | Description  |
+| --- | --- | --- |
+| copilot.nt.rootdrives  | @REMOVABLE_DRIVES  | To view removable drives such as a USB key, CD, and so on.  |
+|  - " -  | @LOCAL_DRIVES  | To view hard drives.  |
+|  - " -  | @NET_DRIVES  | To view network drives.  |
+
 
 Client keep-alive
 
@@ -64,7 +49,7 @@ Use this parameter to define the keep-alive interval in seconds for a client ses
 
 | Parameter  | Value  |
 | --- | --- |
-| copilot.misc.client_keep_alive_delay  |  Enter an integer for the delay in seconds.<br/>60 = default<br/>0 = no keep-alive  |
+| copilot.misc.client_keep_alive_delay  | Enter an integer for the delay in seconds.<br/> 60 = default<br/> 0 = no keep-alive |
 
 
 Client timeout
@@ -74,7 +59,7 @@ Use this parameter to define the client timeout in minutes. The default value is
 
 | Parameter  | Value  |
 | --- | --- |
-| copilot.misc.ClientTimeout  |  Enter an integer for the timeout in minutes.<br/>30 = default<br/>0 = no timeout  |
+| copilot.misc.ClientTimeout  | Enter an integer for the timeout in minutes.<br/> 30 = default<br/> 0 = no timeout |
 
 
 Web services
@@ -84,20 +69,20 @@ Use this parameter to define the {{< TransferCFT/componentshortname  >}} Web Ser
 
 | Parameter  | Value  | Former value  |
 | --- | --- | --- |
-| copilot.webservices.wsicomplience    | (bool) No  | [WEBSERVICES] WsiComplience  |
-| copilot.webservices.upload_directory    | (dir) $(cft.runtime_dir)/conf/ws_upload  | NA  |
+| copilot.webservices.wsicomplience  | (bool) No  | [WEBSERVICES] WsiComplience  |
+| copilot.webservices.upload_directory  | (dir) $(cft.runtime_dir)/conf/ws_upload  | NA  |
 
 
 Configure Copilot with HTTPS
 
 This section describes how to install the certificates that are required to enable HTTPS connections for Copilot. The basic steps are:
 
--   Install a certificate on the server side
--   Install a certificate on the client side
+- Install a certificate on the server side
+- Install a certificate on the client side
 
-### Install a certificate  on the server side
+### Install a certificate on the server side
 
-The following tables describe the  UCONF parameters that determine the certificates used by the Transfer CFT UI server to authenticate itself.
+The following tables describe the UCONF parameters that determine the certificates used by the Transfer CFT UI server to authenticate itself.
 
 You can use the following certificate and private key formats, where the format of the certificate may differ from that of the key.
 
@@ -105,72 +90,46 @@ The certificate type is dictated by the file name extension (.p12, .pkcs12, .der
 
 *For native files in a z/OS or IBM i environment*, if the format cannot be determined (the file suffix used as the extension), Transfer CFT derives the value from these uconf settings:
 
--   `copilot.ssl.sslkeyfile=<not set>` and `copilot.ssl.sslcertpassword=<set>`, then  the format is PKCS12
--   `copilot.ssl.sslkeyfile= <set>` and `copilot.ssl.sslcertpassword=<not set>`, then the format is PEM
+- `copilot.ssl.sslkeyfile=<not set>` and `copilot.ssl.sslcertpassword=<set>`, then the format is PKCS12
+- `copilot.ssl.sslkeyfile= <set>` and `copilot.ssl.sslcertpassword=<not set>`, then the format is PEM
 
-<table>
-   <thead>
-      <tr>
-<th >Supported format         </th>
-<th >Type         </th>
-<th >Extension         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td rowspan="3" >Certificate         </td>
-         <td >PKCS#12         </td>
-         <td >p12, pfx, pkcs12         </td>
-      </tr>
-      <tr>
-         <td >PEM         </td>
-         <td >pem         </td>
-      </tr>
-      <tr>
-         <td >DER         </td>
-         <td >der         </td>
-      </tr>
-      <tr>
-         <td rowspan="3" >Private key         </td>
-         <td >PEM         </td>
-         <td >pem         </td>
-      </tr>
-      <tr>
-         <td >DER         </td>
-         <td >der         </td>
-      </tr>
-      <tr>
-         <td >PKCS#8         </td>
-         <td >key,
-pem         </td>
-      </tr>
-   </tbody>
-</table>
+QQQ\_QQQ\_QQQ
+
+
+| Supported format  | Type  | Extension  |
+| --- | --- | --- |
+| Certificate  | PKCS#12  | p12, pfx, pkcs12  |
+|  - " -  | PEM  | pem  |
+|  - " -  | DER  | der  |
+| Private key  | PEM  | pem  |
+|  - " -  | DER  | der  |
+|  - " -  | PKCS#8  | key, pem  |
+
 
 How to define a PKCS#12 certificate
 
 This example uses a single PKCS#12 certificate where you only require the file name and password.
 
 
-|  Parameter  |  Value  |
+| Parameter | Value |
 | --- | --- |
-|  copilot.ssl.SslCertFile  |  conf/pki/&lt;my_certificate&gt;.p12  |
-|  copilot.ssl.SslCertPassword  |  Certificate password  |
-|  copilot.ssl.SslKeyFile  |  Not used  |
-|  copilot.ssl.SslKeyPassword  |  Not used  |
+| copilot.ssl.SslCertFile | conf/pki/&lt;my_certificate&gt;.p12 |
+| copilot.ssl.SslCertPassword | Certificate password |
+| copilot.ssl.SslKeyFile | Not used |
+| copilot.ssl.SslKeyPassword | Not used |
 
 
 How to define a DER or PEM certificate
 
-This example uses  a DER(or PEM) certificate with the private key in a separate DER file, where you define the key as well as the certificate.
+This example uses a DER(or PEM) certificate with the private key in a separate DER file, where you define the key as well as the certificate.
 
 
-|  Parameter  |  Value  |
+| Parameter | Value |
 | --- | --- |
-|  copilot.ssl.SslCertFile  |  conf/pki /&lt;my_certificate&gt;.der *or* .pem  |
-|  copilot.ssl.SslCertPassword  |  Not used  |
-|  copilot.ssl.SslKeyFile  |  conf/pki /&lt;my_key&gt;.der *or* .pem  |
-|  copilot.ssl.SslKeyPassword  |  Key password, which is mandatory if the key file is encrypted PKCS#8  |
+| copilot.ssl.SslCertFile | conf/pki /&lt;my_certificate&gt;.der *or* .pem |
+| copilot.ssl.SslCertPassword | Not used |
+| copilot.ssl.SslKeyFile | conf/pki /&lt;my_key&gt;.der *or* .pem |
+| copilot.ssl.SslKeyPassword | Key password, which is mandatory if the key file is encrypted PKCS#8 |
 
 
 #### Additional HTTPS parameters
@@ -178,9 +137,9 @@ This example uses  a DER(or PEM) certificate with the private key in a separate 
 There are two additional UCONF parameters to use for HTTPS connections:
 
 
-|  Parameter  |  Value  |
+| Parameter | Value |
 | --- | --- |
-|  copilot.http.onlyssl  |  <li>No: Default value.<br/> • Yes: Restricts access to the Transfer CFT Copilot server to HTTPS secured connections only.</li>  |
-|  <span id="copilot.ssl.SslCipherSuites"></span>copilot.ssl.SslCipherSuites<br/>  |  A comma separated list of cipher suites accepted by the Transfer CFT Copilot server.<br/> • “47, 10, 9, 2”: Default value.<br/> <br/>List of supported cipher suites:<br/> • 1 = RSA_WITH_NULL_MD5<br/> • 2 = RSA_WITH_NULL_SHA<br/> • 4 = RSA_WITH_RC4_MD5<br/> • 5 = RSA_WITH_RC4_SHA<br/> • 9 = RSA_WITH_DES_CBC_SHA1<br/> • 10 = RSA_WITH_3DES_EDE_CBC_SHA<br/> • 47 = RSA_WITH_AES_128_CBC_SHA<br/> • 53 = RSA_WITH_AES_256_CBC_SHA<br/> • 59 = RSA_WITH_NULL_SHA256<br/> • <br/> • </li>  |
-| copilot.ssl.version_min  |  Indicates the minimum version of SSL that the Copilot and the REST API server accept.<br/> • Default: tls_1.0<br/> • Possible values are: ssl_3.0 (not recommended), tls_1.0, tls_1.0, tls_1.2</li>  |
+| copilot.http.onlyssl |  • No: Default value.<br/> • Yes: Restricts access to the Transfer CFT Copilot server to HTTPS secured connections only. |
+| <span id="copilot.ssl.SslCipherSuites"></span>copilot.ssl.SslCipherSuites<br/>  | A comma separated list of cipher suites accepted by the Transfer CFT Copilot server.<br/> • “47, 10, 9, 2”: Default value.<br/> <br/> List of supported cipher suites:<br/> • 1 = RSA_WITH_NULL_MD5<br/> • 2 = RSA_WITH_NULL_SHA<br/> • 4 = RSA_WITH_RC4_MD5<br/> • 5 = RSA_WITH_RC4_SHA<br/> • 9 = RSA_WITH_DES_CBC_SHA1<br/> • 10 = RSA_WITH_3DES_EDE_CBC_SHA<br/> • 47 = RSA_WITH_AES_128_CBC_SHA<br/> • 53 = RSA_WITH_AES_256_CBC_SHA<br/> • 59 = RSA_WITH_NULL_SHA256<br/> • <br/> •  |
+| copilot.ssl.version_min  | Indicates the minimum version of SSL that the Copilot and the REST API server accept.<br/> • Default: tls_1.0<br/> • Possible values are: ssl_3.0 (not recommended), tls_1.0, tls_1.0, tls_1.2 |
 

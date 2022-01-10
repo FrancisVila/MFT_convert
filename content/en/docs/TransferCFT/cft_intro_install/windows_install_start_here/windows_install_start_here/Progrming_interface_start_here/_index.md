@@ -2,23 +2,23 @@
     "title": "About Windows Application Programming Interfaces (API)",
     "linkTitle": "Building APIs and exits",
     "weight": "230"
-}This section describes the application build features of the  {{< TransferCFT/componentshortname  >}}
+}This section describes the application build features of the {{< TransferCFT/componentshortname  >}}
 Windows Application Programming Interfaces, and introduces concepts
 including:
 
--   [Product
+- [Product
     tool kit](#Product_toolkit)
--   [Before
+- [Before
     developing your first CFT API application](#Before_developing_your_first_CFT_API_application)
--   [Design
+- [Design
     constraints](#Design_constraints)
--   [Coding
+- [Coding
     constraints](#Coding_constraints)
--   [Compilation
+- [Compilation
     constraints](#Compilation_constraints)
--   [Linking
+- [Linking
     constraints](#Linking_constraints)
--   [Execution
+- [Execution
     constraints](#Execution_constraints)
 
 After installation, the` runtime\src` directory contains the API sources developed in C, Visual Basic, or DELPHI (capi, delphi, vb subfolders).
@@ -28,41 +28,41 @@ After installation, the` runtime\src` directory contains the API sources develop
 ### Product toolkit
 
 The product comes with a tool kit that enables you to develop an application
-using the  {{< TransferCFT/componentshortname  >}} programming interfaces,  {{< TransferCFT/componentshortname  >}} API applications.
+using the {{< TransferCFT/componentshortname  >}} programming interfaces, {{< TransferCFT/componentshortname  >}} API applications.
 
 {{< TransferCFT/componentshortname  >}} API applications examples are written in C: Microsoft Visual
 C++ 4.1, Delphi 2 or Visual Basic 5.0.
 
 <span id="Before_developing_your_first_CFT_API_application"></span>
 
-### Before developing your first  {{< TransferCFT/componentshortname  >}} API application
+### Before developing your first {{< TransferCFT/componentshortname  >}} API application
 
-Before beginning to write  {{< TransferCFT/componentshortname  >}} API applications, you should:
+Before beginning to write {{< TransferCFT/componentshortname  >}} API applications, you should:
 
-1.  Read this topic and the topics in [Using
+1. Read this topic and the topics in [Using
     APIs,.](../../../about_this_document_zos/using_apis)
-2.  Familiarize yourself with the
+1. Familiarize yourself with the
     sample source files.
     -   C: ..\\CFT\\API\\C\\SRC\\APISAMPL.C 
     -   Delphi: ..\\CFT\\API\\DELPHI\\SAMPLE\\CFTAPIDP.DPR 
     -   Visual Basic: ..\\CFT\\API\\VBASIC\\SAMPLE\\CFTAPIVB.VBP
-3.  Copy
-    APISAMPL, CFTAPIDP or CFTAPIVB in the  {{< TransferCFT/componentshortname >}} folder.
-4.  Start
+1. Copy
+    APISAMPL, CFTAPIDP or CFTAPIVB in the {{< TransferCFT/componentshortname >}} folder.
+1. Start
     APISAMPL, CFTAPIDP or CFTAPIVB.
-5.  Rebuild the sample programs
+1. Rebuild the sample programs
     from the APISAMPL.C sources and other files (libraries and definition
     files) provided.
-6.  Run the resulting .EXE to test
+1. Run the resulting .EXE to test
     the executables in the sample that you have created.
 
-For issued commands to be interpreted correctly by  {{< TransferCFT/componentshortname  >}}, you must:
+For issued commands to be interpreted correctly by {{< TransferCFT/componentshortname  >}}, you must:
 
-1.  Define a CFTPART with an id of PART1.
-2.  Define a CFTSEND with an id of TEST and fname called TEST.
-3.  Set up a file called TEST in the CFT\\SEND directory.
-4.  Start  {{< TransferCFT/componentshortname >}}.
-5.  Change Windows NT console sessions.
+1. Define a CFTPART with an id of PART1.
+1. Define a CFTSEND with an id of TEST and fname called TEST.
+1. Set up a file called TEST in the CFT\\SEND directory.
+1. Start {{< TransferCFT/componentshortname >}}.
+1. Change Windows NT console sessions.
 
 <span id="Design_constraints"></span>
 
@@ -70,25 +70,25 @@ For issued commands to be interpreted correctly by  {{< TransferCFT/componentsho
 
 ### Design
 
-The  {{< TransferCFT/componentshortname  >}} API functions, which can be called from an application,
-are not re-entrant. This means that all  {{< TransferCFT/componentshortname  >}} API function calls
+The {{< TransferCFT/componentshortname  >}} API functions, which can be called from an application,
+are not re-entrant. This means that all {{< TransferCFT/componentshortname  >}} API function calls
 made by an application must be made in the same thread.
 
 <span id="Coding_constraints"></span>
 
 ### Coding
 
-A  {{< TransferCFT/componentshortname  >}} API application must comply with two requirements:
+A {{< TransferCFT/componentshortname  >}} API application must comply with two requirements:
 
--   When the application
-    starts, but before a  {{< TransferCFT/componentshortname >}} API is called, the  {{< TransferCFT/componentshortname >}} API
+- When the application
+    starts, but before a {{< TransferCFT/componentshortname >}} API is called, the {{< TransferCFT/componentshortname >}} API
     initialization function must be called in:
--   Visual Basic:
+- Visual Basic:
     Cft\_Api\_Open (ByVal Version As String) As Integer
--   C++ or Delphi:
+- C++ or Delphi:
     CftInitialize of prototype BOOL CftInitialize (void)
--   When the application
-    terminates, it must inform  {{< TransferCFT/componentshortname >}} that it is stopping by calling
+- When the application
+    terminates, it must inform {{< TransferCFT/componentshortname >}} that it is stopping by calling
     the CftUninitialize function with the following prototype: BOOL
     CftUninitialize ( void )
 
@@ -101,25 +101,25 @@ If they are successful, both functions return TRUE.
 The apicft.lib dynamic library and APISAMPL.C sample are compiled with
 the following options:
 
--   Standard mandatory
+- Standard mandatory
     C option:
--   Zp1 /\* Structures
+- Zp1 /\* Structures
     and structure fields aligned on byte boundaries \*/
 
 <!-- -->
 
--   Options specific
+- Options specific
     to WIN32:
 
 <!-- -->
 
--   D\_X86=1 /\*
+- D\_X86=1 /\*
     Machine code generation for Intel x 86 processors \*/
--   DWIN32 /\* Win
+- DWIN32 /\* Win
     32 application \*/
--   D\_MT /\* Multi-thread
+- D\_MT /\* Multi-thread
     application \*/
--   G3 /\* Machine
+- G3 /\* Machine
     code generation compatible with 386 processors and compatibles \*/
 
 <span id="Linking_constraints"></span>
@@ -128,38 +128,38 @@ the following options:
 
 #### Key Options
 
-Link-editing for a  {{< TransferCFT/componentshortname  >}} API application can use all the default
+Link-editing for a {{< TransferCFT/componentshortname  >}} API application can use all the default
 options.
 
 #### Key Libraries
 
 In addition to any application libraries, the key libraries required
-to build a  {{< TransferCFT/componentshortname  >}} API application are as follows:
+to build a {{< TransferCFT/componentshortname  >}} API application are as follows:
 
--   APICFT.LIB  
--   CFTSCP3.LIB
+- APICFT.LIB
+- CFTSCP3.LIB
 
 <span id="Execution_constraints"></span>
 
 ### Execution
 
-To execute an application using  {{< TransferCFT/componentshortname  >}}, APIs
+To execute an application using {{< TransferCFT/componentshortname  >}}, APIs
 need the following files:
 
--   Necessary dynamic
+- Necessary dynamic
     libraries:
     -   apicft.dll
     -   cftscp3.dll
--   Additional dynamic
+- Additional dynamic
     libraries for Visual Basic:  
     -   cftvb.dll
--   Other files:
+- Other files:
     -   profile
 
 These files  must
 be installed with the application executables in C or DELPHI on the Windows
-workstation, so that the application developed with the  {{< TransferCFT/componentshortname  >}} APIs
+workstation, so that the application developed with the {{< TransferCFT/componentshortname  >}} APIs
 can run correctly.
 
 A Visual Basic program requires an additional DLL to encapsulate calls
-to the  {{< TransferCFT/componentshortname  >}} APIs \[cftvb.dll\].
+to the {{< TransferCFT/componentshortname  >}} APIs \[cftvb.dll\].

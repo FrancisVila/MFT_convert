@@ -26,19 +26,19 @@ A user agent is usually a web browser. The person who uses the browser can be re
 
 ## Limitations
 
--   SAML is not presently available on OpenVMS platforms.
--   You cannot log on Transfer CFT via CFTUTIL if you are using SAML (am.type=saml).
+- SAML is not presently available on OpenVMS platforms.
+- You cannot log on Transfer CFT via CFTUTIL if you are using SAML (am.type=saml).
 
 ## Prerequisites
 
 To configure and use SAML SSO with {{< TransferCFT/componentlongname  >}}, you must:
 
--   Have a third-party IdP, such as Keycloak, installed and running.
--   Map the user roles between the IdP and Transfer CFT roles ([CFTROLE](../conf_intro/cftrole)). To view the CFTROLES/CFTPRIV sample, click [here](), or navigate locally in your {{< TransferCFT/componentlongname >}} installation to:
+- Have a third-party IdP, such as Keycloak, installed and running.
+- Map the user roles between the IdP and Transfer CFT roles ([CFTROLE](../conf_intro/cftrole)). To view the CFTROLES/CFTPRIV sample, click [here](), or navigate locally in your {{< TransferCFT/componentlongname >}} installation to:
     -   distrib/template/conf/roles-smp.conf
     -   runtime/conf/roles-smp.conf
--   If you use {{< TransferCFT/transfercftname >}} with Flow Manager, you must manually set the uconf parameter am.type=saml on each {{< TransferCFT/transfercftname >}} after registering.
--   If you use {{< TransferCFT/transfercftname >}} with {{< TransferCFT/centralgovernancename >}}, you must manually set the uconf parameter am.type=saml on each {{< TransferCFT/transfercftname >}} and import all {{< TransferCFT/transfercftname >}} roles and privileges (CFTROLE and CFTPRIV, respectively) after registering.
+- If you use {{< TransferCFT/transfercftname >}} with Flow Manager, you must manually set the uconf parameter am.type=saml on each {{< TransferCFT/transfercftname >}} after registering.
+- If you use {{< TransferCFT/transfercftname >}} with {{< TransferCFT/centralgovernancename >}}, you must manually set the uconf parameter am.type=saml on each {{< TransferCFT/transfercftname >}} and import all {{< TransferCFT/transfercftname >}} roles and privileges (CFTROLE and CFTPRIV, respectively) after registering.
 
 ## Parameters
 
@@ -46,25 +46,25 @@ This section describes the UCONF parameter settings required for SAML implement
 
 ## Set up SAML 
 
-1.  Configure the {{< TransferCFT/componentlongname >}} REST API server, as Transfer CFT UI relies on the REST API. See [Configure the REST API server](../../../app_integration_intro/using_apis/api_intro/api_configure).
-2.  Insert the IdP certificate, used to sign SAML messages, in the PKI database:  
+1. Configure the {{< TransferCFT/componentlongname >}} REST API server, as Transfer CFT UI relies on the REST API. See [Configure the REST API server](../../../app_integration_intro/using_apis/api_intro/api_configure).
+1. Insert the IdP certificate, used to sign SAML messages, in the PKI database:  
     PKIUTIL PKICER id=idp, iname=&lt;path to the idp certificate>
-3.  Set the following UCONF parameters.
-4.  Define the roles that you require for your {{< TransferCFT/componentlongname >}} users. To view the CFTROLES sample, click [here](), and edit using your favorite text editor.
-5.  Start the Copilot server.
-6.  <span id="step6"></span>Export the SAML SP ({{< TransferCFT/componentlongname >}}) metadata.
+1. Set the following UCONF parameters.
+1. Define the roles that you require for your {{< TransferCFT/componentlongname >}} users. To view the CFTROLES sample, click [here](), and edit using your favorite text editor.
+1. Start the Copilot server.
+1. <span id="step6"></span>Export the SAML SP ({{< TransferCFT/componentlongname >}}) metadata.
 
--   From a web browser, enter the URL  to extract the XML configuration data required to configure your IdP.
--   Save the displayed XML content in a file.
+- From a web browser, enter the URL  to extract the XML configuration data required to configure your IdP.
+- Save the displayed XML content in a file.
 
 Create your {{< TransferCFT/componentlongname  >}} client in the IdP by importing the saved XML file. Remember that you must create a client for each {{< TransferCFT/componentlongname  >}}.  
 **Note**: If you are using Keycloak, set the **Front Channel Logout** option to **OFF**.
 
 Set up the single logout.  
-When the IdP connects to Transfer CFT using an HTTPS connection, it validates the Transfer CFT’s certificate  to ensure it is connecting to a trusted server. This is necessary in order to prevent man-in-the-middle attacks.
+When the IdP connects to Transfer CFT using an HTTPS connection, it validates the Transfer CFT’s certificate to ensure it is connecting to a trusted server. This is necessary in order to prevent man-in-the-middle attacks.
 
--   Put the Transfer CFT certificate, or the CA that signed the certificate,  in the truststore used by the IdP.
--   Refer the specific IdP documentation for more information. For Keycloak details, go to [www.keycloak.org/docs/latest/server\_installation/index.html](https://www.keycloak.org/docs/latest/server_installation/index.html#_truststore).
+- Put the Transfer CFT certificate, or the CA that signed the certificate, in the truststore used by the IdP.
+- Refer the specific IdP documentation for more information. For Keycloak details, go to [www.keycloak.org/docs/latest/server\_installation/index.html](https://www.keycloak.org/docs/latest/server_installation/index.html#_truststore).
 
 ## Test
 
@@ -76,11 +76,11 @@ If, as a {{< TransferCFT/componentlongname  >}} administrator or super user, you
 
 ## Signed SAML headers
 
-Access tokens and SAML headers are signed using the key associated with the certificates referenced by `copilot.ssl.sslcertfile`.  If this parameter is not set, but or FM is enabled, the governance certificate is used. If you change the certificate that is referenced in `copilot.ssl.sslcertfile` or you modify the   `cg.certificate.governance.key_len `value, the impact is that the corresponding private key changes. This means that once the new key is generated, access tokens   and SAML exchanges with the SAML IDP no longer work.
+Access tokens and SAML headers are signed using the key associated with the certificates referenced by `copilot.ssl.sslcertfile`. If this parameter is not set, but or FM is enabled, the governance certificate is used. If you change the certificate that is referenced in `copilot.ssl.sslcertfile` or you modify the   `cg.certificate.governance.key_len `value, the impact is that the corresponding private key changes. This means that once the new key is generated, access tokens and SAML exchanges with the SAML IDP no longer work.
 
 You can see the [Change the private key length](../../../governance_services_intro/cg_postregister#Change) section for details.
 
-If you change the private key, you must repeat the steps  6 - 8 as described [above](#step6).
+If you change the private key, you must repeat the steps 6 - 8 as described [above](#step6).
 
 ## Troubleshooting
 

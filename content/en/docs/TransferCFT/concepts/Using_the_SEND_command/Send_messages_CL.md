@@ -4,8 +4,8 @@
     "weight": "240"
 }You can use the SEND MESSAGE command to send a message to a designated partner, for example small amounts of content that are not considered sensitive content.
 
--   The message length in the PeSIT protocol has a maximum value of 4096 bytes
--   The message can be extracted from the Catalog file, and redirected to a specified file (fout parameter), using the DISPLAY command:
+- The message length in the PeSIT protocol has a maximum value of 4096 bytes
+- The message can be extracted from the Catalog file, and redirected to a specified file (fout parameter), using the DISPLAY command:
 
 **Example**
 
@@ -23,25 +23,15 @@ The resulting msgfile will contain the message 'hello'.
 
 ### Sending messages
 
-```
 
-Parameters
+| Parameters | Description |
+| --- | --- |
+| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/ida">IDA</a>  | Local transfer identifier assigned by the user or user application. |
+| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/idm">IDM</a>  | Message identifier. |
+| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/part">PART</a>  | Transfer partner identifier. |
+| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/type">TYPE</a> = MESSAGE | Characterizes a message send request. |
+| OPTIONAL PARAMETERS for <a href="../send_command_basics">SEND</a> | The optional common parameters form the SEND subset, used for sending a message (but not applicable to files). |
 
-Description
-
-[IDA](../../../c_intro_userinterfaces/command_summary/parameter_intro/ida) 
-Local transfer identifier assigned by the user or user application.
-[IDM](../../../c_intro_userinterfaces/command_summary/parameter_intro/idm) 
-Message identifier.
-[PART](../../../c_intro_userinterfaces/command_summary/parameter_intro/part) 
-Transfer partner identifier.
-[TYPE](../../../c_intro_userinterfaces/command_summary/parameter_intro/type) =
-MESSAGE
-Characterizes a message send request.
-OPTIONAL PARAMETERS
-for  [SEND](../send_command_basics)
-The optional common parameters form the SEND subset, used for sending a message (but not applicable to files).
-```
 
 #### Example
 

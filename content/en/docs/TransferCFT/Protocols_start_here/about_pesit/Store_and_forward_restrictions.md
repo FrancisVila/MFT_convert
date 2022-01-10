@@ -10,10 +10,10 @@ and the PI codes of associated FPDUs involved in file store and forward.
 
 Specifically, this topic describes the FPDU functions:
 
--   Establishing a
+- Establishing a
     connection
--   Selecting the file
--   Transfer acknowledgement
+- Selecting the file
+- Transfer acknowledgement
 
 <span id="Establishing_the_connection__FPDU_CONNECT"></span>
 
@@ -37,20 +37,20 @@ PI codes topic.
 From the selecting file to be transferred phase onwards, there are three
 things to be distinguished:
 
--   Partners performing
+- Partners performing
     the transfer: these partners are the requester and the server of the PeSIT
     connection, defined above in the FPDU CONNECT
--   Partners on behalf
+- Partners on behalf
     of which the transfer is made: these partners are the initial sender and
     final recipient of the file
--   Parameters which
+- Parameters which
     have to be conveyed during the successive connections required to transfer
     the file through the various nodes of the network
 
 For these reasons, the E version of PeSIT implements a more precise
 addressing within FPDU CREATE:
 
--   PI
+- PI
     3 and PI 4 codes define the names of the initial and final
     users and applications
 
@@ -59,7 +59,7 @@ SAPPL, RAPPL, SUSER and RUSER parameters of
 the CFTSEND or SEND commands and are sent by Transfer CFT
 from the beginning to the end of the transfer.
 
--   PI
+- PI
     61 and PI 62 define the partners on behalf of which the transfer
     is performed: these are the initial sender and final recipient of the
     file to be transferred.
@@ -74,11 +74,11 @@ The PeSIT protocol defines three other PI codes of the FPDU CREATE which
 contribute to the unambiguous identification of the transfer. The following
 PI codes are consequently sent by Transfer CFT from beginning to end:
 
--   PI
+- PI
     11 file type
--   PI
+- PI
     12 file name
--   PI
+- PI
     13 transfer identify
 
 <span id="Transfer_acknowledgement__FPDU_MSG"></span>
@@ -95,52 +95,21 @@ message FPDU.
 FPDU related PI codes and the corresponding
 Transfer CFT values
 
-```
 
-PI
+| PI  | Description  | Transfer CFT value  |
+| --- | --- | --- |
+| 3  | Sending application’s name<br /> Sending user’s name  | PI 4 of the acknowledged file creation request  |
+| 4  | Receiver application name<br /> Receiver user name  | PI 4 of the acknowledged file creation request  |
+| 11  | File type  | PI 11 of the acknowledged file creation request  |
+| 12  | File name  | PI 12 of the acknowledged file creation request  |
+| 13  | Transfer ident.  | PI 13 of the acknowledged file creation request  |
+| 14  | Requested attributes  | (not set)  |
+| 16  | Data code  | (not set)  |
+| 51  | Creation date<br /> Creation time  | PI 51 of the acknowledged file creation request  |
+| 61  | Initial sender | PI 62 of the acknowledged file creation request  |
+| 62  | Final receiver | PI 61 of the acknowledged file creation request  |
+| 91  | Message  | MSG parameter of the SEND command  |
 
-Description
-
-Transfer
-CFT value
-
-3 
-Sending application’s name
-Sending user’s name 
-PI 4 of the acknowledged file creation request 
-4 
-Receiver application name
-Receiver user name 
-PI 4 of the acknowledged file creation request 
-11 
-File type 
-PI 11 of the acknowledged file creation request 
-12 
-File name 
-PI 12 of the acknowledged file creation request 
-13 
-Transfer ident. 
-PI 13 of the acknowledged file creation request 
-14 
-Requested attributes 
-(not set) 
-16 
-Data code 
-(not set) 
-51 
-Creation date
-Creation time 
-PI 51 of the acknowledged file creation request 
-61 
-Initial sender
-PI 62 of the acknowledged file creation request 
-62 
-Final receiver
-PI 61 of the acknowledged file creation request 
-91 
-Message 
-MSG parameter of the SEND command 
-```
 
 Most of the acknowledgement message PI codes are defined using the protocol
 parameters which were specified at the time of the creation request (FPDU

@@ -8,22 +8,22 @@ If during installation you created both the distribution environment and the Tra
 
 > **Note**
 >
-> You require an installed Distribution environment before you can install the instance environment. See              Distribution environment installation.
+> You require an installed Distribution environment before you can install the instance environment. See Distribution environment installation.
 
 Prerequisites
 
-{{< TransferCFT/componentlongname  >}} requires two additional libraries LE (Language Environment),  SCEELIB and SCEECPP, which are used in the  (B20 LINK) link step.
+{{< TransferCFT/componentlongname  >}} requires two additional libraries LE (Language Environment), SCEELIB and SCEECPP, which are used in the (B20 LINK) link step.
 
 Procedure
 
-1.  Make a copy of the JCL. It is recommended that you work from a copy.
-2.  From the **distlib.INSTALL** library, customize and submit the **J2IICFT**.
+1. Make a copy of the JCL. It is recommended that you work from a copy.
+1. From the **distlib.INSTALL** library, customize and submit the **J2IICFT**.
 
 This procedure:
 
--   Creates a Transfer CFT instance run-time environment
--   Copies certain Transfer CFT distribution environment elements to the target environment
+- Creates a Transfer CFT instance run-time environment
+- Copies certain Transfer CFT distribution environment elements to the target environment
 
 After creating the target environment, leave the distribution environment in its original state. You should now work exclusively in the target environment.
 
-Next, execute the installation JCLs as described in the table JCL installation steps.
+Next, execute the installation JCLs as described in the table [JCL installation steps]().

@@ -26,49 +26,49 @@ TRACE = 255
 
 To analyze an SSL frame, read the first 6 bytes:
 
-1 8 24   40 48
+1 8 24 40 48
 
 Content type Version
 
-Major version     l   Minor version Fragment length Type message
+Major version l Minor version Fragment length Type message
 
 Where:
 
--   Content Type: determines the nature of the frame (0x: hexadecimal):
+- Content Type: determines the nature of the frame (0x: hexadecimal):
     -   0x14 change\_cipher\_specs
     -   0x15 alert
     -   0x16 handshake
     -   0x17 Application\_Data
--   Version: Determines the version of SSL used.
--   Fragment length: specifies the length of the fragment.
--   Message Type: Determines the type of message.
+- Version: Determines the version of SSL used.
+- Fragment length: specifies the length of the fragment.
+- Message Type: Determines the type of message.
 
 ### Handshake frame alert
 
-0x01   client\_hello 0x01   warning
+0x01 client\_hello 0x01 warning
 
-0x02   server\_hello 0x02   fatal
+0x02 server\_hello 0x02 fatal
 
-0x0B  certificate
+0x0B certificate
 
-0x0C  server\_key\_exchange
+0x0C server\_key\_exchange
 
-0x0D  certificate\_request
+0x0D certificate\_request
 
-0x0E   server\_hello\_done
+0x0E server\_hello\_done
 
-0x0F   certificate\_verify
+0x0F certificate\_verify
 
-0x10   client\_key\_exchange
+0x10 client\_key\_exchange
 
-0x14   finished
+0x14 finished
 
 ## Authentication types
 
 This section presents two scenarios for establishing a session between client and server:
 
--   Double authentication: the server requires the client to identify.
--   Simple Authentication: server authentication only.
+- Double authentication: the server requires the client to identify.
+- Simple Authentication: server authentication only.
 
 ### Double Authentication
 
@@ -412,7 +412,7 @@ CFTY02Z>&gt; CTX = 14030100 210 004 0101 &gt;......&lt;
 
 CTX = 210004 = PROT = SSLPESIT PESITSSL SSL server session ESTABLISHED CIPHER AUTH = 47 = BOTH
 
-Operation "handshake" was successfully completed with an SSL connection established for  a server by double authentication and encryption selected: 47.
+Operation "handshake" was successfully completed with an SSL connection established for a server by double authentication and encryption selected: 47.
 
 13\. CFTY02Z>&gt; CTX ndata = 210004 () 53 \_ APPLICATION DATA RECEIVED FROM NETWORK
 

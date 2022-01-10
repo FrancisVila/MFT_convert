@@ -14,7 +14,7 @@
 Odette protocol
 
 Value of the "credit" (expressed as a number of "DATA"
-messages) proposed by  {{< TransferCFT/componentshortname  >}} when it is the requester. Enter a value
+messages) proposed by {{< TransferCFT/componentshortname  >}} when it is the requester. Enter a value
 between 1 and 999. The Default value is **4**.
 
 <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is authorized to send a number of "DATA" protocol

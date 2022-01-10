@@ -6,19 +6,19 @@
 
 Content described in this topic:
 
--   [Scripts](#Scripts)
--   [Trusted File configuration file](#Trusted)
--   [Encoding/decoding samples](#Sample)
--   [Sample certificates](#Sample)
--   [Trusted File messages](#Messages)
--   [Transcoding conversion tables](#Transcod)
+- [Scripts](#Scripts)
+- [Trusted File configuration file](#Trusted)
+- [Encoding/decoding samples](#Sample)
+- [Sample certificates](#Sample)
+- [Trusted File messages](#Messages)
+- [Transcoding conversion tables](#Transcod)
 
 Conventions for Transfer CFT with Trusted File content includes:
 
--   $CFTDIRRUNTIME variable
+- $CFTDIRRUNTIME variable
     -   Unix: &lt;CFTDIRRUNTIME>
     -   Windows: %CFTDIRRUNTIME%
--   $CFTDIRINSTAL variable
+- $CFTDIRINSTAL variable
     -   Unix: &lt;CFTDIRINSTALL>
     -   Windows: %CFTDIRINSTALL%
 
@@ -32,8 +32,8 @@ Unix scripts
 | Script  | Description  |
 | --- | --- |
 | &lt;CFTDIRRUNTIME&gt;/exec/tf_decipher.cmd  | Trusted File deciphering script  |
-| &lt;CFTDIRRUNTIME&gt;/exec/tf_cipher.cmd    | Trusted File ciphering script  |
-| &lt;CFTDIRRUNTIME&gt;/exec/tf_delfile.cmd      | End of transfer procedure to delete the sent ciphered file  |
+| &lt;CFTDIRRUNTIME&gt;/exec/tf_cipher.cmd  | Trusted File ciphering script  |
+| &lt;CFTDIRRUNTIME&gt;/exec/tf_delfile.cmd  | End of transfer procedure to delete the sent ciphered file  |
 
 
 Windows scripts
@@ -42,8 +42,8 @@ Windows scripts
 | Script  | Description  |
 | --- | --- |
 | &lt;CFTDIRRUNTIME&gt;/exec/tf_decipher.bat  | Trusted File deciphering script  |
-| &lt;CFTDIRRUNTIME&gt;/exec/tf_cipher.bat              | Trusted File ciphering script  |
-| &lt;CFTDIRRUNTIME&gt;/exec/tf_delfile.bat              | End of transfer procedure to delete the sent ciphered file  |
+| &lt;CFTDIRRUNTIME&gt;/exec/tf_cipher.bat  | Trusted File ciphering script  |
+| &lt;CFTDIRRUNTIME&gt;/exec/tf_delfile.bat  | End of transfer procedure to delete the sent ciphered file  |
 
 
 <span id="Trusted"></span>
@@ -58,7 +58,7 @@ passPhrase: For PKCS#12 files, the password required to access the file.
 
  
 
-General  Usage:  CFTTF -pcfg conffile \[-plain plainFilename\] \[-entitiesLocation entitiesLocation\]
+General Usage: CFTTF -pcfg conffile \[-plain plainFilename\] \[-entitiesLocation entitiesLocation\]
 
 \[-envelope envelopeName\] \[-plainFileCharset plainCharset\] \[-plainEncCharset encCharset\]
 
@@ -69,7 +69,7 @@ To generate a passphrase, use the command: `CFTTF -pw [password]`
 Example
 
 ```
-CFTTF –pw user1OUTPUT:  OGrplhngkBLeiazMyPkAdcLnd5jlNOnMoGYKaI2WfAw=
+CFTTF –pw user1OUTPUT: OGrplhngkBLeiazMyPkAdcLnd5jlNOnMoGYKaI2WfAw=
 ```
 
 See also [How to generate a certificate for Trusted File](../tf_generate_cert).
@@ -102,8 +102,8 @@ The following certificates are located in: &lt;CFTDIRRUNTIME>/conf/tf/.
 | --- | --- |
 | &lt;CFTDIRRUNTIME&gt;/conf/tf/certs/priv/xppuser1.p12  | Private delivered “user1” certificate  |
 | &lt;CFTDIRRUNTIME&gt;/conf/tf/certs/priv/xppuser2.p12  | Private delivered “user2” certificate  |
-| &lt;CFTDIRRUNTIME&gt;/conf/tf/certs/pub/xppuser1.pem  | Public  delivered “user1” certificate  |
-| &lt;CFTDIRRUNTIME&gt;/conf/tf/certs/pub/xppuser2.pem  | Public  delivered “user2” certificate  |
+| &lt;CFTDIRRUNTIME&gt;/conf/tf/certs/pub/xppuser1.pem  | Public delivered “user1” certificate  |
+| &lt;CFTDIRRUNTIME&gt;/conf/tf/certs/pub/xppuser2.pem  | Public delivered “user2” certificate  |
 
 
 <span id="Messages"></span>
@@ -112,17 +112,17 @@ The following certificates are located in: &lt;CFTDIRRUNTIME>/conf/tf/.
 
 The following messages are used by Trusted File, and are located in: `$CFTDIRINSTALL/distrib/tf/english/`**.** Each file contains a set of error message associated with the type of encoding used.
 
--   xasn.msg      
--   xp3.msg
--   xpppki.msg
--   pgp.msg
--   smime.msg
--   xppadm.msg
--   xppconf.msg
--   xppgen.msg
--   xpp.msg
--   xppsrv.msg
--   xppwrap.msg
+- xasn.msg
+- xp3.msg
+- xpppki.msg
+- pgp.msg
+- smime.msg
+- xppadm.msg
+- xppconf.msg
+- xppgen.msg
+- xpp.msg
+- xppsrv.msg
+- xppwrap.msg
 
 Refer to the for details, available on [support.axway.com](https://support.axway.com/).
 
@@ -130,12 +130,12 @@ Refer to the for details, available on [support.axway.com](https://support.axway
 
 ## Transcoding table
 
-The `<CFTDIRRUNTIME>/conf/tf/transcoding.tbl` file contains all  available transcoding tables.
+The `<CFTDIRRUNTIME>/conf/tf/transcoding.tbl` file contains all available transcoding tables.
 
 
 | Table  | Description  |
 | --- | --- |
-| &lt;CFTDIRINSTALL&gt;/distrib/tf/tables/iso_atoe.tbl  | Converts   Latin ASCII to French EBCDIC  |
+| &lt;CFTDIRINSTALL&gt;/distrib/tf/tables/iso_atoe.tbl  | Converts Latin ASCII to French EBCDIC  |
 | &lt;CFTDIRINSTALL&gt;/distrib/tf/tables/iso_etoa.tbl  | Converts French EBCDIC to Latin ASCII  |
 | &lt;CFTDIRINSTALL&gt;/distrib/tf/tables/std_atoe.tbl  | Converts IBM-PC850 to French EBCDIC  |
 | &lt;CFTDIRINSTALL&gt;/distrib/tf/tables/std_etoa.tbl  | Converts French EBCDIC to IBM-PC850  |

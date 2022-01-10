@@ -2,20 +2,20 @@
     "title": "Implement the Edge Agent",
     "linkTitle": "Implement the Edge Agent",
     "weight": "210"
-}This page describes how to configure the Edge Agent for AMPLIFY MFT implementations and configure {{< TransferCFT/hflongproductname  >}} for the following  use cases:
+}This page describes how to configure the Edge Agent for AMPLIFY MFT implementations and configure {{< TransferCFT/hflongproductname  >}} for the following use cases:
 
--   Usage tracking only
--   Usage tracking and Sentinel monitoring
+- Usage tracking only
+- Usage tracking and Sentinel monitoring
 
 Usage tracking only
 
-<img src="/Images/TransferCFT/edge_direct.png" class="maxWidth" />
+![]($1)
 
 Usage tracking and Sentinel monitoring
 
-<img src="/Images/TransferCFT/edge_indirect.png" class="maxWidth" />
+![]($1)
 
-Report contents are computed  once daily  and reflect the completed transfers from the preceding day. Depending on your start and end dates, which must be at the very least the previous day, the report will contain the completed transfers for that time period.
+Report contents are computed once daily and reflect the completed transfers from the preceding day. Depending on your start and end dates, which must be at the very least the previous day, the report will contain the completed transfers for that time period.
 
 For more information on reporting usage, Edge Agent setup and architecture, and other usage tracking details, please refer to the [AMPLIFY Usage Metering and Reporting Guide](https://docs.axway.com/bundle/subusage_en).
 
@@ -23,11 +23,11 @@ For more information on reporting usage, Edge Agent setup and architecture, and 
 
 Perform the following steps on the Edge Agent for MFT implementations that use {{< TransferCFT/hflongproductname  >}} or {{< TransferCFT/securetransportname  >}}.
 
-1.  Download the `AMPLIFY_Edge_Agent_MFT_<version>_configuration_<BNxxx>.zip `package from the [Axway Support Site](https://support.axway.com/).
-2.  Extract the zip locally.
-3.  Upload the `MFT-usage.json` file from the package to the `<Edge_Agent_install_dir>/aggregator/usage_tracking/``conf/agent/aggregation` directory.
-4.  Upload the `MFT.json` file from the package to the `<Edge_Agent_install_dir>/conf/agent/report` directory.
-5.  Restart the Edge Agent. Refer to the [AMPLIFY Usage Metering and Reporting Guide](https://docs.axway.com/bundle/subusage_en).
+1. Download the `AMPLIFY_Edge_Agent_MFT_<version>_configuration_<BNxxx>.zip `package from the [Axway Support Site](https://support.axway.com/).
+1. Extract the zip locally.
+1. Upload the `MFT-usage.json` file from the package to the `<Edge_Agent_install_dir>/aggregator/usage_tracking/``conf/agent/aggregation` directory.
+1. Upload the `MFT.json` file from the package to the `<Edge_Agent_install_dir>/conf/agent/report` directory.
+1. Restart the Edge Agent. Refer to the [AMPLIFY Usage Metering and Reporting Guide](https://docs.axway.com/bundle/subusage_en).
 
 > **Note**
 >
@@ -43,9 +43,9 @@ In this use case, Transfer CFT sends the usage report directly to the Edge Agent
 
 Set the following `uconf `parameters to the Edge Agent values:
 
--   sentinel.trkipaddr: Edge Agent IP address
--   sentinel.trkipport: 8002 (by default, the non-SSL port for the Edge Agent)
--   sentinel.xfb.use\_ssl: No
+- sentinel.trkipaddr: Edge Agent IP address
+- sentinel.trkipport: 8002 (by default, the non-SSL port for the Edge Agent)
+- sentinel.xfb.use\_ssl: No
 
 ### Usage tracking with the Edge Agent and monitoring with Sentinel
 
@@ -57,32 +57,32 @@ You require an installed Sentinel and Event Router to implement this method. You
 
 Set the following uconf parameters to the Edge Agent values:
 
--   sentinel.trkipaddr: Event Router IP address
--   sentinel.trkipport: Event Router listening port
+- sentinel.trkipaddr: Event Router IP address
+- sentinel.trkipport: Event Router listening port
 
 #### On the Sentinel server
 
-1.  On Sentinel,  copy the `XFBCFTInfo `and `XFBTransfer` Tracked Object files from the` <Transfer_CFT_install_dir>/home/extra/sentinel` to `<Sentinel_install_dir>/broadcast/commit/trackingobject `folder.  
+1. On Sentinel, copy the `XFBCFTInfo `and `XFBTransfer` Tracked Object files from the` <Transfer_CFT_install_dir>/home/extra/sentinel` to `<Sentinel_install_dir>/broadcast/commit/trackingobject `folder.  
     If the Tracked Objects folder does not exist, you must create it.
-2.  Restart Sentinel.
+1. Restart Sentinel.
 
 #### On the Event Router
 
-When you are using the Event Router to send both usage tracking to the Edge Agent and  monitoring to Sentinel, you must customize the Event Router. In the following configuration steps, `XFBTransfer `and `CycleLink `are sent to both the Edge Agent and Sentinel. However, `XFBCFTInfo `and `STXFBINFO `are only sent to the Edge Agent.
+When you are using the Event Router to send both usage tracking to the Edge Agent and monitoring to Sentinel, you must customize the Event Router. In the following configuration steps, `XFBTransfer `and `CycleLink `are sent to both the Edge Agent and Sentinel. However, `XFBCFTInfo `and `STXFBINFO `are only sent to the Edge Agent.
 
 > **Note**
 >
-> The default target  is called SENTINEL in the steps below.
+> The default target is called SENTINEL in the steps below.
 
-1.  Access the `<install_dir>/SentinelEventRouter/conf `directory.
-2.  Edit the `target.xml` file to route the usage information to Sentinel and the Edge Agent (`EDGEAGENT`).
+1. Access the `<install_dir>/SentinelEventRouter/conf `directory.
+1. Edit the `target.xml` file to route the usage information to Sentinel and the Edge Agent (`EDGEAGENT`).
     1.  Add the Edge Agent as a new target.
     2.  ```
-        <Target name="EDGEAGENT"  defaultXntf="no"  defaultXml="no">
-               <Access mode="QLT"  addr="<Edge_Agent_IP_address>"  port="8002" />
-             </Target>
+        <Target name="EDGEAGENT" defaultXntf="no" defaultXml="no">
+        <Access mode="QLT" addr="<Edge_Agent_IP_address>" port="8002" />
+        </Target>
         ```
-    3.  Define a route  to send the `XFBTransfer `Tracked Object to the Edge Agent.
+    3.  Define a route to send the `XFBTransfer `Tracked Object to the Edge Agent.
     4.  ```
         <Route object="XFBTransfer" default_Notify="NotifyIf">
         <Condition notify="NotifyIf" target="EDGEAGENT" if="
@@ -98,48 +98,46 @@ When you are using the Event Router to send both usage tracking to the Edge Agen
     7.  Define a route to send the `XFBCFTInfo `only to the Edge Agent.
     8.  ```
         <Route object="XFBCFTInfo" default_Notify="NotifyIf">
-                <Condition notify="NotNotifyIf" target="SENTINEL" if="[PRODUCTIPADDR] NOT _"/>
-              
-        <Condition notify="NotifyIf"    target="EDGEAGENT"  if="[PRODUCTIPADDR] NOT _"/>
-            </Route>
+        <Condition notify="NotNotifyIf" target="SENTINEL" if="[PRODUCTIPADDR] NOT _"/>
+        <Condition notify="NotifyIf" target="EDGEAGENT" if="[PRODUCTIPADDR] NOT _"/>
+        </Route>
         ```
-    9.  If you are also implementing SecureTransport, define a route to send the `STXFBINFO `only  to the Edge Agent.
+    9.  If you are also implementing SecureTransport, define a route to send the `STXFBINFO `only to the Edge Agent.
     10. ```
-          <Route object="STXFBINFO" default_Notify="NotifyIf">
-                <Condition notify="NotNotifyIf" target="SENTINEL" if="[PRODUCTIPADDR] NOT _"/>
-              
-        <Condition notify="NotifyIf"    target="EDGEAGENT"  if="[PRODUCTIPADDR] NOT _"/>
-            </Route>
+        <Route object="STXFBINFO" default_Notify="NotifyIf">
+        <Condition notify="NotNotifyIf" target="SENTINEL" if="[PRODUCTIPADDR] NOT _"/>
+        <Condition notify="NotifyIf" target="EDGEAGENT" if="[PRODUCTIPADDR] NOT _"/>
+        </Route>
         ```
-3.  Save the file.
-4.  Restart the Event Router.
+1. Save the file.
+1. Restart the Event Router.
 
 Example
 
 ```
 <TrkEventRouterCfg>
 <TrkXml version="x.x" />
-   <EventRouter name="DEFAULT">
-  </EventRouter>
-    <Target name="SENTINEL" defaultXntf="yes" defaultXml="yes">
-   </Target>
-   <Target name="EDGEAGENT"  defaultXntf="no"  defaultXml="no">
-      <Access mode="QLT"  addr="<Edge_Agent_IP_address>"  port="8002" />
-    </Target>
-   <Route object="XFBTransfer" default_Notify="NotifyIf">  
-      <Condition notify="NotifyIf"    target="EDGEAGENT"  if="[PRODUCTIPADDR] NOT _"/>
-   </Route>
+<EventRouter name="DEFAULT">
+</EventRouter>
+<Target name="SENTINEL" defaultXntf="yes" defaultXml="yes">
+</Target>
+<Target name="EDGEAGENT" defaultXntf="no" defaultXml="no">
+<Access mode="QLT" addr="<Edge_Agent_IP_address>" port="8002" />
+</Target>
+<Route object="XFBTransfer" default_Notify="NotifyIf">
+<Condition notify="NotifyIf" target="EDGEAGENT" if="[PRODUCTIPADDR] NOT _"/>
+</Route>
   <Route object="CYCLELINK" default_Notify="NotifyIf">
     <Condition notify="NotifyIf" target="EDGEAGENT" if="[PRODUCTIPADDR] NOT _"/>
    </Route>
-   <Route object="XFBCFTInfo" default_Notify="NotifyIf">
-       <Condition notify="NotNotifyIf" target="SENTINEL" if="[PRODUCTIPADDR] NOT _"/>
-       <Condition notify="NotifyIf"    target="EDGEAGENT"  if="[PRODUCTIPADDR] NOT _"/>
-    </Route>
-   <Route object="STXFBINFO" default_Notify="NotifyIf">
-       <Condition notify="NotNotifyIf" target="SENTINEL" if="[PRODUCTIPADDR] NOT _"/>
-       <Condition notify="NotifyIf"    target="EDGEAGENT"  if="[PRODUCTIPADDR] NOT _"/>
-   </Route>
+<Route object="XFBCFTInfo" default_Notify="NotifyIf">
+<Condition notify="NotNotifyIf" target="SENTINEL" if="[PRODUCTIPADDR] NOT _"/>
+<Condition notify="NotifyIf" target="EDGEAGENT" if="[PRODUCTIPADDR] NOT _"/>
+</Route>
+  <Route object="STXFBINFO" default_Notify="NotifyIf">
+<Condition notify="NotNotifyIf" target="SENTINEL" if="[PRODUCTIPADDR] NOT _"/>
+<Condition notify="NotifyIf" target="EDGEAGENT" if="[PRODUCTIPADDR] NOT _"/>
+</Route>
 </TrkEventRouterCfg>
 ```
 

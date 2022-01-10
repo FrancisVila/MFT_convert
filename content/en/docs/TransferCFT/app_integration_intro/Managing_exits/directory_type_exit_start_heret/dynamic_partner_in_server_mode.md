@@ -2,20 +2,20 @@
     "title": "Dynamic  partner in server mode",
     "linkTitle": "Dynamic partner in server mode",
     "weight": "370"
-}In server mode, standard  {{< TransferCFT/componentshortname  >}} operations consist of accepting
+}In server mode, standard {{< TransferCFT/componentshortname  >}} operations consist of accepting
 a transfer request only if the partner is pre-defined in the parameter
-settings. This topic describes a mode where  {{< TransferCFT/componentshortname  >}} can accept a
+settings. This topic describes a mode where {{< TransferCFT/componentshortname  >}} can accept a
 connection from a partner that is not already defined. This type of partner
 is referred to as a *dynamic partner*.
 
 {{< TransferCFT/componentshortname  >}} can accept connections from a correspondent not defined
 in advance by:
 
--   Using the mechanism
+- Using the mechanism
     for dynamic creation of a partner from a model partner
--   Generating the
+- Generating the
     partner’s characteristics in a directory type EXIT task
--   Combining the 2
+- Combining the 2
     mechanisms described above
 
 ## Creating a partner from a model
@@ -38,11 +38,11 @@ the routing and switching mechanism.
 As far as parameter settings are concerned, the user sets up the mechanism
 by:
 
--   Adding the DYNAM
+- Adding the DYNAM
     parameter to the corresponding to the CFTPROT object
--   Creating the definition
+- Creating the definition
     of the model partner CFTPART
--   Creating a network
+- Creating a network
     resource (CFTxxx) associated with the model partner
 
 The DYNAM parameter gives the identifier of the model partner and, by
@@ -54,7 +54,7 @@ as many protocols (CFTPROT).
 
 #### Restrictions
 
-A new dynamic partner cannot be created without stopping  {{< TransferCFT/componentshortname  >}},
+A new dynamic partner cannot be created without stopping {{< TransferCFT/componentshortname  >}},
 as the latter is linked to a protocol definition that cannot be modified.
 However, modifications to the parameters of a model partner are immediate.
 
@@ -68,7 +68,7 @@ As this parameter is optional, it may happen that only one of them is
 defined, in which case it is rejected.
 
 The parameters IMINTIME and IMAXTIME, which define the call range to
-the  {{< TransferCFT/componentshortname  >}} are also checked.
+the {{< TransferCFT/componentshortname  >}} are also checked.
 
 ### Partner network description
 
@@ -106,7 +106,7 @@ SEND PART = part, IDF = idf, STATE = HOLD
 
 Or an equivalent request via CFTAPI ...
 
-As the dynamic partner is not known to  {{< TransferCFT/componentshortname  >}}, the request is
+As the dynamic partner is not known to {{< TransferCFT/componentshortname  >}}, the request is
 not taken into account in "H" status, transfer postponed, unless
 the parameter settings authorize the use of the dynamic partner and/or
 the directory type EXIT task, CFTPROT object DYNAM and EXIT parameters.
@@ -116,7 +116,7 @@ exist.
 
 The dynamic partner can receive the file put on hold, either by:
 
--   Presenting itself
+- Presenting itself
     under this name, or this network identifier
--   Using an identifier
+- Using an identifier
     conversion (network, local) provided by a directory type EXIT task

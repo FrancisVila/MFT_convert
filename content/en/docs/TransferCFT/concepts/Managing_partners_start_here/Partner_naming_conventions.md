@@ -20,9 +20,9 @@ Partner network names
 
 | Parameter  | Object  | Network name  |
 | --- | --- | --- |
-|  NSPART  |  CFTPART  |  Name of the local Transfer CFT with regard to the remote partner described by this command  |
-|  NRPART  |  CFTPART  |  Name of the remote partner Transfer CFT  |
-|  NPART  |  CFTPARM  |  Default name of the local Transfer CFT with regard to the partners (default value of the NSPART parameter)  |
+| NSPART  | CFTPART  | Name of the local Transfer CFT with regard to the remote partner described by this command  |
+| NRPART  | CFTPART  | Name of the remote partner Transfer CFT  |
+| NPART  | CFTPARM  | Default name of the local Transfer CFT with regard to the partners (default value of the NSPART parameter)  |
 
 
 <span id="Local_names"></span>
@@ -37,15 +37,15 @@ the table below:
 Partner local names
 
 
-|  Parameter  |  Location  |  Local name  |
+| Parameter  | Location  | Local name  |
 | --- | --- | --- |
-|  ID  |  CFTPART  |  Uniquely identifies the partner and supplies the default value of the NRPART parameter  |
-|  IPART<br /> parameter setting at requester end  |  CFTPART  |  The local name identifying an intermediate partner (if using store and forward)  |
-|  IPART<br /> during transfer  |  CFT CATALOG  |  <li>If there is no store and forward: remote partner identifier<br /> <br/> • If there is store and forward: store and forward site identifier (immediate party) </li>  |
-|  PART  |  CFTPARM  |  Identifies the local Transfer CFT  |
-|  PART  |  CFT CATALOG  |  <li>If there is no store and forward: remote partner identifier<br /> <br/> • If there is store and forward (see the paragraphs below): store and forward site identifier (immediate party). </li>  |
-|  SPART  |  CFT CATALOG  |  Designates the initial sending partner  |
-|  RPART  |  CFT CATALOG  |  Designates the final receiving partner  |
+| ID  | CFTPART  | Uniquely identifies the partner and supplies the default value of the NRPART parameter  |
+| IPART<br /> parameter setting at requester end  | CFTPART  | The local name identifying an intermediate partner (if using store and forward)  |
+| IPART<br /> during transfer  | CFT CATALOG  |  • If there is no store and forward: remote partner identifier<br /> <br/> • If there is store and forward: store and forward site identifier (immediate party)  |
+| PART  | CFTPARM  | Identifies the local Transfer CFT |
+| PART  | CFT CATALOG  |  • If there is no store and forward: remote partner identifier<br /> <br/> • If there is store and forward (see the paragraphs below): store and forward site identifier (immediate party).  |
+| SPART  | CFT CATALOG  | Designates the initial sending partner  |
+| RPART  | CFT CATALOG  | Designates the final receiving partner  |
 
 
 <span id="Using_reciprocal_recognition"></span>
@@ -62,7 +62,7 @@ Reciprocal recognition mechanism
 The recognition mechanism is displayed
 in the diagram below.
 
-<img src="/Images/TransferCFT/reciprocal_recognition.gif" width="721" height="155" />
+![]($1)
 
 *On  the server*, Transfer CFT
 also provides the possibility of checking whether the requester
@@ -72,7 +72,7 @@ the password indicated in the NRPASSW parameter on the server.
 
 The checks performed on connection are indicated in the following diagram.
 
-<img src="/Images/TransferCFT/Checks_performed_on_connecting.gif" width="721" height="155" />
+![]($1)
 
 That is, a CFTPART parameter is set for each
 partner to be communicated with, where different NRPART parameters correspond

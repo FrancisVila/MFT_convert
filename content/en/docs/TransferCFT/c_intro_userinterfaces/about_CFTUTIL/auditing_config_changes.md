@@ -5,8 +5,8 @@
 }The configuration auditing feature enables Transfer CFT to track configuration changes and send this information to the Sentinel
 server. The configuration change can be:
 
--   Deleting, modifying, or creating a CFTxxx object (PART, or PART database)
--   Creating or deleting
+- Deleting, modifying, or creating a CFTxxx object (PART, or PART database)
+- Creating or deleting
     a CFTFILE object (PARM, PART, CAT, LOG…)
 
 > **Note**
@@ -17,7 +17,7 @@ server. The configuration change can be:
 
 > **Note**
 >
-> To enable the configuration change audit, set the Sentinel parameter value  to  uconf:sentinel.xfb.audit=yes in the unified configuration (UCONF).
+> To enable the configuration change audit, set the Sentinel parameter value to uconf:sentinel.xfb.audit=yes in the unified configuration (UCONF).
 
 **Example**
 
@@ -30,16 +30,16 @@ value=yes
 
 ### Message Track
 
-Message Track is an XML  XFBLog message
+Message Track is an XML XFBLog message
 containing:
 
--   Ident attribute
--   Return message attribute
--   Sentinel.xfb.audit
+- Ident attribute
+- Return message attribute
+- Sentinel.xfb.audit
 
 **Example**
 
-/Action=CREATE /Object=CFTSEND /id=ZZ /user=My\_Company\\giovanip /groupid= /owner=      /CrDate=20191204 /CrTime=17471640 /UpdDate=20191204 /UpdTime=17471640
+/Action=CREATE /Object=CFTSEND /id=ZZ /user=My\_Company\\giovanip /groupid= /owner= /CrDate=20191204 /CrTime=17471640 /UpdDate=20191204 /UpdTime=17471640
 
 <span id="Ident attribute"></span>
 
@@ -48,13 +48,13 @@ containing:
 
 | CFTA0nX  | Details  |
 | --- | --- |
-|  n=1    | CFTPARM file  |
-|  n=2  | CFTPART file  |
-|  n=3  | CFTCAT file  |
-|  n=4  | CFTCOM file  |
-|  n=5  | CFTLOG file  |
-|  n=6  | CFTACCNT file  |
-|  X=I  | Information  |
+| n=1 | CFTPARM file  |
+| n=2 | CFTPART file  |
+| n=3 | CFTCAT file  |
+| n=4 | CFTCOM file  |
+| n=5 | CFTLOG file  |
+| n=6 | CFTACCNT file  |
+| X=I  | Information  |
 | X=E  | Error  |
 
 
@@ -66,7 +66,7 @@ containing:
 | Attribute  | Details  |
 | --- | --- |
 | Action=&amp;act  |  &amp;act is the action on an object (“CREATE” , “MODIFY” , “DELETE”)  |
-| Object=&amp;obj  | &amp;obj is the object identifier  (type of object for the CFTFILE command)  |
+| Object=&amp;obj  | &amp;obj is the object identifier (type of object for the CFTFILE command)  |
 | id=&amp;id  |   |
 | user=&amp;user  |  &amp;user is the user that modified the object  |
 | groupid=&amp;group  | &amp;group is the user group that modified the object  |
@@ -87,5 +87,5 @@ CFTUTIL uconfset id=sentinel.xfb.log, value=' '
 
 Related topics
 
--   UCONF: [unified configuration](../../../admin_intro/uconf)
--   XFBTransfer
+- UCONF: [unified configuration](../../../admin_intro/uconf)
+- [XFBTransfer]()

@@ -4,22 +4,22 @@
     "weight": "150"
 }Transfer CFT offers different types of security services in order to secure communication, protect data, and control user access:
 
--   Transport security
--   Access management
--   DMZ enabled communication
--   File encryption at rest
--   SFTP
+- Transport security
+- Access management
+- DMZ enabled communication
+- File encryption at rest
+- SFTP
 
 After configuring the security system, you define the users and the
-actions that they can make on the various  {{< TransferCFT/componentshortname  >}} objects. These definitions apply to objects declared within the operating
-systems, such as files and batch procedures, as well as  {{< TransferCFT/componentshortname  >}}
+actions that they can make on the various {{< TransferCFT/componentshortname  >}} objects. These definitions apply to objects declared within the operating
+systems, such as files and batch procedures, as well as {{< TransferCFT/componentshortname  >}}
 objects, commands, transfer requests and internal files.
 
 <span id="Transport_Security"></span>
 
 ## Transport security
 
-Transfer CFT implements the cryptographic protocol TLS (Transport Layer Security) and its previous version SSL (Secure Sockets Layer),  which provides  authentication between the parties, data confidentiality, and integrity.  Additionally, Transfer CFT is FIPS (Federal Information Processing Standards) compliant.
+Transfer CFT implements the cryptographic protocol TLS (Transport Layer Security) and its previous version SSL (Secure Sockets Layer), which provides authentication between the parties, data confidentiality, and integrity. Additionally, Transfer CFT is FIPS (Federal Information Processing Standards) compliant.
 
 Transport Security is ensured through a public key infrastructure (PKI), which you can managed either using Transfer CFT, PassPort PS or an external PKI.
 
@@ -36,13 +36,13 @@ Access management for Transfer CFT refers to the policy that allow users to perf
 
 ## DMZ enabled communication
 
-{{< TransferCFT/componentshortname  >}}supports communication in the DMZ using  Secure Relay. All of the connections that use this {{< TransferCFT/componentshortname  >}} network resource transmit through Secure Relay for both incoming and outgoing connections.
+{{< TransferCFT/componentshortname  >}}supports communication in the DMZ using Secure Relay. All of the connections that use this {{< TransferCFT/componentshortname  >}} network resource transmit through Secure Relay for both incoming and outgoing connections.
 
 \*Presently not configurable from the interface.
 
 ## File encryption at rest
 
-{{< TransferCFT/componentshortname  >}} embeds TrustedFile  to encode and decode files in S/MIME, CMS,  OpenPGP, XML Signature, XML Encryption, and XAdES (BES and EPES) format. These standards secure data at rest, independently of the data communication method.
+{{< TransferCFT/componentshortname  >}} embeds TrustedFile to encode and decode files in S/MIME, CMS, OpenPGP, XML Signature, XML Encryption, and XAdES (BES and EPES) format. These standards secure data at rest, independently of the data communication method.
 
 \*Presently not configurable from the interface.
 

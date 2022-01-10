@@ -18,15 +18,15 @@ the procedures to be executed on completion of reception of a message.
 
 This name may include the following symbolic variables:
 
--   &IDM, &PARM
--   &PART, &RPART,
+- &IDM, &PARM
+- &PART, &RPART,
     &SPART, &GROUP
--   &RUSER, &SUSER,
+- &RUSER, &SUSER,
     &USERID
--   &RAPPL, &SAPPL
+- &RAPPL, &SAPPL
 
 The character ‘&’ designates the char\_symb character defined in
-the  {{< TransferCFT/componentshortname  >}} *Operations Guide* corresponding to your OS
+the {{< TransferCFT/componentshortname  >}} *Operations Guide* corresponding to your OS
 
 > **Note**
 >

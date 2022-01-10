@@ -6,9 +6,9 @@
 
 It includes:
 
--   [Configure send mode (IFS)](send_files_ifs)
--   [Configure receive mode (IFS)](receive_files_ifs)
--   Copyfile (IFS)
+- [Configure send mode (IFS)](send_files_ifs)
+- [Configure receive mode (IFS)](receive_files_ifs)
+- [Copyfile (IFS)]()
 
 See also [IFS access error codes.](../../os400_support_tool/ifs_access_errors)
 
@@ -16,29 +16,29 @@ See also [IFS access error codes.](../../os400_support_tool/ifs_access_errors)
 
 The IFS provides a common interface to another system on the IBM i. After installing Transfer CFT you can:
 
--   Transfer IFS files
--   Receive and store IFS files
--   Copy IFS files to a native system and vice versa (using CFTUTIL COPYFILE)
+- Transfer IFS files
+- Receive and store IFS files
+- Copy IFS files to a native system and vice versa (using CFTUTIL COPYFILE)
 
 ### Naming conventions
 
 Respect the following naming conventions:
 
--   The file name must be prefixed by the slash character /
+- The file name must be prefixed by the slash character /
     -   For example: `/home/filename`
--   You cannot replace environmental variables in the file name
+- You cannot replace environmental variables in the file name
     -   For example:` $HOME/filename` is not a recognized filename
--   You cannot precede filenames by a relative path
+- You cannot precede filenames by a relative path
     -   For example: `../filename` is not a recognized filename
 
 ### Encoding IFS data
 
 IFS file data can be in an ASCII, EBCDIC, or BINARY format. The CCSID, Code Character Set Identifier, associated with the file determines the encoding for the data.
 
--   Transfer CFT can read and write IFS files in these three formats: ASCII, EBCDIC, or BINARY.  
+- Transfer CFT can read and write IFS files in these three formats: ASCII, EBCDIC, or BINARY.  
     When using the ASCII or EBCDIC formats, the data translation for a Transfer CFT transfer, if necessary, is managed by the Transfer CFT translation tables (CFTXLATE).
--   When Transfer CFT receives an IFS file, the CCSID for the file is set by default. This identifier is set to the Transfer CFT job CCSID value.
--   The CFTRECV (or RECV) command FCODE=ASCII parameter creates an ASCII file with an associated CCSID code value of 819 (ISO 8859-1 common use default Internet code).
+- When Transfer CFT receives an IFS file, the CCSID for the file is set by default. This identifier is set to the Transfer CFT job CCSID value.
+- The CFTRECV (or RECV) command FCODE=ASCII parameter creates an ASCII file with an associated CCSID code value of 819 (ISO 8859-1 common use default Internet code).
 
 ### IFS file rights and authorizations
 
@@ -46,10 +46,10 @@ In an environment, files are subject to two types of control, data authorities a
 
 By default the Transfer CFT users and other general users are given the following:
 
--   The RWX options for authority
--   The OBJMGT, OBJEXIST, OBJALTER and OBJREF options for authority
+- The RWX options for authority
+- The OBJMGT, OBJEXIST, OBJALTER and OBJREF options for authority
 
 The minimum IFS data authorities required to perform transfers with any user are:
 
--   RX: readable and executable permission for any object in the IFS directory
--   RWX: readable, writable and executable permission for any object in the IFS directory
+- RX: readable and executable permission for any object in the IFS directory
+- RWX: readable, writable and executable permission for any object in the IFS directory

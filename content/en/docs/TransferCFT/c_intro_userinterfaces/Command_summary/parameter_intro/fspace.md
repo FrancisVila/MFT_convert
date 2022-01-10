@@ -18,10 +18,11 @@ Size of the receiver file, in Kbytes
 
 This size usually corresponds to the primary allocation.
 
-```
-UNIX
-Parameter not applicable
-```
+
+| UNIX | Parameter not applicable |
+| --- | --- |
+
+
 <span id="fspace_CFTSEND"></span>
 
 #### CFTSEND, SEND
@@ -58,45 +59,15 @@ according to the type of file to be created. In this table, the FSPACE
 parameter does not need to be defined when the default value of the primary
 allocation of the file to be created is "no".
 
-```
+QQQ\_QQQ\_QQQ removed fspace from top row
 
-<span id="FSPACE_Table"></span>FSPACE
 
-OS 
-PARM 
-PART 
-CAT 
-COM 
-LOG 
-ACCNT 
-MVS (z/OS)
-50 
-100 
-no 
-no 
-200 
-200 
-IBM i (OS400) 
-512 
-512 
-no 
-no 
-512 
-512 
-UNIX 
-no 
-no 
-no 
-no 
-no 
-no 
-Windows
-no 
-no 
-no 
-no 
-no 
-no 
-```
+| OS  | PARM  | PART  | CAT  | COM  | LOG  | ACCNT  |
+| --- | --- | --- | --- | --- | --- | --- |
+| MVS (z/OS) | 50  | 100  | no  | no  | 200  | 200  |
+| IBM i (OS400)  | 512  | 512  | no  | no  | 512  | 512  |
+| UNIX  | no  | no  | no  | no  | no  | no  |
+| Windows | no  | no  | no  | no  | no  | no  |
+
 
 [Return to Command index](../../)

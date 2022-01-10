@@ -2,24 +2,24 @@
     "title": "Axway AMPLIFY architecture",
     "linkTitle": "Axway AMPLIFY architecture",
     "weight": "120"
-}Axway {{< TransferCFT/platformorsuitelongname  >}} Managed File Transfer provides a  product platform aimed at increasing the
+}Axway {{< TransferCFT/platformorsuitelongname  >}} Managed File Transfer provides a product platform aimed at increasing the
 efficiency of business processes. This platform enables you to integrate
 the applications in your corporate information system and implement exchanges
-between these applications and external partners.  {{< TransferCFT/componentshortname  >}} in combination with other {{< TransferCFT/companyname  >}} products can provide a complete business solution for creating secured, guaranteed
+between these applications and external partners. {{< TransferCFT/componentshortname  >}} in combination with other {{< TransferCFT/companyname  >}} products can provide a complete business solution for creating secured, guaranteed
 exchanges with partners.
 
-## {{< TransferCFT/companyname  >}} products  
+## {{< TransferCFT/companyname  >}} products
 
-{{< TransferCFT/componentshortname  >}} can interact with a variety of {{< TransferCFT/companyname  >}} products  
+{{< TransferCFT/componentshortname  >}} can interact with a variety of {{< TransferCFT/companyname  >}} products
  to enable
 you to better supervise, track, and analyze your transfer operations.
 Additional products include, but are not limited to, the following:
 
--   [API portal](#APIportal), [API Gateway](#APIgtw), [API Manager](#APImanager)
--   [Central Governance](#Central_Governance)
--   Communication gateways: [Gateway,  Secure Transport](#Gateway)
--   [SecureRelay](#SecureRelay)
--   [TrustedFile](#TrustedFile)
+- [API portal](#APIportal), [API Gateway](#APIgtw), [API Manager](#APImanager)
+- [Central Governance](#Central_Governance)
+- Communication gateways: [Gateway, Secure Transport](#Gateway)
+- [SecureRelay](#SecureRelay)
+- [TrustedFile](#TrustedFile)
 
 Example Axway {{< TransferCFT/platformorsuitelongname  >}} MFT implementation
 
@@ -47,9 +47,9 @@ API Portal is a self-service portal that enables client application developers 
 
 For all products, {{< TransferCFT/centralgovernancename  >}} provides IAM and Visibility services through embedded editions of {{< TransferCFT/passportname  >}} and {{< TransferCFT/sentinelname  >}}, enabling:
 
--   Global management of user identity and rights, providing a central control point for security enforcement
--   End-to-end centralized supervision of data flows, consistent with definitions in the repository
--   Out-of-the-box web dashboards to get a global view of data flow activity, as well as the ability to create custom dashboards
+- Global management of user identity and rights, providing a central control point for security enforcement
+- End-to-end centralized supervision of data flows, consistent with definitions in the repository
+- Out-of-the-box web dashboards to get a global view of data flow activity, as well as the ability to create custom dashboards
 
 <span id="Central_Governance"></span>
 
@@ -57,11 +57,11 @@ For all products, {{< TransferCFT/centralgovernancename  >}} provides IAM and Vi
 
 For {{< TransferCFT/transfercftname  >}}, {{< TransferCFT/centralgovernancename  >}} also provides product configuration, and flow definition and deployment services.
 
--   Global data flow repository, providing end-to-end data flow definitions, from business application to infrastructure level
--   Automatic discovery of products to be managed
--   Centralized management of product configuration and associated deployment, including mass processing capabilities for highly distributed environments, which include groups and configuration policies
--   Centralized day-to-day operations management: to start and stop products and to view their logs
--   Out-of-the box alert management to track any problem linked to products or data flow processing, including a subscription mechanism for alert notifications
+- Global data flow repository, providing end-to-end data flow definitions, from business application to infrastructure level
+- Automatic discovery of products to be managed
+- Centralized management of product configuration and associated deployment, including mass processing capabilities for highly distributed environments, which include groups and configuration policies
+- Centralized day-to-day operations management: to start and stop products and to view their logs
+- Out-of-the box alert management to track any problem linked to products or data flow processing, including a subscription mechanism for alert notifications
 
 <span id="Gateway"></span>
 

@@ -7,15 +7,15 @@ codes used with {{< TransferCFT/componentshortname  >}}.
 
 ## About PeSIT PI codes
 
-During the file transfer phase, as seen in How PeSIT works,  messages called FPDU (File
+During the file transfer phase, as seen in [How PeSIT works](), messages called FPDU (File
 transfer Protocol Data
-Units) are exchanged between partners.  Each FPDU comprises a
+Units) are exchanged between partners. Each FPDU comprises a
 header (six bytes) that specifies the type of data transferred. The body of the FPDUs comprises a series of parameter identifiers (PI) used to specify
 and negotiate all the transfer elements.
 
 ![](/Images/TransferCFT/temp_fpdu.png)
 
-Each parameter  PI  has an assigned a number and value per the PeSIT protocol
+Each parameter PI has an assigned a number and value per the PeSIT protocol
 specifications. These PI codes are used for the session negotiation between partners.
 
 Furthermore, each parameter group unit is identified by a numeric code named PGI
@@ -51,7 +51,7 @@ diagnostic codes.](../../../troubleshoot_intro/messages_and_error_codes_start_he
 
 This field specifies the name of the Partner requesting the connection:
 
--   Establishing the
+- Establishing the
     protocol connection (FPDU CONNECT)
 
 Format: 16 characters.
@@ -66,16 +66,16 @@ the local Transfer CFT with a search criterion for the remote user definition
 in the PARTNERS file, the equivalent to the remote partner (NRPART) parameter of
 the partner object (CFTPART).
 
--   Creating a file
+- Creating a file
     (FPDU CREATE)
 
 Format: 24 characters
 
--   bytes 1 to
+- bytes 1 to
     8: sending the application name
--   bytes 9 to
+- bytes 9 to
     16: sending the user name
--   bytes 17 to
+- bytes 17 to
     24: free field
 
 In requester mode, the
@@ -89,20 +89,20 @@ CFT recovers the PI 3 code in order to be able to define the &SAPPL
 and &SUSER symbolic variables. The free field is not used by
 Transfer CFT.
 
--   Selecting a file
+- Selecting a file
     (FPDU SELECT)
 
 As the PeSIT protocol imposes no constraints as to the contents
 of this PI code, Transfer CFT does not define or use it.
 
--   Sending a message
+- Sending a message
     (SEND TYPE = MESSAGE, ...)
 
 The PI 3 code contains the same value as the one conveyed
 by the protocol connection request (FPDU CONNECT) previously required
 to send this message.
 
--   Sending an acknowledgement
+- Sending an acknowledgement
     (SEND TYPE = REPLY, ...)
 
 The PI 3 code contains the value of the PI 4 code conveyed
@@ -115,7 +115,7 @@ by the file creation request (FPDU CREATE) whose receipt is acknowledged.
 This field specifies the name of the connection server partner. It takes
 various formats depending on the PeSIT service used.
 
--   Establishing the
+- Establishing the
     protocol connection (FPDU CONNECT)
 
 Format: 16 characters
@@ -128,15 +128,15 @@ CFT does not process this field. Logically, it is defined by the specific
 network identification of the local site relative to the requester Partner
 (the local partner (NSPART) parameter of the partner object (CFTPART)).
 
--   Creating a file (FPDU CREATE)
+- Creating a file (FPDU CREATE)
 
 Format: 24 characters
 
--   bytes 1 to
+- bytes 1 to
     8: receiver application name
--   bytes 9 to
+- bytes 9 to
     16: receiver user name
--   bytes 17 to
+- bytes 17 to
     24: free field
 
 In requester mode, the first two
@@ -150,17 +150,17 @@ the PI 3 code in order to be able to define the &RAPPL and
 &RUSER symbolic variables. The free field is not used by Transfer
 CFT.
 
--   Selecting a file (FPDU SELECT)
+- Selecting a file (FPDU SELECT)
 
 As the PeSIT protocol imposes no constraints as to the contents of this
 PI code, Transfer CFT does not define or use it.
 
--   Sending a message (SEND TYPE = MESSAGE, ...)
+- Sending a message (SEND TYPE = MESSAGE, ...)
 
 The PI 4 code contains the same value as the one conveyed by the protocol
 connection request (FPDU CONNECT) previously required to send this message.
 
--   Sending an acknowledgement (SEND TYPE = REPLY, ...)
+- Sending an acknowledgement (SEND TYPE = REPLY, ...)
 
 The PI 4 code contains the value of the PI 3 code conveyed by the file
 creation request (FPDU CREATE) whose receipt is acknowledged.
@@ -169,10 +169,10 @@ creation request (FPDU CREATE) whose receipt is acknowledged.
 
 ### PI 05 Access control
 
--   Format: 16 characters
--   Bytes 1 to 8: partner
+- Format: 16 characters
+- Bytes 1 to 8: partner
     password
--   Bytes 9 to 16:
+- Bytes 9 to 16:
     the partner's new password
 
 This parameter is exchanged at the time the protocol connection is established.
@@ -204,10 +204,10 @@ on the type of access to the protocol connection (see PI22).
 
 If a connection is required
 with a mixed type of access, Transfer CFT negotiates the smallest
-value of the **Data transferred between sync points**(S/RPACING) parameters of the  of the protocol object (CFTPROT).
+value of the **Data transferred between sync points**(S/RPACING) parameters of the of the protocol object (CFTPROT).
 
 In server mode, Transfer CFT cannot increase the value proposed by the
-requester partner. The  **Acknowledgement window size**  parameters negotiate in the same way as the synchronization
+requester partner. The **Acknowledgement window size** parameters negotiate in the same way as the synchronization
 interval (S/RCHKW of the protocol object (CFTPROT)).
 
 <span id="PI_11_File_type_PeSIT_E"></span>
@@ -230,8 +230,8 @@ the transfer command:
 
 | TYPE parameter  | Description  |
 | --- | --- |
-|  SEND TYPE = MESSAGE,...  |  Outgoing message  |
-|  SEND TYPE = REPLY,...  |  PI 11 of the file for which the message conveys the acknowledgement  |
+| SEND TYPE = MESSAGE,... | Outgoing message |
+| SEND TYPE = REPLY,... |  PI 11 of the file for which the message conveys the acknowledgement |
 
 
  Transfer
@@ -276,7 +276,7 @@ in particular, it must be the same as the one used during the initial
 transfer.
 
 When sending an acknowledgement
-(SEND  TYPE = REPLY, ...), this field contains the PI 13
+(SEND TYPE = REPLY, ...), this field contains the PI 13
 of the file transfer acknowledged.
 
 <span id="PI_14_Requested_attributes"></span>
@@ -300,28 +300,28 @@ or acknowledgement, Transfer CFT does not define or use this field.
 This parameter indicates that a transfer is a new occurrence of a transfer
 which has already been attempted.
 
--   In
+- In
     requester mode, Transfer CFT manages this field internally,
     according to the transfer characteristic (new or restarted).
--   In server mode, if the remote Partner
+- In server mode, if the remote Partner
     indicates a restart, the search criteria for a catalog entry relative
     to the network values received are as follows:
 
 <!-- -->
 
--   File type (PI 11)
--   File identifier
+- File type (PI 11)
+- File identifier
     (PI 12)
--   Transfer identifier
+- Transfer identifier
     (PI 13)
--   Connect Partner
+- Connect Partner
     (PI 3 of FPDU CONNECT)
 
 <!-- -->
 
--   Initial sender
+- Initial sender
     name (PI 61)
--   Final receiver
+- Final receiver
     name (PI 62)
 
 If no catalog entry corresponds to the restart request, Transfer CFT
@@ -355,11 +355,11 @@ commands (for a write transfer). In , use the Transfer priority parameter.
 As PeSIT only recognizes three priority levels, the following conversions
 are performed:
 
--   PRI > 128    
+- PRI > 128    
     PI 17 = 0 (high)
--   PRI = 128    
+- PRI = 128    
     PI 17 = 1 (medium)
--   PRI &lt; 128    
+- PRI &lt; 128    
     PI 17 = 2 (low)
 
 In server mode, the PI 17 value is
@@ -406,8 +406,8 @@ of the file data.
 The use of zero, one or several of the following compression
 techniques may be negotiated:
 
--   horizontal compression
--   vertical compression
+- horizontal compression
+- vertical compression
 
 In sending mode, Transfer CFT defines this field using the result
 of a logical AND between the compression levels specified by the SCOMP
@@ -433,10 +433,10 @@ command:
 
 | SPROUT value  | Access level  |
 | --- | --- |
-|  SROUT = SEND  |  Write access  |
-|  SROUT = RECV  |  Read access  |
-|  SROUT = BOTH  |  Mixed access  |
-|  SROUT = NONE  |  Transfer CFT refuses to perform the transfer. This value has no protocol reality, since no connection request is sent  |
+| SROUT = SEND  | Write access |
+| SROUT = RECV  | Read access |
+| SROUT = BOTH  | Mixed access |
+| SROUT = NONE  | Transfer CFT refuses to perform the transfer. This value has no protocol reality, since no connection request is sent |
 
 
 In server mode, Transfer CFT only
@@ -488,14 +488,14 @@ with the specifications of the PeSIT protocol.
 ### PI 31 Article format
 
 This parameter specifies the file article format. It is defined using
-the NRECFM parameter of the  SEND command, or specify the **Record format** in the send template (CFTSEND).  
+the NRECFM parameter of the SEND command, or specify the **Record format** in the send template (CFTSEND).  
 The following conversions are performed:
 
--   NRECFM = F    
+- NRECFM = F    
     PI 31 = 0x00 (fixed)
--   NRECFM = V    
+- NRECFM = V    
     PI 31 = 0x80 (variable)
--   NRECFM = U    
+- NRECFM = U    
     PI 31 = 0x80 (variable)
 
 <span id="PI_32_Article_length"></span>
@@ -527,7 +527,7 @@ This field can be used to associate a symbolic name to a transferred
 file.
 
 In sending mode, Transfer CFT defines
-this field using the **File name sent** parameter of the  of the send template (CFTSEND), or the (NFNAME) of the SEND command, to designate the name of the file on the receiver
+this field using the **File name sent** parameter of the of the send template (CFTSEND), or the (NFNAME) of the SEND command, to designate the name of the file on the receiver
 site.
 
 In reception mode, Transfer CFT recovers
@@ -670,8 +670,8 @@ variable.
 
 Format:
 
--   254 characters for Transfer CFT to a non-Transfer CFT.
--   512 characters when transferring between two Transfer CFTs.
+- 254 characters for Transfer CFT to a non-Transfer CFT.
+- 512 characters when transferring between two Transfer CFTs.
 
 This parameter allows a message to be conveyed from one user to another
 in the free field of the PeSIT service primitives. No control concerning

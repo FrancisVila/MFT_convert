@@ -35,11 +35,11 @@ If this parameter is not defined, the explicit value is set in the protocol defi
 Enter a local free-text description for the receive transfer. You can
 enter up to 160 alphanumeric characters. The content of this field:
 
--   is
+- is
     not analyzed or used during transfers
--   can
+- can
     be queried locally using the command LISTCAT CONTENT=FULL
--   is
+- is
     restored using the symbolic variable &COMMENT
 
 #### CFTACCNT, CFTEXIT, CFTIDF, CFTLOG, CFTAUTH, CDTCAT, CFTCOM, CFTDEST, CFTETB

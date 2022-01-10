@@ -9,11 +9,11 @@ but through an intermediate site B.
 
 **Example of a simple broadcast**
 
-<img src="/Images/TransferCFT/simple_broadcast.gif" width="457" height="306" />
+![]($1)
 
  
 
--   *1st phase*
+- *1st phase*
 
 A sends to B the list of partners (C1, C2, ... Cn)
 to be broadcast (LIST\_B):
@@ -24,7 +24,7 @@ This file is received by B as LIST, through the command:
 
 CFTRECV ID=..., FNAME=LIST
 
--   **2**
+- **2**
 
 A sends the file to be broadcast to a virtual partner
 C:
@@ -50,11 +50,11 @@ sites). Each production site designates a different broadcasting list.
 
 **Example of a customized broadcast**
 
-<img src="/Images/TransferCFT/customized_broadcast.gif" width="476" height="627" />
+![]($1)
 
  
 
--   *1st phase:*
+- *1st phase:*
 
 Each site Ap sends its broadcasting list to B:  
 SEND PART=ID\_B, FNAME=LIST, .....
@@ -63,7 +63,7 @@ The file LIST is received by B as LIST\_Ap, through
 the command:  
 CFTRECV ID=..., FNAME=LIST\_&PART
 
--   *2nd phase:*
+- *2nd phase:*
 
 Each site Ap sends a virtual partner C the file to
 be broadcast (as in case I). The file is sent on by B to the list associated
@@ -77,11 +77,11 @@ several distributing sites.
 
 **Example of a composite broadcast**
 
-<img src="/Images/TransferCFT/composite_broadcast.gif" width="540" height="797" />
+![]($1)
 
  
 
--   1st
+- 1st
     phase:  
     A broadcasts the broadcasting lists Cp1, Cp2, ... Cpn to the direct
     partners Bn:  
@@ -93,7 +93,7 @@ several distributing sites.
 The file LIST is received by each Bp as "LIST",
 through the command:CFTRECV ID=..., FNAME=LIST
 
--   2nd
+- 2nd
     phase:  
     A sends each virtual partner Cp the file to be broadcast:  
     SEND PART=ID\_C1, FNAME=FILE\_TO\_broad, .....  

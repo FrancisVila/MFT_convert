@@ -12,9 +12,9 @@
 
 Call direction possible through this network resource. Select from:
 
--   INOUT
+- INOUT
     (default value)
--   IN
--   OUT
+- IN
+- OUT
 
 [Return to Command index](../../)

@@ -17,14 +17,14 @@ LOG file are filtered.
 
 The possible values are:
 
--   FULL/ACTIVE: All messages
+- FULL/ACTIVE: All messages
     are printed out including STAT
--   BRIEF: The following
+- BRIEF: The following
     messages do not appear in the LOG (these are messages of the "system
-    information" category - see the  CFTLOG [OPERMSG](../opermsg) parameter):  
+    information" category - see the CFTLOG [OPERMSG](../opermsg) parameter):  
     CFTR12I &cmd Treated  
     CFTC07I PART=&part IDF=&idf IDT=&idt State=&state Deleted
--   Requester mode:  
+- Requester mode:  
     CFTT53I PART=&part IDF=&idf IDT=&idt Requester file selected  
     CFTT55I PART=&part IDF=&idf IDT=&idt Requester file opened  
     CFTT51I PART=&part IDF=&idf IDT=&idt Requester session
@@ -36,7 +36,7 @@ The possible values are:
 
 <!-- -->
 
--   Server mode:  
+- Server mode:  
     CFTT51I PART=&part IDF=&idf IDT=&idt Server session opened  
     CFTT53I PART=&part IDF=&idf IDT=&idt Server file created  
     CFTT55I PART=&part IDF=&idf IDT=&idt Server file opened  
@@ -48,12 +48,12 @@ All error or warning messages are printed out.
 For a transfer without incident, the LOG file will contain the following
 two messages:
 
--   Requester mode:  
+- Requester mode:  
     CFTT57I PART=&part IDF=&idf IDT=&idt Requester transfer
     started  
     CFTT58I PART=&part IDF=&idf IDT=&idt Requester transfer
     ended
--   Server mode:  
+- Server mode:  
     CFTT57I PART=&part IDF=&idf IDT=&idt Server transfer started  
     CFTT58I PART=&part IDF=&idf IDT=&idt Server transfer ended
 
@@ -68,16 +68,16 @@ Used to obtain part or all of the information of a catalog entry.
 
 The possible values are:
 
--   **BRIEF**: Displays the most basic, essential information
+- **BRIEF**: Displays the most basic, essential information
     concerning the selected transfers with one line per transfer
--   <span style="font-weight: bold;">EXTEND</span>: Displays information concerning
+- <span style="font-weight: bold;">EXTEND</span>: Displays information concerning
     security, exits and end-of-transfer procedures, as well as the BRIEF type
     information with one line per transfer
--   **COMMUT**: Displays a sort of BRIEF output, but contains some network-oriented details
--   <span style="font-weight: bold;">FULL</span>: Displays complete information concerning
+- **COMMUT**: Displays a sort of BRIEF output, but contains some network-oriented details
+- <span style="font-weight: bold;">FULL</span>: Displays complete information concerning
     each transfer
--   <span style="font-weight: bold;">DEBUG</span>: Displays the most complete output with additional information beyond the FULL content
--   **BLKNUM**: Displays the same information as BRIEF, but  the **Appli id** and **Appstate** columns  are replaced by the **blknum** column
+- <span style="font-weight: bold;">DEBUG</span>: Displays the most complete output with additional information beyond the FULL content
+- **BLKNUM**: Displays the same information as BRIEF, but the **Appli id** and **Appstate** columns are replaced by the **blknum** column
 
 #### LISTCOM
 
@@ -87,18 +87,18 @@ FULL }\]**
 Used to obtain part or all of the
 information of a catalog entry.
 
--   ACTIVE: Displays only communication records that are not empty
--   FULL: Displays all communication records
+- ACTIVE: Displays only communication records that are not empty
+- FULL: Displays all communication records
 
 <span class="bold_in_para">Example</span>
 
 ```
 LISTCOM CONTENT =FULL
  
-CFTU00I LISTCOM  _ Correct (content=full)
-CFTU00I SEND     _ Correct (part=paris,idf=txt,fname=pche.dv.mvtx4)
+CFTU00I LISTCOM _ Correct (content=full)
+CFTU00I SEND _ Correct (part=paris,idf=txt,fname=pche.dv.mvtx4)
 CFTU20I Communication file row number used: 00001137 on 20191212 Time 09331119
-CFTU00I RETURN   _ Correct (CODE=0)
+CFTU00I RETURN _ Correct (CODE=0)
  
 1 record(s) selected
 0 record(s) cleared
@@ -121,8 +121,8 @@ information.
 
 Level of content included in output:
 
--   BRIEF = Empty or default value parameters are omitted
--   FULL = All parameters are included
+- BRIEF = Empty or default value parameters are omitted
+- FULL = All parameters are included
 
 #### MQUERY (OBJECT=CACHE or SYSTEM)
 
@@ -153,11 +153,11 @@ listcat\]**
 
 Indicates the amount of information to display. Here, the options are listed in order of increasing details that are displayed.
 
--   PROPS: Delivers a simple property-like output
--   BRIEF: Displays basic information
+- PROPS: Delivers a simple property-like output
+- BRIEF: Displays basic information
     concerning the UCONF value (the set value and if this is a user or default value)
--   EXTRACT: Outputs information in format that you can directly enter in CFTUTIL
--   FULL: Displays values, descriptions, and most other parameter details
--   DEBUG: Most exhaustive level of information  (including some internal flags/information)
+- EXTRACT: Outputs information in format that you can directly enter in CFTUTIL
+- FULL: Displays values, descriptions, and most other parameter details
+- DEBUG: Most exhaustive level of information (including some internal flags/information)
 
 [Return to Command index](../../)

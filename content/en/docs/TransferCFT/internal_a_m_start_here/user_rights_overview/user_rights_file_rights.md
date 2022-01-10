@@ -4,7 +4,7 @@
     "weight": "240"
 }This section explains the user rights required for system users to [execute files actions,](#Set) which allows a system user to perform all file actions, for example accessing or opening a file. By default, on the sender side the user who initiates the SEND is used, and on the receiver side the USERID specified in the CFTRECV object is used. Additionally this topic describes user rights required to [execute post-transfer procedures.](#Set2)
 
-Before setting user rights, you must define special rights for the account on which  {{< TransferCFT/componentshortname  >}} is running.
+Before setting user rights, you must define special rights for the account on which {{< TransferCFT/componentshortname  >}} is running.
 
 <span id="Set"></span>
 
@@ -12,9 +12,9 @@ Before setting user rights, you must define special rights for the account on wh
 
 The following conventions apply to the table below describing permissions to act on files:
 
--   Transfer CFT user: This is the account that started Transfer CFT.
+- Transfer CFT user: This is the account that started Transfer CFT.
 
--   USERID, and optionally GROUPID : This is the account that owns the transfer.
+- USERID, and optionally GROUPID : This is the account that owns the transfer.
 
     -   Requester mode (SEND, RECV commands) is the account that executes the command.
     -   Server mode (Send and Receive templates) represents the value specified in USERID parameter.
@@ -23,47 +23,36 @@ The following conventions apply to the table below describing permissions to act
     >
     > When referring to USERID, the same rules apply when using the optional GROUPID parameter.
 
-<table>
-   <thead>
-      <tr>
-<th ><p>Operating</p>
-<p>System</p>         </th>
-<th  ><p>USERCTRL</p>         </th>
-<th ><p>Description</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td rowspan="2" >ALL OS         </td>
-         <td  >NO         </td>
-         <td >The Transfer CFT user, that is, the account that started {{< TransferCFT/componentlongname  >}}, performs all file actions. Default value.         </td>
-      </tr>
-      <tr>
-         <td  >YES         </td>
-         <td >The USERID performs all file actions.         </td>
-      </tr>
-   </tbody>
-</table>
+QQQ\_QQQ\_QQQ added phrase below
 
-1.  Set the CFTPARM USERCTRL option to YES (enabled).
-2.  Set the USERID for CFTRECV, for example domain\\user on Windows.
-3.  Check that the user referred to by the USERID can access the destination directory.
+The following table applies to all Operating Systems:
+
+
+| USERCTRL | Description |
+| --- | --- |
+| NO  | The Transfer CFT user, that is, the account that started {{< TransferCFT/componentlongname  >}}, performs all file actions. Default value.  |
+| YES  | The USERID performs all file actions.  |
+
+
+1. Set the CFTPARM USERCTRL option to YES (enabled).
+1. Set the USERID for CFTRECV, for example domain\\user on Windows.
+1. Check that the user referred to by the USERID can access the destination directory.
 
 ### Operating system specific USERCTRL tasks
 
-When you set USERCTRL to YES, the Transfer CFT server can access transferred files as if it were the transfer owner  (USERID).
+When you set USERCTRL to YES, the Transfer CFT server can access transferred files as if it were the transfer owner (USERID).
 
 **If you set USERCTRL to YES, you must customize per the appropriate operating system instructions.**
 
 Use the following OS-specific information to customize users.
 
--   [UNIX tasks](https://docs.axway.com/bundle/TransferCFT_38_InstallationGuide_unix_en_PDF/resource/TransferCFT_InstallationGuide_unix_en.pdf) -  Regardless of the USERCTRL setting, if cft.server.exec\_as\_user is set to YES you must perform the tasks described in the UNIX *Using system users (USERCTRL)* section.
--   [Windows tasks](https://docs.axway.com/bundle/TransferCFT_38_InstallationGuide_windows_en_PDF/resource/TransferCFT_InstallationGuide_windows_en.pdf)
--   [z/OS tasks](https://docs.axway.com/bundle/TransferCFT_38_InstallationGuide_mvs_en_PDF/resource/TransferCFT_InstallationGuide_mvs_en.pdf) - APF allows an installation to identify system or user programs that can use sensitive system functions. If the system does not have APF (Authorized Program Facility), the USERCTRL has no effect on the file actions. All file actions are done by the account that started Transfer CFT. To enable user control for file actions you require APF.
+- [UNIX tasks](https://docs.axway.com/bundle/TransferCFT_38_InstallationGuide_unix_en_PDF/resource/TransferCFT_InstallationGuide_unix_en.pdf) - Regardless of the USERCTRL setting, if cft.server.exec\_as\_user is set to YES you must perform the tasks described in the UNIX *Using system users (USERCTRL)* section.
+- [Windows tasks](https://docs.axway.com/bundle/TransferCFT_38_InstallationGuide_windows_en_PDF/resource/TransferCFT_InstallationGuide_windows_en.pdf)
+- [z/OS tasks](https://docs.axway.com/bundle/TransferCFT_38_InstallationGuide_mvs_en_PDF/resource/TransferCFT_InstallationGuide_mvs_en.pdf) - APF allows an installation to identify system or user programs that can use sensitive system functions. If the system does not have APF (Authorized Program Facility), the USERCTRL has no effect on the file actions. All file actions are done by the account that started Transfer CFT. To enable user control for file actions you require APF.
 
 <!-- -->
 
--   IBM i  - There are no specific tasks to enable system users on an IBM i platform.
+- IBM i - There are no specific tasks to enable system users on an IBM i platform.
 
 <span id="Set2"></span>
 
@@ -77,8 +66,8 @@ This feature allows system users to execute end-of-transfer procedures themselve
 
 To enable this feature:
 
-1.  Set `cft.server.exec_as_user` to `Yes`. Scripts are then executed as if  by the defined in [USERID](../../../c_intro_userinterfaces/command_summary/parameter_intro/userid).
-2.  Define the CFTRECV **USERID **option.
+1. Set `cft.server.exec_as_user` to `Yes`. Scripts are then executed as if by the defined in [USERID](../../../c_intro_userinterfaces/command_summary/parameter_intro/userid).
+1. Define the CFTRECV **USERID **option.
 
 > **Note**
 >
@@ -86,6 +75,6 @@ To enable this feature:
 
 Related topics
 
--   [About system users](../)
--   [User rights use case scenarios](../user_rights_security_scenarios)
--   [Recommendations and troubleshooting](../user_rights_tips)
+- [About system users](../)
+- [User rights use case scenarios](../user_rights_security_scenarios)
+- [Recommendations and troubleshooting](../user_rights_tips)

@@ -8,37 +8,37 @@ Internal access management is an out-of-the-box access management based on prede
 
 The supplied pre-defined roles are:
 
--   **Administrator**: Provides full user access
--   **Helpdesk**: Enables you to view the catalog and log
--   **Partner Manager**: Allows you to manage partners
--   **Designer**: Allows you to manage application flows
--   **Application**: Allows applications to request and manage transfers, and view the catalog
+- **Administrator**: Provides full user access
+- **Helpdesk**: Enables you to view the catalog and log
+- **Partner Manager**: Allows you to manage partners
+- **Designer**: Allows you to manage application flows
+- **Application**: Allows applications to request and manage transfers, and view the catalog
 
 Additionally you can:
 
--   **Custom**: Create new roles
+- **Custom**: Create new roles
 
-Please refer to the [*Transfer CFT *{{< TransferCFT/releasenumber  >}} *Security Guide*](https://docs.axway.com/bundle/TransferCFT_36_SecurityGuide_allOS_en_HTML5/page/Content/security_guide/predefined_privileges.htm) for a complete list of privileges and roles. Login is required. Additionally, the Internal AM use cases page describes three use cases and their configuration.
+Please refer to the [*Transfer CFT *{{< TransferCFT/releasenumber  >}} *Security Guide*](https://docs.axway.com/bundle/TransferCFT_36_SecurityGuide_allOS_en_HTML5/page/Content/security_guide/predefined_privileges.htm) for a complete list of privileges and roles. Login is required. Additionally, the <a href="" class="MCXref xref"> </a> page describes three use cases and their configuration.
 
 ## Configuring internal access management
 
 Set the specific group database parameter (see the table below for OS specifics) using CFTUTIL:
 
-uconfset id=am.internal.group\_database,value=\[ system | safClass | file | xfbadm  \]
+uconfset id=am.internal.group\_database,value=\[ system | safClass | file | xfbadm \]
 
-Use the parameters and descriptions in the **AM Parameters** table (just below Step 3) to help you customize  the internal access management roles. For example, to assign the administrator role to the "admin" group:
+Use the parameters and descriptions in the **AM Parameters** table (just below Step 3) to help you customize the internal access management roles. For example, to assign the administrator role to the "admin" group:
 
 
 | AM Parameters  | Default  | Description  |
 | --- | --- | --- |
-| am.internal.group_database  |  file (z/OS)<br/>system (all other platforms)  |  Group database where group members are defined.<br/> • system  (UNIX,  Windows, and IBM i): the groups are defined in the OS group database (Unix, Windows, IBM i - see <a href="../../cft_intro_install/about_this_document_ibmi/install_intro_ibmi/access-managment_ibmi">security base</a>)<br/> • system (z/OS only): the service 'IRRSEQ00' is used to recall the user's groups from RACF, for example: <li> USER001  ADMIN OPERATOR PARTNER DESIGNER TRANSFER <br/> • USER002  DESIGNER </li> <br/> • safClass (z/OS only): the resources are defined in the SAF (System Authorization Facility) where Transfer CFT maps the groups  to resources - see the *<a href="../../cft_intro_install/about_this_document_zos">*Transfer CFT z/OS Installation and Operation Guide*</a>* for details <br/> • file (z/OS): a variable file containing a users list and a groups list<br/> • xfbadm (UNIX, HP NonStop): the groups are defined in the xfbadm database; see  Transfer CFT control utilities</li>  |
-| am.internal.group_database.fname  |   |  If you set am.internal.group_database=file, you must define this file name, which is a variable file containing the groups associated with each user.<br/>For example:<br/> • USER001  group01 group02 group04<br/> • USER002  group04 group05<br/>Where the groups are mapped as shown in the example <a href="#Mapping">mapping</a> table below.  |
-| am.internal.role.admin  |   |  Admin role and groups mapping. This role enables you to perform all administrative tasks.<br/> • List of groups (blank separator)</li>  |
-| am.internal.role.helpdesk  |   |  Help Desk role and groups mapping. This role enables you to view the log, transfers and configuration.<br/> • List of groups (blank separator)</li>  |
-| am.internal.role.partnermanager  |   |  Partner Manager role and groups mapping. This role enables you to create and manage partner.<br/> • List of groups (blank separator)</li>  |
-| am.internal.role.designer  |   |  Designer role and groups mapping. This role enables you to manage flows.<br/> • List of groups (blank separator)</li>  |
-| am.internal.role.application  |   |  Application role and groups mapping. This role enables application to send transfers.<br/> • List of groups (blank separator)</li>  |
-| am.internal.persistence_timeout  | 300  |  Delay in seconds between updating the list of group that a user belongs to.  |
+| am.internal.group_database  | file (z/OS)<br/> system (all other platforms) | Group database where group members are defined.<br/> • system (UNIX, Windows, and IBM i): the groups are defined in the OS group database (Unix, Windows, IBM i - see <a href="../../cft_intro_install/about_this_document_ibmi/install_intro_ibmi/access-managment_ibmi">security base</a>)<br/> • system (z/OS only): the service 'IRRSEQ00' is used to recall the user's groups from RACF, for example: • USER001 ADMIN OPERATOR PARTNER DESIGNER TRANSFER<br/><br/> • USER002 DESIGNER<br/><br/> <br/> • safClass (z/OS only): the resources are defined in the SAF (System Authorization Facility) where Transfer CFT maps the groups to resources - see the *<a href="../../cft_intro_install/about_this_document_zos">*Transfer CFT z/OS Installation and Operation Guide*</a>* for details<br/><br/> • file (z/OS): a variable file containing a users list and a groups list<br/> • xfbadm (UNIX, HP NonStop): the groups are defined in the xfbadm database; see <a href="" >Transfer CFT control utilities</a> |
+| am.internal.group_database.fname  |   | If you set am.internal.group_database=file, you must define this file name, which is a variable file containing the groups associated with each user.<br/> For example:<br/> • USER001 group01 group02 group04<br/> • USER002 group04 group05<br/> Where the groups are mapped as shown in the example <a href="#Mapping">mapping</a> table below. |
+| am.internal.role.admin  |   | Admin role and groups mapping. This role enables you to perform all administrative tasks.<br/> • List of groups (blank separator) |
+| am.internal.role.helpdesk  |   | Help Desk role and groups mapping. This role enables you to view the log, transfers and configuration.<br/> • List of groups (blank separator) |
+| am.internal.role.partnermanager  |   | Partner Manager role and groups mapping. This role enables you to create and manage partner.<br/> • List of groups (blank separator) |
+| am.internal.role.designer  |   | Designer role and groups mapping. This role enables you to manage flows.<br/> • List of groups (blank separator) |
+| am.internal.role.application  |   | Application role and groups mapping. This role enables application to send transfers.<br/> • List of groups (blank separator) |
+| am.internal.persistence_timeout  | 300  | Delay in seconds between updating the list of group that a user belongs to. |
 
 
 Set the access management type:
@@ -51,7 +51,7 @@ uconfset id=am.type,value=internal
 
 ## Mapping the group to predefined roles
 
-To use the feature you will need to map the list of groups in the database to the  {{< TransferCFT/componentshortname  >}} predefined roles. Use the following information as a basis for your mapping. You can enter these values either using command line or in the  {{< TransferCFT/componentshortname  >}} UI.
+To use the feature you will need to map the list of groups in the database to the {{< TransferCFT/componentshortname  >}} predefined roles. Use the following information as a basis for your mapping. You can enter these values either using command line or in the {{< TransferCFT/componentshortname  >}} UI.
 
 
 | Parameter  | Means the user in this group will have the role...  |
@@ -65,7 +65,7 @@ To use the feature you will need to map the list of groups in the database to th
 
 ## Creating or modifying roles
 
-In addition to the out-of-the box roles, you can create new roles  or modify existing roles using either the {{< TransferCFT/transfercftname  >}} user interface or a {{< TransferCFT/transfercftname  >}} configuration file. You can use new or modified roles on their own or in combination with predefined roles. Please refer to  Internal AM use cases for role-based use case scenarios.
+In addition to the out-of-the box roles, you can create new roles or modify existing roles using either the {{< TransferCFT/transfercftname  >}} user interface or a {{< TransferCFT/transfercftname  >}} configuration file. You can use new or modified roles on their own or in combination with predefined roles. Please refer to <a href="" class="MCXref xref"> </a> for role-based use case scenarios.
 
 > **Note**
 >
@@ -90,15 +90,15 @@ CFTROLE ID='HELPDESK', ...
 CFTROLE ID='APPLICATION', ...
 ```
 
-Here, the new HELPDESK and APPLICATION roles override the predefined  HELPDESK and APPLICATION roles. However, the predefined ADMIN, PARTNERMANAGER, and DESIGNER roles are still used since you did not create new roles with these same names.
+Here, the new HELPDESK and APPLICATION roles override the predefined HELPDESK and APPLICATION roles. However, the predefined ADMIN, PARTNERMANAGER, and DESIGNER roles are still used since you did not create new roles with these same names.
 
 ## Internal access management use cases
 
 This section describes three configuration scenarios when using <a href="#" class="selected">internal access management</a> with roles and privileges. Use cases include:
 
--   Predefined roles and privileges without the CFTPRIV and CFTROLE objects
--   Customized roles and privileges  with the CFTPRIV and CFTROLE objects
--   Mixed-use of both predefined and custom CFTPRIV and CFTROLE objects
+- Predefined roles and privileges without the CFTPRIV and CFTROLE objects
+- Customized roles and privileges with the CFTPRIV and CFTROLE objects
+- Mixed-use of both predefined and custom CFTPRIV and CFTROLE objects
 
 In each scenario, there is a **user1** that belongs to **group1** and a **user2** that belongs to **group2**.
 
@@ -137,10 +137,10 @@ CFTU24W LISTPARM _ Warning ( Parameters no record selected / file empty)
 
 **Results**
 
--   User1 has the predefined Transfer CFT Administrator role
--   User2 has the predefined Transfer CFT Application role
+- User1 has the predefined Transfer CFT Administrator role
+- User2 has the predefined Transfer CFT Application role
 
-Example 2: Custom roles and privileges  using only CFTPRIV and CFTROLE objects
+Example 2: Custom roles and privileges using only CFTPRIV and CFTROLE objects
 
 If you configure UCONF as follows:
 
@@ -186,8 +186,8 @@ ROLE TRANSFER CFT PARTNERMANAGER
 
 **Results**
 
--   User1 has the custom Transfer CFT Administrator role defined in CFTROLE id='TRANSFER CFT ADMINISTRATOR',aliases=group1
--   User2 has the custom Transfer CFT Application role defined in CFTROLE id='TRANSFER CFT APPLICATION',aliases=group2
+- User1 has the custom Transfer CFT Administrator role defined in CFTROLE id='TRANSFER CFT ADMINISTRATOR',aliases=group1
+- User2 has the custom Transfer CFT Application role defined in CFTROLE id='TRANSFER CFT APPLICATION',aliases=group2
 
 Example 3: Uses both predefined and customized CFTPRIV and CFTROLE objects
 
@@ -237,5 +237,5 @@ ROLE TRANSFER CFT PARTNERMANAGER
 
 **Results**
 
--   User1 has the predefined Transfer CFT Administrator role
--   User2 has the custom Transfer CFT Application role defined in CFTROLE id='TRANSFER CFT APPLICATION',aliases=group2
+- User1 has the predefined Transfer CFT Administrator role
+- User2 has the custom Transfer CFT Application role defined in CFTROLE id='TRANSFER CFT APPLICATION',aliases=group2

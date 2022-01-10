@@ -6,15 +6,15 @@
 
 This chapter describes how to operate Transfer CFT, and is comprised of the following sections:
 
--   [Predefined commands](operating_cft/predefined_commands)
--   [CFTUTIL commands](operating_cft/submit_cftutil_commands)
--   [Source files interpretation](operating_cft/interpret_source_member)
--   [Start/stop the UI server](start_copilot_server)
--   [Run Transfer CFT](operating_cft/running_transfer_cft) jobs:
-    -   Query Transfer CFT messages
+- [Predefined commands](operating_cft/predefined_commands)
+- [CFTUTIL commands](operating_cft/submit_cftutil_commands)
+- [Source files interpretation](operating_cft/interpret_source_member)
+- [Start/stop the UI server](start_copilot_server)
+- [Run Transfer CFT](operating_cft/running_transfer_cft) jobs:
+    -   [Query Transfer CFT messages]()
     -   [Start Transfer CFT](operating_cft/start_cft)
     -   [Submit a transfer command](submit_transfer_command)
--   [Transfer CFT shutdown](operating_cft/shut_cft)
+- [Transfer CFT shutdown](operating_cft/shut_cft)
 
 <span id="Transfer"></span>
 
@@ -22,12 +22,12 @@ This chapter describes how to operate Transfer CFT, and is comprised of the foll
 
 Other than during installation, which runs the Transfer CFT manager automatically, you can enter one of the following commands to start the manager:
 
--   CFT
--   CALL CFTMENU
+- CFT
+- CALL CFTMENU
 
 ## Create Transfer CFT system object
 
-Now that you have installed your {{< TransferCFT/hflongproductname  >}}, you will want to recreate Transfer CFT objects. Proceed to the Transfer CFT menu and  press 4 to access the following options:
+Now that you have installed your {{< TransferCFT/hflongproductname  >}}, you will want to recreate Transfer CFT objects. Proceed to the Transfer CFT menu and press 4 to access the following options:
 
 1\. Create job queue.
 
@@ -39,11 +39,11 @@ Create a JOBD object to launch Transfer CFT jobs using the default values. This 
 
 3\. Create subsystem.
 
-Create an SBS object to launch Transfer CFT jobs. This creates a subsytem  with a storage size of 250MB.
+Create an SBS object to launch Transfer CFT jobs. This creates a subsytem with a storage size of 250MB.
 
 4\. Add job-queue entry.
 
-Add a  job queue entry to the subsystem that you created in step 3 to link it with the JOBQ that you created in step 1. The maximum active job is unlimited.
+Add a job queue entry to the subsystem that you created in step 3 to link it with the JOBQ that you created in step 1. The maximum active job is unlimited.
 
 5\. Create class.
 
@@ -55,7 +55,7 @@ Add a routing entry to the subsytem created in step 3 to link it with the class 
 
 7\. Add communication entry.
 
-Add a communication entry to link the subsystem created in step 3 with the JOBD created in step 2. This uses the DFTUSR(CFT) ??MODE(\*ANY)  ??MAXACT(\*NOMAX) options.
+Add a communication entry to link the subsystem created in step 3 with the JOBD created in step 2. This uses the DFTUSR(CFT) ??MODE(\*ANY) ??MAXACT(\*NOMAX) options.
 
 8\. Change profile.
 
@@ -63,7 +63,7 @@ Change the user profile of the current user to specify that the user now uses th
 
 ## Verify your installation
 
-See the installation  if you encounter problems with starting {{< TransferCFT/componentlongname  >}}.
+See the installation if you encounter problems with starting {{< TransferCFT/componentlongname  >}}.
 
 ### Installed directories
 
@@ -71,8 +71,8 @@ The act of installing Transfer CFT creates a library that contains product binar
 
 > **Note**
 >
-> By default, this  library is called CFTPGM.
+> By default, this library is called CFTPGM.
 
 ## Register with
 
-If you intend to implement  , please refer to the {{< TransferCFT/componentlongname  >}} *User's Guide &gt; [*Register with*](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.
+If you intend to implement , please refer to the {{< TransferCFT/componentlongname  >}} *User's Guide &gt; [*Register with*](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.

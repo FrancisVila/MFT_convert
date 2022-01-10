@@ -16,45 +16,26 @@ of the calling partner.
 
 ### Partner information fields
 
-```
 
-Field 
+| Field  | Explanation  |
+| --- | --- |
+| ptype  | Partner type  |
+| nrpart  | Remote partner name  |
+| nrpassw  | Remote partner password  |
+| newnrpw  | Remote partner new password  |
+| nspart  | Local name  |
+| nspassw  | Local password  |
+| prot  | Protocol type  |
+| prof  | Profile if PESIT protocol  |
+| sap  | Remote Sap (Service Access Point)  |
+| imaxtime  | Maximum incoming call time (HHMMSSCC) |
+| imintime  | Minimum incoming call time (HHMMSSCC) |
+| ntype  | Network type  |
+| addr  | Remote partner address  |
+| udata  | User data  |
+| pcvin  | Incoming reverse charge call |
+| gfa  | Closed subscriber group number  |
 
-Explanation 
-
-ptype 
-Partner type 
-nrpart 
-Remote partner name 
-nrpassw 
-Remote partner password 
-newnrpw 
-Remote partner new password 
-nspart 
-Local name 
-nspassw 
-Local password 
-prot 
-Protocol type 
-prof 
-Profile if PESIT protocol 
-sap 
-Remote Sap (Service Access Point) 
-imaxtime 
-Maximum incoming call time (HHMMSSCC)
-imintime 
-Minimum incoming call time (HHMMSSCC)
-ntype 
-Network type 
-addr 
-Remote partner address 
-udata 
-User data 
-pcvin 
-Incoming reverse charge call
-gfa 
-Closed subscriber group number 
-```
 
 When the user function is called, if the partner name **part**
 is empty, so that the partner local identifier is unknown to Transfer
@@ -68,7 +49,7 @@ field may be defined to inform the calling partner of the cause of the
 refusal.  
 The content of the diag field appears with the appropriate error message
 if the return code is not 0 and 1.  
-If the msg field is defined, its content is sent to the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> standard
+If the msg field is defined, its content is sent to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> standard
 output.
 
 If the return code value is 0 or 1, the user can modify the fields indicated
@@ -76,47 +57,28 @@ in the following System information field table.
 
 ### System information fields
 
-```
 
-Field 
+| Field  | Explanation  |
+| --- | --- |
+| syst  | System  |
+| code  | Code:<br/> • A: ASCII<br/> • E: EBCDIC |
+| open  | Obsolete parameter |
+| commut  | Store and forward indicator  |
+| nspart  | Local name  |
+| nspassw  | Local password  |
+| part  | Partner local identifier  |
+| group  | Group identifier  |
+| sauth  | File send authorization list identifier  |
+| rauth  | File receive authorization list identifier  |
+| xlate  | Transcoding table identifier  |
+| idf  | Partner file identifier  |
 
-Explanation 
-
-syst 
-System 
-code 
-Code:
-
--   A: ASCII
--   E: EBCDIC
-
-open 
-Obsolete parameter
-commut 
-Store and forward indicator 
-nspart 
-Local name 
-nspassw 
-Local password 
-part 
-Partner local identifier 
-group 
-Group identifier 
-sauth 
-File send authorization list identifier 
-rauth 
-File receive authorization list identifier 
-xlate 
-Transcoding table identifier 
-idf 
-Partner file identifier 
-```
 
 If the part field of the communication
 structure is empty on return from the user function, the partner local
 identifier UNDEFPTN appears in
-the catalog and on the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> standard output.  
+the catalog and on the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> standard output.  
 If the part field has been modified
-and if the new identifier is located in the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> partner base,
-  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> sets the ret1 field to 9 (processing error) and the diag
+and if the new identifier is located in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> partner base,
+<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> sets the ret1 field to 9 (processing error) and the diag
 field to "PTNEXIST".

@@ -11,15 +11,15 @@
 \[ TLVWARN = { 0...100 }
 \]
 
-Command file usage limit before issuing an alert. Overall, the TLV parameters enable  {{< TransferCFT/componentshortname  >}} to
+Command file usage limit before issuing an alert. Overall, the TLV parameters enable {{< TransferCFT/componentshortname  >}} to
 issue alerts when a critical CAT or COM threshold is reached based on a percentage of the catalog or communication media being filled, where 0% indicates empty and 100% indicates full.
 
 This
 alert generates 2 actions:·
 
--   Sends a message
+- Sends a message
     to the LOG
--   Executes
+- Executes
     a batch to react to the alert, the [TLVWEXEC](../tlvcexec)
     parameter
 
@@ -32,9 +32,9 @@ The catalog or communication media usage limit before issuing an alert is expres
 When this limit is reached, the [TLVWEXEC](../tlvwexec)
 is executed.
 
--   CFTCAT: Default 80
--   CFTCOM FILE: Default 70
--   0 means that no
+- CFTCAT: Default 80
+- CFTCOM FILE: Default 70
+- 0 means that no
     alert is issued
 
 <!-- -->

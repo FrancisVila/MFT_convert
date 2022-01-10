@@ -6,29 +6,29 @@
 Transfer CFT. This topic begins
 with an overview of the OFTP file transfer protocol describing:
 
--   OFTP
+- OFTP
     (Odette) features
--   Network
+- Network
     message structure
 
 This section is comprised of the topics listed in the table below, which
 describe the following OFTP (ODETTE) functions in Transfer CFT and how
 to configure them:
 
--   File transmission
+- File transmission
     and reception
--   Transfer restart
--   Data compression
--   Change direction (CD)
+- Transfer restart
+- Data compression
+- Change direction (CD)
 
 
 | Topic  | Describes...  |
 | --- | --- |
-|  <a href="configuring_odette">Configuring OFTP</a>  |  The Transfer CFT objects that you must configure to use the OFTP (ODETTE) protocol.  |
-|  <a href="cftpart_parameters">Configuring partners</a>  |  The Transfer CFT parameters that you must define for a partner when using the OFTP protocol.  |
-|  <a href="processing_data">Processing data</a>  |  The compression functions in Transfer CFT when using the OFTP (ODETTE) protocol.  |
-|  <a href="submitting_a_transfer_request">Submitting a transfer request</a>  |  The steps that enable you to submit a transfer request.  |
-|  <a href="receiving_transfers">Receiving transfers</a>  |  How to configure the OFTP (ODETTE) environment you must define the transfer environment in the RECV object to receive a request.  |
+| <a href="configuring_odette">Configuring OFTP</a> | The Transfer CFT objects that you must configure to use the OFTP (ODETTE) protocol. |
+| <a href="cftpart_parameters">Configuring partners</a> | The Transfer CFT parameters that you must define for a partner when using the OFTP protocol. |
+| <a href="processing_data">Processing data</a> | The compression functions in Transfer CFT when using the OFTP (ODETTE) protocol. |
+| <a href="submitting_a_transfer_request">Submitting a transfer request</a> | The steps that enable you to submit a transfer request. |
+| <a href="receiving_transfers">Receiving transfers</a> | How to configure the OFTP (ODETTE) environment you must define the transfer environment in the RECV object to receive a request. |
 
 
 <span id="About_OFTP"></span><span id="OFTP__ODETTE__features"></span>
@@ -52,15 +52,15 @@ procedures.
 
 The general characteristics of the OFTP (ODETTE) protocol are as follows:
 
--   Two-way exchanges:
+- Two-way exchanges:
     transmission and reception
--   Transfer retry
+- Transfer retry
     in the event of an incident
--   Data compression,
+- Data compression,
     character compression
--   Change direction
+- Change direction
     possibility between partners
--   File reception
+- File reception
     acknowledgement possibility
 
 #### Specific features
@@ -68,11 +68,11 @@ The general characteristics of the OFTP (ODETTE) protocol are as follows:
 The particular characteristics of the OFTP (ODETTE) protocol are as
 follows:
 
--   Only files supported
+- Only files supported
     by the protocol have a sequential organization
--   Sent files are
+- Sent files are
     identified by their name and the transfer date and time
--   The protocol supports
+- The protocol supports
     four record formats:
     -   F
         for fixed format: all the file records have the same size
@@ -90,12 +90,12 @@ follows:
 These format concepts, in the protocol meaning of the term, correspond
 to:
 
--   Various files types
+- Various files types
     NTYPE
--   Record lengths
+- Record lengths
     NLRECL
--   File formats NRECFM
--   Data codes NCODE
+- File formats NRECFM
+- Data codes NCODE
 
 <span id="Network_message_structure"></span>
 

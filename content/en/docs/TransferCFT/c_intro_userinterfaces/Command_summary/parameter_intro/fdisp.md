@@ -15,9 +15,9 @@
 
 File sharing option:
 
--   SHR: Shared access, which means that
+- SHR: Shared access, which means that
     a file can be transferred at the same time for two partners.
--   CHECK:
+- CHECK:
     If the file is modified during a transfer, the transfer is aborted.
 
 > **Note**
@@ -39,12 +39,12 @@ File sharing option:
 }\]
 
 Presence check indicator of the receiver file used to determine the
-action of the  {{< TransferCFT/componentshortname  >}}:
+action of the {{< TransferCFT/componentshortname  >}}:
 
--   NEW: The file must be created by Transfer
+- NEW: The file must be created by Transfer
     CFT. The transfer is refused if this file already exists
--   OLD: The file must already exist.
--   BOTH: If the file does not exist, it
+- OLD: The file must already exist.
+- BOTH: If the file does not exist, it
     is created.
 
 <span id="fdisp_CFTSEND"></span>
@@ -63,7 +63,7 @@ The following table shows the combined effect of the FDISP and FACTION parameter
 | both  | delete  | If no file exists, the file is created. If file exists it is deleted and recreated (regardless of if it is empty or not).  |
 | both  | erase  | If no file exists, the file is created. If file exists it is overwritten (no matter if it is empty or not).  |
 | both  | verify  | If no file exists, the file is created. If file exists and it is not empty, the transfer is aborted. If file exists but it is empty, the file is overwritten.  |
-| new  | verify  | If no file exists, the file is created. If file exists the transfer is aborted (regardless of  if it is empty or not).  |
+| new  | verify  | If no file exists, the file is created. If file exists the transfer is aborted (regardless of if it is empty or not).  |
 | old  | delete  | If no file exists, the transfer is aborted. If file exists the file is deleted and recreated (regardless of if it is empty or not).  |
 | old  | erase  | If no file exists, the transfer is aborted. If file exists the file is overwritten (regardless of if it is empty or not).  |
 | old  | verify  | If no file exists, the transfer is aborted. If file exists and it is not empty, the transfer is aborted. If file exists but it is empty, the file is overwritten.  |

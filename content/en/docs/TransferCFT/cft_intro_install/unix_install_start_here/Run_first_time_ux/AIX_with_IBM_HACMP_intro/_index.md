@@ -11,12 +11,12 @@ system.
 
 System:
 
--   AIX 5.3 and higher
+- AIX 5.3 and higher
 
 Software:
 
--   HACMP 4.4.1
--   Transfer CFT
+- HACMP 4.4.1
+- Transfer CFT
 
 ### Preparing the environment
 
@@ -46,12 +46,12 @@ the scripts, the files to be sent, and the files to be received.
 The scripts cftstartFailover and cftstopFailover are copied
 to the shared filesystem:
 
--   cftstartFailover:This script creates a backup and recreates
+- cftstartFailover:This script creates a backup and recreates
     the logs and accounting files. It then restarts Transfer CFT.
 
 <!-- -->
 
--   cftstopFailover:This script tries a normal Transfer CFT stop procedure,
+- cftstopFailover:This script tries a normal Transfer CFT stop procedure,
     then cleans the environment.
 
 These scripts are available in the topic Transfer

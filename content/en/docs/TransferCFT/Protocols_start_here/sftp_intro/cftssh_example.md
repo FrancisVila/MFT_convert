@@ -10,7 +10,7 @@ Put command
 
 ```
 CFTPART id=app1,nspart=login,nspassw=passw,prot=sftp,...
-CFTTCP  id=app1,host=host
+CFTTCP id=app1,host=host
 send part=app1, idf=flow01, fname=localfiletosend, nfname=remotefile
 ```
 
@@ -125,7 +125,7 @@ send part=ST_SFTP,idf=st_flow,fname=localfiletosend,nfname=remotefile
 
 ## Transfer CFT server with multiple client keys
 
-In this use case, the clients are using the key authentication method where the key is different for each client. This requires a separate partner definition  and dedicated SSH profile for each user.
+In this use case, the clients are using the key authentication method where the key is different for each client. This requires a separate partner definition and dedicated SSH profile for each user.
 
 On the Transfer CFT server side
 
@@ -158,15 +158,15 @@ This example uses two {{< TransferCFT/componentlongname  >}} applications in , w
 
 On the Source
 
-*File properties &gt; File encoding*   &gt; File Type= Text , Encoding = ASCII , Transcoding = EBCDIC
+*File properties &gt; File encoding* &gt; File Type= Text , Encoding = ASCII , Transcoding = EBCDIC
 
-In the SFTP protocol  
+In the SFTP protocol
 
 *SFTP properties &gt;* Transfer mode = ASCII
 
 On the Target
 
-*File properties &gt; File encoding*   &gt; File Type= Text , Encoding = EBCDIC , Transcoding = EBCDIC
+*File properties &gt; File encoding* &gt; File Type= Text , Encoding = EBCDIC , Transcoding = EBCDIC
 
 Related topics
 

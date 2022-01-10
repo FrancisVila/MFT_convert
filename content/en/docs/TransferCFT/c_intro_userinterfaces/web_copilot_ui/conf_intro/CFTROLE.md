@@ -6,18 +6,18 @@
 
 ### Using CFTROLE
 
-A role is a  general profile that can be associated with a user. A role is based on one or more privileges, and a privilege is based on a resource. There are two types of roles: predefined and user-defined. Predefined roles are available by default to assign to users.
+A role is a general profile that can be associated with a user. A role is based on one or more privileges, and a privilege is based on a resource. There are two types of roles: predefined and user-defined. Predefined roles are available by default to assign to users.
 
-You can assign users  to one or more roles. Typically, users with multiple roles have more privileges than users with fewer roles.
+You can assign users to one or more roles. Typically, users with multiple roles have more privileges than users with fewer roles.
 
 Examples of roles can be ADMINISTRATOR, PARTNER MANAGER, IT MANAGER, and so on.
 
 
-|  Field  |  Type  |  Comment  |
+| Field | Type | Comment |
 | --- | --- | --- |
-|  id  |  String32  |  Role identifier  |
-|  comment  |  String80  |  Comment  |
-|  privs[]  |  List of String32  |  List of privileges associated to this role (1 to 128)  |
+| id | String32 | Role identifier |
+| comment | String80 | Comment |
+| privs[] | List of String32 | List of privileges associated to this role (1 to 128) |
 
 
 Example of CFTROLE in a configuration file:

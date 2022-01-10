@@ -16,15 +16,15 @@ For instance, with the following base:
 
 ```
 Certificates:
-Id.            Root          iNum  T S C K E          Exp.Date     Delivered to     Delivered by
+Id.   Root  iNum  T S C K E          Exp.Date   Delivered to    Delivered by
 ------------ ------------ ---- - - - - - ---------- ------------- ------------
-INTER         ROOT                  I A x                                    22/07/2029   2k_l1_ca           2k_root
-ROOT            ROOT                 R A x                     22/07/2029   2k_root              2k_root
-USER         ROOT                     U A x x                               22/07/2029   2k_l1_user1      2k_root
+INTER  ROOT        I A x                                22/07/2029   2k_l1_ca       2k_root
+ROOT    ROOT      R A x                  22/07/2029   2k_root        2k_root
+USER   ROOT        U A x x                             22/07/2029   2k_l1_user1    2k_root
 Keys:
-Id.                                                          S K Bits
+Id.                             S K Bits
 -------------------------------- - - ----
-PRIV                                                       A x 2048
+PRIV                            A x 2048
 ```
 
 By default, PKIEXT uses INAME/IKNAME to create the PKICER/PKIKEY objects:
@@ -35,12 +35,12 @@ PKIUTIL PKIEXT FOUT=FOO.cmd
 
 This exports a `FOO.cmd` file, where additional files are created containing the following data:
 
--   ROOT0001: the ROOT DER certificate
--   USER0002: the INTER DER certificate
--   USER0003: the USER DER certificate
--   USERK003: the USER private key in KPRIV format
--   KPRIV004: the PRIV private key in KPRIV format
--   KPUB0004: the PRIV public key in ssh-rsa format
+- ROOT0001: the ROOT DER certificate
+- USER0002: the INTER DER certificate
+- USER0003: the USER DER certificate
+- USERK003: the USER private key in KPRIV format
+- KPRIV004: the PRIV private key in KPRIV format
+- KPUB0004: the PRIV public key in ssh-rsa format
 
 By contrast, the Base64 option uses the IDATA/IKDATA parameters to extract a single `BAR.cmd` file instead of files.
 

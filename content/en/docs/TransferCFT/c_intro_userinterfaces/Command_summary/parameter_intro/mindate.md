@@ -19,9 +19,9 @@ Minimum transfer validity date.
 
 The value ‘date’ may be expressed:
 
--   Explicitly
+- Explicitly
     (absolute date)
--   Or,
+- Or,
     in RECV or SEND commands, relative to the date the command is taken into
     account. This value is then expressed as a number of days.
 

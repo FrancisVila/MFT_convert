@@ -5,10 +5,10 @@
 }This section describes the following two types of transfer functions, which you can perform in
 requester mode:
 
--   [Broadcast](#Broadcasting_mode):
+- [Broadcast](#Broadcasting_mode):
     Send one or more files or messages to several partners by activating a
     SEND command
--   [Collect](#Collecting):
+- [Collect](#Collecting):
     Receive one or more files or messages from several partners by activating
     a single RECV command
 
@@ -31,7 +31,7 @@ on the basis of a generic example.
 
 #### Define a broadcasting list
 
-<img src="/Images/TransferCFT/Implement_broadcasting.gif" width="724" height="325" />
+![]($1)
 
 The broadcasting list can be described by indicating the identifiers
 of the partners in this list, in the PART parameter of the CFTDEST command.
@@ -39,7 +39,7 @@ This limits the number of identifiers.
 
 This diagram represents a SEND command for "mygroup", which is a collection of applications as defined in , or CFTPART objects if defined in Transfer CFT.
 
-<img src="/Images/TransferCFT/temp_broadcast.png" class="mediumWidth" />
+![]($1)
 
 Another method involves defining these identifiers in a file (using an fname). The number
 of identifiers is then not limited. When using this method, if you change the runtime or import the configuration to a new environment you must remember to copy this file to the new runtime. The name of this file is defined in
@@ -60,16 +60,16 @@ To broadcast a file called X, with N partners, a SEND
 PART=DEST, IDF=ID\_EM, FNAME=X command generates N+1 transfer entries in
 the catalog that corresponds to:
 
--   An entry for each
+- An entry for each
     effective transfer (i.e. N entries)
--   And a generic virtual
+- And a generic virtual
     entry, which never leads to an effective transfer, used locally for broadcasting
     management
 
 This virtual transfer is identified by a DIAGP code equal to DIFFUS,
 on querying the catalog. It is in the K state.
 
-The associated post processing procedure  is only executed when
+The associated post processing procedure is only executed when
 all the transfers are correctly completed (DIFFUS entry changes to the
 T or X state, depending on the compat mode).
 
@@ -81,22 +81,22 @@ T or X state, depending on the compat mode).
 The post processing procedure in the case of an error is executed for each transfer in the same
 way as for normal transfers.
 
-To broadcast a group of P files  if N partners are involved, a SEND PART =
+To broadcast a group of P files if N partners are involved, a SEND PART =
 DEST, IDF = ID\_EM, FNAME = &lt;file\_symb>GROUP command generates N (P+1) +1 transfer
 entries in the catalog corresponding to:
 
--   An entry for each
+- An entry for each
     effective transfer (i.e. N\*P entries)
--   A generic virtual
+- A generic virtual
     entry which never leads to an effective transfer, used locally for broadcasting
     management
--   Where &lt;file\_symb> is the OS appropriate symbol (# or @)
+- Where &lt;file\_symb> is the OS appropriate symbol (# or @)
 
 This virtual transfer is identified by a **DIAGP**
 code equal to <span style="font-weight: bold;">DIFFUS</span>, on querying
 the catalog.
 
--   And a generic virtual
+- And a generic virtual
     entry per partner used locally for the management of the group of files
     sent for the partner in question (i.e. N generic entries)
 
@@ -106,10 +106,10 @@ on querying the catalog.
 The associated post processing procedure is activated in this
 case:
 
--   For each end of
+- For each end of
     transfer, of all the files of the group, the "LIST\_FI" entry
     changes to the T state
--   On completion of
+- On completion of
     broadcasting, when all the partners have received all the files, the DIFFUS
     entry changes to the T or X state
 
@@ -119,7 +119,7 @@ three different partners.
 Parameter setting to broadcast to several
 partners
 
-<img src="/Images/TransferCFT/parameter_setting_to_broadcast_to_three_different_partners.gif" class="mediumWidth" />
+![]($1)
 
 <span id="Broadcasting_and_store_and_forward"></span>
 
@@ -135,35 +135,35 @@ and forward mode relay](../store_and_forward_mode_routing).
 
 You can use the following commands as an example to configure a transfer flow from Partner A to a distribution list C*n*, via the intermediate site B.
 
-<img src="/Images/TransferCFT/temp_broadcast_store_forward.png" class="mediumWidth" />
+![]($1)
 
 **Step 1**
 
-1.  Partner A sends the list of partners (C1, C2, ...Cn) that you want to broadcast to Partner B:
-2.  ```
+1. Partner A sends the list of partners (C1, C2, ...Cn) that you want to broadcast to Partner B:
+1. ```
     SEND PART=ID_B, FNAME=LIST_B,IDF=LIST,...
     ```
-3.  Partner B receives this list with the command:
-4.  ```
+1. Partner B receives this list with the command:
+1. ```
     CFTRECV ID=LIST,..., FNAME=LIST
     ```
 
 **Step 2**
 
-1.  Partner A sends the file to broadcast to a virtual Partner C:
+1. Partner A sends the file to broadcast to a virtual Partner C:
 
-2.  ```
+1. ```
     SEND PART=ID_C, FNAME=FILE_TO_BROADCAST,...
     ```
 
-3.  On Partner A perform the following command to reach Partner C virtually via Partner B:
+1. On Partner A perform the following command to reach Partner C virtually via Partner B:
 
-4.  ```
+1. ```
     CFTPART ID=ID_C,..., OMINTIME=O, OMAXTIME=0, IPART=ID_B
     ```
-    1.  Partner B receives the FILE\_TO\_BROADCAST and  sends it on to Partner C (where C is a broadcast list).
+    1.  Partner B receives the FILE\_TO\_BROADCAST and sends it on to Partner C (where C is a broadcast list).
 
-5.  ```
+1. ```
     CFTDEST ID=C, FNAME=LIST, FOR=COMMUT
     ```
 
@@ -195,9 +195,9 @@ RECV PART=GROUP, IDF=IDF1,...
 
 The list of partners can be described in one of two ways:
 
--   Explicitly by defining
+- Explicitly by defining
     the PART parameter.
--   Using a file in
+- Using a file in
     which this list is saved. The name of this file is defined in the FNAME
     parameter.
 
@@ -214,7 +214,7 @@ transfers are correctly completed.
 
 ### End-of-send procedure
 
-When all transfers are completed,  the end of transfer procedure is executed on the generic transfer.
+When all transfers are completed, the end of transfer procedure is executed on the generic transfer.
 
 There are three possible actions when transfers complete depending on the [EXEC](../../../c_intro_userinterfaces/command_summary/parameter_intro/exec) parameter setting, DEST, PART, CHILDREN.
 
@@ -243,4 +243,4 @@ three different partners.
 **Parameter setting to collect from three
 partners**
 
-<img src="/Images/TransferCFT/parameter_setting_of_a_collect_from_the_three_different_partners.gif" width="776" height="522" />
+![]($1)

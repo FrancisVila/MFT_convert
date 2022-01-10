@@ -5,9 +5,9 @@
 }Sun Cluster services are managed and monitored using the following
 service configuration commands:
 
--   scswitch for startup,
+- scswitch for startup,
     stop, and switch over
--   scstat for monitoring
+- scstat for monitoring
 
 <span id="scswitch"></span>
 
@@ -44,7 +44,7 @@ scswitch -F -g resource\_grp\[,...\]
 scstat \[-DWgnpqi\] \[-v\[v\]\]
 \[-h &lt;host>\]
 
-The following sections  describe the commands necessary
+The following sections describe the commands necessary
 to monitor, start, stop and switchover services. Refer to the Sun documentation
 and the "man" pages for additional details.
 

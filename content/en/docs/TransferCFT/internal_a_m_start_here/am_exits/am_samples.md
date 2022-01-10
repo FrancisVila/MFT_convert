@@ -20,11 +20,11 @@ The delivered sample provides two services, authentication and permissions check
 
 To build the exit:
 
-1.  Change the directory to: &lt;CFTDIRRUNTIME>/src/exit
-2.  Run the following command:
+1. Change the directory to: &lt;CFTDIRRUNTIME>/src/exit
+1. Run the following command:
 
--   UNIX: `make`
--   Windows: `nmake -f exit.mak`
+- UNIX: `make`
+- Windows: `nmake -f exit.mak`
 
 The output is a library located at `<CFTDIRRUNTIME>/lib/libcftexam.(so/dll)`.
 
@@ -48,7 +48,7 @@ Where:
 | &lt;role&gt;  | The role for which the permission must be assigned  |
 | &lt;resource&gt;  | Name of the resource  |
 | &lt;actions&gt;  | List of actions with each action separated by a comma  |
-| &lt;policy&gt;  | ACCEPT: accept the actions on the resource<br />                         REFUSE: refuse the actions on the resource  |
+| &lt;policy&gt;  | ACCEPT: accept the actions on the resource<br /> REFUSE: refuse the actions on the resource  |
 
 
 Examples
@@ -62,13 +62,13 @@ PA ADMIN CONFIGURATION:CFTPARM CREATE,DELETE,EDIT,VIEW ACCEPT
 or
 
 ```
-PA ADMIN CONFIGURATION:CFTPARM \*                 ACCEPT
+PA ADMIN CONFIGURATION:CFTPARM \* ACCEPT
 ```
 
 All available actions on resources that start with “CONFIGURATION:” for the ADMIN role:
 
 ```
-PA ADMIN CONFIGURATION:\* \*                         ACCEPT
+PA ADMIN CONFIGURATION:\* \* ACCEPT
 ```
 
 All permissions for the ADMIN role:
@@ -122,9 +122,9 @@ Predefined roles
 | Application  | Allows applications to request transfers and view the Catalog  |
 
 
-The resources and available actions for  {{< TransferCFT/componentshortname  >}} are listed in the PassPort AM CSD file.
+The resources and available actions for {{< TransferCFT/componentshortname  >}} are listed in the PassPort AM CSD file.
 
-After installing  {{< TransferCFT/componentshortname  >}}, access the CSD file:
+After installing {{< TransferCFT/componentshortname  >}}, access the CSD file:
 
 &lt;Transfer CFT install directory>/distrib/am/csd\_Transfer\_CFT.xml
 

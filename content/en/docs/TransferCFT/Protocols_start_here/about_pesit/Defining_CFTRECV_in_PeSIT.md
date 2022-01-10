@@ -80,16 +80,16 @@ When a file has been received in full, the end of transfer procedure
 that is defined in the [EXECRF](../../../c_intro_userinterfaces/command_summary/parameter_intro/execrf)
 parameter is executed.
 
--   \[STATE=K\], \[DIAGI=660\]
+- \[STATE=K\], \[DIAGI=660\]
     if the first transfer in the remote download returns a code 660. The error
     procedure \[EXECRE\] is submitted for the transfer in error. This transfer
     can then be resumed.
--   \[STATE=K\], \[DIAGI=610\]
+- \[STATE=K\], \[DIAGI=610\]
     if at least one of the file downloads failed, code 610.The failed transfers
     can be resumed. For each failed transfer, the error procedure \[EXECRE\]
     is submitted. For each transfer that is successfully completed, the end
     of transfer \[EXERF\] is submitted.
--   \[STATE=T\] indicates
+- \[STATE=T\] indicates
     that the download did not contain any code 610 errors. The last transfer,
     code 660, is automatically deleted from the catalog, without submitting
     the error procedure \[EXECRE\]. For each transfer, the end of transfer procedure
@@ -102,44 +102,25 @@ could not be found”.
 
 ### PeSIT E CFT/CFT
 
-The reception in open mode,  characterized by the
+The reception in open mode, characterized by the
 NFNAME parameter, is an extension specific to Transfer CFT.
 
 The table below summarizes the parameter values authorized as a function
 of the various functional levels negotiated for the protocol.
 
-```
+QQQ\_QQQ\_CHECK "Functional negotiated v" in header
 
-Functional negotiated v
 
-CFTRECV parameter 
-PeSIT E  
-PeSIT E
-+
-Transfer CFT extensions 
-Generic IDF 
-X 
-X 
-NFNAME, NFVER
-(reception in open mode) 
-- 
-X 
-NIDF 
-string14 
-string32
-RAPPL 
-string8 
-string48 
-RUSER 
-string8 
-string28 
-SAPPL 
-string8 
-string48 
-SUSER 
-string8 
-string28 
-```
+| CFTRECV parameter  | PeSIT E  | PeSIT E<br/> +<br/> Transfer CFT extensions  |
+| --- | --- | --- |
+| Generic IDF  | X  | X  |
+| NFNAME, NFVER<br /> (reception in open mode)  | -  | X  |
+| NIDF  | string14  | string32 |
+| RAPPL  | string8  | string48  |
+| RUSER  | string8  | string28  |
+| SAPPL  | string8  | string48  |
+| SUSER  | string8  | string28  |
 
--    X:  supported
--   "-":  not supported
+
+-  X:  supported
+- "-":  not supported

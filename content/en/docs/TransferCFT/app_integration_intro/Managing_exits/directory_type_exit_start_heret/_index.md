@@ -8,26 +8,26 @@ You can use the directory exit
 task to modify the parameters used to establish an exit connection with
 a remote partner in server or requester mode. A user subprogram can
 be called each time a session with a partner, or a set of partners, is
-opened depending on the  {{< TransferCFT/componentshortname  >}} parameter setting.
+opened depending on the {{< TransferCFT/componentshortname  >}} parameter setting.
 
 Use a directory exit to:
 
--   Server mode -
-    to replace the standard checks performed by  {{< TransferCFT/componentshortname >}} when a remote
+- Server mode -
+    to replace the standard checks performed by {{< TransferCFT/componentshortname >}} when a remote
     partner requests a connection
--   Requester mode -
-    to provide, supplement or modify the parameters  {{< TransferCFT/componentshortname >}} requires
+- Requester mode -
+    to provide, supplement or modify the parameters {{< TransferCFT/componentshortname >}} requires
     to establish network and protocol connections with a remote partner
 
 The directory exit parameters can include:
 
--   Network name
--   Password
--   Remote partner
+- Network name
+- Password
+- Remote partner
     address
--   Remote SAP - service
+- Remote SAP - service
     access point
--   Final protocol
+- Final protocol
     to be used
 
 The directory EXIT can only be called once during the protocol connection
@@ -37,7 +37,7 @@ phase, or start of protocol session.
 
 ## Server mode
 
-When a connection is indicated,  {{< TransferCFT/componentshortname  >}} knows the network name
+When a connection is indicated, {{< TransferCFT/componentshortname  >}} knows the network name
 and the calling partner’s password as well as the protocol to use for
 the communication. If the corresponding CFTPROT object contains the identifier
 of a directory EXIT task, the monitor gives control to this task that
@@ -46,10 +46,10 @@ time slots, and so on.
 
 You can:
 
--   Request Transfer
+- Request Transfer
     CFT to perform your own standard checks
--   Accept the call
--   Refuse the call
+- Accept the call
+- Refuse the call
 
 In this mode, regardless of the protocol used, the EXIT task takes control
 at each protocol connection, even in the case of a transfer sequence over
@@ -58,14 +58,14 @@ a protocol connection, the EXIT task does not take control.
 
 The EXIT can perform checks on a partner:
 
--   Known to Transfer
+- Known to Transfer
     CFT and defined in a CFTPART object
--   Unknown to Transfer
+- Unknown to Transfer
     CFT when there is no CFTPART object
 
 It can accept or refuse network and protocol connections.
 
-Even if all partners are unknown to  {{< TransferCFT/componentshortname  >}}, the monitor needs
+Even if all partners are unknown to {{< TransferCFT/componentshortname  >}}, the monitor needs
 the partner file to operate.
 
 <span id="Requester_mode"></span>
@@ -74,20 +74,20 @@ the partner file to operate.
 
 In requester mode, you can:
 
--   Request Transfer
+- Request Transfer
     CFT to perform your standard checks before establishing connections
--   Accept to establish
+- Accept to establish
     connections
--   Refuse to establish
+- Refuse to establish
     connections
 
 The partner may be known, defined in a CFTPART object, or unknown to
-  {{< TransferCFT/componentshortname  >}}.
+{{< TransferCFT/componentshortname  >}}.
 
-Even if all partners are unknown to  {{< TransferCFT/componentshortname  >}}, the {{< TransferCFT/componentshortname  >}} needs
+Even if all partners are unknown to {{< TransferCFT/componentshortname  >}}, the {{< TransferCFT/componentshortname  >}} needs
 the partner file to operate.
 
-At the time of a connection request,  {{< TransferCFT/componentshortname  >}} knows the CFTPART
+At the time of a connection request, {{< TransferCFT/componentshortname  >}} knows the CFTPART
 object associated with the PART parameter of the SEND or RECV command.
 The {{< TransferCFT/componentshortname  >}} uses the first protocol of the CFTPART object as communication
 protocol, the other protocols defined in this object being used as backup
@@ -95,13 +95,13 @@ protocols.
 
 The first protocol choice criterion is:
 
--   The partner is
-    known to  {{< TransferCFT/componentshortname >}}: there is a CFTPART object corresponding to the
+- The partner is
+    known to {{< TransferCFT/componentshortname >}}: there is a CFTPART object corresponding to the
     partner. The first protocol of the CFTPART object containing an EXIT directory
     identifier is chosen. If no protocols of this command contain an EXIT
     directory identifier, the first protocol is chosen
--   The partner is
-    unknown to  {{< TransferCFT/componentshortname >}}: there is no CFTPART object corresponding to the
+- The partner is
+    unknown to {{< TransferCFT/componentshortname >}}: there is no CFTPART object corresponding to the
     partner. The first protocol of the CFTPARM object that contains an EXIT
     directory identifier is chosen. If none of the protocols of this command
     contains an EXIT directory identifier, the transfer is abandoned, and

@@ -26,17 +26,17 @@ to be received.
 The scripts cftstartFailover, cftstopFailover, and cftprobeFailover
 are copied to the shared file system:
 
--   cftstartFailover: This script creates a backup and then recreates the
+- cftstartFailover: This script creates a backup and then recreates the
     logs and accounting files. It restarts Transfer CFT when it has completed
     the task.
 
 <!-- -->
 
--   cftstopFailover: This script to attempts a normal Transfer CFT stop
+- cftstopFailover: This script to attempts a normal Transfer CFT stop
     procedure, and cleans the environment.
 
 <!-- -->
 
--   cftprobeFailover: This script tests for the presence of Transfer CFT,
+- cftprobeFailover: This script tests for the presence of Transfer CFT,
     and cleans the environment according to the cftping
     response.

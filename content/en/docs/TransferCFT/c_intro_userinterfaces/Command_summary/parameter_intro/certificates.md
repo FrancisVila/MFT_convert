@@ -6,7 +6,7 @@
 
 #### PKIENTITY
 
-**CERTIFICATES =  *string***
+**CERTIFICATES = *string***
 
 Maximum length of 32 characters, which are not case-sensitive.
 

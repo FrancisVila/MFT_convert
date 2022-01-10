@@ -19,9 +19,9 @@ Final validity date of the transfer.
 
 The value dat’ may be expressed:
 
--   Explicitly (absolute
+- Explicitly (absolute
     date)
--   Or, in RECV commands,
+- Or, in RECV commands,
     relative to the date the command is taken into account. This value is
     then expressed as a number of days.
 
@@ -50,22 +50,22 @@ delayed transfers.
 
 It can be expressed:
 
--   explicitly (absolute
+- explicitly (absolute
     date)
--   relative to the
+- relative to the
     date the command is taken into account. This value is then expressed as
     a number of days.
 
 The default value is assigned by the monitor depending on the transfer
 context:
 
--   If MAXTIME is greater
+- If MAXTIME is greater
     than MINTIME,  
     MAXDATE = MINDATE.
--   If MAXTIME is less
+- If MAXTIME is less
     than MINTIME,  
     MAXDATE = MINDATE+1.
--   If MAXTIME is omitted,  
+- If MAXTIME is omitted,  
     MAXDATE = 99991231.
 
 Example

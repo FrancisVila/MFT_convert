@@ -43,11 +43,11 @@ Identifier of the partner(s) for the selected transfers.
 
 The value of this parameter can be:
 
--   **An identifier**: the selection only relates
+- **An identifier**: the selection only relates
     to the transfers performed with this partner
--   <span style="font-weight: bold;">A mask</span>: the selection relates to the
+- <span style="font-weight: bold;">A mask</span>: the selection relates to the
     transfers with the partners whose identifier corresponds to this mask
--   <span style="font-weight: bold;">Omitted</span>: the selection relates to all
+- <span style="font-weight: bold;">Omitted</span>: the selection relates to all
     partners. This option is the same as the option PART = \*
 
 If the NPART parameter is defined, the PART parameter is ignored.
@@ -65,25 +65,21 @@ the user can define this parameter using the symbolic variable PART=&PART.
 
 This identifier designates:
 
--   either a partner described by the command:
-    ```
-    CFTPART
-    ID = <PART parameter value>, ...
-     
-    ```
+- either a partner described by the command:
+    
+| CFTPART | ID = &lt;PART parameter value&gt;, ... |   |
+| --- | --- | --- |
+
 
 <!-- -->
 
--   or a list of partners described by
+- or a list of partners described by
     the command:
-    ```
-    CFTDEST
-    ID = <PART parameter value>,
-     
-     
-    PART = (*identifier, identifier . . .*)
-     
-    ```
+    
+| CFTDEST | ID = &lt;PART parameter value&gt;, |   |
+| --- | --- | --- |
+|   | PART = (*identifier, identifier . . .*) |   |
+
 
 #### CFTIDF
 
@@ -101,7 +97,7 @@ parameter is an informational item that appears in the catalog.</span>**
 **\[PART = *= *string64**\]**
 
 **<span style="font-weight: normal;">Local
-identifier, identifying the site on which  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is executed.  </span>**
+identifier, identifying the site on which <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is executed.  </span>**
 
 **<span style="font-weight: normal;">The
 same value as the CFTPART ID parameter value.</span>**
@@ -114,9 +110,9 @@ Partner identifier.
 
 The associated value of this parameter can be:
 
--   An
+- An
     identifier: the command only concerns transfers with this partner site
--   A mask:
+- A mask:
     the command concerns transfers with partner sites, for which the identifiers
     correspond to this mask
 

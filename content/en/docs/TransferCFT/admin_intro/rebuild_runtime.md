@@ -16,12 +16,12 @@ cftruntime \[-h|--help|-p|--profile|-n &lt;name>|--uconf|--inst\] &lt;cft-instal
 
 Where:
 
--   -p --profile : Regenerates the profile file
--   -n &lt;name>    : Regenerates the profile file with &lt;name> of your choice
--   --uconf: Regenerates the uconf file.
--   -h --help: Displays this help.
--   --runtime: Creates a new runtime environment.
--   --inst: Creates an initial runtime environment, only when run by the Synchrony Installer.
+- -p --profile : Regenerates the profile file
+- -n &lt;name> : Regenerates the profile file with &lt;name> of your choice
+- --uconf: Regenerates the uconf file.
+- -h --help: Displays this help.
+- --runtime: Creates a new runtime environment.
+- --inst: Creates an initial runtime environment, only when run by the Synchrony Installer.
 
 **Example**
 
@@ -37,15 +37,15 @@ cftruntime &lt;cft-install-dir> &lt;cft-runtime-dir> \[-profile|-n &lt;name>|-uc
 
 Where:
 
--   cft-install-dir: Is the full Transfer CFT install path and must exist.
--   cft-runtime-dir: Is the full Transfer CFT runtime path and does not exist.
+- cft-install-dir: Is the full Transfer CFT install path and must exist.
+- cft-runtime-dir: Is the full Transfer CFT runtime path and does not exist.
 
 Usage:
 
--   -profile: Creates a new profile.bat  and backs up the old one.
--   -name: Creates a new profile with the &lt;name> of your choice.
--   -uconf: Regenerates the uconf file.
--   -inst: Creates the initial runtime environment, which is used exclusively by the Installer.
+- -profile: Creates a new profile.bat and backs up the old one.
+- -name: Creates a new profile with the &lt;name> of your choice.
+- -uconf: Regenerates the uconf file.
+- -inst: Creates the initial runtime environment, which is used exclusively by the Installer.
 
 > **Note**
 >
@@ -56,7 +56,7 @@ Usage:
 In a Windows environment, create a new runtime called `runtime2`:
 
 ```
-cftruntime c:\\AxwayCFT38\\Transfer_CFT\\home  c:\\AxwayCFT36\\Transfer_CFT\\runtime2
+cftruntime c:\\AxwayCFT38\\Transfer_CFT\\home c:\\AxwayCFT36\\Transfer_CFT\\runtime2
 ```
 
 **Example 2**
@@ -64,5 +64,5 @@ cftruntime c:\\AxwayCFT38\\Transfer_CFT\\home  c:\\AxwayCFT36\\Transfer_CFT\\run
 In a Windows environment, regenerate the `cftuconf.dat` uconf settings as follows:
 
 ```
-cftruntime c:\\AxwayCFT38\\Transfer_CFT\\home  c:\\AxwayCFT36\\Transfer_CFT\\runtime –uconf
+cftruntime c:\\AxwayCFT38\\Transfer_CFT\\home c:\\AxwayCFT36\\Transfer_CFT\\runtime –uconf
 ```

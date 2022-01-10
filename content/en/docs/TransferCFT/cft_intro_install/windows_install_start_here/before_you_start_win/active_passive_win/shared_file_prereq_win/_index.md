@@ -4,8 +4,8 @@
     "weight": "210"
 }This section provides general information concerning the prerequisites for shared file systems for the following types of files used with {{< TransferCFT/transfercftname  >}} in a UNIX environment.
 
--   Transfer CFT data files: This refers to all files managed by {{< TransferCFT/transfercftname >}} other than  transferable application files (including database files), which are stored in the {{< TransferCFT/transfercftname >}} runtime directory.
--   Transferable application files: This refers to the files transferred by Transfer CFT.
+- Transfer CFT data files: This refers to all files managed by {{< TransferCFT/transfercftname >}} other than transferable application files (including database files), which are stored in the {{< TransferCFT/transfercftname >}} runtime directory.
+- Transferable application files: This refers to the files transferred by Transfer CFT.
 
 ## Standalone installation
 
@@ -20,7 +20,7 @@ The following table lists the file systems that are supported and tested with Tr
 | --- | --- |
 | AIX  | GPFS, NFSv3, NFSv4*  |
 | HP-UX  | NFSv3, NFSv4*  |
-| Linux-x86  |  GFS2, GPFS, GlusterFS, NFSv3, NFSv4*  |
+| Linux-x86  | GFS2, GPFS, GlusterFS, NFSv3, NFSv4* |
 | Solaris  | NFSv4*  |
 | Windows-x86  | GPFS, SMB  |
 
@@ -44,9 +44,9 @@ The following non-exhaustive table lists shared file systems that have been test
 | --- | --- | --- |
 | AIX  | GPFS, NFSv4*  | NFSv3, CXFS, VeritasSF  |
 | HP-UX  | NFSv4*  | NFSv3, CXFS, VeritasSF  |
-| Linux-x86  | GPFS, GFS2, NFSv4*, AWS EFS  | NFSv3, CXFS,  ACFS, OCFSv1, OCFSv2, QFS, VeritasSF  |
+| Linux-x86  | GPFS, GFS2, NFSv4*, AWS EFS  | NFSv3, CXFS, ACFS, OCFSv1, OCFSv2, QFS, VeritasSF  |
 | Solaris  | NFSv4*  | NFSv3, CXFS, QFS, VeritasSF  |
-| Windows-x86  | SMB/CIFS, GPFS  | CXFS,  NFS  |
+| Windows-x86  | SMB/CIFS, GPFS  | CXFS, NFS  |
 | z/OS  | Sharing DASD across Sysplex  |   |
 
 
@@ -54,6 +54,6 @@ The following non-exhaustive table lists shared file systems that have been test
 
 #### {{< TransferCFT/transfercftname  >}} transferable application files
 
-You can use any POSIX compliant shared file system for   transferable application files.
+You can use any POSIX compliant shared file system for transferable application files.
 
 Please see the [Supported file systems](#Supported_fs_win) in the Standalone installation section.

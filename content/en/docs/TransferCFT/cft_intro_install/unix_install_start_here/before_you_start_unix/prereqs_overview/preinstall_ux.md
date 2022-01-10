@@ -18,8 +18,8 @@ Depending on your information system architecture and whether or not you need to
 
 Axway Installer supports installation on a Red Hat 6 platform however:
 
--   On a 64-bit Linux operating system, the installer starts with the 64-bit JRE by default. If it cannot find the 64-bit JRE it will look for the 32-bit JRE.
--   If you want your installation to start smoothly on a Red Hat 6 operating system you must make sure you have the following packages installed on your system because they may not have been installed by default.
+- On a 64-bit Linux operating system, the installer starts with the 64-bit JRE by default. If it cannot find the 64-bit JRE it will look for the 32-bit JRE.
+- If you want your installation to start smoothly on a Red Hat 6 operating system you must make sure you have the following packages installed on your system because they may not have been installed by default.
     -   glibc.i686
     -   nss-softokn-freebl.i686
 
@@ -27,7 +27,7 @@ Axway Installer supports installation on a Red Hat 6 platform however:
 
 *For HP-UX ia64 and HP-UX PA-RISC*
 
-HP-UX Password Hashing Infrastructure, PHI, enables the use of  SHA512-based algorithms for user password hashes (rather than DES). This package is required for Transfer CFT, as it is more secure and provides a new function, crypt2(),  for user control.
+HP-UX Password Hashing Infrastructure, PHI, enables the use of SHA512-based algorithms for user password hashes (rather than DES). This package is required for Transfer CFT, as it is more secure and provides a new function, crypt2(), for user control.
 
 For more information, refer to [HP-UX Password Hashing Infrastructure Release Notes](https://support.hpe.com/hpsc/doc/public/display?docId=emr_na-c02038049).
 
@@ -49,5 +49,5 @@ You can force the use of another temporary directory by setting the following en
 
 If you do this, make sure the temporary directory has:
 
--   Enough disk space
--   Read/write access for starting the installer
+- Enough disk space
+- Read/write access for starting the installer

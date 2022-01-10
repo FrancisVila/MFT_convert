@@ -4,7 +4,7 @@
     "weight": "230"
 }To view your registered {{< TransferCFT/componentshortname  >}}s click **Products** on the top toolbar to open the Product List page.
 
-<img src="/Images/TransferCFT/product_list_cg.png" class="maxWidth" />
+![]($1)
 
 Example
 

@@ -5,13 +5,13 @@
 }This topic describes compression functions in Transfer CFT when using
 the OFTP (ODETTE) protocol.
 
--   [Negotiating
+- [Negotiating
     compression](#Negotiating_compression)
--   [Change
+- [Change
     direction](#Change_Direction)
--   [End-to-end
+- [End-to-end
     messages](#End_to_end_messages)
--   [Online
+- [Online
     translation](#Online_Translation)
 
 <span id="Negotiating_compression"></span>
@@ -34,7 +34,7 @@ This Compression Option is negotiated as indicated in the figure below.
 
 Compression option negotiation
 
-<img src="/Images/TransferCFT/Image1692.gif" width="523" height="435" alt="Compression Option is negotiated between the initiator (Requester) ad the acceptor (Server)" />
+![$2]($1)
 
 <span id="Formatting"></span>
 
@@ -66,13 +66,13 @@ If it does, Transfer CFT deletes these characters.
 
 Structure of the data exchange buffer
 
-<img src="/Images/TransferCFT/Image1693.gif" width="613" height="246" alt="View of structure including the initial Byte, header, and sub-record" />
+![$2]($1)
 
  
 
 HEADER structure
 
-<img src="/Images/TransferCFT/Image1694.gif" width="528" height="331" alt="Header structure defining bits 0 through 7, which is the last bit of the record" />
+![$2]($1)
 
 <span id="Compression"></span>
 
@@ -88,7 +88,7 @@ follows the HEADER.
 
 SUBRECORD example
 
-<img src="/Images/TransferCFT/Image1755.gif" width="492" height="139" />
+![]($1)
 
 The character ‘44’ (&lt;=> ‘D’ character) is repeated 13 times in
 succession in the record.
@@ -119,21 +119,21 @@ has just given up the CD.
 
 The Change Direction is sent in THREE specific CASES:
 
--   After a correctly
+- After a correctly
     completed transfer, the SENDER of the file receives an EXPLICIT CD REQUEST
     from its partner; WITHOUT closing the OFTP session (RELEASE phase), the
     SENDER sends the "Change Direction" to the RECEIVER,
--   When the RECEIVER
+- When the RECEIVER
     of the file does not specify its desire to receive the CD, in order to
     send a file, at the time the EFPA protocol message is sent. There are
     two possibilities on completion of transfer, either:
 
 <!-- -->
 
--   The SENDER
+- The SENDER
     has something else to send and in this case, it sends another file to
     its partner,
--   The SENDER
+- The SENDER
     has nothing more to send and in this case it sets the DISCTD disconnection
     time-out. On expiration of this time-out, if:  
     -   the negotiated transfer direction is BOTH  
@@ -144,7 +144,7 @@ The Change Direction is sent in THREE specific CASES:
 
 <!-- -->
 
--   Transfer CFT calls
+- Transfer CFT calls
     its partner following a RECV command, a request to receive one or more
     files: the Transfer CFT transfer monitor sends a Change Direction directly
     to its partner. When the connection phase is completed, the Requester
@@ -173,18 +173,18 @@ monitor slightly differently.
 Note :according to the
 EERP parameter value:
 
--   if EERP = 86 (first
+- if EERP = 86 (first
     version of the protocol):
--   the ORIGINATOR
+- the ORIGINATOR
     protocol field corresponds to the sender of the file,
--   the DESTINATOR
+- the DESTINATOR
     protocol fields corresponds to the receiver of the file,
--   if EERP = 91 (second
+- if EERP = 91 (second
     version of the protocol):
--   the ORIGINATOR
+- the ORIGINATOR
     protocol field corresponds to the EERP sender (i.e. to the receiver of
     the file),
--   the DESTINATOR
+- the DESTINATOR
     protocol field corresponds to the EERP receiver (i.e. to the sender of
     the file).
 

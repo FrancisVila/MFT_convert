@@ -5,9 +5,9 @@
 }<span id="What_you_will_find_in_this_book"></span>This topic
 describes security certificates, and the following security concepts:
 
--   [Overview
+- [Overview
     of certificate standards](#Overview_of_Certificate_Standards)
--   [Database
+- [Database
     protection](#Database_protection)
 
 ## Central Governance certificate management
@@ -66,15 +66,15 @@ uid=dupont,e=dupont@Axway.com,cn=Albert Dupont ,o=Axway Corp.,c=FR
 The abbreviations before each equal sign in this example have the following
 meanings:
 
--   `uid`:
+- `uid`:
     User ID
--   `e`:
+- `e`:
     Mail address
--   `cn`:The
+- `cn`:The
     user's common name
--   `o`:
+- `o`:
     Organization
--   `c`:
+- `c`:
     Country
 
 DNs may include a variety of other name/value pairs. They are used to
@@ -92,54 +92,28 @@ signature section as described below.
 
 #### Certificate file description
 
-```
 
-Certificate field 
+| Certificate field  | Description  |
+| --- | --- |
+| Version  | The version of the encoded certificate value for X509v3 is 2.  |
+| Serial Number  | An integer assigned by the CA. The issuer name and serial number must identify a unique certificate.  |
+| Issuer Signature Algorithm  | The signature algorithm identifier used by the CA to sign the certificate (e.g., RSA with SHA-1).  |
+| Issuer Distinguished Name | The DN of the entity who has signed and issued the certificate.  |
+| Validity Period  | The dates on which the certificate becomes valid and on which the certificate ceases to be valid.  |
+| Subject Distinguished Name  | The entity associated with the public key stored in the subject's public key field.  |
+| Subject Public Key Information  | The public key and identifier algorithm with which the key is used.  |
+| Issuer Unique Identifier (optional)  | To prevent the reuse of issuer name over time, a unique identifier is assigned to the CA.  |
+| Subject Unique Identifier (optional)  | To prevent the reuse of subject name over time, a unique identifier is assigned to the CA.  |
+| Extensions (optional)  | Extensions are additional information about the certificate. Extensions consist of three fields: type, criticality, and value. Type field is the ASN.1type of the data (for example, text string, numerical, date). The criticality flag is either critical or non-critical. If PKI client application cannot process a critical extension, the certificate will be rejected. The actual value is the value associated with the extension.  |
 
-Description 
-
-Version 
-The version of the encoded certificate value for X509v3
-is 2. 
-Serial Number 
-An integer assigned by the CA. The issuer name and serial
-number must identify a unique certificate. 
-Issuer Signature Algorithm 
-The signature algorithm identifier used by the CA to sign
-the certificate (e.g., RSA with SHA-1). 
-Issuer Distinguished Name
-The DN of the entity who has signed and issued the certificate. 
-Validity Period 
-The dates on which the certificate becomes valid and on
-which the certificate ceases to be valid.  
-Subject Distinguished Name 
-The entity associated with the public key stored in the
-subject's public key field. 
-Subject Public Key Information 
-The public key and identifier algorithm with which the
-key is used. 
-Issuer Unique Identifier (optional) 
-To prevent the reuse of issuer name over time, a unique
-identifier is assigned to the CA. 
-Subject Unique Identifier (optional) 
-To prevent the reuse of subject name over time, a unique
-identifier is assigned to the CA. 
-Extensions (optional) 
-Extensions are additional information about the certificate.
-Extensions consist of three fields: type, criticality, and value. Type
-field is the ASN.1type of the data (for example, text string, numerical, date).
-The criticality flag is either critical or non-critical. If PKI client
-application cannot process a critical extension, the certificate will
-be rejected. The actual value is the value associated with the extension. 
-```
 
 #### Signature description
 
 The signature provides the following information:
 
--   The cryptographic
+- The cryptographic
     algorithm or cipher used by the issuing CA to create its own digital signature
--   The CA's digital
+- The CA's digital
     signature obtained by hashing all of the data in the certificate together
     and encrypting it with the CA's private key
 
@@ -214,6 +188,6 @@ an argument in the PKICER command.
 
 ## Complete CA certificate chains
 
-In {{< TransferCFT/transfercftname  >}} 3.1.3 and lower, you can perform a SSL transfer  even if the certificate chain is not complete (not signed by a ROOT CA). However, for {{< TransferCFT/transfercftname  >}} 3.2.0 and higher, the certificate chain must be complete for a transfer to succeed.
+In {{< TransferCFT/transfercftname  >}} 3.1.3 and lower, you can perform a SSL transfer even if the certificate chain is not complete (not signed by a ROOT CA). However, for {{< TransferCFT/transfercftname  >}} 3.2.0 and higher, the certificate chain must be complete for a transfer to succeed.
 
 For more information, see <a href="../../troubleshoot_intro/admin_troubleshooting_server/troubleshoot_security#Unknown" class="MCXref xref">Unknown CA leads to a failed certificate verification</a>

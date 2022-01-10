@@ -4,10 +4,10 @@
     "weight": "270"
 }This topic describes the following management utilities:
 
--   [cftinit](#cftinit)
--   [cft start](#cftstart)
--   [cft stop](#cftstop)
--   [cftupdate](#cftupdate)
+- [cftinit](#cftinit)
+- [cft start](#cftstart)
+- [cft stop](#cftstop)
+- [cftupdate](#cftupdate)
 
 ## Management utilities descriptions
 
@@ -15,7 +15,7 @@
 
 ## cftinit
 
-*cftinit* is a general  {{< TransferCFT/componentshortname  >}}
+*cftinit* is a general {{< TransferCFT/componentshortname  >}}
 initialization utility. Prior to running `cftinit`,` `you must stop both the Copilot and Transfer CFT server.
 
 **Syntax**
@@ -25,14 +25,14 @@ cftinit \[&lt;filename> \[&lt;filename>...\]\]
 **Standard use**
 
 *cftinit* is normally used with a single
-parameter, which is the name of the  {{< TransferCFT/componentshortname  >}} configuration file.
+parameter, which is the name of the {{< TransferCFT/componentshortname  >}} configuration file.
 
 cftinit my\_config.cft
 
 **Advanced use**
 
 Several file names can be included in the command line. Normally, all
-  {{< TransferCFT/componentshortname  >}} parameters are declared in a single file. However, for organizational
+{{< TransferCFT/componentshortname  >}} parameters are declared in a single file. However, for organizational
 reasons, you may wish to separate the configuration into several files
 (for example, a file describing the CFTPART cards and another file containing
 the CFTPARM, CFTLOG cards, and so on).
@@ -43,11 +43,11 @@ cftinit partners.cft the\_rest.cft
 >
 >  
 
--   If no file name
+- If no file name
     is passed as a parameter, the program requests one or more file names
--   If no name is supplied,
+- If no name is supplied,
     the program stops
--   When you run `cftinit`, it creates the catalog and communication files. You can modify the default sizes of these files to suit your requirements by updating the uconf values for `cft.cftcat.default_size` and `cft.cftcom.default_size` (these values are expressed as a number of records).
+- When you run `cftinit`, it creates the catalog and communication files. You can modify the default sizes of these files to suit your requirements by updating the uconf values for `cft.cftcat.default_size` and `cft.cftcom.default_size` (these values are expressed as a number of records).
 
 <span id="cftstart"></span>
 
@@ -63,8 +63,8 @@ cft start
 **Standard use**
 
 *cft start* is normally used without
-parameters. It checks the  {{< TransferCFT/componentshortname  >}} environment to ensure that Transfer
-CFT starts up correctly. It then runs  {{< TransferCFT/componentshortname  >}}, waits for the processes
+parameters. It checks the {{< TransferCFT/componentshortname  >}} environment to ensure that Transfer
+CFT starts up correctly. It then runs {{< TransferCFT/componentshortname  >}}, waits for the processes
 to start up and displays an information message with the process identifier
 (PID) of the CFTMAIN process.
 
@@ -93,8 +93,8 @@ cft stop \[-kill\]
 **Standard use**
 
 The *cft stop* command, used without parameters, shuts down Transfer
-CFT by sending the  `SHUT FAST=YES`command. It then waits until the
-various  {{< TransferCFT/componentshortname  >}} processes are stopped.
+CFT by sending the `SHUT FAST=YES`command. It then waits until the
+various {{< TransferCFT/componentshortname  >}} processes are stopped.
 
 ```
 % cft stop
@@ -112,27 +112,27 @@ If *cft stop* detects abnormal behavior during the shutdown phase,
 it displays the following message:
 
 % cft stop  
-Invalid state of  {{< TransferCFT/componentshortname  >}}.
+Invalid state of {{< TransferCFT/componentshortname  >}}.
 
-Use `Cft force-stop` to force  {{< TransferCFT/componentshortname  >}} to shut down.
+Use `Cft force-stop` to force {{< TransferCFT/componentshortname  >}} to shut down.
 
 **Advanced use**
 
 In the event of a problem, the program recommends that you shut down
-  {{< TransferCFT/componentshortname  >}} using the`Cft force-stop`command.
+{{< TransferCFT/componentshortname  >}} using the`Cft force-stop`command.
 
-This command then forces a  {{< TransferCFT/componentshortname  >}} shutdown. It is normally successful,
+This command then forces a {{< TransferCFT/componentshortname  >}} shutdown. It is normally successful,
 but depending on the state of the system, more serious malfunctions may
 be encountered.
 
-If a serious malfunction occurs at  {{< TransferCFT/componentshortname  >}} level, an alarm message
+If a serious malfunction occurs at {{< TransferCFT/componentshortname  >}} level, an alarm message
 is displayed before continuing with the housekeeping procedure, to inform
 you about the possible consequences of the next command.
 
 ```
 % cft stop
 Invalid state of CFT.
-Use`Cft force-stop` to force shutdown of  {{< TransferCFT/componentshortname >}}
+Use`Cft force-stop` to force shutdown of {{< TransferCFT/componentshortname >}}
 % cft stop -kill
 Stopping Transfer CFT...
 Transfer CFT stopped correctly.
@@ -151,8 +151,8 @@ cftupdate &lt;filename> \[&lt;filename> ...\]
 >
 >  
 
--   You can only update
+- You can only update
     the CFTPART, CFTxxx (for the networks), CFTSEND cards, and so on.
--   This command should
+- This command should
     be considered to be an alias of CFTUTIL #&lt;filename> for each file
     name passed as a parameter in the command line.

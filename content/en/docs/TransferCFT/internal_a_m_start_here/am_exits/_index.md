@@ -8,16 +8,16 @@
 
 Functions include:
 
--   int exam\_init(const char \*username)
--   char\* exam\_get\_version(void)
--   int exam\_check\_login(const char \*username, const char \*password)
--   int exam\_change\_password(const char \*username, const char \*old\_password, const char \*new\_password)
--   int exam\_check\_permissions(EXAMPermission \*\*perm\_list)
--   int exam\_check\_potential\_permissions(EXAMPermission \*\*perm\_list)
+- int exam\_init(const char \*username)
+- char\* exam\_get\_version(void)
+- int exam\_check\_login(const char \*username, const char \*password)
+- int exam\_change\_password(const char \*username, const char \*old\_password, const char \*new\_password)
+- int exam\_check\_permissions(EXAMPermission \*\*perm\_list)
+- int exam\_check\_potential\_permissions(EXAMPermission \*\*perm\_list)
 
 To help you get started, an Access Management exit sample is delivered in: `$CFTDIRRUNTIME/src/exit/cftexamsmp1.c`
 
-For more information, see   [Delivered Access Management exit samples](am_samples).
+For more information, see [Delivered Access Management exit samples](am_samples).
 
 Related topics
 

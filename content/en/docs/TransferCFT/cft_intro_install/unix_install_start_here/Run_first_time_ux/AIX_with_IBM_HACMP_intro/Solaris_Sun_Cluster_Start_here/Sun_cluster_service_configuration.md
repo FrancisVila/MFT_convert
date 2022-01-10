@@ -59,10 +59,10 @@ cluster.
 View the command line description
 
 
-|  Command  |  Description  |
+| Command | Description |
 | --- | --- |
-|  -a  |  resource addition (add)  |
-|  -g CFT-rg  |  resources group name  |
+| -a | resource addition (add) |
+| -g CFT-rg | resources group name |
 
 
 <span id="CFT_resources"></span>
@@ -71,11 +71,11 @@ View the command line description
 
 There are three resources for the CFT-rg group:
 
--   [Virtual
+- [Virtual
     IP](#Virtual_IP)
--   [Shared
+- [Shared
     file system](#Shared_file_system)
--   [GDS](#Generic_data_service_CFT):
+- [GDS](#Generic_data_service_CFT):
     the Transfer CFT start, stop, and test scripts
 
 <span id="Virtual_IP"></span>
@@ -87,9 +87,9 @@ The public interface support has changed between the versions 3.0 and
 different between the two versions. The following interface types are
 used:
 
--   NAFO, Network Adapter
+- NAFO, Network Adapter
     Fail Over, for SC 3.0
--   IPMP, IP MultiPathing,
+- IPMP, IP MultiPathing,
     for SC 3.1
 
 The virtual IP is added as follows on Sun Cluster version 3.0:
@@ -104,26 +104,17 @@ scrgadm
 
 View the command line description
 
-```
 
-Command
+| Command | Description |
+| --- | --- |
+| -a | resource addition (add) |
+| –L | logical name resource type |
+| -g CFT-rg | resources group name |
+| -j cft-ip | resource name |
+| –l cft-ip | logical name (as defined in /etc/hosts in our test) |
+| -n nafo0@1,nafo0@2 | use of nafo interfaces 1 and 2 |
 
-Description
 
--a
-resource addition (add)
-–L
-logical name resource type
--g CFT-rg
-resources group name
--j cft-ip
-resource name
-–l cft-ip
-logical name (as defined in /etc/hosts
-in our test)
--n nafo0@1,nafo0@2
-use of nafo interfaces 1 and 2
-```
 <span id="Shared_file_system"></span>
 
 #### Shared file system
@@ -136,23 +127,16 @@ scrgadm –a –g CFT-rg –t SUNM.HAStoragePlus –j cft-disk \\
 
 View the command line description
 
-```
 
-Command
+| Command | Description |
+| --- | --- |
+| -a | resource addition (add) |
+| -g CFT-rg | resources group name |
+| -t SUNW.HAStoragePlus | GDS resource type |
+| -j cft-disk | resource name |
+| -x FilesystemMountpoints=/global/cft | mount point |
 
-Description
 
--a
-resource addition (add)
--g CFT-rg
-resources group name
--t SUNW.HAStoragePlus
-GDS resource type
--j cft-disk
-resource name
--x FilesystemMountpoints=/global/cft
-mount point
-```
 <span id="Generic_data_service_CFT"></span>
 
 #### Generic data service CFT
@@ -170,35 +154,19 @@ scrgadm –a –g CFT-rg –t SUNW.gds –j cft-gds \\
 
 View the command line description
 
-```
 
-Command
+| Command | Description |
+| --- | --- |
+| -a | resource addition (add) |
+| -g CFT-rg | resources group name |
+| -t SUNW.gds | GDS resource type |
+| -j cft-gds | resource name |
+| -x Start_command= /global/cft/cftstartFailover | command definition for startup |
+| -x Stop_command= /global/cft/cftstopFailover | command definition for stop |
+| -x Probe_command= /global/cft/cftprobeFailover | command definition for probe |
+| –y Port_list=1765/tcp | verification of the listening ports of Transfer CFT in TCP (parameters of the Transfer CFT cftprot cards) |
+| –y Resource_dependencies= cft-ip,cft-disk | You can activate GDX on a node only if the cft-ip and cft-disk resources are online. In the event of problems with one of these two resources, Sun Custer attempts to restart the faulty resource, or to switch over to another node |
 
-Description
 
--a
-resource addition (add)
--g CFT-rg
-resources group name
--t SUNW.gds
-GDS resource type
--j cft-gds
-resource name
--x Start_command= /global/cft/cftstartFailover
-command definition for startup
--x Stop_command= /global/cft/cftstopFailover
-command definition for stop
--x Probe_command= /global/cft/cftprobeFailover
-command definition for probe
-–y Port_list=1765/tcp
-verification of the listening ports of Transfer CFT in
-TCP (parameters of the Transfer CFT cftprot cards)
-–y Resource_dependencies= cft-ip,cft-disk
-You can activate GDX on a node only if the cft-ip and cft-disk
-resources are online. In the event of problems with one of these two resources,
-Sun Custer attempts to restart the faulty resource, or to switch over
-to another node
-```
-
-The default parameters are adequate for the  test
+The default parameters are adequate for the test
 environment.

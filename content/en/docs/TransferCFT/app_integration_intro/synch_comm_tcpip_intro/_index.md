@@ -10,11 +10,11 @@ An additional benefit of synchronous communication is that you can use it for mo
 
 The alternative to synchronous mode is an asynchronous mode, which places the client data in a communication file where it waits to be picked up by the Transfer CFT server, at which point it is then listed in the catalog.
 
-Another difference between modes is that unlike synchronous mode,  asynchronous mode does not require that {{< TransferCFT/componentlongname  >}}  be started for the client to send data.
+Another difference between modes is that unlike synchronous mode, asynchronous mode does not require that {{< TransferCFT/componentlongname  >}} be started for the client to send data.
 
  
 
-<img src="/Images/TransferCFT/new_synch_comm.png" class="maxWidth" />
+![]($1)
 
 ## Configuring synchronous communication
 
@@ -24,9 +24,9 @@ There are two steps to set up synchronous communication in Transfer CFT, configu
 
 Use the CFTCOM command to define the synchronous communication settings. In the {{< TransferCFT/centralgovernancename  >}} {{< TransferCFT/doctypeuser  >}}, refer to **Transfer request mode &gt; synchronous**.
 
--   Port: Use the Transfer CFT server port that receives the client commands
--   Maximum connection: Set the number of incoming connections on the Transfer CFT server
--   Session timeout: Set the amount of time after which Transfer CFT disconnects the client connection
+- Port: Use the Transfer CFT server port that receives the client commands
+- Maximum connection: Set the number of incoming connections on the Transfer CFT server
+- Session timeout: Set the amount of time after which Transfer CFT disconnects the client connection
 
 **Example**
 
@@ -40,12 +40,12 @@ If you manually configure synchronous communication in Transfer CFT, remember to
 Resulting LOG message after a Transfer CFT restart
 
 ```
-CFTI18I+   TYPE : XHTTP   HOST  : 127.0.0.1  PORT : 1765
+CFTI18I+ TYPE : XHTTP HOST : 127.0.0.1 PORT : 1765
 ```
 
-### Configure the  client
+### Configure the client
 
-On the client side perform one of the following  configuration procedures, depending on the type of client you are using.  
+On the client side perform one of the following configuration procedures, depending on the type of client you are using.
 
 **Example**
 
@@ -54,21 +54,21 @@ On the client side perform one of the following  configuration procedures, depen
 Start a CFTUTIL session and perform the following commands.
 
 ```
-CONFIG  TYPE=COM, MEDIACOM=TCPIP, FNAME=XHTTP://localhost:1765
+CONFIG TYPE=COM, MEDIACOM=TCPIP, FNAME=XHTTP://localhost:1765
 <execute requests in same session>
 ```
 
 Use a configuration file to define the synchronous communication, where the file should contain at least the following elements:
 
--   # TCP/IP COMMUNICATION
--   TYPE    =TCP
--   NAME   =xhttp://localhost:1765
--   TIMEOUT = 600
+- # TCP/IP COMMUNICATION
+- TYPE =TCP
+- NAME =xhttp://localhost:1765
+- TIMEOUT = 600
 
 Start a CFTUTIL session and perform the following commands.
 
 ```
- CONFIG  TYPE=COM,  FNAME=<path><config_file>
+ CONFIG TYPE=COM, FNAME=<path><config_file>
 <execute requests in same session>
 ```
 
@@ -98,7 +98,7 @@ When using web services the default media identifier used is the first once decl
 CFTUTIL uconfset id=copilot.cft.com, value=’C=<path><config_file>’
 ```
 
-When using the Transfer CFT UI the first media identifier listed in the server's parameter file (CFTPARM) is used. So for example, if CFTPARM ID = IDPARM0, where COM = (COM0, COM1), the COM0 media is  used.
+When using the Transfer CFT UI the first media identifier listed in the server's parameter file (CFTPARM) is used. So for example, if CFTPARM ID = IDPARM0, where COM = (COM0, COM1), the COM0 media is used.
 
 ## Using SWAITCAT
 

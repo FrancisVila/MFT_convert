@@ -11,7 +11,7 @@ request sender.
 
 If the security system is active, at least one default CFTAPPL command
 must exist for each transfer direction. The identifier used by this command
-is the default value defined in the general parameters.  [\[CFTPARM\]](../../../../admin_intro/admin_config_commands/cftparm_general_parameters)
+is the default value defined in the general parameters. [\[CFTPARM\]](../../../../admin_intro/admin_config_commands/cftparm_general_parameters)
 
 Identifiers with the same prefixes can be grouped together in a single
 CFTAPPL command.
@@ -59,11 +59,11 @@ Transmission direction.
 
 Possible values are:
 
--   BOTH:
+- BOTH:
     associates an owner with the transfer, irrespective of the direction
--   RECV:
+- RECV:
     associates an owner with receive transfers (CFTRECV/RECV)
--   SEND:
+- SEND:
     associates an owner with send transfers (CFTSEND/SEND)
 
 \[GROUPID     = {identifier
@@ -101,11 +101,11 @@ Operation to be executed.
 
 Possible values are:
 
--   REPLACE:
+- REPLACE:
     modifies one or more records, or creates them if they do not exist
--   CREATE:
+- CREATE:
     creates one or more records
--   DELETE:
+- DELETE:
     deletes one or more records
 
 USERID     = {identifier
@@ -138,12 +138,12 @@ The CFTAPPL command is used to create the local application.
 
 This command:
 
--   Defines a user
+- Defines a user
     as being the owner of a transfer or group of transfers: broadcast list,
     generic requests
--   Defines a user
+- Defines a user
     as being the owner of the transferred files
--   Specifies the transfer
+- Specifies the transfer
     direction
 
 See also <a href="#" class="selected">Transfer
@@ -182,44 +182,44 @@ In all other cases, the transfer is rejected.
 USER1 creates a SEND request for an IDF corresponding to a CFTAPPL command
 with the USER2 userid:
 
--   USER1 becomes the
+- USER1 becomes the
     owner of the SEND command
--   USER2 becomes the
+- USER2 becomes the
     owner of the transfer
 
 On the server side, a CFTAPPL command corresponding to the same IDF
 contains the USER3 userid:
 
--   USER3 becomes the
+- USER3 becomes the
     owner of the transfer
--   the user who submitted
+- the user who submitted
     the RECV command becomes the owner of the command
 
 #### Requester/Sender with CFTAPPL
 
-<img src="/Images/TransferCFT/requester_sender_CFTAPPL.gif" width="527" height="133" />
+![]($1)
 
 #### Using the default CFTAPPL command
 
 USER1 creates a SEND request for an IDF that does not correspond to
 a CFTAPPL command. There is a default CFTAPPL command:
 
--   USER1 becomes the
+- USER1 becomes the
     owner of the SEND command
--   USER2 becomes the
+- USER2 becomes the
     owner of the transfer
 
 On the server side, a CFTAPPL command corresponding to the same IDF
 contains the USER3 userid:
 
--   USER3 becomes the
+- USER3 becomes the
     owner of the transfer
--   The user who submitted
+- The user who submitted
     the RECV command becomes the owner of the command
 
 Requester/Sender with the Default CFTAPPL
 
-<img src="/Images/TransferCFT/sender_rec_CFTAPPL_default.gif" width="533" height="133" />
+![]($1)
 
 <span id="Server_sender_configuration"></span>
 
@@ -230,31 +230,31 @@ Requester/Sender with the Default CFTAPPL
 USER1 creates a RECV request for an IDF corresponding to a CFTAPPL command
 with the USER2 userid:
 
--   USER1 becomes the
+- USER1 becomes the
     owner of the RECV command
--   USER2 becomes the
+- USER2 becomes the
     owner of the transfer
 
 On the server side, a CFTAPPL command corresponding to the same IDF
 contains the USER3 userid:
 
--   USER3 becomes the
+- USER3 becomes the
     owner of the transfer
--   the user who submitted
+- the user who submitted
     the SEND command becomes the owner of that command
 
 Requester/sender with CFTAPPL
 
-<img src="/Images/TransferCFT/req_sender_with_CFTAPPL.gif" width="527" height="133" />
+![]($1)
 
 #### Using the Default CFTAPPL Command
 
 USER1 creates a RECV request with an IDF corresponding to a CFTAPPL
 command with the USER2 userid:
 
--   USER1 becomes the
+- USER1 becomes the
     owner of the RECV command
--   USER2 becomes the
+- USER2 becomes the
     owner of the transfer
 
 On the server side, an implicit CFTSEND command corresponding to the
@@ -263,7 +263,7 @@ same IDF contains the USER3 userid. USER3 is the owner of the transfer.
 Server/sender with the default CFTAPPL
 SEND
 
-<img src="/Images/TransferCFT/server_sender_CFTAPPL.gif" width="472" height="130" />
+![]($1)
 
 The same processing takes place when the IMPL=YES option is set.
 

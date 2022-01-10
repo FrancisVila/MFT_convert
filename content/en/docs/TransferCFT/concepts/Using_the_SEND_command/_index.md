@@ -6,12 +6,12 @@
 
 This section describes how to use the SEND command to perform a file transfer. It begins with the simple examples and builds in complexity. However, there are many Transfer CFT parameters that can help you customize your flows, which are described in feature specific topics. Examples in this page are divided into the following umbrella categories:
 
--   <a href="#Use" class="MCXref xref">Use or override default values</a>
--   <a href="#Use2" class="MCXref xref">Use file name parameters</a>
--   <a href="#Use3" class="MCXref xref">Use scheduling features</a>
--   <a href="#Execute" class="MCXref xref">Execute pre and post transfer activities</a>
--   <a href="#Use4" class="MCXref xref">Use visibility features to link an application to a transfer</a>
--   <a href="#Miscella" class="MCXref xref">Miscellaneous send features</a>
+- <a href="#Use" class="MCXref xref">Use or override default values</a>
+- <a href="#Use2" class="MCXref xref">Use file name parameters</a>
+- <a href="#Use3" class="MCXref xref">Use scheduling features</a>
+- <a href="#Execute" class="MCXref xref">Execute pre and post transfer activities</a>
+- <a href="#Use4" class="MCXref xref">Use visibility features to link an application to a transfer</a>
+- <a href="#Miscella" class="MCXref xref">Miscellaneous send features</a>
 
 <span id="Use"></span>
 
@@ -21,7 +21,7 @@ This section describes how to use the SEND command to perform a file transfer. I
 
 You can perform a basic SEND command by specifying only the partner. In this case, the IDF (model file) in the partner definition is used by default. If the partner definition does not include an IDF, the global default model file value is used.
 
-In this example,  the `store1 `partner values including the `dailysales `(IDF) are used.
+In this example, the `store1 `partner values including the `dailysales `(IDF) are used.
 
 ```
 cftpart id=store1, idf=dailysales
@@ -32,7 +32,7 @@ send part=store1
 >
 > When using Central Governance, be sure to use a SEND command syntax that includes an IDF corresponding to a flow created in Central Governance.
 
-### Override the  model file default values
+### Override the model file default values
 
 You can create your own model files to use with an existing partner. When specified in the send command, the new model file overrides the partner and global default model file value.
 
@@ -46,7 +46,7 @@ send part=store1, idf=newmodel
 
 ### Override the model file values
 
-Using additional send command parameters, such as the file name, you can override values in the model file.  
+Using additional send command parameters, such as the file name, you can override values in the model file.
 
 ```
 send part=store1, idf=model, fname=newfile
@@ -54,7 +54,7 @@ send part=store1, idf=model, fname=newfile
 
 ### Blocking the override functionality
 
-In some cases you may not want to allow the model file  values to be overridden. To block the override functionality set the force parameter to yes. In this example, the fname=oldfile and not newfile is used.
+In some cases you may not want to allow the model file values to be overridden. To block the override functionality set the force parameter to yes. In this example, the fname=oldfile and not newfile is used.
 
 ```
 cftsend id=newmodel1, fname=oldfile.... force=yes
@@ -108,7 +108,7 @@ send part=store1, idf=newmodel, fname=@daily_reports
 
 You can use the `selfname `option to send only certain files from a given folder to a particular partner. Begin by creating a file that lists the specific files to send, where you use only the relative name.
 
-Using the `send `command, include the  `selfname `parameter, which is the name of the file you created. You then use the name of the folder containing the files (preceded by the indirection character) as the `fname`.
+Using the `send `command, include the `selfname `parameter, which is the name of the file you created. You then use the name of the folder containing the files (preceded by the indirection character) as the `fname`.
 
 **Example**
 
@@ -120,7 +120,7 @@ send part=store1, idf=newmodel, selfname=report_limited, fname=#report_folder
 
 Using the syntax in this example, only the files A1 and B1 are transferred.
 
-  See [SELFNAME](../../c_intro_userinterfaces/command_summary/parameter_intro/selfname).
+See [SELFNAME](../../c_intro_userinterfaces/command_summary/parameter_intro/selfname).
 
 ### Send a list of the folder contents
 
@@ -167,10 +167,10 @@ send part=store1, idf=newmodel, nfname=remotefile
 You can use the send command with STATE parameters so that the send occurs once the transfer has a predefined status.
 
 
-| D = disp  |  Transfers are carried out immediately. (default)  |
+| D = disp  | Transfers are carried out immediately. (default) |
 | --- | --- |
-|  H = hold  |  A practical application for this method is to make files available for a partner to download when the partner is ready. This can be started by the START command or a RECV command.  |
-|  K = keep  |  You can use this status to store several transfers, for example,  until all are ready to go. A manual START command would trigger the transfers.  |
+| H = hold | A practical application for this method is to make files available for a partner to download when the partner is ready. This can be started by the START command or a RECV command. |
+| K = keep | You can use this status to store several transfers, for example, until all are ready to go. A manual START command would trigger the transfers. |
 
 
 ```
@@ -197,7 +197,7 @@ send part=store1, idf=newmodel, cycle=7, tcycle=day
 
 ### Define a send based on a transfer timeout
 
-You can define that beyond a specified time in minutes, the transfer is canceled. See also maxduration.
+You can define that beyond a specified time in minutes, the transfer is canceled. See also [maxduration]().
 
 ```
 send part=store1, idf=newmodel, maxduration=10
@@ -210,9 +210,9 @@ scheduling](../transfer_command_overview/delayed_transfers).
 
 **Prerequisites**
 
--   You can only use this mode between Transfer CFTs running the same platforms (Windows to Windows, for example)
--   Set the uconf cft.server.force\_heterogeneous\_mode parameter value to yes if not already done
--   Use the group of files syntax
+- You can only use this mode between Transfer CFTs running the same platforms (Windows to Windows, for example)
+- Set the uconf cft.server.force\_heterogeneous\_mode parameter value to yes if not already done
+- Use the group of files syntax
 
 Use the fname and wfname parameters to use this mode, also referred to as homogeneous mode.
 
@@ -221,7 +221,7 @@ send part=store1, idf=endofdayresults, fname=@myfolder/\*, wfname=results.zip
 ```
 
 See also [WFNAME](../../c_intro_userinterfaces/command_summary/parameter_intro/wfname).
-        &lt;/p>
+&lt;/p>
 
 > **Note**
 >
@@ -299,7 +299,7 @@ send part=store1, idf=model, ruser=guest, rpasswd=guestpassword
 
 ### Wait for a synchronous transfer to complete before continuing
 
-After configuring the  [synchronous communication](../../app_integration_intro/synch_comm_tcpip_intro), add the wstate and wtimeout to the send command.
+After configuring the [synchronous communication](../../app_integration_intro/synch_comm_tcpip_intro), add the wstate and wtimeout to the send command.
 
 ```
 config type=com, mediacom=tcpip, fname=xhttp://localhost:1765
@@ -310,9 +310,9 @@ send part=store1, idf=model, wstates=TX, wtimeout=120
 
 Use the following parameters to further refine the send command and provide more information to the remote partner concerning a transfer
 
--   parm = a free parameter that allows you to add information to send with your transfer (512 characters)
--   sappl, rappl = send information about the applications  sending the transfer
--   suser, ruser = send information related to the transfer users
+- parm = a free parameter that allows you to add information to send with your transfer (512 characters)
+- sappl, rappl = send information about the applications sending the transfer
+- suser, ruser = send information related to the transfer users
 
 ```
 send part=store1, idf=model, parm='contains all daily reports'
@@ -328,8 +328,8 @@ send part=store1, idf=model, faction=archive, archivefname=&FNAME_&FDATE_&IDTU
 
 Limitations
 
--   The fname and archivefname must be on the same volume (all platforms)
--   Faction=archive is not supported for:
+- The fname and archivefname must be on the same volume (all platforms)
+- Faction=archive is not supported for:
     -   Implicit send (CFTSEND IMPL=YES)
     -   Homogeneous group of files
     -   Broadcasting

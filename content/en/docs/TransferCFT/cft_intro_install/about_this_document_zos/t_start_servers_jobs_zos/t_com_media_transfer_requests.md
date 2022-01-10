@@ -4,8 +4,8 @@
     "weight": "190"
 }This section presents JCL examples that you can use to create the JOBs to perform transfer requests. All of these JCLs are located in the target.SAMPLE library. The following examples for send procedures are described below:
 
--   [CFTSEND for a JCL requesting a transfer](#CFTSEND%20for%20a%20JCL%20requesting%20a%20transfer)
--   [CFTSENDS synchronous transfer request API](#CFTSENDS%20synchronous%20transfer%20request%20API)
+- [CFTSEND for a JCL requesting a transfer](#CFTSEND%20for%20a%20JCL%20requesting%20a%20transfer)
+- [CFTSENDS synchronous transfer request API](#CFTSENDS%20synchronous%20transfer%20request%20API)
 
 <span id="CFTSEND for a JCL requesting a transfer"></span>
 
@@ -19,9 +19,7 @@ Example
 CFTSEND
  
 //LIB    JCLLIB ORDER=(cftv2.INSTALL)
-                    
 //      INCLUDE MEMBER=cftenv
-                    
 //CFTSEND  EXEC PCFTUTIL,PARM='/1=&CFTENV',
 //         QUAL=&CFTENV,OUT=&OUT
 //CFTIN    DD \*
@@ -69,4 +67,4 @@ CFTUTIL parameters:
 
 Related topics
 
--   [Starting and stopping the Transfer CFT servers JOBs](../)
+- [Starting and stopping the Transfer CFT servers JOBs](../)

@@ -12,14 +12,14 @@ Refer to the [{{< TransferCFT/companyname  >}} S*upported Platforms Guide*](http
 
 {{< TransferCFT/componentlongname  >}} has the following hardware requirements:
 
--   Disk space requirement
+- Disk space requirement
     -   1.5 to 5 Gigabyte: minimum disk space to allow for future updates, SPs, and continued performance
--   RAM Requirement
+- RAM Requirement
     -   128 Megabyte: the minimum storage space required per host
 
 ## Windows operating system prerequisites
 
-Transfer CFT on Windows  requires the **Visual C++ Redistributable Package for Visual Studio 2019** for proper functioning.  This provides the necessary library files (DLL) for Transfer CFT. You must install `vc_redist.x64.exe` prior to installing or upgrading Transfer CFT.
+Transfer CFT on Windows requires the **Visual C++ Redistributable Package for Visual Studio 2019** for proper functioning. This provides the necessary library files (DLL) for Transfer CFT. You must install `vc_redist.x64.exe` prior to installing or upgrading Transfer CFT.
 
 > **Note**
 >

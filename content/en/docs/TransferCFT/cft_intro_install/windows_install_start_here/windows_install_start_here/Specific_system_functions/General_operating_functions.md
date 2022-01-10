@@ -4,7 +4,7 @@
     "weight": "250"
 }-   [Logical
     file names](#Logical_file_names)
--   [Using
+- [Using
     a definition file](#Using%20a%20definition%20file)
 
 <span id="Logical_file_names"></span>
@@ -15,9 +15,9 @@ Transfer CFT can use logical file names in order to designate the physical
 files and, if necessary, to state the characteristics of these files.
 There are two methods of doing this:
 
--   Using the operating
+- Using the operating
     system environment
--   Using a file to
+- Using a file to
     describe the logical names
 
 Users can choose one or other of these two methods. For the same Transfer
@@ -34,11 +34,11 @@ Transfer CFT.
 If not, one of the following three operations needs to be performed
 before operating Transfer CFT:
 
--   The CONFIG command
+- The CONFIG command
     of CFTUTIL
--   Sufficient screen
+- Sufficient screen
     parameter setting in the Copilot interface
--   Transfer CFT API
+- Transfer CFT API
     COM command
 
 ## Logical working files
@@ -48,48 +48,21 @@ Environment variables
 The following table lists the logical names of files, and
 defines the role.
 
-```
 
-Working file 
+| Working file  | Logical name  | Comment  |
+| --- | --- | --- |
+| Parameter  | CFTPARM  | Parameter file  |
+| Partner  | CFTPART  | Partner file  |
+| Catalogue  | CFTCATA  | Catalogue file  |
+| Communication  | CFTCOM  | Communication file  |
+| Log  | CFTLOG | Log file  |
+| Log  | CFTALOG | Alternate log file  |
+| Account  | CFTACCN  | Statistics file  |
+| Account  | CFTAACCN  | Alternate statistics file  |
+| Suffixes (1)  | CFTSUFX  | Suffixes file  |
+| Parameter  | SEC.INI  | System enabling file  |
+| Logical names  | CFTNMLOG  | Redefinition files  |
 
-Logical name 
-
-Comment 
-
-Parameter 
-CFTPARM 
-Parameter file 
-Partner 
-CFTPART 
-Partner file 
-Catalogue 
-CFTCATA 
-Catalogue file 
-Communication 
-CFTCOM 
-Communication file 
-Log 
-CFTLOG
-Log file 
-Log 
-CFTALOG
-Alternate log file 
-Account 
-CFTACCN 
-Statistics file 
-Account 
-CFTAACCN 
-Alternate statistics file 
-Suffixes (1) 
-CFTSUFX 
-Suffixes file 
-Parameter 
-SEC.INI 
-System enabling file 
-Logical names 
-CFTNMLOG 
-Redefinition files 
-```
 
 (1): see [Recognizing file types](../file_management_functions)
 
@@ -138,7 +111,7 @@ is operating in Client/Server with a UNIX Transfer CFT.
 >
 > The CFTFILE command in CFTUTIL does not take into account any
 > environment variables set and corresponding to the Transfer CFT logical
-> file names. You can overcome this problem  in a batch file by using
+> file names. You can overcome this problem in a batch file by using
 > certain operating system functions.
 
 Example
@@ -180,7 +153,7 @@ file.
 
 TRCATM=CFTTRACE.BIN O=C,F=F,R=1024,T=B
 
-In this example, the logical name TRCATM is  given as the exit
+In this example, the logical name TRCATM is given as the exit
 file in parameter to the Transfer CFT trace extraction tool. The physical
 name CFTTRACE.BIN corresponds to the logical name TRCATM and the following
 characteristics: contiguous file organization (O=C), fixed format (F=F),

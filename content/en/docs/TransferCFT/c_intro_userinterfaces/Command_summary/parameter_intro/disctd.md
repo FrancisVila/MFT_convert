@@ -25,10 +25,10 @@ indicated in the table below.
 Default values are:
 
 
-|  Protocol  |  Default value  |
+| Protocol  | Default value |
 | --- | --- |
-|  PeSIT ANY profile  |  10  |
-|  ODETTE  |  20  |
+| PeSIT ANY profile | 10  |
+| ODETTE  | 20  |
 
 
 [Return to Command index](../../)

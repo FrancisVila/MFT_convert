@@ -16,8 +16,8 @@ A TCP/IP network must be installed and configured before the Transfer CFT produc
 
 ### Local domain and host name
 
-1.  To configure the domain and host names, enter **GO CFGTCP**.
-2.  In the *CFGTCP menu*, select the option and modify the local domain and host names for your IBM i. The host name is used in the CFTNET command HOST parameter when the Transfer CFT/400 monitor is configured.
+1. To configure the domain and host names, enter **GO CFGTCP**.
+1. In the *CFGTCP menu*, select the option and modify the local domain and host names for your IBM i. The host name is used in the CFTNET command HOST parameter when the Transfer CFT/400 monitor is configured.
 
 ### Host table
 
@@ -51,7 +51,7 @@ To do so, enter the PING command on an command line, followed by the name of the
 
 Any incidents detected impact the following:
 
--   Security  
+- Security  
     To start TCP, you do not need to have a user profile set to \*IOSYSCFG, but it may be required for some Transfer CFT configuration commands in the TCP/IP environment: the messages are explanatory.
 
 Network interface is not started after the ENDTCPIFC command:

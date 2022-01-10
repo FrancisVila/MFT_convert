@@ -5,24 +5,24 @@
 }This sub-book presents and defines transfer security concepts that are referred
 to further in this document, as well as how these security items work. It is comprised of the following topics:
 
--   [Extended
+- [Extended
     catalog query APIs](extended_catalog_query_apis)
--   Transport
+- Transport
     security symbolic variables
 
 File transfer security is based on the following three principles, as described in this topic:
 
--   [Privacy](#Privacy)
--   [Integrity](#Integrity)
--   [Authentication](#Authentication)
+- [Privacy](#Privacy)
+- [Integrity](#Integrity)
+- [Authentication](#Authentication)
 
 These three forms of security are independent and must be combined to
 get a high level of security.
 
 Additionally, the following two security related subjects are described:
 
--   [Signature](#Signature)
--   [Log](#Log)
+- [Signature](#Signature)
+- [Log](#Log)
 
 <span id="Privacy"></span>
 
@@ -45,7 +45,7 @@ cannot be clearly transmitted to others.
 
 Symmetrical encryption
 
-<img src="/Images/TransferCFT/encrypt_key.gif" width="482" height="114" alt="View of symetrical key " />
+![$2]($1)
 
 #### Asymmetrical encryption
 
@@ -65,7 +65,7 @@ than a symmetric encryption mechanism.
 
 Asymmetrical encryption
 
-<img src="/Images/TransferCFT/image004.gif" class="maxWidth" width="492" height="94" alt="View of public and private key encryption" />
+![$2]($1)
 
 <span id="Integrity"></span>
 
@@ -89,7 +89,7 @@ or MD5.
 
 Hash function
 
-<img src="/Images/TransferCFT/image005.gif" class="maxWidth" />
+![]($1)
 
 <span id="Authentication"></span>
 
@@ -98,8 +98,8 @@ Hash function
 Authentication is the process of verifying a claimed identity. The most
 widely used authentication mechanisms are:
 
--   Password request
--   Proof request
+- Password request
+- Proof request
 
 Password requests are associated with user login requests. When you
 have sent a login name, you are then prompted for your password.
@@ -133,7 +133,7 @@ to encrypt the digest.
 
 Integrity and authentication
 
-<img src="/Images/TransferCFT/temp_integrity_and_auth.png" class="maxWidth" />
+![]($1)
 
 <span id="Log"></span>
 

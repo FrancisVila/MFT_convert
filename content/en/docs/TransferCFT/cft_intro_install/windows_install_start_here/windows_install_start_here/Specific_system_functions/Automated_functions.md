@@ -4,9 +4,9 @@
     "weight": "280"
 }This topic describes how to use a batch procedure in Transfer CFT Windows.
 
--   [Updating
+- [Updating
     batch procedures launched by Transfer CFT](#Updating%20batch%20procedures%20launched%20by%20Transfer%20CFT)
--   [Using
+- [Using
     symbolic variables in batch files started by Transfer CFT](#Using_symbolic_variables_in_the_batch_files_started_by_CFT)
 
 <span id="About_automated_CFT_functions"></span>
@@ -40,9 +40,9 @@ deleted after it has been submitted and executed.
 When automatic procedures are started, Transfer CFT performs
 the following operations:
 
--   Reads the batch
+- Reads the batch
     file concerned
--   Specifies and creates
+- Specifies and creates
     a unique name for the temporary file
 
 The unique name for the temporary file is specified by specifying a
@@ -50,19 +50,19 @@ prefix in the form of CFTnnnnn, where nnnnn is a number between 0 and
 99999. Each time a prefix is generated, the number nnnnn is incremented
 by 1. The following processes occur:
 
--   Content of the
+- Content of the
     batch file in which the symbolic variables have been resolved is written
     into this temporary file
--   Temporary file
+- Temporary file
     executes
--   Temporary file
+- Temporary file
     is deleted
 
 If you have trouble using the batch procedures:
 
-1.  Start the batch file to be
+1. Start the batch file to be
     implemented manually and watch the effect this produces.
-2.  To observe the effect
+1. To observe the effect
     of the substitutions by Transfer CFT of the symbolic variables, use the
     CFTNODEL environment variable.
 

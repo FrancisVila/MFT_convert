@@ -14,9 +14,9 @@ a file](#Receiving_a_File)
 [About
 the default CFTRECV object](#About_the_default_CFTRECV_object)
 
--   Command syntax
+- Command syntax
     [CFTRECV](../../../c_intro_userinterfaces/command_summary#CFTRECV)
--   Parameter list
+- Parameter list
     [CFTRECV](../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftrecv)
 
 <span id="Receive_file_parameter_summary"></span>
@@ -27,48 +27,48 @@ This section lists the parameters and syntax that you use to create
 a receive file transfer using the command line interface. Certain
 parameters can be classified into categories:
 
--   identification
+- identification
     parameters
 
 <!-- -->
 
--   general: ID,
+- general: ID,
     USERID, GROUPID
--   specific to
+- specific to
     the PeSIT protocol (PeSIT D CFT profile or PeSIT E): RUSER, SUSER
 
 <!-- -->
 
--   protection of the
+- protection of the
     parameters set: FORCE
--   free parameters
-    set locally by the  {{< TransferCFT/componentshortname >}} user: COMMENT, OPERMSG, DELETE, NOTIFY
--   execution control
+- free parameters
+    set locally by the {{< TransferCFT/componentshortname >}} user: COMMENT, OPERMSG, DELETE, NOTIFY
+- execution control
     parameters:
 
 <!-- -->
 
--   general: PRI
--   user: EXEC,
+- general: PRI
+- user: EXEC,
     EXIT
--   cycle management:
+- cycle management:
     MINDATE, CYCTIME
 
 <!-- -->
 
--   data processing
+- data processing
     parameters: NCOMP, XLATE, FCODE
--   file parameters
+- file parameters
     (general):
 
 <!-- -->
 
--   file management:
+- file management:
     FACTION, FDISP
--   physical name:
+- physical name:
     FNAME, WFNAME  
     physical characteristics (global file): FSPACE, FORG, FTYPE
--   physical characteristics
+- physical characteristics
     (records) : FRECFM, FLRECL, FBLKSIZE, FKEYLEN, FKEYPOS
 
 *Use of parameters defining file characteristics:*
@@ -80,28 +80,13 @@ the file characteristics communicated by the sender.
 For a given transfer, these protocol values are the DEFAULT values of
 the corresponding Fxxxxx parameters:
 
-```
-PeSIT E CFT/CFT
-PeSIT D CFT profile 
-In PeSIT E (CFT to CFT), or PeSIT D CFT profile (transfer
-between 2  {{< TransferCFT/componentshortname >}}s), the default values taken by the FSPACE,
-FTYPE, FBLKSIZE, FLRECL and FRECFM parameters are the values sent by the
-partner (see the CFTSEND object, NSPACE, NTYPE, NBLKSIZE, NLRECL, NRECFM
-parameters). For open mode operation, the FNAME parameter can also inherit
-the value of the partner NFNAME parameter. 
-PeSIT E 
-In PeSIT E, the default values taken by the FKEYLEN and
-FKEYPOS parameters are the values sent by the partner (see the NKEYLEN
-and NKEYPOS parameters of the CFTSEND object). 
-PeSIT SIT profile 
-In PeSIT SIT profile, the "file size", "record
-format" and "record length" information items sent by the
-protocol are taken as the default values of the FSPACE, FRECFM, FLRECL
-parameters.
-ODETTE 
-In the ODETTE protocol, the default values of the FRECFM,
-FLRECL and FSPACE parameters are deduced from the ODETTE parameters received
-```
+
+| PeSIT E CFT/CFT<br/> PeSIT D CFT profile  | In PeSIT E (CFT to CFT), or PeSIT D CFT profile (transfer between 2 {{< TransferCFT/componentshortname  >}}s), the default values taken by the FSPACE, FTYPE, FBLKSIZE, FLRECL and FRECFM parameters are the values sent by the partner (see the CFTSEND object, NSPACE, NTYPE, NBLKSIZE, NLRECL, NRECFM parameters). For open mode operation, the FNAME parameter can also inherit the value of the partner NFNAME parameter.  |
+| --- | --- |
+| PeSIT E  | In PeSIT E, the default values taken by the FKEYLEN and FKEYPOS parameters are the values sent by the partner (see the NKEYLEN and NKEYPOS parameters of the CFTSEND object).  |
+| PeSIT SIT profile  | In PeSIT SIT profile, the "file size", "record format" and "record length" information items sent by the protocol are taken as the default values of the FSPACE, FRECFM, FLRECL parameters. |
+| ODETTE  | In the ODETTE protocol, the default values of the FRECFM, FLRECL and FSPACE parameters are deduced from the ODETTE parameters received |
+
 
 <span id="new_link_receive_templates"></span>For more information, see the [Protocol](../../../protocols_start_here) topics.
 
@@ -120,9 +105,9 @@ command, are used to supplement those indicated in the RECV command as
 required.
 
 Correspondence
-between the RECV file command and  {{< TransferCFT/componentshortname  >}} parameter setting
+between the RECV file command and {{< TransferCFT/componentshortname  >}} parameter setting
 
-<img src="/Images/TransferCFT/Correspondence_between_RECV_and_parameter.gif" width="729" height="440" />
+![]($1)
 
 <span id="About_the_default_CFTRECV_object"></span>
 
@@ -130,12 +115,12 @@ between the RECV file command and  {{< TransferCFT/componentshortname  >}} param
 
 Use the Initial CFTRECV object to:
 
--   Give the default
+- Give the default
     name and local physical characteristics of the file to receive
--   Define the default
+- Define the default
     actions to perform locally during and after the transfer (translation,
     compression, call to a user EXIT, an end-of-transfer procedure...)
--   Authorize the default
+- Authorize the default
     time slot and default user associated with the transfers
 
 There is no limit on the number of CFTRECV objects that you can create
@@ -164,68 +149,68 @@ or last position.
 
 The CFTRECV command is used to specify, for each model file (IDF):
 
--   the name and the
+- the name and the
     physical characteristics (for example: format and record length) of the
     receiver file
--   the actions to
+- the actions to
     be performed locally such as:
 
 <!-- -->
 
--   call of a user-written
+- call of a user-written
     "file EXIT" task during the transfer
--   actions performed
+- actions performed
     by the monitor on the receiver file at the beginning of transfer
--   data translation
+- data translation
     during reception
--   call to a procedure
+- call to a procedure
     to be executed on completion of the transfer, and so on
 
 <!-- -->
 
--   miscellaneous parameters
+- miscellaneous parameters
     controlling the execution of transfers, such as:
 
 <!-- -->
 
--   authorized
+- authorized
     time slot
--   default user
+- default user
     identifier associated with transfers
 
 The receiver file name and physical characteristics parameters are taken
 into account at each new receive transfer, at the start of the transfer.
-If  {{< TransferCFT/componentshortname  >}} is creating a new receiver file:
+If {{< TransferCFT/componentshortname  >}} is creating a new receiver file:
 
--   these parameters,
+- these parameters,
     if explicitly defined, take precedence over the values extracted (or deduced)
     from the protocol messages received
--   however, if the
+- however, if the
     receive transfer is initiated by a local RECV command, any explicitly
     defined parameters accompanying this command *take precedence over the
     parameters of the CFTRECV command* if the value of the FORCE parameter
     is FORCE = NO (for all the parameters common to both commands, CFTRECV
     only supplies the default values to RECV)
--   *they
+- *they
     are not taken into account* if defined in the CFTRECV command and if
     the value of the FORCE parameter is FORCE = YES
 
 The following precedence rule applies globally:
 
--   If FORCE = NO,
+- If FORCE = NO,
     the parameters of RECV take precedence over those of CFTRECV
--   If FORCE = YES,
+- If FORCE = YES,
     the parameters of CFTRECV take precedence over those of RECV  
     These parameters themselves take precedence over the protocol values
     received which themselves take precedence over any default file characteristics
-    provided for within some systems, independently of the  {{< TransferCFT/componentshortname >}} parameter
+    provided for within some systems, independently of the {{< TransferCFT/componentshortname >}} parameter
     setting.
--   Where an already
+- Where an already
     existing file is reused to receive the data of a new transfer, it is generally
-    not possible to take new file characteristics into account:  {{< TransferCFT/componentshortname >}}’s
+    not possible to take new file characteristics into account: {{< TransferCFT/componentshortname >}}’s
     "standard" behavior then simply involves checking that the new
     values are compatible with the existing ones.
--   If data is stored
+- If data is stored
     in an already existing "envelope" (for example, when Transfer
     CFT adds a new member to an already existing partitioned file), this corresponds
     to an intermediate case between the two previous ones. New values may

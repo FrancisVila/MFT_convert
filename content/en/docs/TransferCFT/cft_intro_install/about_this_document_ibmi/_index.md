@@ -34,9 +34,9 @@ This guide is intended for enterprise personnel involved in installing software 
 
 This guide presumes you have knowledge of:
 
--   Your company’s business processes and practices
--   Your company’s hardware, software, and IT policies
--   The Internet, including use of a browser
+- Your company’s business processes and practices
+- Your company’s hardware, software, and IT policies
+- The Internet, including use of a browser
 
 Others who may find parts of this guide useful include network or systems administrators and other technical or business users.
 
@@ -44,9 +44,9 @@ Others who may find parts of this guide useful include network or systems admini
 
 Transfer CFT provides a complete set of documentation, covering all aspects of using the product. These documents include the following:
 
--   {{< TransferCFT/componentshortname >}}   Release Notes
--   {{< TransferCFT/platformorsuitelongname >}} Supported Platforms Guide
+- {{< TransferCFT/componentshortname >}} Release Notes
+- {{< TransferCFT/platformorsuitelongname >}} Supported Platforms Guide
 
 ## Support services
 
-The {{< TransferCFT/companyname  >}} Global Support team provides worldwide 24 x 7 support, subject to validation of your license agreement. Email <support@axway.com> or, for your local support telephone number, visit  [support.axway.com](https://support.axway.com/) and click **Contact Axway Support**.
+The {{< TransferCFT/companyname  >}} Global Support team provides worldwide 24 x 7 support, subject to validation of your license agreement. Email <support@axway.com> or, for your local support telephone number, visit [support.axway.com](https://support.axway.com/) and click **Contact Axway Support**.

@@ -19,9 +19,9 @@ to deploy the product on the multiple cluster nodes.
 
 After you install Transfer CFT you must modify and reinterpret the profile environment files, in order to share:
 
--   Configuration files
--   Transfer catalog
--   Communications
+- Configuration files
+- Transfer catalog
+- Communications
     file
 
 Example of a modified profil**e** file
@@ -114,7 +114,7 @@ export CFTCLUSTERSND CFTCLUSTERRCV
 
 ## Transfer CFT configuration
 
-1.  Configure the virtual IP of
+1. Configure the virtual IP of
     the cluster in the cftnet card:
 
 **cftnet    
@@ -126,5 +126,5 @@ virtual IP of the cluster \*/
 maxcnx     = 3,  
 mode     = replace**
 
-1.  Enter the paths to the shared
+1. Enter the paths to the shared
     system files for the files to be sent or received.

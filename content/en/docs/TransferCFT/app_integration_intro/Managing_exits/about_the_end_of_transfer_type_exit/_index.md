@@ -15,23 +15,23 @@ of whether or not the transfer is completed.
 
 ### Transfer state
 
-The user program can also ask the  {{< TransferCFT/componentshortname  >}} to modify the
+The user program can also ask the {{< TransferCFT/componentshortname  >}} to modify the
 transfer state (UPDATE) or to delete the catalog record (DELETE).
 
 The following changes of state are authorized in the event of an UPDATE:
 
--   H --> K
--   K --> H
--   T --> X
--   H or K --> D
--   T --> T
+- H --> K
+- K --> H
+- T --> X
+- H or K --> D
+- T --> T
 
 If a transfer procedure is submitted, it is initiated when the exit
 call ends.
 
 When the EXIT task is called without any request for change to the related
 catalog entry’s state, the end-of-transfer procedure is submitted according
-to standard  {{< TransferCFT/componentshortname  >}} rules.
+to standard {{< TransferCFT/componentshortname  >}} rules.
 
 When the EXIT task initiates a change of state, the procedure submission
 rule depends on the final state of the catalog entry returned by the EXIT.
@@ -40,12 +40,12 @@ The following
 table shows the transfer possible changes of state.
 
 
-|  Change of state  |  End of transfer procedure submitted  |
+| Change of state  | End of transfer procedure submitted  |
 | --- | --- |
-|  H to K  |  Abnormal end of transfer procedure  |
-|  K to H  |  Abnormal end of transfer procedure  |
-|  T to X  |  No call  |
-|  H to D  |  No call  |
-|  K to D  |  No call  |
-|  T to T  |  Normal end of transfer procedure  |
+| H to K  | Abnormal end of transfer procedure  |
+| K to H  | Abnormal end of transfer procedure  |
+| T to X  | No call  |
+| H to D  | No call  |
+| K to D  | No call  |
+| T to T  | Normal end of transfer procedure  |
 

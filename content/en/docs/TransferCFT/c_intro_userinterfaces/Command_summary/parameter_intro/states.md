@@ -6,7 +6,7 @@
 
 SWAITCAT
 
-Enter a string. Possible values are T, X, Y, Z, N and A states   (you may have a combination of values).
+Enter a string. Possible values are T, X, Y, Z, N and A states (you may have a combination of values).
 
 The default is "TX".
 

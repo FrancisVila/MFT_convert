@@ -14,17 +14,17 @@ For general information on how an application obtains event messages from a subs
 
 ## Event messages format
 
-{{< TransferCFT/componentlongname  >}} Guardian events were also available in the previous 2.3 version, with the main difference being that each {{< TransferCFT/componentlongname  >}} process was defined as a sub system. In contrast, {{< TransferCFT/componentlongname  >}} version {{< TransferCFT/releasenumber  >}}  only has one defined sub-system.
+{{< TransferCFT/componentlongname  >}} Guardian events were also available in the previous 2.3 version, with the main difference being that each {{< TransferCFT/componentlongname  >}} process was defined as a sub system. In contrast, {{< TransferCFT/componentlongname  >}} version {{< TransferCFT/releasenumber  >}} only has one defined sub-system.
 
 All messages have the following tokens:
 
 
 | Token  | Description  |
 | --- | --- |
-| ZSPI-TKN-SSID  |  The Transfer CFT subsystem ID, whose value is XCF2_VAL_EXTERNAL_SSID. This token is described in the SPI Programming Manual.  |
-| ZEMS-TKN-EVENTNUMBER  |  The event number, as described in the EMS Manual. Its value is one of the values described in the table below.  |
-| XCF2_TKN_SUBJ  |  The message subject for which the values are described in the Event messages table below.  |
-| XCF2_TKN_MSG  |  The message text.<br/>For details about Transfer CFT LOG messages, see the {{< TransferCFT/componentlongname  >}} {{< TransferCFT/releasenumber  >}} <a href="https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/Troubleshooting/Messages_and_Codes/Messages_and_error_codes_Start_here_1.htm">Messages and error codes</a> documentation.<br/>The accounting messages are binary coded data, and are described in the exacct.h header.  |
+| ZSPI-TKN-SSID  | The Transfer CFT subsystem ID, whose value is XCF2_VAL_EXTERNAL_SSID. This token is described in the SPI Programming Manual. |
+| ZEMS-TKN-EVENTNUMBER  | The event number, as described in the EMS Manual. Its value is one of the values described in the table below. |
+| XCF2_TKN_SUBJ  | The message subject for which the values are described in the Event messages table below. |
+| XCF2_TKN_MSG  | The message text.<br/> For details about Transfer CFT LOG messages, see the {{< TransferCFT/componentlongname  >}} {{< TransferCFT/releasenumber  >}} <a href="https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/Troubleshooting/Messages_and_Codes/Messages_and_error_codes_Start_here_1.htm">Messages and error codes</a> documentation.<br/> The accounting messages are binary coded data, and are described in the exacct.h header. |
 | ZEMS_TKN_EMPHASIS  | If the value is ZSPI-VAL-TRUE, the event being reported is considered critical. This is the case for ERROR and FATAL log events as well as process errors when using the NonStop mode.  |
 
 
@@ -46,13 +46,13 @@ The following table shows the relationship between the event, the subject, and t
 
 The CFTLOG object defines the Transfer CFT log file declarations. The name of the destination is provided in the fname parameter, which can be:
 
--   A file: The files are created using a CFTUTIL command, as described in Transfer CFT Environment.
--   Collector: Specifies the name of the collector to which log messages are written.
+- A file: The files are created using a CFTUTIL command, as described in Transfer CFT Environment.
+- Collector: Specifies the name of the collector to which log messages are written.
 
-You can use the NOTIFY parameter of the CFTLOG object to combine the two destinations so that they  refer to a Collector.
+You can use the NOTIFY parameter of the CFTLOG object to combine the two destinations so that they refer to a Collector.
 
--   NOTIFY: Name of the collector.
--   OPERMSG: Allows you to filter the type of messages to be sent.
+- NOTIFY: Name of the collector.
+- OPERMSG: Allows you to filter the type of messages to be sent.
     -   This number is the sum of the values that correspond to the types of messages you want to filter
     -   For example, Operating error messages=16, System error messages=32, Operating fatal error messages=64, System fatal error messages=128 giving a total of 240
 
@@ -65,7 +65,7 @@ You can use the NOTIFY parameter of the CFTLOG object to combine the two destina
 In the Transfer CFT configuration:
 
 ```
-cftlog id        = log0,
+cftlog id = log0,
 …
 fname= ' log/cftlog',
 afname= ' log/cftalog',
@@ -79,10 +79,10 @@ opermsg= 240,
 
 The CFTACCNT object defines the destinations for the statistical data concerning terminated transfers (accounting messages). The possible destinations provided in the fname parameter are:
 
--   A file: The files are created using a CFTUTIL command as described in Transfer CFT Environment.
--   Collector: Specifies the name of the collector to which account messages are written.
+- A file: The files are created using a CFTUTIL command as described in Transfer CFT Environment.
+- Collector: Specifies the name of the collector to which account messages are written.
 
-Once defined, you can activate and link the object  to the CFTPARM as shown in the following example.
+Once defined, you can activate and link the object to the CFTPARM as shown in the following example.
 
 **Example**
 

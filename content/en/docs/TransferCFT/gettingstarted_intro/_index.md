@@ -12,14 +12,14 @@ The following diagram shows the relationship between the activities related to c
 
 In this getting started section, you use the following interfaces to configure and then execute your flows.
 
--   {{< TransferCFT/centralgovernancename >}} UI: This is the UI available after logging on {{< TransferCFT/centralgovernancename >}} that you use to configure flows and monitor Transfer CFT
--   CFTUTIL: Use CFTUTIL, the command line interface for Transfer CFT, to run the transfer commands. The Transfer
+- {{< TransferCFT/centralgovernancename >}} UI: This is the UI available after logging on {{< TransferCFT/centralgovernancename >}} that you use to configure flows and monitor Transfer CFT
+- CFTUTIL: Use CFTUTIL, the command line interface for Transfer CFT, to run the transfer commands. The Transfer
     CFT utility is a program which can be activated in batch or interactive
     mode. For information on using CFTUTIL, please refer to [About the CFTUTIL interface](../c_intro_userinterfaces/about_cftutil).
 
 ## Syntax and typographical conventions
 
-For each command, CFTUTIL checks the command syntax and enters the command. Refer to  *[Typographical
+For each command, CFTUTIL checks the command syntax and enters the command. Refer to *[Typographical
 conventions](my_first_transfer_flow_using_cg/typographical_conventions)* for the Transfer CFT command syntax conventions used in this document.
 
  

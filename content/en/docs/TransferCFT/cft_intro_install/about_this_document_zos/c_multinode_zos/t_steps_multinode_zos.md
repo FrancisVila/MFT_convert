@@ -8,7 +8,7 @@ If you have not done so already, begin by performing a standard Transfer CFT z/
 
 If you create a multi-node, mulit-host installation, and the USS Environment for Transfer CFT is not shared between all the hosts, you must install a separate USS Environment on each host. To do this, execute the member COPA010, in the INSTALL library, on each host that is not shared.
 
-If  an APF mode is defined on one of the hosts, then you must configure the APF mode for every host.
+If an APF mode is defined on one of the hosts, then you must configure the APF mode for every host.
 
 **After installing**
 
@@ -22,30 +22,13 @@ The process consists of customizing the z/OS specific programs and members, chec
 >
 > To execute the multi-node customization you require administrator rights.
 
-```
 
-Step
+| Step  | Task  |
+| --- | --- |
+| 1  | Customize <a href="../t_vipa_multinode_zos">VIPA</a> programs and execute the customized members, including the following tasks.<br/> For each LPAR:<br/> • Enable the port sharing (to execute on each LPAR) - Share Listening port: (protocol port (e.g. PESIT and port PESIT SSL))<br/> • Identified all ports (protocol ports) to share on the LPAR<br/> • Define the LPAR dynamic XCF address (DYNAMICXCF)<br/> On the first LPAR<br/> • Define the cluster address (VIPA)<br/> • Define the port balancing between the LPAR |
+| 2  | Customize <a href="">MNINIT</a>.  |
+| 3  | <a href="../t_submit_mninit_zos">Execute</a> the customized MNINIT. |
 
-Task
-
-1
-Customize [VIPA](../t_vipa_multinode_zos) programs and execute the customized members, including the following tasks.
-For each LPAR:
-
--   Enable the port sharing (to execute on each LPAR) - Share Listening port: (protocol port (e.g. PESIT and port PESIT SSL))
--   Identified all ports (protocol ports) to share on the LPAR
--   Define the LPAR dynamic XCF address (DYNAMICXCF)
-
-On the first LPAR
-
--   Define the cluster address (VIPA)
--   Define the port balancing between the LPAR
-
-2
-Customize MNINIT.
-3
-[Execute](../t_submit_mninit_zos)  the customized MNINIT.
-```
 
 > **Note**
 >

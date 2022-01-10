@@ -2,14 +2,14 @@
     "title": "           INACT  - Deactivate an object",
     "linkTitle": "Deactivate an object",
     "weight": "320"
-}<span id="kanchor60"></span>
+}<span id="kanchor67"></span>
 
 This page describes the INACT command and its parameters. You can use the INACT command to deactivate:
 
--   One or more partners (CFTPART)
--   Sentinel notifications
--   CRON object (CFTCRON)
--   Folder object (CFTFOLDER)
+- One or more partners (CFTPART)
+- Sentinel notifications
+- CRON object (CFTCRON)
+- Folder object (CFTFOLDER)
 
 > **Note**
 >
@@ -21,10 +21,10 @@ Command guide: [INACT](../../../../c_intro_userinterfaces/command_summary#INACT)
 
 | Parameter  | Description  |
 | --- | --- |
-|  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/id">ID</a>  |  Identifier for the object to be deactivated. To deactivate several objects with a single command, use wildcard characters or meta characters.  |
-|  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/type">TYPE</a>  |  Object to be deactivated:<br/> • PART<br/> • TRK<br/> • CRON<br/> • FOLDER</li>  |
-|  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/mode">MODE</a>  |  Mode to be deactivated on partners (only when TYPE=PART object):<br/> • BOTH (default)<br/> • REQUESTER<br/> • SERVER<br/>You can use the shortcuts B, R and S in place of the keywords.  |
-|  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/force">FORCE</a>  |  <li>YES: Stops any transfers in progress involving the deactivated partners.<br/> • NO: Default value, transfers progress normally.</li>  |
+| <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/id">ID</a>  | Identifier for the object to be deactivated. To deactivate several objects with a single command, use wildcard characters or meta characters. |
+| <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/type">TYPE</a>  | Object to be deactivated:<br/> • PART<br/> • TRK<br/> • CRON<br/> • FOLDER |
+| <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/mode">MODE</a>  | Mode to be deactivated on partners (only when TYPE=PART object):<br/> • BOTH (default)<br/> • REQUESTER<br/> • SERVER<br/> You can use the shortcuts B, R and S in place of the keywords. |
+| <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/force">FORCE</a> |  • YES: Stops any transfers in progress involving the deactivated partners.<br/> • NO: Default value, transfers progress normally. |
 
 
 ## Using the INACT command
@@ -41,9 +41,9 @@ INACT TYPE=PART,ID=<CFTPART_ID>,MODE=<mode>,FORCE=<NO | YES>
 
 Where:
 
--   `CFTPART_ID` is the identifier of the partner to deactivate. To deactivate several partners with a single command, use wildcard characters or meta characters.
--   is the mode to be deactivated, with values: "BOTH" , "B", "REQUESTER", "R" , "SERVER", "S"
--   When `FORCE `is set to `YES`, stops any transfers in progress involving the deactivated partners.
+- `CFTPART_ID` is the identifier of the partner to deactivate. To deactivate several partners with a single command, use wildcard characters or meta characters.
+- is the mode to be deactivated, with values: "BOTH" , "B", "REQUESTER", "R" , "SERVER", "S"
+- When `FORCE `is set to `YES`, stops any transfers in progress involving the deactivated partners.
 
 Example
 
@@ -62,8 +62,8 @@ CFTU00I INACT _ Correct (TYPE=PART,ID=PARIS,MODE=REQUESTER)
 
 When a partner is deactivated, transfers awaiting processing are:
 
--   Suspended in requester mode
--   Refused in server mode
+- Suspended in requester mode
+- Refused in server mode
 
 The state of a transfer request awaiting execution in requester mode
 for a deactivated partner remains **D**,

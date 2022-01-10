@@ -38,48 +38,16 @@ terminated by a null byte.
 
 Fields in cftaix queries
 
-```
 
-Field
+| Field  | Description  |
+| --- | --- |
+| cMode  | Direction of the SSL session in which the transfer was performed.<br/> C signifies client and S signifies server.  |
+| cAuthPolicy  | Authentication mode of the SSL session in which the transfer was performed.<br/> • S signifies that only the server was authenticated.<br/> • B signifies that the client and server were authenticated.<br/> • A signifies that the anonymous mode has been implemented.  |
+| sCipher  | Suite negotiated for the SSL session.<br/> This suite is set to one of the values from the suites supported by Transfer CFT (1, 2, 4, 5, 9, 10 or 47).  |
+| sParm  | Value of the PARM parameter in the CFTSSL command used to negotiate the session parameters.  |
+| sRemoteCn  | CN field of the user certificate presented by the remote partner.  |
+| sRemote CaId  | Certificate identifier (in the local certificate database) of the root authority of the certificate presented by the remote partner.  |
+| sUserCId  | Identifier (in the local certificate database) of the user certificate used locally for authentication by the remote partner.  |
+| sCertFname  | Physical name of the file in which the certificate presented by the remote partner was recorded.  |
+| sProf  | Identifier of the CFTSSL command used to negotiate the session parameters.  |
 
-Description
-
-cMode 
-Direction of the SSL session in which the transfer was
-performed.
-C signifies client and
-S signifies server. 
-cAuthPolicy 
-Authentication mode of the SSL session in which the transfer
-was performed.
-
--   S
-    signifies that only the server was authenticated.
--   B
-    signifies that the client and server were authenticated.
--   A
-    signifies that the anonymous mode has been implemented. 
-
-sCipher 
-Suite negotiated for the SSL session.
-This suite is set to one of the values from the suites
-supported by Transfer CFT (1, 2, 4, 5, 9, 10 or 47). 
-sParm 
-Value of the PARM parameter in the CFTSSL command used
-to negotiate the session parameters. 
-sRemoteCn 
-CN field of the user certificate presented by the remote
-partner. 
-sRemote CaId 
-Certificate identifier (in the local certificate database)
-of the root authority of the certificate presented by the remote partner. 
-sUserCId 
-Identifier (in the local certificate database) of the user
-certificate used locally for authentication by the remote partner. 
-sCertFname 
-Physical name of the file in which the certificate presented
-by the remote partner was recorded. 
-sProf 
-Identifier of the CFTSSL command used to negotiate the
-session parameters. 
-```

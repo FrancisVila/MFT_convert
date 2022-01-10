@@ -2,7 +2,7 @@
     "title": "Diagnostic commands ",
     "linkTitle": "Diagnostic commands",
     "weight": "260"
-}The diagnostic commands  search for operating errors that occur in Transfer CFT, and should be used under Axway customer support supervision. The commands syntax  usage  are described in the following sections.
+}The diagnostic commands search for operating errors that occur in Transfer CFT, and should be used under Axway customer support supervision. The commands syntax usage are described in the following sections.
 
 ## Diagnostic command descriptions
 
@@ -10,77 +10,77 @@
 
 The SGTRACE command allows an external trace file to be processed. The possible values for the SGTRACE command are:
 
--   ON: Activates the trace
+- ON: Activates the trace
 
 <!-- -->
 
--   OFF: Deactivates the trace
+- OFF: Deactivates the trace
 
 <!-- -->
 
--   CLOSE: Closes the trace file
+- CLOSE: Closes the trace file
 
 <!-- -->
 
--   OPEN: Opens the trace file
+- OPEN: Opens the trace file
 
 <!-- -->
 
--   nnnnnn: Numeric value between 0 and 511, which allows the events to be selected when the corresponding value is true
+- nnnnnn: Numeric value between 0 and 511, which allows the events to be selected when the corresponding value is true
 
 Values
 
--   1: Trace of network messages
+- 1: Trace of network messages
 
 <!-- -->
 
--   2: Trace of non-0 return codes and other errors
+- 2: Trace of non-0 return codes and other errors
 
 <!-- -->
 
--   4: Trace of DASDM/CATALOG/SVC99 file operations
+- 4: Trace of DASDM/CATALOG/SVC99 file operations
 
 <!-- -->
 
--   8: Trace of file read/write operations
+- 8: Trace of file read/write operations
 
 <!-- -->
 
--   16: Trace of calls to C functions
+- 16: Trace of calls to C functions
 
 <!-- -->
 
--   64: Trace of communications between Transfer CFT tasks
+- 64: Trace of communications between Transfer CFT tasks
 
 <!-- -->
 
--   128: Trace of program calls
+- 128: Trace of program calls
 
 <!-- -->
 
--   256: Trace of the display interface actions
+- 256: Trace of the display interface actions
 
 <!-- -->
 
--   512: Trace of calls to Transfer CFT exits
+- 512: Trace of calls to Transfer CFT exits
 
 The SGTRACE command allows for a dynamic modification of the default option defined in SGINSTAL, or set in PARM.
 
 #### Using the SGTRACE file
 
-The SGTRACE file opens automatically when Transfer CFT initializes, and the trace is marked as logically active if the opening is correct. The trace value  used is the one defined in the SGINSTAL MACRO  installation step (A12OPTS).
+The SGTRACE file opens automatically when Transfer CFT initializes, and the trace is marked as logically active if the opening is correct. The trace value used is the one defined in the SGINSTAL MACRO installation step (A12OPTS).
 
 Events are recorded if the following conditions are satisfied:
 
--   The event is selected.
+- The event is selected.
 
 <!-- -->
 
--   The trace is logically active.
+- The trace is logically active.
 
 <!-- -->
 
--   The file is open.
+- The file is open.
 
 The file has the FIXED BLOCKED, LRECL=132 format. You can change the value of the trace used by the PARM field of each Transfer CFT.
 
@@ -88,7 +88,7 @@ The file has the FIXED BLOCKED, LRECL=132 format. You can change the value of t
 
 ```
 // UTIL EXEC PGM=CFTUTIL,
-//     PARM=‘SGTRACE nnn’
+// PARM=‘SGTRACE nnn’
 ```
 
 SGTRACE nnn must be the first and second parameters of the PARM field.
@@ -99,15 +99,15 @@ If the DD SGTRACE card is absent, Transfer CFT OS/390 allocates the file dynamic
 
 The ITRACE command enables the internal trace of Transfer CFT and the associated file SGSTAE to be managed. The possible values of the ITRACE command are:
 
--   CLOSE: Closes the file trace
+- CLOSE: Closes the file trace
 
 <!-- -->
 
--   OPEN: Opens the file trace
+- OPEN: Opens the file trace
 
 <!-- -->
 
--   nnnnnn: Numeric value from 4 to 4096 allowing the size of the internal trace buffer (in Kbytes) to be modified
+- nnnnnn: Numeric value from 4 to 4096 allowing the size of the internal trace buffer (in Kbytes) to be modified
 
 The internal trace is automatically activated when you start Transfer CFT. The size of the trace buffer used is the size defined during installation, in the MACRO SGINSTALL.
 
@@ -135,7 +135,7 @@ The ECHO command has no effect, and ends with messages such as the following, wh
 
 The cache command is used to control the Transfer CFT catalog cache. There are two options available:
 
--   CACHE QUERY: to query all cache settings. For example:
+- CACHE QUERY: to query all cache settings. For example:
 
     DDIS30i Cache Dsn=cftv2..CATALOG Common/Private
 
@@ -155,74 +155,74 @@ The cache command is used to control the Transfer CFT catalog cache. There are t
 > -   Nbr : the numbers of users sharing this cache, valid only with COMMON status
 > -   Nbds : the number of dataspace used.
 
--   CACHE LOAD: to force the complete load of the Transfer CFT catalog into the cache. Use extreme care with his command!  At end of processing, messages DDIS30I to DDIS32I are displayed.
+- CACHE LOAD: to force the complete load of the Transfer CFT catalog into the cache. Use extreme care with his command! At end of processing, messages DDIS30I to DDIS32I are displayed.
 
 ## The ? command
 
 The ? command enables you to find the status of certain Transfer CFT components. Available options include:
 
--   ? TASK: Lists Transfer CFT tasks
+- ? TASK: Lists Transfer CFT tasks
 
 <!-- -->
 
--   ? FILES: Lists the open files
+- ? FILES: Lists the open files
 
 <!-- -->
 
--   ? ENQ: Lists the shared resources and conflicts
+- ? ENQ: Lists the shared resources and conflicts
 
 <!-- -->
 
--   ? SCB: Lists the CFT queues and their status
+- ? SCB: Lists the CFT queues and their status
 
 <!-- -->
 
--   ? TCP: Lists the status of the TCP/IP sub-task
+- ? TCP: Lists the status of the TCP/IP sub-task
 
 <!-- -->
 
--   ? APF: Lists the APF ON/OFF status and the default user
+- ? APF: Lists the APF ON/OFF status and the default user
 
 <!-- -->
 
--   ? MEM: Lists the memory status in the SGTRACE file
+- ? MEM: Lists the memory status in the SGTRACE file
 
 <!-- -->
 
--   ? Thhhhhhhh: Displays the memory at hexadecimal address ‘hhhhhhhh’ in the Transfer CFT area, 16 bytes aligned on a double word
+- ? Thhhhhhhh: Displays the memory at hexadecimal address ‘hhhhhhhh’ in the Transfer CFT area, 16 bytes aligned on a double word
 
 <!-- -->
 
--   ? TRK: Lists the sub-task status
+- ? TRK: Lists the sub-task status
 
 <!-- -->
 
--   ? SSL: Lists the CFTTSSL sub-task status
+- ? SSL: Lists the CFTTSSL sub-task status
 
 <!-- -->
 
--   ? TCOM, COS, LOG...: Lists the state under the task CFTTCOM, CFTTCOMS (Synchronous), CFTLOG, and so on
+- ? TCOM, COS, LOG...: Lists the state under the task CFTTCOM, CFTTCOMS (Synchronous), CFTLOG, and so on
 
 <!-- -->
 
--   ? EXITS: Lists the state of the CFTEXIT subtask(s)
+- ? EXITS: Lists the state of the CFTEXIT subtask(s)
 
 <!-- -->
 
--   ? ABTCP: Lists the TCP/IP sub-task status, and forces an ABEND-S0C6 in this sub-task. Use only under Axway support supervision
+- ? ABTCP: Lists the TCP/IP sub-task status, and forces an ABEND-S0C6 in this sub-task. Use only under Axway support supervision
 
 <!-- -->
 
--   ? ABTRK: Lists the CFTTRK sub-task status, and forces an ABEND-S0C6 in this sub-task. Use only under Axway support supervision
+- ? ABTRK: Lists the CFTTRK sub-task status, and forces an ABEND-S0C6 in this sub-task. Use only under Axway support supervision
 
 <!-- -->
 
--   ? ABSSL: Lists the CFTTSSL sub-task status, and forces an ABEND-S0C6 in this sub-task. Use only under Axway support supervision 
+- ? ABSSL: Lists the CFTTSSL sub-task status, and forces an ABEND-S0C6 in this sub-task. Use only under Axway support supervision 
 
 <!-- -->
 
--   ? ABCOM, ABCOS, and ABLOG: Lists the CFTCOM, CFTCOMS, CFTLOG task status and launches an ABEND-S0C6 in the sub-task. Use only under Axway support supervision
--   ? TIOT: Lists the active entries in the TIOT (task I/O table).
+- ? ABCOM, ABCOS, and ABLOG: Lists the CFTCOM, CFTCOMS, CFTLOG task status and launches an ABEND-S0C6 in the sub-task. Use only under Axway support supervision
+- ? TIOT: Lists the active entries in the TIOT (task I/O table).
 
 ### DISPLAY command response
 
@@ -230,11 +230,11 @@ The ? command enables you to find the status of certain Transfer CFT components.
 
 ```
 DTSK01I TASK SUMMARY (SGNUC=001EA000):
-DTSK02I 002BFA20 " L62RCAK" EPA=07602480 OWN=CFTR324  PRIVATE.
+DTSK02I 002BFA20 " L62RCAK" EPA=07602480 OWN=CFTR324 PRIVATE.
 Addr task block, EPA, user name, type-private/ OS
 DTOD03I TOD=16:11:50:155444.
 TOD of the last DISPATCH
-DTSK03I 0022F000 "CFTTPRO " EPA=00000000 TCB=006F6388 OWN=CFTR223.   OS Task
+DTSK03I 0022F000 "CFTTPRO " EPA=00000000 TCB=006F6388 OWN=CFTR223. OS Task
 ```
 
 #### FILES
@@ -243,7 +243,7 @@ DTSK03I 0022F000 "CFTTPRO " EPA=00000000 TCB=006F6388 OWN=CFTR223.   OS Task
 DFIL01I FILE SUMMARY:
 DFIL02I 0022EE90 FIL00007 SOP$CFT.REF.C324.COM UPDATE
 Addr FCB, DDNAME, DSNAME, Access type
-DFIL04I Read=2550 Write=145 TOD=14:01:27:985867 GU  SGFVSDIR 240517 B102162Read count, write count, TOD of the last access, operation, module/date/revision
+DFIL04I Read=2550 Write=145 TOD=14:01:27:985867 GU SGFVSDIR 240517 B102162Read count, write count, TOD of the last access, operation, module/date/revision
 ```
 
 #### ENQ
@@ -262,11 +262,11 @@ ENQ TODof the list of waiting requesters
 #### SCB
 
 ```
-DSCB01I SCB SUMMARY:                                                   DSCB02I:ADR=002BF520 RF=1BB20069 FL=110000E8 OW=001FEA20(CFTINTV ) PC=0
+DSCB01I SCB SUMMARY: DSCB02I:ADR=002BF520 RF=1BB20069 FL=110000E8 OW=001FEA20(CFTINTV ) PC=0
  
-TM=8640001.                                                             Addr File, Reference, flags, Creative tasks, Number of posted messages, Waiting time, 1/100ths
+TM=8640001. Addr File, Reference, flags, Creative tasks, Number of posted messages, Waiting time, 1/100ths
  
-DTOD03I TOD=12:07:57:156629.                                            TOD of hold
+DTOD03I TOD=12:07:57:156629. TOD of hold
 ```
 
 #### APF
@@ -279,7 +279,7 @@ CARM01I Automatic restart for CFTR223 (STC05479) started, Element="XIDPARM
 
 If APF is ON, the name of the ARM element used is recorded.
 
-####   MEM
+#### MEM
 
 Real space used by CFT 0116BEA0 freed on pages 0003A160 allocated below 002B6000 freed below 0000C7A0
 
@@ -287,4 +287,4 @@ The formatting is found in the SGTRACE file, such as in a z/OS dump, and calls 
 
 Related topics
 
-The ? command
+[The ? command]()

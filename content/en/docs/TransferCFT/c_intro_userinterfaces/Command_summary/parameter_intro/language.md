@@ -14,9 +14,9 @@
 The programming language of the application that uses the statistical
 data, either:
 
--   COBOL
+- COBOL
     (default value): If necessary, the data fields are padded with blanks
--   C:
+- C:
     If necessary, the data fields are padded with binary zeros
 
 [Return to Command index](../../)

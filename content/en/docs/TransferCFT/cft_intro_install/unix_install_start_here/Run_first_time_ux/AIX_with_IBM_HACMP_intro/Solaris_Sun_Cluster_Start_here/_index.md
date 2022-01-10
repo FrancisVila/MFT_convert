@@ -11,13 +11,13 @@ Sun cluster.
 
 System requirements:
 
--   Solaris 10
+- Solaris 10
 
 Software requirements:
 
--   Sun Cluster 3.0
+- Sun Cluster 3.0
     or 3.1
--   Transfer CFT
+- Transfer CFT
 
 ## Transfer CFT and Sun cluster integration
 
@@ -26,11 +26,11 @@ with Sun Cluster.
 
 The choice of GDS was based on:
 
--   Rapid and direct
+- Rapid and direct
     integration with Sun Cluster
--   Relative ease of
+- Relative ease of
     configuration of GDS, requiring only three scripts: start, stop and test
--   Transfer CFT already
+- Transfer CFT already
     includes the scripts capable of executing the operations called by GDS
 
 Sun Cluster operates under the **root** user. The scripts **cftstartFailover**,

@@ -8,7 +8,7 @@
 
 \[ RPASSWD = *string*, \_AUTH\_\]
 
-Password for the user who is receiving the file. You can provide this directly,  or through an external flat file using the following format:
+Password for the user who is receiving the file. You can provide this directly, or through an external flat file using the following format:
 
 part1 user1 passwd1
 
@@ -26,6 +26,6 @@ Example
 
 > **Note**
 >
-> If you begin a password with an indirection character (Unix @, Windows #), it is  considered a reference to a file and not part of the password.
+> If you begin a password with an indirection character (Unix @, Windows #), it is considered a reference to a file and not part of the password.
 
 [Return to Command index](../../)

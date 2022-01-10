@@ -17,16 +17,16 @@ completion of the reception of a file.
 
 This name may include the following symbolic variables:
 
--   &IDF, &PARM
--   &PART, &RPART,
+- &IDF, &PARM
+- &PART, &RPART,
     &SPART, &GROUP
--   &RUSER, &SUSER,
+- &RUSER, &SUSER,
     &USERID
--   &RAPPL, &SAPPL
--   &NIDF
+- &RAPPL, &SAPPL
+- &NIDF
 
 The character ‘&’ designates the char\_symb character defined in
-the  {{< TransferCFT/componentshortname  >}} *Operations Guide* corresponding to your OS.
+the {{< TransferCFT/componentshortname  >}} *Operations Guide* corresponding to your OS.
 
 > **Note**
 >

@@ -16,7 +16,7 @@ Resolution
 
 When using PeSIT with TCP/IP, you cannot use more than one CFTNET that has the same defined network resource (same CLASS parameter value).
 
-You must use the same CFTNET CLASS value  in the CFTTCP object so the expected source IP is used for a specific partner.
+You must use the same CFTNET CLASS value in the CFTTCP object so the expected source IP is used for a specific partner.
 
 ### Register request failure
 

@@ -11,25 +11,25 @@ setting commands and operating commands.
 
 ## Overview
 
-All Transfer CFT  actions are controlled
+All Transfer CFT actions are controlled
 by a series of Transfer CFT commands. CFTUTIL makes it possible to create the working environment and configure
 the Transfer CFT application, performing the following operations:
 
--   Transfer CFT configuration,
+- Transfer CFT configuration,
     which is the customization for a given operating environment
--   Transfer CFT use,
+- Transfer CFT use,
     which includes the initiation and monitoring of transfers
 
 More precisely, with CFTUTIL you can:
 
--   Create and delete
+- Create and delete
     parameter, partner, catalog, log, and account files. Such operations can
     be performed only when the Transfer CFT is stopped.
--   Change and add
+- Change and add
     to certain parameters.
--   View parameter,
+- View parameter,
     partner, catalog, log, and account files.
--   Send commands to
+- Send commands to
     Transfer CFT.
 
 For a complete listing of all Transfer
@@ -40,7 +40,7 @@ command topic, refer to the [Command index](../../c_intro_userinterfaces/command
 
 ### Command syntax
 
-For each command, CFTUTIL checks the command syntax and enters the command. Refer to  *[Typographical
+For each command, CFTUTIL checks the command syntax and enters the command. Refer to *[Typographical
 conventions](../../gettingstarted_intro/my_first_transfer_flow_using_cg/typographical_conventions)* for the Transfer CFT command syntax conventions used in this document.
 
 <span id="CFTUTIL_commands"></span>
@@ -49,9 +49,9 @@ conventions](../../gettingstarted_intro/my_first_transfer_flow_using_cg/typograp
 
 The CFTUTIL commands can be divided into three categories:
 
--   Transfer CFT services
--   Querying and extracting
--   File management
+- Transfer CFT services
+- Querying and extracting
+- File management
 
 When querying or extracting, the files read do not necessarily correspond
 to the ones which Transfer CFT is currently using. The files
@@ -65,21 +65,21 @@ medium or local communication means.
 
 CFTUTIL can be used in three different modes:
 
--   Command mode, for
+- Command mode, for
     example:
 
 ```
 > CFTUTIL SEND PART=PART1, IDF=IDF1,
 ```
 
--   Batch mode, for
+- Batch mode, for
     example:
 
 ```
 > CFTUTIL #file.smp
 ```
 
--   Interactive line
+- Interactive line
     mode, for example:
 
 ```

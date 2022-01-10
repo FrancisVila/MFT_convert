@@ -8,24 +8,16 @@ must have authorization to make a file available. In the implicit mode,
 IMPL parameter is set to yes, which enables a file to be available for
 transfer without a specific request for that file.
 
-```
-Description
-Use this command to make a file available for transfer
-without it being explicitly requested.
-Parameters
-[IMPL](../../../c_intro_userinterfaces/command_summary/parameter_intro/impl) 
-The implicit send makes a file available. Select from:
+QQQ\_QQQ\_QQQ
 
--   YES
--   NO
+SEND command parameter:
 
-This parameter
-must
-be set to NO for the default model
-file description.
-For other SEND parameters refer to [Sending
-files](../send_command_basics).
-```
+
+| Command description | Use this command to make a file available for transfer without it being explicitly requested.  |
+| --- | --- |
+| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/impl">IMPL</a> parameter | The implicit send makes a file available. Select from:<br/> • YES<br/> • NO<br/> This parameter must be set to NO for the default model file description. |
+| Other parameters | For other SEND parameters refer to <a href="../send_command_basics">Sending files</a>.  |
+
 
 For SEND command details refer to the following syntax:
 
@@ -40,13 +32,13 @@ For SEND command details refer to the following syntax:
 
 \[ [ACKEXEC](../../../c_intro_userinterfaces/command_summary/parameter_intro/ackexec) = filename\]
 
-\[ ACKMINDATE = date \]
+\[ [ACKMINDATE]() = date \]
 
-\[ ACKMINTIME = time \]
+\[ [ACKMINTIME]() = time \]
 
-\[ ACKSTATE = { REQUIRE | IGNORE } \]
+\[ [ACKSTATE]() = { REQUIRE | IGNORE } \]
 
-\[ ACKTIMEOUT = { 0 | n }
+\[ [ACKTIMEOUT]() = { 0 | n }
 \]
 
 \[ [APPCYCID](../../../c_intro_userinterfaces/command_summary/parameter_intro/appcycid)
@@ -55,7 +47,7 @@ For SEND command details refer to the following syntax:
 \[ [APPOBJID](../../../c_intro_userinterfaces/command_summary/parameter_intro/appobjid)
 = string \]
 
-\[ ARCHIVEFNAME = string \]
+\[ [ARCHIVEFNAME]() = string \]
 
 \[ [COMMENT](../../../c_intro_userinterfaces/command_summary/parameter_intro/comment)
 = string \]
@@ -89,7 +81,7 @@ For SEND command details refer to the following syntax:
 
 \[ [FACTION](../../../c_intro_userinterfaces/command_summary/parameter_intro/faction)
 = {
-| DELETE | ERASE |  ARCHIVE } \]
+| DELETE | ERASE | ARCHIVE } \]
 
 \[ [FBLKSIZE](../../../c_intro_userinterfaces/command_summary/parameter_intro/fblksize)
 = n \]
@@ -126,7 +118,7 @@ For SEND command details refer to the following syntax:
  = { filename
 | mask | dirname | #filename | #mask | #dirname } \]
 
-\[ FNAMEABS
+\[ [FNAMEABS]()
 = { YES | NO }  \]
 
 \[ [FORG](../../../c_intro_userinterfaces/command_summary/parameter_intro/forg)
@@ -165,7 +157,7 @@ For SEND command details refer to the following syntax:
 \[ [MINDATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/mindate)
 = { | date } \]
 
-\[ MAXDURATION = ** **<u>0</u>...32767} \]
+\[ [MAXDURATION]() = ** **<u>0</u>...32767} \]
 
 \[ [MINTIME](../../../c_intro_userinterfaces/command_summary/parameter_intro/mintime)
 = {
@@ -267,13 +259,13 @@ For SEND command details refer to the following syntax:
 
 \[ [WORKINGDIR](../../../c_intro_userinterfaces/command_summary/parameter_intro/workingdir) = string \]
 
-\[ WPHASES = { string } \]
+\[ [WPHASES]() = { string } \]
 
-\[ WPHASESTEPS = { string } \]
+\[ [WPHASESTEPS]() = { string } \]
 
-\[ WSTATES = { string } \]
+\[ [WSTATES]() = { string } \]
 
-\[ WTIMEOUT = { integer } \]
+\[ [WTIMEOUT]() = { integer } \]
 
 \[ [XLATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/xlate)
 = identifier \]

@@ -18,7 +18,7 @@ user uses the environment variable by prefixing its name with the character
 ‘$’. The variable name that corresponds to the logical file name is developed
 into the physical name.
 
-Example    
+Example
 
 The environment variable `[FULL_NAME]` provides a definition
 to the operating system as follows:
@@ -27,7 +27,7 @@ to the operating system as follows:
 CFT parameterization: FNAME = $FULL\_NAME
 
 The implementation of a certain number of non-standard functions is
-shown in  [Windows specific system functions](#). These
+shown in [Windows specific system functions](#). These
 functions are mostly system functions, but include some network functions.
 
 #### Using the SET command

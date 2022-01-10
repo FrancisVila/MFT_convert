@@ -17,9 +17,9 @@ being degraded by the systematic establishing of a protocol connection.
 
 Time-out role
 
-<img src="/Images/TransferCFT/Timeout_role3.gif" class="maxWidth" width="730" height="439" alt="Protocol session time out role betweeen a requester and server " />
+![$2]($1)
 
-#### PeSIT  CFT/CFT
+#### PeSIT CFT/CFT
 
 The following two diagrams show how the REVERSE command is used to concatenate
 transfers in different directions over the same protocol connection. This
@@ -36,8 +36,8 @@ for which it was initially server.
 
 One-way protocol connection
 
-<img src="/Images/TransferCFT/One_way_protocol_connection.gif" class="maxWidth" width="714" height="439" alt="One way protocol session connection between requester and server" />
+![$2]($1)
 
 Two-way protocol connection
 
-<img src="/Images/TransferCFT/Two_way_protocol_connection.gif" class="maxWidth" width="722" height="372" alt="Two way protocol session connection between requester and server" />
+![$2]($1)

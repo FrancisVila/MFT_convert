@@ -2,7 +2,7 @@
     "title": "Start A00CUSTO to customize installation files",
     "linkTitle": " Customize installation files &#40;A00CUSTO&#41;",
     "weight": "200"
-}<span id="Customizing JCL A00CUSTO parameters"></span><span id="kanchor71"></span>
+}<span id="Customizing JCL A00CUSTO parameters"></span><span id="kanchor77"></span>
 
 ## Customize JCL A00CUSTO parameters
 
@@ -12,17 +12,17 @@ The A00CUSTO JOB customizes the installation files. The customization is done di
 
 > **Note**
 >
-> Do            NOT customize the distribution environment.
+> Do NOT customize the distribution environment.
 
 
 | Variables  | Description  |
 | --- | --- |
-|  CFTV2  |  Prefix of the Transfer CFT instance environment.  |
-|  DISTLIB  |  Three first qualifiers of the distribution environment.<br/>Example: Axway.XFB.CFT00332  |
-|  DISTLEV  |  Fourth qualifier of the distribution environment (level of distribution)<br/>Example: CF030000  |
+| CFTV2 | Prefix of the Transfer CFT instance environment. |
+| DISTLIB | Three first qualifiers of the distribution environment.<br/> Example: Axway.XFB.CFT00332 |
+| DISTLEV | Fourth qualifier of the distribution environment (level of distribution)<br/> Example: CF030000 |
 
 
-You can repeat A00CUSTO several times to customize any  parameters that were not customized.
+You can repeat A00CUSTO several times to customize any parameters that were not customized.
 
 ## Advanced parameters
 
@@ -34,8 +34,8 @@ The parameters can be modified in the A12OPTSP member. For more information, ref
 
 After completing the initial A00CUSTO customization, you can use the JCL A04RPLAY to repeat this process. This JCL recopies the members from distribution environment to the target environment (including the INSTALL, EXEC, UPARM and SAMPLE libraries).
 
-Once the JOB is complete, update the A03PARM file in the target environment  and resubmit the JCL A00CUSTO.
+Once the JOB is complete, update the A03PARM file in the target environment and resubmit the JCL A00CUSTO.
 
 Related topics
 
--   Installation overview
+- [Installation overview]()

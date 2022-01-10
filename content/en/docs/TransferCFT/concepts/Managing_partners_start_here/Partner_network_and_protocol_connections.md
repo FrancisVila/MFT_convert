@@ -74,11 +74,11 @@ next paragraph.
 ### Application connection SAP
 
 Transfer CFT can authorize several application protocols per partner
-(PeSIT,  ODETTE). A requester Transfer CFT must consequently address:
+(PeSIT, ODETTE). A requester Transfer CFT must consequently address:
 
--   A computer: network
+- A computer: network
     address
--   An application:
+- An application:
     a protocol of the corresponding Transfer CFT
 
 Transfer CFT (server) is seen as several applications by
@@ -88,12 +88,12 @@ Points (SAP). Each SAP is associated with one and only one Transfer CFT
 protocol; so, from the SAP value presented with the connection request,
 Transfer CFT can determine the protocol that it has to use.
 
-This general statement,  
+This general statement,
 must be made according to the network access methods used.
 
 More specifically:
 
--   At the requester
+- At the requester
     end - remote SAP:
     -   When the
         transfer is activated, the requester Transfer CFT chooses a protocol (PROT
@@ -102,7 +102,7 @@ More specifically:
     -   The SAP
         parameter of the CFTPART object determines the partner application access
         point.
--   At the server end - local SAP:
+- At the server end - local SAP:
     -   The SAP
         value allows Transfer CFT to define the associated protocol, by linking
         this value with those of the SAP parameters of the CFTPROT objects
@@ -114,7 +114,7 @@ More specifically:
         parameters that the server Transfer CFT previously defined for it, during
         the initialization phase
 
-Example of the protocol recognition  
+Example of the protocol recognition
 in TCP
 
 This figure illustrates TCP example of the protocol recognition
@@ -124,16 +124,16 @@ principle (SAP).
 
 In this example:
 
-1.  The server call is made in TCP.
-2.  The user wants to use the PeSIT protocol. For this protocol, the SAP parameter is sent as an TCP port.
-3.  The server initiates a TCP connection using serveraddr and the port (SAP). The Transfer CFT server defines the protocol (PESIT) on the basis of the SAP value.
-4.  It checks that the requester is described as supporting this protocol, the PROT parameter of CFTPART, and this network access method (there is a CFTTCP command for the requester).
+1. The server call is made in TCP.
+1. The user wants to use the PeSIT protocol. For this protocol, the SAP parameter is sent as an TCP port.
+1. The server initiates a TCP connection using serveraddr and the port (SAP). The Transfer CFT server defines the protocol (PESIT) on the basis of the SAP value.
+1. It checks that the requester is described as supporting this protocol, the PROT parameter of CFTPART, and this network access method (there is a CFTTCP command for the requester).
 
 The figure below provides a schematic overview of the:
 
--   Links to be established
+- Links to be established
     between the various commands to be set at the requester end
--   SAP as a TCP port
+- SAP as a TCP port
 
 Schematic overview
 

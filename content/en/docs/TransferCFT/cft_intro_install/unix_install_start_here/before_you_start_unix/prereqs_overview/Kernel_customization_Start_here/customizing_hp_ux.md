@@ -4,9 +4,9 @@
     "weight": "200"
 }This topic provides information on customizing the HP-UX kernel, and how to:
 
--   Modify
+- Modify
     the message queue depth
--   Modify
+- Modify
     the number of files used by a process
 
 <span id="Modify_the_message_queue_depth"></span>
@@ -19,30 +19,30 @@ of the *msgtql* kernel parameter to 8192.
 
 To customize the message queue:
 
-1.  Log in as the root and enter
+1. Log in as the root and enter
     the command.
-2.  Select the following sub-menus,
+1. Select the following sub-menus,
     respectively:
     -   Kernel
         Configuration
     -   Configurable
         Parameters
-3.  Set the pointer to the *msgtql*
+1. Set the pointer to the *msgtql*
     parameter.
-4.  Select the *Modify
+1. Select the *Modify
     Configurable Parameter* option in the *Actions*
     menu.
-5.  Enter the new value of this
+1. Enter the new value of this
     parameter.
-6.  Click on *OK*
+1. Click on *OK*
     to confirm the change.
-7.  Select the *Add
+1. Select the *Add
     Exported File System* option in the *Actions*
     menu.
-8.  Select the *Exit*
+1. Select the *Exit*
     option in the *File*
     menu.
-9.  Select the *Create
+1. Select the *Create
     a new kernel now* option and click on *OK*
     to confirm your selection.
 
@@ -54,29 +54,29 @@ By default, HP-UX allows a process to open only 64 files. To customize
 this information, increase the value of the
 kernel parameter to 1024. To do so:
 
-1.  Log in as the *root* and
+1. Log in as the *root* and
     enter the
     command.
-2.  Select the following sub-menus:
+1. Select the following sub-menus:
     -   Kernel
         Configuration
     -   Configurable
         Parameters
-3.  Set the pointer to the *maxfiles*
+1. Set the pointer to the *maxfiles*
     parameter.
-4.  Select the *Modify
+1. Select the *Modify
     Configurable Parameter* option in the **Actions**
     menu.
-5.  Enter the new value for this
+1. Enter the new value for this
     parameter.
-6.  Click on *OK*
+1. Click on *OK*
     to confirm the change.
-7.  Select the *Add
+1. Select the *Add
     Exported File System* option in the *Actions*
     menu.
-8.  Select the *Exit*
+1. Select the *Exit*
     option in the *File*
     menu.
-9.  Select the *Create
+1. Select the *Create
     a new kernel now* option and click on *OK*
     to confirm your selection.

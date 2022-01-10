@@ -24,7 +24,7 @@ The commands CFTRECV and CFTSEND ID = &lt;defaut> are mandatory.
 
 Note: the characteristics of the default model files (CFTSEND and CFTRECV
 with a default identifier) are, unlike the other model files, loaded into
-memory on  {{< TransferCFT/componentshortname  >}} initialization. These characteristics are consequently
+memory on {{< TransferCFT/componentshortname  >}} initialization. These characteristics are consequently
 STATIC parameters.
 
 The use of the CFTRECV ID = &lt;default> command may involve

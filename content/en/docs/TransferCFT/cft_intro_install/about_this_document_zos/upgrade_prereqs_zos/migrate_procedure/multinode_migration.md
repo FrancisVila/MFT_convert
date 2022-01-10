@@ -2,7 +2,7 @@
     "title": "Migrate a multi-node architecture",
     "linkTitle": "Multi&#45;node migration",
     "weight": "250"
-}This section describes the upgrade of an instance of Transfer CFT z /OS configured in multi-node. Perform the sames steps as in the [non multi-node environment](../), with the only difference being the  MIGRCAT, MIGRCOM and PMIGR2 procedures as described in the following sections.
+}This section describes the upgrade of an instance of Transfer CFT z /OS configured in multi-node. Perform the sames steps as in the [non multi-node environment](../), with the only difference being the MIGRCAT, MIGRCOM and PMIGR2 procedures as described in the following sections.
 
 ## Migrate the CATALOG files (MIGRCAT)
 
@@ -91,5 +91,5 @@ Set the Transfer CFT submission option, by STC or JCL, as for the source instan
 Comment the following lines:
 
 ```
-//\*CFTCAT   DD  DISP=SHR,//\*             DSN=&QUAL..CATALOG
+//\*CFTCAT DD DISP=SHR,//\* DSN=&QUAL..CATALOG
 ```

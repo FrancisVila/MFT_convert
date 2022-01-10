@@ -19,12 +19,12 @@ Depending on the origin of the problem it has detected, these traces
 are recorded in one of the following files:
 
 
-|  Name of the Trace file  |  Source of the problem  |
+| Name of the Trace file  | Source of the problem  |
 | --- | --- |
-|  CFTSYSP.TRC  |  Intermediate system section  |
-|  CFTSYSS.TRC  |  Specific Windows system section  |
-|  CFTNET.TRC  |  Network section  |
-|  TCPCLI.TRC and TCPSRV.TRC  |  TCP/IP network section  |
+| CFTSYSP.TRC  | Intermediate system section  |
+| CFTSYSS.TRC  | Specific Windows system section  |
+| CFTNET.TRC  | Network section  |
+| TCPCLI.TRC and TCPSRV.TRC  | TCP/IP network section  |
 
 
 By default Transfer CFT automatically generates these trace files in the folder:`runtime\run folder`

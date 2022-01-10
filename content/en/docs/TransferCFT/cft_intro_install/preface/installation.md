@@ -59,9 +59,9 @@ For a new installation, this directory should be empty or nonexistent. However, 
 
 You can use the following additional parameters:
 
--   `--cryptokey_password <password>`: the  `cftcrypt `requires a password to generate an encryption key. You can either provide one using this parameter, or interactively enter it during the installation. Either way, the password is checked against the `cftcrypt `password acceptance criteria, and the installation cannot complete unless a valid password is provided.
--   `<guardian_installation_directory_prefix>` installs the Guardian specific files in its file system space. This parameter is *optional*. It is required only if you want to integrate Transfer CFT with Guardian procedures.
--   `--post_install_script <fullpathtopinstscript>` runs a shell script during the installation procedure after the product has been initialized.
+- `--cryptokey_password <password>`: the `cftcrypt `requires a password to generate an encryption key. You can either provide one using this parameter, or interactively enter it during the installation. Either way, the password is checked against the `cftcrypt `password acceptance criteria, and the installation cannot complete unless a valid password is provided.
+- `<guardian_installation_directory_prefix>` installs the Guardian specific files in its file system space. This parameter is *optional*. It is required only if you want to integrate Transfer CFT with Guardian procedures.
+- `--post_install_script <fullpathtopinstscript>` runs a shell script during the installation procedure after the product has been initialized.
 
 Enter:
 
@@ -93,11 +93,11 @@ The following command does the same as above, but additionally sets a password t
 
 The Transfer CFT installation procedure automatically performs the following:
 
--   Extracts the Transfer CFT package.
--   Creates a Transfer CFT runtime.
--   Initializes the sample configuration.
--   Creates the Transfer CFT database.
--   Creates a default user for Transfer CFT Copilot:
+- Extracts the Transfer CFT package.
+- Creates a Transfer CFT runtime.
+- Initializes the sample configuration.
+- Creates the Transfer CFT database.
+- Creates a default user for Transfer CFT Copilot:
     -   Login: **guest**
     -   Password: **guest**
 
@@ -105,19 +105,19 @@ The Transfer CFT installation procedure automatically performs the following:
 
 ### Guardian files
 
-If you opted to install the Guardian files, several files are created in the Guardian system space. The files' volume and subvolumes  depend on the installation prefix that you provided.
+If you opted to install the Guardian files, several files are created in the Guardian system space. The files' volume and subvolumes depend on the installation prefix that you provided.
 
-For example, `/G/data14/cft38b` creates files where the volume name is $DATA14, the subvolume names  begin with cft38b, and that ends with the values described in the following table.
+For example, `/G/data14/cft38b` creates files where the volume name is $DATA14, the subvolume names begin with cft38b, and that ends with the values described in the following table.
 
 
 | Subvolume  | Description  |
 | --- | --- |
-| &lt;subvolume&gt;IE  |  Contains the Transfer CFT samples.<br/>Some of these samples are copied in the user configuration volume &lt;subvolume&gt;UP, where they can be modified.  |
-| &lt;subvolume&gt;IF  |  Contains the EMS dictionary and DDL template files.<br/>CFTPLATE contains the Transfer CFT templates to be concatenated with the system template for an EMS collector. See  the XCFTDDL section in <a href="">Event messages</a>, which describes the DDL template.  |
-| &lt;subvolume&gt;IX  |  Transfer CFT executables and procedures.  |
+| &lt;subvolume&gt;IE  | Contains the Transfer CFT samples.<br/> Some of these samples are copied in the user configuration volume &lt;subvolume&gt;UP, where they can be modified. |
+| &lt;subvolume&gt;IF  | Contains the EMS dictionary and DDL template files.<br/> CFTPLATE contains the Transfer CFT templates to be concatenated with the system template for an EMS collector. See the XCFTDDL section in <a href="">Event messages</a>, which describes the DDL template. |
+| &lt;subvolume&gt;IX  | Transfer CFT executables and procedures. |
 | &lt;subvolume&gt;IP  | Program samples.  |
 | &lt;subvolume&gt;IH  | Headers.  |
-| <span id="subvolumeUD"></span>&lt;subvolume&gt;UD  |  Default Transfer CFT subvolume.<br/>This is used when Transfer CFT needs to create a Guardian file.  |
+| <span id="subvolumeUD"></span>&lt;subvolume&gt;UD  | Default Transfer CFT subvolume.<br/> This is used when Transfer CFT needs to create a Guardian file. |
 | &lt;subvolume&gt;UP  | Contains the procedures copied from the installation samples.  |
 
 
@@ -129,11 +129,11 @@ After the installation completes, enter the Transfer CFT license key in the `<in
 
 ## Install the Guardian specific files
 
-If you ran the installation procedure without providing the parameter `<guardian_installation_`directory\_prefix>, the Guardian specific files were not installed. However, you can  install these files  later by calling the Guardian installation script.
+If you ran the installation procedure without providing the parameter `<guardian_installation_`directory\_prefix>, the Guardian specific files were not installed. However, you can install these files later by calling the Guardian installation script.
 
-1.  Load the Transfer CFT profile:
-2.  Install the Guardian files:
-3.  ```
+1. Load the Transfer CFT profile:
+1. Install the Guardian files:
+1. ```
     cftginst.sh --help
     ```
-4.  Since installing the Guardian files modifies the Transfer CFT profile, you must reload the profile:
+1. Since installing the Guardian files modifies the Transfer CFT profile, you must reload the profile:

@@ -2,65 +2,65 @@
     "title": "Building  API in Visual Basic",
     "linkTitle": "Building API in Visual Basic",
     "weight": "250"
-}The  {{< TransferCFT/componentshortname  >}} API toolkit contains a dynamic library, which enables
-users to develop a  {{< TransferCFT/componentshortname  >}} API application, that was itself developed
+}The {{< TransferCFT/componentshortname  >}} API toolkit contains a dynamic library, which enables
+users to develop a {{< TransferCFT/componentshortname  >}} API application, that was itself developed
 in Visual Basic. This library and the sample supplied have been validated
 for Visual Basic version 4.0 and higher.
 
-The  {{< TransferCFT/componentshortname  >}} APIs enable you to implement the facilities
+The {{< TransferCFT/componentshortname  >}} APIs enable you to implement the facilities
 described in [About API](../../../../about_this_document_zos/using_apis).
 
--   Cftai:
+- Cftai:
     catalog consultation
--   Cftau:
+- Cftau:
     transfer commands with syntactical analysis
--   Cftac:
+- Cftac:
     transfer commands without syntactical analysis
 
-The  {{< TransferCFT/componentshortname  >}} API Visual Basic call structures and return
-codes are the same as for the equivalent functions for the  {{< TransferCFT/componentshortname  >}}
-API functions in C. For more information, refer to     [Using  {{< TransferCFT/componentshortname  >}} services in C](../../../../about_this_document_ibmi/using_apis/using_cft_services_in_c).
+The {{< TransferCFT/componentshortname  >}} API Visual Basic call structures and return
+codes are the same as for the equivalent functions for the {{< TransferCFT/componentshortname  >}}
+API functions in C. For more information, refer to [Using {{< TransferCFT/componentshortname  >}} services in C](../../../../about_this_document_ibmi/using_apis/using_cft_services_in_c).
 
 ### Visual Basic toolkit
 
 {{< TransferCFT/componentshortname  >}} Windows provides:
 
--   a sample of a Visual
+- a sample of a Visual
     Basic program
--   a dynamic library
-    cftvb.dll to allow interfacing between  {{< TransferCFT/componentshortname >}}/Windows
+- a dynamic library
+    cftvb.dll to allow interfacing between {{< TransferCFT/componentshortname >}}/Windows
     XXX with a Visual Basic application
--   a file
+- a file
     cftapivb.bas containing the statements necessary to use the cftvb.dll
     dynamic library
 
 The cftvb.dll dynamic library:
 
--   must be visible
-    to all Visual Basic applications using the  {{< TransferCFT/componentshortname >}} APIs
--   itself uses
+- must be visible
+    to all Visual Basic applications using the {{< TransferCFT/componentshortname >}} APIs
+- itself uses
     the dynamic library apicft.dll (programming interface in C) supplied
-    with  {{< TransferCFT/componentshortname >}}/Windows, and must therefore be visible to that
--   exports the
+    with {{< TransferCFT/componentshortname >}}/Windows, and must therefore be visible to that
+- exports the
     functions set out below
 
 The source Visual Basic file cftapivb.bas:
 
--   contains the
+- contains the
     statements of structure and of functions required to use the Transfer
     CFT APIs in a Visual Basic program
--   must be incorporated
-    into all projects using the Visual Basic  {{< TransferCFT/componentshortname >}} APIs
+- must be incorporated
+    into all projects using the Visual Basic {{< TransferCFT/componentshortname >}} APIs
 
 ## Available Visual Basic functions
 
-### Initializing and closing a  {{< TransferCFT/componentshortname  >}} API application in Visual Basic
+### Initializing and closing a {{< TransferCFT/componentshortname  >}} API application in Visual Basic
 
 Cft\_Api\_Open (ByVal Version As String) As Integer
 
 API initialization.
 
-This function must be called before any other  {{< TransferCFT/componentshortname  >}} API function.
+This function must be called before any other {{< TransferCFT/componentshortname  >}} API function.
 
 The parameter is the constant CFT\_API\_Version as defined in cftapivb.bas.
 
@@ -70,7 +70,7 @@ Cft\_Api\_Close () As Integer
 
 API close.
 
-This function must be the last  {{< TransferCFT/componentshortname  >}} API function called before
+This function must be the last {{< TransferCFT/componentshortname  >}} API function called before
 the application closes.
 
 The return code is 0 if the APIs have correctly closed.
@@ -106,7 +106,7 @@ Selection of records within the open catalog.
 The parameter is a correctly filled CftSelT structure (see the Cft\_Clear\_Cat
 function).
 
-The return code is 0 if everything is correct. If  not, refer to the
+The return code is 0 if everything is correct. If not, refer to the
 cftai C function (SELECT).
 
 Cft\_Clear\_Cat (CftCat As CftCatT) As Integer

@@ -20,9 +20,9 @@ the first day (MINDATE).
 
 The value ‘time’ may be expressed:
 
--   Explicitly
+- Explicitly
     (absolute time)
--   In
+- In
     SEND or RECV commands, relative to the time the command is taken into
     account
 

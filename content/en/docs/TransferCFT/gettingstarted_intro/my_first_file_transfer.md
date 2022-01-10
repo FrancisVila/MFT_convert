@@ -2,20 +2,20 @@
     "title": "My first file transfer (CL)",
     "linkTitle": "First file transfer with standalone Transfer CFT",
     "weight": "100"
-}After installing your Transfer CFT, you can use the delivered configuration samples and default values to quickly and easily  perform your first transfer.
+}After installing your Transfer CFT, you can use the delivered configuration samples and default values to quickly and easily perform your first transfer.
 
 For more information on starting your {{< TransferCFT/componentshortname  >}}, and basic operational commands, see the section [Start, stop, and {{< TransferCFT/componentshortname  >}} administrative scripts.](../../admin_intro/start_stop_cft)
 
 This topic describes how to:
 
--   [Perform a file transfer using the sample configuration](#Perform)
--   [Perform a standard mode transfer](#Perform2)
--   [Use the explicit mode to get a file](#Use)
--   [Receive multiple files from a partner](#Receive)
--   [Use the implicit transfer mode](#Use2)
--   [Send using open mode](#Send)
--   [Receive using open mode](#Receive2)
--   [Perform broadcast and collect operations](#Perform3)
+- [Perform a file transfer using the sample configuration](#Perform)
+- [Perform a standard mode transfer](#Perform2)
+- [Use the explicit mode to get a file](#Use)
+- [Receive multiple files from a partner](#Receive)
+- [Use the implicit transfer mode](#Use2)
+- [Send using open mode](#Send)
+- [Receive using open mode](#Receive2)
+- [Perform broadcast and collect operations](#Perform3)
 
 <span id="Perform"></span>
 
@@ -35,7 +35,7 @@ To check in the Transfer CFT catalog to confirm that the transfer completed succ
 CFTUTIL listcat
 ```
 
-You should  see that the default file was sent from NEWYORK to PARIS. There are two entries are displayed, this is due to the fact that you performed a loop transfer using the localhost interface.
+You should see that the default file was sent from NEWYORK to PARIS. There are two entries are displayed, this is due to the fact that you performed a loop transfer using the localhost interface.
 
 ```
 Partner  DTSAPP File     Transfer         Records       Diags        Appli.   Appstate.
@@ -55,7 +55,7 @@ The purpose of the My first file transfer section is to help you feel comfortabl
 
 ## What's next?
 
-In the following sections, we'll take a look at additional {{< TransferCFT/componentshortname  >}} transfer modes, as well as some useful configuration parameters. With Transfer CFT, the transfer initiator  can be either the sender  of the file or the receiver, as indicated in the examples below. Additionally, in these examples we will use the convention that the requester is the client, so the transfer description may read **Requester/Sender** if the client is supplying the file.
+In the following sections, we'll take a look at additional {{< TransferCFT/componentshortname  >}} transfer modes, as well as some useful configuration parameters. With Transfer CFT, the transfer initiator can be either the sender of the file or the receiver, as indicated in the examples below. Additionally, in these examples we will use the convention that the requester is the client, so the transfer description may read **Requester/Sender** if the client is supplying the file.
 
 > **Note**
 >
@@ -65,53 +65,28 @@ In the following sections, we'll take a look at additional {{< TransferCFT/compo
 
 ### Perform a standard mode transfer
 
-Let's start by performing the same type of transfer as in the sample configuration above, but without using the samples. First, you need to create two partners,  and then exchange a file.
+Let's start by performing the same type of transfer as in the sample configuration above, but without using the samples. First, you need to create two partners, and then exchange a file.
 
 ![In this example, the Requester Paris site sends file to the Server New York site](/Images/TransferCFT/2013_g_TransferCFT_Standard_mode.png)
 
  
 
-```
 
-Requester/Sender
+| Requester/Sender  | Server/Receiver  |
+| --- | --- |
+| **Configuration**<br/> • Create a partner.<br/> • Create an IDF.<br/> **Runtime**<br/> • Run the transfer.<br/> • Check the catalog. | **Configuration**<br/> • Create a partner.<br/> • Create an IDF.<br/> **Runtime**<br/> • Retrieve the sent file.<br/> • Check the catalog. |
 
-Server/Receiver
-
-**Configuration**
-
-1.  Create a partner.
-2.  Create an IDF.
-
-**Runtime**
-
-1.  Run the transfer.
-
-<!-- -->
-
-1.  Check the catalog.
-
-**Configuration**
-
-1.  Create a partner.
-2.  Create an IDF.
-
-**Runtime**
-
-1.  Retrieve the sent file.
-2.  Check the catalog.
-
-```
 
 View an example
 
 ```
 **/\*REQUESTER/SENDER\*/**
 CFTPART
-     ID =     NEWYORK,      
-PROT =     PESITANY,
-     SAP =     1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for NewYork\*/</span>
-NRPART =     NEWYORK,
-     NSPART =     PARIS,
+ID = NEWYORK,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for NewYork\*/</span>
+NRPART = NEWYORK,
+NSPART = PARIS,
  
 CFTTCP
 ID=NEWYORK,
@@ -128,12 +103,12 @@ LISTCAT
 
 ```
 **/\*SERVER/RECEIVER\*/**
-CFTPART    
-     ID =     PARIS,      
-PROT =     PESITANY,
-     SAP =         1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for Paris\*/</span>
-NRPART =     PARIS,
-     NSPART =     NEWYORK,
+CFTPART
+ID = PARIS,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for Paris\*/</span>
+NRPART = PARIS,
+NSPART = NEWYORK,
  
 CFTTCP
 ID=PARIS,
@@ -147,57 +122,28 @@ LISTCAT
 
 ### Use the explicit mode to get a file
 
-In explicit mode, an application makes a specific file available for a defined partner. Then when that particular remote partner is ready, it can retrieve the  specified file, which only needed to be made available once.
+In explicit mode, an application makes a specific file available for a defined partner. Then when that particular remote partner is ready, it can retrieve the specified file, which only needed to be made available once.
 
-<img src="/Images/TransferCFT/2013_g_TransferCFT_Explicit_mode.png" class="maxWidth" alt="In this example, the Sender site Phoenix has a file available for the Requester Paris site" />
-
- 
-
-```
-
-Server/Sender
-
-Requester/Receiver
-
-Configuration
-
-1.  Create a partner.
-2.  Create an IDF.
+![$2]($1)
 
  
- 
-Runtime
 
-1.  Make your file available.The send command is set with the ‘state=HOLD’ parameter. The HOLD attribute puts the file in the Transfer CFT catalog, and indicates that it is available for the partner.
-2.  Check the catalog.
 
-Configuration
+| Server/Sender  | Requester/Receiver  |
+| --- | --- |
+| Configuration<br/> • Create a partner.<br/> • Create an IDF.<br/> <br/> <br/> Runtime<br/> • Make your file available.<br/> The send command is set with the ‘state=HOLD’ parameter. The HOLD attribute puts the file in the Transfer CFT catalog, and indicates that it is available for the partner.<br/><br/> • Check the catalog. | Configuration<br/> • Create a partner.<br/> • Create an IDF.<br/> <br/> <br/> Runtime<br/> • Receive the available file.<br/> • Check the catalog. |
 
-1.  Create a partner.
-2.  Create an IDF.
-
- 
- 
-Runtime
-
-1.  Receive the available file.
-
-<!-- -->
-
-1.  Check the catalog.
-
-```
 
 View an example
 
 ```
 **/\*SERVER/SENDER\*/**
-CFTPART    
-     ID =     PARIS,      
-PROT =     PESITANY,
-     SAP =     1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for Phoenix\*/</span>
-NSPART =     PHOENIX,
-     NRPART =     PARIS,
+CFTPART
+ID = PARIS,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for Phoenix\*/</span>
+NSPART = PHOENIX,
+NRPART = PARIS,
 CFTTCP
 ID=PARIS,
 HOST = @<Paris address>
@@ -210,12 +156,12 @@ LISTCAT
 ```
 ```
 **/\*REQUESTER/RECEIVER\*/**
-CFTPART    
-     ID =     PHOENIX,      
-PROT =     PESITANY,
-     SAP =     1761, <span style="font-size: 8pt;">/\* remote listening port for Paris \*/</span>
-NSPART =     PARIS,
-     NRPART =     PHOENIX,
+CFTPART
+ID = PHOENIX,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;">/\* remote listening port for Paris \*/</span>
+NSPART = PARIS,
+NRPART = PHOENIX,
 CFTTCP
 ID=PHOENIX,
 HOST = @<Phoenix address>
@@ -230,28 +176,28 @@ LISTCAT
 
 ### Receive multiple files from a partner
 
-This transfer mode is the same as the previously described  explicit mode but provides multiple files for a defined partner. So an application might create several files and set them to an available state, and the remote partner can then retrieve these when ready, for example at a scheduled time.
+This transfer mode is the same as the previously described explicit mode but provides multiple files for a defined partner. So an application might create several files and set them to an available state, and the remote partner can then retrieve these when ready, for example at a scheduled time.
 
 ![In this example, the Sender Phoenix site has multiple files availalbe for the Requester site](/Images/TransferCFT/2013_g_TransferCFT_Multiple_receive.png)
 
  
 
 
-| Server/Sender  |  Requester/Receiver  |
+| Server/Sender  | Requester/Receiver |
 | --- | --- |
-|  Configuration <ol> <li>Create a partner.<br/> • Create an IDF.</li> </ol> Runtime <ol start="3"> <li>Make a file available SEND part=PARIS, idf=INVOICE, state=HOLD.<br/> • Repeat with another file.<br/> • Repeat again with a third file. This ‘HOLD’ attribute puts the files in the Transfer CFT catalog and makes them available for the partner.</li> </ol> <ol start="6"> <li>Check the catalog for 1 entry per transfer. A generic entry is set.</li> </ol>  |  Configuration <ol> <li>Create a partner.<br/> • Create an IDF.</li> </ol> Runtime <ol start="3"> <li>Receive all of the available files:<br /> RECV part=PHOENIX, idf=INVOICE, file=ALL.</li> </ol> <ol start="4"> <li>Check the catalog for 1 entry per transfer. A generic entry is set.</li> </ol>  |
+| Configuration<br/> • Create a partner.<br/> • Create an IDF.<br/> Runtime<br/> • Make a file available SEND part=PARIS, idf=INVOICE, state=HOLD.<br/> • Repeat with another file.<br/> • Repeat again with a third file. This ‘HOLD’ attribute puts the files in the Transfer CFT catalog and makes them available for the partner.<br/> • Check the catalog for 1 entry per transfer. A generic entry is set. | Configuration<br/> • Create a partner.<br/> • Create an IDF.<br/> Runtime<br/> • Receive all of the available files:<br /> RECV part=PHOENIX, idf=INVOICE, file=ALL.<br/> • Check the catalog for 1 entry per transfer. A generic entry is set. |
 
 
 View an example
 
 ```
 **/\*SERVER/SENDER\*/**
-CFTPART    
-     ID =     PARIS,      
-PROT =     PESITANY,
-     SAP =     1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for Phoenix\*/</span>
-NSPART =     PHOENIX,
-     NRPART =     PARIS,
+CFTPART
+ID = PARIS,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for Phoenix\*/</span>
+NSPART = PHOENIX,
+NRPART = PARIS,
 CFTTCP
 ID=PARIS,
 HOST = @<Paris address>
@@ -266,12 +212,12 @@ LISTCAT
 ```
 ```
 **/\*REQUESTER/RECEIVER\*/**
-CFTPART    
-     ID =     PHOENIX,      
-PROT =     PESITANY,
-     SAP =     1761, <span style="font-size: 8pt;">/\* remote listening port for Paris \*/</span>
-NSPART =     PARIS,
-     NRPART =     PHOENIX,
+CFTPART
+ID = PHOENIX,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;">/\* remote listening port for Paris \*/</span>
+NSPART = PARIS,
+NRPART = PHOENIX,
 CFTTCP
 ID=PHOENIX,
 HOST = @<Phoenix address>
@@ -288,26 +234,26 @@ LISTCAT
 
 The implicit transfer mode is often used to make a file whose content is frequently changing available to partners. The file is always available and partners can retrieve it as many time as necessary.
 
-<img src="/Images/TransferCFT/2013_g_TransferCFT_Implicit_mode.png" class="maxWidth" alt="In this example, the Sender Phoenix site has a file whose contents may be frequently updated availbe" />
+![$2]($1)
 
  
 
 
 | Server/Sender  | Requester/Receiver  |
 | --- | --- |
-|  Conf <ol> <li>Create a partner.<br/> • Create an IDF where impl=yes.</li> </ol> Runtime <ol start="3"> <li>The CFTSEND is set with ‘impl=yes’.<br/> • Check the catalog.</li> </ol>  |  Conf <ol> <li>Create a partner.<br/> • Create an IDF.</li> </ol> Runtime <ol start="3"> <li>Receive the file.</li> </ol> <ol start="4"> <li>Check the catalog.</li> </ol>  |
+| Conf<br/> • Create a partner.<br/> • Create an IDF where impl=yes.<br/> Runtime<br/> • The CFTSEND is set with ‘impl=yes’.<br/> • Check the catalog. | Conf<br/> • Create a partner.<br/> • Create an IDF.<br/> Runtime<br/> • Receive the file.<br/> • Check the catalog. |
 
 
 View an example
 
 ```
 **/\*PHOENIX\*/**
-CFTPART    
-     ID =     PARIS,      
-PROT =     PESITANY,
-     SAP =     1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for Phoenix\*/</span>
-NSPART =     PHOENIX,
-     NRPART =     PARIS,
+CFTPART
+ID = PARIS,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for Phoenix\*/</span>
+NSPART = PHOENIX,
+NRPART = PARIS,
 CFTTCP
 ID=PARIS,
 HOST = @<Paris address>
@@ -322,12 +268,12 @@ LISTCAT
 
 ```
 **/\*PARIS\*/**
-CFTPART    
-     ID =     PHOENIX,      
-PROT =     PESITANY,
-     SAP =     1761, <span style="font-size: 8pt;">/\* remote listening port for Paris \*/</span>
-NSPART =     PARIS,
-     NRPART =     PHOENIX,
+CFTPART
+ID = PHOENIX,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;">/\* remote listening port for Paris \*/</span>
+NSPART = PARIS,
+NRPART = PHOENIX,
 CFTTCP
 ID=PHOENIX,
 HOST = @<Phoenix address>
@@ -340,7 +286,7 @@ LISTCAT
 ```
 <span id="Send"></span>
 
-### Send using open mode  
+### Send using open mode
 
 This mode is similar to the FTP put command. It allows you to define the file name in the remote partner. The receiver must accept the open mode. Then, using a simple SEND command allows you to send a file to a partner in a dedicated directory with a dedicated file name.
 
@@ -351,7 +297,7 @@ This mode is similar to the FTP put command. It allows you to define the file na
 
 | Requester/Sender  | Server/Receiver  |
 | --- | --- |
-|  Conf <ol> <li>Create a partner.<br/> • Create a CFTSEND with fname=&lt;FILE_TO_SEND&gt;, nfname=cft/filpub/fic.txt …</li> </ol> Runtime <ol start="3"> <li>Run the transfer.</li> </ol> <ol start="4"> <li>Check the catalog.</li> </ol>  |  Conf <ol> <li>Create a partner.<br/> • Create an CFTRECV  fname=&amp;nfname…<br/>The syntax ‘fname=&amp;nfname’ means that the receiver allows the open mode. </li> </ol> Runtime <ol start="3"> <li>The file has been stored in the path defined by the client/sender, in this example: cft/filpub/fic.txt.<br/> • Check the catalog.</li> </ol>  |
+| Conf<br/> • Create a partner.<br/> • Create a CFTSEND with fname=&lt;FILE_TO_SEND&gt;, nfname=cft/filpub/fic.txt …<br/> Runtime<br/> • Run the transfer.<br/> • Check the catalog. | Conf<br/> • Create a partner.<br/> • Create an CFTRECV fname=&amp;nfname…<br/> The syntax ‘fname=&amp;nfname’ means that the receiver allows the open mode.<br/><br/> Runtime<br/> • The file has been stored in the path defined by the client/sender, in this example: cft/filpub/fic.txt.<br/> • Check the catalog. |
 
 
 View an example
@@ -359,11 +305,11 @@ View an example
 ```
 **/\*REQUESTER/SENDER\*/**
 CFTPART
-     ID =     NEWYORK,      
-PROT =     PESITANY,
-     SAP =     1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for NewYork\*/</span>
-NRPART =     NEWYORK,
-     NSPART =     PARIS,
+ID = NEWYORK,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for NewYork\*/</span>
+NRPART = NEWYORK,
+NSPART = PARIS,
  
 CFTTCP
 ID=NEWYORK,
@@ -381,12 +327,12 @@ LISTCAT
 ```
 **/\*RECEIVER/SERVER\*/**
  
-CFTPART    
-     ID =     PARIS,      
-PROT =     PESITANY,
-     SAP =         1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for Paris\*/</span>
-NRPART =     PARIS,
-     NSPART =     NEWYORK,
+CFTPART
+ID = PARIS,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for Paris\*/</span>
+NRPART = PARIS,
+NSPART = NEWYORK,
  
 CFTTCP
 ID=PARIS,
@@ -407,9 +353,9 @@ This mode is similar to FTP get command. It allows the receiver to get a file fr
  
 
 
-|  Requester/Receiver  | Server/Sender  |
+| Requester/Receiver | Server/Sender  |
 | --- | --- |
-|  Configuration <ol> <li>Create a partner.<br/> • Create an CFTRECV that defines the fname.</li> </ol> Runtime <ol start="3"> <li>Request the file  stored on the remote server. Run the command: CFTUTIL RECV… nfname=&lt;remote_requested_file&gt;.</li> </ol> <ol start="4"> <li>The file retrieved is stored in the fname location.<br/> • Check the catalog.</li> </ol>  |  Configuration <ol> <li>Create a partner.<br/> • Create an CFTSEND where impl=yes, fname=&amp;nfname.<br/>The syntax ‘fname=&amp;nfname’ means that the server/sender allows the open mode. </li> </ol> Runtime <ol start="3"> <li>The file stored locally in &lt;remote_requested_file&gt; is sent to the client.</li> </ol> <ol start="4"> <li>Verify the catalog</li> </ol>  |
+| Configuration<br/> • Create a partner.<br/> • Create an CFTRECV that defines the fname.<br/> Runtime<br/> • Request the file stored on the remote server. Run the command: CFTUTIL RECV… nfname=&lt;remote_requested_file&gt;.<br/> • The file retrieved is stored in the fname location.<br/> • Check the catalog. | Configuration<br/> • Create a partner.<br/> • Create an CFTSEND where impl=yes, fname=&amp;nfname.<br/> The syntax ‘fname=&amp;nfname’ means that the server/sender allows the open mode.<br/><br/> Runtime<br/> • The file stored locally in &lt;remote_requested_file&gt; is sent to the client.<br/> • Verify the catalog |
 
 
 View an example
@@ -417,11 +363,11 @@ View an example
 ```
 **/\*REQUESTER/RECEIVER\*/**
 CFTPART
-     ID =     NEWYORK,      
-PROT =     PESITANY,
-     SAP =     1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for NewYork\*/</span>
-NRPART =     NEWYORK,
-     NSPART =     PARIS,
+ID = NEWYORK,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for NewYork\*/</span>
+NRPART = NEWYORK,
+NSPART = PARIS,
  
 CFTTCP
 ID=NEWYORK,
@@ -438,12 +384,12 @@ LISTCAT
 
 ```
 **/\*SERVER/SENDER\*/**
-CFTPART    
-     ID =     PARIS,      
-PROT =     PESITANY,
-     SAP =         1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for Paris\*/</span>
-NRPART =     PARIS,
-     NSPART =     NEWYORK,
+CFTPART
+ID = PARIS,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for Paris\*/</span>
+NRPART = PARIS,
+NSPART = NEWYORK,
  
 CFTTCP
 ID=PARIS,
@@ -476,29 +422,29 @@ Additionally, you can define what occurs if a partner is unknown, how the script
 
 | Requester/Sender  | Server/Receiver – PHOENIX  | Server/Receiver – NEWYORK  |
 | --- | --- | --- |
-|  Configuration <ol> <li>Create a first partner NEWYORK.<br/> • Create a second partner PHOENIX.<br/> • Create a broadcast list that contains both part1 and part2.<br/> • Create a CFTSEND.</li> </ol> Runtime <ol start="5"> <li>Using one command, send a file to the broadcast list.<br/> • The file is sent to both partners at the same time.</li> </ol> <ol start="7"> <li>Check the catalog. You should have 3 entries in the catalog, one generic entry and one entry per partner.</li> </ol>  |  Configuration <ol> <li>Create a first partner.<br/> • Create an CFTRECV.</li> </ol> Runtime <ol start="3"> <li>The first partner receives the file.</li> </ol> <ol start="4"> <li>Check the catalog, there should be get one entry for this partner.</li> </ol>  |  Configuration <ol> <li>Create a second partner.<br/> • Create an CFTRECV.</li> </ol> Runtime <ol start="3"> <li>The second partner receives the file.</li> </ol> <ol start="4"> <li>Check the catalog, there should be get one entry for this partner.</li> </ol> <br/>  |
+| Configuration<br/> • Create a first partner NEWYORK.<br/> • Create a second partner PHOENIX.<br/> • Create a broadcast list that contains both part1 and part2.<br/> • Create a CFTSEND.<br/> Runtime<br/> • Using one command, send a file to the broadcast list.<br/> • The file is sent to both partners at the same time.<br/> • Check the catalog. You should have 3 entries in the catalog, one generic entry and one entry per partner. | Configuration<br/> • Create a first partner.<br/> • Create an CFTRECV.<br/> Runtime<br/> • The first partner receives the file.<br/> • Check the catalog, there should be get one entry for this partner. | Configuration<br/> • Create a second partner.<br/> • Create an CFTRECV.<br/> Runtime<br/> • The second partner receives the file.<br/> • Check the catalog, there should be get one entry for this partner.<br/> <br/>  |
 
 
 View an example
 
 ```
 /\*SENDER\*/
-CFTPART    
-     ID =     PHOENIX,      
-PROT =     PESITANY,
-     SAP =     1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for Phoenix\*/</span>
-NSPART =     PARIS,
-     NRPART =     PHOENIX,
+CFTPART
+ID = PHOENIX,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for Phoenix\*/</span>
+NSPART = PARIS,
+NRPART = PHOENIX,
 CFTTCP
 ID=PHOENIX,
 HOST = @<PHOENIX address>
  
-CFTPART    
-     ID =     NEWYORK,      
-PROT =     PESITANY,
-     SAP =     1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for New York\*/</span>
-NSPART =     PARIS,
-     NRPART =     NEWYORK,
+CFTPART
+ID = NEWYORK,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for New York\*/</span>
+NSPART = PARIS,
+NRPART = NEWYORK,
 CFTTCP
 ID=NEWYORK,
 HOST = @<NEWYORK address>
@@ -516,12 +462,12 @@ LISTCAT
 
 ```
 **/\*RECEIVER 1\*/**
-CFTPART    
-     ID =     PARIS,      
-PROT =     PESITANY,
-     SAP =     1761, <span style="font-size: 8pt;">/\* remote listening port for Paris \*/</span>
-NSPART =     PHOENIX,
-     NRPART =     PARIS,
+CFTPART
+ID = PARIS,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;">/\* remote listening port for Paris \*/</span>
+NSPART = PHOENIX,
+NRPART = PARIS,
 CFTTCP
 ID=PARIS,
 HOST = @<PARIS address>
@@ -535,12 +481,12 @@ LISTCAT
 
 ```
 **/\*RECEIVER 2\*/**
-CFTPART    
-     ID =     PARIS,
-PROT =     PESITANY,
-     SAP =     1761, <span style="font-size: 8pt;">/\* remote listening port for Paris \*/</span>
-NSPART =     NEWYORK,
-     NRPART =     PARIS,
+CFTPART
+ID = PARIS,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;">/\* remote listening port for Paris \*/</span>
+NSPART = NEWYORK,
+NRPART = PARIS,
 CFTTCP
 ID=PARIS,
 HOST = @<PARIS address>
@@ -552,38 +498,38 @@ LISTCAT
 
 #### Collecting
 
-Collecting files is the inverse of using a broadcast list.  In the collect transfer mode you can receive  a dedicated file from multiple partners (P*n*). This allows the  receiver, or flow initiator, to receive a file from all defined partners using a single request command.
+Collecting files is the inverse of using a broadcast list. In the collect transfer mode you can receive a dedicated file from multiple partners (P*n*). This allows the receiver, or flow initiator, to receive a file from all defined partners using a single request command.
 
 More information...
 
-![In this example, the Receiver Paris site collects or receives  a dedicated file from multiple partners](/Images/TransferCFT/2013_g_TransferCFT_Collect1.png)
+![In this example, the Receiver Paris site collects or receives a dedicated file from multiple partners](/Images/TransferCFT/2013_g_TransferCFT_Collect1.png)
 
 
-| Client/Receiver  |  Server/Sender<br/>PHOENIX  |  Server/Sender<br/>NEW YORK  |
+| Client/Receiver  | Server/Sender<br/> PHOENIX | Server/Sender<br/> NEW YORK |
 | --- | --- | --- |
-|  Configuration <ol> <li>Create a first partner.<br/> • Create a second partner.<br/> • Create a collect list containing both NEW YORK and PHOENIX.<br/> • Create a CFTRECV.</li> </ol> Runtime <ol start="5"> <li>Using a single command, receive a file from both (all) partners using the defined collect list.</li> </ol> <ol start="6"> <li>Both files are received from both partners at the same time</li> </ol> <ol start="7"> <li>Check the catalog. You should have 3 entries in the catalog, one generic entry and one entry per partner.</li> </ol>  |  Configuration <ol> <li>Create this partner.<br/> • Create an CFTSEND.</li> </ol> Runtime <ol start="3"> <li>This partner makes a file available for the client  SEND state=HOLD.</li> </ol> <ol start="4"> <li>The first partner sends the file.</li> </ol> <ol start="5"> <li>Check the catalog, there should be one entry.</li> </ol>  |  Configuration <ol> <li>Create a this partner.<br/> • Create an CFTSEND.</li> </ol> Runtime <ol start="3"> <li>This partner makes a file available for the client  SEND state=HOLD.</li> </ol> <ol start="4"> <li>The second partner sends the file.<br/> • Check the catalog, there should be one entry.</li> </ol>  |
+| Configuration<br/> • Create a first partner.<br/> • Create a second partner.<br/> • Create a collect list containing both NEW YORK and PHOENIX.<br/> • Create a CFTRECV.<br/> Runtime<br/> • Using a single command, receive a file from both (all) partners using the defined collect list.<br/> • Both files are received from both partners at the same time<br/> • Check the catalog. You should have 3 entries in the catalog, one generic entry and one entry per partner. | Configuration<br/> • Create this partner.<br/> • Create an CFTSEND.<br/> Runtime<br/> • This partner makes a file available for the client SEND state=HOLD.<br/> • The first partner sends the file.<br/> • Check the catalog, there should be one entry. | Configuration<br/> • Create a this partner.<br/> • Create an CFTSEND.<br/> Runtime<br/> • This partner makes a file available for the client SEND state=HOLD.<br/> • The second partner sends the file.<br/> • Check the catalog, there should be one entry. |
 
 
 View an example
 
 ```
 **/\*RECEIVER\*/**
-CFTPART    
-     ID =     PHOENIX,      
-PROT =     PESITANY,
-     SAP =     1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for Phoenix\*/</span>
-NSPART =     PARIS,
-     NRPART =     PHOENIX,
+CFTPART
+ID = PHOENIX,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for Phoenix\*/</span>
+NSPART = PARIS,
+NRPART = PHOENIX,
 CFTTCP
 ID=PHOENIX,
 HOST = @<PHOENIX address>
  
-CFTPART    
-     ID =     NEWYORK,      
-PROT =     PESITANY,
-     SAP =     1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for New York\*/</span>
-NSPART =     PARIS,
-     NRPART =     NEWYORK,
+CFTPART
+ID = NEWYORK,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for New York\*/</span>
+NSPART = PARIS,
+NRPART = NEWYORK,
 CFTTCP
 ID=NEWYORK,
 HOST = @<NEWYORK address>
@@ -601,12 +547,12 @@ LISTCAT
 
 ```
 **/\*SENDER 1\*/**
-CFTPART    
-     ID =     PARIS,      
-PROT =     PESITANY,
-     SAP =     1761, <span style="font-size: 8pt;">/\* remote listening port for Paris \*/</span>
-NSPART =     PHOENIX,
-     NRPART =     PARIS,
+CFTPART
+ID = PARIS,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;">/\* remote listening port for Paris \*/</span>
+NSPART = PHOENIX,
+NRPART = PARIS,
 CFTTCP
 ID=PARIS,
 HOST = @<PARIS address>
@@ -622,12 +568,12 @@ LISTCAT
 
 ```
 **/\*SENDER 2\*/**
-CFTPART    
-     ID =     PARIS,
-PROT =     PESITANY,
-     SAP =     1761, <span style="font-size: 8pt;">/\* remote listening port for Paris \*/</span>
-NSPART =     NEWYORK,
-     NRPART =     PARIS,
+CFTPART
+ID = PARIS,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;">/\* remote listening port for Paris \*/</span>
+NSPART = NEWYORK,
+NRPART = PARIS,
 CFTTCP
 ID=PARIS,
 HOST = @<PARIS address>
@@ -645,4 +591,4 @@ LISTCAT
 
 #### Additional information
 
-Once you understand the basic modes and concepts described in this topic, you can then add processing, symbolic variables, scripts and more to your transfers using other {{< TransferCFT/componentshortname  >}} options and features. See the dedicated sections in this document for details on customizing your transfer flows. A good place to start is [Transfer Concepts](../../concepts/transfer_command_overview), which presents  high-level transfer processing concepts, transfer mode details, and procedural topics.
+Once you understand the basic modes and concepts described in this topic, you can then add processing, symbolic variables, scripts and more to your transfers using other {{< TransferCFT/componentshortname  >}} options and features. See the dedicated sections in this document for details on customizing your transfer flows. A good place to start is [Transfer Concepts](../../concepts/transfer_command_overview), which presents high-level transfer processing concepts, transfer mode details, and procedural topics.

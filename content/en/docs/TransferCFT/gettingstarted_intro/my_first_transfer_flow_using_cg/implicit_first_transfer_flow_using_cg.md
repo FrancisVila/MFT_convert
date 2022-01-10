@@ -8,75 +8,16 @@
 >
 > Implicit Mode implies that the Target is requester, and as such it is the Target that pulls the file.
 
-<img src="/Images/TransferCFT/Implicit_mode_cft_w_cg.png" class="maxWidth" alt="Simplified diagram of a Target Transfer CFT requesting a file from the Source" />
+![$2]($1)
 
-<table>
-   <thead>
-      <tr>
-<th  colspan="2" >  Task         </th>
-<th  >Description         </th>
-<th >Details         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td  ><p>1</p>
-<p> </p>
-<p> </p>
-<p> </p>         </td>
-         <td  ><p>Create a flow where the target is the requester.</p>
-<p> </p>
-<p> </p>
-<p><br />
-</p>         </td>
-         <td  ><p>In click <strong>Flows</strong> &gt; <strong>Add flow</strong>.</p>
-<p>Create a flow named <strong>implicit_flow</strong> and define the identifier as <strong>flow03</strong>.</p>
-<p>To enable implicit mode, select <strong>Target pulls file</strong>.</p>
-<p>Define the MainOffice as the Target, which will pull the file, and Store_89 as the file Source.</p>
-<p><br />
-</p>         </td>
-         <td ><a href="../intro_cg_task_catalog/t_defineflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-      <tr>
-         <td  ><p>2</p>
-<p> </p>
-<p> </p>         </td>
-         <td  ><p>Define the path to the file location.</p>
-<p> </p>
-<p> </p>         </td>
-         <td  ><p>In the File properties of the Source, define the path to the file to be sent.</p>
-<p>You can use, for example, the <code>TEST </code>file located by default in the source {{< TransferCFT/componentshortname  >}}'s <code>runtime/pub</code> folder.</p>
-<p> </p>         </td>
-         <td >          </td>
-      </tr>
-      <tr>
-         <td  ><p>3</p>
-<p> </p>         </td>
-         <td  ><p>Deploy the flow.</p>
-<p> </p>         </td>
-         <td  ><p>In click <strong>Deploy</strong> to save and deploy.</p>
-<p> </p>         </td>
-         <td ><a href="../intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-      <tr>
-         <td  ><p>4</p>
-<p> </p>
-<p> </p>
-<p> </p>         </td>
-         <td  ><p>Execute the RECV command.</p>
-<p> </p>
-<p> </p>
-<p> </p>         </td>
-         <td  >From the  {{< TransferCFT/componentshortname  >}} (MainOffice),  run the following command: <code>CFTUTIL RECV PART=&lt;instance_source&gt;, IDF=flow03</code>
-<p>Remember in our example the source is Store_89, you should replace <code>&lt;instance_source&gt;</code> with the Transfer CFT instance as it appears in your applications.</p>
-<p> </p>         </td>
-         <td ><a href="../../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-      <tr>
-         <td  >5         </td>
-         <td  >Monitor the file transfer status.         </td>
-         <td  >In select the <strong>Flows</strong> tab, and click <strong>Monitoring</strong>.         </td>
-         <td ><a href="../intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-   </tbody>
-</table>
+QQQ\_QQQ\_QQQ
+
+
+|   | Task  | Description  | Details  |
+| --- | --- | --- | --- |
+| 1<br/> <br/> <br/>  | Create a flow where the target is the requester.<br/> <br/> <br/> <br />  | In click **Flows** &gt; **Add flow**.<br/> Create a flow named **implicit_flow** and define the identifier as **flow03**.<br/> To enable implicit mode, select **Target pulls file**.<br/> Define the MainOffice as the Target, which will pull the file, and Store_89 as the file Source.<br/> <br />  | <a href="../intro_cg_task_catalog/t_defineflow">![]($1)</a>  |
+| 2<br/> <br/>  | Define the path to the file location.<br/> <br/>  | In the File properties of the Source, define the path to the file to be sent.<br/> You can use, for example, the <code>TEST </code>file located by default in the source {{< TransferCFT/componentshortname  >}}'s <code>runtime/pub</code> folder.<br/>  |   |
+| 3<br/>  | Deploy the flow.<br/>  | In click **Deploy** to save and deploy.<br/>  | <a href="../intro_cg_task_catalog/t_savedeployflow">![]($1)</a>  |
+| 4<br/> <br/> <br/>  | Execute the RECV command.<br/> <br/> <br/>  | From the {{< TransferCFT/componentshortname  >}} (MainOffice), run the following command: <code>CFTUTIL RECV PART=&lt;instance_source&gt;, IDF=flow03</code> Remember in our example the source is Store_89, you should replace <code>&lt;instance_source&gt;</code> with the Transfer CFT instance as it appears in your applications.<br/>  | <a href="../../../c_intro_userinterfaces/about_cftutil">![]($1)</a>  |
+| 5  | Monitor the file transfer status.  | In select the **Flows** tab, and click **Monitoring**.  | <a href="../intro_cg_task_catalog/c_flow_monitoring">![]($1)</a>  |
+

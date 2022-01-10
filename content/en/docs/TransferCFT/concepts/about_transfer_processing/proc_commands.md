@@ -2,12 +2,12 @@
     "title": "Use processing scripts",
     "linkTitle": "Standard use of processing commands",
     "weight": "180"
-}There are 4  stages where you can configure processing - preprocessing, post-processing, ack processing, and for a transfer error. For these,  Transfer CFT provides global definitions in the static configuration that are used by default. However, you can override the default scripts, in the CFTSEND, SEND, CFTRECV and RECV commands, using the following parameters:
+}There are 4 stages where you can configure processing - preprocessing, post-processing, ack processing, and for a transfer error. For these, Transfer CFT provides global definitions in the static configuration that are used by default. However, you can override the default scripts, in the CFTSEND, SEND, CFTRECV and RECV commands, using the following parameters:
 
--   `Preexec`: for preprocessing
--   `Exec`: for post-processing
--   `Ackexec`: for acknowledge processing
--   `Exece`: for transfer errors
+- `Preexec`: for preprocessing
+- `Exec`: for post-processing
+- `Ackexec`: for acknowledge processing
+- `Exece`: for transfer errors
 
 > **Note**
 >
@@ -43,24 +43,24 @@ CFTUTIL END PART=PART01, IDTU=A0000001
 
 Operating system differences
 
-Depending on the operating system, the  temporary file is treated as follows:
+Depending on the operating system, the temporary file is treated as follows:
 
--   Windows: The temporary file is automatically deleted.
+- Windows: The temporary file is automatically deleted.
 
--   z/OS: The temporary file is automatically deleted.
+- z/OS: The temporary file is automatically deleted.
 
--   IBM i: The temporary file is automatically deleted.
+- IBM i: The temporary file is automatically deleted.
 
--   UNIX: You must add the following lines at the end of the template processing script:
+- UNIX: You must add the following lines at the end of the template processing script:
 
     rm $0
 
     rm $0.err
 
--   HP NonStop native environment: You must perform the following steps to remove the temporary file:
-                    &lt;ul>&lt;li>#PURGE \[#IN\]&lt;/li>&lt;li>The same BTPURGE procedure as in the previous version is delivered and can be executed&lt;/li>&lt;span class="code">RUN &lt;subvolume>UP.BTPURGE \[#DEFAULTS\]&lt;/span>&lt;/ul>&lt;/li>
+- HP NonStop native environment: You must perform the following steps to remove the temporary file:
+    &lt;ul>&lt;li>#PURGE \[#IN\]&lt;/li>&lt;li>The same BTPURGE procedure as in the previous version is delivered and can be executed&lt;/li>&lt;span class="code">RUN &lt;subvolume>UP.BTPURGE \[#DEFAULTS\]&lt;/span>&lt;/ul>&lt;/li>
 
--   HP NonStop OSS environment: You must add the following lines at the end of the template processing script:
+- HP NonStop OSS environment: You must add the following lines at the end of the template processing script:
 
     rm $0
 
@@ -68,7 +68,7 @@ Depending on the operating system, the  temporary file is treated as follows:
 
 <span id="Directly"></span>
 
-### Directly executing a  program or a processing script
+### Directly executing a program or a processing script
 
 Available on Windows and Unix
 
@@ -90,14 +90,14 @@ CFTSEND id=flow01, fname=myfile, exec="cmd:**CFTUTIL** end part=&PART, idt=&IDT
 
 Limitations Unix only
 
-If a command is incorrect and cannot be executed,  the transfer remains in the phasestep C. Possible reasons for this include:
+If a command is incorrect and cannot be executed, the transfer remains in the phasestep C. Possible reasons for this include:
 
--   The command file name is too long
--   The command file name does not point to a regular file
--   The search permission is denied on a component of the command's path prefix
--   The execute permission is denied
--   The system does not support executing this type of file
--   A loop exists in symbolic links encountered during resolution of the path or file argument
+- The command file name is too long
+- The command file name does not point to a regular file
+- The search permission is denied on a component of the command's path prefix
+- The execute permission is denied
+- The system does not support executing this type of file
+- A loop exists in symbolic links encountered during resolution of the path or file argument
 
 > **Note**
 >
@@ -106,7 +106,7 @@ If a command is incorrect and cannot be executed,  the transfer remains in the p
 
 ## Schedule processing
 
-You can use the Premindate/Premintime, Postmindate/Postmintime, and Ackmindate/Ackmintime parameters to schedule script processing activity.  Additionally you can use prestate=Hold to wait for a START to start pre-processing.
+You can use the Premindate/Premintime, Postmindate/Postmintime, and Ackmindate/Ackmintime parameters to schedule script processing activity. Additionally you can use prestate=Hold to wait for a START to start pre-processing.
 
 ## Throttle processing
 
@@ -139,7 +139,7 @@ Example
 CFTUTIL end part=&PART,idtu=&IDTU,istate=no,appstate="completed"
 ```
 
-The command CFTUTIL END can be use to set checkpoints in the script execution using the istate=yes (istate is an intermediate state) and APPSTATE value. Doing so allows you to see the step running the script  in   {{< TransferCFT/componentshortname  >}}.
+The command CFTUTIL END can be use to set checkpoints in the script execution using the istate=yes (istate is an intermediate state) and APPSTATE value. Doing so allows you to see the step running the script in {{< TransferCFT/componentshortname  >}}.
 
 Example
 
@@ -170,7 +170,7 @@ CFTR12I END Treated for USER MY_CFT : FNAME value was "pub/FTEST" and is now "NE
 
 ### Stop
 
-When you execute a CFTUTIL HALT or CFTUTIL KEEP, you can set the DIAGP and DIAGC so that when you restart the script it  executes specific actions depending on the DIAGP and DIAGC that you defined.
+When you execute a CFTUTIL HALT or CFTUTIL KEEP, you can set the DIAGP and DIAGC so that when you restart the script it executes specific actions depending on the DIAGP and DIAGC that you defined.
 
 Example
 
@@ -181,7 +181,7 @@ CFTUTIL KEEP part=&PART,idtu=&IDTU,DIAGP=”Error 404”,DIAGC=”File not found
 
 ### Restart
 
-In your script, you can handle restart from intermediate steps checking the &APPSTATE value. So if the script fails for any reason, you can run a CFTUTIL HALT or CFTUTIL keep then using a CFTUTIL SUBMIT you can restart your script, which  runs from the checkpoint that you set.
+In your script, you can handle restart from intermediate steps checking the &APPSTATE value. So if the script fails for any reason, you can run a CFTUTIL HALT or CFTUTIL keep then using a CFTUTIL SUBMIT you can restart your script, which runs from the checkpoint that you set.
 
 Exa**m**ple  
 
@@ -207,252 +207,108 @@ You can change the maxduration for a transfer restart using the maxduration para
 
 ### SEND, CFTSEND
 
-```
+The following table lists the parameters of the SEND and CFTSEND commands.
 
-Command
+QQQ\_QQQ\_QQQ
 
-Parameter
 
-Value
+| Parameter  | Value  | Description  |
+| --- | --- | --- |
+| ACKMINDATE  | integer  | From this date on, the acknowledgement exec file can be launched.  |
+| ACKMINTIME  | integer  | From this time on, the acknowledgement exec file can be launched.  |
+| POSTMINDATE  | integer  | From this date on, the post processing exec file can be launched.  |
+| POSTMINTIME  | integer  | From this time on, the post processing exec file can be launched.  |
+| PREMINDATE  | integer  | From this date on, the preprocessing exec file can be launched.  |
+| PREMINTIME  | integer  | From this time on, the preprocessing exec file can be launched.  |
+| ACKEXEC  | string  | The acknowledgement exec file that will be launched after receiving an ACK or NACK.  |
+| ACKSTATE  | REQUIRE/IGNORE  | Specify if {{< TransferCFT/componentshortname  >}} should wait for an ACK/NACK to enter the X phase.  |
+| POSTSTATE  | DISP  | The transfer phase step as it enters the Y phase.  |
+| PREEXEC  | string  | The preprocessing exec file.  |
+| PRESTATE  | DISP/HOLD  | The transfer phase step as it enters the A phase.  |
+| EXECSUBPRE  | LIST/SUBF/FILE  | Group of files: execution policy for preprocessing phase.  |
+| EXECSUB  | LIST/SUBF/FILE  | Group of files: execution policy for post-processing phase.  |
+| EXECSUBA  | LIST/SUBF/FILE  | Group of files: execution policy for acknowledgement phase.  |
 
-Description
-
-SEND, CFTSEND
-ACKMINDATE
-integer
-       From this date on, the acknowledgement exec file can be launched.
-ACKMINTIME
-integer
-                                      From this time on, the acknowledgement exec file can be launched.
-POSTMINDATE
-integer
-From this date on, the post processing exec file can be launched.
-POSTMINTIME
-integer
-From this time  on, the post processing exec file can be launched.
-PREMINDATE
-integer
-From this date on, the preprocessing exec file can be launched.
-PREMINTIME
-integer
-From this time on, the preprocessing exec file can be launched.
-ACKEXEC
-string
-The acknowledgement exec file that will be launched after receiving an ACK or NACK.
-ACKSTATE
-REQUIRE/IGNORE
-          Specify if  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> should wait for an ACK/NACK to enter the X phase.
-POSTSTATE
-DISP
-The transfer phase step as it enters the Y phase.
-PREEXEC
-string
-The preprocessing exec file.
-PRESTATE
-DISP/HOLD
-The transfer phase step as it enters the A phase.
-EXECSUBPRE
-LIST/SUBF/FILE
-Group of files: execution policy for preprocessing phase.
-EXECSUB
-LIST/SUBF/FILE
-Group of files: execution policy for post-processing phase.
-EXECSUBA
-LIST/SUBF/FILE
-Group of files: execution policy for acknowledgement phase.
-```
 
 ### END
 
-<table>
-   <thead>
-      <tr>
-<th >Command         </th>
-<th >Parameter         </th>
-<th >Value         </th>
-<th >Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td rowspan="14" >END           </td>
-         <td >DIAGC         </td>
-         <td >string         </td>
-         <td >Specify a comment.         </td>
-      </tr>
-      <tr>
-         <td >FNAME         </td>
-         <td >string         </td>
-         <td >Modify the FNAME.         </td>
-      </tr>
-      <tr>
-         <td >NFNAME         </td>
-         <td >string         </td>
-         <td >Modify the NFNAME.         </td>
-      </tr>
-      <tr>
-         <td >SIGFNAME         </td>
-         <td >string         </td>
-         <td >Modify the SIGFNAME.         </td>
-      </tr>
-      <tr>
-         <td >RAPPL         </td>
-         <td >string         </td>
-         <td >Modify the RAPPL.         </td>
-      </tr>
-      <tr>
-         <td >SAPPL         </td>
-         <td >string         </td>
-         <td >Modify the SAPPL.         </td>
-      </tr>
-      <tr>
-         <td >RUSER         </td>
-         <td >string         </td>
-         <td >Modify the RUSER.         </td>
-      </tr>
-      <tr>
-         <td >SUSER         </td>
-         <td >string         </td>
-         <td >Modify the SUSER.         </td>
-      </tr>
-      <tr>
-         <td >RPASSWD         </td>
-         <td >string         </td>
-         <td >Modify the RPASSWD.         </td>
-      </tr>
-      <tr>
-         <td >SPASSWD         </td>
-         <td >string         </td>
-         <td >Modify the SPASSWD.         </td>
-      </tr>
-      <tr>
-         <td >ISTATE         </td>
-         <td >NO/YES         </td>
-         <td ><p>Indicates:</p>
-<ul>
-<li>YES: The END command is only a checkpoint.</li>
-<li>NO (default): This is the final end command indicating that the processing is over. Once the END completes, the transfer enters  the next phase.</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td >PHASE         </td>
-         <td >char         </td>
-         <td >The transfer phase at which the command is applied.         </td>
-      </tr>
-      <tr>
-         <td >PHASE STEP                 </td>
-         <td >char         </td>
-         <td >The phase step at which the command is applied.         </td>
-      </tr>
-      <tr>
-         <td >APPSTATE         </td>
-         <td >string         </td>
-         <td >Specify an application state for the processing
-script that will help the script to restart at the right step if the
-script is relaunched.         </td>
-      </tr>
-   </tbody>
-</table>
+QQQ\_QQQ\_QQQ
+
+The following table lists the parameters of the END command.
+
+
+| Parameter  | Value  | Description  |
+| --- | --- | --- |
+| DIAGC  | string  | Specify a comment.  |
+| FNAME  | string  | Modify the FNAME.  |
+| NFNAME  | string  | Modify the NFNAME.  |
+| SIGFNAME  | string  | Modify the SIGFNAME.  |
+| RAPPL  | string  | Modify the RAPPL.  |
+| SAPPL  | string  | Modify the SAPPL.  |
+| RUSER  | string  | Modify the RUSER.  |
+| SUSER  | string  | Modify the SUSER.  |
+| RPASSWD  | string  | Modify the RPASSWD.  |
+| SPASSWD  | string  | Modify the SPASSWD.  |
+| ISTATE  | NO/YES  | Indicates:<br/> • YES: The END command is only a checkpoint.<br/> • NO (default): This is the final end command indicating that the processing is over. Once the END completes, the transfer enters the next phase. |
+| PHASE  | char  | The transfer phase at which the command is applied.  |
+| PHASE STEP  | char  | The phase step at which the command is applied.  |
+| APPSTATE  | string  | Specify an application state for the processing script that will help the script to restart at the right step if the script is relaunched.  |
+
 
 ### KEEP
 
-```
+QQQ\_QQQ\_QQQ
 
-Command
+The following table lists the parameters of the KEEP command.
 
-Parameter
 
-Value
+| Parameter  | Value  | Description  |
+| --- | --- | --- |
+| DIAGP  | string  | Specify a customized error that will be set for DIAGP in the catalog.  |
+| DIAGC  | string  | Specify a customized error that will be set for DIAGC in the catalog.  |
+| PHASE  | char  | The transfer phase at which the command is applied.  |
+| PHASE STEP  | char  | The phase step at which the command is applied.  |
 
-Description
-
-KEEP
-DIAGP            
-string
-Specify a customized error that will be set for DIAGP in the catalog.
-DIAGC            
-string
-Specify a customized error that will be set for DIAGC in the catalog.
-PHASE
-char
-The transfer phase at which the command is applied.
-PHASE STEP
-char
-The phase step at which the command is applied.
-```
 
 ### HALT
 
-```
+QQQ\_QQQ\_QQQ
 
-Command
+The following table lists the parameters of the HALT command.
 
-Parameter
 
-Value
+| Parameter  | Value  | Description  |
+| --- | --- | --- |
+| DIAGP  | string  | Specify a customized error that will be set for DIAGP in the catalog.  |
+| DIAGC  | string  | Specify a customized error that will be set for DIAGC in the catalog.  |
+| PHASE  | char  | The transfer phase at which the command is applied.  |
+| PHASE STEP  | char  | The phase step at which the command is applied.  |
 
-Description
-
-HALT
-DIAGP
-string
-Specify a customized error that will be set for DIAGP in the catalog.
-DIAGC
-string
-Specify a customized error that will be set for DIAGC in the catalog.
-PHASE
-char
-The transfer phase at which the command is applied.
-PHASE STEP
-char
-The phase step at which the command is applied.
-```
 
 ### SUBMIT
 
-```
+QQQ\_QQQ\_QQQ
 
-Command
+The following table lists the parameters of the SUBMIT command.
 
-Parameter
 
-Value
+| Parameter  | Value  | Description  |
+| --- | --- | --- |
+| APPSTATE  | string  | Specify an application state for the processing script that will allow a SUBMIT to occur at the correct script step.  |
+| PHASE  | char  | The transfer phase at which the command is applied.  |
+| PHASE STEP  | char  | The phase step at which the command is applied.  |
 
-Description
-
-SUBMIT
-APPSTATE          
-string
-Specify an application state for the
-processing script that will allow a SUBMIT to occur at the correct script step.
-PHASE
-char
-The transfer phase at which the command is applied.
-PHASE STEP
-char
-The phase step at which the command is applied.
-```
 
 ### START
 
-```
+QQQ\_QQQ\_QQQ
 
-Command
+The following table lists the parameters of the START command.
 
-Parameter
 
-Value
+| Parameter  | Value  | Description  |
+| --- | --- | --- |
+| PHASE  | char  | The transfer phase at which the command is applied.  |
+| MAXDURATION  | integer  | Restart a transfer that reached its maxduration, time in minutes {<u>0</u>...32767}.  |
+| PHASE STEP  | char  | The phase step at which the command is applied.  |
 
-Description
-
-START
-PHASE
-char
-The transfer phase at which the command is applied.
-MAXDURATION
-integer
-Restart a transfer that reached its maxduration, time in minutes {<u>0</u>...32767}.
-PHASE STEP
-char
-The phase step at which the command is applied.
-```

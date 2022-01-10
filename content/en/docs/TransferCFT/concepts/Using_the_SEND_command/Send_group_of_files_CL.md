@@ -3,10 +3,10 @@
     "linkTitle": "Sending a group of files",
     "weight": "200"
 }You can use the FNAME parameter in a SEND command, when prefixed with the &lt;file\_symb>
-indirection character,  to trigger SEND operations that correspond to:
+indirection character, to trigger SEND operations that correspond to:
 
--   A list of file names in an indirection file (SEND FNAME = #LIST for example) in heterogeneous mode only
--   A series of files indicated by a generic name (SEND
+- A list of file names in an indirection file (SEND FNAME = #LIST for example) in heterogeneous mode only
+- A series of files indicated by a generic name (SEND
     FNAME = #FIL\* for example) or a directory name (SEND FNAME = #DIRECTORY\\\*)
     -   In homogeneous mode
     -   In heterogeneous mode
@@ -25,21 +25,21 @@ indirection character,  to trigger SEND operations that correspond to:
 
 You can use a list of file names to send a group of files using the indirection file structure as follows:
 
--   A record can contain
+- A record can contain
     only one file name
--   A file name must
+- A file name must
     begin in the first column
--   The file can contain
+- The file can contain
     empty records
--   The file name cannot contain an asterisk (\*)
+- The file name cannot contain an asterisk (\*)
 
 #### Example
 
 For a file called REPORTS containing the following list:
 
--   file1
--   file2
--   file3
+- file1
+- file2
+- file3
 
 Windows
 
@@ -62,9 +62,9 @@ The files file1, file2 and file3 will be sent.
 If there are N files to be sent, a SEND IDF = ID\_EM, FNAME = #GROUP (or @GROUP)
 ... command generates N+1 transfer entries in the catalog, as follows:
 
--   One entry for each
+- One entry for each
     file transfer (that is N entries)
--   A generic (virtual)
+- A generic (virtual)
     entry, which never triggers an actual transfer but is used locally to
     manage the group of files to be sent
     -   This virtual transfer is identified by a DIAGP code set to LIST\_FI,
@@ -87,8 +87,8 @@ If there are N files to be sent, a SEND IDF = ID\_EM, FNAME = #GROUP (or @GROUP)
 
 For the receiver:
 
--   A catalog entry is created for each file received
--   The name of each file can be specified using the
+- A catalog entry is created for each file received
+- The name of each file can be specified using the
     &FPATH, &FROOT and &FSUF symbolic variables
 
 > **Note**
@@ -103,14 +103,14 @@ If your file contains the list of files to be sent, you must first create a REPO
 
 For example:
 
-1.  CRTLIB MYSEND
-2.  CRTPF FILE(MYSEND/REPORTS) RCDLEN(92) FILETYPE(\*DATA)
-3.  EDTF FILE(MYSEND/REPORTS)
+1. CRTLIB MYSEND
+1. CRTPF FILE(MYSEND/REPORTS) RCDLEN(92) FILETYPE(\*DATA)
+1. EDTF FILE(MYSEND/REPORTS)
     -   Add the list of files to transfer:
         -   MYSEND/FILE1
         -   MYSEND/FILE2
         -   MYSEND/FILE3
-4.  CALL PGM(CFTUTIL) PARM(SEND 'part=paris, idf=LISTFI,fname=#MYSEND/REPORTS')
+1. CALL PGM(CFTUTIL) PARM(SEND 'part=paris, idf=LISTFI,fname=#MYSEND/REPORTS')
 
 <span id="Sending_generic_name_files"></span>
 
@@ -124,13 +124,13 @@ SEND FNAME=#*mask* or SEND FNAME=#*dirname*
 
 Where the FNAME parameter is set to one of the following values:
 
--   A directory name,
+- A directory name,
     *dirname*, in which
     case all files accessible in the directory are to be sent
--   A generic name,
+- A generic name,
     *mask,* including wildcard characters,
     in which case only the selected files are to be sent
--   A directory name
+- A directory name
     and a generic file name, in which case only the files selected in the
     directory are to be sent
 
@@ -147,13 +147,13 @@ These procedure types are described in detail further on in this topic.
 #### Homogeneous send for a group of files
 
 A homogeneous send occurs between two Transfer CFT that run on the same operating
-system. This transfer procedure concatenates at the site sending the group of files  and de-concatenates  upon reception.
+system. This transfer procedure concatenates at the site sending the group of files and de-concatenates upon reception.
 
 Mandatory parameters for homogeneous sends include:
 
--   WFNAME: Determines transmission and reception in homogeneous sends, because
+- WFNAME: Determines transmission and reception in homogeneous sends, because
     the file resulting from the concatenation is the file that is sent.
--   SYST: Defined for a remote partner, where the default value is the local operating system. Homogeneous transfers are only possible when  CFTPART command's SYST value is the same as the local operating system.
+- SYST: Defined for a remote partner, where the default value is the local operating system. Homogeneous transfers are only possible when CFTPART command's SYST value is the same as the local operating system.
 
 
 | Platform  | UNIX-like environment  | Native  |
@@ -170,22 +170,17 @@ Example
 An example of a homogeneous send in a Windows environment:
 
 ```
-cftsend id      = copie,
-        
-fname   = #c:\\e\\cft320\\tmp\\a\*,
-        
-wfname  = c:\\e\\cft320\\&idtu.snd,
-        
-frecfm  = v,
-        ftype   = b,
-mode    = create
-cftrecv id      = copie,
-fname   = c:\\cft320\\bin\\recv,
-        
+cftsend id = copie,
+fname = #c:\\e\\cft320\\tmp\\a\*,
+wfname = c:\\e\\cft320\\&idtu.snd,
+frecfm = v,
+ftype = b,
+mode = create
+cftrecv id = copie,
+fname = c:\\cft320\\bin\\recv,
 faction = delete,
-        
-wfname  = &idtu.rcv,
-ftype   = b
+wfname = &idtu.rcv,
+ftype = b
 ```
 
 #### Heterogeneous send for a group of files
@@ -202,21 +197,21 @@ Unix: fname =@directory/\*
 
 #### Force heterogeneous mode for a group of files
 
-In  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> both homogeneous and heterogeneous mode are enabled by default. However, you may want to ensure that groups of files are transferred using only the heterogeneous mode. The UCONF configuration parameter<span class="code"> cft.server.force\_heterogeneous\_mode</span> allows you to do this,  effectively disabling  homogeneous mode even if the partner is configured for homogeneous exchanges.  
+In <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> both homogeneous and heterogeneous mode are enabled by default. However, you may want to ensure that groups of files are transferred using only the heterogeneous mode. The UCONF configuration parameter<span class="code"> cft.server.force\_heterogeneous\_mode</span> allows you to do this, effectively disabling homogeneous mode even if the partner is configured for homogeneous exchanges.
 
 For more information on sending groups of files and heterogeneous mode exchanges, see <a href="#" class="selected">Sending a group of files</a>.
 
 To force heterogeneous mode:
 
-1.  Access the unified configuration utility using either [command line](../../../admin_intro/uconf/uconf_w_cftutil) or the UI.
-2.  Set the following parameter to enable forced heterogeneous exchanges for group file transfers.
+1. Access the unified configuration utility using either [command line](../../../admin_intro/uconf/uconf_w_cftutil) or the UI.
+1. Set the following parameter to enable forced heterogeneous exchanges for group file transfers.
 
 Unix/Windows
 
 
 | Parameter  | Default  | Description  |
 | --- | --- | --- |
-| cft.server.force_heterogeneous_mode  | No  |  Force heterogeneous mode for group file transfers. This parameter replaces the deprecated environment variable: CFTSFMCPY.<br/>Possible values:<br/> • Yes: Force heterogeneous mode exchanges (override homogeneous mode)<br/> • No: Standard heterogeneous and homogeneous functioning</li>  |
+| cft.server.force_heterogeneous_mode  | No  | Force heterogeneous mode for group file transfers. This parameter replaces the deprecated environment variable: CFTSFMCPY.<br/> Possible values:<br/> • Yes: Force heterogeneous mode exchanges (override homogeneous mode)<br/> • No: Standard heterogeneous and homogeneous functioning |
 
 
 #### Sending to a remote site in homogeneous mode
@@ -231,7 +226,7 @@ that must be specified in the WFNAME parameter of the send command.
 On the sender side, two entries are
 created in the catalog:
 
--   A generic entry
+- A generic entry
     (LIST\_FI) with the following attributes:
     -   FNAME =
         {dirname | mask}
@@ -241,7 +236,7 @@ created in the catalog:
 Its state is immediately set to K, once it has been created in the catalog.
 This entry is set to the T (or X) state when all transfers have been set to T (or X depending on the compatibility mode).
 
--   A transfer entry
+- A transfer entry
     with the following attributes:
     -   FNAME =
         temp-filename
@@ -265,7 +260,7 @@ apply to the copied/concatenated WFNAME file.
 <span class="autonumber"></span>**Sending to a remote site**
 
 <span class="autonumber"></span>
-<img src="/Images/TransferCFT/send_to_remote_site.png" class="maxWidth" />
+![]($1)
 
 <span id="Heterogeneous send"></span>
 
@@ -277,9 +272,9 @@ send command, it is ignored.
 
 The sender creates the following entries:
 
--   One transfer entry
+- One transfer entry
     for each file selected after analyzing the generic request
--   A generic entry
+- A generic entry
     identified by the DIAGP code set to LIST\_FI. Once it has been created
     in the catalog, its state is immediately set to K. The state is changed
     to T (or X) when all related transfers are set to T (or X, depending on the compatibility mode).
@@ -304,29 +299,24 @@ A receiving <span class="mc-variable axway_variables.Component_Long_Name variabl
 Sending to a remote site with a different
 operating system
 
-<img src="/Images/TransferCFT/new_group_files.png" class="maxWidth" />
+![]($1)
 
 Example
 
 In Windows, an example of a heterogeneous receive:
 
 ```
-cftsend id      = copie,
-        
-fname   = #c:\\e\\cft320\\tmp\\a\*,
-        
-wfname  = c:\\e\\cft320\\&idtu.snd,
-        
-frecfm  = v,
-        ftype   = b,
-mode    = create
-cftrecv id      = copie,
-fname   = c:\\cft320\\bin\\recv,
-        
+cftsend id = copie,
+fname = #c:\\e\\cft320\\tmp\\a\*,
+wfname = c:\\e\\cft320\\&idtu.snd,
+frecfm = v,
+ftype = b,
+mode = create
+cftrecv id = copie,
+fname = c:\\cft320\\bin\\recv,
 faction = delete,
-        
-wfname  = &idtu.rcv,
-ftype   = b
+wfname = &idtu.rcv,
+ftype = b
 ```
 <span id="Create"></span>
 
@@ -336,8 +326,8 @@ You  can use the CFTSEND [FILTER](../../../c_intro_userinterfaces/command_summ
 
 For example, create a filter that includes all .jpg files that are:
 
--   A word (at least one other word character)
--   Followed by four-digit number
+- A word (at least one other word character)
+- Followed by four-digit number
 
 #### Heterogeneous mode
 
@@ -389,20 +379,20 @@ WFNAME = '&idtu.tmp'
 
 ## STRJCMP filter
 
-A STRJCMP pattern-matching filter can contain the asterisk (\*) and/or the question mark (?) characters. The STRJCMP filter characters are interpreted  as follows:
+A STRJCMP pattern-matching filter can contain the asterisk (\*) and/or the question mark (?) characters. The STRJCMP filter characters are interpreted as follows:
 
 
 | Character  | Description  | Example  |
 | --- | --- | --- |
 | *  | Indicates any sequence of zero or more characters.  | The filter "*.dat" selects any file name that has the extension ".dat".  |
-| ?  | Indicates any single character.  | The filter "T*.???"  selects any file name starting with a 'T' and having an extension of exactly three characters.  |
+| ?  | Indicates any single character.  | The filter "T*.???" selects any file name starting with a 'T' and having an extension of exactly three characters.  |
 
 
 ## EREGEX filter
 
 EREGEX (extended regular expressions) is the use of special characters and strings to define a search pattern. In Transfer CFT, you can use these search patterns to create filters.
 
-In POSIX-Extended regular expressions, all characters match themselves meaning they match a sub-string anywhere inside the string to be searched. For example *abc*, matches  abc123, 123abc, and 123abcxyz. Some symbols are exceptions though; commonly used symbols and example usages are listed in the following table.
+In POSIX-Extended regular expressions, all characters match themselves meaning they match a sub-string anywhere inside the string to be searched. For example *abc*, matches abc123, 123abc, and 123abcxyz. Some symbols are exceptions though; commonly used symbols and example usages are listed in the following table.
 
 
 | Symbol  | Indicates  | Example  |
@@ -411,7 +401,7 @@ In POSIX-Extended regular expressions, all characters match themselves meaning t
 | [ ]  | Or  | *[def]* means d or e or f  |
 | {}  | Exactly  | *{3}* means exactly three  |
 | ()  | Capture group  | *pand(ora|467)* matches pandora OR pand467  |
-| *  | 0 or more occurrences of the preceding element  |  *ab*c* matches ac, abc, abbc, abbbc, and so on  |
+| *  | 0 or more occurrences of the preceding element  | *ab*c* matches ac, abc, abbc, abbbc, and so on |
 | +  | 1 or more occurrences of the preceding element  | *ab+c* matches abc, abbc, abbbc, and so on, but not ac  |
 | ?  | Zero or one occurrence of the preceding element  | *plurals?* matches plural  |
 | |  | Alternation (matches either the right side or the left) / OR operand  | *ab|cd|ef* matches ab or cd or ef  |
@@ -434,8 +424,8 @@ To avoid this you can use the CFTPARM parameter SNDINDFILEERR to define the poli
 
 Parameter values:
 
--   CONTINUE (default): Keep the existing behavior, which creates as many transfer requests as there are lines in the input file.
--   ABORT:  If the input file line is not a file, this gives the current transfer the status K diagi 132 diagp SNDINDFI, the generic transfer status is K diagi 200,  and no other child requests are created.
+- CONTINUE (default): Keep the existing behavior, which creates as many transfer requests as there are lines in the input file.
+- ABORT: If the input file line is not a file, this gives the current transfer the status K diagi 132 diagp SNDINDFI, the generic transfer status is K diagi 200, and no other child requests are created.
 
 Catalog details
 

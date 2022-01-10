@@ -13,9 +13,9 @@
 The encryption password of the private key in the local certificate
 base. There are two ways to specify the password, by either:
 
--   Value:
+- Value:
     The value assigned to the parameter is used directly as a password.
--   Reference
+- Reference
     to a file: The value assigned to the parameter is the name of a file,
     the first record of which contains the password. As such, the file name
     must be prefixed with an #|@, PKIPASSW=#myfile for example, where the password
@@ -29,6 +29,6 @@ configuration, so that {{< TransferCFT/componentlongname  >}} can access the pri
 
 Due to native OS encoding (for example, ASCII on Linux and EBCDIC on z/OS), when you export a key to a different operating system the decode operation may fail even when both systems are using the same password.
 
-Use the correct encoding and put the PKIPASSW  in a file, for example, the ASCII string "`password`" on an EBCDIC system. Then point the CFTPARM PKIPASSW  to this file, for example` PKIPASSW=#|@/path/to/pkipass_file`. The PKIPASSW is consequently read with the correct encoding, and the file is correctly deciphered.
+Use the correct encoding and put the PKIPASSW in a file, for example, the ASCII string "`password`" on an EBCDIC system. Then point the CFTPARM PKIPASSW to this file, for example` PKIPASSW=#|@/path/to/pkipass_file`. The PKIPASSW is consequently read with the correct encoding, and the file is correctly deciphered.
 
 [Return to Command index](../../)

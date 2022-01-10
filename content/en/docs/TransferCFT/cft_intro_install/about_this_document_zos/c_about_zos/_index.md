@@ -12,14 +12,14 @@ The {{< TransferCFT/componentshortname  >}} Installation Guide provides instruct
 
 The minimum z/OS version depends on the JES:
 
--   If  you use the JES2 component, then you require z/OS 2.1 or higher
--   If  you use the JES3 component, then you require z/OS 2.2 or higher
+- If you use the JES2 component, then you require z/OS 2.1 or higher
+- If you use the JES3 component, then you require z/OS 2.2 or higher
 
 <span id="Installation support format"></span>
 
 ## Version format
 
-To accommodate changing product versions, we use the convention &lt;version>  in place of the actual version number in samples and lists.
+To accommodate changing product versions, we use the convention &lt;version> in place of the actual version number in samples and lists.
 
 For example if your Transfer CFT is version 3.3.x, the file ZOS/CFT/&lt;version> would be ZOS/CFT/3.3.x.
 
@@ -27,33 +27,33 @@ For example if your Transfer CFT is version 3.3.x, the file ZOS/CFT/&lt;version>
 
 ## Delivery - distribution method
 
-Axway delivers Transfer CFT z/OS on  the support site: [support.axway.com](https://support.axway.com/). To download the packages from Axway support, you require a user ID and password.
+Axway delivers Transfer CFT z/OS on the support site: [support.axway.com](https://support.axway.com/). To download the packages from Axway support, you require a user ID and password.
 
 There are three Transfer CFT packages available on the Axway support site - 2 packages for the standard Transfer CFT installation method (which differ only in file format, ADRDSSU or XMIT), and additionally the SMP/E Transfer CFT installation package.
 
 Again, there are 2 product packaging formats in the **`Components\Transfer_CFT_V<version>_mvs\install`** directory:
 
--   \\adrdssu 
--   \\xmit
+- \\adrdssu 
+- \\xmit
 
-**<span id="kanchor12"></span>Installation directory contents**
+**<span id="kanchor15"></span>Installation directory contents**
 
 
 | File  | Description  |
 | --- | --- |
-|  Transfer_CFT_&lt;version&gt;_mvs_&lt;format&gt;.bin  |  Product  |
-|  Transfer_CFT_&lt;version&gt;_mvs_&lt;format&gt;_J1IDIST.txt  |  JCL that creates the distribution environment  |
-|  Transfer_CFT_&lt;version&gt;_mvs_&lt;format&gt;_J2IICFT.txt  |  JCL that creates the  instance environment  |
+| Transfer_CFT_&lt;version&gt;_mvs_&lt;format&gt;.bin | Product |
+| Transfer_CFT_&lt;version&gt;_mvs_&lt;format&gt;_J1IDIST.txt | JCL that creates the distribution environment |
+| Transfer_CFT_&lt;version&gt;_mvs_&lt;format&gt;_J2IICFT.txt | JCL that creates the instance environment |
 
 
-<span id="kanchor13"></span>
+<span id="kanchor16"></span>
 
 ## Transfer CFT z/OS components
 
 The Transfer CFT z/OS components include:
 
--   CFTUTIL: Batch program for processing the commands and parameters
--   CFTMAIN: File transfer server itself, which is comprised of:
+- CFTUTIL: Batch program for processing the commands and parameters
+- CFTMAIN: File transfer server itself, which is comprised of:
     -   CFTTPRO: File transfer protocols (PeSIT)
     -   CFTTFIL: File manager
     -   CFTTCP: TCP/IP network manager
@@ -66,8 +66,8 @@ The Transfer CFT z/OS components include:
     -   CFTPRX: Proxy task
     -   CFTAPI: Interface for user batch programming
     -   CFTSFTP: Main SFTP task, with POSIX runtime option set to ON
-    -   Threads (BPXPTATT) are started one by one  and are permanent (unlike TFIL tasks)
--   Other major components:
+    -   Threads (BPXPTATT) are started one by one and are permanent (unlike TFIL tasks)
+- Other major components:
     -   CFTPKI: Management utility for internal datafile security
     -   CFTCOPL: Transfer CFT UI server
     -   COPSTOP: Stops the Transfer CFT UI server
@@ -79,7 +79,7 @@ The Transfer CFT z/OS components include:
 
 |   | Description  | Windows  | Unix  | z/OS  | IBM i  |
 | --- | --- | --- | --- | --- | --- |
-| char_file  |  Logical name prefix  | $  | _  | $  | +  |
+| char_file  | Logical name prefix | $  | _  | $  | +  |
 | char_mask  | Wildcard character  | ?  | ?  | ?  | ?  |
 | char_unit  | Separator character (volume)  | %  | \01  | %  | ;  |
 | char_symb  | Symbolic variable prefix  | &amp;  | &amp;  | &amp;  | ?  |
@@ -88,5 +88,5 @@ The Transfer CFT z/OS components include:
 
 Related topics
 
--   [Prerequisites](r_prerequistes_zos)
--   Installing Transfer CFT z/OS
+- [Prerequisites](r_prerequistes_zos)
+- [Installing Transfer CFT z/OS]()

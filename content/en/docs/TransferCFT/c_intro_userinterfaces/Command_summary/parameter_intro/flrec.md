@@ -19,14 +19,14 @@ side involved in a file transfer, the sender and the receiver, manages
 translations between real computer files and the virtual files transferred
 by the protocol.
 
-The  {{< TransferCFT/componentshortname  >}} sender maps the virtual file attributes according to the SEND,
+The {{< TransferCFT/componentshortname  >}} sender maps the virtual file attributes according to the SEND,
 CFTSEND cards and the physical file attributes. For example, if the FLRECL
 attribute is not set in the SEND/CFTSEND cards, the logical record length
 of the local file is used to set the logical record length of the virtual
 file (on a platform where logical record length of a local file has no
 meaning, such as UNIX or Windows, the arbitrary value of 512 is used).
 
-The  {{< TransferCFT/componentshortname  >}}
+The {{< TransferCFT/componentshortname  >}}
 receiver maps the physical file attributes according to the RECV,
 CFTRECV and the virtual file attributes. For example, if the FLRECL attribute
 is set the logical record length of the local file will be the FLRECL
@@ -42,13 +42,13 @@ records are truncated or padded.
 
 For records in:
 
--   Fixed
+- Fixed
     format (FRECFM = F): length (in bytes) of the records of the receiver
     file
--   Variable
+- Variable
     format (FRECFM = V): maximum length (in bytes) of the records of this
     file
--   Undefined
+- Undefined
     format (FRECFM = U) : maximum length (in bytes) of the records of this
     file
 
@@ -59,10 +59,10 @@ For fixed format records (FRECFM = F), if the size of the records received
 is LESS THAN the file record length, these records are padded up to the
 nominal value:
 
--   By binary zeros
+- By binary zeros
     (x00) when the local data is declared in binary  
     (FCODE = BINARY),
--   By spaces when
+- By spaces when
     the local data is declared as alphanumeric, with:
     -   FCODE =
         EBCDIC : the space character is then equal to x‘40’ (hexadecimal)
@@ -73,9 +73,9 @@ Default record lengths implemented on some
 systems, length taken into account if the corresponding information is
 not supplied either by the file sender or by the local parameters:
 
--   512 for text files (FTYPE= T, O, or X)
--   4096 for binary files (FTYPE=B)
--   4096 for stream text files (FTYPE=J)
+- 512 for text files (FTYPE= T, O, or X)
+- 4096 for binary files (FTYPE=B)
+- 4096 for stream text files (FTYPE=J)
 
 <span id="flrecl_CFTSEND"></span>
 
@@ -85,22 +85,22 @@ not supplied either by the file sender or by the local parameters:
 
 For records in:
 
--   Fixed
+- Fixed
     format (FRECFM = F): length, in bytes, of the records of the local file
     to be sent
--   Variable
+- Variable
     format (FRECFM = V): maximum length, in bytes, of the records of this
     file
--   Undefined
+- Undefined
     format (FRECFM = U) : maximum length, in bytes, of the records of this
     file
 
 The use of FLRECL is optional:
 
--   The
+- The
     specific *Operations Guides* specify whether this facility is supported
     for each system
--   Some
+- Some
     systems generate implicit record lengths in place of this feature:
     -   512 for text files (FTYPE= T, O, or X)
     -   4096 for binary files (FTYPE=B)

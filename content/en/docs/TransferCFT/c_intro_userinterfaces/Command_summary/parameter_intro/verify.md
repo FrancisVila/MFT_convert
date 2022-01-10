@@ -29,9 +29,9 @@ If VERIFY = 0 no verification is performed.
 \[VERIFY = { NONE |
 | OPTIONAL } \]
 
--   NONE: Only the server must be authenticated. 
--   REQUIRED: The server and the client must be authenticated.
--   OPTIONAL: Requests mutual authentication, but even if the client does not send a valid certificate the handshake is successful.
+- NONE: Only the server must be authenticated. 
+- REQUIRED: The server and the client must be authenticated.
+- OPTIONAL: Requests mutual authentication, but even if the client does not send a valid certificate the handshake is successful.
 
 #### CFTSSL DIRECT=CLIENT
 
@@ -40,9 +40,9 @@ The DIRECT=CLIENT VERIFY options are available as of {{< TransferCFT/componentl
 \[VERIFY = { <u>NONE</u> | REQUIRED
 | OPTIONAL | ENFORCED } \]
 
--   ENFORCED:  Ensures client  authentication with the server. During the handshake, if the server does not ask for the client certificate, then the transfer fails.
--   OPTIONAL and REQUIRED: The same as NONE (for backward compatibility), but should not be used.
--   NONE: Only the server must be authenticated.
+- ENFORCED: Ensures client authentication with the server. During the handshake, if the server does not ask for the client certificate, then the transfer fails.
+- OPTIONAL and REQUIRED: The same as NONE (for backward compatibility), but should not be used.
+- NONE: Only the server must be authenticated.
 
  
 
@@ -52,7 +52,7 @@ This example demonstrates the use of the client `NONE` value.
 
 CFTSSL type=client, verify=none and CFTSSL type=server, verify=none
 
-<img src="/Images/TransferCFT/verify2.png" class="mediumWidth" />
+![]($1)
 
 Example 2
 
@@ -60,13 +60,13 @@ This example demonstrates the use of the client `ENFORCED `value.
 
 CFTSSL type=client, verify=ENFORCED and CFTSSL type=server, verify=required
 
-<img src="/Images/TransferCFT/verify1.png" class="mediumWidth" />
+![]($1)
 
  
 
 Example 3
 
-This example demonstrates a different use of the `ENFORCED `value. When acting as a client,  `ENFORCED `enables Transfer CFT to cancel a transfer if the server does not require the client authentication. Here, the transfer fails with diagi 260 due to the fact that the client requires authentication:
+This example demonstrates a different use of the `ENFORCED `value. When acting as a client, `ENFORCED `enables Transfer CFT to cancel a transfer if the server does not require the client authentication. Here, the transfer fails with diagi 260 due to the fact that the client requires authentication:
 
 CFTSSL type=client, verify=ENFORCED and CFTSSL type=server, verify=NONE
 

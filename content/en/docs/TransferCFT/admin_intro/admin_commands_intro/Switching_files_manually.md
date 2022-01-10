@@ -6,7 +6,7 @@
 
 #### Automatic SWITCH 
 
-You can customize the switch procedure  depending on your production needs. The symbolic variable &FACCNT
+You can customize the switch procedure depending on your production needs. The symbolic variable &FACCNT
 represents the statistical file.
 
 > **Note**

@@ -11,7 +11,7 @@
 \[NBR = {pos, 255 |
 len}\]
 
-This field indicates  the number of records
+This field indicates the number of records
 field of the file to be sent.
 
 [Return to Command index](../../)

@@ -19,22 +19,14 @@ the value of the [ilrecl](../ilrecl) parameter.
 The table indicates  if the iblksize parameter
 is used.
 
-```
 
-OS 
+| OS  | IBLKSIZE  |
+| --- | --- |
+| MVS (z/OS) | YES  |
+| OS400  | YES  |
+| UNIX  | NO  |
+| VMS  | NO  |
+| Windows  | NO  |
 
-IBLKSIZE 
-
-MVS (z/OS)
-YES 
-OS400 
-YES 
-UNIX 
-NO 
-VMS 
-NO 
-Windows 
-NO 
-```
 
 [Return to Command index](../../)

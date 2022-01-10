@@ -14,17 +14,17 @@ under the following circumstances:
 
 If you are in the preprocessing phase and a script exists:
 
--   It is in the **H** state or **K** state as a result of a preprocessing error
--   If there is no END command with ISTATE=N
--   If it is in the **D** state and is waiting for the scheduled time
+- It is in the **H** state or **K** state as a result of a preprocessing error
+- If there is no END command with ISTATE=N
+- If it is in the **D** state and is waiting for the scheduled time
 
 Transfer phase:
 
--   If it is in the
+- If it is in the
     **H** HOLD state or <span style="font-weight: bold;">K</span>
     KEEP state as a result of a transfer error, or an operator command (HALT,
     KEEP, or SEND STATE = HOLD, and so on).
--   If it is in the
+- If it is in the
     <span style="font-weight: bold;">D</span> DISP state, but Transfer CFT
     does not have the resources required to activate it.
     -   Or if the transfer
@@ -55,19 +55,19 @@ be activated.
 #### Active transfers
 
 If a transfer does not fit the inactive state criteria, the transfer
-is set to active. Active transfers are executed if resources are available,  otherwise they are placed in a queue for execution. Parameters that affect scheduling are, in order:
+is set to active. Active transfers are executed if resources are available, otherwise they are placed in a queue for execution. Parameters that affect scheduling are, in order:
 
--   Priority (PRI)
--   The scheduled time and date (MINTIME/MINDATE)
--   Request time
+- Priority (PRI)
+- The scheduled time and date (MINTIME/MINDATE)
+- Request time
 
 ### Partner states
 
 A partner can have one of the following three states:
 
--   Ready
--   State-locked
--   Time-locked
+- Ready
+- State-locked
+- Time-locked
 
 #### Ready partners
 
@@ -128,7 +128,7 @@ When Transfer CFT saturates in terms of available resources, the transfers
 which can be activated remain in the D state, pending the freeing of a
 resource, for as long as the MAXTIME time is not reached.
 
-When Transfer CFT saturates in terms of available resources, meaning that the maximum number of simultaneous transfer  or the maximum number of connection has been reached, all additional transfers remain in the D state pending the freeing of a
+When Transfer CFT saturates in terms of available resources, meaning that the maximum number of simultaneous transfer or the maximum number of connection has been reached, all additional transfers remain in the D state pending the freeing of a
 resource until the timeout is reached.
 
 <span id="Session_timers_and_holdover"></span>
@@ -143,7 +143,7 @@ completion of a transfer, for the next transfer, if any, with the same
 partner.
 
 The **Disconnect timeout** parameter is used to set the wait time-out
-before disconnection and during connection.  The **Keep alive** parameter is used to maintain a connection with a partner upon
+before disconnection and during connection. The **Keep alive** parameter is used to maintain a connection with a partner upon
 completion of a transfer, for the next transfer with the same
 partner.
 
@@ -152,12 +152,12 @@ partner.
 ## Delayed transfers
 
 In addition to the call
-limitation, which can be imposed on partners,  the user can also define time slots for activating a given transfer.
+limitation, which can be imposed on partners, the user can also define time slots for activating a given transfer.
 This section describes delayed transfers and how to define these:
 
--   In the description
+- In the description
     of the model type to be sent or received: CFTSEND and CFTRECV objects
--   In the transfer
+- In the transfer
     request: SEND and RECV
 
 A request made before the time slot for activating the transfer will
@@ -173,8 +173,8 @@ and MAXTIME/MAXDATE parameters of the CFTSEND/SEND, CFTRECV/RECV commands.
 
 The values of these parameters can be defined either:
 
--   Explicitly
--   Relatively  
+- Explicitly
+- Relatively
     -   Relatively indicates that the calculation is performed at the time the request is entered in the
         catalog.
     -   A relative value for each of these parameters is defined using the following
@@ -236,7 +236,7 @@ MAXTIME = 1800
 The transfer can be activated on December 24, 2015 between 9 am and 6 pm.
 
 If you want to specify a time slot that spans into the next day, set the value of MINTIME to later
-than the value of MAXTIME. The  MINDATE value specifies
+than the value of MAXTIME. The MINDATE value specifies
 the first day. It is not necessary to define the MAXDATE value, as Transfer CFT automatically assigns it to the day following the MINDATE value.
 
 ### Example 4
@@ -262,12 +262,12 @@ The transfer can be activated between December 24, 2015 at 10 pm and December
 Default value
 of:
 
--   MINDATE: current
+- MINDATE: current
     date
 
--   MAXDATE:
+- MAXDATE:
 
--   -   If MAXTIME
+- -   If MAXTIME
         is greater than MINTIME : MINDATE
     -   If MAXTIME
         is less than MINTIME : MINDATE + 1

@@ -2,7 +2,7 @@
     "title": "Specific  network functions",
     "linkTitle": "Specific network functions",
     "weight": "250"
-}This topic presents the TCP network supported by  {{< TransferCFT/componentshortname  >}} Windows,
+}This topic presents the TCP network supported by {{< TransferCFT/componentshortname  >}} Windows,
 and how to define the network parameters.
 
 <span id="Supported_networks"></span>
@@ -24,15 +24,15 @@ Additionally, the logical key can limit the maximum number of transfers.
 
 ## Defining network parameters
 
-You implement network functions  by entering parameters into
-a single file, `cftnet.conf`, located in the  {{< TransferCFT/componentshortname  >}} `runtime\conf`
+You implement network functions by entering parameters into
+a single file, `cftnet.conf`, located in the {{< TransferCFT/componentshortname  >}} `runtime\conf`
 folder.
 
 This file is made up of lines using the same syntax, each
 of which corresponds to one function: typenet&lt;parameter>=value,
 where:
 
--   typenet:
+- typenet:
     is an element taking on one of the following values:
     -   TCP:
         A TCP/IP network process parameter
@@ -59,7 +59,7 @@ Environment variable
 `CFTCFGPATH`
 
 Environment variable defining the sub-folder where the cftnet.conf
-file is located. By default,  {{< TransferCFT/componentshortname  >}} searches for this file in the
+file is located. By default, {{< TransferCFT/componentshortname  >}} searches for this file in the
 application default folder.
 
 {{< TransferCFT/componentshortname  >}} must be stopped when the cftnet.conf file is

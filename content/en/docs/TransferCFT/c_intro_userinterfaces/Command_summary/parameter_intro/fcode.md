@@ -11,23 +11,16 @@
 The sent file data code. The following table indicates for each OS the
 default value supported.
 
-```
 
-OS
+| OS  | Default  |
+| --- | --- |
+| z/OS (MVS) | EBCDIC  |
+| IBM i (OS400) | EBCDIC  |
+| UNIX  | ASCII  |
+| VMS  | ASCII  |
+| Windows | ASCII  |
 
-Default
 
-z/OS (MVS)
-EBCDIC 
-IBM i (OS400)
-EBCDIC 
-UNIX 
-ASCII 
-VMS 
-ASCII 
-Windows
-ASCII 
-```
 <span id="fcode_CFTRECV"></span>
 
 #### CFTRECV, RECV
@@ -47,30 +40,30 @@ the network.
 
 The translation performed on reception depends on the:
 
--   Local
+- Local
     code (explicit or implicit value of the FCODE parameter)
--   Network
+- Network
     code (code of the data received from the network)
--   Presence
+- Presence
     of an external translation table if needed
 
 Note that an external translation table is taken into account:
 
--   If
+- If
     it corresponds to the local code and network code
--   And
+- And
     if the ID of the CFTXLATE command is referenced by an XLATE parameter
     (of the RECV, CFTRECV or CFTPART command), or else is equal to the "default"
     ID of CFTPARM
 
 At each receive transfer:
 
--   if
+- if
     the data received is in ASCII and the local data is in EBCDIC, or vice-versa,
     translation is always performed: translation according to an external
-    table, or, by default, translation according to the  {{< TransferCFT/componentshortname >}} internal
+    table, or, by default, translation according to the {{< TransferCFT/componentshortname >}} internal
     table
--   if
+- if
     the data received and the local data have the same code, ASCII or EBCDIC,
     an external table is required to execute a translation
 
@@ -81,10 +74,10 @@ no translation is performed.
 The code of the data received is not detected by examining the data.
 This code is:
 
--   Either
+- Either
     explicitly communicated by the sender (see NCODE parameter of the CFTSEND
     command, for PeSIT CFT to CFT)
--   Or
+- Or
     deduced from the protocol rules
 
 <span id="fcode_CFTSEND"></span>

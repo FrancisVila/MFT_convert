@@ -10,14 +10,14 @@
 
 A cluster installation of Transfer CFT without multi-node is an active/passive installation as described below:
 
--   Install Transfer CFT using the Cluster installation architecture of the Installer and disable the multi-node architecture.
--   Installation procedure must be executed on each host:
+- Install Transfer CFT using the Cluster installation architecture of the Installer and disable the multi-node architecture.
+- Installation procedure must be executed on each host:
     -   The first host installation
     -   Additional hosts installation
--   Transfer CFT binaries are installed on several hosts and runtime files are installed on a shared file system.
--   Only runtime files are shared.
--   You must configure the cluster after installation but before you can use the cluster. The procedure for cluster configuration varies depending on the platform on which the cluster is installed.
--   At any given time:
+- Transfer CFT binaries are installed on several hosts and runtime files are installed on a shared file system.
+- Only runtime files are shared.
+- You must configure the cluster after installation but before you can use the cluster. The procedure for cluster configuration varies depending on the platform on which the cluster is installed.
+- At any given time:
     -   Only one host is active
     -   Only one Transfer CFT runtime environment is running on the active host
 
@@ -45,10 +45,10 @@ The path and name of the local directory where you want to install the first clu
 >
 > See Shared file system prerequisites for details.
 
-You can use a single key for  a multi-node installation, as either:
+You can use a single key for a multi-node installation, as either:
 
--   The hostname must not be defined for the key, or
--   The hostname defined for the key matches the hostname of one of the hosts that composes the multi-node instance
+- The hostname must not be defined for the key, or
+- The hostname defined for the key matches the hostname of one of the hosts that composes the multi-node instance
 
 Additionally, the key must have the cluster option.
 
@@ -58,24 +58,24 @@ Download and unzip the {{< TransferCFT/transfercftname  >}} install package, as 
 
 ### Customize
 
-Create as many copies of the initialize.properties file as you have hosts in the  installation. Customize the *n* initialize.properties file with the following parameters.
+Create as many copies of the initialize.properties file as you have hosts in the installation. Customize the *n* initialize.properties file with the following parameters.
 
 
-| CFT_Full_Hostname  |  Host Address of the local server: FQDN (Fully Qualified Domain Name) or IP Address.<br/>When you re installing a cluster, there are two ways to define this parameter:<br/> • If you do not set this in the silent file, the installation determines it (if the machine is correctly configured) <br/> • Set the FQDN for each machine in the cluster, that is, for each host installation</li>  |
+| CFT_Full_Hostname  | Host Address of the local server: FQDN (Fully Qualified Domain Name) or IP Address.<br/> When you re installing a cluster, there are two ways to define this parameter:<br/> • If you do not set this in the silent file, the installation determines it (if the machine is correctly configured)<br/><br/> • Set the FQDN for each machine in the cluster, that is, for each host installation |
 | --- | --- |
 | Runtimedir  | The runtime directory must be in a shared directory.  |
-| LoadBalancer_Host  |  Specify the host address of the load balancer, which is the cluster's public IP address in an active/passive deployment. <blockquote> **Note**<br/>The load balancer is used to connect to the Transfer CFT Copilot server. </blockquote>  |
+| LoadBalancer_Host  | Specify the host address of the load balancer, which is the cluster's public IP address in an active/passive deployment.<br/> <blockquote> **Note**<br/> The load balancer is used to connect to the Transfer CFT Copilot server.<br/> </blockquote>  |
 | LoadBalancer_Port  | Specify the load balancer port, which is redirected to the Central Governance dedicated port of the Transfer CFT UI Server.  |
 
 
 ## Install
 
-1.  Start the installation.
-2.  Transfer\_CFT\_{{< TransferCFT/releasenumber >}}\_Install\_win-x86-64\_BNXXXXXXXX.exe
-3.  ./Transfer\_CFT\_{{< TransferCFT/releasenumber >}}\_Install\_&lt;OS>\_&lt;BN>.run
-4.  In the Installation Architecture screen, select **Cluster - first host**.
-5.  Complete the installation.
-6.  To add a host to create a multi-host installation, run the install `exe/bat` again. This time select **Cluster - Additional host**.
+1. Start the installation.
+1. Transfer\_CFT\_{{< TransferCFT/releasenumber >}}\_Install\_win-x86-64\_BNXXXXXXXX.exe
+1. ./Transfer\_CFT\_{{< TransferCFT/releasenumber >}}\_Install\_&lt;OS>\_&lt;BN>.run
+1. In the Installation Architecture screen, select **Cluster - first host**.
+1. Complete the installation.
+1. To add a host to create a multi-host installation, run the install `exe/bat` again. This time select **Cluster - Additional host**.
 
 ## Silent installation
 

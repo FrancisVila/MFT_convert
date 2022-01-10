@@ -13,9 +13,9 @@
 **A**ction to be taken if a transfer
 aborts due to the receiving file creation error (server mode):
 
--   **KEEP**:
+- **KEEP**:
     the transfer remains in the catalog
--   <span style="font-weight: bold;">DELETE</span>:
+- <span style="font-weight: bold;">DELETE</span>:
     the transfer is removed from the catalog
 
 If the RKERROR parameter is also set in the CFTRECV command, the CFTRECV

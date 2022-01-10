@@ -2,7 +2,7 @@
     "title": "Install services in command line",
     "linkTitle": "Install services in command line",
     "weight": "140"
-}After adding a Windows service  in command line,  the default system user  is the user that started the service. To define a specific user, you must edit the service properties  in the Services page.
+}After adding a Windows service in command line, the default system user is the user that started the service. To define a specific user, you must edit the service properties in the Services page.
 
 > **Note**
 >
@@ -14,11 +14,11 @@ Windows only
 
 ### {{< TransferCFT/componentshortname  >}} services
 
-1.  To install the {{< TransferCFT/componentshortname >}} service, access the {{< TransferCFT/componentshortname >}} directory:
+1. To install the {{< TransferCFT/componentshortname >}} service, access the {{< TransferCFT/componentshortname >}} directory:
 
     cd %TransferCFT\_directory%
 
-2.  Enter the following:
+1. Enter the following:
 
     cscript /nologo home\\bin\\cftsrvin.vbs n=CFT36
 

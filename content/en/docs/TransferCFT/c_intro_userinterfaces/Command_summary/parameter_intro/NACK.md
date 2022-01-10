@@ -12,7 +12,7 @@ Via negative acknowledgments sent in a PeSIT Hors SIT message, the
 final partner signals to the initial sender of the file that application
 errors were detected.
 
-If the initial sender does not support this function,  the final partner does not transmit the
+If the initial sender does not support this function, the final partner does not transmit the
 negative acknowledgement and the Transfer CFT log file displays:
 
 CFTT93W PART=XFB1 IDS=00008 Negative ack not supported by server

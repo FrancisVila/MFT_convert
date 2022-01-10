@@ -6,25 +6,25 @@
 
 To configure a {{< TransferCFT/transfercftname  >}} SFTP client:
 
-1.  Define the SFTP protocol.
-2.  Add the server public key in client profile.
-3.  Add the client key in the PKI database.
-4.  Define an SSH client profile.
-5.  Define a partner to use in a flow.
-6.  Set the type authentication.
+1. Define the SFTP protocol.
+1. Add the server public key in client profile.
+1. Add the client key in the PKI database.
+1. Define an SSH client profile.
+1. Define a partner to use in a flow.
+1. Set the type authentication.
 
 ## Define the protocol (CFTPROT) for the Transfer CFT client
 
 The following parameters are used to define the client's SFTP protocol:
 
--   TYPE: SFTP
--   SSH: Link to the CFTSSH object (DIRECT=CLIENT)
--   NET: link to the CFTNET 
+- TYPE: SFTP
+- SSH: Link to the CFTSSH object (DIRECT=CLIENT)
+- NET: link to the CFTNET 
 
 Example
 
 ```
-cftprot id       = SFTP,
+cftprot id = SFTP,
 
 > TYPE = 'SFTP',
 > SSH = 'SSH_DEFAULT',
@@ -53,13 +53,13 @@ PKIKEYGEN id=MY_KEY, keylen=2048
 
 ## Define the SSH client profile (CFTSSH)
 
-This section  you use CFTSSH to define a SSH profile in Transfer CFT. The CFTSSH definition contains the SSH parameter connection for SFTP in client mode. For more information, please see [Define CFTSSH](../../../c_intro_userinterfaces/web_copilot_ui/cftssl/cftssh)
+This section you use CFTSSH to define a SSH profile in Transfer CFT. The CFTSSH definition contains the SSH parameter connection for SFTP in client mode. For more information, please see [Define CFTSSH](../../../c_intro_userinterfaces/web_copilot_ui/cftssl/cftssh)
 (SFTP).
 
--   ID: Identifier of the object
--   DIRECT=CLIENT
--   SRVPUBKEY=Identifier of the key used to authenticate the server
--   CLIPRIVKEY: Key Id of the client private key  to use with key authentication.
+- ID: Identifier of the object
+- DIRECT=CLIENT
+- SRVPUBKEY=Identifier of the key used to authenticate the server
+- CLIPRIVKEY: Key Id of the client private key to use with key authentication.
 
 Example
 
@@ -77,10 +77,10 @@ CFTSSH id = SSH_DEFAULT,
 
 A CFTPART object represents an application, with one SFTP user per application (CFTPART = one application). To define a CFTPART object in client mode using SFTP:
 
--   NSPART: Corresponds to your client login
--   SAP: The remote SFTP server port
--   HOST:The remote SFPT server host
--   PROT: Refers to the SFTP protocol
+- NSPART: Corresponds to your client login
+- SAP: The remote SFTP server port
+- HOST:The remote SFPT server host
+- PROT: Refers to the SFTP protocol
 
 > **Note**
 >
@@ -94,36 +94,34 @@ Select the appropriate type of authentication to use from the options listed in 
 
 ### Password authentication
 
-Use  one of the following methods to configure  the client password:
+Use  one of the following methods to configure the client password:
 
--   Clear text: When NSPASSW=&lt;the user password>, the client password is in clear text.
+- Clear text: When NSPASSW=&lt;the user password>, the client password is in clear text.
 
 <!-- -->
 
--   Uconf definition: When NSPASSW=\_AUTH\_, authentication is  specified in `uconf:cft.server.authentication_method `is used.
+- Uconf definition: When NSPASSW=\_AUTH\_, authentication is specified in `uconf:cft.server.authentication_method `is used.
 
 > **Note**
 >
 > If you do not define NSPASSW, Transfer CFT does not send a password to the server.
 
 ```
-CFTPART id          = USER1,
+CFTPART id = USER1,
 
->         prot        = SFTP,
-> sap = 1763,    
->         
-> nspart      = "user1",              
->         nspassw     = "TheUser1Password", ...
+> prot = SFTP,
+> sap = 1763,
+> nspart = "user1",
+> nspassw = "TheUser1Password", ...
 
-CFTTCP id          = USER1,
-        
+CFTTCP id = USER1,
 
-> host        = <server host>,
->        ...
+> host = <server host>,
+> ...
 
 ```
 
-<img src="/Images/TransferCFT/sftp_client.png" class="smallWidth" alt="Client NSPART arrow to Server Login, Cient NSPASSW arrow to server Password" />
+![$2]($1)
 
 <span id="Key"></span>
 
@@ -131,38 +129,31 @@ CFTTCP id          = USER1,
 
 To configure how the client sends the key (CFTSSH):
 
--   Identifier: CLIPRIVKEY refers to an identifier in the local PKI database.
+- Identifier: CLIPRIVKEY refers to an identifier in the local PKI database.
 
 This is how the client decides the CLIPRIVKEY to use for the SSH profile:
 
--   To use a specific SSH profile, you must define it in CFTPART 
--   If you do not define a specific SSH profile, then the client will use the one defined by default in CFTPROT 
+- To use a specific SSH profile, you must define it in CFTPART 
+- If you do not define a specific SSH profile, then the client will use the one defined by default in CFTPROT 
 
 This example illustrates a specific SSH profile (SSH\_USER2 below).
 
 ```
-CFTPART id          = USER2,
-        
+CFTPART id = USER2,
 
-> ssh         = SSH_USER2,
+> ssh = SSH_USER2,
 > sap = 1763,
->         
-> prot        = SFTP,
->         
-> nspart      = "user2", ...
+> prot = SFTP,
+> nspart = "user2", ...
 
  
-        CFTTCP id          = USER2,
-        
-host        = <remote host>, ...      
-        
+CFTTCP id = USER2,
+host = <remote host>, ...
  
-CFTSSH id         = SSH_USER2,
-        
+CFTSSH id = SSH_USER2,
 
-> direct     = CLIENT,
->         
-> cliprivkey  = USER2,         ...
+> direct = CLIENT,
+> cliprivkey = USER2, ...
 
 ```
 
@@ -170,36 +161,30 @@ CFTSSH id         = SSH_USER2,
 
 When using **password and key** authentication:
 
--   NSPASSW: Use one of the methods to configure how the client sends its password, as described [here](#Password)
--   CLIPRIVKEY: Use this to configure how the client sends its key, as described [here](#Key)
+- NSPASSW: Use one of the methods to configure how the client sends its password, as described [here](#Password)
+- CLIPRIVKEY: Use this to configure how the client sends its key, as described [here](#Key)
 
 <!-- -->
 
--   ```
-    CFTPART id          = USER3,
-            
+- ```
+    CFTPART id = USER3,
 
-    > ssh         = USER3,
-    > sap = 1763,      
-    > prot        = SFTP,
-    >         
-    > nspart      = "user3",
+    > ssh = USER3,
+    > sap = 1763,
+    > prot = SFTP,
+    > nspart = "user3",
     > nspassw = "TheUser3Password",...
 
      
-            CFTTCP id          = USER3,
-            
+    CFTTCP id = USER3,
 
-    > host        = <remote host>, ...      
-    >         
+    > host = <remote host>, ...
 
      
-    CFTSSH id         = USER3,
-            
+    CFTSSH id = USER3,
 
-    > direct     = CLIENT,
-    >         
-    > cliprivkey  = USER3,         ...
+    > direct = CLIENT,
+    > cliprivkey = USER3, ...
 
     ```
 
@@ -209,9 +194,9 @@ When using **password and key** authentication:
 
 You can configure the conversion using FCHARSET/NCHARSET or FCODE/NCODE, where transcoding is performed if FCODE differs from NCODE, or if FCHARSET differs from NCHARSET. The FCHARSET/NCHARSET parameters, however, take precedence over FCODE/NCODE if both are defined. Additionally:
 
--   The charset and  transferred file code are exchanged between the requester and server for two Transfer CFTs.
--   A transfer restart is forbidden if the FCHARSET/NCHARSET conversion is done at the server level.
--   The NCODE parameter is available in CFTRECV as with CFTSEND.
+- The charset and transferred file code are exchanged between the requester and server for two Transfer CFTs.
+- A transfer restart is forbidden if the FCHARSET/NCHARSET conversion is done at the server level.
+- The NCODE parameter is available in CFTRECV as with CFTSEND.
 
 See also, [Transcoding concepts](../#Transcod).
 

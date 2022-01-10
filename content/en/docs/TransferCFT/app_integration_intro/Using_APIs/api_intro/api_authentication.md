@@ -6,9 +6,9 @@
 
 We recommended that you use the HTTP Bearer as opposed to Basic method for the following reasons:
 
--   You user/password is not exposed.
--   If the token is compromised, you can revoke the token using either the UI (My Access Token) or REST API. Note though that a token is just as sensitive as a user/password, you must store it in a protected manner.
--   If  am.type=passport and the PassPort server is down, you can still execute REST API requests.
+- You user/password is not exposed.
+- If the token is compromised, you can revoke the token using either the UI (My Access Token) or REST API. Note though that a token is just as sensitive as a user/password, you must store it in a protected manner.
+- If am.type=passport and the PassPort server is down, you can still execute REST API requests.
 
 ## Bearer authentication
 
@@ -32,11 +32,11 @@ To use the bearer method, you require an access token as described below.
 
 In the {{< TransferCFT/componentlongname  >}} UI:
 
-1.  Navigate to your user login in the upper right hand corner.
-2.  Select **My Access Tokens** in the drop-down menu.  
+1. Navigate to your user login in the upper right hand corner.
+1. Select **My Access Tokens** in the drop-down menu.  
     The **My Access Token** page displays.
-3.  Click **Generate Token**.  
-    The Action, User, Creation date, and Token fields display. In the **Token** field, click the <img src="/Images/TransferCFT/copy_icon.png" class="mediumWidth" />copy icon to easily copy the entire token.
+1. Click **Generate Token**.  
+    The Action, User, Creation date, and Token fields display. In the **Token** field, click the ![]($1)copy icon to easily copy the entire token.
 
 ## Basic authentication
 
@@ -52,14 +52,14 @@ curl -X GET "https://localhost:1768/cft/api/v1/transfers" -H "accept: applicatio
 
 ## Limit the number of failed login attempts
 
-Transfer CFT provides brute force protection for logging on the {{< TransferCFT/transfercftname  >}} UI, REST API,  or Web Services when using either the *system* mode or *xfbadm* mode (UNIX and HP NonStop only) authentication. That is, it limits the number of login failure attempts, where both the user and the password are checked to avoid brute force attacks.
+Transfer CFT provides brute force protection for logging on the {{< TransferCFT/transfercftname  >}} UI, REST API, or Web Services when using either the *system* mode or *xfbadm* mode (UNIX and HP NonStop only) authentication. That is, it limits the number of login failure attempts, where both the user and the password are checked to avoid brute force attacks.
 
 For other authentication methods, such as PassPort and LDAP, no check is made. You must manage that in the Password Policy of those external tools.
 
 You can use the following UCONF parameters to manage this option:
 
--   `copilot.general.login_failures_fname`:  A file that stores data shared between Transfer CFT and Copilot.
--   `copilot.general.max_login_failures`: An integer that sets the maximum number of login failures for a user (default is 3, and 0 disables this option).
+- `copilot.general.login_failures_fname`: A file that stores data shared between Transfer CFT and Copilot.
+- `copilot.general.max_login_failures`: An integer that sets the maximum number of login failures for a user (default is 3, and 0 disables this option).
 
 > **Note**
 >
@@ -69,5 +69,5 @@ When the maximum number of login failures is reached, the user account is locked
 
 Platform specifics
 
--   On IBM i systems, there is no action if the password is incorrect as the system offers methods that you can rely on to avoid brute force attacks (the system value is [QMAXSIGN](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_74/rzarl/rzarlmaxsgn.htm)).
--   On z/OS systems, only the inherent system protection is available (refer to the RACF suboperand [REVOKE](https://www.ibm.com/support/knowledgecenter/SSLTBW_2.3.0/com.ibm.zos.v2r3.icha700/setrpw.htm) for the PASSWORD option).
+- On IBM i systems, there is no action if the password is incorrect as the system offers methods that you can rely on to avoid brute force attacks (the system value is [QMAXSIGN](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_74/rzarl/rzarlmaxsgn.htm)).
+- On z/OS systems, only the inherent system protection is available (refer to the RACF suboperand [REVOKE](https://www.ibm.com/support/knowledgecenter/SSLTBW_2.3.0/com.ibm.zos.v2r3.icha700/setrpw.htm) for the PASSWORD option).

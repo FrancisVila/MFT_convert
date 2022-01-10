@@ -3,11 +3,11 @@
     "linkTitle": "CFTNET &#45; Network resources ",
     "weight": "270"
 }The
-*Network resources* object  corresponds to the CFTNET object in the command line operations.  
+*Network resources* object corresponds to the CFTNET object in the command line operations.
 
--   Command syntax
+- Command syntax
     [CFTNET](../../../c_intro_userinterfaces/command_summary#CFTNET)
--   Parameter list
+- Parameter list
     [CFTNET](../../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftnet)
 
 <span id="What_is_a_local_network_resource_"></span>
@@ -16,23 +16,23 @@
 
 The local network resources object:
 
--   Defines a network
-    resource which, for the  {{< TransferCFT/componentshortname >}}, is an entity through which connections
+- Defines a network
+    resource which, for the {{< TransferCFT/componentshortname >}}, is an entity through which connections
     can be established
--   Supplies the Transfer
+- Supplies the Transfer
     CFT with a number of items of information which are required to access
-    the network of the type indicated,  TCP/IP and so on, through
+    the network of the type indicated, TCP/IP and so on, through
     a resource
 
 This object includes:
 
--   Parameters used
-    to manage the  {{< TransferCFT/componentshortname >}} internal facilities: control of connection
+- Parameters used
+    to manage the {{< TransferCFT/componentshortname >}} internal facilities: control of connection
     establishing mechanisms for example
--   Parameters describing
+- Parameters describing
     the network environment characteristics defined by the local operating
     system
--   Parameters used
+- Parameters used
     to establish connections between:
     -   System
         parameters which can make reference to one or more system software components
@@ -55,7 +55,7 @@ The TYPE parameter takes the value TCP/IP.
 
 The check for the maximum number of CFTNET objects managed, performed
 during the parameter updating phase, may differ in certain environments
-from the check performed during  {{< TransferCFT/componentshortname  >}} execution. When Transfer
+from the check performed during {{< TransferCFT/componentshortname  >}} execution. When Transfer
 CFT detects an excessive number of CFTNET objects, the following message
 appears: 
 
@@ -64,20 +64,20 @@ appears: 
 ## How does the CFTNET object work?
 
 CFTNET is the network local resource declaration. It is used to define
-  {{< TransferCFT/componentshortname  >}} network resources. CFTNET also supplies the  {{< TransferCFT/componentshortname  >}}
+{{< TransferCFT/componentshortname  >}} network resources. CFTNET also supplies the {{< TransferCFT/componentshortname  >}}
 with information required to access the required network for the type
 indicated.
 
 The CFTNET objects define the network parameters for partners in a given
 group. This information includes:
 
--   Network
-    location of the  {{< TransferCFT/componentshortname >}} partner
--   Time slots
+- Network
+    location of the {{< TransferCFT/componentshortname >}} partner
+- Time slots
     for calls on the network
--   Connection
+- Connection
     retry mechanisms
--   Maximum number
+- Maximum number
     of connections with each partner
 
 <span id="Defining_a_network_and_protocol_environment"></span>
@@ -89,8 +89,8 @@ with the following definitions and links.
 
 These links enable relationships between:
 
--   The resources
-    which can be used by  {{< TransferCFT/componentshortname >}}
+- The resources
+    which can be used by {{< TransferCFT/componentshortname >}}
 
 Each of these resources is defined by a CFTNET command.
 The associated identifier - ID parameter - has the same value as the one
@@ -98,9 +98,9 @@ defined for the NET parameters.
 
 A resource is characterized by:
 
--   Type of
+- Type of
     network accessed
--   The protocols
+- The protocols
     which can be used by the PROT
     parameter of the CFTPARM object
 
@@ -109,7 +109,7 @@ Each of these protocols is defined by a CFTPROT object.
 A CFTPROT object references a class of resources designated
 by an identifier NET parameter.
 
--   The network
+- The network
     description used to connect to a given partner
 
 This description is defined in the CFTTCP object,
@@ -120,5 +120,5 @@ and protocol characteristics used to perform a transfer to a given partner.
 These characteristics are referenced in the CFTPART
 object such that:
 
--   PROT
+- PROT
     parameter references the CFTPROT used

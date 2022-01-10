@@ -11,10 +11,10 @@ VER = {
 
 Optional parameter. Indicates the format for the communication area.
 
--   **V23**(Default
-    value): The communication area between  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> and user’s exits remains
+- **V23**(Default
+    value): The communication area between <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> and user’s exits remains
     the same.
--   <span style="font-weight: bold;">V24</span>: The communication area takes into
+- <span style="font-weight: bold;">V24</span>: The communication area takes into
     account length of the new identifier. For example, the Part length is
     from 8 to 32,and Filename from 64 to 512.
 

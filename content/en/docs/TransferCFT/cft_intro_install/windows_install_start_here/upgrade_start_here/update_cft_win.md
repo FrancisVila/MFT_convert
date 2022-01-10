@@ -6,7 +6,7 @@
 
 ## Download the update file
 
-Download product updates from the [Axway support website](https://support.axway.com/)  to the machine you where you want to perform the update. Please note that the update file is a zip file. Do not unzip this file.
+Download product updates from the [Axway support website](https://support.axway.com/) to the machine you where you want to perform the update. Please note that the update file is a zip file. Do not unzip this file.
 
 ## Impacted directories when updating a product
 
@@ -18,8 +18,8 @@ You can easily perform {{< TransferCFT/transfercftname  >}} updates using {{< Tr
 
 Limitations:
 
--   You cannot remove SP or patches via the {{< TransferCFT/centralgovernancename >}} interface.
--   You cannot update {{< TransferCFT/componentlongname >}}s installed in multi-node/multi-hosts from .
+- You cannot remove SP or patches via the {{< TransferCFT/centralgovernancename >}} interface.
+- You cannot update {{< TransferCFT/componentlongname >}}s installed in multi-node/multi-hosts from .
 
 ## Windows users
 
@@ -66,7 +66,7 @@ To uninstall install the previous patch or service pack. For example, to remove 
 **Example**
 
 ```
-C:\\axway\\Transfer_CFT_{{< TransferCFT/releasenumber >}}_SP1_<OS>_<BN>.exe --mode  unattended
+C:\\axway\\Transfer_CFT_{{< TransferCFT/releasenumber >}}_SP1_<OS>_<BN>.exe --mode unattended
 ```
 
 To verify, from the Transfer CFT &lt;runtime\_dir> run the `about `command.
@@ -79,10 +79,10 @@ This section describes the procedure to apply a patch or service pack on a multi
 >
 > Transfer CFT clusters can still run while performing an update.
 
-1.  Connect to the first host.
-2.  Stop all nodes running on this host by running the command: `copstop`  
+1. Connect to the first host.
+1. Stop all nodes running on this host by running the command: `copstop`  
     Copilot services are stopped, and local nodes are automatically re-started on the other hosts.
-3.  Check that the nodes are re-started by using  the command: `CFTUTIL listnode`
-4.  Install the patch or the service pack as usual using {{< TransferCFT/transfercftname >}} installer as described in [Install a standard update](#Install).
-5.  Start Copilot services.
-6.  Connect to the next host and repeat the procedure starting as of **Step 2** (above).
+1. Check that the nodes are re-started by using the command: `CFTUTIL listnode`
+1. Install the patch or the service pack as usual using {{< TransferCFT/transfercftname >}} installer as described in [Install a standard update](#Install).
+1. Start Copilot services.
+1. Connect to the next host and repeat the procedure starting as of **Step 2** (above).

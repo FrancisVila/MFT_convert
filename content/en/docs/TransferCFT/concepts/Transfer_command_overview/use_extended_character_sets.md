@@ -2,7 +2,7 @@
     "title": "Use extended character sets",
     "linkTitle": "Using extended character sets ",
     "weight": "340"
-}Character transcoding (using extended character sets) defines how data are encoded during the transfer process.  This is important when transferring files that do not have the same coding requirements on the sending and receiving systems.
+}Character transcoding (using extended character sets) defines how data are encoded during the transfer process. This is important when transferring files that do not have the same coding requirements on the sending and receiving systems.
 
 ## What is extended transcoding?
 
@@ -11,10 +11,10 @@ Typical transcoding, using either XLATE or internal transcoding (ASCII/EBCDIC/BI
 The FCHARSET parameter defines the local file encoding, and the NCHARSET
 parameter defines the remote and network data encoding. These parameters, FCHARSET and NCHARSET, are available for the following objects:
 
--   SEND/RECV
--   CFTSEND/CFTRECV
--   CFTPART
--   CFTPROT
+- SEND/RECV
+- CFTSEND/CFTRECV
+- CFTPART
+- CFTPROT
 
 <span id="Using"></span>
 
@@ -32,13 +32,13 @@ For example, if you define an NCHARSET as CFT\_ISO8859-1, the parameter is trans
 
 ### Using the //IGNORE functionality
 
-In some cases you may want to disregard characters either in a file to be sent, or in a file to be received. You can use the //IGNORE functionality to  disregard characters  that you do not want to be present in the target.
+In some cases you may want to disregard characters either in a file to be sent, or in a file to be received. You can use the //IGNORE functionality to disregard characters that you do not want to be present in the target.
 
 Depending on your operating system, note the following specific //IGNORE behavior:
 
--   Sun: converts the character to a question mark '?'
--   AIX and HPUX: converts the character to the substitute character (the control character 1A hex)
--   All other systems: no character substitution occurs
+- Sun: converts the character to a question mark '?'
+- AIX and HPUX: converts the character to the substitute character (the control character 1A hex)
+- All other systems: no character substitution occurs
 
 **Example 1**
 
@@ -70,26 +70,26 @@ See *Adding a character set: transcoding* (in the general unified configuration 
 
 The FCHARSET/NCHARSET values for a transfer are defined as follows:
 
-1.  SEND/RECV: The transfer uses
+1. SEND/RECV: The transfer uses
     the charset value provided by the SEND/RECV commands if the corresponding
     CFTSEND/CFTRECV permits it.
-2.  CFTSEND/CFTRECV: If the SEND/RECV
+1. CFTSEND/CFTRECV: If the SEND/RECV
     command is empty, the values come from the corresponding CFTSEND/CFTRECV
     objects.
-3.  CFTPART: If the charset value
+1. CFTPART: If the charset value
     is still empty, the values come from the corresponding CFTPART object.
-4.  CFTPROT: If the charset
+1. CFTPROT: If the charset
     value is still empty, the values come from the corresponding CFTPROT object.
 
 The following rules apply:
 
--   FCHARSET and NCHARSET
+- FCHARSET and NCHARSET
     can be set by independent sources, be that SEND, CFTSEND, CFTPART, or
     CFTPROT.
--   If one or both
+- If one or both
     of the FCHARSET and NCHARSET fields are empty, or set to NONE, the extended
     transcoding is disabled and the traditional transcoding applies.
--   If you use FCHARSET/NCHARSET, the FCODE/NCODE parameters are ignored.
+- If you use FCHARSET/NCHARSET, the FCODE/NCODE parameters are ignored.
 
 ### Considerations when choosing the file type
 
@@ -97,14 +97,14 @@ It is generally recommended that you use text files in the variable-length forma
 
 When using multibyte encoding for fixed or limited record size files, please pay attention to the following important considerations:
 
--   Shrinking a record
+- Shrinking a record
     can cause a fatal error if it occurs in the middle of a multibyte character.
--   Padding a record
+- Padding a record
     can cause a fatal error if the size to be padded is not a multiple of
     the pad character. The pad character is a blank for a text file, and a
     zero for binary files.
--   Errors when using binary files are more likely (with the exception of single-byte encoding).
--   When using FTYPE=J (stream text), an interrupted transfer  restarts at the beginning of the transfer, not at the last synchronization point.
+- Errors when using binary files are more likely (with the exception of single-byte encoding).
+- When using FTYPE=J (stream text), an interrupted transfer restarts at the beginning of the transfer, not at the last synchronization point.
 
 <span id="CHARSET"></span>
 
@@ -112,72 +112,22 @@ When using multibyte encoding for fixed or limited record size files, please pay
 
 The following table shows the CHARSET mapping. Brackets in the UNIX/Windows column indicate platform exceptions.
 
-```
 
-CFT_ charset
+| CFT_ charset  | UNIX/Windows  | IBM i  |
+| --- | --- | --- |
+| CFT_UTF-8  | UTF-8  | 01208  |
+| CFT_UTF-16  | UTF-16  | 01204  |
+| CFT_UTF-16LE  | UTF-16LE<br/> [AIX] UTF-16le<br/>  | 01202  |
+| CFT_UTF-16BE  | UTF-16BE<br/> [AIX] UTF-16<br/> [HPUX] ucs2 | 01200  |
+| CFT_UTF-32  | UTF-32<br/> [HPUX] UTF-32BE | 01236  |
+| CFT_UTF-32LE  | UTF-32LE  | 01234  |
+| CFT_UTF-32BE  | UTF-32BE<br/> [AIX] UTF-32<br/> [HPUX] ucs4 | 01232  |
+| CFT_UCS-2  | UCS-2<br/> [HPUX] = UCS-2BE | N/A  |
+| CFT_UCS-2LE  | UCS-2LE | N/A  |
+| CFT_UCS-2BE  | UCS-2BE<br/> [AIX] UCS-2 | N/A  |
+| CFT_CP850  | CP850<br/> [AIX, MVS (z/OS), VMS] IBM-850 | 00850  |
+| CFT_BIG5  | BIG5<br/> [AIX, HPUX] big5 | 00947  |
+| CFT_ISO8859-1  | ISO8859-1<br/> [HPUX] iso88591 | 00819  |
+| CFT_ISO8859-15  | ISO8859-15<br/> [HPUX] iso885915 | 00923  |
+| CFT_EBCDIC-FR  | [UNIX] EBCDIC-FR<br/> [AIX, SUN] IBM-297<br/> [HPUX, Windows] cp1147 | 00297  |
 
-UNIX/Windows
-
-IBM i
-
-CFT_UTF-8
-UTF-8
-01208
-CFT_UTF-16
-UTF-16
-01204
-CFT_UTF-16LE
-UTF-16LE
-[AIX] UTF-16le
- 
-01202
-CFT_UTF-16BE
-UTF-16BE
-[AIX]  UTF-16
-[HPUX]  ucs2
-01200
-CFT_UTF-32
-UTF-32
-[HPUX]  UTF-32BE
-01236
-CFT_UTF-32LE
-UTF-32LE
-01234
-CFT_UTF-32BE
-UTF-32BE
-[AIX]  UTF-32
-[HPUX]  ucs4
-01232
-CFT_UCS-2
-UCS-2
-[HPUX] = UCS-2BE
-N/A
-CFT_UCS-2LE
-UCS-2LE
-N/A
-CFT_UCS-2BE
-UCS-2BE
-[AIX]  UCS-2
-N/A
-CFT_CP850
-CP850
-[AIX, MVS (z/OS), VMS]  IBM-850
-00850
-CFT_BIG5
-BIG5
-[AIX, HPUX]  big5
-00947
-CFT_ISO8859-1
-ISO8859-1
-[HPUX]  iso88591
-00819
-CFT_ISO8859-15
-ISO8859-15
-[HPUX]  iso885915
-00923
-CFT_EBCDIC-FR
-[UNIX]  EBCDIC-FR
-[AIX, SUN]  IBM-297
-[HPUX, Windows]  cp1147
-00297
-```

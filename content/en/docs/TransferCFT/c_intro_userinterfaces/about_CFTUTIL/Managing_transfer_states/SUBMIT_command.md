@@ -16,20 +16,20 @@ be applied to a generic transfer, whose PART parameter equals the broadcasting
 list identifier, when it is in the T phasestep.
 
 
-           | Parameters  | Description  |
- --- | --- | --- |
-| APPSTATE  | State of the [end] phase for the processing script to restart  |
-|  <a href="../../../command_summary/parameter_intro/blknum">BLKNUM</a>  |  Catalog block number. If the values '*' or ' ' are used then all transfers are selected regardless of the block that they belong to.  |
-|  <a href="../../../command_summary/parameter_intro/direct">DIRECT</a>  |  Transfer direction for the requests in question.<br/>Possible values are:<br/> • BOTH: (default) takes both send transfers and receive transfers into account<br/> • RECV: limits the action to receive transfers<br/> • SEND: limits the action to send transfers</li>  |
-|  <a href="../../../command_summary/parameter_intro/exec">EXEC</a>  |  Name of the file containing the procedure to be executed.<br/>By default, this name is the one defined by the parameters:<br/> • EXEC of the SEND/RECV command (according to the transfer direction),<br/> • or (if this parameter is not defined) EXECSF or EXECRF of CFTPARM (according to the transfer direction).</li>  |
-|  <a href="../../../command_summary/parameter_intro/ida">IDA</a>  |  Local identifier of the transfer assigned by the user or user application.  |
-|  <a href="../../../command_summary/parameter_intro/idf">IDF</a>  |  Model file identifier.<br/>Several catalog entries may be associated with a given IDF. There is no default value.  |
-|  <a href="../../../command_summary/parameter_intro/idu">IDT</a>  |  Transfer identifier.<br/>This identifies a transfer for a given partner. The value ‘*****’ means that no selection is required using the IDT parameter (default value).  |
-|  <a href="../../../command_summary/parameter_intro/idtu">IDTU</a>  |  Transfer local counter identifier.  |
-|  <a href="../../../command_summary/parameter_intro/part">PART</a> <br/>(Mandatory)  |  Partner identifier.<br/>The value of this parameter can be:<br/> • *Identifier*: the command only concerns the transfers with this partner<br/> • *Mask*: the command concerns the transfers with the partners, whose identifiers correspond to this mask</li>  |
-| PHASE  | Phase of a catalog entry.  |
-| PHASTESTEP  | Phase step of a catalog entry.  |
-| <a href="../../../command_summary/parameter_intro/scope">SCOPE</a>  | Scope &lt;PARENT&gt;  ('PARENT','ALL','CHILDREN').  |
+| Parameters  | Description  |
+| --- | --- |
+| <a href="">APPSTATE</a>  | State of the [end] phase for the processing script to restart  |
+| <a href="../../../command_summary/parameter_intro/blknum">BLKNUM</a>  | Catalog block number. If the values '*' or ' ' are used then all transfers are selected regardless of the block that they belong to. |
+| <a href="../../../command_summary/parameter_intro/direct">DIRECT</a> | Transfer direction for the requests in question.<br/> Possible values are:<br/> • BOTH: (default) takes both send transfers and receive transfers into account<br/> • RECV: limits the action to receive transfers<br/> • SEND: limits the action to send transfers |
+| <a href="../../../command_summary/parameter_intro/exec">EXEC</a>  | Name of the file containing the procedure to be executed.<br/> By default, this name is the one defined by the parameters:<br/> • EXEC of the SEND/RECV command (according to the transfer direction),<br/> • or (if this parameter is not defined) EXECSF or EXECRF of CFTPARM (according to the transfer direction). |
+| <a href="../../../command_summary/parameter_intro/ida">IDA</a>  | Local identifier of the transfer assigned by the user or user application. |
+| <a href="../../../command_summary/parameter_intro/idf">IDF</a>  | Model file identifier.<br/> Several catalog entries may be associated with a given IDF. There is no default value. |
+| <a href="../../../command_summary/parameter_intro/idu">IDT</a>  | Transfer identifier.<br/> This identifies a transfer for a given partner. The value ‘*****’ means that no selection is required using the IDT parameter (default value). |
+| <a href="../../../command_summary/parameter_intro/idtu">IDTU</a>  | Transfer local counter identifier. |
+| <a href="../../../command_summary/parameter_intro/part">PART</a> <br/> (Mandatory) | Partner identifier.<br/> The value of this parameter can be:<br/> • *Identifier*: the command only concerns the transfers with this partner<br/> • *Mask*: the command concerns the transfers with the partners, whose identifiers correspond to this mask |
+| <a href="">PHASE</a>  | Phase of a catalog entry.  |
+| <a href="">PHASTESTEP</a>  | Phase step of a catalog entry.  |
+| <a href="../../../command_summary/parameter_intro/scope">SCOPE</a>  | Scope &lt;PARENT&gt; ('PARENT','ALL','CHILDREN').  |
 | <a href="../../../command_summary/parameter_intro/state">STATE</a>  | Transfer request state.  |
 
 
@@ -93,12 +93,12 @@ Before the post-processing procedure is executed, the catalog
 looks like this.
 
 
-|  STATE  |  PART  |  IDF  |
+| STATE  | PART  | IDF  |
 | --- | --- | --- |
-|  SFT  |  LIST  |  MYFILE (generic transfer)  |
-|  SFT  |  PART1  |  MYFILE  |
-|  SFT  |  PART2  |  MYFILE  |
-|  SFT  |  PART3  |  MYFILE  |
+| SFT  | LIST  | MYFILE (generic transfer)  |
+| SFT  | PART1  | MYFILE  |
+| SFT  | PART2  | MYFILE  |
+| SFT  | PART3  | MYFILE  |
 
 
 The post-processing procedure can be submitted again as

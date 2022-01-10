@@ -15,9 +15,9 @@
 
 Optional parameter. Indicates the format for log messages.
 
--   **V23** (Default value): The Identifier’s
+- **V23** (Default value): The Identifier’s
     length is truncated to 8 characters.
--   <span style="font-weight: bold;">V24</span>: The complete Identifier is displayed.
+- <span style="font-weight: bold;">V24</span>: The complete Identifier is displayed.
     The length of the Identifier can be up to 32 characters. Some messages
     related to a transfer includes the IDTU (Local transfer counter identifier)
     value.
@@ -33,8 +33,8 @@ Optional parameter. The FORMAT parameter indicates whether the former
 record structure should be used (V23 values for compatibility reasons)
 or if the new structure is to be applied (V24 values).
 
--   <span style="font-weight: bold;">V23 </span>(Default value)
--   V24
+- <span style="font-weight: bold;">V23 </span>(Default value)
+- V24
 
 <span id="format_CFTEXIT"></span>
 
@@ -59,28 +59,28 @@ Displays using the same format as in <span class="mc-variable header_footer_vari
 ##### Format 2
 
 
-|  Type  |  V24 length  |  V23 length  |  Description  |
+| Type | V24 length | V23 length | Description |
 | --- | --- | --- | --- |
-|  CHAR  |  1  |  1  |  'L': start of record marker  |
-|  CHAR  |  1  |  1  |  SEND/RECV flag  |
-|  CHAR  |  1  |  1  |  STATE  |
-|  CHAR  |  1  |  1  |  PHASE  |
-|  CHAR  |  1  |  1  |  PHASESTEP  |
-|  CHAR  |  64  |  8  |  Send partner (PART)  |
-|  CHAR  |  64  |  8  |  Receive partner (PART)  |
-|  CHAR  |  32  |  8  |  IDF file identifier  |
-|  CHAR  |  8  |  8  |  IDT transfer identifier  |
-|  CHAR  |  10  |  10  |  Number of records  |
-|  CHAR  |  512  |  64  |  Filename  |
-|  CHAR  |  3  |  3  |  Transfer priority  |
-|  CHAR  |  8  |  8  |  Date of submission to catalog  |
-|  CHAR  |  8  |  8  |  Time submitted to catalog, or time of last modification  |
-|  CHAR  |  512  |  80  |  User parameter (PARM)  |
-|  CHAR  |  32  |  15  |  Send USER  |
-|  CHAR  |  32  |  15  |  Receive USER  |
-|  CHAR  |  160  |  160  |  Local user parameter  |
-|  CHAR  |  3  |  3  |  Diagi  |
-|  CHAR  |  64  |  8  |  Diagp  |
+| CHAR  | 1  | 1  | 'L': start of record marker  |
+| CHAR  | 1  | 1  | SEND/RECV flag  |
+| CHAR  | 1  | 1  | STATE  |
+| CHAR | 1 | 1 | PHASE |
+| CHAR | 1 | 1 | PHASESTEP |
+| CHAR  | 64 | 8  | Send partner (PART) |
+| CHAR  | 64 | 8  | Receive partner (PART) |
+| CHAR  | 32 | 8  | IDF file identifier  |
+| CHAR  | 8 | 8  | IDT transfer identifier  |
+| CHAR  | 10 | 10  | Number of records  |
+| CHAR  | 512 | 64  | Filename  |
+| CHAR  | 3 | 3  | Transfer priority  |
+| CHAR  | 8 | 8  | Date of submission to catalog |
+| CHAR  | 8 | 8  | Time submitted to catalog, or time of last modification  |
+| CHAR  | 512 | 80  | User parameter (PARM) |
+| CHAR  | 32 | 15  | Send USER  |
+| CHAR  | 32 | 15  | Receive USER  |
+| CHAR  | 160 | 160  | Local user parameter  |
+| CHAR  | 3 | 3  | Diagi  |
+| CHAR  | 64 | 8  | Diagp  |
 
 
 ##### Format C: CSV - Comma Separated Value

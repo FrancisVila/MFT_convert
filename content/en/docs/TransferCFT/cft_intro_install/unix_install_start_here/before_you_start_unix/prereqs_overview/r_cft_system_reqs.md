@@ -10,8 +10,8 @@
 
 Transfer CFT requires that you install the appropriate library for your operating system:
 
--   Linux requires the ncurses version 5 library
--   Unix systems, except Linux, require the curses library
+- Linux requires the ncurses version 5 library
+- Unix systems, except Linux, require the curses library
 
 ### Supported operating systems and browsers
 
@@ -21,9 +21,9 @@ Refer to the {{< TransferCFT/platformorsuitelongname  >}} Supported Platforms gu
 
 {{< TransferCFT/componentlongname  >}} has the following hardware requirements:
 
--   Disk space requirement
+- Disk space requirement
     -   1.5 to 5 Gigabyte: minimum disk space to allow for future updates, SPs, and continued performance
--   RAM Requirement
+- RAM Requirement
     -   128 Megabyte: minimum dedicated per host
 
 ## Java

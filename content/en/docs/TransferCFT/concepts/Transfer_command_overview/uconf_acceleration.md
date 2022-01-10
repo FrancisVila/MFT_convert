@@ -8,16 +8,16 @@
 
 **UNIX/Windows only**
 
-The  {{< TransferCFT/componentshortname  >}} acceleration feature offers significantly faster transfer rates for large-file transfers, traveling long-distances  over high bandwidth networks.
+The {{< TransferCFT/componentshortname  >}} acceleration feature offers significantly faster transfer rates for large-file transfers, traveling long-distances over high bandwidth networks.
 
 {{< TransferCFT/componentshortname  >}} achieves this transfer acceleration using two methods:
 
--   UDT: a UDP-based protocol (User Datagram Protocol)
--   pTCP: parallel TCP, which uses multiple parallel connections
+- UDT: a UDP-based protocol (User Datagram Protocol)
+- pTCP: parallel TCP, which uses multiple parallel connections
 
 ### UDT description
 
-UDT is a transport protocol that  {{< TransferCFT/componentshortname  >}} can use to manage applications over high-speed networks. UDT uses UDP, a lower layer message, to transfer bulk data.
+UDT is a transport protocol that {{< TransferCFT/componentshortname  >}} can use to manage applications over high-speed networks. UDT uses UDP, a lower layer message, to transfer bulk data.
 
 ## Configuring accelerated communication
 
@@ -25,23 +25,17 @@ To enable accelerated communication in CFTUTIL use the unified configuration com
 
 ### Basic configuration
 
-You can globally enable or disable the acceleration function in the  {{< TransferCFT/componentshortname  >}} unified configuration. Next, indicate the network resources that you want to have accelerated by UDT and pTCP.
+You can globally enable or disable the acceleration function in the {{< TransferCFT/componentshortname  >}} unified configuration. Next, indicate the network resources that you want to have accelerated by UDT and pTCP.
 
 #### Parameters
 
-```
 
-Parameter
+| Parameter  | Description  |
+| --- | --- |
+| acceleration.enable  | Activate/deactivate the acceleration option.  |
+| acceleration.udt  | UDT default peer definition.  |
+| acceleration.ptcp  | pTCP default peer definition.  |
 
-Description
-
-acceleration.enable
-Activate/deactivate the acceleration option.
-acceleration.udt
-UDT default peer definition.
-acceleration.ptcp
-pTCP default peer definition.
-```
 
 #### Example in CFTUTIL
 
@@ -53,7 +47,7 @@ pTCP default peer definition.
 
 In this example, all protocols (CFTPROT objects) using NET1 are accelerated by UDT, and those using NET0 and NET\_TEST are accelerated by pTCP.
 
-Network resources that are scheduled to use acceleration functionality should have their own class number in order to avoid conflicts with other network resources, one for UDT and another for pTCP. In example above, NET1 could have a class number of 4,  and NET0 and NET\_TEST could have a class number of 5. Additionally, partners using these network resources should also have the same class number as corresponding NET.
+Network resources that are scheduled to use acceleration functionality should have their own class number in order to avoid conflicts with other network resources, one for UDT and another for pTCP. In example above, NET1 could have a class number of 4, and NET0 and NET\_TEST could have a class number of 5. Additionally, partners using these network resources should also have the same class number as corresponding NET.
 
 **Example**
 
@@ -98,22 +92,22 @@ Refer to the [UCONF parameters](../../../admin_intro/uconf/uconf_directory) tab
 
 > **Note**
 >
-> Transfer CFT versions that use the newer pTCP protocol cannot perform pTCP exchanges with  Transfer CFTs using the earlier pTCP version. See Protocols and networks for more information.
+> Transfer CFT versions that use the newer pTCP protocol cannot perform pTCP exchanges with Transfer CFTs using the earlier pTCP version. See Protocols and networks for more information.
 
 <span id="uconf_ptcp"></span>
 
 ## pTCP protocol versions
 
-{{< TransferCFT/componentshortname  >}} 3.0.1 SP2 and higher, and  {{< TransferCFT/componentshortname  >}} 2.7.1 SP6, support a more recent version of the pTCP protocol than previously supported by  {{< TransferCFT/componentshortname  >}}. This newer version of pTCP offers the following advantages:
+{{< TransferCFT/componentshortname  >}} 3.0.1 SP2 and higher, and {{< TransferCFT/componentshortname  >}} 2.7.1 SP6, support a more recent version of the pTCP protocol than previously supported by {{< TransferCFT/componentshortname  >}}. This newer version of pTCP offers the following advantages:
 
--   Multi-node architecture support
--   Exchange capability with  Axway SecureTransport
+- Multi-node architecture support
+- Exchange capability with Axway SecureTransport
 
-Note that the new pTCP support is **not** compatible with the previously used version of pTCP. This means that  {{< TransferCFT/componentshortname  >}} 3.0.1 SP2 and higher, and  {{< TransferCFT/componentshortname  >}} 2.7.1 SP6,   **cannot** exchange files with earlier versions of  {{< TransferCFT/componentshortname  >}} using the pTCP protocol.
+Note that the new pTCP support is **not** compatible with the previously used version of pTCP. This means that {{< TransferCFT/componentshortname  >}} 3.0.1 SP2 and higher, and {{< TransferCFT/componentshortname  >}} 2.7.1 SP6, **cannot** exchange files with earlier versions of {{< TransferCFT/componentshortname  >}} using the pTCP protocol.
 
-For more information on supported platforms and transfer acceleration, refer to Platform-specific functionality.
+For more information on supported platforms and transfer acceleration, refer to [Platform-specific functionality]().
 
 Related topics
 
--   [About the unified configuration](../../../admin_intro/uconf)
--   [Unified configuration (CFTUTIL)](../../../admin_intro/uconf/uconf_w_cftutil)
+- [About the unified configuration](../../../admin_intro/uconf)
+- [Unified configuration (CFTUTIL)](../../../admin_intro/uconf/uconf_w_cftutil)

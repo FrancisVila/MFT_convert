@@ -2,7 +2,7 @@
     "title": "Example send file transfer request",
     "linkTitle": "Example send file request",
     "weight": "320"
-}This section describes how to execute a SEND transfer request using Web services. After submitting a request you can  retrieve transfer processing information in the {{< TransferCFT/componentlongname  >}} catalog using a [Web services catalog search request](../example_search_catalog). Responses to SEND requests may differ depending on the type of COM media file that you are using (File or TCP).
+}This section describes how to execute a SEND transfer request using Web services. After submitting a request you can retrieve transfer processing information in the {{< TransferCFT/componentlongname  >}} catalog using a [Web services catalog search request](../example_search_catalog). Responses to SEND requests may differ depending on the type of COM media file that you are using (File or TCP).
 
 ## XFER\_CMD\_SEND\_FILE request
 
@@ -70,7 +70,7 @@ The request response differs depending on if Transfer CFT is running, and if th
 
 ### {{< TransferCFT/componentlongname  >}} is down
 
-An error message (unsuccessful response) is displayed if Copilot is  running, but {{< TransferCFT/componentlongname  >}} is down. The following two examples demonstrate the different responses depending on the COM media type being used.
+An error message (unsuccessful response) is displayed if Copilot is running, but {{< TransferCFT/componentlongname  >}} is down. The following two examples demonstrate the different responses depending on the COM media type being used.
 
 #### Using the TCP media type
 
@@ -98,7 +98,7 @@ If Transfer CFT is not started and you are using TCP, an error message is displ
 >
 > The return code here is 7, while a successful request would return the value 3.
 
-#### Using the  File media type
+#### Using the File media type
 
 In this scenario no IDTU value is displayed because the request is not immediately processed by Transfer CFT. Instead the request is temporarily stored in the COM file until Transfer CFT is started.
 

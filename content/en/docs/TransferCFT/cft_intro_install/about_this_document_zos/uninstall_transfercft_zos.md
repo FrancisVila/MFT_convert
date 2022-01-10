@@ -5,17 +5,17 @@
 }This section describes how to uninstall Transfer CFT in a z/OS environment.
 
 If you uninstall a Transfer CFT, you will lose the entire Transfer CFT
-configuration. To avoid this, you must save your environment  prior removing the Transfer CFT.
+configuration. To avoid this, you must save your environment prior removing the Transfer CFT.
 
 ### Procedure
 
-Before  uninstalling, you must stop the servers you want to uninstall (including Copilot).
+Before uninstalling, you must stop the servers you want to uninstall (including Copilot).
 
 Run the UNINSTAL JCL, which:
 
-1.  Removes all files from the INSTANCE, including multi-node, except for the JCL library (target.INSTALL).
-2.  Removes sub-USS directories, Copilot, and Secure Relay.
-3.  Removes the distribution environment.
+1. Removes all files from the INSTANCE, including multi-node, except for the JCL library (target.INSTALL).
+1. Removes sub-USS directories, Copilot, and Secure Relay.
+1. Removes the distribution environment.
 
 > **Note**
 >
@@ -33,8 +33,8 @@ Example
 000020 //\* Phase 1 - Delete Transfer CFT instance env.
 000021 //\* ------------------------------------------
 000022 //\* INSTALL library is not deleted.
-000023 //IN01  EXEC PREXX,PARM='%RXDEL &CFTENV..USER.OBJ 0'
-000024 //IN02  EXEC PREXX,PARM='%RXDEL &CFTENV..SAMPLE 0'
+000023 //IN01 EXEC PREXX,PARM='%RXDEL &CFTENV..USER.OBJ 0'
+000024 //IN02 EXEC PREXX,PARM='%RXDEL &CFTENV..SAMPLE 0'
 …[continued]…
 000085 //
 000086 //

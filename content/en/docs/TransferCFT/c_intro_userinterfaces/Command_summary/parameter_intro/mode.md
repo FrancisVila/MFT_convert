@@ -6,29 +6,29 @@
 
 ### mode
 
-#### All  {{< TransferCFT/componentshortname  >}} commands
+#### All {{< TransferCFT/componentshortname  >}} commands
 
 \[MODE = { <u>REPLACE</u> | CREATE | DELETE }\]
 
 Action to do in the parameter or partner database. This parameter applies
-to all commands that affect  {{< TransferCFT/componentshortname  >}} databases. Possible values:
+to all commands that affect {{< TransferCFT/componentshortname  >}} databases. Possible values:
 
--   REPLACE
--   CREATE
--   DELETE
+- REPLACE
+- CREATE
+- DELETE
 
 > **Note**
 >
 > Applicable for CFTACCNT, CFTAUTH, CFTCAT, CFTCOM, CFTDEST, CFTEXIT, CFTFILE, CFTIDF,
-> CFTLOG,  CFTNET, CFTPARM, CFTPART, CFTPROT, CFTRECV, CFTSEND,
-> CFTTCP, CFTTRACE,  CFTXLATE.
+> CFTLOG, CFTNET, CFTPARM, CFTPART, CFTPROT, CFTRECV, CFTSEND,
+> CFTTCP, CFTTRACE, CFTXLATE.
 
 #### DISPLAY
 
 \[MODE = { ANY | COLUMN | LINE } \]
 
--   ANY / COLUMN: Displays in a  column format
--   Line: Displays in a more horizontal and spaced format
+- ANY / COLUMN: Displays in a column format
+- Line: Displays in a more horizontal and spaced format
 
  
 
@@ -37,10 +37,10 @@ to all commands that affect  {{< TransferCFT/componentshortname  >}} databases. 
 \[MODE = { START | CREATE | ACT | INACT }
 \]
 
--   INACT:  temporarily stops automated calls to a given site
--   ACT: reactivates automated calls after the INACT command
--   START: manually triggers a single connection for changing direction
--   CREATE: triggers an automatic, cyclic TURN
+- INACT: temporarily stops automated calls to a given site
+- ACT: reactivates automated calls after the INACT command
+- START: manually triggers a single connection for changing direction
+- CREATE: triggers an automatic, cyclic TURN
 
 #### INACT, ACT
 
@@ -49,9 +49,9 @@ to all commands that affect  {{< TransferCFT/componentshortname  >}} databases. 
 
 Mode to be reactivated:
 
--   BOTH
--   REQUESTER
--   SERVER
+- BOTH
+- REQUESTER
+- SERVER
 
 You can use the shortcuts B, R, and S in place of the keywords.
 
@@ -63,11 +63,11 @@ You can use the shortcuts B, R, and S in place of the keywords.
 
 The CFTPART command’s STATE parameter is set to:
 
--   ACTIVEBOTH after
+- ACTIVEBOTH after
     execution of ACT MODE=BOTH
--   ACTIVESERV after
+- ACTIVESERV after
     execution of ACT MODE=REQUESTER
--   ACTIVEREQ after
+- ACTIVEREQ after
     execution of ACT MODE=SERVER
 
 #### PKIENTITY
@@ -76,8 +76,8 @@ The CFTPART command’s STATE parameter is set to:
 
 Action to do in the PKI database. Possible values:
 
--   REPLACE
--   CREATE
--   DELETE
+- REPLACE
+- CREATE
+- DELETE
 
 [Return to Command index](../../)

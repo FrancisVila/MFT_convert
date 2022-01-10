@@ -14,8 +14,8 @@
 Enter the frequency (in seconds) with which the {{< TransferCFT/componentshortname  >}} scans the communication
 file:
 
--   60 (default value)
--   any
+- 60 (default value)
+- any
     other value
 
 <span id="wscan_CFTCAT"></span>
@@ -24,10 +24,10 @@ file:
 
 \[WSCAN = {5 | n}\]  {1..60}
 
-Enter the frequency (in minutes) with which Transfer CFT scans the catalog file when  restarting a transfer:
+Enter the frequency (in minutes) with which Transfer CFT scans the catalog file when restarting a transfer:
 
--   5 (default value)
--   1 to 60
+- 5 (default value)
+- 1 to 60
 
 Behavior specifics
 

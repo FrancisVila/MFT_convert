@@ -5,16 +5,16 @@
 }This section begins with this topic
 which provides the information about:
 
--   [Exit
+- [Exit
     task concepts](#Exit_task_concepts)
--   [Exit
+- [Exit
     task architecture](#Exit_task_architecture)
 
 A CFTEXIT object describes
 the environment and activation of an exit
 task. Each CFTEXIT object has an associated exit task. You can activate an exit task using:
 
--   [Command
+- [Command
     line operations](../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftexit) for the CFTEXIT object
 
 <span id="About_the_CFTEXIT_object"></span>
@@ -26,20 +26,20 @@ You can define as many CFTEXIT objects as needed.
 There is an EXIT task for each
 CFTEXIT object as described below:
 
--   File type: Performed
+- File type: Performed
     at various stages in the transfer of a file
--   Directory type:
+- Directory type:
     Performed during the protocol connection phase
--   End-of-transfer:
+- End-of-transfer:
     Performed at the end of a transfer
--   Beginning-of-transfer: Performed at the start of a transfer
+- Beginning-of-transfer: Performed at the start of a transfer
 
 The maximum number of EXIT tasks which are active simultaneously depends
 on the operating system.
 
--   z/OS (MVS): 99
--   Windows: 128
--   UNIX: 15
+- z/OS (MVS): 99
+- Windows: 128
+- UNIX: 15
 
 <span id="Exit_task_concepts"></span>
 
@@ -58,13 +58,13 @@ Beginning and end of transfer tasks, which are prior to or upon completion of a 
 The directory EXIT
 task:
 
--   In
+- In
     server mode, it can replace the standard checks performed by Transfer
     CFT when a remote partner requests a session to be set up
 
 <!-- -->
 
--   In
+- In
     requester mode, it can provide all the parameters required to set
     up a connection with a remote partner
 
@@ -81,41 +81,41 @@ be initiated for a given transfer request.
 
 The exit list is a file exit task that was written by Axway. It enables the following:
 
--   Remote partners
-    to query the  {{< TransferCFT/componentshortname >}} catalog of a central site or server
--   The catalog to
+- Remote partners
+    to query the {{< TransferCFT/componentshortname >}} catalog of a central site or server
+- The catalog to
     be queried
 
 <span id="Exit_task_architecture"></span>
 
 ## Exit task architecture
 
-{{< TransferCFT/componentshortname  >}} can activate one or more EXIT tasks,  such as calls, scheduling, and so on, which
-are fully managed by the  {{< TransferCFT/componentshortname  >}}.
+{{< TransferCFT/componentshortname  >}} can activate one or more EXIT tasks, such as calls, scheduling, and so on, which
+are fully managed by the {{< TransferCFT/componentshortname  >}}.
 
-<img src="/Images/TransferCFT/cft_exits_1.png" class="maxWidth" alt="Displays Transfer CFT relationship to multiple Exits" />
+![$2]($1)
 
 An EXIT task is generally activated, or loaded into memory,
-as soon as  {{< TransferCFT/componentshortname  >}} is started with the Directory EXIT
+as soon as {{< TransferCFT/componentshortname  >}} is started with the Directory EXIT
 task, or else at the first transfer initiating an event to be checked.
 After the event in question has been checked, the task is not de-activated
 but stays loaded in memory. It remains active for a time that is defined
 by the EXIT type, such as:
 
--   Throughout the
-      {{< TransferCFT/componentshortname >}} activity period for the Directory  EXIT tasks
--   For an EXIT task
+- Throughout the
+    {{< TransferCFT/componentshortname >}} activity period for the Directory EXIT tasks
+- For an EXIT task
     maximum inactivity time, only for File and End-of-transfer exits
 
 An EXIT task consists of:
 
--   An interface supplied
-    with  {{< TransferCFT/componentshortname >}}, providing functions for communicating with the Transfer
+- An interface supplied
+    with {{< TransferCFT/componentshortname >}}, providing functions for communicating with the Transfer
     CFT
--   A user program,
+- A user program,
     communicating with the interface
 
-The interface communicates with the  {{< TransferCFT/componentshortname  >}} through a semaphore. A semaphore is an entity
+The interface communicates with the {{< TransferCFT/componentshortname  >}} through a semaphore. A semaphore is an entity
 consisting of a structured stack of limited size. Each EXIT task has its
 own semaphore.
 
@@ -129,4 +129,4 @@ of a user program with two functions.
 
 Communication structure
 
-<img src="/Images/TransferCFT/cft_exits_2.png" class="maxWidth" alt="Simplified view of a user program communicating with functions" />
+![$2]($1)

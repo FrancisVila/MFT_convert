@@ -4,11 +4,11 @@
     "weight": "190"
 }This topic describes the following certificate principles:
 
--   [Establishing
+- [Establishing
     a trust relationship](#Establishing_a_trust_relationship)
--   [CA
+- [CA
     hierarchy](#CA_hierarchy)
--   [Certificate
+- [Certificate
     syntax and formats](#Certificate_syntax_and_formats)
 
 <span id="Establishing_a_trust_relationship"></span>
@@ -50,7 +50,7 @@ CAs as shown in the following figure.
 
 CA hierarchy
 
-<img src="/Images/TransferCFT/certificates3.gif" width="676" height="434" alt="Relationship between the Root CA and related certificates, such as Asia and Europe" />
+![$2]($1)
 
 In this model, the root CA is at the top of the hierarchy. The root
 CA certificate is a self-signed
@@ -77,15 +77,15 @@ ends at the root CA.
 A certificate chain traces a path of certificates from a branch to the
 root of the hierarchy. A certificate chain is formed that way:
 
--   Each certificate
+- Each certificate
     is followed by the certificate of its issuer
--   Each certificate
+- Each certificate
     contains the name (DN) of that certificate's issuer, which is the same
     as the subject name of the next certificate in the chain
 
 Certificate chains
 
-<img src="/Images/TransferCFT/certificates2.gif" width="676" height="253" alt="View of Trusted Root CA with some related certificates being Untrusted certificates" />
+![$2]($1)
 
 In the above figure, the Engineering CA certificate contains the DN
 of the CA (European CA), that issued that certificate. European CA's DN
@@ -106,16 +106,16 @@ for the Engineering CA.
 Certificate chain verification is the process of making sure a given
 certificate chain is well formed, valid, properly signed, and trustworthy:
 
-1.  Certificate validity period
+1. Certificate validity period
     is checked against the current time provided by the verifier's system
     clock.
-2.  The issuer's certificate is
+1. The issuer's certificate is
     located. The source can be either the verifier's local certificate database
     (on that client or server) or the certificate chain provided by the subject
     (for example, over an SSL connection).
-3.  The certificate signature is
+1. The certificate signature is
     verified using the public key in the issuer's certificate.
-4.  If the issuer's certificate
+1. If the issuer's certificate
     is trusted by the verifier in the verifier's certificate database, verification
     stops successfully here. Otherwise, the issuer's certificate becomes the
     one that needs to be verified, and chain verification returns to step
@@ -125,7 +125,7 @@ The following figure presents an example of this process.
 
 Verifying a certificate chain
 
-<img src="/Images/TransferCFT/certificate1.gif" width="609" height="350" alt="Validity checks on Untrusted Authorities, where Root CA is a Trusted Authority" />
+![$2]($1)
 
  
 
@@ -213,11 +213,11 @@ A commonly used file extension is pem.
 
 TLS certificates require the following key usages:
 
--   A TLS CA certificate must have the **Certificate sign** key usage
--   A TLS server certificate  must have the **Key encipherment** key usage
--   A TLS client certificate  must have the **Digital signature** key usage
+- A TLS CA certificate must have the **Certificate sign** key usage
+- A TLS server certificate must have the **Key encipherment** key usage
+- A TLS client certificate must have the **Digital signature** key usage
 
 Where:
 
--   If a certificate does not have a key usage, it is assumed that ALL key usage are applicable
--   Some ciphers, such as Diffie-Hellman, require **Key agreement** for key usage
+- If a certificate does not have a key usage, it is assumed that ALL key usage are applicable
+- Some ciphers, such as Diffie-Hellman, require **Key agreement** for key usage

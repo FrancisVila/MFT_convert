@@ -2,14 +2,14 @@
     "title": "Multi-node commands and management",
     "linkTitle": "Commands and management",
     "weight": "190"
-}This topic describes how to mange  {{< TransferCFT/componentshortname  >}} nodes, and related actions such as:
+}This topic describes how to mange {{< TransferCFT/componentshortname  >}} nodes, and related actions such as:
 
--   [Initialize internal data files](#Initiali)
--   [Start and stop the cluster](#Start)
--   [Check the status](#Check)
--   [Manage hosts](#Manage)
--   [Manage nodes](#Manage2)
--   [Rebalance the cluster after a host failure](#Rebalanc)
+- [Initialize internal data files](#Initiali)
+- [Start and stop the cluster](#Start)
+- [Check the status](#Check)
+- [Manage hosts](#Manage)
+- [Manage nodes](#Manage2)
+- [Rebalance the cluster after a host failure](#Rebalanc)
 
 <span id="Initiali"></span>
 
@@ -25,8 +25,8 @@ cftinit \[options\] &lt;filename>\[&lt;filename>\] \[…\]
 
 Options
 
--   -c |-common: only common internal data files are initialized (PARM, PART, main COM)
--   -n |-node: only node-specific internal data files are initialized (CATALOG, secondary COM, LOG)
+- -c |-common: only common internal data files are initialized (PARM, PART, main COM)
+- -n |-node: only node-specific internal data files are initialized (CATALOG, secondary COM, LOG)
 
 Usage
 
@@ -73,7 +73,7 @@ copstart
 
 Start all node managers
 
-For each host  perform the command: `copstart`
+For each host perform the command: `copstart`
 
 <span id="Stop"></span>
 
@@ -200,15 +200,15 @@ cft restart –ln
 
 ### Stop the {{< TransferCFT/transfercftname  >}} cluster
 
-1.  On the first host:
+1. On the first host:
     -   To stop all nodes, run: `cft stop`
     -   To stop the node manager, run: `copstop`
-2.  On each additional host, stop the node manager. Run: `copstop`
+1. On each additional host, stop the node manager. Run: `copstop`
 
 ### Start the {{< TransferCFT/transfercftname  >}} cluster
 
-1.  On each host, start the node manager. Run: `copstart`
-2.  On the last host, start all nodes. Run: `cft start`
+1. On each host, start the node manager. Run: `copstart`
+1. On the last host, start all nodes. Run: `cft start`
 
 ## Check the status
 
@@ -218,7 +218,7 @@ cft restart –ln
 
 #### listnode
 
-The CFTUTIL listnode displays the status of the  {{< TransferCFT/componentshortname  >}} cluster, including information about node managers (Copilots) and nodes.
+The CFTUTIL listnode displays the status of the {{< TransferCFT/componentshortname  >}} cluster, including information about node managers (Copilots) and nodes.
 
 Example
 
@@ -230,7 +230,7 @@ CFTUTIL listnode
 
 In this example, the four nodes running on four different hosts are displayed.
 
-![Example screen shot of 4  nodes running on different hosts, per the description in the text.](/Images/TransferCFT/examplelistnode.png "Example screen shot of 4  nodes running on different hosts, per the description in the text.")
+![Example screen shot of 4 nodes running on different hosts, per the description in the text.](/Images/TransferCFT/examplelistnode.png "Example screen shot of 4  nodes running on different hosts, per the description in the text.")
 
 ### Check a node manager's status
 
@@ -256,9 +256,9 @@ The `cftping `command checks the status of one or all enabled nodes. By default,
 
 Return values:
 
--   0: all enabled nodes are stopped
--   1: all enabled nodes are running
--   2: not all enabled nodes are running
+- 0: all enabled nodes are stopped
+- 1: all enabled nodes are running
+- 2: not all enabled nodes are running
 
 Syntax
 
@@ -266,10 +266,10 @@ cftping \[options\]
 
 Options
 
--   `-n|-node <node_id>`: checks the status of the node &lt;node\_id>
--   `-v`: verbose mode
--   `-p`: shows PID (Process IDs) of all CFTMAIN processes
--   `-h`: shows the help
+- `-n|-node <node_id>`: checks the status of the node &lt;node\_id>
+- `-v`: verbose mode
+- `-p`: shows PID (Process IDs) of all CFTMAIN processes
+- `-h`: shows the help
 
 ### Check the log and transfers' status
 
@@ -295,7 +295,7 @@ Use the `CFTUTIL display` or CFTUTIL listcat to show catalog transfer records. I
 
 ## Manage hosts
 
-### Add a host to the  cluster
+### Add a host to the cluster
 
 #### cft add\_host
 
@@ -307,18 +307,18 @@ cft add\_host –hostname &lt;hostname> –host &lt;host\_address>
 
 Usage on UNIX/Windows
 
-1.  For the new host, run the installation executable. In the Installation architecture screen, select **Cluster-additional host.**
-2.  Complete the installation.
-3.  On the shared disk where runtime directory is installed, execute the profile.
-4.  Execute the command add\_host:  
+1. For the new host, run the installation executable. In the Installation architecture screen, select **Cluster-additional host.**
+1. Complete the installation.
+1. On the shared disk where runtime directory is installed, execute the profile.
+1. Execute the command add\_host:  
     ```
     cft add_host -hostname newhost -host newhost.company.int
     ```
-5.  Check that new hostname displays when listing the hosts:  
+1. Check that new hostname displays when listing the hosts:  
     ```
     listuconf id= cft.multi_node.hostnames.\*
     ```
-6.  Start Copilot on &lt;hostname>.
+1. Start Copilot on &lt;hostname>.
 
 Please refer to the OS-appropriate installation guide  for installation program details.
 
@@ -328,8 +328,8 @@ For specifics on adding a host on z/OS platforms, please see <a href="../../cft
 >
 > The cft add\_host command automatically sets the following UCONF parameters:
 
--   cft.multi\_node.hostnames
--   cft.multi\_node.hostnames.&lt;hostname>.host = &lt;host\_address>
+- cft.multi\_node.hostnames
+- cft.multi\_node.hostnames.&lt;hostname>.host = &lt;host\_address>
 
 ### Remove a host
 
@@ -343,13 +343,13 @@ cft remove\_host –hostname &lt;hostname>
 
 Usage on UNIX/Windows
 
-1.  On the host to be removed, execute the profile and then stop the node manager: `copstop`
-2.  Check that all Transfer CFT nodes and node manager processes are stopped on the host to be removed.
-3.  Execute the following command, where &lt;host to remove> is the name of host to remove as referenced in `cft.multi_node.hostnames`:  
+1. On the host to be removed, execute the profile and then stop the node manager: `copstop`
+1. Check that all Transfer CFT nodes and node manager processes are stopped on the host to be removed.
+1. Execute the following command, where &lt;host to remove> is the name of host to remove as referenced in `cft.multi_node.hostnames`:  
     ```
     cft remove_host -hostname <host to remove>
     ```
-4.  Uninstall binaries from the &lt;host to remove>.
+1. Uninstall binaries from the &lt;host to remove>.
 
 <span id="Manage2"></span>
 
@@ -359,7 +359,7 @@ Usage on UNIX/Windows
 
 #### cft add\_node
 
-The cft add\_node command adds a new node to the  {{< TransferCFT/componentshortname  >}} cluster. The number of nodes is incremented (uconf: cft.multi\_node.nodes = N+1) . The internal data files associated with the new node are initialized and the node state is set to DISABLED (uconf:cft.multi\_node.nodes.&lt;node\_id>.nodestate). After adding the new node, you can enable it using the command: `cft enable_node -n x`
+The cft add\_node command adds a new node to the {{< TransferCFT/componentshortname  >}} cluster. The number of nodes is incremented (uconf: cft.multi\_node.nodes = N+1) . The internal data files associated with the new node are initialized and the node state is set to DISABLED (uconf:cft.multi\_node.nodes.&lt;node\_id>.nodestate). After adding the new node, you can enable it using the command: `cft enable_node -n x`
 
 Syntax
 
@@ -394,11 +394,11 @@ cft enable_node -n -<node_id>
 
 #### cft disable\_node
 
-The cft disable\_node command disables   the node identified by the highest node id in the  {{< TransferCFT/componentshortname  >}} cluster and only that node.
+The cft disable\_node command disables the node identified by the highest node id in the {{< TransferCFT/componentshortname  >}} cluster and only that node.
 
--   The node un-registers its listening points from the connection dispatcher so that it no longer receives incoming requests.
--   Outgoing requests coming from APIs are no longer dispatched to this node.
--   Once the catalog related to the node is empty, the node state is set to DISABLED and the node stops.
+- The node un-registers its listening points from the connection dispatcher so that it no longer receives incoming requests.
+- Outgoing requests coming from APIs are no longer dispatched to this node.
+- Once the catalog related to the node is empty, the node state is set to DISABLED and the node stops.
 
 Syntax
 
@@ -418,9 +418,9 @@ cft disable_node -n -<node_id>
 
 #### cft remove\_node
 
-The cft remove\_node command removes the node identified by the highest node id in the  {{< TransferCFT/componentshortname  >}} cluster, and only that node. To remove a node, the node state must be both DISABLED (uconf:cft.multi\_node.nodes.&lt;node\_id>.nodestate) and STOPPED (uconf:cft.multi\_node.nodes.&lt;node\_id>.state). See also, [Disable a node](#Disable).
+The cft remove\_node command removes the node identified by the highest node id in the {{< TransferCFT/componentshortname  >}} cluster, and only that node. To remove a node, the node state must be both DISABLED (uconf:cft.multi\_node.nodes.&lt;node\_id>.nodestate) and STOPPED (uconf:cft.multi\_node.nodes.&lt;node\_id>.state). See also, [Disable a node](#Disable).
 
-The node number  is decremented (uconf: cft.multi\_node.nodes = N-1), and any internal data files associated with the node are removed.
+The node number is decremented (uconf: cft.multi\_node.nodes = N-1), and any internal data files associated with the node are removed.
 
 > **Note**
 >
@@ -445,10 +445,10 @@ Once the failed host (node manager) is running again, you can rebalance the clus
 
 In this example there are two hosts (host A and host B), and two nodes (node\_0 and node\_1). Node\_0 is running on host A, and node\_1 is running on host B.
 
-1.  Host A  experiences a failure.
-2.  The host A node manager re-starts the node\_0 locally.
-3.  Node\_0 and node\_1 run on host B.
-4.  Host A and its node manager are  manually re-started.
-5.  From one of the  hosts, host A or host B, execute the command:` cft restart –n 0`  
+1. Host A  experiences a failure.
+1. The host A node manager re-starts the node\_0 locally.
+1. Node\_0 and node\_1 run on host B.
+1. Host A and its node manager are manually re-started.
+1. From one of the hosts, host A or host B, execute the command:` cft restart –n 0`  
     See [Restart a node](#Restart) for details.
-6.  The host A node manager  restarts the node\_0 locally.
+1. The host A node manager restarts the node\_0 locally.

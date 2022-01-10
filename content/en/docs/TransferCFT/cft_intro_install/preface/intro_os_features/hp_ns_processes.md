@@ -8,7 +8,7 @@ Transfer CFT {{< TransferCFT/releasenumber  >}} HP NonStop reassembles all of th
 
 ## About the system configuration file
 
-The system configurations file (CFGSYS) found in the previous version no longer exists in this version. The information that was in this file  is now either obsolete (for example, processes output) or is managed by:
+The system configurations file (CFGSYS) found in the previous version no longer exists in this version. The information that was in this file is now either obsolete (for example, processes output) or is managed by:
 
--   Runtime/profile (sets environment variables)
--   Transfer CFT uconf file (contains, for example, all parameters related to end of transfer procedure or server executions)
+- Runtime/profile (sets environment variables)
+- Transfer CFT uconf file (contains, for example, all parameters related to end of transfer procedure or server executions)

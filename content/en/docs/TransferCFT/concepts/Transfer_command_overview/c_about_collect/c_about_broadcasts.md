@@ -16,7 +16,7 @@ to be established.
 **Defining a list
 of partners**
 
-<img src="/Images/TransferCFT/Define_list_of_partner_SEND.gif" class="smallWidth" width="724" height="325" />
+![]($1)
 
 The broadcasting list can be described in a file. In this case, the
 name of this file is indicated in CFTDEST, FNAME parameter. The corresponding
@@ -31,7 +31,7 @@ by direct connection.
 **Broadcasting through
 a store and forward site**
 
-<img src="/Images/TransferCFT/Broadcast_thr_store_and_forward.gif" class="smallWidth" width="773" height="958" />
+![]($1)
 
 <span id="Broadcasting_notations"></span>
 
@@ -44,38 +44,38 @@ following figure.*
 To broadcast a file from a store and forward site, the following conditions
 are then required and sufficient:
 
--   the initial sender
+- the initial sender
     defines a virtual partner with an ID corresponding to the ID of the CFTDEST
     command managed on the store and forward site. The values of the OMINTIME
     and OMAXTIME parameters of the CFTPART command are set to zero to force
     the routing of transfers to the store and forward site (intermediate partner
     IPART : ID\_B). A file to be broadcast from the store and forward site
     is sent by the command SEND PART=ID\_CD ...
--   the store and forward
+- the store and forward
     node must have a CFTDEST command, the identifier of which (ID=ID\_CD) is
     the network name of the broadcasting list indicated by the initial partner
     (SEND PART=ID\_CD)
--   the CFTDEST object
-    must comply with the syntax imposed by  {{< TransferCFT/componentshortname >}} ([FOR](../../../../c_intro_userinterfaces/command_summary/parameter_intro/for)=COMMUT
+- the CFTDEST object
+    must comply with the syntax imposed by {{< TransferCFT/componentshortname >}} ([FOR](../../../../c_intro_userinterfaces/command_summary/parameter_intro/for)=COMMUT
     parameter).
--   the final receivers
+- the final receivers
     C and D know the initial sender of the file (CFTPART ID=ID\_A,...) and
     the store and forward partner B
--   the connections
+- the connections
     established between partners must be complied with at each of the network
     nodes (CFTPART ID=...)
 
 **Broadcasting activated on a store and
 forward site**
 
-<img src="/Images/TransferCFT/Broadcast_activated_on_store_and_forward.gif" class="mediumWidth" />
+![]($1)
 
 <span id="Broadcasting_processes"></span>
 
 ### Broadcasting processes
 
 *On the store and forward site:* on
-effectively transferring the file to be broadcast,  {{< TransferCFT/componentshortname  >}} does not
+effectively transferring the file to be broadcast, {{< TransferCFT/componentshortname  >}} does not
 activate an end of transfer procedure or an error procedure.
 
 The transfer IDF is set to the value COMMUT: a command CFTRECV ID =
@@ -131,13 +131,13 @@ IPART=B).
 To acknowledge a broadcasting list, the following conditions are then
 required to route the acknowledgement to the initial partner:
 
--   the connections
+- the connections
     established between partners must be complied with at each of the network
     nodes (CFTPART ID =...)
--   at the store and
+- at the store and
     forward node, all the catalog records corresponding to the previously
     performed broadcasting, are present
--   at the store and
+- at the store and
     forward node, all the catalog records corresponding to the previously
     performed broadcasting, indicate that the receiving partners have correctly
     received the file or message (SFT transfer state)
@@ -149,4 +149,4 @@ message.
 
 **Broadcasting list acknowledgement mechanism**
 
-<img src="/Images/TransferCFT/Broadcast_ack_mechanism.gif" class="mediumWidth" width="852" height="840" />
+![]($1)

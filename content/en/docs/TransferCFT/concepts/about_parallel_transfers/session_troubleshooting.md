@@ -4,8 +4,8 @@
     "weight": "260"
 }This section provides transfer examples that demonstrate parameter dependencies and typical log outputs, including errors, which you may encounter when using similar values. The goal is to understand the effect of parameter combinations, and be able to adapt settings to your particular needs.
 
--   <a href="#Example:" class="MCXref xref">Example: cft.server.max_session is less than MAXCNX  </a>
--   <a href="#Example:2" class="MCXref xref">Example:  cft.server.max_session is greater than MAXCNX</a>
+- <a href="#Example:" class="MCXref xref">Example: cft.server.max_session is less than MAXCNX</a>
+- <a href="#Example:2" class="MCXref xref">Example: cft.server.max_session is greater than MAXCNX</a>
 
 See the <a href="../faq" class="MCXref xref">Frequently asked questions</a> for common questions and answers on parameter usage, license keys, and so on.
 
@@ -17,25 +17,25 @@ When troubleshooting, remember that if the [DIAG](../../../troubleshoot_intro/me
 
 <span id="Example:"></span>
 
-### Example: cft.server.max\_session is less than MAXCNX  
+### Example: cft.server.max\_session is less than MAXCNX
 
-The following example demonstrates  using UCONF parameter cft.server.max\_session=p, where:
+The following example demonstrates using UCONF parameter cft.server.max\_session=p, where:
 
--   p = 0 (default)  
--   MAXCNX =s (limiting factor)
+- p = 0 (default)
+- MAXCNX =s (limiting factor)
 
-If p is any value other than zero, the smaller of the  cft.server.max\_session and MAXCNX values is used.
+If p is any value other than zero, the smaller of the cft.server.max\_session and MAXCNX values is used.
 
 ##### Scenario 1 - Requester configuration
 
-When cft.server.max\_session  is less than MAXCNX on the requester side,  MAXCNX is effectively equal to *p* (though there is no limitation on the server).
+When cft.server.max\_session is less than MAXCNX on the requester side, MAXCNX is effectively equal to *p* (though there is no limitation on the server).
 
 For example, if cft.server.max\_session = 3, then MAXCNX is limited to 3 on the requester side.
 
 **Requester output**
 
 ```
-CFTT75E connect reject                    <IDTU=A00000FT PART=SUN35-5 IDF=T1       IDT=D2918351 416 MAXTRANS>
+CFTT75E connect reject <IDTU=A00000FT PART=SUN35-5 IDF=T1 IDT=D2918351 416 MAXTRANS>
 ```
 
 **Server output**
@@ -44,7 +44,7 @@ There is no output in this scenario.
 
 **Scenario 2 - Server configuration**
 
-When p (cft.server.max\_session = 3 for example) is less than MAXCNX on the server side, it is          determined by MAXCNX =p. (no limitation on requester side).
+When p (cft.server.max\_session = 3 for example) is less than MAXCNX on the server side, it is determined by MAXCNX =p. (no limitation on requester side).
 
 **Server output**
 
@@ -55,17 +55,17 @@ CFTH66E Incoming calls (1) rejected, ERROR=sessions (ctx) in use >= max_sessions
 **Requester output**
 
 ```
-CFTT75E connect reject                    <IDTU=A000006O PART=WINZZ-5 IDF=T2       IDT=D2918471 302 R 0 2f2>
+CFTT75E connect reject <IDTU=A000006O PART=WINZZ-5 IDF=T2 IDT=D2918471 302 R 0 2f2>
 ```
 <span id="Example:2"></span>
 
-### Example:  cft.server.max\_session is greater than MAXCNX
+### Example: cft.server.max\_session is greater than MAXCNX
 
 In this example, the MAXCNX value is the limiting factor.
 
 ##### Scenario 1 - Requester configuration
 
-When cft.server.max\_session is greater than MAXCNX  on the requester side the determining value is MAXCNX, meaning that MAXCNX is the limiting value.
+When cft.server.max\_session is greater than MAXCNX on the requester side the determining value is MAXCNX, meaning that MAXCNX is the limiting value.
 
 **Requester output**
 
@@ -79,7 +79,7 @@ There is no message / output on server side.
 
 **Scenario 2 - Server configuration**
 
-When p \[max.session=64\] is greater than s on the server side, it is        determined by MAXCNX =s. So in our example, MAXCNX is set to 3.
+When p \[max.session=64\] is greater than s on the server side, it is determined by MAXCNX =s. So in our example, MAXCNX is set to 3.
 
 **Server output**
 
@@ -91,10 +91,10 @@ There is no message / output on server side.
 
 ```
 CFTH11E Error Opening session <PART=WINZZ-4 EV=VNRELI ST=CN0022>
-CFTT75E connect reject                    <IDTU=A0000074 PART=WINZZ-4 IDF=T4       IDT=D2919014 302 R 0 2f2>
+CFTT75E connect reject <IDTU=A0000074 PART=WINZZ-4 IDF=T4 IDT=D2919014 302 R 0 2f2>
 ```
 
 Related topics
 
--   [About parallel transfers](../)
--   [FAQ and troubleshooting](../faq)
+- [About parallel transfers](../)
+- [FAQ and troubleshooting](../faq)

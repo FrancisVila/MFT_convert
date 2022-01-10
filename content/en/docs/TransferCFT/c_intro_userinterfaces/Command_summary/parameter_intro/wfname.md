@@ -28,25 +28,25 @@ A temporary file is used to ensure the integrity of the file received:
 the file which can be used (by a user application for example) is only
 available at the end of the transfer.
 
--   The name of this
+- The name of this
     file may include the following symbolic variables:
--   &FDATE,
+- &FDATE,
     &FTIME, &FYEAR, &FMONTH, &FDAY
--   &SPART,
+- &SPART,
     &RPART, &PART, &NPART, &GROUP
--   &SUSER,
+- &SUSER,
     &RUSER
--   &SAPPL,
+- &SAPPL,
     &RAPPL
--   &IDF, &PARM,
+- &IDF, &PARM,
     &IDA
--   &NIDF,
+- &NIDF,
     &NFNAME, &IDT
--   &BDATE,
+- &BDATE,
     &BTIME, &BYEAR, &BMONTH, &BDAY
 
 The ‘&’ character here replaces the char\_symb character specific
-to each operating system. Refer to the  {{< TransferCFT/componentshortname  >}} *"Operations
+to each operating system. Refer to the {{< TransferCFT/componentshortname  >}} *"Operations
 Guide"* corresponding to your OS.
 
 You should make sure that the assigned name is unique by adding the &IDTU variable to the filename so
@@ -56,8 +56,8 @@ This parameter can be used for "store and forward" purposes
 (CFTRECV ID = COMMUT command).
 
 
-           |  MVS, VMS  |  This parameter is mandatory if the receiver file is a version file (in particular for operation in the open mode and when the sender sends an NFNAME corresponding to a GDG name).  |
- --- | --- | --- |
+| MVS, VMS | This parameter is mandatory if the receiver file is a version file (in particular for operation in the open mode and when the sender sends an NFNAME corresponding to a GDG name). |
+| --- | --- |
 
 
 This parameter is mandatory when a copy/concatenation operation is performed
@@ -93,29 +93,29 @@ The file is transferred in the same way as a sequential file.
 
 This process can only be used for:
 
--   t
--   the
+- t
+- the
     following protocol: **PeSIT CFT to CFT**
 
 The following variables may be used to form the WFNAME character string:
 
--   &FDATE,
+- &FDATE,
     &FTIME, &FYEAR, &FMONTH, &FDAY
--   &SPART,
+- &SPART,
     &RPART, &PART, &NPART, &GROUP
--   &SUSER,
+- &SUSER,
     &RUSER
--   &SAPPL,
+- &SAPPL,
     &RAPPL
--   &IDF,
+- &IDF,
     &PARM, &IDA
--   &NIDF,
+- &NIDF,
     &NFNAME, &IDT
--   &BDATE,
+- &BDATE,
     &BTIME, &BYEAR, &BMONTH, &BDAY
 
 The ‘&’ character here replaces the char\_symb character specific
-to each operating system. Refer to the  {{< TransferCFT/componentshortname  >}} *Operations Guide*
+to each operating system. Refer to the {{< TransferCFT/componentshortname  >}} *Operations Guide*
 corresponding to your OS.
 
 To avoid access conflict problems, be sure that the assigned name is

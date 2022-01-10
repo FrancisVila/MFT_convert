@@ -12,9 +12,9 @@
 
 Type of output file data compression:
 
--   C:  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
-    to  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> compression
--   H: PeSIT non-SIT
+- C: <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+    to <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> compression
+- H: PeSIT non-SIT
     compression
 
 This parameter is only meaningful if the value of OCOMP is not 0. The

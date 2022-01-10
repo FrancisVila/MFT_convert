@@ -16,4 +16,4 @@ Resolution
 
 The {{< TransferCFT/transfercftname  >}} application got stuck when trying to lock the runtime/data/cftparm as the NFS server thinks the file is locked by another application.
 
-To remedy, you can specify the mount `nolock` option. {{< TransferCFT/transfercftname  >}} continues to lock files,  however, the lock requests are not sent to the NFS server. This avoids issues when switching from the active to the passive node.
+To remedy, you can specify the mount `nolock` option. {{< TransferCFT/transfercftname  >}} continues to lock files, however, the lock requests are not sent to the NFS server. This avoids issues when switching from the active to the passive node.

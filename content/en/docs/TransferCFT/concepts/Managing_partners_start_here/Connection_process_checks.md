@@ -18,7 +18,7 @@ to mutually recognize each other.
 
 ## Recognition mechanism for explicit parameter setting
 
-<img src="/Images/TransferCFT/Recongnition_explicit_parameter_setting.gif" width="733" height="312" />
+![]($1)
 
 To send a file with a defined IDF ID\_EM to partner B, corresponding
 command is:
@@ -71,10 +71,10 @@ a transfer request if the partner is pre-defined in the parameter settings.
 It is, however, possible to accept connections from a partner not defined
 beforehand:
 
--   Either by using
+- Either by using
     the mechanism for dynamically creating a partner from a model partner
     (DYNAM = model CFTPROT id)
--   Or by generating
+- Or by generating
     the partner’s characteristics, for a connection, in a directory EXIT
 
 The operating security mechanism checks the validity of the dynamic

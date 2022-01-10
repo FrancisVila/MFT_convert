@@ -6,19 +6,19 @@
 
 To broadcast a file from a store and forward site:
 
--   The initial sender must define a virtual partner with an ID that corresponds to the CFTDEST ID command managed on the store and forward site. Set the CFTPART's OMINTIME and OMAXTIME to zero to force routing to the intermediate partner (IPART). The SEND PART=ID, ... command sends the file to broadcast.
--   You must have a CFTDEST command with the ID set to the network name of the broadcasting list indicated by the initial partner (SEND PART=ID).
--   You can use FOR=COMMUT as described in the [FOR](../../../c_intro_userinterfaces/command_summary/parameter_intro/for) parameter.
--   The final receivers know the initial file sender and the store and forward partner (relay).
--   The CFTPART connections must comply with network nodes.
+- The initial sender must define a virtual partner with an ID that corresponds to the CFTDEST ID command managed on the store and forward site. Set the CFTPART's OMINTIME and OMAXTIME to zero to force routing to the intermediate partner (IPART). The SEND PART=ID, ... command sends the file to broadcast.
+- You must have a CFTDEST command with the ID set to the network name of the broadcasting list indicated by the initial partner (SEND PART=ID).
+- You can use FOR=COMMUT as described in the [FOR](../../../c_intro_userinterfaces/command_summary/parameter_intro/for) parameter.
+- The final receivers know the initial file sender and the store and forward partner (relay).
+- The CFTPART connections must comply with network nodes.
 
 #### Processing performed
 
 On the store and forward site, Transfer CFT does not activate an end of transfer procedure (or error) when the file transfer of the file to be broadcast is performed. The transfer IDF is set to COMMUT, where the CFTRECV ID=COMMUT must be defined on the site as the transfer is saved in the catalog with this file identifier.
 
-If the transferred data code (NCODE) differs from the store and forward site's data code  (for example, NCODE = EBCDIC and ASCII internal code on the store and forward computer), the data is not translated on the store and forward computer (in “store and forward” mode, the data is only translated “end to end” and not “next computer to next computer”).
+If the transferred data code (NCODE) differs from the store and forward site's data code (for example, NCODE = EBCDIC and ASCII internal code on the store and forward computer), the data is not translated on the store and forward computer (in “store and forward” mode, the data is only translated “end to end” and not “next computer to next computer”).
 
-When all the transfers have been correctly completed, the generic transfer (virtual) associated with the broadcast (entry designated in the catalog by a “DIAGP” code equal to “DIFFUS”) changes to the T state. Transfer CFT then activates any end of transfer procedure  associated with this generic transfer.
+When all the transfers have been correctly completed, the generic transfer (virtual) associated with the broadcast (entry designated in the catalog by a “DIAGP” code equal to “DIFFUS”) changes to the T state. Transfer CFT then activates any end of transfer procedure associated with this generic transfer.
 
 > **Note**
 >
@@ -35,7 +35,7 @@ The usual symbolic variables for these types of procedures may be used (see the 
 
 #### Example
 
-This example shows a broadcast store and forward from the initiator A  to relay B on to multiple partners C and D. We will use @A, @B, @C and @D to represent their respective host addresses.
+This example shows a broadcast store and forward from the initiator A to relay B on to multiple partners C and D. We will use @A, @B, @C and @D to represent their respective host addresses.
 
 On the initiating site A, define:
 
@@ -59,7 +59,7 @@ cfttcp id=d,host=@D
  
 cftdest id=cd,part=(c,d),for=commut
  
-cftappl  id=commut,userid=&userid,groupid=&groupid NOTE: If you are using access management, you must define the CFTAPPL with the ID=COMMUT.
+cftappl id=commut,userid=&userid,groupid=&groupid NOTE: If you are using access management, you must define the CFTAPPL with the ID=COMMUT.
 ```
 
 Execute the following partner C definition:
@@ -97,8 +97,8 @@ To acknowledge a store and forward file (or message) transfer, the final partner
 
 To acknowledge a broadcasting list, the following conditions are then required to route the acknowledgement to the initial partner:
 
--   The connections established between partners must be complied with at each of the network nodes (CFTPART ID =...),
--   At the store and forward node, all the catalog records corresponding to the previously performed broadcasting, are present,
--   At the store and forward node, all the catalog records corresponding to the previously performed broadcasting, indicate that the receiving partners have correctly received the file or message (SFT transfer state).
+- The connections established between partners must be complied with at each of the network nodes (CFTPART ID =...),
+- At the store and forward node, all the catalog records corresponding to the previously performed broadcasting, are present,
+- At the store and forward node, all the catalog records corresponding to the previously performed broadcasting, indicate that the receiving partners have correctly received the file or message (SFT transfer state).
 
 If these conditions are fulfilled, the initial sender of the file (or message) receives a single acknowledgement message. The message comes arbitrarily from one of the final partners (the last one to have sent a REPLY message).

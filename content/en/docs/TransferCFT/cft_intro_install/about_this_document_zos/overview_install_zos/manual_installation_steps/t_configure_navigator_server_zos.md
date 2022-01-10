@@ -2,7 +2,7 @@
     "title": "Configure the Transfer CFT Copilot server ",
     "linkTitle": "Configure the Transfer CFT Copilot server",
     "weight": "240"
-}<span id="kanchor37"></span>
+}<span id="kanchor43"></span>
 
 ## Using COPA020
 
@@ -12,8 +12,8 @@ The COPA020 JCL must be submitted in order to take into account the configuratio
 
 > **Note**
 >
-> The parameters file linked to the UI configuration for Transfer CFT V2.4.x can be partially migrated to the unified configuration file (see      Transfer CFT file migration).
+> The parameters file linked to the UI configuration for Transfer CFT V2.4.x can be partially migrated to the unified configuration file (see Transfer CFT file migration).
 
 Related topics
 
--   [Step 3. Customize the z/OS installation](../../zos_auto_install_a05all/t_customize_install_zos)
+- [Step 3. Customize the z/OS installation](../../zos_auto_install_a05all/t_customize_install_zos)

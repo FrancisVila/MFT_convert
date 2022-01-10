@@ -13,15 +13,15 @@ The PKIKEY command is similar to the PKICER command. Parameters include:
 
 | Parameter  | Description  |
 | --- | --- |
-|  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/pkifname">PKIFNAME</a>:  |  The PKI database file ($CFTPKU by default) *only in command line*  |
+| <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/pkifname">PKIFNAME</a>: | The PKI database file ($CFTPKU by default) *only in command line* |
 | <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/id">ID</a>:  | The PKIKEY identifier  |
 | <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/comment">COMMENT</a>:  | Free comment  |
-| <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/state">STATE</a>:  | The state of the imported key (ACT or INACT). You cannot use deactivated keys (state=INACT)  for SFTP  |
-| IKDATA:  | Use base-64 data instead of a file (where the format corresponds with ikform)  |
+| <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/state">STATE</a>:  | The state of the imported key (ACT or INACT). You cannot use deactivated keys (state=INACT) for SFTP  |
+| <a href="">IKDATA</a>:  | Use base-64 data instead of a file (where the format corresponds with ikform)  |
 | <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/iform">IKFORM</a>:  | The key format (DER, PEM, PKCS8, SSH or KPRIV). The "SSH" value includes the SSH2 format and the ssh-rsa format  |
-|  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/ikname">IKNAME</a>:  | The key file to import *only in command line*  |
-|  IKPUB:  | Text-only public key in ssh-rsa format *only in command line*  |
-|  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/ikpassw">IKPASSW</a>:  | The key file protection password in PKCS8 or encrypted PEM (PKCS #5)  |
+| <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/ikname">IKNAME</a>: | The key file to import *only in command line*  |
+| <a href="">IKPUB</a>: | Text-only public key in ssh-rsa format *only in command line*  |
+| <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/ikpassw">IKPASSW</a>: | The key file protection password in PKCS8 or encrypted PEM (PKCS #5)  |
 | <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/mode">MODE</a>:  | The action to perform (CREATE, REPLACE, DELETE) *only in command line*  |
 
 
@@ -31,9 +31,9 @@ The PKIKEY command is similar to the PKICER command. Parameters include:
 
 ### Restrictions
 
--   Transfer CFT does not support keys that contain comments, regardless of if you are directly referencing  or importing them.
--   Transfer CFT does not support private keys with passphrases.
--   Transfer CFT supports the RSA digital signature algorithm; however, ECDSA and DSA are not supported.
+- Transfer CFT does not support keys that contain comments, regardless of if you are directly referencing or importing them.
+- Transfer CFT does not support private keys with passphrases.
+- Transfer CFT supports the RSA digital signature algorithm; however, ECDSA and DSA are not supported.
 
 ## Example uses
 
@@ -63,7 +63,7 @@ DEK-Info: AES-128-CBC,9E18D04529594FB617BC471F9958C8A7
 
 > **Note**
 >
-> If a PEM encrypted key is generated using OpenSSL with FIPS, for example with "ssh-keygen", you cannot import it into Transfer CFT. To use this key,  convert it to PKCS#8 using the command: openssl pkcs8 -topk8 -v2 aes128 -in &lt;key> -out &lt;key.pk8>
+> If a PEM encrypted key is generated using OpenSSL with FIPS, for example with "ssh-keygen", you cannot import it into Transfer CFT. To use this key, convert it to PKCS#8 using the command: openssl pkcs8 -topk8 -v2 aes128 -in &lt;key> -out &lt;key.pk8>
 
 Import with private.rsa format
 

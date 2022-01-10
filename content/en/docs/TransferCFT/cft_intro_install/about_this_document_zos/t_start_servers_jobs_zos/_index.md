@@ -4,8 +4,8 @@
     "weight": "170"
 }This section presents JCL examples that you can use to create the JOBs necessary to run Transfer CFT. All of the JCLs are located in the **target.INSTALL** library.
 
--   [Starting Transfer CFT JOB CFTMAIN](#Starting%20the%20CFTMAIN%20example)
--   [Transfer CFT user interface server commands](#Transfer%20CFT%20user%20interface%20server)
+- [Starting Transfer CFT JOB CFTMAIN](#Starting%20the%20CFTMAIN%20example)
+- [Transfer CFT user interface server commands](#Transfer%20CFT%20user%20interface%20server)
 
 > **Note**
 >
@@ -19,11 +19,11 @@ The CFTMAIN JOB is an example of a JCL to start Transfer CFT. Beginning with the
 
 You can perform Transfer CFT commands using the CFTUTIL utility, the {{< TransferCFT/componentshortname  >}} user interface, or the console interface.
 
-Start the CFTMAIN JCL in the  target.INSTALL library.
+Start the CFTMAIN JCL in the target.INSTALL library.
 
 > **Note**
 >
-> CFTMAIN must be APF authorized to start if the UCONF cft.mvs.monitor.check\_apf variable is set to Yes. Otherwise, the  Transfer CFT log displays CFTI01F CFT error CFT is not APF-authorized.
+> CFTMAIN must be APF authorized to start if the UCONF cft.mvs.monitor.check\_apf variable is set to Yes. Otherwise, the Transfer CFT log displays CFTI01F CFT error CFT is not APF-authorized.
 
 ## Stop Transfer CFT 
 
@@ -71,7 +71,7 @@ Use the CFTPING in the target.INSTALL library to ping your {{< TransferCFT/com
 
 ## Transfer CFT Copilot server commands
 
-The Transfer CFT Copilot server is a sub component that is mandatory when using .    Additionally, this server may function as the node manager when using multi-node.
+The Transfer CFT Copilot server is a sub component that is mandatory when using . Additionally, this server may function as the node manager when using multi-node.
 
 ### Starting the Copilot server
 
@@ -87,16 +87,16 @@ LOG message: `+CFTI42E Copilot must be APF-authorized.`
 
 > **Note**
 >
-> CFTCOPL must be APF authorized to start if the UCONF cft.mvs.copilot.check\_apf variable is set to Yes. Otherwise, the  Transfer CFT log displays CFTI42E Copilot must be APF-authorized.
+> CFTCOPL must be APF authorized to start if the UCONF cft.mvs.copilot.check\_apf variable is set to Yes. Otherwise, the Transfer CFT log displays CFTI42E Copilot must be APF-authorized.
 
 ### Stopping user interface (Copilot) server
 
-COPSTOP is an example of the JCL stop statement for the  Transfer CFT UI server. You can also stop the Transfer CFT UI server using the operator command pause (/P jobname) for the server-associated task.
+COPSTOP is an example of the JCL stop statement for the Transfer CFT UI server. You can also stop the Transfer CFT UI server using the operator command pause (/P jobname) for the server-associated task.
 
 ### Checking the Copilot server status
 
-You can use COPSTATU, for example, as the JCL statement to display the Transfer CFT Copilot server  status in the current LPAR.
+You can use COPSTATU, for example, as the JCL statement to display the Transfer CFT Copilot server status in the current LPAR.
 
 ## Register with
 
-If you intend to implement  , please refer to the {{< TransferCFT/componentlongname  >}} *User's Guide &gt; [*Register with*](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.
+If you intend to implement , please refer to the {{< TransferCFT/componentlongname  >}} *User's Guide &gt; [*Register with*](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.

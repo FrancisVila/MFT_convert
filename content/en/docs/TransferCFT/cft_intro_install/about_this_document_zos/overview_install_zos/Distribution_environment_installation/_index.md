@@ -2,20 +2,20 @@
     "title": "Non-SMP/E: Create the distribution environment ",
     "linkTitle": "Non&#45;SMP/E: create distribution environment",
     "weight": "170"
-}This section describes how to install the **<span id="kanchor49"></span>distribution** **environment**. After installing the distribution environment, you should not need to modify it. Later you will use the installed distribution environment to create a Transfer CFT <span id="kanchor50"></span>[*instance* *environment*](t_install_instance_envr_zos) (runtime). The term instance replaces the former notion of a  *target* environment in Transfer CFT.
+}This section describes how to install the **<span id="kanchor56"></span>distribution** **environment**. After installing the distribution environment, you should not need to modify it. Later you will use the installed distribution environment to create a Transfer CFT <span id="kanchor57"></span>[*instance* *environment*](t_install_instance_envr_zos) (runtime). The term instance replaces the former notion of a *target* environment in Transfer CFT.
 
 When you install the Transfer CFT you can create the following environments in a single step:
 
--   Distribution environment
--   Transfer CFT run-time instance environment
+- Distribution environment
+- Transfer CFT run-time instance environment
 
-<span id="kanchor51"></span>
+<span id="kanchor58"></span>
 
 ## Define a Transfer CFT alias
 
 You can create a Transfer CFT ALIAS in the USER CATALOG if the file names mentioned in the installation JOBs are reserved for operation.
 
-To define an alias, adapt the parameters  in bold to suit your environment. Enter:
+To define an alias, adapt the parameters in bold to suit your environment. Enter:
 
 ```
 //DEFALIAS EXEC PGM=IDCAMS  
@@ -29,8 +29,8 @@ To define an alias, adapt the parameters  in bold to suit your environment. Ente
 
 ### Required configuration
 
--   An FTP client that permits the transfer of files to the z/OS host
--   Download the ESD file from {{< TransferCFT/companyname >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a>
+- An FTP client that permits the transfer of files to the z/OS host
+- Download the ESD file from {{< TransferCFT/companyname >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a>
 
 > **Note**
 >
@@ -38,13 +38,13 @@ To define an alias, adapt the parameters  in bold to suit your environment. Ente
 
 To install the Transfer CFT z/OS product, you need approximately:
 
--   200 cylinders 3390 of disk space on z/OS to transfer the delivery files from another system using FTP
+- 200 cylinders 3390 of disk space on z/OS to transfer the delivery files from another system using FTP
 
 <!-- -->
 
--   450 additional cylinders of disk space to unpack the installation files
+- 450 additional cylinders of disk space to unpack the installation files
 
-<span id="Installa"></span><span id="kanchor52"></span>
+<span id="Installa"></span><span id="kanchor59"></span>
 
 ## Installation files 
 
@@ -54,19 +54,19 @@ The installation package is a zip archive that contains the product and installe
 
 Once you unzip the files, locate and run the setup file in the root folder of the installation package. Two installation modes are available:
 
--   Installation (console mode)
+- Installation (console mode)
     -   UNIX/Linux: setup.sh
     -   Windows: setup.bat
--   Silent installation
+- Silent installation
     -   UNIX/Linux: setup.sh --silent
     -   Windows: setup.bat --silent
 
 ## Upload Transfer CFT z/OS using the installer
 
-This section describes how to prepare the distribution environment necessary to create  a target environment. The procedure consists of:
+This section describes how to prepare the distribution environment necessary to create a target environment. The procedure consists of:
 
--   Installing the product
--   Creating the distribution  environment
+- Installing the product
+- Creating the distribution environment
 
 ```
 Unix Installation example:
@@ -140,36 +140,36 @@ Before you start the silent installation you must update the silent\_install.con
 
 | Value  | Default value  | Description  |
 | --- | --- | --- |
-|  &amp;cftinstall  | AXWAY.XFB.D332  | Library prefix qualifiers for distribution environment  |
-|  &amp;distlev          | CF030000  | Distribution prefix level  |
-|  &amp;hostuplib  |  AXWAY.XFB.D332.CF030000.UPLIB  | Library prefix to upload product  |
-|  &amp;cftruntime  | AXWAY.V332  | Library for the runtime creation of the target environment  |
-|  &amp;patch  | N/A  | Information about last patch applied  |
-|  &amp;format  | A  |  Type of restoration product:<br/> • A (ADRDSSU)<br/> • X (XMIT)</li>  |
-|  &amp;hostname  | N/A  | z/OS hostname  |
-|  &amp;user  | N/A  | z/OS user  |
-|  &amp;password  | N/A  | z/OS password  |
-|  &amp;installvol  | N/A  | Volume Serial for distribution environment  |
-|  &amp;runtimevol  | N/A  | Volume Serial for runtime environment  |
-|  &amp;account    | ()  | Accounting  |
-|  &amp;class  | A  | Class  |
-|  &amp;unit  | 3390  | Unit  |
-|  &amp;submit  | Y  | Submit JCL for the runtime creation  |
+| &amp;cftinstall | AXWAY.XFB.D332  | Library prefix qualifiers for distribution environment  |
+| &amp;distlev | CF030000  | Distribution prefix level  |
+| &amp;hostuplib | AXWAY.XFB.D332.CF030000.UPLIB | Library prefix to upload product  |
+| &amp;cftruntime | AXWAY.V332  | Library for the runtime creation of the target environment  |
+| &amp;patch | N/A  | Information about last patch applied  |
+| &amp;format | A  | Type of restoration product:<br/> • A (ADRDSSU)<br/> • X (XMIT) |
+| &amp;hostname | N/A  | z/OS hostname  |
+| &amp;user | N/A  | z/OS user  |
+| &amp;password | N/A  | z/OS password  |
+| &amp;installvol | N/A  | Volume Serial for distribution environment  |
+| &amp;runtimevol | N/A  | Volume Serial for runtime environment  |
+| &amp;account | ()  | Accounting  |
+| &amp;class | A  | Class  |
+| &amp;unit | 3390  | Unit  |
+| &amp;submit | Y  | Submit JCL for the runtime creation  |
 
 
 Once you have configured and saved the file for silent installation, run the following command to start the installation:
 
--   UNIX/Linux: setup.sh  --silent
--   Windows: setup.bat  --silent
+- UNIX/Linux: setup.sh --silent
+- Windows: setup.bat --silent
 
 ## Decompress the installation files
 
 Use one of the following methods to unpack the installation files:
 
--   Decompress using the ADRDSSU format, *or*
--   Decompress using double Xmit format
+- Decompress using the ADRDSSU format, *or*
+- Decompress using double Xmit format
 
-<span id="kanchor53"></span>
+<span id="kanchor60"></span>
 
 ### Decompress using the ADRDSSU format
 
@@ -177,37 +177,37 @@ From the transferred distlib.UPLIB library, customize and submit the J1IDISTA 
 
 This procedure:
 
--   Transforms the product file into an ADRDSSU file type (via IKJEFT01)
+- Transforms the product file into an ADRDSSU file type (via IKJEFT01)
 
 <!-- -->
 
--   Restores the Transfer CFT distribution files via ADRDSSU
+- Restores the Transfer CFT distribution files via ADRDSSU
 
 <!-- -->
 
--   Creates a distribution environment
+- Creates a distribution environment
 
 <!-- -->
 
--   Creates a Transfer CFT instance environment (if required)
+- Creates a Transfer CFT instance environment (if required)
 
 To customize the JCL, apply a `change all` command on the following parameters:
 
--   distlib: distribution environment prefix
+- distlib: distribution environment prefix
 
 <!-- -->
 
--   volser: volume serial number, used to override the default value. If used, the statement marked as comment must be activated
+- volser: volume serial number, used to override the default value. If used, the statement marked as comment must be activated
 
 <!-- -->
 
--   storclass: SMS Storage class, used to override the default value. If used, the statement marked as a comment must be activated
+- storclass: SMS Storage class, used to override the default value. If used, the statement marked as a comment must be activated
 
 > **Note**
 >
 > The distribution files are restored with 5 qualifiers (ADRDSSU). You can modify 4 of these qualifiers, for example AXWAY.XFB.CFT332.CF030000, using the ADRDSSU parameter, step ADRD020 in J1IDISTA, but the fifth qualifier is hard coded.
 
-<span id="kanchor54"></span>
+<span id="kanchor61"></span>
 
 ### Decompress using double Xmit
 
@@ -215,12 +215,12 @@ From the transferred distlib.UPLIB library, customize and submit the J1IDISTX J
 
 This procedure:
 
--   Performs two successive orders RECEIVE (via IKJEFT01)
--   Creates a distribution environment
--   Creates a Transfer CFT instance environment (if needed)
--   Creates a Composer connector environment for Transfer CFT (if needed)
+- Performs two successive orders RECEIVE (via IKJEFT01)
+- Creates a distribution environment
+- Creates a Transfer CFT instance environment (if needed)
+- Creates a Composer connector environment for Transfer CFT (if needed)
 
 To customize the JCL, apply a change all command to the following parameters:
 
--   distlib: distribution environment prefix
--   Volse: volume serial number, used to override the default value. If used, the statement marked as comment must be activated
+- distlib: distribution environment prefix
+- Volse: volume serial number, used to override the default value. If used, the statement marked as comment must be activated

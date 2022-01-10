@@ -16,7 +16,7 @@ is indicated in the label.
 DIAGI codes with a value between 001 and 499 indicate a local issue; values
 between 501 and 999 correspond to a fault reported by the partner.
 
-This means that when you troubleshooting, if the DIAGI code is greater than 500 it refers to a remote  issue. To find the actual DIAG, subtract 500 from the displayed code. If the DIAG is 916, for example, the issue is a remote  problem corresponding to DIAG 416 (Maximum number of transfers reached).
+This means that when you troubleshooting, if the DIAGI code is greater than 500 it refers to a remote issue. To find the actual DIAG, subtract 500 from the displayed code. If the DIAG is 916, for example, the issue is a remote problem corresponding to DIAG 416 (Maximum number of transfers reached).
 
 <span id="Event_column_in_diagnostic_codes"></span>
 
@@ -26,32 +26,32 @@ The Event column explains the
 possible cause of the transfer error. Brief information on the type of error which caused
 the transfer failure:
 
--   SYS: System error
--   NET: Error detected
+- SYS: System error
+- NET: Error detected
     by the network layers ({{< TransferCFT/componentshortname >}} layers, manufacturer or network layers)
--   PROT: Fault
+- PROT: Fault
     detected by the file transfer protocol
--   FILE: Transferred
+- FILE: Transferred
     file access error returned by the operating system
--   DATA: Error
+- DATA: Error
     accessing {{< TransferCFT/componentshortname >}} basic data: parameter, partners, catalog, communication,
     log, statistics and secondary indirection files (lists of partners, files,
     and so on)
--   PARAM: Transfer
+- PARAM: Transfer
     execution error following a parameter setting error
--   AUTH: Transfer
+- AUTH: Transfer
     denied following an authorization check by {{< TransferCFT/componentshortname >}}
--   OVER: The
+- OVER: The
     transfer cannot be executed because the monitor's resources are saturated
     or a parameter setting limit has been exceeded
--   OUT: The transfer
+- OUT: The transfer
     request is aborted after the maximum number of retries
--   USER: The
+- USER: The
     transfer is interrupted following an action by the operator
 
 <!-- -->
 
--   SSL: Incident
+- SSL: Incident
     detected by the secured protocol SSL 
 
 <span id="Behavior_column_in_diagnostic_codes"></span>
@@ -62,9 +62,9 @@ The Consequence column provides
 information on the {{< TransferCFT/componentshortname  >}} behavior following a transfer failure.
 The resulting status of the transfer D, H or K:
 
--   D: the transfer
+- D: the transfer
     can still be executed using the RESTART, NEXT, RETRY or COMMUT mechanisms
--   H or K: the transfer
+- H or K: the transfer
     is aborted, the error procedure
 
 Further transfer attempts
@@ -72,23 +72,23 @@ Further transfer attempts
 For the D status, the following are possible to execute
 the transaction:
 
--   RESTART: the transfer
+- RESTART: the transfer
     has been interrupted. The monitor waits for a period fixed by the WSCAN
     parameter (CFTCAT command) before trying to restart the transfer with
     the same access data. It increments the restart counter for the protocol,
     the counter limit being determined by the RESTART parameter (CFTPROT command).
--   NEXT: the transfer
+- NEXT: the transfer
     has been interrupted. The monitor waits for a period fixed by the WSCAN
     parameter (CFTCAT command) before trying to restart the transfer with
     the same access data. It does not increment the restart counter. There
     is therefore no limit to the number of retries following this error.
--   RETRY: the transfer
+- RETRY: the transfer
     has been interrupted. Transfer CFT waits for a period fixed by the RETRY\*
     parameters before trying to restart the transfer, without changing the
     partner access data (same protocol, same network address. It increments
     the retry counter specific to the partner access data, the counter limit
     being determined by the RETRYM parameter (CFTnetwork command).
--   COMMUT (switching):
+- COMMUT (switching):
     the transfer has been interrupted. The monitor waits for a period fixed
     by the WSCAN parameter (CFTCAT command) before trying to restart the transfer.
     It ignores the transfer access data and tries a "switching"
@@ -106,9 +106,9 @@ the transaction:
 
 In the case of an H or K status the transfer is aborted, the error procedure can be executed:
 
--   ABORT: the transfer
+- ABORT: the transfer
     is aborted
--   Execution
+- Execution
     of the error procedure if the transfer switches to the K or H status:
     -   EXECE: the procedure is executed. This is the procedure
         defined by CFTPARM EXEC\*E parameters. If these parameters are not set,
@@ -123,1410 +123,1783 @@ table
 
 The following table makes references to DIAGP. For details, please see the [DIAGP section.](../general_protocol_diagnostics)
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">DIAGI Code         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Event         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Consequence         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>0</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>The transfer has terminated correctly</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Execution of normal EXECRF or EXECSF end of transfer procedures</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>001</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>SYS: Error creating the message queue or allocating the
-memory</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>002</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>Context definition error</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>003</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>SYS - Context allocation error</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">004         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">MQCONN           </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">          </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">005         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">MQOPEN         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">          </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">006         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">MQPUT         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">          </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>100</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>FILE - File input/output error</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>If there is a DIAGP for this, it is system specific. For these errors, check the DIAGC or the log for more information.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>101</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>FILE - Error creating the receive file</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>If there is a DIAGP for this, it is system specific. For these errors, check the DIAGC or the log for more information.</p>         </td>
-      </tr>
-      <tr>
-         <td rowspan="2" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>102</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>1.FILE - Error allocating the transfer
-file</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2" style="padding: 0px"><table>
-   <tbody>
-      <tr>
-         <td><p>H status - ABORT, EXECE in requester mode</p>
-<p>If there is a DIAGP for this, it is system specific. For these errors, check the DIAGC or the log for more information.</p>         </td>
-      </tr>
-   </tbody>
-</table>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>2.FILE - The receive
-file cannot be allocated (FDISP=OLD case)</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2" style="padding: 0px"><table>
-   <tbody>
-      <tr>
-         <td>H status - ABORT, EXECE<br />
+QQQ\_QQQ\_QQQ flattened the table
+
+Codes with a value between 001 and 499 indicate a local issue; values
+between 501 and 999 correspond to a fault reported by the partner.
+
+Therefore when troubleshooting if the code is greater than 500 it refers to a remote issue. To find the actual DIAG, subtract 500 from the displayed code. If the DIAG is 916, for example, the issue is a remote problem corresponding to DIAG 416 (maximum number of transfers reached).
+
+#### Diagi code : 0
+
+The transfer has terminated correctly
+
+**Consequence:**Execution of normal EXECRF or EXECSF end of transfer procedures
+
+#### Diagi code : 001
+
+SYS: Error creating the message queue or allocating the
+memory
+
+**Consequence:**H status - ABORT, EXECE
+
+#### Diagi code : 002
+
+Context definition error
+
+**Consequence:** H status - ABORT, EXECE
+
+#### Diagi code : 003
+
+SYS - Context allocation error
+
+**Consequence:** H status - ABORT, EXECE
+
+#### Diagi code : 004
+
+MQCONN
+
+#### Diagi code : 005
+
+MQOPEN
+
+#### Diagi code : 006
+
+MQPUT
+
+#### Diagi code : 100
+
+FILE - File input/output error
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+If there is a DIAGP for this, it is system specific. For these errors, check the DIAGC or the log for more information.
+
+#### Diagi code : 101
+
+FILE - Error creating the receive file
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+If there is a DIAGP for this, it is system specific. For these errors, check the DIAGC or the log for more information.
+
+#### Diagi code : 102
+
+1.FILE - Error allocating the transfer
+file
+
+QQQ\_QQQ\_QQQ
+
+**Consequence:**
+
+H status - ABORT, EXECE in requester mode
+
+If there is a DIAGP for this, it is system specific. For these errors, check the DIAGC or the log for more information.
+
+2.FILE - The receive
+file cannot be allocated (FDISP=OLD case)
+
+**Consequence:**
+
+H status - ABORT, EXECE  
 The file is deleted.
-<p>If there is a DIAGP for this, it is system specific. For these errors, check the DIAGC or the log for more information.</p>         </td>
-      </tr>
-   </tbody>
-</table>         </td>
-      </tr>
-      <tr>
-         <td rowspan="2" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>103</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>1.FILE - The file cannot be deleted before
-the receive file is created (FDISP = DELETE case)</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2" style="padding: 0px"><table>
-   <tbody>
-      <tr>
-         <td><p>H status - ABORT, EXECE in requester mode</p>
-<p>If there is a DIAGP for this, it is system specific. For these errors, check the DIAGC or the log for more information.</p>         </td>
-      </tr>
-   </tbody>
-</table>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>2.FILE - Error
-deleting the sent file, if a deletion has been requested (FACTION = DELETE)</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2" style="padding: 0px"><table>
-   <tbody>
-      <tr>
-         <td><p>H status - ABORT, EXECE in requester mode</p>
-<p>If there is a DIAGP for this, it is system specific. For these errors, check the DIAGC or the log for more information.</p>         </td>
-      </tr>
-   </tbody>
-</table>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>104</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>1. FILE - Error opening the transfer file</p>
-<p>2. FILE - The
-receive file cannot be erased (FDISP = ERASE case): file opening problem</p>
-<p>3. FILE - Prior
+
+If there is a DIAGP for this, it is system specific. For these errors, check the DIAGC or the log for more information.
+
+#### Diagi code : 103
+
+1.FILE - The file cannot be deleted before
+the receive file is created (FDISP = DELETE case)
+
+**Consequence:**
+
+H status - ABORT, EXECE in requester mode
+
+If there is a DIAGP for this, it is system specific. For these errors, check the DIAGC or the log for more information.
+
+2.FILE - Error
+deleting the sent file, if a deletion has been requested (FACTION = DELETE)
+
+**Consequence:**
+
+H status - ABORT, EXECE in requester mode
+
+If there is a DIAGP for this, it is system specific. For these errors, check the DIAGC or the log for more information.
+
+#### Diagi code : 104
+
+1\. FILE - Error opening the transfer file
+
+2\. FILE - The
+receive file cannot be erased (FDISP = ERASE case): file opening problem
+
+3\. FILE - Prior
 to reception, the receive file could not be opened to check that it was
-empty (FDISP = VERIFY case)</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>If there is a <a href="../protocol_diagnostic_codes">DIAGP</a> for this, it is system specific. For these errors, check the DIAGC or the log for more information.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>105</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>1. FILE - Error closing the transfer
-file</p>
-<p>2. FILE - The
-receive file cannot be erased (FDISP = ERASE case: file closing problem</p>
-<p>3. FILE - Prior
+empty (FDISP = VERIFY case)
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+If there is a [DIAGP](../protocol_diagnostic_codes) for this, it is system specific. For these errors, check the DIAGC or the log for more information.
+
+#### Diagi code : 105
+
+1. FILE - Error closing the transfer
+file
+
+2. FILE - The
+receive file cannot be erased (FDISP = ERASE case: file closing problem
+
+3. FILE - Prior
 to reception, the receive file could not be closed after checking that
-it was empty (FDISP = VERIFY case)</p>
-<p>4. FILE - The
+it was empty (FDISP = VERIFY case)
+
+4. FILE - The
 sent file cannot be deleted following an erase request (FACTION = ERASE
-case)</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>If there is a <a href="../protocol_diagnostic_codes">DIAGP</a> for this, it is system specific. For these errors, check the DIAGC or the log for more information.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>106</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>FILE - Error recording the current position in the transfer
-file (synchronization point setting)</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>If there is a DIAGP for this, it is system specific. For these errors, check the DIAGC or the log for more information.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>107</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>FILE - Error setting the pointer to a re-synchronization
-point in the file (for a transfer restart)</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>If there is a <a href="../protocol_diagnostic_codes">DIAGP</a> for this, it is system specific. For these errors, check the DIAGC or the log for more information.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>108</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>1. FILE - Send file read error in data transfer phase</p>
-<p>2. FILE - Prior to reception, the receive file could
-not be read to check that it was empty (FDISP = VERIFY case)</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>If there is a <a href="../protocol_diagnostic_codes">DIAGP</a> for this, it is system specific. For these errors, check the DIAGC or the log for more information.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>109</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>FILE - Data write error in the receive file</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>If there is a <a href="../protocol_diagnostic_codes">DIAGP</a> for this, it is system specific. For these errors, check the DIAGC or the log for more information.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>110</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>1. FILE - The send file does not exist</p>
-<p>2. FILE - The receive file to be created does not
+case)
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+If there is a [DIAGP](../protocol_diagnostic_codes) for this, it is system specific. For these errors, check the DIAGC or the log for more information.
+
+#### Diagi code : 106
+
+FILE - Error recording the current position in the transfer
+file (synchronization point setting)
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+If there is a DIAGP for this, it is system specific. For these errors, check the DIAGC or the log for more information.
+
+#### Diagi code : 107
+
+FILE - Error setting the pointer to a re-synchronization
+point in the file (for a transfer restart)
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+If there is a [DIAGP](../protocol_diagnostic_codes) for this, it is system specific. For these errors, check the DIAGC or the log for more information.
+
+#### Diagi code : 108
+
+1. FILE - Send file read error in data transfer phase
+
+2. FILE - Prior to reception, the receive file could
+not be read to check that it was empty (FDISP = VERIFY case)
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+If there is a [DIAGP](../protocol_diagnostic_codes) for this, it is system specific. For these errors, check the DIAGC or the log for more information.
+
+#### Diagi code : 109
+
+FILE - Data write error in the receive file
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+If there is a [DIAGP](../protocol_diagnostic_codes) for this, it is system specific. For these errors, check the DIAGC or the log for more information.
+
+#### Diagi code : 110
+
+1. FILE - The send file does not exist
+
+2. FILE - The receive file to be created does not
 exist, even though the FDISP parameter requires it (FDISP=OLD). DIAGP
-is then set to NO OLD</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE in requester mode</p>
-<p>If there is a <a href="../protocol_diagnostic_codes">DIAGP</a> for this, it is system specific. For these errors, check the DIAGC or the log for more information.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>111</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>FILE - Insufficient space to create the file</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT in requester mode, EXECE in requester
-mode</p>
-<p>If there is a <a href="../protocol_diagnostic_codes">DIAGP</a> for this, it is system specific. For these errors, check the DIAGC or the log for more information.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">112         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">Nonexistent unit         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">          </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>113</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>FILE - The file to be created already exists, even though
+is then set to NO OLD
+
+**Consequence:**
+
+H status - ABORT, EXECE in requester mode
+
+If there is a [DIAGP](../protocol_diagnostic_codes) for this, it is system specific. For these errors, check the DIAGC or the log for more information.
+
+#### Diagi code : 111
+
+FILE - Insufficient space to create the file
+
+**Consequence:**
+
+H status - ABORT in requester mode, EXECE in requester
+mode
+
+If there is a [DIAGP](../protocol_diagnostic_codes) for this, it is system specific. For these errors, check the DIAGC or the log for more information.
+
+#### Diagi code : 112
+
+Nonexistent unit
+
+#### Diagi code : 113
+
+FILE - The file to be created already exists, even though
 the FDISP parameter prohibits it (FDISP = NEW). DIAGP is then set
-to NO NEW</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE in requester mode</p>
-<p>If there is a <a href="../protocol_diagnostic_codes">DIAGP</a> for this, it is system specific. For these errors, check the DIAGC or the log for more information.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>114</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>FILE - Data write error in the receive file: file space
-full</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>If there is a <a href="../protocol_diagnostic_codes">DIAGP</a> for this, it is system specific. For these errors, check the DIAGC or the log for more information.</p>         </td>
-      </tr>
-      <tr>
-         <td rowspan="2" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>115</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>1. FILE - The transfer owner is not authorized to
-access the file</p>
-<p>2. FILE - The file cannot be deleted before the receive
-file has been created (FDISP = DELETE case)Protected file</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE in requester mode</p>
-<p>Please see the Access management sections for more information.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>3. FILE - The sent file cannot be deleted following
-a deletion request</p>
-<p>(FACTION = DELETE case) Protected file</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>Please see the Access management sections for more information.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>120</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - Counter check error</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>121</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>USER - Interruption by the operator</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>122</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>SYS - Error allocating memory when the transfer is executed</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>D status - RESTART</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>123</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>FILE - Error setting the pointer to a resynchronization point in the file: the restart point requested by the partner is incorrect.</p>
-<p>This can occur when the synchronized points are not flushed from the catalog (if the CFTCAT's <code>updat </code>parameter is greater than 1, the UCONF<code>cft.server.catalog.sync.enable</code> is set to <code>No</code>, or both of these are true) due to an unexpected event such as a process, system, or disk crash.</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>124</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - Error: transfer aborted</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>126</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>FILE - LRECL error (record length)</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>127</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>FILE - The receive file is not empty (FDISP = VERIFY case)</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td rowspan="2" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>128</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>1. FILE - Error deselecting the file</p>
-<p>2. FILE - Error deselecting the receive file</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>H status - ABORT, EXECE</p>
-<p>This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>3. FILE - Error accessing the send file (allocating
-or opening), subsequent to a file erase request (FACTION = ERASE)</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE  unless there is an
-allocation error in sender server mode</p>
-<p>This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>129</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>FILE - Error during file decompression</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>130</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>FILE - Error during file compression</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>131</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - IDF different on ODETTE SELECT</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>132</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PARAM - Error accessing the parameter setting indirection
-file (list of files, list of partners)</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>K status - ABORT</p>
-<p>If the file does not exist, no transfer is executed. Only
+to NO NEW
+
+**Consequence:**
+
+H status - ABORT, EXECE in requester mode
+
+If there is a [DIAGP](../protocol_diagnostic_codes) for this, it is system specific. For these errors, check the DIAGC or the log for more information.
+
+#### Diagi code : 114
+
+FILE - Data write error in the receive file: file space
+full
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+If there is a [DIAGP](../protocol_diagnostic_codes) for this, it is system specific. For these errors, check the DIAGC or the log for more information.
+
+#### Diagi code : 115
+
+1. FILE - The transfer owner is not authorized to
+access the file
+
+2. FILE - The file cannot be deleted before the receive
+file has been created (FDISP = DELETE case)Protected file
+
+**Consequence:**
+
+H status - ABORT, EXECE in requester mode
+
+Please see the <a href="" class="MCXref xref">Access management</a> sections for more information.
+
+3. FILE - The sent file cannot be deleted following
+a deletion request
+
+(FACTION = DELETE case) Protected file
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+Please see the <a href="" class="MCXref xref">Access management</a> sections for more information.
+
+#### Diagi code : 120
+
+PROT - Counter check error
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.
+
+#### Diagi code : 121
+
+USER - Interruption by the operator
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+#### Diagi code : 122
+
+SYS - Error allocating memory when the transfer is executed
+
+D status - RESTART
+
+#### Diagi code : 123
+
+FILE - Error setting the pointer to a resynchronization point in the file: the restart point requested by the partner is incorrect.
+
+This can occur when the synchronized points are not flushed from the catalog (if the CFTCAT's `updat `parameter is greater than 1, the UCONF`cft.server.catalog.sync.enable` is set to `No`, or both of these are true) due to an unexpected event such as a process, system, or disk crash.
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.
+
+#### Diagi code : 124
+
+PROT - Error: transfer aborted
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.
+
+#### Diagi code : 126
+
+FILE - LRECL error (record length)
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.
+
+#### Diagi code : 127
+
+FILE - The receive file is not empty (FDISP = VERIFY case)
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+#### Diagi code : 128
+
+1. FILE - Error deselecting the file
+
+2. FILE - Error deselecting the receive file
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+H status - ABORT, EXECE
+
+This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.
+
+3. FILE - Error accessing the send file (allocating
+or opening), subsequent to a file erase request (FACTION = ERASE)
+
+**Consequence:**
+
+H status - ABORT, EXECE unless there is an
+allocation error in sender server mode
+
+This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.
+
+#### Diagi code : 129
+
+FILE - Error during file decompression
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.
+
+#### Diagi code : 130
+
+FILE - Error during file compression
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.
+
+#### Diagi code : 131
+
+PROT - IDF different on ODETTE SELECT
+
+H status - ABORT, EXECE
+
+This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.
+
+#### Diagi code : 132
+
+PARAM - Error accessing the parameter setting indirection
+file (list of files, list of partners)
+
+**Consequence:**
+
+K status - ABORT
+
+If the file does not exist, no transfer is executed. Only
 the generic request remains in the catalog. If an error occurs while reading
 the indirection file, the transfers generated for the items (files or
-partners) that have already been read are executed</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>133</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PARAM - The FOR parameter in the CFTDEST command is invalid</p>
-<p>1. FOR=LOCAL when in the switching mode</p>
-<p>2. FOR=COMMUT when not in the switching mode</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>No catalog entry. Check the CFTDEST object in the configuration.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>134</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>FILE - CFTEXIT call error</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>Check the information in the cftlog and the cft.out files.</p>         </td>
-      </tr>
-      <tr>
-         <td rowspan="2" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>135</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>1. FILE - The send file is locked</p>
-<p> </p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2" style="padding: 0px"><table>
-   <tbody>
-      <tr>
-         <td><p>D status - RESTART</p>
-<p>Check that the file is not locked by another process.</p>         </td>
-         <td>          </td>
-      </tr>
-      <tr>
-         <td><p>H status - ABORT, EXECE</p>
-<p>Check that the file is not locked by another process.</p>         </td>
-         <td>          </td>
-      </tr>
-   </tbody>
-</table>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>2. FILE - The receive file is locked</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2" style="padding: 0px"><table>
-   <tbody>
-      <tr>
-         <td><p>D status - RESTART</p>
-<p>Check that the file is not locked by another process.</p>         </td>
-         <td>          </td>
-      </tr>
-      <tr>
-         <td><p>H status - ABORT, EXECE</p>
-<p>Check that the file is not locked by another process.</p>         </td>
-         <td>          </td>
-      </tr>
-   </tbody>
-</table>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>136</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>FILE - Duplication of the temporary file</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>Check the WFNAME parameter in the <a href="../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftsend">CFTSEND</a> or <a href="../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftrecv">CFTRECV</a> command.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>137</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>FILE - The file exists, the "rename" operation
-is therefore impossible</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>Check the WFNAME parameter in the <a href="../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftsend">CFTSEND</a> or <a href="../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftrecv">CFTRECV</a> command.</p>         </td>
-      </tr>
-      <tr>
-         <td rowspan="2" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>138</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>1. FILE - No temporary file has been defined in the
+partners) that have already been read are executed
+
+#### Diagi code : 133
+
+PARAM - The FOR parameter in the CFTDEST command is invalid
+
+1\. FOR=LOCAL when in the switching mode
+
+2\. FOR=COMMUT when not in the switching mode
+
+**Consequence:**
+
+No catalog entry. Check the CFTDEST object in the configuration.
+
+#### Diagi code : 134
+
+FILE - CFTEXIT call error
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+Check the information in the cftlog and the cft.out files.
+
+#### Diagi code : 135
+
+1. FILE - The send file is locked
+
+**Consequence:**
+
+D status - RESTART
+
+Check that the file is not locked by another process.
+
+H status - ABORT, EXECE
+
+Check that the file is not locked by another process.
+
+2. FILE - The receive file is locked
+
+**Consequence:**
+
+D status - RESTART
+
+Check that the file is not locked by another process.
+
+H status - ABORT, EXECE
+
+Check that the file is not locked by another process.
+
+#### Diagi code : 136
+
+FILE - Duplication of the temporary file
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+Check the WFNAME parameter in the [CFTSEND](../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftsend) or [CFTRECV](../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftrecv) command.
+
+#### Diagi code : 137
+
+FILE - The file exists, the "rename" operation
+is therefore impossible
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+Check the WFNAME parameter in the [CFTSEND](../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftsend) or [CFTRECV](../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftrecv) command.
+
+#### Diagi code : 138
+
+1. FILE - No temporary file has been defined in the
 send mode and the transfer requires the COPY mechanism. No transfer is
-triggered and the generic request remains in the catalog</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>State K - ABORT</p>
-<p>Check the WFNAME parameter in the <a href="../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftsend">CFTSEND</a> or <a href="../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftrecv">CFTRECV</a> command.</p>
-<p> </p>
-<p>Check the WFNAME parameter in the <a href="../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftsend">CFTSEND</a> or <a href="../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftrecv">CFTRECV</a> command.</p>
-<p> </p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>2. FILE - No temporary file has been defined in the
+triggered and the generic request remains in the catalog
+
+**Consequence:**
+
+State K - ABORT
+
+Check the WFNAME parameter in the [CFTSEND](../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftsend) or [CFTRECV](../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftrecv) command.
+
+Check the WFNAME parameter in the [CFTSEND](../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftsend) or [CFTRECV](../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftrecv) command.
+
+2. FILE - No temporary file has been defined in the
 receive mode for a file with versions or for a transfer requiring deconcatenation
-(COPY)</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>State K - ABORT, EXECE</p>
-<p>Check the WFNAME parameter in the <a href="../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftsend">CFTSEND</a> or <a href="../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftrecv">CFTRECV</a> command.</p>
-<p> </p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">139         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">Incorrect attributes file         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Check the cftlog file and the diagp/diagc in the catalog record.</p>
-<p>Also, check the FLRECL/FRECFM parameters in the <a href="../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftrecv">CFTRECV</a> object.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>142</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>FILE - The "rename" operation failed</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>Check the WFNAME parameter in the <a href="../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftrecv">CFTRECV</a> command.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>144</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>MVS transfer busy</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>State D - Retry</p>
-<p>Specific to z/OS environments.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">145         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><ol>
-<li>The SEND file is outside of the workingdir tree.
-           &lt;/li&gt;</li>
-<li>The temporary SEND file is outside of the workingdir tree.</li>
-</ol>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>K status - ABORT</p>
-<p>Check the WORKINGDIR parameter in the <a href="../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftsend">CFTSEND</a> object.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">148         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>1. The RECV file is outside of the workingdir tree.
-           &lt;/p&gt;</p>
-<p>2. The temporary RECV file is outside of the workingdir tree.</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>K status - ABORT</p>
-<p>Check the WORKINGDIR parameter in the <a href="../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftrecv">CFTRECV</a> object.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>150</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PARAM - Could not access a file. This error may be due to one of several issues, for example the directory is empty, or  the file's name does not correspond to an applied filter.</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>State K - ABORT. If the directory does not exist, no transfers
+(COPY)
+
+**Consequence:**
+
+State K - ABORT, EXECE
+
+Check the WFNAME parameter in the [CFTSEND](../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftsend) or [CFTRECV](../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftrecv) command.
+
+#### Diagi code : 139
+
+Incorrect attributes file
+
+**Consequence:**
+
+Check the cftlog file and the diagp/diagc in the catalog record.
+
+Also, check the FLRECL/FRECFM parameters in the [CFTRECV](../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftrecv) object.
+
+#### Diagi code : 142
+
+FILE - The "rename" operation failed
+
+H status - ABORT, EXECE
+
+Check the WFNAME parameter in the [CFTRECV](../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftrecv) command.
+
+#### Diagi code : 144
+
+MVS transfer busy
+
+**Consequence:**
+
+State D - Retry
+
+Specific to z/OS environments.
+
+#### Diagi code : 145
+
+vK status - ABORT
+
+Check the WORKINGDIR parameter in the [CFTSEND](../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftsend) object.
+
+#### Diagi code : 148
+
+1\. The RECV file is outside of the workingdir tree.
+
+2\. The temporary RECV file is outside of the workingdir tree.
+
+**Consequence:**
+
+K status - ABORT
+
+Check the WORKINGDIR parameter in the [CFTRECV](../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftrecv) object.
+
+#### Diagi code : 150
+
+PARAM - Could not access a file. This error may be due to one of several issues, for example the directory is empty, or the file's name does not correspond to an applied filter.
+
+State K - ABORT. If the directory does not exist, no transfers
 are triggered and only the generic request remains in the catalog. If
 an error is detected when reading the directory, the transfers generated
-for the items (directory menus) that have already been read are triggered.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>152</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>FILE - Error during the concatenation phase at the start
+for the items (directory menus) that have already been read are triggered.
+
+#### Diagi code : 152
+
+FILE - Error during the concatenation phase at the start
 of the transfer or during the de-concatenation phase at the send of the
-transfer.</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>State H - ABORT, EXECE</p>
-<p>Problem on homogeneous transfer issue. See <a href="../../../concepts/using_the_send_command/send_group_of_files_cl" class="MCXref xref">Sending
-a group of files</a></p>
-<p>Check the configuration - FNAME and WFNAME on the CFTSEND or CFTRECV object.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>153</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>FILE - Error during the transfer. The file has been overwritten.</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>State K - Short transfer cannot be restarted.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">154         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">An error occurred when trying to transcode a file using NCHARSET parameter in the CFTSEND command before a send.         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Generates a DIAGI=730, DIAGP=ABO 399 on the remote side as the sender cannot transcode before sending.</p>
-<p>Check the diagp/diagc in the catalog to have more information.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">155         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">This preprocessing error occurs when a preexec is specified, but launching the exec file failed (usually because the file was not found, but could be due to a busy or migrated file on z/OS [MVS]).         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Generates:</p>
-<ul>
-<li>DIAGP: NO EXEC</li>
-<li>DIAGC: PREEXEC LAUNCH ERROR</li>
-</ul>
-<p>Check the PREEXEC parameter in the SEND, RECV, CFTSEND, and CFTRECV commands.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">156         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">This error occurs if the maximum number of retries is reached when FACTION=RETRYRENAME.         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Generates:</p>
-<ul>
-<li>DIAGP: RETRYRENAME</li>
-<li>Phasestep=K</li>
-</ul>
-<p>Check these uconf values:</p>
-<ul>
-<li>cft.server.transfer.rrename.retry_delay</li>
-<li>cft.server.transfer.rrename.max_retries</li>
-</ul>
-<p>File defined in the FNAME parameter in the CFTRECV object should not exist when the retry occurs. Transfer can be restarted.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">158         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>There was an error while replacing Transfer CFT variables.</p>
-<p>The script referenced by <code>&amp;fname</code> in the CFTS68E   message is not executed.</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">In the script &amp;fname, modify  the variable &lt;var&gt; indicated in  the CFTS68E message.         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>160</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>Handles the event 'no outstanding
-transfer or implicit declaration'.</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>No catalog entry is created.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">200         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">An error occurred on a child transfer of this parent (generic) transfer. Refer to the child transfer in error for more information.         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">State K - ABORT,EXECE         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">203         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">PROF=SIT non-priority transfer         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">          </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>220</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - FPDU reception</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>221</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - Int/ext type match error: the type of a PI is not
+transfer.
+
+**Consequence:**
+
+State H - ABORT, EXECE
+
+Problem on homogeneous transfer issue. See <a href="../../../concepts/using_the_send_command/send_group_of_files_cl" class="MCXref xref">Sending
+a group of files</a>
+
+Check the configuration - FNAME and WFNAME on the CFTSEND or CFTRECV object.
+
+#### Diagi code : 153
+
+FILE - Error during the transfer. The file has been overwritten.
+
+**Consequence:**
+
+State K - Short transfer cannot be restarted.
+
+#### Diagi code : 154
+
+An error occurred when trying to transcode a file using NCHARSET parameter in the CFTSEND command before a send.
+
+**Consequence:**
+
+Generates a DIAGI=730, DIAGP=ABO 399 on the remote side as the sender cannot transcode before sending.
+
+Check the diagp/diagc in the catalog to have more information.
+
+#### Diagi code : 155
+
+This preprocessing error occurs when a preexec is specified, but launching the exec file failed (usually because the file was not found, but could be due to a busy or migrated file on z/OS \[MVS\]).
+
+**Consequence:**
+
+Generates:
+
+- DIAGP: NO EXEC
+- DIAGC: PREEXEC LAUNCH ERROR
+
+Check the PREEXEC parameter in the SEND, RECV, CFTSEND, and CFTRECV commands.
+
+#### Diagi code : 156
+
+This error occurs if the maximum number of retries is reached when FACTION=RETRYRENAME.
+
+**Consequence:**
+
+Generates:
+
+- DIAGP: RETRYRENAME
+- Phasestep=K
+
+Check these uconf values:
+
+- cft.server.transfer.rrename.retry\_delay
+- cft.server.transfer.rrename.max\_retries
+
+File defined in the FNAME parameter in the CFTRECV object should not exist when the retry occurs. Transfer can be restarted.
+
+#### Diagi code : 158
+
+There was an error while replacing Transfer CFT variables.
+
+The script referenced by `&fname` in the CFTS68E message is not executed.
+
+**Consequence:**
+
+In the script &fname, modify the variable &lt;var> indicated in the CFTS68E message.
+
+#### Diagi code : 160
+
+Handles the event 'no outstanding
+transfer or implicit declaration'.
+
+**Consequence:**
+
+No catalog entry is created.
+
+#### Diagi code : 200
+
+An error occurred on a child transfer of this parent (generic) transfer. Refer to the child transfer in error for more information.
+
+**Consequence:**
+
+State K - ABORT,EXECE
+
+#### Diagi code : 203
+
+PROF=SIT non-priority transfer
+
+#### Diagi code : 220
+
+PROT - FPDU reception
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.
+
+#### Diagi code : 221
+
+PROT - Int/ext type match error: the type of a PI is not
 consistent with its conversion type in the external format (for example,
-a PI in DATE format to be converted to the STRING format)</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>222</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - Mandatory PI missing in FPDU</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>223</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - Invalid PI length</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>224</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - Invalid PGI length</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>225</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - PGI missing from the FPDU</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>226</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - PGI embedded in another PGI</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>230</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - Protocol error. A protocol error has been detected:
-DIAGP is set to the PeSIT or ODETTE code of the error detected</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>Contact the Support team for this type of unexpected error. Prior to doing so though, please collect as much information as possible regarding the transfer in error, including the remote partner information (product, configuration,...).</p>
-<p>Note that the 230 diagnostic codes may have different diagnostic protocols formats:</p>
-<ul>
-<li>diagp = eEEsSS: An unexpected internal error when the event "EE" occurs during the "SS" state.</li>
-<li>diagp = PDU iNN: The PDU parameter "NN" is not correct.</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>231</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - Invalid action</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>232</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - Event not found. An interaction not recognized by
-the protocol mechanisms has been received in a given transfer context</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>
-<p>This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>233 </p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - Message send operation refused by the protocol used.
-The following protocols do not support message send operations: PESIT SIT, PESIT EXT, ODETTE</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>K status - ABORT</p>
-<p>This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>240</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - Time-out expired (RTO parameter)</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>D status - RETRY/COMMUT</p>
-<p>For more information, see <a href="../../admin_troubleshooting_server/admin_troubleshooting_runtime/troubleshoot_rto" class="MCXref xref">Troubleshoot 240 or 740 RTO</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">241         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">Transfer time-out - requester         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">          </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">241         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">Transfer time-out - server         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">          </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">243         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">Network connection time-out                 </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">          </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">244         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">Pre-connection time-out                     </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">          </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>260</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>SSL - Security problem</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>K state - ABORT</p>
-<p>DIAGP=PKI with I, E or S nnn</p>
-<p>nnn = SSL code alert</p>
-<p>See <a href="#SSL">SSL alert errors</a> and <a href="../../admin_troubleshooting_server/troubleshoot_security" class="MCXref xref">Troubleshoot security errors</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>261</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>SSL - Error linked to an internal PKI</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>K state - ABORT</p>
-<p>DIAGP=PKI I nnn</p>
-<p>nnn = SSL code alert</p>
-<p>See <a href="#SSL">SSL alert errors</a> and <a href="../../admin_troubleshooting_server/troubleshoot_security" class="MCXref xref">Troubleshoot security errors</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>262</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>SSL - Error linked to the PKI system</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>K state - ABORT</p>
-<p>DIAGP=PKIS nnn</p>
-<p>nnn = SSL code alert</p>
-<p>See <a href="#SSL">SSL alert errors</a> and <a href="../../admin_troubleshooting_server/troubleshoot_security" class="MCXref xref">Troubleshoot security errors</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>263</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>SSL - Error linked to an external PKI</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>K state - ABORT</p>
-<p>DIAGP=PKIE nnn</p>
-<p>nnn = SSL code alert</p>
-<p>See <a href="#SSL">SSL alert errors</a> and <a href="../../admin_troubleshooting_server/troubleshoot_security" class="MCXref xref">Troubleshoot security errors</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>278</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>SSL - Invalid security profile</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>K state - ABORT</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>301</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>NET - Network addressing error (IP address) at the time
-of connection</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>D status - COMMUT</p>
-<p>The transfer will be retried for a minimum period equal
+a PI in DATE format to be converted to the STRING format)
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.
+
+#### Diagi code : 222
+
+PROT - Mandatory PI missing in FPDU
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.
+
+#### Diagi code : 223
+
+PROT - Invalid PI length
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.
+
+#### Diagi code : 224
+
+PROT - Invalid PGI length
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.
+
+#### Diagi code : 225
+
+PROT - PGI missing from the FPDU
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.
+
+#### Diagi code : 226
+
+PROT - PGI embedded in another PGI
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.
+
+#### Diagi code : 230
+
+PROT - Protocol error. A protocol error has been detected:
+DIAGP is set to the PeSIT or ODETTE code of the error detected
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+Contact the Support team for this type of unexpected error. Prior to doing so though, please collect as much information as possible regarding the transfer in error, including the remote partner information (product, configuration,...).
+
+Note that the 230 diagnostic codes may have different diagnostic protocols formats:
+
+- diagp = eEEsSS: An unexpected internal error when the event "EE" occurs during the "SS" state.
+- diagp = PDU iNN: The PDU parameter "NN" is not correct.
+
+#### Diagi code : 231
+
+PROT - Invalid action
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.
+
+#### Diagi code : 232
+
+PROT - Event not found. An interaction not recognized by
+the protocol mechanisms has been received in a given transfer context
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.
+
+#### Diagi code : 233 
+
+PROT - Message send operation refused by the protocol used.
+The following protocols do not support message send operations: PESIT SIT, PESIT EXT, ODETTE
+
+**Consequence:**
+
+K status - ABORT
+
+This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.
+
+#### Diagi code : 240
+
+PROT - Time-out expired (RTO parameter)
+
+**Consequence:**
+
+D status - RETRY/COMMUT
+
+For more information, see <a href="../../admin_troubleshooting_server/admin_troubleshooting_runtime/troubleshoot_rto" class="MCXref xref">Troubleshoot 240 or 740 RTO</a>.
+
+#### Diagi code : 241
+
+Transfer time-out - requester
+
+#### Diagi code : 241
+
+Transfer time-out - server
+
+#### Diagi code : 243
+
+Network connection time-out
+
+#### Diagi code : 244
+
+Pre-connection time-out
+
+#### Diagi code : 260
+
+SSL - Security problem
+
+**Consequence:**
+
+K state - ABORT
+
+DIAGP=PKI with I, E or S nnn
+
+nnn = SSL code alert
+
+See [SSL alert errors](#SSL) and <a href="../../admin_troubleshooting_server/troubleshoot_security" class="MCXref xref">Troubleshoot security errors</a>.
+
+#### Diagi code : 261
+
+SSL - Error linked to an internal PKI
+
+**Consequence:**
+
+K state - ABORT
+
+DIAGP=PKI I nnn
+
+nnn = SSL code alert
+
+See [SSL alert errors](#SSL) and <a href="../../admin_troubleshooting_server/troubleshoot_security" class="MCXref xref">Troubleshoot security errors</a>.
+
+#### Diagi code : 262
+
+SSL - Error linked to the PKI system
+
+**Consequence:**
+
+K state - ABORT
+
+DIAGP=PKIS nnn
+
+nnn = SSL code alert
+
+See [SSL alert errors](#SSL) and <a href="../../admin_troubleshooting_server/troubleshoot_security" class="MCXref xref">Troubleshoot security errors</a>.
+
+#### Diagi code : 263
+
+SSL - Error linked to an external PKI
+
+**Consequence:**
+
+K state - ABORT
+
+DIAGP=PKIE nnn
+
+nnn = SSL code alert
+
+See [SSL alert errors](#SSL) and <a href="../../admin_troubleshooting_server/troubleshoot_security" class="MCXref xref">Troubleshoot security errors</a>.
+
+#### Diagi code : 278
+
+SSL - Invalid security profile
+
+**Consequence:**
+
+K state - ABORT
+
+#### Diagi code : 301
+
+NET - Network addressing error (IP address) at the time
+of connection
+
+**Consequence:**
+
+D status - COMMUT
+
+The transfer will be retried for a minimum period equal
 to the WSCAN parameter of the CFTCAT command. The next partner address
 in the HOST parameter list (CFTTCP command) will be used for the
-next retry.</p>
-<ul>
-<li>If the invalid address is the last one in the list, the next
-protocol in the PROT parameter list (CFTPART command) will be used for
-the next retry.</li>
-<li>If the protocol used is the last in the list, the transfer
-is either switched to the backup partner (IPART parameter of the CFTPART
-command) or aborted (K status) with code 405, while maintaining the
-diagnostic code of the last retry</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>302</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>NET - Network link broken (cut-off, time-out) outside the
-connection phase. DIAGP is then set to VNRELI</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>D status - RETRY/COMMUT</p>
-<p>Up to "RETRYM" retries are performed for the
+next retry.
+
+- If the invalid address is the last one in the list, the next
+    protocol in the PROT parameter list (CFTPART command) will be used for
+    the next retry.
+- If the protocol used is the last in the list, the transfer
+    is either switched to the backup partner (IPART parameter of the CFTPART
+    command) or aborted (K status) with code 405, while maintaining the
+    diagnostic code of the last retry
+
+#### Diagi code : 302
+
+NET - Network link broken (cut-off, time-out) outside the
+connection phase. DIAGP is then set to VNRELI
+
+**Consequence:**
+
+D status - RETRY/COMMUT
+
+Up to "RETRYM" retries are performed for the
 transfer and the access data. If the number of retries reaches the value
-in the RETRYM parameter, {{< TransferCFT/componentshortname  >}} switches the access data.</p>
-<p>The partner access data for the next retry will relate to the next HOST
+in the RETRYM parameter, {{< TransferCFT/componentshortname  >}} switches the access data.
+
+The partner access data for the next retry will relate to the next HOST
 parameter (CFTNET command), or the next PROT parameter (CFTPART command).
-The restart counter is reset to 0.</p>
-<p>If the protocol used is the last in
+The restart counter is reset to 0.
+
+If the protocol used is the last in
 the list, the transfer is either switched to the backup partner (IPART
 parameter of the CFTPART command) or aborted with code 405, while maintaining
-the diagnostic code (<a href="../general_protocol_diagnostics">DIAGP</a>) of the last retry</p>
-<p>See <a href="../../common_transfer_issues" class="MCXref xref">Troubleshooting common transfer issues</a> for more information.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>303</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>NET - Network parameter error at the time of connection</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>D status - COMMUT</p>
-<p>The transfer is retried using the
+the diagnostic code ([DIAGP](../general_protocol_diagnostics)) of the last retry
+
+See <a href="../../common_transfer_issues" class="MCXref xref">Troubleshooting common transfer issues</a> for more information.
+
+#### Diagi code : 303
+
+NET - Network parameter error at the time of connection
+
+**Consequence:**
+
+D status - COMMUT
+
+The transfer is retried using the
 next protocol in the PROT parameter list (CFTPART command) as the new
-partner access point.</p>
-<p>If the protocol used is the last in the list, the
+partner access point.
+
+If the protocol used is the last in the list, the
 transfer is either switched to the backup partner (IPART parameter of
 the CFTPART command) or aborted (K status) with code 405, while maintaining
 the diagnostic code of the last
-retry.</p>
-<p>Cannot connect to the remote partner due to a local connection rejection. When using SFTP, check that the remote SAP value in CFTPART object is defined and is correct.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>350</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>The user requesting the transfer is not authorized to perform
-it</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>State H</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>351</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>The remote  requester is not authorized to use the transfer.
+retry.
+
+Cannot connect to the remote partner due to a local connection rejection. When using SFTP, check that the remote SAP value in CFTPART object is defined and is correct.
+
+#### Diagi code : 350
+
+The user requesting the transfer is not authorized to perform
+it
+
+**Consequence:**
+
+State H
+
+#### Diagi code : 351
+
+The remote requester is not authorized to use the transfer.
 The transfer was in the H state. The monitor is running in the server/sender
-mode</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>State H</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>352</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>The remote  requester is not authorized to create a transfer.
+mode
+
+**Consequence:** State H
+
+#### Diagi code : 352
+
+The remote requester is not authorized to create a transfer.
 The monitor is running in the server/sender mode and the transfer was
-to be created via a CFTSEND IMPL=YES</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>State H</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>401</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PARAM - Embedded broadcast list explicitly refused</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>K status - ABORT</p>
-<p>For an explicit multi-partner request
+to be created via a CFTSEND IMPL=YES
+
+**Consequence:** State H
+
+#### Diagi code : 401
+
+PARAM - Embedded broadcast list explicitly refused
+
+**Consequence:**
+
+K status - ABORT
+
+For an explicit multi-partner request
 (PART parameter in the CFTDEST command), a single partner, itself defined
 as a partner list, aborts the request; only the generic list request set
-to the K status remains in the catalog. No transfer is executed.</p>
-<p>For a multi-partner request via an indirection file (FNAME
+to the K status remains in the catalog. No transfer is executed.
+
+For a multi-partner request via an indirection file (FNAME
 parameter in the CFTDEST command), only the requests prior to the error
-are executed</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>402</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PARAM - The PROT parameter of the CFTPART command does
+are executed
+
+#### Diagi code : 402
+
+PARAM - The PROT parameter of the CFTPART command does
 not belong to the active protocol list (PROT parameter of the CFTPARM
-command)</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>K status - ABORT</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>403</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PARAM: Invalid password</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>No CAT</p>
-<p>The diagi = 403 is displayed only in the cftlog file</p>
-<p>CFTH22E NPART=PARTSSL rejected DIAGI=403 &lt;HOST=@IP_address&gt;</p>
-<p>On the requester the transfer status is D with diagi = 909 and the diagp = RCO 301, therefore  the transfer is retried up to RETRYM times.</p>
-<p> </p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>404</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PARAM: Open mode not authorized</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>No CAT (in server mode)</p>
-<p>Check that the FNAME=&amp;NFNAME in the CFTSEND or CFTRECV object.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>405</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>OUT: Transfer CFT has tried all possible partner access
-points: HOST, PROT, IPART</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>K status - ABORT, EXECE</p>
-<p>Check the configuration of the CFTPART and CFTTCP objects.</p>
-<p>Before reaching 405 diagi, multiple retries were executed. Check the cftlog file for informtion related to this transfer.</p>
-<p>After correcting the transfer, you can restart the transfer.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>406</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>1. OUT - Maximum number of retries reached (RESTART
-parameter).</p>
-<p>DIAGP is set to MAXRST</p>
-<p>2. AUTH - The required start time for execution of
+command)
+
+**Consequence:**
+
+K status - ABORT
+
+#### Diagi code : 403
+
+PARAM: Invalid password
+
+**Consequence:**
+
+No CAT
+
+The diagi = 403 is displayed only in the cftlog file
+
+CFTH22E NPART=PARTSSL rejected DIAGI=403 &lt;HOST=@IP\_address>
+
+On the requester the transfer status is D with diagi = 909 and the diagp = RCO 301, therefore the transfer is retried up to RETRYM times.
+
+#### Diagi code : 404
+
+PARAM: Open mode not authorized
+
+**Consequence:**
+
+No CAT (in server mode)
+
+Check that the FNAME=&NFNAME in the CFTSEND or CFTRECV object.
+
+#### Diagi code : 405
+
+OUT: Transfer CFT has tried all possible partner access
+points: HOST, PROT, IPART
+
+**Consequence:**
+
+K status - ABORT, EXECE
+
+Check the configuration of the CFTPART and CFTTCP objects.
+
+Before reaching 405 diagi, multiple retries were executed. Check the cftlog file for informtion related to this transfer.
+
+After correcting the transfer, you can restart the transfer.
+
+#### Diagi code : 406
+
+1. OUT - Maximum number of retries reached (RESTART
+parameter).
+
+DIAGP is set to MAXRST
+
+2. AUTH - The required start time for execution of
 the transfer is outside the authorized time slot (OMINTIME / OMAXTIME);
 there is no other possible protocol for this partner. DIAGP is set to
-CALL OUT</p>
-<p>3. AUTH - The network resource associated with the
+CALL OUT
+
+3. AUTH - The network resource associated with the
 protocol does not accept outgoing calls; there is no other possible protocol
-for this partner</p>
-<p>DIAGP is set to L 0B 022</p>
-<p>4. PARAM - There is no CFTN command for the
+for this partner
+
+DIAGP is set to L 0B 022
+
+4. PARAM - There is no CFTN command for the
 partner and for the last protocol in the list (CFTPART PROT parameter).
-DIAGP is set to MAXRST</p>
-<p>5. OVER - Transfer CFT has reached the limit (RESTART
+DIAGP is set to MAXRST
+
+5. OVER - Transfer CFT has reached the limit (RESTART
 parameter) of authorized retries for the last partner protocol (CFTPART
-PROT parameter). DIAGP is set to MAXRST</p>
-<p>6. PARAM - The SROUT parameter of the protocol cannot
+PROT parameter). DIAGP is set to MAXRST
+
+6. PARAM - The SROUT parameter of the protocol cannot
 be used to execute the transfer; there is no other possible protocol for
-this partner. DIAGP is set to SROUT</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p> </p>
-<p> </p>
-<p>K status - ABORT, EXECE</p>
-<p> </p>
-<p> </p>
-<p> </p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>408</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PARAM - PART parameter not described by a CFTPART command</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>K status - ABORT</p>
-<p>If a single CFTPART command is missing from an explicit
+this partner. DIAGP is set to SROUT
+
+**Consequence:**
+
+K status - ABORT, EXECE
+
+#### Diagi code : 408
+
+PARAM - PART parameter not described by a CFTPART command
+
+**Consequence:**
+
+K status - ABORT
+
+If a single CFTPART command is missing from an explicit
 multi-partner request (PART parameter in the CFTDEST command),
 the request is aborted. Only the generic list request, set to the K status,
-remains in the catalog.</p>
-<p>No transfer is executed.</p>
-<p>For a multi-partner request via
+remains in the catalog.
+
+No transfer is executed.
+
+For a multi-partner request via
 an indirection file (FNAME parameter in the CFTDEST command), only transfers
-with no partner defined are halted</p>
-<p>The other transfers are executed</p>
+with no partner defined are halted
+
+The other transfers are executed
+
 Complete broadcasting (or collection) is unsuccessful without operator
-intervention (partner definition and transfer retry). The end of transfer procedure is not executed.         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>409</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PARAM - Unknown NPART parameter</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT</p>
-<p>Check the correspondence between the PROT, NSPART, and NRPART parameters in the <a href="../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftpart">CFTPART</a> object.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>410</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PARAM - Unknown CFTPROT command</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>K status - ABORT</p>
-<p>Check that the PROT value in the  <a href="../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftpart">CFTPART</a> matches an active protocol PROT parameter of <a href="../../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftparm">CFTPARM</a> object.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>411</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>AUTH - File identifier (IDF) not authorized</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>K status - ABORT</p>
-<p>If the IDF for one of the partners in an explicit multi-partner
-request (PART parameter in the <a href="../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftdest">CFTDEST</a> command) is not authorized, the
+intervention (partner definition and transfer retry). The end of transfer procedure is not executed.
+
+#### Diagi code : 409
+
+PARAM - Unknown NPART parameter
+
+**Consequence:**
+
+H status - ABORT
+
+Check the correspondence between the PROT, NSPART, and NRPART parameters in the [CFTPART](../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftpart) object.
+
+#### Diagi code : 410
+
+PARAM - Unknown CFTPROT command
+
+**Consequence:**
+
+K status - ABORT
+
+Check that the PROT value in the [CFTPART](../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftpart) matches an active protocol PROT parameter of [CFTPARM](../../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftparm) object.
+
+#### Diagi code : 411
+
+AUTH - File identifier (IDF) not authorized
+
+**Consequence:**
+
+K status - ABORT
+
+If the IDF for one of the partners in an explicit multi-partner
+request (PART parameter in the [CFTDEST](../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftdest) command) is not authorized, the
 request is aborted; only the generic list request set to the K status
-remains in the catalog</p>
-<p>No transfer is executed</p>
-<p>For a multi-partner request via
+remains in the catalog
+
+No transfer is executed
+
+For a multi-partner request via
 an indirection file (FNAME parameter in the CFTDEST command), only transfers,
 the IDFs of which are not authorized for the partner (CFTAUTH command)
-are set to halted</p>
-<p>The other transfers remain active.</p>
-<p>However,
+are set to halted
+
+The other transfers remain active.
+
+However,
 complete broadcasting (or collection) is unsuccessful without operator
 intervention (grant authorization to the partners and retry the transfer);
-the end of transfer procedure will not be executed</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>412</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>DATA - Catalog access error</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>As the
-file could not be accessed, there is no change in the status or in the catalog DIAGI.</p>
-<p>The  CFTT21E should display in the log and contain GCS and GCR information that may be helpful for Axway support to diagnos the issue.</p>
-<p>For example, this type of error could be caused by  a corrupted catalog. If so, you could import and export the records to repair this.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>413</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>AUTH - File identifier not authorized</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT</p>
-<p>Check the SAUTH/RAUTH parameters in the <a href="../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftpart">CFTPART</a> object and the associated <a href="../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftauth">CFTAUTH</a> objects.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>414</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>1. AUTH - The start time for execution of the transfer
+the end of transfer procedure will not be executed
+
+#### Diagi code : 412
+
+DATA - Catalog access error
+
+Consequence: As the
+file could not be accessed, there is no change in the status or in the catalog DIAGI.
+
+The  CFTT21E should display in the log and contain GCS and GCR information that may be helpful for Axway support to diagnos the issue.
+
+For example, this type of error could be caused by a corrupted catalog. If so, you could import and export the records to repair this.
+
+#### Diagi code : 413
+
+AUTH - File identifier not authorized
+
+**Consequence:**
+
+H status - ABORT
+
+Check the SAUTH/RAUTH parameters in the [CFTPART](../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftpart) object and the associated [CFTAUTH](../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftauth) objects.
+
+#### Diagi code : 414
+
+1. AUTH - The start time for execution of the transfer
 is outside the authorized time slot (MAXTIME / MAXDATE of the SEND / RECV
-command)</p>
-<p>DIAGP is then set to OUT TIME</p>
-<p>2. PARAM - The outgoing time slot of the partner is
-null (OMINTIME / OMAXTIME)</p>
-<p>There is no intermediate partner</p>
-<p>DIAGP is then set to CALL OUT</p>
-<p>3. AUTH - No outgoing call authorized for the network
-resource (CFTnetwork CNXOUT=0)</p>
-<p>DIAGP is then set to NO CALL</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>K status - ABORT</p>
-<p>See <a href="../../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftnet" class="MCXref xref">CFTNET
+command)
+
+DIAGP is then set to OUT TIME
+
+2. PARAM - The outgoing time slot of the partner is
+null (OMINTIME / OMAXTIME)
+
+There is no intermediate partner
+
+DIAGP is then set to CALL OUT
+
+3. AUTH - No outgoing call authorized for the network
+resource (CFTnetwork CNXOUT=0)
+
+DIAGP is then set to NO CALL
+
+**Consequence:**
+
+K status - ABORT
+
+See <a href="../../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftnet" class="MCXref xref">CFTNET
 - Network resources</a> and <a href="../../../admin_intro/admin_config_commands/network_resource_concepts" class="MCXref xref">Network
-resources</a> for more information on network resource depletion prevention.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>415</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>OVER - Maximum number of partners reached</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>D status - NEXT</p>         </td>
-      </tr>
-      <tr>
-         <td rowspan="2" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>416</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>1. OVER - Maximum number of transfers reached (MAXTRANS
-parameter)</p>
-<p>The transfer cannot be executed</p>
-<p>DIAGP is then set to MAXTRANS</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>D status - NEXT</p>
-<p> </p>
-<p>Please see <a href="../../../concepts/about_parallel_transfers/prevent_network_depletion" class="MCXref xref">Network resource depletion prevention (NRDP)</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>2. OVER - Maximum number of connections reached for
-the network resource</p>
-<p>The transfer cannot be executed</p>
-<p>DIAGP is then set to MAXCNX</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>D status - NEXT</p>
-<p>This status corresponds to a transfer refusal by the {{< TransferCFT/componentlongname  >}} protocol
+resources</a> for more information on network resource depletion prevention.
+
+#### Diagi code : 415
+
+OVER - Maximum number of partners reached
+
+**Consequence:**
+
+D status - NEXT
+
+#### Diagi code : 416
+
+1. OVER - Maximum number of transfers reached (MAXTRANS
+parameter)
+
+The transfer cannot be executed
+
+DIAGP is then set to MAXTRANS
+
+**Consequence:**
+
+D status - NEXT
+
+Please see <a href="../../../concepts/about_parallel_transfers/prevent_network_depletion" class="MCXref xref">Network resource depletion prevention (NRDP)</a>.
+
+2. OVER - Maximum number of connections reached for
+the network resource
+
+The transfer cannot be executed
+
+DIAGP is then set to MAXCNX
+
+**Consequence:**
+
+D status - NEXT
+
+This status corresponds to a transfer refusal by the {{< TransferCFT/componentlongname  >}} protocol
 task, even though the scheduler has not reached the MAXTRANS
-limit.</p>
-<p>This occurs when the protocol task maintains active connections
-after transfers have ended. Please see <a href="../../../concepts/about_parallel_transfers/prevent_network_depletion" class="MCXref xref">Network resource depletion prevention (NRDP)</a>.</p>
-<p> </p>
-<p>WSCAN related behavior</p>
-<p>Technically, the next retry is triggered <strong>wscan</strong> minutes after the previous try. However, sometimes you may have a {{< TransferCFT/componentlongname  >}} log where the 416 diagnostic codes are not evenly distributed (by the same time intervals). This may occur if the scheduling task believes resources are available and schedules a retry, but in reality the resource is taken.</p>
-<p> </p>
-<p><em>Unix only</em> - If the runtime path is too long,  a diag 416 issue occurs and a message similar to the following displays in the <code>cft.out</code>:</p>
-<blockquote>
-<p>CFTTCPS S_socket : start_soc : bind afunix</p>
-<p>CFTTCPS Invalid argument</p>
-</blockquote>
-<p>If this error occurs, modify the path to the socket  in the <a href="../../../admin_intro/uconf/uconf_directory">UCONF</a> <code>cft.unix.stcp.afunix</code> parameter according to the operating system limit as shown below:</p>
-<ul>
-<li>AIX: 1023</li>
-<li>HP-UX: 92</li>
-<li>Linux: 108</li>
-<li>Solaris: 108</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>417</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>1. OVER - Maximum number of file tasks reached (MAXTASK
-parameter)</p>
-<p>The transfer cannot be executed</p>
-<p>2. SYS- Insufficient system resources available to
-execute an EXIT task</p>
-<p>The transfer cannot be executed</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>D status - NEXT</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>418</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>OVER - The total number of transfers in progress exceeds
-one of the CNXIN, CNXOUT or CNXINOUT parameters for the partner</p>
-<p>The transfer cannot be executed</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>D status - RESTART</p>
-<p>If the number of retries exceeds the value of the RESTART
+limit.
+
+This occurs when the protocol task maintains active connections
+after transfers have ended. Please see <a href="../../../concepts/about_parallel_transfers/prevent_network_depletion" class="MCXref xref">Network resource depletion prevention (NRDP)</a>.
+
+WSCAN related behavior
+
+Technically, the next retry is triggered **wscan** minutes after the previous try. However, sometimes you may have a {{< TransferCFT/componentlongname  >}} log where the 416 diagnostic codes are not evenly distributed (by the same time intervals). This may occur if the scheduling task believes resources are available and schedules a retry, but in reality the resource is taken.
+
+*Unix only* - If the runtime path is too long, a diag 416 issue occurs and a message similar to the following displays in the `cft.out`:
+
+> CFTTCPS S\_socket : start\_soc : bind afunix
+>
+> CFTTCPS Invalid argument
+
+If this error occurs, modify the path to the socket in the [UCONF](../../../admin_intro/uconf/uconf_directory) `cft.unix.stcp.afunix` parameter according to the operating system limit as shown below:
+
+- AIX: 1023
+- HP-UX: 92
+- Linux: 108
+- Solaris: 108
+
+#### Diagi code : 417
+
+1. OVER - Maximum number of file tasks reached (MAXTASK
+parameter)
+
+The transfer cannot be executed
+
+2. SYS- Insufficient system resources available to
+execute an EXIT task
+
+The transfer cannot be executed
+
+**Consequence:**
+
+D status - NEXT
+
+#### Diagi code : 418
+
+OVER - The total number of transfers in progress exceeds
+one of the CNXIN, CNXOUT or CNXINOUT parameters for the partner
+
+The transfer cannot be executed
+
+**Consequence:**
+
+D status - RESTART
+
+If the number of retries exceeds the value of the RESTART
 parameter (CFTPROT command), Transfer CFT switches to the access data of
-the next protocol for this partner. See <a href="../../../concepts/about_parallel_transfers/multi_node_simultaneous_transfers" class="MCXref xref">Configure multi-node simultaneous transfers</a>.</p>
-<p>See also, <a href="../../../concepts/about_parallel_transfers/faq">Frequently asked questions</a> and <a href="../../../concepts/about_parallel_transfers/multi_node_simultaneous_transfers">Configure multi-node simultaneous transfers</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>419</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>DATA - The transfer to be retried is not in the catalog
-at the server end</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>ABORT</p>
-<p>Check the information in the cftlog file.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>420</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>DATA - On reception of a REPLY-type message, the original
+the next protocol for this partner. See <a href="../../../concepts/about_parallel_transfers/multi_node_simultaneous_transfers" class="MCXref xref">Configure multi-node simultaneous transfers</a>.
+
+See also, [Frequently asked questions](../../../concepts/about_parallel_transfers/faq) and [Configure multi-node simultaneous transfers](../../../concepts/about_parallel_transfers/multi_node_simultaneous_transfers).
+
+#### Diagi code : 419
+
+DATA - The transfer to be retried is not in the catalog
+at the server end
+
+**Consequence:**
+
+ABORT
+
+Check the information in the cftlog file.
+
+#### Diagi code : 420
+
+DATA - On reception of a REPLY-type message, the original
 transfer concerned by this reply is not found in the catalog at the server
-end</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>ABORT</p>         </td>
-      </tr>
-      <tr>
-         <td rowspan="2" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>421</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>1. SYS - Error executing a {{< TransferCFT/transfercftname  >}}file task</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>D status - NEXT</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>2. SYS - Error executing a {{< TransferCFT/transfercftname  >}} EXIT task</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>K status - ABORT</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>423</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>SYS or PARAM - EXIT task creation error</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT</p>
-<p>Check the diagp and the cftlog file for more information on the context.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>424</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PARAM - CFTXLATE command not found for this transfer direction
-and the source and target alphabets</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT</p>
-<p>Check  the XLATE value in the CFTSEND/CFTRECV object and the associated CFTXLATE object.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>426</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>USER (Directory Exit) - Error in the Directory Exit task</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>No CAT (server mode)</p>
-<p>State K - ABORT (requester mode)</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">428         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">Incoming address verified by the VERIFY parameter in the CFTTCP object  was not accepted.         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>No CAT</p>
-<p>Check the incoming address in the cftlog file
-and compare it to the host value in the CFTTCP object; the check is done on the VERIFY value (in terms of digits).</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>430</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PARAM - Transfer is inactive on the requester side</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>State D - ACT</p>
-<p>Check the partner's state.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>431</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>USER (Security) - CFTAPPL card is absent</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>No CAT</p>
-<p>Transfer is not started and  there is no entry in the catalog. Additionally, the diagi is displayed only in cftlog file.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">432         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">Duplicate transfer error         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">Check the DUPLICAT parameter value in the CFTSEND or CFTRECV object.         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">433         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">User/password error         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">Check the SPASSWD/RPASSWD parameter values in the CFTSEND or CFTRECV object.         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">434         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">AUTH - File identifier (default IDF) is not authorized           </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>K status - ABORT</p>
-<p>When cft.default_idf.enable = Yes , the default IDF is not authorized.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">435         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">WORKDIR         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>The  CFTSEND and CFTRECV models with the same ID have different working directories defined.</p>
-<p>SFTP issue. Check the workingdir value for both the CFTSEND id=&lt;ID&gt; with IMPL=YES and CFTRECV  id=&lt;ID&gt;.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">436         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">KEY         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>The client key does not correspond to the server key.</p>
-<p>SFTP issue.</p>
-<p>Check the CLIPUBKEY value in the CFTSSH direct=Client setting. This should correspond to an identifier in the local PKI database.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>451</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>1. PROT - (PeSIT) Reception of a protocol connection
+end
+
+**Consequence:** ABORT
+
+#### Diagi code : 421
+
+1. SYS - Error executing a {{< TransferCFT/transfercftname  >}}file task
+
+**Consequence:**
+
+D status - NEXT
+
+2. SYS - Error executing a {{< TransferCFT/transfercftname  >}} EXIT task
+
+**Consequence:**
+
+K status - ABORT
+
+#### Diagi code : 423
+
+SYS or PARAM - EXIT task creation error
+
+**Consequence:**
+
+H status - ABORT
+
+Check the diagp and the cftlog file for more information on the context.
+
+#### Diagi code : 424
+
+PARAM - CFTXLATE command not found for this transfer direction
+and the source and target alphabets
+
+**Consequence:**
+
+H status - ABORT
+
+Check  the XLATE value in the CFTSEND/CFTRECV object and the associated CFTXLATE object.
+
+#### Diagi code : 426
+
+USER (Directory Exit) - Error in the Directory Exit task
+
+**Consequence:**
+
+No CAT (server mode)
+
+State K - ABORT (requester mode)
+
+#### Diagi code : 428
+
+Incoming address verified by the VERIFY parameter in the CFTTCP object  was not accepted.
+
+Consequence: No CAT
+
+Check the incoming address in the cftlog file
+and compare it to the host value in the CFTTCP object; the check is done on the VERIFY value (in terms of digits).
+
+#### Diagi code : 430
+
+PARAM - Transfer is inactive on the requester side
+
+**Consequence:**
+
+State D - ACT
+
+Check the partner's state.
+
+#### Diagi code : 431
+
+USER (Security) - CFTAPPL card is absent
+
+**Consequence:**
+
+No CAT
+
+Transfer is not started and there is no entry in the catalog. Additionally, the diagi is displayed only in cftlog file.
+
+#### Diagi code : 432
+
+Duplicate transfer error
+
+**Consequence:**
+
+Check the DUPLICAT parameter value in the CFTSEND or CFTRECV object.
+
+#### Diagi code : 433
+
+User/password error
+
+**Consequence:**
+
+Check the SPASSWD/RPASSWD parameter values in the CFTSEND or CFTRECV object.
+
+#### Diagi code : 434
+
+AUTH - File identifier (default IDF) is not authorized
+
+**Consequence:**
+
+K status - ABORT
+
+When cft.default\_idf.enable = Yes , the default IDF is not authorized.
+
+#### Diagi code : 435
+
+WORKDIR
+
+**Consequence:**
+
+The CFTSEND and CFTRECV models with the same ID have different working directories defined.
+
+SFTP issue. Check the workingdir value for both the CFTSEND id=&lt;ID> with IMPL=YES and CFTRECV  id=&lt;ID>.
+
+#### Diagi code : 436
+
+KEY
+
+**Consequence:**
+
+The client key does not correspond to the server key.
+
+SFTP issue.
+
+Check the CLIPUBKEY value in the CFTSSH direct=Client setting. This should correspond to an identifier in the local PKI database.
+
+#### Diagi code : 451
+
+1. PROT - (PeSIT) Reception of a protocol connection
 refusal (AckCONNECT FPDU). (Odette) Reception of a protocol connection
-refusal (ESID). <a href="../protocol_diagnostic_codes">DIAGP</a> is then set to RELEASE</p>
-<p>2. PROT - (PeSIT) (Odette) Violation of the protocol
+refusal (ESID). [DIAGP](../protocol_diagnostic_codes) is then set to RELEASE
+
+2. PROT - (PeSIT) (Odette) Violation of the protocol
 specifications (unknown FPDU, or invalid contents for example). DIAGP
-is then set to ACO in or RCO in ennsnn</p>
-<p>3. PROT - (PeSIT)(Odette) Connection time-out reached
+is then set to ACO in or RCO in ennsnn
+
+3. PROT - (PeSIT)(Odette) Connection time-out reached
 without response (DISCTC parameter of the CFTPROT command). DIAGP is then
-set to TIMEOUT</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>D status - RESTART</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>452</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - (PeSIT) (Odette) Reception of a negative message
-confirmation FPDU</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>453</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - (PeSIT) (Odette) Reception of a negative create
-confirmation FPDU</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>454</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - (PeSIT) Reception of a negative select confirmation
-FPDU</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>455</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - (PeSIT) (Odette) Reception of a negative deselect
-confirmation FPDU</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>456</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - (PeSIT) Reception of a negative open confirmation
-FPDU</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">457         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">Reception of a negative closed confirmation         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">          </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">458         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">Reception of a negative read confirmation         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">          </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>459</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - (PeSIT) Reception of a negative write confirmation
-FPDU</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>460</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - (PeSIT) Reception of a negative end of transfer
-confirmation FPDU</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">461         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">Received an abort with diagnostics         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">          </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">462         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">No data sent on network         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">          </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">463         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">Logon entry not recognized         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">          </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">499         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">( ODETTE) CD okay         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">          </td>
-      </tr>
-      <tr>
-         <td colspan="3" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Codes with a value between 001 and 499 indicate a local issue; values
-between 501 and 999 correspond to a fault reported by the partner.</p>
-<p>Therefore when troubleshooting if the code is greater than 500 it refers to a remote  issue. To find the actual DIAG, subtract 500 from the displayed code. If the DIAG is 916, for example, the issue is a remote  problem corresponding to DIAG 416 (maximum number of transfers reached).</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">500         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">Constant to add to a remote  code         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">          </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>600</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>FILE - (PeSIT) (Odette) Transfer aborted by the remote  
-end: file input/output error - PeSIT / Odette code: See <a href="../general_protocol_diagnostics">DIAGP.</a></p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status- ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>604</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>FILE - (PeSIT) Transfer aborted by the remote  end: file
-opening error</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>605</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>FILE - (PeSIT) Transfer aborted by the remote  end: file
-closing error</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>610</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>FILE - (PeSIT) (Odette) Transfer aborted by the
-remote  end: the file to be read does not exist</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>611</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>FILE - (PeSIT) Transfer aborted by the remote  end: insufficient
-space to create the file</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>613</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>FILE - (PeSIT) Transfer aborted by the remote  end: the
-file to be created already exists</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>614</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>FILE - (PeSIT) Transfer aborted by the remote  end: file
-space full</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>620</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - (PeSIT) Transfer aborted by the remote  end: counter
-control error</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>621</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - (PeSIT) Transfer aborted by the remote  end: interruption
-by the operator</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>626</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - (PeSIT) (Odette) Transfer aborted by the remote  
-end: error in record length</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>635</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>FILE - (PeSIT) Transfer aborted by the remote  end: file
-access conflict</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">657         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">Errno         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">Too many open files in the CFTSFTP process.         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>660</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>REC (PeSIT) - Error 660, ASE
-205 on the requester side</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H state - Transfer aborted by the remote  end: no outstanding
-transfer</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>720</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>1. PROT - (PeSIT) Protocol abort by the remote  end:
-incorrect FPDU (transmission error)</p>
-<p>2. PROT - (Odette) Protocol abort by the remote  end:
-negotiation error</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>722</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - (PeSIT) Protocol abort by the remote  end: missing
-PI</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>730</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>1. PROT - Protocol error</p>
-<p>2. PROT - (PeSIT) Transfer aborted by the remote peer (i.e. the Partner Side)
-due to protocol error - PeSIT code: See <a href="../general_protocol_diagnostics">DIAGP.</a></p>
-<p>3. PROT - (Odette) Reception of an ESID FPDU</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>740</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>NET - (PeSIT) Transfer aborted by the remote  end: time-out
-- PeSIT code: 317</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>D status - RETRY</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>850</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - (PeSIT) Protocol rejection by the remote  end: authorization
-problem</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H Status - ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>904</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - (PeSIT) Protocol rejection by the remote  end: transfer
-denied (open mode, authorizations for example)</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>909</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - (PeSIT only) Protocol rejection by the remote  end:
-requester identifier unknown</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>D status - RESTART</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>916</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - (PeSIT only) Maximum number of transfers reached
-at the partner end (MAXTRANS parameter)</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>D status - NEXT</p>
-<p>See <a href="../../../concepts/about_parallel_transfers/multi_node_simultaneous_transfers" class="MCXref xref">Configure multi-node simultaneous transfers</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>919</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>Restart context not available</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>920</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - (PeSIT) Protocol rejection by the remote  end: on
+set to TIMEOUT
+
+**Consequence:**
+
+D status - RESTART
+
+#### Diagi code : 452
+
+PROT - (PeSIT) (Odette) Reception of a negative message
+confirmation FPDU
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+#### Diagi code : 453
+
+PROT - (PeSIT) (Odette) Reception of a negative create
+confirmation FPDU
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+#### Diagi code : 454
+
+PROT - (PeSIT) Reception of a negative select confirmation
+FPDU
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+#### Diagi code : 455
+
+PROT - (PeSIT) (Odette) Reception of a negative deselect
+confirmation FPDU
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+#### Diagi code : 456
+
+PROT - (PeSIT) Reception of a negative open confirmation
+FPDU
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+#### Diagi code : 457
+
+Reception of a negative closed confirmation
+
+#### Diagi code : 458
+
+Reception of a negative read confirmation
+
+#### Diagi code : 459
+
+PROT - (PeSIT) Reception of a negative write confirmation
+FPDU
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+#### Diagi code : 460
+
+PROT - (PeSIT) Reception of a negative end of transfer
+confirmation FPDU
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+#### Diagi code : 461
+
+Received an abort with diagnostics
+
+#### Diagi code : 462
+
+No data sent on network
+
+#### Diagi code : 463
+
+Logon entry not recognized
+
+#### Diagi code : 499
+
+( ODETTE) CD okay
+
+#### Diagi code : 500
+
+Constant to add to a remote code
+
+#### Diagi code : 600
+
+FILE - (PeSIT) (Odette) Transfer aborted by the remote
+end: file input/output error - PeSIT / Odette code: See [DIAGP.](../general_protocol_diagnostics)
+
+**Consequence:**
+
+H status- ABORT, EXECE
+
+#### Diagi code : 604
+
+FILE - (PeSIT) Transfer aborted by the remote end: file
+opening error
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+#### Diagi code : 605
+
+FILE - (PeSIT) Transfer aborted by the remote end: file
+closing error
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+#### Diagi code : 610
+
+FILE - (PeSIT) (Odette) Transfer aborted by the
+remote end: the file to be read does not exist
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+#### Diagi code : 611
+
+FILE - (PeSIT) Transfer aborted by the remote end: insufficient
+space to create the file
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+#### Diagi code : 613
+
+FILE - (PeSIT) Transfer aborted by the remote end: the
+file to be created already exists
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+#### Diagi code : 614
+
+FILE - (PeSIT) Transfer aborted by the remote end: file
+space full
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+#### Diagi code : 620
+
+PROT - (PeSIT) Transfer aborted by the remote end: counter
+control error
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+#### Diagi code : 621
+
+PROT - (PeSIT) Transfer aborted by the remote end: interruption
+by the operator
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+#### Diagi code : 626
+
+PROT - (PeSIT) (Odette) Transfer aborted by the remote
+end: error in record length
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+#### Diagi code : 635
+
+FILE - (PeSIT) Transfer aborted by the remote end: file
+access conflict
+
+H status - ABORT, EXECE
+
+#### Diagi code : 657
+
+Errno
+
+**Consequence:**
+
+Too many open files in the CFTSFTP process.
+
+#### Diagi code : 660
+
+REC (PeSIT) - Error 660, ASE
+205 on the requester side
+
+**Consequence:**
+
+H state - Transfer aborted by the remote end: no outstanding
+transfer
+
+#### Diagi code : 720
+
+1. PROT - (PeSIT) Protocol abort by the remote end:
+incorrect FPDU (transmission error)
+
+2. PROT - (Odette) Protocol abort by the remote end:
+negotiation error
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+#### Diagi code : 722
+
+PROT - (PeSIT) Protocol abort by the remote end: missing
+PI
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+#### Diagi code : 730
+
+1. PROT - Protocol error
+
+2. PROT - (PeSIT) Transfer aborted by the remote peer (i.e. the Partner Side)
+due to protocol error - PeSIT code: See [DIAGP.](../general_protocol_diagnostics)
+
+3. PROT - (Odette) Reception of an ESID FPDU
+
+**Consequence:**
+
+H status - ABORT, EXECE
+
+#### Diagi code : 740
+
+NET - (PeSIT) Transfer aborted by the remote end: time-out
+- PeSIT code: 317
+
+**Consequence:**
+
+D status - RETRY
+
+#### Diagi code : 850
+
+PROT - (PeSIT) Protocol rejection by the remote end: authorization
+problem
+
+**Consequence:** H Status - ABORT, EXECE
+
+#### Diagi code : 904
+
+PROT - (PeSIT) Protocol rejection by the remote end: transfer
+denied (open mode, authorizations for example)
+
+**Consequence:** H status - ABORT, EXECE
+
+#### Diagi code : 909
+
+PROT - (PeSIT only) Protocol rejection by the remote end:
+requester identifier unknown
+
+**Consequence:** D status - RESTART
+
+#### Diagi code : 916
+
+PROT - (PeSIT only) Maximum number of transfers reached
+at the partner end (MAXTRANS parameter)
+
+**Consequence:**
+
+D status - NEXT
+
+See <a href="../../../concepts/about_parallel_transfers/multi_node_simultaneous_transfers" class="MCXref xref">Configure multi-node simultaneous transfers</a>.
+
+#### Diagi code : 919
+
+Restart context not available
+
+**Consequence:** H status - ABORT, EXECE
+
+#### Diagi code : 920
+
+PROT - (PeSIT) Protocol rejection by the remote end: on
 reception of a REPLY-type message, the partner does not find the transfer
-concerned by this reply in its catalog</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>D status - RESTART</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>925</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>Call collect refused by the remote  system</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>No CAT</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>928</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>Invalid caller number</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>H status - ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>930</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - Partner is inactive on the server side</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>ACT status</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">933         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">Error in  password management parameter RPASSWD or SPASSWD: non-authorized requester identification         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">          </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>963</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>PROT - Protocol pre-connection phase rejected by the remote  
-end (PeSIT LOGON): LOGON string rejected</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>K status - ABORT, EXECE</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyB-Column1-Body2"><p>970</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyB-Column1-Body2"><p>PROT - Protocol pre-connection phase rejected by the remote  
-end (PeSIT LOGON): password expired</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyA-Column1-Body2"><p>K status - ABORT, EXECE</p>         </td>
-      </tr>
-   </tbody>
-</table>
+concerned by this reply in its catalog
+
+**Consequence:** D status - RESTART
+
+#### Diagi code : 925
+
+Call collect refused by the remote system
+
+**Consequence:** No CAT
+
+#### Diagi code : 928
+
+Invalid caller number
+
+**Consequence:** H status - ABORT, EXECE
+
+#### Diagi code : 930
+
+PROT - Partner is inactive on the server side
+
+**Consequence:** ACT status
+
+#### Diagi code : 933
+
+Error in password management parameter RPASSWD or SPASSWD: non-authorized requester identification
+
+#### Diagi code : 963
+
+PROT - Protocol pre-connection phase rejected by the remote
+end (PeSIT LOGON): LOGON string rejected
+
+**Consequence:** K status - ABORT, EXECE
+
+#### Diagi code : 970
+
+PROT - Protocol pre-connection phase rejected by the remote
+end (PeSIT LOGON): password expired
+
+K status - ABORT, EXECE
 
 <span id="SSL"></span>
 
 ## SSL alert errors
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Code</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>0</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Close notify</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>10</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Unexpected message</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>20</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Bad record MAC</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>21</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Decryption failed</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>22</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Record overflow</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>30</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Decompression failure</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>40</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Handshake failure</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>41</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>No certificate</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>42</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Bad certificate</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>43</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Unsupported certificate</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>44</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Certificate revoked</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>45</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Certificate expired</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>46</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Certificate unknown</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>47</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Illegal parameter</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>48</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Unknown CA (<a href="http://en.wikipedia.org/wiki/Certificate_authority">Certificate authority</a>)</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>49</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Access denied</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>50</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Decode error</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>51</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Decrypt error</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>60</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Export restriction</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>70</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Protocol version</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>71</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Insufficient security</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>80</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Internal error</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>90</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>User canceled</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>100</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>No renegotiation</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>110</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Unsupported extension</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>111</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Certificate unobtainable</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>112</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Certificate unobtainable</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>113</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2"><p>Bad certificate status response</p>         </td>
-      </tr>
-      <tr>
-         <td class="TableStyle-SynchTableStyle_interop-BodyB-Column1-Body2"><p>114</p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyA-Column1-Body2"><p>Bad certificate hash value</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Code | Description |
+| --- | --- |
+| 0 | Close notify |
+| 10 | Unexpected message |
+| 20 | Bad record MAC |
+| 21 | Decryption failed |
+| 22 | Record overflow |
+| 30 | Decompression failure |
+| 40 | Handshake failure |
+| 41 | No certificate |
+| 42 | Bad certificate |
+| 43 | Unsupported certificate |
+| 44 | Certificate revoked |
+| 45 | Certificate expired |
+| 46 | Certificate unknown |
+| 47 | Illegal parameter |
+| 48 | Unknown CA (<a href="http://en.wikipedia.org/wiki/Certificate_authority">Certificate authority</a>) |
+| 49 | Access denied |
+| 50 | Decode error |
+| 51 | Decrypt error |
+| 60 | Export restriction |
+| 70 | Protocol version |
+| 71 | Insufficient security |
+| 80 | Internal error |
+| 90 | User canceled |
+| 100 | No renegotiation |
+| 110 | Unsupported extension |
+| 111 | Certificate unobtainable |
+| 112 | Certificate unobtainable |
+| 113 | Bad certificate status response |
+| 114 | Bad certificate hash value |
+

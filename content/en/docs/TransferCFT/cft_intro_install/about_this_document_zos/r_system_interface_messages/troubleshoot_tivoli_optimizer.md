@@ -34,13 +34,13 @@ Example
 //\* and/or other debuging products.
 //\* uncomment the following statement(s).
 //\* ---------------------------------------------------
-//\*IDIOFF   DD  DUMMY   IBM FAULT ANALYZER OFF
+//\*IDIOFF DD DUMMY IBM FAULT ANALYZER OFF
 //\*
-//\*ABNLIGNR DD  DUMMY   ABEND-AID OFF
-//\*ESPYIBM  DD  DUMMY   EYE-SPY OFF
-//\*CAOESTOP DD  DUMMY   CA-OPT II & CA-SYMDUMP OFF
-//\*DMBENAN  DD  DUMMY   TURN OFF DUMPMASTER
-//\*PSPOFF   DD  DUMMY   TURN OFF SOFTWORKS PERFORMANCE ESSENTIAL
+//\*ABNLIGNR DD DUMMY ABEND-AID OFF
+//\*ESPYIBM DD DUMMY EYE-SPY OFF
+//\*CAOESTOP DD DUMMY CA-OPT II & CA-SYMDUMP OFF
+//\*DMBENAN DD DUMMY TURN OFF DUMPMASTER
+//\*PSPOFF DD DUMMY TURN OFF SOFTWORKS PERFORMANCE ESSENTIAL
 //\*
 //\* ---------------------------------------------------
 //\* Turn off PDSMAN
@@ -48,7 +48,7 @@ Example
 //\* ---------------------------------------------------
 //\*FCOPYOFF DD DUMMY
 //\*
-//\*PROIGN   DD  DUMMY   To bypass Stop-X37
-//\*AOBYPASS DD  DUMMY   To bypass Tivoli Allocation Optimizer
+//\*PROIGN DD DUMMY To bypass Stop-X37
+//\*AOBYPASS DD DUMMY To bypass Tivoli Allocation Optimizer
 //\*
 ```

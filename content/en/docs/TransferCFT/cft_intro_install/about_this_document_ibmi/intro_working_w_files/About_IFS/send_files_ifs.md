@@ -10,32 +10,19 @@ The following table lists the different types of files that can be used accordin
 >
 > The FRECFM possibilities for all FTYPE are: ‘V’, ‘F’, and ‘ ’ .
 
-```
 
-FTYPE
+| FTYPE  | Type of sent file  |
+| --- | --- |
+| ‘S’  | Text  |
+| ‘D’ , ‘ ’  | Text  |
+| ‘E’  | Text  |
+| ‘Z’  | Binary  |
+| ‘J’  | Stream text is an alternative way to transfer a text file. Every line of a file must end with an LF or CR/LF. However, during a transfer the CR/LF are changed to LFs. This enables a quicker reading, and a faster transfer.<br/> When using stream text (FTYPE=J), the sender and the receiver must both have the FTYPE set to J. Setting only the sender or receiver to FTYPE=J results in unexpected content for the transferred file.<br/> <blockquote> **Note**<br/> This transfer mode is not available for native side transfers.<br/> </blockquote>  |
 
-Type of sent file
-
-             ‘S’
-Text  
-            ‘D’ , ‘ ’
-Text
-             ‘E’
-Text
-             ‘Z’
-Binary
-             ‘J’
-Stream text  is an alternative way to transfer a text file. Every line of a file must end with an LF or CR/LF. However, during a transfer the CR/LF are changed to LFs. This enables a quicker reading, and a faster transfer.
-When using stream text (FTYPE=J), the sender and the receiver must both have the FTYPE set to J. Setting only the sender or receiver to FTYPE=J results in unexpected content for the transferred file.
-
-> **Note**
-> This transfer mode is not available for native side transfers.
-
-```
 
 Key
 
-When sending a file from the part of an IBM i machine in text mode, the file is expected to be a standard text file. This means that every line of the file to transfer is finished either by a LF, either by a CR/LF. If not, the file is considered to be binary and Transfer CFT cannot  read it. Use the binary mode to allow it to be transferred.
+When sending a file from the part of an IBM i machine in text mode, the file is expected to be a standard text file. This means that every line of the file to transfer is finished either by a LF, either by a CR/LF. If not, the file is considered to be binary and Transfer CFT cannot read it. Use the binary mode to allow it to be transferred.
 
 ## Sending a group of IFS files
 
@@ -57,16 +44,16 @@ The FNAME parameter is set to a generic name that includes wildcard characters. 
 
 A receiving Transfer CFT can specify the name of each file received via the symbolic variables:
 
--   ?FPATH the file path of the sending file, and
--   ?FROOT the file name of the sending file
+- ?FPATH the file path of the sending file, and
+- ?FROOT the file name of the sending file
 
 Example
 
--   CFTSEND
+- CFTSEND
 
 FNAME = “#/home/send/FIC\*.\*”, FRECVFM = V
 
--   CFTRECV
+- CFTRECV
 
 FNAME = “/home/recv/?FROOT”,
 
@@ -76,9 +63,9 @@ FRECVFM = V
 
 These rules apply to the structure of the file containing a list of files:
 
--   A record can contain only one file name
--   Each file name must be listed in the first column
--   The file names must be written in EBCDIC
+- A record can contain only one file name
+- Each file name must be listed in the first column
+- The file names must be written in EBCDIC
 
 Example
 
@@ -88,8 +75,8 @@ CFTSEND FNAME = “#/home/send/FICLIST”, FRECVFM = V
 
 If the file FICLIST contains the following lists:
 
--   /home/send/FIC1
--   /home/send/FIC2
--   /home/send/FIC3
+- /home/send/FIC1
+- /home/send/FIC2
+- /home/send/FIC3
 
 Then the files FIC1, FIC2 and FIC3 are sent.

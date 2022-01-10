@@ -8,9 +8,9 @@
 
 When installing a Transfer CFT multi-node architecture in Windows, the user performing the installation must:
 
--   Be a domain user who is part of the Administrators group.
--   Be the same user for all machines.
--   Have all rights (create/modify/delete) to the shared disk on all machines when {{< TransferCFT/componentlongname >}} is installed in a multi-host architecture.
+- Be a domain user who is part of the Administrators group.
+- Be the same user for all machines.
+- Have all rights (create/modify/delete) to the shared disk on all machines when {{< TransferCFT/componentlongname >}} is installed in a multi-host architecture.
 
 > **Note**
 >
@@ -20,13 +20,13 @@ When installing a Transfer CFT multi-node architecture in Windows, the user perf
 
 A cluster installation of Transfer CFT with multi-node (HA):
 
--   Install Transfer CFT  and enable the multi-node architecture.
--   Installation procedure must be executed on each host:
-    -   The first host installation  sets the Shared directory, the &lt;Transfer\_CFT Shared> directory and all of the Transfer CFT configurations.
+- Install Transfer CFT and enable the multi-node architecture.
+- Installation procedure must be executed on each host:
+    -   The first host installation sets the Shared directory, the &lt;Transfer\_CFT Shared> directory and all of the Transfer CFT configurations.
     -   During each hosts installation (meaning additional nodes), you are prompted to specify the shared directory.
--   Transfer CFT binaries are installed on several hosts and runtime files are installed on a shared file system.
--   Only runtime files are shared.
--   At any given time:
+- Transfer CFT binaries are installed on several hosts and runtime files are installed on a shared file system.
+- Only runtime files are shared.
+- At any given time:
     -   One or several hosts are active.
     -   All Transfer CFT runtime environments (Transfer CFT nodes) are running.
 
@@ -58,10 +58,10 @@ The path and name of the local directory where you want to install the first clu
 >
 > See Shared file system prerequisites for details.
 
-You can use a single key for  a multi-node installation, as either:
+You can use a single key for a multi-node installation, as either:
 
--   The hostname must not be defined for the key, or
--   The hostname defined for the key matches the hostname of one of the hosts that composes the multi-node instance
+- The hostname must not be defined for the key, or
+- The hostname defined for the key matches the hostname of one of the hosts that composes the multi-node instance
 
 Additionally, the key must have the cluster option.
 
@@ -74,25 +74,25 @@ Download and unzip the {{< TransferCFT/transfercftname  >}} install package, as 
 Create as many copies of the initialize.properties file as you have hosts in the multi-node installation. Customize the *N* initialize.properties file with the following parameters to enable a multi-node installation.
 
 
-| CFT_Full_Hostname  |  Host Address of the local server: FQDN (Fully Qualified Domain Name) or IP Address.<br/>When you re installing a cluster, there are two ways to define this parameter:<br/> • If you do not set this in the silent file, the install determines it (if the machine is correctly configured) <br/> • Set the FQDN for each machine in the cluster, that is, for each host installation</li>  |
+| CFT_Full_Hostname  | Host Address of the local server: FQDN (Fully Qualified Domain Name) or IP Address.<br/> When you re installing a cluster, there are two ways to define this parameter:<br/> • If you do not set this in the silent file, the install determines it (if the machine is correctly configured)<br/><br/> • Set the FQDN for each machine in the cluster, that is, for each host installation |
 | --- | --- |
 | Runtimedir  | The runtime directory must be in a shared directory.  |
-| Multinode_Enable  |  Enable the multi-node architecture.<br/>To use a multi-node architecture, you must define the multi-node option in the initialize.properties file.  |
-| Multinode_Number    | Enter the number of nodes.  |
-| LoadBalancer_Host  |  Specify the host address of the load balancer.<br/>When using an ACTIVE/ACTIVE or ACTIVE/PASSIVE deployment, you require a load balancer to connect to the Transfer CFT Copilot server.  |
-| LoadBalancer_Port  | Specify the load balancer port, which is redirected to the Central Governance dedicated port of the Transfer CFT UI Server. When using ACTIVE/ACTIVE or ACTIVE/PASSIVE deployment, you require a load balancer to connect to the Transfer CFT Copilot server.  |
+| Multinode_Enable  | Enable the multi-node architecture.<br/> To use a multi-node architecture, you must define the multi-node option in the initialize.properties file. |
+| Multinode_Number  | Enter the number of nodes.  |
+| LoadBalancer_Host  | Specify the host address of the load balancer.<br/> When using an ACTIVE/ACTIVE or ACTIVE/PASSIVE deployment, you require a load balancer to connect to the Transfer CFT Copilot server. |
+| LoadBalancer_Port  | Specify the load balancer port, which is redirected to the Central Governance dedicated port of the Transfer CFT UI Server. When using ACTIVE/ACTIVE or ACTIVE/PASSIVE deployment, you require a load balancer to connect to the Transfer CFT Copilot server. |
 
 
 ## Installation overview
 
-1.  Start the installation.
-2.  Transfer\_CFT\_{{< TransferCFT/releasenumber >}}\_Install\_win-x86-64\_BNXXXXXXXX.exe/bat
-3.  ./Transfer\_CFT\_{{< TransferCFT/releasenumber >}}\_Install\_&lt;OS>\_&lt;BN>.run
-4.  In the Installation Architecture screen, select **Cluster - first host**.
-5.  Complete the installation.
-6.  To add a host to create a multi-host, multi-node installation, run the install `exe/bat` again. This time select **Cluster - Additional host**.
+1. Start the installation.
+1. Transfer\_CFT\_{{< TransferCFT/releasenumber >}}\_Install\_win-x86-64\_BNXXXXXXXX.exe/bat
+1. ./Transfer\_CFT\_{{< TransferCFT/releasenumber >}}\_Install\_&lt;OS>\_&lt;BN>.run
+1. In the Installation Architecture screen, select **Cluster - first host**.
+1. Complete the installation.
+1. To add a host to create a multi-host, multi-node installation, run the install `exe/bat` again. This time select **Cluster - Additional host**.
 
-After installation, but before you can use the cluster installation, you must configure the  high-availability operations. The procedure for cluster configuration varies depending on the  platform on which the cluster is installed.
+After installation, but before you can use the cluster installation, you must configure the high-availability operations. The procedure for cluster configuration varies depending on the platform on which the cluster is installed.
 
 ## Silent installation
 
@@ -100,8 +100,8 @@ This section describes the differences when installing using a silent file for a
 
 If the silent file architecture is either first\_host or additional\_host, there are two important parameters:
 
--   multinode\_hostname
--   multinode\_host\_address
+- multinode\_hostname
+- multinode\_host\_address
 
 By default, these 2 attributes are automatically completed if they are not specified in the silent file.
 
