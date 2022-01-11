@@ -1,8 +1,8 @@
 {
-    "title": "SecureTransport 5.5 documentation",
+    "title": "SecureTransport 5.5 documentation QQQ",
     "linkTitle": "SecureTransport 5.5",
     "weight": "20"
-}SecureTransport is part of the Axway family of managed file transfer (MFT) products. SecureTransport allows organizations to adeptly control and manage the transfer of files inside and outside of the corporate firewall in support of mission-critical business processes and ad hoc human transactions, while satisfying policy and regulatory compliance requirements. SecureTransport serves as a hub and router for moving files between humans, systems, and more.
+}QQQSecureTransport is part of the Axway family of managed file transfer (MFT) products. SecureTransport allows organizations to adeptly control and manage the transfer of files inside and outside of the corporate firewall in support of mission-critical business processes and ad hoc human transactions, while satisfying policy and regulatory compliance requirements. SecureTransport serves as a hub and router for moving files between humans, systems, and more.
 
 ## Quick links to all guides in {{< SecureTransport/securetransportname  >}} {{< SecureTransport/releasenumber  >}}
 
