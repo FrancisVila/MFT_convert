@@ -1,6 +1,6 @@
 {
     "title": "Listing parameters - LISTPARM ",
-    "linkTitle": "LISTPARM &#45; List parameters",
+    "linkTitle": "LISTPARM - List parameters",
     "weight": "480"
 }This page describes the LISTPARM command. You can use this command
 to query Transfer CFT parameters.

@@ -1,6 +1,6 @@
 {
     "title": "COPYFILE  - Copy files off-line",
-    "linkTitle": "COPYFILE &#45; Copy files off&#45;line",
+    "linkTitle": "COPYFILE - Copy files off-line",
     "weight": "280"
 }The COPYFILE command is used
 to copy a sequential file performing the following operations:

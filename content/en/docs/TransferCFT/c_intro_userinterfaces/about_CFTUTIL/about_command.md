@@ -1,6 +1,6 @@
 {
     "title": "Display product information",
-    "linkTitle": "ABOUT &#45; Displaying computer characteristics",
+    "linkTitle": "ABOUT - Displaying computer characteristics",
     "weight": "200"
 }## Use the ABOUT command
 

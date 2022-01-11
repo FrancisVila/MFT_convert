@@ -1,6 +1,6 @@
 {
     "title": "Multi-node architecture",
-    "linkTitle": "Multi&#45;node architecture",
+    "linkTitle": "Multi-node architecture",
     "weight": "170"
 }This topic describes the {{< TransferCFT/componentshortname  >}} multi-node feature, which provides you with horizontal scalability and high availability for failovers. Following a brief review of terms, this topic describes:
 

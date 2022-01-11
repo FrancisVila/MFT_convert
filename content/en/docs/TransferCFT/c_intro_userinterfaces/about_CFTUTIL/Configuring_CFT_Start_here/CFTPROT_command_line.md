@@ -1,6 +1,6 @@
 {
     "title": "CFTPROT  - Transfer protocols",
-    "linkTitle": "CFTPROT &#45; Transfer protocol",
+    "linkTitle": "CFTPROT - Transfer protocol",
     "weight": "410"
 }The following table lists the parameters which are common to all protocols.The CFTPROT TYPE = xxx commands are explained in the tables following the general parameters.
 

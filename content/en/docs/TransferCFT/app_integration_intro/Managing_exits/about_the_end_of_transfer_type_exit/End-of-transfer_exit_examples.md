@@ -1,6 +1,6 @@
 {
     "title": "End-of-transfer  exit example",
-    "linkTitle": "End&#45;of&#45;transfer exit example",
+    "linkTitle": "End-of-transfer exit example",
     "weight": "380"
 }This page introduces the following end-of-transfer elements, Parameter
 settings, Structure

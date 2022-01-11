@@ -1,6 +1,6 @@
 {
     "title": "Use  a proxy with SOCKS protocol",
-    "linkTitle": "Proxy and SOCKS &#40;CFTNET&#41;",
+    "linkTitle": "Proxy and SOCKS (CFTNET)",
     "weight": "170"
 }A proxy is a program
 that acts as an intermediary between a client and server. It is often

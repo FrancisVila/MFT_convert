@@ -1,6 +1,6 @@
 {
     "title": "Transfer CFT shutdown",
-    "linkTitle": "SHUT &#45; Transfer CFT shutdown",
+    "linkTitle": "SHUT - Transfer CFT shutdown",
     "weight": "330"
 }<span id="About_the_SHUT_Command"></span>This command describes how to shutdown
 Transfer CFT, using either an immediate or delayed shutdown.

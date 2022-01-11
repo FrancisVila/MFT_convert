@@ -1,6 +1,6 @@
 {
     "title": "SWAITCAT - Wait for a predefined status",
-    "linkTitle": "SWAITCAT &#45; Wait before processing",
+    "linkTitle": "SWAITCAT - Wait before processing",
     "weight": "380"
 }The SWAITCAT command enables a client to wait until
 a given transfer reaches a particular predefined phase, phasestep, or state before acting.

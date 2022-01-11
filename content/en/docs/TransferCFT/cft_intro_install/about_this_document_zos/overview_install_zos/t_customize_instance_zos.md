@@ -1,6 +1,6 @@
 {
     "title": "Common installation steps (A03PARM and A12OPTSP)",
-    "linkTitle": "Common installation steps &#40;A03PARM and A12OPTSP&#41;",
+    "linkTitle": "Common installation steps (A03PARM and A12OPTSP)",
     "weight": "180"
 }This section applies to either an SMP/E or non-SMP/E installation.
 

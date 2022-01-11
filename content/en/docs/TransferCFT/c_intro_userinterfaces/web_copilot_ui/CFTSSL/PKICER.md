@@ -1,6 +1,6 @@
 {
     "title": "Certificates - PKICER",
-    "linkTitle": "Certificates &#45; PKICER",
+    "linkTitle": "Certificates - PKICER",
     "weight": "230"
 }This section describes how to:
 

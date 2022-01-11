@@ -1,6 +1,6 @@
 {
     "title": "Wait for the catalog value to reach a state - SWAITCAT",
-    "linkTitle": "Wait for catalog value to reach a state &#45; SWAITCAT",
+    "linkTitle": "Wait for catalog value to reach a state - SWAITCAT",
     "weight": "270"
 }The SWAITCAT command enables a client to wait until
 a given transfer reaches a particular predefined phase, phasestep, or state before acting.

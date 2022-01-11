@@ -1,6 +1,6 @@
 {
     "title": "Query internal Transfer CFT components",
-    "linkTitle": "MQUERY &#45; Querying a component ",
+    "linkTitle": "MQUERY - Querying a component ",
     "weight": "300"
 }This page describes how to use the <span id="MQUERY_command"></span>MQUERY
 command to query the various {{< TransferCFT/componentshortname  >}} components.

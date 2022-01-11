@@ -1,6 +1,6 @@
 {
     "title": "Start the multi-node Transfer CFT",
-    "linkTitle": "Start multi&#45;node Transfer CFTs",
+    "linkTitle": "Start multi-node Transfer CFTs",
     "weight": "220"
 }After customizing your installation and executing the required z/OS commands, you are ready to start your multi-node Transfer CFTs. Remember that in a z/OS multi-node environment, Copilot acts as the node manager.
 

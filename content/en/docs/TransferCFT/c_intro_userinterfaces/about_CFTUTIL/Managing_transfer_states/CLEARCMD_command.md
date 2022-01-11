@@ -1,6 +1,6 @@
 {
     "title": "CLEARCMD - Delete a command in the COM file",
-    "linkTitle": "CLEARCMD &#45; Deleting a transfer request",
+    "linkTitle": "CLEARCMD - Deleting a transfer request",
     "weight": "300"
 }This page describes the <span id="CLEARCMD_command"></span>CLEARCMD. Use this
 command to delete a transfer request from the communication file. A log message is generated to trace who has cleared which command.

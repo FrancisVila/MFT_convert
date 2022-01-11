@@ -1,6 +1,6 @@
 {
     "title": "Start and stop the server JOBs",
-    "linkTitle": "Post&#45;installation",
+    "linkTitle": "Post-installation",
     "weight": "170"
 }This section presents JCL examples that you can use to create the JOBs necessary to run Transfer CFT. All of the JCLs are located in the **target.INSTALL** library.
 

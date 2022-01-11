@@ -1,6 +1,6 @@
 {
     "title": "Post-installation",
-    "linkTitle": "Post&#45;installation",
+    "linkTitle": "Post-installation",
     "weight": "160"
 }## Transfer CFT in production
 

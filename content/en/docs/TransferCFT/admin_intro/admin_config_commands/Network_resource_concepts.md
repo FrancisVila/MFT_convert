@@ -1,6 +1,6 @@
 {
     "title": " Network  resources ",
-    "linkTitle": "CFTNET &#45; Network resources ",
+    "linkTitle": "CFTNET - Network resources ",
     "weight": "270"
 }The
 *Network resources* object corresponds to the CFTNET object in the command line operations.

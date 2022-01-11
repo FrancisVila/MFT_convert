@@ -1,6 +1,6 @@
 {
     "title": "DISPLAY - Catalog output display model",
-    "linkTitle": "DISPLAY &#45; Catalog output display model",
+    "linkTitle": "DISPLAY - Catalog output display model",
     "weight": "290"
 }The <span id="DISPLAY"></span>DISPLAY
 command is an enhanced version of the LISTCAT command and displays

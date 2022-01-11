@@ -1,6 +1,6 @@
 {
     "title": "Post-processing phase",
-    "linkTitle": "Post&#45;processing phase",
+    "linkTitle": "Post-processing phase",
     "weight": "190"
 }The post-processing phase consists of running a script, which is specified using the parameter EXEC (of CFTSEND, CFTRECV, SEND and RECV commands) or parameters EXECSF, EXECRF, EXECSM or EXECRM (of CFTPARM command), after the transfer phase. Once the post processing is done, the transfer request goes to the Acknowledgment phase or Done phase depending to the parameter ACKSTATE.
 

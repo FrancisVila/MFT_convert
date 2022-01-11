@@ -1,6 +1,6 @@
 {
     "title": "Network resource depletion prevention (NRDP)",
-    "linkTitle": "Network resource depletion prevention &#40;NRDP&#41;",
+    "linkTitle": "Network resource depletion prevention (NRDP)",
     "weight": "280"
 }Configuring more network connection than simultaneous file transfers is not always enough to ensure that the MAXTRANS transfers can proceed simultaneously at any given time.
 

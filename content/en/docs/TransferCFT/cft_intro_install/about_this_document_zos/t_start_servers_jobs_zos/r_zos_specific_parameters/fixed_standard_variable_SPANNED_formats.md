@@ -1,6 +1,6 @@
 {
     "title": "Files in fixed-standard and variable-SPANNED formats",
-    "linkTitle": "Files in fixed&#45;standard and variable&#45;SPANNED formats",
+    "linkTitle": "Files in fixed-standard and variable-SPANNED formats",
     "weight": "330"
 }You can transfer files in fixed-standard and variable-spanned formats while respecting their specific characteristics. This transfer mode is subject to a certain number of restrictions.
 

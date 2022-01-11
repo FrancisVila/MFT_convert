@@ -1,6 +1,6 @@
 {
     "title": "Add a relay (store and forward)",
-    "linkTitle": "Add a relay &#40;store and forward&#41;",
+    "linkTitle": "Add a relay (store and forward)",
     "weight": "180"
 }This page describes how to use a relay in a SEND/RECV operation. You can use a SEND/RECV to perform a transfer with a single partner via an intermediate machine, or relay, using the store and forward mode. Additionally, you can combine the store and forward mode with broadcasting when using the SEND command.
 

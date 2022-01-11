@@ -1,6 +1,6 @@
 {
     "title": "DIAGI - Diagnostic  codes",
-    "linkTitle": "DIAGI &#45; Diagnostic codes",
+    "linkTitle": "DIAGI - Diagnostic codes",
     "weight": "430"
 }<span id="Internal_diagnostic_codes"></span>
 

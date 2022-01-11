@@ -1,6 +1,6 @@
 {
     "title": " Configure receive mode (native)",
-    "linkTitle": "Configure receive mode &#40;native&#41;",
+    "linkTitle": "Configure receive mode (native)",
     "weight": "220"
 }## File type
 

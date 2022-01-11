@@ -1,6 +1,6 @@
 {
     "title": "Keys - PKIKEY",
-    "linkTitle": "Keys &#45; PKIKEY",
+    "linkTitle": "Keys - PKIKEY",
     "weight": "220"
 }This page describes how to manage keys via the user interface.
 

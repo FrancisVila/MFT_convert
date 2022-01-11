@@ -1,6 +1,6 @@
 {
     "title": "Transfer  protocol ",
-    "linkTitle": "CFTPROT &#45; Transfer protocol ",
+    "linkTitle": "CFTPROT - Transfer protocol ",
     "weight": "290"
 }For computers to transfer files, a set of transfer rules must
 be established. The CFTPROT object sets up these transfer rules, or file

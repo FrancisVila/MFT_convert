@@ -1,5 +1,5 @@
 {
-    "title": "User groups",
+    "title": "Administrator group (GRPCFT)",
     "linkTitle": "User groups",
     "weight": "320"
 }### Administrator group (GRPCFT)

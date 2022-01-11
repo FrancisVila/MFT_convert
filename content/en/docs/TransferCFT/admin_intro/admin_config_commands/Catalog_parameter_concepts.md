@@ -1,6 +1,6 @@
 {
     "title": "Catalog attributes ",
-    "linkTitle": "CFTCAT &#45; Catalog attributes ",
+    "linkTitle": "CFTCAT - Catalog attributes ",
     "weight": "240"
 }-   Command syntax
     [CFTCAT](../../../c_intro_userinterfaces/command_summary#CFTCAT)

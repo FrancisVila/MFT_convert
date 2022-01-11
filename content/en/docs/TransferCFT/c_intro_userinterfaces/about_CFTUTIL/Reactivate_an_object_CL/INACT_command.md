@@ -1,6 +1,6 @@
 {
     "title": "           INACT  - Deactivate an object",
-    "linkTitle": "INACT &#45; Deactivating objects",
+    "linkTitle": "INACT - Deactivating objects",
     "weight": "270"
 }<span id="kanchor67"></span>
 

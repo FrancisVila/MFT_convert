@@ -1,6 +1,6 @@
 {
     "title": "Configure send mode (native)",
-    "linkTitle": "Configure send mode &#40;native&#41;",
+    "linkTitle": "Configure send mode (native)",
     "weight": "210"
 }## Native file type definitions
 

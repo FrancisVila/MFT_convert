@@ -1,6 +1,6 @@
 {
     "title": "LISTCAT/DISPLAY - Statistical variables",
-    "linkTitle": "LISTCAT &#45; Statistical variables",
+    "linkTitle": "LISTCAT - Statistical variables",
     "weight": "320"
 }Use the following variables after performing a LISTCAT or DISPLAY command to show the selected statistical information. For example, LISTCAT\_FREE displays the percentage of free records. Additionally, you can use a combination of these variables.
 

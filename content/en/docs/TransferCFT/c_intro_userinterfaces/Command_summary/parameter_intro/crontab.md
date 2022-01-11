@@ -1,5 +1,5 @@
 {
-    "title": "crontabs",
+    "title": "CRONTAB",
     "linkTitle": "crontabs",
     "weight": "540"
 }<span id="crontab"></span>

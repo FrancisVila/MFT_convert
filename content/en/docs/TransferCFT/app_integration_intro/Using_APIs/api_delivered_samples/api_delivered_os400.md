@@ -1,6 +1,6 @@
 {
     "title": "Delivered templates for IBM i (iSeries)",
-    "linkTitle": "Delivered templates for IBM i &#40;iSeries&#41;",
+    "linkTitle": "Delivered templates for IBM i (iSeries)",
     "weight": "350"
 }This topic describes the {{< TransferCFT/companyname  >}} {{< TransferCFT/componentshortname  >}} API templates and CL programs  for the IBM i (iseries) platform. You may decide to use the delivered samples as a basis for integrating APIs, or as a model to create your own.
 

@@ -1,6 +1,6 @@
 {
     "title": "HALT- Interrupt transfers ",
-    "linkTitle": "HALT &#45; Halting a transfer",
+    "linkTitle": "HALT - Halting a transfer",
     "weight": "320"
 }This command is used to suspend one or all the send and/or receive transfers,
 with the partners selected.

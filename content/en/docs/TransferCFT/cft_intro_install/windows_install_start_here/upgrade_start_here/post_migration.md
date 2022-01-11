@@ -1,6 +1,6 @@
 {
     "title": "Post-migration procedure",
-    "linkTitle": "Post&#45;migration procedure",
+    "linkTitle": "Post-migration procedure",
     "weight": "240"
 }## Post manual migration or auto import
 

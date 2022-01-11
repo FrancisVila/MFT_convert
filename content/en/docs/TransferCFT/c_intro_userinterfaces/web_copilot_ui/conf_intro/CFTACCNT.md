@@ -1,6 +1,6 @@
 {
     "title": "Accounting records - CFTACCNT  ",
-    "linkTitle": "Accounting &#45; CFTACCNT",
+    "linkTitle": "Accounting - CFTACCNT",
     "weight": "240"
 }<span id="About_CFTACCNT"></span>This page describes the <span id="kanchor47"></span>CFTACCNT command.
 

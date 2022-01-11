@@ -1,6 +1,6 @@
 {
     "title": "Recording  mode for statistical data",
-    "linkTitle": "CFTACCNT &#45; Recording mode for statistical data ",
+    "linkTitle": "CFTACCNT - Recording mode for statistical data ",
     "weight": "230"
 }The CFTACCNT object defines the recording mode for statistical data
 of correctly terminated transfers. See also the parameter list

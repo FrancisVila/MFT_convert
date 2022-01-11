@@ -1,6 +1,6 @@
 {
     "title": "CFTXLATE  - Conversion tables",
-    "linkTitle": "CFTXLATE &#45; Conversion tables",
+    "linkTitle": "CFTXLATE - Conversion tables",
     "weight": "460"
 }This topic describes how to define a translation table to be used during
 a transfer. There are two ways to generate a translation table, either using the FNAME parameter or the TABLE parameter as described below.

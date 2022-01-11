@@ -1,6 +1,6 @@
 {
     "title": "Partners - CFTPART ",
-    "linkTitle": "Partners &#45; CFTPART",
+    "linkTitle": "Partners - CFTPART",
     "weight": "190"
 }This page describes how to define the Partners object (CFTPART ) to set partner
 characteristics. Use this command to describe partner characteristics.

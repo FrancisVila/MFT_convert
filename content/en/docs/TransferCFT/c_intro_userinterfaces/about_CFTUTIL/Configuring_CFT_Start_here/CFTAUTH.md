@@ -1,6 +1,6 @@
 {
     "title": "Authorized flow definitions - CFTAUTH  ",
-    "linkTitle": "CFTAUTH &#45; Authorized templates",
+    "linkTitle": "CFTAUTH - Authorized templates",
     "weight": "290"
 }<span id="Listing_model_file_identifiers__IDF_"></span>This section describes
 the CFTAUTH command and parameters you use to create lists of authorized or unauthorized file transfer identifiers.

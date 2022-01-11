@@ -1,6 +1,6 @@
 {
     "title": "Install with security",
-    "linkTitle": "External access management  &#40;RACF&#41;",
+    "linkTitle": "External access management  (RACF)",
     "weight": "280"
 }To protect its objects, Transfer CFT uses the SAF interface (System Authorization Facility) on z/OS platforms to address authorization requests to an ESM, such as RACF. Transfer CFT does not perform any checks itself, and accepts the ESM decision. Before implementing specific protection, you must protect any Transfer CFT objects that the operating system recognizes from a file, an operator command, or program protection mechanisms.
 

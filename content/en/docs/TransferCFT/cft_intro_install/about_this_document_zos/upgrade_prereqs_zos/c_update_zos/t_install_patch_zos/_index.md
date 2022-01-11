@@ -1,6 +1,6 @@
 {
     "title": "Transfer CFT maintenance (non-SMP/E)",
-    "linkTitle": "Transfer CFT maintenance &#40;non&#45;SMP/E&#41;",
+    "linkTitle": "Transfer CFT maintenance (non-SMP/E)",
     "weight": "240"
 }## Update or apply a service pack (non-SMP/E)
 

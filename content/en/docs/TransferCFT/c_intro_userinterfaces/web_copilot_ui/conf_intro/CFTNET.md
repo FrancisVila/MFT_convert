@@ -1,6 +1,6 @@
 {
     "title": "CFTNET  - Network resources",
-    "linkTitle": "Network resources &#45; CFTNET",
+    "linkTitle": "Network resources - CFTNET",
     "weight": "230"
 }<span id="About_the_Generic_CFTNET_command"></span>You can use the CFTNET
 command to define a network access resource. The available CFTNET network

@@ -1,6 +1,6 @@
 {
     "title": "Multi-node commands",
-    "linkTitle": "Multi&#45;node commands",
+    "linkTitle": "Multi-node commands",
     "weight": "230"
 }This topic describes how to manage Transfer CFT nodes, and related actions such as restarting a stopped node, or rebalancing after a fail over.
 

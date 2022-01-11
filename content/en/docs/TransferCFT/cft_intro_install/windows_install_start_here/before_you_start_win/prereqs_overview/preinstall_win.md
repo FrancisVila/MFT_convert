@@ -1,6 +1,6 @@
 {
     "title": "Windows-specific prerequisites ",
-    "linkTitle": "Windows&#45;specific prerequisites",
+    "linkTitle": "Windows-specific prerequisites",
     "weight": "170"
 }The following are tasks to perform or issues to address before installing Transfer CFT.
 

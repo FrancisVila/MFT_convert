@@ -1,6 +1,6 @@
 {
     "title": "Upgrade a multi-node architecture",
-    "linkTitle": "Upgrade multi&#45;node architecture",
+    "linkTitle": "Upgrade multi-node architecture",
     "weight": "240"
 }This section describes the upgrade of an instance of Transfer CFT z/OS configured in multi-node.
 

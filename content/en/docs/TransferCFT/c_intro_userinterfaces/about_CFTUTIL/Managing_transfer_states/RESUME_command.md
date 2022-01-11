@@ -1,6 +1,6 @@
 {
     "title": "RESUME  - Retrieve a blocked transfer",
-    "linkTitle": "RESUME &#45; Retrieving a blocked request",
+    "linkTitle": "RESUME - Retrieving a blocked request",
     "weight": "350"
 }This topic describes the <span id="About_the_RESUME_Command"></span>RESUME
 command. This command retrieves, in server mode, a blocked send request

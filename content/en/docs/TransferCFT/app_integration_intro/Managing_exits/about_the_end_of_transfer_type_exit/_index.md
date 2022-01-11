@@ -1,6 +1,6 @@
 {
     "title": "About end-of-transfer exits",
-    "linkTitle": "End&#45;of&#45;transfer exit",
+    "linkTitle": "End-of-transfer exit",
     "weight": "330"
 }The exit interface provides
 the user program with a structure containing information relating to the

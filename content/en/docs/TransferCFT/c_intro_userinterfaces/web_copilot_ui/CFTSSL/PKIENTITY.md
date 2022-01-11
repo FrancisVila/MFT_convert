@@ -1,6 +1,6 @@
 {
     "title": "Entities - PKIENTITY",
-    "linkTitle": "Entities &#45; PKIENTITY",
+    "linkTitle": "Entities - PKIENTITY",
     "weight": "240"
 }This topic describes how to create lists of certificate authority IDs in the PKI database.
 

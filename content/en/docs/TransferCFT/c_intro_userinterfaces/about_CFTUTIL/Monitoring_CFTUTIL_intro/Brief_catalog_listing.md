@@ -1,6 +1,6 @@
 {
     "title": "LISTCAT - Brief/Full catalog listings",
-    "linkTitle": "LISTCAT &#45; Brief catalog listing",
+    "linkTitle": "LISTCAT - Brief catalog listing",
     "weight": "310"
 }<span id="Displayed_catalog_information"></span>
 

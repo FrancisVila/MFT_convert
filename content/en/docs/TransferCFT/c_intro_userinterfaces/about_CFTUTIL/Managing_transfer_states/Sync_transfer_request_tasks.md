@@ -1,6 +1,6 @@
 {
     "title": "Synchronous transfer request examples",
-    "linkTitle": "SWAITCAT &#45; Examples",
+    "linkTitle": "SWAITCAT - Examples",
     "weight": "390"
 }This topic presents synchronous transfer request examples using the WSTATES or WPHASES/WPHASESTEPS parameters with the SEND/RECV command, or the SWAITCAT command.
 

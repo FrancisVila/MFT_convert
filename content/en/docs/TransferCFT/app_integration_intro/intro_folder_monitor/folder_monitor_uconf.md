@@ -1,6 +1,6 @@
 {
     "title": "Deprecated folder monitoring (UCONF)",
-    "linkTitle": "Deprecated folder monitoring &#40;UCONF&#41;",
+    "linkTitle": "Deprecated folder monitoring (UCONF)",
     "weight": "230"
 }This section provides a description of how to use Transfer CFT UCONF values to manage folder monitoring. This method is no longer recommended; you should use the CFTFOLDER object method.
 

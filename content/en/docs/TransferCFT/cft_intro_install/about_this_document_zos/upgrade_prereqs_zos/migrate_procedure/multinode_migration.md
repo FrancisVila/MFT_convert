@@ -1,6 +1,6 @@
 {
     "title": "Migrate a multi-node architecture",
-    "linkTitle": "Multi&#45;node migration",
+    "linkTitle": "Multi-node migration",
     "weight": "250"
 }This section describes the upgrade of an instance of Transfer CFT z /OS configured in multi-node. Perform the sames steps as in the [non multi-node environment](../), with the only difference being the MIGRCAT, MIGRCOM and PMIGR2 procedures as described in the following sections.
 

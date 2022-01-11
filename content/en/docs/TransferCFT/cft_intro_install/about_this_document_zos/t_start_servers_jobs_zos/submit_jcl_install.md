@@ -1,6 +1,6 @@
 {
     "title": "Submit the JCL ",
-    "linkTitle": "Submit the JCL install&#40;XSUPPORA&#41;",
+    "linkTitle": "Submit the JCL install(XSUPPORA)",
     "weight": "200"
 }The JCL XSUPPORA extracts information about the current instance for Axway Support, a very useful JCL. This JCL must be able to run for all Transfer CFT instances (Test, PREPROD, PROD).
 

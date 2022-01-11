@@ -1,6 +1,6 @@
 {
     "title": "Manage multi-node  ",
-    "linkTitle": "Manage multi&#45;node",
+    "linkTitle": "Manage multi-node",
     "weight": "250"
 }This section describes how to set up and manage your multi-node environment.
 

@@ -1,5 +1,5 @@
 {
-    "title": "_HOME_",
+    "title": "&HOME",
     "linkTitle": "_HOME_",
     "weight": "1460"
 }### &HOME

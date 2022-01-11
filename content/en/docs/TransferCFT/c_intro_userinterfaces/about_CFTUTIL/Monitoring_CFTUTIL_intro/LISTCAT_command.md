@@ -1,6 +1,6 @@
 {
     "title": "sLISTCAT - List catalog  contents",
-    "linkTitle": "LISTCAT &#45; List catalog contents",
+    "linkTitle": "LISTCAT - List catalog contents",
     "weight": "300"
 }This page describes how to list the catalog contents using command
 line operations. The LISTCAT command is used to query the information

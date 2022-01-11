@@ -1,6 +1,6 @@
 {
     "title": "Catalog - CFTCAT ",
-    "linkTitle": "Catalog &#45; CFTCAT ",
+    "linkTitle": "Catalog - CFTCAT ",
     "weight": "190"
 }The catalog logs all information relative to transfer requests. Use this command to describe the way the catalog is
 managed: file, scanning mode, retention time before purge, and so on.

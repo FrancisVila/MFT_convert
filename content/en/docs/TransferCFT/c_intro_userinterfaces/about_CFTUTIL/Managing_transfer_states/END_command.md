@@ -1,6 +1,6 @@
 {
     "title": "END - Confirm the end of processing",
-    "linkTitle": "END &#45; Change transfer state",
+    "linkTitle": "END - Change transfer state",
     "weight": "310"
 }You can use the END command to declare
 that the processing script

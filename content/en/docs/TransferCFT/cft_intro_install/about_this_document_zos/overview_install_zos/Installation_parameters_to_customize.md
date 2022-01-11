@@ -1,6 +1,6 @@
 {
     "title": "Start A00CUSTO to customize installation files",
-    "linkTitle": " Customize installation files &#40;A00CUSTO&#41;",
+    "linkTitle": " Customize installation files (A00CUSTO)",
     "weight": "200"
 }<span id="Customizing JCL A00CUSTO parameters"></span><span id="kanchor77"></span>
 

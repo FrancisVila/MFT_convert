@@ -1,6 +1,6 @@
 {
     "title": "Standard installation (A05ALL )",
-    "linkTitle": "Standand installation &#40;A05ALL &#41;",
+    "linkTitle": "Standand installation (A05ALL )",
     "weight": "210"
 }In this section you run A05ALL for a standard installation.
 

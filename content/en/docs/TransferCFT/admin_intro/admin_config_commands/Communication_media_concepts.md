@@ -1,6 +1,6 @@
 {
     "title": "Communication  media ",
-    "linkTitle": "CFTCOM &#45; Communication media ",
+    "linkTitle": "CFTCOM - Communication media ",
     "weight": "250"
 }-   Command syntax
     [CFTCOM](../../../c_intro_userinterfaces/command_summary#CFTCOM)

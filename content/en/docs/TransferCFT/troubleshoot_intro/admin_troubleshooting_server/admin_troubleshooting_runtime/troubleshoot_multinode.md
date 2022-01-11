@@ -1,6 +1,6 @@
 {
     "title": "Troubleshoot multi-node",
-    "linkTitle": "Troubleshoot multi&#45;node",
+    "linkTitle": "Troubleshoot multi-node",
     "weight": "450"
 }## Multi-node starts but is not functional
 

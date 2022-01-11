@@ -1,5 +1,5 @@
 {
-    "title": "ciphlist",
+    "title": "CIPHLIST",
     "linkTitle": "ciphlist",
     "weight": "400"
 }<span id="ciphlist"></span>

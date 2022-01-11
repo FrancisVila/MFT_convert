@@ -1,6 +1,6 @@
 {
     "title": "CFTRECV  - Receive templates",
-    "linkTitle": "CFTRECV &#45; Default receive templates",
+    "linkTitle": "CFTRECV - Default receive templates",
     "weight": "420"
 }This topic describes the {{< TransferCFT/transfercftname  >}}
 receive template. You can use the CFTRECV object to:

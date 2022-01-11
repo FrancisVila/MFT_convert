@@ -1,6 +1,6 @@
 {
     "title": "Multi-node architecture",
-    "linkTitle": "Multi&#45;node architecture",
+    "linkTitle": "Multi-node architecture",
     "weight": "160"
 }This topic describes the Transfer CFT multi-node feature, which provides you with horizontal scalability and high availability for failovers. See the <a href="" class="MCTextPopup popup popupHead">Active/active</a> description for conceptual information.
 

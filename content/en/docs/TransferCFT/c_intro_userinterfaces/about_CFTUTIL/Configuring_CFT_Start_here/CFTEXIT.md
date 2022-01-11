@@ -1,6 +1,6 @@
 {
     "title": "About exit parameters - CFTEXIT",
-    "linkTitle": "CFTEXIT &#45; Exit tasks",
+    "linkTitle": "CFTEXIT - Exit tasks",
     "weight": "350"
 }<span id="Activating_an_exit_command_line"></span>This topic describes the
 CFTEXIT command, used to start an EXIT task.

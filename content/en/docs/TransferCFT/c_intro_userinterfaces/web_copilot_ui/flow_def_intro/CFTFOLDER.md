@@ -1,6 +1,6 @@
 {
     "title": "Folder monitoring CFTFOLDER",
-    "linkTitle": "Folder monitoring &#45; CFTFOLDER",
+    "linkTitle": "Folder monitoring - CFTFOLDER",
     "weight": "270"
 }This section provides a description of how to use Transfer CFT objects to manage folder monitoring.
 

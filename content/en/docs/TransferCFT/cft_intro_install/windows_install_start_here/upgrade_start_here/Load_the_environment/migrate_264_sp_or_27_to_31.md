@@ -1,6 +1,6 @@
 {
     "title": "Migrating Transfer CFT 2.6.4 SP2 or 2.7 to 3.9",
-    "linkTitle": "Migrate from Transfer CFT 2.6.4&#45;SP2 or 2.7 ",
+    "linkTitle": "Migrate from Transfer CFT 2.6.4-SP2 or 2.7 ",
     "weight": "260"
 }This topic describes how to migrate Transfer CFT 2.6.4 SP2, or higher, or 2.7 to version {{< TransferCFT/componentversion  >}}. Before starting this migration procedure, review the prerequisites and information on [loading the environment](../../../../unix_install_start_here/upgrade_start_here/load_the_environment). Additionally, you must have installed your new {{< TransferCFT/componentshortname  >}} {{< TransferCFT/releasenumber  >}} and applied the most recent service pack.
 

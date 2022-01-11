@@ -1,6 +1,6 @@
 {
     "title": "Configure receive mode for files (IFS)",
-    "linkTitle": "Configure receive mode &#40;IFS&#41;",
+    "linkTitle": "Configure receive mode (IFS)",
     "weight": "230"
 }## File types
 

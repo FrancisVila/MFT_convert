@@ -1,6 +1,6 @@
 {
     "title": "Manually create internal data files",
-    "linkTitle": "CFTFILE &#45; Create database files",
+    "linkTitle": "CFTFILE - Create database files",
     "weight": "260"
 }The CFTFILE command is used to create, replace, or delete Transfer CFT
 files. These initial files define the most basic parameters for the Transfer

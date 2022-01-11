@@ -1,6 +1,6 @@
 {
     "title": "CFTPROT  - Transfer protocols",
-    "linkTitle": "Protocol &#45; CFTPROT",
+    "linkTitle": "Protocol - CFTPROT",
     "weight": "220"
 }The CFTPROT command defines a file transfer protocol application. This page describes the parameter setting command, and explains the parameters that are negotiated with the remote partner at the time the protocol connection is established.
 

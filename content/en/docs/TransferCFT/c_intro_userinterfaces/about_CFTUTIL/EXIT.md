@@ -1,6 +1,6 @@
 {
     "title": "EXIT - Quit CFTUTIL",
-    "linkTitle": "EXIT &#45; Quit CFTUTIL",
+    "linkTitle": "EXIT - Quit CFTUTIL",
     "weight": "230"
 }The command EXIT quits the CFTUTIL program.
 

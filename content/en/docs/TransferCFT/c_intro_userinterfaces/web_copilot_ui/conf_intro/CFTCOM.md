@@ -1,6 +1,6 @@
 {
     "title": "Communication media - CFTCOM  ",
-    "linkTitle": "Communication media &#45; CFTCOM ",
+    "linkTitle": "Communication media - CFTCOM ",
     "weight": "210"
 }This topic describes the CFTCOM object and parameters. You can use this
 command to define the communication media used by Transfer CFT.

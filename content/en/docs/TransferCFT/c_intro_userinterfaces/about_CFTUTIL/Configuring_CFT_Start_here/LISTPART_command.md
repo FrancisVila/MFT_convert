@@ -1,6 +1,6 @@
 {
     "title": "Listing  partner details",
-    "linkTitle": "LISTPART &#45; List partner details",
+    "linkTitle": "LISTPART - List partner details",
     "weight": "490"
 }This topic describes how to use the LISTPART command to view partner
 characteristics.

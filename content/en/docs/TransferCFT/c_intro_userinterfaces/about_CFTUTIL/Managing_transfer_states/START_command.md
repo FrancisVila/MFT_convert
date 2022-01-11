@@ -1,6 +1,6 @@
 {
     "title": "START  - Restart transfers",
-    "linkTitle": "START &#45; Restarting transfers",
+    "linkTitle": "START - Restarting transfers",
     "weight": "360"
 }This topic describes the START command and its parameters.
 

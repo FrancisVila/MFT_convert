@@ -1,6 +1,6 @@
 {
     "title": "KEEP - Suspend  transfers",
-    "linkTitle": "KEEP &#45; Suspending transfers",
+    "linkTitle": "KEEP - Suspending transfers",
     "weight": "330"
 }This topic describes the KEEP command, which is used to <span id="About_the_KEEP_Command"></span>suspend
 one or all of the send, or one or all of the receive, transfers with selected

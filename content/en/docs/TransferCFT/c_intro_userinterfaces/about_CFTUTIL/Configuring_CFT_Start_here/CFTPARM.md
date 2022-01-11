@@ -1,6 +1,6 @@
 {
     "title": "CFTPARM  - General parameters",
-    "linkTitle": "CFTPARM &#45; General parameters",
+    "linkTitle": "CFTPARM - General parameters",
     "weight": "390"
 }The <span id="Defining_CFTPARM"></span>CFTPARM object is used to specify parameters
 that control the operation of Transfer CFT as a whole and to select other

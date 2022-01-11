@@ -1,6 +1,6 @@
 {
     "title": "Configure multi-node simultaneous transfers",
-    "linkTitle": "Configure multi&#45;node simultaneous transfers",
+    "linkTitle": "Configure multi-node simultaneous transfers",
     "weight": "270"
 }The Transfer CFT session management in a multi-node architecture differs from a standalone implementation. This section describes parameters you can use to customize a multi-node environment, and offers some recommendations.
 

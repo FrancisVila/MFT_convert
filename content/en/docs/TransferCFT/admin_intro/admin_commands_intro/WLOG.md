@@ -1,6 +1,6 @@
 {
     "title": "WLOG - Write to the log file",
-    "linkTitle": "WLOG &#45; Writing to the log",
+    "linkTitle": "WLOG - Writing to the log",
     "weight": "350"
 }Use the WLOG command to request permission to write to the log file. This command is used to ask Transfer CFT to write an information
 message (CFTR16I) in the LOG file.

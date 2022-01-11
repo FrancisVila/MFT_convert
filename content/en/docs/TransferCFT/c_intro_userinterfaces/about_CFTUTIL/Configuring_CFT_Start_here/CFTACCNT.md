@@ -1,6 +1,6 @@
 {
     "title": "Accounting records - CFTACCNT  ",
-    "linkTitle": "CFTACCNT &#45; Accounting records transfer",
+    "linkTitle": "CFTACCNT - Accounting records transfer",
     "weight": "280"
 }<span id="About_CFTACCNT"></span>This page describes the <span id="kanchor47"></span>CFTACCNT command.
 

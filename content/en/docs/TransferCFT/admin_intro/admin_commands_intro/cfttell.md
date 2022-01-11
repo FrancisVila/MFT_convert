@@ -1,6 +1,6 @@
 {
     "title": "Using cfttell",
-    "linkTitle": "CFTTELL &#45; Retrieve system information",
+    "linkTitle": "CFTTELL - Retrieve system information",
     "weight": "270"
 }UNIX and Windows only
 

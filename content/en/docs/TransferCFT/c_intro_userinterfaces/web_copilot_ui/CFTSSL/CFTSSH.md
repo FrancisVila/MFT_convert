@@ -1,6 +1,6 @@
 {
     "title": "CFTSSH - Security profile",
-    "linkTitle": "SSH Security Profiles &#45; CFTSSH",
+    "linkTitle": "SSH Security Profiles - CFTSSH",
     "weight": "200"
 }Use the CFTSSH command to describe a security profile.
 

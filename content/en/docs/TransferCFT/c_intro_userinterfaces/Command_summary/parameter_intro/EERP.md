@@ -1,5 +1,5 @@
 {
-    "title": "eerp",
+    "title": "EERP",
     "linkTitle": "eerp",
     "weight": "810"
 }<span id="EERP"></span>

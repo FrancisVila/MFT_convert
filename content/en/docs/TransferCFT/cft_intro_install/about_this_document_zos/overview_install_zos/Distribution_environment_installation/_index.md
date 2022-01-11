@@ -1,6 +1,6 @@
 {
     "title": "Non-SMP/E: Create the distribution environment ",
-    "linkTitle": "Non&#45;SMP/E: create distribution environment",
+    "linkTitle": "Non-SMP/E: create distribution environment",
     "weight": "170"
 }This section describes how to install the **<span id="kanchor56"></span>distribution** **environment**. After installing the distribution environment, you should not need to modify it. Later you will use the installed distribution environment to create a Transfer CFT <span id="kanchor57"></span>[*instance* *environment*](t_install_instance_envr_zos) (runtime). The term instance replaces the former notion of a *target* environment in Transfer CFT.
 

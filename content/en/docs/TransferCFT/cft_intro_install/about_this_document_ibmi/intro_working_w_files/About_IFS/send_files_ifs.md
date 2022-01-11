@@ -1,6 +1,6 @@
 {
     "title": "Configure send mode on IFS",
-    "linkTitle": "Configure send mode &#40;IFS&#41;",
+    "linkTitle": "Configure send mode (IFS)",
     "weight": "220"
 }## File types
 

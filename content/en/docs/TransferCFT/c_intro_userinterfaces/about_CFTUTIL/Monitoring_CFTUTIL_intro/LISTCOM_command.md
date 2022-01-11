@@ -1,6 +1,6 @@
 {
     "title": "LISTCOM - List the communication medium records",
-    "linkTitle": "LISTCOM &#45; List COM",
+    "linkTitle": "LISTCOM - List COM",
     "weight": "330"
 }This topic describes how to list the communication media records for
 FILE type communication medium.
