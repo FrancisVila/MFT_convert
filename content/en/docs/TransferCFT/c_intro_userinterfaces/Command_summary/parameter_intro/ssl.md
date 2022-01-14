@@ -25,7 +25,7 @@ Identifier for the CFTSSL command that
 is used as security profiles in client mode or specifying additional checks
 in server mode.
 
-About CFTPART and SSL
+**About CFTPART and SSL**
 
 The SSL parameter is used to associate a security profile with a partner definition.
 
@@ -33,7 +33,7 @@ For incoming calls, the server mode, the SSL parameter value must correspond to 
 
 For outgoing calls (client mode), the SSL parameter value must correspond to the identifier of a DIRECT=CLIENT SSL command. \[FOR DETAILS see CFTPART\]
 
-Server mode features
+**Server mode features**
 
 Due to SSL protocol properties, the security profile in server mode must be known when the incoming network connection is established, prior to protocol-level identification of the partner. Therefore, the security profile in server mode is declared in the CFTPROT object.
 

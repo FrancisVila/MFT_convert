@@ -8,8 +8,8 @@
 
 #### DISPLAY
 
-\[ FILE
-= filename \]
+**\[ FILE
+= filename \]**
 
 Enter filename.
 

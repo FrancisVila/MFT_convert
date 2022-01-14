@@ -105,7 +105,7 @@ You can also use either [Central Governance](https://docs.axway.com/bundle/Centr
 
 ## Service mode
 
-You can retroactively install Service mode for {{< TransferCFT/componentshortname  >}}. Use the Installer **Configure** mode to install and uninstall the services for the {{< TransferCFT/componentshortname  >}} Server and {{< TransferCFT/componentshortname  >}} Copilot. To launch the Installer in **Configure** mode, from the **Start** menu select **Axway Software &gt; Axway <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> &gt; Configure**.
+You can retroactively install Service mode for {{< TransferCFT/componentshortname  >}}. Use the Installer **Configure** mode to install and uninstall the services for the {{< TransferCFT/componentshortname  >}} Server and {{< TransferCFT/componentshortname  >}} Copilot. To launch the Installer in **Configure** mode, from the **Start** menu select **Axway Software &gt; Axway {{< TransferCFT/componentshortname  >}} &gt; Configure**.
 
 <span id="Start2"></span>
 

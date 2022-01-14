@@ -91,7 +91,8 @@ in the CFTPART command:
     then only the password will be requested each time a connection is made
     to the partner.  
 
-Example  
+**Example  
+**
 
 `CFTPART ID=PART1`  
 `NSPART=*`  
@@ -123,38 +124,23 @@ Exit example
 Exit-list
 : on server
 
-cftexit id      = exitl,
-
-reserv = 8192,
-
-prog = cftexl,
-
-language = c,
-
-mode = replace
-
-cftsend id = texit,
-
-impl = yes,
-
-exit = exitl,
-
-mode = replace
+`cftexit id      = exitl,`
+`reserv = 8192,`
+`prog = cftexl,`
+`language = c,`
+`mode = replace`
+`cftsend id = texit,`
+`impl = yes,`
+`exit = exitl,`
+`mode = replace`
 
 Exit-list remote partner side
 
-cftrecv id = texit,
-
-fname = '&idt.rcv',
-
-fcode = binary,
-
-frecfm = f,
-
-faction = delete,  
-  
-ftype     = b,
-
-     mode = replace
+`cftrecv id = texit,`
+`fname = '&idt.rcv',`
+`fcode = binary,`
+`frecfm = f,`
+`faction = delete,ftype     = b,`
+`     mode = replace`
 
  

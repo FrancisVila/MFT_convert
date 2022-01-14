@@ -10,7 +10,7 @@ Managed File Transfer services, using a blend of Axway products, can centralize 
 
 You can use Central Governance in your MFT architecture to easily create and deploy flows. You then trigger your flows at the system level.
 
-![$2]($1)
+![Multiple Transfer CFTs can send events from the data exchange environment towards Central Governance](/Images/TransferCFT/data_exchange_env.png)
 
 > **Note**
 >

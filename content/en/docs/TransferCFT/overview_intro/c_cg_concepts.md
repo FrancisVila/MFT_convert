@@ -16,7 +16,7 @@ offers the following key features:
 
 The following diagram illustrates a simplified view of the architecture.
 
-![$2]($1)
+![High level view of Central Governance layer over a group of Transfer CFTs](/Images/TransferCFT/2013_g_CG_architecture_draft1.png)
 
 You can deploy a single Central Governance instance with one computer per network. The system supports active/passive resiliency, and can bring another instance of Central Governance online if the primary fails.
 

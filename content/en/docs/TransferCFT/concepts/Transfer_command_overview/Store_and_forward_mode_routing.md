@@ -83,10 +83,8 @@ the {{< TransferCFT/componentshortname  >}} on the store and forward site is as 
 There are two ways for the sender to initiate a store and forward transfer:
 
 - Define the final partner in the sender's configuration and use only the partner in the SEND command. Using this method, the final partner definition includes both the relay  (IPART) and has the OMINTIME and OMAXTIME values set to 0.  
-
-    cftpart id=&lt;FINAL PARTNER>, ipart=&lt;RELAY>, omintime=0, omaxtime=0,...
-
-    send part=&lt;FINAL PARTNER>,...
+    `cftpart id=<FINAL PARTNER>,  ipart=<RELAY>, omintime=0, omaxtime=0,...`
+    `send part=<FINAL PARTNER>,...`
 
 <!-- -->
 
@@ -146,9 +144,8 @@ On completion of transfer,
 or in the event of error, Transfer CFT offers the possibility of executing
 procedures. You can use the typical [symbolic variables](../../../c_intro_userinterfaces/command_summary/symbolic_variables) for these types of procedures.
 
-Processing possibilities in the store and forward mode
-
-![]($1)
+**Processing possibilities in the store and forward mode**
+**![](/Images/TransferCFT/s_and_f_processing.PNG)**
 
 ### Forced store and forward processing with COMMUT=PART
 
@@ -167,7 +164,7 @@ The initial site establishes the connection with the immediate store and forward
 
 This process repeats as many times as needed until reaching the final site.
 
-![]($1)
+![](/Images/TransferCFT/temp_commut_part.png)
 
 The REPLY command can be sent when the end-of-transfer procedure is executed (EXECRF). An acknowledgement message can be transferred also via all the intermediate sites until it reaches the initial partner (IPART).
 
@@ -298,8 +295,7 @@ cftrecv id=broadcast,fname=pub/broadcast.rcv,faction=delete
 cftpart id=a,nspart=c, ipart=b, omintime=0, omaxtime=0,prot=pesitssl,sap=1762
  
 ```
-
-Testing the use case
+**Testing the use case**
 
 From the initiator site A, execute:
 

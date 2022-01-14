@@ -26,45 +26,27 @@ For example, to run the `myscript.sh` script using this method:
 ```
 cftsend id=flow01, exec='exec/myscript.sh'
 ```
-
-Example of a template processing script
-
+**Example of a template processing script**
 ```
 CFTUTIL WLOG MSG="execute processing script for the &IDTU transfer "
 CFTUTIL END PART=&PART, IDTU=&IDTU
 ```
-
-Example of the corresponding temporary file to execute
-
+**Example of the corresponding temporary file to execute**
 ```
 CFTUTIL WLOG MSG="execute processing script for the A0000001 transfer "
 CFTUTIL END PART=PART01, IDTU=A0000001
 ```
-
-Operating system differences
+**Operating system differences**
 
 Depending on the operating system, the temporary file is treated as follows:
 
 - Windows: The temporary file is automatically deleted.
-
 - z/OS: The temporary file is automatically deleted.
-
 - IBM i: The temporary file is automatically deleted.
-
-- UNIX: You must add the following lines at the end of the template processing script:
-
-    rm $0
-
-    rm $0.err
-
+- UNIX: You must add the following lines at the end of the template processing script: `rm $0 ``rm $0.err`
 - HP NonStop native environment: You must perform the following steps to remove the temporary file:
     &lt;ul>&lt;li>#PURGE \[#IN\]&lt;/li>&lt;li>The same BTPURGE procedure as in the previous version is delivered and can be executed&lt;/li>&lt;span class="code">RUN &lt;subvolume>UP.BTPURGE \[#DEFAULTS\]&lt;/span>&lt;/ul>&lt;/li>
-
-- HP NonStop OSS environment: You must add the following lines at the end of the template processing script:
-
-    rm $0
-
-    rm $0.err
+- HP NonStop OSS environment: You must add the following lines at the end of the template processing script: `rm $0 ``rm $0.err`
 
 <span id="Directly"></span>
 
@@ -87,8 +69,7 @@ To call a program, for example CFTUTIL, you can use a similar syntax as shown he
 ```
 CFTSEND id=flow01, fname=myfile, exec="cmd:**CFTUTIL** end part=&PART, idt=&IDT, direct=SEND"
 ```
-
-Limitations Unix only
+**Limitations Unix only**
 
 If a command is incorrect and cannot be executed, the transfer remains in the phasestep C. Possible reasons for this include:
 
@@ -159,8 +140,7 @@ CFTUTIL END part=&PART,idtu=&IDTU,DIAGC="intermediate checkpoint number 1 “
 
 In your script you can also update values, for example the FNAME. However, the initial FNAME is lost in the catalog and replaced by the new one, and is only available in the log file as shown below.
 
-Example
-
+**Example**
 ```
 CFTUTIL end part=&PART,idtu=&IDTU,FNAME=NEW_FNAME
 ...
@@ -172,8 +152,7 @@ CFTR12I END Treated for USER MY_CFT : FNAME value was "pub/FTEST" and is now "NE
 
 When you execute a CFTUTIL HALT or CFTUTIL KEEP, you can set the DIAGP and DIAGC so that when you restart the script it executes specific actions depending on the DIAGP and DIAGC that you defined.
 
-Example
-
+**Example**
 ```
 CFTUTIL HALT part=&PART,idtu=&IDTU,DIAGP=”Error 1”,DIAGC=”Connection lost”
 CFTUTIL KEEP part=&PART,idtu=&IDTU,DIAGP=”Error 404”,DIAGC=”File not found”

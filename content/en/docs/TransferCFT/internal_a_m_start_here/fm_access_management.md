@@ -4,7 +4,7 @@
     "weight": "150"
 }You can use {{< TransferCFT/flowmanager  >}} to define and control Transfer CFT access management as described in the following sections.
 
-How it works
+**How it works**
 
 If you have opted to use the {{< TransferCFT/flowmanager  >}} for {{< TransferCFT/transfercftname  >}} access management, after configuring both {{< TransferCFT/transfercftname  >}} and {{< TransferCFT/flowmanager  >}}:
 
@@ -21,9 +21,9 @@ However, if you are an `am.superuser` user, {{< TransferCFT/transfercftname  >}}
 
 See also, {{< TransferCFT/flowmanager  >}} *Security Guide &gt;*[Predefined roles](https://docs.axway.com/bundle/FlowManager_20_allOS_en_HTML5/page/predefined_roles.html) and [Predefined privileges](https://docs.axway.com/bundle/FlowManager_20_allOS_en_HTML5/page/predefined_privileges.html) (requires account login).
 
-![]($1)
+![](/Images/TransferCFT/cg_am.jpg)
 
-Limitations
+**Limitations**
 
 - {{< TransferCFT/hflongproductname >}} ROLES are stored on {{< TransferCFT/hflongproductname >}} in upper case. This means that if you create roles **XXX** and **Xxx** on {{< TransferCFT/flowmanager >}}, there is only one ROLE in {{< TransferCFT/hflongproductname >}}, which is `ID=XXX`.
 
@@ -104,7 +104,7 @@ CFTPRIV      ID          = 'MYPRIV1',
 
 Conditions allow you to assign finer control on resources and actions by specifying a logical condition that must be true to authorize the action.
 
-Examples
+**Examples**
 
 In these examples `PART `and `ID `are properties of the resource being checked. As you can see, you can use parenthesis and logical operators `&&` (AND) and `||` (OR).
 
@@ -167,10 +167,10 @@ The following table is an exhaustive list of all properties for all resources. T
 | SERVICE:CFTSRV | STARTUP, SHUTDOWN |   |
 | SERVICE:COM | DELETE, VIEW |   |
 |   |   |   |
-| COMMAND:EXTRACT | EXECUTE |   |
-| COMMAND:MQUERY | EXECUTE |   |
-| COMMAND:TURN | EXECUTE |   |
-| COMMAND:CFTSUPPORT | EXECUTE |   |
+| **COMMAND:EXTRACT**  | EXECUTE |   |
+| **COMMAND:MQUERY**  | EXECUTE |   |
+| **COMMAND:TURN**  | EXECUTE |   |
+| **COMMAND:CFTSUPPORT**  | EXECUTE |   |
 | TRANSFER | CREATE, DELETE, VIEW, EDIT, CANCEL, RESUME, PAUSE, EXECUTE, SUBMIT, END, VIEWIFLE, EDITFILE, DELETEFILE | IDAPPL, ID, PART, SPART, RPART, IPART, TYPE, DIRECT, MODE, FNAME, MESSAGE, SUSER, RUSER, SAPPL, RAPPL, NFNAME |
 | AM:RIGHTS <sup>(4)</sup> | VIEW_SELF, VIEW_OTHERS | ID |
 | FILTER:CATALOG | CREATE, DELETE, VIEW, EDIT | ID |
@@ -210,10 +210,10 @@ In this use case, you assign the user a role that references a privilege having 
 The following is an example of the {{< TransferCFT/transfercftname  >}} configuration for this use case (the ROLE must exist in {{< TransferCFT/flowmanager  >}}, and be available for required users):
 
 ```
-CFTROLE      ID          = '',
+CFTROLE      ID          = 'TRANSFER-ROLE',
              COMMENT     = '',
 /\*           ALIASES     = ( ) ,\*/
-             PRIVS       = ( '',
+             PRIVS       = ( 'PRIV-XFER-SPE',
                               'PRIV-CONN-INTERFACES',
                               'CONFIGURATION:CFTCOM_VIEW',
                               'CONFIGURATION:CFTPARM_VIEW',
@@ -250,7 +250,7 @@ CFTROLE      ID          = '',
                               'AM:RIGHTS_VIEW_SELF'),
               MODE        = 'REPLACE'
  
-CFTPRIV       ID          = '',
+CFTPRIV       ID          = 'PRIV-XFER-SPE',
               COMMENT     = 'PRIV limits transfers - no delete condition',
               RESOURCE    = 'TRANSFER',
               ACTIONS     = ( 'CREATE',
@@ -279,7 +279,7 @@ A user with this privilege can only connect to a Transfer CFT server whose UCONF
 The following is an example of the {{< TransferCFT/transfercftname  >}} configuration for this use case (the ROLE must exist in {{< TransferCFT/flowmanager  >}}, and be available for required users):
 
 ```
-CFTROLE      ID          = '',
+CFTROLE      ID          = 'ADMIN_ROLE',
               COMMENT     = 'Administrator role for Production Transfer CFT Windows',
                               'AM:RIGHTS_VIEW_ALL',
                               'CONFIGURATION:PKICER_ALL',
@@ -327,7 +327,7 @@ CFTROLE      ID          = '',
                               'COMMAND:CFTSUPPORT_ALL'),
               MODE        = 'REPLACE'
  
-CFTPRIV      ID          = '',
+CFTPRIV      ID          = 'PRIV-CONN-INTERFACES',
               COMMENT     = 'PRIV LIMITs the connection for a given Transfer CFT name',
              RESOURCE    = 'SERVICE:UI',
              ACTIONS     = ( 'CONNECT'),

@@ -20,7 +20,7 @@ initialization utility. Prior to running `cftinit`,` `you must stop both the Cop
 
 **Syntax**
 
-cftinit \[&lt;filename> \[&lt;filename>...\]\]
+`cftinit [<filename> [<filename>...]]`
 
 **Standard use**
 
@@ -58,7 +58,7 @@ CFT and its additional elements.
 
 **Syntax**
 
-cft start
+`cft start `
 
 **Standard use**
 
@@ -88,7 +88,7 @@ CFT.
 
 **Syntax**
 
-cft stop \[-kill\]
+`cft stop [-kill]`
 
 **Standard use**
 
@@ -111,8 +111,7 @@ CFT stopped correctly.
 If *cft stop* detects abnormal behavior during the shutdown phase,
 it displays the following message:
 
-% cft stop  
-Invalid state of {{< TransferCFT/componentshortname  >}}.
+`% cft stopInvalid state of  {{< TransferCFT/componentshortname >}}.`
 
 Use `Cft force-stop` to force {{< TransferCFT/componentshortname  >}} to shut down.
 
@@ -145,7 +144,7 @@ The `cftupdate` utility is used to update the configuration.
 
 **Syntax**
 
-cftupdate &lt;filename> \[&lt;filename> ...\]
+`cftupdate <filename> [<filename> ...]`
 
 > **Note**
 >

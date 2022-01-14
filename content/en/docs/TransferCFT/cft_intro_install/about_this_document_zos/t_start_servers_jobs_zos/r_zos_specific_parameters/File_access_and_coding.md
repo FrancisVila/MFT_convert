@@ -250,7 +250,7 @@ Delivered templates:
 - ..SAMPLE(CFTGDGS) (send GDG)
 - ..SAMPLE(CFTGDGR) (receive GDG)
 
-Related topics
+**Related topics**
 
 - [Delete rename and share files](../t_delete_and_rename_files_zos)
 - [Dynamically create files](../t_dynamically_create_files)

@@ -52,8 +52,8 @@ identifier,]
 
 ### Parameters
 
-\[DIRECT     = {BOTH
-| RECV | SEND}\]
+**\[DIRECT     = {BOTH
+| RECV | SEND}\]**
 
 Transmission direction.
 
@@ -66,15 +66,15 @@ Possible values are:
 - SEND:
     associates an owner with send transfers (CFTSEND/SEND)
 
-\[GROUPID     = {identifier
-| &GROUPID}\]
+**\[GROUPID     = {identifier
+| &GROUPID}\]**
 
 Identifier of the group that owns the transfer.
 
 When privileges are checked, if the value specified is &GROUPID,
 the variable is replaced by the GROUPID that created the transfer.
 
-ID     = identifier
+**ID     = identifier**
 
 Command identifier (eight characters).
 
@@ -94,8 +94,8 @@ command).
 The ? and/or \* wildcard characters may be used to represent any single
 character and any substring respectively.
 
-MODE     = {REPLACE
-| CREATE | DELETE}
+**MODE     = {REPLACE
+| CREATE | DELETE}**
 
 Operation to be executed.
 
@@ -108,8 +108,8 @@ Possible values are:
 - DELETE:
     deletes one or more records
 
-USERID     = {identifier
-| &USERID}
+**USERID     = {identifier
+| &USERID}**
 
 Identifier (8 characters) of the transfer owner.
 
@@ -197,7 +197,7 @@ contains the USER3 userid:
 
 #### Requester/Sender with CFTAPPL
 
-![]($1)
+![](/Images/TransferCFT/requester_sender_CFTAPPL.gif)
 
 #### Using the default CFTAPPL command
 
@@ -219,7 +219,7 @@ contains the USER3 userid:
 
 Requester/Sender with the Default CFTAPPL
 
-![]($1)
+![](/Images/TransferCFT/sender_rec_CFTAPPL_default.gif)
 
 <span id="Server_sender_configuration"></span>
 
@@ -243,9 +243,9 @@ contains the USER3 userid:
 - the user who submitted
     the SEND command becomes the owner of that command
 
-Requester/sender with CFTAPPL
+**Requester/sender with CFTAPPL**
 
-![]($1)
+![](/Images/TransferCFT/req_sender_with_CFTAPPL.gif)
 
 #### Using the Default CFTAPPL Command
 
@@ -260,10 +260,10 @@ command with the USER2 userid:
 On the server side, an implicit CFTSEND command corresponding to the
 same IDF contains the USER3 userid. USER3 is the owner of the transfer.
 
-Server/sender with the default CFTAPPL
-SEND
+**Server/sender with the default CFTAPPL
+SEND**
 
-![]($1)
+![](/Images/TransferCFT/server_sender_CFTAPPL.gif)
 
 The same processing takes place when the IMPL=YES option is set.
 

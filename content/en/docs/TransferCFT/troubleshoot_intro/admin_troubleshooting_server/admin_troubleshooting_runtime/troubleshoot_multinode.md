@@ -4,15 +4,15 @@
     "weight": "450"
 }## Multi-node starts but is not functional
 
-Symptom
+**Symptom**
 
 In a multi-node configuration, if a host address is incorrectly set in uconf, COPSMNG and all Transfer CFT tasks start correctly. However, CFTPRX cannot establish connection with the other nodes because it is set to the incorrect address.
 
-How to diagnose
+**How to diagnose**
 
 Once all nodes are started, check the log for this error message "CFTPRX error \_ Failed to connect to NODE0".
 
-How to fix
+**How to fix**
 
 Reconfigure the host address as follows:
 

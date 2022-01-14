@@ -12,8 +12,8 @@ Specific SSL, transport security, parameters are described in the topic
 [Configuring
 Transport Security: Start here](../../../../transport_security_start_here/configuring_transport_security_start_here).
 
-Related
-topics
+**Related
+topics**
 
 - Command syntax
     [CFTPARM](../../../command_summary#CFTPARM)
@@ -86,7 +86,7 @@ with your operating system.
 This topic lists and describes an example of the CFTPARM object using
 command line operations to define the CFTPARM object.
 
-Example
+**Example**
 
 The CFTCAT, CFTCOM, CFTLOG, CFTACCNT, CFTNET and CFTPROT
 parameter setting objects are not taken into account, during execution,

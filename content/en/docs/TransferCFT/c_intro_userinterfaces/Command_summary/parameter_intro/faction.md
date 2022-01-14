@@ -10,7 +10,7 @@
 
 #### CFTSEND, SEND
 
-**\[FACTION = {
+**\[FACTION = {NONE
 | DELETE | ERASE | ARCHIVE }\]**
 
 Action on the file after a send transfer:
@@ -25,7 +25,7 @@ Action on the file after a send transfer:
     file)
 - **ARCHIVE**: the source file is moved to the file name specified in the ARCHIVEFNAME parameter when the transfer is completed. If the transfer fails, the file is not moved. If the target file already exists, it is overwritten.
 
-<span class="bold_in_para">FACTION limitations</span>
+**FACTION limitations**
 
 - ERASE is not supported when using a group of files in homogeneous mode, or when broadcasting (CFTDEST ).
 - DELETE is not supported when broadcasting (CFTDEST ).

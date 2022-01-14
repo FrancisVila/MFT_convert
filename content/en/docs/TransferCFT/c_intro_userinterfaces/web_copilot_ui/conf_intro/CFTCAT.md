@@ -26,8 +26,8 @@ In the user interface, you can customize the catalog columns and filters. From t
 
 ## Parameter descriptions
 
-Related
-topics
+**Related
+topics**
 
 - Command syntax
     [CFTCAT](../../../command_summary#CFTCAT)
@@ -59,8 +59,7 @@ topics
 | <a href="../../../command_summary/parameter_intro/wscan">WSCAN</a>  | Enter the frequency (in minutes) with which {{< TransferCFT/componentshortname  >}} scans the catalog file when restarting a transfer: • 5 (default value)<br/> • 1 to 60 |
 
 
-Example
-
+**Example**
 ```
 CFTCAT ID = IDCAT,
 FNAME = filename,
@@ -83,6 +82,6 @@ SX = 3
     1, which results in the catalog file being updated at each synchronization
     point of each transfer.
 
-Related topics
+**Related topics**
 
 - [PURGE - Purging the catalog](../../../../admin_intro/admin_commands_intro/purge_catalog)

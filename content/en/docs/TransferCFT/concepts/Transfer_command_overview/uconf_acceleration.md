@@ -107,7 +107,7 @@ Note that the new pTCP support is **not** compatible with the previously used ve
 
 For more information on supported platforms and transfer acceleration, refer to [Platform-specific functionality]().
 
-Related topics
+**Related topics**
 
 - [About the unified configuration](../../../admin_intro/uconf)
 - [Unified configuration (CFTUTIL)](../../../admin_intro/uconf/uconf_w_cftutil)

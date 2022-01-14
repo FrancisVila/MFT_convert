@@ -17,7 +17,7 @@ May be used to transfer a file to a partner whose system manages the
 block size concept (the list of these systems is indicated in the FBLKSIZE
 parameter).
 
-z/OS (MVS) only - PeSIT, PeSIT CFT/CFT
+**z/OS (MVS) only - PeSIT, PeSIT CFT/CFT**
 
 Use this field to define the block size of the file. Make sure that
 the partner supports the block size concept.

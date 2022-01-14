@@ -22,11 +22,11 @@ When you set a Transfer CFT network resource to use Secure Relay, all of the con
 
 The following diagram illustrates how Transfer CFT and Secure Relay interact with each other, as well as with the network.
 
-Network to DMZ overview
+**Network to DMZ overview**
 
-![$2]($1)
+![View of link between Transfer CFT and the Master Agent in the private network, with the Router Agent in the DMZ](/Images/TransferCFT/sr_new4.png)
 
-Legend
+**Legend**
 
 Data connections are a pool of multiplexed connections between the RA and the MA. There are 5 connections by default, which can be either clear text or SSL-ciphered connections, depending on the configuration.
 
@@ -40,9 +40,9 @@ Secure Relay is not aware of data sent to, or received from, Transfer CFT and re
 
 You can install {{< TransferCFT/componentlongname  >}} in an active/active architecture where you add multiple SecureRelay Router Agents behind a load balancer. The architecture could resemble the following diagram (SSL is not used in this example). See <a href="cft_sr_conf_multinode" class="MCXref xref">Secure Relay with a multi-node architecture</a> for details on setting up multiple Router Agents.
 
-![]($1)
+![](/Images/TransferCFT/sec_relay_multi_RA.png)
 
-![]($1)
+![](/Images/TransferCFT/sr_add_node.png)
 
 ## Prerequisites
 

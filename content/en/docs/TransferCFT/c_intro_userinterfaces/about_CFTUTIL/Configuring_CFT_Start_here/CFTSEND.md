@@ -5,8 +5,8 @@
 }This topic describes how to define the CFTSEND
 template. Use this command to SEND a file or files to a partner.
 
-Related
-topics
+**Related
+topics**
 
 - Command syntax
     [CFTSEND](../../../command_summary#CFTSEND)

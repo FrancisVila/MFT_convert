@@ -78,16 +78,15 @@ commands listed below.
 
 #### CFTPARM
 
-\[ID = identifier
-\]
+**\[ID = identifier
+\]**
 
 Identifier of the CFTPARM command.
 
 This value, passed as an activation parameter, describes a monitor configuration.
 
-Example
-
-CFTMAIN parm1
+**Example**
+`CFTMAIN parm1`
 
 {{< TransferCFT/componentshortname  >}} is started with the CFTPARM id = parm1. If no value is used,
 the monitor uses the default value 'IDPARM0'.
@@ -96,8 +95,8 @@ the monitor uses the default value 'IDPARM0'.
 
 #### CFTPART
 
-\[ID = identifier
-\]
+**\[ID = identifier
+\]**
 
 Local partner identifier.
 
@@ -105,8 +104,8 @@ Local partner identifier.
 
 #### CFTPROT
 
-\[ID =
-identifier \]
+**\[ID =
+identifier \]**
 
 CFTPROT command identifier.
 
@@ -117,8 +116,8 @@ taken by the CFTPARM PROT parameter.
 
 #### CFTLOG
 
-\[ID = identifier
-\]
+**\[ID = identifier
+\]**
 
 Identifier of the CFTLOG command.
 
@@ -126,8 +125,8 @@ Identifier of the CFTLOG command.
 
 #### CFTXLATE
 
-\[ID = identifier
-\]
+**\[ID = identifier
+\]**
 
 Translation table identifier.
 
@@ -138,8 +137,8 @@ of DIRECT, FCODE or NCODE are different.
 
 #### CFTRECV
 
-\[ID = identifier
-\]
+**\[ID = identifier
+\]**
 
 Local model file identifier (IDF)
 
@@ -158,8 +157,8 @@ store and forward site. If not, the store and forward is refused.
 
 #### CFTSEND
 
-\[ID = identifier
-\]
+**\[ID = identifier
+\]**
 
 Local
 identifier of the model file (IDF) to be sent.

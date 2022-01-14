@@ -6,7 +6,7 @@
 
 #### SEND, CFTSEND, RECV and CFTRECV    TYPE = FILE
 
-\[ FPAD = string \]
+**\[ FPAD = string \]**
 
 This parameter defines the padding character at the file level.
 

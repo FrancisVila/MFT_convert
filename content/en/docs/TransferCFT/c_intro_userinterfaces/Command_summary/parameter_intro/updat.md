@@ -8,7 +8,7 @@
 
 #### CFTCAT
 
-**\[UPDAT = {
+**\[UPDAT = {256
 | n}\]  **{0..32767}
 
 Number of synchronization points between two consecutive updates of

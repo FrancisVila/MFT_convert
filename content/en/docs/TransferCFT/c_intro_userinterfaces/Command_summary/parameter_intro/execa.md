@@ -6,7 +6,7 @@
 
 #### CFTDEST
 
-\[ EXECA = { <u>DEST</u> | PART | CHILDREN \] \]
+**\[ EXECA = { <u>DEST</u> | PART | CHILDREN \] \]**
 
 Acknowledgement procedure submit mode type.
 

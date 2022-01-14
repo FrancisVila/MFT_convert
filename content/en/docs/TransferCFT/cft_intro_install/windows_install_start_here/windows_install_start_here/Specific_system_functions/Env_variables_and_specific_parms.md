@@ -9,7 +9,7 @@ variables and the specific parameters used in {{< TransferCFT/componentshortname
 - In this list , the character ‘\*’ indicates all networks, meaning that the key word must be set in the CFTNET.CONF file for a given
     network.
 
-Variables
+**Variables**
 
 - CFT\_CSFN    (ve)
 - CFTAACCN    (ve)

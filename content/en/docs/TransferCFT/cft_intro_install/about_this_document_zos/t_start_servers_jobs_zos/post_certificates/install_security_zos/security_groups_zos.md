@@ -26,30 +26,14 @@ The only JOBs to be executed under the GRPMON group user must be the monitor sta
 
 For security reasons, no users other than those belonging to the GRPMON group must be able to execute the CFTMAIN program:
 
-PERMIT ‘CFTV2.LOADMAIN’  ID(GRPMON GRPCFT)  ACCESS(EXECUTE)
-
-SECINI, SECACT, SECOBJ, UCONF, PARM and PART file read access rights:
-
-PERMIT ‘CFTV2.\*’          ID(GRPMON)  ACCESS(READ)  
-PERMIT ‘CFTV2.SECINI’   ID(GRPMON)  ACCESS(READ)  
-PERMIT ‘CFTV2.SECACT’ ID(GRPMON)  ACCESS(READ)  
-PERMIT ‘CFTV2.SECOBJ’   ID(GRPMON)  ACCESS(READ)  
-PERMIT ‘CFTV2.PARM’   ID(GRPMON)  ACCESS(READ)  
-PERMIT ‘CFTV2.PART’        ID(GRPMON)  ACCESS(READ)
-
-COM, CATALOG, LOG and ACCNT file update access rights:
-
-PERMIT ‘CFTV2.COM’            ID(GRPMON)  ACCESS(UPDATE)  
-PERMIT ‘CFTV2.CATALOG’  ID(GRPMON)  ACCESS(UPDATE)  
-PERMIT ‘CFTV2.LOG1’         ID(GRPMON)  ACCESS(UPDATE)  
-PERMIT ‘CFTV2.ACCNT1’    ID(GRPMON)  ACCESS(UPDATE)  
-PERMIT ‘CFTV2.UCONF’    ID(GRPMON)  ACCESS(UPDATE)
-
-Read access rights for all procedure files (EXEC parameter):
-
-PERMIT ‘XXX.EXEC’  ID(GRPMON  … )  ACCESS(READ)
-
-Execution rights for all EXIT programs (CFTEXIT command):
+`PERMIT ‘CFTV2.LOADMAIN’  ID(GRPMON GRPCFT)  ACCESS(EXECUTE)`
+`SECINI, SECACT, SECOBJ, UCONF, PARM and PART file read access rights:`
+`PERMIT ‘CFTV2.*’          ID(GRPMON)  ACCESS(READ)PERMIT ‘CFTV2.SECINI’   ID(GRPMON)  ACCESS(READ)PERMIT ‘CFTV2.SECACT’ ID(GRPMON)  ACCESS(READ)PERMIT ‘CFTV2.SECOBJ’   ID(GRPMON)  ACCESS(READ)PERMIT ‘CFTV2.PARM’   ID(GRPMON)  ACCESS(READ)PERMIT ‘CFTV2.PART’        ID(GRPMON)  ACCESS(READ)`
+`COM, CATALOG, LOG and ACCNT file update access rights:`
+`PERMIT ‘CFTV2.COM’            ID(GRPMON)  ACCESS(UPDATE)PERMIT ‘CFTV2.CATALOG’  ID(GRPMON)  ACCESS(UPDATE)PERMIT ‘CFTV2.LOG1’         ID(GRPMON)  ACCESS(UPDATE)PERMIT ‘CFTV2.ACCNT1’    ID(GRPMON)  ACCESS(UPDATE)PERMIT ‘CFTV2.UCONF’    ID(GRPMON)  ACCESS(UPDATE)`
+`Read access rights for all procedure files (EXEC parameter):`
+`PERMIT ‘XXX.EXEC’  ID(GRPMON  … )  ACCESS(READ)`
+`Execution rights for all EXIT programs (CFTEXIT command):`
 
 EXIT programs are located in the library containing the CFTMAIN program.
 

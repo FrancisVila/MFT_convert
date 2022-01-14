@@ -10,7 +10,7 @@
 
 #### CFTRECV, CFTSEND
 
-\[GROUPID = string32\]
+**\[GROUPID = string32\]**
 
 A group of users.
 
@@ -19,7 +19,7 @@ The value to enter depends on the operating system.
 
 #### CFTAPPL , CFTFOLDER
 
-\[GROUPID = string32\]
+**\[GROUPID = string32\]**
 
 Identifier for a group of users.
 

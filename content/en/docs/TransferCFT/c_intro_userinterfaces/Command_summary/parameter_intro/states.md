@@ -4,7 +4,7 @@
     "weight": "3400"
 }#### states
 
-SWAITCAT
+**SWAITCAT**
 
 Enter a string. Possible values are T, X, Y, Z, N and A states (you may have a combination of values).
 

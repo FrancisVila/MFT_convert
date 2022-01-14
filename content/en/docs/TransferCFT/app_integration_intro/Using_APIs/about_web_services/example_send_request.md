@@ -122,6 +122,6 @@ In this scenario no IDTU value is displayed because the request is not immediate
 
 If Copilot is down you get a "connection refused" type of error, regardless of whether Transfer CFT is running or not.
 
-Related topics
+**Related topics**
 
 [Get started with Web services](../get_started_web_services)

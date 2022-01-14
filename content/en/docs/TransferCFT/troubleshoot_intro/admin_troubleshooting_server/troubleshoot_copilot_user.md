@@ -6,11 +6,11 @@
 
 ### {{< TransferCFT/unix  >}}
 
-Create process as user is not set correctly
+**Create process as user is not set correctly**
 
 If the UCONF parameter copilot.misc.createprocessasuser=NO, the cftsu process cannot start. Check and set to YES.
 
-There is an incorrect setting in cftsu
+**There is an incorrect setting in cftsu**
 
 The following message may be due to one of the causes listed below.
 

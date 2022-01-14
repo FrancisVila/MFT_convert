@@ -146,9 +146,8 @@ The JCLs used are found in the target.INSTALL libraries below.
 
 Before you submit the JOB, specify the PTF identifier in the EXEC card:
 
-A13PTFLD: PTF integration in distribution libraries
-
-//LOADPTF  EXEC PLOADPU,ID=’xxxxxx’, …   
+`A13PTFLD: PTF integration in distribution libraries`
+`//LOADPTF  EXEC PLOADPU,ID=’xxxxxx’, …    `
 
 This JOB takes place in several stages:
 
@@ -198,7 +197,7 @@ This JOB runs in several phases:
 
 Use this JOB to delete a backup file after you have validated the application of a PTF. Each backup requires about 130 cylinders of the available 3390. Before submitting the JOB, specify the patch identifier on the EXEC card:
 
-//DELSAV EXEC PDELSAV,ID=’xxxxxx’
+`//DELSAV EXEC PDELSAV,ID=’xxxxxx’`
 
 > **Note**
 >
@@ -240,16 +239,13 @@ The use of this JCL is optional. It allows you to submit JOB 'A13\*', which runs
 
 You must configure the following JCLs in automatic mode.
 
-> ..INSTALL(A13PTFLD) &gt;&gt; ID='AUTO'
->
-> ..INSTALL(A13PTFLK) &gt;&gt; ID='AUTO'
->
-> ..INSTALL(A13UCOPA) &gt;&gt; ID='AUTO' or ID='NONE'
->
-> ..INSTALL(A13UXSRA) &gt;&gt; ID='AUTO' or ID='NONE'
+> `..INSTALL(A13PTFLD)   >> ID='AUTO'`
+> `..INSTALL(A13PTFLK)   >> ID='AUTO'`
+> `..INSTALL(A13UCOPA)   >> ID='AUTO'  or ID='NONE'`
+> `..INSTALL(A13UXSRA)   >> ID='AUTO'  or ID='NONE'`
 
 If ID='NONE', this JCL is not submitted.
 
-Related topics
+**Related topics**
 
 - [About migrating Transfer CFT z/OS]()

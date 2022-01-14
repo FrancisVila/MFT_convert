@@ -22,74 +22,29 @@ to copy a sequential file performing the following operations:
 Use the COPYFILE command to copy a sequential file. The COPYFILE command enables a file to compressed offline, before being
 sent by Transfer CFT and a file to be decompressed after being received.
 
-Syntax
-
-[OFN`A`ME](../../../c_intro_userinterfaces/command_summary/parameter_intro/ofname)
+**Syntax**
+`OFNA`ME
 = filename
-
-\[ [CREATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/create)
-= { | YES | NO } \]
-
-\[ [IBLKSIZE](../../../c_intro_userinterfaces/command_summary/parameter_intro/iblksize)
-= {
-| n } \]
-
-\[ [ICHARSET]() = string \]
-
-\[ [ICODE](../../../c_intro_userinterfaces/command_summary/parameter_intro/icode)
-= { ASCII | EBCDIC } \]
-
-\[ [ICOMP](../../../c_intro_userinterfaces/command_summary/parameter_intro/icomp)
-= {
-| 15 } \]
-
-\[ [ICT](../../../c_intro_userinterfaces/command_summary/parameter_intro/ict)
-=  {
-| C } \]
-
-\[ [ILRECL](../../../c_intro_userinterfaces/command_summary/parameter_intro/ilrecl)
-= {
-| n } \]
-
-\[ [IRECFM](../../../c_intro_userinterfaces/command_summary/parameter_intro/irecfm)
-= { F | V | U } \]
-
-\[ [ITYPE](../../../c_intro_userinterfaces/command_summary/parameter_intro/itype)
-= { ‘ ‘ | character } \]
-
-\[ [OBLKSIZE](../../../c_intro_userinterfaces/command_summary/parameter_intro/oblksize)
-= { 0 |n  }
-\]
-
-\[ [OCHARSET ]()= string \]
-
-\[ [OCODE](../../../c_intro_userinterfaces/command_summary/parameter_intro/ocode)
-= { ASCII | EBCDIC } \]
-
-\[ [OCOMP](../../../c_intro_userinterfaces/command_summary/parameter_intro/ocomp)
-= {
-| 15 } \]
-
-\[ [OCT](../../../c_intro_userinterfaces/command_summary/parameter_intro/oct)
-= { H | C } \]
-
-\[ [OLRECL](../../../c_intro_userinterfaces/command_summary/parameter_intro/olrecl)
-= {
-|n } \]
-
-\[ [ORECFM](../../../c_intro_userinterfaces/command_summary/parameter_intro/orecfm)
-= { | F | V| U } \]
-
-\[ [OSPACE](../../../c_intro_userinterfaces/command_summary/parameter_intro/ospace)
-= {
-| n } \]
-
-\[ [OTYPE](../../../c_intro_userinterfaces/command_summary/parameter_intro/otype)
-= { | character } \]
-
-\[ [XLATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/xlate) = string \]
-
-Limitation
+`[ CREATE   = { ‘   ‘ | YES | NO } ]`
+`[ IBLKSIZE   = { 0   | n } ]`
+`[ ICHARSET = string  ]`
+`[ ICODE   = { ASCII | EBCDIC } ]`
+`[ ICOMP   = { 0   | 15 } ]`
+`[ ICT   =  { H   | C } ]`
+`[ ILRECL   = { 0   | n } ]`
+`[ IRECFM   = { F | V | U } ]`
+`[ ITYPE   = { ‘ ‘ | character } ]`
+`[ OBLKSIZE   = { 0 |n  }   ]`
+`[ OCHARSET = string  ]`
+`[ OCODE   = { ASCII | EBCDIC } ]`
+`[ OCOMP   = { 0   | 15 } ]`
+`[ OCT   = { H | C } ]`
+`[ OLRECL   = { 0   |n } ]`
+`[ ORECFM   = { IRECFM   value | F | V| U } ]`
+`[ OSPACE   = { 0   | n } ]`
+`[ OTYPE   = { ‘   ‘ | character } ]`
+`[ XLATE = string ]`
+**Limitation**
 
 When using ICHARSET and OCHARSET, all file types are supported except Binary (B) and Variable (V).
 

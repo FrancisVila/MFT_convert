@@ -52,7 +52,7 @@ flush.
 
 For example, to deactivating the "flush" function:
 
-SET CFTNOFLUSH=1
+`SET CFTNOFLUSH=1`
 
 By default, transfer
 flushes continue to occur.
@@ -72,7 +72,7 @@ to the file being written.
 During this time the other "waiting to write" processes repeat
 their access requests to the operating system.
 
-Environment variable
+**Environment variable**
 
 #### CFTLCKMAX
 
@@ -106,7 +106,7 @@ a special file type recognition function using the suffix.
 
 Change of name or path of suffix file
 
-Environment variable
+**Environment variable**
 
 #### CFTSUFX
 
@@ -204,7 +204,7 @@ to be standardized environments.
 The table below summarizes the letters indicating the type of file in
 the CFTSUFX file.
 
-Letters defining a file type
+**Letters defining a file type**
 
 
 | Letter  | Type of file  |
@@ -218,17 +218,12 @@ Letters defining a file type
 
 Example of the content of the CFTSUFX file:
 
-DOC=T     #files with a ‘DOC’ suffix are text files.  
-T\*=T     #files with a suffix beginning with the letter
-‘T’  
-#are text files.  
-EXE=B     #files with an ‘EXE’ suffix are binary files.  
-V?R=V     #files with a ‘V?R’ suffix are variable files.
+`DOC=T     #files with a ‘DOC’ suffix are text files.T*=T     #files with a suffix beginning with the letter   ‘T’#are text files.EXE=B     #files with an ‘EXE’ suffix are binary files.V?R=V     #files with a ‘V?R’ suffix are variable files.`
 
 Differentiation between upper and lower
 case
 
-Environment variable
+**Environment variable**
 
 #### CFT\_CSFN
 
@@ -238,8 +233,7 @@ does take place if the environment variable CFT\_CSFN is set.
 
 For example:
 
-SET CFT\_CSFN = 1
-
+`SET CFT_CSFN = 1`
 <span id="Sending_a_group_of_files"></span>
 
 ## Sending a group of files
@@ -261,9 +255,8 @@ for the CFTSEND command has the following two characteristics:
 - The FNAME parameter
     states a folder, or contains meta-characters
 
-Example
-
-FNAME = #FIC\*.\*
+**Example**
+`FNAME = #FIC*.*`
 
 A group of files can be sent in two different ways depending on whether
 the two partners are standardized sites or not. The term of standardized
@@ -373,19 +366,9 @@ mode, the conditions on the Transfer CFT parameters are as follows:
     of the CFTRECV command indicates the full path of a folder name ending
     with the ‘/’ character
 
-Example
-
-CFTSEND  
-.  
-FNAME = #FIC\*.\*,  
-WFNAME = &idtu.snd,  
-.
-
-CFTRECV  
-.  
-FNAME = E:\\CFTN.301\\RECEPT\\,  
-WFNAME = &idtu.rcv,  
-.
+**Example**
+`CFTSEND.FNAME = #FIC*.*,WFNAME = &idtu.snd,.`
+`CFTRECV.FNAME = E:\CFTN.301\RECEPT\,WFNAME = &idtu.rcv,.`
 
 > **Note**
 >

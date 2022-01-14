@@ -26,7 +26,7 @@ During Transfer CFT operations conversion problems may occur when:
 
 The default EBCDIC character set used by Transfer CFT has code 297 (EBCDIC France).
 
-The default ASCII character set used by Transfer CFT is not fully compatible with code 850 (IBM multilingual personal computer). For more information refer to the *Transfer CFT User Guide*.
+The default ASCII character set used by Transfer CFT is not fully compatible with code 850 (IBM multilingual personal computer). For more information refer to the *Transfer CFT User Guide*. ADD LINK
 
 Consequently, two files supplied in the production library are used to enter and create a conversion table in Transfer CFT:
 

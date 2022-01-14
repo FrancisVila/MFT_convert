@@ -6,7 +6,7 @@
 
 CFTSEND, CFTRECV
 
-{ string 32 characters }
+**{ string 32 characters }**
 
 This parameter points to data stored in UCONF (specifically, the access key identifier `aws.credentials.<user>.access_key_id`, and the access key secret `aws.credentials.<user>.secret_access_key`) for Amazon S3 credentials.
 

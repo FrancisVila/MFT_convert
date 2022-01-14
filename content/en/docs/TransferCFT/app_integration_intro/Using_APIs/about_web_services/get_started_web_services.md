@@ -95,6 +95,6 @@ When using Web services the return codes are as follows:
 | RCVA_RESPONSE_NOK_PARAMETER_ERROR  | Parameter error  | 9  |
 
 
-Related topics
+**Related topics**
 
 [About Web services](../../../../cft_intro_install/about_this_document_ibmi/using_apis/about_web_services)

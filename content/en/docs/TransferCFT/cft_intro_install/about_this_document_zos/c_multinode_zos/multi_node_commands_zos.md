@@ -38,11 +38,11 @@ The executable `CFTCOPL` starts the Copilot (Node Manager and UI server).
 
 **Syntax**
 
-EXEC PGM=CFTCOPL
+`EXEC PGM=CFTCOPL`
 
 **JCL**
 
-..INSTALL(MNRMNG)
+`..INSTALL(MNRMNG)`
 
 The files such as COM, CATALOG, or LOG are not assigned in the JCL.
 
@@ -52,15 +52,15 @@ The executable `COPSTOP` stops the Copilot (Node Manager and UI server). When st
 
 **Syntax**
 
-copstop
+`copstop`
 
 **Usage**
 
-COPSTOP
+`COPSTOP`
 
 **JCL**
 
-..INSTALL(COPSTOP)
+`..INSTALL(COPSTOP)`
 
 ## start
 
@@ -72,7 +72,7 @@ The `start `command starts one or all nodes. If no node is specified, all nodes 
 
 **Syntax**
 
-start \[options\]
+`start [options]`
 
 #### Options
 
@@ -80,17 +80,17 @@ The -n|-node &lt;node\_id> starts the node &lt;node\_id>.
 
 **Usage**
 
-EXEC PCFTUTL,PG=CFT,PARM=’start’
+`EXEC PCFTUTL,PG=CFT,PARM=’start’`
 
 All nodes are started by the node managers.
 
-EXEC PCFTUTL,PG=CFT,PARM=’start –n 0’
+`EXEC PCFTUTL,PG=CFT,PARM=’start –n 0’`
 
 Node 0 is started by a node manager.
 
 **JCL**
 
-..INSTALL(MNSTART)
+`..INSTALL(MNSTART)`
 
 ## stop
 
@@ -98,7 +98,7 @@ The `stop` command stops one or all nodes. If no node is specified, all nodes ar
 
 **Syntax**
 
-stop \[options\]
+`stop [options]`
 
 #### Options
 
@@ -106,17 +106,17 @@ The -n|-node &lt;node\_id> stops the node &lt;node\_id>.
 
 **Usage**
 
-EXEC PCFTUTL,PG=CFT,PARM=’stop’
+`EXEC PCFTUTL,PG=CFT,PARM=’stop’`
 
 Stops all nodes.
 
-EXEC PCFTUTL,PG=CFT,PARM=’stop –n 0’
+`EXEC PCFTUTL,PG=CFT,PARM=’stop –n 0’`
 
 Stops node 0.
 
 **JCL**
 
-..INSTALL(MNSTOP)
+`..INSTALL(MNSTOP)`
 
 ## restart
 
@@ -128,7 +128,7 @@ The` restart` command restarts one or all nodes. If no node is specified all nod
 
 **Syntax**
 
-restart \[options\]
+`restart [options]`
 
 **Options**
 
@@ -138,21 +138,21 @@ The `-ln|-local_node` re-starts all nodes hosted locally that are running on the
 
 **Usage**
 
-EXEC PCFTUTL,PG=CFT,PARM=’restart’
+`EXEC PCFTUTL,PG=CFT,PARM=’restart’`
 
 All nodes are re-started by the node managers.
 
-EXEC PCFTUTL,PG=CFT,PARM=’restart –n 0’
+`EXEC PCFTUTL,PG=CFT,PARM=’restart –n 0’`
 
 Node 0 is re-started by a node manager.
 
-EXEC PCFTUTL,PG=CFT,PARM=’restart –ln’
+`EXEC PCFTUTL,PG=CFT,PARM=’restart –ln’`
 
 All nodes hosted locally are re-started by the node manager.
 
 **JCL**
 
-..INSTALL(MNRESTAR)
+`..INSTALL(MNRESTAR)`
 
 ## add\_host
 
@@ -163,15 +163,15 @@ The `add_host` command adds a new host entry in the configuration. The following
 
 **Syntax**
 
-add\_host –hostname &lt;hostname> –host &lt;host\_address>
+`add_host –hostname <hostname> –host <host_address>`
 
 **Usage**
 
-EXEC PCFTUTL,PG=CFT,PARM=’add\_host –hostname srv0 –host srv0.domain.int’
+`EXEC PCFTUTL,PG=CFT,PARM=’add_host –hostname srv0 –host srv0.domain.int’`
 
 **JCL**
 
-..INSTALL(MNAHOST)
+`..INSTALL(MNAHOST)`
 
 ## add\_node
 
@@ -179,15 +179,15 @@ The `add_node` command adds a new node to the Transfer CFT cluster. The number o
 
 **Syntax**
 
-add\_node
+`add_node`
 
 **Usage**
 
-EXEC PCFTUTL,PG=CFT,PARM=’add\_node’
+`EXEC PCFTUTL,PG=CFT,PARM=’add_node’`
 
 **JCL**
 
-..INSTALL(MNANODE)
+`..INSTALL(MNANODE)`
 
 ## remove\_node
 
@@ -197,15 +197,15 @@ The node number is decremented (uconf: cft.multi\_node.nodes = N+1) , and any in
 
 **Syntax**
 
-remove\_node –n &lt;the\_higher\_node\_id>
+`remove_node –n <the_higher_node_id>`
 
 **Usage**
 
-EXEC PCFTUTIL,PG=CFT,PARM=’remove\_node –n 3’
+`EXEC PCFTUTIL,PG=CFT,PARM=’remove_node –n 3’`
 
 **JCL**
 
-..INSTALL(MNREMOVE)
+`..INSTALL(MNREMOVE)`
 
 ## enable\_node
 
@@ -213,15 +213,15 @@ The `enable_node` command enables the specified node. The node state is set from
 
 **Syntax**
 
-enable\_node -n -&lt;node\_id>
+`enable_node -n -<node_id>`
 
 **Usage**
 
-EXEC PCFTUTIL,PG=CFT,PARM=’enable\_node -n -&lt;node\_id>’
+`EXEC PCFTUTIL,PG=CFT,PARM=’enable_node -n -<node_id>’`
 
 **JCL**
 
-..INSTALL(MNENABLE)
+`..INSTALL(MNENABLE)`
 
 ## disable\_node
 
@@ -233,15 +233,15 @@ The `disable_node` command disables the specified node. The parameter uconf:cft.
 
 **Syntax**
 
-disable\_node -n -&lt;node\_id>
+`disable_node -n -<node_id>`
 
 **Usage**
 
-EXEC PCFTUTIL,PG=CFT,PARM=’disable\_node -n -&lt;node\_id>’
+`EXEC PCFTUTIL,PG=CFT,PARM=’disable_node -n -<node_id>’`
 
 **JCL**
 
-..INSTALL(MNDISABL)
+`..INSTALL(MNDISABL)`
 
 ## cftping
 
@@ -255,7 +255,7 @@ Return values:
 
 **Syntax**
 
-cftping \[options\]
+`cftping [options]`
 
 **Options**
 
@@ -269,7 +269,7 @@ cftping \[options\]
 
 **JCL**
 
-..INSTALL(MNPING)
+`..INSTALL(MNPING)`
 
 ## listlog
 
@@ -289,7 +289,7 @@ The CFTUTIL **`listnode `**displays the status of the Transfer CFT cluster, incl
 
 **JCL**
 
-..INSTALL(MNLNODE)
+`..INSTALL(MNLNODE)`
 
 **Example**
 

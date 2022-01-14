@@ -10,7 +10,7 @@ The registration is performed on a SSL connection using simple authentication. F
 
 Refer to the User Guide for more information on registration processes, such as registration approval.
 
-Registration exchange overview (the same for either or {{< TransferCFT/flowmanager  >}})
+**Registration exchange overview (the same for either or {{< TransferCFT/flowmanager  >}})**
 
 ![Copilot submits registration and Central Governance sends certificates by way of response.](/Images/TransferCFT/cft_registration.png)
 
@@ -26,7 +26,7 @@ Starting Copilot after installation begins the connection and registration proce
 >
 > Transfer CFT requires the Central Governance or Flow Manager shared secret to register. See the Central Governance or Flow Manager documentation for details.
 
-1\. Copilot connects to Central Governance or {{< TransferCFT/flowmanager  >}} and submits its registration.
+**1. Copilot connects to Central Governance or {{< TransferCFT/flowmanager  >}} and submits its registration.**
 
 - Copilot sends a registration request through a simple authenticated SSL connection and submits its registration. Copilot authenticates the Central Governance or {{< TransferCFT/flowmanager >}} server using the CA certificate pointing by the uconf:cg.ca\_cert\_id parameter. The registration request contains:
 
@@ -37,7 +37,7 @@ Starting Copilot after installation begins the connection and registration proce
     >
     > If you use an intermediate certificate as a governance CA certificate, you must add the root CA certificate that signs this intermediate certificate in the Transfer CFT PKI database.
 
-2\. or {{< TransferCFT/flowmanager  >}} sends the SSL certificates to {{< TransferCFT/componentshortname  >}}.
+**2. or {{< TransferCFT/flowmanager  >}} sends the SSL certificates to {{< TransferCFT/componentshortname  >}}.**
 
 Central Governance or {{< TransferCFT/flowmanager  >}} processes the CSRs and returns two SSL certificates, one dedicated to governance exchanges and the other one dedicated to business exchanges (used for securing file transfers between the registering {{< TransferCFT/componentshortname  >}} and all other {{< TransferCFT/solutionshortname  >}}s).
 
@@ -46,9 +46,8 @@ Both certificates are stored in the internal PKI base using the following identi
 - &lt;uconf:cft.instance\_id>\_GOV for the governance certificate
 - &lt;uconf:cft.instance\_id> for the business certificate
 
-3\. Copilot sends the first heartbeat over a mutual authenticated SSL connection.
-
-4\. The Transfer CFT configuration is updated and returned to Transfer CFT.
+**3. Copilot sends the first heartbeat over a mutual authenticated SSL connection.**
+**4. The Transfer CFT configuration is updated and returned to Transfer CFT.**
 
 During the registration process or {{< TransferCFT/flowmanager  >}} receives the current configuration of {{< TransferCFT/componentshortname  >}} and changes it accordingly to their own rules.
 
@@ -134,7 +133,7 @@ When you register {{< TransferCFT/componentshortname  >}} with {{< TransferCFT/c
 
 ### Network definitions
 
-Windows and Linux
+**Windows and Linux**
 
 For Transfer CFT to register successfully with Flow Manager, it must have at least one of the following Flow Manager network types defined, but cannot have more than one of each type: TCP, pTCP, and UDT. This means that you can register a Transfer CFT that has a maximum of three CFTNET objects, where the Transfer CFT type=TCP and CLASS is different for each CFTNET.
 

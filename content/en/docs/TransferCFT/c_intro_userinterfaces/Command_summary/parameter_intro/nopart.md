@@ -8,8 +8,11 @@
 
 #### CFTDEST
 
-\[NOPART = {
+\[NOPART = {abort
 | continue | ignore }\]
+
+Do not complete this field if you
+completed the fname field.
 
 Define the actions to perform when a partner in the partner list is
 not found. Options are:

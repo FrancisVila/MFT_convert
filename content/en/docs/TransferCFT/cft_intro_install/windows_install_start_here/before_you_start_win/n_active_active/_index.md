@@ -34,7 +34,7 @@ A cluster installation of Transfer CFT with multi-node (HA):
 >
 > Transfer CFT binaries can be patched on each host one after the other without stopping the Transfer CFT instance (all of the Transfer CFT nodes).
 
-Shared directory
+**Shared directory**
 
 This is the path and name of the directory where you want to create a shared directory for the cluster installation. The shared directory is used to store product data files.
 
@@ -44,7 +44,7 @@ This is the path and name of the directory where you want to create a shared dir
 >
 > Transfer CFT supports all POSIX file systems.
 
-Installation directory
+**Installation directory**
 
 The path and name of the local directory where you want to install the first cluster.
 

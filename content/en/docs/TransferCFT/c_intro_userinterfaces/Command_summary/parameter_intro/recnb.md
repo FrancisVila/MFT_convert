@@ -14,7 +14,7 @@
 
 Number of records in the file. The default value is the value set in the UCONF `cft.cftcom.default_size` parameter.
 
-TYPE=CAT
+**TYPE=CAT**
 
 **\[RECNB =  { 1...10000000 } \]**
 
@@ -29,7 +29,7 @@ Please see the <a href="../../../../admin_intro/admin_monitoring_intro/housekeep
 
 #### RECONFIG
 
-TYPE=CAT
+**TYPE=CAT**
 
 **\[RECNB =  {
 0... 10000000 } \]**

@@ -6,7 +6,7 @@
 
 #### CFTCRON
 
-EXECPOLICY = = \[ <u>INSTANCE</u> |ALLNODES \]
+`EXECPOLICY = = [ INSTANCE |ALLNODES ]`
 
 The `execpolicy `defines the node policy for executing a job when working with multiple nodes. You can use this parameter to avoid issues that could occur due to a shared file.
 

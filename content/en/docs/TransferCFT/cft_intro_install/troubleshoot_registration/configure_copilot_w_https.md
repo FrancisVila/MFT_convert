@@ -6,7 +6,7 @@
 
 The examples provided in this section use sample certificates that are supplied in product. Do not use these certificates in production; you should instead use your own certificates.
 
-**Example 1**
+****Example 1****
 
 This example uses a single PKCS#12 certificate.
 
@@ -19,7 +19,7 @@ This example uses a single PKCS#12 certificate.
 | copilot.ssl.SslKeyPassword<br/>  | Not used |
 
 
-**Example 2**
+****Example 2****
 
 This example uses a DER certificate with the private key in a separate DER file.
 
@@ -45,19 +45,19 @@ There are two additional UCONF parameters to use for https connections:
 
 ## Installing a certificate on the client side
 
-**Windows**
+****Windows****
 
 On Windows, there are two ways to install a certificate on the client side: use the Windows certificate, or the Java keystore.
 
-UNIX
+**UNIX**
 
 On Linux, the Java keystore is the only option.
 
-**Example**
+****Example****
 
 In this section and the example below, we use the sample certificate delivered with {{< TransferCFT/componentshortname  >}} and located at:
 
-&lt;CFTDIRRUNTIME>/conf/pki/Axway\_MFT\_Demonstration\_Root\_Certificate.der
+`<CFTDIRRUNTIME>/conf/pki/Axway_MFT_Demonstration_Root_Certificate.der`
 
 ### Installing a certificate in the Windows keystore
 
@@ -65,7 +65,7 @@ In this section and the example below, we use the sample certificate delivered w
 1. Select the “Install certificate” option.
 1. Follow the screen instructions. Windows automatically imports the certificate into its keystore, in the `Intermediate certificate authorities` folder.
 
-Alternative method
+**Alternative method**
 
 1. In Internet Explorer, select **Tools > Internet Options.**
 1. In the **Content** tab select the **Certificate** button.

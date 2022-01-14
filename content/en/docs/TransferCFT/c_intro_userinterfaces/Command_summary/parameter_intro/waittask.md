@@ -10,7 +10,7 @@
 
 #### CFTPARM
 
-\[WAITTASK = { <u>10</u> | n }\]   
+\[WAITTASK = { <u>10</u> | n }\]    {1...1441}
 
 The inactivity time, in minutes, for a file access task before it is terminated:
 

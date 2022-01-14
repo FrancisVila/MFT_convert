@@ -25,7 +25,7 @@ In the {{< TransferCFT/componentlongname  >}} UI:
 1. Select **My Access Tokens** in the drop-down menu.  
     The **My Access Token** page displays.
 1. Click **Generate Token**.  
-    The Action, User, Creation date, and Token fields display. In the **Token** field, click the ![]($1)copy icon to easily copy the entire token.
+    The Action, User, Creation date, and Token fields display. In the **Token** field, click the ![](/Images/TransferCFT/copy_icon.png)copy icon to easily copy the entire token.
 
 Alternatively, you can use the Swagger REST API to generate the token.
 

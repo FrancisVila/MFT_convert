@@ -8,7 +8,7 @@
 
 #### CFTPART
 
-\[ CTRLPART = {
+\[ CTRLPART = { IGNORE
 | ALL | RPART | SPART } \]
 
 Optional parameter that is relevant only in server mode. When a transfer is initiated by a remote partner, {{< TransferCFT/componentshortname  >}} always controls its identity. If the remote sender is not the initial sender, store and forward mode, the {{< TransferCFT/componentshortname  >}} can choose to control the initial sender identity according to CTRLPART parameter.

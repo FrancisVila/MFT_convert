@@ -18,7 +18,7 @@ Check that the user that starts Copilot and Transfer CFT has:
 - An OMVS segment and a TSO segment in their profile
 - Rights to issue MODIFY and START console commands
 
-TSO version
+**TSO version**
 
 The user ID for the user that starts Copilot and Transfer CFT has a 7-characters maximum when using z/OS 2.2 or lower. Therefore, a user with an 8-character user ID cannot use TSO with a z/OS version lower than v2.3.
 
@@ -45,7 +45,7 @@ In a z/OS environment, the multi-node architecture uses SYSPLEX components that 
 
 **High level architectural overview**
 
-![]($1)
+![](/Images/TransferCFT/temp_lpar_cluster.png)
 
 **What is a host?**
 
@@ -70,9 +70,9 @@ The shared file system for {{< TransferCFT/componentshortname  >}} z/OS is a DAS
 
 **Incoming flow from external Transfer CFT partner**
 
-![]($1)
+![](/Images/TransferCFT/zos_SysplexDistributor.png)
 
-Legend
+**Legend**
 
 - The Transfer CFT z/OS SYSPLEX distributor receives an incoming call from an external Transfer CFT partner.
 - The SYSPLEX distributor uses either the round robin or the weight active distribution method.

@@ -14,21 +14,13 @@ CFT prior to V2.4, you can continue to use the following communication
 structure **exitdU**
 between the interface and the user program:
 
-typedef union      {  
-          exausC exaC;  
-          exausO exaO;  
-          char buf\[2048\];  
-} exitdU, \*exitdUp;
+`typedef union      {          exausC exaC;          exausO exaO;          char buf[2048];} exitdU, *exitdUp;`
 
 You can create an exit using the V2.4 format <span style="font-weight: bold;font-family: 'Courier New', monospace;">exitdnT</span>
 communication structure between the interface and the user program as
 follows:
 
-typedef union      {  
-          exausC exaC;  
-          exausO exaO;  
-          char buf\[2048\];  
-} exitdnU, \*exitdnUp;
+`typedef union      {          exausC exaC;          exausO exaO;          char buf[2048];} exitdnU, *exitdnUp;`
 
 Depending on the programming language used, the structure chosen is:
 

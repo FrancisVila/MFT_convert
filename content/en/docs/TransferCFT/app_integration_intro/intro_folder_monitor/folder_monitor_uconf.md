@@ -55,7 +55,7 @@ For each monitored directory you must provide a unique name to identify the set 
 
 Use the following UCONF parameters to configure folder monitoring for each directory as needed. See the section [UCONF](../../../admin_intro/uconf) if you are not familiar with unified configuration settings.
 
-Parameter descriptions
+**Parameter descriptions**
 
 
 | UCONF parameter  | Type  | Default | Description  |
@@ -91,11 +91,8 @@ Parameter descriptions
 - /
 - For \\ / : \* ? " &lt; > |
 
-**Comment\*\*\***: You can use CFTUTIL to create the list of folders &lt;logical\_names>. When using CFTUTIL, be careful to correctly enter the command. For example, where FM1, FM2 and FM3 are 3 logical folders to be managed by {{< TransferCFT/componentshortname  >}}, enter:
-
-CFTUTIL uconfset id= folder\_monitoring.folders, value= "'FM1 FM2 FM3 '"
-&lt;/p>
-<span id="How2"></span>
+****Comment\*\*\***: You can use CFTUTIL to create the list of folders &lt;logical\_names>. When using CFTUTIL, be careful to correctly enter the command. For example, where FM1, FM2 and FM3 are 3 logical folders to be managed by {{< TransferCFT/componentshortname  >}}, enter:**
+`CFTUTIL uconfset id= folder_monitoring.folders, value= "'FM1 FM2 FM3 '"         </code>`
 
 ## How {{< TransferCFT/componentshortname  >}} handles monitored files
 
@@ -280,7 +277,7 @@ For more information on setting unified configuration parameters, refer to [Usin
 
 This feature enables you to use file-system events monitoring to detect newly available files for an immediate Transfer CFT action.
 
-Available on Linux/Windows only
+**Available on Linux/Windows only**
 
 See [Supported OS for file-system event monitoring](../#Supporte).
 
@@ -301,7 +298,7 @@ This feature can be resource intensive for Transfer CFT and the system in gener
 
 We recommended that you only use file-system event monitoring when immediate attention by Transfer CFT is a functional requirement.
 
-Related topics
+**Related topics**
 
 - <a href="../" class="MCXref xref">Introduction to folder monitoring</a>
 - <a href="../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftfolder" class="MCXref xref">Folder monitoring CFTFOLDER</a>

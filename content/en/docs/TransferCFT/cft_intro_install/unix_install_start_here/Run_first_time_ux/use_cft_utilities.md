@@ -20,19 +20,53 @@ to simplify common tasks performed with {{< TransferCFT/componentshortname  >}}.
 
 The following utilities are detailed in this page.
 
-
-| Utility  | Definition  |
-| --- | --- |
-| <a href="#cftinit">cftinit</a>  | General Transfer CFT initialization utility.  |
-| <a href="#cftutil">cftutil</a>  | Simplified display of the standard CFTUTIL commands.  |
-| <a href="#cftupdate">cftupdate</a>  | Management Utility updating the Transfer CFT configuration.  |
-| <a href="#cftcatal">cftcatal</a>  | Utility migrating and/or extending the {{< TransferCFT/componentshortname  >}} catalog file.  |
-| <a href="#xfbadm">xfbadmgrp</a>  | Group management utility (all users accessing the Transfer CFT Copilot server).  |
-| <a href="#xfbadmusr1">xfbadmusr</a>  | Utility managing users accessing the Transfer CFT Copilot server.  |
-| <a href="#xvi">xvi</a>  | Utility processing the conversion tables.  |
-| <a href="#Conversion_tables">atoe</a>  | ISO 8859-1 ASCII to EBCDIC conversion table.  |
-| <a href="#Conversion_tables">etoa</a>  | EBCDIC to ISO 8859-1 ASCII conversion table.  |
-
+<table>
+   <thead>
+      <tr>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Utility  </p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Definition  </p>         </th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><a href="#cftinit">cftinit</a>         </td>
+         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">General Transfer CFT initialization utility.         </td>
+      </tr>
+      <tr>
+         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><a href="#cftutil">cftutil</a>         </td>
+         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">Simplified display of the standard CFTUTIL commands.         </td>
+      </tr>
+      <tr>
+         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><a href="#cftupdate">cftupdate</a>         </td>
+         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">Management Utility updating the Transfer CFT configuration.         </td>
+      </tr>
+      <tr>
+         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p><a href="#cftcatal">cftcatal</a>  </p>         </td>
+         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>Utility migrating and/or extending the {{< TransferCFT/componentshortname  >}} catalog
+file.  </p>         </td>
+      </tr>
+      <tr>
+         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p><a href="#xfbadm">xfbadmgrp</a>  </p>         </td>
+         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>Group management utility (all users accessing the Transfer CFT Copilot server).  </p>         </td>
+      </tr>
+      <tr>
+         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p><a href="#xfbadmusr1">xfbadmusr</a>  </p>         </td>
+         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>Utility managing users accessing the Transfer CFT Copilot server.  </p>         </td>
+      </tr>
+      <tr>
+         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p><a href="#xvi">xvi</a>  </p>         </td>
+         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>Utility processing the conversion tables.  </p>         </td>
+      </tr>
+      <tr>
+         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p><a href="#Conversion_tables">atoe</a>  </p>         </td>
+         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>ISO 8859-1 ASCII to EBCDIC conversion table.  </p>         </td>
+      </tr>
+      <tr>
+         <td class="TableStyle-SynchTableStyle_interop-BodyB-Column1-Body2"><p><a href="#Conversion_tables">etoa</a>  </p>         </td>
+         <td class="TableStyle-SynchTableStyle_interop-BodyB-Column1-Body2"><p>EBCDIC to ISO 8859-1 ASCII conversion table.  </p>         </td>
+      </tr>
+   </tbody>
+</table>
 
 <span id="cftinit"></span>
 
@@ -43,14 +77,14 @@ initialization utility.
 
 **Syntax**
 
-cftinit \[&lt;filename> \[&lt;filename>...\]\]
+`cftinit [<filename> [<filename>...]]`
 
 **Standard use**
 
 *cftinit* is normally used with a single
 parameter, which is the name of the {{< TransferCFT/componentshortname  >}} configuration file.
 
-cftinit my\_config.cft
+`cftinit my_config.cft`
 
 **Advanced use**
 
@@ -60,7 +94,7 @@ reasons, you may wish to separate the configuration into several files
 (for example, a file describing the CFTPART cards and another file containing
 the CFTPARM, CFTLOG cards, and so on).
 
-cftinit partners.cft the\_rest.cft
+`cftinit partners.cft the_rest.cft`
 
 > **Note**
 >
@@ -80,7 +114,7 @@ The *cftupdate* utility is used to update the configuration.
 
 **Syntax**
 
-cftupdate &lt;filename> \[&lt;filename> ...\]
+`cftupdate <filename> [<filename> ...]`
 
 > **Note**
 >
@@ -102,7 +136,7 @@ code is non-null, a message is displayed.
 
 **Syntax**
 
-cftutil &lt;command>
+`cftutil <command>`
 
 **Use**
 
@@ -121,8 +155,7 @@ the size of the {{< TransferCFT/componentshortname  >}} catalog file without los
 
 **Syntax**
 
-cftcatal
-
+`cftcatal`
 <span id="xfbadm"></span>
 
 ## xfbadmgrp
@@ -137,29 +170,26 @@ Syntax
 
 Add a user group:
 
-xfbadmgrp add \[-G &lt;group>\] \[-p &lt;passwd>\] \[-g
-&lt;GID>\] \[-u &lt;users>\]
+`xfbadmgrp add [-G <group>] [-p <passwd>] [-g   <GID>] [-u <users>]`
 
 Delete a user group:
 
-xfbadmgrp delete \[-G &lt;group>\]
+`xfbadmgrp delete [-G <group>]`
 
 Modify a user group:
 
-xfbadmgrp modify \[-G &lt;group>\] \[-p &lt;passwd>\] \[-g
-&lt;GID>\] \[-u &lt;users>\]
+`xfbadmgrp modify [-G <group>] [-p <passwd>] [-g   <GID>] [-u <users>]`
 
 Display information on existing groups:
 
-xfbadmgrp print \[-G &lt;group>\]
+`xfbadmgrp print [-G <group>]`
 
 This command displays information on a given group (if the -G option
 is used) or on all existing groups.
 
 Standard use
 
-xfbadmgrp  add
-| delete | modify | print | check | help
+`xfbadmgrp  add   | delete | modify | print | check | help`
 
 Advanced use
 
@@ -187,31 +217,29 @@ Syntax
 Add a user. If the group does not exist, it is automatically created with the user
 login name.
 
-xfbadmusr add \[-l &lt;login>\] \[-p &lt;passwd>\] \[-u
-&lt;UID>\] \[-g &lt;GID>\]
+`xfbadmusr add [-l <login>] [-p <passwd>] [-u   <UID>] [-g <GID>]`
 
 Delete a user. Users in the `group `file are automatically deleted from all the groups
 with which they are associated.
 
-xfbadmusr delete \[-l &lt;login>\]
+`xfbadmusr delete [-l <login>]`
 
 Modify a user. If necessary, modifications are applied automatically to the `group `file.
 
-xfbadmusr modify \[-l &lt;login>\] \[-p &lt;passwd>\] \[-u
-&lt;UID>\] \[-g &lt;GID>\]
+`xfbadmusr modify [-l <login>] [-p <passwd>] [-u   <UID>] [-g <GID>]`
 
 Check a user.
 
-xfbadmusr check \[-l &lt;login\] \[-p passwd\]
+`xfbadmusr check [-l <login] [-p passwd]`
 
 Display information on existing users. Display information on a given user (if the -l option
 is used) or on all existing users.
 
-xfbadmusr print \[-l &lt;login>\]:
+`xfbadmusr print [-l <login>]: `
 
 Standard use
 
-xfbadmusr add | delete | modify | print | check | help
+`xfbadmusr add | delete | modify | print | check | help`
 
 Advanced use
 
@@ -254,12 +282,11 @@ The *xvi* utility is used to update a conversion table.
 
 **Syntax**
 
-xvi \[-d | -a | -e | -l
-&lt;file> \] &lt;table>
+`xvi [-d | -a | -e | -l   <file> ] <table>`
 
 Standard use
 
-xvi &lt;table>: updates an existing, valid &lt;table> (256 characters).
+`xvi <table>: updates an existing, valid <table> (256 characters).`
 
 **Advanced use**
 

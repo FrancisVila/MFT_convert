@@ -110,11 +110,9 @@ Enter: `CFTTF –pw [XXXX]`
 
 Where: XXXX --> is the same password as your private "PKCS #12" certificates (see above steps).
 
-Example
-
-CFTTF –pw Axway
-
-OUTPUT: m8ZWaOMdkj70UzJZD+wv8gSsi1ycSTEJ5c0H6SH6dLE=
+**Example**
+`CFTTF –pw Axway`
+`OUTPUT:   m8ZWaOMdkj70UzJZD+wv8gSsi1ycSTEJ5c0H6SH6dLE=`
 
 ## Update the entity.xml file
 

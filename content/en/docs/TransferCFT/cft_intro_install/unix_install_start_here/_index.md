@@ -58,10 +58,9 @@ When installing a cluster for high availability, after enabling the cluster opti
 
 ## Installation schematic overview
 
-Standalone installation
+**Standalone installation**
 
 ![](/Images/TransferCFT/install01_(2).png)
 
-Multi-node installation
-
-![](/Images/TransferCFT/install_multi.png)
+**Multi-node installation**
+**![](/Images/TransferCFT/install_multi.png)**

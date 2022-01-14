@@ -111,6 +111,6 @@ Additionally, the following are valid for the example:
 
 For an exit in COBOL or C, the diagnostics are also available in the 'CEEDUMP' file.
 
-Related topics
+**Related topics**
 
 - [Managing exits]()

@@ -73,7 +73,7 @@ uconfset ssl.certificates.ca_cert_bundle, value='<path to CA bundle>'
 
 Transfer CFT  receives a file from a partner over the PeSIT protocol and stores it on Google Cloud Storage.
 
-![]($1)
+![](/Images/TransferCFT/gcs_1.png)
 
 Configure the CFTRECV object to write to the GCS:
 
@@ -87,7 +87,7 @@ After the partner sends a file, you can check the log for transfer details.
 
 Here, Transfer CFT reads a file from GCS and sends it over PeSIT to a partner.
 
-![]($1)
+![](/Images/TransferCFT/gcs_2.png)
 
 Create the CFTSEND template, and send a file that GCS to a Transfer CFT partner.
 

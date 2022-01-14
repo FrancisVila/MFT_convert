@@ -138,13 +138,11 @@ When Transfer CFT shuts down
 This function enables you to filter FPDU protocol traces
 by partner.
 
-Example
-&lt;/p>
-
-CFTTRACE STARTTRC ID=ID,TID=TID,PTRACE=16,FILTER=Part
+**Example
+&lt;/b>
+`CFTTRACE STARTTRC ID=ID,TID=TID,PTRACE=16,FILTER=Part`**
 
 The command to start a trace FPDU (PTRACE=16) only applies to the `Part `partner. When you start a Trace, a new message is written
 in the LOG File with a CFTT57 message:
 
-<span lang="EN-US">CFTT92I IDTU=&idtu CTX=&ctx IDT=&idt
-</span>
+`CFTT92I IDTU=&idtu CTX=&ctx IDT=&idt  `

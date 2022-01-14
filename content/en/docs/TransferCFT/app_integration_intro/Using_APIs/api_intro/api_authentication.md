@@ -16,8 +16,7 @@ To use this type of authentication you must specify the HTTP Authorization head
 
 `Authorization: Bearer <token>`
 
-Example
-
+**Example**
 ```
 curl -X GET "https://localhost:1768/cft/api/v1/transfers" -H "accept: application/json" -H "Authorization: Bearer eyJhbGnMQdLK6lwYPwy6-B3zrHYjhAqX5UUYht2zkd5-iSBbdyUYuVpSTMhA"
 ```
@@ -36,7 +35,7 @@ In the {{< TransferCFT/componentlongname  >}} UI:
 1. Select **My Access Tokens** in the drop-down menu.  
     The **My Access Token** page displays.
 1. Click **Generate Token**.  
-    The Action, User, Creation date, and Token fields display. In the **Token** field, click the ![]($1)copy icon to easily copy the entire token.
+    The Action, User, Creation date, and Token fields display. In the **Token** field, click the ![](/Images/TransferCFT/copy_icon.png)copy icon to easily copy the entire token.
 
 ## Basic authentication
 
@@ -44,8 +43,7 @@ To use this type of authentication you must specify the HTTP Authorization head
 
 `Authorization: Basic <base64(user:password)>`
 
-Example
-
+**Example**
 ```
 curl -X GET "https://localhost:1768/cft/api/v1/transfers" -H "accept: application/json" -H "Authorization: Basic Z3Vlc3Q6Z3Vlc3QK"
 ```
@@ -67,7 +65,7 @@ You can use the following UCONF parameters to manage this option:
 
 When the maximum number of login failures is reached, the user account is locked for 30 seconds.
 
-Platform specifics
+**Platform specifics**
 
 - On IBM i systems, there is no action if the password is incorrect as the system offers methods that you can rely on to avoid brute force attacks (the system value is [QMAXSIGN](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_74/rzarl/rzarlmaxsgn.htm)).
 - On z/OS systems, only the inherent system protection is available (refer to the RACF suboperand [REVOKE](https://www.ibm.com/support/knowledgecenter/SSLTBW_2.3.0/com.ibm.zos.v2r3.icha700/setrpw.htm) for the PASSWORD option).

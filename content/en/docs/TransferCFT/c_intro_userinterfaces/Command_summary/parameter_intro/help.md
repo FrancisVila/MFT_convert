@@ -8,7 +8,7 @@
 
 #### DISPLAY
 
-\[ HELP = {
+\[ HELP = { NONE
 | FIELDS | MODELS | COMMAND } \]
 
 Displays help information:

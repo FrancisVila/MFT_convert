@@ -5,8 +5,8 @@
 }This topic describes the CFTCOM object and parameters. You can use this
 command to define the communication media used by Transfer CFT.
 
-Related
-topics
+**Related
+topics**
 
 - Command syntax
     [CFTCOM](../../../command_summary#CFTCOM)
@@ -29,12 +29,11 @@ First define the TYPE, and then define the corresponding communication media par
 
 ### TYPE=FILE
 
-NAME = filename
+`NAME = filename`
 
 Designates the communication file name.  
 
-\[WSCAN = {60
-| n}\] {1..3600}
+`[WSCAN = {60   | n}] {1..3600}`
 
 Communication file scanning time (in seconds).
 
@@ -50,16 +49,16 @@ response time and the computer’s workload.
 
 Use CFTCOM TCP/IP for synchronous Transfer CFT communication on the local network.
 
-\[ADDRLIST = (string1..64,string1..64…)\]
+`[ADDRLIST = (string1..64,string1..64…)]`
 
 The `ADDRLIST `parameter is non-functional in that you can only use TCPIP in local networks for synchronous communication.
 
-\[DISCTS = n\]
+`[DISCTS = n]`
 
 Without a request , the timeout (in seconds) before
 freeing a channel opened by a client.
 
-HOST = string1..64
+`HOST = string1..64`
 
 IP address of the local resource.
 
@@ -76,14 +75,14 @@ with one of the following:
 - The value, ALL,
     specifying all the local network addresses.
 
-PROTOCOL = { XHTTP }
+`PROTOCOL = { XHTTP }`
 
 Request/reply protocol implemented on the TCP/IP layer:
 
 - XHTTP: HTTP protocol
     variant, property of Axway Software
 
-PORT = n
+`PORT = n`
 
 Listening port on the networks defined in the HOST
 parameter.

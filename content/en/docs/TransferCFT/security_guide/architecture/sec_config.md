@@ -22,7 +22,7 @@ Connection between Transfer CFT and Central Governance are secured by default us
 Set the CA certificate used to authenticate Central Governance:
 
 - Import the CA certificate of Central Governance in the internal PKI database using the PKIUTIL pkicer command (refer to the Transfer CFT {{< TransferCFT/releasenumber >}} User Guide).
-- Reference the imported certificate Identifier using the following parameter:  
+- Reference the imported certificate Identifier using the following parameter: uconf:cg.ca\_cert\_id  
     **Example**  
     CFTUTIL uconfset id=cg.ca\_cert\_id, value=CGCA
 
@@ -64,7 +64,7 @@ Best practices are to change the following:
 - The certificate authority PassPort Product CA on Central Governance; refer to the *Central Governance* or *Flow Manager Security Guide* > **Product certificate** to change this certificate.
 - The certificate authority PassPort CA on Transfer CFT:
     -   Import in the internal PKI database the certificate authority to use using the PKIUTIL pkicer command.
-    -   Reference the imported certificate Identifier using the following parameter:
+    -   Reference the imported certificate Identifier using the following parameter: uconf:cg.ca\_cert\_id
 
       
     CFTUTIL uconfset id=cg.ca\_cert\_id, value=CGCA

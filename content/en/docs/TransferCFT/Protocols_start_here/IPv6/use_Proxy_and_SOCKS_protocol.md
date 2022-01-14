@@ -29,7 +29,7 @@ This topic describes how to use a proxy and SOCKS, and includes:
 {{< TransferCFT/componentshortname  >}} supports versions 4 and 5 of the SOCKS protocol. A brief
 explanation of the SOCKS protocol is provided in this topic.
 
-![$2]($1)
+![Proxy server is between the client and server where client initiates the Connect Request to proxy](/Images/TransferCFT/proxy2_new.png)
 
 <span id="Connection"></span>
 
@@ -82,7 +82,7 @@ must be declared in the CFTPARM command to be applied by Transfer CFT.
 
 #### File transfers via a proxy
 
-![$2]($1)
+![Placement of proxy between Transfer CFT in Intranet and client in Internet](/Images/TransferCFT/proxy_new.png)
 
 <span id="Error_codes"></span>
 
@@ -126,8 +126,7 @@ The following tables lists common parameters for either SOCKS 4 or SOCKS 5. The 
 | PASSWORD  | String max_length=32  | *SOCKS 5 only*<br/> User password transmitted in the connection request addressed to the proxy. |
 
 
-Example
-
+**Example**
 ```
 CFTNET ID = 'NET0',
 TYPE = 'TCP',
@@ -150,8 +149,7 @@ To configure an outgoing connection through a proxy, user must define the follow
 - A partner referencing the protocol and class = 2 in its CFTTCP definition.
 - The default port for proxy servers is 1080.
 
-Example
-
+**Example**
 ```
 CFTNET ID = 'NET0',
 TYPE = 'TCP',
@@ -197,11 +195,11 @@ The step is only required for your first log in through a proxy. Copilot retains
 
 To remove proxy and revert to the standard log in, simply remove the proxy address and port settings in the connection dialog box.
 
-Connect to a product dialog box
+**Connect to a product dialog box**
 
-![$2]($1)
+![Copilot Connect to a product login screen ](/Images/TransferCFT/copilot_connection_box.png)
 
-Related topics
+**Related topics**
 
 - Network resources - CFTNET (UI)
 - [CFTNET (CFTUTIL)](../../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftnet)

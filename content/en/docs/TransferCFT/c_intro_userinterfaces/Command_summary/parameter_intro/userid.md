@@ -38,17 +38,17 @@ This field can include one or more of the following symbolic variables:
 > of the transfer owner is the system "userid" of the user having
 > activated the command.
 
-Windows
+**Windows**
 
 <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> can use domain\\user accounts instead of USER, except when using PassPort AM or internal security. To do so, set the USERID value to the format DOMAIN\\USER.
 
 #### CFTCRON
 
-z/OS (MVS)
+**z/OS (MVS)**
 
 The USERID value is used to perform the CRONJOB job submission.
 
-All other platforms
+**All other platforms**
 
 The CRONJOB is executed by the user who started <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span>; you can use the &USERID variable for information purposes.
 

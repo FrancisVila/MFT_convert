@@ -6,7 +6,7 @@
 
 #### CFTSEND, CFTRECV
 
-\[flowname = { string 1...100 }\]
+**\[flowname = { string 1...100 }\]**
 
 Parameter to define a flow name in for monitoring purposes.
 

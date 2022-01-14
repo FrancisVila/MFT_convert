@@ -44,7 +44,7 @@ cd docker-cft
 
 The repository contains several README.md files that correspond to each sub-module, and a CHANGELOG.md file that describes all changes to the current version.
 
-READMEs
+**READMEs**
 
 Use the following links to find more information in the associated README:
 

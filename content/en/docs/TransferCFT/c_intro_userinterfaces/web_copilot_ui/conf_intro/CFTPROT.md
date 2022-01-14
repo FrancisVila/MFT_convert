@@ -28,7 +28,7 @@ Use this command to define network parameter settings.
 | <a href="../../../command_summary/parameter_intro/exita">EXITA</a>  | Identifier describing the directory EXIT.<br/> The value of this identifier corresponds to the value of the CFTEXIT ID parameter.<br/> The identifier may contain the &amp;NPART symbolic variable. |
 | <a href="../../../command_summary/parameter_intro/id">ID</a>  | CFTPROT command identifier.<br/> This name must be referenced in the values taken by the CFTPARM PROT parameter. |
 | <a href="../../../command_summary/parameter_intro/idf">IDF</a>  | Used to assign an IDF to a file on receiving an NIDF.<br/> This parameter can be used in:<br/> • server mode (sender or receiver)<br/> • receiver requester following the activation of a RECV IDF=&lt;mask&gt; command |
-| <a href="../../../command_summary/parameter_intro/nack">NACK</a>  | PeSIT<br/> Enables or disables the negative acknowledgement feature. |
+| <a href="../../../command_summary/parameter_intro/nack">NACK</a>  | **PeSIT** Enables or disables the negative acknowledgement feature. |
 | <a href="../../../command_summary/parameter_intro/net">NET</a>  | Identifier referring to a CFTNET command associated with this protocol. |
 | <a href="../../../command_summary/parameter_intro/rcomp">RCOMP</a> | Maximum compression authorized on receiving a file.<br/> This compression is negotiated between the sender and the receiver.<br/> A zero value corresponds to no compression.<br/> For more information such as usable values etc., see <a href="../../../command_summary/parameter_intro/compression">Compression</a>. |
 | <a href="../../../command_summary/parameter_intro/restart">RESTART</a> | Maximum number of transfer restart attempts.<br/> An attempt is taken into account as soon as the physical connection with the remote site is correctly established. |
@@ -183,8 +183,7 @@ then the server mode for CFTSSL is not mandatory.
 
 Syntax:  
 
-CFTPROT  
-\[SSL =     identifier,\]
+`CFTPROT[SSL =     identifier,]`
 
 QQQ\_QQQ\_QQQ
 

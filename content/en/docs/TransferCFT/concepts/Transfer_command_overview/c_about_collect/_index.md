@@ -9,10 +9,10 @@ associated with this collection; this list is defined in the CFTDEST command.
 The following illustration displays the relationships
 to be established to perform a collection.
 
-Define a list
-of partners
+**Define a list
+of partners**
 
-**![]($1)**
+**![](/Images/TransferCFT/Define_list_of_partner_RECV.gif)**
 
 <span id="Broadcasting_lists"></span>
 

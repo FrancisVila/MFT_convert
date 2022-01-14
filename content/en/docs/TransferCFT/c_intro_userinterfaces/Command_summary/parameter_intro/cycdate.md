@@ -18,7 +18,7 @@ If the interval is daily or greater (TCYCLE = DAY or TCYCLE = MONTH),
 the default value of CYCDATE is then MINDATE + TCYCLE\*CYCLE; if not, this
 value is CYCDATE = MINDATE.
 
-Example
+**Example**
 
 if TCYCLE = DAY and CYCLE = 2, the default value of CYCDATE is MINDATE
 + 2 days.

@@ -10,9 +10,8 @@
 
 **UNIX and Windows only**
 
-**UNIX syntax**
-
-cftruntime \[-h|--help|-p|--profile|-n &lt;name>|--uconf|--inst\] &lt;cft-install-dir> &lt;cft-runtime-dir> \[--mac=yes|no\]
+****UNIX syntax****
+`cftruntime [-h|--help|-p|--profile|-n <name>|--uconf|--inst] <cft-install-dir> <cft-runtime-dir> [--mac=yes|no]`
 
 Where:
 
@@ -23,17 +22,15 @@ Where:
 - --runtime: Creates a new runtime environment.
 - --inst: Creates an initial runtime environment, only when run by the Synchrony Installer.
 
-**Example**
+****Example****
 
 In a UNIX environment, regenerate the uconf settings as follows:
 
 ```
 cftruntime --uconf /home/Transfer_CFT/home /home/Transfer_CFT/runtime
 ```
-
-**Windows syntax**
-
-cftruntime &lt;cft-install-dir> &lt;cft-runtime-dir> \[-profile|-n &lt;name>|-uconf|-inst\]
+****Windows syntax****
+`cftruntime <cft-install-dir> <cft-runtime-dir> [-profile|-n <name>|-uconf|-inst]`
 
 Where:
 
@@ -51,15 +48,14 @@ Usage:
 >
 > You must use double quotes when indicating a path that contains spaces.
 
-**Example 1**
+****Example 1****
 
 In a Windows environment, create a new runtime called `runtime2`:
 
 ```
 cftruntime c:\\AxwayCFT38\\Transfer_CFT\\home c:\\AxwayCFT36\\Transfer_CFT\\runtime2
 ```
-
-**Example 2**
+****Example 2****
 
 In a Windows environment, regenerate the `cftuconf.dat` uconf settings as follows:
 

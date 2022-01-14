@@ -31,7 +31,7 @@ on the basis of a generic example.
 
 #### Define a broadcasting list
 
-![]($1)
+![](/Images/TransferCFT/Implement_broadcasting.gif)
 
 The broadcasting list can be described by indicating the identifiers
 of the partners in this list, in the PART parameter of the CFTDEST command.
@@ -39,7 +39,7 @@ This limits the number of identifiers.
 
 This diagram represents a SEND command for "mygroup", which is a collection of applications as defined in , or CFTPART objects if defined in Transfer CFT.
 
-![]($1)
+![](/Images/TransferCFT/temp_broadcast.png)
 
 Another method involves defining these identifiers in a file (using an fname). The number
 of identifiers is then not limited. When using this method, if you change the runtime or import the configuration to a new environment you must remember to copy this file to the new runtime. The name of this file is defined in
@@ -116,12 +116,8 @@ case:
 The following diagram illustrates the parameter setting to broadcast to
 three different partners.
 
-Parameter setting to broadcast to several
-partners
-
-![]($1)
-
-<span id="Broadcasting_and_store_and_forward"></span>
+**Parameter setting to broadcast to several
+partners![](/Images/TransferCFT/parameter_setting_to_broadcast_to_three_different_partners.gif)**<span id="Broadcasting_and_store_and_forward"></span>
 
 ## Broadcasting and store and forward
 
@@ -135,7 +131,7 @@ and forward mode relay](../store_and_forward_mode_routing).
 
 You can use the following commands as an example to configure a transfer flow from Partner A to a distribution list C*n*, via the intermediate site B.
 
-![]($1)
+![](/Images/TransferCFT/temp_broadcast_store_forward.png)
 
 **Step 1**
 
@@ -240,7 +236,7 @@ errors.
 The following figure indicates the parameter setting of a collect from
 three different partners.
 
-**Parameter setting to collect from three
-partners**
+****Parameter setting to collect from three
+partners****
 
-![]($1)
+![](/Images/TransferCFT/parameter_setting_of_a_collect_from_the_three_different_partners.gif)

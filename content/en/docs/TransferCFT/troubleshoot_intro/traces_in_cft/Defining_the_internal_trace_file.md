@@ -83,16 +83,14 @@ START = {<u>CFT</u> | DELAYED}
 
 ### Parameters
 
-\[FTRACE = {0
-| 0..15}\]
+`[FTRACE = {0   | 0..15}]  `
 
 **ID = identifier**
 
 Character string, maximum length: 8; uniquely identifies the trace file
 defined by the set of parameters **TRCFNAM, TRCFTYP, TRCLREC, TRCNREC**.
 
-**\[MODE = {CREATE
-| REPLACE | DELETE},\]**
+`[MODE = {CREATE   | REPLACE | DELETE},]`
 
 Operation to be performed on the ‘‘trace file" entry designated
 by the **ID** parameter:
@@ -106,14 +104,9 @@ by the **ID** parameter:
 
 Where **MODE=DELETE**, only the **ID** parameter is useful.
 
-\[MTRACE = {0
-| 0..31}\]
-
-\[PTRACE = {0
-| 0..31}\]
-
-**START = {<u>CFT</u>
-| DELAYED}**
+`[MTRACE = {0   | 0..31}]`
+`[PTRACE = {0   | 0..31}]`
+`START = {CFT   | DELAYED}`
 
 Starting the trace:
 
@@ -126,15 +119,13 @@ If **START = CFT**, a trace vector is created with the identifier
 defined in the **ID** parameter. This identifier is used in the **STOPTRC**
 command to stop collection.
 
-**\[TRCFNAM = {"
-" | *filename}*\]**
+`[TRCFNAM = {"   " | filename}]`
 
 Name of trace file to be fed by traces.
 
 Character string maximum length: 64 characters.
 
-**\[TRCFTYP = {<u>STANDARD</u>
-| CIRCULAR}\]**
+`[TRCFTYP = {STANDARD   | CIRCULAR}]`
 
 Trace file type:
 
@@ -144,7 +135,7 @@ Trace file type:
     access file, with a set number of fixed-length records. This file is accessed
     through a circular up-date, the new records over-writing the old ones
 
-**\[TRCLREC = n\]**
+`[TRCLREC = n]`
 
 Trace file physical records (fixed) length.
 
@@ -155,14 +146,13 @@ This parameter is:
 - Optional if TRCFTYP
     = STANDARD
 
-**\[TRCNREC = n\]**
+`[TRCNREC = n]`
 
 Number of trace file records.
 
 This parameter is mandatory if **TRCFTYP = CIRCULAR**.
 
-**\[XTRACE = {<u>0</u>
-| 0..7}\]**
+`[XTRACE = {0   | 0..7}]`
 
 Checks the level 1 traces for Transfer CFT EXIT type operations.
 

@@ -8,7 +8,7 @@
 
 #### RECV
 
-NFVER = {
+NFVER = { 0
 | n }
 
 Version of the transferred file.

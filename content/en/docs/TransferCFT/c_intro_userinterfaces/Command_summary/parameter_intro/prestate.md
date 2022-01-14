@@ -6,7 +6,7 @@
 
 #### SEND
 
-\[ PRESTATE = { ' ', DISP, HOLD } \]
+**\[ PRESTATE = { ' ', DISP, HOLD } \]**
 
 The transfer phase step as it enters the A phase.
 

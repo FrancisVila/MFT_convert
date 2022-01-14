@@ -30,27 +30,20 @@ Partner information is the same as global information but detailed for each part
 
 OBJECT = <u>CACHE</u>
 
-\[ CONTENT = { BRIEF | FULL | STAT } \]
-
-\[ NAME = { CAT | COMMAND | CRON | DMZ | STAT } \]
-
- 
+`[ CONTENT  = { BRIEF | FULL | STAT } ]`
+`[ NAME = { CAT | COMMAND | CRON | DMZ | STAT } ]`
+` `
 
 OBJECT = SYSTEM
 
-\[ CONTENT = { BRIEF | FULL | STAT } \]
-
-\[ NAME = { CFTMAIN | CFTTRK | CFTTFIL | CFTCOM | CFTTPRO | CFTEXIT | CFTPRX | CFTDSCAN } \]
-
- 
+`[ CONTENT  = { BRIEF | FULL | STAT } ]`
+`[ NAME = { CFTMAIN | CFTTRK | CFTTFIL | CFTCOM | CFTTPRO | CFTEXIT | CFTPRX | CFTDSCAN } ]`
+` `
 
 OBJECT = STATS or PROBE
 
-\[ CONTENT = {
-| XMLFULL | RAW } \]
-
-\[ NAME = {
-| COMMAND | CRON | DMZ| STAT } \]
+`[  CONTENT = { XMLBRIEF   | XMLFULL | RAW } ]`
+`[ NAME = { CAT   | COMMAND | CRON | DMZ| STAT } ]`
 
 
 | Parameter  |  Description  |

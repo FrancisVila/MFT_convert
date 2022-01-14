@@ -74,7 +74,7 @@ Transfer CFT itself sends the network disconnection request.
 
 ### Defining the transfer direction
 
-PeSIT E, CFT/CFT
+**PeSIT E, CFT/CFT**
 
 The Transfer CFT extensions together with the E version functionality, provide the possibility
 to perform a succession of read and write transfers over the same logical
@@ -215,15 +215,8 @@ of exchanges option during transfer. The only dynamic resynchronization
 case possible between two Transfer CFTs is in the event of a CRC
 error (PAD = YES).
 
-Example
-
-CFTPROT  ID = INTRAN,  
-         ...  
-         SCHKW
-= 2,  
-        
-SPACING = 4096,  
-         ...
+**Example**
+`CFTPROT  ID = INTRAN,         ...         SCHKW   = 2,           SPACING = 4096,         ...`
 
 The sender is able to send up to 4 Mbytes before each synchronization
 point set. The sender can also send up to 8 Mbytes before waiting for
@@ -360,12 +353,13 @@ In PeSIT E, the LOGON parameter can be used to force Transfer CFT to
 skip the preconnection phase when it is the requester and therefore cut down
 on the number of protocol exchanges. To do so, use the following command:
 
-CFTPROT TYPE=PESIT, PROF=ANY, LOGON=NO, ... /\* (do not send the preconnection
-message) \*/
+`CFTPROT TYPE=PESIT, PROF=ANY, LOGON=NO, ... /* (do not send the preconnection   message) */`
 
 As this mode does not comply with the PeSIT external to SIT standard,
 it is recommended that you leave the default LOGON value when the partners
 concerned do not all use Transfer CFT.
+
+QQQ\_QQQ\_CHECK only "Note" gets the vertical line to the left
 
 > **Note**
 >

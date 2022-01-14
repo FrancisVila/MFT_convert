@@ -27,8 +27,7 @@ CFT server for HACMP on our DNS. It is also possible to declare the virtual
 IP on each node of the cluster, in the /etc/hosts
 file. For our tests, we added the following line to this file:
 
-172.17.50.57
- cft-ip
+`172.17.50.57    cft-ip`
 
 This virtual cft-ip address must be declared on all the cluster nodes
 (hacmp1 and hacmp2 for our tests). Use it for our Transfer CFT service.

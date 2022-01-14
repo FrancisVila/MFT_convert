@@ -105,9 +105,9 @@ DNs. The remote (client) entity must provide a certificate signed by one
 of these authorities. The following figure indicates the format that the
 cftpkie function must respect when building the list.
 
-CA list format
+**CA list format**
 
-![$2]($1)
+![Format of the certificate showing the corresponding byte for each element](/Images/TransferCFT/Image1876.gif)
 
 The only type of certificate supported by Transfer CFT to date is RSA.
 The first two bytes must therefore be set to 1 (list length = 1) and 1
@@ -128,9 +128,9 @@ the same as the one described in the GetCAList phase.
 The following figure indicates the format that the cftpkie function
 must respect when building the certificate.
 
-Format of a certificate chain to be sent
+**Format of a certificate chain to be sent**
 
-![$2]($1)
+![View of bytes for DER encoding](/Images/TransferCFT/Image1877.gif)
 
 <span id="Checking_a_received_certificate"></span>
 
@@ -230,9 +230,9 @@ It also contains:
 
 The following figure reviews the PKI exit phases for the server mode.
 
-PKI Exit Phases in Server Mode
+**PKI Exit Phases in Server Mode**
 
-![$2]($1)
+![SSL task execution beginning with a handshake](/Images/TransferCFT/Image1878.gif)
 
 The GetCAList and CheckCertificate phases only exist if
 the client must be authenticated.
@@ -242,9 +242,9 @@ choice is dictated by the security profile (CFTSSL command).
 
 The following figure reviews the PKI exit phases for the client mode.
 
-PKI exit phases in client mode
+**PKI exit phases in client mode**
 
-![$2]($1)
+![SSL Task execution from handshake to the end of the SSL task](/Images/TransferCFT/Image1879.gif)
 
 The GetCertificate phase only exists if the client must be authenticated.
 The server determines whether the client must be authenticated. If the

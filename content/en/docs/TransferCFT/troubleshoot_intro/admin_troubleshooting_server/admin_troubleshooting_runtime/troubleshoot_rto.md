@@ -19,7 +19,7 @@ It is important to diagnose the root cause, as the solution may depend on the ca
 
 ### Network issue
 
-MTU issue
+**MTU issue**
 
 Various routers may be traversed when going from the local host to the remote host. If one of the routers is not configured properly, the MTU size for example, this may causes network issues.
 
@@ -36,7 +36,7 @@ Where:
 
 Reducing the RUSIZE can avoid this root cause. However this should be fixed by setting properly the network environment.
 
-Network congestion (latency, lost packets, timeouts)
+**Network congestion (latency, lost packets, timeouts)**
 
 To confirm if it is a network congestion issue, you can use the ping command or a tool such as MTR (My traceroute), which is a combination of traceroute and the ping command. Sometimes, the timer can expire locally whereas the session is still active on the remote side.
 
@@ -49,13 +49,13 @@ The solution:
 
 ### Abnormal termination or hanging task
 
-{{< TransferCFT/componentlongname  >}} task has an abnormal termination
+**{{< TransferCFT/componentlongname  >}} task has an abnormal termination**
 
 This can cause the timer to expire and induces the 240 RTO diagnostic. Check that no core dump is detected and execute a cft\_support collect before stopping Transfer CFT, or before killing the {{< TransferCFT/componentlongname  >}} processes if that's necessary.
 
 Restart Transfer CFT. The transfer in 240 RTO status is normally restarted, but if the problem still persists cancel the transfer causing the problem and restart Transfer CFT.
 
-Hanging or frozen task, or high CPU usage
+**Hanging or frozen task, or high CPU usage**
 
 These issues can also cause the timer to expire and induce the 240 RTO. You can check with various commands or system tools for frozen {{< TransferCFT/componentlongname  >}} tasks, or if there is a high CPU consumption.
 

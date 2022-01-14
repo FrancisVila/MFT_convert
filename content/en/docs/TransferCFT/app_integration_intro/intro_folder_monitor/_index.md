@@ -21,15 +21,15 @@ A set of [configurable](#Configur) options allow you to define which files are m
 
 This section describes the underlying concepts for folder monitoring with Transfer CFT.
 
-**Checking the state of a monitored file**
+****Checking the state of a monitored file****
 
 For each monitored file, {{< TransferCFT/componentshortname  >}} tracks the file size and the date of its last modification. These two pieces of information constitute the **state** of the file. If the state does not change within a certain delay in seconds, the file is considered to be available to submit for transfer. A delay of zero seconds indicates that the files are immediately ready for submission.
 
-**Folder monitoring directories**
+****Folder monitoring directories****
 
 For each directory to be monitored by Transfer CFT, the scan\_dir, there must be another directory for Transfer CFT to use for tracking information. This second directory is called the work\_dir. These two directories must be separate entities (the work\_dir must differ from the scan\_dir, and the work\_dir cannot be a sub-directory of the scan\_dir), and allow files to move from one directory to the other. While Transfer CFT will not create the scan\_dir directory, the work\_dir is automatically created if it does not already exist.
 
-**Tracking files**
+****Tracking files****
 
 To track scan\_dir files that have been submitted, Transfer CFT can either:
 
@@ -38,7 +38,7 @@ To track scan\_dir files that have been submitted, Transfer CFT can either:
 
 See [Configuring file tracking options](#Configur2).
 
-**SEND parameters**
+****SEND parameters****
 
 In addition to the file path, the [IDF](../../c_intro_userinterfaces/command_summary/parameter_intro/idf) and [PART](../../c_intro_userinterfaces/command_summary/parameter_intro/part) name parameters are supplied in the SEND command. You can set these as fixed parameter values, or extract them from the first or second sub-directory names. {{< TransferCFT/componentshortname  >}} then automatically creates the corresponding sub-directories in the work\_dir directory tree, as needed.
 
@@ -116,7 +116,7 @@ Where:
 - &lt;idf> is the idf name as indicated in the configuration.
 - &lt;pathname> is the absolute pathname of the file in the work\_dir directory.
 
-Command that is submitted for a new file
+**Command that is submitted for a new file**
 
 The following example demonstrates how the PART name is used for the first directory sub-level, and the IDF name for the second level sub-directory.
 
@@ -141,7 +141,7 @@ Submitting the SEND command occurs as follows:
 
 1. The same CFTUTIL command as is used in the MOVE method is submitted internally, but with an fname corresponding to the original file in the scan\_dir.
 
-The following command is submitted for a new file
+**The following command is submitted for a new file**
 
 This example uses the partner name in the first directory sub-level, and the IDF name in the second.
 
@@ -161,7 +161,7 @@ The FILE  method has some drawbacks that the MOVE method does not, especially r
 - All of the .met files must be checked by {{< TransferCFT/componentshortname >}} at start up.
 - {{< TransferCFT/componentshortname >}} cannot differentiate between when a file has been purged and replaced by a new one, or if this same file has just been modified.
 
-Related topics
+**Related topics**
 
 - <a href="../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftfolder" class="MCXref xref">Folder monitoring CFTFOLDER</a>
 - <a href="folder_monitor_uconf" class="MCXref xref">Deprecated folder monitoring (UCONF)</a>

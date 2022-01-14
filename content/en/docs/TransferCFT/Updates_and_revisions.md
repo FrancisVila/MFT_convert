@@ -158,7 +158,7 @@ Transfer CFT 3.3.2
 - \[z/OS\] Added an EXECINFO catalog field, which contains the JOBID:JOBNAME of the last processing procedure executed.
 - \[CORE\] Added NIDT attribute as catalog selection criteria. [Details]()
 
-{{< TransferCFT/componentlongname  >}} 3.2.4
+**{{< TransferCFT/componentlongname  >}} 3.2.4**
 
 - \[z/OS\] Added support to connect to Copilot as a system user or as a Central Governance user (uconf:copilot.misc.createprocessasuser). Refer to the *Transfer CFT z/OS Installation and Operations Guide*.
 - \[z/OS\] Added support for MSA4 extensions and Galois Counter Mode: GCM (AES-\[128|256\]).
@@ -173,7 +173,7 @@ Transfer CFT 3.3.2
 - \[CORE\] Enhanced folder monitoring with file-system event mode. [Details](../app_integration_intro/intro_folder_monitor)
 - \[CORE\] Support of regular expressions for folder monitoring.
 - \[CORE\] Added processing throttling to limit the number of scripts launched in parallel. [Details](../concepts/about_transfer_processing/proc_commands)
-- \[
+- \[UNIX\] Support product updates using {{< TransferCFT/centralgovernancename >}} when the system user control is enabled.
 - \[CORE\] Support regular expressions for multi-pattern groups of files. [Details](../concepts/using_the_send_command/send_group_of_files_cl#Create)
 - \[CORE\] Extended transcoding (FCHARSET/NCHARSET) support for stream text. [Details](../concepts/transfer_command_overview/use_extended_character_sets)
 - \[IBM i\] Added stream text support (FTYPE=J). [Details](../c_intro_userinterfaces/command_summary/parameter_intro/ftype)
@@ -190,7 +190,7 @@ Transfer CFT 3.3.2
 - \[CORE\] Added session identifier to CFTT57I and CFTT58I log messages.
 - \[CORE\] Update end-of-transfer EXIT with IDTU, PIDTU, RIDTU, GROUPID, IsRelay information.
 
-{{< TransferCFT/componentlongname  >}} 3.2.2
+**{{< TransferCFT/componentlongname  >}} 3.2.2**
 
 - \[SSL\] Added UCONF parameters sentinel.xfb.use\_ssl and sentinel.xfb.ca\_cert\_id to secure a connection between Transfer CFT and the Sentinel server. [Details](../admin_intro/uconf/uconf_directory)
 - \[SSL\] Added support for TLS 1.1 and 1.2 [Details](../transport_security_start_here/manage_ssl_tls_versions), and additional cipher suites. [Details](../transport_security_start_here/configuring_transport_security_start_here/transport_security_cftssl)
@@ -217,7 +217,7 @@ Transfer CFT 3.3.2
 - \[CORE\] PKI exits available on all platforms.
 - Added a reusable deployment package feature (new JCLs) for installing or applying Service Packs/patches to Transfer CFT in a z/OS environment. Details provided in the *Transfer CFT z/OS Installation and Operations Guide.*
 
-{{< TransferCFT/componentshortname  >}} 3.1.3
+**{{< TransferCFT/componentshortname  >}} 3.1.3**
 
 - \[CORE\] Added a new UCONF parameter cg.configuration\_policy. SP4 [Details](../governance_services_intro/cg_register_overview)
 - \[CORE\] Support for the NCHARSET and FCHARSET "//IGNORE" functionality on all platforms. SP4 [Details](../concepts/transfer_command_overview/use_extended_character_sets#Using)
@@ -241,7 +241,7 @@ Transfer CFT 3.3.2
 - \[z/OS\] Folder monitoring, Secure Relay, working directory on z/OS systems. For feature details see 3.1.2 SP1
 - \[IBM i\] Folder monitoring, Secure Relay, working directory on IBM i systems. For feature details see 3.1.2 SP1
 
-{{< TransferCFT/componentshortname  >}} 3.1.2
+**{{< TransferCFT/componentshortname  >}} 3.1.2**
 
 - \[CORE\] Added Express Package functionality to generate pre-configured {{< TransferCFT/componentshortname >}} installation packages. SP1 Details
 - \[CORE\] Added working directory parameter. SP1 [Details](../c_intro_userinterfaces/command_summary/parameter_intro/workingdir)
@@ -265,7 +265,7 @@ Transfer CFT 3.3.2
 - \[CORE\] Filter Transfer CFT logs by absolute timestamp datetimemin and datetimemax. [Details](../c_intro_userinterfaces/about_cftutil/monitoring_cftutil_intro/listlog)
 - \[CORE\] Web Services upload files feature. [Details](../cft_intro_install/about_this_document_ibmi/using_apis/about_web_services)
 
-{{< TransferCFT/componentshortname  >}} 3.0.1
+**{{< TransferCFT/componentshortname  >}} 3.0.1**
 
 - \[DOC\] Added UCONF directory listing. SP4 [Details](../admin_intro/uconf/uconf_directory)
 - \[NET\] Support for a newer version of pTCP. **Note**: See compatibility restrictions with previous versions of {{< TransferCFT/componentshortname >}}. SP2 [Details](../concepts/transfer_command_overview/uconf_acceleration#uconf_ptcp)
@@ -309,7 +309,7 @@ Transfer CFT 3.3.2
 - \[COPILOT\] Added keep-alive parameter for client connections. SP1 [Details](../admin_intro/uconf/uconf_copilot)
 - \[NET\] Support for a newer version of pTCP. **Note**: See compatibility restrictions with previous versions of Transfer CFT. SP2 [Details](../admin_intro/uconf/uconf_protocols_and_networks)
 
-{{< TransferCFT/componentshortname  >}} 2.7.1
+**{{< TransferCFT/componentshortname  >}} 2.7.1**
 
 - \[NET\] Support for more recent version of pTCP. **Note**: Compatibility restrictions with lower Transfer CFT versions. SP6 [Details](../admin_intro/uconf/uconf_protocols_and_networks)
 - \[COMS\] COMS authentication support. Backported in 2.7.1 SP3.
@@ -345,7 +345,7 @@ Transfer CFT 3.3.2
 - \[JPI\] Add IDTU criteria for transfer selection.
 - \[CORE\] Internal access management.
 
-{{< TransferCFT/componentshortname  >}} 2.7.0
+**{{< TransferCFT/componentshortname  >}} 2.7.0**
 
 - \[CORE\] Added EBICS protocol. Details
 - \[CORE\] Added new start-up modes for the Catalog purge ([uconf](../admin_intro/uconf/uconf_parameters):cft.purge.\*).
@@ -372,7 +372,7 @@ Transfer CFT 3.3.2
 - \[GUI\] View all Windows drives in the Transfer CFT GUI.Details
 - \[GUI\] PassPort Access Management rights view. Details
 
-{{< TransferCFT/componentshortname  >}} 2.6.4
+**{{< TransferCFT/componentshortname  >}} 2.6.4**
 
 - \[AM\] Access Management Exit ([uconf](../admin_intro/uconf/uconf_parameters):am.type=exit).
 - \[AM\] (z/OS) Access Management through RACF. Details
@@ -394,7 +394,7 @@ Transfer CFT 3.3.2
 - \[COMS\] COMS authentication support (Backported 2.6.4.)
 - \[AM\] Internal AM (uconf:am.type=internal) (Backported 2.6.4.)
 
-{{< TransferCFT/componentshortname  >}} 2.6.3
+**{{< TransferCFT/componentshortname  >}} 2.6.3**
 
 - \[SSL\] Added FIPS Compliant Algorithms ([uconf](../admin_intro/uconf/uconf_parameters):cft.fips.enable=Yes).
 - \[CORE\] Added PRESTO link protocol support (deprecated after this version).
@@ -422,7 +422,7 @@ Transfer CFT 3.3.2
 - \[PACK\] (Unix/Windows) Added $CFTDIRRUNTIME/profile.d for custom environment.
 - \[MIGR\] (Unix/Windows) Added an integrated migration at installation. See the *Synchrony Platform Installation Guide*.
 
-{{< TransferCFT/componentshortname  >}} 2.6.2
+**{{< TransferCFT/componentshortname  >}} 2.6.2**
 
 - \[AM\] (Unix/Windows) Added PassPort Access Management. [Details](../internal_a_m_start_here/about_passport_am)
 - \[CORE\] Added synchronous control of transfers ([SWAITCAT](../c_intro_userinterfaces/about_cftutil/managing_transfer_states/swaitcat_concepts)).
@@ -452,7 +452,7 @@ Transfer CFT 3.3.2
 - \[CORE\] Extended the size of [NFNAME](../c_intro_userinterfaces/command_summary/parameter_intro/nfname) (PI37) between 2 Transfer CFTs to 512 characters. Backported in 2.4.1, 2.5.1.
 - \[SSL\] Extended to 255 characters CFTSSL [ROOTCID](../c_intro_userinterfaces/command_summary/parameter_intro/rootcid) and [USERCID](../c_intro_userinterfaces/command_summary/parameter_intro/usercid) fields. Backported in 2.4.1, 2.5.1.
 
-{{< TransferCFT/componentshortname  >}} 2.5.1
+**{{< TransferCFT/componentshortname  >}} 2.5.1**
 
 - \[CORE\] Unified the configuration (UCONF) utility. [Details](../admin_intro/uconf)
 - \[SYST\] Added sun-x86-32 support. See the *Synchrony Supported Platforms Guide*.
@@ -478,7 +478,7 @@ Transfer CFT 3.3.2
 - \[SSL\] Added verify x509 extension KEYEXT=[VERIFY](../c_intro_userinterfaces/command_summary/parameter_intro/verify).
 - \[PKIUTIL\] Added extraction capability (PKIEXT) to PKIUTIL. Backported in 2.4.1, V2.5.1.
 
-{{< TransferCFT/componentshortname  >}} 2.4.1
+**{{< TransferCFT/componentshortname  >}} 2.4.1**
 
 - \[GUI\] New Copilot applet GUI. Details
 - \[GUI\] Integrated Web Services for Transfer CFT. [Details](../cft_intro_install/about_this_document_ibmi/using_apis/about_web_services)

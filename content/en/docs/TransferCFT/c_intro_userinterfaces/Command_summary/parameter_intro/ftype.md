@@ -10,7 +10,7 @@
 
 #### CFTRECV, CFTSEND
 
-\[ FTYPE = { c } \]  OS-specific
+**\[ FTYPE = { c } \]  OS-specific**
 
 The file type. Some FTYPE parameter values are OS specific. Refer to the Transfer CFT OS-specific documentation for more information.
 
@@ -18,7 +18,7 @@ The file type. Some FTYPE parameter values are OS specific. Refer to the Transfe
 >
 > When using the SFTP protocol and FTYPE = T, O, X, J or F, the file is considered a text file and there is no specific treatment according to the value. This means that the newline character (EOL character) can be the CRLF (x0Dx0A) or LF (x0A) on Windows, or LF (x0A) on UNIX systems.
 
-UNIX<span id="UNIX_ftype"></span>
+**UNIX<span id="UNIX_ftype"></span>**
 
 
 | FTYPE  | FCODE  | Type of sent file  |
@@ -34,7 +34,7 @@ UNIX<span id="UNIX_ftype"></span>
 
 See also, [UNIX &gt; Transferable files](../../../../cft_intro_install/unix_install_start_here/run_first_time_ux/aix_with_ibm_hacmp_intro/specific_configurations_intro/transferable_files_unix).
 
-Windows
+**Windows**
 
 
 | FTYPE  | FCODE  | Type of sent file  |
@@ -53,7 +53,7 @@ Windows
 
 See also, [Windows &gt; Transferable files](../../../../cft_intro_install/windows_install_start_here/windows_install_start_here/specific_system_functions/transferable_files_win).
 
-z/OS
+**z/OS**
 
 Implicit indicates that the FTYPE is automatically detected by the OS.
 
@@ -84,9 +84,8 @@ HFS file characteristics
 >
 > FTYPE values are OS specific. Refer to the Transfer CFT z/OS documentation for more information.
 
-IBM i (OS400)
-
-Native files
+**IBM i (OS400)**
+**Native files**
 
 The following table lists the different types of files that can be used according to the type of data to transfer.
 
@@ -108,7 +107,7 @@ QQQ\_QQQ\_QQQ
 | ‘Z’  | ‘F’, ‘V’  | **SAVF**  |
 
 
-Default FTYPE or FRECFM value
+**Default FTYPE or FRECFM value**
 
 The behavior of the values ‘’ and ‘ ’, for FTYPE and FRECFM respectively, are not detailed in the following table. These values correspond to `undefined`, meaning that the transfer in emission takes the value of both the file type and the member content..
 
@@ -121,7 +120,7 @@ The behavior of the values ‘’ and ‘ ’, for FTYPE and FRECFM respectively
 | SAVF  | ‘Z’  | ‘F’  |
 
 
-IFS files
+**IFS files**
 
 The following table lists the different types of files that can be used according to the type of data to transfer when using IFS.
 

@@ -66,8 +66,7 @@ Catalog file name. Service files, such as Catalog and Log. This name can be:
 
 #### CFTCOM, CFTFILE, CONFIG
 
-\[FNAME = filename \]   {string 64}
-
+**\[FNAME = filename \]   {string 64}**
 <span id="fname_CFTFILE"></span>
 
 #### 
@@ -76,15 +75,14 @@ Catalog file name. Service files, such as Catalog and Log. This name can be:
 
 #### COPYFILE
 
-\[FNAME = filename \]   {string 512}
-
+**\[FNAME = filename \]   {string 512}**
 <span id="fname_CFTDEST"></span>
 
 #### CFTDEST
 
-\[FNAME = filename\]
+**\[FNAME = filename\]
  {512
-characters }
+characters }**
 
 Name of the file in which the list of the identifiers of the various
 partners, each corresponding to one value of the ID parameter of a CFTPART
@@ -116,7 +114,7 @@ To build this file, the following rules must be followed:
 
 File example:
 
-![$2]($1)
+![Example file names for distribution list](/Images/TransferCFT/fname_dest_ex.png)
 
 <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> does not check the transfer requester access rights for this file.
 
@@ -172,8 +170,8 @@ You can define the filename either in the:
 | a group of concatenated files | a directory name |
 
 
-*When using the complete
-filename*
+***When using the complete
+filename***
 
 The complete path name includes the names of directories, or any other
 organization specific to the environment concerned, used to group files:
@@ -196,7 +194,7 @@ The filename may:
 - Correspond to the
     name of a file with versions (GDG for instance) *z/OS only*
 
-*Using symbolic variables*
+***Using symbolic variables***
 
 The following variables may be used to form the FNAME character string:
 
@@ -232,7 +230,7 @@ The use of &NFNAME is only valid if the Transfer CFT is a receiver server.
 
 This variable is only used in the open mode.
 
-*Receiving a file with versions          *
+***Receiving a file with versions          ***
 
 **z/OS**
 
@@ -267,9 +265,9 @@ directory specified by FNAME.
 
 #### CFTSEND, SEND
 
-\[FNAME = {filename | mask | dirname |
+**\[FNAME = {filename | mask | dirname |
 &lt;file-symb>filename | &lt;file-symb>mask | &lt;file-symb>dirname}\]    {string
-512}
+512} **
 
 > **Note**
 >
@@ -281,9 +279,8 @@ is 512 characters.
 
 When the parameter value is between quotes, it becomes case-sensitive; however on certain platforms, such as UNIX, the value is case-sentive without quotes.
 
-Examples
-
-The following examples use a UNIX syntax, modify accordingly for your environment.
+**Examples**
+**The following examples use a UNIX syntax, modify accordingly for your environment.**
 
 FNAME=filename where the FNAME is expressed as an absolute name:
 

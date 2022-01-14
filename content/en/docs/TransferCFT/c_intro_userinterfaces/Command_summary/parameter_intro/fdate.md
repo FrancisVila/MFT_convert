@@ -8,9 +8,9 @@
 
 #### RECV
 
-\[ FDATE
-= {
-| date } \]
+**\[ FDATE
+= { 0
+| date } \]**
 
 File creation date.
 

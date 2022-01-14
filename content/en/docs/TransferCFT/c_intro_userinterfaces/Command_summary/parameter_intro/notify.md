@@ -8,8 +8,8 @@
 
 #### CFTLOG, CFTSEND, **<span id="notify_CFTRECV"></span>**CFTRECV, SEND, RECV
 
-NOTIFY = {string see
-below}
+**NOTIFY = {string see
+below}**
 
 Defines the destination of the operator
 messages selected according to the value of the OPERMSG parameter as follows:

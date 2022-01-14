@@ -20,9 +20,9 @@ The following secure connections are available:
 - Connections between the UI and the server can be secured. This is accomplished using the HTTPS and SSL/TLS.
 - Connections with partners for file transfers can be secured using SSL/TLS.
 
-Secure connections and descriptions
+**Secure connections and descriptions**
 
-![]($1)
+![](/Images/TransferCFT/sec_guide3.png)
 
 ![](/Images/TransferCFT/sec_legend.png)
 

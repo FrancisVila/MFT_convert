@@ -4,7 +4,7 @@
     "weight": "220"
 }## File type
 
-The behavior of the values ‘’ and ‘ ’, for FTYPE and FRECFM respectively, are not detailed in the following tables. These values correspond to , which means that the transfer in reception takes the value sent through the network. 
+The behavior of the values ‘’ and ‘ ’, for FTYPE and FRECFM respectively, are not detailed in the following tables. These values correspond to undefined, which means that the transfer in reception takes the value sent through the network. 
 
 File type when the file does not exist
 

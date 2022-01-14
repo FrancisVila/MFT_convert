@@ -8,7 +8,7 @@
 
 #### CFTPROT
 
-\[EXITA = identifier\]
+**\[EXITA = identifier\]**
 
 Identifier (32 characters) describing
 the directory EXIT.

@@ -46,7 +46,7 @@ SEND PART=PARIS, MINDATE=20150703, MINTIME=1000, MAXDATE=20151231, MAXTIME=1000,
 - The cycle duration is 7 days (CYCLE/TCYCLE), so activity restarts on July 10, 2015.
 - This pattern repeats itself until the defined end date and time (MAXDATE/MAXTIME).
 
-![]($1)
+![](/Images/TransferCFT/new_cyclic_example.png)
 
 A cyclic transfer request results in the creation of a generic virtual
 transfer entry for the actual transfers. This generic entry is maintained in the
@@ -57,7 +57,7 @@ A generic entry is characterized by
 one of the values indicated in the table below, for the DIAGP field, at
 the time the catalog is queried (LISTCAT CONTENT=BRIEF).
 
-**Generic entry values**
+****Generic entry values****
 
 
 | Diagp value  | Cycle  |

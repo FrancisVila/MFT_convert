@@ -8,10 +8,9 @@
 
 #### COPYFILE
 
-\[ILRECL = {see the comment
-| n} \]   
-
-{0..32768}
+**\[ILRECL = {see the comment
+| n} \]   **
+**{0..32768}**
 
 For records of:
 

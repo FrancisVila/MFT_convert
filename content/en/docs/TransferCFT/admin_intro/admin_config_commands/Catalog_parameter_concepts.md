@@ -2,7 +2,10 @@
     "title": "Catalog attributes ",
     "linkTitle": "CFTCAT - Catalog attributes ",
     "weight": "240"
-}-   Command syntax
+}Related
+topics
+
+- Command syntax
     [CFTCAT](../../../c_intro_userinterfaces/command_summary#CFTCAT)
 - Parameter list
     [CFTCAT](../../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftcat)

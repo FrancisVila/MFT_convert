@@ -59,7 +59,7 @@ Options:
 - --no-core-analysis-gdb: Do not use gdb to analyze the cores. *Unix only*
 - --no-core-analysis-dbx: Do not use dbx to analyze the cores. *Unix only*
 
-Examples
+**Examples**
 
 Only collect information for a given transfer:
 

@@ -75,7 +75,7 @@ communication medium (MEDIACOM parameter). The media that can be used for a give
 medium associated with this system. <a href="../../../admin_intro/admin_config_commands/communication_media_concepts" class="MCXref xref">Communication
 media</a>
 
-**Command syntax**: [CONFIG](../../command_summary#CONFIG)
+****Command syntax**: [CONFIG](../../command_summary#CONFIG)**
 
 QQQ\_QQQ\_QQQ
 
@@ -93,7 +93,7 @@ the CFTUTIL utility operates.
 
 ## Examples
 
-Example 1: redirect output
+**Example 1: redirect output**
 
 This command redirects the CFTUTIL output (used for
 querying the LISTPARM or LISTPART commands, for example) to the file with
@@ -114,8 +114,7 @@ CONFIG      TYPE = COM,
 MEDIACOM = FILE
 FNAME = <filename>
 ```
-
-Example 3: MEDIACOM=FILE
+**Example 3: MEDIACOM=FILE**
 
 Use to select a specific communication file.
 
@@ -132,8 +131,7 @@ To select the second communication file in a CFTUTIL session, enter:
 ```
 CONFIG TYPE=COM,MEDIACOM=FILE,FNAME=$CFTDIRRUNTIME/data/cftcom2
 ```
-
-Example 4: MEDIACOM=TCPIP
+**Example 4: MEDIACOM=TCPIP**
 
 Use to select a TCPIP communication media.
 

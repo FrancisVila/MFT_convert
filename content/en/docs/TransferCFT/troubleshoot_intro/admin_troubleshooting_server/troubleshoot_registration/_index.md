@@ -47,11 +47,9 @@ If Copilot starts, but the Transfer CFT either does not display in the **Produc
 
 If you have the following error in the Transfer CFT log:
 
-XFBCOPT S99015 Central Governance: sending self-registration request
-
-XFBCOPT S99015 navigatorNotifSend: Central Governance: sending self-registration request error: (1103)
-
-Handshake failed (1) SSL\_ERROR\_SSL(1) - error:14090086:SSL routines: ssl3\_get\_server\_certificate:certificate verify failed
+`XFBCOPT S99015 Central Governance: sending self-registration request`
+`XFBCOPT S99015 navigatorNotifSend: Central Governance: sending self-registration request error: (1103)`
+`Handshake failed (1) SSL_ERROR_SSL(1) - error:14090086:SSL routines: ssl3_get_server_certificate:certificate verify failed`
 
 This is a Certificate Signing Request / CSR failure because the {{< TransferCFT/transfercftname  >}} truststore does not contain the {{< TransferCFT/centralgovernancename  >}} root &gt;CA certificate. Perform the steps described in [If CAs change after Transfer CFT registration](https://docs.axway.com/bundle/CentralGovernance_113_UsersGuide_allOS_en_HTML5/page/Content/CFT/cft_registration/t_change_cft_ca.htm).
 
@@ -89,7 +87,7 @@ To have more request details between {{< TransferCFT/centralgovernancename  >}} 
 
 ### Registration fails after installing in service mode when using a firewall
 
-Windows only, firewall enabled
+**Windows only, firewall enabled**
 
 Transfer CFT cannot register in Central Governance when installing Copilot in service mode.
 
@@ -108,7 +106,7 @@ When Central Governance sends the SSL certificates to {{< TransferCFT/components
 1. Set the UCONF `cg.registration_id` to its default value (-1) using the unset command:
 1. Start the Copilot. Copilot starts the registration process.
 
-**More information**
+****More information****
 
 For more information on , refer to the documentation.
 

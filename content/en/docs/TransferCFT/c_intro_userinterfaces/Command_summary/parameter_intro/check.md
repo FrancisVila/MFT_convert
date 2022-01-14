@@ -8,7 +8,7 @@
 
 #### PKICER
 
-\[check = {
+\[check = { YES
 | NO } \]
 
 For PKIUTIL the certificate check during an import.

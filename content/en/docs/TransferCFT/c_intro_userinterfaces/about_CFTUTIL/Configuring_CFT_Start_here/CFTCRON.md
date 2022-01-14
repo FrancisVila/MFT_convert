@@ -148,7 +148,7 @@ procedure. Define these using the EXEC parameter of the CFTCRON command.
 | &amp;SCOUNT | Counter for the Cronjob procedures launched for a specific Identifier |
 
 
-Related
-topics
+**Related
+topics**
 
 - Command syntax [CFTCRON](../../../command_summary#CFTCRON)

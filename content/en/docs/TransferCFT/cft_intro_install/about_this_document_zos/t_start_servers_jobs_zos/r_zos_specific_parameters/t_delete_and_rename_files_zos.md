@@ -61,7 +61,7 @@ Transfer CFT uses the following other QNAMEs:
 
 The CFTFILES ENQs do not need to be broadcast to all systems in the GRS RING.
 
-Related topics
+**Related topics**
 
 - [File access and coding](../file_access_and_coding)
 - [HFS hierarchical files](../c_hfs_hierarchical_files_zos)

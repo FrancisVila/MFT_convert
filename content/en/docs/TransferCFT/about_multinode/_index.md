@@ -9,7 +9,7 @@
 - Multi-node architecture
 - Recovery and dispatching
 
-Terminology
+**Terminology**
 
 The {{< TransferCFT/componentshortname  >}} active-active architecture is based on hosts, nodes, and a shared file system.
 
@@ -68,13 +68,12 @@ The multi-node setup comprises:
 - One **node manager** per host (Copilot component), which monitors all nodes. If a node goes down, the node manager detects the inactivity and restarts it if needed, while taking into account the activity of other node managers. The monitoring mechanism is based on locks provided by the file system lock manager or the resource lock manager. Additionally, the node manager has its own watchdog that is used to prevent incorrect behavior after a shared file system auto-unlock, for instance due to NFSv4 lease time. If the watchdog does not receive a keep-alive from the node manager, all local nodes are killed and relock is requested.
 - One **synchronous communication media dispatcher** per host (Copilot component), which allows the use of the synchronous communication media feature in a multi-node environment.
 
-Normal functioning
+**Normal functioning**
 
-![]($1)
+![](/Images/TransferCFT/normal_multinode.png)
 
-If Host A goes down, then Host B takes over Node 1
-
-![]($1)
+**If Host A goes down, then Host B takes over Node 1**
+**![](/Images/TransferCFT/host_down.png)**
 
 ## Runtime files
 
@@ -130,20 +129,20 @@ If a node fails during the transfer recovery process, the catalog record is lock
 
 In a multi-node architecture there is one primary communication file, and then as many secondary communication files as nodes to control request dispatching.
 
-How does communication between the primary file and secondary files occur?
+**How does communication between the primary file and secondary files occur?**
 
 The dispatcher (CFTMCOM) process controls the relationship between the primary COM file and the specific secondary COM files.
 
-What happens in the case of a communication breakdown?
+**What happens in the case of a communication breakdown?**
 
 No breakdown occurs because there is no communication between the nodes. If the dispatcher fails, another active node takes over as the dispatcher.
 
-When and how is the transfer request removed from the communication file?
+**When and how is the transfer request removed from the communication file?**
 
 - It is removed from the primary communication file once the dispatcher has written it to the secondary communication file.
 - It is then removed from the secondary file once CFTMAIN has processed the transfer request.
 
-How are requests dispatched?
+**How are requests dispatched?**
 
 There are two types of requests, which may be handled differently depending on their type:
 
@@ -152,7 +151,7 @@ There are two types of requests, which may be handled differently depending on t
 
 #### Client transfer request
 
-![]($1)
+![](/Images/TransferCFT/client_multinode_new.png)
 
 ## How remote request dispatching works
 
@@ -164,17 +163,17 @@ All remote requests are going through a load balancer, server transfers, SOAP we
 
 #### Server transfer dispatching
 
-![]($1)
+![](/Images/TransferCFT/server_multi.png)
 
 #### Web API request dispatching
 
-![]($1)
+![](/Images/TransferCFT/api_multinode.png)
 
 ## Troubleshooting multi-node issues
 
 For information on troubleshooting multi-node issues, please refer to <a href="../troubleshoot_intro/admin_troubleshooting_server/admin_troubleshooting_runtime/troubleshoot_multinode" class="MCXref xref">Troubleshoot multi-node</a>.
 
-Related topics
+**Related topics**
 
 - [Multi-node commands](multi_node_commands)
 - [Managing multi-node]()

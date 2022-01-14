@@ -57,7 +57,7 @@ The processing level that is executed when you mix EXEXPRE/EXEC/EXECA and EXESUB
 QQQ\_QQQ\_CHECK check row vs col ...
 
 
-|   | PART  | DEST  | CHILDREN  |
+| CFTDEST (1) vs<br /> CFTSEND/SEND/CFTRECV/RECV (2)  | PART  | DEST  | CHILDREN  |
 | --- | --- | --- | --- |
 | FILE  | L1 + L2 + L3  | L1  | L2 + L3  |
 | LIST  | L1 + L2  | L1  | L2  |

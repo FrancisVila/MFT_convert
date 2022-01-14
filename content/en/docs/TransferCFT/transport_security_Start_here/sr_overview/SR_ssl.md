@@ -30,12 +30,11 @@ SSL termination in Secure Relay is possible using the internal PKI database. As 
     -   TYPE=TCP
     -   PROTOCOL=SR
 1. Define the mandatory parameters RECALLHOST, HOST, and SSLTERM.
-    -   RECALLHOST: The host address on which the Master Agent calls Transfer CFT whenSecure Relay receives an incoming call. If Transfer CFT and the Master Agent run of the same host, use the loopback network interface (for example, 127.0.0.1) instead of the public network interface.
+    -   RECALLHOST: The host address on which the Master Agent calls Transfer CFT when Secure Relay receives an incoming call. If Transfer CFT and the Master Agent run of the same host, use the loopback network interface (for example, 127.0.0.1) instead of the public network interface.
     -   HOST: Designates the network interface that is used on the Router Agent side.
     -   SSLTERM: Set this Boolean to NO for end-to-end SSL.
 
-Example
-
+**Example**
 ```
 CFTNET id = NETSRSSL,
 
@@ -57,7 +56,7 @@ This section describes the CFTPROT object, and how various parameters are relate
 - The SAP parameter is the listening port that is used on the RA side (using the CFTNET HOST parameter as the network interface).
 - The CFTPROT SSL parameter refers to a CFTSSL object, in this case PESITSSL, which is used when Secure Relay performs SSL termination in server mode.
 
-Example
+**Example**
 
 This example uses a CFTNET object called NETSRSSL.
 
@@ -78,7 +77,7 @@ Create a CFTSSL object to supply detailed information to Secure Relay on how the
 - Secure Relay uses the CFTSSL parameters rootcid, usercid and its password, cipher suites list, SSL version and client authentication policy.
 - Secure relay uses a restricted list of cipher suites (cipher suites ‘59’, ‘60’ and ’61 are not supported).
 
-Example
+**Example**
 
 Here the CFTSSL object is used for incoming connections (direct=server).
 
@@ -117,7 +116,7 @@ SSL termination is also used for outgoing connections when the CFTNET object ass
 
 To complete the configuration, create a CFTPART object and a CFTTCP object. In this way the CFTPART refers to the CFTPROT object, and that in turn refers to a CFTNET, which points to Secure Relay. Remember that the only SSL version supported by Secure Relay is TLSV1COMP.
 
-Example
+**Example**
 
 This is an example of the CFTPART and CFTTCP objects configuration, using PESITSSL.
 
@@ -157,8 +156,7 @@ host = <remote_partner_host_address>
     -   HOST: Designates the network interface that is used on the Router Agent side.
     -   SSLTERM: Set this Boolean to YES to enable SSL termination.
 
-Example
-
+**Example**
 ```
 CFTNET id = NETSRSSL,
 
@@ -180,7 +178,7 @@ This section describes the CFTPROT object, and how various parameters are relate
 - The SAP parameter is the listening port that is used on the RA side (using the CFTNET HOST parameter as the network interface).
 - The CFTPROT SSL parameter refers to a CFTSSL object, in this case PESITSSL, which is used when Secure Relay performs SSL termination in server mode.
 
-Example
+**Example**
 
 This example uses a CFTNET object called NETSRSSL.
 
@@ -201,7 +199,7 @@ Create a CFTSSL object to supply detailed information to Secure Relay on how the
 - Secure Relay uses the CFTSSL parameters rootcid, usercid and its password, cipher suites list, SSL version and client authentication policy.
 - Secure relay uses a restricted list of cipher suites (cipher suites ‘59’, ‘60’ and ’61 are not supported).
 
-Example
+**Example**
 
 Here the CFTSSL object is used for incoming connections (direct=server).
 
@@ -240,7 +238,7 @@ SSL termination is also used for outgoing connections when the CFTNET object ass
 
 To complete the configuration, create a CFTPART object and a CFTTCP object. In this way the CFTPART refers to the CFTPROT object, and that in turn refers to a CFTNET, which points to Secure Relay. Remember that the only SSL version supported by Secure Relay is TLSV1COMP.
 
-Example
+**Example**
 
 This is an example of the CFTPART and CFTTCP objects configuration, using PESITSSL.
 

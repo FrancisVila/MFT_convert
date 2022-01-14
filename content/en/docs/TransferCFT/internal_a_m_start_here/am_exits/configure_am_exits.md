@@ -36,7 +36,7 @@ Set the type parameter: `am.type = exit`
 1. **Important**: Remember that the` am.type` is the last parameter to set when activating an AM exit and the first to unset when deactivating it.
 1. Restart the {{< TransferCFT/componentshortname >}} server and {{< TransferCFT/componentshortname >}} UI (Copilot) server.
 
-Example Access Management exit configuration
+**Example Access Management exit configuration**
 
 1. Using command line set the am.type to `none.`  
     **CFTUTIL UCONFSET ID=am.type, VALUE=none**
@@ -57,6 +57,6 @@ This section presents parameters that you may need to set if you are creating an
 - am.exit.custom.ldap\_get\_roles\_filter: The filter used to retrieve the groups that a given user belongs to.  
     For example, if the filter `"(&(objectClass=group)(member=cn=theuser,ou=people,dc=example,dc=com))"` returns the list of groups for the user "theUser", set `am.exit.custom.ldap_get_roles_filter` to `"(&(objectClass=group)(member=cn=%s,ou=people,dc=example,dc=com))"`
 
-Related topics
+**Related topics**
 
 [About Access Management exits](../)

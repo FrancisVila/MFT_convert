@@ -8,7 +8,7 @@
 
 Earlier versions of Transfer CFT used a different message format than version 3.1.3 and higher. This document displays both formats when applicable and available, otherwise only the v23 is used. Using the CFTLOG Format = V24 setting, the log displays as shown:
 
-CFTXXX: fixed text message &lt;variables>
+`CFTXXX: fixed text message <variables>`
 
 **Example**
 

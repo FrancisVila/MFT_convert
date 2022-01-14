@@ -10,7 +10,7 @@ The Transfer CFT *instance* is the environment that the user configures for oper
 
 The tables in this section provide information about the files and allocation requirements for the distribution and instance environments. Note that an ESD installation requires an additional 1100 disk cylinders (3390 disk) of space.
 
-<span id="Distribution_environment file_formats_and_requirements_"></span><span id="kanchor74"></span>
+<span id="Distribution_environment file_formats_and_requirements_"></span><span id="kanchor75"></span>
 
 ## Distribution environment file formats and requirements
 
@@ -39,7 +39,7 @@ The tables in this section provide information about the files and allocation re
 | PKIMSG  | Trusted File messages<br/> PO – FB - 4090<br/> DSNTYPE=LIBRARY | 1  |
 
 
-<span id="Instance"></span><span id="kanchor75"></span>
+<span id="Instance"></span><span id="kanchor76"></span>
 
 ## Instance environment file formats and requirements
 
@@ -83,7 +83,7 @@ The following allocations are required per {{< TransferCFT/componentshortname  >
 - The persistent cache file for PassPort AM (CFTAM, VSAM KSDS) is created when the UCONF AM.type=passport variable is set to **Yes**.
 - To customize INSTALL, SAMPLE, EXEC and UPARM THE library must be PDS and not PDSE.
 
-Related topics
+**Related topics**
 
 - [About Transfer CFT in z/OS](../)
 - [Installation overview]()

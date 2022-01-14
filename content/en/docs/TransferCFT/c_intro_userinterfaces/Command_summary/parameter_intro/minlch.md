@@ -8,9 +8,8 @@
 
 #### CFTNET
 
-\[MINLCH = {1 | n}\] {0..512}
-
-OS400
+**\[MINLCH = {1 | n}\] {0..512}**
+**OS400**
 
 Number of the first logical channel to be used.
 

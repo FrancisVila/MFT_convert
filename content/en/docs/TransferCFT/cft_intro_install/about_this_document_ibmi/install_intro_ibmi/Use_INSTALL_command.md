@@ -10,7 +10,7 @@
 
 After uploading the Transfer CFT IBM i CFT33XL file to the target location, in the Transfer CFT profile you must add the CFTTMP library to the library list. In command line execute:
 
-ADDLIBLE LIB(CFTTMP) POSITION(\*FIRST)     
+`ADDLIBLE LIB(CFTTMP) POSITION(*FIRST)      `
 
 > **Note**
 >

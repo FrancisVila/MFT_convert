@@ -125,7 +125,7 @@ To force the creation of the received file in the EAV section of a volume:
 
 *Or*
 
-CFTRECV FNAME=A.GDG(+1),ATTSUSER=’DSNTYPE=EXTREQ,EATTR=OPT’, WFNAME=’WORK.&PART.&IDTU’
+`CFTRECV FNAME=A.GDG(+1),ATTSUSER=’DSNTYPE=EXTREQ,EATTR=OPT’, WFNAME=’WORK.&PART.&IDTU’`
 
 > **Note**
 >
@@ -138,7 +138,7 @@ To create a large (greater than 215,000 records) Transfer CFT catalog:
 
 `CFTFILE TYPE=CAT,MODE=CREATE,FNAME=’cftv2.CATALOG,EATTR=OPT’,RECNB=7123456`
 
-Related topics
+**Related topics**
 
 - [Coding Transfer CFT file names](../file_access_and_coding)
 - [Working with files](../t_delete_and_rename_files_zos)

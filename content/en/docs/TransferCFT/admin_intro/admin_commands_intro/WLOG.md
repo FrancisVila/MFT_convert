@@ -7,8 +7,5 @@ message (CFTR16I) in the LOG file.
 
 Syntax
 
-[MSG](../../../c_intro_userinterfaces/command_summary/parameter_intro/msg)
-= string
-
-SEVERITY =
-string
+`MSG   = string`
+`SEVERITY =   string`

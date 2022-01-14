@@ -38,17 +38,14 @@ Id.       Root iNum T S C K E  Exp.Date   Delivered to  Delivered by
 4K_ROOT   4K_ROOT R A x            28/07/2039  4k_root           4k_root
 4K_USER   4K_ROOT U A x x        28/07/2039  4k_l1_user1   4k_root
 ```
-
-PKIEXT example
+**PKIEXT example**
 
 The result is a file that contains only information about the 2K\_ROOT and 2K\_INTER certificates.
 
 ```
 PKIUTIL PKIEXT FOUT=PKI.CMD, ROOTCID=2K_ROOT
 ```
-
-LISTPKI example
-
+**LISTPKI example**
 ```
 PKIUTIL LISTPKI ROOTCID=4K_ROOT
 Id. Root iNum T S C K E  Exp.Date   Delivered to  Delivered by

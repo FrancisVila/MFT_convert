@@ -106,17 +106,100 @@ value:
 
 ```
  
+Id.        Root    Type State
+Exp.Date     Delivered to    Delivered by
  
+4KL1CA     4KL1CA  R    INACT
+28/07/2039   4k_l1_ca       
+4k_root
+ 
+4KL1CA1    4KL1CA1 R    ACT  
+28/07/2039   4k_l1_ca       
+4k_root
+ 
+4KROOT     4KROOT  R    ACT  
+28/07/2039   4k_root        
+4k_root
+   
+4K1L1EXP 4KROOT  U    ACT   14/10/2009 !
+4k_l1_user2_exp 4k_root
+   
+4KL1US1  4KROOT  U    ACT  
+28/07/2039   4k_l1_user1     4k_root
+>      
+5 PKICER selected
+ 
+Id.    
+Certificates list
+ENTITY1 4KL1US1,
+4K1L1EXP
+>      
+1 PKIENTITY selected
+ 
+Id.             
+S K Bits
+4KL1USER1       
+A x 4096
+4KL1USER1KEYPRIV I x
+4096
+4KL1USER1KEYPUB 
+A   4096
+>      
+3 PKIKEY selected
 ```
 <span id="CONTENT_BRIEF_Display"></span>
 
 ### CONTENT=BRIEF display (former format, or no model)
 
 ```
+Certificates:
  
+Id.         
+Root         iNum T S C K E
+Exp.Date   Delivered to  Delivered by
+------------
+------------ ---- - - - - - ---------- ------------- -------------
+4KL1CA      
+4KL1CA            R I
+x     28/07/2039 4k_l1_ca     
+4k_root
+4KL1CA1     
+4KL1CA1           R A
+x     28/07/2039 4k_l1_ca     
+4k_root
+4KROOT      
+4KROOT            R A
+x     28/07/2039
+4k_root       4k_root
+4K1L1EXP    
+4KROOT            U A x
+x ! 14/10/2009 4k_l1_user2_e 4k_root
+4KL1US1     
+4KROOT            U A x
+x   28/07/2039 4k_l1_user1   4k_root
  
+Entities:
  
+Id.                             
+Certificate list
+--------------------------------
+---------------------------------
+ENTITY1                         
+4KL1US1
+                                
+4K1L1EXP
+Keys:
  
+Id.                             
+S K Bits
+--------------------------------
+- - ----
+4KL1USER1                       
+A x 4096
+4KL1USER1KEYPRIV                
+I x 4096
+4KL1USER1KEYPUB                 
+A   4096
 ```
 
 Id
@@ -160,11 +243,132 @@ CN (Common name) attribute of the certificate signer DN field.
 ### CONTENT=FULL display (default display)
 
 ```
+<FIELD  Cert
+Id.             =
+'4KL1US1'
+       
+Cert Type            =
+'U'
+       
+Cert Root            =
+'4KROOT'
+       
+Internal num         = ''
+       
+Signer Id.           =
+'4KROOT'
+       
+State               
+= 'ACT'
+       
+Serial number        = '45'
+       
+Delivered to         = '4k_l1_user1'
+       
+Delivered by         = '4k_root'
+       
+Issuer status        = 'missing'
+       
+Expired Before       = '29/07/2009'
+       
+Expired After        = '28/07/2039'
+       
+Comment             
+= ''
+       
+Owner's DN           =
+'/C=FR/ST=HAUTS-DE-SEINE/L=PUTEAUX/O=CFT_SAMPLE/OU=CFT_L1_SAMPLE/CN=4k_l1_user1'
+       
+Signer's DN          =
+'/C=FR/ST=HAUTS-DE-SEINE/L=PUTEAUX/O=CFT_SAMPLE/OU=CFT_SAMPLE/CN=4k_root'
+       
+Private RSA Key size = '4096'
+       
+Usage Key            =
+'Digital Signature, Key Encipherment, Data Encipherment'
+       
+Extended Usage Key   = 'TLS Web Server Authentication, TLS Web Client
+Authentication'
+       
+/>
+>      
+1 PKICER selected
+>      
+1 PKICER without displayed issuer
+>      
+0 PKIENTITY selected
+>      
+0 PKIKEY selected
 ```
 
 ### CONTENT=FULL display (former format, or no model)
 
 ```
+         
+Cert  id.     
+ID         = 4KL1US1
+         
+Cert  type    
+TYPE       = USER
+         
+Root  id.     
+ROOT       = 4KROOT
+         
+Internal num.  INUM       =
+         
+Signer id.    
+SID        = 4KROOT
+         
+State         
+STATE      = ACT
+         
+Serial number  SNUMB      = 45
+         
+Delivered to   Us.CN      =
+         
+4k_l1_user1
+         
+         
+Delivered by   Si.CN      =
+         
+4k_root
+         
+Certificat validity
+         
+-------------------
+         
+Expired Before :         29/07/2009
+00:00:00
+         
+Expired After  :         28/07/2039
+23:59:59
+         
+Comment       
+COMMENT     =
+         
+Owner's DN     OWNER'S DN  =
+         
+/C=FR/ST=HAUTS-DE-SEINE/L=PUTEAUX/O=CFT_SAMPLE/OU=CFT_L1_SAMPLE/
+         
+CN=4k_l1_user1
+   
+      Signer's DN    SIGNER'S DN =
+         
+/C=FR/ST=HAUTS-DE-SEINE/L=PUTEAUX/O=CFT_SAMPLE/OU=CFT_SAMPLE/CN=
+         
+4k_root
+         
+Private Key type  RSA      =  4096 bits
+         
+Usage
+Key                 
+=
+         
+Digital Signature, Key Encipherment, Data Encipherment
+         
+Extended Usage Key         =
+         
+TLS Web Server Authentication, TLS Web Client Authentication
 ```
 
 Certificate id

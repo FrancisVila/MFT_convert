@@ -6,7 +6,7 @@
 
 #### SEND
 
-\[SEND TYPE = NACK\]
+**\[SEND TYPE = NACK\]**
 
 Via negative acknowledgments sent in a PeSIT Hors SIT message, the
 final partner signals to the initial sender of the file that application
@@ -15,11 +15,11 @@ errors were detected.
 If the initial sender does not support this function, the final partner does not transmit the
 negative acknowledgement and the Transfer CFT log file displays:
 
-CFTT93W PART=XFB1 IDS=00008 Negative ack not supported by server
+`CFTT93W PART=XFB1 IDS=00008 Negative ack not supported by server`
 
 #### CFTPROT, CFTPART
 
-\[ NACK = { YES | <u>NO</u> } \]
+**\[ NACK = { YES | <u>NO</u> } \]**
 
 This parameter enables or disables the NACK feature in either a partner or protocol definition for a non Transfer CFT product.
 

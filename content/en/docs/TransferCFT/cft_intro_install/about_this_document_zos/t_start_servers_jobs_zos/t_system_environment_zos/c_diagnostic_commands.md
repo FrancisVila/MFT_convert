@@ -285,6 +285,5 @@ Real space used by CFT 0116BEA0 freed on pages 0003A160 allocated below 002B6000
 
 The formatting is found in the SGTRACE file, such as in a z/OS dump, and calls the same module as the dump.
 
-Related topics
-
-[The ? command]()
+**Related topics**
+**[The ? command]()**

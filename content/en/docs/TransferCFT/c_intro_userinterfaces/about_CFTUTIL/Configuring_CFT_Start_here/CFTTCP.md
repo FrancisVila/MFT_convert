@@ -5,8 +5,8 @@
 }This topic describes the CFTTCP command. Use this command to define the network parameters of partners
 for a given type of network.
 
-Related
-topics
+**Related
+topics**
 
 - [CFTTCP syntax](../../../command_summary#CFTTCP)
 
@@ -30,7 +30,7 @@ topics
 
 ## CFTTCP
 
-z/OS, IBM i , UNIX, Windows
+**z/OS, IBM i , UNIX, Windows**
 
 The CFTTCP command defines the network parameters associated with a
 partner for a TCP/IP connection.
@@ -69,8 +69,7 @@ with a partner for a TCP/IP connection.
 | <a href="../../../command_summary/parameter_intro/retryn">RETRYN</a>  | Use this field to specify the number of reconnection attempts to make with a time interval of retryw between attempts. |
 
 
-Example
-
+**Example**
 ```
 CFTTCP   MODE     = CREATE, 
 /\* TCP access point  \*/

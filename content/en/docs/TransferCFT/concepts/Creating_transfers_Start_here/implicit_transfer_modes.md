@@ -51,7 +51,7 @@ The figures below indicate these possibilities.
 **Receiver/requester transfer in implicit
 send mode: closed mode - explicit file names**
 
-![]($1)
+![](/Images/TransferCFT/Rec_tx_implicit_send_closed_explicit_file.gif)
 
 In the figure above, the name assigned (FNAME = X), at the requester
 end and the name of the file to be sent at the server end (FNAME = Y)
@@ -60,7 +60,7 @@ are explicit.
 **Receiver/requester transfer in implicit
 send mode: closed mode - symbolic variable at the requester end**
 
-![]($1)
+![](/Images/TransferCFT/Rec_tx_implicit_send_closed_symbolic_variable_at_req.gif)
 
 In the above figure, the name assigned at the requester end is defined
 using the symbolic variable &IDT which provides the possibility of
@@ -70,7 +70,7 @@ in PeSIT protocol, for example).
 **Receiver/requester transfer in implicit
 send mode: closed mode - symbolic variable at the server end**
 
-![]($1)
+![](/Images/TransferCFT/rec_req_tx_implicit_send_closed_symbolic_var_at_server.gif)
 
 In the above figure, the name of the file to be sent at the server end
 is defined using the symbolic variable &PART which provides the possibility
@@ -125,7 +125,7 @@ variables (see the previous paragraph).
 **Receiver/requester transfer in implicit
 send mode: open mode - at the requester end**
 
-![]($1)
+![](/Images/TransferCFT/rec_req_tx_implicit_send_open_at_req.gif)
 
 *To implement
 the open mode at the server end:*
@@ -154,7 +154,7 @@ parameter may be explicit or locally defined using symbolic variables
 **Receiver/requester transfer in implicit
 send mode: open mode at the server end**
 
-![]($1)
+![](/Images/TransferCFT/rec_req_tx_implicit_send_open_at_server.gif)
 
  
 
@@ -172,4 +172,4 @@ This possibility is represented in the following diagram.
 **Receiver/requester transfer in implicit
 send mode: open mode at the requester and server end**
 
-![]($1)
+![](/Images/TransferCFT/rec_req_tx_implicit_send-open_at_req_and_server.gif)

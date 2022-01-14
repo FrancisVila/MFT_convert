@@ -25,7 +25,7 @@ files.
 
 ### Non-deletion of temporary batch files after execution
 
-Environment variable
+**Environment variable**
 
 <span id="CFTNODEL"></span>CFTNODEL
 
@@ -83,14 +83,6 @@ in a different batch file to that started by Transfer CFT. The batch file
 started by Transfer CFT calls the batch file containing the environment
 variable settings.
 
-Example
-
-/\* BATCH started by CFT \*/  
-call pos\_env  
-CFTUTIL SEND PART = &part, IDF = %IDF%  
-...
-
-/\* BATCH pos\_env called by the batch file started by CFT
-\*/  
-SET IDF=TEST  
-...
+**Example**
+`/* BATCH started by CFT */call pos_envCFTUTIL SEND PART = &part, IDF = %IDF%...`
+`/* BATCH pos_env called by the batch file started by CFT   */SET IDF=TEST...`

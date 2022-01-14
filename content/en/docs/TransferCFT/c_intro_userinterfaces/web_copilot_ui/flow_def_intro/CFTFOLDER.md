@@ -53,7 +53,7 @@ Use the following CFTFOLDER parameters to configure folder monitoring for each 
 - /
 - For \\ / : \* ? " &lt; > |
 
-Related topics
+**Related topics**
 
 - <a href="../../../../app_integration_intro/intro_folder_monitor" class="MCXref xref">Introduction to folder monitoring</a>
 - <a href="../../../../app_integration_intro/intro_folder_monitor/folder_monitor_uconf" class="MCXref xref">Deprecated folder monitoring (UCONF)</a>

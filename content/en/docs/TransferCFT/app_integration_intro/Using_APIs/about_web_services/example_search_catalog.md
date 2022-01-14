@@ -166,6 +166,6 @@ In the following response the return code is 3, successful, but the LISCAT\_ARRA
 
 The exact message text may vary depending on the selected COM media type (File or TCP).
 
-Related topics
+**Related topics**
 
 [Get started with Web services](../get_started_web_services)

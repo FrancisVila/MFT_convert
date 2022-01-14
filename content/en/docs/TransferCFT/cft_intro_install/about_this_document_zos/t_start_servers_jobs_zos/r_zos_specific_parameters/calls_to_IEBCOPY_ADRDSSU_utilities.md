@@ -70,9 +70,8 @@ An IEBCOPY call enables the transfer to all members, or to a selected group of m
 
 *Or*
 
-SEND ..FNAME=#MY.LOAD.LIBRARY(\*),
-
-WFNAME=TEMP.FILE.&PART.&IDTU
+`SEND  ..FNAME=#MY.LOAD.LIBRARY(*),`
+`WFNAME=TEMP.FILE.&PART.&IDTU`
 
 And the CFTRECV:
 
@@ -310,6 +309,5 @@ The CFTPROT RTO=seconds parameter must contain a value expressed in seconds that
 
 For ADRDSSU and RACF, the TOLERATE (ENQFAILURE) parameter requires READ access to the FACILITY class STGADMIN.ADR.DUMP.TOLERATE.ENQF resource, from the sending side.
 
-Related topics
-
-[Transfer CFT z/OS general performance concepts](../../zos_performance)
+**Related topics**
+**[Transfer CFT z/OS general performance concepts](../../zos_performance)**

@@ -41,14 +41,11 @@ For a file called REPORTS containing the following list:
 - file2
 - file3
 
-Windows
-
+**Windows**
 ```
 CFTUTIL SEND part=tokyo, idf=myfiles, fname=#REPORTS
 ```
-
-UNIX
-
+**UNIX**
 ```
 CFTUTIL SEND part=tokyo, idf=myfiles, fname=@REPORTS
 ```
@@ -189,11 +186,9 @@ A heterogeneous send occurs between two Transfer CFT that run on dissimilar oper
 systems. This type of group file transfer triggers the transfer
 of all files belonging to the group.
 
-General syntax
-
-Windows: fname =#directory\\\*
-
-Unix: fname =@directory/\*
+**General syntax**
+`Windows: fname =#directory\* `
+`Unix: fname =@directory/* `
 
 #### Force heterogeneous mode for a group of files
 
@@ -206,7 +201,7 @@ To force heterogeneous mode:
 1. Access the unified configuration utility using either [command line](../../../admin_intro/uconf/uconf_w_cftutil) or the UI.
 1. Set the following parameter to enable forced heterogeneous exchanges for group file transfers.
 
-Unix/Windows
+**Unix/Windows**
 
 
 | Parameter  | Default  | Description  |
@@ -257,11 +252,9 @@ catalog entry has been deleted.
 The file attributes defined for the transfer (CFTRECV or RECV command)
 apply to the copied/concatenated WFNAME file.
 
-<span class="autonumber"></span>**Sending to a remote site**
-
-<span class="autonumber"></span>
-![]($1)
-
+**<span class="autonumber"></span>**Sending to a remote site****
+**<span class="autonumber"></span>
+![](/Images/TransferCFT/send_to_remote_site.png)**
 <span id="Heterogeneous send"></span>
 
 #### Sending to a remote site with a different operating system in heterogeneous mode
@@ -296,10 +289,9 @@ transferred to the partner via a generic request.
 A receiving <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> can specify the name of each file received via the
 &FROOT, &FPATH and &FSUF symbolic variables.
 
-Sending to a remote site with a different
-operating system
-
-![]($1)
+**Sending to a remote site with a different
+operating system**
+**![](/Images/TransferCFT/new_group_files.png)**
 
 Example
 

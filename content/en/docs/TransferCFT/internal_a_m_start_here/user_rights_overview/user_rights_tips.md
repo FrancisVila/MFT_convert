@@ -72,7 +72,7 @@ For more information, see the following platform specific guides for the appropr
 - z/OS - [Installation and Operation Guide](https://docs.axway.com/bundle/TransferCFT_38_InstallationGuide_mvs_en_PDF/resource/TransferCFT_InstallationGuide_mvs_en.pdf)
 - IBM i - [Installation and Operation Guide](https://docs.axway.com/bundle/TransferCFT_38_InstallationGuide_os400_en_PDF/resource/TransferCFT_InstallationGuide_os400_en.pdf)
 
-Related topics
+**Related topics**
 
 - [About system users](../)
 - [User rights use case scenarios](../user_rights_security_scenarios)

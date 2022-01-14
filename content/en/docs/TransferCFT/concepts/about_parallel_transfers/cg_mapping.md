@@ -10,7 +10,7 @@
 | Disconnect timeout  | 0-3600 (60)  | DISCTR, DISCTC  | The wait timeout for either a response to the protocol connection request or to the partner in the connection, before disconnecting.  |
 
 
-Related topics
+**Related topics**
 
 - [About parallel transfers](../)
 - [FAQ and troubleshooting](../faq)

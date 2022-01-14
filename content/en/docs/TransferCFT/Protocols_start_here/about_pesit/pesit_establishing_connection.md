@@ -17,7 +17,7 @@ being degraded by the systematic establishing of a protocol connection.
 
 Time-out role
 
-![$2]($1)
+![Protocol session time out role betweeen a requester and server ](/Images/TransferCFT/Timeout_role3.gif)
 
 #### PeSIT CFT/CFT
 
@@ -36,8 +36,8 @@ for which it was initially server.
 
 One-way protocol connection
 
-![$2]($1)
+![One way protocol session connection between requester and server](/Images/TransferCFT/One_way_protocol_connection.gif)
 
 Two-way protocol connection
 
-![$2]($1)
+![Two way protocol session connection between requester and server](/Images/TransferCFT/Two_way_protocol_connection.gif)

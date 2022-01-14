@@ -36,33 +36,31 @@ To test the configuration, proceed as follows:
 1. Generate the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> internal datafiles
     using *cftinit* with one of the two proposed configuration files:
 
-     cftinit cft-tcp.conf
+`     cftinit cft-tcp.conf`
 
 1. When the *cftinit complete*
     message is displayed, run <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> using the command:
 
-     cft start
+`     cft start`
 
 1. When the *CFTMAIN process
     ID is xxxxx* message is displayed, perform one or more transfers:
 
-     CFTUTIL send part=BOSTON,idf=TXT
+`     CFTUTIL send part=BOSTON,idf=TXT`
 
 1. Check that the transfers are
     complete:
 
-     cftcatab
+`     cftcatab`
 
 1. Run the sample program:
 
-     cd &lt;installdir>/runtime/src/capi ; ./APIXMP1
+`     cd <installdir>/runtime/src/capi ; ./APIXMP1`
 
-<span class="bold_in_para">Results</span>: The result should correspond to the catalog contents:
+**Results**: The result should correspond to the catalog contents:
 
-> PART=NEW YORK, IDT=&lt;dynamic identifier>,IDF=TXT  
-> PART=BOSTON ,IDT=&lt;dynamic identifier>,IDF=TXT  
-> APIXMP1 \_ 2 record(s) found
+> `PART=NEW YORK, IDT=<dynamic identifier>,IDF=TXTPART=BOSTON ,IDT=<dynamic identifier>,IDF=TXTAPIXMP1 _ 2 record(s) found`
 
 1. Stop <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>:
 
-     cft stop
+`     cft stop`

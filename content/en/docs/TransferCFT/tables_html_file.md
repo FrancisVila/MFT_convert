@@ -33,7 +33,7 @@
 ============================== table nb count(2) ============================================
 
 
-| Functionality  | Central Governance<br />  | Transfer CFT user interface<br />  |
+| Functionality  | Central Governance<br /> or Flow Manager | Transfer CFT user interface<br />  |
 | --- | --- | --- |
 | Administration | X  | X  |
 | Configuration  | X*  | X  |
@@ -105,7 +105,7 @@
 | Copilot Java applet  | Lower than 3.8  | 3.8 and higher  | The Copilot Java applet was removed from the product. Users are invited to use the Transfer CFT UI or Flow Manager for a graphical UI experience.  |
 | SQLite database  | 3.7 and lower  | 3.8 and higher  | The CFTPARM object's PARTFNAM and PKIFNAME fields are obsolete for Windows, UNIX, and HP NonStop. |
 | FTYPE=T<br/> *Windows only* | 3.2.4 to 3.7 without appropriate patch or SP*  | 3.8 and higher  | On Windows systems, note the following difference when FTYPE=T.<br/> • For versions 3.2.4 to 3.7 without the patch, an empty line terminated by a 1A character is transmitted.<br/> • Prior to 3.2.4 and for the versions with the SP or patch applied, an empty line terminated by a 1A character is not transmitted.<br/> *3.7 SP1 (patch), 3.3.2 SP8, 3.6 SP3, 3.8 |
-| Visual C++ Redistributable Package for Visual Studio 2019 &lt;/td&gt;  | 3.6 and lower  | 3.7 and higher  | Transfer CFT on Windows requires the **Visual C++ Redistributable Package for Visual Studio 2019** for proper functioning. This provides the necessary library files (DLL) for Transfer CFT.<br/> You must install <code>vcredist_x64.exe</code> prior to installing or upgrading Transfer CFT.<br/> **Issue**<br/> If you perform an upgrade without first installing the Redistributable package, the runtime is not imported and Transfer CFT will not operate correctly. The following information displays in the <code>&lt;installdir&gt;/install.log</code> file:<br/> Script stderr:<br/> child killed: unknown signal<br/> <br/> Fail to import RUNTIME data.<br/> Problem running post-install step. Installation may not complete correctly<br/> Fail to import RUNTIME data.<br/> **Corrective action**<br/> • Install the Redistributable package.<br/> • From the <code>cmd </code>console, load the profile.<br/> • Import the runtime data by running the import command to complete the upgrade.<br/> • Check that the script executed correctly. |
+| Visual C++ Redistributable Package for Visual Studio 2019 &lt;/td&gt;  | 3.6 and lower  | 3.7 and higher  | Transfer CFT on Windows requires the **Visual C++ Redistributable Package for Visual Studio 2019** for proper functioning. This provides the necessary library files (DLL) for Transfer CFT.<br/> You must install <code>vcredist_x64.exe</code> prior to installing or upgrading Transfer CFT.<br/> **Issue**<br/> If you perform an upgrade without first installing the Redistributable package, the runtime is not imported and Transfer CFT will not operate correctly. The following information displays in the <code>&lt;installdir&gt;/install.log</code> file:<br/> <code>Script stderr:</code> <code>child killed: unknown signal</code> <code> </code> <code>Fail to import RUNTIME data.</code> <code>Problem running post-install step. Installation may not complete correctly</code> <code>Fail to import RUNTIME data.</code> **Corrective action**<br/> • Install the Redistributable package.<br/> • From the <code>cmd </code>console, load the profile.<br/> • Import the runtime data by running the import command to complete the upgrade.<br/> • Check that the script executed correctly. |
 | LISTPKI  | 3.6 and lower  | 3.7 and higher  | To use the new LISTPKI format, copy the <code>dspcnf.xml</code> model file from <code>&lt;installdir&gt;/distrib/template/conf</code> to the <code>&lt;runtimedir&gt;/conf.</code>  |
 | CFTACCNT  | 3.5 and lower  | 3.6 and higher  | Updated the documentation for the account file in v24 format. Please note the changes in field length as described in the CFTACCNT list. |
 | SORTBY  | 3.5 and lower  | 3.6 and higher  | Catalog records are no longer displayed by IDTU. To have the same display as in previous versions, use the SORTBY parameter as follows:<br /> <code>listcat sortby=idtu</code> |
@@ -124,7 +124,7 @@
 | ROOTCID=NONE  | 3.1.3  | 3.2.2 and higher  | Non authentication method was available in 3.1.3 and lower (anonymous TLS connection).<br/> **Impact**<br/> This support has been removed in {{&lt; TransferCFT/transfercftname &gt;}} 3.2.2 and higher. You must update the ROOTCID parameter. |
 | TLS  | 3.1.3 or lower  | 3.2.2 and higher  | To comply with security standards, as of Transfer CFT version 3.2.2 the use of the cipher suites 59, 60, and 61 is restricted to TLS 1.2 exclusively.<br/> **Impact**<br/> This means that if some of your partners use a version of Transfer CFT lower than 3.2.2 that does not support TLS 1.2, and you are using ciphers 59, 60 and 61, which requires TLS 1.2 in version 3.2.2 and higher, you must add another cipher in the cipher list and remove ciphers 59, 60, 61 from the partner's cipher list.<br/> <blockquote> **Note**<br/> You do not have to remove ciphers 59, 60, 61 in the partner cipher list if you apply the Transfer CFT patch 3.0.1 SP11.<br/> </blockquote>  |
 | Rotate the log  | 3.0.1 or lower  | 3.1.3 and higher  | Changed the switch log feature behavior.<br/> In version 3.0.1 or lower, there were two files that automatically alternated.<br/> **Impact**<br/> In version 3.1.3 and higher if you want to continue this functionality, you must set the alternate log file's uconf value <code>cft.cftlog.afname</code> to the alternate file path (for example, <code>$CFTRUNTIME/log/cftloga</code>). |
-| Demo certificates  | 3.0.1 or lower  | 3.1.2 and higher  | Axway no longer delivers the template certificates used in the Transfer CFT SSL.<br/> Impact<br/> If you were using the demo certificates, import your proper certificates and replace in the PKI database as the Demo certificates are expired. |
+| Demo certificates  | 3.0.1 or lower  | 3.1.2 and higher  | Axway no longer delivers the template certificates used in the Transfer CFT SSL.<br/> **Impact** If you were using the demo certificates, import your proper certificates and replace in the PKI database as the Demo certificates are expired. |
 | CFTPARM <br/> key parameter | 2.7.1 or lower  | 3.0.1 and higher  | If you had the CFTPARM key parameter set directly to a value, you must modify this so that key parameter points to an indirection file containing the license key.  |
 
 
@@ -594,23 +594,6 @@
 ============================== table nb count(39) ============================================
 
 
-| Utility  | Definition  |
-| --- | --- |
-| <a href="#cftinit">cftinit</a>  | General Transfer CFT initialization utility.  |
-| <a href="#cftutil">cftutil</a>  | Simplified display of the standard CFTUTIL commands.  |
-| <a href="#cftupdate">cftupdate</a>  | Management Utility updating the Transfer CFT configuration.  |
-| <a href="#cftcatal">cftcatal</a>  | Utility migrating and/or extending the {{&lt; TransferCFT/componentshortname &gt;}} catalog file.  |
-| <a href="#xfbadm">xfbadmgrp</a>  | Group management utility (all users accessing the Transfer CFT Copilot server).  |
-| <a href="#xfbadmusr1">xfbadmusr</a>  | Utility managing users accessing the Transfer CFT Copilot server.  |
-| <a href="#xvi">xvi</a>  | Utility processing the conversion tables.  |
-| <a href="#Conversion_tables">atoe</a>  | ISO 8859-1 ASCII to EBCDIC conversion table.  |
-| <a href="#Conversion_tables">etoa</a>  | EBCDIC to ISO 8859-1 ASCII conversion table.  |
-
-
-
-============================== table nb count(40) ============================================
-
-
 | Topic  | Details  |
 | --- | --- |
 | <a href="creating_an_api_application">Creating an API application</a> | Describes the procedure to create an API application in {{&lt; TransferCFT/componentshortname &gt;}} UNIX. |
@@ -620,7 +603,7 @@
 
 
 
-============================== table nb count(41) ============================================
+============================== table nb count(40) ============================================
 
 
 | Command | Description |
@@ -630,7 +613,7 @@
 
 
 
-============================== table nb count(42) ============================================
+============================== table nb count(41) ============================================
 
 
 | Command | Description |
@@ -644,7 +627,7 @@
 
 
 
-============================== table nb count(43) ============================================
+============================== table nb count(42) ============================================
 
 
 | Command | Description |
@@ -657,7 +640,7 @@
 
 
 
-============================== table nb count(44) ============================================
+============================== table nb count(43) ============================================
 
 
 | Command | Description |
@@ -674,7 +657,7 @@
 
 
 
-============================== table nb count(45) ============================================
+============================== table nb count(44) ============================================
 
 
 | Notation  | Object  | Value  |
@@ -688,7 +671,7 @@
 
 
 
-============================== table nb count(46) ============================================
+============================== table nb count(45) ============================================
 
 
 | **Objet**  | **Default name**  |
@@ -703,7 +686,7 @@
 
 
 
-============================== table nb count(47) ============================================
+============================== table nb count(46) ============================================
 
 
 | Parameter  | Automatically detected on transmission  |
@@ -716,7 +699,7 @@
 
 
 
-============================== table nb count(48) ============================================
+============================== table nb count(47) ============================================
 
 
 | FTYPE  | FCODE  | Type of sent file  |
@@ -731,7 +714,7 @@
 
 
 
-============================== table nb count(49) ============================================
+============================== table nb count(48) ============================================
 
 
 | FTYPE  | FRECFM  | Type of received file  |
@@ -749,7 +732,7 @@
 
 
 
-============================== table nb count(50) ============================================
+============================== table nb count(49) ============================================
 
 
 |   | Step  | Details  | More info  |
@@ -762,7 +745,7 @@
 
 
 
-============================== table nb count(51) ============================================
+============================== table nb count(50) ============================================
 
 
 | Component  | Port |
@@ -781,7 +764,7 @@
 
 
 
-============================== table nb count(52) ============================================
+============================== table nb count(51) ============================================
 
 
 | Type  | Location  | Certificate  | Expires  |
@@ -792,7 +775,7 @@
 
 
 
-============================== table nb count(53) ============================================
+============================== table nb count(52) ============================================
 
 
 | Parameter  | Automatic or default  | Description  | UCONF  |
@@ -802,7 +785,7 @@
 
 
 
-============================== table nb count(54) ============================================
+============================== table nb count(53) ============================================
 
 
 | Parameter  | Automatic or default  | Description  | UCONF  |
@@ -816,7 +799,7 @@
 
 
 
-============================== table nb count(55) ============================================
+============================== table nb count(54) ============================================
 
 
 | Parameter  | Automatic or default  | Description  | UCONF  |
@@ -827,7 +810,7 @@
 
 
 
-============================== table nb count(56) ============================================
+============================== table nb count(55) ============================================
 
 
 | Parameter  | Automatic or default  | Description  | UCONF  |
@@ -848,7 +831,7 @@
 
 
 
-============================== table nb count(57) ============================================
+============================== table nb count(56) ============================================
 
 
 | Parameter  | Automatic or default  | Description  | UCONF  |
@@ -860,7 +843,7 @@
 
 
 
-============================== table nb count(58) ============================================
+============================== table nb count(57) ============================================
 
 
 | Parameter  | Automatic or default  | Description  | UCONF  |
@@ -876,7 +859,7 @@
 
 
 
-============================== table nb count(59) ============================================
+============================== table nb count(58) ============================================
 
 
 | Parameter  | Automatic or default  | Description  | UCONF  |
@@ -891,7 +874,7 @@
 
 
 
-============================== table nb count(60) ============================================
+============================== table nb count(59) ============================================
 
 
 | Parameter  | Automatic or default  | Description  | UCONF  |
@@ -909,7 +892,7 @@
 
 
 
-============================== table nb count(61) ============================================
+============================== table nb count(60) ============================================
 
 
 | Parameter  | Automatic or default  | Description  | UCONF  |
@@ -918,7 +901,7 @@
 
 
 
-============================== table nb count(62) ============================================
+============================== table nb count(61) ============================================
 
 
 | Parameter  | Automatic or default  | Description  | UCONF  |
@@ -927,7 +910,7 @@
 
 
 
-============================== table nb count(63) ============================================
+============================== table nb count(62) ============================================
 
 
 | Screen  | Description  |
@@ -945,7 +928,7 @@
 
 
 
-============================== table nb count(64) ============================================
+============================== table nb count(63) ============================================
 
 
 | CFT_Full_Hostname  | Host Address of the local server: FQDN (Fully Qualified Domain Name) or IP Address.<br/> When you re installing a cluster, there are two ways to define this parameter:<br/> • If you do not set this in the silent file, the install determines it (if the machine is correctly configured)<br/><br/> • Set the FQDN for each machine in the cluster, that is, for each host installation |
@@ -958,7 +941,7 @@
 
 
 
-============================== table nb count(65) ============================================
+============================== table nb count(64) ============================================
 
 
 | Operating system  | File system  |
@@ -971,7 +954,7 @@
 
 
 
-============================== table nb count(66) ============================================
+============================== table nb count(65) ============================================
 
 
 | Operating system  | Supported  | Unsupported  |
@@ -985,7 +968,7 @@
 
 
 
-============================== table nb count(67) ============================================
+============================== table nb count(66) ============================================
 
 
 | Correct option  | Incorrect option  |
@@ -1000,7 +983,7 @@
 
 
 
-============================== table nb count(68) ============================================
+============================== table nb count(67) ============================================
 
 
 | Client  | Server  | Internal data  | Transferable data  | Performance  |
@@ -1012,7 +995,7 @@
 
 
 
-============================== table nb count(69) ============================================
+============================== table nb count(68) ============================================
 
 
 | CFT_Full_Hostname  | Host Address of the local server: FQDN (Fully Qualified Domain Name) or IP Address.<br/> When you re installing a cluster, there are two ways to define this parameter:<br/> • If you do not set this in the silent file, the installation determines it (if the machine is correctly configured)<br/><br/> • Set the FQDN for each machine in the cluster, that is, for each host installation |
@@ -1023,7 +1006,7 @@
 
 
 
-============================== table nb count(70) ============================================
+============================== table nb count(69) ============================================
 
 
 | Operating system  | File system  |
@@ -1036,7 +1019,7 @@
 
 
 
-============================== table nb count(71) ============================================
+============================== table nb count(70) ============================================
 
 
 | Operating system  | Supported  | Unsupported  |
@@ -1050,7 +1033,7 @@
 
 
 
-============================== table nb count(72) ============================================
+============================== table nb count(71) ============================================
 
 
 | Recommended option  | Not recommended  |
@@ -1065,7 +1048,7 @@
 
 
 
-============================== table nb count(73) ============================================
+============================== table nb count(72) ============================================
 
 
 | Client  | Server  | Internal data  | Transferable data  | Performance  |
@@ -1077,7 +1060,7 @@
 
 
 
-============================== table nb count(74) ============================================
+============================== table nb count(73) ============================================
 
 
 | Parameter in trkapi.cfg | Parameter names in UCONF |
@@ -1098,7 +1081,7 @@
 
 
 
-============================== table nb count(75) ============================================
+============================== table nb count(74) ============================================
 
 
 | Parameter in copconf.ini | Parameter name in UCONF |
@@ -1127,7 +1110,7 @@
 
 
 
-============================== table nb count(76) ============================================
+============================== table nb count(75) ============================================
 
 
 | Version 2.7.1 and higher  | Version 2.7.0 and lower  |
@@ -1140,7 +1123,7 @@
 
 
 
-============================== table nb count(77) ============================================
+============================== table nb count(76) ============================================
 
 
 | copilot.misc.createprocessasuser  | PassPort AM<br/> status | Rights to define  |
@@ -1152,7 +1135,7 @@
 
 
 
-============================== table nb count(78) ============================================
+============================== table nb count(77) ============================================
 
 
 | Parameter  | Automatically detected on transmission  |
@@ -1165,7 +1148,7 @@
 
 
 
-============================== table nb count(79) ============================================
+============================== table nb count(78) ============================================
 
 
 | FTYPE  | FCODE  | Type of sent file  |
@@ -1181,7 +1164,7 @@
 
 
 
-============================== table nb count(80) ============================================
+============================== table nb count(79) ============================================
 
 
 | FTYPE  | FRECFM  | Type of received file  |
@@ -1199,7 +1182,7 @@
 
 
 
-============================== table nb count(81) ============================================
+============================== table nb count(80) ============================================
 
 
 | Working file  | Logical name  | Comment  |
@@ -1218,7 +1201,7 @@
 
 
 
-============================== table nb count(82) ============================================
+============================== table nb count(81) ============================================
 
 
 | Letter  | Type of file  |
@@ -1231,7 +1214,7 @@
 
 
 
-============================== table nb count(83) ============================================
+============================== table nb count(82) ============================================
 
 
 | Name of the Trace file  | Source of the problem  |
@@ -1243,7 +1226,7 @@
 
 
 
-============================== table nb count(84) ============================================
+============================== table nb count(83) ============================================
 
 
 | File  | Description  |
@@ -1254,7 +1237,7 @@
 
 
 
-============================== table nb count(85) ============================================
+============================== table nb count(84) ============================================
 
 
 |   | Description  | Windows  | Unix  | z/OS  | IBM i  |
@@ -1267,7 +1250,7 @@
 
 
 
-============================== table nb count(86) ============================================
+============================== table nb count(85) ============================================
 
 
 | File  | Info  | Allocation in cylinders  |
@@ -1295,7 +1278,7 @@
 
 
 
-============================== table nb count(87) ============================================
+============================== table nb count(86) ============================================
 
 
 | **File** | **Environment** | **Allocation** |
@@ -1328,7 +1311,7 @@
 
 
 
-============================== table nb count(88) ============================================
+============================== table nb count(87) ============================================
 
 
 | Component  | Port |
@@ -1347,7 +1330,7 @@
 
 
 
-============================== table nb count(89) ============================================
+============================== table nb count(88) ============================================
 
 
 | Type  | Location  | Certificate  | Expires  |
@@ -1358,7 +1341,7 @@
 
 
 
-============================== table nb count(90) ============================================
+============================== table nb count(89) ============================================
 
 
 | FMID | Format |
@@ -1367,7 +1350,7 @@
 
 
 
-============================== table nb count(91) ============================================
+============================== table nb count(90) ============================================
 
 
 | Question | Default value |
@@ -1379,7 +1362,7 @@
 
 
 
-============================== table nb count(92) ============================================
+============================== table nb count(91) ============================================
 
 
 | Member Name | Description |
@@ -1389,7 +1372,7 @@
 
 
 
-============================== table nb count(93) ============================================
+============================== table nb count(92) ============================================
 
 
 | Member name | Description |
@@ -1398,7 +1381,7 @@
 
 
 
-============================== table nb count(94) ============================================
+============================== table nb count(93) ============================================
 
 
 | File Number | Data Set Suffix | Description |
@@ -1421,7 +1404,7 @@
 
 
 
-============================== table nb count(95) ============================================
+============================== table nb count(94) ============================================
 
 
 | Member name | Description |
@@ -1431,7 +1414,7 @@
 
 
 
-============================== table nb count(96) ============================================
+============================== table nb count(95) ============================================
 
 
 | Data Set Suffix | File Type | Description |
@@ -1454,7 +1437,7 @@
 
 
 
-============================== table nb count(97) ============================================
+============================== table nb count(96) ============================================
 
 
 | Member Name | Description |
@@ -1463,7 +1446,7 @@
 
 
 
-============================== table nb count(98) ============================================
+============================== table nb count(97) ============================================
 
 
 | Member Name | Description |
@@ -1474,7 +1457,7 @@
 
 
 
-============================== table nb count(99) ============================================
+============================== table nb count(98) ============================================
 
 
 | Value  | Default value  | Description  |
@@ -1497,7 +1480,7 @@
 
 
 
-============================== table nb count(100) ============================================
+============================== table nb count(99) ============================================
 
 
 | Keyword  | Default  | Description  |
@@ -1525,7 +1508,7 @@
 
 
 
-============================== table nb count(101) ============================================
+============================== table nb count(100) ============================================
 
 
 | Keyword  | Default  | Description  |
@@ -1537,7 +1520,7 @@
 
 
 
-============================== table nb count(102) ============================================
+============================== table nb count(101) ============================================
 
 
 | Keyword  | Default  | Description  |
@@ -1552,12 +1535,12 @@
 | sftpprot  | '1763'  | Protocol SFTP port.  |
 | apisp | '1765'  | Synchronous API TCP/IP port (The address is 127.0.0.1 in* ..SAMPLE(CFTPARM) cftcom). |
 | idparm  | 'IDPARM0'  | CFTPARM identifier: (cft.idparm).<br/> • This parameter is set during installation.<br/> • JCL CFTMAIN uses this parameter, where MNRMAIN (PARM=). |
-| cftinst  | '&amp;%"Z11"$pesitany'  | The Transfer CFT instance ID, CFTPARM partner (value size &lt;= 24). This value identifies the Transfer CFT and must be unique (cft.instance_id).<br/> If Composer is enabled, the naming conventions differs:<br/> • Value size &lt;= 8<br/> • First alphabetic character<br/> • Naming convention: the same as the PDS’s member<br/> The sentence '&amp;%Mvsvar("SYSNAME")" "$pesitany' is replaced with the result of the REXX function Mvsvar("SYSNAME")" concatenated with the value of the previously customized pesitany field.<br/> "Z11" represents the z/OS partition’s name. For example, $pesitany corresponds to the value assigned to keyword 'pesitany'. |
+| cftinst  | '&amp;%"Z11"$pesitany'  | The Transfer CFT instance ID, CFTPARM partner (value size &lt;= 24). This value identifies the Transfer CFT and must be unique (cft.instance_id).<br/> <code>If Composer is enabled, the naming conventions differs:</code> • Value size &lt;= 8<br/> • First alphabetic character<br/> • Naming convention: the same as the PDS’s member<br/> The sentence '&amp;%Mvsvar("SYSNAME")" "$pesitany' is replaced with the result of the REXX function Mvsvar("SYSNAME")" concatenated with the value of the previously customized pesitany field.<br/> "Z11" represents the z/OS partition’s name. For example, $pesitany corresponds to the value assigned to keyword 'pesitany'. |
 | cftgroup  | 'Production.zos'  |  Transfer CFT instance GROUP  |
 
 
 
-============================== table nb count(103) ============================================
+============================== table nb count(102) ============================================
 
 
 | Keyword  | Default  | Description  |
@@ -1572,7 +1555,7 @@
 
 
 
-============================== table nb count(104) ============================================
+============================== table nb count(103) ============================================
 
 
 | Keyword  | Default  | Description  |
@@ -1582,7 +1565,7 @@
 
 
 
-============================== table nb count(105) ============================================
+============================== table nb count(104) ============================================
 
 
 | Keyword  | Default  | Description  |
@@ -1596,7 +1579,7 @@
 
 
 
-============================== table nb count(106) ============================================
+============================== table nb count(105) ============================================
 
 
 | Keyword  | Default  | Description  |
@@ -1610,12 +1593,12 @@
 
 
 
-============================== table nb count(107) ============================================
+============================== table nb count(106) ============================================
 
 
 | Keyword  | Default  | Description  |
 | --- | --- | --- |
-| grpcft  | 'grpcft'  | Transfer CFT administrator SAF group. |
+| <code>grpcft </code>  | <code>'grpcft' </code>  | <code>Transfer CFT administrator SAF group.</code>  |
 | grpmon  | 'grpmon'  | Transfer CFT SAF group.  |
 | grpaprm  | 'grpaprm'  | All parameters access SAF group.  |
 | grpfprm  | 'grpfprm'  | PARM and PART access SAF group.  |
@@ -1626,19 +1609,19 @@
 
 
 
-============================== table nb count(108) ============================================
+============================== table nb count(107) ============================================
 
 
 | Keyword  | Default  | Description  |
 | --- | --- | --- |
 | cftenv | 'CFTENV'  | Id member included in each JCL:<br/> // INCLUDE MEMBER=CFTENV<br/> This member contains the command SET for the variables used in the JCL (except for CFTMAIN, and COPRUN). |
 | icftcat  | 'CATALOG'  | Transfer CFT catalog file identifier  |
-| icftcom |  'COM'  | Transfer CFT com file identifier |
+| <code>icftcom</code>  | <code> 'COM' </code>  | <code>Transfer CFT com file identifier</code>  |
 | icftparm  | 'PARM'  | Transfer CFT parameter file identifier  |
 | icftpart  | 'PART'  | Transfer CFT partner file identifier  |
 | icftpki  | 'PKIFILE'  | Transfer CFT PKI file identifier  |
-| cftloga | 'LOG1' | Transfer CFT log file identifier |
-| cftlogb | 'LOG2'  | Transfer CFT log alternate file identifier  |
+| <code>cftloga</code>  | <code>'LOG1'</code>  | <code>Transfer CFT log file identifier</code>  |
+| <code>cftlogb</code>  | 'LOG2'  | Transfer CFT log alternate file identifier  |
 | cftacca  | 'ACCNT1'  | Transfer CFT account file identifier  |
 | cftaccb  | 'ACCNT2'  | Transfer CFT account alternate file identifier  |
 | cftuconf  | 'UCONF'  | Unified configuration file  |
@@ -1650,7 +1633,7 @@
 
 
 
-============================== table nb count(109) ============================================
+============================== table nb count(108) ============================================
 
 
 | Keyword  | Default  | Description  |
@@ -1663,7 +1646,7 @@
 
 
 
-============================== table nb count(110) ============================================
+============================== table nb count(109) ============================================
 
 
 | Keyword  | Default  | Description  |
@@ -1680,7 +1663,7 @@
 
 
 
-============================== table nb count(111) ============================================
+============================== table nb count(110) ============================================
 
 
 | Keyword  | Default  | Description  | Example  |
@@ -1688,13 +1671,13 @@
 | saml_enable  | no  | Enable SAML as the authentication method for this Transfer CFT (the UCONF am.type=saml).  |   |
 | saml_client_id  | '$(cft.instance_id)'  | Specify the Client_ID value to use as issuer for SAML requests. This should match the Identity Provider configuration.  |   |
 | authserver_host  | ' '  | Specify the SAML endpoint for AuthnRequest (HTTP-Redirect binding).<br/> If Keycloak is the Identity Provider, this should resemble: <code>https://authserver.host/auth/realms/\{realm-name}/protocol/saml. authserver_host ' '</code> | 'https://aa.bb.cc.int:8443'  |
-| saml_idp_signonservice  | ' '  | Specify the SAML endpoint for SignonRequest (HTTP-Redirect binding).<br/> If Keycloak is the Identity Provider, this should resemble:<br/> https://authserver.host/auth/realms/\{realm-name}/protocol/saml.<br/> saml_idp_signonservice ' ' | '/auth/realms/synapses/protocol/saml'  |
-| saml_idp_logoutservice  | ' '  | Specify the endpoint for SAML LogoutRequest (HTTP-Redirect binding).<br/> If Keycloak is the Identity Provider, this should resemble:<br/> https://authserver.host/auth/realms/\{realm-name}/protocol/saml.<br/> saml_idp_logoutservice ' ' | '/auth/realms/synapses/protocol/saml'  |
+| saml_idp_signonservice  | ' '  | Specify the SAML endpoint for SignonRequest (HTTP-Redirect binding).<br/> If Keycloak is the Identity Provider, this should resemble:<br/> <code>https://authserver.host/auth/realms/\{realm-name}/protocol/saml.</code> <code>saml_idp_signonservice ' '</code>  | '/auth/realms/synapses/protocol/saml'  |
+| saml_idp_logoutservice  | ' '  | Specify the endpoint for SAML LogoutRequest (HTTP-Redirect binding).<br/> If Keycloak is the Identity Provider, this should resemble:<br/> <code>https://authserver.host/auth/realms/\{realm-name}/protocol/saml.</code> <code>saml_idp_logoutservice ' '</code>  | '/auth/realms/synapses/protocol/saml'  |
 | saml_idp_certificate_path  | ' '  | Specify the path to the certificate that verifies the SAML Identity Provider server's signatures. This certificate is stored in the internal PKI database.  |   |
 
 
 
-============================== table nb count(112) ============================================
+============================== table nb count(111) ============================================
 
 
 | Keyword  | Default  | Description  |
@@ -1707,11 +1690,11 @@
 | pfx_log  | '*'  | Log file  |
 | pfx_acc  | '*'  | Account fie  |
 | pfx_sec  | '*'  | Security files  |
-| pfx_uconf  | '*'  | Uconf runtime file  |
+| pfx_uconf  | '*'  | Uconf runtime file (1)  |
 
 
 
-============================== table nb count(113) ============================================
+============================== table nb count(112) ============================================
 
 
 | Parameters that can be used as the &lt;keyword&gt;=&lt;value&gt;  | Description  |
@@ -1747,7 +1730,7 @@
 
 
 
-============================== table nb count(114) ============================================
+============================== table nb count(113) ============================================
 
 
 | Variables  | Description  |
@@ -1758,7 +1741,7 @@
 
 
 
-============================== table nb count(115) ============================================
+============================== table nb count(114) ============================================
 
 
 | Step  | Description  | Member  |
@@ -1774,7 +1757,7 @@
 
 
 
-============================== table nb count(116) ============================================
+============================== table nb count(115) ============================================
 
 
 | Step  | Description  | Member  |
@@ -1785,7 +1768,7 @@
 
 
 
-============================== table nb count(117) ============================================
+============================== table nb count(116) ============================================
 
 
 | Step  | Description  | Member  |
@@ -1795,7 +1778,7 @@
 
 
 
-============================== table nb count(118) ============================================
+============================== table nb count(117) ============================================
 
 
 | Step  | Description  | Member  |
@@ -1805,7 +1788,7 @@
 
 
 
-============================== table nb count(119) ============================================
+============================== table nb count(118) ============================================
 
 
 | Step  | Description  | Member  |
@@ -1816,7 +1799,7 @@
 
 
 
-============================== table nb count(120) ============================================
+============================== table nb count(119) ============================================
 
 
 | Step  | Description  | Member  |
@@ -1828,7 +1811,7 @@
 
 
 
-============================== table nb count(121) ============================================
+============================== table nb count(120) ============================================
 
 
 | Step  | Description  | Member  |
@@ -1840,7 +1823,7 @@
 
 
 
-============================== table nb count(122) ============================================
+============================== table nb count(121) ============================================
 
 
 | Step  | JCL  | Description  |
@@ -1852,7 +1835,7 @@
 
 
 
-============================== table nb count(123) ============================================
+============================== table nb count(122) ============================================
 
 
 | Step  | JCL  | Description  |
@@ -1863,7 +1846,7 @@
 
 
 
-============================== table nb count(124) ============================================
+============================== table nb count(123) ============================================
 
 
 | Step  | JCL  | Description  |
@@ -1875,7 +1858,7 @@
 
 
 
-============================== table nb count(125) ============================================
+============================== table nb count(124) ============================================
 
 
 | Step  | JCL  | Description  |
@@ -1895,7 +1878,7 @@
 
 
 
-============================== table nb count(126) ============================================
+============================== table nb count(125) ============================================
 
 
 | Variables | Description |
@@ -1906,7 +1889,7 @@
 
 
 
-============================== table nb count(127) ============================================
+============================== table nb count(126) ============================================
 
 
 |   | Event Router  | TRKUTIL  | Transfer CFT 2.7 and later  |
@@ -1916,7 +1899,7 @@
 
 
 
-============================== table nb count(128) ============================================
+============================== table nb count(127) ============================================
 
 
 |   | Event Router  | TRKUTIL  | Transfer CFT 2.6.x  |
@@ -1927,7 +1910,7 @@
 
 
 
-============================== table nb count(129) ============================================
+============================== table nb count(128) ============================================
 
 
 | Example resource name  | UCONF variable/role  | Access to resource  |
@@ -1940,7 +1923,7 @@
 
 
 
-============================== table nb count(130) ============================================
+============================== table nb count(129) ============================================
 
 
 | File Name  | Description  |
@@ -1954,7 +1937,7 @@
 
 
 
-============================== table nb count(131) ============================================
+============================== table nb count(130) ============================================
 
 
 | Step  | Task  |
@@ -1965,7 +1948,7 @@
 
 
 
-============================== table nb count(132) ============================================
+============================== table nb count(131) ============================================
 
 
 | Step  | Task  |
@@ -1980,7 +1963,7 @@
 
 
 
-============================== table nb count(133) ============================================
+============================== table nb count(132) ============================================
 
 
 | Step  | Task  | Command or details  |
@@ -1997,7 +1980,7 @@
 
 
 
-============================== table nb count(134) ============================================
+============================== table nb count(133) ============================================
 
 
 | Parameters | Description | Default | Values | Modify  |
@@ -2031,7 +2014,7 @@
 
 
 
-============================== table nb count(135) ============================================
+============================== table nb count(134) ============================================
 
 
 | Parameters | Description | Default | Values | Modify  |
@@ -2045,7 +2028,7 @@
 
 
 
-============================== table nb count(136) ============================================
+============================== table nb count(135) ============================================
 
 
 | Parameters | Description | Default | Values | Modify  |
@@ -2054,7 +2037,7 @@
 
 
 
-============================== table nb count(137) ============================================
+============================== table nb count(136) ============================================
 
 
 |   | Event Router  | TRKUTIL  | Transfer CFT  |
@@ -2066,7 +2049,7 @@
 
 
 
-============================== table nb count(138) ============================================
+============================== table nb count(137) ============================================
 
 
 | Unified configuration parameter  | Default value  | Former Sentinel parameter name<br/> trkapi.cfg |
@@ -2101,7 +2084,7 @@
 
 
 
-============================== table nb count(139) ============================================
+============================== table nb count(138) ============================================
 
 
 |   | ER  | TRKUTIL  | Transfer CFT  |
@@ -2113,7 +2096,7 @@
 
 
 
-============================== table nb count(140) ============================================
+============================== table nb count(139) ============================================
 
 
 |   | Event Router  | TRKUTIL  | Transfer CFT  |
@@ -2124,7 +2107,7 @@
 
 
 
-============================== table nb count(141) ============================================
+============================== table nb count(140) ============================================
 
 
 | Message | Definition |
@@ -2136,7 +2119,7 @@
 
 
 
-============================== table nb count(142) ============================================
+============================== table nb count(141) ============================================
 
 
 | Message | Definition |
@@ -2153,7 +2136,7 @@
 
 
 
-============================== table nb count(143) ============================================
+============================== table nb count(142) ============================================
 
 
 | Type  | Location  | Certificate  | Expires  |
@@ -2164,7 +2147,7 @@
 
 
 
-============================== table nb count(144) ============================================
+============================== table nb count(143) ============================================
 
 
 | Job | Installation procedure |
@@ -2180,7 +2163,7 @@
 
 
 
-============================== table nb count(145) ============================================
+============================== table nb count(144) ============================================
 
 
 | Job | Description |
@@ -2190,7 +2173,7 @@
 
 
 
-============================== table nb count(146) ============================================
+============================== table nb count(145) ============================================
 
 
 | Command  | Object  | Class  | VARS  | UserID  | Actions  | File/ACC  | Notes  |
@@ -2241,7 +2224,7 @@
 
 
 
-============================== table nb count(147) ============================================
+============================== table nb count(146) ============================================
 
 
 | Command  | Object  | Class  | VARS  | UserID  | Actions  | File/ACC  | Notes  |
@@ -2284,7 +2267,7 @@
 
 
 
-============================== table nb count(148) ============================================
+============================== table nb count(147) ============================================
 
 
 | Command  | Object  | Class  | Variable  | UserID  | Action  |
@@ -2298,7 +2281,7 @@
 
 
 
-============================== table nb count(149) ============================================
+============================== table nb count(148) ============================================
 
 
 | Command  | Object  | Class  | Variable  | UserID  | Action  |
@@ -2312,7 +2295,7 @@
 
 
 
-============================== table nb count(150) ============================================
+============================== table nb count(149) ============================================
 
 
 | Command  |   | Object  | Class  | Variables  | UserID  | Action  | Notes  |
@@ -2338,7 +2321,7 @@
 
 
 
-============================== table nb count(151) ============================================
+============================== table nb count(150) ============================================
 
 
 | File  | Definition  | Note  | Grpaprm  | Grpdesk  | Grptrf  |
@@ -2389,7 +2372,7 @@
 
 
 
-============================== table nb count(152) ============================================
+============================== table nb count(151) ============================================
 
 
 | Source file<br/> cftv2.SAMPLE* | Copy,<br/> Macro,<br/> Include used | API  | LINK EDIT command files (DLL) distlib.CNTL  | Load module  |
@@ -2404,7 +2387,7 @@
 
 
 
-============================== table nb count(153) ============================================
+============================== table nb count(152) ============================================
 
 
 | Source file<br/> cftv2.SAMPLE* | Copy,<br/> Macro,<br/> Include used | API  | LINK EDIT command files (DLL) distlib.CNTL  | Load module  |
@@ -2418,7 +2401,7 @@
 
 
 
-============================== table nb count(154) ============================================
+============================== table nb count(153) ============================================
 
 
 | Source file<br/> cftv2.SAMPLE* | Copy,<br/> Macro,<br/> Include used | API  | LINK EDIT command files (DLL) distlib.CNTL  | Load module  |
@@ -2428,7 +2411,7 @@
 
 
 
-============================== table nb count(155) ============================================
+============================== table nb count(154) ============================================
 
 
 | Main exported EPA  | DLL name  | CFTEXIT PROG=value  |
@@ -2439,7 +2422,7 @@
 
 
 
-============================== table nb count(156) ============================================
+============================== table nb count(155) ============================================
 
 
 | File  | Definition  |
@@ -2449,7 +2432,7 @@
 
 
 
-============================== table nb count(157) ============================================
+============================== table nb count(156) ============================================
 
 
 | Main exported EPA  | DLL name  | CFTEXIT PROG=value  |
@@ -2460,7 +2443,7 @@
 
 
 
-============================== table nb count(158) ============================================
+============================== table nb count(157) ============================================
 
 
 | File  | Definition  |
@@ -2470,7 +2453,7 @@
 
 
 
-============================== table nb count(159) ============================================
+============================== table nb count(158) ============================================
 
 
 | Main exported EPA  | DLL name  | CFTEXIT PROG=value  |
@@ -2481,7 +2464,7 @@
 
 
 
-============================== table nb count(160) ============================================
+============================== table nb count(159) ============================================
 
 
 | File  | Definition  |
@@ -2492,7 +2475,7 @@
 
 
 
-============================== table nb count(161) ============================================
+============================== table nb count(160) ============================================
 
 
 | Source file<br/> cftv2.<br/> SAMPLEx | Jcl compilation<br/> cftv2.<br/> INSTALL | Command file<br/> for link-edit<br/> distlib.CNTL | Jcl for link-edit cftv2.<br/> INSTALL | DLL name |
@@ -2503,7 +2486,7 @@
 
 
 
-============================== table nb count(162) ============================================
+============================== table nb count(161) ============================================
 
 
 | Source file<br/> cftv2.<br/> SAMPLEx | Jcl compilation<br/> cftv2.<br/> INSTALL | Command file<br/> for link-edit<br/> distlib.CNTL | Jcl for link-edit cftv2.<br/> INSTALL | DLL name |
@@ -2515,7 +2498,7 @@
 
 
 
-============================== table nb count(163) ============================================
+============================== table nb count(162) ============================================
 
 
 | Source file<br/> cftv2.<br/> SAMPLEx | Jcl compilation<br/> cftv2.<br/> INSTALL | Command file<br/> for link-edit<br/> distlib.CNTL | Jcl for link-edit cftv2.<br/> INSTALL | DLL name |
@@ -2526,7 +2509,7 @@
 
 
 
-============================== table nb count(164) ============================================
+============================== table nb count(163) ============================================
 
 
 | Parameter  | Found automatically for sending  |
@@ -2539,7 +2522,7 @@
 
 
 
-============================== table nb count(165) ============================================
+============================== table nb count(164) ============================================
 
 
 | Type of file to be sent  | Implicit value of FTYPE  | Implicit value of FRECFMz  |
@@ -2555,7 +2538,7 @@
 
 
 
-============================== table nb count(166) ============================================
+============================== table nb count(165) ============================================
 
 
 | FORG  | FTYPE  | FRECFM  |  Type of receive file  |
@@ -2573,7 +2556,7 @@
 
 
 
-============================== table nb count(167) ============================================
+============================== table nb count(166) ============================================
 
 
 | Model  | Interpretation  |
@@ -2586,7 +2569,7 @@
 
 
 
-============================== table nb count(168) ============================================
+============================== table nb count(167) ============================================
 
 
 | Utility  | 24 bit memory  | 31 bit memory  |
@@ -2596,7 +2579,7 @@
 
 
 
-============================== table nb count(169) ============================================
+============================== table nb count(168) ============================================
 
 
 | TLS protocol exchange  | Cryptographic function  | Pki.type  | z9 - z10  | z196  |
@@ -2610,7 +2593,7 @@
 
 
 
-============================== table nb count(170) ============================================
+============================== table nb count(169) ============================================
 
 
 | File ID  | Migrate or upgrade procedures  |
@@ -2627,7 +2610,7 @@
 
 
 
-============================== table nb count(171) ============================================
+============================== table nb count(170) ============================================
 
 
 | Member Name &lt;/th&gt;  | Description &lt;/th&gt;  |
@@ -2636,7 +2619,7 @@
 
 
 
-============================== table nb count(172) ============================================
+============================== table nb count(171) ============================================
 
 
 | Member Name &lt;/th&gt;  | Description &lt;/th&gt;  |
@@ -2645,7 +2628,7 @@
 
 
 
-============================== table nb count(173) ============================================
+============================== table nb count(172) ============================================
 
 
 | Member Name &lt;/th&gt;  | Description &lt;/th&gt;  |
@@ -2655,7 +2638,7 @@
 
 
 
-============================== table nb count(174) ============================================
+============================== table nb count(173) ============================================
 
 
 | Member Name &lt;/th&gt;  | Description &lt;/th&gt;  |
@@ -2666,7 +2649,7 @@
 
 
 
-============================== table nb count(175) ============================================
+============================== table nb count(174) ============================================
 
 
 | Libraries  | Contents  |
@@ -2690,7 +2673,7 @@
 
 
 
-============================== table nb count(176) ============================================
+============================== table nb count(175) ============================================
 
 
 | JCL  | Description  |
@@ -2705,7 +2688,7 @@
 
 
 
-============================== table nb count(177) ============================================
+============================== table nb count(176) ============================================
 
 
 | JCL  | Description  |
@@ -2716,7 +2699,7 @@
 
 
 
-============================== table nb count(178) ============================================
+============================== table nb count(177) ============================================
 
 
 | JCL  | Description  |
@@ -2727,7 +2710,7 @@
 
 
 
-============================== table nb count(179) ============================================
+============================== table nb count(178) ============================================
 
 
 | JCL  | Description  |
@@ -2740,7 +2723,7 @@
 
 
 
-============================== table nb count(180) ============================================
+============================== table nb count(179) ============================================
 
 
 | Member name | Purpose |
@@ -2760,7 +2743,7 @@
 
 
 
-============================== table nb count(181) ============================================
+============================== table nb count(180) ============================================
 
 
 | Variable | Default value | Definition |
@@ -2775,7 +2758,7 @@
 
 
 
-============================== table nb count(182) ============================================
+============================== table nb count(181) ============================================
 
 
 | Variable | Default value | Definition |
@@ -2789,7 +2772,7 @@
 
 
 
-============================== table nb count(183) ============================================
+============================== table nb count(182) ============================================
 
 
 | Variable | Default value | Definition |
@@ -2799,7 +2782,7 @@
 
 
 
-============================== table nb count(184) ============================================
+============================== table nb count(183) ============================================
 
 
 | Variable | Default value | Definition |
@@ -2814,7 +2797,7 @@
 
 
 
-============================== table nb count(185) ============================================
+============================== table nb count(184) ============================================
 
 
 | Variable | Default value | Definition |
@@ -2829,7 +2812,7 @@
 
 
 
-============================== table nb count(186) ============================================
+============================== table nb count(185) ============================================
 
 
 | Message | Definition |
@@ -2841,7 +2824,7 @@
 
 
 
-============================== table nb count(187) ============================================
+============================== table nb count(186) ============================================
 
 
 | Message | Definition |
@@ -2858,7 +2841,7 @@
 
 
 
-============================== table nb count(188) ============================================
+============================== table nb count(187) ============================================
 
 
 | Template  | Function  | Services |
@@ -2868,7 +2851,7 @@
 
 
 
-============================== table nb count(189) ============================================
+============================== table nb count(188) ============================================
 
 
 | Template  | Function  | Services | Description  |
@@ -2882,7 +2865,7 @@
 
 
 
-============================== table nb count(190) ============================================
+============================== table nb count(189) ============================================
 
 
 | Template  | Function  | Services | Description  |
@@ -2901,7 +2884,7 @@
 
 
 
-============================== table nb count(191) ============================================
+============================== table nb count(190) ============================================
 
 
 | Template  | Function  | Services |
@@ -2920,7 +2903,7 @@
 
 
 
-============================== table nb count(192) ============================================
+============================== table nb count(191) ============================================
 
 
 | Component  | Port |
@@ -2939,7 +2922,7 @@
 
 
 
-============================== table nb count(193) ============================================
+============================== table nb count(192) ============================================
 
 
 | UCONF parameter  | Default  | Former Sentinel parameter<br/> TRKCNF |
@@ -2976,7 +2959,7 @@
 
 
 
-============================== table nb count(194) ============================================
+============================== table nb count(193) ============================================
 
 
 | Unified configuration parameter  | Default value  | Description  |
@@ -2987,7 +2970,7 @@
 
 
 
-============================== table nb count(195) ============================================
+============================== table nb count(194) ============================================
 
 
 | Command | Comment |
@@ -3000,7 +2983,7 @@
 
 
 
-============================== table nb count(196) ============================================
+============================== table nb count(195) ============================================
 
 
 | Replace this command...  | With the new command...  |
@@ -3020,7 +3003,7 @@
 
 
 
-============================== table nb count(197) ============================================
+============================== table nb count(196) ============================================
 
 
 | <h2 id="transfercftcomponentlongname-3.2.x-and-higher">{{&lt; TransferCFT/componentlongname &gt;}} 3.2.x and higher</h2>  |
@@ -3029,7 +3012,7 @@
 
 
 
-============================== table nb count(198) ============================================
+============================== table nb count(197) ============================================
 
 
 | Option  | Command  | Details  |
@@ -3044,7 +3027,7 @@
 
 
 
-============================== table nb count(199) ============================================
+============================== table nb count(198) ============================================
 
 
 | Module (in C language)  | Required to use Transfer CFT...  |
@@ -3056,7 +3039,7 @@
 
 
 
-============================== table nb count(200) ============================================
+============================== table nb count(199) ============================================
 
 
 | FTYPE  | FRECFM  | PF-DTA<br/> Fixed data | PF-DTA<br/> Variable data | PF-SRC  | SAVF  |
@@ -3073,7 +3056,7 @@
 
 
 
-============================== table nb count(201) ============================================
+============================== table nb count(200) ============================================
 
 
 | FTYPE | FRECFM | Supported files and data organizations (if applicable). |
@@ -3085,7 +3068,7 @@
 
 
 
-============================== table nb count(202) ============================================
+============================== table nb count(201) ============================================
 
 
 | FTYPE  | FRECFM  | Created file<br /> Type  | Created file<br /> Max record length  |
@@ -3100,7 +3083,7 @@
 
 
 
-============================== table nb count(203) ============================================
+============================== table nb count(202) ============================================
 
 
 | FTYPE  | FRECFM  | Existing file: PF-DTA<br/> Record length / member header | Existing file: PF-SRC<br/> Record length / member header | Overwriting on a SAVF<br/> with FACTION=ERASE |
@@ -3112,6 +3095,19 @@
 | ‘E’ | ‘F’ | FLRECL +12 / 0 | **FLRECL +12 / 12** | Error<br/> DIAGI: 102<br/> DIAGP: 1140850696 |
 | ‘E’  | ‘V’ | FLRECL+17 /17<br/>  | FLRECL+17 / 5 | Error<br/> DIAGI: 102<br/> DIAGP: 1140850696 |
 | ‘Z’ | - | Error<br/> DIAGI: 102<br/> DIAGP: 1140850696 | Error<br/> DIAGI: 101<br/> DIAGP: 11409169 | Yes <sup>3</sup> |
+
+
+
+============================== table nb count(203) ============================================
+
+
+| FTYPE  | Type of sent file  |
+| --- | --- |
+| ‘S’  | Text  |
+| ‘D’ , ‘ ’  | Text  |
+| ‘E’  | Text  |
+| ‘Z’  | Binary  |
+| ‘J’  | Stream text is an alternative way to transfer a text file. Every line of a file must end with an LF or CR/LF. However, during a transfer the CR/LF are changed to LFs. This enables a quicker reading, and a faster transfer.<br/> When using stream text (FTYPE=J), the sender and the receiver must both have the FTYPE set to J. Setting only the sender or receiver to FTYPE=J results in unexpected content for the transferred file.<br/> <blockquote> **Note**<br/> This transfer mode is not available for native side transfers.<br/> </blockquote>  |
 
 
 
@@ -3131,19 +3127,6 @@
 ============================== table nb count(205) ============================================
 
 
-| FTYPE  | Type of sent file  |
-| --- | --- |
-| ‘S’  | Text  |
-| ‘D’ , ‘ ’  | Text  |
-| ‘E’  | Text  |
-| ‘Z’  | Binary  |
-| ‘J’  | Stream text is an alternative way to transfer a text file. Every line of a file must end with an LF or CR/LF. However, during a transfer the CR/LF are changed to LFs. This enables a quicker reading, and a faster transfer.<br/> When using stream text (FTYPE=J), the sender and the receiver must both have the FTYPE set to J. Setting only the sender or receiver to FTYPE=J results in unexpected content for the transferred file.<br/> <blockquote> **Note**<br/> This transfer mode is not available for native side transfers.<br/> </blockquote>  |
-
-
-
-============================== table nb count(206) ============================================
-
-
 | CFT_ charset  | IBM i  |
 | --- | --- |
 | CFT_UTF-8  | 01208  |
@@ -3161,7 +3144,7 @@
 
 
 
-============================== table nb count(207) ============================================
+============================== table nb count(206) ============================================
 
 
 | Transfer CFT version | SAVF name |
@@ -3173,7 +3156,7 @@
 
 
 
-============================== table nb count(208) ============================================
+============================== table nb count(207) ============================================
 
 
 | File  | Comment  |
@@ -3204,7 +3187,7 @@
 
 
 
-============================== table nb count(209) ============================================
+============================== table nb count(208) ============================================
 
 
 | Error code  | Description  |
@@ -3245,7 +3228,7 @@
 
 
 
-============================== table nb count(210) ============================================
+============================== table nb count(209) ============================================
 
 
 | Function | Use |
@@ -3262,7 +3245,7 @@
 
 
 
-============================== table nb count(211) ============================================
+============================== table nb count(210) ============================================
 
 
 | Function | Use |
@@ -3283,7 +3266,7 @@
 
 
 
-============================== table nb count(212) ============================================
+============================== table nb count(211) ============================================
 
 
 | Function | Use |
@@ -3293,7 +3276,7 @@
 
 
 
-============================== table nb count(213) ============================================
+============================== table nb count(212) ============================================
 
 
 | Syntax | rc = cftxx (verb,&amp;ptr,param) |
@@ -3307,7 +3290,7 @@
 
 
 
-============================== table nb count(214) ============================================
+============================== table nb count(213) ============================================
 
 
 | Service | CftApi2Session *ipcai2_initialize () |
@@ -3318,7 +3301,7 @@
 
 
 
-============================== table nb count(215) ============================================
+============================== table nb count(214) ============================================
 
 
 | Service | long ipcai2_get_errno(CftApi2Session * session) |
@@ -3330,7 +3313,7 @@
 
 
 
-============================== table nb count(216) ============================================
+============================== table nb count(215) ============================================
 
 
 | Service | long ipcai2_get_errno_str(CftApi2Session * session, char *buffer, int bufflen) |
@@ -3342,7 +3325,7 @@
 
 
 
-============================== table nb count(217) ============================================
+============================== table nb count(216) ============================================
 
 
 | Service | long ipcai2_finalize(CftApi2Session * session) |
@@ -3354,7 +3337,7 @@
 
 
 
-============================== table nb count(218) ============================================
+============================== table nb count(217) ============================================
 
 
 | Service | CftApi2Catalog *ipcai2_catalog_open(CftApi2Session * session, char *catalog_fname)  |
@@ -3366,7 +3349,7 @@
 
 
 
-============================== table nb count(219) ============================================
+============================== table nb count(218) ============================================
 
 
 | Service | long ipcai2_catalog_reload_cache(CftApi2Catalog *catalog) |
@@ -3378,7 +3361,7 @@
 
 
 
-============================== table nb count(220) ============================================
+============================== table nb count(219) ============================================
 
 
 | Service | long ipcai2_catalog_close(CftApi2Catalog * catalog |
@@ -3390,7 +3373,7 @@
 
 
 
-============================== table nb count(221) ============================================
+============================== table nb count(220) ============================================
 
 
 | Service | CftApi2Selection *ipcai2_catalog_selection_new(CftApi2Catalog *catalog) |
@@ -3402,7 +3385,7 @@
 
 
 
-============================== table nb count(222) ============================================
+============================== table nb count(221) ============================================
 
 
 | Service | long ipcai2_catalog_selection_ref(CftApi2Selection *selection) |
@@ -3414,7 +3397,7 @@
 
 
 
-============================== table nb count(223) ============================================
+============================== table nb count(222) ============================================
 
 
 | Service | long ipcai2_catalog_selection_set(CftApi2Selection * selection, char *param, char *value) |
@@ -3426,7 +3409,7 @@
 
 
 
-============================== table nb count(224) ============================================
+============================== table nb count(223) ============================================
 
 
 | Service | long ipcai2_catalog_selection_next(CftApi2Selection *selection) |
@@ -3438,7 +3421,7 @@
 
 
 
-============================== table nb count(225) ============================================
+============================== table nb count(224) ============================================
 
 
 | Service | long ipcai2_catalog_record_get(CftApi2Selection * selection, char *param, char *buffer, int bufflen) |
@@ -3450,7 +3433,7 @@
 
 
 
-============================== table nb count(226) ============================================
+============================== table nb count(225) ============================================
 
 
 | Service | long ipcai2_catalog_selection_unref(CftApi2Selection *selection) |
@@ -3462,7 +3445,7 @@
 
 
 
-============================== table nb count(227) ============================================
+============================== table nb count(226) ============================================
 
 
 | Service | long ipcai2_catalog_selection_delete(CftApi2Selection *selection) |
@@ -3474,7 +3457,7 @@
 
 
 
-============================== table nb count(228) ============================================
+============================== table nb count(227) ============================================
 
 
 | Service | long ipcai2_transfert_change_state(CftApi2Selection * selection, char state) |
@@ -3486,7 +3469,7 @@
 
 
 
-============================== table nb count(229) ============================================
+============================== table nb count(228) ============================================
 
 
 | Service | long ipcai2_catalog_info_get(CftApi2Catalog *catalog, char *param, char *buffer, int bufflen) |
@@ -3498,7 +3481,7 @@
 
 
 
-============================== table nb count(230) ============================================
+============================== table nb count(229) ============================================
 
 
 | Service | long ipcai2_monitor_info_get(CftApi2Catalog *catalog, char *param, char *buffer, int bufflen) |
@@ -3510,7 +3493,7 @@
 
 
 
-============================== table nb count(231) ============================================
+============================== table nb count(230) ============================================
 
 
 | Function | Use |
@@ -3527,7 +3510,7 @@
 
 
 
-============================== table nb count(232) ============================================
+============================== table nb count(231) ============================================
 
 
 | &lt;verb&gt; | Service |
@@ -3536,13 +3519,13 @@
 | SELECT | Define selection criteria |
 | NEXT | Read next entry |
 | MODIFY | Modify catalog entry state |
-| SORT | cftaix only |
+| SORT | cftaix only<br/> Sort the selected catalog entries |
 | DO | cftaix only<br/> Do the current selection and the requested sort in memory |
 | CLOSE | Close catalog |
 
 
 
-============================== table nb count(233) ============================================
+============================== table nb count(232) ============================================
 
 
 | &lt;verb&gt; | &lt;param&gt; | Explanation |
@@ -3557,7 +3540,7 @@
 
 
 
-============================== table nb count(234) ============================================
+============================== table nb count(233) ============================================
 
 
 | Function | Use |
@@ -3567,7 +3550,7 @@
 
 
 
-============================== table nb count(235) ============================================
+============================== table nb count(234) ============================================
 
 
 | &lt;verb&gt; | Service |
@@ -3577,7 +3560,7 @@
 
 
 
-============================== table nb count(236) ============================================
+============================== table nb count(235) ============================================
 
 
 | &lt;verb&gt; | &lt;param&gt; | Description |
@@ -3587,7 +3570,7 @@
 
 
 
-============================== table nb count(237) ============================================
+============================== table nb count(236) ============================================
 
 
 | Mnemonic | Description |
@@ -3602,7 +3585,7 @@
 
 
 
-============================== table nb count(238) ============================================
+============================== table nb count(237) ============================================
 
 
 | Function | Use |
@@ -3623,7 +3606,7 @@
 
 
 
-============================== table nb count(239) ============================================
+============================== table nb count(238) ============================================
 
 
 | &lt;verb&gt; | Service |
@@ -3642,7 +3625,7 @@
 
 
 
-============================== table nb count(240) ============================================
+============================== table nb count(239) ============================================
 
 
 | Mnemonic | Description |
@@ -3660,7 +3643,7 @@
 
 
 
-============================== table nb count(241) ============================================
+============================== table nb count(240) ============================================
 
 
 | Function | Use |
@@ -3677,7 +3660,7 @@
 
 
 
-============================== table nb count(242) ============================================
+============================== table nb count(241) ============================================
 
 
 | &lt;verb&gt; | Value | Service |
@@ -3690,7 +3673,7 @@
 
 
 
-============================== table nb count(243) ============================================
+============================== table nb count(242) ============================================
 
 
 | &lt;verb&gt; | &lt;param&gt; | Explanation |
@@ -3703,7 +3686,7 @@
 
 
 
-============================== table nb count(244) ============================================
+============================== table nb count(243) ============================================
 
 
 | Applies to  | Mnemonic | Description |
@@ -3737,7 +3720,7 @@
 
 
 
-============================== table nb count(245) ============================================
+============================== table nb count(244) ============================================
 
 
 | Function | Use |
@@ -3747,7 +3730,7 @@
 
 
 
-============================== table nb count(246) ============================================
+============================== table nb count(245) ============================================
 
 
 | **&lt;verb&gt;** | **Value** | **Service** |
@@ -3756,7 +3739,7 @@
 
 
 
-============================== table nb count(247) ============================================
+============================== table nb count(246) ============================================
 
 
 | &lt;verb&gt; | &lt;param&gt; | Explanation |
@@ -3765,7 +3748,7 @@
 
 
 
-============================== table nb count(248) ============================================
+============================== table nb count(247) ============================================
 
 
 | Mnemonic | Description |
@@ -3780,7 +3763,7 @@
 
 
 
-============================== table nb count(249) ============================================
+============================== table nb count(248) ============================================
 
 
 | &lt;verb&gt; | Value | Service |
@@ -3790,7 +3773,7 @@
 
 
 
-============================== table nb count(250) ============================================
+============================== table nb count(249) ============================================
 
 
 | &lt;verb&gt; | &lt;param&gt; | Explanation |
@@ -3800,7 +3783,7 @@
 
 
 
-============================== table nb count(251) ============================================
+============================== table nb count(250) ============================================
 
 
 | Function | Use |
@@ -3821,7 +3804,7 @@
 
 
 
-============================== table nb count(252) ============================================
+============================== table nb count(251) ============================================
 
 
 | CALL "CFTU" USING &lt;verb&gt; &lt;param&gt; &lt;rc&gt;<br /> CALL "CFTC" USING &lt;verb&gt; &lt;param&gt; &lt;rc&gt;  |
@@ -3829,7 +3812,7 @@
 
 
 
-============================== table nb count(253) ============================================
+============================== table nb count(252) ============================================
 
 
 | &lt;verb&gt; | Value | Service |
@@ -3848,7 +3831,7 @@
 
 
 
-============================== table nb count(254) ============================================
+============================== table nb count(253) ============================================
 
 
 | Mnemonic | Description |
@@ -3866,7 +3849,7 @@
 
 
 
-============================== table nb count(255) ============================================
+============================== table nb count(254) ============================================
 
 
 | <span id="_Toc429559254"></span> <h2 id="transfercftcomponentlongname-2.7.1">{{&lt; TransferCFT/componentlongname &gt;}} 2.7.1</h2>  |
@@ -3875,7 +3858,7 @@
 
 
 
-============================== table nb count(256) ============================================
+============================== table nb count(255) ============================================
 
 
 | <span id="_Toc429559255"></span> <h2 id="transfercftcomponentlongname-3.0.1">{{&lt; TransferCFT/componentlongname &gt;}} 3.0.1</h2>  |
@@ -3884,7 +3867,7 @@
 
 
 
-============================== table nb count(257) ============================================
+============================== table nb count(256) ============================================
 
 
 | <h2 id="transfercftcomponentlongname-3.1.3-sp4">{{&lt; TransferCFT/componentlongname &gt;}} 3.1.3 SP4</h2>  |
@@ -3893,7 +3876,7 @@
 
 
 
-============================== table nb count(258) ============================================
+============================== table nb count(257) ============================================
 
 
 | <h2 id="transfercftcomponentlongname-3.2.x-and-higher">{{&lt; TransferCFT/componentlongname &gt;}} 3.2.x and higher</h2>  |
@@ -3902,7 +3885,7 @@
 
 
 
-============================== table nb count(259) ============================================
+============================== table nb count(258) ============================================
 
 
 | Subvolume  | Description  |
@@ -3917,7 +3900,7 @@
 
 
 
-============================== table nb count(260) ============================================
+============================== table nb count(259) ============================================
 
 
 | Parameter  | Default value  | Description  |
@@ -3930,7 +3913,7 @@
 
 
 
-============================== table nb count(261) ============================================
+============================== table nb count(260) ============================================
 
 
 | Parameter | Default | Description |
@@ -3956,7 +3939,7 @@
 
 
 
-============================== table nb count(262) ============================================
+============================== table nb count(261) ============================================
 
 
 | Token  | Description  |
@@ -3969,7 +3952,7 @@
 
 
 
-============================== table nb count(263) ============================================
+============================== table nb count(262) ============================================
 
 
 | Event number  | EMS subject  | Event type  |
@@ -3978,11 +3961,11 @@
 | 5  | CFT WARN LOG  | Log warning message  |
 | 6  | CFT ERR LOG  | Log error message  |
 | 7  | CFT FAIL LOG  | Log failure message  |
-| 8  | CFT ACCOUNT  | Account  |
+| 8  | CFT ACCOUNT  | Account message  |
 
 
 
-============================== table nb count(264) ============================================
+============================== table nb count(263) ============================================
 
 
 | Notation | Object | Value |
@@ -3994,7 +3977,7 @@
 
 
 
-============================== table nb count(265) ============================================
+============================== table nb count(264) ============================================
 
 
 | Notation | Object |
@@ -4007,7 +3990,7 @@
 
 
 
-============================== table nb count(266) ============================================
+============================== table nb count(265) ============================================
 
 
 | FTYPE | FCODE |
@@ -4017,7 +4000,7 @@
 
 
 
-============================== table nb count(267) ============================================
+============================== table nb count(266) ============================================
 
 
 | Guardian<br /> type | Guardian<br /> code | File type | FTYPE  | FRECFM  | FORG  |
@@ -4031,7 +4014,7 @@
 
 
 
-============================== table nb count(268) ============================================
+============================== table nb count(267) ============================================
 
 
 | FTYPE | FRECFM | FORG  | File Type | Guardian Type | Guardian Code |
@@ -4047,7 +4030,7 @@
 
 
 
-============================== table nb count(269) ============================================
+============================== table nb count(268) ============================================
 
 
 | Command  | Variable  |
@@ -4058,7 +4041,7 @@
 
 
 
-============================== table nb count(270) ============================================
+============================== table nb count(269) ============================================
 
 
 | Value  | Description  | Temporary CFTUTLX files are deleted  |
@@ -4070,7 +4053,7 @@
 
 
 
-============================== table nb count(271) ============================================
+============================== table nb count(270) ============================================
 
 
 | File  | Directory  | Description  |
@@ -4083,7 +4066,7 @@
 
 
 
-============================== table nb count(272) ============================================
+============================== table nb count(271) ============================================
 
 
 | Element | Instructions |
@@ -4096,7 +4079,7 @@
 
 
 
-============================== table nb count(273) ============================================
+============================== table nb count(272) ============================================
 
 
 | Parameter | Value |
@@ -4108,7 +4091,7 @@
 
 
 
-============================== table nb count(274) ============================================
+============================== table nb count(273) ============================================
 
 
 | Parameter | Value |
@@ -4120,7 +4103,7 @@
 
 
 
-============================== table nb count(275) ============================================
+============================== table nb count(274) ============================================
 
 
 | Parameter | Value |
@@ -4130,7 +4113,7 @@
 
 
 
-============================== table nb count(276) ============================================
+============================== table nb count(275) ============================================
 
 
 | SSL_KEYSTORE value | Windows | Linux |
@@ -4140,7 +4123,7 @@
 
 
 
-============================== table nb count(277) ============================================
+============================== table nb count(276) ============================================
 
 
 | Requester/Sender  | Server/Receiver  |
@@ -4149,7 +4132,7 @@
 
 
 
-============================== table nb count(278) ============================================
+============================== table nb count(277) ============================================
 
 
 | Server/Sender  | Requester/Receiver  |
@@ -4158,7 +4141,7 @@
 
 
 
-============================== table nb count(279) ============================================
+============================== table nb count(278) ============================================
 
 
 | Server/Sender  | Requester/Receiver |
@@ -4167,7 +4150,7 @@
 
 
 
-============================== table nb count(280) ============================================
+============================== table nb count(279) ============================================
 
 
 | Server/Sender  | Requester/Receiver  |
@@ -4176,7 +4159,7 @@
 
 
 
-============================== table nb count(281) ============================================
+============================== table nb count(280) ============================================
 
 
 | Requester/Sender  | Server/Receiver  |
@@ -4185,7 +4168,7 @@
 
 
 
-============================== table nb count(282) ============================================
+============================== table nb count(281) ============================================
 
 
 | Requester/Receiver | Server/Sender  |
@@ -4194,7 +4177,7 @@
 
 
 
-============================== table nb count(283) ============================================
+============================== table nb count(282) ============================================
 
 
 | Requester/Sender  | Server/Receiver – PHOENIX  | Server/Receiver – NEWYORK  |
@@ -4203,7 +4186,7 @@
 
 
 
-============================== table nb count(284) ============================================
+============================== table nb count(283) ============================================
 
 
 | Client/Receiver  | Server/Sender<br/> PHOENIX | Server/Sender<br/> NEW YORK |
@@ -4212,7 +4195,7 @@
 
 
 
-============================== table nb count(285) ============================================
+============================== table nb count(284) ============================================
 
 
 |   | Task  | Description  | Details  |
@@ -4222,7 +4205,7 @@
 
 
 
-============================== table nb count(286) ============================================
+============================== table nb count(285) ============================================
 
 
 |   | Task  | Description  | Details  |
@@ -4235,7 +4218,7 @@
 
 
 
-============================== table nb count(287) ============================================
+============================== table nb count(286) ============================================
 
 
 |   | Task  | Description  | Details  |
@@ -4249,7 +4232,7 @@
 
 
 
-============================== table nb count(288) ============================================
+============================== table nb count(287) ============================================
 
 
 |   | Task  | Description  | Details  |
@@ -4262,7 +4245,7 @@
 
 
 
-============================== table nb count(289) ============================================
+============================== table nb count(288) ============================================
 
 
 |   | Task  | Description  | Details  |
@@ -4276,7 +4259,7 @@
 
 
 
-============================== table nb count(290) ============================================
+============================== table nb count(289) ============================================
 
 
 |   | Task  | Description  | Details  |
@@ -4290,7 +4273,7 @@
 
 
 
-============================== table nb count(291) ============================================
+============================== table nb count(290) ============================================
 
 
 | Transfer CFT  | Host  | Application name  |
@@ -4301,7 +4284,7 @@
 
 
 
-============================== table nb count(292) ============================================
+============================== table nb count(291) ============================================
 
 
 |   | Task  | Description  | Details  |
@@ -4315,7 +4298,7 @@
 
 
 
-============================== table nb count(293) ============================================
+============================== table nb count(292) ============================================
 
 
 |   | Task  | Description  | Details  |
@@ -4328,7 +4311,7 @@
 
 
 
-============================== table nb count(294) ============================================
+============================== table nb count(293) ============================================
 
 
 | Transfer CFT  | Unmanaged product configuration fields  |
@@ -4343,7 +4326,7 @@
 
 
 
-============================== table nb count(295) ============================================
+============================== table nb count(294) ============================================
 
 
 | Transfer CFT  | Communication profile for the Unmanaged product  |
@@ -4359,7 +4342,7 @@
 
 
 
-============================== table nb count(296) ============================================
+============================== table nb count(295) ============================================
 
 
 | Transfer CFT  | Flow field  |
@@ -4368,7 +4351,7 @@
 
 
 
-============================== table nb count(297) ============================================
+============================== table nb count(296) ============================================
 
 
 |   | Task  | Description  | Details  |
@@ -4382,7 +4365,7 @@
 
 
 
-============================== table nb count(298) ============================================
+============================== table nb count(297) ============================================
 
 
 |   |  Task  | Description  | Details  |
@@ -4396,7 +4379,7 @@
 
 
 
-============================== table nb count(299) ============================================
+============================== table nb count(298) ============================================
 
 
 | PARAMETER = value(s) | Information | SPECIFIC |
@@ -4405,7 +4388,7 @@
 
 
 
-============================== table nb count(300) ============================================
+============================== table nb count(299) ============================================
 
 
 | Description  | Notation  | Example  |
@@ -4420,7 +4403,7 @@
 
 
 
-============================== table nb count(301) ============================================
+============================== table nb count(300) ============================================
 
 
 | Description  | Notation  | Example  |
@@ -4436,7 +4419,7 @@
 
 
 
-============================== table nb count(302) ============================================
+============================== table nb count(301) ============================================
 
 
 | Description  | Notation  |
@@ -4451,7 +4434,7 @@
 
 
 
-============================== table nb count(303) ============================================
+============================== table nb count(302) ============================================
 
 
 | Protocol  | Description  |
@@ -4461,7 +4444,7 @@
 
 
 
-============================== table nb count(304) ============================================
+============================== table nb count(303) ============================================
 
 
 | Syntax | Command syntax listed here [see parameters below] |
@@ -4476,7 +4459,7 @@
 
 
 
-============================== table nb count(305) ============================================
+============================== table nb count(304) ============================================
 
 
 | Transfer CFT  | Host name  | Application name  |
@@ -4487,7 +4470,7 @@
 
 
 
-============================== table nb count(306) ============================================
+============================== table nb count(305) ============================================
 
 
 | CG parameter  | CG values  | CFTUTIL parameter  | Description  |
@@ -4505,7 +4488,7 @@
 
 
 
-============================== table nb count(307) ============================================
+============================== table nb count(306) ============================================
 
 
 | CG parameter &lt;/th&gt;  | CG values  | CFTUTIL parameter  | Description  |
@@ -4519,7 +4502,7 @@
 
 
 
-============================== table nb count(308) ============================================
+============================== table nb count(307) ============================================
 
 
 | CG parameter  | CFTUTIL parameter  | Description  |
@@ -4530,7 +4513,7 @@
 
 
 
-============================== table nb count(309) ============================================
+============================== table nb count(308) ============================================
 
 
 | CG parameter &lt;/th&gt;  | CG values  | CFTUTIL parameter  | Description  |
@@ -4541,7 +4524,7 @@
 
 
 
-============================== table nb count(310) ============================================
+============================== table nb count(309) ============================================
 
 
 | CG parameter &lt;/th&gt;  | CG values  | CFTUTIL parameter  | Description  |
@@ -4552,7 +4535,7 @@
 
 
 
-============================== table nb count(311) ============================================
+============================== table nb count(310) ============================================
 
 
 | CG parameter &lt;/th&gt;  | CG values  | CFTUTIL parameter  | Description  |
@@ -4564,7 +4547,7 @@
 
 
 
-============================== table nb count(312) ============================================
+============================== table nb count(311) ============================================
 
 
 | CG parameter &lt;/th&gt;  | CG values  | CFTUTIL parameter  | Description  |
@@ -4573,7 +4556,7 @@
 
 
 
-============================== table nb count(313) ============================================
+============================== table nb count(312) ============================================
 
 
 | CG parameter  | CG values  | CFTUTIL parameter  | Description  |
@@ -4588,7 +4571,7 @@
 
 
 
-============================== table nb count(314) ============================================
+============================== table nb count(313) ============================================
 
 
 | CG parameter  | CG values  | CFTUTIL‑parameter  | Description  |
@@ -4598,7 +4581,7 @@
 
 
 
-============================== table nb count(315) ============================================
+============================== table nb count(314) ============================================
 
 
 | CG parameter  | CFTUTIL parameter  | Description  |
@@ -4609,7 +4592,7 @@
 
 
 
-============================== table nb count(316) ============================================
+============================== table nb count(315) ============================================
 
 
 | CG parameter  | CG values  | CFTUTIL parameter  | Description  |
@@ -4620,7 +4603,7 @@
 
 
 
-============================== table nb count(317) ============================================
+============================== table nb count(316) ============================================
 
 
 | CG parameter  | CG values  | CFTUTIL parameter  | Description  |
@@ -4631,7 +4614,7 @@
 
 
 
-============================== table nb count(318) ============================================
+============================== table nb count(317) ============================================
 
 
 | CG parameter  | CG values  | CFTUTIL parameter  | Description  |
@@ -4640,18 +4623,18 @@
 
 
 
-============================== table nb count(319) ============================================
+============================== table nb count(318) ============================================
 
 
 | Authentication method  | copilot.restapi.authentication_method  | Details  |
 | --- | --- | --- |
-| Operating System  | system  | The user/password is checked against the operating system.<br/> <blockquote> **Note**<br/> We strongly recommend that you set copilot.misc.createprocessasuser=yes when using the system option.<br/> </blockquote> **Unix**<br/> You must use <code>cftsu </code>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to <a href="" >Using system users - UNIX</a> for details.<br/> • Create a group "group1":<br/> • Add user "user1" to group "group1":<br/> **Windows**<br/> You require a superuser (administrative user account) to create a group and assign a user to a group.<br/> • Create a group "group1":<br/> • Add user "user1" to group "group1":<br/> <blockquote> **Note**<br/> For a user belonging to a domain, use: domain\user1 instead of user1<br/> </blockquote>  |
+| Operating System  | system  | The user/password is checked against the operating system.<br/> <blockquote> **Note**<br/> We strongly recommend that you set copilot.misc.createprocessasuser=yes when using the system option.<br/> </blockquote> **Unix**<br/> You must use <code>cftsu </code>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to <a href="" >Using system users - UNIX</a> for details.<br/> • Create a group "group1": groupadd group1<br/> • Add user "user1" to group "group1": usermod -a -G group1 user1<br/> **Windows**<br/> You require a superuser (administrative user account) to create a group and assign a user to a group.<br/> • Create a group "group1": net localgroup group1 /add<br/> • Add user "user1" to group "group1": net localgroup group1 user1 /add<br/> <blockquote> **Note**<br/> For a user belonging to a domain, use: domain\user1 instead of user1<br/> </blockquote>  |
 | Access Management  | am  | This methods uses an indirection towards the Access Management system. The user/password is checked by the configured access management system: {{&lt; TransferCFT/flowmanager &gt;}}, PassPort AM, or internal AM. |
-| xfbadm database<br/> (UNIX and HP NonStop exclusively) | xfbadm  | The user/password is checked using the xfbadm base (see the <a href="../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).<br/> A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <code>profile </code>from the runtime directory.<br/> • Create a group "group1" with gid=200:<br/> • From the user prompt, to add a user "user1" to group "group1"enter: |
+| xfbadm database<br/> (UNIX and HP NonStop exclusively) | xfbadm  | The user/password is checked using the xfbadm base (see the <a href="../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).<br/> A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <code>profile </code>from the runtime directory.<br/> • Create a group "group1" with gid=200: xfbadmgrp add -G group1 -p group1_pw -g 200<br/> • From the user prompt, to add a user "user1" to group "group1"enter: xfbadmusr add -l user1 -p user1_pw -u AUTO -g 200 |
 
 
 
-============================== table nb count(320) ============================================
+============================== table nb count(319) ============================================
 
 
 | UI  | Parameter details  | Description  |
@@ -4672,7 +4655,7 @@
 
 
 
-============================== table nb count(321) ============================================
+============================== table nb count(320) ============================================
 
 
 | Parameter  | Description  |
@@ -4717,7 +4700,7 @@
 
 
 
-============================== table nb count(322) ============================================
+============================== table nb count(321) ============================================
 
 
 | Parameter  | Description  |
@@ -4745,7 +4728,7 @@
 
 
 
-============================== table nb count(323) ============================================
+============================== table nb count(322) ============================================
 
 
 | Parameter  | Description  |
@@ -4764,7 +4747,7 @@
 
 
 
-============================== table nb count(324) ============================================
+============================== table nb count(323) ============================================
 
 
 | Parameters  | Description  |
@@ -4779,7 +4762,7 @@
 
 
 
-============================== table nb count(325) ============================================
+============================== table nb count(324) ============================================
 
 
 | Parameters  | Description  |
@@ -4796,7 +4779,7 @@
 
 
 
-============================== table nb count(326) ============================================
+============================== table nb count(325) ============================================
 
 
 | Parameters  | Description  |
@@ -4808,7 +4791,7 @@
 | <a href="../../../command_summary/parameter_intro/exita">EXITA</a>  | Identifier describing the directory EXIT.<br/> The value of this identifier corresponds to the value of the CFTEXIT ID parameter.<br/> The identifier may contain the &amp;NPART symbolic variable. |
 | <a href="../../../command_summary/parameter_intro/id">ID</a>  | CFTPROT command identifier.<br/> This name must be referenced in the values taken by the CFTPARM PROT parameter. |
 | <a href="../../../command_summary/parameter_intro/idf">IDF</a>  | Used to assign an IDF to a file on receiving an NIDF.<br/> This parameter can be used in:<br/> • server mode (sender or receiver)<br/> • receiver requester following the activation of a RECV IDF=&lt;mask&gt; command |
-| <a href="../../../command_summary/parameter_intro/nack">NACK</a>  | PeSIT<br/> Enables or disables the negative acknowledgement feature. |
+| <a href="../../../command_summary/parameter_intro/nack">NACK</a>  | **PeSIT** Enables or disables the negative acknowledgement feature. |
 | <a href="../../../command_summary/parameter_intro/net">NET</a>  | Identifier referring to a CFTNET command associated with this protocol. |
 | <a href="../../../command_summary/parameter_intro/rcomp">RCOMP</a> | Maximum compression authorized on receiving a file.<br/> This compression is negotiated between the sender and the receiver.<br/> A zero value corresponds to no compression.<br/> For more information such as usable values etc., see <a href="../../../command_summary/parameter_intro/compression">Compression</a>. |
 | <a href="../../../command_summary/parameter_intro/restart">RESTART</a> | Maximum number of transfer restart attempts.<br/> An attempt is taken into account as soon as the physical connection with the remote site is correctly established. |
@@ -4821,7 +4804,7 @@
 
 
 
-============================== table nb count(327) ============================================
+============================== table nb count(326) ============================================
 
 
 | <a href="../../../command_summary/parameter_intro/eerp">EERP</a> | Used to interpret the value of the ORIGINATOR and DESTINATOR fields contained in the EERP message, according to the protocol version.<br/> The End to End ResPonse service generates a message called EERP. This message informs the file sender that the data sent arrived correctly.<br/> The first version of the protocol (1986) specifies that:<br/> • the ORIGINATOR protocol field corresponds to the file sender<br/> • the DESTINATOR protocol field corresponds to the file receiver<br/> The second version (1991) specifies that:<br/> • the ORIGINATOR protocol field corresponds to the EERP sender (i.e. the file receiver)<br/> • the DESTINATOR protocol field corresponds to the EERP receiver (i.e. the file sender)<br/> Note: heck the consistency of the customized values from one end to another. If the sender and receiver have different versions, it is not possible to acknowledge the transfer. |
@@ -4836,7 +4819,7 @@
 
 
 
-============================== table nb count(328) ============================================
+============================== table nb count(327) ============================================
 
 
 | <a href="../../../command_summary/parameter_intro/concat">CONCAT</a><br/> Only in sender mode | Option to concatenate FPDUs (File Protocol Data Units) in a given NSDU.<br/> This option is not negotiated. |
@@ -4865,7 +4848,7 @@
 
 
 
-============================== table nb count(329) ============================================
+============================== table nb count(328) ============================================
 
 
 | <a href="../../../command_summary/parameter_intro/ssl">SSL</a> | SSL commands Identifier used for security profiles. |
@@ -4873,7 +4856,7 @@
 
 
 
-============================== table nb count(330) ============================================
+============================== table nb count(329) ============================================
 
 
 | Parameters  | Description  |
@@ -4886,7 +4869,7 @@
 
 
 
-============================== table nb count(331) ============================================
+============================== table nb count(330) ============================================
 
 
 | Parameter  | Description  |
@@ -4898,7 +4881,7 @@
 
 
 
-============================== table nb count(332) ============================================
+============================== table nb count(331) ============================================
 
 
 | Parameter  | Description  |
@@ -4915,7 +4898,7 @@
 
 
 
-============================== table nb count(333) ============================================
+============================== table nb count(332) ============================================
 
 
 | Parameter  | Description  |
@@ -4934,7 +4917,7 @@
 
 
 
-============================== table nb count(334) ============================================
+============================== table nb count(333) ============================================
 
 
 | Parameters  | Description  |
@@ -4950,7 +4933,7 @@
 
 
 
-============================== table nb count(335) ============================================
+============================== table nb count(334) ============================================
 
 
 | Field | Type | Comment |
@@ -4963,7 +4946,7 @@
 
 
 
-============================== table nb count(336) ============================================
+============================== table nb count(335) ============================================
 
 
 | Field | Type | Comment |
@@ -4974,7 +4957,7 @@
 
 
 
-============================== table nb count(337) ============================================
+============================== table nb count(336) ============================================
 
 
 | Parameter  | Description  |
@@ -5011,7 +4994,7 @@
 
 
 
-============================== table nb count(338) ============================================
+============================== table nb count(337) ============================================
 
 
 | Parameter  | Description  |
@@ -5025,7 +5008,7 @@
 
 
 
-============================== table nb count(339) ============================================
+============================== table nb count(338) ============================================
 
 
 | Parameter  | Description  |
@@ -5094,7 +5077,7 @@
 
 
 
-============================== table nb count(340) ============================================
+============================== table nb count(339) ============================================
 
 
 | Format  | Processing  |
@@ -5106,7 +5089,7 @@
 
 
 
-============================== table nb count(341) ============================================
+============================== table nb count(340) ============================================
 
 
 | Parameter  | Description  |
@@ -5159,7 +5142,7 @@
 
 
 
-============================== table nb count(342) ============================================
+============================== table nb count(341) ============================================
 
 
 | Parameter  | Description  |
@@ -5170,7 +5153,7 @@
 
 
 
-============================== table nb count(343) ============================================
+============================== table nb count(342) ============================================
 
 
 | Parameter  | Description  |
@@ -5182,7 +5165,7 @@
 
 
 
-============================== table nb count(344) ============================================
+============================== table nb count(343) ============================================
 
 
 | Rule | Syntax | Alternate syntax |
@@ -5196,7 +5179,7 @@
 
 
 
-============================== table nb count(345) ============================================
+============================== table nb count(344) ============================================
 
 
 | Symbol  | Description  | Values  |
@@ -5210,7 +5193,7 @@
 
 
 
-============================== table nb count(346) ============================================
+============================== table nb count(345) ============================================
 
 
 | If you use this syntax… | The job is executed… |
@@ -5232,7 +5215,7 @@
 
 
 
-============================== table nb count(347) ============================================
+============================== table nb count(346) ============================================
 
 
 | Symbolic variable | Corresponding substituted value |
@@ -5252,7 +5235,7 @@
 
 
 
-============================== table nb count(348) ============================================
+============================== table nb count(347) ============================================
 
 
 | <span id="Paramete"></span>Parameter  | Type  | Default  | Description  |
@@ -5285,7 +5268,7 @@
 
 
 
-============================== table nb count(349) ============================================
+============================== table nb count(348) ============================================
 
 
 | Parameter  | Description  |
@@ -5303,7 +5286,7 @@
 
 
 
-============================== table nb count(350) ============================================
+============================== table nb count(349) ============================================
 
 
 | Parameter  | Description  |
@@ -5321,7 +5304,7 @@
 
 
 
-============================== table nb count(351) ============================================
+============================== table nb count(350) ============================================
 
 
 | Parameter  | Description  |
@@ -5339,7 +5322,7 @@
 
 
 
-============================== table nb count(352) ============================================
+============================== table nb count(351) ============================================
 
 
 | CID = string | Unique local identifier of the certificate to be created, replaced or deleted. |
@@ -5361,7 +5344,7 @@
 
 
 
-============================== table nb count(353) ============================================
+============================== table nb count(352) ============================================
 
 
 | Parameter  | Description  |
@@ -5370,6 +5353,16 @@
 | CERTIFICATES<br />  | A list of up to 100 certificate IDs. Each ID is a case-insensitive string with a maximum of 32 characters. There is no check other than syntax when you insert this parameter, so if you use an ID in the CERTIFICATES list that is the same as a PKIENTITY object ID {{&lt; TransferCFT/componentshortname &gt;}} ignores this ID when loading CFTSSL properties.  |
 | MODE | An action on the certificate, CREATE, REPLACE, or DELETE. (default = REPLACE) |
 | PKIFNAME  | The name of the PKI internal datafile to use. (default = $CFTPKU) *only in command line*  |
+
+
+
+============================== table nb count(353) ============================================
+
+
+| OS |  file_symb |
+| --- | --- |
+| Windows | # |
+| UNIX |  @ |
 
 
 
@@ -5386,16 +5379,6 @@
 ============================== table nb count(355) ============================================
 
 
-| OS |  file_symb |
-| --- | --- |
-| Windows | # |
-| UNIX |  @ |
-
-
-
-============================== table nb count(356) ============================================
-
-
 | CFTA0nX  | Details  |
 | --- | --- |
 | n=1 | CFTPARM file  |
@@ -5409,7 +5392,7 @@
 
 
 
-============================== table nb count(357) ============================================
+============================== table nb count(356) ============================================
 
 
 | Attribute  | Details  |
@@ -5427,7 +5410,7 @@
 
 
 
-============================== table nb count(358) ============================================
+============================== table nb count(357) ============================================
 
 
 | Key | Action |
@@ -5447,6 +5430,17 @@
 
 
 
+============================== table nb count(358) ============================================
+
+
+| Parameter | Default value | Description |
+| --- | --- | --- |
+| cft.readline.history_size | 500 | Maximum number of commands that you can store. |
+| cft.readline.enable | Yes | Save and retrieve the commands from disk. |
+| cft.readline.history_fname |  • Win: %APPDATA%\cft\CftutilHistory.txt<br/> • Unix: $(HOME)/.cft_history | Name of the file containing the command history. |
+
+
+
 ============================== table nb count(359) ============================================
 
 
@@ -5461,17 +5455,6 @@
 ============================== table nb count(360) ============================================
 
 
-| Parameter | Default value | Description |
-| --- | --- | --- |
-| cft.readline.history_size | 500 | Maximum number of commands that you can store. |
-| cft.readline.enable | Yes | Save and retrieve the commands from disk. |
-| cft.readline.history_fname |  • Win: %APPDATA%\cft\CftutilHistory.txt<br/> • Unix: $(HOME)/.cft_history | Name of the file containing the command history. |
-
-
-
-============================== table nb count(361) ============================================
-
-
 | Parameter  | Description  |
 | --- | --- |
 | <a href="../../command_summary/parameter_intro/comment">COMMENT</a> | Free comment.<br/> This comment is displayed and can be used to indicate a specific item of information, such as the customer name.<br/> This information is then used to determine a software license key. |
@@ -5480,7 +5463,7 @@
 
 
 
-============================== table nb count(362) ============================================
+============================== table nb count(361) ============================================
 
 
 | Parameter  | Description  |
@@ -5492,7 +5475,7 @@
 
 
 
-============================== table nb count(363) ============================================
+============================== table nb count(362) ============================================
 
 
 | Parameters  | Default  | Description  |
@@ -5502,7 +5485,7 @@
 
 
 
-============================== table nb count(364) ============================================
+============================== table nb count(363) ============================================
 
 
 | Parameter | Description |
@@ -5513,7 +5496,7 @@
 
 
 
-============================== table nb count(365) ============================================
+============================== table nb count(364) ============================================
 
 
 | Parameter  | Description  |
@@ -5525,7 +5508,7 @@
 
 
 
-============================== table nb count(366) ============================================
+============================== table nb count(365) ============================================
 
 
 | Parameter  | Description  |
@@ -5544,7 +5527,7 @@
 
 
 
-============================== table nb count(367) ============================================
+============================== table nb count(366) ============================================
 
 
 | Parameter  | Description  |
@@ -5555,7 +5538,7 @@
 
 
 
-============================== table nb count(368) ============================================
+============================== table nb count(367) ============================================
 
 
 | Parameter  | Description  |
@@ -5583,7 +5566,7 @@
 
 
 
-============================== table nb count(369) ============================================
+============================== table nb count(368) ============================================
 
 
 | Parameters  | Description  |
@@ -5598,7 +5581,7 @@
 
 
 
-============================== table nb count(370) ============================================
+============================== table nb count(369) ============================================
 
 
 | Parameters  | Description  |
@@ -5615,7 +5598,7 @@
 
 
 
-============================== table nb count(371) ============================================
+============================== table nb count(370) ============================================
 
 
 | Rule | Syntax | Alternate syntax |
@@ -5629,7 +5612,7 @@
 
 
 
-============================== table nb count(372) ============================================
+============================== table nb count(371) ============================================
 
 
 | Symbol  | Description  | Values  |
@@ -5643,7 +5626,7 @@
 
 
 
-============================== table nb count(373) ============================================
+============================== table nb count(372) ============================================
 
 
 | If you use this syntax… | The job is executed… |
@@ -5665,7 +5648,7 @@
 
 
 
-============================== table nb count(374) ============================================
+============================== table nb count(373) ============================================
 
 
 | Symbolic variable | Corresponding substituted value |
@@ -5685,7 +5668,7 @@
 
 
 
-============================== table nb count(375) ============================================
+============================== table nb count(374) ============================================
 
 
 | Parameter  | Description  |
@@ -5699,7 +5682,7 @@
 
 
 
-============================== table nb count(376) ============================================
+============================== table nb count(375) ============================================
 
 
 | Parameters  | Description  |
@@ -5715,7 +5698,7 @@
 
 
 
-============================== table nb count(377) ============================================
+============================== table nb count(376) ============================================
 
 
 | Parameter  | Description  |
@@ -5727,7 +5710,7 @@
 
 
 
-============================== table nb count(378) ============================================
+============================== table nb count(377) ============================================
 
 
 | Parameter  | Description  |
@@ -5746,7 +5729,7 @@
 
 
 
-============================== table nb count(379) ============================================
+============================== table nb count(378) ============================================
 
 
 | Parameters  | Description  |
@@ -5759,7 +5742,7 @@
 
 
 
-============================== table nb count(380) ============================================
+============================== table nb count(379) ============================================
 
 
 | Parameter  | Description  |
@@ -5771,7 +5754,7 @@
 
 
 
-============================== table nb count(381) ============================================
+============================== table nb count(380) ============================================
 
 
 | Parameter  | Description  |
@@ -5788,7 +5771,7 @@
 
 
 
-============================== table nb count(382) ============================================
+============================== table nb count(381) ============================================
 
 
 | Parameter  | Description  |
@@ -5833,7 +5816,7 @@
 
 
 
-============================== table nb count(383) ============================================
+============================== table nb count(382) ============================================
 
 
 | Parameter  | Description  |
@@ -5870,7 +5853,7 @@
 
 
 
-============================== table nb count(384) ============================================
+============================== table nb count(383) ============================================
 
 
 | Parameters  | Description  |
@@ -5882,7 +5865,7 @@
 | <a href="../../../command_summary/parameter_intro/exita">EXITA</a>  | Identifier describing the directory EXIT.<br/> The value of this identifier corresponds to the value of the CFTEXIT ID parameter.<br/> The identifier may contain the &amp;NPART symbolic variable. |
 | <a href="../../../command_summary/parameter_intro/id">ID</a>  | CFTPROT command identifier.<br/> This name must be referenced in the values taken by the CFTPARM PROT parameter. |
 | <a href="../../../command_summary/parameter_intro/idf">IDF</a>  | Used to assign an IDF to a file on receiving an NIDF.<br/> This parameter can be used in:<br/> • server mode (sender or receiver)<br/> • receiver requester following the activation of a RECV IDF=&lt;mask&gt; command |
-| <a href="../../../command_summary/parameter_intro/nack">NACK</a>  | PeSIT<br/> Enables or disables the negative acknowledgement feature. |
+| <a href="../../../command_summary/parameter_intro/nack">NACK</a>  | **PeSIT** Enables or disables the negative acknowledgement feature. |
 | <a href="../../../command_summary/parameter_intro/net">NET</a>  | Identifier referring to a CFTNET command associated with this protocol. |
 | <a href="../../../command_summary/parameter_intro/rcomp">RCOMP</a> | Maximum compression authorized on receiving a file.<br/> This compression is negotiated between the sender and the receiver.<br/> A zero value corresponds to no compression.<br/> For more information such as usable values etc., see <a href="../../../command_summary/parameter_intro/compression">Compression</a>. |
 | <a href="../../../command_summary/parameter_intro/restart">RESTART</a> | Maximum number of transfer restart attempts.<br/> An attempt is taken into account as soon as the physical connection with the remote site is correctly established. |
@@ -5895,7 +5878,7 @@
 
 
 
-============================== table nb count(385) ============================================
+============================== table nb count(384) ============================================
 
 
 | <br /> Parameters | Description  |
@@ -5912,7 +5895,7 @@
 
 
 
-============================== table nb count(386) ============================================
+============================== table nb count(385) ============================================
 
 
 | Parameters | Description |
@@ -5942,7 +5925,7 @@
 
 
 
-============================== table nb count(387) ============================================
+============================== table nb count(386) ============================================
 
 
 | Parameter  | Description  |
@@ -5951,7 +5934,7 @@
 
 
 
-============================== table nb count(388) ============================================
+============================== table nb count(387) ============================================
 
 
 | Parameter  | Description  |
@@ -6004,7 +5987,7 @@
 
 
 
-============================== table nb count(389) ============================================
+============================== table nb count(388) ============================================
 
 
 | Parameter  | Description  |
@@ -6073,7 +6056,7 @@
 
 
 
-============================== table nb count(390) ============================================
+============================== table nb count(389) ============================================
 
 
 | Format  | Processing  |
@@ -6085,7 +6068,7 @@
 
 
 
-============================== table nb count(391) ============================================
+============================== table nb count(390) ============================================
 
 
 | Parameter  | Description  |
@@ -6099,7 +6082,7 @@
 
 
 
-============================== table nb count(392) ============================================
+============================== table nb count(391) ============================================
 
 
 | Parameter  | Description  |
@@ -6118,7 +6101,7 @@
 
 
 
-============================== table nb count(393) ============================================
+============================== table nb count(392) ============================================
 
 
 | Parameter  | Description  |
@@ -6139,7 +6122,7 @@
 
 
 
-============================== table nb count(394) ============================================
+============================== table nb count(393) ============================================
 
 
 | Parameters  | Description  |
@@ -6150,7 +6133,7 @@
 
 
 
-============================== table nb count(395) ============================================
+============================== table nb count(394) ============================================
 
 
 | Parameter  | Description  |
@@ -6171,7 +6154,7 @@
 
 
 
-============================== table nb count(396) ============================================
+============================== table nb count(395) ============================================
 
 
 | Parameters | Description  |
@@ -6181,7 +6164,7 @@
 
 
 
-============================== table nb count(397) ============================================
+============================== table nb count(396) ============================================
 
 
 | Topic or sub-book | Description |
@@ -6198,7 +6181,7 @@
 
 
 
-============================== table nb count(398) ============================================
+============================== table nb count(397) ============================================
 
 
 | Parameter  | Description  |
@@ -6216,7 +6199,7 @@
 
 
 
-============================== table nb count(399) ============================================
+============================== table nb count(398) ============================================
 
 
 | Parameter  | Description  |
@@ -6233,7 +6216,7 @@
 
 
 
-============================== table nb count(400) ============================================
+============================== table nb count(399) ============================================
 
 
 | Parameter | Description |
@@ -6246,7 +6229,7 @@
 | EMPTY | Use this parameter to replace the default output of **Empty** values, usually empty string values.<br/> The default string <span >ANY</span> means that EMPTY is specified in the model. The default EMPTY used is '-' if it is not defined in the model. |
 | FILE  | Enter file name  |
 | FMODEL | Complete name or logical name of the XML model file.<br/> This parameter default value is fixed.  |
-| FOUT  | <span >PeSIT</span> You can extract Transfer CFT messages from the Catalog file, and forward these messages to a specified file using the fout parameter.<br/> The message length for PeSIT ANY profile, when forwarding a message from one CFT to another, has increased from 512 to 4096 bytes. The S/RRUSIZE must be greater than the maximum message length and message information combined (for example, 4127).<br/> The fout parameter enables you to redirect output to a specified file. |
+| FOUT  | **PeSIT** You can extract Transfer CFT messages from the Catalog file, and forward these messages to a specified file using the fout parameter.<br/> The message length for PeSIT ANY profile, when forwarding a message from one CFT to another, has increased from 512 to 4096 bytes. The S/RRUSIZE must be greater than the maximum message length and message information combined (for example, 4127).<br/> The fout parameter enables you to redirect output to a specified file. |
 | HELP | Displays help information:<br/> • FIELDS: Output all the fields name available for display model creation<br/> • MODELS: Output all the models available in the current model file |
 | IDA  | Local transfer identifier assigned by the user or user application. This identifier may be a search criterion for the catalog entry asso  |
 | IDF  | File type identifier.  |
@@ -6260,14 +6243,14 @@
 | PHASESTEP  | The processing phase step.  |
 | PIDTU  | The parent idtu is the idtu of the generic transfer. This means that for a group of files, file collection, or for broadcasting, the child transfers are now linked to the parent via the PIDTU.  |
 | RUSER | Displays value as defined in the CONTENT parameter. |
-| SORTBY  | Use this parameter to display information in an alphabetical/alphanumberic order.<br/> For example, to sort by partner name and identifier, enter:<br/> <span >CFTUTIL DISPLAY SORTBY=(PART,IDF)</span><br/> Additionally, you can add a prefix to define the criteria direction. Use <span >+</span> to increase (default) or <span >-</span> to decrease. For example:<br/> CFTUTIL DISPLAY SORTBY=(-IDTU) |
+| SORTBY  | Use this parameter to display information in an alphabetical/alphanumberic order.<br/> For example, to sort by partner name and identifier, enter:<br/> <span >CFTUTIL DISPLAY SORTBY=(PART,IDF)</span><br/> Additionally, you can add a prefix to define the criteria direction. Use <span >+</span> to increase (default) or <span >-</span> to decrease. For example:<br/> <code>CFTUTIL DISPLAY SORTBY=(-IDTU)</code>  |
 | STATE  | Defines the transfer request state.  |
 | SUSER | Displays value as defined in the CONTENT parameter. |
 | TYPE  | Defines the concerned type (object, medium, etc.).  |
 
 
 
-============================== table nb count(401) ============================================
+============================== table nb count(400) ============================================
 
 
 | Parameter  | Description |
@@ -6290,7 +6273,7 @@
 
 
 
-============================== table nb count(402) ============================================
+============================== table nb count(401) ============================================
 
 
 | Heading  | Meaning  |
@@ -6304,7 +6287,7 @@
 
 
 
-============================== table nb count(403) ============================================
+============================== table nb count(402) ============================================
 
 
 | Heading  | Meaning  |
@@ -6322,7 +6305,7 @@
 
 
 
-============================== table nb count(404) ============================================
+============================== table nb count(403) ============================================
 
 
 | Heading  | Description  |
@@ -6337,7 +6320,7 @@
 
 
 
-============================== table nb count(405) ============================================
+============================== table nb count(404) ============================================
 
 
 | Heading  | Description  |
@@ -6354,7 +6337,7 @@
 
 
 
-============================== table nb count(406) ============================================
+============================== table nb count(405) ============================================
 
 
 | Parameters  | Description  |
@@ -6367,7 +6350,7 @@
 
 
 
-============================== table nb count(407) ============================================
+============================== table nb count(406) ============================================
 
 
 | Parameter  | Default  | Description  |
@@ -6378,15 +6361,15 @@
 | datetimemin | 0  | Use to display logs that happened on or after this start date and time.  |
 | datetimemax | 99123123595999  | Use to display logs that happened on or before this end date and time.  |
 | datemax  | 991231  | There are multiple formats to use to define the maximum date for log display.<br/> • Use to display logs that happened on or before this date. Use the format: YYMMDD<br/> • You can also enter a partial date. For example, <code>16 </code>displays the log prior to 2016.<br/> • A negative value is interpreted as a number of days before today. For example, -1 displays the log till yesterday (included). |
-| timemin  | 0  |  • Logs only happened at this time or after this time during the day. Use the format HHMMSSss.<br/> • A negative value is interpreted as a number of minutes before the current time. For example, -20 displays the log for the last 20 minutes.<br/> <a href="#Time" >Time log precision</a> |
-| timemax  | 23595999  |  • Logs only happened at this time or before this time during the day. Use the format HHMMSSss.<br/> • <br/> <a href="#Time" >Time log precision</a> |
+| timemin  | 0  |  • Logs only happened at this time or after this time during the day. Use the format HHMMSSss.<br/> • A negative value is interpreted as a number of minutes before the current time. For example, -20 displays the log for the last 20 minutes.<br/> See also <a href="#Time" >Time log precision</a>. |
+| timemax  | 23595999  |  • Logs only happened at this time or before this time during the day. Use the format HHMMSSss.<br/> • A negative value is interpreted as a number of minutes before current time. For example , -20 displays the log with the last 20 minutes filtered out.<br/> See also <a href="#Time" >Time log precision</a>. |
 | pattern  |   | Only displays the log lines that match this specific pattern. Enter any pattern with a maximum of 63 characters.  |
 | displaynodeid  | YES  | Defines if the node ID displays at the beginning of each line in the log. Enter:<br/> • YES: display<br/> • NO: does not display |
 | node  | -  | Defines which nodes you want to display the log for. Specify the node by entering the node number :<br/> • Empty: if you do not define this parameter LISTLOG displays all nodes<br/> • Enter the node number(s) and separate with a comma. Node numbers cannot be more than two digits. For example: 00, 01, 02 |
 
 
 
-============================== table nb count(408) ============================================
+============================== table nb count(407) ============================================
 
 
 | CFTA0nX  | Details  |
@@ -6402,7 +6385,7 @@
 
 
 
-============================== table nb count(409) ============================================
+============================== table nb count(408) ============================================
 
 
 | Attribute  | Details  |
@@ -6420,7 +6403,7 @@
 
 
 
-============================== table nb count(410) ============================================
+============================== table nb count(409) ============================================
 
 
 | Parameter  | Value  | Description  |
@@ -6431,7 +6414,7 @@
 
 
 
-============================== table nb count(411) ============================================
+============================== table nb count(410) ============================================
 
 
 | UI  | Parameter details  | Description  |
@@ -6452,7 +6435,7 @@
 
 
 
-============================== table nb count(412) ============================================
+============================== table nb count(411) ============================================
 
 
 | Parameters  | Description  |
@@ -6464,7 +6447,7 @@
 
 
 
-============================== table nb count(413) ============================================
+============================== table nb count(412) ============================================
 
 
 | Parameters  | Select for transfers  | Modify in catalog  |
@@ -6501,7 +6484,7 @@
 
 
 
-============================== table nb count(414) ============================================
+============================== table nb count(413) ============================================
 
 
 | Parameters  | Description  |
@@ -6524,7 +6507,7 @@
 
 
 
-============================== table nb count(415) ============================================
+============================== table nb count(414) ============================================
 
 
 | Command  | Parameter  | Value  | Description  |
@@ -6534,7 +6517,7 @@
 
 
 
-============================== table nb count(416) ============================================
+============================== table nb count(415) ============================================
 
 
 | Parameters  | Description  |
@@ -6557,7 +6540,7 @@
 
 
 
-============================== table nb count(417) ============================================
+============================== table nb count(416) ============================================
 
 
 | Command  | Parameter  | Value  | Description  |
@@ -6567,7 +6550,7 @@
 
 
 
-============================== table nb count(418) ============================================
+============================== table nb count(417) ============================================
 
 
 | Parameter  | Description  |
@@ -6578,7 +6561,7 @@
 
 
 
-============================== table nb count(419) ============================================
+============================== table nb count(418) ============================================
 
 
 | Parameter  | Description  |
@@ -6599,7 +6582,7 @@
 
 
 
-============================== table nb count(420) ============================================
+============================== table nb count(419) ============================================
 
 
 | ODETTE | The START command has no effect on the interruption of a RECV command. Transfer CFT in this case operates in server mode and no restart is possible. A new RECV command has to be activated to restart transfers. |
@@ -6607,7 +6590,7 @@
 
 
 
-============================== table nb count(421) ============================================
+============================== table nb count(420) ============================================
 
 
 | Parameter  | Description  |
@@ -6629,7 +6612,7 @@
 
 
 
-============================== table nb count(422) ============================================
+============================== table nb count(421) ============================================
 
 
 | Parameters  | Description  |
@@ -6650,7 +6633,7 @@
 
 
 
-============================== table nb count(423) ============================================
+============================== table nb count(422) ============================================
 
 
 | STATE  | PART  | IDF  |
@@ -6662,7 +6645,7 @@
 
 
 
-============================== table nb count(424) ============================================
+============================== table nb count(423) ============================================
 
 
 | Character  | Indicates...  |
@@ -6677,7 +6660,7 @@
 
 
 
-============================== table nb count(425) ============================================
+============================== table nb count(424) ============================================
 
 
 | Symbolic variable  | Maximum length  | Corresponding substituted value  |
@@ -6693,7 +6676,7 @@
 
 
 
-============================== table nb count(426) ============================================
+============================== table nb count(425) ============================================
 
 
 | Symbolic variable  | Maximum length  | Corresponding substituted value  |
@@ -6708,7 +6691,7 @@
 
 
 
-============================== table nb count(427) ============================================
+============================== table nb count(426) ============================================
 
 
 | Symbolic variable  | Maximum length  | Corresponding substituted value  |
@@ -6721,7 +6704,7 @@
 
 
 
-============================== table nb count(428) ============================================
+============================== table nb count(427) ============================================
 
 
 | Symbolic variable  | Maximum length  | Corresponding substituted value  |
@@ -6751,7 +6734,7 @@
 
 
 
-============================== table nb count(429) ============================================
+============================== table nb count(428) ============================================
 
 
 | Symbolic variable  | Maximum length  | Corresponding substituted value  |
@@ -6773,7 +6756,7 @@
 
 
 
-============================== table nb count(430) ============================================
+============================== table nb count(429) ============================================
 
 
 | Symbolic variable  | Maximum length  | Corresponding substituted value  |
@@ -6792,7 +6775,7 @@
 
 
 
-============================== table nb count(431) ============================================
+============================== table nb count(430) ============================================
 
 
 | Symbolic variable  | Maximum length  | Corresponding substituted value  |
@@ -6806,7 +6789,7 @@
 
 
 
-============================== table nb count(432) ============================================
+============================== table nb count(431) ============================================
 
 
 | Symbolic variable  | Maximum length  | Corresponding substituted value  |
@@ -6816,7 +6799,7 @@
 
 
 
-============================== table nb count(433) ============================================
+============================== table nb count(432) ============================================
 
 
 | Symbolic variable  | Maximum length  | Corresponding substituted value  |
@@ -6829,7 +6812,7 @@
 
 
 
-============================== table nb count(434) ============================================
+============================== table nb count(433) ============================================
 
 
 | Symbolic variable  | Maximum length  | Corresponding substituted value  |
@@ -6842,7 +6825,7 @@
 
 
 
-============================== table nb count(435) ============================================
+============================== table nb count(434) ============================================
 
 
 | Symbolic variable  | Maximum length  | Corresponding substituted value  |
@@ -6861,7 +6844,7 @@
 
 
 
-============================== table nb count(436) ============================================
+============================== table nb count(435) ============================================
 
 
 | Symbolic variable  | Maximum length  | Corresponding substituted value  |
@@ -6872,7 +6855,7 @@
 
 
 
-============================== table nb count(437) ============================================
+============================== table nb count(436) ============================================
 
 
 | Symbolic variable  | Maximum length  | Corresponding substituted value  |
@@ -6882,7 +6865,7 @@
 
 
 
-============================== table nb count(438) ============================================
+============================== table nb count(437) ============================================
 
 
 > > > > > > > >  | Symbolic variable >  | Maximum length >  | Corresponding substituted > value >  |
@@ -6899,7 +6882,7 @@
 > > 
 
 
-============================== table nb count(439) ============================================
+============================== table nb count(438) ============================================
 
 
 > > >  | Symbolic variable >  | Maximum length >  | Corresponding substituted > value >  |
@@ -6911,7 +6894,7 @@
 > > 
 
 
-============================== table nb count(440) ============================================
+============================== table nb count(439) ============================================
 
 
 > > >  | Symbolic variable >  | Max length >  | Corresponding substituted > value >  |
@@ -6928,7 +6911,7 @@
 > > 
 
 
-============================== table nb count(441) ============================================
+============================== table nb count(440) ============================================
 
 
 > > > > > > >  | Parameter >  | Symbolic variables >  |
@@ -6947,7 +6930,7 @@
 > > 
 
 
-============================== table nb count(442) ============================================
+============================== table nb count(441) ============================================
 
 
 > > >  | Symbolic variable >  | Description >  |
@@ -6965,7 +6948,7 @@
 > > 
 
 
-============================== table nb count(443) ============================================
+============================== table nb count(442) ============================================
 
 
 | Description  | Windows  | Unix  | z/OS  | IBM i  |
@@ -6979,7 +6962,7 @@
 
 
 
-============================== table nb count(444) ============================================
+============================== table nb count(443) ============================================
 
 
 | File | Default<br/> Windows | Unix | z/OS | IBM i |
@@ -6991,7 +6974,7 @@
 
 
 
-============================== table nb count(445) ============================================
+============================== table nb count(444) ============================================
 
 
 | PARAMETER = value(s) | Information | SPECIFIC |
@@ -7000,7 +6983,7 @@
 
 
 
-============================== table nb count(446) ============================================
+============================== table nb count(445) ============================================
 
 
 | Description  | Notation  | Example  |
@@ -7015,7 +6998,7 @@
 
 
 
-============================== table nb count(447) ============================================
+============================== table nb count(446) ============================================
 
 
 | Description  | Notation  | Example  |
@@ -7031,7 +7014,7 @@
 
 
 
-============================== table nb count(448) ============================================
+============================== table nb count(447) ============================================
 
 
 | Description  | Notation  |
@@ -7046,7 +7029,7 @@
 
 
 
-============================== table nb count(449) ============================================
+============================== table nb count(448) ============================================
 
 
 | Protocol  | Description  |
@@ -7056,7 +7039,7 @@
 
 
 
-============================== table nb count(450) ============================================
+============================== table nb count(449) ============================================
 
 
 | Syntax | Command syntax listed here [see parameters below] |
@@ -7071,7 +7054,7 @@
 
 
 
-============================== table nb count(451) ============================================
+============================== table nb count(450) ============================================
 
 
 | Command  | Version  | Parameter  | Conversion to an absolute name  |
@@ -7083,7 +7066,7 @@
 
 
 
-============================== table nb count(452) ============================================
+============================== table nb count(451) ============================================
 
 
 | Variable  | Description  |
@@ -7165,7 +7148,7 @@
 
 
 
-============================== table nb count(453) ============================================
+============================== table nb count(452) ============================================
 
 
 | Protocol  | Default value |
@@ -7175,7 +7158,7 @@
 
 
 
-============================== table nb count(454) ============================================
+============================== table nb count(453) ============================================
 
 
 | Protocol  | Default value  |
@@ -7185,7 +7168,7 @@
 
 
 
-============================== table nb count(455) ============================================
+============================== table nb count(454) ============================================
 
 
 | CFTRECV, FDISP  | CFTRECV, FACTION  | Comments  |
@@ -7200,7 +7183,7 @@
 
 
 
-============================== table nb count(456) ============================================
+============================== table nb count(455) ============================================
 
 
 | OS  | Details  |
@@ -7209,7 +7192,7 @@
 
 
 
-============================== table nb count(457) ============================================
+============================== table nb count(456) ============================================
 
 
 | OS  | PARM  | PART  | CAT  | COM  | LOG  | ACCNT  |
@@ -7221,7 +7204,7 @@
 
 
 
-============================== table nb count(458) ============================================
+============================== table nb count(457) ============================================
 
 
 | System  | FBLKSIZE used  |
@@ -7233,7 +7216,7 @@
 
 
 
-============================== table nb count(459) ============================================
+============================== table nb count(458) ============================================
 
 
 | **z/OS (MVS)**  | For protocols other than PeSIT, CFT profile, if this parameter is not defined, its value is set as follows: <br/> • For fixed format files: this value equals the largest multiple of FLRECL which is less than the constant (related to the track length) defined on installation (default value: 19069), or FLRECL if FLRECL is greater than this constant<br/> • For variable format files: this value equals the constant (related to the track length) defined on installation of the {{&lt; TransferCFT/componentshortname &gt;}} in a z/OS environment (default value: 19065), or to FLRECL + 4 if FLRECL is greater than this constant<br/> • For undefined format files: this value is equal to 32760 |
@@ -7241,7 +7224,7 @@
 
 
 
-============================== table nb count(460) ============================================
+============================== table nb count(459) ============================================
 
 
 | System  | FBLKSIZE used  |
@@ -7253,7 +7236,7 @@
 
 
 
-============================== table nb count(461) ============================================
+============================== table nb count(460) ============================================
 
 
 | OS  | Default  |
@@ -7266,7 +7249,7 @@
 
 
 
-============================== table nb count(462) ============================================
+============================== table nb count(461) ============================================
 
 
 | CFTRECV, FDISP  | CFTRECV, FACTION  | Comments  |
@@ -7281,7 +7264,7 @@
 
 
 
-============================== table nb count(463) ============================================
+============================== table nb count(462) ============================================
 
 
 | To receive... | Enter... |
@@ -7292,7 +7275,7 @@
 
 
 
-============================== table nb count(464) ============================================
+============================== table nb count(463) ============================================
 
 
 | Parameter | Default | Processing when FORCE = YES |
@@ -7317,7 +7300,7 @@
 
 
 
-============================== table nb count(465) ============================================
+============================== table nb count(464) ============================================
 
 
 | Type | V24 length | V23 length | Description |
@@ -7345,7 +7328,7 @@
 
 
 
-============================== table nb count(466) ============================================
+============================== table nb count(465) ============================================
 
 
 | **IBM i (OS400), UNIX** | The variable format concept is specific to {{&lt; TransferCFT/componentshortname &gt;}}, and does not correspond to a reality for the systems indicated. A variable format receiver file cannot consequently be interpreted directly by an application, since it contains control information. Unless otherwise specified FRECFM = V is not used. |
@@ -7353,7 +7336,7 @@
 
 
 
-============================== table nb count(467) ============================================
+============================== table nb count(466) ============================================
 
 
 | **OS400, UNIX** | The variable format concept is specific to {{&lt; TransferCFT/componentshortname &gt;}}, and does not correspond to a reality for the systems indicated. The Transfer CFT can only send a variable format file if this file is generated by a COPYFILE command, or already received by {{&lt; TransferCFT/componentshortname &gt;}} (store and forward, for example). Unless otherwise specified FRECFM = V is not used. |
@@ -7361,7 +7344,7 @@
 
 
 
-============================== table nb count(468) ============================================
+============================== table nb count(467) ============================================
 
 
 | UNIX | Parameter not applicable |
@@ -7369,7 +7352,7 @@
 
 
 
-============================== table nb count(469) ============================================
+============================== table nb count(468) ============================================
 
 
 | OS  | PARM  | PART  | CAT  | COM  | LOG  | ACCNT  |
@@ -7381,7 +7364,7 @@
 
 
 
-============================== table nb count(470) ============================================
+============================== table nb count(469) ============================================
 
 
 | OS  | PARM  | PART  | CAT  | COM  | LOG  | ACCNT  |
@@ -7393,7 +7376,7 @@
 
 
 
-============================== table nb count(471) ============================================
+============================== table nb count(470) ============================================
 
 
 | FTYPE  | FCODE  | Type of sent file  |
@@ -7408,7 +7391,7 @@
 
 
 
-============================== table nb count(472) ============================================
+============================== table nb count(471) ============================================
 
 
 | FTYPE  | FCODE  | Type of sent file  |
@@ -7424,7 +7407,7 @@
 
 
 
-============================== table nb count(473) ============================================
+============================== table nb count(472) ============================================
 
 
 | FTYPE  | FCODE  | Type of sent file  |
@@ -7440,7 +7423,7 @@
 
 
 
-============================== table nb count(474) ============================================
+============================== table nb count(473) ============================================
 
 
 | FTYPE  | FCODE  | Type of sent file  |
@@ -7451,7 +7434,7 @@
 
 
 
-============================== table nb count(475) ============================================
+============================== table nb count(474) ============================================
 
 
 | FTYPE | FRECFM | Supported files and data organizations (if applicable). |
@@ -7466,7 +7449,7 @@
 
 
 
-============================== table nb count(476) ============================================
+============================== table nb count(475) ============================================
 
 
 |   | Default FTYPE | Default FRECFM |
@@ -7478,7 +7461,7 @@
 
 
 
-============================== table nb count(477) ============================================
+============================== table nb count(476) ============================================
 
 
 | FTYPE  | FRECFM  | Type of file  |
@@ -7491,7 +7474,7 @@
 
 
 
-============================== table nb count(478) ============================================
+============================== table nb count(477) ============================================
 
 
 | FTYPE  | FCODE  | Type of sent file  |
@@ -7508,7 +7491,7 @@
 
 
 
-============================== table nb count(479) ============================================
+============================== table nb count(478) ============================================
 
 
 | OS  | IBLKSIZE  |
@@ -7521,7 +7504,7 @@
 
 
 
-============================== table nb count(480) ============================================
+============================== table nb count(479) ============================================
 
 
 | EXIT type  | Command  | Parameter  |
@@ -7533,7 +7516,7 @@
 
 
 
-============================== table nb count(481) ============================================
+============================== table nb count(480) ============================================
 
 
 | **PeSIT SIT profile** | For the PeSIT SIT profile, the model file identifier is subjected to the format constraint (Fnnnnn). See <a href="../../../../protocols_start_here/about_pesit">Protocols: PeSIT</a>. |
@@ -7541,7 +7524,7 @@
 
 
 
-============================== table nb count(482) ============================================
+============================== table nb count(481) ============================================
 
 
 | PeSIT SIT profile | In the PeSIT protocol with the SIT profile, the model file identifier is subject to the format constraint (Fnnnnn). See <a href="../../../../protocols_start_here/about_pesit">Protocols: PeSIT</a>. |
@@ -7549,7 +7532,7 @@
 
 
 
-============================== table nb count(483) ============================================
+============================== table nb count(482) ============================================
 
 
 | **UNIX, Windows** | 512 for text files (ITYPE = T, X or O).<br /> 4096 for binary or variables files (ITYPE = {B | V}). |
@@ -7557,7 +7540,7 @@
 
 
 
-============================== table nb count(484) ============================================
+============================== table nb count(483) ============================================
 
 
 | OS400, UNIX | The variable format concept is specific to {{&lt; TransferCFT/componentshortname &gt;}} and is not valid for the systems indicated. |
@@ -7565,7 +7548,7 @@
 
 
 
-============================== table nb count(485) ============================================
+============================== table nb count(484) ============================================
 
 
 | OS  | Maximum number supported  |
@@ -7577,7 +7560,7 @@
 
 
 
-============================== table nb count(486) ============================================
+============================== table nb count(485) ============================================
 
 
 | PeSIT D CFT profile<br /> <br /> PeSIT E | This parameter should only be used for transfers in PeSIT (with the profile or version indicated when the value of the SCOMP parameter of the CFTPROT command is too high for the model file in question). |
@@ -7586,7 +7569,7 @@
 
 
 
-============================== table nb count(487) ============================================
+============================== table nb count(486) ============================================
 
 
 | OS  | Monitor submitter  | Operator console  | Any user  |
@@ -7599,7 +7582,7 @@
 
 
 
-============================== table nb count(488) ============================================
+============================== table nb count(487) ============================================
 
 
 | OS  | Default values for NOTIFY  |
@@ -7612,7 +7595,7 @@
 
 
 
-============================== table nb count(489) ============================================
+============================== table nb count(488) ============================================
 
 
 | Operator console OS | Characters interpreted  | Messages sent to... |
@@ -7625,7 +7608,7 @@
 
 
 
-============================== table nb count(490) ============================================
+============================== table nb count(489) ============================================
 
 
 | User OS  | Messages are...  |
@@ -7635,7 +7618,7 @@
 
 
 
-============================== table nb count(491) ============================================
+============================== table nb count(490) ============================================
 
 
 | PeSIT D EXTERN profile<br /> PeSIT ANY profile<br /> PeSIT E | In PeSIT protocol with the EXTERN profile, the value NFRECFM = U is not known in protocol terms and is changed by the <span >Transfer CFT</span> to NFRECFM = V. This value (U) is sent with no modification in PeSIT D CFT profile or in PeSIT E from <span >Transfer CFT</span> to <span >Transfer CFT</span>. |
@@ -7645,16 +7628,16 @@
 
 
 
-============================== table nb count(492) ============================================
+============================== table nb count(491) ============================================
 
 
-| **PeSIT D CFT profile<br /> PeSIT E CFT/CFT** | **<br/> If this parameter is not defined, Transfer CFT assigns a default value, as a function of the:<br/> • local file type (FTYPE parameter),<br/> • operating system of the transfer recipient (SYST parameter of CFTPART).<br/> The default values are indicated in *NTYPE sent by default*. |
+| **PeSIT D CFT profile<br /> PeSIT E CFT/CFT** | *Default value*<br/> If this parameter is not defined, Transfer CFT assigns a default value, as a function of the:<br/> • local file type (FTYPE parameter),<br/> • operating system of the transfer recipient (SYST parameter of CFTPART).<br/> The default values are indicated in *NTYPE sent by default*. |
 | --- | --- |
 | **ODETTE** | The specific value NTYPE = T may be used to request the sending of a file in ODETTE text format. Refer to Managing Protocols. |
 
 
 
-============================== table nb count(493) ============================================
+============================== table nb count(492) ============================================
 
 
 | **OS** | **OBLKSIZE**  |
@@ -7667,7 +7650,7 @@
 
 
 
-============================== table nb count(494) ============================================
+============================== table nb count(493) ============================================
 
 
 | **Windows**  | 512. |
@@ -7676,7 +7659,7 @@
 
 
 
-============================== table nb count(495) ============================================
+============================== table nb count(494) ============================================
 
 
 | Value  | Message category  | Type  |
@@ -7692,7 +7675,7 @@
 
 
 
-============================== table nb count(496) ============================================
+============================== table nb count(495) ============================================
 
 
 | OS  | Default value for OPERMSG  |
@@ -7704,7 +7687,7 @@
 
 
 
-============================== table nb count(497) ============================================
+============================== table nb count(496) ============================================
 
 
 | OS  | Details  |
@@ -7713,7 +7696,7 @@
 
 
 
-============================== table nb count(498) ============================================
+============================== table nb count(497) ============================================
 
 
 | CFTPART | ID = &lt;PART parameter value&gt;, ... |   |
@@ -7721,7 +7704,7 @@
 
 
 
-============================== table nb count(499) ============================================
+============================== table nb count(498) ============================================
 
 
 | CFTDEST | ID = &lt;PART parameter value&gt;, |   |
@@ -7730,7 +7713,7 @@
 
 
 
-============================== table nb count(500) ============================================
+============================== table nb count(499) ============================================
 
 
 | Protocol  | Default value  |
@@ -7740,7 +7723,7 @@
 
 
 
-============================== table nb count(501) ============================================
+============================== table nb count(500) ============================================
 
 
 | PeSIT E standard | In standard PeSIT E, the RUSER parameter value is transported in the PI 04, but its length is limited to 8-characters. Therefore, the PI 04 contains the concatenated value along with the value of the RAPPL parameter. |
@@ -7749,7 +7732,7 @@
 
 
 
-============================== table nb count(502) ============================================
+============================== table nb count(501) ============================================
 
 
 | Access method  | Size in characters  | Details  |
@@ -7758,7 +7741,7 @@
 
 
 
-============================== table nb count(503) ============================================
+============================== table nb count(502) ============================================
 
 
 | Access method  | Size in characters<br/> (alphanumeric) | Definition and comments  |
@@ -7767,7 +7750,7 @@
 
 
 
-============================== table nb count(504) ============================================
+============================== table nb count(503) ============================================
 
 
 | Protocol  | Default value |
@@ -7777,7 +7760,7 @@
 
 
 
-============================== table nb count(505) ============================================
+============================== table nb count(504) ============================================
 
 
 | PeSIT profile  | Details  |
@@ -7787,7 +7770,7 @@
 
 
 
-============================== table nb count(506) ============================================
+============================== table nb count(505) ============================================
 
 
 | PeSIT E standard | In standard PeSIT E, the SUSER parameter is transported in the PI 03, and its length is limited to 8-characters. Therefore, the PI 03 contains the concatenated value along with the value of the SAPPL parameter. |
@@ -7796,7 +7779,7 @@
 
 
 
-============================== table nb count(507) ============================================
+============================== table nb count(506) ============================================
 
 
 | Operating system  | Maximum value  |
@@ -7808,7 +7791,7 @@
 
 
 
-============================== table nb count(508) ============================================
+============================== table nb count(507) ============================================
 
 
 | Value  | Meaning  |
@@ -7820,7 +7803,7 @@
 
 
 
-============================== table nb count(509) ============================================
+============================== table nb count(508) ============================================
 
 
 | Value  | Medium concerned  |
@@ -7834,7 +7817,7 @@
 
 
 
-============================== table nb count(510) ============================================
+============================== table nb count(509) ============================================
 
 
 | Value  | Meaning  | Command |
@@ -7858,7 +7841,7 @@
 
 
 
-============================== table nb count(511) ============================================
+============================== table nb count(510) ============================================
 
 
 | Value  | Definition  |
@@ -7883,7 +7866,7 @@
 
 
 
-============================== table nb count(512) ============================================
+============================== table nb count(511) ============================================
 
 
 | MVS, VMS | This parameter is mandatory if the receiver file is a version file (in particular for operation in the open mode and when the sender sends an NFNAME corresponding to a GDG name). |
@@ -7891,7 +7874,7 @@
 
 
 
-============================== table nb count(513) ============================================
+============================== table nb count(512) ============================================
 
 
 | Parameter  | Description  |
@@ -7909,7 +7892,7 @@
 
 
 
-============================== table nb count(514) ============================================
+============================== table nb count(513) ============================================
 
 
 | Primitive  | Notation  | Description  |
@@ -7921,7 +7904,7 @@
 
 
 
-============================== table nb count(515) ============================================
+============================== table nb count(514) ============================================
 
 
 | PeSIT INITIATOR  |   |   | PeSIT RESPONDER  |
@@ -7964,7 +7947,7 @@
 
 
 
-============================== table nb count(516) ============================================
+============================== table nb count(515) ============================================
 
 
 | PeSIT INITIATOR  |   | PeSIT RESPONDER  |
@@ -8000,7 +7983,7 @@
 
 
 
-============================== table nb count(517) ============================================
+============================== table nb count(516) ============================================
 
 
 | PeSIT INITIATOR  |   | PeSIT RESPONDER  |
@@ -8018,7 +8001,7 @@
 
 
 
-============================== table nb count(518) ============================================
+============================== table nb count(517) ============================================
 
 
 | TYPE parameter  | Description  |
@@ -8028,7 +8011,7 @@
 
 
 
-============================== table nb count(519) ============================================
+============================== table nb count(518) ============================================
 
 
 | SPROUT value  | Access level  |
@@ -8040,7 +8023,7 @@
 
 
 
-============================== table nb count(520) ============================================
+============================== table nb count(519) ============================================
 
 
 | PI  | Description  |  Transfer CFT value  |
@@ -8094,7 +8077,7 @@
 
 
 
-============================== table nb count(521) ============================================
+============================== table nb count(520) ============================================
 
 
 | PI  | Description  | Transfer CFT value  |
@@ -8113,7 +8096,7 @@
 
 
 
-============================== table nb count(522) ============================================
+============================== table nb count(521) ============================================
 
 
 | CFTPROT parameter  | PeSIT E  | PeSIT E + CFT extensions  |
@@ -8130,7 +8113,7 @@
 
 
 
-============================== table nb count(523) ============================================
+============================== table nb count(522) ============================================
 
 
 | CFTSEND or SEND parameter  | PeSIT E  | PeSIT E<br/> +<br/> Transfer CFT extensions  |
@@ -8157,7 +8140,7 @@
 
 
 
-============================== table nb count(524) ============================================
+============================== table nb count(523) ============================================
 
 
 | CFTRECV parameter  | PeSIT E  | PeSIT E<br/> +<br/> Transfer CFT extensions  |
@@ -8172,7 +8155,7 @@
 
 
 
-============================== table nb count(525) ============================================
+============================== table nb count(524) ============================================
 
 
 | Topic  | Describes...  |
@@ -8185,7 +8168,7 @@
 
 
 
-============================== table nb count(526) ============================================
+============================== table nb count(525) ============================================
 
 
 | If... | Then the final values are... |
@@ -8198,7 +8181,7 @@
 
 
 
-============================== table nb count(527) ============================================
+============================== table nb count(526) ============================================
 
 
 | Receiving system  | FTYPE default  |
@@ -8209,7 +8192,7 @@
 
 
 
-============================== table nb count(528) ============================================
+============================== table nb count(527) ============================================
 
 
 | Parameter  | Value  | Description  |
@@ -8219,7 +8202,7 @@
 
 
 
-============================== table nb count(529) ============================================
+============================== table nb count(528) ============================================
 
 
 | Parameter  | Default  | Description  |
@@ -8230,7 +8213,7 @@
 
 
 
-============================== table nb count(530) ============================================
+============================== table nb count(529) ============================================
 
 
 | Parameter  | Description  |
@@ -8240,7 +8223,7 @@
 
 
 
-============================== table nb count(531) ============================================
+============================== table nb count(530) ============================================
 
 
 | Parameters  | Value  | Description  |
@@ -8261,7 +8244,7 @@
 
 
 
-============================== table nb count(532) ============================================
+============================== table nb count(531) ============================================
 
 
 | Command  | Action  |
@@ -8276,7 +8259,7 @@
 
 
 
-============================== table nb count(533) ============================================
+============================== table nb count(532) ============================================
 
 
 | Topic | Contents |
@@ -8289,7 +8272,7 @@
 
 
 
-============================== table nb count(534) ============================================
+============================== table nb count(533) ============================================
 
 
 | PeSIT E CFT/CFT<br/> PeSIT D CFT profile  | In PeSIT E (CFT to CFT), or PeSIT D CFT profile (transfer between 2 {{&lt; TransferCFT/componentshortname &gt;}}s), the default values taken by the FSPACE, FTYPE, FBLKSIZE, FLRECL and FRECFM parameters are the values sent by the partner (see the CFTSEND object, NSPACE, NTYPE, NBLKSIZE, NLRECL, NRECFM parameters). For open mode operation, the FNAME parameter can also inherit the value of the partner NFNAME parameter.  |
@@ -8300,7 +8283,7 @@
 
 
 
-============================== table nb count(535) ============================================
+============================== table nb count(534) ============================================
 
 
 |   | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | A | B | C | D | E | F |
@@ -8320,7 +8303,7 @@
 
 
 
-============================== table nb count(536) ============================================
+============================== table nb count(535) ============================================
 
 
 |   | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | A | B | C | D | E | F |
@@ -8339,6 +8322,22 @@
 | D | - | - | - | + | + | + | + | + | + | + | + | ¦ | _ | ¦ | ¦ | ¯ |
 | E | a | ß | G | p | S | s | µ | t | F | T | O | d | 8 | f | e | n |
 | F | = | ± | = | = | ( | ) | ÷ | ˜ | ° | · | · | v | n | ² | ¦ |   |
+
+
+
+============================== table nb count(536) ============================================
+
+
+| Command | Description |
+| --- | --- |
+| <a href="">SEND</a>  | Send files, messages, or replies (acknowledgments)  |
+| <a href="">RECV</a>  | Receive files  |
+| <a href="../../admin_intro/admin_commands_intro/delete_command">DELETE</a> | Delete catalog entries  |
+| <a href="../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/halt_command">HALT</a> | Stop transfers  |
+| <a href="../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/keep_command">KEEP</a> | Suspend transfers  |
+| <a href="../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/start_command">START</a> | Restart transfers  |
+| <a href="../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/submit_command">SUBMIT</a> | Submit an end-of-transfer procedure |
+| <a href="../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/end_command">END</a> | Declare that flow is finished |
 
 
 
@@ -8361,22 +8360,6 @@
 ============================== table nb count(538) ============================================
 
 
-| Command | Description |
-| --- | --- |
-| <a href="">SEND</a>  | Send files, messages, or replies (acknowledgments)  |
-| <a href="">RECV</a>  | Receive files  |
-| <a href="../../admin_intro/admin_commands_intro/delete_command">DELETE</a> | Delete catalog entries  |
-| <a href="../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/halt_command">HALT</a> | Stop transfers  |
-| <a href="../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/keep_command">KEEP</a> | Suspend transfers  |
-| <a href="../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/start_command">START</a> | Restart transfers  |
-| <a href="../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/submit_command">SUBMIT</a> | Submit an end-of-transfer procedure |
-| <a href="../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/end_command">END</a> | Declare that flow is finished |
-
-
-
-============================== table nb count(539) ============================================
-
-
 | Command  | Action  |
 | --- | --- |
 | <a href="../../../admin_intro/admin_commands_intro/delete_command">DELETE</a> | Deletes a catalog entry  |
@@ -8389,7 +8372,7 @@
 
 
 
-============================== table nb count(540) ============================================
+============================== table nb count(539) ============================================
 
 
 | Diagp value  | Cycle  |
@@ -8400,7 +8383,7 @@
 
 
 
-============================== table nb count(541) ============================================
+============================== table nb count(540) ============================================
 
 
 | COMMUT value  | File is sent to partner  | Details  |
@@ -8412,7 +8395,7 @@
 
 
 
-============================== table nb count(542) ============================================
+============================== table nb count(541) ============================================
 
 
 | Parameter  | Description  |
@@ -8423,7 +8406,7 @@
 
 
 
-============================== table nb count(543) ============================================
+============================== table nb count(542) ============================================
 
 
 | Parameters  | Value  | Description  |
@@ -8444,7 +8427,7 @@
 
 
 
-============================== table nb count(544) ============================================
+============================== table nb count(543) ============================================
 
 
 | CFT_ charset  | UNIX/Windows  | IBM i  |
@@ -8467,7 +8450,7 @@
 
 
 
-============================== table nb count(545) ============================================
+============================== table nb count(544) ============================================
 
 
 | Phase  | Phasestep  | <span id="State"></span>State  | Description  |
@@ -8493,7 +8476,7 @@
 
 
 
-============================== table nb count(546) ============================================
+============================== table nb count(545) ============================================
 
 
 | A<br/> Pre-processing | T<br/> Transfer | Y<br/> Post-processing | Z<br/> Ack-processing | X<br/> Done |
@@ -8507,7 +8490,7 @@
 
 
 
-============================== table nb count(547) ============================================
+============================== table nb count(546) ============================================
 
 
 | A<br/> Pre-processing | T<br/> Transfer | Y<br/> Post-processing | Z<br/> Ack-processing | X<br/> Done |
@@ -8521,7 +8504,7 @@
 
 
 
-============================== table nb count(548) ============================================
+============================== table nb count(547) ============================================
 
 
 | A<br/> Pre-processing | T<br/> Transfer | Y<br/> Post-processing | Z<br/> Ack-processing | X<br/> Done |
@@ -8535,7 +8518,7 @@
 
 
 
-============================== table nb count(549) ============================================
+============================== table nb count(548) ============================================
 
 
 | Phase  | Phasestep  | State  | Description  |
@@ -8561,7 +8544,7 @@
 
 
 
-============================== table nb count(550) ============================================
+============================== table nb count(549) ============================================
 
 
 | Parameter  | Default value  | Description  |
@@ -8571,7 +8554,7 @@
 
 
 
-============================== table nb count(551) ============================================
+============================== table nb count(550) ============================================
 
 
 | Parameter  | Value  | Description  |
@@ -8593,7 +8576,7 @@
 
 
 
-============================== table nb count(552) ============================================
+============================== table nb count(551) ============================================
 
 
 | Parameter  | Value  | Description  |
@@ -8615,6 +8598,18 @@
 
 
 
+============================== table nb count(552) ============================================
+
+
+| Parameter  | Value  | Description  |
+| --- | --- | --- |
+| DIAGP  | string  | Specify a customized error that will be set for DIAGP in the catalog.  |
+| DIAGC  | string  | Specify a customized error that will be set for DIAGC in the catalog.  |
+| PHASE  | char  | The transfer phase at which the command is applied.  |
+| PHASE STEP  | char  | The phase step at which the command is applied.  |
+
+
+
 ============================== table nb count(553) ============================================
 
 
@@ -8632,8 +8627,7 @@
 
 | Parameter  | Value  | Description  |
 | --- | --- | --- |
-| DIAGP  | string  | Specify a customized error that will be set for DIAGP in the catalog.  |
-| DIAGC  | string  | Specify a customized error that will be set for DIAGC in the catalog.  |
+| APPSTATE  | string  | Specify an application state for the processing script that will allow a SUBMIT to occur at the correct script step.  |
 | PHASE  | char  | The transfer phase at which the command is applied.  |
 | PHASE STEP  | char  | The phase step at which the command is applied.  |
 
@@ -8644,8 +8638,8 @@
 
 | Parameter  | Value  | Description  |
 | --- | --- | --- |
-| APPSTATE  | string  | Specify an application state for the processing script that will allow a SUBMIT to occur at the correct script step.  |
 | PHASE  | char  | The transfer phase at which the command is applied.  |
+| MAXDURATION  | integer  | Restart a transfer that reached its maxduration, time in minutes {<u>0</u>...32767}.  |
 | PHASE STEP  | char  | The phase step at which the command is applied.  |
 
 
@@ -8653,18 +8647,7 @@
 ============================== table nb count(556) ============================================
 
 
-| Parameter  | Value  | Description  |
-| --- | --- | --- |
-| PHASE  | char  | The transfer phase at which the command is applied.  |
-| MAXDURATION  | integer  | Restart a transfer that reached its maxduration, time in minutes {<u>0</u>...32767}.  |
-| PHASE STEP  | char  | The phase step at which the command is applied.  |
-
-
-
-============================== table nb count(557) ============================================
-
-
-|   | PART  | DEST  | CHILDREN  |
+| CFTDEST (1) vs<br /> CFTSEND/SEND/CFTRECV/RECV (2)  | PART  | DEST  | CHILDREN  |
 | --- | --- | --- | --- |
 | FILE  | L1 + L2 + L3  | L1  | L2 + L3  |
 | LIST  | L1 + L2  | L1  | L2  |
@@ -8672,7 +8655,7 @@
 
 
 
-============================== table nb count(558) ============================================
+============================== table nb count(557) ============================================
 
 
 | D = disp  | Transfers are carried out immediately. (default) |
@@ -8682,7 +8665,7 @@
 
 
 
-============================== table nb count(559) ============================================
+============================== table nb count(558) ============================================
 
 
 | Platform  | UNIX-like environment  | Native  |
@@ -8695,7 +8678,7 @@
 
 
 
-============================== table nb count(560) ============================================
+============================== table nb count(559) ============================================
 
 
 | Parameter  | Default  | Description  |
@@ -8704,7 +8687,7 @@
 
 
 
-============================== table nb count(561) ============================================
+============================== table nb count(560) ============================================
 
 
 | Character  | Description  | Example  |
@@ -8714,7 +8697,7 @@
 
 
 
-============================== table nb count(562) ============================================
+============================== table nb count(561) ============================================
 
 
 | Symbol  | Indicates  | Example  |
@@ -8733,7 +8716,7 @@
 
 
 
-============================== table nb count(563) ============================================
+============================== table nb count(562) ============================================
 
 
 | Transfer type  | IDTU  | PIDTU  | Phasestep  | Diagi  |
@@ -8745,7 +8728,7 @@
 
 
 
-============================== table nb count(564) ============================================
+============================== table nb count(563) ============================================
 
 
 | Transfer type  | IDTU  | PIDTU  | Phasestep  | Diagi  |
@@ -8755,7 +8738,7 @@
 
 
 
-============================== table nb count(565) ============================================
+============================== table nb count(564) ============================================
 
 
 | Command description | Use this command to make a file available for transfer without it being explicitly requested.  |
@@ -8765,7 +8748,7 @@
 
 
 
-============================== table nb count(566) ============================================
+============================== table nb count(565) ============================================
 
 
 | Parameters  | Description  |
@@ -8783,7 +8766,7 @@
 
 
 
-============================== table nb count(567) ============================================
+============================== table nb count(566) ============================================
 
 
 | Parameters | Description |
@@ -8796,7 +8779,7 @@
 
 
 
-============================== table nb count(568) ============================================
+============================== table nb count(567) ============================================
 
 
 | Topic  | Description  |
@@ -8809,7 +8792,7 @@
 
 
 
-============================== table nb count(569) ============================================
+============================== table nb count(568) ============================================
 
 
 | **ODETTE, PeSIT D CFT profile, PeSIT E**  | Available only with the protocols mentioned above.  |
@@ -8817,7 +8800,7 @@
 
 
 
-============================== table nb count(570) ============================================
+============================== table nb count(569) ============================================
 
 
 | **ODETTE**  | Only the following receive command is valid:<br /> RECV IDF = *<br /> Although sequencing is at the sender’s initiative, the receiver end catalog will contain a record corresponding to the global reception request and a record for each reception, in the same way as for the other protocols. This command provides the possibility to change direction and hence globally receive all the files pending at the remote partner end.  |
@@ -8827,7 +8810,7 @@
 
 
 
-============================== table nb count(571) ============================================
+============================== table nb count(570) ============================================
 
 
 | Parameter  | Default  | Description  |
@@ -8844,7 +8827,7 @@
 
 
 
-============================== table nb count(572) ============================================
+============================== table nb count(571) ============================================
 
 
 | Parameter  | Default  | Description  |
@@ -8855,7 +8838,7 @@
 
 
 
-============================== table nb count(573) ============================================
+============================== table nb count(572) ============================================
 
 
 | Parameter  | Default  | Description  |
@@ -8865,7 +8848,7 @@
 
 
 
-============================== table nb count(574) ============================================
+============================== table nb count(573) ============================================
 
 
 | Topic | Describes... |
@@ -8877,7 +8860,7 @@
 
 
 
-============================== table nb count(575) ============================================
+============================== table nb count(574) ============================================
 
 
 | Parameter  | Object  | Network name  |
@@ -8888,7 +8871,7 @@
 
 
 
-============================== table nb count(576) ============================================
+============================== table nb count(575) ============================================
 
 
 | Parameter  | Location  | Local name  |
@@ -8903,7 +8886,7 @@
 
 
 
-============================== table nb count(577) ============================================
+============================== table nb count(576) ============================================
 
 
 | Stand alone  | Stand alone  |
@@ -8914,7 +8897,7 @@
 
 
 
-============================== table nb count(578) ============================================
+============================== table nb count(577) ============================================
 
 
 | Reached limit for the ...  | DIAGI - DIAGP  | Reschedules...  | Conditions to be executed..  |
@@ -8928,7 +8911,7 @@
 
 
 
-============================== table nb count(579) ============================================
+============================== table nb count(578) ============================================
 
 
 | UCONF value  | Type  | Default  | Description  |
@@ -8939,7 +8922,7 @@
 
 
 
-============================== table nb count(580) ============================================
+============================== table nb count(579) ============================================
 
 
 | CG field  | CG values  | CFTUTIL <br/> parameter | Description  |
@@ -8950,7 +8933,7 @@
 
 
 
-============================== table nb count(581) ============================================
+============================== table nb count(580) ============================================
 
 
 | Topics/sections  | Description  |
@@ -8965,7 +8948,7 @@
 
 
 
-============================== table nb count(582) ============================================
+============================== table nb count(581) ============================================
 
 
 | Field  | Description  |
@@ -8979,6 +8962,30 @@
 | sUserCId  | Identifier (in the local certificate database) of the user certificate used locally for authentication by the remote partner.  |
 | sCertFname  | Physical name of the file in which the certificate presented by the remote partner was recorded.  |
 | sProf  | Identifier of the CFTSSL command used to negotiate the session parameters.  |
+
+
+
+============================== table nb count(582) ============================================
+
+
+| Suite  | Order used | Authentication  | Confidentiality  | Integrity  |
+| --- | --- | --- | --- | --- |
+| 49199 **  | 1  | ECDHE + RSA authentication  | AES-128 GCM  | SHA-256  |
+| 49200 **  | 2  | ECDHE + RSA authentication  | AES-256 GCM  | SHA-384  |
+| 49191 **  | 3  | ECDHE + RSA authentication | AES-128  | SHA-256  |
+| 49192**  | 4  | ECDHE + RSA authentication  | AES-256  | SHA-384  |
+| 156 **  | 5  | RSA authentication  | AES 128 GCM  | SHA-256  |
+| 157 **  | 6  | RSA authentication  | AES 256 GCM  | SHA-384  |
+| 60*  | 7  | RSA authentication (512, 1024, 2048, or 4096)  | AES-128  | SHA-256  |
+| 61*  | 8  | RSA authentication (512, 1024, 2048, or 4096)  | AES-256  | SHA-256  |
+| 47 &lt;/td&gt;  | 9  | RSA authentication (512, 1024, 2048, or 4096) &lt;/td&gt;  | AES-128 &lt;/td&gt;  | SHA-1 &lt;/td&gt;  |
+| 53  | 10  | RSA authentication (512, 1024, 2048, or 4096)  | AES-256  | SHA-1  |
+| 10 &lt;/td&gt;  | 11  | RSA authentication (512, 1024, 2048, or 4096) &lt;/td&gt;  | Triple DES &lt;/td&gt;  | SHA-1 &lt;/td&gt;  |
+| 5 &lt;/td&gt;  | 12  | RSA authentication (512, 1024, 2048, or 4096) &lt;/td&gt;  | RC4 &lt;/td&gt;  | SHA-1 &lt;/td&gt;  |
+| 4 &lt;/td&gt;  | 13  | RSA authentication (512, 1024, 2048, or 4096) &lt;/td&gt;  | RC4 &lt;/td&gt;  | MD5 &lt;/td&gt;  |
+| 59*  | 14  | RSA authentication (512, 1024, 2048, or 4096)  | None  | SHA-256  |
+| 2 &lt;/td&gt;  | 15  | RSA authentication (512, 1024, 2048, or 4096) &lt;/td&gt;  | None &lt;/td&gt;  | SHA-1 &lt;/td&gt;  |
+| 1 &lt;/td&gt;  | 16  | RSA authentication (512, 1024, 2048, or 4096) &lt;/td&gt;  | None &lt;/td&gt;  | MD5 &lt;/td&gt;  |
 
 
 
@@ -9009,30 +9016,6 @@
 ============================== table nb count(584) ============================================
 
 
-| Suite  | Order used | Authentication  | Confidentiality  | Integrity  |
-| --- | --- | --- | --- | --- |
-| 49199 **  | 1  | ECDHE + RSA authentication  | AES-128 GCM  | SHA-256  |
-| 49200 **  | 2  | ECDHE + RSA authentication  | AES-256 GCM  | SHA-384  |
-| 49191 **  | 3  | ECDHE + RSA authentication | AES-128  | SHA-256  |
-| 49192**  | 4  | ECDHE + RSA authentication  | AES-256  | SHA-384  |
-| 156 **  | 5  | RSA authentication  | AES 128 GCM  | SHA-256  |
-| 157 **  | 6  | RSA authentication  | AES 256 GCM  | SHA-384  |
-| 60*  | 7  | RSA authentication (512, 1024, 2048, or 4096)  | AES-128  | SHA-256  |
-| 61*  | 8  | RSA authentication (512, 1024, 2048, or 4096)  | AES-256  | SHA-256  |
-| 47 &lt;/td&gt;  | 9  | RSA authentication (512, 1024, 2048, or 4096) &lt;/td&gt;  | AES-128 &lt;/td&gt;  | SHA-1 &lt;/td&gt;  |
-| 53  | 10  | RSA authentication (512, 1024, 2048, or 4096)  | AES-256  | SHA-1  |
-| 10 &lt;/td&gt;  | 11  | RSA authentication (512, 1024, 2048, or 4096) &lt;/td&gt;  | Triple DES &lt;/td&gt;  | SHA-1 &lt;/td&gt;  |
-| 5 &lt;/td&gt;  | 12  | RSA authentication (512, 1024, 2048, or 4096) &lt;/td&gt;  | RC4 &lt;/td&gt;  | SHA-1 &lt;/td&gt;  |
-| 4 &lt;/td&gt;  | 13  | RSA authentication (512, 1024, 2048, or 4096) &lt;/td&gt;  | RC4 &lt;/td&gt;  | MD5 &lt;/td&gt;  |
-| 59*  | 14  | RSA authentication (512, 1024, 2048, or 4096)  | None  | SHA-256  |
-| 2 &lt;/td&gt;  | 15  | RSA authentication (512, 1024, 2048, or 4096) &lt;/td&gt;  | None &lt;/td&gt;  | SHA-1 &lt;/td&gt;  |
-| 1 &lt;/td&gt;  | 16  | RSA authentication (512, 1024, 2048, or 4096) &lt;/td&gt;  | None &lt;/td&gt;  | MD5 &lt;/td&gt;  |
-
-
-
-============================== table nb count(585) ============================================
-
-
 | Certificate field  | Description  |
 | --- | --- |
 | Version  | The version of the encoded certificate value for X509v3 is 2.  |
@@ -9048,7 +9031,7 @@
 
 
 
-============================== table nb count(586) ============================================
+============================== table nb count(585) ============================================
 
 
 | Section  | Description  |
@@ -9065,7 +9048,7 @@
 
 
 
-============================== table nb count(587) ============================================
+============================== table nb count(586) ============================================
 
 
 | Parameter  | Description  |
@@ -9078,7 +9061,7 @@
 
 
 
-============================== table nb count(588) ============================================
+============================== table nb count(587) ============================================
 
 
 | ID = string1..32 | Unique local identifier of the certificate to be created, replaced or deleted. |
@@ -9100,7 +9083,7 @@
 
 
 
-============================== table nb count(589) ============================================
+============================== table nb count(588) ============================================
 
 
 | FNAME = string1..64 | Name of the local certificate database. |
@@ -9109,7 +9092,7 @@
 
 
 
-============================== table nb count(590) ============================================
+============================== table nb count(589) ============================================
 
 
 | Parameter  | Values  | Description  |
@@ -9123,7 +9106,7 @@
 
 
 
-============================== table nb count(591) ============================================
+============================== table nb count(590) ============================================
 
 
 | Parameter  | Description  |
@@ -9141,7 +9124,7 @@
 
 
 
-============================== table nb count(592) ============================================
+============================== table nb count(591) ============================================
 
 
 | Parameter  | Description  |
@@ -9156,7 +9139,7 @@
 
 
 
-============================== table nb count(593) ============================================
+============================== table nb count(592) ============================================
 
 
 | Parameter  | Description  | Type  | Possible values  | Default value  |
@@ -9167,7 +9150,7 @@
 
 
 
-============================== table nb count(594) ============================================
+============================== table nb count(593) ============================================
 
 
 | Suite  | Order used | Authentication  | Confidentiality  | Integrity  |
@@ -9191,7 +9174,7 @@
 
 
 
-============================== table nb count(595) ============================================
+============================== table nb count(594) ============================================
 
 
 | Parameter  | Description  | Type  | Possible values  | Default value  |
@@ -9201,7 +9184,7 @@
 
 
 
-============================== table nb count(596) ============================================
+============================== table nb count(595) ============================================
 
 
 | cftsend id = trusted_file, &lt;br/&gt;ftype = B, &lt;br/&gt;fcode = BINARY, &lt;br/&gt;fname = pub/FTEST, &lt;br/&gt;EXEC = $CFTDIREXEC/tf/tf_delfile.cmd, &lt;br/&gt;PREEXEC = $CFTDIREXEC/tf/tf_cipher.cmd,<br /> mode = replace  |
@@ -9209,7 +9192,7 @@
 
 
 
-============================== table nb count(597) ============================================
+============================== table nb count(596) ============================================
 
 
 | cftrecv id = trusted_file, &lt;br/&gt;ftype = B,<br /> fcode = BINARY, &lt;br/&gt;fname = $CFTDIRPUB/TF_&amp;part_&amp;idtu,<br /> EXEC = $CFTDIREXEC/tf/tf_decipher.cmd,<br /> faction = delete ,<br /> fdisp = both, mode = replace  |
@@ -9217,7 +9200,7 @@
 
 
 
-============================== table nb count(598) ============================================
+============================== table nb count(597) ============================================
 
 
 | Parameter (uconf)  | Default values  | Description  |
@@ -9234,7 +9217,7 @@
 
 
 
-============================== table nb count(599) ============================================
+============================== table nb count(598) ============================================
 
 
 | Script  | Description  |
@@ -9245,7 +9228,7 @@
 
 
 
-============================== table nb count(600) ============================================
+============================== table nb count(599) ============================================
 
 
 | Script  | Description  |
@@ -9256,7 +9239,7 @@
 
 
 
-============================== table nb count(601) ============================================
+============================== table nb count(600) ============================================
 
 
 | File  | Description  |
@@ -9270,7 +9253,7 @@
 
 
 
-============================== table nb count(602) ============================================
+============================== table nb count(601) ============================================
 
 
 | Certificate  | Description  |
@@ -9282,7 +9265,7 @@
 
 
 
-============================== table nb count(603) ============================================
+============================== table nb count(602) ============================================
 
 
 | Table  | Description  |
@@ -9294,7 +9277,7 @@
 
 
 
-============================== table nb count(604) ============================================
+============================== table nb count(603) ============================================
 
 
 | Options  | Description  |
@@ -9309,7 +9292,7 @@
 
 
 
-============================== table nb count(605) ============================================
+============================== table nb count(604) ============================================
 
 
 | Key/certificate standard  | Exported file name  |
@@ -9320,7 +9303,7 @@
 
 
 
-============================== table nb count(606) ============================================
+============================== table nb count(605) ============================================
 
 
 | Option | Description |
@@ -9337,7 +9320,7 @@
 
 
 
-============================== table nb count(607) ============================================
+============================== table nb count(606) ============================================
 
 
 | Parameter | Type | Default | Comment |
@@ -9362,7 +9345,7 @@
 
 
 
-============================== table nb count(608) ============================================
+============================== table nb count(607) ============================================
 
 
 | Parameter | Type | Default | Comment |
@@ -9378,7 +9361,7 @@
 
 
 
-============================== table nb count(609) ============================================
+============================== table nb count(608) ============================================
 
 
 | Parameter  | Description  |
@@ -9388,7 +9371,7 @@
 
 
 
-============================== table nb count(610) ============================================
+============================== table nb count(609) ============================================
 
 
 | Parameters  | Default  | Description  |
@@ -9398,18 +9381,18 @@
 
 
 
-============================== table nb count(611) ============================================
+============================== table nb count(610) ============================================
 
 
 | Authentication method  | copilot.restapi.authentication_method  | Details  |
 | --- | --- | --- |
-| Operating System  | system  | The user/password is checked against the operating system.<br/> <blockquote> **Note**<br/> We strongly recommend that you set copilot.misc.createprocessasuser=yes when using the system option.<br/> </blockquote> **Unix**<br/> You must use <code>cftsu </code>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to <a href="" >Using system users - UNIX</a> for details.<br/> • Create a group "group1":<br/> • Add user "user1" to group "group1":<br/> **Windows**<br/> You require a superuser (administrative user account) to create a group and assign a user to a group.<br/> • Create a group "group1":<br/> • Add user "user1" to group "group1":<br/> <blockquote> **Note**<br/> For a user belonging to a domain, use: domain\user1 instead of user1<br/> </blockquote>  |
+| Operating System  | system  | The user/password is checked against the operating system.<br/> <blockquote> **Note**<br/> We strongly recommend that you set copilot.misc.createprocessasuser=yes when using the system option.<br/> </blockquote> **Unix**<br/> You must use <code>cftsu </code>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to <a href="" >Using system users - UNIX</a> for details.<br/> • Create a group "group1": groupadd group1<br/> • Add user "user1" to group "group1": usermod -a -G group1 user1<br/> **Windows**<br/> You require a superuser (administrative user account) to create a group and assign a user to a group.<br/> • Create a group "group1": net localgroup group1 /add<br/> • Add user "user1" to group "group1": net localgroup group1 user1 /add<br/> <blockquote> **Note**<br/> For a user belonging to a domain, use: domain\user1 instead of user1<br/> </blockquote>  |
 | Access Management  | am  | This methods uses an indirection towards the Access Management system. The user/password is checked by the configured access management system: {{&lt; TransferCFT/flowmanager &gt;}}, PassPort AM, or internal AM. |
-| xfbadm database<br/> (UNIX and HP NonStop exclusively) | xfbadm  | The user/password is checked using the xfbadm base (see the <a href="../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).<br/> A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <code>profile </code>from the runtime directory.<br/> • Create a group "group1" with gid=200:<br/> • From the user prompt, to add a user "user1" to group "group1"enter: |
+| xfbadm database<br/> (UNIX and HP NonStop exclusively) | xfbadm  | The user/password is checked using the xfbadm base (see the <a href="../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).<br/> A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <code>profile </code>from the runtime directory.<br/> • Create a group "group1" with gid=200: xfbadmgrp add -G group1 -p group1_pw -g 200<br/> • From the user prompt, to add a user "user1" to group "group1"enter: xfbadmusr add -l user1 -p user1_pw -u AUTO -g 200 |
 
 
 
-============================== table nb count(612) ============================================
+============================== table nb count(611) ============================================
 
 
 | Field | Type | Comment |
@@ -9420,7 +9403,7 @@
 
 
 
-============================== table nb count(613) ============================================
+============================== table nb count(612) ============================================
 
 
 | Field | Type | Comment |
@@ -9433,7 +9416,7 @@
 
 
 
-============================== table nb count(614) ============================================
+============================== table nb count(613) ============================================
 
 
 | Resource | Actions | Properties |
@@ -9474,10 +9457,10 @@
 | SERVICE:CFTSRV | STARTUP, SHUTDOWN |   |
 | SERVICE:COM | DELETE, VIEW |   |
 |   |   |   |
-| COMMAND:EXTRACT | EXECUTE |   |
-| COMMAND:MQUERY | EXECUTE |   |
-| COMMAND:TURN | EXECUTE |   |
-| COMMAND:CFTSUPPORT | EXECUTE |   |
+| **COMMAND:EXTRACT**  | EXECUTE |   |
+| **COMMAND:MQUERY**  | EXECUTE |   |
+| **COMMAND:TURN**  | EXECUTE |   |
+| **COMMAND:CFTSUPPORT**  | EXECUTE |   |
 | TRANSFER | CREATE, DELETE, VIEW, EDIT, CANCEL, RESUME, PAUSE, EXECUTE, SUBMIT, END, VIEWIFLE, EDITFILE, DELETEFILE | IDAPPL, ID, PART, SPART, RPART, IPART, TYPE, DIRECT, MODE, FNAME, MESSAGE, SUSER, RUSER, SAPPL, RAPPL, NFNAME |
 | AM:RIGHTS <sup>(4)</sup> | VIEW_SELF, VIEW_OTHERS | ID |
 | FILTER:CATALOG | CREATE, DELETE, VIEW, EDIT | ID |
@@ -9487,7 +9470,7 @@
 
 
 
-============================== table nb count(615) ============================================
+============================== table nb count(614) ============================================
 
 
 | AM Parameters  | Default  | Description  |
@@ -9503,7 +9486,7 @@
 
 
 
-============================== table nb count(616) ============================================
+============================== table nb count(615) ============================================
 
 
 | Parameter  | Means the user in this group will have the role...  |
@@ -9516,7 +9499,7 @@
 
 
 
-============================== table nb count(617) ============================================
+============================== table nb count(616) ============================================
 
 
 | Type of information  | Description  |
@@ -9529,7 +9512,7 @@
 
 
 
-============================== table nb count(618) ============================================
+============================== table nb count(617) ============================================
 
 
 | Parameter  | Description  |
@@ -9540,14 +9523,14 @@
 | <div > am.passport.instance_id </div>  | Transfer CFT instance ID for PassPort AM <br/> • You must determine your Transfer CFT's PassPort instance name. If it does not match the instance name of **default**, you must add an instance with the correct name.<br/> • The passport.instance_id corresponds to the instance (An instance name is a unique identifier of the installed instance of the component. Check that PassPort and your Transfer CFT have the SAME instance name) of the CSD that is available in PassPort.<br/> • In PassPort, you can view this by selecting **Access** &gt; **Components** &gt; **Transfer CFT** and checking the screen display (default value: default (when you import a component, PassPort assigns it the instance name **default** )). |
 | <div > am.passport.login </div>  | <div > Transfer CFT login for PassPort AM. This user must exist in PassPort and have an Administrator role. This user represents an application user with which Transfer CFT makes requests. </div>  |
 | <div > am.passport.password </div>  | <div > Transfer CFT Instance ID Password for PassPort AM, see above. </div>  |
-| <div > am.passport.superuser </div>  | Enables users to perform any type of action without PassPort AM permission checks.<br/> You *must* set up at least one superuser. Doing so enables you to deactivate or change the PassPort AM connector configuration if the server is not responding.<br/> If the user's name for a session contains a space in the name, you must insert the backslash **\** character where the space occurs.<br/> Example<br/> If you are defining the users "firstname lastname" and "johndoe" as superusers, you would set the am.passport.superuser parameter value to "firstname**\** lastname johndoe".<br/> So for this example, the command is:<br/> CFTUTIL uconfset id = am.passport.superuser, value = "'firstname\ lastname johndoe'" |
+| <div > am.passport.superuser </div>  | Enables users to perform any type of action without PassPort AM permission checks.<br/> You *must* set up at least one superuser. Doing so enables you to deactivate or change the PassPort AM connector configuration if the server is not responding.<br/> If the user's name for a session contains a space in the name, you must insert the backslash **\** character where the space occurs.<br/> **Example** If you are defining the users "firstname lastname" and "johndoe" as superusers, you would set the am.passport.superuser parameter value to "firstname**\** lastname johndoe".<br/> So for this example, the command is:<br/> <code>CFTUTIL uconfset id = am.passport.superuser, value = "'firstname\ lastname johndoe'"</code>  |
 | am.passport.use_ssl  | Enables SSL with PassPort AM.<br/> The server port is *not* the same as the default port when using SSL. |
 | am.passport.ca_cert  | Certification Authority (CA) public certificate to authenticate the PassPort AM server.  |
 | am.passport.csd_file  | Transfer CFT Component Security descriptor file for PassPort AM. The default value is $(cft.install_dir)/extras/PassPort/csd_Transfer_CFT.xml.  |
 
 
 
-============================== table nb count(619) ============================================
+============================== table nb count(618) ============================================
 
 
 | Parameter  | Definition  |
@@ -9561,7 +9544,7 @@
 
 
 
-============================== table nb count(620) ============================================
+============================== table nb count(619) ============================================
 
 
 | Parameters  | Default  | Description  |
@@ -9573,7 +9556,7 @@
 
 
 
-============================== table nb count(621) ============================================
+============================== table nb count(620) ============================================
 
 
 | Access Management exit parameters  | Value  | Description  |
@@ -9588,7 +9571,7 @@
 
 
 
-============================== table nb count(622) ============================================
+============================== table nb count(621) ============================================
 
 
 | Sample  | Authentication  | Permissions checking  |
@@ -9597,7 +9580,7 @@
 
 
 
-============================== table nb count(623) ============================================
+============================== table nb count(622) ============================================
 
 
 | Field  | Description  |
@@ -9610,7 +9593,7 @@
 
 
 
-============================== table nb count(624) ============================================
+============================== table nb count(623) ============================================
 
 
 | Field  | Description  |
@@ -9621,7 +9604,7 @@
 
 
 
-============================== table nb count(625) ============================================
+============================== table nb count(624) ============================================
 
 
 | Role  | Description  |
@@ -9634,7 +9617,7 @@
 
 
 
-============================== table nb count(626) ============================================
+============================== table nb count(625) ============================================
 
 
 | CG field  | CG values  | CFTUTIL parameter  | Description  |
@@ -9646,7 +9629,7 @@
 
 
 
-============================== table nb count(627) ============================================
+============================== table nb count(626) ============================================
 
 
 | OS  | Default  |
@@ -9658,7 +9641,7 @@
 
 
 
-============================== table nb count(628) ============================================
+============================== table nb count(627) ============================================
 
 
 | USERCTRL | Description |
@@ -9668,7 +9651,7 @@
 
 
 
-============================== table nb count(629) ============================================
+============================== table nb count(628) ============================================
 
 
 | User type  | CG role(s)  | Machine1 user  | File access  |
@@ -9681,7 +9664,7 @@
 
 
 
-============================== table nb count(630) ============================================
+============================== table nb count(629) ============================================
 
 
 | Feature  |  Manage using {{&lt; TransferCFT/flowmanager &gt;}} or  | Supported but not configurable using Central Governance or {{&lt; TransferCFT/flowmanager &gt;}}  |
@@ -9710,7 +9693,7 @@
 
 
 
-============================== table nb count(631) ============================================
+============================== table nb count(630) ============================================
 
 
 | Parameter  | Value  |
@@ -9747,7 +9730,7 @@
 
 
 
-============================== table nb count(632) ============================================
+============================== table nb count(631) ============================================
 
 
 | <span id="Paramete"></span>Parameter  | Type  | Default  | Description  |
@@ -9780,7 +9763,7 @@
 
 
 
-============================== table nb count(633) ============================================
+============================== table nb count(632) ============================================
 
 
 | Character  | Description  | Example  |
@@ -9790,7 +9773,7 @@
 
 
 
-============================== table nb count(634) ============================================
+============================== table nb count(633) ============================================
 
 
 | Character  | Description  | Example  |
@@ -9806,7 +9789,7 @@
 
 
 
-============================== table nb count(635) ============================================
+============================== table nb count(634) ============================================
 
 
 | Symbol  | Indicates  | Example  |
@@ -9825,7 +9808,7 @@
 
 
 
-============================== table nb count(636) ============================================
+============================== table nb count(635) ============================================
 
 
 | Option  | Description  |
@@ -9839,7 +9822,7 @@
 
 
 
-============================== table nb count(637) ============================================
+============================== table nb count(636) ============================================
 
 
 | Parameter  | UCONF  | Type  | Default<br/> UCONF | Default <br/> CFTFOLDER | Description  |
@@ -9870,7 +9853,7 @@
 
 
 
-============================== table nb count(638) ============================================
+============================== table nb count(637) ============================================
 
 
 | UCONF parameter  | Type  | Default | Description  |
@@ -9900,7 +9883,7 @@
 
 
 
-============================== table nb count(639) ============================================
+============================== table nb count(638) ============================================
 
 
 | Parameter  | Type  | Description  |
@@ -9909,7 +9892,7 @@
 
 
 
-============================== table nb count(640) ============================================
+============================== table nb count(639) ============================================
 
 
 | Parameter  | Type  | Description  |
@@ -9920,7 +9903,7 @@
 
 
 
-============================== table nb count(641) ============================================
+============================== table nb count(640) ============================================
 
 
 | Parameter  | Type  | Description  |
@@ -9929,7 +9912,7 @@
 
 
 
-============================== table nb count(642) ============================================
+============================== table nb count(641) ============================================
 
 
 | Parameter  | Type  | Description  |
@@ -9939,7 +9922,7 @@
 
 
 
-============================== table nb count(643) ============================================
+============================== table nb count(642) ============================================
 
 
 | Parameter  | Type  | Description  |
@@ -9948,7 +9931,7 @@
 
 
 
-============================== table nb count(644) ============================================
+============================== table nb count(643) ============================================
 
 
 | Parameter  | Type  | Description  |
@@ -9961,7 +9944,7 @@
 
 
 
-============================== table nb count(645) ============================================
+============================== table nb count(644) ============================================
 
 
 | Parameter<span id="storageaccount"></span>  | Type  | Description  |
@@ -9972,7 +9955,7 @@
 
 
 
-============================== table nb count(646) ============================================
+============================== table nb count(645) ============================================
 
 
 | Parameter  | Type  | Description  |
@@ -9981,7 +9964,7 @@
 
 
 
-============================== table nb count(647) ============================================
+============================== table nb count(646) ============================================
 
 
 | Parameter<span id="storageaccount"></span>  | Type  | Description  |
@@ -9992,7 +9975,7 @@
 
 
 
-============================== table nb count(648) ============================================
+============================== table nb count(647) ============================================
 
 
 | Architecture | Local volume | Shared volume | Cloud storage |
@@ -10003,7 +9986,7 @@
 
 
 
-============================== table nb count(649) ============================================
+============================== table nb count(648) ============================================
 
 
 | Parameter  | Default  | Value  | Description  |
@@ -10013,7 +9996,7 @@
 
 
 
-============================== table nb count(650) ============================================
+============================== table nb count(649) ============================================
 
 
 | System  | File location  | Build command  |
@@ -10026,7 +10009,7 @@
 
 
 
-============================== table nb count(651) ============================================
+============================== table nb count(650) ============================================
 
 
 | Parameters  | Default  | Description  |
@@ -10036,18 +10019,18 @@
 
 
 
-============================== table nb count(652) ============================================
+============================== table nb count(651) ============================================
 
 
 | Authentication method  | copilot.restapi.authentication_method  | Details  |
 | --- | --- | --- |
-| Operating System  | system  | The user/password is checked against the operating system.<br/> <blockquote> **Note**<br/> We strongly recommend that you set copilot.misc.createprocessasuser=yes when using the system option.<br/> </blockquote> **Unix**<br/> You must use <code>cftsu </code>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to <a href="" >Using system users - UNIX</a> for details.<br/> • Create a group "group1":<br/> • Add user "user1" to group "group1":<br/> **Windows**<br/> You require a superuser (administrative user account) to create a group and assign a user to a group.<br/> • Create a group "group1":<br/> • Add user "user1" to group "group1":<br/> <blockquote> **Note**<br/> For a user belonging to a domain, use: domain\user1 instead of user1<br/> </blockquote>  |
+| Operating System  | system  | The user/password is checked against the operating system.<br/> <blockquote> **Note**<br/> We strongly recommend that you set copilot.misc.createprocessasuser=yes when using the system option.<br/> </blockquote> **Unix**<br/> You must use <code>cftsu </code>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to <a href="" >Using system users - UNIX</a> for details.<br/> • Create a group "group1": groupadd group1<br/> • Add user "user1" to group "group1": usermod -a -G group1 user1<br/> **Windows**<br/> You require a superuser (administrative user account) to create a group and assign a user to a group.<br/> • Create a group "group1": net localgroup group1 /add<br/> • Add user "user1" to group "group1": net localgroup group1 user1 /add<br/> <blockquote> **Note**<br/> For a user belonging to a domain, use: domain\user1 instead of user1<br/> </blockquote>  |
 | Access Management  | am  | This methods uses an indirection towards the Access Management system. The user/password is checked by the configured access management system: {{&lt; TransferCFT/flowmanager &gt;}}, PassPort AM, or internal AM. |
-| xfbadm database<br/> (UNIX and HP NonStop exclusively) | xfbadm  | The user/password is checked using the xfbadm base (see the <a href="../../../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).<br/> A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <code>profile </code>from the runtime directory.<br/> • Create a group "group1" with gid=200:<br/> • From the user prompt, to add a user "user1" to group "group1"enter: |
+| xfbadm database<br/> (UNIX and HP NonStop exclusively) | xfbadm  | The user/password is checked using the xfbadm base (see the <a href="../../../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).<br/> A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <code>profile </code>from the runtime directory.<br/> • Create a group "group1" with gid=200: xfbadmgrp add -G group1 -p group1_pw -g 200<br/> • From the user prompt, to add a user "user1" to group "group1"enter: xfbadmusr add -l user1 -p user1_pw -u AUTO -g 200 |
 
 
 
-============================== table nb count(653) ============================================
+============================== table nb count(652) ============================================
 
 
 | Code  | Status  | Meaning, when to use  |
@@ -10061,7 +10044,7 @@
 
 
 
-============================== table nb count(654) ============================================
+============================== table nb count(653) ============================================
 
 
 | Name  | Description  | XTS <br/> mapping |
@@ -10079,7 +10062,7 @@
 
 
 
-============================== table nb count(655) ============================================
+============================== table nb count(654) ============================================
 
 
 | Syntax | rc = cftxx (verb,&amp;ptr,param) |
@@ -10093,7 +10076,7 @@
 
 
 
-============================== table nb count(656) ============================================
+============================== table nb count(655) ============================================
 
 
 | Service | CftApi2Session *ipcai2_initialize () |
@@ -10104,7 +10087,7 @@
 
 
 
-============================== table nb count(657) ============================================
+============================== table nb count(656) ============================================
 
 
 | Service | long ipcai2_get_errno(CftApi2Session * session) |
@@ -10116,7 +10099,7 @@
 
 
 
-============================== table nb count(658) ============================================
+============================== table nb count(657) ============================================
 
 
 | Service | long ipcai2_get_errno_str(CftApi2Session * session, char *buffer, int bufflen) |
@@ -10128,7 +10111,7 @@
 
 
 
-============================== table nb count(659) ============================================
+============================== table nb count(658) ============================================
 
 
 | Service | long ipcai2_finalize(CftApi2Session * session) |
@@ -10140,7 +10123,7 @@
 
 
 
-============================== table nb count(660) ============================================
+============================== table nb count(659) ============================================
 
 
 | Service | CftApi2Catalog *ipcai2_catalog_open(CftApi2Session * session, char *catalog_fname)  |
@@ -10152,7 +10135,7 @@
 
 
 
-============================== table nb count(661) ============================================
+============================== table nb count(660) ============================================
 
 
 | Service | long ipcai2_catalog_reload_cache(CftApi2Catalog *catalog) |
@@ -10164,7 +10147,7 @@
 
 
 
-============================== table nb count(662) ============================================
+============================== table nb count(661) ============================================
 
 
 | Service | long ipcai2_catalog_close(CftApi2Catalog * catalog |
@@ -10176,7 +10159,7 @@
 
 
 
-============================== table nb count(663) ============================================
+============================== table nb count(662) ============================================
 
 
 | Service | CftApi2Selection *ipcai2_catalog_selection_new(CftApi2Catalog *catalog) |
@@ -10188,7 +10171,7 @@
 
 
 
-============================== table nb count(664) ============================================
+============================== table nb count(663) ============================================
 
 
 | Service | long ipcai2_catalog_selection_ref(CftApi2Selection *selection) |
@@ -10200,7 +10183,7 @@
 
 
 
-============================== table nb count(665) ============================================
+============================== table nb count(664) ============================================
 
 
 | Service | long ipcai2_catalog_selection_set(CftApi2Selection * selection, char *param, char *value) |
@@ -10212,7 +10195,7 @@
 
 
 
-============================== table nb count(666) ============================================
+============================== table nb count(665) ============================================
 
 
 | Service | long ipcai2_catalog_selection_next(CftApi2Selection *selection) |
@@ -10224,7 +10207,7 @@
 
 
 
-============================== table nb count(667) ============================================
+============================== table nb count(666) ============================================
 
 
 | Service | long ipcai2_catalog_record_get(CftApi2Selection * selection, char *param, char *buffer, int bufflen) |
@@ -10236,7 +10219,7 @@
 
 
 
-============================== table nb count(668) ============================================
+============================== table nb count(667) ============================================
 
 
 | Service | long ipcai2_catalog_selection_unref(CftApi2Selection *selection) |
@@ -10248,7 +10231,7 @@
 
 
 
-============================== table nb count(669) ============================================
+============================== table nb count(668) ============================================
 
 
 | Service | long ipcai2_catalog_selection_delete(CftApi2Selection *selection) |
@@ -10260,7 +10243,7 @@
 
 
 
-============================== table nb count(670) ============================================
+============================== table nb count(669) ============================================
 
 
 | Service | long ipcai2_transfert_change_state(CftApi2Selection * selection, char state) |
@@ -10272,7 +10255,7 @@
 
 
 
-============================== table nb count(671) ============================================
+============================== table nb count(670) ============================================
 
 
 | Service | long ipcai2_catalog_info_get(CftApi2Catalog *catalog, char *param, char *buffer, int bufflen) |
@@ -10284,7 +10267,7 @@
 
 
 
-============================== table nb count(672) ============================================
+============================== table nb count(671) ============================================
 
 
 | Service | long ipcai2_monitor_info_get(CftApi2Catalog *catalog, char *param, char *buffer, int bufflen) |
@@ -10296,7 +10279,7 @@
 
 
 
-============================== table nb count(673) ============================================
+============================== table nb count(672) ============================================
 
 
 | Function | Use |
@@ -10313,7 +10296,7 @@
 
 
 
-============================== table nb count(674) ============================================
+============================== table nb count(673) ============================================
 
 
 | &lt;verb&gt; | Service |
@@ -10322,13 +10305,13 @@
 | SELECT | Define selection criteria |
 | NEXT | Read next entry |
 | MODIFY | Modify catalog entry state |
-| SORT | cftaix only |
+| SORT | cftaix only<br/> Sort the selected catalog entries |
 | DO | cftaix only<br/> Do the current selection and the requested sort in memory |
 | CLOSE | Close catalog |
 
 
 
-============================== table nb count(675) ============================================
+============================== table nb count(674) ============================================
 
 
 | &lt;verb&gt; | &lt;param&gt; | Explanation |
@@ -10343,7 +10326,7 @@
 
 
 
-============================== table nb count(676) ============================================
+============================== table nb count(675) ============================================
 
 
 | Function | Use |
@@ -10353,7 +10336,7 @@
 
 
 
-============================== table nb count(677) ============================================
+============================== table nb count(676) ============================================
 
 
 | &lt;verb&gt; | Service |
@@ -10363,7 +10346,7 @@
 
 
 
-============================== table nb count(678) ============================================
+============================== table nb count(677) ============================================
 
 
 | &lt;verb&gt; | &lt;param&gt; | Description |
@@ -10373,7 +10356,7 @@
 
 
 
-============================== table nb count(679) ============================================
+============================== table nb count(678) ============================================
 
 
 | Mnemonic | Description |
@@ -10388,7 +10371,7 @@
 
 
 
-============================== table nb count(680) ============================================
+============================== table nb count(679) ============================================
 
 
 | Function | Use |
@@ -10409,7 +10392,7 @@
 
 
 
-============================== table nb count(681) ============================================
+============================== table nb count(680) ============================================
 
 
 | &lt;verb&gt; | Service |
@@ -10428,7 +10411,7 @@
 
 
 
-============================== table nb count(682) ============================================
+============================== table nb count(681) ============================================
 
 
 | Mnemonic | Description |
@@ -10446,7 +10429,7 @@
 
 
 
-============================== table nb count(683) ============================================
+============================== table nb count(682) ============================================
 
 
 | Function | Use |
@@ -10463,7 +10446,7 @@
 
 
 
-============================== table nb count(684) ============================================
+============================== table nb count(683) ============================================
 
 
 | &lt;verb&gt; | Value | Service |
@@ -10476,7 +10459,7 @@
 
 
 
-============================== table nb count(685) ============================================
+============================== table nb count(684) ============================================
 
 
 | &lt;verb&gt; | &lt;param&gt; | Explanation |
@@ -10489,7 +10472,7 @@
 
 
 
-============================== table nb count(686) ============================================
+============================== table nb count(685) ============================================
 
 
 | Applies to  | Mnemonic | Description |
@@ -10523,7 +10506,7 @@
 
 
 
-============================== table nb count(687) ============================================
+============================== table nb count(686) ============================================
 
 
 | Function | Use |
@@ -10533,7 +10516,7 @@
 
 
 
-============================== table nb count(688) ============================================
+============================== table nb count(687) ============================================
 
 
 | **&lt;verb&gt;** | **Value** | **Service** |
@@ -10542,7 +10525,7 @@
 
 
 
-============================== table nb count(689) ============================================
+============================== table nb count(688) ============================================
 
 
 | &lt;verb&gt; | &lt;param&gt; | Explanation |
@@ -10551,7 +10534,7 @@
 
 
 
-============================== table nb count(690) ============================================
+============================== table nb count(689) ============================================
 
 
 | Mnemonic | Description |
@@ -10566,7 +10549,7 @@
 
 
 
-============================== table nb count(691) ============================================
+============================== table nb count(690) ============================================
 
 
 | &lt;verb&gt; | Value | Service |
@@ -10576,7 +10559,7 @@
 
 
 
-============================== table nb count(692) ============================================
+============================== table nb count(691) ============================================
 
 
 | &lt;verb&gt; | &lt;param&gt; | Explanation |
@@ -10586,7 +10569,7 @@
 
 
 
-============================== table nb count(693) ============================================
+============================== table nb count(692) ============================================
 
 
 | Function | Use |
@@ -10607,7 +10590,7 @@
 
 
 
-============================== table nb count(694) ============================================
+============================== table nb count(693) ============================================
 
 
 | CALL "CFTU" USING &lt;verb&gt; &lt;param&gt; &lt;rc&gt;<br /> CALL "CFTC" USING &lt;verb&gt; &lt;param&gt; &lt;rc&gt;  |
@@ -10615,7 +10598,7 @@
 
 
 
-============================== table nb count(695) ============================================
+============================== table nb count(694) ============================================
 
 
 | &lt;verb&gt; | Value | Service |
@@ -10634,7 +10617,7 @@
 
 
 
-============================== table nb count(696) ============================================
+============================== table nb count(695) ============================================
 
 
 | Mnemonic | Description |
@@ -10652,7 +10635,7 @@
 
 
 
-============================== table nb count(697) ============================================
+============================== table nb count(696) ============================================
 
 
 | Template  | Function  | Services | Description  |
@@ -10663,7 +10646,7 @@
 
 
 
-============================== table nb count(698) ============================================
+============================== table nb count(697) ============================================
 
 
 | CL program  | Associated COBOL  | Description  |
@@ -10675,7 +10658,7 @@
 
 
 
-============================== table nb count(699) ============================================
+============================== table nb count(698) ============================================
 
 
 | Template  | Function  | Services | Description  |
@@ -10688,7 +10671,7 @@
 
 
 
-============================== table nb count(700) ============================================
+============================== table nb count(699) ============================================
 
 
 | Template  | Function  | Services |
@@ -10698,7 +10681,7 @@
 
 
 
-============================== table nb count(701) ============================================
+============================== table nb count(700) ============================================
 
 
 | Template  | Function  | Services | Description  |
@@ -10712,7 +10695,7 @@
 
 
 
-============================== table nb count(702) ============================================
+============================== table nb count(701) ============================================
 
 
 | Template  | Function  | Services | Description  |
@@ -10731,7 +10714,7 @@
 
 
 
-============================== table nb count(703) ============================================
+============================== table nb count(702) ============================================
 
 
 | Template  | Function  | Services |
@@ -10750,7 +10733,7 @@
 
 
 
-============================== table nb count(704) ============================================
+============================== table nb count(703) ============================================
 
 
 | Type  | V24 length  | V23 length  | Description  |
@@ -10778,7 +10761,7 @@
 
 
 
-============================== table nb count(705) ============================================
+============================== table nb count(704) ============================================
 
 
 | Type | V24 length | V23 length | Description |
@@ -10806,7 +10789,7 @@
 
 
 
-============================== table nb count(706) ============================================
+============================== table nb count(705) ============================================
 
 
 | DiagP<br /> Catalog  | &amp;messageLog  | Comment  |
@@ -10820,7 +10803,7 @@
 
 
 
-============================== table nb count(707) ============================================
+============================== table nb count(706) ============================================
 
 
 | Field | Explanation |
@@ -10920,7 +10903,7 @@
 
 
 
-============================== table nb count(708) ============================================
+============================== table nb count(707) ============================================
 
 
 | Parameter | Explanation |
@@ -10934,7 +10917,7 @@
 
 
 
-============================== table nb count(709) ============================================
+============================== table nb count(708) ============================================
 
 
 |   |   |
@@ -10948,7 +10931,7 @@
 
 
 
-============================== table nb count(710) ============================================
+============================== table nb count(709) ============================================
 
 
 | File | Explanation |
@@ -10961,7 +10944,7 @@
 
 
 
-============================== table nb count(711) ============================================
+============================== table nb count(710) ============================================
 
 
 | Field  | Description  |
@@ -10971,7 +10954,7 @@
 
 
 
-============================== table nb count(712) ============================================
+============================== table nb count(711) ============================================
 
 
 | Symbol  | Description  |
@@ -10983,7 +10966,7 @@
 
 
 
-============================== table nb count(713) ============================================
+============================== table nb count(712) ============================================
 
 
 | Field  | Description  |
@@ -10996,7 +10979,7 @@
 
 
 
-============================== table nb count(714) ============================================
+============================== table nb count(713) ============================================
 
 
 | Field  | Sender mode<br /> Before  | Sender mode<br /> After  | Receiver mode<br /> Before  | Receiver mode<br /> After  |
@@ -11095,7 +11078,7 @@
 
 
 
-============================== table nb count(715) ============================================
+============================== table nb count(714) ============================================
 
 
 | Field  | Meaning  |
@@ -11106,7 +11089,7 @@
 
 
 
-============================== table nb count(716) ============================================
+============================== table nb count(715) ============================================
 
 
 | Field  | Sender mode<br /> Before  | Sender mode<br /> After  | Receiver mode<br /> Before  | Receiver mode<br /> After  |
@@ -11206,7 +11189,7 @@
 
 
 
-============================== table nb count(717) ============================================
+============================== table nb count(716) ============================================
 
 
 | Field  | Description  |
@@ -11217,7 +11200,7 @@
 
 
 
-============================== table nb count(718) ============================================
+============================== table nb count(717) ============================================
 
 
 | Field  | Sender mode<br /> Before  | Sender mode<br /> After  | Receiver mode<br /> Before  | Receiver mode<br /> After  |
@@ -11316,7 +11299,7 @@
 
 
 
-============================== table nb count(719) ============================================
+============================== table nb count(718) ============================================
 
 
 | Field  | Description  |
@@ -11328,7 +11311,7 @@
 
 
 
-============================== table nb count(720) ============================================
+============================== table nb count(719) ============================================
 
 
 | Field  | Sender mode<br /> Before  | Sender mode<br /> After  | Receiver mode<br /> Before  | Receiver mode<br /> After  |
@@ -11428,7 +11411,7 @@
 
 
 
-============================== table nb count(721) ============================================
+============================== table nb count(720) ============================================
 
 
 | Field  | Description  |
@@ -11441,7 +11424,7 @@
 
 
 
-============================== table nb count(722) ============================================
+============================== table nb count(721) ============================================
 
 
 | Field  | Sender mode<br /> Before  | Sender mode<br /> After  | Receiver mode<br /> Before  | Receiver mode<br /> After  |
@@ -11541,7 +11524,7 @@
 
 
 
-============================== table nb count(723) ============================================
+============================== table nb count(722) ============================================
 
 
 | Field  | Description  |
@@ -11553,7 +11536,7 @@
 
 
 
-============================== table nb count(724) ============================================
+============================== table nb count(723) ============================================
 
 
 | Field  | Sender mode<br /> Before  | Sender mode<br /> After  | Receiver mode<br /> Before  | Receiver mode<br /> After  |
@@ -11653,7 +11636,7 @@
 
 
 
-============================== table nb count(725) ============================================
+============================== table nb count(724) ============================================
 
 
 | Field  | Description  |
@@ -11664,7 +11647,7 @@
 
 
 
-============================== table nb count(726) ============================================
+============================== table nb count(725) ============================================
 
 
 | Field  | Sender mode<br /> Before  | Sender mode<br /> After  | Receiver mode<br /> Before  | Receiver mode<br /> After  |
@@ -11764,7 +11747,7 @@
 
 
 
-============================== table nb count(727) ============================================
+============================== table nb count(726) ============================================
 
 
 | Field  | Description  |
@@ -11775,7 +11758,7 @@
 
 
 
-============================== table nb count(728) ============================================
+============================== table nb count(727) ============================================
 
 
 | Field  | Sender mode<br /> Before  | Sender mode<br /> After  | Receiver mode<br /> Before  | Receiver mode<br /> After  |
@@ -11875,7 +11858,7 @@
 
 
 
-============================== table nb count(729) ============================================
+============================== table nb count(728) ============================================
 
 
 | Field  | Description  |
@@ -11888,7 +11871,7 @@
 
 
 
-============================== table nb count(730) ============================================
+============================== table nb count(729) ============================================
 
 
 | Field  | Sender mode<br /> Before  | Sender mode<br /> After  | Receiver mode<br /> Before  | Receiver mode<br /> After  |
@@ -11988,7 +11971,7 @@
 
 
 
-============================== table nb count(731) ============================================
+============================== table nb count(730) ============================================
 
 
 | Field  | Description  |
@@ -12002,7 +11985,7 @@
 
 
 
-============================== table nb count(732) ============================================
+============================== table nb count(731) ============================================
 
 
 | Field  | Sender mode<br /> Before  | Sender mode<br /> After  | Receiver mode<br /> Before  | Receiver mode<br /> After  |
@@ -12102,7 +12085,7 @@
 
 
 
-============================== table nb count(733) ============================================
+============================== table nb count(732) ============================================
 
 
 | Field | Explanation |
@@ -12130,7 +12113,7 @@
 
 
 
-============================== table nb count(734) ============================================
+============================== table nb count(733) ============================================
 
 
 | Field | Explanation |
@@ -12142,7 +12125,7 @@
 
 
 
-============================== table nb count(735) ============================================
+============================== table nb count(734) ============================================
 
 
 | Field | Explanation |
@@ -12177,7 +12160,7 @@
 
 
 
-============================== table nb count(736) ============================================
+============================== table nb count(735) ============================================
 
 
 | Field | Explanation |
@@ -12197,7 +12180,7 @@
 
 
 
-============================== table nb count(737) ============================================
+============================== table nb count(736) ============================================
 
 
 | Field | Explanation |
@@ -12220,7 +12203,7 @@
 
 
 
-============================== table nb count(738) ============================================
+============================== table nb count(737) ============================================
 
 
 | Field | Explanation |
@@ -12242,7 +12225,7 @@
 
 
 
-============================== table nb count(739) ============================================
+============================== table nb count(738) ============================================
 
 
 | Parameter  | Description  |
@@ -12257,7 +12240,7 @@
 
 
 
-============================== table nb count(740) ============================================
+============================== table nb count(739) ============================================
 
 
 | Parameter  | Description  |
@@ -12268,7 +12251,7 @@
 
 
 
-============================== table nb count(741) ============================================
+============================== table nb count(740) ============================================
 
 
 | File  | Description  |
@@ -12280,7 +12263,7 @@
 
 
 
-============================== table nb count(742) ============================================
+============================== table nb count(741) ============================================
 
 
 | Field  | Explanation  |
@@ -12304,7 +12287,7 @@
 
 
 
-============================== table nb count(743) ============================================
+============================== table nb count(742) ============================================
 
 
 | Field  | Explanation  |
@@ -12324,7 +12307,7 @@
 
 
 
-============================== table nb count(744) ============================================
+============================== table nb count(743) ============================================
 
 
 | Field  | Explanation  |
@@ -12367,7 +12350,7 @@
 
 
 
-============================== table nb count(745) ============================================
+============================== table nb count(744) ============================================
 
 
 | Field  | Explanation  |
@@ -12382,7 +12365,7 @@
 
 
 
-============================== table nb count(746) ============================================
+============================== table nb count(745) ============================================
 
 
 | Parameter | Definition |
@@ -12394,7 +12377,7 @@
 
 
 
-============================== table nb count(747) ============================================
+============================== table nb count(746) ============================================
 
 
 | Parameter | Definition |
@@ -12404,7 +12387,7 @@
 
 
 
-============================== table nb count(748) ============================================
+============================== table nb count(747) ============================================
 
 
 | Change of state  | End of transfer procedure submitted  |
@@ -12418,7 +12401,7 @@
 
 
 
-============================== table nb count(749) ============================================
+============================== table nb count(748) ============================================
 
 
 | Field | Explanation |
@@ -12434,7 +12417,7 @@
 
 
 
-============================== table nb count(750) ============================================
+============================== table nb count(749) ============================================
 
 
 | Field | Explanation |
@@ -12461,7 +12444,7 @@
 
 
 
-============================== table nb count(751) ============================================
+============================== table nb count(750) ============================================
 
 
 | Field | Explanation |
@@ -12474,7 +12457,7 @@
 
 
 
-============================== table nb count(752) ============================================
+============================== table nb count(751) ============================================
 
 
 | Field | Explanation |
@@ -12527,7 +12510,7 @@
 
 
 
-============================== table nb count(753) ============================================
+============================== table nb count(752) ============================================
 
 
 | Field | Explanation |
@@ -12538,7 +12521,7 @@
 
 
 
-============================== table nb count(754) ============================================
+============================== table nb count(753) ============================================
 
 
 | Field | Explanation |
@@ -12548,7 +12531,7 @@
 
 
 
-============================== table nb count(755) ============================================
+============================== table nb count(754) ============================================
 
 
 | Field | Explanation |
@@ -12565,7 +12548,7 @@
 
 
 
-============================== table nb count(756) ============================================
+============================== table nb count(755) ============================================
 
 
 | Parameter | Definition |
@@ -12581,7 +12564,7 @@
 
 
 
-============================== table nb count(757) ============================================
+============================== table nb count(756) ============================================
 
 
 | Parameter | Definition |
@@ -12591,7 +12574,7 @@
 
 
 
-============================== table nb count(758) ============================================
+============================== table nb count(757) ============================================
 
 
 | Access Management exit parameters  | Value  | Description  |
@@ -12606,7 +12589,7 @@
 
 
 
-============================== table nb count(759) ============================================
+============================== table nb count(758) ============================================
 
 
 | Sample  | Authentication  | Permissions checking  |
@@ -12615,7 +12598,7 @@
 
 
 
-============================== table nb count(760) ============================================
+============================== table nb count(759) ============================================
 
 
 | Field  | Description  |
@@ -12628,7 +12611,7 @@
 
 
 
-============================== table nb count(761) ============================================
+============================== table nb count(760) ============================================
 
 
 | Field  | Description  |
@@ -12639,7 +12622,7 @@
 
 
 
-============================== table nb count(762) ============================================
+============================== table nb count(761) ============================================
 
 
 | Role  | Description  |
@@ -12652,7 +12635,7 @@
 
 
 
-============================== table nb count(763) ============================================
+============================== table nb count(762) ============================================
 
 
 | ID  | Default  | Description  |
@@ -12662,7 +12645,7 @@
 
 
 
-============================== table nb count(764) ============================================
+============================== table nb count(763) ============================================
 
 
 | ID  | Description  |
@@ -12673,7 +12656,7 @@
 
 
 
-============================== table nb count(765) ============================================
+============================== table nb count(764) ============================================
 
 
 | Parameter  | Options  | Description  |
@@ -12684,7 +12667,7 @@
 
 
 
-============================== table nb count(766) ============================================
+============================== table nb count(765) ============================================
 
 
 | Parameter  | Value  |
@@ -12693,7 +12676,7 @@
 
 
 
-============================== table nb count(767) ============================================
+============================== table nb count(766) ============================================
 
 
 | Parameter  | Value  |
@@ -12702,7 +12685,7 @@
 
 
 
-============================== table nb count(768) ============================================
+============================== table nb count(767) ============================================
 
 
 | Parameter  | Value  | Former value  |
@@ -12712,7 +12695,7 @@
 
 
 
-============================== table nb count(769) ============================================
+============================== table nb count(768) ============================================
 
 
 | Parameter  | Type  | Default  | Description  |
@@ -12728,7 +12711,7 @@
 
 
 
-============================== table nb count(770) ============================================
+============================== table nb count(769) ============================================
 
 
 | Supported format  | Type  | Extension  |
@@ -12742,7 +12725,7 @@
 
 
 
-============================== table nb count(771) ============================================
+============================== table nb count(770) ============================================
 
 
 | Parameter | Value |
@@ -12754,7 +12737,7 @@
 
 
 
-============================== table nb count(772) ============================================
+============================== table nb count(771) ============================================
 
 
 | Parameter | Value |
@@ -12766,7 +12749,7 @@
 
 
 
-============================== table nb count(773) ============================================
+============================== table nb count(772) ============================================
 
 
 | Parameter | Value |
@@ -12776,7 +12759,7 @@
 
 
 
-============================== table nb count(774) ============================================
+============================== table nb count(773) ============================================
 
 
 | Command  | Description  |
@@ -12791,7 +12774,7 @@
 
 
 
-============================== table nb count(775) ============================================
+============================== table nb count(774) ============================================
 
 
 | Object  | Parameter  | File type described  |
@@ -12810,7 +12793,7 @@
 
 
 
-============================== table nb count(776) ============================================
+============================== table nb count(775) ============================================
 
 
 | CONFIG command<br/> TYPE parameter | File type described  |
@@ -12824,7 +12807,7 @@
 
 
 
-============================== table nb count(777) ============================================
+============================== table nb count(776) ============================================
 
 
 | Service  | Command  | Parameter  | **File type described**  |
@@ -12834,7 +12817,7 @@
 
 
 
-============================== table nb count(778) ============================================
+============================== table nb count(777) ============================================
 
 
 | Service  | Command  | Parameter  | File type described  |
@@ -12845,7 +12828,7 @@
 
 
 
-============================== table nb count(779) ============================================
+============================== table nb count(778) ============================================
 
 
 | Field  | File type described  |
@@ -12859,7 +12842,7 @@
 
 
 
-============================== table nb count(780) ============================================
+============================== table nb count(779) ============================================
 
 
 | Heading  | Offset<br/> V24 | Offset<br/> V23 |
@@ -12903,7 +12886,7 @@
 
 
 
-============================== table nb count(781) ============================================
+============================== table nb count(780) ============================================
 
 
 | Protocol  | Details  |
@@ -12912,7 +12895,7 @@
 
 
 
-============================== table nb count(782) ============================================
+============================== table nb count(781) ============================================
 
 
 | Parameter  | Description  |
@@ -12931,7 +12914,7 @@
 
 
 
-============================== table nb count(783) ============================================
+============================== table nb count(782) ============================================
 
 
 | Usage  | Process  | Configurable  | Configuration Parameter  | Network Interface  |
@@ -12949,7 +12932,7 @@
 
 
 
-============================== table nb count(784) ============================================
+============================== table nb count(783) ============================================
 
 
 | Usage  | Process  | Configurable  | Configuration Parameter  | Network Interface  |
@@ -12969,7 +12952,7 @@
 
 
 
-============================== table nb count(785) ============================================
+============================== table nb count(784) ============================================
 
 
 | Name  | Description  | Type  | Restriction  | Default  | Platform  | Flags  |
@@ -13651,7 +13634,7 @@
 
 
 
-============================== table nb count(786) ============================================
+============================== table nb count(785) ============================================
 
 
 | UCONF  | Default  |
@@ -13662,7 +13645,7 @@
 
 
 
-============================== table nb count(787) ============================================
+============================== table nb count(786) ============================================
 
 
 | ID  | Default  | Former value  |
@@ -13682,7 +13665,7 @@
 
 
 
-============================== table nb count(788) ============================================
+============================== table nb count(787) ============================================
 
 
 | ID  | Default  | Windows  | UNIX  |
@@ -13707,7 +13690,7 @@
 
 
 
-============================== table nb count(789) ============================================
+============================== table nb count(788) ============================================
 
 
 | ID  | Default  | Description  |
@@ -13717,7 +13700,7 @@
 
 
 
-============================== table nb count(790) ============================================
+============================== table nb count(789) ============================================
 
 
 | ID  | Default  | Former value  |
@@ -13746,7 +13729,7 @@
 
 
 
-============================== table nb count(791) ============================================
+============================== table nb count(790) ============================================
 
 
 | ID  | Default  | Former value  |
@@ -13758,7 +13741,7 @@
 
 
 
-============================== table nb count(792) ============================================
+============================== table nb count(791) ============================================
 
 
 | ID  | Description  |
@@ -13768,7 +13751,7 @@
 
 
 
-============================== table nb count(793) ============================================
+============================== table nb count(792) ============================================
 
 
 | ID  | Description  |
@@ -13778,7 +13761,7 @@
 
 
 
-============================== table nb count(794) ============================================
+============================== table nb count(793) ============================================
 
 
 | Parameter  | Default  | Description  |
@@ -13791,7 +13774,7 @@
 
 
 
-============================== table nb count(795) ============================================
+============================== table nb count(794) ============================================
 
 
 | Parameter  | Default  | Description  |
@@ -13801,7 +13784,7 @@
 
 
 
-============================== table nb count(796) ============================================
+============================== table nb count(795) ============================================
 
 
 | Parameter  | Description  |
@@ -13810,7 +13793,7 @@
 
 
 
-============================== table nb count(797) ============================================
+============================== table nb count(796) ============================================
 
 
 | Parameter  | Description  |
@@ -13819,7 +13802,7 @@
 
 
 
-============================== table nb count(798) ============================================
+============================== table nb count(797) ============================================
 
 
 | Parameter  | Description  |
@@ -13828,7 +13811,7 @@
 
 
 
-============================== table nb count(799) ============================================
+============================== table nb count(798) ============================================
 
 
 | Parameter  | Default  | Description  |
@@ -13840,7 +13823,7 @@
 
 
 
-============================== table nb count(800) ============================================
+============================== table nb count(799) ============================================
 
 
 | Parameter  | Default  | Description  |
@@ -13854,7 +13837,7 @@
 
 
 
-============================== table nb count(801) ============================================
+============================== table nb count(800) ============================================
 
 
 | Parameter  | Default  | Description  |
@@ -13863,7 +13846,7 @@
 
 
 
-============================== table nb count(802) ============================================
+============================== table nb count(801) ============================================
 
 
 | Parameter  | Default  | Description  |
@@ -13872,7 +13855,7 @@
 
 
 
-============================== table nb count(803) ============================================
+============================== table nb count(802) ============================================
 
 
 | Parameter  | Default  | Description  |
@@ -13881,7 +13864,7 @@
 
 
 
-============================== table nb count(804) ============================================
+============================== table nb count(803) ============================================
 
 
 | Parameter  | Default value  | Description  |
@@ -13891,7 +13874,7 @@
 
 
 
-============================== table nb count(805) ============================================
+============================== table nb count(804) ============================================
 
 
 | Parameter  | Default  | Type  | Description  |
@@ -13900,7 +13883,7 @@
 
 
 
-============================== table nb count(806) ============================================
+============================== table nb count(805) ============================================
 
 
 | ID  | Description  |
@@ -13911,7 +13894,7 @@
 
 
 
-============================== table nb count(807) ============================================
+============================== table nb count(806) ============================================
 
 
 | Parameter  | Description  |
@@ -13920,7 +13903,7 @@
 
 
 
-============================== table nb count(808) ============================================
+============================== table nb count(807) ============================================
 
 
 | Parameter  | Options  | Description  |
@@ -13931,7 +13914,7 @@
 
 
 
-============================== table nb count(809) ============================================
+============================== table nb count(808) ============================================
 
 
 | Parameter  | Value  |
@@ -13940,7 +13923,7 @@
 
 
 
-============================== table nb count(810) ============================================
+============================== table nb count(809) ============================================
 
 
 | Parameter  | Value  |
@@ -13949,7 +13932,7 @@
 
 
 
-============================== table nb count(811) ============================================
+============================== table nb count(810) ============================================
 
 
 | Parameter  | Value  | Former value  |
@@ -13959,7 +13942,7 @@
 
 
 
-============================== table nb count(812) ============================================
+============================== table nb count(811) ============================================
 
 
 | Supported format  | Type  | Extension  |
@@ -13973,7 +13956,7 @@
 
 
 
-============================== table nb count(813) ============================================
+============================== table nb count(812) ============================================
 
 
 | Parameter | Value |
@@ -13985,7 +13968,7 @@
 
 
 
-============================== table nb count(814) ============================================
+============================== table nb count(813) ============================================
 
 
 | Parameter | Value |
@@ -13997,7 +13980,7 @@
 
 
 
-============================== table nb count(815) ============================================
+============================== table nb count(814) ============================================
 
 
 | Parameter | Value |
@@ -14008,7 +13991,7 @@
 
 
 
-============================== table nb count(816) ============================================
+============================== table nb count(815) ============================================
 
 
 | Parameter  | Description  |
@@ -14018,7 +14001,7 @@
 
 
 
-============================== table nb count(817) ============================================
+============================== table nb count(816) ============================================
 
 
 | Parameter  | Default  | Description  |
@@ -14029,7 +14012,7 @@
 
 
 
-============================== table nb count(818) ============================================
+============================== table nb count(817) ============================================
 
 
 | Parameter  | Description  |
@@ -14040,7 +14023,7 @@
 
 
 
-============================== table nb count(819) ============================================
+============================== table nb count(818) ============================================
 
 
 | Parameter  | Default  | Description  |
@@ -14049,7 +14032,7 @@
 
 
 
-============================== table nb count(820) ============================================
+============================== table nb count(819) ============================================
 
 
 | Parameters  | Description  |
@@ -14058,11 +14041,11 @@
 | cft.scheduled_values.(alias-id).start_time  | Start time using the format MM:HH:DAYS_OF_THE_WEEK. This is the begin time for when a value switches from its existing value to the . See <a href="#Details,%20days">Details</a> below.  |
 | cft.scheduled_values.(alias-id).delay  | Delay using the format MM:HH.<br/> This is the length of time during which the value can be changed. |
 | cft.scheduled_values.(alias-id).id  | The configuration entity id (uconf parameter) that you want to provide scheduling for.  |
-| cft.scheduled_values.(alias-id).value  | . This value replaces the existing configuration value for the defined uconf parameter.<br/> To find the existing value, in command line enter:<br/> CFTUTIL uconfget id=&lt;uconf_parameter&gt; |
+| cft.scheduled_values.(alias-id).value  | . This value replaces the existing configuration value for the defined uconf parameter.<br/> To find the existing value, in command line enter:<br/> <code>CFTUTIL uconfget id=&lt;uconf_parameter&gt;</code>  |
 
 
 
-============================== table nb count(821) ============================================
+============================== table nb count(820) ============================================
 
 
 | Parameter  | Description  |
@@ -14073,7 +14056,7 @@
 
 
 
-============================== table nb count(822) ============================================
+============================== table nb count(821) ============================================
 
 
 | OS  | Description  |
@@ -14082,7 +14065,7 @@
 
 
 
-============================== table nb count(823) ============================================
+============================== table nb count(822) ============================================
 
 
 | Parameter  | Description  |
@@ -14100,7 +14083,7 @@
 
 
 
-============================== table nb count(824) ============================================
+============================== table nb count(823) ============================================
 
 
 | Parameter  | Description  |
@@ -14130,7 +14113,7 @@
 
 
 
-============================== table nb count(825) ============================================
+============================== table nb count(824) ============================================
 
 
 | Parameter category  | Parameter concerned  |
@@ -14143,7 +14126,7 @@
 
 
 
-============================== table nb count(826) ============================================
+============================== table nb count(825) ============================================
 
 
 | Heading number  | Contents  |
@@ -14166,7 +14149,7 @@
 
 
 
-============================== table nb count(827) ============================================
+============================== table nb count(826) ============================================
 
 
 | DELETE <br /> Parameters  | Description  |
@@ -14187,7 +14170,7 @@
 
 
 
-============================== table nb count(828) ============================================
+============================== table nb count(827) ============================================
 
 
 | Parameter  |  Description  |
@@ -14198,7 +14181,7 @@
 
 
 
-============================== table nb count(829) ============================================
+============================== table nb count(828) ============================================
 
 
 | <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/timep">TIMEP</a> | Purge time selected by the user.<br/> You can deactivate the next purge function by setting TIMEP = 00000000. Use care with this operation due to a risk of catalog overloading with a loss of performance, or overflow.<br/> If the next purge is part of a cycle, see the CFTCAT TIMEP parameter, the entire cycle is deleted, and not just the next occurrence of this cycle. |
@@ -14206,7 +14189,7 @@
 
 
 
-============================== table nb count(830) ============================================
+============================== table nb count(829) ============================================
 
 
 | Parameter  | Description  |
@@ -14216,7 +14199,7 @@
 
 
 
-============================== table nb count(831) ============================================
+============================== table nb count(830) ============================================
 
 
 | Parameter  | Default  | Description  |
@@ -14226,7 +14209,7 @@
 
 
 
-============================== table nb count(832) ============================================
+============================== table nb count(831) ============================================
 
 
 | CFTA0nX  | Details  |
@@ -14242,7 +14225,7 @@
 
 
 
-============================== table nb count(833) ============================================
+============================== table nb count(832) ============================================
 
 
 | Attribute  | Details  |
@@ -14260,7 +14243,7 @@
 
 
 
-============================== table nb count(834) ============================================
+============================== table nb count(833) ============================================
 
 
 | Parameter  | Default  | Description  |
@@ -14270,7 +14253,7 @@
 
 
 
-============================== table nb count(835) ============================================
+============================== table nb count(834) ============================================
 
 
 | Parameters | Description | Default | Values | Modify  |
@@ -14304,7 +14287,7 @@
 
 
 
-============================== table nb count(836) ============================================
+============================== table nb count(835) ============================================
 
 
 | Parameters | Description | Default | Values | Modify  |
@@ -14318,7 +14301,7 @@
 
 
 
-============================== table nb count(837) ============================================
+============================== table nb count(836) ============================================
 
 
 | Parameters | Description | Default | Values | Modify  |
@@ -14327,7 +14310,7 @@
 
 
 
-============================== table nb count(838) ============================================
+============================== table nb count(837) ============================================
 
 
 | Correct option  | Incorrect option  |
@@ -14342,7 +14325,7 @@
 
 
 
-============================== table nb count(839) ============================================
+============================== table nb count(838) ============================================
 
 
 | Client  | Server  | Internal data  | Transferable data  | Performance  |
@@ -14354,7 +14337,7 @@
 
 
 
-============================== table nb count(840) ============================================
+============================== table nb count(839) ============================================
 
 
 | CFTA0nX  | Details  |
@@ -14370,7 +14353,7 @@
 
 
 
-============================== table nb count(841) ============================================
+============================== table nb count(840) ============================================
 
 
 | Attribute  | Details  |
@@ -14388,7 +14371,7 @@
 
 
 
-============================== table nb count(842) ============================================
+============================== table nb count(841) ============================================
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{&lt; TransferCFT/componentshortname &gt;}} |
@@ -14400,7 +14383,7 @@
 
 
 
-============================== table nb count(843) ============================================
+============================== table nb count(842) ============================================
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in {{&lt; TransferCFT/componentshortname &gt;}} |
@@ -14413,7 +14396,7 @@
 
 
 
-============================== table nb count(844) ============================================
+============================== table nb count(843) ============================================
 
 
 | Sentinel<br/> attribute | Data Type | Length | Description | Name in<br/> {{&lt; TransferCFT/componentshortname &gt;}} |
@@ -14423,10 +14406,10 @@
 
 
 
-============================== table nb count(845) ============================================
+============================== table nb count(844) ============================================
 
 
-| State | Compatible Sentinel State | IsEnd | IsAlert | IsException | Description |
+| **State**  | **Compatible Sentinel State**  | **IsEnd**  | **IsAlert**  | **IsException**  | **Description**  |
 | --- | --- | --- | --- | --- | --- |
 | RECEIVING | RECEIVING | 0 | 0 | 0 | File data transmission in progress |
 | CANCELED | CANCELED | 0 | 1 | 1 | File data transmission locally canceled (KEEP command) |
@@ -14444,10 +14427,10 @@
 
 
 
-============================== table nb count(846) ============================================
+============================== table nb count(845) ============================================
 
 
-| State | Compatible Sentinel State | IsEnd | IsAlert | IsException | Description |
+| **State**  | **Compatible Sentinel State**  | **IsEnd**  | **IsAlert**  | **IsException**  | **Description**  |
 | --- | --- | --- | --- | --- | --- |
 | AVAILABLE | AVAILABLE | 0 | 0 | 0 | Transfer available |
 | SENDING | SENDING | 0 | 0 | 0 | File data transmission in progress |
@@ -14464,10 +14447,10 @@
 
 
 
-============================== table nb count(847) ============================================
+============================== table nb count(846) ============================================
 
 
-| State | Compatible Sentinel State | IsEnd | IsAlert | IsException | Description |
+| **State**  | **Compatible Sentinel State**  | **IsEnd**  | **IsAlert**  | **IsException**  | **Description**  |
 | --- | --- | --- | --- | --- | --- |
 | TO_EXECUTE | TO_EXECUTE | 0 | 0 | 0 | Transfer to execute (delayed or to restart) |
 | RECEIVING | RECEIVING | 0 | 0 | 0 | File data transmission in progress |
@@ -14484,10 +14467,10 @@
 
 
 
-============================== table nb count(848) ============================================
+============================== table nb count(847) ============================================
 
 
-| State | Compatible Sentinel State | IsEnd | IsAlert | IsException | Description |
+| **State**  | **Compatible Sentinel State**  | **IsEnd**  | **IsAlert**  | **IsException**  | **Description**  |
 | --- | --- | --- | --- | --- | --- |
 | PRE_PROC | AVAILABLE/TO_EXECUTE | 0 | 0 | 0 | Pre-processing in progress |
 | PRE_PROC_ABORT | CANCELED | 0 | 1 | 1 | Pre-processing aborted by the application (KEEP command) |
@@ -14506,7 +14489,7 @@
 
 
 
-============================== table nb count(849) ============================================
+============================== table nb count(848) ============================================
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{&lt; TransferCFT/componentshortname &gt;}} |
@@ -14516,7 +14499,7 @@
 
 
 
-============================== table nb count(850) ============================================
+============================== table nb count(849) ============================================
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{&lt; TransferCFT/componentshortname &gt;}} |
@@ -14533,7 +14516,7 @@
 
 
 
-============================== table nb count(851) ============================================
+============================== table nb count(850) ============================================
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{&lt; TransferCFT/componentshortname &gt;}} |
@@ -14544,7 +14527,7 @@
 
 
 
-============================== table nb count(852) ============================================
+============================== table nb count(851) ============================================
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{&lt; TransferCFT/componentshortname &gt;}} |
@@ -14559,12 +14542,12 @@
 
 
 
-============================== table nb count(853) ============================================
+============================== table nb count(852) ============================================
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{&lt; TransferCFT/componentshortname &gt;}} |
 | --- | --- | --- | --- | --- |
-| IdAppl | String | 25 | If the value of the IsServer attribute is:<br/> • 0: The value of this attribute is the local identifier of the Requester.<br/> • 1: The value of this attribute is empty. | IDA |
+| IdAppl | String | 25 | If the value of the IsServer attribute is:<br/> • 0: The value of this attribute is the local identifier of the Requester.<br/> • 1: The value of this attribute is empty. | **IDA**  |
 | Application | String | 80 | Local application/Transfer profile (ST). | IDF |
 | FileName | String | 512 | If the value of the CommandType attribute is:<br/> • File and the value of the Direction attribute is E (Sender): This attribute identifies the file from which the Sender retrieved the transfer data (full path).<br/> • File and the value of the Direction attribute is R (Receiver): This attribute identifies the file in which the Receiver recorded the transfer data (full path). | FNAME |
 | LocalId | String | 25 | If the value of the Direction attribute is:<br/> • E (Sender): The value of this attribute is the local transfer identifier for the Sender.<br/> • R (Receiver): The value of this attribute is the local transfer identifier for the Receiver. | IDTU |
@@ -14579,24 +14562,24 @@
 
 
 
-============================== table nb count(854) ============================================
+============================== table nb count(853) ============================================
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> product |
 | --- | --- | --- | --- | --- |
-| EarliestDate | Date | - | Date on which the validity period begins. | DATEM |
+| EarliestDate | Date | - | Date on which the validity period begins. | **DATEM**  |
 | EarliestTime | Time | - | Time at which the validity period begins. | TIMEM |
 | LatestDate | Date | - | Date on which the validity period ends. | DATEMAX |
 | LatestTime | Time | - | Time at which the validity period ends. | TIMEMAX |
 
 
 
-============================== table nb count(855) ============================================
+============================== table nb count(854) ============================================
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{&lt; TransferCFT/componentshortname &gt;}} |
 | --- | --- | --- | --- | --- |
-| CreationDate | Date | - | By default, the system date on which the Sender sent the transfer. The Sender can set this date. The Receiver can filter transfers based on this date. | FDATE |
+| CreationDate | Date | - | By default, the system date on which the Sender sent the transfer. The Sender can set this date. The Receiver can filter transfers based on this date. | **FDATE**  |
 | CreationTime | Time | - | By default, the system time at which the Sender sent the transfer. The Sender can set this time. The Receiver can filter transfers based on this time. | FTIME |
 | SendDate | Date | - | If the value of the Direction attribute is:<br/> • E (Sender): The value of this attribute is the date on which the Sender recorded the transfer in the transfer catalog.<br/> • R (Receiver): The value of this attribute is the date on which the Receiver recorded the transfer in the transfer catalog.<br/> The Sender and the Receiver record each transfer only once. | DATEK |
 | SendTime | Time | - | If the value of the Direction attribute is:<br/> • E (Sender): The value of this attribute is the local time at which the Sender recorded the transfer in the transfer catalog.<br/> • R (Receiver): The value of this attribute is the local time at which the Receiver recorded the transfer in the transfer catalog.<br/> The Sender and the Receiver record each transfer only once. | TIMEK |
@@ -14612,7 +14595,7 @@
 
 
 
-============================== table nb count(856) ============================================
+============================== table nb count(855) ============================================
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{&lt; TransferCFT/componentshortname &gt;}} |
@@ -14624,12 +14607,12 @@
 
 
 
-============================== table nb count(857) ============================================
+============================== table nb count(856) ============================================
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{&lt; TransferCFT/componentshortname &gt;}} |
 | --- | --- | --- | --- | --- |
-| Compression | String | 1 | One of the following:<br/> • 0: Undefined<br/> • 1: Horizontal<br/> • 2: Vertical<br/> • 3: Both horizontal and vertical<br/> • 4: Not compressed | NCOMP |
+| Compression | String | 1 | One of the following:<br/> • 0: Undefined<br/> • 1: Horizontal<br/> • 2: Vertical<br/> • 3: Both horizontal and vertical<br/> • 4: Not compressed | **NCOMP**  |
 | EOTProcedure | String | 255 | Name of the end-of-transfer procedure executed upon the completion of the transfer. | EXEC |
 | Priority | Integer | - | Transfer priority. Receivers process transfers in the order of their priority. The range of possible values for this attribute is 0 to 255. The lowest priority is zero. The highest priority is 255.  | PRI |
 | RetryMaxNumber | Integer | - | Maximum number of times that the Sender can attempt to send transfers. | RETRYM |
@@ -14639,17 +14622,17 @@
 
 
 
-============================== table nb count(858) ============================================
+============================== table nb count(857) ============================================
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{&lt; TransferCFT/componentshortname &gt;}} |
 | --- | --- | --- | --- | --- |
-| FileSize | Integer | - | Size of the transferred file. This size is expressed in bytes.<br/> <blockquote> **Note**<br/> For PeSIT, an estimation of size is given at the beginning of the transfer. This value is updated upon completion of the transfer with the real value.<br/> </blockquote>  | FSPACE |
+| FileSize | Integer | - | Size of the transferred file. This size is expressed in bytes.<br/> <blockquote> **Note**<br/> For PeSIT, an estimation of size is given at the beginning of the transfer. This value is updated upon completion of the transfer with the real value.<br/> </blockquote>  | **FSPACE**  |
 | TransmittedBytes | Integer | - | Number of bytes transferred, after decompression, to transfer the file. This size is expressed in bytes.<br/> <blockquote> **Note**<br/> For PeSIT, this value sent is crosschecked by both the sender and receiver.<br/> </blockquote>  | NCAR |
 
 
 
-============================== table nb count(859) ============================================
+============================== table nb count(858) ============================================
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{&lt; TransferCFT/componentshortname &gt;}} |
@@ -14665,7 +14648,7 @@
 
 
 
-============================== table nb count(860) ============================================
+============================== table nb count(859) ============================================
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{&lt; TransferCFT/componentshortname &gt;}} |
@@ -14676,7 +14659,7 @@
 
 
 
-============================== table nb count(861) ============================================
+============================== table nb count(860) ============================================
 
 
 | Offset | Length | PI | Description |
@@ -14695,7 +14678,7 @@
 
 
 
-============================== table nb count(862) ============================================
+============================== table nb count(861) ============================================
 
 
 | Offset | Length | Value  | Description |
@@ -14712,7 +14695,7 @@
 
 
 
-============================== table nb count(863) ============================================
+============================== table nb count(862) ============================================
 
 
 |   | Phase | Phasestep | Transfer CFT State | Transfer CFT Compatible State (uconf:<br/> cft.state_compat=Yes) | Diagi | Acked | Sentinel<br/> State | Compatible Sentinel State (uconf:<br/> cft.state_compat=Yes) |
@@ -14756,7 +14739,7 @@
 
 
 
-============================== table nb count(864) ============================================
+============================== table nb count(863) ============================================
 
 
 | Definition  | NO  | ALL  | SUMMARY  | ERROR  | UNDEFINED  |
@@ -14769,7 +14752,7 @@
 
 
 
-============================== table nb count(865) ============================================
+============================== table nb count(864) ============================================
 
 
 | Attribute  | Description  | Type  | Length  |
@@ -14787,7 +14770,7 @@
 
 
 
-============================== table nb count(866) ============================================
+============================== table nb count(865) ============================================
 
 
 | Request  | Retrieves...  |
@@ -14798,7 +14781,7 @@
 
 
 
-============================== table nb count(867) ============================================
+============================== table nb count(866) ============================================
 
 
 | Unified configuration parameter  | Default value  | Former Sentinel parameter name<br/> trkapi.cfg |
@@ -14834,7 +14817,7 @@
 
 
 
-============================== table nb count(868) ============================================
+============================== table nb count(867) ============================================
 
 
 | Unified configuration parameter  | Default value  | Description  |
@@ -14845,7 +14828,7 @@
 
 
 
-============================== table nb count(869) ============================================
+============================== table nb count(868) ============================================
 
 
 | Unified configuration parameter  | Default value  | Description  |
@@ -14855,7 +14838,7 @@
 
 
 
-============================== table nb count(870) ============================================
+============================== table nb count(869) ============================================
 
 
 | Sentinel<br/> attribute | Data type  | Length  | Description  | Transfer CFT  | InterPEL Core  | InterPEL MVS  |
@@ -14865,7 +14848,7 @@
 
 
 
-============================== table nb count(871) ============================================
+============================== table nb count(870) ============================================
 
 
 | Sentinel  | Data type  | Length  | Description  | Transfer CFT  | InterPEL Core  | InterPEL MVS  |
@@ -14882,7 +14865,7 @@
 
 
 
-============================== table nb count(872) ============================================
+============================== table nb count(871) ============================================
 
 
 | Sentinel  | Data type  | Length  | Description  | Transfer CFT  | InterPEL Core  | InterPEL MVS  |
@@ -14895,7 +14878,7 @@
 
 
 
-============================== table nb count(873) ============================================
+============================== table nb count(872) ============================================
 
 
 | Sentinel  | Data type  | Length  | Description  | Transfer CFT  | InterPEL Core  | InterPEL MVS  |
@@ -14910,7 +14893,7 @@
 
 
 
-============================== table nb count(874) ============================================
+============================== table nb count(873) ============================================
 
 
 | Sentinel  | Data type  | Length  | Description  | Transfer CFT  | InterPEL Core  | InterPEL MVS  |
@@ -14932,7 +14915,7 @@
 
 
 
-============================== table nb count(875) ============================================
+============================== table nb count(874) ============================================
 
 
 | Sentinel  | Data type  | Length  | Description  | Transfer CFT  | InterPEL Core  | InterPEL MVS  |
@@ -14944,7 +14927,7 @@
 
 
 
-============================== table nb count(876) ============================================
+============================== table nb count(875) ============================================
 
 
 | Sentinel  | Data type  | Length  | Description  | Name in  | InterPEL Core  | InterPEL MVS  |
@@ -14959,13 +14942,13 @@
 | StartTime  | Time  | N/A  | If the value of the State attribute is:<br/> • SENT: The value of this attribute is the local time at which the Sender began sending the transfer.<br/> • RECEIVED: The value of this attribute is the local time at which the Receiver began receiving the transfer.<br/> These times are expressed in hh:mn:ss format. | From TIMEB (Catalog)  | From date_begin: time  |  MLHHEUDT<br/> (MVS does not exist in Pelica2 requests) |
 | EndDate  | Date  | N/A  | If the value of the State attribute is:<br/> • SENT: The value of this attribute is the date on which the Sender stopped sending the transfer.<br/> • RECEIVED: The value of this attribute is the date on which the Receiver stopped receiving the transfer.<br/> These dates are expressed in dd.mm.yyyy format. | From DATEE (Catalog)  | From date_end: date  |  MLHDATFT  |
 | EndTime  | Time  | N/A  | If the value of the State attribute is:<br/> • SENT: The value of this attribute is the local time at which the Sender stopped sending the transfer.<br/> • RECEIVED: The value of this attribute is the local time at which the Receiver stopped receiving the transfer.<br/> These times are expressed in hh:mn:ss format. | From TIMEE (Catalog)  | From date_end: time  |  MLHHEUFT  |
-| RequestCreationDate  | Date  | N/A  | If the value of the State attribute is:<br/> • SENT: The value of this attribute is local date of the creation of the file on the Sender side.<br/> •  | From FDATE (Catalog)  | From date_create: date  |  MLHDATR  |
-| RequestCreationTime  | Time  | N/A  | If the value of the State attribute is:<br/> • SENT: The value of this attribute is local time of the creation of the file on the Sender side.<br/> •  | From FTIME (Catalog)  | From date_create: time  |  MLHTIMR  |
+| RequestCreationDate  | Date  | N/A  | If the value of the State attribute is:<br/> • SENT: The value of this attribute is local date of the creation of the file on the Sender side.<br/> • RECEIVED: The value of this attribute is the date of the creation of the file on the Sender side.<br/> ITP: transfer request creation date | From FDATE (Catalog)  | From date_create: date  |  MLHDATR  |
+| RequestCreationTime  | Time  | N/A  | If the value of the State attribute is:<br/> • SENT: The value of this attribute is local time of the creation of the file on the Sender side.<br/> • RECEIVED: The value of this attribute is the time of the creation of the file on the Sender side.<br/> ITP: transfer request creation time. | From FTIME (Catalog)  | From date_create: time  |  MLHTIMR  |
 | TransmissionDuration  | Integer  | N/A  | Transfer duration, expressed in seconds.  | From TIMES (Catalog)  | date_end-date_begin  | MLHDATDT - MLHDATFT  |
 
 
 
-============================== table nb count(877) ============================================
+============================== table nb count(876) ============================================
 
 
 | Sentinel  | Data type  | Length  | Description  | Transfer CFT  | InterPEL Core  | InterPEL MVS  |
@@ -14977,7 +14960,7 @@
 
 
 
-============================== table nb count(878) ============================================
+============================== table nb count(877) ============================================
 
 
 | Sentinel  | Data type  | Length  | Description  | Transfer CFT  | InterPEL Core  | InterPEL MVS  |
@@ -14993,7 +14976,7 @@
 
 
 
-============================== table nb count(879) ============================================
+============================== table nb count(878) ============================================
 
 
 | Sentinel attribute  | Data type  | Length  | Description  | Transfer CFT | InterPEL Core  | InterPEL MVS  |
@@ -15003,24 +14986,24 @@
 
 
 
-============================== table nb count(880) ============================================
+============================== table nb count(879) ============================================
 
 
 | Sentinel attribute  | Data type  | Length  | Description  | Transfer CFT | InterPEL Core  | InterPEL MVS  |
 | --- | --- | --- | --- | --- | --- | --- |
 | CommandType  | String  | 1  |  • F: File transfer<br/> • M: Message transfer<br/> • A: Message reply<br/> • N: Message nack | TYPE  | type F or M (ack/nack is in "State")  | TYPEREQ={S|C or M} |
-|   | String  | 25  |  • org_sequential: The transferred data is not indexed.<br/> • indexed: The transferred data is indexed.<br/> • direct: The transferred data is assigned relative access. | FORG  | file_org  | GENFILE FORG={AUTO|SEQ|…}  |
+| FileOrganization (ITP Core :FileOrganisation)  | String  | 25  |  • org_sequential: The transferred data is not indexed.<br/> • indexed: The transferred data is indexed.<br/> • direct: The transferred data is assigned relative access. | FORG  | file_org  | GENFILE FORG={AUTO|SEQ|…}  |
 | FileType  | String  | 60  | B: The transferred file is a binary file.<br /> J, T, O, X: The transferred file is a text file.  | FTYPE  | file_type  | GENFILE RECFM= {FB | … }  |
 | RecordNumber  | Integer  | N/A  | Number of record in the file. This size is expressed in bytes. <br/> <blockquote> **Note**<br/> For PeSIT, this value sent is crosschecked by both the sender and receiver.<br/> </blockquote>  | FREC  | rec_count  | MLHNBRER  |
 | RecordFormat  | String  | 64  |  • F: Fixed - The transferred data contains fixed-length records.<br/> • V: Variable - The transferred data contains variable-length records.<br/> • U: Undefined - The structure of the transferred data is unknown. | FRECFM  | xfer_rec_fmt:<br/> "F", "V",<br/> "S": Stream<br/> "T" : Text |  MLH1RECF  |
 | RecordSize  | Integer  | N/A  | If the value of RecordFormat attribute is fixed, the value of this attribute is the size of all records in the transferred file, expressed in bytes.<br/> If the value of RecordFormat is variable or undefined, the value of this attribute is the size of the largest record in the transferred file, expressed in bytes. | FLRECL  | rec_len  | GENFILE LRECL=nnn  |
-| Transcoding  |   | (ITP Core: 25)  | Character code of the transferred data:<br/> • A: ASCII<br/> • B: Binary<br/> • E: EBCDIC | FCODE  | From: xfer_data_code,data_code:<br/> A/AT: ASCII (with Transco)<br/> E/ET: EBCDIC (with Transco)<br/> B/BT: Binary (with Transco)<br/> U/UT: Undefined (with Transco) |  FILECODE {A|E|B}  |
+| Transcoding  | Integer (ITP Core : String)  | (ITP Core: 25)  | Character code of the transferred data:<br/> • A: ASCII<br/> • B: Binary<br/> • E: EBCDIC | FCODE  | From: xfer_data_code,data_code:<br/> A/AT: ASCII (with Transco)<br/> E/ET: EBCDIC (with Transco)<br/> B/BT: Binary (with Transco)<br/> U/UT: Undefined (with Transco) |  FILECODE {A|E|B}  |
 | TranslationTableId  | String  | 25  | Name of the local translation table use during the transfer (if any).  | XLATE  | N/A (data_code, not set)  | N/A  |
 | BlockSize  | Integer  | N/A  | File block size (used by some OS)  | From FBLKSIZE (Catalog)  | block_size  | N/A  |
 
 
 
-============================== table nb count(881) ============================================
+============================== table nb count(880) ============================================
 
 
 | Sentinel attribute  | Data type  | Length  | Description  | Transfer CFT  | InterPEL Core  | InterPEL MVS  |
@@ -15036,7 +15019,7 @@
 
 
 
-============================== table nb count(882) ============================================
+============================== table nb count(881) ============================================
 
 
 | Sentinel attribute  | Data type  | Length  | Description  | Transfer CFT  | InterPEL Core  | InterPEL MVS  |
@@ -15058,7 +15041,7 @@
 
 
 
-============================== table nb count(883) ============================================
+============================== table nb count(882) ============================================
 
 
 | Step  | Your remarks  |
@@ -15071,7 +15054,7 @@
 
 
 
-============================== table nb count(884) ============================================
+============================== table nb count(883) ============================================
 
 
 | Step  | Your remarks  |
@@ -15082,7 +15065,7 @@
 
 
 
-============================== table nb count(885) ============================================
+============================== table nb count(884) ============================================
 
 
 | Step  | Your remarks  |
@@ -15093,7 +15076,7 @@
 
 
 
-============================== table nb count(886) ============================================
+============================== table nb count(885) ============================================
 
 
 | Event | Consequence |
@@ -15102,7 +15085,7 @@
 
 
 
-============================== table nb count(887) ============================================
+============================== table nb count(886) ============================================
 
 
 | Check the issue and solutions | Description |
@@ -15121,7 +15104,7 @@
 
 
 
-============================== table nb count(888) ============================================
+============================== table nb count(887) ============================================
 
 
 | Code | Event | Consequence |
@@ -15130,7 +15113,7 @@
 
 
 
-============================== table nb count(889) ============================================
+============================== table nb count(888) ============================================
 
 
 | SSL objects | Description |
@@ -15140,7 +15123,7 @@
 
 
 
-============================== table nb count(890) ============================================
+============================== table nb count(889) ============================================
 
 
 | Code | Event | Consequence |
@@ -15150,7 +15133,7 @@
 
 
 
-============================== table nb count(891) ============================================
+============================== table nb count(890) ============================================
 
 
 | Diagnostic codes | Event | Solution |
@@ -15160,7 +15143,7 @@
 
 
 
-============================== table nb count(892) ============================================
+============================== table nb count(891) ============================================
 
 
 | Issue vs<br /> Possible causes  | Hard disk bottleneck  | Catalog<br/> full | Network<br/> bottleneck | Memory or processor bottleneck*  | Corrupt<br/> file or DB ** |
@@ -15174,7 +15157,7 @@
 
 
 
-============================== table nb count(893) ============================================
+============================== table nb count(892) ============================================
 
 
 | Parameter | Description |
@@ -15185,7 +15168,7 @@
 
 
 
-============================== table nb count(894) ============================================
+============================== table nb count(893) ============================================
 
 
 | Parameter  | Description  |
@@ -15197,7 +15180,7 @@
 
 
 
-============================== table nb count(895) ============================================
+============================== table nb count(894) ============================================
 
 
 | Parameter  |  Description  |
@@ -15208,7 +15191,7 @@
 
 
 
-============================== table nb count(896) ============================================
+============================== table nb count(895) ============================================
 
 
 | Parameter  | Description  |
@@ -15219,7 +15202,7 @@
 
 
 
-============================== table nb count(897) ============================================
+============================== table nb count(896) ============================================
 
 
 | Parameter  | Description  |
@@ -15230,7 +15213,7 @@
 
 
 
-============================== table nb count(898) ============================================
+============================== table nb count(897) ============================================
 
 
 | Parameters  | Description  |
@@ -15242,7 +15225,7 @@
 
 
 
-============================== table nb count(899) ============================================
+============================== table nb count(898) ============================================
 
 
 | Parameter  | Description  |
@@ -15253,7 +15236,7 @@
 
 
 
-============================== table nb count(900) ============================================
+============================== table nb count(899) ============================================
 
 
 | OS  | Description  |
@@ -15262,7 +15245,7 @@
 
 
 
-============================== table nb count(901) ============================================
+============================== table nb count(900) ============================================
 
 
 | Parameter  | Description  |
@@ -15280,7 +15263,7 @@
 
 
 
-============================== table nb count(902) ============================================
+============================== table nb count(901) ============================================
 
 
 | Parameter | Value |
@@ -15292,7 +15275,7 @@
 
 
 
-============================== table nb count(903) ============================================
+============================== table nb count(902) ============================================
 
 
 | Parameter | Value |
@@ -15304,7 +15287,7 @@
 
 
 
-============================== table nb count(904) ============================================
+============================== table nb count(903) ============================================
 
 
 | Parameter | Value |
@@ -15314,7 +15297,7 @@
 
 
 
-============================== table nb count(905) ============================================
+============================== table nb count(904) ============================================
 
 
 | SSL_KEYSTORE value | Windows | Linux |
@@ -15324,7 +15307,7 @@
 
 
 
-============================== table nb count(906) ============================================
+============================== table nb count(905) ============================================
 
 
 | The message severity is displayed | CFTxxx: the actual message that is displayed on {{&lt; TransferCFT/componentshortname &gt;}} |
@@ -15335,7 +15318,7 @@
 
 
 
-============================== table nb count(907) ============================================
+============================== table nb count(906) ============================================
 
 
 | Code  | Description  |
@@ -15356,7 +15339,7 @@
 
 
 
-============================== table nb count(908) ============================================
+============================== table nb count(907) ============================================
 
 
 | Code  | Indicates  |
@@ -15368,7 +15351,7 @@
 
 
 
-============================== table nb count(909) ============================================
+============================== table nb count(908) ============================================
 
 
 | Code | Description |
@@ -15413,7 +15396,7 @@
 
 
 
-============================== table nb count(910) ============================================
+============================== table nb count(909) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB01E"></span>CFTB01E PART=&amp;part Context area allocation failure CS=&amp;scs<br/> CFTB01E PART=&amp;part Context area allocation failure CS=&amp;cs |
@@ -15423,7 +15406,7 @@
 
 
 
-============================== table nb count(911) ============================================
+============================== table nb count(910) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB02E"></span>CFTB02E PART=&amp;part TFIL Exchange buffer allocation failure CS=&amp;scs<br/> CFTB02E PART=&amp;part TFIL Exchange buffer allocation failure CS=&amp;cs |
@@ -15433,7 +15416,7 @@
 
 
 
-============================== table nb count(912) ============================================
+============================== table nb count(911) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB03E"></span>CFTB03E PART=&amp;part Error sending data on network NCR=&amp;ncr NCS=&amp;ncs NET=&amp;net<br/> CFTB03E PART=&amp;part Error sending data on network NCR=&amp;ncr NCS=&amp;cs NET=&amp;net |
@@ -15443,7 +15426,7 @@
 
 
 
-============================== table nb count(913) ============================================
+============================== table nb count(912) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB06E"></span>CFTB06E Flow control error NCR=&amp;ncr NCS=&amp;ncs NET=&amp;net<br/> CFTB06E PART=&amp;part Flow control error NCR=&amp;ncr NCS=&amp;cs NET=&amp;net |
@@ -15452,7 +15435,7 @@
 
 
 
-============================== table nb count(914) ============================================
+============================== table nb count(913) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB07E"></span>CFTB07E PART=&amp;part TFIL task Synchronization error CR=&amp;cr CS=&amp;cs<br/> CFTB07E PART=&amp;part TFIL task Synchronization error CR= &amp;cr CS=&amp;cs |
@@ -15462,7 +15445,7 @@
 
 
 
-============================== table nb count(915) ============================================
+============================== table nb count(914) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB08E"></span>CFTB08E PART=&amp;part Network release resp err NCR=&amp;ncr NCS=&amp;ncs NET=&amp;net<br/> CFTB08E PART=&amp;part Network release resp err NCR=&amp;ncr NCS=&amp;cs NET=&amp;net |
@@ -15472,7 +15455,7 @@
 
 
 
-============================== table nb count(916) ============================================
+============================== table nb count(915) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB09E"></span>CFTB09E PART=&amp;part Network connect req local err NCR=&amp;ncr NCS=&amp;ncs NET=&amp;net<br/> CFTB09E PART=&amp;part Network connect req local err NCR=&amp;ncr NCS=&amp;cs NET=&amp;net |
@@ -15482,7 +15465,7 @@
 
 
 
-============================== table nb count(917) ============================================
+============================== table nb count(916) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB10E"></span>CFTB10E PART=&amp;part RECOV=&amp;recov L=&amp;local R=&amp;reason D=&amp;diag NET=&amp;net<br/> CFTB10E PART=&amp;part RECOV=&amp;recov L=&amp;local R=&amp;reason ld D=&amp;diag ld NET=&amp;net |
@@ -15492,7 +15475,7 @@
 
 
 
-============================== table nb count(918) ============================================
+============================== table nb count(917) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB18E"></span>CFTB18E Incoming call reject error NCR=&amp;ncr NCS=&amp;ncs NET=&amp;net<br/> CFTB18E Incoming call reject error NCR=&amp;ncr NCS=&amp;cs NET=&amp;net |
@@ -15501,7 +15484,7 @@
 
 
 
-============================== table nb count(919) ============================================
+============================== table nb count(918) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB19E"></span>CFTB19E Incoming call accept error NCR=&amp;ncr NCS=&amp;ncs NET=&amp;net<br/> CFTB19E Incoming call accept error NCR=&amp;ncr NCS=&amp;cs NET=&amp;net |
@@ -15510,7 +15493,7 @@
 
 
 
-============================== table nb count(920) ============================================
+============================== table nb count(919) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB19E"></span>CFTB20E Invalid ETEBAC3 Card &amp;id NET=&amp;net<br/> CFTB20E Invalid ETEBAC3 Card &amp;id NET=&amp;net |
@@ -15519,7 +15502,7 @@
 
 
 
-============================== table nb count(921) ============================================
+============================== table nb count(920) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB21E"></span>CFTB21E PART=&amp;part MAIN task Synchronization error CR=&amp;cr CS=&amp;scs<br/> CFTB21E PART=&amp;part MAIN task Synchronization error CR= &amp;cr CS=&amp;cs |
@@ -15528,7 +15511,7 @@
 
 
 
-============================== table nb count(922) ============================================
+============================== table nb count(921) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTC01W"></span>CFTC01W CFT catalog storage is short n record(s) free <br/> CFTC01W CFT catalog storage is short n record(s) free  |
@@ -15538,7 +15521,7 @@
 
 
 
-============================== table nb count(923) ============================================
+============================== table nb count(922) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTC01E"></span>CFTC01E CFT catalog storage is full <br/> CFTC01E CFT catalog storage is full |
@@ -15548,7 +15531,7 @@
 
 
 
-============================== table nb count(924) ============================================
+============================== table nb count(923) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTC03W"></span>CFTC03W PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Running out of time (HHMMSSCC)<br/> CFTC03W Transfer Running out of time &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt [sgt=HHMMSSCC] |
@@ -15558,7 +15541,7 @@
 
 
 
-============================== table nb count(925) ============================================
+============================== table nb count(924) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTC04W"></span>CFTC04W PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ State C delete forbidden<br/> CFTC04W _ State C delete forbidden &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
@@ -15568,7 +15551,7 @@
 
 
 
-============================== table nb count(926) ============================================
+============================== table nb count(925) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTC05W"></span>CFTC05W PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt _ Delete failed<br/> CFTC05W _ Delete failed &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt |
@@ -15578,7 +15561,7 @@
 
 
 
-============================== table nb count(927) ============================================
+============================== table nb count(926) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTC06E"></span>CFTC06E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Update failed<br/> CFTC06E _ Update failed &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -15588,7 +15571,7 @@
 
 
 
-============================== table nb count(928) ============================================
+============================== table nb count(927) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTC07I"></span>CFTC07I PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm]IDT=&amp;idt STATE=&amp;state - Deleted<br/> CFTC07I Transfer Deleted &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt STATE=&amp;state DIRECT=&amp;direct |
@@ -15597,16 +15580,16 @@
 
 
 
-============================== table nb count(929) ============================================
+============================== table nb count(928) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTC08I"></span>CFTC08I &amp;str<br/> CFTC08I &amp;str |
 | --- | --- |
-| Explanation  | Possible values for &amp;str are described here. The following messages are displayed when the catalog is purged on {{&lt; TransferCFT/componentshortname &gt;}} startup, or at the time set for the daily purge. For example:<br/> When there are no transfers to delete:<br/> <div > Purge Started<br /> Purge catalog-size=1000 in-use=0 pre-filtered=0(0%)<br /> Purge Treated: catalog empty<br /> Purge deleted= n treated=n(d%) match=d%.<br /> Purge Treated<br /> Purge Treated: no record found to delete<br/> </div> When there are transfers to delete:<br/> <div > Catalog: Loading...<br /> Catalog: Load Done<br /> Catalog: Size=100, Used=8(8%)<br /> Purge Started.<br /> Purge catalog-size=100 in-use=8 pre-filtered=8(100)<br /> Purge deleted=1 treated=1(12) match=100<br /> Purge deleted=2 treated=2(25) match=100<br /> ….<br /> Purge deleted=8 treated=8(100) match=100<br /> Purge Treated.<br/> </div> When {{&lt; TransferCFT/componentshortname &gt;}} starts:<br/> <div > If there are no transfers to delete:<br/> <div > Catalog: Loading...<br /> Catalog: Load Done<br /> Catalog: Size= &amp;00, Used=0(0%)<br /> <br/> </div> If there are transfers to delete:<br/> <div > Catalog: Loading...<br /> Catalog: Load Done<br /> Catalog: Size=100, Used=8(8%)<br/> </div> </div> If there is a problem with the catalog INIT:<br/> <div > Catalog: Recovering<br /> Catalog: Recovery Done: n errors<br /> Catalog Recovery: n transfers from C to D state<br/> </div>  |
+| Explanation  | Possible values for &amp;str are described here. The following messages are displayed when the catalog is purged on {{&lt; TransferCFT/componentshortname &gt;}} startup, or at the time set for the daily purge. For example:<br/> **When there are no transfers to delete:** <div > <code>Purge StartedPurge catalog-size=1000 in-use=0 pre-filtered=0(0%)Purge Treated: catalog emptyPurge deleted= n treated=n(d%) match=d%.Purge TreatedPurge Treated: no record found to delete</code> </div> **When there are transfers to delete:** <div > <code>Catalog: Loading...Catalog: Load DoneCatalog: Size=100, Used=8(8%)Purge Started.Purge catalog-size=100 in-use=8 pre-filtered=8(100)Purge deleted=1 treated=1(12) match=100Purge deleted=2 treated=2(25) match=100….Purge deleted=8 treated=8(100) match=100Purge Treated.</code> </div> **When {{&lt; TransferCFT/componentshortname &gt;}} starts:** <div > If there are no transfers to delete:<br/> <div > <code>Catalog: Loading...Catalog: Load DoneCatalog: Size= &amp;00, Used=0(0%)</code> </div> If there are transfers to delete:<br/> <div > <code>Catalog: Loading...Catalog: Load DoneCatalog: Size=100, Used=8(8%)</code> </div> </div> **If there is a problem with the catalog INIT:** <div > <code>Catalog: RecoveringCatalog: Recovery Done: n errorsCatalog Recovery: n transfers from C to D state</code> </div>  |
 
 
 
-============================== table nb count(930) ============================================
+============================== table nb count(929) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTC09I"></span>CFTC09I PART=&amp;part IDF=&amp;idf IDT=&amp;idt STATE=&amp;state DIRECT=&amp;direct : &amp;cmd not executed<br/> CFTC09I Command not executed &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt STATE=&amp;state DIRECT=&amp;direct : Cmd=&amp;cmd |
@@ -15616,7 +15599,7 @@
 
 
 
-============================== table nb count(931) ============================================
+============================== table nb count(930) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTC10I"></span>CFTC10I PART=&amp;part IDF or IDM=&amp;idf STATE=&amp;state MODE=&amp;mode : &amp;cmd not executed<br/> CFTC10I PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] STATE=&amp;state MODE=&amp;mode : &amp;cmd not executed |
@@ -15626,7 +15609,7 @@
 
 
 
-============================== table nb count(932) ============================================
+============================== table nb count(931) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTC11I"></span>CFTC11I PART=&amp;part IDM=&amp;idf IDT=&amp;idt : SEND REPLY not executed<br/> CFTC11I Command not executed &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt : Cmd=&amp;cmd |
@@ -15636,7 +15619,7 @@
 
 
 
-============================== table nb count(933) ============================================
+============================== table nb count(932) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTC12I"></span>CFTC12I PART=&amp;part STATE=&amp;state DIRECT=&amp;direct TYPE=&amp;type SENTINEL_STATE=&amp;trkstate Deleted<br/> CFTC12I IDTU=&amp;idtu PART=&amp;part STATE=&amp;state PHASE=&amp;phase PHASESTEP=&amp;phasestep DIRECT=&amp;direct TYPE=&amp;type SENTINEL_STATE=&amp;trkstate Deleted |
@@ -15646,7 +15629,7 @@
 
 
 
-============================== table nb count(934) ============================================
+============================== table nb count(933) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTC13I"></span>CFTC13I Catalog resize (xxxx --&gt; yyyy) done<br/> CFTC13I Catalog resize (xxxx --&gt; yyyy) done |
@@ -15656,7 +15639,7 @@
 
 
 
-============================== table nb count(935) ============================================
+============================== table nb count(934) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTC13E"></span>CFTC13E {{&lt; TransferCFT/componentshortname &gt;}} catalog resize (xxxx --&gt; yyyy) reached max before expansion<br/> CFTC13I Catalog resize (xxxx --&gt; yyyy) done |
@@ -15666,7 +15649,7 @@
 
 
 
-============================== table nb count(936) ============================================
+============================== table nb count(935) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTC13E"></span><span id="CFTC15I"></span>CFTC15I Deprecated command not executed BLKNUM=&amp;blknum PART=&amp;part IDT=&amp;idt : Cmd=&amp;cmd&gt;<br/> CFTC15I Deprecated command not executed BLKNUM=&amp;blknum PART=&amp;part IDT=&amp;idt : Cmd=&amp;cmd |
@@ -15676,7 +15659,7 @@
 
 
 
-============================== table nb count(937) ============================================
+============================== table nb count(936) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTC29W"></span>CFTC29W Catalog Alert fill threshold reached: level=&amp;level , id=CAT0<br/> CFTC29W Catalog Alert fill threshold reached: level=&amp;level ID=&amp;id |
@@ -15685,7 +15668,7 @@
 
 
 
-============================== table nb count(938) ============================================
+============================== table nb count(937) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTC30W"></span>CFTC30W Catalog Alert cleared: level=&amp;level, id=CAT0<br/> CFTC30W Catalog Alert cleared : level=&amp;level ID=&amp;id |
@@ -15694,7 +15677,7 @@
 
 
 
-============================== table nb count(939) ============================================
+============================== table nb count(938) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTE09I"></span>CFTE09I CFT Stop complete<br/> CFTE09I CFT stop complete _ &amp;str |
@@ -15703,7 +15686,7 @@
 
 
 
-============================== table nb count(940) ============================================
+============================== table nb count(939) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTE09I"></span>CFTE11I Node &amp;node state set to DISABLED, Shutting the Monitor<br/> CFTE11I Node &amp;node state set to DISABLED, Shutting the Monitor |
@@ -15712,7 +15695,7 @@
 
 
 
-============================== table nb count(941) ============================================
+============================== table nb count(940) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF01E"></span>CFTF01E PART=&amp;part IDF=&amp;idf IDT=&amp;idt local file [&amp;fname] creation error &amp;diagi<br/> CFTF01E local file [&amp;fname] creation error &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
@@ -15723,7 +15706,7 @@
 
 
 
-============================== table nb count(942) ============================================
+============================== table nb count(941) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF02E"></span>CFTF02E PART=&amp;part IDF=&amp;idf IDT=&amp;idt local file selection error &amp;scs<br/> CFTF02E local file selection error &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
@@ -15734,7 +15717,7 @@
 
 
 
-============================== table nb count(943) ============================================
+============================== table nb count(942) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | CFTF02W PART=&amp;part IDF=&amp;idf IDT=&amp;idt local file selection error (file not found ignored) &amp;scs<br/> CFTF02W local file selection error (file not found ignored) &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
@@ -15745,7 +15728,7 @@
 
 
 
-============================== table nb count(944) ============================================
+============================== table nb count(943) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF03E"></span>CFTF03E PART=&amp;part IDF=&amp;idf IDT=&amp;idt local file deselect error &amp;scs<br/> CFTF03E local file deselect error &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
@@ -15756,7 +15739,7 @@
 
 
 
-============================== table nb count(945) ============================================
+============================== table nb count(944) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF04E"></span>CFTF04E PART=&amp;part IDF=&amp;idf IDT=&amp;idt local file open error &amp;scs<br/> CFTF04E local file open error &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
@@ -15767,7 +15750,7 @@
 
 
 
-============================== table nb count(946) ============================================
+============================== table nb count(945) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF05E"></span>CFTF05E PART=&amp;part IDF=&amp;idf IDT=&amp;idt local file close error &amp;scs<br/> CFTF05E local file deselect error &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
@@ -15778,7 +15761,7 @@
 
 
 
-============================== table nb count(947) ============================================
+============================== table nb count(946) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF06E"></span>CFTF06E PART=&amp;part IDF=&amp;idf IDT=&amp;idt local file note error &amp;scs<br/> CFTF06E local file note error &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&lt;/p&gt; |
@@ -15789,7 +15772,7 @@
 
 
 
-============================== table nb count(948) ============================================
+============================== table nb count(947) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF07E"></span>CFTF07E PART=&amp;part IDF=&amp;idf IDT=&amp;idt local file point error &amp;scs<br/> CFTF07E local file point error &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
@@ -15800,7 +15783,7 @@
 
 
 
-============================== table nb count(949) ============================================
+============================== table nb count(948) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF08E"></span>CFTF08E PART=&amp;part IDF=&amp;idf IDT=&amp;idt local file read error &amp;scs<br/> CFTF08E local file read error &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
@@ -15811,7 +15794,7 @@
 
 
 
-============================== table nb count(950) ============================================
+============================== table nb count(949) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF09E"></span>CFTF09E PART=&amp;part IDF=&amp;idf IDT=&amp;idt local file write error &amp;scs<br/> CFTF09E local file write error &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
@@ -15822,7 +15805,7 @@
 
 
 
-============================== table nb count(951) ============================================
+============================== table nb count(950) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF13E"></span>CFTF13E PART=&amp;part IDF=&amp;idf IDT=&amp;idt remote file deselect error &amp;diagp<br/> CFTF13E remote file deselect error &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
@@ -15833,7 +15816,7 @@
 
 
 
-============================== table nb count(952) ============================================
+============================== table nb count(951) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF21E"></span>CFTF21E PART=&amp;part IDF=&amp;idf IDT=&amp;idt storage allocation error &amp;scs<br/> CFTF21E storage allocation error &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
@@ -15844,7 +15827,7 @@
 
 
 
-============================== table nb count(953) ============================================
+============================== table nb count(952) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF22E"></span>CFTF22E PART=&amp;part IDF=&amp;idf IDT=&amp;idt duplicate file &amp;diagp<br/> CFTF22E duplicate file &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
@@ -15855,7 +15838,7 @@
 
 
 
-============================== table nb count(954) ============================================
+============================== table nb count(953) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF23E"></span>CFTF23E PART=&amp;part IDF=&amp;idf IDT=&amp;idt file space allocation exhausted &amp;scs<br/> CFTF23E file space allocation exhausted &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
@@ -15866,7 +15849,7 @@
 
 
 
-============================== table nb count(955) ============================================
+============================== table nb count(954) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF24E"></span>CFTF24E PART=&amp;part IDF=&amp;idf IDT=&amp;idt duplicate working file<br/> CFTF24E duplicate working file &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -15876,7 +15859,7 @@
 
 
 
-============================== table nb count(956) ============================================
+============================== table nb count(955) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF25E"></span>CFTF25E PART=&amp;part IDF=&amp;idf IDT=&amp;idt working file rename error &amp;scs<br/> CFTF25E working file rename error &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &gt; |
@@ -15886,7 +15869,7 @@
 
 
 
-============================== table nb count(957) ============================================
+============================== table nb count(956) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF26E"></span>CFTF26E PART=&amp;part IDF=&amp;idf IDT=&amp;idt will be unable to rename working file<br/> CFTF26E will be unable to rename working file &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -15896,7 +15879,7 @@
 
 
 
-============================== table nb count(958) ============================================
+============================== table nb count(957) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF27E"></span>CFTF27E PART=part IDF=idf IDT=idt local /virtual file attribute mismatch<br/> CFTF27E local/virtual file attribute mismatch &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -15906,7 +15889,7 @@
 
 
 
-============================== table nb count(959) ============================================
+============================== table nb count(958) ============================================
 
 
 | V23 format<br/> V24 format<br/> V23 format<br/> V24 format<br/> Warning | <span id="CFTF30W"></span>CFTF30W PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagc<br/> CFTF30W +PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;str<br/> CFTF30W &amp;diagc &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &gt;<br/> CFTF30W+&amp;str &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &gt; |
@@ -15916,7 +15899,7 @@
 
 
 
-============================== table nb count(960) ============================================
+============================== table nb count(959) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | CFTF31I PART=&amp;part IDF=&amp;idf IDT=&amp;idt EXIT=&amp;id &amp;user1 changed to &amp;user2<br/> <span id="CFTF31I"></span>CFTF31I PART=&amp;idf IDF=&amp;idf IDT=&amp;idt EXIT=&amp;id &amp;user1 User id changed to &amp;user2 the user id is modified by the exit |
@@ -15925,7 +15908,7 @@
 
 
 
-============================== table nb count(961) ============================================
+============================== table nb count(960) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF32E"></span>CFTF32E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Maximum number of rename retries reached<br/> CFTF32E Maximum number of rename retries reached &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -15935,7 +15918,7 @@
 
 
 
-============================== table nb count(962) ============================================
+============================== table nb count(961) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTF33I"></span>CFTF33I PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Rename to FNAME=&amp;FNAME done<br/> CFTF33I Rename to FNAME=&amp;fname done &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -15944,7 +15927,7 @@
 
 
 
-============================== table nb count(963) ============================================
+============================== table nb count(962) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF34E"></span>CFTF34E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ WFNAME=&amp;wfname not found<br/> CFTF34E WFNAME=&amp;fname not found &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -15954,7 +15937,7 @@
 
 
 
-============================== table nb count(964) ============================================
+============================== table nb count(963) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTF35W"></span>CFTF35W PART=&amp;part IDF=&amp;idf IDT=&amp;idt Rename to FNAME=&amp;fname failed, will be retried at &amp;datetime<br/> CFTF35W Rename to FNAME=&amp;fname failed, will be retried at &amp;datetime &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -15963,7 +15946,7 @@
 
 
 
-============================== table nb count(965) ============================================
+============================== table nb count(964) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTF38E"></span>CFTF38E The file or directory &amp;fname can't be renamed into &amp;newfname for reason code &amp;reason<br/> CFTF38E The file or directory &amp;fname can't be renamed into &amp;newfname for reason code &amp;reason |
@@ -15973,7 +15956,7 @@
 
 
 
-============================== table nb count(966) ============================================
+============================== table nb count(965) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTF39E"></span>CFTF39E Missing NFNAME when executing RECV &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt;<br/> CFTF39E Missing NFNAME when executing RECV &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -15983,7 +15966,7 @@
 
 
 
-============================== table nb count(967) ============================================
+============================== table nb count(966) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTF40I"></span>CFTF40I The file &amp;fname has been removed<br/> CFTF40I The file &amp;fname has been removed |
@@ -15992,7 +15975,7 @@
 
 
 
-============================== table nb count(968) ============================================
+============================== table nb count(967) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF41E"></span>CFTF41E The file &amp;fname can't be removed for reason code &amp;reason<br/> CFTF41E The file &amp;fname can't be removed for reason code &amp;reason |
@@ -16002,7 +15985,7 @@
 
 
 
-============================== table nb count(969) ============================================
+============================== table nb count(968) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTF42I"></span>CFTF42I The directory &amp;fname has been removed<br/> CFTF42I The directory &amp;fname has been removed |
@@ -16011,7 +15994,7 @@
 
 
 
-============================== table nb count(970) ============================================
+============================== table nb count(969) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF43E"></span>CFTF43E The directory &amp;fname can't be removed for reason code &amp;reason<br/> CFTF43E The directory &amp;fname can't be removed for reason code &amp;reason |
@@ -16021,7 +16004,7 @@
 
 
 
-============================== table nb count(971) ============================================
+============================== table nb count(970) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTF43E"></span>CFTF44E The directory &amp;fname has been created<br/> CFTF44I The directory &amp;fname has been created |
@@ -16030,7 +16013,7 @@
 
 
 
-============================== table nb count(972) ============================================
+============================== table nb count(971) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTF44I"></span>CFTF44I The directory &amp;fname has been created<br/> CFTF44I The directory &amp;fname has been created |
@@ -16039,7 +16022,7 @@
 
 
 
-============================== table nb count(973) ============================================
+============================== table nb count(972) ============================================
 
 
 | V23 format<br/> V24 format<br/> V23 format<br/> V24 format<br/> Error  | <span id="CFTF46E"></span>CFTF46E Defined filename not inside WORKINGDIR &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt;<br/> CFTF46E Defined filename not inside WORKINGDIR &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt;<br/> CFTF46E+&amp;fname &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt;<br/> CFTF46E+&amp;fname &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -16049,7 +16032,7 @@
 
 
 
-============================== table nb count(974) ============================================
+============================== table nb count(973) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTF47I"></span>CFTF47I The file rights of &amp;fname have been set to &amp;frights<br/> CFTF47I The file rights of &amp;fname have been set to &amp;frights |
@@ -16058,7 +16041,7 @@
 
 
 
-============================== table nb count(975) ============================================
+============================== table nb count(974) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTF48I"></span>CFTF48I The file time of &amp;fname has been set to &amp;time<br/> CFTF48I The file time of &amp;fname has been set to &amp;time |
@@ -16067,7 +16050,7 @@
 
 
 
-============================== table nb count(976) ============================================
+============================== table nb count(975) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTF49E"></span>CFTF49E The file properties of &amp;fname can't be changed for reason code &amp;reason<br/> CFTF49E The file properties of &amp;fname can't be changed for reason code &amp;reason |
@@ -16077,7 +16060,7 @@
 
 
 
-============================== table nb count(977) ============================================
+============================== table nb count(976) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTF50I"></span>CFTF50I The file or directory &amp;fname has been renamed into &amp;newfname<br/> CFTF50I The file or directory &amp;fname has been renamed into &amp;newfname |
@@ -16086,7 +16069,7 @@
 
 
 
-============================== table nb count(978) ============================================
+============================== table nb count(977) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTF51W"></span>CFTF51W The file &amp;fname can't been archived into &amp;archivefname for reason code &amp;reason<br/> CFTF51W The &amp;fname file can't be archived as &amp;newfname due to reason code &amp;reason |
@@ -16095,7 +16078,7 @@
 
 
 
-============================== table nb count(979) ============================================
+============================== table nb count(978) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTF51W"></span><span id="CFTF52E"></span>CFTF52E The IDF &amp;idf is not allowed<br/> CFTF52E The IDF &amp;idf is not allowed |
@@ -16105,7 +16088,7 @@
 
 
 
-============================== table nb count(980) ============================================
+============================== table nb count(979) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH01E"></span>CFTH01E PART=&amp;part Context area allocation failure CS=&amp;scs<br/> CFTH01E Context area allocation failure &lt;PART=&amp;part CS=&amp;cs&gt; |
@@ -16115,7 +16098,7 @@
 
 
 
-============================== table nb count(981) ============================================
+============================== table nb count(980) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH02E"></span>CFTH02E PART=&amp;part TFIL Exchange buffer allocation failure CS=&amp;scs<br/> CFTH02E TFIL Exchange buffer allocation failure &lt;PART=&amp;part CS=&amp;cs&gt; |
@@ -16125,7 +16108,7 @@
 
 
 
-============================== table nb count(982) ============================================
+============================== table nb count(981) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH03E"></span>CFTH03E PART=&amp;part Error sending data on network NCR=&amp;ncr NCS=&amp;ncs NET=&amp;net<br/> CFTH03E Error sending data on network &lt;PART=&amp;part NCR=&amp;ncr NCS=&amp;cs NET=&amp;net&gt; |
@@ -16135,7 +16118,7 @@
 
 
 
-============================== table nb count(983) ============================================
+============================== table nb count(982) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH04E"></span>CFTH04E PART=&amp;part Mismatch between header and FPDU size<br/> CFTH04E Mismatch between header and FPDU size &lt;PART=&amp;part&gt; |
@@ -16144,7 +16127,7 @@
 
 
 
-============================== table nb count(984) ============================================
+============================== table nb count(983) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH05E"></span>CFTH05E: PART=&amp;part ,&amp;message<br/> CFTH05E &lt;PART=&amp;part &amp;message&gt; |
@@ -16154,7 +16137,7 @@
 
 
 
-============================== table nb count(985) ============================================
+============================== table nb count(984) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH06E"></span>CFTH06E PART=&amp;part Error &amp;cr while formatting FPDU<br/> CFTH06E Error &amp;cr while formatting FPDU &lt;PART=&amp;part &gt; |
@@ -16164,7 +16147,7 @@
 
 
 
-============================== table nb count(986) ============================================
+============================== table nb count(985) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH07E"></span>CFTH07E PART=&amp;part TFIL task Synchronization error CR=&amp;cr CS=&amp;scs<br/> CFTH07E TFIL task Synchronization error &lt;PART=&amp;part CR= &amp;cr CS=&amp;cs&gt; |
@@ -16174,7 +16157,7 @@
 
 
 
-============================== table nb count(987) ============================================
+============================== table nb count(986) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH08E"></span>CFTH08E PART=&amp;part Network release response error NCR=&amp;ncr NCS=&amp;ncs<br/> CFTH08E Network release response error &lt;PART=&amp;part NCR=&amp;ncr NCS=&amp;cs&gt; |
@@ -16184,7 +16167,7 @@
 
 
 
-============================== table nb count(988) ============================================
+============================== table nb count(987) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH09E"></span>CFTH09E PART=&amp;part Network connect request local error NCR=&amp;ncr NCS=&amp;ncs<br/> CFTH09E Network connect request local error &lt;PART=&amp;part NCR=&amp;ncr NCS=&amp;cs NET=&amp;net&gt; |
@@ -16193,7 +16176,7 @@
 
 
 
-============================== table nb count(989) ============================================
+============================== table nb count(988) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH10E"></span>CFTH10E PART=&amp;part Network connect reject RECOV=&amp;recov L= &amp;local R=&amp;reason D=&amp;ncs<br/> CFTH10E Network connect reject &lt;PART=&amp;part RECOV=&amp;recov L=&amp;local R=&amp;reason D=&amp;ncs NET=&amp;net&gt; |
@@ -16203,7 +16186,7 @@
 
 
 
-============================== table nb count(990) ============================================
+============================== table nb count(989) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH11E"></span>CFTH11E PART=&amp;part Error Opening session EV=&amp;pevent ST=&amp;pstate<br/> CFTH11E Error Opening session &lt;PART=&amp;part EV=&amp;pevent ST=&amp;pstate&gt; |
@@ -16213,7 +16196,7 @@
 
 
 
-============================== table nb count(991) ============================================
+============================== table nb count(990) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH12E"></span>CFTH12E PART=&amp;part Logon reject logon<br/> CFTH12E Logon reject &lt;PART=&amp;part &amp;str&gt; |
@@ -16223,7 +16206,7 @@
 
 
 
-============================== table nb count(992) ============================================
+============================== table nb count(991) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH13E"></span>CFTH13E PART=&amp;part FPDU Remote reject DIAGI=&amp;diagi DIAGP=&amp;diagp<br/> CFTH13E FPDU Remote reject &lt;PART=&amp;part DIAGI=&amp;diagi DIAGP=&amp;diagp&gt; |
@@ -16233,7 +16216,7 @@
 
 
 
-============================== table nb count(993) ============================================
+============================== table nb count(992) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH14E"></span>CFTH14E PART=&amp;part Invalid AckCONNECT FPDU &amp;str<br/> CFTH14E Invalid AckCONNECT FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16243,7 +16226,7 @@
 
 
 
-============================== table nb count(994) ============================================
+============================== table nb count(993) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH15E"></span>CFTH15E PART=&amp;part Invalid AckCREATE FPDU &amp;str<br/> CFTH15E Invalid AckCREATE FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16253,7 +16236,7 @@
 
 
 
-============================== table nb count(995) ============================================
+============================== table nb count(994) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH16E"></span>CFTH16E PART=&amp;part Invalid AckWRITE FPDU &amp;str<br/> CFTH16E Invalid AckWRITE FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16263,7 +16246,7 @@
 
 
 
-============================== table nb count(996) ============================================
+============================== table nb count(995) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH17E"></span>CFTH17E PART=&amp;part Invalid Check Point acknowledge &amp;n<br/> CFTH17E Invalid Check Point acknowledge &lt;PART=&amp;part &amp;n&gt; |
@@ -16272,7 +16255,7 @@
 
 
 
-============================== table nb count(997) ============================================
+============================== table nb count(996) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH18E"></span>CFTH18E Incoming call reject error NCR=&amp;ncr NCS=&amp;ncs NET=&amp;net<br/> CFTH18E Incoming call reject error &lt;NCR=&amp;ncr NCS=&amp;cs NET=&amp;net&gt; |
@@ -16282,7 +16265,7 @@
 
 
 
-============================== table nb count(998) ============================================
+============================== table nb count(997) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH19E"></span>CFTH19E Incoming call accept error NCR=&amp;ncr NCS=&amp;ncs NET=&amp;net<br/> CFTH19E Incoming call accept error &lt;NCR=&amp;ncr NCS=&amp;cs NET=&amp;net&gt; |
@@ -16292,7 +16275,7 @@
 
 
 
-============================== table nb count(999) ============================================
+============================== table nb count(998) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH20E"></span>CFTH20E Invalid CONNECT FPDU &amp;str<br/> CFTH20E Invalid CONNECT FPDU &lt;&amp;str&gt; |
@@ -16302,7 +16285,7 @@
 
 
 
-============================== table nb count(1000) ============================================
+============================== table nb count(999) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH21E"></span>CFTH21E PART=&amp;part MAIN task Synchronization error CR=&amp;cr CS=&amp;scs<br/> CFTH21E MAIN task Synchronization error &lt;PART=&amp;part CR= &amp;cr CS=&amp;cs&gt; |
@@ -16311,7 +16294,7 @@
 
 
 
-============================== table nb count(1001) ============================================
+============================== table nb count(1000) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH22E"></span>CFTH22E PART=&amp;part rejected DIAGI=&amp;diagi &lt;HOST=&amp;addr&gt;<br/> CFTH22E NPART=&amp;part rejected DIAGI=&amp;diagi &lt;HOST=&amp;pstate&gt; |
@@ -16321,7 +16304,7 @@
 
 
 
-============================== table nb count(1002) ============================================
+============================== table nb count(1001) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH23E"></span>CFTH23E NPART=&amp;part rejected EVENT=&amp;pevent<br/> CFTH23E PART=&amp;part rejected EVENT=&amp;pevent |
@@ -16331,7 +16314,7 @@
 
 
 
-============================== table nb count(1003) ============================================
+============================== table nb count(1002) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH24E"></span>CFTH24E PART=&amp;part Invalid CREATE FPDU &amp;str<br/> CFTH24E Invalid CREATE FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16341,7 +16324,7 @@
 
 
 
-============================== table nb count(1004) ============================================
+============================== table nb count(1003) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTH25I"></span>CFTH25I PART=&amp;part Concatenation area allocation failure CS=&amp;scs<br/> CFTH25I Concatenation area allocation failure &lt;PART=&amp;part CS=&amp;cs&gt; |
@@ -16351,7 +16334,7 @@
 
 
 
-============================== table nb count(1005) ============================================
+============================== table nb count(1004) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH26E"></span>CFTH26E PART=&amp;part Too many data without synchronization<br/> CFTH26E Too many data without synchronization &lt;PART=&amp;part&gt; |
@@ -16361,7 +16344,7 @@
 
 
 
-============================== table nb count(1006) ============================================
+============================== table nb count(1005) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH27E"></span>CFTH27E PART=&amp;part SYNC FPDU without synchronization<br/> CFTH27E SYNC FPDU without synchronization &lt;PART=&amp;part&gt; |
@@ -16371,7 +16354,7 @@
 
 
 
-============================== table nb count(1007) ============================================
+============================== table nb count(1006) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH28E"></span>CFTH28E PART=&amp;part Invalid Checkpoint n<br/> CFTH28E Invalid Chekpoint &lt;PART=&amp;part &amp;n&gt; |
@@ -16381,7 +16364,7 @@
 
 
 
-============================== table nb count(1008) ============================================
+============================== table nb count(1007) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH29E"></span>CFTH29E PART=&amp;part Invalid FPDU RC=&amp;n<br/> CFTH29E Invalid FPDU RC=&amp;rc Incoming call address= &amp;str &lt;PART=&amp;part&gt; |
@@ -16391,7 +16374,7 @@
 
 
 
-============================== table nb count(1009) ============================================
+============================== table nb count(1008) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH30E"></span>CFTH30E PART=&amp;part Invalid AckORF FPDU &amp;str<br/> CFTH30E Invalid AckORF FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16401,7 +16384,7 @@
 
 
 
-============================== table nb count(1010) ============================================
+============================== table nb count(1009) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH31E"></span>CFTH31E PART=&amp;part Invalid AckTRANS.END FPDU &amp;str<br/> CFTH31E Invalid AckTRANS.END FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16411,7 +16394,7 @@
 
 
 
-============================== table nb count(1011) ============================================
+============================== table nb count(1010) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH32E"></span>CFTH32E PART=&amp;part Invalid AckMESSAGE FPDU &amp;str<br/> CFTH32E Invalid AckMESSAGE FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16421,7 +16404,7 @@
 
 
 
-============================== table nb count(1012) ============================================
+============================== table nb count(1011) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH33E"></span>CFTH33E PART=&amp;part Invalid AckSELECT FPDU &amp;str<br/> CFTH33E Invalid AckSELECT FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16431,7 +16414,7 @@
 
 
 
-============================== table nb count(1013) ============================================
+============================== table nb count(1012) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH34E"></span>CFTH34E PART=&amp;part Invalid ORF FPDU &amp;str<br/> CFTH34E Invalid ORF FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16441,7 +16424,7 @@
 
 
 
-============================== table nb count(1014) ============================================
+============================== table nb count(1013) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH35E"></span>CFTH35E PART=&amp;part Invalid TRANS.END FPDU &amp;str<br/> CFTH35E Invalid TRANS.END FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16451,7 +16434,7 @@
 
 
 
-============================== table nb count(1015) ============================================
+============================== table nb count(1014) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH36E"></span>CFTH36E PART=&amp;part Invalid MESSAGE FPDU &amp;str<br/> CFTH36E Invalid MESSAGE FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16461,7 +16444,7 @@
 
 
 
-============================== table nb count(1016) ============================================
+============================== table nb count(1015) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH37E"></span>CFTH37E PART=&amp;part Invalid D.MESSAGE FPDU &amp;str<br/> CFTH37E Invalid D.MESSAGE FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16471,7 +16454,7 @@
 
 
 
-============================== table nb count(1017) ============================================
+============================== table nb count(1016) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH38E"></span>CFTH38E PART=&amp;part Invalid READ FPDU &amp;str<br/> CFTH38E Invalid READ FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16481,7 +16464,7 @@
 
 
 
-============================== table nb count(1018) ============================================
+============================== table nb count(1017) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH39E"></span>CFTH39E PART=&amp;part Invalid SELECT FPDU &amp;str<br/> CFTH39E Invalid SELECT FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16491,7 +16474,7 @@
 
 
 
-============================== table nb count(1019) ============================================
+============================== table nb count(1018) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH40E"></span>CFTH40E PART=&amp;part Invalid DTF FPDU (MULTART)<br/> CFTH40E Invalid DTF FPDU (MULTART) &lt;PART=&amp;part&gt; |
@@ -16501,7 +16484,7 @@
 
 
 
-============================== table nb count(1020) ============================================
+============================== table nb count(1019) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH41E"></span>CFTH41E PART=&amp;part Invalid DTF.END FPDU &amp;str<br/> CFTH41E Invalid DTF.END FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16511,7 +16494,7 @@
 
 
 
-============================== table nb count(1021) ============================================
+============================== table nb count(1020) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH42E"></span>CFTH42E PART=&amp;part Invalid SYNC FPDU &amp;str<br/> CFTH42E Invalid SYNC FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16521,7 +16504,7 @@
 
 
 
-============================== table nb count(1022) ============================================
+============================== table nb count(1021) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH43E"></span>CFTH43E PART=&amp;part Invalid AckSYNC FPDU &amp;str<br/> CFTH43E Invalid AckSYNC FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16531,7 +16514,7 @@
 
 
 
-============================== table nb count(1023) ============================================
+============================== table nb count(1022) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH44E"></span>CFTH44E PART=&amp;part Invalid IDT FPDU &amp;str<br/> CFTH44E Invalid IDT FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16541,7 +16524,7 @@
 
 
 
-============================== table nb count(1024) ============================================
+============================== table nb count(1023) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH45E"></span>CFTH45E PART=&amp;part Invalid AckIDT FPDU &amp;str<br/> CFTH45E Invalid AckIDT FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16551,7 +16534,7 @@
 
 
 
-============================== table nb count(1025) ============================================
+============================== table nb count(1024) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH46E"></span>CFTH46E PART=&amp;part Invalid RESYNC FPDU &amp;str<br/> CFTH46E Invalid RESYNC FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16561,7 +16544,7 @@
 
 
 
-============================== table nb count(1026) ============================================
+============================== table nb count(1025) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH47E"></span>CFTH47E PART=&amp;part Invalid DESELECT FPDU &amp;str<br/> CFTH47E Invalid DESELECT FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16571,7 +16554,7 @@
 
 
 
-============================== table nb count(1027) ============================================
+============================== table nb count(1026) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH48E"></span>CFTH48E PART=&amp;part Invalid DESELECT FPDU &amp;str<br/> CFTH48E Invalid AckREAD FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16581,7 +16564,7 @@
 
 
 
-============================== table nb count(1028) ============================================
+============================== table nb count(1027) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH49E"></span>CFTH49E PART=&amp;part Invalid WRITE FPDU &amp;str<br/> CFTH49E Invalid WRITE FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16591,7 +16574,7 @@
 
 
 
-============================== table nb count(1029) ============================================
+============================== table nb count(1028) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH50E"></span>CFTH50E PART=&amp;part Invalid M.MESSAGE FPDU &amp;str<br/> CFTH50E Invalid M.MESSAGE FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16601,7 +16584,7 @@
 
 
 
-============================== table nb count(1030) ============================================
+============================== table nb count(1029) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH51E"></span>CFTH51E PART=&amp;part Invalid F.MESSAGE FPDU &amp;str<br/> CFTH51E Invalid F.MESSAGE FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16611,7 +16594,7 @@
 
 
 
-============================== table nb count(1031) ============================================
+============================== table nb count(1030) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH52E"></span>CFTH52E PART=&amp;part Invalid AckCLOSE FPDU &amp;str<br/> CFTH52E Invalid AckCLOSE FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16621,7 +16604,7 @@
 
 
 
-============================== table nb count(1032) ============================================
+============================== table nb count(1031) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH53E"></span>CFTH53E PART=&amp;part Invalid AckDESELECT FPDU &amp;str<br/> CFTH53E Invalid AckDESELECT FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16631,7 +16614,7 @@
 
 
 
-============================== table nb count(1033) ============================================
+============================== table nb count(1032) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH54E"></span>CFTH54E PART=&amp;part Invalid CLOSE FPDU &amp;str<br/> CFTH54E Invalid CLOSE FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16641,7 +16624,7 @@
 
 
 
-============================== table nb count(1034) ============================================
+============================== table nb count(1033) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH55E"></span>CFTH55E PART=&amp;part Invalid DTF FPDU &amp;str<br/> CFTH55E Invalid DTF FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16651,7 +16634,7 @@
 
 
 
-============================== table nb count(1035) ============================================
+============================== table nb count(1034) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTH56I"></span>CFTH56I PART=&amp;part IDS=&amp;ids &amp;prot &amp;str session opened pi7=&amp;n:&amp;n HOST=&amp;pstate &amp;prot<br/> CFTH56I &amp;prot &amp;str session opened &lt;PART=&amp;part IDS=&amp;ids pi7=&amp;n:&amp;n HOST=&amp;pstate&gt; &amp;prot |
@@ -16660,7 +16643,7 @@
 
 
 
-============================== table nb count(1036) ============================================
+============================== table nb count(1035) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTH57I"></span>CFTH57I PART=&amp;part IDS=&amp;ids IDF=&amp;idf IDT=&amp;idt transfer selected pi25=&amp;n<br/> CFTH57I transfer selected PART=&amp;part IDS=&amp;ids IDF=&amp;idf IDT=&amp;idt pi25=&amp;n |
@@ -16669,7 +16652,7 @@
 
 
 
-============================== table nb count(1037) ============================================
+============================== table nb count(1036) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTH58I"></span>CFTH58I PART=&amp;part IDS=&amp;ids IDF=&amp;idf NIDT=&amp;idt transfer deselected T=&amp;n<br/> CFTH58I transfer deselected &lt;PART=&amp;part IDS=&amp;ids IDF=&amp;idf NIDT=&amp;idt T=&amp;n&gt; |
@@ -16678,7 +16661,7 @@
 
 
 
-============================== table nb count(1038) ============================================
+============================== table nb count(1037) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTH59I"></span>CFTH59I PART=&amp;part IDS=&amp;ids IDM=&amp;idm NIDT=&amp;idt message transferred<br/> CFTH59I message transferred PART=&amp;part IDS=&amp;ids IDM=&amp;idm NIDT=&amp;idt |
@@ -16687,7 +16670,7 @@
 
 
 
-============================== table nb count(1039) ============================================
+============================== table nb count(1038) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTH60I"></span>CFTH60I PART=&amp;part IDS=&amp;ids IDM=&amp;idm NIDT=&amp;idt [Reply | Nack] transferred<br/> CFTH60I [Reply | Nack] transferred PART=&amp;part IDS=&amp;ids IDM=&amp;idm NIDT=&amp;idt |
@@ -16696,7 +16679,7 @@
 
 
 
-============================== table nb count(1040) ============================================
+============================== table nb count(1039) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTH61I"></span>CFTH61I PART=&amp;part IDS=&amp;ids ["Requester"|"Server"] &amp;ref session closed &amp;prot<br/> CFTH61I &amp;prot ["Requester"|"Server"] session closed &lt;PART=&amp;part IDS=&amp;ids&gt; &amp;prot |
@@ -16705,7 +16688,7 @@
 
 
 
-============================== table nb count(1041) ============================================
+============================== table nb count(1040) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTH62I"></span>CFTH62I REF=&amp;ref<br/> CFTH62I REF=&amp;ref |
@@ -16714,7 +16697,7 @@
 
 
 
-============================== table nb count(1042) ============================================
+============================== table nb count(1041) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTH63I"></span>CFTH63I PART=&amp;part IDS=&amp;ids PESIT DMZ session for messages only<br/> CFTH63I PESIT DMZ session for messages only &lt;PART=&amp;part IDS=&amp;ids&gt; |
@@ -16723,7 +16706,7 @@
 
 
 
-============================== table nb count(1043) ============================================
+============================== table nb count(1042) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTH64I"></span>CFTH64I PESIT session rejected L=&amp;reason R=&amp;diag<br/> CFTH64I PESIT session rejected L=&amp;local R=&amp;reason |
@@ -16732,7 +16715,7 @@
 
 
 
-============================== table nb count(1044) ============================================
+============================== table nb count(1043) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTH65I"></span>CFTH65I PART=&amp;part IDS=&amp;ids PESIT DMZ permanent session control call=&amp;n<br/> CFTH65I PESIT DMZ permanent session control call=&amp;n &lt;PART=&amp;part IDS=&amp;ids &gt; |
@@ -16741,7 +16724,7 @@
 
 
 
-============================== table nb count(1045) ============================================
+============================== table nb count(1044) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH66E"></span>CFTH66E Incoming calls (&amp;count) rejected, ERROR=&amp;error (&amp;info1|&amp;info2), PROTOCOL=&amp;protocol<br/> CFTH66E Incoming calls (&amp;count) rejected, ERROR=&amp;error (&amp;info1|&amp;info2), PROTOCOL=&amp;protocol |
@@ -16750,7 +16733,7 @@
 
 
 
-============================== table nb count(1046) ============================================
+============================== table nb count(1045) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTI00I"></span>CFTI00I Snumb of spawned procedure is &amp;str1:&amp;str2<br/> CFTI00I Snumb of spawned procedure is &amp;str1:&amp;str2 |
@@ -16759,12 +16742,12 @@
 
 
 
-============================== table nb count(1047) ============================================
+============================== table nb count(1046) ============================================
 
 
 | V23 format<br/> V24 format<br/> Fatal | <span id="CFTI01F"></span>CFTI01F &amp;str <br/> CFTI01F &amp;str  |
 | --- | --- |
-| Explanation | Internal {{&lt; TransferCFT/componentshortname &gt;}} execution error.<br/> The field "&amp;str" can have the following values:<br/> • CFT error &amp;scs:{{&lt; TransferCFT/componentshortname &gt;}} inter-task communication system problem (waiting for the CFTMAIN scheduler task queue)<br/> • CFT error _ usage expired:The {{&lt; TransferCFT/componentshortname &gt;}} user key (CFTPARM KEY) does not authorize {{&lt; TransferCFT/componentshortname &gt;}} execution beyond the expired period<br/> • CFT error _ CFT usage not authorized:The {{&lt; TransferCFT/componentshortname &gt;}} user key (CFTPARM KEY) does not authorize {{&lt; TransferCFT/componentshortname &gt;}} execution on this operating system or computer<br/> • CFT error _ file keys not available: The {{&lt; TransferCFT/componentshortname &gt;}} user keys are stored in an indirection file (CFTPARM KEY parameter); this file cannot be accessed by {{&lt; TransferCFT/componentshortname &gt;}}<br/> • CFT error &amp;scs _ Common_area allocation failed:Definition of the memory area common to the {{&lt; TransferCFT/componentshortname &gt;}} tasks has failed. This can be caused by insufficient memory<br/> • CFT error &amp;scs _ Mailbox definition failed: {{&lt; TransferCFT/componentshortname &gt;}} is unable to link to a mailbox defined by the *CFTOM command<br/> • CFT error &amp;scs _ CFT semaphore definition failed:{{&lt; TransferCFT/componentshortname &gt;}} is unable to define an inter-task communications queue<br/> • CFT error _ CFTEXIT ID=&amp;id missing: A {{&lt; TransferCFT/componentshortname &gt;}} task dedicated to file EXITs could not be activated (the CFTEXIT command relating to the identifier mentioned (ID) was not found)<br/> • CFT error _ Maximum process CFTEXIT running reached: A {{&lt; TransferCFT/componentshortname &gt;}} task dedicated to file EXITs could not be activated (the maximum number of EXIT processes that can be activated has already been reached)<br/> • CFT error &amp;cs _ Initializing process CFTEXIT: A {{&lt; TransferCFT/componentshortname &gt;}} task dedicated to file EXITs could not be activated (the maximum number of EXIT processes that can be activated has already been reached)<br/> • CFT error _ &amp;Net Network Access Method Option not authorized by license key:The {{&lt; TransferCFT/componentshortname &gt;}} is NOT authorized to use the optional network access method designated by &amp;Net (TCP/IP).<br/> • CFT error _ SSL Protocol Option not authorized by license key:A protocol defined in the CFTPARM object uses the SSL option, but the SSL option is not available with this license key.<br/> • CFT error _ FIPS Compliance Option not authorized by license key:The uconf:cft.fips.enable_compliance parameter is set to Yes, but the FIPS option is not available with this license key.<br/> • CFT error _ File Transfer Acceleration Option not authorized by license key:The uconf:acceleration.enable parameter is set to Yes, but the acceleration option is not available with this license key. |
+| Explanation | Internal {{&lt; TransferCFT/componentshortname &gt;}} execution error.<br/> The field "&amp;str" can have the following values:<br/> • CFT error &amp;scs:{{&lt; TransferCFT/componentshortname &gt;}} inter-task communication system problem (waiting for the CFTMAIN scheduler task queue)<br/> • CFT error _ usage expired:The {{&lt; TransferCFT/componentshortname &gt;}} user key (CFTPARM KEY) does not authorize {{&lt; TransferCFT/componentshortname &gt;}} execution beyond the expired period<br/> • CFT error _ CFT usage not authorized:The {{&lt; TransferCFT/componentshortname &gt;}} user key (CFTPARM KEY) does not authorize {{&lt; TransferCFT/componentshortname &gt;}} execution on this operating system or computer<br/> • CFT error _ file keys not available: The {{&lt; TransferCFT/componentshortname &gt;}} user keys are stored in an indirection file (CFTPARM KEY parameter); this file cannot be accessed by {{&lt; TransferCFT/componentshortname &gt;}}<br/> • CFT error &amp;scs _ Common_area allocation failed:Definition of the memory area common to the {{&lt; TransferCFT/componentshortname &gt;}} tasks has failed. This can be caused by insufficient memory<br/> • CFT error &amp;scs _ Mailbox definition failed: {{&lt; TransferCFT/componentshortname &gt;}} is unable to link to a mailbox defined by the *CFTOM command<br/> • CFT error &amp;scs _ CFT semaphore definition failed:{{&lt; TransferCFT/componentshortname &gt;}} is unable to define an inter-task communications queue<br/> • CFT error _ CFTEXIT ID=&amp;id missing: A {{&lt; TransferCFT/componentshortname &gt;}} task dedicated to file EXITs could not be activated (the CFTEXIT command relating to the identifier mentioned (ID) was not found)<br/> • CFT error _ Maximum process CFTEXIT running reached: A {{&lt; TransferCFT/componentshortname &gt;}} task dedicated to file EXITs could not be activated (the maximum number of EXIT processes that can be activated has already been reached)<br/> • CFT error &amp;cs _ Initializing process CFTEXIT: A {{&lt; TransferCFT/componentshortname &gt;}} task dedicated to file EXITs could not be activated (the maximum number of EXIT processes that can be activated has already been reached) |
 | Consequence | The transfer concerned by the incident is interrupted, which is the K status. |
 | Action | Check parameter settings, analyze the &amp;cs code value to determine, if necessary, the origin of the error:<br/> • CFT error &amp;scs _ LOG stop failed: The message logging task cannot be stopped<br/> • CFT error &amp;scs _ mailbox delete failed: A mailbox defined by a CFTCOM command cannot be deleted |
 | Consequence | The Transfer CFT initialization phase has stopped. |
@@ -16772,7 +16755,7 @@
 
 
 
-============================== table nb count(1048) ============================================
+============================== table nb count(1047) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTI01W"></span>CFTI01W &amp;str<br/> CFTI01W &amp;str  |
@@ -16783,7 +16766,7 @@
 
 
 
-============================== table nb count(1049) ============================================
+============================== table nb count(1048) ============================================
 
 
 | V23 format<br/> V24 format<br/> Fatal | <span id="CFTI02F"></span>CFTI02F Init Error code &amp;scs _ Allocating param. file &amp;fname<br/> CFTI02F Init Error code &amp;scs _ Allocating param. file &amp;fname |
@@ -16794,7 +16777,7 @@
 
 
 
-============================== table nb count(1050) ============================================
+============================== table nb count(1049) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI03F"></span>CFTI03F Init Error code &amp;scs _ Opening param. file &amp;fname<br/> CFTI03F Init Error code &amp;scs _ Opening param. file &amp;fname |
@@ -16805,7 +16788,7 @@
 
 
 
-============================== table nb count(1051) ============================================
+============================== table nb count(1050) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI04F"></span>CFTI04F Init Error code &amp;scs _ Allocating partners file &amp;fname<br/> CFTI04F Init Error code &amp;scs _ Allocating partners file &amp;fname |
@@ -16816,7 +16799,7 @@
 
 
 
-============================== table nb count(1052) ============================================
+============================== table nb count(1051) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI05F"></span>CFTI05F Init Error code &amp;scs _ Opening partners file &amp;fname<br/> CFTI05F Init Error code &amp;scs _ Opening partners file &amp;fname |
@@ -16827,7 +16810,7 @@
 
 
 
-============================== table nb count(1053) ============================================
+============================== table nb count(1052) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI06F"></span>CFTI06F Init Error code &amp;scs _ Allocating catalog file &amp;fname<br/> CFTI06F Init Error code &amp;scs _ Allocating catalog file &amp;fname |
@@ -16838,7 +16821,7 @@
 
 
 
-============================== table nb count(1054) ============================================
+============================== table nb count(1053) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI08F"></span>CFTI08F Init error _ Protocol process<br/> CFTI08F Init error _ Protocol process |
@@ -16849,7 +16832,7 @@
 
 
 
-============================== table nb count(1055) ============================================
+============================== table nb count(1054) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI09F"></span>CFTI09F Init error _ Communication process<br/> CFTI09F Init error _ Communication process |
@@ -16860,7 +16843,7 @@
 
 
 
-============================== table nb count(1056) ============================================
+============================== table nb count(1055) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI10F"></span>CFTI10F Init error _ Logger process<br/> CFTI10F Init error _ Logger process |
@@ -16871,7 +16854,7 @@
 
 
 
-============================== table nb count(1057) ============================================
+============================== table nb count(1056) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTI11I"></span>CFTI11I Init complete _ Logger process<br/> CFTI11I Init complete _ Logger process |
@@ -16880,7 +16863,7 @@
 
 
 
-============================== table nb count(1058) ============================================
+============================== table nb count(1057) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTI12I"></span>CFTI12I Init complete _ Protocol process<br/> CFTI12I Init complete _ Protocol process |
@@ -16889,7 +16872,7 @@
 
 
 
-============================== table nb count(1059) ============================================
+============================== table nb count(1058) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTI13I"></span>CFTI13I Init complete _ Communication process<br/> CFTI13I Init complete _ Communication process |
@@ -16898,7 +16881,7 @@
 
 
 
-============================== table nb count(1060) ============================================
+============================== table nb count(1059) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI14I"></span>CFTI14I CFT Init complete<br/> CFTI14I CFT Init complete |
@@ -16907,7 +16890,7 @@
 
 
 
-============================== table nb count(1061) ============================================
+============================== table nb count(1060) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI15F"></span>CFTI15F Error code &amp;ncs _ Trying to define resource &amp;id<br/> CFTI15F Error code &amp;ncs _ Trying to define resource &amp;id |
@@ -16918,7 +16901,7 @@
 
 
 
-============================== table nb count(1062) ============================================
+============================== table nb count(1061) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI16F"></span>CFTI16F Error code &amp;ncs _ Register request<br/> CFTI16F Error code &amp;ncs _ Register request |
@@ -16929,7 +16912,7 @@
 
 
 
-============================== table nb count(1063) ============================================
+============================== table nb count(1062) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI17F"></span>CFTI17F Init error _ Account file &amp;fname<br/> CFTI17F Init error _ Account file &amp;fname |
@@ -16940,7 +16923,7 @@
 
 
 
-============================== table nb count(1064) ============================================
+============================== table nb count(1063) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI18I"></span>CFTI18I _ &amp;str<br/> CFTI18I _ &amp;str |
@@ -16950,7 +16933,7 @@
 
 
 
-============================== table nb count(1065) ============================================
+============================== table nb count(1064) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTI18W"></span>CFTI18W+ Version mismatch between Transfer &amp;CFTVersion and the UCONF dictionary &amp;UCONFVersion<br/> CFTI18W+ Version mismatch between Transfer &amp;CFTVersion and the UCONF dictionary &amp;UCONFVersion<span id="CFTI19I"></span> |
@@ -16961,7 +16944,7 @@
 
 
 
-============================== table nb count(1066) ============================================
+============================== table nb count(1065) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTI19I"></span>CFTI19I © Copyright AXWAY,....<br/> CFTI19I © Copyright AXWAY,.... |
@@ -16970,7 +16953,7 @@
 
 
 
-============================== table nb count(1067) ============================================
+============================== table nb count(1066) ============================================
 
 
 | V23 format<br/> V24 format<br/> Fatal | <span id="CFTI20F"></span>CFTI20F Semaphore definition failure CR=&amp;cr CS= &amp;scs<br/> CFTI20F Semaphore definition failure CR=&amp;cr CS= &amp;scs |
@@ -16980,7 +16963,7 @@
 
 
 
-============================== table nb count(1068) ============================================
+============================== table nb count(1067) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI21F"></span>CFTI21F CFTNET=&amp;id Resource define failure CS=&amp;ncs<br/> CFTI21F CFTNET=&amp;id Resource define failure CS=&amp;ncs |
@@ -16990,7 +16973,7 @@
 
 
 
-============================== table nb count(1069) ============================================
+============================== table nb count(1068) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI22F"></span>CFTI22F CFTPROT=&amp;id Register request failure CS=&amp;ncs<br/> CFTI22F CFTPROT=&amp;id Register request failure CS=&amp;ncs |
@@ -17000,7 +16983,7 @@
 
 
 
-============================== table nb count(1070) ============================================
+============================== table nb count(1069) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI23F"></span>CFTI23F MAIN synchronization failure CR=&amp;cr CS=&amp;scs<br/> CFTI23F MAIN synchronization failure CR=&amp;cr CS=&amp;scs |
@@ -17010,7 +16993,7 @@
 
 
 
-============================== table nb count(1071) ============================================
+============================== table nb count(1070) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTI24I"></span>CFTI24I &amp;str<br/> CFTI24I &amp;str |
@@ -17019,7 +17002,7 @@
 
 
 
-============================== table nb count(1072) ============================================
+============================== table nb count(1071) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI25I"></span>CFTI25I Init complete _ Security active [&amp;str]<br/> CFTI25I Init complete _ Security active [&amp;str] |
@@ -17028,7 +17011,7 @@
 
 
 
-============================== table nb count(1073) ============================================
+============================== table nb count(1072) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI26I"></span>CFTI26I Init complete _ Security not active<br/> CFTI26I Init complete _ Security not active |
@@ -17037,7 +17020,7 @@
 
 
 
-============================== table nb count(1074) ============================================
+============================== table nb count(1073) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI27F"></span>CFTI27F Init Error code &amp;scs _ Opening security file &amp;file<br/> CFTI27F Init Error code &amp;scs _ Opening security file &amp;file |
@@ -17048,7 +17031,7 @@
 
 
 
-============================== table nb count(1075) ============================================
+============================== table nb count(1074) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI28I"></span>CFTI28I Init complete <br/> CFTI28I Init complete |
@@ -17057,7 +17040,7 @@
 
 
 
-============================== table nb count(1076) ============================================
+============================== table nb count(1075) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI34I"></span>CFTI34I PID=&amp;id &amp;task Task started successfully<br/> CFTI34I PID=&amp;id &amp;task Task started successfully |
@@ -17066,7 +17049,7 @@
 
 
 
-============================== table nb count(1077) ============================================
+============================== table nb count(1076) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI35I"></span>CFTI35I PID=&amp;id &amp;task Task ended<br/> CFTI35I PID=&amp;id &amp;task Task ended |
@@ -17075,7 +17058,7 @@
 
 
 
-============================== table nb count(1078) ============================================
+============================== table nb count(1077) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI36I"></span>CFTI36I CRONJOB: ID=&amp;idcron, CRONTAB=&amp;cronname &amp;str<br/> CFTI36I CRONJOB: ID=&amp;idcron, CRONTAB=&amp;cronname &amp;str |
@@ -17084,7 +17067,7 @@
 
 
 
-============================== table nb count(1079) ============================================
+============================== table nb count(1078) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTI38E"></span>CFTI38E CRONJOB: ID=&amp;idcron, CRONTAB=&amp;cronname INSERT FAILED<br/> CFTI38E CRONJOB: ID=&amp;idcron, CRONTAB=&amp;cronname INSERT FAILED |
@@ -17093,7 +17076,7 @@
 
 
 
-============================== table nb count(1080) ============================================
+============================== table nb count(1079) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI39I"></span>CFTI39I &amp;str<br/> CFTI39I &amp;str |
@@ -17102,7 +17085,7 @@
 
 
 
-============================== table nb count(1081) ============================================
+============================== table nb count(1080) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTI40E"></span>CFTI40E OMVS SEGMENT NOT DEFINED for user=xxxxxx<br/> CFTI40E OMVS SEGMENT NOT DEFINED for user=xxxxxx |
@@ -17111,7 +17094,7 @@
 
 
 
-============================== table nb count(1082) ============================================
+============================== table nb count(1081) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI41I"></span>CFTI41I OMVS information for user=xxxxxx,uid=n,gid=n,home=(/xxxxx)<br/> CFTI41I OMVS information for user=xxxxxx,uid=n,gid=n,home=(/xxxxx) |
@@ -17120,7 +17103,7 @@
 
 
 
-============================== table nb count(1083) ============================================
+============================== table nb count(1082) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTI42E"></span>CFTI42E PID=&amp;pid &amp;task Task startup error failed to lock resource '&amp;pid_file_name': resource already locked<br/> CFTI42E PID=&amp;pid &amp;task Task startup error failed to lock resource '&amp;pid_file_name': resource already locked |
@@ -17129,7 +17112,7 @@
 
 
 
-============================== table nb count(1084) ============================================
+============================== table nb count(1083) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI42E"></span><span id="CFTI43I"></span>CFTI43I Attention: The Transfer CFT license expires in n days<br/> CFTI43I Attention: The Transfer CFT license expires in n days |
@@ -17139,7 +17122,7 @@
 
 
 
-============================== table nb count(1085) ============================================
+============================== table nb count(1084) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTI42E"></span><span id="CFTI43W"></span>CFTI43W Attention: The Transfer CFT license expires in n days<br/> CFTI43W Attention: The Transfer CFT license expires in n days |
@@ -17149,7 +17132,7 @@
 
 
 
-============================== table nb count(1086) ============================================
+============================== table nb count(1085) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTI42E"></span><span id="CFTI43E"></span>CFTI43E Attention: The Transfer CFT license has expired<br/> CFTI43E Attention: The Transfer CFT license has expired |
@@ -17159,7 +17142,7 @@
 
 
 
-============================== table nb count(1087) ============================================
+============================== table nb count(1086) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning  | CFTI18W Version mismatch between Transfer CFT &amp;CFTVersion and the UCONF dictionary &amp;UCONFVersion<br/> CFTI18W Version mismatch between Transfer CFT &amp;CFTVersion and the UCONF dictionary &amp;UCONFVersion |
@@ -17170,7 +17153,7 @@
 
 
 
-============================== table nb count(1088) ============================================
+============================== table nb count(1087) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS39E"></span><br/> CFTI40E OMVS SEGMENT NOT DEFINED for user=xxxxxx<br/> CFTI40E OMVS SEGMENT NOT DEFINED for user=xxxxxx |
@@ -17179,7 +17162,7 @@
 
 
 
-============================== table nb count(1089) ============================================
+============================== table nb count(1088) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTN01I"></span>CFTN01I NET=&amp;net started<br/> CFTN01I NET=&amp;net started |
@@ -17188,7 +17171,7 @@
 
 
 
-============================== table nb count(1090) ============================================
+============================== table nb count(1089) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTN02I"></span>CFTN02I NET=&amp;net PROTOCOL=&amp;prot started<br/> CFTN02I NET=&amp;net PROTOCOL=&amp;prot started |
@@ -17197,7 +17180,7 @@
 
 
 
-============================== table nb count(1091) ============================================
+============================== table nb count(1090) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTN03E"></span>CFTN03E Error creating SSL task &amp;str<br/> CFTN03E Error creating SSL task &amp;str |
@@ -17208,7 +17191,7 @@
 
 
 
-============================== table nb count(1092) ============================================
+============================== table nb count(1091) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTN04E"></span>CFTN04E Synchronization error (&amp;str) SSLTID=&amp;pid CR=&amp;cr CS=&amp;scs<br/> CFTN04E Synchronization error (&amp;str) SSLTID=&amp;pid _ CR= &amp;cr CS=&amp;cs |
@@ -17217,7 +17200,7 @@
 
 
 
-============================== table nb count(1093) ============================================
+============================== table nb count(1092) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTN05I"></span>CFTN05I &amp;message<br/> CFTN05I Network resource depletion prevention enabled for class &amp;n |
@@ -17226,7 +17209,7 @@
 
 
 
-============================== table nb count(1094) ============================================
+============================== table nb count(1093) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTN05E"></span>CFTN05E &amp;message<br/> CFTN05E &amp;message |
@@ -17237,7 +17220,7 @@
 
 
 
-============================== table nb count(1095) ============================================
+============================== table nb count(1094) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTN05W"></span>CFTN05W &amp;message<br/> CFTN05W &amp;message |
@@ -17246,7 +17229,7 @@
 
 
 
-============================== table nb count(1096) ============================================
+============================== table nb count(1095) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTN05W"></span><span id="CFTN06I"></span>CFTN06I No network class suitable for resource depletion prevention activation<br/> CFTN06I No network class suitable for resource depletion prevention activation |
@@ -17255,7 +17238,7 @@
 
 
 
-============================== table nb count(1097) ============================================
+============================== table nb count(1096) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTN08E"></span>CFTN08E SFTP bind() failed on address &amp;address and port &amp;port: Only one usage of each socket address (protocol/network address/port) is normally permitted<br/> CFTN08E SFTP bind() failed on address &amp;address and port &amp;port: Only one usage of each socket address (protocol/network address/port) is normally permitted |
@@ -17264,7 +17247,7 @@
 
 
 
-============================== table nb count(1098) ============================================
+============================== table nb count(1097) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTN09E"></span>CFTN09E SFTP bind() failed on address &amp;address and port &amp;port: &amp;reason<br/> CFTN09E SFTP bind() failed on address &amp;address and port &amp;port: &amp;reason |
@@ -17273,7 +17256,7 @@
 
 
 
-============================== table nb count(1099) ============================================
+============================== table nb count(1098) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTN10E"></span>CFTN10E Server connection refused, we have reached the connection limit, MAXCNX=&amp;maxcnx<br/> CFTN10E Server connection refused, we have reached the connection limit, MAXCNX=&amp;n |
@@ -17282,7 +17265,7 @@
 
 
 
-============================== table nb count(1100) ============================================
+============================== table nb count(1099) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error  | CFTN11E Server connection refused, we have reached the limit of file descriptors in CFTSFTP process<br/> CFTN11E Server connection refused, we have reached the limit of file descriptors in CFTSFTP process |
@@ -17291,7 +17274,7 @@
 
 
 
-============================== table nb count(1101) ============================================
+============================== table nb count(1100) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error  | CFTN12E Connection failed, we have reached the limit of file descriptors in CFTSFTP process<br/> CFTN12E Connection failed, we have reached the limit of file descriptors in CFTSFTP process |
@@ -17300,7 +17283,7 @@
 
 
 
-============================== table nb count(1102) ============================================
+============================== table nb count(1101) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTN36W"></span>CFTN36W TCPMAXUSER=&amp;maxcnx reached. Network connect reject host=&amp;host port=&amp;port &amp;str<br/> CFTN36W TCPMAXUSER=&amp;maxcnx reached. Network connect reject host=&amp;host port=&amp;port &amp;str |
@@ -17309,7 +17292,7 @@
 
 
 
-============================== table nb count(1103) ============================================
+============================== table nb count(1102) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP01F"></span>CFTP01F CFTPARM &amp;id _ Not found<br/> CFTP01F CFTPARM &amp;id _ Not found |
@@ -17320,7 +17303,7 @@
 
 
 
-============================== table nb count(1104) ============================================
+============================== table nb count(1103) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP02F"></span>CFTP02F CFTTRACE &amp;id for CFTPARM &amp;id _ Not found<br/> CFTP02F CFTSYST &amp;id for CFTPARM &amp;id _ Not found |
@@ -17331,7 +17314,7 @@
 
 
 
-============================== table nb count(1105) ============================================
+============================== table nb count(1104) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | CFTP03F CFTLOG &amp;id for CFTPARM &amp;id _ Not found<br/> CFTP03F CFTLOG &amp;id for CFTPARM &amp;id _ Not found |
@@ -17342,7 +17325,7 @@
 
 
 
-============================== table nb count(1106) ============================================
+============================== table nb count(1105) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP04F"></span>CFTP04F CFTNET &amp;id for CFTPARM &amp;id _ Not found<br/> CFTP04F CFTNET &amp;id for CFTPARM &amp;id _ Not found |
@@ -17353,7 +17336,7 @@
 
 
 
-============================== table nb count(1107) ============================================
+============================== table nb count(1106) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP05F"></span>CFTP05F CFTPROT &amp;id for CFTPARM &amp;id_ Not found<br/> CFTP05F CFTPROT &amp;id for CFTPARM &amp;id _ Not found |
@@ -17364,7 +17347,7 @@
 
 
 
-============================== table nb count(1108) ============================================
+============================== table nb count(1107) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP06F"></span>CFTP06F CFTCAT &amp;id for CFTPARM &amp;id _ Not found<br/> CFTP06F CFTCAT &amp;id for CFTPARM &amp;id _ Not found |
@@ -17375,7 +17358,7 @@
 
 
 
-============================== table nb count(1109) ============================================
+============================== table nb count(1108) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP07F"></span>CFTP07F CFTCOM &amp;id for CFTPARM &amp;id _ Not found<br/> CFTP07F CFTCOM &amp;id for CFTPARM &amp;id _ Not found |
@@ -17386,7 +17369,7 @@
 
 
 
-============================== table nb count(1110) ============================================
+============================== table nb count(1109) ============================================
 
 
 | V23 format<br/> V24 format<br/> Fatal | <span id="CFTP08F"></span>CFTP08F CFTNET &amp;id for CFTPROT &amp;id _ Not found<br/> CFTP08F CFTNET &amp;id for CFTPROT &amp;id _ Not found |
@@ -17397,7 +17380,7 @@
 
 
 
-============================== table nb count(1111) ============================================
+============================== table nb count(1110) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP09F"></span>CFTP09F CFTSEND &amp;id for CFTPARM &amp;id _ No default record found<br/> CFTP09F CFTSEND &amp;id for CFTPARM &amp;id _ No default record found |
@@ -17408,7 +17391,7 @@
 
 
 
-============================== table nb count(1112) ============================================
+============================== table nb count(1111) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP10F"></span>CFTP10F CFTRECV &amp;id for CFTPARM &amp;id _ No Default record found<br/> CFTP10F CFTRECV &amp;id for CFTPARM &amp;id _ No Default record found |
@@ -17419,7 +17402,7 @@
 
 
 
-============================== table nb count(1113) ============================================
+============================== table nb count(1112) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | CFTP13F CFTXLATE &amp;id _ Not found<br/> CFTP13F CFTXLATE &amp;id not found (DIRECT=&amp;direct FCODE=&amp;fcode NCODE=&amp;ncode |
@@ -17430,7 +17413,7 @@
 
 
 
-============================== table nb count(1114) ============================================
+============================== table nb count(1113) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP14F"></span>CFTP14F CFTACCNT &amp;id for CFTPARM &amp;id _ Not found<br/> CFTP14F CFTACCNT &amp;id for CFTPARM &amp;id _ Not found |
@@ -17441,7 +17424,7 @@
 
 
 
-============================== table nb count(1115) ============================================
+============================== table nb count(1114) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP15F"></span>CFTP15F CFTPROT &amp;idprot for CFTPARM &amp;idparm _ Not loading in memory<br/> CFTP15F CFTPROT &amp;id for CFTPARM &amp;id _ Not loading in memory |
@@ -17452,7 +17435,7 @@
 
 
 
-============================== table nb count(1116) ============================================
+============================== table nb count(1115) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP16F"></span>CFTP16F CFTNET &amp;idnet for CFTPARM &amp;idparm _ Not loading in memory<br/> CFTP16F CFTNET &amp;id for CFTPARM &amp;id _ Not loading in memory |
@@ -17463,7 +17446,7 @@
 
 
 
-============================== table nb count(1117) ============================================
+============================== table nb count(1116) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP17F"></span>CFTP17F CFTCOM &amp;idcom for CFTPARM &amp;idparm _ Not loading in memory<br/> CFTP17F CFTCOM &amp;id for CFTPARM &amp;id _ Not loading in memory |
@@ -17474,7 +17457,7 @@
 
 
 
-============================== table nb count(1118) ============================================
+============================== table nb count(1117) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP18F"></span>CFTP18F Error of integrity<br/> CFTP18F Error of integrity |
@@ -17484,7 +17467,7 @@
 
 
 
-============================== table nb count(1119) ============================================
+============================== table nb count(1118) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP19E"></span>CFTP19E PART=&amp;part IDF=&amp;idf CFTAPPL=&amp;id DIRECT=&amp;direct not found<br/> CFTP19E PART=&amp;part IDF=&amp;idf CFTAPPL=&amp;id DIRECT=&amp;direct not found |
@@ -17494,7 +17477,7 @@
 
 
 
-============================== table nb count(1120) ============================================
+============================== table nb count(1119) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTP20E"></span>CFTP20E The client CFTSSH &amp;ssh cannot be found for partner &amp;part<br/> CFTP20E The client CFTSSH &amp;id cannot be found for partner &amp;id |
@@ -17504,7 +17487,7 @@
 
 
 
-============================== table nb count(1121) ============================================
+============================== table nb count(1120) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP20F"></span>CFTP20F direct=server &amp;id for CFTPROT &amp;prot _ Not found<br/> CFTP20F CFTSSL direct=server &amp;id for CFTPROT &amp;id _ Not found |
@@ -17514,7 +17497,7 @@
 
 
 
-============================== table nb count(1122) ============================================
+============================== table nb count(1121) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTP21E"></span>CFTP21E The client private key &amp;key cannot be loaded from &amp;origin<br/> CFTP21E The client private key &amp;key cannot be loaded from &amp;origin |
@@ -17524,7 +17507,7 @@
 
 
 
-============================== table nb count(1123) ============================================
+============================== table nb count(1122) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTP22E"></span>CFTP22E The client public key &amp;key cannot be loaded from &amp;origin<br/> CFTP22E The client public key &amp;key cannot be loaded from &amp;origin |
@@ -17534,7 +17517,7 @@
 
 
 
-============================== table nb count(1124) ============================================
+============================== table nb count(1123) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTP23W"></span>CFTP23W CFTNET &amp;id for CFTPARM &amp;id uses &amp;net network _ Disabled<br/> CFTP23W CFTNET &amp;id for CFTPARM &amp;id uses &amp;net network _ Disabled |
@@ -17544,7 +17527,7 @@
 
 
 
-============================== table nb count(1125) ============================================
+============================== table nb count(1124) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning  | CFTP24W CFTPROT &amp;id uses CFTNET &amp;id _ Disabled<br/> CFTP24W CFTPROT &amp;id uses CFTNET &amp;id _ Disabled |
@@ -17554,7 +17537,7 @@
 
 
 
-============================== table nb count(1126) ============================================
+============================== table nb count(1125) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTP24W"></span>CFTP25W CFTCOM &amp;id uses TYPE 'MBX' Disabled<br/> CFTP25W CFTCOM &amp;id uses TYPE 'MBX' Disabled |
@@ -17564,7 +17547,7 @@
 
 
 
-============================== table nb count(1127) ============================================
+============================== table nb count(1126) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTP30F"></span>CFTP30F CFTSSH &amp;ssh for CFTPROT &amp;prot cannot be found<br/> CFTP30F CFTSSH &amp;id for CFTPROT &amp;id cannot be found |
@@ -17574,7 +17557,7 @@
 
 
 
-============================== table nb count(1128) ============================================
+============================== table nb count(1127) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTP30F"></span><br/> <span id="CFTP31F"></span>CFTP31F CFTNET &amp;id for CFTPROT &amp;id cannot be found<br/> CFTP31F CFTNET &amp;id for CFTPROT &amp;id cannot be found |
@@ -17584,7 +17567,7 @@
 
 
 
-============================== table nb count(1129) ============================================
+============================== table nb count(1128) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR02E"></span>CFTR02E &amp;cmd Failed _ Invalid date or time<br/> CFTR02E &amp;cmd Failed _ Invalid date or time |
@@ -17595,7 +17578,7 @@
 
 
 
-============================== table nb count(1130) ============================================
+============================== table nb count(1129) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR03E"></span>CFTR03E &amp;cmd Failed _ No record found<br/> CFTR03E &amp;cmd Failed _ No record found for &amp;str |
@@ -17606,7 +17589,7 @@
 
 
 
-============================== table nb count(1131) ============================================
+============================== table nb count(1130) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR04E"></span>CFTR04E &amp;cmd Failed _ Keyword &amp;keyw too large<br/> CFTR04E &amp;cmd Failed _ Keyword &amp;keyw too large |
@@ -17617,7 +17600,7 @@
 
 
 
-============================== table nb count(1132) ============================================
+============================== table nb count(1131) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR05E"></span>CFTR05E &amp;cmd Failed _ Illegal separator for keyword &amp;keyw<br/> CFTR05E &amp;cmd Failed _ Illegal separator for keyword &amp;keyw |
@@ -17628,7 +17611,7 @@
 
 
 
-============================== table nb count(1133) ============================================
+============================== table nb count(1132) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR06E"></span>CFTR06E &amp;cmd Failed _ Keyword &amp;keyw, missing quote<br/> CFTR06E &amp;cmd Failed _ Keyword &amp;keyw ; missing quote |
@@ -17639,7 +17622,7 @@
 
 
 
-============================== table nb count(1134) ============================================
+============================== table nb count(1133) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR07E"></span>CFTR07E &amp;cmd Failed _ Too many keywords<br/> CFTR07E &amp;cmd Failed _ Too many keywords |
@@ -17650,7 +17633,7 @@
 
 
 
-============================== table nb count(1135) ============================================
+============================== table nb count(1134) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR08E"></span>CFTR08E &amp;cmd Failed _ Keyword &amp;keyw unknown or duplicate<br/> CFTR08E &amp;cmd Failed _ Keyword &amp;keyw unknown or duplicate |
@@ -17661,7 +17644,7 @@
 
 
 
-============================== table nb count(1136) ============================================
+============================== table nb count(1135) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR09E"></span>CFTR09E &amp;cmd Failed _ Keyword &amp;keyw missing<br/> CFTR09E &amp;cmd Failed _ Keyword &amp;keyw missing |
@@ -17672,7 +17655,7 @@
 
 
 
-============================== table nb count(1137) ============================================
+============================== table nb count(1136) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR10E"></span>CFTR10E &amp;cmd Failed _ Keyword &amp;keyw value out of bounds<br/> CFTR10E &amp;cmd Failed _ Keyword &amp;keyw value out of bounds |
@@ -17683,7 +17666,7 @@
 
 
 
-============================== table nb count(1138) ============================================
+============================== table nb count(1137) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR11E"></span>CFTR11E &amp;cmd Failed _ Invalid value for keyword &amp;keyw<br/> CFTR11E &amp;cmd Failed _ Invalid value for keyword &amp;keyw |
@@ -17694,7 +17677,7 @@
 
 
 
-============================== table nb count(1139) ============================================
+============================== table nb count(1138) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTR12I"></span>CFTR12I &amp;cmd PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm]IDT=&amp;idt Treated FOR USER=&amp;user &amp;str<br/> CFTR12I &amp;cmd PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm]IDT=&amp;idt Treated FOR USER=&amp;user &amp;str |
@@ -17703,7 +17686,7 @@
 
 
 
-============================== table nb count(1140) ============================================
+============================== table nb count(1139) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR13E"></span>CFTR13E &amp;cmd Failed _ IDT=&amp;idt not allowed<br/> CFTR13E SEND &amp;cmd PART=&amp;part Failed _ IDT=&amp;idt not allowed |
@@ -17714,7 +17697,7 @@
 
 
 
-============================== table nb count(1141) ============================================
+============================== table nb count(1140) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTR14W"></span>CFTR14W &amp;cmd Failed PART=&amp;part _ No transfer found for this request<br/> CFTR14W &amp;cmd PART=&amp;part Failed _ No transfer found for this request |
@@ -17724,7 +17707,7 @@
 
 
 
-============================== table nb count(1142) ============================================
+============================== table nb count(1141) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTR15W"></span>CFTR15W &amp;cmd not treated for user &amp;user<br/> CFTR15W &amp;cmd not treated for user &amp;user |
@@ -17734,7 +17717,7 @@
 
 
 
-============================== table nb count(1143) ============================================
+============================== table nb count(1142) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTR16I"></span>CFTR16I &amp;message<br/> CFTR16I &amp;message |
@@ -17743,7 +17726,7 @@
 
 
 
-============================== table nb count(1144) ============================================
+============================== table nb count(1143) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTR17I"></span>CFTR17I &amp;cmd In progress for USER &amp;user &amp;message<br/> CFTR17I &amp;cmd &amp;message In progress for USER &amp;user |
@@ -17752,7 +17735,7 @@
 
 
 
-============================== table nb count(1145) ============================================
+============================== table nb count(1144) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTR18W"></span>CFTR18W &amp;message<br/> CFTR18W &amp;message |
@@ -17761,7 +17744,7 @@
 
 
 
-============================== table nb count(1146) ============================================
+============================== table nb count(1145) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR19E"></span>CFTR19E &amp;message<br/> CFTR19E &amp;message |
@@ -17770,7 +17753,7 @@
 
 
 
-============================== table nb count(1147) ============================================
+============================== table nb count(1146) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTR20I"></span>CFTR20I &amp;message<br/> CFTR20I &amp;message |
@@ -17785,7 +17768,7 @@
 
 
 
-============================== table nb count(1148) ============================================
+============================== table nb count(1147) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR21E"></span>CFTR21E &amp;cmd Failed _ No record found &lt;IDTU=&amp;idtu PART=&amp;part IDT=&amp;idt&gt;<br/> CFTR21E &amp;cmd Failed _ No record found &lt;IDTU=&amp;idtu PART=&amp;part IDT=&amp;idt&gt; |
@@ -17795,7 +17778,7 @@
 
 
 
-============================== table nb count(1149) ============================================
+============================== table nb count(1148) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR22E"></span>CFTR22E &amp;cmd Failed _ Set FORCE=YES to immediately retry to rename &lt;IDTU=&amp;idtu PART=&amp;part IDT=&amp;idt PHASE=Y PHASESTEP=R&gt;<br/> CFTR22E &amp;cmd Failed _ Set FORCE=YES to immediately retry to rename &lt;IDTU=&amp;idtu PART=&amp;part IDT=&amp;idt PHASE=Y PHASESTEP=R&gt; |
@@ -17805,7 +17788,7 @@
 
 
 
-============================== table nb count(1150) ============================================
+============================== table nb count(1149) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | CFTR23I On &amp;time UserId=&amp;userid, JobName=&amp;jobname ran the command &amp;command<br/> CFTR23I On &amp;time UserId=&amp;userid, JobName=&amp;jobname ran the command &amp;command |
@@ -17814,7 +17797,7 @@
 
 
 
-============================== table nb count(1151) ============================================
+============================== table nb count(1150) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTS01W"></span>CFTS01W Synch. response time-out _ Waitresp increased to &amp;ns (&amp;str)<br/> CFTS01W Synch. response time-out _ Waitresp increased to &amp;ns (&amp;str) |
@@ -17824,7 +17807,7 @@
 
 
 
-============================== table nb count(1152) ============================================
+============================== table nb count(1151) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS02E"></span>CFTS02E PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt DIRECT=&amp;direct &amp;fname not found<br/> CFTS02E _ &amp;fname not found &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt DIRECT=&amp;direct&gt; |
@@ -17833,7 +17816,7 @@
 
 
 
-============================== table nb count(1153) ============================================
+============================== table nb count(1152) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTS03I"></span>CFTS03I PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm]IDT=&amp;idt _ &amp;fname submitted<br/> CFTS03I _ &amp;fname submitted&lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt&gt; (&amp;n sec) |
@@ -17842,7 +17825,7 @@
 
 
 
-============================== table nb count(1154) ============================================
+============================== table nb count(1153) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTS04W"></span>CFTS04W Action file &amp;fname is empty<br/> CFTS04W Action file &amp;fname is empty |
@@ -17851,7 +17834,7 @@
 
 
 
-============================== table nb count(1155) ============================================
+============================== table nb count(1154) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS05E"></span>CFTS05E Error code &amp;scs _ Trying to access &amp;str<br/> CFTS05E Error code &amp;scs _ Trying to access &amp;str |
@@ -17862,7 +17845,7 @@
 
 
 
-============================== table nb count(1156) ============================================
+============================== table nb count(1155) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS06E"></span>CFTS06E Error code &amp;scs _ Trying to access temporary file<br/> CFTS06E Error code &amp;scs _ Trying to access temporary file |
@@ -17873,7 +17856,7 @@
 
 
 
-============================== table nb count(1157) ============================================
+============================== table nb count(1156) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS07E"></span>CFTS07E Insufficient space for temporary file<br/> CFTS07E Insufficient space for temporary file |
@@ -17884,7 +17867,7 @@
 
 
 
-============================== table nb count(1158) ============================================
+============================== table nb count(1157) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS08E"></span>CFTS08E Error code &amp;scs _ Executing temporary file<br/> CFTS08E Error code &amp;scs _ Executing temporary file |
@@ -17895,7 +17878,7 @@
 
 
 
-============================== table nb count(1159) ============================================
+============================== table nb count(1158) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS10E"></span>CFTS10E File communication task error (&amp;str1) _ &amp;str2<br/> CFTS10E File communication task error (&amp;str1) _ &amp;str2 |
@@ -17905,7 +17888,7 @@
 
 
 
-============================== table nb count(1160) ============================================
+============================== table nb count(1159) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS11E"></span>CFTS11E Allocation error _ Trying to access temporary file<br/> CFTS11E Allocation error _ Trying to access temporary file |
@@ -17916,7 +17899,7 @@
 
 
 
-============================== table nb count(1161) ============================================
+============================== table nb count(1160) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTS12W"></span>CFTS12W Error code &amp;scs _ CFT write messages to output stream<br/> CFTS12W Error code &amp;scs _ CFT write messages to output stream |
@@ -17927,7 +17910,7 @@
 
 
 
-============================== table nb count(1162) ============================================
+============================== table nb count(1161) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS13E"></span>CFTS13E Semaphore failure &amp;cs_CFTTPRO aborted<br/> CFTS13E Semaphore failure &amp;cs_CFTTPRO aborted |
@@ -17938,7 +17921,7 @@
 
 
 
-============================== table nb count(1163) ============================================
+============================== table nb count(1162) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS14E"></span>CFTS14E ID=&amp;id error initializing process<br/> CFTS14E Unknown synchronization message CLASS=&amp;class TYPE=&amp;type |
@@ -17949,7 +17932,7 @@
 
 
 
-============================== table nb count(1164) ============================================
+============================== table nb count(1163) ============================================
 
 
 | Information | <span id="CFTS15I"></span>CFTS15I PART = &amp;part Kill Session Reference &amp;ctx:&amp;ctx<br/> CFTS15I PART = &amp;part Kill Session Reference &amp;ctx:&amp;ctx |
@@ -17958,7 +17941,7 @@
 
 
 
-============================== table nb count(1165) ============================================
+============================== table nb count(1164) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS16E"></span>CFTS16E Synch. response time-out_End transfer exit<br/> CFTS16E Synch. response time-out _ End of transfer exit |
@@ -17969,7 +17952,7 @@
 
 
 
-============================== table nb count(1166) ============================================
+============================== table nb count(1165) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS17E"></span>CFTS17E Error code &amp;scs _ Trying to access End transfer exit<br/> CFTS17E Error code &amp;scs _ Trying to access End of transfer exit |
@@ -17980,7 +17963,7 @@
 
 
 
-============================== table nb count(1167) ============================================
+============================== table nb count(1166) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS18W"></span><span id="CFTS18E"></span>CFTS18E PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt _ Catalog record Update Error: &amp;scs<br/> CFTS18E _ Catalog Update Error: &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt&gt; |
@@ -17990,7 +17973,7 @@
 
 
 
-============================== table nb count(1168) ============================================
+============================== table nb count(1167) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTS18W"></span>CFTS18W PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt _ Catalog record label<br/> CFTS18W _ Catalog record &amp;label &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt&gt; |
@@ -18001,7 +17984,7 @@
 
 
 
-============================== table nb count(1169) ============================================
+============================== table nb count(1168) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTS19I"></span>CFTS19I PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm]IDT=&amp;idt _ Catalog record label<br/> CFTS19I _ Catalog record &amp;str &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt&gt; |
@@ -18010,7 +17993,7 @@
 
 
 
-============================== table nb count(1170) ============================================
+============================== table nb count(1169) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTS20I"></span>CFTS20I Communication file row number deleted: nnnnnnnn (&amp;str)<br/> CFTS20I &amp;str", &amp;str = Communication file row number deleted: nnnnnnnn<br/> or File communication task INIT (&amp;n,WSCAN=&amp;wscan,RET=&amp;ret) |
@@ -18019,7 +18002,7 @@
 
 
 
-============================== table nb count(1171) ============================================
+============================== table nb count(1170) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTS21I"></span>CFTS21I PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm]IDT=&amp;idt Exit request ID=&amp;id<br/> CFTS21I Exit request ID=&amp;id &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt&gt; |
@@ -18029,7 +18012,7 @@
 
 
 
-============================== table nb count(1172) ============================================
+============================== table nb count(1171) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTS22I"></span>CFTS22I Task time out End of transfer exit<br/> CFTS22I Task time out End of transfer exit |
@@ -18040,17 +18023,17 @@
 
 
 
-============================== table nb count(1173) ============================================
+============================== table nb count(1172) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS23E"></span>CFTS23E Bad user return code &lt;details&gt;<br/> CFTS23E &amp;str PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt ", &amp;str = Bad End transfer exit version : &amp;ver / &amp;ver<br/> or<br/> CFTS23E &amp;str &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt &gt;") Invalid state transit '&amp;state'-&gt;'&amp;state' or Unknown state &amp;state<br/> or<br/> Unknown action &amp;action or Bad User return code : &amp;scs |
 | --- | --- | --- | --- |
-| Explanation | Error message specific to the end-of-transfer user exit. The details that display in the message depend on the CFTLOG format (v23 or v24).<br/> **Example**<br/> V24 format:<br/> <code>CFTS23E Bad User return code: 4 &lt;IDTU=idtu PART=part1 IDF=idf1 IDT=idt &gt;</code><br/> V23 format:<br/> CFTS23E Bad User return code : 4 PART=part1 IDF=idf1 IDT=idt |
+| Explanation | Error message specific to the end-of-transfer user exit. The details that display in the message depend on the CFTLOG format (v23 or v24).<br/> **Example**<br/> V24 format:<br/> <code>CFTS23E Bad User return code: 4 &lt;IDTU=idtu PART=part1 IDF=idf1 IDT=idt &gt;</code><br/> V23 format:<br/> <code>CFTS23E Bad User return code : 4 PART=part1 IDF=idf1 IDT=idt</code>  |
 | Consequence | None. |
 
 
 
-============================== table nb count(1174) ============================================
+============================== table nb count(1173) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS26E"></span>CFTS26E XTRK task error &amp;str <br/> CFTS26E XTRK task error &amp;str |
@@ -18060,7 +18043,7 @@
 
 
 
-============================== table nb count(1175) ============================================
+============================== table nb count(1174) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS27E"></span>CFTS27E Synchronous communication task error CR=&amp;cr &amp;str<br/> CFTS27E Synchronous communication task error CR= &amp;cr &amp;str |
@@ -18071,7 +18054,7 @@
 
 
 
-============================== table nb count(1176) ============================================
+============================== table nb count(1175) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTS29I"></span>CFTS29I Cannot acces XTRK task _ &amp;str<br/> CFTS29I Cannot acces XTRK task _ &amp;str |
@@ -18081,7 +18064,7 @@
 
 
 
-============================== table nb count(1177) ============================================
+============================== table nb count(1176) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTS30I"></span>CFTS30I XTRK Information &amp;str<br/> CFTS30I XTRK Information &amp;str |
@@ -18090,7 +18073,7 @@
 
 
 
-============================== table nb count(1178) ============================================
+============================== table nb count(1177) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTS31W"></span>CFTS31W XTRK Warning &amp;str Error Code = &amp;cr<br/> CFTS31W XTRK Warning &amp;str Error Code = &amp;cr |
@@ -18099,7 +18082,7 @@
 
 
 
-============================== table nb count(1179) ============================================
+============================== table nb count(1178) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTS32W"></span>CFTS32W TCOMS Connection refused (address=nnn.nnn.nnn.nnn, name=userid)<br/> CFTS32W TCOMS Connection refused |
@@ -18108,7 +18091,7 @@
 
 
 
-============================== table nb count(1180) ============================================
+============================== table nb count(1179) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTS33I"></span>CFTS33I CFTLOG current file before switch<br/> CFTS33I CFTLOG current file before switch :&amp;fname |
@@ -18117,7 +18100,7 @@
 
 
 
-============================== table nb count(1181) ============================================
+============================== table nb count(1180) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTS34I"></span>CFTS34I CFTLOG executed switch proc<br/> CFTS34I CFTLOG execute switch procedure : &amp;fname |
@@ -18126,7 +18109,7 @@
 
 
 
-============================== table nb count(1182) ============================================
+============================== table nb count(1181) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTS35I"></span>CFTS35I CFTLOG current file after switch<br/> CFTS35I CFTLOG current file after switch :&amp;fname |
@@ -18135,7 +18118,7 @@
 
 
 
-============================== table nb count(1183) ============================================
+============================== table nb count(1182) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTS36I"></span>CFTS36I CFTACCNT current file (no switch executed)<br/> CFTS36I CFTACCNT current file (no switch executed): &amp;fname |
@@ -18144,7 +18127,7 @@
 
 
 
-============================== table nb count(1184) ============================================
+============================== table nb count(1183) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTS37I"></span>CFTS37I CRONJOB ID=&amp;idcron, CRONTAB=&amp;cronname &amp;exec executed, NEXT=&amp;date<br/> CFTS37I CRONJOB: ID=&amp;idcron, CRONTAB=&amp;cronname ACT DONE<br/> CFTS37I CRONJOB: RECONFIG type=CRON DONE |
@@ -18153,7 +18136,7 @@
 
 
 
-============================== table nb count(1185) ============================================
+============================== table nb count(1184) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTS39E"></span>CFTS38W CRONJOB NEXT TIME CALCUL FAILED, RETURN &amp;ret<br/> CFTS38W CRONJOB NEXT TIME CALCUL IS AFTER 2035, ABORTING, RETURN &amp;ret |
@@ -18162,7 +18145,7 @@
 
 
 
-============================== table nb count(1186) ============================================
+============================== table nb count(1185) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS39E"></span><br/> CFTS39E CRONJOB ID=&amp;id, CRONTAB=&amp;cronname exec &amp;fname failed<br/> CFTS39E CRONJOB: ID=&amp;id INACT FAILED: CRONJOB Not Found<br/> CFTS39E CRONJOB: ID=&amp;id ACT FAILED: CRONJOB Not Found |
@@ -18171,7 +18154,7 @@
 
 
 
-============================== table nb count(1187) ============================================
+============================== table nb count(1186) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS39E"></span><br/> CFTI40E OMVS SEGMENT NOT DEFINED for user=xxxxxx<br/> CFTI40E OMVS SEGMENT NOT DEFINED for user=xxxxxx |
@@ -18180,7 +18163,7 @@
 
 
 
-============================== table nb count(1188) ============================================
+============================== table nb count(1187) ============================================
 
 
 | V23 format<br/> V24 format<br/> Fatal | <span id="CFTS40F"></span>CFTS40F CFTACCNT FORMAT=(V23/V24) not available for &amp;fname<br/> CFTS40F CFTACCNT FORMAT=(V23|V24) not available for &amp;fname |
@@ -18189,7 +18172,7 @@
 
 
 
-============================== table nb count(1189) ============================================
+============================== table nb count(1188) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTS41I"></span>CFTS41I Catalog Alert exec &amp;fname executed<br/> CFTS41I Catalog Alert exec &amp;fname executed |
@@ -18198,7 +18181,7 @@
 
 
 
-============================== table nb count(1190) ============================================
+============================== table nb count(1189) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS42E"></span>CFTS42E Catalog Alert exec &amp;fname &amp;str" where &amp;str= "not found" or "failed"<br/> CFTS42E Catalog Alert exec &amp;fname &amp;str |
@@ -18207,7 +18190,7 @@
 
 
 
-============================== table nb count(1191) ============================================
+============================== table nb count(1190) ============================================
 
 
 | V23 format<br/> <br/> V24 format<br/> Information | <span id="CFTS43I"></span>CFTS43I &amp;str", &amp;str = RECONFIG PARM CACHE CFTMAIN or RECONFIG &amp;task : Keep &amp;key : &amp;value or Parameter &amp;task &amp;value --&gt; &amp;value or RECONFIG &amp;task <br/> CFTS43I &amp;str |
@@ -18216,7 +18199,7 @@
 
 
 
-============================== table nb count(1192) ============================================
+============================== table nb count(1191) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTS44W"></span>CFTS44W Unexpected message Class &amp;n &lt;TASK=&amp;str&gt;<br/> CFTS44W Unexpected Message Class &amp;n &lt;TASK=&amp;task&gt; |
@@ -18226,7 +18209,7 @@
 
 
 
-============================== table nb count(1193) ============================================
+============================== table nb count(1192) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTS45W"></span>CFTS45W Unexpected Message Class &amp;n &lt;TASK=&amp;task&gt;<br/> CFTS45W Unexpected Message Type &amp;n &lt;TASK=&amp;task CLASS=&amp;n&gt; |
@@ -18236,7 +18219,7 @@
 
 
 
-============================== table nb count(1194) ============================================
+============================== table nb count(1193) ============================================
 
 
 | V23 format<br/> V24 format<br/> Fatal  | <span id="CFTS46F"></span>CFTS46F CFTPRX error _ &amp;str<br/> CFTS46F CFTPRX error _ &amp;str |
@@ -18247,7 +18230,7 @@
 
 
 
-============================== table nb count(1195) ============================================
+============================== table nb count(1194) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS47E"></span>CFTS47E CFTPRX error _ &amp;str<br/> CFTS47E CFTPRX error _ &amp;str |
@@ -18258,7 +18241,7 @@
 
 
 
-============================== table nb count(1196) ============================================
+============================== table nb count(1195) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTS48W"></span>CFTS48W CFTPRX _ &amp;str<br/> CFTS48W CFTPRX _ &amp;str |
@@ -18267,7 +18250,7 @@
 
 
 
-============================== table nb count(1197) ============================================
+============================== table nb count(1196) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTS49I"></span>CFTS49I CFTPRX _ &amp;str<br/> CFTS49I CFTPRX _ &amp;str |
@@ -18276,7 +18259,7 @@
 
 
 
-============================== table nb count(1198) ============================================
+============================== table nb count(1197) ============================================
 
 
 | V23 format<br/> V24 format<br/> Fatal  | <span id="CFTS50F"></span>CFTS50F CFTJRE error _ &amp;str<br/> CFTS50F CFTJRE error _ &amp;str |
@@ -18287,7 +18270,7 @@
 
 
 
-============================== table nb count(1199) ============================================
+============================== table nb count(1198) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS51E"></span>CFTS51E CFTJRE error _ &amp;str<br/> CFTS51E CFTJRE error _ &amp;str |
@@ -18298,7 +18281,7 @@
 
 
 
-============================== table nb count(1200) ============================================
+============================== table nb count(1199) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTS52W"></span>CFTS52W CFTJRE _ &amp;str<br/> CFTS52W CFTJRE _ &amp;str |
@@ -18307,7 +18290,7 @@
 
 
 
-============================== table nb count(1201) ============================================
+============================== table nb count(1200) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS53I"></span>CFTS53I CFTJRE _ &amp;str<br/> CFTS53I CFTJRE _ &amp;str |
@@ -18316,7 +18299,7 @@
 
 
 
-============================== table nb count(1202) ============================================
+============================== table nb count(1201) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS54F"></span>CFTS54F CFTACC task fatal CR=&amp;cr &amp;str<br/> CFTS54F CFTACC task fatal CR= &amp;cr &amp;str |
@@ -18327,7 +18310,7 @@
 
 
 
-============================== table nb count(1203) ============================================
+============================== table nb count(1202) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTS55I"></span>CFTS55I Acceleration &amp;str<br/> CFTS55I Acceleration &amp;str |
@@ -18336,7 +18319,7 @@
 
 
 
-============================== table nb count(1204) ============================================
+============================== table nb count(1203) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS56E"></span>CFTS56E Central Governance error (&lt;error_code&gt;) &lt;error_msg&gt;<br/> CFTS56E Central Governance &amp;str", &amp;str = &amp;type error (send): (&amp;code) &amp;message<br/> CFTS56E Central Governance &amp;str", &amp;str = &amp;type error (recv): (&amp;code) &amp;message |
@@ -18346,7 +18329,7 @@
 
 
 
-============================== table nb count(1205) ============================================
+============================== table nb count(1204) ============================================
 
 
 | V23 format<br/> <br/> V24 format<br/> Warning  | <span id="CFTS57W"></span>CFTS57W Synchronous communication _ Authentication ignored - authentication_enable=yes but authentication_method=&amp;auth_method<br/> CFTS57W Synchronous communication _ Authentication ignored - authentication_enable=yes but authentication_method=&amp;auth_method |
@@ -18355,7 +18338,7 @@
 
 
 
-============================== table nb count(1206) ============================================
+============================== table nb count(1205) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS59E"></span>CFTS59E Multi-node error _ &amp;str<br/> CFTS58F Multi-node error _ &amp;str |
@@ -18366,7 +18349,7 @@
 
 
 
-============================== table nb count(1207) ============================================
+============================== table nb count(1206) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTS60W"></span>CFTS60W Multi-node _ &amp;str<br/> CFTS60W Multi-node _ &amp;str |
@@ -18375,7 +18358,7 @@
 
 
 
-============================== table nb count(1208) ============================================
+============================== table nb count(1207) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTS61I"></span>CFTS61I Multi-node _ &amp;str<br/> CFTS61I Multi-node _ &amp;str |
@@ -18384,7 +18367,7 @@
 
 
 
-============================== table nb count(1209) ============================================
+============================== table nb count(1208) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTS62I"></span>CFTS62I &amp;str<br/> CFTS62I &amp;str |
@@ -18393,7 +18376,7 @@
 
 
 
-============================== table nb count(1210) ============================================
+============================== table nb count(1209) ============================================
 
 
 | V23 format<br/> V24 format<br/> Fatal  | <span id="CFTS63F"></span>CFTS63F Secure Relay fatal error _ &amp;str<br/> CFTS63F Secure Relay fatal error _ &amp;str |
@@ -18403,7 +18386,7 @@
 
 
 
-============================== table nb count(1211) ============================================
+============================== table nb count(1210) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTS64I"></span>CFTS64I Secure Relay _ &amp;str<br/> CFTS64I Secure Relay _ &amp;str |
@@ -18412,7 +18395,7 @@
 
 
 
-============================== table nb count(1212) ============================================
+============================== table nb count(1211) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTS64I"></span><span id="CFTS65W"></span>CFTS65W Unable to launch another script for 60s due to the cft.server.max_processing_scripts limit<br/> CFTS65W Unable to launch another script for 60s due to the cft.server.max_processing_scripts limit |
@@ -18423,7 +18406,7 @@
 
 
 
-============================== table nb count(1213) ============================================
+============================== table nb count(1212) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS64I"></span><span id="CFTS66E"></span>CFTS66E TFIL error _ &amp;str", &amp;str = Regular expression &amp;mask parsing error or List generation error &amp;scs<br/> CFTS66E TFIL error _ &amp;str |
@@ -18434,7 +18417,7 @@
 
 
 
-============================== table nb count(1214) ============================================
+============================== table nb count(1213) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS67E"></span>CFTS67E Error replacing variable &amp;var &amp;message<br/> CFTS67E Error replacing variable &amp;var &amp;message |
@@ -18443,7 +18426,7 @@
 
 
 
-============================== table nb count(1215) ============================================
+============================== table nb count(1214) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS68E"></span>CFTS68E PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm]IDT=&amp;idt _ &amp;fname not executed<br/> CFTS68E _ &amp;fname not executed &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt DIRECT=&amp;direct&gt; |
@@ -18452,7 +18435,7 @@
 
 
 
-============================== table nb count(1216) ============================================
+============================== table nb count(1215) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTS71W"></span>CFTS71W Command file Alert fill threshold reached: level=&amp;level ID=&amp;id<br/> CFTS71W Command file Alert fill threshold reached: level=&amp;level ID=&amp;id |
@@ -18461,7 +18444,7 @@
 
 
 
-============================== table nb count(1217) ============================================
+============================== table nb count(1216) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTS72W"></span>CFTS72W Command file Alert cleared : level=&amp;level ID=&amp;id<br/> CFTS72W Command file Alert cleared : level=&amp;level ID=&amp;id |
@@ -18470,7 +18453,7 @@
 
 
 
-============================== table nb count(1218) ============================================
+============================== table nb count(1217) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTS73I"></span>CFTS73I Command file Alert exec &amp;fname executed<br/> CFTS73I Command file Alert exec &amp;fname executed |
@@ -18479,7 +18462,7 @@
 
 
 
-============================== table nb count(1219) ============================================
+============================== table nb count(1218) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS74E"></span>CFTS74E Command file Alert exec &amp;fname &amp;str"<br/> CFTS74E Command file Alert exec &amp;fname &amp;str" |
@@ -18488,7 +18471,7 @@
 
 
 
-============================== table nb count(1220) ============================================
+============================== table nb count(1219) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | CFTT00E CFT request warning _ &amp;str<br/> CFTT00E CFT request warning - &amp;str |
@@ -18497,7 +18480,7 @@
 
 
 
-============================== table nb count(1221) ============================================
+============================== table nb count(1220) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT01E"></span>CFTT01E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Open mode not allowed<br/> CFTT01E IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Open mode not allowed |
@@ -18508,7 +18491,7 @@
 
 
 
-============================== table nb count(1222) ============================================
+============================== table nb count(1221) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT02E"></span>CFTT02E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Transfer Area Full<br/> CFTT02E _ Transfer Area Full &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -18519,7 +18502,7 @@
 
 
 
-============================== table nb count(1223) ============================================
+============================== table nb count(1222) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT03E"></span>CFTT03E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Max retry Reached<br/> CFTT03E _ Max retry Reached &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -18530,7 +18513,7 @@
 
 
 
-============================== table nb count(1224) ============================================
+============================== table nb count(1223) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT05E"></span>CFTT05E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Restart Failed<br/> CFTT05E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Restart Failed |
@@ -18541,7 +18524,7 @@
 
 
 
-============================== table nb count(1225) ============================================
+============================== table nb count(1224) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTT06W"></span>CFTT06W PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Partner switching IPART=&amp;part<br/> CFTT06W PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Partner switching IPART=&amp;part |
@@ -18551,7 +18534,7 @@
 
 
 
-============================== table nb count(1226) ============================================
+============================== table nb count(1225) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTT07W"></span>CFTT07W Ending Transfer Task &amp;n Failed _ A transfer Running<br/> CFTT07W Ending Transfer Task &amp;n Failed _ A transfer Running |
@@ -18560,7 +18543,7 @@
 
 
 
-============================== table nb count(1227) ============================================
+============================== table nb count(1226) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT08E"></span>CFTT08E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _No prot available<br/> CFTT08E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _No prot available |
@@ -18571,7 +18554,7 @@
 
 
 
-============================== table nb count(1228) ============================================
+============================== table nb count(1227) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTT09E"></span>CFTT09W PART=&amp;part IDF=&amp;idf IDT=&amp;idt PROT=&amp;prot _ Maximum cv affected<br/> CFTT09W PART=&amp;part IDF=&amp;idf IDT=&amp;idt PROT=&amp;prot _ Maximum cv affected |
@@ -18582,7 +18565,7 @@
 
 
 
-============================== table nb count(1229) ============================================
+============================== table nb count(1228) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT10E"></span>CFTT10E PART=&amp;part PROT=&amp;prot _ Protocol not authorized<br/> CFTT10E PART=&amp;part PROT=&amp;prot _ Protocol not authorized |
@@ -18593,7 +18576,7 @@
 
 
 
-============================== table nb count(1230) ============================================
+============================== table nb count(1229) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT11E"></span>CFTT11EPART=&amp;part PROT=&amp;prot CLASS=&amp;n _ &amp;net not found<br/> CFTT11EPART=&amp;part PROT=&amp;prot CLASS=&amp;n _ &amp;net not found |
@@ -18604,7 +18587,7 @@
 
 
 
-============================== table nb count(1231) ============================================
+============================== table nb count(1230) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTT12W"></span>CFTT12WPART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Out of time to call<br/> CFTT12WPART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Out of time to call |
@@ -18615,7 +18598,7 @@
 
 
 
-============================== table nb count(1232) ============================================
+============================== table nb count(1231) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT13I"></span>CFTT13IPART=&amp;part (IDF=&amp;idf IDM=&amp;idm) IDT=&amp;idt _ Session parameters PROT=&amp;prot SAP=&amp;sap DIALNUM(or HOST)= &amp;dialnum (or &amp;host)<br/> CFTT13IPART=&amp;part (IDF=&amp;idf IDM=&amp;idm) IDT=&amp;idt _ Session parameters PROT=&amp;prot SAP=&amp;sap DIALNUM(or HOST)= &amp;dialnum (or &amp;host) |
@@ -18624,7 +18607,7 @@
 
 
 
-============================== table nb count(1233) ============================================
+============================== table nb count(1232) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT14E"></span>CFTT14E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Not found<br/> CFTT14E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Not found |
@@ -18635,7 +18618,7 @@
 
 
 
-============================== table nb count(1234) ============================================
+============================== table nb count(1233) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT15E"></span>CFTT15E NPART=&amp;part _ Not found, possibly truncated to 24 characters<br/> CFTT15E NPART=&amp;part _ Not found, possibly truncated to 24 characters |
@@ -18646,7 +18629,7 @@
 
 
 
-============================== table nb count(1235) ============================================
+============================== table nb count(1234) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT16E"></span>CFTT16E PART=&amp;part IDF=&amp;idf _ No implicit send<br/> CFTT16E PART=&amp;part IDF=&amp;idf _ No implicit send |
@@ -18657,7 +18640,7 @@
 
 
 
-============================== table nb count(1236) ============================================
+============================== table nb count(1235) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT17I"></span>CFTT17I PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ STATE=HOLD<br/> CFTT17I PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ STATE=HOLD |
@@ -18667,7 +18650,7 @@
 
 
 
-============================== table nb count(1237) ============================================
+============================== table nb count(1236) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT18E"></span>CFTT18E PART=&amp;part IDF=&amp;idf CFTAUTH id=&amp;id _ Not found<br/> CFTT18E PART=&amp;part IDF=&amp;idf CFTAUTH id=&amp;id _ Not found |
@@ -18678,7 +18661,7 @@
 
 
 
-============================== table nb count(1238) ============================================
+============================== table nb count(1237) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT19E"></span>CFTT19E PART=&amp;part _ Invalid remote password &amp;str *<br/> CFTT19E PART=&amp;part _ Invalid remote password &amp;str * |
@@ -18689,7 +18672,7 @@
 
 
 
-============================== table nb count(1239) ============================================
+============================== table nb count(1238) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT20E"></span>CFTT20E PART=&amp;part _ PVC not allowed<br/> CFTT20E PART=&amp;part _ PVC not allowed |
@@ -18699,7 +18682,7 @@
 
 
 
-============================== table nb count(1240) ============================================
+============================== table nb count(1239) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT21E"></span>CFTT21E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Catalog access failed &amp;scs ,&amp;cr<br/> CFTT21E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Catalog access failed &amp;scs ,&amp;cr |
@@ -18710,7 +18693,7 @@
 
 
 
-============================== table nb count(1241) ============================================
+============================== table nb count(1240) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT22E"></span>CFTT22E &amp;str PART=&amp;part IDF=&amp;idf IDT=&amp;idt_ &amp;str<br/> CFTT22E _&amp;str &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; &amp;str |
@@ -18721,7 +18704,7 @@
 
 
 
-============================== table nb count(1242) ============================================
+============================== table nb count(1241) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT23E"></span>CFTT23E PART=&amp;part Shutdown in progress _ &amp;str<br/> CFTT23E PART=&amp;part Shutdown in progress _ &amp;str |
@@ -18730,7 +18713,7 @@
 
 
 
-============================== table nb count(1243) ============================================
+============================== table nb count(1242) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT24E"></span>CFTT24E PART=&amp;part PROT=&amp;prot _ Invalid call number &amp;n<br/> CFTT24E PART=&amp;part PROT=&amp;prot _ Invalid call number &amp;n |
@@ -18740,7 +18723,7 @@
 
 
 
-============================== table nb count(1244) ============================================
+============================== table nb count(1243) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT25E"></span>CFTT25E PART=&amp;part IDF=&amp;idf _ IDF not authorized<br/> CFTT25E PART=&amp;part IDF=&amp;idf _ IDF not authorized |
@@ -18751,7 +18734,7 @@
 
 
 
-============================== table nb count(1245) ============================================
+============================== table nb count(1244) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT26E"></span>CFTT26E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Max transfer tasks<br/> CFTT26E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Max transfer tasks |
@@ -18762,7 +18745,7 @@
 
 
 
-============================== table nb count(1246) ============================================
+============================== table nb count(1245) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT27E"></span>CFTT27E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Error &amp;scs writing starts<br/> CFTT27E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Error &amp;scs writing starts |
@@ -18773,7 +18756,7 @@
 
 
 
-============================== table nb count(1247) ============================================
+============================== table nb count(1246) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT28E"></span>CFTT28E No outgoing CV configured on Network<br/> CFTT28E No outgoing CV configured on Network |
@@ -18784,7 +18767,7 @@
 
 
 
-============================== table nb count(1248) ============================================
+============================== table nb count(1247) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT29E"></span>CFTT29E DEST= &amp;dest -Invalid use _Define for [BOTH/LOCAL/COMMUT] use only<br/> CFTT29E DEST= &amp;dest -Invalid use _Define for [BOTH/LOCAL/COMMUT] use only |
@@ -18793,7 +18776,7 @@
 
 
 
-============================== table nb count(1249) ============================================
+============================== table nb count(1248) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT30E"></span>CFTT30E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Max Exit tasks<br/> CFTT30E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Max Exit tasks |
@@ -18804,7 +18787,7 @@
 
 
 
-============================== table nb count(1250) ============================================
+============================== table nb count(1249) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTT31W"></span>CFTT31W Ending Exit Task &amp;n Failed _ A transfer Running<br/> CFTT31W Ending Exit Task &amp;n Failed _ A transfer Running |
@@ -18813,7 +18796,7 @@
 
 
 
-============================== table nb count(1251) ============================================
+============================== table nb count(1250) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT32E"></span>CFTT32E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Partner not found<br/> CFTT32E _ Partner not found &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -18824,7 +18807,7 @@
 
 
 
-============================== table nb count(1252) ============================================
+============================== table nb count(1251) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT33E"></span>CFTT33E PART = &amp;dest IDF = &amp;idf IDT = &amp;idt _ Illegal use of CFTDEST<br/> CFTT33E _ Illegal use of CFTDEST &lt;IDTU=&amp;idtu PART=&amp;part &amp;idf IDT=&amp;idt&gt; |
@@ -18835,7 +18818,7 @@
 
 
 
-============================== table nb count(1253) ============================================
+============================== table nb count(1252) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT34E"></span>CFTT34E PART = &amp;part IDF = &amp;idf _ &amp;cause<br/> CFTT34E _ &amp;cause&lt;IDTU=&amp;idtu PART = &amp;part IDF=&amp;idf&gt; |
@@ -18846,7 +18829,7 @@
 
 
 
-============================== table nb count(1254) ============================================
+============================== table nb count(1253) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTT35W"></span>CFTT35W PART=&amp;part IDF=&amp;idf IDT=&amp;idt DELETE file &amp;fname Failed _&amp;str<br/> CFTT35W DELETE file &amp;fname Failed _&amp;str &lt;IDTU=&amp;idtu PART = &amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -18856,7 +18839,7 @@
 
 
 
-============================== table nb count(1255) ============================================
+============================== table nb count(1254) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTT36W"></span>CFTT36W PART=&amp;part IDF=&amp;idf IDT=&amp;idt ERASE file &amp;fname Failed &amp;str<br/> CFTT36W ERASE file &amp;fname Failed &amp;str &lt;IDTU=&amp;idtu PART = &amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -18866,7 +18849,7 @@
 
 
 
-============================== table nb count(1256) ============================================
+============================== table nb count(1255) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT37I"></span>CFTT37I PART=&amp;part _ Not found and ignored for CFTDEST &amp;id<br/> CFTT37I _ Not found and ignored for CFTDEST &amp;id &lt;IDTU=&amp;idtu PART=&amp;part&gt; |
@@ -18875,7 +18858,7 @@
 
 
 
-============================== table nb count(1257) ============================================
+============================== table nb count(1256) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT38I"></span>CFTT38I PART=&amp;part _ Dynamic partner: &amp;npart<br/> CFTT38I _Dynamic partner: &amp;npart &lt; PART=&amp;part DIAG=&amp;diag&gt; |
@@ -18884,7 +18867,7 @@
 
 
 
-============================== table nb count(1258) ============================================
+============================== table nb count(1257) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT39E"></span>CFTT39E PART=&amp;part DIAG=&amp;diag _ Access Exit Connect Reject<br/> CFTT39E _ Access Exit Connect Reject &lt;PART=&amp;part DIAG=&amp;diag&gt; |
@@ -18894,7 +18877,7 @@
 
 
 
-============================== table nb count(1259) ============================================
+============================== table nb count(1258) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT40E"></span>CFTT40E PART=&amp;part DIAG=&amp;diag _ Access Exit Error<br/> CFTT40E _ Access Exit Error &lt;PART=&amp;part DIAG=&amp;diag&gt; |
@@ -18904,7 +18887,7 @@
 
 
 
-============================== table nb count(1260) ============================================
+============================== table nb count(1259) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT42E"></span>CFTT42E part&amp;PART=&lt;Partner switching IPART=PART not available<br/> CFTT42E _ Partner switching IPART=PART not available &lt;PART=&amp;part&gt; |
@@ -18913,7 +18896,7 @@
 
 
 
-============================== table nb count(1261) ============================================
+============================== table nb count(1260) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT44E"></span>CFTT44E PART=&amp;part IDF=&amp;idf _ &amp;str directory &amp;file<br/> CFTT44E _ &amp;str directory &amp;file &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf&gt; |
@@ -18923,7 +18906,7 @@
 
 
 
-============================== table nb count(1262) ============================================
+============================== table nb count(1261) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT44W"></span>CFTT44W PART=&amp;part IDF=&amp;idf _ &amp;str directory &amp;file (file not found ignored)<br/> CFTT44W _ &amp;str directory &amp;file &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf&gt; (file not found ignored) |
@@ -18934,7 +18917,7 @@
 
 
 
-============================== table nb count(1263) ============================================
+============================== table nb count(1262) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT45E"></span><br/> CFTT45E PART=&amp;part _ Partner switching IPART=&amp;ipart not found<br/> CFTT45E _ Partner switching not found &lt;PART=&amp;part IPART=&amp;ipart&gt; |
@@ -18944,7 +18927,7 @@
 
 
 
-============================== table nb count(1264) ============================================
+============================== table nb count(1263) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTT46W"></span>CFTT46W PART=&amp;part ,IDF=&amp;idf ,IDT=&amp;idt _ Part inactive: mode &amp;str<br/> CFTT46W _ Part inactive: mode &amp;str &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -18953,7 +18936,7 @@
 
 
 
-============================== table nb count(1265) ============================================
+============================== table nb count(1264) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT47E"></span>CFTT47E PART=&amp;part IDF=&amp;idf IDT=&amp;idt PROTOCOL=&amp;id _ Cannot find SSL security profil<br/> CFTT47E _ Cannot find SSL security profil &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt PROTOCOL=&amp;prot&gt; |
@@ -18963,7 +18946,7 @@
 
 
 
-============================== table nb count(1266) ============================================
+============================== table nb count(1265) ============================================
 
 
 | V23 formats<br /> Error  | <span id="CFTT47W"></span>CFTT47W PART=&amp;part IDF=&amp;idf IDT=&amp;idt PROTOCOL=&amp;prot SSLid=&amp;id DIRECT=CLIENT _ Cannot find SSL security profil<br/> CFTT47W PART=&amp;part SSLid=&amp;id DIRECT=SERVER _ No SSL security profile for additional checks |
@@ -18974,7 +18957,7 @@
 
 
 
-============================== table nb count(1267) ============================================
+============================== table nb count(1266) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT48E"></span>CFTT48E PART=&amp;part SSL=&amp;id _ Server Session rejected reason=&amp;reason<br/> CFTT48E _ Server Session rejected reason=&amp;reason &lt;PART=&amp;part SSL=&amp;ssl&gt; |
@@ -18985,7 +18968,7 @@
 
 
 
-============================== table nb count(1268) ============================================
+============================== table nb count(1267) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTT49W"></span>CFTT49W Unable to send data to Synchronous task<br/> CFTT49W Unable to send data to Synchronous task |
@@ -18994,7 +18977,7 @@
 
 
 
-============================== table nb count(1269) ============================================
+============================== table nb count(1268) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT50E"></span>CFTT50E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Duplicate transfer with IDTU=<br/> CFTT50E _ Duplicate transfer with IDTU=&amp;idtu &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -19003,7 +18986,7 @@
 
 
 
-============================== table nb count(1270) ============================================
+============================== table nb count(1269) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT51I"></span>CFTT51I PART=&amp;part ,&amp;str session opened<br/> CFTT51I PART=&amp;part ,&amp;str session opened |
@@ -19012,7 +18995,7 @@
 
 
 
-============================== table nb count(1271) ============================================
+============================== table nb count(1270) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT52I"></span>CFTT52I PART=&amp;part ,&amp;str session closed<br/> CFTT52I PART=&amp;part ,&amp;str session closed |
@@ -19021,7 +19004,7 @@
 
 
 
-============================== table nb count(1272) ============================================
+============================== table nb count(1271) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT53I"></span>CFTT53I PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;str file &amp;str1<br/> CFTT53I &amp;str file &amp;str1 &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -19030,7 +19013,7 @@
 
 
 
-============================== table nb count(1273) ============================================
+============================== table nb count(1272) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT54I"></span>CFTT54I PART=&amp;part IDF=&amp;idf IDT=&amp;idt ,&amp;str file deselected<br/> CFTT54I &amp;fname file deselected &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -19039,7 +19022,7 @@
 
 
 
-============================== table nb count(1274) ============================================
+============================== table nb count(1273) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT55I"></span>CFTT55I PART=&amp;part IDF=&amp;idf IDT=&amp;idt ,&amp;str file opened<br/> CFTT55I &amp;fname file opened &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -19048,7 +19031,7 @@
 
 
 
-============================== table nb count(1275) ============================================
+============================== table nb count(1274) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT56I"></span>CFTT56I PART=&amp;part IDF=&amp;idf IDT=&amp;idt ,&amp;str file closed<br/> CFTT56I &amp;fname file closed &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -19057,7 +19040,7 @@
 
 
 
-============================== table nb count(1276) ============================================
+============================== table nb count(1275) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT57I"></span>CFTT57I PART=&amp;part IDF=&amp;idf IDT=&amp;idt IDS=&amp;ids,&amp;str transfer started<br/> CFTT57I &amp;str transfer started &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt IDS=&amp;ids&gt; |
@@ -19066,7 +19049,7 @@
 
 
 
-============================== table nb count(1277) ============================================
+============================== table nb count(1276) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT58I"></span>CFTT58I PART=&amp;part IDF=&amp;idf IDT=&amp;idt IDS=&amp;ids,&amp;str transfer ended<br/> CFTT58I &amp;str transfer ended &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt IDS=&amp;ids&gt; |
@@ -19075,7 +19058,7 @@
 
 
 
-============================== table nb count(1278) ============================================
+============================== table nb count(1277) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT59I"></span>CFTT59I PART=&amp;part IDM=&amp;idf IDT=&amp;idt ,&amp;str &lt;message|reply&gt; transferred<br/> CFTT59I &amp;str &lt;message|reply&gt; transferred &lt;IDTU=&amp;idtu PART=&amp;part IDM=&amp;idm IDT=&amp;idt&gt; |
@@ -19084,7 +19067,7 @@
 
 
 
-============================== table nb count(1279) ============================================
+============================== table nb count(1278) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT60I"></span>CFTT60I &amp;str<br/> CFTT60I IDTU=&amp;idtu &amp;str |
@@ -19093,7 +19076,7 @@
 
 
 
-============================== table nb count(1280) ============================================
+============================== table nb count(1279) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT61E"></span>CFTT61E PART=&amp;part IDM=&amp;idf IDT=&amp;idt local message reject &amp;diagi ,&amp;diagp<br/> CFTT61E local message transfer reject &lt;IDTU=&amp;idtu PART=&amp;part IDM=&amp;idm IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
@@ -19104,7 +19087,7 @@
 
 
 
-============================== table nb count(1281) ============================================
+============================== table nb count(1280) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT62E"></span>CFTT62E PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp<br/> CFTT62E &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
@@ -19115,7 +19098,7 @@
 
 
 
-============================== table nb count(1282) ============================================
+============================== table nb count(1281) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT62E"></span><span id="CFTT63E"></span>CFTT63E IDTU=&amp;idtu MODE=&amp;str Transfer refused due to product key limitation until &amp;date<br/> CFTT63E _ Transfer refused due to product key limitation until &amp;date &lt;IDTU=&amp;idtu MODE=&amp;mode&gt; |
@@ -19124,7 +19107,7 @@
 
 
 
-============================== table nb count(1283) ============================================
+============================== table nb count(1282) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT64E"></span>CFTT64E PART=&amp;part IDF=&amp;idf _ Flow does not exist and cft.default_idf.enable is set to 'no'<br/> CFTT64E _ Flow does not exist and cft.default_idf.enable is set to 'no' &lt;PART=&amp;part IDF=&amp;idf&gt; |
@@ -19135,7 +19118,7 @@
 
 
 
-============================== table nb count(1284) ============================================
+============================== table nb count(1283) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT65E"></span>CFTT65E PART=&amp;part IDF=&amp;idf IDT=&amp;idt PROT=&amp;prot _ Protocol not available<br/> CFTT65E _ PROT=&amp;prot not available &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -19146,7 +19129,7 @@
 
 
 
-============================== table nb count(1285) ============================================
+============================== table nb count(1284) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT66E"></span>CFTT66E Maximum number of partners authorized by license key reached (using PART=&amp;part)<br/> CFTT66E Maximum number of partners authorized by license key reached (using PART=&amp;part) |
@@ -19157,7 +19140,7 @@
 
 
 
-============================== table nb count(1286) ============================================
+============================== table nb count(1285) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT66E"></span>CFTT68E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Unexpected AT phase/phasestep at restart, converting T to K<br/> CFTT68E _ Unexpected AT phase/phasestep at restart, converting T to K &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -19168,7 +19151,7 @@
 
 
 
-============================== table nb count(1287) ============================================
+============================== table nb count(1286) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT69E"></span>CFTT69E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Unexpected YE phase/phasestep at restart, converting E to H<br/> CFTT69E _ Unexpected YE phase/phasestep at restart, converting E to H IDTU=&amp;idtu, PART=&amp;part, IDF=&amp;idf, IDT=&amp;idt |
@@ -19179,7 +19162,7 @@
 
 
 
-============================== table nb count(1288) ============================================
+============================== table nb count(1287) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTT70I"></span>CFTT70I The user &amp;user is connecting with method &amp;method<br/> CFTT70I The user &amp;user is connecting with method &amp;method |
@@ -19188,7 +19171,7 @@
 
 
 
-============================== table nb count(1289) ============================================
+============================== table nb count(1288) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTT70E"></span>CFTT70E The user &amp;user is not allowed to connect to the server<br/> CFTT70E The user &amp;user is not allowed to connect to the server |
@@ -19198,7 +19181,7 @@
 
 
 
-============================== table nb count(1290) ============================================
+============================== table nb count(1289) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT71E"></span>CFTT71E PART=&amp;part IDF=&amp;idf IDT=&amp;idt remote creation reject &amp;diagi ,&amp;diagp<br/> CFTT71E remote creation reject &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
@@ -19209,7 +19192,7 @@
 
 
 
-============================== table nb count(1291) ============================================
+============================== table nb count(1290) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT72E"></span>CFTT72E PART=&amp;part IDF=&amp;idf IDT=&amp;idt remote selection reject &amp;diagi ,&amp;diagp<br/> CFTT72E remote selection reject &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
@@ -19220,7 +19203,7 @@
 
 
 
-============================== table nb count(1292) ============================================
+============================== table nb count(1291) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT72W"></span>CFTT72W PART=&amp;part IDF=&amp;idf IDT=&amp;idt remote selection reject (file not found ignored) &amp;diagi ,&amp;diagp,<br/> CFTT72W remote selection reject (file not found ignored) &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp |
@@ -19230,7 +19213,7 @@
 
 
 
-============================== table nb count(1293) ============================================
+============================== table nb count(1292) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT73E"></span><br/> CFTT72E PART=&amp;part IDF=&amp;idf IDT=&amp;idt remote selection reject &amp;diagi ,&amp;diagp<br/> CFTT72E remote selection reject &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp |
@@ -19240,7 +19223,7 @@
 
 
 
-============================== table nb count(1294) ============================================
+============================== table nb count(1293) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT73E"></span>CFTT73E PART=&amp;part IDM=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp<br/> CFTT73E &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
@@ -19251,7 +19234,7 @@
 
 
 
-============================== table nb count(1295) ============================================
+============================== table nb count(1294) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT74E"></span>CFTT74E PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp<br/> CFTT74E &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
@@ -19262,7 +19245,7 @@
 
 
 
-============================== table nb count(1296) ============================================
+============================== table nb count(1295) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT75E"></span>CFTT75E PART=&amp;part IDF=&amp;idf IDT=&amp;idt connect reject &amp;diagi ,&amp;diagp<br/> CFTT75E connect reject &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
@@ -19273,7 +19256,7 @@
 
 
 
-============================== table nb count(1297) ============================================
+============================== table nb count(1296) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | CFTT75E Incorrect user or password &lt;IDTU=&amp;idtuPART=&amp;part IDF=&amp;idf IDT=&amp;idf DIAGI=&amp;diagi&gt;<br/> CFTT75E Incorrect user or password &lt;IDTU=&amp;idtuPART=&amp;part IDF=&amp;idf IDT=&amp;idf DIAGI=&amp;diagi&gt; &lt;/p&gt; |
@@ -19283,7 +19266,7 @@
 
 
 
-============================== table nb count(1298) ============================================
+============================== table nb count(1297) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT76E"></span>CFTT76E PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp<br/> CFTT76E &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
@@ -19294,7 +19277,7 @@
 
 
 
-============================== table nb count(1299) ============================================
+============================== table nb count(1298) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT77E"></span>CFTT77E PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp<br/> CFTT77E &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
@@ -19305,7 +19288,7 @@
 
 
 
-============================== table nb count(1300) ============================================
+============================== table nb count(1299) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT78E"></span>CFTT78E PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp<br/> CFTT78E &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
@@ -19316,7 +19299,7 @@
 
 
 
-============================== table nb count(1301) ============================================
+============================== table nb count(1300) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT79E"></span>CFTT79E PART=&amp;part IDF=&amp;idf IDT=&amp;idt remote deselect reject &amp;diagi ,&amp;diagp<br/> CFTT79E remote deselect reject &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
@@ -19327,7 +19310,7 @@
 
 
 
-============================== table nb count(1302) ============================================
+============================== table nb count(1301) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT80E"></span>CFTT80E PART=&amp;part IDF=&amp;idf IDT=&amp;idt remote open reject &amp;diagi ,&amp;diagp<br/> CFTT80E remote open reject &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
@@ -19338,7 +19321,7 @@
 
 
 
-============================== table nb count(1303) ============================================
+============================== table nb count(1302) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT81E"></span>CFTT81E PART=&amp;part IDF=&amp;idf IDT=&amp;idt remote close reject &amp;diagi ,&amp;diagp<br/> CFTT81E remote close reject &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
@@ -19349,18 +19332,18 @@
 
 
 
-============================== table nb count(1304) ============================================
+============================== table nb count(1303) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT82E"></span>CFTT82E PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt transfer aborted &amp;diagi ,&amp;diagp<br/> CFTT82E transfer aborted &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
 | --- | --- | --- | --- |
-| Explanation | A serious error was detected.<br/> Example<br/> 19/02/19 16:01:37 CFTT82E Transfer aborted &lt;IDTU=A0000008 PART=PARIS_KEY IDF=AS3SR IDT=B1916013 DIAGI=110<br/> 19/02/19 16:01:37 CFTT82E+ DIAGP=00000002 DIAGC=File not found: zohs.bat&gt; |
+| Explanation | A serious error was detected.<br/> **Example** 19/02/19 16:01:37 CFTT82E Transfer aborted &lt;IDTU=A0000008 PART=PARIS_KEY IDF=AS3SR IDT=B1916013 DIAGI=110<br/> 19/02/19 16:01:37 CFTT82E+ DIAGP=00000002 DIAGC=File not found: zohs.bat&gt; |
 | Consequence | The transfer is interrupted and the corresponding catalog entry is set to KEEP. |
 | Action | Correct the error and try again. |
 
 
 
-============================== table nb count(1305) ============================================
+============================== table nb count(1304) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT82W"></span>CFTT82W PART=&amp;part IDF=&amp;idf IDT=&amp;idt transfer aborted (file not found ignored) &amp;diagi ,&amp;diagp<br/> CFTT82W transfer aborted (file not found ignored) &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
@@ -19371,7 +19354,7 @@
 
 
 
-============================== table nb count(1306) ============================================
+============================== table nb count(1305) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT83I"></span>CFTT83I PART=&amp;part IDF=&amp;idf IDT=&amp;idt change direction(CD) for request<br/> CFTT83I change direction(CD) for request &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt&gt; |
@@ -19380,7 +19363,7 @@
 
 
 
-============================== table nb count(1307) ============================================
+============================== table nb count(1306) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT86I"></span>CFTT86I PART=&amp;part IDS=&amp;ids Change direction(TURN) sent<br/> CFTT86I Change direction(TURN) sent &lt;PART=&amp;part IDS=&amp;ids&gt; |
@@ -19389,7 +19372,7 @@
 
 
 
-============================== table nb count(1308) ============================================
+============================== table nb count(1307) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | CFTT86I FNAME=&amp;fname S=ByteCount<br/> CFTT86I FNAME=&amp;fname S=ByteCount |
@@ -19398,7 +19381,7 @@
 
 
 
-============================== table nb count(1309) ============================================
+============================== table nb count(1308) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT87I"></span>CFTT87I PART=&amp;part IDS=&amp;ids Change direction(TURN) received<br/> CFTT87I Change direction(TURN) received&lt;PART=&amp;part IDS=&amp;ids&gt; |
@@ -19407,7 +19390,7 @@
 
 
 
-============================== table nb count(1310) ============================================
+============================== table nb count(1309) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT88I"></span>CFTT88I+IDT=&amp;idt WORKINGDIR=&amp;workingdir FNAME=&amp;fname NBC=&amp;n DURATION=&amp;time<br/> CFTT88I+&lt;IDTU=&amp;idtu WORKINGDIR=&amp;workingdir FNAME=&amp;fname NBC=&amp;n DURATION==&amp;time&gt; |
@@ -19416,7 +19399,7 @@
 
 
 
-============================== table nb count(1311) ============================================
+============================== table nb count(1310) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT89I"></span>CFTT89I PART=&amp;part IDF=&amp;idf IDT=&amp;idt Faction on FNAME=&amp;fname : &amp;str+"deleted" or "erased"<br/> CFTT89I Faction on FNAME=&amp;fname : &amp;str+"deleted" or "erased" &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -19427,7 +19410,7 @@
 
 
 
-============================== table nb count(1312) ============================================
+============================== table nb count(1311) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTT90W"></span>CFTT90W IDF=&amp;idf IDT=&amp;idt Faction on FNAME=&amp;fname : erase failed cs<br/> CFTT90W IDF=&amp;idf IDT=&amp;idt Faction on FNAME=&amp;fname : erase failed &amp;scs |
@@ -19439,7 +19422,7 @@
 
 
 
-============================== table nb count(1313) ============================================
+============================== table nb count(1312) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTT91W"></span>CFTT91W PART=&amp;part IDS=&amp;ids Change direction(TURN) not supported by server<br/> CFTT91W Change direction (TURN) not supported by server PART=DMZ1 IDS=&amp;ids |
@@ -19449,7 +19432,7 @@
 
 
 
-============================== table nb count(1314) ============================================
+============================== table nb count(1313) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT93W"></span> CFTT92I IDTU=&amp;idtu CTX=&amp;ctx IDT=&amp;idt<br/> CFTT92I &lt;IDTU=&amp;idtu CTX=&amp;ctx IDT=&amp;idt&gt; |
@@ -19458,7 +19441,7 @@
 
 
 
-============================== table nb count(1315) ============================================
+============================== table nb count(1314) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTT93W"></span>CFTT93W PART=&amp;part IDS=&amp;ids Negative ack not supported<br/> CFTT93W Negative ack not supported PART=&amp;part IDS=&amp;ids |
@@ -19467,7 +19450,7 @@
 
 
 
-============================== table nb count(1316) ============================================
+============================== table nb count(1315) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTT94I"></span>CFTT94I PART=&amp;part IDF=&amp;idf IDT=&amp;idt FCHARSET=&amp;str NCHARSET=&amp;str<br/> CFTT94I &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt FCHARSET=&amp;str NCHARSET=&amp;str&gt; |
@@ -19476,7 +19459,7 @@
 
 
 
-============================== table nb count(1317) ============================================
+============================== table nb count(1316) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTT95E"></span>CFTT95E Incorrect user or password &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idtf DIAGI=&amp;diagi&gt;<br/> CFTT95E Incorrect user or password &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt DIAGI=&amp;diagi&gt; |
@@ -19486,7 +19469,7 @@
 
 
 
-============================== table nb count(1318) ============================================
+============================== table nb count(1317) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTT96I"></span> CFTT96I &amp;str transfer restarted &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt POS=&amp;pos IDS=&amp;ids&gt;<br/> CFTT96I &amp;str transfer restarted &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt POS=&amp;pos IDS=&amp;ids&gt; |
@@ -19495,7 +19478,7 @@
 
 
 
-============================== table nb count(1319) ============================================
+============================== table nb count(1318) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT97E"></span>CFTT97E cmd prefix not allowed in procedure execution for SEND and RECV commands",<br/> CFTT97E cmd prefix not allowed in procedure execution for SEND and RECV commands |
@@ -19504,7 +19487,7 @@
 
 
 
-============================== table nb count(1320) ============================================
+============================== table nb count(1319) ============================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT98W"></span>CFTT98W PART=%-8.8s IDF=%-8.8s IDT=%.8s Rename ignored because WFNAME equals FNAME,<br/> CFTT98W Rename ignored because WFNAME equals FNAME &lt;IDTU=%.8s PART=%s IDF=%s IDT=%.8s&gt; |
@@ -19513,7 +19496,7 @@
 
 
 
-============================== table nb count(1321) ============================================
+============================== table nb count(1320) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTW01W"></span>CFTW01W PART=&amp;part IDF=&amp;idf IDT=&amp;idt Temporary file &amp;file deleted<br/> CFTW01W File &amp;fname deleted &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &gt; |
@@ -19522,7 +19505,7 @@
 
 
 
-============================== table nb count(1322) ============================================
+============================== table nb count(1321) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTW02W"></span>CFTW02W CFTSEND &amp;idsend override SEND parameters<br/> CFTW02W CFTSEND &amp;id override SEND parameters |
@@ -19531,7 +19514,7 @@
 
 
 
-============================== table nb count(1323) ============================================
+============================== table nb count(1322) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTW03W"></span>CFTW03W _ Send command: Unauthorized usage of IDF = &amp;idf<br/> CFTW03W _ Send Command : Unauthorized usage on IDF = &amp;id |
@@ -19540,7 +19523,7 @@
 
 
 
-============================== table nb count(1324) ============================================
+============================== table nb count(1323) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTW04W"></span>CFTW04W _ Recv command: Unauthorized usage on IDF = &amp;idf<br/> CFTW04W _ Recv Command : Unauthorized usage on IDF = &amp;id |
@@ -19549,7 +19532,7 @@
 
 
 
-============================== table nb count(1325) ============================================
+============================== table nb count(1324) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTW05W"></span>CFTW05W PART=&amp;part IDF = &amp;idf Temporary file unknown, WFNAME not defined in SEND<br/> CFTW05W PART=&amp;part IDF=&amp;idf Temporary file unknown, WFNAME not defined in SEND |
@@ -19559,7 +19542,7 @@
 
 
 
-============================== table nb count(1326) ============================================
+============================== table nb count(1325) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTW07W"></span>CFTW07W PART=&amp;part IDF = &amp;idf _ SELFNAME not authorized for COPY<br/> CFTW07W PART=&amp;par IDF=&amp;idf _ SELFNAME not authorized for COPY\n |
@@ -19570,7 +19553,7 @@
 
 
 
-============================== table nb count(1327) ============================================
+============================== table nb count(1326) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTW08W"></span>CFTW08W CFTRECV &amp;idrecv override RECV parameters<br/> CFTW08W CFTRECV &amp;id override RECV parameters |
@@ -19579,7 +19562,7 @@
 
 
 
-============================== table nb count(1328) ============================================
+============================== table nb count(1327) ============================================
 
 
 | V23 format<br/> <br/> V24 format<br/> <br/> Information | <span id="CFTW09I"></span>CFTW09I PART=&amp;part IDF=&amp;idf IDT=&amp;idt CFTSEND &amp;idf NIDF=&amp;nidf XLATE=&amp;xlate<br/> CFTW09I PART=&amp;part IDF=&amp;idf IDT=&amp;idt CFTRECV &amp;idf NIDF=&amp;nidf XLATE=&amp;xlate<br/> CFTW09I CFTSEND &amp;idf &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt NIDF=&amp;nidf XLATE=&amp;xlate&gt;<br/> CFTW09I CFTRECV &amp;idf &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt NIDF=&amp;nidf XLATE=&amp;xlate&gt; |
@@ -19588,7 +19571,7 @@
 
 
 
-============================== table nb count(1329) ============================================
+============================== table nb count(1328) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTX01W"></span>CFTX01W Action &amp;action on object &amp;object not authorized for user &amp;user : ID CFTAPPL=&amp;id CFTX01W Action &amp;action on object &amp;object not authorized for user &amp;user : ID CFTAPPL=&amp;id |
@@ -19597,7 +19580,7 @@
 
 
 
-============================== table nb count(1330) ============================================
+============================== table nb count(1329) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTX02W"></span>CFTX02W owner user is &amp;user, owner group is &amp;group<br/> CFTX02W owner user is &amp;user, owner group is &amp;group |
@@ -19606,7 +19589,7 @@
 
 
 
-============================== table nb count(1331) ============================================
+============================== table nb count(1330) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTX03W"></span>CFTX03W Action &amp;action on object &amp;object not authorized for user &amp;user<br/> CFTX03W+Action &amp;action on object &amp;object not authorized for user &amp;user |
@@ -19615,7 +19598,7 @@
 
 
 
-============================== table nb count(1332) ============================================
+============================== table nb count(1331) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTX04W"></span>CFTX04W With value &amp;value<br/> CFTX04W+with value &amp;value |
@@ -19624,7 +19607,7 @@
 
 
 
-============================== table nb count(1333) ============================================
+============================== table nb count(1332) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTX05W"></span>CFTX05W Action &amp;action on object &amp;object not authorized for user &amp;user: FNAME=&amp;fname<br/> CFTX05W Action &amp;action on object &amp;object not authorized for user &amp;user : FNAME=&amp;fname |
@@ -19633,7 +19616,7 @@
 
 
 
-============================== table nb count(1334) ============================================
+============================== table nb count(1333) ============================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTX10I"></span>CFTX10I Warning : security file commands were modified CFTX10I Warning : security file commands were modified |
@@ -19644,7 +19627,7 @@
 
 
 
-============================== table nb count(1335) ============================================
+============================== table nb count(1334) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY03E"></span>CFTY03E PID=&amp;pid System error [&amp;string] CR=&amp;cr CS=&amp;cs<br/> CFTY03E PID=&amp;pid System error [&amp;string] CR=&amp;cr CS=&amp;cs |
@@ -19666,7 +19649,7 @@
 
 
 
-============================== table nb count(1336) ============================================
+============================== table nb count(1335) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY04E"></span>CFTY04E PID=&amp;pid PKIFNAME=&amp;string Internal PKI error [&amp;string] CR=&amp;cr<br/> CS=&amp;cs CFTY04E PID=&amp;pid PKIFNAME=&amp;string Internal PKI error [&amp;string] CR=&amp;cr CS=&amp;cs |
@@ -19684,7 +19667,7 @@
 
 
 
-============================== table nb count(1337) ============================================
+============================== table nb count(1336) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY05E"></span>CFTY05E PID=&amp;pid PKIFNAME=&amp;file Syntax error _ &amp;string<br/> CFTY05E PID=&amp;pid PKIFNAME=&amp;file Syntax error _ &amp;string |
@@ -19695,7 +19678,7 @@
 
 
 
-============================== table nb count(1338) ============================================
+============================== table nb count(1337) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY06E"></span>CFTY06E CTX=&amp;ctx Certificate Request Message error _ &amp;string<br/> CFTY06E CTX=&amp;ctx Certificate Request Message error _ &amp;string |
@@ -19721,7 +19704,7 @@
 
 
 
-============================== table nb count(1339) ============================================
+============================== table nb count(1338) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY08I"></span>CFTY08I PID=&amp;pid Task started successfully<br/> CFTY08I PID=&amp;pid Task started successfully |
@@ -19730,7 +19713,7 @@
 
 
 
-============================== table nb count(1340) ============================================
+============================== table nb count(1339) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY09I"></span>CFTY09I PID=&amp;pid Task ended<br/> CFTY09I PID=&amp;pid Task ended |
@@ -19739,7 +19722,7 @@
 
 
 
-============================== table nb count(1341) ============================================
+============================== table nb count(1340) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY10E"></span>CFTY10E PID=&amp;pid CTX=&amp;ctx Invalid reference on &amp;string<br/> CFTY10E PID=&amp;pid CTX=&amp;ctx Invalid reference on &amp;string |
@@ -19749,7 +19732,7 @@
 
 
 
-============================== table nb count(1342) ============================================
+============================== table nb count(1341) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY11I"></span>CFTY11I CTX=&amp;ctx PART=&amp;id SSL=&amp;id Closing client SSL session<br/> CFTY11I CTX=&amp;ctx PART=&amp;id SSL=&amp;id Closing client SSL session |
@@ -19758,7 +19741,7 @@
 
 
 
-============================== table nb count(1343) ============================================
+============================== table nb count(1342) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY12I"></span>CFTY12I CTX=&amp;ctx PROT=&amp;id SSL=&amp;id Closing server SSL session<br/> CFTY12I CTX=&amp;ctx PROT=&amp;id SSL=&amp;id Closing server SSL session |
@@ -19767,7 +19750,7 @@
 
 
 
-============================== table nb count(1344) ============================================
+============================== table nb count(1343) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY13E"></span>CFTY13E CTX=&amp;ctx SSL Handshake local error [&amp;string] CR=&amp;cr<br/> CFTY13E CTX=&amp;ctx SSL Handshake local error [&amp;string] CR=&amp;cr |
@@ -19778,7 +19761,7 @@
 
 
 
-============================== table nb count(1345) ============================================
+============================== table nb count(1344) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY14I"></span>CFTY14I CTX=&amp;ctx PART=&amp;id SSL=&amp;id client session established VERSION=&amp;ver CIPHER=&amp;num AUTH=&amp;mode CFTY14I CTX=&amp;ctx PART=&amp;id SSL=&amp;id client session established VERSION=&amp;ver CIPHER=&amp;num AUTH=&amp;mode<br/>  |
@@ -19787,7 +19770,7 @@
 
 
 
-============================== table nb count(1346) ============================================
+============================== table nb count(1345) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY15I"></span>CFTY15I CTX=&amp;ctx PROT=&amp;id SSL=&amp;id server session established VERSION=&amp;ver CIPHER=&amp;num AUTH=&amp;mode CFTY15I CTX=&amp;ctx PROT=&amp;id SSL=&amp;id server session established VERSION=&amp;ver CIPHER=&amp;num AUTH=&amp;mode |
@@ -19796,7 +19779,7 @@
 
 
 
-============================== table nb count(1347) ============================================
+============================== table nb count(1346) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY16I"></span>CFTY16I CTX=&amp;ctx &amp;message<br/> CFTY16I CTX=&amp;ctx &amp;message |
@@ -19805,7 +19788,7 @@
 
 
 
-============================== table nb count(1348) ============================================
+============================== table nb count(1347) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY17I"></span>CFTY17I CTX=&amp;ctx &amp;msg<br/> CFTY17I CTX=&amp;ctx &amp;msg |
@@ -19814,7 +19797,7 @@
 
 
 
-============================== table nb count(1349) ============================================
+============================== table nb count(1348) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY18E"></span>CFTY18E CTX=&amp;ctx &amp;str<br/> CFTY18E CTX=&amp;ctx &amp;str |
@@ -19825,7 +19808,7 @@
 
 
 
-============================== table nb count(1350) ============================================
+============================== table nb count(1349) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY19I"></span>CFTY19I PART=&amp;id SSL=&amp;id opening client session CTX=&amp;ctx on task PID=&amp;pid<br/> CFTY19I PART=&amp;id SSL=&amp;id opening client session CTX=&amp;ctx on task PID=&amp;pid |
@@ -19834,7 +19817,7 @@
 
 
 
-============================== table nb count(1351) ============================================
+============================== table nb count(1350) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY20I"></span> CFTY20I PROT=&amp;id SSL=&amp;id opening server session CTX=&amp;ctx on task PID=&amp;pid<br/> CFTY20I PROT=&amp;id SSL=&amp;id opening server session CTX=&amp;ctx on task PID=&amp;pid |
@@ -19843,7 +19826,7 @@
 
 
 
-============================== table nb count(1352) ============================================
+============================== table nb count(1351) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY21I"></span>CFTY21I CTX=&amp;ctx Remote server certificate accepted<br/> CFTY21I CTX=&amp;ctx Remote server certificate accepted |
@@ -19852,7 +19835,7 @@
 
 
 
-============================== table nb count(1353) ============================================
+============================== table nb count(1352) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY22I"></span>CFTY22I CTX=&amp;ctx Remote client certificate accepted<br/> CFTY22I CTX=&amp;ctx Remote client certificate accepted |
@@ -19861,7 +19844,7 @@
 
 
 
-============================== table nb count(1354) ============================================
+============================== table nb count(1353) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY23I"></span>CFTY23I CTX=&amp;ctx Client certificate ID=&amp;id ROOTID=&amp;id<br/> CFTY23I CTX=&amp;ctx Client certificate ID=&amp;id ROOTID=&amp;id |
@@ -19870,7 +19853,7 @@
 
 
 
-============================== table nb count(1355) ============================================
+============================== table nb count(1354) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY24I"></span>CFTY24I CTX=&amp;ctx Server certificate ID=&amp;id ROOTID=&amp;id<br/> CFTY24I CTX=&amp;ctx Server certificate ID=&amp;id ROOTID=&amp;id |
@@ -19879,7 +19862,7 @@
 
 
 
-============================== table nb count(1356) ============================================
+============================== table nb count(1355) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY25I"></span>CFTY25I CTX=&amp;ctx remote address HOST=&amp;string<br/> CFTY25I CTX=&amp;ctx remote address HOST=&amp;string |
@@ -19888,7 +19871,7 @@
 
 
 
-============================== table nb count(1357) ============================================
+============================== table nb count(1356) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY26I"></span>CFTY26I CTX=&amp;ctx Anonymous &amp;str session<br/> CFTY26I CTX=&amp;ctx Anonymous &amp;str session |
@@ -19897,7 +19880,7 @@
 
 
 
-============================== table nb count(1358) ============================================
+============================== table nb count(1357) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY28W"></span>CFTY28W CTX=&amp;ctx &amp;str2 = &amp;filename<br/> CFTY28W CTX=&amp;ctx &amp;str2 = &amp;filename |
@@ -19908,7 +19891,7 @@
 
 
 
-============================== table nb count(1359) ============================================
+============================== table nb count(1358) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY30E"></span>CFTY30E CTX=&amp;ctx SSL Handshake remote error [&amp;string] CR=&amp;cr<br/> CFTY30E CTX=&amp;ctx SSL Handshake remote error [&amp;string] CR=&amp;cr |
@@ -19919,7 +19902,7 @@
 
 
 
-============================== table nb count(1360) ============================================
+============================== table nb count(1359) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY41E"></span>CFTY41E CFTCTX=&lt;session_reference&gt;, xpp call &lt;PassportPS_API_function&gt;: error [&lt;PassportPS_API_function_returncode&gt;]<br/> CFTY41E CFTCTX=&lt;session_reference&gt;, xpp call &lt;PassportPS_API_function&gt;: error [&lt;PassportPS_API_function_returncode&gt;] |
@@ -19928,7 +19911,7 @@
 
 
 
-============================== table nb count(1361) ============================================
+============================== table nb count(1360) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY44E"></span>CFTY44E CFTCTX=&lt;session_reference&gt;, long err msg : [&lt;PassportPS_API_error_code&gt;]  |
@@ -19937,7 +19920,7 @@
 
 
 
-============================== table nb count(1362) ============================================
+============================== table nb count(1361) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY45E"></span>CFTY45E CFTCTX=&lt;session_reference&gt;, &lt;PassportPS_API_error_message&gt;  |
@@ -19946,7 +19929,7 @@
 
 
 
-============================== table nb count(1363) ============================================
+============================== table nb count(1362) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY50I"></span>CFTY50I SSH client session established CTX=&amp;ctx PART=&amp;part Version=&amp;version Cipher in=&amp;cipher Cipher out=&amp;cipher Key exchange=&amp;key hmac in=&amp;hmac hmac out=&amp;hmac &amp;IPVersion<br/> CFTY50I SSH client session established CTX=&amp;ctx PART=&amp;part Version=&amp;version Cipher in=&amp;cipher Cipher out=&amp;cipher Key exchange=&amp;key hmac in=&amp;hmac hmac out=&amp;hmac |
@@ -19955,7 +19938,7 @@
 
 
 
-============================== table nb count(1364) ============================================
+============================== table nb count(1363) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY51I"></span>CFTY51I SSH server session established CTX=&amp;ctx PART=&amp;part Version=&amp;version Cipher in=&amp;cipher Cipher out=&amp;cipher Key exchange=&amp;key hmac in=&amp;hmac hmac out=&amp;hmac &amp;IPVersion<br/> CFTY51I SSH server session established CTX=&amp;ctx PROT=&amp;prot Version=&amp;version Cipher in=&amp;cipher Cipher out=&amp;cipher Key exchange=&amp;key hmac in=&amp;hmac hmac out=&amp;hmac |
@@ -19964,7 +19947,7 @@
 
 
 
-============================== table nb count(1365) ============================================
+============================== table nb count(1364) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY52I"></span>CFTY52I SFTP client session established CTX=&amp;ctx PART=&amp;part Version=&amp;version Authentication=&amp;authentication CFT Server=&amp;server<br/> CFTY52I SFTP client session established CTX=&amp;ctx PART=&amp;part Version=&amp;version Authentication=&amp;authentication CFT Server=&amp;server |
@@ -19973,7 +19956,7 @@
 
 
 
-============================== table nb count(1366) ============================================
+============================== table nb count(1365) ============================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY53I"></span>CFTY53I SFTP server session established CTX=&amp;ctx PROT=&amp;prot Version=&amp;version Authentication=&amp;authentication CFT Client=&amp;client<br/> CFTY53I SFTP server session established CTX=&amp;ctx PROT=&amp;prot Version=&amp;version Authentication=&amp;authentication CFT Client=&amp;client |
@@ -19982,7 +19965,7 @@
 
 
 
-============================== table nb count(1367) ============================================
+============================== table nb count(1366) ============================================
 
 
 | Error | <span id="CFTU00I"></span>CFTU00I: &amp;Cmd _ Correct (&amp;str) |
@@ -19991,7 +19974,7 @@
 
 
 
-============================== table nb count(1368) ============================================
+============================== table nb count(1367) ============================================
 
 
 | Error | <span id="CFTU01E"></span>CFTU01E: storage allocation error |
@@ -20002,7 +19985,7 @@
 
 
 
-============================== table nb count(1369) ============================================
+============================== table nb count(1368) ============================================
 
 
 | Error | <span id="CFTU02E"></span>CFTU02E: unable to allocate file &amp;Fname |
@@ -20013,7 +19996,7 @@
 
 
 
-============================== table nb count(1370) ============================================
+============================== table nb count(1369) ============================================
 
 
 | Error | <span id="CFTU03E"></span>CFTU03E: unable to open file &amp;Fname |
@@ -20024,7 +20007,7 @@
 
 
 
-============================== table nb count(1371) ============================================
+============================== table nb count(1370) ============================================
 
 
 | Error | <span id="CFTU04E"></span>CFTU04E: error reading input file &amp;Fname |
@@ -20035,7 +20018,7 @@
 
 
 
-============================== table nb count(1372) ============================================
+============================== table nb count(1371) ============================================
 
 
 | Error | <span id="CFTU05E"></span>CFTU05E: &amp;Cmd Failed _ Unexpected end of file (command) |
@@ -20046,7 +20029,7 @@
 
 
 
-============================== table nb count(1373) ============================================
+============================== table nb count(1372) ============================================
 
 
 | Error | <span id="CFTU06E"></span>CFTU06E: unexpected end of file before new command |
@@ -20057,7 +20040,7 @@
 
 
 
-============================== table nb count(1374) ============================================
+============================== table nb count(1373) ============================================
 
 
 | Error | <span id="CFTU07E"></span>CFTU07E: &amp;Cmd Failed _ unexpected end of file (comments) |
@@ -20068,7 +20051,7 @@
 
 
 
-============================== table nb count(1375) ============================================
+============================== table nb count(1374) ============================================
 
 
 | Error | <span id="CFTU08E"></span>CFTU08E: &amp;Cmd Failed _ missing parenthesis |
@@ -20079,7 +20062,7 @@
 
 
 
-============================== table nb count(1376) ============================================
+============================== table nb count(1375) ============================================
 
 
 | Error | <span id="CFTU09E"></span>CFTU09E: &amp;Cmd Failed _ command size too large |
@@ -20090,7 +20073,7 @@
 
 
 
-============================== table nb count(1377) ============================================
+============================== table nb count(1376) ============================================
 
 
 | Error | <span id="CFTU10E"></span>CFTU10E: &amp;Cmd Failed _ unknown command |
@@ -20101,7 +20084,7 @@
 
 
 
-============================== table nb count(1378) ============================================
+============================== table nb count(1377) ============================================
 
 
 | Error | <span id="CFTU11E"></span>CFTU11E: &amp;Cmd Failed _ keyword &amp;Keyw too large |
@@ -20112,7 +20095,7 @@
 
 
 
-============================== table nb count(1379) ============================================
+============================== table nb count(1378) ============================================
 
 
 | Error | <span id="CFTU12E"></span>CFTU12E: &amp;Cmd Failed _ illegal separator for keyword &amp;Keyw |
@@ -20123,7 +20106,7 @@
 
 
 
-============================== table nb count(1380) ============================================
+============================== table nb count(1379) ============================================
 
 
 | Error | <span id="CFTU13E"></span>CFTU13E: &amp;Cmd Failed_missing quote |
@@ -20134,7 +20117,7 @@
 
 
 
-============================== table nb count(1381) ============================================
+============================== table nb count(1380) ============================================
 
 
 | Error | <span id="CFTU14E"></span>CFTU14E: &amp;Cmd Failed _ too many keywords |
@@ -20145,7 +20128,7 @@
 
 
 
-============================== table nb count(1382) ============================================
+============================== table nb count(1381) ============================================
 
 
 | Error | <span id="CFTU15E"></span>CFTU15E: &amp;Cmd Failed _ keyword &amp;Keyw unknown or duplicate |
@@ -20156,7 +20139,7 @@
 
 
 
-============================== table nb count(1383) ============================================
+============================== table nb count(1382) ============================================
 
 
 | Error | <span id="CFTU16E"></span>CFTU16E: &amp;Cmd Failed _ keyword &amp;Keyw missing |
@@ -20167,7 +20150,7 @@
 
 
 
-============================== table nb count(1384) ============================================
+============================== table nb count(1383) ============================================
 
 
 | Error | <span id="CFTU17E"></span>CFTU17E: &amp;Cmd Failed _ keyword &amp;Keyw value out of bounds |
@@ -20178,7 +20161,7 @@
 
 
 
-============================== table nb count(1385) ============================================
+============================== table nb count(1384) ============================================
 
 
 | Error | <span id="CFTU18E"></span>CFTU18E: &amp;Cmd Failed _ invalid value for keyword &amp;Keyw |
@@ -20189,7 +20172,7 @@
 
 
 
-============================== table nb count(1386) ============================================
+============================== table nb count(1385) ============================================
 
 
 | Error | <span id="CFTU19E"></span>CFTU19E: CFTDEST Failed _ keywords FNAME and &amp;str are mutually exclusive |
@@ -20198,7 +20181,7 @@
 
 
 
-============================== table nb count(1387) ============================================
+============================== table nb count(1386) ============================================
 
 
 | Error | <span id="CFTU20I"></span>CFTU20I: &amp;str |
@@ -20207,7 +20190,7 @@
 
 
 
-============================== table nb count(1388) ============================================
+============================== table nb count(1387) ============================================
 
 
 | Error | <span id="CFTU24W"></span>CFTU24W : &amp;Cmd _ Warning (&amp;str) |
@@ -20216,7 +20199,7 @@
 
 
 
-============================== table nb count(1389) ============================================
+============================== table nb count(1388) ============================================
 
 
 | Error | <span id="CFTU26E"></span>CFTU26E : &amp;Cmd _ Error (&amp;str) |
@@ -20227,7 +20210,7 @@
 
 
 
-============================== table nb count(1390) ============================================
+============================== table nb count(1389) ============================================
 
 
 | Error | <span id="CFTU30E"></span>CFTU30E : &amp;Cmd Failed _ Unable to create file &amp;Fname |
@@ -20238,7 +20221,7 @@
 
 
 
-============================== table nb count(1391) ============================================
+============================== table nb count(1390) ============================================
 
 
 | Code | Description |
@@ -20275,7 +20258,7 @@
 
 
 
-============================== table nb count(1392) ============================================
+============================== table nb count(1391) ============================================
 
 
 | Code | Meaning  |
@@ -20432,7 +20415,7 @@
 
 
 
-============================== table nb count(1393) ============================================
+============================== table nb count(1392) ============================================
 
 
 | Code &lt;/th&gt;  | Meaning &lt;/th&gt;  |
@@ -20452,7 +20435,7 @@
 
 
 
-============================== table nb count(1394) ============================================
+============================== table nb count(1393) ============================================
 
 
 | Format &lt;/th&gt;  | Meaning &lt;/th&gt;  |
@@ -20469,7 +20452,7 @@
 
 
 
-============================== table nb count(1395) ============================================
+============================== table nb count(1394) ============================================
 
 
 | Code  | Protocol  | Meaning  |
@@ -20558,7 +20541,7 @@
 
 
 
-============================== table nb count(1396) ============================================
+============================== table nb count(1395) ============================================
 
 
 | Error code  | Description  |
@@ -20585,7 +20568,7 @@
 
 
 
-============================== table nb count(1397) ============================================
+============================== table nb count(1396) ============================================
 
 
 | Error code  | Description  |
@@ -20635,7 +20618,7 @@
 
 
 
-============================== table nb count(1398) ============================================
+============================== table nb count(1397) ============================================
 
 
 | Error code  | Description  |
@@ -20655,7 +20638,7 @@
 
 
 
-============================== table nb count(1399) ============================================
+============================== table nb count(1398) ============================================
 
 
 | Code  | FPDU  |
@@ -20695,7 +20678,7 @@
 
 
 
-============================== table nb count(1400) ============================================
+============================== table nb count(1399) ============================================
 
 
 | Hexadecimal Code  | Decimal Code  | Meaning  |
@@ -20976,7 +20959,7 @@
 
 
 
-============================== table nb count(1401) ============================================
+============================== table nb count(1400) ============================================
 
 
 | Code  | Contains  | Meaning  |
@@ -21020,7 +21003,7 @@
 
 
 
-============================== table nb count(1402) ============================================
+============================== table nb count(1401) ============================================
 
 
 | XXX &lt;/th&gt;  | FPDU &lt;/th&gt;  | Definition &lt;/th&gt;  |
@@ -21049,7 +21032,7 @@
 
 
 
-============================== table nb count(1403) ============================================
+============================== table nb count(1402) ============================================
 
 
 | Vxxxxxxx  | Definition  |
@@ -21063,7 +21046,7 @@
 
 
 
-============================== table nb count(1404) ============================================
+============================== table nb count(1403) ============================================
 
 
 | Error Code &lt;/th&gt;  | FPDU &lt;/th&gt;  | Meaning &lt;/th&gt;  |
@@ -21163,7 +21146,7 @@
 
 
 
-============================== table nb count(1405) ============================================
+============================== table nb count(1404) ============================================
 
 
 | PeSIT reason code&lt;/th&gt;  | Description&lt;/th&gt;  | {{&lt; TransferCFT/componentshortname &gt;}} internal diagnostic  | Service item concerned&lt;/th&gt;  |
@@ -21172,7 +21155,7 @@
 
 
 
-============================== table nb count(1406) ============================================
+============================== table nb count(1405) ============================================
 
 
 | PeSIT reason code&lt;/th&gt;  | Description&lt;/th&gt;  | {{&lt; TransferCFT/componentshortname &gt;}} internal diagnostic  | Service item concerned&lt;/th&gt;  |
@@ -21208,7 +21191,7 @@
 
 
 
-============================== table nb count(1407) ============================================
+============================== table nb count(1406) ============================================
 
 
 | PeSIT reason code&lt;/th&gt;  | Description&lt;/th&gt;  | {{&lt; TransferCFT/componentshortname &gt;}} internal diagnostic  | Service item concerned&lt;/th&gt;  |
@@ -21240,7 +21223,7 @@
 
 
 
-============================== table nb count(1408) ============================================
+============================== table nb count(1407) ============================================
 
 
 | Error code  | Description  |
@@ -21270,7 +21253,7 @@
 
 
 
-============================== table nb count(1409) ============================================
+============================== table nb count(1408) ============================================
 
 
 | Code  | Description  |
@@ -21286,7 +21269,7 @@
 
 
 
-============================== table nb count(1410) ============================================
+============================== table nb count(1409) ============================================
 
 
 | RC  | Error  | Description  | Action  |
@@ -21304,7 +21287,7 @@
 
 
 
-============================== table nb count(1411) ============================================
+============================== table nb count(1410) ============================================
 
 
 | RC  | Error  | Description  | Action  |
@@ -21318,7 +21301,7 @@
 
 
 
-============================== table nb count(1412) ============================================
+============================== table nb count(1411) ============================================
 
 
 | Topic  | Description  |
@@ -21331,7 +21314,7 @@
 
 
 
-============================== table nb count(1413) ============================================
+============================== table nb count(1412) ============================================
 
 
 | Action &lt;/th&gt;  | Command &lt;/th&gt;  |
@@ -21343,7 +21326,7 @@
 
 
 
-============================== table nb count(1414) ============================================
+============================== table nb count(1413) ============================================
 
 
 | Trace file definition | Command &lt;/th&gt;  | Parameter &lt;/th&gt;  | Description &lt;/th&gt;  |
@@ -21355,7 +21338,7 @@
 
 
 
-============================== table nb count(1415) ============================================
+============================== table nb count(1414) ============================================
 
 
 | Starting information collection &lt;/th&gt;  | Command used to define the file &lt;/th&gt;  | Parameter &lt;/th&gt;  | Command to enter &lt;/th&gt;  |
@@ -21367,7 +21350,7 @@
 
 
 
-============================== table nb count(1416) ============================================
+============================== table nb count(1415) ============================================
 
 
 | Action &lt;/th&gt;  | Define the file with &lt;/th&gt;  | Enter the command &lt;/th&gt;  |
@@ -21379,7 +21362,7 @@
 
 
 
-============================== table nb count(1417) ============================================
+============================== table nb count(1416) ============================================
 
 
 | Action &lt;/th&gt;  | Command &lt;/th&gt;  |
@@ -21390,7 +21373,7 @@
 
 
 
-============================== table nb count(1418) ============================================
+============================== table nb count(1417) ============================================
 
 
 | Trace file definition | Command &lt;/th&gt;  | Parameter &lt;/th&gt;  | Description &lt;/th&gt;  |
@@ -21400,7 +21383,7 @@
 
 
 
-============================== table nb count(1419) ============================================
+============================== table nb count(1418) ============================================
 
 
 | Starting information collection &lt;/th&gt;  | Command used to define the file &lt;/th&gt;  | Parameter &lt;/th&gt;  | Command to enter &lt;/th&gt;  |
@@ -21412,7 +21395,7 @@
 
 
 
-============================== table nb count(1420) ============================================
+============================== table nb count(1419) ============================================
 
 
 | Action &lt;/th&gt;  | Define the file with &lt;/th&gt;  | Enter the command &lt;/th&gt;  |
@@ -21422,7 +21405,7 @@
 
 
 
-============================== table nb count(1421) ============================================
+============================== table nb count(1420) ============================================
 
 
 | Resource | Description | Resource actions |
@@ -21439,7 +21422,7 @@
 
 
 
-============================== table nb count(1422) ============================================
+============================== table nb count(1421) ============================================
 
 
 | Privilege with CG  | Privilege without CG  | Resource  | Resource actions  |
@@ -21517,7 +21500,7 @@
 
 
 
-============================== table nb count(1423) ============================================
+============================== table nb count(1422) ============================================
 
 
 | Resource  | Description  | Resource properties  | Resource actions  |
@@ -21564,7 +21547,7 @@
 
 
 
-============================== table nb count(1424) ============================================
+============================== table nb count(1423) ============================================
 
 
 | Parameter | Description | Type |
@@ -21575,7 +21558,7 @@
 
 
 
-============================== table nb count(1425) ============================================
+============================== table nb count(1424) ============================================
 
 
 | File | Description | Access for Transfer CFT<br/> Product and administrator | Access for others |
@@ -21587,7 +21570,7 @@
 
 
 
-============================== table nb count(1426) ============================================
+============================== table nb count(1425) ============================================
 
 
 | File | Description | Access for Transfer CFT<br/> Product and administrator | Access for others |

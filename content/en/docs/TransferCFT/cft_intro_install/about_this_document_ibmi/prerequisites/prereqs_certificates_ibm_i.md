@@ -15,8 +15,8 @@ The use of the default certificate supplied with {{< TransferCFT/componentshortn
 
 For a PEM certificate, you must create a file with a record length equal to the size of the certificate in bytes. You can then upload the certificate to the newly created file.
 
-Example
-&lt;/p>
+**Example
+&lt;/b>**
 
 In this example, assume that your certificate `2k_l1_user1_key.pem` size is 1,191 bytes. Before uploading this certificate to the IBM i server, you would need to create a file with a record length of 1,191 bytes, as follows:
 

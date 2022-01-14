@@ -11,7 +11,7 @@ To force heterogeneous mode:
 1. Access the unified configuration utility using either [command line](../uconf_w_cftutil) or the [GUI](../uconf_interface_actions).
 1. Set the following parameter to enable forced heterogeneous exchanges for group file transfers.
 
-Unix/Windows
+**Unix/Windows**
 
 
 | Parameter  | Default  | Description  |
@@ -19,7 +19,7 @@ Unix/Windows
 | cft.server.force_heterogeneous_mode  | No  | Force heterogeneous mode for group file transfers. This parameter replaces the deprecated environment variable: CFTSFMCPY.<br/> Possible values:<br/> • Yes: Force heterogeneous mode exchanges (override homogeneous mode)<br/> • No: Standard heterogeneous and homogeneous functioning |
 
 
-Related topics
+**Related topics**
 
 - [Sending a group of files](../../../concepts/using_the_send_command/send_group_of_files_cl)
 - [Environmental variables](../../../cft_intro_install/windows_install_start_here/windows_install_start_here/specific_system_functions/env_variables_and_specific_parms)

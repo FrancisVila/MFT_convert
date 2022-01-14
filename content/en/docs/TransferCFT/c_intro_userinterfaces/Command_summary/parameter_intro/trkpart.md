@@ -8,7 +8,7 @@
 
 #### CFTPARM
 
-**\[TRK = {
+**\[TRK = { UNDEFINED
 | ALL | NO | SUMMARY }\]**
 
 The default value that specifies how much detail {{< TransferCFT/componentshortname  >}} should

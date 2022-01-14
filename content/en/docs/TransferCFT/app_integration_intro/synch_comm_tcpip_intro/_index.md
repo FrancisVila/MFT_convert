@@ -14,7 +14,7 @@ Another difference between modes is that unlike synchronous mode, asynchronous m
 
  
 
-![]($1)
+![](/Images/TransferCFT/new_synch_comm.png)
 
 ## Configuring synchronous communication
 

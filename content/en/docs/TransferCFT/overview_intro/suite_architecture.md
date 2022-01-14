@@ -21,10 +21,8 @@ Additional products include, but are not limited to, the following:
 - [SecureRelay](#SecureRelay)
 - [TrustedFile](#TrustedFile)
 
-Example Axway {{< TransferCFT/platformorsuitelongname  >}} MFT implementation
-
-![](/Images/TransferCFT/tbus_products.png)
-
+**Example Axway {{< TransferCFT/platformorsuitelongname  >}} MFT implementation**
+**![](/Images/TransferCFT/tbus_products.png)**
 <span id="APIgtw"></span>
 
 #### {{< TransferCFT/apiservername  >}}

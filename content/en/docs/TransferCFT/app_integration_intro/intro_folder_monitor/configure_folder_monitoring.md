@@ -50,7 +50,7 @@ The following table describes the parameters you can use to define the CFTFOLDER
 
 Use the following CFTFOLDER parameters to configure folder monitoring for each directory as needed.
 
-Parameter descriptions
+**Parameter descriptions**
 
 
 | <span id="Paramete"></span>Parameter  | Type  | Default  | Description  |
@@ -125,7 +125,7 @@ ACT ID=FM40, type=FOLDER
 
 This feature enables you to use file-system events monitoring to detect newly available files for an immediate Transfer CFT action.
 
-Available on Linux/Windows only
+**Available on Linux/Windows only**
 
 See [Supported OS for file-system event monitoring](../#Supporte).
 

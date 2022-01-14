@@ -127,22 +127,18 @@ The following is a list of error and information messages that display.
 
 **Error 1**
 
-CFTU26E CLEARCMD \_ Error (Index value not authorized\_ Bad command)
-
-CFTU00I CLEARCMD \_ Failed (userid=AXWAY\\Manager,index=4\*,command=recv)
+`CFTU26E CLEARCMD _ Error (Index value not authorized_ Bad command)`
+`CFTU00I CLEARCMD _ Failed (userid=AXWAY\Manager,index=4*,command=recv)`
 
  
 
 **Error 2**
 
-CFTU26E CLEARCMD \_ Error (COMMAND Keyword missing)
-
-CFTU00I CLEARCMD \_ Failed (userid=AXWAY\\Manager,index=4,jobname=1234)
-
- 
+`CFTU26E CLEARCMD _ Error (COMMAND Keyword missing)`
+`CFTU00I CLEARCMD _ Failed (userid=AXWAY\Manager,index=4,jobname=1234)`
+` `
 
 **Error 3**
 
-CFTU26E CLEARCMD \_ Error (COMMAND or JOBNAME Keyword missing)
-
-CFTU00I CLEARCMD \_ Failed (userid=AXWAY\\Manager,index=\*)
+`CFTU26E CLEARCMD _ Error (COMMAND or JOBNAME Keyword missing)`
+`CFTU00I CLEARCMD _ Failed (userid=AXWAY\Manager,index=*)`

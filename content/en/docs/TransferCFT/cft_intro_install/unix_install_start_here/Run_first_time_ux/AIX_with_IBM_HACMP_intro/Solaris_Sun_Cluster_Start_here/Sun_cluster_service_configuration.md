@@ -50,7 +50,7 @@ scrgadm -a -S -g <SharedAddress_RG_Name>
 
 All resources are included in the same group, named `CFT-rg`:
 
-scrgadm –a –g CFT-rg
+`scrgadm –a –g CFT-rg`
 
 This group is activated or switched over to one of the nodes to avoid
 having two Transfer CFT instances activated simultaneously on the same
@@ -94,13 +94,11 @@ used:
 
 The virtual IP is added as follows on Sun Cluster version 3.0:
 
-scrgadm
-–a –L –g CFT-rg –j cft\_ip –l cft-ip –n nafo0@1,nafo0@2
+`scrgadm   –a –L –g CFT-rg –j cft_ip –l cft-ip –n nafo0@1,nafo0@2`
 
 For Sun Cluster 3.1 the command is:
 
-scrgadm
-–a –L –g CFT-rg –j cft\_ip –l cft-ip –n ipmp0@1,ipmp0@2
+`scrgadm   –a –L –g CFT-rg –j cft_ip –l cft-ip –n ipmp0@1,ipmp0@2`
 
 View the command line description
 
@@ -122,8 +120,7 @@ View the command line description
 These tests were performed using a single shared file system. It is
 declared as follows:
 
-scrgadm –a –g CFT-rg –t SUNM.HAStoragePlus –j cft-disk \\  
-–x FilesystemMountpoints=/global/cft
+`scrgadm –a –g CFT-rg –t SUNM.HAStoragePlus –j cft-disk \–x FilesystemMountpoints=/global/cft`
 
 View the command line description
 

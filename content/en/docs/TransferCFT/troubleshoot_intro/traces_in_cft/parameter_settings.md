@@ -11,13 +11,12 @@ general parameters.](../../../admin_intro/admin_config_commands/cftparm_general_
 
 ### Syntax
 
-CFTPARM  \[TRACE = *identifier*\]
-
+`CFTPARM  [TRACE = identifier]`
 <span id="Parameters"></span>
 
 ### Parameters
 
-**\[TRACE = identifier\]**
+`[TRACE = identifier]`
 
 Indicates the presence and the identifier of an initial trace description,
 to be taken into account when Transfer CFT starts.

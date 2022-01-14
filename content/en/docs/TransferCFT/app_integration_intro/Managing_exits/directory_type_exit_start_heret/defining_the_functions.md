@@ -74,22 +74,11 @@ initialization function.
 
 ### Example in C
 
-long **exaini** ( char     \*exaref,  
-          char    
-\*mode,  
-          char    
-\*part,  
-          char    
-\*parm,  
-          char    
-\*language,  
-          EXA    
-\*function );
+`long exaini ( char     *exaref,          char       *mode,          char       *part,          char       *parm,          char       *language,          EXA       *function );`
 
 Where EXA is defined as:
 
-typedef long (\*EXA)(char\*,char\*);
-
+`typedef long (*EXA)(char*,char*);`
 <span id="User_Function"></span>
 
 ## User Function
@@ -104,12 +93,8 @@ typedef long (\*EXA)(char\*,char\*);
 
 Example in C
 
-long usrfct (     char
-\*zecom,
-
-  char
-\*zgcom            );
-
+`long usrfct (     char   *zecom,`
+`  char   *zgcom            );`
 <span id="Interface_Files"></span>
 
 ## Interface files

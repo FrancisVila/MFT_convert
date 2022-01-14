@@ -14,7 +14,7 @@ Parameters to regulate monitoring can have one of the following values:
 
 For a transfer command, if Sentinel monitoring is implemented, these parameters are analyzed in the following order: transfer command, transfer definition, partner definition, general parameter (CFTPARM), and lastly the UCONF parameter definition(sentinel.xfb.transfer). If the uconf is not defined, you can set it using the command `CFTUTIL uconfset id=sentinel.xfb.transfer`.
 
-Parameters to regulate level of monitoring messages
+**Parameters to regulate level of monitoring messages**
 
 The parameter definitions are taken into account in the order listed below. For example, the transfer request definition takes precedence over the partner definition.
 
@@ -60,7 +60,7 @@ CFTI24I CFTTRK Sentinel state = disconnected
 
 ## Command parameters
 
-CFTPARM
+**CFTPARM**
 
 TRKPART = { \*UNDEFINED \*| ALL | SUMMARY | NO | ERROR }
 
@@ -71,21 +71,21 @@ TRKRECV =
 
 These parameters define the TRK default settings for the CFTPART, CFTSEND, and CFTRECV commands respectively.
 
-SEND/RECV
+**SEND/RECV**
 
 TRK =
 { \*UNDEFINED\* | ALL | SUMMARY | NO | ERROR }
 
 An optional parameter with a default value of UNDEFINED. Enables tracking for a query.
 
-CFTSEND/CFTRECV
+**CFTSEND/CFTRECV**
 
 TRK =
 { UNDEFINED | ALL | SUMMARY | NO | ERROR }
 
 An optional parameter having TRKSEND/TRKRECV as the default values. Enables tracking for the file model (IDF).
 
-CFTPART
+**CFTPART**
 
 TRK = { UNDEFINED | ALL | SUMMARY | NO | ERROR }
 

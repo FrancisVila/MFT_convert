@@ -4,7 +4,7 @@
     "weight": "230"
 }You can configure  post-transfer, file renaming on the receiver side of a flow. The file is renamed on transfer completion, in the post processing phase, and includes a configurable retry mechanism.
 
-Limitation
+**Limitation**
 
 - When using a group of files in homogeneous mode, you cannot use post-transfer file renaming.
 
@@ -37,7 +37,7 @@ Following a successful renaming, `CFTF33I `is displayed.
 
 Once the maximum number of retries is reached, the transfer moves to the YK state, and displays a DIAGI=156, `DIAGP=RETRYRENAME`, a DIAGC=`RETRYRENAME MAX RETRIES REACHED` or = `RETRYRENAME WFNAME NOT FOUND`, and the log messages [CFTF32E](../../troubleshoot_intro/messages_and_error_codes_start_here/cftf_messages#CFTF32E) and [CFTF34E](../../troubleshoot_intro/messages_and_error_codes_start_here/cftf_messages#CFTF34E).
 
-Catalog
+**Catalog**
 
 Information in the catalog displays the number of retries performed.
 
@@ -106,8 +106,7 @@ send part=paris, idf=dailyreport, ida=report3
 
 #### Check output files
 
-Sender side
-
+**Sender side**
 ```
 17/01/26 18:01:43.31 CFTR12I SEND Treated for USER \\dupont <IDTU=A000002C PART=PARIS IDF=DAILYREPORT>
 17/01/26 18:01:43.37 CFTR12I SEND Treated for USER \\dupont <IDTU=A000002D PART=PARIS IDF=DAILYREPORT>
@@ -118,9 +117,7 @@ Sender side
 17/01/26 18:01:44.40 CFTT57I Requester transfer started <IDTU=A000002D PART=PARIS IDF=DAILYREPORT IDT=A2618015 >
 ... (etc. for each transfer)
 ```
-
-Receiver side
-
+**Receiver side**
 ```
 17/01/26 18:01:43.43 CFTT57I Server transfer started <IDTU=A000002F PART=NEWYORK IDF=DAILYREPORT IDT=A2618014 >
 17/01/26 18:01:43.43 CFTT58I Server transfer ended <IDTU=A000002F PART=NEWYORK IDF=DAILYREPORT IDT=A2618014>

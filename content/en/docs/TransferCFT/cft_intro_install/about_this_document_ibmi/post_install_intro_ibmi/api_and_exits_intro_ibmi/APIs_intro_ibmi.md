@@ -35,7 +35,7 @@ Available commands include OPEN, SELECT, NEXT, MODIFY and CLOSE.
 
 Available parameters include: F-SEND, F-RECV, F-START, F-HALT, F-KEEP, F-DELETE, F-END and F-COM.
 
-COBOL/ILE Programming samples
+**COBOL/ILE Programming samples**
 
 All COBOL sample files are available in CFTPGM/CFTSRC. However, you should not directly modify them as this library is proprietary to Axway, and updating the product may modify these samples. Therefore, we recommend that you copy the samples you need into CFTPROD/UTIN and configure them according to your production requirements.
 
@@ -43,7 +43,7 @@ All COBOL sample files are available in CFTPGM/CFTSRC. However, you should not d
 >
 > The product installation copies and configures some samples.
 
-RPG/ILE programming examples
+**RPG/ILE programming examples**
 
 Refer to the programming examples, RPG COPY clauses, and procedures, which are supplied in the Transfer CFT library CFTPGM/CFTSRC (CPYRPGCILE, CPYRPGIILE, CPYRPGCIL4, CPYRPGIIL4):
 
@@ -104,10 +104,8 @@ To test the configuration:
 
 The result should correspond to the catalog contents:
 
-> PART=NEW YORK, IDT=&lt;dynamic identifier>,IDF=TXT  
-> PART=BOSTON ,IDT=&lt;dynamic identifier>,IDF=TXT  
-> APIXMP1 \_ 2 record(s) found
+> `PART=NEW YORK, IDT=<dynamic identifier>,IDF=TXTPART=BOSTON ,IDT=<dynamic identifier>,IDF=TXTAPIXMP1 _ 2 record(s) found`
 
 Stop {{< TransferCFT/componentshortname  >}}:
 
-     cftstop
+`     cftstop`

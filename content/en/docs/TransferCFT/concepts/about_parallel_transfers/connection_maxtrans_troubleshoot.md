@@ -140,8 +140,7 @@ The transfers are executed quickly, in rapid succession because {{< TransferCFT/
 >
 > Remember one session is kept for incoming connections, so in this case only two sessions were used.
 
-MAXTRANS=3, MAXCNX=6, DISCTD=120 (seconds session is still open)
-
+`MAXTRANS=3, MAXCNX=6, DISCTD=120 (seconds session is still open)`
 ```
 ...
 15/06/23 <u>17:40:46</u> CFTT53I Requester file selected <IDTU=A0000VKQ PART=SUN35-1 IDF=BIN IDT=F2402472>
@@ -172,8 +171,7 @@ In Scenario 2 Transfer CFT is limited by the session, meaning that the same 5 p
 >
 > DISCTD has an effect on latency.
 
-MAXTRANS=6, MAXCNX=3, DISCTD=120 (seconds session is still open)
-
+`MAXTRANS=6, MAXCNX=3, DISCTD=120 (seconds session is still open)`
 ```
 ...
 15/06/23 <u>17:58:21</u> CFTI34I PID=10956 CFTTFIL Task started successfully

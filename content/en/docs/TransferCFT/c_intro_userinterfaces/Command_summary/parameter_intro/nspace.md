@@ -8,7 +8,8 @@
 
 #### CFTSEND, SEND
 
-**\[NSPACE = {**
+**\[NSPACE = {FSPACE**
+**value**
 **| n}\]            ODETTE,
 PeSIT**
 

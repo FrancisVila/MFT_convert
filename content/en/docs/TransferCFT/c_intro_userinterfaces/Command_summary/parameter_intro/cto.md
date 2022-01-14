@@ -8,7 +8,7 @@
 
 #### CFTPROT, TURN
 
-Odette (OFTP)
+**Odette (OFTP)**
 
 Minimum duration (in minutes) of the session, Cycle Time Out.
 
@@ -24,9 +24,8 @@ depending on:
 The session is liberated if no transfer was initiated by the remote
 partner during the indicated duration.
 
-PeSIT E
-
-CTO = {1|n} {1….32767}
+**PeSIT E**
+`CTO  =  {1|n}                                 {1….32767}`
 
  
 

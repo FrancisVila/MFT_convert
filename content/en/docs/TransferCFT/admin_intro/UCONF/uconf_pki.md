@@ -5,7 +5,7 @@
 }This topic presents the parameters to set to define {{< TransferCFT/componentshortname  >}} to PassPort PS server connectivity.  You can define this connectivity in {{< TransferCFT/componentshortname  >}} using
 a command line window.
 
-PassPort PS parameters
+**PassPort PS parameters**
 
 To enable {{< TransferCFT/componentshortname  >}} to PassPort PS server connectivity, use the UCONFSET
 command to set the following parameters:

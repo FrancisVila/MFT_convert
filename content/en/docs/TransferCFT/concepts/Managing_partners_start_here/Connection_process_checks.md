@@ -18,25 +18,17 @@ to mutually recognize each other.
 
 ## Recognition mechanism for explicit parameter setting
 
-![]($1)
+![](/Images/TransferCFT/Recongnition_explicit_parameter_setting.gif)
 
 To send a file with a defined IDF ID\_EM to partner B, corresponding
 command is:
 
-     SEND     PART    
-=     ID\_B,  
-          IDF    
-=     ID\_EM,  
-          ....
+`     SEND     PART       =     ID_B,          IDF       =     ID_EM,          ....`
 
 To receive a file with a defined IDF (ID\_REC) from partner B, corresponding
 command is:
 
-     RECV     PART    
-=     ID\_B,  
-          IDF    
-=     ID\_REC,  
-          ....
+`     RECV     PART       =     ID_B,          IDF       =     ID_REC,          ....`
 
 ## Implicit default parameter setting
 

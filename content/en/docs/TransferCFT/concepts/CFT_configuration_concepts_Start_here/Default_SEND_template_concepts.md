@@ -23,6 +23,9 @@ CFTPARM object.
 
 Certain default template objects cannot be deleted. The template CFTSEND and CFTRECV objects can not be deleted if they are used by another configuration.
 
+Related
+topics
+
 - Command syntax
     [CFTSEND](../../../c_intro_userinterfaces/command_summary#CFTSEND)
 - Parameter list
@@ -40,7 +43,8 @@ Certain default template objects cannot be deleted. The template CFTSEND and CFT
 CFTSEND commands include parameters controlling the access to the data
 to be sent and the send transfer process.
 
-A CFTSEND command (*default* ) controls the sending of the model file with the same
+A CFTSEND command (*default command
+excluded*) controls the sending of the model file with the same
 identifier (IDF equal to the ID of the CFTSEND command).
 
 This command is taken into account in one or other of the following

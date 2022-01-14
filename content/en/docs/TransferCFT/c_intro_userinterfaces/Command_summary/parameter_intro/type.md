@@ -9,7 +9,7 @@
 #### ABOUT
 
 \[ TYPE
-= {
+= { ALL
 | HOST | CFT } \]
 
 Displays

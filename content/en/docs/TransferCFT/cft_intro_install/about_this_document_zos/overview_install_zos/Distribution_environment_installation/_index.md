@@ -2,14 +2,14 @@
     "title": "Non-SMP/E: Create the distribution environment ",
     "linkTitle": "Non-SMP/E: create distribution environment",
     "weight": "170"
-}This section describes how to install the **<span id="kanchor56"></span>distribution** **environment**. After installing the distribution environment, you should not need to modify it. Later you will use the installed distribution environment to create a Transfer CFT <span id="kanchor57"></span>[*instance* *environment*](t_install_instance_envr_zos) (runtime). The term instance replaces the former notion of a *target* environment in Transfer CFT.
+}This section describes how to install the **<span id="kanchor57"></span>distribution** **environment**. After installing the distribution environment, you should not need to modify it. Later you will use the installed distribution environment to create a Transfer CFT <span id="kanchor58"></span>[*instance* *environment*](t_install_instance_envr_zos) (runtime). The term instance replaces the former notion of a *target* environment in Transfer CFT.
 
 When you install the Transfer CFT you can create the following environments in a single step:
 
 - Distribution environment
 - Transfer CFT run-time instance environment
 
-<span id="kanchor58"></span>
+<span id="kanchor59"></span>
 
 ## Define a Transfer CFT alias
 
@@ -44,7 +44,7 @@ To install the Transfer CFT z/OS product, you need approximately:
 
 - 450 additional cylinders of disk space to unpack the installation files
 
-<span id="Installa"></span><span id="kanchor59"></span>
+<span id="Installa"></span><span id="kanchor60"></span>
 
 ## Installation files 
 
@@ -169,7 +169,7 @@ Use one of the following methods to unpack the installation files:
 - Decompress using the ADRDSSU format, *or*
 - Decompress using double Xmit format
 
-<span id="kanchor60"></span>
+<span id="kanchor61"></span>
 
 ### Decompress using the ADRDSSU format
 
@@ -207,7 +207,7 @@ To customize the JCL, apply a `change all` command on the following parameters:
 >
 > The distribution files are restored with 5 qualifiers (ADRDSSU). You can modify 4 of these qualifiers, for example AXWAY.XFB.CFT332.CF030000, using the ADRDSSU parameter, step ADRD020 in J1IDISTA, but the fifth qualifier is hard coded.
 
-<span id="kanchor61"></span>
+<span id="kanchor62"></span>
 
 ### Decompress using double Xmit
 

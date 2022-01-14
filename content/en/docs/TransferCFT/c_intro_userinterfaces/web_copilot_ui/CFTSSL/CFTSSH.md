@@ -46,7 +46,7 @@ The CFTSSH object parameters for a client definition (DIRECT = CLIENT).
 | SRVPUBKEY  | When DIRECT=CLIENT:<br/> Key Id containing the server public key (RSA) for the server. When defined, the Transfer CFT client checks that the public key referenced by SRVPUBKEY matches the key provided by the server.<br/> If an error occurs, the connection is rejected with a DIAGI 264. |
 
 
-Example 1
+**Example 1**
 
 This example demonstrates an SSH default profile that has no client key authentication (CLIPUBKEY is not defined). The server private key is referenced by the SRVPRIVKEY parameter (SSH\_PRIV\_KEY in the example). The SRVPRIVKEY value is a key identifier that corresponds to a key stored in the local PKI database.
 
@@ -57,12 +57,11 @@ CFTSSH ID = 'SSH_DEFAULT',
 ...
  MODE = 'REPLACE'
 ```
-
-Example 2
+**Example 2**
 
 The next example demonstrates an SSH default profile that uses client key authentication (CLIPUBKEY is defined). The client public key is referenced by the CLIPUBKEY parameter (SSH\_PUB\_KEY). The CLIPUBKEY value is a key identifier that corresponds to a key stored in the local PKI database.
 
-Example 3
+**Example 3**
 
 The server private key is referenced by the SRVPRIVKEY parameter (SSH\_PRIV\_KEY in the example). The value is also a key identifier that corresponds to a key stored in the local PKI database.
 
@@ -73,8 +72,7 @@ CFTSSH ID = 'SSH_DEFAULT',
   CLIPUBKEY = 'SSH_PUB_KEY',
  MODE = 'REPLACE'
 ```
-
-Example 4
+**Example 4**
 
 This example demonstrates an SSH default profile with no server key authentication (SRVPUBKEY is not defined), but where there is no client key authentication (CLIPRIVKEY is not defined).
 
@@ -83,8 +81,7 @@ CFTSSH ID = 'SSH_DEFAULT',
  DIRECT = 'CLIENT',
   MODE = 'REPLACE'
 ```
-
-Example 5
+**Example 5**
 
 This example demonstrates an SSH default profile with server key authentication (SRVPUBKEY is defined), but where there is no client key authentication (CLIPRIVKEY is not defined). The server public key is referenced by the SRVPUBKEY parameter (SSH\_PUB\_KEY in the example). The SRVPUBKEY value is a key identifier that corresponds to a key stored in the local PKI database.
 
@@ -94,8 +91,7 @@ CFTSSH ID = 'SSH_DEFAULT',
  SRVPUBKEY = 'SSH_PUB_KEY',
   MODE = 'REPLACE'
 ```
-
-Example 6
+**Example 6**
 
 This example demonstrates an SSH default profile with server key authentication (SRVPUBKEY is defined) and client key authentication (CLIPRIVKEY is defined).
 

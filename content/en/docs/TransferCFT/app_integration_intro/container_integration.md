@@ -8,13 +8,13 @@ You may want to review the two methods  for installing and operating a containe
 
 ## Kubernetes concepts
 
-Nodes
+**Nodes**
 
 Kubernetes runs your workload by placing containers into Pods to run on Nodes. A node may be a virtual or physical machine, depending on the cluster. Each node contains the services necessary to run Pods, managed by the control plane.
 
 Typically you have several nodes in a cluster; in a learning or resource-limited environment, you might have just one.
 
-Pods
+**Pods**
 
 Pods are the smallest deployable units of computing that you can create and manage in Kubernetes.
 
@@ -38,16 +38,14 @@ There are 3 possible file storage implementations when you have Transfer CFT as 
 
 The application and {{< TransferCFT/transfercftname  >}} run in the same pod but in different containers. Both the data produced/consumed by the application and {{< TransferCFT/transfercftname  >}} reside on a persistent volume attached to a node where the pod is running. The persistent volume supports ReadWriteOnce access mode and is a local volume (AWS ESB, GCEPersistentDisk, AzureDisk).
 
-Sidecar architecture                     ![]($1)
+**Sidecar architecture                     ![](/Images/TransferCFT/pod1.png)**
 
 #### {{< TransferCFT/transfercftname  >}} and the application run on different pods but on the same node
 
 The application and {{< TransferCFT/transfercftname  >}} run on different pods on the same node. If using a local volume, both pods must run on the same node. Both the data produced and consumed by the application and {{< TransferCFT/transfercftname  >}} reside on a persistent volume attached to the node where the pods are running. The persistent volume supports ReadWriteOnce access mode, and is a local volume (AWS ESB, GCEPersistentDisk, AzureDisk).
 
-Two pods one node architecture            ![]($1)
-
- 
-
+**Two pods one node architecture            ![](/Images/TransferCFT/pod2.png)**
+** **
 <span id="__RefHeading___Toc2647_2515630742"></span>
 
 #### {{< TransferCFT/transfercftname  >}} and the application run on different nodes
@@ -57,8 +55,7 @@ The application and {{< TransferCFT/transfercftname  >}} run on different nodes 
 - The Transfer CFT data resides on a persistent volume that can be a shared volume (Ceph, GlusterFS, NFS, ...).
 - The data produced and consumed by the application resides on a persistent volume that can be a shared volume (Ceph, GlusterFS, NFS, ...) or cloud storage (AWS S3, GCS). In this implementation, you configure the cloud storage at the flow deployment level, not in the product deployment.
 
-Two pods two nodes architecture                    ![]($1)
-
+**Two pods two nodes architecture                    ![](/Images/TransferCFT/pod3.png)**
 <span id="__RefHeading___Toc2649_2515630742"></span>
 
 ####  Architecture versus file storage summary
@@ -84,13 +81,13 @@ When using a container environment however, you cannot use batch mode since Tran
 - REST API
 - Folder monitoring
 
-Application invokes Transfer CFT REST APIs            ![]($1)
+Application invokes Transfer CFT REST APIs            ![](/Images/TransferCFT/trigger_restapi.png)
 
  
 
  
 
-Folder monitoring              ![]($1)
+Folder monitoring              ![](/Images/TransferCFT/foldermonitoring_trigger.png)
 
  
 
@@ -102,10 +99,10 @@ The application and Transfer CFT run in different containers. Therefore, for pos
 - Invoking a Kubernetes job using the Kubernetes API in the post-processing script
 - Storing a file in a directory monitored by the application
 
-Transfer CFT notifies the application using REST API          ![]($1)
+**Transfer CFT notifies the application using REST API          ![](/Images/TransferCFT/cft_container_app_post_processing.png)**
 
  
 
  
 
-The application monitors a directory                  ![]($1)
+The application monitors a directory                  ![](/Images/TransferCFT/foldermonitoring_container.png)

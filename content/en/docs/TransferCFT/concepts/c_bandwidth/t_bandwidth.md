@@ -32,7 +32,7 @@ Within a class (netband, partner, session), the bandwidth is shared evenly, and 
 - In server mode, the initial negotiation occurs through the corresponding CFTPROT bandwidth class
 - A partner can be present in two bandwidth classes, but in that case the system will act as if two separated partners exist
 
-Related topics
+**Related topics**
 
 - [About bandwidth control](../)
 - [Bandwidth use cases](../r_use_cases_bandwidth)

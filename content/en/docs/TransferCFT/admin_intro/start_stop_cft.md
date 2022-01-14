@@ -4,7 +4,7 @@
     "weight": "200"
 }## Server command overview
 
-This section refers only to non multi-node architecture.
+**This section refers only to non multi-node architecture.**
 
 You can use Central Governance to stop, start, check status, and restart a Transfer CFT, or alternatively use the administration commands and scripts provided in this section to manage the application.
 
@@ -51,14 +51,11 @@ To simplify the use of `cft `commands, you can use the autocomplete feature when
 
 From your runtime directory prompt type:
 
-**UNIX**
-
+****UNIX****
 ```
  . ./profile
 ```
-
-**Windows**
-
+****Windows****
 ```
 profile.bat
 ```
@@ -73,8 +70,7 @@ To change the user profile:
 
 Transfer CFT working environment.
 
-Change profile (CHGPRF)
-
+**Change profile (CHGPRF)**
 ```
 Type choices, press Enter.
  

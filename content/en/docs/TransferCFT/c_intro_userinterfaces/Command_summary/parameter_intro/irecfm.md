@@ -8,10 +8,9 @@
 
 #### COPYFILE
 
-\[IRECFM
-= {see the specific Operations Guide | F | V | U}\]    
-
-OS
+**\[IRECFM
+= {see the specific Operations Guide | F | V | U}\]    **
+**OS**
 
 The possible values for each Operating
 System are indicated in the corresponding specific Operations Guide.

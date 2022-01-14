@@ -24,7 +24,7 @@ initial value.
 
 #### CFTSSL
 
-**\[CACHE =  
+**\[CACHE =  NO
 | YES \]   **
 
 Activate the SSL cache.

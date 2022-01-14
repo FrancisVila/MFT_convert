@@ -120,8 +120,7 @@ To change this configuration, you update the hostname and listening
 port for Transfer CFT UI using CFTUTIL
 `uconfset`.
 
-**Example**
-
+****Example****
 ```
 CFTUTIL
 uconfset id=copilot.general.serverhost, value="127.0.0.1"CFTUTIL
@@ -138,15 +137,14 @@ This option is only available on Windows systems and must be selected during the
 
 If you have implemented , starting Copilot launches the registration process. For more information, see the topic <a href="../../../governance_services_intro/cg_register_overview" class="MCXref xref">Registration overview</a>.
 
-**Windows**
+****Windows****
 
 1. Change directory to the runtime.
 1. Execute profile.bat.
 1. To start the Copilot server, enter: copstart
 1. To check the Copilot status, enter: copstatus -v
 
-**UNIX**
-
+****UNIX****
 ```
 cd <CFTDIRRUNTIME>
 . . /profile
@@ -174,7 +172,7 @@ Since you can start or restart a registered {{< TransferCFT/componentlongname  >
 - Provide the rights to start the Transfer CFT Service as a non Local Admin user:
     -   Use a Sysinternals utility such as Process Explorer to change Windows service permissions. Run Process Explorer as administrator and locate the CFT service (CFTSRVLD.exe) process.
     -   Open the process properties and click the **Services** tab. Click the **Permissions** button and add the user or group in the opened window. Then select the permissions that you want to assign (Full Control) and click **OK** to save.
-    -   ![]($1)
+    -   ![](/Images/TransferCFT/services_rights.png)
 
 ## Register with
 

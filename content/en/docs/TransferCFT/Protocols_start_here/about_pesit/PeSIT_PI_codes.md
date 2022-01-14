@@ -22,7 +22,7 @@ Furthermore, each parameter group unit is identified by a numeric code named PGI
 (Parameters Group
 Identifier).
 
-Parameter identifiers (PI) in the message body negotiate the session
+**Parameter identifiers (PI) in the message body negotiate the session**
 
 ![](/Images/TransferCFT/temp_PI_format.png)
 

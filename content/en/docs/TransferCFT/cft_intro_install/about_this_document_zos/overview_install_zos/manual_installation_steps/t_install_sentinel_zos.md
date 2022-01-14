@@ -60,7 +60,7 @@ For a description of the general parameters refer to the Event Router informatio
 
 Before submitting the SN05CONF JCL, you can modify the command file. Enter:
 
-Trktname parameter
+**Trktname parameter**
 
 - Using a buffer file is strongly encouraged, but not mandatory. If you prefer to not use a buffer file, modify the command UCONFSET as follows:
 
@@ -77,8 +77,7 @@ CFTS31W XTRK Warning No Buffer File(LOGGER file)defined Error Code = -1
 To connect to the Event Router via XFC, manually modify the commands file to activate the appropriate communication mode and comment commands:
 
 ```
-/\* UCONFSET ID=sentinel.TRKIPADDR,         VALUE=sntladdr                  
-     UCONFSET ID=sentinel.TRKIPPORT,VALUE=sntlp\*/
+/\* UCONFSET ID=sentinel.TRKIPADDR,         VALUE=sntladdr                        UCONFSET ID=sentinel.TRKIPPORT,VALUE=sntlp\*/
 ```
 <span id="Create_a_LOGGER_type_padding_file (optional)"></span>
 

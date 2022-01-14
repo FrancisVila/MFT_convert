@@ -8,10 +8,10 @@
 
 #### CFTDEST
 
-\[ FOR
-= {
+**\[ FOR
+= { BOTH
 | COMMUT |
-LOCAL } \]
+LOCAL } \]**
 
 Option include:
 

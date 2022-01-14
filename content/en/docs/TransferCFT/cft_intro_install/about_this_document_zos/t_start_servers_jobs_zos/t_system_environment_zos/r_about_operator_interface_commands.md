@@ -29,7 +29,7 @@ The Transfer CFT operator interface for z/OS supplies the following responses:
 - SGCM03E Command ignored
     -   The command is not processed.
 
-Related topics
+**Related topics**
 
 [Diagnostic commands]()
 

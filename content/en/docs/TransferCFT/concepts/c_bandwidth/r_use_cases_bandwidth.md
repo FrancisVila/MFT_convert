@@ -59,6 +59,6 @@ CFTRECV id=PROF3, COS=3,…
 
 ## 
 
-Related topics
+**Related topics**
 
 - [Managing bandwidth control](../t_bandwidth)

@@ -7,7 +7,7 @@
 ### tcp
 
 TCP
-= {
+= { CFT
 | <u>OFTP</u>} \]
 
 Processing method used for protocol messages:

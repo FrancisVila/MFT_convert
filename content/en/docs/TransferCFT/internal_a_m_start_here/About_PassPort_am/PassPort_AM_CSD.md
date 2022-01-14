@@ -8,9 +8,9 @@ The PassPort CSD file provides resources and available actions for Transfer CFT.
 
 After installing Transfer CFT, access the CSD file at:
 
-> &lt;Transfer CFT install directory>/home/distrib/am/csd\_Transfer\_CFT.xml
+> `<Transfer CFT install directory>/home/distrib/am/csd_Transfer_CFT.xml`
 
-Available <span id="CSD description"></span>CSD actions and resources
+**Available <span id="CSD description"></span>CSD actions and resources**
 
 
 | Type of information  | Description  |
@@ -25,7 +25,7 @@ Available <span id="CSD description"></span>CSD actions and resources
 For more information on customizing the CSD file, refer to the {{< TransferCFT/companyname  >}} PassPort
 AM documentation available at [support.axway.com]().
 
-Related topics
+**Related topics**
 
 - [About PassPort AM](../)
 - [Configuring PassPort AM](../configure_passport_am)

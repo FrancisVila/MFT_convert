@@ -9,7 +9,7 @@ a parameter.
 Each parameter topic displays the command line format, a definition,
 limitations, and default values when applicable.
 
-Example
+**Example**
 
 ### acb parameter (heading)
 

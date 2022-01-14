@@ -20,9 +20,8 @@ with the remote site is correctly established.
 
 #### SHUT
 
-\[ RESTART = { YES | NO } \]
-
-Option to manage the restart.
+**\[ RESTART = { YES | NO } \]**
+**Option to manage the restart.**
 
 - Yes: Perform a restart
 - No: No restart following shut down

@@ -12,7 +12,7 @@ If you are not familiar with the installation procedure, you may want to first r
 
 1. Download the service pack in binary mode. The service pack name contains the letters "SP" and the service pack level.  
     **Example**  
-      
+    Transfer\_CFT\_{{< TransferCFT/releasenumber >}}\_**SP4**\_hp\_nonstop\_oss-x86-32\_BN12345678.zip  
     This example is of service pack 4. You can install it over any existing Transfer CFT 3.3.2 for HP NonStop X86 installation. The existing installation can already have one or several applied updates. In this example, possible service packs would include SP1 to SP3, or any available patches.
 1. Decompress the archive using the `unzip `command.
 1. Load the profile and stop both Transfer CFT and Copilot before applying the update.

@@ -57,23 +57,18 @@ The {{< TransferCFT/componentlongname  >}} installation is based on a delivered 
 
 The following installation modes use the delivered initialize.properties file as the default configuration file. In graphical or text mode you can install, but not operate, {{< TransferCFT/componentlongname  >}} without customizing certain mandatory values in this file. In silent mode, you must at least define an installation directory prior to running the unattended installation.
 
-Graphical (console) mode
-
-./Transfer\_CFT\_{{< TransferCFT/releasenumber  >}}\_Install\_&lt;OS>\_&lt;BN>.run
-
-Interactive (text) mode
-
-./Transfer\_CFT\_{{< TransferCFT/releasenumber  >}}\_Install\_&lt;OS>\_&lt;BN>.run --mode text
-
-Silent mode (unattended)
-
-./Transfer\_CFT\_{{< TransferCFT/releasenumber  >}}\_Install\_&lt;OS>\_&lt;BN>.run --mode unattended --conf-file initialize.properties
+**Graphical (console) mode**
+` ./Transfer_CFT_{{< TransferCFT/releasenumber >}}_Install_<OS>_<BN>.run`
+**Interactive (text) mode**
+` ./Transfer_CFT_{{< TransferCFT/releasenumber >}}_Install_<OS>_<BN>.run --mode text`
+**Silent mode (unattended)**
+`./Transfer_CFT_{{< TransferCFT/releasenumber >}}_Install_<OS>_<BN>.run --mode unattended --conf-file initialize.properties`
 
 ### Create or modify the runtime
 
 You can use the following command to repair the runtime if there was an issue during the installation, or to update values that you have modified in the `initialize.properties` file. From the &lt;installation\_directory>, run the following:
 
-&lt;installation directory> ./initialize filename
+`<installation directory> ./initialize filename`
 
 ### Using symbolic links
 
@@ -87,4 +82,4 @@ To install Transfer CFT using symbolic links, you must use the silent mode, `opt
 
 To access the installation help:
 
-./Transfer\_CFT\_{{< TransferCFT/releasenumber  >}}\_Install\_&lt;OS>\_&lt;BN>.run --help
+`./Transfer_CFT_{{< TransferCFT/releasenumber >}}_Install_<OS>_<BN>.run --help`

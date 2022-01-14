@@ -29,7 +29,7 @@ Apply the license key(s) that you received from the Axway Fulfillment team as fo
 - Navigate to the CFTPROD library, and edit the 'KEY' file.
 - Edit the CFTPROD/KEY(KEY) member by entering (writing in) your key.
 
-Examples
+**Examples**
 
 Use the CFTUTIL utility to execute the ABOUT command to find the CPU ID.
 

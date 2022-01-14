@@ -66,8 +66,7 @@ General Usage: CFTTF -pcfg conffile \[-plain plainFilename\] \[-entitiesLocation
 
 To generate a passphrase, use the command: `CFTTF -pw [password]`
 
-Example
-
+**Example**
 ```
 CFTTF –pw user1OUTPUT: OGrplhngkBLeiazMyPkAdcLnd5jlNOnMoGYKaI2WfAw=
 ```

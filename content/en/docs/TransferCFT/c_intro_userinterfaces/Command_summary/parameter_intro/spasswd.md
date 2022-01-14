@@ -6,23 +6,19 @@
 
 #### CFTSEND/CFTRECV
 
-\[ SPASSWD = *string* , \_AUTH\_\]
+**\[ SPASSWD = *string* , \_AUTH\_\]**
 
 Password for the user who is sending the file. You can provide the SPASSWD directly or through an external file, and uses the following format:
 
-part1 user1 passwd1
-
-part2 user2 passwd2
-
-\* user1 passwd3
-
-\* \* passwd4
+`part1 user1 passwd1`
+`part2 user2 passwd2`
+`* user1 passwd3`
+`* * passwd4`
 
 Or you can use \_AUTH\_ to indicate authentication method as defined in the uconf `cft.server.authentication_method` parameter.
 
-Example
-
-`/home/&USERID/cft_passw`
+**Example**
+` /home/&USERID/cft_passw`
 
 > **Note**
 >

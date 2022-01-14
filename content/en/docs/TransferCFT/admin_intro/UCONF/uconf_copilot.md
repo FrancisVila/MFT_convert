@@ -106,7 +106,7 @@ QQQ\_QQQ\_QQQ
 |  - " -  | PKCS#8  | key, pem  |
 
 
-How to define a PKCS#12 certificate
+**How to define a PKCS#12 certificate**
 
 This example uses a single PKCS#12 certificate where you only require the file name and password.
 
@@ -119,7 +119,7 @@ This example uses a single PKCS#12 certificate where you only require the file n
 | copilot.ssl.SslKeyPassword | Not used |
 
 
-How to define a DER or PEM certificate
+**How to define a DER or PEM certificate**
 
 This example uses a DER(or PEM) certificate with the private key in a separate DER file, where you define the key as well as the certificate.
 

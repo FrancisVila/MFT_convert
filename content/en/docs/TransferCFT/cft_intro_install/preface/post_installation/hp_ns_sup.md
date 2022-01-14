@@ -92,13 +92,12 @@ To use the same collector for the supervisor as for {{< TransferCFT/transfercftn
 
 ## Syntax
 
-Format
-
-cftsup \[component\] Actions \[Options\]
+**Format**
+`cftsup [component] Actions [Options]`
 
 Where:
 
-component \[<u>ALL</u> | SUPV | CFT | COPILOT\]
+`component [ALL | SUPV | CFT | COPILOT]`
 
 - ALL (default): Action applies to all components
 - SUPV: Watchdog utility
@@ -106,13 +105,13 @@ component \[<u>ALL</u> | SUPV | CFT | COPILOT\]
         -   For example: `CFTL50I Started the supervisor with process id $`**LASUP**
         -   Prefix = cft.guardian.process\_name\_prefix (the prefix in the example is `LA`)
     -   Stops when all components are terminated except if it was started explicitly as standalone process:
-    -   
+    -   cftsup SUPV START
     -   In this case, it only stops with an explicit stop:
-    -   
+    -   cftsup SUPV STOP
 - CFT: Action applies to the Transfer CFT server
 - COPILOT: Action applies to Transfer CFT Copilot server
 
-Actions \[ START | STOP | STATUS | KILL | SHUT (for Transfer CFT server only)\]
+`Actions [ START | STOP | STATUS | KILL | SHUT (for Transfer CFT server only)]`
 
 - KILL is only valid for the Transfer CFT and Transfer CFT Copilot servers.
 

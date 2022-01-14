@@ -24,7 +24,7 @@ This parameter can be set to:
 
 #### MQUERY, Object = system
 
-NAME = { CFTMAIN | CFTTRK | CFTTFIL | CFTCOM | CFTTPRO | CFTEXIT | CFTPRX | CFTDSCAN }
+**NAME = { CFTMAIN | CFTTRK | CFTTFIL | CFTCOM | CFTTPRO | CFTEXIT | CFTPRX | CFTDSCAN }**
 
 The name of the process on which the MQUERY command is applied. If NAME is not set, the MQUERY command is sent to all processes.
 

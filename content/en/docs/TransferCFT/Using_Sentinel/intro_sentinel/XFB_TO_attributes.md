@@ -58,7 +58,7 @@ The product that sends the events is identified with the following:
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{< TransferCFT/componentshortname  >}} |
 | --- | --- | --- | --- | --- |
-| IdAppl | String | 25 | If the value of the IsServer attribute is:<br/> • 0: The value of this attribute is the local identifier of the Requester.<br/> • 1: The value of this attribute is empty. | IDA |
+| IdAppl | String | 25 | If the value of the IsServer attribute is:<br/> • 0: The value of this attribute is the local identifier of the Requester.<br/> • 1: The value of this attribute is empty. | **IDA**  |
 | Application | String | 80 | Local application/Transfer profile (ST). | IDF |
 | FileName | String | 512 | If the value of the CommandType attribute is:<br/> • File and the value of the Direction attribute is E (Sender): This attribute identifies the file from which the Sender retrieved the transfer data (full path).<br/> • File and the value of the Direction attribute is R (Receiver): This attribute identifies the file in which the Receiver recorded the transfer data (full path). | FNAME |
 | LocalId | String | 25 | If the value of the Direction attribute is:<br/> • E (Sender): The value of this attribute is the local transfer identifier for the Sender.<br/> • R (Receiver): The value of this attribute is the local transfer identifier for the Receiver. | IDTU |
@@ -77,7 +77,7 @@ The product that sends the events is identified with the following:
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> product |
 | --- | --- | --- | --- | --- |
-| EarliestDate | Date | - | Date on which the validity period begins. | DATEM |
+| EarliestDate | Date | - | Date on which the validity period begins. | **DATEM**  |
 | EarliestTime | Time | - | Time at which the validity period begins. | TIMEM |
 | LatestDate | Date | - | Date on which the validity period ends. | DATEMAX |
 | LatestTime | Time | - | Time at which the validity period ends. | TIMEMAX |
@@ -88,7 +88,7 @@ The product that sends the events is identified with the following:
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{< TransferCFT/componentshortname  >}} |
 | --- | --- | --- | --- | --- |
-| CreationDate | Date | - | By default, the system date on which the Sender sent the transfer. The Sender can set this date. The Receiver can filter transfers based on this date. | FDATE |
+| CreationDate | Date | - | By default, the system date on which the Sender sent the transfer. The Sender can set this date. The Receiver can filter transfers based on this date. | **FDATE**  |
 | CreationTime | Time | - | By default, the system time at which the Sender sent the transfer. The Sender can set this time. The Receiver can filter transfers based on this time. | FTIME |
 | SendDate | Date | - | If the value of the Direction attribute is:<br/> • E (Sender): The value of this attribute is the date on which the Sender recorded the transfer in the transfer catalog.<br/> • R (Receiver): The value of this attribute is the date on which the Receiver recorded the transfer in the transfer catalog.<br/> The Sender and the Receiver record each transfer only once. | DATEK |
 | SendTime | Time | - | If the value of the Direction attribute is:<br/> • E (Sender): The value of this attribute is the local time at which the Sender recorded the transfer in the transfer catalog.<br/> • R (Receiver): The value of this attribute is the local time at which the Receiver recorded the transfer in the transfer catalog.<br/> The Sender and the Receiver record each transfer only once. | TIMEK |
@@ -119,7 +119,7 @@ The product that sends the events is identified with the following:
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{< TransferCFT/componentshortname  >}} |
 | --- | --- | --- | --- | --- |
-| Compression | String | 1 | One of the following:<br/> • 0: Undefined<br/> • 1: Horizontal<br/> • 2: Vertical<br/> • 3: Both horizontal and vertical<br/> • 4: Not compressed | NCOMP |
+| Compression | String | 1 | One of the following:<br/> • 0: Undefined<br/> • 1: Horizontal<br/> • 2: Vertical<br/> • 3: Both horizontal and vertical<br/> • 4: Not compressed | **NCOMP**  |
 | EOTProcedure | String | 255 | Name of the end-of-transfer procedure executed upon the completion of the transfer. | EXEC |
 | Priority | Integer | - | Transfer priority. Receivers process transfers in the order of their priority. The range of possible values for this attribute is 0 to 255. The lowest priority is zero. The highest priority is 255.  | PRI |
 | RetryMaxNumber | Integer | - | Maximum number of times that the Sender can attempt to send transfers. | RETRYM |
@@ -133,7 +133,7 @@ The product that sends the events is identified with the following:
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{< TransferCFT/componentshortname  >}} |
 | --- | --- | --- | --- | --- |
-| FileSize | Integer | - | Size of the transferred file. This size is expressed in bytes.<br/> <blockquote> **Note**<br/> For PeSIT, an estimation of size is given at the beginning of the transfer. This value is updated upon completion of the transfer with the real value.<br/> </blockquote>  | FSPACE |
+| FileSize | Integer | - | Size of the transferred file. This size is expressed in bytes.<br/> <blockquote> **Note**<br/> For PeSIT, an estimation of size is given at the beginning of the transfer. This value is updated upon completion of the transfer with the real value.<br/> </blockquote>  | **FSPACE**  |
 | TransmittedBytes | Integer | - | Number of bytes transferred, after decompression, to transfer the file. This size is expressed in bytes.<br/> <blockquote> **Note**<br/> For PeSIT, this value sent is crosschecked by both the sender and receiver.<br/> </blockquote>  | NCAR |
 
 

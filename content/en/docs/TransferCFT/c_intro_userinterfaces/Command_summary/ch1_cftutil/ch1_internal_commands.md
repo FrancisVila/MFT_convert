@@ -102,7 +102,7 @@ Some commands can accept a parameter takes as a value the name of a variable in 
 
 To substitute data use the variable name enclosed by the '%' character. The interpreter then replaces the variable name with the contents.
 
-Example
+**Example**
 
 The interpreter replaces% STRING% with the string value ABCDEF. The interpreted command becomes PRINT MSG = 'ABCDEF'.
 

@@ -4,7 +4,7 @@
     "weight": "1510"
 }#### COPYFILE
 
-\[ICT = {H | C},\]
+**\[ICT = {H | C},\]**
 
 Type of input file data compression:
 

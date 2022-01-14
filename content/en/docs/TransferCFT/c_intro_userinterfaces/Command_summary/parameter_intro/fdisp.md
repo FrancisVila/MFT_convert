@@ -10,8 +10,8 @@
 
 #### CFTSEND, SEND
 
-\[FDISP = { SHR
-| CHECK }\]
+**\[FDISP = { SHR
+| CHECK }\]**
 
 File sharing option:
 
@@ -35,8 +35,8 @@ File sharing option:
 
 #### CFTRECV, RECV
 
-\[FDISP = { NEW | OLD | <u>BOTH</u>
-}\]
+**\[FDISP = { NEW | OLD | <u>BOTH</u>
+}\]**
 
 Presence check indicator of the receiver file used to determine the
 action of the {{< TransferCFT/componentshortname  >}}:

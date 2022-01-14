@@ -2,7 +2,7 @@
     "title": "SFTP quick start!",
     "linkTitle": "SFTP quick start!",
     "weight": "140"
-}T
+}T**he supported operating systems are listed in the** [Platform features](../../../datasheet) **table.**
 
 This page provides a bare-bones configuration for you to begin to explore using SFTP for file transfers. When you are ready for a more advanced configuration, refer to the [Client configuration](../sftp_client) and [Server configuration](../sftp_server) pages.
 
@@ -59,13 +59,13 @@ This example uses the most basic type of authentication. However, the `cft-sftp.
 Click **Quickconnect** to connect.
 
 Click **OK** to accept the pop-up to accept the key.  
-![]($1)
+![](/Images/TransferCFT/fz_client_popup.png)
 
 ### 4. Perform a file transfer
 
 Drag and drop files to `FLOW01 `or `FLOW02 `to perform file transfers.
 
-![]($1)
+![](/Images/TransferCFT/fz_client.png)
 
 You can check the Transfer CFT log for details.
 

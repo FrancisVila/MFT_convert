@@ -5,8 +5,8 @@
 }<span id="Listing_model_file_identifiers__IDF_"></span>This section describes
 the CFTAUTH command and parameters you use to create lists of authorized or unauthorized file transfer identifiers.
 
-Related
-topics
+**Related
+topics**
 
 Object concepts
 [](../../../../concepts/cft_configuration_concepts_start_here/authorization_list_concepts)[Create
@@ -20,7 +20,7 @@ authorized/unauthorized identifiers list](../../../../concepts/cft_configuration
 | <a href="../../../command_summary/parameter_intro/idf">IDF</a> | List of authorized or unauthorized IDFs.<br/> The value associated with each of these IDFs may be:<br/> • An explicit file identifier, or<br/> • A mask (using wildcards '*?'), where all of the file identifiers corresponding to this mask are affected by the command |
 
 
-<span id="CFTAUTH_example"></span>Example
+**<span id="CFTAUTH_example"></span>Example**
 
 In this example, the local Transfer CFT can only send files with identifiers of the APLI1, APLI2, LIST type and files with
 identifiers beginning with the 3 letters CHQ to the partner

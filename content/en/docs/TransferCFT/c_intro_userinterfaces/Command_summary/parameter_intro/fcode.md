@@ -25,7 +25,8 @@ default value supported.
 
 #### CFTRECV, RECV
 
-**\[FCODE = { | ASCII | BINARY | EBCDIC}\]   **
+**\[FCODE = {depending
+on FTYPE | ASCII | BINARY | EBCDIC}\]   **
 
 **C**ode of the receiver file data (local file encoding).
 
@@ -84,7 +85,7 @@ This code is:
 
 #### CFTSEND, SEND
 
-\[FCODE = {ASCII | BINARY | EBCDIC}\]
+**\[FCODE = {ASCII | BINARY | EBCDIC}\]**
 
 Code of the data to be sent.
 

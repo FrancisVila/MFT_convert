@@ -48,7 +48,7 @@ Related parameters:
 - TLVWEXEC: Batch to execute when CFTCAT/TLVWARN is reached.
 - TLVWARN: Catalog usage limit before issuing an alert. When this limit is reached, the CFTCAT/TLVWEXEC is executed.
 
-Example
+**Example**
 
 The example is based on the following settings:
 

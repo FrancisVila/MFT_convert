@@ -8,7 +8,7 @@
 
 #### CFTPARM
 
-\[SSLMTASK = <u>8</u> | n \]  
+\[SSLMTASK = <u>8</u> | n \]   {1...64}
 
 The maximum number of SSL tasks that can execute simultaneously in a
 {{< TransferCFT/componentshortname  >}}.

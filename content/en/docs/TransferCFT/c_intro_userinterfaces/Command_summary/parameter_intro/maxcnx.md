@@ -8,8 +8,8 @@
 
 #### CFTNET
 
-\[MAXCNX     = { <u>384</u>
-| n} \]      {0...MAXTRANS value up to 2000}
+**\[MAXCNX     = { <u>384</u>
+| n} \]      {0...MAXTRANS value up to 2000}**
 
 The maximum number of simultaneous connections that {{< TransferCFT/componentshortname  >}} accepts
 to establish on a given network resource.

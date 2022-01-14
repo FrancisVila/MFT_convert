@@ -26,7 +26,7 @@ QQQ\_QQQ\_QQQ
 | ‘Z’  |  ‘V’ | Error<br /> DIAGI: 102<br /> DIAGP: 1140850696 |  Error<br /> DIAGI: 102<br /> DIAGP: 1140850696 |  Error<br /> DIAGI: 102<br /> DIAGP: 1140850696 |  528 |
 
 
-Key
+**Key**
 
 <sup>1</sup> Truncates the 5 bytes variable header, preserving the original record length.
 
@@ -34,7 +34,7 @@ Key
 
 <sup>3</sup> Truncates the 12 bytes, adjusting the record length accordingly.
 
-Default FTYPE or FRECFM value
+**Default FTYPE or FRECFM value**
 
 The behavior of the values ‘’ and ‘ ’, for FTYPE and FRECFM respectively, are not detailed in the following table. These values correspond to `undefined`, meaning that the transfer in emission takes the value of both the file type and the member content.
 

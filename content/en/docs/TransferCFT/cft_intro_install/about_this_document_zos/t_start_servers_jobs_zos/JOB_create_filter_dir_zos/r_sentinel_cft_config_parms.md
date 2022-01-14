@@ -109,12 +109,8 @@ QQQ\_QQQ\_QQQ
 | - " -  |   | TRKSHAREDFILE=YES  | UCONFSET ID=sentinel.TRKSHAREDFILE,VALUE=YES  |
 
 
-Related topics
-
-[About Axway Sentinel](../../../../../using_sentinel)
-
-[Using the unified configuration GUI](../../../../../admin_intro/uconf/uconf_interface_actions)
-
-[Using the unified configuration CFTUTIL](../../../../../admin_intro/uconf/uconf_w_cftutil)
-
-[Installing Sentinel for Transfer CFT z/OS](../../../overview_install_zos/manual_installation_steps/t_install_sentinel_zos)
+**Related topics**
+**[About Axway Sentinel](../../../../../using_sentinel)**
+**[Using the unified configuration GUI](../../../../../admin_intro/uconf/uconf_interface_actions)**
+**[Using the unified configuration CFTUTIL](../../../../../admin_intro/uconf/uconf_w_cftutil)**
+**[Installing Sentinel for Transfer CFT z/OS](../../../overview_install_zos/manual_installation_steps/t_install_sentinel_zos)**

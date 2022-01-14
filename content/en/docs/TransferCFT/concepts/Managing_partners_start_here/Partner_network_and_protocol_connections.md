@@ -114,8 +114,8 @@ More specifically:
         parameters that the server Transfer CFT previously defined for it, during
         the initialization phase
 
-Example of the protocol recognition
-in TCP
+**Example of the protocol recognition
+in TCP**
 
 This figure illustrates TCP example of the protocol recognition
 principle (SAP).
@@ -135,6 +135,6 @@ The figure below provides a schematic overview of the:
     between the various commands to be set at the requester end
 - SAP as a TCP port
 
-Schematic overview
+**Schematic overview**
 
 ![](/Images/TransferCFT/Schematic_overview.png)

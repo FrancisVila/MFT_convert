@@ -8,7 +8,7 @@
 
 #### SEND, RECV, CFTSEND, CFTRECV, CFTPROT, CFTPART
 
-**\[ NCHARSET = { None / CFT\_EBCDIC-FR / CFT\_ UTF-8 / CFT\_ISO8859-1 / ASCII / EBCDIC / UTF-8 / UTF-16BE / UTF-16LE / ISO8859-1 / . . . }\]**
+****\[ NCHARSET = { None / CFT\_EBCDIC-FR / CFT\_ UTF-8 / CFT\_ISO8859-1 / ASCII / EBCDIC / UTF-8 / UTF-16BE / UTF-16LE / ISO8859-1 / . . . }\]****
 
 The ncharset is the destination file encoding that is used on a file
 to encode or decode network data.

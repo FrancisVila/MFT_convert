@@ -22,9 +22,7 @@ Please refer to the [*Transfer CFT *{{< TransferCFT/releasenumber  >}} *Securit
 
 ## Configuring internal access management
 
-Set the specific group database parameter (see the table below for OS specifics) using CFTUTIL:
-
-uconfset id=am.internal.group\_database,value=\[ system | safClass | file | xfbadm \]
+Set the specific group database parameter (see the table below for OS specifics) using CFTUTIL:`uconfset id=am.internal.group_database,value=[ system | safClass | file | xfbadm  ]`
 
 Use the parameters and descriptions in the **AM Parameters** table (just below Step 3) to help you customize the internal access management roles. For example, to assign the administrator role to the "admin" group:
 
@@ -41,11 +39,7 @@ Use the parameters and descriptions in the **AM Parameters** table (just below S
 | am.internal.persistence_timeout  | 300  | Delay in seconds between updating the list of group that a user belongs to. |
 
 
-Set the access management type:
-
-uconfset id=am.internal.role.admin,value=admin
-
-uconfset id=am.type,value=internal
+Set the access management type:`uconfset id=am.internal.role.admin,value=admin``uconfset id=am.type,value=internal`
 
 <span id="Mapping"></span>
 
@@ -102,7 +96,7 @@ This section describes three configuration scenarios when using <a href="#" clas
 
 In each scenario, there is a **user1** that belongs to **group1** and a **user2** that belongs to **group2**.
 
-Example 1: Use only predefined roles and privileges
+**Example 1: Use only predefined roles and privileges**
 
 If you configure UCONF as follows:
 
@@ -140,7 +134,7 @@ CFTU24W LISTPARM _ Warning ( Parameters no record selected / file empty)
 - User1 has the predefined Transfer CFT Administrator role
 - User2 has the predefined Transfer CFT Application role
 
-Example 2: Custom roles and privileges using only CFTPRIV and CFTROLE objects
+**Example 2: Custom roles and privileges using only CFTPRIV and CFTROLE objects**
 
 If you configure UCONF as follows:
 
@@ -189,7 +183,7 @@ ROLE TRANSFER CFT PARTNERMANAGER
 - User1 has the custom Transfer CFT Administrator role defined in CFTROLE id='TRANSFER CFT ADMINISTRATOR',aliases=group1
 - User2 has the custom Transfer CFT Application role defined in CFTROLE id='TRANSFER CFT APPLICATION',aliases=group2
 
-Example 3: Uses both predefined and customized CFTPRIV and CFTROLE objects
+**Example 3: Uses both predefined and customized CFTPRIV and CFTROLE objects**
 
 If you configure UCONF as follows:
 

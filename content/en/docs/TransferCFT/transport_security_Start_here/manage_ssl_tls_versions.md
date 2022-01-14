@@ -23,13 +23,13 @@ In Transfer CFT, the SSL/TLS version is proposed by the client and negotiated wi
 
 **Client mode**
 
-DIRECT=CLIENT
+`DIRECT=CLIENT`
 
 In client mode, TLSV1COMP or SSLV3COMP sets the header length in the NSDU to enable compatibility with other products.
 
 **Server mode**
 
-DIRECT=SERVER
+`DIRECT=SERVER`
 
 In server mode, the header length is automatically detected for all SSL versions (SSLV3, TLSV1, SSLV3COMP, TLSV1COMP).
 

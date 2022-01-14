@@ -4,7 +4,7 @@
     "weight": "360"
 }If you need to check the {{< TransferCFT/componentlongname  >}} rights for a specific user, you can use the `EXTAMCACHE `command to obtain this information.
 
-Command syntax: EXTAMCACHE
+**Command syntax: EXTAMCACHE**
 
 ## Parameters
 
@@ -16,7 +16,7 @@ Command syntax: EXTAMCACHE
 | <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/id">ID</a>  | Selects the user, or users, for which you want to obtain access rights. By default, the function returns all users.<br/> You can use the wildcard characters <code>*</code> and <code>?</code> to filter the user names. |
 
 
-Example
+**Example**
 
 The following command extracts the cache file information for all users and their rights to a text file called `AMuser.txt`.
 

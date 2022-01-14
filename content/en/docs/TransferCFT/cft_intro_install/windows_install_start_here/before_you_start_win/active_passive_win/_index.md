@@ -25,13 +25,13 @@ A cluster installation of Transfer CFT without multi-node is an active/passive i
 >
 > After installing applications in active/passive mode, you must implement the cft start, cft stop, and cft status scripts for the cluster.
 
-Shared Directory
+**Shared Directory**
 
 This is the path and name of the directory where you want to create a shared directory for the cluster installation. The shared directory is used to store product data files.
 
 *Windows only* - When installing a Windows multi-host Transfer CFT architecture, we recommend that you use UNC notation, which defines the path to a shared folder using the format` \\server\sharename.`
 
-Installation Directory
+**Installation Directory**
 
 The path and name of the local directory where you want to install the first cluster.
 

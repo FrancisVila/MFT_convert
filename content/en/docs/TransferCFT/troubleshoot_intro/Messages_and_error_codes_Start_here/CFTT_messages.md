@@ -8,7 +8,7 @@
 
 Earlier versions of Transfer CFT used a different message format than version 3.1.3 and higher. This document displays both formats when applicable and available, otherwise only the v23 is used. Using the CFTLOG Format = V24 setting, the log displays as shown:
 
-CFTXXX: fixed text message &lt;variables>
+`CFTXXX: fixed text message <variables>`
 
 **Example**
 
@@ -790,7 +790,7 @@ QQQ\_QQQ\_CHECK maybe convert tables to sections (see CFTTmessages\_test2.htm)
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT82E"></span>CFTT82E PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt transfer aborted &amp;diagi ,&amp;diagp<br/> CFTT82E transfer aborted &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
 | --- | --- | --- | --- |
-| Explanation | A serious error was detected.<br/> Example<br/> 19/02/19 16:01:37 CFTT82E Transfer aborted &lt;IDTU=A0000008 PART=PARIS_KEY IDF=AS3SR IDT=B1916013 DIAGI=110<br/> 19/02/19 16:01:37 CFTT82E+ DIAGP=00000002 DIAGC=File not found: zohs.bat&gt; |
+| Explanation | A serious error was detected.<br/> **Example** 19/02/19 16:01:37 CFTT82E Transfer aborted &lt;IDTU=A0000008 PART=PARIS_KEY IDF=AS3SR IDT=B1916013 DIAGI=110<br/> 19/02/19 16:01:37 CFTT82E+ DIAGP=00000002 DIAGC=File not found: zohs.bat&gt; |
 | Consequence | The transfer is interrupted and the corresponding catalog entry is set to KEEP. |
 | Action | Correct the error and try again. |
 

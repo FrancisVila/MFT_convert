@@ -4,9 +4,8 @@
     "weight": "780"
 }### duplicat
 
-CFTSEND, CFTRECV
-
-\[DUPLICAT = { string 512 } \]
+**CFTSEND, CFTRECV**
+**\[DUPLICAT = { string 512 } \]**
 
 This customizable parameter is used in detecting duplicate transfers. If you are performing a file transfer in and the file already exists, DUPLICAT recognizes the repeated pattern for a transfer. If this happens, the new transfer is rejected with a K status and DIAG = 432, DIAGP = DUPLICAT.
 
@@ -29,6 +28,6 @@ You cannot use IDT or IDTU as symbolic variables for DUPLICAT. Duplicate verific
 
 **Example**
 
-DUPLICAT= &PART.&IDF.&IDA.&SAPPL
+`DUPLICAT= &PART.&IDF.&IDA.&SAPPL`
 
 [Return to Command index](../../)

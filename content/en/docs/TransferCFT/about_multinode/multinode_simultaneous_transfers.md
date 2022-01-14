@@ -23,9 +23,11 @@ You can use the CNXIN, CNXOUT, and CNXINOUT parameters in CFTTCP to define the n
 
 In the following example, the formulas calculate optimal values to help you avoid connection errors (such as [DIAGI 418](../../troubleshoot_intro/messages_and_error_codes_start_here/diagi_diagnostic_codes)):
 
-<sub>(local)(remote)(remote)</sub>
+CNXIN<sub>(local)</sub> = CNXOUT<sub>(remote)</sub> \* nb\_nodes<sub>(remote)</sub>
 
-(you can use this value to limit resource usage, that is, a value less than the sum of CNXIN + CNXOUT)
+CNXOUT<sub>(local)</sub> = CNXIN<sub>(remote)</sub> / nb\_nodes<sub>(local)</sub>
+
+CNXINOUT = CNXIN + CNXOUT (you can use this value to limit resource usage, that is, a value less than the sum of CNXIN + CNXOUT)
 
 You can reverse the formula for the remote Transfer CFT.
 
@@ -33,6 +35,6 @@ You can reverse the formula for the remote Transfer CFT.
 >
 > This calculation takes into consideration that a single node may have to handle all of the incoming connections from the partner.
 
-Related topics
+**Related topics**
 
 [About multi-node architecture](../)

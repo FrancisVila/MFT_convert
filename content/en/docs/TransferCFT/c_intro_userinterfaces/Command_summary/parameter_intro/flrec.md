@@ -6,7 +6,7 @@
 
 ### flrecl
 
-\[FLRECL =  0  | {0...32767} \]   
+**\[FLRECL =  0  | {0...32767} \]   **
 
 The file attribute check option rejects an incoming
 transfer if local file attributes do not match the virtual file attributes
@@ -37,8 +37,8 @@ records are truncated or padded.
 
 #### CFTRECV, RECV
 
-\[FLRECL = {
-| n} \]    {0...32767}
+**\[FLRECL = { 0
+| n} \]    {0...32767}**
 
 For records in:
 
@@ -81,7 +81,7 @@ not supplied either by the file sender or by the local parameters:
 
 #### CFTSEND, SEND
 
-\[FLRECL =  {0...32767} | n} \]   
+**\[FLRECL =  {0...32767} | n} \]   **
 
 For records in:
 

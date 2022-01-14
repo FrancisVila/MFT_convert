@@ -10,8 +10,8 @@
 
 #### CFTRECV, CFTSEND, SEND, RECV
 
-\[FRECFM = {see the platform specific
-*Operations Guide* | F | U | V}\]    
+**\[FRECFM = {see the platform specific
+*Operations Guide* | F | U | V}\]    **
 
 Record format of the receiver (local) file:
 

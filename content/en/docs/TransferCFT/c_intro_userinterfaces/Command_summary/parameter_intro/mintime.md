@@ -29,7 +29,7 @@ The value ‘time’ may be expressed:
 In this case, the corresponding absolute time must be less than 24 hours.
 The indicated value is expressed in minutes.
 
-Example
+**Example**
 
 MINTIME = +30 means that the transfer initial validity time is the time
 the command is taken into account plus 30 minutes. This acceptance time

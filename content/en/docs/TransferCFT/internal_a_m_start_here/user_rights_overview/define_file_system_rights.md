@@ -16,7 +16,7 @@ Use the `chmod `command to define read and write rights.
 
 You must give each additional {{< TransferCFT/componentlongname  >}} user read and write rights as follows:
 
-1. Right-click the **<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>** program folder.
+1. Right-click the **{{< TransferCFT/componentshortname >}}** program folder.
 1. Select **Properties**.
 1. In the window, select the **Security** tab.
 1. In the tab, select the user and grant the user read and write rights. Click **OK**.
@@ -25,7 +25,7 @@ You must give each additional {{< TransferCFT/componentlongname  >}} user read a
 
 See the section on [RACF PERMIT](#RACF%C2%A0pas) (TSS, etc.) in the Transfer CFT z/OS *Installation and Operations Guide.*
 
-Related topics
+**Related topics**
 
 - [About system users](../)
 - [User rights use case scenarios](../user_rights_security_scenarios)

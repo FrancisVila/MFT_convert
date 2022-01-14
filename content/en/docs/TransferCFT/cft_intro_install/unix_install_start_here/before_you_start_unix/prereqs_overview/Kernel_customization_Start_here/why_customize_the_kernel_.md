@@ -88,3 +88,6 @@ at the same time.
 If you do not modify this limit, you cannot use {{< TransferCFT/componentshortname  >}} to its
 full potential: 64 concurrent transfers + link channels + listening channels
 + trace channels &gt; 64 open files.
+
+To achieve 64 concurrent transfers, you must modify some of the kernel
+properties so that it can open as many files as possible; 1024 is suggested.

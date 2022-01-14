@@ -93,7 +93,7 @@ The exit list is a file exit task that was written by Axway. It enables the foll
 {{< TransferCFT/componentshortname  >}} can activate one or more EXIT tasks, such as calls, scheduling, and so on, which
 are fully managed by the {{< TransferCFT/componentshortname  >}}.
 
-![$2]($1)
+![Displays Transfer CFT relationship to multiple Exits](/Images/TransferCFT/cft_exits_1.png)
 
 An EXIT task is generally activated, or loaded into memory,
 as soon as {{< TransferCFT/componentshortname  >}} is started with the Directory EXIT
@@ -127,6 +127,5 @@ to call.
 The following diagram shows an example
 of a user program with two functions.
 
-Communication structure
-
-![$2]($1)
+**Communication structure**
+**![Simplified view of a user program communicating with functions](/Images/TransferCFT/cft_exits_2.png)**

@@ -10,7 +10,7 @@
 
 #### CFTSEND, CFTRECV, SEND, RECV
 
-\[EXEC = filename\]...{string 512}
+**\[EXEC = filename\]...{string 512}**
 
 Specify the name of the file that defines the end-of-transfer procedure.
 
@@ -53,9 +53,9 @@ to in CFTPARM. See [Symbolic variables](../../symbolic_variables).
 
 #### CFTLOG
 
-\[EXEC = filename\]
+**\[EXEC = filename\]
    {string
-64}
+64}**
 
 Name
 of the procedure to be executed when switching to the other log file.
@@ -67,7 +67,7 @@ the name of the last log file used before switching (current file).
 
 #### CFTACCNT
 
-\[EXEC = filename\]    {string 64}
+**\[EXEC = filename\]    {string 64}**
 
 Name of the procedure to be executed when {{< TransferCFT/componentshortname  >}} switches to the
 other statistical file.
@@ -100,7 +100,7 @@ mode.
 
 #### CFTCRON
 
-\[EXEC = filename\]...{string 512}
+**\[EXEC = filename\]...{string 512}**
 
 Specify the name of the file that describes the CRONJOB procedure.
 

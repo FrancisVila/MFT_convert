@@ -6,7 +6,7 @@
 
 #### CFTSEND
 
-\[ EXECSUBPRE = { <u>LIST</u> | FILE | SUBF } \]
+`[ EXECSUBPRE = { LIST | FILE | SUBF } ]`
 
 This parameter defines the execution policy for the PREEXEC script. It determines how the transfer requests are treated, and the order in which this occurs.
 

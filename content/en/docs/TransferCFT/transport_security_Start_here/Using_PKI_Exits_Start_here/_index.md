@@ -81,7 +81,7 @@ It is first called at each step described previously and:
 
 ### Defining a PKI exit
 
-Unix/Windows only
+**Unix/Windows only**
 
 A Transfer CFT PKI exit is called through a C function called `cftpkie`. How the PKI exit is processed by Transfer CFT then depends on the operating system.
 

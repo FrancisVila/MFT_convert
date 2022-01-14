@@ -29,6 +29,6 @@ The following parameters are now managed in {{< TransferCFT/centralgovernancenam
 | Create process as user  | YES | <u>NO</u>  | copilot.misc.createprocessasuser  | Specifies whether Transfer CFT Copilot user must have system rights.  |
 
 
-Related topics
+**Related topics**
 
 - [Recommendations and troubleshooting](../user_rights_tips)

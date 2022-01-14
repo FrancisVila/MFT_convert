@@ -211,7 +211,7 @@ The programmer can set pointers to these data structures. These are then allocat
 
 The heading file cftapi2.h and the commented example source files are delivered with the product.
 
-Related topics
+**Related topics**
 
 [About {{< TransferCFT/componentshortname  >}} services in C](../../../../cft_intro_install/about_this_document_ibmi/using_apis/using_cft_services_in_c)
 

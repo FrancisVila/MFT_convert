@@ -34,14 +34,14 @@ The Transfer CFT sample configuration file `runtime/conf/cft-tf-smp.conf` includ
 - The delivered procedures are called during the preprocessing phase to encode the file (tf\_cipher.cmd), and delete the encoded file after sending (tf\_delfile.cmd).
 - The post processing script decodes on the receiving side (tf\_decipher.cmd).
 
-Sending
+**Sending**
 
 
 | cftsend id = trusted_file, &lt;br/&gt;ftype = B, &lt;br/&gt;fcode = BINARY, &lt;br/&gt;fname = pub/FTEST, &lt;br/&gt;EXEC = $CFTDIREXEC/tf/tf_delfile.cmd, &lt;br/&gt;PREEXEC = $CFTDIREXEC/tf/tf_cipher.cmd,<br /> mode = replace  |
 | --- |
 
 
-Receiving
+**Receiving**
 
 
 | cftrecv id = trusted_file, &lt;br/&gt;ftype = B,<br /> fcode = BINARY, &lt;br/&gt;fname = $CFTDIRPUB/TF_&amp;part_&amp;idtu,<br /> EXEC = $CFTDIREXEC/tf/tf_decipher.cmd,<br /> faction = delete ,<br /> fdisp = both, mode = replace  |
@@ -75,7 +75,7 @@ The Transfer CFT installation process automatically sets the following Transfer
 Use the SAPPL variable to define the type of security format to use to encode the file. Note that you must
 use the same security format as your partner (possible values are CMS, PGP, and S/MIME).
 
-Example
+**Example**
 
 To encode/decode messages using PGP, use the format:
 
@@ -91,7 +91,7 @@ When using {{< TransferCFT/trustedfilename  >}} with Transfer CFT, some {{< Tran
 - Configuration sample: Encoding and decoding files with Java API
 - C-API
 
-Related topics
+**Related topics**
 
 - [SAPPL](../../c_intro_userinterfaces/command_summary/parameter_intro/sappl)
 - [Delivered files and certificates](tf_delivered_files_certficates)

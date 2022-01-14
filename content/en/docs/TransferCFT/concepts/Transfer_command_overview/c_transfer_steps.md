@@ -55,12 +55,11 @@ Steps include:
 1. **Disconnect**: On completion of data transfer, the files are closed, the network connection
     is cut after the expiration of the associated hold timeout.
 
-Example: Sending in requester mode
+**Example: Sending in requester mode**
 
-![]($1)
+![](/Images/TransferCFT/temp_session1.png)
 
- 
+** **
+**Example: Receiving in requester mode**
 
-Example: Receiving in requester mode
-
-![]($1)
+![](/Images/TransferCFT/temp_session3.png)

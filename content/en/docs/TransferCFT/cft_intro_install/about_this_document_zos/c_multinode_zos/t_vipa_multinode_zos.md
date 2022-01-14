@@ -112,7 +112,7 @@ The following examples, `WeightedActive `and `RounRobin`, represent two of the p
 
 **Weighted active example**
 
-\- DISTMethod WEIGHTEDActive
+`              - DISTMethod WEIGHTEDActive`
 
 ..UPARM(TCVIPWG0) Port pesit
 
@@ -160,7 +160,7 @@ v tcpip,tcpip,obeyfile,dsn=...UPARM(TCVIPWG6)
 
 **Round robin example**
 
-\- DISTMethod ROUNDROBIN
+`              - DISTMethod ROUNDROBIN`
 
 ..UPARM(TCVIPRN0) Port pesit
 

@@ -9,4 +9,4 @@
 
  
 
-**&lt;&lt;** <a href="../../" class="bold_in_para MCXref xref xrefbold_in_para">My first transfer flow</a>
+**&lt;&lt;** **My first transfer flow**

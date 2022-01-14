@@ -12,8 +12,8 @@
 
 **\[MAXTIME = {<u>23595999</u> | *time*}\]**
 
-Only taken into account in requester
-mode
+**Only taken into account in requester
+mode**
 
 Transfer validity limit time for the final date (MAXDATE).
 
@@ -37,13 +37,11 @@ is not the current date.
 
 `Maxtime `is used in the `START `command to indicate a relative transfer validity time limit. This means the time that the command is taken into account plus minutes. The `maxtime` value is between 1 and the number of minutes in a day minus one, (60 x 24) – 1, and must be less than 24 hours.
 
-Example
-
+**Example**
 ```
 start part=part1,maxtime=+10
 ```
-
-Example
+**Example**
 
 `MAXTIME = +180` means that the maximum time limit for a transfer to be valid is the time from which the command is taken into account plus 180 minutes. The acceptance time for the transfer command must be less than 24 hours.
 

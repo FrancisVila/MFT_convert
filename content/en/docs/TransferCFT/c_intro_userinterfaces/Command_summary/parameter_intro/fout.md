@@ -14,7 +14,7 @@ Defines the file that the
 command output is sent to. The file name represent the file where the
 DISPLAY command redirects the message.
 
-PeSIT
+**PeSIT**
 
 You can extract {{< TransferCFT/componentshortname  >}} messages from the catalog file, and forward these messages to a specified file using the DISPLAY fout parameter.
 

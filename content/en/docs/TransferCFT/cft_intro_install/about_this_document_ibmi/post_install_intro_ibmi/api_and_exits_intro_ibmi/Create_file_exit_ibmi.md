@@ -50,23 +50,17 @@ To generate the sample CFTEXITF application:
     CALL PGM(CFTINIT) PARM('CFTPROD/UTIN(TCPPARAM)')
 
 1. When the `cftinit complete`
-    message is displayed, run {{< TransferCFT/componentshortname >}} using the `cftstart `utility:
-
-    cftstart
+    message is displayed, run {{< TransferCFT/componentshortname >}} using the `cftstart `utility:`cftstart`
 
 1. When the `CFTMAIN process   ID is xxxxx `message is displayed, run a transfer using the command:
 
     CALL PGM(CFTUTIL) PARM(SEND 'part=BOSTON, idf=fic1')
 
 1. After a few seconds, you can
-    check the transfer state by entering the following command. If the transfers have not terminated, repeat thecommand.
-
-    CALL PGM(CFTUTIL) PARM(LISTCAT)  
+    check the transfer state by entering the following command. If the transfers have not terminated, repeat thecommand.`CALL PGM(CFTUTIL) PARM(LISTCAT)`
 
 1. Stop {{< TransferCFT/componentshortname >}} using the `cftstop`
-    utility:
-
-    cftstop
+    utility:`cftstop`
 
 1. Examine the contents of the `CFTPROD/LOG. sav` file in the `CFTPROD `library and locate the messages inserted by the EXIT.  
       

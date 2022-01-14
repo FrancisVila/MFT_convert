@@ -24,8 +24,7 @@ The description of each command is generally organized in parts:
 - List indicating
     the general syntax of parameters passed with a command, grouped by categories
 
-Example
-
+**Example**
 ```
 CFTFILE [MODE = {CREATE
 | DELETE},]
@@ -48,10 +47,7 @@ of the file to which the command applies)
 
 Example of creating a parameter file:
 
-CFTFILE TYPE = PARM,  
-    MODE = CREATE,  
-    FNAME = filename
-
+`CFTFILE TYPE = PARM,    MODE = CREATE,    FNAME = filename`
 <span id="Parameter_description"></span>
 
 ### Parameter description
@@ -74,8 +70,7 @@ Each parameter description applies the following general syntax:
 
 The information and specifics fields are optional.
 
-Example
-
+**Example**
 ```
 COPYFILE
 OFNAME
@@ -158,8 +153,7 @@ When using the CFTUTIL HELP command, as shown in the example below, the follow
 - If `String `is mixed case, the parameter value is case sensitive
 - If `STRING or "String"`, the parameter value is only case sensitive when enclosed in quotes
 
-Example
-
+**Example**
 ```
 CFTUTIL help cmd=cftsend, content=detail
  
@@ -244,10 +238,8 @@ OS
 In the parameter syntax listings, the parameter values that are dependent
 on one or more protocols are indicated as follows: PROTOCOL
 
-Example
-
-\[NSPACE    
-= n,\]               PROTOCOL
+**Example**
+`[NSPACE       = n,]               PROTOCOL`
 
 In the parameter description, the protocol concerned is
 indicated explicitly. This notation is used, for example, in the following
@@ -263,30 +255,22 @@ PeSIT
 - Length of the value
     of the associated parameter differs from one protocol to another.
 
-Example  
-
-\[NSPASSW = string\]  
-string8     
-PeSIT  
-string8       ODETTE  
-string22
+**Example  
+**
+`[NSPASSW = string]string8        PeSITstring8       ODETTE      string22`
 
 The default value of a parameter may differ from one protocol to another;
 this is indicated as follows: Dft: PROTOCOL
 
-Example
-
-\[NCODE = {see the comment
-| BINARY | EBCDIC | ASCII}\]      Dft: PROTOCOL
+**Example**
+`[NCODE = {see the comment   | BINARY | EBCDIC | ASCII}]      Dft: PROTOCOL`
 
 The default value of a parameter may differ from one PeSIT protocol
 profile to another; this specificity is indicated as follows: Dft:
 PROFILE
 
-Example
-
-\[DISCTS     = n\]                        
-Dft: PROFILE    
+**Example**
+`[DISCTS     = n]                           Dft: PROFILE    `
 
 If the parameter in the command, in this case CFTPROT TYPE=PeSIT, is
 not defined, the default value of the profile is used.
@@ -327,7 +311,7 @@ The parameter setting commands are presented in the following format:
 
 ### Command reply format
 
-Example
+**Example**
 
 The report `CFTU94I   SHUT _Correct `indicates that the SHUT command was correctly entered
 in CFTUTIL.

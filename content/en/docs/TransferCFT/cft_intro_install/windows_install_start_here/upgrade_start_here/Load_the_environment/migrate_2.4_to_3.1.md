@@ -84,8 +84,7 @@ Parameter mapping between the trkapi.cfg file and UCONF
 ```
 CFTUTIL <prefix_character><script_filename>
 ```
-
-Example
+**Example**
 
 - UNIX: CFTUTIL @trkapi-import.sh
 - Windows: CFTUTIL #trkapi-import.bat
@@ -105,7 +104,7 @@ Migrate parameters from the Transfer CFT 2.4 copconf.ini file.
 
 1. For each selected parameter add a UCONF command line in your new script file using the format:
 
-UCONFSET id=&lt;parameter\_id>, value=&lt;value>
+`UCONFSET id=<parameter_id>, value=<value>`
 
 Use the parameters mapping between copconf and UCONF as listed in the following table to specify the correct parameter id.
 
@@ -146,8 +145,7 @@ Parameter mapping between copconf file and UCONF
 ```
 CFTUTIL <prefix_character><script_filename>
 ```
-
-Example
+**Example**
 
 - UNIX: CFTUTIL @copconf-import.sh
 
@@ -190,8 +188,7 @@ PKIUTIL PKIFILE fname=<pki_database_filename>, mode='CREATE’
 ```
 PKIUTIL <prefix_character><script_filename>
 ```
-
-Example
+**Example**
 
 - UNIX: PKIUTIL @pki-extract.conf
 

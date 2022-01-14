@@ -100,8 +100,7 @@ When using this type of access management, the file format must be VB, where the
 
 Start with the `UserID `in column 1 using blanks as separators. For example, to assign users rights, use the format:
 
-Format
-
+**Format**
 ```
 USER001 OPERATOR PARTNER .....
 USER002 ADMIN ..... 

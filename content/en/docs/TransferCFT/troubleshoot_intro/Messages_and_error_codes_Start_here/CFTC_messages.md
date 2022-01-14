@@ -8,7 +8,7 @@
 
 Earlier versions of Transfer CFT used a different message format than version 3.1.3 and higher. This document displays both formats when applicable and available, otherwise only the v23 is used. Using the CFTLOG Format = V24 setting, the log displays as shown:
 
-CFTXXX: fixed text message &lt;variables>
+`CFTXXX: fixed text message <variables>`
 
 **Example**
 
@@ -83,7 +83,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTC08I"></span>CFTC08I &amp;str<br/> CFTC08I &amp;str |
 | --- | --- |
-| Explanation  | Possible values for &amp;str are described here. The following messages are displayed when the catalog is purged on {{< TransferCFT/componentshortname  >}} startup, or at the time set for the daily purge. For example:<br/> When there are no transfers to delete:<br/> <div > Purge Started<br /> Purge catalog-size=1000 in-use=0 pre-filtered=0(0%)<br /> Purge Treated: catalog empty<br /> Purge deleted= n treated=n(d%) match=d%.<br /> Purge Treated<br /> Purge Treated: no record found to delete<br/> </div> When there are transfers to delete:<br/> <div > Catalog: Loading...<br /> Catalog: Load Done<br /> Catalog: Size=100, Used=8(8%)<br /> Purge Started.<br /> Purge catalog-size=100 in-use=8 pre-filtered=8(100)<br /> Purge deleted=1 treated=1(12) match=100<br /> Purge deleted=2 treated=2(25) match=100<br /> ….<br /> Purge deleted=8 treated=8(100) match=100<br /> Purge Treated.<br/> </div> When {{< TransferCFT/componentshortname  >}} starts:<br/> <div > If there are no transfers to delete:<br/> <div > Catalog: Loading...<br /> Catalog: Load Done<br /> Catalog: Size= &amp;00, Used=0(0%)<br /> <br/> </div> If there are transfers to delete:<br/> <div > Catalog: Loading...<br /> Catalog: Load Done<br /> Catalog: Size=100, Used=8(8%)<br/> </div> </div> If there is a problem with the catalog INIT:<br/> <div > Catalog: Recovering<br /> Catalog: Recovery Done: n errors<br /> Catalog Recovery: n transfers from C to D state<br/> </div>  |
+| Explanation  | Possible values for &amp;str are described here. The following messages are displayed when the catalog is purged on {{< TransferCFT/componentshortname  >}} startup, or at the time set for the daily purge. For example:<br/> **When there are no transfers to delete:** <div > <code>Purge StartedPurge catalog-size=1000 in-use=0 pre-filtered=0(0%)Purge Treated: catalog emptyPurge deleted= n treated=n(d%) match=d%.Purge TreatedPurge Treated: no record found to delete</code> </div> **When there are transfers to delete:** <div > <code>Catalog: Loading...Catalog: Load DoneCatalog: Size=100, Used=8(8%)Purge Started.Purge catalog-size=100 in-use=8 pre-filtered=8(100)Purge deleted=1 treated=1(12) match=100Purge deleted=2 treated=2(25) match=100….Purge deleted=8 treated=8(100) match=100Purge Treated.</code> </div> **When {{< TransferCFT/componentshortname  >}} starts:** <div > If there are no transfers to delete:<br/> <div > <code>Catalog: Loading...Catalog: Load DoneCatalog: Size= &amp;00, Used=0(0%)</code> </div> If there are transfers to delete:<br/> <div > <code>Catalog: Loading...Catalog: Load DoneCatalog: Size=100, Used=8(8%)</code> </div> </div> **If there is a problem with the catalog INIT:** <div > <code>Catalog: RecoveringCatalog: Recovery Done: n errorsCatalog Recovery: n transfers from C to D state</code> </div>  |
 
 
  

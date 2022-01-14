@@ -54,10 +54,7 @@ This command sends a negative acknowledgement .
 
 #### Example 1
 
-SEND TYPE=MESSAGE, PART=OFFICE,
-IDM=ANDREW,  
-  
-MSG = ’ANDREW: call PETER’
+`SEND TYPE=MESSAGE, PART=OFFICE,   IDM=ANDREW,MSG = ’ANDREW: call PETER’`
 
 A message was sent by an identifier ANDREW to a Partner identified by
 OFFICE.
@@ -71,11 +68,7 @@ the Partner on site A, using the &PART transfer originator variable.
 The transfer identifier to be acknowledged (IDT) is defined by the symbolic
 variable &IDT:
 
-SEND TYPE=REPLY, PART=&PART,
-IDM=MES2, IDT=&IDT,  
-  
-MSG = ’PAY file effectively received’
-
+`SEND TYPE=REPLY, PART=&PART,   IDM=MES2, IDT=&IDT,MSG = ’PAY file effectively received’`
 <span id="Monitoring_PeSIT_transfer_requests"></span>
 
 ## Monitoring PeSIT transfer requests

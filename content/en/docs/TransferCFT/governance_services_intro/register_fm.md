@@ -6,7 +6,7 @@
 
 ## Prerequisites
 
-{{< TransferCFT/componentlongname  >}} prerequisites
+**{{< TransferCFT/componentlongname  >}} prerequisites**
 
 - An installed Transfer CFT version 3.6 or higher on a compatible platform.
 - Transfer CFT and Copilot services are stopped.
@@ -20,7 +20,7 @@
 
 ## Automatically activate connectivity
 
-UNIX/Windows
+**UNIX/Windows**
 
 The automatic activation is only available on UNIX and Windows platforms and can be done during the installation. Please refer to the OS specific *Transfer CFT Installation Guide &gt; Customize the initialize.properties file &gt; Central Governance* section.
 

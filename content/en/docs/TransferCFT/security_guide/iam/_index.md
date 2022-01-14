@@ -10,7 +10,7 @@ This product implements an RBAC model to manage identity and access control. Thi
 
 The following diagram illustrates an RBAC model.
 
-![]($1)
+![](/Images/TransferCFT/acceptall_3.png)
 
 The following describes how the RBAC model works:
 

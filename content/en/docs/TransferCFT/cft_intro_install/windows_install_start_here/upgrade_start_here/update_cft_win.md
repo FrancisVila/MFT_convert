@@ -31,12 +31,11 @@ Some products support an installation in service mode with a user other than the
 
 If the domain field is not shown in the products service configuration dialog, then it must be introduced in the username field, using this format:
 
-&lt;domain>\\&lt;username>
+` <domain>\<username>`
 
 If it is a local user (a user that was created on the local machine) then the `<domain>` field can be or the `<hostname>`.
 
-Example
-
+**Example**
 ```
 Local user: user1
 .\\user1

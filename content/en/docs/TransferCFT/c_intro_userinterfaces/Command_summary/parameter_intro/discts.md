@@ -8,8 +8,8 @@
 
 #### CFTPROT
 
-\[DISCTS =
-{ <u>see the table</u> | n} \] {0..3600}  
+**\[DISCTS =
+{ <u>see the table</u> | n} \] {0..3600}  **
 
 The synchronous connection time as managed by {{< TransferCFT/componentshortname  >}}. If {{< TransferCFT/componentshortname  >}} does not receive requests to communicate in discts (the number of seconds), {{< TransferCFT/componentshortname  >}} closes the session.
 
@@ -23,7 +23,7 @@ If the value is 0, the wait time-out is infinite.
 The default value (in seconds) depends on the protocol and is indicated
 in the following table.
 
-Default values are:
+**Default values are:**
 
 
 | Protocol  | Default value  |

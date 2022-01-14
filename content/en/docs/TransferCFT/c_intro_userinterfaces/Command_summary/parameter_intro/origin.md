@@ -6,7 +6,7 @@
 
 #### All CFTXXX commands
 
-ORIGIN = &lt;C> ('CFTUTIL','C','DESIGNER','D','COPILOT','O')
+**ORIGIN = &lt;C> ('CFTUTIL','C','DESIGNER','D','COPILOT','O')**
 
 This parameter indicates the origin of an object. You can use this to determine if an object was created or modified using (DESIGNER), CFTUTIL, or Copilot.
 

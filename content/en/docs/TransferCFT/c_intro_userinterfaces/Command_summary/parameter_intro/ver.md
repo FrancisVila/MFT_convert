@@ -6,7 +6,7 @@
 
 ### ver
 
-VER = {
+VER = {V23
 | V24}
 
 Optional parameter. Indicates the format for the communication area.

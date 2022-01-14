@@ -36,11 +36,11 @@ All commands in this section are performed using CFTUTIL unless stated otherwise
 
 #### On Transfer CFT z/OS
 
-Use compliant characters for the z/OS shared secret
+**Use compliant characters for the z/OS shared secret**
 
 When setting the Central Governance "shared secret" during a Transfer CFT z/OS installation, translation issues may occur if you use certain characters. For example, if you enter !SECRET (using code page IBM-1147) the shared secret is translated to §SECRET during the Central Governance registration. Therefore, you must use compliant characters in the shared secret value when working in a z/OS environment.
 
-Verify the UCONF setting
+**Verify the UCONF setting**
 
 Prior to the registration, you must ensure that the JCL CFTMON (`copilot.misc.cftstart.enable` = `Yes`) is configured to match the jobname or the STC name used to launch Transfer CFT.
 

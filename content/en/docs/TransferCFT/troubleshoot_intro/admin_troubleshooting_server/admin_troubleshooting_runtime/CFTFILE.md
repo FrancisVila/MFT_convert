@@ -64,95 +64,41 @@ Use the CFTFILE command to create (MODE = CREATE) empty or delete (MODE
 | <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/type">TYPE</a> = {ACCNT | CAT | COM | LOG | PARM (PARMA) | PART} | Type of file concerned by the command.<br/> When TYPE = CAT, COM, PARM or PART, you can use the HABFNAME parameter for security. |
 
 
-**Syntax**
+****Syntax****
 
 #### CFTFILE { PARM | PARAM | PART }
 
-[TYPE](../../../../c_intro_userinterfaces/command_summary/parameter_intro/type)
-= { PARM | PARAM | PART }
-
-[FNAME](../../../../c_intro_userinterfaces/command_summary/parameter_intro/fname)
-= filename  
-
-\[ [HABFNAME](../../../../c_intro_userinterfaces/command_summary/parameter_intro/habfname)
-= filename \]
-
-\[ [FBLKSIZE](../../../../c_intro_userinterfaces/command_summary/parameter_intro/fblksize)
-= {
-|n } \]
-
-\[ [FSPACE](../../../../c_intro_userinterfaces/command_summary/parameter_intro/fspace)
-= n \]
-
-\[ [FSPACEX](../../../../c_intro_userinterfaces/command_summary/parameter_intro/fspacex)
-= n \]
-
-\[ [MODE](../../../../c_intro_userinterfaces/command_summary/parameter_intro/mode)
-= {
-| REPLACE | DELETE | ERASE } \]
-
- 
+`TYPE   = { PARM | PARAM | PART }`
+`FNAME   = filename  `
+`[ HABFNAME   = filename ] `
+`[ FBLKSIZE   = { 0   |n } ]`
+`[ FSPACE   = n ]`
+`[ FSPACEX   = n ]`
+`[ MODE   = { CREATE   | REPLACE | DELETE | ERASE } ]`
+` `
 
 #### CFTFILE { CAT | COM }
 
-[TYPE](../../../../c_intro_userinterfaces/command_summary/parameter_intro/type)
-= {  CAT
-| COM }
-
-[FNAME](../../../../c_intro_userinterfaces/command_summary/parameter_intro/fname)
-= filename
-
-\[ [RECNB](../../../../c_intro_userinterfaces/command_summary/parameter_intro/recnb)
-= n \]
-
-\[ [FBLKSIZE](../../../../c_intro_userinterfaces/command_summary/parameter_intro/fblksize)
-= {
-|n } \]
-
-\[ [FSPACE](../../../../c_intro_userinterfaces/command_summary/parameter_intro/fspace)
-= {
-| n } \]
-
-\[ [FSPACEX](../../../../c_intro_userinterfaces/command_summary/parameter_intro/fspacex)
-=  {
-| n } \]
-
-\[ [HABFNAME](../../../../c_intro_userinterfaces/command_summary/parameter_intro/habfname)
-= filename \]
-
-\[ [MODE](../../../../c_intro_userinterfaces/command_summary/parameter_intro/mode)
-= {
-| REPLACE | DELETE | ERASE} \]
-
-\[ [NODE]() = { n | <u>0</u>...16} \] available only when TYPE=CAT
-
- 
+`TYPE   = {  CAT   | COM }`
+`FNAME   = filename `
+`[ RECNB   = n ]`
+`[ FBLKSIZE   = { 0   |n } ]`
+`[ FSPACE   = { 0   | n } ]`
+`[ FSPACEX   =  { 0   | n } ]`
+`[ HABFNAME   = filename ]`
+`[ MODE   = { CREATE   | REPLACE | DELETE | ERASE} ]`
+`[ NODE = { n | 0...16} ] available only when TYPE=CAT`
+` `
 
 #### CFTFILE { ACCNT | LOG }
 
-[TYPE](../../../../c_intro_userinterfaces/command_summary/parameter_intro/type)
-= { ACCNT | LOG }
-
-[FNAME](../../../../c_intro_userinterfaces/command_summary/parameter_intro/fname)
-= filename
-
-\[ [FBLKSIZE](../../../../c_intro_userinterfaces/command_summary/parameter_intro/fblksize)
-=
-| n \]
-
-\[ [FSPACE](../../../../c_intro_userinterfaces/command_summary/parameter_intro/fspace)
-=
-|n \]
-
-\[ [FSPACEX](../../../../c_intro_userinterfaces/command_summary/parameter_intro/fspacex)
-=
-|n \]
-
-\[ [MODE](../../../../c_intro_userinterfaces/command_summary/parameter_intro/mode)
-= {
-| REPLACE | DELETE | ERASE } \]
-
-Example
+`TYPE   = { ACCNT | LOG }`
+`FNAME   = filename `
+`[ FBLKSIZE   = 0   | n ]`
+`[ FSPACE   = 0   |n ]`
+`[ FSPACEX   = 0   |n ]`
+`[ MODE   = { CREATE   | REPLACE | DELETE | ERASE } ]`
+**Example**
 
 The following command creates a parameter file.
 

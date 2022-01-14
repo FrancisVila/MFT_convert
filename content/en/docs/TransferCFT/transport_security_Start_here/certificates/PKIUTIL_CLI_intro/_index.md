@@ -35,6 +35,6 @@ UNIX/Windows only
 
 To simplify the use of `PKIUTIL `commands, you can use the autocomplete feature when working in interactive mode. See [Autocomplete](../../../c_intro_userinterfaces/about_cftutil/autocomplete).
 
-Related topics
+**Related topics**
 
 - [CFTPARM](../../../admin_intro/admin_config_commands/cftparm_general_parameters)

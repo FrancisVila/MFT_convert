@@ -8,7 +8,7 @@ This guide provides instructions and recommendations to help you strengthen the 
 
 ## Get more help
 
-{{< TransferCFT/companyname  >}} training and support
+**{{< TransferCFT/companyname  >}} training and support**
 
 Axway offers training across the globe, including on-site instructor-led classes and self-paced online learning.
 
@@ -16,7 +16,7 @@ Go to our support site to contact a representative, or to download software, and
 
 [{{< TransferCFT/supportwebsite  >}}](https://support.axway.com/ "Axway Software Technical Support website")
 
-Additional documentation
+**Additional documentation**
 
 For the latest {{< TransferCFT/componentshortname  >}} documentation, visit [https://docs.axway.com](https://docs.axway.com/):
 

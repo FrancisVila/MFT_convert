@@ -10,10 +10,9 @@
 
 #### CFTSEND, SEND
 
-\[NCODE = { '\_' | ASCII
-| BINARY | EBCDIC}\]
-
-PeSIT
+**\[NCODE = { '\_' | ASCII
+| BINARY | EBCDIC}\]**
+**PeSIT**
 
 The network data code to use for sending transfers.
 
@@ -48,7 +47,7 @@ In the PeSIT protocol Transfer
 CFT can send a "data code" protocol parameter (an indicator);
 this parameter then corresponds to NCODE.
 
-SFTP
+**SFTP**
 
 The network data code for sending transfers. The default ' ' indicates BINARY (no transcoding).
 
@@ -69,10 +68,9 @@ For further information, refer to *[Protocols](../../../../protocols_start_here)
 
 #### CFTRECV
 
-\[NCODE = { '\_' | ASCII
-| BINARY | EBCDIC}\]
-
-SFTP only
+**\[NCODE = { '\_' | ASCII
+| BINARY | EBCDIC}\]**
+**SFTP only**
 
 The network data code when receiving transfers. The default ' ' indicates BINARY (no transcoding).
 
@@ -93,7 +91,7 @@ Regardless of the FTYPE, when using SFTP, the end-of-line in the received file i
 
 #### CFTXLATE
 
-\[NCODE = {ASCII | EBCDIC}\]
+**\[NCODE = {ASCII | EBCDIC}\]**
 
 Code of data sent over the network.
 

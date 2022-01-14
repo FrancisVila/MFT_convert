@@ -61,7 +61,7 @@ subject.
 
 For example, this could be a typical DN for a Axway employee:
 
-uid=dupont,e=dupont@Axway.com,cn=Albert Dupont ,o=Axway Corp.,c=FR
+`uid=dupont,e=dupont@Axway.com,cn=Albert Dupont ,o=Axway Corp.,c=FR`
 
 The abbreviations before each equal sign in this example have the following
 meanings:

@@ -8,7 +8,7 @@
 
 #### LISTCOM
 
-\[VERIFY = { YES |
+\[VERIFY = { YES | NO
 }\]
 
 Request to verify the validity of each record in the file at the time
@@ -16,7 +16,7 @@ it is listed or displayed.
 
 #### CFTTCP
 
-\[VERIFY = {
+\[VERIFY = {0
 | n } \]
 
 Option to verify the partner number (DIALNO) on an incoming connection
@@ -26,7 +26,7 @@ If VERIFY = 0 no verification is performed.
 
 #### CFTSSL DIRECT=SERVER
 
-\[VERIFY = { NONE |
+\[VERIFY = { NONE | REQUIRED
 | OPTIONAL } \]
 
 - NONE: Only the server must be authenticated. 
@@ -50,17 +50,16 @@ Example 1
 
 This example demonstrates the use of the client `NONE` value.
 
-CFTSSL type=client, verify=none and CFTSSL type=server, verify=none
-
-![]($1)
+`CFTSSL type=client, verify=none and CFTSSL type=server, verify=none`
+` `
 
 Example 2
 
 This example demonstrates the use of the client `ENFORCED `value.
 
-CFTSSL type=client, verify=ENFORCED and CFTSSL type=server, verify=required
+`CFTSSL type=client, verify=ENFORCED and CFTSSL type=server, verify=required`
 
-![]($1)
+![](/Images/TransferCFT/verify1.png)
 
  
 
@@ -68,6 +67,6 @@ Example 3
 
 This example demonstrates a different use of the `ENFORCED `value. When acting as a client, `ENFORCED `enables Transfer CFT to cancel a transfer if the server does not require the client authentication. Here, the transfer fails with diagi 260 due to the fact that the client requires authentication:
 
-CFTSSL type=client, verify=ENFORCED and CFTSSL type=server, verify=NONE
+`CFTSSL type=client, verify=ENFORCED and CFTSSL type=server, verify=NONE`
 
 [Return to Command index](../../)

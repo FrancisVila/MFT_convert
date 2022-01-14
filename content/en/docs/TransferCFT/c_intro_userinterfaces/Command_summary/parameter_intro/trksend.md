@@ -8,8 +8,8 @@
 
 #### **CFTPARM**
 
-**\[TRKSEND = {**
-**|** **ALL | NO | SUMMARY }\]**
+**\[TRKSEND = {** **UNDEFINED
+|** **ALL | NO | SUMMARY }\]**
 
 Specifications concerning transfers via CFTSEND for which the [trk](../trk)
 value is not defined.

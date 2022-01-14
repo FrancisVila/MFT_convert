@@ -16,7 +16,7 @@ to be established.
 **Defining a list
 of partners**
 
-![]($1)
+![](/Images/TransferCFT/Define_list_of_partner_SEND.gif)
 
 The broadcasting list can be described in a file. In this case, the
 name of this file is indicated in CFTDEST, FNAME parameter. The corresponding
@@ -31,7 +31,7 @@ by direct connection.
 **Broadcasting through
 a store and forward site**
 
-![]($1)
+![](/Images/TransferCFT/Broadcast_thr_store_and_forward.gif)
 
 <span id="Broadcasting_notations"></span>
 
@@ -68,7 +68,7 @@ are then required and sufficient:
 **Broadcasting activated on a store and
 forward site**
 
-![]($1)
+![](/Images/TransferCFT/Broadcast_activated_on_store_and_forward.gif)
 
 <span id="Broadcasting_processes"></span>
 
@@ -149,4 +149,4 @@ message.
 
 **Broadcasting list acknowledgement mechanism**
 
-![]($1)
+![](/Images/TransferCFT/Broadcast_ack_mechanism.gif)

@@ -22,7 +22,7 @@ A batch procedure can contain a reference to Transfer CFT variables. The charac
 
 Refer to *Transfer CFT User Guide* for a complete list of Transfer CFT variables.
 
-![]($1)
+![](/Images/TransferCFT/temp_batch_processing.png)
 
 ### Decision rules
 
@@ -39,7 +39,7 @@ The characters following the initial " == " either set certain information for t
     -   A direct TACL procedure execution
     -   This execution type performed by default
     -   This parameter is kept to ensure compatibility with existing batch procedures
-- <span id="CFT^BT^FORCE^ZBAT"></span>== CFT^BT^FORCE^ZBAT
+- <span id="CFT^BT^FORCE^ZBAT"></span>== CFT^BT^FORCE^ZBAT ==
     -   Use NetBatch Interface
     -   To specify a given environment, you can declare it in the first line of the actual procedure. Add the following optional values in the first line of the skeleton procedure, in the order listed. If no values are declared, the [UCONF](#UCONF) default values are used.
         -   NetBatch process
@@ -49,7 +49,7 @@ The characters following the initial " == " either set certain information for t
 
 **Example**
 
-== CFT^BT^FORCE^ZBAT : $ZBA1 , JOBNAME , SETNAME ==
+` == CFT^BT^FORCE^ZBAT : $ZBA1 , JOBNAME , SETNAME ==`
 
 - NetBatch Process = $ZBA1
 - Job name = JOBNAME
@@ -62,11 +62,9 @@ The characters following the initial " == " either set certain information for t
 - OSS: The same as on {{< TransferCFT/componentlongname >}} Unix: /tmp/CFTxxxx  
 - Native: On the {{< TransferCFT/componentlongname >}} default [subvolume](#subvolumeUD): CTMPnnnn
 
-2> filenames $DATA14.CFT32BUD.\*
-
-          $DATA14.CFT32BUD
-
-CTMP0001 CTMP0002 CTMP0003 CTMP0004
+`2> filenames $DATA14.CFT32BUD.*`
+`           $DATA14.CFT32BUD`
+`CTMP0001  CTMP0002  CTMP0003  CTMP0004`
 
 {{< TransferCFT/componentlongname  >}} copies the skeleton in the temporary file, replacing variables with their real values (transfer information, file names, etc.).
 

@@ -22,16 +22,15 @@ In addition to the possibilities available in the SNDCFTSPLF interactive command
 
 The syntax is as follows:
 
-> SEND FNAME = Spool file/File n°/Job/Job n°, PART ...
+> `SEND FNAME = Spool file/File n°/Job/Job n°, PART ...`
 
 Example:
 
-> SEND FNAME = QPRINT/2/CFTLOG/074556, IDF = SPLF, PART ...
+> `SEND FNAME = QPRINT/2/CFTLOG/074556, IDF = SPLF, PART ...`
 
 You can transfer spool files from an IBM i system to any other system.  
 The receive file is a fixed format sequential file. To use it as a spool file on a receiver IBM i system, you can add the commands in the following example to a receive procedure:
 
-> OVRPRTF FILE(QPRINT) CTLCHAR(\*FCFC)  
-> CPYF FROM FILE(CFTPROD/R\_SPLF) TO FILE (QPRINT)
+> `OVRPRTF FILE(QPRINT) CTLCHAR(*FCFC)CPYF FROM FILE(CFTPROD/R_SPLF) TO FILE (QPRINT) `
 
 The Qprint file is an exact copy of the initial spool file.

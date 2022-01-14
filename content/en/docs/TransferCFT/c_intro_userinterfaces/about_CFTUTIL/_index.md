@@ -51,7 +51,7 @@ operating modes that use the same CFTUTIL operations regardless of the operating
 Enter the CFTUTIL commands via the keyboard. The output is sent to the
 screen by default, or to a file as shown below:
 
-CFTUTIL ‘file\_symb’file\_in file\_out
+`CFTUTIL ‘file_symb’file_in file_out`
 
 In this syntax:
 
@@ -102,10 +102,8 @@ On all systems:
 Another way to change the input/output file, similar to the *Data entry in command line* instructions, is to use the CONFIG command with a syntax as displayed
 here in the following two steps:
 
-CFTUTIL> CONFIG TYPE=OUTPUT, FNAME=file\_out
-
-CFTUTIL> CONFIG
-TYPE=INPUT, FNAME=file\_in
+`CFTUTIL> CONFIG TYPE=OUTPUT, FNAME=file_out`
+`CFTUTIL> CONFIG   TYPE=INPUT, FNAME=file_in`
 
 See the [CONFIG
 command](../../admin_intro/admin_config_commands/communication_media_concepts).

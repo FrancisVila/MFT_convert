@@ -58,7 +58,7 @@ The available verbs are listed in the following table.
 | SELECT | Define selection criteria |
 | NEXT | Read next entry |
 | MODIFY | Modify catalog entry state |
-| SORT | cftaix only |
+| SORT | cftaix only<br/> Sort the selected catalog entries |
 | DO | cftaix only<br/> Do the current selection and the requested sort in memory |
 | CLOSE | Close catalog |
 

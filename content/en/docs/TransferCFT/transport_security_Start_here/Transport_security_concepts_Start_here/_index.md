@@ -43,9 +43,9 @@ and decrypt data. The task of privately choosing the key before ciphering
 data is more problematic as the connected parties share a single key that
 cannot be clearly transmitted to others.
 
-Symmetrical encryption
+**Symmetrical encryption**
 
-![$2]($1)
+![View of symetrical key ](/Images/TransferCFT/encrypt_key.gif)
 
 #### Asymmetrical encryption
 
@@ -63,9 +63,9 @@ and exchanged during the handshake phase. They are transmitted using an
 asymmetrical encryption mechanism, which is slower but more secure (RSA)
 than a symmetric encryption mechanism.
 
-Asymmetrical encryption
+**Asymmetrical encryption**
 
-![$2]($1)
+![View of public and private key encryption](/Images/TransferCFT/image004.gif)
 
 <span id="Integrity"></span>
 
@@ -87,9 +87,9 @@ Authentication Code),
 is added to each message sent. The standard hash functions used are SHA-1
 or MD5.
 
-Hash function
+**Hash function**
 
-![]($1)
+![](/Images/TransferCFT/image005.gif)
 
 <span id="Authentication"></span>
 
@@ -110,7 +110,7 @@ to get the public key, such as a certificate, you are sent a random encrypted
 message. If you can decrypt the message, your identity is verified because
 you own the unique private key associated with the public key.
 
-Proof request![](/Images/TransferCFT/image006.gif)
+**Proof request![](/Images/TransferCFT/image006.gif)**
 
 When you use TLS and SSL protocols, the client encrypts the symmetrical
 key with the server’s public key. If the server can decrypt the key, the
@@ -131,9 +131,9 @@ the calculated hash code. If the hash code is correct, data integrity
 is accepted, and the sender is as claimed because he had the correct key
 to encrypt the digest.
 
-Integrity and authentication
+**Integrity and authentication**
 
-![]($1)
+![](/Images/TransferCFT/temp_integrity_and_auth.png)
 
 <span id="Log"></span>
 
@@ -145,8 +145,7 @@ The following two messages indicate whether the SSL
 option was applied when starting up the monitor. Remember that SSL
 is a protection key option.
 
-CFTI18I SSL Protocol Option is authorized  
-CFTI25I Init complete \_ Security active \[ SSL \]
+`CFTI18I SSL Protocol Option is authorizedCFTI25I Init complete _ Security active [ SSL ]`
 
 Other messages are used to notify you of secure sessions that have been
 opened/closed and the parameters negotiated.

@@ -22,9 +22,8 @@ All passwords stored in the UCONF dictionary, or in the {{< TransferCFT/compone
 
 ## cftcrypt command
 
-Syntax
-
-cftcrypt -- ACTION -- OPTION
+**Syntax**
+`cftcrypt -- ACTION -- OPTION`
 
 Actions:
 
@@ -57,8 +56,7 @@ Use the following command to generate an encryption key using the provided passw
 ```
 cftcrypt --genkey --keyfname FILENAME --saltfname FILENAME --pass PASSWORD
 ```
-
-Encryption parameters in UCONF
+**Encryption parameters in UCONF**
 
 
 | Parameter  | Description  |
@@ -77,7 +75,7 @@ cftcrypt --renewkey --keyfname FILENAME --saltfname FILENAME --oldpass PASSWORD 
 
 The command succeeds if the referenced key and salt files exist and the `oldpass `matches the password used to generate the previous key. This command exports the configuration, generates a new encryption key, and imports the configuration.
 
-Platform specifics
+**Platform specifics**
 
 - z/OS: Use the JCL CFTRNKEY for key renewal.
 

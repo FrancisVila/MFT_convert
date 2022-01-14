@@ -20,8 +20,8 @@ To activate
 the statistical mode, you must also configure the [CFTPARM](../cftparm)
 object.
 
-Related
-topics
+**Related
+topics**
 
 - Object concepts
     [How to define transfer
@@ -47,8 +47,7 @@ topics
 
 ## Examples
 
-TYPE = FILE
-
+**TYPE = FILE**
 ```
 CFTACCNT
 ID = ACCNT,

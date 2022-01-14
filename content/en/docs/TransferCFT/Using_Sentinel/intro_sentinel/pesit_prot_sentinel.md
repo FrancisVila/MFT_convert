@@ -65,10 +65,10 @@ For a given transfer, only the following combinations of partner roles are possi
 
 In the XFBTransfer Tracked Object, the Attributes ‘Direction” and “IsServer” reflect these roles (see below).
 
-Receiver/Server transfer states
+**Receiver/Server transfer states**
 
 
-| State | Compatible Sentinel State | IsEnd | IsAlert | IsException | Description |
+| **State**  | **Compatible Sentinel State**  | **IsEnd**  | **IsAlert**  | **IsException**  | **Description**  |
 | --- | --- | --- | --- | --- | --- |
 | RECEIVING | RECEIVING | 0 | 0 | 0 | File data transmission in progress |
 | CANCELED | CANCELED | 0 | 1 | 1 | File data transmission locally canceled (KEEP command) |
@@ -85,10 +85,10 @@ Receiver/Server transfer states
 | ROUTED | ROUTED | 1 | 0 | 0 | File successfully routed (only on the relay site in store and forward mode) |
 
 
-Sender/Server transfer states
+**Sender/Server transfer states**
 
 
-| State | Compatible Sentinel State | IsEnd | IsAlert | IsException | Description |
+| **State**  | **Compatible Sentinel State**  | **IsEnd**  | **IsAlert**  | **IsException**  | **Description**  |
 | --- | --- | --- | --- | --- | --- |
 | AVAILABLE | AVAILABLE | 0 | 0 | 0 | Transfer available |
 | SENDING | SENDING | 0 | 0 | 0 | File data transmission in progress |
@@ -104,10 +104,10 @@ Sender/Server transfer states
 | COMPLETED | CONSUMED | 1 | 0 | 0 | Transfer completed |
 
 
-Receiver/Requester transfer states
+**Receiver/Requester transfer states**
 
 
-| State | Compatible Sentinel State | IsEnd | IsAlert | IsException | Description |
+| **State**  | **Compatible Sentinel State**  | **IsEnd**  | **IsAlert**  | **IsException**  | **Description**  |
 | --- | --- | --- | --- | --- | --- |
 | TO_EXECUTE | TO_EXECUTE | 0 | 0 | 0 | Transfer to execute (delayed or to restart) |
 | RECEIVING | RECEIVING | 0 | 0 | 0 | File data transmission in progress |
@@ -123,10 +123,10 @@ Receiver/Requester transfer states
 | COMPLETED | CONSUMED | 1 | 0 | 0 | Transfer completed |
 
 
-Sender/Requester transfer states
+**Sender/Requester transfer states**
 
 
-| State | Compatible Sentinel State | IsEnd | IsAlert | IsException | Description |
+| **State**  | **Compatible Sentinel State**  | **IsEnd**  | **IsAlert**  | **IsException**  | **Description**  |
 | --- | --- | --- | --- | --- | --- |
 | PRE_PROC | AVAILABLE/TO_EXECUTE | 0 | 0 | 0 | Pre-processing in progress |
 | PRE_PROC_ABORT | CANCELED | 0 | 1 | 1 | Pre-processing aborted by the application (KEEP command) |

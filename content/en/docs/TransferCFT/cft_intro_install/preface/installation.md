@@ -77,7 +77,7 @@ The following command installs Transfer CFT on the OSS directory /`home/cftuser/
 /home/cftuser/Transfer_CFT_OtherUnixes_V3.8: ./ TransferCFT_3.8_hp_nonstop_oss-ia 64-32.run install /home/cftuser/CFT38 /G/data14/cft38b
 ```
 
-The following command installs Transfer CFT on the OSS directory` `. Additionally, a post installation script `cft_postinst.sh` is run at the end of the installation process.
+The following command installs Transfer CFT on the OSS directory` /home/cftuser/CFT38`. Additionally, a post installation script `cft_postinst.sh` is run at the end of the installation process.
 
 ```
 /home/cftuser/Transfer_CFT_OtherUnixes_V3.8: ./ TransferCFT_3.8_hp_nonstop_oss-ia 64-33.run install /home/cftuser/CFT38 --post_install_script ./cft_postinst.sh

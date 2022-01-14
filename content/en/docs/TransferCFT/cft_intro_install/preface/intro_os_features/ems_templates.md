@@ -39,7 +39,7 @@ The following table shows the relationship between the event, the subject, and t
 | 5  | CFT WARN LOG  | Log warning message  |
 | 6  | CFT ERR LOG  | Log error message  |
 | 7  | CFT FAIL LOG  | Log failure message  |
-| 8  | CFT ACCOUNT  | Account  |
+| 8  | CFT ACCOUNT  | Account message  |
 
 
 ## Activate event log messages

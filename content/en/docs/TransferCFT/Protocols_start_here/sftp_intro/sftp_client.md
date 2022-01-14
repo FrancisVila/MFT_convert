@@ -2,7 +2,7 @@
     "title": "Configure Transfer CFT as an SFTP client",
     "linkTitle": "Configure the Transfer CFT SFTP client",
     "weight": "170"
-}T
+}T**he supported operating systems are listed in the** [Platform features](../../../datasheet) **table.**
 
 To configure a {{< TransferCFT/transfercftname  >}} SFTP client:
 
@@ -21,8 +21,7 @@ The following parameters are used to define the client's SFTP protocol:
 - SSH: Link to the CFTSSH object (DIRECT=CLIENT)
 - NET: link to the CFTNET 
 
-Example
-
+**Example**
 ```
 cftprot id = SFTP,
 
@@ -45,8 +44,7 @@ PKIKEY id=SRV_PUB_KEY, ikname='serv.pub', ikform=ssh
 
 You can use either the PKIKEYGEN command or the PKIKEY command to add the client key in the server database if you are using key authentication (or dual authentication). For more information, see <a href="../new_pki_keys_use" class="MCXref xref">Generate and manage keys</a>.
 
-Example
-
+**Example**
 ```
 PKIKEYGEN id=MY_KEY, keylen=2048
 ```
@@ -61,8 +59,7 @@ This section you use CFTSSH to define a SSH profile in Transfer CFT. The CFTSSH
 - SRVPUBKEY=Identifier of the key used to authenticate the server
 - CLIPRIVKEY: Key Id of the client private key to use with key authentication.
 
-Example
-
+**Example**
 ```
 CFTSSH id = SSH_DEFAULT,
 
@@ -121,7 +118,7 @@ CFTTCP id = USER1,
 
 ```
 
-![$2]($1)
+![Client NSPART arrow to Server Login, Cient NSPASSW arrow to server Password](/Images/TransferCFT/sftp_client.png)
 
 <span id="Key"></span>
 
@@ -200,6 +197,6 @@ You can configure the conversion using FCHARSET/NCHARSET or FCODE/NCODE, where t
 
 See also, [Transcoding concepts](../#Transcod).
 
-Related topics
+**Related topics**
 
 [CFTSSH - Security profile](../../../c_intro_userinterfaces/web_copilot_ui/cftssl/cftssh)

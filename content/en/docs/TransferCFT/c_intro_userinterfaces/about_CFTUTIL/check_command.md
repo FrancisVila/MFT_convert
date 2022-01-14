@@ -37,4 +37,4 @@ You can use the `check`command with `cftinit `and `cftupdate `using the followin
 
 Here, the `-check` option is equivalent to running `CFTUTIL CHECK `at the end of a successful cftinit or cftupdate .
 
- 
+** **

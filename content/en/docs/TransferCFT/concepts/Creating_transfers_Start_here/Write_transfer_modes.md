@@ -44,7 +44,7 @@ The figures below indicate these possibilities.
 **Sender/requester transfer: closed mode
 - explicit name at the server end**
 
-![]($1)
+![](/Images/TransferCFT/Send_req_tx_closed_explicit_name_server.gif)
 
  
 
@@ -54,7 +54,7 @@ is explicit.
 **Sender/requester transfer: closed mode
 - symbolic variables at the server end**
 
-![]($1)
+![](/Images/TransferCFT/Send_req_tx_closed_symbolic_var_server.gif)
 
 In the second figure (transfer in PeSIT E protocol for example), the
 name assigned at the server end is defined using the following symbolic
@@ -106,7 +106,7 @@ by the parameter of the CFTSEND parameter setting command.
 
 **Sender/requester transfer: open mode**
 
-![]($1)
+![](/Images/TransferCFT/Send_transfer_req_open_mode.gif)
 
 <span id="Read_transfer_and_locked_for_sending_mode"></span>
 
@@ -152,7 +152,7 @@ The following figures indicate these possibilities.
 **Receiver/requester transfer in locked
 for sending mode: closed mode - explicit name at the requester end**
 
-![]($1)
+![](/Images/TransferCFT/Rec_req_tx__lock_for_send_closd_explicit_req_end.gif)
 
 In the figure above, the name assigned (FNAME = X) at the requester
 end is explicit.
@@ -160,7 +160,7 @@ end is explicit.
 **Receiver/requester transfer in locked
 for sending mode: closed mode symbolic variable at the requester end**
 
-![]($1)
+![](/Images/TransferCFT/Rec_req_tx_lock_send_closed_symbolic_var_on_requester.gif)
 
 In the figure above, the name assigned at the requester end is defined
 using the symbolic variable &IDT which provides the possibility of
@@ -223,4 +223,4 @@ transfer.
 **Receiver/requester transfer in locked
 for sending mode: open mode**
 
-![]($1)
+![](/Images/TransferCFT/Rec_req_tx_locked_for_send_open.gif)

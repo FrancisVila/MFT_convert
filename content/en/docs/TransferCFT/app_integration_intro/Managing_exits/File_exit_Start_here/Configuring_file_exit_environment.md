@@ -28,11 +28,11 @@ EXIT = *identifier*,
 
 #### Parameters
 
-**ID = *identifier***
+`ID = identifier`
 
 File identifier.
 
-**EXIT = *identifier***
+`EXIT = identifier`
 
 File type EXIT identifier.
 
@@ -59,8 +59,7 @@ TYPE = FILE,
 [RESERV = {8192 | n},]
 [WAITTASK = {1441 | n}]
 ```
-
-Related topics
+**Related topics**
 
 - [CFTSEND](../../../../concepts/cft_configuration_concepts_start_here/default_send_template_concepts)
 - [CFTRECV](../../../../concepts/cft_configuration_concepts_start_here/default_receive_template_concepts)

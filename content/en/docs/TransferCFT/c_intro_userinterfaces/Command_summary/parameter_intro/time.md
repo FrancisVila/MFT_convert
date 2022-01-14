@@ -8,9 +8,7 @@
 
 #### CFTCRON
 
-TIME =
-{ string | @shutdown | @startup
-}
+`TIME =   { string | @shutdown | @startup   }`
 
 Starts batch
 commands.

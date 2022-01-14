@@ -8,7 +8,7 @@
 
 #### CFTSEND, SEND
 
-**NKEYPOS = {<u>FKEYPOS</u>  | n}\]
+**NKEYPOS = {<u>FKEYPOS</u> value  | n}\]
           PeSIT
 E**
 

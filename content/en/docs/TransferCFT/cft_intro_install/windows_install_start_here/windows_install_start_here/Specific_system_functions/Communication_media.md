@@ -48,7 +48,7 @@ date can change at a different time (GM ± n).
 
 Environment variable
 
-TZ or TZSET
+`TZ or TZSET`
 
 In general and to solve this problem, the operating system provides a
 solution whereby users can indicate the time zone in which they are located.
@@ -63,7 +63,7 @@ Transfer CFT takes this parameter into account, if it has been set.
 
 ### CFTUTIL shutdown timeout
 
-Environment variable
+**Environment variable**
 
 #### CFTEXITTIME
 
@@ -82,9 +82,8 @@ yet received by the Transfer CFT, also to disappear.
 By default, CFTUTIL waits for a maximum of 60 seconds before disappearing. To modify this time, you define the CFTEXITTIME environment variable
 in seconds of wait time.
 
-Example
-
-SET CFTEXITTIME=120
+**Example**
+`SET CFTEXITTIME=120`
 
 This example causes CFTUTIL to wait a maximum of 120 seconds before disappearing.
 

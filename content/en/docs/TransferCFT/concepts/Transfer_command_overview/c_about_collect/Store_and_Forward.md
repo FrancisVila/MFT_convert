@@ -54,7 +54,7 @@ The following descriptions correspond with the
 parameter setting example in the
 figure below.
 
-Configure the sender
+**Configure the sender**
 
 Configure the following for the initial sender (Site A):
 
@@ -62,14 +62,14 @@ Configure the following for the initial sender (Site A):
 - Define the first relay (Site B).
 - In the final receiver partner definition, make a reference to the first relay with IPART=&lt;relay> .
 
-Configure the relay
+**Configure the relay**
 
 Configure the following for the store and forward (Site B):
 
 - Define both the initiator and the receiver CFTPART partner definitions.
 - Set COMMUT=YES (default).
 
-Configure the receiver
+**Configure the receiver**
 
 Configure the following for the final receiver (Site C):
 
@@ -86,9 +86,9 @@ Configure the following for the final receiver (Site C):
 > C, then the command CFTTCP ID=ID\_C has no impact. Similarly, there is no need to set CFTTCP ID=ID\_A
 > for the final receiver C.
 
-Intentional store and forward
+**Intentional store and forward**
 
-![]($1)
+![](/Images/TransferCFT/Intentional_store_and_forward.gif)
 
 <span id="Intentional_VAN_store_and_forward"></span>
 
@@ -102,7 +102,7 @@ The following descriptions correspond with the
 parameter setting example in the
 figure below.
 
-Configure the sender
+**Configure the sender**
 
 Configure the following for the initial sender (Site A):
 
@@ -110,7 +110,7 @@ Configure the following for the initial sender (Site A):
 - Define the first relay.
 - Make a reference to the first relay with IPART=&lt;relay> in the final receiver partner definition.
 
-Configure the relay
+**Configure the relay**
 
 Configure the following for the store and forward (Site B):
 
@@ -121,7 +121,7 @@ Configure the following for the store and forward (Site B):
         includes the following command on completion of processing: `CFTUTIL SEND PART= &RPART, SPART= &SPART, FNAME= &FNAME, IDF=   &IDF`
     -   When the symbolic variables are replaced: `CFTUTIL SEND PART=ID_C,SPART=ID_A,FNAME=frecv, IDF=test`
 
-Configure the receiver
+**Configure the receiver**
 
 Configure the following for the final receiver (Site C):
 
@@ -131,9 +131,9 @@ Configure the following for the final receiver (Site C):
 >
 > In the example, the receiver (C) configuration defines the sender (Site A) CFTPART with OMINTIME and OMAXTIME parameters equal to zero, and defines the relay (Site B) as the IPART, which enables acknowledgments from the receiver C to the sender A.
 
-Intentional VAN store and forward
+**Intentional VAN store and forward**
 
-![]($1)
+![](/Images/TransferCFT/Intentional_VAN_store_and_forward.gif)
 
 <span id="Forced_Store_and_Forward"></span>
 
@@ -147,11 +147,11 @@ The following descriptions correspond with the
 parameter setting example in the
 figure below.
 
-Configure the sender
+**Configure the sender**
 
 - Define the first relay (Intermediate Site 1).
 
-Configure the first relay
+**Configure the first relay**
 
 Configure the following for the store and forward Intermediate Site 1:
 
@@ -162,7 +162,7 @@ Configure the following for the store and forward Intermediate Site 1:
 
 - In the CFTPART for the sender site, make a reference to the second relay using the IPART=&lt;Site 2>.
 
-Configure the second relay
+**Configure the second relay**
 
 Configure the following for the store and forward Intermediate Site 2:
 
@@ -170,7 +170,7 @@ Configure the following for the store and forward Intermediate Site 2:
 - Set COMMUT=PART.
 - In the CFTPART for the first relay (Intermediate Site 1), make a reference to the final site.
 
-Configure the final receiver
+**Configure the final receiver**
 
 - Define the CFTPART partner definition for the second relay (Intermediate Site 2).
 
@@ -181,17 +181,16 @@ Configure the final receiver
 - For the Intermediate Site 2 in the CFTPART ID=IDGWAY, set the IPART=IDDEP1, which refers to the Intermediate Site 1.
 - For the Intermediate Site 1 in the CFTPART ID=IDDEP, set the IPART=IDNAT1, which refers to the sender site.
 
-Store and forward SEND command
+**Store and forward SEND command**
 
 In the SEND command you must specify the final network partner (the NSPART of the final partner) as well as the ID of the first intermediate partner.
 
 ```
 CFTUTIL SEND PART=NFINAL, IPART=IDNAT, ...
 ```
+**Forced store and forward**
 
-Forced store and forward
-
-![]($1)
+![](/Images/TransferCFT/Forced_Store_and_forward.gif)
 
 > **Note**
 >

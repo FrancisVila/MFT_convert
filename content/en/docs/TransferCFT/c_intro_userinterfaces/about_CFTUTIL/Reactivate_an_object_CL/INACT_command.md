@@ -2,7 +2,7 @@
     "title": "           INACT  - Deactivate an object",
     "linkTitle": "INACT - Deactivating objects",
     "weight": "270"
-}<span id="kanchor67"></span>
+}<span id="kanchor68"></span>
 
 This page describes the INACT command and its parameters. You can use the INACT command to deactivate:
 
@@ -42,7 +42,7 @@ INACT TYPE=PART,ID=<CFTPART_ID>,MODE=<mode>,FORCE=<NO | YES>
 Where:
 
 - `CFTPART_ID` is the identifier of the partner to deactivate. To deactivate several partners with a single command, use wildcard characters or meta characters.
-- is the mode to be deactivated, with values: "BOTH" , "B", "REQUESTER", "R" , "SERVER", "S"
+- Mode is the mode to be deactivated, with values: "BOTH" , "B", "REQUESTER", "R" , "SERVER", "S"
 - When `FORCE `is set to `YES`, stops any transfers in progress involving the deactivated partners.
 
 Example

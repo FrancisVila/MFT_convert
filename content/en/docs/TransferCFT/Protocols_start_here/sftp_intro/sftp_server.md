@@ -2,7 +2,7 @@
     "title": "Configure Transfer CFT as an SFTP server",
     "linkTitle": "Configure the Transfer CFT SFTP server",
     "weight": "160"
-}T
+}T**he supported operating systems are listed in the** [Platform features](../../../datasheet) **table.**
 
 This section describes how to set up Transfer CFT to use as a server with the SFTP protocol.
 
@@ -25,8 +25,7 @@ The following parameters are used for SFTP protocol:
 - SSH: Link to a CFTSSH object (DIRECT=SERVER)
 - NET: Link to a CFTNET definition
 
-Example
-
+**Example**
 ```
 CFTPROT id = SFTP,
 
@@ -42,8 +41,7 @@ CFTPROT id = SFTP,
 
 You can use either the PKIKEYGEN command or the PKIKEY command to add the server key in the database. For more information, see <a href="../new_pki_keys_use" class="MCXref xref">Generate and manage keys</a>.
 
-Example
-
+**Example**
 ```
 PKIKEYGEN id=MY_KEY, keylen=2048
 ```
@@ -57,8 +55,7 @@ This section you use CFTSSH to define a SSH profile in Transfer CFT. The CFTSSH
 - SRVPRIVKEY: Key Id containing the server private key (RSA) to use with key authentication.
     -   If SRVPRIVKEY(CFTSSH direct=server) is not set, {{< TransferCFT/componentlongname >}} cannot start, and the message displays `CFTN05E SFTP bind() failed: ECDSA, DSA, or RSA host key file must be set`.
 
-Example
-
+**Example**
 ```
 CFTSSH id = SSH_DEFAULT,
 
@@ -113,10 +110,9 @@ CFTTCP id = USER1,
 > ...
 
 ```
+**When using password authentication**
 
-When using password authentication
-
--     ![$2]($1)
+-     ![Client Login arrow to NRPART, Ciient Password arrow to server NRPASSW](/Images/TransferCFT/sftp_server.png)
 
 <span id="Key"></span>
 
@@ -241,13 +237,13 @@ If the provided IDF does not belong to either the SAUTH or RAUTH list, on the se
 >
 > If you are using both the SAUTH and RAUTH parameters, then you must use the same value for the SAUTH (sending files) and RAUTH (receiving files) for a given CFTPART definition. This means that the client will see only the directories that are authorized by these parameters.
 
-Server mode password authentication using restricted flow models
+**Server mode password authentication using restricted flow models**
 
-![]($1)
+![](/Images/TransferCFT/sftp_cft.jpg)
 
-Server mode key and password authentication using restricted flow models
+**Server mode key and password authentication using restricted flow models**
 
-![]($1)
+![](/Images/TransferCFT/sftp_server_double.png)
 
 ### Creating send and receive templates (CFTSEND/CFTRECV)
 
@@ -267,10 +263,8 @@ When defining the WORKINGDIR, you can use the following symbolic variables:
 - &PART: partner
 - &HOME: home directory on UNIX, or the user directory on Windows (`C:\Users\<user>`)
 
-Example
-
-In this example, `user1 `can perform a `get `or `put `command using the space (WORKINGDIR) defined for `user1`.
-
+**Example**
+**In this example, `user1 `can perform a `get `or `put `command using the space (WORKINGDIR) defined for `user1`.**
 ```
 CFTPART ID=user1, IDF=flow01, NRPART="user1",...
  
@@ -290,6 +284,6 @@ You can configure the conversion using FCHARSET/NCHARSET or FCODE/NCODE, where t
 
 See also, [Transcoding concepts](../#Transcod).
 
-Related topics
+**Related topics**
 
 [CFTSSH - Security profile](../../../c_intro_userinterfaces/web_copilot_ui/cftssl/cftssh)

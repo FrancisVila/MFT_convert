@@ -14,22 +14,17 @@ You can refer to the [Secure Relay documentation](https://docs.axway.com/bundle/
 
 If you find the following messages in the {{< TransferCFT/componentlongname  >}} log, you may want to check the **Possible cause**:
 
-Possible cause: No Router Agent available
-
+**Possible cause: No Router Agent available**
 ```
 CFTS63F Secure Relay fatal error _ Secure Relay register error 2 (Error sending listen request to RA DMZ0: CFTS63F+com.axway.xsr.agent.master.context.router.RouterAgentContextException: MPX channel is currently not available)
 ```
-
-Possible cause: Java not set
-
+**Possible cause: Java not set**
 ```
 CFTS63F Secure Relay fatal error _ Java binary file not found:
 CFTS63F Secure Relay fatal error _ Please set uconf:cft.jre.java_binary_path parameter
 CFTI10F Init error _ failed to start the Secure Relay Master Agent CFTS63F Secure Relay fatal error _ (13) Permission denied (in UNIX environments)
 ```
-
-Possible cause: Problem related to secure\_relay.ma.ca\_cert\_fname
-
+**Possible cause: Problem related to secure\_relay.ma.ca\_cert\_fname**
 ```
 CFTI09F Init error _ Communication process CFTI10F Init error _ failed to start the Secure Relay Master Agent
 ```
@@ -46,7 +41,7 @@ CFTI22F CFTPROT=PESIT Register request failure CS=00000098
 
 ## Transfer CFT and the Master Agent fail to start
 
-Possible cause: After changing the MA certificate, the secure\_relay.ma.cert\_fname parameter points to an invalid file
+**Possible cause: After changing the MA certificate, the secure\_relay.ma.cert\_fname parameter points to an invalid file**
 
 Transfer CFT fails to start and displays a message similar to the following in the` cft.out` file:
 

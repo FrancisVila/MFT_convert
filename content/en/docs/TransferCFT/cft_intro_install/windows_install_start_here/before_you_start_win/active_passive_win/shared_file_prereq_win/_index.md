@@ -13,7 +13,7 @@ You can use any POSIX compliant shared file system for both Transfer CFT data fi
 
 The following table lists the file systems that are supported and tested with Transfer CFT.
 
-<span id="Supported_fs_win"></span>Supported file systems
+**<span id="Supported_fs_win"></span>Supported file systems**
 
 
 | Operating system  | File system  |

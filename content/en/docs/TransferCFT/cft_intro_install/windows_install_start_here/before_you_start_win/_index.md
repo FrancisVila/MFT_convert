@@ -19,10 +19,10 @@ This table presents a high-level overview of the installation process. By defaul
 
 |   | Step  | Details  | More info  |
 | --- | --- | --- | --- |
-| 1  | Complete prerequisites  | Check and fulfill prerequisites such as obtaining a key or system-specific prerequisites.  | <a href="prereqs_overview">![]($1)</a>  |
-| 2  | Download and unzip  | Download the installation package from the support site and unzip.  | <a href="#Download">![]($1)</a>  |
-| 3  | Customize the properties file  | Some installation parameters are mandatory to run Transfer CFT.<br/> You can customize the <code>initialize.properties</code> file before the install, use your own file, or use the unmodified default file, but you cannot start Transfer CFT until the mandatory values are set. | <a href="properties_file_win">![]($1)</a>  |
-| 4  | Start the installation  | Select the installation mode and run using either the default configuration file or your customized file.  | <a href="install_transfer_cft_1">![]($1)</a>  |
+| 1  | Complete prerequisites  | Check and fulfill prerequisites such as obtaining a key or system-specific prerequisites.  | <a href="prereqs_overview">![](/Images/TransferCFT/severityInformation_alt.gif)</a>  |
+| 2  | Download and unzip  | Download the installation package from the support site and unzip.  | <a href="#Download">![](/Images/TransferCFT/severityInformation_alt.gif)</a>  |
+| 3  | Customize the properties file  | Some installation parameters are mandatory to run Transfer CFT.<br/> You can customize the <code>initialize.properties</code> file before the install, use your own file, or use the unmodified default file, but you cannot start Transfer CFT until the mandatory values are set. | <a href="properties_file_win">![](/Images/TransferCFT/severityInformation_alt.gif)</a>  |
+| 4  | Start the installation  | Select the installation mode and run using either the default configuration file or your customized file.  | <a href="install_transfer_cft_1">![](/Images/TransferCFT/severityInformation_alt.gif)</a>  |
 | *  | Optional customization  | If you used the default configuration file, you must customize the Transfer CFT settings before starting the product.  |   |
 
 
@@ -56,19 +56,16 @@ The {{< TransferCFT/componentlongname  >}} installation is based on a delivered 
 
 The following installation modes use the delivered initialize.properties file as the default configuration file. In graphical mode you can install, but not operate, {{< TransferCFT/componentlongname  >}} without customizing certain mandatory values in this file. To run silent mode, you must at least define an installation directory prior to running the unattended installation.
 
-Graphical mode
-
-Transfer\_CFT\_3.6\_Install\_win-x86-64\_BNXXXXXXXX.exe
-
-Silent
-
-start /W Transfer\_CFT\_3.6\_Install\_win-x86-64\_BNXXXXXXXX.exe --mode unattended --conf-file configuration.template
+**Graphical mode**
+`Transfer_CFT_3.6_Install_win-x86-64_BNXXXXXXXX.exe`
+**Silent**
+` start /W Transfer_CFT_3.6_Install_win-x86-64_BNXXXXXXXX.exe --mode unattended --conf-file configuration.template`
 
 ### Create or modify the runtime
 
 You can use the following command to repair the runtime if there was an issue during the installation, or to update values that you have modified in the `initialize.properties` file. From the &lt;installation\_directory>, run the following:
 
-&lt;installation directory> initialize filename
+`<installation directory> initialize filename`
 
 You cannot configure the Windows services using the initialize.exe command. Please see [Install services in command line](../install_services_command_line) to manually configure the Windows services.
 
@@ -93,4 +90,4 @@ The user who installs Transfer CFT must be an administrator on the system where 
 
 To access the installation help:
 
-Transfer\_CFT\_3.6\_Install\_win-x86-64\_BNXXXXXXXX.exe --help
+`Transfer_CFT_3.6_Install_win-x86-64_BNXXXXXXXX.exe --help`

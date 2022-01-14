@@ -2,7 +2,7 @@
     "title": "Troubleshoot SFTP",
     "linkTitle": "Troubleshoot SFTP",
     "weight": "200"
-}T
+}T**he supported operating systems are listed in the** [Platform features](../../../datasheet) **table.**
 
 ## Start Transfer CFT issues
 
@@ -10,7 +10,7 @@
 
 If the following error displays:
 
-CFTN05E SFTP bind() failed: ECDSA, DSA, or RSA host key file must be set.
+`CFTN05E SFTP bind() failed: ECDSA, DSA, or RSA host key file must be set.  `
 
 Check the SRVPRIVKEY ID (CFTSSH direct=server) parameter. Presently, only the RSA algorithm is supported; even if ECDSA and DSA are mentioned in the error message, these algorithms are not supported.
 
@@ -18,7 +18,7 @@ Check the SRVPRIVKEY ID (CFTSSH direct=server) parameter. Presently, only the RS
 
 ### Server authentication issues
 
-Client does not accept the server's public key
+**Client does not accept the server's public key**
 
 The following is an example of a public key authentication issue where the client does not accept the server's public key.
 
@@ -34,7 +34,7 @@ CFTT82E Transfer aborted <IDTU=A000000W PART=CLIENT_SFTP_WIN IDF=BIN IDT=J021937
 
 ### Client authentication issues
 
-Invalid users or password issues
+**Invalid users or password issues**
 
 Transfer CFT client authentication mismatches can lead to the following errors:
 
@@ -58,8 +58,7 @@ Invalid password:
 CFTSFTP CFT.SFTP [3] S50000: User serv_SFTP wants to authenticate with method PASSWORD
 CFTSFTP CFT.SFTP [1] S50000: User serv_SFTP not allowed to connect to the server
 ```
-
-SFTP client case sensitivity
+**SFTP client case sensitivity**
 
 Remember that NSPART and NRPART are case sensitive when they are enclosed in quotes " ". For example, if the user name is `login`, then the CFTPART ID=PART,NSPART="login" and NRPART=login.
 
@@ -92,7 +91,7 @@ Error: Cannot recover the folder contents
 
 These parameters check the authorized IDF for the user. For example, in the following messages an error occurred because when performing a RECV (`get`) command, the IDF was not included in the remote authorization list.
 
-Server
+**Server**
 
 No catalog record, and in the log:
 
@@ -100,8 +99,7 @@ No catalog record, and in the log:
 CFTT25E _ IDF not authorized <PART=SERV_SFTP IDF=AUSTIN>
 CFTT82E Transfer aborted <IDTU=00000000 PART= IDF= IDT= DIAGI=413>
 ```
-
-Client
+**Client**
 
 Catalog record:
 

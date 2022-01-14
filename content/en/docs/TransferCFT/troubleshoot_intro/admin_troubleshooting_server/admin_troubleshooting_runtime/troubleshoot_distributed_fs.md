@@ -6,11 +6,11 @@
 
 When transferring files that are located in a **N**etwork **F**ile **S**ystem, an NFS locking issue (lockd) may occur if the correct port is not open on the firewall.
 
-Symptom
+**Symptom**
 
 - Flow transfers hang in the phase `T` and phasestep `C`, with a timeout but no error message.
 
-Remedy
+**Remedy**
 
 - Check that the correct port for the lockd service is open on the firewall (default=4045).
 

@@ -26,9 +26,9 @@ numerical format) or a host name.
 >
 > The host field can specify IPv4 or IPv6:
 
-> CFTNET TYPE = TCP
+> `CFTNET TYPE = TCP`
 
-> HOST = { string | INADDR\_ANY | IN6ADDR\_ANY | IN4ADDR\_ANY }
+> `HOST = { string | INADDR_ANY | IN6ADDR_ANY | IN4ADDR_ANY }`
 
 #### CFTCOM, TYPE = TCPIP
 

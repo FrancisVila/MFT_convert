@@ -19,7 +19,7 @@ CFTT60I PART= &part IDF=
 | EXL SYST  | Err_system  | Local system error, cause unknown, generally a problem of memory allocation  |
 
 
-Related topics
+**Related topics**
 
 - [Messages
     and error codes](../../../../troubleshoot_intro/messages_and_error_codes_start_here)

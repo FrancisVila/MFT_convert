@@ -57,9 +57,9 @@ Additional `copstatus `commands include:
 
 ## Windows menus
 
-You can also use the Windows <span class="bold_in_para">Start </span>menu to start Axway software. From the <span class="bold_in_para">Start </span>menu, select <span class="bold_in_para">Programs </span>(or All Programs), <span class="bold_in_para">Axway Software</span> and then the product.
+You can also use the Windows **Start** menu to start Axway software. From the **Start** menu, select **Programs** (or All Programs), **Axway Software** and then the product.
 
-For example, to start the Copilot server click <span class="bold_in_para">Start &gt; All Programs &gt; Axway Software &gt; <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> &gt; Start <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> UI Server.</span>
+For example, to start the Copilot server click **Start &gt; All Programs &gt; Axway Software &gt; <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> &gt; Start <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> UI Server.**
 
 ## Operating system specific tasks
 
@@ -89,28 +89,28 @@ COPSTOP is an example of the JCL stop statement for the Transfer CFT UI server.
 
 #### Start
 
-Menu
+**Menu**
 
 1. Access the *Transfer CFT* <span class="italic_in_para" style="font-style: italic;">Main Menu</span>.  
-    In the Main Menu enter the command <span class="code">cft</span> and press <span class="bold_in_para">Enter</span> to open the Transfer CFT menu.
+    In the Main Menu enter the command <span class="code">cft</span> and press **Enter** to open the Transfer CFT menu.
 1. Enter **1** to access **Common CFT commands**.
 1. Select option <span class="span_5" style="font-weight: bold;">1 Start Copilot</span>. The *Copilot server* menu is displayed.  
 
-Command
+**Command**
 
 Execute: <span class="code">COPSTART </span>
 
 #### Stop
 
-Menu
+**Menu**
 
 1. Access the *Transfer CFT* <span class="italic_in_para" style="font-style: italic;">Main Menu</span>.  
-    In the Main Menu enter the command <span class="code">cft</span> and press <span class="bold_in_para">Enter</span> to open the Transfer CFT menu.
+    In the Main Menu enter the command <span class="code">cft</span> and press **Enter** to open the Transfer CFT menu.
 1. Enter **1** to access **Common CFT commands**.
 1. Select option <span class="span_5" style="font-weight: bold;">2 </span><span class="span_5" style="font-weight: bold;">Stop Copilot</span>.  
     Only the server waiting for a connection is stopped. Other servers that users have logged onto are shut down when the user logs off, or after a network timeout.
 
-Command
+**Command**
 
 Execute: <span class="code">COPSTOP </span>
 
@@ -130,7 +130,7 @@ and the default values for the <span class="mc-variable axway_variables.Componen
 | copilot.general.serverhost  | 0.0.0.0  | TCP Transfer CFT Copilot server address, where 0.0.0.0 indicates that you want the Transfer CFT UI to listen on all network interfaces if your machine has more than one.  |
 
 
-UNIX
+**UNIX**
 
 Refer to the [UCONF parameters](../uconf/uconf_directory) table for information on <span class="code">copilot.\*.unix </span>parameters.
 
@@ -150,7 +150,7 @@ To add a new alias, access the Unified Configuration and configure the following
 
 #### View available drives
 
-To view available drives from the <span class="bold_in_para">Edit a file</span> icon in the graphical user interface, define the following:
+To view available drives from the **Edit a file** icon in the graphical user interface, define the following:
 
 
 | Parameter  | Options  | Description  |
@@ -264,7 +264,7 @@ QQQ\_QQQ\_QQQ
 |  - " -  | PKCS#8  | key, pem  |
 
 
-How to define a PKCS#12 certificate
+**How to define a PKCS#12 certificate**
 
 This example uses a single PKCS#12 certificate where you only require the file name and password.
 
@@ -277,7 +277,7 @@ This example uses a single PKCS#12 certificate where you only require the file n
 | copilot.ssl.SslKeyPassword | Not used |
 
 
-How to define a DER or PEM certificate
+**How to define a DER or PEM certificate**
 
 This example uses a DER(or PEM) certificate with the private key in a separate DER file, where you define the key as well as the certificate.
 
@@ -303,26 +303,26 @@ There are two additional UCONF parameters to use for HTTPS connections:
 
 ### Install a certificate on the client side
 
-Windows
+**Windows**
 
 On Windows, there are two ways to install a certificate on the client side - using a Windows certificate or the Java keystore.
 
-UNIX
+**UNIX**
 
 On Linux, using the Java keystore is the only option.
 
 #### Install a certificate in the Windows keystore
 
 1. In Windows Explorer, navigate to the certificate <span class="code">&lt;my\_root\_certificate>.der</span> and right-click (for example, at &lt;CFTDIRRUNTIME>/conf/pki/&lt;my\_root\_certificate>.der).
-1. Select the <span class="bold_in_para">Install certificate</span> option.
+1. Select the **Install certificate** option.
 1. Follow the screen instructions. Windows automatically imports the certificate to its keystore in the <span class="code">Intermediate certificate authorities</span> folder.
 
-Alternative method
+**Alternative method**
 
-1. In Internet Explorer, select <span class="bold_in_para">Tools > Internet Options. </span>
-1. In the <span class="bold_in_para">Content </span>tab select the <span class="bold_in_para">Certificate </span>button.
-1. Select <span class="bold_in_para">Import, </span>which starts the <span class="bold_in_para">Certificate Import Wizard</span>.
-1. Click <span class="bold_in_para">Next</span>, and <span class="bold_in_para">Browse </span>to the<span class="code"> &lt;my\_root\_certificate>.der</span>.
+1. In Internet Explorer, select **Tools > Internet Options.**
+1. In the **Content** tab select the **Certificate** button.
+1. Select **Import,** which starts the **Certificate Import Wizard**.
+1. Click **Next**, and **Browse** to the<span class="code"> &lt;my\_root\_certificate>.der</span>.
 1. Follow the screen instructions. Windows imports the certificate to its keystore.
 
 #### Install a certificate in the Java keystore

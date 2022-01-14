@@ -9,7 +9,7 @@
 #### CFTPROT
 
 **\[RCREDIT     = {4
-| n}\] **
+| n}\]     {1...999}**
 
 Odette protocol
 

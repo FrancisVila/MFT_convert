@@ -8,9 +8,8 @@
 
 #### CFTSEND, CFTRECV, SEND, RECV
 
-\[FKEYPOS = {0 | n}\]    
-
-{0...32767}
+**\[FKEYPOS = {0 | n}\]    **
+**{0...32767}**
 
 Key position in bytes, relative to 0, in the records of an indexed
 file.

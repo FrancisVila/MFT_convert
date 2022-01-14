@@ -14,6 +14,9 @@ a file](#Receiving_a_File)
 [About
 the default CFTRECV object](#About_the_default_CFTRECV_object)
 
+Related
+topics
+
 - Command syntax
     [CFTRECV](../../../c_intro_userinterfaces/command_summary#CFTRECV)
 - Parameter list
@@ -104,10 +107,10 @@ ID = FI, the default characteristics indicated in the CFTRECV ID = &lt;default>
 command, are used to supplement those indicated in the RECV command as
 required.
 
-Correspondence
-between the RECV file command and {{< TransferCFT/componentshortname  >}} parameter setting
+**Correspondence
+between the RECV file command and {{< TransferCFT/componentshortname  >}} parameter setting**
 
-![]($1)
+![](/Images/TransferCFT/Correspondence_between_RECV_and_parameter.gif)
 
 <span id="About_the_default_CFTRECV_object"></span>
 

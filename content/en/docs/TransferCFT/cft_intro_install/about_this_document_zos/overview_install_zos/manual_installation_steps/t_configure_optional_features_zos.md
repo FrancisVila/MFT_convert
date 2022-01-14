@@ -138,7 +138,7 @@ Transfer CFT will perform the DATAGETFIRST/DATAGETNEXT and the CHECKSTATUS opera
 
 The communication between the APPLICATION and Transfer CFT is done through a media file, CFTCOM, or a TCPIP interface. On a mainframe an additional media is available, as described in Using a communication server.
 
-Related topics
+**Related topics**
 
 - [Migrating Transfer CFT z/OS]()
 - [Installing a patch](../../../upgrade_prereqs_zos/c_update_zos/t_install_patch_zos)

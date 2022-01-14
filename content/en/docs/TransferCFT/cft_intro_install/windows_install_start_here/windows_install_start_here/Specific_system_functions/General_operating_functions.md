@@ -43,7 +43,7 @@ before operating Transfer CFT:
 
 ## Logical working files
 
-Environment variables
+**Environment variables**
 
 The following table lists the logical names of files, and
 defines the role.
@@ -92,16 +92,7 @@ redefined names must be legal for the file system used (FAT, NTFS, FAT32).
 
 Examples of the using operating system environment variables:
 
-SET CFTPARM=D:\\MY\_REP1\\PARAMET  
-SET CFTPART=D:\\MY\_REP2\\PARTENAI  
-SET CFTCATA=D:\\MY\_REP3\\CATALOG  
-SET CFTCOM=D:\\MY\_REP4\\COM.CFT  
-SET CFTLOG=D:\\MY\_REP5\\LOG.JNL  
-SET CFTALOG=D:\\MY\_REP6\\ALOG.JNL  
-SET CFTACCNT=D:\\MY\_REP7\\ACCOUNT  
-SET CFTAACCN=D:\\MY\_REP8\\AACCOUNT  
-SET CFTSUFX=D:\\MY\_REP9\\SUFFIXE  
-SET CFTNMLOG=D:\\MY\_REP\_10\\NOMSLOG.SYS
+`SET CFTPARM=D:\MY_REP1\PARAMETSET CFTPART=D:\MY_REP2\PARTENAISET CFTCATA=D:\MY_REP3\CATALOGSET CFTCOM=D:\MY_REP4\COM.CFTSET CFTLOG=D:\MY_REP5\LOG.JNLSET CFTALOG=D:\MY_REP6\ALOG.JNLSET CFTACCNT=D:\MY_REP7\ACCOUNTSET CFTAACCN=D:\MY_REP8\AACCOUNTSET CFTSUFX=D:\MY_REP9\SUFFIXESET CFTNMLOG=D:\MY_REP_10\NOMSLOG.SYS`
 
 Do not use suffixes for the physical
 parameter and partner file names, except in the case where Transfer CFT
@@ -114,23 +105,22 @@ is operating in Client/Server with a UNIX Transfer CFT.
 > file names. You can overcome this problem in a batch file by using
 > certain operating system functions.
 
-Example
+**Example**
 
 The following command sets the CFTPARM environment variable
 to the value of TEST:
 
-SET CFTPARM=TEST
+`SET CFTPARM=TEST`
 
 The command file to be submitted contains the following line:
 
-CFTUTIL CFTFILE type = param, fname = %CFTPARM%
+`CFTUTIL CFTFILE type = param, fname = %CFTPARM%`
 
 When this command file is submitted, the operating system substitutes
 the string %CFTPARM% with the string TEST. The command submitted
 to CFTUTIL is as follows:
 
-CFTFILE type = PARAM, fname = TEST
-
+`CFTFILE type = PARAM, fname = TEST`
 <span id="Using a definition file"></span>
 
 ## Using a definition file
@@ -146,12 +136,12 @@ For Transfer CFT Windows the only case where the use of
 a logical name definition file is necessary is when you use the extraction
 tool for standard traces (ATM tool).
 
-Example
+**Example**
 
 The following line provides an example of the content of a line in the definition
 file.
 
-TRCATM=CFTTRACE.BIN O=C,F=F,R=1024,T=B
+`TRCATM=CFTTRACE.BIN O=C,F=F,R=1024,T=B`
 
 In this example, the logical name TRCATM is given as the exit
 file in parameter to the Transfer CFT trace extraction tool. The physical
@@ -161,7 +151,7 @@ record length 1024 characters (R=1024) and file is binary type (T+B).
 
 ### Change of name or path of definition file
 
-Environment variable
+**Environment variable**
 
 #### CFTNMLOG
 

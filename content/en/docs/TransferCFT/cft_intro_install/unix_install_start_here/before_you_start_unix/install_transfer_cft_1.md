@@ -8,7 +8,7 @@
 
 Before executing the scripts in this section, run the change mode command:
 
-chmod +x Transfer\_CFT\_{{< TransferCFT/releasenumber  >}}\_Install\_&lt;OS>\_&lt;BN>.run
+`chmod +x Transfer_CFT_{{< TransferCFT/releasenumber >}}_Install_<OS>_<BN>.run`
 
 ## Install
 

@@ -35,7 +35,8 @@ If OLRECL is:
     format  
     This parameter is only meaningful when creating the file
 
-Default values  
+**Default values  
+**
 
 If the output file:
 

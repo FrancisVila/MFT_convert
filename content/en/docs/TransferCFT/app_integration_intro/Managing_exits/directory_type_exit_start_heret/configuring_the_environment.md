@@ -27,13 +27,7 @@ EXIT.
 
 ### Syntax
 
-CFTPROT  
-ID = identifier,  
-...  
-\[EXITA = identifier,..,\]  
-....  
-\[DYNAM = identifier,\]  
-     ...
+`CFTPROTID = identifier,...[EXITA = identifier,..,]....[DYNAM = identifier,]     ...`
 
 ### Parameters
 
@@ -69,16 +63,7 @@ object ID parameter.
 
 ### Syntax
 
-CFTEXIT  
-ID = identifier,  
-TYPE = ACCESS,  
-\[FORMAT = { V23
-| V24 }\]  
-\[LANGUAGE = {COBOL | C},\]  
-\[MODE = MODE,\]  
-\[PARM = string,\]  
-\[PROG = {CFTEXIT | string},\]  
-\[RESERV = {1024 | n}\]
+`CFTEXITID = identifier,TYPE = ACCESS,[FORMAT = { V23   | V24 }][LANGUAGE = {COBOL | C},][MODE = MODE,][PARM = string,][PROG = {CFTEXIT | string},][RESERV = {1024 | n}]`
 
 ### Parameters
 

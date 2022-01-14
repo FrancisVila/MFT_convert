@@ -5,7 +5,7 @@
 }The SWAITCAT command enables a client to wait until
 a given transfer reaches a particular predefined phase, phasestep, or state before acting.
 
-Command syntax:
+Command syntax: [SWAITCAT](../../../c_intro_userinterfaces/command_summary)
 
 Task examples: [SWAITCAT tasks](../../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/sync_transfer_request_tasks)
 
@@ -59,8 +59,7 @@ mandatory argument for which the value must be enclosed in double quotes.
 ```
 SWAITCAT select="EXPRESSION"
 ```
-
-**Expression**
+****Expression****
 
 `Select `is a Boolean expression that identifies one transfer.
 
@@ -68,13 +67,10 @@ SWAITCAT select="EXPRESSION"
 
 See the value section for a list of possible values.
 
-CAT\_ID OP VALUE
-
-(CAT\_ID OP VALUE)
-
-CAT\_ID OP VALUE && CAT\_ID OP VALUE
-
-CAT\_ID OP VALUE || CAT\_ID OP VALUE
+`CAT_ID OP VALUE`
+`(CAT_ID OP VALUE)`
+`CAT_ID OP VALUE && CAT_ID OP VALUE`
+`CAT_ID OP VALUE || CAT_ID OP VALUE`
 
 Possible values for CAT\_ID, which filters on the current state:
 

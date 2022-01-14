@@ -10,7 +10,8 @@
 
 **\[NIDF = string \]**
 
-** <span style="font-weight: normal;">This value is transferred in the network.
+**IDF
+network identifier. <span style="font-weight: normal;">This value is transferred in the network.
  </span> **
 
 #### SEND, RECV

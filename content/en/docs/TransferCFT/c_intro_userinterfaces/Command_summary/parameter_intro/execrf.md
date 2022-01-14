@@ -10,7 +10,7 @@
 
 #### CFTPARM
 
-\[EXECRF = filename\]     {string 64}
+**\[EXECRF = filename\]     {string 64}**
 
 Generic name of the file describing the procedures to be executed on
 completion of the reception of a file.

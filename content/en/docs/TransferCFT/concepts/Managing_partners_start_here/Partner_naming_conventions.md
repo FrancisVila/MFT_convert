@@ -15,7 +15,7 @@ covers all the communicating partners. Only these names are conveyed over
 the network, and must consequently comply with the formats and sizes defined
 by the protocols used. The parameters describing these names are described in the following table.
 
-Partner network names
+**Partner network names**
 
 
 | Parameter  | Object  | Network name  |
@@ -34,7 +34,7 @@ to the local Transfer CFT, and are recognized as identifiers specific
 to the {{< TransferCFT/hflongproductname  >}}. The parameters describing these names are indicated in
 the table below:
 
-Partner local names
+**Partner local names**
 
 
 | Parameter  | Location  | Local name  |
@@ -57,12 +57,12 @@ recognition of partners over the network. This recognition mechanism works
 by comparing the name that is received from a partner with the name recorded
 in the Transfer CFT parameters.
 
-Reciprocal recognition mechanism
+**Reciprocal recognition mechanism**
 
 The recognition mechanism is displayed
 in the diagram below.
 
-![]($1)
+![](/Images/TransferCFT/reciprocal_recognition.gif)
 
 *On  the server*, Transfer CFT
 also provides the possibility of checking whether the requester
@@ -72,7 +72,7 @@ the password indicated in the NRPASSW parameter on the server.
 
 The checks performed on connection are indicated in the following diagram.
 
-![]($1)
+![](/Images/TransferCFT/Checks_performed_on_connecting.gif)
 
 That is, a CFTPART parameter is set for each
 partner to be communicated with, where different NRPART parameters correspond

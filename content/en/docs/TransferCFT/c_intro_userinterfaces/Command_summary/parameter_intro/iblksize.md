@@ -8,10 +8,9 @@
 
 #### COPYFILE
 
-\[IBLKSIZE = {block size of the
-input file | n}\]
-
-{0...65535}
+**\[IBLKSIZE = {block size of the
+input file | n}\]**
+**{0...65535}**
 
 Defines input file block size in bytes. The value must be greater than
 the value of the [ilrecl](../ilrecl) parameter.

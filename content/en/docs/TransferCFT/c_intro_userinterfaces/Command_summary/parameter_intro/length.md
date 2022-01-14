@@ -8,7 +8,7 @@
 
 #### CFTLOG
 
-\[LENGTH = {160 | n}\]    { 70..1024}
+**\[LENGTH = {160 | n}\]    { 70..1024}**
 
 Size of log file records. In general, this value should not be modified.
 

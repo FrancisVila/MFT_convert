@@ -31,7 +31,7 @@ intermediate partner (IPART).
 The parameter setting defines a time slot spread over 2 days. Outgoing
 calls are authorized each day between OMINTIME and OMAXTIME the next day.
 
-Example
+**Example**
 
 OMINTIME = 2200 and OMAXTIME = 0500.  
 Outgoing calls authorized to the specified partner at night, between 10

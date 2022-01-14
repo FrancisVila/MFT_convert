@@ -10,7 +10,7 @@
 
 #### CFTRECV, CFTSEND, RECV, SEND
 
-**\[STATE = {
+**\[STATE = { DISP
 | HOLD | KEEP}\]**
 
 Defines the transfer request state:

@@ -63,7 +63,7 @@ being degraded by the systematic establishing of a protocol connection.
 
 #### Time-out role
 
-![$2]($1)
+![Protocol session time out role betweeen a requester and server ](/Images/TransferCFT/Timeout_role3.gif)
 
 #### PeSIT E
 
@@ -82,11 +82,11 @@ for which it was initially server.
 
 #### One-way protocol connection
 
-![$2]($1)
+![One way protocol session connection between requester and server](/Images/TransferCFT/One_way_protocol_connection.gif)
 
 #### Two-way protocol connection
 
-![$2]($1)
+![Two way protocol session connection between requester and server](/Images/TransferCFT/Two_way_protocol_connection.gif)
 
 <span id="Transfer_Identifier"></span>
 
@@ -122,7 +122,7 @@ the connection.
 
 Example
 
-SEND PART=CENTER, STATE=HOLD, ...
+`SEND PART=CENTER, STATE=HOLD, ...`
 
 In the case of a sender server, this send hold command makes available
 a file for the CENTER partner. The transfer adopts an IDT which remains
@@ -144,9 +144,8 @@ a given partner by means of a IDT identifier. To locally select a transfer,
 in case of a retry in particular, it is consequently only necessary to
 supply the PART partner identifier and IDT transfer identifier information.
 
-Example
-
-START PART=SITE1, IDT=A2517435
+**Example**
+`START PART=SITE1, IDT=A2517435`
 
 A transfer retry request, identified by the number A2517435, is requested
 as regards the SITE1 partner.

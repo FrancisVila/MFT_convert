@@ -8,7 +8,8 @@
 
 #### CFTSEND, SEND
 
-\[IDM = identifier\]  
+\[IDM = identifier\]   {string
+33}
 
 Message identifier.
 

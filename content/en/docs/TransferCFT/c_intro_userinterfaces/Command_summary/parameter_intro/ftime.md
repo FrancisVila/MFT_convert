@@ -8,8 +8,7 @@
 
 #### RECV
 
-\[ FTIME
-= { 0 | time } \]
+`[ FTIME   = { 0 | time } ]`
 
 File creation time (HHMMSSCC).
 

@@ -33,7 +33,7 @@ CFTXXX: fixed text message <variables>
 
 **Example**
 
-CFTLOG FORMAT=\[V23,V24\]
+**CFTLOG FORMAT=\[V23,V24\]**
 
 - For V23: CFTT57I
     PART=&part IDF=&idf IDT=&idt &str transfer started

@@ -23,16 +23,13 @@ However, as the value for the NFNAME= parameter is not converted to upper case, 
 
 **Example**
 
-FNAME ="/home/qualcft/send/SEND.File.Lowercase"
-
-NFNAME= '/home/qualcft/recv/Recv.File.Lowercase'  
+`FNAME ="/home/qualcft/send/SEND.File.Lowercase" `
+`NFNAME= '/home/qualcft/recv/Recv.File.Lowercase' `
 
 or
 
-/home/qualcft/recv/Recv.File.Lowercase
-
-To enable recursive processing for a group of files, use the following syntax \*\* (two asterisks). To select all files in all of the folders, for example:
-
+` /home/qualcft/recv/Recv.File.Lowercase`
+`To enable recursive processing for a group of files, use the following syntax ** (two asterisks). To select all files in all of the folders, for example: `
 ```
 FNAME =/home/qualcft/\*\*
 ```
@@ -121,6 +118,6 @@ Refer to the IBM brochure *UNIX System Services Messages & Codes*.
 
 - RC=: The return code in abbreviated mnemonic (numeric) form
 
-Related topics
+**Related topics**
 
 - [File access and coding](../file_access_and_coding)

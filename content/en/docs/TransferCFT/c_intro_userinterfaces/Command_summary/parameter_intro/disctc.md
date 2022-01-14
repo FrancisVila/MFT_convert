@@ -8,7 +8,7 @@
 
 #### CFTPROT
 
-\[disctc = {
+\[disctc = { 60
 | 0...3600}\]
 
 The wait timeout for a response to the protocol connection request

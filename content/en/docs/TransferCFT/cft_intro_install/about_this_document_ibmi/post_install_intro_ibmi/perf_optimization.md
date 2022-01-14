@@ -21,13 +21,13 @@ Update the subsystem values as follows:
     2.  Press **Enter** to confirm.
     3.  Press **F5** to update the screen display.
 
-![]($1)
+![](/Images/TransferCFT/ibmi_subsystems.png)
 
 ## How to determine the **Max Act** values
 
 To determine the maximum active (Max Act) values, use the following formula:
 
-16 + SSLMTASK + MAXTASK = &lt;Max Act>
+`16 + SSLMTASK + MAXTASK = <Max Act>`
 
 Where:
 

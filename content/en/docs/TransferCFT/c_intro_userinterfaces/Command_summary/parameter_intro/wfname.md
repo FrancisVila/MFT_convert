@@ -82,7 +82,8 @@ target machine. Once sent, it is deleted.
 
 Example:
 
-MVS -
+MVS - IEBCOPY
+procedure for partitioned files (PDSE)
 
 For additional information on the file and its structure, refer to the
 *Installation and Operations Guide* specific to your operating system.
@@ -93,7 +94,9 @@ The file is transferred in the same way as a sequential file.
 
 This process can only be used for:
 
-- t
+- transfers
+    between systems of the same type (same SYST parameter value in the CFTPART
+    command)
 - the
     following protocol: **PeSIT CFT to CFT**
 

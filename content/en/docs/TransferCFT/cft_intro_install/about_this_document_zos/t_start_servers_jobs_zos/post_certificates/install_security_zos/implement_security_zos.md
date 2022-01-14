@@ -72,9 +72,8 @@ Some groups only access files in read or write mode under Transfer CFT program c
 
 If required, update the CFTENV member:
 
-000073 //\* SAF parameters
-
-000074 //      SET SAFCFTCL='xxxxxxx'
+`000073 //* SAF parameters`
+`000074 //      SET SAFCFTCL='xxxxxxx'`
 
 ### Authorize Transfer CFT users (H89SAFAU)
 

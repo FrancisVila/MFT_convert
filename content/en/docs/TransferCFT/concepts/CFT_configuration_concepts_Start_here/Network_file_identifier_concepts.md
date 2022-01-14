@@ -2,7 +2,10 @@
     "title": "Virtual file association template",
     "linkTitle": "Template to virtual file association CFTIDF",
     "weight": "160"
-}-   Command syntax
+}Related
+topics
+
+- Command syntax
     [CFTIDF](../../../c_intro_userinterfaces/command_summary#CFTIDF)
 - Object concepts
     <a href="#" class="selected">Template to virtual file

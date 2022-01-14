@@ -6,7 +6,7 @@
 
 ### compression
 
-cpr = { 0 | 15}
+**cpr = { 0 | 15}**
 
 The default value for compression depends on the parameter and protocol. See:
 

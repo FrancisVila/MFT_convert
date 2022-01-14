@@ -157,7 +157,7 @@ If you have a low value, take into consideration that there is always a transfer
 
 In most setups we recommend that you modify the CNXOUT default setting. Keeping the default value could have a negative impact on latency.
 
-Related topics
+**Related topics**
 
 - [About parallel transfers](../)
 - [FAQ and troubleshooting](../faq)

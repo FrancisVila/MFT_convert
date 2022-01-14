@@ -2,7 +2,10 @@
     "title": "Communication  media ",
     "linkTitle": "CFTCOM - Communication media ",
     "weight": "250"
-}-   Command syntax
+}Related
+topics
+
+- Command syntax
     [CFTCOM](../../../c_intro_userinterfaces/command_summary#CFTCOM)
 - Parameter list
     [CFTCOM](../../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftcom)

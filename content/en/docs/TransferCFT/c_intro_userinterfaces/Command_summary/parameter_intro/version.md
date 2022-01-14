@@ -8,7 +8,7 @@
 
 #### CFTSSL
 
-**\[ VERSION = { <u>TLSV1</u>  | SSLV3 | TLSV1 | SSLV3COMP | TLSV1COMP } \]**
+****\[ VERSION = { <u>TLSV1</u>  | SSLV3 | TLSV1 | SSLV3COMP | TLSV1COMP } \]****
 
 Defines the session version.
 

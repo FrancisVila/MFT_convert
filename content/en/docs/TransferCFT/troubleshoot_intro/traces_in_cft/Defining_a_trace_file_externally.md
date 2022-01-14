@@ -75,28 +75,21 @@ the following tasks:
 
 ### Syntax
 
-STARTTRC** **ID = *identifier*,  
-TID =  *identifier*  
+`STARTTRC ID = identifier,TID =  identifier`
 
 ### Parameters
 
-**ID = *identifier***
+`ID = identifier`
 
 Identifier which makes the trace vector defined by this parameter set
 uniquely identifiable.
 
 This parameter is a character string, maximum length 8.
 
-\[FTRACE = {0
-| 0..15}\]
-
-\[MTRACE = {0
-| 0..31}\]
-
-\[PTRACE = {0
-| 0..31}\]
-
-**TID =  *identifier***
+`[FTRACE = {0   | 0..15}]`
+`[MTRACE = {0   | 0..31}]`
+`[PTRACE = {0   | 0..31}]`
+`TID =  identifier`
 
 Identifier of the **SETTRC** or **CFTTRACE** command which defines
 the collection’s output trace file.
@@ -106,8 +99,7 @@ by a **SETTRC** or **CFTTRACE** command**.**
 
 This parameter is a character string, maximum length 8.
 
-**\[XTRACE = {<u>0</u> |
-0..7}\]**
+`[XTRACE = {0 |   0..7}]`
 
 Checks the level 1 traces for Transfer CFT "EXIT" type operations.
 
@@ -133,12 +125,11 @@ by the **STARTTRC** command.
 
 ### Syntax
 
-STOPTRC  ID =
-*identifier*
+`STOPTRC  ID =   identifier`
 
 ### Parameters
 
-**ID = *identifier***
+`ID = identifier`
 
 Identifier which uniquely identifies the trace vector defined by this
 set of parameters.
@@ -185,24 +176,13 @@ it with empty useable content.
 
 ### Syntax
 
-TRCFILE  TYPE** **= TRACE,  
-\[MODE = {<u>CREATE</u> | REPLACE | DELETE},\]  
-TRCFNAM = *filename,*  
-TRCFTYP = {<u>STANDARD</u> | CIRCULAR},  
- 
-
-**TRCFTYP = STANDARD**  
-\[TRCLREC = {<u>1024</u> | n}\]  
- 
-
-**TRCFTYP = CIRCULAR**  
-TRCNREC** **= n,  
-TRCLREC** **= {<u>0</u> | <u>1024</u> | n}
+`TRCFILE  TYPE = TRACE, [MODE = {CREATE | REPLACE | DELETE},] TRCFNAM = filename, TRCFTYP = {STANDARD | CIRCULAR}, `
+`TRCFTYP = STANDARD [TRCLREC = {1024 | n}] `
+`TRCFTYP = CIRCULAR TRCNREC = n,TRCLREC = {0 | 1024 | n}`
 
 ### Parameters
 
-**\[MODE = {<u>CREATE</u>
-| REPLACE | DELETE},\]**
+`[MODE = {CREATE   | REPLACE | DELETE},]`
 
 Type of operation to be carried out on the file:
 
@@ -215,12 +195,11 @@ Type of operation to be carried out on the file:
 - DELETE: Delete
     a trace file
 
-**TRCFNAM = *filename***
+`TRCFNAM = filename`
 
 Name of the trace file.
 
-**TRCFTYP = {<u>STANDARD</u>
-| CIRCULAR}**
+`TRCFTYP = {STANDARD   | CIRCULAR}`
 
 Type of trace file for which an operation is requested:
 
@@ -229,8 +208,7 @@ Type of trace file for which an operation is requested:
 - CIRCULAR: Direct
     file (fixed record size)
 
-**\[TRCLREC = {<u>0</u>
-| <u>1024</u> | n}\]**
+`[TRCLREC = {0   | 1024 | n}]`
 
 Size of records contained in the trace file.
 
@@ -241,7 +219,7 @@ This parameter is:
 - Optional when TRCFTYP
     = STANDARD with a default value of 1024
 
-**\[TRCNREC = n\]**
+`[TRCNREC = n]`
 
 Number of useable records contained in the direct file.
 
@@ -252,7 +230,7 @@ This parameter is:
 - Not applicable
     when **TRCFTYP = STANDARD**
 
-TYPE = TRACE
+`TYPE = TRACE`
 
 Operation on a trace file.
 
@@ -269,28 +247,18 @@ The SETTRC command:
 
 ### Syntax
 
-SETTRC**  **ID = *identifier*,  
-TRCFNAM = {<u>" "</u> | filename},  
-\[TRCFTYP = {<u>STANDARD</u> | CIRCULAR},  
-\[MODE = {<u>CREATE</u> | REPLACE | CLOSE},\]  
- 
-
-**TRCFTYP = STANDARD**  
-\[TRCLREC = {<u>0</u> | n}\]
-
-**TRCFTYP = CIRCULAR**  
-TRCLREC = {<u>0</u> | n},  
-TRCNREC  = n
+`SETTRC  ID = identifier,TRCFNAM = {" " | filename},[TRCFTYP = {STANDARD | CIRCULAR},[MODE = {CREATE | REPLACE | CLOSE},] `
+`TRCFTYP = STANDARD [TRCLREC = {0 | n}]`
+`TRCFTYP = CIRCULAR TRCLREC = {0 | n},TRCNREC  = n`
 
 ### Parameters
 
-**\[ID = *identifier*\]**
+`[ID = identifier]`
 
 Character string, maximum length: 8; uniquely identifies the trace file
 descriptor defined by this set of parameters.
 
-**\[MODE = {<u>CREATE</u>
-| REPLACE | CLOSE}\]**
+`[MODE = {CREATE   | REPLACE | CLOSE}]`
 
 Operation to be performed on the ‘‘trace file" entry designated
 by the ID parameter:
@@ -304,15 +272,13 @@ by the ID parameter:
 
 Where **MODE = CLOSE**, only the **ID** parameter is useful.
 
-**TRCFNAM = {<u>"
-"</u> | *filename*}**
+`TRCFNAM = {"   " | filename}`
 
 Name of trace file to be fed by traces.
 
 Character string maximum length: 64 characters.
 
-**\[TRCFTYP = <u>STANDARD</u>
-| CIRCULAR}\]**
+`[TRCFTYP = {STANDARD   | CIRCULAR}]`
 
 Trace file type:
 
@@ -324,8 +290,7 @@ Trace file type:
     This file is accessed through a circular up-date, the new records overwriting
     the old ones
 
-**\[TRCLREC = {<u>0</u>
-| n}\]**
+`[TRCLREC = {0   | n}]`
 
 Length of trace file’s physical records.
 
@@ -338,7 +303,7 @@ This parameter is:
 - Optional if TRCFTYP
     = STANDARD (sequential file, with fixed-size records)
 
-**\[TRCNREC = n\]**
+`[TRCNREC = n]`
 
 Number of trace file records.
 

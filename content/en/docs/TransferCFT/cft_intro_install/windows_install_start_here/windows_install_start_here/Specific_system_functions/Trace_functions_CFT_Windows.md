@@ -32,7 +32,7 @@ By default Transfer CFT automatically generates these trace files in the folder:
 You can use UCONF to change the folder.
 For example:
 
-CFTUTIL uconfset id=copilot.trace.trcfilename,value=c:\\trc\\copilot.trc
+`CFTUTIL uconfset id=copilot.trace.trcfilename,value=c:\trc\copilot.trc`
 
 Only Axway Technical Support is able
 to interpret these traces. In a certain cases, Axway Technical Support may
@@ -43,9 +43,8 @@ trace files can be defined.
 
 Defining the size of specific trace files
 
-Environment variable
-
-CFTTRCSIZE
+**Environment variable**
+`CFTTRCSIZE`
 
 CFTTRCSIZE defines the maximum size of each of the trace files in megabytes.  
 If this value is set to 0, no trace file will be generated. If the environment
@@ -56,9 +55,8 @@ saves the file as \*b.trc and sets the file to 0.
 Defining the location of specific trace
 files
 
-Environment variable
-
-CFTTRCPATH
+**Environment variable**
+`CFTTRCPATH`
 
 CFTTRCPATH indicates the Transfer CFT/Windows the name of the folder
 where trace files discussed in this section are generated.

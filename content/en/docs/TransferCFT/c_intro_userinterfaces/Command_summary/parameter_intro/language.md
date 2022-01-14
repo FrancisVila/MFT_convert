@@ -8,7 +8,7 @@
 
 #### CFTEXIT, CFTACCNT
 
-\[LANGUAGE = {
+\[LANGUAGE = { COBOL
 | C } \]
 
 The programming language of the application that uses the statistical

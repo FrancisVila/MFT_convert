@@ -98,7 +98,7 @@ Connect to AWS S3 through an HTTP proxy for file uploads/downloads.
 | aws.credentials.&lt;storageaccount&gt;.proxy_password  | password  | Proxy password.  |
 
 
-<span id="Default_key_access_pair"></span>Default access key pair behavior
+**<span id="Default_key_access_pair"></span>Default access key pair behavior**
 
 If you did not define a `storageaccount `value in the CFTSEND/CFTRECV objects, when you connect to AWS services the AWS SDK checks in the `$HOME/.aws/credentials `file for a profile and credentials.
 
@@ -223,7 +223,7 @@ After sending a file to the partner, you can check the log for transfer details.
 
 ### Enable server side encryption
 
-<span id="globally_encrypt"></span>You can activate file encryption when uploading files using either the sse-s3 or sse-kms encryption type. Use CFTUTIL and the command as follows:
+<span id="globally_encrypt"></span>You can activate file encryption when uploading files using either the sse-s3 or sse-kms encryption type. Use CFTUTIL and the uconfset command as follows:
 
 ```
 uconfset id=aws.credentials.<storageaccount>.encryption_type, value='sse-s3'
@@ -260,7 +260,7 @@ This section provides information on how to troubleshoot errors that you may enc
 
 ### Transfer CFT checks
 
-CFTF30W AWS S3 error (-1): Unable to connect to endpoint
+**CFTF30W AWS S3 error (-1): Unable to connect to endpoint**
 
 This error may occur for one of the following reasons:
 
@@ -275,7 +275,7 @@ This error may occur for one of the following reasons:
 - On Linux, the SSL certificates auto-detection failed. Use the UCONF `ssl.certificates.ca_cert_bundle` parameter to point to current certificates.
 - The region is invalid for the bucket. Ensure that the `workingdir `parameter of the send/recv command is valid.
 
-CFTF30W AWS S3 error (13/HTTP 403): Permission denied - No response body
+**CFTF30W AWS S3 error (13/HTTP 403): Permission denied - No response body**
 
 Access to the file was denied for the given storageaccount.
 

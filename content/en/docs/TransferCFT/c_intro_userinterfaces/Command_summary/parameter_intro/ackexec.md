@@ -6,7 +6,7 @@
 
 #### CFTSEND, CFTRECV, SEND, RECV
 
-\[ ACKEXEC = filename \]
+`[ ACKEXEC = filename ]`
 
 The name of the file that describes the acknowledgement procedure to execute. See [EXEC](../exec) for more information.
 

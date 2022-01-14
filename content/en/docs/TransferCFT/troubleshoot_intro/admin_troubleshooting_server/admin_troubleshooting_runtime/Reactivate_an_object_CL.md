@@ -10,7 +10,7 @@ the ACT command to reactivate:
 - CRON object (CFTCRON)
 - Folder object (CFTFOLDER)
 
-Command guide: [ACT](../../../../c_intro_userinterfaces/command_summary#ACT)
+**Command guide: [ACT](../../../../c_intro_userinterfaces/command_summary#ACT)**
 
 
 | Parameter | Description |
@@ -34,8 +34,8 @@ ACT TYPE=PART,ID=<CFTPART_ID>,MODE=<mode>
 
 Where:
 
-- is the identifier for the partner to activate. To activate several partners with a single command, use wildcard characters or meta characters
-- is the mode to be activated, with values: "BOTH" , "B", "REQUESTER", "R" , "SERVER", "S"
+- CFTPART\_ID is the identifier for the partner to activate. To activate several partners with a single command, use wildcard characters or meta characters
+- Mode is the mode to be activated, with values: "BOTH" , "B", "REQUESTER", "R" , "SERVER", "S"
 
 Example
 

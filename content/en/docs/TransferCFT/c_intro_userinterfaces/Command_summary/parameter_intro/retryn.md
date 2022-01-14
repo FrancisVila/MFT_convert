@@ -8,7 +8,7 @@
 
 #### CFTTCP
 
-\[RETRYN = {
+\[RETRYN = {4
 | n } \]
 
 Use this field to specify the number of reconnection attempts to make

@@ -164,68 +164,26 @@ Syntax
 
 CFTACCNT TYPE = FILE
 
-[TYPE](../../../c_intro_userinterfaces/command_summary/parameter_intro/type)
-= FILE
-
-[FNAME](../../../c_intro_userinterfaces/command_summary/parameter_intro/fname)
-= filename
-
-[ID](../../../c_intro_userinterfaces/command_summary/parameter_intro/id)
-= identifier
-
-\[ [AFNAME](../../../c_intro_userinterfaces/command_summary/parameter_intro/afname)
-= filename \]
-
-\[ [COMMENT](../../../c_intro_userinterfaces/command_summary/parameter_intro/comment)
-= string \]
-
-\[ [EXEC](../../../c_intro_userinterfaces/command_summary/parameter_intro/exec)
-= filename \]
-
-\[ [LANGUAGE](../../../c_intro_userinterfaces/command_summary/parameter_intro/language)
-= {
-| C } \]
-
-\[ [MAXREC](../../../c_intro_userinterfaces/command_summary/parameter_intro/maxrec)
-= {
-| n } \]
-
-\[ [MODE](../../../c_intro_userinterfaces/command_summary/parameter_intro/mode)
-= {
-| CREATE | DELETE } \]
-
-\[ [SWITCH](../../../c_intro_userinterfaces/command_summary/parameter_intro/switch)
-= {
-| time } \]
-
-\[ [FORMAT](../../../c_intro_userinterfaces/command_summary/parameter_intro/format)
-= {
-| 23 | V24 | 24} \]
+`TYPE   = FILE`
+`FNAME   = filename `
+`ID   = identifier `
+`[ AFNAME   = filename ]`
+`[ COMMENT   = string ]`
+`[ EXEC   = filename ]`
+`[ LANGUAGE   = { COBOL   | C } ]`
+`[ MAXREC   = { 0   | n } ]`
+`[ MODE   = { REPLACE   | CREATE | DELETE } ]`
+`[ SWITCH   = { 00000000   | time } ]`
+`[ FORMAT   = { V23   | 23 | V24 | 24} ]`
 
  
 
 CFTACCNT TYPE = SYST
 
-[TYPE](../../../c_intro_userinterfaces/command_summary/parameter_intro/type)
-= SYST
-
-[ACCID](../../../c_intro_userinterfaces/command_summary/parameter_intro/accid)
-= n
-
-[ID](../../../c_intro_userinterfaces/command_summary/parameter_intro/id)
-= identifier
-
-\[ [COMMENT](../../../c_intro_userinterfaces/command_summary/parameter_intro/comment)
-= string \]
-
-\[ [FORMAT](../../../c_intro_userinterfaces/command_summary/parameter_intro/format)
-= {
-| 23 | V24 | 24} \]
-
-\[ [LANGUAGE](../../../c_intro_userinterfaces/command_summary/parameter_intro/language)
-= {
-| C } \]
-
-\[ [MODE](../../../c_intro_userinterfaces/command_summary/parameter_intro/mode)
-= {
-| CREATE | DELETE } \]
+`TYPE   = SYST`
+`ACCID   = n `
+`ID   = identifier `
+`[ COMMENT   = string ]`
+`[ FORMAT   = { V23   | 23 | V24 | 24} ]`
+`[ LANGUAGE   = { COBOL   | C } ]`
+`[ MODE   = { REPLACE   | CREATE | DELETE } ]`

@@ -4,11 +4,11 @@
     "weight": "630"
 }#### LISTLOG
 
-datemin
+**datemin**
 
 Use to display logs that happened on or after this date. Use the format: YYMMDD You can also enter a partial date. For example, `1104 `displays the log since April 2011.
 
-datemax
+**datemax**
 
 Use to display logs that happened on or before this date. Use the format: YYMMDD You can also enter a partial date. For example, `12 `displays the log prior to 2012.
 

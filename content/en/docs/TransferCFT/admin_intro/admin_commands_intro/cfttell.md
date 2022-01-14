@@ -23,7 +23,7 @@ Keys:
 - UID: Generates a unique id.
 - HOSTINFO: Display information used in key generation.
 
-Examples
+**Examples**
 
 ```
 C:\\projects>`cfttell target`

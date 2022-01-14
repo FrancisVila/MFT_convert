@@ -7,13 +7,10 @@ configuration. To avoid this, save your environment (samples, exits, etc.) befor
 
 ## Modes
 
-Interactive
-
-uninstall.exe
-
-Silent
-
-uninstall.exe --mode unattended
+**Interactive**
+`uninstall.exe`
+**Silent**
+`uninstall.exe --mode unattended`
 
 ## Procedure
 
@@ -40,14 +37,13 @@ If the domain field is not shown in the products service configuration dialog, t
 
 If it is a local user (a user that was created on the local machine) then the &lt;domain> field can be . or the &lt;hostname>.
 
-Example
+**Example**
 
 Local user: user1
 
-.\\user1
-
-&lt;hostname>\\user1
+`.\user1`
+`<hostname>\user1`
 
 Network user: user2
 
-&lt;domain\_name>\\user2
+`<domain_name>\user2`

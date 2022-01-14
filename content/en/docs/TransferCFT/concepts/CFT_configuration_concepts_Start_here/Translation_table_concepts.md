@@ -302,7 +302,10 @@ This section demonstrates how the translation table works. In a translation tabl
 
 The first character is in position 0, and the first position is 00. In this example the hexadecimal value 40, which is the EBCDIC blank character, corresponds to the value 20, which is the blank character ASCII blank character.
 
-![]($1)
+![](/Images/TransferCFT/temp_translation_table.png)
+
+Related
+topics
 
 - Command syntax
     [CFTXLATE](../../../c_intro_userinterfaces/command_summary#CFTXLATE)

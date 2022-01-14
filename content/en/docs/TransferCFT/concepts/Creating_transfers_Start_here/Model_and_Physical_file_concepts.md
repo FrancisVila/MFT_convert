@@ -51,7 +51,7 @@ following figure.
 
 **File transfer mode**
 
-![]($1)
+![](/Images/TransferCFT/File_transfer_mode.gif)
 
 The processes described in this topic are only applicable for file transfers (sending
 or receiving).
@@ -130,12 +130,12 @@ type of transfer:
 **Implementing a sender/requester transfer
 (write) - Explicit parameter setting**
 
-![]($1)
+![](/Images/TransferCFT/Imp_send_rec_write_explicit.gif)
 
 Implementing a sender/requester transfer
 (write) - Default parameter setting
 
-![]($1)
+![](/Images/TransferCFT/Impl_send_rec_write_default.gif)
 
 #### Implementing a Receiver/Requester Transfer
 
@@ -322,7 +322,7 @@ partner.
 **Example of receiving a set of files with
 the same IDF**
 
-![]($1)
+![](/Images/TransferCFT/receive_set_of_files_with_the_same_IDF.gif)
 
 #### Sending a Set of Files with the Same IDF in Sender Mode
 
@@ -356,7 +356,7 @@ associated with the text file type on your system.
 
 **Example listing a remote directory**
 
-![]($1)
+![](/Images/TransferCFT/listing_remote_directory.gif)
 
 ### Request to receive several model files
 
@@ -406,7 +406,7 @@ Y... , the first transfer pending.
 **Example of the first transfer pending
 unlocked by {{< TransferCFT/componentshortname  >}}**
 
-![]($1)
+![](/Images/TransferCFT/First_tx_pending_unlocked_by_CFT.gif)
 
 #### Selective Reception
 
@@ -443,7 +443,7 @@ variables:
 **Example of selective reception using a
 generic IDF**
 
-![]($1)
+![](/Images/TransferCFT/select_reception_generic_IDF.gif)
 
 #### Global Receptions
 
@@ -474,7 +474,7 @@ following figure.
 
 **IDF sending protection**
 
-![]($1)
+![](/Images/TransferCFT/IDF_send_protection.gif)
 
 Similarly, when a RECV command is activated, {{< TransferCFT/componentshortname  >}} checks that
 the sending partner is authorized to send the requested IDF.
@@ -485,7 +485,7 @@ indicated in the following figure.
 **Checking that a partner is authorized
 to send the requested IDF**
 
-![]($1)
+![](/Images/TransferCFT/Check_partner_authorizd_send_reqd_IDF.gif)
 
  
 
@@ -496,20 +496,13 @@ open mode.
 The list of authorized or prohibited IDFs, indicated in the CFTAUTH
 command, may be explicit:
 
-          CFTAUTH    
-ID     =      AUTH,  
-                        
-IDF     =     (...,FI,...)
+`          CFTAUTH       ID     =      AUTH,                           IDF     =     (...,FI,...)`
 
 The number of IDFs defined is then limited.
 
 This list may also be defined in an indirection file with a generic
 name &lt;*filename*&gt;:
 
-          CFTAUTH    
-ID          =    
-AUTH2,  
-                        
-FNAME     =     &lt;*filename*&gt;
+`          CFTAUTH       ID          =       AUTH2,                           FNAME     =     <filename>`
 
 The authorized or prohibited IDFs are indicated in this file.<a href="#" class="selected"> </a>

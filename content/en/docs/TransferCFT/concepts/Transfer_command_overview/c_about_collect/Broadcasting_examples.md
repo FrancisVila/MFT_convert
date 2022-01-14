@@ -2,14 +2,14 @@
     "title": "Types of broadcasts ",
     "linkTitle": "Types of broadcasts",
     "weight": "320"
-}## **<span id="Simple_broadcasting"></span>**
+}## **<span id="Simple_broadcasting"></span>Simple broadcasting**
 
 Site A wants to control the broadcasting of a file in its possession,
 but through an intermediate site B.
 
 **Example of a simple broadcast**
 
-![]($1)
+![](/Images/TransferCFT/simple_broadcast.gif)
 
  
 
@@ -24,7 +24,8 @@ This file is received by B as LIST, through the command:
 
 CFTRECV ID=..., FNAME=LIST
 
-- **2**
+- **2*nd
+    phase*
 
 A sends the file to be broadcast to a virtual partner
 C:
@@ -50,7 +51,7 @@ sites). Each production site designates a different broadcasting list.
 
 **Example of a customized broadcast**
 
-![]($1)
+![](/Images/TransferCFT/customized_broadcast.gif)
 
  
 
@@ -77,7 +78,7 @@ several distributing sites.
 
 **Example of a composite broadcast**
 
-![]($1)
+![](/Images/TransferCFT/composite_broadcast.gif)
 
  
 

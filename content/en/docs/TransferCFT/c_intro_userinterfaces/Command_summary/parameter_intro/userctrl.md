@@ -8,7 +8,7 @@
 
 #### CFTPARM
 
-\[USERCTRL = {
+\[USERCTRL = { NO
 | YES }\]
 
 Use this field to define the file access control. You can use the UserCtrl parameter to define access to files under another credential (UserId parameter) other than the user who started Transfer CFT.

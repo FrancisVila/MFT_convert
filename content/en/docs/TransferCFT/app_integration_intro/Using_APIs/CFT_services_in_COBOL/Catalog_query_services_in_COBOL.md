@@ -42,7 +42,8 @@ Where:
 - &lt;verb> is
     the command that you want to process
 - &lt;blk> is
-    a
+    a **{{< TransferCFT/componentshortname >}} specific field that
+    must not be changed by the application**
 - &lt;param> is
     a character string of variable length that contains the command parameters.
     The end of the field is defined by a character initially set to low-value

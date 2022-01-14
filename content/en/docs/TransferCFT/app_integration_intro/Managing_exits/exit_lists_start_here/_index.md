@@ -11,7 +11,7 @@ The Exit list is not supplied with all {{< TransferCFT/componentshortname  >}} p
 the form in which EXIT is delivered, as object, executable or other code,
 depends on the specific product configuration.
 
-![]($1)
+![](/Images/TransferCFT/exit_list.png)
 
 The following section explains the high-level steps when using an exit
 list.
@@ -22,8 +22,8 @@ list.
 
 Activate the exit list by setting the parameters as shown in the example below.
 
-Remote
-requester partner
+**Remote
+requester partner**
 
 No specific parameter setting.
 

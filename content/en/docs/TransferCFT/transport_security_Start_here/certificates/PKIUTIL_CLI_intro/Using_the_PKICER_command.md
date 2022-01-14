@@ -18,8 +18,7 @@ can import all their certificates with the same identifier.
 
 ## Working with certificates
 
-Syntax
-
+**Syntax**
 ```
 PKICER
 ID    

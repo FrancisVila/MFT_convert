@@ -8,7 +8,7 @@
 
 #### CFTACCNT
 
-\[MAXREC = { <u>0</u> | n} \]     {0...999999}
+**\[MAXREC = { <u>0</u> | n} \]     {0...999999}**
 
 Maximum number
 of statistical file records.
@@ -18,7 +18,7 @@ of statistical file records.
 
 #### CFTLOG
 
-\[MAXREC = {<u>0</u> | n} \]       {0...999999}
+**\[MAXREC = {<u>0</u> | n} \]       {0...999999}**
 
 Maximum number of records written in the
 log file.

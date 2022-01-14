@@ -21,8 +21,8 @@ attributes don't match the virtual file attributes.
     with the virtual file record length and format. If attributes do not match
     the transfer is rejected.
 
-Rejected
-transfer on the receiver:
+**Rejected
+transfer on the receiver:**
 
 - The local error code 139 “Invalid file
     attributes” is set (receiver side)
@@ -31,7 +31,7 @@ transfer on the receiver:
 - The message “CFTF27E PART=&part IDF=&idf
     IDT=&idt local/virtual file attribute mismatch” is logged
 
-Rejected transfer on the sender:
+**Rejected transfer on the sender:**
 
 - The local error code 639 “file attribute
     mismatch” is set (sender side)

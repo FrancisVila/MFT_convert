@@ -73,7 +73,7 @@ To enable this feature:
 >
 > Additionally, you can use substitution variables to set the USERID for CFTSEND and CFTRECV objects (&RUSER, &SUSER, &RAPPL,&SAPPL, and so on).
 
-Related topics
+**Related topics**
 
 - [About system users](../)
 - [User rights use case scenarios](../user_rights_security_scenarios)

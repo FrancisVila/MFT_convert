@@ -23,7 +23,7 @@ Before installing or upgrading, make sure you have obtained a license for {{< Tr
 
 For information on applying a license key post installation, or if you have a problem with your license key, refer to the appropriate Troubleshooting topic.
 
-- 
+- [UNIX: Applying a license key](../../troubleshoot_registration/t_license_key_unix)
 
 ### Multi-node license keys
 

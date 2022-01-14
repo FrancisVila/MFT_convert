@@ -64,13 +64,13 @@ In Transfer CFT, the timeout (session persistence) is defined by DISCTS in serv
 **Client configuration**
 
 ```
-CFTPROT id=PESIT, DISCTS=8, DISCTD=
+CFTPROT id=PESIT, DISCTS=8, DISCTD=8
 ```
 
 **Server configuration**
 
 ```
-CFTPROT id=PESIT, DISCTS=, DISCTD=7
+CFTPROT id=PESIT, DISCTS=10, DISCTD=7
 ```
 
 > **Note**
@@ -117,14 +117,14 @@ Key information :
 \* type = DATE
 \* expire = 2015/11/14
 \* sysname = linux-x86-64
-\* Nb Transfers =
+\* Nb Transfers = 64
 \* Nb CPU = 4
 \* Nb Partners = Max
 ```
 
 To view the number of active transfers in Transfer CFT, check this message which displays when starting Transfer CFT:
 
-CFTI18I+On 999 authorized simultaneous transfer(s), 100 is(are) active
+`CFTI18I+On 999 authorized simultaneous transfer(s), 100 is(are) active`
 
 To increase the license key limit contact your Axway sales representative, or visit [away.com](https://www.axway.com/) to find your regional representative.
 
@@ -252,7 +252,7 @@ by two and multiplies retryw by
 two and then begins the sequence again up to the total number of times
 specified retrym.
 
-Related topics
+**Related topics**
 
 - [Client and server recommendations](maxtrans_use_cases)
 - [Scenarios and outputs](session_troubleshooting)

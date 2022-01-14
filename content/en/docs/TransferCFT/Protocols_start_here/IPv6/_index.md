@@ -116,7 +116,7 @@ Transfer CFT {{< TransferCFT/componentversion  >}} code changes are based on the
 - RFC 3493 *Basic Socket Interface Extensions for IPv6*
 - IEEE-1003.1-2004 *System Interfaces*
 
-Related topics
+**Related topics**
 
 - [Command guide (CFTNET)](../../c_intro_userinterfaces/command_summary)
 - [Unified configuration (CFTUTIL)](../../admin_intro/uconf/uconf_w_cftutil)

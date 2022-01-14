@@ -35,9 +35,8 @@ If the $C30PAPP return code is a zero or a 4, edit $C30PAPP, remove the CHECK co
 
 The APPLY CHECK and APPLY jobs may end with a RC=4, and return the following warning messages:
 
-> GIM38201W THERE IS A MODID ERROR FOR DATA ENTRY CSDNEW IN SYSMOD pid.
->
-> GIM31901I SYSMOD pid DOES NOT SPECIFY pre-pid ON THE PRE OR SUP OPERAND.
+> `GIM38201W THERE IS A MODID ERROR FOR DATA ENTRY CSDNEW IN SYSMOD pid.`
+> `GIM31901I SYSMOD pid DOES NOT SPECIFY pre-pid ON THE PRE OR SUP OPERAND.`
 
 These messages are normal; you can ignore them.
 

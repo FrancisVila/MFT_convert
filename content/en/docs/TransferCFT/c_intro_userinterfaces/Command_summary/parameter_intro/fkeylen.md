@@ -8,11 +8,10 @@
 
 #### CFTSEND, CFTRECV, SEND, RECV
 
-\[FKEYLEN = {0 | n}\]     
-
-{
+**\[FKEYLEN = {0 | n}\]     **
+**{
 0...32767}  PeSIT
-E
+E**
 
 Key length (in bytes) of an indexed file.
 

@@ -6,7 +6,7 @@
 
 #### CFTSEND, SEND
 
-\[ PREEXEC = filename \]
+**\[ PREEXEC = filename \]**
 
 Name of the file describing the procedure to be executed in preprocessing phase, before the transfer. See [EXEC](../exec) for more information.
 

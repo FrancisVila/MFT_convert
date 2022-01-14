@@ -127,11 +127,9 @@ v@@@@@@@@@@@@@@
 
 In the RECV profile (CFTRECV object) specify:
 
-fcode=ASCII
-
-frecfm=V
-
-fpad=@
+`fcode=ASCII`
+`frecfm=V`
+`fpad=@`
 
 File received from the network
 

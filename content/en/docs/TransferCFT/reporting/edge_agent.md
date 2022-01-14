@@ -7,13 +7,13 @@
 - Usage tracking only
 - Usage tracking and Sentinel monitoring
 
-Usage tracking only
+**Usage tracking only**
 
-![]($1)
+![](/Images/TransferCFT/edge_direct.png)
 
-Usage tracking and Sentinel monitoring
+**Usage tracking and Sentinel monitoring**
 
-![]($1)
+![](/Images/TransferCFT/edge_indirect.png)
 
 Report contents are computed once daily and reflect the completed transfers from the preceding day. Depending on your start and end dates, which must be at the very least the previous day, the report will contain the completed transfers for that time period.
 

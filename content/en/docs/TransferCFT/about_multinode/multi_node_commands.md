@@ -19,16 +19,14 @@
 
 The cftinit command initializes internal data files. If no option is specified, then all internal data files are initialized, both common and specific.
 
-Syntax
-
-cftinit \[options\] &lt;filename>\[&lt;filename>\] \[…\]
-
-Options
+**Syntax**
+`cftinit [options] <filename>[<filename>] […]`
+**Options**
 
 - -c |-common: only common internal data files are initialized (PARM, PART, main COM)
 - -n |-node: only node-specific internal data files are initialized (CATALOG, secondary COM, LOG)
 
-Usage
+**Usage**
 
 All internal data files are initialized using provided configuration files.
 
@@ -61,17 +59,13 @@ cftinit –n 2
 
 The copstart command starts Copilot (the node manager and the other services).
 
-Syntax
-
-copstart
-
-Usage
-
+**Syntax**
+`copstart `
+**Usage**
 ```
 copstart
 ```
-
-Start all node managers
+**Start all node managers**
 
 For each host perform the command: `copstart`
 
@@ -83,17 +77,13 @@ For each host perform the command: `copstart`
 
 The copstop command stops Copilot (the node manager and the other services). When stopping a Copilot on a host, all nodes running on this host are stopped and re-started on the other hosts in the cluster.
 
-Syntax
-
-copstop
-
-Usage
-
+**Syntax**
+`copstop`
+**Usage**
 ```
 copstop
 ```
-
-Stop all node managers
+**Stop all node managers**
 
 For each host, run the command: `copstop`
 
@@ -107,15 +97,13 @@ The cft start command starts one or all nodes. If no node is specified, all node
 >
 > Node managers must be started first.
 
-Syntax
-
-cft start \[options\]
-
-Options
+**Syntax**
+`cft start [options]`
+**Options**
 
 The -n|-node &lt;node\_id> starts the node &lt;node\_id>.
 
-Usage
+**Usage**
 
 All nodes are started by the node managers.
 
@@ -137,7 +125,7 @@ The cft stop command stops one or all nodes. If no node is specified, all nodes 
 
 Syntax
 
-cft stop \[options\]
+`cft stop [options]`
 
 Options
 
@@ -154,7 +142,7 @@ cft stop
 Stops node 0.
 
 ```
-cft stop –n 0
+**cft stop –n 0**
 ```
 <span id="Restart"></span>
 
@@ -170,7 +158,7 @@ The cft restart command re-stars one or all nodes. If no node is specified all n
 
 Syntax
 
-cft restart \[options\]
+`cft restart [options]`
 
 Options
 
@@ -220,7 +208,7 @@ cft restart –ln
 
 The CFTUTIL listnode displays the status of the {{< TransferCFT/componentshortname  >}} cluster, including information about node managers (Copilots) and nodes.
 
-Example
+**Example**
 
 Enter:
 
@@ -238,12 +226,9 @@ In this example, the four nodes running on four different hosts are displayed.
 
 The `copstatus `command checks the Copilot status.
 
-Syntax
-
-copstatus -v
-
-Usage
-
+**Syntax**
+`copstatus -v`
+**Usage**
 ```
 copstatus -v
 ```
@@ -262,7 +247,7 @@ Return values:
 
 Syntax
 
-cftping \[options\]
+`cftping [options]`
 
 Options
 
@@ -303,7 +288,7 @@ The cft add\_host command adds a new host entry in the configuration. You must s
 
 Syntax
 
-cft add\_host –hostname &lt;hostname> –host &lt;host\_address>
+`cft add_host –hostname <hostname> –host <host_address>`
 
 Usage on UNIX/Windows
 
@@ -339,9 +324,8 @@ The cft remove\_host command removes a host entry from the configuration.
 
 Syntax
 
-cft remove\_host –hostname &lt;hostname>
-
-Usage on UNIX/Windows
+`cft remove_host –hostname <hostname> `
+**Usage on UNIX/Windows**
 
 1. On the host to be removed, execute the profile and then stop the node manager: `copstop`
 1. Check that all Transfer CFT nodes and node manager processes are stopped on the host to be removed.
@@ -363,7 +347,7 @@ The cft add\_node command adds a new node to the {{< TransferCFT/componentshortn
 
 Syntax
 
-cft add\_node
+`cft add_node`
 
 Usage
 
@@ -381,7 +365,7 @@ The cft enable\_node command enables the specified node. The node state is set f
 
 Syntax
 
-cft enable\_node -n -&lt;node\_id>
+`cft enable_node -n -<node_id>`
 
 Usage
 
@@ -402,7 +386,7 @@ The cft disable\_node command disables the node identified by the highest node i
 
 Syntax
 
-cft disable\_node -n -&lt;node\_id>
+`cft disable_node -n -<node_id>`
 
 Usage
 
@@ -428,7 +412,7 @@ The node number is decremented (uconf: cft.multi\_node.nodes = N-1), and any int
 
 Syntax
 
-cft remove\_node –n &lt;the\_highest\_node\_id>
+`cft remove_node –n <the_highest_node_id>`
 
 Usage
 

@@ -8,7 +8,7 @@
 
 The MIGRCAT procedure migrates one catalog file at a time. The procedure must be modified and executed for each of the nodes.
 
-Customize the PMIGR2 step of the JCL MIGRCAT as follows, where you define RECNB, NODE, OLDFIL, TMPFIL and NEWFIL, replacing with the node number.
+Customize the PMIGR2 step of the JCL MIGRCAT as follows, where you define RECNB, NODE, OLDFIL, TMPFIL and NEWFIL, replacing X with the node number.
 
 ```
 //PMIGR2  EXEC PMIGR2,XEXPORT=&XEXPORT,
@@ -40,18 +40,18 @@ Customize the PMIGR2 step of the MIGRCOM procedure and set the variables RECNB, 
 
 ```
 //PMIGR2  EXEC PMIGR2,XEXPORT=&XEXPORT,
-//     OUT=&OUT,
-//     UNIT=&CFTUNIT,
-//     CFTLOAD=&CFTLOAD,
-//     OLDEXEC=&OLDEXEC,
-//     SPACE=&SEP&TMPSCOM&SEP,
-//     SER='DK231F',
+**//     OUT=&OUT,**
+**//     UNIT=&CFTUNIT,**
+**//     CFTLOAD=&CFTLOAD,**
+**//     OLDEXEC=&OLDEXEC,**
+**//     SPACE=&SEP&TMPSCOM&SEP,**
+**//     SER='DK231F',**
 //     OLDFIL=Source.COM,   => Source MAIN COM
 //     TMPFIL=Prefix.WORK.COM,     => Temporary file (size defined by &TMPSCOM)
 //     NEWFIL=Target.COM,   => Target MAIN COM 
 //     RECNB=5000,          => Target MAIN COM records number (to be customized)
-//     DISPFIL=&DISPCOM,
-//     HABFNAME='NO'
+**//     DISPFIL=&DISPCOM,**
+**//     HABFNAME='NO'**
 ```
 
 Submit the procedure ..INSTALL(MIGRCOM).
@@ -62,22 +62,22 @@ The following steps must be performed for each of the nodes.
 
 Customize the PMIGR2 parameters in the JCL MIGRCOM:
 
-Define the variables RECNB, OLDFIL, TMPFIL and NEWFIL. Replace with the node number.
+Define the variables RECNB, OLDFIL, TMPFIL and NEWFIL. Replace X with the node number.
 
 ```
 //PMIGR2  EXEC PMIGR2,XEXPORT=&XEXPORT,
-//     OUT=&OUT,
-//     UNIT=&CFTUNIT,
-//     CFTLOAD=&CFTLOAD,
-//     OLDEXEC=&OLDEXEC,
-//     SPACE=&SEP&TMPSCOM&SEP,
-//     SER='DK231F',
-//     OLDFIL=Source.COM.N0,  => Source COM node        
+**//     OUT=&OUT,**
+**//     UNIT=&CFTUNIT,**
+**//     CFTLOAD=&CFTLOAD,**
+**//     OLDEXEC=&OLDEXEC,**
+**//     SPACE=&SEP&TMPSCOM&SEP,**
+**//     SER='DK231F',**
+//     OLDFIL=Source.COM.N0X,  => Source COM node 0X        
 //     TMPFIL=Prefix.WORK.MCOM.N0X, => Temporary file (size defined by &TMPSCOM) 
-//     NEWFIL=Target.COM.N0X,  => Target COM node
-//     RECNB=5000,             => Target COM node records number (to be customized)
-//     DISPFIL=&DISPCOM,
-//     HABFNAME='NO'
+//     NEWFIL=Target.COM.N0X,  => Target COM node 0X
+//     RECNB=5000,             => Target COM node 0X records number (to be customized)
+**//     DISPFIL=&DISPCOM,**
+**//     HABFNAME='NO'**
 ```
 
 Submit the procedure ..INSTALL(MIGRCOM).

@@ -8,12 +8,12 @@
 
 #### CFTNET
 
-\[LOCADR = {‘00’ | string2}\]
+**\[LOCADR = {‘00’ | string2}\]**
 
 Network local address, expressed
 in hexadecimal, of the first LU of the group.
 
-VTAM
+**VTAM**
 
 On the HOST this parameter is expressed in decimal in the VTAM definition
 of the corresponding LU.

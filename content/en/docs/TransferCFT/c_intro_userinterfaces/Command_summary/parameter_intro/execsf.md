@@ -10,9 +10,9 @@
 
 #### CFTPARM
 
-\[EXECSF = filename\]
+**\[EXECSF = filename\]
    {string
-64}
+64}**
 
 Generic name of the file describing the procedures to be executed on
 completion of sending a file.

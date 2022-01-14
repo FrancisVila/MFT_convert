@@ -10,11 +10,11 @@ Customize the `initialize.properties ` file. Use the table below to help you wit
 >
 > If you are installing Transfer CFT but have another Transfer CFT profile loaded, you cannot have environment variables in the initialize.properties file for the new installation.
 
-Example
+**Example**
 
 To use the # character in a value, for example, protect the entire string using quotation marks "" as follows:
 
-CryptoKey\_Password = "Aedft#439"
+`CryptoKey_Password = "Aedft#439"`
 
 If you do not enclose this value in "", the string is interpreted as: `CryptoKey_Password = Aedft`
 

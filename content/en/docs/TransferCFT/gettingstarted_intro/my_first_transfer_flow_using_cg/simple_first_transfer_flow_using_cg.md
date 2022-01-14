@@ -4,18 +4,18 @@
     "weight": "140"
 }Let's begin by creating a simple flow, and then exchange a file. In this example, Store\_66 sends a daily SALES\_report to the MainOffice.
 
-![$2]($1)
+![Simplified diagram of a Source Transfer CFT sending a file to a Target](/Images/TransferCFT/TransferCFT_Standard_w_cg.png)
 
 #### In
 
 1. Define a flow.
     -   Select **Flows** > **Add flow**.
-    -   ![]($1)
+    -   ![](/Images/TransferCFT/flow01.png)
 
     <!-- -->
 
     -   Create a flow named `Simple_flow` and give it the identifier **`flow01`**.
-    -   ![]($1)
+    -   ![](/Images/TransferCFT/flow02.png)
 
     <!-- -->
 
@@ -23,7 +23,7 @@
 
     -   An *application* is the logical representation of a business software application that is the true sender or true receiver in a file exchange. An application can represent a back-end enterprise resource system, such as SAP or PeopleSoft.
 
-    -   ![]($1)
+    -   ![](/Images/TransferCFT/flow03.png)
 1. Click ****Deploy**** to save and deploy. [Details](../intro_cg_task_catalog/t_savedeployflow)
 
 #### In {{< TransferCFT/componentshortname  >}}

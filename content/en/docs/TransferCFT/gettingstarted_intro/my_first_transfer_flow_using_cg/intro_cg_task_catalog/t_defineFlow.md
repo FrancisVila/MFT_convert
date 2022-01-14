@@ -16,13 +16,13 @@ In the **Flow List** page click **Add flow** and perform the following steps:
 1. Optionally, select Protocol and define. You cannot define a protocol until you have defined both the source and target.
 1. Save the flow, or save and deploy the flow.
 
-Result
+**Result**
 
-![]($1)
+![](/Images/TransferCFT/new_flow_cg_w_store.png)
 
 > **Note**
 >
 > Tip  
 > Existing Transfer CFT users may want to refer to the Transfer CFT to Central Governance parameter mapping in the sections see Flow definition: Target and Flow definition: Source.
 
-**&lt;&lt;** <a href="../../" class="bold_in_para MCXref xref xrefbold_in_para">My first transfer flow</a>
+**&lt;&lt;** **My first transfer flow**

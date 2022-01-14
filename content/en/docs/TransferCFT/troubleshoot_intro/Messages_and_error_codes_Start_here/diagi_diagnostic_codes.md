@@ -67,7 +67,7 @@ The resulting status of the transfer D, H or K:
 - H or K: the transfer
     is aborted, the error procedure
 
-Further transfer attempts
+**Further transfer attempts**
 
 For the D status, the following are possible to execute
 the transaction:
@@ -1332,9 +1332,8 @@ Technically, the next retry is triggered **wscan** minutes after the previous tr
 
 *Unix only* - If the runtime path is too long, a diag 416 issue occurs and a message similar to the following displays in the `cft.out`:
 
-> CFTTCPS S\_socket : start\_soc : bind afunix
->
-> CFTTCPS Invalid argument
+> `CFTTCPS S_socket : start_soc : bind afunix`
+> `CFTTCPS Invalid argument`
 
 If this error occurs, modify the path to the socket in the [UCONF](../../../admin_intro/uconf/uconf_directory) `cft.unix.stcp.afunix` parameter according to the operating system limit as shown below:
 

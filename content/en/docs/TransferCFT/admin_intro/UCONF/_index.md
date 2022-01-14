@@ -65,7 +65,7 @@ When you install Transfer CFT, the `home` directory is created and populated und
 
 The UCONF data are stored in both a dictionary located in the `Transfer_CFT>home `directory, and in a runtime file in the` Transfer_CFT>runtime>data` directory. You should not modify the default values stored in the `home `UCONF dictionary.
 
-Related topics
+**Related topics**
 
 - [Using UCONF in CFTUTIL](uconf_w_cftutil)
 - [UCONF parameters](uconf_directory): complete listing

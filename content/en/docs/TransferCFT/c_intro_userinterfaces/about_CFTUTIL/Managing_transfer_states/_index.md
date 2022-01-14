@@ -18,7 +18,7 @@ To view the transfers log:
 1. In the left pane, click **Transfer**.
 1. In the main pane, select a transfer.
 1. Click the transfer action.  
-    ![]($1)
+    ![](/Images/TransferCFT/ui_transfers.png)
 
 Available actions to include in the Transfers page include:
 

@@ -61,8 +61,8 @@ two messages:
 
 #### LISTCAT
 
-\[CONTENT = { <u>BRIEF</u>
-| FULL | DEBUG | COMMUT | EXTEND | | BLKNUM} \]
+**\[CONTENT = { <u>BRIEF</u>
+| FULL | DEBUG | COMMUT | EXTEND | | BLKNUM} \]**
 
 Used to obtain part or all of the information of a catalog entry.
 
@@ -90,7 +90,7 @@ information of a catalog entry.
 - ACTIVE: Displays only communication records that are not empty
 - FULL: Displays all communication records
 
-<span class="bold_in_para">Example</span>
+**Example**
 
 ```
 LISTCOM CONTENT =FULL
@@ -116,8 +116,8 @@ information.
 
 #### CFTEXT
 
-\[CONTENT =
-{<u>FULL</u> | BRIEF}\]
+**\[CONTENT =
+{<u>FULL</u> | BRIEF}\]**
 
 Level of content included in output:
 
@@ -149,7 +149,7 @@ listcat\]**
 
 #### LISTUCONF, UCONFGET
 
-**\[CONTENT= { BRIEF | FULL | EXTRACT | DEBUG | PROPS }\]**
+****\[CONTENT= { BRIEF | FULL | EXTRACT | DEBUG | PROPS }\]****
 
 Indicates the amount of information to display. Here, the options are listed in order of increasing details that are displayed.
 

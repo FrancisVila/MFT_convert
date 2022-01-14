@@ -8,7 +8,7 @@
 
 #### CFTPROT
 
-\[SROUT = {
+\[SROUT = { BOTH
 | NONE | SENDER | RECEIVER }\]
 
 **Requester mode only**

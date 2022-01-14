@@ -8,8 +8,9 @@
 
 #### CFTRECV ID= identifier
 
-\[ FACC
-= { | character } \]
+**\[ FACC
+= { ‘
+‘ | character } \]**
 
 File access method.
 

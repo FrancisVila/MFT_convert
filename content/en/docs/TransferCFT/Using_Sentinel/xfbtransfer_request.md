@@ -24,6 +24,6 @@ a predefined request for XFBTransfer *TransferLog*.
 This Request retrieves Tracked Instances that describe the contents of
 a {{< TransferCFT/componentshortname  >}} log.
 
-Related topics
+**Related topics**
 
 - [XFBLog Tracked Object](../xfblog)

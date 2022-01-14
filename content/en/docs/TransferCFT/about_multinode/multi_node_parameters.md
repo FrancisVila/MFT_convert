@@ -56,7 +56,7 @@
 | copilot.<br /> node_manager.watchperiod | Interval between checking the status of two Transfer CFT nodes. The Copilot watchdog uses the double of this value to ensure shared file system lease lock is not met. The value must therefore be less than the NFS lease time. | 10 | integer | Yes  |
 
 
-Related topics
+**Related topics**
 
 - [Multi-node commands](../multi_node_commands)
 - [Managing multi-node]()

@@ -8,7 +8,7 @@
 
 #### SUBMIT, DELETE, END, HALT, KEEP, START, CFTXLATE, CFTETB, LISTCAT
 
-\[DIRECT = {
+\[DIRECT = {BOTH
 | SEND | RECV} \]
 
 Transfer direction that applies to the table.

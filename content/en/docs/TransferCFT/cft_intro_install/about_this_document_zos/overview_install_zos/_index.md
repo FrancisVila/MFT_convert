@@ -8,9 +8,9 @@ The steps for creating the distribution environment differ depending on if you a
 
 Once you verify the installation, continue on to [post-installation](../t_start_servers_jobs_zos) for a standalone installation, or go to [multi-node installation](../c_multinode_zos) instructions to implement a high-availability installation.
 
-![$2]($1)
+![flow showing installation options](/Images/TransferCFT/install_overview_zos.png)
 
-About the distribution and instance environments
+**About the distribution and instance environments**
 
 The Transfer CFT installation creates the following environments:
 

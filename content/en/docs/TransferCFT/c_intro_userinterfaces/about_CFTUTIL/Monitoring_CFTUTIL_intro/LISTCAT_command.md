@@ -72,8 +72,7 @@ the selected transfers, recorded in the Transfer CFT catalog.
 
 ### Examples
 
-Example 1
-
+**Example 1**
 ```
 LISTCAT TYPE = ALL, PART = HQ, STATE = DC
 ```
@@ -83,8 +82,7 @@ all transfers (TYPE=ALL) sent to or received from (DIRECT=BOTH by default)
 the partner (PART = HQ), the states of which are "Available"
 or "in Process" (STATE=DC).
 
-Example 2
-
+**Example 2**
 ```
 LISTCAT TYPE = FILE, DIRECT = SEND, PART = PARIS5
 ```
@@ -93,8 +91,7 @@ Displays the most important information (CONTENT=BRIEF by default) concerning
 the file transfers (TYPE=FILE) sent (DIRECT=SEND) to the partner (PART)
 PARIS5, all states included (STATE=\* by default).
 
-<span id="sortby_example"></span>Example 3
-
+**<span id="sortby_example"></span>Example 3**
 ```
 LISTCAT SORTBY=IDTU
 ```
@@ -103,7 +100,7 @@ Displays the records by IDTU. This can be useful because the catalog's compact b
 
 ## LISTCAT CONTENT = COMMUT
 
-LISTCAT CONTENT = COMMUT
+`LISTCAT CONTENT = COMMUT`
 
 
 | Heading  | Meaning  |
@@ -118,7 +115,7 @@ LISTCAT CONTENT = COMMUT
 
 ## LISTCAT CONTENT = EXTEND
 
-LISTCAT CONTENT = EXTEND 
+`LISTCAT CONTENT = EXTEND `
 
 
 | Heading  | Meaning  |

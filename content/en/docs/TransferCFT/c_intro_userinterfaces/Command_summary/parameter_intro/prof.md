@@ -8,7 +8,7 @@
 
 #### CFTPROT
 
-TYPE = PeSIT
+**TYPE = PeSIT**
 
 \[PROF = {SIT | CFT | EXTERN | ANY | DMZ }\]
 

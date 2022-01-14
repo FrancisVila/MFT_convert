@@ -185,7 +185,7 @@ Note:
     error during the data transfer phase and retrying is forbidden, the transfer
     (requester mode) is restarted from the beginning of the file
 
-Example of receiving all the pending
-files
+**Example of receiving all the pending
+files**
 
-![$2]($1)
+![Site A receives all pending files from Site B](/Images/TransferCFT/Image1689.gif)

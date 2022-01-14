@@ -46,7 +46,7 @@ To enable Transfer CFT to use FIPS-compliant algorithms:
 
 ## Troubleshooting
 
-Copilot SSL connection to Central Governance does not work when FIPS is enabled
+**Copilot SSL connection to Central Governance does not work when FIPS is enabled**
 
 This issue occurs because the private key is encrypted using triple DES (by default). However, the certificate is encrypted using 40-bit RC2, which is not an approved FIPS algorithm. To remedy:
 
@@ -56,6 +56,6 @@ This issue occurs because the private key is encrypted using triple DES (by defa
 > pkcs12-export -in <your server cert>.pem -inkey <your server key>.pem -out mycert.p12 -descert
 > ```
 
-Related topics
+**Related topics**
 
 - [About UCONF (the unified configuration tool)](../../../admin_intro/uconf)

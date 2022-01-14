@@ -94,7 +94,7 @@ as shown in the following table.
 - n and the FNAMEABS parameter must be set to YES. A GDG file is rotated
 at the end of the job.
 
-z/OS
+**z/OS**
 
 Example of a file with versions. The notation of the version of the file in the SEND stage is
 the same as the last notation used in the JCL.

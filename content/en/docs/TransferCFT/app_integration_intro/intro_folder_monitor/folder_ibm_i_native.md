@@ -30,7 +30,7 @@ To monitor the creation of native files in a library:
 >
 > Both libraries must exist, and you cannot mix libraries and IFS directories.
 
-Example
+**Example**
 
 Below the CFTFOLDER object uses `CFTFOLD1 `as the scanning directory, and `CFTWRK1 `as the working directory (library).
 

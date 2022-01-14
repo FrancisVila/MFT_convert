@@ -54,7 +54,7 @@ This section describes the UCONF parameter settings required for SAML implement
 1. Start the Copilot server.
 1. <span id="step6"></span>Export the SAML SP ({{< TransferCFT/componentlongname >}}) metadata.
 
-- From a web browser, enter the URL  to extract the XML configuration data required to configure your IdP.
+- From a web browser, enter the URL https://\[Transfer CFT host\]:\[REST API port\]/saml2/metadata to extract the XML configuration data required to configure your IdP.
 - Save the displayed XML content in a file.
 
 Create your {{< TransferCFT/componentlongname  >}} client in the IdP by importing the saved XML file. Remember that you must create a client for each {{< TransferCFT/componentlongname  >}}.  
@@ -68,7 +68,7 @@ When the IdP connects to Transfer CFT using an HTTPS connection, it validates th
 
 ## Test
 
-From a web browser, enter the URL  - you are redirected to your IdP and prompted to enter your ID and credentials.
+From a web browser, enter the URL https://\[Transfer CFT host\]:\[REST API port\]/cft/ui - you are redirected to your IdP and prompted to enter your ID and credentials.
 
 ## Revoked user rights
 
@@ -84,7 +84,7 @@ If you change the private key, you must repeat the steps 6 - 8 as described [abo
 
 ## Troubleshooting
 
-Error from IDP
+**Error from IDP**
 
 After performing the "Set up SAML" steps, sometimes the exported SAML SP (Transfer CFT) metadata is incorrect when imported into the IDP (for example Keycloak) generating an error from the IDP.
 

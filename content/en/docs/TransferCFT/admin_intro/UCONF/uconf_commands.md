@@ -63,16 +63,14 @@ When TYPE=UCONF , the UCONF reconfigurable variables are reloaded. Note that onl
 > Tip  
 > You can use the listuconf content=extract function with fout to extract the configuration with the passwords in clear text (normally passwords are hidden in uconf). Example: CFTUTIL LISTUCONF CONTENT=EXTRACT, FOUT=UCONF
 
-Get more information
+**Get more information**
 
 To get more information on uconf values, enter the command:
 
 ```
 LISTUCONF id=PARAMETER,content=FULL
 ```
-
-Example
-
+**Example**
 ```
 LISTUCONF id=copilot.general.serverhost,content=FULL
 ```

@@ -15,7 +15,7 @@
 
 The information in this configuration example corresponds to the text used in the fields in the following steps.
 
-![]($1)
+![](/Images/TransferCFT/unmanged.png)
 
 ## Configure an unmanaged product in {{< TransferCFT/centralgovernancename  >}}
 
@@ -75,14 +75,14 @@ Parameter mapping
 
 In the toolbar, select **Flows** &gt; **Add flow**.
 
-![]($1)
+![](/Images/TransferCFT/flow01.png)
 
 Make the following selections, using the default values for all other fields.
 
 1. Enter a **Name** for your flow.
 1. Select **Source**, then **Application**.  
     From the list, select {{< TransferCFT/componentlongname >}} as the product type and select your {{< TransferCFT/transfercftname >}}. Confirm by clicking **Add source**.  
-    ![]($1)
+    ![](/Images/TransferCFT/flow03.png)
 1. Select **Protocol**. In the Protocol page, select:
     -   PeSIT as the **Exchange protocol**.
     -   Enter a value for the Flow identifier. Record this identifier as a reference if you want to check the flow configuration on your {{< TransferCFT/componentlongname >}}.

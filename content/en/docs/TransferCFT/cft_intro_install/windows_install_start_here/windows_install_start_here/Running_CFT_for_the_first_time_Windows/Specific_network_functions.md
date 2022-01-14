@@ -42,20 +42,18 @@ where:
     -   value: An element that takes on a value belonging to the parameter stated
         in field and according to the documentation
 
-Comments
+**Comments**
 
 To edit a line of comments in the file `CFTNET.CONF`, you can
 place the ‘#’ character in the first column of this line.
 
-Example
-
-# this is a comment
+**Example**
+`# this is a comment`
 
 Indication of the path for the cftnet.conf
 file
 
-Environment variable
-
+**Environment variable**
 `CFTCFGPATH`
 
 Environment variable defining the sub-folder where the cftnet.conf

@@ -4,9 +4,8 @@
     "weight": "2570"
 }### phases
 
-SWAITCAT
-
-\[ PHASES = { A | T | Y | Z | <u>X</u> } \]
+**SWAITCAT**
+`[ PHASES =  { A | T | Y | Z | X }  ]`
 
 Where the string **sizemax= 5**.
 
@@ -18,8 +17,7 @@ Possible values:
 - (Z) Acknowledgement: Acknowledgement reception/send steps and ack script execution occur here
 - (<u>X</u>) Done: End condition when all of the previous phases are completed (default)
 
-Example
-
+**Example**
 ```
 swaitcat select='(IDTU=="%_CAT_IDTU%")',timeout=30,phases=y,phasesteps=ch
 ```

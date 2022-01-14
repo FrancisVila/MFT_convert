@@ -14,8 +14,7 @@ Filters the LISTCAT or DISPLAY output.
 - Yes: Displays only those records whose `serial `parameter is set to a phase (Y or Z).
 - No: Displays any records that do not have a defined `serial `parameter (the space character).
 
-Example
-
+**Example**
 ```
 CFTUTIL listcat part = paris, Serialized = Yes
 ```

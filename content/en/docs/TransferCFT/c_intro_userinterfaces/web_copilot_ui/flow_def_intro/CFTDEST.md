@@ -5,8 +5,8 @@
 }This topic describes how to manages the list of partners for distribute/collect
 operations using the CFTDEST object.
 
-Related
-topics
+**Related
+topics**
 
 - Command syntax
     [CFTDEST](../../../command_summary#CFTDEST)

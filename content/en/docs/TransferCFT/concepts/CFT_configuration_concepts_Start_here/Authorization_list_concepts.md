@@ -29,7 +29,7 @@ For an example and command parameter details, see [Authorized flow definitions -
 
 To create a list of excluded IDFs, you simply prefix the authorization object (CFTAUTH) ID with the letters "<span class="code">NOT</span>" and list the IDFs to exclude in the IDF parameter definition. For example, you can exclude some IDF from being sent to a partner using the SAUTH parameter.
 
-Example list of unauthorized IDFs
+**Example list of unauthorized IDFs**
 
 With CFTAUTH ID = <span style="color: #ff4500;">NOT</span>SIBM1 in the CFTPART definition, and SAUTH = <span style="color: #ff4500;">NOT</span>SIBM1, then the APLI1 and APLI2 IDFs are not transferred to the IBM1 partner. When the CFTAUTH ID is prefixed by `NOT`, note that all other IDFs that are not included in the IDF list are consequently authorized.
 

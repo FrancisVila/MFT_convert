@@ -8,11 +8,11 @@ Swagger builds the HTTP frames and sends them to the REST server. However, befor
 
 #### Authorization
 
-Basic authorization
+**Basic authorization**
 
 Enter your {{< TransferCFT/componentlongname  >}} login name and password in the **Username/Password** fields. Click **Authorize**.
 
-Bearer authorization
+**Bearer authorization**
 
 Copy your token from the {{< TransferCFT/componentlongname  >}} UI **My Access Tokens** page into the **Value** field and click Authorize. Click **Authorize**.
 

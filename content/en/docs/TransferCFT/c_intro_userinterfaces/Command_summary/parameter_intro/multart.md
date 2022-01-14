@@ -8,7 +8,7 @@
 
 #### CFTPROT
 
-\[MULTART = {
+\[MULTART = { NO
 | <u>YES</u> } \]
 
 An option to group several records of the files sent in one FPDU.

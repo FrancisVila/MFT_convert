@@ -8,8 +8,8 @@
 
 #### CFTPARM
 
-\[LENAPPL = { 32
-| n}\]    {1...32}
+**\[LENAPPL = { 32
+| n}\]    {1...32}**
 
 Length to be taken into account when comparing the file/message identifier
 (IDF or IDM) with the identifier of a CFTAPPL command. See [Assigning

@@ -28,16 +28,7 @@ submission call is deactivated, following a time-out or {{< TransferCFT/componen
 
 **Syntax**
 
-CFTEXITID = identifier,  
-TYPE = EXEC,  
-\[FORMAT = { V23
-| V24 }\]  
-\[LANGUAGE = {COBOL | C},\]  
-\[MODE = {REPLACE | CREATE | DELETE},\]  
-\[PARM = string,\]  
-\[PROG = {CFTEXIT | string},\]  
-\[RESERV = string \]  
-\[WAITTASK = {1441 | n}\]
+`CFTEXITID = identifier,TYPE = EXEC,[FORMAT = { V23   | V24 }][LANGUAGE = {COBOL | C},][MODE = {REPLACE | CREATE | DELETE},][PARM = string,][PROG = {CFTEXIT | string},][RESERV = string ][WAITTASK = {1441 | n}]`
 
 
 | Parameter | Definition |
@@ -56,12 +47,8 @@ TYPE = EXEC,
 
 ## Defining the CFTPARM object
 
-Syntax
-
-CFTPARM  
-ID = identifier,  
-\[EXITEOT = identifier,\]  
-....
+**Syntax**
+`CFTPARMID = identifier,[EXITEOT = identifier,]....`
 
 
 | Parameter | Definition |

@@ -73,8 +73,7 @@ UCONFSET id=<parameter_id>, value=<value>
 `CFTUTIL <prefix_character><script_filename>`
 
 ```
-
-Example
+**Example**
 
 - UNIX: CFTUTIL @uconf-import.sh
 
@@ -106,7 +105,7 @@ For Transfer CFT 2.5, you must be at Transfer CFT 2.5.1 SP2 or higher before per
 
 1. Import your PKI certificates into the new Transfer CFT {{< TransferCFT/componentversion >}} using the command PKIUTIL. Replace the &lt;script\_filename> with the new script file path: `PKIUTIL <prefix_character><script_filename>`
 
-Example
+**Example**
 
 - UNIX: `PKIUTIL @pki-extract.conf`
 

@@ -36,7 +36,7 @@ All string-type fields, char name\[n+1\], are expressed in text format,
 either ASCII or EBCDIC depending on the system, are left justified, and
 terminated by a null byte.
 
-Fields in cftaix queries
+**Fields in cftaix queries**
 
 
 | Field  | Description  |

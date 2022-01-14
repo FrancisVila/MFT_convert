@@ -141,7 +141,7 @@ After the &p.nVAR symbolic variable has been substituted:
 
 You can use the field extraction syntax as follows:
 
-&%&lt;separator>\[&lt;start\_field>\[.\[&lt;end\_field>\]\]VARIABLE
+`&%<separator>[<start_field>[.[<end_field>]]VARIABLE`
 
 1. If` start_field` is omitted, the default value is 1.
 1. If `end_field` is omitted, the default value is the last field in the variable.
@@ -150,7 +150,7 @@ You can use the field extraction syntax as follows:
 
 For the following example, see the corresponding syntax:
 
-&&lt;VARIABLE>=S052368\_Z123\_HZUI34\_92\_\_\_TYU
+`&<VARIABLE>=S052368_Z123_HZUI34_92___TYU`
 
 1. `&%_.2<VARIABLE>`: separator=\_, start\_field=1 , end\_field=2 (this returns the value `S052368_Z123`)
 1. `&%_3.<VARIABLE>`: separator=\_ , start\_field=3, end\_field=last\_field (this returns the value `HZUI34_92___TYU`)
@@ -159,7 +159,7 @@ For the following example, see the corresponding syntax:
 
 You can combine field extraction with the other filtering methods. The full syntax is:
 
-&\[&lt;|>\]\[+|-\]\[:\]\[(-string\_prefix)(+string\_suffix)(=string\_alternate)\]\[&lt;position>.\]\[&lt;length>\]\[%&lt;separator>\]\[&lt;start\_field>\]\[.\[&lt;end\_field>\]\]&lt;VARIABLE>
+`&[<|>][+|-][:][(-string_prefix)(+string_suffix)(=string_alternate)][<position>.][<length>][%<separator>][<start_field>][.[<end_field>]]<VARIABLE>`
 
 #### Example symbolic variable usage
 
@@ -239,7 +239,7 @@ Given the syntax FNAME=&FROOT&(-.)FSUF:
 
 For example, if you have a file readme.txt on two different platforms:
 
-![]($1)
+![](/Images/TransferCFT/text_froot.png)
 
 Given the syntax FNAME=&(=DUMMY)PARM,
 
@@ -537,12 +537,12 @@ QQQ\_QQQ\_QQQ
 > -   Month: MM
 > -   Day: DD
 >
-> Sender
+> **Sender**
 >
 > The symbolic variables are
 > substituted by the values of the local parameters of the commands.
 >
-> Receiver
+> **Receiver**
 >
 > The symbolic
 > variables are substituted:
@@ -579,7 +579,7 @@ QQQ\_QQQ\_QQQ
 > >  | PARM, SAPPL, RAPPL parameters of SEND and CFTSEND >  |  > • &amp;FNAME, &amp;FUNITC, &amp;FUNIT, &amp;FPATH, &amp;FROOT, &amp;FSUF, &amp;NFNAME, &amp;PART, &amp;IDA, &amp;IDF, &amp;IDTU, &amp;IDT, &amp;IDM, &amp;COMMENT, &amp;SYSDATE, &amp;SYSTIME, &amp;FCHARSET, &amp;NCHARSET<br/> > >  |
 > > 
 >
-> **Example**
+> ****Example****
 >
 > A file name can consist of the day’s date and the partner’s name:  the
 > description command for the PAY file in reception.
@@ -606,7 +606,7 @@ QQQ\_QQQ\_QQQ
 >
 > You can use blacklist characters as a POSIX Regular Extended expression to define forbidden characters in a processing script. To prevent unauthorized actions, do not use these characters in symbolic variables.
 >
-> Defining the blacklist
+> **Defining the blacklist**
 >
 > Use the uconf `cft.server.processing_scripts_variables_blacklist` parameter to define the character sequence to forbid. We recommend setting this parameter to **`|\\$\\(|;|&|\\|** for UNIX, and **"&"** for Windows.
 >
@@ -615,21 +615,17 @@ QQQ\_QQQ\_QQQ
 > ```
 > uconfset id=cft.server.processing_scripts_variables_blacklist , value= "`|\\$\\(|;|&|\\|"
 > ```
->
-> When setting the blacklist values shown above, the forbidden characters are: **`** and **$(** and **;** and **&** and **|**  
-> For example, if `&PARM="$(ls)"`or if `` &PARM="`ls`" ``, then the EXEC is not executed because of the **$(** or the **`** characters, respectively.
->
-> Windows
->
+> **When setting the blacklist values shown above, the forbidden characters are: **`** and **$(** and **;** and **&** and **|**  
+> For example, if `&PARM="$(ls)"`or if `` &PARM="`ls`" ``, then the EXEC is not executed because of the **$(** or the **`** characters, respectively.**
+> **Windows**
 > ```
 > uconfset id=cft.server.processing_scripts_variables_blacklist , value="&"
 > ```
->
-> DIAGI 158
+> **DIAGI 158**
 >
 > This DIAGI indicates that there was an error while replacing the {{< TransferCFT/componentlongname  >}} variables.
 >
-> Log messages
+> **Log messages**
 >
 > -   CFTS67E: Error replacing variable &lt;var> &lt;error message>
 > -   CFTS68E: PART=&part \[IDF=&idf | IDM=&idm\]IDT=&idt \_ &fname not executed

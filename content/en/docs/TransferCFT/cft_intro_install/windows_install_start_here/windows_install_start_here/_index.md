@@ -31,10 +31,9 @@ the networks used. The TCP/IP network is supported.
 
 ## Installation schematic overview
 
-Standalone installation
+**Standalone installation**
 
 ![](/Images/TransferCFT/install01_(2).png)
 
-Multi-node installation
-
-![](/Images/TransferCFT/install_multi.png)
+**Multi-node installation**
+**![](/Images/TransferCFT/install_multi.png)**

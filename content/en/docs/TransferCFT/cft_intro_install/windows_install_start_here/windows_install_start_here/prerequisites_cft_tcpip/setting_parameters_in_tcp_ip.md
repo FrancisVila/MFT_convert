@@ -11,9 +11,8 @@ TCP/IP.
 
 ### Modifying the connection wait timeout period
 
-Environment variable
-
-CFTCONTCP
+**Environment variable**
+`CFTCONTCP`
 
 This timeout period corresponds to a period for {{< TransferCFT/componentshortname  >}} to wait
 for a communication to be established. The default timeout period is 120
@@ -22,11 +21,11 @@ seconds.
 To change this value, set the CFTCONTCP
 environment variable to the desired value in seconds.
 
-Example
+**Example**
 
 For a period of 20 seconds:
 
-SET CFTCONTCP=20
+`SET CFTCONTCP=20`
 
 ### Parameter settings for the initialization phase
 
@@ -72,15 +71,14 @@ in the CFTNET command. They are used for internal communication between
 {{< TransferCFT/componentshortname  >}} processes when the CFTNET command defines the characteristics
 of the local resource used for data exchange with remote partners.
 
-{{< TransferCFT/componentshortname  >}} with RAS example
+**{{< TransferCFT/componentshortname  >}} with RAS example**
 
 To use {{< TransferCFT/componentshortname  >}} with RAS, the IP address may be dynamic (DHCP server)
 without a predefined host name. You would therefore use the machine’s
 standard IP address of 127.0.0.1  
 To do this, define the two following lines in the cftnet.conf file:  
 
-TCP LOCALHOSTTYPE=IPADDRESS  
-TCP LOCALHOSTADDR=127.0.0.1
+`TCP LOCALHOSTTYPE=IPADDRESSTCP LOCALHOSTADDR=127.0.0.1`
 
 ### Using the TCP/IP via the RAS layer
 
@@ -107,7 +105,7 @@ request to transfer.
 
 Syntax of the CFTTCP HOST parameter:
 
-HOST=PPPxx@host
+`HOST=PPPxx@host`
 
 Where:
 

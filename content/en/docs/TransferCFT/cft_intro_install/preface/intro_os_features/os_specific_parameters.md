@@ -4,7 +4,7 @@
     "weight": "250"
 }## Platform specific characters
 
-{{< TransferCFT/componentlongname  >}} Guardian specific values
+**{{< TransferCFT/componentlongname  >}} Guardian specific values**
 
 
 | Notation | Object | Value |
@@ -15,7 +15,7 @@
 | file_symb | Prefix for a file name passed to CFTUTIL as a parameter | @ |
 
 
-File properties automatically retrieved for send operations
+**File properties automatically retrieved for send operations**
 
 
 | Notation | Object |
@@ -27,7 +27,7 @@ File properties automatically retrieved for send operations
 | FTYPE | YES |
 
 
-FTYPE values and associated implicit FCODE default values for send operations
+**FTYPE values and associated implicit FCODE default values for send operations**
 
 
 | FTYPE | FCODE |
@@ -36,7 +36,7 @@ FTYPE values and associated implicit FCODE default values for send operations
 | E | ASCII |
 
 
-FTYPE, FRECFM, and FORG combinations for send operations
+**FTYPE, FRECFM, and FORG combinations for send operations**
 
 QQQ\_QQQ\_CHECK phrase below
 
@@ -59,7 +59,7 @@ QQQ\_QQQ\_CHECK phrase below
 >
 > \[1\] You can also send variable length record files by setting FRECFM = V.
 
-FTYPE, FRECFM, and FORG values for receive operations
+**FTYPE, FRECFM, and FORG values for receive operations**
 
 
 | FTYPE | FRECFM | FORG  | File Type | Guardian Type | Guardian Code |
@@ -84,11 +84,11 @@ FTYPE, FRECFM, and FORG values for receive operations
 
 ## Platform specific parameters and values
 
-ATTSUSER
+**ATTSUSER**
 
 Use the ATTSUSER parameter to set specific attributes for receiving native files. This parameter can take three values, FCODE, FORMAT, and BUFFERED.
 
-FCODE
+**FCODE**
 
 Forces the file CODE attribute. This value should be consistent with the file structure and the restrictions of the system. If FCODE is not specified, Transfer CFT sets the code per the table iah,n Figure 5.
 
@@ -96,7 +96,7 @@ Forces the file CODE attribute. This value should be consistent with the file st
 
 The received file is created with 180 as the code.
 
-FORMAT
+**FORMAT**
 
 Forces the file FORMAT attribute. This value is either 1 or 2. If FORMAT is not specified, Transfer CFT sets the format according to the estimated size of the received file. A file whose size is greater than 2GB has the format 2, while a file having a size less than 2GB has the format 1.
 
@@ -104,7 +104,7 @@ Forces the file FORMAT attribute. This value is either 1 or 2. If FORMAT is not 
 
 The received file is created with the format 2.
 
-Use multiple values
+**Use multiple values**
 
 Additionally, you can use multiple values:
 
@@ -112,7 +112,7 @@ Additionally, you can use multiple values:
 
 The received file is created with the format 1, and 180 as the code.
 
-BUFFERED
+**BUFFERED**
 
 If specified, this parameter forces the BUFFERED attribute for the Guardian file. The possible values are 0 (NO BUFFERED) and 1 (BUFFERED). If not specified, Transfer CFT does not force the attribute. You can find more information on this attribute in the *File Utility Program (FUP) Reference Manual*.
 

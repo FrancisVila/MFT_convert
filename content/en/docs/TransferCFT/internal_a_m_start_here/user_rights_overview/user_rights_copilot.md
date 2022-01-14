@@ -4,7 +4,7 @@
     "weight": "230"
 }This section describes the `copilot.misc.createprocessasuser` parameter.
 
-When using {{< TransferCFT/centralgovernancename  >}}
+**When using {{< TransferCFT/centralgovernancename  >}}**
 
 By default this parameter is set to NO and user authentication is controlled by . Setting this to YES allows system user authentication via a client, such as web services, if there were a Central Governance failure. This setup requires that users be known on both the system and on , meaning an LDAP directory.
 
@@ -12,7 +12,7 @@ By default this parameter is set to NO and user authentication is controlled by 
 >
 > Configuration changes should be managed by Central Governance.
 
-When using standalone {{< TransferCFT/transfercftname  >}}
+**When using standalone {{< TransferCFT/transfercftname  >}}**
 
 When set to YES, user authentication is controlled by the system where Transfer CFT is installed and the Transfer CFT Copilot server starts a process under the connected user. Note that the default value is platform specific. When set to NO, actions made on the configuration are done with the user that **started** the Transfer CFT Copilot server.
 
@@ -34,7 +34,7 @@ When createprocessasuser is set to YES, you must perform the OS specific tasks 
 - Refer to the {{< TransferCFT/transfercftname >}} {{< TransferCFT/componentversion >}} *Installation Guide Unix> Unix operations > Using system users* for detailed instructions.
 - Refer to the {{< TransferCFT/transfercftname >}}{{< TransferCFT/componentversion >}} *Installation Guide Windows > Windows operations > Using system users* for detailed instructions.
 
-Related topics
+**Related topics**
 
 - [About system users](../)
 - [User rights use case scenarios](../user_rights_security_scenarios)

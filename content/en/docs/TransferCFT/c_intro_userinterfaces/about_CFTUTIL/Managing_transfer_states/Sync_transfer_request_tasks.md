@@ -8,8 +8,7 @@
 
 The WPHASES and WPHASESTEPS parameters allow for more precision and possibilities than using WSTATES alone.
 
-Example of a transfer request where the wphases is used in conjunction with wphasesteps
-
+**Example of a transfer request where the wphases is used in conjunction with wphasesteps**
 ```
 config type=com,mediacom=tcpip,fname=xhttp://localhost:1765
  
@@ -17,9 +16,7 @@ send part=loop,idf=t2,wphases=X,wphasesteps=X,wtimeout=40
 CFTU00I SEND _ Correct (SWAITCAT_OK: reached phase X, phasestep X, state X)
 CFTU00I SEND _ Correct (part=loop,idf=t2,wphases=X,wphasesteps=X,wtimeout=40)
 ```
-
-Example of a simple transfer request using only wphases
-
+**Example of a simple transfer request using only wphases**
 ```
 config type=com,mediacom=tcpip,fname=xhttp://localhost:1765
  
@@ -133,10 +130,8 @@ Log
 
 The examples describe how to use SWAITCAT to perform the following task, wstates is the best way to wait (or wphases).
 
-<span id="SWAITCAT ex 1"></span>**Example: Execute a command once all transfers have completed**
-
-The following example is a way to execute a batch processing task using SWAITCAT, which is a task that you cannot perform using the SEND command with WSTATES.
-
+**<span id="SWAITCAT ex 1"></span>**Example: Execute a command once all transfers have completed****
+**The following example is a way to execute a batch processing task using SWAITCAT, which is a task that you cannot perform using the SEND command with WSTATES.**
 ```
 config type=com,mediacom=tcpip,fname=xhttp://localhost:1765
  

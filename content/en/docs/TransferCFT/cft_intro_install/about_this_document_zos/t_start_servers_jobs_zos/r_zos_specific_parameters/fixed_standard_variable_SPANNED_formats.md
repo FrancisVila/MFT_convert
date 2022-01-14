@@ -32,6 +32,5 @@ To avoid an ABEND 737-48 when receiving a file in multi-volumes compressed SMS d
 - Add the keyword `',FEOV=NO' `to the FNAME or WFNAME  on the CFTRECV.
 - You can also use the environment variable `FEOV=NO file ..UPARM(CNFENV)` to manage FEOV for all CFTRECVs.
 
-Related topics
-
-[Transfer CFT z/OS general performance concepts](../../zos_performance)
+**Related topics**
+**[Transfer CFT z/OS general performance concepts](../../zos_performance)**

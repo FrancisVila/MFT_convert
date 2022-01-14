@@ -5,6 +5,9 @@
 }The
 *Network resources* object corresponds to the CFTNET object in the command line operations.
 
+Related
+topics
+
 - Command syntax
     [CFTNET](../../../c_intro_userinterfaces/command_summary#CFTNET)
 - Parameter list
@@ -49,7 +52,7 @@ Some of the parameters described below are for general use, while others
 are only used by a specific system and/or network access method. The parameters
 whose meaning is common to all networks are described in the CFTNET -
 Generic command paragraph. The specific parameters, grouped by network
-type, are then described in the *CFTNET TYPE = xxx* .
+type, are then described in the *CFTNET TYPE = xxx topic*.
 
 The TYPE parameter takes the value TCP/IP.
 
@@ -57,7 +60,8 @@ The check for the maximum number of CFTNET objects managed, performed
 during the parameter updating phase, may differ in certain environments
 from the check performed during {{< TransferCFT/componentshortname  >}} execution. When Transfer
 CFT detects an excessive number of CFTNET objects, the following message
-appears: 
+appears: CFTP16F
+CFTNET id for CFTPARM id\_Not loading in memory
 
 <span id="How_does_the_CFTNET_object_work_"></span>
 

@@ -8,18 +8,11 @@ Use the ABOUT command to display
 the Transfer CFT product, host, and key information. This command displays the characteristics of the platform
 on which Transfer CFT is installed.
 
-**Syntax**
-
-\[ [COMMENT](../../../../c_intro_userinterfaces/command_summary/parameter_intro/comment)
-= string \]
-
-\[ [TYPE](../../../../c_intro_userinterfaces/command_summary/parameter_intro/type)
-= {
-| HOST | CFT } \]
-
-\[ [KEY](../../../../c_intro_userinterfaces/command_summary/parameter_intro/key) = { <u>FIRST</u> | ALL } \]
-
-Parameters
+****Syntax****
+`[ COMMENT   = string ]`
+`[ TYPE   = { ALL   | HOST | CFT } ]`
+`[ KEY = { FIRST | ALL } ]`
+**Parameters**
 
 
 | Parameter  | Description  |
@@ -104,8 +97,7 @@ Keys:
 - UID: Generates a unique id.
 - HOSTINFO: Display information used in key generation.
 
-Examples
-
+**Examples**
 ```
 C:\\projects>`cfttell target`
 win-x86-64

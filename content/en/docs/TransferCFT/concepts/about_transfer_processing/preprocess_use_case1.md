@@ -14,7 +14,7 @@
 
 You can use EXECE to define the error file to execute when an error leads to the K (killed) phase step. This value overrides the CFTPARM EXECRE/EXECSE value.
 
-\[EXECE { string max\_length=512}\]
+**\[EXECE { string max\_length=512}\]**
 
 Error file to execute when an error leads to the K (killed) PHASESTEP. This value overrides the CFTPARM [EXECRE](../../../c_intro_userinterfaces/command_summary/parameter_intro/execre)/[EXECSE](../../../c_intro_userinterfaces/command_summary/parameter_intro/execse) value.
 

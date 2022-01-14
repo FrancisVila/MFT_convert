@@ -4,11 +4,10 @@
     "weight": "230"
 }To view your registered {{< TransferCFT/componentshortname  >}}s click **Products** on the top toolbar to open the Product List page.
 
-![]($1)
+![](/Images/TransferCFT/product_list_cg.png)
 
-Example
-
-Copy or note the host name or IP address for each of the three Transfer CFTs that you will use in these exercises.
+**Example**
+**Copy or note the host name or IP address for each of the three Transfer CFTs that you will use in these exercises.**
 
 
 | Transfer CFT  | Host name  | Application name  |
@@ -20,4 +19,4 @@ Copy or note the host name or IP address for each of the three Transfer CFTs tha
 
  
 
-**&lt;&lt;** <a href="../../" class="bold_in_para MCXref xref xrefbold_in_para">My first transfer flow</a>
+**&lt;&lt;** **My first transfer flow**

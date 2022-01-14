@@ -48,7 +48,7 @@ There are several options you can add to the command line:
 
 The following examples use the UNIX command extension (.sh). On Windows systems replace .sh with .bat in your command.
 
-ImportPGPKey.sh -dn "cn=Axway,c=fr" -pkcs12 /home/user/pkcs12.p12 -passPkcs12 "passphrasePKCS12" -out /home/user/output/ /home/user/pubring.pkr
+`ImportPGPKey.sh -dn "cn=Axway,c=fr" -pkcs12 /home/user/pkcs12.p12 -passPkcs12 "passphrasePKCS12" -out /home/user/output/ /home/user/pubring.pkr`
 
 This example stores the certificate provided by the public Keyring `home/user/pubring.pkr` in the `/home/user/output/` directory. The subject DN of the certificate generated will be "cn=Axway,c=fr".
 
@@ -56,7 +56,7 @@ The private key used to sign the certificate is stored in the PKCS#12 file locat
 
 The PassPhrase of this PKCS#12 file is "passphrasePKCS12".
 
-ImportPGPKey.sh -passwd "pass" -newpasswd "newpasswd" -out /home/user/output/
+`ImportPGPKey.sh -passwd "pass" -newpasswd "newpasswd" -out /home/user/output/`
 
 `/home/user/secring.skr`
 
@@ -116,20 +116,16 @@ There are several options you can add to the command line:
 
 The following examples use the UNIX command extension (.sh). On Windows systems replace .sh with .bat in your command.
 
-ExportPGPKey.sh -userIdPacket "userIdPacket" -passPkcs12 "passPkcs12"
-
--passSecRing "passSecRing" -out /home/user/output/
-
-/home/user/Pkcs12ToConvert.p12
+`ExportPGPKey.sh -userIdPacket "userIdPacket" -passPkcs12 "passPkcs12"`
+`-passSecRing "passSecRing" -out /home/user/output/`
+`/home/user/Pkcs12ToConvert.p12`
 
 This example stores the secret Keyring and the public Keyring provided by the file `Pkcs12ToConvert.p12` in the `/home/user/output/` directory.
 
 The PassPhrase of `Pkcs12ToConvert.p12` is "passPkcs12". The user ID packet in the generated files is "userIdPacket". The generated secret Keyring is protected by the PassPhrase "passSecRing".
 
-ExportPGPKey.sh -userIdPacket "userIdPacket" -passPkcs12 "passPkcs12"
-
--passSecRing "passSecRing" -out /home/user/output/ -secRing no
-
-/home/user/Pkcs12ToConvert.p12
+`ExportPGPKey.sh -userIdPacket "userIdPacket" -passPkcs12 "passPkcs12"`
+`-passSecRing "passSecRing" -out /home/user/output/ -secRing no`
+`/home/user/Pkcs12ToConvert.p12`
 
 The example is the same as above, with the `-secRing no` option. Only the public Keyring is generated.

@@ -145,7 +145,7 @@ Perform the following tasks (we use 3.x in this example step procedure to indica
 
     CALL PGM(CFTMI) PARM(‘MIGR’ ‘type=CAT, direct=FROMCAT, ifname=CFTPROD/CAT, ofname=CFTUPGLIB/CAT35’)
 
-    Where is a temporary backup library.
+    Where CFTUPGLIB is a temporary backup library.
 
 1. Downgrade from Transfer CFT 3.6 to Transfer CFT 3.x version:
     1.  Rename CFTPGM and CFTPROD.
@@ -156,6 +156,8 @@ Perform the following tasks (we use 3.x in this example step procedure to indica
 1. Create a new Transfer CFT catalog file.
 
 1. Import the saved cftcat\_35 to the new Transfer CFT catalog file:
+
+    CFTMI migr type=cat,direct=tocat,ifname=cftcat\_35,ofname=$CFTCATA
 
 1. On the IBM i system:
 

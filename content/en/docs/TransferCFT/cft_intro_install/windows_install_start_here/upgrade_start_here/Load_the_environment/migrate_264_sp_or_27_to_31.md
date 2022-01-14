@@ -63,7 +63,7 @@ You can migrate the PARM, PART, IDF, other static configuration objects and UCON
     PKIUTIL <prefix_character><script_filename>
     ```
 
-Examples
+**Examples**
 
 UNIX: `PKIUTIL @pki-extract.conf`
 
@@ -96,9 +96,9 @@ Windows: `PKIUTIL #pki-extract.conf`
 
 - Windows: $CFTCATA
 
-Example
-
+**Example**
 ```
+CFTMI MIGR type=CAT, direct=TOCAT, ifname=catalog_output.xml, ofname=<catalog_filename_new_installation>
 ```
 
 ### Migrating the communication media files
@@ -126,7 +126,7 @@ Example
 
 - Windows: `$CFTCOM`
 
-Example
-
+**Example**
 ```
+CFTMI MIGR type=COM, direct=TOCOM, ifname=com_ouput.xml, ofname=<com_filename_new_installation>
 ```

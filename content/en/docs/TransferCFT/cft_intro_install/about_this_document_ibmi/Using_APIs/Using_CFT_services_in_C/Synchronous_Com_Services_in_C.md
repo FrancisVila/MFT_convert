@@ -17,9 +17,8 @@
 
 ## Call syntax
 
-rc =      cftau (verb,param)
-
-rc =      cftac (verb,param)
+`rc =      cftau (verb,param)`
+`rc =      cftac (verb,param)`
 
 Where:
 

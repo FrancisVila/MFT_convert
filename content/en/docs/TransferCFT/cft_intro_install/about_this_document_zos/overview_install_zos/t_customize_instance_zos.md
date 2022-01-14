@@ -105,7 +105,7 @@ The password is temporarily stored in the '`pswfname`' file, with the syntax `--
 | sftpprot  | '1763'  | Protocol SFTP port.  |
 | apisp | '1765'  | Synchronous API TCP/IP port (The address is 127.0.0.1 in* ..SAMPLE(CFTPARM) cftcom). |
 | idparm  | 'IDPARM0'  | CFTPARM identifier: (cft.idparm).<br/> • This parameter is set during installation.<br/> • JCL CFTMAIN uses this parameter, where MNRMAIN (PARM=). |
-| cftinst  | '&amp;%"Z11"$pesitany'  | The Transfer CFT instance ID, CFTPARM partner (value size &lt;= 24). This value identifies the Transfer CFT and must be unique (cft.instance_id).<br/> If Composer is enabled, the naming conventions differs:<br/> • Value size &lt;= 8<br/> • First alphabetic character<br/> • Naming convention: the same as the PDS’s member<br/> The sentence '&amp;%Mvsvar("SYSNAME")" "$pesitany' is replaced with the result of the REXX function Mvsvar("SYSNAME")" concatenated with the value of the previously customized pesitany field.<br/> "Z11" represents the z/OS partition’s name. For example, $pesitany corresponds to the value assigned to keyword 'pesitany'. |
+| cftinst  | '&amp;%"Z11"$pesitany'  | The Transfer CFT instance ID, CFTPARM partner (value size &lt;= 24). This value identifies the Transfer CFT and must be unique (cft.instance_id).<br/> <code>If Composer is enabled, the naming conventions differs:</code> • Value size &lt;= 8<br/> • First alphabetic character<br/> • Naming convention: the same as the PDS’s member<br/> The sentence '&amp;%Mvsvar("SYSNAME")" "$pesitany' is replaced with the result of the REXX function Mvsvar("SYSNAME")" concatenated with the value of the previously customized pesitany field.<br/> "Z11" represents the z/OS partition’s name. For example, $pesitany corresponds to the value assigned to keyword 'pesitany'. |
 | cftgroup  | 'Production.zos'  |  Transfer CFT instance GROUP  |
 
 
@@ -165,7 +165,7 @@ Use these parameters only with the {{< TransferCFT/componentshortname  >}} z/OS 
 
 | Keyword  | Default  | Description  |
 | --- | --- | --- |
-| grpcft  | 'grpcft'  | Transfer CFT administrator SAF group. |
+| <code>grpcft </code>  | <code>'grpcft' </code>  | <code>Transfer CFT administrator SAF group.</code>  |
 | grpmon  | 'grpmon'  | Transfer CFT SAF group.  |
 | grpaprm  | 'grpaprm'  | All parameters access SAF group.  |
 | grpfprm  | 'grpfprm'  | PARM and PART access SAF group.  |
@@ -184,12 +184,12 @@ If you modify the following values, you must un-comment them in the JCL \* CFT$S
 | --- | --- | --- |
 | cftenv | 'CFTENV'  | Id member included in each JCL:<br/> // INCLUDE MEMBER=CFTENV<br/> This member contains the command SET for the variables used in the JCL (except for CFTMAIN, and COPRUN). |
 | icftcat  | 'CATALOG'  | Transfer CFT catalog file identifier  |
-| icftcom |  'COM'  | Transfer CFT com file identifier |
+| <code>icftcom</code>  | <code> 'COM' </code>  | <code>Transfer CFT com file identifier</code>  |
 | icftparm  | 'PARM'  | Transfer CFT parameter file identifier  |
 | icftpart  | 'PART'  | Transfer CFT partner file identifier  |
 | icftpki  | 'PKIFILE'  | Transfer CFT PKI file identifier  |
-| cftloga | 'LOG1' | Transfer CFT log file identifier |
-| cftlogb | 'LOG2'  | Transfer CFT log alternate file identifier  |
+| <code>cftloga</code>  | <code>'LOG1'</code>  | <code>Transfer CFT log file identifier</code>  |
+| <code>cftlogb</code>  | 'LOG2'  | Transfer CFT log alternate file identifier  |
 | cftacca  | 'ACCNT1'  | Transfer CFT account file identifier  |
 | cftaccb  | 'ACCNT2'  | Transfer CFT account alternate file identifier  |
 | cftuconf  | 'UCONF'  | Unified configuration file  |
@@ -236,8 +236,8 @@ If you modify the following values, you must un-comment them in the JCL \* CFT$S
 | saml_enable  | no  | Enable SAML as the authentication method for this Transfer CFT (the UCONF am.type=saml).  |   |
 | saml_client_id  | '$(cft.instance_id)'  | Specify the Client_ID value to use as issuer for SAML requests. This should match the Identity Provider configuration.  |   |
 | authserver_host  | ' '  | Specify the SAML endpoint for AuthnRequest (HTTP-Redirect binding).<br/> If Keycloak is the Identity Provider, this should resemble: <code>https://authserver.host/auth/realms/\{realm-name}/protocol/saml. authserver_host ' '</code> | 'https://aa.bb.cc.int:8443'  |
-| saml_idp_signonservice  | ' '  | Specify the SAML endpoint for SignonRequest (HTTP-Redirect binding).<br/> If Keycloak is the Identity Provider, this should resemble:<br/> https://authserver.host/auth/realms/\{realm-name}/protocol/saml.<br/> saml_idp_signonservice ' ' | '/auth/realms/synapses/protocol/saml'  |
-| saml_idp_logoutservice  | ' '  | Specify the endpoint for SAML LogoutRequest (HTTP-Redirect binding).<br/> If Keycloak is the Identity Provider, this should resemble:<br/> https://authserver.host/auth/realms/\{realm-name}/protocol/saml.<br/> saml_idp_logoutservice ' ' | '/auth/realms/synapses/protocol/saml'  |
+| saml_idp_signonservice  | ' '  | Specify the SAML endpoint for SignonRequest (HTTP-Redirect binding).<br/> If Keycloak is the Identity Provider, this should resemble:<br/> <code>https://authserver.host/auth/realms/\{realm-name}/protocol/saml.</code> <code>saml_idp_signonservice ' '</code>  | '/auth/realms/synapses/protocol/saml'  |
+| saml_idp_logoutservice  | ' '  | Specify the endpoint for SAML LogoutRequest (HTTP-Redirect binding).<br/> If Keycloak is the Identity Provider, this should resemble:<br/> <code>https://authserver.host/auth/realms/\{realm-name}/protocol/saml.</code> <code>saml_idp_logoutservice ' '</code>  | '/auth/realms/synapses/protocol/saml'  |
 | saml_idp_certificate_path  | ' '  | Specify the path to the certificate that verifies the SAML Identity Provider server's signatures. This certificate is stored in the internal PKI database.  |   |
 
 
@@ -256,7 +256,7 @@ You can customize specific prefixes for the following Transfer CFT files.
 | pfx_log  | '*'  | Log file  |
 | pfx_acc  | '*'  | Account fie  |
 | pfx_sec  | '*'  | Security files  |
-| pfx_uconf  | '*'  | Uconf runtime file  |
+| pfx_uconf  | '*'  | Uconf runtime file (1)  |
 
 
 > **Note**
@@ -271,16 +271,12 @@ As of {{< TransferCFT/componentlongname  >}} 3.2.4 SP2, you are no longer requir
 
 If the executable is not present in the LOAD library, the default values are used in the executables of Transfer CFT: CFTMAIN, CFTCOPL, CFTUTIL, etc. Additionally, you can configure the SGINSTAL macro parameters as UCONF variables.
 
-Syntax
-
-See the table below for possible keywords and values.
-
+**Syntax**
+**See the table below for possible keywords and values.**
 ```
 UCONFSET id=cft.mvs.sginstal.<keyword>,value=<value>
 ```
-
-Example
-
+**Example**
 ```
 UCONFSET id=cft.mvs.sginstal.sdsfopt,value=’monitor’
 ```
@@ -369,7 +365,6 @@ To generate parameters from the SGINSTAL executable as UCONF variables:
 // DSN=&&TMP
 Delivered JCL INSTALL(MIGRSGI) extract.
 ```
-
-Related topics
+**Related topics**
 
 [Customize JCL installation files](../installation_parameters_to_customize)

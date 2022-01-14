@@ -22,11 +22,11 @@ The value of the PROT parameter may include "wildcard" characters
 will accept any protocol, the identifier of which corresponds to the generic
 value thereby defined.
 
-Example 1
+**Example 1**
 
 PROT = (prot1 , \*)
 
-Example 2
+**Example 2**
 
 PROT = (prot1 , prot?)
 
@@ -51,7 +51,7 @@ in the second example, by all the protocols beginning with the letters
 
 #### SEND / RECV
 
-Requester mode only
+**Requester mode only**
 
 **PROT = (*identifier*)**
 

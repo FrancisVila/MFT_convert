@@ -20,15 +20,15 @@ Additionally, you can add a prefix to the sorting criteria to indicate the order
 
 For example:
 
-CFTUTIL DISPLAY SORTBY=(-IDTU)
+`CFTUTIL DISPLAY SORTBY=(-IDTU)`
 
 You can use the `SORTBY `option with any parameter that is used in the Transfer CFT catalog. You can view all catalog parameters in the Transfer CFT UI, or enter the following CFTUTIL command to display a complete list:
 
-CFTUTIL DISPLAY CONTENT=DEBUG
+`CFTUTIL DISPLAY CONTENT=DEBUG `
 
 Some useful parameters to sort by include `IDTU` and `IDT`. Or, to sort using a date and time indicator for example, enter:
 
-CFTUTIL DISPLAY SORTBY=(-DATEK,-TIMEK)
+`CFTUTIL DISPLAY SORTBY=(-DATEK,-TIMEK)`
 
 #### LISTCAT
 

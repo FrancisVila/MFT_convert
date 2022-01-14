@@ -8,7 +8,7 @@
 
 #### CFTPARM
 
-\[SSLWTASK = {
+\[SSLWTASK = { 1441
 | n }\]... {1...1441}
 
 Set the inactivity time, in minutes, of the SSL task. Beyond this value,

@@ -36,6 +36,6 @@ After completing the initial A00CUSTO customization, you can use the JCL A04RPLA
 
 Once the JOB is complete, update the A03PARM file in the target environment and resubmit the JCL A00CUSTO.
 
-Related topics
+**Related topics**
 
 - [Installation overview]()

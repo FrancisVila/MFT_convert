@@ -8,8 +8,8 @@
 
 #### CFTETB
 
-\[FREE1 = {pos, 255 | len,
-content}\]
+**\[FREE1 = {pos, 255 | len,
+content}\]**
 
 Position (pos), length (len) and content (content) of the first free
 field in the parameter card.

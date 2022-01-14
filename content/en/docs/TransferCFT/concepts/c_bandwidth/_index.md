@@ -134,7 +134,7 @@ When defining a class-of-service it is recommended that you configure as follows
 - Requester mode: the configured default class-of-service is a "leaf"
 - File transfers: a "leaf" class-of-service is used
 
-Related topics
+**Related topics**
 
 - [Managing bandwidth](t_bandwidth)
 - [Bandwidth control use cases](r_use_cases_bandwidth)

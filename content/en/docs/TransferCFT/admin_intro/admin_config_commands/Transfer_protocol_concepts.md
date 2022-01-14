@@ -9,6 +9,9 @@ transfer protocols. Transfer protocols include:
 - PeSIT
 - Odette
 
+Related
+topics
+
 - Command syntax
     [CFTPROT](../../../c_intro_userinterfaces/command_summary#CFTPROT)
 - Parameter list
@@ -84,6 +87,6 @@ the following:
 > not necessarily apply when transfers in different directions are performed
 > in sequence during the same connection.
 
-Related topics
+**Related topics**
 
 [Transfers via a proxy and SOCKS protocol](../../../protocols_start_here/ipv6/use_proxy_and_socks_protocol)

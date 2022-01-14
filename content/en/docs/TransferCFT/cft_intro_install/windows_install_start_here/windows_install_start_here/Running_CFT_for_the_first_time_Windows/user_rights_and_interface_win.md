@@ -108,7 +108,7 @@ If copilot.misc.createprocessasuser=no in UCONF, all system users have the right
 >
 > The PassPort user name is case-sensitive.
 
-Related topics
+**Related topics**
 
 [About PassPort AM](../../../../../internal_a_m_start_here/about_passport_am)
 

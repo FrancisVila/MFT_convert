@@ -10,8 +10,8 @@
 
 #### CFTRECV, RECV, CFTSEND, SEND
 
-\[FORG = {SEQ | DIRECT | INDEXED}\]
-  
+**\[FORG = {SEQ | DIRECT | INDEXED}\]
+  **
 
 Organization of the file to be transferred:
 

@@ -18,7 +18,7 @@ user uses the environment variable by prefixing its name with the character
 ‘$’. The variable name that corresponds to the logical file name is developed
 into the physical name.
 
-Example
+**Example**
 
 The environment variable `[FULL_NAME]` provides a definition
 to the operating system as follows:

@@ -77,8 +77,7 @@ Let's start by performing the same type of transfer as in the sample configurati
 | **Configuration**<br/> • Create a partner.<br/> • Create an IDF.<br/> **Runtime**<br/> • Run the transfer.<br/> • Check the catalog. | **Configuration**<br/> • Create a partner.<br/> • Create an IDF.<br/> **Runtime**<br/> • Retrieve the sent file.<br/> • Check the catalog. |
 
 
-View an example
-
+**View an example**
 ```
 **/\*REQUESTER/SENDER\*/**
 CFTPART
@@ -124,7 +123,7 @@ LISTCAT
 
 In explicit mode, an application makes a specific file available for a defined partner. Then when that particular remote partner is ready, it can retrieve the specified file, which only needed to be made available once.
 
-![$2]($1)
+![In this example, the Sender site Phoenix has a file available for the Requester Paris site](/Images/TransferCFT/2013_g_TransferCFT_Explicit_mode.png)
 
  
 
@@ -134,8 +133,7 @@ In explicit mode, an application makes a specific file available for a defined p
 | Configuration<br/> • Create a partner.<br/> • Create an IDF.<br/> <br/> <br/> Runtime<br/> • Make your file available.<br/> The send command is set with the ‘state=HOLD’ parameter. The HOLD attribute puts the file in the Transfer CFT catalog, and indicates that it is available for the partner.<br/><br/> • Check the catalog. | Configuration<br/> • Create a partner.<br/> • Create an IDF.<br/> <br/> <br/> Runtime<br/> • Receive the available file.<br/> • Check the catalog. |
 
 
-View an example
-
+**View an example**
 ```
 **/\*SERVER/SENDER\*/**
 CFTPART
@@ -152,7 +150,7 @@ CFTSEND ID=INVOICE, IMPL=NO,....
  
 SEND PART=PARIS, IDF=INVOICE, STATE=HOLD
  
-LISTCAT
+LISTCAT /\*show transfers in hold state\*/
 ```
 ```
 **/\*REQUESTER/RECEIVER\*/**
@@ -188,8 +186,7 @@ This transfer mode is the same as the previously described explicit mode but pro
 | Configuration<br/> • Create a partner.<br/> • Create an IDF.<br/> Runtime<br/> • Make a file available SEND part=PARIS, idf=INVOICE, state=HOLD.<br/> • Repeat with another file.<br/> • Repeat again with a third file. This ‘HOLD’ attribute puts the files in the Transfer CFT catalog and makes them available for the partner.<br/> • Check the catalog for 1 entry per transfer. A generic entry is set. | Configuration<br/> • Create a partner.<br/> • Create an IDF.<br/> Runtime<br/> • Receive all of the available files:<br /> RECV part=PHOENIX, idf=INVOICE, file=ALL.<br/> • Check the catalog for 1 entry per transfer. A generic entry is set. |
 
 
-View an example
-
+**View an example**
 ```
 **/\*SERVER/SENDER\*/**
 CFTPART
@@ -208,7 +205,7 @@ SEND PART=PARIS, IDF=INVOICE, STATE=HOLD, FNAME=FILE_1
 SEND PART=PARIS, IDF=INVOICE, STATE=HOLD, FNAME=FILE_2
 SEND PART=PARIS, IDF=INVOICE, STATE=HOLD, FNAME=FILE_n
  
-LISTCAT
+LISTCAT /\*would show transfer in hold state\*/
 ```
 ```
 **/\*REQUESTER/RECEIVER\*/**
@@ -234,7 +231,7 @@ LISTCAT
 
 The implicit transfer mode is often used to make a file whose content is frequently changing available to partners. The file is always available and partners can retrieve it as many time as necessary.
 
-![$2]($1)
+![In this example, the Sender Phoenix site has a file whose contents may be frequently updated availbe](/Images/TransferCFT/2013_g_TransferCFT_Implicit_mode.png)
 
  
 
@@ -244,8 +241,7 @@ The implicit transfer mode is often used to make a file whose content is frequen
 | Conf<br/> • Create a partner.<br/> • Create an IDF where impl=yes.<br/> Runtime<br/> • The CFTSEND is set with ‘impl=yes’.<br/> • Check the catalog. | Conf<br/> • Create a partner.<br/> • Create an IDF.<br/> Runtime<br/> • Receive the file.<br/> • Check the catalog. |
 
 
-View an example
-
+**View an example**
 ```
 **/\*PHOENIX\*/**
 CFTPART
@@ -261,7 +257,7 @@ HOST = @<Paris address>
 CFTSEND ID=ORDER, IMPL=YES, FNAME=FILE_TO_SEND....
  
  
-LISTCAT
+LISTCAT /\*would show transfer in hold state\*/
 ```
 
  
@@ -300,8 +296,7 @@ This mode is similar to the FTP put command. It allows you to define the file na
 | Conf<br/> • Create a partner.<br/> • Create a CFTSEND with fname=&lt;FILE_TO_SEND&gt;, nfname=cft/filpub/fic.txt …<br/> Runtime<br/> • Run the transfer.<br/> • Check the catalog. | Conf<br/> • Create a partner.<br/> • Create an CFTRECV fname=&amp;nfname…<br/> The syntax ‘fname=&amp;nfname’ means that the receiver allows the open mode.<br/><br/> Runtime<br/> • The file has been stored in the path defined by the client/sender, in this example: cft/filpub/fic.txt.<br/> • Check the catalog. |
 
 
-View an example
-
+**View an example**
 ```
 **/\*REQUESTER/SENDER\*/**
 CFTPART
@@ -358,8 +353,7 @@ This mode is similar to FTP get command. It allows the receiver to get a file fr
 | Configuration<br/> • Create a partner.<br/> • Create an CFTRECV that defines the fname.<br/> Runtime<br/> • Request the file stored on the remote server. Run the command: CFTUTIL RECV… nfname=&lt;remote_requested_file&gt;.<br/> • The file retrieved is stored in the fname location.<br/> • Check the catalog. | Configuration<br/> • Create a partner.<br/> • Create an CFTSEND where impl=yes, fname=&amp;nfname.<br/> The syntax ‘fname=&amp;nfname’ means that the server/sender allows the open mode.<br/><br/> Runtime<br/> • The file stored locally in &lt;remote_requested_file&gt; is sent to the client.<br/> • Verify the catalog |
 
 
-View an example
-
+**View an example**
 ```
 **/\*REQUESTER/RECEIVER\*/**
 CFTPART
@@ -425,8 +419,7 @@ Additionally, you can define what occurs if a partner is unknown, how the script
 | Configuration<br/> • Create a first partner NEWYORK.<br/> • Create a second partner PHOENIX.<br/> • Create a broadcast list that contains both part1 and part2.<br/> • Create a CFTSEND.<br/> Runtime<br/> • Using one command, send a file to the broadcast list.<br/> • The file is sent to both partners at the same time.<br/> • Check the catalog. You should have 3 entries in the catalog, one generic entry and one entry per partner. | Configuration<br/> • Create a first partner.<br/> • Create an CFTRECV.<br/> Runtime<br/> • The first partner receives the file.<br/> • Check the catalog, there should be get one entry for this partner. | Configuration<br/> • Create a second partner.<br/> • Create an CFTRECV.<br/> Runtime<br/> • The second partner receives the file.<br/> • Check the catalog, there should be get one entry for this partner.<br/> <br/>  |
 
 
-View an example
-
+**View an example**
 ```
 /\*SENDER\*/
 CFTPART
@@ -510,8 +503,7 @@ More information...
 | Configuration<br/> • Create a first partner.<br/> • Create a second partner.<br/> • Create a collect list containing both NEW YORK and PHOENIX.<br/> • Create a CFTRECV.<br/> Runtime<br/> • Using a single command, receive a file from both (all) partners using the defined collect list.<br/> • Both files are received from both partners at the same time<br/> • Check the catalog. You should have 3 entries in the catalog, one generic entry and one entry per partner. | Configuration<br/> • Create this partner.<br/> • Create an CFTSEND.<br/> Runtime<br/> • This partner makes a file available for the client SEND state=HOLD.<br/> • The first partner sends the file.<br/> • Check the catalog, there should be one entry. | Configuration<br/> • Create a this partner.<br/> • Create an CFTSEND.<br/> Runtime<br/> • This partner makes a file available for the client SEND state=HOLD.<br/> • The second partner sends the file.<br/> • Check the catalog, there should be one entry. |
 
 
-View an example
-
+**View an example**
 ```
 **/\*RECEIVER\*/**
 CFTPART

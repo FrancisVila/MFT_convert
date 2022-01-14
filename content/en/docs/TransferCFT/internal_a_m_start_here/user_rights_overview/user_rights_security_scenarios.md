@@ -183,7 +183,7 @@ Help desk alone cannot monitor Transfer CFT through Central Governance if they 
 
 - Monitor: YES, through either Central Governance or Copilot
 - Transfer: NO
-- Connect to Transfer CFT UI:
+- Connect to Transfer CFT UI: NO
 - Modify configuration: YES
 - Start/stop Transfer CFT: YES
 
@@ -222,7 +222,7 @@ This example describes how to add an additional user rights security restriction
 - When am.passport.userctrl.check\_permissions\_on\_transfer\_execution=no, the default value, this user, who defined on the Machine1, can use CFTUTIL to perform a transfer even though not known on {{< TransferCFT/centralgovernancename >}}.
 - When am.passport.userctrl.check\_permissions\_on\_transfer\_execution=yes, this same user cannot perform transfers as he is not defined in {{< TransferCFT/centralgovernancename >}}.
 
-Related topics
+**Related topics**
 
 - [About system users](../)
 - [Recommendations and troubleshooting](../user_rights_tips)

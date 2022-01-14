@@ -57,17 +57,17 @@ You must define the OpenMVS (OMVS) segment for each user if they need to access 
 
 When performing an SMP/E installation, the user performing the installation requires READ access on the RACF CSFSERV CLASS. If the SMP/E CFT JCL "$C10RECV" executes in error,  the user does not have the correct access rights and the following message displays:
 
-GIM43501S \*\* THE CALL TO THE CSNBOWH SERVICE FAILED WHEN PROCESSING xxxx.SMPMCS.pax.Z. THE RETURN CODE WAS '00000008'X AND THE REASON CODE WAS '00003E80'X.
+`GIM43501S ** THE CALL TO THE CSNBOWH SERVICE FAILED WHEN PROCESSING xxxx.SMPMCS.pax.Z. THE RETURN CODE WAS '00000008'X AND THE REASON CODE WAS '00003E80'X.`
 
 ## TSO requirement
 
 Check that the user that starts Copilot and Transfer CFT has a TSO segment in their profile.
 
-TSO version
+**TSO version**
 
 The user ID for the user that starts Copilot and Transfer CFT has a 7-characters maximum when using z/OS 2.2 or lower. Therefore, a user with an 8-character user ID cannot use TSO with a z/OS version lower than v2.3.
 
-Related topics
+**Related topics**
 
 - [About Transfer CFT z/OS](../)
 - [Installation overview]()

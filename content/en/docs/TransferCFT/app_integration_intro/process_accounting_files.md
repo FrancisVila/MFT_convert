@@ -49,16 +49,14 @@ Perform the following steps if you are running on a z/OS system.
 
 ### UNIX, HP NonStop, and IBM i (IFS) example
 
-Syntax
-
+**Syntax**
 ```
 EXACCT <install_dir>/runtime/accnt/cftaccnt
 ```
 
 ### Windows example
 
-Syntax
-
+**Syntax**
 ```
 EXACCT <install_dir>\\home\\distrib\\template\\src\\exit
 ```

@@ -42,38 +42,21 @@ To generate the sample CFTEXITF application, proceed as follows:
 1. Access the *&lt;installdir>/runtime/src/exit/* directory.
 1. Enter the command:
 
-     **make
--f mk\_cftexitf**
+`     make   -f mk_cftexitf`
 
 ## Testing the exit
 
 1. Access the *&lt;installdir>/runtime/conf/* directory.
-
 1. Generate the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> internal datafiles
-    using the *cftinit* utility with the configuration file:
-
-    cftinit <span class="bold_in_para">cft-tcp.conf</span>
-
+    using the *cftinit* utility with the configuration file:`cftinit cft-tcp.conf`
 1. When the *cftinit complete*
-    message is displayed, run <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> using the cftstart utility:
-
-    cftstart
-
+    message is displayed, run <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> using the cftstart utility:`cftstart`
 1. When the *CFTMAIN process
-    ID is xxxxx* message is displayed, run a transfer using the command:
-
-    CFTUTIL send part=BOSTON, idf=fic1
-
+    ID is xxxxx* message is displayed, run a transfer using the command:`CFTUTIL send part=BOSTON, idf=fic1`
 1. After a few seconds, you can
-    check the transfer state by entering the following command. If the transfers have not terminated, repeat the *cftcatab* command.
-
-    cftcatab  
-
+    check the transfer state by entering the following command. If the transfers have not terminated, repeat the *cftcatab* command.`cftcatab`
 1. Stop <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> using the *cftstop*
-    utility:
-
-    cftstop
-
+    utility:`cftstop`
 1. Examine the contents of the
     *cft\_log. sav* file in the *&lt;installdir>/runtime/log/* directory and locate the
     messages inserted by the EXIT.  

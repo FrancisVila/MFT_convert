@@ -38,8 +38,8 @@ Numbers Authority).
 
 **<span id="CFTPART_SAP___Parameter_values"></span>CFTPART**
 
-\[SAP
-= (string, string, string, ...) \]
+**\[SAP
+= (string, string, string, ...) \]**
 
 Values of the remote SAPs (service
 access points) associated with each of the protocols defined by the PROT
@@ -63,7 +63,7 @@ The value
 of this parameter is specific to each data exchange protocol, and to each
 system, as applicable, as specified in the table below.
 
-CFTPART SAP - Parameter values
+**CFTPART SAP - Parameter values**
 
 
 | Access method  | Size in characters<br/> (alphanumeric) | Definition and comments  |

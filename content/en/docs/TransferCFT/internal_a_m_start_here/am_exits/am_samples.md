@@ -51,7 +51,7 @@ Where:
 | &lt;policy&gt;  | ACCEPT: accept the actions on the resource<br /> REFUSE: refuse the actions on the resource  |
 
 
-Examples
+**Examples**
 
 All available actions on the resource “CONFIGURATION:CFTPARM”:
 
@@ -110,7 +110,7 @@ UA APPLICATION user05
 
 You can find some roles defined in &lt;CFTDIRRUNTIME>/conf/exam.csv.
 
-Predefined roles
+**Predefined roles**
 
 
 | Role  | Description  |
@@ -126,11 +126,11 @@ The resources and available actions for {{< TransferCFT/componentshortname  >}} 
 
 After installing {{< TransferCFT/componentshortname  >}}, access the CSD file:
 
-&lt;Transfer CFT install directory>/distrib/am/csd\_Transfer\_CFT.xml
+`<Transfer CFT install directory>/distrib/am/csd_Transfer_CFT.xml`
 
 For more information, refer to the PassPort AM CSD.
 
-Related topics
+**Related topics**
 
 [About Access Management exits](../)
 

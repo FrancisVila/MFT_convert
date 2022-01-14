@@ -8,7 +8,7 @@
 
 #### CFTSEND, SEND
 
-\[SELFNAME = *filename*\]  
+\[SELFNAME = *filename*\]  {string512}
 
 Name of a file that contains a list
 of files selected for sending, where all of the files must be contained in the same folder.

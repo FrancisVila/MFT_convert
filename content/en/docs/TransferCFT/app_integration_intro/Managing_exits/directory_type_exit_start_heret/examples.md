@@ -30,106 +30,37 @@ Requester mode, if the partner is:
 
 #### Example
 
-/\* CFTPARM Card \*/  
-  
-cftparm     id     =    
-parm0          ,  
-     part = local          ,  
-     npart = local          ,  
-     prot = (odette,psithd,psithe)          ,  
-     .  
-     .  
-     .  
-     mode = replace  
-  
-/\* CFTPROT Cards \*/  
-  
-cftprot   id
-= psithd
-
-          type
-= pesit
-
-          prof
-= extern
-
-       
-
-          sap
-= 17501
-
-          net
-= net0
-
-          dynam
-= dynptn
-
-          exita
-= exa
-
-          mode
-= replace
-
- 
-
-cftprot   id
-= odette
-
-          type
-= odette
-
-          sap
-= 17502
-
- 
-
-          net
-= net0
-
-          mode
-= replace
-
- 
-
-cftprot   id
-= psithe
-
-          type
-= pesit
-
-          prof
-= any
-
-       
-
-          sap
-= 17503
-
-          net
-= net0
-
-          exita
-= exa
-
-          mode
-= replace
-
- 
-
-cftexit ..id = exa
-
-          parm
-= sample
-
-          language
-= C
-
-          prog
-= cftexia
-
-          type
-= access
-
+`/* CFTPARM Card */cftparm     id     =       parm0          ,     part = local          ,     npart = local          ,     prot = (odette,psithd,psithe)          ,     .     .     .     mode = replace/* CFTPROT Cards */cftprot   id   = psithd`
+`          type   = pesit`
+`          prof   = extern`
+`       `
+`          sap   = 17501`
+`          net   = net0`
+`          dynam   = dynptn`
+`          exita   = exa`
+`          mode   = replace`
+` `
+`cftprot   id   = odette`
+`          type   = odette`
+`          sap   = 17502`
+` `
+`          net   = net0`
+`          mode   = replace`
+` `
+`cftprot   id   = psithe`
+`          type   = pesit`
+`          prof   = any`
+`       `
+`          sap   = 17503`
+`          net   = net0`
+`          exita   = exa`
+`          mode   = replace`
+` `
+`cftexit ..id = exa`
+`          parm   = sample`
+`          language   = C`
+`          prog   = cftexia`
+`          type   = access`
 <span id="User_program_in_C"></span>
 
 ## User program in C

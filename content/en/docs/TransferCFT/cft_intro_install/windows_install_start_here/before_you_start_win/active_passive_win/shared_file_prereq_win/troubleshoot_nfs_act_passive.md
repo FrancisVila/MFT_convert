@@ -2,13 +2,13 @@
     "title": "Troubleshoot active passive file systems",
     "linkTitle": "Troubleshoot NFS option",
     "weight": "240"
-}Problem
+}**Problem**
 
 Deploying flows from {{< TransferCFT/centralgovernancename  >}} to {{< TransferCFT/transfercftname  >}} in an active/passive cluster fails with "Read timed out" error even though there are no connectivity issues.
 
-Error in the opnode.log file:
+**Error in the opnode.log file:**
 
-ERROR Error while setting the configuration for product Transfer CFT - CIB\_37810\_GCS\_GL : An error occurred while deploying the configuration: Could not parse webservices response from Transfer CFT. Problem: Read timed out
+`ERROR Error while setting the configuration for product Transfer CFT - CIB_37810_GCS_GL : An error occurred while deploying the configuration: Could not parse webservices response from Transfer CFT. Problem: Read timed out`
 
 `com.axway.cmp.admin.api.v2.ProductException: Error while setting the configuration for product Transfer CFT - CIB_37810_GCS_GL : An error occurred while deploying the configuration: Could not parse webservices response from Transfer CFT. Problem: Read timed out`
 

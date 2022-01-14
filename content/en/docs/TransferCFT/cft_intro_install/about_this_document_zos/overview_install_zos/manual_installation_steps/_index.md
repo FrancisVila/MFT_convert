@@ -63,7 +63,7 @@ After performing Steps 1 -4, you can either continue with the following step-by-
 
 To manually install, you can run the following JOBs.
 
-<span id="JOB B20LINK LINK-EDIT Transfer CFT "></span><span id="kanchor10"></span>
+<span id="JOB B20LINK LINK-EDIT Transfer CFT "></span><span id="kanchor9"></span>
 
 ## LINK-EDIT Transfer CFT using JOB B20LINK
 
@@ -107,7 +107,7 @@ The CFTMAIN/CFTMA31 programs are copied in an authorized APF library for the cas
 
 ## 
 
-<span id="COPA010 Setting up the CFT Navigator server files in USS "></span><span id="kanchor11"></span>
+<span id="COPA010 Setting up the CFT Navigator server files in USS "></span><span id="kanchor10"></span>
 
 ## Set up Copilot server files in USS using COPA010
 
@@ -140,8 +140,7 @@ You can use the JCL COPA010 to set up the Transfer CFT Copilot files in USS.
 Mounted on Filesystem Avail/Total Files Status
 /home/AXWAY (xxxxxx.yyyyy.HFSAXWAY) 235680/1872000 4294927912 Available
 ```
-
-Related topics
+**Related topics**
 
 - [Create a Transfer CFT instance](../distribution_environment_installation/t_install_instance_envr_zos)
 - [Customize the JCL installation files](../installation_parameters_to_customize)

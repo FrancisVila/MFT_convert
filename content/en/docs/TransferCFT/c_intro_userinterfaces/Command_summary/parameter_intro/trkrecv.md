@@ -8,8 +8,8 @@
 
 #### CFTPARM
 
-**\[TRKRECV = {**
-**|** **ALL | NO | SUMMARY }\]**
+**\[TRKRECV = {** **UNDEFINED
+|** **ALL | NO | SUMMARY }\]**
 
 Specifications concerning transfers via CFTRECV for which the [trk](../trk)
 value is not defined.

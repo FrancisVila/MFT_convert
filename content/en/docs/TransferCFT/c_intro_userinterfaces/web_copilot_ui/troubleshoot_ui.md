@@ -2,13 +2,13 @@
     "title": "Troubleshoot the user interface",
     "linkTitle": "Troubleshoot the user interface",
     "weight": "190"
-}The Copilot server is running, but cannot connect to the user interface
+}**The Copilot server is running, but cannot connect to the user interface**
 
 After a successful installation you can start the Transfer CFT Copilot server, but cannot connect to the user interface. Check the following:
 
 Check task manage and verify that the copilot "copxxx" processes are running (as shown below on a Windows platform). For example, Coprestw.\* must be running.
 
-![]($1)
+![](/Images/TransferCFT/copui_process.png)
 
 In the Transfer CFT installation, access the `<install_directory>/runtime/run` folder &gt; and check the following files for errors or failed steps:
 
@@ -75,7 +75,7 @@ Check that the password is correct for the used certificate.
 
 Check the expiration date and replace as needed.
 
-Access management issue
+**Access management issue**
 
 A connection error message displays in the `$CFTDIRRUNTIME/run/copsmng.out` file:
 
@@ -90,21 +90,21 @@ To troubleshoot:
 
 If you are using a third party application such as SQLite Expert Personal and you perform, for example, a transaction on the CFTPARM database for a SQL request, the database and user interface may lock up.
 
-Begin Transaction option
+**Begin Transaction option**
 
-![](/Images/TransferCFT/sql1.png)
+**![](/Images/TransferCFT/sql1.png)**
 
 To unlock the database and correct related issues, you must either perform a **Rollback** or a **Commit** on the third party application.
 
-Rollback option
+**Rollback option**
 
-![](/Images/TransferCFT/sql2.png)
+**![](/Images/TransferCFT/sql2.png)**
 
-Commit option
+**Commit option**
 
-![](/Images/TransferCFT/commit_sqlite.png)
+**![](/Images/TransferCFT/commit_sqlite.png)**
 
-Other issues
+**Other issues**
 
 If the sends an **404 not found** reply when connecting to the URL, please check that the `cftui `alias parameters are set in UCONF as follows:
 

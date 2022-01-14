@@ -9,7 +9,7 @@
 #### CFTPROT
 
 **\[RTO =
-{<u>260</u> | n}\]**
+{<u>260</u> | n}\]** {0..3600}
 
 Network monitoring timeout (expressed in seconds) excluding the protocol
 connection/disconnection/break phase.

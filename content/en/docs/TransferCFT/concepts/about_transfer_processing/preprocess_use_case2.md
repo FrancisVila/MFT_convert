@@ -33,11 +33,9 @@ This use case demonstrates how to replace a variable in a file, and then zip the
     fi
     ```
 
-1. Execute the following command, where `preexec `points to your script:
+1. Execute the following command, where `preexec `points to your script:`CFTUTIL send part=paris,idf=test,fname=$CFTDIRRUNTIME/Hello,preexec=$CFTDIRRUNTIME/myexec.sh`
 
-    CFTUTIL send part=paris,idf=test,fname=$CFTDIRRUNTIME/Hello,preexec=$CFTDIRRUNTIME/myexec.sh
-
-Results
+**Results**
 
 The script replaces ` _user_` in the **Hello** file with the PARTNER name, and then compress this modified file. At the end of the preprocessing , the tar file is sent to the partner. The partner can set an exec for this idf, `test `in our example, that will untar the received file.
 

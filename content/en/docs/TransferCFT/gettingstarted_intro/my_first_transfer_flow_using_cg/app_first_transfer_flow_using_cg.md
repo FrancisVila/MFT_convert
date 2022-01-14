@@ -12,9 +12,9 @@ In this section you create three applications in to represent the `MainOffice`, 
 
 Select **Products** on the top toolbar to open the **Product List** page.
 
-![]($1)
+![](/Images/TransferCFT/gettingstarted1.png)
 
-Copy the host name for each of the three Transfer CFTs that you will use in these exercises, for example copy them into a table as shown here.
+**Copy the host name for each of the three Transfer CFTs that you will use in these exercises, for example copy them into a table as shown here.**
 
 
 | Transfer CFT  | Host  | Application name  |
@@ -29,10 +29,10 @@ Copy the host name for each of the three Transfer CFTs that you will use in thes
 #### In
 
 1. Select **Applications** on the top toolbar.  
-    ![]($1)
+    ![](/Images/TransferCFT/gettingstarted2.png)
 1. Click **Add application**, and complete the Name and Host name fields using the values that you copied from the **Products** page. You can leave other values set to the default.
 1. Click **Save application**.
 
-Results:
+**Results: Your **Application List** page should resemble the following diagram.**
 
-![$2]($1)
+![Application list in Central Governance showing 3 example applications to use in flows](/Images/TransferCFT/application_list_complete.png)

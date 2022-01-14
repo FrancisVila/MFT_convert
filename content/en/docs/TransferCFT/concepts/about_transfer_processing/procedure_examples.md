@@ -20,7 +20,7 @@ correct transmission by the END command.
 The name of the procedure to be activated is determined by the value
 of the EXECSF parameter of CFTPARM.
 
-Example
+**Example**
 
 If the IDF of the file sent is PAY and if EXECSF = SF&IDF.CMD, the
 name of the file associated with this procedure is:
@@ -55,7 +55,7 @@ identifier (IDF) PAY.
 The name of the procedure to be activated is determined by the value
 of the EXECRF parameter of CFTPARM.
 
-Example
+**Example**
 
 If EXECRF = RF&IDF.CMD, the name of the file associated with this
 procedure is: RFPAY.CMD.
@@ -112,7 +112,7 @@ PAY.
 The name of the procedure to be activated is determined by the value
 of the EXECRF parameter of CFTPARM.
 
-Example
+**Example**
 
 If EXECRF = RM&IDF.CMD, the name of the file associated with this
 procedure is: RMPAY.CMD.

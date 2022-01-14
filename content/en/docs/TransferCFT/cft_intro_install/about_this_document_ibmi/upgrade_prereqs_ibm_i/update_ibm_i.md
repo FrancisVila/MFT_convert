@@ -8,8 +8,7 @@
 
 Use the `CFTUTIL ABOUT` command to display the product information, including the service pack number and patch number.
 
-**Results**
-
+****Results****
 ```
 CFT information :
 \* product = CFT/OS400

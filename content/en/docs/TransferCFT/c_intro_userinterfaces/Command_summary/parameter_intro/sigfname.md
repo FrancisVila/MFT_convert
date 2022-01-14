@@ -4,7 +4,7 @@
     "weight": "3190"
 }### sigfname
 
-\[ SIGFNAME = { string }\]
+**\[ SIGFNAME = { string }\]**
 
 #### CFTPROT
 

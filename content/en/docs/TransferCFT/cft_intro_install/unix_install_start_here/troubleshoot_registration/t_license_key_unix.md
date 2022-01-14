@@ -35,7 +35,7 @@ Normally you enter the key that you received from the Axway Fulfillment team dur
 
 ### Multi-node keys
 
-Transfer CFT 3.3.2 SP2 and higher
+**Transfer CFT 3.3.2 SP2 and higher**
 
 Transfer CFT allows you to use a single key for a multi-node installation. To use a single key for multiple hosts, either:
 
@@ -46,7 +46,7 @@ Additionally, the key must have the cluster option.
 
 For example, if you have 2 hosts and 4 nodes, you only need one key that matches one hostname (or no defined hostname).
 
-Transfer CFT prior to 3.3.2 SP2
+**Transfer CFT prior to 3.3.2 SP2**
 
 If you are using a Transfer CFT 3.3.2 prior to SP2, multi-node architecture requires:
 

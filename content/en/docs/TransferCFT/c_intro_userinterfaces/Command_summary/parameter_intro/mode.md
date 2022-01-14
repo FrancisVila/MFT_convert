@@ -6,7 +6,7 @@
 
 ### mode
 
-#### All {{< TransferCFT/componentshortname  >}} commands
+#### All {{< TransferCFT/componentshortname  >}} commands  
 
 \[MODE = { <u>REPLACE</u> | CREATE | DELETE }\]
 
@@ -14,6 +14,7 @@ Action to do in the parameter or partner database. This parameter applies
 to all commands that affect {{< TransferCFT/componentshortname  >}} databases. Possible values:
 
 - REPLACE
+    (Default value)
 - CREATE
 - DELETE
 
@@ -77,6 +78,7 @@ The CFTPART command’s STATE parameter is set to:
 Action to do in the PKI database. Possible values:
 
 - REPLACE
+    (Default)
 - CREATE
 - DELETE
 

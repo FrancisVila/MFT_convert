@@ -46,7 +46,7 @@ CONFIG TYPE=COM, MEDIACOM=TCPIP, FNAME=protocol://host:port, PASSWORD=password
 
 The username/password is then checked for each subsequent request. The username used for the authentication is the user that is currently logged in. api sample
 
-Related topics
+**Related topics**
 
 - [Command summary](../../command_summary)
 - [PassPort AM](../../../internal_a_m_start_here/about_passport_am)

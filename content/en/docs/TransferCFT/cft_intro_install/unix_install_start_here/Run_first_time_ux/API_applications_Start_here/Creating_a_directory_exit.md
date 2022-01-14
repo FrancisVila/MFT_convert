@@ -107,8 +107,7 @@ To generate the sample CFTEXITA application, proceed as follows.
 1. Access the *&lt;installdir>/runtime/src/exit/* directory.
 1. Enter the command:
 
-    
-**make -f mk\_cftexita**
+`       make -f mk_cftexita`
 
 ## Running the test
 
@@ -138,11 +137,11 @@ To generate the sample CFTEXITA application, proceed as follows.
     check the transfer state by entering the  
     command:
 
-cftcatab
+`cftcatab`
 
 The transfer fails because the password is invalid, even though NRPART02
 is defined in the DIRECTORY EXIT.
 
 1. Stop <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>:
 
-cftstop
+`cftstop`

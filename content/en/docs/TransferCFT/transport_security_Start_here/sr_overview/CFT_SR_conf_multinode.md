@@ -38,14 +38,13 @@ After completing installation, configure the Router Agents in the {{< TransferCF
 1. You can use the default values for most fields, but you must customize the` secure_relay.ra.0.dmz` parameter. This value must be unique; for example, you can increment the DMZ0 value by one for each Router Agent so that the  second Router Agent has the value` secure_relay.ra.0.dmz = DMZ1`.
 1. Configure the host address for each Secure Relay host using `secure_relay.ra.0.host`.
 
-Example of two Router Agent definitions
-
+**Example of two Router Agent definitions**
 ```
 secure_relay.ra = 2
  
 secure_relay.ra.0.enable = yes
-secure_relay.ra.0.dmz =
-secure_relay.ra.0.host =
+secure_relay.ra.0.dmz = DMZ0
+secure_relay.ra.0.host = @hostF
 secure_relay.ra.0.admin_port = 6810
 secure_relay.ra.0.comm_port = 6811
 secure_relay.ra.0.nb_data_connections = 5
@@ -53,8 +52,8 @@ secure_relay.ra.0.data_channel_ciphering = No
 secure_relay.ra.0.outcall_network_interface =
  
 secure_relay.ra.1.enable = Yes
-secure_relay.ra.1.dmz =
-secure_relay.ra.1.host =
+secure_relay.ra.1.dmz = DMZ1
+secure_relay.ra.1.host = @hostG
 secure_relay.ra.1.admin_port = 6810
 secure_relay.ra.1.comm_port = 6811
 secure_relay.ra.1.nb_data_connections = 5
@@ -129,7 +128,7 @@ If a multi-node {{< TransferCFT/componentlongname  >}} has 4 nodes and the setti
     -   SSLTERM: Set this Boolean to YES to enable SSL termination.
 1. If there are existing CFTNET object(s), the class parameter must be different.
 
-Example
+**Example**
 
 As no connection dispatcher is used with Secure Relay, the SAP configured in the CFTPROT for SecureRelay is also incremented by the node number.
 
@@ -156,7 +155,7 @@ This section describes the CFTPROT object, and how various parameters are relate
 
 - CFTPROT is related to the CFTNET object through the NET parameter.
 - The SAP parameter is the listening port that is used on the RA side (using the CFTNET HOST parameter as the network interface).  
-    This value automatically increments by one per node, where the range is . Therefore, be certain that you do not use the ports in this range for another protocol.
+    This value automatically increments by one per node, where the range is &lt;number of nodes>-1. Therefore, be certain that you do not use the ports in this range for another protocol.
 
 **Example**
 
@@ -178,7 +177,7 @@ When a partner object refers to a CFTPROT object and a CFTNET object that use Se
 
 So to complete the configuration, create a CFTPART and a CFTTCP. In this way, the CFTPART refers to the CFTPROT object, and that in turn refers to a CFTNET, which points to Secure Relay.
 
-Example
+**Example**
 
 This is an example of the CFTPART and CFTTCP object configuration.
 
@@ -219,6 +218,6 @@ listen cft LB:1555
 
 The following diagrams are examples of high availability with multiple Router Agents.
 
-![]($1)
+![](/Images/TransferCFT/sec_relay_multi_RA.png)
 
-![]($1)
+![](/Images/TransferCFT/sr_add_node.png)
