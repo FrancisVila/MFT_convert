@@ -55,7 +55,7 @@ used in FNAME except in the case of an implicit SEND command.
 The ‘&’ character used here replaces the char\_symb character specific
 to each operating system .
 
-Refer to the {{< TransferCFT/componentshortname  >}} *Installation and Operations Guide* that
+Refer to the Transfer CFT{{< TransferCFT/componentshortname  >}} *Installation and Operations Guide* that
 corresponds to your OS.
 
 ### Reconstitute a filename
@@ -94,7 +94,7 @@ as shown in the following table.
 - n and the FNAMEABS parameter must be set to YES. A GDG file is rotated
 at the end of the job.
 
-**z/OS**
+****z/OS****
 
 Example of a file with versions. The notation of the version of the file in the SEND stage is
 the same as the last notation used in the JCL.
@@ -137,7 +137,7 @@ the name of a selected file.
 This section
 provides an example of sending a group of files based on a selection.
 
-Where, `FNAME={#mask | #dirname}`
+Where, FNAME={#mask | #dirname}
 
 The name specified can be a generic file name or a directory name.
 

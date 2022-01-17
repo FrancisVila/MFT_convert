@@ -14,7 +14,7 @@ Earlier versions of Transfer CFT used a different message format than version 3.
 
 CFTLOG FORMAT=\[V23,V24\]
 
-For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
+For V23: CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
@@ -22,7 +22,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH01E"></span>CFTH01E PART=&amp;part Context area allocation failure CS=&amp;scs<br/> CFTH01E Context area allocation failure &lt;PART=&amp;part CS=&amp;cs&gt; |
 | --- | --- |
 | Explanation | Cannot allocate the working area necessary for the transfer. |
-| Consequence | In REQUESTER mode, the transfer is refused with a {{< TransferCFT/componentshortname  >}} 122 diagnostic code and a MALLOC protocol diagnostic message.<br/> In SERVER mode, the incoming call is rejected. In this case, as the partner's name is not known, the value UNKNOWN is displayed. |
+| Consequence | In REQUESTER mode, the transfer is refused with a Transfer CFT{{< TransferCFT/componentshortname  >}} 122 diagnostic code and a MALLOC protocol diagnostic message.<br/> In SERVER mode, the incoming call is rejected. In this case, as the partner's name is not known, the value UNKNOWN is displayed. |
 
 
  
@@ -31,7 +31,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH02E"></span>CFTH02E PART=&amp;part TFIL Exchange buffer allocation failure CS=&amp;scs<br/> CFTH02E TFIL Exchange buffer allocation failure &lt;PART=&amp;part CS=&amp;cs&gt; |
 | --- | --- |
 | Explanation | Cannot allocate the working area required to exchange information between the PROTOCOL task and the FILE task. |
-| Consequence | In REQUESTER mode, the transfer is refused with a {{< TransferCFT/componentshortname  >}} 122 code and a MALLOC protocol diagnostic message.<br/> In SERVER mode, the incoming call is rejected. In this case, as the partner's name is not known, the value UNKNOWN is displayed. |
+| Consequence | In REQUESTER mode, the transfer is refused with a Transfer CFT{{< TransferCFT/componentshortname  >}} 122 code and a MALLOC protocol diagnostic message.<br/> In SERVER mode, the incoming call is rejected. In this case, as the partner's name is not known, the value UNKNOWN is displayed. |
 
 
  
@@ -40,7 +40,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH03E"></span>CFTH03E PART=&amp;part Error sending data on network NCR=&amp;ncr NCS=&amp;ncs NET=&amp;net<br/> CFTH03E Error sending data on network &lt;PART=&amp;part NCR=&amp;ncr NCS=&amp;cs NET=&amp;net&gt; |
 | --- | --- |
 | Explanation | Cannot send a message on the network. |
-| Consequence | The transfer is interrupted with a {{< TransferCFT/componentshortname  >}} 302 code and a protocol diagnostic message indicating the specific error code of the error that occurred during the send request. This code is expressed in hexadecimal. |
+| Consequence | The transfer is interrupted with a Transfer CFT{{< TransferCFT/componentshortname  >}} 302 code and a protocol diagnostic message indicating the specific error code of the error that occurred during the send request. This code is expressed in hexadecimal. |
 
 
  
@@ -74,7 +74,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH07E"></span>CFTH07E PART=&amp;part TFIL task Synchronization error CR=&amp;cr CS=&amp;scs<br/> CFTH07E TFIL task Synchronization error &lt;PART=&amp;part CR= &amp;cr CS=&amp;cs&gt; |
 | --- | --- |
-| Explanation | Problem encountered when sending a {{< TransferCFT/componentshortname  >}} internal message to the FILE task. |
+| Explanation | Problem encountered when sending a Transfer CFT{{< TransferCFT/componentshortname  >}} internal message to the FILE task. |
 | Consequence | The transfer is aborted by the protocol task (network disconnection). However, as the FILE task is not protected by a time-out, the request remains in the C status in the catalog. |
 
 
@@ -92,7 +92,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH09E"></span>CFTH09E PART=&amp;part Network connect request local error NCR=&amp;ncr NCS=&amp;ncs<br/> CFTH09E Network connect request local error &lt;PART=&amp;part NCR=&amp;ncr NCS=&amp;cs NET=&amp;net&gt; |
 | --- | --- |
-| Explanation | Cannot make an outgoing connection request on the network. For a general -6 code (maximum number of connections reached on the resource), the transfer is refused with a {{< TransferCFT/componentshortname  >}} 416 diagnostic code and a MAXCNX protocol diagnostic message.<br/> The transfer will be retried (minimum time-out equal to the WSCAN parameter of the CFTCAT command), without incrementing the retry counter. |
+| Explanation | Cannot make an outgoing connection request on the network. For a general -6 code (maximum number of connections reached on the resource), the transfer is refused with a Transfer CFT{{< TransferCFT/componentshortname  >}} 416 diagnostic code and a MAXCNX protocol diagnostic message.<br/> The transfer will be retried (minimum time-out equal to the WSCAN parameter of the CFTCAT command), without incrementing the retry counter. |
 
 
  
@@ -110,7 +110,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH11E"></span>CFTH11E PART=&amp;part Error Opening session EV=&amp;pevent ST=&amp;pstate<br/> CFTH11E Error Opening session &lt;PART=&amp;part EV=&amp;pevent ST=&amp;pstate&gt; |
 | --- | --- |
 | Explanation | Problem opening a PeSIT session with a remote partner after establishing the network session. |
-| Consequence | The transfer is aborted with a {{< TransferCFT/componentshortname  >}} 451 diagnostic code. |
+| Consequence | The transfer is aborted with a Transfer CFT{{< TransferCFT/componentshortname  >}} 451 diagnostic code. |
 
 
  
@@ -198,7 +198,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH21E"></span>CFTH21E PART=&amp;part MAIN task Synchronization error CR=&amp;cr CS=&amp;scs<br/> CFTH21E MAIN task Synchronization error &lt;PART=&amp;part CR= &amp;cr CS=&amp;cs&gt; |
 | --- | --- |
-| Explanation | {{< TransferCFT/componentshortname  >}} internal synchronization error. |
+| Explanation | Transfer CFT{{< TransferCFT/componentshortname  >}} internal synchronization error. |
 
 
  
@@ -206,7 +206,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH22E"></span>CFTH22E PART=&amp;part rejected DIAGI=&amp;diagi &lt;HOST=&amp;addr&gt;<br/> CFTH22E NPART=&amp;part rejected DIAGI=&amp;diagi &lt;HOST=&amp;pstate&gt; |
 | --- | --- |
-| Explanation | Where:<br/> • addr: The caller's IP address<br/> {{< TransferCFT/componentshortname  >}} refuses to open a protocol session following a request to do so from a partner.<br/> The message displays the {{< TransferCFT/componentshortname  >}} diagnostic code. |
+| Explanation | Where:<br/> • addr: The caller's IP address<br/> Transfer CFT{{< TransferCFT/componentshortname  >}} refuses to open a protocol session following a request to do so from a partner.<br/> The message displays the Transfer CFT{{< TransferCFT/componentshortname  >}} diagnostic code. |
 | Consequence | The transfer is aborted. No trace of this attempt appears in the catalog. |
 
 
@@ -215,7 +215,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH23E"></span>CFTH23E NPART=&amp;part rejected EVENT=&amp;pevent<br/> CFTH23E PART=&amp;part rejected EVENT=&amp;pevent |
 | --- | --- |
-| Explanation | {{< TransferCFT/componentshortname  >}} refuses to open a protocol session for internal reasons, following a request to do so from a partner. The event which caused this rejection is displayed in the message. |
+| Explanation | Transfer CFT{{< TransferCFT/componentshortname  >}} refuses to open a protocol session for internal reasons, following a request to do so from a partner. The event which caused this rejection is displayed in the message. |
 | Consequence | The transfer is aborted. No trace of this attempt appears in the catalog. |
 
 
@@ -252,7 +252,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH27E"></span>CFTH27E PART=&amp;part SYNC FPDU without synchronization<br/> CFTH27E SYNC FPDU without synchronization &lt;PART=&amp;part&gt; |
 | --- | --- |
 | Explanation | A synchronization FPDU was received unexpectedly as the Functional Synchronization Unit was not negotiated at the beginning of the session. |
-| Consequence | The transfer is aborted with a {{< TransferCFT/componentshortname  >}} 730 diagnostic code, a protocol violation. |
+| Consequence | The transfer is aborted with a Transfer CFT{{< TransferCFT/componentshortname  >}} 730 diagnostic code, a protocol violation. |
 
 
  
@@ -287,7 +287,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH31E"></span>CFTH31E PART=&amp;part Invalid AckTRANS.END FPDU &amp;str<br/> CFTH31E Invalid AckTRANS.END FPDU &lt;PART=&amp;part &amp;str&gt; |
 | --- | --- |
-| Explanation | The AckTRANSFER.END FPDU sent by the SERVER partner does not conform.<br/> The field "&amp;str" is an explicit character string:<br/> • Byte count mismatch n for n: The number of bytes transferred does not correspond to the {{< TransferCFT/componentshortname  >}}-maintained counter<br/> • Record count mismatch n for n: The number of records transferred does not correspond to the {{< TransferCFT/componentshortname  >}}-maintained counter<br/> • Mismatch between header and FPDU size: The FPDU length indicated in the header is not equal to the length of the FPDU received<br/> • Unknown FPDU: The number identifying the received FPDU is not referenced<br/> • Missing PI number n into FPDU: The PI is mandatory for this type of FPDU<br/> • Unknown PI number n into FPDU: The PI is unknown for this type of FPDU<br/> • PGI n in PGI into FPDU: The presence of a PGI embedded in another PGI is invalid<br/> • Invalid length n for PI n into FPDU: The length of the PI is invalid (less than minimum length or greater than maximum length) |
+| Explanation | The AckTRANSFER.END FPDU sent by the SERVER partner does not conform.<br/> The field "&amp;str" is an explicit character string:<br/> • Byte count mismatch n for n: The number of bytes transferred does not correspond to the Transfer CFT{{< TransferCFT/componentshortname  >}}-maintained counter<br/> • Record count mismatch n for n: The number of records transferred does not correspond to the Transfer CFT{{< TransferCFT/componentshortname  >}}-maintained counter<br/> • Mismatch between header and FPDU size: The FPDU length indicated in the header is not equal to the length of the FPDU received<br/> • Unknown FPDU: The number identifying the received FPDU is not referenced<br/> • Missing PI number n into FPDU: The PI is mandatory for this type of FPDU<br/> • Unknown PI number n into FPDU: The PI is unknown for this type of FPDU<br/> • PGI n in PGI into FPDU: The presence of a PGI embedded in another PGI is invalid<br/> • Invalid length n for PI n into FPDU: The length of the PI is invalid (less than minimum length or greater than maximum length) |
 | Consequence | Transfer aborted with DIAGI=220, DIAGP=ATE + PeSIT code. |
 
 
@@ -528,7 +528,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTH58I"></span>CFTH58I PART=&amp;part IDS=&amp;ids IDF=&amp;idf NIDT=&amp;idt transfer deselected T=&amp;n<br/> CFTH58I transfer deselected &lt;PART=&amp;part IDS=&amp;ids IDF=&amp;idf NIDT=&amp;idt T=&amp;n&gt; |
 | --- | --- |
-| Explanation | A transfer passed the deselection phase in the PeSIT session referred to by the IDS. The IDS is the reference for this particular session context.<br/> The T field indicates the armed time-out for the CFTPROT parameter:<br/> • disctd – requester mode,<br/> • discts – server mode |
+| Explanation | A transfer passed the deselection phase in the PeSIT session referred to by the IDS. The IDS is the reference for this particular session context.<br/> The T field indicates the armed time-out for the CFTPROT parameter:<br/> • disctd – requester mode, or<br/> • discts – server mode |
 
 
  
@@ -584,7 +584,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTH65I"></span>CFTH65I PART=&amp;part IDS=&amp;ids PESIT DMZ permanent session control call=&amp;n<br/> CFTH65I PESIT DMZ permanent session control call=&amp;n &lt;PART=&amp;part IDS=&amp;ids &gt; |
 | --- | --- |
-| Explanation | Support for permanent links in DMZ.<br/> {{< TransferCFT/componentshortname  >}} in DMZ does not give the TURN when there are no more files to send, but sends an FPDU Control Call to the initiator {{< TransferCFT/componentshortname  >}} at regular negotiated intervals to prevent the temporization from expiring.<br/> • &amp;ids = Session call id<br/> • &amp;call = interval for the DMZ control call |
+| Explanation | Support for permanent links in DMZ.<br/> Transfer CFT{{< TransferCFT/componentshortname  >}} in DMZ does not give the TURN when there are no more files to send, but sends an FPDU Control Call to the initiator Transfer CFT{{< TransferCFT/componentshortname  >}} at regular negotiated intervals to prevent the temporization from expiring.<br/> • &amp;ids = Session call id<br/> • &amp;call = interval for the DMZ control call |
 
 
  

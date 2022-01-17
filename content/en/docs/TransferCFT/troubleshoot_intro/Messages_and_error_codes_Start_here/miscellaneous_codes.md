@@ -36,9 +36,9 @@ This code specifies a build error in the received PeSIT FPDU. It forms the "PDU 
 
 <span id="CFT_Numeric_codes___OFTP__ODETTE__protocol"></span>
 
-### {{< TransferCFT/componentshortname  >}} Numeric codes - OFTP (ODETTE) protocol
+### Transfer CFT{{< TransferCFT/componentshortname  >}} Numeric codes - OFTP (ODETTE) protocol
 
-These codes, specific to the ODETTE protocol and internal to the {{< TransferCFT/componentshortname  >}},
+These codes, specific to the ODETTE protocol and internal to the Transfer CFT{{< TransferCFT/componentshortname  >}},
 indicate the source of the failure. This code forms the DIAGP protocol diagnostic
 code. Values are expressed in hexadecimal.
 
@@ -58,7 +58,7 @@ code. Values are expressed in hexadecimal.
 | 0207 | Transfer DIRECTION negotiation. The value requested by the partner and the SRIN (or SROUT) parameter value are incompatible |
 | 0208 | PAD option negotiation (special logic). The partner requests "special logic" whilst the PAD parameter is set to "NO" (default value) |
 | 0250 | Restart position error. Reception of a restart request (SFID FPDU) but the "no restart" option has been previously negotiated |
-| 0301 | During the protocol recognition phase the {{< TransferCFT/componentshortname  >}} does not receive the expected string: "ODETTE FTP READY" |
+| 0301 | During the protocol recognition phase the Transfer CFT{{< TransferCFT/componentshortname  >}} does not receive the expected string: "ODETTE FTP READY" |
 | 0350 | The total length of "subrecords" forming the FPDU is different from the FPDU size specified in the SDATAIN field |
 | 0351 | Invalid size for subrecord sent |
 | 0401 | A restart is requested by the partner but the restart option is not set (RESYNC parameter) |
@@ -69,7 +69,7 @@ code. Values are expressed in hexadecimal.
 | 0601 | IDF incompatibility. The received NIDF value does not correspond to the IDF requested (RECV IDF=xxxx command).<br/> Note: the only valid value for the IDF parameter of the RECV request is "*" |
 | 0650 | Reception of a negative A_SELECT |
 | 0701 | Error during the file de-selection phase at the partner end |
-| 0750 | Internal monitor error: attempt to send a DATA FPDU but the "credit" has been completely spent and the {{< TransferCFT/componentshortname  >}} is waiting for a CDT FPDU |
+| 0750 | Internal monitor error: attempt to send a DATA FPDU but the "credit" has been completely spent and the Transfer CFT{{< TransferCFT/componentshortname  >}} is waiting for a CDT FPDU |
 | 0751 | Record size is greater than the size of the exchange buffer |
 | 0A00 | Local SSRM FPDU formatting error |
 | 0A02 | Local SSID FPDU formatting error |
@@ -91,9 +91,9 @@ code. Values are expressed in hexadecimal.
 
 <span id="CFT_Mnemonic_codes___Odette_protocol"></span>
 
-### {{< TransferCFT/componentshortname  >}} Mnemonic codes - ODETTE protocol
+### Transfer CFT{{< TransferCFT/componentshortname  >}} Mnemonic codes - ODETTE protocol
 
-These codes, specific to the ODETTE protocol and internal to the {{< TransferCFT/transfercftname  >}},
+These codes, specific to the ODETTE protocol and internal to the Transfer CFT{{< TransferCFT/transfercftname  >}},
 indicate the source of the fault.
 
 This code forms the "XXX HHHH"-type DIAGP protocol diagnostic

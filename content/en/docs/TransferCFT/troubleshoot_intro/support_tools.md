@@ -37,7 +37,7 @@ To submit a Support request, you can do the following:
 
 ## Using cft\_support
 
-The cft\_support tool collects all of the needed information from the customer's Transfer CFT installation environment, including the static configuration (PARM/PART), Unified Configuration parameters (UCONF), catalog information, communication media file status (CFTCOM), log files, execution environment (variables), disk space, and so on. This information is then packaged into a archive file called **cft-support-&lt;date>(.tar.gz|.zip)**.
+The cft\_support tool collects all of the needed information from the customer's Transfer CFT installation environment, including the static configuration (PARM/PART), Unified Configuration parameters (UCONF), catalog information, communication media file status (CFTCOM), log files, execution environment (variables), disk space, and so on. This information is then packaged into a archive file called ****cft-support-&lt;date>(.tar.gz|.zip)****.
 
 > **Note**
 >
@@ -49,34 +49,34 @@ From the Copilot UI, click the ![Debug command icon](/Images/TransferCFT/debug_a
 
 ### Using command line
 
-In command line, enter: `cft_support collect` `[options]`
+In command line, enter: cft\_support collect \[options\]
 
 Options:
 
 - --help: Display this help and exit.
-- --cat-filter: Filter the CFTUTIL LISTCAT output. See [LISTCAT](../../c_intro_userinterfaces/about_cftutil/monitoring_cftutil_intro/listcat_command), or enter `CFTUTIL HELP CMD=LISTCAT`, to view available parameters.
-- --cat-debug-filter: Filter the CFTUTIL LISTCAT CONTENT=DEBUG output. This option overrides `--cat-filter.`
+- --cat-filter: Filter the CFTUTIL LISTCAT output. See [LISTCAT](../../c_intro_userinterfaces/about_cftutil/monitoring_cftutil_intro/listcat_command), or enter CFTUTIL HELP CMD=LISTCAT, to view available parameters.
+- --cat-debug-filter: Filter the CFTUTIL LISTCAT CONTENT=DEBUG output. This option overrides --cat-filter.
 - --no-core-analysis-gdb: Do not use gdb to analyze the cores. *Unix only*
 - --no-core-analysis-dbx: Do not use dbx to analyze the cores. *Unix only*
 
-**Examples**
+****Examples****
 
 Only collect information for a given transfer:
 
 ```
-`cft_support collect --cat-filter="IDTU=A0000001"`
+cft_support collect --cat-filter="IDTU=A0000001"
 ```
 
 Collect information for all transfers in error for a given partner:
 
 ```
-`cft_support collect --cat-filter="DIAGI=ERROR, PART=PARIS"`
+cft_support collect --cat-filter="DIAGI=ERROR, PART=PARIS"
 ```
 
 Collect transfer information related to a given IDF for all transfers in a brief LISTCAT, and only those transfers in error in a debug LISTCAT:
 
 ```
-`cft_support collect --cat-filter="IDF=BIN" --cat-debug-filter="IDF=BIN, DIAGI=ERROR"`
+cft_support collect --cat-filter="IDF=BIN" --cat-debug-filter="IDF=BIN, DIAGI=ERROR"
 ```
 
 #### IBM i
@@ -88,9 +88,9 @@ Additionally, two options are available for CFTSUPPORT:
 - `CATFIL('IDTU=A0000001')`: Filters the CFTUTIL LISTCAT output.
 - `DBGCATFIL('IDTU=A0000002')`: Filters the CFTUTIL LISTCAT CONTENT=DEBUG output.
 
-**Example**
+****Example****
 
-`CFTSUPPORT IFSPATH('/home/cft/axway/cft/runtime/cftsupport')DBGCATFIL('IDTU=A0000002')`
+CFTSUPPORT IFSPATH('/home/cft/axway/cft/runtime/cftsupport')DBGCATFIL('IDTU=A0000002')
 
 > **Note**
 >

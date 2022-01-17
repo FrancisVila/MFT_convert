@@ -7,7 +7,7 @@
 - End-to-end SSL: The remote peer communicates with Transfer CFT via Secure Relay (RA) using end-to-end SSL.
 - SSL termination: The remote peer communicates with Secure Relay (RA) through an SSL channel. In this scenario, the handshake occurs between the remote peer and the Secure Relay RA. The RA retrieves the key and certificate stored in Transfer CFT through the Master Agent (MA) in order to complete the handshake.
 
-The communication between the Master Agent (MA) and {{< TransferCFT/componentlongname  >}} occurs over a plain-text channel.
+The communication between the Master Agent (MA) and Transfer CFT{{< TransferCFT/componentlongname  >}} occurs over a plain-text channel.
 
 End-to-end SSL compared with SSL termination
 
@@ -34,7 +34,8 @@ SSL termination in Secure Relay is possible using the internal PKI database. As 
     -   HOST: Designates the network interface that is used on the Router Agent side.
     -   SSLTERM: Set this Boolean to NO for end-to-end SSL.
 
-**Example**
+****Example****
+
 ```
 CFTNET id = NETSRSSL,
 
@@ -56,7 +57,7 @@ This section describes the CFTPROT object, and how various parameters are relate
 - The SAP parameter is the listening port that is used on the RA side (using the CFTNET HOST parameter as the network interface).
 - The CFTPROT SSL parameter refers to a CFTSSL object, in this case PESITSSL, which is used when Secure Relay performs SSL termination in server mode.
 
-**Example**
+****Example****
 
 This example uses a CFTNET object called NETSRSSL.
 
@@ -77,7 +78,7 @@ Create a CFTSSL object to supply detailed information to Secure Relay on how the
 - Secure Relay uses the CFTSSL parameters rootcid, usercid and its password, cipher suites list, SSL version and client authentication policy.
 - Secure relay uses a restricted list of cipher suites (cipher suites ‘59’, ‘60’ and ’61 are not supported).
 
-**Example**
+****Example****
 
 Here the CFTSSL object is used for incoming connections (direct=server).
 
@@ -116,7 +117,7 @@ SSL termination is also used for outgoing connections when the CFTNET object ass
 
 To complete the configuration, create a CFTPART object and a CFTTCP object. In this way the CFTPART refers to the CFTPROT object, and that in turn refers to a CFTNET, which points to Secure Relay. Remember that the only SSL version supported by Secure Relay is TLSV1COMP.
 
-**Example**
+****Example****
 
 This is an example of the CFTPART and CFTTCP objects configuration, using PESITSSL.
 
@@ -137,12 +138,12 @@ host = <remote_partner_host_address>
 #### Prerequisites
 
 - You require an installed Secure Relay Router Agent 2.7.3 that has a license for FIPS mode. Please refer to the *Secure Relay Router Agent 2.7.3 documentation* at [docs.axway.com](https://docs.axway.com/bundle) for more information.
-- Your {{< TransferCFT/componentlongname >}} license key requires the FIPS option.
+- Your Transfer CFT{{< TransferCFT/componentlongname >}} license key requires the FIPS option.
 
-#### Configure the Master Agent in {{< TransferCFT/componentlongname  >}}
+#### Configure the Master Agent in Transfer CFT{{< TransferCFT/componentlongname  >}}
 
-1. Go to the in the` $CFTDIRINSTALL/distrib/xsr/` folder, and rename the `iaik_jce-3.16.jar` file as `iaik_jce-3.16.unused.`
-1. Move the `entrust-toolkit-8.0.36.jar` file from the `$CFTDIRINSTALL/distrib/xsr/fips` folder to the `$CFTDIRINSTALL/distrib/xsr/` folder.
+1. Go to the in the` $CFTDIRINSTALL/distrib/xsr/` folder, and rename the iaik\_jce-3.16.jar file as `iaik_jce-3.16.unused.`
+1. Move the entrust-toolkit-8.0.36.jar file from the $CFTDIRINSTALL/distrib/xsr/fips folder to the $CFTDIRINSTALL/distrib/xsr/ folder.
 
 ## SSL termination with Secure Relay
 
@@ -156,7 +157,8 @@ host = <remote_partner_host_address>
     -   HOST: Designates the network interface that is used on the Router Agent side.
     -   SSLTERM: Set this Boolean to YES to enable SSL termination.
 
-**Example**
+****Example****
+
 ```
 CFTNET id = NETSRSSL,
 
@@ -178,7 +180,7 @@ This section describes the CFTPROT object, and how various parameters are relate
 - The SAP parameter is the listening port that is used on the RA side (using the CFTNET HOST parameter as the network interface).
 - The CFTPROT SSL parameter refers to a CFTSSL object, in this case PESITSSL, which is used when Secure Relay performs SSL termination in server mode.
 
-**Example**
+****Example****
 
 This example uses a CFTNET object called NETSRSSL.
 
@@ -199,7 +201,7 @@ Create a CFTSSL object to supply detailed information to Secure Relay on how the
 - Secure Relay uses the CFTSSL parameters rootcid, usercid and its password, cipher suites list, SSL version and client authentication policy.
 - Secure relay uses a restricted list of cipher suites (cipher suites ‘59’, ‘60’ and ’61 are not supported).
 
-**Example**
+****Example****
 
 Here the CFTSSL object is used for incoming connections (direct=server).
 
@@ -238,7 +240,7 @@ SSL termination is also used for outgoing connections when the CFTNET object ass
 
 To complete the configuration, create a CFTPART object and a CFTTCP object. In this way the CFTPART refers to the CFTPROT object, and that in turn refers to a CFTNET, which points to Secure Relay. Remember that the only SSL version supported by Secure Relay is TLSV1COMP.
 
-**Example**
+****Example****
 
 This is an example of the CFTPART and CFTTCP objects configuration, using PESITSSL.
 

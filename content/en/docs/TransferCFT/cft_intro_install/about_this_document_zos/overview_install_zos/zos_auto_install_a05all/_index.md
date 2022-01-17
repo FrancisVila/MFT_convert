@@ -10,7 +10,7 @@ The A05ALL JCL automatically runs the following members.
 
 QQQ\_QQQ\_CHECK one table subdivided
 
-### Steps relating to {{< TransferCFT/componentlongname  >}}
+### Steps relating to Transfer CFT{{< TransferCFT/componentlongname  >}}
 
 
 | Step  | Description  | Member  |
@@ -40,8 +40,8 @@ QQQ\_QQQ\_CHECK one table subdivided
 
 | Step  | Description  | Member  |
 | --- | --- | --- |
-| 15  | If cgenable=yes:<br/> Create the Axway Demonstration Root Certificate. | CFTCGPKI  |
-| 16  | If cgenable=yes:<br/> Transfer CFT to registration. | CFTCGREG  |
+| 15  | If cgenable=yes:<br/> Create the Axway Central Governance Demonstration Root Certificate. | CFTCGPKI  |
+| 16  | If cgenable=yes:<br/> Transfer CFT to Central Governance registration. | CFTCGREG  |
 
 
 ### Steps relating to Sentinel

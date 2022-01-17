@@ -13,7 +13,7 @@ and grouped into the following categories:
     parameters](#Work)
 - [Common parameters](#Common)
 - [Trace parameters](#Trace)
-- [{{< TransferCFT/componentshortname >}}
+- [Transfer CFT{{< TransferCFT/componentshortname >}}
     probe configuration](#Transfer2)
 - [Add a character set: transcoding](#Add)
 - [Accounting records](#Statisti)
@@ -89,8 +89,8 @@ The following table lists the UCONF identifiers, default values, and former Wind
 
 | ID  | Default  | Description  |
 | --- | --- | --- |
-| cft.working_dir  | $(cft.runtime_dir)  | Sets the {{< TransferCFT/componentshortname  >}} work-environment  |
-| cft.idparm  | IDPARM0  | Sets the IDPARM to use in Copilot (GUI) and {{< TransferCFT/componentshortname  >}} (optional)  |
+| cft.working_dir  | $(cft.runtime_dir)  | Sets the Transfer CFT{{< TransferCFT/componentshortname  >}} work-environment  |
+| cft.idparm  | IDPARM0  | Sets the IDPARM to use in Copilot (GUI) and Transfer CFT{{< TransferCFT/componentshortname  >}} (optional)  |
 
 
 <span id="Common"></span>
@@ -140,9 +140,9 @@ Values for ID where the type is Common.
 
 <span id="Transfer2"></span>
 
-## {{< TransferCFT/componentshortname  >}} probe configuration
+## Transfer CFT{{< TransferCFT/componentshortname  >}} probe configuration
 
-Use the following parameters to define {{< TransferCFT/componentshortname  >}} probes.
+Use the following parameters to define Transfer CFT{{< TransferCFT/componentshortname  >}} probes.
 
 
 | ID  | Description  |
@@ -171,7 +171,7 @@ Use the following parameters to define {{< TransferCFT/componentshortname  >}} p
 | copilot.startup.catalog.filter  | Errors  | Filter to use for the catalog display on start up.  |
 | copilot.startup.log  | Yes  | Display/hide log at start up.  |
 | copilot.startup.log.filter  | None  | Filter to use for the log display on start up.  |
-| cft.cftlog.switch_on_stop  | No  | Dictates if the switch log occurs at {{< TransferCFT/componentshortname  >}} server shutdown  |
+| cft.cftlog.switch_on_stop  | No  | Dictates if the switch log occurs at Transfer CFT{{< TransferCFT/componentshortname  >}} server shutdown  |
 
 
 ## Automatically expand the catalog
@@ -213,13 +213,13 @@ See also [Automatic catalog expansion](../../admin_monitoring_intro/auto_expand_
 
 ### Startup configuration
 
-PURGE when starting {{< TransferCFT/componentshortname  >}} is now configurable, with the following options:
+PURGE when starting Transfer CFT{{< TransferCFT/componentshortname  >}} is now configurable, with the following options:
 
 
 | Parameter  | Default  | Description  |
 | --- | --- | --- |
-| cft.purge.enable_on_start  | Yes  | Condition if the purge must be run on {{< TransferCFT/componentshortname  >}} startup.  |
-| cft.purge.background_on_start  | Yes  | Condition if the purge must be run on {{< TransferCFT/componentshortname  >}} startup.  |
+| cft.purge.enable_on_start  | Yes  | Condition if the purge must be run on Transfer CFT{{< TransferCFT/componentshortname  >}} startup.  |
+| cft.purge.background_on_start  | Yes  | Condition if the purge must be run on Transfer CFT{{< TransferCFT/componentshortname  >}} startup.  |
 | cft.purge.quantity  | 10  | Number of transfers to delete at once step (only for background).  |
 | cft.purge.periodicity  | 0  | Amount of time between each automatic purge.  |
 
@@ -271,7 +271,7 @@ This parameter lets you use the SEND or RECV command without requiring an [IDF](
 
 | Parameter  | Default  | Description  |
 | --- | --- | --- |
-| cft.accnt.enable_extended_byte_fields  | No  | For each completed transfer, {{< TransferCFT/componentshortname  >}} can record the number of characters in the file (FBYTE) and the number of characters sent over the line (NBYTE).<br/> Possible values are:<br/> • No: The FBYTE and NBYTE fields are filled.<br/> • Yes: The FBYTE_EXTENDED and NBYTE_EXTENDED fields are filled (length=15), and FBYTE and NBYTE are empty (either 0 or blank depending on the CFTACCNT LANG parameter setting). |
+| cft.accnt.enable_extended_byte_fields  | No  | For each completed transfer, Transfer CFT{{< TransferCFT/componentshortname  >}} can record the number of characters in the file (FBYTE) and the number of characters sent over the line (NBYTE).<br/> Possible values are:<br/> • No: The FBYTE and NBYTE fields are filled.<br/> • Yes: The FBYTE_EXTENDED and NBYTE_EXTENDED fields are filled (length=15), and FBYTE and NBYTE are empty (either 0 or blank depending on the CFTACCNT LANG parameter setting). |
 
 
 <span id="Compatib"></span>
@@ -282,7 +282,7 @@ This parameter lets you use the SEND or RECV command without requiring an [IDF](
 | Parameter  | Default value  | Description  |
 | --- | --- | --- |
 | Uconf:cft.listcat_compat  | No  | Defines the LISTCAT display:<br/> • Yes = Display using the former product format, which does not include the new columns. The format in LISTCAT is DTSA.<br/> • No= Display using the product version 3.0 and higher catalog format. The format in LISTCAT is DTSASPP. |
-| Uconf:cft.state_compat  | No  | Defines the transfer states:<br/> • Yes= The phase state is fully compatible with the states in versions prior to 3.0.<br/> • No = The state reflects the phase used in Transfer CFT 3.0 and higher. This uses phase instead of the former states, except during the Transfer phase, when the former state is the same as the phase step.<br/> **Note**: Uconf:cft.state_compat also impacts the <a href="../../../concepts/phase_and_phasestep/ack_phase">acknowledgement</a> behavior if ackstate is set to ignore. |
+| Uconf:cft.state_compat  | No  | Defines the transfer states:<br/> • Yes= The phase state is fully compatible with the states in versions prior to 3.0.<br/> • No = The state reflects the phase used in Transfer CFT 3.0 and higher. This uses phase instead of the former states, except during the Transfer phase, when the former state is the same as the phase step.<br/> ****Note****: Uconf:cft.state_compat also impacts the <a href="../../../concepts/phase_and_phasestep/ack_phase">acknowledgement</a> behavior if ackstate is set to ignore. |
 
 
 <span id="Deactivate_idf"></span>

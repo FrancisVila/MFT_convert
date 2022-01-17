@@ -14,7 +14,7 @@ involved. It is comprised of the following sections:
 
 A file exit task comprises the following two modules:
 
-- {{< TransferCFT/componentshortname >}} interface
+- Transfer CFT{{< TransferCFT/componentshortname >}} interface
 - User program
 
 The interface is written in C language. The main entry point of the

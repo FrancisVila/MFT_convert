@@ -16,7 +16,7 @@ The CFTSSH object parameters for a server definition (DIRECT = SERVER).
 | Parameter  | Description  |
 | --- | --- |
 | ID = identifier | Identifier of the security profile. |
-| CIPHLIST = {(num, num, ..)} | List of allowed ciphers (encryption methods).<br/> Each value defines three algorithms:<br/> • Authentication algorithm<br/> • Encryption algorithm<br/> • Sealing algorithm<br/> This list is compared with the list proposed by the client in order of preference, for the purpose of determining the suite to be negotiated.<br/> {{< TransferCFT/componentlongname  >}} supports the following: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc, 3des-cbc, blowfish-cbc.<br/> <blockquote> **Note**<br/> If the field is empty, the default list is: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc.<br/> </blockquote>  |
+| CIPHLIST = {(num, num, ..)} | List of allowed ciphers (encryption methods).<br/> Each value defines three algorithms:<br/> • Authentication algorithm<br/> • Encryption algorithm<br/> • Sealing algorithm<br/> This list is compared with the list proposed by the client in order of preference, for the purpose of determining the suite to be negotiated.<br/> Transfer CFT{{< TransferCFT/componentlongname  >}} supports the following: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc, 3des-cbc, blowfish-cbc.<br/> <blockquote> **Note**<br/> If the field is empty, the default list is: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc.<br/> </blockquote>  |
 | CLIPUBKEY  | When DIRECT=SERVER<br/> Key Id containing the client public key (RSA). When defined, the Transfer CFT server checks that the client public key referenced in CLIPUBKEY matches the public key provided by the client. If an error occurs, the connection is rejected with a DIAGI 433. |
 | Comment  | Free comment.  |
 | DIRECT<br/>  | The security profile is applicable in this mode (SERVER). |
@@ -35,7 +35,7 @@ The CFTSSH object parameters for a client definition (DIRECT = CLIENT).
 | Parameter  | Description  |
 | --- | --- |
 | ID = identifier | Identifier of the security profile. |
-| CIPHLIST = {(num, num, ..)} | List of allowed ciphers (encryption methods).<br/> Each value defines three algorithms:<br/> • Authentication algorithm<br/> • Encryption algorithm<br/> • Sealing algorithm<br/> This list is compared with the list proposed by the client in order of preference, for the purpose of determining the suite to be negotiated.<br/> {{< TransferCFT/componentlongname  >}} supports the following: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc, 3des-cbc, blowfish-cbc.<br/> <blockquote> **Note**<br/> If the field is empty, the default list is: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc.<br/> </blockquote>  |
+| CIPHLIST = {(num, num, ..)} | List of allowed ciphers (encryption methods).<br/> Each value defines three algorithms:<br/> • Authentication algorithm<br/> • Encryption algorithm<br/> • Sealing algorithm<br/> This list is compared with the list proposed by the client in order of preference, for the purpose of determining the suite to be negotiated.<br/> Transfer CFT{{< TransferCFT/componentlongname  >}} supports the following: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc, 3des-cbc, blowfish-cbc.<br/> <blockquote> **Note**<br/> If the field is empty, the default list is: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc.<br/> </blockquote>  |
 | CLIPRIVKEY  | When DIRECT=CLIENT Key Id containing the client private key (RSA) to use with key authentication. When defined, Transfer CFT uses key authentication. If an error occurs, the connection is rejected with a DIAGI 433.  |
 | Comment  | Free comment.  |
 | DIRECT | The security profile is applicable in this mode (CLIENT). |
@@ -46,7 +46,7 @@ The CFTSSH object parameters for a client definition (DIRECT = CLIENT).
 | SRVPUBKEY  | When DIRECT=CLIENT:<br/> Key Id containing the server public key (RSA) for the server. When defined, the Transfer CFT client checks that the public key referenced by SRVPUBKEY matches the key provided by the server.<br/> If an error occurs, the connection is rejected with a DIAGI 264. |
 
 
-**Example 1**
+****Example 1****
 
 This example demonstrates an SSH default profile that has no client key authentication (CLIPUBKEY is not defined). The server private key is referenced by the SRVPRIVKEY parameter (SSH\_PRIV\_KEY in the example). The SRVPRIVKEY value is a key identifier that corresponds to a key stored in the local PKI database.
 
@@ -57,11 +57,12 @@ CFTSSH ID = 'SSH_DEFAULT',
 ...
  MODE = 'REPLACE'
 ```
-**Example 2**
+
+****Example 2****
 
 The next example demonstrates an SSH default profile that uses client key authentication (CLIPUBKEY is defined). The client public key is referenced by the CLIPUBKEY parameter (SSH\_PUB\_KEY). The CLIPUBKEY value is a key identifier that corresponds to a key stored in the local PKI database.
 
-**Example 3**
+****Example 3****
 
 The server private key is referenced by the SRVPRIVKEY parameter (SSH\_PRIV\_KEY in the example). The value is also a key identifier that corresponds to a key stored in the local PKI database.
 
@@ -72,7 +73,8 @@ CFTSSH ID = 'SSH_DEFAULT',
   CLIPUBKEY = 'SSH_PUB_KEY',
  MODE = 'REPLACE'
 ```
-**Example 4**
+
+****Example 4****
 
 This example demonstrates an SSH default profile with no server key authentication (SRVPUBKEY is not defined), but where there is no client key authentication (CLIPRIVKEY is not defined).
 
@@ -81,7 +83,8 @@ CFTSSH ID = 'SSH_DEFAULT',
  DIRECT = 'CLIENT',
   MODE = 'REPLACE'
 ```
-**Example 5**
+
+****Example 5****
 
 This example demonstrates an SSH default profile with server key authentication (SRVPUBKEY is defined), but where there is no client key authentication (CLIPRIVKEY is not defined). The server public key is referenced by the SRVPUBKEY parameter (SSH\_PUB\_KEY in the example). The SRVPUBKEY value is a key identifier that corresponds to a key stored in the local PKI database.
 
@@ -91,7 +94,8 @@ CFTSSH ID = 'SSH_DEFAULT',
  SRVPUBKEY = 'SSH_PUB_KEY',
   MODE = 'REPLACE'
 ```
-**Example 6**
+
+****Example 6****
 
 This example demonstrates an SSH default profile with server key authentication (SRVPUBKEY is defined) and client key authentication (CLIPRIVKEY is defined).
 

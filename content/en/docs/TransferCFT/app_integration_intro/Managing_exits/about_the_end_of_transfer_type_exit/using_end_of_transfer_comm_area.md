@@ -7,7 +7,7 @@ type exit.
 
 The interface provides the values used by the communication structure
 before the user function is called. In return, you must supply the parameters
-that {{< TransferCFT/componentshortname  >}} requires to update the catalog and, optionally, a comment.
+that Transfer CFT{{< TransferCFT/componentshortname  >}} requires to update the catalog and, optionally, a comment.
 
 If the user function pointer initialized in the init function contains
 a non-null value, the initialization and user functions are called whenever
@@ -16,12 +16,12 @@ an end of transfer occurs, whether it is normal or abnormal.
 If the transfer terminates abnormally, only some of the fields are completed.
 The remaining fields are reset to:
 
-- **0**
+- 0
     in C
-- <span style="font-weight: bold;">blank</span>
+- blank
     in COBOL
 
-If the transfer state is T, the value in the <span style="font-weight: bold;">diagp</span>
+If the transfer state is T, the value in the diagp
 field indicates the compression ratio.
 
 <span id="Communication_structure_in_C_language"></span>
@@ -29,7 +29,7 @@ field indicates the compression ratio.
 ## Communication structure in C
 
 If you want to keep an exit that was created in a version of Transfer
-CFT <span style="font-weight: bold;">prior</span> to V2.4, you can continue
+CFT prior to V2.4, you can continue
 to use the following communication structure exitdU between the interface
 and the user program:
 

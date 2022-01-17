@@ -23,10 +23,11 @@ Customize the PMIGR2 step of the JCL MIGRCAT as follows, where you define RECNB,
 //     SPACE=&SEP&TMPSCAT&SEP,
 //     SER='DK231F',
 //     SPACE=&SEP&TMPSCAT&SEP,
-//     , => Source CATALOG node 0X      
-//     ,   => Temporary file (size defined by &TMPSCAT)
-//     , => Target CATALOG node 0X   
-//     ,               => Target CATALOG records number (to be customized)
+//     NODE='X',                  => node id x  
+//     OLDFIL=Source.CATALOG.N0X, => Source CATALOG node 0X      
+//     TMPFIL=Prefix.WORK.CATALOG.N0X,   => Temporary file (size defined by &TMPSCAT)
+//     NEWFIL=Target.CATALOG.N0X, => Target CATALOG node 0X   
+//     RECNB=50000,               => Target CATALOG records number (to be customized)
 //     DISPFIL=&DISPCAT,
 //     HABFNAME='NO'
  

@@ -2,9 +2,9 @@
     "title": "Create a Transfer CFT instance environment",
     "linkTitle": "Create a Transfer CFT instance ",
     "weight": "190"
-}The concept of a environment has been replaced by what is now referred to as a Transfer CFT , or run-time environment. This procedure describes how to install the Transfer CFT environment.
+}The concept of a target environment has been replaced by what is now referred to as a Transfer CFT instance, or run-time environment. This procedure describes how to install the Transfer CFT instance environment.
 
-If during installation you created both the distribution environment and the Transfer CFT instance environment, you may go directly to [](../../t_customize_instance_zos). Otherwise, you must first create your runtime environment.
+If during installation you created both the distribution environment and the Transfer CFT instance environment, you may go directly to [Customize the instance environment](../../t_customize_instance_zos). Otherwise, you must first create your runtime environment.
 
 > **Note**
 >
@@ -12,7 +12,7 @@ If during installation you created both the distribution environment and the Tra
 
 Prerequisites
 
-{{< TransferCFT/componentlongname  >}} requires two additional libraries LE (Language Environment), SCEELIB and SCEECPP, which are used in the (B20 LINK) link step.
+Transfer CFT{{< TransferCFT/componentlongname  >}} requires two additional libraries LE (Language Environment), SCEELIB and SCEECPP, which are used in the (B20 LINK) link step.
 
 Procedure
 

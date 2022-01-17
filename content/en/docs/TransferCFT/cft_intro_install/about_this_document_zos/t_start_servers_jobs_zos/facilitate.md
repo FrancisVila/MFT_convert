@@ -26,8 +26,9 @@ The following sections describe how to:
 
 ![](/Images/TransferCFT/temp_zos_deploy.png)
 
-** **
-**Deploy a patch or service pack**
+**** ****
+
+****Deploy a patch or service pack****
 
 - [Generate a patch or service pack](#Generate) (1)
     &lt;/li>
@@ -48,7 +49,7 @@ The reference environment includes:
 
 ## Prerequisite
 
-**Minimum version 324 SP2**
+****Minimum version 324 SP2****
 
 If you are working in a Transfer CFT 3.2.4 SP1 or earlier environment, update to CFT 3.2.4 SP2, then copy A33GMAS, A33GPTF, A33GSND, A33IMAS and A33IPTF procedures from the INSTALL distribution library to the reference INSTALL library using A13JCL.
 
@@ -69,7 +70,8 @@ You must customize the following 4 variables before submitting the JCL.
 - COPBASE Copilot PAX id: COPBASE, SP id or NONE
 - XSRBASE Secure relay PAX id: XSRBASE, SP id or NONE
 
-**An XMIT file is generated.**
+****An XMIT file is generated.****
+
 <span id="Distribu"></span>
 
 ## Distribute the master copy
@@ -94,7 +96,8 @@ Use the A33GSND JCL to transfer the following elements via FTP:
     -   MEMPRD the product name defined in A33IMAS
     -   MEMJCL A33IMAS JCL to restore the product
 
-**This creates a remote UPLIB library.**
+****This creates a remote UPLIB library.****
+
 <span id="Restore"></span>
 
 ## Restore the master copy
@@ -104,7 +107,8 @@ Use the A33GSND JCL to transfer the following elements via FTP:
     -   PUPLIB: Set variable PUPLIB in accordance with A33GSND
 1. From the transferred UPLIB, use A33IMAS JCL to restore the master version.
 
-**This creates an instance.**
+****This creates an instance.****
+
 <span id="Install"></span>
 
 ## Install the instance
@@ -117,7 +121,7 @@ Use the A33GSND JCL to transfer the following elements via FTP:
 1. If required, adapt the A03PARM JCL and submit it.
 1. Run the JCL A05ALL.
 
-**This completes the specific part of the Transfer CFT installation. Remaining tasks in include the APF, creating the STC in PROCLIB, etc.**
+****This completes the specific part of the Transfer CFT installation. Remaining tasks in include the APF, creating the STC in PROCLIB, etc.****
 
 > **Note**
 >
@@ -140,7 +144,8 @@ The reference target environment must be up to date.
 - TQUAL = CFTDEV.REF.TRANSPOR Transport prefix qualify
 - ID = 0xxxxx Patch id
 
-**An XMIT file is generated.**
+****An XMIT file is generated.****
+
 <span id="Transfer"></span>
 
 ## Transfer the generated patch or service pack
@@ -164,7 +169,8 @@ Customize the variables before submitting the JCL.
     -   MEMPRD=CF&ID Patch id (member in UPLIB)
     -   MEMJCL=A33IPTF JCL to install Patch
 
-**This creates a remote UPLIB library.**
+****This creates a remote UPLIB library.****
+
 <span id="Apply"></span>
 
 ## Apply the patch or service pack
@@ -181,4 +187,4 @@ Customize the variables before submitting the JCL.
     ```
 1. Submit the JCL.
 
-**The instance is now updated.**
+****The instance is now updated.****

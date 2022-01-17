@@ -9,7 +9,7 @@ the monitor, the behavior of unprotected IPC with an error message in
 the log file.
 
 The application can detect commands that do
-not have permission for access. This lightens the workload, improving {{< TransferCFT/componentshortname  >}} performance, and reducing the cluttering
+not have permission for access. This lightens the workload, improving Transfer CFT{{< TransferCFT/componentshortname  >}} performance, and reducing the cluttering
 of the communication medium by invalid requests.
 
 Use the transfer services to send transfer control commands to Transfer
@@ -27,12 +27,12 @@ The transfer services functions:
     of the command parameters, if the function using the syntax analyzer is
     used
 - Place the command
-    in the {{< TransferCFT/componentshortname >}} communication medium
+    in the Transfer CFT{{< TransferCFT/componentshortname >}} communication medium
 
-The processing performed by {{< TransferCFT/componentshortname  >}} is totally asynchronous.
+The processing performed by Transfer CFT{{< TransferCFT/componentshortname  >}} is totally asynchronous.
 
 The return code only provides an indication that the function has effectively
-been taken into account but does not necessarily mean that {{< TransferCFT/componentshortname  >}}
+been taken into account but does not necessarily mean that Transfer CFT{{< TransferCFT/componentshortname  >}}
 has executed the command correctly. A return code indicating the success
 of the function only means that the command has been correctly placed
 in the communication medium.
@@ -48,7 +48,7 @@ in the communication medium.
 | DELETE | Delete a catalog entry and any transfer in process associated with it |
 | END | Set a transfer status to executed<br/> The transfer is set to the "X" state. This indicates that end-of-transfer procedure has been correctly executed. |
 | SUBMIT | Submit the end-of-transfer procedure |
-| SHUT | Shut down {{< TransferCFT/componentshortname  >}} |
+| SHUT | Shut down Transfer CFT{{< TransferCFT/componentshortname  >}} |
 | SWITCH | Switch monitoring files, LOG, STATS... |
 | CLOSEAPI | Free resources allocated at opening of communication medium: memory, network, file |
 | COM | Define communication medium |
@@ -60,6 +60,7 @@ in the communication medium.
 ## Call syntax
 
 `rc =      cftau (verb,param)`
+
 `rc =      cftac (verb,param)`
 
 Where:
@@ -119,7 +120,7 @@ if applicable, depending on the command:
 | --- | --- |
 | CAPI_NOERR | No error |
 | CAPI_FUNC_UNDEF | Command not valid |
-| CAPI_CMD_LENGTH | cftau only<br/> {{< TransferCFT/componentshortname  >}} command string invalid, does not exist, or greater than 1024 characters long  |
+| CAPI_CMD_LENGTH | cftau only<br/> Transfer CFT{{< TransferCFT/componentshortname  >}} command string invalid, does not exist, or greater than 1024 characters long  |
 | CAPI_KEY_NAME | cftau only<br/> Command syntax incorrect: keyword name incorrect |
 | CAPI_KEY_VALUE | cftau only<br/> Command syntax incorrect: keyword value incorrect |
 | CAPI_MEM_GET | Memory allocation error |
@@ -134,7 +135,7 @@ if applicable, depending on the command:
 The FIELD and MSG fields of the CFTAPI COPY CLAUSE contain:
 
 - FIELD: name of
-    the incorrect parameter detected by the {{< TransferCFT/componentshortname >}} syntax analyzer
+    the incorrect parameter detected by the Transfer CFT{{< TransferCFT/componentshortname >}} syntax analyzer
 - MSG:
     -   Either a message
         relative to the error recognized by the syntax analyzer

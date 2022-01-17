@@ -6,4 +6,4 @@
 
 For more information on Transfer CFT CFTUTIL commands, syntax, and usage, see [About the CFTUTIL interface](../../../c_intro_userinterfaces/about_cftutil).
 
-For more information on how to get started using {{< TransferCFT/centralgovernancename  >}}, refer to the {{< TransferCFT/centralgovernancename  >}} {{< TransferCFT/doctypeuser  >}}.
+For more information on how to get started using Central Governance{{< TransferCFT/centralgovernancename  >}}, refer to the Central Governance{{< TransferCFT/centralgovernancename  >}} User Guide{{< TransferCFT/doctypeuser  >}}.

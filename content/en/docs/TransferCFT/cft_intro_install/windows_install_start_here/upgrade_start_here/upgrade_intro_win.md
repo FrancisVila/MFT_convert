@@ -2,15 +2,15 @@
     "title": "Upgrade Transfer CFT ",
     "linkTitle": "Upgrade Transfer CFT",
     "weight": "190"
-}This section explains how to upgrade an existing Transfer CFT from versions 3.1.3, 3.2.x, 3.3.2 to {{< TransferCFT/componentshortname  >}} {{< TransferCFT/releasenumber  >}}. It begins by detailing the prerequisites for a standalone (non multi-node) upgrade.
+}This section explains how to upgrade an existing Transfer CFT from versions 3.1.3, 3.2.x, 3.3.2 to Transfer CFT{{< TransferCFT/componentshortname  >}} 3.9{{< TransferCFT/releasenumber  >}}. It begins by detailing the prerequisites for a standalone (non multi-node) upgrade.
 
 For details on upgrading a multi-node installation, see <a href="../upgrade_multinode_win" class="MCXref xref">Upgrade a Transfer CFT multi-node installation</a>.
 
 ## About upgrades
 
-As of {{< TransferCFT/componentlongname  >}} 3.4 there is no separate upgrade package, you use the installation package to perform an upgrade procedure as described in the sections below.
+As of Transfer CFT{{< TransferCFT/componentlongname  >}} 3.4 there is no separate upgrade package, you use the installation package to perform an upgrade procedure as described in the sections below.
 
-All passwords stored in the UCONF dictionary, or in the {{< TransferCFT/componentlongname  >}} databases (for example, CFTPART, CFTPARM) are cyphered using the key generated at installation. If you are performing an upgrade, all passwords are cyphered using a hard-coded key. We recommend that you generate an encryption key.
+All passwords stored in the UCONF dictionary, or in the Transfer CFT{{< TransferCFT/componentlongname  >}} databases (for example, CFTPART, CFTPARM) are cyphered using the key generated at installation. If you are performing an upgrade, all passwords are cyphered using a hard-coded key. We recommend that you generate an encryption key.
 
 > **Note**
 >
@@ -37,11 +37,11 @@ You should enable the "Application Experience" service when using Transfer CFT. 
 
 During an upgrade, if the CFTCOM file path is greater than 64 characters the COM file is not migrated, and you must migrate it manually.
 
-When upgrading from {{< TransferCFT/transfercftname  >}} 3.1.3 to 3.3.2 or higher, check that the PKIPASSW length value in the CFT 3.1.3 version (source) is not greater than 8 characters. If it is, truncate the password as described in <a href="../../../mig_impact_considerations" class="MCXref xref">Migration or upgrade impact and considerations</a>
+When upgrading from Transfer CFT{{< TransferCFT/transfercftname  >}} 3.1.3 to 3.3.2 or higher, check that the PKIPASSW length value in the CFT 3.1.3 version (source) is not greater than 8 characters. If it is, truncate the password as described in <a href="../../../mig_impact_considerations" class="MCXref xref">Migration or upgrade impact and considerations</a>
 
-## Use to upgrade {{< TransferCFT/transfercftname  >}}
+## Use Central Governance to upgrade Transfer CFT{{< TransferCFT/transfercftname  >}}
 
-You can perform {{< TransferCFT/transfercftname  >}} upgrades using {{< TransferCFT/centralgovernancename  >}}. However, from the interface you cannot remove service packs or patches, and can only upgrade Transfer CFT as of Transfer CFT 3.1.3 with last service pack (to the latest version). You cannot perform a {{< TransferCFT/componentlongname  >}} migration via .
+You can perform Transfer CFT{{< TransferCFT/transfercftname  >}} upgrades using Central Governance{{< TransferCFT/centralgovernancename  >}}. However, from the Central Governance interface you cannot remove service packs or patches, and can only upgrade Transfer CFT as of Transfer CFT 3.1.3 with last service pack (to the latest version). You cannot perform a Transfer CFT{{< TransferCFT/componentlongname  >}} migration via Central Governance.
 
 Please refer to the [Central Governance documentation](https://docs.axway.com/bundle/CentralGovernance_113_UsersGuide_allOS_en_HTML5/page/Content/AxwayStartPage.htm) for details.
 
@@ -49,7 +49,7 @@ Please refer to the [Central Governance documentation](https://docs.axway.com/bu
 
 ## Upgrade options
 
-You can use the following installer options for {{< TransferCFT/transfercftname  >}} 3.4 when performing an upgrade:
+You can use the following installer options for Transfer CFT{{< TransferCFT/transfercftname  >}} 3.4 when performing an upgrade:
 
 **--architecture &lt;architecture>**: Installation architecture (single or cluster mode).
 
@@ -73,7 +73,7 @@ You can use the following installer options for {{< TransferCFT/transfercftname 
 
 You can set these using command line or the configuration file. The values passed in command line take precedence over the values in the configuration file.
 
-## Upgrade Transfer CFT 3.1.3  through 3.7 to {{< TransferCFT/releasenumber  >}}
+## Upgrade Transfer CFT 3.1.3  through 3.7 to 3.9{{< TransferCFT/releasenumber  >}}
 
 > **Note**
 >
@@ -95,7 +95,7 @@ Run the Axway Installer in update mode.
 >
 > In this step you are working with a zip file (and not a jar as in earlier Installer versions). Do NOT unzip/uncompress the zip file.
 
-Step 2: Upgrade to Transfer CFT {{< TransferCFT/releasenumber  >}}
+Step 2: Upgrade to Transfer CFT 3.9{{< TransferCFT/releasenumber  >}}
 
 > **Note**
 >
@@ -124,7 +124,7 @@ The following available options are described in detail in [Upgrade options](#Up
 
 ## Post upgrade
 
-After completing the upgrade procedure, your Transfer CFT {{< TransferCFT/componentversion  >}}, exec scripts are operational. However, you must rebuild your programs that use C and COBOL APIs and exits.
+After completing the upgrade procedure, your Transfer CFT 3.9{{< TransferCFT/componentversion  >}}, exec scripts are operational. However, you must rebuild your programs that use C and COBOL APIs and exits.
 
 After performing an upgrade, all passwords are cyphered using a hard-coded key. We recommend that you generate an encryption key as described in [Generate an encryption](https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/Security/cipher_key.htm).
 
@@ -144,8 +144,8 @@ Once you complete an upgrade from 3.7 or lower, you must execute the profile bef
 
 ### Checking the new version
 
-To check the {{< TransferCFT/componentshortname  >}} version, as well as the license key and system information, enter the command:
+To check the Transfer CFT{{< TransferCFT/componentshortname  >}} version, as well as the license key and system information, enter the command:
 
 ```
-`CFTUTIL ABOUT`
+CFTUTIL ABOUT
 ```

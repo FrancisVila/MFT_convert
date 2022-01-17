@@ -14,16 +14,16 @@ Earlier versions of Transfer CFT used a different message format than version 3.
 
 CFTLOG FORMAT=\[V23,V24\]
 
-For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
+For V23: CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP01F"></span>CFTP01F CFTPARM &amp;id _ Not found<br/> CFTP01F CFTPARM &amp;id _ Not found |
 | --- | --- |
-| Explanation | The &amp;id identifier of the {{< TransferCFT/componentshortname  >}} parameter file (see the CFTPARM parameter) is not defined. |
+| Explanation | The &amp;id identifier of the Transfer CFT{{< TransferCFT/componentshortname  >}} parameter file (see the CFTPARM parameter) is not defined. |
 | Consequence | The Transfer CFT initialization phase is stopped. |
-| Action | Check the CFTPARM parameter settings (see the CFTPARM parameter), correct and restart {{< TransferCFT/componentshortname  >}}. |
+| Action | Check the CFTPARM parameter settings (see the CFTPARM parameter), correct and restart Transfer CFT{{< TransferCFT/componentshortname  >}}. |
 
 
  
@@ -31,9 +31,9 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP02F"></span>CFTP02F CFTTRACE &amp;id for CFTPARM &amp;id _ Not found<br/> CFTP02F CFTSYST &amp;id for CFTPARM &amp;id _ Not found |
 | --- | --- |
-| Explanation | When initializing {{< TransferCFT/componentshortname  >}}, the CFTTRACE &amp;id identifier was not found in the Transfer CFT parameter file. |
+| Explanation | When initializing Transfer CFT{{< TransferCFT/componentshortname  >}}, the CFTTRACE &amp;id identifier was not found in the Transfer CFT parameter file. |
 | Consequence | The Transfer CFT initialization phase is stopped. |
-| Action | Check the CFTSYST parameter settings (see the CFTPARM parameter), correct and restart {{< TransferCFT/componentshortname  >}}. |
+| Action | Check the CFTSYST parameter settings (see the CFTPARM parameter), correct and restart Transfer CFT{{< TransferCFT/componentshortname  >}}. |
 
 
  
@@ -41,9 +41,9 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | CFTP03F CFTLOG &amp;id for CFTPARM &amp;id _ Not found<br/> CFTP03F CFTLOG &amp;id for CFTPARM &amp;id _ Not found |
 | --- | --- |
-| Explanation | During Transfer CFT initialization the CFTLOG &amp;id identifier was not found in the {{< TransferCFT/componentshortname  >}} parameter file. |
+| Explanation | During Transfer CFT initialization the CFTLOG &amp;id identifier was not found in the Transfer CFT{{< TransferCFT/componentshortname  >}} parameter file. |
 | Consequence | The Transfer CFT initialization phase is stopped. |
-| Action | Check the CFTLOG parameter settings (see the CFTPARM parameter), correct and restart {{< TransferCFT/componentshortname  >}}. |
+| Action | Check the CFTLOG parameter settings (see the CFTPARM parameter), correct and restart Transfer CFT{{< TransferCFT/componentshortname  >}}. |
 
 
  
@@ -51,9 +51,9 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP04F"></span>CFTP04F CFTNET &amp;id for CFTPARM &amp;id _ Not found<br/> CFTP04F CFTNET &amp;id for CFTPARM &amp;id _ Not found |
 | --- | --- |
-| Explanation | During Transfer CFT initialization the CFTNET &amp;id identifier was not found in the {{< TransferCFT/componentshortname  >}} parameter file. |
+| Explanation | During Transfer CFT initialization the CFTNET &amp;id identifier was not found in the Transfer CFT{{< TransferCFT/componentshortname  >}} parameter file. |
 | Consequence | The Transfer CFT initialization phase is stopped. |
-| Action | Check the CFTNET parameter settings (see the CFTPARM parameter), correct and restart {{< TransferCFT/componentshortname  >}}. |
+| Action | Check the CFTNET parameter settings (see the CFTPARM parameter), correct and restart Transfer CFT{{< TransferCFT/componentshortname  >}}. |
 
 
  
@@ -61,7 +61,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP05F"></span>CFTP05F CFTPROT &amp;id for CFTPARM &amp;id_ Not found<br/> CFTP05F CFTPROT &amp;id for CFTPARM &amp;id _ Not found |
 | --- | --- |
-| Explanation | During Transfer CFT initialization the CFTPROT &amp;id identifier was not found in the {{< TransferCFT/componentshortname  >}} parameter file. |
+| Explanation | During Transfer CFT initialization the CFTPROT &amp;id identifier was not found in the Transfer CFT{{< TransferCFT/componentshortname  >}} parameter file. |
 | Consequence | The Transfer CFT initialization phase is stopped. |
 | Action | Check the CFTPROT parameter settings (see CFTPROT), correct and restart Transfer CFT. |
 
@@ -71,9 +71,9 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP06F"></span>CFTP06F CFTCAT &amp;id for CFTPARM &amp;id _ Not found<br/> CFTP06F CFTCAT &amp;id for CFTPARM &amp;id _ Not found |
 | --- | --- |
-| Explanation | During Transfer CFT initialization the CFTCAT &amp;id identifier was not found in the {{< TransferCFT/componentshortname  >}} parameter file. |
+| Explanation | During Transfer CFT initialization the CFTCAT &amp;id identifier was not found in the Transfer CFT{{< TransferCFT/componentshortname  >}} parameter file. |
 | Consequence | The Transfer CFT initialization phase is stopped. |
-| Action | Check the CFTCAT parameter settings (see CFTCAT), correct and restart {{< TransferCFT/componentshortname  >}}. |
+| Action | Check the CFTCAT parameter settings (see CFTCAT), correct and restart Transfer CFT{{< TransferCFT/componentshortname  >}}. |
 
 
  
@@ -81,9 +81,9 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP07F"></span>CFTP07F CFTCOM &amp;id for CFTPARM &amp;id _ Not found<br/> CFTP07F CFTCOM &amp;id for CFTPARM &amp;id _ Not found |
 | --- | --- |
-| Explanation | During Transfer CFT initialization the CFTCOM &amp;id identifier was not found in the {{< TransferCFT/componentshortname  >}} parameter file. |
+| Explanation | During Transfer CFT initialization the CFTCOM &amp;id identifier was not found in the Transfer CFT{{< TransferCFT/componentshortname  >}} parameter file. |
 | Consequence | The Transfer CFT initialization phase is stopped. |
-| Action | Check the CFTCOM parameter settings (see CFTCOM), correct and restart {{< TransferCFT/componentshortname  >}}. |
+| Action | Check the CFTCOM parameter settings (see CFTCOM), correct and restart Transfer CFT{{< TransferCFT/componentshortname  >}}. |
 
 
  
@@ -91,9 +91,9 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Fatal | <span id="CFTP08F"></span>CFTP08F CFTNET &amp;id for CFTPROT &amp;id _ Not found<br/> CFTP08F CFTNET &amp;id for CFTPROT &amp;id _ Not found |
 | --- | --- |
-| Explanation | During Transfer CFT initialization the CFTNET &amp;id identifier for a given CFTPROT &amp;id protocol was not found in the {{< TransferCFT/componentshortname  >}} parameter file. |
+| Explanation | During Transfer CFT initialization the CFTNET &amp;id identifier for a given CFTPROT &amp;id protocol was not found in the Transfer CFT{{< TransferCFT/componentshortname  >}} parameter file. |
 | Consequence | The Transfer CFT initialization phase is stopped. |
-| Action | Check:<br/> • the CFTNET and CFTPROT parameter settings (see the CFT CFTNET and CFTPROT topics)<br/> • the CFTPARM parameter settings<br/> • the list of authorized protocols and network identifiers (NET=(.,.), PROT=(.,.) ) that the number of items in this list does not exceed the maximum authorized quota<br/> Correct and restart {{< TransferCFT/componentshortname  >}}. |
+| Action | Check:<br/> • the CFTNET and CFTPROT parameter settings (see the CFT CFTNET and CFTPROT topics)<br/> • the CFTPARM parameter settings<br/> • the list of authorized protocols and network identifiers (NET=(.,.), PROT=(.,.) ) that the number of items in this list does not exceed the maximum authorized quota<br/> Correct and restart Transfer CFT{{< TransferCFT/componentshortname  >}}. |
 
 
  
@@ -102,8 +102,8 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP09F"></span>CFTP09F CFTSEND &amp;id for CFTPARM &amp;id _ No default record found<br/> CFTP09F CFTSEND &amp;id for CFTPARM &amp;id _ No default record found |
 | --- | --- |
 | Explanation | During Transfer CFT initialization the identifier describing the default file characteristics used for send transfers (CFTSEND parameter) is unknown. |
-| Consequence | The Transfer CFT initialization phase cannot continue correctly and {{< TransferCFT/componentshortname  >}} is aborted. |
-| Action | Check the CFTPARM (DEFAULT=.) and CFTSEND parameter settings, correct and restart {{< TransferCFT/componentshortname  >}}. |
+| Consequence | The Transfer CFT initialization phase cannot continue correctly and Transfer CFT{{< TransferCFT/componentshortname  >}} is aborted. |
+| Action | Check the CFTPARM (DEFAULT=.) and CFTSEND parameter settings, correct and restart Transfer CFT{{< TransferCFT/componentshortname  >}}. |
 
 
  
@@ -112,7 +112,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP10F"></span>CFTP10F CFTRECV &amp;id for CFTPARM &amp;id _ No Default record found<br/> CFTP10F CFTRECV &amp;id for CFTPARM &amp;id _ No Default record found |
 | --- | --- |
 | Explanation | During Transfer CFT initialization the identifier describing the default file characteristics used for receive transfers (CFTRECV parameter) is unknown. |
-| Consequence | The Transfer CFT initialization phase cannot continue correctly and {{< TransferCFT/componentshortname  >}} is aborted. |
+| Consequence | The Transfer CFT initialization phase cannot continue correctly and Transfer CFT{{< TransferCFT/componentshortname  >}} is aborted. |
 | Action | Check CFTPARM (DEFAULT=.) and CFTRECV parameter settings, correct and restart Transfer CFT. |
 
 
@@ -132,8 +132,8 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP14F"></span>CFTP14F CFTACCNT &amp;id for CFTPARM &amp;id _ Not found<br/> CFTP14F CFTACCNT &amp;id for CFTPARM &amp;id _ Not found |
 | --- | --- |
 | Explanation | During Transfer CFT initialization the command describing the accounting characteristics (CFTACCNT command), the ID parameter of which corresponds to the ACCNT parameter in the CFTPARM command, was not found. |
-| Consequence | The Transfer CFT initialization phase cannot continue correctly and {{< TransferCFT/componentshortname  >}} is aborted. |
-| Action | Check the CFTACCNT parameter settings, correct and restart {{< TransferCFT/componentshortname  >}}. |
+| Consequence | The Transfer CFT initialization phase cannot continue correctly and Transfer CFT{{< TransferCFT/componentshortname  >}} is aborted. |
+| Action | Check the CFTACCNT parameter settings, correct and restart Transfer CFT{{< TransferCFT/componentshortname  >}}. |
 
 
  
@@ -143,7 +143,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | --- | --- |
 | Explanation | During Transfer CFT initialization the CFTPROT &amp;idprot card could not be loaded in memory (insufficient space). |
 | Consequence | This card cannot be used for transfers. |
-| Action | Reduce the number of CFTPROT card identifiers in the CFTPARM &amp;idparm command (see the {{< TransferCFT/componentshortname  >}} topics that correspond to your OS to find out the parameter setting limits). After correcting your parameter settings, restart {{< TransferCFT/componentshortname  >}}. |
+| Action | Reduce the number of CFTPROT card identifiers in the CFTPARM &amp;idparm command (see the Transfer CFT{{< TransferCFT/componentshortname  >}} topics that correspond to your OS to find out the parameter setting limits). After correcting your parameter settings, restart Transfer CFT{{< TransferCFT/componentshortname  >}}. |
 
 
  
@@ -153,7 +153,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | --- | --- |
 | Explanation | During Transfer CFT initialization the CFTNET &amp;idnet card could not be loaded in memory (insufficient space). |
 | Consequence | This card cannot be used for transfers. |
-| Action | Reduce the number of CFTNET card identifiers in the CFTPARM &amp;idparm command (see the {{< TransferCFT/componentshortname  >}} topics that correspond to your OS to find out the parameter setting limits).<br/> After correcting your parameter settings, restart {{< TransferCFT/componentshortname  >}}. |
+| Action | Reduce the number of CFTNET card identifiers in the CFTPARM &amp;idparm command (see the Transfer CFT{{< TransferCFT/componentshortname  >}} topics that correspond to your OS to find out the parameter setting limits).<br/> After correcting your parameter settings, restart Transfer CFT{{< TransferCFT/componentshortname  >}}. |
 
 
  
@@ -163,7 +163,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | --- | --- |
 | Explanation | During Transfer CFT initialization the CFTCOM &amp;idcom card could not be loaded in memory (insufficient space). |
 | Consequence | This card cannot be used for transfers. |
-| Action | Reduce the number of CFTCOM card identifiers in the CFTPARM &amp;idparm command (see the {{< TransferCFT/componentshortname  >}} topics that correspond to your OS to find out the parameter setting limits).<br/> After correcting your parameter settings, restart {{< TransferCFT/componentshortname  >}}. |
+| Action | Reduce the number of CFTCOM card identifiers in the CFTPARM &amp;idparm command (see the Transfer CFT{{< TransferCFT/componentshortname  >}} topics that correspond to your OS to find out the parameter setting limits).<br/> After correcting your parameter settings, restart Transfer CFT{{< TransferCFT/componentshortname  >}}. |
 
 
  
@@ -225,7 +225,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTP23W"></span>CFTP23W CFTNET &amp;id for CFTPARM &amp;id uses &amp;net network _ Disabled<br/> CFTP23W CFTNET &amp;id for CFTPARM &amp;id uses &amp;net network _ Disabled |
 | --- | --- |
-| Explanation  | Only CFTNET TCP type protocols are loaded when starting {{< TransferCFT/componentlongname  >}}.  |
+| Explanation  | Only CFTNET TCP type protocols are loaded when starting Transfer CFT{{< TransferCFT/componentlongname  >}}.  |
 | Action  | Remove the unsupported protocols if you no longer want this message to display.  |
 
 
@@ -234,7 +234,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Warning  | CFTP24W CFTPROT &amp;id uses CFTNET &amp;id _ Disabled<br/> CFTP24W CFTPROT &amp;id uses CFTNET &amp;id _ Disabled |
 | --- | --- |
-| Explanation  | Only CFTNET TCP type protocols are loaded when starting {{< TransferCFT/componentlongname  >}}.  |
+| Explanation  | Only CFTNET TCP type protocols are loaded when starting Transfer CFT{{< TransferCFT/componentlongname  >}}.  |
 | Action  | Remove the unsupported protocols if you no longer want this message to display.  |
 
 

@@ -31,7 +31,7 @@ a message to be sent to a designated Partner.
 
 This command causes a message to be sent
 in response to a previous transfer from the Partner to which the message
-was sent. The partner {{< TransferCFT/componentshortname  >}} interprets this message as a transfer acknowledgement.
+was sent. The partner Transfer CFT{{< TransferCFT/componentshortname  >}} interprets this message as a transfer acknowledgement.
 
 Such messages are sent in a connected state; a protocol connection must
 exist between the sender of the message and its recipient. This connection
@@ -69,6 +69,7 @@ The transfer identifier to be acknowledged (IDT) is defined by the symbolic
 variable &IDT:
 
 `SEND TYPE=REPLY, PART=&PART,   IDM=MES2, IDT=&IDT,MSG = ’PAY file effectively received’`
+
 <span id="Monitoring_PeSIT_transfer_requests"></span>
 
 ## Monitoring PeSIT transfer requests

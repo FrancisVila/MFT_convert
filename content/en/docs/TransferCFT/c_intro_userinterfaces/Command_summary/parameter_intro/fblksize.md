@@ -51,7 +51,7 @@ block size and/or the file input/output buffer size.
 
 
 
-| **z/OS (MVS)**  | For protocols other than PeSIT, CFT profile, if this parameter is not defined, its value is set as follows: <br/> • For fixed format files: this value equals the largest multiple of FLRECL which is less than the constant (related to the track length) defined on installation (default value: 19069), or FLRECL if FLRECL is greater than this constant<br/> • For variable format files: this value equals the constant (related to the track length) defined on installation of the {{< TransferCFT/componentshortname  >}} in a z/OS environment (default value: 19065), or to FLRECL + 4 if FLRECL is greater than this constant<br/> • For undefined format files: this value is equal to 32760 |
+| **z/OS (MVS)**  | For protocols other than PeSIT, CFT profile, if this parameter is not defined, its value is set as follows: <br/> • For fixed format files: this value equals the largest multiple of FLRECL which is less than the constant (related to the track length) defined on installation (default value: 19069), or FLRECL if FLRECL is greater than this constant<br/> • For variable format files: this value equals the constant (related to the track length) defined on installation of the Transfer CFT{{< TransferCFT/componentshortname  >}} in a z/OS environment (default value: 19065), or to FLRECL + 4 if FLRECL is greater than this constant<br/> • For undefined format files: this value is equal to 32760 |
 | --- | --- |
 
 
@@ -64,7 +64,7 @@ block size and/or the file input/output buffer size.
 
 Block size of file to be sent.
 
-Typically you do not need to define this parameter as {{< TransferCFT/componentshortname  >}} is
+Typically you do not need to define this parameter as Transfer CFT{{< TransferCFT/componentshortname  >}} is
 able to locate the value for the file to be sent. This real value is then
 taken into account when activating the transfer.
 

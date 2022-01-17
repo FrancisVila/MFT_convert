@@ -2,7 +2,7 @@
     "title": "Synchronous  communication services",
     "linkTitle": "Synchronous communication services in COBOL",
     "weight": "330"
-}This topic describes {{< TransferCFT/componentshortname  >}} synchronous communication services.
+}This topic describes Transfer CFT{{< TransferCFT/componentshortname  >}} synchronous communication services.
 
 ## Description of functions
 
@@ -86,5 +86,5 @@ listed in the following table.
 | &lt;verb&gt; | &lt;param&gt; | Explanation |
 | --- | --- | --- |
 | F-COM | D-COM | The COM command parameter structure is as follows: &lt;medium type&gt; = &lt;Medium name&gt;<br/> The medium type consists in an uppercase letter:<br/> • 'F' for file<br/> • 'T' for the TCP/IP synchronous medium<br/> • 'C' for the configuration file (ConfigFileName)<br/> The medium name is the:<br/> • Filename, if the medium type is 'F'<br/> • Name of the communication channel, if the medium type is 'T'<br/> • Name of the configuration file containing the medium of communication characteristics, if the medium type is C. |
-| F-GETINXFO | Z-XINF | Information about a transfer in the format described in the **OAPIINF** file. |
+| F-GETINXFO | Z-XINF | Information about a transfer in the format described in the OAPIINF file. |
 

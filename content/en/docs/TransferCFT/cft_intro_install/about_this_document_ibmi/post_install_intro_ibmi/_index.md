@@ -27,43 +27,43 @@ Other than during installation, which runs the Transfer CFT manager automaticall
 
 ## Create Transfer CFT system object
 
-Now that you have installed your {{< TransferCFT/hflongproductname  >}}, you will want to recreate Transfer CFT objects. Proceed to the Transfer CFT menu and press 4 to access the following options:
+Now that you have installed your Transfer CFT{{< TransferCFT/hflongproductname  >}}, you will want to recreate Transfer CFT objects. Proceed to the Transfer CFT menu and press 4 to access the following options:
 
-**1. Create job queue.**
+****1. Create job queue.****
 
 Create a JOBQ object to launch Transfer CFT jobs using the default values.
 
-**2. Create job description.**
+****2. Create job description.****
 
-Create a JOBD object to launch Transfer CFT jobs using the default values. This programs the initial library list and the {{< TransferCFT/hflongproductname  >}} production libraries (CFTPGM and CFTPROD).
+Create a JOBD object to launch Transfer CFT jobs using the default values. This programs the initial library list and the Transfer CFT{{< TransferCFT/hflongproductname  >}} production libraries (CFTPGM and CFTPROD).
 
-**3. Create subsystem.**
+****3. Create subsystem.****
 
 Create an SBS object to launch Transfer CFT jobs. This creates a subsytem with a storage size of 250MB.
 
-**4. Add job-queue entry.**
+****4. Add job-queue entry.****
 
 Add a job queue entry to the subsystem that you created in step 3 to link it with the JOBQ that you created in step 1. The maximum active job is unlimited.
 
-**5. Create class.**
+****5. Create class.****
 
 Create a class CLS object for Transfer CFT with a time slice of 5000 milliseconds.
 
-**6. Add routing entry.**
+****6. Add routing entry.****
 
 Add a routing entry to the subsytem created in step 3 to link it with the class created in step 5. This uses the SEQNBR(9999) CMPVAL(\*ANY) and PGM(QCMD) options.
 
-**7. Add communication entry.**
+****7. Add communication entry.****
 
 Add a communication entry to link the subsystem created in step 3 with the JOBD created in step 2. This uses the DFTUSR(CFT) ??MODE(\*ANY) ??MAXACT(\*NOMAX) options.
 
-**8. Change profile.**
+****8. Change profile.****
 
 Change the user profile of the current user to specify that the user now uses the JOBD in step 2, and subsequently the subsystem and JOBQ created in the other steps and linked with the JOBD.
 
 ## Verify your installation
 
-See the installation if you encounter problems with starting {{< TransferCFT/componentlongname  >}}.
+See the installation if you encounter problems with starting Transfer CFT{{< TransferCFT/componentlongname  >}}.
 
 ### Installed directories
 
@@ -73,6 +73,6 @@ The act of installing Transfer CFT creates a library that contains product binar
 >
 > By default, this library is called CFTPGM.
 
-## Register with
+## Register with Central Governance
 
-If you intend to implement , please refer to the {{< TransferCFT/componentlongname  >}} *User's Guide &gt; [*Register with*](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.
+If you intend to implement Central Governance, please refer to the Transfer CFT{{< TransferCFT/componentlongname  >}} *User's Guide &gt; [*Register with* Central Governance](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.

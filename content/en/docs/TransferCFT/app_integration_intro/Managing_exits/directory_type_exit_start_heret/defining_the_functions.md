@@ -6,7 +6,7 @@
 A directory EXIT task comprises two modules:
 
 - The interface supplied
-    with {{< TransferCFT/componentshortname >}}
+    with Transfer CFT{{< TransferCFT/componentshortname >}}
 - The user program
 
 The interface is written in C language. The main entry point of the
@@ -34,8 +34,8 @@ A directory EXIT task:
 - Calls the initialization
     function **exaini** function in server mode, when a connection is indicated,
     or in requester mode, when a connection request is made. If this function
-    returns a 0 code, the **usrfct** function
-    is called. If not, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> considers that the user does not want
+    returns a 0 code, the usrfct function
+    is called. If not, Transfer CFT{{< TransferCFT/componentshortname >}} considers that the user does not want
     to take control
 
 <span id="Initialization_Function"></span>
@@ -65,7 +65,7 @@ initialization function.
 | --- | --- |
 | exafref | Address of an (512+1) byte area.<br/> The initialization function can modify this area. |
 | mode | Address of a one-byte area<br/> Processing mode:<br/> • S: call in server mode<br/> • R: call in requester mode (Requester) |
-| part | Address of an (32+1) byte area.<br/> Partner local identifier if this identifier is known to <span >Transfer CFT</span>. |
+| part | Address of an (32+1) byte area.<br/> Partner local identifier if this identifier is known to Transfer CFT{{< TransferCFT/componentshortname  >}}. |
 | parm | Address of an (64+1) byte area.<br/> This area contains the value of the PARM parameter of the CFTEXIT command and can be modified by the initialization function. |
 | language | Address of a one-byte area.<br/> This area contains the value of the LANGUAGE parameter of the CFTEXIT command and can be modified by the initialization function. |
 | function | Address of an area that contains the address of the user function.<br/> If you want to take control, the initialization function must update this area. The mode, part, parm and language parameters are initialized by the interface. The mode, part and parm parameters can be used to select a function when the user has provided several functions.<br/> The user can use the exaref parameter as required. The contents of this parameter are thereafter provided to the user function.<br/> The (n+1) byte areas contain characters up to n bytes long followed by a binary zero. |
@@ -79,6 +79,7 @@ initialization function.
 Where EXA is defined as:
 
 `typedef long (*EXA)(char*,char*);`
+
 <span id="User_Function"></span>
 
 ## User Function
@@ -94,7 +95,9 @@ Where EXA is defined as:
 Example in C
 
 `long usrfct (     char   *zecom,`
+
 `  char   *zgcom            );`
+
 <span id="Interface_Files"></span>
 
 ## Interface files

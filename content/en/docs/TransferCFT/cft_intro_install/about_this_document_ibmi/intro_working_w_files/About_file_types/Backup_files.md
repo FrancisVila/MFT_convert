@@ -2,7 +2,7 @@
     "title": "Backup files ",
     "linkTitle": "Backup files",
     "weight": "230"
-}The records in this type of file (SAVF) have a specific format. They contain backed-up sequencing and parity data controlled by. SAVF files can generally only be used on systems. Consequently, backup files are predominantly transferred between two partners.
+}The records in this type of file (SAVF) have a specific format. They contain backed-up sequencing and parity data controlled byTransfer CFT IBM i. SAVF files can generally only be used on Transfer CFT IBM i systems. Consequently, backup files are predominantly transferred between two Transfer CFT IBM i partners.
 
 Another system can be used as an intermediate partner, in which it must process the SAVF file as a sequential file with a fixed format and a length of 528 (bytes).
 
@@ -14,7 +14,7 @@ The only variable property of an SAVF file is its allocation size in Kilobytes (
 
 The configuration of the other properties (FORG, FRECFM, FLRECL and so on) is ignored. Consequently, they do not need to be specified in the CFTSEND / CFTRECV commands. However, if FLRECL is specified, it must be set to 528 (bytes).
 
-The SAVF file access method, implemented in Transfer CFT , does not support synchronization points in write mode. This mechanism is however supported in read mode. Consequently, a SAVF file transfer with a receiver system will fail during a restart (abort on the receiver side). If the file is sent to a non- (intermediate) system, resynchronization (restart points) can be performed in read mode with the sender Transfer CFT .
+The SAVF file access method, implemented in Transfer CFT Transfer CFT IBM i, does not support synchronization points in write mode. This mechanism is however supported in read mode. Consequently, a SAVF file transfer with a receiver Transfer CFT IBM i system will fail during a restart (abort on the receiver side). If the file is sent to a non-Transfer CFT IBM i (intermediate) system, resynchronization (restart points) can be performed in read mode with the sender Transfer CFT Transfer CFT IBM i.
 
 ## Using spool files
 

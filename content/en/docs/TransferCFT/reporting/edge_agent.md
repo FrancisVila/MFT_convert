@@ -2,16 +2,16 @@
     "title": "Implement the Edge Agent",
     "linkTitle": "Implement the Edge Agent",
     "weight": "210"
-}This page describes how to configure the Edge Agent for AMPLIFY MFT implementations and configure {{< TransferCFT/hflongproductname  >}} for the following use cases:
+}This page describes how to configure the Edge Agent for AMPLIFY MFT implementations and configure Transfer CFT{{< TransferCFT/hflongproductname  >}} for the following use cases:
 
 - Usage tracking only
 - Usage tracking and Sentinel monitoring
 
-**Usage tracking only**
+********Usage tracking only********
 
 ![](/Images/TransferCFT/edge_direct.png)
 
-**Usage tracking and Sentinel monitoring**
+********Usage tracking and Sentinel monitoring********
 
 ![](/Images/TransferCFT/edge_indirect.png)
 
@@ -21,12 +21,12 @@ For more information on reporting usage, Edge Agent setup and architecture, and 
 
 ## Configure the Edge Agent
 
-Perform the following steps on the Edge Agent for MFT implementations that use {{< TransferCFT/hflongproductname  >}} or {{< TransferCFT/securetransportname  >}}.
+Perform the following steps on the Edge Agent for MFT implementations that use Transfer CFT{{< TransferCFT/hflongproductname  >}} or SecureTransport{{< TransferCFT/securetransportname  >}}.
 
 1. Download the `AMPLIFY_Edge_Agent_MFT_<version>_configuration_<BNxxx>.zip `package from the [Axway Support Site](https://support.axway.com/).
 1. Extract the zip locally.
-1. Upload the `MFT-usage.json` file from the package to the `<Edge_Agent_install_dir>/aggregator/usage_tracking/``conf/agent/aggregation` directory.
-1. Upload the `MFT.json` file from the package to the `<Edge_Agent_install_dir>/conf/agent/report` directory.
+1. Upload the MFT-usage.json file from the package to the &lt;Edge\_Agent\_install\_dir>/aggregator/usage\_tracking/`conf/agent/aggregation` directory.
+1. Upload the `MFT.json` file from the package to the &lt;Edge\_Agent\_install\_dir>/conf/agent/report directory.
 1. Restart the Edge Agent. Refer to the [AMPLIFY Usage Metering and Reporting Guide](https://docs.axway.com/bundle/subusage_en).
 
 > **Note**
@@ -41,7 +41,7 @@ There are two methods of configuration depending on the use case you implement.
 
 In this use case, Transfer CFT sends the usage report directly to the Edge Agent.
 
-Set the following `uconf `parameters to the Edge Agent values:
+Set the following uconf parameters to the Edge Agent values:
 
 - sentinel.trkipaddr: Edge Agent IP address
 - sentinel.trkipport: 8002 (by default, the non-SSL port for the Edge Agent)
@@ -62,20 +62,20 @@ Set the following uconf parameters to the Edge Agent values:
 
 #### On the Sentinel server
 
-1. On Sentinel, copy the `XFBCFTInfo `and `XFBTransfer` Tracked Object files from the` <Transfer_CFT_install_dir>/home/extra/sentinel` to `<Sentinel_install_dir>/broadcast/commit/trackingobject `folder.  
+1. On Sentinel, copy the XFBCFTInfo and XFBTransfer Tracked Object files from the` <Transfer_CFT_install_dir>/home/extra/sentinel` to &lt;Sentinel\_install\_dir>/broadcast/commit/trackingobject folder.  
     If the Tracked Objects folder does not exist, you must create it.
 1. Restart Sentinel.
 
 #### On the Event Router
 
-When you are using the Event Router to send both usage tracking to the Edge Agent and monitoring to Sentinel, you must customize the Event Router. In the following configuration steps, `XFBTransfer `and `CycleLink `are sent to both the Edge Agent and Sentinel. However, `XFBCFTInfo `and `STXFBINFO `are only sent to the Edge Agent.
+When you are using the Event Router to send both usage tracking to the Edge Agent and monitoring to Sentinel, you must customize the Event Router. In the following configuration steps, XFBTransfer and `CycleLink `are sent to both the Edge Agent and Sentinel. However, XFBCFTInfo and `STXFBINFO `are only sent to the Edge Agent.
 
 > **Note**
 >
 > The default target is called SENTINEL in the steps below.
 
-1. Access the `<install_dir>/SentinelEventRouter/conf `directory.
-1. Edit the `target.xml` file to route the usage information to Sentinel and the Edge Agent (`EDGEAGENT`).
+1. Access the &lt;install\_dir>/SentinelEventRouter/conf directory.
+1. Edit the target.xml file to route the usage information to Sentinel and the Edge Agent (EDGEAGENT).
     1.  Add the Edge Agent as a new target.
     2.  ```
         <Target name="EDGEAGENT" defaultXntf="no" defaultXml="no">

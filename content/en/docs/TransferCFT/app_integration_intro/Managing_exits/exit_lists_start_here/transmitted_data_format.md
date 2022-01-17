@@ -10,7 +10,8 @@ of the transmitted data.
 
 ## File selection criteria
 
-**Example**
+****Example****
+
 ```
 PARM LRECL = nnnn, FORMAT=X
 SEND STATE = CDHKTX
@@ -27,11 +28,11 @@ Where:
 
 ## Format of sent records
 
-Indicates the file format of the communication area, where values are <u>1</u>, 2 C, T, J, or X (`1 `is the default).
+Indicates the file format of the communication area, where values are <u>1</u>, 2 C, T, J, or X (1 is the default).
 
-**Format 1**
+****Format 1****
 
-Displays using the same format as in {{< TransferCFT/hflongproductname  >}} 3.5 and lower.
+Displays using the same format as in Transfer CFT{{< TransferCFT/hflongproductname  >}} 3.5 and lower.
 
 - Format V23: The record is truncated if LRECL&lt;503 or padded with spaces if LRECL>503.
 - Format V24: The record is truncated if LRECL&lt;1569 or padded with spaces if LRECL>1569.
@@ -61,8 +62,9 @@ Displays using the same format as in {{< TransferCFT/hflongproductname  >}} 3.5 
 | Total | 1569 | 503 bytes  |   |
 
 
-**Format 2**
-**The fields are as described in the following table, where the field size depends on the format version (V23 or V24).**
+****Format 2****
+
+****The fields are as described in the following table, where the field size depends on the format version (V23 or V24).****
 
 
 | Type | V24 length | V23 length | Description |
@@ -89,25 +91,29 @@ Displays using the same format as in {{< TransferCFT/hflongproductname  >}} 3.5 
 | CHAR  | 64 | 8  | Diagp  |
 
 
-**Format C: CSV - Comma Separated Value**
+****Format C: CSV - Comma Separated Value****
 
 Each field is separated by a comma.
 
-For example: `S,X,X,X,MARTIN,PARIS,BIN,L1111482,2,,128,20191211,11481147,,,,,0,CP NONE`
+For example: S,X,X,X,MARTIN,PARIS,BIN,L1111482,2,,128,20191211,11481147,,,,,0,CP NONE
 
-**Format T: TSV - Tab Separated Value**
+****Format T: TSV - Tab Separated Value****
 
 Each field is separated by a tab.
 
-**Format J: JSON**
+****Format J: JSON****
+
 ```
 {"TRANSFERS":[{"DIRECT":"S","STATE":"X","PHASE":"X","PHASESTEP":"X","SPART":"MARTIN","RPART":"PARIS","IDF":"ID_EXITL","IDT":"L1111482","NBR":"2","FNAME":"","PRI":"128","DATEK":"20191211","TIMEK":"11481147","PARM":"","SUSER":"","RUSER":"","COMMENT":"","DIAGI":"0","DIAGP":"CP NONE"}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 ,{"DIRECT":"R","STATE":"X","PHASE":"X","PHASESTEP":"X","SPART":"PARIS","RPART":"MARTIN","IDF":"BIN","IDT":"L1111475","NBR":"2","FNAME":"pub\\\\L1111475_A000002Q.RCV","PRI":"128","DATEK":"20191211","TIMEK":"11475343","PARM":"My \\"param\\" with quote","SUSER":"","RUSER":"","COMMENT":"","DIAGI":"0","DIAGP":"CP NONE"}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
 ], "TOTAL":"2"}            
 ```
-**Format X: XML**
+
+****Format X: XML****
+
 ```
-<?xml version="1.0" encoding="UTF-8"?><CAT><TRANSFER DIRECT="S" STATE="X" PHASE="X" PHASESTEP="X" SPART="MARTIN" RPART="PARIS" IDF="ID_EXITL" IDT="L1111423" NBR="2" FNAME="" PRI="128" DATEK="20191211" TIMEK="11422580" PARM="" SUSER="" RUSER="" COMMENT="" DIAGI="0" DIAGP="CP NONE"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <TRANSFER DIRECT="R" STATE="X" PHASE="X" PHASESTEP="X" SPART="PARIS" RPART="MARTIN" IDF="BIN" IDT="L1111415" NBR="2" FNAME="pub\\L1111415_A000002K.RCV" PRI="128" DATEK="20191211" TIMEK="11415981" PARM="My  &quot;param&quot; with quote" SUSER="" RUSER="" COMMENT="" DIAGI="0" DIAGP="CP NONE"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <TOTAL>2</TOTAL></CAT>      
+<?xml version="1.0" encoding="UTF-8"?><CAT><TRANSFER DIRECT="S" STATE="X" PHASE="X" PHASESTEP="X" SPART="MARTIN" RPART="PARIS" IDF="ID_EXITL" IDT="L1111423" NBR="2" FNAME="" PRI="128" DATEK="20191211" TIMEK="11422580" PARM="" SUSER="" RUSER="" COMMENT="" DIAGI="0" DIAGP="CP NONE"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <TRANSFER DIRECT="R" STATE="X" PHASE="X" PHASESTEP="X" SPART="PARIS" RPART="MARTIN" IDF="BIN" IDT="L1111415" NBR="2" FNAME="pub\\L1111415_A000002K.RCV" PRI="128" DATEK="20191211" TIMEK="11415981" PARM="My  &quot;param&quot; with quote" SUSER="" RUSER="" COMMENT="" DIAGI="0" DIAGP="CP NONE"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+<TOTAL>2</TOTAL></CAT>      
 ```
 
 ## Determine the LRECL 

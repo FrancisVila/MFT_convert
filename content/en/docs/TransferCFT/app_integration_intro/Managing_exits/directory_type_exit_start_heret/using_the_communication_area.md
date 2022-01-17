@@ -37,19 +37,19 @@ of the calling partner.
 | gfa  | Closed subscriber group number  |
 
 
-When the user function is called, if the partner name **part**
+When the user function is called, if the partner name part
 is empty, so that the partner local identifier is unknown to Transfer
 CFT, the only fields that contain valid data (imintime and imintime are
 initialized to "23595999" and "00000000" respectively)
 are the above fields in addition to the general information fields.  
-The <span style="font-weight: bold;">ret1</span> return code field must
+The ret1 return code field must
 be defined when the user function is returned.  
-If there is a connection refusal, return code value of 2, the <span style="font-weight: bold;">ret2</span>
+If there is a connection refusal, return code value of 2, the ret2
 field may be defined to inform the calling partner of the cause of the
 refusal.  
 The content of the diag field appears with the appropriate error message
 if the return code is not 0 and 1.  
-If the msg field is defined, its content is sent to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> standard
+If the msg field is defined, its content is sent to the Transfer CFT{{< TransferCFT/componentshortname  >}} standard
 output.
 
 If the return code value is 0 or 1, the user can modify the fields indicated
@@ -77,8 +77,8 @@ in the following System information field table.
 If the part field of the communication
 structure is empty on return from the user function, the partner local
 identifier UNDEFPTN appears in
-the catalog and on the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> standard output.  
+the catalog and on the Transfer CFT{{< TransferCFT/componentshortname  >}} standard output.  
 If the part field has been modified
-and if the new identifier is located in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> partner base,
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> sets the ret1 field to 9 (processing error) and the diag
+and if the new identifier is located in the Transfer CFT{{< TransferCFT/componentshortname  >}} partner base,
+Transfer CFT{{< TransferCFT/componentshortname  >}} sets the ret1 field to 9 (processing error) and the diag
 field to "PTNEXIST".

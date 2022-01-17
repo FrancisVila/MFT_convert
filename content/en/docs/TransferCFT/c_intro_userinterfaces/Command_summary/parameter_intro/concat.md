@@ -14,7 +14,7 @@ Manages the filling of a network message (NSDU) during the file data
 exchange phase, permitting two or more FPDUs to be grouped in the same
 data entity (default = yes).
 
-- In receiver mode, {{< TransferCFT/componentshortname >}} accepts
+- In receiver mode, Transfer CFT{{< TransferCFT/componentshortname >}} accepts
     the concatenated FPDUs regardless of the value of this parameter
 
 [Return to Command index](../../)

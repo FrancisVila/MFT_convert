@@ -34,11 +34,12 @@ SAVF name of previous version . SPXSAV Name
 
 ## Uninstall a patch
 
-When you apply a patch, a backup of your previous version is saved in a `SAVF `object (for example, `PATCHSAV`). This SAVF file is located in your program library.
+When you apply a patch, a backup of your previous version is saved in a SAVF object (for example, PATCHSAV). This SAVF file is located in your program library.
 
-If you need to uninstall a patch, please restore the previous SAVF to your **CFT program library** (`PATCHSAV` by default).
+If you need to uninstall a patch, please restore the previous SAVF to your ****CFT program library**** (PATCHSAV by default).
 
-**Example**
+****Example****
+
 ```
 RSTOBJ OBJ(\*ALL) SAVLIB(CFTPGM) DEV(\*SAVF) OBJTYPE(\*ALL) SAVF(CFTPGM/PATCHSAV) OPTION(\*ALL) RSTLIB(CFTPGM)
 ```

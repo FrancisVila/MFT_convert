@@ -8,11 +8,15 @@ Use the ABOUT command to display
 the Transfer CFT product, host, and key information. This command displays the characteristics of the platform
 on which Transfer CFT is installed.
 
-****Syntax****
+******Syntax******
+
 `[ COMMENT   = string ]`
+
 `[ TYPE   = { ALL   | HOST | CFT } ]`
+
 `[ KEY = { FIRST | ALL } ]`
-**Parameters**
+
+****Parameters****
 
 
 | Parameter  | Description  |
@@ -51,7 +55,7 @@ Host information :
 \* release = Seven Service Pack 1
 \* distrib =
 Axway information :
-\* product = {{< TransferCFT/platformorsuiteshortname >}} Transfer CFT
+\* product = AMPLIFY{{< TransferCFT/platformorsuiteshortname >}} Transfer CFT
 \* version = 3.3.2_SP1.0
 \* applied-patches =
 \* forbidden-patches =
@@ -78,9 +82,9 @@ CFTU00I ABOUT _ Correct ()
 
 UNIX and Windows only
 
-This executable file retrieves system information, for example information needed to request a key. To use `cfttell`:
+This executable file retrieves system information, for example information needed to request a key. To use cfttell:
 
-- Navigate to the` <CFTDIRINSTALL>/bin` directory
+- Navigate to the &lt;CFTDIRINSTALL>/bin directory
 - Run cfttell
 
 Options:
@@ -97,23 +101,24 @@ Keys:
 - UID: Generates a unique id.
 - HOSTINFO: Display information used in key generation.
 
-**Examples**
+****Examples****
+
 ```
-C:\\projects>`cfttell target`
+C:\\projects>cfttell target
 win-x86-64
 ```
 
  
 
 ```
-C:\\projects>`cfttell version`
+C:\\projects>cfttell version
 3000
 ```
 
  
 
 ```
-C:\\projects>`cfttell hostinfo`
+C:\\projects>cfttell hostinfo
 CFT version : 3010
 Target : win-x86-32
 Processor architecture : x64

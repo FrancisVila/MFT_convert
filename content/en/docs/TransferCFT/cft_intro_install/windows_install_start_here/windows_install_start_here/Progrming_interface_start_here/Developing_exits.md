@@ -91,12 +91,12 @@ in the CFTPART command:
     then only the password will be requested each time a connection is made
     to the partner.  
 
-**Example  
-**
+****Example  
+****
 
-`CFTPART ID=PART1`  
-`NSPART=*`  
-`NSPASSW = **`  
+CFTPART ID=PART1  
+NSPART=\*  
+NSPASSW = \*\*  
 
 In this example, Transfer CFT will request the NSPART
 to be entered when the connection is made for the first time, and for
@@ -115,7 +115,7 @@ of an executable *cftexl.exe* (loaded into memory when the consultation
 takes place), accompanied by a sample file containing the selection criteria,
 *exitlist.txt*, which allows the data to be output by the Exit list
 to be selected from the central site (or from the server). To use the exit list you also need a definition file CFTNMLOG (see
-the section , the paragraph *Using
+the section Logical File Names, the paragraph *Using
 a definition file*). This is supplied as a sample and can be used only
 on condition that the file name for the selection criteria is *exitlist.txt.*
 
@@ -125,22 +125,35 @@ Exit-list
 : on server
 
 `cftexit id      = exitl,`
+
 `reserv = 8192,`
+
 `prog = cftexl,`
+
 `language = c,`
+
 `mode = replace`
+
 `cftsend id = texit,`
+
 `impl = yes,`
+
 `exit = exitl,`
+
 `mode = replace`
 
 Exit-list remote partner side
 
 `cftrecv id = texit,`
+
 `fname = '&idt.rcv',`
+
 `fcode = binary,`
+
 `frecfm = f,`
+
 `faction = delete,ftype     = b,`
+
 `     mode = replace`
 
  

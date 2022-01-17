@@ -13,7 +13,7 @@ You can only use the **user authentication for Copilot** when implementing the d
 
 ## Enable the file user rights (USERCTRL)
 
-When implementing file user rights with [USERCTRL](../../../../../c_intro_userinterfaces/command_summary/parameter_intro/userctrl), you must run Transfer CFT as a service or start {{< TransferCFT/transfercftname  >}} with administrator privileges.
+When implementing file user rights with [USERCTRL](../../../../../c_intro_userinterfaces/command_summary/parameter_intro/userctrl), you must run Transfer CFT as a service or start Transfer CFT{{< TransferCFT/transfercftname  >}} with administrator privileges.
 
 > **Note**
 >
@@ -22,7 +22,7 @@ When implementing file user rights with [USERCTRL](../../../../../c_intro_userin
 
 The Windows user who is going to perform transfers must have read and write rights for the files to be transferred.
 
-Some user rights must be assigned to the user who launched the {{< TransferCFT/componentshortname  >}} server to permit other Windows users to perform transfers.
+Some user rights must be assigned to the user who launched the Transfer CFT{{< TransferCFT/componentshortname  >}} server to permit other Windows users to perform transfers.
 
 To assign user rights:
 
@@ -33,11 +33,11 @@ To assign user rights:
 
 To define user rights:
 
-1. In a dos command window, enter `lusrmgr.msc `to open the system users list. Check available users.
-1. In a dos command window, enter `secpol.msc` to open the Local Security Policy window.
-1. Select **Security Settings** > **Local Policies** > **User Rights Assignment**.
+1. In a dos command window, enter lusrmgr.msc to open the system users list. Check available users.
+1. In a dos command window, enter secpol.msc to open the Local Security Policy window.
+1. Select ****Security Settings**** > ****Local Policies**** > ****User Rights Assignment****.
 1. Double-click the required right.
-1. Click **Add user or group** and define.
+1. Click ****Add user or group**** and define.
 1. Close and re-open the Windows session to take into account the modifications.
 
 ## How to use system user authentication for the user interfaces
@@ -64,14 +64,14 @@ The user rights to assign are:
 
 ### Define user rights
 
-1. In a dos command window, enter `lusrmgr.msc` to open the system users list. Check available users.
-1. In a dos command window, enter `secpol.msc` to open the Local Security Policy window.
-1. Select **Security Settings** > **Local Policies** > **User Rights Assignment**.
+1. In a dos command window, enter lusrmgr.msc to open the system users list. Check available users.
+1. In a dos command window, enter secpol.msc to open the Local Security Policy window.
+1. Select ****Security Settings**** > ****Local Policies**** > ****User Rights Assignment****.
 1. Double-click the required right.
-1. Click **Add user or group** and define.
+1. Click ****Add user or group**** and define.
 1. Close and re-open the Windows session to take into account the modifications.
 
-Additionally, the user who wants to log on the {{< TransferCFT/componentshortname  >}} UI server must exist both in the Windows system and {{< TransferCFT/centralgovernancename  >}} (or PassPort AM). The Windows system performs the user authentication, and {{< TransferCFT/centralgovernancename  >}} (or PassPort AM) checks the other rights.
+Additionally, the user who wants to log on the Transfer CFT{{< TransferCFT/componentshortname  >}} UI server must exist both in the Windows system and Central Governance{{< TransferCFT/centralgovernancename  >}} (or PassPort AM). The Windows system performs the user authentication, and Central Governance{{< TransferCFT/centralgovernancename  >}} (or PassPort AM) checks the other rights.
 
 > **Note**
 >

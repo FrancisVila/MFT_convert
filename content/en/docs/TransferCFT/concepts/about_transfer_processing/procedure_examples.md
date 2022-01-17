@@ -20,7 +20,7 @@ correct transmission by the END command.
 The name of the procedure to be activated is determined by the value
 of the EXECSF parameter of CFTPARM.
 
-**Example**
+****Example****
 
 If the IDF of the file sent is PAY and if EXECSF = SF&IDF.CMD, the
 name of the file associated with this procedure is:
@@ -55,7 +55,7 @@ identifier (IDF) PAY.
 The name of the procedure to be activated is determined by the value
 of the EXECRF parameter of CFTPARM.
 
-**Example**
+****Example****
 
 If EXECRF = RF&IDF.CMD, the name of the file associated with this
 procedure is: RFPAY.CMD.
@@ -103,7 +103,7 @@ In PeSIT D CFT profile, PeSIT E or ODETTE protocols, the end of transfer
 procedure can activate the sending to the party of a response message
 intended to inform that the transfer has been correctly completed. At
 the party end, the initial transfer entry changes to the (supplementary)
-**A** Acknowledged state.
+A Acknowledged state.
 
 The end of receive procedure described in this third example, is used
 to activate this transmission on receiving a file with an identifier (IDF)
@@ -112,7 +112,7 @@ PAY.
 The name of the procedure to be activated is determined by the value
 of the EXECRF parameter of CFTPARM.
 
-**Example**
+****Example****
 
 If EXECRF = RM&IDF.CMD, the name of the file associated with this
 procedure is: RMPAY.CMD.

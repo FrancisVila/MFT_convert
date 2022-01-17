@@ -2,12 +2,12 @@
     "title": "Transfer CFT command guide and syntax ",
     "linkTitle": "Command guide and parameters",
     "weight": "130"
-}This topic provides a useful list of {{< TransferCFT/componentshortname  >}} commands,
+}This topic provides a useful list of Transfer CFT{{< TransferCFT/componentshortname  >}} commands,
 syntax, and parameters. For a more detailed description of the Transfer
 CFT commands, refer to the link displayed below each command
 syntax.
 
-The {{< TransferCFT/componentshortname  >}} commands are presented in alphabetical order in this
+The Transfer CFT{{< TransferCFT/componentshortname  >}} commands are presented in alphabetical order in this
 summary. Each
 command is presented with possible parameters and default values.
 
@@ -21,7 +21,9 @@ conventions and symbolic variables.](#Syntax_conventions)
 Syntax
 
 `[ COMMENT   = string ]`
+
 `[ TYPE   = { ALL   | HOST | CFT } ]`
+
 `[ KEY = { FIRST | ALL } ]`
 
 [ABOUT details](../about_cftutil/about_command)
@@ -33,7 +35,9 @@ Syntax
 Syntax
 
 `ID = identifier `
+
 `[ TYPE   = { PART   | TRK | CRON | FOLDER } ]`
+
 `[ MODE   = { BOTH   | REQUESTER|   SERVER } ]`
 
 [ACT details](../about_cftutil/reactivate_an_object_cl)
@@ -47,15 +51,25 @@ Syntax
 CFTACCNT TYPE = FILE
 
 `TYPE   = FILE`
+
 `FNAME   = filename `
+
 `ID   = identifier `
+
 `[ AFNAME   = filename ]`
+
 `[ COMMENT   = string ]`
+
 `[ EXEC   = filename ]`
+
 `[ LANGUAGE   = { COBOL   | C } ]`
+
 `[ MAXREC   = { 0   | n } ]`
+
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
+
 `[ SWITCH   = { 00000000   | time } ]`
+
 `[ FORMAT   = { V23   | 23 | V24 | 24} ]`
 
  
@@ -63,11 +77,17 @@ CFTACCNT TYPE = FILE
 CFTACCNT TYPE = SYST
 
 `TYPE   = SYST`
+
 `ACCID   = n `
+
 `ID   = identifier `
+
 `[ COMMENT   = string ]`
+
 `[ FORMAT   = { V23   | 23 | V24 | 24} ]`
+
 `[ LANGUAGE   = { COBOL   | C } ]`
+
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
 
 [CFTACCNT details](../web_copilot_ui/conf_intro/cftaccnt)
@@ -82,19 +102,29 @@ accounting records](../../admin_intro/admin_config_commands/cftaccnt_concepts)
 Syntax
 
 `CFTAPPL   MODE = REPLACE`
+
 `ID   = identifier `
+
 `USERID   = string`
+
 `[ COMMENT   = string ]`
+
 `[ GROUPID   = string ]`
+
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
 
 CFTAPPL MODE = DELETE
 
 `ID   = identifier `
+
 `USERID   = string`
+
 `DIRECT   = { BOTH   |  SEND   | RECV }`
+
 `[ COMMENT   = string ]`
+
 `[ GROUPID   = string ]`
+
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
 
 [CFTAPPL details](../web_copilot_ui/flow_def_intro/cftappl)
@@ -106,9 +136,13 @@ CFTAPPL MODE = DELETE
 Syntax
 
 `FNAME = filename `
+
 `ID = identifier`
+
 `[ COMMENT   = string ]`
+
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
+
 ` `
 
 Or
@@ -116,11 +150,14 @@ Or
  
 
 `IDF = (identifier | mask, identifier | mask, …)`
+
 `ID = identifier`
+
 `[ COMMENT   = string ]`
+
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
 
-** **
+ 
 
 <span id="CFTCAT"></span>
 
@@ -129,23 +166,41 @@ Or
 Syntax
 
 `FNAME   = filename `
+
 `ID   = identifier  `
+
 `[ COMMENT   = string ]`
+
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
+
 `[ RH   = { 10   | n }  ]`
+
 `[ RKERROR   = { KEEP   | DELETE } ]`
+
 `[ RT   = { 10   | n } ]`
+
 `[ RX   = { 10   | n } ]`
+
 `[ SH   = { 10   | n } ]`
+
 `[ ST   = { 10   | n } ]`
+
 `[ SX   = { 10   | n } ]`
+
 `[ TIMEP   = { 23595999   | HHMMSSCC } ]`
+
 `[ TLVCEXEC   = { n } ]`
+
 `[ TLVCLEAR   = { TLVWARN-10 | n } ]`
+
 `[ TLVWEXEC   = { n } ]`
+
 `[ TLVWRATE   = { 60 | n } ]`
+
 `[ TLVWARN   = { 80 | n } ]`
+
 `[ UPDAT   = { 256   | n } ]`
+
 `[ WSCAN   = { 5   | n } ]`
 
 [CFTCAT details](../web_copilot_ui/conf_intro/cftcat)
@@ -154,55 +209,81 @@ Syntax
 
 <span id="CFTCOM"></span>
 
-#### CFTCOM: Defines parameters related to the communication between applications and <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+#### CFTCOM: Defines parameters related to the communication between applications and Transfer CFT{{< TransferCFT/componentshortname  >}}
 
 Syntax
 
 #### CFTCOM TYPE = FILE
 
 `TYPE   = FILE`
+
 `ID   = identifier `
+
 `NAME   = filename  `
+
 `[ COMMENT   =  string   ]`
+
 `[ MODE   = { REPLACE | CREATE | DELETE } ]`
+
 `[ TLVCEXEC   = { n } ]`
+
 `[ TLVCLEAR   = { TLVWARN-20 | n } ]`
+
 `[ TLVWEXEC   = { n } ]`
+
 `[ TLVWRATE   = { 60 | n } ]`
+
 `[ TLVWARN   = { 70 | n } ]`
+
 `[ WSCAN   = { 60   | n } ]`
+
 ` `
 
 #### CFTCOM TYPE = TCPIP
 
 `ID   = identifier `
+
 `HOST   = string `
+
 `PORT   = number`
+
 `PROTOCOL   = { XHTTP }`
+
 `[ ADDRLIST   = ( string, string, ...) ]`
+
 `[ COMMENT   =  string   ]`
+
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
 
-<span style="font-weight: bold;"> </span>[CFTCOM](../web_copilot_ui/conf_intro/cftcom)
+ [CFTCOM](../web_copilot_ui/conf_intro/cftcom)
 
 [Communication
 media](../../admin_intro/admin_config_commands/communication_media_concepts)
 
 <span id="CFTCRON"></span>
 
-#### CFTCRON: Define <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> cron jobs
+#### CFTCRON: Define Transfer CFT{{< TransferCFT/componentshortname  >}} cron jobs
 
 Syntax
 
 `ID = identifier`
+
 `CRONTAB   = string`
+
 `EXEC   = filename`
+
 `EXECPOLICY        = [ INSTANCE |ALLNODES ]`
+
 `TIME   = { string | @shutdown | @startup } [FOR   DETAILS: CFTCRON   time syntax]`
+
 `[ PARM   = string ]`
+
 `[ COMMENT   = string ]`
+
 `[ STATE = { ACTIVE | NOACTIVE } ]`
+
 `[ TYPE   = { EXEC   | CFTUTIL } ]`
+
 `[ USERID   = { CFT   server "userid"   | string } ]`
 
 [Define script execution](../web_copilot_ui/flow_def_intro/cftcron)
@@ -216,13 +297,21 @@ Syntax
 CFTDEST FNAME
 
 `ID = identifier `
+
 `FNAME   = filename `
+
 `[ EXEC   = { DEST   | PART | CHILDREN} ]`
+
 `[ EXECA = { DEST   | PART | CHILDREN} ]`
+
 `[ EXECPRE = { DEST   | PART | CHILDREN} ]`
+
 `[ COMMENT   = string ]`
+
 `[ FOR   = { BOTH   | COMMUT |   LOCAL } ]`
+
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
+
 `[ NOPART   = { ABORT   | CONTINUE | IGNORE } ]`
 
 ####  
@@ -230,11 +319,17 @@ CFTDEST FNAME
 CFTDEST PART
 
 `ID = identifier `
+
 `PART   = (identifier, identifier, ...) `
+
 `[ EXEC   = { DEST   | PART } ]`
+
 `[ COMMENT   = string ]`
+
 `[ FOR   = { BOTH   | COMMUT |   LOCAL } ]`
+
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
+
 `[ NOPART   = { ABORT   | CONTINUE | IGNORE } ]`
 
 [CFTDEST details](../web_copilot_ui/flow_def_intro/cftdest)
@@ -251,32 +346,50 @@ Syntax
 #### CFTEXIT TYPE = FILE
 
 `ID   = identifier `
+
 `TYPE   = FILE`
+
 `[ COMMENT   = string ]`
+
 `[ FORMAT   = { V23   | 23 | V24 | 24 } ]`
+
 `[ LANGUAGE   = { COBOL   | C } ]`
+
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
+
 `[ PARM   = string ]`
+
 `[ PROG   = { CFTEXIT   | string } ]`
+
 `[ RESERV   = { 16384   | n } ]`
+
 `[ WAITTASK   = { 1441   | n } ]`
 
  
 
-#### <span style="font-weight: normal;">CFTEXIT TYPE = { FILE | ACCESS | EXEC | BOT}</span>
+#### CFTEXIT TYPE = { FILE | ACCESS | EXEC | BOT}
 
 `ID   = identifier `
+
 `TYPE   = { FILE | ACCESS |  EXEC | BOT } `
+
 `[ COMMENT   = string ]`
+
 `[ FORMAT   = { V23   | 23 | V24 | 24 } ]`
+
 `[ LANGUAGE   = { COBOL   | C } ]`
+
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
+
 `[ PARM   = string ]`
+
 `[ PROG   = { CFTEXIT   | string } ]`
+
 `[ RESERV   = { 1024   | n } ]`
+
 `[ WAITTASK   = { 1441   | n } ]`
 
-<span style="font-weight: bold;"> </span>CFTEXIT details
+ CFTEXIT details
 
 [Exit
 tasks](../../app_integration_intro/managing_exits)
@@ -288,10 +401,15 @@ tasks](../../app_integration_intro/managing_exits)
 Syntax
 
 `[ TYPE   = { ALL   | ACCNT | APPL | AUTH | CAT | COM | CRON | DEST |  EXIT | IDF | LOG   |  NET | PARM | PART | PROT | RECV | SEND | SSL |  TCP |  XLATE } ]`
+
 `[ CONTENT = { FULL | BRIEF } ]`
+
 `[ FOUT   = filename ]`
+
 `[ FPARM   = filename ]`
+
 `[ FPART   = filename ]`
+
 `[ ID   = { *   | identifier | mask } ]`
 
 [Export
@@ -299,39 +417,60 @@ configuration](../about_cftutil/configuring_cft_start_here/cftext_command)
 
 <span id="CFTFILE"></span>
 
-#### CFTFILE: Create or delete <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> files
+#### CFTFILE: Create or delete Transfer CFT{{< TransferCFT/componentshortname  >}} files
 
 Syntax
 
 `TYPE   = { PARM | PART }`
+
 `FNAME   = filename  `
+
 `[ HABFNAME   = filename ] `
+
 `[ FBLKSIZE   = { 0   |n } ]`
+
 `[ FSPACE   = n ]`
+
 `[ FSPACEX   = n ]`
+
 `[ MODE   = { CREATE   | REPLACE | DELETE } ]`
+
 ` `
 
 #### CFTFILE { CAT | COM }
 
 `TYPE   = {  CAT   | COM }`
+
 `FNAME   = filename `
+
 `[ RECNB   = n ]`
+
 `[ FBLKSIZE   = { 0   |n } ]`
+
 `[ FSPACE   = { 0   | n } ]`
+
 `[ FSPACEX   =  { 0   | n } ]`
+
 `[ HABFNAME   = filename ]`
+
 `[ MODE   = { CREATE   | REPLACE | DELETE } ]`
+
 `[ NODE = { 0   | n } ] available for TYPE=CAT`
+
 ` `
 
 #### CFTFILE { ACCNT | LOG }
 
 `TYPE   = { ACCNT | LOG }`
+
 `FNAME   = filename `
+
 `[ FBLKSIZE   = 0   | n ]`
+
 `[ FSPACE   = 0   |n ]`
+
 `[ FSPACEX   = 0   |n ]`
+
 `[ MODE   = { CREATE   | REPLACE | DELETE } ]`
 
 [Manually create internal datafile files](../../admin_intro/admin_commands_intro/cftfile)
@@ -340,24 +479,50 @@ Syntax
 
 See [CFTFOLDER](../web_copilot_ui/flow_def_intro/cftfolder) for additional parameter details.
 
-`IDF = string         </code> PART = string         </code> SCANDIR         = string</code> WORKDIR = string         </code> [ ARCHIVEDIR = string ]`
+`IDF = string         </code></p>`
+
+`PART = string         </code></p>`
+
+`SCANDIR         = string</code></p>`
+
+`WORKDIR = string         </code></p>`
+
+`[ ARCHIVEDIR = string ]`
+
 `[ ENABLESUBDIR = { YES | NO } ]`
+
 `[ FILEIDLEDELAY = n ]`
+
 `[ METHOD = { FILE | MOVE }] `
+
 `[ STATE = { ACTIVE | } ]`
+
 `[ INTERVAL = n ]`
+
 `[ FILECOUNT = n ]`
+
 `[ FILESIZEMIN = n ]`
+
 `[ FILESIZEMAX = n ]`
+
 `[ INCLUDEFILTER = string ]`
+
 `[ EXCLUDEFILTER = string ]`
+
 `[ RESUBMITCHANGED { YES | NO }]`
+
 `[ FILTERTYPE ]`
+
 `[ GROUPID = string ]`
+
 `[ RENAMEMETHOD ]`
+
 `[ RENAMESEPARATOR = string ] `
+
 `[ USEFSEVENTS = { YES | NO } ]`
+
 `[ USERID = string ]`
+
 <span id="CFTIDF"></span>
 
 #### CFTIDF ID = identifier: Correspondence between the network identifier and the local identifier of a transferred model file 
@@ -365,12 +530,16 @@ See [CFTFOLDER](../web_copilot_ui/flow_def_intro/cftfolder) for additional para
 Syntax
 
 `NIDF   = string `
+
 `PART   = identifier `
+
 `TYPE   = { RECV   | SEND } `
+
 `[ COMMENT   = string ]`
+
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
 
-<span style="font-weight: bold;"> </span>[CFTIDF details](../web_copilot_ui/flow_def_intro/cftidf)
+ [CFTIDF details](../web_copilot_ui/flow_def_intro/cftidf)
 
 [File
 template/virtual file association](../../concepts/cft_configuration_concepts_start_here/network_file_identifier_concepts)
@@ -382,16 +551,27 @@ template/virtual file association](../../concepts/cft_configuration_concepts_sta
 Syntax
 
 `ID   = identifier `
+
 `[ AFNAME   = filename ]`
+
 `[ COMMENT   = string ]`
+
 `[ CONTENT   = { FULL   | BRIEF } ]`
+
 `[ EXEC   = filename ]`
+
 `[ FORMAT   = { V23   | 23 | V24 | 24 } ]`
+
 `[ LENGTH   = { 160   | n } ]`
+
 `[ MAXREC   = { 0   | n } ]`
+
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
+
 `[ NOTIFY   = identifier ]`
+
 `[ OPERMSG   = n ]`
+
 `[ SWITCH   = { 00000000   | time } ]`
 
 [CFTLOG details]()
@@ -408,36 +588,59 @@ Syntax
 #### CFTNET TYPE = TCP
 
 `HOST   = { string | INADDR_ANY } `
+
 `ID   = { identifier | *identifier } `
+
 `[ CALL   = { INOUT   | IN | OUT } ]`
+
 `[ CLASS   = { 1 | n } ]`
+
 `[ MAXCNX   = { 384   | n } ]`
+
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
+
 `[ SRCHOST=   { hostname1 | n} ]`
+
 `[ SRCPORTS= { string } ]`
+
 ` `
 
 #### CFTNET TYPE = SR
 
 `HOST   = { string | INADDR_ANY } `
+
 `ID   = { identifier | *identifier } `
+
 `[ RECALLHOST = { string } ]`
+
 `[ PORT = {0 ...65535 } ]`
+
 `[ SRCHOST    = { string } ] `
+
 `[ SSLTERM           { YES | NO } ]`
 
 #### PROTOCOL = GENERIC
 
 `HOST   = string `
+
 `ID   = identifier `
+
 `INET   = identifier`
+
 `PORT   =  n `
+
 `[ CALL   = { INOUT   | IN | OUT } ]`
+
 `[ CLASS   = { 1 | n } ]`
+
 `[ MAXCNX   = { 384   | n } ]`
+
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
+
 `[ PARM   = string ]`
+
 `[ SRCHOST=   { hostname1 | n} ]`
+
 ` `
 
 #### CFTNET TYPE = TCP
@@ -445,14 +648,23 @@ Syntax
 #### PROTOCOL = SOCKS4, SOCKS5
 
 `HOST   = string  `
+
 `ID   = identifier `
+
 `INET   = identifier`
+
 `PORT   =  n `
+
 `[ CALL   = { INOUT   | IN | OUT } ]`
+
 `[ CLASS   = { 1 | n } ]`
+
 `[ MAXCNX   = { 32   | n } ]`
+
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
+
 `[ SRCHOST=   { hostname1 | n} ]`
+
 `[ USER   = string ]`
 
  [CFTNET details](../web_copilot_ui/conf_intro/cftnet)
@@ -464,54 +676,98 @@ resources](../../admin_intro/admin_config_commands/network_resource_concepts)
 
 <span id="CFTPARM"></span>
 
-#### CFTPARM: General <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> environment parameters
+#### CFTPARM: General Transfer CFT{{< TransferCFT/componentshortname  >}} environment parameters
 
 Syntax
 
 `CAT   = identifier `
+
 `COM   = ( identifier ,  identifier   , ...) `
+
 `ID   = identifier `
+
 `KEY   = {string | #filename } `
+
 `NET   = ( identifier ,  identifier   ,...) `
+
 `PART   = identifier  `
+
 `PARTFNAM   = filename  `
+
 `PROT   = ( identifier ,  identifier   , ...) `
+
 `[ ACCNT   = identifier  ]`
+
 `[ BUFSIZE   =  { 4096   | n } ]`
+
 `[ COMMENT   = string ]`
+
 `[ CRONTABS   = (crontab, crontab, …) ]`
+
 `[ DEFAULT   = { DEFAUT   | identifier } ]`
+
 `[ EXECRE   = filename ]`
+
 `[ EXECRF   = filename ]`
+
 `[ EXECRM   = filename ]`
+
 `[ EXECSE   = filename ]`
+
 `[ EXECSF   = filename ]`
+
 `[ EXECSFA   = filename ]`
+
 `[ EXECSM   = filename  ]`
+
 `[ EXECSMA   = filename ]`
+
 `[ EXITBOT   = identifier  ]`
+
 `[ EXITEOT   = identifier  ]`
+
 `[ FBUFSIZE   = { 0   |65535 } ]`
+
 `[ LENAPPL   = { 32   | 1 } ]`
+
 `[ LOG   = identifier  ]`
+
 `[ MAXTASK   = { 8   | n }  ]`
+
 `[ MAXTRANS   =  { 256   | 1 } ]`
+
 `[ MODE   = { REPLACE   | CREATE | DELETE }  ]`
+
 `[ NPART   = string ]`
+
 `[ PKIPASSW   = { PKIPASSW | string } ]`
+
 `[ RCVALLER   = { STOP   | CONTINUE } ]`
+
 `[ SECFNAME   = filename ]`
+
 `[ SSLMTASK   = { 8   | n } ]`
+
 `[ SSLTTASK   =  {3   | n } ]`
+
 `[ SSLWTASK   = { 10   |n } ]`
+
 `[ SSLWRESP   = { 60   | n } ]`
+
 `[ TRACE   = string ]`
+
 `[ TRANTASK   = { 3   | n } ]`
+
 `[ TRKPART   =  { UNDEFINED   | ALL | SUMMARY | NO } ]`
+
 `[ TRKRECV   =  { UNDEFINED   | ALL | SUMMARY | NO } ]`
+
 `[ TRKSEND   = { UNDEFINED   | ALL | SUMMARY | NO } ]`
+
 `[ USERCTRL   = { NO   | YES } ]`
+
 `[ WAITRESP   = { 60   | n } ]`
+
 `[ WAITTASK   = { 10   | n } ] `
 
 [CFTPARM details](../web_copilot_ui/conf_intro/cftparm)
@@ -526,30 +782,55 @@ parameters](../../admin_intro/admin_config_commands/cftparm_general_parameters)
 Syntax
 
 `PROT   = { (identifier | mask , identifier | mask , .... ) } `
+
 `[ COMMENT   = string  ]`
+
 `[ COMMUT   = { YES   | NO | SERVER }   ]`
+
 `[ CTRLPART   = { IGNORE   | ALL | RPART | SPART } ]`
+
 `[ FPREFIX   = string ]`
+
 `[ GROUP   = identifier ]`
+
 `[ IDF   = identifier  ]`
+
 `[ IMAXTIME   = { 23595999   | time } ]`
+
 `[ IMINTIME   = { 0   | time } ]`
+
 `[ IPART   = identifier ]`
+
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
+
 `[ NACK = { YES | NO | ANY } ]`
+
 `[ NRPART   = string ]`
+
 `[ NRPASSW = string  ]`
+
 `[ NSPART   = string  ]`
+
 `[ NSPASSW   = string  ]`
+
 `[ OMAXTIME   = { 23595999   | time } ]`
+
 `[ OMINTIME   = { 0   | time } ]`
+
 `[ RAUTH   = { *   | identifier } ]`
+
 `[ SAP   = (string, string, …) ]`
+
 `[ SAUTH   = { *   | identifier } ]`
+
 `[ SSL   = identifier ]`
+
 `[ STATE   = {ACTIVEBOTH   | ACTIVEREQ | ACTIVESERV | NOACTIVE } ]`
+
 `[ SYST   = { ‘   ‘ | GCOS7 | GCOS8 | GUARD |  MVS |  OS400 |   UNIX | VM | VMS |  VSE | WINNT | BS2000 } ]`
+
 `[ TRK   = { UNDEFINED   | ALL | SUMMARY | NO } ]`
+
 `[ XLATE   = identifier ]`
 
 [CFTPART details]()
@@ -566,68 +847,127 @@ Syntax
 CFTPROT TYPE = ODETTE
 
 `ID   = identifier `
+
 `NET   = identifier `
+
 `[ DISCTD   = { 20   | n } ]`
+
 `[ DISCTS   = { 65   | n } ]`
+
 `[ DYNAM   = identifier  ]`
+
 `[ EERP   = { 91   | 86 } ]`
+
 `[ EXITA   = identifier ]`
+
 `[ IDF   = string  ]`
+
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
+
 `[ PAD   = { NO   | YES } ] <Deprecated in Transfer CFT 3.5>`
+
 `[ RCOMP   =  { 0   | 15 } ]`
+
 `[ RCREDIT   = { 4   | n } ]`
+
 `[ RESTART   = { 5   | n } ]`
+
 `[ RESYNC   = { NO   | YES } ]`
+
 `[ REVERSE   = { YES   | NO } ]`
+
 `[ RRUSIZE   = { 2048   | n } ]`
+
 `[ RTO   = { 260   | n } ]`
+
 `[ SAP   = string ]`
+
 `[ SCOMP   = { 0 | 1 |15 } ]`
+
 `[ SCREDIT   = { 4   | n } ]`
+
 `[ SRIN   = { BOTH   | NONE | RECEIVER | SENDER } ]`
+
 `[ SROUT   = { BOTH   | NONE | RECEIVER | SENDER } ]`
+
 `[ SRUSIZE   = { 2048 | n } ]`
+
 `[ SSL   = identifier ]`
+
 `[ TCP   = { CFT   | OFTP} ]`
+
 ` `
 
 CFTPROT TYPE = PESIT
 
 `PROF   = ANY `
+
 `ID   = identifier  `
+
 `NET   = identifier `
+
 `[ CONCAT   = { NO   | YES } ] `
+
 `[ DISCTC   = { 60   | n } ] `
+
 `[ DISCTD   = { 10   | n } ] `
+
 `[ DISCTR   = { 45   | n } ] `
+
 `[ DISCTS   = { 60   |n } ] `
+
 `[ DYNAM   = identifier ] `
+
 `[ EXITA   = identifier ] `
+
 `[ HIDE99   = { NO   | YES } ] `
+
 `[ IDF   = string ] `
+
 `[ LOGON   = { YES   | NO } ] `
+
 `[ MODE   = { REPLACE   | CREATE | DELETE } ] `
+
 `[ MULTART   = { NO   | YES } ] `
+
 `[ NACK = { YES | NO | ANY} ]`
+
 `[ PAD   = { NO   | YES } ] <Deprecated in Transfer CFT 3.5>`
+
 `[ RCHKW   = { 3   | n } ] `
+
 `[ RCOMP   = { 0    | 15 } ] `
+
 `[ RESTART   = { 5   | n } ] `
+
 `[ RESYNC   = { NO   | YES } ] `
+
 `[ REVERSE   = { NO   | YES } ] `
+
 `[ RPACING   = { 32767   | n } ] `
+
 `[ RRUSIZE   = { 32750   |n } ] `
+
 `[ RTO   = { 260   | n } ] `
+
 `[ SAP   = string ] `
+
 `[ SCHKW   = { 3   | n } ] `
+
 `[ SCOMP   = { 0 | 15} ] `
+
 `[ SEGMENT   = { NO   | YES } ] `
+
 `[ SPACING   = { 32767   | n } ] `
+
 `[ SRIN   = { BOTH   | NONE | RECEIVER | SENDER } ] `
+
 `[ SROUT   = { BOTH   | NONE | RECEIVER | SENDER } ] `
+
 `[ SRUSIZE   = { 32750   | n } ] `
+
 `[ SSERV   = { GSIT   | string } ] `
+
 `[ SSL   = identifier ]`
 
  
@@ -635,38 +975,71 @@ CFTPROT TYPE = PESIT
 CFTPROT TYPE = PESIT  
 
 `PROF   = CFT`
+
 `ID   = identifier `
+
 `NET   = identifier `
+
 `[ CONCAT   = { NO   | YES } ]`
+
 `[ DISCTC   = { 90   | n }  ]`
+
 `[ DISCTD   =  { 20   | n } ]`
+
 `[ DISCTR   = { 45   | n } ]`
+
 `[ DISCTS   = { 65   | n } ]`
+
 `[ DYNAM   = identifier  ]`
+
 `[ EXITA   = identifier  ]`
+
 `[ HIDE99   = { NO   |YES } ]`
+
 `[ IDF   = string ]`
+
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
+
 `[ MULTART   = { NO   | YES } ]`
+
 `[ PAD   = { NO   | YES } ] <Deprecated in Transfer CFT 3.5>`
+
 `[ RCHKW   = { 2   | n }  ]`
+
 `[ RCOMP   = { 0 |15} ]`
+
 `[ RESTART   = { 5   | n } ]`
+
 `[ RESYNC   = { NO   | YES } ]`
+
 `[ REVERSE   = { NO   | YES } ]`
+
 `[ RPACING   = { 36   | n } ]`
+
 `[ RRUSIZE   = { 4056   | n } ]`
+
 `[ RSERV   = string ]`
+
 `[ RTO   = { 260   | n }  ]`
+
 `[ SAP   = string ]`
+
 `[ SCHKW   = { 2   | n } ]`
+
 `[ SCOMP   = { 0| 15  } ]`
+
 `[ SEGMENT   = { NO   | YES } ]`
+
 `[ SPACING   = { 36   | n } ]`
+
 `[ SRIN   = { BOTH   | NONE | RECEIVER | SENDER } ]`
+
 `[ SROUT   = { BOTH   | NONE | RECEIVER | SENDER } ]`
+
 `[ SRUSIZE   = { 4056   |n } ]`
+
 `[ SSERV   = { CFTPSITX | string } ]`
+
 `[ SSL   = identifier ]`
 
  
@@ -674,38 +1047,71 @@ CFTPROT TYPE = PESIT  
 CFTPROT TYPE = PESIT
 
 `PROF   = EXTERN`
+
 `ID   = identifier `
+
 `NET   = identifier `
+
 `[ CONCAT   = { NO   | YES } ]`
+
 `[ DISCTC   = { 90   | n } ]`
+
 `[ DISCTD   =  { 120   | n } ]`
+
 `[ DISCTR   = { 45   | n } ]`
+
 `[ DISCTS   = { 165   | n } ]`
+
 `[ DYNAM   = identifier  ]`
+
 `[ EXITA   = identifier   ]`
+
 `[ HIDE99   = { NO   |YES } ]`
+
 `[ IDF   = string  ]`
+
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
+
 `[ LOGON   = { YES   | NO } ]`
+
 `[ MULTART   = { NO   | YES } ]`
+
 `[ NACK = { YES | NO | ANY } ]`
+
 `[ RCHKW   = { 2   | n } ]`
+
 `[ RCOMP   =  { 0 | 10   |15 } ]`
+
 `[ RESTART   = { 5   | n } ]`
+
 `[ RESYNC   = { NO   | YES } ]`
+
 `[ REVERSE   = { YES | NO } ]`
+
 `[ RPACING   = { 36 | n } ]`
+
 `[ RRUSIZE   = { 4056 | n } ]`
+
 `[ RTO   = { 260   | n } ]`
+
 `[ SAP   = string ]`
+
 `[ SCHKW   = { 2   | n } ]`
+
 `[ SCOMP   =  { 0 | 10   | 15} ]`
+
 `[ SEGMENT   = { NO | YES } ]`
+
 `[ SPACING   = { 36 | n } ]`
+
 `[ SRIN   = { BOTH   | NONE | RECEIVER | SENDER } ]`
+
 `[ SROUT   = { BOTH   | NONE | RECEIVER | SENDER } ]`
+
 `[ SRUSIZE   = { 4056 | n } ]`
+
 `[ SSERV   = { PESIT   | string } ]`
+
 `[ SSL   = identifier ]`
 
  
@@ -713,34 +1119,63 @@ CFTPROT TYPE = PESIT
 CFTPROT TYPE = PESIT
 
 `PROF   = SIT`
+
 `ID   = identifier `
+
 `NET   = identifier  `
+
 `[ CONCAT   = { NO   | YES } ]`
+
 `[ DISCTC   = { 90   | n } ]`
+
 `[ DISCTD   = { 240 | n } ]`
+
 `[ DISCTR   = { 45 | n } ]`
+
 `[ DISCTS   = { 285 | n } ]`
+
 `[ DYNAM   = identifier ]`
+
 `[ EXITA   = identifier ]`
+
 `[ IDF   = string ]`
+
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
+
 `[ MULTART   =  { NO   | YES } ]`
+
 `[ RCHKW   = { 2   | n } ]`
+
 `[ RCOMP   =  { 0 |   15 } ]`
+
 `[ RESTART   = { 5   | n } ]`
+
 `[ RESYNC   = { NO   | YES } ]`
+
 `[ REVERSE   = { NO   | string } ]`
+
 `[ RPACING   = { 36   | n } ]`
+
 `[ RRUSIZE   = { 4050 | n } ]`
+
 `[ RTO   = { 260 | n } ]`
+
 `[ SAP   = string ]`
+
 `[ SCHKW   = { 2 | n } ]`
+
 `[ SCOMP   = { 0 | 15 } ]`
+
 `[ SEGMENT   = { NO | YES } ]`
+
 `[ SPACING   = { 36   | n } ]`
+
 `[ SRIN   = { BOTH   | NONE | RECEIVER | SENDER } ]`
+
 `[ SROUT   = { BOTH   | NONE | RECEIVER | SENDER } ]`
+
 `[ SRUSIZE   = { 4050 | n } ]`
+
 `[ SSL   = identifier ]`
 
  
@@ -748,41 +1183,77 @@ CFTPROT TYPE = PESIT
 CFTPROT TYPE = PESIT
 
 `PROF   = DMZ  `
+
 `ID   = identifier `
+
 `NET   = identifier `
+
 `[ CONCAT   = { NO   | YES } ]`
+
 `[ CTO   = { 1   | n } ]`
+
 `[ CYCLE   = { 10   | n } ]`
+
 `[ DISCTC   = { 90   | n } ]`
+
 `[ DISCTD   = { 120   | n } ]`
+
 `[ DISCTR   = { 45   | n } ]`
+
 `[ DISCTS   = { 65   | n  } ]`
+
 `[ DYNAM   = identifier ]`
+
 `[ EXITA   = identifier ]`
+
 `[ IDF   = string ]`
+
 `[ LOGON   = { YES   | NO } ]`
+
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
+
 `[ MULTART   = { NO   | YES } ]`
+
 `[ PAD   = { NO   | YES } ] <Deprecated in Transfer CFT 3.5>`
+
 `[ PART   = ( identifier, identifier, …) ]`
+
 `[ RCHKW   = { 2   | n } ]`
+
 `[ RCOMP   = { 0 | 10   | 15 } ]`
+
 `[ RESTART   = { 5   | n  } ]`
+
 `[ RESYNC   = { NO   | YES } ]`
+
 `[ REVERSE   = { NO   | YES } ]`
+
 `[ RPACING   = { 36   | n } ]`
+
 `[ RRUSIZE   = n ]`
+
 `[ RTO   = { 260   | n } ]`
+
 `[ SAP   = string ]`
+
 `[ SCHKW   = { 2   | n } ]`
+
 `[ SCOMP   = { 0 | 10   | 15 } ]`
+
 `[ SEGMENT   = { NO   | YES } ]`
+
 `[ SPACING   = { 36   | n }]`
+
 `[ SRIN   = { BOTH   | NONE | RECEIVER | SENDER } ]`
+
 `[ SROUT   = { BOTH   | NONE | RECEIVER | SENDER } ]`
+
 `[ SSERV   = { PESIT   | string } ]`
+
 `[ SSL   = identifier ]`
+
 `[ TURN   = { FILE   | MESSAGE } ]`
+
 ` `
 
 [CFTPROT details](../../admin_intro/admin_config_commands/transfer_protocol_concepts)
@@ -797,69 +1268,130 @@ Transfer Protocol](../../admin_intro/admin_config_commands/transfer_protocol_con
 Syntax
 
 `[ ACKEXEC = filename]`
+
 `[ COMMENT   = string ]`
+
 `[ CYCDATE   = { 0   | date } ]`
+
 `[ CYCTIME   = { 0   | time } ]`
+
 `[ DELETE   = { NO   | YES } ]`
+
 `[ DIRNB   = { 0   | n } ]`
+
 `[ DUPLICATE = { string 512 } ]`
+
 `[ EXEC   = filename ]`
+
 `[ EXECRALL = { all | parent| children} ]`
+
 `[ EXIT   = identifier  ]`
+
 `[ FACC   = { ‘   ‘ | character } ]`
+
 `[ FACTION   = { ‘   ‘ | DELETE | ERASE |  RENAME | VERIFY  } ]`
+
 `[ FBLKSIZE   = { 0   | n } ]`
+
 `[ FCHECK   = { NO   | YES } ]`
+
 `[ FCODE   = { ‘   ‘ |BINARY | EBCDIC | ASCII } ]`
+
 `[ FDB   = filename ]`
+
 `[ FDELETE = " " |* | C |D | K | H | T | X]`
+
 `[ FDISP   = { BOTH   | NEW | OLD } ]`
+
 `[ FILENOTFOUND = { ABORT | IGNORE } ]`
+
 `[ FKEYLEN   = { 0   | n } ]`
+
 `[ FKEYPOS   = { 0   | n } ]`
+
 `[ FLOWNAME = string ]`
+
 `[ FLRECL   =  { 0   | n  } ]`
+
 `[ FNAME   = filename ]`
+
 `[ FORCE   = { NO   | YES }  ]`
+
 `[ FORG   = { SEQ   | DIRECT | INDEXED | PART } ]`
+
 `[ FPAD = { ' ' | character } ]`
+
 `[ FRECFM   = { ‘   ‘ |F | V | U } ]`
+
 `[ FSPACE   =  { 0   | n } ]`
+
 `[ FTYPE   =  { ‘   ‘ | character } ]`
+
 `[ GROUPID   = string ]`
+
 `[ MACTION   =  { '   ' | REPLACE } ]`
+
 `[ MAXDATE   =  { 99991231   | date } ]`
+
 `[ MAXDURATION =  {0...32767} ]`
+
 `[ MAXTIME   = { 23595999   | time } ]`
+
 `[ MINDATE   = { 10000101   | date } ]`
+
 `[ MINTIME   = { 0   | time } ]`
+
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
+
 `[ NCOMP   = { 0 | 15   } ]`
+
 `[ NETBAND = { 1...16} ]`
+
 `[ NOTIFY   = string ]`
+
 `[ NPAD = { ' ' | character } ]`
+
 `[ NCODE   = { ‘   ‘ |ASCII | BINARY | EBCDIC } ] *available only when the protocol is SFTP`
+
 `[ OPERMSG   = { 0   | 255 } ]`
+
 `[ PRI   = { 128 | n } ]`
+
 `[ RAPPL   = string ]`
+
 `[ RKERROR   = { ' ' | DELETE | KEEP } ]`
+
 `[ RPASSWD = string ]`
+
 `[ RUSER   = string ]`
+
 `[ SAPPL   = string ]`
+
 `[ SERIAL = { ' ' | Y | Z | X } ]`
+
 `[ SOURCEAPPL =  string ]`
+
 `[ SPASSWD = string ]`
+
 `[ STATE   = { DISP | HOLD | KEEP } ]`
+
 `[ STORAGEACCOUNT = string ]`
+
 `[ SUSER   = string ]`
+
 `[ TARGETAPPL = string ]`
+
 `[ TRK   =  { UNDEFINED   | ALL | SUMMARY | NO } ]`
+
 `[ USERID   = { CFT server"userid" | string } ]`
+
 `[ WFNAME   = filename ]`
+
 `[ WORKINGDIR = string ]`
+
 `[ XLATE   = identifier ]`
 
-<span style="font-weight: bold;"> </span>[CFTRECV details](../web_copilot_ui/flow_def_intro/cftrecv)
+ [CFTRECV details](../web_copilot_ui/flow_def_intro/cftrecv)
 
 <span id="CFTSEND"></span>
 
@@ -868,83 +1400,161 @@ Syntax
 Syntax
 
 `[ ACKEXEC = filename]`
+
 `[ ARCHIVEFNAME = string ]`
+
 `[ COMMENT   = string ]`
+
 `[ CYCDATE   = { 0   | date } ]`
+
 `[ CYCLE   = { 0   | n } ]`
+
 `[ CYCTIME   = { 0   | time } ]`
+
 `[ DELETE   = { NO   | YES } ]`
+
 `[ DUPLICATE = { string 512 } ]`
+
 `[ EXEC   = filename ]`
+
 `[ EXECSUB   = { LIST   | FILE | SUBF } ]`
+
 `[ EXECSUBA = {LIST | FILE | SUBF } ]`
+
 `[ EXECSUBPRE = { LIST   | FILE | SUBF } ]`
+
 `[ EXIT   =  identifier   ]`
+
 `[ FACC   = { ‘   ‘ | character } ]`
+
 `[ FACTION   = { NONE   | DELETE | ERASE | ARCHIVE } ]`
+
 `[ FBLKSIZE   = { 0   | n } ]`
+
 `[ FCODE   = { ‘   ‘ |ASCII | BINARY | EBCDIC } ]`
+
 `[ FDB   = filename ]`
+
 `[ FDELETE = " " |* | C |D | K | H | T | X]`
+
 `[ FDISP   = { SHR   | OLD | CHECK } ]`
+
 `[ FILENOTFOUND =  { ABORT | IGNORE } ]`
+
 `[ FILTER = string ]`
+
 `[ FILTERTYPE = string ]`
+
 `[ FKEYLEN   = { 0   | n } ]`
+
 `[ FKEYPOS   = { 0   | n } ]`
+
 `[ FLOWNAME = string ]`
+
 `[ FLRECL   = { 0   | n } ]`
+
 `[ FNAME    = { filename   | mask | dirname | #filename | #mask | #dirname } ]`
+
 `[ FORCE   = { NO   | YES } ]`
+
 `[ FORG   = { SEQ   | DIRECT | INDEXED | PART } ]`
+
 `[ FPAD = { ' ' | character } ]`
+
 `[ FRECFM   = { ‘   ‘ | F | U | V } ]`
+
 `[ FSPACE   = { 0   | n } ]`
+
 `[ FTYPE   = { ‘   ‘ | character } ]`
+
 `[ GROUPID   = string ]`
+
 `[ IDA = string ]`
+
 `[ IMPL   = { NO   | YES } ]`
+
 `[ MAXDATE   =  { 99991231   | date } ]`
+
 `[ MAXDURATION =  {0...32767} ]`
+
 `[ MAXTIME   = { 23595999   | time } ]`
+
 `[ MINDATE   = { 10000101|   date } ]`
+
 `[ MINTIME   = { 0   | time } ]`
+
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
+
 `[ NBLKSIZE   = { 0   | n } ]`
+
 `[ NCODE   = { ‘   ‘ |ASCII | BINARY | EBCDIC } ]`
+
 `[ NCOMP   =  { 0 |   15   } ]`
+
 `[ NETBAND   = { 1...16} ]`
+
 `[ NFNAME   =  { filename   | *filename } ]`
+
 `[ NKEYLEN   = { 0   | n } ]`
+
 `[ NKEYPOS   = { 0|   n } ]`
+
 `[ NLRECL   =  { 0   | n } ]`
+
 `[ NOTIFY   = string  ]`
+
 `[ NPAD = { ' ' | character } ]`
+
 `[ NRECFM   = { ‘   ‘ | F | U | V } ]`
+
 `[ NSPACE   =  { 0   | n } ]`
+
 `[ NTYPE   = character ]`
+
 `[ OPERMSG   = { 0   | 255 } ]`
+
 `[ PARM   = string  ]`
+
 `[ PREEXEC = filename ]`
+
 `[ PRI   = { 128   | n } ]`
+
 `[ RAPPL   = string ]`
+
 `[ RPASSWD = string ]`
+
 `[ RUSER   = string ]`
+
 `[ SAPPL   = string ]`
+
 `[ SELFNAME   = filename ]`
+
 `[ SERIAL = { ' ' | Y | Z | X } ]`
+
 `[ SPART   = string ]`
+
 `[ SPASSWD = string ]`
+
 `[ SOURCEAPPL =  string ]`
+
 `[ STATE   = { DISP   | HOLD | KEEP } ]`
+
 `[ STORAGEACCOUNT = string ]`
+
 `[ SUSER   = string ]`
+
 `[ TARGETAPPL = string ]`
+
 `[ TCYCLE   = { DAY   | MIN | MONTH } ]`
+
 `[ TRK   =  { UNDEFINED   | ALL | SUMMARY | NO } ]`
+
 `[ USERID   = { CFT   server "userid" | string } ]`
+
 `[ WFNAME   = filename ]`
+
 `[ WORKINGDIR = string ]`
+
 `[ XLATE   = identifier ]`
 
 [CFTSEND details](../web_copilot_ui/flow_def_intro/cftsend)
@@ -959,26 +1569,44 @@ file template](../../concepts/cft_configuration_concepts_start_here/default_send
 Syntax
 
 `CIPHLIST   = ( number, number, …) `
+
 `DIRECT   = { CLIENT   | SERVER }`
+
 `[ CACHE   = { NO   | YES } ]`
+
 `[ CERFNAME   = string ]`
+
 `[ COMMENT   = string ]`
+
 `[ DEPTH   = { 10   | n } ]`
+
 `[ DNISSUER   = ( string, string, …) ]`
+
 `[ DNUSER   = { ( string, string, …) | ( string, OP (see Note), string ) } ] `
+
 `[ INTERCID   = string ] `
+
 `[ KEYEXT = { VERIFY | NONE } ]`
+
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
+
 `[ PARM   = string ]`
+
 `[ PASSW = string ] `
+
 `[ ROOTCID   = ( string, string, …) ]`
+
 `[ TRACE   = { 0   | n } ]`
+
 `[ USERCID   = string ]`
+
 `[ VERIFY   = { NONE| REQUIRED   | OPTIONAL } ] *When DIRECT=SERVER`
+
 `[ VERIFY   = { NONE| REQUIRED   | ENFORCED | OPTIONAL } ] *When DIRECT=CLIENT `
+
 `[ VERSION   = { TLSV1  | SSLV3 | TLSV1 | SSLV3COMP | TLSV1COMP} ]`
 
-<span style="font-weight: bold;">Note</span>: <span id="OP"></span>You can configure Transfer
+Note: <span id="OP"></span>You can configure Transfer
 CFT to accept or reject SSL connections based on logical operators used
 within the DN of the certificate. For details refer to [dnuser](parameter_intro/dnuser)
 parameter details.
@@ -994,19 +1622,33 @@ parameter details.
 Syntax
 
 `HOST   = string `
+
 `ID   = identifier `
+
 `[ CLASS   = { 1   | n } ]`
+
 `[ CNXIN   = { 2   | n } ]`
+
 `[ CNXINOUT   = { 4   | n } ]`
+
 `[ CNXOUT   = { 2   | n } ]`
+
 `[ IMAXTIME   = { 23595999   | time } ]`
+
 `[ IMINTIME   = { 0   | time } ]`
+
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
+
 `[ OMAXTIME   = { 23595999   | time } ]`
+
 `[ OMINTIME   = { 0   | time } ]`
+
 `[ RETRYM   = { 12   | n } ]`
+
 `[ RETRYN   = { 4   | n } ]`
+
 `[ RETRYW   = { 1   | n } ]`
+
 `[ VERIFY   = { 0   | n } ]`
 
 [TCP
@@ -1037,12 +1679,19 @@ MODE= { CREATE | <u>REPLACE</u> | DELETE }
 Syntax
 
 `ID   = identifier  `
+
 `[ COMMENT   = string ]`
+
 `[ DIRECT   = { BOTH   | RECV | SEND } ]`
+
 `[ FCODE   = { '   ' | ASCII | EBCDIC } ]`
+
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
+
 `[ NCODE   = { '   ' | ASCII | EBCDIC } ]`
+
 `[ ORIGIN ] = string ]`
+
 `[ TABLE ] = string ]`
 
 [Conversion
@@ -1055,6 +1704,7 @@ tables](../../concepts/cft_configuration_concepts_start_here/translation_table_c
 Syntax
 
 `USERID   = string`
+
 `INDEX   = number`
 
 [CLEARCMD details](../about_cftutil/managing_transfer_states/clearcmd_command)
@@ -1063,28 +1713,38 @@ Syntax
 
 #### CONFIG: Designate the communication medium and the files accessed by CFTUTIL
 
-<span style="font-weight: normal;">Syntax</span>
+Syntax
 
 CONFIG TYPE = { CAT | INPUT | OUTPUT | PARM | PART }
 
 `FNAME = filename `
+
 ` `
 
 CONFIG TYPE = COM
 
 `MEDIACOM = FILE`
+
 `FNAME = filename `
 
  
 
 `CONFIG   TYPE = COM`
+
 `MEDIACOM   = TCPIP`
+
 `FNAME= string `
+
 `[ HIGHPORT   =  { 65535   | n } ]`
+
 `[ LOWPORT   = { 5000   | n } ]`
+
 `[ PASSWORD = string } ]`
+
 `[ PROXY   = string ]`
+
 `[ ROOTCERT   = string ]`
+
 `[ TIMEOUT   = 60   | n ]`
 
 [Setting default CFTUTIL file names](../about_cftutil/redefining_cftutil_data_media)
@@ -1096,24 +1756,43 @@ CONFIG TYPE = COM
 Syntax
 
 `OFNAME   = filename `
+
 `[ CREATE   = { ‘   ‘ | YES | NO } ]`
+
 `[ IBLKSIZE   = { 0   | n } ]`
+
 `[ ICHARSET = string ]`
+
 `[ ICODE   = { ASCII | EBCDIC } ]`
+
 `[ ICOMP   = { 0   | 15 } ]`
+
 `[ ICT   =  { H   | C } ]`
+
 `[ ILRECL   = { 0   | n } ]`
+
 `[ IRECFM   = { F | V | U } ]`
+
 `[ ITYPE   = { ‘ ‘ | character } ]`
+
 `[ OBLKSIZE   = { 0 |n  }   ]`
+
 `[ OCHARSET = string ] `
+
 `[ OCODE   = { ASCII | EBCDIC } ]`
+
 `[ OCOMP   = { 0   | 15 } ]`
+
 `[ OCT   = { H | C } ]`
+
 `[ OLRECL   = { 0   |n } ]`
+
 `[ ORECFM   = { IRECFM   value | F | V| U } ]`
+
 `[ OSPACE   = { 0   | n } ]`
+
 `[ OTYPE   = { ‘   ‘ | character } ]`
+
 `[ XLATE = string ]`
 
 [Copying files off-line](../../admin_intro/admin_commands_intro/copyfile_command)
@@ -1125,49 +1804,83 @@ Syntax
 Syntax
 
 `[ BLKNUM   = { 0   | n } ]`
+
 `[ DIRECT   = { BOTH   | RECV | SEND } ]`
+
 `[ FORCE   =  { YES   | NO   } ]`
+
 `[ IDA   = identifier  ]`
+
 `[ IDF   = identifier ]`
+
 `[ IDT   = { *   | transid } ]`
+
 `[ IDTU   = string ]`
+
 `[ STATE   = { *   | C | D | H | K | T | X } ]`
+
 `[ KDATE   = { 0   | n } ]`
+
 `[ KTIME   = { 0   | n } ]`
+
 `[ PHASE = string ]`
+
 `[ PHASESTEP = string ]`
+
 `[ SCOPE = string ]`
 
 [Deleting catalog entries](../../admin_intro/admin_commands_intro/delete_command)
 
 <span id="DISPLAY"></span>
 
-#### DISPLAY \[ CONTENT = { <span style="text-decoration: underline;">listcat</span> | identifier }\]: Display a model-formatted catalog
+#### DISPLAY \[ CONTENT = { listcat | identifier }\]: Display a model-formatted catalog
 
 Syntax
 
 `[ DATETIMEMAX = { 0 | 991231235959 } ]`
+
 `[ DATETIMEMIN = { 0 | 991231235959 } ]`
+
 `[ DIAGI = { * | 0 | ERROR } ]`
+
 `[ DIRECT   = { BOTH   | RECV | SEND } ]`
+
 `[ EMPTY   = { ANY   | string } ]`
+
 `[ FILE   = filename ]`
+
 `[ FMODEL   =  string   ]`
+
 `[ FOUT = string ]`
+
 `[ HELP   = { NONE   | FIELDS | MODELS | COMMAND } ]`
+
 `[ IDA   =  string   ]`
+
 `[ IDF   = string ]`
+
 `[ IDT   = string ]`
+
 `[ IDTU   = string ]`
+
 `[ MODE   = { ANY   | COLUMN | LINE } ]`
+
 `[ NA   = { ANY   | string } ]`
+
 `[ NIDT    = { string of 8 digits } ]`
+
 `[ NPART   = string ]`
+
 `[ PART   = string ]`
+
 `[ RUSER   = string ]`
+
 `[ SORTBY   = string ]`
+
 `[ SUSER   = string ]`
+
 `[ STATE   = { *   | character } ]`
+
 `[ TYPE   = { *   | FILE | MESSAGE | REPLY | ALL } ]`
 
 [Catalog output display model](../about_cftutil/monitoring_cftutil_intro/display_command)
@@ -1179,34 +1892,63 @@ Syntax
 Syntax
 
 `[ APPCYCID    = string ]`
+
 `[ APPOBJID    = string ]`
+
 `[ APPSTATE    = string ]`
+
 `[ SAPPL    = string ]`
+
 `[ RUSER    = string ]`
+
 `[ SUSER    = string ]`
+
 `[ RPASSWD    = string ]`
+
 `[ SPASSWD    = string ]`
+
 `[ BLKNUM   = { 0   | n } ]`
+
 `[ DIAGC = string ]`
+
 `[ DIRECT   = { BOTH   | RECV | SEND } ]`
+
 `[ FORCE   = { NO   | YES } ]`
+
 `[ FNAME    = string ]`
+
 `[ IDA   = identifier ]`
+
 `[ IDF   = identifier ]`
+
 `[ IDT   = { *   | transid } ] `
+
 `[ IDTU   = string ]`
+
 `[ ISTATE = { YES | NO } ]`
+
 `[ ISTATE    = string ]`
+
 `[ KDATE   = { 0   | n } ]`
+
 `[ KTIME   = { 0   | n } ]`
+
 `[ NFNAME    = string ]`
+
 `[ PARM    = string ]`
+
 `[ PHASE = string ]`
+
 `[ PHASESTEP = string ]`
+
 `[ PRI Number { 0 - 256 } ]`
+
 `[ RAPPL    = string ]`
+
 `[ SCOPE = string ]`
+
 `[ SIGFNAME    = string ]`
+
 `[ STATE  = string ]`
 
 [END details](../about_cftutil/managing_transfer_states/end_command)
@@ -1218,19 +1960,33 @@ Syntax
 Syntax
 
 `[ BLKNUM   = { 0   | n } ]`
+
 `[ DIAGC = string ]`
+
 `[ DIAGP = string ]`
+
 `[ DIRECT   = { BOTH   | RECV | SEND } ]`
+
 `[ FORCE   = { YES | NO   } ]`
+
 `[ IDA   = identifier  ]`
+
 `[ IDF   = identifier  ]`
+
 `[ IDT   = { *   | transid } ]`
+
 `[ IDTU   = string  ]`
+
 `[ STATE  = string ]`
+
 `[ KDATE   = { 0   | n } ]`
+
 `[ KTIME   = { 0   | n } ]`
+
 `[ PHASE = string ]`
+
 `[ PHASESTEP = string ]`
+
 `[ SCOPE = string ]`
 
 [Halting a transfer](../about_cftutil/managing_transfer_states/halt_command)
@@ -1240,8 +1996,11 @@ Syntax
 Syntax
 
 `[ CMD = { string } ]`
+
 `[ CONTENT = { BRIEF | DETAIL} ]`
+
 `[ OFORMAT = { txt | xsd } ]`
+
 <span id="INACT"></span>
 
 #### INACT ID = identifier: Inactivate a partner
@@ -1249,7 +2008,9 @@ Syntax
 Syntax
 
 `[ MODE   = { BOTH   | REQUESTER| SERVER } ]`
+
 `[ FORCE   = { NO   | YES } ]`
+
 `[ TYPE   = PART   | TRK | CRON | FOLDER ]`
 
 [INACT details](../about_cftutil/reactivate_an_object_cl/inact_command)
@@ -1261,22 +2022,36 @@ Syntax
 Syntax
 
 `[ BLKNUM   = 0   | n ]`
+
 `[ DIAGC = string ]`
+
 `[ DIAGP = string ]`
+
 `[ DIRECT   = { BOTH   | RECV | SEND } ]`
+
 `[ FORCE   = { YES   | NO } ]`
+
 `[ IDA   = identifier  ]`
+
 `[ IDF   = identifier ]`
+
 `[ IDT   = { *   | transid } ]`
+
 `[ IDTU   = string  ]`
+
 `[ STATE   = string ]`
+
 `[ KDATE   = { 0   | n } ]`
+
 `[ KTIME   = { 0   | n } ]`
+
 `[ PHASE = string ]`
+
 `[ PHASESTEP = string ]`
+
 `[ SCOPE = string ]`
 
-<span style="font-weight: bold;"> </span>[Suspend transfers](../about_cftutil/managing_transfer_states/keep_command)
+ [Suspend transfers](../about_cftutil/managing_transfer_states/keep_command)
 
 <span id="KSTATE"></span>
 
@@ -1285,33 +2060,48 @@ Syntax
 Syntax
 
 `IDTU   = local transfer counter identifier`
+
 `PART   = partner identifier`
 
 [KSTATE details](../about_cftutil/managing_transfer_states/kstate_command)
 
 <span id="LISTCAT"></span>
 
-#### LISTCAT TYPE = { <span style="text-decoration: underline;">ALL</span> | \* | FILE | MESSAGE | REPLY }: List catalog entries
+#### LISTCAT TYPE = { ALL | \* | FILE | MESSAGE | REPLY }: List catalog entries
 
 Syntax
 
 `[ CONTENT   = { BRIEF   | FULL | DEBUG | EXTEND | COMMUT | STAT | BLKNUM } ]`
+
 `[ DATETIMEMAX = { 0 | 991231235959 } ]`
+
 `[ DATETIMEMIN = { 0 | 991231235959 } ]`
+
 `[ DIAGI = { * | 0 | ERROR } ]`
+
 `[ DIRECT   = { BOTH   | RECV | SEND } ]`
+
 `[ FILE   = filename ]`
+
 `[ IDA   = { *   | identifier } ]`
+
 `[ IDF   = { *   | identifier } ]`
+
 `[ IDT   = { *   | transid } ]`
+
 `[ IDTU   = string  ]`
+
 `[ NIDT    = { string of 8 digits } ]`
+
 `[ NPART   = { identifier | mask } ]`
+
 `[ PART   = { *   | identifier | mask } ]`
+
 `[ SORTBY   = string ]`
+
 `[ STATE   = { *   | string } ]`
 
-<span style="font-weight: bold;"> </span>[LISTCAT details](../about_cftutil/monitoring_cftutil_intro/listcat_command)
+ [LISTCAT details](../about_cftutil/monitoring_cftutil_intro/listcat_command)
 
 <span id="LISTCOM"></span>
 
@@ -1320,12 +2110,16 @@ Syntax
 Syntax
 
 `[ CONTENT   = { ACTIVE   | FULL } ]`
+
 `[ FILE   = filename ]`
+
 `[ FIRST   = { 0   | n } ]`
+
 `[ LAST   = { 0   | max. number of records } ]`
+
 `[ VERIFY   = { NO   | YES } ]`
 
-<span style="font-weight: bold;"> </span>[LISTCOM details](../about_cftutil/monitoring_cftutil_intro/listcom_command)<span style="font-weight: bold;"> </span>
+ [LISTCOM details](../about_cftutil/monitoring_cftutil_intro/listcom_command) 
 
 <span id="LISTLOG"></span>
 
@@ -1334,15 +2128,25 @@ Syntax
 Syntax
 
 `[ LOGLEVEL = { F | E | W | I } ]`
+
 `[ LINES = { -10000 | -20 | 10000 } ]`
+
 `[ DATEMAX =  { 0 | 991231 } ]`
+
 `[ DATEMIN           = { 0 | 991231 } ]`
+
 `[ DATETIMEMAX = { 0 | 99123123595999 } ]`
+
 `[ DATETIMEMIN { 0 | 99123123595999 } ]`
+
 `[ TIMEMIN = { 0| 23595999 } ]`
+
 `[ TIMEMAX           = { 0 | 23595999 } ]`
+
 `[ PATTERN           =     string ]`
+
 `[ DISPLAYNODEID     = { YES | NO } ]`
+
 `[ NODE = string ]`
 
 #### LISTNODE: Display all nodes
@@ -1355,13 +2159,16 @@ No parameters
 
 <span id="LISTPARM"></span>
 
-#### LISTPARM: Display <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> partner details
+#### LISTPARM: Display Transfer CFT{{< TransferCFT/componentshortname  >}} partner details
 
 Syntax
 
 `[ ID   = { *   | identifier } ]`
+
 `[ CONTENT   = { FULL   | BRIEF } ]`
+
 `[ PART   = identifier  ]`
+
 `[ TYPE   = { ACCNT | ALL   | APPL | AUTH | CAT | COM | CRON | EXIT | IDF | LOG | NET | PARM | PROT   | RECV | SEND | SSL | XLATE } ]`
 
 [LISTPARM details](../about_cftutil/configuring_cft_start_here/listparm)
@@ -1373,38 +2180,48 @@ Syntax
 Syntax
 
 `[ ID   = { *   |identifier } ]`
+
 `[ CONTENT   = { FULL   | BRIEF } ]`
+
 `[ TYPE   = { ALL   | DEST |  PART |  TCP | } ]`
 
 [LISTPART details](../about_cftutil/configuring_cft_start_here/listpart_command)
 
 <span id="MQUERY"></span>
 
-#### MQUERY : Query one or more <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> components
+#### MQUERY : Query one or more Transfer CFT{{< TransferCFT/componentshortname  >}} components
 
 Syntax
 
 OBJECT = CACHE
 
 `[ OBJECT   = { CACHE   | SYSTEM | STATS | PROBE } ]`
+
 `[ CONTENT   = { BRIEF   | FULL | STAT } ]`
+
 `[ NAME   = { CAT   | COMMAND | CRON | DMZ | STAT } ]`
+
 ` `
 
 OBJECT = SYSTEM
 
 `[ OBJECT   = { CACHE   | SYSTEM | STATS | PROBE } ]`
+
 `[ CONTENT   = { BRIEF   | FULL | STAT } ]`
+
 `[ NAME   = { CFTMAIN | CFTTRK | CFTTFIL | CFTCOM | CFTTPRO | CFTEXIT | CFTPRX | CFTDSCAN } ]`
+
 ` `
 
 OBJECT = STATS or PROBE
 
 `[ OBJECT   = { CACHE   | SYSTEM | STATS | PROBE } ]`
+
 `[ CONTENT   = { XMLBRIEF   | XMLFULL | RAW } ]`
+
 `[ NAME   = { CAT   | COMMAND | CRON | DMZ | STAT } ]`
 
-<span style="font-weight: bold;"> </span>[MQUERY details](../../admin_intro/admin_commands_intro/querying_a_component_)
+ [MQUERY details](../../admin_intro/admin_commands_intro/querying_a_component_)
 
 <span id="PURGE"></span>
 
@@ -1433,66 +2250,127 @@ Syntax
 Syntax
 
 `PART   = identifier   `
+
 `[ ACKEXEC = filename]`
+
 `[ APPCYCID   = string ]`
+
 `[ APPOBJID   = string ]`
+
 `[ COMMENT   = string  ]`
+
 `[ CYCDATE   =  date    ]`
+
 `[ CYCLE   =  { 0   | n } ]`
+
 `[ CYCTIME   = time ]`
+
 `[ DACTION = { ERROR | RESUME } ]`
+
 `[ DIRNB   = n ]`
+
 `[ EXEC   = filename ]`
+
 `[ EXECRALL = { all | parent| children} ]`
+
 `[ EXIT   = identifier  ]`
+
 `[ FACC   = { ‘   ‘ | character }  ]`
+
 `[ FACTION   = { ‘   ‘ | DELETE | ERASE | RENAME | VERIFY } ]`
+
 `[ FBLKSIZE   = n ]`
+
 `[ FCODE   = { BINARY | EBCDIC | ASCII } ]`
+
 `[ FCOMP   = { 0   | 15 } ]`
+
 `[ FDATE   = { 0   | date } ]`
+
 `[ FDB   = filename ]`
+
 `[ FDISP   = { BOTH   | NEW | OLD }  ]`
+
 `[ FILE   = { FIRST   | ALL }  ]`
+
 `[ FKEYLEN   = { 0   | n }  ]`
+
 `[ FKEYPOS   = { 0   | n }   ]`
+
 `[ FLRECL   = n ]`
+
 `[ FNAME   = filename ]`
+
 `[ FORG   = { SEQ   | DIRECT | INDEXED | PART } ]`
+
 `[ FPAD = { ' ' | character } ]`
+
 `[ FRECFM   = { ‘   ‘ | F | V | U }  ]`
+
 `[ FSPACE   = n ]`
+
 `[ FTIME   = { 0 | time } ]`
+
 `[ FTYPE   =  { ‘   ‘ | character } ]`
+
 `[ IDA   = identifier ]`
+
 `[ MACTION   = { '   ' | REPLACE }  ]`
+
 `[ MAXDATE   =  { 99991231   | date } ]`
+
 `[ MAXDURATION =  {0...32767} ]`
+
 `[ MAXTIME   = { 23595999   | time }  ]`
+
 `[ MINDATE   = { current system date | date } ]`
+
 `[ MINTIME   = { 0   | time } ]`
+
 `[ MODE   = { REPLACE   | CREATE | DELETE }  ]`
+
 `[ NCOMP   = { 0   | 15 } ]`
+
 `[ NETBAND = { 1...16} ]`
+
 `[ NFNAME   = filename ]`
+
 `[ NFVER   =  { 0   | 255 } ]`
+
 `[ NIDF   = string ]`
+
 `[ NPAD = { ' ' | character } ]`
+
 `[ PARM   = string ]`
+
 `[ PRI   = { 128   | n } ]`
+
 `[ PROT = identifier ] `
+
 `[ RAPPL   = string ]`
+
 `[ RUSER   = string ]`
+
 `[ SAPPL   = string ]`
+
 `[ SERIAL = { ' ' | Y | Z | X } ]`
+
 `[ STATE   = { DISP   | HOLD | KEEP } ]`
+
 `[ SUSER   = string ]`
+
 `[ TCYCLE   = { DAY   | MIN | MONTH }  ]`
+
 `[ TRK   = { UNDEFINED   | ALL | SUMMARY | NO } ]`
+
 `[ WFNAME   = filename ]`
+
 `[ WORKINGDIR = string ]`
+
 `[ WSTATES = { string } ]`
+
 `[ WTIMEOUT = { integer } ]`
+
 `[ XLATE   = identifier ]`
 
 [Receiving files](../../concepts/c_recv)
@@ -1504,115 +2382,212 @@ Syntax
 Syntax
 
 `PART   = string`
+
 `[ DIRECT   = { SEND |RECV | BOTH   } ]`
+
 `[ BLKNUM   = { 0   | n } ]`
+
 `[ FORCE   = { NO   | YES } ]`
+
 `[ IDA   = string ]`
+
 `[ IDF   = string ]`
+
 `[ IDT   = string ]`
+
 `[ IDTU   = string ] `
+
 `[ STATE  = string ]`
+
 `[ KDATE   = { 0   | n } ]`
+
 `[ KTIME   = { 0   | n } ]`
+
 `[ PHASE = string ]`
+
 `[ PHASESTEP = string ]`
+
 `[ SCOPE = string ]`
 
 [RESUME details](../about_cftutil/managing_transfer_states/resume_command)
 
 ` `
+
 <span id="SEND"></span>
 
 #### SEND: Request to send transfer
 
-<span class="MCDropDownHead dropDownHead">![Closed](/Images/TransferCFT/transparent.gif)Syntax</span>
+![Closed](/Images/TransferCFT/transparent.gif)Syntax
 
 [TYPE](parameter_intro/type)
 = FILE
 
 `IDF   = identifier  `
+
 `PART   = identifier `
+
 `[ ACKEXEC = filename]`
+
 `[ ACKMINDATE = date ]`
+
 `[ ACKMINTIME = time ]`
+
 `[ ACKSTATE = { REQUIRE | IGNORE } ]`
+
 `[ ACKTIMEOUT = { 0 | n }   ]`
+
 `[ APPCYCID   = string ]`
+
 `[ APPOBJID   = string ]`
+
 `[ ARCHIVEFNAME = string ]`
+
 `[ COMMENT   = string ]`
+
 `[ CYCDATE   = date ]`
+
 `[ CYCLE   = { 0   | n }  ]`
+
 `[ CYCTIME   = time ]`
+
 `[ DACTION = { ERROR | RESUME } ]`
+
 `[ EXEC   = filename ]`
+
 `[ EXECSUB   = { LIST   | FILE | SUBF } ]`
+
 `[ EXECSUBA = {LIST | FILE | SUBF }]`
+
 `[ EXIT   = identifier  ]`
+
 `[ FACC   = { ‘ ‘ | character } ]`
+
 `[ FACTION   = { NONE   | DELETE | ERASE |  ARCHIVE } ]`
+
 `[ FBLKSIZE   = n ]`
+
 `[ FCODE   = { ASCII | BINARY | EBCDIC } ]`
+
 `[ FDATE   = date ]`
+
 `[ FDB   = filename ]`
+
 `[ FDISP   = { SHR   | OLD | CHECK } ]`
+
 `[ FILTER = string ]`
+
 `[ FILTERTYPE = string ]`
+
 `[ FKEYLEN   = { 0   | n } ]`
+
 `[ FKEYPOS   = { 0   | n } ]`
+
 `[ FLRECL   = n ]`
+
 `[ FNAME    = { filename   | mask | dirname | #filename | #mask | #dirname } ]`
+
 `[ FNAMEABS   = { YES | NO }  ]`
+
 `[ FORG   = { SEQ   | DIRECT | INDEXED } ]`
+
 `[ FPAD = { ' ' | character } ]`
+
 `[ FRECFM   = { ‘ ‘ | F | U | V }  ]`
+
 `[ FSPACE   = n ]`
+
 `[ FTIME   = time  ]`
+
 `[ FTYPE   =  { ‘ ‘   | character } ]`
+
 `[ IDA   = identifier ]`
+
 `[ IPART   = identifier ]`
+
 `[ MAXDATE   = { 99991231   | date } ]`
+
 `[ MAXTIME   = { 23595999   | time } ]`
+
 `[ MINDATE   = { current   system date | date } ]`
+
 `[ MAXDURATION =  0...32767} ]`
+
 `[ MINTIME   = { 0   | time } ]`
+
 `[ NBLKSIZE   = n ]`
+
 `[ NCODE   = { ASCII | BINARY | EBCDIC } ]`
+
 `[ NCOMP   = { 0 | 15 } ]`
+
 `[ NETBAND   = { 1...16} ]`
+
 `[ NFNAME   = filename ]`
+
 `[ NIDF   = string ]`
+
 `[ NKEYLEN   = { 0   | n } ]`
+
 `[ NKEYPOS   = { 0   | n }]`
+
 `[ NLRECL   = n  ]`
+
 `[ NPAD = { ' ' | character } ]`
+
 `[ NRECFM   = { ‘   ‘ | F | U | V } ]`
+
 `[ NSPACE   = { FSPACE   value | n } ]`
+
 `[ NTYPE   = { ' ' | character } ]`
+
 `[ PARM   = string ]`
+
 `[ PRESTATE = { ' ' | character } ]`
+
 `[ PREMINDATE = date ]`
+
 `[ PREMINTIME = time ]`
+
 `[ PRETIMEOUT = { 0 | n } ]`
+
 `[ POSTMINDATE = date ]`
+
 `[ POSTMINTIME = time ]`
+
 `[ PRI   = { 128   | n } ]`
+
 `[ PROT = identifier ]`
+
 `[ RAPPL   = string ]`
+
 `[ RUSER   = string ]`
+
 `[ SAPPL   = string ]`
+
 `[ SELFNAME    = filename   ]`
+
 `[ SERIAL = { ' ' | Y | Z | X } ]`
+
 `[ SPART   = identifier ]`
+
 `[ STATE   = { DISP   | HOLD | KEEP } ]`
+
 `[ SUSER   = string ]`
+
 `[ TCYCLE   = { DAY   | MIN | MONTH } ]`
+
 `[ TRK   = { UNDEFINED   | ALL | SUMMARY | NO } ]`
+
 `[ WORKINGDIR = string ]`
+
 `[ WPHASES = { string } ]`
+
 `[ WPHASESTEPS = { string } ]`
+
 `[ WSTATES = { string } ]`
+
 `[ WTIMEOUT = { integer } ]`
+
 `[ XLATE   = identifier ]`
 
  
@@ -1620,98 +2595,170 @@ Syntax
 SEND TYPE = MESSAGE  
 
 `IDM   = identifier  `
+
 `MSG   = string   `
+
 `PART   = identifier `
+
 `[ APPCYCID   = string ]`
+
 `[ APPOBJID   = string ]`
+
 `[ CYCDATE   = date ]`
+
 `[ CYCLE   = { 0   | n } ]`
+
 `[ CYCTIME   = time ]`
+
 `[ DACTION = { ERROR | RESUME} ]`
+
 `[ EXEC   = filename ]`
+
 `[ IDA   = identifier ]`
+
 `[ IPART   = identifier ]`
+
 `[ MAXDATE   = { 99991231   | date  }   ]`
+
 `[ MAXTIME   = { 23595999   | time }  ]`
+
 `[ MINDATE   = { current   system date | date } ]`
+
 `[ MINTIME   = { 0   | time } ]`
+
 `[ PRI   = pri  ]`
+
 `[ PROT = identifier ]`
+
 `[ RAPPL   = string ]`
+
 `[ RUSER   = string ]`
+
 `[ SAPPL   = string ]`
+
 `[ SPART   = identifier ]`
+
 `[ STATE   = { DISP   | HOLD | KEEP } ]`
+
 `[ SUSER   = string ]`
+
 `[ TCYCLE   = { DAY   | MIN | MONTH } ]`
+
 `[ TRK   = { UNDEFINED   | ALL | SUMMARY | NO } ]`
+
 ` `
 
 SEND TYPE = REPLY
 
 `IDM   = identifier `
+
 `IDT   = transid  `
+
 `MSG   = string   `
+
 `PART   = identifier `
+
 `[ APPCYCID   = string ]`
+
 `[ APPOBJID   = string ]`
+
 `[ CYCDATE   = date ]`
+
 `[ CYCTIME   = time ]`
+
 `[ EXEC = filename ]`
+
 `[ IDA = identifier ]`
+
 `[ IPART   = string ]`
+
 `[ MAXDATE   =  { 99991231   | date } ]`
+
 `[ MAXTIME   = { 23595999   | time } ]`
+
 `[ MINDATE   = { current   system date | date } ]`
+
 `[ MINTIME   = { 0   | time } ]`
+
 `[ PRI   = pri ]`
+
 `[ PROT = identifier ]`
+
 `[ RAPPL   = string ]`
+
 `[ RUSER   = string ]`
+
 `[ SAPPL   = string ]`
+
 `[ SUSER   = string ]`
+
 `[ TCYCLE   = { DAY   | MIN | MONTH } ]`
+
 `[ TRK   = { UNDEFINED   | ALL | SUMMARY | NO } ]`
+
 ` `
 
 SEND TYPE = NACK
 
 `IDM   = identifier `
+
 `IDT   = transid  `
+
 `MSG   = string   `
+
 `PART   = identifier `
+
 `[ APPCYCID   = string ]`
+
 `[ APPOBJID   = string ]`
+
 `[ CYCDATE   = date ]`
+
 `[ CYCTIME   = time ]`
+
 `[ EXEC = filename ]`
+
 `[ IDA = identifier ]`
+
 `[ IPART   = string ]`
+
 `[ MAXDATE   =  { 99991231   | date } ]`
+
 `[ MAXTIME   = { 23595999   | time } ]`
+
 `[ MINDATE   = { current   system date | date } ]`
+
 `[ MINTIME   = { 0   | time } ]`
+
 `[ PRI   = pri ]`
+
 `[ PROT = identifier ]`
+
 `[ RAPPL   = string ]`
+
 `[ RUSER   = string ]`
+
 `[ SAPPL   = string ]`
+
 `[ SUSER   = string ]`
+
 `[ TCYCLE   = { DAY   | MIN | MONTH } ]`
+
 `[ TRK   = { UNDEFINED   | ALL | SUMMARY | NO } ]`
 
 [Sending files](../../concepts/using_the_send_command/send_command_basics)
 
 <span id="SHUT"></span>
 
-#### SHUT: Shut down <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> 
+#### SHUT: Shut down Transfer CFT{{< TransferCFT/componentshortname  >}} 
 
 Syntax
 
 `[ FAST   = { NO   | YES | KILL } ]`
+
 `[ RESTART = { YES | NO } ] `
 
-[Manage the <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> server: stop the server](../../admin_intro/start_stop_cft#Stop__server)
+[Manage the Transfer CFT{{< TransferCFT/componentlongname  >}} server: stop the server](../../admin_intro/start_stop_cft#Stop__server)
 
 <span id="START"></span>
 
@@ -1720,19 +2767,33 @@ Syntax
 Syntax
 
 `PART   = { identifier | mask }   `
+
 `[ BLKNUM   = { 0   | n } ]`
+
 `[ DIRECT   = { BOTH   | RECV | SEND } ]`
+
 `[ FORCE   = YES | NO   ]`
+
 `[ IDA   = identifier ]`
+
 `[ IDF   = identifier ]`
+
 `[ IDT   = { *   | transid } ]`
+
 `[ IDTU   = string ]`
+
 `[ MAXDURATION =  {0...32767} ]`
+
 `[ STATE  = string ]`
+
 `[ KDATE   = { 0   | n } ]`
+
 `[ KTIME   = { 0   | n } ]`
+
 `[ PHASE = string ]`
+
 `[ PHASESTEP = string ]`
+
 `[ SCOPE = string ]`
 
 [Restart transfers](../about_cftutil/managing_transfer_states/start_command)
@@ -1744,18 +2805,31 @@ Syntax
 Syntax
 
 `PART   = { identifier | mask }  `
+
 `[ APPSTATE =  string ]`
+
 `[ BLKNUM   = { 0   | n } ]`
+
 `[ DIRECT   = { BOTH   | RECV | SEND } ]`
+
 `[ EXEC   = filename ]`
+
 `[ IDA   = identifier ]`
+
 `[ IDF   = identifier ]`
+
 `[ IDT   = { * | transid } ]`
+
 `[ IDTU   = string ]`
+
 `[ STATE  = string ]`
+
 `[ KDATE   = { 0   | n } ]`
+
 `[ KTIME   = { 0   | n } ]`
+
 `[ PHASE = string ]`
+
 `[ PHASESTEP = string ]`
 
 [SUBMIT details](../about_cftutil/managing_transfer_states/submit_command)
@@ -1767,10 +2841,15 @@ Syntax
 Syntax
 
 `SELECT   = expression`
+
 `[ PHASES  = string ]`
+
 `[ PHASESTEPS = string ]`
+
 `[ STATED = string ]`
+
 `[ STATES   = string ]`
+
 `[ TIMEOUT   = integer ]`
 
 [SWAITCAT concepts](../about_cftutil/managing_transfer_states/swaitcat_concepts) 
@@ -1797,6 +2876,7 @@ log or accounting file]()
 Syntax
 
 `ID   = string  `
+
 `[ VALUE   = {string} ]`
 
 [UCONF details](../../admin_intro/uconf/uconf_commands)
@@ -1818,9 +2898,13 @@ Syntax
 Syntax
 
 `ID   = string  `
+
 `[ CONTENT = BRIEF | FULL ]`
+
 `[ FOUT = string ]`
+
 `[ SCOPE   = { INSTANCE | SET | * | ALL } ]  `
+
 `[ VALUE = string ]`
 
 [](../../admin_intro/uconf/uconf_commands)
@@ -1834,6 +2918,7 @@ UCONF details
 Syntax
 
 `[ DURING   = { 0   | n } ]    *Time   in seconds`
+
 `[ TIME   = { 0   | 23595999 } ] `
 
 [Suspending CFTUTIL execution](../about_cftutil/wait_command)
@@ -1845,6 +2930,7 @@ Syntax
 Syntax
 
 `MSG   = string`
+
 `SEVERITY =   string`
 
 [WLOG details](../../admin_intro/admin_commands_intro/wlog)
@@ -1879,7 +2965,7 @@ For more information, see [TYPOGRAPHICAL CONVENTIONS.](../../gettingstarted_intr
 
 ### Symbolic variables
 
-The following symbolic variable syntaxes are valid in a <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+The following symbolic variable syntaxes are valid in a Transfer CFT{{< TransferCFT/componentshortname  >}}
 environment:
 
 - &VAR
@@ -1949,7 +3035,7 @@ to [Filename conventions](filename_conventions).
 
 ## Using UCONF
 
-In order to merge functioning for all platforms, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> features a configuration interface that provides product uniformity
+In order to merge functioning for all platforms, Transfer CFT{{< TransferCFT/componentshortname  >}} features a configuration interface that provides product uniformity
 regardless of platform differences.
 
 The basic CFTUTIL services provided are:

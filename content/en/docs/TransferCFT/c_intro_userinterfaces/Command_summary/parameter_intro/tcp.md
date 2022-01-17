@@ -12,7 +12,7 @@ TCP
 
 Processing method used for protocol messages:
 
-- CFT: method specific to {{< TransferCFT/transfercftname >}}
+- CFT: method specific to Transfer CFT{{< TransferCFT/transfercftname >}}
 - OFTP: standard method (RFC 2204)
 
 This value applies in both initiator and responder mode.

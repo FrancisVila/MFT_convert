@@ -2,9 +2,9 @@
     "title": "Configure  the environment",
     "linkTitle": "Configuring the environment",
     "weight": "330"
-}This topic describes how to configure the environment for a *file
-type exit*. Before you submit an exit, you must customize the following
-{{< TransferCFT/componentshortname  >}} objects:
+}This topic describes how to configure the environment for a file
+type exit. Before you submit an exit, you must customize the following
+Transfer CFT{{< TransferCFT/componentshortname  >}} objects:
 
 - CFTSEND: to define
     the parameters associated with the EXIT on sending the file
@@ -59,7 +59,8 @@ TYPE = FILE,
 [RESERV = {8192 | n},]
 [WAITTASK = {1441 | n}]
 ```
-**Related topics**
+
+****Related topics****
 
 - [CFTSEND](../../../../concepts/cft_configuration_concepts_start_here/default_send_template_concepts)
 - [CFTRECV](../../../../concepts/cft_configuration_concepts_start_here/default_receive_template_concepts)

@@ -159,7 +159,7 @@ The following section lists deprecated functions for Transfer CFT version 3.7 an
 
 - Deprecated the former Habilitation Access Management method (SECUTIL).
 
-**The following section lists deprecated functions for Transfer CFT version 3.5 and higher:**
+****The following section lists deprecated functions for Transfer CFT version 3.5 and higher:****
 
 - Referencing a certificate with the PKIFNAME using the format (PKIFNAME=TXT://certificate) is no longer supported.
 - Deprecated the PAD parameter.
@@ -203,7 +203,7 @@ The following platforms were previously supported in Transfer CFT 3.0.1; howeve
 
 For a comprehensive list of supported platforms for Transfer CFT, please refer to the [Axway Supported Platforms Guide](https://docs.axway.com/bundle/Axway_Products_SupportedPlatforms_allOS_en/resource/Axway_Products_SupportedPlatforms_allOS_en.pdf).
 
-**Protocols**
+****Protocols****
 
 - Protocol: EBICS is deprecated in Transfer CFT 3.4, with an EOL scheduled for 2020.
 
@@ -232,7 +232,7 @@ For a comprehensive list of supported platforms for Transfer CFT, please refer t
 
 The following list summarizes discontinued functions for Transfer CFT version 3.4.
 
-**OS specific**
+****OS specific****
 
 - z/OS Removed the CFTMI23A executable (COM and catalog migration utility) for migrating from version 2.3.2
 - IBM i - Removed the SI\_TEMPLIB library and the CLEANER/BACKGRND program
@@ -245,12 +245,12 @@ Axway no longer delivers 32-bit versions of Transfer CFT, but does offer an auto
 
 The following list summarizes discontinued functions for Transfer CFT version 3.1.3 and higher. Deprecated and discontinued features are non operational in the new version when you migrate, even though they display in the upgraded configuration. You should check for, and replace, these features as part of the migration procedure.
 
-**Interoperability**
+****Interoperability****
 
 - Composer for Transfer CFT
 - Transfer CFT Navigator
 
-**Networks and protocols**
+****Networks and protocols****
 
 - Networks: LU62, SNA, DSA, X.25, and DNA
 - Protocol: ETEBAC

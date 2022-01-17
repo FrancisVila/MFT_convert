@@ -26,8 +26,8 @@ In the user interface, you can customize the catalog columns and filters. From t
 
 ## Parameter descriptions
 
-**Related
-topics**
+****Related
+topics****
 
 - Command syntax
     [CFTCAT](../../../command_summary#CFTCAT)
@@ -56,10 +56,11 @@ topics**
 | <a href="../../../command_summary/parameter_intro/tlvwarn">TLVWARN</a> | Catalog usage limit before issuing an alert, as is a percentage of filling, where 0% indicates the file is empty, and 100% that it is full.<br/> When this limit is reached, the CFTCAT/TLVWEXEC is executed. |
 | <a href="../../../command_summary/parameter_intro/timep">TIMEP</a>  | Daily purge time chosen by the user.<br/> The user can program an automatic, cyclic catalog purge. The default purge time is midnight.<br/> <blockquote> **Note**<br/> To completely deactivate purging, set TIMEP = 00000000. Use this option with caution as no automatic purging is performed (at a selected time or at midnight).<br/> </blockquote>  |
 | <a href="../../../command_summary/parameter_intro/updat">UPDAT</a>  | Number of synchronization points between two consecutive updates of the catalog file during a transfer. |
-| <a href="../../../command_summary/parameter_intro/wscan">WSCAN</a>  | Enter the frequency (in minutes) with which {{< TransferCFT/componentshortname  >}} scans the catalog file when restarting a transfer: • 5 (default value)<br/> • 1 to 60 |
+| <a href="../../../command_summary/parameter_intro/wscan">WSCAN</a>  | Enter the frequency (in minutes) with which Transfer CFT{{< TransferCFT/componentshortname  >}} scans the catalog file when restarting a transfer: • 5 (default value)<br/> • 1 to 60 |
 
 
-**Example**
+****Example****
+
 ```
 CFTCAT ID = IDCAT,
 FNAME = filename,
@@ -82,6 +83,6 @@ SX = 3
     1, which results in the catalog file being updated at each synchronization
     point of each transfer.
 
-**Related topics**
+****Related topics****
 
 - [PURGE - Purging the catalog](../../../../admin_intro/admin_commands_intro/purge_catalog)

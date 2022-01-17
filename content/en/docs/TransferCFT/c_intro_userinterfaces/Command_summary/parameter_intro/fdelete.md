@@ -6,7 +6,7 @@
 
 #### CFTSEND/CFTRECV
 
-**\[FDELETE = “ “ | “\*” | C | D | K | H | T | X \]**
+****\[FDELETE = “ “ | “\*” | C | D | K | H | T | X \]****
 
 Use FDELETE to enable file deletion based on the transfer state when deleting the catalog record transfer (using the DELETE command or the PURGE procedure).
 

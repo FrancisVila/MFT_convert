@@ -39,7 +39,9 @@ negative acknowledgement and the Transfer CFT log file displays:
 ```
 CFTT93W PART=XFB1 IDS=00008 Negative ack not supported by server
 ```
-****Example****
+
+******Example******
+
 ```
 cftutil send
 type=nack,

@@ -14,7 +14,7 @@ Earlier versions of Transfer CFT used a different message format than version 3.
 
 CFTLOG FORMAT=\[V23,V24\]
 
-For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
+For V23: CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
@@ -22,7 +22,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF01E"></span>CFTF01E PART=&amp;part IDF=&amp;idf IDT=&amp;idt local file [&amp;fname] creation error &amp;diagi<br/> CFTF01E local file [&amp;fname] creation error &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
 | --- | --- |
 | Explanation | During a transfer request a local error was detected when creating a file. |
-| Consequence | The transfer is not executed. The corresponding entry in the catalog is set to the K state if RKERROR=KEEP and the catalog entry is deleted by the {{< TransferCFT/componentshortname  >}} if RKERROR=DELETE. |
+| Consequence | The transfer is not executed. The corresponding entry in the catalog is set to the K state if RKERROR=KEEP and the catalog entry is deleted by the Transfer CFT{{< TransferCFT/componentshortname  >}} if RKERROR=DELETE. |
 | Action | Analyze the file access system code, correct the error and try again. |
 
 
@@ -42,7 +42,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | V23 format<br/> V24 format<br/> Warning | CFTF02W PART=&amp;part IDF=&amp;idf IDT=&amp;idt local file selection error (file not found ignored) &amp;scs<br/> CFTF02W local file selection error (file not found ignored) &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
 | --- | --- |
 | Explanation | During a transfer request, a local error was detected when selecting a file.  |
-| Consequence | When you set <code>filenotfound</code> to <code>ignore</code> in the transfer request, the transfer is executed, the file is ignored, and the corresponding catalog entry is terminated (completed).  |
+| Consequence | When you set filenotfound to ignore in the transfer request, the transfer is executed, the file is ignored, and the corresponding catalog entry is terminated (completed).  |
 | Action | You can ignore the message.  |
 
 
@@ -171,7 +171,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF25E"></span>CFTF25E PART=&amp;part IDF=&amp;idf IDT=&amp;idt working file rename error &amp;scs<br/> CFTF25E working file rename error &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &gt; |
 | --- | --- |
 | Explanation | At the end of a transfer using an intermediate file (CFTRECV WFNAME =) an error was detected: the intermediate file could not be renamed. |
-| Consequence | The file is correctly transferred but an error is reported to the {{< TransferCFT/componentshortname  >}} user. |
+| Consequence | The file is correctly transferred but an error is reported to the Transfer CFT{{< TransferCFT/componentshortname  >}} user. |
 
 
  

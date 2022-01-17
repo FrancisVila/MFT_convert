@@ -2,7 +2,7 @@
     "title": "logchg",
     "linkTitle": "logchg",
     "weight": "1840"
-}### 
+}### logchg
 
 #### WLOG
 

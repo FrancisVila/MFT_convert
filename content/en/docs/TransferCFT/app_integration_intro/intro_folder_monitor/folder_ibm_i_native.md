@@ -9,7 +9,7 @@
 Native file monitoring supports:
 
 - All filtering methods are supported - STRJCMP, WILDMAT, REGEXP.
-- The file method with a file having the same name as the scanned file, which is created in the Working library. This file has a unique member called **met** that hosts metadata.
+- The file method with a file having the same name as the scanned file, which is created in the Working library. This file has a unique member called ****met**** that hosts metadata.
 - The move method with or without timestamps.
 - The RENAMEMETHOD parameter's TIMESTAMP option (MOVE method). However, due to file name limitation the timestamp is shorter than as described in [CFTFOLDER](../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftfolder#CFTFOLDE).
 
@@ -23,16 +23,16 @@ Native file monitoring supports:
 
 To monitor the creation of native files in a library:
 
-1. Define the scanned library using the scanning directory parameter (`SCANDIR`).
-1. Create a working library to take the place of the working directory, and define (`WORKDIR`).
+1. Define the scanned library using the scanning directory parameter (SCANDIR).
+1. Create a working library to take the place of the working directory, and define (WORKDIR).
 
 > **Note**
 >
 > Both libraries must exist, and you cannot mix libraries and IFS directories.
 
-**Example**
+****Example****
 
-Below the CFTFOLDER object uses `CFTFOLD1 `as the scanning directory, and `CFTWRK1 `as the working directory (library).
+Below the CFTFOLDER object uses CFTFOLD1 as the scanning directory, and CFTWRK1 as the working directory (library).
 
 ```
 CFTFOLDER MODE=REPLACE,
@@ -43,8 +43,8 @@ RESUBMITCHANGES=YES,
 FILEIDLEDELAY=5,
 IDF=BIN,
 PART=PARIS,
-SCANDIR=**CFTFOLD1**,
-WORKDIR=**CFTWRK1**,
+SCANDIR=****CFTFOLD1****,
+WORKDIR=****CFTWRK1****,
 RENAMEMETHOD=TIMESTAMP
 ```
 

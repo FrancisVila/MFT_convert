@@ -2,9 +2,12 @@
     "title": "Multi-node architecture",
     "linkTitle": "Multi-node architecture",
     "weight": "160"
-}This topic describes the Transfer CFT multi-node feature, which provides you with horizontal scalability and high availability for failovers. See the <a href="" class="MCTextPopup popup popupHead">Active/active</a> description for conceptual information.
+}This topic describes the Transfer CFT multi-node feature, which provides you with horizontal scalability and high availability for failovers. See the <a href="" class="MCTextPopup popup popupHead">Active/active You configure two or more Transfer CFTs, up to four nodes, each having an independent workload. These nodes will then run as individual nodes until a fail over occurs.
+When a fail over occurs, one of the other nodes takes over from the failed node. This secondary node offers services to new and existing transfer requests and tasks, until the original node resumes activity.
+When the failed node restarts, a manual intervention required in Transfer CFT, it resumes its connections from the secondary or replacement node.
+To summarize, when a fail over occurs the external Transfer CFT is oblivious to any change. The requests are directed to the sysplex distributor, which resubmits any uncommitted transactions to the replacement node. During fail back, the connection returns to the original node.</a> description for conceptual information.
 
-Multi-node benefits for {{< TransferCFT/componentshortname  >}} include:
+Multi-node benefits for Transfer CFT{{< TransferCFT/componentshortname  >}} include:
 
 - Horizontal scalability: increased transfer flow capacity.
 - High availability: active/active including patch management on an active cluster, and automatic node restart after fail over.
@@ -18,7 +21,7 @@ Check that the user that starts Copilot and Transfer CFT has:
 - An OMVS segment and a TSO segment in their profile
 - Rights to issue MODIFY and START console commands
 
-**TSO version**
+****TSO version****
 
 The user ID for the user that starts Copilot and Transfer CFT has a 7-characters maximum when using z/OS 2.2 or lower. Therefore, a user with an 8-character user ID cannot use TSO with a z/OS version lower than v2.3.
 
@@ -59,7 +62,7 @@ A node is a Transfer CFT runtime running on a host. Multiple nodes are called a 
 
 A shared file system is a file system resource that where data is shared by several nodes and/or hosts.
 
-The shared file system for {{< TransferCFT/componentshortname  >}} z/OS is a DASD (direct-access storage device) in a SYSPLEX environment.
+The shared file system for Transfer CFT{{< TransferCFT/componentshortname  >}} z/OS is a DASD (direct-access storage device) in a SYSPLEX environment.
 
 ## Concepts
 
@@ -72,7 +75,7 @@ The shared file system for {{< TransferCFT/componentshortname  >}} z/OS is a DAS
 
 ![](/Images/TransferCFT/zos_SysplexDistributor.png)
 
-**Legend**
+****Legend****
 
 - The Transfer CFT z/OS SYSPLEX distributor receives an incoming call from an external Transfer CFT partner.
 - The SYSPLEX distributor uses either the round robin or the weight active distribution method.

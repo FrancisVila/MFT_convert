@@ -82,7 +82,8 @@ cftrecv id=broadcast,fname=pub/broadcast.rcv,faction=delete
 cftpart id=a,nspart=c, ipart=b, omintime=0, omaxtime=0,prot=pesitssl,sap=1762
  
 ```
-**Testing the use case**
+
+****Testing the use case****
 
 From the initiator site A, execute:
 

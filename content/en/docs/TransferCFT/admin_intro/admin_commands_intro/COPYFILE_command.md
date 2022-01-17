@@ -22,29 +22,49 @@ to copy a sequential file performing the following operations:
 Use the COPYFILE command to copy a sequential file. The COPYFILE command enables a file to compressed offline, before being
 sent by Transfer CFT and a file to be decompressed after being received.
 
-**Syntax**
-`OFNA`ME
-= filename
+****Syntax****
+
+`OFNAME   = filename `
+
 `[ CREATE   = { ‘   ‘ | YES | NO } ]`
+
 `[ IBLKSIZE   = { 0   | n } ]`
+
 `[ ICHARSET = string  ]`
+
 `[ ICODE   = { ASCII | EBCDIC } ]`
+
 `[ ICOMP   = { 0   | 15 } ]`
+
 `[ ICT   =  { H   | C } ]`
+
 `[ ILRECL   = { 0   | n } ]`
+
 `[ IRECFM   = { F | V | U } ]`
+
 `[ ITYPE   = { ‘ ‘ | character } ]`
+
 `[ OBLKSIZE   = { 0 |n  }   ]`
+
 `[ OCHARSET = string  ]`
+
 `[ OCODE   = { ASCII | EBCDIC } ]`
+
 `[ OCOMP   = { 0   | 15 } ]`
+
 `[ OCT   = { H | C } ]`
+
 `[ OLRECL   = { 0   |n } ]`
+
 `[ ORECFM   = { IRECFM   value | F | V| U } ]`
+
 `[ OSPACE   = { 0   | n } ]`
+
 `[ OTYPE   = { ‘   ‘ | character } ]`
+
 `[ XLATE = string ]`
-**Limitation**
+
+****Limitation****
 
 When using ICHARSET and OCHARSET, all file types are supported except Binary (B) and Variable (V).
 

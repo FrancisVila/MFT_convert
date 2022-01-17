@@ -8,7 +8,7 @@
 
 #### CFTSSL
 
-**\[CIPHLIST = {(num, num, ..)}\]**
+****\[CIPHLIST = {(num, num, ..)}\]****
 
 List of the algorithms supported.
 
@@ -18,11 +18,11 @@ Each value defines three algorithms:
 - Encryption algorithm
 - Sealing algorithm
 
-**Server**
+****Server****
 
-This list is compared with the list proposed by the client in order of preference, however the {{< TransferCFT/componentlongname  >}} order takes precedence over the server ciphlist.
+This list is compared with the list proposed by the client in order of preference, however the Transfer CFT{{< TransferCFT/componentlongname  >}} order takes precedence over the server ciphlist.
 
-**Client**
+****Client****
 
 This list is submitted to the server which then makes its selection, depending on the client's preference.
 

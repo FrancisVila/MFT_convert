@@ -4,7 +4,7 @@
     "weight": "180"
 }## Before you start
 
-This section describes how to upgrade or migrate to Transfer CFT {{< TransferCFT/releasenumber  >}}. Additionally, it describes the two methods for updating {{< TransferCFT/componentlongname  >}} z/OS and provides links to detailed information.
+This section describes how to upgrade or migrate to Transfer CFT 3.9{{< TransferCFT/releasenumber  >}}. Additionally, it describes the two methods for updating Transfer CFT{{< TransferCFT/componentlongname  >}} z/OS and provides links to detailed information.
 
 See the section <a href="../c_about_zos/r_prerequistes_zos" class="MCXref xref">System requirements</a> for details on system prerequisites.
 
@@ -14,7 +14,7 @@ See the section <a href="../c_about_zos/r_prerequistes_zos" class="MCXref xref">
 
 ## Update procedure
 
-Applying a service pack (or patch) updates the product without changing the version. Typically it provides corrections to known issues, and may add minor enhancements. There are two supported methods to apply a service pack on {{< TransferCFT/componentlongname  >}} z/OS:
+Applying a service pack (or patch) updates the product without changing the version. Typically it provides corrections to known issues, and may add minor enhancements. There are two supported methods to apply a service pack on Transfer CFT{{< TransferCFT/componentlongname  >}} z/OS:
 
 - [Update the Transfer CFT instance with the maintenance identifier (SMP/E)](c_update_zos/maintenance)
 - [Update or apply a service pack (non-SMP/E)](c_update_zos/t_install_patch_zos)
@@ -29,13 +29,13 @@ This procedure involves a change in product version and the replacement of binar
 
 ### Important information before performing a migration procedure
 
-- You must update your {{< TransferCFT/componentshortname >}} to the most recent service pack version.
-- Backup {{< TransferCFT/componentshortname >}} before beginning an upgrade or migration procedure.
+- You must update your Transfer CFT{{< TransferCFT/componentshortname >}} to the most recent service pack version.
+- Backup Transfer CFT{{< TransferCFT/componentshortname >}} before beginning an upgrade or migration procedure.
 - Before beginning the upgrade or migration procedure stop the existing version of Transfer CFT and the UI server. (Meaning you must stop all cluster nodes as a database migration occurs when performing an upgrade.)
 
 ### About license keys
 
-- You require a new license key if you are migrating from a version 2.x {{< TransferCFT/componentshortname >}} to a version 3.x.
+- You require a new license key if you are migrating from a version 2.x Transfer CFT{{< TransferCFT/componentshortname >}} to a version 3.x.
 - For details on how to apply or update a license key, and the new license key location, see the section **Apply a license key**.
 
 > **Note**

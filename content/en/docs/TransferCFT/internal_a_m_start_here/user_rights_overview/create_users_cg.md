@@ -2,11 +2,11 @@
     "title": "1. Create new users",
     "linkTitle": "1. Create new users ",
     "weight": "210"
-}Begin by creating a new user in {{< TransferCFT/centralgovernancename  >}}. You can refer to the {{< TransferCFT/doctypeuser  >}} for detailed descriptions of user roles and privileges.
+}Begin by creating a new user in Central Governance{{< TransferCFT/centralgovernancename  >}}. You can refer to the Central Governance User Guide{{< TransferCFT/doctypeuser  >}} for detailed descriptions of user roles and privileges.
 
 To create new systems users:
 
-1. In , create your users and assign the appropriate roles and privileges as described in the {{< TransferCFT/centralgovernancename >}} {{< TransferCFT/doctypeuser >}}.  
+1. In Central Governance, create your users and assign the appropriate roles and privileges as described in the Central Governance{{< TransferCFT/centralgovernancename >}} User Guide{{< TransferCFT/doctypeuser >}}.  
     For example, create the system users Flow Manager, Partner Manager, and Monitoring Assistant.
 1. Define the user rights for actions on files (USERCTRL) for these same new users for the local system where Transfer CFT is installed.
 
@@ -14,11 +14,11 @@ To create new systems users:
 >
 > Superusers have all rights on Transfer CFT (you can check the uconf am.passport.superuser parameter, providing a list of superusers). It is important to remember that in UNIX/Windows, the user that installs Transfer CFT is the superuser. This means that even if you restrict a user's roles in Central Governance, if that user is the superuser it can still perform all actions on files. Additionally, if you define a system user during installation, that user is automatically added to the am.superuser list of users.
 
-For users that have not yet implemented {{< TransferCFT/centralgovernancename  >}}, either create user permissions in Passport, or continue on to Step 2.
+For users that have not yet implemented Central Governance{{< TransferCFT/centralgovernancename  >}}, either create user permissions in Passport, or continue on to Step 2.
 
-## Parameter mapping for {{< TransferCFT/centralgovernancename  >}}
+## Parameter mapping for Central Governance{{< TransferCFT/centralgovernancename  >}}
 
-The following parameters are now managed in {{< TransferCFT/centralgovernancename  >}}. This table maps the existing {{< TransferCFT/componentlongname  >}} defaults and values.
+The following parameters are now managed in Central Governance{{< TransferCFT/centralgovernancename  >}}. This table maps the existing Transfer CFT{{< TransferCFT/componentlongname  >}} defaults and values.
 
 
 | CG field  | CG values  | CFTUTIL parameter  | Description  |
@@ -29,6 +29,6 @@ The following parameters are now managed in {{< TransferCFT/centralgovernancenam
 | Create process as user  | YES | <u>NO</u>  | copilot.misc.createprocessasuser  | Specifies whether Transfer CFT Copilot user must have system rights.  |
 
 
-**Related topics**
+****Related topics****
 
 - [Recommendations and troubleshooting](../user_rights_tips)

@@ -18,7 +18,8 @@ can import all their certificates with the same identifier.
 
 ## Working with certificates
 
-**Syntax**
+****Syntax****
+
 ```
 PKICER
 ID    
@@ -66,7 +67,7 @@ Some parameters are available only in command line, as indicated in the table.
 | [IFORM = PKCS12 | DER | PEM | PKCS7] | Format of the certificate to be imported. It must be specified if the INAME parameter is set. |
 | [IKFORM = PKCS8 | DER | PEM ] | Format of the private key to be imported. This parameter must be specified if the IKNAME parameter is set. |
 | [IKNAME = string1..64] | File from which the private key, that is associated with a user certificate, to be imported or updated must be read.<br/> • This parameter is not significant if the certificate format is PKCS#12 as the certificate and private key are declared in the same source file.<br/> • If you call PKIUTIL with IKDATA, you cannot use IKNAME. |
-| [IKPASSW = string1..64] | Source file protection password. This is the source file protection password, and must be specified for encrypted PEM (PKCS#5), PKCS#8 encrypted private key formats, PKCS#7, or for PKCS#12 certificate formats.<br/> There are two ways to specify the password:<br/> • By value: the value assigned to the parameter is used directly as a password<br/> • By reference to a file: the value assigned to the parameter is the name of a file, the first record of which contains the password; in this case, the file name must be preceded by a # or @ sign depending on the OS. On Windows, for example, IKPASSW=#myfile where the password is specified in the <code>myfile </code>file; the first file record must contain the password in plain format. |
+| [IKPASSW = string1..64] | Source file protection password. This is the source file protection password, and must be specified for encrypted PEM (PKCS#5), PKCS#8 encrypted private key formats, PKCS#7, or for PKCS#12 certificate formats.<br/> There are two ways to specify the password:<br/> • By value: the value assigned to the parameter is used directly as a password<br/> • By reference to a file: the value assigned to the parameter is the name of a file, the first record of which contains the password; in this case, the file name must be preceded by a # or @ sign depending on the OS. On Windows, for example, IKPASSW=#myfile where the password is specified in the myfile file; the first file record must contain the password in plain format. |
 | [INAME = string1..128] | Source file containing the certificate to be imported or updated.<br/> • This parameter is not allowed in DELETE mode.<br/> • If you call PKIUTIL with IDATA, you cannot use INAME. |
 | [ITYPE = ALL | USER | ROOT | INTER] | Type of certificate to be imported.<br/> This parameter is mandatory for the modes DELETE (deleting a certificate from the database) and REPLACE (updating a certificate).<br/> This field must be specified for an X.509 certificate, Version 1 or 2. The type of an X.509 version 3 certificate is determined automatically. For version 3, the ITYPE parameter is matched against the type detected:<br/> • ALL: certificate type not checked<br/> • USER: user certificate<br/> • ROOT: root authority certificate<br/> • INTER: intermediate authority certificate |
 | [MODE = REPLACE | CREATE | DELETE] | Action on the certificate. The REPLACE action imports or updates an existing certificate in the database.<br/> If importing a certificate chain, user certificate and all intermediate authority certificates, all certificates are recorded in the local database. The user certificate is recorded with the identifier generated from the ID parameter. Intermediate authority certificates are recorded with internal identifiers in the local internal datafile and cannot be viewed. |

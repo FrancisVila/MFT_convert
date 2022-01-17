@@ -3,12 +3,12 @@
     "linkTitle": "Suspend a transfer when offline",
     "weight": "390"
 }The KSTATE
-command is used to suspend a transfer in the catalog when the Transfer CFT is offline. {{< TransferCFT/componentlongname  >}} must
+command is used to suspend a transfer in the catalog when the Transfer CFT is offline. Transfer CFT{{< TransferCFT/componentlongname  >}} must
 be shut down before the command is run and then restarted. The transfer
 must exist in the catalog and be in one of the following phasesteps: in process
-**C**, available <span style="font-weight: bold;">D</span>,
-or hold <span style="font-weight: bold;">H</span>. After execution of
-the command, the phasestep is set to <span style="font-weight: bold;">K</span>.
+C, available D,
+or hold H. After execution of
+the command, the phasestep is set to K.
 
 The command generates a WLOG command which reports the event in the
 LOG file.

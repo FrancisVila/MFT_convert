@@ -3,9 +3,9 @@
     "linkTitle": "Transfers",
     "weight": "170"
 }This section describes transfers, and how to create and
-manage your transfer operations using {{< TransferCFT/componentshortname  >}}.
+manage your transfer operations using Transfer CFT{{< TransferCFT/componentshortname  >}}.
 
-{{< TransferCFT/componentshortname  >}} can execute both file and message transfers. A transfer
+Transfer CFT{{< TransferCFT/componentshortname  >}} can execute both file and message transfers. A transfer
 consists of a set of processes that result in the exchange of files between
 computers. In a transfer, one computer is the sender, the other is the
 receiver. The sender and receiver are linked together by a network. A
@@ -73,6 +73,6 @@ Optionally you can select a **Layout** in the drop-down menu to use a customized
 
 ## Troubleshooting transfer filters
 
-**Issue**: I cannot create filters
+****Issue****: I cannot create filters
 
-**Solution**: Check that you have the MANAGE CFTUIPREF or VIEW CFTUIPREF privilege. This issue may have occurred due to an upgrade.
+****Solution****: Check that you have the MANAGE CFTUIPREF or VIEW CFTUIPREF privilege. This issue may have occurred due to an upgrade.

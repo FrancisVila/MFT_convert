@@ -19,7 +19,7 @@ In this section:
 
 ## Use case with no security applied
 
-In this use case, there is no security enabled either in Transfer CFT or Central Governance (`am.type=none`). However, normally when using Central Governance with Transfer CFT the default value is set to `am.type=passport`. This results in no control over the transfer owner.
+In this use case, there is no security enabled either in Transfer CFT or Central Governance (am.type=none). However, normally when using Central Governance with Transfer CFT the default value is set to am.type=passport. This results in no control over the transfer owner.
 
 <span id="User"></span>
 
@@ -27,7 +27,7 @@ In this use case, there is no security enabled either in Transfer CFT or Central
 
 This section presents example user types, and describes the actions that they can perform given the Central Governance roles and systems rights. Machine1 represents a system with an installed Transfer CFT and user directories.
 
-These scenarios are based on a single {{< TransferCFT/hflongproductname  >}}, **Machine1** in our examples, that is managed by .
+These scenarios are based on a single Transfer CFT{{< TransferCFT/hflongproductname  >}}, **Machine1** in our examples, that is managed by Central Governance.
 
 
 | User type  | CG role(s)  | Machine1 user  | File access  |
@@ -92,7 +92,7 @@ The help desk cannot monitor Transfer CFT through Central Governance if they ha
 
 #### System Engineer (superuser)
 
-Using CFTUTIL this user can perform configuration actions and transfers, but cannot do anything from {{< TransferCFT/centralgovernancename  >}}.
+Using CFTUTIL this user can perform configuration actions and transfers, but cannot do anything from Central Governance{{< TransferCFT/centralgovernancename  >}}.
 
 - Monitor: YES
 - Transfer: YES
@@ -104,7 +104,7 @@ Using CFTUTIL this user can perform configuration actions and transfers, but can
 
 ## Security controlled by USERCTRL and file rights
 
-The following scenario consists of a single {{< TransferCFT/hflongproductname  >}} with the USERCTRL parameter set to **yes**.
+The following scenario consists of a single Transfer CFT{{< TransferCFT/hflongproductname  >}} with the USERCTRL parameter set to **yes**.
 
 > **Note**
 >
@@ -148,7 +148,7 @@ Help desk alone cannot monitor Transfer CFT through Central Governance if they 
 
 #### System Engineer (superuser)
 
-Using CFTUTIL this user can perform configuration actions and transfers, but cannot do anything from {{< TransferCFT/centralgovernancename  >}}.
+Using CFTUTIL this user can perform configuration actions and transfers, but cannot do anything from Central Governance{{< TransferCFT/centralgovernancename  >}}.
 
 - Monitor: YES, but only using CFTUTIL
 - Transfer: NO, because he cannot access (no rights on) the user's working directories
@@ -205,7 +205,7 @@ Help desk alone cannot monitor Transfer CFT through Central Governance if they 
 
 #### System Engineer (superuser)
 
-Using CFTUTIL this user can perform configuration actions and transfers, but cannot do anything from {{< TransferCFT/centralgovernancename  >}}.
+Using CFTUTIL this user can perform configuration actions and transfers, but cannot do anything from Central Governance{{< TransferCFT/centralgovernancename  >}}.
 
 - Monitor: YES, but only using CFTUTIL 
 - Transfer: NO, because he cannot access (no rights on) the user's working directories
@@ -219,10 +219,10 @@ Using CFTUTIL this user can perform configuration actions and transfers, but can
 
 This example describes how to add an additional user rights security restriction. The user in this case is not known on Central Governance, but has all rights on all files on the Transfer CFT system, runtime as well as working directories.
 
-- When am.passport.userctrl.check\_permissions\_on\_transfer\_execution=no, the default value, this user, who defined on the Machine1, can use CFTUTIL to perform a transfer even though not known on {{< TransferCFT/centralgovernancename >}}.
-- When am.passport.userctrl.check\_permissions\_on\_transfer\_execution=yes, this same user cannot perform transfers as he is not defined in {{< TransferCFT/centralgovernancename >}}.
+- When am.passport.userctrl.check\_permissions\_on\_transfer\_execution=no, the default value, this user, who defined on the Machine1, can use CFTUTIL to perform a transfer even though not known on Central Governance{{< TransferCFT/centralgovernancename >}}.
+- When am.passport.userctrl.check\_permissions\_on\_transfer\_execution=yes, this same user cannot perform transfers as he is not defined in Central Governance{{< TransferCFT/centralgovernancename >}}.
 
-**Related topics**
+****Related topics****
 
 - [About system users](../)
 - [Recommendations and troubleshooting](../user_rights_tips)

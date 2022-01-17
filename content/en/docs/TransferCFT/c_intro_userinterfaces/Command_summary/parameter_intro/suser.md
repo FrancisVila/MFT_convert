@@ -24,7 +24,7 @@ partner sends and controls this parameter, where:
 
 | PeSIT E standard | In standard PeSIT E, the SUSER parameter is transported in the PI 03, and its length is limited to 8-characters. Therefore, the PI 03 contains the concatenated value along with the value of the SAPPL parameter. |
 | --- | --- |
-| **<br /> **PeSIT E CFT/CFT | In PeSIT E between 2 {{< TransferCFT/componentshortname  >}}s, the SUSER parameter value is transported in the PI 99 if this value is longer than 8 characters. |
+| **<br /> **PeSIT E CFT/CFT | In PeSIT E between 2 Transfer CFT{{< TransferCFT/componentshortname  >}}s, the SUSER parameter value is transported in the PI 99 if this value is longer than 8 characters. |
 
 
 > **Note**

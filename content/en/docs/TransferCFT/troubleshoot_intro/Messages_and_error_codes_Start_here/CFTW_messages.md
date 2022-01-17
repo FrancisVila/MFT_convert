@@ -14,7 +14,7 @@ Earlier versions of Transfer CFT used a different message format than version 3.
 
 CFTLOG FORMAT=\[V23,V24\]
 
-For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
+For V23: CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
@@ -82,5 +82,5 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> <br/> V24 format<br/> <br/> Information | <span id="CFTW09I"></span>CFTW09I PART=&amp;part IDF=&amp;idf IDT=&amp;idt CFTSEND &amp;idf NIDF=&amp;nidf XLATE=&amp;xlate<br/> CFTW09I PART=&amp;part IDF=&amp;idf IDT=&amp;idt CFTRECV &amp;idf NIDF=&amp;nidf XLATE=&amp;xlate<br/> CFTW09I CFTSEND &amp;idf &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt NIDF=&amp;nidf XLATE=&amp;xlate&gt;<br/> CFTW09I CFTRECV &amp;idf &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt NIDF=&amp;nidf XLATE=&amp;xlate&gt; |
 | --- | --- |
-| Explanation | Indicates the ID of the CFTSEND or CFTRECV that was actually used.<br/> **Example**<br/> CFTW09I CFTSEND TRTR &lt;IDTU=A0000024 PART=SERVER IDF=TRTR IDT=I0714504 NIDF=TRTR XLATE=CONV1&gt; |
+| Explanation | Indicates the ID of the CFTSEND or CFTRECV that was actually used.<br/> ****Example****<br/> CFTW09I CFTSEND TRTR &lt;IDTU=A0000024 PART=SERVER IDF=TRTR IDT=I0714504 NIDF=TRTR XLATE=CONV1&gt; |
 

@@ -45,7 +45,7 @@ parameters can be classified into categories:
 - protection of the
     parameters set: FORCE
 - free parameters
-    set locally by the {{< TransferCFT/componentshortname >}} user: COMMENT, OPERMSG, DELETE, NOTIFY
+    set locally by the Transfer CFT{{< TransferCFT/componentshortname >}} user: COMMENT, OPERMSG, DELETE, NOTIFY
 - execution control
     parameters:
 
@@ -84,7 +84,7 @@ For a given transfer, these protocol values are the DEFAULT values of
 the corresponding Fxxxxx parameters:
 
 
-| PeSIT E CFT/CFT<br/> PeSIT D CFT profile  | In PeSIT E (CFT to CFT), or PeSIT D CFT profile (transfer between 2 {{< TransferCFT/componentshortname  >}}s), the default values taken by the FSPACE, FTYPE, FBLKSIZE, FLRECL and FRECFM parameters are the values sent by the partner (see the CFTSEND object, NSPACE, NTYPE, NBLKSIZE, NLRECL, NRECFM parameters). For open mode operation, the FNAME parameter can also inherit the value of the partner NFNAME parameter.  |
+| PeSIT E CFT/CFT<br/> PeSIT D CFT profile  | In PeSIT E (CFT to CFT), or PeSIT D CFT profile (transfer between 2 Transfer CFT{{< TransferCFT/componentshortname  >}}s), the default values taken by the FSPACE, FTYPE, FBLKSIZE, FLRECL and FRECFM parameters are the values sent by the partner (see the CFTSEND object, NSPACE, NTYPE, NBLKSIZE, NLRECL, NRECFM parameters). For open mode operation, the FNAME parameter can also inherit the value of the partner NFNAME parameter.  |
 | --- | --- |
 | PeSIT E  | In PeSIT E, the default values taken by the FKEYLEN and FKEYPOS parameters are the values sent by the partner (see the NKEYLEN and NKEYPOS parameters of the CFTSEND object).  |
 | PeSIT SIT profile  | In PeSIT SIT profile, the "file size", "record format" and "record length" information items sent by the protocol are taken as the default values of the FSPACE, FRECFM, FLRECL parameters. |
@@ -107,8 +107,8 @@ ID = FI, the default characteristics indicated in the CFTRECV ID = &lt;default>
 command, are used to supplement those indicated in the RECV command as
 required.
 
-**Correspondence
-between the RECV file command and {{< TransferCFT/componentshortname  >}} parameter setting**
+****Correspondence
+between the RECV file command and Transfer CFT{{< TransferCFT/componentshortname  >}} parameter setting****
 
 ![](/Images/TransferCFT/Correspondence_between_RECV_and_parameter.gif)
 
@@ -183,7 +183,7 @@ The CFTRECV command is used to specify, for each model file (IDF):
 
 The receiver file name and physical characteristics parameters are taken
 into account at each new receive transfer, at the start of the transfer.
-If {{< TransferCFT/componentshortname  >}} is creating a new receiver file:
+If Transfer CFT{{< TransferCFT/componentshortname  >}} is creating a new receiver file:
 
 - these parameters,
     if explicitly defined, take precedence over the values extracted (or deduced)
@@ -206,11 +206,11 @@ The following precedence rule applies globally:
     the parameters of CFTRECV take precedence over those of RECV  
     These parameters themselves take precedence over the protocol values
     received which themselves take precedence over any default file characteristics
-    provided for within some systems, independently of the {{< TransferCFT/componentshortname >}} parameter
+    provided for within some systems, independently of the Transfer CFT{{< TransferCFT/componentshortname >}} parameter
     setting.
 - Where an already
     existing file is reused to receive the data of a new transfer, it is generally
-    not possible to take new file characteristics into account: {{< TransferCFT/componentshortname >}}’s
+    not possible to take new file characteristics into account: Transfer CFT{{< TransferCFT/componentshortname >}}’s
     "standard" behavior then simply involves checking that the new
     values are compatible with the existing ones.
 - If data is stored

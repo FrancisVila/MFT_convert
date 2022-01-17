@@ -15,19 +15,19 @@ Transfer direction that applies to the table.
 
 The possible values are:
 
-- **BOTH** - Both send and receive transfers
+- BOTH - Both send and receive transfers
     are taken into account (default, except for CFTETB)
-- <span style="font-weight: bold;">RECV</span> - Limits the action to receive
+- RECV - Limits the action to receive
     transfers
-- <span style="font-weight: bold;">SEND</span> - Limits the action to send transfers
+- SEND - Limits the action to send transfers
 
 #### DISPLAY, CFTAPPL, RESUME
 
-<span style="font-weight: bold;">\[DIRECT = {</span><span style="font-weight: bold;text-decoration: underline;">CLIENT</span><span style="font-weight: bold;">| SERVER} \]</span>
+\[DIRECT = {CLIENT| SERVER} \]
 
 #### CFTSSL
 
-\[DIRECT = {<span style="text-decoration: underline;">CLIENT</span>|
+\[DIRECT = {CLIENT|
 SERVER} \]
 
 Security profile for the client mode.

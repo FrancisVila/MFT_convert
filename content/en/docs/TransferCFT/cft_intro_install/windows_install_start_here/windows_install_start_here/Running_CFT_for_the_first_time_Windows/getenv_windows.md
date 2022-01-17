@@ -15,9 +15,9 @@ When loading the profile, the files that are loaded depend on if you are using B
 
 ## How to define additional Transfer CFT environment variables
 
-1. In the `%CFTDIRRUNTIME%/profile.d `directory, create a new file with `.bat` as the suffix. In this file, add your customized variables as follows. For example:  
+1. In the %CFTDIRRUNTIME%/profile.d directory, create a new file with .bat as the suffix. In this file, add your customized variables as follows. For example:  
     set MYVARIABLE01=TheVariableValue01  
     set MYVARIABLE02=TheVariableValue02
-1. Execute the `profile `command.
+1. Execute the profile command.
 
 See also, [Windows-specific system functions](../../specific_system_functions).

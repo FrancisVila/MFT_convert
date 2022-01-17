@@ -20,7 +20,7 @@ The following secure connections are available:
 - Connections between the UI and the server can be secured. This is accomplished using the HTTPS and SSL/TLS.
 - Connections with partners for file transfers can be secured using SSL/TLS.
 
-**Secure connections and descriptions**
+********Secure connections and descriptions********
 
 ![](/Images/TransferCFT/sec_guide3.png)
 
@@ -57,7 +57,7 @@ The following features are available:
 
 - Certificate chains are checked and validated.
 - The revocation list is not checked.
-- Local private keys use AES-256 encryption if the `crypto.key_fname` parameter is defined (otherwise Triple DES encryption is used), and are stored in the Transfer CFT internal PKI database. See the *[UCONF parameters](../../admin_intro/uconf/uconf_directory)* section for details on `crypto.key_fname`.
+- Local private keys use AES-256 encryption if the crypto.key\_fname parameter is defined (otherwise Triple DES encryption is used), and are stored in the Transfer CFT internal PKI database. See the *[UCONF parameters](../../admin_intro/uconf/uconf_directory)* section for details on crypto.key\_fname.
 
 ### When not using PassPort, Central Governance, or Flow Manager
 
@@ -65,7 +65,7 @@ The following features are available:
 
 - Certificate chains are checked and validated.
 - The revocation list is not checked.
-- Local private keys use AES-256 encryption if the `crypto.key_fname` parameter is defined (otherwise Triple DES encryption is used), and are stored in the Transfer CFT internal PKI database. See the *[UCONF parameters](../../admin_intro/uconf/uconf_directory)* section for details on `crypto.key_fname`.
+- Local private keys use AES-256 encryption if the crypto.key\_fname parameter is defined (otherwise Triple DES encryption is used), and are stored in the Transfer CFT internal PKI database. See the *[UCONF parameters](../../admin_intro/uconf/uconf_directory)* section for details on crypto.key\_fname.
 
 <span id="__RefHeading___Toc473905763"></span>
 
@@ -106,13 +106,13 @@ The following features are available:
 
 SAML is an open standard that allows the exchange of authentication and authorization data between an identity provider and a service provider.
 
-The web browser single sign-on, SSO, profile enables users to use the same logging details for {{< TransferCFT/componentlongname  >}} as other Axway products (for example, Flow Manager). See the *[Transfer CFT User Guide](https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/AxwayStartPage.htm)* for details and limitations.
+The web browser single sign-on, SSO, profile enables users to use the same logging details for Transfer CFT{{< TransferCFT/componentlongname  >}} as other Axway products (for example, Flow Manager). See the *[Transfer CFT User Guide](https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/AxwayStartPage.htm)* for details and limitations.
 
 ## System user control (USERCTRL)
 
 When transferring files, the user account that starts Transfer CFT is used to access those files by default. The system user control (USERCTRL) feature allows Transfer CFT to read and write files and execute processing scripts on behalf of a user other than the one who operates Transfer CFT. By its very essence, this feature has security impacts because it bypasses the file access rights defined at the operating system level.
 
-A malicious user who has rights to create flows and execute transfers can, using Transfer CFT, access files that he is not authorized to per the operating system file rights definition. Additionally, this user can execute a script on behalf of a specific user (as defined in the UCONF `cft.server.exec_as_user` parameter) and cause damage, such as removing important files.
+A malicious user who has rights to create flows and execute transfers can, using Transfer CFT, access files that he is not authorized to per the operating system file rights definition. Additionally, this user can execute a script on behalf of a specific user (as defined in the UCONF cft.server.exec\_as\_user parameter) and cause damage, such as removing important files.
 
 Let's take, for example, two users - Alice and Bob. Alice does not have rights to read files that are in Bob’s home directory. Alice is able, however, to create a flow and execute a transfer on Transfer CFT.
 
@@ -139,7 +139,7 @@ Now, let's consider a scenario where Alice defines the following configuration o
     recv part=loop, idf=bin, nidf=bob_disclosure, fname=/home/alice/thesecretfile
     ```
 
-In this scenario, Transfer CFT reads the` /home/bob/thesecretfile` file on Bob's behalf, transfers it over PeSIT, and stores it in `/home/alice/thesecretfile`. Alice can now read Bob’s secret file.
+In this scenario, Transfer CFT reads the /home/bob/thesecretfile file on Bob's behalf, transfers it over PeSIT, and stores it in /home/alice/thesecretfile. Alice can now read Bob’s secret file.
 
 ### Mitigating the threat
 

@@ -47,8 +47,8 @@ Example
 ```
 CFTSENDS
  
-//LIB    JCLLIB ORDER=(**cftv2**.INSTALL)
-//      INCLUDE MEMBER=**cftenv**
+//LIB    JCLLIB ORDER=(****cftv2****.INSTALL)
+//      INCLUDE MEMBER=****cftenv****
 //CFTSENDS EXEC PCFTUTIL,PARM='/1=&CFTENV',
 //         QUAL=&CFTENV,OUT=&OUT
 /\* ----  WITH INDIRECT CONFIGURATION FILE ---- \*/
@@ -65,6 +65,6 @@ CFTUTIL parameters:
 
 ### 
 
-**Related topics**
+****Related topics****
 
 - [Starting and stopping the Transfer CFT servers JOBs](../)

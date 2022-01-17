@@ -325,7 +325,8 @@ When FACTION=ARCHIVE and ARCHIVEFNAME is set, the source file is moved to the fi
 ```
 send part=store1, idf=model, faction=archive, archivefname=&FNAME_&FDATE_&IDTU
 ```
-**Limitations**
+
+****Limitations****
 
 - The fname and archivefname must be on the same volume (all platforms)
 - Faction=archive is not supported for:

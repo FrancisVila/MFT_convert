@@ -19,34 +19,52 @@ There are two ways to execute a processing script, either by referencing a templ
 
 ### Executing a template processing script
 
-Using this method, {{< TransferCFT/componentlongname  >}} creates a temporary file based on the template processing script, and replaces all symbolic variables with the corresponding values as they relate to the transfer. For example, if &IDTU is in the script, it is replaced by the actual transfer value. {{< TransferCFT/componentlongname  >}} then executes this temporary file.
+Using this method, Transfer CFT{{< TransferCFT/componentlongname  >}} creates a temporary file based on the template processing script, and replaces all symbolic variables with the corresponding values as they relate to the transfer. For example, if &IDTU is in the script, it is replaced by the actual transfer value. Transfer CFT{{< TransferCFT/componentlongname  >}} then executes this temporary file.
 
-For example, to run the `myscript.sh` script using this method:
+For example, to run the myscript.sh script using this method:
 
 ```
 cftsend id=flow01, exec='exec/myscript.sh'
 ```
-**Example of a template processing script**
+
+****Example of a template processing script****
+
 ```
 CFTUTIL WLOG MSG="execute processing script for the &IDTU transfer "
 CFTUTIL END PART=&PART, IDTU=&IDTU
 ```
-**Example of the corresponding temporary file to execute**
+
+****Example of the corresponding temporary file to execute****
+
 ```
 CFTUTIL WLOG MSG="execute processing script for the A0000001 transfer "
 CFTUTIL END PART=PART01, IDTU=A0000001
 ```
-**Operating system differences**
+
+****Operating system differences****
 
 Depending on the operating system, the temporary file is treated as follows:
 
 - Windows: The temporary file is automatically deleted.
+
 - z/OS: The temporary file is automatically deleted.
+
 - IBM i: The temporary file is automatically deleted.
-- UNIX: You must add the following lines at the end of the template processing script: `rm $0 ``rm $0.err`
+
+- UNIX: You must add the following lines at the end of the template processing script:
+
+    `rm $0 `
+
+    `rm $0.err`
+
 - HP NonStop native environment: You must perform the following steps to remove the temporary file:
     &lt;ul>&lt;li>#PURGE \[#IN\]&lt;/li>&lt;li>The same BTPURGE procedure as in the previous version is delivered and can be executed&lt;/li>&lt;span class="code">RUN &lt;subvolume>UP.BTPURGE \[#DEFAULTS\]&lt;/span>&lt;/ul>&lt;/li>
-- HP NonStop OSS environment: You must add the following lines at the end of the template processing script: `rm $0 ``rm $0.err`
+
+- HP NonStop OSS environment: You must add the following lines at the end of the template processing script:
+
+    `rm $0 `
+
+    `rm $0.err`
 
 <span id="Directly"></span>
 
@@ -56,9 +74,9 @@ Available on Windows and Unix
 
 A second method for executing scripts is to directly run a script. This method allows you to put command arguments directly in the exec parameter itself. However, while you may use symbolic variables in the exec, any symbolic variables contained within the script are not replaced during script execution.
 
-For security reasons, you cannot use this method with the SEND/RECV command's PREEXEC, EXEC or ACKEXEC parameters. Doing so generates an error: `CFTT97E cmd prefix not allowed in procedure execution for SEND and RECV commands`.
+For security reasons, you cannot use this method with the SEND/RECV command's PREEXEC, EXEC or ACKEXEC parameters. Doing so generates an error: CFTT97E cmd prefix not allowed in procedure execution for SEND and RECV commands.
 
-To implement this method, preface the PREEXEC, EXEC or ACKEXEC value with "`cmd:`". For example:
+To implement this method, preface the PREEXEC, EXEC or ACKEXEC value with "cmd:". For example:
 
 ```
 CFTSEND id=flow01, fname=myfile, exec="cmd:myscript.sh &PART &IDT &IDTU"
@@ -69,7 +87,8 @@ To call a program, for example CFTUTIL, you can use a similar syntax as shown he
 ```
 CFTSEND id=flow01, fname=myfile, exec="cmd:**CFTUTIL** end part=&PART, idt=&IDT, direct=SEND"
 ```
-**Limitations Unix only**
+
+****Limitations Unix only****
 
 If a command is incorrect and cannot be executed, the transfer remains in the phasestep C. Possible reasons for this include:
 
@@ -91,7 +110,7 @@ You can use the Premindate/Premintime, Postmindate/Postmintime, and Ackmindate/A
 
 ## Throttle processing
 
-In some cases you may want to limit the number of scripts launched in parallel by {{< TransferCFT/transfercftname  >}} to reduce processing bottlenecks. To do so, set the UCONF `cft.server.max_processing_scripts` parameter to a positive integer to enable and control the number of executed processes.
+In some cases you may want to limit the number of scripts launched in parallel by Transfer CFT{{< TransferCFT/transfercftname  >}} to reduce processing bottlenecks. To do so, set the UCONF cft.server.max\_processing\_scripts parameter to a positive integer to enable and control the number of executed processes.
 
 > **Note**
 >
@@ -99,7 +118,7 @@ In some cases you may want to limit the number of scripts launched in parallel b
 > When using this parameter, every end-of-transfer procedure must notify Transfer CFT once the processing is complete. This can be done either via an END or KEEP command (in the case of an error). Failure to signal that processing is complete means that new procedures cannot start once the cft.server.max\_processing\_scripts value is reached.
 
 ```
-uconfset id=`cft.server.max_processing_scripts`, value=64
+uconfset id=cft.server.max_processing_scripts, value=64
 ```
 
 > **Note**
@@ -110,7 +129,7 @@ uconfset id=`cft.server.max_processing_scripts`, value=64
 
 ### End command
 
-The end command monitors the script completion. Depending on the parameter used (appstate, istate, and diagc) you can, for example, check the progression of the script. The end of processing is marked by a CFTUTIL END with `istate=no` (default).
+The end command monitors the script completion. Depending on the parameter used (appstate, istate, and diagc) you can, for example, check the progression of the script. The end of processing is marked by a CFTUTIL END with istate=no (default).
 
 #### Define istate and appstate
 
@@ -120,7 +139,7 @@ Example
 CFTUTIL end part=&PART,idtu=&IDTU,istate=no,appstate="completed"
 ```
 
-The command CFTUTIL END can be use to set checkpoints in the script execution using the istate=yes (istate is an intermediate state) and APPSTATE value. Doing so allows you to see the step running the script in {{< TransferCFT/componentshortname  >}}.
+The command CFTUTIL END can be use to set checkpoints in the script execution using the istate=yes (istate is an intermediate state) and APPSTATE value. Doing so allows you to see the step running the script in Transfer CFT{{< TransferCFT/componentshortname  >}}.
 
 Example
 
@@ -140,7 +159,8 @@ CFTUTIL END part=&PART,idtu=&IDTU,DIAGC="intermediate checkpoint number 1 “
 
 In your script you can also update values, for example the FNAME. However, the initial FNAME is lost in the catalog and replaced by the new one, and is only available in the log file as shown below.
 
-**Example**
+****Example****
+
 ```
 CFTUTIL end part=&PART,idtu=&IDTU,FNAME=NEW_FNAME
 ...
@@ -152,7 +172,8 @@ CFTR12I END Treated for USER MY_CFT : FNAME value was "pub/FTEST" and is now "NE
 
 When you execute a CFTUTIL HALT or CFTUTIL KEEP, you can set the DIAGP and DIAGC so that when you restart the script it executes specific actions depending on the DIAGP and DIAGC that you defined.
 
-**Example**
+****Example****
+
 ```
 CFTUTIL HALT part=&PART,idtu=&IDTU,DIAGP=”Error 1”,DIAGC=”Connection lost”
 CFTUTIL KEEP part=&PART,idtu=&IDTU,DIAGP=”Error 404”,DIAGC=”File not found”
@@ -162,7 +183,7 @@ CFTUTIL KEEP part=&PART,idtu=&IDTU,DIAGP=”Error 404”,DIAGC=”File not found
 
 In your script, you can handle restart from intermediate steps checking the &APPSTATE value. So if the script fails for any reason, you can run a CFTUTIL HALT or CFTUTIL keep then using a CFTUTIL SUBMIT you can restart your script, which runs from the checkpoint that you set.
 
-Exa**m**ple  
+Exa****m****ple  
 
 ```
 Go to &APPSTATE
@@ -200,7 +221,7 @@ QQQ\_QQQ\_QQQ
 | PREMINDATE  | integer  | From this date on, the preprocessing exec file can be launched.  |
 | PREMINTIME  | integer  | From this time on, the preprocessing exec file can be launched.  |
 | ACKEXEC  | string  | The acknowledgement exec file that will be launched after receiving an ACK or NACK.  |
-| ACKSTATE  | REQUIRE/IGNORE  | Specify if {{< TransferCFT/componentshortname  >}} should wait for an ACK/NACK to enter the X phase.  |
+| ACKSTATE  | REQUIRE/IGNORE  | Specify if Transfer CFT{{< TransferCFT/componentshortname  >}} should wait for an ACK/NACK to enter the X phase.  |
 | POSTSTATE  | DISP  | The transfer phase step as it enters the Y phase.  |
 | PREEXEC  | string  | The preprocessing exec file.  |
 | PRESTATE  | DISP/HOLD  | The transfer phase step as it enters the A phase.  |

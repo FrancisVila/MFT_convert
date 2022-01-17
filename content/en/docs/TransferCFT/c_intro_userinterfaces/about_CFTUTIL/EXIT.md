@@ -10,7 +10,8 @@
 
 By default there is an code that displays when you use the EXIT command to quit CFTUTIL. However, you can use the exitcode parameter to define a specific exit code, which replaces the default value.
 
-**Example**
+****Example****
+
 ```
 >CFTUTIL EXIT EXITCODE=3
  

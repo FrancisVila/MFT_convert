@@ -2,7 +2,7 @@
     "title": "Event messages",
     "linkTitle": "Event messages",
     "weight": "230"
-}{{< TransferCFT/componentlongname  >}} can issue Transfer CFT log messages and account records as Event Messages. A management application can then get these event messages by opening an Event Management System (EMS) distributor process and requesting the messages.
+}Transfer CFT{{< TransferCFT/componentlongname  >}} can issue Transfer CFT log messages and account records as Event Messages. A management application can then get these event messages by opening an Event Management System (EMS) distributor process and requesting the messages.
 
 In this chapter, event-message tokens and their values are represented in DDL. For a quick explanation of DDL as it applies to SPI, refer to the *SPI Programming Manual* &gt; *[Summary of DDL for SPI](http://h20565.www2.hpe.com/hpsc/doc/public/display?sp4ts.oid=4201303&docId=emr_na-c02131958&docLocale=en_US)* appendix.
 
@@ -14,7 +14,7 @@ For general information on how an application obtains event messages from a subs
 
 ## Event messages format
 
-{{< TransferCFT/componentlongname  >}} Guardian events were also available in the previous 2.3 version, with the main difference being that each {{< TransferCFT/componentlongname  >}} process was defined as a sub system. In contrast, {{< TransferCFT/componentlongname  >}} version {{< TransferCFT/releasenumber  >}} only has one defined sub-system.
+Transfer CFT{{< TransferCFT/componentlongname  >}} Guardian events were also available in the previous 2.3 version, with the main difference being that each Transfer CFT{{< TransferCFT/componentlongname  >}} process was defined as a sub system. In contrast, Transfer CFT{{< TransferCFT/componentlongname  >}} version 3.9{{< TransferCFT/releasenumber  >}} only has one defined sub-system.
 
 All messages have the following tokens:
 
@@ -24,7 +24,7 @@ All messages have the following tokens:
 | ZSPI-TKN-SSID  | The Transfer CFT subsystem ID, whose value is XCF2_VAL_EXTERNAL_SSID. This token is described in the SPI Programming Manual. |
 | ZEMS-TKN-EVENTNUMBER  | The event number, as described in the EMS Manual. Its value is one of the values described in the table below. |
 | XCF2_TKN_SUBJ  | The message subject for which the values are described in the Event messages table below. |
-| XCF2_TKN_MSG  | The message text.<br/> For details about Transfer CFT LOG messages, see the {{< TransferCFT/componentlongname  >}} {{< TransferCFT/releasenumber  >}} <a href="https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/Troubleshooting/Messages_and_Codes/Messages_and_error_codes_Start_here_1.htm">Messages and error codes</a> documentation.<br/> The accounting messages are binary coded data, and are described in the exacct.h header. |
+| XCF2_TKN_MSG  | The message text.<br/> For details about Transfer CFT LOG messages, see the Transfer CFT{{< TransferCFT/componentlongname  >}} 3.9{{< TransferCFT/releasenumber  >}} <a href="https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/Troubleshooting/Messages_and_Codes/Messages_and_error_codes_Start_here_1.htm">Messages and error codes</a> documentation.<br/> The accounting messages are binary coded data, and are described in the exacct.h header. |
 | ZEMS_TKN_EMPHASIS  | If the value is ZSPI-VAL-TRUE, the event being reported is considered critical. This is the case for ERROR and FATAL log events as well as process errors when using the NonStop mode.  |
 
 

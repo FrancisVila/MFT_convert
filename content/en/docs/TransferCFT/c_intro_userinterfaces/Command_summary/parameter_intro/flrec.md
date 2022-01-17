@@ -6,7 +6,7 @@
 
 ### flrecl
 
-**\[FLRECL =  0  | {0...32767} \]   **
+****\[FLRECL =  0  | {0...32767} \]   ****
 
 The file attribute check option rejects an incoming
 transfer if local file attributes do not match the virtual file attributes
@@ -19,14 +19,14 @@ side involved in a file transfer, the sender and the receiver, manages
 translations between real computer files and the virtual files transferred
 by the protocol.
 
-The {{< TransferCFT/componentshortname  >}} sender maps the virtual file attributes according to the SEND,
+The Transfer CFT{{< TransferCFT/componentshortname  >}} sender maps the virtual file attributes according to the SEND,
 CFTSEND cards and the physical file attributes. For example, if the FLRECL
 attribute is not set in the SEND/CFTSEND cards, the logical record length
 of the local file is used to set the logical record length of the virtual
 file (on a platform where logical record length of a local file has no
 meaning, such as UNIX or Windows, the arbitrary value of 512 is used).
 
-The {{< TransferCFT/componentshortname  >}}
+The Transfer CFT{{< TransferCFT/componentshortname  >}}
 receiver maps the physical file attributes according to the RECV,
 CFTRECV and the virtual file attributes. For example, if the FLRECL attribute
 is set the logical record length of the local file will be the FLRECL
@@ -37,8 +37,8 @@ records are truncated or padded.
 
 #### CFTRECV, RECV
 
-**\[FLRECL = { 0
-| n} \]    {0...32767}**
+****\[FLRECL = { 0
+| n} \]    {0...32767}****
 
 For records in:
 
@@ -81,7 +81,7 @@ not supplied either by the file sender or by the local parameters:
 
 #### CFTSEND, SEND
 
-**\[FLRECL =  {0...32767} | n} \]   **
+****\[FLRECL =  {0...32767} | n} \]   ****
 
 For records in:
 

@@ -2,7 +2,7 @@
     "title": "Troubleshoot the user interface",
     "linkTitle": "Troubleshoot the user interface",
     "weight": "190"
-}**The Copilot server is running, but cannot connect to the user interface**
+}****The Copilot server is running, but cannot connect to the user interface****
 
 After a successful installation you can start the Transfer CFT Copilot server, but cannot connect to the user interface. Check the following:
 
@@ -10,7 +10,7 @@ Check task manage and verify that the copilot "copxxx" processes are running (as
 
 ![](/Images/TransferCFT/copui_process.png)
 
-In the Transfer CFT installation, access the `<install_directory>/runtime/run` folder &gt; and check the following files for errors or failed steps:
+In the Transfer CFT installation, access the &lt;install\_directory>/runtime/run folder &gt; and check the following files for errors or failed steps:
 
 - copmsg.out file
 - copui.trc file
@@ -75,9 +75,9 @@ Check that the password is correct for the used certificate.
 
 Check the expiration date and replace as needed.
 
-**Access management issue**
+****Access management issue****
 
-A connection error message displays in the `$CFTDIRRUNTIME/run/copsmng.out` file:
+A connection error message displays in the $CFTDIRRUNTIME/run/copsmng.out file:
 
 CONNECT action for SERVICE:UI resource not allowed for user: &lt;username>
 
@@ -90,31 +90,31 @@ To troubleshoot:
 
 If you are using a third party application such as SQLite Expert Personal and you perform, for example, a transaction on the CFTPARM database for a SQL request, the database and user interface may lock up.
 
-**Begin Transaction option**
+****Begin Transaction option****
 
-**![](/Images/TransferCFT/sql1.png)**
+****![](/Images/TransferCFT/sql1.png)****
 
 To unlock the database and correct related issues, you must either perform a **Rollback** or a **Commit** on the third party application.
 
-**Rollback option**
+****Rollback option****
 
-**![](/Images/TransferCFT/sql2.png)**
+****![](/Images/TransferCFT/sql2.png)****
 
-**Commit option**
+****Commit option****
 
-**![](/Images/TransferCFT/commit_sqlite.png)**
+****![](/Images/TransferCFT/commit_sqlite.png)****
 
-**Other issues**
+****Other issues****
 
-If the sends an **404 not found** reply when connecting to the URL, please check that the `cftui `alias parameters are set in UCONF as follows:
+If the sends an **404 not found** reply when connecting to the URL, please check that the cftui alias parameters are set in UCONF as follows:
 
 - copilot.http.aliases.cftui.alias=/cft/ui
 - copilot.http.aliases.cftui.path=&lt;installation\_path>/Transfer\_CFT/home/distrib/cftui
 
 Check:
 
-- If the server sends an **invalid credential** reply, check that the UCONF `copilot.restapi.authentication_method` and `am.type` parameters are consistent with the **REST API server authentication method** diagram. Please see <a href="../#Authentication_methods" class="MCXref xref">Authentication methods</a>
-- If the server sends an **insufficient rights** reply, this indicates that access management is enabled (either or internal AM) and that you do not have the CONNECT privilege on the SERVICE:UI resource.
+- If the server sends an **invalid credential** reply, check that the UCONF copilot.restapi.authentication\_method and am.type parameters are consistent with the **REST API server authentication method** diagram. Please see <a href="../#Authentication_methods" class="MCXref xref">Authentication methods</a>
+- If the server sends an **insufficient rights** reply, this indicates that access management is enabled (either Central Governance or internal AM) and that you do not have the CONNECT privilege on the SERVICE:UI resource.
 - If you are using the **predefined filters** and there seem to be missing transfers or messages, it is possible that they are not displaying due to a difference in time between the client and the server. This is because the predefined filters use the client time and not the server time.
 
  

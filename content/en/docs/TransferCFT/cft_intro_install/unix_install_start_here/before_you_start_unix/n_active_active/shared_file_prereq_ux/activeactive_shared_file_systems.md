@@ -22,7 +22,8 @@ GPFS, General Parallel File System, is the shared file system of choice for Tran
 
 ### Use the default setting for GPFS usage
 
-By default, the shared file system is set to `unknown`, the value to use for GPFS. If you are uncertain as to the file system setting for the Transfer CFT internal data files, execute the following command to return to the default setting:`CFTUTIL uconfunset id=cft.multi_node.shared.filesystem.type`
+By default, the shared file system is set to unknown, the value to use for GPFS. If you are uncertain as to the file system setting for the Transfer CFT internal data files, execute the following command to return to the default setting:  
+`CFTUTIL uconfunset id=cft.multi_node.shared.filesystem.type`
 
 <span id="Using_NFSv4_..7"></span><span id="Using_NFSv4"></span><span id="Using"></span>
 
@@ -44,7 +45,7 @@ To implement active/active Transfer CFT you must use NFSv4 for the Transfer CFT
 ### Define NFS as the shared file system
 
 Execute the following command to enable the Transfer CFT internal data files to reside on a NFSv4 file system.  
-Enter the `nfs `value in lower case:``
+Enter the nfs value in lower case:  
 
 `CFTUTIL uconfset id=cft.multi_node.shared.filesystem.type, value=nfs`
 
@@ -56,25 +57,25 @@ Enter the `nfs `value in lower case:``
 
 #### Define the NFS version
 
-If version 4 is not your NFS subsystem's default, you must specify version 4 when defining the mount options. Depending on your OS, use either the `vers `or `nfsvers` option.
+If version 4 is not your NFS subsystem's default, you must specify version 4 when defining the mount options. Depending on your OS, use either the vers or nfsvers option.
 
 <span id="Set_the_hard_and_nointr_options_..11"></span><span id="Set_the_hard_and_nointr_options"></span>
 
 #### Set the hard and nointr options
 
-Mount NFSv4 using the `hard `and `nointr` options. The `intr` mount option should not be available for NFSv4, but if you are in doubt, you should explicitly specify the `nointr `option.
+Mount NFSv4 using the hard and nointr options. The intr mount option should not be available for NFSv4, but if you are in doubt, you should explicitly specify the nointr option.
 
 <span id="Define_file_locking_..12"></span><span id="Define_file_locking"></span>
 
 #### Define file locking
 
-Because Transfer CFT uses POSIX file locking services to synchronize shared files, make sure that the NFS clients report these locks to the NFS server. Depending on the NFS client, the corresponding option to tune may be called  `local_lock`,` llock`, or `nolock`. Do not enable the local locking option.
+Because Transfer CFT uses POSIX file locking services to synchronize shared files, make sure that the NFS clients report these locks to the NFS server. Depending on the NFS client, the corresponding option to tune may be called  local\_lock, llock, or nolock. Do not enable the local locking option.
 
 <span id="Set_the_cto_option_..13"></span><span id="Set_the_cto_option"></span>
 
 #### Set the cto option
 
-NFS implements a weak data consistency called "Close To Open consistency" or `cto`. This means that when a file is closed on a client, all modified data associated with the file is flushed from the server. If your NFS clients allow this behavior, be certain that the `cto `option is set.
+NFS implements a weak data consistency called "Close To Open consistency" or cto. This means that when a file is closed on a client, all modified data associated with the file is flushed from the server. If your NFS clients allow this behavior, be certain that the cto option is set.
 
 <span id="Mount_options_summary_..14"></span><span id="Mount_options_summary"></span><span id="Mount"></span>
 
@@ -98,19 +99,19 @@ The following table summarizes the recommended NFSv4 mount options. Note that de
 
 ### Synchronous versus asynchronous option
 
-To improve performance, NFS clients and NFS servers can delay file write operations in order to combine small file IOs into larger file IOs. You can enable this behavior on the NFS clients, NFS servers, or on both, using the `async `option. The `sync `option disables this behavior.
+To improve performance, NFS clients and NFS servers can delay file write operations in order to combine small file IOs into larger file IOs. You can enable this behavior on the NFS clients, NFS servers, or on both, using the async option. The sync option disables this behavior.
 
 <span id="Client_..16"></span><span id="Client"></span>
 
 #### **Client**
 
-On the client side, use the `mount `command to specify the `async/sync` option.
+On the client side, use the mount command to specify the async/sync option.
 
 <span id="Async_..17"></span><span id="Async"></span>
 
 ##### Async
 
-The NFS client treats the `sync `mount option differently than some other file systems. If neither `sync `nor `async `is specified (or if `async `is specified), the NFS client delays sending application writes to the server until any of the following events occur:
+The NFS client treats the sync mount option differently than some other file systems. If neither sync nor async is specified (or if async is specified), the NFS client delays sending application writes to the server until any of the following events occur:
 
 - Memory limitations force reclaiming of system memory resources.
 - Transfer CFT explicitly flushes file data (PeSIT synchronization points, for example).
@@ -122,19 +123,19 @@ This means that under normal circumstances, data written by Transfer CFT may not
 
 ##### Sync
 
-If the `sync `option is specified on a mount point, any system call that writes data to files on that mount point causes that data to be flushed to the server before the system call returns control to Transfer CFT. This provides greater data cache coherence among clients, but at a significant cost to performance.
+If the sync option is specified on a mount point, any system call that writes data to files on that mount point causes that data to be flushed to the server before the system call returns control to Transfer CFT. This provides greater data cache coherence among clients, but at a significant cost to performance.
 
 <span id="Server_..19"></span><span id="Server"></span>
 
 #### Server
 
-On the server side, use the `exports `command to specify the `async/sync` option (NFS server export table).
+On the server side, use the exports command to specify the async/sync option (NFS server export table).
 
 <span id="Async_..20"></span><span id="Async_..1"></span>
 
 ##### Async
 
-The `async `option allows the NFS server to violate the NFS protocol and reply to requests before any changes made by that request have been committed to stable storage (the disk drive, for example), even if the client is set to `sync`. This option usually improves performance, however data may be lost or corrupted in the case of an unclean server restart, such as an NFS server crash.
+The async option allows the NFS server to violate the NFS protocol and reply to requests before any changes made by that request have been committed to stable storage (the disk drive, for example), even if the client is set to sync. This option usually improves performance, however data may be lost or corrupted in the case of an unclean server restart, such as an NFS server crash.
 
 This possible data corruption is not detectable at the time of occurrence, because the async option instructs the server to lie to the client, telling the client that all data was written to stable storage (regardless of the protocol used).
 
@@ -183,19 +184,19 @@ The NFSv4 locking lease period affects the Transfer CFT delay required to detect
 
 When using NAS failover in a multihost-multinode architecture, you must stop the cluster prior to performing the failover. For information on starting and stopping a cluster, see <a href="../../../../../../about_multinode/multi_node_commands" class="MCXref xref">Multi-node commands and management</a>
 
-1. Stop the {{< TransferCFT/transfercftname >}} cluster.
+1. Stop the Transfer CFT{{< TransferCFT/transfercftname >}} cluster.
 1. Perform the failover.
-1. Start the {{< TransferCFT/transfercftname >}} cluster.
+1. Start the Transfer CFT{{< TransferCFT/transfercftname >}} cluster.
 
 ### Troubleshoot an NFS lock daemon issue with no error message
 
 When transferring files that are located in a **N**etwork **F**ile **S**ystem, an NFS locking issue (lockd) may occur if the correct port is not open on the firewall.
 
-**Symptom**
+****Symptom****
 
-- Flow transfers hang in the phase `T` and phasestep `C`, with a timeout but no error message.
+- Flow transfers hang in the phase T and phasestep C, with a timeout but no error message.
 
-**Remedy**
+****Remedy****
 
 - Check that the correct port for the lockd service is open on the firewall (default=4045).
 

@@ -2,13 +2,13 @@
     "title": "Create a Transfer CFT flow with an unmanaged product ",
     "linkTitle": "Create a flow using an unmanaged product",
     "weight": "170"
-}This page describes how to create a {{< TransferCFT/transfercftname  >}} flow in {{< TransferCFT/centralgovernancename  >}} using an unmanaged product and mutual authentication (SSL) for a secure transfer. You may want to become familiar with [PeSIT concepts](../../../protocols_start_here/about_pesit), parameters such as [NSPART](../../../c_intro_userinterfaces/command_summary/parameter_intro/nspart), [NRPART](../../../c_intro_userinterfaces/command_summary/parameter_intro/nrpart), and [SAP](../../../c_intro_userinterfaces/command_summary/parameter_intro/sap), prior to starting the procedure, or refer to the [parameter overview](#Configur) in this page.
+}This page describes how to create a Transfer CFT{{< TransferCFT/transfercftname  >}} flow in Central Governance{{< TransferCFT/centralgovernancename  >}} using an unmanaged product and mutual authentication (SSL) for a secure transfer. You may want to become familiar with [PeSIT concepts](../../../protocols_start_here/about_pesit), parameters such as [NSPART](../../../c_intro_userinterfaces/command_summary/parameter_intro/nspart), [NRPART](../../../c_intro_userinterfaces/command_summary/parameter_intro/nrpart), and [SAP](../../../c_intro_userinterfaces/command_summary/parameter_intro/sap), prior to starting the procedure, or refer to the [parameter overview](#Configur) in this page.
 
 ## You will need...
 
-- A {{< TransferCFT/componentlongname >}} associated with an application.
+- A Transfer CFT{{< TransferCFT/componentlongname >}} associated with an application.
 - An unmanaged product.
-- An installed and running on which you have rights to create a flow.
+- An installed and running Central Governance on which you have rights to create a flow.
 - A CG\_CA certificate.
 
 ## Parameter overview
@@ -17,17 +17,17 @@ The information in this configuration example corresponds to the text used in th
 
 ![](/Images/TransferCFT/unmanged.png)
 
-## Configure an unmanaged product in {{< TransferCFT/centralgovernancename  >}}
+## Configure an unmanaged product in Central Governance{{< TransferCFT/centralgovernancename  >}}
 
 1. Select **Add unmanaged product**.
 1. Enter a **Name** &lt;UP name> and the **Host** &lt;UP host> for this product.
-1. For the **Type**, select **Custom** in the drop-down menu.
+1. For the ****Type****, select ****Custom**** in the drop-down menu.
 1. Select the environment in the **Operating systems** field.
 1. In the **Protocol** section, enter the **PeSIT login** &lt;UP PeSIT login>and password &lt;UP PeSIT password>. Confirm password.
-1. In the **TCP** subsection, select PeSIT / **Mutual authentication** and add the pesitssl listening **port** &lt;UP PeSIT port in> for the unmanaged product.
+1. In the **TCP** subsection, select PeSIT / ****Mutual authentication**** and add the pesitssl listening **port** &lt;UP PeSIT port in> for the unmanaged product.
 1. Browse to the root certificate to use &lt;UP root certificate>, and upload. The certificate can have the CER, CRT, or PEM format, or be a public certificate chain in the P7B file format.  
-    You can use the **Display** button to check the certificate details.
-1. Use all other defaults and click **Save unmanaged product**.
+    You can use the ****Display**** button to check the certificate details.
+1. Use all other defaults and click ****Save unmanaged product****.
 
 Parameter mapping
 
@@ -43,9 +43,9 @@ Parameter mapping
 | CFTSSL DIRECT=CLIENT<br/> ROOTCID corresponding to the ROOT certificate in the Transfer CFT PKI database | Certificate  |
 
 
-## Create a communication profile on the source {{< TransferCFT/transfercftname  >}}
+## Create a communication profile on the source Transfer CFT{{< TransferCFT/transfercftname  >}}
 
-In this step you create a communication profile on the source {{< TransferCFT/transfercftname  >}} that corresponds to the unmanaged product. To begin, access the **Product List** and select the registered Transfer CFT configuration.
+In this step you create a communication profile on the source Transfer CFT{{< TransferCFT/transfercftname  >}} that corresponds to the unmanaged product. To begin, access the **Product List** and select the registered Transfer CFT configuration.
 
 1. Create a new client communication profile for this partner that corresponds to SSL protocol.
 1. Add PeSIT.
@@ -73,7 +73,7 @@ Parameter mapping
 
 ## Create a flow
 
-In the toolbar, select **Flows** &gt; **Add flow**.
+In the Central Governance toolbar, select **Flows** &gt; **Add flow**.
 
 ![](/Images/TransferCFT/flow01.png)
 
@@ -81,17 +81,17 @@ Make the following selections, using the default values for all other fields.
 
 1. Enter a **Name** for your flow.
 1. Select **Source**, then **Application**.  
-    From the list, select {{< TransferCFT/componentlongname >}} as the product type and select your {{< TransferCFT/transfercftname >}}. Confirm by clicking **Add source**.  
+    From the list, select Transfer CFT{{< TransferCFT/componentlongname >}} as the product type and select your Transfer CFT{{< TransferCFT/transfercftname >}}. Confirm by clicking **Add source**.  
     ![](/Images/TransferCFT/flow03.png)
-1. Select **Protocol**. In the Protocol page, select:
+1. Select ****Protocol****. In the Protocol page, select:
     -   PeSIT as the **Exchange protocol**.
-    -   Enter a value for the Flow identifier. Record this identifier as a reference if you want to check the flow configuration on your {{< TransferCFT/componentlongname >}}.
+    -   Enter a value for the Flow identifier. Record this identifier as a reference if you want to check the flow configuration on your Transfer CFT{{< TransferCFT/componentlongname >}}.
     -   Mutual authentication.
     -   Select Show Transfer CFT communication profiles and select the communication profile that you created.
 1. Select **Target**, then **Unmanaged products**.  
     Click **Edit** product and then from the list, click to select your product.
 1. Click **Select as target** to confirm.
-1. Click **Save**, then click **Deploy**.
+1. Click **Save**, then click ****Deploy****.
 
  
 
@@ -101,16 +101,16 @@ Make the following selections, using the default values for all other fields.
 | CFTSEND ID  | Flow identifier  |
 
 
-## Check the flow on {{< TransferCFT/componentlongname  >}}
+## Check the flow on Transfer CFT{{< TransferCFT/componentlongname  >}}
 
 On the registered Transfer CFT, check to confirm that the flow and partner were created.
 
-Then create a new transfer using the unmanaged product and the flow identifier you defined in .
+Then create a new transfer using the unmanaged product and the flow identifier you defined in Central Governance.
 
-1. Add a file to exchange. For example put a file called **report001**, in the {{< TransferCFT/componentshortname >}}` runtime/pub` folder.
-1. From the source {{< TransferCFT/componentshortname >}}, run the SEND command.
-    -   Remember to replace `<instance_target>` with your unmanaged product (target).
+1. Add a file to exchange. For example put a file called ****report001****, in the Transfer CFT{{< TransferCFT/componentshortname >}} runtime/pub folder.
+1. From the source Transfer CFT{{< TransferCFT/componentshortname >}}, run the SEND command.
+    -   Remember to replace &lt;instance\_target> with your unmanaged product (target).
 
     <!-- -->
 
-    -   The **Flow identifier** field is equivalent to the {{< TransferCFT/componentshortname >}} IDF parameter.
+    -   The ****Flow identifier**** field is equivalent to the Transfer CFT{{< TransferCFT/componentshortname >}} IDF parameter.

@@ -11,9 +11,10 @@ Prior to installation, ensure the following:
 
 Please note that these users must exist prior to the Transfer CFT installation. If it is not the case, you can proceed as follows:
 
-**Example**
+****Example****
+
 ```
-CRTUSRPRF USRPRF(CFTINST) PASSWORD(CFTINST) PWDEXP(\*YES) USRCLS(\*USER) INLPGM(\*NONE) INLMNU(MAIN) LMTCPB(\*NO) TEXT('\*SHARED: MFT Axway Installer User Profile') SPCAUT(**\*JOBCTL \*SPLCTL \*ALLOBJ**) PWDEXPITV(\*SYSVAL)
+CRTUSRPRF USRPRF(CFTINST) PASSWORD(CFTINST) PWDEXP(\*YES) USRCLS(\*USER) INLPGM(\*NONE) INLMNU(MAIN) LMTCPB(\*NO) TEXT('\*SHARED: MFT Axway Installer User Profile') SPCAUT(****\*JOBCTL \*SPLCTL \*ALLOBJ****) PWDEXPITV(\*SYSVAL)
 ```
 
  

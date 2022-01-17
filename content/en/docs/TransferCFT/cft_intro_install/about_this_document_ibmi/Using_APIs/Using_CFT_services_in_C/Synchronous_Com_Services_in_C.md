@@ -2,7 +2,7 @@
     "title": "Synchronous  communication services",
     "linkTitle": "Synchronous communication services in C",
     "weight": "330"
-}This topic describes {{< TransferCFT/componentshortname  >}} synchronous communication services.
+}This topic describes Transfer CFT{{< TransferCFT/componentshortname  >}} synchronous communication services.
 
 ## Description of functions
 
@@ -18,6 +18,7 @@
 ## Call syntax
 
 `rc =      cftau (verb,param)`
+
 `rc =      cftac (verb,param)`
 
 Where:

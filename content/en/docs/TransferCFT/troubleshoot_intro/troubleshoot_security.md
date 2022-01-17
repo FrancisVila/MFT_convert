@@ -19,7 +19,7 @@ To troubleshoot:
 
 The customer receives a "certificate\_request" type message, but it is empty. Transfer CFT cannot correctly respond to this message, and an error is generated.
 
-**Client side**
+****Client side****
 
 In the catalog a 260 PKI 040 diagnostic displays, and in the log a message similar to the following is displayed:
 
@@ -28,7 +28,8 @@ CFTY13E CTX=200006 SSL Handshake local error [HANDSHAKE_FAILURE] CR=40 (Handshak
 CFTH11E Error Opening session <PART=HPX18SSL EV=VVTIMO ST=SUP01>
 CFTT75E connect reject <IDTU=A00000BL PART=HPX18SSL IDF=SSL IDT=A2217045 260 PKI 040>
 ```
-**Server side**
+
+****Server side****
 
 No diagnostic displays in catalog, but in the log a message similar to the following:
 
@@ -123,11 +124,14 @@ CFTY11I CTX = 100003 PART1 PART = SSL = SSLPART1 Closing SSL client session
 
 In this scenario, two Transfer CFT’s have no cipher suite in common. The cipher suite to be used during the transfer is negotiated in the 'Client\_hello' and 'Server\_hello' frames. The server found no correspondence between the options presented and what is set on its side, so it returns an error.
 
-**Client side**
+****Client side****
+
 ```
 CFTY13E CTX = 100003 SSL Handshake local error [INSUFFICIENT_SECURITY] CR = 71
 ```
-**Server side**
+
+****Server side****
+
 ```
 CFTY13E CTX = 110004 SSL Handshake local error [close_notify] CR = 0
 ```
@@ -184,33 +188,35 @@ ST_QAPS SFK TK ST_QA_AP A2716390 0 0 260 TLSPARSE
 
 ## Unknown CA leads to a failed certificate verification
 
-In {{< TransferCFT/transfercftname  >}} 3.1.3 and lower, you can perform a SSL transfer even if the certificate chain is not complete (not signed by a ROOT CA). However, for {{< TransferCFT/transfercftname  >}} 3.2.0 and higher, the certificate chain must be complete for a transfer to succeed.
+In Transfer CFT{{< TransferCFT/transfercftname  >}} 3.1.3 and lower, you can perform a SSL transfer even if the certificate chain is not complete (not signed by a ROOT CA). However, for Transfer CFT{{< TransferCFT/transfercftname  >}} 3.2.0 and higher, the certificate chain must be complete for a transfer to succeed.
 
-**When working with multiple {{< TransferCFT/transfercftname  >}} versions**
+****When working with multiple Transfer CFT{{< TransferCFT/transfercftname  >}} versions****
 
-Given the differences in certificate verification described above, you could encounter issues when performing SSL transfers between, for example {{< TransferCFT/transfercftname  >}} 3.1.3 and {{< TransferCFT/transfercftname  >}} 3.4, depending on your configuration. This section presents an example of two Transfer CFTs where:
+Given the differences in certificate verification described above, you could encounter issues when performing SSL transfers between, for example Transfer CFT{{< TransferCFT/transfercftname  >}} 3.1.3 and Transfer CFT{{< TransferCFT/transfercftname  >}} 3.4, depending on your configuration. This section presents an example of two Transfer CFTs where:
 
-- CFT1: is server and is a {{< TransferCFT/transfercftname >}} 3.1.3
-- CFT2: is client and is a {{< TransferCFT/transfercftname >}} 3.4
+- CFT1: is server and is a Transfer CFT{{< TransferCFT/transfercftname >}} 3.1.3
+- CFT2: is client and is a Transfer CFT{{< TransferCFT/transfercftname >}} 3.4
 
-**Example**
+****Example****
 
 - CFT1: The server authenticates itself using the user certificate A. The certificate A is signed by the intermediate certificate B, which is signed by C. CFT1 imported the A certificate as the user and the B certificate as the root in its local database, meaning that the C certificate is not in the local database.
 - CFT2: The client imported the B certificate as a root locally, the SSL config direct= client, rootcid=B.
 
-**Results**
+****Results****
 
 - During a simple authentication, CFT1 sends the A/B certificate chain, which CFT2 refuses because it is not complete (CFT2 requires the entire certificate chain).
-- An error occurs: `SSL Handshake local error [HANDSHAKE_FAILURE] CR = 48 (Unknown CA: certificate verify failed)`
+- An error occurs: SSL Handshake local error \[HANDSHAKE\_FAILURE\] CR = 48 (Unknown CA: certificate verify failed)
 
-**Workaround**
-**To remedy this situation, on the client (CFT2 in our example):**
+****Workaround****
+
+****To remedy this situation, on the client (CFT2 in our example):****
 
 1. Import the C certificate as the root in the local database.
 1. Set the SSL configuration DIRECT=client, rootcid=(B, C).
 
-**When migrating**
-**You should be mindful when migrating from {{< TransferCFT/transfercftname  >}} 3.1.3 or lower, that a previous configuration that was operational may not work with higher versions of {{< TransferCFT/transfercftname  >}} until you import and define the certificate chain as required for {{< TransferCFT/transfercftname  >}} versions 3.2.x and higher.**
+****When migrating****
+
+****You should be mindful when migrating from Transfer CFT{{< TransferCFT/transfercftname  >}} 3.1.3 or lower, that a previous configuration that was operational may not work with higher versions of Transfer CFT{{< TransferCFT/transfercftname  >}} until you import and define the certificate chain as required for Transfer CFT{{< TransferCFT/transfercftname  >}} versions 3.2.x and higher.****
 
 ## Recovery and trace analysis
 
@@ -237,7 +243,7 @@ To analyze an SSL frame, check the log file and read the first 6 bytes of the SS
 
 16 03 01 00 35 01
 
-**Content type Version**
+****Content type Version****
 
 Major version l Minor version Fragment length Type message
 
@@ -273,7 +279,7 @@ This section presents two scenarios for establishing a session between client an
 
 ### Double Authentication
 
-**Client side traces**
+****Client side traces****
 
 1. PART CFTY19I LOOPSSL1 = SSL = SSL\_LOOP0 customer opening session on task CTX = 200003 pid = 3584  
     Information: Opening a client session with a context for isolating CTX transfer if there are many.
@@ -462,7 +468,7 @@ CTX = 200005 17030100 A0B63A45 A3CE4959 08B00BB7 E. &gt;........ ....&lt; IY
 
 ### Server side
 
-**CFTY20I PESITSSL PROT = SSL = server SSLPESIT opening session on task CTX = 210006 pid = 5056**
+****CFTY20I PESITSSL PROT = SSL = server SSLPESIT opening session on task CTX = 210006 pid = 5056****
 
 1. CFTY02Z>&gt; CTX = 210006 ndata () \_ 58 RECEIVED FROM HANDSHAKE DATA NETWORK
 1. CFTY02Z>&gt; CTX = 210006 SSLact () \_ 47 HANDSHAKE SENDING DATA

@@ -37,9 +37,10 @@ containing:
 - Return message attribute
 - Sentinel.xfb.audit
 
-**Example**
+****Example****
 
 `/Action=CREATE /Object=CFTSEND /id=ZZ /user=My_Company\giovanip /groupid= /owner=      /CrDate=20191204 /CrTime=17471640 /UpdDate=20191204 /UpdTime=17471640`
+
 <span id="Ident attribute"></span>
 
 #### Ident attribute details
@@ -78,12 +79,13 @@ containing:
 
 ## Disable XFB.Log
 
-By default, `sentinel.xfb.log` is set to `IEWF `(information, error, warning, and fatal), which sends Transfer CFT log information to Sentinel. To disable the XFB.Log, use the uconf utility to set this value to ' '.
+By default, `sentinel.xfb.log` is set to IEWF (information, error, warning, and fatal), which sends Transfer CFT log information to Sentinel. To disable the XFB.Log, use the uconf utility to set this value to ' '.
 
 ```
 CFTUTIL uconfset id=sentinel.xfb.log, value=' '
 ```
-**Related topics**
+
+****Related topics****
 
 - UCONF: [unified configuration](../../../admin_intro/uconf)
 - [XFBTransfer]()

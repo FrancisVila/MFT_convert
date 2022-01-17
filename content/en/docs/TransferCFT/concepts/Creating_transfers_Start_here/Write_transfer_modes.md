@@ -15,8 +15,8 @@ sections:
 
 ## Write transfer mode
 
-There are two write transfer modes, *Open*
-and *Closed*, which are described
+There are two write transfer modes, Open
+and Closed, which are described
 in this section.
 
 <span id="Write_transfer_closed_mode"></span>
@@ -143,7 +143,7 @@ on reception. For the definition of symbolic variables, see [Symbolic
 variables](../../../c_intro_userinterfaces/command_summary/symbolic_variables).
 
 For the server, the name of the file to be sent cannot be defined using
-a symbolic variable. In **Locked for sending**
+a symbolic variable. In Locked for sending
 mode the name of the file to be sent, FNAME, must be known when the SEND
 is submitted.
 
@@ -172,7 +172,7 @@ in PeSIT E protocol, for example).
 ### Read transfer open mode
 
 **PeSIT D CFT profile, PeSIT E** This
-mode is possible between two <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>s using one of these
+mode is possible between two Transfer CFT{{< TransferCFT/componentshortname  >}}s using one of these
 protocols.
 
 In locked for sending mode, the open mode allows a sender/server to

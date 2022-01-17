@@ -6,7 +6,7 @@
 
 ![Simplified diagram of a Source Transfer CFT sending a file to a Target](/Images/TransferCFT/TransferCFT_Standard_w_cg.png)
 
-#### In
+#### In Central Governance
 
 1. Define a flow.
     -   Select **Flows** > **Add flow**.
@@ -14,7 +14,7 @@
 
     <!-- -->
 
-    -   Create a flow named `Simple_flow` and give it the identifier **`flow01`**.
+    -   Create a flow named `Simple_flow` and give it the identifier ****`flow01`****.
     -   ![](/Images/TransferCFT/flow02.png)
 
     <!-- -->
@@ -24,14 +24,14 @@
     -   An *application* is the logical representation of a business software application that is the true sender or true receiver in a file exchange. An application can represent a back-end enterprise resource system, such as SAP or PeopleSoft.
 
     -   ![](/Images/TransferCFT/flow03.png)
-1. Click ****Deploy**** to save and deploy. [Details](../intro_cg_task_catalog/t_savedeployflow)
+1. Click ******Deploy****** to save and deploy. [Details](../intro_cg_task_catalog/t_savedeployflow)
 
-#### In {{< TransferCFT/componentshortname  >}}
+#### In Transfer CFT{{< TransferCFT/componentshortname  >}}
 
-1. Add a file to exchange. Put a test file, for example **SALES\_report**, in the Store\_66 {{< TransferCFT/componentshortname >}}` runtime/pub` folder.
-1. From the source {{< TransferCFT/componentshortname >}}, run the SEND command.
-    -   Remember to replace `<instance_target>` with your Transfer CFT for the MainOffice target.
+1. Add a file to exchange. Put a test file, for example ****SALES\_report****, in the Store\_66 Transfer CFT{{< TransferCFT/componentshortname >}} runtime/pub folder.
+1. From the source Transfer CFT{{< TransferCFT/componentshortname >}}, run the SEND command.
+    -   Remember to replace &lt;instance\_target> with your Transfer CFT for the MainOffice target.
 
     <!-- -->
 
-    -   The flow **Identifier** field is equivalent to the {{< TransferCFT/componentshortname >}} IDF parameter.
+    -   The flow ****Identifier**** field is equivalent to the Transfer CFT{{< TransferCFT/componentshortname >}} IDF parameter.

@@ -10,9 +10,9 @@
 
 ## Obtain a license key
 
-1. Install {{< TransferCFT/componentshortname >}}. You can install {{< TransferCFT/componentshortname >}} without a license key, and enter the key later.
+1. Install Transfer CFT{{< TransferCFT/componentshortname >}}. You can install Transfer CFT{{< TransferCFT/componentshortname >}} without a license key, and enter the key later.
 
-1. After completing the installation, or for an existing installation, use the command `cftutil about` to retrieve your system information.
+1. After completing the installation, or for an existing installation, use the command cftutil about to retrieve your system information.
 
     > **Note**
     >
@@ -21,8 +21,8 @@
     > on which Transfer CFT is installed.
 
 1. Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.
-    -   For a US key, contact: `fulfillment@us.axway.com`
-    -   For an EMEA or APAC key, contact: `product.key@axway.com`
+    -   For a US key, contact: fulfillment@us.axway.com
+    -   For an EMEA or APAC key, contact: product.key@axway.com
 
 1. Provide the hostname and system information for the installed or updated Transfer CFT.
 
@@ -35,7 +35,7 @@ Normally you enter the key that you received from the Axway Fulfillment team dur
 
 ### Multi-node keys
 
-**Transfer CFT 3.3.2 SP2 and higher**
+****Transfer CFT 3.3.2 SP2 and higher****
 
 Transfer CFT allows you to use a single key for a multi-node installation. To use a single key for multiple hosts, either:
 
@@ -46,7 +46,7 @@ Additionally, the key must have the cluster option.
 
 For example, if you have 2 hosts and 4 nodes, you only need one key that matches one hostname (or no defined hostname).
 
-**Transfer CFT prior to 3.3.2 SP2**
+****Transfer CFT prior to 3.3.2 SP2****
 
 If you are using a Transfer CFT 3.3.2 prior to SP2, multi-node architecture requires:
 
@@ -60,7 +60,7 @@ For example, if you have 2 hosts and 4 nodes, you require 4 keys with at least o
 
 ## About command
 
-Use the CFTUTIL utility to execute the `about `command to find the CPU ID and general system information as demonstrated in this example.
+Use the CFTUTIL utility to execute the about command to find the CPU ID and general system information as demonstrated in this example.
 
 ```
 Host information :
@@ -74,4 +74,4 @@ Host information :
 \* distrib = unknown
 ```
 
-In this example, the CPU ID is **F8C721F8C721F8C7**. Your information, including the cpuid, will differ from the example.
+In this example, the CPU ID is ****F8C721F8C721F8C7****. Your information, including the cpuid, will differ from the example.

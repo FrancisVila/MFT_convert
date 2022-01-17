@@ -2,7 +2,7 @@
     "title": "Delivered files, samples, and certificates",
     "linkTitle": "Delivered files and samples ",
     "weight": "230"
-}The samples that are delivered with Transfer CFT use the Transfer CFT preprocessing utility to encode/decode a plaintext file before sending it. This topic describes the various delivered files, samples, and certificates that you can use to complete your {{< TransferCFT/trustedfilename  >}} implementation.
+}The samples that are delivered with Transfer CFT use the Transfer CFT preprocessing utility to encode/decode a plaintext file before sending it. This topic describes the various delivered files, samples, and certificates that you can use to complete your TrustedFile{{< TransferCFT/trustedfilename  >}} implementation.
 
 Content described in this topic:
 
@@ -48,9 +48,9 @@ Windows scripts
 
 <span id="Trusted"></span>
 
-## {{< TransferCFT/trustedfilename  >}} configuration file
+## TrustedFile{{< TransferCFT/trustedfilename  >}} configuration file
 
-The **entities.xml** file is the Trusted File configuration file containing the certificates for Trusted File. This configuration file is customized during Transfer CFT installation with the supplied default private and public certificates, “user1” and “user2”. If you intent to use your own certificates, update the entities.xml file, located at &lt;CFTDIRRUNTIME>/conf/tf/entities.xml.
+The ****entities.xml**** file is the Trusted File configuration file containing the certificates for Trusted File. This configuration file is customized during Transfer CFT installation with the supplied default private and public certificates, “user1” and “user2”. If you intent to use your own certificates, update the entities.xml file, located at &lt;CFTDIRRUNTIME>/conf/tf/entities.xml.
 
 If you want to use your own certificates and if the option tf.enablepasswordcipher=yes you have to generate a phassphrase using cfttf function:
 
@@ -64,9 +64,10 @@ General Usage: CFTTF -pcfg conffile \[-plain plainFilename\] \[-entitiesLocation
 
 \[-messagesPath messagesPath\] \[-template xmlFilename\]
 
-To generate a passphrase, use the command: `CFTTF -pw [password]`
+To generate a passphrase, use the command: CFTTF -pw \[password\]
 
-**Example**
+****Example****
+
 ```
 CFTTF –pw user1OUTPUT: OGrplhngkBLeiazMyPkAdcLnd5jlNOnMoGYKaI2WfAw=
 ```
@@ -109,7 +110,7 @@ The following certificates are located in: &lt;CFTDIRRUNTIME>/conf/tf/.
 
 ## Trusted File messages
 
-The following messages are used by Trusted File, and are located in: `$CFTDIRINSTALL/distrib/tf/english/`**.** Each file contains a set of error message associated with the type of encoding used.
+The following messages are used by Trusted File, and are located in: $CFTDIRINSTALL/distrib/tf/english/****.**** Each file contains a set of error message associated with the type of encoding used.
 
 - xasn.msg
 - xp3.msg
@@ -123,13 +124,13 @@ The following messages are used by Trusted File, and are located in: `$CFTDIRINS
 - xppsrv.msg
 - xppwrap.msg
 
-Refer to the for details, available on [support.axway.com](https://support.axway.com/).
+Refer to the Trusted File 3.6 Reference Guide for details, available on [support.axway.com](https://support.axway.com/).
 
 <span id="Transcod"></span>
 
 ## Transcoding table
 
-The `<CFTDIRRUNTIME>/conf/tf/transcoding.tbl` file contains all available transcoding tables.
+The **** `<CFTDIRRUNTIME>/conf/tf/transcoding.tbl` **** file contains all available transcoding tables.
 
 
 | Table  | Description  |

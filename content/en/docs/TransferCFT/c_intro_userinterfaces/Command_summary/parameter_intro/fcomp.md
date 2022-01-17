@@ -8,7 +8,7 @@
 
 #### CFTRECV, RECV
 
-**\[FCOMP = {0 | 15}\]**
+****\[FCOMP = {0 | 15}\]****
 
 Defines the data compression in the receiver's logical file.
 

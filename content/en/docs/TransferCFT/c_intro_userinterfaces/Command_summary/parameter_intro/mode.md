@@ -6,12 +6,12 @@
 
 ### mode
 
-#### All {{< TransferCFT/componentshortname  >}} commands  
+#### All Transfer CFT{{< TransferCFT/componentshortname  >}} commands  
 
 \[MODE = { <u>REPLACE</u> | CREATE | DELETE }\]
 
 Action to do in the parameter or partner database. This parameter applies
-to all commands that affect {{< TransferCFT/componentshortname  >}} databases. Possible values:
+to all commands that affect Transfer CFT{{< TransferCFT/componentshortname  >}} databases. Possible values:
 
 - REPLACE
     (Default value)

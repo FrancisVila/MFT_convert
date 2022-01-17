@@ -10,7 +10,7 @@
 
 *MVS only*
 
-**\[ DIRNB = n { <u>0</u>...999999 } \]**    
+\[ DIRNB = n { <u>0</u>...999999 } \]    
 
 Number of directory blocks used to create a directory.
 

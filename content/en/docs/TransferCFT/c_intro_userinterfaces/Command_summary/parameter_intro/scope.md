@@ -8,7 +8,7 @@
 
 #### KEEP, HALT, DELETE, END, START, RESUME
 
-**\[SCOPE = { <u>PARENT</u> | CHILDREN | ALL } \]**
+****\[SCOPE = { <u>PARENT</u> | CHILDREN | ALL } \]****
 
 - PARENT: Applies the command to the selected transfers.
 - CHILDREN: Applies the command to the children of the selected transfers if the selected transfers are generic. Otherwise:
@@ -18,8 +18,8 @@
 
 #### LISTUCONF, UCONFSET, UCONFGET
 
-**\[ SCOPE= {
-USER | DEFAULT | ALL | \* } \]**
+****\[ SCOPE= {
+USER | DEFAULT | ALL | \* } \]****
 
 Filters according to the UCONF setting. For example, use USER to filter for values set by the user.
 

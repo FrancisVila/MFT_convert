@@ -4,24 +4,27 @@
     "weight": "270"
 }You can download this page as a PDF [here]().
 
-**Viewing the table**
+****Viewing the table****
 
 If you have trouble viewing the entire table in your browser, click the arrow icon to collapse the left pane TOC.
 
 ![](/Images/TransferCFT/collapse.png)
 
-**Parameter attributes in lower case**
+****Parameter attributes in lower case****
 
 Some uconf values contain logical\_name parameter attributes as part of the value, for example `aws.credentials.<logical_name>.access_key_id`. When processed, the logical\_name is replaced by the parent value, and is systematically converted to lower case.
 
-Example when `aws.credientials=Test`
+Example when aws.credientials=Test
 
 `CFTUTIL listuconf id=aws.credentials.*`
+
 `aws.credentials = Test`
+
 `aws.credentials.test.access_key_id =`
+
 `aws.credentials.test.secret_access_key = ********`
 
-**Parameter list**
+****Parameter list****
 
 The following table is an exhaustive list of the unified configuration (UCONF) values.
 

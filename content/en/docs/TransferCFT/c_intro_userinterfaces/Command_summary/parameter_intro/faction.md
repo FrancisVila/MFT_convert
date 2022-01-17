@@ -15,17 +15,17 @@
 
 Action on the file after a send transfer:
 
-- **NONE**: No action on this file on completion
+- NONE: No action on this file on completion
     of the transfer.
-- <span style="font-weight: bold;">DELETE</span>: Delete the file after transfer. Note the following specificities:
+- DELETE: Delete the file after transfer. Note the following specificities:
     -   No delete occurs if you are using SELFNAME and the FNAME is set to a directory mask (for example, #dir is deleted, but #dir/\* is ignored).
     -   If a file is added to the directory while a transfer is in progress, neither this new file nor is the directory is deleted.
-- <span style="font-weight: bold;">ERASE</span>: erase the contents of the file
+- ERASE: erase the contents of the file
     after the transfer ("End Of File" mark at the beginning of the
     file)
 - **ARCHIVE**: the source file is moved to the file name specified in the ARCHIVEFNAME parameter when the transfer is completed. If the transfer fails, the file is not moved. If the target file already exists, it is overwritten.
 
-**FACTION limitations**
+****FACTION limitations****
 
 - ERASE is not supported when using a group of files in homogeneous mode, or when broadcasting (CFTDEST ).
 - DELETE is not supported when broadcasting (CFTDEST ).
@@ -36,7 +36,7 @@ Action on the file after a send transfer:
 
 #### CFTRECV, RECV
 
-**\[FACTION = {<span style="text-decoration: underline;">VERIFY</span>
+**\[FACTION = {VERIFY
 | DELETE | ERASE | RENAME | RETRYRENAME }\]**
 
 > **Note**
@@ -45,13 +45,13 @@ Action on the file after a send transfer:
 
 Action on a file before a receive transfer except when using RENAME or RETRYRENAME, which are post transfer actions.
 
-If a receiver file with the same name already exists, <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> performs
+If a receiver file with the same name already exists, Transfer CFT{{< TransferCFT/componentlongname  >}} performs
 one of the following actions:
 
-- <span style="font-weight: bold;">VERIFY</span>: checks that the file is empty before the transfer occurs
-- <span style="font-weight: bold;">DELETE</span>:
+- VERIFY: checks that the file is empty before the transfer occurs
+- DELETE:
     deletes the file before the transfer occurs
-- <span style="font-weight: bold;">ERASE</span>:
+- ERASE:
     erases the contents of the file before the transfer occurs
 - **RENAME**: replaces the existing FNAME file after the transfer completes by renaming the WFNAME file (*Unix only*)
 - **RETRYRENAME**: Renames the file on transfer completion in the post-processing phase, and includes a configurable retry mechanism. See also [Post-transfer file renaming](../../../../app_integration_intro/spoolout).

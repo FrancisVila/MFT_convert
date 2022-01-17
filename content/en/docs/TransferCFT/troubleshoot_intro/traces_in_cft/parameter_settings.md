@@ -12,6 +12,7 @@ general parameters.](../../../admin_intro/admin_config_commands/cftparm_general_
 ### Syntax
 
 `CFTPARM  [TRACE = identifier]`
+
 <span id="Parameters"></span>
 
 ### Parameters

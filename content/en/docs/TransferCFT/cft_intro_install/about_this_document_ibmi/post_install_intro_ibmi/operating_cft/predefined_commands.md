@@ -2,7 +2,7 @@
     "title": "Using the common Transfer CFT commands",
     "linkTitle": "Use common commands",
     "weight": "240"
-}Select **Option 1** to use the common Transfer CFT commands:
+}Select ****Option 1**** to use the common Transfer CFT commands:
 
 
 | Option  | Command  | Details  |

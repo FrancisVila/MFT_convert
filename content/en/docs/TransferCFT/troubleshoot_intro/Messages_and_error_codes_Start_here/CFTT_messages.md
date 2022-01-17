@@ -14,7 +14,7 @@ Earlier versions of Transfer CFT used a different message format than version 3.
 
 CFTLOG FORMAT=\[V23,V24\]
 
-For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
+For V23: CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
@@ -148,7 +148,7 @@ QQQ\_QQQ\_CHECK maybe convert tables to sections (see CFTTmessages\_test2.htm)
 | --- | --- |
 | Explanation | The &amp;part partner was not found in the Transfer CFT partner file. |
 | Consequence | The transfer is not executed. The corresponding catalog entry is set to KEEP. |
-| Action | Check the Transfer <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro">CFT parameter settings</a>.<br/> Check the {{< TransferCFT/componentshortname  >}} parameter settings. |
+| Action | Check the Transfer <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro">CFT parameter settings</a>.<br/> Check the Transfer CFT{{< TransferCFT/componentshortname  >}} parameter settings. |
 
 
  
@@ -168,7 +168,7 @@ QQQ\_QQQ\_CHECK maybe convert tables to sections (see CFTTmessages\_test2.htm)
 | --- | --- |
 | Explanation | The partner has made a selection request and no file is ready to be sent (SEND on HOLD or implicit SEND). |
 | Consequence | The transfer is not executed (no catalog record is created). |
-| Action | Prepare a transfer (SEND state=hold) or declare an implicit send in the Transfer <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro">CFT parameter settings</a>.<br/> Prepare a transfer (SEND state=hold) or declare an implicit send in the {{< TransferCFT/componentshortname  >}} parameter settings. |
+| Action | Prepare a transfer (SEND state=hold) or declare an implicit send in the Transfer <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro">CFT parameter settings</a>.<br/> Prepare a transfer (SEND state=hold) or declare an implicit send in the Transfer CFT{{< TransferCFT/componentshortname  >}} parameter settings. |
 
 
  
@@ -187,7 +187,7 @@ QQQ\_QQQ\_CHECK maybe convert tables to sections (see CFTTmessages\_test2.htm)
 | --- | --- |
 | Explanation | The identifier of the list of files authorized for a partner (see <a href="../../../c_intro_userinterfaces/command_summary">CFTPART</a> ) was not found in the Transfer CFT parameter file. |
 | Consequence | The transfer is not executed. The corresponding catalog entry is set to KEEP. |
-| Action | Check the <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro">Transfer CFT parameter</a> settings.<br/> Check the {{< TransferCFT/componentshortname  >}} parameter setting. |
+| Action | Check the <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro">Transfer CFT parameter</a> settings.<br/> Check the Transfer CFT{{< TransferCFT/componentshortname  >}} parameter setting. |
 
 
  
@@ -614,9 +614,9 @@ QQQ\_QQQ\_CHECK maybe convert tables to sections (see CFTTmessages\_test2.htm)
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT66E"></span>CFTT66E Maximum number of partners authorized by license key reached (using PART=&amp;part)<br/> CFTT66E Maximum number of partners authorized by license key reached (using PART=&amp;part) |
 | --- | --- |
-| Explanation | {{< TransferCFT/componentshortname  >}} license keys support either a limited or unlimited number of partners. The transfer is treated as if the partner does not exist.  |
+| Explanation | Transfer CFT{{< TransferCFT/componentshortname  >}} license keys support either a limited or unlimited number of partners. The transfer is treated as if the partner does not exist.  |
 | Consequence | An error occurred because you have reached the maximum number of partners allowed by your license key.  |
-| Action | In a command line window, you can enter the command CFTUTIL ABOUT to check the number of partners that your license key authorizes. For additional information on license keys, contact an {{< TransferCFT/companyname  >}} sales representative.  |
+| Action | In a command line window, you can enter the command CFTUTIL ABOUT to check the number of partners that your license key authorizes. For additional information on license keys, contact an Axway{{< TransferCFT/companyname  >}} sales representative.  |
 
 
  
@@ -790,7 +790,7 @@ QQQ\_QQQ\_CHECK maybe convert tables to sections (see CFTTmessages\_test2.htm)
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT82E"></span>CFTT82E PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt transfer aborted &amp;diagi ,&amp;diagp<br/> CFTT82E transfer aborted &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
 | --- | --- | --- | --- |
-| Explanation | A serious error was detected.<br/> **Example** 19/02/19 16:01:37 CFTT82E Transfer aborted &lt;IDTU=A0000008 PART=PARIS_KEY IDF=AS3SR IDT=B1916013 DIAGI=110<br/> 19/02/19 16:01:37 CFTT82E+ DIAGP=00000002 DIAGC=File not found: zohs.bat&gt; |
+| Explanation | A serious error was detected.<br/> ****Example****<br/> 19/02/19 16:01:37 CFTT82E Transfer aborted &lt;IDTU=A0000008 PART=PARIS_KEY IDF=AS3SR IDT=B1916013 DIAGI=110<br/> 19/02/19 16:01:37 CFTT82E+ DIAGP=00000002 DIAGC=File not found: zohs.bat&gt; |
 | Consequence | The transfer is interrupted and the corresponding catalog entry is set to KEEP. |
 | Action | Correct the error and try again. |
 

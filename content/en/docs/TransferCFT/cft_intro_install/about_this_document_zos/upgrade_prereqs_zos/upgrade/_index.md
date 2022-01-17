@@ -2,7 +2,7 @@
     "title": "Upgrade ",
     "linkTitle": "Upgrade",
     "weight": "220"
-}This section describes how to upgrade to {{< TransferCFT/releasenumber  >}} and higher (from versions 3.1.3, 3.2.x, 3.3.x, 3.4, 3.5).
+}This section describes how to upgrade to 3.9{{< TransferCFT/releasenumber  >}} and higher (from versions 3.1.3, 3.2.x, 3.3.x, 3.4, 3.5).
 
 Transfer CFT delivers procedures that can help you upgrade instances. The following sections describe how to:
 
@@ -13,7 +13,7 @@ Transfer CFT delivers procedures that can help you upgrade instances. The follow
 1. <a href="#Upgrade" class="MCXref xref">Upgrade the target instance (product environment)</a>
 1. <a href="#Migrate" class="MCXref xref">Upgrade</a>
 
-**Upgrade schema**
+********Upgrade schema********
 
 ![](/Images/TransferCFT/temp_zos_upgrade.png)
 
@@ -41,7 +41,7 @@ You must customize the following 4 variables before submitting the JCL.
 - COPBASE Copilot PAX id: COPBASE, SP id or NONE
 - XSRBASE Secure relay PAX id: XSRBASE, SP id or NONE
 
-**Results**
+****Results****
 
 Creates an XMIT file.
 
@@ -155,7 +155,7 @@ Copy the following JCLs from the new instance to the target instance to upgrade:
     -   SET DISTLEV = ZZ Distribution suffix (latest level of CFTV2)
     -   Submit A00CUSTO
 
-**Results**
+****Results****
 
 Now the CFTLOAD variable defined in the CFTENV member refers to the new LOAD. If the upgrade process fails, use the UPRS0010 JCL to restore the instance files. Simply set the job card, and submit the JCL.
 

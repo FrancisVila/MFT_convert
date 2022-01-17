@@ -3,8 +3,8 @@
     "linkTitle": "Symbolic variables",
     "weight": "150"
 }<span id="About_symbolic_variables"></span>A symbolic variable represents
-a transfer data item whose value is not known at the time {{< TransferCFT/componentshortname  >}}
-parameters are set, but only at the time the transfer is executed. Additionally, the symbolic variable is prefaced by a special character, which is the ‘&’ character in this document. However, you should refer to the {{< TransferCFT/componentshortname  >}} *Installation Guide* that corresponds to
+a transfer data item whose value is not known at the time Transfer CFT{{< TransferCFT/componentshortname  >}}
+parameters are set, but only at the time the transfer is executed. Additionally, the symbolic variable is prefaced by a special character, which is the ‘&’ character in this document. However, you should refer to the Transfer CFT{{< TransferCFT/componentshortname  >}} *Installation Guide* that corresponds to
 your OS, in order to determine the special character &lt;char\_symb>
 used on your system.
 
@@ -19,7 +19,7 @@ times: a single CFTSEND command can hence be applied to several files
 by using the symbolic variables in the FNAME parameter. This also makes
 it possible to only have to describe one transfer-related procedure applicable
 to several transfers. The real value of the parameter is substituted for
-the symbolic variable, at the time the {{< TransferCFT/componentshortname  >}} command or the procedure
+the symbolic variable, at the time the Transfer CFT{{< TransferCFT/componentshortname  >}} command or the procedure
 is executed.
 
 <span id="Symbolic_variable_syntax"></span>
@@ -42,7 +42,7 @@ The symbolic variable syntax is as follows:
 | &lt;  | The left justification of the variable (default value)  |
 | &gt;  | The right justification of the variable  |
 | %  | Indicates use of the <a href="#Separate">separator syntax</a>  |
-|   | These characters can be used in combination, such as **+:** or **&gt;+:**. <br/> See the <a href="#Examples" >Example using optional characters</a> |
+|   | These characters can be used in combination, such as ****+:**** or ****&gt;+:****. <br/> See the <a href="#Examples" >Example using optional characters</a> |
 
 
 - Optionally followed
@@ -54,7 +54,7 @@ The symbolic variable syntax is as follows:
 - And then a character
     string representing the identifier of the variable to be substituted
 
-The identifiers, recognized by {{< TransferCFT/componentshortname  >}}, which can be used in the
+The identifiers, recognized by Transfer CFT{{< TransferCFT/componentshortname  >}}, which can be used in the
 syntax of a symbolic variable are indicated in the *[List of symbolic variables](#List_of_symbolic_variables)*.
 In this section, the ‘VAR’ notation is used to generically designate such
 an identifier.
@@ -143,8 +143,8 @@ You can use the field extraction syntax as follows:
 
 `&%<separator>[<start_field>[.[<end_field>]]VARIABLE`
 
-1. If` start_field` is omitted, the default value is 1.
-1. If `end_field` is omitted, the default value is the last field in the variable.
+1. If start\_field is omitted, the default value is 1.
+1. If end\_field is omitted, the default value is the last field in the variable.
 1. If there are 2 consecutive separators, the extracted field between the 2 separators is empty.
 1. If there is only one number after the separator indicating the value placement, this returns just that token value.
 
@@ -152,10 +152,10 @@ For the following example, see the corresponding syntax:
 
 `&<VARIABLE>=S052368_Z123_HZUI34_92___TYU`
 
-1. `&%_.2<VARIABLE>`: separator=\_, start\_field=1 , end\_field=2 (this returns the value `S052368_Z123`)
-1. `&%_3.<VARIABLE>`: separator=\_ , start\_field=3, end\_field=last\_field (this returns the value `HZUI34_92___TYU`)
-1. `&%_5<VARIABLE>`: separator=\_, start\_field=5, end\_field=5 (this returns ' ')
-1. `&%_4<VARIABLE>`: separator=\_, start\_field=4, end\_field=4 (this returns `92`)
+1. &%\_.2&lt;VARIABLE>: separator=\_, start\_field=1 , end\_field=2 (this returns the value S052368\_Z123)
+1. &%\_3.&lt;VARIABLE>: separator=\_ , start\_field=3, end\_field=last\_field (this returns the value HZUI34\_92\_\_\_TYU)
+1. &%\_5&lt;VARIABLE>: separator=\_, start\_field=5, end\_field=5 (this returns ' ')
+1. &%\_4&lt;VARIABLE>: separator=\_, start\_field=4, end\_field=4 (this returns 92)
 
 You can combine field extraction with the other filtering methods. The full syntax is:
 
@@ -295,8 +295,8 @@ QQQ\_QQQ\_QQQ
 | &amp;RPART  | 32  | Receiving partner name  |
 | &amp;IPART  | 32  | Intermediate partner name  |
 | &amp;NPART  | 32  | Network name of partner sending data (NSPART or NRPART according to the transfer direction)  |
-| &amp;NSPART  | 24  | Network identifier by which the local {{< TransferCFT/componentshortname  >}} identifies itself to its partner  |
-| &amp;NRPART  | 24  | Network identifier by which the remote partner identifies itself to the local {{< TransferCFT/componentlongname  >}} |
+| &amp;NSPART  | 24  | Network identifier by which the local Transfer CFT{{< TransferCFT/componentshortname  >}} identifies itself to its partner  |
+| &amp;NRPART  | 24  | Network identifier by which the remote partner identifies itself to the local Transfer CFT{{< TransferCFT/componentlongname  >}} |
 
 
 #### USER domain
@@ -310,7 +310,7 @@ QQQ\_QQQ\_QQQ
 | &amp;GROUPID | 32  | Group identifier linked to the userid |
 | &amp;COMMENT  | 160  | Comment indicated in CFTSEND/SEND or CFTRECV/RECV <br/> In listcat content=debug this is attribute is MSG  |
 | &amp;NOTIFY  | 8  | User notified on transfer  |
-| &amp;SJOBNAME  | 15  | {{< TransferCFT/componentshortname  >}} job name, can be used in exec and cronjob procedures  |
+| &amp;SJOBNAME  | 15  | Transfer CFT{{< TransferCFT/componentshortname  >}} job name, can be used in exec and cronjob procedures  |
 
 
 #### APPLICATIONS domain
@@ -343,7 +343,7 @@ QQQ\_QQQ\_QQQ
 | &amp;DIAGC  | 254  | Complimentary diagnostic code value  |
 | &amp;COMP  | 2  | Compression negotiated for the transfer<br/> Compression negotiated for the transfer<br/> When listcat content=debug this is attribute is FCOMP / COMPNEG |
 | &amp;NBT  | 20  | Number of bytes transferred  |
-| &amp;PRI  | 3  | {{< TransferCFT/componentshortname  >}} priority for the transfer (0 to 255)  |
+| &amp;PRI  | 3  | Transfer CFT{{< TransferCFT/componentshortname  >}} priority for the transfer (0 to 255)  |
 | &amp;QQ  | 3  | Number of the day in the year associated with the transfer identifier  |
 | &amp;SELFNAME  | 512  | Name of the generic transfer selection file  |
 | &amp;FCODE  | 1  | Code for the data in a file  |
@@ -454,7 +454,7 @@ QQQ\_QQQ\_QQQ
 | &amp;EYEAR  | 2  | Transfer end year |
 | &amp;EMONTH  | 2  | Transfer end month |
 | &amp;EDAY  | 2  | Transfer end day |
-| &amp;TT  | 10  | Transmission duration in seconds (TIMES attribute in the {{< TransferCFT/componentshortname  >}} catalog) |
+| &amp;TT  | 10  | Transmission duration in seconds (TIMES attribute in the Transfer CFT{{< TransferCFT/componentshortname  >}} catalog) |
 
 
 #### CONTROL OUTPUT domain
@@ -462,9 +462,9 @@ QQQ\_QQQ\_QQQ
 
 | Symbolic variable  | Maximum length  | Corresponding substituted value  |
 | --- | --- | --- |
-| &amp;FLOG  | 512  | Name of last log file used by {{< TransferCFT/componentshortname  >}}  |
-| &amp;FACCNT  | 512  | Name of last statistics file used by {{< TransferCFT/componentshortname  >}}  |
-| &amp;FCAT | 512  | Name of catalog used by {{< TransferCFT/componentshortname  >}} |
+| &amp;FLOG  | 512  | Name of last log file used by Transfer CFT{{< TransferCFT/componentshortname  >}}  |
+| &amp;FACCNT  | 512  | Name of last statistics file used by Transfer CFT{{< TransferCFT/componentshortname  >}}  |
+| &amp;FCAT | 512  | Name of catalog used by Transfer CFT{{< TransferCFT/componentshortname  >}} |
 
 
 #### TRACKING domain
@@ -513,9 +513,9 @@ QQQ\_QQQ\_QQQ
 > 
 > > >  | Symbolic variable >  | Max length >  | Corresponding substituted > value >  |
  --- | --- | --- | --- |
-> > > >  | &amp;CFTNAME<br/> >  | 32 >  | Name of the {{< TransferCFT/componentshortname  >}} (CFTPARM PART parameter)<br/> >  |
-> >  | &amp;CFTEVENT<br/> >  | 16 >  | The type of job submitted by {{< TransferCFT/componentshortname  >}}, see (1) below<br/> >  |
-> >  | &amp;SJOBNAME >  | 15 >  | The {{< TransferCFT/componentshortname  >}} jobname, which is the name of the job submitting the cronjob or exec procedure (z/OS) >  |
+> > > >  | &amp;CFTNAME<br/> >  | 32 >  | Name of the Transfer CFT{{< TransferCFT/componentshortname  >}} (CFTPARM PART parameter)<br/> >  |
+> >  | &amp;CFTEVENT<br/> >  | 16 >  | The type of job submitted by Transfer CFT{{< TransferCFT/componentshortname  >}}, see (1) below<br/> >  |
+> >  | &amp;SJOBNAME >  | 15 >  | The Transfer CFT{{< TransferCFT/componentshortname  >}} jobname, which is the name of the job submitting the cronjob or exec procedure (z/OS) >  |
 > >  | &amp;CFTVERSION >  | 16 >  | The Transfer CFT version >  |
 > >  | &amp;CFTSP >  | 16 >  | The latest SP applied to the Transfer CFT >  |
 > >  | &amp;CFTPATCH >  | 16 >  | The latest patch applied to the Transfer CFT >  |
@@ -537,12 +537,12 @@ QQQ\_QQQ\_QQQ
 > -   Month: MM
 > -   Day: DD
 >
-> **Sender**
+> ****Sender****
 >
 > The symbolic variables are
 > substituted by the values of the local parameters of the commands.
 >
-> **Receiver**
+> ****Receiver****
 >
 > The symbolic
 > variables are substituted:
@@ -571,7 +571,7 @@ QQQ\_QQQ\_QQQ
 > >  | EXEC for CFTACCNT or CFTLOG >  | &amp;FACCNT, &amp;FLOG >  |
 > >  | TLVCEXEC, TLVWEXEC for CFTCAT >  | &amp;FCAT >  |
 > >  | USERID > parameter of the CFTSEND and CFTRECV commands >  | &amp;RUSER, > &amp;SUSER, &amp;PART >  |
-> >  | EXIT > of the {{< TransferCFT/componentshortname  >}} CFTSEND/SEND and CFTRECV/RECV commands >  | &amp;IDF >  |
+> >  | EXIT > of the Transfer CFT{{< TransferCFT/componentshortname  >}} CFTSEND/SEND and CFTRECV/RECV commands >  | &amp;IDF >  |
 > >  | FNAME parameter > of CFTDEST >  |  > • &amp;FDATE, &amp;FTIME, &amp;FYEAR, &amp;FMONTH, &amp;FDAY<br /> > <br/> > • &amp;PART, &amp;RPART, &amp;SPART, &amp;NPART, &amp;GROUP<br /> > <br/> > • &amp;SUSER, &amp;RUSER<br /> > <br/> > • &amp;SAPPL, &amp;RAPPL<br /> > <br/> > • &amp;IDF, &amp;PARM, &amp;IDA<br /> > <br/> > • &amp;NIDF<br /> > <br/> > • &amp;NFNAME, &amp;NFVER<br/> > >  |
 > >  | The name of the > identifier of the IDF parameter of the CFTPROT command >  |  > • &amp;NIDF<br/> > >  |
 > >  | The IDA parameter of SEND and CFTSEND >  |  > • &amp;FNAME, &amp;FUNITC, &amp;FUNIT, &amp;FPATH, &amp;FROOT, &amp;FSUF, &amp;NFNAME, &amp;PART, &amp;IDF, &amp;IDTU, &amp;IDT, &amp;IDM, &amp;COMMENT, &amp;SYSDATE, &amp;SYSTIME<br/> > >  |
@@ -579,7 +579,7 @@ QQQ\_QQQ\_QQQ
 > >  | PARM, SAPPL, RAPPL parameters of SEND and CFTSEND >  |  > • &amp;FNAME, &amp;FUNITC, &amp;FUNIT, &amp;FPATH, &amp;FROOT, &amp;FSUF, &amp;NFNAME, &amp;PART, &amp;IDA, &amp;IDF, &amp;IDTU, &amp;IDT, &amp;IDM, &amp;COMMENT, &amp;SYSDATE, &amp;SYSTIME, &amp;FCHARSET, &amp;NCHARSET<br/> > >  |
 > > 
 >
-> ****Example****
+> ******Example******
 >
 > A file name can consist of the day’s date and the partner’s name:  the
 > description command for the PAY file in reception.
@@ -595,7 +595,7 @@ QQQ\_QQQ\_QQQ
 > RECV PART = ALPHSITE, IDF = PAY
 > ```
 >
-> {{< TransferCFT/componentshortname  >}} creates and writes to a file: PAYALPH.14
+> Transfer CFT{{< TransferCFT/componentshortname  >}} creates and writes to a file: PAYALPH.14
 >
 > See the end-of-transfer examples in [Transfer-related
 > procedure examples](../../../concepts/about_transfer_processing/procedure_examples).
@@ -606,26 +606,30 @@ QQQ\_QQQ\_QQQ
 >
 > You can use blacklist characters as a POSIX Regular Extended expression to define forbidden characters in a processing script. To prevent unauthorized actions, do not use these characters in symbolic variables.
 >
-> **Defining the blacklist**
+> ****Defining the blacklist****
 >
-> Use the uconf `cft.server.processing_scripts_variables_blacklist` parameter to define the character sequence to forbid. We recommend setting this parameter to **`|\\$\\(|;|&|\\|** for UNIX, and **"&"** for Windows.
+> Use the uconf cft.server.processing\_scripts\_variables\_blacklist parameter to define the character sequence to forbid. We recommend setting this parameter to **`|\\$\\(|;|&|\\|** for UNIX, and **"&"** for Windows.
 >
-> **UNIX**
+> ****UNIX****
 >
 > ```
 > uconfset id=cft.server.processing_scripts_variables_blacklist , value= "`|\\$\\(|;|&|\\|"
 > ```
-> **When setting the blacklist values shown above, the forbidden characters are: **`** and **$(** and **;** and **&** and **|**  
-> For example, if `&PARM="$(ls)"`or if `` &PARM="`ls`" ``, then the EXEC is not executed because of the **$(** or the **`** characters, respectively.**
-> **Windows**
+>
+> ****When setting the blacklist values shown above, the forbidden characters are: **`** and **$(** and **;** and **&** and **|**  
+> For example, if &PARM="$(ls)"or if `` &PARM="`ls`" ``, then the EXEC is not executed because of the **$(** or the **`** characters, respectively.****
+>
+> ****Windows****
+>
 > ```
 > uconfset id=cft.server.processing_scripts_variables_blacklist , value="&"
 > ```
-> **DIAGI 158**
 >
-> This DIAGI indicates that there was an error while replacing the {{< TransferCFT/componentlongname  >}} variables.
+> ****DIAGI 158****
 >
-> **Log messages**
+> This DIAGI indicates that there was an error while replacing the Transfer CFT{{< TransferCFT/componentlongname  >}} variables.
+>
+> ****Log messages****
 >
 > -   CFTS67E: Error replacing variable &lt;var> &lt;error message>
 > -   CFTS68E: PART=&part \[IDF=&idf | IDM=&idm\]IDT=&idt \_ &fname not executed

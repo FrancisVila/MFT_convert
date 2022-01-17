@@ -2,10 +2,12 @@
     "title": "Reason  and diagnostic network codes",
     "linkTitle": "Reason and diagnostic network codes",
     "weight": "510"
-}**<span id="Reason_codes"></span>Reason codes: REASON codes provide a general explanation of the error detected, or
-the refusal.**
-**<span id="Diagnostic_codes"></span>Diagnostic codes: DIAGNOSTIC (diag) codes provide a detailed explanation of the source
-of the error detected or the refusal.**
+}****<span id="Reason_codes"></span>Reason codes: REASON codes provide a general explanation of the error detected, or
+the refusal.****
+
+****<span id="Diagnostic_codes"></span>Diagnostic codes: DIAGNOSTIC (diag) codes provide a detailed explanation of the source
+of the error detected or the refusal.****
+
 <span id="TCP_IP_Network_codes"></span>
 
 ## TCP/IP network codes
@@ -19,7 +21,7 @@ system.
 
 The codes are expressed in hexadecimal.
 
-**TCP/IP Reason codes**
+****TCP/IP Reason codes****
 
 
 | Code  | Description  |

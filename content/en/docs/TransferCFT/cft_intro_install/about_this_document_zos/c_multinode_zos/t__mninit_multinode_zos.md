@@ -49,8 +49,8 @@ Edit the MNINIT JCL located in the INSTALL Library as described in the following
 ### Additional steps and notes
 
 - Operator commands are 'local' to a node.
-- The UCONF `sentinel.trktname` parameter defines the Sentinel overflow file. Configure as follows:
-    -   Set the `sentinel.trksharedfile` parameter to YES.
+- The UCONF sentinel.trktname parameter defines the Sentinel overflow file. Configure as follows:
+    -   Set the sentinel.trksharedfile parameter to YES.
     -   You must use an Event Router to process the overflow file.
     -   For a multi-hosts, multi-node implementation, define the logger file using a CF-Structure.
     -   For a mono-host, multi-node implementation, define the logger file using the DASDONLY parameter.

@@ -20,10 +20,10 @@ from XFBTransfer.
 ## XFBLog request
 
 When you configure Sentinel with Transfer CFT, you can import
-a predefined request for XFBTransfer *TransferLog*.
+a predefined request for XFBTransfer TransferLog.
 This Request retrieves Tracked Instances that describe the contents of
-a {{< TransferCFT/componentshortname  >}} log.
+a Transfer CFT{{< TransferCFT/componentshortname  >}} log.
 
-**Related topics**
+****Related topics****
 
 - [XFBLog Tracked Object](../xfblog)

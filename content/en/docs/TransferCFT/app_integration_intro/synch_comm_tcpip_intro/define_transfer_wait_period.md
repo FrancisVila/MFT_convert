@@ -59,17 +59,21 @@ mandatory argument for which the value must be enclosed in double quotes.
 ```
 SWAITCAT select="EXPRESSION"
 ```
-****Expression****
 
-`Select `is a Boolean expression that identifies one transfer.
+******Expression******
+
+Select is a Boolean expression that identifies one transfer.
 
 **Syntax**
 
 See the value section for a list of possible values.
 
 `CAT_ID OP VALUE`
+
 `(CAT_ID OP VALUE)`
+
 `CAT_ID OP VALUE && CAT_ID OP VALUE`
+
 `CAT_ID OP VALUE || CAT_ID OP VALUE`
 
 Possible values for CAT\_ID, which filters on the current state:
@@ -121,7 +125,7 @@ The Phasesteps parameter is a string that can be composed of D, H, C, K, X, E an
 - \(D\) At disposal: The processing of the Phase is ready to be executed; it is ready to go.
 - \(H\) Hold: The processing of the Phase is on hold and waiting for an action to be executed.
 - \(C\) Processing/Current: The Phase processing is being executed.
-- \(R\) Retry: Retries renaming the file using the `FACTION retryrename `value.
+- \(R\) Retry: Retries renaming the file using the FACTION retryrename value.
 - \(X\) Done: This phase step only exists for the Done phase, once all previous phases are complete.
 - \(E\) Exit EOT: This phase step only exists for the Post-processing phase, to signal an [end-of-transfer exit](../../managing_exits/about_the_end_of_transfer_type_exit).
 

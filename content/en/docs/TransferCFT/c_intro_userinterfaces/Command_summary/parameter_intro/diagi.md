@@ -6,7 +6,8 @@
 
 ### diagi
 
-**LISTCAT, DISPLAY**
+****LISTCAT, DISPLAY****
+
 `[ DIAGI = { * | 0 | ERROR }] `
 
 Internal diagnostic code. Use the following values to define the diagi catalog transfer field display:

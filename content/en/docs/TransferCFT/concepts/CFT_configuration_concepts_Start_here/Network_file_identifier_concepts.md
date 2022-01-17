@@ -20,13 +20,13 @@ object defines a network identifier for a given partner, and a transfer
 direction, when partners cannot agree on common file identifiers.
 
 The CFTIDF object is used to locally set up this correspondence between
-the local **idf** and the sent or
-received <span style="font-weight: bold;">nidf</span>.
+the local idf and the sent or
+received nidf.
 
 **For all protocols EXCEPT PeSIT SIT profile**
 
 If partners cannot agree on common file identifiers because of operating
-constraints, the <span style="font-style: italic;">network identifier,</span>
+constraints, the network identifier,
 NIDF, can be used to reconcile, for a given partner and transfer
 direction, the local identifier (IDF) with the file identifier supplied
 by (or sent to) the partner.

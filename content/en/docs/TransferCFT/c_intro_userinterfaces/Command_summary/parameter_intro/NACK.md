@@ -6,7 +6,7 @@
 
 #### SEND
 
-**\[SEND TYPE = NACK\]**
+****\[SEND TYPE = NACK\]****
 
 Via negative acknowledgments sent in a PeSIT Hors SIT message, the
 final partner signals to the initial sender of the file that application
@@ -19,13 +19,13 @@ negative acknowledgement and the Transfer CFT log file displays:
 
 #### CFTPROT, CFTPART
 
-**\[ NACK = { YES | <u>NO</u> } \]**
+****\[ NACK = { YES | <u>NO</u> } \]****
 
 This parameter enables or disables the NACK feature in either a partner or protocol definition for a non Transfer CFT product.
 
-To enable the use of NACK when connecting to products other than {{< TransferCFT/componentlongname  >}}, set the parameter NACK to YES in the CFTPROT or CFTPART objects.
+To enable the use of NACK when connecting to products other than Transfer CFT{{< TransferCFT/componentlongname  >}}, set the parameter NACK to YES in the CFTPROT or CFTPART objects.
 
-However, note that the CFTPART NACK value overrides the CFTPROT NACK value. If however, this product does not support a negative acknowledgment, the following error message displays in the log: ` CFTH13E FPDU Remote reject <PART=STREFSSL DIAGI=909 DIAGP=RCO 301>`
+However, note that the CFTPART NACK value overrides the CFTPROT NACK value. If however, this product does not support a negative acknowledgment, the following error message displays in the log: CFTH13E FPDU Remote reject &lt;PART=STREFSSL DIAGI=909 DIAGP=RCO 301>
 
 > **Note**
 >

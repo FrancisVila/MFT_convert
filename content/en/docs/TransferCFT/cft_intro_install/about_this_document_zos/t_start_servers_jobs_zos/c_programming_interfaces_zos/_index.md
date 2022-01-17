@@ -60,17 +60,23 @@ This section describes the special use of COBOL compiled with the DYNAM option.
 
 The DYNAM compile option is incompatible with the DLL option. To be able to use the CFT APIs, an interface (called 'OAPIFC') is provided. You must only call this interface one time, and return function pointers corresponding to DLL API entry points.
 
-**Implementation**
+****Implementation****
 
 1. In the working storage section, add the copy book OCFTAPD2.
 1. In the procedure division, call the module 'OAPIFC' once:
 
 `if   (ipc-loaded = zero) then`
+
 `call 'OAPIFC' using ipc-par end-call`
+
 `end-if`
-**Syntax to call CFT APIs**
+
+****Syntax to call CFT APIs****
+
 `Call cftu using parameters…`
+
 `Call cfti using parameters…`
+
 `Call cftc using parameters…`
 
 Etc.

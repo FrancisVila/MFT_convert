@@ -18,7 +18,7 @@ Upload the Transfer CFT package corresponding to the target platform to your mac
 Transfer_CFT_3.8_Install_hp_nonstop_oss-ia64-32_BN8580000.zip
 ```
 
-Decompress the archive using the `unzip `command.
+Decompress the archive using the unzip command.
 
 **Example**
 
@@ -35,7 +35,7 @@ inflating: EULA.txt
 inflating: EULA.html
 ```
 
-In the example, Transfer CFT package is unzipped in the `Transfer_CFT_OtherUnixes_V3.8` directory.
+In the example, Transfer CFT package is unzipped in the Transfer\_CFT\_OtherUnixes\_V3.8 directory.
 
 > **Note**
 >
@@ -43,7 +43,7 @@ In the example, Transfer CFT package is unzipped in the `Transfer_CFT_OtherUnixe
 
 ## Add execution rights
 
-Add execution rights to the `Transfer_CFT_<version>_<os>-<arch>-<xx>.run` package.
+Add execution rights to the Transfer\_CFT\_&lt;version>\_&lt;os>-&lt;arch>-&lt;xx>.run package.
 
 Enter:
 
@@ -53,15 +53,15 @@ chmod u+x Transfer_CFT_<version>_<os>-<arch>-<xx>.run
 
 ## Start the installation
 
-Execute the `install `command to start the Transfer CFT installation procedure, replacing `<installation_directory>` with the directory where you want to install Transfer CFT.
+Execute the install command to start the Transfer CFT installation procedure, replacing &lt;installation\_directory> with the directory where you want to install Transfer CFT.
 
 For a new installation, this directory should be empty or nonexistent. However, the installation directory can point to an existing installation in order to upgrade it. For more information on performing an upgrade, refer to <a href="" class="MCXref xref">Migrate or upgrade Transfer CFT</a>.
 
 You can use the following additional parameters:
 
-- `--cryptokey_password <password>`: the `cftcrypt `requires a password to generate an encryption key. You can either provide one using this parameter, or interactively enter it during the installation. Either way, the password is checked against the `cftcrypt `password acceptance criteria, and the installation cannot complete unless a valid password is provided.
+- --cryptokey\_password &lt;password>: the cftcrypt requires a password to generate an encryption key. You can either provide one using this parameter, or interactively enter it during the installation. Either way, the password is checked against the cftcrypt password acceptance criteria, and the installation cannot complete unless a valid password is provided.
 - `<guardian_installation_directory_prefix>` installs the Guardian specific files in its file system space. This parameter is *optional*. It is required only if you want to integrate Transfer CFT with Guardian procedures.
-- `--post_install_script <fullpathtopinstscript>` runs a shell script during the installation procedure after the product has been initialized.
+- --post\_install\_script &lt;fullpathtopinstscript> runs a shell script during the installation procedure after the product has been initialized.
 
 Enter:
 
@@ -71,7 +71,7 @@ Enter:
 
 **Examples**
 
-The following command installs Transfer CFT on the OSS directory /`home/cftuser/CFT38`. Additionally, the Guardian components are installed using `/G/data14/cft38b` (which is an equivalent of `$DATA14.CFT38B`) as a prefix.
+The following command installs Transfer CFT on the OSS directory /home/cftuser/CFT38. Additionally, the Guardian components are installed using /G/data14/cft38b (which is an equivalent of `$DATA14.CFT38B`) as a prefix.
 
 ```
 /home/cftuser/Transfer_CFT_OtherUnixes_V3.8: ./ TransferCFT_3.8_hp_nonstop_oss-ia 64-32.run install /home/cftuser/CFT38 /G/data14/cft38b
@@ -107,7 +107,7 @@ The Transfer CFT installation procedure automatically performs the following:
 
 If you opted to install the Guardian files, several files are created in the Guardian system space. The files' volume and subvolumes depend on the installation prefix that you provided.
 
-For example, `/G/data14/cft38b` creates files where the volume name is $DATA14, the subvolume names begin with cft38b, and that ends with the values described in the following table.
+For example, /G/data14/cft38b creates files where the volume name is $DATA14, the subvolume names begin with cft38b, and that ends with the values described in the following table.
 
 
 | Subvolume  | Description  |
@@ -123,13 +123,13 @@ For example, `/G/data14/cft38b` creates files where the volume name is $DATA14, 
 
 ## Enter the Transfer CFT license key
 
-After the installation completes, enter the Transfer CFT license key in the `<installation_directory>/runtime/conf/cft.key` file.
+After the installation completes, enter the Transfer CFT license key in the &lt;installation\_directory>/runtime/conf/cft.key file.
 
 <span id="Install"></span>
 
 ## Install the Guardian specific files
 
-If you ran the installation procedure without providing the parameter `<guardian_installation_`directory\_prefix>, the Guardian specific files were not installed. However, you can install these files later by calling the Guardian installation script.
+If you ran the installation procedure without providing the parameter &lt;guardian\_installation\_directory\_prefix>, the Guardian specific files were not installed. However, you can install these files later by calling the Guardian installation script.
 
 1. Load the Transfer CFT profile:
 1. Install the Guardian files:

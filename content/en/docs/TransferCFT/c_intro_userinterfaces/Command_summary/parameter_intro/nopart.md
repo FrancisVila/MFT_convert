@@ -4,7 +4,7 @@
     "weight": "2270"
 }<span id="nopart"></span>
 
-### 
+### nopart
 
 #### CFTDEST
 
@@ -17,11 +17,11 @@ completed the fname field.
 Define the actions to perform when a partner in the partner list is
 not found. Options are:
 
-- **abort**
+- abort
     (default)
-- <span style="font-weight: bold;">continue</span>:
+- continue:
     to display an information message and continue processing
-- <span style="font-weight: bold;">ignore</span>:
+- ignore:
     continue processing with no information message
 
  

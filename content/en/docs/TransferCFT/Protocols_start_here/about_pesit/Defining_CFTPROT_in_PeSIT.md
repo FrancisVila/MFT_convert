@@ -74,7 +74,7 @@ Transfer CFT itself sends the network disconnection request.
 
 ### Defining the transfer direction
 
-**PeSIT E, CFT/CFT**
+****PeSIT E, CFT/CFT****
 
 The Transfer CFT extensions together with the E version functionality, provide the possibility
 to perform a succession of read and write transfers over the same logical
@@ -215,7 +215,8 @@ of exchanges option during transfer. The only dynamic resynchronization
 case possible between two Transfer CFTs is in the event of a CRC
 error (PAD = YES).
 
-**Example**
+****Example****
+
 `CFTPROT  ID = INTRAN,         ...         SCHKW   = 2,           SPACING = 4096,         ...`
 
 The sender is able to send up to 4 Mbytes before each synchronization
@@ -392,7 +393,7 @@ password.
 
 ### Error detection - PAD support
 
-Deprecated in {{< TransferCFT/componentlongname  >}} 3.5
+Deprecated in Transfer CFT{{< TransferCFT/componentlongname  >}} 3.5
 
 Through an asynchronous access PAD (Packet
 Assembler/Disassembler),

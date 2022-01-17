@@ -2,9 +2,9 @@
     "title": "HFS hierarchical files",
     "linkTitle": "HFS hierarchical files",
     "weight": "310"
-}The <a href="" class="MCTextPopup popup popupHead">HFS</a> data architecture is consecutive and non-structured for records and blocks. The HFS files are installed in hierarchical disk spaces, and divided into directories and sub-directories according to UNIX conventions.
+}The <a href="" class="MCTextPopup popup popupHead">HFS Hierarchical File System</a> data architecture is consecutive and non-structured for records and blocks. The HFS files are installed in hierarchical disk spaces, and divided into directories and sub-directories according to UNIX conventions.
 
-HFS files are managed either by applications that work in an UNIX/OMVS environment, or by applications that use the <a href="" class="MCTextPopup popup popupHead">USS</a>, such as the management and access interface.
+HFS files are managed either by applications that work in an UNIX/OMVS environment, or by applications that use the <a href="" class="MCTextPopup popup popupHead">USS UNIX System Services</a>, such as the management and access interface.
 
 Transfer CFT only accepts the complete name from the root directory. All file name components are separated by the ‘/’ character. The complete name is limited to 248 characters.
 
@@ -24,12 +24,15 @@ However, as the value for the NFNAME= parameter is not converted to upper case, 
 **Example**
 
 `FNAME ="/home/qualcft/send/SEND.File.Lowercase" `
+
 `NFNAME= '/home/qualcft/recv/Recv.File.Lowercase' `
 
 or
 
 ` /home/qualcft/recv/Recv.File.Lowercase`
+
 `To enable recursive processing for a group of files, use the following syntax ** (two asterisks). To select all files in all of the folders, for example: `
+
 ```
 FNAME =/home/qualcft/\*\*
 ```
@@ -118,6 +121,6 @@ Refer to the IBM brochure *UNIX System Services Messages & Codes*.
 
 - RC=: The return code in abbreviated mnemonic (numeric) form
 
-**Related topics**
+****Related topics****
 
 - [File access and coding](../file_access_and_coding)

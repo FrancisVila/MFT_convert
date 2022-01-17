@@ -8,6 +8,7 @@ Transfer CFT, using either an immediate or delayed shutdown.
 Syntax
 
 `[ FAST   = { NO   | YES | KILL } ]`
+
 `[ RESTART = { YES | NO } ]`
 
 QQQ\_QQQ\_QQQ split table

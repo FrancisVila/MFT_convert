@@ -2,20 +2,20 @@
     "title": "Multi-node architecture",
     "linkTitle": "Multi-node architecture",
     "weight": "170"
-}This topic describes the {{< TransferCFT/componentshortname  >}} multi-node feature, which provides you with horizontal scalability and high availability for failovers. Following a brief review of terms, this topic describes:
+}This topic describes the Transfer CFT{{< TransferCFT/componentshortname  >}} multi-node feature, which provides you with horizontal scalability and high availability for failovers. Following a brief review of terms, this topic describes:
 
 - Active/Active clusters
 - Active/Passive clusters
 - Multi-node architecture
 - Recovery and dispatching
 
-**Terminology**
+****Terminology****
 
-The {{< TransferCFT/componentshortname  >}} active-active architecture is based on hosts, nodes, and a shared file system.
+The Transfer CFT{{< TransferCFT/componentshortname  >}} active-active architecture is based on hosts, nodes, and a shared file system.
 
-*What is a host?* A host refers to a physical or virtual server located behind a load balancer, or other DNS mechanism. A server can host zero or multiple nodes. {{< TransferCFT/componentshortname  >}} itself does not manage the round robin or other load balancing mechanisms.
+*What is a host?* A host refers to a physical or virtual server located behind a load balancer, or other DNS mechanism. A server can host zero or multiple nodes. Transfer CFT{{< TransferCFT/componentshortname  >}} itself does not manage the round robin or other load balancing mechanisms.
 
-*What is a node?* A node is a {{< TransferCFT/componentshortname  >}} runtime running on a host. Multiple nodes are called a {{< TransferCFT/componentshortname  >}} cluster, which can run on one or multiple hosts.
+*What is a node?* A node is a Transfer CFT{{< TransferCFT/componentshortname  >}} runtime running on a host. Multiple nodes are called a Transfer CFT{{< TransferCFT/componentshortname  >}} cluster, which can run on one or multiple hosts.
 
 *What is a shared file system?* A shared file system is a file system resource that is shared by several hosts.
 
@@ -49,7 +49,7 @@ The active/passive architecture requires a shared file system.
 ### Active/passive features
 
 - Only one active host with only one runtime
-- Available on all {{< TransferCFT/transfercftname >}} versions
+- Available on all Transfer CFT{{< TransferCFT/transfercftname >}} versions
 - Supported platforms: Windows Server with MSCS , Linux, Solaris, AIX /HACMP, and IBM i
 
 ## Multi-node architecture
@@ -62,18 +62,19 @@ The Transfer CFT multi-node architecture is based on hosts, nodes, a shared file
 
 The multi-node setup comprises:
 
-- A **shared file system** (infrastructure), for multiple nodes to be able to access the same files using the same set configuration. The shared disk provides communication, configuration, partners, data flows, internal datafiles, and application transferable files.
-- A **load balancer** (infrastructure), hardware or software, by which incoming connections can pass. The load balancer dispatches the incoming traffic between the different hosts. However, the outgoing traffic does not use the load balancer.
-- One **connection dispatcher** per host (Copilot component), checks for incoming connections on the host it is running on and dispatches connections to nodes running on the same host. For z/OS platforms, refer to *VIPA load balancing* in the *Transfer CFT z/OS Installation and Operation Guide*.
-- One **node manager** per host (Copilot component), which monitors all nodes. If a node goes down, the node manager detects the inactivity and restarts it if needed, while taking into account the activity of other node managers. The monitoring mechanism is based on locks provided by the file system lock manager or the resource lock manager. Additionally, the node manager has its own watchdog that is used to prevent incorrect behavior after a shared file system auto-unlock, for instance due to NFSv4 lease time. If the watchdog does not receive a keep-alive from the node manager, all local nodes are killed and relock is requested.
-- One **synchronous communication media dispatcher** per host (Copilot component), which allows the use of the synchronous communication media feature in a multi-node environment.
+- A ****shared file system**** (infrastructure), for multiple nodes to be able to access the same files using the same set configuration. The shared disk provides communication, configuration, partners, data flows, internal datafiles, and application transferable files.
+- A ****load balancer**** (infrastructure), hardware or software, by which incoming connections can pass. The load balancer dispatches the incoming traffic between the different hosts. However, the outgoing traffic does not use the load balancer.
+- One ****connection dispatcher**** per host (Copilot component), checks for incoming connections on the host it is running on and dispatches connections to nodes running on the same host. For z/OS platforms, refer to *VIPA load balancing* in the *Transfer CFT z/OS Installation and Operation Guide*.
+- One ****node manager**** per host (Copilot component), which monitors all nodes. If a node goes down, the node manager detects the inactivity and restarts it if needed, while taking into account the activity of other node managers. The monitoring mechanism is based on locks provided by the file system lock manager or the resource lock manager. Additionally, the node manager has its own watchdog that is used to prevent incorrect behavior after a shared file system auto-unlock, for instance due to NFSv4 lease time. If the watchdog does not receive a keep-alive from the node manager, all local nodes are killed and relock is requested.
+- One ****synchronous communication media dispatcher**** per host (Copilot component), which allows the use of the synchronous communication media feature in a multi-node environment.
 
-**Normal functioning**
+********Normal functioning********
 
 ![](/Images/TransferCFT/normal_multinode.png)
 
-**If Host A goes down, then Host B takes over Node 1**
-**![](/Images/TransferCFT/host_down.png)**
+********If Host A goes down, then Host B takes over Node 1********
+
+********![](/Images/TransferCFT/host_down.png)********
 
 ## Runtime files
 
@@ -106,8 +107,8 @@ The following internal datafiles are node specific, and the filename is flagged 
 
 There are two possibilities when a node manager detects a node failure:
 
-- If it is a **local** node failover, the node manager automatically attempts to restart the node on the local server.
-- If it is a **remote** node failover, the node manager waits for the remote node manager (if it is still active) to restart the node. If the remote node manager does not restart the node  before the timeout, the local node manager restarts the node on the local server.
+- If it is a ****local**** node failover, the node manager automatically attempts to restart the node on the local server.
+- If it is a ****remote**** node failover, the node manager waits for the remote node manager (if it is still active) to restart the node. If the remote node manager does not restart the node  before the timeout, the local node manager restarts the node on the local server.
 
 After the node is restarted, whether local or remote, it completes all transfer requests that were active when the failure occurred.
 
@@ -129,24 +130,24 @@ If a node fails during the transfer recovery process, the catalog record is lock
 
 In a multi-node architecture there is one primary communication file, and then as many secondary communication files as nodes to control request dispatching.
 
-**How does communication between the primary file and secondary files occur?**
+****How does communication between the primary file and secondary files occur?****
 
 The dispatcher (CFTMCOM) process controls the relationship between the primary COM file and the specific secondary COM files.
 
-**What happens in the case of a communication breakdown?**
+****What happens in the case of a communication breakdown?****
 
 No breakdown occurs because there is no communication between the nodes. If the dispatcher fails, another active node takes over as the dispatcher.
 
-**When and how is the transfer request removed from the communication file?**
+****When and how is the transfer request removed from the communication file?****
 
 - It is removed from the primary communication file once the dispatcher has written it to the secondary communication file.
 - It is then removed from the secondary file once CFTMAIN has processed the transfer request.
 
-**How are requests dispatched?**
+****How are requests dispatched?****
 
 There are two types of requests, which may be handled differently depending on their type:
 
-1. Transfer requests are dispatched on a single node, according to the defined dispatching rule. The dispatching rule is defined by a UCONF value, the `cft.multi_node.cftcom.dispatcher_policy` parameter.
+1. Transfer requests are dispatched on a single node, according to the defined dispatching rule. The dispatching rule is defined by a UCONF value, the cft.multi\_node.cftcom.dispatcher\_policy parameter.
 1. Dispatching for administrative types of requests are broadcast to all active nodes. For example, using the HALT command to stop a transfer request applies to all nodes.
 
 #### Client transfer request
@@ -173,7 +174,7 @@ All remote requests are going through a load balancer, server transfers, SOAP we
 
 For information on troubleshooting multi-node issues, please refer to <a href="../troubleshoot_intro/admin_troubleshooting_server/admin_troubleshooting_runtime/troubleshoot_multinode" class="MCXref xref">Troubleshoot multi-node</a>.
 
-**Related topics**
+****Related topics****
 
 - [Multi-node commands](multi_node_commands)
 - [Managing multi-node]()

@@ -62,13 +62,13 @@ At each receive transfer:
 - if
     the data received is in ASCII and the local data is in EBCDIC, or vice-versa,
     translation is always performed: translation according to an external
-    table, or, by default, translation according to the {{< TransferCFT/componentshortname >}} internal
+    table, or, by default, translation according to the Transfer CFT{{< TransferCFT/componentshortname >}} internal
     table
 - if
     the data received and the local data have the same code, ASCII or EBCDIC,
     an external table is required to execute a translation
 
-{{< TransferCFT/componentshortname  >}} does not have an ASCII/ASCII or EBCDIC/EBCDIC
+Transfer CFT{{< TransferCFT/componentshortname  >}} does not have an ASCII/ASCII or EBCDIC/EBCDIC
 internal table. If the data received and/or the local data are binary,
 no translation is performed.
 
@@ -85,7 +85,7 @@ This code is:
 
 #### CFTSEND, SEND
 
-**\[FCODE = {ASCII | BINARY | EBCDIC}\]**
+****\[FCODE = {ASCII | BINARY | EBCDIC}\]****
 
 Code of the data to be sent.
 

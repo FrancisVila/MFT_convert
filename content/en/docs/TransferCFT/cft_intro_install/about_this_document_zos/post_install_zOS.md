@@ -2,7 +2,7 @@
     "title": "Verify your installation",
     "linkTitle": "Verify your installation",
     "weight": "150"
-}See the installation if you encounter problems when starting {{< TransferCFT/componentlongname  >}}.
+}See the installation if you encounter problems when starting Transfer CFT{{< TransferCFT/componentlongname  >}}.
 
 ## Installed directories
 

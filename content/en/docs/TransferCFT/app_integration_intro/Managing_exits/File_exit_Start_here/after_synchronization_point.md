@@ -10,14 +10,14 @@
 
 For the receiver, a file type
 EXIT (DIRECT = R) with file accessing managed by the user, the
-user function has to return to {{< TransferCFT/componentshortname  >}} the value of the synchronization
+user function has to return to Transfer CFT{{< TransferCFT/componentshortname  >}} the value of the synchronization
 point, the number of records and the number of bytes written in the file.
 This information is used by the monitor to complete the catalog entry
 and is supplied to the user function during the RESTART\_TYP stage.
 
 At the sender end for a file type
-EXIT (DIRECT = S) or if file accessing is managed by {{< TransferCFT/componentshortname  >}}, the
-{{< TransferCFT/componentshortname  >}} has all the information required to set a synchronization
+EXIT (DIRECT = S) or if file accessing is managed by Transfer CFT{{< TransferCFT/componentshortname  >}}, the
+Transfer CFT{{< TransferCFT/componentshortname  >}} has all the information required to set a synchronization
 point.
 
 ### Fields to define
@@ -25,7 +25,7 @@ point.
 
 | Field  | Description  |
 | --- | --- |
-| ret1 | Return code:<br/> • 0: processing ok<br/> • 9: refusal and end of transfer<br/> If file accessing is managed by {{< TransferCFT/componentshortname  >}}:<br/> • 1: record modified<br/> • 2: one or more records inserted<br/> • 3: record deleted  |
+| ret1 | Return code:<br/> • 0: processing ok<br/> • 9: refusal and end of transfer<br/> If file accessing is managed by Transfer CFT{{< TransferCFT/componentshortname  >}}:<br/> • 1: record modified<br/> • 2: one or more records inserted<br/> • 3: record deleted  |
 | ret2 | Error message  |
 | msg | Message sent to the standard output  |
 | rpos | Value of the last synchronization point  |

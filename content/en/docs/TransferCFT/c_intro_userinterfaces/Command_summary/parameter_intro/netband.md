@@ -4,7 +4,7 @@
     "weight": "2150"
 }<span id="netband"></span>
 
-### 
+### netband
 
 CFTSEND, CFTRECV
 
@@ -21,7 +21,7 @@ this parameter. Selects the outgoing port range:·
 
 If NETBAND is larger than the number of defined ranges, the last range is used.
 
-**Example**
+****Example****
 
 In the case of SRCPORTS=(6000-6009,6010-6019,6020-6030)·
 

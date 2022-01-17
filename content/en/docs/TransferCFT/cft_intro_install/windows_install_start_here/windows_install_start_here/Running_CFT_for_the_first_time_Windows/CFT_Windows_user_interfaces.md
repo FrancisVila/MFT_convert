@@ -45,7 +45,7 @@ To start the Transfer CFT from the user interface:
 
 For more information, refer to Transfer CFT  Administration.
 
-**Related topics**
+****Related topics****
 
 - [Define user rights](../user_rights_and_interface_win)
 - Starting/stopping

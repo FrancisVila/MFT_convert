@@ -60,9 +60,9 @@ In this example the XFER\_CAT\_SELECT request uses the IDTU.
 
 ## Successful response
 
-### {{< TransferCFT/componentlongname  >}} is down
+### Transfer CFT{{< TransferCFT/componentlongname  >}} is down
 
-Executing the this request when Copilot is running but {{< TransferCFT/componentlongname  >}} is not running returns the same response.
+Executing the this request when Copilot is running but Transfer CFT{{< TransferCFT/componentlongname  >}} is not running returns the same response.
 
 &lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
@@ -166,6 +166,6 @@ In the following response the return code is 3, successful, but the LISCAT\_ARRA
 
 The exact message text may vary depending on the selected COM media type (File or TCP).
 
-**Related topics**
+****Related topics****
 
 [Get started with Web services](../get_started_web_services)

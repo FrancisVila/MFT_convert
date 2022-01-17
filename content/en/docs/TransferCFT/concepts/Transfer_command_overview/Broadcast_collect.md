@@ -37,7 +37,7 @@ The broadcasting list can be described by indicating the identifiers
 of the partners in this list, in the PART parameter of the CFTDEST command.
 This limits the number of identifiers.
 
-This diagram represents a SEND command for "mygroup", which is a collection of applications as defined in , or CFTPART objects if defined in Transfer CFT.
+This diagram represents a SEND command for "mygroup", which is a collection of applications as defined in Central Governance, or CFTPART objects if defined in Transfer CFT.
 
 ![](/Images/TransferCFT/temp_broadcast.png)
 
@@ -92,8 +92,8 @@ entries in the catalog corresponding to:
     management
 - Where &lt;file\_symb> is the OS appropriate symbol (# or @)
 
-This virtual transfer is identified by a **DIAGP**
-code equal to <span style="font-weight: bold;">DIFFUS</span>, on querying
+This virtual transfer is identified by a DIAGP
+code equal to DIFFUS, on querying
 the catalog.
 
 - And a generic virtual
@@ -116,8 +116,12 @@ case:
 The following diagram illustrates the parameter setting to broadcast to
 three different partners.
 
-**Parameter setting to broadcast to several
-partners![](/Images/TransferCFT/parameter_setting_to_broadcast_to_three_different_partners.gif)**<span id="Broadcasting_and_store_and_forward"></span>
+****Parameter setting to broadcast to several
+partners****
+
+****![](/Images/TransferCFT/parameter_setting_to_broadcast_to_three_different_partners.gif)****
+
+<span id="Broadcasting_and_store_and_forward"></span>
 
 ## Broadcasting and store and forward
 
@@ -225,9 +229,9 @@ For each partner, the mechanism used is RECV IDF=\*, FILE=ALL. See the paragraph
 for [ODETTE](../../../protocols_start_here/start_here_odette/receiving_transfers) and [PeSIT](../../../protocols_start_here/about_pesit/defining_cftrecv_in_pesit) in the [Protocol](../../../protocols_start_here) sections.
 
 The EXEC parameter of the CFTDEST command is ignored. The end of transfer procedure is only executed when all the transfers
-are correctly completed (COLLECT entry changes to the <span style="font-weight: bold;">T</span> or **X**
+are correctly completed (COLLECT entry changes to the T or **X**
 state). No procedure is submitted for the generic collection entry, which
-remains in <span style="font-weight: bold;">K</span> state when reception
+remains in K state when reception
 is complete.
 
 No error procedure is submitted for created entries that include
@@ -236,7 +240,7 @@ errors.
 The following figure indicates the parameter setting of a collect from
 three different partners.
 
-****Parameter setting to collect from three
-partners****
+******Parameter setting to collect from three
+partners******
 
 ![](/Images/TransferCFT/parameter_setting_of_a_collect_from_the_three_different_partners.gif)

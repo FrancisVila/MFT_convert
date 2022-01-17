@@ -65,7 +65,7 @@ kernel parameter to 1024. To do so:
 1. Set the pointer to the *maxfiles*
     parameter.
 1. Select the *Modify
-    Configurable Parameter* option in the **Actions**
+    Configurable Parameter* option in the Actions
     menu.
 1. Enter the new value for this
     parameter.

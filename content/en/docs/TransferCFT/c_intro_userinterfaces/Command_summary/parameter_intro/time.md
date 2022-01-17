@@ -4,7 +4,7 @@
     "weight": "3490"
 }<span id="time"></span>
 
-### 
+### time
 
 #### CFTCRON
 
@@ -15,5 +15,5 @@ commands.
 
 - string
 - @shutdown - starts a batch procedure after stopping CFT monitor services
-- @startup - starts a batch procedure at the end of the {{< TransferCFT/componentshortname >}} initialization
-    procedure when {{< TransferCFT/componentshortname >}} starts but before any transfers procedure
+- @startup - starts a batch procedure at the end of the Transfer CFT{{< TransferCFT/componentshortname >}} initialization
+    procedure when Transfer CFT{{< TransferCFT/componentshortname >}} starts but before any transfers procedure

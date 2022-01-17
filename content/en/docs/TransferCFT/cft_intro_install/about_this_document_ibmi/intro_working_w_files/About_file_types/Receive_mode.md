@@ -26,7 +26,7 @@ QQQ\_QQQ\_QQQ
 
 File type when the file already exists
 
-The following table describes the {{< TransferCFT/hflongproductname  >}} behavior when trying to receive data in an existing file on the native side of an IBM i system.
+The following table describes the Transfer CFT{{< TransferCFT/hflongproductname  >}} behavior when trying to receive data in an existing file on the native side of an IBM i system.
 
 > **Note**
 >

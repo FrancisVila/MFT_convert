@@ -2,15 +2,15 @@
     "title": " Secure Relay with a multi-node architecture",
     "linkTitle": "Secure Relay with a multi-node architecture",
     "weight": "250"
-}You can install {{< TransferCFT/componentlongname  >}} in an active/active architecture where you add multiple SecureRelay Router Agents behind a load balancer. The architecture could resemble the diagrams in the [Example architectures](#Examples) section of this page.
+}You can install Transfer CFT{{< TransferCFT/componentlongname  >}} in an active/active architecture where you add multiple SecureRelay Router Agents behind a load balancer. The architecture could resemble the diagrams in the [Example architectures](#Examples) section of this page.
 
 This page describes how to configure Transfer CFT in a multi-node architecture to use Secure Relays:
 
-- Install {{< TransferCFT/componentlongname >}} in a multi-node, multi-host architecture
+- Install Transfer CFT{{< TransferCFT/componentlongname >}} in a multi-node, multi-host architecture
 - Install 2 or more SecureRelay Router Agents (use the same CA and USER certificate as the Master Agent)
 - Enable Secure Relay and configure Java
 - Set the listening ports
-- Configure additional {{< TransferCFT/componentlongname >}} objects
+- Configure additional Transfer CFT{{< TransferCFT/componentlongname >}} objects
     -   Network object CFTNET
     -   Protocol object CFTPROT
     -   Partner object CFTPART and CFTTCP
@@ -28,17 +28,18 @@ Follow the installation instructions provided in the [Secure Relay RA Installat
 - &lt;CACertificate>CA\_for\_RA.der&lt;/CACertificate>
 - &lt;UserCertificate>USER\_for\_RA.p12&lt;/UserCertificate>
 
-You need these values when you configure the Master Agent in the {{< TransferCFT/componentlongname  >}} configuration, where the user certificate that you use must be signed by `CA_for_RA`. You should use the same CA and USER certificate as for the Master Agent.
+You need these values when you configure the Master Agent in the Transfer CFT{{< TransferCFT/componentlongname  >}} configuration, where the user certificate that you use must be signed by CA\_for\_RA. You should use the same CA and USER certificate as for the Master Agent.
 
-## Configure the Router Agents in {{< TransferCFT/componentlongname  >}}
+## Configure the Router Agents in Transfer CFT{{< TransferCFT/componentlongname  >}}
 
-After completing installation, configure the Router Agents in the {{< TransferCFT/componentlongname  >}} configuration.
+After completing installation, configure the Router Agents in the Transfer CFT{{< TransferCFT/componentlongname  >}} configuration.
 
-1. Set the value for the number of Router Agents using the `secure_relay.ra` parameter. {{< TransferCFT/componentlongname >}} generates a set of `secure_relay.ra.n.*` parameters, where the number, *n*, corresponds to the number of Router Agents you defined in this parameter.
+1. Set the value for the number of Router Agents using the `secure_relay.ra` parameter. Transfer CFT{{< TransferCFT/componentlongname >}} generates a set of `secure_relay.ra.n.*` parameters, where the number, *n*, corresponds to the number of Router Agents you defined in this parameter.
 1. You can use the default values for most fields, but you must customize the` secure_relay.ra.0.dmz` parameter. This value must be unique; for example, you can increment the DMZ0 value by one for each Router Agent so that the  second Router Agent has the value` secure_relay.ra.0.dmz = DMZ1`.
-1. Configure the host address for each Secure Relay host using `secure_relay.ra.0.host`.
+1. Configure the host address for each Secure Relay host using secure\_relay.ra.0.host.
 
-**Example of two Router Agent definitions**
+****Example of two Router Agent definitions****
+
 ```
 secure_relay.ra = 2
  
@@ -61,7 +62,7 @@ secure_relay.ra.1.data_channel_ciphering = No
 secure_relay.ra.1.outcall_network_interface =
 ```
 
-## Configure the Master Agent in {{< TransferCFT/componentlongname  >}}
+## Configure the Master Agent in Transfer CFT{{< TransferCFT/componentlongname  >}}
 
 Configure the following UCONF parameters to enable the Master Agent communication with the Router Agent:
 
@@ -71,7 +72,7 @@ Configure the following UCONF parameters to enable the Master Agent communicati
 
 ## Enable Secure Relay and configure the Java
 
-In {{< TransferCFT/componentlongname  >}} from the CFTUTIL prompt, perform the following commands:
+In Transfer CFT{{< TransferCFT/componentlongname  >}} from the CFTUTIL prompt, perform the following commands:
 
 1. Enable Secure Relay:  
     ```
@@ -86,13 +87,13 @@ In {{< TransferCFT/componentlongname  >}} from the CFTUTIL prompt, perform the 
 
 If you need to set listening ports, for example if you are using a firewall, proceed as follows:
 
-1. To define the {{< TransferCFT/componentlongname >}} internal listening points for inter-node communication, select a port-range using the UCONF `cft.multi_node.listen_port_range` parameter. For example:  
+1. To define the Transfer CFT{{< TransferCFT/componentlongname >}} internal listening points for inter-node communication, select a port-range using the UCONF `cft.multi_node.listen_port_range` parameter. For example:  
     ```
     UCONFSET id=cft.multi_node.listen_port_range,value='33000-33100'
     ```
 1. Define the protocol listening ports for Secure Relay, which correspond to the SAP values in the CFTPROT object. For each node this value  increments by one port number. Therefore, when configuring the CFTPROT object ensure that there is no  listening port overlap.
 
-**Example**
+****Example****
 
 For example, if you set the SAP=1761 when you have 4 nodes, Secure Relay opens the ports 1761, 1762, 1763 and 1764.
 
@@ -101,7 +102,7 @@ CFTPROT ID=PROT0,SAP=1761,...
 CFTPROT ID=PROT1,SAP=1764,...
 ```
 
-In the scenario above if 4 nodes are configured in {{< TransferCFT/componentlongname  >}} multi-node, then Secure relay will open the listening ports 1761, 1762,1763, 1764 causing an issue for the second defined protocol, PROT1, as it has a SAP=1764.
+In the scenario above if 4 nodes are configured in Transfer CFT{{< TransferCFT/componentlongname  >}} multi-node, then Secure relay will open the listening ports 1761, 1762,1763, 1764 causing an issue for the second defined protocol, PROT1, as it has a SAP=1764.
 
 Additionally, for each node the comm\_port also increments. That is, the `secure_relay.ra.N.comm_port` parameter, where N is an index.
 
@@ -109,11 +110,11 @@ Additionally, for each node the comm\_port also increments. That is, the `secure
 - N =1: second RA
 - N = 2: third RA
 
-However, when you define the `secure_relay.ra.N.admin_port  `value, where N is an index, the value does not increment according to the number of nodes.
+However, when you define the secure\_relay.ra.N.admin\_port value, where N is an index, the value does not increment according to the number of nodes.
 
-**Example**
+****Example****
 
-If a multi-node {{< TransferCFT/componentlongname  >}} has 4 nodes and the setting `secure_relay.ra.N.comm_port= 6811`, {{< TransferCFT/componentlongname  >}} opens the ports 6811, 6812, 6813, and 6814.
+If a multi-node Transfer CFT{{< TransferCFT/componentlongname  >}} has 4 nodes and the setting `secure_relay.ra.N.comm_port= 6811`, Transfer CFT{{< TransferCFT/componentlongname  >}} opens the ports 6811, 6812, 6813, and 6814.
 
 ## Define the environment for SecureRelay
 
@@ -128,7 +129,7 @@ If a multi-node {{< TransferCFT/componentlongname  >}} has 4 nodes and the setti
     -   SSLTERM: Set this Boolean to YES to enable SSL termination.
 1. If there are existing CFTNET object(s), the class parameter must be different.
 
-**Example**
+****Example****
 
 As no connection dispatcher is used with Secure Relay, the SAP configured in the CFTPROT for SecureRelay is also incremented by the node number.
 
@@ -157,7 +158,7 @@ This section describes the CFTPROT object, and how various parameters are relate
 - The SAP parameter is the listening port that is used on the RA side (using the CFTNET HOST parameter as the network interface).  
     This value automatically increments by one per node, where the range is &lt;number of nodes>-1. Therefore, be certain that you do not use the ports in this range for another protocol.
 
-**Example**
+****Example****
 
 This example uses a CFTNET object called NETXSR, and PROTXSR is bound to port 1861 for node 0, and port 1862 for node 1.
 
@@ -177,7 +178,7 @@ When a partner object refers to a CFTPROT object and a CFTNET object that use Se
 
 So to complete the configuration, create a CFTPART and a CFTTCP. In this way, the CFTPART refers to the CFTPROT object, and that in turn refers to a CFTNET, which points to Secure Relay.
 
-**Example**
+****Example****
 
 This is an example of the CFTPART and CFTTCP object configuration.
 
@@ -208,7 +209,7 @@ SRDMZ = <UCONF secure_relay.ra.*n*.dmz value, where n is the number that corresp
 1. Set the listening port, 1555 for our example, for the load balancer (LB).
 1. Set the back-end server address and port for each host (hostF and hostG).
 
-In our example, we have load balancing with 2 Router Agents, 2 hosts, and 2 {{< TransferCFT/componentlongname  >}} nodes. You can see the port numbers increment by one for the second node (as many entries as number of RA x number of nodes).
+In our example, we have load balancing with 2 Router Agents, 2 hosts, and 2 Transfer CFT{{< TransferCFT/componentlongname  >}} nodes. You can see the port numbers increment by one for the second node (as many entries as number of RA x number of nodes).
 
 listen cft LB:1555
 

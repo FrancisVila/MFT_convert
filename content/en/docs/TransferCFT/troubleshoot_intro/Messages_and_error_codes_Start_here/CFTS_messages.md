@@ -14,7 +14,7 @@ Earlier versions of Transfer CFT used a different message format than version 3.
 
 CFTLOG FORMAT=\[V23,V24\]
 
-For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
+For V23: CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
@@ -30,7 +30,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS02E"></span>CFTS02E PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt DIRECT=&amp;direct &amp;fname not found<br/> CFTS02E _ &amp;fname not found &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt DIRECT=&amp;direct&gt; |
 | --- | --- | --- | --- |
-| Explanation | The &amp;fname procedure was not found for a given transfer (&amp;idt).<br/> This procedure was requested after a file or message transfer or subsequent to an error (see the {{< TransferCFT/componentshortname  >}} Online documentation, EXEC parameters). |
+| Explanation | The &amp;fname procedure was not found for a given transfer (&amp;idt).<br/> This procedure was requested after a file or message transfer or subsequent to an error (see the Transfer CFT{{< TransferCFT/componentshortname  >}} Online documentation, EXEC parameters). |
 
 
  
@@ -46,7 +46,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTS04W"></span>CFTS04W Action file &amp;fname is empty<br/> CFTS04W Action file &amp;fname is empty |
 | --- | --- |
-| Explanation | An action is envisaged at the end of a transfer or in the event of an error (see the {{< TransferCFT/componentshortname  >}} Online documentation, EXECxxx parameters); the file to be submitted is empty. |
+| Explanation | An action is envisaged at the end of a transfer or in the event of an error (see the Transfer CFT{{< TransferCFT/componentshortname  >}} Online documentation, EXECxxx parameters); the file to be submitted is empty. |
 
 
  
@@ -66,7 +66,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | --- | --- |
 | Explanation | An action was requested at the end of a transfer or in the event of an error. This action is submitted (see the EXECxxx parameters) through a buffer file (&amp;fname).<br/> An access error was detected on this buffer file. |
 | Consequence | The procedure will not be executed. If the action was requested at the end of the transfer, the transfer ends normally. |
-| Action |  • Check that the characteristics of the buffer file are correct (attributes and length).<br/> • Check that it exists (created or defined logically in the {{< TransferCFT/componentshortname  >}} startup procedure).<br/> • Contact Product Support. |
+| Action |  • Check that the characteristics of the buffer file are correct (attributes and length).<br/> • Check that it exists (created or defined logically in the Transfer CFT{{< TransferCFT/componentshortname  >}} startup procedure).<br/> • Contact Product Support. |
 
 
  
@@ -74,7 +74,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS07E"></span>CFTS07E Insufficient space for temporary file<br/> CFTS07E Insufficient space for temporary file |
 | --- | --- |
-| Explanation | An action was requested at the end of a transfer or in the event of an error. This action is submitted (see the {{< TransferCFT/componentshortname  >}} Online documentation, EXECxxx parameters) through a buffer file (&amp;fname). The space reserved for this file proves insufficient. |
+| Explanation | An action was requested at the end of a transfer or in the event of an error. This action is submitted (see the Transfer CFT{{< TransferCFT/componentshortname  >}} Online documentation, EXECxxx parameters) through a buffer file (&amp;fname). The space reserved for this file proves insufficient. |
 | Consequence | The procedure will not be executed. If the action was requested at the end of the transfer, the transfer ends normally. |
 | Action | Increase the file size, inform Product Support. |
 
@@ -84,7 +84,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS08E"></span>CFTS08E Error code &amp;scs _ Executing temporary file<br/> CFTS08E Error code &amp;scs _ Executing temporary file |
 | --- | --- |
-| Explanation | The procedure (&amp;fname) could not be executed for a given transfer (&amp;idt).<br/> This procedure was requested at the end of a file or message transfer or in the event of an error (see the {{< TransferCFT/componentshortname  >}} Online documentation EXECxxx parameters). |
+| Explanation | The procedure (&amp;fname) could not be executed for a given transfer (&amp;idt).<br/> This procedure was requested at the end of a file or message transfer or in the event of an error (see the Transfer CFT{{< TransferCFT/componentshortname  >}} Online documentation EXECxxx parameters). |
 | Consequence | The procedure will not be executed. If the action was requested at the end of the transfer, the transfer ends normally. |
 | Action | Analyze the &amp;scs code and inform Product Support if necessary. |
 
@@ -103,9 +103,9 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS11E"></span>CFTS11E Allocation error _ Trying to access temporary file<br/> CFTS11E Allocation error _ Trying to access temporary file |
 | --- | --- |
-| Explanation | An action was requested at the end of a transfer or in the event of an error.<br/> This action is submitted (see the {{< TransferCFT/componentshortname  >}} Online documentation, EXECxxx parameters) through a buffer file (&amp;fname). An allocation error was detected on this buffer file. |
+| Explanation | An action was requested at the end of a transfer or in the event of an error.<br/> This action is submitted (see the Transfer CFT{{< TransferCFT/componentshortname  >}} Online documentation, EXECxxx parameters) through a buffer file (&amp;fname). An allocation error was detected on this buffer file. |
 | Consequence | The procedure will not be executed. If the action was requested at the end of the transfer, the transfer ends normally. |
-| Action |  • Check that the characteristics of the buffer file are correct (attributes and length).<br/> • Check that it exists (created or defined logically in the {{< TransferCFT/componentshortname  >}} startup procedure).<br/> • Contact Product Support. |
+| Action |  • Check that the characteristics of the buffer file are correct (attributes and length).<br/> • Check that it exists (created or defined logically in the Transfer CFT{{< TransferCFT/componentshortname  >}} startup procedure).<br/> • Contact Product Support. |
 
 
  
@@ -123,7 +123,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS13E"></span>CFTS13E Semaphore failure &amp;cs_CFTTPRO aborted<br/> CFTS13E Semaphore failure &amp;cs_CFTTPRO aborted |
 | --- | --- |
-| Explanation | Problem receiving an internal {{< TransferCFT/componentshortname  >}} message by the PROTOCOL task. |
+| Explanation | Problem receiving an internal Transfer CFT{{< TransferCFT/componentshortname  >}} message by the PROTOCOL task. |
 | Consequence | A message has perhaps been lost; the reactions are unpredictable. |
 | Action | Analyze the &amp;scs code and inform Product Support if necessary. |
 
@@ -133,7 +133,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS14E"></span>CFTS14E ID=&amp;id error initializing process<br/> CFTS14E Unknown synchronization message CLASS=&amp;class TYPE=&amp;type |
 | --- | --- |
-| Explanation | Cannot run the end of transfer exit task. This message follows the {{< TransferCFT/componentshortname  >}} message CFTI01. |
+| Explanation | Cannot run the end of transfer exit task. This message follows the Transfer CFT{{< TransferCFT/componentshortname  >}} message CFTI01. |
 | Consequence | No effect on the actual transfer (catalog not updated). The exit is not executed. If an end of transfer procedure was defined, it is run. |
 | Action | Inform Product Support. |
 
@@ -143,7 +143,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | Information | <span id="CFTS15I"></span>CFTS15I PART = &amp;part Kill Session Reference &amp;ctx:&amp;ctx<br/> CFTS15I PART = &amp;part Kill Session Reference &amp;ctx:&amp;ctx |
 | --- | --- |
-| Explanation | Internal message to {{< TransferCFT/componentshortname  >}} giving information on the transfer context killed. The &amp;ctx values specify the context concerned. |
+| Explanation | Internal message to Transfer CFT{{< TransferCFT/componentshortname  >}} giving information on the transfer context killed. The &amp;ctx values specify the context concerned. |
 
 
  
@@ -151,7 +151,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS16E"></span>CFTS16E Synch. response time-out_End transfer exit<br/> CFTS16E Synch. response time-out _ End of transfer exit |
 | --- | --- |
-| Explanation | The exit task is run but does not respond to the {{< TransferCFT/componentshortname  >}}. This corresponds to the initial phase establishing communications between the {{< TransferCFT/componentshortname  >}} and the exit task. |
+| Explanation | The exit task is run but does not respond to the Transfer CFT{{< TransferCFT/componentshortname  >}}. This corresponds to the initial phase establishing communications between the Transfer CFT{{< TransferCFT/componentshortname  >}} and the exit task. |
 | Consequence | None on the actual transfer (catalog not updated). The exit is not executed. If an end of transfer procedure has been defined, it is run. |
 | Action | Inform Product Support. |
 
@@ -161,8 +161,8 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS17E"></span>CFTS17E Error code &amp;scs _ Trying to access End transfer exit<br/> CFTS17E Error code &amp;scs _ Trying to access End of transfer exit |
 | --- | --- |
-| Explanation | Error posting a {{< TransferCFT/componentshortname  >}} message to the exit task during inter-task communications. |
-| Consequence | None on the actual transfer (catalog not updated). The exit is does not receive any directives from the {{< TransferCFT/componentshortname  >}}. |
+| Explanation | Error posting a Transfer CFT{{< TransferCFT/componentshortname  >}} message to the exit task during inter-task communications. |
+| Consequence | None on the actual transfer (catalog not updated). The exit is does not receive any directives from the Transfer CFT{{< TransferCFT/componentshortname  >}}. |
 | Action | Inform Product Support. |
 
 
@@ -225,7 +225,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS23E"></span>CFTS23E Bad user return code &lt;details&gt;<br/> CFTS23E &amp;str PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt ", &amp;str = Bad End transfer exit version : &amp;ver / &amp;ver<br/> or<br/> CFTS23E &amp;str &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt &gt;") Invalid state transit '&amp;state'-&gt;'&amp;state' or Unknown state &amp;state<br/> or<br/> Unknown action &amp;action or Bad User return code : &amp;scs |
 | --- | --- | --- | --- |
-| Explanation | Error message specific to the end-of-transfer user exit. The details that display in the message depend on the CFTLOG format (v23 or v24).<br/> **Example**<br/> V24 format:<br/> <code>CFTS23E Bad User return code: 4 &lt;IDTU=idtu PART=part1 IDF=idf1 IDT=idt &gt;</code><br/> V23 format:<br/> <code>CFTS23E Bad User return code : 4 PART=part1 IDF=idf1 IDT=idt</code>  |
+| Explanation | Error message specific to the end-of-transfer user exit. The details that display in the message depend on the CFTLOG format (v23 or v24).<br/> **Example**<br/> V24 format:<br/> CFTS23E Bad User return code: 4 &lt;IDTU=idtu PART=part1 IDF=idf1 IDT=idt &gt;<br/> V23 format:<br/> <code>CFTS23E Bad User return code : 4 PART=part1 IDF=idf1 IDT=idt</code> |
 | Consequence | None. |
 
 
@@ -356,7 +356,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTS41I"></span>CFTS41I Catalog Alert exec &amp;fname executed<br/> CFTS41I Catalog Alert exec &amp;fname executed |
 | --- | --- |
-| Explanation | The procedure &amp;FNAME for a catalog alert was executed.<br/> • When the critical fill threshold is reached, a message CFTC29W is recorded in the Transfer CFT log.<br/> A batch, which is defined by the CFTCAT TLVWEXEC parameter, is submitted.<br/> • When the alert ceases, a message CFTC30W is recorded in the {{< TransferCFT/componentshortname  >}} log.<br/> A batch, which is defined by the CFTCAT TLVCEXEC parameter, is submitted. |
+| Explanation | The procedure &amp;FNAME for a catalog alert was executed.<br/> • When the critical fill threshold is reached, a message CFTC29W is recorded in the Transfer CFT log.<br/> A batch, which is defined by the CFTCAT TLVWEXEC parameter, is submitted.<br/> • When the alert ceases, a message CFTC30W is recorded in the Transfer CFT{{< TransferCFT/componentshortname  >}} log.<br/> A batch, which is defined by the CFTCAT TLVCEXEC parameter, is submitted. |
 
 
  
@@ -364,7 +364,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS42E"></span>CFTS42E Catalog Alert exec &amp;fname &amp;str" where &amp;str= "not found" or "failed"<br/> CFTS42E Catalog Alert exec &amp;fname &amp;str |
 | --- | --- |
-| Explanation | The procedure &amp;FNAME for a catalog alert was not found or failed on access producing this error.<br/> QQQ_QQQ_QQQ_LIST<br/> • When the critical fill threshold is reached, a message CFTC29W is recorded in the {{< TransferCFT/componentshortname  >}} log.<br /> ==&gt; The batch, which is defined by the CFTCAT TLVWEXEC parameter, is not executed<br/> • When the alert ceases, a message CFTC30W is recorded in the {{< TransferCFT/componentshortname  >}} log<br /> ==&gt; The batch, which is defined by the CFTCAT TLVCEXEC parameter, is not executed. |
+| Explanation | The procedure &amp;FNAME for a catalog alert was not found or failed on access producing this error.<br/> QQQ_QQQ_QQQ_LIST<br/> • When the critical fill threshold is reached, a message CFTC29W is recorded in the Transfer CFT{{< TransferCFT/componentshortname  >}} log.<br /> ==&gt; The batch, which is defined by the CFTCAT TLVWEXEC parameter, is not executed<br/> • When the alert ceases, a message CFTC30W is recorded in the Transfer CFT{{< TransferCFT/componentshortname  >}} log<br /> ==&gt; The batch, which is defined by the CFTCAT TLVCEXEC parameter, is not executed. |
 
 
  
@@ -399,7 +399,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | V23 format<br/> V24 format<br/> Fatal  | <span id="CFTS46F"></span>CFTS46F CFTPRX error _ &amp;str<br/> CFTS46F CFTPRX error _ &amp;str |
 | --- | --- |
 | Explanation  | A fatal error occurred in the proxy task (CFTPRX). The error details are in &amp;str.  |
-| Consequence  | {{< TransferCFT/componentshortname  >}} stops.  |
+| Consequence  | Transfer CFT{{< TransferCFT/componentshortname  >}} stops.  |
 | Action  | If necessary, contact Axway support.  |
 
 
@@ -435,8 +435,8 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | V23 format<br/> V24 format<br/> Fatal  | <span id="CFTS50F"></span>CFTS50F CFTJRE error _ &amp;str<br/> CFTS50F CFTJRE error _ &amp;str |
 | --- | --- |
 | Explanation  | A fatal error occurred when starting the CFT Java task (CFTJRE). The error is detailed in &amp;str.  |
-| Consequence  | {{< TransferCFT/componentshortname  >}} is stopping.  |
-| Action  | If necessary, contact {{< TransferCFT/platformorsuiteshortname  >}} support.  |
+| Consequence  | Transfer CFT{{< TransferCFT/componentshortname  >}} is stopping.  |
+| Action  | If necessary, contact AMPLIFY{{< TransferCFT/platformorsuiteshortname  >}} support.  |
 
 
  
@@ -444,9 +444,9 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS51E"></span>CFTS51E CFTJRE error _ &amp;str<br/> CFTS51E CFTJRE error _ &amp;str |
 | --- | --- |
-| Explanation  | A significant error occurred in the {{< TransferCFT/componentshortname  >}} Java task (CFTJRE). The error is detailed in &amp;str.  |
+| Explanation  | A significant error occurred in the Transfer CFT{{< TransferCFT/componentshortname  >}} Java task (CFTJRE). The error is detailed in &amp;str.  |
 | Consequence  | The concerned transfer goes in error.  |
-| Action  | If necessary, contact {{< TransferCFT/platformorsuiteshortname  >}} support.  |
+| Action  | If necessary, contact AMPLIFY{{< TransferCFT/platformorsuiteshortname  >}} support.  |
 
 
  
@@ -454,7 +454,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTS52W"></span>CFTS52W CFTJRE _ &amp;str<br/> CFTS52W CFTJRE _ &amp;str |
 | --- | --- |
-| Explanation  | An anomaly occurred in the {{< TransferCFT/componentshortname  >}} Java task (CFTJRE). The anomaly is detailed in &amp;str.  |
+| Explanation  | An anomaly occurred in the Transfer CFT{{< TransferCFT/componentshortname  >}} Java task (CFTJRE). The anomaly is detailed in &amp;str.  |
 
 
  
@@ -462,7 +462,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS53I"></span>CFTS53I CFTJRE _ &amp;str<br/> CFTS53I CFTJRE _ &amp;str |
 | --- | --- |
-| Explanation  | Information message from the {{< TransferCFT/componentshortname  >}} Java task (CFTJRE). The &amp;str value gives additional details.  |
+| Explanation  | Information message from the Transfer CFT{{< TransferCFT/componentshortname  >}} Java task (CFTJRE). The &amp;str value gives additional details.  |
 
 
  
@@ -471,7 +471,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS54F"></span>CFTS54F CFTACC task fatal CR=&amp;cr &amp;str<br/> CFTS54F CFTACC task fatal CR= &amp;cr &amp;str |
 | --- | --- |
 | Explanation  | A fatal error occurred in the accelerator task (CFTACC). The error is detailed in &amp;str.  |
-| Consequence  | {{< TransferCFT/componentshortname  >}} is stopping.  |
+| Consequence  | Transfer CFT{{< TransferCFT/componentshortname  >}} is stopping.  |
 | Action  | If necessary, contact Axway support.  |
 
 
@@ -489,7 +489,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS56E"></span>CFTS56E Central Governance error (&lt;error_code&gt;) &lt;error_msg&gt;<br/> CFTS56E Central Governance &amp;str", &amp;str = &amp;type error (send): (&amp;code) &amp;message<br/> CFTS56E Central Governance &amp;str", &amp;str = &amp;type error (recv): (&amp;code) &amp;message |
 | --- | --- |
 | Explanation  | An error occurred when executing a &lt;request&gt; on Central Governance. |
-| Consequence  | The {{< TransferCFT/componentshortname  >}} instance does not display the correct status.  |
+| Consequence  | The Transfer CFT{{< TransferCFT/componentshortname  >}} instance does not display the correct status.  |
 
 
  

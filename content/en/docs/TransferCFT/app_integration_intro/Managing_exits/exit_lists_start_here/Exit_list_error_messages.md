@@ -2,7 +2,7 @@
     "title": "Exit  list error messages",
     "linkTitle": "Exit list error messages",
     "weight": "330"
-}The error messages stored in the {{< TransferCFT/componentshortname  >}} log
+}The error messages stored in the Transfer CFT{{< TransferCFT/componentshortname  >}} log
 have the following syntax:
 
 CFTT60I PART= &part IDF=
@@ -19,7 +19,7 @@ CFTT60I PART= &part IDF=
 | EXL SYST  | Err_system  | Local system error, cause unknown, generally a problem of memory allocation  |
 
 
-**Related topics**
+****Related topics****
 
 - [Messages
     and error codes](../../../../troubleshoot_intro/messages_and_error_codes_start_here)

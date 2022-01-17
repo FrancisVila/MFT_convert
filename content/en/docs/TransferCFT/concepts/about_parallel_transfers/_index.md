@@ -247,12 +247,12 @@ attempts are made.
 Use this parameter to specify the number of reconnection attempts to make
 with a time interval of retryw
 between attempts. When retryn attempts have been
-made without success, {{< TransferCFT/componentshortname  >}} divides retryn
+made without success, Transfer CFT{{< TransferCFT/componentshortname  >}} divides retryn
 by two and multiplies retryw by
 two and then begins the sequence again up to the total number of times
 specified retrym.
 
-**Related topics**
+****Related topics****
 
 - [Client and server recommendations](maxtrans_use_cases)
 - [Scenarios and outputs](session_troubleshooting)

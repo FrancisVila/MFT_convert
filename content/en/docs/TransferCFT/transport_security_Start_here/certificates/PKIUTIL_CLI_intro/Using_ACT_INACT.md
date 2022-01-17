@@ -4,11 +4,16 @@
     "weight": "230"
 }## Activating or deactivating a certificate
 
-**Syntax**
+****Syntax****
+
 `ACT or INACT`
+
 `ROOTCID     =       string,`
+
 `ID = string,`
+
 `[INUM = number,]`
+
 `TYPE = string`
 
 QQQ\_QQQ\_QQQ

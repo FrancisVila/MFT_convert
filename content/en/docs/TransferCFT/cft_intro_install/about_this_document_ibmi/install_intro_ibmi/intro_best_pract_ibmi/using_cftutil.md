@@ -4,25 +4,25 @@
     "weight": "290"
 }## Line-mode commands
 
-The Transfer CFT utility CFTUTIL can accept line-mode commands. Enter the command at the `CFTUTIL > `prompt and press ENTER to validate. To exit CFTUTIL, enter the` /end `command.
+The Transfer CFT utility CFTUTIL can accept line-mode commands. Enter the command at the CFTUTIL &gt; prompt and press ENTER to validate. To exit CFTUTIL, enter the /end command.
 
-**Examples**
+****Examples****
 
-- In an command line, enter the command CFTUTIL and press ENTER.
+- In an Transfer CFT IBM i command line, enter the command CFTUTIL and press ENTER.
 
     Enter the selection or command at the prompt.
 
     ``` > CFTUTIL
     ```
 
-- Enter the command `LISTCAT `and press ENTER to confirm.
+- Enter the command LISTCAT and press ENTER to confirm.
     ```
-    1:Input :> LISTCAT
+    1:Input : > LISTCAT
     ```
 
-- Enter the command` /end `and press ENTER to exit CFTUTIL.
+- Enter the command /end and press ENTER to exit CFTUTIL.
     ```
-    1:Input :> /END
+    1:Input : > /END
     ```
 
 ## Files and individual parameters
@@ -35,17 +35,20 @@ The command line is passed as a CFTUTIL parameter using the following syntax:
 
 CFTUTIL PARAM(‘command’ ‘parameter=value, parameter=value,..’)
 
-****Examples****
+******Examples******
+
 ```
 CFTUTIL PARAM('LISTCAT’ ‘TYPE=ALL')
-CFTUTIL PARAM('LISTCAT’ ‘CONTENT=DEBUG,DIRECT=SEND')CFTUTIL PARAM('SEND’ ‘PART=LOOP,IDF=TEST')CFTUTIL PARAM('LISTPARM’ ‘TYPE=RECV')
+CFTUTIL PARAM('LISTCAT’ ‘CONTENT=DEBUG,DIRECT=SEND')CFTUTIL PARAM('SEND’ ‘PART=LOOP,IDF=TEST')
+CFTUTIL PARAM('LISTPARM’ ‘TYPE=RECV')
 ```
 
 ### File passed as a parameter
 
-The following command runs the CFTUTIL utility, which reads the commands to be executed in the `scen.cft` file and displays the results.
+The following command runs the CFTUTIL utility, which reads the commands to be executed in the scen.cft file and displays the results.
 
-**Example**
+****Example****
+
 ```
 CFTUTIL PARAM('#CFTPROD/UTIN(SCRIPT)')
 ```

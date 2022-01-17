@@ -17,6 +17,6 @@ The maximum authorized number of transfers in parallel. When using multi node, t
 This value sets the physical limit for the product independently of
 the limit set by the software key.
 
-The UCONF` cft.server.maxtrans` parameter overrides MAXTRANS as long as it is not set to 0. If `cft.server.maxtrans `is set to 0, the MAXTRANS value is used.
+The UCONF cft.server.maxtrans parameter overrides MAXTRANS as long as it is not set to 0. If `cft.server.maxtrans `is set to 0, the MAXTRANS value is used.
 
 [Return to Command index](../../)

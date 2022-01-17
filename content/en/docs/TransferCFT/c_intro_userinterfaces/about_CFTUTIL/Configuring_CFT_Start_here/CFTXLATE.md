@@ -5,8 +5,8 @@
 }This topic describes how to define a translation table to be used during
 a transfer. There are two ways to generate a translation table, either using the FNAME parameter or the TABLE parameter as described below.
 
-**Related
-topics**
+****Related
+topics****
 
 - Command syntax
     [CFTXLATE](../../../command_summary#CFTXLATE)
@@ -63,7 +63,8 @@ OS
 FNAME = ATOE,
 NCODE = EBCDIC
 ```
-**Example of generating a translation table using the TABLE parameter**
+
+****Example of generating a translation table using the TABLE parameter****
 
 You can use the following `CFTXLATE `command with the TABLE parameter, instead of FNAME, to generate an ASCII CP437 to EBCDIC CP1047 translation table.
 

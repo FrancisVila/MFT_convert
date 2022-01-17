@@ -96,7 +96,7 @@ QQQ\_QQQ\_QQQ      - " -
 
 The following table describes the overflow file definition for the Logger file. In this setup:
 
-- TRKSHAREDFILE=YES is MANDATORY when the logger file is shared between the {{< TransferCFT/eventroutername >}} and other applications. Set this to NO if the applications are sending messages directly to the Sentinel server without going through the {{< TransferCFT/eventroutername >}}
+- TRKSHAREDFILE=YES is MANDATORY when the logger file is shared between the Event Router{{< TransferCFT/eventroutername >}} and other applications. Set this to NO if the applications are sending messages directly to the Sentinel server without going through the Event Router{{< TransferCFT/eventroutername >}}
 - The log structure is ONLY used to define a logger file shared between the partitions of the SYSPLEX, and is NOT referenced in any parameters
 
 QQQ\_QQQ\_QQQ
@@ -109,8 +109,12 @@ QQQ\_QQQ\_QQQ
 | - " -  |   | TRKSHAREDFILE=YES  | UCONFSET ID=sentinel.TRKSHAREDFILE,VALUE=YES  |
 
 
-**Related topics**
-**[About Axway Sentinel](../../../../../using_sentinel)**
-**[Using the unified configuration GUI](../../../../../admin_intro/uconf/uconf_interface_actions)**
-**[Using the unified configuration CFTUTIL](../../../../../admin_intro/uconf/uconf_w_cftutil)**
-**[Installing Sentinel for Transfer CFT z/OS](../../../overview_install_zos/manual_installation_steps/t_install_sentinel_zos)**
+****Related topics****
+
+****[About Axway Sentinel](../../../../../using_sentinel)****
+
+****[Using the unified configuration GUI](../../../../../admin_intro/uconf/uconf_interface_actions)****
+
+****[Using the unified configuration CFTUTIL](../../../../../admin_intro/uconf/uconf_w_cftutil)****
+
+****[Installing Sentinel for Transfer CFT z/OS](../../../overview_install_zos/manual_installation_steps/t_install_sentinel_zos)****

@@ -14,7 +14,7 @@
 Interval in Kbytes between synchronization points being sent (default = 32767).
 
 This parameter is negotiated with the partner (RPACING parameter if
-{{< TransferCFT/componentshortname  >}}); the smallest value is selected as the interval
+Transfer CFT{{< TransferCFT/componentshortname  >}}); the smallest value is selected as the interval
 between the synchronization points. The value 0 means that there are no
 synchronization points.
 

@@ -64,41 +64,63 @@ Use the CFTFILE command to create (MODE = CREATE) empty or delete (MODE
 | <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/type">TYPE</a> = {ACCNT | CAT | COM | LOG | PARM (PARMA) | PART} | Type of file concerned by the command.<br/> When TYPE = CAT, COM, PARM or PART, you can use the HABFNAME parameter for security. |
 
 
-****Syntax****
+******Syntax******
 
 #### CFTFILE { PARM | PARAM | PART }
 
 `TYPE   = { PARM | PARAM | PART }`
+
 `FNAME   = filename  `
+
 `[ HABFNAME   = filename ] `
+
 `[ FBLKSIZE   = { 0   |n } ]`
+
 `[ FSPACE   = n ]`
+
 `[ FSPACEX   = n ]`
+
 `[ MODE   = { CREATE   | REPLACE | DELETE | ERASE } ]`
+
 ` `
 
 #### CFTFILE { CAT | COM }
 
 `TYPE   = {  CAT   | COM }`
+
 `FNAME   = filename `
+
 `[ RECNB   = n ]`
+
 `[ FBLKSIZE   = { 0   |n } ]`
+
 `[ FSPACE   = { 0   | n } ]`
+
 `[ FSPACEX   =  { 0   | n } ]`
+
 `[ HABFNAME   = filename ]`
+
 `[ MODE   = { CREATE   | REPLACE | DELETE | ERASE} ]`
+
 `[ NODE = { n | 0...16} ] available only when TYPE=CAT`
+
 ` `
 
 #### CFTFILE { ACCNT | LOG }
 
 `TYPE   = { ACCNT | LOG }`
+
 `FNAME   = filename `
+
 `[ FBLKSIZE   = 0   | n ]`
+
 `[ FSPACE   = 0   |n ]`
+
 `[ FSPACEX   = 0   |n ]`
+
 `[ MODE   = { CREATE   | REPLACE | DELETE | ERASE } ]`
-**Example**
+
+****Example****
 
 The following command creates a parameter file.
 

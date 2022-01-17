@@ -9,5 +9,5 @@ is 1 for a partner, then all transfers with the same level of priority
 are activated in order of their submitted request.
 
 This function is referred to as transfer serialization. However, a failed
-transfer that has an **H** or <span style="font-weight: bold;">K</span> state does not block activation of
+transfer that has an H or K state does not block activation of
 subsequent requests for this same partner.

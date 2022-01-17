@@ -2,15 +2,15 @@
     "title": "Axway AMPLIFY architecture",
     "linkTitle": "Axway AMPLIFY architecture",
     "weight": "120"
-}Axway {{< TransferCFT/platformorsuitelongname  >}} Managed File Transfer provides a product platform aimed at increasing the
+}Axway AMPLIFY{{< TransferCFT/platformorsuitelongname  >}} Managed File Transfer provides a product platform aimed at increasing the
 efficiency of business processes. This platform enables you to integrate
 the applications in your corporate information system and implement exchanges
-between these applications and external partners. {{< TransferCFT/componentshortname  >}} in combination with other {{< TransferCFT/companyname  >}} products can provide a complete business solution for creating secured, guaranteed
+between these applications and external partners. Transfer CFT{{< TransferCFT/componentshortname  >}} in combination with other Axway{{< TransferCFT/companyname  >}} products can provide a complete business solution for creating secured, guaranteed
 exchanges with partners.
 
-## {{< TransferCFT/companyname  >}} products
+## Axway{{< TransferCFT/companyname  >}} products
 
-{{< TransferCFT/componentshortname  >}} can interact with a variety of {{< TransferCFT/companyname  >}} products
+Transfer CFT{{< TransferCFT/componentshortname  >}} can interact with a variety of Axway{{< TransferCFT/companyname  >}} products
  to enable
 you to better supervise, track, and analyze your transfer operations.
 Additional products include, but are not limited to, the following:
@@ -21,13 +21,15 @@ Additional products include, but are not limited to, the following:
 - [SecureRelay](#SecureRelay)
 - [TrustedFile](#TrustedFile)
 
-**Example Axway {{< TransferCFT/platformorsuitelongname  >}} MFT implementation**
-**![](/Images/TransferCFT/tbus_products.png)**
+********Example Axway AMPLIFY{{< TransferCFT/platformorsuitelongname  >}} MFT implementation********
+
+****![](/Images/TransferCFT/tbus_products.png)****
+
 <span id="APIgtw"></span>
 
-#### {{< TransferCFT/apiservername  >}}
+#### API Gateway{{< TransferCFT/apiservername  >}}
 
-{{< TransferCFT/apiservername  >}} is a comprehensive platform for managing, delivering, and securing enterprise APIs, applications, and consumers. In this {{< TransferCFT/referenceimplementation  >}}, it can be used to manage web services and APIs exposed by {{< TransferCFT/transfercftname  >}}, {{< TransferCFT/securetransportname  >}}, or third-party products.
+API Gateway{{< TransferCFT/apiservername  >}} is a comprehensive platform for managing, delivering, and securing enterprise APIs, applications, and consumers. In this reference solution{{< TransferCFT/referenceimplementation  >}}, it can be used to manage web services and APIs exposed by Transfer CFT{{< TransferCFT/transfercftname  >}}, SecureTransport{{< TransferCFT/securetransportname  >}}, or third-party products.
 
 <span id="APImanager"></span>
 
@@ -41,9 +43,9 @@ API Manager provides web-based API administration and partner management capabil
 
 API Portal is a self-service portal that enables client application developers to browse and consume APIs for use in their applications, whether they be mobile, social media, web, or traditional applications. API Portal enables engagement with both internal and external application developers to promote APIs for consumption. It enables new go to market channels in the digital economy.
 
-#### {{< TransferCFT/centralgovernancename  >}}
+#### Central Governance{{< TransferCFT/centralgovernancename  >}}
 
-For all products, {{< TransferCFT/centralgovernancename  >}} provides IAM and Visibility services through embedded editions of {{< TransferCFT/passportname  >}} and {{< TransferCFT/sentinelname  >}}, enabling:
+For all products, Central Governance{{< TransferCFT/centralgovernancename  >}} provides IAM and Visibility services through embedded editions of PassPort{{< TransferCFT/passportname  >}} and Sentinel{{< TransferCFT/sentinelname  >}}, enabling:
 
 - Global management of user identity and rights, providing a central control point for security enforcement
 - End-to-end centralized supervision of data flows, consistent with definitions in the repository
@@ -51,9 +53,9 @@ For all products, {{< TransferCFT/centralgovernancename  >}} provides IAM and Vi
 
 <span id="Central_Governance"></span>
 
-#### for {{< TransferCFT/componentshortname  >}}
+#### Central Governance for Transfer CFT{{< TransferCFT/componentshortname  >}}
 
-For {{< TransferCFT/transfercftname  >}}, {{< TransferCFT/centralgovernancename  >}} also provides product configuration, and flow definition and deployment services.
+For Transfer CFT{{< TransferCFT/transfercftname  >}}, Central Governance{{< TransferCFT/centralgovernancename  >}} also provides product configuration, and flow definition and deployment services.
 
 - Global data flow repository, providing end-to-end data flow definitions, from business application to infrastructure level
 - Automatic discovery of products to be managed
@@ -73,15 +75,15 @@ outside of the enterprise network.
 
 ##### SecureTransport
 
-SecureTransport is an enhanced, secure, scalable, and highly available gateway for both system-to system data transfers and ad hoc human transactions. In {{< TransferCFT/transferbusname  >}}, {{< TransferCFT/securetransportname  >}} serves as a hub to secure and route file transfers between partners, internal applications, and humans.
+SecureTransport is an enhanced, secure, scalable, and highly available gateway for both system-to system data transfers and ad hoc human transactions. In Managed File Transfer{{< TransferCFT/transferbusname  >}}, SecureTransport{{< TransferCFT/securetransportname  >}} serves as a hub to secure and route file transfers between partners, internal applications, and humans.
 
-##### {{< TransferCFT/securetransportedgename  >}}
+##### SecureTransport Edge{{< TransferCFT/securetransportedgename  >}}
 
-Using {{< TransferCFT/securetransportedgename  >}}, you can create a multi-tier file exchange infrastructure with multi-protocol managed file transfer, SSL termination, and back-end authorization that streams data across the DMZ to {{< TransferCFT/securetransportname  >}}.
+Using SecureTransport Edge{{< TransferCFT/securetransportedgename  >}}, you can create a multi-tier file exchange infrastructure with multi-protocol managed file transfer, SSL termination, and back-end authorization that streams data across the DMZ to SecureTransport{{< TransferCFT/securetransportname  >}}.
 
 You can deploy multiple Edge gateways in the DMZ for load balancing and performance optimization.
 
-{{< TransferCFT/securetransportedgename  >}} also safeguards compliance wit HSOX, GLBA, HIPAA, and other corporate, industry, and government mandates governing the security and privacy of sensitive information.
+SecureTransport Edge{{< TransferCFT/securetransportedgename  >}} also safeguards compliance wit HSOX, GLBA, HIPAA, and other corporate, industry, and government mandates governing the security and privacy of sensitive information.
 
 <span id="SecureRelay"></span>
 

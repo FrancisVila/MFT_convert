@@ -6,7 +6,7 @@
 
 ## Using system as the internal access management
 
-With **system** access management, you define the mapping between predefined roles and groups in UCONF and the user groups assignment in the GRPPRF field.
+With ****system**** access management, you define the mapping between predefined roles and groups in UCONF and the user groups assignment in the GRPPRF field.
 
 For system access management, you must create different Groups to associate with your users, creating a Groups in the same way as you do a user.
 
@@ -20,7 +20,7 @@ CRTUSRPRF USRPRF(PARTMANAG) TEXT('CFT partnermanager group') SPCAUT(\*NONE)
 
 You can then associate your users with the various groups you created.
 
-**Example**
+****Example****
 
 To grant CFTUSER1 access to transfers and the configuration, associate this user with the previously created HELPDESK group using the command:
 
@@ -28,7 +28,7 @@ To grant CFTUSER1 access to transfers and the configuration, associate this user
 CHGUSRPRF USRPRF(CFTUSER1) GRPPRF(HELPDESK)
 ```
 
-You can now activate the access management in {{< TransferCFT/componentlongname  >}} according to your different groups:
+You can now activate the access management in Transfer CFT{{< TransferCFT/componentlongname  >}} according to your different groups:
 
 ```
 UCONFSET id=am.type ,value = internal

@@ -41,20 +41,35 @@ QQQ\_QQQ\_CHECK these tables were REALLY big, I don't think they are viable in 
 ### Syntax of CFTSSL in client mode
 
 `CFTSSL`
+
 ` ID   identifier,`
+
 `     DIRECT =       CLIENT,`
+
 `     [USERCID =       identifier,]`
+
 `     CIPHLIST =       (num, num, ..),`
+
 `     [ROOTCID =       (identifier, identifier,..),]`
+
 `     [DEPTH =       {10 |num},]`
+
 `     [VERSION =       {TLSV1 | SSLV3},]`
+
 `     [PARM =       string,]`
+
 `     [DNUSER =       (string, string,..),]`
+
 `     [DNISSUER =       (string, string,..),]`
+
 `     [CERFNAME =       string,]`
+
 `     [MODE =       {REPLACE | CREATE | DELETE},]`
+
 `     [ORIGIN        = string,]`
+
 `     [TRACE         = num,]`
+
 `[VERIFY = { ENFORCED |  NONE (NOTE: SAME AS OPTIONAL | REQUIRED) }, ]`
 
 ### Description of CFTSSL in client mode
@@ -91,7 +106,7 @@ Each value defines three algorithms:
 This list is submitted to the server which then makes its
 selection, depending on the client's preference.
 
-**<span id="Supported_suites"></span>Supported suites**
+********<span id="Supported_suites"></span>Supported suites********
 
 QQQ\_QQQ\_QQQ\_QQQ
 
@@ -276,11 +291,14 @@ Sets the authentication mode requirement.
 `     [USERCID          =       identifier,]`  
 `     CIPHLIST          =       (num, num, ..),`  
 `     [VERIFY          =       { REQUIRED | OPTIONAL | NONE},]`
+
 `     [ROOTCID          =       (identifier, identifier,..),]`  
 `     [DEPTH          =       {10,num},]`  
 `     [VERSION          =       {TLSV1 | SSLV3},]`  
 `     [PARM          =       string,]`
+
 `      [ORIGIN        =     string,]`
+
 `      [TRACE         =     num,]     [DNUSER          =       (string, string,..),]`  
 `     [DNISSUER     =       (string, string,..),]`  
 `     [CERFNAME     =       string,]`  
@@ -454,11 +472,11 @@ a server CFTSSL command).
 
 SSL session version.
 
-**Client mode**
+****Client mode****
 
 In Client mode (DIRECT=CLIENT), TLSV1COMP or SSLV3COMP set the header length in NSDU to enable compatibility with other products.
 
-**Server mode**
+****Server mode****
 
 In server mode (DIRECT=SERVER) the header length is automatically detected for all SSL versions (SSLV3, TLSV1, SSLV3COMP, TLSV1COMP).
 
@@ -479,6 +497,6 @@ definition.
 If you do not define the CFTPROT SAP parameter when using the SSL protocol,
 then the server mode for CFTSSL is not mandatory.
 
-**Related topics**
+****Related topics****
 
 - [CFTPROT](../../../admin_intro/admin_config_commands/transfer_protocol_concepts)

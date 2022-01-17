@@ -10,15 +10,15 @@
 
 **\[SWITCH = {<u>00000000</u> | *time*}\]**
 
-Time at which the {{< TransferCFT/componentshortname  >}}
+Time at which the Transfer CFT{{< TransferCFT/componentshortname  >}}
 automatically switches to the alternate statistical file.
 
-- **000000**
+- 000000
     (default value)
-- <span style="font-weight: bold;">any
-    other value</span> in the HHMMSS format
+- any
+    other value in the HHMMSS format
 
-When this parameter is not defined, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> switches statistical
+When this parameter is not defined, Transfer CFT{{< TransferCFT/componentshortname  >}} switches statistical
 files daily at midnight.
 
 #### CFTLOG
@@ -28,15 +28,15 @@ files daily at midnight.
 The time at which the monitor automatically switches to the alternate
 log file:
 
-- <span style="font-weight: bold;">000000</span>
+- 000000
     (default value)
-- <span style="font-weight: bold;">any
-    other value</span> in the HHMMSS format
+- any
+    other value in the HHMMSS format
 
 When this parameter is not defined, log files are switched daily at
 midnight.
 
-If you define a value for both <span style="font-weight: bold;">maxrec</span>
+If you define a value for both maxrec
 and switch fields, log files are automatically switched:
 
 - Every

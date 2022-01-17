@@ -8,4 +8,5 @@ message (CFTR16I) in the LOG file.
 Syntax
 
 `MSG   = string`
+
 `SEVERITY =   string`

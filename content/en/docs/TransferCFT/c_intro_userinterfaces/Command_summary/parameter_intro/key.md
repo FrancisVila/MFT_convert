@@ -19,20 +19,20 @@ Defines the number of keys that display.
 
 \[ KEY = { string 80 } \]
 
-The {{< TransferCFT/componentshortname  >}} user key. You can enter a string of up to 80 characters, which is comprised of the indirection character and file name (file containing the key).
+The Transfer CFT{{< TransferCFT/componentshortname  >}} user key. You can enter a string of up to 80 characters, which is comprised of the indirection character and file name (file containing the key).
 
 > **Note**
 >
 > You do not directly set the key with this parameter.
 
-Enter the name of the indirection file (preceded by the &lt;file-symb> character specific to each system) that contains the set of keys associated with the {{< TransferCFT/componentshortname  >}}. The post-installation default values are:
+Enter the name of the indirection file (preceded by the &lt;file-symb> character specific to each system) that contains the set of keys associated with the Transfer CFT{{< TransferCFT/componentshortname  >}}. The post-installation default values are:
 
 - Unix and HP NonStop: @conf/cft.key
 - Windows: #conf/cft.key
 
 The key is associated with the contractual conditions for using the software. It is specific to the product host operating system, and the hostname or the CPU ID of the machine (depending on the OS).
 
-The key also limits the following for a {{< TransferCFT/componentshortname  >}}:
+The key also limits the following for a Transfer CFT{{< TransferCFT/componentshortname  >}}:
 
 - Maximum number of simultaneous transfers (MAXTRANS parameter limit)
 - Maximum inbound/outbound bandwidth value

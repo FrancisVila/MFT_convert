@@ -17,11 +17,11 @@ An installed Transfer CFT that acts as the server, and FileZilla (or similar) to
 1. Use the provided connection details in the client.
 1. Drag and drop your file!
 
-## Tasks on the {{< TransferCFT/transfercftname  >}} server
+## Tasks on the Transfer CFT{{< TransferCFT/transfercftname  >}} server
 
 ### 1. Generate and import keys
 
-Generate the server's public/private key pair using the `pkikeygen `utility, which automatically puts the key pair in the PKI database (CFTPKU).
+Generate the server's public/private key pair using the pkikeygen utility, which automatically puts the key pair in the PKI database (CFTPKU).
 
 ```
 PKIUTIL pkikeygen id=SRV_PRIV_KEY, keylen=2048
@@ -29,13 +29,13 @@ PKIUTIL pkikeygen id=SRV_PRIV_KEY, keylen=2048
 
 ### 2. Interpret the predefined SFTP template
 
-From the runtime directory, interpret the `cft-sftp.conf` template (click [here]() to view the template). Remember, Transfer CFT and the Transfer CFT Copilot server must be stopped.
+From the runtime directory, interpret the cft-sftp.conf template (click [here]() to view the template). Remember, Transfer CFT and the Transfer CFT Copilot server must be stopped.
 
 ```
 cftinit conf/cft-sftp.conf
 ```
 
-This example uses the most basic type of authentication. However, the `cft-sftp.conf` template includes examples of multiple types of authentication, as described in detail in [SSH concepts](../sftp_keys_concepts).
+This example uses the most basic type of authentication. However, the cft-sftp.conf template includes examples of multiple types of authentication, as described in detail in [SSH concepts](../sftp_keys_concepts).
 
 ## Tasks on the FileZilla client
 
@@ -43,7 +43,7 @@ This example uses the most basic type of authentication. However, the `cft-sftp.
 
 1. Start Filezilla and enter the following connection details:
 
-- Host: sftp://&lt;host address of the {{< TransferCFT/transfercftname >}} server>
+- Host: sftp://&lt;host address of the Transfer CFT{{< TransferCFT/transfercftname >}} server>
 
 - Port: 1763 (if you used the SAP from the template)
 
@@ -63,7 +63,7 @@ Click **OK** to accept the pop-up to accept the key.
 
 ### 4. Perform a file transfer
 
-Drag and drop files to `FLOW01 `or `FLOW02 `to perform file transfers.
+Drag and drop files to FLOW01 or FLOW02 to perform file transfers.
 
 ![](/Images/TransferCFT/fz_client.png)
 

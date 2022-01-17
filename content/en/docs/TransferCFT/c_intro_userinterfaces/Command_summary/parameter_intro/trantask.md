@@ -27,7 +27,8 @@ The following table indicates the maximum value supported for each system, where
 | IBM i (OS400) | 64 |
 
 
-****Example****
+******Example******
+
 `MAXTRANS = 14,MAXTASK = 2,TRANTASK = 4,`
 
 This configuration creates 2 file access tasks, each handling 4 transfers. Transfers one through eight are assigned to the two tasks (as there are four transfers for each task). Transfers nine to fourteen are divided equally between the two tasks until seven transfers per task, MAXTRANS÷MAXTASK, is reached. From the fifteenth transfer on (15 is greater than MAXTRANS), all new transfers are put on hold until resources become available.

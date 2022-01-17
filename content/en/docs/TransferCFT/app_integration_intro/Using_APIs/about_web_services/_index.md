@@ -25,7 +25,7 @@ contact your Axway sales representative.
 
 ## About the WSDL file
 
-To use Web services with Transfer CFT, you need a <a href="" class="MCTextPopup popup popupHead">WSDL</a> file. Your installed Transfer CFT product comes with a WSDL file that describes the operations, operation attributes, requests and response structure. You can access the WSDL file from your local installation at:
+To use Web services with Transfer CFT, you need a <a href="" class="MCTextPopup popup popupHead">WSDL Web Services Description Language</a> file. Your installed Transfer CFT product comes with a WSDL file that describes the operations, operation attributes, requests and response structure. You can access the WSDL file from your local installation at:
 
 - On UNIX/Windows: &lt;cft\_installation\_directory>/distrib/copilot/wsdl/copilotcft.wsdl
 - On z/OS: &lt;copilot. http.httprootdir>/wsdl/copilotcft.wsdl
@@ -95,7 +95,7 @@ For more information on WS-I recommendations, visit [http://www.ws-i.org](http:/
 
 ## Limit the number of failed login attempts
 
-Transfer CFT provides brute force protection for logging on the {{< TransferCFT/transfercftname  >}} UI, REST API, or Web Services when using either the *system* mode or *xfbadm* mode (UNIX and HP NonStop only) authentication. That is, it limits the number of login failure attempts, where both the user and the password are checked to avoid brute force attacks.
+Transfer CFT provides brute force protection for logging on the Transfer CFT{{< TransferCFT/transfercftname  >}} UI, REST API, or Web Services when using either the *system* mode or *xfbadm* mode (UNIX and HP NonStop only) authentication. That is, it limits the number of login failure attempts, where both the user and the password are checked to avoid brute force attacks.
 
 For other authentication methods, such as PassPort and LDAP, no check is made. You must manage that in the Password Policy of those external tools.
 
@@ -110,11 +110,11 @@ You can use the following UCONF parameters to manage this option:
 
 When the maximum number of login failures is reached, the user account is locked for 30 seconds.
 
-**Platform specifics**
+****Platform specifics****
 
 - On IBM i systems, there is no action if the password is incorrect as the system offers methods that you can rely on to avoid brute force attacks (the system value is [QMAXSIGN](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_74/rzarl/rzarlmaxsgn.htm)).
 - On z/OS systems, only the inherent system protection is available (refer to the RACF suboperand [REVOKE](https://www.ibm.com/support/knowledgecenter/SSLTBW_2.3.0/com.ibm.zos.v2r3.icha700/setrpw.htm) for the PASSWORD option).
 
-**Related topics**
+****Related topics****
 
 [Get started with Web services](get_started_web_services)

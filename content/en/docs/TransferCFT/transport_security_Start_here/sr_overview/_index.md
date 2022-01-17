@@ -2,7 +2,7 @@
     "title": "About Secure Relay",
     "linkTitle": "Implement DMZ using Secure Relay",
     "weight": "220"
-}This section describes the {{< TransferCFT/companyname  >}} Secure Relay integration with Transfer CFT. Secure Relay provides Transfer CFT with two main data security features. First, it enables a firewall-friendly access to Transfer CFT via the Secure Relay Master Agent (MA) and the Secure Relay Router Agent (RA). The second feature is SSL termination. This allows for secure SSL access to Transfer CFT without Transfer CFT needing to perform SSL or PKI access procedures. You can use Secure Relay with Transfer CFT over any supported Transfer CFT protocol, for example PeSIT, OFTP, SFTP, and so on.
+}This section describes the Axway{{< TransferCFT/companyname  >}} Secure Relay integration with Transfer CFT. Secure Relay provides Transfer CFT with two main data security features. First, it enables a firewall-friendly access to Transfer CFT via the Secure Relay Master Agent (MA) and the Secure Relay Router Agent (RA). The second feature is SSL termination. This allows for secure SSL access to Transfer CFT without Transfer CFT needing to perform SSL or PKI access procedures. You can use Secure Relay with Transfer CFT over any supported Transfer CFT protocol, for example PeSIT, OFTP, SFTP, and so on.
 
 The following additional topics describe how to configure Transfer CFT to use Secure Relay for exchanges.
 
@@ -22,11 +22,11 @@ When you set a Transfer CFT network resource to use Secure Relay, all of the con
 
 The following diagram illustrates how Transfer CFT and Secure Relay interact with each other, as well as with the network.
 
-**Network to DMZ overview**
+********Network to DMZ overview********
 
 ![View of link between Transfer CFT and the Master Agent in the private network, with the Router Agent in the DMZ](/Images/TransferCFT/sr_new4.png)
 
-**Legend**
+****Legend****
 
 Data connections are a pool of multiplexed connections between the RA and the MA. There are 5 connections by default, which can be either clear text or SSL-ciphered connections, depending on the configuration.
 
@@ -38,7 +38,7 @@ Secure Relay is not aware of data sent to, or received from, Transfer CFT and re
 
 ## Secure data in high availability with multiple Router Agents
 
-You can install {{< TransferCFT/componentlongname  >}} in an active/active architecture where you add multiple SecureRelay Router Agents behind a load balancer. The architecture could resemble the following diagram (SSL is not used in this example). See <a href="cft_sr_conf_multinode" class="MCXref xref">Secure Relay with a multi-node architecture</a> for details on setting up multiple Router Agents.
+You can install Transfer CFT{{< TransferCFT/componentlongname  >}} in an active/active architecture where you add multiple SecureRelay Router Agents behind a load balancer. The architecture could resemble the following diagram (SSL is not used in this example). See <a href="cft_sr_conf_multinode" class="MCXref xref">Secure Relay with a multi-node architecture</a> for details on setting up multiple Router Agents.
 
 ![](/Images/TransferCFT/sec_relay_multi_RA.png)
 
@@ -46,13 +46,13 @@ You can install {{< TransferCFT/componentlongname  >}} in an active/active archi
 
 ## Prerequisites
 
-- The {{< TransferCFT/componentshortname >}} license key must include the Secure Relay option.
+- The Transfer CFT{{< TransferCFT/componentshortname >}} license key must include the Secure Relay option.
 - Ensure that you have Java JRE 8 installed.
-- Prior to setting up Secure Relay to {{< TransferCFT/componentshortname >}} interoperability, you should already have installed Secure Relay 2.7.3. Refer to the Secure Relay documentation available at {{< TransferCFT/companyname >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a> and on the Axway [documentation portal](https://docs.axway.com/).
+- Prior to setting up Secure Relay to Transfer CFT{{< TransferCFT/componentshortname >}} interoperability, you should already have installed Secure Relay 2.7.3. Refer to the Secure Relay documentation available at Axway{{< TransferCFT/companyname >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a> and on the Axway [documentation portal](https://docs.axway.com/).
 
 ## Certificates
 
-If you change the Master Agent certificates, please remember to delete or rename the file referenced by the UCONF `secure_relay.ma.cert_password_fname parameter` (XsrPwd.dat, by default) before starting {{< TransferCFT/componentlongname  >}}.
+If you change the Master Agent certificates, please remember to delete or rename the file referenced by the UCONF `secure_relay.ma.cert_password_fname parameter` (XsrPwd.dat, by default) before starting Transfer CFT{{< TransferCFT/componentlongname  >}}.
 
 ## Version compatibility
 
@@ -60,7 +60,7 @@ Transfer CFT 3.6 and higher delivers an embedded Secure Relay MA 2.7.3. You mus
 
 ## Limitations
 
-- SecureRelay is not operational with the {{< TransferCFT/componentshortname >}} acceleration option.
+- SecureRelay is not operational with the Transfer CFT{{< TransferCFT/componentshortname >}} acceleration option.
 - Secure Relay only supports TLSV1COMP as the SSL version when using Router Agent SSL termination.
 - When using Secure Relay with Transfer CFT for SFTP exchanges, SSH termination is not supported.
 - Transfer CFT cannot perform exchanges using Router Agent SSL termination if the Secure Relay FIPS mode is enabled. However, you can perform end-to-end SSL exchanges with the FIPS mode enabled as described in <a href="sr_ssl" class="MCXref xref">Configure exchanges that use SSL</a> > *How to enable Secure Relay FIPS mode*.

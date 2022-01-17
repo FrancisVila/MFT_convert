@@ -4,7 +4,7 @@
     "weight": "130"
 }## Preface
 
-The {{< TransferCFT/componentshortname  >}} Installation Guide provides instructions for installing and deploying your {{< TransferCFT/componentshortname  >}}.
+The Transfer CFT{{< TransferCFT/componentshortname  >}} Installation Guide provides instructions for installing and deploying your Transfer CFT{{< TransferCFT/componentshortname  >}}.
 
 <span id="Installation support format"></span>
 
@@ -86,7 +86,7 @@ The Transfer CFT z/OS components include:
 | file_symb  | Character introducing a file name passed to CFTUTIL as a parameter  | #  | @  | #  | #  |
 
 
-**Related topics**
+****Related topics****
 
 - [Prerequisites](r_prerequistes_zos)
 - [Installing Transfer CFT z/OS]()

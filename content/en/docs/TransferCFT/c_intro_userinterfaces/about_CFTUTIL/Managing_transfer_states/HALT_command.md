@@ -15,7 +15,7 @@ be reactivated:
 
 See also [LISTCAT.](../../monitoring_cftutil_intro/listcat_command)
 
-{{< TransferCFT/componentlongname  >}} ensures the integrity of the data in case of interruption
+Transfer CFT{{< TransferCFT/componentlongname  >}} ensures the integrity of the data in case of interruption
 and, depending on the protocol used, authorizes the restarting of the
 transfer from the last synchronization point set before the interruption,
 or simply from the beginning of the file.

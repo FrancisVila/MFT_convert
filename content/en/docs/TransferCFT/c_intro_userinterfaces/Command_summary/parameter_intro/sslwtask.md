@@ -15,10 +15,10 @@ Set the inactivity time, in minutes, of the SSL task. Beyond this value,
 the task is shut down. An SSL task is considered to be idle if it no longer
 manages any sessions.
 
-- **1441**:
+- 1441:
     Default value. Using this value makes the task permanent
 - Any value
-    from <span style="font-weight: bold;">1</span> to <span style="font-weight: bold;">1441</span>
+    from 1 to 1441
 
  
 

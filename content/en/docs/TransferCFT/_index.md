@@ -2,11 +2,11 @@
     "title": "Transfer CFT 3.9 User Guide ",
     "linkTitle": "Transfer CFT User Guide",
     "weight": "20"
-}Welcome to the Axway {{< TransferCFT/platformorsuiteshortname  >}} Transfer CFT documentation. {{< TransferCFT/componentshortname  >}} is the file transfer component in the Axway Managed File Transfer platform, and provides a multi-platform, high-volume, file transfer service. This documentation explains how to install, configure, and manage {{< TransferCFT/componentshortname  >}}.
+}Welcome to the Axway AMPLIFY{{< TransferCFT/platformorsuiteshortname  >}} Transfer CFT documentation. Transfer CFT{{< TransferCFT/componentshortname  >}} is the file transfer component in the Axway Managed File Transfer platform, and provides a multi-platform, high-volume, file transfer service. This documentation explains how to install, configure, and manage Transfer CFT{{< TransferCFT/componentshortname  >}}.
 
-You can configure {{< TransferCFT/transfercftname  >}} and manage flows using {{< TransferCFT/centralgovernancename  >}} or Flow Manager. These governance products simplify Transfer CFT usage, and provide services such as identity and access management, certificate management, monitoring, alerting, and a web dashboard. For more information, visit [www.axway.com](http://www.axway.com/).
+You can configure Transfer CFT{{< TransferCFT/transfercftname  >}} and manage flows using Central Governance{{< TransferCFT/centralgovernancename  >}} or Flow Manager. These governance products simplify Transfer CFT usage, and provide services such as identity and access management, certificate management, monitoring, alerting, and a web dashboard. For more information, visit [www.axway.com](http://www.axway.com/).
 
-Additionally, the Transfer CFT {{< TransferCFT/doctypeuser  >}} explains standalone options for users who have not yet activated or Flow Manager. Axway encourages {{< TransferCFT/componentlongname  >}} users to discover the benefits of centralized management.
+Additionally, the Transfer CFT User Guide{{< TransferCFT/doctypeuser  >}} explains standalone options for users who have not yet activated Central Governance or Flow Manager. Axway encourages Transfer CFT{{< TransferCFT/componentlongname  >}} users to discover the benefits of centralized management.
 
 > **Note**
 >
@@ -16,7 +16,7 @@ QQQ\_QQQ\_DONE
 
 ## For new users
 
-[About {{< TransferCFT/componentshortname  >}}](overview_intro/about_transfer_cft)
+[About Transfer CFT{{< TransferCFT/componentshortname  >}}](overview_intro/about_transfer_cft)
 
 <a href="overview_intro/c_cg_concepts" class="hyperlink">What are governance services?</a>
 
@@ -102,4 +102,4 @@ Go to Axway [support](https://support.axway.com/) to find documentation for Sent
 
 #### Join the discussion in [Axway Community](https://community.axway.com)!  
 
-Document version:
+Document version: Thursday, January 13, 2022

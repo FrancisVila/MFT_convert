@@ -2,7 +2,7 @@
     "title": "General  parameters definition",
     "linkTitle": "CFTPARM - General parameters definition ",
     "weight": "280"
-}This topic describes how to define the general {{< TransferCFT/componentshortname  >}} parameter, which corresponds to the CFTPARM object
+}This topic describes how to define the general Transfer CFT{{< TransferCFT/componentshortname  >}} parameter, which corresponds to the CFTPARM object
 in the command line operations.
 
 [What
@@ -26,7 +26,7 @@ topics
 The CFTPARM object defines general parameters that:
 
 - Specify the parameters
-    that control {{< TransferCFT/componentshortname >}} operations globally
+    that control Transfer CFT{{< TransferCFT/componentshortname >}} operations globally
 - Select the other
     parameter setting commands that are taken into account during execution
 
@@ -37,7 +37,7 @@ Only the associated CFTNET, CFTCOM, and CFTPROT are listed for a given
 PARM. If you modify the corresponding COM, NET, PROT, or CAT parameters
 you have modified that specific PARM.
 
-The parameters that define the {{< TransferCFT/componentshortname  >}} environment are:
+The parameters that define the Transfer CFT{{< TransferCFT/componentshortname  >}} environment are:
 
 - Sizing constants
 - File location
@@ -47,20 +47,20 @@ The parameters that define the {{< TransferCFT/componentshortname  >}} environme
     key
 
 The CFTPARM is an initial configuration object. These parameters are
-set when {{< TransferCFT/componentshortname  >}} starts and cannot be modified dynamically. If you
+set when Transfer CFT{{< TransferCFT/componentshortname  >}} starts and cannot be modified dynamically. If you
 modify CFTPARM values, the changes are not taken into account until the
-{{< TransferCFT/componentshortname  >}} is stopped and restarted.
+Transfer CFT{{< TransferCFT/componentshortname  >}} is stopped and restarted.
 
 The user generally works with a single CFTPARM object in the parameter
 file. There may, however, be several such commands in this file, a single
-command being selected at the time {{< TransferCFT/componentshortname  >}} is activated, by specifying as
+command being selected at the time Transfer CFT{{< TransferCFT/componentshortname  >}} is activated, by specifying as
 an activation parameter, the value of the identifier ID of the CFTPARM
 command selected.
 
-If this activation parameter is not defined, the {{< TransferCFT/componentshortname  >}}
+If this activation parameter is not defined, the Transfer CFT{{< TransferCFT/componentshortname  >}}
 looks for a command CFTPARM ID = IDPARM0 (number 0).
 
-These parameters are defined at the time {{< TransferCFT/componentshortname  >}} is started and
+These parameters are defined at the time Transfer CFT{{< TransferCFT/componentshortname  >}} is started and
 cannot be modified dynamically.
 
 The *[End

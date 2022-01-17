@@ -21,7 +21,7 @@ You can convert a PGP public Keyring file to one or several X.509certificate(s) 
 
 When you import a private keyring file containing ElGamal subkey(s), you must provide the PKCS#12 file for signing (as in public keyring import), because the ElGamal keys cannot be used for signing when you create a certificate.
 
-1. Use CFTUTIL to set the full path to Java executable`:`  
+1. Use CFTUTIL to set the full path to Java executable:  
     ```
     UCONFSET id=cft.jre.java_binary_path ,value=/bin/java
     ```
@@ -50,7 +50,7 @@ The following examples use the UNIX command extension (.sh). On Windows systems 
 
 `ImportPGPKey.sh -dn "cn=Axway,c=fr" -pkcs12 /home/user/pkcs12.p12 -passPkcs12 "passphrasePKCS12" -out /home/user/output/ /home/user/pubring.pkr`
 
-This example stores the certificate provided by the public Keyring `home/user/pubring.pkr` in the `/home/user/output/` directory. The subject DN of the certificate generated will be "cn=Axway,c=fr".
+This example stores the certificate provided by the public Keyring home/user/pubring.pkr in the /home/user/output/ directory. The subject DN of the certificate generated will be "cn=Axway,c=fr".
 
 The private key used to sign the certificate is stored in the PKCS#12 file located in the `/home/user/pkcs12.p12` directory.
 
@@ -60,7 +60,7 @@ The PassPhrase of this PKCS#12 file is "passphrasePKCS12".
 
 `/home/user/secring.skr`
 
-This example stores the private key provided by the secret Keyring `home/user/secring.skr` in the` /home/user/output/` directory.
+This example stores the private key provided by the secret Keyring home/user/secring.skr in the` /home/user/output/` directory.
 
 The PassPhrase of the secret Keyring is "pass". The PassPhrase of the generated PKCS#12 file is "newpasswd".
 
@@ -76,14 +76,14 @@ following file names.
 
 | Key/certificate standard  | Exported file name  |
 | --- | --- |
-| PGP Public Keyring | *useridpacket*_pub.asc |
-| PGP Secret Keyring and Public Keyring | *useridpacket*_sec.asc and *useridpacket*_pub.asc |
-| X.509 Certificate | *certificate alias.*<span>der</span> |
+| PGP Public Keyring | useridpacket_pub.asc |
+| PGP Secret Keyring and Public Keyring | useridpacket_sec.asc and useridpacket_pub.asc |
+| X.509 Certificate | certificate alias.der |
 
 
 ### Export procedure
 
-1. Use CFTUTIL to set the full path to Java executable`:`  
+1. Use CFTUTIL to set the full path to Java executable:  
     ```
     UCONFSET id=cft.jre.java_binary_path ,value=/bin/java
     ```
@@ -117,15 +117,19 @@ There are several options you can add to the command line:
 The following examples use the UNIX command extension (.sh). On Windows systems replace .sh with .bat in your command.
 
 `ExportPGPKey.sh -userIdPacket "userIdPacket" -passPkcs12 "passPkcs12"`
+
 `-passSecRing "passSecRing" -out /home/user/output/`
+
 `/home/user/Pkcs12ToConvert.p12`
 
 This example stores the secret Keyring and the public Keyring provided by the file `Pkcs12ToConvert.p12` in the `/home/user/output/` directory.
 
-The PassPhrase of `Pkcs12ToConvert.p12` is "passPkcs12". The user ID packet in the generated files is "userIdPacket". The generated secret Keyring is protected by the PassPhrase "passSecRing".
+The PassPhrase of Pkcs12ToConvert.p12 is "passPkcs12". The user ID packet in the generated files is "userIdPacket". The generated secret Keyring is protected by the PassPhrase "passSecRing".
 
 `ExportPGPKey.sh -userIdPacket "userIdPacket" -passPkcs12 "passPkcs12"`
+
 `-passSecRing "passSecRing" -out /home/user/output/ -secRing no`
+
 `/home/user/Pkcs12ToConvert.p12`
 
-The example is the same as above, with the `-secRing no` option. Only the public Keyring is generated.
+The example is the same as above, with the -secRing no option. Only the public Keyring is generated.

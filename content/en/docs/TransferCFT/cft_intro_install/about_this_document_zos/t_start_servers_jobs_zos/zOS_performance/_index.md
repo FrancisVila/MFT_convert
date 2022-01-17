@@ -173,13 +173,21 @@ Transfer CFT is compatible with source VIPA. To enable, configure this feature i
 A source CFTNET as below:
 
 `CFTNET ID=xxxx`
+
 `...`
+
 `LOWPORT = 0,`
+
 `.....`
+
 `Will result in:`
+
 `CFTNET ID=xxxx,`
+
 `...`
+
 `SRCPORTS = (0 - 65535),`
+
 `...`
 
 > **Note**

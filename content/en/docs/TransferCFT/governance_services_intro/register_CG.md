@@ -2,7 +2,7 @@
     "title": "Register with Central Governance ",
     "linkTitle": "Register with Central Governance",
     "weight": "190"
-}{{< TransferCFT/componentlongname  >}}s 3.1.3 or higher can register with in one of two ways:
+}Transfer CFT{{< TransferCFT/componentlongname  >}}s 3.1.3 or higher can register with Central Governance in one of two ways:
 
 - <a href="#Automati" class="MCXref xref">Automatically activate connectivity</a>
 - <a href="#manually_activate_cg" class="MCXref xref">Manually activate connectivity</a>
@@ -36,13 +36,13 @@ All commands in this section are performed using CFTUTIL unless stated otherwise
 
 #### On Transfer CFT z/OS
 
-**Use compliant characters for the z/OS shared secret**
+****Use compliant characters for the z/OS shared secret****
 
 When setting the Central Governance "shared secret" during a Transfer CFT z/OS installation, translation issues may occur if you use certain characters. For example, if you enter !SECRET (using code page IBM-1147) the shared secret is translated to §SECRET during the Central Governance registration. Therefore, you must use compliant characters in the shared secret value when working in a z/OS environment.
 
-**Verify the UCONF setting**
+****Verify the UCONF setting****
 
-Prior to the registration, you must ensure that the JCL CFTMON (`copilot.misc.cftstart.enable` = `Yes`) is configured to match the jobname or the STC name used to launch Transfer CFT.
+Prior to the registration, you must ensure that the JCL CFTMON (copilot.misc.cftstart.enable = Yes) is configured to match the jobname or the STC name used to launch Transfer CFT.
 
 ### Procedure
 
@@ -64,12 +64,12 @@ uconfset id=pki.type, value=cft
 >
 > When running in a z/OS environment you must additionally set the am.passport.superuser with the user that will start the Copilot server.
 
-#### Define UCONF parameters used for {{< TransferCFT/componentlongname  >}} instance identification
+#### Define UCONF parameters used for Transfer CFT{{< TransferCFT/componentlongname  >}} instance identification
 
 Set the parameters used to identify a Transfer CFT instance. Follow these guidelines, otherwise the registration will fail:
 
 - The length of the `cft.instance_id` value is limited to 24 characters.
-- The address set in `cft.full_hostname` must be reachable from .
+- The address set in cft.full\_hostname must be reachable from Central Governance.
 
 ```
 uconfset id=cft.instance_id, value=<cft_id>
@@ -77,27 +77,27 @@ uconfset id=cft.instance_group, value=<cft_instance_group>
 uconfset id=cft.full_hostname, value=<cft_address>
 ```
 
-Additionally, if running in a multi-host/multi-node environment, you must set the load balancer address(FQDN or IP address) and port that uses to reach the Transfer CFT (`copilot.general.ssl_serverport`):
+Additionally, if running in a multi-host/multi-node environment, you must set the load balancer address(FQDN or IP address) and port that Central Governance uses to reach the Transfer CFT (copilot.general.ssl\_serverport):
 
 ```
 uconfset id=cft.multi_node.load_balancer.host, value=<load_balancer_address>
-uconfset id=`cft.multi_node.load_balancer.port,value=<load_balancer_port>`
+uconfset id=cft.multi_node.load_balancer.port,value=<load_balancer_port>
 ```
 
-#### Optionally define a proxy server for to {{< TransferCFT/componentlongname  >}} communication
+#### Optionally define a proxy server for Central Governance to Transfer CFT{{< TransferCFT/componentlongname  >}} communication
 
-If you opt to use a proxy server for to connect to {{< TransferCFT/componentlongname  >}}, set the following parameters.
+If you opt to use a proxy server for Central Governance to connect to Transfer CFT{{< TransferCFT/componentlongname  >}}, set the following parameters.
 
 ```
 uconfset id=cg.proxy.in.host, value= <proxy_address>
-uconfset id=cg.proxy.in.port`,value= <proxy_port>`
+uconfset id=cg.proxy.in.port,value= <proxy_port>
 uconfset id=cg.proxy.in.login, value= <proxy_login>
-uconfset id=`cg.proxy.in.password, value= <proxy_login_password>`
+uconfset id=cg.proxy.in.password, value= <proxy_login_password>
 ```
 
-#### Optionally define a proxy server for {{< TransferCFT/componentlongname  >}} to communication
+#### Optionally define a proxy server for Transfer CFT{{< TransferCFT/componentlongname  >}} to Central Governance communication
 
-If you opt to use a proxy server for {{< TransferCFT/componentlongname  >}} to connect to , set the following parameters.
+If you opt to use a proxy server for Transfer CFT{{< TransferCFT/componentlongname  >}} to connect to Central Governance, set the following parameters.
 
 ```
 uconfset id=cg.proxy.out.host, value= <proxy_address>
@@ -108,14 +108,14 @@ uconfset id=cg.proxy.out.password, value= <proxy_login_password>
 
 #### Import the root certificate for the Governance CA 
 
-1. Download the root Governance CA, which is used to authenticate {{< TransferCFT/centralgovernancename >}}.
+1. Download the root Governance CA, which is used to authenticate Central Governance{{< TransferCFT/centralgovernancename >}}.
 1. Import this root CA into the PKI database using the PKIUTIL PKICER command.
 1. Set the `iname `to the root CA path.
-1. Define the UCONF variable `cg.ca_cert_id`, which must correspond with the value you set in the previous step. It is required so that {{< TransferCFT/transfercftname >}} knows which certificate to use to authenticate {{< TransferCFT/centralgovernancename >}}. Using CFTUTIL:
+1. Define the UCONF variable `cg.ca_cert_id`, which must correspond with the value you set in the previous step. It is required so that Transfer CFT{{< TransferCFT/transfercftname >}} knows which certificate to use to authenticate Central Governance{{< TransferCFT/centralgovernancename >}}. Using CFTUTIL:
 
-#### Define the parameters used for the  connection
+#### Define the parameters used for the Central Governance connection
 
-Set  the following parameters that are used to connect to {{< TransferCFT/centralgovernancename  >}}.
+Set  the following parameters that are used to connect to Central Governance{{< TransferCFT/centralgovernancename  >}}.
 
 ```
 uconfset id=cg.host, value=<cg_host_address>
@@ -130,7 +130,7 @@ uconfset id=cg.shared_secret, value=<shared_secret>
 
 #### Optionally define the configuration policy for registration
 
-You may want to automatically assign an existing configuration policy during the {{< TransferCFT/componentlongname  >}} registration. To do so, set the UCONF parameter `cg.configuration_policy` to the name of the desired policy.
+You may want to automatically assign an existing Central Governance configuration policy during the Transfer CFT{{< TransferCFT/componentlongname  >}} registration. To do so, set the UCONF parameter `cg.configuration_policy` to the name of the desired policy.
 
 ```
 uconfset id=cg.configuration_policy, value=<name_of_policy>
@@ -138,7 +138,7 @@ uconfset id=cg.configuration_policy, value=<name_of_policy>
 
 #### Optionally customize the business certificate Distinguished Name (DN)
 
-To override the business certificate's Distinguished Name (DN), which is generated during the {{< TransferCFT/centralgovernancename  >}} registration or certificate renewal, set the UCONF parameter cg.certificate.business.csr\_dn to th e custom value. The default is O=Axway,OU=MFT,CN=%uconf:cft.full\_hostname%. Remember to separate tokens by a comma.
+To override the business certificate's Distinguished Name (DN), which is generated during the Central Governance{{< TransferCFT/centralgovernancename  >}} registration or certificate renewal, set the UCONF parameter cg.certificate.business.csr\_dn to th e custom value. The default is O=Axway,OU=MFT,CN=%uconf:cft.full\_hostname%. Remember to separate tokens by a comma.
 
 ```
 uconfset id=cg.certificate.business.csr_dn, value='O=MyCompany,OU=MFT,CN=%uconf:cft.full_hostname%'
@@ -148,7 +148,7 @@ A best practice is to customize the certificate DN prior to registration. Howeve
 
 #### Optionally customize the governance certificate Distinguished Name (DN)
 
-To override the governance certificate's Distinguished Name (DN), which is generated during the {{< TransferCFT/centralgovernancename  >}} registration or certificate renewal, set the UCONF parameter cg.certificate.governance.csr\_dn to the custom value. The default is O=Axway,OU=MFT,CN=&lt;Transfer CFT $(cft.instance\_id)>. Remember to separate tokens by a comma.
+To override the governance certificate's Distinguished Name (DN), which is generated during the Central Governance{{< TransferCFT/centralgovernancename  >}} registration or certificate renewal, set the UCONF parameter cg.certificate.governance.csr\_dn to the custom value. The default is O=Axway,OU=MFT,CN=&lt;Transfer CFT $(cft.instance\_id)>. Remember to separate tokens by a comma.
 
 ```
 uconfset id=cg.certificate.governance.csr_dn, value='O=MyCompany,OU=MFT,CN=%uconf:cft.full_hostname%'
@@ -167,7 +167,7 @@ uconfset id=cg.certificate.governance.key_len, value=4096
 uconfset id=cg.certificate.business.key_len, value=4096
 ```
 
-#### Enable {{< TransferCFT/centralgovernancename  >}}
+#### Enable Central Governance{{< TransferCFT/centralgovernancename  >}}
 
 To enable connectivity, enter:
 
@@ -187,13 +187,13 @@ Check the list in the output for errors and correct all errors before attempting
 
 ## Register or re-register
 
-Ensure that `cft_registration_id `is reset to `-1`. Otherwise, reset it as follows:  
+Ensure that `cft_registration_id `is reset to -1. Otherwise, reset it as follows:  
 
 ```
 CFTUTIL uconfunset id=cg.registration_id
 ```
 
-Start the {{< TransferCFT/transfercftname  >}} Copilot to automatically trigger registration with {{< TransferCFT/centralgovernancename  >}}. From the UI, check the **Product List** to confirm that the registration was successful.
+Start the Transfer CFT{{< TransferCFT/transfercftname  >}} Copilot to automatically trigger registration with Central Governance{{< TransferCFT/centralgovernancename  >}}. From the Central GovernanceUI, check the **Product List** to confirm that the registration was successful.
 
 For troubleshooting issues refer to
 [Troubleshooting: Installation and registration.](../../cft_intro_install/unix_install_start_here/troubleshoot_registration)

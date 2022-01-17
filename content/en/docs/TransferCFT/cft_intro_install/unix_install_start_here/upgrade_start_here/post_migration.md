@@ -4,7 +4,7 @@
     "weight": "220"
 }## Post manual migration or auto import
 
-If you performed an install and auto import or a manual migration, you must manually import compiled objects and exec scripts from the old configuration. There are no {{< TransferCFT/componentshortname  >}} commands to import these compiled objects and exec scripts, and they are not included in the auto import process.
+If you performed an install and auto import or a manual migration, you must manually import compiled objects and exec scripts from the old configuration. There are no Transfer CFT{{< TransferCFT/componentshortname  >}} commands to import these compiled objects and exec scripts, and they are not included in the auto import process.
 
 > **Note**
 >
@@ -12,23 +12,23 @@ If you performed an install and auto import or a manual migration, you must manu
 
 ### Compiled objects: APIs and Exits
 
-To manually migrate your API and exit binary files after migrating, copy your program's source code to the new Transfer CFT {{< TransferCFT/componentversion  >}} runtime directory and compile them.
+To manually migrate your API and exit binary files after migrating, copy your program's source code to the new Transfer CFT 3.9{{< TransferCFT/componentversion  >}} runtime directory and compile them.
 
-1. Copy the API source code to &lt;new\_Transfer CFT\_{{< TransferCFT/componentversion >}}\_installation\_dir>/runtime/src/capi and compile.
+1. Copy the API source code to &lt;new\_Transfer CFT\_3.9{{< TransferCFT/componentversion >}}\_installation\_dir>/runtime/src/capi and compile.
 
 <!-- -->
 
-1. Copy the Exit source code to &lt;new\_Transfer CFT\_{{< TransferCFT/componentversion >}}\_installation\_dir>/runtime/src/exit and compile.
+1. Copy the Exit source code to &lt;new\_Transfer CFT\_3.9{{< TransferCFT/componentversion >}}\_installation\_dir>/runtime/src/exit and compile.
 
 ### Exec scripts
 
-Copy the exec scripts to &lt;new\_Transfer CFT\_{{< TransferCFT/componentversion  >}}\_installation\_dir>/runtime/exe. It is important that you update any paths that you were using in the exec scripts to reflect the new installation directory.
+Copy the exec scripts to &lt;new\_Transfer CFT\_3.9{{< TransferCFT/componentversion  >}}\_installation\_dir>/runtime/exe. It is important that you update any paths that you were using in the exec scripts to reflect the new installation directory.
 
 ## Post-manual migration only
 
 ### Migrating UCONF parameters from a previous Transfer CFT version
 
-You must manually migrate UCONF parameters for versions prior to {{< TransferCFT/componentshortname  >}} 2.5.1. The UCONF configuration
+You must manually migrate UCONF parameters for versions prior to Transfer CFT{{< TransferCFT/componentshortname  >}} 2.5.1. The UCONF configuration
 replaces the following configuration files:
 
 - Sentinel configuration
@@ -38,7 +38,7 @@ replaces the following configuration files:
     sentinel.TRKTNAME.
 - Copilot ini file
     (copconf.ini)  
-    This file no longer exists. All former Copilot parameters are named `copilot.SECTION.PARAMETER-NAME` in the UCONF interface. For example, the parameter ServerPort, located in the general section, is now `copilot.general.serverport`.
+    This file no longer exists. All former Copilot parameters are named copilot.SECTION.PARAMETER-NAME in the UCONF interface. For example, the parameter ServerPort, located in the general section, is now copilot.general.serverport.
 - The profile file, formerly ENV\_CFT or cft.ini, now
     uses UCONF to set the environment variables.
 

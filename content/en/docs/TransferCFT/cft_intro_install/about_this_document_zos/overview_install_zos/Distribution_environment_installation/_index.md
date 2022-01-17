@@ -30,7 +30,7 @@ To define an alias, adapt the parameters in bold to suit your environment. Enter
 ### Required configuration
 
 - An FTP client that permits the transfer of files to the z/OS host
-- Download the ESD file from {{< TransferCFT/companyname >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a>
+- Download the ESD file from Axway{{< TransferCFT/companyname >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a>
 
 > **Note**
 >

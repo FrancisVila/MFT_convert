@@ -2,9 +2,9 @@
     "title": "Delivered Access Management exit samples",
     "linkTitle": "Delivered exit samples",
     "weight": "370"
-}This section describes how to configure access management when not using .
+}This section describes how to configure access management when not using Central Governance.
 
-Axway delivers an Access Management exit sample, examsmp1.c, in the `<CFTDIRRUNTIME>/src/exit` directory.
+Axway delivers an Access Management exit sample, examsmp1.c, in the &lt;CFTDIRRUNTIME>/src/exit directory.
 
 ### Services provided by delivered sample
 
@@ -13,7 +13,7 @@ The delivered sample provides two services, authentication and permissions check
 
 | Sample  | Authentication  | Permissions checking  |
 | --- | --- | --- |
-| examsmp1.c  | System authentication ()  | Flat file based on flat <a href="" >RBAC</a> model  |
+| examsmp1.c  | System authentication (Windows only)  | Flat file based on flat <a href="" >RBAC Role Based Access Control</a> model  |
 
 
 ### Building the dynamic library associated with the sample
@@ -23,21 +23,21 @@ To build the exit:
 1. Change the directory to: &lt;CFTDIRRUNTIME>/src/exit
 1. Run the following command:
 
-- UNIX: `make`
-- Windows: `nmake -f exit.mak`
+- UNIX: make
+- Windows: nmake -f exit.mak
 
-The output is a library located at `<CFTDIRRUNTIME>/lib/libcftexam.(so/dll)`.
+The output is a library located at &lt;CFTDIRRUNTIME>/lib/libcftexam.(so/dll).
 
 ## Flat file based on flat RBAC 
 
-To check users rights, Axway delivers a sample flat file based on flat <a href="" class="MCTextPopup popup popupHead">RBAC</a> (Role Based Access Control) located in: `<CFTDIRRUNTME>/conf/exam.csv`. This file contains a set of permission and user assignments.
+To check users rights, Axway delivers a sample flat file based on flat <a href="" class="MCTextPopup popup popupHead">RBAC Role Based Access Control</a> (Role Based Access Control) located in: &lt;CFTDIRRUNTME>/conf/exam.csv. This file contains a set of permission and user assignments.
 
 ![Simplied diagram of relationship between users, roles and permissions](/Images/TransferCFT/am_exits_rbac.GIF)
 
 ## Assigning permission
 
 The following line shows how to add a permission to a role:  
-`<cmd_type> <role> <resource> <actions> <policy>`
+&lt;cmd\_type> &lt;role> &lt;resource> &lt;actions> &lt;policy>
 
 Where:
 
@@ -51,7 +51,7 @@ Where:
 | &lt;policy&gt;  | ACCEPT: accept the actions on the resource<br /> REFUSE: refuse the actions on the resource  |
 
 
-**Examples**
+****Examples****
 
 All available actions on the resource “CONFIGURATION:CFTPARM”:
 
@@ -87,7 +87,7 @@ PA ADMIN \* \* ACCEPT
 ## Assigning users
 
 The following line shows how to add a user to a role:  
-`<cmd_type> <role> <users>`
+&lt;cmd\_type> &lt;role> &lt;users>
 
 
 | Field  | Description  |
@@ -110,7 +110,7 @@ UA APPLICATION user05
 
 You can find some roles defined in &lt;CFTDIRRUNTIME>/conf/exam.csv.
 
-**Predefined roles**
+****Predefined roles****
 
 
 | Role  | Description  |
@@ -122,15 +122,15 @@ You can find some roles defined in &lt;CFTDIRRUNTIME>/conf/exam.csv.
 | Application  | Allows applications to request transfers and view the Catalog  |
 
 
-The resources and available actions for {{< TransferCFT/componentshortname  >}} are listed in the PassPort AM CSD file.
+The resources and available actions for Transfer CFT{{< TransferCFT/componentshortname  >}} are listed in the PassPort AM CSD file.
 
-After installing {{< TransferCFT/componentshortname  >}}, access the CSD file:
+After installing Transfer CFT{{< TransferCFT/componentshortname  >}}, access the CSD file:
 
 `<Transfer CFT install directory>/distrib/am/csd_Transfer_CFT.xml`
 
 For more information, refer to the PassPort AM CSD.
 
-**Related topics**
+****Related topics****
 
 [About Access Management exits](../../../../internal_a_m_start_here/am_exits)
 

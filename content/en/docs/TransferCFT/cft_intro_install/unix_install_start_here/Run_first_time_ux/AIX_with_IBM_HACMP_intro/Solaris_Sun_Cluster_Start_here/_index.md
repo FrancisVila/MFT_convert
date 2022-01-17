@@ -44,7 +44,7 @@ To complete the setup of this installation, you must supply GDS with
 the list of listening addresses for Transfer CFT TCP/IP and the shared
 system.
 
-**<span id="Sun_Cluster_reference_documentation"></span>Sun Cluster reference
-documentation**
+****<span id="Sun_Cluster_reference_documentation"></span>Sun Cluster reference
+documentation****
 
 <http://docs.sun.com/?q=sun+cluster>

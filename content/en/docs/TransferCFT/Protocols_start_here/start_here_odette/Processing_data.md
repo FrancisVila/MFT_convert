@@ -32,7 +32,7 @@ have the possibility of COMPRESSING files, it is not a MANDATORY REQUIREMENT.
 
 This Compression Option is negotiated as indicated in the figure below.
 
-**Compression option negotiation**
+********Compression option negotiation********
 
 ![Compression Option is negotiated between the initiator (Requester) ad the acceptor (Server)](/Images/TransferCFT/Image1692.gif)
 
@@ -64,13 +64,13 @@ If it does, Transfer CFT deletes these characters.
 
 #### Structure of the Data Exchanged
 
-**Structure of the data exchange buffer**
+********Structure of the data exchange buffer********
 
 ![View of structure including the initial Byte, header, and sub-record](/Images/TransferCFT/Image1693.gif)
 
  
 
-**HEADER structure**
+********HEADER structure********
 
 ![Header structure defining bits 0 through 7, which is the last bit of the record](/Images/TransferCFT/Image1694.gif)
 
@@ -86,7 +86,7 @@ longer indicate the sub-record size, as shown in the above diagram, but
 the number of times a single byte is repeated; the byte in question immediately
 follows the HEADER.
 
-**SUBRECORD example**
+********SUBRECORD example********
 
 ![](/Images/TransferCFT/Image1755.gif)
 
@@ -207,6 +207,7 @@ replies.](../../../concepts/using_the_send_command/sending_replies)
 EERP TRANSMISSION example:
 
 `SEND part=x1, type= REPLY,idf=IDF1, msg=".......", idm=xxxxxxxx,idt=yyyyyyyy`
+
 <span id="Responding_to_an_end_to_end_message"></span>
 
 ### Responding to an end-to-end message

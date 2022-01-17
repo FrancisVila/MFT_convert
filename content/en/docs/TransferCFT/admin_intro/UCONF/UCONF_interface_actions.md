@@ -13,11 +13,11 @@ values using the User Interface.
 
 To modify a UCONF value using the graphical user interface:
 
-1. Select the **Administration**
+1. Select the Administration
     icon at the top of the left pane.
 1. In the left pane object manager,
-    double click <span style="font-weight: bold;">Configuration Parameters</span>.
-    The <span style="font-style: italic;">UCONF</span> window is displayed.
+    double click Configuration Parameters.
+    The UCONF window is displayed.
 1. Double click the file name
     in the right pane to access the values window for that file. The parameter
     window displays three values or settings.
@@ -26,33 +26,33 @@ To modify a UCONF value using the graphical user interface:
     value for this file. For a complete listing of the value in previous versions
     of Transfer CFT and the default value, refer to [UCONF
     settings](../).
-1. Click <span style="font-weight: bold;">Ok</span>
+1. Click Ok
     to confirm and close the window.
 
- <span style="font-weight: bold;">Example</span>
+ Example
 
-In the <span style="font-style: italic;">UCONF </span>window:
+In the UCONF window:
 
-1. Click to expand the <span style="font-weight: bold;">CFT</span>
+1. Click to expand the CFT
     folder.
-1. Select <span style="font-weight: bold;">cftcom</span>.
-1. Double click <span style="font-weight: bold;">cft.cftcom.default\_size</span>.
-    The following diagram illustrates the <span style="font-style: italic;">cft.cftcom.default\_size</span> window.
+1. Select cftcom.
+1. Double click cft.cftcom.default\_size.
+    The following diagram illustrates the cft.cftcom.default\_size window.
 
 The top section briefly describes the configuration
 setting. Three fields are displayed:
 
-- <span style="font-weight: bold;">Default</span>:
+- Default:
     the preset default value
-- <span style="font-weight: bold;">Current</span>:
+- Current:
     this is the actual setting for the parameter and can contain an environmental
     variable
-- <span style="font-weight: bold;">Complete</span>:
+- Complete:
     this field lists or defines the meaning for the current setting (you can
-    think of this as how the system sees or translates the value in the <span style="font-weight: bold;">Current</span> field)
+    think of this as how the system sees or translates the value in the Current field)
 
 1. Modify the value as required.
-    Click <span style="font-weight: bold;">Ok</span> to confirm and close
+    Click Ok to confirm and close
     the window.
 
  

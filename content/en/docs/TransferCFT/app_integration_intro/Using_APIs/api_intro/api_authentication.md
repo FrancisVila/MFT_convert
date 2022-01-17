@@ -2,7 +2,7 @@
     "title": "Client authentication",
     "linkTitle": "Client authentication ",
     "weight": "310"
-}{{< TransferCFT/transfercftname  >}} REST API supports *HTTP Basic* and *HTTP Bearer* as the authentication method. Confidentiality is ensured by the use of an HTTPS connection.
+}Transfer CFT{{< TransferCFT/transfercftname  >}} REST API supports *HTTP Basic* and *HTTP Bearer* as the authentication method. Confidentiality is ensured by the use of an HTTPS connection.
 
 We recommended that you use the HTTP Bearer as opposed to Basic method for the following reasons:
 
@@ -16,7 +16,8 @@ To use this type of authentication you must specify the HTTP Authorization head
 
 `Authorization: Bearer <token>`
 
-**Example**
+****Example****
+
 ```
 curl -X GET "https://localhost:1768/cft/api/v1/transfers" -H "accept: application/json" -H "Authorization: Bearer eyJhbGnMQdLK6lwYPwy6-B3zrHYjhAqX5UUYht2zkd5-iSBbdyUYuVpSTMhA"
 ```
@@ -29,7 +30,7 @@ To use the bearer method, you require an access token as described below.
 
 ### Generate an access token
 
-In the {{< TransferCFT/componentlongname  >}} UI:
+In the Transfer CFT{{< TransferCFT/componentlongname  >}} UI:
 
 1. Navigate to your user login in the upper right hand corner.
 1. Select **My Access Tokens** in the drop-down menu.  
@@ -43,14 +44,15 @@ To use this type of authentication you must specify the HTTP Authorization head
 
 `Authorization: Basic <base64(user:password)>`
 
-**Example**
+****Example****
+
 ```
 curl -X GET "https://localhost:1768/cft/api/v1/transfers" -H "accept: application/json" -H "Authorization: Basic Z3Vlc3Q6Z3Vlc3QK"
 ```
 
 ## Limit the number of failed login attempts
 
-Transfer CFT provides brute force protection for logging on the {{< TransferCFT/transfercftname  >}} UI, REST API, or Web Services when using either the *system* mode or *xfbadm* mode (UNIX and HP NonStop only) authentication. That is, it limits the number of login failure attempts, where both the user and the password are checked to avoid brute force attacks.
+Transfer CFT provides brute force protection for logging on the Transfer CFT{{< TransferCFT/transfercftname  >}} UI, REST API, or Web Services when using either the *system* mode or *xfbadm* mode (UNIX and HP NonStop only) authentication. That is, it limits the number of login failure attempts, where both the user and the password are checked to avoid brute force attacks.
 
 For other authentication methods, such as PassPort and LDAP, no check is made. You must manage that in the Password Policy of those external tools.
 
@@ -65,7 +67,7 @@ You can use the following UCONF parameters to manage this option:
 
 When the maximum number of login failures is reached, the user account is locked for 30 seconds.
 
-**Platform specifics**
+****Platform specifics****
 
 - On IBM i systems, there is no action if the password is incorrect as the system offers methods that you can rely on to avoid brute force attacks (the system value is [QMAXSIGN](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_74/rzarl/rzarlmaxsgn.htm)).
 - On z/OS systems, only the inherent system protection is available (refer to the RACF suboperand [REVOKE](https://www.ibm.com/support/knowledgecenter/SSLTBW_2.3.0/com.ibm.zos.v2r3.icha700/setrpw.htm) for the PASSWORD option).

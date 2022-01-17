@@ -60,7 +60,7 @@ For a description of the general parameters refer to the Event Router informatio
 
 Before submitting the SN05CONF JCL, you can modify the command file. Enter:
 
-**Trktname parameter**
+****Trktname parameter****
 
 - Using a buffer file is strongly encouraged, but not mandatory. If you prefer to not use a buffer file, modify the command UCONFSET as follows:
 
@@ -77,7 +77,8 @@ CFTS31W XTRK Warning No Buffer File(LOGGER file)defined Error Code = -1
 To connect to the Event Router via XFC, manually modify the commands file to activate the appropriate communication mode and comment commands:
 
 ```
-/\* UCONFSET ID=sentinel.TRKIPADDR,         VALUE=sntladdr                        UCONFSET ID=sentinel.TRKIPPORT,VALUE=sntlp\*/
+/\* UCONFSET ID=sentinel.TRKIPADDR,         VALUE=sntladdr                  
+     UCONFSET ID=sentinel.TRKIPPORT,VALUE=sntlp\*/
 ```
 <span id="Create_a_LOGGER_type_padding_file (optional)"></span>
 
@@ -102,9 +103,9 @@ The keywords that are displayed in bold should be substituted by the JCL A00CUST
 
 #### Use the LOGGER file in a SYSPLEX  
 
-To create an overflow file (LOGGER) that is available for all SYSPLEX partitions, in the Coupling Facility Resource Manager (CFRM) add the following structure (`&userstr`) to the coupling data set.
+To create an overflow file (LOGGER) that is available for all SYSPLEX partitions, in the Coupling Facility Resource Manager (CFRM) add the following structure (&userstr) to the coupling data set.
 
-**Example**
+****Example****
 
 ```
 The following is an example of a structure definition:

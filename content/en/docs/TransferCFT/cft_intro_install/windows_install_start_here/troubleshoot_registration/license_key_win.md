@@ -2,20 +2,20 @@
     "title": "Applying a license key",
     "linkTitle": "Apply a license key",
     "weight": "210"
-}****Windows****
+}******Windows******
 
-You need to apply a valid license key to {{< TransferCFT/componentshortname  >}} in the following situations:
+You need to apply a valid license key to Transfer CFT{{< TransferCFT/componentshortname  >}} in the following situations:
 
-- You perform an initial {{< TransferCFT/componentshortname >}} installation.
+- You perform an initial Transfer CFT{{< TransferCFT/componentshortname >}} installation.
 - To replace an expired license key (typically after a year).
 
 ## Obtain a license key
 
-1. Install {{< TransferCFT/componentshortname >}}. You can install {{< TransferCFT/componentshortname >}} without a license key, and enter the key afterward.
-1. After completing the installation, or for an existing installation, use the command `cftutil about` to retrieve your system information. For details see [ABOUT: Displaying product and host information](../../../../c_intro_userinterfaces/about_cftutil/about_command).
+1. Install Transfer CFT{{< TransferCFT/componentshortname >}}. You can install Transfer CFT{{< TransferCFT/componentshortname >}} without a license key, and enter the key afterward.
+1. After completing the installation, or for an existing installation, use the command cftutil about to retrieve your system information. For details see [ABOUT: Displaying product and host information](../../../../c_intro_userinterfaces/about_cftutil/about_command).
 1. Contact the Axway Fulfillment team at the appropriate email address, and provide the hostname and system information.
-    -   For a US key, contact: `fulfillment@us.axway.com`
-    -   For an EMEA or APAC key, contact: `product.key@axway.com`
+    -   For a US key, contact: fulfillment@us.axway.com
+    -   For an EMEA or APAC key, contact: product.key@axway.com
 
 ## Apply a license key
 
@@ -26,7 +26,7 @@ Normally you enter the key that you received from the Axway Fulfillment team dur
 
 ### Multi-node keys
 
-**Transfer CFT 3.3.2 SP2 and higher**
+****Transfer CFT 3.3.2 SP2 and higher****
 
 Transfer CFT allows you to use a single key for a multi-node installation. To use a single key for multiple hosts, either:
 
@@ -37,7 +37,7 @@ Additionally, the key must have the cluster option.
 
 For example, if you have 2 hosts and 4 nodes, you only need one key that matches one hostname (or no defined hostname).
 
-**Transfer CFT prior to 3.3.2 SP2**
+****Transfer CFT prior to 3.3.2 SP2****
 
 If you are using a Transfer CFT 3.3.2 prior to SP2, multi-node architecture requires:
 
@@ -51,7 +51,7 @@ For example, if you have 2 hosts and 4 nodes, you require 4 keys with at least o
 
 ## About command
 
-Use the CFTUTIL utility to execute the `about `command to display key and general system information as demonstrated in this example.
+Use the CFTUTIL utility to execute the about command to display key and general system information as demonstrated in this example.
 
 ```
 CFTUTIL about

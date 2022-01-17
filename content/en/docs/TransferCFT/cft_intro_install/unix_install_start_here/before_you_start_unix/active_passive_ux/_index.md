@@ -13,7 +13,7 @@ Transfer CFT in multi-host architecture requires:
 
 ### License keys
 
-{{< TransferCFT/componentshortname  >}} in multi-node architecture requires a shared file system for use of a multi-node architecture on several hosts (active/active). Additionally, the system must be configured prior to the multi-node installation and the shared disk ready when starting the Copilot server.
+Transfer CFT{{< TransferCFT/componentshortname  >}} in multi-node architecture requires a shared file system for use of a multi-node architecture on several hosts (active/active). Additionally, the system must be configured prior to the multi-node installation and the shared disk ready when starting the Copilot server.
 
 > **Note**
 >
@@ -28,7 +28,7 @@ Additionally, the key must have the cluster option.
 
 ### Download and uncompress
 
-Download and unzip the {{< TransferCFT/transfercftname  >}} install package, as described in <a href="../" class="MCXref xref">Install Transfer CFT</a>.
+Download and unzip the Transfer CFT{{< TransferCFT/transfercftname  >}} install package, as described in <a href="../" class="MCXref xref">Install Transfer CFT</a>.
 
 ### Customize
 
@@ -45,14 +45,14 @@ Create as many copies of the initialize.properties file as you have hosts in the
 ## Install
 
 1. Start the installation.
-1. Transfer\_CFT\_{{< TransferCFT/releasenumber >}}\_Install\_win-x86-64\_BNXXXXXXXX.exe
-1. ./Transfer\_CFT\_{{< TransferCFT/releasenumber >}}\_Install\_&lt;OS>\_&lt;BN>.run
+1. Transfer\_CFT\_3.9{{< TransferCFT/releasenumber >}}\_Install\_win-x86-64\_BNXXXXXXXX.exe
+1. ./Transfer\_CFT\_3.9{{< TransferCFT/releasenumber >}}\_Install\_&lt;OS>\_&lt;BN>.run
 1. In the Installation Architecture screen, select **Cluster - first host**.
 1. Complete the installation.
-1. To add a host to create a multi-host installation, run the install `exe/bat` again. This time select **Cluster - Additional host**.
+1. To add a host to create a multi-host installation, run the install exe/bat again. This time select **Cluster - Additional host**.
 
 ## Silent installation
 
-When installing using a silent file for a multihost installation, in the silent file (initialize.properties) you can use the same other definitions as in the Transfer CFT {{< TransferCFT/releasenumber  >}} silent files.
+When installing using a silent file for a multihost installation, in the silent file (initialize.properties) you can use the same other definitions as in the Transfer CFT 3.9{{< TransferCFT/releasenumber  >}} silent files.
 
  

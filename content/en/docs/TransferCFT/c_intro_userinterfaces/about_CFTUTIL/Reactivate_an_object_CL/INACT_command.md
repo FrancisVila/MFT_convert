@@ -43,7 +43,7 @@ Where:
 
 - `CFTPART_ID` is the identifier of the partner to deactivate. To deactivate several partners with a single command, use wildcard characters or meta characters.
 - Mode is the mode to be deactivated, with values: "BOTH" , "B", "REQUESTER", "R" , "SERVER", "S"
-- When `FORCE `is set to `YES`, stops any transfers in progress involving the deactivated partners.
+- When FORCE is set to YES, stops any transfers in progress involving the deactivated partners.
 
 Example
 
@@ -66,16 +66,16 @@ When a partner is deactivated, transfers awaiting processing are:
 - Refused in server mode
 
 The state of a transfer request awaiting execution in requester mode
-for a deactivated partner remains **D**,
+for a deactivated partner remains D,
 with a diagnostic code 430 and a protocol diagnostic INACT.
 
 The state of a transfer request awaiting execution in server mode for
-a deactivated partner remains <span style="font-weight: bold;">D</span>,
+a deactivated partner remains D,
 with a diagnostic code 930 and a protocol diagnostic RCO 312, or ABO 312
 if the session is already open.
 
 The state of transfers that are interrupted by an INACT command when
-FORCE=YES is <span style="font-weight: bold;">H</span>, with a diagnostic
+FORCE=YES is H, with a diagnostic
 code 121 and a protocol diagnostic OPER.
 
 ### Deactivate Sentinel notifications

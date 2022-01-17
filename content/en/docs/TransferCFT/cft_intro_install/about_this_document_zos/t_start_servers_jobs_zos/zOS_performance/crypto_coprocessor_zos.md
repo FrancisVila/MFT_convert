@@ -50,7 +50,7 @@ This table lists, for each possible SSL-protocol cryptographic function and Pki.
 
 ### Crypto configuration information
 
-When {{< TransferCFT/transfercftname  >}} is started, depending on the system configuration, the Transfer CFT log contains the following information:
+When Transfer CFT{{< TransferCFT/transfercftname  >}} is started, depending on the system configuration, the Transfer CFT log contains the following information:
 
 ```
 CFTI18I+Crypto configuration

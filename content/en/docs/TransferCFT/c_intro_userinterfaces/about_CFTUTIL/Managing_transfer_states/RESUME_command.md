@@ -6,7 +6,7 @@
 command. This command retrieves, in server mode, a blocked send request
 that has a *hold* phasestep, and has a diagnostic codes other than zero.
 
-The *requester* may either:
+The requester may either:
 
 - Restart the receive
     operation, or

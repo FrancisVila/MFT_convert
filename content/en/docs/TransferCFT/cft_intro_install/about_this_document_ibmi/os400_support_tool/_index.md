@@ -6,7 +6,7 @@
 
 To assist Axway Customer Support, the CFTSUPPORT command collects useful information from a Transfer CFT environment including the configuration, Unified Configuration parameters (UCONF), catalog information, log files, and so on. This information is then packaged and stored in a tar file in the specified IFS folder.
 
-Collected information for the Transfer CFT platform includes these different CFTPROD/SUPOUT file members:
+Collected information for the Transfer CFT Transfer CFT IBM i platform includes these different CFTPROD/SUPOUT file members:
 
 
 | File  | Comment  |
@@ -57,7 +57,7 @@ If the generated CFTSUPPORT.tar is too large, you can compress it prior to sendi
 
 **Example**
 
-In the following example, the command creates the CFTSUPPORT.tar and SAVFOUTQ.bin files in `/home/cft/cftsupport/`.
+In the following example, the command creates the CFTSUPPORT.tar and SAVFOUTQ.bin files in /home/cft/cftsupport/.
 
 ```
 CFTSUPPORT IFSPATH('/home/cft/cftsupport')

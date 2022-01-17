@@ -8,7 +8,7 @@ This enables you to submit CFTUTIL commands via the keyboard.
 
 This option sequences Transfer CFT commands through to the end of the session.
 
-****Example****
+******Example******
 
 You can execute all CFTUTIL operations by entering the command as follows:
 

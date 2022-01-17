@@ -36,9 +36,9 @@ CFTPRIV      ID          = 'MYPRIV1',
 
 Conditions allow you to assign finer control on resources and actions by specifying a logical condition that must be true to authorize the action.
 
-**Examples**
+****Examples****
 
-In these examples `PART `and `ID `are properties of the resource being checked. As you can see, you can use parenthesis and logical operators `&&` (AND) and `||` (OR).
+In these examples PART and ID are properties of the resource being checked. As you can see, you can use parenthesis and logical operators && (AND) and || (OR).
 
 ```
 PART=="PARIS" && ID=="IDFDEF"

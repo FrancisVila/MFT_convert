@@ -90,7 +90,7 @@ All of the A13\* JCLs are used to update or apply a Service Pack to Transfer CFT
 
 QQQ\_QQQ\_CHECK check h4 titles
 
-#### JCL updates on {{< TransferCFT/componentlongname  >}}
+#### JCL updates on Transfer CFT{{< TransferCFT/componentlongname  >}}
 
 
 | JCL  | Description  |
@@ -104,7 +104,7 @@ QQQ\_QQQ\_CHECK check h4 titles
 | A13SDEL  | To delete a save-load library when a patch is validated, or if the loadlib is restored to reapply a patch.  |
 
 
-#### JCL updates on {{< TransferCFT/copilotname  >}}
+#### JCL updates on Copilot{{< TransferCFT/copilotname  >}}
 
 
 | JCL  | Description  |
@@ -120,7 +120,7 @@ QQQ\_QQQ\_CHECK check h4 titles
 | JCL  | Description  |
 | --- | --- |
 | A13UXSRA  | To apply a patch to Secure Relay - Master Agent (creates a save file).  |
-| A13UXSRR  | To restore the Transfer CFT {{< TransferCFT/securerelayname  >}} environment from a save file in USS environment.  |
+| A13UXSRR  | To restore the Transfer CFT Secure Relay{{< TransferCFT/securerelayname  >}} environment from a save file in USS environment.  |
 | A13UXSRD  | To delete a save file when a patch is validated.  |
 
 
@@ -147,6 +147,7 @@ The JCLs used are found in the target.INSTALL libraries below.
 Before you submit the JOB, specify the PTF identifier in the EXEC card:
 
 `A13PTFLD: PTF integration in distribution libraries`
+
 `//LOADPTF  EXEC PLOADPU,ID=’xxxxxx’, …    `
 
 This JOB takes place in several stages:
@@ -240,12 +241,15 @@ The use of this JCL is optional. It allows you to submit JOB 'A13\*', which runs
 You must configure the following JCLs in automatic mode.
 
 > `..INSTALL(A13PTFLD)   >> ID='AUTO'`
+>
 > `..INSTALL(A13PTFLK)   >> ID='AUTO'`
+>
 > `..INSTALL(A13UCOPA)   >> ID='AUTO'  or ID='NONE'`
+>
 > `..INSTALL(A13UXSRA)   >> ID='AUTO'  or ID='NONE'`
 
 If ID='NONE', this JCL is not submitted.
 
-**Related topics**
+****Related topics****
 
 - [About migrating Transfer CFT z/OS]()

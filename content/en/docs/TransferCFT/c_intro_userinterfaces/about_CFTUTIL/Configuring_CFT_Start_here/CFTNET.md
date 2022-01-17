@@ -14,8 +14,8 @@ parameters which are common to all the network access methods.
 The CFTNET TYPE = xxx commands are explained in the following Network
 resources topics.
 
-**Related
-topics**
+****Related
+topics****
 
 - Command syntax
     [CFTNET](../../../command_summary#CFTNET)
@@ -64,7 +64,8 @@ QQQ\_QQQ\_QQQ
 | <a href="../../../command_summary/parameter_intro/call">CALL</a> | Call direction possible through this network resource. |
 
 
-**Example**
+****Example****
+
 ```
 CFTNET     MODE   =    
 CREATE,

@@ -21,17 +21,18 @@ Follow the installation instructions provided in the [Secure Relay RA Installat
 - &lt;CACertificate>CA\_for\_RA.der&lt;/CACertificate>
 - &lt;UserCertificate>USER\_for\_RA.p12&lt;/UserCertificate>
 
-You need these values when you configure the Master Agent in the {{< TransferCFT/componentlongname  >}} configuration, where the user certificate that you use must be signed by `CA_for_RA`. You should use the same CA and USER certificate as for the Master Agent.
+You need these values when you configure the Master Agent in the Transfer CFT{{< TransferCFT/componentlongname  >}} configuration, where the user certificate that you use must be signed by CA\_for\_RA. You should use the same CA and USER certificate as for the Master Agent.
 
-## Configure the Router Agents in {{< TransferCFT/componentlongname  >}}
+## Configure the Router Agents in Transfer CFT{{< TransferCFT/componentlongname  >}}
 
-After completing installation, configure the Router Agents in the {{< TransferCFT/componentlongname  >}} configuration.
+After completing installation, configure the Router Agents in the Transfer CFT{{< TransferCFT/componentlongname  >}} configuration.
 
-1. Set the value for the number of Router Agents using the `secure_relay.ra` parameter. {{< TransferCFT/componentlongname >}} generates a set of `secure_relay.ra.n.*` parameters, where the number, *n*, corresponds to the number of Router Agents you defined in this parameter.
+1. Set the value for the number of Router Agents using the `secure_relay.ra` parameter. Transfer CFT{{< TransferCFT/componentlongname >}} generates a set of `secure_relay.ra.n.*` parameters, where the number, *n*, corresponds to the number of Router Agents you defined in this parameter.
 1. You can use the default values for most fields, but you must customize the` secure_relay.ra.0.dmz` parameter. This value must be unique; for example, you can increment the DMZ0 value by one for each Router Agent so that the  second Router Agent has the value` secure_relay.ra.0.dmz = DMZ1`.
-1. Configure the host address for each Secure Relay host using `secure_relay.ra.0.host`.
+1. Configure the host address for each Secure Relay host using secure\_relay.ra.0.host.
 
-**Example of two Router Agent definitions**
+****Example of two Router Agent definitions****
+
 ```
 secure_relay.ra = 2
  
@@ -54,7 +55,7 @@ secure_relay.ra.1.data_channel_ciphering = No
 secure_relay.ra.1.outcall_network_interface =
 ```
 
-## Configure the Master Agent in {{< TransferCFT/componentlongname  >}}
+## Configure the Master Agent in Transfer CFT{{< TransferCFT/componentlongname  >}}
 
 Configure the following UCONF parameters to enable the Master Agent communication with the Router Agent:
 
@@ -64,7 +65,7 @@ Configure the following UCONF parameters to enable the Master Agent communicati
 
 ## Enable Secure Relay and configure the Java
 
-In {{< TransferCFT/componentlongname  >}} from the CFTUTIL prompt, perform the following commands:
+In Transfer CFT{{< TransferCFT/componentlongname  >}} from the CFTUTIL prompt, perform the following commands:
 
 1. Enable Secure Relay:  
     ```
@@ -75,7 +76,7 @@ In {{< TransferCFT/componentlongname  >}} from the CFTUTIL prompt, perform the 
     UCONFSET id=cft.jre.java_binary_path ,value=/bin/java
     ```
 
-## Configure {{< TransferCFT/componentlongname  >}} objects
+## Configure Transfer CFT{{< TransferCFT/componentlongname  >}} objects
 
 ### Createa CFTNET object
 
@@ -87,7 +88,8 @@ In {{< TransferCFT/componentlongname  >}} from the CFTUTIL prompt, perform the 
     -   SSLTERM: Set this Boolean to YES to enable SSL termination.
 1. If there is existing CFTNET object(s), the class parameter must be different.
 
-**Example**
+****Example****
+
 ```
 CFTNET ID = NETSR,
 PROTOCOL = SR,
@@ -105,7 +107,7 @@ This section describes the CFTPROT object, and how various parameters are relate
 - CFTPROT is related to the CFTNET object through the NET parameter.
 - The SAP parameter is the listening port that is used on the RA side (using the CFTNET HOST parameter as the network interface).
 
-**Example**
+****Example****
 
 This example uses a CFTNET object called NETSR.
 
@@ -123,7 +125,7 @@ When a partner object refers to a CFTPROT object and a CFTNET object that use Se
 
 So to complete the configuration, create a CFTPART and a CFTTCP. In this way, the CFTPART refers to the CFTPROT object, and that in turn refers to a CFTNET, which points to Secure Relay.
 
-**Example**
+****Example****
 
 This is an example of the CFTPART and CFTTCP object configuration, using PESITANY.
 

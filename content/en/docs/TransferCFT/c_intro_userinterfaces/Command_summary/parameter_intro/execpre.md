@@ -6,7 +6,7 @@
 
 #### CFTDEST
 
-**\[ EXECPRE = { <u>DEST</u> | PART | CHILDREN \] \]**
+****\[ EXECPRE = { <u>DEST</u> | PART | CHILDREN \] \]****
 
 Preprocessing procedure submit mode type.
 

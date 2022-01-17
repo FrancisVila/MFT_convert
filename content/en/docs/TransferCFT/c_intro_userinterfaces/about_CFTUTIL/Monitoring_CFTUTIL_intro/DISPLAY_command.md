@@ -42,7 +42,7 @@ For more information, refer to an XML standards reference such as <http://www.w3
 - z/OS (MVS): distlib.XMLLIB(DSPCNF) and instance.XMLLIB(DSPCNF)
 - IBM i (OS/400): CFTPGM1/DSPCNF
 
-**Details**
+****Details****
 
 Fmodel structure
 
@@ -110,10 +110,10 @@ Command syntax: [DISPLAY](../../../command_summary)
 | DATETIMEMIN  | Use to display catalog transfers that happened on or after this start date and time according to the transfer record creation (DATED, TIMED).  |
 | DIAGI  | Define the diagi catalog transfer field display:<br/> • DIAGI=0: select transfers that have a DIAGI=0<br/> • DIAGI=ERROR: select transfers that have a DIAGI other than 0<br/> • DIAGI=* : select all transfers (default value) |
 | DIRECT  | Transfer direction of the requests.  |
-| EMPTY | Use this parameter to replace the default output of **Empty** values, usually empty string values.<br/> The default string <span >ANY</span> means that EMPTY is specified in the model. The default EMPTY used is '-' if it is not defined in the model. |
+| EMPTY | Use this parameter to replace the default output of Empty values, usually empty string values.<br/> The default string ANY means that EMPTY is specified in the model. The default EMPTY used is '-' if it is not defined in the model. |
 | FILE  | Enter file name  |
 | FMODEL | Complete name or logical name of the XML model file.<br/> This parameter default value is fixed.  |
-| FOUT  | **PeSIT** You can extract Transfer CFT messages from the Catalog file, and forward these messages to a specified file using the fout parameter.<br/> The message length for PeSIT ANY profile, when forwarding a message from one CFT to another, has increased from 512 to 4096 bytes. The S/RRUSIZE must be greater than the maximum message length and message information combined (for example, 4127).<br/> The fout parameter enables you to redirect output to a specified file. |
+| FOUT  | ****PeSIT**** You can extract Transfer CFT messages from the Catalog file, and forward these messages to a specified file using the fout parameter.<br/> The message length for PeSIT ANY profile, when forwarding a message from one CFT to another, has increased from 512 to 4096 bytes. The S/RRUSIZE must be greater than the maximum message length and message information combined (for example, 4127).<br/> The fout parameter enables you to redirect output to a specified file. |
 | HELP | Displays help information:<br/> • FIELDS: Output all the fields name available for display model creation<br/> • MODELS: Output all the models available in the current model file |
 | IDA  | Local transfer identifier assigned by the user or user application. This identifier may be a search criterion for the catalog entry asso  |
 | IDF  | File type identifier.  |
@@ -127,7 +127,7 @@ Command syntax: [DISPLAY](../../../command_summary)
 | PHASESTEP  | The processing phase step.  |
 | PIDTU  | The parent idtu is the idtu of the generic transfer. This means that for a group of files, file collection, or for broadcasting, the child transfers are now linked to the parent via the PIDTU.  |
 | RUSER | Displays value as defined in the CONTENT parameter. |
-| SORTBY  | Use this parameter to display information in an alphabetical/alphanumberic order.<br/> For example, to sort by partner name and identifier, enter:<br/> <span >CFTUTIL DISPLAY SORTBY=(PART,IDF)</span><br/> Additionally, you can add a prefix to define the criteria direction. Use <span >+</span> to increase (default) or <span >-</span> to decrease. For example:<br/> <code>CFTUTIL DISPLAY SORTBY=(-IDTU)</code>  |
+| SORTBY  | Use this parameter to display information in an alphabetical/alphanumberic order.<br/> For example, to sort by partner name and identifier, enter:<br/> CFTUTIL DISPLAY SORTBY=(PART,IDF)<br/> Additionally, you can add a prefix to define the criteria direction. Use + to increase (default) or - to decrease. For example:<br/> <code>CFTUTIL DISPLAY SORTBY=(-IDTU)</code> |
 | STATE  | Defines the transfer request state.  |
 | SUSER | Displays value as defined in the CONTENT parameter. |
 | TYPE  | Defines the concerned type (object, medium, etc.).  |
@@ -135,16 +135,17 @@ Command syntax: [DISPLAY](../../../command_summary)
 
 ## Examples
 
-**Example 1**
+****Example 1****
 
-Displays all the fields described in <span style="font-weight: bold;">listcat</span>
+Displays all the fields described in listcat
 model concerning all transfers.
 
 ```
 DISPLAY     CONTENT
 = listcat
 ```
-**Example 2**
+
+****Example 2****
 
 Displays all the fields described in 'listcat' model concerning all
 transfers. The COLUMN mode is overridden by the LINE. Moreover, every
@@ -159,7 +160,8 @@ NA
 EMPTY
 = '<empty>'
 ```
-**Example 3**
+
+****Example 3****
 
 This shows an example of a display model file.
 

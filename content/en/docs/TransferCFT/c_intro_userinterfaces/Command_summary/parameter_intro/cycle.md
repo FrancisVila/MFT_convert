@@ -8,7 +8,7 @@
 
 #### CFTSEND, SEND, CFTRECV, RECV
 
-**CYCLE = {0 | n}    {0..32767}**
+****CYCLE = {0 | n}    {0..32767}****
 
 Number of units (per [tcycle](../tcycle)) for the transfer cycle period.
 
@@ -25,14 +25,14 @@ Enter one of the following values:
 
 #### CFTPROT
 
-**\[CYCLE = {10 | n}\]   {1..32767}**
+****\[CYCLE = {10 | n}\]   {1..32767}****
 
-The cycle parameter forms part of the {{< TransferCFT/componentshortname  >}} definition. This
+The cycle parameter forms part of the Transfer CFT{{< TransferCFT/componentshortname  >}} definition. This
 parameter is only available for PeSIT DMZ. Use this parameter to set the
 periodicity for creating a protocol session.
 
 #### TURN
 
-**\[CYCLE = {10 | n}\]   {1..32767}**
+****\[CYCLE = {10 | n}\]   {1..32767}****
 
 [Return to Command index](../../)

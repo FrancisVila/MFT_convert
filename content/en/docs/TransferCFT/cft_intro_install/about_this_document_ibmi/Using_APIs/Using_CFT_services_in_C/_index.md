@@ -3,18 +3,18 @@
     "linkTitle": "Using Transfer CFT services in C",
     "weight": "290"
 }This section begins with this topic which provides information about using
-the {{< TransferCFT/componentshortname  >}} services in C language. It also contains topics
+the Transfer CFT{{< TransferCFT/componentshortname  >}} services in C language. It also contains topics
 that describe how to use the following services in
 C language.
 
 This page describes the Transfer
 CFT programming interface. The programming interface is implemented by
-the calling application module link, with the {{< TransferCFT/componentshortname  >}} interface function
+the calling application module link, with the Transfer CFT{{< TransferCFT/componentshortname  >}} interface function
 modules.
 
 The library of object modules supplied provides everything the programmer
 can requires. This library also contains the file cftapi.h
-to be included in the application using the {{< TransferCFT/componentshortname  >}} programming interfaces.
+to be included in the application using the Transfer CFT{{< TransferCFT/componentshortname  >}} programming interfaces.
 
 <span id="Call_Syntax"></span>
 
@@ -24,8 +24,8 @@ to be included in the application using the {{< TransferCFT/componentshortname  
 | Syntax | rc = cftxx (verb,&amp;ptr,param) |
 | --- | --- |
 | Element | Definition |
-| cftxx | **cftai**: simple Transfer CFT catalog querying services<br/> <span >cftaix</span>: extended <span >Transfer CFT</span> catalog querying services<br/> <span >cftau</span>: transfer services with syntax analysis<br/> <span >cftac</span>: transfer services without syntax analysis |
-| **<span >verb</span>** | Service requested |
+| cftxx | cftai: simple Transfer CFT catalog querying services<br/> cftaix: extended Transfer CFT{{< TransferCFT/componentshortname  >}} catalog querying services<br/> cftau: transfer services with syntax analysis<br/> cftac: transfer services without syntax analysis |
+| **verb** | Service requested |
 | ptr | Address of the internal control block |
 | param | Parameters specific to the requested service |
 | rc | Return code |

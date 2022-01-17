@@ -6,13 +6,13 @@
 
 This use case demonstrates how to replace a variable in a file, and then zip the file prior to processing the transfer.
 
-1. In a command line window, enter: `cd $CFTDIRRUNTIME`
+1. In a command line window, enter: cd $CFTDIRRUNTIME
 
-1. Create your sample file: `echo “Hello _user_” > Hello`
+1. Create your sample file: echo “Hello \_user\_” > Hello
 
-    In this example the **Hello** file is in $CFTDIRRUNTIME.  
+    In this example the ****Hello**** file is in $CFTDIRRUNTIME.  
 
-1. Create and display your sample script `cat myexec.sh:`
+1. Create and display your sample script cat myexec.sh:
     ```
     ! /bin/sh
     if [ "&APPSTATE" = "" ]; then
@@ -33,11 +33,13 @@ This use case demonstrates how to replace a variable in a file, and then zip the
     fi
     ```
 
-1. Execute the following command, where `preexec `points to your script:`CFTUTIL send part=paris,idf=test,fname=$CFTDIRRUNTIME/Hello,preexec=$CFTDIRRUNTIME/myexec.sh`
+1. Execute the following command, where preexec points to your script:
 
-**Results**
+    `CFTUTIL send part=paris,idf=test,fname=$CFTDIRRUNTIME/Hello,preexec=$CFTDIRRUNTIME/myexec.sh`
 
-The script replaces ` _user_` in the **Hello** file with the PARTNER name, and then compress this modified file. At the end of the preprocessing , the tar file is sent to the partner. The partner can set an exec for this idf, `test `in our example, that will untar the received file.
+****Results****
+
+The script replaces \_user\_ in the ****Hello**** file with the PARTNER name, and then compress this modified file. At the end of the preprocessing , the tar file is sent to the partner. The partner can set an exec for this idf, test in our example, that will untar the received file.
 
 > **Note**
 >

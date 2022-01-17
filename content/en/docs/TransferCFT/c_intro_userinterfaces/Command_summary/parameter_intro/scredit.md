@@ -4,7 +4,7 @@
     "weight": "3100"
 }<span id="scredit"></span>
 
-### 
+### scredit
 
 #### CFTPROT
 
@@ -14,10 +14,10 @@
 Odette protocol
 
 Value of the "credit" (expressed as a number of "DATA"
-messages) proposed by {{< TransferCFT/componentshortname  >}} when it is the requester. Enter a value
-between 1 and 999. The Default value is **4**.
+messages) proposed by Transfer CFT{{< TransferCFT/componentshortname  >}} when it is the requester. Enter a value
+between 1 and 999. The Default value is 4.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is authorized to send a number of "DATA" protocol
+Transfer CFT{{< TransferCFT/componentshortname  >}} is authorized to send a number of "DATA" protocol
 messages equal to the result of the negotiation (performed when the protocol
 session is established), before waiting for a new "credit" to
 be sent by the server.

@@ -9,8 +9,8 @@
 The PeSIT protocol uses two PIs to carry diagnostic messages: PI 2 and
 PI 29.
 
-{{< TransferCFT/componentshortname  >}} is responsible for PI 29, which is valid only in
-version E. {{< TransferCFT/componentshortname  >}} uses PI 29 to carry a clearform message describing
+Transfer CFT{{< TransferCFT/componentshortname  >}} is responsible for PI 29, which is valid only in
+version E. Transfer CFT{{< TransferCFT/componentshortname  >}} uses PI 29 to carry a clearform message describing
 the error. This message is not seen by the user.
 
 ## Diagnostic protocol field format
@@ -24,7 +24,7 @@ fields can be organized in several ways:
 
 H represents a hexadecimal digit.
 
-In general for {{< TransferCFT/componentshortname  >}}, this format represents
+In general for Transfer CFT{{< TransferCFT/componentshortname  >}}, this format represents
 an error code specific to the operating system of the host computer and
 only relates to NON network resources (file access, task management, system
 services, etc.).
@@ -242,7 +242,7 @@ QQQ\_QQQ\_QQQ just split big table into 3
 #### Diagnostics imposing a re-synchronization 
 
 
-| PeSIT reason code&lt;/th&gt;  | Description&lt;/th&gt;  | {{< TransferCFT/componentshortname  >}} internal diagnostic  | Service item concerned&lt;/th&gt;  |
+| PeSIT reason code&lt;/th&gt;  | Description&lt;/th&gt;  | Transfer CFT{{< TransferCFT/componentshortname  >}} internal diagnostic  | Service item concerned&lt;/th&gt;  |
 | --- | --- | --- | --- |
 | 100  | Transmission error  | 720  | F.RESTART  |
 
@@ -250,7 +250,7 @@ QQQ\_QQQ\_QQQ just split big table into 3
 #### Diagnostics imposing a restart 
 
 
-| PeSIT reason code&lt;/th&gt;  | Description&lt;/th&gt;  | {{< TransferCFT/componentshortname  >}} internal diagnostic  | Service item concerned&lt;/th&gt;  |
+| PeSIT reason code&lt;/th&gt;  | Description&lt;/th&gt;  | Transfer CFT{{< TransferCFT/componentshortname  >}} internal diagnostic  | Service item concerned&lt;/th&gt;  |
 | --- | --- | --- | --- |
 | 200  | File characteristics insufficient  | 730  | F.CREATE<br /> F.SELECT  |
 | 201  | System resources temporarily insufficient  | 916  | F.CREATE<br /> F.SELECT  |
@@ -285,7 +285,7 @@ QQQ\_QQQ\_QQQ just split big table into 3
 #### Diagnostics imposing a reconnection 
 
 
-| PeSIT reason code&lt;/th&gt;  | Description&lt;/th&gt;  | {{< TransferCFT/componentshortname  >}} internal diagnostic  | Service item concerned&lt;/th&gt;  |
+| PeSIT reason code&lt;/th&gt;  | Description&lt;/th&gt;  | Transfer CFT{{< TransferCFT/componentshortname  >}} internal diagnostic  | Service item concerned&lt;/th&gt;  |
 | --- | --- | --- | --- |
 | 300  | Local communication system congested  | 730  | F.CONNECT  |
 | 301  | Identification requested not known  | 909  | F.CONNECT  |
@@ -321,7 +321,7 @@ These codes are specific to the ODETTE protocol and correspond to the
 "ODETTE diagnostic code" transmitted by the protocol.
 
 The values of these codes consist of the diagnostic code (two digits)
-to which the {{< TransferCFT/componentshortname  >}} adds 100 or 200 depending on the protocol phase concerned.
+to which the Transfer CFT{{< TransferCFT/componentshortname  >}} adds 100 or 200 depending on the protocol phase concerned.
 
 - Values between 100 and 199 correspond to the "SFNA" (Start
     File Negative Answer) and "EFNA" (End File Negative Answer)
@@ -354,6 +354,6 @@ to which the {{< TransferCFT/componentshortname  >}} adds 100 or 200 depending o
 | 207 | Invalid NSDU size received |
 | 208 | User resources currently insufficient |
 | 209 | End of time-out |
-| 210 | Incorrect number of records. The number transported by the EFID FPDU does not correspond to the number of received records counted by the {{< TransferCFT/componentshortname  >}} (F- or V-format files) |
-| 211 | Number of characters incorrect. The number transported by the EFID FPDU does not correspond to the number of received characters counted by the {{< TransferCFT/componentshortname  >}} (T- or U-format files) |
+| 210 | Incorrect number of records. The number transported by the EFID FPDU does not correspond to the number of received records counted by the Transfer CFT{{< TransferCFT/componentshortname  >}} (F- or V-format files) |
+| 211 | Number of characters incorrect. The number transported by the EFID FPDU does not correspond to the number of received characters counted by the Transfer CFT{{< TransferCFT/componentshortname  >}} (T- or U-format files) |
 

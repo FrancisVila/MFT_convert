@@ -6,24 +6,31 @@
 
 ## Activating traces
 
-To enable an SSL trace, add the parameter `trace = 255` to the control CFTSSL used in the exchange (default trace = 0 => no trace).
+To enable an SSL trace, add the parameter trace = 255 to the control CFTSSL used in the exchange (default trace = 0 => no trace).
 
 ### Example activating a trace
 
-`CFTSSL    ID          = SSLCLIENT,`
-`DIRECT        = CLIENT,`
-`ROOTCID   = (ROOTCA, Intercable, ROOT_Du_Partenaire, Inter_Partenaire)`
-`USERCID   = User,`
-`CIPHLIST  = (47,10,9,1,2)`
-`TRACE         = 255`
+`CFTSSL  ID          = SSLCLIENT,`
+
+`DIRECT      = CLIENT,`
+
+`ROOTCID = (ROOTCA, Intercable, ROOT_Du_Partenaire, Inter_Partenaire)`
+
+`USERCID     = User,`
+
+`CIPHLIST    = (47,10,9,1,2)`
+
+`TRACE       = 255`
 
 ### Trace analysis
 
 To analyze an SSL frame, read the first 6 bytes:
 
-`1     8                           24                40        48`
-`Content type  Version`
-`Major version     l   Minor version   Fragment length Type message`
+`1   8                           24                40        48`
+
+`Content type    Version`
+
+`Major version     l   Minor version Fragment length Type message`
 
 Where:
 
@@ -38,14 +45,22 @@ Where:
 
 ### Handshake frame alert
 
-`0x01   client_hello   0x01   warning`
-`0x02   server_hello   0x02   fatal`
+`0x01   client_hello 0x01   warning`
+
+`0x02   server_hello 0x02   fatal`
+
 `0x0B  certificate`
+
 `0x0C  server_key_exchange`
+
 `0x0D  certificate_request`
+
 `0x0E   server_hello_done`
+
 `0x0F   certificate_verify`
+
 `0x10   client_key_exchange`
+
 `0x14   finished`
 
 ## Authentication types

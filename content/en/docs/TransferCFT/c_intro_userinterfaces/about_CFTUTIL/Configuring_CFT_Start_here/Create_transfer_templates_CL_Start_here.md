@@ -28,8 +28,8 @@ object.
 This topic describes the command used to create a transfer template.
 The parameters are described in the CFTSEND and CFTRECV object topics.
 
-**Related
-topics**
+****Related
+topics****
 
 - Command syntax
     [CFTSEND](../../../command_summary#CFTSEND)

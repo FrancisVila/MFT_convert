@@ -12,7 +12,7 @@
 
 The timeout for internal communication between Transfer CFT
 tasks, which can be any
-value from **1** to <span style="font-weight: bold;">32767</span> seconds.
+value from 1 to 32767 seconds.
 
 Default values per operating system:
 
@@ -22,9 +22,9 @@ Default values per operating system:
 - 1000: OS/400 (IBM i)
 
 This parameter is used for a synchronous exchange of requests between
-two monitor tasks during the initialization phase. After <span style="font-weight: bold;">waitresp</span>
+two monitor tasks during the initialization phase. After waitresp
 seconds without reply, the timeout is interrupted. A CFTS09 message is
-written in the log and the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> initialization stops.
+written in the log and the Transfer CFT{{< TransferCFT/componentshortname  >}} initialization stops.
 
  
 

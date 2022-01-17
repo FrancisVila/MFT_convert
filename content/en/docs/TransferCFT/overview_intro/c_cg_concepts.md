@@ -2,19 +2,19 @@
     "title": "Governance services",
     "linkTitle": "Governance services",
     "weight": "130"
-}{{< TransferCFT/companyname  >}} and Flow Manager are two {{< TransferCFT/platformorsuitelongname  >}} management applications that provide a set of services for administering Transfer CFTs. From the UI, for example, you can configure, access logs, and perform operational tasks for your {{< TransferCFT/componentshortname  >}}. Central Governance also simplifies the task of creating file transfers definitions, and supports mass deployment of configuration changes to groups of {{< TransferCFT/componentshortname  >}}s.
+}Axway{{< TransferCFT/companyname  >}} Central Governance and Flow Manager are two AMPLIFY{{< TransferCFT/platformorsuitelongname  >}} management applications that provide a set of services for administering Transfer CFTs. From the Central Governance UI, for example, you can configure, access logs, and perform operational tasks for your Transfer CFT{{< TransferCFT/componentshortname  >}}. Central Governance also simplifies the task of creating file transfers definitions, and supports mass deployment of configuration changes to groups of Transfer CFT{{< TransferCFT/componentshortname  >}}s.
 
-offers the following key features:
+Central Governance offers the following key features:
 
-- Automatic recognition and registration of {{< TransferCFT/componentshortname >}}s on connection
-- Centralized management of {{< TransferCFT/componentshortname >}} configurations, with processing capabilities for highly distributed environments
-- Centralized start, stop, and log viewing for your {{< TransferCFT/componentshortname >}}s
+- Automatic recognition and registration of Transfer CFT{{< TransferCFT/componentshortname >}}s on connection
+- Centralized management of Transfer CFT{{< TransferCFT/componentshortname >}} configurations, with processing capabilities for highly distributed environments
+- Centralized start, stop, and log viewing for your Transfer CFT{{< TransferCFT/componentshortname >}}s
 - Global management of user and partner identities and rights
 - Data flow repository, allowing you to create and supervise end-to-end data flow definitions
-- Alert management for tracking {{< TransferCFT/componentshortname >}} and its data flow processing, including an alert notification option
+- Alert management for tracking Transfer CFT{{< TransferCFT/componentshortname >}} and its data flow processing, including an alert notification option
 - Out-of-the-box dashboards
 
-The following diagram illustrates a simplified view of the architecture.
+The following diagram illustrates a simplified view of the Central Governance architecture.
 
 ![High level view of Central Governance layer over a group of Transfer CFTs](/Images/TransferCFT/2013_g_CG_architecture_draft1.png)
 

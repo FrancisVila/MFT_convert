@@ -57,18 +57,20 @@ The characters following the initial " == " either set certain information for t
 
 ### Processing
 
-1. Regardless of if the procedure is OSS or native, {{< TransferCFT/componentlongname >}} creates a temporary file with the following locations and naming conventions:
+1. Regardless of if the procedure is OSS or native, Transfer CFT{{< TransferCFT/componentlongname >}} creates a temporary file with the following locations and naming conventions:
 
-- OSS: The same as on {{< TransferCFT/componentlongname >}} Unix: /tmp/CFTxxxx  
-- Native: On the {{< TransferCFT/componentlongname >}} default [subvolume](#subvolumeUD): CTMPnnnn
+- OSS: The same as on Transfer CFT{{< TransferCFT/componentlongname >}} Unix: /tmp/CFTxxxx  
+- Native: On the Transfer CFT{{< TransferCFT/componentlongname >}} default [subvolume](#subvolumeUD): CTMPnnnn
 
 `2> filenames $DATA14.CFT32BUD.*`
+
 `           $DATA14.CFT32BUD`
+
 `CTMP0001  CTMP0002  CTMP0003  CTMP0004`
 
-{{< TransferCFT/componentlongname  >}} copies the skeleton in the temporary file, replacing variables with their real values (transfer information, file names, etc.).
+Transfer CFT{{< TransferCFT/componentlongname  >}} copies the skeleton in the temporary file, replacing variables with their real values (transfer information, file names, etc.).
 
-Depending on the type of procedure, {{< TransferCFT/componentlongname  >}}:
+Depending on the type of procedure, Transfer CFT{{< TransferCFT/componentlongname  >}}:
 
 - Starts the script (OSS)
 - Starts the TACL direct processing
@@ -94,7 +96,7 @@ The following unified configuration parameters are specific to HP Nonstop.
 
 | Parameter | Default | Description |
 | --- | --- | --- |
-| <span id="cft.guardian.cftwrk"></span>cft.guardian.cftwrk |   | The default working directory for the TACL and NETBATCH scripts.<br/> The parameter is set with the default value of “<code>&lt;</code><code>subvolume</code><code>&gt;UD</code>” (see <a href="#Guardian" >Guardian files</a>) during the Guardian files installation. |
+| <span id="cft.guardian.cftwrk"></span>cft.guardian.cftwrk |   | The default working directory for the TACL and NETBATCH scripts.<br/> The parameter is set with the default value of “&lt;subvolume&gt;UD” (see <a href="#Guardian" >Guardian files</a>) during the Guardian files installation. |
 | <span id="cft.guardian.process_name_prefix"></span>cft.guardian.process_name_prefix | LA | The first two letters of the Guardian process names.<br/> Each Transfer CFT process is assigned a name using this prefix and a suffix, which depends on the executable name.<br/> For instance, using the default setting, CFTLOG is run with the name $LALOG with the Guardian convention (or /G/LALOG with the OSS convention).<br/> If empty, no Guardian process name is given.<br/> If you plan to run several instances of Transfer CFT at the same time on the same machine, you should assign each instance a unique value. |
 | <span id="cft.guardian.processor"></span>cft.guardian.processor | -1 | Processor on which Transfer CFT is started.<br/> • -1 indicates that Transfer CFT is started on the processor from which the start-up command is executed<br/> • Processor number |
 | <span id="cft.guardian.backup_processor"></span>cft.guardian.backup_processor | -1 | Backup processor on which Transfer CFT is started.<br/> • -1 indicates that no processor number is assigned<br/> • Backup processor number |

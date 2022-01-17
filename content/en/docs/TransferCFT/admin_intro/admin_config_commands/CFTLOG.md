@@ -32,7 +32,7 @@ topics
 | <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/switch">SWITCH</a> | Time at which the Transfer CFT performs an automatic switch. When this parameter is not defined, log files are switched daily at midnight. |
 
 
-**Example**
+****Example****
 
 This command defines the log file names:
 

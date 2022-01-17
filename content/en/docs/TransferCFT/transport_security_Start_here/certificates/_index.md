@@ -12,7 +12,7 @@ describes security certificates, and the following security concepts:
 
 ## Central Governance certificate management
 
-When using Transfer CFT with Central Governance, certificate management is performed by {{< TransferCFT/centralgovernancename  >}}. See [ {{< TransferCFT/centralgovernancename  >}} registration concepts](../../governance_services_intro/cg_register_overview) for details on certificates during installation and registration.
+When using Transfer CFT with Central Governance, certificate management is performed by Central Governance{{< TransferCFT/centralgovernancename  >}}. See [ Central Governance{{< TransferCFT/centralgovernancename  >}} registration concepts](../../governance_services_intro/cg_register_overview) for details on certificates during installation and registration.
 
 ## What is a certificate?
 
@@ -131,7 +131,7 @@ Signature Algorithm: PKCS #1 MD5 With RSA Encryption
 Issuer: OU=Axway Certificate Authority, O=Axway, C=US
 Validity:
 Not Before: Fri Oct 17 18:36:25 2018
-Not After: Sun Oct 17 18:36:25 `2021`
+Not After: Sun Oct 17 18:36:25 2021
 Subject: CN=Albert Dupont, OU=Marketing, O=Axway, C=US
 Subject Public Key Info:
 Algorithm: PKCS #1 RSA Encryption
@@ -188,6 +188,6 @@ an argument in the PKICER command.
 
 ## Complete CA certificate chains
 
-In {{< TransferCFT/transfercftname  >}} 3.1.3 and lower, you can perform a SSL transfer even if the certificate chain is not complete (not signed by a ROOT CA). However, for {{< TransferCFT/transfercftname  >}} 3.2.0 and higher, the certificate chain must be complete for a transfer to succeed.
+In Transfer CFT{{< TransferCFT/transfercftname  >}} 3.1.3 and lower, you can perform a SSL transfer even if the certificate chain is not complete (not signed by a ROOT CA). However, for Transfer CFT{{< TransferCFT/transfercftname  >}} 3.2.0 and higher, the certificate chain must be complete for a transfer to succeed.
 
 For more information, see <a href="../../troubleshoot_intro/admin_troubleshooting_server/troubleshoot_security#Unknown" class="MCXref xref">Unknown CA leads to a failed certificate verification</a>

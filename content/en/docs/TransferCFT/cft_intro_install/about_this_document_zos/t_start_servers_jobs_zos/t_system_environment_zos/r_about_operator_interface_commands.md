@@ -10,11 +10,11 @@
 
 The z/OS operator interface for Transfer CFT supports two types of commands:
 
-- The Transfer CFT commands described the
+- The Transfer CFT commands described the Command Index
 
 <!-- -->
 
-- The diagnostic commands described in section
+- The diagnostic commands described in section Diagnostic commands
 
 ### Types of responses
 
@@ -29,7 +29,7 @@ The Transfer CFT operator interface for z/OS supplies the following responses:
 - SGCM03E Command ignored
     -   The command is not processed.
 
-**Related topics**
+****Related topics****
 
 [Diagnostic commands]()
 

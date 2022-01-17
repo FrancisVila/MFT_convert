@@ -75,11 +75,11 @@ with additional information:
   LISTUCONF
 id=copilot.\*,content=FULL
 
-**Example 4**
+****Example 4****
 
 Use the [content](../../../c_intro_userinterfaces/command_summary/parameter_intro/content) parameter to define output properties:
 
-`LISTUCONF CONTENT=EXTRACT|DEBUG|PROPS`
+LISTUCONF CONTENT=EXTRACT|DEBUG|PROPS
 
 Where:
 
@@ -87,8 +87,8 @@ Where:
 - DEBUG: Additional information
 - PROPS: Property-like output
 
-**Example 5**
+****Example 5****
 
 To output the content into a file use with the [FOUT](../../../c_intro_userinterfaces/command_summary/parameter_intro/fout) parameter:
 
-`CFTUTIL LISTUCONF FOUT=fname`
+CFTUTIL LISTUCONF FOUT=fname

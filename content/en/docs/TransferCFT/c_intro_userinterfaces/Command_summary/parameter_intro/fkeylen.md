@@ -8,10 +8,11 @@
 
 #### CFTSEND, CFTRECV, SEND, RECV
 
-**\[FKEYLEN = {0 | n}\]     **
-**{
+****\[FKEYLEN = {0 | n}\]     ****
+
+****{
 0...32767}  PeSIT
-E**
+E****
 
 Key length (in bytes) of an indexed file.
 
@@ -28,7 +29,7 @@ to use this information which can be recovered by the symbolic variable
 
 For a sender:
 
-{{< TransferCFT/transfercftname  >}} sends this information, transported by the protocol in the
+Transfer CFT{{< TransferCFT/transfercftname  >}} sends this information, transported by the protocol in the
 PI 38, but does not use it. The indexed file is transferred in the form
 of sequential records.
 

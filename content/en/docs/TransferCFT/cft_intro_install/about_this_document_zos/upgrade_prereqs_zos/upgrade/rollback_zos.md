@@ -5,7 +5,7 @@
 }## Prerequisites
 
 - You must have made a backup of the environment prior to the upgrade you are rolling back.
-- Upgraded from {{< TransferCFT/hflongproductname >}} 3.4 or higher to {{< TransferCFT/hflongproductname >}} {{< TransferCFT/releasenumber >}}
+- Upgraded from Transfer CFT{{< TransferCFT/hflongproductname >}} 3.4 or higher to Transfer CFT{{< TransferCFT/hflongproductname >}} 3.9{{< TransferCFT/releasenumber >}}
 
 ## Procedure
 

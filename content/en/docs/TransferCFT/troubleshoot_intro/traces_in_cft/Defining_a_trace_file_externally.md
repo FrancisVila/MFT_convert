@@ -87,8 +87,11 @@ uniquely identifiable.
 This parameter is a character string, maximum length 8.
 
 `[FTRACE = {0   | 0..15}]`
+
 `[MTRACE = {0   | 0..31}]`
+
 `[PTRACE = {0   | 0..31}]`
+
 `TID =  identifier`
 
 Identifier of the **SETTRC** or **CFTTRACE** command which defines
@@ -140,7 +143,7 @@ This parameter is a character string, maximum length: 8.
 
 The following example shows how to retrieve a protocol trace. You can use the same steps to perform other types of traces.
 
-1. Start {{< TransferCFT/componentlongname >}}.
+1. Start Transfer CFT{{< TransferCFT/componentlongname >}}.
 
 1. Use the command utility CFTTRACE to set and start the following trace, for example:
 
@@ -148,7 +151,7 @@ The following example shows how to retrieve a protocol trace. You can use the sa
 
     CFTTRACE STARTTRC ID=T1,TID=TRC0,PTRACE=28
 
-1. Check that the `CFTATMC `process is started.
+1. Check that the CFTATMC process is started.
 
 1. Execute the transfer to trace.
 
@@ -177,7 +180,9 @@ it with empty useable content.
 ### Syntax
 
 `TRCFILE  TYPE = TRACE, [MODE = {CREATE | REPLACE | DELETE},] TRCFNAM = filename, TRCFTYP = {STANDARD | CIRCULAR}, `
+
 `TRCFTYP = STANDARD [TRCLREC = {1024 | n}] `
+
 `TRCFTYP = CIRCULAR TRCNREC = n,TRCLREC = {0 | 1024 | n}`
 
 ### Parameters
@@ -248,7 +253,9 @@ The SETTRC command:
 ### Syntax
 
 `SETTRC  ID = identifier,TRCFNAM = {" " | filename},[TRCFTYP = {STANDARD | CIRCULAR},[MODE = {CREATE | REPLACE | CLOSE},] `
+
 `TRCFTYP = STANDARD [TRCLREC = {0 | n}]`
+
 `TRCFTYP = CIRCULAR TRCLREC = {0 | n},TRCNREC  = n`
 
 ### Parameters

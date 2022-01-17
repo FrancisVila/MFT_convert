@@ -31,9 +31,9 @@ For Transfer CFT to be able to access the files located on an Independent ASP (w
 
 1. Connect to your system.
 1. Start the IASP.
-1. Before starting Transfer CFT, use the `EDTLIB `command to add the following three libraries:
+1. Before starting Transfer CFT, use the EDTLIB command to add the following three libraries:
     -   CFTPGM: Contains the Transfer CFT programs
     -   CFTPROD: Contains the Transfer CFT configuration
     -   CFTSBSLIB: An additional library in the ASP that contains your SBS
-1. Use the `SETASPGRP `command to enable your IASP.
-1. Use the `CFTSTART `command to start Transfer CFT.
+1. Use the SETASPGRP command to enable your IASP.
+1. Use the CFTSTART command to start Transfer CFT.

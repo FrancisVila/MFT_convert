@@ -10,7 +10,7 @@
 
 This parameter is obsolete for this command.
 
-**\[HIGHPORT = {65535 | n}\]**
+****\[HIGHPORT = {65535 | n}\]****
 
 Defines the upper limit for the range of outgoing ports (value included).
 
@@ -21,7 +21,7 @@ Defines the upper limit for the range of outgoing ports (value included).
 
 #### CONFIG, TYPE=COM, MEDIACOM=TCPIP
 
-**\[HIGHPORT = {65535 | n}\]**
+****\[HIGHPORT = {65535 | n}\]****
 
  
 

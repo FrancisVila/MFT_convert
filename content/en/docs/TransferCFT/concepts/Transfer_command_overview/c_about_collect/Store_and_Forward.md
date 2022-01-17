@@ -2,10 +2,10 @@
     "title": "Store  and forward ",
     "linkTitle": "Store and forward relays",
     "weight": "340"
-}Store and forward, or transfer routing, allows you to define and automate file transfer using an intermediate site. This page describes using store-and-forward services either in a {{< TransferCFT/centralgovernancename  >}} context or using a standalone {{< TransferCFT/transfercftname  >}}.
+}Store and forward, or transfer routing, allows you to define and automate file transfer using an intermediate site. This page describes using store-and-forward services either in a Central Governance{{< TransferCFT/centralgovernancename  >}} context or using a standalone Transfer CFT{{< TransferCFT/transfercftname  >}}.
 
-- [Store and forward with {{< TransferCFT/centralgovernancename >}}](#Store)
-- [Store and forward standalone {{< TransferCFT/transfercftname >}}](#Store2)
+- [Store and forward with Central Governance{{< TransferCFT/centralgovernancename >}}](#Store)
+- [Store and forward standalone Transfer CFT{{< TransferCFT/transfercftname >}}](#Store2)
     -   [Intentional
         store and forward](#Intentional_Store_and_Forward)
     -   [Intentional VAN store and forward](#Intentional_VAN_store_and_forward)
@@ -14,11 +14,11 @@
 
 <span id="Store"></span>
 
-## Store and forward with {{< TransferCFT/centralgovernancename  >}}
+## Store and forward with Central Governance{{< TransferCFT/centralgovernancename  >}}
 
-When implementing a {{< TransferCFT/transfercftname  >}} relay in {{< TransferCFT/centralgovernancename  >}}, the only relay option is the equivalent of COMMUT = YES, where a file is immediately sent to the intended final partner.
+When implementing a Transfer CFT{{< TransferCFT/transfercftname  >}} relay in Central Governance{{< TransferCFT/centralgovernancename  >}}, the only relay option is the equivalent of COMMUT = YES, where a file is immediately sent to the intended final partner.
 
-To implement a relay in conjunction with :
+To implement a relay in conjunction with Central Governance:
 
 1. Create the flow as described in the [Central Governance User Guide](https://docs.axway.com/bundle/CentralGovernance_113_UsersGuide_allOS_en_HTML5/page/Content/AxwayStartPage.htm).
 1. In the SEND command include at a minimum:
@@ -42,9 +42,9 @@ To implement a relay in conjunction with :
 
 <span id="Store2"></span>
 
-## Store and forward with standalone {{< TransferCFT/transfercftname  >}}
+## Store and forward with standalone Transfer CFT{{< TransferCFT/transfercftname  >}}
 
-The following sections describe various store and forward options when using standalone {{< TransferCFT/transfercftname  >}}s.
+The following sections describe various store and forward options when using standalone Transfer CFT{{< TransferCFT/transfercftname  >}}s.
 
 <span id="Intentional_Store_and_Forward"></span>
 
@@ -54,7 +54,7 @@ The following descriptions correspond with the
 parameter setting example in the
 figure below.
 
-**Configure the sender**
+****Configure the sender****
 
 Configure the following for the initial sender (Site A):
 
@@ -62,14 +62,14 @@ Configure the following for the initial sender (Site A):
 - Define the first relay (Site B).
 - In the final receiver partner definition, make a reference to the first relay with IPART=&lt;relay> .
 
-**Configure the relay**
+****Configure the relay****
 
 Configure the following for the store and forward (Site B):
 
 - Define both the initiator and the receiver CFTPART partner definitions.
 - Set COMMUT=YES (default).
 
-**Configure the receiver**
+****Configure the receiver****
 
 Configure the following for the final receiver (Site C):
 
@@ -86,7 +86,7 @@ Configure the following for the final receiver (Site C):
 > C, then the command CFTTCP ID=ID\_C has no impact. Similarly, there is no need to set CFTTCP ID=ID\_A
 > for the final receiver C.
 
-**Intentional store and forward**
+********Intentional store and forward********
 
 ![](/Images/TransferCFT/Intentional_store_and_forward.gif)
 
@@ -96,13 +96,13 @@ Configure the following for the final receiver (Site C):
 
 Use the same conditions as indicated in the [Intentional STORE and FORWARD](#Intentional_Store_and_Forward)
 to establish the routing. For the store and forward site to be in VAN mode, you must additionally complete the store
-and forward parameters as follows: `CFTPART ID=ID_A,COMMUT=SERVER,...`
+and forward parameters as follows: CFTPART ID=ID\_A,COMMUT=SERVER,...
 
 The following descriptions correspond with the
 parameter setting example in the
 figure below.
 
-**Configure the sender**
+****Configure the sender****
 
 Configure the following for the initial sender (Site A):
 
@@ -110,18 +110,19 @@ Configure the following for the initial sender (Site A):
 - Define the first relay.
 - Make a reference to the first relay with IPART=&lt;relay> in the final receiver partner definition.
 
-**Configure the relay**
+****Configure the relay****
 
 Configure the following for the store and forward (Site B):
 
 - Define both the initiator and the receiver CFTPART partner definitions.
 - Set COMMUT=SERVER.
 - Define a procedure to execute and reference in the CFTPARM (in this example).
-    -   In the store and forward example below, the procedure identified by `myproc `
-        includes the following command on completion of processing: `CFTUTIL SEND PART= &RPART, SPART= &SPART, FNAME= &FNAME, IDF=   &IDF`
-    -   When the symbolic variables are replaced: `CFTUTIL SEND PART=ID_C,SPART=ID_A,FNAME=frecv, IDF=test`
+    -   In the store and forward example below, the procedure identified by myproc
+        includes the following command on completion of processing: CFTUTIL SEND **PART= &RPART**, **SPART= &SPART**, FNAME= &FNAME, IDF=
+        &IDF
+    -   When the symbolic variables are replaced: CFTUTIL SEND **PART=ID\_C**,**SPART=ID\_A**,FNAME=frecv, IDF=test
 
-**Configure the receiver**
+****Configure the receiver****
 
 Configure the following for the final receiver (Site C):
 
@@ -131,7 +132,7 @@ Configure the following for the final receiver (Site C):
 >
 > In the example, the receiver (C) configuration defines the sender (Site A) CFTPART with OMINTIME and OMAXTIME parameters equal to zero, and defines the relay (Site B) as the IPART, which enables acknowledgments from the receiver C to the sender A.
 
-**Intentional VAN store and forward**
+********Intentional VAN store and forward********
 
 ![](/Images/TransferCFT/Intentional_VAN_store_and_forward.gif)
 
@@ -147,11 +148,11 @@ The following descriptions correspond with the
 parameter setting example in the
 figure below.
 
-**Configure the sender**
+****Configure the sender****
 
 - Define the first relay (Intermediate Site 1).
 
-**Configure the first relay**
+****Configure the first relay****
 
 Configure the following for the store and forward Intermediate Site 1:
 
@@ -162,7 +163,7 @@ Configure the following for the store and forward Intermediate Site 1:
 
 - In the CFTPART for the sender site, make a reference to the second relay using the IPART=&lt;Site 2>.
 
-**Configure the second relay**
+****Configure the second relay****
 
 Configure the following for the store and forward Intermediate Site 2:
 
@@ -170,7 +171,7 @@ Configure the following for the store and forward Intermediate Site 2:
 - Set COMMUT=PART.
 - In the CFTPART for the first relay (Intermediate Site 1), make a reference to the final site.
 
-**Configure the final receiver**
+****Configure the final receiver****
 
 - Define the CFTPART partner definition for the second relay (Intermediate Site 2).
 
@@ -181,14 +182,15 @@ Configure the following for the store and forward Intermediate Site 2:
 - For the Intermediate Site 2 in the CFTPART ID=IDGWAY, set the IPART=IDDEP1, which refers to the Intermediate Site 1.
 - For the Intermediate Site 1 in the CFTPART ID=IDDEP, set the IPART=IDNAT1, which refers to the sender site.
 
-**Store and forward SEND command**
+****Store and forward SEND command****
 
 In the SEND command you must specify the final network partner (the NSPART of the final partner) as well as the ID of the first intermediate partner.
 
 ```
 CFTUTIL SEND PART=NFINAL, IPART=IDNAT, ...
 ```
-**Forced store and forward**
+
+********Forced store and forward********
 
 ![](/Images/TransferCFT/Forced_Store_and_forward.gif)
 

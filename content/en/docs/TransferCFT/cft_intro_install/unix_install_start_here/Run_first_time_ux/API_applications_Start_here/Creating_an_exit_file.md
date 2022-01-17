@@ -2,7 +2,7 @@
     "title": "Creating  an exit file",
     "linkTitle": "Creating an exit file",
     "weight": "220"
-}The example described in this topic was designed to operate using the **cft-tcp.conf** configuration example located in **&lt;installdir>/runtime/conf**.
+}The example described in this topic was designed to operate using the ****cft-tcp.conf**** configuration example located in ****&lt;installdir>/runtime/conf****.
 For this example, you should have already customized the
 file using the instructions in [*Running Transfer
 CFT for the First Time*]().
@@ -35,7 +35,7 @@ The *&lt;installdir>/runtime/src/exit/* subdirectory contains:
 The *&lt;installdir>/lib* subdirectory contains the:
 
 - *libcftexf.a*
-    module; this library allows you to use the {{< TransferCFT/componentshortname >}} file EXITs
+    module; this library allows you to use the Transfer CFT{{< TransferCFT/componentshortname >}} file EXITs
 
 To generate the sample CFTEXITF application, proceed as follows:
 
@@ -47,16 +47,32 @@ To generate the sample CFTEXITF application, proceed as follows:
 ## Testing the exit
 
 1. Access the *&lt;installdir>/runtime/conf/* directory.
-1. Generate the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> internal datafiles
-    using the *cftinit* utility with the configuration file:`cftinit cft-tcp.conf`
+
+1. Generate the Transfer CFT{{< TransferCFT/componentshortname >}} internal datafiles
+    using the *cftinit* utility with the configuration file:
+
+    `cftinit cft-tcp.conf`
+
 1. When the *cftinit complete*
-    message is displayed, run <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> using the cftstart utility:`cftstart`
+    message is displayed, run Transfer CFT{{< TransferCFT/componentshortname >}} using the cftstart utility:
+
+    `cftstart`
+
 1. When the *CFTMAIN process
-    ID is xxxxx* message is displayed, run a transfer using the command:`CFTUTIL send part=BOSTON, idf=fic1`
+    ID is xxxxx* message is displayed, run a transfer using the command:
+
+    `CFTUTIL send part=BOSTON, idf=fic1`
+
 1. After a few seconds, you can
-    check the transfer state by entering the following command. If the transfers have not terminated, repeat the *cftcatab* command.`cftcatab`
-1. Stop <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> using the *cftstop*
-    utility:`cftstop`
+    check the transfer state by entering the following command. If the transfers have not terminated, repeat the *cftcatab* command.
+
+    `cftcatab`
+
+1. Stop Transfer CFT{{< TransferCFT/componentshortname >}} using the *cftstop*
+    utility:
+
+    `cftstop`
+
 1. Examine the contents of the
     *cft\_log. sav* file in the *&lt;installdir>/runtime/log/* directory and locate the
     messages inserted by the EXIT.  

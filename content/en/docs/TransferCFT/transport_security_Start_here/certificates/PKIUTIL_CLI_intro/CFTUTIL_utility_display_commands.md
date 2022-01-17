@@ -39,7 +39,7 @@ SSL session.
 
 The following table contains comments on the new sections.
 
-**Section definitions for LISTCAT CONTENT=FULL**
+****Section definitions for LISTCAT CONTENT=FULL****
 
 
 | Section  | Description  |

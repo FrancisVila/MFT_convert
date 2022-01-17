@@ -34,10 +34,10 @@ The number of identifiers in this list is not limited. Build the file
 using the following rules:
 
 - a record of this
-    file can only contain one **idf**
+    file can only contain one idf
 - the size of the
     record is limited to 80 characters
-- an <span style="font-weight: bold;">idf</span>
+- an idf
     must start in the first column and only the first 32 characters of the
     record are taken into account
 - characters after
@@ -47,7 +47,7 @@ using the following rules:
 - the file can contain
     records of zero length
 
-You cannot complete this field if you have selected the <span style="font-weight: bold;">idf</span>
+You cannot complete this field if you have selected the idf
 button in the old Transfer CFT UI.
 
 <span id="fname_CFTCAT"></span>
@@ -66,7 +66,8 @@ Catalog file name. Service files, such as Catalog and Log. This name can be:
 
 #### CFTCOM, CFTFILE, CONFIG
 
-**\[FNAME = filename \]   {string 64}**
+****\[FNAME = filename \]   {string 64}****
+
 <span id="fname_CFTFILE"></span>
 
 #### 
@@ -75,14 +76,15 @@ Catalog file name. Service files, such as Catalog and Log. This name can be:
 
 #### COPYFILE
 
-**\[FNAME = filename \]   {string 512}**
+****\[FNAME = filename \]   {string 512}****
+
 <span id="fname_CFTDEST"></span>
 
 #### CFTDEST
 
-**\[FNAME = filename\]
+****\[FNAME = filename\]
  {512
-characters }**
+characters }****
 
 Name of the file in which the list of the identifiers of the various
 partners, each corresponding to one value of the ID parameter of a CFTPART
@@ -116,7 +118,7 @@ File example:
 
 ![Example file names for distribution list](/Images/TransferCFT/fname_dest_ex.png)
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> does not check the transfer requester access rights for this file.
+Transfer CFT{{< TransferCFT/componentshortname  >}} does not check the transfer requester access rights for this file.
 
 If FOR=COMMUT (broadcasting by a intermediate
 site):
@@ -170,22 +172,22 @@ You can define the filename either in the:
 | a group of concatenated files | a directory name |
 
 
-***When using the complete
-filename***
+*****When using the complete
+filename*****
 
 The complete path name includes the names of directories, or any other
 organization specific to the environment concerned, used to group files:
 library, catalog, PDSE, etc.
 
-Normally, the folder referenced in <span class="code">fname </span> parameter should exist or the transfer fails. However, depending on your environment, you may use a special character that can be set with the cft.char\_directory\_protect to implicitly create part of a path structure. An OS specific character delimits the path to be created (intermediate directories), where the names of the sub-directories appearing to the right of the character are created. Please see the uconf [char\_directory]() for more information.
+Normally, the folder referenced in fname parameter should exist or the transfer fails. However, depending on your environment, you may use a special character that can be set with the cft.char\_directory\_protect to implicitly create part of a path structure. An OS specific character delimits the path to be created (intermediate directories), where the names of the sub-directories appearing to the right of the character are created. Please see the uconf [char\_directory]() for more information.
 
 **Example**
 
-The tree structure is created after the plus special character (<span style="color: #b22222; font-weight: bold;">+</span>):
+The tree structure is created after the plus special character (+):
 
 `FNAME=’/home/cft/runtime/myapp/+user1/files/&idtu.rcv`
 
-In  this example, the `user1 `and <span class="code">files</span> folders are created if they did not already exist.
+In  this example, the `user1 `and files folders are created if they did not already exist.
 
 The filename may:
 
@@ -194,7 +196,7 @@ The filename may:
 - Correspond to the
     name of a file with versions (GDG for instance) *z/OS only*
 
-***Using symbolic variables***
+*****Using symbolic variables*****
 
 The following variables may be used to form the FNAME character string:
 
@@ -211,7 +213,7 @@ The following variables may be used to form the FNAME character string:
 - &NCHARSET,&FCHARSET
 
 The ‘&’ character here replaces the char\_symb character specific
-to each operating system. Refer to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> *Operations Guide*
+to each operating system. Refer to the Transfer CFT{{< TransferCFT/componentshortname  >}} *Operations Guide*
 corresponding to your OS.
 
 ```
@@ -230,7 +232,7 @@ The use of &NFNAME is only valid if the Transfer CFT is a receiver server.
 
 This variable is only used in the open mode.
 
-***Receiving a file with versions          ***
+*****Receiving a file with versions          *****
 
 **z/OS**
 
@@ -265,9 +267,9 @@ directory specified by FNAME.
 
 #### CFTSEND, SEND
 
-**\[FNAME = {filename | mask | dirname |
+****\[FNAME = {filename | mask | dirname |
 &lt;file-symb>filename | &lt;file-symb>mask | &lt;file-symb>dirname}\]    {string
-512} **
+512} ****
 
 > **Note**
 >
@@ -279,8 +281,9 @@ is 512 characters.
 
 When the parameter value is between quotes, it becomes case-sensitive; however on certain platforms, such as UNIX, the value is case-sentive without quotes.
 
-**Examples**
-**The following examples use a UNIX syntax, modify accordingly for your environment.**
+****Examples****
+
+****The following examples use a UNIX syntax, modify accordingly for your environment.****
 
 FNAME=filename where the FNAME is expressed as an absolute name:
 
@@ -288,7 +291,7 @@ FNAME=filename where the FNAME is expressed as an absolute name:
 FNAME= '/home/cft/runtime/pub/FTEST'
 ```
 
-<span class="code">FNAME = filename</span> where the FNAME is expressed in relative name from runtime folder:
+FNAME = filename where the FNAME is expressed in relative name from runtime folder:
 
 ```
 FNAME = 'pub/FTEST'

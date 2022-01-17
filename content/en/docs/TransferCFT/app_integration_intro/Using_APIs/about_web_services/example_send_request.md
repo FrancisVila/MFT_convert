@@ -2,7 +2,7 @@
     "title": "Example send file transfer request",
     "linkTitle": "Example send file request",
     "weight": "320"
-}This section describes how to execute a SEND transfer request using Web services. After submitting a request you can retrieve transfer processing information in the {{< TransferCFT/componentlongname  >}} catalog using a [Web services catalog search request](../example_search_catalog). Responses to SEND requests may differ depending on the type of COM media file that you are using (File or TCP).
+}This section describes how to execute a SEND transfer request using Web services. After submitting a request you can retrieve transfer processing information in the Transfer CFT{{< TransferCFT/componentlongname  >}} catalog using a [Web services catalog search request](../example_search_catalog). Responses to SEND requests may differ depending on the type of COM media file that you are using (File or TCP).
 
 ## XFER\_CMD\_SEND\_FILE request
 
@@ -40,7 +40,7 @@ This example request uses only the minimal number of options needed to submit th
 
 ## Successful response
 
-In the following successful response, you can see that the IDTU value CAT\_IDTU is returned. While the IDTU value CAT\_IDTU indicates that the request is correctly delivered to {{< TransferCFT/componentlongname  >}}, you do not know the transfer status. To obtain the transfer status, see the section describing how to use the [XFER\_CAT\_SELECT](../example_search_catalog) function to view the catalog.
+In the following successful response, you can see that the IDTU value CAT\_IDTU is returned. While the IDTU value CAT\_IDTU indicates that the request is correctly delivered to Transfer CFT{{< TransferCFT/componentlongname  >}}, you do not know the transfer status. To obtain the transfer status, see the section describing how to use the [XFER\_CAT\_SELECT](../example_search_catalog) function to view the catalog.
 
 &lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
@@ -68,9 +68,9 @@ In the following successful response, you can see that the IDTU value CAT\_IDTU 
 
 The request response differs depending on if Transfer CFT is running, and if the Transfer CFT Copilot server is started, as described in the following sections.
 
-### {{< TransferCFT/componentlongname  >}} is down
+### Transfer CFT{{< TransferCFT/componentlongname  >}} is down
 
-An error message (unsuccessful response) is displayed if Copilot is running, but {{< TransferCFT/componentlongname  >}} is down. The following two examples demonstrate the different responses depending on the COM media type being used.
+An error message (unsuccessful response) is displayed if Copilot is running, but Transfer CFT{{< TransferCFT/componentlongname  >}} is down. The following two examples demonstrate the different responses depending on the COM media type being used.
 
 #### Using the TCP media type
 
@@ -122,6 +122,6 @@ In this scenario no IDTU value is displayed because the request is not immediate
 
 If Copilot is down you get a "connection refused" type of error, regardless of whether Transfer CFT is running or not.
 
-**Related topics**
+****Related topics****
 
 [Get started with Web services](../get_started_web_services)

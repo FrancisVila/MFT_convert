@@ -2,25 +2,25 @@
     "title": "IBM i: Installation and Operation",
     "linkTitle": "Installation and operation IBM i",
     "weight": "120"
-}This documentation provides information to aide you in installing, updating, upgrading, or migrating {{< TransferCFT/componentshortname  >}}.
+}This documentation provides information to aide you in installing, updating, upgrading, or migrating Transfer CFT{{< TransferCFT/componentshortname  >}}.
 
 For more information on Axway products, visit [www.axway.com](https://www.axway.com/en).
 
 ## Installation guide outline
 
-This guide explains how to perform a full installation of {{< TransferCFT/componentlongname  >}}. It also describes how to:
+This guide explains how to perform a full installation of Transfer CFT{{< TransferCFT/componentlongname  >}}. It also describes how to:
 
 **Prepare and plan your installation** – Describes what you should plan for deploying and configuring your system architecture, installing any prerequisite software, and configuring other components.
 
 **Install** – Describes how to perform a complete install as well as apply a service pack.
 
-**Post installation** – Provides instructions on how to check if the installation was successful and set up {{< TransferCFT/componentshortname  >}}. Additionally it describes any tasks to perform before the administrator can log on to the product for initial configuration.
+**Post installation** – Provides instructions on how to check if the installation was successful and set up Transfer CFT{{< TransferCFT/componentshortname  >}}. Additionally it describes any tasks to perform before the administrator can log on to the product for initial configuration.
 
 **Upgrade** – Involves a change in product version and the replacement of binary artifacts; may also require configuration change.
 
-**Migrate**– Involves a change in product versions, such as from 2.7.1 to {{< TransferCFT/componentversion  >}}. As part of this process, the existing configuration may need to be modified or updated to be compatible with the new version. For example, you may need to modify configuration files or the internal datafile schema. Because migration can be a complex process, organizations typically set up a migration project to study the new features and determine the impact on the existing configuration, and to plan for the changes across the various environments.
+**Migrate**– Involves a change in product versions, such as from 2.7.1 to 3.9{{< TransferCFT/componentversion  >}}. As part of this process, the existing configuration may need to be modified or updated to be compatible with the new version. For example, you may need to modify configuration files or the internal datafile schema. Because migration can be a complex process, organizations typically set up a migration project to study the new features and determine the impact on the existing configuration, and to plan for the changes across the various environments.
 
-**Uninstall** – Describes how you can uninstall {{< TransferCFT/componentshortname  >}}.
+**Uninstall** – Describes how you can uninstall Transfer CFT{{< TransferCFT/componentshortname  >}}.
 
 **Troubleshoot the installation or registration process** – Describes the different types of troubleshooting errors you can encounter during installation, upgrade and post-installation.
 
@@ -30,7 +30,7 @@ This document may contain references to iSeries or OS/400 both of which refer to
 
 ## Who should read this guide
 
-This guide is intended for enterprise personnel involved in installing software and Axway Professional Services personnel. Familiarity with {{< TransferCFT/platformorsuiteshortname  >}} products is recommended.
+This guide is intended for enterprise personnel involved in installing software and Axway Professional Services personnel. Familiarity with AMPLIFY{{< TransferCFT/platformorsuiteshortname  >}} products is recommended.
 
 This guide presumes you have knowledge of:
 
@@ -40,13 +40,13 @@ This guide presumes you have knowledge of:
 
 Others who may find parts of this guide useful include network or systems administrators and other technical or business users.
 
-## {{< TransferCFT/transfercftname  >}} documentation set
+## Transfer CFT{{< TransferCFT/transfercftname  >}} documentation set
 
 Transfer CFT provides a complete set of documentation, covering all aspects of using the product. These documents include the following:
 
-- {{< TransferCFT/componentshortname >}} Release Notes
-- {{< TransferCFT/platformorsuitelongname >}} Supported Platforms Guide
+- Transfer CFT{{< TransferCFT/componentshortname >}} 3.9 Release Notes
+- AMPLIFY{{< TransferCFT/platformorsuitelongname >}} Supported Platforms Guide
 
 ## Support services
 
-The {{< TransferCFT/companyname  >}} Global Support team provides worldwide 24 x 7 support, subject to validation of your license agreement. Email <support@axway.com> or, for your local support telephone number, visit [support.axway.com](https://support.axway.com/) and click **Contact Axway Support**.
+The Axway{{< TransferCFT/companyname  >}} Global Support team provides worldwide 24 x 7 support, subject to validation of your license agreement. Email <support@axway.com> or, for your local support telephone number, visit [support.axway.com](https://support.axway.com/) and click **Contact Axway Support**.

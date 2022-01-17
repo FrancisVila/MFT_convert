@@ -8,7 +8,7 @@
 
 Use the JCL INSTALL(CFTCATDY). There is no need to stop Transfer CFT or Copilot prior to performing this action. Check the recommendations provided in the CFTCATDY JCL.
 
-Modify the `recnb `parameter (the new number of records), in the `reconfig `command, to the new target catalog size.
+Modify the recnb parameter (the new number of records), in the reconfig command, to the new target catalog size.
 
 For more general information on expanding the catalog, you can refer to the section *Housekeeping for catalog and output files* in the *Transfer CFT User Guide.*
 
@@ -50,7 +50,7 @@ For more general information on expanding the catalog, you can refer to the sect
 
 If you are using a multi-node architecture, use this static mode procedure.
 
-1. Stop all {{< TransferCFT/componentlongname >}} nodes and all Copilot servers if not already done.
+1. Stop all Transfer CFT{{< TransferCFT/componentlongname >}} nodes and all Copilot servers if not already done.
 1. Save the CATALOG files.
 1. Modify the JCL INSTALL(CFTCATAL):
 

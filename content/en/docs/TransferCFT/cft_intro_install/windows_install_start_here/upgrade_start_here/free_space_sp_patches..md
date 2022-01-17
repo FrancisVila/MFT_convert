@@ -9,13 +9,14 @@
 Use the purge command followed by the appropriate options to removed accumulated backups of installed Transfer CFT updates.  
 
 1. Navigate to the Transfer CFT installation directory.  
-1. Run the `purge `command as described in the following sections.``
+1. Run the purge command as described in the following sections.
 
-**Syntax**
+****Syntax****
+
 `purge [-h | --help] | [-k | --keep] [number]  [-p | --pretend]`
 
-- UNIX:` purge.sh`
-- Windows: `purge64.exe `or `purge32.exe` (from a command line window)  
+- UNIX: purge.sh
+- Windows: purge64.exe or purge32.exe (from a command line window)  
 
 Where:  
 
@@ -23,8 +24,8 @@ Where:
 - \[-k | --keep\] \[number\]: Specifies the number of updates that should be kept.
 - \[-p | --pretend\]: Previews the action to be done.  
 
-**Examples  
-**
+****Examples  
+****
 
 Keep only the last backup, meaning you can remove the current patch or SP.
 
@@ -42,7 +43,8 @@ Remove all backups, meaning that you cannot remove the current patch or SP.
 
 - \[-d | --debug\]: Generates debug information in the log file.
 
-**Example**
+****Example****
+
 ```
 <Transfer_CFT_install_dir>/purge.sh -k 1 -d
 ```

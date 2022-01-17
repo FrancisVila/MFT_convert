@@ -61,27 +61,27 @@ two messages:
 
 #### LISTCAT
 
-**\[CONTENT = { <u>BRIEF</u>
-| FULL | DEBUG | COMMUT | EXTEND | | BLKNUM} \]**
+****\[CONTENT = { <u>BRIEF</u>
+| FULL | DEBUG | COMMUT | EXTEND | | BLKNUM} \]****
 
 Used to obtain part or all of the information of a catalog entry.
 
 The possible values are:
 
-- **BRIEF**: Displays the most basic, essential information
+- BRIEF: Displays the most basic, essential information
     concerning the selected transfers with one line per transfer
-- <span style="font-weight: bold;">EXTEND</span>: Displays information concerning
+- EXTEND: Displays information concerning
     security, exits and end-of-transfer procedures, as well as the BRIEF type
     information with one line per transfer
 - **COMMUT**: Displays a sort of BRIEF output, but contains some network-oriented details
-- <span style="font-weight: bold;">FULL</span>: Displays complete information concerning
+- FULL: Displays complete information concerning
     each transfer
-- <span style="font-weight: bold;">DEBUG</span>: Displays the most complete output with additional information beyond the FULL content
+- DEBUG: Displays the most complete output with additional information beyond the FULL content
 - **BLKNUM**: Displays the same information as BRIEF, but the **Appli id** and **Appstate** columns are replaced by the **blknum** column
 
 #### LISTCOM
 
-**\[CONTENT = {<span style="text-decoration: underline;"> ACTIVE</span> |
+**\[CONTENT = { ACTIVE |
 FULL }\]**
 
 Used to obtain part or all of the
@@ -90,7 +90,7 @@ information of a catalog entry.
 - ACTIVE: Displays only communication records that are not empty
 - FULL: Displays all communication records
 
-**Example**
+****Example****
 
 ```
 LISTCOM CONTENT =FULL
@@ -116,8 +116,8 @@ information.
 
 #### CFTEXT
 
-**\[CONTENT =
-{<u>FULL</u> | BRIEF}\]**
+****\[CONTENT =
+{<u>FULL</u> | BRIEF}\]****
 
 Level of content included in output:
 
@@ -127,7 +127,7 @@ Level of content included in output:
 #### MQUERY (OBJECT=CACHE or SYSTEM)
 
 **\[CONTENT =
-{ <span style="text-decoration: underline;">BRIEF</span>
+{ BRIEF
 | FULL | STAT } \]**
 
 Used to obtain part or all of the
@@ -136,7 +136,7 @@ information.
 #### MQUERY (OBJECT=PROBE or STATS)
 
 **\[CONTENT =
-{ <span style="text-decoration: underline;">XMLBRIEF</span>
+{ XMLBRIEF
 | XMLFULL | RAW } \]**
 
 Used to obtain part or all of the
@@ -149,7 +149,7 @@ listcat\]**
 
 #### LISTUCONF, UCONFGET
 
-****\[CONTENT= { BRIEF | FULL | EXTRACT | DEBUG | PROPS }\]****
+******\[CONTENT= { BRIEF | FULL | EXTRACT | DEBUG | PROPS }\]******
 
 Indicates the amount of information to display. Here, the options are listed in order of increasing details that are displayed.
 

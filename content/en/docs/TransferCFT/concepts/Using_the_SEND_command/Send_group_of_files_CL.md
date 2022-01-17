@@ -41,11 +41,14 @@ For a file called REPORTS containing the following list:
 - file2
 - file3
 
-**Windows**
+****Windows****
+
 ```
 CFTUTIL SEND part=tokyo, idf=myfiles, fname=#REPORTS
 ```
-**UNIX**
+
+****UNIX****
+
 ```
 CFTUTIL SEND part=tokyo, idf=myfiles, fname=@REPORTS
 ```
@@ -65,15 +68,15 @@ If there are N files to be sent, a SEND IDF = ID\_EM, FNAME = #GROUP (or @GROUP)
     entry, which never triggers an actual transfer but is used locally to
     manage the group of files to be sent
     -   This virtual transfer is identified by a DIAGP code set to LIST\_FI,
-        when the catalog is queried. Its state is immediately set to **K**
+        when the catalog is queried. Its state is immediately set to K
         in the catalog.
-    -   The generic entry is set to the <span style="font-weight: bold;">T</span>
-        or **X** state when all transfers have been set to <span style="font-weight: bold;">**T** </span>state (or **X** depending on the mode).
+    -   The generic entry is set to the T
+        or **X** state when all transfers have been set to **T** state (or **X** depending on the mode).
     -   The post-processing procedure is activated when all files in
-        the group have been transferred (LIST\_FI entry set to the <span style="font-weight: bold;">T</span>
+        the group have been transferred (LIST\_FI entry set to the T
         or **X** state, depending on the mode).
     -   If the group file does not exist or cannot be opened, the generic entry
-        remains set to the <span style="font-weight: bold;">K</span> state and
+        remains set to the K state and
         error message CFTT34E is returned.
     -   If one of the files in the group cannot be sent (for example an unknown file), the other transfers are not affected,
         but the generic entry for the group is not set to the **T** state (or **X** depending on the mode).
@@ -96,7 +99,7 @@ For the receiver:
 
 IBM i (OS/400)
 
-If your file contains the list of files to be sent, you must first create a REPORTS file in \*DATA format (\*SRC files contain a header and <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> cannot use these).
+If your file contains the list of files to be sent, you must first create a REPORTS file in \*DATA format (\*SRC files contain a header and Transfer CFT{{< TransferCFT/componentlongname  >}} cannot use these).
 
 For example:
 
@@ -186,13 +189,15 @@ A heterogeneous send occurs between two Transfer CFT that run on dissimilar oper
 systems. This type of group file transfer triggers the transfer
 of all files belonging to the group.
 
-**General syntax**
+****General syntax****
+
 `Windows: fname =#directory\* `
+
 `Unix: fname =@directory/* `
 
 #### Force heterogeneous mode for a group of files
 
-In <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> both homogeneous and heterogeneous mode are enabled by default. However, you may want to ensure that groups of files are transferred using only the heterogeneous mode. The UCONF configuration parameter<span class="code"> cft.server.force\_heterogeneous\_mode</span> allows you to do this, effectively disabling homogeneous mode even if the partner is configured for homogeneous exchanges.
+In Transfer CFT{{< TransferCFT/componentshortname  >}} both homogeneous and heterogeneous mode are enabled by default. However, you may want to ensure that groups of files are transferred using only the heterogeneous mode. The UCONF configuration parameter cft.server.force\_heterogeneous\_mode allows you to do this, effectively disabling homogeneous mode even if the partner is configured for homogeneous exchanges.
 
 For more information on sending groups of files and heterogeneous mode exchanges, see <a href="#" class="selected">Sending a group of files</a>.
 
@@ -201,7 +206,7 @@ To force heterogeneous mode:
 1. Access the unified configuration utility using either [command line](../../../admin_intro/uconf/uconf_w_cftutil) or the UI.
 1. Set the following parameter to enable forced heterogeneous exchanges for group file transfers.
 
-**Unix/Windows**
+****Unix/Windows****
 
 
 | Parameter  | Default  | Description  |
@@ -252,9 +257,10 @@ catalog entry has been deleted.
 The file attributes defined for the transfer (CFTRECV or RECV command)
 apply to the copied/concatenated WFNAME file.
 
-**<span class="autonumber"></span>**Sending to a remote site****
-**<span class="autonumber"></span>
-![](/Images/TransferCFT/send_to_remote_site.png)**
+**********Sending to a remote site**********
+
+********![](/Images/TransferCFT/send_to_remote_site.png)********
+
 <span id="Heterogeneous send"></span>
 
 #### Sending to a remote site with a different operating system in heterogeneous mode
@@ -281,17 +287,18 @@ On
 the receiver side, one transfer entry is created for each file
 received.
 
-For operating reasons, the receiving <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> may wish to archive each
+For operating reasons, the receiving Transfer CFT{{< TransferCFT/componentlongname  >}} may wish to archive each
 file received using a name derived from that of the sender site. The following
-paragraphs explain how the sending <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> can send the name of each file
+paragraphs explain how the sending Transfer CFT{{< TransferCFT/componentlongname  >}} can send the name of each file
 transferred to the partner via a generic request.
 
-A receiving <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> can specify the name of each file received via the
+A receiving Transfer CFT{{< TransferCFT/componentlongname  >}} can specify the name of each file received via the
 &FROOT, &FPATH and &FSUF symbolic variables.
 
-**Sending to a remote site with a different
-operating system**
-**![](/Images/TransferCFT/new_group_files.png)**
+****Sending to a remote site with a different
+operating system****
+
+****![](/Images/TransferCFT/new_group_files.png)****
 
 Example
 

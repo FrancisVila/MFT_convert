@@ -10,7 +10,7 @@
 
 #### CFTPARM
 
-**\[EXECRF = filename\]     {string 64}**
+****\[EXECRF = filename\]     {string 64}****
 
 Generic name of the file describing the procedures to be executed on
 completion of the reception of a file.
@@ -26,7 +26,7 @@ This name may include the following symbolic variables:
 - &NIDF
 
 The character ‘&’ designates the char\_symb character defined in
-the {{< TransferCFT/componentshortname  >}} *Operations Guide* corresponding to your OS.
+the Transfer CFT{{< TransferCFT/componentshortname  >}} *Operations Guide* corresponding to your OS.
 
 > **Note**
 >

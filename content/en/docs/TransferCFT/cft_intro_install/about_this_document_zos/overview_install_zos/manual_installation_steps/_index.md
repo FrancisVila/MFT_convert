@@ -51,8 +51,8 @@ After performing Steps 1 -4, you can either continue with the following step-by-
 | 13  | <a href="t_configure_optional_features_zos#Create%20a%20Transfer%20CFT%20PKI%20file%C2%A0D43PKI">D43PKI</a><br/> <a href="t_configure_optional_features_zos#Connect%20with%20PassPort%C2%A0D44PASS">D44PASS</a><br/> <a href="t_configure_optional_features_zos">D47SYST</a> | Select one of the options listed for Step 12:<br/> • D43PKI: Create internal datafile for PKI data<br/> • D44PASS: Declare link to PassPort server<br/> • D47SYST: Enable use of system PKI |
 | 14  | <a href="t_install_sentinel_zos">SN05CONF</a> | <a href="t_install_sentinel_zos">Customize Sentinel</a> configuration file |
 | 15  | CFTHEART  | Activate Transfer CFT Heartbeats for Sentinel Dashboards  |
-| 16  | CFTCGREG  | Register {{< TransferCFT/transfercftname  >}} with  |
-| 17  | CFTCGPKI  | Used to register {{< TransferCFT/transfercftname  >}} with  |
+| 16  | CFTCGREG  | Register Transfer CFT{{< TransferCFT/transfercftname  >}} with Central Governance  |
+| 17  | CFTCGPKI  | Used to register Transfer CFT{{< TransferCFT/transfercftname  >}} with Central Governance  |
 | 18  | XSRRUN  | Launches the Java virtual machine (JVM).<br/> <blockquote> **Note**<br/> Customize JOB card.<br/> </blockquote>  |
 | 19  | XSRA010  | Install files for the Secure Relay Master Agent on the USS environment.  |
 | 20  | XSRA015  | Create the Runtime directory for the Transfer CFT Secure Relay Master Agent.  |
@@ -140,7 +140,8 @@ You can use the JCL COPA010 to set up the Transfer CFT Copilot files in USS.
 Mounted on Filesystem Avail/Total Files Status
 /home/AXWAY (xxxxxx.yyyyy.HFSAXWAY) 235680/1872000 4294927912 Available
 ```
-**Related topics**
+
+****Related topics****
 
 - [Create a Transfer CFT instance](../distribution_environment_installation/t_install_instance_envr_zos)
 - [Customize the JCL installation files](../installation_parameters_to_customize)

@@ -4,9 +4,10 @@
     "weight": "190"
 }T**he supported operating systems are listed in the** [Platform features](../../../datasheet) **table.**
 
-## {{< TransferCFT/transfercftname  >}} acting as a SFTP client
+## Transfer CFT{{< TransferCFT/transfercftname  >}} acting as a SFTP client
 
-**Put command**
+****Put command****
+
 ```
 CFTPART id=app1,nspart=login,nspassw=passw,prot=sftp,...
 CFTTCP id=app1,host=host
@@ -19,22 +20,29 @@ The equivalent command for SFTP on Linux:
 sftp login@host
 sftp> put localfiletosend remotefile
 ```
-**Get command**
+
+****Get command****
+
 ```
 recv part=app1, idf=flow01, fname=localfiletowrite, nfname=remotefile
  
 The equivalent command for SFTP:
 sftp> get remotefile localfiletowrite
 ```
-**Mput command**
+
+****Mput command****
+
 ```
 send part=app1,idf=groupoffiles,fname=(@/#)file\*
  
 The equivalent command for SFTP:
 sftp> mput file\*
 ```
-**Mget command**
-**The {{< TransferCFT/componentlongname  >}} server must be using open mode.**
+
+****Mget command****
+
+****The Transfer CFT{{< TransferCFT/componentlongname  >}} server must be using open mode.****
+
 ```
 recv part=app1,idf=groupoffiles,nfname=(@/#)file\*,file=all
  
@@ -44,53 +52,64 @@ sftp> mget file\*
 
 ## Transfer CFT client with a Transfer CFT server
 
-This example sends an acknowledgment following a file transfer (`cft_flow` in the example).
+This example sends an acknowledgment following a file transfer (cft\_flow in the example).
 
-**On the Transfer CFT 1**
+****On the Transfer CFT 1****
+
 ```
 CFTPART ID=CFT_2_SFTP,nspart="cft_1_sftp",nspassw=cft_1_sftp,nrpart="cft_2_sftp",nrpassw=cft_2_sftp,sap=<CFT_2_SFTP_PORT>,prot=SFTP
 CFTTCP ID=CFT_2_SFTP,host=<CFT_2_HOST>
 ```
-**On {{< TransferCFT/componentlongname  >}} 2**
+
+****On Transfer CFT{{< TransferCFT/componentlongname  >}} 2****
+
 ```
 CFTPART ID=CFT_1_SFTP,nspart="cft_2_sftp",nspassw=cft_2_sftp,nrpart="cft_1_sftp",nrpassw=cft_1_sftp,sap=<CFT_1_SFTP_PORT>,prot=SFTP
 CFTTCP ID=CFT_1_SFTP,host=<CFT_1_HOST>
 ```
-**Execute the send on Transfer CFT 1**
+
+****Execute the send on Transfer CFT 1****
+
 ```
 send part=CFT_2_SFTP,idf=**cft_flow**,fname=localfiletosend,nfname=remotefile
 ```
-**Execute the acknowledgment from Transfer CFT 2**
+
+****Execute the acknowledgment from Transfer CFT 2****
+
 ```
 send part=CFT_1_SFTP,idm=cft_ack,type=reply, msg=completed, idt=&idt(of the **cft_flow**)
 ```
 
 ### Transfer CFT requester downloading multiple files
 
-This example demonstrates receiving multiple files from a Transfer CFT SFTP server and is the equivalent of an `mget file*`.
+This example demonstrates receiving multiple files from a Transfer CFT SFTP server and is the equivalent of an mget file\*.
 
-**On the Transfer CFT server**
+****On the Transfer CFT server****
 
 If you do not define the workingdir, the default value is the runtime directory.
 
 ```
 cftsend id=groupoffiles,impl=yes,fname=&nfname
 ```
-**On {{< TransferCFT/componentlongname  >}} requester**
+
+****On Transfer CFT{{< TransferCFT/componentlongname  >}} requester****
+
 ```
 recv part=app1,idf=groupoffiles,nfname=(@/#)test/file\*,file=all
 ```
 
-This results in downloading all remote files in the `test `folder with the path relative to the workingdir.
+This results in downloading all remote files in the test folder with the path relative to the workingdir.
 
 ## Transfer CFT client with a SecureTransport server
 
-**On the Transfer CFT side**
+****On the Transfer CFT side****
+
 ```
 CFTPART ID=ST_SFTP,nspart="st_sftp",nspassw=st_sftp,sap=<ST_SFTP_PORT>,prot=SFTP
 CFTTCP ID=ST_SFTP,host=<ST_HOST>
 ```
-**On the SecureTransport**
+
+****On the SecureTransport****
 
 Server Control: the SSH server is running with **Enable Secure File Transfer Protocol (SFTP)**
 
@@ -98,7 +117,7 @@ Server Control: the SSH server is running with **Enable Secure File Transfer Pro
 Port=<ST_SFTP_PORT>
 ```
 
-Accounts: the Account Name is `st_sftp Active` with the Login `Name=st_sftp` and `Password=st_sftp`
+Accounts: the Account Name is st\_sftp Active with the Login Name=st\_sftp and Password=st\_sftp
 
 ```
 send part=ST_SFTP,idf=st_flow,fname=localfiletosend,nfname=remotefile
@@ -108,7 +127,8 @@ send part=ST_SFTP,idf=st_flow,fname=localfiletosend,nfname=remotefile
 
 In this use case, the clients are using the key authentication method where the key is different for each client. This requires a separate partner definition and dedicated SSH profile for each user.
 
-**On the Transfer CFT server side**
+****On the Transfer CFT server side****
+
 ```
 For each user define a CFTPART (in this example there are two users USER1 and USER2) as follows:
  
@@ -127,26 +147,27 @@ PKIUTIL PKIKEY ID=USER1_PUB, IKNAME=USER1_PUB.KEY, IKFORM=SSH
 PKIUTIL PKIKEY ID=USER2_PUB, IKNAME=USER2_PUB.KEY, IKFORM=SSH
  
 ```
-**For each of the various clients**
+
+****For each of the various clients****
 
 The client must log in as USER1 or USER2, in this example, and provide the corresponding private key as required for server connection.
 
-## {{< TransferCFT/componentlongname  >}} transcoding when using
+## Transfer CFT{{< TransferCFT/componentlongname  >}} transcoding when using Central Governance
 
-This example uses two {{< TransferCFT/componentlongname  >}} applications in , where the Source application is a UNIX machine and the Target is a z/OS system. On these applications, navigate to the indicated sections in the flow definition and define the following parameters to enable the transcoding.
+This example uses two Transfer CFT{{< TransferCFT/componentlongname  >}} applications in Central Governance, where the Source application is a UNIX machine and the Target is a z/OS system. On these applications, navigate to the indicated sections in the flow definition and define the following parameters to enable the transcoding.
 
-**On the Source**
+****On the Source****
 
 *File properties &gt; File encoding* &gt; File Type= Text , Encoding = ASCII , Transcoding = EBCDIC
 
-**In the SFTP protocol**
+****In the SFTP protocol****
 
 *SFTP properties &gt;* Transfer mode = ASCII
 
-**On the Target**
+****On the Target****
 
 *File properties &gt; File encoding* &gt; File Type= Text , Encoding = EBCDIC , Transcoding = EBCDIC
 
-**Related topics**
+****Related topics****
 
 [CFTSSH - Security profile](../../../c_intro_userinterfaces/web_copilot_ui/cftssl/cftssh)

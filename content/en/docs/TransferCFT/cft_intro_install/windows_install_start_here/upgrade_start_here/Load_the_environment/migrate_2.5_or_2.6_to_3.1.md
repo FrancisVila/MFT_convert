@@ -2,7 +2,7 @@
     "title": "Migrate from Transfer CFT 2.5 or 2.6 to 3.9",
     "linkTitle": "Migrate from Transfer CFT 2.5 or 2.6.x",
     "weight": "250"
-}This topic describes how to migrate Transfer CFT 2.5 or 2.6 to version {{< TransferCFT/componentversion  >}}. Before starting this migration procedure, review the prerequisites and information on [loading the environment](../../../../unix_install_start_here/upgrade_start_here/load_the_environment). Additionally, you must have installed your new {{< TransferCFT/componentshortname  >}} {{< TransferCFT/releasenumber  >}} and applied the most recent service pack.
+}This topic describes how to migrate Transfer CFT 2.5 or 2.6 to version 3.9{{< TransferCFT/componentversion  >}}. Before starting this migration procedure, review the prerequisites and information on [loading the environment](../../../../unix_install_start_here/upgrade_start_here/load_the_environment). Additionally, you must have installed your new Transfer CFT{{< TransferCFT/componentshortname  >}} 3.9{{< TransferCFT/releasenumber  >}} and applied the most recent service pack.
 
 ## Migrate the configuration
 
@@ -17,18 +17,18 @@ Migrate PARM, PART, IDF and other static configuration objects.
 1. Export your static configuration objects using the command CFTUTIL CFTEXT. Enter:
 
 ```
-`CFTUTIL CFTEXT type=all, fout=cft-extract.conf`
+CFTUTIL CFTEXT type=all, fout=cft-extract.conf
 ```
 
-1. Open the extract configuration files, cft-extract.conf, and update the file paths with those of the new Transfer CFT {{< TransferCFT/componentversion >}} installation.
+1. Open the extract configuration files, cft-extract.conf, and update the file paths with those of the new Transfer CFT 3.9{{< TransferCFT/componentversion >}} installation.
 
 <!-- -->
 
-1. Load the new Transfer CFT {{< TransferCFT/componentversion >}} environment.
+1. Load the new Transfer CFT 3.9{{< TransferCFT/componentversion >}} environment.
 
 <!-- -->
 
-1. Stop {{< TransferCFT/hflongproductname >}} if you have not already done so.
+1. Stop Transfer CFT{{< TransferCFT/hflongproductname >}} if you have not already done so.
 1. Import your static configuration objects using the cftinit command.  
     Enter:
 
@@ -42,19 +42,19 @@ cftinit cft-extract.conf
 
 <!-- -->
 
-1. Display your UCONF parameters using the CFTUTIL LISTUCONF command. Enter: `CFTUTIL LISTUCONF scope=user`
+1. Display your UCONF parameters using the CFTUTIL LISTUCONF command. Enter: CFTUTIL LISTUCONF scope=user
 
 <!-- -->
 
-1. Select the UCONF parameters that you want to import into the new Transfer CFT {{< TransferCFT/componentversion >}}.
+1. Select the UCONF parameters that you want to import into the new Transfer CFT 3.9{{< TransferCFT/componentversion >}}.
 
 <!-- -->
 
 1. Create a script file such as:
 
-- UNIX: `uconf-import.sh`
+- UNIX: uconf-import.sh
 
-- Windows: `uconf-import.bat`
+- Windows: uconf-import.bat
 
 1. For each parameter you select, add a line to the new script file in the format:
 
@@ -62,7 +62,7 @@ cftinit cft-extract.conf
 UCONFSET id=<parameter_id>, value=<value>
 ```
 
-1. Load the new Transfer CFT {{< TransferCFT/componentversion >}} environment.
+1. Load the new Transfer CFT 3.9{{< TransferCFT/componentversion >}} environment.
 
 <!-- -->
 
@@ -70,10 +70,11 @@ UCONFSET id=<parameter_id>, value=<value>
 
 ```
 
-`CFTUTIL <prefix_character><script_filename>`
+CFTUTIL <prefix_character><script_filename>
 
 ```
-**Example**
+
+****Example****
 
 - UNIX: CFTUTIL @uconf-import.sh
 
@@ -89,29 +90,29 @@ For Transfer CFT 2.5, you must be at Transfer CFT 2.5.1 SP2 or higher before per
 
 <!-- -->
 
-1. Export your PKI certificates using the command PKIUTIL PKIEXT: `PKIUTIL PKIEXT fout=pki-extract.conf`
+1. Export your PKI certificates using the command PKIUTIL PKIEXT: PKIUTIL PKIEXT fout=pki-extract.conf
 
 <!-- -->
 
-1. Load the new Transfer CFT {{< TransferCFT/componentversion >}} environment.
+1. Load the new Transfer CFT 3.9{{< TransferCFT/componentversion >}} environment.
 
 <!-- -->
 
-1. Create a new PKI internal datafile using the command PKIUTIL PKIFILE. Replace &lt;pki\_database\_filename> with the appropriate value: `PKIUTIL PKIFILE fname=<pki_database_filename>, mode='CREATE’`
+1. Create a new PKI internal datafile using the command PKIUTIL PKIFILE. Replace &lt;pki\_database\_filename> with the appropriate value: PKIUTIL PKIFILE fname=&lt;pki\_database\_filename>, mode='CREATE’
 
 - UNIX: $CFTPKU
 
 - Windows: The absolute path value for the CFTPKU environment variable
 
-1. Import your PKI certificates into the new Transfer CFT {{< TransferCFT/componentversion >}} using the command PKIUTIL. Replace the &lt;script\_filename> with the new script file path: `PKIUTIL <prefix_character><script_filename>`
+1. Import your PKI certificates into the new Transfer CFT 3.9{{< TransferCFT/componentversion >}} using the command PKIUTIL. Replace the &lt;script\_filename> with the new script file path: PKIUTIL &lt;prefix\_character>&lt;script\_filename>
 
-**Example**
+****Example****
 
-- UNIX: `PKIUTIL @pki-extract.conf`
+- UNIX: PKIUTIL @pki-extract.conf
 
 <!-- -->
 
-- Windows: `PKIUTIL #pki-extract.conf`
+- Windows: PKIUTIL #pki-extract.conf
 
 ## Migrating the runtime environment
 
@@ -127,7 +128,7 @@ For Transfer CFT 2.5, you must be at Transfer CFT 2.5.1 SP2 or higher before per
 CFTMI240 MIGR type=CAT, direct=FROMCAT, ifname=<catalog_2.5_filename>, ofname=catalog_output.xml
 ```
 
-1. Load the new Transfer CFT {{< TransferCFT/componentversion >}} environment.
+1. Load the new Transfer CFT 3.9{{< TransferCFT/componentversion >}} environment.
 
 <!-- -->
 
@@ -154,17 +155,17 @@ CFTMI MIGR type=CAT, direct=TOCAT, ifname=catalog_output.xml, ofname=<catalog_fi
 CFTMI240 MIGR type=COM, direct=FROMCOM, ifname=<com_2.5_filename>, ofname=com_output.xml
 ```
 
-1. Load the new Transfer CFT {{< TransferCFT/componentversion >}} environment.
+1. Load the new Transfer CFT 3.9{{< TransferCFT/componentversion >}} environment.
 
 <!-- -->
 
 1. Import the communication media file using command CFTMI. Replace the &lt;com\_filename\_new\_installation> with the corresponding environment variable:
 
-- UNIX: `_CFTCOM`
+- UNIX: \_CFTCOM
 
 <!-- -->
 
-- Windows: `$CFTCOM`
+- Windows: $CFTCOM
 
 Example
 

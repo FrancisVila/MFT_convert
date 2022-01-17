@@ -4,7 +4,7 @@
     "weight": "3270"
 }<span id="srchost"></span>
 
-### 
+### srchost
 
 #### CFTNET
 
@@ -14,15 +14,15 @@ This parameter is used only for outgoing calls on a resource. If
 the value, either the local hostname or IP address, is assigned then that value is used
 to select the interface on which the outgoing call will occur.
 
-**Example**:
+Example:
 
 CFTPROT ID = PANY, SAP
 = 1761....NET=ANY
 
-<span style="font-family: 'Courier New', monospace;">CFTNET ID=ANY,
-HOST = INADDR\_ANY, SRCHOST= </span><span style="font-family: 'Courier New', monospace;font-weight: bold;text-decoration: underline;">my.address.net</span>
+CFTNET ID=ANY,
+HOST = INADDR\_ANY, SRCHOST= my.address.net
 
-Where <span style="font-family: 'Courier New', monospace;font-weight: bold;">my.address.net</span>
+Where my.address.net
 is used for the outgoing call.
 
  

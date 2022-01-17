@@ -2,7 +2,7 @@
     "title": "Transfer  identifiers",
     "linkTitle": "Transfer object identifiers",
     "weight": "210"
-}{{< TransferCFT/componentshortname  >}} enables the transferring sequential files, or files seen
+}Transfer CFT{{< TransferCFT/componentshortname  >}} enables the transferring sequential files, or files seen
 as such. These files can be accessed through one of the operating system
 access methods . See [File locations: Model and physical files](../../creating_transfers_start_here/model_and_physical_file_concepts).
 
@@ -33,7 +33,7 @@ CFTSEND and CFTRECV parameter setting commands, for sending and receiving
 files respectively.
 
 A CFTSEND and a CFTRECV command may correspond to each model
-file. In the absence of these commands for a given transfer, {{< TransferCFT/componentshortname  >}} uses the default CFTSEND and CFTRECV command parameters, which are
+file. In the absence of these commands for a given transfer, Transfer CFT{{< TransferCFT/componentshortname  >}} uses the default CFTSEND and CFTRECV command parameters, which are
 valid regardless of the IDF.
 
 An identifier corresponds to each flow definition. In the absence of this flow identifier, &lt;span class="mc-variable axway\_variables.Component\_Long\_Name variable">Transfer CFT&lt;/span> uses the flow default value.
@@ -52,7 +52,7 @@ The default command is the command whose file identifier corresponds either to t
 ### Messages: IDM
 
 A message is a character string specified by a SEND command and sent
-by the {{< TransferCFT/componentshortname  >}} as a specific transfer. A message transfer does not make reference to a flow definitiona CFTSEND or CFTRECV command.
+by the Transfer CFT{{< TransferCFT/componentshortname  >}} as a specific transfer. A message transfer does not make reference to a flow definitiona CFTSEND or CFTRECV command.
 
 <span id="Transfer_identifier__IDT"></span>
 
@@ -71,8 +71,8 @@ counter systematically implemented by Transfer CFT.
 
 A transfer can always be uniquely identified locally, regardless of
 the situation - simultaneous transfers, resumption after incidents, and
-so on. When there are several {{< TransferCFT/componentshortname  >}}s on the same computer, uniqueness
-is guaranteed between two {{< TransferCFT/componentshortname  >}}s sharing the same catalog.
+so on. When there are several Transfer CFT{{< TransferCFT/componentshortname  >}}s on the same computer, uniqueness
+is guaranteed between two Transfer CFT{{< TransferCFT/componentshortname  >}}s sharing the same catalog.
 
 #### Catalog status according to transfer state
 

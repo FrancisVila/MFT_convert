@@ -43,7 +43,8 @@ trace files can be defined.
 
 Defining the size of specific trace files
 
-**Environment variable**
+****Environment variable****
+
 `CFTTRCSIZE`
 
 CFTTRCSIZE defines the maximum size of each of the trace files in megabytes.  
@@ -55,7 +56,8 @@ saves the file as \*b.trc and sets the file to 0.
 Defining the location of specific trace
 files
 
-**Environment variable**
+****Environment variable****
+
 `CFTTRCPATH`
 
 CFTTRCPATH indicates the Transfer CFT/Windows the name of the folder

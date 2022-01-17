@@ -14,7 +14,7 @@ Earlier versions of Transfer CFT used a different message format than version 3.
 
 CFTLOG FORMAT=\[V23,V24\]
 
-For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
+For V23: CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
@@ -63,5 +63,5 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | --- | --- |
 | V23 format<br/> V24 format<br/> Information | <span id="CFTX11I"></span>CFTX11I+ without a generation was done CFTX11I+ without a generation was done |
 | V23 format<br/> V24 format<br/> Information | <span id="CFTX12I"></span>CFTX12I+ Some queer comportements will happenned. CFTX12I+ Some queer comportements will happenned. |
-| Explanation | Modifications have been made to the authorization system, but the system has not been regenerated.<br/> Abnormal behavior may arise when {{< TransferCFT/componentshortname  >}} is executed. |
+| Explanation | Modifications have been made to the authorization system, but the system has not been regenerated.<br/> Abnormal behavior may arise when Transfer CFT{{< TransferCFT/componentshortname  >}} is executed. |
 

@@ -45,10 +45,10 @@ on the operating system.
 
 ## Exit task concepts
 
-{{< TransferCFT/componentshortname  >}} provides a programming interface, called an exit,
+Transfer CFT{{< TransferCFT/componentshortname  >}} provides a programming interface, called an exit,
 which allows user programs to take control during a transfer.
 
-{{< TransferCFT/componentshortname  >}} handles:
+Transfer CFT{{< TransferCFT/componentshortname  >}} handles:
 
 The file EXIT task
 which can take place at all the stages in a file transfer process
@@ -82,7 +82,7 @@ be initiated for a given transfer request.
 The exit list is a file exit task that was written by Axway. It enables the following:
 
 - Remote partners
-    to query the {{< TransferCFT/componentshortname >}} catalog of a central site or server
+    to query the Transfer CFT{{< TransferCFT/componentshortname >}} catalog of a central site or server
 - The catalog to
     be queried
 
@@ -90,32 +90,32 @@ The exit list is a file exit task that was written by Axway. It enables the foll
 
 ## Exit task architecture
 
-{{< TransferCFT/componentshortname  >}} can activate one or more EXIT tasks, such as calls, scheduling, and so on, which
-are fully managed by the {{< TransferCFT/componentshortname  >}}.
+Transfer CFT{{< TransferCFT/componentshortname  >}} can activate one or more EXIT tasks, such as calls, scheduling, and so on, which
+are fully managed by the Transfer CFT{{< TransferCFT/componentshortname  >}}.
 
 ![Displays Transfer CFT relationship to multiple Exits](/Images/TransferCFT/cft_exits_1.png)
 
 An EXIT task is generally activated, or loaded into memory,
-as soon as {{< TransferCFT/componentshortname  >}} is started with the Directory EXIT
+as soon as Transfer CFT{{< TransferCFT/componentshortname  >}} is started with the Directory EXIT
 task, or else at the first transfer initiating an event to be checked.
 After the event in question has been checked, the task is not de-activated
 but stays loaded in memory. It remains active for a time that is defined
 by the EXIT type, such as:
 
 - Throughout the
-    {{< TransferCFT/componentshortname >}} activity period for the Directory EXIT tasks
+    Transfer CFT{{< TransferCFT/componentshortname >}} activity period for the Directory EXIT tasks
 - For an EXIT task
     maximum inactivity time, only for File and End-of-transfer exits
 
 An EXIT task consists of:
 
 - An interface supplied
-    with {{< TransferCFT/componentshortname >}}, providing functions for communicating with the Transfer
+    with Transfer CFT{{< TransferCFT/componentshortname >}}, providing functions for communicating with the Transfer
     CFT
 - A user program,
     communicating with the interface
 
-The interface communicates with the {{< TransferCFT/componentshortname  >}} through a semaphore. A semaphore is an entity
+The interface communicates with the Transfer CFT{{< TransferCFT/componentshortname  >}} through a semaphore. A semaphore is an entity
 consisting of a structured stack of limited size. Each EXIT task has its
 own semaphore.
 
@@ -127,5 +127,6 @@ to call.
 The following diagram shows an example
 of a user program with two functions.
 
-**Communication structure**
-**![Simplified view of a user program communicating with functions](/Images/TransferCFT/cft_exits_2.png)**
+********Communication structure********
+
+********![Simplified view of a user program communicating with functions](/Images/TransferCFT/cft_exits_2.png)********

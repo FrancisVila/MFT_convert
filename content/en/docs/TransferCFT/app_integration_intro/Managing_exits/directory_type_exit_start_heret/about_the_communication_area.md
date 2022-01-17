@@ -58,7 +58,7 @@ The following tables list all the fields of the communication structure.
 | Field | Explanation |
 | --- | --- |
 | ret1 | Return code<br/> • 0: Processing ok<br/> • 1: Transfer CFT must take charge of the call<br/> • 2: Connection refusal<br/> • 9: Processing error |
-| ret2  | Cause of connection refusal if the return code value is 2<br/> • 1: Partner not known<br/> • 2: Password not valid<br/> • 3: Address not known<br/> • 4: Call time not valid<br/> • 5: Communication protocol not valid<br/> • 6: Maximum number of virtual circuits reached<br/> • 7: Maximum number of transfers reached<br/> • 8: Maximum number of partners reached<br/> • 9: Caller taxation refusal<br/> • 10: Network problem<br/> • 255: Other cause of connection refusal<br/> These refusal codes are converted by {{< TransferCFT/componentshortname  >}} into internal diagnostic codes.<br/> In server mode, the internal diagnostic codes are converted into protocol diagnostic codes and sent to the calling partner.<br/> In requester mode, the internal diagnostic codes are saved in the catalog. |
+| ret2  | Cause of connection refusal if the return code value is 2<br/> • 1: Partner not known<br/> • 2: Password not valid<br/> • 3: Address not known<br/> • 4: Call time not valid<br/> • 5: Communication protocol not valid<br/> • 6: Maximum number of virtual circuits reached<br/> • 7: Maximum number of transfers reached<br/> • 8: Maximum number of partners reached<br/> • 9: Caller taxation refusal<br/> • 10: Network problem<br/> • 255: Other cause of connection refusal<br/> These refusal codes are converted by Transfer CFT{{< TransferCFT/componentshortname  >}} into internal diagnostic codes.<br/> In server mode, the internal diagnostic codes are converted into protocol diagnostic codes and sent to the calling partner.<br/> In requester mode, the internal diagnostic codes are saved in the catalog. |
 | diag | Diagnostic code if the return code is not 0 and 1<br/> The contents of this field are used in the EXIT related error. |
 | msg  | User message<br/> If this field is defined, the content is sent to the Transfer CFT standard output. |
 
@@ -70,7 +70,7 @@ The following tables list all the fields of the communication structure.
 
 | Field | Explanation |
 | --- | --- |
-| ptype | Partner type:<br/> • C: normal {{< TransferCFT/componentshortname  >}} partner<br/> • D: dynamic {{< TransferCFT/componentshortname  >}} partner<br/> • E: non {{< TransferCFT/componentshortname  >}} partner |
+| ptype | Partner type:<br/> • C: normal Transfer CFT{{< TransferCFT/componentshortname  >}} partner<br/> • D: dynamic Transfer CFT{{< TransferCFT/componentshortname  >}} partner<br/> • E: non Transfer CFT{{< TransferCFT/componentshortname  >}} partner |
 | part | Partner local identifie |
 | ipart | Intermediate partner local identifier |
 | cpart | Associated store and forward partner identifier |

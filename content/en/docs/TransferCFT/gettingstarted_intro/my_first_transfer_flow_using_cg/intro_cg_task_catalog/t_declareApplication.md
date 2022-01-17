@@ -9,12 +9,12 @@
 1. At a minimum:
     -   Enter a unique name for the application.  
     -   Specify the system that hosts the application, a host name or an IP address.
-    -   Enter the name of the {{< TransferCFT/componentshortname >}}.
-    -   If {{< TransferCFT/componentshortname >}} is installed on the same host as the application,Central Governance will detect the matching Transfer CFT instance. You can change this value if you want to associate this application with a different {{< TransferCFT/componentshortname >}}.
+    -   Enter the name of the Transfer CFT{{< TransferCFT/componentshortname >}}.
+    -   If Transfer CFT{{< TransferCFT/componentshortname >}} is installed on the same host as the application,Central Governance will detect the matching Transfer CFT instance. You can change this value if you want to associate this application with a different Transfer CFT{{< TransferCFT/componentshortname >}}.
 1. Click Save application to add it.
 
 For these exercises repeat the steps and create 3 applications, MainOffice, Store\_66, and Store\_89.
 
 ![](/Images/TransferCFT/create_application_w_cg.png)
 
-**&lt;&lt;** **My first transfer flow**
+****&lt;&lt;**** <a href="../../" class="bold_in_para MCXref xref xrefbold_in_para"><strong><strong>My first transfer flow</strong></strong></a>

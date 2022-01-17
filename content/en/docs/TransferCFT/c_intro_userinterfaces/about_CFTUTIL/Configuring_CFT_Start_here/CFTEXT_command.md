@@ -2,7 +2,7 @@
     "title": "CFTEXT  - Extract file data ",
     "linkTitle": "CFTEXT - Extracting data",
     "weight": "340"
-}You can use the <span id="About_the_CFTEXT_Command"></span>**CFTEXT**
+}You can use the <span id="About_the_CFTEXT_Command"></span>CFTEXT
 object to extract Parameter and Partner file data. CFTEXT generates, as output, a configuration command text used to reconstitute
 the data of these files.
 
@@ -12,7 +12,7 @@ file is then submitted to CFTUTIL to:
 - Rebuild a lost
     or damaged configuration
 - Facilitate the
-    exporting of a <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> configuration to another computer
+    exporting of a Transfer CFT{{< TransferCFT/componentlongname >}} configuration to another computer
 - Upgrade the Transfer
     CFT software when such an upgrade incorporates a file structure modification
 
@@ -23,7 +23,7 @@ output or else redefine the output medium via the command CONFIG TYPE
 
 All parameter values are in UPPER CASE letters.
 
-Command syntax: <span style="font-weight: bold;">[CFTEXT](../../../command_summary#CFTEXT)</span>
+Command syntax: [CFTEXT](../../../command_summary#CFTEXT)
 
 QQQ\_QQQ\_CHECK command description
 
@@ -33,7 +33,7 @@ Parameters
 
 Description
 
-<span style="font-weight: bold;">[CFTEXT](../../../command_summary#CFTEXT)</span> command
+[CFTEXT](../../../command_summary#CFTEXT) command
 
 Use this command to extract all or part of the data from
 the parameter and partner files.
@@ -97,7 +97,7 @@ Name of the Partner input file.
 
 Default value: default
 name of the Partner file defined for CFTUTIL for the system concerned.
-Refer to the Transfer CFT <span class="italic_in_para">Operations Guide</span> that corresponds with
+Refer to the Transfer CFT Operations Guide that corresponds with
 your OS.
 
 [TYPE](../../../command_summary/parameter_intro/type) 
@@ -113,7 +113,8 @@ CFTEXT
 Extraction of all data from the CFTPARM parameter and CFTPART
 partner files.
 
-**Example 2**
+****Example 2****
+
 ```
 CFTEXT     TYPE    
 =     SEND,
@@ -126,7 +127,8 @@ mycftparm
 Extraction of data concerning the model file to be sent
 (CFTSEND command) with an IDF = FACT, from the file mycftparm.
 
-**Example 3**
+****Example 3****
+
 ```
 CFTEXT
 TYPE = RECV,
@@ -139,7 +141,8 @@ received (CFTRECV command) whose IDF value begins with the four letters
 Refer to the Transfer CFT Operations Guide that corresponds with
 your OS.
 
-**Example 4**
+****Example 4****
+
 ```
 CFTEXT
 TYPE = PART,

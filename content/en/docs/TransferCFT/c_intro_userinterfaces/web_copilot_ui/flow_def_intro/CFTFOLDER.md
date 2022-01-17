@@ -19,7 +19,7 @@ Use the following CFTFOLDER parameters to configure folder monitoring for each 
 
 | <span id="Paramete"></span>Parameter  | Type  | Default  | Description  |
 | --- | --- | --- | --- |
-| same as in UCONF<br/> &lt;folder_monitoring.enable&gt; | Boolean  | No  |  • No: No folder monitoring occurs.<br/> • Yes: Enable {{< TransferCFT/componentshortname  >}} folder monitoring. |
+| same as in UCONF<br/> &lt;folder_monitoring.enable&gt; | Boolean  | No  |  • No: No folder monitoring occurs.<br/> • Yes: Enable Transfer CFT{{< TransferCFT/componentshortname  >}} folder monitoring. |
 | ID<br/> **Mandatory** | node  | None  | Add the logical folders to monitor (list of logical identifiers).<br/> You should provide a unique name to identify the set of configuration parameters corresponding to this directory. If you have more than one Folder to monitor, use a space between each logical value. |
 | STATE  | Boolean  | Active  | Enables a scan of the folder.<br/> <blockquote> **Note**<br/> NO = NOACTIVE.<br/> </blockquote>  |
 | SCANDIR<br/> *Mandatory*  | string  | None  | Absolute path name of the top level directory to scan.<br/> This directory must exist before restarting Transfer CFT.<br/> *See <a href="#*char_note">NOTE</a>. |
@@ -43,17 +43,17 @@ Use the following CFTFOLDER parameters to configure folder monitoring for each 
 | RENAMESEPARATOR  | string  | "." | This parameter only applies to the MOVE method.<br/> You can use no more than two characters from among the following:<br/> .[]()_-<br/> The first character defines the separator before the timestamp. The second one, when present, defines the separator after the timestamp.<br/> For example, using timestamp_separators "[]": - myfile is renamed myfile.[20131025] - myfile.txt is renamed myfile.[20131025].txt |
 | N/A in this version  | string  |   | Metadata used to control user changes.  |
 | USEFSEVENTS<br/> <br/> <a href="#Enable">More information</a> | Boolean  | No  | Set to YES to enable the file system events monitoring service to detect newly available files.  |
-| <a href="../../../command_summary/parameter_intro/userid">USERID</a>  | String  |   | *Available on UNIX and* **<br/> Identifier for a user who can scan a folder. See the section, <a href="../../../../app_integration_intro/intro_folder_monitor/configure_folder_monitoring#Folder2">Folder monitoring using USERCTRL</a>. |
+| <a href="../../../command_summary/parameter_intro/userid">USERID</a>  | String  |   | *Available on UNIX and* Windows **<br/> Identifier for a user who can scan a folder. See the section, <a href="../../../../app_integration_intro/intro_folder_monitor/configure_folder_monitoring#Folder2">Folder monitoring using USERCTRL</a>. |
 
 
 > **Note**
 >
 > \*You cannot use the following characters in the SCANDIR or WORKDIR definition. Additionally you cannot use a comma (,) in the CFTFOLDER SCANDIR or WORKDIR definition.
 
-- /
-- For \\ / : \* ? " &lt; > |
+- UNIX /
+- For Windows \\ / : \* ? " &lt; > |
 
-**Related topics**
+****Related topics****
 
 - <a href="../../../../app_integration_intro/intro_folder_monitor" class="MCXref xref">Introduction to folder monitoring</a>
 - <a href="../../../../app_integration_intro/intro_folder_monitor/folder_monitor_uconf" class="MCXref xref">Deprecated folder monitoring (UCONF)</a>

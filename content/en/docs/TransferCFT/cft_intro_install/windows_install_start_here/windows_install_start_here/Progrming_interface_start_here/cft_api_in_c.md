@@ -2,9 +2,9 @@
     "title": "Building  an API in C",
     "linkTitle": "Building API in C",
     "weight": "260"
-}This section explains how to build Transfer CFT API samples in C. You can also refer to the {{< TransferCFT/componentshortname  >}} *User Guide <a href="../../../../about_this_document_zos/using_apis" class="MCXref xref">About APIs</a> topics* for information such as links to sample files.
+}This section explains how to build Transfer CFT API samples in C. You can also refer to the Transfer CFT{{< TransferCFT/componentshortname  >}} *User Guide <a href="../../../../about_this_document_zos/using_apis" class="MCXref xref">About APIs</a> topics* for information such as links to sample files.
 
-The API samples and the makefile used to build them are located in your {{< TransferCFT/componentlongname  >}} `<installdir>\runtime\src\capi` directory.
+The API samples and the makefile used to build them are located in your Transfer CFT{{< TransferCFT/componentlongname  >}} &lt;installdir>\\runtime\\src\\capi directory.
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ The following steps require that you have Microsoft Visual Studio (VS) and a com
 
 ## Results
 
-The `nmake `command generates the following as either 32-bit or 64-bit executable programs, depending on the Transfer CFT architecture. The current directory contains the generated object files and executable programs:
+The nmake command generates the following as either 32-bit or 64-bit executable programs, depending on the Transfer CFT architecture. The current directory contains the generated object files and executable programs:
 
 - api2xmp1.exe
 - api2xmp2.exe

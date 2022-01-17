@@ -10,7 +10,7 @@ Once you verify the installation, continue on to [post-installation](../t_start_
 
 ![flow showing installation options](/Images/TransferCFT/install_overview_zos.png)
 
-**About the distribution and instance environments**
+****About the distribution and instance environments****
 
 The Transfer CFT installation creates the following environments:
 

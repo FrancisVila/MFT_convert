@@ -15,8 +15,9 @@
 | MODE  | CREATE, REPLACE an existing PKIKEY  | Action on the database  |
 
 
-**Procedure**
-**The following example creates both a private and public key. You can then export the public key to a remote Transfer CFT, or to another product that is using SFTP.**
+****Procedure****
+
+****The following example creates both a private and public key. You can then export the public key to a remote Transfer CFT, or to another product that is using SFTP.****
 
 1. Use PKIKEYGEN to generate the key pair.  
     ```
@@ -36,7 +37,7 @@
 1. Locate the KPUBxxxx file, which is in the same folder as the extracted PKI information (KEY\_2048.CFG).
 1. Use the same four digits as in the IKNAME to locate the KPUB file. For example, if the IKNAME is KPRIV1234 the KPUB that you need is KPUB1234.  
     This public key is in SSH-RSA format and can be used on other SFTP clients.
-1. On the remote {{< TransferCFT/componentlongname >}} import the public key, KPUB1234 in our example, using the PKIKEY command.  
+1. On the remote Transfer CFT{{< TransferCFT/componentlongname >}} import the public key, KPUB1234 in our example, using the PKIKEY command.  
     ```
     PKIUTIL PKIKEY ID=KPUB1234, ikname=KPUB1234, ikform=SSH, MODE=REPLACE
     ```

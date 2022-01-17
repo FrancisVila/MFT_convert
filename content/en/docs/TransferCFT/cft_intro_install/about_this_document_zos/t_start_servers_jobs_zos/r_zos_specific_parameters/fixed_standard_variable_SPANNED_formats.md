@@ -23,14 +23,15 @@ However, there are some restrictions when using variable-spanned format files wi
 
 ## Release resource for receive transfers by owner
 
-It is not typically mandatory to switch users to release a resource. To activate a switch during FREE, set the `..UPARM(CNFENV) FREE_AS_USER` variable to 1.
+It is not typically mandatory to switch users to release a resource. To activate a switch during FREE, set the ..UPARM(CNFENV) FREE\_AS\_USER variable to 1.
 
 ## Receive a file in multi-volume compressed SMS dataset v2 format
 
 To avoid an ABEND 737-48 when receiving a file in multi-volumes compressed SMS dataset version 2 format, you can use the following workarounds:
 
-- Add the keyword `',FEOV=NO' `to the FNAME or WFNAME  on the CFTRECV.
-- You can also use the environment variable `FEOV=NO file ..UPARM(CNFENV)` to manage FEOV for all CFTRECVs.
+- Add the keyword ',FEOV=NO' to the FNAME or WFNAME  on the CFTRECV.
+- You can also use the environment variable FEOV=NO file ..UPARM(CNFENV) to manage FEOV for all CFTRECVs.
 
-**Related topics**
-**[Transfer CFT z/OS general performance concepts](../../zos_performance)**
+****Related topics****
+
+****[Transfer CFT z/OS general performance concepts](../../zos_performance)****

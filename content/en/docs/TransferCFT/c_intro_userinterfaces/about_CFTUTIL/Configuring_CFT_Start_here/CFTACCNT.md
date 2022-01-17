@@ -10,7 +10,7 @@ concerning correctly terminated transfers (T or X state).
 Two recording modes are available:
 
 - Recording data
-    in {{< TransferCFT/componentshortname >}} files. When the primary file is full, {{< TransferCFT/componentshortname >}}
+    in Transfer CFT{{< TransferCFT/componentshortname >}} files. When the primary file is full, Transfer CFT{{< TransferCFT/componentshortname >}}
     switches to an alternate file. This mode is available on all operating
     systems.
 - Recording data
@@ -20,8 +20,8 @@ To activate
 the statistical mode, you must also configure the [CFTPARM](../../../web_copilot_ui/conf_intro/cftparm)
 object.
 
-**Related
-topics**
+****Related
+topics****
 
 - Object concepts
     [How to define transfer
@@ -47,7 +47,8 @@ topics**
 
 ## Examples
 
-**TYPE = FILE**
+****TYPE = FILE****
+
 ```
 CFTACCNT
 ID = ACCNT,

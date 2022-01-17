@@ -8,10 +8,12 @@
 
 #### CFTFILE
 
-**\[FSPACEX =
-{see table below| n}\]**
-**{0..65536}**
-**Depending on TYPE/OS**
+****\[FSPACEX =
+{see table below| n}\]****
+
+****{0..65536}****
+
+****Depending on TYPE/OS****
 
 Secondary allocation of the file to be created expressed in Kbytes
 (1024).

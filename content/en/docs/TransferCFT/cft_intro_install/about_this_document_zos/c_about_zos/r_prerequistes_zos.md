@@ -4,7 +4,7 @@
     "weight": "150"
 }This section outlines the minimum requirements to install Transfer CFT in a z/OS environment.
 
-This chapter describes the system requirements for {{< TransferCFT/componentshortname  >}}. System requirements can change when {{< TransferCFT/companyname  >}} releases service packs and patches for a product version. Therefore, you may want to refer to the *[{{< TransferCFT/docnamesuitesupportedplatforms  >}}](https://docs.axway.com/bundle/Axway_Products_SupportedPlatforms_allOS_en/resource/Axway_Products_SupportedPlatforms_allOS_en.pdf)* document. The document lists the supported operating systems, databases, web servers, and browsers.
+This chapter describes the system requirements for Transfer CFT{{< TransferCFT/componentshortname  >}}. System requirements can change when Axway{{< TransferCFT/companyname  >}} releases service packs and patches for a product version. Therefore, you may want to refer to the *[Axway Supported Platforms{{< TransferCFT/docnamesuitesupportedplatforms  >}}](https://docs.axway.com/bundle/Axway_Products_SupportedPlatforms_allOS_en/resource/Axway_Products_SupportedPlatforms_allOS_en.pdf)* document. The document lists the supported operating systems, databases, web servers, and browsers.
 
 ## Hardware
 
@@ -63,11 +63,11 @@ When performing an SMP/E installation, the user performing the installation req
 
 Check that the user that starts Copilot and Transfer CFT has a TSO segment in their profile.
 
-**TSO version**
+****TSO version****
 
 The user ID for the user that starts Copilot and Transfer CFT has a 7-characters maximum when using z/OS 2.2 or lower. Therefore, a user with an 8-character user ID cannot use TSO with a z/OS version lower than v2.3.
 
-**Related topics**
+****Related topics****
 
 - [About Transfer CFT z/OS](../)
 - [Installation overview]()

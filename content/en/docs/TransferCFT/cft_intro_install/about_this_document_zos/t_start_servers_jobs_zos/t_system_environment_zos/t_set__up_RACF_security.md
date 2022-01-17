@@ -54,7 +54,7 @@ RACF is required when the Internet interface is used to check the PASSWORDs. The
 
 - SAF is not available
 
-In either of these cases, you can log in by entering in the PASSWORD field. You then have the privileges of the JOB where you are logged on.
+In either of these cases, you can log in by entering a random value in the PASSWORD field. You then have the privileges of the JOB where you are logged on.
 
 ### RACF and the JAVA user interface
 
@@ -76,9 +76,9 @@ In either of these cases, you can enter any value in the PASSWORD field to conne
 
 ### RACF password phrase support
 
-{{< TransferCFT/componentlongname  >}} supports the use of a password phrase (RACF) in the user interface, JPIUTIL, REST API, and synchronous API services.
+Transfer CFT{{< TransferCFT/componentlongname  >}} supports the use of a password phrase (RACF) in the user interface, JPIUTIL, REST API, and synchronous API services.
 
-**Limitations**
+****Limitations****
 
 - When using the user interface with RACF to enter your password phrase, the confirm password pop-up window does not display after the password phrase expiration.
 - The RACF password phrase can consist of up to 30 characters.

@@ -13,8 +13,8 @@ Event Codes for all protocols
 
 | Code | Meaning  |
 | --- | --- |
-| 00 | VFABORTD - Transfer abort request by {{< TransferCFT/componentshortname  >}} |
-| 01 | VFCAND - Transfer interrupt request by {{< TransferCFT/componentshortname  >}} |
+| 00 | VFABORTD - Transfer abort request by Transfer CFT{{< TransferCFT/componentshortname  >}} |
+| 01 | VFCAND - Transfer interrupt request by Transfer CFT{{< TransferCFT/componentshortname  >}} |
 | 02 | VFCANR - Response to a transfer interrupt indication |
 | 03 | VFCHKD - Request to set a synchronization point |
 | 04 | VFCHKR - Response to a synchronization point indication |

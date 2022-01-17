@@ -14,8 +14,8 @@ NAME = {<u>CAT</u>
 Name of the component to be queried.
 This parameter can be set to:
 
-- **CAT**: query of the catalog cache
-- **COMMAND**: query of the command cache
+- ****CAT****: query of the catalog cache
+- ****COMMAND****: query of the command cache
 - CRON
 - DMZ
 - STAT
@@ -24,7 +24,7 @@ This parameter can be set to:
 
 #### MQUERY, Object = system
 
-**NAME = { CFTMAIN | CFTTRK | CFTTFIL | CFTCOM | CFTTPRO | CFTEXIT | CFTPRX | CFTDSCAN }**
+****NAME = { CFTMAIN | CFTTRK | CFTTFIL | CFTCOM | CFTTPRO | CFTEXIT | CFTPRX | CFTDSCAN }****
 
 The name of the process on which the MQUERY command is applied. If NAME is not set, the MQUERY command is sent to all processes.
 

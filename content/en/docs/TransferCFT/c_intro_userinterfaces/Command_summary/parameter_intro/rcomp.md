@@ -24,7 +24,7 @@ Default values are:
 | ODETTE  | 1  |
 
 
-See also **[scomp](../scomp)**.
+See also [scomp](../scomp).
 
 For more information (usable values etc.), refer to the *Compression*
 topic.

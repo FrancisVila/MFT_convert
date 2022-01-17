@@ -5,8 +5,8 @@
 }This topic describes the CFTCOM object and parameters. You can use this
 command to define the communication media used by Transfer CFT.
 
-**Related
-topics**
+****Related
+topics****
 
 - Command syntax
     [CFTCOM](../../../command_summary#CFTCOM)
@@ -51,7 +51,7 @@ Use CFTCOM TCP/IP for synchronous Transfer CFT communication on the local netwo
 
 `[ADDRLIST = (string1..64,string1..64…)]`
 
-The `ADDRLIST `parameter is non-functional in that you can only use TCPIP in local networks for synchronous communication.
+The ADDRLIST parameter is non-functional in that you can only use TCPIP in local networks for synchronous communication.
 
 `[DISCTS = n]`
 
@@ -127,7 +127,7 @@ type is FILE.
 | <a href="../../../command_summary/parameter_intro/wscan">WSCAN</a> | The frequency, in seconds, with which the Transfer CFT scans the communication file. |
 
 
-**Example**
+****Example****
 
 TYPE=FILE
 
@@ -144,9 +144,9 @@ WSCAN = 120
 
 <!-- -->
 
-- The {{< TransferCFT/componentshortname >}} can be inactive at the time
+- The Transfer CFT{{< TransferCFT/componentshortname >}} can be inactive at the time
     the commands assigned to it are issued, to the limit of the file size.
-    Commands are taken into account at the time the {{< TransferCFT/componentshortname >}} is activated,
+    Commands are taken into account at the time the Transfer CFT{{< TransferCFT/componentshortname >}} is activated,
     if a CFTCOM command relative to this communication file has been defined.
     A communication file can be created by the CFTFILE command.
 

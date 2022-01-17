@@ -12,7 +12,7 @@
 3
 | n }\]   {0...12}
 
-A value between **0** and <span style="font-weight: bold;">12</span> that represents the maximum for the
+A value between 0 and 12 that represents the maximum for the
 synchronization points that are not acknowledged (default = 3). This value is negotiated
 with the receiver partner.
 

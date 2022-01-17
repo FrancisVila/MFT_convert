@@ -3,7 +3,7 @@
     "linkTitle": "Typographical conventions",
     "weight": "200"
 }The typographical conventions specify the
-syntax to use in {{< TransferCFT/componentshortname  >}} commands, the
+syntax to use in Transfer CFT{{< TransferCFT/componentshortname  >}} commands, the
 parameters and their values. These rules apply equally for any additional
 parameter information, or information pertaining to the operating system
 or the transfer protocols.
@@ -24,7 +24,8 @@ The description of each command is generally organized in parts:
 - List indicating
     the general syntax of parameters passed with a command, grouped by categories
 
-**Example**
+****Example****
+
 ```
 CFTFILE [MODE = {CREATE
 | DELETE},]
@@ -48,6 +49,7 @@ of the file to which the command applies)
 Example of creating a parameter file:
 
 `CFTFILE TYPE = PARM,    MODE = CREATE,    FNAME = filename`
+
 <span id="Parameter_description"></span>
 
 ### Parameter description
@@ -70,7 +72,8 @@ Each parameter description applies the following general syntax:
 
 The information and specifics fields are optional.
 
-**Example**
+****Example****
+
 ```
 COPYFILE
 OFNAME
@@ -98,7 +101,7 @@ parameter is:
     \[ \]
 - Reserved for transfer
     cases in PeSIT E
-    profile between two {{< TransferCFT/componentshortname >}}s
+    profile between two Transfer CFT{{< TransferCFT/componentshortname >}}s
 
 <span id="Parameter_value_notation_conventions"></span>
 
@@ -149,11 +152,12 @@ notations are used in the detailed parameter descriptions.
 
 When using the CFTUTIL HELP command, as shown in the example below, the following rules apply to parameter values:
 
-- If `STRING `is in upper case, the parameter value is not case sensitive
-- If `String `is mixed case, the parameter value is case sensitive
-- If `STRING or "String"`, the parameter value is only case sensitive when enclosed in quotes
+- If STRING is in upper case, the parameter value is not case sensitive
+- If String is mixed case, the parameter value is case sensitive
+- If STRING or "String", the parameter value is only case sensitive when enclosed in quotes
 
-**Example**
+****Example****
+
 ```
 CFTUTIL help cmd=cftsend, content=detail
  
@@ -202,7 +206,7 @@ in the following table.
 | Identifier: alphanumeric string of 1 to 32 alphanumeric characters and additional characters:<br/> @ # &amp; % ! : - _ + \ / | ? { } [ ] ; * &lt; &gt; ~ ^ | identifier  |
 | Mask: string containing wildcard characters (* and ?) :<br/> When referring to ReGEX expressions, other value are possible. | mask  |
 | Time: string containing 2 to 8 digits  | HHMMSSSS |
-| Transfer identifier assigned by {{< TransferCFT/componentshortname  >}}  | transid  |
+| Transfer identifier assigned by Transfer CFT{{< TransferCFT/componentshortname  >}}  | transid  |
 
 
 <span id="OS_specificities"></span>
@@ -238,7 +242,8 @@ OS
 In the parameter syntax listings, the parameter values that are dependent
 on one or more protocols are indicated as follows: PROTOCOL
 
-**Example**
+****Example****
+
 `[NSPACE       = n,]               PROTOCOL`
 
 In the parameter description, the protocol concerned is
@@ -255,21 +260,24 @@ PeSIT
 - Length of the value
     of the associated parameter differs from one protocol to another.
 
-**Example  
-**
+****Example  
+****
+
 `[NSPASSW = string]string8        PeSITstring8       ODETTE      string22`
 
 The default value of a parameter may differ from one protocol to another;
 this is indicated as follows: Dft: PROTOCOL
 
-**Example**
+****Example****
+
 `[NCODE = {see the comment   | BINARY | EBCDIC | ASCII}]      Dft: PROTOCOL`
 
 The default value of a parameter may differ from one PeSIT protocol
 profile to another; this specificity is indicated as follows: Dft:
 PROFILE
 
-**Example**
+****Example****
+
 `[DISCTS     = n]                           Dft: PROFILE    `
 
 If the parameter in the command, in this case CFTPROT TYPE=PeSIT, is
@@ -286,7 +294,7 @@ protocol variants, indicated as follows:
 | Protocol  | Description  |
 | --- | --- |
 | PeSIT | PeSIT protocol (standard) |
-| PeSIT CFT/CFT | PeSIT protocol used between two {{< TransferCFT/componentshortname  >}}s |
+| PeSIT CFT/CFT | PeSIT protocol used between two Transfer CFT{{< TransferCFT/componentshortname  >}}s |
 
 
 <span id="Command_syntax"></span>
@@ -311,7 +319,7 @@ The parameter setting commands are presented in the following format:
 
 ### Command reply format
 
-**Example**
+****Example****
 
 The report `CFTU94I   SHUT _Correct `indicates that the SHUT command was correctly entered
 in CFTUTIL.

@@ -144,7 +144,8 @@ a given partner by means of a IDT identifier. To locally select a transfer,
 in case of a retry in particular, it is consequently only necessary to
 supply the PART partner identifier and IDT transfer identifier information.
 
-**Example**
+****Example****
+
 `START PART=SITE1, IDT=A2517435`
 
 A transfer retry request, identified by the number A2517435, is requested

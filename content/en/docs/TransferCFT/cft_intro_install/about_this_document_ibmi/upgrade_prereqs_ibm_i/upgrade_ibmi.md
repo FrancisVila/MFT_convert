@@ -86,7 +86,7 @@ The following fields are mandatory; you should complete as per your system detai
 - CFTPGM: Enter the name of the library containing the binaries of your Transfer CFT to upgrade.
 - CFTPROD: Enter the name of the library containing the working files of your Transfer CFT to upgrade.
 - ROLLBACK: '1': Enables the rollback mode (YES).  
-    ‘2’: Indicates that you are NOT rolling back to a previous {{< TransferCFT/transfercftname >}} version (NO).
+    ‘2’: Indicates that you are NOT rolling back to a previous Transfer CFT{{< TransferCFT/transfercftname >}} version (NO).
 - SAVF: This field only displays when you enter '1' in the ROLLBACK field. In this case, enter the name of the SAVF for the version you want to apply. The default value is the name of SAVF for the version that you downloaded. See [Rolling back an upgrade](#Rolling) for details.
 
 ### Check the new version
@@ -104,12 +104,12 @@ Running the UPGRADE command:
 1. Creates a temporary library.
 1. Extracts your configuration, COM file, CAT file into this temporary library.
 1. Saves your IFS directories by moving them to new directories having the same name but which are suffixed by “\_save”.
-1. Saves your {{< TransferCFT/transfercftname >}} libraries in the SAVF located in the temporary lib.
-1. Replaces the binaries in your CFTPGM libraries by those of the new {{< TransferCFT/transfercftname >}} version.
-1. Replaces your IFS directories by those of the new {{< TransferCFT/transfercftname >}} version.
-1. Imports your configuration into your upgraded {{< TransferCFT/transfercftname >}}.
+1. Saves your Transfer CFT{{< TransferCFT/transfercftname >}} libraries in the SAVF located in the temporary lib.
+1. Replaces the binaries in your CFTPGM libraries by those of the new Transfer CFT{{< TransferCFT/transfercftname >}} version.
+1. Replaces your IFS directories by those of the new Transfer CFT{{< TransferCFT/transfercftname >}} version.
+1. Imports your configuration into your upgraded Transfer CFT{{< TransferCFT/transfercftname >}}.
 
-As a result, your {{< TransferCFT/transfercftname  >}} binaries are upgraded, but their location is conserved.
+As a result, your Transfer CFT{{< TransferCFT/transfercftname  >}} binaries are upgraded, but their location is conserved.
 
 ### Upgrading multi-node installations
 
@@ -118,7 +118,7 @@ The UPGRADE procedure supports multi-node configurations, where your configurat
 
 ### About IASP installations
 
-The procedure supports the upgrade of {{< TransferCFT/transfercftname  >}} installed on an IASP. The process remains the same, the UPGRADE procedure itself detects if the {{< TransferCFT/transfercftname  >}} is an installation on ASP, and then keeps the {{< TransferCFT/transfercftname  >}} in the same ASP.
+The procedure supports the upgrade of Transfer CFT{{< TransferCFT/transfercftname  >}} installed on an IASP. The process remains the same, the UPGRADE procedure itself detects if the Transfer CFT{{< TransferCFT/transfercftname  >}} is an installation on ASP, and then keeps the Transfer CFT{{< TransferCFT/transfercftname  >}} in the same ASP.
 
 > **Note**
 >
@@ -128,7 +128,7 @@ The procedure supports the upgrade of {{< TransferCFT/transfercftname  >}} insta
 
 ## Manual upgrade procedure
 
-This section explains how to upgrade an existing Transfer CFT IBM i from 2.7.1, 3.0.1, 3.1.3, 3.3.2, 3.4, or 3.5 to Transfer CFT {{< TransferCFT/releasenumber  >}} for either a [single installation](#Manually) or a [multi-node installation](#Manually2).
+This section explains how to upgrade an existing Transfer CFT IBM i from 2.7.1, 3.0.1, 3.1.3, 3.3.2, 3.4, or 3.5 to Transfer CFT 3.9{{< TransferCFT/releasenumber  >}} for either a [single installation](#Manually) or a [multi-node installation](#Manually2).
 
 <span id="Manually"></span>
 
@@ -221,7 +221,7 @@ CFTUTIL about
 
 ### Manually upgrade a Transfer CFT 2.7.1, 3.0.1, or 3.1.3 multi-node installation
 
-The multi-node procedure is similar to the single instance upgrade procedure. **However, when exporting CAT and COM, you must export your configuration for each node.**
+The multi-node procedure is similar to the single instance upgrade procedure. ****However, when exporting CAT and COM, you must export your configuration for each node.****
 
 1. Load the former Transfer CFT 2.7.1, 3.0.1, or 3.1.3 environment.
 1. Stop Transfer CFT IBM i.

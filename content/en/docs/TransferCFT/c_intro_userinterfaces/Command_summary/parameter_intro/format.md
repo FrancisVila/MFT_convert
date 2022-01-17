@@ -15,9 +15,9 @@
 
 Optional parameter. Indicates the format for log messages.
 
-- **V23** (Default value): The Identifier’s
+- V23 (Default value): The Identifier’s
     length is truncated to 8 characters.
-- <span style="font-weight: bold;">V24</span>: The complete Identifier is displayed.
+- V24: The complete Identifier is displayed.
     The length of the Identifier can be up to 32 characters. Some messages
     related to a transfer includes the IDTU (Local transfer counter identifier)
     value.
@@ -26,14 +26,14 @@ Optional parameter. Indicates the format for log messages.
 
 #### CFTACCNT
 
-\[FORMAT = <span style="text-decoration: underline;">V23</span>
+\[FORMAT = V23
 | V24 \]
 
 Optional parameter. The FORMAT parameter indicates whether the former
 record structure should be used (V23 values for compatibility reasons)
 or if the new structure is to be applied (V24 values).
 
-- <span style="font-weight: bold;">V23 </span>(Default value)
+- V23 (Default value)
 - V24
 
 <span id="format_CFTEXIT"></span>
@@ -42,9 +42,10 @@ or if the new structure is to be applied (V24 values).
 
 \[ FORMAT = { string } \]
 
-Indicates the file format of the communication area for an exit list. The possible values are 1, 2 C, T, J or X, where <span class="code">1 </span>is the default.
+Indicates the file format of the communication area for an exit list. The possible values are 1, 2 C, T, J or X, where 1 is the default.
 
-**Example**
+****Example****
+
 ```
 PARM LRECL = nnnn, FORMAT=X
 SEND STATE = CDHKTX
@@ -53,7 +54,7 @@ RECV STATE = CDHKTX
 
 ##### Format 1
 
-Displays using the same format as in <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> 3.5 and lower, though phase and phasestep no longer display.
+Displays using the same format as in Transfer CFT{{< TransferCFT/hflongproductname  >}} 3.5 and lower, though phase and phasestep no longer display.
 
 ##### Format 2
 
@@ -86,7 +87,7 @@ Displays using the same format as in <span class="mc-variable header_footer_vari
 
 Each field is separated by a comma.
 
-For example: <span class="code">S,X,X,X,MARTIN,PARIS,BIN,L1111482,2,,128,20191211,11481147,,,,,0,CP NONE</span>
+For example: S,X,X,X,MARTIN,PARIS,BIN,L1111482,2,,128,20191211,11481147,,,,,0,CP NONE
 
 ##### Format T: TSV - Tab Separated Value
 
@@ -103,8 +104,10 @@ Each field is separated by a tab.
 ##### Format X: XML
 
 ```
-<?xml version="1.0" encoding="UTF-8"?><CAT><TRANSFER DIRECT="S" STATE="X" PHASE="X" PHASESTEP="X" SPART="MARTIN" RPART="PARIS" IDF="ID_EXITL" IDT="L1111423" NBR="2" FNAME="" PRI="128" DATEK="20191211" TIMEK="11422580" PARM="" SUSER="" RUSER="" COMMENT="" DIAGI="0" DIAGP="CP NONE"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <TRANSFER DIRECT="R" STATE="X" PHASE="X" PHASESTEP="X" SPART="PARIS" RPART="MARTIN" IDF="BIN" IDT="L1111415" NBR="2" FNAME="pub\\L1111415_A000002K.RCV" PRI="128" DATEK="20191211" TIMEK="11415981" PARM="My  &quot;param&quot; with quote" SUSER="" RUSER="" COMMENT="" DIAGI="0" DIAGP="CP NONE"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <TOTAL>2</TOTAL></CAT>      
+<?xml version="1.0" encoding="UTF-8"?><CAT><TRANSFER DIRECT="S" STATE="X" PHASE="X" PHASESTEP="X" SPART="MARTIN" RPART="PARIS" IDF="ID_EXITL" IDT="L1111423" NBR="2" FNAME="" PRI="128" DATEK="20191211" TIMEK="11422580" PARM="" SUSER="" RUSER="" COMMENT="" DIAGI="0" DIAGP="CP NONE"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <TRANSFER DIRECT="R" STATE="X" PHASE="X" PHASESTEP="X" SPART="PARIS" RPART="MARTIN" IDF="BIN" IDT="L1111415" NBR="2" FNAME="pub\\L1111415_A000002K.RCV" PRI="128" DATEK="20191211" TIMEK="11415981" PARM="My  &quot;param&quot; with quote" SUSER="" RUSER="" COMMENT="" DIAGI="0" DIAGP="CP NONE"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+<TOTAL>2</TOTAL></CAT>      
 ```
+
 `                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     `
 
 [Return to Command index](../../)

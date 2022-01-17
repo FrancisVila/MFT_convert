@@ -14,7 +14,7 @@
 Use this field to define the file access control. You can use the UserCtrl parameter to define access to files under another credential (UserId parameter) other than the user who started Transfer CFT.
 
 - YES:
-    {{< TransferCFT/componentshortname >}} checks the user access rights on the file to be transferred.
+    Transfer CFT{{< TransferCFT/componentshortname >}} checks the user access rights on the file to be transferred.
 - NO: No check is performed.
 
 > **Note**

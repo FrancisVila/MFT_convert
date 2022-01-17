@@ -22,7 +22,8 @@ In either command line or the user interface, set the following:
 | cft.cftlog.backup_count  | 3  | Number of rotate out files.  |
 
 
-**Example**
+****Example****
+
 ```
 CFTLOG ID = 'LOG0',
 FNAME = '$CFTLOG',

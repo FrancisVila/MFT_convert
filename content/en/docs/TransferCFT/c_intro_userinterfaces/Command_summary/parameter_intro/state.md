@@ -53,18 +53,18 @@ Select one of the following transfer states:
 
 State of the partner:
 
-- **ACTIVEBOTH** (default)- partner active
+- ACTIVEBOTH (default)- partner active
     in all modes
-- <span style="font-weight: bold;">ACTIVEREQ</span> - partner active in request
+- ACTIVEREQ - partner active in request
     mode only
-- <span style="font-weight: bold;">ACTIVESERV</span> - partner active in server
+- ACTIVESERV - partner active in server
     mode only
-- <span style="font-weight: bold;">NOACTIVE</span> - partner not active
+- NOACTIVE - partner not active
 
 #### PKICER (PKIUTIL tool)
 
 State is the status of an imported certificate.
-If activated, it can be used by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>. Options are:
+If activated, it can be used by Transfer CFT{{< TransferCFT/componentshortname  >}}. Options are:
 
 - Act - activated
 - Inact - deactivated

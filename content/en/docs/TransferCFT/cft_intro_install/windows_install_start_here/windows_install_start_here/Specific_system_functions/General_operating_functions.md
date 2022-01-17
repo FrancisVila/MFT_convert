@@ -43,7 +43,7 @@ before operating Transfer CFT:
 
 ## Logical working files
 
-**Environment variables**
+****Environment variables****
 
 The following table lists the logical names of files, and
 defines the role.
@@ -78,7 +78,7 @@ When settings parameters for Transfer CFT, a user wanting to invoke
 a logical file name, must systematically prefix the character string for
 the logical name with the "$" symbol.
 
-Example of a logical name statement: `fname = $CFTCOM`
+Example of a logical name statement: fname = $CFTCOM
 
 Using operating system environment variables
 
@@ -105,7 +105,7 @@ is operating in Client/Server with a UNIX Transfer CFT.
 > file names. You can overcome this problem in a batch file by using
 > certain operating system functions.
 
-**Example**
+****Example****
 
 The following command sets the CFTPARM environment variable
 to the value of TEST:
@@ -121,6 +121,7 @@ the string %CFTPARM% with the string TEST. The command submitted
 to CFTUTIL is as follows:
 
 `CFTFILE type = PARAM, fname = TEST`
+
 <span id="Using a definition file"></span>
 
 ## Using a definition file
@@ -136,7 +137,7 @@ For Transfer CFT Windows the only case where the use of
 a logical name definition file is necessary is when you use the extraction
 tool for standard traces (ATM tool).
 
-**Example**
+****Example****
 
 The following line provides an example of the content of a line in the definition
 file.
@@ -151,7 +152,7 @@ record length 1024 characters (R=1024) and file is binary type (T+B).
 
 ### Change of name or path of definition file
 
-**Environment variable**
+****Environment variable****
 
 #### CFTNMLOG
 

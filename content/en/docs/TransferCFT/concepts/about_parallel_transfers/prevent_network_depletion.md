@@ -12,7 +12,7 @@ The principal reasons for this are:
 1. Establishing protocol sessions can be very costly (TLS for example).
 1. The Transfer CFT requester side tries to start all active transfers up to the MAXTRANS value regardless of the actual number of network connections used.
 
-**Consequently**
+****Consequently****
 
 - Due to reasons 1 and 2, the number of sessions is at least equal to the number of simultaneous transfers.
 - Due to reason 3, there can be intervals of time where sessions with no active transfer exists. Let's call such sessions "idle" sessions. This sometimes leads to a number of sessions greater than the number of transfers.
@@ -22,7 +22,8 @@ When the network resource depletion prevention (NRDP) feature is enabled ([below
 
 This feature is only effective when you frequently reach the number of simultaneous connections (MAXCNX) while the actual number of transfers is less than the MAXTRANS. In this case, CFTN09E log messages can flood the log and the Transfer CFT behavior may be adversely affected.
 
-**Example error message**
+****Example error message****
+
 `CFTH09E Network connect request local error <PART=PARIS0457 NCR=416 NCS=MAXCNX NET=TCP>`
 
 And the corresponding catalog entry  would include the DIAGI=416 and DIAGP=MAXCNX.
@@ -48,28 +49,29 @@ The NRDP feature only applies to the TCP/IP network, and requires the configurat
 
 ### Log messages
 
-The [related messages](../../../troubleshoot_intro/messages_and_error_codes_start_here/cftn_messages) only display in the log when the `cft.server.nrdp_enable=yes`.
+The [related messages](../../../troubleshoot_intro/messages_and_error_codes_start_here/cftn_messages) only display in the log when the cft.server.nrdp\_enable=yes.
 
-- `CFTN05I Network resource depletion prevention enabled for class %d`
-- `CFTN06I No network class suitable for resource depletion prevention activation`
+- CFTN05I Network resource depletion prevention enabled for class %d
+- CFTN06I No network class suitable for resource depletion prevention activation
 
 ### Calculating the threshold
 
 Given the value of MAXTRANS and the MAXCNX for a selected CFTNET object, the threshold for network capacity is calculated as follows:
 
 `threshold = (MAXCNX+MAXTRANS)/2`
-**Example**
+
+****Example****
 
 This example uses the following values and shows the different outcomes with and without NRDP enabled. In this example, we have 10 new transfers to perform that require new sessions to be opened (for example, with partners that do not already have an established session).
 
-- `MAXCNX `= 450 and `MAXTRANS `= 400, therefore `THRESHOLD`=425
-- `NBCNX `is the current number of open sessions = 450
-- `NBTRANS `is the number of active transfers = 300
+- MAXCNX = 450 and MAXTRANS = 400, therefore THRESHOLD=425
+- NBCNX is the current number of open sessions = 450
+- NBTRANS is the number of active transfers = 300
 
-**NRDP not enabled**
+****NRDP not enabled****
 
-Because the number of sessions would exceed the `MAXCNX `if a new session is established, the 10 new transfers must wait for a network resource to become available (a `416 MAXCNX`  message displays).
+Because the number of sessions would exceed the MAXCNX if a new session is established, the 10 new transfers must wait for a network resource to become available (a 416 MAXCNX  message displays).
 
-**NRDP enabled**
+****NRDP enabled****
 
-With NRDP enabled, the 10 new transfers are processed (idle sessions are reused). As a precaution, Transfer CFT closes idle sessions in order to reduce `NBCNX `and defer the network connection request for new sessions until` NBCNX <= THRESHOLD`.
+With NRDP enabled, the 10 new transfers are processed (idle sessions are reused). As a precaution, Transfer CFT closes idle sessions in order to reduce NBCNX and defer the network connection request for new sessions until NBCNX &lt;= THRESHOLD.

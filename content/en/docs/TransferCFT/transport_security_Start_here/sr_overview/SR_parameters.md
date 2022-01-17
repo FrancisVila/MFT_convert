@@ -4,7 +4,7 @@
     "weight": "270"
 }While some of the Transfer CFT UCONF parameters for Secure Relay are quite technical, most have default values that should be suitable for common usage.
 
-The MA and RA parameters are described in the following separate tables, and are all prefixed by **secure\_relay**.
+The MA and RA parameters are described in the following separate tables, and are all prefixed by ****secure\_relay****.
 
 <span id="_Toc362510690"></span>
 
@@ -42,7 +42,7 @@ In the Secure Relay parameters table below:
 
 - The letter N is used in parameter names.
 - Parameters that appear in Master Agent configuration file are displayed in bold.
-- For an array, use the notation format **secure\_relay.ra.N.parameter**, where is between and .
+- For an array, use the notation format ****secure\_relay.ra.N.parameter****, where N is between 0 and number of routers – 1.
 
 
 | Parameter | Type | Default | Comment |
@@ -51,7 +51,7 @@ In the Secure Relay parameters table below:
 | secure_relay.ra.N.dmz | String | DMZ0 | Logical name of the DMZ where the Router Agent is running, with a maximum of 32 characters.  |
 | secure_relay.ra.N.host | String | None | Router Agent IP address or FQDN. |
 | secure_relay.ra.N.admin_port | Int | 6810 | Router Agent administration port. |
-| secure_relay.ra.N.comm_port | Int | 6811 | Router Agent communication port.<br/> This parameter is specific to each {{< TransferCFT/componentshortname  >}} using the Router Agent. If more than one {{< TransferCFT/componentshortname  >}} uses the same Router Agent, each {{< TransferCFT/componentshortname  >}} must have a unique value. |
+| secure_relay.ra.N.comm_port | Int | 6811 | Router Agent communication port.<br/> This parameter is specific to each Transfer CFT{{< TransferCFT/componentshortname  >}} using the Router Agent. If more than one Transfer CFT{{< TransferCFT/componentshortname  >}} uses the same Router Agent, each Transfer CFT{{< TransferCFT/componentshortname  >}} must have a unique value. |
 | secure_relay.ra.N. nb_data_connections | Int | 5 | Number of data connections between the Master Agent and the Router Agent.  |
 | secure_relay.ra.N. data_channel_ciphering | Bool | No | Activates data connections ciphering. |
 | secure_relay.ra.N. outcall_network_interface | String | None | Address to bind for outgoing calls. |
@@ -59,7 +59,7 @@ In the Secure Relay parameters table below:
 
 ### Define the Router Agent to use  
 
-The `srdmz` parameter in the CFTPART command allows you to specify a dedicated DMZ for outgoing connections.
+The [srdmz]() parameter in the CFTPART command allows you to specify a dedicated DMZ for outgoing connections.
 
 ```
 secure_relay.ra = n (number of Router Agents)

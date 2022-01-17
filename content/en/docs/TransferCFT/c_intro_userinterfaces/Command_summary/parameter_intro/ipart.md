@@ -8,7 +8,7 @@
 
 #### CFTPART
 
-**\[IPART = identifier\]**
+****\[IPART = identifier\]****
 
 Local identifier of an intermediate
 partner.
@@ -21,7 +21,7 @@ and forward](../../../../concepts/transfer_command_overview/store_and_forward_mo
 
 #### SEND
 
-**\[IPART = identifier\]**
+****\[IPART = identifier\]****
 
 Intermediate partner local identifier.
 

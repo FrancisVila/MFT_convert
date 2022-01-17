@@ -8,8 +8,9 @@
 
 #### CFTSEND, CFTRECV, SEND, RECV
 
-**\[NCOMP = { 0 | 15 }\]**
-**PeSIT D CFT profile, PeSIT E**
+****\[NCOMP = { 0 | 15 }\]****
+
+****PeSIT D CFT profile, PeSIT E****
 
 Compression of on-line data requested.
 

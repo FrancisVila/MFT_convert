@@ -2,8 +2,8 @@
     "title": "About  API applications",
     "linkTitle": "Build API applications and exits",
     "weight": "190"
-}This book describes one of two {{< TransferCFT/componentshortname  >}} programming interfaces,
-the API applications. This interface enables {{< TransferCFT/componentshortname  >}} to work in conjunction
+}This book describes one of two Transfer CFT{{< TransferCFT/componentshortname  >}} programming interfaces,
+the API applications. This interface enables Transfer CFT{{< TransferCFT/componentshortname  >}} to work in conjunction
 with external applications.
 
 This book begins with this topic
@@ -11,13 +11,13 @@ which introduces the two application families that can be developed using
 these two interfaces and the development kit contents for building APIs.
 
 - Applications communicating
-    with {{< TransferCFT/componentshortname >}} to submit and monitor transfers or query the catalog,
+    with Transfer CFT{{< TransferCFT/componentshortname >}} to submit and monitor transfers or query the catalog,
     for example. See [Using APIs.](https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/Prog/API/Using_APIs.htm)
 - Exits enabling
     user programs to take control during a send operation. See [Managing
     exits.](https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/Prog/Exits/Managing_exits.htm)
 
-{{< TransferCFT/componentshortname  >}} only provides a programming interface in C. This programming
+Transfer CFT{{< TransferCFT/componentshortname  >}} only provides a programming interface in C. This programming
 interface can only be used if the development kit is installed on your
 system, C compiler and associated tools.
 
@@ -27,9 +27,9 @@ create an API application.
 
 | Topic  | Details  |
 | --- | --- |
-| <a href="creating_an_api_application">Creating an API application</a> | Describes the procedure to create an API application in {{< TransferCFT/componentshortname  >}} UNIX. |
-| <a href="creating_an_exit_file">Creating an exit file</a> | Describes how to create an exit file for {{< TransferCFT/componentshortname  >}} UNIX. |
-| <a href="creating_a_directory_exit">Creating a directory exit</a> | Describes how to create a directory exit in {{< TransferCFT/componentshortname  >}} UNIX. |
+| <a href="creating_an_api_application">Creating an API application</a> | Describes the procedure to create an API application in Transfer CFT{{< TransferCFT/componentshortname  >}} UNIX. |
+| <a href="creating_an_exit_file">Creating an exit file</a> | Describes how to create an exit file for Transfer CFT{{< TransferCFT/componentshortname  >}} UNIX. |
+| <a href="creating_a_directory_exit">Creating a directory exit</a> | Describes how to create a directory exit in Transfer CFT{{< TransferCFT/componentshortname  >}} UNIX. |
 | Creating an accounting exit | Describes how to create an accounting exit in UNIX. |
 
 
@@ -37,7 +37,7 @@ create an API application.
 
 ## Development kit contents
 
-The development kit used to integrate the {{< TransferCFT/componentshortname  >}} APIs is divided
+The development kit used to integrate the Transfer CFT{{< TransferCFT/componentshortname  >}} APIs is divided
 into several directories:
 
 - *&lt;installdir>/lib/*
@@ -54,7 +54,7 @@ into several directories:
     module; this library is required for any application using the end of
     transfer EXITs
 
-To generate a user application based on the {{< TransferCFT/componentshortname  >}} APIs and use
+To generate a user application based on the Transfer CFT{{< TransferCFT/componentshortname  >}} APIs and use
 the file exit function, you must link the following with the *libcftapi.a* and *libexe.a* libraries.
 
 - &lt;installdir>/runtime/src/capi/ containing

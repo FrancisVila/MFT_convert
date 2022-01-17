@@ -2,7 +2,7 @@
     "title": "Data models and partners",
     "linkTitle": "About data models and partners ",
     "weight": "170"
-}The purpose of {{< TransferCFT/componentshortname  >}} is to exchange and
+}The purpose of Transfer CFT{{< TransferCFT/componentshortname  >}} is to exchange and
 manage files transfers, meaning a file
 exchange between two or more computers.
 
@@ -15,13 +15,13 @@ a network (TCP/IP). A file transfer consists of sending:
 - Technical parameters
     associated with the file
 
-Prior to creating new data flows with {{< TransferCFT/componentshortname  >}}, you should first familiarize yourself with a few key terms and concepts. This topic introduces the partner definitions, network and protocol concepts, and basic send and receive command parameters.
+Prior to creating new data flows with Transfer CFT{{< TransferCFT/componentshortname  >}}, you should first familiarize yourself with a few key terms and concepts. This topic introduces the partner definitions, network and protocol concepts, and basic send and receive command parameters.
 
 <span id="Defining_partners__Start_here"></span><span id="CFTPART___Definition_of_a_Partner"></span>
 
-## What is a {{< TransferCFT/componentshortname  >}} partner?
+## What is a Transfer CFT{{< TransferCFT/componentshortname  >}} partner?
 
-In {{< TransferCFT/componentshortname  >}} a partner is
+In Transfer CFT{{< TransferCFT/componentshortname  >}} a partner is
 a logical entity such as a bank, a government agency, or trading partner, which can
 be the origin or destination of a data exchange, and corresponds
 to a remote file transfer controller.
@@ -69,9 +69,9 @@ For your network connection, CFTTCP, you should define the:
 - Host: Hostname or IP address of the remote partner
 - Class: this refers to the network used, as defined in your local environment by a CFTNET object
 
-#### {{< TransferCFT/componentshortname  >}} protocols
+#### Transfer CFT{{< TransferCFT/componentshortname  >}} protocols
 
-{{< TransferCFT/componentshortname  >}} supports the following standard protocols:
+Transfer CFT{{< TransferCFT/componentshortname  >}} supports the following standard protocols:
 
 - PeSIT
 - OFTP
@@ -85,34 +85,34 @@ of data, the possibility of resuming a transfer after an incident, etc.
 
 Transferring files consists of defining characteristics for partners and your flows. The previous section provided details on basic partner parameters and concepts. This section defines the concepts you will need in order to create data flows.
 
-There are 4 {{< TransferCFT/componentshortname  >}} modes that relate to data transfer. Two modes relate to uploading or downloading data, and the other two relate to who instigates the flow. We'll begin by discussing who begins the data flow conversation.
+There are 4 Transfer CFT{{< TransferCFT/componentshortname  >}} modes that relate to data transfer. Two modes relate to uploading or downloading data, and the other two relate to who instigates the flow. We'll begin by discussing who begins the data flow conversation.
 
-- **Requester mode**: This is the partner that initiates the connection. It is important to note that is the beginningof theconnection and not the start of a transfer. The requester waits for the server (remote partner) to accept the connection. They can then mutually identify, and depending on the definition, exchange data transfer attributes.
-- **Server mode**: This partner is available for transfer requests coming from the network. If it recognizes the partner and protocol, it can accept and proceed with recording the request in the catalog.
+- ****Requester mode****: This is the partner that initiates the connection. It is important to note that this is the beginning of the protocol connection and not the start of a transfer. The requester waits for the server (remote partner) to accept the connection. They can then mutually identify, and depending on the definition, exchange data transfer attributes.
+- ****Server mode****: This partner is available for transfer requests coming from the network. If it recognizes the partner and protocol, it can accept and proceed with recording the request in the catalog.
 
-The next two mode definitions refer to which partner is sending the data, either a message or a file. The terms used in {{< TransferCFT/componentshortname  >}} are:
+The next two mode definitions refer to which partner is sending the data, either a message or a file. The terms used in Transfer CFT{{< TransferCFT/componentshortname  >}} are:
 
-- **Sender mode**: Transfers or uploads the available data to a remote partner.
-- **Receiver** **mode**: Downloads available data, either a file or message, from the partner.
+- ****Sender mode****: Transfers or uploads the available data to a remote partner.
+- ****Receiver**** **mode**: Downloads available data, either a file or message, from the partner.
 
 Additional parameters define attributes for scanning folders for files, updating the catalog, creating transfer records, and so on.
 
 ## Model files
 
-Every file transfer requires a model as part of the data flow definition. By default, {{< TransferCFT/componentshortname  >}} provides a model so that you do not have to create this object, the IDF (logical file identifier), in order to perform your first file transfers. Once you feel comfortable with {{< TransferCFT/componentshortname  >}} commands and configuration concepts, you can modify the model attributes, such as the file name, translation, compression, end-of-transfer scripts, and so on.
+Every file transfer requires a model as part of the data flow definition. By default, Transfer CFT{{< TransferCFT/componentshortname  >}} provides a model so that you do not have to create this object, the IDF (logical file identifier), in order to perform your first file transfers. Once you feel comfortable with Transfer CFT{{< TransferCFT/componentshortname  >}} commands and configuration concepts, you can modify the model attributes, such as the file name, translation, compression, end-of-transfer scripts, and so on.
 
 - When sending, the CFTSEND ID describes the characteristics of the local file to send
 - When receiving, the CFTRECV ID describes the characteristics of the file to receive locally
 
 ## File transfer concepts
 
-Most of the tasks that {{< TransferCFT/componentshortname  >}} performs
+Most of the tasks that Transfer CFT{{< TransferCFT/componentshortname  >}} performs
 involve configuring and executing file transfers, as well as processing
 information if necessary.
 
 ### Basic commands for sending and receiving data
 
-{{< TransferCFT/componentshortname  >}} provides models for sending and receiving data:
+Transfer CFT{{< TransferCFT/componentshortname  >}} provides models for sending and receiving data:
 
 - CFTSEND: Defines the model for sending transfers
 - CFTRECV: Defines the model for receiving transfers
@@ -124,19 +124,19 @@ From there you can use SEND and RECV commands to perform file and message trans
 > Tip  
 > Transfer CFT delivers configuration samples with each installation that allow you to begin performing transfers with a minimum of information. Refer to the dedicated sections in this User's Guide for information on the more complex parameter settings for your flows.
 
-### {{< TransferCFT/componentshortname  >}} to application communication
+### Transfer CFT{{< TransferCFT/componentshortname  >}} to application communication
 
-This paragraph overviews how communication between {{< TransferCFT/componentshortname  >}} and applications occurs.
+This paragraph overviews how communication between Transfer CFT{{< TransferCFT/componentshortname  >}} and applications occurs.
 
 Application to
-{{< TransferCFT/componentshortname  >}}:
+Transfer CFT{{< TransferCFT/componentshortname  >}}:
 
 - Requests
     submitted through the programming interface
 - Requests
-    submitted through the {{< TransferCFT/componentshortname >}} utility or GUI
+    submitted through the Transfer CFT{{< TransferCFT/componentshortname >}} utility or GUI
 
-{{< TransferCFT/componentshortname  >}} to application:
+Transfer CFT{{< TransferCFT/componentshortname  >}} to application:
 
 - An end-of-transfer
     or transfer error procedure is activated
@@ -145,7 +145,7 @@ Application to
 - The catalog
     is queried by the programming interface
 
-{{< TransferCFT/componentshortname  >}} needs certain objects to be
+Transfer CFT{{< TransferCFT/componentshortname  >}} needs certain objects to be
 defined to enable a file transfer. The objects that you define supply
 the following types of information:
 
@@ -168,7 +168,7 @@ the following types of information:
 
 ### Send models
 
-In {{< TransferCFT/componentshortname  >}} you create the
+In Transfer CFT{{< TransferCFT/componentshortname  >}} you create the
 CFTSEND template object, used to specify the default values for:
 
 - The name and local
@@ -189,7 +189,7 @@ CFTSEND template object, used to specify the default values for:
 
 ### Receive models
 
-In {{< TransferCFT/componentshortname  >}} you create the
+In Transfer CFT{{< TransferCFT/componentshortname  >}} you create the
 CFTRECV template object, used to specify the default values for:
 
 - Give the default

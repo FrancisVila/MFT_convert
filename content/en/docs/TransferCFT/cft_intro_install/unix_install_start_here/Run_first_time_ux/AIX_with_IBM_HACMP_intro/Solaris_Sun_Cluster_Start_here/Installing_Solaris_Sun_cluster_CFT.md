@@ -27,47 +27,89 @@ After you install Transfer CFT you must modify and reinterpret the profile envir
 Example of a modified profil**e** file
 
 `#--------------------------------------------`
+
 `# Starting CFT configuration`
+
 `# Fri Sep 26 17:28:32 MEST 2006`
+
 `#----------------------------------------`
+
 `CFTDIRINSTALL=/home/cft/cft`
+
 `CFTDIRRUNTIME =/home/cft/cft/runtime`
+
 `CFTDIRAPI=$CFTDIRRUNTIME /src/capi/`
+
 `CFTDIRDAT=$CFTDIRRUNTIME/data/`
+
 `CFTDIREXIT=$CFTDIRRUNTIME/src/exit/`
+
 `CFTDIRINS=$CFTDIRRUNTIME/conf/`
+
 `CFTDIRLOG=$CFTDIRRUNTIME/log/`
+
 `CFTDIRPUB=$CFTDIRRUNTIME/pub`
+
 `CFTDIRSEC=$CFTDIRRUNTIME/conf/pki/`
+
 `CFTHINI=$CFTDIRRUNTIME/data/sec.ini`
+
 `CFTHPARM=$CFTDIRRUNTIME/data/secparm`
+
 `CFTACNT=$CFTDIRRUNTIME/data/cft_acnt`
+
 `CFTACNTA=$CFTDIRRUNTIME/data/cft_acnta`
+
 `CFTLOG=$CFTDIRRUNTIME/data/cft_log`
+
 `CFTLOGA=$CFTDIRRUNTIME/data/cft_loga`
+
 `CFTCLUSTERSHARE=/global/cft/param`
+
 `CFTPKIDIR=$CFTCLUSTERSHARE/pki`
+
 `CFTPKU=$CFTCLUSTERSHARE/pki/pkibase`
+
 `CFTCATA=$CFTCLUSTERSHARE/cft_cata`
+
 `CFTCOM=$CFTCLUSTERSHARE/cft_com`
+
 `CFTPARM=$CFTCLUSTERSHARE/cft_parm`
+
 `CFTPART=$CFTCLUSTERSHARE/cft_part`
+
 ` `
+
 `PATH=$PATH:$CFTDIRINSTALL/bin:$CFTDIREXIT:$CFTDIRAPI`
+
 `export PATH`
+
 `export CFTDIRINSTALL CFTDIRRUNTIME CFTDIRAPI CFTDIRDAT CFTDIREXIT CFTDIRINS`
+
 `export CFTDIRLOG CFTDIRPUB CFTDIRSEC`
+
 `export CFTHINI CFTHPARM CFTPKIDIR`
+
 `export CFTPKU CFTACNT CFTACNTA CFTCATA CFTCOM CFTLOG CFTLOGA`
+
 `export CFTPARM CFTPART`
+
 `export CFTCLUSTERSHARE`
+
 `#-------------------------------------------`
+
 `# CFT configuration completed`
+
 `# Fri Sep 26 17:28:35 MEST 2003`
+
 `#-----------------------------------------`
+
 `CFTCLUSTERSND=/global/cft/snd`
+
 `CFTCLUSTERRCV=/global/cft/rcv`
+
 `export CFTCLUSTERSND CFTCLUSTERRCV`
+
 <span id="Solaris_Sun_cluster_monitor_configuration"></span>
 
 ## Transfer CFT configuration

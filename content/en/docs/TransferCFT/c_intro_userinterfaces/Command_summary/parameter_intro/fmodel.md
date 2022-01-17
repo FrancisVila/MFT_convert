@@ -8,9 +8,10 @@
 
 #### DISPLAY, LISTPKI
 
-**\[FMODEL= { string }\]     **
-**{
-0...512 characters}**
+****\[FMODEL= { string }\]     ****
+
+****{
+0...512 characters}****
 
 Complete name or logical name of the XML model file. The parameter default value is fixed.
 

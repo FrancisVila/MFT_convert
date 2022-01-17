@@ -38,7 +38,7 @@ The "Application Experience" service should be enabled when using Transfer CFT. 
 Before beginning the upgrade or update procedure:
 
 - You require the product and Installer version number and SP level in order to choose the appropriate procedure. See the section [Determine the Installer and product version](#Determin).
-- Download the Transfer CFT Upgrade Pack, available on Sphere at [support.axway.com](https://support.axway.com/). The Transfer CFT Upgrade Pack name has the general format `Transfer_CFT_3.x_<Install/SP/Patch>_<OS>_<BN>.zip`. Do not unzip the .zip file.
+- Download the Transfer CFT Upgrade Pack, available on Sphere at [support.axway.com](https://support.axway.com/). The Transfer CFT Upgrade Pack name has the general format Transfer\_CFT\_3.x\_&lt;Install/SP/Patch>\_&lt;OS>\_&lt;BN>.zip. Do not unzip the .zip file.
 
 Stop the Transfer CFT server and the Transfer CFT UI server, by entering:
 

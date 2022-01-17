@@ -4,8 +4,9 @@
     "weight": "610"
 }### daction
 
-**SEND or RECV**
-**\[daction= { <u>ERROR</u> | RESUME} \]**
+****SEND or RECV****
+
+****\[daction= { <u>ERROR</u> | RESUME} \]****
 
 Use this option to manage erroneous duplicate file transfers.
 

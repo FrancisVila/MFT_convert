@@ -8,24 +8,24 @@
 
 **UNIX/Windows only**
 
-The {{< TransferCFT/componentshortname  >}} acceleration feature offers significantly faster transfer rates for large-file transfers, traveling long-distances over high bandwidth networks.
+The Transfer CFT{{< TransferCFT/componentshortname  >}} acceleration feature offers significantly faster transfer rates for large-file transfers, traveling long-distances over high bandwidth networks.
 
-{{< TransferCFT/componentshortname  >}} achieves this transfer acceleration using two methods:
+Transfer CFT{{< TransferCFT/componentshortname  >}} achieves this transfer acceleration using two methods:
 
 - UDT: a UDP-based protocol (User Datagram Protocol)
 - pTCP: parallel TCP, which uses multiple parallel connections
 
 ### UDT description
 
-UDT is a transport protocol that {{< TransferCFT/componentshortname  >}} can use to manage applications over high-speed networks. UDT uses UDP, a lower layer message, to transfer bulk data.
+UDT is a transport protocol that Transfer CFT{{< TransferCFT/componentshortname  >}} can use to manage applications over high-speed networks. UDT uses UDP, a lower layer message, to transfer bulk data.
 
 ## Configuring accelerated communication
 
-To enable accelerated communication in CFTUTIL use the unified configuration command `UCONFSET`.
+To enable accelerated communication in CFTUTIL use the unified configuration command UCONFSET.
 
 ### Basic configuration
 
-You can globally enable or disable the acceleration function in the {{< TransferCFT/componentshortname  >}} unified configuration. Next, indicate the network resources that you want to have accelerated by UDT and pTCP.
+You can globally enable or disable the acceleration function in the Transfer CFT{{< TransferCFT/componentshortname  >}} unified configuration. Next, indicate the network resources that you want to have accelerated by UDT and pTCP.
 
 #### Parameters
 
@@ -40,9 +40,9 @@ You can globally enable or disable the acceleration function in the {{< Transfer
 #### Example in CFTUTIL
 
 ```
-`CFTUTIL UCONFSET ID=acceleration.enable, VALUE=yes`  
-`CFTUTIL UCONFSET ID=acceleration.udt   ,    VALUE=NET1`  
-`CFTUTIL UCONFSET ID=acceleration.ptcp  ,   VALUE=NET0 NET_TEST`
+CFTUTIL UCONFSET ID=acceleration.enable, VALUE=yes  
+CFTUTIL UCONFSET ID=acceleration.udt ,    VALUE=NET1  
+CFTUTIL UCONFSET ID=acceleration.ptcp ,   VALUE=NET0 NET_TEST
 ```
 
 In this example, all protocols (CFTPROT objects) using NET1 are accelerated by UDT, and those using NET0 and NET\_TEST are accelerated by pTCP.
@@ -84,11 +84,11 @@ Additional attribute parameters are available for advanced users. The default va
 
 #### UDT parameters
 
-Refer to the [UCONF parameters](../uconf_directory) table `acceleration.udt.<logicalID>`.
+Refer to the [UCONF parameters](../uconf_directory) table acceleration.udt.&lt;logicalID>.
 
 #### pTCP parameters
 
-Refer to the [UCONF parameters](../uconf_directory) table `acceleration.ptcp.<logicalID>`.
+Refer to the [UCONF parameters](../uconf_directory) table acceleration.ptcp.&lt;logicalID>.
 
 > **Note**
 >
@@ -98,16 +98,16 @@ Refer to the [UCONF parameters](../uconf_directory) table `acceleration.ptcp.<l
 
 ## pTCP protocol versions
 
-{{< TransferCFT/componentshortname  >}} 3.0.1 SP2 and higher, and {{< TransferCFT/componentshortname  >}} 2.7.1 SP6, support a more recent version of the pTCP protocol than previously supported by {{< TransferCFT/componentshortname  >}}. This newer version of pTCP offers the following advantages:
+Transfer CFT{{< TransferCFT/componentshortname  >}} 3.0.1 SP2 and higher, and Transfer CFT{{< TransferCFT/componentshortname  >}} 2.7.1 SP6, support a more recent version of the pTCP protocol than previously supported by Transfer CFT{{< TransferCFT/componentshortname  >}}. This newer version of pTCP offers the following advantages:
 
 - Multi-node architecture support
 - Exchange capability with Axway SecureTransport
 
-Note that the new pTCP support is **not** compatible with the previously used version of pTCP. This means that {{< TransferCFT/componentshortname  >}} 3.0.1 SP2 and higher, and {{< TransferCFT/componentshortname  >}} 2.7.1 SP6, **cannot** exchange files with earlier versions of {{< TransferCFT/componentshortname  >}} using the pTCP protocol.
+Note that the new pTCP support is ****not**** compatible with the previously used version of pTCP. This means that Transfer CFT{{< TransferCFT/componentshortname  >}} 3.0.1 SP2 and higher, and Transfer CFT{{< TransferCFT/componentshortname  >}} 2.7.1 SP6, ****cannot**** exchange files with earlier versions of Transfer CFT{{< TransferCFT/componentshortname  >}} using the pTCP protocol.
 
 For more information on supported platforms and transfer acceleration, refer to [Platform-specific functionality]().
 
-**Related topics**
+****Related topics****
 
 - [About the unified configuration](../)
 - [Unified configuration (CFTUTIL)](../uconf_w_cftutil)

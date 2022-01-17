@@ -26,6 +26,6 @@ The XFBLog includes the following attributes.
 | TransferTag  | Transfer tag  | Variable string  | 20  |
 
 
-**Related topics**
+****Related topics****
 
 [XFBTransfer requests](../xfbtransfer_request)

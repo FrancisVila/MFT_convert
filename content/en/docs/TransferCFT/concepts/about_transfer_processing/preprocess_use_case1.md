@@ -14,7 +14,7 @@
 
 You can use EXECE to define the error file to execute when an error leads to the K (killed) phase step. This value overrides the CFTPARM EXECRE/EXECSE value.
 
-**\[EXECE { string max\_length=512}\]**
+****\[EXECE { string max\_length=512}\]****
 
 Error file to execute when an error leads to the K (killed) PHASESTEP. This value overrides the CFTPARM [EXECRE](../../../c_intro_userinterfaces/command_summary/parameter_intro/execre)/[EXECSE](../../../c_intro_userinterfaces/command_summary/parameter_intro/execse) value.
 
@@ -22,10 +22,10 @@ Error file to execute when an error leads to the K (killed) PHASESTEP. This valu
 
 After you create the script to be executed when an error occurs, point to the script path.
 
-- Use either `CFTUTIL send `or` CFTUTIL recv`
-- To set the script to execute, enter: `exece=<yourscriptfileaddress>`
+- Use either CFTUTIL send or CFTUTIL recv
+- To set the script to execute, enter: exece=&lt;yourscriptfileaddress>
 - You can set the default behavior in the configuration file using:
-    -   Unix: `CFTUTIL @<conffile>`
-    -   Windows: `CFTUTIL #<conffile> `
-- Use the parameters `DIAGP `an `DIAGC `to specify a customized error that in the DIAGP/DIAGC catalog respectively.
+    -   Unix: CFTUTIL @&lt;conffile>
+    -   Windows: CFTUTIL #&lt;conffile>
+- Use the parameters DIAGP an DIAGC to specify a customized error that in the DIAGP/DIAGC catalog respectively.
 - Use the command [CFTEXT](../../../c_intro_userinterfaces/about_cftutil/configuring_cft_start_here/cftext_command) to generate a configuration file with current parameters.

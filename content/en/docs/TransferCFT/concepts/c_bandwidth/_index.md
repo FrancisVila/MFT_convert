@@ -48,7 +48,7 @@ QQQ\_QQQ\_QQQ
 | uconf:cft.server.bandwidth.cos  | 1  | Total number of class-of-services including the class number zero.  |
 
 
-\*\* Do not configure the parameters **weight\_in** and **weight\_out** for the class-of-service 0, as they cannot be used in this context. See [Concepts.](#Concepts)
+\*\* Do not configure the parameters ****weight\_in**** and ****weight\_out**** for the class-of-service 0, as they cannot be used in this context. See [Concepts.](#Concepts)
 
 ### Global parameters
 
@@ -134,7 +134,7 @@ When defining a class-of-service it is recommended that you configure as follows
 - Requester mode: the configured default class-of-service is a "leaf"
 - File transfers: a "leaf" class-of-service is used
 
-**Related topics**
+****Related topics****
 
 - [Managing bandwidth](t_bandwidth)
 - [Bandwidth control use cases](r_use_cases_bandwidth)

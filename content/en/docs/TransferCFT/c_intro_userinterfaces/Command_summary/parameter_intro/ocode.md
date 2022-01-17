@@ -4,13 +4,13 @@
     "weight": "2390"
 }<span id="ocode"></span>
 
-### 
+### ocode
 
 #### COPYFILE
 
-****\[OCODE =
+**\[OCODE =
 {<u>internal code determined by the system</u>
-| ASCII | EBCDIC}\]**<span style="font-weight: normal;"> </span>**
+| ASCII | EBCDIC}\]**
 
 Output file data code.
 

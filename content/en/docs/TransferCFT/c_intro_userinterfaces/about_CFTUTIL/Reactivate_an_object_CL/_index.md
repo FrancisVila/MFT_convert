@@ -10,7 +10,7 @@ the ACT command to reactivate:
 - CRON object (CFTCRON)
 - Folder object (CFTFOLDER)
 
-**Command guide: [ACT](../../command_summary#ACT)**
+****Command guide: [ACT](../../command_summary#ACT)****
 
 
 | Parameter | Description |

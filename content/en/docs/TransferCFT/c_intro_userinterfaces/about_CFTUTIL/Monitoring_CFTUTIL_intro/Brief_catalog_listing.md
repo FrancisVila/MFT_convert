@@ -46,7 +46,7 @@ See also [Listing catalog contents](../listcat_command).
 For DIAGI and DIAGP refer to: [Codes,
 Diagnostics and Messages](../../../../troubleshoot_intro/messages_and_error_codes_start_here) .
 
-**Example**
+****Example****
 
 **LISTCAT CONTENT = FULL**
 

@@ -4,9 +4,9 @@
     "weight": "310"
 }After defining a flow, you can either save it, or save and deploy it. This enables you to prepare a deployment before pushing the configuration to the source and target systems.
 
-- Click **Save** to store the flow definition locally in .
-- Click **Deploy** to save the definition and push it to the source and target {{< TransferCFT/componentshortname >}} systems.
+- Click ****Save**** to store the flow definition locally in Central Governance.
+- Click ****Deploy**** to save the definition and push it to the source and target Transfer CFT{{< TransferCFT/componentshortname >}} systems.
 
  
 
-**&lt;&lt;** **My first transfer flow**
+****&lt;&lt;**** <a href="../../" class="bold_in_para MCXref xref xrefbold_in_para"><strong><strong>My first transfer flow</strong></strong></a>

@@ -12,26 +12,26 @@ README.TXT file or the Release Notes supplied with the product. The README.TXT f
 
 ## Product presentation
 
-{{< TransferCFT/componentshortname  >}} can operate both as client and/or as server. The
-number of simultaneous transfers that {{< TransferCFT/componentshortname  >}} can support
+Transfer CFT{{< TransferCFT/componentshortname  >}} can operate both as client and/or as server. The
+number of simultaneous transfers that Transfer CFT{{< TransferCFT/componentshortname  >}} can support
 is defined by the license key. It is also limited by the properties of
 the networks used. The TCP/IP network is supported.
 
-## Installing {{< TransferCFT/componentshortname  >}} for Unix
+## Installing Transfer CFT{{< TransferCFT/componentshortname  >}} for Unix
 
-The installation section describes prerequisites and how to install, migrate, update and uninstal{{< TransferCFT/componentshortname  >}}.
+The installation section describes prerequisites and how to install, migrate, update and uninstalTransfer CFT{{< TransferCFT/componentshortname  >}}.
 
 - [Prerequisites](before_you_start_unix/prereqs_overview)
 - [Start the installation](../windows_install_start_here/before_you_start_win/install_transfer_cft_1)
 
 ## UNIX operations
 
-- [{{< TransferCFT/componentshortname >}}
+- [Transfer CFT{{< TransferCFT/componentshortname >}}
     UNIX utilities](run_first_time_ux/use_cft_utilities)
 - [Running
-    {{< TransferCFT/componentshortname >}} for the first time]()
+    Transfer CFT{{< TransferCFT/componentshortname >}} for the first time]()
 - [Building
-    {{< TransferCFT/componentshortname >}} API applications](run_first_time_ux/api_applications_start_here)
+    Transfer CFT{{< TransferCFT/componentshortname >}} API applications](run_first_time_ux/api_applications_start_here)
 - [Activating
     security]()
 - [Specific
@@ -58,9 +58,10 @@ When installing a cluster for high availability, after enabling the cluster opti
 
 ## Installation schematic overview
 
-**Standalone installation**
+****Standalone installation****
 
 ![](/Images/TransferCFT/install01_(2).png)
 
-**Multi-node installation**
-**![](/Images/TransferCFT/install_multi.png)**
+****Multi-node installation****
+
+****![](/Images/TransferCFT/install_multi.png)****

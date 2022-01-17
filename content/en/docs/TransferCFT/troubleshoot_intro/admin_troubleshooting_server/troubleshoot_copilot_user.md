@@ -4,13 +4,13 @@
     "weight": "270"
 }## Failed cftsu
 
-### {{< TransferCFT/unix  >}}
+### UNIX{{< TransferCFT/unix  >}}
 
-**Create process as user is not set correctly**
+****Create process as user is not set correctly****
 
 If the UCONF parameter copilot.misc.createprocessasuser=NO, the cftsu process cannot start. Check and set to YES.
 
-**There is an incorrect setting in cftsu**
+****There is an incorrect setting in cftsu****
 
 The following message may be due to one of the causes listed below.
 
@@ -26,7 +26,7 @@ The following message may be due to one of the causes listed below.
     Fix: Set the root using the chown root:root &lt;file> command.
 
     ```
-    ls -l cftsu-rwsrwxrwx 1 **root root** cftsu
+    ls -l cftsu-rwsrwxrwx 1 ****root root**** cftsu
     ```
 
 1. The setuid option (s) is not set for the cftsu file. Check:  
@@ -45,4 +45,4 @@ The following message may be due to one of the causes listed below.
     ``` > mount
     devpts on /dev/pts type devpts (rw,**nosuid**,gid=5,mode=620)
     ```
-    1.  If the nosuid flag displays, you cannot set the SetUID (set group id) bit on this disk. You can, though, copy the file to another disk and use the UCONF `copilot.unix.cftsu.fname` parameter to set the path to the new file (see the *Transfer CFT Installation Guide - Unix* for more information).
+    1.  If the nosuid flag displays, you cannot set the SetUID (set group id) bit on this disk. You can, though, copy the file to another disk and use the UCONF copilot.unix.cftsu.fname parameter to set the path to the new file (see the *Transfer CFT Installation Guide - Unix* for more information).

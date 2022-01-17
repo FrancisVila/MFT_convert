@@ -65,7 +65,7 @@ npad=@
 ```
 Axway
 Transfer CFT
-v
+v3.9
 ```
 
 File sent over the network, when nlrecl=20:
@@ -85,7 +85,7 @@ Input file when flrecl=20:
 ```
 Axway@@@@@@@@@@@@@@@
 Transfer CFT@@@@@@@@
-v@@@@@@@@@@@@@@
+v3.9@@@@@@@@@@@@@@
 ```
 
 File sent over the network:
@@ -93,7 +93,7 @@ File sent over the network:
 ```
 Axway
 Transfer CFT
-v
+v3.9
 ```
 
 #### Example of padding a variable format file on the receiver side
@@ -112,7 +112,7 @@ File received from the network:
 ```
 Axway
 Transfer CFT
-v
+v3.9
 ```
 
 **Output file**
@@ -120,7 +120,7 @@ v
 ```
 Axway@@@@@@@@@@@@@@@
 Transfer CFT@@@@@@@@
-v@@@@@@@@@@@@@@
+v3.9@@@@@@@@@@@@@@
 ```
 
 #### Example of unpadding a fixed format file on the receiver side
@@ -128,7 +128,9 @@ v@@@@@@@@@@@@@@
 In the RECV profile (CFTRECV object) specify:
 
 `fcode=ASCII`
+
 `frecfm=V`
+
 `fpad=@`
 
 File received from the network
@@ -136,7 +138,7 @@ File received from the network
 ```
 Axway@@@@@@@@@@@@@@@
 Transfer CFT@@@@@@@@
-v@@@@@@@@@@@@@@
+v3.9@@@@@@@@@@@@@@
 ```
 
 Output file
@@ -144,5 +146,5 @@ Output file
 ```
 Axway
 Transfer CFT
-v
+v3.9
 ```

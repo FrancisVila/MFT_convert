@@ -14,12 +14,12 @@ parameter of CFTPARM</u> | *string*}\]**
 - string64     SFTP  
 
 Network identifier by which the
-remote partner identifies itself to the local {{< TransferCFT/componentlongname  >}} (for incoming calls).
+remote partner identifies itself to the local Transfer CFT{{< TransferCFT/componentlongname  >}} (for incoming calls).
 
 The local partner must retrieve the CFTPART description such that the
 associated NSPART parameter corresponds to this value.
 
-The partner must use this name to identify itself to the {{< TransferCFT/transfercftname  >}} during the connection phase. On the partner side, this value corresponds to the NSPART parameter of the CFTPART command that describes the local Transfer CFT.
+The partner must use this name to identify itself to the Transfer CFT{{< TransferCFT/transfercftname  >}} during the connection phase. On the partner side, this value corresponds to the NSPART parameter of the CFTPART command that describes the local Transfer CFT.
 
 **ODETTE: **In server mode, there
 may be several CFTPART objects with the same NRPART. For this purpose,

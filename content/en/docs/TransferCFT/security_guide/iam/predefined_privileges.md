@@ -161,7 +161,7 @@ This role enables applications to create and execute transfers, and groups the f
 - View CFTSEND
 - View nodes status
 
-## Predefined default roles without Central Governance or {{< TransferCFT/flowmanager  >}}
+## Predefined default roles without Central Governance or Flow Manager{{< TransferCFT/flowmanager  >}}
 
 This section describes the predefined roles in Transfer CFT when using PassPort AM without being registered with Central Governance.
 

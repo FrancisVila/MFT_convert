@@ -14,13 +14,13 @@
 
 In addition to RUSER or SUSER, you can provide a password in the RPASSWD/SPASSWD fields to have user authentication, the same as users had if previously using FTP/SSH.
 
-RPASSWD and SPASSWD can be provided directly as **mypassw123**, through an external flat file such as **@fname**,or using another system. Other system types include:
+RPASSWD and SPASSWD can be provided directly as ****mypassw123****, through an external flat file such as ****@fname****,or using another system. Other system types include:
 
 - Operating System User Management
 - Transfer CFT UI User Access Base ([xfbadm](../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities#xfbadmusr1))
 - Access Management System ([PassPort AM](../../internal_a_m_start_here/about_passport_am), [AM exit](../../internal_a_m_start_here/am_exits))
 
-To use one of these other systems, set the `rpasswd/spasswd `to the` keyword _AUTH_` value and the `cft.server.authentication_method` parameter to the appropriate authentication method. See also, <a href="../../admin_intro/uconf/uconf_directory" class="MCXref xref">UCONF parameters</a>.
+To use one of these other systems, set the rpasswd/spasswd to the keyword \_AUTH\_ value and the cft.server.authentication\_method parameter to the appropriate authentication method. See also, <a href="../../admin_intro/uconf/uconf_directory" class="MCXref xref">UCONF parameters</a>.
 
 <span id="Static"></span>
 
@@ -143,13 +143,14 @@ The supported authentication methods are:
 
 | Authentication method  | copilot.restapi.authentication_method  | Details  |
 | --- | --- | --- |
-| Operating System  | system  | The user/password is checked against the operating system.<br/> <blockquote> **Note**<br/> We strongly recommend that you set copilot.misc.createprocessasuser=yes when using the system option.<br/> </blockquote> **Unix**<br/> You must use <code>cftsu </code>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to <a href="" >Using system users - UNIX</a> for details.<br/> • Create a group "group1": groupadd group1<br/> • Add user "user1" to group "group1": usermod -a -G group1 user1<br/> **Windows**<br/> You require a superuser (administrative user account) to create a group and assign a user to a group.<br/> • Create a group "group1": net localgroup group1 /add<br/> • Add user "user1" to group "group1": net localgroup group1 user1 /add<br/> <blockquote> **Note**<br/> For a user belonging to a domain, use: domain\user1 instead of user1<br/> </blockquote>  |
-| Access Management  | am  | This methods uses an indirection towards the Access Management system. The user/password is checked by the configured access management system: {{< TransferCFT/flowmanager  >}}, PassPort AM, or internal AM. |
-| xfbadm database<br/> (UNIX and HP NonStop exclusively) | xfbadm  | The user/password is checked using the xfbadm base (see the <a href="../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).<br/> A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <code>profile </code>from the runtime directory.<br/> • Create a group "group1" with gid=200: xfbadmgrp add -G group1 -p group1_pw -g 200<br/> • From the user prompt, to add a user "user1" to group "group1"enter: xfbadmusr add -l user1 -p user1_pw -u AUTO -g 200 |
+| Operating System  | system  | The user/password is checked against the operating system.<br/> <blockquote> **Note**<br/> We strongly recommend that you set copilot.misc.createprocessasuser=yes when using the system option.<br/> </blockquote> **Unix**<br/> You must use cftsu to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to <a href="" >Using system users - UNIX</a> for details.<br/> • Create a group "group1": groupadd group1<br/> • Add user "user1" to group "group1": usermod -a -G group1 user1<br/> **Windows**<br/> You require a superuser (administrative user account) to create a group and assign a user to a group.<br/> • Create a group "group1": net localgroup group1 /add<br/> • Add user "user1" to group "group1": net localgroup group1 user1 /add<br/> <blockquote> **Note**<br/> For a user belonging to a domain, use: domain\user1 instead of user1<br/> </blockquote>  |
+| Access Management  | am  | This methods uses an indirection towards the Access Management system. The user/password is checked by the configured access management system: Flow Manager{{< TransferCFT/flowmanager  >}}, PassPort AM, or internal AM. |
+| xfbadm database<br/> (UNIX and HP NonStop exclusively) | xfbadm  | The user/password is checked using the xfbadm base (see the <a href="../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).<br/> A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the profile from the runtime directory.<br/> • Create a group "group1" with gid=200: xfbadmgrp add -G group1 -p group1_pw -g 200<br/> • From the user prompt, to add a user "user1" to group "group1"enter: xfbadmusr add -l user1 -p user1_pw -u AUTO -g 200 |
 
 
-**<span id="REST"></span>REST API server authentication method**
-**![](/Images/TransferCFT/authentication_copilot_server.png)**
+********<span id="REST"></span>REST API server authentication method********
+
+********![](/Images/TransferCFT/authentication_copilot_server.png)********
 
 > **Note**
 >
@@ -176,7 +177,7 @@ uconfset id=cft.server.authentication_method, value=system
 SEND part=server, idf= idf01, ruser=username01, rpasswd=password01
 ```
 
-In this case, username01/password01 is compared with what is defined in `uconf: cft.server.authentication_method`.
+In this case, username01/password01 is compared with what is defined in uconf: cft.server.authentication\_method.
 
 ### Receiving a file from the server
 
@@ -197,4 +198,4 @@ uconfset id=cft.server.authentication_method, value=system
 RECV part=server, idf= idf01, suser=username01, spasswd=password01
 ```
 
-In this case, username01/password01 is compared with what is defined in `uconf: cft.server.authentication_method`.
+In this case, username01/password01 is compared with what is defined in uconf: cft.server.authentication\_method.

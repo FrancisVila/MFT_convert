@@ -2,7 +2,7 @@
     "title": "Synchronous  communication services",
     "linkTitle": "Synchronous communication services",
     "weight": "260"
-}This topic describes {{< TransferCFT/componentshortname  >}} synchronous communication services.
+}This topic describes Transfer CFT{{< TransferCFT/componentshortname  >}} synchronous communication services.
 
 ## Description of functions
 

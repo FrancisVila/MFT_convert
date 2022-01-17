@@ -8,7 +8,7 @@
 
 #### ACT, INACT, LISTPKI, PKIEXT
 
-**\[ inum = {0...99} \]**
+****\[ inum = {0...99} \]****
 
 Internal number for the intermediate certificates in an imported chain of certificates (in the PKI database).
 

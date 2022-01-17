@@ -8,34 +8,39 @@
 >
 > If you plan to integrate Transfer CFT with Central Governance and also plan to use Service mode, please refer to the additional instructions in Service mode set up when using Central Governance.
 
-**Windows only**
+****Windows only****
 
 ## Install services
 
-### {{< TransferCFT/componentshortname  >}} services
+### Transfer CFT{{< TransferCFT/componentshortname  >}} services
 
-1. To install the {{< TransferCFT/componentshortname >}} service, access the {{< TransferCFT/componentshortname >}} directory:`cd %TransferCFT_directory%`
+1. To install the Transfer CFT{{< TransferCFT/componentshortname >}} service, access the Transfer CFT{{< TransferCFT/componentshortname >}} directory:
 
-1. Enter the following:`cscript /nologo home\bin\cftsrvin.vbs n=CFT36`
+    `cd %TransferCFT_directory%`
 
-    Where = &lt;CFT plus the current version of {{< TransferCFT/componentshortname >}}>
+1. Enter the following:
+
+    `cscript /nologo home\bin\cftsrvin.vbs n=CFT36`
+
+    Where n= &lt;CFT plus the current version of Transfer CFT{{< TransferCFT/componentshortname >}}>
 
 ### Copilot services
 
-From the {{< TransferCFT/componentshortname  >}} home directory, run:
+From the Transfer CFT{{< TransferCFT/componentshortname  >}} home directory, run:
 
 `copsrv.exe -install <service_name> <displayname> <cftdirruntime>`
-****Example****
 
-For {{< TransferCFT/componentshortname  >}} version {{< TransferCFT/componentversion  >}} Copilot you would enter:
+******Example******
+
+For Transfer CFT{{< TransferCFT/componentshortname  >}} version 3.9{{< TransferCFT/componentversion  >}} Copilot you would enter:
 
 `c:\CFT36\Transfer_CFT\home\bin>copsrv.exe -install CFT_Copilot36 CFT_Copilot36 c:\CFT36\Transfer_CFT\runtime`
 
 ### Activate services
 
-Using CFTUTIL activate the services for both Transfer CFT and Copilot with the uconf `service `configuration parameters.
+Using CFTUTIL activate the services for both Transfer CFT and Copilot with the uconf service configuration parameters.
 
-**Example**
+****Example****
 
 ```
 uconfset id=cft.nt.service_name, value=CFT36

@@ -2,7 +2,7 @@
     "title": "Conversion tables ",
     "linkTitle": "Conversion tables",
     "weight": "210"
-}This section describes how to use a conversion table in Transfer CFT in the following sections:
+}This section describes how to use a conversion table in Transfer CFT Transfer CFT IBM i in the following sections:
 
 - Using a conversion table
 - Configuration sample
@@ -46,7 +46,7 @@ The CFTPROD/tabaseb.x binary file is created: it constitutes the conversion tabl
 
 ## Configuration sample
 
-The following is a full Transfer CFT configuration sample for a Windows system, which is a typical and frequent scenario.
+The following is a full Transfer CFT Transfer CFT IBM i configuration sample for a Windows system, which is a typical and frequent scenario.
 
 ```
 Transfer CFT IBM i configuration

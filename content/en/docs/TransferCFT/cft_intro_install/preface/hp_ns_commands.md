@@ -12,7 +12,7 @@ Transfer CFT offers a set of commands which can be used interactively or within 
 
 Prior to executing Transfer CFT commands, you must install them. If you have not already done so, perform the task as described in <a href="#Install" class="MCXref xref">Install the Guardian specific files</a>.
 
-You cannot use Transfer CFT Guardian 2.3.2 CFTUTIL commands with Transfer CFT .
+You cannot use Transfer CFT Guardian 2.3.2 CFTUTIL commands with Transfer CFT 3.9.
 
 ### Available commands
 
@@ -24,7 +24,7 @@ Three types of commands are available in the installed volume.&lt;subvolume>IX:
 - PKIUTIL: the command line interface to manage the local PKI
 - PROFILE: customized file for accessing the other commands
 
-A description of these commands is provided in *Transfer CFT Users Guide.*
+A description of these commands is provided in *Transfer CFT 3.9 Users Guide.*
 
 ### Launch PROFILE
 
@@ -164,9 +164,9 @@ $SAS51 FORD36IX 9> pop CFT^UTLOUT
 
 ### Tracing command execution
 
-To gather command details, Axway support may ask you to set the `CFTUTLX^TRACE^LEVEL` parameter for a `CFTUTLX `command trace.
+To gather command details, Axway support may ask you to set the CFTUTLX^TRACE^LEVEL parameter for a CFTUTLX command trace.
 
-The `CFTUTLX^TRACE^LEVEL` values are:
+The CFTUTLX^TRACE^LEVEL values are:
 
 
 | Value  | Description  | Temporary CFTUTLX files are deleted  |

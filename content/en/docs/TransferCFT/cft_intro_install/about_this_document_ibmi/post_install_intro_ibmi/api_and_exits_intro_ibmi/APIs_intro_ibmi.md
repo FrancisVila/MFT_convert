@@ -35,7 +35,7 @@ Available commands include OPEN, SELECT, NEXT, MODIFY and CLOSE.
 
 Available parameters include: F-SEND, F-RECV, F-START, F-HALT, F-KEEP, F-DELETE, F-END and F-COM.
 
-**COBOL/ILE Programming samples**
+****COBOL/ILE Programming samples****
 
 All COBOL sample files are available in CFTPGM/CFTSRC. However, you should not directly modify them as this library is proprietary to Axway, and updating the product may modify these samples. Therefore, we recommend that you copy the samples you need into CFTPROD/UTIN and configure them according to your production requirements.
 
@@ -43,7 +43,7 @@ All COBOL sample files are available in CFTPGM/CFTSRC. However, you should not d
 >
 > The product installation copies and configures some samples.
 
-**RPG/ILE programming examples**
+****RPG/ILE programming examples****
 
 Refer to the programming examples, RPG COPY clauses, and procedures, which are supplied in the Transfer CFT library CFTPGM/CFTSRC (CPYRPGCILE, CPYRPGIILE, CPYRPGCIL4, CPYRPGIIL4):
 
@@ -55,42 +55,43 @@ Refer to the programming examples, RPG COPY clauses, and procedures, which are s
 
 ## Creating an API application
 
-The `TCPPARAM` configuration sample is located in `CFTPROD/UTIN`.
+The TCPPARAM configuration sample is located in CFTPROD/UTIN.
 
 ## Application components
 
-The `<installdir>/runtime/src/capi `subdirectory contains the:
+The &lt;installdir>/runtime/src/capi subdirectory contains the:
 
 - Sample source module,
-    called `apixmp1.c,` which interacts with {{< TransferCFT/componentshortname >}}. This program
-    reads the {{< TransferCFT/componentshortname >}} catalog and displays its contents in part or in
+    called apixmp1.c, which interacts with Transfer CFT{{< TransferCFT/componentshortname >}}. This program
+    reads the Transfer CFT{{< TransferCFT/componentshortname >}} catalog and displays its contents in part or in
     full, depending on the restrictions set in the command line.
-- `makefile`
-    compilation procedure, which uses the` apixmp1.c `sample source module
+- makefile
+    compilation procedure, which uses the apixmp1.c sample source module
     to generate the APIXMPI executable file.
 
-The `CFTPGM `library subdirectory contains the `libapisrv1.srvpgm`
-module required to use {{< TransferCFT/componentshortname  >}} APIs.
+The CFTPGM library subdirectory contains the libapisrv1.srvpgm
+module required to use Transfer CFT{{< TransferCFT/componentshortname  >}} APIs.
 
 ## Generating the application
 
 To generate the *APIXMP1* sample program:
 
-1. Access the `<installdir>/runtime/src/capi `directory.
-1. Enter the command:  `gmake`
+1. Access the &lt;installdir>/runtime/src/capi directory.
+1. Enter the command:  gmake
 
 ## Testing the configuration
 
 To test the configuration:
 
 1. Connect to the IBM session with your Transfer CFT user.
-1. Generate the {{< TransferCFT/componentshortname >}} internal datafiles
-    using `cftinit` with the configuration file:  
+1. Generate the Transfer CFT{{< TransferCFT/componentshortname >}} internal datafiles
+    using cftinit with the configuration file:  
     CALL PGM(CFTINIT) PARM('CFTPROD/UTIN(TCPPARAM)')
-1. When the` cftinit complete`
-    message is displayed, run {{< TransferCFT/componentshortname >}} using the command:  
+1. When the cftinit complete
+    message is displayed, run Transfer CFT{{< TransferCFT/componentshortname >}} using the command:  
     cftstart
-1. When the `CFTMAIN process   ID is xxxxx `message is displayed, perform a transfer:  
+1. When the CFTMAIN process
+    ID is xxxxx message is displayed, perform a transfer:  
     CALL PGM(CFTUTIL) PARM(SEND 'part=boston,idf=txt')
 1. Check that the transfer is
     complete:  
@@ -100,12 +101,12 @@ To test the configuration:
 1. Run the sample program on NATIF environment:  
     CALL PGM(APIXMP1)
 
-**Results**
+****Results****
 
 The result should correspond to the catalog contents:
 
 > `PART=NEW YORK, IDT=<dynamic identifier>,IDF=TXTPART=BOSTON ,IDT=<dynamic identifier>,IDF=TXTAPIXMP1 _ 2 record(s) found`
 
-Stop {{< TransferCFT/componentshortname  >}}:
+Stop Transfer CFT{{< TransferCFT/componentshortname  >}}:
 
 `     cftstop`

@@ -5,6 +5,7 @@
 }## Common mistakes
 
 `    > ICH409I 282-014 ABEND DURING RACHECK PROCESSING`
+
 `           -> invalid access value (if value <> 2 & 4 & 8)`
 
 ### Administrator
@@ -178,9 +179,13 @@ This file must be managed by Transfer CFT Administrator:
 The following examples are performed using CFTUTIL.
 
 ` UCONFSET ID=am.exit.custom.rbac_fname.value,`
+
 `      value=permits.definition.file`
+
 ` UCONFSET ID=am.exit.custom.safclass.value,value=CORPCFT1`
+
 ` UCONFSET ID=am.type,value=EXIT`
+
 ` UCONFSET ID=am.exit.check_login,value=NO   /* or YES */`
 
 ### Example definitions

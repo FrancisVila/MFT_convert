@@ -25,13 +25,13 @@ A cluster installation of Transfer CFT without multi-node is an active/passive i
 >
 > After installing applications in active/passive mode, you must implement the cft start, cft stop, and cft status scripts for the cluster.
 
-**Shared Directory**
+****Shared Directory****
 
 This is the path and name of the directory where you want to create a shared directory for the cluster installation. The shared directory is used to store product data files.
 
-*Windows only* - When installing a Windows multi-host Transfer CFT architecture, we recommend that you use UNC notation, which defines the path to a shared folder using the format` \\server\sharename.`
+*Windows only* - When installing a Windows multi-host Transfer CFT architecture, we recommend that you use UNC notation, which defines the path to a shared folder using the format \\\\server\\sharename.
 
-**Installation Directory**
+****Installation Directory****
 
 The path and name of the local directory where you want to install the first cluster.
 
@@ -39,7 +39,7 @@ The path and name of the local directory where you want to install the first clu
 
 ### Multi-node license keys
 
-{{< TransferCFT/componentshortname  >}} in multi-node architecture requires a shared file system for use of a multi-node architecture on several hosts (active/active). Additionally, the system must be configured prior to the multi-node installation and the shared disk ready when starting the Copilot server.
+Transfer CFT{{< TransferCFT/componentshortname  >}} in multi-node architecture requires a shared file system for use of a multi-node architecture on several hosts (active/active). Additionally, the system must be configured prior to the multi-node installation and the shared disk ready when starting the Copilot server.
 
 > **Note**
 >
@@ -54,7 +54,7 @@ Additionally, the key must have the cluster option.
 
 ### Download and uncompress
 
-Download and unzip the {{< TransferCFT/transfercftname  >}} install package, as described in <a href="../../../unix_install_start_here/before_you_start_unix" class="MCXref xref">Install Transfer CFT</a>.
+Download and unzip the Transfer CFT{{< TransferCFT/transfercftname  >}} install package, as described in <a href="../../../unix_install_start_here/before_you_start_unix" class="MCXref xref">Install Transfer CFT</a>.
 
 ### Customize
 
@@ -71,11 +71,11 @@ Create as many copies of the initialize.properties file as you have hosts in the
 ## Install
 
 1. Start the installation.
-1. Transfer\_CFT\_{{< TransferCFT/releasenumber >}}\_Install\_win-x86-64\_BNXXXXXXXX.exe
-1. ./Transfer\_CFT\_{{< TransferCFT/releasenumber >}}\_Install\_&lt;OS>\_&lt;BN>.run
+1. Transfer\_CFT\_3.9{{< TransferCFT/releasenumber >}}\_Install\_win-x86-64\_BNXXXXXXXX.exe
+1. ./Transfer\_CFT\_3.9{{< TransferCFT/releasenumber >}}\_Install\_&lt;OS>\_&lt;BN>.run
 1. In the Installation Architecture screen, select **Cluster - first host**.
 1. Complete the installation.
-1. To add a host to create a multi-host installation, run the install `exe/bat` again. This time select **Cluster - Additional host**.
+1. To add a host to create a multi-host installation, run the install exe/bat again. This time select **Cluster - Additional host**.
 
 ## Silent installation
 

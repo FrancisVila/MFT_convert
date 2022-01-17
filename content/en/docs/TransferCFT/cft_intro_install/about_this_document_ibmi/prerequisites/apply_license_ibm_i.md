@@ -8,13 +8,13 @@
 - A hardware upgrade changes the CPU ID (CPU serial number).
 - After a year passes, to replace an expired license key.
 - To ramp up a Transfer CFT Disaster Recovery instance (for example, on a DR LPAR for z/OS systems).
-- If you are migrating from a version 2.x {{< TransferCFT/componentshortname >}} to a version 3.x.
+- If you are migrating from a version 2.x Transfer CFT{{< TransferCFT/componentshortname >}} to a version 3.x.
 
 ## Key management
 
 ### Obtain a license key
 
-1. For a new installation, install {{< TransferCFT/componentshortname >}}.
+1. For a new installation, install Transfer CFT{{< TransferCFT/componentshortname >}}.
 1. After completing the installation, or for an existing installation, use the command **cftutil about** to retrieve your system information. For details see the examples below.
 1. Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.
     -   For a US key, contact: **`fulfillment@us.axway.com`**
@@ -29,7 +29,7 @@ Apply the license key(s) that you received from the Axway Fulfillment team as fo
 - Navigate to the CFTPROD library, and edit the 'KEY' file.
 - Edit the CFTPROD/KEY(KEY) member by entering (writing in) your key.
 
-**Examples**
+****Examples****
 
 Use the CFTUTIL utility to execute the ABOUT command to find the CPU ID.
 
@@ -37,10 +37,10 @@ Use the CFTUTIL utility to execute the ABOUT command to find the CPU ID.
 CFTUTIL PARAM(ABOUT)
 Host information :
 \* model = 525 \*
-= 10A16B2
+cpuid = 10A16B2
 ```
 
-In this example, you would provide the CPU ID .
+In this example, you would provide the CPU ID 10A16B2.
 
 Use the display system value command to get the serial number, known as QSRLNBR:
 
@@ -48,10 +48,10 @@ Use the display system value command to get the serial number, known as QSRLNBR:
 DSPSYSVAL SYSVAL(QSRLNBR)
 System value . . . . . : QSRLNBR
 Description . . . . . : System serial number
-: 06890AP
+Serial number . . . . : 06890AP
 ```
 
-In this example, you would provide the CPU ID` 06890AP`.
+In this example, you would provide the CPU ID 06890AP.
 
 > **Note**
 >

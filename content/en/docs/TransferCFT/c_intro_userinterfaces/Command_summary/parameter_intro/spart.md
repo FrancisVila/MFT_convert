@@ -10,7 +10,7 @@
 
 **\[SPART = *string64*}\]**
 
-Network designation by which the local {{< TransferCFT/componentshortname  >}} identifies
+Network designation by which the local Transfer CFT{{< TransferCFT/componentshortname  >}} identifies
 itself to its partner.
 
 If the NSPART parameter of the CFTPART OBJECT associated with SEND is

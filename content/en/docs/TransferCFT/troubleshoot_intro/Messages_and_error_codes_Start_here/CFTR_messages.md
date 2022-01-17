@@ -14,7 +14,7 @@ Earlier versions of Transfer CFT used a different message format than version 3.
 
 CFTLOG FORMAT=\[V23,V24\]
 
-For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
+For V23: CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
@@ -31,7 +31,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR03E"></span>CFTR03E &amp;cmd Failed _ No record found<br/> CFTR03E &amp;cmd Failed _ No record found for &amp;str |
 | --- | --- |
-| Explanation | The &amp;cmd command cannot be associated with any record in the {{< TransferCFT/componentshortname  >}} catalog file (example: deletion of a non-existing record). |
+| Explanation | The &amp;cmd command cannot be associated with any record in the Transfer CFT{{< TransferCFT/componentshortname  >}} catalog file (example: deletion of a non-existing record). |
 | Consequence | The command is ignored. |
 | Action | Check the command syntax. |
 
@@ -43,7 +43,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | --- | --- |
 | Explanation | The length of the &amp;keyw keyword is greater than 8. |
 | Consequence | The command is ignored. |
-| Action | Check the description of this parameter in the {{< TransferCFT/componentshortname  >}} Online documentation, correct the error and then resubmit the command. |
+| Action | Check the description of this parameter in the Transfer CFT{{< TransferCFT/componentshortname  >}} Online documentation, correct the error and then resubmit the command. |
 
 
  
@@ -129,7 +129,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR13E"></span>CFTR13E &amp;cmd Failed _ IDT=&amp;idt not allowed<br/> CFTR13E SEND &amp;cmd PART=&amp;part Failed _ IDT=&amp;idt not allowed |
 | --- | --- |
-| Explanation | During execution of a command (response to a message or transfer for example) the required transfer identifier (&amp;idt) was not found in the {{< TransferCFT/componentshortname  >}} catalog. |
+| Explanation | During execution of a command (response to a message or transfer for example) the required transfer identifier (&amp;idt) was not found in the Transfer CFT{{< TransferCFT/componentshortname  >}} catalog. |
 | Consequence | The command is ignored. |
 | Action | Check the parameter settings of the command and the transfer identifier value. |
 
@@ -139,7 +139,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTR14W"></span>CFTR14W &amp;cmd Failed PART=&amp;part _ No transfer found for this request<br/> CFTR14W &amp;cmd PART=&amp;part Failed _ No transfer found for this request |
 | --- | --- |
-| Explanation | When processing an ACT or INACT command, no transfer in the 'D' state and with DIAGI=430 for ACT or in the 'C' state for INACT was found in the {{< TransferCFT/componentshortname  >}} catalog for the partner(s) designated by &amp;part. |
+| Explanation | When processing an ACT or INACT command, no transfer in the 'D' state and with DIAGI=430 for ACT or in the 'C' state for INACT was found in the Transfer CFT{{< TransferCFT/componentshortname  >}} catalog for the partner(s) designated by &amp;part. |
 | Consequence | The command takes effect for any subsequent transfers concerning the partner(s). |
 
 
@@ -157,7 +157,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTR16I"></span>CFTR16I &amp;message<br/> CFTR16I &amp;message |
 | --- | --- |
-| Explanation | Information concerning either the TURN command or the WLOG command.<br/> QQQ_QQQ_QQQ_LIST<br/> • TURN command: • PART=&amp;part<br/> • MODE=&amp;mode (&amp;str) &amp;mode: create,replace,delete<br/> • &amp;str: “part not found”,”part inact”,”prot DMZ not found” ,”part not in requester mode","commutation not available”,"see omintime,omaxtime”,”already in command cache”,”not into command cache”<br/> <br/> QQQ_QQQ_QQQ_LIST<br/> • WLOG command: • &amp;message displayed in the {{< TransferCFT/componentshortname  >}} LOG<br/>  |
+| Explanation | Information concerning either the TURN command or the WLOG command.<br/> QQQ_QQQ_QQQ_LIST<br/> • TURN command: • PART=&amp;part<br/> • MODE=&amp;mode (&amp;str) &amp;mode: create,replace,delete<br/> • &amp;str: “part not found”,”part inact”,”prot DMZ not found” ,”part not in requester mode","commutation not available”,"see omintime,omaxtime”,”already in command cache”,”not into command cache”<br/> <br/> QQQ_QQQ_QQQ_LIST<br/> • WLOG command: • &amp;message displayed in the Transfer CFT{{< TransferCFT/componentshortname  >}} LOG<br/>  |
 
 
  
@@ -173,7 +173,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTR18W"></span>CFTR18W &amp;message<br/> CFTR18W &amp;message |
 | --- | --- |
-| Explanation | Displays warning status in the WLOG command.<br/> • &amp;message displayed in the {{< TransferCFT/componentshortname  >}} LOG |
+| Explanation | Displays warning status in the WLOG command.<br/> • &amp;message displayed in the Transfer CFT{{< TransferCFT/componentshortname  >}} LOG |
 
 
  
@@ -181,7 +181,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR19E"></span>CFTR19E &amp;message<br/> CFTR19E &amp;message |
 | --- | --- |
-| Explanation | Displays error status in the WLOG command.<br/> • &amp;message displayed in the {{< TransferCFT/componentshortname  >}} LOG |
+| Explanation | Displays error status in the WLOG command.<br/> • &amp;message displayed in the Transfer CFT{{< TransferCFT/componentshortname  >}} LOG |
 
 
  

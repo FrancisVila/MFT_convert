@@ -13,7 +13,7 @@ command to delete a transfer request from the communication file. A log message 
 | Parameters  | Description  |
 | --- | --- |
 | COMMAND | Request keyword. |
-| INDEX | Request number as displayed by the LISTCOM command.<br/> For example:<br/> • <code>INDEX=*</code> Selects all record numbers.<br/> • <code>INDEX=12345</code> Selects the record number 12345 in the COM file. |
+| INDEX | Request number as displayed by the LISTCOM command.<br/> For example:<br/> • INDEX=* Selects all record numbers.<br/> • INDEX=12345 Selects the record number 12345 in the COM file. |
 | JOBNAME  | Jobname (string 15), which you can combine with wildcard characters.<br/> For example:<br/> • JOBNAME=12345<br/> • JOBNAME=123*<br/> • JOBNAME=12?45 |
 | USERID | Identifier of the request owner. |
 
@@ -128,6 +128,7 @@ The following is a list of error and information messages that display.
 **Error 1**
 
 `CFTU26E CLEARCMD _ Error (Index value not authorized_ Bad command)`
+
 `CFTU00I CLEARCMD _ Failed (userid=AXWAY\Manager,index=4*,command=recv)`
 
  
@@ -135,10 +136,13 @@ The following is a list of error and information messages that display.
 **Error 2**
 
 `CFTU26E CLEARCMD _ Error (COMMAND Keyword missing)`
+
 `CFTU00I CLEARCMD _ Failed (userid=AXWAY\Manager,index=4,jobname=1234)`
+
 ` `
 
 **Error 3**
 
 `CFTU26E CLEARCMD _ Error (COMMAND or JOBNAME Keyword missing)`
+
 `CFTU00I CLEARCMD _ Failed (userid=AXWAY\Manager,index=*)`

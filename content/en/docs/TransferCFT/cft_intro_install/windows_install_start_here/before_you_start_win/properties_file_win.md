@@ -6,21 +6,21 @@
 
 ## About customizing the initialize.properties file
 
-A common practice is to create a copy of the `initialize.properties ` file, which is located in the downloaded installation package. This gives you an initial intact version should you later need it.
+A common practice is to create a copy of the initialize.properties file, which is located in the downloaded installation package. This gives you an initial intact version should you later need it.
 
-Customize the `initialize.properties ` file. Use the table below to help you with parameter settings; note that the `CryptoKey_Password` is mandatory. Be sure that if you want to use special characters in a configuration file field, you protect the value by enclosing it in double quotation marks ("").
+Customize the initialize.properties file. Use the table below to help you with parameter settings; note that the CryptoKey\_Password is mandatory. Be sure that if you want to use special characters in a configuration file field, you protect the value by enclosing it in double quotation marks ("").
 
 > **Note**
 >
 > If you are installing Transfer CFT but have another Transfer CFT profile loaded, you cannot have environment variables in the initialize.properties file for the new installation.
 
-**Example**
+****Example****
 
 To use the # character in a value, for example, protect the entire string using "" as follows:
 
 `CryptoKey_Password = "Aedft#439"`
 
-If you do not enclose this value in "", the string is interpreted as: `CryptoKey_Password = Aedft`
+If you do not enclose this value in "", the string is interpreted as: CryptoKey\_Password = Aedft
 
 > **Note**
 >
@@ -48,7 +48,7 @@ If you do not enclose this value in "", the string is interpreted as: `CryptoKey
 | --- | --- | --- | --- |
 | runtimeDir  | ./runtime  | Transfer CFT runtime directory.<br/> Specify the directory where you want to install the Transfer CFT runtime directory.<br/> By default, the runtime directory is installed in a sub-directory of the Transfer CFT installation directory. Use the default directory, or specify a new directory. A runtime directory will be created if it does not already exist. | cft.runtime_dir  |
 | Full_Hostname | @automatic  | Host Address of the local server: FQDN (Fully Qualified Domain Name) or IP Address. See **Note*** | cft.full_hostname  |
-| multinode_hostname  | @automatic  | When not defined, this field is filled with the hostname of the machine where you are installing {{< TransferCFT/transfercftname  >}}, whether it is the first host or an additional host.<br/> If the hostname contains a "." period, the value used consists of the name of the host preceding the first period. For example, "myhost.fqdn.net" would be shortened to "myhost". | cft.multi_node.hostnames  |
+| multinode_hostname  | @automatic  | When not defined, this field is filled with the hostname of the machine where you are installing Transfer CFT{{< TransferCFT/transfercftname  >}}, whether it is the first host or an additional host.<br/> If the hostname contains a "." period, the value used consists of the name of the host preceding the first period. For example, "myhost.fqdn.net" would be shortened to "myhost". | cft.multi_node.hostnames  |
 | multinode_host_address  | @automatic  | If you do not specify a value, the machine's FQDN address is used.<br/> Note that if there is an error in the machine's configuration, the value taken could be incorrect. Be sure to check that you can ping the address, and that it is the value for the cluster network. | cft.multi_node.hostnames.&lt;hostname&gt;.host  |
 | Instance_ID | @default  | The maximum length is 24.  | cft.instance_id  |
 | Instance_Group  |   | Transfer CFT instance group.<br/> The maximum length is 1000. | cft.instance_group  |
@@ -108,11 +108,11 @@ If you do not enclose this value in "", the string is interpreted as: `CryptoKey
 | Parameter  | Automatic or default  | Description  | UCONF  |
 | --- | --- | --- | --- |
 | CG_Enable | @default = No | Enter Yes to enable Central Governance connectivity.  | cg.enable  |
-| CG_Host  |   | The Central Governance host address.<br/> If you enabled {{< TransferCFT/centralgovernancename  >}}, you must complete this field. | cg.host  |
-| CG_Port | @default = 12553  | The Central Governance port.<br/> If you enabled {{< TransferCFT/centralgovernancename  >}}, you must complete this field. | cg.port  |
-| CG_Mutual_Port  | @default = 12554  | The Central Governance port for Mutual Authentication.<br/> If you enabled {{< TransferCFT/centralgovernancename  >}}, you must complete this field. | cg.mutual_auth_port  |
-| CG_RestAPI_Port  | @default = 8081  | Specify the port to use to communicate with Central Governance's REST API (this port is only used when am.type=cg).<br/> If you enabled {{< TransferCFT/centralgovernancename  >}}, you must complete this field. | cg.restapi_port  |
-| CG_SharedSecret  |   | Specify the shared secret, which is needed to register with the Central Governance server.<br/> If you enabled {{< TransferCFT/centralgovernancename  >}}, you must complete this field. | cg.shared_secret  |
+| CG_Host  |   | The Central Governance host address.<br/> If you enabled Central Governance{{< TransferCFT/centralgovernancename  >}}, you must complete this field. | cg.host  |
+| CG_Port | @default = 12553  | The Central Governance port.<br/> If you enabled Central Governance{{< TransferCFT/centralgovernancename  >}}, you must complete this field. | cg.port  |
+| CG_Mutual_Port  | @default = 12554  | The Central Governance port for Mutual Authentication.<br/> If you enabled Central Governance{{< TransferCFT/centralgovernancename  >}}, you must complete this field. | cg.mutual_auth_port  |
+| CG_RestAPI_Port  | @default = 8081  | Specify the port to use to communicate with Central Governance's REST API (this port is only used when am.type=cg).<br/> If you enabled Central Governance{{< TransferCFT/centralgovernancename  >}}, you must complete this field. | cg.restapi_port  |
+| CG_SharedSecret  |   | Specify the shared secret, which is needed to register with the Central Governance server.<br/> If you enabled Central Governance{{< TransferCFT/centralgovernancename  >}}, you must complete this field. | cg.shared_secret  |
 | CG_ConfigurationPolicy  |   | Specify Central Governance configuration policy to apply to the Transfer CFT instance.  | cg.configuration_policy  |
 | CG_Certificate_Path  | @default = $CFTDIRRUNTIME/conf/pki/passportCA.pem  | Specify the Custom Certificate to authenticate Central Governance.  | N/A  |
 
@@ -122,9 +122,9 @@ If you do not enclose this value in "", the string is interpreted as: `CryptoKey
 
 | Parameter  | Automatic or default  | Description  | UCONF  |
 | --- | --- | --- | --- |
-| Sentinel_Enable  | @default = No  | Set to Yes to enable Sentinel.<br/> Do not enable this if you have enabled {{< TransferCFT/centralgovernancename  >}}. | sentinel.xfb.enable  |
+| Sentinel_Enable  | @default = No  | Set to Yes to enable Sentinel.<br/> Do not enable this if you have enabled Central Governance{{< TransferCFT/centralgovernancename  >}}. | sentinel.xfb.enable  |
 | Sentinel_Host  |   | Enter the Sentinel host address.  | sentinel.trkipaddr  |
-| Sentinel_Port  | @default= 1305  | Enter the Sentinel port.<br/> You do not need to define this field if you are registering Transfer CFT with {{< TransferCFT/centralgovernancename  >}}. | sentinel.trkipport  |
+| Sentinel_Port  | @default= 1305  | Enter the Sentinel port.<br/> You do not need to define this field if you are registering Transfer CFT with Central Governance{{< TransferCFT/centralgovernancename  >}}. | sentinel.trkipport  |
 | Sentinel_Log_Filter  | @default = EWF  | Sentinel Log Filter: (I)nformation, (W)arning, (E)rror, (F)atal Authorized characters are only I, W, E, F<br/> You can only use each letter once. | sentinel.xfb.log  |
 | Sentinel_Transfer_Filter  | @default = ALL  | Sentinel Transfer Filter<br/> Possible values are: ALL, SUMMARY, NO, ERROR | sentinel.xfb.transfer  |
 | Sentinel_Use_SSL  | @default = Yes  | Enables an SSL connection with Sentinel.  | sentinel.xfb.use_ssl  |
@@ -170,7 +170,7 @@ If you do not enclose this value in "", the string is interpreted as: `CryptoKey
 
 ## Password management
 
-The passwords used in the `initialize.properties` file are encrypted in the original file when you run the installation builder. You can then use the original file as a template for future installations. Impacted passwords are prefaced by &lt;CFT\_PASSWORD>, and include the following:
+The passwords used in the initialize.properties file are encrypted in the original file when you run the installation builder. You can then use the original file as a template for future installations. Impacted passwords are prefaced by &lt;CFT\_PASSWORD>, and include the following:
 
 - CryptoKey\_Password
 - UI\_DefaultUser\_Password

@@ -8,7 +8,7 @@ IDF agreed upon between the partners.
 
 If for some reason the partners are not able to agree
 on a common value for the local identifier and remote identifier of the
-model file to be transferred, the {{< TransferCFT/componentshortname  >}} provides a way
+model file to be transferred, the Transfer CFT{{< TransferCFT/componentshortname  >}} provides a way
 for establishing the correspondence between these identifiers. This is
 based on the concept of an NIDF network identifier conveyed over the network.
 
@@ -43,7 +43,7 @@ received can be established:
     be deduced from the NIDF received
 
 The mechanisms used to establish the NIDF/IDF correspondence are described
-according to the function provided by {{< TransferCFT/componentshortname  >}} and *in
+according to the function provided by Transfer CFT{{< TransferCFT/componentshortname  >}} and *in
 the order of priority* in which they are implemented:
 
 - Sender/requester
@@ -93,7 +93,7 @@ file identifier (IDF)/physical file (FNAME)*.
 
 ## Receiver server
 
-On receiving an NIDF, {{< TransferCFT/componentshortname  >}} checks whether there is a CFTIDF
+On receiving an NIDF, Transfer CFT{{< TransferCFT/componentshortname  >}} checks whether there is a CFTIDF
 object associated with the sender partner (in this example DEM) and relating
 to this transfer direction, the NIDF parameter value of which is the same
 as the one received. If so, the associated local IDF is equal to the identifier
@@ -104,7 +104,7 @@ one received**
 
 ![](/Images/TransferCFT/CFTIDF_with_same_NIDF_as_received.gif)
 
-If there is no associated CFTIDF, {{< TransferCFT/componentshortname  >}} checks if the IDF parameter
+If there is no associated CFTIDF, Transfer CFT{{< TransferCFT/componentshortname  >}} checks if the IDF parameter
 has been set in the CFTPROT command for the reception protocol used. If
 so, the local IDF is equal to the value of this IDF parameter.
 
@@ -121,17 +121,17 @@ for a received NIDF**
 
 ![](/Images/TransferCFT/LoIDF_assgnd_IDF_PROT_NIDF_recd.gif)
 
-If {{< TransferCFT/componentshortname  >}} does not find a CFTIDF command having the same NIDF
+If Transfer CFT{{< TransferCFT/componentshortname  >}} does not find a CFTIDF command having the same NIDF
 value as the one defined by the NIDF received, nor an IDF parameter in
 the associated CFTPROT command, it assigns the value of NIDF for the local
 IDF.
 
-If there is no such command with an identifier IDF, {{< TransferCFT/componentshortname  >}} associates
+If there is no such command with an identifier IDF, Transfer CFT{{< TransferCFT/componentshortname  >}} associates
 the reception with the command CFTRECV ID = &lt;*default*&gt;, where
 the value &lt;*defaul*t> is the value of the DEFAULT parameter
 of CFTPARM.
 
-Before using the default CFTRECV value, {{< TransferCFT/componentshortname  >}} checks if the IDF
+Before using the default CFTRECV value, Transfer CFT{{< TransferCFT/componentshortname  >}} checks if the IDF
 is defined in the CFTPART command. For more information see [IDF
 CFTPART](../../../c_intro_userinterfaces/command_summary/parameter_intro/idf).
 
@@ -188,7 +188,7 @@ file identifier (IDF)/physical file (FNAME)*.
 **This
 scenario is only applicable for the protocols PeSIT D CFT profile, and PeSIT E.**
 
-On receiving an NIDF, {{< TransferCFT/componentshortname  >}} checks to see if there is a locked
+On receiving an NIDF, Transfer CFT{{< TransferCFT/componentshortname  >}} checks to see if there is a locked
 SEND command having an NIDF parameter with the same value as the received
 NIDF. If so, the associated local IDF is equal to the identifier of this
 command.
@@ -198,7 +198,7 @@ equal to the NIDF received**
 
 ![](/Images/TransferCFT/Lock_SEND_NIDF_equal_NIDF_rec.gif)
 
-If no such locked SEND command is found, {{< TransferCFT/componentshortname  >}} checks to see
+If no such locked SEND command is found, Transfer CFT{{< TransferCFT/componentshortname  >}} checks to see
 if there is a CFTIDF command associated with the partner that made the
 receive request (DEM in the example) and relating to this transfer direction,
 the NIDF parameter value of which is the same as the one received. If
@@ -233,7 +233,7 @@ of the NIDF received. This mechanism is described in the *Symbolic variables*
 paragraph. The value of the CFTPROT IDF parameter may also be defined
 with an explicit value.
 
-{{< TransferCFT/componentshortname  >}} then checks whether there is a locked SEND command having
+Transfer CFT{{< TransferCFT/componentshortname  >}} then checks whether there is a locked SEND command having
 the same local IDF, with an undefined NIDF. If this is the case, the corresponding
 send transfer is performed. If not, if checks whether there is an implicit
 CFTSEND object having the same local IDF and in this case, the corresponding
@@ -253,7 +253,7 @@ for a received NIDF**
 ## Receiver/Requester in selective-receive mode
 
 This
-scenario is only applicable between two {{< TransferCFT/componentshortname  >}}s using
+scenario is only applicable between two Transfer CFT{{< TransferCFT/componentshortname  >}}s using
 one of the protocols - PeSIT D CFT profile, or PeSIT E.
 
 During a selective receive transfer, the NIDF sent by the receiver requester
@@ -286,7 +286,7 @@ end has unlocked transfers**
 
 ![](/Images/TransferCFT/CFTIDF_NIDF_equal_NIDF_rec_serverunlocked.gif)
 
-If there is no CFTIDF command, {{< TransferCFT/componentshortname  >}} checks to see if, for the
+If there is no CFTIDF command, Transfer CFT{{< TransferCFT/componentshortname  >}} checks to see if, for the
 protocol used for the reception request, the IDF parameter has been set
 in the associated CFTPROT command.
 

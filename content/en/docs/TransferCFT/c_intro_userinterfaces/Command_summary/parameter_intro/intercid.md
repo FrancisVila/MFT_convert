@@ -8,7 +8,7 @@
 
 #### CFTSSL
 
-**\[ INTERCID = string \]**
+\[ INTERCID = string \]
 
  
 

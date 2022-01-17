@@ -12,19 +12,19 @@
 | n } \]
 
 Use this field to specify the number of reconnection attempts to make
-with a time interval of **retryw**
+with a time interval of retryw
 between attempts.
 
-<span style="font-weight: bold;">4</span>: default value
+4: default value
 
 - any
-    other value from <span style="font-weight: bold;">0</span> to <span style="font-weight: bold;">32767</span>
+    other value from 0 to 32767
 
-When <span style="font-weight: bold;">retryn </span>attempts have been
-made without success, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> divides <span style="font-weight: bold;">retryn</span>
-by two and multiplies <span style="font-weight: bold;">retryw</span> by
+When retryn attempts have been
+made without success, Transfer CFT{{< TransferCFT/componentshortname  >}} divides retryn
+by two and multiplies retryw by
 two and then begins the sequence again up to the total number of times
-specified <span style="font-weight: bold;">retrym</span>.
+specified retrym.
 
 **Example intervals**
 

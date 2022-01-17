@@ -11,7 +11,7 @@
 \[WSCAN = {60
 | n}\]  {1..3600}
 
-Enter the frequency (in seconds) with which the {{< TransferCFT/componentshortname  >}} scans the communication
+Enter the frequency (in seconds) with which the Transfer CFT{{< TransferCFT/componentshortname  >}} scans the communication
 file:
 
 - 60 (default value)
@@ -29,8 +29,8 @@ Enter the frequency (in minutes) with which Transfer CFT scans the catalog file 
 - 5 (default value)
 - 1 to 60
 
-**Behavior specifics**
+****Behavior specifics****
 
-Technically, the next retry is triggered **wscan** minutes after the previous try. However, sometimes you may have a {{< TransferCFT/componentlongname  >}} log where the 416 diagnostic codes are not evenly distributed (by the same time intervals). This may occur if the scheduling task believes resources are available and schedules a retry, but in reality the resource is taken.
+Technically, the next retry is triggered **wscan** minutes after the previous try. However, sometimes you may have a Transfer CFT{{< TransferCFT/componentlongname  >}} log where the 416 diagnostic codes are not evenly distributed (by the same time intervals). This may occur if the scheduling task believes resources are available and schedules a retry, but in reality the resource is taken.
 
 [Return to Command index](../../)

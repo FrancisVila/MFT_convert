@@ -2,7 +2,7 @@
     "title": "Assigning  a transfer owner",
     "linkTitle": "Transfer owner assignment - CFTAPPL",
     "weight": "240"
-}This section describes how to configure access management when not using .
+}This section describes how to configure access management when not using Central Governance.
 
 For a specified transfer and file or message identifier, Transfer CFT
 assigns the USERID identifier defined in the corresponding CFTAPPL command.
@@ -25,7 +25,7 @@ in this section).
 If neither the corresponding CFTAPPL command nor the default command
 can be found, the transfer is refused.
 
-For more details, refer to
+For more details, refer to Pre-Transfer Controls
 and the Requester/Sender and Server/Sender examples in
 the previous topic.
 
@@ -52,8 +52,8 @@ identifier,]
 
 ### Parameters
 
-**\[DIRECT     = {BOTH
-| RECV | SEND}\]**
+****\[DIRECT     = {BOTH
+| RECV | SEND}\]****
 
 Transmission direction.
 
@@ -66,15 +66,15 @@ Possible values are:
 - SEND:
     associates an owner with send transfers (CFTSEND/SEND)
 
-**\[GROUPID     = {identifier
-| &GROUPID}\]**
+****\[GROUPID     = {identifier
+| &GROUPID}\]****
 
 Identifier of the group that owns the transfer.
 
 When privileges are checked, if the value specified is &GROUPID,
 the variable is replaced by the GROUPID that created the transfer.
 
-**ID     = identifier**
+****ID     = identifier****
 
 Command identifier (eight characters).
 
@@ -94,8 +94,8 @@ command).
 The ? and/or \* wildcard characters may be used to represent any single
 character and any substring respectively.
 
-**MODE     = {REPLACE
-| CREATE | DELETE}**
+****MODE     = {REPLACE
+| CREATE | DELETE}****
 
 Operation to be executed.
 
@@ -108,8 +108,8 @@ Possible values are:
 - DELETE:
     deletes one or more records
 
-**USERID     = {identifier
-| &USERID}**
+****USERID     = {identifier
+| &USERID}****
 
 Identifier (8 characters) of the transfer owner.
 
@@ -118,7 +118,7 @@ the variable is replaced with the USERID that created the transfer.
 
  
 
-This section describes how to configure access management when not using .
+This section describes how to configure access management when not using Central Governance.
 
 The concept of a local application is used by Transfer CFT when submitting
 transfer requests and executing the associated transfers. It corresponds
@@ -243,7 +243,7 @@ contains the USER3 userid:
 - the user who submitted
     the SEND command becomes the owner of that command
 
-**Requester/sender with CFTAPPL**
+****Requester/sender with CFTAPPL****
 
 ![](/Images/TransferCFT/req_sender_with_CFTAPPL.gif)
 
@@ -260,8 +260,8 @@ command with the USER2 userid:
 On the server side, an implicit CFTSEND command corresponding to the
 same IDF contains the USER3 userid. USER3 is the owner of the transfer.
 
-**Server/sender with the default CFTAPPL
-SEND**
+****Server/sender with the default CFTAPPL
+SEND****
 
 ![](/Images/TransferCFT/server_sender_CFTAPPL.gif)
 

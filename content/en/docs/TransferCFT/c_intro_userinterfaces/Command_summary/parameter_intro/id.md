@@ -7,7 +7,7 @@
 ### id
 
 Identifier. The maximum length for an identifier value-type is 32 characters.
-This affects all {{< TransferCFT/componentshortname  >}} commands.
+This affects all Transfer CFT{{< TransferCFT/componentshortname  >}} commands.
 
 <span id="id_CFTAUTH"></span>
 
@@ -78,25 +78,26 @@ commands listed below.
 
 #### CFTPARM
 
-**\[ID = identifier
-\]**
+****\[ID = identifier
+\]****
 
 Identifier of the CFTPARM command.
 
 This value, passed as an activation parameter, describes a monitor configuration.
 
-**Example**
+****Example****
+
 `CFTMAIN parm1`
 
-{{< TransferCFT/componentshortname  >}} is started with the CFTPARM id = parm1. If no value is used,
+Transfer CFT{{< TransferCFT/componentshortname  >}} is started with the CFTPARM id = parm1. If no value is used,
 the monitor uses the default value 'IDPARM0'.
 
 <span id="id_CFTPART"></span>
 
 #### CFTPART
 
-**\[ID = identifier
-\]**
+****\[ID = identifier
+\]****
 
 Local partner identifier.
 
@@ -104,8 +105,8 @@ Local partner identifier.
 
 #### CFTPROT
 
-**\[ID =
-identifier \]**
+****\[ID =
+identifier \]****
 
 CFTPROT command identifier.
 
@@ -116,8 +117,8 @@ taken by the CFTPARM PROT parameter.
 
 #### CFTLOG
 
-**\[ID = identifier
-\]**
+****\[ID = identifier
+\]****
 
 Identifier of the CFTLOG command.
 
@@ -125,8 +126,8 @@ Identifier of the CFTLOG command.
 
 #### CFTXLATE
 
-**\[ID = identifier
-\]**
+****\[ID = identifier
+\]****
 
 Translation table identifier.
 
@@ -137,13 +138,13 @@ of DIRECT, FCODE or NCODE are different.
 
 #### CFTRECV
 
-**\[ID = identifier
-\]**
+****\[ID = identifier
+\]****
 
 Local model file identifier (IDF)
 
 The "COMMUT" value for this parameter takes a particular meaning
-for {{< TransferCFT/componentshortname  >}}: it corresponds to the description of the files received
+for Transfer CFT{{< TransferCFT/componentshortname  >}}: it corresponds to the description of the files received
 as an intermediate partner. For the store and forward to be accepted,
 the command (CFTRECV ID = COMMUT) has to be customized explicitly on the
 store and forward site. If not, the store and forward is refused.
@@ -157,8 +158,8 @@ store and forward site. If not, the store and forward is refused.
 
 #### CFTSEND
 
-**\[ID = identifier
-\]**
+****\[ID = identifier
+\]****
 
 Local
 identifier of the model file (IDF) to be sent.

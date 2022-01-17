@@ -19,7 +19,7 @@ The data set SMPCNTL contains the following model job for receiving SMP/E PTFs.
 
 Edit the sample jobs that are listed in the following table, modifying as necessary (supply a valid JOB JCL card statement, select and modify the dataset qualifier &HLQ& and the Patch number &NNNN&).
 
-The format of a Transfer CFT PTF SYSMOD ID is `P01NNNN`. For example, the PTF `P010003` is comprised of the Patch number 0003, where P01 represents Transfer CFT version 323.
+The format of a Transfer CFT PTF SYSMOD ID is P01NNNN. For example, the PTF P010003 is comprised of the Patch number 0003, where P01 represents Transfer CFT version 323.
 
 The SMPCNTL data set contains the following model job for the SMP/E PTFs maintenance.
 
@@ -36,6 +36,7 @@ If the $C30PAPP return code is a zero or a 4, edit $C30PAPP, remove the CHECK co
 The APPLY CHECK and APPLY jobs may end with a RC=4, and return the following warning messages:
 
 > `GIM38201W THERE IS A MODID ERROR FOR DATA ENTRY CSDNEW IN SYSMOD pid.`
+>
 > `GIM31901I SYSMOD pid DOES NOT SPECIFY pre-pid ON THE PRE OR SUP OPERAND.`
 
 These messages are normal; you can ignore them.

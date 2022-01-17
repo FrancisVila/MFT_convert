@@ -2,36 +2,36 @@
     "title": "Access Management using Flow Manager",
     "linkTitle": "Flow Manager access management ",
     "weight": "150"
-}You can use {{< TransferCFT/flowmanager  >}} to define and control Transfer CFT access management as described in the following sections.
+}You can use Flow Manager{{< TransferCFT/flowmanager  >}} to define and control Transfer CFT access management as described in the following sections.
 
-**How it works**
+****How it works****
 
-If you have opted to use the {{< TransferCFT/flowmanager  >}} for {{< TransferCFT/transfercftname  >}} access management, after configuring both {{< TransferCFT/transfercftname  >}} and {{< TransferCFT/flowmanager  >}}:
+If you have opted to use the Flow Manager{{< TransferCFT/flowmanager  >}} for Transfer CFT{{< TransferCFT/transfercftname  >}} access management, after configuring both Transfer CFT{{< TransferCFT/transfercftname  >}} and Flow Manager{{< TransferCFT/flowmanager  >}}:
 
-1. A user logs in via the {{< TransferCFT/transfercftname >}} UI, CFTUTIL, or other.
-1. A login request is sent to {{< TransferCFT/flowmanager >}}.
-1. If the login is successful, {{< TransferCFT/flowmanager >}} returns the list of roles for the user.
+1. A user logs in via the Transfer CFT{{< TransferCFT/transfercftname >}} UI, CFTUTIL, or other.
+1. A login request is sent to Flow Manager{{< TransferCFT/flowmanager >}}.
+1. If the login is successful, Flow Manager{{< TransferCFT/flowmanager >}} returns the list of roles for the user.
 1. The user login is complete. Transfer CFT then stores these roles in the cache and applies them accordingly. The information about this user is stored in the cache and is only updated when a new login is performed.
 
 > **Note**
 >
 > All role and permission definitions are stored in CFTPARM.
 
-However, if you are an `am.superuser` user, {{< TransferCFT/transfercftname  >}} does not check your access for resources, and permissions are granted unconditionally. Additionally, it is useful to note that if you define a service account during {{< TransferCFT/componentlongname  >}} installation, this user is automatically added to the UCONF `am.superuser` parameter's list.
+However, if you are an am.superuser user, Transfer CFT{{< TransferCFT/transfercftname  >}} does not check your access for resources, and permissions are granted unconditionally. Additionally, it is useful to note that if you define a service account during Transfer CFT{{< TransferCFT/componentlongname  >}} installation, this user is automatically added to the UCONF am.superuser parameter's list.
 
-See also, {{< TransferCFT/flowmanager  >}} *Security Guide &gt;*[Predefined roles](https://docs.axway.com/bundle/FlowManager_20_allOS_en_HTML5/page/predefined_roles.html) and [Predefined privileges](https://docs.axway.com/bundle/FlowManager_20_allOS_en_HTML5/page/predefined_privileges.html) (requires account login).
+See also, Flow Manager{{< TransferCFT/flowmanager  >}} *Security Guide &gt;*[Predefined roles](https://docs.axway.com/bundle/FlowManager_20_allOS_en_HTML5/page/predefined_roles.html) and [Predefined privileges](https://docs.axway.com/bundle/FlowManager_20_allOS_en_HTML5/page/predefined_privileges.html) (requires account login).
 
 ![](/Images/TransferCFT/cg_am.jpg)
 
-**Limitations**
+****Limitations****
 
-- {{< TransferCFT/hflongproductname >}} ROLES are stored on {{< TransferCFT/hflongproductname >}} in upper case. This means that if you create roles **XXX** and **Xxx** on {{< TransferCFT/flowmanager >}}, there is only one ROLE in {{< TransferCFT/hflongproductname >}}, which is `ID=XXX`.
+- Transfer CFT{{< TransferCFT/hflongproductname >}} ROLES are stored on Transfer CFT{{< TransferCFT/hflongproductname >}} in upper case. This means that if you create roles **XXX** and **Xxx** on Flow Manager{{< TransferCFT/flowmanager >}}, there is only one ROLE in Transfer CFT{{< TransferCFT/hflongproductname >}}, which is ID=XXX.
 
 <span id="Using"></span>
 
 ## Using roles and privileges
 
-The {{< TransferCFT/flowmanager  >}} method of access management impacts two {{< TransferCFT/transfercftname  >}} objects that are defined in the CFTPARM database: roles (CFTROLE) and privileges (CFTPRIV). You assign these roles and privileges in {{< TransferCFT/flowmanager  >}}, which are then deployed on Transfer CFT.
+The Flow Manager{{< TransferCFT/flowmanager  >}} method of access management impacts two Transfer CFT{{< TransferCFT/transfercftname  >}} objects that are defined in the CFTPARM database: roles (CFTROLE) and privileges (CFTPRIV). You assign these roles and privileges in Flow Manager{{< TransferCFT/flowmanager  >}}, which are then deployed on Transfer CFT.
 
 Conversely, you can create roles and privileges locally in Transfer CFT, as you do with other objects.
 
@@ -104,9 +104,9 @@ CFTPRIV      ID          = 'MYPRIV1',
 
 Conditions allow you to assign finer control on resources and actions by specifying a logical condition that must be true to authorize the action.
 
-**Examples**
+****Examples****
 
-In these examples `PART `and `ID `are properties of the resource being checked. As you can see, you can use parenthesis and logical operators `&&` (AND) and `||` (OR).
+In these examples PART and ID are properties of the resource being checked. As you can see, you can use parenthesis and logical operators && (AND) and || (OR).
 
 ```
 PART=="PARIS" && ID=="IDFDEF"
@@ -167,10 +167,10 @@ The following table is an exhaustive list of all properties for all resources. T
 | SERVICE:CFTSRV | STARTUP, SHUTDOWN |   |
 | SERVICE:COM | DELETE, VIEW |   |
 |   |   |   |
-| **COMMAND:EXTRACT**  | EXECUTE |   |
-| **COMMAND:MQUERY**  | EXECUTE |   |
-| **COMMAND:TURN**  | EXECUTE |   |
-| **COMMAND:CFTSUPPORT**  | EXECUTE |   |
+| ****COMMAND:EXTRACT**** | EXECUTE |   |
+| ****COMMAND:MQUERY**** | EXECUTE |   |
+| ****COMMAND:TURN**** | EXECUTE |   |
+| ****COMMAND:CFTSUPPORT**** | EXECUTE |   |
 | TRANSFER | CREATE, DELETE, VIEW, EDIT, CANCEL, RESUME, PAUSE, EXECUTE, SUBMIT, END, VIEWIFLE, EDITFILE, DELETEFILE | IDAPPL, ID, PART, SPART, RPART, IPART, TYPE, DIRECT, MODE, FNAME, MESSAGE, SUSER, RUSER, SAPPL, RAPPL, NFNAME |
 | AM:RIGHTS <sup>(4)</sup> | VIEW_SELF, VIEW_OTHERS | ID |
 | FILTER:CATALOG | CREATE, DELETE, VIEW, EDIT | ID |
@@ -207,7 +207,7 @@ In this use case, you assign the user a role that references a privilege having 
 - ACTIONS = ( ‘VIEW’, ‘CREATE’, ‘DELETE’, ‘CANCEL', 'RESUME', ‘EXECUTE’ ),
 - CONDITION = ' IDF=="MYIDF" && PART=="MYPART" '
 
-The following is an example of the {{< TransferCFT/transfercftname  >}} configuration for this use case (the ROLE must exist in {{< TransferCFT/flowmanager  >}}, and be available for required users):
+The following is an example of the Transfer CFT{{< TransferCFT/transfercftname  >}} configuration for this use case (the ROLE must exist in Flow Manager{{< TransferCFT/flowmanager  >}}, and be available for required users):
 
 ```
 CFTROLE      ID          = 'TRANSFER-ROLE',
@@ -274,13 +274,14 @@ In this use case, you assign the user role that refers to a privilege having the
 - ACTIONS = ( 'CONNECT' ),
 - CONDITION = ' GROUP=="PRODUCTION" && ID~=''CFT-PROD-ITEM\*'' '
 
-A user with this privilege can only connect to a Transfer CFT server whose UCONF `cft.instance_group` value is set to PRODUCTION, and whose `cft.instance_id` value begins with CFT-PROD-ITEM.
+A user with this privilege can only connect to a Transfer CFT server whose UCONF cft.instance\_group value is set to PRODUCTION, and whose cft.instance\_id value begins with CFT-PROD-ITEM.
 
-The following is an example of the {{< TransferCFT/transfercftname  >}} configuration for this use case (the ROLE must exist in {{< TransferCFT/flowmanager  >}}, and be available for required users):
+The following is an example of the Transfer CFT{{< TransferCFT/transfercftname  >}} configuration for this use case (the ROLE must exist in Flow Manager{{< TransferCFT/flowmanager  >}}, and be available for required users):
 
 ```
 CFTROLE      ID          = 'ADMIN_ROLE',
               COMMENT     = 'Administrator role for Production Transfer CFT Windows',
+              PRIVS       = ('PRIV-CONN-INTERFACES',               
                               'AM:RIGHTS_VIEW_ALL',
                               'CONFIGURATION:PKICER_ALL',
                               'CONFIGURATION:PKIENTITY_ALL',
@@ -336,4 +337,4 @@ CFTPRIV      ID          = 'PRIV-CONN-INTERFACES',
  
 ```
 
-A user with this privilege can only connect to a Transfer CFT server whose UCONF `cft.instance_group` value is set to `PRODUCTION`, and whose `cft.instance_id` value begins with `CFT-PROD-ITEM`.
+A user with this privilege can only connect to a Transfer CFT server whose UCONF cft.instance\_group value is set to PRODUCTION, and whose cft.instance\_id value begins with CFT-PROD-ITEM.

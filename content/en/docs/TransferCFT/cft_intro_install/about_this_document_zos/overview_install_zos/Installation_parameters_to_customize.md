@@ -6,7 +6,7 @@
 
 ## Customize JCL A00CUSTO parameters
 
-The A00CUSTO JOB customizes the installation files. The customization is done directly in the installation library instance environment. You must quit the file editing program and library before you execute the SUBMIT. If you do not first quit these programs before executing the SUBMIT, the message `Waiting for data set `is returned. If you performed an Installer installation, these parameters are already customized.
+The A00CUSTO JOB customizes the installation files. The customization is done directly in the installation library instance environment. You must quit the file editing program and library before you execute the SUBMIT. If you do not first quit these programs before executing the SUBMIT, the message Waiting for data set is returned. If you performed an Installer installation, these parameters are already customized.
 
 ### Installed directories
 
@@ -36,6 +36,6 @@ After completing the initial A00CUSTO customization, you can use the JCL A04RPLA
 
 Once the JOB is complete, update the A03PARM file in the target environment and resubmit the JCL A00CUSTO.
 
-**Related topics**
+****Related topics****
 
 - [Installation overview]()

@@ -10,9 +10,10 @@
 
 #### CFTRECV, RECV
 
-**\[MAXDATE = {see below| date}\]**
-**Only
-in requester mode**
+****\[MAXDATE = {see below| date}\]****
+
+****Only
+in requester mode****
 
 Final validity date of the transfer.
 
@@ -24,7 +25,7 @@ The value dat’ may be expressed:
     relative to the date the command is taken into account. This value is
     then expressed as a number of days.
 
-**Example**
+****Example****
 
 MAXDATE = +4 means that the transfer validity final date is 4 days after
 the date the command is taken into account.
@@ -67,7 +68,7 @@ context:
 - If MAXTIME is omitted,  
     MAXDATE = 99991231.
 
-**Example**
+****Example****
 
 MAXDATE = +4 means that the transfer validity final date is 4 days after
 the date the command is taken into account.

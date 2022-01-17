@@ -64,7 +64,7 @@ If a record is longer than 2048 , the monitor interrupts the transfer
 with the diagnostic codes: DIAGI=230,
 DIAGP=LDT\_TXT.
 
-If the receiver file type is not defined, {{< TransferCFT/componentshortname  >}} assigns the value
+If the receiver file type is not defined, Transfer CFT{{< TransferCFT/componentshortname  >}} assigns the value
 contained in the table below, according to the receiving system.
 
 
@@ -185,7 +185,7 @@ Note:
     error during the data transfer phase and retrying is forbidden, the transfer
     (requester mode) is restarted from the beginning of the file
 
-**Example of receiving all the pending
-files**
+********Example of receiving all the pending
+files********
 
 ![Site A receives all pending files from Site B](/Images/TransferCFT/Image1689.gif)

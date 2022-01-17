@@ -2,10 +2,10 @@
     "title": "Migrate or upgrade Transfer CFT",
     "linkTitle": "Migrate or upgrade Transfer CFT",
     "weight": "220"
-}This chapter is designed to assist administrators or users who are tasked with upgrading or migrating from an existing Transfer CFT version to Transfer CFT {{< TransferCFT/releasenumber  >}}.
+}This chapter is designed to assist administrators or users who are tasked with upgrading or migrating from an existing Transfer CFT version to Transfer CFT 3.9{{< TransferCFT/releasenumber  >}}.
 
 - [Migrate](#Migrate): Use this procedure to migrate an existing Transfer CFT 2.3.2 installation
-- [Upgrade](#Upgrade): Use this procedure to automatically upgrade an existing Transfer CFT {{< TransferCFT/releasenumber >}}
+- [Upgrade](#Upgrade): Use this procedure to automatically upgrade an existing Transfer CFT 3.9{{< TransferCFT/releasenumber >}}
 
 <span id="Importan"></span>
 
@@ -44,7 +44,7 @@ This section explains how to extract the definitions and import them in the new 
 
 1. From the Transfer CFT 2.3.2 environment, export the configuration in a sequential file using the command:
 1. Transfer the file from the native environment to the OSS environment.
-1. In the Transfer CFT {{< TransferCFT/releasenumber >}} OSS environment, import as follows:
+1. In the Transfer CFT 3.9{{< TransferCFT/releasenumber >}} OSS environment, import as follows:
 
     1.  Create the partner and parameter files:
     2.  Import the configuration from the generated file:
@@ -105,7 +105,7 @@ CFTAPP 1  0   5  9600 600 $STTI  $STTI    $0   FSWAP01   Y     1
 **NONSTOP^PLIST^TEMP^FILE         $DATA00.montemp.PTMPLIST**
 ```
 
-#### Equivalents in Transfer CFT {{< TransferCFT/releasenumber  >}}
+#### Equivalents in Transfer CFT 3.9{{< TransferCFT/releasenumber  >}}
 
 - <span id="CFTWRK"></span>CFTWRK:
     [cft.guardian.cftwrk](../intro_os_features/hp_ns_batch#cft.guardian.cftwrk)
@@ -132,15 +132,15 @@ Before performing an upgrade be certain to review the section [Important informa
 
 ### Overview
 
-You can perform an upgrade by installing Transfer CFT {{< TransferCFT/releasenumber  >}} over an existing Transfer CFT 3.2.4 installation using the procedure described in <a href="" class="MCXref xref">Install Transfer CFT</a> . However, the installation directory `<installation_directory>` should point to the installation directory of the existing Transfer CFT 3.2.4 installation. You can then provide the same additional parameters.
+You can perform an upgrade by installing Transfer CFT 3.9{{< TransferCFT/releasenumber  >}} over an existing Transfer CFT 3.2.4 installation using the procedure described in <a href="" class="MCXref xref">Install Transfer CFT</a> . However, the installation directory &lt;installation\_directory> should point to the installation directory of the existing Transfer CFT 3.2.4 installation. You can then provide the same additional parameters.
 
 The installation procedure upgrades Transfer CFT, where the configuration of the existing installation is exported, and is automatically re-imported after the upgrade.
 
 ### After auto-importing
 
-The installation creates a new directory called `up-<version>` in the runtime directory. This directory stores all of the information used during the auto-import process. You can modify the extracted files and directory, and manually re-import this data at any time.
+The installation creates a new directory called up-&lt;version> in the runtime directory. This directory stores all of the information used during the auto-import process. You can modify the extracted files and directory, and manually re-import this data at any time.
 
-**Extracted data**
+****Extracted data****
 
 The auto-import directory contains the following:
 

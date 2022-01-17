@@ -10,7 +10,7 @@ This section describes how to establish secure sessions and generate keys, impor
 
 ## Using PKIKEYGEN to generate and import a key pair
 
-You can use the `PKIKEYGEN `command to generate a key pair, where it then stores them in the local PKI database.
+You can use the PKIKEYGEN command to generate a key pair, where it then stores them in the local PKI database.
 
 ```
 PKIUTIL PKIKEYGEN
@@ -26,7 +26,7 @@ COMMENT="2048-bits RSA key"
 
 ### About PKI formats
 
-The SFTP keys are referenced in the PKI database as a `Keys `identifier.
+The SFTP keys are referenced in the PKI database as a Keys identifier.
 
 You can import the following formats in the PKI database:
 
@@ -41,7 +41,7 @@ You can import the following formats in the PKI database:
 >
 > When using the ssh-keygen tool, keys are usually generated in encrypted PEM format, which you can import using the PKIKEY command.
 
-**Restrictions**
+****Restrictions****
 
 - Transfer CFT does not support keys that contain comments, regardless of if you are directly referencing or importing them.
 - Transfer CFT does not support private keys with passphrases.
@@ -72,60 +72,89 @@ The PKIKEY command is similar to the PKICER command. Parameters include:
 
 If you already have keys that you want to use, you can import them as described in the following sections.
 
-**Import with PKCS8 format**
+****Import with PKCS8 format****
+
 ```
 PKIUTIL PKIKEY ID=PRIVATE,COMMENT="My_note",IKFORM=PKCS8,IKPASSW="MyPassw", IKNAME=./conf/pki/private.pk8,MODE=CREATE
 ```
-**Import with encrypted PEM (PKCS#5) format**
+
+****Import with encrypted PEM (PKCS#5) format****
+
 ```
 PKIUTIL PKIKEY ID=PRIVATE,COMMENT="My_note",IKFORM=PEM,IKPASSW="MyPassw", IKNAME=./conf/pki/private.pem,MODE=CREATE
 ```
+
 `-----BEGIN RSA PRIVATE KEY-----`
+
 `Proc-Type: 4,ENCRYPTED`
+
 `DEK-Info: AES-128-CBC,9E18D04529594FB617BC471F9958C8A7`
+
 `<encrypted key data in base 64>`
+
 `-----END RSA PRIVATE KEY---------`
 
 > **Note**
 >
 > If a PEM encrypted key is generated using OpenSSL with FIPS, for example with "ssh-keygen", you cannot import it into Transfer CFT. To use this key, convert it to PKCS#8 using the command: openssl pkcs8 -topk8 -v2 aes128 -in &lt;key> -out &lt;key.pk8>
 
-**Import with private.rsa format**
+****Import with private.rsa format****
+
 ```
 PKIUTIL PKIKEY ID=PRIVRSA, IKFORM=PEM, IKNAME=./private.rsa, MODE=CREATE
 ```
+
 `-----BEGIN RSA PRIVATE KEY-----                                  `
+
 `MIICXwIBAAKBgQDDUPaQmmgTL90EaFPvzt9u/1AAxdeXKhTuH6QMTevV7dllkNHe `
+
 `...`
+
 `-----END RSA PRIVATE KEY-----                                    `
-**Import with public.ssh2 format**
+
+****Import with public.ssh2 format****
+
 ```
 PKIUTIL PKIKEY ID=PUBSSH2, IKFORM=SSH, IKNAME=./public.ssh2, MODE=CREATE
 ```
+
 `---- BEGIN SSH2 PUBLIC KEY ----                                                      `
+
 `AAAAB3NzaC1yc2EAAAADAQABAAAAgQDDUPaQmmgTL90EaFPvzt9u/1AAxdeXKhTuH`
+
 `....`
+
 `---- END SSH2 PUBLIC KEY ----                                                                                         `
-**Import with public.ssh-rsa format**
+
+****Import with public.ssh-rsa format****
+
 ```
 PKIUTIL PKIKEY ID=PUBSSHRSA, IKFORM=SSH, IKNAME=./public.ssh-rsa, MODE=CREATE
 ```
+
 `ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQDDUPaQmmgTL90EaFPvzt9u/1AAxdeXKhTuH6QMT...`
+
 `BW4FzI2WRwuTK5vx4s2AF8+4wy7tKrR8kxHn2qnXB12ICh5/nnt2syjw== = KeyType=RSA Date=2017`
+
 `0612 User=MyUser Comment=This is a free comment`
-**Import with public.pem format**
+
+****Import with public.pem format****
+
 ```
 PKIUTIL PKIKEY ID=PUBPEM, IKFORM=PEM, IKNAME=./public.pem, MODE=CREATE
 ```
 
 > `-----BEGIN PUBLIC KEY-----                                      `
+>
 > `MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDDUPaQmmgTL90EaFPvzt9u/1AA`
+>
 > `...`
+>
 > `-----END PUBLIC KEY-----     `
 
 ## Activate/deactivate a key
 
-Use the `ACT/INACT` commands to activate or deactivate, respectively.
+Use the ACT/INACT commands to activate or deactivate, respectively.
 
 Example
 
@@ -141,8 +170,11 @@ CFT_SSH_PUB A 2048
  
 PKIU00I LISTPKI _ Correct ()
 ```
-**Example**
-**This example demonstrates key deactivation where **I** indicates \[INACT\] and **A** indicates \[ACT\].**
+
+****Example****
+
+****This example demonstrates key deactivation where **I** indicates \[INACT\] and **A** indicates \[ACT\].****
+
 ```
 >listpki
 Keys:

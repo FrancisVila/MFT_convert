@@ -10,8 +10,8 @@
 
 #### CFTRECV, RECV
 
-****\[FSPACE = {** **0**
-**| n } \]****
+******\[FSPACE = {** **0**
+**| n } \]******
 
 Size of the receiver file, in Kbytes
 (1 Kbyte = 1024 bytes).
@@ -41,9 +41,10 @@ supported by the system in question).
 
 #### CFTFILE
 
-**\[FSPACE
-= {see [table](#FSPACE_Table) | n}\]**
-**{0..65536}**
+****\[FSPACE
+= {see [table](#FSPACE_Table) | n}\]****
+
+****{0..65536}****
 
 According to TYPE/**OS**
 

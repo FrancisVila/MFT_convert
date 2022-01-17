@@ -67,7 +67,7 @@ The following variables can be set in MIGR$SET file or/and in the PMIGR2 paramet
 | CUSTOMPM | DUMMYJ<br/> (No customization) | Include member to customize parameters extract file. |
 
 
-**Submit the procedure ..INSTALL(MIGRPARM)**
+****Submit the procedure ..INSTALL(MIGRPARM)****
 
 1. Migrate the PART file. (MIGRPART)
 
@@ -84,7 +84,7 @@ The following variables can be set in MIGR$SET file or/and in the PMIGR2 paramet
 | CUSTOMPT | DUMMYJ<br/> (No customization) | Include member to customize partners extract file. |
 
 
-**Submit the procedure ..INSTALL(MIGRPART)**
+****Submit the procedure ..INSTALL(MIGRPART)****
 
 1. Migrate the PKI file (MIGRPKIx).
 
@@ -127,6 +127,8 @@ CFTEXT ID=cft.cftaccnt.fname.atts,TYPE=UCONF,FOUT=$EXT
 Etc.
 ```
 
+Submit the procedure ..INSTALL(MIGRUCNF)
+
 1. Migrate the CATALOG file (MIGRCAT) for a non multi-node environment.
 
 You can set the following variables in the MIGR$SET file and (or) in the PMIGR2 parameters:
@@ -143,7 +145,7 @@ You can set the following variables in the MIGR$SET file and (or) in the PMIGR2 
 | TMPSCAT | 'CYL,(50,10)' | Size allocation for work file.<br/> Use 3 cylinders for every 1000 transfers to be migrated. |
 
 
-re ..INSTALL(MIGRCAT).
+Submit the procedure ..INSTALL(MIGRCAT).
 
 1. Migrate the communication media file(s) (MIGRCOM)for a non mutli-node environment.
 

@@ -9,7 +9,7 @@
 
 ## Obtain a license key
 
-1. After completing the installation, or for an existing installation, use the command `cftutil about` to retrieve your system information.
+1. After completing the installation, or for an existing installation, use the command cftutil about to retrieve your system information.
 
     > **Note**
     >
@@ -18,14 +18,14 @@
     > on which Transfer CFT is installed.
 
 1. Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.
-    -   For a US key, contact: `fulfillment@us.axway.com`
-    -   For an EMEA or APAC key, contact: `product.key@axway.com`
+    -   For a US key, contact: fulfillment@us.axway.com
+    -   For an EMEA or APAC key, contact: product.key@axway.com
 
 1. Provide the hostname and system information for the installed or updated Transfer CFT.
 
 ## Apply a license key
 
-To apply the license key, enter the Transfer CFT key in the indirection file, which is referred to in the CFTPARM KEY parameter. The file is located at `<installation_directory>/runtime/conf/cft.key` .
+To apply the license key, enter the Transfer CFT key in the indirection file, which is referred to in the CFTPARM KEY parameter. The file is located at &lt;installation\_directory>/runtime/conf/cft.key .
 
 - The file can contain one or multiple license keys, but it must have one key per line.
 - On start up the first valid key is used.
@@ -36,7 +36,7 @@ To apply the license key, enter the Transfer CFT key in the indirection file, wh
 
 ## About command
 
-Use the CFTUTIL utility to execute the `about `command to find the CPU ID and general system information as demonstrated in this example.
+Use the CFTUTIL utility to execute the about command to find the CPU ID and general system information as demonstrated in this example.
 
 ```
 Host information :
@@ -50,4 +50,4 @@ Host information :
 \* distrib = unknown
 ```
 
-The CPUID is fixed, and as demonstrated in this example is typically **XXXXXXXXXXX**.
+The CPUID is fixed, and as demonstrated in this example is typically ****XXXXXXXXXXX****.

@@ -57,7 +57,7 @@ A generic entry is characterized by
 one of the values indicated in the table below, for the DIAGP field, at
 the time the catalog is queried (LISTCAT CONTENT=BRIEF).
 
-****Generic entry values****
+******Generic entry values******
 
 
 | Diagp value  | Cycle  |

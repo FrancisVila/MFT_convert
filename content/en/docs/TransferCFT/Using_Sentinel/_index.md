@@ -10,7 +10,7 @@ Sentinel provides you with tools that help you create pre-programmed automatic r
 
 Before you use the Sentinel tracking tools with Transfer CFT, you should become familiar with the Sentinel concepts and
 user interface.
-For Sentinel documentation, go to{{< TransferCFT/companyname  >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a>.
+For Sentinel documentation, go toAxway{{< TransferCFT/companyname  >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a>.
 
 ## Required components
 
@@ -41,7 +41,7 @@ For Transfer CFT monitoring, Sentinel uses the following Tracked Objects (TO):
 
 Once data is recorded in the Tracking database, you can then use the full array of Sentinel functionalities to track the flow of messages in Transfer CFT as well as in other applications across your network.
 
-Sentinel uses sets of executable SQL instructions known as **Requests** to retrieve data from tables in the Tracking Database. Transfer CFT provides a set of predefined Requests that you can use in Sentinel to facilitate retrieval of data specific to Transfer CFT events.
+Sentinel uses sets of executable SQL instructions known as ****Requests**** to retrieve data from tables in the Tracking Database. Transfer CFT provides a set of predefined Requests that you can use in Sentinel to facilitate retrieval of data specific to Transfer CFT events.
 
 You can use a set of predefined [Requests](xfbtransfer_request)
 to:
@@ -59,4 +59,4 @@ You can set Sentinel to repeatedly execute requests. This
 means that you can retrieve and display transfer details as soon as
 Sentinel receives them from Transfer CFT.
 
-For more information, refer to the Axway *Sentinel* documentation available on the support site, {{< TransferCFT/companyname  >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a>..
+For more information, refer to the Axway *Sentinel* documentation available on the support site, Axway{{< TransferCFT/companyname  >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a>..
