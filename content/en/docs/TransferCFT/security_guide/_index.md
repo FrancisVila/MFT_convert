@@ -28,4 +28,4 @@ Related documentation includes:
 
 - [Supported Platforms Guide](https://docs.axway.com/bundle/Axway_Products_SupportedPlatforms_allOS_en/resource/Axway_Products_SupportedPlatforms_allOS_en.pdf)
 
-Document version: 13 January 2022{{< TransferCFT/releasedate  >}}
+Document version: 18 January 2022{{< TransferCFT/releasedate  >}}

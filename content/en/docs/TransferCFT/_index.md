@@ -102,4 +102,4 @@ Go to Axway [support](https://support.axway.com/) to find documentation for Sent
 
 #### Join the discussion in [Axway Community](https://community.axway.com)!  
 
-Document version: Thursday, January 13, 2022
+Document version: Tuesday, January 18, 2022

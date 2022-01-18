@@ -23,7 +23,7 @@ If the value is 0, the wait time-out is infinite.
 The default value (in seconds) depends on the protocol and is indicated
 in the following table.
 
-****Default values are:****
+Default values are:
 
 
 | Protocol  | Default value  |

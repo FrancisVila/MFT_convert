@@ -86,7 +86,7 @@ Migrate all folders from UCONF to CFTFOLDER objects.
 
 ****Example 2****
 
-****Only migrate specific folders from the UCONF configuration to the CFTFOLDER option, for example, select all logical folders starting with the letter "A".****
+Only migrate specific folders from the UCONF configuration to the CFTFOLDER option, for example, select all logical folders starting with the letter "A".
 
 1. Create the CFTFOLDER objects in a file called fm2.cfg, for example:  
     cftmifm migrate -p A\* -o fm2.cfg
@@ -101,7 +101,7 @@ Migrate all folders from UCONF to CFTFOLDER objects.
 
 ****Example 1****
 
-****Call the following programs to migrate from UCONF to CFTFOLDER objects.****
+Call the following programs to migrate from UCONF to CFTFOLDER objects.
 
 ```
 CALL PGM(CFTMIFM) PARM('migrate' '-o' 'CFTPROD/fm1cfg')
@@ -112,7 +112,7 @@ CALL PGM(CFT324CI/CFTMIFM) PARM('purge')
 
 ****Example 2****
 
-****Call the following programs to migrate specific folders from the UCONF configuration to the CFTFOLDER option. For example, select all logical folders starting with the letter "A".****
+Call the following programs to migrate specific folders from the UCONF configuration to the CFTFOLDER option. For example, select all logical folders starting with the letter "A".
 
 ```
 CALL PGM(CFTMIFM) PARM('migrate' '-p' 'A\*' '-o' 'CFTPROD/fm2cfg')
@@ -123,14 +123,14 @@ CALL PGM(CFTMIFM) PARM('purge' '-p' 'A\*')
 
 ### Examples on a z/OS system
 
-****Submit the CFTMIFM JCL located in the INSTALL library to migrate from UCONF to CFTFOLDER objects. Next submit the CFTMIFMP JCL, also located in the INSTALL library, to purge the UCONF configuration.****
+Submit the CFTMIFM JCL located in the INSTALL library to migrate from UCONF to CFTFOLDER objects. Next submit the CFTMIFMP JCL, also located in the INSTALL library, to purge the UCONF configuration.
 
 1. Extracts all folder definitions: cftmifm migrate -p \* -o &lt;temp\_file>
 1. Print the output.
 1. Apply the extracted definitions: CFTUTIL config type=input,fname=&lt;temp\_file>
 1. Purges the all existing UCONF folder definitions: cftmifm purge -p \*
 
-****To  migrate or purge using a specific pattern you can modify the CFTMIFM and CFTMIFMP JCLs, otherwise all logical folders are affected.****
+To  migrate or purge using a specific pattern you can modify the CFTMIFM and CFTMIFMP JCLs, otherwise all logical folders are affected.
 
 ### Rollback
 

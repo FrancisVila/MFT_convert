@@ -75,7 +75,7 @@ communication medium (MEDIACOM parameter). The media that can be used for a give
 medium associated with this system. <a href="../../../admin_intro/admin_config_commands/communication_media_concepts" class="MCXref xref">Communication
 media</a>
 
-******Command syntax**: [CONFIG](../../command_summary#CONFIG)****
+**Command syntax**: [CONFIG](../../command_summary#CONFIG)
 
 QQQ\_QQQ\_QQQ
 

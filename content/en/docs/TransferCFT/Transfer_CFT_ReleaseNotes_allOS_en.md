@@ -159,7 +159,7 @@ The following section lists deprecated functions for Transfer CFT version 3.7 an
 
 - Deprecated the former Habilitation Access Management method (SECUTIL).
 
-****The following section lists deprecated functions for Transfer CFT version 3.5 and higher:****
+The following section lists deprecated functions for Transfer CFT version 3.5 and higher:
 
 - Referencing a certificate with the PKIFNAME using the format (PKIFNAME=TXT://certificate) is no longer supported.
 - Deprecated the PAD parameter.

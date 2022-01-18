@@ -64,7 +64,7 @@ Displays using the same format as in Transfer CFT{{< TransferCFT/hflongproductna
 
 ****Format 2****
 
-****The fields are as described in the following table, where the field size depends on the format version (V23 or V24).****
+The fields are as described in the following table, where the field size depends on the format version (V23 or V24).
 
 
 | Type | V24 length | V23 length | Description |

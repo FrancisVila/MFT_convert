@@ -2,7 +2,7 @@
     "title": "Generate and manage keys",
     "linkTitle": "Generate and manage keys",
     "weight": "180"
-}T**he supported operating systems are listed in the** [Platform features](../../../datasheet) **table.**
+}The supported operating systems are listed in the [Platform features](../../../datasheet) table.
 
 This section describes how to establish secure sessions and generate keys, import etc. in the context of SFTP.
 
@@ -173,7 +173,7 @@ PKIU00I LISTPKI _ Correct ()
 
 ****Example****
 
-****This example demonstrates key deactivation where **I** indicates \[INACT\] and **A** indicates \[ACT\].****
+This example demonstrates key deactivation where **I** indicates \[INACT\] and **A** indicates \[ACT\].
 
 ```
 >listpki

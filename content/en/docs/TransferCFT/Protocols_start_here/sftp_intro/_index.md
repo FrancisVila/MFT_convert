@@ -2,7 +2,7 @@
     "title": "Using SFTP ",
     "linkTitle": "SFTP protocol",
     "weight": "120"
-}T**he supported operating systems are listed in the** [Platform features](../../datasheet) **table.**
+}The supported operating systems are listed in the [Platform features](../../datasheet) table.
 
 The SSH File Transfer Protocol (SFTP) is a protocol that transfers files over an encrypted SSH channel. Transfer CFT{{< TransferCFT/transfercftname  >}} supports the SFTP versions 3, 4, 5 and 6 for both client and server functionality.
 
@@ -60,7 +60,7 @@ You can use SFTP with Transfer CFT{{< TransferCFT/transfercftname  >}}, other Ax
 
 ****Use case 1: Connecting networks****
 
-****Transfer CFT can integrate with non-PeSIT based file transfer networks, as a server as well as a client.****
+Transfer CFT can integrate with non-PeSIT based file transfer networks, as a server as well as a client.
 
 > ![](/Images/TransferCFT/sftp_arch1.jpg)
 

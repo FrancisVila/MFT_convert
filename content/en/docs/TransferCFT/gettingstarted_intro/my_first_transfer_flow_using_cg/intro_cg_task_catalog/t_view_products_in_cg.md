@@ -8,7 +8,7 @@
 
 ****Example****
 
-****Copy or note the host name or IP address for each of the three Transfer CFTs that you will use in these exercises.****
+Copy or note the host name or IP address for each of the three Transfer CFTs that you will use in these exercises.
 
 
 | Transfer CFT  | Host name  | Application name  |

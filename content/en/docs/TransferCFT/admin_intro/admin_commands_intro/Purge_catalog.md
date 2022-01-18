@@ -14,10 +14,10 @@ QQQ\_QQQ\_QQQ split table
 
 ****Description****
 
-****Use this command to delete records which have exceeded
+Use this command to delete records which have exceeded
 the retention time indicated in the Transfer CFT parameter setting. You
 can set the purge time to meet your requirements and Transfer CFT
-activity.****
+activity.
 
 ****Parameter****
 

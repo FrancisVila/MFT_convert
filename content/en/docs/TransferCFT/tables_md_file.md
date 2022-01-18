@@ -9086,13 +9086,29 @@
 ============================== table nb count(588) table converted to MD ========================================
 
 
+| Parameter  | Description  |
+| --- | --- |
+| [CONTENT = BRIEF | FULL | DEBUG ] | Result display mode.<br/> • FULL: All contents display<br/> • DEBUG: All contents and additional general information display<br/> • BRIEF: a 79-character entry is displayed for each certificate. Additionally, when using the BRIEF value to display content:<br/> • Items display showing a clear parent/child relationship<br/> • If a certificate is marked as **Expired** (!), all of its children are labeled **Parent expired** (?)<br/> • If a certificate's parent is missing, the line displays either a question mark (**?**) if the issuer is filtered, or an exclamation mark (**!**) if the issuer is missing<br/> The <a href="#FMODEL%C2%A0d">FMODEL display example</a> features these elements.<br/> |
+| [ID = {*, string1..8}] | Unique local identifier of the certificate(s) to be displayed.<br/> The * and ? wildcard characters are accepted for the ID parameter value. |
+| [ INUM = {number0...99} ]  | Internal number for the intermediate certificates in an imported chain of certificates (in the PKI database).<br/> You can use this option to select a specific intermediate certificate. |
+| [TYPE = ALL | USER | ROOT | INTER | KEY | CERT | | ENTITY ] | Type of certificate to display:<br/> • ALL: all certificates<br/> • USER: user certificates<br/> • ROOT: root authority certificates<br/> • INTER: intermediate authority certificates<br/> • KEY: list PKIKEY items<br/> • CERT: list ROOT, INTER, and USER certificates for PKICER only<br/> • ENTITY: any entity identifier created using PKIENTITY command |
+| [STATE = ALL | ACT | INACT | EXPIRED] | Status of the certificates to display:<br/> • ALL: all statuses<br/> • ACT: all activated certificates<br/> • INACT: all deactivated certificates<br/> • EXPIRED: all expired certificates |
+| FMODEL | The path to the file containing the models. If no model is found, the default format, which is the same as for the DISPLAY command, is used.<br/> <blockquote> **Note**<br/> Transfer CFT 3.7 and higher uses the dspcnf.xml model fileby default. To have the display format from a previous version, use FMODEL=NONE.<br/> </blockquote>  |
+| ROOTCID  | The certificate authority ID. See an example in <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/rootcid">ROOTCID</a>.  |
+| HELP  | Provides helps for the available fields for the different elements, or lists the available MODELS for the given file. Values include:<br/> • NONE (default)<br/> • FIELDS<br/> • MODELS |
+
+
+
+============================== table nb count(589) table converted to MD ========================================
+
+
 | FNAME = string1..64 | Name of the local certificate database. |
 | --- | --- |
 | [MODE = REPLACE | CREATE | DELETE] | Action on the database.<br/> • REPLACE purges the database<br/> • CREATE creates the internal datafile if it does not already exist<br/> • DELETE deletes the database |
 
 
 
-============================== table nb count(589) table converted to MD ========================================
+============================== table nb count(590) table converted to MD ========================================
 
 
 | Parameter  | Values  | Description  |
@@ -9106,7 +9122,7 @@
 
 
 
-============================== table nb count(590) table converted to MD ========================================
+============================== table nb count(591) table converted to MD ========================================
 
 
 | Parameter  | Description  |
@@ -9124,7 +9140,7 @@
 
 
 
-============================== table nb count(591) table converted to MD ========================================
+============================== table nb count(592) table converted to MD ========================================
 
 
 | Parameter  | Description  |
@@ -9139,7 +9155,7 @@
 
 
 
-============================== table nb count(592) table converted to MD ========================================
+============================== table nb count(593) table converted to MD ========================================
 
 
 | Parameter  | Description  | Type  | Possible values  | Default value  |
@@ -9150,7 +9166,7 @@
 
 
 
-============================== table nb count(593) table converted to MD ========================================
+============================== table nb count(594) table converted to MD ========================================
 
 
 | Suite  | Order used | Authentication  | Confidentiality  | Integrity  |
@@ -9174,7 +9190,7 @@
 
 
 
-============================== table nb count(594) table converted to MD ========================================
+============================== table nb count(595) table converted to MD ========================================
 
 
 | Parameter  | Description  | Type  | Possible values  | Default value  |
@@ -9184,7 +9200,7 @@
 
 
 
-============================== table nb count(595) table converted to MD ========================================
+============================== table nb count(596) table converted to MD ========================================
 
 
 | cftsend id = trusted_file, &lt;br/&gt;ftype = B, &lt;br/&gt;fcode = BINARY, &lt;br/&gt;fname = pub/FTEST, &lt;br/&gt;EXEC = $CFTDIREXEC/tf/tf_delfile.cmd, &lt;br/&gt;PREEXEC = $CFTDIREXEC/tf/tf_cipher.cmd,<br /> mode = replace  |
@@ -9192,7 +9208,7 @@
 
 
 
-============================== table nb count(596) table converted to MD ========================================
+============================== table nb count(597) table converted to MD ========================================
 
 
 | cftrecv id = trusted_file, &lt;br/&gt;ftype = B,<br /> fcode = BINARY, &lt;br/&gt;fname = $CFTDIRPUB/TF_&amp;part_&amp;idtu,<br /> EXEC = $CFTDIREXEC/tf/tf_decipher.cmd,<br /> faction = delete ,<br /> fdisp = both, mode = replace  |
@@ -9200,7 +9216,7 @@
 
 
 
-============================== table nb count(597) table converted to MD ========================================
+============================== table nb count(598) table converted to MD ========================================
 
 
 | Parameter (uconf)  | Default values  | Description  |
@@ -9217,7 +9233,7 @@
 
 
 
-============================== table nb count(598) table converted to MD ========================================
+============================== table nb count(599) table converted to MD ========================================
 
 
 | Script  | Description  |
@@ -9228,7 +9244,7 @@
 
 
 
-============================== table nb count(599) table converted to MD ========================================
+============================== table nb count(600) table converted to MD ========================================
 
 
 | Script  | Description  |
@@ -9239,7 +9255,7 @@
 
 
 
-============================== table nb count(600) table converted to MD ========================================
+============================== table nb count(601) table converted to MD ========================================
 
 
 | File  | Description  |
@@ -9253,7 +9269,7 @@
 
 
 
-============================== table nb count(601) table converted to MD ========================================
+============================== table nb count(602) table converted to MD ========================================
 
 
 | Certificate  | Description  |
@@ -9265,7 +9281,7 @@
 
 
 
-============================== table nb count(602) table converted to MD ========================================
+============================== table nb count(603) table converted to MD ========================================
 
 
 | Table  | Description  |
@@ -9277,7 +9293,7 @@
 
 
 
-============================== table nb count(603) table converted to MD ========================================
+============================== table nb count(604) table converted to MD ========================================
 
 
 | Options  | Description  |
@@ -9292,7 +9308,7 @@
 
 
 
-============================== table nb count(604) table converted to MD ========================================
+============================== table nb count(605) table converted to MD ========================================
 
 
 | Key/certificate standard  | Exported file name  |
@@ -9303,7 +9319,7 @@
 
 
 
-============================== table nb count(605) table converted to MD ========================================
+============================== table nb count(606) table converted to MD ========================================
 
 
 | Option | Description |
@@ -9320,7 +9336,7 @@
 
 
 
-============================== table nb count(606) table converted to MD ========================================
+============================== table nb count(607) table converted to MD ========================================
 
 
 | Parameter | Type | Default | Comment |
@@ -9345,7 +9361,7 @@
 
 
 
-============================== table nb count(607) table converted to MD ========================================
+============================== table nb count(608) table converted to MD ========================================
 
 
 | Parameter | Type | Default | Comment |
@@ -9361,7 +9377,7 @@
 
 
 
-============================== table nb count(608) table converted to MD ========================================
+============================== table nb count(609) table converted to MD ========================================
 
 
 | Parameter  | Description  |
@@ -9371,7 +9387,7 @@
 
 
 
-============================== table nb count(609) table converted to MD ========================================
+============================== table nb count(610) table converted to MD ========================================
 
 
 | Parameters  | Default  | Description  |
@@ -9381,7 +9397,7 @@
 
 
 
-============================== table nb count(610) table converted to MD ========================================
+============================== table nb count(611) table converted to MD ========================================
 
 
 | Authentication method  | copilot.restapi.authentication_method  | Details  |
@@ -9392,7 +9408,7 @@
 
 
 
-============================== table nb count(611) table converted to MD ========================================
+============================== table nb count(612) table converted to MD ========================================
 
 
 | Field | Type | Comment |
@@ -9403,7 +9419,7 @@
 
 
 
-============================== table nb count(612) table converted to MD ========================================
+============================== table nb count(613) table converted to MD ========================================
 
 
 | Field | Type | Comment |
@@ -9416,7 +9432,7 @@
 
 
 
-============================== table nb count(613) table converted to MD ========================================
+============================== table nb count(614) table converted to MD ========================================
 
 
 | Resource | Actions | Properties |
@@ -9470,7 +9486,7 @@
 
 
 
-============================== table nb count(614) table converted to MD ========================================
+============================== table nb count(615) table converted to MD ========================================
 
 
 | AM Parameters  | Default  | Description  |
@@ -9486,7 +9502,7 @@
 
 
 
-============================== table nb count(615) table converted to MD ========================================
+============================== table nb count(616) table converted to MD ========================================
 
 
 | Parameter  | Means the user in this group will have the role...  |
@@ -9499,7 +9515,7 @@
 
 
 
-============================== table nb count(616) table converted to MD ========================================
+============================== table nb count(617) table converted to MD ========================================
 
 
 | Type of information  | Description  |
@@ -9512,7 +9528,7 @@
 
 
 
-============================== table nb count(617) table converted to MD ========================================
+============================== table nb count(618) table converted to MD ========================================
 
 
 | Parameter  | Description  |
@@ -9530,7 +9546,7 @@
 
 
 
-============================== table nb count(618) table converted to MD ========================================
+============================== table nb count(619) table converted to MD ========================================
 
 
 | Parameter  | Definition  |
@@ -9544,7 +9560,7 @@
 
 
 
-============================== table nb count(619) table converted to MD ========================================
+============================== table nb count(620) table converted to MD ========================================
 
 
 | Parameters  | Default  | Description  |
@@ -9556,7 +9572,7 @@
 
 
 
-============================== table nb count(620) table converted to MD ========================================
+============================== table nb count(621) table converted to MD ========================================
 
 
 | Access Management exit parameters  | Value  | Description  |
@@ -9571,7 +9587,7 @@
 
 
 
-============================== table nb count(621) table converted to MD ========================================
+============================== table nb count(622) table converted to MD ========================================
 
 
 | Sample  | Authentication  | Permissions checking  |
@@ -9580,7 +9596,7 @@
 
 
 
-============================== table nb count(622) table converted to MD ========================================
+============================== table nb count(623) table converted to MD ========================================
 
 
 | Field  | Description  |
@@ -9593,7 +9609,7 @@
 
 
 
-============================== table nb count(623) table converted to MD ========================================
+============================== table nb count(624) table converted to MD ========================================
 
 
 | Field  | Description  |
@@ -9604,7 +9620,7 @@
 
 
 
-============================== table nb count(624) table converted to MD ========================================
+============================== table nb count(625) table converted to MD ========================================
 
 
 | Role  | Description  |
@@ -9617,7 +9633,7 @@
 
 
 
-============================== table nb count(625) table converted to MD ========================================
+============================== table nb count(626) table converted to MD ========================================
 
 
 | CG field  | CG values  | CFTUTIL parameter  | Description  |
@@ -9629,7 +9645,7 @@
 
 
 
-============================== table nb count(626) table converted to MD ========================================
+============================== table nb count(627) table converted to MD ========================================
 
 
 | OS  | Default  |
@@ -9641,7 +9657,7 @@
 
 
 
-============================== table nb count(627) table converted to MD ========================================
+============================== table nb count(628) table converted to MD ========================================
 
 
 | USERCTRL | Description |
@@ -9651,7 +9667,7 @@
 
 
 
-============================== table nb count(628) table converted to MD ========================================
+============================== table nb count(629) table converted to MD ========================================
 
 
 | User type  | CG role(s)  | Machine1 user  | File access  |
@@ -9664,7 +9680,7 @@
 
 
 
-============================== table nb count(629) table converted to MD ========================================
+============================== table nb count(630) table converted to MD ========================================
 
 
 | Feature  |  Manage using Flow Manager{{&lt; TransferCFT/flowmanager &gt;}} or Central Governance  | Supported but not configurable using Central Governance or Flow Manager{{&lt; TransferCFT/flowmanager &gt;}}  |
@@ -9693,7 +9709,7 @@
 
 
 
-============================== table nb count(630) table converted to MD ========================================
+============================== table nb count(631) table converted to MD ========================================
 
 
 | Parameter  | Value  |
@@ -9730,7 +9746,7 @@
 
 
 
-============================== table nb count(631) table converted to MD ========================================
+============================== table nb count(632) table converted to MD ========================================
 
 
 | <span id="Paramete"></span>Parameter  | Type  | Default  | Description  |
@@ -9763,7 +9779,7 @@
 
 
 
-============================== table nb count(632) table converted to MD ========================================
+============================== table nb count(633) table converted to MD ========================================
 
 
 | Character  | Description  | Example  |
@@ -9773,7 +9789,7 @@
 
 
 
-============================== table nb count(633) table converted to MD ========================================
+============================== table nb count(634) table converted to MD ========================================
 
 
 | Character  | Description  | Example  |
@@ -9789,7 +9805,7 @@
 
 
 
-============================== table nb count(634) table converted to MD ========================================
+============================== table nb count(635) table converted to MD ========================================
 
 
 | Symbol  | Indicates  | Example  |
@@ -9808,7 +9824,7 @@
 
 
 
-============================== table nb count(635) table converted to MD ========================================
+============================== table nb count(636) table converted to MD ========================================
 
 
 | Option  | Description  |
@@ -9822,7 +9838,7 @@
 
 
 
-============================== table nb count(636) table converted to MD ========================================
+============================== table nb count(637) table converted to MD ========================================
 
 
 | Parameter  | UCONF  | Type  | Default<br/> UCONF | Default <br/> CFTFOLDER | Description  |
@@ -9853,7 +9869,7 @@
 
 
 
-============================== table nb count(637) table converted to MD ========================================
+============================== table nb count(638) table converted to MD ========================================
 
 
 | UCONF parameter  | Type  | Default | Description  |
@@ -9883,7 +9899,7 @@
 
 
 
-============================== table nb count(638) table converted to MD ========================================
+============================== table nb count(639) table converted to MD ========================================
 
 
 | Parameter  | Type  | Description  |
@@ -9892,7 +9908,7 @@
 
 
 
-============================== table nb count(639) table converted to MD ========================================
+============================== table nb count(640) table converted to MD ========================================
 
 
 | Parameter  | Type  | Description  |
@@ -9903,7 +9919,7 @@
 
 
 
-============================== table nb count(640) table converted to MD ========================================
+============================== table nb count(641) table converted to MD ========================================
 
 
 | Parameter  | Type  | Description  |
@@ -9912,7 +9928,7 @@
 
 
 
-============================== table nb count(641) table converted to MD ========================================
+============================== table nb count(642) table converted to MD ========================================
 
 
 | Parameter  | Type  | Description  |
@@ -9922,7 +9938,7 @@
 
 
 
-============================== table nb count(642) table converted to MD ========================================
+============================== table nb count(643) table converted to MD ========================================
 
 
 | Parameter  | Type  | Description  |
@@ -9931,7 +9947,7 @@
 
 
 
-============================== table nb count(643) table converted to MD ========================================
+============================== table nb count(644) table converted to MD ========================================
 
 
 | Parameter  | Type  | Description  |
@@ -9944,7 +9960,7 @@
 
 
 
-============================== table nb count(644) table converted to MD ========================================
+============================== table nb count(645) table converted to MD ========================================
 
 
 | Parameter<span id="storageaccount"></span>  | Type  | Description  |
@@ -9955,7 +9971,7 @@
 
 
 
-============================== table nb count(645) table converted to MD ========================================
+============================== table nb count(646) table converted to MD ========================================
 
 
 | Parameter  | Type  | Description  |
@@ -9964,7 +9980,7 @@
 
 
 
-============================== table nb count(646) table converted to MD ========================================
+============================== table nb count(647) table converted to MD ========================================
 
 
 | Parameter<span id="storageaccount"></span>  | Type  | Description  |
@@ -9975,7 +9991,7 @@
 
 
 
-============================== table nb count(647) table converted to MD ========================================
+============================== table nb count(648) table converted to MD ========================================
 
 
 | Architecture | Local volume | Shared volume | Cloud storage |
@@ -9986,7 +10002,7 @@
 
 
 
-============================== table nb count(648) table converted to MD ========================================
+============================== table nb count(649) table converted to MD ========================================
 
 
 | Parameter  | Default  | Value  | Description  |
@@ -9996,7 +10012,7 @@
 
 
 
-============================== table nb count(649) table converted to MD ========================================
+============================== table nb count(650) table converted to MD ========================================
 
 
 | System  | File location  | Build command  |
@@ -10009,7 +10025,7 @@
 
 
 
-============================== table nb count(650) table converted to MD ========================================
+============================== table nb count(651) table converted to MD ========================================
 
 
 | Parameters  | Default  | Description  |
@@ -10019,7 +10035,7 @@
 
 
 
-============================== table nb count(651) table converted to MD ========================================
+============================== table nb count(652) table converted to MD ========================================
 
 
 | Authentication method  | copilot.restapi.authentication_method  | Details  |
@@ -10030,7 +10046,7 @@
 
 
 
-============================== table nb count(652) table converted to MD ========================================
+============================== table nb count(653) table converted to MD ========================================
 
 
 | Code  | Status  | Meaning, when to use  |
@@ -10044,7 +10060,7 @@
 
 
 
-============================== table nb count(653) table converted to MD ========================================
+============================== table nb count(654) table converted to MD ========================================
 
 
 | Name  | Description  | XTS <br/> mapping |
@@ -10062,7 +10078,7 @@
 
 
 
-============================== table nb count(654) table converted to MD ========================================
+============================== table nb count(655) table converted to MD ========================================
 
 
 | Syntax | rc = cftxx (verb,&amp;ptr,param) |
@@ -10076,7 +10092,7 @@
 
 
 
-============================== table nb count(655) table converted to MD ========================================
+============================== table nb count(656) table converted to MD ========================================
 
 
 | Service | CftApi2Session *ipcai2_initialize () |
@@ -10087,7 +10103,7 @@
 
 
 
-============================== table nb count(656) table converted to MD ========================================
+============================== table nb count(657) table converted to MD ========================================
 
 
 | Service | long ipcai2_get_errno(CftApi2Session * session) |
@@ -10099,7 +10115,7 @@
 
 
 
-============================== table nb count(657) table converted to MD ========================================
+============================== table nb count(658) table converted to MD ========================================
 
 
 | Service | long ipcai2_get_errno_str(CftApi2Session * session, char *buffer, int bufflen) |
@@ -10111,7 +10127,7 @@
 
 
 
-============================== table nb count(658) table converted to MD ========================================
+============================== table nb count(659) table converted to MD ========================================
 
 
 | Service | long ipcai2_finalize(CftApi2Session * session) |
@@ -10123,7 +10139,7 @@
 
 
 
-============================== table nb count(659) table converted to MD ========================================
+============================== table nb count(660) table converted to MD ========================================
 
 
 | Service | CftApi2Catalog *ipcai2_catalog_open(CftApi2Session * session, char *catalog_fname)  |
@@ -10135,7 +10151,7 @@
 
 
 
-============================== table nb count(660) table converted to MD ========================================
+============================== table nb count(661) table converted to MD ========================================
 
 
 | Service | long ipcai2_catalog_reload_cache(CftApi2Catalog *catalog) |
@@ -10147,7 +10163,7 @@
 
 
 
-============================== table nb count(661) table converted to MD ========================================
+============================== table nb count(662) table converted to MD ========================================
 
 
 | Service | long ipcai2_catalog_close(CftApi2Catalog * catalog |
@@ -10159,7 +10175,7 @@
 
 
 
-============================== table nb count(662) table converted to MD ========================================
+============================== table nb count(663) table converted to MD ========================================
 
 
 | Service | CftApi2Selection *ipcai2_catalog_selection_new(CftApi2Catalog *catalog) |
@@ -10171,7 +10187,7 @@
 
 
 
-============================== table nb count(663) table converted to MD ========================================
+============================== table nb count(664) table converted to MD ========================================
 
 
 | Service | long ipcai2_catalog_selection_ref(CftApi2Selection *selection) |
@@ -10183,7 +10199,7 @@
 
 
 
-============================== table nb count(664) table converted to MD ========================================
+============================== table nb count(665) table converted to MD ========================================
 
 
 | Service | long ipcai2_catalog_selection_set(CftApi2Selection * selection, char *param, char *value) |
@@ -10195,7 +10211,7 @@
 
 
 
-============================== table nb count(665) table converted to MD ========================================
+============================== table nb count(666) table converted to MD ========================================
 
 
 | Service | long ipcai2_catalog_selection_next(CftApi2Selection *selection) |
@@ -10207,7 +10223,7 @@
 
 
 
-============================== table nb count(666) table converted to MD ========================================
+============================== table nb count(667) table converted to MD ========================================
 
 
 | Service | long ipcai2_catalog_record_get(CftApi2Selection * selection, char *param, char *buffer, int bufflen) |
@@ -10219,7 +10235,7 @@
 
 
 
-============================== table nb count(667) table converted to MD ========================================
+============================== table nb count(668) table converted to MD ========================================
 
 
 | Service | long ipcai2_catalog_selection_unref(CftApi2Selection *selection) |
@@ -10231,7 +10247,7 @@
 
 
 
-============================== table nb count(668) table converted to MD ========================================
+============================== table nb count(669) table converted to MD ========================================
 
 
 | Service | long ipcai2_catalog_selection_delete(CftApi2Selection *selection) |
@@ -10243,7 +10259,7 @@
 
 
 
-============================== table nb count(669) table converted to MD ========================================
+============================== table nb count(670) table converted to MD ========================================
 
 
 | Service | long ipcai2_transfert_change_state(CftApi2Selection * selection, char state) |
@@ -10255,7 +10271,7 @@
 
 
 
-============================== table nb count(670) table converted to MD ========================================
+============================== table nb count(671) table converted to MD ========================================
 
 
 | Service | long ipcai2_catalog_info_get(CftApi2Catalog *catalog, char *param, char *buffer, int bufflen) |
@@ -10267,7 +10283,7 @@
 
 
 
-============================== table nb count(671) table converted to MD ========================================
+============================== table nb count(672) table converted to MD ========================================
 
 
 | Service | long ipcai2_monitor_info_get(CftApi2Catalog *catalog, char *param, char *buffer, int bufflen) |
@@ -10279,7 +10295,7 @@
 
 
 
-============================== table nb count(672) table converted to MD ========================================
+============================== table nb count(673) table converted to MD ========================================
 
 
 | Function | Use |
@@ -10296,7 +10312,7 @@
 
 
 
-============================== table nb count(673) table converted to MD ========================================
+============================== table nb count(674) table converted to MD ========================================
 
 
 | &lt;verb&gt; | Service |
@@ -10311,7 +10327,7 @@
 
 
 
-============================== table nb count(674) table converted to MD ========================================
+============================== table nb count(675) table converted to MD ========================================
 
 
 | &lt;verb&gt; | &lt;param&gt; | Explanation |
@@ -10326,7 +10342,7 @@
 
 
 
-============================== table nb count(675) table converted to MD ========================================
+============================== table nb count(676) table converted to MD ========================================
 
 
 | Function | Use |
@@ -10336,7 +10352,7 @@
 
 
 
-============================== table nb count(676) table converted to MD ========================================
+============================== table nb count(677) table converted to MD ========================================
 
 
 | &lt;verb&gt; | Service |
@@ -10346,7 +10362,7 @@
 
 
 
-============================== table nb count(677) table converted to MD ========================================
+============================== table nb count(678) table converted to MD ========================================
 
 
 | &lt;verb&gt; | &lt;param&gt; | Description |
@@ -10356,7 +10372,7 @@
 
 
 
-============================== table nb count(678) table converted to MD ========================================
+============================== table nb count(679) table converted to MD ========================================
 
 
 | Mnemonic | Description |
@@ -10371,7 +10387,7 @@
 
 
 
-============================== table nb count(679) table converted to MD ========================================
+============================== table nb count(680) table converted to MD ========================================
 
 
 | Function | Use |
@@ -10392,7 +10408,7 @@
 
 
 
-============================== table nb count(680) table converted to MD ========================================
+============================== table nb count(681) table converted to MD ========================================
 
 
 | &lt;verb&gt; | Service |
@@ -10411,7 +10427,7 @@
 
 
 
-============================== table nb count(681) table converted to MD ========================================
+============================== table nb count(682) table converted to MD ========================================
 
 
 | Mnemonic | Description |
@@ -10429,7 +10445,7 @@
 
 
 
-============================== table nb count(682) table converted to MD ========================================
+============================== table nb count(683) table converted to MD ========================================
 
 
 | Function | Use |
@@ -10446,7 +10462,7 @@
 
 
 
-============================== table nb count(683) table converted to MD ========================================
+============================== table nb count(684) table converted to MD ========================================
 
 
 | &lt;verb&gt; | Value | Service |
@@ -10459,7 +10475,7 @@
 
 
 
-============================== table nb count(684) table converted to MD ========================================
+============================== table nb count(685) table converted to MD ========================================
 
 
 | &lt;verb&gt; | &lt;param&gt; | Explanation |
@@ -10472,7 +10488,7 @@
 
 
 
-============================== table nb count(685) table converted to MD ========================================
+============================== table nb count(686) table converted to MD ========================================
 
 
 | Applies to  | Mnemonic | Description |
@@ -10506,7 +10522,7 @@
 
 
 
-============================== table nb count(686) table converted to MD ========================================
+============================== table nb count(687) table converted to MD ========================================
 
 
 | Function | Use |
@@ -10516,7 +10532,7 @@
 
 
 
-============================== table nb count(687) table converted to MD ========================================
+============================== table nb count(688) table converted to MD ========================================
 
 
 | **&lt;verb&gt;** | **Value** | **Service** |
@@ -10525,7 +10541,7 @@
 
 
 
-============================== table nb count(688) table converted to MD ========================================
+============================== table nb count(689) table converted to MD ========================================
 
 
 | &lt;verb&gt; | &lt;param&gt; | Explanation |
@@ -10534,7 +10550,7 @@
 
 
 
-============================== table nb count(689) table converted to MD ========================================
+============================== table nb count(690) table converted to MD ========================================
 
 
 | Mnemonic | Description |
@@ -10549,7 +10565,7 @@
 
 
 
-============================== table nb count(690) table converted to MD ========================================
+============================== table nb count(691) table converted to MD ========================================
 
 
 | &lt;verb&gt; | Value | Service |
@@ -10559,7 +10575,7 @@
 
 
 
-============================== table nb count(691) table converted to MD ========================================
+============================== table nb count(692) table converted to MD ========================================
 
 
 | &lt;verb&gt; | &lt;param&gt; | Explanation |
@@ -10569,7 +10585,7 @@
 
 
 
-============================== table nb count(692) table converted to MD ========================================
+============================== table nb count(693) table converted to MD ========================================
 
 
 | Function | Use |
@@ -10590,7 +10606,7 @@
 
 
 
-============================== table nb count(693) table converted to MD ========================================
+============================== table nb count(694) table converted to MD ========================================
 
 
 | CALL "CFTU" USING &lt;verb&gt; &lt;param&gt; &lt;rc&gt;<br /> CALL "CFTC" USING &lt;verb&gt; &lt;param&gt; &lt;rc&gt;  |
@@ -10598,7 +10614,7 @@
 
 
 
-============================== table nb count(694) table converted to MD ========================================
+============================== table nb count(695) table converted to MD ========================================
 
 
 | &lt;verb&gt; | Value | Service |
@@ -10617,7 +10633,7 @@
 
 
 
-============================== table nb count(695) table converted to MD ========================================
+============================== table nb count(696) table converted to MD ========================================
 
 
 | Mnemonic | Description |
@@ -10635,7 +10651,7 @@
 
 
 
-============================== table nb count(696) table converted to MD ========================================
+============================== table nb count(697) table converted to MD ========================================
 
 
 | Template  | Function  | Services | Description  |
@@ -10646,7 +10662,7 @@
 
 
 
-============================== table nb count(697) table converted to MD ========================================
+============================== table nb count(698) table converted to MD ========================================
 
 
 | CL program  | Associated COBOL  | Description  |
@@ -10658,7 +10674,7 @@
 
 
 
-============================== table nb count(698) table converted to MD ========================================
+============================== table nb count(699) table converted to MD ========================================
 
 
 | Template  | Function  | Services | Description  |
@@ -10671,7 +10687,7 @@
 
 
 
-============================== table nb count(699) table converted to MD ========================================
+============================== table nb count(700) table converted to MD ========================================
 
 
 | Template  | Function  | Services |
@@ -10681,7 +10697,7 @@
 
 
 
-============================== table nb count(700) table converted to MD ========================================
+============================== table nb count(701) table converted to MD ========================================
 
 
 | Template  | Function  | Services | Description  |
@@ -10695,7 +10711,7 @@
 
 
 
-============================== table nb count(701) table converted to MD ========================================
+============================== table nb count(702) table converted to MD ========================================
 
 
 | Template  | Function  | Services | Description  |
@@ -10714,7 +10730,7 @@
 
 
 
-============================== table nb count(702) table converted to MD ========================================
+============================== table nb count(703) table converted to MD ========================================
 
 
 | Template  | Function  | Services |
@@ -10733,7 +10749,7 @@
 
 
 
-============================== table nb count(703) table converted to MD ========================================
+============================== table nb count(704) table converted to MD ========================================
 
 
 | Type  | V24 length  | V23 length  | Description  |
@@ -10761,7 +10777,7 @@
 
 
 
-============================== table nb count(704) table converted to MD ========================================
+============================== table nb count(705) table converted to MD ========================================
 
 
 | Type | V24 length | V23 length | Description |
@@ -10789,7 +10805,7 @@
 
 
 
-============================== table nb count(705) table converted to MD ========================================
+============================== table nb count(706) table converted to MD ========================================
 
 
 | DiagP<br /> Catalog  | &amp;messageLog  | Comment  |
@@ -10803,7 +10819,7 @@
 
 
 
-============================== table nb count(706) table converted to MD ========================================
+============================== table nb count(707) table converted to MD ========================================
 
 
 | Field | Explanation |
@@ -10903,7 +10919,7 @@
 
 
 
-============================== table nb count(707) table converted to MD ========================================
+============================== table nb count(708) table converted to MD ========================================
 
 
 | Parameter | Explanation |
@@ -10917,7 +10933,7 @@
 
 
 
-============================== table nb count(708) table converted to MD ========================================
+============================== table nb count(709) table converted to MD ========================================
 
 
 |   |   |
@@ -10931,7 +10947,7 @@
 
 
 
-============================== table nb count(709) table converted to MD ========================================
+============================== table nb count(710) table converted to MD ========================================
 
 
 | File | Explanation |
@@ -10944,7 +10960,7 @@
 
 
 
-============================== table nb count(710) table converted to MD ========================================
+============================== table nb count(711) table converted to MD ========================================
 
 
 | Field  | Description  |
@@ -10954,7 +10970,7 @@
 
 
 
-============================== table nb count(711) table converted to MD ========================================
+============================== table nb count(712) table converted to MD ========================================
 
 
 | Symbol  | Description  |
@@ -10966,7 +10982,7 @@
 
 
 
-============================== table nb count(712) table converted to MD ========================================
+============================== table nb count(713) table converted to MD ========================================
 
 
 | Field  | Description  |
@@ -10979,7 +10995,7 @@
 
 
 
-============================== table nb count(713) table converted to MD ========================================
+============================== table nb count(714) table converted to MD ========================================
 
 
 | Field  | Sender mode<br /> Before  | Sender mode<br /> After  | Receiver mode<br /> Before  | Receiver mode<br /> After  |
@@ -11078,7 +11094,7 @@
 
 
 
-============================== table nb count(714) table converted to MD ========================================
+============================== table nb count(715) table converted to MD ========================================
 
 
 | Field  | Meaning  |
@@ -11089,7 +11105,7 @@
 
 
 
-============================== table nb count(715) table converted to MD ========================================
+============================== table nb count(716) table converted to MD ========================================
 
 
 | Field  | Sender mode<br /> Before  | Sender mode<br /> After  | Receiver mode<br /> Before  | Receiver mode<br /> After  |
@@ -11189,7 +11205,7 @@
 
 
 
-============================== table nb count(716) table converted to MD ========================================
+============================== table nb count(717) table converted to MD ========================================
 
 
 | Field  | Description  |
@@ -11200,7 +11216,7 @@
 
 
 
-============================== table nb count(717) table converted to MD ========================================
+============================== table nb count(718) table converted to MD ========================================
 
 
 | Field  | Sender mode<br /> Before  | Sender mode<br /> After  | Receiver mode<br /> Before  | Receiver mode<br /> After  |
@@ -11299,7 +11315,7 @@
 
 
 
-============================== table nb count(718) table converted to MD ========================================
+============================== table nb count(719) table converted to MD ========================================
 
 
 | Field  | Description  |
@@ -11311,7 +11327,7 @@
 
 
 
-============================== table nb count(719) table converted to MD ========================================
+============================== table nb count(720) table converted to MD ========================================
 
 
 | Field  | Sender mode<br /> Before  | Sender mode<br /> After  | Receiver mode<br /> Before  | Receiver mode<br /> After  |
@@ -11411,7 +11427,7 @@
 
 
 
-============================== table nb count(720) table converted to MD ========================================
+============================== table nb count(721) table converted to MD ========================================
 
 
 | Field  | Description  |
@@ -11424,7 +11440,7 @@
 
 
 
-============================== table nb count(721) table converted to MD ========================================
+============================== table nb count(722) table converted to MD ========================================
 
 
 | Field  | Sender mode<br /> Before  | Sender mode<br /> After  | Receiver mode<br /> Before  | Receiver mode<br /> After  |
@@ -11524,7 +11540,7 @@
 
 
 
-============================== table nb count(722) table converted to MD ========================================
+============================== table nb count(723) table converted to MD ========================================
 
 
 | Field  | Description  |
@@ -11536,7 +11552,7 @@
 
 
 
-============================== table nb count(723) table converted to MD ========================================
+============================== table nb count(724) table converted to MD ========================================
 
 
 | Field  | Sender mode<br /> Before  | Sender mode<br /> After  | Receiver mode<br /> Before  | Receiver mode<br /> After  |
@@ -11636,7 +11652,7 @@
 
 
 
-============================== table nb count(724) table converted to MD ========================================
+============================== table nb count(725) table converted to MD ========================================
 
 
 | Field  | Description  |
@@ -11647,7 +11663,7 @@
 
 
 
-============================== table nb count(725) table converted to MD ========================================
+============================== table nb count(726) table converted to MD ========================================
 
 
 | Field  | Sender mode<br /> Before  | Sender mode<br /> After  | Receiver mode<br /> Before  | Receiver mode<br /> After  |
@@ -11747,7 +11763,7 @@
 
 
 
-============================== table nb count(726) table converted to MD ========================================
+============================== table nb count(727) table converted to MD ========================================
 
 
 | Field  | Description  |
@@ -11758,7 +11774,7 @@
 
 
 
-============================== table nb count(727) table converted to MD ========================================
+============================== table nb count(728) table converted to MD ========================================
 
 
 | Field  | Sender mode<br /> Before  | Sender mode<br /> After  | Receiver mode<br /> Before  | Receiver mode<br /> After  |
@@ -11858,7 +11874,7 @@
 
 
 
-============================== table nb count(728) table converted to MD ========================================
+============================== table nb count(729) table converted to MD ========================================
 
 
 | Field  | Description  |
@@ -11871,7 +11887,7 @@
 
 
 
-============================== table nb count(729) table converted to MD ========================================
+============================== table nb count(730) table converted to MD ========================================
 
 
 | Field  | Sender mode<br /> Before  | Sender mode<br /> After  | Receiver mode<br /> Before  | Receiver mode<br /> After  |
@@ -11971,7 +11987,7 @@
 
 
 
-============================== table nb count(730) table converted to MD ========================================
+============================== table nb count(731) table converted to MD ========================================
 
 
 | Field  | Description  |
@@ -11985,7 +12001,7 @@
 
 
 
-============================== table nb count(731) table converted to MD ========================================
+============================== table nb count(732) table converted to MD ========================================
 
 
 | Field  | Sender mode<br /> Before  | Sender mode<br /> After  | Receiver mode<br /> Before  | Receiver mode<br /> After  |
@@ -12085,7 +12101,7 @@
 
 
 
-============================== table nb count(732) table converted to MD ========================================
+============================== table nb count(733) table converted to MD ========================================
 
 
 | Field | Explanation |
@@ -12113,7 +12129,7 @@
 
 
 
-============================== table nb count(733) table converted to MD ========================================
+============================== table nb count(734) table converted to MD ========================================
 
 
 | Field | Explanation |
@@ -12125,7 +12141,7 @@
 
 
 
-============================== table nb count(734) table converted to MD ========================================
+============================== table nb count(735) table converted to MD ========================================
 
 
 | Field | Explanation |
@@ -12160,7 +12176,7 @@
 
 
 
-============================== table nb count(735) table converted to MD ========================================
+============================== table nb count(736) table converted to MD ========================================
 
 
 | Field | Explanation |
@@ -12180,7 +12196,7 @@
 
 
 
-============================== table nb count(736) table converted to MD ========================================
+============================== table nb count(737) table converted to MD ========================================
 
 
 | Field | Explanation |
@@ -12203,7 +12219,7 @@
 
 
 
-============================== table nb count(737) table converted to MD ========================================
+============================== table nb count(738) table converted to MD ========================================
 
 
 | Field | Explanation |
@@ -12225,7 +12241,7 @@
 
 
 
-============================== table nb count(738) table converted to MD ========================================
+============================== table nb count(739) table converted to MD ========================================
 
 
 | Parameter  | Description  |
@@ -12240,7 +12256,7 @@
 
 
 
-============================== table nb count(739) table converted to MD ========================================
+============================== table nb count(740) table converted to MD ========================================
 
 
 | Parameter  | Description  |
@@ -12251,7 +12267,7 @@
 
 
 
-============================== table nb count(740) table converted to MD ========================================
+============================== table nb count(741) table converted to MD ========================================
 
 
 | File  | Description  |
@@ -12263,7 +12279,7 @@
 
 
 
-============================== table nb count(741) table converted to MD ========================================
+============================== table nb count(742) table converted to MD ========================================
 
 
 | Field  | Explanation  |
@@ -12287,7 +12303,7 @@
 
 
 
-============================== table nb count(742) table converted to MD ========================================
+============================== table nb count(743) table converted to MD ========================================
 
 
 | Field  | Explanation  |
@@ -12307,7 +12323,7 @@
 
 
 
-============================== table nb count(743) table converted to MD ========================================
+============================== table nb count(744) table converted to MD ========================================
 
 
 | Field  | Explanation  |
@@ -12350,7 +12366,7 @@
 
 
 
-============================== table nb count(744) table converted to MD ========================================
+============================== table nb count(745) table converted to MD ========================================
 
 
 | Field  | Explanation  |
@@ -12365,7 +12381,7 @@
 
 
 
-============================== table nb count(745) table converted to MD ========================================
+============================== table nb count(746) table converted to MD ========================================
 
 
 | Parameter | Definition |
@@ -12377,7 +12393,7 @@
 
 
 
-============================== table nb count(746) table converted to MD ========================================
+============================== table nb count(747) table converted to MD ========================================
 
 
 | Parameter | Definition |
@@ -12387,7 +12403,7 @@
 
 
 
-============================== table nb count(747) table converted to MD ========================================
+============================== table nb count(748) table converted to MD ========================================
 
 
 | Change of state  | End of transfer procedure submitted  |
@@ -12401,7 +12417,7 @@
 
 
 
-============================== table nb count(748) table converted to MD ========================================
+============================== table nb count(749) table converted to MD ========================================
 
 
 | Field | Explanation |
@@ -12417,7 +12433,7 @@
 
 
 
-============================== table nb count(749) table converted to MD ========================================
+============================== table nb count(750) table converted to MD ========================================
 
 
 | Field | Explanation |
@@ -12444,7 +12460,7 @@
 
 
 
-============================== table nb count(750) table converted to MD ========================================
+============================== table nb count(751) table converted to MD ========================================
 
 
 | Field | Explanation |
@@ -12457,7 +12473,7 @@
 
 
 
-============================== table nb count(751) table converted to MD ========================================
+============================== table nb count(752) table converted to MD ========================================
 
 
 | Field | Explanation |
@@ -12510,7 +12526,7 @@
 
 
 
-============================== table nb count(752) table converted to MD ========================================
+============================== table nb count(753) table converted to MD ========================================
 
 
 | Field | Explanation |
@@ -12521,7 +12537,7 @@
 
 
 
-============================== table nb count(753) table converted to MD ========================================
+============================== table nb count(754) table converted to MD ========================================
 
 
 | Field | Explanation |
@@ -12531,7 +12547,7 @@
 
 
 
-============================== table nb count(754) table converted to MD ========================================
+============================== table nb count(755) table converted to MD ========================================
 
 
 | Field | Explanation |
@@ -12548,7 +12564,7 @@
 
 
 
-============================== table nb count(755) table converted to MD ========================================
+============================== table nb count(756) table converted to MD ========================================
 
 
 | Parameter | Definition |
@@ -12564,7 +12580,7 @@
 
 
 
-============================== table nb count(756) table converted to MD ========================================
+============================== table nb count(757) table converted to MD ========================================
 
 
 | Parameter | Definition |
@@ -12574,7 +12590,7 @@
 
 
 
-============================== table nb count(757) table converted to MD ========================================
+============================== table nb count(758) table converted to MD ========================================
 
 
 | Access Management exit parameters  | Value  | Description  |
@@ -12589,7 +12605,7 @@
 
 
 
-============================== table nb count(758) table converted to MD ========================================
+============================== table nb count(759) table converted to MD ========================================
 
 
 | Sample  | Authentication  | Permissions checking  |
@@ -12598,7 +12614,7 @@
 
 
 
-============================== table nb count(759) table converted to MD ========================================
+============================== table nb count(760) table converted to MD ========================================
 
 
 | Field  | Description  |
@@ -12611,7 +12627,7 @@
 
 
 
-============================== table nb count(760) table converted to MD ========================================
+============================== table nb count(761) table converted to MD ========================================
 
 
 | Field  | Description  |
@@ -12622,7 +12638,7 @@
 
 
 
-============================== table nb count(761) table converted to MD ========================================
+============================== table nb count(762) table converted to MD ========================================
 
 
 | Role  | Description  |
@@ -12635,7 +12651,7 @@
 
 
 
-============================== table nb count(762) table converted to MD ========================================
+============================== table nb count(763) table converted to MD ========================================
 
 
 | ID  | Default  | Description  |
@@ -12645,7 +12661,7 @@
 
 
 
-============================== table nb count(763) table converted to MD ========================================
+============================== table nb count(764) table converted to MD ========================================
 
 
 | ID  | Description  |
@@ -12656,7 +12672,7 @@
 
 
 
-============================== table nb count(764) table converted to MD ========================================
+============================== table nb count(765) table converted to MD ========================================
 
 
 | Parameter  | Options  | Description  |
@@ -12667,7 +12683,7 @@
 
 
 
-============================== table nb count(765) table converted to MD ========================================
+============================== table nb count(766) table converted to MD ========================================
 
 
 | Parameter  | Value  |
@@ -12676,7 +12692,7 @@
 
 
 
-============================== table nb count(766) table converted to MD ========================================
+============================== table nb count(767) table converted to MD ========================================
 
 
 | Parameter  | Value  |
@@ -12685,7 +12701,7 @@
 
 
 
-============================== table nb count(767) table converted to MD ========================================
+============================== table nb count(768) table converted to MD ========================================
 
 
 | Parameter  | Value  | Former value  |
@@ -12695,7 +12711,7 @@
 
 
 
-============================== table nb count(768) table converted to MD ========================================
+============================== table nb count(769) table converted to MD ========================================
 
 
 | Parameter  | Type  | Default  | Description  |
@@ -12711,7 +12727,7 @@
 
 
 
-============================== table nb count(769) table converted to MD ========================================
+============================== table nb count(770) table converted to MD ========================================
 
 
 | Supported format  | Type  | Extension  |
@@ -12725,7 +12741,7 @@
 
 
 
-============================== table nb count(770) table converted to MD ========================================
+============================== table nb count(771) table converted to MD ========================================
 
 
 | Parameter | Value |
@@ -12737,7 +12753,7 @@
 
 
 
-============================== table nb count(771) table converted to MD ========================================
+============================== table nb count(772) table converted to MD ========================================
 
 
 | Parameter | Value |
@@ -12749,7 +12765,7 @@
 
 
 
-============================== table nb count(772) table converted to MD ========================================
+============================== table nb count(773) table converted to MD ========================================
 
 
 | Parameter | Value |
@@ -12759,7 +12775,7 @@
 
 
 
-============================== table nb count(773) table converted to MD ========================================
+============================== table nb count(774) table converted to MD ========================================
 
 
 | Command  | Description  |
@@ -12774,7 +12790,7 @@
 
 
 
-============================== table nb count(774) table converted to MD ========================================
+============================== table nb count(775) table converted to MD ========================================
 
 
 | Object  | Parameter  | File type described  |
@@ -12793,7 +12809,7 @@
 
 
 
-============================== table nb count(775) table converted to MD ========================================
+============================== table nb count(776) table converted to MD ========================================
 
 
 | CONFIG command<br/> TYPE parameter | File type described  |
@@ -12807,7 +12823,7 @@
 
 
 
-============================== table nb count(776) table converted to MD ========================================
+============================== table nb count(777) table converted to MD ========================================
 
 
 | Service  | Command  | Parameter  | **File type described**  |
@@ -12817,7 +12833,7 @@
 
 
 
-============================== table nb count(777) table converted to MD ========================================
+============================== table nb count(778) table converted to MD ========================================
 
 
 | Service  | Command  | Parameter  | File type described  |
@@ -12828,7 +12844,7 @@
 
 
 
-============================== table nb count(778) table converted to MD ========================================
+============================== table nb count(779) table converted to MD ========================================
 
 
 | Field  | File type described  |
@@ -12842,7 +12858,7 @@
 
 
 
-============================== table nb count(779) table converted to MD ========================================
+============================== table nb count(780) table converted to MD ========================================
 
 
 | Heading  | Offset<br/> V24 | Offset<br/> V23 |
@@ -12886,7 +12902,7 @@
 
 
 
-============================== table nb count(780) table converted to MD ========================================
+============================== table nb count(781) table converted to MD ========================================
 
 
 | Protocol  | Details  |
@@ -12895,7 +12911,7 @@
 
 
 
-============================== table nb count(781) table converted to MD ========================================
+============================== table nb count(782) table converted to MD ========================================
 
 
 | Parameter  | Description  |
@@ -12914,7 +12930,7 @@
 
 
 
-============================== table nb count(782) table converted to MD ========================================
+============================== table nb count(783) table converted to MD ========================================
 
 
 | Usage  | Process  | Configurable  | Configuration Parameter  | Network Interface  |
@@ -12932,7 +12948,7 @@
 
 
 
-============================== table nb count(783) table converted to MD ========================================
+============================== table nb count(784) table converted to MD ========================================
 
 
 | Usage  | Process  | Configurable  | Configuration Parameter  | Network Interface  |
@@ -12952,7 +12968,7 @@
 
 
 
-============================== table nb count(784) table converted to MD ========================================
+============================== table nb count(785) table converted to MD ========================================
 
 
 | Name  | Description  | Type  | Restriction  | Default  | Platform  | Flags  |
@@ -13634,7 +13650,7 @@
 
 
 
-============================== table nb count(785) table converted to MD ========================================
+============================== table nb count(786) table converted to MD ========================================
 
 
 | UCONF  | Default  |
@@ -13645,7 +13661,7 @@
 
 
 
-============================== table nb count(786) table converted to MD ========================================
+============================== table nb count(787) table converted to MD ========================================
 
 
 | ID  | Default  | Former value  |
@@ -13665,7 +13681,7 @@
 
 
 
-============================== table nb count(787) table converted to MD ========================================
+============================== table nb count(788) table converted to MD ========================================
 
 
 | ID  | Default  | Windows  | UNIX  |
@@ -13690,7 +13706,7 @@
 
 
 
-============================== table nb count(788) table converted to MD ========================================
+============================== table nb count(789) table converted to MD ========================================
 
 
 | ID  | Default  | Description  |
@@ -13700,7 +13716,7 @@
 
 
 
-============================== table nb count(789) table converted to MD ========================================
+============================== table nb count(790) table converted to MD ========================================
 
 
 | ID  | Default  | Former value  |
@@ -13729,7 +13745,7 @@
 
 
 
-============================== table nb count(790) table converted to MD ========================================
+============================== table nb count(791) table converted to MD ========================================
 
 
 | ID  | Default  | Former value  |
@@ -13741,7 +13757,7 @@
 
 
 
-============================== table nb count(791) table converted to MD ========================================
+============================== table nb count(792) table converted to MD ========================================
 
 
 | ID  | Description  |
@@ -13751,7 +13767,7 @@
 
 
 
-============================== table nb count(792) table converted to MD ========================================
+============================== table nb count(793) table converted to MD ========================================
 
 
 | ID  | Description  |
@@ -13761,7 +13777,7 @@
 
 
 
-============================== table nb count(793) table converted to MD ========================================
+============================== table nb count(794) table converted to MD ========================================
 
 
 | Parameter  | Default  | Description  |
@@ -13774,7 +13790,7 @@
 
 
 
-============================== table nb count(794) table converted to MD ========================================
+============================== table nb count(795) table converted to MD ========================================
 
 
 | Parameter  | Default  | Description  |
@@ -13784,7 +13800,7 @@
 
 
 
-============================== table nb count(795) table converted to MD ========================================
+============================== table nb count(796) table converted to MD ========================================
 
 
 | Parameter  | Description  |
@@ -13793,7 +13809,7 @@
 
 
 
-============================== table nb count(796) table converted to MD ========================================
+============================== table nb count(797) table converted to MD ========================================
 
 
 | Parameter  | Description  |
@@ -13802,7 +13818,7 @@
 
 
 
-============================== table nb count(797) table converted to MD ========================================
+============================== table nb count(798) table converted to MD ========================================
 
 
 | Parameter  | Description  |
@@ -13811,7 +13827,7 @@
 
 
 
-============================== table nb count(798) table converted to MD ========================================
+============================== table nb count(799) table converted to MD ========================================
 
 
 | Parameter  | Default  | Description  |
@@ -13823,7 +13839,7 @@
 
 
 
-============================== table nb count(799) table converted to MD ========================================
+============================== table nb count(800) table converted to MD ========================================
 
 
 | Parameter  | Default  | Description  |
@@ -13837,7 +13853,7 @@
 
 
 
-============================== table nb count(800) table converted to MD ========================================
+============================== table nb count(801) table converted to MD ========================================
 
 
 | Parameter  | Default  | Description  |
@@ -13846,7 +13862,7 @@
 
 
 
-============================== table nb count(801) table converted to MD ========================================
+============================== table nb count(802) table converted to MD ========================================
 
 
 | Parameter  | Default  | Description  |
@@ -13855,7 +13871,7 @@
 
 
 
-============================== table nb count(802) table converted to MD ========================================
+============================== table nb count(803) table converted to MD ========================================
 
 
 | Parameter  | Default  | Description  |
@@ -13864,7 +13880,7 @@
 
 
 
-============================== table nb count(803) table converted to MD ========================================
+============================== table nb count(804) table converted to MD ========================================
 
 
 | Parameter  | Default value  | Description  |
@@ -13874,7 +13890,7 @@
 
 
 
-============================== table nb count(804) table converted to MD ========================================
+============================== table nb count(805) table converted to MD ========================================
 
 
 | Parameter  | Default  | Type  | Description  |
@@ -13883,7 +13899,7 @@
 
 
 
-============================== table nb count(805) table converted to MD ========================================
+============================== table nb count(806) table converted to MD ========================================
 
 
 | ID  | Description  |
@@ -13894,7 +13910,7 @@
 
 
 
-============================== table nb count(806) table converted to MD ========================================
+============================== table nb count(807) table converted to MD ========================================
 
 
 | Parameter  | Description  |
@@ -13903,7 +13919,7 @@
 
 
 
-============================== table nb count(807) table converted to MD ========================================
+============================== table nb count(808) table converted to MD ========================================
 
 
 | Parameter  | Options  | Description  |
@@ -13914,7 +13930,7 @@
 
 
 
-============================== table nb count(808) table converted to MD ========================================
+============================== table nb count(809) table converted to MD ========================================
 
 
 | Parameter  | Value  |
@@ -13923,7 +13939,7 @@
 
 
 
-============================== table nb count(809) table converted to MD ========================================
+============================== table nb count(810) table converted to MD ========================================
 
 
 | Parameter  | Value  |
@@ -13932,7 +13948,7 @@
 
 
 
-============================== table nb count(810) table converted to MD ========================================
+============================== table nb count(811) table converted to MD ========================================
 
 
 | Parameter  | Value  | Former value  |
@@ -13942,7 +13958,7 @@
 
 
 
-============================== table nb count(811) table converted to MD ========================================
+============================== table nb count(812) table converted to MD ========================================
 
 
 | Supported format  | Type  | Extension  |
@@ -13956,7 +13972,7 @@
 
 
 
-============================== table nb count(812) table converted to MD ========================================
+============================== table nb count(813) table converted to MD ========================================
 
 
 | Parameter | Value |
@@ -13968,7 +13984,7 @@
 
 
 
-============================== table nb count(813) table converted to MD ========================================
+============================== table nb count(814) table converted to MD ========================================
 
 
 | Parameter | Value |
@@ -13980,7 +13996,7 @@
 
 
 
-============================== table nb count(814) table converted to MD ========================================
+============================== table nb count(815) table converted to MD ========================================
 
 
 | Parameter | Value |
@@ -13991,7 +14007,7 @@
 
 
 
-============================== table nb count(815) table converted to MD ========================================
+============================== table nb count(816) table converted to MD ========================================
 
 
 | Parameter  | Description  |
@@ -14001,7 +14017,7 @@
 
 
 
-============================== table nb count(816) table converted to MD ========================================
+============================== table nb count(817) table converted to MD ========================================
 
 
 | Parameter  | Default  | Description  |
@@ -14012,7 +14028,7 @@
 
 
 
-============================== table nb count(817) table converted to MD ========================================
+============================== table nb count(818) table converted to MD ========================================
 
 
 | Parameter  | Description  |
@@ -14023,7 +14039,7 @@
 
 
 
-============================== table nb count(818) table converted to MD ========================================
+============================== table nb count(819) table converted to MD ========================================
 
 
 | Parameter  | Default  | Description  |
@@ -14032,7 +14048,7 @@
 
 
 
-============================== table nb count(819) table converted to MD ========================================
+============================== table nb count(820) table converted to MD ========================================
 
 
 | Parameters  | Description  |
@@ -14045,7 +14061,7 @@
 
 
 
-============================== table nb count(820) table converted to MD ========================================
+============================== table nb count(821) table converted to MD ========================================
 
 
 | Parameter  | Description  |
@@ -14056,7 +14072,7 @@
 
 
 
-============================== table nb count(821) table converted to MD ========================================
+============================== table nb count(822) table converted to MD ========================================
 
 
 | OS  | Description  |
@@ -14065,7 +14081,7 @@
 
 
 
-============================== table nb count(822) table converted to MD ========================================
+============================== table nb count(823) table converted to MD ========================================
 
 
 | Parameter  | Description  |
@@ -14083,7 +14099,7 @@
 
 
 
-============================== table nb count(823) table converted to MD ========================================
+============================== table nb count(824) table converted to MD ========================================
 
 
 | Parameter  | Description  |
@@ -14113,7 +14129,7 @@
 
 
 
-============================== table nb count(824) table converted to MD ========================================
+============================== table nb count(825) table converted to MD ========================================
 
 
 | Parameter category  | Parameter concerned  |
@@ -14126,7 +14142,7 @@
 
 
 
-============================== table nb count(825) table converted to MD ========================================
+============================== table nb count(826) table converted to MD ========================================
 
 
 | Heading number  | Contents  |
@@ -14149,7 +14165,7 @@
 
 
 
-============================== table nb count(826) table converted to MD ========================================
+============================== table nb count(827) table converted to MD ========================================
 
 
 | DELETE <br /> Parameters  | Description  |
@@ -14170,7 +14186,7 @@
 
 
 
-============================== table nb count(827) table converted to MD ========================================
+============================== table nb count(828) table converted to MD ========================================
 
 
 | Parameter  |  Description  |
@@ -14181,7 +14197,7 @@
 
 
 
-============================== table nb count(828) table converted to MD ========================================
+============================== table nb count(829) table converted to MD ========================================
 
 
 | <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/timep">TIMEP</a> | Purge time selected by the user.<br/> You can deactivate the next purge function by setting TIMEP = 00000000. Use care with this operation due to a risk of catalog overloading with a loss of performance, or overflow.<br/> If the next purge is part of a cycle, see the CFTCAT TIMEP parameter, the entire cycle is deleted, and not just the next occurrence of this cycle. |
@@ -14189,7 +14205,7 @@
 
 
 
-============================== table nb count(829) table converted to MD ========================================
+============================== table nb count(830) table converted to MD ========================================
 
 
 | Parameter  | Description  |
@@ -14199,7 +14215,7 @@
 
 
 
-============================== table nb count(830) table converted to MD ========================================
+============================== table nb count(831) table converted to MD ========================================
 
 
 | Parameter  | Default  | Description  |
@@ -14209,7 +14225,7 @@
 
 
 
-============================== table nb count(831) table converted to MD ========================================
+============================== table nb count(832) table converted to MD ========================================
 
 
 | CFTA0nX  | Details  |
@@ -14225,7 +14241,7 @@
 
 
 
-============================== table nb count(832) table converted to MD ========================================
+============================== table nb count(833) table converted to MD ========================================
 
 
 | Attribute  | Details  |
@@ -14243,7 +14259,7 @@
 
 
 
-============================== table nb count(833) table converted to MD ========================================
+============================== table nb count(834) table converted to MD ========================================
 
 
 | Parameter  | Default  | Description  |
@@ -14253,7 +14269,7 @@
 
 
 
-============================== table nb count(834) table converted to MD ========================================
+============================== table nb count(835) table converted to MD ========================================
 
 
 | Parameters | Description | Default | Values | Modify  |
@@ -14287,7 +14303,7 @@
 
 
 
-============================== table nb count(835) table converted to MD ========================================
+============================== table nb count(836) table converted to MD ========================================
 
 
 | Parameters | Description | Default | Values | Modify  |
@@ -14301,7 +14317,7 @@
 
 
 
-============================== table nb count(836) table converted to MD ========================================
+============================== table nb count(837) table converted to MD ========================================
 
 
 | Parameters | Description | Default | Values | Modify  |
@@ -14310,7 +14326,7 @@
 
 
 
-============================== table nb count(837) table converted to MD ========================================
+============================== table nb count(838) table converted to MD ========================================
 
 
 | Correct option  | Incorrect option  |
@@ -14325,7 +14341,7 @@
 
 
 
-============================== table nb count(838) table converted to MD ========================================
+============================== table nb count(839) table converted to MD ========================================
 
 
 | Client  | Server  | Internal data  | Transferable data  | Performance  |
@@ -14337,7 +14353,7 @@
 
 
 
-============================== table nb count(839) table converted to MD ========================================
+============================== table nb count(840) table converted to MD ========================================
 
 
 | CFTA0nX  | Details  |
@@ -14353,7 +14369,7 @@
 
 
 
-============================== table nb count(840) table converted to MD ========================================
+============================== table nb count(841) table converted to MD ========================================
 
 
 | Attribute  | Details  |
@@ -14371,7 +14387,7 @@
 
 
 
-============================== table nb count(841) table converted to MD ========================================
+============================== table nb count(842) table converted to MD ========================================
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
@@ -14383,7 +14399,7 @@
 
 
 
-============================== table nb count(842) table converted to MD ========================================
+============================== table nb count(843) table converted to MD ========================================
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
@@ -14396,7 +14412,7 @@
 
 
 
-============================== table nb count(843) table converted to MD ========================================
+============================== table nb count(844) table converted to MD ========================================
 
 
 | Sentinel<br/> attribute | Data Type | Length | Description | Name in<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
@@ -14406,7 +14422,7 @@
 
 
 
-============================== table nb count(844) table converted to MD ========================================
+============================== table nb count(845) table converted to MD ========================================
 
 
 | ****State**** | ****Compatible Sentinel State**** | ****IsEnd**** | ****IsAlert**** | ****IsException**** | ****Description**** |
@@ -14427,7 +14443,7 @@
 
 
 
-============================== table nb count(845) table converted to MD ========================================
+============================== table nb count(846) table converted to MD ========================================
 
 
 | ****State**** | ****Compatible Sentinel State**** | ****IsEnd**** | ****IsAlert**** | ****IsException**** | ****Description**** |
@@ -14447,7 +14463,7 @@
 
 
 
-============================== table nb count(846) table converted to MD ========================================
+============================== table nb count(847) table converted to MD ========================================
 
 
 | ****State**** | ****Compatible Sentinel State**** | ****IsEnd**** | ****IsAlert**** | ****IsException**** | ****Description**** |
@@ -14467,7 +14483,7 @@
 
 
 
-============================== table nb count(847) table converted to MD ========================================
+============================== table nb count(848) table converted to MD ========================================
 
 
 | ****State**** | ****Compatible Sentinel State**** | ****IsEnd**** | ****IsAlert**** | ****IsException**** | ****Description**** |
@@ -14489,7 +14505,7 @@
 
 
 
-============================== table nb count(848) table converted to MD ========================================
+============================== table nb count(849) table converted to MD ========================================
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
@@ -14499,7 +14515,7 @@
 
 
 
-============================== table nb count(849) table converted to MD ========================================
+============================== table nb count(850) table converted to MD ========================================
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
@@ -14516,7 +14532,7 @@
 
 
 
-============================== table nb count(850) table converted to MD ========================================
+============================== table nb count(851) table converted to MD ========================================
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
@@ -14527,7 +14543,7 @@
 
 
 
-============================== table nb count(851) table converted to MD ========================================
+============================== table nb count(852) table converted to MD ========================================
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
@@ -14542,7 +14558,7 @@
 
 
 
-============================== table nb count(852) table converted to MD ========================================
+============================== table nb count(853) table converted to MD ========================================
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
@@ -14562,7 +14578,7 @@
 
 
 
-============================== table nb count(853) table converted to MD ========================================
+============================== table nb count(854) table converted to MD ========================================
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> product |
@@ -14574,7 +14590,7 @@
 
 
 
-============================== table nb count(854) table converted to MD ========================================
+============================== table nb count(855) table converted to MD ========================================
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
@@ -14595,7 +14611,7 @@
 
 
 
-============================== table nb count(855) table converted to MD ========================================
+============================== table nb count(856) table converted to MD ========================================
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
@@ -14607,7 +14623,7 @@
 
 
 
-============================== table nb count(856) table converted to MD ========================================
+============================== table nb count(857) table converted to MD ========================================
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
@@ -14622,7 +14638,7 @@
 
 
 
-============================== table nb count(857) table converted to MD ========================================
+============================== table nb count(858) table converted to MD ========================================
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
@@ -14632,7 +14648,7 @@
 
 
 
-============================== table nb count(858) table converted to MD ========================================
+============================== table nb count(859) table converted to MD ========================================
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
@@ -14648,7 +14664,7 @@
 
 
 
-============================== table nb count(859) table converted to MD ========================================
+============================== table nb count(860) table converted to MD ========================================
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
@@ -14659,7 +14675,7 @@
 
 
 
-============================== table nb count(860) table converted to MD ========================================
+============================== table nb count(861) table converted to MD ========================================
 
 
 | Offset | Length | PI | Description |
@@ -14678,7 +14694,7 @@
 
 
 
-============================== table nb count(861) table converted to MD ========================================
+============================== table nb count(862) table converted to MD ========================================
 
 
 | Offset | Length | Value  | Description |
@@ -14695,7 +14711,7 @@
 
 
 
-============================== table nb count(862) table converted to MD ========================================
+============================== table nb count(863) table converted to MD ========================================
 
 
 |   | Phase | Phasestep | Transfer CFT State | Transfer CFT Compatible State (uconf:<br/> cft.state_compat=Yes) | Diagi | Acked | Sentinel<br/> State | Compatible Sentinel State (uconf:<br/> cft.state_compat=Yes) |
@@ -14739,7 +14755,7 @@
 
 
 
-============================== table nb count(863) table converted to MD ========================================
+============================== table nb count(864) table converted to MD ========================================
 
 
 | Definition  | NO  | ALL  | SUMMARY  | ERROR  | UNDEFINED  |
@@ -14752,7 +14768,7 @@
 
 
 
-============================== table nb count(864) table converted to MD ========================================
+============================== table nb count(865) table converted to MD ========================================
 
 
 | Attribute  | Description  | Type  | Length  |
@@ -14770,7 +14786,7 @@
 
 
 
-============================== table nb count(865) table converted to MD ========================================
+============================== table nb count(866) table converted to MD ========================================
 
 
 | Request  | Retrieves...  |
@@ -14781,7 +14797,7 @@
 
 
 
-============================== table nb count(866) table converted to MD ========================================
+============================== table nb count(867) table converted to MD ========================================
 
 
 | Unified configuration parameter  | Default value  | Former Sentinel parameter name<br/> trkapi.cfg |
@@ -14817,7 +14833,7 @@
 
 
 
-============================== table nb count(867) table converted to MD ========================================
+============================== table nb count(868) table converted to MD ========================================
 
 
 | Unified configuration parameter  | Default value  | Description  |
@@ -14828,7 +14844,7 @@
 
 
 
-============================== table nb count(868) table converted to MD ========================================
+============================== table nb count(869) table converted to MD ========================================
 
 
 | Unified configuration parameter  | Default value  | Description  |
@@ -14838,7 +14854,7 @@
 
 
 
-============================== table nb count(869) table converted to MD ========================================
+============================== table nb count(870) table converted to MD ========================================
 
 
 | Sentinel<br/> attribute | Data type  | Length  | Description  | Transfer CFT  | InterPEL Core  | InterPEL MVS  |
@@ -14848,7 +14864,7 @@
 
 
 
-============================== table nb count(870) table converted to MD ========================================
+============================== table nb count(871) table converted to MD ========================================
 
 
 | Sentinel  | Data type  | Length  | Description  | Transfer CFT  | InterPEL Core  | InterPEL MVS  |
@@ -14865,7 +14881,7 @@
 
 
 
-============================== table nb count(871) table converted to MD ========================================
+============================== table nb count(872) table converted to MD ========================================
 
 
 | Sentinel  | Data type  | Length  | Description  | Transfer CFT  | InterPEL Core  | InterPEL MVS  |
@@ -14878,7 +14894,7 @@
 
 
 
-============================== table nb count(872) table converted to MD ========================================
+============================== table nb count(873) table converted to MD ========================================
 
 
 | Sentinel  | Data type  | Length  | Description  | Transfer CFT  | InterPEL Core  | InterPEL MVS  |
@@ -14893,7 +14909,7 @@
 
 
 
-============================== table nb count(873) table converted to MD ========================================
+============================== table nb count(874) table converted to MD ========================================
 
 
 | Sentinel  | Data type  | Length  | Description  | Transfer CFT  | InterPEL Core  | InterPEL MVS  |
@@ -14915,7 +14931,7 @@
 
 
 
-============================== table nb count(874) table converted to MD ========================================
+============================== table nb count(875) table converted to MD ========================================
 
 
 | Sentinel  | Data type  | Length  | Description  | Transfer CFT  | InterPEL Core  | InterPEL MVS  |
@@ -14927,7 +14943,7 @@
 
 
 
-============================== table nb count(875) table converted to MD ========================================
+============================== table nb count(876) table converted to MD ========================================
 
 
 | Sentinel  | Data type  | Length  | Description  | Name in  | InterPEL Core  | InterPEL MVS  |
@@ -14948,7 +14964,7 @@
 
 
 
-============================== table nb count(876) table converted to MD ========================================
+============================== table nb count(877) table converted to MD ========================================
 
 
 | Sentinel  | Data type  | Length  | Description  | Transfer CFT  | InterPEL Core  | InterPEL MVS  |
@@ -14960,7 +14976,7 @@
 
 
 
-============================== table nb count(877) table converted to MD ========================================
+============================== table nb count(878) table converted to MD ========================================
 
 
 | Sentinel  | Data type  | Length  | Description  | Transfer CFT  | InterPEL Core  | InterPEL MVS  |
@@ -14976,7 +14992,7 @@
 
 
 
-============================== table nb count(878) table converted to MD ========================================
+============================== table nb count(879) table converted to MD ========================================
 
 
 | Sentinel attribute  | Data type  | Length  | Description  | Transfer CFT | InterPEL Core  | InterPEL MVS  |
@@ -14986,7 +15002,7 @@
 
 
 
-============================== table nb count(879) table converted to MD ========================================
+============================== table nb count(880) table converted to MD ========================================
 
 
 | Sentinel attribute  | Data type  | Length  | Description  | Transfer CFT | InterPEL Core  | InterPEL MVS  |
@@ -15003,7 +15019,7 @@
 
 
 
-============================== table nb count(880) table converted to MD ========================================
+============================== table nb count(881) table converted to MD ========================================
 
 
 | Sentinel attribute  | Data type  | Length  | Description  | Transfer CFT  | InterPEL Core  | InterPEL MVS  |
@@ -15019,7 +15035,7 @@
 
 
 
-============================== table nb count(881) table converted to MD ========================================
+============================== table nb count(882) table converted to MD ========================================
 
 
 | Sentinel attribute  | Data type  | Length  | Description  | Transfer CFT  | InterPEL Core  | InterPEL MVS  |
@@ -15041,7 +15057,7 @@
 
 
 
-============================== table nb count(882) table converted to MD ========================================
+============================== table nb count(883) table converted to MD ========================================
 
 
 | Step  | Your remarks  |
@@ -15054,7 +15070,7 @@
 
 
 
-============================== table nb count(883) table converted to MD ========================================
+============================== table nb count(884) table converted to MD ========================================
 
 
 | Step  | Your remarks  |
@@ -15065,7 +15081,7 @@
 
 
 
-============================== table nb count(884) table converted to MD ========================================
+============================== table nb count(885) table converted to MD ========================================
 
 
 | Step  | Your remarks  |
@@ -15076,7 +15092,7 @@
 
 
 
-============================== table nb count(885) table converted to MD ========================================
+============================== table nb count(886) table converted to MD ========================================
 
 
 | Event | Consequence |
@@ -15085,7 +15101,7 @@
 
 
 
-============================== table nb count(886) table converted to MD ========================================
+============================== table nb count(887) table converted to MD ========================================
 
 
 | Check the issue and solutions | Description |
@@ -15104,7 +15120,7 @@
 
 
 
-============================== table nb count(887) table converted to MD ========================================
+============================== table nb count(888) table converted to MD ========================================
 
 
 | Code | Event | Consequence |
@@ -15113,7 +15129,7 @@
 
 
 
-============================== table nb count(888) table converted to MD ========================================
+============================== table nb count(889) table converted to MD ========================================
 
 
 | SSL objects | Description |
@@ -15123,7 +15139,7 @@
 
 
 
-============================== table nb count(889) table converted to MD ========================================
+============================== table nb count(890) table converted to MD ========================================
 
 
 | Code | Event | Consequence |
@@ -15133,7 +15149,7 @@
 
 
 
-============================== table nb count(890) table converted to MD ========================================
+============================== table nb count(891) table converted to MD ========================================
 
 
 | Diagnostic codes | Event | Solution |
@@ -15143,7 +15159,7 @@
 
 
 
-============================== table nb count(891) table converted to MD ========================================
+============================== table nb count(892) table converted to MD ========================================
 
 
 | Issue vs<br /> Possible causes  | Hard disk bottleneck  | Catalog<br/> full | Network<br/> bottleneck | Memory or processor bottleneck*  | Corrupt<br/> file or DB ** |
@@ -15157,7 +15173,7 @@
 
 
 
-============================== table nb count(892) table converted to MD ========================================
+============================== table nb count(893) table converted to MD ========================================
 
 
 | Parameter | Description |
@@ -15168,7 +15184,7 @@
 
 
 
-============================== table nb count(893) table converted to MD ========================================
+============================== table nb count(894) table converted to MD ========================================
 
 
 | Parameter  | Description  |
@@ -15180,7 +15196,7 @@
 
 
 
-============================== table nb count(894) table converted to MD ========================================
+============================== table nb count(895) table converted to MD ========================================
 
 
 | Parameter  |  Description  |
@@ -15191,7 +15207,7 @@
 
 
 
-============================== table nb count(895) table converted to MD ========================================
+============================== table nb count(896) table converted to MD ========================================
 
 
 | Parameter  | Description  |
@@ -15202,7 +15218,7 @@
 
 
 
-============================== table nb count(896) table converted to MD ========================================
+============================== table nb count(897) table converted to MD ========================================
 
 
 | Parameter  | Description  |
@@ -15213,7 +15229,7 @@
 
 
 
-============================== table nb count(897) table converted to MD ========================================
+============================== table nb count(898) table converted to MD ========================================
 
 
 | Parameters  | Description  |
@@ -15225,7 +15241,7 @@
 
 
 
-============================== table nb count(898) table converted to MD ========================================
+============================== table nb count(899) table converted to MD ========================================
 
 
 | Parameter  | Description  |
@@ -15236,7 +15252,7 @@
 
 
 
-============================== table nb count(899) table converted to MD ========================================
+============================== table nb count(900) table converted to MD ========================================
 
 
 | OS  | Description  |
@@ -15245,7 +15261,7 @@
 
 
 
-============================== table nb count(900) table converted to MD ========================================
+============================== table nb count(901) table converted to MD ========================================
 
 
 | Parameter  | Description  |
@@ -15263,7 +15279,7 @@
 
 
 
-============================== table nb count(901) table converted to MD ========================================
+============================== table nb count(902) table converted to MD ========================================
 
 
 | Parameter | Value |
@@ -15275,7 +15291,7 @@
 
 
 
-============================== table nb count(902) table converted to MD ========================================
+============================== table nb count(903) table converted to MD ========================================
 
 
 | Parameter | Value |
@@ -15287,7 +15303,7 @@
 
 
 
-============================== table nb count(903) table converted to MD ========================================
+============================== table nb count(904) table converted to MD ========================================
 
 
 | Parameter | Value |
@@ -15297,7 +15313,7 @@
 
 
 
-============================== table nb count(904) table converted to MD ========================================
+============================== table nb count(905) table converted to MD ========================================
 
 
 | SSL_KEYSTORE value | Windows | Linux |
@@ -15307,7 +15323,7 @@
 
 
 
-============================== table nb count(905) table converted to MD ========================================
+============================== table nb count(906) table converted to MD ========================================
 
 
 | The message severity is displayed | CFTxxx: the actual message that is displayed on Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
@@ -15318,7 +15334,7 @@
 
 
 
-============================== table nb count(906) table converted to MD ========================================
+============================== table nb count(907) table converted to MD ========================================
 
 
 | Code  | Description  |
@@ -15339,7 +15355,7 @@
 
 
 
-============================== table nb count(907) table converted to MD ========================================
+============================== table nb count(908) table converted to MD ========================================
 
 
 | Code  | Indicates  |
@@ -15351,7 +15367,7 @@
 
 
 
-============================== table nb count(908) table converted to MD ========================================
+============================== table nb count(909) table converted to MD ========================================
 
 
 | Code | Description |
@@ -15396,7 +15412,7 @@
 
 
 
-============================== table nb count(909) table converted to MD ========================================
+============================== table nb count(910) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB01E"></span>CFTB01E PART=&amp;part Context area allocation failure CS=&amp;scs<br/> CFTB01E PART=&amp;part Context area allocation failure CS=&amp;cs |
@@ -15406,7 +15422,7 @@
 
 
 
-============================== table nb count(910) table converted to MD ========================================
+============================== table nb count(911) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB02E"></span>CFTB02E PART=&amp;part TFIL Exchange buffer allocation failure CS=&amp;scs<br/> CFTB02E PART=&amp;part TFIL Exchange buffer allocation failure CS=&amp;cs |
@@ -15416,7 +15432,7 @@
 
 
 
-============================== table nb count(911) table converted to MD ========================================
+============================== table nb count(912) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB03E"></span>CFTB03E PART=&amp;part Error sending data on network NCR=&amp;ncr NCS=&amp;ncs NET=&amp;net<br/> CFTB03E PART=&amp;part Error sending data on network NCR=&amp;ncr NCS=&amp;cs NET=&amp;net |
@@ -15426,7 +15442,7 @@
 
 
 
-============================== table nb count(912) table converted to MD ========================================
+============================== table nb count(913) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB06E"></span>CFTB06E Flow control error NCR=&amp;ncr NCS=&amp;ncs NET=&amp;net<br/> CFTB06E PART=&amp;part Flow control error NCR=&amp;ncr NCS=&amp;cs NET=&amp;net |
@@ -15435,7 +15451,7 @@
 
 
 
-============================== table nb count(913) table converted to MD ========================================
+============================== table nb count(914) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB07E"></span>CFTB07E PART=&amp;part TFIL task Synchronization error CR=&amp;cr CS=&amp;cs<br/> CFTB07E PART=&amp;part TFIL task Synchronization error CR= &amp;cr CS=&amp;cs |
@@ -15445,7 +15461,7 @@
 
 
 
-============================== table nb count(914) table converted to MD ========================================
+============================== table nb count(915) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB08E"></span>CFTB08E PART=&amp;part Network release resp err NCR=&amp;ncr NCS=&amp;ncs NET=&amp;net<br/> CFTB08E PART=&amp;part Network release resp err NCR=&amp;ncr NCS=&amp;cs NET=&amp;net |
@@ -15455,7 +15471,7 @@
 
 
 
-============================== table nb count(915) table converted to MD ========================================
+============================== table nb count(916) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB09E"></span>CFTB09E PART=&amp;part Network connect req local err NCR=&amp;ncr NCS=&amp;ncs NET=&amp;net<br/> CFTB09E PART=&amp;part Network connect req local err NCR=&amp;ncr NCS=&amp;cs NET=&amp;net |
@@ -15465,7 +15481,7 @@
 
 
 
-============================== table nb count(916) table converted to MD ========================================
+============================== table nb count(917) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB10E"></span>CFTB10E PART=&amp;part RECOV=&amp;recov L=&amp;local R=&amp;reason D=&amp;diag NET=&amp;net<br/> CFTB10E PART=&amp;part RECOV=&amp;recov L=&amp;local R=&amp;reason ld D=&amp;diag ld NET=&amp;net |
@@ -15475,7 +15491,7 @@
 
 
 
-============================== table nb count(917) table converted to MD ========================================
+============================== table nb count(918) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB18E"></span>CFTB18E Incoming call reject error NCR=&amp;ncr NCS=&amp;ncs NET=&amp;net<br/> CFTB18E Incoming call reject error NCR=&amp;ncr NCS=&amp;cs NET=&amp;net |
@@ -15484,7 +15500,7 @@
 
 
 
-============================== table nb count(918) table converted to MD ========================================
+============================== table nb count(919) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB19E"></span>CFTB19E Incoming call accept error NCR=&amp;ncr NCS=&amp;ncs NET=&amp;net<br/> CFTB19E Incoming call accept error NCR=&amp;ncr NCS=&amp;cs NET=&amp;net |
@@ -15493,7 +15509,7 @@
 
 
 
-============================== table nb count(919) table converted to MD ========================================
+============================== table nb count(920) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB19E"></span>CFTB20E Invalid ETEBAC3 Card &amp;id NET=&amp;net<br/> CFTB20E Invalid ETEBAC3 Card &amp;id NET=&amp;net |
@@ -15502,7 +15518,7 @@
 
 
 
-============================== table nb count(920) table converted to MD ========================================
+============================== table nb count(921) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB21E"></span>CFTB21E PART=&amp;part MAIN task Synchronization error CR=&amp;cr CS=&amp;scs<br/> CFTB21E PART=&amp;part MAIN task Synchronization error CR= &amp;cr CS=&amp;cs |
@@ -15511,7 +15527,7 @@
 
 
 
-============================== table nb count(921) table converted to MD ========================================
+============================== table nb count(922) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTC01W"></span>CFTC01W CFT catalog storage is short n record(s) free <br/> CFTC01W CFT catalog storage is short n record(s) free  |
@@ -15521,7 +15537,7 @@
 
 
 
-============================== table nb count(922) table converted to MD ========================================
+============================== table nb count(923) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTC01E"></span>CFTC01E CFT catalog storage is full <br/> CFTC01E CFT catalog storage is full |
@@ -15531,7 +15547,7 @@
 
 
 
-============================== table nb count(923) table converted to MD ========================================
+============================== table nb count(924) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTC03W"></span>CFTC03W PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Running out of time (HHMMSSCC)<br/> CFTC03W Transfer Running out of time &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt [sgt=HHMMSSCC] |
@@ -15541,7 +15557,7 @@
 
 
 
-============================== table nb count(924) table converted to MD ========================================
+============================== table nb count(925) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTC04W"></span>CFTC04W PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ State C delete forbidden<br/> CFTC04W _ State C delete forbidden &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
@@ -15551,7 +15567,7 @@
 
 
 
-============================== table nb count(925) table converted to MD ========================================
+============================== table nb count(926) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTC05W"></span>CFTC05W PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt _ Delete failed<br/> CFTC05W _ Delete failed &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt |
@@ -15561,7 +15577,7 @@
 
 
 
-============================== table nb count(926) table converted to MD ========================================
+============================== table nb count(927) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTC06E"></span>CFTC06E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Update failed<br/> CFTC06E _ Update failed &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -15571,7 +15587,7 @@
 
 
 
-============================== table nb count(927) table converted to MD ========================================
+============================== table nb count(928) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTC07I"></span>CFTC07I PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm]IDT=&amp;idt STATE=&amp;state - Deleted<br/> CFTC07I Transfer Deleted &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt STATE=&amp;state DIRECT=&amp;direct |
@@ -15580,7 +15596,7 @@
 
 
 
-============================== table nb count(928) table converted to MD ========================================
+============================== table nb count(929) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTC08I"></span>CFTC08I &amp;str<br/> CFTC08I &amp;str |
@@ -15589,7 +15605,7 @@
 
 
 
-============================== table nb count(929) table converted to MD ========================================
+============================== table nb count(930) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTC09I"></span>CFTC09I PART=&amp;part IDF=&amp;idf IDT=&amp;idt STATE=&amp;state DIRECT=&amp;direct : &amp;cmd not executed<br/> CFTC09I Command not executed &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt STATE=&amp;state DIRECT=&amp;direct : Cmd=&amp;cmd |
@@ -15599,7 +15615,7 @@
 
 
 
-============================== table nb count(930) table converted to MD ========================================
+============================== table nb count(931) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTC10I"></span>CFTC10I PART=&amp;part IDF or IDM=&amp;idf STATE=&amp;state MODE=&amp;mode : &amp;cmd not executed<br/> CFTC10I PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] STATE=&amp;state MODE=&amp;mode : &amp;cmd not executed |
@@ -15609,7 +15625,7 @@
 
 
 
-============================== table nb count(931) table converted to MD ========================================
+============================== table nb count(932) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTC11I"></span>CFTC11I PART=&amp;part IDM=&amp;idf IDT=&amp;idt : SEND REPLY not executed<br/> CFTC11I Command not executed &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt : Cmd=&amp;cmd |
@@ -15619,7 +15635,7 @@
 
 
 
-============================== table nb count(932) table converted to MD ========================================
+============================== table nb count(933) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTC12I"></span>CFTC12I PART=&amp;part STATE=&amp;state DIRECT=&amp;direct TYPE=&amp;type SENTINEL_STATE=&amp;trkstate Deleted<br/> CFTC12I IDTU=&amp;idtu PART=&amp;part STATE=&amp;state PHASE=&amp;phase PHASESTEP=&amp;phasestep DIRECT=&amp;direct TYPE=&amp;type SENTINEL_STATE=&amp;trkstate Deleted |
@@ -15629,7 +15645,7 @@
 
 
 
-============================== table nb count(933) table converted to MD ========================================
+============================== table nb count(934) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTC13I"></span>CFTC13I Catalog resize (xxxx --&gt; yyyy) done<br/> CFTC13I Catalog resize (xxxx --&gt; yyyy) done |
@@ -15639,7 +15655,7 @@
 
 
 
-============================== table nb count(934) table converted to MD ========================================
+============================== table nb count(935) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTC13E"></span>CFTC13E Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog resize (xxxx --&gt; yyyy) reached max before expansion<br/> CFTC13I Catalog resize (xxxx --&gt; yyyy) done |
@@ -15649,7 +15665,7 @@
 
 
 
-============================== table nb count(935) table converted to MD ========================================
+============================== table nb count(936) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTC13E"></span><span id="CFTC15I"></span>CFTC15I Deprecated command not executed BLKNUM=&amp;blknum PART=&amp;part IDT=&amp;idt : Cmd=&amp;cmd&gt;<br/> CFTC15I Deprecated command not executed BLKNUM=&amp;blknum PART=&amp;part IDT=&amp;idt : Cmd=&amp;cmd |
@@ -15659,7 +15675,7 @@
 
 
 
-============================== table nb count(936) table converted to MD ========================================
+============================== table nb count(937) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTC29W"></span>CFTC29W Catalog Alert fill threshold reached: level=&amp;level , id=CAT0<br/> CFTC29W Catalog Alert fill threshold reached: level=&amp;level ID=&amp;id |
@@ -15668,7 +15684,7 @@
 
 
 
-============================== table nb count(937) table converted to MD ========================================
+============================== table nb count(938) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTC30W"></span>CFTC30W Catalog Alert cleared: level=&amp;level, id=CAT0<br/> CFTC30W Catalog Alert cleared : level=&amp;level ID=&amp;id |
@@ -15677,7 +15693,7 @@
 
 
 
-============================== table nb count(938) table converted to MD ========================================
+============================== table nb count(939) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTE09I"></span>CFTE09I CFT Stop complete<br/> CFTE09I CFT stop complete _ &amp;str |
@@ -15686,7 +15702,7 @@
 
 
 
-============================== table nb count(939) table converted to MD ========================================
+============================== table nb count(940) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTE09I"></span>CFTE11I Node &amp;node state set to DISABLED, Shutting the Monitor<br/> CFTE11I Node &amp;node state set to DISABLED, Shutting the Monitor |
@@ -15695,7 +15711,7 @@
 
 
 
-============================== table nb count(940) table converted to MD ========================================
+============================== table nb count(941) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF01E"></span>CFTF01E PART=&amp;part IDF=&amp;idf IDT=&amp;idt local file [&amp;fname] creation error &amp;diagi<br/> CFTF01E local file [&amp;fname] creation error &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
@@ -15706,7 +15722,7 @@
 
 
 
-============================== table nb count(941) table converted to MD ========================================
+============================== table nb count(942) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF02E"></span>CFTF02E PART=&amp;part IDF=&amp;idf IDT=&amp;idt local file selection error &amp;scs<br/> CFTF02E local file selection error &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
@@ -15717,7 +15733,7 @@
 
 
 
-============================== table nb count(942) table converted to MD ========================================
+============================== table nb count(943) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | CFTF02W PART=&amp;part IDF=&amp;idf IDT=&amp;idt local file selection error (file not found ignored) &amp;scs<br/> CFTF02W local file selection error (file not found ignored) &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
@@ -15728,7 +15744,7 @@
 
 
 
-============================== table nb count(943) table converted to MD ========================================
+============================== table nb count(944) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF03E"></span>CFTF03E PART=&amp;part IDF=&amp;idf IDT=&amp;idt local file deselect error &amp;scs<br/> CFTF03E local file deselect error &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
@@ -15739,7 +15755,7 @@
 
 
 
-============================== table nb count(944) table converted to MD ========================================
+============================== table nb count(945) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF04E"></span>CFTF04E PART=&amp;part IDF=&amp;idf IDT=&amp;idt local file open error &amp;scs<br/> CFTF04E local file open error &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
@@ -15750,7 +15766,7 @@
 
 
 
-============================== table nb count(945) table converted to MD ========================================
+============================== table nb count(946) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF05E"></span>CFTF05E PART=&amp;part IDF=&amp;idf IDT=&amp;idt local file close error &amp;scs<br/> CFTF05E local file deselect error &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
@@ -15761,7 +15777,7 @@
 
 
 
-============================== table nb count(946) table converted to MD ========================================
+============================== table nb count(947) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF06E"></span>CFTF06E PART=&amp;part IDF=&amp;idf IDT=&amp;idt local file note error &amp;scs<br/> CFTF06E local file note error &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&lt;/p&gt; |
@@ -15772,7 +15788,7 @@
 
 
 
-============================== table nb count(947) table converted to MD ========================================
+============================== table nb count(948) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF07E"></span>CFTF07E PART=&amp;part IDF=&amp;idf IDT=&amp;idt local file point error &amp;scs<br/> CFTF07E local file point error &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
@@ -15783,7 +15799,7 @@
 
 
 
-============================== table nb count(948) table converted to MD ========================================
+============================== table nb count(949) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF08E"></span>CFTF08E PART=&amp;part IDF=&amp;idf IDT=&amp;idt local file read error &amp;scs<br/> CFTF08E local file read error &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
@@ -15794,7 +15810,7 @@
 
 
 
-============================== table nb count(949) table converted to MD ========================================
+============================== table nb count(950) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF09E"></span>CFTF09E PART=&amp;part IDF=&amp;idf IDT=&amp;idt local file write error &amp;scs<br/> CFTF09E local file write error &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
@@ -15805,7 +15821,7 @@
 
 
 
-============================== table nb count(950) table converted to MD ========================================
+============================== table nb count(951) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF13E"></span>CFTF13E PART=&amp;part IDF=&amp;idf IDT=&amp;idt remote file deselect error &amp;diagp<br/> CFTF13E remote file deselect error &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
@@ -15816,7 +15832,7 @@
 
 
 
-============================== table nb count(951) table converted to MD ========================================
+============================== table nb count(952) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF21E"></span>CFTF21E PART=&amp;part IDF=&amp;idf IDT=&amp;idt storage allocation error &amp;scs<br/> CFTF21E storage allocation error &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
@@ -15827,7 +15843,7 @@
 
 
 
-============================== table nb count(952) table converted to MD ========================================
+============================== table nb count(953) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF22E"></span>CFTF22E PART=&amp;part IDF=&amp;idf IDT=&amp;idt duplicate file &amp;diagp<br/> CFTF22E duplicate file &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
@@ -15838,7 +15854,7 @@
 
 
 
-============================== table nb count(953) table converted to MD ========================================
+============================== table nb count(954) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF23E"></span>CFTF23E PART=&amp;part IDF=&amp;idf IDT=&amp;idt file space allocation exhausted &amp;scs<br/> CFTF23E file space allocation exhausted &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
@@ -15849,7 +15865,7 @@
 
 
 
-============================== table nb count(954) table converted to MD ========================================
+============================== table nb count(955) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF24E"></span>CFTF24E PART=&amp;part IDF=&amp;idf IDT=&amp;idt duplicate working file<br/> CFTF24E duplicate working file &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -15859,7 +15875,7 @@
 
 
 
-============================== table nb count(955) table converted to MD ========================================
+============================== table nb count(956) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF25E"></span>CFTF25E PART=&amp;part IDF=&amp;idf IDT=&amp;idt working file rename error &amp;scs<br/> CFTF25E working file rename error &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &gt; |
@@ -15869,7 +15885,7 @@
 
 
 
-============================== table nb count(956) table converted to MD ========================================
+============================== table nb count(957) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF26E"></span>CFTF26E PART=&amp;part IDF=&amp;idf IDT=&amp;idt will be unable to rename working file<br/> CFTF26E will be unable to rename working file &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -15879,7 +15895,7 @@
 
 
 
-============================== table nb count(957) table converted to MD ========================================
+============================== table nb count(958) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF27E"></span>CFTF27E PART=part IDF=idf IDT=idt local /virtual file attribute mismatch<br/> CFTF27E local/virtual file attribute mismatch &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -15889,7 +15905,7 @@
 
 
 
-============================== table nb count(958) table converted to MD ========================================
+============================== table nb count(959) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> V23 format<br/> V24 format<br/> Warning | <span id="CFTF30W"></span>CFTF30W PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagc<br/> CFTF30W +PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;str<br/> CFTF30W &amp;diagc &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &gt;<br/> CFTF30W+&amp;str &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &gt; |
@@ -15899,7 +15915,7 @@
 
 
 
-============================== table nb count(959) table converted to MD ========================================
+============================== table nb count(960) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | CFTF31I PART=&amp;part IDF=&amp;idf IDT=&amp;idt EXIT=&amp;id &amp;user1 changed to &amp;user2<br/> <span id="CFTF31I"></span>CFTF31I PART=&amp;idf IDF=&amp;idf IDT=&amp;idt EXIT=&amp;id &amp;user1 User id changed to &amp;user2 the user id is modified by the exit |
@@ -15908,7 +15924,7 @@
 
 
 
-============================== table nb count(960) table converted to MD ========================================
+============================== table nb count(961) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF32E"></span>CFTF32E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Maximum number of rename retries reached<br/> CFTF32E Maximum number of rename retries reached &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -15918,7 +15934,7 @@
 
 
 
-============================== table nb count(961) table converted to MD ========================================
+============================== table nb count(962) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTF33I"></span>CFTF33I PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Rename to FNAME=&amp;FNAME done<br/> CFTF33I Rename to FNAME=&amp;fname done &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -15927,7 +15943,7 @@
 
 
 
-============================== table nb count(962) table converted to MD ========================================
+============================== table nb count(963) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF34E"></span>CFTF34E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ WFNAME=&amp;wfname not found<br/> CFTF34E WFNAME=&amp;fname not found &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -15937,7 +15953,7 @@
 
 
 
-============================== table nb count(963) table converted to MD ========================================
+============================== table nb count(964) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTF35W"></span>CFTF35W PART=&amp;part IDF=&amp;idf IDT=&amp;idt Rename to FNAME=&amp;fname failed, will be retried at &amp;datetime<br/> CFTF35W Rename to FNAME=&amp;fname failed, will be retried at &amp;datetime &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -15946,7 +15962,7 @@
 
 
 
-============================== table nb count(964) table converted to MD ========================================
+============================== table nb count(965) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTF38E"></span>CFTF38E The file or directory &amp;fname can't be renamed into &amp;newfname for reason code &amp;reason<br/> CFTF38E The file or directory &amp;fname can't be renamed into &amp;newfname for reason code &amp;reason |
@@ -15956,7 +15972,7 @@
 
 
 
-============================== table nb count(965) table converted to MD ========================================
+============================== table nb count(966) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTF39E"></span>CFTF39E Missing NFNAME when executing RECV &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt;<br/> CFTF39E Missing NFNAME when executing RECV &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -15966,7 +15982,7 @@
 
 
 
-============================== table nb count(966) table converted to MD ========================================
+============================== table nb count(967) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTF40I"></span>CFTF40I The file &amp;fname has been removed<br/> CFTF40I The file &amp;fname has been removed |
@@ -15975,7 +15991,7 @@
 
 
 
-============================== table nb count(967) table converted to MD ========================================
+============================== table nb count(968) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF41E"></span>CFTF41E The file &amp;fname can't be removed for reason code &amp;reason<br/> CFTF41E The file &amp;fname can't be removed for reason code &amp;reason |
@@ -15985,7 +16001,7 @@
 
 
 
-============================== table nb count(968) table converted to MD ========================================
+============================== table nb count(969) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTF42I"></span>CFTF42I The directory &amp;fname has been removed<br/> CFTF42I The directory &amp;fname has been removed |
@@ -15994,7 +16010,7 @@
 
 
 
-============================== table nb count(969) table converted to MD ========================================
+============================== table nb count(970) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF43E"></span>CFTF43E The directory &amp;fname can't be removed for reason code &amp;reason<br/> CFTF43E The directory &amp;fname can't be removed for reason code &amp;reason |
@@ -16004,7 +16020,7 @@
 
 
 
-============================== table nb count(970) table converted to MD ========================================
+============================== table nb count(971) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTF43E"></span>CFTF44E The directory &amp;fname has been created<br/> CFTF44I The directory &amp;fname has been created |
@@ -16013,7 +16029,7 @@
 
 
 
-============================== table nb count(971) table converted to MD ========================================
+============================== table nb count(972) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTF44I"></span>CFTF44I The directory &amp;fname has been created<br/> CFTF44I The directory &amp;fname has been created |
@@ -16022,7 +16038,7 @@
 
 
 
-============================== table nb count(972) table converted to MD ========================================
+============================== table nb count(973) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> V23 format<br/> V24 format<br/> Error  | <span id="CFTF46E"></span>CFTF46E Defined filename not inside WORKINGDIR &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt;<br/> CFTF46E Defined filename not inside WORKINGDIR &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt;<br/> CFTF46E+&amp;fname &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt;<br/> CFTF46E+&amp;fname &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -16032,7 +16048,7 @@
 
 
 
-============================== table nb count(973) table converted to MD ========================================
+============================== table nb count(974) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTF47I"></span>CFTF47I The file rights of &amp;fname have been set to &amp;frights<br/> CFTF47I The file rights of &amp;fname have been set to &amp;frights |
@@ -16041,7 +16057,7 @@
 
 
 
-============================== table nb count(974) table converted to MD ========================================
+============================== table nb count(975) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTF48I"></span>CFTF48I The file time of &amp;fname has been set to &amp;time<br/> CFTF48I The file time of &amp;fname has been set to &amp;time |
@@ -16050,7 +16066,7 @@
 
 
 
-============================== table nb count(975) table converted to MD ========================================
+============================== table nb count(976) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTF49E"></span>CFTF49E The file properties of &amp;fname can't be changed for reason code &amp;reason<br/> CFTF49E The file properties of &amp;fname can't be changed for reason code &amp;reason |
@@ -16060,7 +16076,7 @@
 
 
 
-============================== table nb count(976) table converted to MD ========================================
+============================== table nb count(977) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTF50I"></span>CFTF50I The file or directory &amp;fname has been renamed into &amp;newfname<br/> CFTF50I The file or directory &amp;fname has been renamed into &amp;newfname |
@@ -16069,7 +16085,7 @@
 
 
 
-============================== table nb count(977) table converted to MD ========================================
+============================== table nb count(978) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTF51W"></span>CFTF51W The file &amp;fname can't been archived into &amp;archivefname for reason code &amp;reason<br/> CFTF51W The &amp;fname file can't be archived as &amp;newfname due to reason code &amp;reason |
@@ -16078,7 +16094,7 @@
 
 
 
-============================== table nb count(978) table converted to MD ========================================
+============================== table nb count(979) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTF51W"></span><span id="CFTF52E"></span>CFTF52E The IDF &amp;idf is not allowed<br/> CFTF52E The IDF &amp;idf is not allowed |
@@ -16088,7 +16104,7 @@
 
 
 
-============================== table nb count(979) table converted to MD ========================================
+============================== table nb count(980) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH01E"></span>CFTH01E PART=&amp;part Context area allocation failure CS=&amp;scs<br/> CFTH01E Context area allocation failure &lt;PART=&amp;part CS=&amp;cs&gt; |
@@ -16098,7 +16114,7 @@
 
 
 
-============================== table nb count(980) table converted to MD ========================================
+============================== table nb count(981) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH02E"></span>CFTH02E PART=&amp;part TFIL Exchange buffer allocation failure CS=&amp;scs<br/> CFTH02E TFIL Exchange buffer allocation failure &lt;PART=&amp;part CS=&amp;cs&gt; |
@@ -16108,7 +16124,7 @@
 
 
 
-============================== table nb count(981) table converted to MD ========================================
+============================== table nb count(982) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH03E"></span>CFTH03E PART=&amp;part Error sending data on network NCR=&amp;ncr NCS=&amp;ncs NET=&amp;net<br/> CFTH03E Error sending data on network &lt;PART=&amp;part NCR=&amp;ncr NCS=&amp;cs NET=&amp;net&gt; |
@@ -16118,7 +16134,7 @@
 
 
 
-============================== table nb count(982) table converted to MD ========================================
+============================== table nb count(983) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH04E"></span>CFTH04E PART=&amp;part Mismatch between header and FPDU size<br/> CFTH04E Mismatch between header and FPDU size &lt;PART=&amp;part&gt; |
@@ -16127,7 +16143,7 @@
 
 
 
-============================== table nb count(983) table converted to MD ========================================
+============================== table nb count(984) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH05E"></span>CFTH05E: PART=&amp;part ,&amp;message<br/> CFTH05E &lt;PART=&amp;part &amp;message&gt; |
@@ -16137,7 +16153,7 @@
 
 
 
-============================== table nb count(984) table converted to MD ========================================
+============================== table nb count(985) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH06E"></span>CFTH06E PART=&amp;part Error &amp;cr while formatting FPDU<br/> CFTH06E Error &amp;cr while formatting FPDU &lt;PART=&amp;part &gt; |
@@ -16147,7 +16163,7 @@
 
 
 
-============================== table nb count(985) table converted to MD ========================================
+============================== table nb count(986) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH07E"></span>CFTH07E PART=&amp;part TFIL task Synchronization error CR=&amp;cr CS=&amp;scs<br/> CFTH07E TFIL task Synchronization error &lt;PART=&amp;part CR= &amp;cr CS=&amp;cs&gt; |
@@ -16157,7 +16173,7 @@
 
 
 
-============================== table nb count(986) table converted to MD ========================================
+============================== table nb count(987) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH08E"></span>CFTH08E PART=&amp;part Network release response error NCR=&amp;ncr NCS=&amp;ncs<br/> CFTH08E Network release response error &lt;PART=&amp;part NCR=&amp;ncr NCS=&amp;cs&gt; |
@@ -16167,7 +16183,7 @@
 
 
 
-============================== table nb count(987) table converted to MD ========================================
+============================== table nb count(988) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH09E"></span>CFTH09E PART=&amp;part Network connect request local error NCR=&amp;ncr NCS=&amp;ncs<br/> CFTH09E Network connect request local error &lt;PART=&amp;part NCR=&amp;ncr NCS=&amp;cs NET=&amp;net&gt; |
@@ -16176,7 +16192,7 @@
 
 
 
-============================== table nb count(988) table converted to MD ========================================
+============================== table nb count(989) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH10E"></span>CFTH10E PART=&amp;part Network connect reject RECOV=&amp;recov L= &amp;local R=&amp;reason D=&amp;ncs<br/> CFTH10E Network connect reject &lt;PART=&amp;part RECOV=&amp;recov L=&amp;local R=&amp;reason D=&amp;ncs NET=&amp;net&gt; |
@@ -16186,7 +16202,7 @@
 
 
 
-============================== table nb count(989) table converted to MD ========================================
+============================== table nb count(990) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH11E"></span>CFTH11E PART=&amp;part Error Opening session EV=&amp;pevent ST=&amp;pstate<br/> CFTH11E Error Opening session &lt;PART=&amp;part EV=&amp;pevent ST=&amp;pstate&gt; |
@@ -16196,7 +16212,7 @@
 
 
 
-============================== table nb count(990) table converted to MD ========================================
+============================== table nb count(991) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH12E"></span>CFTH12E PART=&amp;part Logon reject logon<br/> CFTH12E Logon reject &lt;PART=&amp;part &amp;str&gt; |
@@ -16206,7 +16222,7 @@
 
 
 
-============================== table nb count(991) table converted to MD ========================================
+============================== table nb count(992) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH13E"></span>CFTH13E PART=&amp;part FPDU Remote reject DIAGI=&amp;diagi DIAGP=&amp;diagp<br/> CFTH13E FPDU Remote reject &lt;PART=&amp;part DIAGI=&amp;diagi DIAGP=&amp;diagp&gt; |
@@ -16216,7 +16232,7 @@
 
 
 
-============================== table nb count(992) table converted to MD ========================================
+============================== table nb count(993) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH14E"></span>CFTH14E PART=&amp;part Invalid AckCONNECT FPDU &amp;str<br/> CFTH14E Invalid AckCONNECT FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16226,7 +16242,7 @@
 
 
 
-============================== table nb count(993) table converted to MD ========================================
+============================== table nb count(994) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH15E"></span>CFTH15E PART=&amp;part Invalid AckCREATE FPDU &amp;str<br/> CFTH15E Invalid AckCREATE FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16236,7 +16252,7 @@
 
 
 
-============================== table nb count(994) table converted to MD ========================================
+============================== table nb count(995) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH16E"></span>CFTH16E PART=&amp;part Invalid AckWRITE FPDU &amp;str<br/> CFTH16E Invalid AckWRITE FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16246,7 +16262,7 @@
 
 
 
-============================== table nb count(995) table converted to MD ========================================
+============================== table nb count(996) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH17E"></span>CFTH17E PART=&amp;part Invalid Check Point acknowledge &amp;n<br/> CFTH17E Invalid Check Point acknowledge &lt;PART=&amp;part &amp;n&gt; |
@@ -16255,7 +16271,7 @@
 
 
 
-============================== table nb count(996) table converted to MD ========================================
+============================== table nb count(997) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH18E"></span>CFTH18E Incoming call reject error NCR=&amp;ncr NCS=&amp;ncs NET=&amp;net<br/> CFTH18E Incoming call reject error &lt;NCR=&amp;ncr NCS=&amp;cs NET=&amp;net&gt; |
@@ -16265,7 +16281,7 @@
 
 
 
-============================== table nb count(997) table converted to MD ========================================
+============================== table nb count(998) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH19E"></span>CFTH19E Incoming call accept error NCR=&amp;ncr NCS=&amp;ncs NET=&amp;net<br/> CFTH19E Incoming call accept error &lt;NCR=&amp;ncr NCS=&amp;cs NET=&amp;net&gt; |
@@ -16275,7 +16291,7 @@
 
 
 
-============================== table nb count(998) table converted to MD ========================================
+============================== table nb count(999) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH20E"></span>CFTH20E Invalid CONNECT FPDU &amp;str<br/> CFTH20E Invalid CONNECT FPDU &lt;&amp;str&gt; |
@@ -16285,7 +16301,7 @@
 
 
 
-============================== table nb count(999) table converted to MD ========================================
+============================== table nb count(1000) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH21E"></span>CFTH21E PART=&amp;part MAIN task Synchronization error CR=&amp;cr CS=&amp;scs<br/> CFTH21E MAIN task Synchronization error &lt;PART=&amp;part CR= &amp;cr CS=&amp;cs&gt; |
@@ -16294,7 +16310,7 @@
 
 
 
-============================== table nb count(1000) table converted to MD ========================================
+============================== table nb count(1001) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH22E"></span>CFTH22E PART=&amp;part rejected DIAGI=&amp;diagi &lt;HOST=&amp;addr&gt;<br/> CFTH22E NPART=&amp;part rejected DIAGI=&amp;diagi &lt;HOST=&amp;pstate&gt; |
@@ -16304,7 +16320,7 @@
 
 
 
-============================== table nb count(1001) table converted to MD ========================================
+============================== table nb count(1002) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH23E"></span>CFTH23E NPART=&amp;part rejected EVENT=&amp;pevent<br/> CFTH23E PART=&amp;part rejected EVENT=&amp;pevent |
@@ -16314,7 +16330,7 @@
 
 
 
-============================== table nb count(1002) table converted to MD ========================================
+============================== table nb count(1003) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH24E"></span>CFTH24E PART=&amp;part Invalid CREATE FPDU &amp;str<br/> CFTH24E Invalid CREATE FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16324,7 +16340,7 @@
 
 
 
-============================== table nb count(1003) table converted to MD ========================================
+============================== table nb count(1004) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTH25I"></span>CFTH25I PART=&amp;part Concatenation area allocation failure CS=&amp;scs<br/> CFTH25I Concatenation area allocation failure &lt;PART=&amp;part CS=&amp;cs&gt; |
@@ -16334,7 +16350,7 @@
 
 
 
-============================== table nb count(1004) table converted to MD ========================================
+============================== table nb count(1005) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH26E"></span>CFTH26E PART=&amp;part Too many data without synchronization<br/> CFTH26E Too many data without synchronization &lt;PART=&amp;part&gt; |
@@ -16344,7 +16360,7 @@
 
 
 
-============================== table nb count(1005) table converted to MD ========================================
+============================== table nb count(1006) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH27E"></span>CFTH27E PART=&amp;part SYNC FPDU without synchronization<br/> CFTH27E SYNC FPDU without synchronization &lt;PART=&amp;part&gt; |
@@ -16354,7 +16370,7 @@
 
 
 
-============================== table nb count(1006) table converted to MD ========================================
+============================== table nb count(1007) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH28E"></span>CFTH28E PART=&amp;part Invalid Checkpoint n<br/> CFTH28E Invalid Chekpoint &lt;PART=&amp;part &amp;n&gt; |
@@ -16364,7 +16380,7 @@
 
 
 
-============================== table nb count(1007) table converted to MD ========================================
+============================== table nb count(1008) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH29E"></span>CFTH29E PART=&amp;part Invalid FPDU RC=&amp;n<br/> CFTH29E Invalid FPDU RC=&amp;rc Incoming call address= &amp;str &lt;PART=&amp;part&gt; |
@@ -16374,7 +16390,7 @@
 
 
 
-============================== table nb count(1008) table converted to MD ========================================
+============================== table nb count(1009) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH30E"></span>CFTH30E PART=&amp;part Invalid AckORF FPDU &amp;str<br/> CFTH30E Invalid AckORF FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16384,7 +16400,7 @@
 
 
 
-============================== table nb count(1009) table converted to MD ========================================
+============================== table nb count(1010) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH31E"></span>CFTH31E PART=&amp;part Invalid AckTRANS.END FPDU &amp;str<br/> CFTH31E Invalid AckTRANS.END FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16394,7 +16410,7 @@
 
 
 
-============================== table nb count(1010) table converted to MD ========================================
+============================== table nb count(1011) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH32E"></span>CFTH32E PART=&amp;part Invalid AckMESSAGE FPDU &amp;str<br/> CFTH32E Invalid AckMESSAGE FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16404,7 +16420,7 @@
 
 
 
-============================== table nb count(1011) table converted to MD ========================================
+============================== table nb count(1012) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH33E"></span>CFTH33E PART=&amp;part Invalid AckSELECT FPDU &amp;str<br/> CFTH33E Invalid AckSELECT FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16414,7 +16430,7 @@
 
 
 
-============================== table nb count(1012) table converted to MD ========================================
+============================== table nb count(1013) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH34E"></span>CFTH34E PART=&amp;part Invalid ORF FPDU &amp;str<br/> CFTH34E Invalid ORF FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16424,7 +16440,7 @@
 
 
 
-============================== table nb count(1013) table converted to MD ========================================
+============================== table nb count(1014) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH35E"></span>CFTH35E PART=&amp;part Invalid TRANS.END FPDU &amp;str<br/> CFTH35E Invalid TRANS.END FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16434,7 +16450,7 @@
 
 
 
-============================== table nb count(1014) table converted to MD ========================================
+============================== table nb count(1015) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH36E"></span>CFTH36E PART=&amp;part Invalid MESSAGE FPDU &amp;str<br/> CFTH36E Invalid MESSAGE FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16444,7 +16460,7 @@
 
 
 
-============================== table nb count(1015) table converted to MD ========================================
+============================== table nb count(1016) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH37E"></span>CFTH37E PART=&amp;part Invalid D.MESSAGE FPDU &amp;str<br/> CFTH37E Invalid D.MESSAGE FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16454,7 +16470,7 @@
 
 
 
-============================== table nb count(1016) table converted to MD ========================================
+============================== table nb count(1017) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH38E"></span>CFTH38E PART=&amp;part Invalid READ FPDU &amp;str<br/> CFTH38E Invalid READ FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16464,7 +16480,7 @@
 
 
 
-============================== table nb count(1017) table converted to MD ========================================
+============================== table nb count(1018) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH39E"></span>CFTH39E PART=&amp;part Invalid SELECT FPDU &amp;str<br/> CFTH39E Invalid SELECT FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16474,7 +16490,7 @@
 
 
 
-============================== table nb count(1018) table converted to MD ========================================
+============================== table nb count(1019) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH40E"></span>CFTH40E PART=&amp;part Invalid DTF FPDU (MULTART)<br/> CFTH40E Invalid DTF FPDU (MULTART) &lt;PART=&amp;part&gt; |
@@ -16484,7 +16500,7 @@
 
 
 
-============================== table nb count(1019) table converted to MD ========================================
+============================== table nb count(1020) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH41E"></span>CFTH41E PART=&amp;part Invalid DTF.END FPDU &amp;str<br/> CFTH41E Invalid DTF.END FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16494,7 +16510,7 @@
 
 
 
-============================== table nb count(1020) table converted to MD ========================================
+============================== table nb count(1021) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH42E"></span>CFTH42E PART=&amp;part Invalid SYNC FPDU &amp;str<br/> CFTH42E Invalid SYNC FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16504,7 +16520,7 @@
 
 
 
-============================== table nb count(1021) table converted to MD ========================================
+============================== table nb count(1022) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH43E"></span>CFTH43E PART=&amp;part Invalid AckSYNC FPDU &amp;str<br/> CFTH43E Invalid AckSYNC FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16514,7 +16530,7 @@
 
 
 
-============================== table nb count(1022) table converted to MD ========================================
+============================== table nb count(1023) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH44E"></span>CFTH44E PART=&amp;part Invalid IDT FPDU &amp;str<br/> CFTH44E Invalid IDT FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16524,7 +16540,7 @@
 
 
 
-============================== table nb count(1023) table converted to MD ========================================
+============================== table nb count(1024) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH45E"></span>CFTH45E PART=&amp;part Invalid AckIDT FPDU &amp;str<br/> CFTH45E Invalid AckIDT FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16534,7 +16550,7 @@
 
 
 
-============================== table nb count(1024) table converted to MD ========================================
+============================== table nb count(1025) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH46E"></span>CFTH46E PART=&amp;part Invalid RESYNC FPDU &amp;str<br/> CFTH46E Invalid RESYNC FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16544,7 +16560,7 @@
 
 
 
-============================== table nb count(1025) table converted to MD ========================================
+============================== table nb count(1026) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH47E"></span>CFTH47E PART=&amp;part Invalid DESELECT FPDU &amp;str<br/> CFTH47E Invalid DESELECT FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16554,7 +16570,7 @@
 
 
 
-============================== table nb count(1026) table converted to MD ========================================
+============================== table nb count(1027) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH48E"></span>CFTH48E PART=&amp;part Invalid DESELECT FPDU &amp;str<br/> CFTH48E Invalid AckREAD FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16564,7 +16580,7 @@
 
 
 
-============================== table nb count(1027) table converted to MD ========================================
+============================== table nb count(1028) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH49E"></span>CFTH49E PART=&amp;part Invalid WRITE FPDU &amp;str<br/> CFTH49E Invalid WRITE FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16574,7 +16590,7 @@
 
 
 
-============================== table nb count(1028) table converted to MD ========================================
+============================== table nb count(1029) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH50E"></span>CFTH50E PART=&amp;part Invalid M.MESSAGE FPDU &amp;str<br/> CFTH50E Invalid M.MESSAGE FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16584,7 +16600,7 @@
 
 
 
-============================== table nb count(1029) table converted to MD ========================================
+============================== table nb count(1030) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH51E"></span>CFTH51E PART=&amp;part Invalid F.MESSAGE FPDU &amp;str<br/> CFTH51E Invalid F.MESSAGE FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16594,7 +16610,7 @@
 
 
 
-============================== table nb count(1030) table converted to MD ========================================
+============================== table nb count(1031) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH52E"></span>CFTH52E PART=&amp;part Invalid AckCLOSE FPDU &amp;str<br/> CFTH52E Invalid AckCLOSE FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16604,7 +16620,7 @@
 
 
 
-============================== table nb count(1031) table converted to MD ========================================
+============================== table nb count(1032) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH53E"></span>CFTH53E PART=&amp;part Invalid AckDESELECT FPDU &amp;str<br/> CFTH53E Invalid AckDESELECT FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16614,7 +16630,7 @@
 
 
 
-============================== table nb count(1032) table converted to MD ========================================
+============================== table nb count(1033) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH54E"></span>CFTH54E PART=&amp;part Invalid CLOSE FPDU &amp;str<br/> CFTH54E Invalid CLOSE FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16624,7 +16640,7 @@
 
 
 
-============================== table nb count(1033) table converted to MD ========================================
+============================== table nb count(1034) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH55E"></span>CFTH55E PART=&amp;part Invalid DTF FPDU &amp;str<br/> CFTH55E Invalid DTF FPDU &lt;PART=&amp;part &amp;str&gt; |
@@ -16634,7 +16650,7 @@
 
 
 
-============================== table nb count(1034) table converted to MD ========================================
+============================== table nb count(1035) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTH56I"></span>CFTH56I PART=&amp;part IDS=&amp;ids &amp;prot &amp;str session opened pi7=&amp;n:&amp;n HOST=&amp;pstate &amp;prot<br/> CFTH56I &amp;prot &amp;str session opened &lt;PART=&amp;part IDS=&amp;ids pi7=&amp;n:&amp;n HOST=&amp;pstate&gt; &amp;prot |
@@ -16643,7 +16659,7 @@
 
 
 
-============================== table nb count(1035) table converted to MD ========================================
+============================== table nb count(1036) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTH57I"></span>CFTH57I PART=&amp;part IDS=&amp;ids IDF=&amp;idf IDT=&amp;idt transfer selected pi25=&amp;n<br/> CFTH57I transfer selected PART=&amp;part IDS=&amp;ids IDF=&amp;idf IDT=&amp;idt pi25=&amp;n |
@@ -16652,7 +16668,7 @@
 
 
 
-============================== table nb count(1036) table converted to MD ========================================
+============================== table nb count(1037) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTH58I"></span>CFTH58I PART=&amp;part IDS=&amp;ids IDF=&amp;idf NIDT=&amp;idt transfer deselected T=&amp;n<br/> CFTH58I transfer deselected &lt;PART=&amp;part IDS=&amp;ids IDF=&amp;idf NIDT=&amp;idt T=&amp;n&gt; |
@@ -16661,7 +16677,7 @@
 
 
 
-============================== table nb count(1037) table converted to MD ========================================
+============================== table nb count(1038) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTH59I"></span>CFTH59I PART=&amp;part IDS=&amp;ids IDM=&amp;idm NIDT=&amp;idt message transferred<br/> CFTH59I message transferred PART=&amp;part IDS=&amp;ids IDM=&amp;idm NIDT=&amp;idt |
@@ -16670,7 +16686,7 @@
 
 
 
-============================== table nb count(1038) table converted to MD ========================================
+============================== table nb count(1039) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTH60I"></span>CFTH60I PART=&amp;part IDS=&amp;ids IDM=&amp;idm NIDT=&amp;idt [Reply | Nack] transferred<br/> CFTH60I [Reply | Nack] transferred PART=&amp;part IDS=&amp;ids IDM=&amp;idm NIDT=&amp;idt |
@@ -16679,7 +16695,7 @@
 
 
 
-============================== table nb count(1039) table converted to MD ========================================
+============================== table nb count(1040) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTH61I"></span>CFTH61I PART=&amp;part IDS=&amp;ids ["Requester"|"Server"] &amp;ref session closed &amp;prot<br/> CFTH61I &amp;prot ["Requester"|"Server"] session closed &lt;PART=&amp;part IDS=&amp;ids&gt; &amp;prot |
@@ -16688,7 +16704,7 @@
 
 
 
-============================== table nb count(1040) table converted to MD ========================================
+============================== table nb count(1041) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTH62I"></span>CFTH62I REF=&amp;ref<br/> CFTH62I REF=&amp;ref |
@@ -16697,7 +16713,7 @@
 
 
 
-============================== table nb count(1041) table converted to MD ========================================
+============================== table nb count(1042) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTH63I"></span>CFTH63I PART=&amp;part IDS=&amp;ids PESIT DMZ session for messages only<br/> CFTH63I PESIT DMZ session for messages only &lt;PART=&amp;part IDS=&amp;ids&gt; |
@@ -16706,7 +16722,7 @@
 
 
 
-============================== table nb count(1042) table converted to MD ========================================
+============================== table nb count(1043) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTH64I"></span>CFTH64I PESIT session rejected L=&amp;reason R=&amp;diag<br/> CFTH64I PESIT session rejected L=&amp;local R=&amp;reason |
@@ -16715,7 +16731,7 @@
 
 
 
-============================== table nb count(1043) table converted to MD ========================================
+============================== table nb count(1044) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTH65I"></span>CFTH65I PART=&amp;part IDS=&amp;ids PESIT DMZ permanent session control call=&amp;n<br/> CFTH65I PESIT DMZ permanent session control call=&amp;n &lt;PART=&amp;part IDS=&amp;ids &gt; |
@@ -16724,7 +16740,7 @@
 
 
 
-============================== table nb count(1044) table converted to MD ========================================
+============================== table nb count(1045) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH66E"></span>CFTH66E Incoming calls (&amp;count) rejected, ERROR=&amp;error (&amp;info1|&amp;info2), PROTOCOL=&amp;protocol<br/> CFTH66E Incoming calls (&amp;count) rejected, ERROR=&amp;error (&amp;info1|&amp;info2), PROTOCOL=&amp;protocol |
@@ -16733,7 +16749,7 @@
 
 
 
-============================== table nb count(1045) table converted to MD ========================================
+============================== table nb count(1046) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTI00I"></span>CFTI00I Snumb of spawned procedure is &amp;str1:&amp;str2<br/> CFTI00I Snumb of spawned procedure is &amp;str1:&amp;str2 |
@@ -16742,12 +16758,12 @@
 
 
 
-============================== table nb count(1046) table converted to MD ========================================
+============================== table nb count(1047) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Fatal | <span id="CFTI01F"></span>CFTI01F &amp;str <br/> CFTI01F &amp;str  |
 | --- | --- |
-| Explanation | Internal Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} execution error.<br/> The field "&amp;str" can have the following values:<br/> • CFT error &amp;scs:Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} inter-task communication system problem (waiting for the CFTMAIN scheduler task queue)<br/> • CFT error _ usage expired:The Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} user key (CFTPARM KEY) does not authorize Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} execution beyond the expired period<br/> • CFT error _ CFT usage not authorized:The Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} user key (CFTPARM KEY) does not authorize Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} execution on this operating system or computer<br/> • CFT error _ file keys not available: The Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} user keys are stored in an indirection file (CFTPARM KEY parameter); this file cannot be accessed by Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}<br/> • CFT error &amp;scs _ Common_area allocation failed:Definition of the memory area common to the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} tasks has failed. This can be caused by insufficient memory<br/> • CFT error &amp;scs _ Mailbox definition failed: Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} is unable to link to a mailbox defined by the *CFTOM command<br/> • CFT error &amp;scs _ CFT semaphore definition failed:Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} is unable to define an inter-task communications queue<br/> • CFT error _ CFTEXIT ID=&amp;id missing: A Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} task dedicated to file EXITs could not be activated (the CFTEXIT command relating to the identifier mentioned (ID) was not found)<br/> • CFT error _ Maximum process CFTEXIT running reached: A Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} task dedicated to file EXITs could not be activated (the maximum number of EXIT processes that can be activated has already been reached)<br/> • CFT error &amp;cs _ Initializing process CFTEXIT: A Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} task dedicated to file EXITs could not be activated (the maximum number of EXIT processes that can be activated has already been reached)<br/> • ****CFT error _ &amp;Net Network Access Method Option not authorized by license key:The Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} is NOT authorized to use the optional network access method designated by &amp;Net (TCP/IP).****<br/> • ****CFT error _ SSL Protocol Option not authorized by license key:A protocol defined in the CFTPARM object uses the SSL option, but the SSL option is not available with this license key.****<br/> • ****CFT error _ FIPS Compliance Option not authorized by license key:The uconf:cft.fips.enable_compliance parameter is set to Yes, but the FIPS option is not available with this license key.****<br/> • ****CFT error _ File Transfer Acceleration Option not authorized by license key:The uconf:acceleration.enable parameter is set to Yes, but the acceleration option is not available with this license key.**** |
+| Explanation | Internal Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} execution error.<br/> The field "&amp;str" can have the following values:<br/> • CFT error &amp;scs:Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} inter-task communication system problem (waiting for the CFTMAIN scheduler task queue)<br/> • CFT error _ usage expired:The Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} user key (CFTPARM KEY) does not authorize Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} execution beyond the expired period<br/> • CFT error _ CFT usage not authorized:The Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} user key (CFTPARM KEY) does not authorize Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} execution on this operating system or computer<br/> • CFT error _ file keys not available: The Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} user keys are stored in an indirection file (CFTPARM KEY parameter); this file cannot be accessed by Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}<br/> • CFT error &amp;scs _ Common_area allocation failed:Definition of the memory area common to the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} tasks has failed. This can be caused by insufficient memory<br/> • CFT error &amp;scs _ Mailbox definition failed: Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} is unable to link to a mailbox defined by the *CFTOM command<br/> • CFT error &amp;scs _ CFT semaphore definition failed:Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} is unable to define an inter-task communications queue<br/> • CFT error _ CFTEXIT ID=&amp;id missing: A Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} task dedicated to file EXITs could not be activated (the CFTEXIT command relating to the identifier mentioned (ID) was not found)<br/> • CFT error _ Maximum process CFTEXIT running reached: A Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} task dedicated to file EXITs could not be activated (the maximum number of EXIT processes that can be activated has already been reached)<br/> • CFT error &amp;cs _ Initializing process CFTEXIT: A Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} task dedicated to file EXITs could not be activated (the maximum number of EXIT processes that can be activated has already been reached)<br/> • CFT error _ &amp;Net Network Access Method Option not authorized by license key:The Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} is NOT authorized to use the optional network access method designated by &amp;Net (TCP/IP).<br/> • CFT error _ SSL Protocol Option not authorized by license key:A protocol defined in the CFTPARM object uses the SSL option, but the SSL option is not available with this license key.<br/> • CFT error _ FIPS Compliance Option not authorized by license key:The uconf:cft.fips.enable_compliance parameter is set to Yes, but the FIPS option is not available with this license key.<br/> • CFT error _ File Transfer Acceleration Option not authorized by license key:The uconf:acceleration.enable parameter is set to Yes, but the acceleration option is not available with this license key. |
 | Consequence | The transfer concerned by the incident is interrupted, which is the K status. |
 | Action | Check parameter settings, analyze the &amp;cs code value to determine, if necessary, the origin of the error:<br/> • CFT error &amp;scs _ LOG stop failed: The message logging task cannot be stopped<br/> • CFT error &amp;scs _ mailbox delete failed: A mailbox defined by a CFTCOM command cannot be deleted |
 | Consequence | The Transfer CFT initialization phase has stopped. |
@@ -16755,7 +16771,7 @@
 
 
 
-============================== table nb count(1047) table converted to MD ========================================
+============================== table nb count(1048) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTI01W"></span>CFTI01W &amp;str<br/> CFTI01W &amp;str  |
@@ -16766,7 +16782,7 @@
 
 
 
-============================== table nb count(1048) table converted to MD ========================================
+============================== table nb count(1049) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Fatal | <span id="CFTI02F"></span>CFTI02F Init Error code &amp;scs _ Allocating param. file &amp;fname<br/> CFTI02F Init Error code &amp;scs _ Allocating param. file &amp;fname |
@@ -16777,7 +16793,7 @@
 
 
 
-============================== table nb count(1049) table converted to MD ========================================
+============================== table nb count(1050) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI03F"></span>CFTI03F Init Error code &amp;scs _ Opening param. file &amp;fname<br/> CFTI03F Init Error code &amp;scs _ Opening param. file &amp;fname |
@@ -16788,7 +16804,7 @@
 
 
 
-============================== table nb count(1050) table converted to MD ========================================
+============================== table nb count(1051) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI04F"></span>CFTI04F Init Error code &amp;scs _ Allocating partners file &amp;fname<br/> CFTI04F Init Error code &amp;scs _ Allocating partners file &amp;fname |
@@ -16799,7 +16815,7 @@
 
 
 
-============================== table nb count(1051) table converted to MD ========================================
+============================== table nb count(1052) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI05F"></span>CFTI05F Init Error code &amp;scs _ Opening partners file &amp;fname<br/> CFTI05F Init Error code &amp;scs _ Opening partners file &amp;fname |
@@ -16810,7 +16826,7 @@
 
 
 
-============================== table nb count(1052) table converted to MD ========================================
+============================== table nb count(1053) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI06F"></span>CFTI06F Init Error code &amp;scs _ Allocating catalog file &amp;fname<br/> CFTI06F Init Error code &amp;scs _ Allocating catalog file &amp;fname |
@@ -16821,7 +16837,7 @@
 
 
 
-============================== table nb count(1053) table converted to MD ========================================
+============================== table nb count(1054) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI08F"></span>CFTI08F Init error _ Protocol process<br/> CFTI08F Init error _ Protocol process |
@@ -16832,7 +16848,7 @@
 
 
 
-============================== table nb count(1054) table converted to MD ========================================
+============================== table nb count(1055) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI09F"></span>CFTI09F Init error _ Communication process<br/> CFTI09F Init error _ Communication process |
@@ -16843,7 +16859,7 @@
 
 
 
-============================== table nb count(1055) table converted to MD ========================================
+============================== table nb count(1056) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI10F"></span>CFTI10F Init error _ Logger process<br/> CFTI10F Init error _ Logger process |
@@ -16854,7 +16870,7 @@
 
 
 
-============================== table nb count(1056) table converted to MD ========================================
+============================== table nb count(1057) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTI11I"></span>CFTI11I Init complete _ Logger process<br/> CFTI11I Init complete _ Logger process |
@@ -16863,7 +16879,7 @@
 
 
 
-============================== table nb count(1057) table converted to MD ========================================
+============================== table nb count(1058) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTI12I"></span>CFTI12I Init complete _ Protocol process<br/> CFTI12I Init complete _ Protocol process |
@@ -16872,7 +16888,7 @@
 
 
 
-============================== table nb count(1058) table converted to MD ========================================
+============================== table nb count(1059) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTI13I"></span>CFTI13I Init complete _ Communication process<br/> CFTI13I Init complete _ Communication process |
@@ -16881,7 +16897,7 @@
 
 
 
-============================== table nb count(1059) table converted to MD ========================================
+============================== table nb count(1060) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI14I"></span>CFTI14I CFT Init complete<br/> CFTI14I CFT Init complete |
@@ -16890,7 +16906,7 @@
 
 
 
-============================== table nb count(1060) table converted to MD ========================================
+============================== table nb count(1061) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI15F"></span>CFTI15F Error code &amp;ncs _ Trying to define resource &amp;id<br/> CFTI15F Error code &amp;ncs _ Trying to define resource &amp;id |
@@ -16901,7 +16917,7 @@
 
 
 
-============================== table nb count(1061) table converted to MD ========================================
+============================== table nb count(1062) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI16F"></span>CFTI16F Error code &amp;ncs _ Register request<br/> CFTI16F Error code &amp;ncs _ Register request |
@@ -16912,7 +16928,7 @@
 
 
 
-============================== table nb count(1062) table converted to MD ========================================
+============================== table nb count(1063) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI17F"></span>CFTI17F Init error _ Account file &amp;fname<br/> CFTI17F Init error _ Account file &amp;fname |
@@ -16923,7 +16939,7 @@
 
 
 
-============================== table nb count(1063) table converted to MD ========================================
+============================== table nb count(1064) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI18I"></span>CFTI18I _ &amp;str<br/> CFTI18I _ &amp;str |
@@ -16933,7 +16949,7 @@
 
 
 
-============================== table nb count(1064) table converted to MD ========================================
+============================== table nb count(1065) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTI18W"></span>CFTI18W+ Version mismatch between Transfer &amp;CFTVersion and the UCONF dictionary &amp;UCONFVersion<br/> CFTI18W+ Version mismatch between Transfer &amp;CFTVersion and the UCONF dictionary &amp;UCONFVersion<span id="CFTI19I"></span> |
@@ -16944,7 +16960,7 @@
 
 
 
-============================== table nb count(1065) table converted to MD ========================================
+============================== table nb count(1066) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTI19I"></span>CFTI19I © Copyright AXWAY,....<br/> CFTI19I © Copyright AXWAY,.... |
@@ -16953,7 +16969,7 @@
 
 
 
-============================== table nb count(1066) table converted to MD ========================================
+============================== table nb count(1067) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Fatal | <span id="CFTI20F"></span>CFTI20F Semaphore definition failure CR=&amp;cr CS= &amp;scs<br/> CFTI20F Semaphore definition failure CR=&amp;cr CS= &amp;scs |
@@ -16963,7 +16979,7 @@
 
 
 
-============================== table nb count(1067) table converted to MD ========================================
+============================== table nb count(1068) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI21F"></span>CFTI21F CFTNET=&amp;id Resource define failure CS=&amp;ncs<br/> CFTI21F CFTNET=&amp;id Resource define failure CS=&amp;ncs |
@@ -16973,7 +16989,7 @@
 
 
 
-============================== table nb count(1068) table converted to MD ========================================
+============================== table nb count(1069) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI22F"></span>CFTI22F CFTPROT=&amp;id Register request failure CS=&amp;ncs<br/> CFTI22F CFTPROT=&amp;id Register request failure CS=&amp;ncs |
@@ -16983,7 +16999,7 @@
 
 
 
-============================== table nb count(1069) table converted to MD ========================================
+============================== table nb count(1070) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI23F"></span>CFTI23F MAIN synchronization failure CR=&amp;cr CS=&amp;scs<br/> CFTI23F MAIN synchronization failure CR=&amp;cr CS=&amp;scs |
@@ -16993,7 +17009,7 @@
 
 
 
-============================== table nb count(1070) table converted to MD ========================================
+============================== table nb count(1071) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTI24I"></span>CFTI24I &amp;str<br/> CFTI24I &amp;str |
@@ -17002,7 +17018,7 @@
 
 
 
-============================== table nb count(1071) table converted to MD ========================================
+============================== table nb count(1072) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI25I"></span>CFTI25I Init complete _ Security active [&amp;str]<br/> CFTI25I Init complete _ Security active [&amp;str] |
@@ -17011,7 +17027,7 @@
 
 
 
-============================== table nb count(1072) table converted to MD ========================================
+============================== table nb count(1073) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI26I"></span>CFTI26I Init complete _ Security not active<br/> CFTI26I Init complete _ Security not active |
@@ -17020,7 +17036,7 @@
 
 
 
-============================== table nb count(1073) table converted to MD ========================================
+============================== table nb count(1074) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI27F"></span>CFTI27F Init Error code &amp;scs _ Opening security file &amp;file<br/> CFTI27F Init Error code &amp;scs _ Opening security file &amp;file |
@@ -17031,7 +17047,7 @@
 
 
 
-============================== table nb count(1074) table converted to MD ========================================
+============================== table nb count(1075) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI28I"></span>CFTI28I Init complete <br/> CFTI28I Init complete |
@@ -17040,7 +17056,7 @@
 
 
 
-============================== table nb count(1075) table converted to MD ========================================
+============================== table nb count(1076) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI34I"></span>CFTI34I PID=&amp;id &amp;task Task started successfully<br/> CFTI34I PID=&amp;id &amp;task Task started successfully |
@@ -17049,7 +17065,7 @@
 
 
 
-============================== table nb count(1076) table converted to MD ========================================
+============================== table nb count(1077) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI35I"></span>CFTI35I PID=&amp;id &amp;task Task ended<br/> CFTI35I PID=&amp;id &amp;task Task ended |
@@ -17058,7 +17074,7 @@
 
 
 
-============================== table nb count(1077) table converted to MD ========================================
+============================== table nb count(1078) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI36I"></span>CFTI36I CRONJOB: ID=&amp;idcron, CRONTAB=&amp;cronname &amp;str<br/> CFTI36I CRONJOB: ID=&amp;idcron, CRONTAB=&amp;cronname &amp;str |
@@ -17067,7 +17083,7 @@
 
 
 
-============================== table nb count(1078) table converted to MD ========================================
+============================== table nb count(1079) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTI38E"></span>CFTI38E CRONJOB: ID=&amp;idcron, CRONTAB=&amp;cronname INSERT FAILED<br/> CFTI38E CRONJOB: ID=&amp;idcron, CRONTAB=&amp;cronname INSERT FAILED |
@@ -17076,7 +17092,7 @@
 
 
 
-============================== table nb count(1079) table converted to MD ========================================
+============================== table nb count(1080) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI39I"></span>CFTI39I &amp;str<br/> CFTI39I &amp;str |
@@ -17085,7 +17101,7 @@
 
 
 
-============================== table nb count(1080) table converted to MD ========================================
+============================== table nb count(1081) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTI40E"></span>CFTI40E OMVS SEGMENT NOT DEFINED for user=xxxxxx<br/> CFTI40E OMVS SEGMENT NOT DEFINED for user=xxxxxx |
@@ -17094,7 +17110,7 @@
 
 
 
-============================== table nb count(1081) table converted to MD ========================================
+============================== table nb count(1082) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI41I"></span>CFTI41I OMVS information for user=xxxxxx,uid=n,gid=n,home=(/xxxxx)<br/> CFTI41I OMVS information for user=xxxxxx,uid=n,gid=n,home=(/xxxxx) |
@@ -17103,7 +17119,7 @@
 
 
 
-============================== table nb count(1082) table converted to MD ========================================
+============================== table nb count(1083) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTI42E"></span>CFTI42E PID=&amp;pid &amp;task Task startup error failed to lock resource '&amp;pid_file_name': resource already locked<br/> CFTI42E PID=&amp;pid &amp;task Task startup error failed to lock resource '&amp;pid_file_name': resource already locked |
@@ -17112,7 +17128,7 @@
 
 
 
-============================== table nb count(1083) table converted to MD ========================================
+============================== table nb count(1084) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI42E"></span><span id="CFTI43I"></span>CFTI43I Attention: The Transfer CFT license expires in n days<br/> CFTI43I Attention: The Transfer CFT license expires in n days |
@@ -17122,7 +17138,7 @@
 
 
 
-============================== table nb count(1084) table converted to MD ========================================
+============================== table nb count(1085) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTI42E"></span><span id="CFTI43W"></span>CFTI43W Attention: The Transfer CFT license expires in n days<br/> CFTI43W Attention: The Transfer CFT license expires in n days |
@@ -17132,7 +17148,7 @@
 
 
 
-============================== table nb count(1085) table converted to MD ========================================
+============================== table nb count(1086) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTI42E"></span><span id="CFTI43E"></span>CFTI43E Attention: The Transfer CFT license has expired<br/> CFTI43E Attention: The Transfer CFT license has expired |
@@ -17142,7 +17158,7 @@
 
 
 
-============================== table nb count(1086) table converted to MD ========================================
+============================== table nb count(1087) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning  | CFTI18W Version mismatch between Transfer CFT &amp;CFTVersion and the UCONF dictionary &amp;UCONFVersion<br/> CFTI18W Version mismatch between Transfer CFT &amp;CFTVersion and the UCONF dictionary &amp;UCONFVersion |
@@ -17153,7 +17169,7 @@
 
 
 
-============================== table nb count(1087) table converted to MD ========================================
+============================== table nb count(1088) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS39E"></span><br/> CFTI40E OMVS SEGMENT NOT DEFINED for user=xxxxxx<br/> CFTI40E OMVS SEGMENT NOT DEFINED for user=xxxxxx |
@@ -17162,7 +17178,7 @@
 
 
 
-============================== table nb count(1088) table converted to MD ========================================
+============================== table nb count(1089) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTN01I"></span>CFTN01I NET=&amp;net started<br/> CFTN01I NET=&amp;net started |
@@ -17171,7 +17187,7 @@
 
 
 
-============================== table nb count(1089) table converted to MD ========================================
+============================== table nb count(1090) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTN02I"></span>CFTN02I NET=&amp;net PROTOCOL=&amp;prot started<br/> CFTN02I NET=&amp;net PROTOCOL=&amp;prot started |
@@ -17180,7 +17196,7 @@
 
 
 
-============================== table nb count(1090) table converted to MD ========================================
+============================== table nb count(1091) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTN03E"></span>CFTN03E Error creating SSL task &amp;str<br/> CFTN03E Error creating SSL task &amp;str |
@@ -17191,7 +17207,7 @@
 
 
 
-============================== table nb count(1091) table converted to MD ========================================
+============================== table nb count(1092) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTN04E"></span>CFTN04E Synchronization error (&amp;str) SSLTID=&amp;pid CR=&amp;cr CS=&amp;scs<br/> CFTN04E Synchronization error (&amp;str) SSLTID=&amp;pid _ CR= &amp;cr CS=&amp;cs |
@@ -17200,7 +17216,7 @@
 
 
 
-============================== table nb count(1092) table converted to MD ========================================
+============================== table nb count(1093) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTN05I"></span>CFTN05I &amp;message<br/> CFTN05I Network resource depletion prevention enabled for class &amp;n |
@@ -17209,7 +17225,7 @@
 
 
 
-============================== table nb count(1093) table converted to MD ========================================
+============================== table nb count(1094) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTN05E"></span>CFTN05E &amp;message<br/> CFTN05E &amp;message |
@@ -17220,7 +17236,7 @@
 
 
 
-============================== table nb count(1094) table converted to MD ========================================
+============================== table nb count(1095) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTN05W"></span>CFTN05W &amp;message<br/> CFTN05W &amp;message |
@@ -17229,7 +17245,7 @@
 
 
 
-============================== table nb count(1095) table converted to MD ========================================
+============================== table nb count(1096) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTN05W"></span><span id="CFTN06I"></span>CFTN06I No network class suitable for resource depletion prevention activation<br/> CFTN06I No network class suitable for resource depletion prevention activation |
@@ -17238,7 +17254,7 @@
 
 
 
-============================== table nb count(1096) table converted to MD ========================================
+============================== table nb count(1097) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTN08E"></span>CFTN08E SFTP bind() failed on address &amp;address and port &amp;port: Only one usage of each socket address (protocol/network address/port) is normally permitted<br/> CFTN08E SFTP bind() failed on address &amp;address and port &amp;port: Only one usage of each socket address (protocol/network address/port) is normally permitted |
@@ -17247,7 +17263,7 @@
 
 
 
-============================== table nb count(1097) table converted to MD ========================================
+============================== table nb count(1098) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTN09E"></span>CFTN09E SFTP bind() failed on address &amp;address and port &amp;port: &amp;reason<br/> CFTN09E SFTP bind() failed on address &amp;address and port &amp;port: &amp;reason |
@@ -17256,7 +17272,7 @@
 
 
 
-============================== table nb count(1098) table converted to MD ========================================
+============================== table nb count(1099) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTN10E"></span>CFTN10E Server connection refused, we have reached the connection limit, MAXCNX=&amp;maxcnx<br/> CFTN10E Server connection refused, we have reached the connection limit, MAXCNX=&amp;n |
@@ -17265,7 +17281,7 @@
 
 
 
-============================== table nb count(1099) table converted to MD ========================================
+============================== table nb count(1100) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error  | CFTN11E Server connection refused, we have reached the limit of file descriptors in CFTSFTP process<br/> CFTN11E Server connection refused, we have reached the limit of file descriptors in CFTSFTP process |
@@ -17274,7 +17290,7 @@
 
 
 
-============================== table nb count(1100) table converted to MD ========================================
+============================== table nb count(1101) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error  | CFTN12E Connection failed, we have reached the limit of file descriptors in CFTSFTP process<br/> CFTN12E Connection failed, we have reached the limit of file descriptors in CFTSFTP process |
@@ -17283,7 +17299,7 @@
 
 
 
-============================== table nb count(1101) table converted to MD ========================================
+============================== table nb count(1102) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTN36W"></span>CFTN36W TCPMAXUSER=&amp;maxcnx reached. Network connect reject host=&amp;host port=&amp;port &amp;str<br/> CFTN36W TCPMAXUSER=&amp;maxcnx reached. Network connect reject host=&amp;host port=&amp;port &amp;str |
@@ -17292,7 +17308,7 @@
 
 
 
-============================== table nb count(1102) table converted to MD ========================================
+============================== table nb count(1103) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP01F"></span>CFTP01F CFTPARM &amp;id _ Not found<br/> CFTP01F CFTPARM &amp;id _ Not found |
@@ -17303,7 +17319,7 @@
 
 
 
-============================== table nb count(1103) table converted to MD ========================================
+============================== table nb count(1104) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP02F"></span>CFTP02F CFTTRACE &amp;id for CFTPARM &amp;id _ Not found<br/> CFTP02F CFTSYST &amp;id for CFTPARM &amp;id _ Not found |
@@ -17314,7 +17330,7 @@
 
 
 
-============================== table nb count(1104) table converted to MD ========================================
+============================== table nb count(1105) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | CFTP03F CFTLOG &amp;id for CFTPARM &amp;id _ Not found<br/> CFTP03F CFTLOG &amp;id for CFTPARM &amp;id _ Not found |
@@ -17325,7 +17341,7 @@
 
 
 
-============================== table nb count(1105) table converted to MD ========================================
+============================== table nb count(1106) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP04F"></span>CFTP04F CFTNET &amp;id for CFTPARM &amp;id _ Not found<br/> CFTP04F CFTNET &amp;id for CFTPARM &amp;id _ Not found |
@@ -17336,7 +17352,7 @@
 
 
 
-============================== table nb count(1106) table converted to MD ========================================
+============================== table nb count(1107) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP05F"></span>CFTP05F CFTPROT &amp;id for CFTPARM &amp;id_ Not found<br/> CFTP05F CFTPROT &amp;id for CFTPARM &amp;id _ Not found |
@@ -17347,7 +17363,7 @@
 
 
 
-============================== table nb count(1107) table converted to MD ========================================
+============================== table nb count(1108) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP06F"></span>CFTP06F CFTCAT &amp;id for CFTPARM &amp;id _ Not found<br/> CFTP06F CFTCAT &amp;id for CFTPARM &amp;id _ Not found |
@@ -17358,7 +17374,7 @@
 
 
 
-============================== table nb count(1108) table converted to MD ========================================
+============================== table nb count(1109) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP07F"></span>CFTP07F CFTCOM &amp;id for CFTPARM &amp;id _ Not found<br/> CFTP07F CFTCOM &amp;id for CFTPARM &amp;id _ Not found |
@@ -17369,7 +17385,7 @@
 
 
 
-============================== table nb count(1109) table converted to MD ========================================
+============================== table nb count(1110) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Fatal | <span id="CFTP08F"></span>CFTP08F CFTNET &amp;id for CFTPROT &amp;id _ Not found<br/> CFTP08F CFTNET &amp;id for CFTPROT &amp;id _ Not found |
@@ -17380,7 +17396,7 @@
 
 
 
-============================== table nb count(1110) table converted to MD ========================================
+============================== table nb count(1111) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP09F"></span>CFTP09F CFTSEND &amp;id for CFTPARM &amp;id _ No default record found<br/> CFTP09F CFTSEND &amp;id for CFTPARM &amp;id _ No default record found |
@@ -17391,7 +17407,7 @@
 
 
 
-============================== table nb count(1111) table converted to MD ========================================
+============================== table nb count(1112) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP10F"></span>CFTP10F CFTRECV &amp;id for CFTPARM &amp;id _ No Default record found<br/> CFTP10F CFTRECV &amp;id for CFTPARM &amp;id _ No Default record found |
@@ -17402,7 +17418,7 @@
 
 
 
-============================== table nb count(1112) table converted to MD ========================================
+============================== table nb count(1113) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | CFTP13F CFTXLATE &amp;id _ Not found<br/> CFTP13F CFTXLATE &amp;id not found (DIRECT=&amp;direct FCODE=&amp;fcode NCODE=&amp;ncode |
@@ -17413,7 +17429,7 @@
 
 
 
-============================== table nb count(1113) table converted to MD ========================================
+============================== table nb count(1114) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP14F"></span>CFTP14F CFTACCNT &amp;id for CFTPARM &amp;id _ Not found<br/> CFTP14F CFTACCNT &amp;id for CFTPARM &amp;id _ Not found |
@@ -17424,7 +17440,7 @@
 
 
 
-============================== table nb count(1114) table converted to MD ========================================
+============================== table nb count(1115) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP15F"></span>CFTP15F CFTPROT &amp;idprot for CFTPARM &amp;idparm _ Not loading in memory<br/> CFTP15F CFTPROT &amp;id for CFTPARM &amp;id _ Not loading in memory |
@@ -17435,7 +17451,7 @@
 
 
 
-============================== table nb count(1115) table converted to MD ========================================
+============================== table nb count(1116) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP16F"></span>CFTP16F CFTNET &amp;idnet for CFTPARM &amp;idparm _ Not loading in memory<br/> CFTP16F CFTNET &amp;id for CFTPARM &amp;id _ Not loading in memory |
@@ -17446,7 +17462,7 @@
 
 
 
-============================== table nb count(1116) table converted to MD ========================================
+============================== table nb count(1117) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP17F"></span>CFTP17F CFTCOM &amp;idcom for CFTPARM &amp;idparm _ Not loading in memory<br/> CFTP17F CFTCOM &amp;id for CFTPARM &amp;id _ Not loading in memory |
@@ -17457,7 +17473,7 @@
 
 
 
-============================== table nb count(1117) table converted to MD ========================================
+============================== table nb count(1118) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP18F"></span>CFTP18F Error of integrity<br/> CFTP18F Error of integrity |
@@ -17467,7 +17483,7 @@
 
 
 
-============================== table nb count(1118) table converted to MD ========================================
+============================== table nb count(1119) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP19E"></span>CFTP19E PART=&amp;part IDF=&amp;idf CFTAPPL=&amp;id DIRECT=&amp;direct not found<br/> CFTP19E PART=&amp;part IDF=&amp;idf CFTAPPL=&amp;id DIRECT=&amp;direct not found |
@@ -17477,7 +17493,7 @@
 
 
 
-============================== table nb count(1119) table converted to MD ========================================
+============================== table nb count(1120) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTP20E"></span>CFTP20E The client CFTSSH &amp;ssh cannot be found for partner &amp;part<br/> CFTP20E The client CFTSSH &amp;id cannot be found for partner &amp;id |
@@ -17487,7 +17503,7 @@
 
 
 
-============================== table nb count(1120) table converted to MD ========================================
+============================== table nb count(1121) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP20F"></span>CFTP20F direct=server &amp;id for CFTPROT &amp;prot _ Not found<br/> CFTP20F CFTSSL direct=server &amp;id for CFTPROT &amp;id _ Not found |
@@ -17497,7 +17513,7 @@
 
 
 
-============================== table nb count(1121) table converted to MD ========================================
+============================== table nb count(1122) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTP21E"></span>CFTP21E The client private key &amp;key cannot be loaded from &amp;origin<br/> CFTP21E The client private key &amp;key cannot be loaded from &amp;origin |
@@ -17507,7 +17523,7 @@
 
 
 
-============================== table nb count(1122) table converted to MD ========================================
+============================== table nb count(1123) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTP22E"></span>CFTP22E The client public key &amp;key cannot be loaded from &amp;origin<br/> CFTP22E The client public key &amp;key cannot be loaded from &amp;origin |
@@ -17517,7 +17533,7 @@
 
 
 
-============================== table nb count(1123) table converted to MD ========================================
+============================== table nb count(1124) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTP23W"></span>CFTP23W CFTNET &amp;id for CFTPARM &amp;id uses &amp;net network _ Disabled<br/> CFTP23W CFTNET &amp;id for CFTPARM &amp;id uses &amp;net network _ Disabled |
@@ -17527,7 +17543,7 @@
 
 
 
-============================== table nb count(1124) table converted to MD ========================================
+============================== table nb count(1125) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning  | CFTP24W CFTPROT &amp;id uses CFTNET &amp;id _ Disabled<br/> CFTP24W CFTPROT &amp;id uses CFTNET &amp;id _ Disabled |
@@ -17537,7 +17553,7 @@
 
 
 
-============================== table nb count(1125) table converted to MD ========================================
+============================== table nb count(1126) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTP24W"></span>CFTP25W CFTCOM &amp;id uses TYPE 'MBX' Disabled<br/> CFTP25W CFTCOM &amp;id uses TYPE 'MBX' Disabled |
@@ -17547,7 +17563,7 @@
 
 
 
-============================== table nb count(1126) table converted to MD ========================================
+============================== table nb count(1127) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTP30F"></span>CFTP30F CFTSSH &amp;ssh for CFTPROT &amp;prot cannot be found<br/> CFTP30F CFTSSH &amp;id for CFTPROT &amp;id cannot be found |
@@ -17557,7 +17573,7 @@
 
 
 
-============================== table nb count(1127) table converted to MD ========================================
+============================== table nb count(1128) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTP30F"></span><br/> <span id="CFTP31F"></span>CFTP31F CFTNET &amp;id for CFTPROT &amp;id cannot be found<br/> CFTP31F CFTNET &amp;id for CFTPROT &amp;id cannot be found |
@@ -17567,7 +17583,7 @@
 
 
 
-============================== table nb count(1128) table converted to MD ========================================
+============================== table nb count(1129) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR02E"></span>CFTR02E &amp;cmd Failed _ Invalid date or time<br/> CFTR02E &amp;cmd Failed _ Invalid date or time |
@@ -17578,7 +17594,7 @@
 
 
 
-============================== table nb count(1129) table converted to MD ========================================
+============================== table nb count(1130) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR03E"></span>CFTR03E &amp;cmd Failed _ No record found<br/> CFTR03E &amp;cmd Failed _ No record found for &amp;str |
@@ -17589,7 +17605,7 @@
 
 
 
-============================== table nb count(1130) table converted to MD ========================================
+============================== table nb count(1131) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR04E"></span>CFTR04E &amp;cmd Failed _ Keyword &amp;keyw too large<br/> CFTR04E &amp;cmd Failed _ Keyword &amp;keyw too large |
@@ -17600,7 +17616,7 @@
 
 
 
-============================== table nb count(1131) table converted to MD ========================================
+============================== table nb count(1132) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR05E"></span>CFTR05E &amp;cmd Failed _ Illegal separator for keyword &amp;keyw<br/> CFTR05E &amp;cmd Failed _ Illegal separator for keyword &amp;keyw |
@@ -17611,7 +17627,7 @@
 
 
 
-============================== table nb count(1132) table converted to MD ========================================
+============================== table nb count(1133) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR06E"></span>CFTR06E &amp;cmd Failed _ Keyword &amp;keyw, missing quote<br/> CFTR06E &amp;cmd Failed _ Keyword &amp;keyw ; missing quote |
@@ -17622,7 +17638,7 @@
 
 
 
-============================== table nb count(1133) table converted to MD ========================================
+============================== table nb count(1134) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR07E"></span>CFTR07E &amp;cmd Failed _ Too many keywords<br/> CFTR07E &amp;cmd Failed _ Too many keywords |
@@ -17633,7 +17649,7 @@
 
 
 
-============================== table nb count(1134) table converted to MD ========================================
+============================== table nb count(1135) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR08E"></span>CFTR08E &amp;cmd Failed _ Keyword &amp;keyw unknown or duplicate<br/> CFTR08E &amp;cmd Failed _ Keyword &amp;keyw unknown or duplicate |
@@ -17644,7 +17660,7 @@
 
 
 
-============================== table nb count(1135) table converted to MD ========================================
+============================== table nb count(1136) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR09E"></span>CFTR09E &amp;cmd Failed _ Keyword &amp;keyw missing<br/> CFTR09E &amp;cmd Failed _ Keyword &amp;keyw missing |
@@ -17655,7 +17671,7 @@
 
 
 
-============================== table nb count(1136) table converted to MD ========================================
+============================== table nb count(1137) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR10E"></span>CFTR10E &amp;cmd Failed _ Keyword &amp;keyw value out of bounds<br/> CFTR10E &amp;cmd Failed _ Keyword &amp;keyw value out of bounds |
@@ -17666,7 +17682,7 @@
 
 
 
-============================== table nb count(1137) table converted to MD ========================================
+============================== table nb count(1138) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR11E"></span>CFTR11E &amp;cmd Failed _ Invalid value for keyword &amp;keyw<br/> CFTR11E &amp;cmd Failed _ Invalid value for keyword &amp;keyw |
@@ -17677,7 +17693,7 @@
 
 
 
-============================== table nb count(1138) table converted to MD ========================================
+============================== table nb count(1139) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTR12I"></span>CFTR12I &amp;cmd PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm]IDT=&amp;idt Treated FOR USER=&amp;user &amp;str<br/> CFTR12I &amp;cmd PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm]IDT=&amp;idt Treated FOR USER=&amp;user &amp;str |
@@ -17686,7 +17702,7 @@
 
 
 
-============================== table nb count(1139) table converted to MD ========================================
+============================== table nb count(1140) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR13E"></span>CFTR13E &amp;cmd Failed _ IDT=&amp;idt not allowed<br/> CFTR13E SEND &amp;cmd PART=&amp;part Failed _ IDT=&amp;idt not allowed |
@@ -17697,7 +17713,7 @@
 
 
 
-============================== table nb count(1140) table converted to MD ========================================
+============================== table nb count(1141) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTR14W"></span>CFTR14W &amp;cmd Failed PART=&amp;part _ No transfer found for this request<br/> CFTR14W &amp;cmd PART=&amp;part Failed _ No transfer found for this request |
@@ -17707,7 +17723,7 @@
 
 
 
-============================== table nb count(1141) table converted to MD ========================================
+============================== table nb count(1142) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTR15W"></span>CFTR15W &amp;cmd not treated for user &amp;user<br/> CFTR15W &amp;cmd not treated for user &amp;user |
@@ -17717,7 +17733,7 @@
 
 
 
-============================== table nb count(1142) table converted to MD ========================================
+============================== table nb count(1143) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTR16I"></span>CFTR16I &amp;message<br/> CFTR16I &amp;message |
@@ -17726,7 +17742,7 @@
 
 
 
-============================== table nb count(1143) table converted to MD ========================================
+============================== table nb count(1144) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTR17I"></span>CFTR17I &amp;cmd In progress for USER &amp;user &amp;message<br/> CFTR17I &amp;cmd &amp;message In progress for USER &amp;user |
@@ -17735,7 +17751,7 @@
 
 
 
-============================== table nb count(1144) table converted to MD ========================================
+============================== table nb count(1145) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTR18W"></span>CFTR18W &amp;message<br/> CFTR18W &amp;message |
@@ -17744,7 +17760,7 @@
 
 
 
-============================== table nb count(1145) table converted to MD ========================================
+============================== table nb count(1146) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR19E"></span>CFTR19E &amp;message<br/> CFTR19E &amp;message |
@@ -17753,7 +17769,7 @@
 
 
 
-============================== table nb count(1146) table converted to MD ========================================
+============================== table nb count(1147) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTR20I"></span>CFTR20I &amp;message<br/> CFTR20I &amp;message |
@@ -17768,7 +17784,7 @@
 
 
 
-============================== table nb count(1147) table converted to MD ========================================
+============================== table nb count(1148) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR21E"></span>CFTR21E &amp;cmd Failed _ No record found &lt;IDTU=&amp;idtu PART=&amp;part IDT=&amp;idt&gt;<br/> CFTR21E &amp;cmd Failed _ No record found &lt;IDTU=&amp;idtu PART=&amp;part IDT=&amp;idt&gt; |
@@ -17778,7 +17794,7 @@
 
 
 
-============================== table nb count(1148) table converted to MD ========================================
+============================== table nb count(1149) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR22E"></span>CFTR22E &amp;cmd Failed _ Set FORCE=YES to immediately retry to rename &lt;IDTU=&amp;idtu PART=&amp;part IDT=&amp;idt PHASE=Y PHASESTEP=R&gt;<br/> CFTR22E &amp;cmd Failed _ Set FORCE=YES to immediately retry to rename &lt;IDTU=&amp;idtu PART=&amp;part IDT=&amp;idt PHASE=Y PHASESTEP=R&gt; |
@@ -17788,7 +17804,7 @@
 
 
 
-============================== table nb count(1149) table converted to MD ========================================
+============================== table nb count(1150) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | CFTR23I On &amp;time UserId=&amp;userid, JobName=&amp;jobname ran the command &amp;command<br/> CFTR23I On &amp;time UserId=&amp;userid, JobName=&amp;jobname ran the command &amp;command |
@@ -17797,7 +17813,7 @@
 
 
 
-============================== table nb count(1150) table converted to MD ========================================
+============================== table nb count(1151) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTS01W"></span>CFTS01W Synch. response time-out _ Waitresp increased to &amp;ns (&amp;str)<br/> CFTS01W Synch. response time-out _ Waitresp increased to &amp;ns (&amp;str) |
@@ -17807,7 +17823,7 @@
 
 
 
-============================== table nb count(1151) table converted to MD ========================================
+============================== table nb count(1152) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS02E"></span>CFTS02E PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt DIRECT=&amp;direct &amp;fname not found<br/> CFTS02E _ &amp;fname not found &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt DIRECT=&amp;direct&gt; |
@@ -17816,7 +17832,7 @@
 
 
 
-============================== table nb count(1152) table converted to MD ========================================
+============================== table nb count(1153) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTS03I"></span>CFTS03I PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm]IDT=&amp;idt _ &amp;fname submitted<br/> CFTS03I _ &amp;fname submitted&lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt&gt; (&amp;n sec) |
@@ -17825,7 +17841,7 @@
 
 
 
-============================== table nb count(1153) table converted to MD ========================================
+============================== table nb count(1154) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTS04W"></span>CFTS04W Action file &amp;fname is empty<br/> CFTS04W Action file &amp;fname is empty |
@@ -17834,7 +17850,7 @@
 
 
 
-============================== table nb count(1154) table converted to MD ========================================
+============================== table nb count(1155) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS05E"></span>CFTS05E Error code &amp;scs _ Trying to access &amp;str<br/> CFTS05E Error code &amp;scs _ Trying to access &amp;str |
@@ -17845,7 +17861,7 @@
 
 
 
-============================== table nb count(1155) table converted to MD ========================================
+============================== table nb count(1156) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS06E"></span>CFTS06E Error code &amp;scs _ Trying to access temporary file<br/> CFTS06E Error code &amp;scs _ Trying to access temporary file |
@@ -17856,7 +17872,7 @@
 
 
 
-============================== table nb count(1156) table converted to MD ========================================
+============================== table nb count(1157) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS07E"></span>CFTS07E Insufficient space for temporary file<br/> CFTS07E Insufficient space for temporary file |
@@ -17867,7 +17883,7 @@
 
 
 
-============================== table nb count(1157) table converted to MD ========================================
+============================== table nb count(1158) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS08E"></span>CFTS08E Error code &amp;scs _ Executing temporary file<br/> CFTS08E Error code &amp;scs _ Executing temporary file |
@@ -17878,7 +17894,7 @@
 
 
 
-============================== table nb count(1158) table converted to MD ========================================
+============================== table nb count(1159) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS10E"></span>CFTS10E File communication task error (&amp;str1) _ &amp;str2<br/> CFTS10E File communication task error (&amp;str1) _ &amp;str2 |
@@ -17888,7 +17904,7 @@
 
 
 
-============================== table nb count(1159) table converted to MD ========================================
+============================== table nb count(1160) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS11E"></span>CFTS11E Allocation error _ Trying to access temporary file<br/> CFTS11E Allocation error _ Trying to access temporary file |
@@ -17899,7 +17915,7 @@
 
 
 
-============================== table nb count(1160) table converted to MD ========================================
+============================== table nb count(1161) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTS12W"></span>CFTS12W Error code &amp;scs _ CFT write messages to output stream<br/> CFTS12W Error code &amp;scs _ CFT write messages to output stream |
@@ -17910,7 +17926,7 @@
 
 
 
-============================== table nb count(1161) table converted to MD ========================================
+============================== table nb count(1162) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS13E"></span>CFTS13E Semaphore failure &amp;cs_CFTTPRO aborted<br/> CFTS13E Semaphore failure &amp;cs_CFTTPRO aborted |
@@ -17921,7 +17937,7 @@
 
 
 
-============================== table nb count(1162) table converted to MD ========================================
+============================== table nb count(1163) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS14E"></span>CFTS14E ID=&amp;id error initializing process<br/> CFTS14E Unknown synchronization message CLASS=&amp;class TYPE=&amp;type |
@@ -17932,7 +17948,7 @@
 
 
 
-============================== table nb count(1163) table converted to MD ========================================
+============================== table nb count(1164) table converted to MD ========================================
 
 
 | Information | <span id="CFTS15I"></span>CFTS15I PART = &amp;part Kill Session Reference &amp;ctx:&amp;ctx<br/> CFTS15I PART = &amp;part Kill Session Reference &amp;ctx:&amp;ctx |
@@ -17941,7 +17957,7 @@
 
 
 
-============================== table nb count(1164) table converted to MD ========================================
+============================== table nb count(1165) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS16E"></span>CFTS16E Synch. response time-out_End transfer exit<br/> CFTS16E Synch. response time-out _ End of transfer exit |
@@ -17952,7 +17968,7 @@
 
 
 
-============================== table nb count(1165) table converted to MD ========================================
+============================== table nb count(1166) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS17E"></span>CFTS17E Error code &amp;scs _ Trying to access End transfer exit<br/> CFTS17E Error code &amp;scs _ Trying to access End of transfer exit |
@@ -17963,7 +17979,7 @@
 
 
 
-============================== table nb count(1166) table converted to MD ========================================
+============================== table nb count(1167) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS18W"></span><span id="CFTS18E"></span>CFTS18E PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt _ Catalog record Update Error: &amp;scs<br/> CFTS18E _ Catalog Update Error: &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt&gt; |
@@ -17973,7 +17989,7 @@
 
 
 
-============================== table nb count(1167) table converted to MD ========================================
+============================== table nb count(1168) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTS18W"></span>CFTS18W PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt _ Catalog record label<br/> CFTS18W _ Catalog record &amp;label &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt&gt; |
@@ -17984,7 +18000,7 @@
 
 
 
-============================== table nb count(1168) table converted to MD ========================================
+============================== table nb count(1169) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTS19I"></span>CFTS19I PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm]IDT=&amp;idt _ Catalog record label<br/> CFTS19I _ Catalog record &amp;str &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt&gt; |
@@ -17993,7 +18009,7 @@
 
 
 
-============================== table nb count(1169) table converted to MD ========================================
+============================== table nb count(1170) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTS20I"></span>CFTS20I Communication file row number deleted: nnnnnnnn (&amp;str)<br/> CFTS20I &amp;str", &amp;str = Communication file row number deleted: nnnnnnnn<br/> or File communication task INIT (&amp;n,WSCAN=&amp;wscan,RET=&amp;ret) |
@@ -18002,7 +18018,7 @@
 
 
 
-============================== table nb count(1170) table converted to MD ========================================
+============================== table nb count(1171) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTS21I"></span>CFTS21I PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm]IDT=&amp;idt Exit request ID=&amp;id<br/> CFTS21I Exit request ID=&amp;id &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt&gt; |
@@ -18012,7 +18028,7 @@
 
 
 
-============================== table nb count(1171) table converted to MD ========================================
+============================== table nb count(1172) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTS22I"></span>CFTS22I Task time out End of transfer exit<br/> CFTS22I Task time out End of transfer exit |
@@ -18023,7 +18039,7 @@
 
 
 
-============================== table nb count(1172) table converted to MD ========================================
+============================== table nb count(1173) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS23E"></span>CFTS23E Bad user return code &lt;details&gt;<br/> CFTS23E &amp;str PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt ", &amp;str = Bad End transfer exit version : &amp;ver / &amp;ver<br/> or<br/> CFTS23E &amp;str &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt &gt;") Invalid state transit '&amp;state'-&gt;'&amp;state' or Unknown state &amp;state<br/> or<br/> Unknown action &amp;action or Bad User return code : &amp;scs |
@@ -18033,7 +18049,7 @@
 
 
 
-============================== table nb count(1173) table converted to MD ========================================
+============================== table nb count(1174) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS26E"></span>CFTS26E XTRK task error &amp;str <br/> CFTS26E XTRK task error &amp;str |
@@ -18043,7 +18059,7 @@
 
 
 
-============================== table nb count(1174) table converted to MD ========================================
+============================== table nb count(1175) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS27E"></span>CFTS27E Synchronous communication task error CR=&amp;cr &amp;str<br/> CFTS27E Synchronous communication task error CR= &amp;cr &amp;str |
@@ -18054,7 +18070,7 @@
 
 
 
-============================== table nb count(1175) table converted to MD ========================================
+============================== table nb count(1176) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTS29I"></span>CFTS29I Cannot acces XTRK task _ &amp;str<br/> CFTS29I Cannot acces XTRK task _ &amp;str |
@@ -18064,7 +18080,7 @@
 
 
 
-============================== table nb count(1176) table converted to MD ========================================
+============================== table nb count(1177) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTS30I"></span>CFTS30I XTRK Information &amp;str<br/> CFTS30I XTRK Information &amp;str |
@@ -18073,7 +18089,7 @@
 
 
 
-============================== table nb count(1177) table converted to MD ========================================
+============================== table nb count(1178) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTS31W"></span>CFTS31W XTRK Warning &amp;str Error Code = &amp;cr<br/> CFTS31W XTRK Warning &amp;str Error Code = &amp;cr |
@@ -18082,7 +18098,7 @@
 
 
 
-============================== table nb count(1178) table converted to MD ========================================
+============================== table nb count(1179) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTS32W"></span>CFTS32W TCOMS Connection refused (address=nnn.nnn.nnn.nnn, name=userid)<br/> CFTS32W TCOMS Connection refused |
@@ -18091,7 +18107,7 @@
 
 
 
-============================== table nb count(1179) table converted to MD ========================================
+============================== table nb count(1180) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTS33I"></span>CFTS33I CFTLOG current file before switch<br/> CFTS33I CFTLOG current file before switch :&amp;fname |
@@ -18100,7 +18116,7 @@
 
 
 
-============================== table nb count(1180) table converted to MD ========================================
+============================== table nb count(1181) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTS34I"></span>CFTS34I CFTLOG executed switch proc<br/> CFTS34I CFTLOG execute switch procedure : &amp;fname |
@@ -18109,7 +18125,7 @@
 
 
 
-============================== table nb count(1181) table converted to MD ========================================
+============================== table nb count(1182) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTS35I"></span>CFTS35I CFTLOG current file after switch<br/> CFTS35I CFTLOG current file after switch :&amp;fname |
@@ -18118,7 +18134,7 @@
 
 
 
-============================== table nb count(1182) table converted to MD ========================================
+============================== table nb count(1183) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTS36I"></span>CFTS36I CFTACCNT current file (no switch executed)<br/> CFTS36I CFTACCNT current file (no switch executed): &amp;fname |
@@ -18127,7 +18143,7 @@
 
 
 
-============================== table nb count(1183) table converted to MD ========================================
+============================== table nb count(1184) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTS37I"></span>CFTS37I CRONJOB ID=&amp;idcron, CRONTAB=&amp;cronname &amp;exec executed, NEXT=&amp;date<br/> CFTS37I CRONJOB: ID=&amp;idcron, CRONTAB=&amp;cronname ACT DONE<br/> CFTS37I CRONJOB: RECONFIG type=CRON DONE |
@@ -18136,7 +18152,7 @@
 
 
 
-============================== table nb count(1184) table converted to MD ========================================
+============================== table nb count(1185) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTS39E"></span>CFTS38W CRONJOB NEXT TIME CALCUL FAILED, RETURN &amp;ret<br/> CFTS38W CRONJOB NEXT TIME CALCUL IS AFTER 2035, ABORTING, RETURN &amp;ret |
@@ -18145,7 +18161,7 @@
 
 
 
-============================== table nb count(1185) table converted to MD ========================================
+============================== table nb count(1186) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS39E"></span><br/> CFTS39E CRONJOB ID=&amp;id, CRONTAB=&amp;cronname exec &amp;fname failed<br/> CFTS39E CRONJOB: ID=&amp;id INACT FAILED: CRONJOB Not Found<br/> CFTS39E CRONJOB: ID=&amp;id ACT FAILED: CRONJOB Not Found |
@@ -18154,7 +18170,7 @@
 
 
 
-============================== table nb count(1186) table converted to MD ========================================
+============================== table nb count(1187) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS39E"></span><br/> CFTI40E OMVS SEGMENT NOT DEFINED for user=xxxxxx<br/> CFTI40E OMVS SEGMENT NOT DEFINED for user=xxxxxx |
@@ -18163,7 +18179,7 @@
 
 
 
-============================== table nb count(1187) table converted to MD ========================================
+============================== table nb count(1188) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Fatal | <span id="CFTS40F"></span>CFTS40F CFTACCNT FORMAT=(V23/V24) not available for &amp;fname<br/> CFTS40F CFTACCNT FORMAT=(V23|V24) not available for &amp;fname |
@@ -18172,7 +18188,7 @@
 
 
 
-============================== table nb count(1188) table converted to MD ========================================
+============================== table nb count(1189) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTS41I"></span>CFTS41I Catalog Alert exec &amp;fname executed<br/> CFTS41I Catalog Alert exec &amp;fname executed |
@@ -18181,7 +18197,7 @@
 
 
 
-============================== table nb count(1189) table converted to MD ========================================
+============================== table nb count(1190) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS42E"></span>CFTS42E Catalog Alert exec &amp;fname &amp;str" where &amp;str= "not found" or "failed"<br/> CFTS42E Catalog Alert exec &amp;fname &amp;str |
@@ -18190,7 +18206,7 @@
 
 
 
-============================== table nb count(1190) table converted to MD ========================================
+============================== table nb count(1191) table converted to MD ========================================
 
 
 | V23 format<br/> <br/> V24 format<br/> Information | <span id="CFTS43I"></span>CFTS43I &amp;str", &amp;str = RECONFIG PARM CACHE CFTMAIN or RECONFIG &amp;task : Keep &amp;key : &amp;value or Parameter &amp;task &amp;value --&gt; &amp;value or RECONFIG &amp;task <br/> CFTS43I &amp;str |
@@ -18199,7 +18215,7 @@
 
 
 
-============================== table nb count(1191) table converted to MD ========================================
+============================== table nb count(1192) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTS44W"></span>CFTS44W Unexpected message Class &amp;n &lt;TASK=&amp;str&gt;<br/> CFTS44W Unexpected Message Class &amp;n &lt;TASK=&amp;task&gt; |
@@ -18209,7 +18225,7 @@
 
 
 
-============================== table nb count(1192) table converted to MD ========================================
+============================== table nb count(1193) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTS45W"></span>CFTS45W Unexpected Message Class &amp;n &lt;TASK=&amp;task&gt;<br/> CFTS45W Unexpected Message Type &amp;n &lt;TASK=&amp;task CLASS=&amp;n&gt; |
@@ -18219,7 +18235,7 @@
 
 
 
-============================== table nb count(1193) table converted to MD ========================================
+============================== table nb count(1194) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Fatal  | <span id="CFTS46F"></span>CFTS46F CFTPRX error _ &amp;str<br/> CFTS46F CFTPRX error _ &amp;str |
@@ -18230,7 +18246,7 @@
 
 
 
-============================== table nb count(1194) table converted to MD ========================================
+============================== table nb count(1195) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS47E"></span>CFTS47E CFTPRX error _ &amp;str<br/> CFTS47E CFTPRX error _ &amp;str |
@@ -18241,7 +18257,7 @@
 
 
 
-============================== table nb count(1195) table converted to MD ========================================
+============================== table nb count(1196) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTS48W"></span>CFTS48W CFTPRX _ &amp;str<br/> CFTS48W CFTPRX _ &amp;str |
@@ -18250,7 +18266,7 @@
 
 
 
-============================== table nb count(1196) table converted to MD ========================================
+============================== table nb count(1197) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTS49I"></span>CFTS49I CFTPRX _ &amp;str<br/> CFTS49I CFTPRX _ &amp;str |
@@ -18259,7 +18275,7 @@
 
 
 
-============================== table nb count(1197) table converted to MD ========================================
+============================== table nb count(1198) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Fatal  | <span id="CFTS50F"></span>CFTS50F CFTJRE error _ &amp;str<br/> CFTS50F CFTJRE error _ &amp;str |
@@ -18270,7 +18286,7 @@
 
 
 
-============================== table nb count(1198) table converted to MD ========================================
+============================== table nb count(1199) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS51E"></span>CFTS51E CFTJRE error _ &amp;str<br/> CFTS51E CFTJRE error _ &amp;str |
@@ -18281,7 +18297,7 @@
 
 
 
-============================== table nb count(1199) table converted to MD ========================================
+============================== table nb count(1200) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTS52W"></span>CFTS52W CFTJRE _ &amp;str<br/> CFTS52W CFTJRE _ &amp;str |
@@ -18290,7 +18306,7 @@
 
 
 
-============================== table nb count(1200) table converted to MD ========================================
+============================== table nb count(1201) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS53I"></span>CFTS53I CFTJRE _ &amp;str<br/> CFTS53I CFTJRE _ &amp;str |
@@ -18299,7 +18315,7 @@
 
 
 
-============================== table nb count(1201) table converted to MD ========================================
+============================== table nb count(1202) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS54F"></span>CFTS54F CFTACC task fatal CR=&amp;cr &amp;str<br/> CFTS54F CFTACC task fatal CR= &amp;cr &amp;str |
@@ -18310,7 +18326,7 @@
 
 
 
-============================== table nb count(1202) table converted to MD ========================================
+============================== table nb count(1203) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTS55I"></span>CFTS55I Acceleration &amp;str<br/> CFTS55I Acceleration &amp;str |
@@ -18319,7 +18335,7 @@
 
 
 
-============================== table nb count(1203) table converted to MD ========================================
+============================== table nb count(1204) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS56E"></span>CFTS56E Central Governance error (&lt;error_code&gt;) &lt;error_msg&gt;<br/> CFTS56E Central Governance &amp;str", &amp;str = &amp;type error (send): (&amp;code) &amp;message<br/> CFTS56E Central Governance &amp;str", &amp;str = &amp;type error (recv): (&amp;code) &amp;message |
@@ -18329,7 +18345,7 @@
 
 
 
-============================== table nb count(1204) table converted to MD ========================================
+============================== table nb count(1205) table converted to MD ========================================
 
 
 | V23 format<br/> <br/> V24 format<br/> Warning  | <span id="CFTS57W"></span>CFTS57W Synchronous communication _ Authentication ignored - authentication_enable=yes but authentication_method=&amp;auth_method<br/> CFTS57W Synchronous communication _ Authentication ignored - authentication_enable=yes but authentication_method=&amp;auth_method |
@@ -18338,7 +18354,7 @@
 
 
 
-============================== table nb count(1205) table converted to MD ========================================
+============================== table nb count(1206) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS59E"></span>CFTS59E Multi-node error _ &amp;str<br/> CFTS58F Multi-node error _ &amp;str |
@@ -18349,7 +18365,7 @@
 
 
 
-============================== table nb count(1206) table converted to MD ========================================
+============================== table nb count(1207) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTS60W"></span>CFTS60W Multi-node _ &amp;str<br/> CFTS60W Multi-node _ &amp;str |
@@ -18358,7 +18374,7 @@
 
 
 
-============================== table nb count(1207) table converted to MD ========================================
+============================== table nb count(1208) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTS61I"></span>CFTS61I Multi-node _ &amp;str<br/> CFTS61I Multi-node _ &amp;str |
@@ -18367,7 +18383,7 @@
 
 
 
-============================== table nb count(1208) table converted to MD ========================================
+============================== table nb count(1209) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTS62I"></span>CFTS62I &amp;str<br/> CFTS62I &amp;str |
@@ -18376,7 +18392,7 @@
 
 
 
-============================== table nb count(1209) table converted to MD ========================================
+============================== table nb count(1210) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Fatal  | <span id="CFTS63F"></span>CFTS63F Secure Relay fatal error _ &amp;str<br/> CFTS63F Secure Relay fatal error _ &amp;str |
@@ -18386,7 +18402,7 @@
 
 
 
-============================== table nb count(1210) table converted to MD ========================================
+============================== table nb count(1211) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTS64I"></span>CFTS64I Secure Relay _ &amp;str<br/> CFTS64I Secure Relay _ &amp;str |
@@ -18395,7 +18411,7 @@
 
 
 
-============================== table nb count(1211) table converted to MD ========================================
+============================== table nb count(1212) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTS64I"></span><span id="CFTS65W"></span>CFTS65W Unable to launch another script for 60s due to the cft.server.max_processing_scripts limit<br/> CFTS65W Unable to launch another script for 60s due to the cft.server.max_processing_scripts limit |
@@ -18406,7 +18422,7 @@
 
 
 
-============================== table nb count(1212) table converted to MD ========================================
+============================== table nb count(1213) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS64I"></span><span id="CFTS66E"></span>CFTS66E TFIL error _ &amp;str", &amp;str = Regular expression &amp;mask parsing error or List generation error &amp;scs<br/> CFTS66E TFIL error _ &amp;str |
@@ -18417,7 +18433,7 @@
 
 
 
-============================== table nb count(1213) table converted to MD ========================================
+============================== table nb count(1214) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS67E"></span>CFTS67E Error replacing variable &amp;var &amp;message<br/> CFTS67E Error replacing variable &amp;var &amp;message |
@@ -18426,7 +18442,7 @@
 
 
 
-============================== table nb count(1214) table converted to MD ========================================
+============================== table nb count(1215) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS68E"></span>CFTS68E PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm]IDT=&amp;idt _ &amp;fname not executed<br/> CFTS68E _ &amp;fname not executed &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt DIRECT=&amp;direct&gt; |
@@ -18435,7 +18451,7 @@
 
 
 
-============================== table nb count(1215) table converted to MD ========================================
+============================== table nb count(1216) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTS71W"></span>CFTS71W Command file Alert fill threshold reached: level=&amp;level ID=&amp;id<br/> CFTS71W Command file Alert fill threshold reached: level=&amp;level ID=&amp;id |
@@ -18444,7 +18460,7 @@
 
 
 
-============================== table nb count(1216) table converted to MD ========================================
+============================== table nb count(1217) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTS72W"></span>CFTS72W Command file Alert cleared : level=&amp;level ID=&amp;id<br/> CFTS72W Command file Alert cleared : level=&amp;level ID=&amp;id |
@@ -18453,7 +18469,7 @@
 
 
 
-============================== table nb count(1217) table converted to MD ========================================
+============================== table nb count(1218) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTS73I"></span>CFTS73I Command file Alert exec &amp;fname executed<br/> CFTS73I Command file Alert exec &amp;fname executed |
@@ -18462,7 +18478,7 @@
 
 
 
-============================== table nb count(1218) table converted to MD ========================================
+============================== table nb count(1219) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS74E"></span>CFTS74E Command file Alert exec &amp;fname &amp;str"<br/> CFTS74E Command file Alert exec &amp;fname &amp;str" |
@@ -18471,7 +18487,7 @@
 
 
 
-============================== table nb count(1219) table converted to MD ========================================
+============================== table nb count(1220) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | CFTT00E CFT request warning _ &amp;str<br/> CFTT00E CFT request warning - &amp;str |
@@ -18480,7 +18496,7 @@
 
 
 
-============================== table nb count(1220) table converted to MD ========================================
+============================== table nb count(1221) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT01E"></span>CFTT01E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Open mode not allowed<br/> CFTT01E IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Open mode not allowed |
@@ -18491,7 +18507,7 @@
 
 
 
-============================== table nb count(1221) table converted to MD ========================================
+============================== table nb count(1222) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT02E"></span>CFTT02E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Transfer Area Full<br/> CFTT02E _ Transfer Area Full &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -18502,7 +18518,7 @@
 
 
 
-============================== table nb count(1222) table converted to MD ========================================
+============================== table nb count(1223) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT03E"></span>CFTT03E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Max retry Reached<br/> CFTT03E _ Max retry Reached &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -18513,7 +18529,7 @@
 
 
 
-============================== table nb count(1223) table converted to MD ========================================
+============================== table nb count(1224) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT05E"></span>CFTT05E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Restart Failed<br/> CFTT05E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Restart Failed |
@@ -18524,7 +18540,7 @@
 
 
 
-============================== table nb count(1224) table converted to MD ========================================
+============================== table nb count(1225) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTT06W"></span>CFTT06W PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Partner switching IPART=&amp;part<br/> CFTT06W PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Partner switching IPART=&amp;part |
@@ -18534,7 +18550,7 @@
 
 
 
-============================== table nb count(1225) table converted to MD ========================================
+============================== table nb count(1226) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTT07W"></span>CFTT07W Ending Transfer Task &amp;n Failed _ A transfer Running<br/> CFTT07W Ending Transfer Task &amp;n Failed _ A transfer Running |
@@ -18543,7 +18559,7 @@
 
 
 
-============================== table nb count(1226) table converted to MD ========================================
+============================== table nb count(1227) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT08E"></span>CFTT08E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _No prot available<br/> CFTT08E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _No prot available |
@@ -18554,7 +18570,7 @@
 
 
 
-============================== table nb count(1227) table converted to MD ========================================
+============================== table nb count(1228) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTT09E"></span>CFTT09W PART=&amp;part IDF=&amp;idf IDT=&amp;idt PROT=&amp;prot _ Maximum cv affected<br/> CFTT09W PART=&amp;part IDF=&amp;idf IDT=&amp;idt PROT=&amp;prot _ Maximum cv affected |
@@ -18565,7 +18581,7 @@
 
 
 
-============================== table nb count(1228) table converted to MD ========================================
+============================== table nb count(1229) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT10E"></span>CFTT10E PART=&amp;part PROT=&amp;prot _ Protocol not authorized<br/> CFTT10E PART=&amp;part PROT=&amp;prot _ Protocol not authorized |
@@ -18576,7 +18592,7 @@
 
 
 
-============================== table nb count(1229) table converted to MD ========================================
+============================== table nb count(1230) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT11E"></span>CFTT11EPART=&amp;part PROT=&amp;prot CLASS=&amp;n _ &amp;net not found<br/> CFTT11EPART=&amp;part PROT=&amp;prot CLASS=&amp;n _ &amp;net not found |
@@ -18587,7 +18603,7 @@
 
 
 
-============================== table nb count(1230) table converted to MD ========================================
+============================== table nb count(1231) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTT12W"></span>CFTT12WPART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Out of time to call<br/> CFTT12WPART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Out of time to call |
@@ -18598,7 +18614,7 @@
 
 
 
-============================== table nb count(1231) table converted to MD ========================================
+============================== table nb count(1232) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT13I"></span>CFTT13IPART=&amp;part (IDF=&amp;idf IDM=&amp;idm) IDT=&amp;idt _ Session parameters PROT=&amp;prot SAP=&amp;sap DIALNUM(or HOST)= &amp;dialnum (or &amp;host)<br/> CFTT13IPART=&amp;part (IDF=&amp;idf IDM=&amp;idm) IDT=&amp;idt _ Session parameters PROT=&amp;prot SAP=&amp;sap DIALNUM(or HOST)= &amp;dialnum (or &amp;host) |
@@ -18607,7 +18623,7 @@
 
 
 
-============================== table nb count(1232) table converted to MD ========================================
+============================== table nb count(1233) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT14E"></span>CFTT14E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Not found<br/> CFTT14E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Not found |
@@ -18618,7 +18634,7 @@
 
 
 
-============================== table nb count(1233) table converted to MD ========================================
+============================== table nb count(1234) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT15E"></span>CFTT15E NPART=&amp;part _ Not found, possibly truncated to 24 characters<br/> CFTT15E NPART=&amp;part _ Not found, possibly truncated to 24 characters |
@@ -18629,7 +18645,7 @@
 
 
 
-============================== table nb count(1234) table converted to MD ========================================
+============================== table nb count(1235) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT16E"></span>CFTT16E PART=&amp;part IDF=&amp;idf _ No implicit send<br/> CFTT16E PART=&amp;part IDF=&amp;idf _ No implicit send |
@@ -18640,7 +18656,7 @@
 
 
 
-============================== table nb count(1235) table converted to MD ========================================
+============================== table nb count(1236) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT17I"></span>CFTT17I PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ STATE=HOLD<br/> CFTT17I PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ STATE=HOLD |
@@ -18650,7 +18666,7 @@
 
 
 
-============================== table nb count(1236) table converted to MD ========================================
+============================== table nb count(1237) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT18E"></span>CFTT18E PART=&amp;part IDF=&amp;idf CFTAUTH id=&amp;id _ Not found<br/> CFTT18E PART=&amp;part IDF=&amp;idf CFTAUTH id=&amp;id _ Not found |
@@ -18661,7 +18677,7 @@
 
 
 
-============================== table nb count(1237) table converted to MD ========================================
+============================== table nb count(1238) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT19E"></span>CFTT19E PART=&amp;part _ Invalid remote password &amp;str *<br/> CFTT19E PART=&amp;part _ Invalid remote password &amp;str * |
@@ -18672,7 +18688,7 @@
 
 
 
-============================== table nb count(1238) table converted to MD ========================================
+============================== table nb count(1239) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT20E"></span>CFTT20E PART=&amp;part _ PVC not allowed<br/> CFTT20E PART=&amp;part _ PVC not allowed |
@@ -18682,7 +18698,7 @@
 
 
 
-============================== table nb count(1239) table converted to MD ========================================
+============================== table nb count(1240) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT21E"></span>CFTT21E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Catalog access failed &amp;scs ,&amp;cr<br/> CFTT21E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Catalog access failed &amp;scs ,&amp;cr |
@@ -18693,7 +18709,7 @@
 
 
 
-============================== table nb count(1240) table converted to MD ========================================
+============================== table nb count(1241) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT22E"></span>CFTT22E &amp;str PART=&amp;part IDF=&amp;idf IDT=&amp;idt_ &amp;str<br/> CFTT22E _&amp;str &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; &amp;str |
@@ -18704,7 +18720,7 @@
 
 
 
-============================== table nb count(1241) table converted to MD ========================================
+============================== table nb count(1242) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT23E"></span>CFTT23E PART=&amp;part Shutdown in progress _ &amp;str<br/> CFTT23E PART=&amp;part Shutdown in progress _ &amp;str |
@@ -18713,7 +18729,7 @@
 
 
 
-============================== table nb count(1242) table converted to MD ========================================
+============================== table nb count(1243) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT24E"></span>CFTT24E PART=&amp;part PROT=&amp;prot _ Invalid call number &amp;n<br/> CFTT24E PART=&amp;part PROT=&amp;prot _ Invalid call number &amp;n |
@@ -18723,7 +18739,7 @@
 
 
 
-============================== table nb count(1243) table converted to MD ========================================
+============================== table nb count(1244) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT25E"></span>CFTT25E PART=&amp;part IDF=&amp;idf _ IDF not authorized<br/> CFTT25E PART=&amp;part IDF=&amp;idf _ IDF not authorized |
@@ -18734,7 +18750,7 @@
 
 
 
-============================== table nb count(1244) table converted to MD ========================================
+============================== table nb count(1245) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT26E"></span>CFTT26E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Max transfer tasks<br/> CFTT26E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Max transfer tasks |
@@ -18745,7 +18761,7 @@
 
 
 
-============================== table nb count(1245) table converted to MD ========================================
+============================== table nb count(1246) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT27E"></span>CFTT27E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Error &amp;scs writing starts<br/> CFTT27E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Error &amp;scs writing starts |
@@ -18756,7 +18772,7 @@
 
 
 
-============================== table nb count(1246) table converted to MD ========================================
+============================== table nb count(1247) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT28E"></span>CFTT28E No outgoing CV configured on Network<br/> CFTT28E No outgoing CV configured on Network |
@@ -18767,7 +18783,7 @@
 
 
 
-============================== table nb count(1247) table converted to MD ========================================
+============================== table nb count(1248) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT29E"></span>CFTT29E DEST= &amp;dest -Invalid use _Define for [BOTH/LOCAL/COMMUT] use only<br/> CFTT29E DEST= &amp;dest -Invalid use _Define for [BOTH/LOCAL/COMMUT] use only |
@@ -18776,7 +18792,7 @@
 
 
 
-============================== table nb count(1248) table converted to MD ========================================
+============================== table nb count(1249) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT30E"></span>CFTT30E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Max Exit tasks<br/> CFTT30E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Max Exit tasks |
@@ -18787,7 +18803,7 @@
 
 
 
-============================== table nb count(1249) table converted to MD ========================================
+============================== table nb count(1250) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTT31W"></span>CFTT31W Ending Exit Task &amp;n Failed _ A transfer Running<br/> CFTT31W Ending Exit Task &amp;n Failed _ A transfer Running |
@@ -18796,7 +18812,7 @@
 
 
 
-============================== table nb count(1250) table converted to MD ========================================
+============================== table nb count(1251) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT32E"></span>CFTT32E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Partner not found<br/> CFTT32E _ Partner not found &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -18807,7 +18823,7 @@
 
 
 
-============================== table nb count(1251) table converted to MD ========================================
+============================== table nb count(1252) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT33E"></span>CFTT33E PART = &amp;dest IDF = &amp;idf IDT = &amp;idt _ Illegal use of CFTDEST<br/> CFTT33E _ Illegal use of CFTDEST &lt;IDTU=&amp;idtu PART=&amp;part &amp;idf IDT=&amp;idt&gt; |
@@ -18818,7 +18834,7 @@
 
 
 
-============================== table nb count(1252) table converted to MD ========================================
+============================== table nb count(1253) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT34E"></span>CFTT34E PART = &amp;part IDF = &amp;idf _ &amp;cause<br/> CFTT34E _ &amp;cause&lt;IDTU=&amp;idtu PART = &amp;part IDF=&amp;idf&gt; |
@@ -18829,7 +18845,7 @@
 
 
 
-============================== table nb count(1253) table converted to MD ========================================
+============================== table nb count(1254) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTT35W"></span>CFTT35W PART=&amp;part IDF=&amp;idf IDT=&amp;idt DELETE file &amp;fname Failed _&amp;str<br/> CFTT35W DELETE file &amp;fname Failed _&amp;str &lt;IDTU=&amp;idtu PART = &amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -18839,7 +18855,7 @@
 
 
 
-============================== table nb count(1254) table converted to MD ========================================
+============================== table nb count(1255) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTT36W"></span>CFTT36W PART=&amp;part IDF=&amp;idf IDT=&amp;idt ERASE file &amp;fname Failed &amp;str<br/> CFTT36W ERASE file &amp;fname Failed &amp;str &lt;IDTU=&amp;idtu PART = &amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -18849,7 +18865,7 @@
 
 
 
-============================== table nb count(1255) table converted to MD ========================================
+============================== table nb count(1256) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT37I"></span>CFTT37I PART=&amp;part _ Not found and ignored for CFTDEST &amp;id<br/> CFTT37I _ Not found and ignored for CFTDEST &amp;id &lt;IDTU=&amp;idtu PART=&amp;part&gt; |
@@ -18858,7 +18874,7 @@
 
 
 
-============================== table nb count(1256) table converted to MD ========================================
+============================== table nb count(1257) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT38I"></span>CFTT38I PART=&amp;part _ Dynamic partner: &amp;npart<br/> CFTT38I _Dynamic partner: &amp;npart &lt; PART=&amp;part DIAG=&amp;diag&gt; |
@@ -18867,7 +18883,7 @@
 
 
 
-============================== table nb count(1257) table converted to MD ========================================
+============================== table nb count(1258) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT39E"></span>CFTT39E PART=&amp;part DIAG=&amp;diag _ Access Exit Connect Reject<br/> CFTT39E _ Access Exit Connect Reject &lt;PART=&amp;part DIAG=&amp;diag&gt; |
@@ -18877,7 +18893,7 @@
 
 
 
-============================== table nb count(1258) table converted to MD ========================================
+============================== table nb count(1259) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT40E"></span>CFTT40E PART=&amp;part DIAG=&amp;diag _ Access Exit Error<br/> CFTT40E _ Access Exit Error &lt;PART=&amp;part DIAG=&amp;diag&gt; |
@@ -18887,7 +18903,7 @@
 
 
 
-============================== table nb count(1259) table converted to MD ========================================
+============================== table nb count(1260) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT42E"></span>CFTT42E part&amp;PART=&lt;Partner switching IPART=PART not available<br/> CFTT42E _ Partner switching IPART=PART not available &lt;PART=&amp;part&gt; |
@@ -18896,7 +18912,7 @@
 
 
 
-============================== table nb count(1260) table converted to MD ========================================
+============================== table nb count(1261) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT44E"></span>CFTT44E PART=&amp;part IDF=&amp;idf _ &amp;str directory &amp;file<br/> CFTT44E _ &amp;str directory &amp;file &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf&gt; |
@@ -18906,7 +18922,7 @@
 
 
 
-============================== table nb count(1261) table converted to MD ========================================
+============================== table nb count(1262) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT44W"></span>CFTT44W PART=&amp;part IDF=&amp;idf _ &amp;str directory &amp;file (file not found ignored)<br/> CFTT44W _ &amp;str directory &amp;file &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf&gt; (file not found ignored) |
@@ -18917,7 +18933,7 @@
 
 
 
-============================== table nb count(1262) table converted to MD ========================================
+============================== table nb count(1263) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT45E"></span><br/> CFTT45E PART=&amp;part _ Partner switching IPART=&amp;ipart not found<br/> CFTT45E _ Partner switching not found &lt;PART=&amp;part IPART=&amp;ipart&gt; |
@@ -18927,7 +18943,7 @@
 
 
 
-============================== table nb count(1263) table converted to MD ========================================
+============================== table nb count(1264) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTT46W"></span>CFTT46W PART=&amp;part ,IDF=&amp;idf ,IDT=&amp;idt _ Part inactive: mode &amp;str<br/> CFTT46W _ Part inactive: mode &amp;str &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -18936,7 +18952,7 @@
 
 
 
-============================== table nb count(1264) table converted to MD ========================================
+============================== table nb count(1265) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT47E"></span>CFTT47E PART=&amp;part IDF=&amp;idf IDT=&amp;idt PROTOCOL=&amp;id _ Cannot find SSL security profil<br/> CFTT47E _ Cannot find SSL security profil &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt PROTOCOL=&amp;prot&gt; |
@@ -18946,7 +18962,7 @@
 
 
 
-============================== table nb count(1265) table converted to MD ========================================
+============================== table nb count(1266) table converted to MD ========================================
 
 
 | V23 formats<br /> Error  | <span id="CFTT47W"></span>CFTT47W PART=&amp;part IDF=&amp;idf IDT=&amp;idt PROTOCOL=&amp;prot SSLid=&amp;id DIRECT=CLIENT _ Cannot find SSL security profil<br/> CFTT47W PART=&amp;part SSLid=&amp;id DIRECT=SERVER _ No SSL security profile for additional checks |
@@ -18957,7 +18973,7 @@
 
 
 
-============================== table nb count(1266) table converted to MD ========================================
+============================== table nb count(1267) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT48E"></span>CFTT48E PART=&amp;part SSL=&amp;id _ Server Session rejected reason=&amp;reason<br/> CFTT48E _ Server Session rejected reason=&amp;reason &lt;PART=&amp;part SSL=&amp;ssl&gt; |
@@ -18968,7 +18984,7 @@
 
 
 
-============================== table nb count(1267) table converted to MD ========================================
+============================== table nb count(1268) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTT49W"></span>CFTT49W Unable to send data to Synchronous task<br/> CFTT49W Unable to send data to Synchronous task |
@@ -18977,7 +18993,7 @@
 
 
 
-============================== table nb count(1268) table converted to MD ========================================
+============================== table nb count(1269) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT50E"></span>CFTT50E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Duplicate transfer with IDTU=<br/> CFTT50E _ Duplicate transfer with IDTU=&amp;idtu &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -18986,7 +19002,7 @@
 
 
 
-============================== table nb count(1269) table converted to MD ========================================
+============================== table nb count(1270) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT51I"></span>CFTT51I PART=&amp;part ,&amp;str session opened<br/> CFTT51I PART=&amp;part ,&amp;str session opened |
@@ -18995,7 +19011,7 @@
 
 
 
-============================== table nb count(1270) table converted to MD ========================================
+============================== table nb count(1271) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT52I"></span>CFTT52I PART=&amp;part ,&amp;str session closed<br/> CFTT52I PART=&amp;part ,&amp;str session closed |
@@ -19004,7 +19020,7 @@
 
 
 
-============================== table nb count(1271) table converted to MD ========================================
+============================== table nb count(1272) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT53I"></span>CFTT53I PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;str file &amp;str1<br/> CFTT53I &amp;str file &amp;str1 &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -19013,7 +19029,7 @@
 
 
 
-============================== table nb count(1272) table converted to MD ========================================
+============================== table nb count(1273) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT54I"></span>CFTT54I PART=&amp;part IDF=&amp;idf IDT=&amp;idt ,&amp;str file deselected<br/> CFTT54I &amp;fname file deselected &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -19022,7 +19038,7 @@
 
 
 
-============================== table nb count(1273) table converted to MD ========================================
+============================== table nb count(1274) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT55I"></span>CFTT55I PART=&amp;part IDF=&amp;idf IDT=&amp;idt ,&amp;str file opened<br/> CFTT55I &amp;fname file opened &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -19031,7 +19047,7 @@
 
 
 
-============================== table nb count(1274) table converted to MD ========================================
+============================== table nb count(1275) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT56I"></span>CFTT56I PART=&amp;part IDF=&amp;idf IDT=&amp;idt ,&amp;str file closed<br/> CFTT56I &amp;fname file closed &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -19040,7 +19056,7 @@
 
 
 
-============================== table nb count(1275) table converted to MD ========================================
+============================== table nb count(1276) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT57I"></span>CFTT57I PART=&amp;part IDF=&amp;idf IDT=&amp;idt IDS=&amp;ids,&amp;str transfer started<br/> CFTT57I &amp;str transfer started &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt IDS=&amp;ids&gt; |
@@ -19049,7 +19065,7 @@
 
 
 
-============================== table nb count(1276) table converted to MD ========================================
+============================== table nb count(1277) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT58I"></span>CFTT58I PART=&amp;part IDF=&amp;idf IDT=&amp;idt IDS=&amp;ids,&amp;str transfer ended<br/> CFTT58I &amp;str transfer ended &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt IDS=&amp;ids&gt; |
@@ -19058,7 +19074,7 @@
 
 
 
-============================== table nb count(1277) table converted to MD ========================================
+============================== table nb count(1278) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT59I"></span>CFTT59I PART=&amp;part IDM=&amp;idf IDT=&amp;idt ,&amp;str &lt;message|reply&gt; transferred<br/> CFTT59I &amp;str &lt;message|reply&gt; transferred &lt;IDTU=&amp;idtu PART=&amp;part IDM=&amp;idm IDT=&amp;idt&gt; |
@@ -19067,7 +19083,7 @@
 
 
 
-============================== table nb count(1278) table converted to MD ========================================
+============================== table nb count(1279) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT60I"></span>CFTT60I &amp;str<br/> CFTT60I IDTU=&amp;idtu &amp;str |
@@ -19076,7 +19092,7 @@
 
 
 
-============================== table nb count(1279) table converted to MD ========================================
+============================== table nb count(1280) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT61E"></span>CFTT61E PART=&amp;part IDM=&amp;idf IDT=&amp;idt local message reject &amp;diagi ,&amp;diagp<br/> CFTT61E local message transfer reject &lt;IDTU=&amp;idtu PART=&amp;part IDM=&amp;idm IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
@@ -19087,7 +19103,7 @@
 
 
 
-============================== table nb count(1280) table converted to MD ========================================
+============================== table nb count(1281) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT62E"></span>CFTT62E PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp<br/> CFTT62E &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
@@ -19098,7 +19114,7 @@
 
 
 
-============================== table nb count(1281) table converted to MD ========================================
+============================== table nb count(1282) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT62E"></span><span id="CFTT63E"></span>CFTT63E IDTU=&amp;idtu MODE=&amp;str Transfer refused due to product key limitation until &amp;date<br/> CFTT63E _ Transfer refused due to product key limitation until &amp;date &lt;IDTU=&amp;idtu MODE=&amp;mode&gt; |
@@ -19107,7 +19123,7 @@
 
 
 
-============================== table nb count(1282) table converted to MD ========================================
+============================== table nb count(1283) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT64E"></span>CFTT64E PART=&amp;part IDF=&amp;idf _ Flow does not exist and cft.default_idf.enable is set to 'no'<br/> CFTT64E _ Flow does not exist and cft.default_idf.enable is set to 'no' &lt;PART=&amp;part IDF=&amp;idf&gt; |
@@ -19118,7 +19134,7 @@
 
 
 
-============================== table nb count(1283) table converted to MD ========================================
+============================== table nb count(1284) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT65E"></span>CFTT65E PART=&amp;part IDF=&amp;idf IDT=&amp;idt PROT=&amp;prot _ Protocol not available<br/> CFTT65E _ PROT=&amp;prot not available &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -19129,7 +19145,7 @@
 
 
 
-============================== table nb count(1284) table converted to MD ========================================
+============================== table nb count(1285) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT66E"></span>CFTT66E Maximum number of partners authorized by license key reached (using PART=&amp;part)<br/> CFTT66E Maximum number of partners authorized by license key reached (using PART=&amp;part) |
@@ -19140,7 +19156,7 @@
 
 
 
-============================== table nb count(1285) table converted to MD ========================================
+============================== table nb count(1286) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT66E"></span>CFTT68E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Unexpected AT phase/phasestep at restart, converting T to K<br/> CFTT68E _ Unexpected AT phase/phasestep at restart, converting T to K &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -19151,7 +19167,7 @@
 
 
 
-============================== table nb count(1286) table converted to MD ========================================
+============================== table nb count(1287) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT69E"></span>CFTT69E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Unexpected YE phase/phasestep at restart, converting E to H<br/> CFTT69E _ Unexpected YE phase/phasestep at restart, converting E to H IDTU=&amp;idtu, PART=&amp;part, IDF=&amp;idf, IDT=&amp;idt |
@@ -19162,7 +19178,7 @@
 
 
 
-============================== table nb count(1287) table converted to MD ========================================
+============================== table nb count(1288) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTT70I"></span>CFTT70I The user &amp;user is connecting with method &amp;method<br/> CFTT70I The user &amp;user is connecting with method &amp;method |
@@ -19171,7 +19187,7 @@
 
 
 
-============================== table nb count(1288) table converted to MD ========================================
+============================== table nb count(1289) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTT70E"></span>CFTT70E The user &amp;user is not allowed to connect to the server<br/> CFTT70E The user &amp;user is not allowed to connect to the server |
@@ -19181,7 +19197,7 @@
 
 
 
-============================== table nb count(1289) table converted to MD ========================================
+============================== table nb count(1290) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT71E"></span>CFTT71E PART=&amp;part IDF=&amp;idf IDT=&amp;idt remote creation reject &amp;diagi ,&amp;diagp<br/> CFTT71E remote creation reject &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
@@ -19192,7 +19208,7 @@
 
 
 
-============================== table nb count(1290) table converted to MD ========================================
+============================== table nb count(1291) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT72E"></span>CFTT72E PART=&amp;part IDF=&amp;idf IDT=&amp;idt remote selection reject &amp;diagi ,&amp;diagp<br/> CFTT72E remote selection reject &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
@@ -19203,7 +19219,7 @@
 
 
 
-============================== table nb count(1291) table converted to MD ========================================
+============================== table nb count(1292) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT72W"></span>CFTT72W PART=&amp;part IDF=&amp;idf IDT=&amp;idt remote selection reject (file not found ignored) &amp;diagi ,&amp;diagp,<br/> CFTT72W remote selection reject (file not found ignored) &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp |
@@ -19213,7 +19229,7 @@
 
 
 
-============================== table nb count(1292) table converted to MD ========================================
+============================== table nb count(1293) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT73E"></span><br/> CFTT72E PART=&amp;part IDF=&amp;idf IDT=&amp;idt remote selection reject &amp;diagi ,&amp;diagp<br/> CFTT72E remote selection reject &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp |
@@ -19223,7 +19239,7 @@
 
 
 
-============================== table nb count(1293) table converted to MD ========================================
+============================== table nb count(1294) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT73E"></span>CFTT73E PART=&amp;part IDM=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp<br/> CFTT73E &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
@@ -19234,7 +19250,7 @@
 
 
 
-============================== table nb count(1294) table converted to MD ========================================
+============================== table nb count(1295) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT74E"></span>CFTT74E PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp<br/> CFTT74E &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
@@ -19245,7 +19261,7 @@
 
 
 
-============================== table nb count(1295) table converted to MD ========================================
+============================== table nb count(1296) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT75E"></span>CFTT75E PART=&amp;part IDF=&amp;idf IDT=&amp;idt connect reject &amp;diagi ,&amp;diagp<br/> CFTT75E connect reject &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
@@ -19256,7 +19272,7 @@
 
 
 
-============================== table nb count(1296) table converted to MD ========================================
+============================== table nb count(1297) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | CFTT75E Incorrect user or password &lt;IDTU=&amp;idtuPART=&amp;part IDF=&amp;idf IDT=&amp;idf DIAGI=&amp;diagi&gt;<br/> CFTT75E Incorrect user or password &lt;IDTU=&amp;idtuPART=&amp;part IDF=&amp;idf IDT=&amp;idf DIAGI=&amp;diagi&gt; &lt;/p&gt; |
@@ -19266,7 +19282,7 @@
 
 
 
-============================== table nb count(1297) table converted to MD ========================================
+============================== table nb count(1298) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT76E"></span>CFTT76E PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp<br/> CFTT76E &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
@@ -19277,7 +19293,7 @@
 
 
 
-============================== table nb count(1298) table converted to MD ========================================
+============================== table nb count(1299) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT77E"></span>CFTT77E PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp<br/> CFTT77E &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
@@ -19288,7 +19304,7 @@
 
 
 
-============================== table nb count(1299) table converted to MD ========================================
+============================== table nb count(1300) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT78E"></span>CFTT78E PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp<br/> CFTT78E &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
@@ -19299,7 +19315,7 @@
 
 
 
-============================== table nb count(1300) table converted to MD ========================================
+============================== table nb count(1301) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT79E"></span>CFTT79E PART=&amp;part IDF=&amp;idf IDT=&amp;idt remote deselect reject &amp;diagi ,&amp;diagp<br/> CFTT79E remote deselect reject &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
@@ -19310,7 +19326,7 @@
 
 
 
-============================== table nb count(1301) table converted to MD ========================================
+============================== table nb count(1302) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT80E"></span>CFTT80E PART=&amp;part IDF=&amp;idf IDT=&amp;idt remote open reject &amp;diagi ,&amp;diagp<br/> CFTT80E remote open reject &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
@@ -19321,7 +19337,7 @@
 
 
 
-============================== table nb count(1302) table converted to MD ========================================
+============================== table nb count(1303) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT81E"></span>CFTT81E PART=&amp;part IDF=&amp;idf IDT=&amp;idt remote close reject &amp;diagi ,&amp;diagp<br/> CFTT81E remote close reject &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
@@ -19332,7 +19348,7 @@
 
 
 
-============================== table nb count(1303) table converted to MD ========================================
+============================== table nb count(1304) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT82E"></span>CFTT82E PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt transfer aborted &amp;diagi ,&amp;diagp<br/> CFTT82E transfer aborted &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
@@ -19343,7 +19359,7 @@
 
 
 
-============================== table nb count(1304) table converted to MD ========================================
+============================== table nb count(1305) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT82W"></span>CFTT82W PART=&amp;part IDF=&amp;idf IDT=&amp;idt transfer aborted (file not found ignored) &amp;diagi ,&amp;diagp<br/> CFTT82W transfer aborted (file not found ignored) &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
@@ -19354,7 +19370,7 @@
 
 
 
-============================== table nb count(1305) table converted to MD ========================================
+============================== table nb count(1306) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT83I"></span>CFTT83I PART=&amp;part IDF=&amp;idf IDT=&amp;idt change direction(CD) for request<br/> CFTT83I change direction(CD) for request &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt&gt; |
@@ -19363,7 +19379,7 @@
 
 
 
-============================== table nb count(1306) table converted to MD ========================================
+============================== table nb count(1307) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT86I"></span>CFTT86I PART=&amp;part IDS=&amp;ids Change direction(TURN) sent<br/> CFTT86I Change direction(TURN) sent &lt;PART=&amp;part IDS=&amp;ids&gt; |
@@ -19372,7 +19388,7 @@
 
 
 
-============================== table nb count(1307) table converted to MD ========================================
+============================== table nb count(1308) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | CFTT86I FNAME=&amp;fname S=ByteCount<br/> CFTT86I FNAME=&amp;fname S=ByteCount |
@@ -19381,7 +19397,7 @@
 
 
 
-============================== table nb count(1308) table converted to MD ========================================
+============================== table nb count(1309) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT87I"></span>CFTT87I PART=&amp;part IDS=&amp;ids Change direction(TURN) received<br/> CFTT87I Change direction(TURN) received&lt;PART=&amp;part IDS=&amp;ids&gt; |
@@ -19390,7 +19406,7 @@
 
 
 
-============================== table nb count(1309) table converted to MD ========================================
+============================== table nb count(1310) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT88I"></span>CFTT88I+IDT=&amp;idt WORKINGDIR=&amp;workingdir FNAME=&amp;fname NBC=&amp;n DURATION=&amp;time<br/> CFTT88I+&lt;IDTU=&amp;idtu WORKINGDIR=&amp;workingdir FNAME=&amp;fname NBC=&amp;n DURATION==&amp;time&gt; |
@@ -19399,7 +19415,7 @@
 
 
 
-============================== table nb count(1310) table converted to MD ========================================
+============================== table nb count(1311) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT89I"></span>CFTT89I PART=&amp;part IDF=&amp;idf IDT=&amp;idt Faction on FNAME=&amp;fname : &amp;str+"deleted" or "erased"<br/> CFTT89I Faction on FNAME=&amp;fname : &amp;str+"deleted" or "erased" &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
@@ -19410,7 +19426,7 @@
 
 
 
-============================== table nb count(1311) table converted to MD ========================================
+============================== table nb count(1312) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTT90W"></span>CFTT90W IDF=&amp;idf IDT=&amp;idt Faction on FNAME=&amp;fname : erase failed cs<br/> CFTT90W IDF=&amp;idf IDT=&amp;idt Faction on FNAME=&amp;fname : erase failed &amp;scs |
@@ -19422,7 +19438,7 @@
 
 
 
-============================== table nb count(1312) table converted to MD ========================================
+============================== table nb count(1313) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTT91W"></span>CFTT91W PART=&amp;part IDS=&amp;ids Change direction(TURN) not supported by server<br/> CFTT91W Change direction (TURN) not supported by server PART=DMZ1 IDS=&amp;ids |
@@ -19432,7 +19448,7 @@
 
 
 
-============================== table nb count(1313) table converted to MD ========================================
+============================== table nb count(1314) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT93W"></span> CFTT92I IDTU=&amp;idtu CTX=&amp;ctx IDT=&amp;idt<br/> CFTT92I &lt;IDTU=&amp;idtu CTX=&amp;ctx IDT=&amp;idt&gt; |
@@ -19441,7 +19457,7 @@
 
 
 
-============================== table nb count(1314) table converted to MD ========================================
+============================== table nb count(1315) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTT93W"></span>CFTT93W PART=&amp;part IDS=&amp;ids Negative ack not supported<br/> CFTT93W Negative ack not supported PART=&amp;part IDS=&amp;ids |
@@ -19450,7 +19466,7 @@
 
 
 
-============================== table nb count(1315) table converted to MD ========================================
+============================== table nb count(1316) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTT94I"></span>CFTT94I PART=&amp;part IDF=&amp;idf IDT=&amp;idt FCHARSET=&amp;str NCHARSET=&amp;str<br/> CFTT94I &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt FCHARSET=&amp;str NCHARSET=&amp;str&gt; |
@@ -19459,7 +19475,7 @@
 
 
 
-============================== table nb count(1316) table converted to MD ========================================
+============================== table nb count(1317) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTT95E"></span>CFTT95E Incorrect user or password &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idtf DIAGI=&amp;diagi&gt;<br/> CFTT95E Incorrect user or password &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt DIAGI=&amp;diagi&gt; |
@@ -19469,7 +19485,7 @@
 
 
 
-============================== table nb count(1317) table converted to MD ========================================
+============================== table nb count(1318) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTT96I"></span> CFTT96I &amp;str transfer restarted &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt POS=&amp;pos IDS=&amp;ids&gt;<br/> CFTT96I &amp;str transfer restarted &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt POS=&amp;pos IDS=&amp;ids&gt; |
@@ -19478,7 +19494,7 @@
 
 
 
-============================== table nb count(1318) table converted to MD ========================================
+============================== table nb count(1319) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT97E"></span>CFTT97E cmd prefix not allowed in procedure execution for SEND and RECV commands",<br/> CFTT97E cmd prefix not allowed in procedure execution for SEND and RECV commands |
@@ -19487,7 +19503,7 @@
 
 
 
-============================== table nb count(1319) table converted to MD ========================================
+============================== table nb count(1320) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT98W"></span>CFTT98W PART=%-8.8s IDF=%-8.8s IDT=%.8s Rename ignored because WFNAME equals FNAME,<br/> CFTT98W Rename ignored because WFNAME equals FNAME &lt;IDTU=%.8s PART=%s IDF=%s IDT=%.8s&gt; |
@@ -19496,7 +19512,7 @@
 
 
 
-============================== table nb count(1320) table converted to MD ========================================
+============================== table nb count(1321) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTW01W"></span>CFTW01W PART=&amp;part IDF=&amp;idf IDT=&amp;idt Temporary file &amp;file deleted<br/> CFTW01W File &amp;fname deleted &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &gt; |
@@ -19505,7 +19521,7 @@
 
 
 
-============================== table nb count(1321) table converted to MD ========================================
+============================== table nb count(1322) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTW02W"></span>CFTW02W CFTSEND &amp;idsend override SEND parameters<br/> CFTW02W CFTSEND &amp;id override SEND parameters |
@@ -19514,7 +19530,7 @@
 
 
 
-============================== table nb count(1322) table converted to MD ========================================
+============================== table nb count(1323) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTW03W"></span>CFTW03W _ Send command: Unauthorized usage of IDF = &amp;idf<br/> CFTW03W _ Send Command : Unauthorized usage on IDF = &amp;id |
@@ -19523,7 +19539,7 @@
 
 
 
-============================== table nb count(1323) table converted to MD ========================================
+============================== table nb count(1324) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTW04W"></span>CFTW04W _ Recv command: Unauthorized usage on IDF = &amp;idf<br/> CFTW04W _ Recv Command : Unauthorized usage on IDF = &amp;id |
@@ -19532,7 +19548,7 @@
 
 
 
-============================== table nb count(1324) table converted to MD ========================================
+============================== table nb count(1325) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTW05W"></span>CFTW05W PART=&amp;part IDF = &amp;idf Temporary file unknown, WFNAME not defined in SEND<br/> CFTW05W PART=&amp;part IDF=&amp;idf Temporary file unknown, WFNAME not defined in SEND |
@@ -19542,7 +19558,7 @@
 
 
 
-============================== table nb count(1325) table converted to MD ========================================
+============================== table nb count(1326) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTW07W"></span>CFTW07W PART=&amp;part IDF = &amp;idf _ SELFNAME not authorized for COPY<br/> CFTW07W PART=&amp;par IDF=&amp;idf _ SELFNAME not authorized for COPY\n |
@@ -19553,7 +19569,7 @@
 
 
 
-============================== table nb count(1326) table converted to MD ========================================
+============================== table nb count(1327) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTW08W"></span>CFTW08W CFTRECV &amp;idrecv override RECV parameters<br/> CFTW08W CFTRECV &amp;id override RECV parameters |
@@ -19562,7 +19578,7 @@
 
 
 
-============================== table nb count(1327) table converted to MD ========================================
+============================== table nb count(1328) table converted to MD ========================================
 
 
 | V23 format<br/> <br/> V24 format<br/> <br/> Information | <span id="CFTW09I"></span>CFTW09I PART=&amp;part IDF=&amp;idf IDT=&amp;idt CFTSEND &amp;idf NIDF=&amp;nidf XLATE=&amp;xlate<br/> CFTW09I PART=&amp;part IDF=&amp;idf IDT=&amp;idt CFTRECV &amp;idf NIDF=&amp;nidf XLATE=&amp;xlate<br/> CFTW09I CFTSEND &amp;idf &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt NIDF=&amp;nidf XLATE=&amp;xlate&gt;<br/> CFTW09I CFTRECV &amp;idf &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt NIDF=&amp;nidf XLATE=&amp;xlate&gt; |
@@ -19571,7 +19587,7 @@
 
 
 
-============================== table nb count(1328) table converted to MD ========================================
+============================== table nb count(1329) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTX01W"></span>CFTX01W Action &amp;action on object &amp;object not authorized for user &amp;user : ID CFTAPPL=&amp;id CFTX01W Action &amp;action on object &amp;object not authorized for user &amp;user : ID CFTAPPL=&amp;id |
@@ -19580,7 +19596,7 @@
 
 
 
-============================== table nb count(1329) table converted to MD ========================================
+============================== table nb count(1330) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTX02W"></span>CFTX02W owner user is &amp;user, owner group is &amp;group<br/> CFTX02W owner user is &amp;user, owner group is &amp;group |
@@ -19589,7 +19605,7 @@
 
 
 
-============================== table nb count(1330) table converted to MD ========================================
+============================== table nb count(1331) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTX03W"></span>CFTX03W Action &amp;action on object &amp;object not authorized for user &amp;user<br/> CFTX03W+Action &amp;action on object &amp;object not authorized for user &amp;user |
@@ -19598,7 +19614,7 @@
 
 
 
-============================== table nb count(1331) table converted to MD ========================================
+============================== table nb count(1332) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTX04W"></span>CFTX04W With value &amp;value<br/> CFTX04W+with value &amp;value |
@@ -19607,7 +19623,7 @@
 
 
 
-============================== table nb count(1332) table converted to MD ========================================
+============================== table nb count(1333) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTX05W"></span>CFTX05W Action &amp;action on object &amp;object not authorized for user &amp;user: FNAME=&amp;fname<br/> CFTX05W Action &amp;action on object &amp;object not authorized for user &amp;user : FNAME=&amp;fname |
@@ -19616,7 +19632,7 @@
 
 
 
-============================== table nb count(1333) table converted to MD ========================================
+============================== table nb count(1334) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTX10I"></span>CFTX10I Warning : security file commands were modified CFTX10I Warning : security file commands were modified |
@@ -19627,7 +19643,7 @@
 
 
 
-============================== table nb count(1334) table converted to MD ========================================
+============================== table nb count(1335) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY03E"></span>CFTY03E PID=&amp;pid System error [&amp;string] CR=&amp;cr CS=&amp;cs<br/> CFTY03E PID=&amp;pid System error [&amp;string] CR=&amp;cr CS=&amp;cs |
@@ -19649,7 +19665,7 @@
 
 
 
-============================== table nb count(1335) table converted to MD ========================================
+============================== table nb count(1336) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY04E"></span>CFTY04E PID=&amp;pid PKIFNAME=&amp;string Internal PKI error [&amp;string] CR=&amp;cr<br/> CS=&amp;cs CFTY04E PID=&amp;pid PKIFNAME=&amp;string Internal PKI error [&amp;string] CR=&amp;cr CS=&amp;cs |
@@ -19667,7 +19683,7 @@
 
 
 
-============================== table nb count(1336) table converted to MD ========================================
+============================== table nb count(1337) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY05E"></span>CFTY05E PID=&amp;pid PKIFNAME=&amp;file Syntax error _ &amp;string<br/> CFTY05E PID=&amp;pid PKIFNAME=&amp;file Syntax error _ &amp;string |
@@ -19678,7 +19694,7 @@
 
 
 
-============================== table nb count(1337) table converted to MD ========================================
+============================== table nb count(1338) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY06E"></span>CFTY06E CTX=&amp;ctx Certificate Request Message error _ &amp;string<br/> CFTY06E CTX=&amp;ctx Certificate Request Message error _ &amp;string |
@@ -19704,7 +19720,7 @@
 
 
 
-============================== table nb count(1338) table converted to MD ========================================
+============================== table nb count(1339) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY08I"></span>CFTY08I PID=&amp;pid Task started successfully<br/> CFTY08I PID=&amp;pid Task started successfully |
@@ -19713,7 +19729,7 @@
 
 
 
-============================== table nb count(1339) table converted to MD ========================================
+============================== table nb count(1340) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY09I"></span>CFTY09I PID=&amp;pid Task ended<br/> CFTY09I PID=&amp;pid Task ended |
@@ -19722,7 +19738,7 @@
 
 
 
-============================== table nb count(1340) table converted to MD ========================================
+============================== table nb count(1341) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY10E"></span>CFTY10E PID=&amp;pid CTX=&amp;ctx Invalid reference on &amp;string<br/> CFTY10E PID=&amp;pid CTX=&amp;ctx Invalid reference on &amp;string |
@@ -19732,7 +19748,7 @@
 
 
 
-============================== table nb count(1341) table converted to MD ========================================
+============================== table nb count(1342) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY11I"></span>CFTY11I CTX=&amp;ctx PART=&amp;id SSL=&amp;id Closing client SSL session<br/> CFTY11I CTX=&amp;ctx PART=&amp;id SSL=&amp;id Closing client SSL session |
@@ -19741,7 +19757,7 @@
 
 
 
-============================== table nb count(1342) table converted to MD ========================================
+============================== table nb count(1343) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY12I"></span>CFTY12I CTX=&amp;ctx PROT=&amp;id SSL=&amp;id Closing server SSL session<br/> CFTY12I CTX=&amp;ctx PROT=&amp;id SSL=&amp;id Closing server SSL session |
@@ -19750,7 +19766,7 @@
 
 
 
-============================== table nb count(1343) table converted to MD ========================================
+============================== table nb count(1344) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY13E"></span>CFTY13E CTX=&amp;ctx SSL Handshake local error [&amp;string] CR=&amp;cr<br/> CFTY13E CTX=&amp;ctx SSL Handshake local error [&amp;string] CR=&amp;cr |
@@ -19761,7 +19777,7 @@
 
 
 
-============================== table nb count(1344) table converted to MD ========================================
+============================== table nb count(1345) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY14I"></span>CFTY14I CTX=&amp;ctx PART=&amp;id SSL=&amp;id client session established VERSION=&amp;ver CIPHER=&amp;num AUTH=&amp;mode CFTY14I CTX=&amp;ctx PART=&amp;id SSL=&amp;id client session established VERSION=&amp;ver CIPHER=&amp;num AUTH=&amp;mode<br/>  |
@@ -19770,7 +19786,7 @@
 
 
 
-============================== table nb count(1345) table converted to MD ========================================
+============================== table nb count(1346) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY15I"></span>CFTY15I CTX=&amp;ctx PROT=&amp;id SSL=&amp;id server session established VERSION=&amp;ver CIPHER=&amp;num AUTH=&amp;mode CFTY15I CTX=&amp;ctx PROT=&amp;id SSL=&amp;id server session established VERSION=&amp;ver CIPHER=&amp;num AUTH=&amp;mode |
@@ -19779,7 +19795,7 @@
 
 
 
-============================== table nb count(1346) table converted to MD ========================================
+============================== table nb count(1347) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY16I"></span>CFTY16I CTX=&amp;ctx &amp;message<br/> CFTY16I CTX=&amp;ctx &amp;message |
@@ -19788,7 +19804,7 @@
 
 
 
-============================== table nb count(1347) table converted to MD ========================================
+============================== table nb count(1348) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY17I"></span>CFTY17I CTX=&amp;ctx &amp;msg<br/> CFTY17I CTX=&amp;ctx &amp;msg |
@@ -19797,7 +19813,7 @@
 
 
 
-============================== table nb count(1348) table converted to MD ========================================
+============================== table nb count(1349) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY18E"></span>CFTY18E CTX=&amp;ctx &amp;str<br/> CFTY18E CTX=&amp;ctx &amp;str |
@@ -19808,7 +19824,7 @@
 
 
 
-============================== table nb count(1349) table converted to MD ========================================
+============================== table nb count(1350) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY19I"></span>CFTY19I PART=&amp;id SSL=&amp;id opening client session CTX=&amp;ctx on task PID=&amp;pid<br/> CFTY19I PART=&amp;id SSL=&amp;id opening client session CTX=&amp;ctx on task PID=&amp;pid |
@@ -19817,7 +19833,7 @@
 
 
 
-============================== table nb count(1350) table converted to MD ========================================
+============================== table nb count(1351) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY20I"></span> CFTY20I PROT=&amp;id SSL=&amp;id opening server session CTX=&amp;ctx on task PID=&amp;pid<br/> CFTY20I PROT=&amp;id SSL=&amp;id opening server session CTX=&amp;ctx on task PID=&amp;pid |
@@ -19826,7 +19842,7 @@
 
 
 
-============================== table nb count(1351) table converted to MD ========================================
+============================== table nb count(1352) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY21I"></span>CFTY21I CTX=&amp;ctx Remote server certificate accepted<br/> CFTY21I CTX=&amp;ctx Remote server certificate accepted |
@@ -19835,7 +19851,7 @@
 
 
 
-============================== table nb count(1352) table converted to MD ========================================
+============================== table nb count(1353) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY22I"></span>CFTY22I CTX=&amp;ctx Remote client certificate accepted<br/> CFTY22I CTX=&amp;ctx Remote client certificate accepted |
@@ -19844,7 +19860,7 @@
 
 
 
-============================== table nb count(1353) table converted to MD ========================================
+============================== table nb count(1354) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY23I"></span>CFTY23I CTX=&amp;ctx Client certificate ID=&amp;id ROOTID=&amp;id<br/> CFTY23I CTX=&amp;ctx Client certificate ID=&amp;id ROOTID=&amp;id |
@@ -19853,7 +19869,7 @@
 
 
 
-============================== table nb count(1354) table converted to MD ========================================
+============================== table nb count(1355) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY24I"></span>CFTY24I CTX=&amp;ctx Server certificate ID=&amp;id ROOTID=&amp;id<br/> CFTY24I CTX=&amp;ctx Server certificate ID=&amp;id ROOTID=&amp;id |
@@ -19862,7 +19878,7 @@
 
 
 
-============================== table nb count(1355) table converted to MD ========================================
+============================== table nb count(1356) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY25I"></span>CFTY25I CTX=&amp;ctx remote address HOST=&amp;string<br/> CFTY25I CTX=&amp;ctx remote address HOST=&amp;string |
@@ -19871,7 +19887,7 @@
 
 
 
-============================== table nb count(1356) table converted to MD ========================================
+============================== table nb count(1357) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY26I"></span>CFTY26I CTX=&amp;ctx Anonymous &amp;str session<br/> CFTY26I CTX=&amp;ctx Anonymous &amp;str session |
@@ -19880,7 +19896,7 @@
 
 
 
-============================== table nb count(1357) table converted to MD ========================================
+============================== table nb count(1358) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY28W"></span>CFTY28W CTX=&amp;ctx &amp;str2 = &amp;filename<br/> CFTY28W CTX=&amp;ctx &amp;str2 = &amp;filename |
@@ -19891,7 +19907,7 @@
 
 
 
-============================== table nb count(1358) table converted to MD ========================================
+============================== table nb count(1359) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY30E"></span>CFTY30E CTX=&amp;ctx SSL Handshake remote error [&amp;string] CR=&amp;cr<br/> CFTY30E CTX=&amp;ctx SSL Handshake remote error [&amp;string] CR=&amp;cr |
@@ -19902,7 +19918,7 @@
 
 
 
-============================== table nb count(1359) table converted to MD ========================================
+============================== table nb count(1360) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY41E"></span>CFTY41E CFTCTX=&lt;session_reference&gt;, xpp call &lt;PassportPS_API_function&gt;: error [&lt;PassportPS_API_function_returncode&gt;]<br/> CFTY41E CFTCTX=&lt;session_reference&gt;, xpp call &lt;PassportPS_API_function&gt;: error [&lt;PassportPS_API_function_returncode&gt;] |
@@ -19911,7 +19927,7 @@
 
 
 
-============================== table nb count(1360) table converted to MD ========================================
+============================== table nb count(1361) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY44E"></span>CFTY44E CFTCTX=&lt;session_reference&gt;, long err msg : [&lt;PassportPS_API_error_code&gt;]  |
@@ -19920,7 +19936,7 @@
 
 
 
-============================== table nb count(1361) table converted to MD ========================================
+============================== table nb count(1362) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY45E"></span>CFTY45E CFTCTX=&lt;session_reference&gt;, &lt;PassportPS_API_error_message&gt;  |
@@ -19929,7 +19945,7 @@
 
 
 
-============================== table nb count(1362) table converted to MD ========================================
+============================== table nb count(1363) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY50I"></span>CFTY50I SSH client session established CTX=&amp;ctx PART=&amp;part Version=&amp;version Cipher in=&amp;cipher Cipher out=&amp;cipher Key exchange=&amp;key hmac in=&amp;hmac hmac out=&amp;hmac &amp;IPVersion<br/> CFTY50I SSH client session established CTX=&amp;ctx PART=&amp;part Version=&amp;version Cipher in=&amp;cipher Cipher out=&amp;cipher Key exchange=&amp;key hmac in=&amp;hmac hmac out=&amp;hmac |
@@ -19938,7 +19954,7 @@
 
 
 
-============================== table nb count(1363) table converted to MD ========================================
+============================== table nb count(1364) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY51I"></span>CFTY51I SSH server session established CTX=&amp;ctx PART=&amp;part Version=&amp;version Cipher in=&amp;cipher Cipher out=&amp;cipher Key exchange=&amp;key hmac in=&amp;hmac hmac out=&amp;hmac &amp;IPVersion<br/> CFTY51I SSH server session established CTX=&amp;ctx PROT=&amp;prot Version=&amp;version Cipher in=&amp;cipher Cipher out=&amp;cipher Key exchange=&amp;key hmac in=&amp;hmac hmac out=&amp;hmac |
@@ -19947,7 +19963,7 @@
 
 
 
-============================== table nb count(1364) table converted to MD ========================================
+============================== table nb count(1365) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY52I"></span>CFTY52I SFTP client session established CTX=&amp;ctx PART=&amp;part Version=&amp;version Authentication=&amp;authentication CFT Server=&amp;server<br/> CFTY52I SFTP client session established CTX=&amp;ctx PART=&amp;part Version=&amp;version Authentication=&amp;authentication CFT Server=&amp;server |
@@ -19956,7 +19972,7 @@
 
 
 
-============================== table nb count(1365) table converted to MD ========================================
+============================== table nb count(1366) table converted to MD ========================================
 
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY53I"></span>CFTY53I SFTP server session established CTX=&amp;ctx PROT=&amp;prot Version=&amp;version Authentication=&amp;authentication CFT Client=&amp;client<br/> CFTY53I SFTP server session established CTX=&amp;ctx PROT=&amp;prot Version=&amp;version Authentication=&amp;authentication CFT Client=&amp;client |
@@ -19965,7 +19981,7 @@
 
 
 
-============================== table nb count(1366) table converted to MD ========================================
+============================== table nb count(1367) table converted to MD ========================================
 
 
 | Error | <span id="CFTU00I"></span>CFTU00I: &amp;Cmd _ Correct (&amp;str) |
@@ -19974,7 +19990,7 @@
 
 
 
-============================== table nb count(1367) table converted to MD ========================================
+============================== table nb count(1368) table converted to MD ========================================
 
 
 | Error | <span id="CFTU01E"></span>CFTU01E: storage allocation error |
@@ -19985,7 +20001,7 @@
 
 
 
-============================== table nb count(1368) table converted to MD ========================================
+============================== table nb count(1369) table converted to MD ========================================
 
 
 | Error | <span id="CFTU02E"></span>CFTU02E: unable to allocate file &amp;Fname |
@@ -19996,7 +20012,7 @@
 
 
 
-============================== table nb count(1369) table converted to MD ========================================
+============================== table nb count(1370) table converted to MD ========================================
 
 
 | Error | <span id="CFTU03E"></span>CFTU03E: unable to open file &amp;Fname |
@@ -20007,7 +20023,7 @@
 
 
 
-============================== table nb count(1370) table converted to MD ========================================
+============================== table nb count(1371) table converted to MD ========================================
 
 
 | Error | <span id="CFTU04E"></span>CFTU04E: error reading input file &amp;Fname |
@@ -20018,7 +20034,7 @@
 
 
 
-============================== table nb count(1371) table converted to MD ========================================
+============================== table nb count(1372) table converted to MD ========================================
 
 
 | Error | <span id="CFTU05E"></span>CFTU05E: &amp;Cmd Failed _ Unexpected end of file (command) |
@@ -20029,7 +20045,7 @@
 
 
 
-============================== table nb count(1372) table converted to MD ========================================
+============================== table nb count(1373) table converted to MD ========================================
 
 
 | Error | <span id="CFTU06E"></span>CFTU06E: unexpected end of file before new command |
@@ -20040,7 +20056,7 @@
 
 
 
-============================== table nb count(1373) table converted to MD ========================================
+============================== table nb count(1374) table converted to MD ========================================
 
 
 | Error | <span id="CFTU07E"></span>CFTU07E: &amp;Cmd Failed _ unexpected end of file (comments) |
@@ -20051,7 +20067,7 @@
 
 
 
-============================== table nb count(1374) table converted to MD ========================================
+============================== table nb count(1375) table converted to MD ========================================
 
 
 | Error | <span id="CFTU08E"></span>CFTU08E: &amp;Cmd Failed _ missing parenthesis |
@@ -20062,7 +20078,7 @@
 
 
 
-============================== table nb count(1375) table converted to MD ========================================
+============================== table nb count(1376) table converted to MD ========================================
 
 
 | Error | <span id="CFTU09E"></span>CFTU09E: &amp;Cmd Failed _ command size too large |
@@ -20073,7 +20089,7 @@
 
 
 
-============================== table nb count(1376) table converted to MD ========================================
+============================== table nb count(1377) table converted to MD ========================================
 
 
 | Error | <span id="CFTU10E"></span>CFTU10E: &amp;Cmd Failed _ unknown command |
@@ -20084,7 +20100,7 @@
 
 
 
-============================== table nb count(1377) table converted to MD ========================================
+============================== table nb count(1378) table converted to MD ========================================
 
 
 | Error | <span id="CFTU11E"></span>CFTU11E: &amp;Cmd Failed _ keyword &amp;Keyw too large |
@@ -20095,7 +20111,7 @@
 
 
 
-============================== table nb count(1378) table converted to MD ========================================
+============================== table nb count(1379) table converted to MD ========================================
 
 
 | Error | <span id="CFTU12E"></span>CFTU12E: &amp;Cmd Failed _ illegal separator for keyword &amp;Keyw |
@@ -20106,7 +20122,7 @@
 
 
 
-============================== table nb count(1379) table converted to MD ========================================
+============================== table nb count(1380) table converted to MD ========================================
 
 
 | Error | <span id="CFTU13E"></span>CFTU13E: &amp;Cmd Failed_missing quote |
@@ -20117,7 +20133,7 @@
 
 
 
-============================== table nb count(1380) table converted to MD ========================================
+============================== table nb count(1381) table converted to MD ========================================
 
 
 | Error | <span id="CFTU14E"></span>CFTU14E: &amp;Cmd Failed _ too many keywords |
@@ -20128,7 +20144,7 @@
 
 
 
-============================== table nb count(1381) table converted to MD ========================================
+============================== table nb count(1382) table converted to MD ========================================
 
 
 | Error | <span id="CFTU15E"></span>CFTU15E: &amp;Cmd Failed _ keyword &amp;Keyw unknown or duplicate |
@@ -20139,7 +20155,7 @@
 
 
 
-============================== table nb count(1382) table converted to MD ========================================
+============================== table nb count(1383) table converted to MD ========================================
 
 
 | Error | <span id="CFTU16E"></span>CFTU16E: &amp;Cmd Failed _ keyword &amp;Keyw missing |
@@ -20150,7 +20166,7 @@
 
 
 
-============================== table nb count(1383) table converted to MD ========================================
+============================== table nb count(1384) table converted to MD ========================================
 
 
 | Error | <span id="CFTU17E"></span>CFTU17E: &amp;Cmd Failed _ keyword &amp;Keyw value out of bounds |
@@ -20161,7 +20177,7 @@
 
 
 
-============================== table nb count(1384) table converted to MD ========================================
+============================== table nb count(1385) table converted to MD ========================================
 
 
 | Error | <span id="CFTU18E"></span>CFTU18E: &amp;Cmd Failed _ invalid value for keyword &amp;Keyw |
@@ -20172,7 +20188,7 @@
 
 
 
-============================== table nb count(1385) table converted to MD ========================================
+============================== table nb count(1386) table converted to MD ========================================
 
 
 | Error | <span id="CFTU19E"></span>CFTU19E: CFTDEST Failed _ keywords FNAME and &amp;str are mutually exclusive |
@@ -20181,7 +20197,7 @@
 
 
 
-============================== table nb count(1386) table converted to MD ========================================
+============================== table nb count(1387) table converted to MD ========================================
 
 
 | Error | <span id="CFTU20I"></span>CFTU20I: &amp;str |
@@ -20190,7 +20206,7 @@
 
 
 
-============================== table nb count(1387) table converted to MD ========================================
+============================== table nb count(1388) table converted to MD ========================================
 
 
 | Error | <span id="CFTU24W"></span>CFTU24W : &amp;Cmd _ Warning (&amp;str) |
@@ -20199,7 +20215,7 @@
 
 
 
-============================== table nb count(1388) table converted to MD ========================================
+============================== table nb count(1389) table converted to MD ========================================
 
 
 | Error | <span id="CFTU26E"></span>CFTU26E : &amp;Cmd _ Error (&amp;str) |
@@ -20210,7 +20226,7 @@
 
 
 
-============================== table nb count(1389) table converted to MD ========================================
+============================== table nb count(1390) table converted to MD ========================================
 
 
 | Error | <span id="CFTU30E"></span>CFTU30E : &amp;Cmd Failed _ Unable to create file &amp;Fname |
@@ -20221,7 +20237,7 @@
 
 
 
-============================== table nb count(1390) table converted to MD ========================================
+============================== table nb count(1391) table converted to MD ========================================
 
 
 | Code | Description |
@@ -20258,7 +20274,7 @@
 
 
 
-============================== table nb count(1391) table converted to MD ========================================
+============================== table nb count(1392) table converted to MD ========================================
 
 
 | Code | Meaning  |
@@ -20415,7 +20431,7 @@
 
 
 
-============================== table nb count(1392) table converted to MD ========================================
+============================== table nb count(1393) table converted to MD ========================================
 
 
 | Code &lt;/th&gt;  | Meaning &lt;/th&gt;  |
@@ -20435,7 +20451,7 @@
 
 
 
-============================== table nb count(1393) table converted to MD ========================================
+============================== table nb count(1394) table converted to MD ========================================
 
 
 | Format &lt;/th&gt;  | Meaning &lt;/th&gt;  |
@@ -20452,7 +20468,7 @@
 
 
 
-============================== table nb count(1394) table converted to MD ========================================
+============================== table nb count(1395) table converted to MD ========================================
 
 
 | Code  | Protocol  | Meaning  |
@@ -20541,7 +20557,7 @@
 
 
 
-============================== table nb count(1395) table converted to MD ========================================
+============================== table nb count(1396) table converted to MD ========================================
 
 
 | Error code  | Description  |
@@ -20568,7 +20584,7 @@
 
 
 
-============================== table nb count(1396) table converted to MD ========================================
+============================== table nb count(1397) table converted to MD ========================================
 
 
 | Error code  | Description  |
@@ -20618,7 +20634,7 @@
 
 
 
-============================== table nb count(1397) table converted to MD ========================================
+============================== table nb count(1398) table converted to MD ========================================
 
 
 | Error code  | Description  |
@@ -20638,7 +20654,7 @@
 
 
 
-============================== table nb count(1398) table converted to MD ========================================
+============================== table nb count(1399) table converted to MD ========================================
 
 
 | Code  | FPDU  |
@@ -20678,7 +20694,7 @@
 
 
 
-============================== table nb count(1399) table converted to MD ========================================
+============================== table nb count(1400) table converted to MD ========================================
 
 
 | Hexadecimal Code  | Decimal Code  | Meaning  |
@@ -20959,7 +20975,7 @@
 
 
 
-============================== table nb count(1400) table converted to MD ========================================
+============================== table nb count(1401) table converted to MD ========================================
 
 
 | Code  | Contains  | Meaning  |
@@ -21003,7 +21019,7 @@
 
 
 
-============================== table nb count(1401) table converted to MD ========================================
+============================== table nb count(1402) table converted to MD ========================================
 
 
 | XXX &lt;/th&gt;  | FPDU &lt;/th&gt;  | Definition &lt;/th&gt;  |
@@ -21032,7 +21048,7 @@
 
 
 
-============================== table nb count(1402) table converted to MD ========================================
+============================== table nb count(1403) table converted to MD ========================================
 
 
 | Vxxxxxxx  | Definition  |
@@ -21046,7 +21062,7 @@
 
 
 
-============================== table nb count(1403) table converted to MD ========================================
+============================== table nb count(1404) table converted to MD ========================================
 
 
 | Error Code &lt;/th&gt;  | FPDU &lt;/th&gt;  | Meaning &lt;/th&gt;  |
@@ -21146,7 +21162,7 @@
 
 
 
-============================== table nb count(1404) table converted to MD ========================================
+============================== table nb count(1405) table converted to MD ========================================
 
 
 | PeSIT reason code&lt;/th&gt;  | Description&lt;/th&gt;  | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} internal diagnostic  | Service item concerned&lt;/th&gt;  |
@@ -21155,7 +21171,7 @@
 
 
 
-============================== table nb count(1405) table converted to MD ========================================
+============================== table nb count(1406) table converted to MD ========================================
 
 
 | PeSIT reason code&lt;/th&gt;  | Description&lt;/th&gt;  | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} internal diagnostic  | Service item concerned&lt;/th&gt;  |
@@ -21191,7 +21207,7 @@
 
 
 
-============================== table nb count(1406) table converted to MD ========================================
+============================== table nb count(1407) table converted to MD ========================================
 
 
 | PeSIT reason code&lt;/th&gt;  | Description&lt;/th&gt;  | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} internal diagnostic  | Service item concerned&lt;/th&gt;  |
@@ -21223,7 +21239,7 @@
 
 
 
-============================== table nb count(1407) table converted to MD ========================================
+============================== table nb count(1408) table converted to MD ========================================
 
 
 | Error code  | Description  |
@@ -21253,7 +21269,7 @@
 
 
 
-============================== table nb count(1408) table converted to MD ========================================
+============================== table nb count(1409) table converted to MD ========================================
 
 
 | Code  | Description  |
@@ -21269,7 +21285,7 @@
 
 
 
-============================== table nb count(1409) table converted to MD ========================================
+============================== table nb count(1410) table converted to MD ========================================
 
 
 | RC  | Error  | Description  | Action  |
@@ -21287,7 +21303,7 @@
 
 
 
-============================== table nb count(1410) table converted to MD ========================================
+============================== table nb count(1411) table converted to MD ========================================
 
 
 | RC  | Error  | Description  | Action  |
@@ -21301,7 +21317,7 @@
 
 
 
-============================== table nb count(1411) table converted to MD ========================================
+============================== table nb count(1412) table converted to MD ========================================
 
 
 | Topic  | Description  |
@@ -21314,7 +21330,7 @@
 
 
 
-============================== table nb count(1412) table converted to MD ========================================
+============================== table nb count(1413) table converted to MD ========================================
 
 
 | Action &lt;/th&gt;  | Command &lt;/th&gt;  |
@@ -21326,7 +21342,7 @@
 
 
 
-============================== table nb count(1413) table converted to MD ========================================
+============================== table nb count(1414) table converted to MD ========================================
 
 
 | Trace file definition | Command &lt;/th&gt;  | Parameter &lt;/th&gt;  | Description &lt;/th&gt;  |
@@ -21338,7 +21354,7 @@
 
 
 
-============================== table nb count(1414) table converted to MD ========================================
+============================== table nb count(1415) table converted to MD ========================================
 
 
 | Starting information collection &lt;/th&gt;  | Command used to define the file &lt;/th&gt;  | Parameter &lt;/th&gt;  | Command to enter &lt;/th&gt;  |
@@ -21350,7 +21366,7 @@
 
 
 
-============================== table nb count(1415) table converted to MD ========================================
+============================== table nb count(1416) table converted to MD ========================================
 
 
 | Action &lt;/th&gt;  | Define the file with &lt;/th&gt;  | Enter the command &lt;/th&gt;  |
@@ -21362,7 +21378,7 @@
 
 
 
-============================== table nb count(1416) table converted to MD ========================================
+============================== table nb count(1417) table converted to MD ========================================
 
 
 | Action &lt;/th&gt;  | Command &lt;/th&gt;  |
@@ -21373,7 +21389,7 @@
 
 
 
-============================== table nb count(1417) table converted to MD ========================================
+============================== table nb count(1418) table converted to MD ========================================
 
 
 | Trace file definition | Command &lt;/th&gt;  | Parameter &lt;/th&gt;  | Description &lt;/th&gt;  |
@@ -21383,7 +21399,7 @@
 
 
 
-============================== table nb count(1418) table converted to MD ========================================
+============================== table nb count(1419) table converted to MD ========================================
 
 
 | Starting information collection &lt;/th&gt;  | Command used to define the file &lt;/th&gt;  | Parameter &lt;/th&gt;  | Command to enter &lt;/th&gt;  |
@@ -21395,7 +21411,7 @@
 
 
 
-============================== table nb count(1419) table converted to MD ========================================
+============================== table nb count(1420) table converted to MD ========================================
 
 
 | Action &lt;/th&gt;  | Define the file with &lt;/th&gt;  | Enter the command &lt;/th&gt;  |
@@ -21405,7 +21421,7 @@
 
 
 
-============================== table nb count(1420) table converted to MD ========================================
+============================== table nb count(1421) table converted to MD ========================================
 
 
 | Resource | Description | Resource actions |
@@ -21422,7 +21438,7 @@
 
 
 
-============================== table nb count(1421) table converted to MD ========================================
+============================== table nb count(1422) table converted to MD ========================================
 
 
 | Privilege with CG  | Privilege without CG  | Resource  | Resource actions  |
@@ -21500,7 +21516,7 @@
 
 
 
-============================== table nb count(1422) table converted to MD ========================================
+============================== table nb count(1423) table converted to MD ========================================
 
 
 | Resource  | Description  | Resource properties  | Resource actions  |
@@ -21547,7 +21563,7 @@
 
 
 
-============================== table nb count(1423) table converted to MD ========================================
+============================== table nb count(1424) table converted to MD ========================================
 
 
 | Parameter | Description | Type |
@@ -21558,7 +21574,7 @@
 
 
 
-============================== table nb count(1424) table converted to MD ========================================
+============================== table nb count(1425) table converted to MD ========================================
 
 
 | File | Description | Access for Transfer CFT<br/> Product and administrator | Access for others |
@@ -21570,7 +21586,7 @@
 
 
 
-============================== table nb count(1425) table converted to MD ========================================
+============================== table nb count(1426) table converted to MD ========================================
 
 
 | File | Description | Access for Transfer CFT<br/> Product and administrator | Access for others |

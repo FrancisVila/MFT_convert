@@ -273,7 +273,7 @@ If the executable is not present in the LOAD library, the default values are use
 
 ****Syntax****
 
-****See the table below for possible keywords and values.****
+See the table below for possible keywords and values.
 
 ```
 UCONFSET id=cft.mvs.sginstal.<keyword>,value=<value>

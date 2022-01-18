@@ -2,7 +2,7 @@
     "title": "Troubleshoot SFTP",
     "linkTitle": "Troubleshoot SFTP",
     "weight": "200"
-}T**he supported operating systems are listed in the** [Platform features](../../../datasheet) **table.**
+}The supported operating systems are listed in the [Platform features](../../../datasheet) table.
 
 ## Start Transfer CFT issues
 

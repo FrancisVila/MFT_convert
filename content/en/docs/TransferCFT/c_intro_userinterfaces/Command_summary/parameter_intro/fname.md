@@ -283,7 +283,7 @@ When the parameter value is between quotes, it becomes case-sensitive; however o
 
 ****Examples****
 
-****The following examples use a UNIX syntax, modify accordingly for your environment.****
+The following examples use a UNIX syntax, modify accordingly for your environment.
 
 FNAME=filename where the FNAME is expressed as an absolute name:
 

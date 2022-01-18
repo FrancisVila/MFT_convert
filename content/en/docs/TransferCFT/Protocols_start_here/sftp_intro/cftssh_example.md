@@ -2,7 +2,7 @@
     "title": "SFTP use case examples",
     "linkTitle": "SFTP examples",
     "weight": "190"
-}T**he supported operating systems are listed in the** [Platform features](../../../datasheet) **table.**
+}The supported operating systems are listed in the [Platform features](../../../datasheet) table.
 
 ## Transfer CFT{{< TransferCFT/transfercftname  >}} acting as a SFTP client
 
@@ -41,7 +41,7 @@ sftp> mput file\*
 
 ****Mget command****
 
-****The Transfer CFT{{< TransferCFT/componentlongname  >}} server must be using open mode.****
+The Transfer CFT{{< TransferCFT/componentlongname  >}} server must be using open mode.
 
 ```
 recv part=app1,idf=groupoffiles,nfname=(@/#)file\*,file=all

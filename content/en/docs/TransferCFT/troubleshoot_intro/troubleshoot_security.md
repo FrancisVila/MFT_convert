@@ -19,7 +19,7 @@ To troubleshoot:
 
 The customer receives a "certificate\_request" type message, but it is empty. Transfer CFT cannot correctly respond to this message, and an error is generated.
 
-****Client side****
+******Client side******
 
 In the catalog a 260 PKI 040 diagnostic displays, and in the log a message similar to the following is displayed:
 
@@ -29,7 +29,7 @@ CFTH11E Error Opening session <PART=HPX18SSL EV=VVTIMO ST=SUP01>
 CFTT75E connect reject <IDTU=A00000BL PART=HPX18SSL IDF=SSL IDT=A2217045 260 PKI 040>
 ```
 
-****Server side****
+******Server side******
 
 No diagnostic displays in catalog, but in the log a message similar to the following:
 
@@ -124,13 +124,13 @@ CFTY11I CTX = 100003 PART1 PART = SSL = SSLPART1 Closing SSL client session
 
 In this scenario, two Transfer CFT’s have no cipher suite in common. The cipher suite to be used during the transfer is negotiated in the 'Client\_hello' and 'Server\_hello' frames. The server found no correspondence between the options presented and what is set on its side, so it returns an error.
 
-****Client side****
+******Client side******
 
 ```
 CFTY13E CTX = 100003 SSL Handshake local error [INSUFFICIENT_SECURITY] CR = 71
 ```
 
-****Server side****
+******Server side******
 
 ```
 CFTY13E CTX = 110004 SSL Handshake local error [close_notify] CR = 0
@@ -209,14 +209,14 @@ Given the differences in certificate verification described above, you could enc
 
 ****Workaround****
 
-****To remedy this situation, on the client (CFT2 in our example):****
+To remedy this situation, on the client (CFT2 in our example):
 
 1. Import the C certificate as the root in the local database.
 1. Set the SSL configuration DIRECT=client, rootcid=(B, C).
 
 ****When migrating****
 
-****You should be mindful when migrating from Transfer CFT{{< TransferCFT/transfercftname  >}} 3.1.3 or lower, that a previous configuration that was operational may not work with higher versions of Transfer CFT{{< TransferCFT/transfercftname  >}} until you import and define the certificate chain as required for Transfer CFT{{< TransferCFT/transfercftname  >}} versions 3.2.x and higher.****
+You should be mindful when migrating from Transfer CFT{{< TransferCFT/transfercftname  >}} 3.1.3 or lower, that a previous configuration that was operational may not work with higher versions of Transfer CFT{{< TransferCFT/transfercftname  >}} until you import and define the certificate chain as required for Transfer CFT{{< TransferCFT/transfercftname  >}} versions 3.2.x and higher.
 
 ## Recovery and trace analysis
 

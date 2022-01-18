@@ -2,7 +2,7 @@
     "title": "SFTP quick start!",
     "linkTitle": "SFTP quick start!",
     "weight": "140"
-}T**he supported operating systems are listed in the** [Platform features](../../../datasheet) **table.**
+}The supported operating systems are listed in the [Platform features](../../../datasheet) table.
 
 This page provides a bare-bones configuration for you to begin to explore using SFTP for file transfers. When you are ready for a more advanced configuration, refer to the [Client configuration](../sftp_client) and [Server configuration](../sftp_server) pages.
 

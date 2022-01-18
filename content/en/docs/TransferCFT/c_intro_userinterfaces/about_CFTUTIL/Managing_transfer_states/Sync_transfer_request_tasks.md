@@ -135,7 +135,7 @@ The examples describe how to use SWAITCAT to perform the following task, wstates
 
 ****<span id="SWAITCAT ex 1"></span>**Example: Execute a command once all transfers have completed******
 
-****The following example is a way to execute a batch processing task using SWAITCAT, which is a task that you cannot perform using the SEND command with WSTATES.****
+The following example is a way to execute a batch processing task using SWAITCAT, which is a task that you cannot perform using the SEND command with WSTATES.
 
 ```
 config type=com,mediacom=tcpip,fname=xhttp://localhost:1765

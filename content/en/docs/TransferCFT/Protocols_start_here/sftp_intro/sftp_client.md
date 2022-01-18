@@ -2,7 +2,7 @@
     "title": "Configure Transfer CFT as an SFTP client",
     "linkTitle": "Configure the Transfer CFT SFTP client",
     "weight": "170"
-}T**he supported operating systems are listed in the** [Platform features](../../../datasheet) **table.**
+}The supported operating systems are listed in the [Platform features](../../../datasheet) table.
 
 To configure a Transfer CFT{{< TransferCFT/transfercftname  >}} SFTP client:
 

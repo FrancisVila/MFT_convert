@@ -22,7 +22,7 @@ with the remote site is correctly established.
 
 ****\[ RESTART = { YES | NO } \]****
 
-****Option to manage the restart.****
+Option to manage the restart.
 
 - Yes: Perform a restart
 - No: No restart following shut down

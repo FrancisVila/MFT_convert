@@ -2,7 +2,7 @@
     "title": "Configure Transfer CFT as an SFTP server",
     "linkTitle": "Configure the Transfer CFT SFTP server",
     "weight": "160"
-}T**he supported operating systems are listed in the** [Platform features](../../../datasheet) **table.**
+}The supported operating systems are listed in the [Platform features](../../../datasheet) table.
 
 This section describes how to set up Transfer CFT to use as a server with the SFTP protocol.
 
@@ -269,7 +269,7 @@ When defining the WORKINGDIR, you can use the following symbolic variables:
 
 ****Example****
 
-****In this example, user1 can perform a get or put command using the space (WORKINGDIR) defined for user1.****
+In this example, user1 can perform a get or put command using the space (WORKINGDIR) defined for user1.
 
 ```
 CFTPART ID=user1, IDF=flow01, NRPART="user1",...

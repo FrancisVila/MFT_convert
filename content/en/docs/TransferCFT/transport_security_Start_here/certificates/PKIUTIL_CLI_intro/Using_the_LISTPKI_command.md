@@ -8,94 +8,18 @@ that you set in the command parameters. Additionally, you can use the default mo
 
 ## Display the local certificate database
 
-Parameter
 
-Description
+| Parameter  | Description  |
+| --- | --- |
+| [CONTENT = BRIEF | FULL | DEBUG ] | Result display mode.<br/> • FULL: All contents display<br/> • DEBUG: All contents and additional general information display<br/> • BRIEF: a 79-character entry is displayed for each certificate. Additionally, when using the BRIEF value to display content:<br/> • Items display showing a clear parent/child relationship<br/> • If a certificate is marked as **Expired** (!), all of its children are labeled **Parent expired** (?)<br/> • If a certificate's parent is missing, the line displays either a question mark (**?**) if the issuer is filtered, or an exclamation mark (**!**) if the issuer is missing<br/> The <a href="#FMODEL%C2%A0d">FMODEL display example</a> features these elements.<br/> |
+| [ID = {*, string1..8}] | Unique local identifier of the certificate(s) to be displayed.<br/> The * and ? wildcard characters are accepted for the ID parameter value. |
+| [ INUM = {number0...99} ]  | Internal number for the intermediate certificates in an imported chain of certificates (in the PKI database).<br/> You can use this option to select a specific intermediate certificate. |
+| [TYPE = ALL | USER | ROOT | INTER | KEY | CERT | | ENTITY ] | Type of certificate to display:<br/> • ALL: all certificates<br/> • USER: user certificates<br/> • ROOT: root authority certificates<br/> • INTER: intermediate authority certificates<br/> • KEY: list PKIKEY items<br/> • CERT: list ROOT, INTER, and USER certificates for PKICER only<br/> • ENTITY: any entity identifier created using PKIENTITY command |
+| [STATE = ALL | ACT | INACT | EXPIRED] | Status of the certificates to display:<br/> • ALL: all statuses<br/> • ACT: all activated certificates<br/> • INACT: all deactivated certificates<br/> • EXPIRED: all expired certificates |
+| FMODEL | The path to the file containing the models. If no model is found, the default format, which is the same as for the DISPLAY command, is used.<br/> <blockquote> **Note**<br/> Transfer CFT 3.7 and higher uses the dspcnf.xml model fileby default. To have the display format from a previous version, use FMODEL=NONE.<br/> </blockquote>  |
+| ROOTCID  | The certificate authority ID. See an example in <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/rootcid">ROOTCID</a>.  |
+| HELP  | Provides helps for the available fields for the different elements, or lists the available MODELS for the given file. Values include:<br/> • NONE (default)<br/> • FIELDS<br/> • MODELS |
 
- 
-
-\[CONTENT = BRIEF |
-FULL | DEBUG \]
-
-Result display mode.
-
-- FULL: All contents display
-
-- DEBUG: All contents and additional general information display
-
-- BRIEF: a 79-character entry is displayed
-    for each certificate. Additionally, when using the BRIEF value to display content:
-
-    -   Items display showing a clear parent/child relationship
-    -   If a certificate is marked as **Expired** (!), all of its children are labeled **Parent expired** (?)
-    -   If a certificate's parent is missing, the line displays either a question mark (**?**) if the issuer is filtered, or an exclamation mark (**!**) if the issuer is missing
-
-    The [FMODEL display example](#FMODEL%C2%A0d) features these elements.
-
-\[ID    
-= {\*, string1..8}\]
-
-Unique local identifier of the certificate(s) to be displayed.
-
-The \* and ? wildcard characters are accepted for the ID
-parameter value.
-
-\[ INUM  = {number0...99} \]
-
-Internal number for the intermediate certificates in an imported chain of certificates (in the PKI database).
-
-You can use this option to select a specific intermediate certificate.
-
-\[TYPE = ALL |
-USER | ROOT | INTER | KEY | CERT | |  ENTITY \]
-
-Type of certificate to display:
-
-- ALL:
-    all certificates
-- USER:
-    user certificates
-- ROOT:
-    root authority certificates
-- INTER:
-    intermediate authority certificates
-- KEY: list PKIKEY items
-- CERT: list ROOT, INTER, and USER certificates for PKICER only
-- ENTITY: any entity identifier created using PKIENTITY command
-
-\[STATE = ALL | ACT
-| INACT | EXPIRED\]
-
-Status of the certificates to display:
-
-- ALL:
-    all statuses
-- ACT:
-    all activated certificates
-- INACT:
-    all deactivated certificates
-- EXPIRED:
-    all expired certificates
-
-FMODEL
-
-The path to the file containing the models. If no model is found, the default format, which is the same as for the DISPLAY command, is used.
-
-> **Note**
->
-> Transfer CFT 3.7 and higher uses the dspcnf.xml model fileby default. To have the display format from a previous version, use FMODEL=NONE.
-
-ROOTCID
-
-The certificate authority ID. See an example in [ROOTCID](../../../../c_intro_userinterfaces/command_summary/parameter_intro/rootcid).
-
-HELP 
-
-Provides helps for the available fields for the different elements, or lists the available MODELS for the given file. Values include:
-
-- NONE (default)
-- FIELDS
-- MODELS
 
 <span id="CONTENT_BRIEF_Display"></span>
 

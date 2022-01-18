@@ -616,8 +616,8 @@ QQQ\_QQQ\_QQQ
 > uconfset id=cft.server.processing_scripts_variables_blacklist , value= "`|\\$\\(|;|&|\\|"
 > ```
 >
-> ****When setting the blacklist values shown above, the forbidden characters are: **`** and **$(** and **;** and **&** and **|**  
-> For example, if &PARM="$(ls)"or if `` &PARM="`ls`" ``, then the EXEC is not executed because of the **$(** or the **`** characters, respectively.****
+> When setting the blacklist values shown above, the forbidden characters are: **`** and **$(** and **;** and **&** and **|**  
+> For example, if &PARM="$(ls)"or if `` &PARM="`ls`" ``, then the EXEC is not executed because of the **$(** or the **`** characters, respectively.
 >
 > ****Windows****
 >

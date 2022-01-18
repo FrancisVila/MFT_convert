@@ -17,7 +17,7 @@
 
 ****Procedure****
 
-****The following example creates both a private and public key. You can then export the public key to a remote Transfer CFT, or to another product that is using SFTP.****
+The following example creates both a private and public key. You can then export the public key to a remote Transfer CFT, or to another product that is using SFTP.
 
 1. Use PKIKEYGEN to generate the key pair.  
     ```
