@@ -43,7 +43,7 @@ Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters
 1. Load the Transfer CFT 3.9{{< TransferCFT/componentversion >}} environment.
 1. Create a new PKI internal datafile using the command PKIUTIL PKIFILE. Replace &lt;pki\_database\_filename> with the appropriate value: $CFTPKU for UNIX, the absolute path value for the CFTPKU for Windows. Enter:  
     ```
-    PKIUTIL PKIFILE fname=<pki_database_filename>, mode='CREATE’
+    `PKIUTIL PKIFILE fname=<pki_database_filename>, mode='CREATE’`
     ```
 
 <!-- -->
@@ -51,7 +51,7 @@ Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters
 1. Import your PKI certificates into Transfer CFT 3.9{{< TransferCFT/componentversion >}} using the command PKIUTIL. Replace the &lt;prefix\_character> based on your system, @ for UNIX and # for Windows.  
     Enter:  
     ```
-    PKIUTIL <prefix_character>pki-extract.conf
+    `PKIUTIL <prefix_character>pki-extract.conf`
     ```
 
 ### Migrating the runtime environment
@@ -112,19 +112,19 @@ Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters
 1. Load Transfer CFT 3.9{{< TransferCFT/componentversion >}} environment.
 1. Import your static configuration objects using the cftinit command. Enter:  
     ```
-1. cftinit cft-extract.conf
+1. `cftinit cft-extract.conf`
 
 ### Migrating PKI certificates
 
 1. Load former Transfer CFT 3.0.1 or 3.1.2 environment.
-1. Export your PKI certificates using the command PKIUTIL PKIEXT. Enter: PKIUTIL PKIEXT fout=pki-extract.conf
+1. Export your PKI certificates using the command PKIUTIL PKIEXT. Enter: `PKIUTIL PKIEXT fout=pki-extract.conf`
 
 <!-- -->
 
 1. Load the Transfer CFT 3.9{{< TransferCFT/componentversion >}} environment.
 1. Create a new PKI internal datafile using the command PKIUTIL PKIFILE. Replace <pki_database_filename> with the appropriate value, $CFTPKU for UNIX or the absolute path value for the CFTPKU for Windows. Enter:  
     ```
-1. PKIUTIL PKIFILE fname=&lt;pki\_database\_filename>, mode='CREATE’
+1. `PKIUTIL PKIFILE fname=<pki_database_filename>, mode='CREATE’`
 
 <!-- -->
 
@@ -140,7 +140,7 @@ Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters
 1. Load former Transfer CFT 3.0.1 or 3.1.2 environment.
 1. Export all catalogs (one per node, named as cftcataXX, where XX is the node number with range from 00 to &lt;number of nodes - 1>) using the command CFTMI. For each catalog. Enter:  
     ```
-1. CFTMI MIGR type=CAT, direct=FROMCAT, ifname=<catalog_filename_former_cft_for_node_<node>>, ofname=catalog_output_<node>.xml
+1. `CFTMI MIGR type=CAT, direct=FROMCAT, ifname=<catalog_filename_former_cft_for_node_<node>>, ofname=catalog_output_<node>.xml`
 
 <!-- -->
 
@@ -154,12 +154,12 @@ Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters
 
 1. Load former Transfer CFT 3.0.1 or 3.1.2 environment.
 1. Export all communication media files (cftcom and cftcomXX, where XX is the node number with range from 00 to &lt;number of nodes - 1>) using the command CFTMI. For each communication media file.
-    -   Enter: CFTMI MIGR type=COM, direct=FROMCOM, ifname=&lt;com\_filename\_for\_node\_manager\_on\_former\_cft>, ofname=com\_output.xml
-    -   For each node, enter: CFTMI MIGR type=COM, direct=FROMCOM, ifname=&lt;com\_filename\_for\_node\_&lt;node>\_on\_former\_cft>, ofname=com\_output\_&lt;node>.xml
+    -   Enter: `CFTMI MIGR type=COM, direct=FROMCOM, ifname=<com_filename_for_node_manager_on_former_cft>, ofname=com_output.xml`
+    -   For each node, enter: `CFTMI MIGR type=COM, direct=FROMCOM, ifname=<com_filename_for_node_<node>_on_former_cft>, ofname=com_output_<node>.xml`
 1. Load Transfer CFT 3.9{{< TransferCFT/componentversion >}} environment.
 1. Import all communication media files using command CFTMI for each of them. Use the same node number on both &lt;node> on command.
-    -   Enter: CFTMI MIGR type=COM, direct=TOCOM, ifname=com\_ouput.xml, ofname=&lt;com\_filename\_for\_node\_manager\_on\_new\_cft>
-    -   For each node, enter: CFTMI MIGR type=COM, direct=TOCOM, ifname=com\_ouput\_&lt;node>.xml, ofname=&lt;com\_filename\_for\_node\_&lt;node>\_on\_new\_cft>
+    -   Enter: `CFTMI MIGR type=COM, direct=TOCOM, ifname=com_ouput.xml, ofname=<com_filename_for_node_manager_on_new_cft> `
+    -   For each node, enter: `CFTMI MIGR type=COM, direct=TOCOM, ifname=com_ouput_<node>.xml, ofname=<com_filename_for_node_<node>_on_new_cft> `
 
 ## Single-node to multi-node architecture migration
 

@@ -79,7 +79,7 @@ containing:
 
 ## Disable XFB.Log
 
-By default, `sentinel.xfb.log` is set to IEWF (information, error, warning, and fatal), which sends Transfer CFT log information to Sentinel. To disable the XFB.Log, use the uconf utility to set this value to ' '.
+By default, `sentinel.xfb.log` is set to `IEWF `(information, error, warning, and fatal), which sends Transfer CFT log information to Sentinel. To disable the XFB.Log, use the uconf utility to set this value to ' '.
 
 ```
 CFTUTIL uconfset id=sentinel.xfb.log, value=' '

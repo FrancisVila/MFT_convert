@@ -77,13 +77,13 @@ The Transfer CFT Copilot server is a sub component that is mandatory when using 
 
 COPRUN is an example of a JCL statement that starts the Transfer CFT Copilot server. The server can be started as a Start Task. The Transfer CFT Copilot server STEPLIB, and then JOBLIB should be defined as an APF. If it is not defined as an APF, no RACF check can be performed. This results in no log-on check being available and all requests are done with the user associated with the server JOB.
 
-When the copilot.misc.CreateProcessAsUser variable is set, STEPLIB or JOBLIB can be non-APF. Only a Central Governance{{< TransferCFT/centralgovernancename  >}}/PassPort user can sign on to Copilot user interface.
+When the `copilot.misc.CreateProcessAsUser` variable is set, STEPLIB or JOBLIB can be non-APF. Only a Central Governance{{< TransferCFT/centralgovernancename  >}}/PassPort user can sign on to Copilot user interface.
 
 > **Note**
 >
 > When the ‘cft.mvs.copilot.check\_apf’ uconf variable is set to ‘Yes’, CFTCOPL must be APF authorized to start.
 
-LOG message: +CFTI42E Copilot must be APF-authorized.
+LOG message: `+CFTI42E Copilot must be APF-authorized.`
 
 > **Note**
 >

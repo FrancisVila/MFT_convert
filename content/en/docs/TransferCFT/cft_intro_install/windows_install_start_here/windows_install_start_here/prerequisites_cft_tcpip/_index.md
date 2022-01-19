@@ -16,11 +16,11 @@
     and ****nrpart**** parameters in CFTPARM,
     and the ****host**** parameter of the
     CFTTCP command.
-1. Start the batch file ..\\CFT\\SAMPLE\\RESETTCP.
+1. Start the batch file `..\CFT\SAMPLE\RESETTCP`.
 1. Start CFTMAIN.
 1. Check that CFTMAIN
     started correctly.
 1. From a command prompt on a different Windows, and in the Transfer CFT{{< TransferCFT/componentshortname >}} root folder, enter the
-    command: > CFTUTIL SEND PART=PART1, IDF=TEST
+    command: `> CFTUTIL SEND PART=PART1, IDF=TEST`
 
  

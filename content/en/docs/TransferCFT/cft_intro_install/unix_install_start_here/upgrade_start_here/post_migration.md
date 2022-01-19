@@ -38,7 +38,7 @@ replaces the following configuration files:
     sentinel.TRKTNAME.
 - Copilot ini file
     (copconf.ini)  
-    This file no longer exists. All former Copilot parameters are named copilot.SECTION.PARAMETER-NAME in the UCONF interface. For example, the parameter ServerPort, located in the general section, is now copilot.general.serverport.
+    This file no longer exists. All former Copilot parameters are named `copilot.SECTION.PARAMETER-NAME` in the UCONF interface. For example, the parameter ServerPort, located in the general section, is now `copilot.general.serverport`.
 - The profile file, formerly ENV\_CFT or cft.ini, now
     uses UCONF to set the environment variables.
 

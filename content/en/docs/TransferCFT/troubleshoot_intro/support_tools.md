@@ -49,13 +49,13 @@ From the Copilot UI, click the ![Debug command icon](/Images/TransferCFT/debug_a
 
 ### Using command line
 
-In command line, enter: cft\_support collect \[options\]
+In command line, enter: `cft_support collect` `[options]`
 
 Options:
 
 - --help: Display this help and exit.
-- --cat-filter: Filter the CFTUTIL LISTCAT output. See [LISTCAT](../../c_intro_userinterfaces/about_cftutil/monitoring_cftutil_intro/listcat_command), or enter CFTUTIL HELP CMD=LISTCAT, to view available parameters.
-- --cat-debug-filter: Filter the CFTUTIL LISTCAT CONTENT=DEBUG output. This option overrides --cat-filter.
+- --cat-filter: Filter the CFTUTIL LISTCAT output. See [LISTCAT](../../c_intro_userinterfaces/about_cftutil/monitoring_cftutil_intro/listcat_command), or enter `CFTUTIL HELP CMD=LISTCAT`, to view available parameters.
+- --cat-debug-filter: Filter the CFTUTIL LISTCAT CONTENT=DEBUG output. This option overrides `--cat-filter.`
 - --no-core-analysis-gdb: Do not use gdb to analyze the cores. *Unix only*
 - --no-core-analysis-dbx: Do not use dbx to analyze the cores. *Unix only*
 
@@ -64,19 +64,19 @@ Options:
 Only collect information for a given transfer:
 
 ```
-cft_support collect --cat-filter="IDTU=A0000001"
+`cft_support collect --cat-filter="IDTU=A0000001"`
 ```
 
 Collect information for all transfers in error for a given partner:
 
 ```
-cft_support collect --cat-filter="DIAGI=ERROR, PART=PARIS"
+`cft_support collect --cat-filter="DIAGI=ERROR, PART=PARIS"`
 ```
 
 Collect transfer information related to a given IDF for all transfers in a brief LISTCAT, and only those transfers in error in a debug LISTCAT:
 
 ```
-cft_support collect --cat-filter="IDF=BIN" --cat-debug-filter="IDF=BIN, DIAGI=ERROR"
+`cft_support collect --cat-filter="IDF=BIN" --cat-debug-filter="IDF=BIN, DIAGI=ERROR"`
 ```
 
 #### IBM i
@@ -90,7 +90,7 @@ Additionally, two options are available for CFTSUPPORT:
 
 ****Example****
 
-CFTSUPPORT IFSPATH('/home/cft/axway/cft/runtime/cftsupport')DBGCATFIL('IDTU=A0000002')
+`CFTSUPPORT IFSPATH('/home/cft/axway/cft/runtime/cftsupport')DBGCATFIL('IDTU=A0000002')`
 
 > **Note**
 >

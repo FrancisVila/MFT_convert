@@ -14,7 +14,7 @@ Earlier versions of Transfer CFT used a different message format than version 3.
 
 CFTLOG FORMAT=\[V23,V24\]
 
-For V23: CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started
+For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
@@ -145,7 +145,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTC13E"></span><span id="CFTC15I"></span>CFTC15I Deprecated command not executed BLKNUM=&amp;blknum PART=&amp;part IDT=&amp;idt : Cmd=&amp;cmd&gt;<br/> CFTC15I Deprecated command not executed BLKNUM=&amp;blknum PART=&amp;part IDT=&amp;idt : Cmd=&amp;cmd |
 | --- | --- |
-| Explanation | Set the uconf parameter cft.cftcat.enable_deprecated_blknum=Yes to enable BLKNUM.<br/> <blockquote> **Note**<br/> Regardless of the cft.cftcat.enable_deprecated_blknum parameter setting, BLKNUM is disabled in a multi-node configuration (uconf:cft.multi_node.enable=Yes), and this message is displayed.<br/> </blockquote>  |
+| Explanation | Set the uconf parameter <code>cft.cftcat.enable_deprecated_blknum=Yes</code> to enable BLKNUM.<br/> <blockquote> **Note**<br/> Regardless of the cft.cftcat.enable_deprecated_blknum parameter setting, BLKNUM is disabled in a multi-node configuration (uconf:cft.multi_node.enable=Yes), and this message is displayed.<br/> </blockquote>  |
 | Consequence | The command is ignored. |
 
 

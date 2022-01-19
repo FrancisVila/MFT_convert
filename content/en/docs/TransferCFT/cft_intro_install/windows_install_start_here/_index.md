@@ -18,7 +18,7 @@ This section introduces prerequisite information as well as installation and inf
 
 The information in the Windows operations section
 may be supplemented, corrected, or even contradicted by the
-README.TXT file or the Release Notes supplied with the product. The README.TXT file and Release Notes take priority in this case.
+`README.TXT` file or the Release Notes supplied with the product. The `README.TXT` file and Release Notes take priority in this case.
 
 <span id="Product_presentation"></span>
 

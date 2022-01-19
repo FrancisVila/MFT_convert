@@ -12,18 +12,18 @@
 
 **\[RECNB = { 1... 100000 } \]**
 
-Number of records in the file. The default value is the value set in the UCONF cft.cftcom.default\_size parameter.
+Number of records in the file. The default value is the value set in the UCONF `cft.cftcom.default_size` parameter.
 
 ****TYPE=CAT****
 
 **\[RECNB =  { 1...10000000 } \]**
 
-Number of records in the file. The default value is the value set in the UCONF cft.cftcat.default\_size parameter. This value corresponds to the maximum
+Number of records in the file. The default value is the value set in the UCONF `cft.cftcat.default_size` parameter. This value corresponds to the maximum
 number of transfer "entries" simultaneously present in the catalog.
 
-It is highly recommended that you either customize the RH, SH, RT, ST, etc. parameter values in the CFTCAT object or customize the cft.purge.\* uconf values to prevent the file from overloading, as this would result in new transfer requests being refused to be taken into account.
+It is highly recommended that you either customize the RH, SH, RT, ST, etc. parameter values in the CFTCAT object or customize the `cft.purge.*` uconf values to prevent the file from overloading, as this would result in new transfer requests being refused to be taken into account.
 
-When the catalog is full, the following error message is displayed: CFTC29W Catalog Alert fill threshold reached: level=100% ID=CAT0
+When the catalog is full, the following error message is displayed: `CFTC29W Catalog Alert fill threshold reached: level=100% ID=CAT0`
 
 Please see the <a href="../../../../admin_intro/admin_monitoring_intro/housekeeping_catalog" class="MCXref xref">Housekeeping for catalog and output files</a> for best practices, or the <a href="../../../../troubleshoot_intro/admin_troubleshooting_server/admin_troubleshooting_runtime/troubleshoot_catalog" class="MCXref xref">Troubleshoot the catalog</a> page for solutions if the catalog is full and Transfer CFT has stopped.
 

@@ -19,7 +19,7 @@
 
 ### Advanced IPv6
 
-Refer to the [UCONF parameters](../uconf_directory) table ipv6.set\_ai\_xxx.
+Refer to the [UCONF parameters](../uconf_directory) table `ipv6.set_ai_xxx`.
 
 
 | Parameter  | Default  | Description  |

@@ -9,8 +9,8 @@ You should pay particular attention to this value as it may impact Transfer CFT{
 If you want to know the CCSID used in your current environment or if you want to change it, perform the following steps:
 
 1. Connect with the Transfer CFT profile.
-1. Start Transfer CFT{{< TransferCFT/transfercftname >}}: CFTSTART
-1. Enter: WRKACTJOB
+1. Start Transfer CFT{{< TransferCFT/transfercftname >}}: `CFTSTART`
+1. Enter: `WRKACTJOB`
 1. Before the CFTMAIN process, enter the value `5` and then ENTER.
 1. Enter the value `2` and then ENTER.
 

@@ -15,7 +15,7 @@ Migrate PARM, PART, IDF and other static configuration objects.
 <!-- -->
 
 1. Export your static configuration objects using the command CFTUTIL CFTEXT.  
-    Enter: CFTUTIL CFTEXT type=all, fout=cft-extract.conf
+    Enter: `CFTUTIL CFTEXT type=all, fout=cft-extract.conf`
 
 <!-- -->
 
@@ -44,8 +44,8 @@ Migrate the parameters from the Transfer CFT 2.4 trkapi.cfg file.
 
 1. Create a script file, for example:
 
-- UNIX: trkapi-import.sh
-- Windows: trkapi-import.bat
+- UNIX:` trkapi-import.sh`
+- Windows:` trkapi-import.bat`
 
 1. For each parameter you select, add a UCONF command line to your new script file using the format:
 

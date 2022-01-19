@@ -61,9 +61,9 @@ The [UCONF parameters topic](uconf_directory) contains a complete listing of al
 
 ### UCONF data
 
-When you install Transfer CFT, the home directory is created and populated under the Transfer\_CFT installation directory. This home directory contains installation libraries, binaries, and templates. Do not store any personal files in the home directory, as they are erased during updates.
+When you install Transfer CFT, the `home` directory is created and populated under the `Transfer_CFT` installation directory. This `home `directory contains installation libraries, binaries, and templates. Do not store any personal files in the `home `directory, as they are erased during updates.
 
-The UCONF data are stored in both a dictionary located in the Transfer\_CFT>home directory, and in a runtime file in the Transfer\_CFT>runtime>data directory. You should not modify the default values stored in the home UCONF dictionary.
+The UCONF data are stored in both a dictionary located in the `Transfer_CFT>home `directory, and in a runtime file in the` Transfer_CFT>runtime>data` directory. You should not modify the default values stored in the `home `UCONF dictionary.
 
 ****Related topics****
 

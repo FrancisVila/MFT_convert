@@ -11,10 +11,10 @@
 - \[CORE\] Added the CFTUIPREF object to customize Transfer page columns and filters. [Details](../c_intro_userinterfaces/command_summary#CFTUIPREF)
 - \[CORE\] Select transfers with CFTUTIL using absolute and relative date and time criteria. [Details](../c_intro_userinterfaces/command_summary/parameter_intro/datetimemin) (DATETIMEMIN) [Details](../c_intro_userinterfaces/command_summary/parameter_intro/datetimemax) (DATETIMEMAX)
 - \[UI\] Removed support for the Transfer CFT Copilot UI (Java applet).
-- \[CORE\] Enabled the cache feature by default. The default value for cft.server.parm.cache\_size is now 5000 instead of zero. [Details](../cft_intro_install/mig_impact_considerations#parmcache)
+- \[CORE\] Enabled the cache feature by default. The default value for `cft.server.parm.cache_size` is now 5000 instead of zero. [Details](../cft_intro_install/mig_impact_considerations#parmcache)
 - \[CORE\] Added the NIDF field in accounting files (for V24 structures). [Details](../admin_intro/admin_config_commands/cftaccnt_concepts)
 - \[IBM i\] Included accounting C samples. [Details](../cft_intro_install/about_this_document_ibmi/post_install_intro_ibmi/api_and_exits_intro_ibmi)
-- \[CORE\] Modified the minimum CFTLOG length parameter. [Details](../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftlog)
+- \[CORE\] Modified the minimum CFTLOG `length `parameter. [Details](../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftlog)
 - \[CORE\] Replace proprietary database for configuration with SQLite database for Windows, UNIX, and HP NonStop.
 - \[CORE\] Added support for EC2 instance profile credentials and AWS credentials file use with ACL, a proxy, or server-side encryption. [Details](../app_integration_intro/amazon_s3)
 - \[DOC\] The User Guide is now available as a PDF. [Details](https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_PDF/resource/Transfer_CFT_UsersGuide_allOS_en.pdf)
@@ -28,9 +28,9 @@
 - \[CORE\] Support for IPv6 while performing exchanges using SFTP.
 - \[SAMPLE\] Google Cloud Storage Connector samples that use pre and post-processing scripts are now available on the [AMPLIFY Repository](https://repository.axway.com/product-extensions/views/google-cloud-storage-connector-sample-for-transfer-cft).
 - \[CORE\] Added a beginning-of-transfer exit, EXITBOT, that allows you to customize certain fields in a request. [Details](../app_integration_intro/managing_exits/beginning_of_transfer_exit)
-- \[CORE\] Added the cft.cftlog.switch\_on\_start parameter to enable the automatic LOG switch when Transfer CFT starts. When cft.cftlog.switch\_on\_start=No, the log file switches once per day instead of at each start. [Details](../admin_intro/admin_monitoring_intro/housekeeping_logs)
+- \[CORE\] Added the cft.cftlog.switch\_on\_start parameter to enable the automatic LOG switch when Transfer CFT starts. When `cft.cftlog.switch_on_start=No`, the log file switches once per day instead of at each start. [Details](../admin_intro/admin_monitoring_intro/housekeeping_logs)
 - \[CORE\] Support for environment variables in folder monitoring (CFTFOLDER) scandir and workdir parameters definitions using the %env:X% syntax. [Details](../gettingstarted_intro/my_first_transfer_flow_using_cg/typographical_conventions)
-- \[CORE\] Added the cg.certificate.governance.csr\_dn parameter to enable users to customize the DN. Flow Manager [Details](../governance_services_intro/register_fm), Central Governance [Details](../governance_services_intro/register_cg)
+- \[CORE\] Added the `cg.certificate.governance.csr_dn` parameter to enable users to customize the DN. Flow Manager [Details](../governance_services_intro/register_fm), Central Governance [Details](../governance_services_intro/register_cg)
 - \[CORE\] Updated the CFTS03I log message, replacing the word “executed” with “submitted”. [Details](../troubleshoot_intro/messages_and_error_codes_start_here/cfts_messages)
 - \[UI\] Support for the RECONFIG command and ACT/INACT commands.
 - \[UI\] Creating a new transfer from the UI supports the same parameters as the CFTUTIL SEND/RECV commands.
@@ -100,7 +100,7 @@
 - \[CORE\] From the REST API you can perform Transfer CFT server administration (check the status, start, stop, and restart). Additionally, you can manage CFT, CFTIDF, and CFTXLATE objects. See the [Transfer CFT Swagger](http://apidocs.axway.com/swagger-ui/index.html?productname=transfercft&productversion=3.5&filename=transfercft-swagger-api.json) documentation for details.
 - \[CORE\] You can now implement Transfer CFT in a Microsoft Azure environment. [Details](../datasheet#Virtuali)
 - \[CORE\] You can integrate GlusterFS as storage for file transfers. [Details](../cft_intro_install/unix_install_start_here/before_you_start_unix/n_active_active/shared_file_prereq_ux#Standalo)
-- \[UNIX\] Added parameters that allow you to configure the Transfer CFT systemd service when using Central Governance. [Details]()
+- \[UNIX\] Added parameters that allow you to configure the Transfer CFT `systemd` service when using Central Governance. [Details]()
 - \[CORE\] Implemented an automatic adding of the “cft service account” to the super user group. [Details](../internal_a_m_start_here/fm_access_management)
 - \[CORE\] Added a UCONF parameter that allows you to blacklist certain characters in a processing script. [Details](../c_intro_userinterfaces/command_summary/symbolic_variables)
 - \[CORE\] You can now use PKIUTIL PKIEXT to export a key in the PKCS#8 format. [Details](../transport_security_start_here/certificates/pkiutil_cli_intro/pkiext)
@@ -144,7 +144,7 @@
 - \[CORE\] You can now use PKIUTIL PKIKEY or PKIKUTIL PKICER to handle encrypted PEM private keys. SP1 [Details]()
 - \[CORE\] Added keyboard shortcuts to improve accessibility in the Transfer CFT UI. SP1 [Details](../c_intro_userinterfaces/web_copilot_ui)
 - \[CORE\] In the SWAITCAT command, added support for the T value in the PHASES parameter, and in the SEND and RECV commands added support for the T value in the WPHASES parameter. SP1 PHASES [Details](../c_intro_userinterfaces/command_summary/parameter_intro/phases), WPHASES [Details]()
-- \[CORE\] Added the requester JOBNAME in the CFTR12I message for SEND and RECEIVE commands (log format V24). Added requester JOBNAME in the CFTS20I message (when the communication file row number is deleted). SP1 CFTR12I [Details](../troubleshoot_intro/messages_and_error_codes_start_here/cftr_messages#CFTR12I), CFTS20I [Details](../troubleshoot_intro/messages_and_error_codes_start_here/cfts_messages#CFTS20I)
+- \[CORE\] Added the requester JOBNAME in the `CFTR12I` message for SEND and RECEIVE commands (log format V24). Added requester JOBNAME in the `CFTS20I `message (when the communication file row number is deleted). SP1 CFTR12I [Details](../troubleshoot_intro/messages_and_error_codes_start_here/cftr_messages#CFTR12I), CFTS20I [Details](../troubleshoot_intro/messages_and_error_codes_start_here/cfts_messages#CFTS20I)
 - \[CORE\] Added new TLS1.2 cipher suites for the EBICS protocol. SP1 UI Details, CLI Details
 - \[CORE\] New Transfer CFT Graphical User Interface (replaces the Copilot user interface). [Details](../c_intro_userinterfaces/web_copilot_ui)
 - \[CORE\] Added custom ciphering key to protect sensitive data. [Details](../transport_security_start_here/cipher_key)
@@ -315,25 +315,25 @@
 - \[COMS\] COMS authentication support. Backported in 2.7.1 SP3.
 - \[AM\] Internal AM (uconf:am.type=internal). Backported in 2.7.1 SP3.
 - \[PROTOCOL\] EBICS proxy support. Backported in SP4. Details
-- \[NET\] Add IPv6 support (uconf:cft.ipv6.\*). [UCONF](../admin_intro/uconf/uconf_protocols_and_networks), [Details](../protocols_start_here/ipv6)
-- \[NET\] Transfer acceleration using UDT, pTCP (uconf:acceleration.\*). [Details](../concepts/transfer_command_overview/uconf_acceleration)
+- \[NET\] Add IPv6 support (`uconf:cft.ipv6.*`). [UCONF](../admin_intro/uconf/uconf_protocols_and_networks), [Details](../protocols_start_here/ipv6)
+- \[NET\] Transfer acceleration using UDT, pTCP (`uconf:acceleration.*`). [Details](../concepts/transfer_command_overview/uconf_acceleration)
 - \[NET\] Add SOCKS5 support (CFTNET). [Details](../protocols_start_here/ipv6/use_proxy_and_socks_protocol)
 - \[CORE\] Duplicate transfer management. [DUPLICAT](../c_intro_userinterfaces/command_summary/parameter_intro/duplicat), [DACTION](../c_intro_userinterfaces/command_summary/parameter_intro/daction)
 - \[CORE\] Password management (SEND/RECV/CFTSEND/CFTRECV). [Details](../transport_security_start_here/password_management), [SPASSWD](../c_intro_userinterfaces/command_summary/parameter_intro/spasswd), [RPASSWD](../c_intro_userinterfaces/command_summary/parameter_intro/rpassw)
 - \[CORE\] Delete file when purging/deleting the catalog record transfers. [Details](../c_intro_userinterfaces/command_summary/parameter_intro/fdelete)
-- \[CORE\] Reload the dynamic unified configuration parameters (CFTUTIL RECONFIG TYPE=UCONF). [Details](../admin_intro/admin_commands_intro/reconfig)
-- \[CORE\] Dynamically increase catalog size (CFTUTIL RECONFIG TYPE=CAT,RECNB=xxx). [Details](../admin_intro/admin_commands_intro/reconfig)
-- \[CORE\] Dynamic catalog purge. (uconf:cft.purge.r\*|uconf:cft.purge.s\*) [Details](../admin_intro/admin_commands_intro/purge_catalog), [UCONF](../admin_intro/uconf/uconf_parameters)
-- \[CORE\] Display key information in CFTUTIL ABOUT. [Details](../c_intro_userinterfaces/about_cftutil/about_command)
-- \[CORE\] Customizable network sessions (uconf:cft.server.max\_session). [UCONF](../admin_intro/uconf/uconf_parameters)
-- \[CORE\] Adaptive memory consumption based on the MAXTRANS parameter and uconf:cft.server.max\_session.
+- \[CORE\] Reload the dynamic unified configuration parameters (`CFTUTIL  RECONFIG TYPE=UCONF`). [Details](../admin_intro/admin_commands_intro/reconfig)
+- \[CORE\] Dynamically increase catalog size (`CFTUTIL RECONFIG TYPE=CAT,RECNB=xxx`). [Details](../admin_intro/admin_commands_intro/reconfig)
+- \[CORE\] Dynamic catalog purge. (`uconf:cft.purge.r*`|`uconf:cft.purge.s*`) [Details](../admin_intro/admin_commands_intro/purge_catalog), [UCONF](../admin_intro/uconf/uconf_parameters)
+- \[CORE\] Display key information in `CFTUTIL ABOUT`. [Details](../c_intro_userinterfaces/about_cftutil/about_command)
+- \[CORE\] Customizable network sessions (`uconf:cft.server.max_session`). [UCONF](../admin_intro/uconf/uconf_parameters)
+- \[CORE\] Adaptive memory consumption based on the MAXTRANS parameter and `uconf:cft.server.max_session`.
 - \[CORE\] Password authentication to control remote users using synchronous communication media. [Details](../c_intro_userinterfaces/about_cftutil/control_remote_users_synch_com), [UCONF](../internal_a_m_start_here/about_passport_am/unconf_access_management)
 - \[CORE\] Force transferring a group of files to occur exclusively in heterogeneous mode. [Details](../concepts/using_the_send_command/send_group_of_files_cl), [UCONF](../admin_intro/uconf/uconf_heterogeneous_mode)
 - \[UNIX\] Performance improvement for end-of-transfer submission procedure.
 - \[UNIX\] Add option to separate the file name from the file extension. [UCONF](), [Details]()
-- \[SENTINEL\] Integrated Sentinel Heartbeat (uconf:sentinel.heartbeat.\*). [UCONF](../using_sentinel/uconf_sentinel)
-- \[SENTINEL\] Sentinel transfer progress notifications. (uconf:sentinel.xfb.transfer\_progress\_period).  [UCONF](../using_sentinel/uconf_sentinel)
-- \[NAVIGATOR\] Transfer CFT Navigator self-registration (uconf:navigator.\*). UCONF
+- \[SENTINEL\] Integrated Sentinel Heartbeat (`uconf:sentinel.heartbeat.*`). [UCONF](../using_sentinel/uconf_sentinel)
+- \[SENTINEL\] Sentinel transfer progress notifications. (`uconf:sentinel.xfb.transfer_progress_period`).  [UCONF](../using_sentinel/uconf_sentinel)
+- \[NAVIGATOR\] Transfer CFT Navigator self-registration (`uconf:navigator.*`). UCONF
 - \[GOVERNANCE\] Start/stop scripts. [UNIX](), [Windows](../cft_intro_install/windows_install_start_here/windows_install_start_here/running_cft_for_the_first_time_windows)
 - \[GOVERNANCE\] SSA (Synchrony Support Assistant) support. [Details](../cft_intro_install/unix_install_start_here/troubleshoot_registration/support_tools)
 - \[ADMIN\] Integrated restart management (SHUT RESTART=YES). [Details](../admin_intro/admin_commands_intro/shut_command)
@@ -442,7 +442,7 @@
 - \[SYST\] Added sun-x86-64 support. See the *Synchrony Supported Platforms Guide*.
 - \[GUI\] Added alias management ([uconf](../admin_intro/uconf/uconf_parameters):copilot.http.aliases).
 - \[SYST\] (Unix) Added system user support ([uconf](../admin_intro/uconf/uconf_parameters):copilot.misc.CreateProcessAsUser=yes). Backported in 2.4.1\_SP8, and 2.5.1\_SP3.
-- \[SYST\] (Windows) Manual installation of Service Mode using cscript /nologo cftsrvin.vbs. [Details](../cft_intro_install/windows_install_start_here/windows_install_start_here/running_cft_for_the_first_time_windows)
+- \[SYST\] (Windows) Manual installation of Service Mode using `cscript /nologo cftsrvin.vbs`. [Details](../cft_intro_install/windows_install_start_here/windows_install_start_here/running_cft_for_the_first_time_windows)
 - \[GUI\] Added an option to controls and limit the number of rows to be uploaded to the GUI for the Catalog and Log ([uconf](../admin_intro/uconf/uconf_parameters):copilot.cft.maxcatrows, uconf:copilot.cft.maxlogrows).
 - \[CORE\] Created a new substitution syntax for default values (&(=DEFAULT)VAR, for example EXECSE=&(=&IDF)COMMENT). Backported in 2.4.1\_SP5, 2.5.1.
 - \[CORE\] CFTPART CTRLPART=[SPART](../c_intro_userinterfaces/command_summary/parameter_intro/spart)/[RPART](../c_intro_userinterfaces/command_summary/parameter_intro/rpart)/ALL/IGNORE

@@ -27,7 +27,7 @@ For an example and command parameter details, see [Authorized flow definitions -
 
 ## List of unauthorized identifiers
 
-To create a list of excluded IDFs, you simply prefix the authorization object (CFTAUTH) ID with the letters "NOT" and list the IDFs to exclude in the IDF parameter definition. For example, you can exclude some IDF from being sent to a partner using the SAUTH parameter.
+To create a list of excluded IDFs, you simply prefix the authorization object (CFTAUTH) ID with the letters "`NOT`" and list the IDFs to exclude in the IDF parameter definition. For example, you can exclude some IDF from being sent to a partner using the SAUTH parameter.
 
 ****Example list of unauthorized IDFs****
 
@@ -44,7 +44,7 @@ CFTAUTH      ID = RBULGC8,
 IDF = fil21
 ```
 
-The log then displays the following message: CFTT25E IDF not authorized &lt;PART =% s IDF =% s>
+The log then displays the following message: `CFTT25E IDF not authorized <PART =% s IDF =% s>`
 
 ## ****Central Governance**** interoperability
 

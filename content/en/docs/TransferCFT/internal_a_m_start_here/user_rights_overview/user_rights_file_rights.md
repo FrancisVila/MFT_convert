@@ -66,7 +66,7 @@ This feature allows system users to execute end-of-transfer procedures themselve
 
 To enable this feature:
 
-1. Set cft.server.exec\_as\_user to Yes. Scripts are then executed as if by the defined in [USERID](../../../c_intro_userinterfaces/command_summary/parameter_intro/userid).
+1. Set `cft.server.exec_as_user` to `Yes`. Scripts are then executed as if by the defined in [USERID](../../../c_intro_userinterfaces/command_summary/parameter_intro/userid).
 1. Define the CFTRECV ****USERID ****option.
 
 > **Note**

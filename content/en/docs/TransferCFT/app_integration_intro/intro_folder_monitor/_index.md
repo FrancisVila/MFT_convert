@@ -71,7 +71,7 @@ The operating system services for *file-system event monitoring* functionality o
 - Directory scanning does not allow transferring a file whose name contains a wildcard character, for example the asterisk character (\*) on UNIX-like platforms. Files containing wildcard characters in their file names are not be processed; they remain in the scanning directory, and an error message displays in the log. For a list of wildcard characters per platform, see [Platform-specific characters and functions]().
 - In an z/OS environment you can only use folder monitoring on UNIX file systems.
 - The WILDMAT parameter is available on Unix/Windows/IBM i systems.
-- When using the UCONF mode to enable folder monitoring, there is a limit to the number of folders due to the maximum length of the folder\_monitoring.folders parameter being 512.
+- When using the UCONF mode to enable folder monitoring, there is a limit to the number of folders due to the maximum length of the `folder_monitoring.folders` parameter being 512.
 - Presently the folder monitoring CFTFOLDER option is only available in command line.
 - Folder monitoring using a different user (USERID) is not available on Linux if the event mode is enabled (USEFSEVENTS=YES). Additionally, this feature is not supported in the obsolete UCONF folder configuration.
 - For a multi-host installation, the METHOD=MOVE for folder monitoring is not supported on an NFS 3 shared disk due to synchronization delays. Instead, use NFS 4 or METHOD=FILE.
@@ -120,8 +120,8 @@ Where:
 
 The following example demonstrates how the PART name is used for the first directory sub-level, and the IDF name for the second level sub-directory.
 
-- Original file:     /dir\_c/scan/newyork/idf1/my\_file.txt
-- Moved file: /dir\_c/work/newyork/idf1/my\_file.20131025.txt
+- Original file:     `/dir_c/scan/newyork/idf1/my_file.txt`
+- Moved file: ` /dir_c/work/newyork/idf1/my_file.20131025.txt`
 
 ```
 CFTUTIL SEND part=newyork, idf=idf1, fname=/dir_c/work/newyork/idf1/my_file.20131025.txt
@@ -145,8 +145,8 @@ Submitting the SEND command occurs as follows:
 
 This example uses the partner name in the first directory sub-level, and the IDF name in the second.
 
-- Original file:    /dir\_c/scan/newyork/idf1/my\_file.txt
-- Metadata file: /dir\_c/work/newyork/idf1/my\_file.txt.met
+- Original file:   ` /dir_c/scan/newyork/idf1/my_file.txt`
+- Metadata file: `/dir_c/work/newyork/idf1/my_file.txt.met`
 
 ```
 CFTUTIL SEND part=newyork, idf=idf1, fname=/dir_c/scan/newyork/idf1/my_file.txt

@@ -45,8 +45,8 @@ For details on shared disks, node commands, and other multi-node considerations,
     ```
 
 - Use the two following parameters, depending on if this is the first host or an additional host:
-    -   architecture and installdir (first\_host), *or*
-    -   architecture and runtimedir (additional\_host)
+    -   `architecture `and `installdir `(first\_host), *or*
+    -   `architecture `and `runtimedir `(additional\_host)
 - Where:
     -   --architecture &lt;architecture>: Installation architecture (first\_host or additional\_host).
     -   --installdir &lt;installdir>: For a legacy upgrade, this is the directory where the Axway Installer was installed. When this parameter is assigned, it overwrites any reference in the configuration file (first\_host).
@@ -98,7 +98,7 @@ After performing an upgrade, all passwords are cyphered using a hard-coded key. 
 To check the Transfer CFT{{< TransferCFT/componentshortname  >}} version, as well as the license key and system information, enter the command:
 
 ```
-CFTUTIL ABOUT
+`CFTUTIL ABOUT`
 ```
 
 ## Uninstall an upgrade pack

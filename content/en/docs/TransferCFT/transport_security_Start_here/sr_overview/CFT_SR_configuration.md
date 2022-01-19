@@ -18,10 +18,10 @@ Step overview:
 
 Follow the installation instructions provided in the [Secure Relay RA Installation Guide](https://docs.axway.com/bundle/SecureRelay_271_InstallationGuide_allOS_en_PDF/resource/SecureRelayRA_InstallationGuide_allOS_en_PDF.pdf). During installation, it is essential that you configure the Router Agent CA and user certificate as follows to enable secure communication between the Master Agent and Router Agent:
 
-- &lt;CACertificate>CA\_for\_RA.der&lt;/CACertificate>
-- &lt;UserCertificate>USER\_for\_RA.p12&lt;/UserCertificate>
+- `<CACertificate>CA_for_RA.der</CACertificate>`
+- `<UserCertificate>USER_for_RA.p12</UserCertificate>`
 
-You need these values when you configure the Master Agent in the Transfer CFT{{< TransferCFT/componentlongname  >}} configuration, where the user certificate that you use must be signed by CA\_for\_RA. You should use the same CA and USER certificate as for the Master Agent.
+You need these values when you configure the Master Agent in the Transfer CFT{{< TransferCFT/componentlongname  >}} configuration, where the user certificate that you use must be signed by `CA_for_RA`. You should use the same CA and USER certificate as for the Master Agent.
 
 ## Configure the Router Agents in Transfer CFT{{< TransferCFT/componentlongname  >}}
 
@@ -29,7 +29,7 @@ After completing installation, configure the Router Agents in the Transfer CFT{{
 
 1. Set the value for the number of Router Agents using the `secure_relay.ra` parameter. Transfer CFT{{< TransferCFT/componentlongname >}} generates a set of `secure_relay.ra.n.*` parameters, where the number, *n*, corresponds to the number of Router Agents you defined in this parameter.
 1. You can use the default values for most fields, but you must customize the` secure_relay.ra.0.dmz` parameter. This value must be unique; for example, you can increment the DMZ0 value by one for each Router Agent so that the  second Router Agent has the value` secure_relay.ra.0.dmz = DMZ1`.
-1. Configure the host address for each Secure Relay host using secure\_relay.ra.0.host.
+1. Configure the host address for each Secure Relay host using `secure_relay.ra.0.host`.
 
 ****Example of two Router Agent definitions****
 
@@ -59,9 +59,9 @@ secure_relay.ra.1.outcall_network_interface =
 
 Configure the following UCONF parameters to enable the Master Agent communication with the Router Agent:
 
-- secure\_relay.ma.ca\_cert\_fname = &lt;must be the same as the CA\_for\_RA.der value>
-- secure\_relay.ma.cert\_fname = &lt;must be a P12 user certificate that is signed by the CA\_for\_RA.der>
-- secure\_relay.ma.cert\_password = &lt;user certificate password>
+- `secure_relay.ma.ca_cert_fname = <must be the same as the CA_for_RA.der value>`
+- `secure_relay.ma.cert_fname = <must be a P12 user certificate that is signed by the CA_for_RA.der>`
+- `secure_relay.ma.cert_password = <user certificate password>`
 
 ## Enable Secure Relay and configure the Java
 

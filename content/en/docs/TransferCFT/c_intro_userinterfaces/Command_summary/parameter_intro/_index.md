@@ -15,8 +15,7 @@ limitations, and default values when applicable.
 
 #### CFTNET  (command where the parameter is used)
 
-\[ACB = {ID value for this CFTNET
-| string}\]  ( parameter
+`[ACB = {ID value for this CFTNET   | string}] ` ( parameter
 format, where the underlined value is the default value)
 
 The resource identified to the access method. The default value is defined

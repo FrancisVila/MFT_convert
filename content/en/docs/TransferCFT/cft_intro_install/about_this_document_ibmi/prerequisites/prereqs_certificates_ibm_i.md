@@ -18,13 +18,13 @@ For a PEM certificate, you must create a file with a record length equal to the 
 ****Example
 &lt;/b>&lt;/p>****
 
-In this example, assume that your certificate 2k\_l1\_user1\_key.pem size is 1,191 bytes. Before uploading this certificate to the IBM i server, you would need to create a file with a record length of 1,191 bytes, as follows:
+In this example, assume that your certificate `2k_l1_user1_key.pem` size is 1,191 bytes. Before uploading this certificate to the IBM i server, you would need to create a file with a record length of 1,191 bytes, as follows:
 
 ```
 CRTPF FILE(YOURLIB/PEM_CERT) RCDLEN(1191)
 ```
 
-You can use FTP, for example, to then upload 2k\_l1\_user1\_key.pem to YOURLIB/PEM\_CERT.
+You can use FTP, for example, to then upload `2k_l1_user1_key.pem` to `YOURLIB/PEM_CERT`.
 
 - You must transfer PEM certificates in ASCII mode
 - All other certificates can be transferred in binary mode

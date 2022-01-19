@@ -14,7 +14,7 @@ This section describes how to create a reusable and distributable Transfer CFT{{
 
 Perform the following steps:
 
-1. Create a user profile using the command: CRTUSRPRF
+1. Create a user profile using the command: `CRTUSRPRF`
 1. Create a temporary library, for example:  
     ```
     CRTLIB CFTTMP

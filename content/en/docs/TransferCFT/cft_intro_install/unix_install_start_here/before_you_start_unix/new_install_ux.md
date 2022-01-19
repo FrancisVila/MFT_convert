@@ -2,9 +2,9 @@
     "title": "Customize the initialize.properties file",
     "linkTitle": "3. Customize the initialize.properties file",
     "weight": "150"
-}A common practice is to create a copy of the initialize.properties file, which is located in the downloaded installation package. This gives you an initial intact version should you later need it.
+}A common practice is to create a copy of the `initialize.properties ` file, which is located in the downloaded installation package. This gives you an initial intact version should you later need it.
 
-Customize the initialize.properties file. Use the table below to help you with parameter settings; note that the CryptoKey\_Password is mandatory. Be sure that if you want to use special characters in a configuration file field, you protect the value by enclosing it in double quotation marks ("").
+Customize the `initialize.properties ` file. Use the table below to help you with parameter settings; note that the `CryptoKey_Password` is mandatory. Be sure that if you want to use special characters in a configuration file field, you protect the value by enclosing it in double quotation marks ("").
 
 > **Note**
 >
@@ -16,7 +16,7 @@ To use the # character in a value, for example, protect the entire string using 
 
 `CryptoKey_Password = "Aedft#439"`
 
-If you do not enclose this value in "", the string is interpreted as: CryptoKey\_Password = Aedft
+If you do not enclose this value in "", the string is interpreted as: `CryptoKey_Password = Aedft`
 
 > **Note**
 >
@@ -56,7 +56,7 @@ QQQ\_QQQ\_QQQ split BIG table
 >
 > \*This host address defines:
 
-- The unconf sentinel.trkproductipaddr parameter, which is the host address that identifies this host
+- The unconf `sentinel.trkproductipaddr `parameter, which is the host address that identifies this host
 - The host address used to connect this Transfer CFT Copilot server
 
 ### Security configuration parameters of initialize.properties
@@ -139,7 +139,7 @@ QQQ\_QQQ\_QQQ split BIG table
 
 ## Password management
 
-The passwords used in the initialize.properties file are encrypted in the original file when you run the installation builder. You can then use the original file as a template for future installations. Impacted passwords are prefaced by &lt;CFT\_PASSWORD>, and include the following:
+The passwords used in the `initialize.properties` file are encrypted in the original file when you run the installation builder. You can then use the original file as a template for future installations. Impacted passwords are prefaced by &lt;CFT\_PASSWORD>, and include the following:
 
 - CryptoKey\_Password
 - UI\_DefaultUser\_Password

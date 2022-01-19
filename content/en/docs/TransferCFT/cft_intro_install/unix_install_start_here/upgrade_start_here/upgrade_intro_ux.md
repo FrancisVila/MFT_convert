@@ -134,5 +134,5 @@ Once you complete an upgrade from 3.7 or lower, you must execute the profile bef
 To check the Transfer CFT{{< TransferCFT/componentshortname  >}} version, as well as the license key and system information, enter the command:
 
 ```
-CFTUTIL ABOUT
+`CFTUTIL ABOUT`
 ```

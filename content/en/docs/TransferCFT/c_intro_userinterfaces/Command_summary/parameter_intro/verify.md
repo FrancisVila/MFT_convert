@@ -48,7 +48,7 @@ The DIRECT=CLIENT VERIFY options are available as of Transfer CFT{{< TransferCF
 
 ****Example 1****
 
-This example demonstrates the use of the client NONE value.
+This example demonstrates the use of the client `NONE` value.
 
 `CFTSSL type=client, verify=none and CFTSSL type=server, verify=none`
 
@@ -56,7 +56,7 @@ This example demonstrates the use of the client NONE value.
 
 ****Example 2****
 
-This example demonstrates the use of the client ENFORCED value.
+This example demonstrates the use of the client `ENFORCED `value.
 
 `CFTSSL type=client, verify=ENFORCED and CFTSSL type=server, verify=required`
 
@@ -66,7 +66,7 @@ This example demonstrates the use of the client ENFORCED value.
 
 ****Example 3****
 
-This example demonstrates a different use of the ENFORCED value. When acting as a client, ENFORCED enables Transfer CFT to cancel a transfer if the server does not require the client authentication. Here, the transfer fails with diagi 260 due to the fact that the client requires authentication:
+This example demonstrates a different use of the `ENFORCED `value. When acting as a client, `ENFORCED `enables Transfer CFT to cancel a transfer if the server does not require the client authentication. Here, the transfer fails with diagi 260 due to the fact that the client requires authentication:
 
 `CFTSSL type=client, verify=ENFORCED and CFTSSL type=server, verify=NONE`
 

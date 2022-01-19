@@ -55,29 +55,29 @@ Refer to the programming examples, RPG COPY clauses, and procedures, which are s
 
 ## Creating an API application
 
-The TCPPARAM configuration sample is located in CFTPROD/UTIN.
+The `TCPPARAM` configuration sample is located in `CFTPROD/UTIN`.
 
 ## Application components
 
-The &lt;installdir>/runtime/src/capi subdirectory contains the:
+The `<installdir>/runtime/src/capi `subdirectory contains the:
 
 - Sample source module,
-    called apixmp1.c, which interacts with Transfer CFT{{< TransferCFT/componentshortname >}}. This program
+    called `apixmp1.c,` which interacts with Transfer CFT{{< TransferCFT/componentshortname >}}. This program
     reads the Transfer CFT{{< TransferCFT/componentshortname >}} catalog and displays its contents in part or in
     full, depending on the restrictions set in the command line.
-- makefile
-    compilation procedure, which uses the apixmp1.c sample source module
+- `makefile`
+    compilation procedure, which uses the` apixmp1.c `sample source module
     to generate the APIXMPI executable file.
 
-The CFTPGM library subdirectory contains the libapisrv1.srvpgm
+The `CFTPGM `library subdirectory contains the `libapisrv1.srvpgm`
 module required to use Transfer CFT{{< TransferCFT/componentshortname  >}} APIs.
 
 ## Generating the application
 
-To generate the *APIXMP1* sample program:
+To generate the *`APIXMP1`* sample program:
 
-1. Access the &lt;installdir>/runtime/src/capi directory.
-1. Enter the command:  gmake
+1. Access the `<installdir>/runtime/src/capi `directory.
+1. Enter the command:  `gmake`
 
 ## Testing the configuration
 
@@ -85,13 +85,12 @@ To test the configuration:
 
 1. Connect to the IBM session with your Transfer CFT user.
 1. Generate the Transfer CFT{{< TransferCFT/componentshortname >}} internal datafiles
-    using cftinit with the configuration file:  
+    using `cftinit` with the configuration file:  
     CALL PGM(CFTINIT) PARM('CFTPROD/UTIN(TCPPARAM)')
-1. When the cftinit complete
+1. When the` cftinit complete`
     message is displayed, run Transfer CFT{{< TransferCFT/componentshortname >}} using the command:  
     cftstart
-1. When the CFTMAIN process
-    ID is xxxxx message is displayed, perform a transfer:  
+1. When the `CFTMAIN process   ID is xxxxx `message is displayed, perform a transfer:  
     CALL PGM(CFTUTIL) PARM(SEND 'part=boston,idf=txt')
 1. Check that the transfer is
     complete:  

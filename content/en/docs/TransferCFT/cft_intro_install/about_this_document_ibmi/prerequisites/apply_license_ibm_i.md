@@ -15,7 +15,7 @@
 ### Obtain a license key
 
 1. For a new installation, install Transfer CFT{{< TransferCFT/componentshortname >}}.
-1. After completing the installation, or for an existing installation, use the command **cftutil about** to retrieve your system information. For details see the examples below.
+1. After completing the installation, or for an existing installation, use the command **`cftutil about`** to retrieve your system information. For details see the examples below.
 1. Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.
     -   For a US key, contact: **`fulfillment@us.axway.com`**
     -   For an EMEA or APAC key, contact: **`product.key@axway.com`**
@@ -51,7 +51,7 @@ Description . . . . . : System serial number
 Serial number . . . . : 06890AP
 ```
 
-In this example, you would provide the CPU ID 06890AP.
+In this example, you would provide the CPU ID` 06890AP`.
 
 > **Note**
 >

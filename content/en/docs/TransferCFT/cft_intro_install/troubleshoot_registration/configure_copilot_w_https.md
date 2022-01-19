@@ -61,21 +61,21 @@ In this section and the example below, we use the sample certificate delivered w
 
 ### Installing a certificate in the Windows keystore
 
-1. In Windows Explorer, navigate to the certificate Axway\_MFT\_Demonstration\_Root\_Certificate.der and right-click.
+1. In Windows Explorer, navigate to the certificate `Axway_MFT_Demonstration_Root_Certificate.der` and right-click.
 1. Select the “Install certificate” option.
-1. Follow the screen instructions. Windows automatically imports the certificate into its keystore, in the Intermediate certificate authorities folder.
+1. Follow the screen instructions. Windows automatically imports the certificate into its keystore, in the `Intermediate certificate authorities` folder.
 
 ****Alternative method****
 
 1. In Internet Explorer, select ****Tools > Internet Options.****
 1. In the ****Content**** tab select the ****Certificate**** button.
 1. Select ****Import,**** which starts the ****Certificate Import Wizard****.
-1. Click ****Next****, and ****Browse**** to the Axway\_MFT\_Demonstration\_Root\_Certificate.der.
+1. Click ****Next****, and ****Browse**** to the` Axway_MFT_Demonstration_Root_Certificate.der`.
 1. Follow the screen instructions. Windows imports the certificate into its keystore.
 
 ### Installing a certificate in the Java keystore
 
-The Java keystore is a file located at &lt;installation directory>/jre/lib/security/cacerts. The default password for this keystore is “changeit”.
+The Java keystore is a file located at` <installation directory>/jre/lib/security/cacerts`. The default password for this keystore is “changeit”.
 
 Use the keytool command as follows to import the Axway\_MFT\_Demonstration\_Root\_Certificate.der certificate into the Java keystore:
 
@@ -91,8 +91,8 @@ keytool –importcert
 
 The html files used by the Transfer CFT Copilot server to be accessed by a browser are:
 
-- runtime/wwwroot/admin.html
-- runtime/wwwroot/index.html
+- `runtime/wwwroot/admin.html `
+- `runtime/wwwroot/index.html`
 
 These files contain a parameter SSL\_KEYSTORE, which are modifiable. The default value for this parameter is “Windows”, and the only other possible value is “” (empty string).
 

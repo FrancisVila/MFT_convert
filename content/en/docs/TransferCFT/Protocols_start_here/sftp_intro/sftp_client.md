@@ -100,7 +100,7 @@ Use  one of the following methods to configure the client password:
 
 <!-- -->
 
-- Uconf definition: When NSPASSW=\_AUTH\_, authentication is specified in uconf:cft.server.authentication\_method is used.
+- Uconf definition: When NSPASSW=\_AUTH\_, authentication is specified in `uconf:cft.server.authentication_method `is used.
 
 > **Note**
 >

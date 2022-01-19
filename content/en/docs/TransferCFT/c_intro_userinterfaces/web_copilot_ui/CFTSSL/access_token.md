@@ -4,7 +4,7 @@
     "weight": "210"
 }An access token is a unique identifier, or credential, that an application can use to access an API. The token indicates to the API that the holder is authorized to access the API and the resources available to that user or account.
 
-The UCONF copilot.restapi.api\_token\_validity parameter sets the access token's expiration period. By default, the value is set to 0, which disables expiration. You can modify this parameter if you want access tokens to have a specific expiration period. The token\_validity parameter applies to tokens at the time they are created. Tokens that exist prior to modifying this value retain the expiration date that was set at the time they were created.
+The UCONF `copilot.restapi.api_token_validity` parameter sets the access token's expiration period. By default, the value is set to 0, which disables expiration. You can modify this parameter if you want access tokens to have a specific expiration period. The` token_validity` parameter applies to tokens at the time they are created. Tokens that exist prior to modifying this value retain the expiration date that was set at the time they were created.
 
 > **Note**
 >
@@ -29,12 +29,12 @@ In the Transfer CFT{{< TransferCFT/componentlongname  >}} UI:
 
 Alternatively, you can use the Swagger REST API to generate the token.
 
-1. Log on the Swagger UI at https://&lt;UI\_server\_host>:&lt;RestApi\_port>/cft/api/v1/ui.
+1. Log on the Swagger UI at `https://<UI_server_host>:<RestApi_port>/cft/api/v1/ui`.
 1. Authenticate with a user.
 1. In the **Miscellaneous** category, select **Post** >** objects/cfttoken** option.
 1. Select **Try it out**.
 1. Select **Execute**.
-1. Copy the Value field from the response; this is your generated token.
+1. Copy the `Value `field from the response; this is your generated token.
 
 ## Revoke a token
 

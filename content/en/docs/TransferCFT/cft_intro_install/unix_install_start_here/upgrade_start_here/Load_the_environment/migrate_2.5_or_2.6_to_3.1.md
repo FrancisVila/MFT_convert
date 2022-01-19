@@ -17,7 +17,7 @@ Migrate PARM, PART, IDF and other static configuration objects.
 1. Export your static configuration objects using the command CFTUTIL CFTEXT. Enter:
 
 ```
-CFTUTIL CFTEXT type=all, fout=cft-extract.conf
+`CFTUTIL CFTEXT type=all, fout=cft-extract.conf`
 ```
 
 1. Open the extract configuration files, cft-extract.conf, and update the file paths with those of the new Transfer CFT 3.9{{< TransferCFT/componentversion >}} installation.
@@ -42,7 +42,7 @@ cftinit cft-extract.conf
 
 <!-- -->
 
-1. Display your UCONF parameters using the CFTUTIL LISTUCONF command. Enter: CFTUTIL LISTUCONF scope=user
+1. Display your UCONF parameters using the CFTUTIL LISTUCONF command. Enter: `CFTUTIL LISTUCONF scope=user`
 
 <!-- -->
 
@@ -52,9 +52,9 @@ cftinit cft-extract.conf
 
 1. Create a script file such as:
 
-- UNIX: uconf-import.sh
+- UNIX: `uconf-import.sh`
 
-- Windows: uconf-import.bat
+- Windows: `uconf-import.bat`
 
 1. For each parameter you select, add a line to the new script file in the format:
 
@@ -70,7 +70,7 @@ UCONFSET id=<parameter_id>, value=<value>
 
 ```
 
-CFTUTIL <prefix_character><script_filename>
+`CFTUTIL <prefix_character><script_filename>`
 
 ```
 
@@ -90,7 +90,7 @@ For Transfer CFT 2.5, you must be at Transfer CFT 2.5.1 SP2 or higher before per
 
 <!-- -->
 
-1. Export your PKI certificates using the command PKIUTIL PKIEXT: PKIUTIL PKIEXT fout=pki-extract.conf
+1. Export your PKI certificates using the command PKIUTIL PKIEXT: `PKIUTIL PKIEXT fout=pki-extract.conf`
 
 <!-- -->
 
@@ -98,21 +98,21 @@ For Transfer CFT 2.5, you must be at Transfer CFT 2.5.1 SP2 or higher before per
 
 <!-- -->
 
-1. Create a new PKI internal datafile using the command PKIUTIL PKIFILE. Replace &lt;pki\_database\_filename> with the appropriate value: PKIUTIL PKIFILE fname=&lt;pki\_database\_filename>, mode='CREATE’
+1. Create a new PKI internal datafile using the command PKIUTIL PKIFILE. Replace &lt;pki\_database\_filename> with the appropriate value: `PKIUTIL PKIFILE fname=<pki_database_filename>, mode='CREATE’`
 
 - UNIX: $CFTPKU
 
 - Windows: The absolute path value for the CFTPKU environment variable
 
-1. Import your PKI certificates into the new Transfer CFT 3.9{{< TransferCFT/componentversion >}} using the command PKIUTIL. Replace the &lt;script\_filename> with the new script file path: PKIUTIL &lt;prefix\_character>&lt;script\_filename>
+1. Import your PKI certificates into the new Transfer CFT 3.9{{< TransferCFT/componentversion >}} using the command PKIUTIL. Replace the &lt;script\_filename> with the new script file path: `PKIUTIL <prefix_character><script_filename>`
 
 ****Example****
 
-- UNIX: PKIUTIL @pki-extract.conf
+- UNIX: `PKIUTIL @pki-extract.conf`
 
 <!-- -->
 
-- Windows: PKIUTIL #pki-extract.conf
+- Windows: `PKIUTIL #pki-extract.conf`
 
 ## Migrating the runtime environment
 
@@ -161,11 +161,11 @@ CFTMI240 MIGR type=COM, direct=FROMCOM, ifname=<com_2.5_filename>, ofname=com_ou
 
 1. Import the communication media file using command CFTMI. Replace the &lt;com\_filename\_new\_installation> with the corresponding environment variable:
 
-- UNIX: \_CFTCOM
+- UNIX: `_CFTCOM`
 
 <!-- -->
 
-- Windows: $CFTCOM
+- Windows: `$CFTCOM`
 
 Example
 

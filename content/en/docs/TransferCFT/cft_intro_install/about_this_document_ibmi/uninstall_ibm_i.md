@@ -9,8 +9,8 @@
 
 In the HFS partition remove:
 
-- /home/cft/cft332/install
-- /home/cft/cft332/runtime
+- `/home/cft/cft332/install `
+- `/home/cft/cft332/runtime `
 
 > **Note**
 >

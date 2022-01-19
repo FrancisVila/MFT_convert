@@ -151,7 +151,7 @@ The following example shows how to retrieve a protocol trace. You can use the sa
 
     CFTTRACE STARTTRC ID=T1,TID=TRC0,PTRACE=28
 
-1. Check that the CFTATMC process is started.
+1. Check that the `CFTATMC `process is started.
 
 1. Execute the transfer to trace.
 

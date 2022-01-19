@@ -10,9 +10,9 @@ certificate database.
 ```
 PKIFILE
 
-[MODE =  {REPLACE | CREATE | DELETE},]
+`[MODE =  {REPLACE | CREATE | DELETE},]`
 
-FNAME =  string,
+`FNAME =  string,`
 
 ```
 

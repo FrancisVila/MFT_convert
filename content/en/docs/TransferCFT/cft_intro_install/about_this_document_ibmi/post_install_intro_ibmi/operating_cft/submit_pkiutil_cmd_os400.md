@@ -14,7 +14,7 @@ You must define certain elements in the product configuration if you want to use
 
 To use the PKIUTIL utility:
 
-1. Access the Transfer CFT &lt;span class="italic\_in\_para">Main Menu&lt;/span> screen. In the Main Menu enter the command &lt;span class="code">cft&lt;/span> and press &lt;span class="bold\_in\_para">&lt;b>Enter&lt;/b>&lt;/span> to open the &lt;span class="italic\_in\_para">Manager Menu&lt;/span>.
+1. Access the Transfer CFT &lt;span class="italic\_in\_para">Main Menu&lt;/span> screen. In the Main Menu enter the command &lt;span class="code">&lt;code>cft&lt;/code>&lt;/span> and press &lt;span class="bold\_in\_para">&lt;b>Enter&lt;/b>&lt;/span> to open the &lt;span class="italic\_in\_para">Manager Menu&lt;/span>.
     &lt;/li>
 1. Select ****option**** **2. Security commands**. Then select option **2. Interpret Security configuration** and enter the member you want to interpret. By default this is the PKIBASE member in the UTIN file in CFTPROD library.
 1. To edit the security configuration file selection option 2. Security commands then option 1. Edit Security configuration file and enter the member you want to edit. By default it is the PKIBASE member in the UTIN file in CFTPROD library.
@@ -60,7 +60,7 @@ IKPASSW=user, STATE=ACT, ROOTCID=NEWCA, IKFORM=DER
 
 ### List PKI Internal datafiles contents
 
-1. To list the PKI internal datafiles  contents, enter the command: LISTPKI
+1. To list the PKI internal datafiles  contents, enter the command: ` LISTPKI`
 1. Press ENTER to execute the command.
 
 A correct execution displays the following messages:

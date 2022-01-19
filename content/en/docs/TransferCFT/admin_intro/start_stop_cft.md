@@ -39,7 +39,7 @@ When opening a new session to manage your Transfer CFT{{< TransferCFT/components
 
 ****UNIX only****
 
-To simplify the use of cft commands, you can use the autocomplete feature when working in interactive mode. See [Autocomplete](../../c_intro_userinterfaces/about_cftutil/autocomplete).
+To simplify the use of `cft `commands, you can use the autocomplete feature when working in interactive mode. See [Autocomplete](../../c_intro_userinterfaces/about_cftutil/autocomplete).
 
 <span id="Start"></span>
 
@@ -104,7 +104,7 @@ Library . . . . . . . . . . . > CFTPROD Name, \*LIBL, \*CURLIB
 Use the following command to start Transfer CFT{{< TransferCFT/componentshortname  >}}after installation or stopping the server.
 
 ```
-cft start
+` cft start`
 ```
 
 In Windows only you can also use the Start menu or automatically start the server in Service Mode. See <a href="#Windows2" class="MCXref xref">Windows tasks</a>.

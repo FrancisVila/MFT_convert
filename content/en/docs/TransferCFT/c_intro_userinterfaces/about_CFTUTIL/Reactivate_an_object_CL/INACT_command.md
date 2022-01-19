@@ -43,7 +43,7 @@ Where:
 
 - `CFTPART_ID` is the identifier of the partner to deactivate. To deactivate several partners with a single command, use wildcard characters or meta characters.
 - Mode is the mode to be deactivated, with values: "BOTH" , "B", "REQUESTER", "R" , "SERVER", "S"
-- When FORCE is set to YES, stops any transfers in progress involving the deactivated partners.
+- When `FORCE `is set to `YES`, stops any transfers in progress involving the deactivated partners.
 
 ****Example****
 

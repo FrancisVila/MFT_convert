@@ -8,7 +8,7 @@
 
 Use the JCL INSTALL(CFTCATDY). There is no need to stop Transfer CFT or Copilot prior to performing this action. Check the recommendations provided in the CFTCATDY JCL.
 
-Modify the recnb parameter (the new number of records), in the reconfig command, to the new target catalog size.
+Modify the `recnb `parameter (the new number of records), in the `reconfig `command, to the new target catalog size.
 
 For more general information on expanding the catalog, you can refer to the section *Housekeeping for catalog and output files* in the *Transfer CFT User Guide.*
 

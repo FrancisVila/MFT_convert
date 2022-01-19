@@ -12,7 +12,7 @@ For z/OS 2.1, you can export JCL variables:
 
 Export Global
 
-Uncomment //\* EXPORT SYMLIST=\* in CFTENV member
+Uncomment `//*     EXPORT SYMLIST=* in CFTENV` member
 
 Or
 
@@ -251,8 +251,8 @@ To activate the SFTP parameters:
 1. -   In the CFTPARM MEMBER, uncomment the `/*   sftp,sftpcli, */` line.
 
 1. -   Uncomment the following:
-        -   //\* DD DISP=SHR,
-        -   //\* DSN=<u>&QUAL</u>..SAMPLE(CFTSFTP)
+        -   `//* DD DISP=SHR,`
+        -   `//* DSN=&QUAL..SAMPLE(CFTSFTP)`
 
 ```
 E50PARM

@@ -18,7 +18,7 @@ Password for the user who is receiving the file. You can provide this directly, 
 
 `* * passwd4`
 
-Or you can use \_AUTH\_ to indicate authentication method as defined in the uconf cft.server.authentication\_method parameter.
+Or you can use \_AUTH\_ to indicate authentication method as defined in the uconf `cft.server.authentication_method` parameter.
 
 ****Example****
 

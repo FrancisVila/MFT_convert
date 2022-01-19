@@ -127,7 +127,7 @@ Command syntax: [DISPLAY](../../../command_summary)
 | PHASESTEP  | The processing phase step.  |
 | PIDTU  | The parent idtu is the idtu of the generic transfer. This means that for a group of files, file collection, or for broadcasting, the child transfers are now linked to the parent via the PIDTU.  |
 | RUSER | Displays value as defined in the CONTENT parameter. |
-| SORTBY  | Use this parameter to display information in an alphabetical/alphanumberic order.<br/> For example, to sort by partner name and identifier, enter:<br/> CFTUTIL DISPLAY SORTBY=(PART,IDF)<br/> Additionally, you can add a prefix to define the criteria direction. Use + to increase (default) or - to decrease. For example:<br/> <code>CFTUTIL DISPLAY SORTBY=(-IDTU)</code> |
+| SORTBY  | Use this parameter to display information in an alphabetical/alphanumberic order.<br/> For example, to sort by partner name and identifier, enter:<br/> <code>CFTUTIL DISPLAY SORTBY=(PART,IDF)</code><br/> Additionally, you can add a prefix to define the criteria direction. Use <code>+</code> to increase (default) or <code>-</code> to decrease. For example:<br/> <code>CFTUTIL DISPLAY SORTBY=(-IDTU)</code> |
 | STATE  | Defines the transfer request state.  |
 | SUSER | Displays value as defined in the CONTENT parameter. |
 | TYPE  | Defines the concerned type (object, medium, etc.).  |

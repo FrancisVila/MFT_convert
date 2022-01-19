@@ -64,7 +64,7 @@ General Usage: CFTTF -pcfg conffile \[-plain plainFilename\] \[-entitiesLocation
 
 \[-messagesPath messagesPath\] \[-template xmlFilename\]
 
-To generate a passphrase, use the command: CFTTF -pw \[password\]
+To generate a passphrase, use the command: `CFTTF -pw [password]`
 
 ****Example****
 
@@ -110,7 +110,7 @@ The following certificates are located in: &lt;CFTDIRRUNTIME>/conf/tf/.
 
 ## Trusted File messages
 
-The following messages are used by Trusted File, and are located in: $CFTDIRINSTALL/distrib/tf/english/****.**** Each file contains a set of error message associated with the type of encoding used.
+The following messages are used by Trusted File, and are located in: `$CFTDIRINSTALL/distrib/tf/english/`****.**** Each file contains a set of error message associated with the type of encoding used.
 
 - xasn.msg
 - xp3.msg

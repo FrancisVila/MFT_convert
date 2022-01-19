@@ -18,10 +18,10 @@ If you defined a timer for catalog alerts, TLVCLEAR, once the usage surpasses th
 To enable the auto-expand option, with Transfer CFT{{< TransferCFT/componentshortname  >}} running:
 
 1. Set the uconf values for:
-    -   cft.cftcat.auto\_expand\_percent
-    -   cft.cftcat.auto\_expand\_max\_size
-1. To activate the new values, run the command: CFTUTIL reconfig type = uconf
-    -   If Transfer CFT{{< TransferCFT/componentshortname >}} is stopped when setting uconf values, you do not need to execute the reconfig command.
+    -   `cft.cftcat.auto_expand_percent `
+    -   `cft.cftcat.auto_expand_max_size`
+1. To activate the new values, run the command: `CFTUTIL reconfig type = uconf`
+    -   If Transfer CFT{{< TransferCFT/componentshortname >}} is stopped when setting uconf values, you do not need to execute the `reconfig `command.
 
 
 | Parameter  | Default  | Description  |

@@ -16,7 +16,7 @@ Enabling IPv6 support for applications may have adverse effects on the behavior 
 
 ### Unified configuration settings
 
-To enable IPv6 name resolution for Transfer CFT, set the following unified configuration parameters to ****NO**** using either the CFTUTIL uconfset command or the UI [Unified configuration](../../admin_intro/uconf) option.
+To enable IPv6 name resolution for Transfer CFT, set the following unified configuration parameters to ****NO**** using either the `CFTUTIL uconfset` command or the UI [Unified configuration](../../admin_intro/uconf) option.
 
 
 | Parameter  | Value  | Description  |
@@ -31,15 +31,15 @@ You can also configure IPv6 addresses instead of names in the Transfer CFT conf
 
 ### About name resolution
 
-When ipv6.disable\_connect is set to ****No****, a hostname used by Transfer CFT to connect to a host may refer to either an IPv4 or IPv6 address, or a list of addresses of any type.
+When `ipv6.disable_connect` is set to ****No****, a hostname used by Transfer CFT to connect to a host may refer to either an IPv4 or IPv6 address, or a list of addresses of any type.
 
 When a name resolution request returns a list of several entries, Transfer CFT tries all entries successively until either the connection succeeds or the list is exhausted. This behavior allows Transfer CFT, in a situation where the name might refer to both IPv4 and IPv6 addresses, to successfully connect to a remote service that is listening for either IPv6 TCP connections or IPv4 TCP connections, but not listening for both address types.
 
-When ipv6.disable\_listen is set to ****No****, the hostname used by Transfer CFT to listen for incoming connections can refer to an IPv4 address, an IPv6 address, or  a list of addresses of any type. If the name resolution request returns a list with several results, Transfer CFT listens only to the first entry in the list.
+When `ipv6.disable_listen` is set to ****No****, the hostname used by Transfer CFT to listen for incoming connections can refer to an IPv4 address, an IPv6 address, or  a list of addresses of any type. If the name resolution request returns a list with several results, Transfer CFT listens only to the first entry in the list.
 
 When the resolution list contains both IPv4 and IPv6 entries, the first entry generally refers to an IPv6 address, although all operating systems are not guaranteed to respond this way. When Transfer CFT listens on an IPv6 address of a network interface, it may or may not also receive IPv4 incoming connections targeting this interface. See [Hybrid dual-stack implementation](#Hybrid%20dual-stack%20implementation).
 
-While you can configure the two IPv6 UCONF parameters independently, it is recommended that you **not** set ipv6.disable\_listen to No, and ipv6.disable\_connect to Yes.
+While you can configure the two IPv6 UCONF parameters independently, it is recommended that you **not** set` ipv6.disable_listen` to `No`, and `ipv6.disable_connect` to `Yes`.
 
 <span id="host attributes in CFTNET"></span>
 

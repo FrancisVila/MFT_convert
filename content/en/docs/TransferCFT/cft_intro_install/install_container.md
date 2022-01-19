@@ -56,6 +56,6 @@ Use the following links to find more information in the associated README:
 
 ## Download the Transfer CFT Docker image
 
-You can download the Transfer CFT{{< TransferCFT/transfercftname  >}} Docker image from the [Axway support](http://support.axway.com/) site. From the **Downloads** page, search Transfer CFT and click to download the Transfer\_CFT\_&lt;version>\_DockerImage\_allOS\_&lt;BN>.zip.
+You can download the Transfer CFT{{< TransferCFT/transfercftname  >}} Docker image from the [Axway support](http://support.axway.com/) site. From the **Downloads** page, search Transfer CFT and click to download the `Transfer_CFT_<version>_DockerImage_allOS_<BN>.zip`.
 
  

@@ -19,7 +19,7 @@ In this section:
 
 ## Use case with no security applied
 
-In this use case, there is no security enabled either in Transfer CFT or Central Governance (am.type=none). However, normally when using Central Governance with Transfer CFT the default value is set to am.type=passport. This results in no control over the transfer owner.
+In this use case, there is no security enabled either in Transfer CFT or Central Governance (`am.type=none`). However, normally when using Central Governance with Transfer CFT the default value is set to `am.type=passport`. This results in no control over the transfer owner.
 
 <span id="User"></span>
 

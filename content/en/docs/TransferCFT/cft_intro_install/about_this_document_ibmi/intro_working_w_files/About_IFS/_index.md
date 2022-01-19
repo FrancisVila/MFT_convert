@@ -25,11 +25,11 @@ The IFS provides a common interface to another system on the IBM i. After insta
 Respect the following naming conventions:
 
 - The file name must be prefixed by the slash character /
-    -   For example: /home/filename
+    -   For example: `/home/filename`
 - You cannot replace environmental variables in the file name
-    -   For example: $HOME/filename is not a recognized filename
+    -   For example:` $HOME/filename` is not a recognized filename
 - You cannot precede filenames by a relative path
-    -   For example: ../filename is not a recognized filename
+    -   For example: `../filename` is not a recognized filename
 
 ### Encoding IFS data
 

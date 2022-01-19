@@ -26,7 +26,7 @@ The *&lt;installdir>/lib* subdirectory contains the:
 To generate the *APIXMP1* sample program, proceed as follows.
 
 1. Access the *&lt;installdir>/runtime/src/capi* directory.
-1. Enter the command:   ****make****
+1. Enter the command:   ****`make`****
 
 ## Testing the configuration
 

@@ -22,7 +22,7 @@
 
 **Recommendations**
 
-- The delivered examples to create the files LOG and ACCOUNT (D40INIT..) have a format=V24 definition. Ensure that the FORMAT parameter in the CFTLOG and CFTACCNT commands are consistent.
+- The delivered examples to create the files LOG and ACCOUNT (D40INIT..) have a `format=V24` definition. Ensure that the FORMAT parameter in the CFTLOG and CFTACCNT commands are consistent.
 - For Copilot usage, verify that the uconf cft.install\_dir and copilot.HTTP.HttpRootDir parameters are correctly configured - that is, consistent with the variable values in the A03PARM and ..UPARM (COPCFG) file.
 - As of Transfer CFT 3.1.3:
     -   A new UCONFRUN file was added in JCL/STC/Procedures (CFTMAIN, COPRUN, PCFTUTIL, PCFTUTL, MNRMAIN, MNRMNG). We recommend adding the definition of this file in your JCL containing EXEC PGM=CFTUTIL, and in JCLs that are running Transfer CFT APIs.

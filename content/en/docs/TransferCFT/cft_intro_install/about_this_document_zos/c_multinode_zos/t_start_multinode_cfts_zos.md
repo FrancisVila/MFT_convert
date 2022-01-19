@@ -6,7 +6,7 @@
 
 ## Start a node
 
-The node manager submits a JCL defined by the UCONF cft.multi\_node.start\_node.proc\_fname parameter to start a node. (The default value is ..INSTALL(MNRMON)).
+The node manager submits a JCL defined by the UCONF `cft.multi_node.start_node.proc_fname` parameter to start a node. (The default value is ..INSTALL(MNRMON)).
 
 > **Note**
 >
@@ -20,8 +20,8 @@ The node manager submits a JCL defined by the UCONF cft.multi\_node.start\_node.
 
 The following sections describe the two ways that you can start a node (customize MNRMAIN).
 
-- STC: //STEP010 EXEC PGM=IKJEFT01,PARM='%RXSCFT SC'
-- JCL: //STEP010 EXEC PGM=IKJEFT01,PARM='%RXSCFT SJ'
+- STC: `          //STEP010 EXEC PGM=IKJEFT01,PARM='%RXSCFT SC'`
+- JCL: `           //STEP010 EXEC PGM=IKJEFT01,PARM='%RXSCFT SJ'`
 
 ### STC
 

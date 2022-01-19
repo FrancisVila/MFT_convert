@@ -90,7 +90,7 @@ CFTUTIL uconfset id=copilot.cft.com, value=’C=<path><config_file>’
 
 #### Web services
 
-When using web services the default media identifier used is the first once declared in the general CFTPARM object. Additionally, you can override this in the web services XML file by adding the desired COM using the format &lt;axw:CFTCOM\_ID>COM0&lt;/axw:CFTCOM\_ID> in the SOAP request.
+When using web services the default media identifier used is the first once declared in the general CFTPARM object. Additionally, you can override this in the web services XML file by adding the desired COM using the format `<axw:CFTCOM_ID>COM0</axw:CFTCOM_ID>` in the SOAP request.
 
 #### Transfer CFT UI
 

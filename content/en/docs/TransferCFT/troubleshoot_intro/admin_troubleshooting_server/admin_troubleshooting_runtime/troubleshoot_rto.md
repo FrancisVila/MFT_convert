@@ -40,7 +40,7 @@ Reducing the RUSIZE can avoid this root cause. However this should be fixed by s
 
 To confirm if it is a network congestion issue, you can use the ping command or a tool such as MTR (My traceroute), which is a combination of traceroute and the ping command. Sometimes, the timer can expire locally whereas the session is still active on the remote side.
 
-Therefore, if the transfer in 240 RTO status is restarted on a new session, the  remote side may get a Transfer is already in progress message and the transfer fails.
+Therefore, if the transfer in 240 RTO status is restarted on a new session, the  remote side may get a `Transfer is already in progress` message and the transfer fails.
 
 The solution:
 

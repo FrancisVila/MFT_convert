@@ -142,8 +142,8 @@ host = <remote_partner_host_address>
 
 #### Configure the Master Agent in Transfer CFT{{< TransferCFT/componentlongname  >}}
 
-1. Go to the in the` $CFTDIRINSTALL/distrib/xsr/` folder, and rename the iaik\_jce-3.16.jar file as `iaik_jce-3.16.unused.`
-1. Move the entrust-toolkit-8.0.36.jar file from the $CFTDIRINSTALL/distrib/xsr/fips folder to the $CFTDIRINSTALL/distrib/xsr/ folder.
+1. Go to the in the` $CFTDIRINSTALL/distrib/xsr/` folder, and rename the `iaik_jce-3.16.jar` file as `iaik_jce-3.16.unused.`
+1. Move the `entrust-toolkit-8.0.36.jar` file from the `$CFTDIRINSTALL/distrib/xsr/fips` folder to the `$CFTDIRINSTALL/distrib/xsr/` folder.
 
 ## SSL termination with Secure Relay
 

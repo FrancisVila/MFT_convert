@@ -33,7 +33,7 @@ This means that you must modify the corresponding resource controls to meet the 
 
 ### Selecting a project
 
-If you plan to run Transfer CFT{{< TransferCFT/componentshortname  >}} under the "axway" user account, for example, create a project associated with the user "axway" using the following system command: projadd -p 201 -G axway -U axway -c "Axway" axway
+If you plan to run Transfer CFT{{< TransferCFT/componentshortname  >}} under the "axway" user account, for example, create a project associated with the user "axway" using the following system command: `projadd -p 201 -G axway -U axway -c "Axway" axway`
 
 This command creates the project "axway" and associates the ****uid axway**** and ****gid axway**** with this project.
 

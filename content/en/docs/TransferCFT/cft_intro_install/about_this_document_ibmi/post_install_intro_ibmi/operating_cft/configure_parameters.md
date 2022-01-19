@@ -2,7 +2,7 @@
     "title": "Configuring Transfer CFT parameters",
     "linkTitle": "Configuring Transfer CFT parameters",
     "weight": "310"
-}From the Main Menu, enter the command ****cft**** and press ****Enter**** to open the Manager Menu.
+}From the Main Menu, enter the command **`cft`** and press ****Enter**** to open the Manager Menu.
 
 1. Select option 1 Customization and press ENTER.
 1. In the Customization screen, select option 1 CFT parameters and press ENTER.

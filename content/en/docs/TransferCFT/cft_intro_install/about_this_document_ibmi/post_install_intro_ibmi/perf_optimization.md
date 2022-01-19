@@ -8,16 +8,16 @@ The initial subsystem that Transfer CFT{{< TransferCFT/componentlongname  >}} us
 
 ## Prerequisites
 
-The subsystem must be running to perform the following procedure. If your subsystem is not running, call the STRSBS command to start the subsystem.
+The subsystem must be running to perform the following procedure. If your subsystem is not running, call the `STRSBS `command to start the subsystem.
 
 ## Procedure
 
 Update the subsystem values as follows:
 
-1. Enter the WRKSYSSTS command to display the existing system configuration for the subsystems that are currently running.
+1. Enter the `WRKSYSSTS `command to display the existing system configuration for the subsystems that are currently running.
     1.  Press F11 to display the subsystem name and determine your specific Transfer CFT{{< TransferCFT/componentlongname >}} subsystem.
 1. Modify the value:
-    1.  Place the cursor in the Max Act field (Maximum Active), and enter the new value (*10* in the example below).
+    1.  Place the cursor in the `Max Act` field (Maximum Active), and enter the new value (*10* in the example below).
     2.  Press **Enter** to confirm.
     3.  Press **F5** to update the screen display.
 

@@ -94,7 +94,7 @@ There are two ways for the sender to initiate a store and forward transfer:
 
 <!-- -->
 
-- send part=&lt;FINAL PARTNER>, ipart=&lt;RELAY>,...
+- `send part=<FINAL PARTNER>, ipart=<RELAY>,...`
 
 <span id="Store_and_forward_sites"></span>
 

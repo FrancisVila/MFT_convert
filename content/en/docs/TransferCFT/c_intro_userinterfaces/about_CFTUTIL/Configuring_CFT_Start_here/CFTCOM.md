@@ -51,7 +51,7 @@ Use CFTCOM TCP/IP for synchronous Transfer CFT communication on the local netwo
 
 `[ADDRLIST = (string1..64,string1..64…)]`
 
-The ADDRLIST parameter is non-functional in that you can only use TCPIP in local networks for synchronous communication.
+The `ADDRLIST `parameter is non-functional in that you can only use TCPIP in local networks for synchronous communication.
 
 `[DISCTS = n]`
 

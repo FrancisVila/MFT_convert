@@ -419,7 +419,7 @@ D status - RESTART
 
 FILE - Error setting the pointer to a resynchronization point in the file: the restart point requested by the partner is incorrect.
 
-This can occur when the synchronized points are not flushed from the catalog (if the CFTCAT's `updat `parameter is greater than 1, the UCONFcft.server.catalog.sync.enable is set to No, or both of these are true) due to an unexpected event such as a process, system, or disk crash.
+This can occur when the synchronized points are not flushed from the catalog (if the CFTCAT's `updat `parameter is greater than 1, the UCONF`cft.server.catalog.sync.enable` is set to `No`, or both of these are true) due to an unexpected event such as a process, system, or disk crash.
 
 **Consequence:**
 
@@ -737,7 +737,7 @@ File defined in the FNAME parameter in the CFTRECV object should not exist when 
 
 There was an error while replacing Transfer CFT variables.
 
-The script referenced by &fname in the CFTS68E message is not executed.
+The script referenced by `&fname` in the CFTS68E message is not executed.
 
 **Consequence:**
 
@@ -1330,13 +1330,13 @@ WSCAN related behavior
 
 Technically, the next retry is triggered **wscan** minutes after the previous try. However, sometimes you may have a Transfer CFT{{< TransferCFT/componentlongname  >}} log where the 416 diagnostic codes are not evenly distributed (by the same time intervals). This may occur if the scheduling task believes resources are available and schedules a retry, but in reality the resource is taken.
 
-*Unix only* - If the runtime path is too long, a diag 416 issue occurs and a message similar to the following displays in the cft.out:
+*Unix only* - If the runtime path is too long, a diag 416 issue occurs and a message similar to the following displays in the `cft.out`:
 
 > `CFTTCPS S_socket : start_soc : bind afunix`
 >
 > `CFTTCPS Invalid argument`
 
-If this error occurs, modify the path to the socket in the [UCONF](../../../admin_intro/uconf/uconf_directory) cft.unix.stcp.afunix parameter according to the operating system limit as shown below:
+If this error occurs, modify the path to the socket in the [UCONF](../../../admin_intro/uconf/uconf_directory) `cft.unix.stcp.afunix` parameter according to the operating system limit as shown below:
 
 - AIX: 1023
 - HP-UX: 92

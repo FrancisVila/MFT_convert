@@ -179,7 +179,7 @@ The complete path name includes the names of directories, or any other
 organization specific to the environment concerned, used to group files:
 library, catalog, PDSE, etc.
 
-Normally, the folder referenced in fname parameter should exist or the transfer fails. However, depending on your environment, you may use a special character that can be set with the cft.char\_directory\_protect to implicitly create part of a path structure. An OS specific character delimits the path to be created (intermediate directories), where the names of the sub-directories appearing to the right of the character are created. Please see the uconf [char\_directory]() for more information.
+Normally, the folder referenced in `fname ` parameter should exist or the transfer fails. However, depending on your environment, you may use a special character that can be set with the cft.char\_directory\_protect to implicitly create part of a path structure. An OS specific character delimits the path to be created (intermediate directories), where the names of the sub-directories appearing to the right of the character are created. Please see the uconf [char\_directory]() for more information.
 
 **Example**
 
@@ -187,7 +187,7 @@ The tree structure is created after the plus special character (****+****):
 
 `FNAME=’/home/cft/runtime/myapp/+user1/files/&idtu.rcv`
 
-In  this example, the `user1 `and files folders are created if they did not already exist.
+In  this example, the `user1 `and `files` folders are created if they did not already exist.
 
 The filename may:
 
@@ -291,7 +291,7 @@ FNAME=filename where the FNAME is expressed as an absolute name:
 FNAME= '/home/cft/runtime/pub/FTEST'
 ```
 
-FNAME = filename where the FNAME is expressed in relative name from runtime folder:
+`FNAME = filename` where the FNAME is expressed in relative name from runtime folder:
 
 ```
 FNAME = 'pub/FTEST'

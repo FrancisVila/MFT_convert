@@ -107,9 +107,9 @@ On the registered Transfer CFT, check to confirm that the flow and partner were 
 
 Then create a new transfer using the unmanaged product and the flow identifier you defined in Central Governance.
 
-1. Add a file to exchange. For example put a file called ****report001****, in the Transfer CFT{{< TransferCFT/componentshortname >}} runtime/pub folder.
+1. Add a file to exchange. For example put a file called ****report001****, in the Transfer CFT{{< TransferCFT/componentshortname >}}` runtime/pub` folder.
 1. From the source Transfer CFT{{< TransferCFT/componentshortname >}}, run the SEND command.
-    -   Remember to replace &lt;instance\_target> with your unmanaged product (target).
+    -   Remember to replace `<instance_target>` with your unmanaged product (target).
 
     <!-- -->
 

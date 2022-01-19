@@ -96,7 +96,7 @@ Configure the following for the final receiver (Site C):
 
 Use the same conditions as indicated in the [Intentional STORE and FORWARD](#Intentional_Store_and_Forward)
 to establish the routing. For the store and forward site to be in VAN mode, you must additionally complete the store
-and forward parameters as follows: CFTPART ID=ID\_A,COMMUT=SERVER,...
+and forward parameters as follows: `CFTPART ID=ID_A,COMMUT=SERVER,...`
 
 The following descriptions correspond with the
 parameter setting example in the
@@ -117,10 +117,9 @@ Configure the following for the store and forward (Site B):
 - Define both the initiator and the receiver CFTPART partner definitions.
 - Set COMMUT=SERVER.
 - Define a procedure to execute and reference in the CFTPARM (in this example).
-    -   In the store and forward example below, the procedure identified by myproc
-        includes the following command on completion of processing: CFTUTIL SEND **PART= &RPART**, **SPART= &SPART**, FNAME= &FNAME, IDF=
-        &IDF
-    -   When the symbolic variables are replaced: CFTUTIL SEND **PART=ID\_C**,**SPART=ID\_A**,FNAME=frecv, IDF=test
+    -   In the store and forward example below, the procedure identified by `myproc `
+        includes the following command on completion of processing: `CFTUTIL SEND PART= &RPART, SPART= &SPART, FNAME= &FNAME, IDF=   &IDF`
+    -   When the symbolic variables are replaced: `CFTUTIL SEND PART=ID_C,SPART=ID_A,FNAME=frecv, IDF=test`
 
 ****Configure the receiver****
 

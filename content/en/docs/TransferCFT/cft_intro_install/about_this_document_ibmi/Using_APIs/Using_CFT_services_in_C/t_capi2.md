@@ -8,7 +8,7 @@ Additionally, the API catalog supports 32 character identifiers and 512 characte
 
 ## Return code values
 
-The return code values are available in the cftapi2.h header file, located in the Transfer\_CFT/home/inc directory (for UNIX/Windows), in the section *Error code fields*.
+The return code values are available in the `cftapi2.h` header file, located in the `Transfer_CFT/home/inc` directory (for UNIX/Windows), in the section *Error code fields*.
 
 ## Data structure
 

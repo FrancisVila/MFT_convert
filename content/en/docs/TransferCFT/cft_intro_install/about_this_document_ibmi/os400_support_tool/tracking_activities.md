@@ -8,8 +8,8 @@
 - Transfer CFT LOG, a file designated by the CFTLOG configuration command \[A\]FNAME parameter. This file contains, for example, INIT COMPLETE, SEND TREATED and SERVER SESSION OPENED
 - Message queue echoing the Transfer CFT logging associated with the user designated by NOTIFY in the CFTLOG command:
 
-> -   Specific values: NOTIFY='\_\_\_\_\_\_'  / NOTIFY='OP\_\_\_\_\_\_'
-> -   Echo level: OPERMSG= 0 to 255
+> -   Specific values: `NOTIFY='______'  / NOTIFY='OP______'`
+> -   Echo level: `OPERMSG= 0 to 255`
 
 When monitoring operating incidents, information may be logged in the:
 

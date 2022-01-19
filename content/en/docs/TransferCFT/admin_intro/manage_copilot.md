@@ -45,21 +45,15 @@ copstop -kill
 To check the Copilot status, enter:
 
 ```
-copstatus
+`copstatus`
 ```
 
-The copstatus return code is 0 when Copilot is running, and 1 when Copilot is stopped.
+The `copstatus `return code is 0 when Copilot is running, and 1 when Copilot is stopped.
 
-Additional copstatus commands include:
+Additional `copstatus `commands include:
 
 ```
-copstatus [-p] [-v] [-h|--help]
-</span>
--p print copsmng pid if copilot is started
--v print status message
-</span>
--h|--help copstatus help
-```
+```` copstatus [-p] [-v] [-h|--help]         </span>   -p           print copsmng pid if copilot is started         -v           print status message         </span>   -h|--help    copstatus help    ``` ````
 
 ## Windows menus
 
@@ -75,13 +69,13 @@ For example, to start the Copilot server click ****Start &gt; All Programs &gt;
 
 COPRUN is an example of a JCL statement that starts the Transfer CFT Copilot server. The server can be started as a Start Task. The Transfer CFT Copilot server STEPLIB, and then JOBLIB should be defined as an APF. If it is not defined as an APF, no RACF check can be performed. This results in no log-on check being available and all requests are done with the user associated with the server JOB.
 
-When the copilot.misc.CreateProcessAsUser variable is set, STEPLIB or JOBLIB can be non-APF. Only a Central Governance{{< TransferCFT/centralgovernancename  >}}/PassPort user can sign on to Copilot user interface.
+When the `copilot.misc.CreateProcessAsUser` variable is set, STEPLIB or JOBLIB can be non-APF. Only a Central Governance{{< TransferCFT/centralgovernancename  >}}/PassPort user can sign on to Copilot user interface.
 
 > **Note**
 >
 > When the ‘cft.mvs.copilot.check\_apf’ uconf variable is set to ‘Yes’, CFTCOPL must be APF authorized to start.
 
-LOG message: +CFTI42E Copilot must be APF-authorized.
+LOG message: `+CFTI42E Copilot must be APF-authorized.`
 
 > **Note**
 >
@@ -98,27 +92,27 @@ COPSTOP is an example of the JCL stop statement for the Transfer CFT UI server.
 ****Menu****
 
 1. Access the *Transfer CFT* **Main Menu**.  
-    In the Main Menu enter the command cft and press ****Enter**** to open the Transfer CFT menu.
+    In the Main Menu enter the command `cft` and press ****Enter**** to open the Transfer CFT menu.
 1. Enter **1** to access **Common CFT commands**.
 1. Select option ****1 Start Copilot****. The *Copilot server* menu is displayed.  
 
 ****Command****
 
-Execute: COPSTART
+Execute: `COPSTART `
 
 #### Stop
 
 ****Menu****
 
 1. Access the *Transfer CFT* **Main Menu**.  
-    In the Main Menu enter the command cft and press ****Enter**** to open the Transfer CFT menu.
+    In the Main Menu enter the command `cft` and press ****Enter**** to open the Transfer CFT menu.
 1. Enter **1** to access **Common CFT commands**.
 1. Select option ****2**** ****Stop Copilot****.  
     Only the server waiting for a connection is stopped. Other servers that users have logged onto are shut down when the user logs off, or after a network timeout.
 
 ****Command****
 
-Execute: COPSTOP
+Execute: `COPSTOP `
 
 <span id="Copilot"></span>
 
@@ -138,7 +132,7 @@ and the default values for the Transfer CFT{{< TransferCFT/componentshortname  >
 
 ****UNIX****
 
-Refer to the [UCONF parameters](../uconf/uconf_directory) table for information on copilot.\*.unix parameters.
+Refer to the [UCONF parameters](../uconf/uconf_directory) table for information on `copilot.*.unix `parameters.
 
 #### Alias management
 
@@ -240,7 +234,7 @@ The basic steps are:
 
 #### When using Central Governance
 
-The Transfer CFT Copilot server uses the certificate that was created by Central Governance during the product registration. This certificate is stored in Transfer CFT PKI database and the certificate id is the value of the UCONF cft.instance\_id parameter. This means that there is no action required to install a certificate.
+The Transfer CFT Copilot server uses the certificate that was created by Central Governance during the product registration. This certificate is stored in Transfer CFT PKI database and the certificate id is the value of the UCONF `cft.instance_id `parameter. This means that there is no action required to install a certificate.
 
 However, to override the default behavior use the procedure described below in *When using Transfer CFT without governance*.
 
@@ -250,12 +244,12 @@ The following tables describe the UCONF parameters that determine the certificat
 
 You can use the following certificate and private key formats, where the format of the certificate may differ from that of the key.
 
-The certificate type is dictated by the file name extension (.p12, .pkcs12, .der, .pem, for example my\_certificate.pem).
+The certificate type is dictated by the file name extension (.p12, .pkcs12, .der, .pem, for example `my_certificate.pem`).
 
 *For native files in a z/OS or IBM i environment*, if the format cannot be determined (the file suffix used as the extension), Transfer CFT derives the value from these uconf settings:
 
-- copilot.ssl.sslkeyfile=&lt;not set> and copilot.ssl.sslcertpassword=&lt;set>, then the format is PKCS12
-- copilot.ssl.sslkeyfile= &lt;set> and copilot.ssl.sslcertpassword=&lt;not set>, then the format is PEM
+- `copilot.ssl.sslkeyfile=<not set>` and `copilot.ssl.sslcertpassword=<set>`, then the format is PKCS12
+- `copilot.ssl.sslkeyfile= <set>` and `copilot.ssl.sslcertpassword=<not set>`, then the format is PEM
 
 QQQ\_QQQ\_QQQ
 
@@ -319,23 +313,23 @@ On Linux, using the Java keystore is the only option.
 
 #### Install a certificate in the Windows keystore
 
-1. In Windows Explorer, navigate to the certificate &lt;my\_root\_certificate>.der and right-click (for example, at &lt;CFTDIRRUNTIME>/conf/pki/&lt;my\_root\_certificate>.der).
+1. In Windows Explorer, navigate to the certificate `<my_root_certificate>.der` and right-click (for example, at &lt;CFTDIRRUNTIME>/conf/pki/&lt;my\_root\_certificate>.der).
 1. Select the ****Install certificate**** option.
-1. Follow the screen instructions. Windows automatically imports the certificate to its keystore in the Intermediate certificate authorities folder.
+1. Follow the screen instructions. Windows automatically imports the certificate to its keystore in the `Intermediate certificate authorities` folder.
 
 ****Alternative method****
 
 1. In Internet Explorer, select ****Tools > Internet Options.****
 1. In the ****Content**** tab select the ****Certificate**** button.
 1. Select ****Import,**** which starts the ****Certificate Import Wizard****.
-1. Click ****Next****, and ****Browse**** to the &lt;my\_root\_certificate>.der.
+1. Click ****Next****, and ****Browse**** to the` <my_root_certificate>.der`.
 1. Follow the screen instructions. Windows imports the certificate to its keystore.
 
 #### Install a certificate in the Java keystore
 
-The Java keystore is a file located at ~/jre/lib/security/cacerts. The default password for this keystore is “changeit”.
+The Java keystore is a file located at` ~/jre/lib/security/cacerts`. The default password for this keystore is “changeit”.
 
-Use the keytool command as follows to import the &lt;my\_root\_certificate>.der certificate into the Java keystore:
+Use the keytool command as follows to import the` <my_root_certificate>.der `certificate into the Java keystore:
 
 ```
 keytool –importcert

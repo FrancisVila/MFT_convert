@@ -152,9 +152,9 @@ notations are used in the detailed parameter descriptions.
 
 When using the CFTUTIL HELP command, as shown in the example below, the following rules apply to parameter values:
 
-- If STRING is in upper case, the parameter value is not case sensitive
-- If String is mixed case, the parameter value is case sensitive
-- If STRING or "String", the parameter value is only case sensitive when enclosed in quotes
+- If `STRING `is in upper case, the parameter value is not case sensitive
+- If `String `is mixed case, the parameter value is case sensitive
+- If `STRING or "String"`, the parameter value is only case sensitive when enclosed in quotes
 
 ****Example****
 

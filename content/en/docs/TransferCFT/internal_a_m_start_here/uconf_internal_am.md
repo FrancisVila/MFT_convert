@@ -73,7 +73,7 @@ In addition to the out-of-the box roles, you can create new roles or modify exis
 
 ### Using the configuration file
 
-You can add, remove, or modify roles or privileges in the role-smp.conf sample file delivered in runtime/conf/ directory. After adding or modifying a role or privilege, you must interpret the configuration file.
+You can add, remove, or modify roles or privileges in the `role-smp.conf` sample file delivered in `runtime/conf/` directory. After adding or modifying a role or privilege, you must interpret the configuration file.
 
 ### Using the user interface
 
@@ -156,7 +156,7 @@ D am.internal.role.designer =
 D am.internal.role.application =
 ```
 
-Modify the conf/roles-smp.conf sample file:
+Modify the `conf/roles-smp.conf` sample file:
 
 ```
 CFTROLE ID = 'TRANSFER CFT ADMINISTRATOR',
@@ -212,7 +212,7 @@ ROLE TRANSFER CFT HELPDESK
 ROLE TRANSFER CFT PARTNERMANAGER
 ```
 
-Modify the conf/roles-smp.conf sample file:
+Modify the `conf/roles-smp.conf` sample file:
 
 ```
 CFTROLE ID = 'TRANSFER CFT APPLICATION',

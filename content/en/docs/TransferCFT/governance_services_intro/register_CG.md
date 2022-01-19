@@ -42,7 +42,7 @@ When setting the Central Governance "shared secret" during a Transfer CFT z/OS i
 
 ****Verify the UCONF setting****
 
-Prior to the registration, you must ensure that the JCL CFTMON (copilot.misc.cftstart.enable = Yes) is configured to match the jobname or the STC name used to launch Transfer CFT.
+Prior to the registration, you must ensure that the JCL CFTMON (`copilot.misc.cftstart.enable` = `Yes`) is configured to match the jobname or the STC name used to launch Transfer CFT.
 
 ### Procedure
 
@@ -69,7 +69,7 @@ uconfset id=pki.type, value=cft
 Set the parameters used to identify a Transfer CFT instance. Follow these guidelines, otherwise the registration will fail:
 
 - The length of the `cft.instance_id` value is limited to 24 characters.
-- The address set in cft.full\_hostname must be reachable from Central Governance.
+- The address set in `cft.full_hostname` must be reachable from Central Governance.
 
 ```
 uconfset id=cft.instance_id, value=<cft_id>
@@ -77,11 +77,11 @@ uconfset id=cft.instance_group, value=<cft_instance_group>
 uconfset id=cft.full_hostname, value=<cft_address>
 ```
 
-Additionally, if running in a multi-host/multi-node environment, you must set the load balancer address(FQDN or IP address) and port that Central Governance uses to reach the Transfer CFT (copilot.general.ssl\_serverport):
+Additionally, if running in a multi-host/multi-node environment, you must set the load balancer address(FQDN or IP address) and port that Central Governance uses to reach the Transfer CFT (`copilot.general.ssl_serverport`):
 
 ```
 uconfset id=cft.multi_node.load_balancer.host, value=<load_balancer_address>
-uconfset id=cft.multi_node.load_balancer.port,value=<load_balancer_port>
+uconfset id=`cft.multi_node.load_balancer.port,value=<load_balancer_port>`
 ```
 
 #### Optionally define a proxy server for Central Governance to Transfer CFT{{< TransferCFT/componentlongname  >}} communication
@@ -90,9 +90,9 @@ If you opt to use a proxy server for Central Governance to connect to Transfer C
 
 ```
 uconfset id=cg.proxy.in.host, value= <proxy_address>
-uconfset id=cg.proxy.in.port,value= <proxy_port>
+uconfset id=cg.proxy.in.port`,value= <proxy_port>`
 uconfset id=cg.proxy.in.login, value= <proxy_login>
-uconfset id=cg.proxy.in.password, value= <proxy_login_password>
+uconfset id=`cg.proxy.in.password, value= <proxy_login_password>`
 ```
 
 #### Optionally define a proxy server for Transfer CFT{{< TransferCFT/componentlongname  >}} to Central Governance communication
@@ -187,7 +187,7 @@ Check the list in the output for errors and correct all errors before attempting
 
 ## Register or re-register
 
-Ensure that `cft_registration_id `is reset to -1. Otherwise, reset it as follows:  
+Ensure that `cft_registration_id `is reset to `-1`. Otherwise, reset it as follows:  
 
 ```
 CFTUTIL uconfunset id=cg.registration_id

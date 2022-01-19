@@ -147,7 +147,7 @@ No breakdown occurs because there is no communication between the nodes. If the 
 
 There are two types of requests, which may be handled differently depending on their type:
 
-1. Transfer requests are dispatched on a single node, according to the defined dispatching rule. The dispatching rule is defined by a UCONF value, the cft.multi\_node.cftcom.dispatcher\_policy parameter.
+1. Transfer requests are dispatched on a single node, according to the defined dispatching rule. The dispatching rule is defined by a UCONF value, the `cft.multi_node.cftcom.dispatcher_policy` parameter.
 1. Dispatching for administrative types of requests are broadcast to all active nodes. For example, using the HALT command to stop a transfer request applies to all nodes.
 
 #### Client transfer request

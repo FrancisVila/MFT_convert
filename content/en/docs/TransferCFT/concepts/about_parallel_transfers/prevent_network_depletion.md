@@ -49,10 +49,10 @@ The NRDP feature only applies to the TCP/IP network, and requires the configurat
 
 ### Log messages
 
-The [related messages](../../../troubleshoot_intro/messages_and_error_codes_start_here/cftn_messages) only display in the log when the cft.server.nrdp\_enable=yes.
+The [related messages](../../../troubleshoot_intro/messages_and_error_codes_start_here/cftn_messages) only display in the log when the `cft.server.nrdp_enable=yes`.
 
-- CFTN05I Network resource depletion prevention enabled for class %d
-- CFTN06I No network class suitable for resource depletion prevention activation
+- `CFTN05I Network resource depletion prevention enabled for class %d`
+- `CFTN06I No network class suitable for resource depletion prevention activation`
 
 ### Calculating the threshold
 
@@ -64,14 +64,14 @@ Given the value of MAXTRANS and the MAXCNX for a selected CFTNET object, the thr
 
 This example uses the following values and shows the different outcomes with and without NRDP enabled. In this example, we have 10 new transfers to perform that require new sessions to be opened (for example, with partners that do not already have an established session).
 
-- MAXCNX = 450 and MAXTRANS = 400, therefore THRESHOLD=425
-- NBCNX is the current number of open sessions = 450
-- NBTRANS is the number of active transfers = 300
+- `MAXCNX `= 450 and `MAXTRANS `= 400, therefore `THRESHOLD`=425
+- `NBCNX `is the current number of open sessions = 450
+- `NBTRANS `is the number of active transfers = 300
 
 ****NRDP not enabled****
 
-Because the number of sessions would exceed the MAXCNX if a new session is established, the 10 new transfers must wait for a network resource to become available (a 416 MAXCNX  message displays).
+Because the number of sessions would exceed the `MAXCNX `if a new session is established, the 10 new transfers must wait for a network resource to become available (a `416 MAXCNX`  message displays).
 
 ****NRDP enabled****
 
-With NRDP enabled, the 10 new transfers are processed (idle sessions are reused). As a precaution, Transfer CFT closes idle sessions in order to reduce NBCNX and defer the network connection request for new sessions until NBCNX &lt;= THRESHOLD.
+With NRDP enabled, the 10 new transfers are processed (idle sessions are reused). As a precaution, Transfer CFT closes idle sessions in order to reduce `NBCNX `and defer the network connection request for new sessions until` NBCNX <= THRESHOLD`.

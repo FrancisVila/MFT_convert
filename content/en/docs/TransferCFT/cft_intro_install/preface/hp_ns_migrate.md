@@ -132,13 +132,13 @@ Before performing an upgrade be certain to review the section [Important informa
 
 ### Overview
 
-You can perform an upgrade by installing Transfer CFT 3.9{{< TransferCFT/releasenumber  >}} over an existing Transfer CFT 3.2.4 installation using the procedure described in <a href="" class="MCXref xref">Install Transfer CFT</a> . However, the installation directory &lt;installation\_directory> should point to the installation directory of the existing Transfer CFT 3.2.4 installation. You can then provide the same additional parameters.
+You can perform an upgrade by installing Transfer CFT 3.9{{< TransferCFT/releasenumber  >}} over an existing Transfer CFT 3.2.4 installation using the procedure described in <a href="" class="MCXref xref">Install Transfer CFT</a> . However, the installation directory `<installation_directory>` should point to the installation directory of the existing Transfer CFT 3.2.4 installation. You can then provide the same additional parameters.
 
 The installation procedure upgrades Transfer CFT, where the configuration of the existing installation is exported, and is automatically re-imported after the upgrade.
 
 ### After auto-importing
 
-The installation creates a new directory called up-&lt;version> in the runtime directory. This directory stores all of the information used during the auto-import process. You can modify the extracted files and directory, and manually re-import this data at any time.
+The installation creates a new directory called `up-<version>` in the runtime directory. This directory stores all of the information used during the auto-import process. You can modify the extracted files and directory, and manually re-import this data at any time.
 
 ****Extracted data****
 

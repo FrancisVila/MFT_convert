@@ -36,34 +36,34 @@ For more information about curl, please visit [https://curl.haxx.se](https://cur
 
 ### GET retrieves data for a transfer or a set of transfers
 
-To retrieve a set of transfers execute an HTTP GET request on the /cft/api/v1/transfers resource. For example:
+To retrieve a set of transfers execute an HTTP GET request on the `/cft/api/v1/transfers` resource. For example:
 
 ```
-curl -k -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGnMQdLK6lwYPwy6" -X GET "https://<copilot_host>:<uconf:copilot.restapi.serverport>/cft/api/v1/transfers"
+`curl -k -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGnMQdLK6lwYPwy6" -X GET "https://<copilot_host>:<uconf:copilot.restapi.serverport>/cft/api/v1/transfers"`
 ```
 
-To retrieve a transfer execute an HTTP GET request on the /cft/api/v1/transfers/&lt;IDTU> resource. For example:
+To retrieve a transfer execute an HTTP GET request on the `/cft/api/v1/transfers/<IDTU>` resource. For example:
 
 ```
-curl -k -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGnMQdLK6lwYPwy6" -X GET "https://<copilot_host>:<uconf:copilot.restapi.serverport>/cft/api/v1/transfers/<IDTU>"
+`curl -k -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGnMQdLK6lwYPwy6" -X GET "https://<copilot_host>:<uconf:copilot.restapi.serverport>/cft/api/v1/transfers/<IDTU>"`
 ```
 
 ### POST creates a new transfer
 
-To create a send file transfer request execute an HTTP POST request on the /cft/api/v1/transfers/files/outgoings resource. You must specify the PART and IDF in the URL, however you can add optional parameters in the HTTP body. For example:
+To create a send file transfer request execute an HTTP POST request on the `/cft/api/v1/transfers/files/outgoings` resource. You must specify the PART and IDF in the URL, however you can add optional parameters in the HTTP body. For example:
 
 ```
-curl -k -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGnMQdLK6lwYPwy6" -X POST "https://<copilot_host>:<uconf:copilot.restapi.serverport>/cft/api/v1/transfers/files/outgoings?part=<PART>&IDF=<IDF>"
+`curl -k -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGnMQdLK6lwYPwy6" -X POST "https://<copilot_host>:<uconf:copilot.restapi.serverport>/cft/api/v1/transfers/files/outgoings?part=<PART>&IDF=<IDF>"`
 ```
 
 #### Manage the REST API timeout
 
-In the URL request, you can use the apiTimeout parameter to set the timeout for the current request.
+In the URL request, you can use the `apiTimeout `parameter to set the timeout for the current request.
 
 For example:
 
 ```
-curl -k -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGnMQdLK6lwYPwy6" -X POST "https://<copilot_host>:<uconf:copilot.restapi.serverport>/cft/api/v1/transfers/files/outgoings?part=<PART>&IDF=<IDF>&apiTimeout=20"
+`curl -k -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGnMQdLK6lwYPwy6" -X POST "https://<copilot_host>:<uconf:copilot.restapi.serverport>/cft/api/v1/transfers/files/outgoings?part=<PART>&IDF=<IDF>&apiTimeout=20"`
 ```
 
 When set to:
@@ -71,22 +71,22 @@ When set to:
 - -1: The timeout is infinite for the request.
 - 0: No timeout is set for the request. The result is sent ASAP.
 - Any other value: This value is used as a maximum retry timeout for the request.
-- If this parameter is not set, the copilot.restapi.com.retry\_timeout UCONF parameter is used.
+- If this parameter is not set, the `copilot.restapi.com.retry_timeout` UCONF parameter is used.
 
 ### PUT updates a transfer identified by its IDTU
 
 To perform an action on an existing transfer, such as restarting a transfer, execute an HTTP PUT request. For example:
 
 ```
-curl -k -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGnMQdLK6lwYPwy6" -X PUT "https://<copilot_host>:<uconf:copilot.restapi.serverport>/cft/api/v1/transfers/<IDTU>/start"
+`curl -k -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGnMQdLK6lwYPwy6" -X PUT "https://<copilot_host>:<uconf:copilot.restapi.serverport>/cft/api/v1/transfers/<IDTU>/start"`
 ```
 
 ### DELETE removes a transfer
 
-To delete a transfer, execute the HTTP DELETE request on the /cft/api/v1/transfers/&lt;IDTU> resource.
+To delete a transfer, execute the HTTP DELETE request on the `/cft/api/v1/transfers/<IDTU>` resource.
 
 For example:
 
 ```
-curl -k -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGnMQdLK6lwYPwy6" -X DELETE "https://<copilot_host>:<uconf:copilot.restapi.serverport>/cft/api/v1/transfers/<IDTU>"
+`curl -k -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGnMQdLK6lwYPwy6" -X DELETE "https://<copilot_host>:<uconf:copilot.restapi.serverport>/cft/api/v1/transfers/<IDTU>"`
 ```

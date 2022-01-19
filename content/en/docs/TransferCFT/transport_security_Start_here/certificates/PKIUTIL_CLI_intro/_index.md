@@ -33,7 +33,7 @@ display command](cftutil_utility_display_commands) for transport security uses.
 
 ****UNIX/Windows only****
 
-To simplify the use of PKIUTIL commands, you can use the autocomplete feature when working in interactive mode. See [Autocomplete](../../../c_intro_userinterfaces/about_cftutil/autocomplete).
+To simplify the use of `PKIUTIL `commands, you can use the autocomplete feature when working in interactive mode. See [Autocomplete](../../../c_intro_userinterfaces/about_cftutil/autocomplete).
 
 ****Related topics****
 

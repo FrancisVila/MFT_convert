@@ -14,14 +14,14 @@ If you want to enable Central Governance{{< TransferCFT/centralgovernancename  >
 
 ### Installation overview
 
-This table presents a high-level overview of the installation process. By default, the Transfer CFT{{< TransferCFT/componentlongname  >}} installation uses a delivered configuration file called initialize.properties that provides a series of default values to simplify installation. It is important that you understand the difference between customizing this file before or after running the installer prior to starting the process.
+This table presents a high-level overview of the installation process. By default, the Transfer CFT{{< TransferCFT/componentlongname  >}} installation uses a delivered configuration file called `initialize.properties` that provides a series of default values to simplify installation. It is important that you understand the difference between customizing this file before or after running the installer prior to starting the process.
 
 
 |   | Step  | Details  | More info  |
 | --- | --- | --- | --- |
 | 1  | Complete prerequisites  | Check and fulfill prerequisites such as obtaining a key or system-specific prerequisites.  | <a href="prereqs_overview">![](/Images/TransferCFT/severityInformation_alt.gif)</a>  |
 | 2  | Download and unzip  | Download the installation package from the support site and unzip.  | <a href="#Download">![](/Images/TransferCFT/severityInformation_alt.gif)</a>  |
-| 3  | Customize the properties file  | Some installation parameters are mandatory to run Transfer CFT.<br/> You can customize the initialize.properties file before the install, use your own file, or use the unmodified default file, but you cannot start Transfer CFT until the mandatory values are set. | <a href="properties_file_win">![](/Images/TransferCFT/severityInformation_alt.gif)</a>  |
+| 3  | Customize the properties file  | Some installation parameters are mandatory to run Transfer CFT.<br/> You can customize the <code>initialize.properties</code> file before the install, use your own file, or use the unmodified default file, but you cannot start Transfer CFT until the mandatory values are set. | <a href="properties_file_win">![](/Images/TransferCFT/severityInformation_alt.gif)</a>  |
 | 4  | Start the installation  | Select the installation mode and run using either the default configuration file or your customized file.  | <a href="install_transfer_cft_1">![](/Images/TransferCFT/severityInformation_alt.gif)</a>  |
 | *  | Optional customization  | If you used the default configuration file, you must customize the Transfer CFT settings before starting the product.  |   |
 
@@ -50,7 +50,7 @@ You can perform the following installation functions:
 
 ### Installation configuration file
 
-The Transfer CFT{{< TransferCFT/componentlongname  >}} installation is based on a delivered configuration file called initialize.properties that provides a series of default values to simplify installation. You can make a copy of this file and customize it prior to running the installation procedure as described in [Customize the initialize.properties file](properties_file_win).
+The Transfer CFT{{< TransferCFT/componentlongname  >}} installation is based on a delivered configuration file called `initialize.properties` that provides a series of default values to simplify installation. You can make a copy of this file and customize it prior to running the installation procedure as described in [Customize the initialize.properties file](properties_file_win).
 
 ### Installation modes
 
@@ -66,7 +66,7 @@ The following installation modes use the delivered initialize.properties file as
 
 ### Create or modify the runtime
 
-You can use the following command to repair the runtime if there was an issue during the installation, or to update values that you have modified in the initialize.properties file. From the &lt;installation\_directory>, run the following:
+You can use the following command to repair the runtime if there was an issue during the installation, or to update values that you have modified in the `initialize.properties` file. From the &lt;installation\_directory>, run the following:
 
 `<installation directory> initialize filename`
 
@@ -79,7 +79,7 @@ If you want to use symbolic links, the link path must use a slash delimiter as s
 - Correct:` S:\>mklink /j F:\CFT36m5 F:\CFT36_BN12786077_5`
 - Incorrect:` S:\>mklink /j F:CFT36m5 F:CFT36_BN12786077_5`
 
-To install Transfer CFT using symbolic links, you must use the silent mode, option '--mode unattended', and assign all parameters using only the configuration file (do not use parameters in the command line except the conf-file).
+To install Transfer CFT using symbolic links, you must use the silent mode, `option '--mode unattended'`, and assign all parameters using only the configuration file (do not use parameters in the command line except the conf-file).
 
 > **Note**
 >

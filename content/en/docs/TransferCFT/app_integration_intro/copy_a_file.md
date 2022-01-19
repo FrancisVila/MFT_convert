@@ -6,7 +6,7 @@
 
 ## Enable the copy file functionality
 
-This functionality is comprised of a delivered configuration and sample script files. To enable the copy file functionality, interpret the cft-copyfile.conf configuration file.
+This functionality is comprised of a delivered configuration and sample script files. To enable the copy file functionality, interpret the `cft-copyfile.conf` configuration file.
 
 **Unix**
 

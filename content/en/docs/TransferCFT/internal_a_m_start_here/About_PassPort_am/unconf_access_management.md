@@ -21,7 +21,7 @@ When enabled, Transfer CFT{{< TransferCFT/componentshortname  >}} retrieves all 
 
 ## Updating the cache
 
-When Transfer CFT or Copilot is configured to use PassPort AM , it periodically scans for changes in user rights. The changes are then saved in the file defined in am.passport.persistency.fname. These scans occur at regular intervals as defined by the am.passport.persistency.check\_interval parameter.
+When Transfer CFT or Copilot is configured to use PassPort AM , it periodically scans for changes in user rights. The changes are then saved in the file defined in `am.passport.persistency.fname`. These scans occur at regular intervals as defined by the `am.passport.persistency.check_interval` parameter.
 
 - To force an immediate cache update, you can manually run CFTSXPAM (as described below).
 - If a user (a non-superuser) is not listed in the cache and tries to start Transfer CFT, Transfer CFT cannot start and displays the [CFTX03W](../../../troubleshoot_intro/messages_and_error_codes_start_here/cftx_messages) error in the log. To fix, you can manually execute CFTSXPAM and restart Transfer CFT.
@@ -30,8 +30,8 @@ When Transfer CFT or Copilot is configured to use PassPort AM , it periodically 
 
 1. Log on as a Transfer CFT superuser, meaning a user that is defined in `am.passport.superuser`.
 1. Load the Transfer CFT profile.
-1. Check that CFTSXPAM is enabled, am.passport.persistency.cftsxpam.enable = yes.
-1. Execute the command: CFTSXPAM
+1. Check that CFTSXPAM is enabled, `am.passport.persistency.cftsxpam.enable = yes`.
+1. Execute the command: `CFTSXPAM`
 
 > **Note**
 >

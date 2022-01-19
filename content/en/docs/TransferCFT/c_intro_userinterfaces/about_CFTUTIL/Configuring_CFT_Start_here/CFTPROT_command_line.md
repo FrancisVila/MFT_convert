@@ -120,7 +120,7 @@ QQQ\_QQQ\_QQQ moved description to col 2 from
 
 | Parameters | Description |
 | --- | --- |
-|   | Use the CFTPROT TYPE = PESIT command to describe the PeSIT transfer protocol.  |
+|   | Use the <code>CFTPROT TYPE = PESIT </code>command to describe the PeSIT transfer protocol.  |
 | <a href="../../../command_summary/parameter_intro/concat">CONCAT</a><br/> Only in sender mode | Option to concatenate FPDUs (File Protocol Data Units) in a given NSDU.<br/> This option is not negotiated. |
 | <a href="../../../command_summary/parameter_intro/cto">CTO</a>  | Minimum duration (in minutes) of the session, Cycle Time Out.<br/> At the end of a transfer, the wait time-out for a nfew transfer is recalculated depending on:<br/> • the time (hour) for opening the session<br/> • the current time<br/> • the wait delay before disconnection (DISCTS for the protocol)<br/> • the duration of the session (CTO)<br/> The session is liberated if no transfer was initiated by the remote partner during the indicated duration. |
 | <a href="../../../command_summary/parameter_intro/cycle">CYCLE</a>  | Periodicity (in minutes) for creation of a protocol session:<br/> • 0: PeSIT session open on startup<br/> • n: periodicity |

@@ -80,7 +80,7 @@ CFTT16I _ No implicit send <PART=<part> IDF=<idf> > :
 
 #### Working directory
 
-Here the connection is interrupted because of a workingdir issue when connecting to the Transfer CFT SFTP via an SFTP client:
+Here the connection is interrupted because of a `workingdir `issue when connecting to the Transfer CFT SFTP via an SFTP client:
 
 ```
 Error: Unable to open .: received failure with description 'The working directories in CFTSEND and CFTRECV for the IDF are not the same'
@@ -90,7 +90,7 @@ Error: Cannot recover the folder contents
 
 #### SAUTH/RAUTH
 
-These parameters check the authorized IDF for the user. For example, in the following messages an error occurred because when performing a RECV (get) command, the IDF was not included in the remote authorization list.
+These parameters check the authorized IDF for the user. For example, in the following messages an error occurred because when performing a RECV (`get`) command, the IDF was not included in the remote authorization list.
 
 ****Server****
 
@@ -151,7 +151,7 @@ CFTT82E+ DIAGP=KEY DIAGC=The client key doesn't correspond to the server key
 
 Check that the public key stored in the PKI database corresponds with the server's (SRVPUBKEY value). This issue may occur due to a Transfer CFT limitation where when an SFTP server refers to multiple hostkeys (located in `etc/ssh/sshd_config`), the Transfer CFT related hostkey must be placed in the first position.
 
-As shown in the following example, the Transfer CFT public key references the ssh\_host\_rsa\_key, an error occurs:
+As shown in the following example, the Transfer CFT public key references the `ssh_host_rsa_key`, an error occurs:
 
 ```
 HostKey /etc/ssh/ssh_host_rsa_key_not_in_CFT

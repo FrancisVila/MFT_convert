@@ -59,7 +59,7 @@ In the Secure Relay parameters table below:
 
 ### Define the Router Agent to use  
 
-The [srdmz]() parameter in the CFTPART command allows you to specify a dedicated DMZ for outgoing connections.
+The `srdmz` parameter in the CFTPART command allows you to specify a dedicated DMZ for outgoing connections.
 
 ```
 secure_relay.ra = n (number of Router Agents)

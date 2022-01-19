@@ -44,10 +44,10 @@ After loading the profile, you can execute commands from anywhere.
 
 #### Transfer CFT 2.4
 
-From the console, execute the profile file for your version of Transfer CFT, which is by default located in the home directory. Enter: . ./ENV\_CFT
+From the console, execute the profile file for your version of Transfer CFT, which is by default located in the home directory. Enter: `. ./ENV_CFT`
 
 #### Transfer CFT 2.5 and higher
 
-From the console, change directory to the Transfer CFT runtime directory and execute the profile file using the command: . ./profile
+From the console, change directory to the Transfer CFT runtime directory and execute the profile file using the command: `. ./profile`
 
 After loading the profile, you can execute commands from anywhere.

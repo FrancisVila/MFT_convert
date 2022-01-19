@@ -8,14 +8,14 @@
 
 ### Include file
 
-Transfer CFT{{< TransferCFT/transfercftname  >}} provides an include file, cftcnt.h, that provides the account file record structure to be used by the program. Depending on the operating system, the file is located in:
+Transfer CFT{{< TransferCFT/transfercftname  >}} provides an include file, `cftcnt.h`, that provides the account file record structure to be used by the program. Depending on the operating system, the file is located in:
 
 - UNIX, Windows, HP NonStop, and IBM i (IFS): &lt;installdir>/home/inc
 - z/OS: Distrib..H (CFTCNT)
 
 ### Sample source
 
-Transfer CFT delivers a sample source written in C language called exacct.c as well as a compilation procedure, which is system dependent:
+Transfer CFT delivers a sample source written in C language called `exacct.c` as well as a compilation procedure, which is system dependent:
 
 
 | System  | File location  | Build command  |
@@ -33,7 +33,7 @@ You can use the following steps for all supported operating systems except z/OS:
 
 To generate a sample file for example on UNIX:
 
-1. Copy the two files from &lt;install\_dir>/home/distrib/template/src/exit to &lt;install\_dir>/runtime/src/exit.
+1. Copy the two files from `<install_dir>/home/distrib/template/src/exit` to `<install_dir>/runtime/src/exit`.
 1. Enter the system appropriate compile command.
 
 The EXACCT executable file is automatically stored in:

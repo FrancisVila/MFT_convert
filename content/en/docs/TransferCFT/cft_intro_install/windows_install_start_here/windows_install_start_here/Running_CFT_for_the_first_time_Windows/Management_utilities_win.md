@@ -16,7 +16,7 @@
 ## cftinit
 
 *cftinit* is a general Transfer CFT{{< TransferCFT/componentshortname  >}}
-initialization utility. Prior to running cftinit, you must stop both the Copilot and Transfer CFT server.
+initialization utility. Prior to running `cftinit`,` `you must stop both the Copilot and Transfer CFT server.
 
 **Syntax**
 
@@ -47,7 +47,7 @@ cftinit partners.cft the\_rest.cft
     is passed as a parameter, the program requests one or more file names
 - If no name is supplied,
     the program stops
-- When you run cftinit, it creates the catalog and communication files. You can modify the default sizes of these files to suit your requirements by updating the uconf values for cft.cftcat.default\_size and cft.cftcom.default\_size (these values are expressed as a number of records).
+- When you run `cftinit`, it creates the catalog and communication files. You can modify the default sizes of these files to suit your requirements by updating the uconf values for `cft.cftcat.default_size` and `cft.cftcom.default_size` (these values are expressed as a number of records).
 
 <span id="cftstart"></span>
 
@@ -93,7 +93,7 @@ CFT.
 **Standard use**
 
 The *cft stop* command, used without parameters, shuts down Transfer
-CFT by sending the SHUT FAST=YEScommand. It then waits until the
+CFT by sending the `SHUT FAST=YES`command. It then waits until the
 various Transfer CFT{{< TransferCFT/componentshortname  >}} processes are stopped.
 
 ```
@@ -113,12 +113,12 @@ it displays the following message:
 
 `% cft stopInvalid state of  Transfer CFT{{< TransferCFT/componentshortname >}}.`
 
-Use Cft force-stop to force Transfer CFT{{< TransferCFT/componentshortname  >}} to shut down.
+Use `Cft force-stop` to force Transfer CFT{{< TransferCFT/componentshortname  >}} to shut down.
 
 **Advanced use**
 
 In the event of a problem, the program recommends that you shut down
-Transfer CFT{{< TransferCFT/componentshortname  >}} using theCft force-stopcommand.
+Transfer CFT{{< TransferCFT/componentshortname  >}} using the`Cft force-stop`command.
 
 This command then forces a Transfer CFT{{< TransferCFT/componentshortname  >}} shutdown. It is normally successful,
 but depending on the state of the system, more serious malfunctions may
@@ -131,7 +131,7 @@ you about the possible consequences of the next command.
 ```
 % cft stop
 Invalid state of CFT.
-UseCft force-stop to force shutdown of Transfer CFT{{< TransferCFT/componentshortname >}}
+Use`Cft force-stop` to force shutdown of Transfer CFT{{< TransferCFT/componentshortname >}}
 % cft stop -kill
 Stopping Transfer CFT...
 Transfer CFT stopped correctly.
@@ -140,7 +140,7 @@ Transfer CFT stopped correctly.
 
 ## cftupdate
 
-The cftupdate utility is used to update the configuration.
+The `cftupdate` utility is used to update the configuration.
 
 **Syntax**
 

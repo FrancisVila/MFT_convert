@@ -94,9 +94,9 @@ in the CFTPART command:
 ****Example  
 ****
 
-CFTPART ID=PART1  
-NSPART=\*  
-NSPASSW = \*\*  
+`CFTPART ID=PART1`  
+`NSPART=*`  
+`NSPASSW = **`  
 
 In this example, Transfer CFT will request the NSPART
 to be entered when the connection is made for the first time, and for

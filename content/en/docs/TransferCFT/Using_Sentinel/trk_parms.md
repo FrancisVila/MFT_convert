@@ -12,7 +12,7 @@ Parameters to regulate monitoring can have one of the following values:
 - UNDEFINED: undefined value
 - ERROR: all unsuccessful transfers (where the state can be Canceled, Suspended, or Interrupted - as described in <a href="../intro_sentinel/pesit_prot_sentinel" class="MCXref xref">XFBTransfer system attributes</a>)
 
-For a transfer command, if Sentinel monitoring is implemented, these parameters are analyzed in the following order: transfer command, transfer definition, partner definition, general parameter (CFTPARM), and lastly the UCONF parameter definition(sentinel.xfb.transfer). If the uconf is not defined, you can set it using the command CFTUTIL uconfset id=sentinel.xfb.transfer.
+For a transfer command, if Sentinel monitoring is implemented, these parameters are analyzed in the following order: transfer command, transfer definition, partner definition, general parameter (CFTPARM), and lastly the UCONF parameter definition(sentinel.xfb.transfer). If the uconf is not defined, you can set it using the command `CFTUTIL uconfset id=sentinel.xfb.transfer`.
 
 ****Parameters to regulate level of monitoring messages****
 

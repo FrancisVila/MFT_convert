@@ -33,8 +33,8 @@ There are three Transfer CFT packages available on the Axway support site - 2 pa
 
 Again, there are 2 product packaging formats in the **`Components\Transfer_CFT_V<version>_mvs\install`** directory:
 
-- \\adrdssu 
-- \\xmit
+- `\adrdssu  `
+- `\xmit `
 
 **<span id="kanchor13"></span>Installation directory contents**
 

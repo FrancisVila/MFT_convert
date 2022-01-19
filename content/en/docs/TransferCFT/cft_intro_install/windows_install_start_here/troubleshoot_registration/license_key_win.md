@@ -12,10 +12,10 @@ You need to apply a valid license key to Transfer CFT{{< TransferCFT/componentsh
 ## Obtain a license key
 
 1. Install Transfer CFT{{< TransferCFT/componentshortname >}}. You can install Transfer CFT{{< TransferCFT/componentshortname >}} without a license key, and enter the key afterward.
-1. After completing the installation, or for an existing installation, use the command ****cftutil about**** to retrieve your system information. For details see [ABOUT: Displaying product and host information](../../../../c_intro_userinterfaces/about_cftutil/about_command).
+1. After completing the installation, or for an existing installation, use the command **`cftutil about`** to retrieve your system information. For details see [ABOUT: Displaying product and host information](../../../../c_intro_userinterfaces/about_cftutil/about_command).
 1. Contact the Axway Fulfillment team at the appropriate email address, and provide the hostname and system information.
-    -   For a US key, contact: fulfillment@us.axway.com
-    -   For an EMEA or APAC key, contact: product.key@axway.com
+    -   For a US key, contact: `fulfillment@us.axway.com`
+    -   For an EMEA or APAC key, contact: `product.key@axway.com`
 
 ## Apply a license key
 
@@ -51,7 +51,7 @@ For example, if you have 2 hosts and 4 nodes, you require 4 keys with at least o
 
 ## About command
 
-Use the CFTUTIL utility to execute the ****about**** command to display key and general system information as demonstrated in this example.
+Use the CFTUTIL utility to execute the **`about `**command to display key and general system information as demonstrated in this example.
 
 ```
 CFTUTIL about

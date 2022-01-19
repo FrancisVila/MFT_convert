@@ -25,7 +25,7 @@ The following sections describe the Transfer CFT SFTP feature:
 
 The Transfer CFT in server mode supports the following SFTP commands:
 
-- Upload (put) and download (get)
+- Upload (`put`) and download (`get`)
 - Get directory listings
 - Create, remove, change directory
 - Rename, remove file
@@ -33,7 +33,7 @@ The Transfer CFT in server mode supports the following SFTP commands:
 
 The Transfer CFT in client mode supports the following SFTP commands:
 
-- Upload (put) and download (get)
+- Upload (`put`) and download (`get`)
 
 <span id="Supporte2"></span>
 
@@ -42,7 +42,7 @@ The Transfer CFT in client mode supports the following SFTP commands:
 The Transfer CFT SFTP implementation supports these features:
 
 - Text/binary file transfer
-- Group of files in heterogeneous mode (mput, mget)
+- Group of files in heterogeneous mode (`mput, mget`)
 - Folder monitoring
 - Multi-node
 - SSH compression
@@ -87,9 +87,9 @@ Transfers are activated by the client, so a restart only works from the client s
 
 ## Using Amazon S3
 
-Transfer CFT supports the use of Amazon S3 for SFTP file transfers. Configure as you would for PeSIT, and additionally define the UCONF aws.credentials.\*, workingdir, and storageaccount parameters. Optionally, you can add a sub-folder to the workingdir to restrict access to S3 objects in a specified bucket.
+Transfer CFT supports the use of Amazon S3 for SFTP file transfers. Configure as you would for PeSIT, and additionally define the UCONF `aws.credentials.*`, `workingdir`, and `storageaccount `parameters. Optionally, you can add a sub-folder to the `workingdir `to restrict access to S3 objects in a specified bucket.
 
-To add a workingdir sub-folder, use the format:
+To add a `workingdir `sub-folder, use the format:
 
 ```
 WORKINGDIR = 's3://cft-test-ci.eu-west-3/pub/share',

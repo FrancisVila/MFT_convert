@@ -29,7 +29,7 @@ Start the Transfer CFT server:
 cft start
 ```
 
-Verify that the default ports used in $CFTDIRRUNTIME/conf/cft-tcp.conf are available:
+Verify that the default ports used in `$CFTDIRRUNTIME/conf/cft-tcp.conf` are available:
 
 - 1761 (PeSIT Any protocol)
 - 1762 (PeSIT Any protocol with SSL authentication)

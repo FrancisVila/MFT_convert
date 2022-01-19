@@ -70,7 +70,7 @@ In POSIX-Extended regular expressions, all characters match themselves meaning t
 
 ## Use case
 
-The EREGEX examples describe how to create multiple exclusions using the INCLUDEFILTER and EXCLUDEFILTER parameters.
+The EREGEX examples describe how to create multiple exclusions using the `INCLUDEFILTER `and `EXCLUDEFILTER `parameters.
 
 ### EREGEX example 1
 

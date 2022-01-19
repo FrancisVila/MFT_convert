@@ -21,12 +21,12 @@ start Transfer CFT{{< TransferCFT/componentshortname  >}} for the first time inc
 After installing Transfer CFT{{< TransferCFT/componentshortname  >}}
 , but before starting Transfer CFT{{< TransferCFT/componentshortname  >}} you should:
 
-- Execute the profile.bat in the Transfer CFT{{< TransferCFT/componentshortname >}} runtime directory to define environment
-    variables, or execute profile.ps1 if you are using Windows PowerShell instead of Batch.
+- Execute the `profile.bat` in the Transfer CFT{{< TransferCFT/componentshortname >}} runtime directory to define environment
+    variables, or execute `profile.ps1` if you are using Windows PowerShell instead of Batch.
 - Create a new set of Transfer
     CFT working files, parameters, partners, catalog, communication file, logs,
     use the sample configuration files cft-tcp.conf and cft-tcp-part.conf in the `runtime\conf` directory. You can configure these during the product installation or manually after installation.
-- Use cftinit &lt;configuration\_file> > and/or cftupdate to interpret the parameter and
+- Use `cftinit <configuration_file>` > and/or `cftupdate` to interpret the parameter and
     partner files.  
     ```
     cftinit conf\\cft-tcp.conf
@@ -44,8 +44,8 @@ After installing Transfer CFT{{< TransferCFT/componentshortname  >}}
 
 ****Sample file details****
 
-- cft-tcp.conf: Contains PARM object definitions (PARM, CAT, COM, LOG, ACCNT, PROT, SEND, RECV,...etc.).
-- cft-tcp-part.conf: Contains partner definitions (CFTPART, CFTTCP, CFTSSL).
+- `cft-tcp.conf`: Contains PARM object definitions (PARM, CAT, COM, LOG, ACCNT, PROT, SEND, RECV,...etc.).
+- `cft-tcp-part.conf`: Contains partner definitions (CFTPART, CFTTCP, CFTSSL).
 
 Delivered partners are:
 
@@ -73,8 +73,8 @@ Delivered partners are:
 
 ## Start Transfer CFT{{< TransferCFT/componentshortname  >}} using a command
 
-If you have not already done so, from the runtime directory execute the profile.bat to set the Transfer CFT{{< TransferCFT/componentshortname  >}} environment.
-Then in the same dos session, enter the command: cft start
+If you have not already done so, from the runtime directory execute the `profile.bat` to set the Transfer CFT{{< TransferCFT/componentshortname  >}} environment.
+Then in the same `dos `session, enter the command: `cft start`
 
 <span id="Shutting_down_CFT"></span>
 
@@ -82,13 +82,13 @@ Then in the same dos session, enter the command: cft start
 
 You can use one of the following methods to shut down Transfer CFT:
 
-- CFTUTIL utility  
+- `CFTUTIL `utility  
     ```
     CFTUTIL shut fast=no
     *or*
     CFTUTIL shut fast=yes
     ```
-- cft utility using stop  
+- `cft  utility` using stop  
     ```
     cft stop
     ```
@@ -111,7 +111,7 @@ You can retroactively install Service mode for Transfer CFT{{< TransferCFT/compo
 
 ## Start the CFTW desktop window
 
-You can use the Windows utility `cftw.exe` to open a desktop window that displays the Transfer CFT{{< TransferCFT/componentlongname  >}} log messages and processes list in separate tabs. The `cft start` command automatically launches this cftw.exe utility when the UCONF parameter `cft.nt.start_graphmode` is set to **Yes** (default value).
+You can use the Windows utility `cftw.exe` to open a desktop window that displays the Transfer CFT{{< TransferCFT/componentlongname  >}} log messages and processes list in separate tabs. The `cft start` command automatically launches this cftw.exe utility when the UCONF parameter `cft.nt.start_graphmode` is set to **`Yes `**(default value).
 
 > **Note**
 >

@@ -4,7 +4,7 @@
     "weight": "290"
 }****UNIX****
 
-Refer to the [UCONF parameters](../uconf_directory) table for information on copilot.\*.unix parameters.
+Refer to the [UCONF parameters](../uconf_directory) table for information on `copilot.*.unix `parameters.
 
 ****Alias management****
 
@@ -86,12 +86,12 @@ The following tables describe the UCONF parameters that determine the certificat
 
 You can use the following certificate and private key formats, where the format of the certificate may differ from that of the key.
 
-The certificate type is dictated by the file name extension (.p12, .pkcs12, .der, .pem, for example my\_certificate.pem).
+The certificate type is dictated by the file name extension (.p12, .pkcs12, .der, .pem, for example `my_certificate.pem`).
 
 *For native files in a z/OS or IBM i environment*, if the format cannot be determined (the file suffix used as the extension), Transfer CFT derives the value from these uconf settings:
 
-- copilot.ssl.sslkeyfile=&lt;not set> and copilot.ssl.sslcertpassword=&lt;set>, then the format is PKCS12
-- copilot.ssl.sslkeyfile= &lt;set> and copilot.ssl.sslcertpassword=&lt;not set>, then the format is PEM
+- `copilot.ssl.sslkeyfile=<not set>` and `copilot.ssl.sslcertpassword=<set>`, then the format is PKCS12
+- `copilot.ssl.sslkeyfile= <set>` and `copilot.ssl.sslcertpassword=<not set>`, then the format is PEM
 
 QQQ\_QQQ\_QQQ
 

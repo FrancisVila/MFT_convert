@@ -171,7 +171,7 @@ CFTUTIL can be used in three different modes:
 
 ## Use the help command
 
-The help command enables you to get more information on a command and its parameters when using CFTUTIL. To use, enter help to list available commands.
+The `help `command enables you to get more information on a command and its parameters when using CFTUTIL. To use, enter `help ` to list available commands.
 
 ```
 > CFTUTIL [to start CFTUTIL]
@@ -186,7 +186,7 @@ CFTDEST CFTETB CFTEXIT CFTEXT GETDICT CFTFILE CFTIDF
 
 ```
 
-To get help for a specific command, use cmd=&lt;command>:
+To get help for a specific command, use `cmd=<command>`:
 
 ```
 > **help cmd=CFTSEND** [name of the command]
@@ -205,7 +205,7 @@ MAXDATE N N 8 Number <99991231> min=0 max=99991231
 ...
 ```
 
-To get a parameter description as well as defaults and type of input, add content=detail:
+To get a parameter description as well as defaults and type of input, add `content=detail`:
 
 ```
 > **help cmd=CFTSEND, content=detail**

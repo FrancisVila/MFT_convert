@@ -4,7 +4,7 @@
     "weight": "290"
 }## Line-mode commands
 
-The Transfer CFT utility CFTUTIL can accept line-mode commands. Enter the command at the CFTUTIL &gt; prompt and press ENTER to validate. To exit CFTUTIL, enter the /end command.
+The Transfer CFT utility CFTUTIL can accept line-mode commands. Enter the command at the `CFTUTIL > `prompt and press ENTER to validate. To exit CFTUTIL, enter the` /end `command.
 
 ****Examples****
 
@@ -15,12 +15,12 @@ The Transfer CFT utility CFTUTIL can accept line-mode commands. Enter the comma
     ``` > CFTUTIL
     ```
 
-- Enter the command LISTCAT and press ENTER to confirm.
+- Enter the command `LISTCAT `and press ENTER to confirm.
     ```
     1:Input : > LISTCAT
     ```
 
-- Enter the command /end and press ENTER to exit CFTUTIL.
+- Enter the command` /end `and press ENTER to exit CFTUTIL.
     ```
     1:Input : > /END
     ```
@@ -45,7 +45,7 @@ CFTUTIL PARAM('LISTPARM’ ‘TYPE=RECV')
 
 ### File passed as a parameter
 
-The following command runs the CFTUTIL utility, which reads the commands to be executed in the scen.cft file and displays the results.
+The following command runs the CFTUTIL utility, which reads the commands to be executed in the `scen.cft` file and displays the results.
 
 ****Example****
 

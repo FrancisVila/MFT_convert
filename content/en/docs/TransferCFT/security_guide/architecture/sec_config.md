@@ -8,12 +8,12 @@
 
 For all used SSL/TLS, you can use the following uconf parameters:
 
-- ssl.version\_min: Specify the minimum SSL/TLS version allowed by Transfer CFT connectors.
-- ssl.ciphersuites: Specify the SSL/TLS cipher suites negotiated by Transfer CFT connectors.
-- cft.ssl.version\_min: Specify the minimum SSL/TLS version allowed by Transfer CFT for file transfers.
-- cft.ssl.version\_max: Specify the maximum/TLS SSL version allowed by Transfer CFT for file transfers.
+- `ssl.version_min`: Specify the minimum SSL/TLS version allowed by Transfer CFT connectors.
+- `ssl.ciphersuites`: Specify the SSL/TLS cipher suites negotiated by Transfer CFT connectors.
+- `cft.ssl.version_min`: Specify the minimum SSL/TLS version allowed by Transfer CFT for file transfers.
+- `cft.ssl.version_max`: Specify the maximum/TLS SSL version allowed by Transfer CFT for file transfers.
 
-Notably and by default, the uconf copilot.ssl.version\_min value is set to point to the ssl.version\_min value. However, this can be overridden.
+Notably and by default, the uconf `copilot.ssl.version_min` value is set to point to the `ssl.version_min` value. However, this can be overridden.
 
 ### How to secure exchanges with Central Governance / Flow Manager
 
@@ -28,7 +28,7 @@ Set the CA certificate used to authenticate Central Governance:
 
 ### How to SSL/TLS secure the UI
 
-Connections to the Transfer CFT Copilot server are secured by default. To enable HTTP for this connection, set the uconf parameter copilot.http.onlyssl to No. For more information, please refer to the [Transfer CFT User Guide &gt; Administration &gt; Manage the servers &gt; Manage the Copilot server](https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/administration/manage_copilot.htm) &gt; *Configure Copilot with SSL security* section.
+Connections to the Transfer CFT Copilot server are secured by default. To enable HTTP for this connection, set the uconf parameter` copilot.http.onlyssl` to `No`. For more information, please refer to the [Transfer CFT User Guide &gt; Administration &gt; Manage the servers &gt; Manage the Copilot server](https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/administration/manage_copilot.htm) &gt; *Configure Copilot with SSL security* section.
 
 <span id="__RefHeading___Toc473905788"></span>
 
@@ -38,7 +38,7 @@ If you are managing your flows using Central Governance, please read the associa
 
 ## Secure partner connections without Central Governance / Flow Manager
 
-Flows can be secured with SSL/TLS. To secure your connection, on each side you must define a security profile using the CFTSSL object, which describes how to secure the connection. The SSL object references to CA certificate to trust, and certificate-key pairs. Depending on the uconf pki.type parameter, the certificate and private data is fetched using the IDs in the internal PKI database (pki.type=cft), the PassPort PS (pki.type=passport), system PKI database on ZOS (pki.type=system), custom user exit (pki.type=exit).  
+Flows can be secured with SSL/TLS. To secure your connection, on each side you must define a security profile using the CFTSSL object, which describes how to secure the connection. The SSL object references to CA certificate to trust, and certificate-key pairs. Depending on the uconf `pki.type` parameter, the certificate and private data is fetched using the IDs in the internal PKI database (pki.type=cft), the PassPort PS (pki.type=passport), system PKI database on ZOS (pki.type=system), custom user exit (pki.type=exit).  
 Please refer to the *Transfer CFT Users Guide* ****Security &gt; Configuring transport security &gt; CFTSSL configuration**** for details.
 
 The CFTSSL object ID must be referenced as the SSL parameter of the CFTPROT object for the server configuration, or the CFTPART object for the client configuration. Additionally, on the server additional partner-related control can be performed after SSL/TLS handshake by setting the ID of a CFTSSL object in the SSL parameter of the associated CFTPART object whose DIRECT parameter is set to SERVER. Please refer to the *Transfer CFT Users Guide* ****Security &gt; Configuring transport security &gt; Start here**** for more information.

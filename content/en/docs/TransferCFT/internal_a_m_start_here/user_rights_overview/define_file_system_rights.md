@@ -10,7 +10,7 @@
 
 ## UNIX{{< TransferCFT/unix  >}} tasks
 
-Use the chmod command to define read and write rights.
+Use the `chmod `command to define read and write rights.
 
 ## Windows tasks
 

@@ -38,7 +38,7 @@ A cluster installation of Transfer CFT with multi-node (HA):
 
 This is the path and name of the directory where you want to create a shared directory for the cluster installation. The shared directory is used to store product data files.
 
-*Windows only* - When installing a Windows multi-host Transfer CFT architecture, we recommend that you use UNC notation, which defines the path to a shared folder using the format \\\\server\\sharename.
+*Windows only* - When installing a Windows multi-host Transfer CFT architecture, we recommend that you use UNC notation, which defines the path to a shared folder using the format` \\server\sharename.`
 
 > **Note**
 >
@@ -90,7 +90,7 @@ Create as many copies of the initialize.properties file as you have hosts in the
 1. ./Transfer\_CFT\_3.9{{< TransferCFT/releasenumber >}}\_Install\_&lt;OS>\_&lt;BN>.run
 1. In the Installation Architecture screen, select **Cluster - first host**.
 1. Complete the installation.
-1. To add a host to create a multi-host, multi-node installation, run the install exe/bat again. This time select **Cluster - Additional host**.
+1. To add a host to create a multi-host, multi-node installation, run the install `exe/bat` again. This time select **Cluster - Additional host**.
 
 After installation, but before you can use the cluster installation, you must configure the high-availability operations. The procedure for cluster configuration varies depending on the platform on which the cluster is installed.
 
@@ -129,4 +129,4 @@ Transfer CFT is a cluster-unaware application. However, you can integrate Transf
 
 ### License key
 
-The Transfer CFT license key refers to a specific machine, and is based on the machine's hostname. To allow Transfer CFT to start on both cluster nodes, you need one license key per node. Enter the two license keys in the %CFTKEY% file located on the shared disk, one key per line.
+The Transfer CFT license key refers to a specific machine, and is based on the machine's hostname. To allow Transfer CFT to start on both cluster nodes, you need one license key per node. Enter the two license keys in the `%CFTKEY%` file located on the shared disk, one key per line.

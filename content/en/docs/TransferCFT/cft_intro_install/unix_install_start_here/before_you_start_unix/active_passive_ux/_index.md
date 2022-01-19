@@ -49,7 +49,7 @@ Create as many copies of the initialize.properties file as you have hosts in the
 1. ./Transfer\_CFT\_3.9{{< TransferCFT/releasenumber >}}\_Install\_&lt;OS>\_&lt;BN>.run
 1. In the Installation Architecture screen, select **Cluster - first host**.
 1. Complete the installation.
-1. To add a host to create a multi-host installation, run the install exe/bat again. This time select **Cluster - Additional host**.
+1. To add a host to create a multi-host installation, run the install `exe/bat` again. This time select **Cluster - Additional host**.
 
 ## Silent installation
 

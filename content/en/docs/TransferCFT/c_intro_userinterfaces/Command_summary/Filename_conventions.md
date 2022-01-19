@@ -137,7 +137,7 @@ the name of a selected file.
 This section
 provides an example of sending a group of files based on a selection.
 
-Where, FNAME={#mask | #dirname}
+Where, `FNAME={#mask | #dirname}`
 
 The name specified can be a generic file name or a directory name.
 

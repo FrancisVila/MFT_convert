@@ -4,7 +4,7 @@
     "weight": "370"
 }This section describes how to configure access management when not using Central Governance.
 
-Axway delivers an Access Management exit sample, examsmp1.c, in the &lt;CFTDIRRUNTIME>/src/exit directory.
+Axway delivers an Access Management exit sample, examsmp1.c, in the `<CFTDIRRUNTIME>/src/exit` directory.
 
 ### Services provided by delivered sample
 
@@ -23,21 +23,21 @@ To build the exit:
 1. Change the directory to: &lt;CFTDIRRUNTIME>/src/exit
 1. Run the following command:
 
-- UNIX: make
-- Windows: nmake -f exit.mak
+- UNIX: `make`
+- Windows: `nmake -f exit.mak`
 
-The output is a library located at &lt;CFTDIRRUNTIME>/lib/libcftexam.(so/dll).
+The output is a library located at `<CFTDIRRUNTIME>/lib/libcftexam.(so/dll)`.
 
 ## Flat file based on flat RBAC 
 
-To check users rights, Axway delivers a sample flat file based on flat <a href="" class="MCTextPopup popup popupHead">RBAC Role Based Access Control</a> (Role Based Access Control) located in: &lt;CFTDIRRUNTME>/conf/exam.csv. This file contains a set of permission and user assignments.
+To check users rights, Axway delivers a sample flat file based on flat <a href="" class="MCTextPopup popup popupHead">RBAC Role Based Access Control</a> (Role Based Access Control) located in: `<CFTDIRRUNTME>/conf/exam.csv`. This file contains a set of permission and user assignments.
 
 ![Simplied diagram of relationship between users, roles and permissions](/Images/TransferCFT/am_exits_rbac.GIF)
 
 ## Assigning permission
 
 The following line shows how to add a permission to a role:  
-&lt;cmd\_type> &lt;role> &lt;resource> &lt;actions> &lt;policy>
+`<cmd_type> <role> <resource> <actions> <policy>`
 
 Where:
 
@@ -87,7 +87,7 @@ PA ADMIN \* \* ACCEPT
 ## Assigning users
 
 The following line shows how to add a user to a role:  
-&lt;cmd\_type> &lt;role> &lt;users>
+`<cmd_type> <role> <users>`
 
 
 | Field  | Description  |

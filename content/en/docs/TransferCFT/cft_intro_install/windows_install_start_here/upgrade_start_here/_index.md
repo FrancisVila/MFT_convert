@@ -28,7 +28,7 @@ Upgrading, as compared to migration, has the following advantages:
 
 ****Transfer CFT 3.8 and higher****
 
-After performing a Transfer CFT upgrade, you must execute the profile before performing commands with the upgraded Transfer CFT.
+After performing a Transfer CFT upgrade, you must execute the `profile `before performing commands with the upgraded Transfer CFT.
 
 ### About manual migrations
 

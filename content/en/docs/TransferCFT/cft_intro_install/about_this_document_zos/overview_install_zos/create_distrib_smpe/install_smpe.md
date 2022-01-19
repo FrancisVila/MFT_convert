@@ -36,7 +36,7 @@ The Transfer CFT software has a SYSMOD FMID (Function Module ID) that identifie
 
 ### Silent mode
 
-You can run the setup procedure in silent mode, setup –s. In this case, you do not have to enter parameters in the console, but prior to starting you must update the silent\_smpe\_install.conf file located in the install directory.
+You can run the setup procedure in silent mode, `setup –s`. In this case, you do not have to enter parameters in the console, but prior to starting you must update the s`ilent_smpe_install.conf` file located in the install directory.
 
 ## Create a new Transfer CFT SMP/E environment
 

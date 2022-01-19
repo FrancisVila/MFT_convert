@@ -98,7 +98,7 @@ Trace mechanisms include the following features:
 ### Stop the collection process
 
 To stop
-collecting, enter the command: STOPTRC  
+collecting, enter the command: `STOPTRC`  
 The command is transmitted to Transfer CFT, which immediately shuts
 down information collection defined for this trace and destroys the corresponding
 vector.
@@ -115,8 +115,7 @@ Note:
 
 ### Close a trace and shut down the process
 
-To close a trace file and shutdown the process, enter the SETTRC
-MODE=DELETE command.
+To close a trace file and shutdown the process, enter the `SETTRC   MODE=DELETE` command.
 
 Transfer CFT processes the command as follows:
 
@@ -144,7 +143,7 @@ by partner.
 
 `CFTTRACE STARTTRC ID=ID,TID=TID,PTRACE=16,FILTER=Part`
 
-The command to start a trace FPDU (PTRACE=16) only applies to the Part partner. When you start a Trace, a new message is written
+The command to start a trace FPDU (PTRACE=16) only applies to the `Part `partner. When you start a Trace, a new message is written
 in the LOG File with a CFTT57 message:
 
 `CFTT92I IDTU=&idtu CTX=&ctx IDT=&idt  `

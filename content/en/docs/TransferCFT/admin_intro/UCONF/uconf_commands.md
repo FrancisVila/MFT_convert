@@ -31,7 +31,7 @@ retrieve a single technical parameter value.
 UCONFGET id=PARAMETER-KEY
 ```
 
-Results: PARAMETER-KEY=PARAMETER-VALUE
+Results: `PARAMETER-KEY=PARAMETER-VALUE`
 
 **UCONFUNSET**
 

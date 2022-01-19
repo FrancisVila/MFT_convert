@@ -6,10 +6,10 @@
 
 If an issue occurs while performing an installation or an upgrade, check for errors in the following places. Perform these steps before attempting to roll back in the case of an upgrade.
 
-1. If you performed an upgrade from a version prior to v3.6, look for errors in the install.log located in the axway.installer directory.
-1. Check for errors in the install.log in the CFT directory (if this is a new installation or you upgraded from a version that did not use the Axway installer).
-1. Navigate to the runtime directory and check the .up folder contents.
-1. Again from the runtime directory, check the copupd folder contents. This folder is only available after performing a Transfer CFT{{< TransferCFT/transfercftname >}} update or upgrade when using Central Governance{{< TransferCFT/centralgovernancename >}} or Flow Manager{{< TransferCFT/flowmanager >}}. In the copupd folder, navigate to the log > install file.
+1. If you performed an upgrade from a version prior to v3.6, look for errors in the `install.log` located in the `axway.installer` directory.
+1. Check for errors in the `install.log` in the `CFT` directory (if this is a new installation or you upgraded from a version that did not use the Axway installer).
+1. Navigate to the runtime directory and check the `.up `folder contents.
+1. Again from the runtime directory, check the `copupd `folder contents. This folder is only available after performing a Transfer CFT{{< TransferCFT/transfercftname >}} update or upgrade when using Central Governance{{< TransferCFT/centralgovernancename >}} or Flow Manager{{< TransferCFT/flowmanager >}}. In the `copupd `folder, navigate to the` log > install` file.
 1. Be ready to supply all of these files to Axway support if you cannot troubleshoot the issue with any errors found in the logs.
 
 ## Transfer CFT Copilot server issues
@@ -17,8 +17,8 @@ If an issue occurs while performing an installation or an upgrade, check for err
 ### Copilot doesn't start
 
 - Check that the port is not already used by another application.
-- Close all active sessions, use the syntax: copstop -f
-- Check that there are no orphan "cop\*" processes. If there are, manually kill these processes.
+- Close all active sessions, use the syntax: `copstop -f`
+- Check that there are no orphan "`cop*`" processes. If there are, manually kill these processes.
 
 Transfer CFT{{< TransferCFT/componentshortname  >}} server
 
@@ -59,11 +59,11 @@ is not writable by the current user
 To resolve this issue, using a different user perform the following commands on all hosts that are involved in the multihost, multi-node installation:
 
 1. Open an SSH session on the machine and run the following command to change the UID, for example:  
-    sudo usermod -u 1005 ithomas  
-    Where `1005 `is the desired common UID, and ithomas is the user common to all of the UNIX hosts.
+    `sudo usermod -u 1005 ithomas`  
+    Where `1005 `is the desired common UID, and `ithomas `is the user common to all of the UNIX hosts.
 1. Run the command to change the GID, for example:  
     `sudo groupmod -g 1006 ithomas`  
-    Where 1006 is the desired common GID, and ithomas is the group to which the user ithomas belongs.
+    Where `1006 `is the desired common GID, and `ithomas `is the group to which the user `ithomas `belongs.
 
 For more information, please refer to the [NFS](http://nfs.sourceforge.net/nfs-howto/ar01s07.html#pemission_issues) documentation.
 

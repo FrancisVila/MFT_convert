@@ -55,7 +55,7 @@ This section you use CFTSSH to define a SSH profile in Transfer CFT. The CFTSSH
 - ID: Identifier of the object
 - DIRECT=SERVER
 - SRVPRIVKEY: Key Id containing the server private key (RSA) to use with key authentication.
-    -   If SRVPRIVKEY(CFTSSH direct=server) is not set, Transfer CFT{{< TransferCFT/componentlongname >}} cannot start, and the message displays CFTN05E SFTP bind() failed: ECDSA, DSA, or RSA host key file must be set.
+    -   If SRVPRIVKEY(CFTSSH direct=server) is not set, Transfer CFT{{< TransferCFT/componentlongname >}} cannot start, and the message displays `CFTN05E SFTP bind() failed: ECDSA, DSA, or RSA host key file must be set`.
 
 ****Example****
 
@@ -94,7 +94,7 @@ There are two ways for you to configure how the server will check the client pas
 
 <!-- -->
 
-- Uconf definition: When NRPASSW=\_AUTH\_, authentication is specified in uconf:cft.server.authentication\_method is used.
+- Uconf definition: When NRPASSW=\_AUTH\_, authentication is specified in `uconf:cft.server.authentication_method `is used.
 
 > **Note**
 >
@@ -197,7 +197,7 @@ This section describes how to specify a default flow model identifier (IDF) to 
 CFTPART id=partner,IDF=<default_model_for_this_partner>,…
 ```
 
-If the remote path is absolute (root directory), Transfer CFT{{< TransferCFT/transfercftname  >}} uses the root directory as the IDF. In this example, flow01 corresponds to the IDF for this partner.
+If the remote path is absolute (root directory), Transfer CFT{{< TransferCFT/transfercftname  >}} uses the root directory as the IDF. In this example, `flow01 `corresponds to the IDF for this partner.
 
 ```
 put LocalFile01.txt /flow01/RemoteFile01.txt
@@ -210,7 +210,7 @@ of authorized IDFs for send/receive transfers with a defined partner. You can us
 
 For more information, see [CFTAUTH](../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftauth).
 
-In the following example, defining a CFTAUTH creates visibility for **flow01** and **flow02** for the user2 client.
+In the following example, defining a CFTAUTH creates visibility for **`flow01`** and **`flow02`** for the `user2 `client.
 
 ```
 CFTPART ID=user2, IDF=(flow02), NRPART="user2", SAUTH=AUTH2, RAUTH=AUTH2...
@@ -253,8 +253,8 @@ If the provided IDF does not belong to either the SAUTH or RAUTH list, on the se
 
 When Transfer CFT is acting in server mode note the following requirements:
 
-- If the client performs a get command, the Transfer CFT must use implicit mode (CFTSEND IMPL=YES) on the server side. If you do not have a model having IMPL=YES, the client cannot perform a download (get) and a permission denied error occurs.
-- If a third-party SFTP client performs a put command, the Transfer CFT server must use open mode (FNAME= &NFNAME). If you do not have a CFTRECV model, the client cannot perform an upload (put) and a permission denied error occurs.
+- If the client performs a `get `command, the Transfer CFT must use implicit mode (CFTSEND IMPL=YES) on the server side. If you do not have a model having IMPL=YES, the client cannot perform a download (get) and a `permission denied` error occurs.
+- If a third-party SFTP client performs a `put `command, the Transfer CFT server must use open mode (FNAME= &NFNAME). If you do not have a CFTRECV model, the client cannot perform an upload (put) and a `permission denied` error occurs.
 
 The root directory for the SFTP connection is the WORKINGDIR defined in the CFTSEND (IMPL=YES) or CFTRECV corresponding to the IDF. If both CFTSEND and CFTRECV are defined for that IDF but with different WORKINGDIR, there is a DIAGI 435 error for the Transfer CFT client, and an SFTP failure with an appropriate error message for other SFTP clients.
 
@@ -265,11 +265,11 @@ When defining the WORKINGDIR, you can use the following symbolic variables:
 - &USERID: user login
 - &NRPART: same as &USERID
 - &PART: partner
-- &HOME: home directory on UNIX, or the user directory on Windows (C:\\Users\\&lt;user>)
+- &HOME: home directory on UNIX, or the user directory on Windows (`C:\Users\<user>`)
 
 ****Example****
 
-In this example, user1 can perform a get or put command using the space (WORKINGDIR) defined for user1.
+In this example, `user1 `can perform a `get `or `put `command using the space (WORKINGDIR) defined for `user1`.
 
 ```
 CFTPART ID=user1, IDF=flow01, NRPART="user1",...

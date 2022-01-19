@@ -19,4 +19,4 @@ CFTUTL
 UCONFSET ID= pki.passport.port, value=”xxxx”
 ```
 
-Refer to the [UCONF parameters](../uconf_directory) table for information on the pki.passport type parameters.
+Refer to the [UCONF parameters](../uconf_directory) table for information on the `pki.passport `type parameters.

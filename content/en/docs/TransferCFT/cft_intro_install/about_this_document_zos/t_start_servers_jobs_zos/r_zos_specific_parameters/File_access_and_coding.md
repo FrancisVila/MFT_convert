@@ -231,7 +231,7 @@ FNAME=NAME1.NAMEX(MEMBER)
 
 Delivered template:
 
-- ..SAMPLE(CFTPDS)
+- `..SAMPLE(CFTPDS)`
 
 <span id="Coding GDG filenames"></span>
 
@@ -251,8 +251,8 @@ FNAME=NAME1.NAMEX(+n)
 
 Delivered templates:
 
-- ..SAMPLE(CFTGDGS) (send GDG)
-- ..SAMPLE(CFTGDGR) (receive GDG)
+- `..SAMPLE(CFTGDGS) (send GDG)`
+- `..SAMPLE(CFTGDGR) (receive GDG)`
 
 ****Related topics****
 

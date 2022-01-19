@@ -21,7 +21,7 @@ There are two ways to execute a processing script, either by referencing a templ
 
 Using this method, Transfer CFT{{< TransferCFT/componentlongname  >}} creates a temporary file based on the template processing script, and replaces all symbolic variables with the corresponding values as they relate to the transfer. For example, if &IDTU is in the script, it is replaced by the actual transfer value. Transfer CFT{{< TransferCFT/componentlongname  >}} then executes this temporary file.
 
-For example, to run the myscript.sh script using this method:
+For example, to run the `myscript.sh` script using this method:
 
 ```
 cftsend id=flow01, exec='exec/myscript.sh'
@@ -58,7 +58,7 @@ Depending on the operating system, the temporary file is treated as follows:
     `rm $0.err`
 
 - HP NonStop native environment: You must perform the following steps to remove the temporary file:
-    &lt;ul>&lt;li>#PURGE \[#IN\]&lt;/li>&lt;li>The same BTPURGE procedure as in the previous version is delivered and can be executed&lt;/li>&lt;span class="code">RUN &lt;subvolume>UP.BTPURGE \[#DEFAULTS\]&lt;/span>&lt;/ul>&lt;/li>
+    &lt;ul>&lt;li>#PURGE \[#IN\]&lt;/li>&lt;li>The same BTPURGE procedure as in the previous version is delivered and can be executed&lt;/li>&lt;span class="code">&lt;code>RUN &lt;subvolume>UP.BTPURGE \[#DEFAULTS\]&lt;/code>&lt;/span>&lt;/ul>&lt;/li>
 
 - HP NonStop OSS environment: You must add the following lines at the end of the template processing script:
 
@@ -74,9 +74,9 @@ Depending on the operating system, the temporary file is treated as follows:
 
 A second method for executing scripts is to directly run a script. This method allows you to put command arguments directly in the exec parameter itself. However, while you may use symbolic variables in the exec, any symbolic variables contained within the script are not replaced during script execution.
 
-For security reasons, you cannot use this method with the SEND/RECV command's PREEXEC, EXEC or ACKEXEC parameters. Doing so generates an error: CFTT97E cmd prefix not allowed in procedure execution for SEND and RECV commands.
+For security reasons, you cannot use this method with the SEND/RECV command's PREEXEC, EXEC or ACKEXEC parameters. Doing so generates an error: `CFTT97E cmd prefix not allowed in procedure execution for SEND and RECV commands`.
 
-To implement this method, preface the PREEXEC, EXEC or ACKEXEC value with "cmd:". For example:
+To implement this method, preface the PREEXEC, EXEC or ACKEXEC value with "`cmd:`". For example:
 
 ```
 CFTSEND id=flow01, fname=myfile, exec="cmd:myscript.sh &PART &IDT &IDTU"
@@ -110,7 +110,7 @@ You can use the Premindate/Premintime, Postmindate/Postmintime, and Ackmindate/A
 
 ## Throttle processing
 
-In some cases you may want to limit the number of scripts launched in parallel by Transfer CFT{{< TransferCFT/transfercftname  >}} to reduce processing bottlenecks. To do so, set the UCONF cft.server.max\_processing\_scripts parameter to a positive integer to enable and control the number of executed processes.
+In some cases you may want to limit the number of scripts launched in parallel by Transfer CFT{{< TransferCFT/transfercftname  >}} to reduce processing bottlenecks. To do so, set the UCONF `cft.server.max_processing_scripts` parameter to a positive integer to enable and control the number of executed processes.
 
 > **Note**
 >
@@ -118,7 +118,7 @@ In some cases you may want to limit the number of scripts launched in parallel b
 > When using this parameter, every end-of-transfer procedure must notify Transfer CFT once the processing is complete. This can be done either via an END or KEEP command (in the case of an error). Failure to signal that processing is complete means that new procedures cannot start once the cft.server.max\_processing\_scripts value is reached.
 
 ```
-uconfset id=cft.server.max_processing_scripts, value=64
+uconfset id=`cft.server.max_processing_scripts`, value=64
 ```
 
 > **Note**
@@ -129,7 +129,7 @@ uconfset id=cft.server.max_processing_scripts, value=64
 
 ### End command
 
-The end command monitors the script completion. Depending on the parameter used (appstate, istate, and diagc) you can, for example, check the progression of the script. The end of processing is marked by a CFTUTIL END with istate=no (default).
+The end command monitors the script completion. Depending on the parameter used (appstate, istate, and diagc) you can, for example, check the progression of the script. The end of processing is marked by a CFTUTIL END with `istate=no` (default).
 
 #### Define istate and appstate
 

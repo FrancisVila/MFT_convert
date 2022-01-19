@@ -10,13 +10,13 @@
 
 **UNIX systems**
 
-You cannot run the InstallBuilder if the **noexec mount option** is set on both the /tmp directory and the user's homedir. For example, the installation will fail if you are running unattended mode for a target machine where the user has this mount option set on both directories.
+You cannot run the InstallBuilder if the **noexec mount option** is set on both the` /tmp `directory and the user's `homedir`. For example, the installation will fail if you are running unattended mode for a target machine where the user has this mount option set on both directories.
 
 Workarounds include:
 
-- Remove the noexec option from one of the partitions.
-- Run the .run with a user who has the necessary rights, for example sudo.
-- Create a temporary /home directory on an unprotected disk:
+- Remove the `noexec `option from one of the partitions.
+- Run the` .run` with a user who has the necessary rights, for example `sudo`.
+- Create a temporary `/home` directory on an unprotected disk:
 
 ```
 sudo mkdir /instcft
@@ -72,20 +72,20 @@ While trying to troubleshoot a non-working registration, you may find there are 
 To have more request details between Central Governance{{< TransferCFT/centralgovernancename  >}} and Transfer CFT{{< TransferCFT/transfercftname  >}} registration or between heartbeats, set the $\_JAVA\_OPTIONS environment variables as shown below (on UNIX in this example).
 
 1. Requests from Central Governance{{< TransferCFT/centralgovernancename >}} to Transfer CFT{{< TransferCFT/transfercftname >}} (call to web services):  
-    export \_JAVA\_OPTIONS=$\_JAVA\_OPTIONS" -Dorg.apache.commons.logging.Log=org.apache.commons.logging.impl.SimpleLog"  
-    export \_JAVA\_OPTIONS=$\_JAVA\_OPTIONS" -Dorg.apache.commons.logging.simplelog.defaultlog=debug"  
-    export \_JAVA\_OPTIONS=$\_JAVA\_OPTIONS" -Dorg.apache.commons.logging.simplelog.showdatetime=true"  
-    export \_JAVA\_OPTIONS=$\_JAVA\_OPTIONS" -Dorg.apache.commons.logging.simplelog.log.org.apache.href=debug"
+    `export _JAVA_OPTIONS=$_JAVA_OPTIONS" -Dorg.apache.commons.logging.Log=org.apache.commons.logging.impl.SimpleLog"`  
+    `export _JAVA_OPTIONS=$_JAVA_OPTIONS" -Dorg.apache.commons.logging.simplelog.defaultlog=debug"`  
+    `export _JAVA_OPTIONS=$_JAVA_OPTIONS" -Dorg.apache.commons.logging.simplelog.showdatetime=true"`  
+    `export _JAVA_OPTIONS=$_JAVA_OPTIONS" -Dorg.apache.commons.logging.simplelog.log.org.apache.href=debug"`
 1. Requests from Transfer CFT{{< TransferCFT/transfercftname >}} to Central Governance{{< TransferCFT/centralgovernancename >}} (registration /heartbeat):  
-    export \_JAVA\_OPTIONS=$\_JAVA\_OPTIONS" -Dorg.eclipse.jetty.util.log.class=org.eclipse.jetty.util.log.StdErrLog"  
-    export \_JAVA\_OPTIONS=$\_JAVA\_OPTIONS" -Dorg.eclipse.jetty.LEVEL=DEBUG"
+    `export _JAVA_OPTIONS=$_JAVA_OPTIONS" -Dorg.eclipse.jetty.util.log.class=org.eclipse.jetty.util.log.StdErrLog"`  
+    `export _JAVA_OPTIONS=$_JAVA_OPTIONS" -Dorg.eclipse.jetty.LEVEL=DEBUG"`
 1. Restart Central Governance to activate the changes.
 1. Ensure the ****Transfer CFT Connector**** service in Central Governance{{< TransferCFT/centralgovernancename >}} is in debug mode:  
-    cli > serviceLog -l DEBUG -name "Transfer CFT Connector"
+    `cli > serviceLog -l DEBUG -name "Transfer CFT Connector"`
 1. Return to info mode:  
-    cli > serviceLog -l INFO -name "Transfer CFT Connector"
+    `cli > serviceLog -l INFO -name "Transfer CFT Connector"`
 1. Check the logs in:  
-    $CG\_HOME/runtime/com.axway.nodes.cftconnector\_{un\_UUID}/uma/logs/provider.log.\*
+    `$CG_HOME/runtime/com.axway.nodes.cftconnector_{un_UUID}/uma/logs/provider.log.*`
 
 ### Registration fails after installing in service mode when using a firewall
 
@@ -101,11 +101,11 @@ Transfer CFT cannot register in Central Governance when installing Copilot in s
 
 ### Re-register with Central Governance
 
-When Central Governance sends the SSL certificates to Transfer CFT{{< TransferCFT/componentshortname  >}}, the UCONF cg.registration\_id parameter is set to a positive integer. If an error occurs, the registration process ends in error. To repeat the registration, perform the following steps:
+When Central Governance sends the SSL certificates to Transfer CFT{{< TransferCFT/componentshortname  >}}, the UCONF `cg.registration_id parameter` is set to a positive integer. If an error occurs, the registration process ends in error. To repeat the registration, perform the following steps:
 
 1. Stop Transfer CFT{{< TransferCFT/componentshortname >}}.
 1. Stop Copilot.
-1. Set the UCONF cg.registration\_id to its default value (-1) using the unset command:
+1. Set the UCONF `cg.registration_id` to its default value (-1) using the unset command:
 1. Start the Transfer CFT Copilot. Copilot starts the registration process.
 
 ******More information******

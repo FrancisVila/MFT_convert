@@ -116,13 +116,13 @@ For a file to become a candidate to be submitted, the following conditions must 
 
 ## Create or modify a monitored folder and apply configuration changes
 
-The act of starting Transfer CFT causes Transfer CFT to check for and reload configuration changes. Alternatively, you can dynamically execute the CFTUTIL RECONFIG type=FOLDER command to check and reload the configuration.
+The act of starting Transfer CFT causes Transfer CFT to check for and reload configuration changes. Alternatively, you can dynamically execute the `CFTUTIL RECONFIG type=FOLDER` command to check and reload the configuration.
 
 Upon reloading, if there are any modified configuration parameters or detected errors in the new configuration, Transfer CFT records these in the log. Additionally, Transfer CFT verifies that the updated configuration is compatible with the contents of the current directories.
 
 In particular, if you change the METHOD parameter from FILE to MOVE without modifying the scan\_dir and work\_dir parameters, and if the work\_dir directory is not empty, Transfer CFT displays an error message in the log and will not monitor the corresponding directory.
 
-To deactivate compatibility checks of a folder’s new configuration, unset the value of the folder\_monitoring.folders.&lt;logical\_name>.control parameter using the uconfunset command.
+To deactivate compatibility checks of a folder’s new configuration, unset the value of the `folder_monitoring.folders.<logical_name>.control `parameter using the `uconfunset `command.
 
 **Example**
 
@@ -219,7 +219,7 @@ CFTUTIL uconfset id=folder_monitoring.folders.B.idf , value='TXT'
 CFTUTIL uconfset id=folder_monitoring.folders.B.file_include_filter , value='\*.txt'
 ```
 
-The files to be sent must be moved to the directory that corresponds to the destination partner name, for example /home/CFT/fm/dir\_b/newyork for the partner named newyork.
+The files to be sent must be moved to the directory that corresponds to the destination partner name, for example `/home/CFT/fm/dir_b/newyork` for the partner named newyork.
 
 #### Directory C requirements
 

@@ -35,7 +35,7 @@ All commands in this section are performed using CFTUTIL unless stated otherwise
 Set the parameters used to identify a Transfer CFT instance. Follow these guidelines, otherwise the registration will fail:
 
 - The length of the `cft.instance_id` value is limited to 24 characters.
-- The address set in cft.full\_hostname must be reachable from Flow Manager{{< TransferCFT/flowmanager >}} or a Flow Manager Agent (for a SaaS deployment).
+- The address set in `cft.full_hostname` must be reachable from Flow Manager{{< TransferCFT/flowmanager >}} or a Flow Manager Agent (for a SaaS deployment).
 
 ```
 uconfset id=cft.instance_id, value=<cft_id>
@@ -43,11 +43,11 @@ uconfset id=cft.instance_group, value=<cft_instance_group>
 uconfset id=cft.full_hostname, value=<cft_address>
 ```
 
-Additionally, if running in a multi-host/multi-node environment, you must set the load balancer address(FQDN or IP address) and port that Flow Manager{{< TransferCFT/flowmanager  >}} uses to reach the Transfer CFT (copilot.general.ssl\_serverport):
+Additionally, if running in a multi-host/multi-node environment, you must set the load balancer address(FQDN or IP address) and port that Flow Manager{{< TransferCFT/flowmanager  >}} uses to reach the Transfer CFT (`copilot.general.ssl_serverport`):
 
 ```
 uconfset id=cft.multi_node.load_balancer.host, value=<load_balancer_address>
-uconfset id=cft.multi_node.load_balancer.port,value=<load_balancer_port>
+uconfset id=`cft.multi_node.load_balancer.port,value=<load_balancer_port>`
 ```
 
 #### Define the Flow Manager Agent for SaaS
@@ -66,9 +66,9 @@ To use a proxy server for your on-premise Flow Manager{{< TransferCFT/flowmanage
 
 ```
 uconfset id=cg.proxy.in.host, value= <proxy_address>
-uconfset id=cg.proxy.in.port,value= <proxy_port>
+uconfset id=cg.proxy.in.port`,value= <proxy_port>`
 uconfset id=cg.proxy.in.login, value= <proxy_login>
-uconfset id=cg.proxy.in.password, value= <proxy_login_password>
+uconfset id=`cg.proxy.in.password, value= <proxy_login_password>`
 ```
 
 #### Optionally define a proxy server for Transfer CFT{{< TransferCFT/componentlongname  >}} to Flow Manager{{< TransferCFT/flowmanager  >}} communication
@@ -173,7 +173,7 @@ Check the list in the output for errors and correct all errors before attempting
 
 ## Register or re-register
 
-Ensure that `cft_registration_id `is reset to -1. Otherwise, reset it as follows:  
+Ensure that `cft_registration_id `is reset to `-1`. Otherwise, reset it as follows:  
 
 ```
 CFTUTIL uconfunset id=cg.registration_id

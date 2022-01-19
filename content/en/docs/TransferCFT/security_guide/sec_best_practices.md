@@ -75,10 +75,10 @@ It is imperative that you protect sensitive files and databases. The configurati
 
 The configuration files are located by default in the data folder in the runtime directory:
 
-- The cftuconf.dat file containing customized uconf values
-- The cftparm file is the database containing parameters, keys, certificates, and partners
+- The `cftuconf.dat` file containing customized uconf values
+- The `cftparm `file is the database containing parameters, keys, certificates, and partners
 
-The encryption key and salt files are located by default in the data/crypto directory.
+The encryption key and salt files are located by default in the `data/crypto` directory.
 
 
 | File | Description | Access for Transfer CFT<br/> Product and administrator | Access for others |
@@ -91,7 +91,7 @@ The encryption key and salt files are located by default in the data/crypto dire
 
 The product database also contains sensitive data; you should prohibit access to this database from any other tools or applications using the API, apart from one or two administrators.
 
-In the &lt;runtimedir>/data directory:
+In the `<runtimedir>/data` directory:
 
 - The cftcom file (and cftcomNN files in multi-node setting), which contains the wait list for commands processed by the Transfer CFT
 - The cftcat file (and cftcatNN files in multi-node setting), which contains information about the processed transfer

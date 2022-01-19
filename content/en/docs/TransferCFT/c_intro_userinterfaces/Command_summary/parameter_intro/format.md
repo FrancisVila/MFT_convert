@@ -42,7 +42,7 @@ or if the new structure is to be applied (V24 values).
 
 ****\[ FORMAT = { string } \]****
 
-Indicates the file format of the communication area for an exit list. The possible values are 1, 2 C, T, J or X, where 1 is the default.
+Indicates the file format of the communication area for an exit list. The possible values are 1, 2 C, T, J or X, where `1 `is the default.
 
 ****Example****
 
@@ -87,7 +87,7 @@ Displays using the same format as in Transfer CFT{{< TransferCFT/hflongproductna
 
 Each field is separated by a comma.
 
-For example: S,X,X,X,MARTIN,PARIS,BIN,L1111482,2,,128,20191211,11481147,,,,,0,CP NONE
+For example: `S,X,X,X,MARTIN,PARIS,BIN,L1111482,2,,128,20191211,11481147,,,,,0,CP NONE`
 
 ##### Format T: TSV - Tab Separated Value
 

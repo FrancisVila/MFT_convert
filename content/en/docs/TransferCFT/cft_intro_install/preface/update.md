@@ -14,12 +14,12 @@ If you are not familiar with the installation procedure, you may want to first r
     ****Example****  
     Transfer\_CFT\_3.9{{< TransferCFT/releasenumber >}}\_**SP4**\_hp\_nonstop\_oss-x86-32\_BN12345678.zip  
     This example is of service pack 4. You can install it over any existing Transfer CFT 3.3.2 for HP NonStop X86 installation. The existing installation can already have one or several applied updates. In this example, possible service packs would include SP1 to SP3, or any available patches.
-1. Decompress the archive using the unzip command.
+1. Decompress the archive using the `unzip `command.
 1. Load the profile and stop both Transfer CFT and Copilot before applying the update.
-1. Use the install command plus the &lt;pathname> to install the service pack. If the pathname is not the same as the existing installation though, the process fails.
+1. Use the `install `command plus the `<pathname>` to install the service pack. If the pathname is not the same as the existing installation though, the process fails.
 
 - Example  
-    The following example demonstrates a Transfer CFT 3.9{{< TransferCFT/releasenumber >}} SP4 installation over an existing product installed in /home/cftuser/CFT33x.
+    The following example demonstrates a Transfer CFT 3.9{{< TransferCFT/releasenumber >}} SP4 installation over an existing product installed in `/home/cftuser/CFT33x`.
 
 > **Note**
 >
@@ -34,7 +34,7 @@ When you install a service pack, the contents of the home directory are updated,
 A rollback procedure uninstalls the last installed service pack and reverts Transfer CFT to the update level prior to that service pack. If you have applied several updates, you can rollback several times; the rollback procedure does not affect your data.
 
 1. Load the profile and stop both Transfer CFT and Copilot before starting the rollback procedure.
-1. Execute the ./install.sh rollback script located in the installation inst/TransferCFT subdirectory.
+1. Execute the `./install.sh rollback` script located in the installation `inst/TransferCFT` subdirectory.
 
 - Example  
-    The following example demonstrates a Transfer CFT 3.5 SP4 rollback for a product installed in /home/cftuser/CFT33x.
+    The following example demonstrates a Transfer CFT 3.5 SP4 rollback for a product installed in `/home/cftuser/CFT33x.`

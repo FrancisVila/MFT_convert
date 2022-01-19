@@ -65,8 +65,8 @@ To create exits with C, access the following files:
     Samples for the ACCESS (CEXADLL), Beginning-of-Transfer(CEXBDLL), CATALOG (CEXEDLL), or FILE (CEXFDLL) are provided, and contain the steps required for a Transfer CFT EXIT:
 
     -   The main entry point, ‘`callexig*`’, is exported and is called by the Transfer CFT EXIT loader.
-    -   The init function, where the name is free, and samples use the EXAINI, EXEINI, EXFINI and EXBINI names. The `init `function returns the Transfer CFT EXIT run function address.
-    -   The run function, where the name is free, and samples use the EXAXMP1, EXEXMP1, EXFXMP1, and EXBXMP1 names.
+    -   The `init `function, where the name is free, and samples use the EXAINI, EXEINI, EXFINI and EXBINI names. The `init `function returns the Transfer CFT EXIT run function address.
+    -   The `run `function, where the name is free, and samples use the EXAXMP1, EXEXMP1, EXFXMP1, and EXBXMP1 names.
     -   Exits must be compiled with the options: LANG(EXTENDED), RENT, DLL, LONGNAME.
     -   An example of a call to Transfer CFT APIs within an exit is provided in the CEXEDLL sample.
 

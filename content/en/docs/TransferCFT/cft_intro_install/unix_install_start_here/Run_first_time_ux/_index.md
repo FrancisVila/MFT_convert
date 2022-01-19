@@ -20,12 +20,12 @@ start Transfer CFT{{< TransferCFT/componentshortname  >}} for the first time inc
 After installing Transfer CFT{{< TransferCFT/componentshortname  >}}
 , but before starting Transfer CFT{{< TransferCFT/componentshortname  >}} you should:
 
-- Execute the profile in the Transfer CFT{{< TransferCFT/componentshortname >}} runtime directory to define environment
-    variables. Run: ‘. ./profile’
+- Execute the `profile` in the Transfer CFT{{< TransferCFT/componentshortname >}} runtime directory to define environment
+    variables. Run: `‘. ./profile’`
 - Create a new set of Transfer
     CFT working files, parameters, partners, catalog, communication file, logs,
-    use the sample configuration files cft-tcp.conf and cft-tcp-part.conf in the runtime/conf directory. You can configure these during the product installation, or manually after installation.
-- Use cftinit &lt;configuration\_file> > and/or cftupdate to interpret the parameter and
+    use the sample configuration files cft-tcp.conf and cft-tcp-part.conf in the `runtime/conf `directory. You can configure these during the product installation, or manually after installation.
+- Use `cftinit <configuration_file>` > and/or `cftupdate` to interpret the parameter and
     partner files.  
     ```
     cftinit conf/cft-tcp.conf
@@ -43,8 +43,8 @@ After installing Transfer CFT{{< TransferCFT/componentshortname  >}}
 
 ****Sample file details****
 
-- cft-tcp.conf: Contains PARM object definitions (PARM, CAT, COM, LOG, ACCNT, PROT, SEND, RECV,...etc.)
-- cft-tcp-part.conf: Contains partner definitions (CFTPART, CFTTCP, CFTSSL)
+- `cft-tcp.conf`: Contains PARM object definitions (PARM, CAT, COM, LOG, ACCNT, PROT, SEND, RECV,...etc.)
+- `cft-tcp-part.conf`: Contains partner definitions (CFTPART, CFTTCP, CFTSSL)
 
 Delivered partners are:
 
@@ -74,7 +74,7 @@ The following table lists the commands according to Transfer CFT{{< TransferCFT/
 
 ### Start up
 
-You can start Transfer CFT with the cft start utility; see also Transfer CFT Management Utilities.
+You can start Transfer CFT with the `cft start `utility; see also Transfer CFT Management Utilities.
 
 <span id="Shut"></span>
 
@@ -82,8 +82,8 @@ You can start Transfer CFT with the cft start utility; see also Transfer CFT Man
 
 You can use one of the following methods to shut down Transfer CFT:
 
-- The CFTUTIL utility
-- The cft utility
+- The `CFTUTIL `utility
+- The `cft ` utility
 
 For more information, see the administrative commands in [Manage the Transfer CFT server](https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/administration/start_stop_cft.htm).
 

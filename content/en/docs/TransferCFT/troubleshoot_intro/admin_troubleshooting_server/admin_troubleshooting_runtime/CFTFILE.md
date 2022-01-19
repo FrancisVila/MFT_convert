@@ -66,7 +66,7 @@ Use the CFTFILE command to create (MODE = CREATE) empty or delete (MODE
 
 ******Syntax******
 
-#### CFTFILE { PARM | PARAM | PART }
+#### `CFTFILE { PARM | PARAM | PART }`
 
 `TYPE   = { PARM | PARAM | PART }`
 
@@ -84,7 +84,7 @@ Use the CFTFILE command to create (MODE = CREATE) empty or delete (MODE
 
 ` `
 
-#### CFTFILE { CAT | COM }
+#### `CFTFILE { CAT | COM }`
 
 `TYPE   = {  CAT   | COM }`
 
@@ -106,7 +106,7 @@ Use the CFTFILE command to create (MODE = CREATE) empty or delete (MODE
 
 ` `
 
-#### CFTFILE { ACCNT | LOG }
+#### `CFTFILE { ACCNT | LOG }`
 
 `TYPE   = { ACCNT | LOG }`
 

@@ -33,9 +33,9 @@ entries. Additionally, you can sort the current selection in memory.
 These services enable you to query the catalog either with or without
 specific criteria.
 
-rc = cftai (verb,&ptr,param)
+`rc = cftai (verb,&ptr,param)`
 
-rc = cftaix (verb,&ptr,param)
+`rc = cftaix (verb,&ptr,param)`
 
 Where:
 

@@ -31,7 +31,7 @@ You can migrate the PARM, PART, IDF, other static configuration objects and UCON
 1. Stop Transfer CFT{{< TransferCFT/hflongproductname >}} if you have not already done so.
 1. Import your static configuration objects using the cftinit command. Enter:  
     ```
-1. cftinit cft-extract.conf
+1. `cftinit cft-extract.conf`
 
 ## Migrating PKI certificates
 
@@ -41,7 +41,7 @@ You can migrate the PARM, PART, IDF, other static configuration objects and UCON
 
 1. Export your PKI certificates using the command PKIUTIL PKIEXT. Enter:  
     ```
-1. PKIUTIL PKIEXT fout=pki-extract.conf
+1. `PKIUTIL PKIEXT fout=pki-extract.conf`
 
 <!-- -->
 
@@ -51,12 +51,12 @@ You can migrate the PARM, PART, IDF, other static configuration objects and UCON
 
 1. Create a new PKI internal datafile using the command PKIUTIL PKIFILE. Replace &lt;pki\_database\_filename> with the OS appropriate value:
 
-- UNIX: $CFTPKU
+- UNIX: `$CFTPKU`
 
 <!-- -->
 
 - Windows: The absolute path value for the CFTPKU environment variable:  
-    PKIUTIL PKIFILE fname=&lt;pki\_database\_filename>, mode='CREATE’
+    `PKIUTIL PKIFILE fname=<pki_database_filename>, mode='CREATE’`
 
 1. Import your PKI certificates into the new Transfer CFT 3.9{{< TransferCFT/componentversion >}} using the command PKIUTIL. Replace the &lt;script\_filename> with the new script file path:  
     ```
@@ -65,9 +65,9 @@ You can migrate the PARM, PART, IDF, other static configuration objects and UCON
 
 ****Examples****
 
-UNIX: PKIUTIL @pki-extract.conf
+UNIX: `PKIUTIL @pki-extract.conf`
 
-Windows: PKIUTIL #pki-extract.conf
+Windows: `PKIUTIL #pki-extract.conf`
 
 ## Migrating the runtime environment
 
@@ -121,7 +121,7 @@ CFTMI MIGR type=CAT, direct=TOCAT, ifname=catalog_output.xml, ofname=<catalog_fi
 
 1. Import the communication media file using command CFTMI. Replace the `<com_filename_new_installation>` with the corresponding environment variable:
 
-- UNIX: \_CFTCOM
+- UNIX: `_CFTCOM`
 
 <!-- -->
 

@@ -78,7 +78,7 @@ When settings parameters for Transfer CFT, a user wanting to invoke
 a logical file name, must systematically prefix the character string for
 the logical name with the "$" symbol.
 
-Example of a logical name statement: fname = $CFTCOM
+Example of a logical name statement: `fname = $CFTCOM`
 
 Using operating system environment variables
 

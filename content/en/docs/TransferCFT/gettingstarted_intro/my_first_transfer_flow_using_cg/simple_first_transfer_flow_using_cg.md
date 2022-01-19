@@ -28,9 +28,9 @@
 
 #### In Transfer CFT{{< TransferCFT/componentshortname  >}}
 
-1. Add a file to exchange. Put a test file, for example ****SALES\_report****, in the Store\_66 Transfer CFT{{< TransferCFT/componentshortname >}} runtime/pub folder.
+1. Add a file to exchange. Put a test file, for example ****SALES\_report****, in the Store\_66 Transfer CFT{{< TransferCFT/componentshortname >}}` runtime/pub` folder.
 1. From the source Transfer CFT{{< TransferCFT/componentshortname >}}, run the SEND command.
-    -   Remember to replace &lt;instance\_target> with your Transfer CFT for the MainOffice target.
+    -   Remember to replace `<instance_target>` with your Transfer CFT for the MainOffice target.
 
     <!-- -->
 

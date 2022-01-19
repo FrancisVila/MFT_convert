@@ -82,9 +82,9 @@ CFTU00I ABOUT _ Correct ()
 
 UNIX and Windows only
 
-This executable file retrieves system information, for example information needed to request a key. To use cfttell:
+This executable file retrieves system information, for example information needed to request a key. To use `cfttell`:
 
-- Navigate to the &lt;CFTDIRINSTALL>/bin directory
+- Navigate to the` <CFTDIRINSTALL>/bin` directory
 - Run cfttell
 
 Options:
@@ -104,21 +104,21 @@ Keys:
 ****Examples****
 
 ```
-C:\\projects>cfttell target
+C:\\projects>`cfttell target`
 win-x86-64
 ```
 
  
 
 ```
-C:\\projects>cfttell version
+C:\\projects>`cfttell version`
 3000
 ```
 
  
 
 ```
-C:\\projects>cfttell hostinfo
+C:\\projects>`cfttell hostinfo`
 CFT version : 3010
 Target : win-x86-32
 Processor architecture : x64

@@ -164,9 +164,9 @@ $SAS51 FORD36IX 9> pop CFT^UTLOUT
 
 ### Tracing command execution
 
-To gather command details, Axway support may ask you to set the CFTUTLX^TRACE^LEVEL parameter for a CFTUTLX command trace.
+To gather command details, Axway support may ask you to set the `CFTUTLX^TRACE^LEVEL` parameter for a `CFTUTLX `command trace.
 
-The CFTUTLX^TRACE^LEVEL values are:
+The `CFTUTLX^TRACE^LEVEL` values are:
 
 
 | Value  | Description  | Temporary CFTUTLX files are deleted  |

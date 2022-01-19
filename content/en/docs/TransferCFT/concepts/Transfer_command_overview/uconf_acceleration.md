@@ -21,7 +21,7 @@ UDT is a transport protocol that Transfer CFT{{< TransferCFT/componentshortname 
 
 ## Configuring accelerated communication
 
-To enable accelerated communication in CFTUTIL use the unified configuration command UCONFSET.
+To enable accelerated communication in CFTUTIL use the unified configuration command `UCONFSET`.
 
 ### Basic configuration
 
@@ -40,9 +40,9 @@ You can globally enable or disable the acceleration function in the Transfer CFT
 #### Example in CFTUTIL
 
 ```
-CFTUTIL UCONFSET ID=acceleration.enable, VALUE=yes  
-CFTUTIL UCONFSET ID=acceleration.udt ,    VALUE=NET1  
-CFTUTIL UCONFSET ID=acceleration.ptcp ,   VALUE=NET0 NET_TEST
+`CFTUTIL UCONFSET ID=acceleration.enable, VALUE=yes`  
+`CFTUTIL UCONFSET ID=acceleration.udt   ,    VALUE=NET1`  
+`CFTUTIL UCONFSET ID=acceleration.ptcp  ,   VALUE=NET0 NET_TEST`
 ```
 
 In this example, all protocols (CFTPROT objects) using NET1 are accelerated by UDT, and those using NET0 and NET\_TEST are accelerated by pTCP.
@@ -84,11 +84,11 @@ Additional attribute parameters are available for advanced users. The default va
 
 #### UDT parameters
 
-Refer to the [UCONF parameters](../../../admin_intro/uconf/uconf_directory) table acceleration.udt.&lt;logicalID>.
+Refer to the [UCONF parameters](../../../admin_intro/uconf/uconf_directory) table `acceleration.udt.<logicalID>`.
 
 #### pTCP parameters
 
-Refer to the [UCONF parameters](../../../admin_intro/uconf/uconf_directory) table acceleration.ptcp.&lt;logicalID>.
+Refer to the [UCONF parameters](../../../admin_intro/uconf/uconf_directory) table `acceleration.ptcp.<logicalID>`.
 
 > **Note**
 >

@@ -38,7 +38,7 @@ For Transfer CFT{{< TransferCFT/componentshortname  >}} version 3.9{{< TransferC
 
 ### Activate services
 
-Using CFTUTIL activate the services for both Transfer CFT and Copilot with the uconf service configuration parameters.
+Using CFTUTIL activate the services for both Transfer CFT and Copilot with the uconf `service `configuration parameters.
 
 ****Example****
 

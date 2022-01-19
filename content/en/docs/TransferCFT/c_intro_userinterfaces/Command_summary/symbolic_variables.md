@@ -143,8 +143,8 @@ You can use the field extraction syntax as follows:
 
 `&%<separator>[<start_field>[.[<end_field>]]VARIABLE`
 
-1. If start\_field is omitted, the default value is 1.
-1. If end\_field is omitted, the default value is the last field in the variable.
+1. If` start_field` is omitted, the default value is 1.
+1. If `end_field` is omitted, the default value is the last field in the variable.
 1. If there are 2 consecutive separators, the extracted field between the 2 separators is empty.
 1. If there is only one number after the separator indicating the value placement, this returns just that token value.
 
@@ -152,10 +152,10 @@ For the following example, see the corresponding syntax:
 
 `&<VARIABLE>=S052368_Z123_HZUI34_92___TYU`
 
-1. &%\_.2&lt;VARIABLE>: separator=\_, start\_field=1 , end\_field=2 (this returns the value S052368\_Z123)
-1. &%\_3.&lt;VARIABLE>: separator=\_ , start\_field=3, end\_field=last\_field (this returns the value HZUI34\_92\_\_\_TYU)
-1. &%\_5&lt;VARIABLE>: separator=\_, start\_field=5, end\_field=5 (this returns ' ')
-1. &%\_4&lt;VARIABLE>: separator=\_, start\_field=4, end\_field=4 (this returns 92)
+1. `&%_.2<VARIABLE>`: separator=\_, start\_field=1 , end\_field=2 (this returns the value `S052368_Z123`)
+1. `&%_3.<VARIABLE>`: separator=\_ , start\_field=3, end\_field=last\_field (this returns the value `HZUI34_92___TYU`)
+1. `&%_5<VARIABLE>`: separator=\_, start\_field=5, end\_field=5 (this returns ' ')
+1. `&%_4<VARIABLE>`: separator=\_, start\_field=4, end\_field=4 (this returns `92`)
 
 You can combine field extraction with the other filtering methods. The full syntax is:
 
@@ -608,7 +608,7 @@ QQQ\_QQQ\_QQQ
 >
 > ****Defining the blacklist****
 >
-> Use the uconf cft.server.processing\_scripts\_variables\_blacklist parameter to define the character sequence to forbid. We recommend setting this parameter to **`|\\$\\(|;|&|\\|** for UNIX, and **"&"** for Windows.
+> Use the uconf `cft.server.processing_scripts_variables_blacklist` parameter to define the character sequence to forbid. We recommend setting this parameter to **`|\\$\\(|;|&|\\|** for UNIX, and **"&"** for Windows.
 >
 > ****UNIX****
 >
@@ -617,7 +617,7 @@ QQQ\_QQQ\_QQQ
 > ```
 >
 > When setting the blacklist values shown above, the forbidden characters are: **`** and **$(** and **;** and **&** and **|**  
-> For example, if &PARM="$(ls)"or if `` &PARM="`ls`" ``, then the EXEC is not executed because of the **$(** or the **`** characters, respectively.
+> For example, if `&PARM="$(ls)"`or if `` &PARM="`ls`" ``, then the EXEC is not executed because of the **$(** or the **`** characters, respectively.
 >
 > ****Windows****
 >

@@ -55,7 +55,7 @@ QQQ\_QQQ\_QQQ
 | 2  | Add an application.  | In this example, create three applications to represent the MainOffice, Store_66, and Store_89.  | <a href="intro_cg_task_catalog/t_declareapplication">![](/Images/TransferCFT/mapArrow.png)</a>  |
 
 
-Notice the association between the application ****Name**** and the ****Transfer CFT**** instance identifier. You will need the Transfer CFT identifier, for example CFTlptxumcft4-01 in the example below, to use in your transfer commands.
+Notice the association between the application ****Name**** and the ****Transfer CFT**** instance identifier. You will need the Transfer CFT identifier, for example `CFTlptxumcft4-01` in the example below, to use in your transfer commands.
 
 Your **Name** list should look like this:
 
@@ -97,11 +97,11 @@ This flow sends multiple files to a defined application. So a Store\_66 applicat
 
 |   | Task  | Description  | Details  |
 | --- | --- | --- | --- |
-| 1  | Create a flow.<br />  | In Central Governance define a flow called flow02 with Store_66 as the Source, and the MainOffice as the Target.<br />  | <a href="intro_cg_task_catalog/t_multiple_filesflow">![](/Images/TransferCFT/mapArrow.png)</a>  |
+| 1  | Create a flow.<br />  | In Central Governance define a flow called <code>flow02 </code>with Store_66 as the Source, and the MainOffice as the Target.<br />  | <a href="intro_cg_task_catalog/t_multiple_filesflow">![](/Images/TransferCFT/mapArrow.png)</a>  |
 | 2  | Enable multiple files for the exchange. | Select the Source, and then File properties. Enable Multiple files. | <a href="intro_cg_task_catalog/t_multiple_files">![](/Images/TransferCFT/mapArrow.png)</a>  |
-| 3  | Create the files for the exchange.  | For this example, create a folder called Store_66 in the Store_66 Transfer CFT{{< TransferCFT/componentshortname  >}} runtime\pub\ directory.<br/> Copy three files to this folder and call them SALES_report, DAILY_news, and INVENTORY. |   |
+| 3  | Create the files for the exchange.  | For this example, create a folder called Store_66 in the Store_66 Transfer CFT{{< TransferCFT/componentshortname  >}} <code>runtime\pub\ </code>directory.<br/> Copy three files to this folder and call them <code>SALES_report</code>, <code>DAILY_news</code>, and <code>INVENTORY</code>. |   |
 | 4  | Deploy the flow.  | In Central Governance you can save, and deploy later, or save and deploy immediately.  | <a href="intro_cg_task_catalog/t_savedeployflow">![](/Images/TransferCFT/mapArrow.png)</a>  |
-| 5  | Run the SEND command.  | In Transfer CFT{{< TransferCFT/componentshortname  >}}, run the following command:<br /> CFTUTIL SEND part=&lt;instance_MainOffice&gt;, idf=flow02, fname=#pub\Store_66\* Remember, replace &lt;instance_MainOffice&gt; with the Transfer CFT instance for the MainOffice as it displays in the list of applications. | <a href="../../c_intro_userinterfaces/about_cftutil">![](/Images/TransferCFT/mapArrow.png)</a>  |
+| 5  | Run the SEND command.  | In Transfer CFT{{< TransferCFT/componentshortname  >}}, run the following command: <code>CFTUTIL SEND part=&lt;instance_MainOffice&gt;, idf=flow02, fname=#pub\Store_66\*</code> Remember, replace <code>&lt;instance_MainOffice&gt;</code> with the Transfer CFT instance for the MainOffice as it displays in the list of applications. | <a href="../../c_intro_userinterfaces/about_cftutil">![](/Images/TransferCFT/mapArrow.png)</a>  |
 | 6  | Monitor the flow.  | In Central Governance, check the status of the file exchange.  | <a href="intro_cg_task_catalog/c_flow_monitoring">![](/Images/TransferCFT/mapArrow.png)</a>  |
 
 
@@ -116,10 +116,10 @@ You can use the transfer mode to make a file whose content is frequently changin
 
 |   | Task  | Description  | Details  |
 | --- | --- | --- | --- |
-| 1  | Create an implicit flow.<br />  | In Central Governance define a flow called flow03.<br/> To enable implicit mode, you select ****Target pulls file**** in the flow's General Information page.<br/> Continue to define the flow with the MainOffice as the Target, which will pull the file, and Store_89 as the file Source.<br />  | <a href="">![](/Images/TransferCFT/mapArrow.png)</a>  |
+| 1  | Create an implicit flow.<br />  | In Central Governance define a flow called <code>flow03</code>.<br/> To enable implicit mode, you select ****Target pulls file**** in the flow's General Information page.<br/> Continue to define the flow with the MainOffice as the Target, which will pull the file, and Store_89 as the file Source.<br />  | <a href="">![](/Images/TransferCFT/mapArrow.png)</a>  |
 | 2  | Define the path to the file location.  | In the File properties of the Source, define the path to the file to be sent.<br/> In our example, use the TEST file located in the Transfer CFT{{< TransferCFT/componentshortname  >}} runtime /pub folder. |   |
 | 3  | Deploy the flow. | In Central Governance you can save and deploy later, or save and deploy.  | <a href="intro_cg_task_catalog/t_savedeployflow">![](/Images/TransferCFT/mapArrow.png)</a>  |
-| 4  | Run the RECV command.  | In Transfer CFT{{< TransferCFT/componentshortname  >}}, run the following command:<br /> CFTUTIL RECV PART=&lt;instance_Store_89&gt;, IDF=flow03 Remember, replace &lt;instance_Store_89&gt; with the Transfer CFT instance for Store_89 as it displays in the list of applications. | <a href="../../c_intro_userinterfaces/about_cftutil">![](/Images/TransferCFT/mapArrow.png)</a>  |
+| 4  | Run the RECV command.  | In Transfer CFT{{< TransferCFT/componentshortname  >}}, run the following command: <code>CFTUTIL RECV PART=&lt;instance_Store_89&gt;, IDF=flow03</code> Remember, replace <code>&lt;instance_Store_89&gt;</code> with the Transfer CFT instance for Store_89 as it displays in the list of applications. | <a href="../../c_intro_userinterfaces/about_cftutil">![](/Images/TransferCFT/mapArrow.png)</a>  |
 | 5  | Monitor the flow.  | In Central Governance, check the status of the file exchange.  | <a href="intro_cg_task_catalog/c_flow_monitoring">![](/Images/TransferCFT/mapArrow.png)</a>  |
 
 
@@ -142,11 +142,11 @@ Additionally, you can define what occurs if a partner is unknown, how the script
 
 |   | Task  | Description  | Details  |
 | --- | --- | --- | --- |
-| 1  | Create a flow.<br />  | In Central Governance define a flow called flow04. In this flow the MainOffice is the Source with the two stores as the Targets. | <a href="intro_cg_task_catalog/t_defineflow_broadcast">![](/Images/TransferCFT/mapArrow.png)</a>  |
+| 1  | Create a flow.<br />  | In Central Governance define a flow called <code>flow04</code>. In this flow the MainOffice is the Source with the two stores as the Targets. | <a href="intro_cg_task_catalog/t_defineflow_broadcast">![](/Images/TransferCFT/mapArrow.png)</a>  |
 | 2  | Enable broadcasting mode.  | In the Source Transfer properties, enable Broadcast list.  | <a href="intro_cg_task_catalog/t_defineflow_broadcast#enable_broadcast_cg">![](/Images/TransferCFT/mapArrow.png)</a>  |
 | 3  |   | For this example, copy a file SALES_report to transfer in the Store_66 Transfer CFT{{< TransferCFT/componentshortname  >}} runtime\pub folder.  |   |
 | 4  | Deploy the flow. | In Central Governance you can save and deploy at a later date, or both save and deploy now.  | <a href="intro_cg_task_catalog/t_savedeployflow">![](/Images/TransferCFT/mapArrow.png)</a>  |
-| 5  | Run the SEND command.  | In Transfer CFT{{< TransferCFT/componentshortname  >}}, run the following command:<br/> CFTUTIL SEND PART=DEST_stores, IDF=flow04, FNAME=pub/SALES_report | <a href="../../c_intro_userinterfaces/about_cftutil">![](/Images/TransferCFT/mapArrow.png)</a>  |
+| 5  | Run the SEND command.  | In Transfer CFT{{< TransferCFT/componentshortname  >}}, run the following command:<br/> <code>CFTUTIL SEND PART=DEST_stores, IDF=flow04, FNAME=pub/SALES_report</code> | <a href="../../c_intro_userinterfaces/about_cftutil">![](/Images/TransferCFT/mapArrow.png)</a>  |
 | 6  | Monitor the flow.  | In Central Governance, check the status of the file exchange.  | <a href="intro_cg_task_catalog/c_flow_monitoring">![](/Images/TransferCFT/mapArrow.png)</a>  |
 
 
@@ -161,11 +161,11 @@ Collecting files is the inverse of using a broadcast list. In the collect transf
 
 |   | Task  | Description  | Details  |
 | --- | --- | --- | --- |
-| 1  | Create a flow.<br />  | In Central Governance create a flow called flow05 and define the Source as MainOffice and the stores as the Target.<br /> ****Note****: You cannot define the Protocol until you have defined both the Source and Target. | <a href="intro_cg_task_catalog/t_define_simpleflow">![](/Images/TransferCFT/mapArrow.png)</a>  |
+| 1  | Create a flow.<br />  | In Central Governance create a flow called <code>flow05 </code>and define the Source as MainOffice and the stores as the Target.<br /> ****Note****: You cannot define the Protocol until you have defined both the Source and Target. | <a href="intro_cg_task_catalog/t_define_simpleflow">![](/Images/TransferCFT/mapArrow.png)</a>  |
 | 2  | Enable collect mode.  | In the Collect_flow definition, modify to Target pulls file.  | <a href="intro_cg_task_catalog/t_defineflow_collect">![](/Images/TransferCFT/mapArrow.png)</a>  |
 | 3  | Define the path to the Target file for each store.  | In the Target (each store) select File properties. In Path field, enter the path to the file to send.  | <a href="intro_cg_task_catalog/t_collect_target_properties">![](/Images/TransferCFT/mapArrow.png)</a>  |
 | 4  | Deploy the flow. | In Central Governance you can save and deploy later, or save and deploy.  | <a href="intro_cg_task_catalog/t_savedeployflow">![](/Images/TransferCFT/mapArrow.png)</a>  |
-| 5  | Run the RECV command.  | In Transfer CFT{{< TransferCFT/componentshortname  >}}, run the following command:<br /> CFTUTIL RECV PART=DEST_Stores, IDF=flow05  | <a href="../../c_intro_userinterfaces/about_cftutil">![](/Images/TransferCFT/mapArrow.png)</a>  |
+| 5  | Run the RECV command.  | In Transfer CFT{{< TransferCFT/componentshortname  >}}, run the following command: <code>CFTUTIL RECV PART=DEST_Stores, IDF=flow05</code>  | <a href="../../c_intro_userinterfaces/about_cftutil">![](/Images/TransferCFT/mapArrow.png)</a>  |
 | 6  | Monitor the flow.  | In Central Governance, check the status of the file exchange.  | <a href="intro_cg_task_catalog/c_flow_monitoring">![](/Images/TransferCFT/mapArrow.png)</a>  |
 
 

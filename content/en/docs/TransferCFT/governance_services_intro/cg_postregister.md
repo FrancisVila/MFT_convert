@@ -24,11 +24,11 @@ Certificate and key renewal can refer to business and/or governance certificates
 
 ### Automatic certificate renewal
 
-When Copilot is started the certificates expiration dates in the PKI base are checked, and a renewal request is scheduled. The request schedule is dependent on the value set in the UCONF parameter cg.renewal\_period, where the default value is 60 days. This represents the number of days before the certificate renewal process occurs relative to the expiration date. Each certificate has a defined expiration date which may differ, and renewal occurs independent of one another.
+When Copilot is started the certificates expiration dates in the PKI base are checked, and a renewal request is scheduled. The request schedule is dependent on the value set in the UCONF parameter `cg.renewal_period, `where the default value is 60 days. This represents the number of days before the certificate renewal process occurs relative to the expiration date. Each certificate has a defined expiration date which may differ, and renewal occurs independent of one another.
 
 ****Example****
 
-If uconf cg.renewal\_period is set to 60 days, the renewal procedure executes 60 days before the certificate expiration.
+If uconf `cg.renewal_period `is set to 60 days, the renewal procedure executes 60 days before the certificate expiration.
 
 ### Manual certificate renewal
 

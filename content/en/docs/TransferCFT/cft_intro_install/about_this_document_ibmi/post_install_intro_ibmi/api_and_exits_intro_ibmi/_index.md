@@ -40,10 +40,10 @@ into several directories that include the CFTPGM library, which contains all lib
 
 
 To generate a user application based on the Transfer CFT{{< TransferCFT/componentshortname  >}} APIs and use
-the file exit function, you must link the following with the libapisrv1.srvpgm and libcftexe.srvpgm libraries:
+the file exit function, you must link the following with the `libapisrv1.srvpgm` and `libcftexe.srvpgm` libraries:
 
-- &lt;installdir>/runtime/src/capi/ containing
+- `<installdir>/runtime/src/capi/` containing
     a command entry and catalog query example
-- &lt;installdir>/runtime/src/exit/ containing
+- `<installdir>/runtime/src/exit/` containing
     simple examples of file exits, directory exits, and end
     -of-transfer exits

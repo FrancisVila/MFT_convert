@@ -77,7 +77,7 @@ For *SSL 3.0 Protocol Vulnerability and POODLE attack* (CVE-2014-3566) details, 
 
 ## TLS Server Name Indication (SNI)
 
-Server Name Indication (SNI) is an extension of the TLS protocol, and is used to indicate which hostname the client attempts to connect to at the beginning of the handshake process. In Transfer CFT, set the UCONF parameter ssl.extension.enable\_sni to yes to enable SNI for all TLS connections.
+Server Name Indication (SNI) is an extension of the TLS protocol, and is used to indicate which hostname the client attempts to connect to at the beginning of the handshake process. In Transfer CFT, set the UCONF parameter `ssl.extension.enable_sni `to `yes `to enable SNI for all TLS connections.
 
 ## TLS limitation
 

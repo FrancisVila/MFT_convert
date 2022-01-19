@@ -48,10 +48,10 @@ CFTI22F CFTPROT=PESIT Register request failure CS=00000098
 
 ****Possible cause: After changing the MA certificate, the secure\_relay.ma.cert\_fname parameter points to an invalid file****
 
-Transfer CFT fails to start and displays a message similar to the following in the cft.out file:
+Transfer CFT fails to start and displays a message similar to the following in the` cft.out` file:
 
 ```
 Error accessing user certificate keystore file <certificate name> (password might be wrong): java.io.IOException: keystore password was incorrect
 ```
 
-To  correct, delete or rename the file referenced by the secure\_relay.ma.cert\_password\_fname parameter (by default, XsrPwd.dat) prior to restarting Transfer CFT{{< TransferCFT/transfercftname  >}}.
+To  correct, delete or rename the file referenced by the `secure_relay.ma.cert_password_fname` parameter (by default, XsrPwd.dat) prior to restarting Transfer CFT{{< TransferCFT/transfercftname  >}}.

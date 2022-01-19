@@ -29,7 +29,7 @@ A cluster installation of Transfer CFT without multi-node is an active/passive i
 
 This is the path and name of the directory where you want to create a shared directory for the cluster installation. The shared directory is used to store product data files.
 
-*Windows only* - When installing a Windows multi-host Transfer CFT architecture, we recommend that you use UNC notation, which defines the path to a shared folder using the format \\\\server\\sharename.
+*Windows only* - When installing a Windows multi-host Transfer CFT architecture, we recommend that you use UNC notation, which defines the path to a shared folder using the format` \\server\sharename.`
 
 ****Installation Directory****
 
@@ -75,7 +75,7 @@ Create as many copies of the initialize.properties file as you have hosts in the
 1. ./Transfer\_CFT\_3.9{{< TransferCFT/releasenumber >}}\_Install\_&lt;OS>\_&lt;BN>.run
 1. In the Installation Architecture screen, select **Cluster - first host**.
 1. Complete the installation.
-1. To add a host to create a multi-host installation, run the install exe/bat again. This time select **Cluster - Additional host**.
+1. To add a host to create a multi-host installation, run the install `exe/bat` again. This time select **Cluster - Additional host**.
 
 ## Silent installation
 

@@ -10,11 +10,11 @@ You can retrieve synchronous communication return codes using either a programmi
 
 ### Using a programming interface
 
-In this method the cftau function locates the return code, as shown in the following example:
+In this method the `cftau `function locates the return code, as shown in the following example:
 
 ```
 …
-rc = cftau (“SWAITCAT”,” SELECT='IDTU==A000001’”)
+rc = `cftau `(“SWAITCAT”,” SELECT='IDTU==A000001’”)
 if rc != 0 {
 printf("SWAITCAT NOK RC=%d\\n", rc);
 …
@@ -23,7 +23,7 @@ printf("SWAITCAT NOK RC=%d\\n", rc);
 
 ### Using CFTUTIL
 
-This method uses the internal variable\_CMDRET in the SEND, RECV, or SWAITCAT commands to retrieve the return code. You can create a script similar to the following example:
+This method uses the internal variable`_CMDRET` in the SEND, RECV, or SWAITCAT commands to retrieve the return code. You can create a script similar to the following example:
 
 ```
 SWAITCAT SELECT='IDTU==”A000001”’

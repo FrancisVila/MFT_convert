@@ -26,7 +26,7 @@ In the Central Governance interface, select **Products**. Select your Transfer C
 If there is no information available in the Central Governance{{< TransferCFT/centralgovernancename  >}} logs for the Transfer CFT, next check the following:
 
 - Transfer CFT{{< TransferCFT/componentlongname >}} logs
-- Transfer CFT{{< TransferCFT/componentlongname >}} trace files located in the &lt;installation directory>Transfer\_CFT\\runtime\\run
+- Transfer CFT{{< TransferCFT/componentlongname >}} trace files located in the `<installation directory>Transfer_CFT\runtime\run`
 
 ### Check user definitions in Central Governance{{< TransferCFT/centralgovernancename  >}}
 
@@ -36,7 +36,7 @@ In Central Governance{{< TransferCFT/centralgovernancename  >}} roles and privil
 
 **From** **Central Governance{{< TransferCFT/centralgovernancename  >}} I cannot perform Transfer CFT{{< TransferCFT/componentlongname  >}} actions that I previously could perform**
 
-Check that the local Transfer CFT{{< TransferCFT/componentlongname  >}} superuser is correctly defined. This is a requirement for Central Governance{{< TransferCFT/centralgovernancename  >}} to correctly manage your Transfer CFT{{< TransferCFT/componentlongname  >}}. The value displayed in Central Governance{{< TransferCFT/centralgovernancename  >}} should match the value that displays for CFTUTIL listuconf value=am.passport.superuser.
+Check that the local Transfer CFT{{< TransferCFT/componentlongname  >}} superuser is correctly defined. This is a requirement for Central Governance{{< TransferCFT/centralgovernancename  >}} to correctly manage your Transfer CFT{{< TransferCFT/componentlongname  >}}. The value displayed in Central Governance{{< TransferCFT/centralgovernancename  >}} should match the value that displays for `CFTUTIL listuconf value=am.passport.superuser`.
 
 **I am a user with **Central Governance{{< TransferCFT/centralgovernancename  >}}** rights to create flows, but** **I cannot create a flow**
 

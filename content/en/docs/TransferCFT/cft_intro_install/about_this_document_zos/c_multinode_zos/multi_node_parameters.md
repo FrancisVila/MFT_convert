@@ -13,7 +13,7 @@
 | cft.multi_node.<br /> cftcom.dispatcher_policy  | Specifies the dispatching policy.<br/> - round_robin: Random dispatching across all nodes occurs.<br/> - node_affinity: Creates a one to one link between a partner and a node. Transfer requests for a given partner will always be performed by the same node. | round_robin  | round_robin,<br/> node_affinity | Yes  |
 | cft.multi_node.<br /> sharedidt.fname | Shared file for global IDT calculation in multi-node | $(cft.runtime_dir)/data/cftsidt | fname | Yes  |
 | cft.multi_node.<br /> sharedidt.enable | Use global IDT calculation method | No | Yes, No | Yes  |
-| cft.multi_node.<br /> shared.filesystem.type | Used to select appropriate consistency enforcement strategy.<br/> If Transfer CFT{{< TransferCFT/componentshortname  >}} is using NFSv4, you must enter the value nfs in lower case. | unknown | unknown, posix, nfs, cifs | Yes  |
+| cft.multi_node.<br /> shared.filesystem.type | Used to select appropriate consistency enforcement strategy.<br/> If Transfer CFT{{< TransferCFT/componentshortname  >}} is using NFSv4, you must enter the value <code>nfs </code>in lower case. | unknown | unknown, posix, nfs, cifs | Yes  |
 | cft.multi_node.<br /> transfer_recovery_timeout | Timeout in seconds for transfer recovery process (seconds) | 30 | integer | Yes  |
 | cft.multi_node.<br /> transfer_recovery_retry_delay | Delay in seconds for transfer recovery retry (seconds) | 20 | integer | Yes  |
 | cft.multi_node.<br /> connection_retry_delay | Delay in seconds for connection retry between nodes (seconds) | 10 | integer | Yes  |

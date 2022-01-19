@@ -25,7 +25,7 @@ Additionally, the logical key can limit the maximum number of transfers.
 ## Defining network parameters
 
 You implement network functions by entering parameters into
-a single file, cftnet.conf, located in the Transfer CFT{{< TransferCFT/componentshortname  >}} `runtime\conf`
+a single file, `cftnet.conf`, located in the Transfer CFT{{< TransferCFT/componentshortname  >}} `runtime\conf`
 folder.
 
 This file is made up of lines using the same syntax, each
@@ -44,7 +44,7 @@ where:
 
 ****Comments****
 
-To edit a line of comments in the file CFTNET.CONF, you can
+To edit a line of comments in the file `CFTNET.CONF`, you can
 place the ‘#’ character in the first column of this line.
 
 ****Example****

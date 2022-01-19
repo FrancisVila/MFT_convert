@@ -29,7 +29,7 @@ Customize the PMIGR2 step of the JCL MIGRCAT as follows, where you define RECNB,
  
 ```
 
-Submit the procedure ..INSTALL(MIGRCAT)
+Submit the procedure `..INSTALL(MIGRCAT)`
 
 ## Migrate the communication media files
 

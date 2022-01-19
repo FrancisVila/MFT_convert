@@ -14,7 +14,7 @@ Earlier versions of Transfer CFT used a different message format than version 3.
 
 CFTLOG FORMAT=\[V23,V24\]
 
-For V23: CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started
+For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
@@ -225,7 +225,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS23E"></span>CFTS23E Bad user return code &lt;details&gt;<br/> CFTS23E &amp;str PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt ", &amp;str = Bad End transfer exit version : &amp;ver / &amp;ver<br/> or<br/> CFTS23E &amp;str &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt &gt;") Invalid state transit '&amp;state'-&gt;'&amp;state' or Unknown state &amp;state<br/> or<br/> Unknown action &amp;action or Bad User return code : &amp;scs |
 | --- | --- | --- | --- |
-| Explanation | Error message specific to the end-of-transfer user exit. The details that display in the message depend on the CFTLOG format (v23 or v24).<br/> **Example**<br/> V24 format:<br/> CFTS23E Bad User return code: 4 &lt;IDTU=idtu PART=part1 IDF=idf1 IDT=idt &gt;<br/> V23 format:<br/> <code>CFTS23E Bad User return code : 4 PART=part1 IDF=idf1 IDT=idt</code> |
+| Explanation | Error message specific to the end-of-transfer user exit. The details that display in the message depend on the CFTLOG format (v23 or v24).<br/> **Example**<br/> V24 format:<br/> <code>CFTS23E Bad User return code: 4 &lt;IDTU=idtu PART=part1 IDF=idf1 IDT=idt &gt;</code><br/> V23 format:<br/> <code>CFTS23E Bad User return code : 4 PART=part1 IDF=idf1 IDT=idt</code> |
 | Consequence | None. |
 
 

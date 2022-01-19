@@ -29,13 +29,13 @@ To define a certificate list, use the PKIENTITY command with the following param
 
 Example
 
-This example creates a PKIENTITY called new\_entity that has 3 certificates, CA1, CA2, and CA3.
+This example creates a PKIENTITY called `new_entity` that has 3 certificates, `CA1`, `CA2`, and `CA3`.
 
 ```
 PKIUTIL PKIENTITY id = new_entity, certificates = "(‘CA1’, ‘CA2’, ‘CA3’)"
 ```
 
-In the CFTSSL definition that follows, the rootcid parameter has two identifiers. However, you cannot distinguish in this definition if the identifiers correspond to a PKIENTITY or a PKICER object.
+In the CFTSSL definition that follows, the `rootcid `parameter has two identifiers. However, you cannot distinguish in this definition if the identifiers correspond to a PKIENTITY or a PKICER object.
 
 > **Note**
 >
@@ -51,7 +51,7 @@ In the CFTSSL definition that follows, the rootcid parameter has two identifier
                  mode        = replace      
 ```
 
-The next example shows the PKIENTITY command equivalent in the rootcid (that is, the certificates defined earlier in this example).
+The next example shows the PKIENTITY command equivalent in the `rootcid `(that is, the certificates defined earlier in this example).
 
 ```
 (CFTUTIL) CFTSSL id          = server_name,
@@ -67,14 +67,14 @@ The next example shows the PKIENTITY command equivalent in the rootcid (that is,
 
 The actions described in this section lead to a PKIU26E error. For more information, see [PKIUTIL error codes](../../../../troubleshoot_intro/messages_and_error_codes_start_here/pkiutil_error_codes).
 
-- Inserting a PKIENTITY with MODE = CREATE using an ID that is already in the database. For example, here the ID entity5 already exists in the PKI database.
+- Inserting a PKIENTITY with MODE = CREATE using an ID that is already in the database. For example, here the ID `entity5` already exists in the PKI database.
 
 ```
 PKIU26E PKIENTITY _ Error ( PKI Record writing error {15008/0} () )
 PKIU00I PKIENTITY _ Failed (id entity5,certificates=‘CA5',mode=create)
 ```
 
-- Deleting a PKIENTITY that is not in the database. In this example, entity6 does not exist in the PKI database.
+- Deleting a PKIENTITY that is not in the database. In this example, `entity6` does not exist in the PKI database.
 
 ```
 PKIU26E PKIENTITY _ Error ( No record found {15011/0} () )

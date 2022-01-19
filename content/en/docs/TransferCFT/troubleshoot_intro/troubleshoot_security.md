@@ -205,7 +205,7 @@ Given the differences in certificate verification described above, you could enc
 ****Results****
 
 - During a simple authentication, CFT1 sends the A/B certificate chain, which CFT2 refuses because it is not complete (CFT2 requires the entire certificate chain).
-- An error occurs: SSL Handshake local error \[HANDSHAKE\_FAILURE\] CR = 48 (Unknown CA: certificate verify failed)
+- An error occurs: `SSL Handshake local error [HANDSHAKE_FAILURE] CR = 48 (Unknown CA: certificate verify failed)`
 
 ****Workaround****
 

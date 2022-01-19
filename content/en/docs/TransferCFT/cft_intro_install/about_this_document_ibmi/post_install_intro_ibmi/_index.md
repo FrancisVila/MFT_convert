@@ -22,8 +22,8 @@ This chapter describes how to operate Transfer CFT, and is comprised of the foll
 
 Other than during installation, which runs the Transfer CFT manager automatically, you can enter one of the following commands to start the manager:
 
-- CFT
-- CALL CFTMENU
+- `CFT`
+- `CALL CFTMENU`
 
 ## Create Transfer CFT system object
 

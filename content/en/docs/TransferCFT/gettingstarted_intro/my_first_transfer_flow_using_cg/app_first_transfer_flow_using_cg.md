@@ -4,7 +4,7 @@
     "weight": "130"
 }When you are working in Central Governance you create *applications* to use in flows. Therefore, if your products did not create applications upon registering, you must create at least two applications to use in your flows.
 
-In this section you create three applications in Central Governance to represent the MainOffice, `Store_66`, and `Store_89`.
+In this section you create three applications in Central Governance to represent the `MainOffice`, `Store_66`, and `Store_89`.
 
 ### View the registered Transfer CFTs in Central Governance
 

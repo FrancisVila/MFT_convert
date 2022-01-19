@@ -118,7 +118,7 @@ If you need to check the current switch hour for the log, using CFTUTIL enter:
 mquery name=command
 ```
 
-Then enter the listlog command:
+Then enter the `listlog `command:
 
 ```
 listlog
@@ -140,12 +140,12 @@ This results in the switch being executed automatically every night at midnight,
 
 - The `cftlog` file in the `$CFTDIRLOG `folder (runtime/log) that has no extension is the current day's log.
 - The` cftlog.n` is the log file corresponding to the current day *- n* days. For example, if today is Sunday, `cftlog.2` would be Friday's log file.
-- There are a total of 7 log files in the folder, one for each day, as the backup\_count value is 6 (6 backups plus 1 current).
+- There are a total of 7 log files in the folder, one for each day, as the `backup_count` value is 6 (6 backups plus 1 current).
 
 ## Configure log to switch only when the current file is full
 
 If you would like to switch the log file only when the maximum number of records is reached, and not automatically switch on starting, set the following:
 
 1. Using CFTUTIL, set the following uconf values:
-1. Modify the CFTLOG object by setting the predetermined number of records, the MAXREC parameter. When this value is reached the log is switched.
+1. Modify the `CFTLOG `object by setting the predetermined number of records, the `MAXREC `parameter. When this value is reached the log is switched.
 1. Restart after modifying values.

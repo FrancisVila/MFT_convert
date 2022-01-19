@@ -20,7 +20,7 @@ type of network used.
 ```
 cftprot
 id      = PeSITCFT,  
-type      = PESIT,
+``type      = PESIT,
 prof      = CFT,
 ...
 /\*\*\* exita      = EXIT_A, \*\* See Operations Guide \*\*/
@@ -35,8 +35,8 @@ the following *cftprot* command:
 
 ```
 cftprot id      = PeSITCFT,
-type      = PESIT,  
-prof      = CFT,
+type`      = PESIT,`  
+`prof`      = CFT,
 ...
 exita= EXIT_A,
 mode      = replace
@@ -114,25 +114,25 @@ To generate the sample CFTEXITA application, proceed as follows.
 1. Access the *&lt;installdir>/runtime/conf* directory.
 1. Generate the Transfer CFT{{< TransferCFT/componentshortname >}} databases
     using *cftinit* the configuration file provided
-    and modified for this EXIT: cft-tcp.conf
+    and modified for this EXIT:` cft-tcp.conf`
 1. When the *cftinit complete*
-    message is displayed, run Transfer CFT{{< TransferCFT/componentshortname >}} using the *cftstart* utility: cftstart
+    message is displayed, run Transfer CFT{{< TransferCFT/componentshortname >}} using the *cftstart* utility: `cftstart`
 1. When the *CFTMAIN process
     ID is xxxxx* message is displayed, perform an initial standard transfer
     using the command:  
-    CFTUTIL send part=BOSTON, idf=TXT
+    `CFTUTIL send part=BOSTON, idf=TXT`
 1. Now submit a second transfer
     to the NCFT\_OK partner.  
-    CFTUTIL send part=NCFT\_OK,idf=TXT
+    `CFTUTIL send part=NCFT_OK,idf=TXT`
 1. After a few seconds, you can
     check the transfer state by entering the  
-    command: cftcatab
+    command: `cftcatab`
 1. The transfer is successful
     because NRPART01 is defined in the DIRECTORY EXIT as being the EXTPTN01
     non- Transfer CFT{{< TransferCFT/componentshortname >}} partner.
 1. Now submit a third transfer
     to the NCFT\_OK partner.  
-    CFTUTIL send part=NCFT\_NOK,idf=TXT
+    `CFTUTIL send part=NCFT_NOK,idf=TXT`
 1. After a few seconds, you can
     check the transfer state by entering the  
     command:

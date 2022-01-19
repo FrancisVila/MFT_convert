@@ -17,7 +17,7 @@ If you have opted to use the Flow Manager{{< TransferCFT/flowmanager  >}} for Tr
 >
 > All role and permission definitions are stored in CFTPARM.
 
-However, if you are an am.superuser user, Transfer CFT{{< TransferCFT/transfercftname  >}} does not check your access for resources, and permissions are granted unconditionally. Additionally, it is useful to note that if you define a service account during Transfer CFT{{< TransferCFT/componentlongname  >}} installation, this user is automatically added to the UCONF am.superuser parameter's list.
+However, if you are an `am.superuser` user, Transfer CFT{{< TransferCFT/transfercftname  >}} does not check your access for resources, and permissions are granted unconditionally. Additionally, it is useful to note that if you define a service account during Transfer CFT{{< TransferCFT/componentlongname  >}} installation, this user is automatically added to the UCONF `am.superuser` parameter's list.
 
 See also, Flow Manager{{< TransferCFT/flowmanager  >}} *Security Guide &gt;*[Predefined roles](https://docs.axway.com/bundle/FlowManager_20_allOS_en_HTML5/page/predefined_roles.html) and [Predefined privileges](https://docs.axway.com/bundle/FlowManager_20_allOS_en_HTML5/page/predefined_privileges.html) (requires account login).
 
@@ -25,7 +25,7 @@ See also, Flow Manager{{< TransferCFT/flowmanager  >}} *Security Guide &gt;*[Pre
 
 ****Limitations****
 
-- Transfer CFT{{< TransferCFT/hflongproductname >}} ROLES are stored on Transfer CFT{{< TransferCFT/hflongproductname >}} in upper case. This means that if you create roles **XXX** and **Xxx** on Flow Manager{{< TransferCFT/flowmanager >}}, there is only one ROLE in Transfer CFT{{< TransferCFT/hflongproductname >}}, which is ID=XXX.
+- Transfer CFT{{< TransferCFT/hflongproductname >}} ROLES are stored on Transfer CFT{{< TransferCFT/hflongproductname >}} in upper case. This means that if you create roles **XXX** and **Xxx** on Flow Manager{{< TransferCFT/flowmanager >}}, there is only one ROLE in Transfer CFT{{< TransferCFT/hflongproductname >}}, which is `ID=XXX`.
 
 <span id="Using"></span>
 
@@ -106,7 +106,7 @@ Conditions allow you to assign finer control on resources and actions by specify
 
 ****Examples****
 
-In these examples PART and ID are properties of the resource being checked. As you can see, you can use parenthesis and logical operators && (AND) and || (OR).
+In these examples `PART `and `ID `are properties of the resource being checked. As you can see, you can use parenthesis and logical operators `&&` (AND) and `||` (OR).
 
 ```
 PART=="PARIS" && ID=="IDFDEF"
@@ -274,7 +274,7 @@ In this use case, you assign the user role that refers to a privilege having the
 - ACTIONS = ( 'CONNECT' ),
 - CONDITION = ' GROUP=="PRODUCTION" && ID~=''CFT-PROD-ITEM\*'' '
 
-A user with this privilege can only connect to a Transfer CFT server whose UCONF cft.instance\_group value is set to PRODUCTION, and whose cft.instance\_id value begins with CFT-PROD-ITEM.
+A user with this privilege can only connect to a Transfer CFT server whose UCONF `cft.instance_group` value is set to PRODUCTION, and whose `cft.instance_id` value begins with CFT-PROD-ITEM.
 
 The following is an example of the Transfer CFT{{< TransferCFT/transfercftname  >}} configuration for this use case (the ROLE must exist in Flow Manager{{< TransferCFT/flowmanager  >}}, and be available for required users):
 
@@ -337,4 +337,4 @@ CFTPRIV      ID          = 'PRIV-CONN-INTERFACES',
  
 ```
 
-A user with this privilege can only connect to a Transfer CFT server whose UCONF cft.instance\_group value is set to PRODUCTION, and whose cft.instance\_id value begins with CFT-PROD-ITEM.
+A user with this privilege can only connect to a Transfer CFT server whose UCONF `cft.instance_group` value is set to `PRODUCTION`, and whose `cft.instance_id` value begins with `CFT-PROD-ITEM`.

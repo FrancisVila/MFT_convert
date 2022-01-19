@@ -33,8 +33,8 @@ To assign user rights:
 
 To define user rights:
 
-1. In a dos command window, enter lusrmgr.msc to open the system users list. Check available users.
-1. In a dos command window, enter secpol.msc to open the Local Security Policy window.
+1. In a dos command window, enter `lusrmgr.msc `to open the system users list. Check available users.
+1. In a dos command window, enter `secpol.msc` to open the Local Security Policy window.
 1. Select ****Security Settings**** > ****Local Policies**** > ****User Rights Assignment****.
 1. Double-click the required right.
 1. Click ****Add user or group**** and define.
@@ -64,8 +64,8 @@ The user rights to assign are:
 
 ### Define user rights
 
-1. In a dos command window, enter lusrmgr.msc to open the system users list. Check available users.
-1. In a dos command window, enter secpol.msc to open the Local Security Policy window.
+1. In a dos command window, enter `lusrmgr.msc` to open the system users list. Check available users.
+1. In a dos command window, enter `secpol.msc` to open the Local Security Policy window.
 1. Select ****Security Settings**** > ****Local Policies**** > ****User Rights Assignment****.
 1. Double-click the required right.
 1. Click ****Add user or group**** and define.

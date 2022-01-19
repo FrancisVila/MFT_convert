@@ -23,8 +23,8 @@ Native file monitoring supports:
 
 To monitor the creation of native files in a library:
 
-1. Define the scanned library using the scanning directory parameter (SCANDIR).
-1. Create a working library to take the place of the working directory, and define (WORKDIR).
+1. Define the scanned library using the scanning directory parameter (`SCANDIR`).
+1. Create a working library to take the place of the working directory, and define (`WORKDIR`).
 
 > **Note**
 >
@@ -32,7 +32,7 @@ To monitor the creation of native files in a library:
 
 ****Example****
 
-Below the CFTFOLDER object uses CFTFOLD1 as the scanning directory, and CFTWRK1 as the working directory (library).
+Below the CFTFOLDER object uses `CFTFOLD1 `as the scanning directory, and `CFTWRK1 `as the working directory (library).
 
 ```
 CFTFOLDER MODE=REPLACE,

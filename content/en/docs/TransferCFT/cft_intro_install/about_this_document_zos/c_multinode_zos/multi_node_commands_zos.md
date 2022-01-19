@@ -158,8 +158,8 @@ All nodes hosted locally are re-started by the node manager.
 
 The `add_host` command adds a new host entry in the configuration. The following UCONF parameters are set:
 
-- cft.multi\_node.hostnames
-- cft.multi\_node.hostnames.&lt;hostname>.host = &lt;host\_address>
+- `cft.multi_node.hostnames`
+- `cft.multi_node.hostnames.<hostname>.host = <host_address>`
 
 **Syntax**
 

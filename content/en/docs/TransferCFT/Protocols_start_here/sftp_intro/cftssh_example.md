@@ -52,7 +52,7 @@ sftp> mget file\*
 
 ## Transfer CFT client with a Transfer CFT server
 
-This example sends an acknowledgment following a file transfer (cft\_flow in the example).
+This example sends an acknowledgment following a file transfer (`cft_flow` in the example).
 
 ****On the Transfer CFT 1****
 
@@ -82,7 +82,7 @@ send part=CFT_1_SFTP,idm=cft_ack,type=reply, msg=completed, idt=&idt(of the **cf
 
 ### Transfer CFT requester downloading multiple files
 
-This example demonstrates receiving multiple files from a Transfer CFT SFTP server and is the equivalent of an mget file\*.
+This example demonstrates receiving multiple files from a Transfer CFT SFTP server and is the equivalent of an `mget file*`.
 
 ****On the Transfer CFT server****
 
@@ -98,7 +98,7 @@ cftsend id=groupoffiles,impl=yes,fname=&nfname
 recv part=app1,idf=groupoffiles,nfname=(@/#)test/file\*,file=all
 ```
 
-This results in downloading all remote files in the test folder with the path relative to the workingdir.
+This results in downloading all remote files in the `test `folder with the path relative to the workingdir.
 
 ## Transfer CFT client with a SecureTransport server
 
@@ -117,7 +117,7 @@ Server Control: the SSH server is running with **Enable Secure File Transfer Pro
 Port=<ST_SFTP_PORT>
 ```
 
-Accounts: the Account Name is st\_sftp Active with the Login Name=st\_sftp and Password=st\_sftp
+Accounts: the Account Name is `st_sftp Active` with the Login `Name=st_sftp` and `Password=st_sftp`
 
 ```
 send part=ST_SFTP,idf=st_flow,fname=localfiletosend,nfname=remotefile

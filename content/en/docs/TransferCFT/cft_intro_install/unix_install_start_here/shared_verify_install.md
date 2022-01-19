@@ -4,7 +4,7 @@
     "weight": "120"
 }## Verify your installation
 
-You can check the installation log in the &lt;span class="code">&lt;installation directory>/install.log&lt;/span> file. See the installation&lt;madcap:conditionaltext data-mc-conditions="axway\_conditions.ScreenOnly"> &lt;a href="../troubleshoot\_registration">troubleshooting section&lt;/a>&lt;/madcap:conditionaltext> if you encounter problems with starting &lt;span class="mc-variable axway\_variables.Component\_Long\_Name variable">Transfer CFT&lt;/span> or registering with &lt;span class="mc-variable suite\_variables.Central\_GovernanceName variable">Central Governance&lt;/span>.
+You can check the installation log in the &lt;span class="code">&lt;code>&lt;installation directory>/install.log&lt;/code>&lt;/span> file. See the installation&lt;madcap:conditionaltext data-mc-conditions="axway\_conditions.ScreenOnly"> &lt;a href="../troubleshoot\_registration">troubleshooting section&lt;/a>&lt;/madcap:conditionaltext> if you encounter problems with starting &lt;span class="mc-variable axway\_variables.Component\_Long\_Name variable">Transfer CFT&lt;/span> or registering with &lt;span class="mc-variable suite\_variables.Central\_GovernanceName variable">Central Governance&lt;/span>.
 &lt;/p>
 
 ### Installed directories

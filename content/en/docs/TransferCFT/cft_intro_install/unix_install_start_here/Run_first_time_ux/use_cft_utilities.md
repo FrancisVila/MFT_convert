@@ -3,7 +3,7 @@
     "linkTitle": "Management utilities",
     "weight": "180"
 }This section describes Transfer
-CFT UNIX utilities located in the cft/&lt;installdir>/bin/
+CFT UNIX utilities located in the `cft/<installdir>/bin/`
 sub-directory after completing installation.
 
 > **Note**
@@ -104,7 +104,7 @@ the CFTPARM, CFTLOG cards, and so on).
     is passed as a parameter, the program requests one or more file names.
 - If no name is supplied,
     the program stops.
-- When you run cftinit, it creates the catalog and communication files. You can modify the default sizes of these files to suit your requirements by updating the uconf values for cft.cftcat.default\_size and cft.cftcom.default\_size (these values are expressed as a number of records).
+- When you run `cftinit`, it creates the catalog and communication files. You can modify the default sizes of these files to suit your requirements by updating the uconf values for `cft.cftcat.default_size` and `cft.cftcom.default_size` (these values are expressed as a number of records).
 
 <span id="cftupdate"></span>
 
@@ -207,7 +207,7 @@ allow you to work in batch mode:
 
 ## xfbadmusr
 
-You can use the xfbadmusr
+You can use the `xfbadmusr`
 utility to create, delete, check, and modify a user with access rights
 to the Transfer CFT Copilot server. It can be used in interactive mode associated with
 a command (add, delete, and so on) or in batch mode, specifying each of
@@ -220,12 +220,12 @@ login name.
 
 `xfbadmusr add [-l <login>] [-p <passwd>] [-u   <UID>] [-g <GID>]`
 
-Delete a user. Users in the group file are automatically deleted from all the groups
+Delete a user. Users in the `group `file are automatically deleted from all the groups
 with which they are associated.
 
 `xfbadmusr delete [-l <login>]`
 
-Modify a user. If necessary, modifications are applied automatically to the group file.
+Modify a user. If necessary, modifications are applied automatically to the `group `file.
 
 `xfbadmusr modify [-l <login>] [-p <passwd>] [-u   <UID>] [-g <GID>]`
 

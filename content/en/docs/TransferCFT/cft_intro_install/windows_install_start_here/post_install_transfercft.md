@@ -16,7 +16,7 @@ For information on user rights, refer to the topic [Defining user rights UNIX]()
 
 ## Installed directories and files
 
-When you install Transfer CFT, the home directory is created and populated under the Transfer\_CFT installation directory. This home directory contains installation libraries, binaries, and templates. Do not store any personal files in the home directory, as they are erased during updates.
+When you install Transfer CFT, the `home` directory is created and populated under the `Transfer_CFT` installation directory. This `home `directory contains installation libraries, binaries, and templates. Do not store any personal files in the `home `directory, as they are erased during updates.
 
 ### Installer-generated files
 
@@ -49,8 +49,8 @@ if you did not do so during the installation process. If you started Transfer CF
 To add environment variables to your Transfer CFT profile
 edit the following script:
 
-- Windows:  &lt;CFTDIRRUNTIME>\\profile.bat
-- UNIX: ./&lt;CFTDIRRUNTIME>/profile
+- Windows: ` <CFTDIRRUNTIME>\profile.bat`
+- UNIX: `./<CFTDIRRUNTIME>/profile`
 
 ### UCONF
 
@@ -80,17 +80,17 @@ have a basic configuration. Typically this is created during installation or mig
 
 ### License key
 
-If you did not enter the license key during installation, you can enter it post installation in the cft.key file located in: &lt;CFTDIRRUNTIME>/conf/
+If you did not enter the license key during installation, you can enter it post installation in the cft.key file located in: `<CFTDIRRUNTIME>/conf/`
 
 You can enter a single key or a list of keys in this file. In the configuration default
-file, the variable &lt;$CFTKEY> represents the cft.key file.
+file, the variable `<$CFTKEY>` represents the `cft.key` file.
 
 ### Transfer CFT{{< TransferCFT/componentshortname  >}} internal datafile and configuration
 
 Check the values, especially the key value, hostname, and port for TCP,
 in the following file:
 
-- Windows and UNIX: &lt;CFTRUNTIME>/conf/cft-tcp.conf
+- Windows and UNIX: `<CFTRUNTIME>/conf/cft-tcp.conf  `
 
 Start the Transfer CFT profile and, to create the Transfer CFT
 internal datafile and update the basic configuration, execute:
@@ -118,7 +118,7 @@ LISTUCONF id=copilot\*
 
 To change this configuration, you update the hostname and listening
 port for Transfer CFT UI using CFTUTIL
-uconfset.
+`uconfset`.
 
 ******Example******
 
@@ -162,7 +162,7 @@ If you have implemented Central Governance, you can start and stop Transfer CFT 
 Enter:
 
 ```
-cft start
+` cft start`
 ```
 <span id="Service"></span>
 

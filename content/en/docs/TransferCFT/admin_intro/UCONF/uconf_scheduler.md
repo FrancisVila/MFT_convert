@@ -7,7 +7,7 @@
 ****Steps overview****
 
 1. Access the Unified Configuration using either command line or the UI.
-1. Create the configuration alias by adding a new alias name to the cft.scheduled\_values list. Do not use spaces or periods (.) in the alias name.
+1. Create the configuration alias by adding a new alias name to the `cft.scheduled_values` list. Do not use spaces or periods (.) in the alias name.
 1. Configure the remaining parameters as described in the following table to define the new alias.
 
 
@@ -36,7 +36,7 @@ DAYS\_OF\_WEEK:
 
 This example defines a schedule where the value of cft.purge.sx can be changed during the period that begins at 15:30 and has a duration of 4 hours on Saturday and Sunday.
 
-1. Add the new alias name to the scheduled\_values list. This example creates a new alias called alias04.
+1. Add the new alias name to the `scheduled_values` list. This example creates a new alias called alias04.
     ```
     CFTUTIL uconfset id=cft.scheduled_values,value='"alias01 alias02 alias03 alias04"'
     ```
