@@ -26,7 +26,7 @@ Upgrading, as compared to migration, has the following advantages:
 >
 > You cannot perform an upgrade on versions older than version 3.1.3.
 
-Transfer CFT 3.8 and higher
+****Transfer CFT 3.8 and higher****
 
 After performing a Transfer CFT upgrade, you must execute the profile before performing commands with the upgraded Transfer CFT.
 
@@ -46,7 +46,7 @@ The general procedure for migrating from a previous version of Transfer CFT to T
 
 ## Register with Central Governance
 
-If you intend to implement Central Governance, please refer to the Transfer CFT{{< TransferCFT/componentlongname  >}} *User's Guide &gt; [*Register with* Central Governance](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.
+If you intend to implement Central Governance, please refer to the **Transfer CFT**{{< TransferCFT/componentlongname  >}} *User's Guide &gt; [*Register with* **Central Governance**](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.
 
 ## Update or upgrade using Central Governance
 

@@ -8,8 +8,8 @@
 
 #### CFTPART, CFTTCP
 
-\[IMAXTIME = { 23595999
-| time }\]
+****\[IMAXTIME = { 23595999
+| time }\]****
 
 The maximum time of the authorized time slot for calls coming over this
 type of network, or with a partner if defined in CFTPART, after which

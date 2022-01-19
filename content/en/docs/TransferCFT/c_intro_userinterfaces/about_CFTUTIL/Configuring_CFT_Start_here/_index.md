@@ -7,9 +7,9 @@ gives an overview of the Transfer CFT configuration and object conventions.
 
 ## About the Transfer CFT configuration
 
-The Transfer CFT initially must have an initial
+The Transfer CFT initially must have an ******initial******
 default configuration in order to startup. After the initial startup the
-ongoing Transfer
+******ongoing****** Transfer
 CFT configuration feature enables you to modify parameters while Transfer
 CFT is running. The modifications are taken into account immediately without
 having to shut down the Transfer CFT for most object modifications. When

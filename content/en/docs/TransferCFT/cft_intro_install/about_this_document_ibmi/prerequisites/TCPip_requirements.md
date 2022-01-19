@@ -17,13 +17,13 @@ A TCP/IP network must be installed and configured before the Transfer CFT Transf
 ### Local domain and host name
 
 1. To configure the domain and host names, enter **GO CFGTCP**.
-1. In the *CFGTCP menu*, select the Changes local domain and host names option and modify the local domain and host names for your IBM i. The host name is used in the CFTNET command HOST parameter when the Transfer CFT/400 monitor is configured.
+1. In the *CFGTCP menu*, select the ****Changes local domain and host names**** option and modify the local domain and host names for your IBM i. The host name is used in the CFTNET command HOST parameter when the Transfer CFT/400 monitor is configured.
 
 ### Host table
 
 Each host with which you wish to transfer files must be declared in this table.
 
-To do so, select the WORK WITH TCP/IP HOST TABLE ENTRIES option in the *CFGTCP menu*.
+To do so, select the ****WORK WITH TCP/IP HOST TABLE ENTRIES**** option in the *CFGTCP menu*.
 
 ### TCP/IP interface
 

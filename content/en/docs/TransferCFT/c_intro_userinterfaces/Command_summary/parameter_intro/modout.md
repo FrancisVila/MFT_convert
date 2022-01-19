@@ -8,10 +8,10 @@
 
 #### CFTNET
 
-Initiator mode only
+****Initiator mode only****
 
-**\[MODOUT    
-= {string1...32}\]**
+******\[MODOUT    
+= {string1...32}\]******
 
 Hayes modem initialization string for outgoing connections.
 

@@ -49,7 +49,7 @@ CFTU00I (SELECT='IDTU=="A000001"')
 **82**
 CFTU00I PRINT _ Correct (MSG=82)
 7:[CFU] /END
-7:[CFU] CFTU00I RETURN _ Correct (CODE=8)
+7:[CFU] CFTU00I RETURN _ Correct (****CODE=8****)
 CFTU20I Number of Command(s) 6
 CFTU20I Number of error(s) 1
 CFTU20I Ending Session on 21/06/2012 Time is 16:06:32

@@ -25,7 +25,7 @@
 
 <!-- -->
 
-- Appropriate rights in Central Governance for creating flows - refer to the Central Governance User's Guide for more information on user rights
+- Appropriate rights in Central Governance for creating flows - refer to the **Central Governance** **User's Guide** for more information on user rights
 - Familiarize yourself with the two user interfaces as described in the [Getting started overview](../)
 
 ## Goal
@@ -175,5 +175,5 @@ Collecting files is the inverse of using a broadcast list. In the collect transf
 
 Once you understand the basic modes and concepts described in this section, you can add processing, symbolic variables, scripts and more to your transfers using other Transfer CFT{{< TransferCFT/componentshortname  >}} options and features. See the dedicated sections in this document for details on customizing your transfer flows. A good place to start is [Transfer Concepts](../../concepts/transfer_command_overview), which presents high-level transfer processing concepts, transfer mode details, and procedural topics.
 
-- For more information on Central Governance{{< TransferCFT/centralgovernancename >}}, screen details, checking product status, and so on, please refer to the Central Governance{{< TransferCFT/centralgovernancename >}} User Guide{{< TransferCFT/doctypeuser >}}.
-- For a complete listing of Source and Target parameters, refer to the Transfer CFT to Central Governance parameter mapping available in the **Central Governance* User Guide{{< TransferCFT/doctypeuser >}}*.
+- For more information on Central Governance{{< TransferCFT/centralgovernancename >}}, screen details, checking product status, and so on, please refer to the **Central Governance**{{< TransferCFT/centralgovernancename >}} **User Guide**{{< TransferCFT/doctypeuser >}}.
+- For a complete listing of Source and Target parameters, refer to the Transfer CFT to Central Governance parameter mapping available in the **Central Governance* **User Guide**{{< TransferCFT/doctypeuser >}}*.

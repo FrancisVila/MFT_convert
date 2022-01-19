@@ -6,7 +6,7 @@
 
 #### SEND/RECV CFTSEND/CFTRECV
 
-\[SERIAL ={ <u>' '</u> | Y | X } \]
+****\[SERIAL ={ <u>' '</u> | Y | X } \]****
 
 When sending files sequentially, this value is the processing phase that a serialized transfer must reach before Transfer CFT begins executing the next transfer. For details on processing phases, see <a href="../../../../concepts/phase_and_phasestep" class="MCXref xref">About phase and phasestep</a>.
 

@@ -7,7 +7,7 @@
 <span id="About_the_WAIT_Command"></span>Use this command to suspend the execution of CFTUTIL for
 the time indicated.
 
-Command syntax: [WAIT](../../#WAIT)
+****Command syntax: [WAIT](../../#WAIT)****
 
 **Parameters**
 
@@ -21,7 +21,7 @@ Time in seconds that CFTUTIL is deactivated.
 
 The command EXIT quits the CFTUTIL program.
 
-Command syntax: EXIT
+****Command syntax: EXIT****
 
 **Parameters**
 

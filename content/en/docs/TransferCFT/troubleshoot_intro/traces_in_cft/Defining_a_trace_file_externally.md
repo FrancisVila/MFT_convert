@@ -86,11 +86,11 @@ uniquely identifiable.
 
 This parameter is a character string, maximum length 8.
 
-`[FTRACE = {0   | 0..15}]`
+**`[FTRACE = {0   | 0..15}]`**
 
-`[MTRACE = {0   | 0..31}]`
+**`[MTRACE = {0   | 0..31}]`**
 
-`[PTRACE = {0   | 0..31}]`
+**`[PTRACE = {0   | 0..31}]`**
 
 `TID =  identifier`
 

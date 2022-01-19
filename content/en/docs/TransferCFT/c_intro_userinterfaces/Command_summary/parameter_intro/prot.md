@@ -51,7 +51,7 @@ in the second example, by all the protocols beginning with the letters
 
 #### SEND / RECV
 
-****Requester mode only****
+******Requester mode only******
 
 **PROT = (*identifier*)**
 

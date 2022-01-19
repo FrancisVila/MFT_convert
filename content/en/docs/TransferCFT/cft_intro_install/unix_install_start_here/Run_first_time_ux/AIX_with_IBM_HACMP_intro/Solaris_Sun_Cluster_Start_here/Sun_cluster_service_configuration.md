@@ -56,7 +56,7 @@ This group is activated or switched over to one of the nodes to avoid
 having two Transfer CFT instances activated simultaneously on the same
 cluster.
 
-View the command line description
+****View the command line description****
 
 
 | Command | Description |
@@ -100,7 +100,7 @@ For Sun Cluster 3.1 the command is:
 
 `scrgadm   –a –L –g CFT-rg –j cft_ip –l cft-ip –n ipmp0@1,ipmp0@2`
 
-View the command line description
+****View the command line description****
 
 
 | Command | Description |
@@ -122,7 +122,7 @@ declared as follows:
 
 `scrgadm –a –g CFT-rg –t SUNM.HAStoragePlus –j cft-disk \–x FilesystemMountpoints=/global/cft`
 
-View the command line description
+****View the command line description****
 
 
 | Command | Description |
@@ -149,7 +149,7 @@ scrgadm –a –g CFT-rg –t SUNW.gds –j cft-gds \\
 –y Resource_dependencies=cft-ip,cft-disk
 ```
 
-View the command line description
+****View the command line description****
 
 
 | Command | Description |

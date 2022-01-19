@@ -3,10 +3,10 @@
     "linkTitle": "CFTNET - Network resources ",
     "weight": "270"
 }The
-Network resources object corresponds to the CFTNET object in the command line operations.
+**Network resources** object corresponds to the CFTNET object in the command line operations.
 
-Related
-topics
+****Related
+topics****
 
 - Command syntax
     [CFTNET](../../../c_intro_userinterfaces/command_summary#CFTNET)

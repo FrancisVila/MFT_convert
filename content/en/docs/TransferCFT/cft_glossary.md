@@ -286,13 +286,13 @@ environment and to control the monitor and associated transfers.
 
 The types of compression are:
 
-- 01:
+- ****01****:
     compression of a string of characters (compression of blank characters)
-- 02:
+- ****02****:
     horizontal compression (repetitive characters are deleted in the record)
-- 04:
+- ****04****:
     compression of characters (each alphanumeric character is compressed)
-- 08:
+- ****08****:
     vertical compression (only the characters which are different from the
     previous record are transferred)
 
@@ -636,8 +636,8 @@ Entity via which connections can be established (defined in CFTNET).
 #### NSDU (Network Service Data Unit):
 
 Data unit for the network service in the PeSIT protocol. It is made
-up of the data exchanged between two users and can contain several [FPDUs](#FPDU__File_Protocol_Data_Unit__). See also rrusize
-and srusize.
+up of the data exchanged between two users and can contain several [FPDUs](#FPDU__File_Protocol_Data_Unit__). See also ****rrusize****
+and ****srusize****.
 
 ##### O
 
@@ -967,7 +967,7 @@ See [IDT](#IDT).
 
 #### Transfer owner:
 
-A transfer owner is associated with each transfer. See userid.
+A transfer owner is associated with each transfer. See ****userid****.
 
 <span id="Transfer_restart_"></span>
 
@@ -999,29 +999,29 @@ the number of concurrent transfers allowed and the timeslot or period
 
 Transfers can be set to one of six states.
 
-- C:
-    The transfer is in progress (Current).
+- ****C****:
+    The transfer is in progress (****C****urrent).
 
 <!-- -->
 
-- D:
-    The transfer is available (at Disposal)
+- ****D****:
+    The transfer is available (at ****D****isposal)
     and will be triggered automatically as soon as the Transfer CFT{{< TransferCFT/componentshortname >}} resources
     and partner access authorizations allow it.
-- H:
-    The transfer is pending (on Hold)
+- ****H****:
+    The transfer is pending (on ****H****old)
     on the initiative of the transfer requester, an operator (HALT command)
     or the monitor subsequent to an incident. The transfer can be resumed
     by the operator or the remote partner.
-- K:
-    The transfer is pending (Kept)
+- ****K****:
+    The transfer is pending (****K****ept)
     on the initiative of the transfer requester, an operator (KEEP command)
     or the monitor subsequent to an incident. The transfer can only be resumed
     by the operator.
-- T:
-    The transfer has successfully Terminated.
-- X:
-    All end of transfer operations have been successfully eXecuted
+- ****T****:
+    The transfer has successfully ****T****erminated.
+- ****X****:
+    All end of transfer operations have been successfully e****X****ecuted
     and the monitor has been notified via the END command.
 
 ##### V

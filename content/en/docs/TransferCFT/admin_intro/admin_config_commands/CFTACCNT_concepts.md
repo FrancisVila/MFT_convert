@@ -52,7 +52,7 @@ For more information on the TYPE parameter in the statistical recording
 mode, see [Recording mode TYPE](#Recordin). For each terminated transfer, Transfer CFT{{< TransferCFT/componentshortname  >}} records the information
 contained in the following table.
 
-CFTACCNT list of headings
+****CFTACCNT list of headings****
 
 
 | Heading  | Offset<br/> V24 | Offset<br/> V23 |

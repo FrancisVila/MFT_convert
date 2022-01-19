@@ -59,9 +59,9 @@ idt=&idt
 | <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/ida">IDA</a>  | Local transfer identifier assigned by the user or user application. The maximum length is 64 characters. |
 | <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/idm">IDM</a>  | Message identifier. The value of this identifier is unrestricted. |
 | <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/idu">IDT</a>  | Identifier of the original transfer acknowledged by this message. |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/msg">MSG</a> | Message |
-| **<a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/part">PART</a> ** | Transfer partner identifier. |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/pri">PRI</a> | Request selection priority. |
-| **<a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/type">TYPE</a> = REPLY** | Characterizes a reply send transfer. |
+| ****<a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/msg">MSG</a>**** | Message |
+| ******<a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/part">PART</a> ****** | Transfer partner identifier. |
+| ****<a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/pri">PRI</a>**** | Request selection priority. |
+| ******<a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/type">TYPE</a> = REPLY****** | Characterizes a reply send transfer. |
 | Other parameters  | For optional parameters common to SEND: see the <a href="../../../c_intro_userinterfaces/command_summary#SEND">SEND</a> command.  |
 

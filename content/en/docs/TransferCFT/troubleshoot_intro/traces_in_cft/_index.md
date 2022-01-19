@@ -20,8 +20,8 @@
 
 ## About Transfer CFT traces
 
-Transfer CFT traces are managed by the Advanced
-Trace Manager
+Transfer CFT traces are managed by the ****A****dvanced
+****T****race ****M****anager
 (ATM) component.
 
 ATM is a problem resolution assistance tool that is used:

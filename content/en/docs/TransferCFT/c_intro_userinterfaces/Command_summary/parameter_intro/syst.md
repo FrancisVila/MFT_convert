@@ -8,7 +8,7 @@
 
 #### CFTPART
 
-\[SYST = string \]
+****\[SYST = string \]****
 
 Defines the OS for the partner site.
 

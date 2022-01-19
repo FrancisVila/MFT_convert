@@ -97,10 +97,10 @@ COPSTOP is an example of the JCL stop statement for the Transfer CFT UI server.
 
 ****Menu****
 
-1. Access the *Transfer CFT* Main Menu.  
+1. Access the *Transfer CFT* **Main Menu**.  
     In the Main Menu enter the command cft and press ****Enter**** to open the Transfer CFT menu.
 1. Enter **1** to access **Common CFT commands**.
-1. Select option 1 Start Copilot. The *Copilot server* menu is displayed.  
+1. Select option ****1 Start Copilot****. The *Copilot server* menu is displayed.  
 
 ****Command****
 
@@ -110,10 +110,10 @@ Execute: COPSTART
 
 ****Menu****
 
-1. Access the *Transfer CFT* Main Menu.  
+1. Access the *Transfer CFT* **Main Menu**.  
     In the Main Menu enter the command cft and press ****Enter**** to open the Transfer CFT menu.
 1. Enter **1** to access **Common CFT commands**.
-1. Select option 2 Stop Copilot.  
+1. Select option ****2**** ****Stop Copilot****.  
     Only the server waiting for a connection is stopped. Other servers that users have logged onto are shut down when the user logs off, or after a network timeout.
 
 ****Command****

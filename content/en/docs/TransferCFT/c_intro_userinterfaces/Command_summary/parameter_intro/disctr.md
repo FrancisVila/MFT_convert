@@ -8,7 +8,7 @@
 
 #### CFTPROT
 
-\[disctr = <u>45</u> | n } \]    {0...3600}
+****\[disctr = <u>45</u> | n } \]    {0...3600}****
 
 Network disconnection wait timeout (default = 45). Wait
 timeout, in seconds, for the partner in the connection before disconnection,

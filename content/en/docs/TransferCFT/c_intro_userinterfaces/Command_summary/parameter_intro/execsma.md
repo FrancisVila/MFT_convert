@@ -10,9 +10,9 @@
 
 #### CFTPARM
 
-\[EXECSMA = filename\]
+****\[EXECSMA = filename\]
    {string
-64}
+64}****
 
 Generic name of the file describing the procedures to be executed on
 receiving an acknowledgement (reply) following sending a file.

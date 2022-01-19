@@ -10,7 +10,7 @@ The difference between suspending and interrupting, a HALT, is that
 the transfer can only be restarted by a manual operator command, the START
 command.
 
-The suspended transfers are set to the K
+The suspended transfers are set to the ****K****
 phasestep. The monitor ensures the integrity of the data in case of suspension
 and, depending on the protocol used, authorizes the restarting of the
 transfer from the last synchronization point set before the interruption,

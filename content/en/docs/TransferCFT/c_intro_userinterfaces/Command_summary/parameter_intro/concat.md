@@ -8,7 +8,7 @@
 
 #### CFTPROT
 
-\[concat = { <u>YES</u> | NO } \]
+****\[concat = { <u>YES</u> | NO } \]****
 
 Manages the filling of a network message (NSDU) during the file data
 exchange phase, permitting two or more FPDUs to be grouped in the same

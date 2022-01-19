@@ -12,7 +12,7 @@ Deploying flows from Central Governance{{< TransferCFT/centralgovernancename  >}
 
 com.axway.cmp.admin.api.v2.ProductException: Error while setting the configuration for product Transfer CFT - CIB\_37810\_GCS\_GL : An error occurred while deploying the configuration: Could not parse webservices response from Transfer CFT. Problem: Read timed out
 
-Resolution
+****Resolution****
 
 The Transfer CFT{{< TransferCFT/transfercftname  >}} application got stuck when trying to lock the runtime/data/cftparm as the NFS server thinks the file is locked by another application.
 

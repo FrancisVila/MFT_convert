@@ -8,7 +8,7 @@
 
 #### ABOUT
 
-\[ KEY = { <u>FIRST</u> | ALL } \]
+****\[ KEY = { <u>FIRST</u> | ALL } \]****
 
 Defines the number of keys that display.
 
@@ -17,7 +17,7 @@ Defines the number of keys that display.
 
 #### CFTPARM
 
-\[ KEY = { string 80 } \]
+****\[ KEY = { string 80 } \]****
 
 The Transfer CFT{{< TransferCFT/componentshortname  >}} user key. You can enter a string of up to 80 characters, which is comprised of the indirection character and file name (file containing the key).
 

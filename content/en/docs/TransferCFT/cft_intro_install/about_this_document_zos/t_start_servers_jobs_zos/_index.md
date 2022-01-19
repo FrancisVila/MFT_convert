@@ -49,7 +49,7 @@ Enter the operator command:
 /F <Transfer CFT{{< TransferCFT/componentshortname >}} Jobname>,SHUT FAST=YES
 ```
 
-**Force** Transfer CFT{{< TransferCFT/componentshortname  >}} **shut down**
+**Force** ****Transfer CFT****{{< TransferCFT/componentshortname  >}} **shut down**
 
 ```
 /F <Transfer CFT{{< TransferCFT/componentshortname >}} Jobname>,SHUT FAST=KILL
@@ -99,4 +99,4 @@ You can use COPSTATU, for example, as the JCL statement to display the Transfer 
 
 ## Register with Central Governance
 
-If you intend to implement Central Governance, please refer to the Transfer CFT{{< TransferCFT/componentlongname  >}} *User's Guide &gt; [*Register with* Central Governance](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.
+If you intend to implement Central Governance, please refer to the **Transfer CFT**{{< TransferCFT/componentlongname  >}} *User's Guide &gt; [*Register with* **Central Governance**](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.

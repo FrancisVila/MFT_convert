@@ -8,7 +8,7 @@
 
 #### All Transfer CFT{{< TransferCFT/componentshortname  >}} commands  
 
-\[MODE = { <u>REPLACE</u> | CREATE | DELETE }\]
+****\[MODE = { <u>REPLACE</u> | CREATE | DELETE }\]****
 
 Action to do in the parameter or partner database. This parameter applies
 to all commands that affect Transfer CFT{{< TransferCFT/componentshortname  >}} databases. Possible values:
@@ -26,17 +26,17 @@ to all commands that affect Transfer CFT{{< TransferCFT/componentshortname  >}} 
 
 #### DISPLAY
 
-\[MODE = { ANY | COLUMN | LINE } \]
+****\[MODE = { ANY | COLUMN | LINE } \]****
 
 - ANY / COLUMN: Displays in a column format
 - Line: Displays in a more horizontal and spaced format
 
- 
+**** ****
 
 #### TURN
 
-\[MODE = { START | CREATE | ACT | INACT }
-\]
+****\[MODE = { START | CREATE | ACT | INACT }
+\]****
 
 - INACT: temporarily stops automated calls to a given site
 - ACT: reactivates automated calls after the INACT command
@@ -45,8 +45,8 @@ to all commands that affect Transfer CFT{{< TransferCFT/componentshortname  >}} 
 
 #### INACT, ACT
 
-**\[MODE =
-{<u>BOTH</u> | REQUESTER | SERVER} \]**
+******\[MODE =
+{<u>BOTH</u> | REQUESTER | SERVER} \]******
 
 Mode to be reactivated:
 
@@ -73,7 +73,7 @@ The CFTPART command’s STATE parameter is set to:
 
 #### PKIENTITY
 
-\[MODE = { <u>REPLACE</u> | CREATE | DELETE }\]
+****\[MODE = { <u>REPLACE</u> | CREATE | DELETE }\]****
 
 Action to do in the PKI database. Possible values:
 

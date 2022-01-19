@@ -8,8 +8,8 @@
 
 #### CFTCAT
 
-\[ TLVWEXEC = { str1...64}
-\]
+****\[ TLVWEXEC = { str1...64}
+\]****
 
 Batch to execute when the TLVWARN is reached. The TLV parameters enable Transfer CFT{{< TransferCFT/componentshortname  >}} to
 issue alerts when a critical CAT threshold is reached based on a percentage of the catalog being filled, where 0% indicates empty and 100% indicates full.
@@ -28,8 +28,8 @@ alert generates 2 actions:
 
 #### CFTCOM FILE
 
-\[ TLVWEXEC = { str1...512 }
-\]
+****\[ TLVWEXEC = { str1...512 }
+\]****
 
 Batch to execute when the TLVWARN is reached. The TLV parameters enable Transfer CFT{{< TransferCFT/componentshortname  >}} to
 issue alerts when a critical COM threshold is reached based on a percentage of the communication media being filled, where 0% indicates empty and 100% indicates full.

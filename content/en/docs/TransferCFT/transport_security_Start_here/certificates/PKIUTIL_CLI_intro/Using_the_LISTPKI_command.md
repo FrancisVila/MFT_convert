@@ -126,16 +126,16 @@ I x 4096
 A   4096
 ```
 
-Id
+****Id****
 
 Identifier assigned to the certificate when it was imported into the
 database.
 
-Root
+****Root****
 
 Identifier of the root certificate authority.
 
-Miscellaneous
+****Miscellaneous****
 
 Miscellaneous certificate information (the letter only displays in when using the old format or no model):
 
@@ -150,15 +150,15 @@ Miscellaneous certificate information (the letter only displays in when using th
     key associated with the certificate exists
 - E: Certificate expired (!) or otherwise
 
-Exp. Date
+****Exp. Date****
 
 Expiry date of the certificate.
 
-Delivered to
+****Delivered to****
 
 CN (Common name) attribute of the certificate user DN field.
 
-Delivered by
+****Delivered by****
 
 CN (Common name) attribute of the certificate signer DN field.
 
@@ -295,53 +295,53 @@ Extended Usage Key         =
 TLS Web Server Authentication, TLS Web Client Authentication
 ```
 
-Certificate id
+****Certificate id****
 
 Identifier assigned to the certificate when it was imported into the
 database.
 
-Certificate Type
+****Certificate Type****
 
 Identifier of the root certificate authority.
 
-Root id
+****Root id****
 
 Identifier of the root certificate authority.
 
-Signer id
+****Signer id****
 
 Identifier of the certificate signer (issuer).
 
-State
+****State****
 
 State of the certificate in the database (active or inactive).
 
-Serial Number
+****Serial Number****
 
 Serial number of the certificate.
 
-Delivered to
+****Delivered to****
 
 CN (Common name) attribute of the certificate user DN field.
 
-Delivered by
+****Delivered by****
 
 CN (Common name) attribute of the certificate signer DN field.
 
-Expired before and after
+****Expired before and after****
 
 Period of validity of the certificate (start and end date )
 
-Comment
+****Comment****
 
 Value assigned to the COMMENT parameter when the certificate was imported
 into the database.
 
-Owner DN
+****Owner DN****
 
 Value of the certificate user DN field.
 
-Signer DN
+****Signer DN****
 
 Value of the certificate signer DN field.
 

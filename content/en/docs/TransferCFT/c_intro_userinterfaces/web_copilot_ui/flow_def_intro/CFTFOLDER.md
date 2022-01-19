@@ -43,7 +43,7 @@ Use the following CFTFOLDER parameters to configure folder monitoring for each 
 | RENAMESEPARATOR  | string  | "." | This parameter only applies to the MOVE method.<br/> You can use no more than two characters from among the following:<br/> .[]()_-<br/> The first character defines the separator before the timestamp. The second one, when present, defines the separator after the timestamp.<br/> For example, using timestamp_separators "[]": - myfile is renamed myfile.[20131025] - myfile.txt is renamed myfile.[20131025].txt |
 | N/A in this version  | string  |   | Metadata used to control user changes.  |
 | USEFSEVENTS<br/> <br/> <a href="#Enable">More information</a> | Boolean  | No  | Set to YES to enable the file system events monitoring service to detect newly available files.  |
-| <a href="../../../command_summary/parameter_intro/userid">USERID</a>  | String  |   | *Available on UNIX and* Windows **<br/> Identifier for a user who can scan a folder. See the section, <a href="../../../../app_integration_intro/intro_folder_monitor/configure_folder_monitoring#Folder2">Folder monitoring using USERCTRL</a>. |
+| <a href="../../../command_summary/parameter_intro/userid">USERID</a>  | String  |   | *Available on UNIX and* **Windows** **<br/> Identifier for a user who can scan a folder. See the section, <a href="../../../../app_integration_intro/intro_folder_monitor/configure_folder_monitoring#Folder2">Folder monitoring using USERCTRL</a>. |
 
 
 > **Note**

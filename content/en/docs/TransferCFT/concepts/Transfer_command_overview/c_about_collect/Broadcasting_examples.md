@@ -24,7 +24,7 @@ This file is received by B as LIST, through the command:
 
 CFTRECV ID=..., FNAME=LIST
 
-- *2nd
+- ***2**nd
     phase*
 
 A sends the file to be broadcast to a virtual partner

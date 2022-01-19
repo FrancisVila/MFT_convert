@@ -2,7 +2,7 @@
     "title": "CFTEXT  - Extract file data ",
     "linkTitle": "CFTEXT - Extracting data",
     "weight": "340"
-}You can use the <span id="About_the_CFTEXT_Command"></span>CFTEXT
+}You can use the <span id="About_the_CFTEXT_Command"></span>****CFTEXT****
 object to extract Parameter and Partner file data. CFTEXT generates, as output, a configuration command text used to reconstitute
 the data of these files.
 
@@ -23,7 +23,7 @@ output or else redefine the output medium via the command CONFIG TYPE
 
 All parameter values are in UPPER CASE letters.
 
-Command syntax: [CFTEXT](../../../command_summary#CFTEXT)
+Command syntax: ****[CFTEXT](../../../command_summary#CFTEXT)****
 
 QQQ\_QQQ\_CHECK command description
 
@@ -33,7 +33,7 @@ Parameters
 
 Description
 
-[CFTEXT](../../../command_summary#CFTEXT) command
+****[CFTEXT](../../../command_summary#CFTEXT)**** command
 
 Use this command to extract all or part of the data from
 the parameter and partner files.
@@ -104,7 +104,7 @@ your OS.
 
 This parameter defines the parameter type to be extracted.
 
-Example 1
+****Example 1****
 
 ```
 CFTEXT
@@ -113,7 +113,7 @@ CFTEXT
 Extraction of all data from the CFTPARM parameter and CFTPART
 partner files.
 
-****Example 2****
+********Example 2********
 
 ```
 CFTEXT     TYPE    
@@ -127,7 +127,7 @@ mycftparm
 Extraction of data concerning the model file to be sent
 (CFTSEND command) with an IDF = FACT, from the file mycftparm.
 
-****Example 3****
+********Example 3********
 
 ```
 CFTEXT
@@ -141,7 +141,7 @@ received (CFTRECV command) whose IDF value begins with the four letters
 Refer to the Transfer CFT Operations Guide that corresponds with
 your OS.
 
-****Example 4****
+********Example 4********
 
 ```
 CFTEXT
@@ -154,7 +154,7 @@ commands, the identifier of which begins with the four letters "MAGA".
 The Partner file name is the default name indicated. Refer to the Transfer
 CFT Operations Guide that corresponds with your OS.
 
-Example 5
+****Example 5****
 
 Transfer
 CFT application definition:

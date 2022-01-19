@@ -8,7 +8,7 @@
 
 #### CFTSEND, RECV, SEND
 
-\[TCYCLE = {<u>DAY</u> |MIN | MONTH}\]
+****\[TCYCLE = {<u>DAY</u> |MIN | MONTH}\]****
 
 Transfer cycle period unit. This unit can be:
 

@@ -5,8 +5,8 @@
 }<span id="Activating_an_exit_command_line"></span>This topic describes the
 CFTEXIT command, used to start an EXIT task.
 
-Related
-topics
+********Related
+topics********
 
 - Command syntax
     [CFTEXIT](../../../command_summary#CFTEXIT)
@@ -26,8 +26,8 @@ topics
 | <a href="../../../command_summary/parameter_intro/waittask">WAITTASK</a> | Inactivity time (in minutes) of the EXIT task. Beyond this value, this task is deactivated, i.e. unloaded from the memory.<br/> This parameter only applies to file EXIT tasks. |
 
 
-Example 1 - Parameter setting for a file
-type EXIT
+****Example 1 - Parameter setting for a file
+type EXIT****
 
 ```
 CFTSEND
@@ -45,8 +45,8 @@ RESERV = 4000,
 PROG = FILEXEC
 ```
 
-Example 2 - Parameter setting for an directory
-type EXIT
+****Example 2 - Parameter setting for an directory
+type EXIT****
 
 ```
 CFTPROT

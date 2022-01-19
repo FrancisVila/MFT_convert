@@ -8,7 +8,7 @@
 
 #### CFTPROT
 
-REVERSE = { NO | YES }
+****REVERSE = { NO | YES }****
 
 Reuse a connection to perform two transfers in different directions
 one after the other. Applicable only in requester mode.

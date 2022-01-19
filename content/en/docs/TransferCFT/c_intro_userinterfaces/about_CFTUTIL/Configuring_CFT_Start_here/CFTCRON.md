@@ -151,4 +151,4 @@ procedure. Define these using the EXEC parameter of the CFTCRON command.
 ****Related
 topics****
 
-- Command syntax [CFTCRON](../../../command_summary#CFTCRON)
+- Command syntax **** [CFTCRON](../../../command_summary#CFTCRON)

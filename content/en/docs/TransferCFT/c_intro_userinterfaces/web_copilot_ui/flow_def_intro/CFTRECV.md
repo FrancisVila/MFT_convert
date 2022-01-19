@@ -13,8 +13,8 @@ receive template. You can use the CFTRECV object to:
 - Authorize the default
     time slot and default user associated with the transfers
 
-Related
-topics
+****Related
+topics****
 
 - Command syntax
     [CFTRECV](../../../command_summary#CFTRECV)
@@ -73,9 +73,9 @@ topics
 
 This section displays examples for a default receive template.
 
-Example 1
+****Example 1****
 
-CFTRECV
+****CFTRECV****
 
 ```
 MODE = REPLACE,
@@ -99,9 +99,9 @@ if a RECV command specifying FNAME has been entered (Transfer CFT is requester),
 or if the partner (Transfer CFT is server) has specified the receiver
 file name (open mode for receive transfers).
 
-Example 2
+****Example 2****
 
-CFTRECV
+****CFTRECV****
 
 ```
 MODE = REPLACE,

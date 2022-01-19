@@ -21,10 +21,10 @@ to be included in the application using the Transfer CFT{{< TransferCFT/componen
 ## Call syntax
 
 
-| Syntax | rc = cftxx (verb,&amp;ptr,param) |
+| ****Syntax**** | rc = cftxx (verb,&amp;ptr,param) |
 | --- | --- |
 | Element | Definition |
-| cftxx | cftai: simple Transfer CFT catalog querying services<br/> cftaix: extended Transfer CFT{{< TransferCFT/componentshortname  >}} catalog querying services<br/> cftau: transfer services with syntax analysis<br/> cftac: transfer services without syntax analysis |
+| cftxx | ****cftai****: simple Transfer CFT catalog querying services<br/> ****cftaix****: extended Transfer CFT{{< TransferCFT/componentshortname  >}} catalog querying services<br/> ****cftau****: transfer services with syntax analysis<br/> ****cftac****: transfer services without syntax analysis |
 | **verb** | Service requested |
 | ptr | Address of the internal control block |
 | param | Parameters specific to the requested service |

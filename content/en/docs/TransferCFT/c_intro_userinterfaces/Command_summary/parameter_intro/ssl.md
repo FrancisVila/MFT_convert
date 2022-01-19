@@ -8,7 +8,7 @@
 
 #### CFTPROT
 
-\[SSL = identifier \]
+****\[SSL = identifier \]****
 
 The identifier for the CFTSSL object that is used as security profiles.
 
@@ -19,7 +19,7 @@ the CFTSSL object that corresponds to the identifier specified here.
 
 #### CFTPART
 
-\[SSL = identifier \]
+****\[SSL = identifier \]****
 
 Identifier for the CFTSSL command that
 is used as security profiles in client mode or specifying additional checks

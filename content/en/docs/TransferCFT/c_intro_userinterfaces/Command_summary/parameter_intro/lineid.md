@@ -8,7 +8,7 @@
 
 #### CFTNET
 
-\[LINEID  = string 33\]   
+****\[LINEID  = string 33\]****   
 
 Describes the local physical resource. Use this field to specify the
 identifier of the asynchronous resource characterizing the communication

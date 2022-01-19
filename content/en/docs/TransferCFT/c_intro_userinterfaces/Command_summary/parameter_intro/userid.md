@@ -10,8 +10,8 @@
 
 #### CFTRECV, **<span id="userid_CFTSEND"></span>**CFTSEND
 
-**\[USERID =
-{"<u>Transfer CFT userid</u>" | *string32* }\]**
+******\[USERID =
+{"<u>Transfer CFT userid</u>" | *string32* }\]******
 
 Identifier of the transfer owner.
 
@@ -22,13 +22,13 @@ is the system "userid" of the server Transfer CFT{{< TransferCFT/componentshortn
 
 This field can include one or more of the following symbolic variables:
 
-- &PART:
+- ****&PART****:
     value substituted by the local identifier of the transfer partner (CFTPART
-    id)
-- &SUSER:
+    ****id****)
+- ****&SUSER****:
     value substituted by the SUSER parameter sent between two Transfer CFT{{< TransferCFT/componentshortname >}}s (PeSIT D CFT profile and PeSIT E protocols)
-- &RUSER:
-    value substituted by the ruser
+- &****RUSER****:
+    value substituted by the ****ruser****
     parameter sent between two Transfer CFT{{< TransferCFT/componentshortname >}}s (PeSIT D CFT profile
     and PeSIT E protocols)
 
@@ -54,13 +54,13 @@ The CRONJOB is executed by the user who started Transfer CFT{{< TransferCFT/tran
 
 #### CFTAPPL, CLEARCMD
 
-**USERID = {*string 32*
-}**
+******USERID = {*string 32*
+}******
 
 #### CFTFOLDER
 
-**USERID = {*string 32*
-}**
+******USERID = {*string 32*
+}******
 
 Identifier for a user who can scan a folder. See the section, [Folder monitoring using USERCTRL](../../../../app_integration_intro/intro_folder_monitor/configure_folder_monitoring#Folder2).
 

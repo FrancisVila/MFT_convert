@@ -11,7 +11,7 @@
 **\[NIDF = string \]**
 
 **IDF
-network identifier. This value is transferred in the network.
+network identifier. **** This value is transferred in the network.
   **
 
 #### SEND, RECV

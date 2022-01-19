@@ -76,7 +76,7 @@ empty:
 - addr: remote partner
     address
 
-The ret1 return code field must
+The ****ret1**** return code field must
 be defined when the user function is returned from.
 
 If there is a connection refusal (return code value of 2), the ret2

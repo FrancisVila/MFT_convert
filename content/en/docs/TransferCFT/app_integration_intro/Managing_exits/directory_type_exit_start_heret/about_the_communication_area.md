@@ -26,7 +26,7 @@ The following tables list all the fields of the communication structure.
 ### General information fields
 
 
-| Field | Explanation |
+| ****Field**** | ****Explanation**** |
 | --- | --- |
 | version  | Interface version number<br/> The current version number is "0130". |
 | idexit  | EXIT task identifier |

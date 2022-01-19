@@ -174,11 +174,11 @@ The commands are processed as follows:
 This section describes the minimum length of a list record including
 significant items such as the filename, which depends on the selected version.
 
-Format version V23
+****Format version V23****
 
 109 is the minimum length. If n&lt;109 or n>4096, the default value 503 is used.
 
-Format version V24
+****Format version V24****
 
 629 is the minimum length. If n&lt;629 or n>4096, the default value 1569 is used.
 

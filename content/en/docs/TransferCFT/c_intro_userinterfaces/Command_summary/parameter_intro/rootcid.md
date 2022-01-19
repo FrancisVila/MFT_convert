@@ -8,7 +8,7 @@
 
 #### PKICER  
 
-\[ ROOTCID = string 32 \]
+****\[ ROOTCID = string 32 \]****
 
 This parameter must be indicated for a certificate authority.
 In this case, the ID and ROOTCID parameters have the same value.
@@ -24,7 +24,7 @@ the identifier of the certificate authority to be deleted or updated.
 
 #### PKIEXT, LISTPKI
 
-\[ ROOTCID = string 32 \]
+****\[ ROOTCID = string 32 \]****
 
 This parameter allows you to chose the ROOTCID of the certificates to extract or display, respectively.
 
@@ -59,7 +59,7 @@ Id. Root iNum T S C K E  Exp.Date   Delivered to  Delivered by
 
 #### CFTSSL
 
-\[ ROOTCID = string 32 \]
+****\[ ROOTCID = string 32 \]****
 
 List of certificate authorities, where the total length of all identifiers cannot exceed 256 characters for CFTSSL. This list references a maximum of 10 identifiers in the local certificate database.
 

@@ -33,7 +33,7 @@ Using CFTUTIL you can perform the following commands.
 
 ### Deactivate a partner
 
-Syntax
+****Syntax****
 
 ```
 INACT TYPE=PART,ID=<CFTPART_ID>,MODE=<mode>,FORCE=<NO | YES>
@@ -45,7 +45,7 @@ Where:
 - Mode is the mode to be deactivated, with values: "BOTH" , "B", "REQUESTER", "R" , "SERVER", "S"
 - When FORCE is set to YES, stops any transfers in progress involving the deactivated partners.
 
-Example
+****Example****
 
 to deactivate the partner called PARIS in requester mode, enter:
 
@@ -66,21 +66,21 @@ When a partner is deactivated, transfers awaiting processing are:
 - Refused in server mode
 
 The state of a transfer request awaiting execution in requester mode
-for a deactivated partner remains D,
+for a deactivated partner remains ****D****,
 with a diagnostic code 430 and a protocol diagnostic INACT.
 
 The state of a transfer request awaiting execution in server mode for
-a deactivated partner remains D,
+a deactivated partner remains ****D****,
 with a diagnostic code 930 and a protocol diagnostic RCO 312, or ABO 312
 if the session is already open.
 
 The state of transfers that are interrupted by an INACT command when
-FORCE=YES is H, with a diagnostic
+FORCE=YES is ****H****, with a diagnostic
 code 121 and a protocol diagnostic OPER.
 
 ### Deactivate Sentinel notifications
 
-Syntax
+****Syntax****
 
 ```
 INACT TYPE=TRK
@@ -90,7 +90,7 @@ All notifications to Sentinel are suspended.
 
 ### Deactivate cron object
 
-Syntax
+****Syntax****
 
 ```
 INACT TYPE=CRON,ID=<CFTCRON_ID>
@@ -98,7 +98,7 @@ INACT TYPE=CRON,ID=<CFTCRON_ID>
 
 Where `CFTCRON_ID` is the identifier of the CRON object to deactivate. To deactivate several CRON objects with a single command, use wildcard characters or meta characters.
 
-Example
+****Example****
 
 To deactivate the CRON referenced by CRON1, enter:
 
@@ -115,7 +115,7 @@ CFTU00I INACT _ Correct (id=cron1,type=cron)
 
 ### Deactivate folder object
 
-Syntax
+****Syntax****
 
 ```
 INACT TYPE=FOLDER,ID=<CFTFOLDER_ID>
@@ -123,7 +123,7 @@ INACT TYPE=FOLDER,ID=<CFTFOLDER_ID>
 
 Where `CFTFOLDER_ID` is the identifier of the folder object to deactivate. To deactivate several folder objects with a single command, use wildcard characters or meta characters.
 
-Example
+****Example****
 
 To deactivate the folder referenced by USER1, enter:
 

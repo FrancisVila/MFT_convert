@@ -11,7 +11,7 @@
 - An installed Transfer CFT version 3.6 or higher on a compatible platform.
 - Transfer CFT and Copilot services are stopped.
 
-Flow Manager{{< TransferCFT/flowmanager  >}} **prerequisites**
+****Flow Manager{{< TransferCFT/flowmanager  >}} **prerequisites******
 
 - The shared secret that the Flow Manager administrator generated. Refer to the [Flow Manager User Guide](https://docs.axway.com/bundle/FlowManager_20_allOS_en_HTML5/page/flow_manager_user_guide.html) for details.
 - If you are implementing a SaaS cloud Flow Manager, you additionally require:

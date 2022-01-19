@@ -8,19 +8,19 @@
 
 #### CFTPROT
 
-\[SROUT = { BOTH
-| NONE | SENDER | RECEIVER }\]
+****\[SROUT = { BOTH
+| NONE | SENDER | RECEIVER }\]****
 
-Requester mode only
+****Requester mode only****
 
 Select the direction of transfers (files or messages) authorized for
 this protocol on the Transfer CFT{{< TransferCFT/componentshortname  >}}:
 
-- SENDER: send transfers only
-- RECEIVER: receive transfers only
-- BOTH (default value): both send and
+- ****SENDER****: send transfers only
+- ****RECEIVER****: receive transfers only
+- ****BOTH**** (default value): both send and
     receive transfers
-- NONE: no transfers
+- ****NONE****: no transfers
 
  
 

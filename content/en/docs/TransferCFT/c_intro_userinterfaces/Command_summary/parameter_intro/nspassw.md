@@ -8,8 +8,8 @@
 
 #### CFTPART
 
-**\[NSPASSW =
-*string*\]**
+******\[NSPASSW =
+*string*\]******
 
 *string32* SFTP
 

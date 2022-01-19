@@ -42,8 +42,8 @@ For Windows versions that support UAC, Windows Vista, Windows Server 2008, Windo
 
 For Windows versions prior to the versions listed above, perform the following steps to add yourself in ****Log on as a service group****:
 
-1. Navigate to Start **&gt;** Control Panel **&gt;** Administrative Tools **&gt;** Local Security Policy.
-1. From the tree, select Local Policies **&gt;** User Rights Assignment **&gt;** Log on as a service.
+1. Navigate to ****Start**** **&gt;** ****Control Panel**** **&gt;** ****Administrative Tools**** **&gt;** ****Local Security Policy****.
+1. From the tree, select ****Local Policies**** **&gt;** ****User Rights Assignment**** **&gt;** ****Log on as a service****.
 
 > **Note**
 >

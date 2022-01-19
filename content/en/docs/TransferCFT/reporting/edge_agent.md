@@ -112,7 +112,7 @@ When you are using the Event Router to send both usage tracking to the Edge Agen
 1. Save the file.
 1. Restart the Event Router.
 
-Example
+****Example****
 
 ```
 <TrkEventRouterCfg>

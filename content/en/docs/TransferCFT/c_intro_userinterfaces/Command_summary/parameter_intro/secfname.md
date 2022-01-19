@@ -8,7 +8,7 @@
 
 #### CFTPARM
 
-\[SECFNAME = filename \]
+****\[SECFNAME = filename \]****
 
 Filename. Name of the Transfer CFT{{< TransferCFT/componentshortname  >}} internal security file.
 

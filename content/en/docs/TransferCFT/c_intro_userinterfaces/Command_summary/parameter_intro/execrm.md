@@ -10,8 +10,8 @@
 
 #### CFTPARM
 
-\[EXECRM = filename\]
-    {string 64}
+****\[EXECRM = filename\]
+    {string 64}****
 
 Generic name of the file describing
 the procedures to be executed on completion of reception of a message.

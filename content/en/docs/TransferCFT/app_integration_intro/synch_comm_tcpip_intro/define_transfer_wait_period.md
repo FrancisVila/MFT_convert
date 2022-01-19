@@ -5,9 +5,9 @@
 }The SWAITCAT command enables a client to wait until
 a given transfer reaches a particular predefined phase, phasestep, or state before acting.
 
-Command syntax: [SWAITCAT](../../../c_intro_userinterfaces/command_summary)
+****Command syntax: [SWAITCAT](../../../c_intro_userinterfaces/command_summary)****
 
-Task examples: [SWAITCAT tasks](../../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/sync_transfer_request_tasks)
+****Task examples: [SWAITCAT tasks](../../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/sync_transfer_request_tasks)****
 
 Alternatively, you can use the parameters [WSTATES]() and [WTIMEOUT]() to replace SWAITCAT functionality.
 

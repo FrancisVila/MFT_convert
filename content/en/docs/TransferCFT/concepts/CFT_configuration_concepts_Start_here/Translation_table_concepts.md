@@ -235,7 +235,7 @@ And if all the following conditions are met:
 
 ## Limitations and usage restrictions
 
-- Central Governance **interoperability** Central Governance allows you to use the default translation tables, but not to create new translation tables via the Central Governance user interface. To create and use additional tables, in Transfer CFT  manually create translation tables as described in this section, and refer to them using the XLATE parameter in a SEND or RECV command.
+- ****Central Governance**** **interoperability** Central Governance allows you to use the default translation tables, but not to create new translation tables via the Central Governance user interface. To create and use additional tables, in Transfer CFT  manually create translation tables as described in this section, and refer to them using the XLATE parameter in a SEND or RECV command.
 - In the event of file store and forward by partner, there is no translation
     on the intermediate site.
 - You cannot override the default translation table when using COPYFILE.
@@ -305,8 +305,8 @@ The first character is in position 0, and the first position is 00. In this exam
 
 ![](/Images/TransferCFT/temp_translation_table.png)
 
-Related
-topics
+****Related
+topics****
 
 - Command syntax
     [CFTXLATE](../../../c_intro_userinterfaces/command_summary#CFTXLATE)

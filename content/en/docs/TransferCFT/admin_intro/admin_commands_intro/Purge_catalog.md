@@ -12,14 +12,14 @@ time in the catalog. Transfer CFT provides the following purge options:
 
 QQQ\_QQQ\_QQQ split table
 
-****Description****
+********Description********
 
 Use this command to delete records which have exceeded
 the retention time indicated in the Transfer CFT parameter setting. You
 can set the purge time to meet your requirements and Transfer CFT
 activity.
 
-****Parameter****
+********Parameter********
 
 
 | <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/timep">TIMEP</a> | Purge time selected by the user.<br/> You can deactivate the next purge function by setting TIMEP = 00000000. Use care with this operation due to a risk of catalog overloading with a loss of performance, or overflow.<br/> If the next purge is part of a cycle, see the CFTCAT TIMEP parameter, the entire cycle is deleted, and not just the next occurrence of this cycle. |
@@ -44,7 +44,7 @@ You can use the [unified configuration](../../uconf/uconf_parameters) parameter 
 
 When scheduling periodic purges, be sure to consider the amount of time that you want to keep transfers. This is especially important for transfers that are in the HOLD state, as they have not yet been executed. Set the parameters cft.purge.sh and cft.purge.rh to values that guarantee that these transfer are not purged before they are completed regardless of purge scheduling.
 
-****Examples****
+********Examples********
 
 The examples provide as a basis for scheduling catalog purges, where the time  is from the start of the transfer. See the section [Compatibility](#Compatib) for information on how to use the former purge scheduling (exclusively by days).
 

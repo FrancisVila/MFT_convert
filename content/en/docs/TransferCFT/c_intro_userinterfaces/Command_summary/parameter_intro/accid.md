@@ -12,15 +12,15 @@
 
 Used when TYPE=SYST
 
-ACCID = n
+****ACCID = n****
 
 Accounting system file identifier records.
 
-- z/OS Default
-    value: 128.  
+- ****z/OS**** ****Default
+    value: 128.****  
     This data is written in SMF. The Transfer CFT{{< TransferCFT/componentshortname >}} program must be authorized
     (APF).
-- VMS Parameter not applicable.
+- ****VMS**** Parameter not applicable.
 
 The default value is 128. The data is
 written in SMF. The Transfer CFT{{< TransferCFT/componentshortname  >}} program must have write access.

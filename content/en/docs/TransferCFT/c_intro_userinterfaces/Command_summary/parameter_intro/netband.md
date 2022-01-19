@@ -6,9 +6,9 @@
 
 ### netband
 
-CFTSEND, CFTRECV
+****CFTSEND, CFTRECV****
 
-\[ NETBAND = { 1...16 } \]
+****\[ NETBAND = { 1...16 } \]****
 
 The outgoing port range is controlled by the CFTNET object SRCPORTS
 parameter. There is a maximum of 16 port ranges that can be defined for

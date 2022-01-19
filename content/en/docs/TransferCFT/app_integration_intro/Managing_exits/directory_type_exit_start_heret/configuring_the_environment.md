@@ -31,13 +31,13 @@ EXIT.
 
 ### Parameters
 
-**[ID](../../../../c_intro_userinterfaces/command_summary/parameter_intro/id) =
-identifier**
+******[ID](../../../../c_intro_userinterfaces/command_summary/parameter_intro/id) =
+identifier******
 
 Protocol identifier.
 
-**\[[EXITA](../../../../c_intro_userinterfaces/command_summary/parameter_intro/exita) =
-identifier\]     **
+******\[[EXITA](../../../../c_intro_userinterfaces/command_summary/parameter_intro/exita) =
+identifier\]     ******
 
 Directory EXIT identifier.
 
@@ -49,8 +49,8 @@ The directory type EXIT identifier can include the symbolic variable
 &NPART:(EXITA = (&NPART, ...) where NPART designates the remote
 partner network name.
 
-**[DYNAM](../../../../c_intro_userinterfaces/command_summary/parameter_intro/dynam)  =
-identifier**
+******[DYNAM](../../../../c_intro_userinterfaces/command_summary/parameter_intro/dynam)  =
+identifier******
 
 Identifier of the dynamic partner in server mode.
 
@@ -67,25 +67,25 @@ object ID parameter.
 
 ### Parameters
 
-**[ID](../../../../c_intro_userinterfaces/command_summary/parameter_intro/id) =
-identifier**
+******[ID](../../../../c_intro_userinterfaces/command_summary/parameter_intro/id) =
+identifier******
 
 Command identifier.
 
 The value of this identifier corresponds to the identifier defined in
 the EXITA parameter of the related CFTPROT object.
 
-\[[FORMAT](../../../../c_intro_userinterfaces/command_summary/parameter_intro/format)
-= V23 | V24 \]
+****\[[FORMAT](../../../../c_intro_userinterfaces/command_summary/parameter_intro/format)
+= V23 | V24 \]****
 
 Optional parameter. Indicates the format
 for the communication area.
 
-- V23 (Default value)
-- V24
+- ****V23**** (Default value)
+- ****V24****
 
-**\[[LANGUAGE](../../../../c_intro_userinterfaces/command_summary/parameter_intro/language)
-= {COBOL | C}\]**
+******\[[LANGUAGE](../../../../c_intro_userinterfaces/command_summary/parameter_intro/language)
+= {COBOL | C}\]******
 
 Language in which the user program is written.
 
@@ -95,13 +95,13 @@ Transfer CFT{{< TransferCFT/componentshortname  >}} uses this attribute to excha
 the EXIT via the structure best suited to the language in which it is
 implemented.
 
-**\[[PARM](../../../../c_intro_userinterfaces/command_summary/parameter_intro/parm) =
-string64\]**
+******\[[PARM](../../../../c_intro_userinterfaces/command_summary/parameter_intro/parm) =
+string64\]******
 
 Free user field.
 
-**\[[PROG](../../../../c_intro_userinterfaces/command_summary/parameter_intro/prog)  =
-{CFTEXIT | string512}\]**
+******\[[PROG](../../../../c_intro_userinterfaces/command_summary/parameter_intro/prog)  =
+{CFTEXIT | string512}\]******
 
 Name of the executable module associated with the EXIT task.
 
@@ -109,8 +109,8 @@ This module is built from the interface provided with Transfer CFT{{< TransferCF
 to the program written by the user. In order to facilitate identification
 of the associated module, it is advised to name it CFTEXIA.
 
-\[[RESERV](../../../../c_intro_userinterfaces/command_summary/parameter_intro/reserv)  =
-{<u>1024</u> | n}\]     {0 ...1024}    
+****\[[RESERV](../../../../c_intro_userinterfaces/command_summary/parameter_intro/reserv)  =
+{<u>1024</u> | n}\]     ****{0 ...1024}    ********
 
 Size of the working area reserved for the user.
 
@@ -119,7 +119,7 @@ to save data required for the processing of the program that you have
 written. This area is de-allocated when the Transfer CFT{{< TransferCFT/componentshortname  >}} interface de-selects
 the file.
 
-**[TYPE](../../../../c_intro_userinterfaces/command_summary/parameter_intro/type) =
-ACCESS**
+******[TYPE](../../../../c_intro_userinterfaces/command_summary/parameter_intro/type) =
+ACCESS******
 
 EXIT type.

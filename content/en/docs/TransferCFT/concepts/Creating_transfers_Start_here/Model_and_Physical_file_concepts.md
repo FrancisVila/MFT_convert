@@ -110,7 +110,7 @@ taken into account.
     parameter of CFTPARM
 
 This transmission relates to the partner (server) indicated in the PART
-parameter (see P*arameter setting
+parameter (see **P*arameter setting
 example*, in *Partner*).
 
 *At the receiver/server site*, the
@@ -132,8 +132,8 @@ type of transfer:
 
 ![](/Images/TransferCFT/Imp_send_rec_write_explicit.gif)
 
-Implementing a sender/requester transfer
-(write) - Default parameter setting
+****Implementing a sender/requester transfer
+(write) - Default parameter setting****
 
 ![](/Images/TransferCFT/Impl_send_rec_write_default.gif)
 

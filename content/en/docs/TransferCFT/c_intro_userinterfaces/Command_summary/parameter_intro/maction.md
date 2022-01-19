@@ -8,10 +8,10 @@
 
 #### CFTRECV, RECV
 
-\[ MACTION = { '  '
-| replace } \]
+****\[ MACTION = { '  '
+| replace } \]****
 
-Applicable only on Windows and z/OS environments. On Unix environments, files are systematically replaced.
+**Applicable only on Windows and z/OS environments. On Unix environments, files are systematically replaced.**
 
 When receiving a group of files, action for the files as they are deconcatenated. Used only in homogeneous mode.
 

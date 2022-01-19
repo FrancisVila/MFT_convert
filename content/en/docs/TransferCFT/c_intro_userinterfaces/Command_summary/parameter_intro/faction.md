@@ -15,12 +15,12 @@
 
 Action on the file after a send transfer:
 
-- NONE: No action on this file on completion
+- ****NONE****: No action on this file on completion
     of the transfer.
-- DELETE: Delete the file after transfer. Note the following specificities:
+- ****DELETE****: Delete the file after transfer. Note the following specificities:
     -   No delete occurs if you are using SELFNAME and the FNAME is set to a directory mask (for example, #dir is deleted, but #dir/\* is ignored).
     -   If a file is added to the directory while a transfer is in progress, neither this new file nor is the directory is deleted.
-- ERASE: erase the contents of the file
+- ****ERASE****: erase the contents of the file
     after the transfer ("End Of File" mark at the beginning of the
     file)
 - **ARCHIVE**: the source file is moved to the file name specified in the ARCHIVEFNAME parameter when the transfer is completed. If the transfer fails, the file is not moved. If the target file already exists, it is overwritten.
@@ -48,10 +48,10 @@ Action on a file before a receive transfer except when using RENAME or RETRYRENA
 If a receiver file with the same name already exists, Transfer CFT{{< TransferCFT/componentlongname  >}} performs
 one of the following actions:
 
-- VERIFY: checks that the file is empty before the transfer occurs
-- DELETE:
+- ****VERIFY****: checks that the file is empty before the transfer occurs
+- ****DELETE****:
     deletes the file before the transfer occurs
-- ERASE:
+- ****ERASE****:
     erases the contents of the file before the transfer occurs
 - **RENAME**: replaces the existing FNAME file after the transfer completes by renaming the WFNAME file (*Unix only*)
 - **RETRYRENAME**: Renames the file on transfer completion in the post-processing phase, and includes a configurable retry mechanism. See also [Post-transfer file renaming](../../../../app_integration_intro/spoolout).

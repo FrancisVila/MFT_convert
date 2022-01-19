@@ -10,9 +10,9 @@
 
 To configure the PassPort AM connection, set the UCONF parameters described
 in this section. From
-the Administration screen in the
-graphical user interface, access the *Unified Configuration* window. Double-click in the Unified
-Configuration window to begin editing parameters.
+the ****Administration**** screen in the
+graphical user interface, access the *Unified Configuration* window. Double-click in the **Unified
+Configuration** window to begin editing parameters.
 
 1. Define the connection to the PassPort AM server using the UCONF parameters in the following tables. You must define the parameters in the order listed.
 
@@ -27,7 +27,7 @@ Configuration window to begin editing parameters.
 | <div > am.passport.instance_id </div>  | Transfer CFT instance ID for PassPort AM <br/> • You must determine your Transfer CFT's PassPort instance name. If it does not match the instance name of **default**, you must add an instance with the correct name.<br/> • The passport.instance_id corresponds to the instance (An instance name is a unique identifier of the installed instance of the component. Check that PassPort and your Transfer CFT have the SAME instance name) of the CSD that is available in PassPort.<br/> • In PassPort, you can view this by selecting **Access** &gt; **Components** &gt; **Transfer CFT** and checking the screen display (default value: default (when you import a component, PassPort assigns it the instance name **default** )). |
 | <div > am.passport.login </div>  | <div > Transfer CFT login for PassPort AM. This user must exist in PassPort and have an Administrator role. This user represents an application user with which Transfer CFT makes requests. </div>  |
 | <div > am.passport.password </div>  | <div > Transfer CFT Instance ID Password for PassPort AM, see above. </div>  |
-| <div > am.passport.superuser </div>  | Enables users to perform any type of action without PassPort AM permission checks.<br/> You *must* set up at least one superuser. Doing so enables you to deactivate or change the PassPort AM connector configuration if the server is not responding.<br/> If the user's name for a session contains a space in the name, you must insert the backslash **\** character where the space occurs.<br/> ****Example****<br/> If you are defining the users "firstname lastname" and "johndoe" as superusers, you would set the am.passport.superuser parameter value to "firstname**\** lastname johndoe".<br/> So for this example, the command is:<br/> <code>CFTUTIL uconfset id = am.passport.superuser, value = "'firstname\ lastname johndoe'"</code> |
+| <div > am.passport.superuser </div>  | Enables users to perform any type of action without PassPort AM permission checks.<br/> You *must* set up at least one superuser. Doing so enables you to deactivate or change the PassPort AM connector configuration if the server is not responding.<br/> If the user's name for a session contains a space in the name, you must insert the backslash **\** character where the space occurs.<br/> ********Example********<br/> If you are defining the users "firstname lastname" and "johndoe" as superusers, you would set the am.passport.superuser parameter value to "firstname**\** lastname johndoe".<br/> So for this example, the command is:<br/> **<code>CFTUTIL uconfset id = am.passport.superuser, value = "'firstname\ lastname johndoe'"</code>** |
 | am.passport.use_ssl  | Enables SSL with PassPort AM.<br/> The server port is *not* the same as the default port when using SSL. |
 | am.passport.ca_cert  | Certification Authority (CA) public certificate to authenticate the PassPort AM server.  |
 | am.passport.csd_file  | Transfer CFT Component Security descriptor file for PassPort AM. The default value is $(cft.install_dir)/extras/PassPort/csd_Transfer_CFT.xml.  |

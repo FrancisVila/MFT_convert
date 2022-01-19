@@ -167,7 +167,7 @@ the Transfer CFT Copilot server. It can be used in interactive mode associated w
 (add, delete, and so on) or in batch mode, specifying each of the required
 commands (-G group –p passwd, and so on).
 
-Syntax
+****Syntax****
 
 Add a user group:
 
@@ -188,11 +188,11 @@ Display information on existing groups:
 This command displays information on a given group (if the -G option
 is used) or on all existing groups.
 
-Standard use
+****Standard use****
 
 `xfbadmgrp  add   | delete | modify | print | check | help`
 
-Advanced use
+****Advanced use****
 
 Various options can be used to make it easier to enter information or
 allow you to work in batch mode:
@@ -213,7 +213,7 @@ to the Transfer CFT Copilot server. It can be used in interactive mode associate
 a command (add, delete, and so on) or in batch mode, specifying each of
 the required commands (-G group -p passwd, and so on).
 
-Syntax
+****Syntax****
 
 Add a user. If the group does not exist, it is automatically created with the user
 login name.
@@ -238,27 +238,27 @@ is used) or on all existing users.
 
 `xfbadmusr print [-l <login>]: `
 
-Standard use
+****Standard use****
 
 `xfbadmusr add | delete | modify | print | check | help`
 
-Advanced use
+****Advanced use****
 
 You can use the following options to make it easier to enter information,
 or to work in batch mode:
 
-- -l
-    &lt; login >: Login name
-- -p
-    &lt; passwd >: Password
-- -u
-    &lt; UID >: User identifier - When set to AUTO, a UID is generated
+- ****-l
+    &lt; login >****: Login name
+- ****-p
+    &lt; passwd >****: Password
+- ****-u
+    &lt; UID >****: User identifier - When set to AUTO, a UID is generated
     automatically
-- -g
-    &lt; GID >: Group identifier - When set to AUTO, the GID is
+- ****-g
+    &lt; GID >****: Group identifier - When set to AUTO, the GID is
     generated automatically
 
-Example
+****Example****
 
 ```
 xfbadmusr add -l user1 -p thepassword -u AUTO -g AUTO
@@ -285,7 +285,7 @@ The *xvi* utility is used to update a conversion table.
 
 `xvi [-d | -a | -e | -l   <file> ] <table>`
 
-Standard use
+****Standard use****
 
 `xvi <table>: updates an existing, valid <table> (256 characters).`
 

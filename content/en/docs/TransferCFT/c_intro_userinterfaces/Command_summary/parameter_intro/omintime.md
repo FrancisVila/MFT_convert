@@ -8,8 +8,8 @@
 
 #### CFTTCP
 
-\[OMINTIME = { 00000000
-| N }\]
+****\[OMINTIME = { 00000000
+| N }\]****
 
 The authorized time slot for calls coming over this type of network.
 
@@ -22,8 +22,8 @@ make a call over this type of network.
 
 #### CFTPART
 
-\[OMINTIME = { 0
-| N }\]
+****\[OMINTIME = { 0
+| N }\]****
 
 The minimum time of
 the authorized time slot for calls coming for a partner.

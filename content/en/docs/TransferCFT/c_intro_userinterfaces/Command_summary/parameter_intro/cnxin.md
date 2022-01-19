@@ -8,7 +8,7 @@
 
 #### CFTTCP
 
-\[cnxin = { 2 | n }\]
+****\[cnxin = { 2 | n }\]****
 
 This parameter defines the maximum number of sessions for incoming connections.
 

@@ -23,8 +23,8 @@ CFTPARM object.
 
 Certain default template objects cannot be deleted. The template CFTSEND and CFTRECV objects can not be deleted if they are used by another configuration.
 
-Related
-topics
+****Related
+topics****
 
 - Command syntax
     [CFTSEND](../../../c_intro_userinterfaces/command_summary#CFTSEND)
@@ -215,8 +215,8 @@ Concerning the file parameters for the partner (Nxxxxx of SEND and CFTSEND):
 The example below illustrates the relationships to be established between the user SEND command
 and the CFTSEND and CFTPART parameter setting commands.
 
-Correspondence
-between the SEND command (file) and Transfer CFT{{< TransferCFT/componentshortname  >}} parameter setting
+****Correspondence
+between the SEND command (file) and Transfer CFT{{< TransferCFT/componentshortname  >}} parameter setting****
 
 If there is no CFTSEND command with an
 identifier ID = FI, the default characteristics indicated in the CFTSEND

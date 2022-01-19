@@ -8,8 +8,8 @@
 
 #### COPYFILE
 
-ITYPE = { '  '
-| character}
+****ITYPE = { '  '
+| character}****
 
 [PKICER](../../../../transport_security_start_here/certificates/pkiutil_cli_intro/using_the_pkicer_command) of the PKIUTIL utility, the input file type, which is operating
 system dependant.

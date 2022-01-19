@@ -37,7 +37,7 @@ When opening a new session to manage your Transfer CFT{{< TransferCFT/components
 
 ### Autocomplete command
 
-UNIX only
+****UNIX only****
 
 To simplify the use of cft commands, you can use the autocomplete feature when working in interactive mode. See [Autocomplete](../../c_intro_userinterfaces/about_cftutil/autocomplete).
 
@@ -253,7 +253,7 @@ Enter the operator command:
 /F <Transfer CFT{{< TransferCFT/componentshortname >}} Jobname>,SHUT FAST=YES
 ```
 
-**Force** Transfer CFT{{< TransferCFT/componentshortname  >}} **shut down**
+**Force** ****Transfer CFT****{{< TransferCFT/componentshortname  >}} **shut down**
 
 ```
 /F <Transfer CFT{{< TransferCFT/componentshortname >}} Jobname>,SHUT FAST=KILL

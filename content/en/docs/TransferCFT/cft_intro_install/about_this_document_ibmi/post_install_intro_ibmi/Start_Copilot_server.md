@@ -10,10 +10,10 @@ This section describes how to start the Transfer CFT Copilot server via either a
 
 ****Menu****
 
-1. Access the *Transfer CFT* Main Menu.  
+1. Access the *Transfer CFT* **Main Menu**.  
     In the Main Menu enter the command cft and press ****Enter**** to open the Transfer CFT menu.
 1. Enter **1** to access **Common CFT commands**.
-1. Select option 1 Start Copilot. The *Copilot server* menu is displayed.  
+1. Select option ****1 Start Copilot****. The *Copilot server* menu is displayed.  
 
 ****Command****
 
@@ -25,10 +25,10 @@ This section describes how to stop the Transfer CFT Copilot server via either a 
 
 ****Menu****
 
-1. Access the *Transfer CFT* Main Menu.  
+1. Access the *Transfer CFT* **Main Menu**.  
     In the Main Menu enter the command cft and press ****Enter**** to open the Transfer CFT menu.
 1. Enter **1** to access **Common CFT commands**.
-1. Select option 2 Stop Copilot.  
+1. Select option ****2**** ****Stop Copilot****.  
     Only the server waiting for a connection is stopped. Other servers that users have logged onto are shut down when the user logs off, or after a network timeout.
 
 ****Command****

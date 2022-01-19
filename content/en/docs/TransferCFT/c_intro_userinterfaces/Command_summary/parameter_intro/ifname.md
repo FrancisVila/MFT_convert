@@ -8,7 +8,7 @@
 
 #### COPYFILE
 
-\[IFNAME = filename \]    {STRING 512}
+****\[IFNAME = filename \]    {STRING 512}****
 
 Name of the input file to be copied.
 

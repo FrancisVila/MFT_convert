@@ -10,8 +10,8 @@
 
 #### CFTRECV, CFTSEND, RECV, SEND
 
-\[TRK = {<u>"value of TRKSEND/TRKRECV from CFTPARM</u>"
-| ALL | NO | SUMMARY | UNDEFINED}\]
+****\[TRK = {<u>"value of TRKSEND/TRKRECV from CFTPARM</u>"
+| ALL | NO | SUMMARY | UNDEFINED}\]****
 
 Specifies how much detail Transfer CFT{{< TransferCFT/componentshortname  >}} provides
 Sentinel about transfers. Transfer CFT{{< TransferCFT/componentshortname  >}} sends detail about the

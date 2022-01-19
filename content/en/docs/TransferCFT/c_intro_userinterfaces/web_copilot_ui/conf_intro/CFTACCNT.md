@@ -68,7 +68,7 @@ File switching takes place manually (SWITCH command) or when the number
 of statistical records equals 1000. The procedure initiated at the time
 switching occurs is located in the file designated by the EXEC parameter.
 
-TYPE = SYST
+****TYPE = SYST****
 
 ```
 CFTACCNT

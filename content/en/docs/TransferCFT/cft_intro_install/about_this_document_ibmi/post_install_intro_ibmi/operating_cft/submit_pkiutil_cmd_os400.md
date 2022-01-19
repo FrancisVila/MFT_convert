@@ -2,7 +2,7 @@
     "title": "About transport security and PKIUTIL commands",
     "linkTitle": "Transport security and PKIUTIL commands",
     "weight": "260"
-}This section describes SSL security parameters. For more information on transport security concepts, refer to the Security sub-book in the *Transfer* CFT documentation.
+}This section describes SSL security parameters. For more information on transport security concepts, refer to the **Security** sub-book in the *Transfer* **CFT** documentation.
 
 ## Certificates
 

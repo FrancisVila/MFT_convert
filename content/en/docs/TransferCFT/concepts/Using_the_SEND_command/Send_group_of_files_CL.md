@@ -68,15 +68,15 @@ If there are N files to be sent, a SEND IDF = ID\_EM, FNAME = #GROUP (or @GROUP)
     entry, which never triggers an actual transfer but is used locally to
     manage the group of files to be sent
     -   This virtual transfer is identified by a DIAGP code set to LIST\_FI,
-        when the catalog is queried. Its state is immediately set to K
+        when the catalog is queried. Its state is immediately set to ****K****
         in the catalog.
-    -   The generic entry is set to the T
-        or **X** state when all transfers have been set to **T** state (or **X** depending on the mode).
+    -   The generic entry is set to the ****T****
+        or **X** state when all transfers have been set to ******T****** state (or **X** depending on the mode).
     -   The post-processing procedure is activated when all files in
-        the group have been transferred (LIST\_FI entry set to the T
+        the group have been transferred (LIST\_FI entry set to the ****T****
         or **X** state, depending on the mode).
     -   If the group file does not exist or cannot be opened, the generic entry
-        remains set to the K state and
+        remains set to the ****K**** state and
         error message CFTT34E is returned.
     -   If one of the files in the group cannot be sent (for example an unknown file), the other transfers are not affected,
         but the generic entry for the group is not set to the **T** state (or **X** depending on the mode).
@@ -97,7 +97,7 @@ For the receiver:
 > file.
 > However, do not mix files and directories in the same indirection file.
 
-IBM i (OS/400)
+****IBM i (OS/400)****
 
 If your file contains the list of files to be sent, you must first create a REPORTS file in \*DATA format (\*SRC files contain a header and Transfer CFT{{< TransferCFT/componentlongname  >}} cannot use these).
 
@@ -165,7 +165,7 @@ Mandatory parameters for homogeneous sends include:
 | HP Nonstop  | Available  | Not supported  |
 
 
-Example
+****Example****
 
 An example of a homogeneous send in a Windows environment:
 
@@ -206,7 +206,7 @@ To force heterogeneous mode:
 1. Access the unified configuration utility using either [command line](../../../admin_intro/uconf/uconf_w_cftutil) or the UI.
 1. Set the following parameter to enable forced heterogeneous exchanges for group file transfers.
 
-****Unix/Windows****
+********Unix/Windows********
 
 
 | Parameter  | Default  | Description  |
@@ -300,7 +300,7 @@ operating system****
 
 ****![](/Images/TransferCFT/new_group_files.png)****
 
-Example
+****Example****
 
 In Windows, an example of a heterogeneous receive:
 
@@ -426,7 +426,7 @@ Parameter values:
 - CONTINUE (default): Keep the existing behavior, which creates as many transfer requests as there are lines in the input file.
 - ABORT: If the input file line is not a file, this gives the current transfer the status K diagi 132 diagp SNDINDFI, the generic transfer status is K diagi 200, and no other child requests are created.
 
-Catalog details
+****Catalog details****
 
 Simplified catalog view when set to CONTINUE
 

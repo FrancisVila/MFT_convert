@@ -5,7 +5,7 @@
 }This page describes the LISTPARM command. You can use this command
 to query Transfer CFT parameters.
 
-Command syntax: [LISTPARM](../../../command_summary#LISTPARM)
+****Command syntax: [LISTPARM](../../../command_summary#LISTPARM)****
 
 Use this command to query Transfer CFT parameters. The TYPE parameter selects the object type.
 
@@ -20,7 +20,7 @@ the execution report is written on the standard CFTUTIL program output.
 | <a href="../../../command_summary/parameter_intro/type">TYPE</a> | Defines the type of object to be selected.<br/> TYPE can take the predefined values indicated in the <a href="#Type_table">Type table</a>. |
 
 
-Example
+****Example****
 
 ```
 LISTPARM       TYPE

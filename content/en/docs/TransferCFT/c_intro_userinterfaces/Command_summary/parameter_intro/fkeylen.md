@@ -16,7 +16,7 @@ E****
 
 Key length (in bytes) of an indexed file.
 
-For a receiver:
+******For a receiver:******
 
 The default value is the value received from the protocol (PI 38) which
 is present if it has been defined by the requester. If this value is absent,
@@ -27,7 +27,7 @@ client can develop a file type EXIT or write an end-of-transfer procedure
 to use this information which can be recovered by the symbolic variable
 &FKEYLEN.
 
-For a sender:
+******For a sender:******
 
 Transfer CFT{{< TransferCFT/transfercftname  >}} sends this information, transported by the protocol in the
 PI 38, but does not use it. The indexed file is transferred in the form

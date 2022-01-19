@@ -8,8 +8,8 @@
 
 #### COPYILE
 
-\[ORECFM = {<u>IRECFM value</u> | F |
-V | U}\]
+****\[ORECFM = {<u>IRECFM value</u> | F |
+V | U}\]****
 
 Output record format:
 

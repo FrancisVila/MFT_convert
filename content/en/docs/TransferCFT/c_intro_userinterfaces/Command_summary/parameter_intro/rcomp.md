@@ -8,7 +8,7 @@
 
 #### CFTPROT
 
-\[RCOMP = { <u>see the table</u> | 15 } \]
+****\[RCOMP = { <u>see the table</u> | 15 } \]****
 
 Maximum authorized compression for receiving a file.
 This compression is negotiated between the sender and the receiver.
@@ -24,7 +24,7 @@ Default values are:
 | ODETTE  | 1  |
 
 
-See also [scomp](../scomp).
+See also ****[scomp](../scomp)****.
 
 For more information (usable values etc.), refer to the *Compression*
 topic.

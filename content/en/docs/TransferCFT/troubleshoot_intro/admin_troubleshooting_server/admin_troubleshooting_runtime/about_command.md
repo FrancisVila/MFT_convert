@@ -26,7 +26,7 @@ on which Transfer CFT is installed.
 | <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/key">KEY</a>  | Defines the number of keys that display.  |
 
 
-Example
+****Example****
 
 This command displays the following type of information:
 

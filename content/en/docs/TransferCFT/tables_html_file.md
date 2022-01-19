@@ -313,7 +313,7 @@
 
 | Parameter  | Automatic or default  | Description  | UCONF  |
 | --- | --- | --- | --- |
-| Key |   | Key for Transfer CFT. The key is stored in the $CFTDIRRUNTIME/conf/cft.key.<br/> Without the key you can install, but not start the product. |   |
+| Key |   | Key for Transfer CFT. The key is stored in the $CFTDIRRUNTIME/conf/cft.key.<br/> **Without the key you can install, but not start the product.** |   |
 | Catalog_File_Size  | @default= 10000  | Sets the default catalog size. | cft.cftcat.default_size  |
 | Communication_File_Size  | @default = 1000  | Sets the default communication file size.  | cft.cftcom.default_size  |
 | PESIT_Port  | @default = 1761  | The port number of the PeSiT protocol.<br/>  | samples.pesitany_sap.value  |
@@ -347,11 +347,11 @@
 | Parameter  | Automatic or default  | Description  | UCONF  |
 | --- | --- | --- | --- |
 | CG_Enable | @default = No | Enter Yes to enable Central Governance connectivity.  | cg.enable  |
-| CG_Host  |   | The Central Governance host address.<br/> If you enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field. | cg.host  |
-| CG_Port | @default = 12553  | Central Governance port.<br/> When CG is enabled, this cannot be empty. | cg.port  |
-| CG_Mutual_Port  | @default = 12554  | The Central Governance port for Mutual Authentication.<br/> If you enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field. | cg.mutual_auth_port  |
-| CG_RestAPI_Port  | @default = 8081  | Specify the port to use to communicate with Central Governance's REST API (this port is only used when am.type=cg).<br/> If you enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field. | cg.restapi_port  |
-| CG_SharedSecret  |   | Specify the shared secret, which is needed to register with the Central Governance server.<br/> If you enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field. | cg.shared_secret  |
+| CG_Host  |   | The Central Governance host address.<br/> **If you enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field.** | cg.host  |
+| CG_Port | @default = 12553  | Central Governance port.<br/> **When CG is enabled, this cannot be empty.** | cg.port  |
+| CG_Mutual_Port  | @default = 12554  | The Central Governance port for Mutual Authentication.<br/> **If you enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field.** | cg.mutual_auth_port  |
+| CG_RestAPI_Port  | @default = 8081  | Specify the port to use to communicate with Central Governance's REST API (this port is only used when am.type=cg).<br/> **If you enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field.** | cg.restapi_port  |
+| CG_SharedSecret  |   | Specify the shared secret, which is needed to register with the Central Governance server.<br/> **If you enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field.** | cg.shared_secret  |
 | CG_ConfigurationPolicy  |   | Specify Central Governance configuration policy to apply on the Transfer CFT instance.  | cg.configuration_policy  |
 | CG_Certificate_Path  | @default = $CFTDIRRUNTIME/conf/pki/passportCA.pem  | Specify Custom Certificate to authenticate Central Governance.  | N/A  |
 
@@ -362,7 +362,7 @@
 
 | Parameter  | Automatic or default  | Description  | UCONF  |
 | --- | --- | --- | --- |
-| Sentinel_Enable  | @default = No  | Set to Yes to enable Sentinel.<br/> Do not enable this if you have enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}. | sentinel.xfb.enable  |
+| Sentinel_Enable  | @default = No  | Set to Yes to enable Sentinel.<br/> **Do not enable this if you have enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}.** | sentinel.xfb.enable  |
 | Sentinel_Host  |   | Enter the Sentinel host address.  | sentinel.trkipaddr  |
 | Sentinel_Port  | @default= 1305  | Enter the Sentinel port.<br/> You do not need to define this field if you are registering Transfer CFT with Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}. | sentinel.trkipport  |
 | Sentinel_Log_Filter  | @default = EWF  | Sentinel Log Filter: (I)nformation, (W)arning, (E)rror, (F)atal Authorized characters are only I, W, E, F<br/> You can only use each letter once. | sentinel.xfb.log  |
@@ -674,7 +674,7 @@
 ============================== table nb count(45) ============================================
 
 
-| **Objet**  | Default name  |
+| **Objet**  | ****Default name****  |
 | --- | --- |
 | Parameters file  | _CFTPARM  |
 | Partners file  | _CFTPART  |
@@ -849,11 +849,11 @@
 | Parameter  | Automatic or default  | Description  | UCONF  |
 | --- | --- | --- | --- |
 | CG_Enable | @default = No | Enter Yes to enable Central Governance connectivity.  | cg.enable  |
-| CG_Host  |   | The Central Governance host address.<br/> If you enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field. | cg.host  |
-| CG_Port | @default = 12553  | The Central Governance port.<br/> If you enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field. | cg.port  |
-| CG_Mutual_Port  | @default = 12554  | The Central Governance port for Mutual Authentication.<br/> If you enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field. | cg.mutual_auth_port  |
-| CG_RestAPI_Port  | @default = 8081  | Specify the port to use to communicate with Central Governance's REST API (this port is only used when am.type=cg).<br/> If you enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field. | cg.restapi_port  |
-| CG_SharedSecret  |   | Specify the shared secret, which is needed to register with the Central Governance server.<br/> If you enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field. | cg.shared_secret  |
+| CG_Host  |   | The Central Governance host address.<br/> **If you enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field.** | cg.host  |
+| CG_Port | @default = 12553  | The Central Governance port.<br/> **If you enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field.** | cg.port  |
+| CG_Mutual_Port  | @default = 12554  | The Central Governance port for Mutual Authentication.<br/> **If you enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field.** | cg.mutual_auth_port  |
+| CG_RestAPI_Port  | @default = 8081  | Specify the port to use to communicate with Central Governance's REST API (this port is only used when am.type=cg).<br/> **If you enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field.** | cg.restapi_port  |
+| CG_SharedSecret  |   | Specify the shared secret, which is needed to register with the Central Governance server.<br/> **If you enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field.** | cg.shared_secret  |
 | CG_ConfigurationPolicy  |   | Specify Central Governance configuration policy to apply to the Transfer CFT instance.  | cg.configuration_policy  |
 | CG_Certificate_Path  | @default = $CFTDIRRUNTIME/conf/pki/passportCA.pem  | Specify the Custom Certificate to authenticate Central Governance.  | N/A  |
 
@@ -864,7 +864,7 @@
 
 | Parameter  | Automatic or default  | Description  | UCONF  |
 | --- | --- | --- | --- |
-| Sentinel_Enable  | @default = No  | Set to Yes to enable Sentinel.<br/> Do not enable this if you have enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}. | sentinel.xfb.enable  |
+| Sentinel_Enable  | @default = No  | Set to Yes to enable Sentinel.<br/> **Do not enable this if you have enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}.** | sentinel.xfb.enable  |
 | Sentinel_Host  |   | Enter the Sentinel host address.  | sentinel.trkipaddr  |
 | Sentinel_Port  | @default= 1305  | Enter the Sentinel port.<br/> You do not need to define this field if you are registering Transfer CFT with Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}. | sentinel.trkipport  |
 | Sentinel_Log_Filter  | @default = EWF  | Sentinel Log Filter: (I)nformation, (W)arning, (E)rror, (F)atal Authorized characters are only I, W, E, F<br/> You can only use each letter once. | sentinel.xfb.log  |
@@ -3279,10 +3279,10 @@
 ============================== table nb count(212) ============================================
 
 
-| Syntax | rc = cftxx (verb,&amp;ptr,param) |
+| ****Syntax**** | rc = cftxx (verb,&amp;ptr,param) |
 | --- | --- |
 | Element | Definition |
-| cftxx | cftai: simple Transfer CFT catalog querying services<br/> cftaix: extended Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog querying services<br/> cftau: transfer services with syntax analysis<br/> cftac: transfer services without syntax analysis |
+| cftxx | ****cftai****: simple Transfer CFT catalog querying services<br/> ****cftaix****: extended Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog querying services<br/> ****cftau****: transfer services with syntax analysis<br/> ****cftac****: transfer services without syntax analysis |
 | **verb** | Service requested |
 | ptr | Address of the internal control block |
 | param | Parameters specific to the requested service |
@@ -3519,8 +3519,8 @@
 | SELECT | Define selection criteria |
 | NEXT | Read next entry |
 | MODIFY | Modify catalog entry state |
-| SORT | cftaix only<br/> Sort the selected catalog entries |
-| DO | cftaix only<br/> Do the current selection and the requested sort in memory |
+| SORT | ****cftaix only****<br/> ****Sort the selected catalog entries**** |
+| DO | ****cftaix only****<br/> Do the current selection and the requested sort in memory |
 | CLOSE | Close catalog |
 
 
@@ -3531,10 +3531,10 @@
 | &lt;verb&gt; | &lt;param&gt; | Explanation |
 | --- | --- | --- |
 | OPEN | cat | Path name or logical name of the catalog file. If the name is blank, Transfer CFT uses a default name. |
-| SELECT<br/> and SELECT240 | &amp;cftsel | Selection criteria according to the format described in the "Selection data description" in the cftapi.h file.<br/> • cftsel230T for SELECT service<br/> • cftsel240T for SELECT240 service<br/> All the fields must be defined by left-aligned character strings. If a field is equal to binary zeros, it is considered not selective.<br/> This structure can contain:<br/> • The size of the selection criteria field (slength) and the size of the field supporting the catalog entry (clength) in order to avoid recompiling the application program if these two fields are extended.<br/> • The transfer start and end date (BDATE and EDATE) to select transfers performed between these two dates.<br/> • A field can be composed of a mask with the special characters "?" and *". The "?" character replaces any character. The "*" character replaces a character string of any length.<br /> <br /> Examples:<br /> A*D replaces ABCD, ABCED or AID<br /> A??D replaces ABCD, AXYD or AQZD<br /> *CD replaces ABECD, YXZCDor TYUICD<br /> ?CD replaces ACD, XCD or ZCD<br /> ?B* replaces ABCDEF, XBZWEO or *KBWXCV<br /> ???? replaces ABCD, XYZW or HGFD<br/> You should initialize the following:<br/> • The param field to binary zero before defining it<br/> • The slength and clength by "itoa()"<br/> cftaix only<br/> The selection is only taken into account at the time the DO service is called. |
-| NEXT<br/> and<br/> NEXT240 | &amp;cftcat | Next catalog entry according to the format described in the "Selection data description" in the cftapi.h file.<br/> • cftcatT for NEXT service<br/> • cftcat240T for NEXT240 service |
+| SELECT<br/> and SELECT240 | &amp;cftsel | Selection criteria according to the format described in the "**Selection data description**" in the ****cftapi.h**** file.<br/> • cftsel230T for SELECT service<br/> • cftsel240T for SELECT240 service<br/> All the fields must be defined by left-aligned character strings. If a field is equal to binary zeros, it is considered not selective.<br/> This structure can contain:<br/> • The size of the selection criteria field (slength) and the size of the field supporting the catalog entry (clength) in order to avoid recompiling the application program if these two fields are extended.<br/> • The transfer start and end date (BDATE and EDATE) to select transfers performed between these two dates.<br/> • A field can be composed of a mask with the special characters "?" and *". The "?" character replaces any character. The "*" character replaces a character string of any length.<br /> <br /> Examples:<br /> A*D replaces ABCD, ABCED or AID<br /> A??D replaces ABCD, AXYD or AQZD<br /> *CD replaces ABECD, YXZCDor TYUICD<br /> ?CD replaces ACD, XCD or ZCD<br /> ?B* replaces ABCDEF, XBZWEO or *KBWXCV<br /> ???? replaces ABCD, XYZW or HGFD<br/> You should initialize the following:<br/> • The param field to binary zero before defining it<br/> • The slength and clength by "itoa()"<br/> ****cftaix only****<br/> The selection is only taken into account at the time the DO service is called. |
+| NEXT<br/> and<br/> NEXT240 | &amp;cftcat | Next catalog entry according to the format described in the "**Selection data description**" in the ****cftapi.h**** file.<br/> • cftcatT for NEXT service<br/> • cftcat240T for NEXT240 service |
 | MODIFY | &amp;nstate | New state of a transfer to be placed in the catalog entry previously read:<br/> • ‘D’ at Disposal: only valid if the former state is H or K<br/> • ‘H’ Hold: only valid if the former state is D, C or K<br/> • ‘K’ Keep: only valid if the former state is D, C or H<br/> • ‘X’ eXecuted: only valid if the former state is T<br/> • ‘P’ Purge: deletes the catalog entry*. It is only valid if the current state is D, H, K, T or X |
-| SORT | param | cftaix only<br/> Sort options as described in the "Sort structure of the selected catalog entries" in the cftapi.h file.<br/> The function is only taken into account at the time the DO service is called. |
+| SORT | param | ****cftaix only****<br/> Sort options as described in the "**Sort structure of the selected catalog entries**" in the ****cftapi.h**** file.<br/> The function is only taken into account at the time the DO service is called. |
 | DO | " " |   |
 | CLOSE | " " |   |
 
@@ -3679,8 +3679,8 @@
 | &lt;verb&gt; | &lt;param&gt; | Explanation |
 | --- | --- | --- |
 | F-OPEN | D-CAT | Path name or logical name of the catalog file. If the name is blank, Transfer CFTI uses a default name. |
-| F-SELECT | Z-SEL | Selection criteria according to the format described in the "Selection data description" in the cft.apicop file. If a field is blank or equal to binary zeros, it is considered not selective.<br/> This field can contain:<br/> • the size of the selection criteria field (SLENTGTH) and the size of the field supporting the catalog entry (CLENGTH) in order to avoid recompiling the application program if these two fields are extended.<br/> • the transfer start and end date (BDATE and EDATE) to select transfers performed between these two dates.<br/> • a mask with the special characters "?" and *". The "?" character replaces any character. The "*" character replaces a character string of any length.<br /> <br /> Examples:<br /> A*D replaces ABCD, ABCED or AID<br /> A??D replaces ABCD, AXYD or AQZD<br /> *CD replaces ABECD, YXZCDor TYUICD<br /> ?CD replaces ACD, XCD or ZCD<br /> ?B* replaces ABCDEF, XBZWEO or *KBWXCV<br /> ???? replaces ABCD, XYZW or HGFD |
-| F-NEXT | Z-CAT | Next catalog entry according to the format described in the "Selection data description" in the cft.apicop file.<br/> The length of this field is defined by the SELECT service. See the CLENGTH field in the Selection data description. |
+| F-SELECT | Z-SEL | Selection criteria according to the format described in the "S**election data description"** in the ****cft.apicop**** file. If a field is blank or equal to binary zeros, it is considered not selective.<br/> This field can contain:<br/> • the size of the selection criteria field (SLENTGTH) and the size of the field supporting the catalog entry (CLENGTH) in order to avoid recompiling the application program if these two fields are extended.<br/> • the transfer start and end date (BDATE and EDATE) to select transfers performed between these two dates.<br/> • a mask with the special characters "?" and *". The "?" character replaces any character. The "*" character replaces a character string of any length.<br /> <br /> Examples:<br /> A*D replaces ABCD, ABCED or AID<br /> A??D replaces ABCD, AXYD or AQZD<br /> *CD replaces ABECD, YXZCDor TYUICD<br /> ?CD replaces ACD, XCD or ZCD<br /> ?B* replaces ABCDEF, XBZWEO or *KBWXCV<br /> ???? replaces ABCD, XYZW or HGFD |
+| F-NEXT | Z-CAT | Next catalog entry according to the format described in the "S**election data description**" in the ****cft.apicop**** file.<br/> The length of this field is defined by the SELECT service. See the CLENGTH field in the Selection data description. |
 | F-MODIFY | M-STATE | New state of a transfer to be placed in the catalog entry previously read:<br/> • ‘D’ at Disposal: only valid if the former state is H or K<br/> • ‘H’ Hold: only valid if the former state is D, C or K<br/> • ‘K’ Keep: only valid if the former state is D, C or H<br/> • ‘X’ eXecuted: only valid if the former state is T<br/> • ‘P’ Purge: deletes the catalog entry |
 | F-CLOSE |   | No &lt;param&gt; needed |
 
@@ -3705,7 +3705,7 @@
 |  - " -  | CAPI-SEL-FDATE | FDATE criterion incorrect |
 |  - " -  | CAPI-SEL-CDATE | CDATE criterion incorrect |
 |  - " -  | CAPI-SEL-BDATE | BDATE criterion incorrect |
-|  - " -  | CAPI-SEL-DATE | EDATE criterion incorrect |
+|  - " -  | CAPI-SEL-DATE | ****EDATE criterion incorrect**** |
 | **NEXT code only**  | CAPI-CAT-EOF | End of catalog file |
 |  - " -  | CAPI-CAT-READ | Catalog file read error |
 | **MODIFY code only**  | CAPI-MOD-OSTATE | State invalid |
@@ -3779,7 +3779,7 @@
 | &lt;verb&gt; | &lt;param&gt; | Explanation |
 | --- | --- | --- |
 | F-COM | D-COM | The COM command parameter structure is as follows: &lt;medium type&gt; = &lt;Medium name&gt;<br/> The medium type consists in an uppercase letter:<br/> • 'F' for file<br/> • 'T' for the TCP/IP synchronous medium<br/> • 'C' for the configuration file (ConfigFileName)<br/> The medium name is the:<br/> • Filename, if the medium type is 'F'<br/> • Name of the communication channel, if the medium type is 'T'<br/> • Name of the configuration file containing the medium of communication characteristics, if the medium type is C. |
-| F-GETINXFO | Z-XINF | Information about a transfer in the format described in the OAPIINF file. |
+| F-GETINXFO | Z-XINF | Information about a transfer in the format described in the ****OAPIINF**** file. |
 
 
 
@@ -4809,7 +4809,7 @@
 
 | <a href="../../../command_summary/parameter_intro/eerp">EERP</a> | Used to interpret the value of the ORIGINATOR and DESTINATOR fields contained in the EERP message, according to the protocol version.<br/> The End to End ResPonse service generates a message called EERP. This message informs the file sender that the data sent arrived correctly.<br/> The first version of the protocol (1986) specifies that:<br/> • the ORIGINATOR protocol field corresponds to the file sender<br/> • the DESTINATOR protocol field corresponds to the file receiver<br/> The second version (1991) specifies that:<br/> • the ORIGINATOR protocol field corresponds to the EERP sender (i.e. the file receiver)<br/> • the DESTINATOR protocol field corresponds to the EERP receiver (i.e. the file sender)<br/> Note: heck the consistency of the customized values from one end to another. If the sender and receiver have different versions, it is not possible to acknowledge the transfer. |
 | --- | --- |
-| <a href="../../../command_summary/parameter_intro/pad">PAD</a>  | *Deprecated in* Transfer CFT{{&lt; TransferCFT/componentlongname &gt;}}**3.9{{&lt; TransferCFT/releasenumber &gt;}}<br/> Option applying "SPECIAL LOGIC" to the data exchange buffers.<br/> This option is negotiated with the partner when the protocol session is established (in the SSID FPDU). If the option is set to NO for one of the partners, the "special logic" is not applied. |
+| <a href="../../../command_summary/parameter_intro/pad">PAD</a>  | *Deprecated in* **Transfer CFT**{{&lt; TransferCFT/componentlongname &gt;}}**3.9**{{&lt; TransferCFT/releasenumber &gt;}}<br/> Option applying "SPECIAL LOGIC" to the data exchange buffers.<br/> This option is negotiated with the partner when the protocol session is established (in the SSID FPDU). If the option is set to NO for one of the partners, the "special logic" is not applied. |
 | <a href="../../../command_summary/parameter_intro/rcredit">RCREDIT</a>  | Value of the "credit" (expressed as a number of "DATA" messages) proposed by Transfer CFT when it is server.<br/> This value is negotiated with the value proposed by the requester (see the SCREDIT parameter) when the protocol session is established. |
 | <a href="../../../command_summary/parameter_intro/resync">RESYNC</a>  | Option for restarting a transfer following an interruption.<br/> This option is negotiated with the partner when the connection is established: if the option is set to NO for one of the partners, transfer restarts are not managed. |
 | <a href="../../../command_summary/parameter_intro/rrusize">RRUSIZE</a> | Maximum size of NSDUs (Network Service Data Unit) being received.<br/> This parameter is negotiated with the partner (SRUSIZE parameter if Transfer CFT), the smallest value is selected as the size of NSDUs sent.<br/> Refer to the Transfer CFT <a href="../../../../protocols_start_here">Protocol topics</a> to optimize the definition of the value of this parameter. |
@@ -4831,7 +4831,7 @@
 | <a href="../../../command_summary/parameter_intro/hide99">HIDE99</a> | Optional parameter available only to PESIT protocol definition (TYPE=PESIT) using the ANY profile (PROFIL=ANY/CFT).<br/> • NO (Default value): no information inside PI99 (free message PI Code) is hidden<br/> • YES: hide private information carried by the protocol (physical local path of the file) |
 | <a href="../../../command_summary/parameter_intro/logon">LOGON</a><br/> Only in requester mode PeSIT E | Implementation of the pre-connection phase.<br/> According to the value of this parameter:<br/> • YES: this phase is implemented. The requester sends a 24-byte EBCDIC message as follows:<br/> • • byte 1 to 8: ‘PESIT ’ (PeSIT followed by 3 blank characters) (corresponding to the protocol used)<br/> • byte 9 to 16: requester identifier (NSPART of CFTPART)<br/> • byte 17 to 24: requester password (NSPASSW of CFTPART)<br/> <br/> • NO: this phase is not implemented: the requester does not send a message<br/> Note: The Transfer CFT server automatically adapts itself to the choice of the requesting partner to send a Logon message or not. |
 | <a href="../../../command_summary/parameter_intro/multart">MULTART</a><br/> Only in sender mode | Option to group several records of the file sent in a given FPDU (multi-record FPDUs).<br/> • in sender mode, MULTART = YES is recommended if the partner supports multi-record FPDUs<br/> The value MULTART = YES is PROHIBITED in this profile<br/> • in receiver mode, the Transfer CFT accepts multi-record FPDUs, regardless of the value of this parameter |
-| <a href="../../../command_summary/parameter_intro/pad">PAD</a> <br/> Only in requester mode CFT profile | *Deprecated in* Transfer CFT{{&lt; TransferCFT/componentlongname &gt;}}**3.9{{&lt; TransferCFT/releasenumber &gt;}}<br/> Use of the CRC (Cyclic Redundancy Checksum).<br/> This option is not negotiated: in server mode, Transfer CFT always adapts itself to the choice of the requesting partner.<br/> The PAD = YES option is mandatory for an access through a PAD. |
+| <a href="../../../command_summary/parameter_intro/pad">PAD</a> <br/> Only in requester mode CFT profile | *Deprecated in* **Transfer CFT**{{&lt; TransferCFT/componentlongname &gt;}}**3.9**{{&lt; TransferCFT/releasenumber &gt;}}<br/> Use of the CRC (Cyclic Redundancy Checksum).<br/> This option is not negotiated: in server mode, Transfer CFT always adapts itself to the choice of the requesting partner.<br/> The PAD = YES option is mandatory for an access through a PAD. |
 | <a href="../../../command_summary/parameter_intro/part">PART</a>  | List of the partners (maximum of four) for which a PeSIT session, where the transactional turn is cyclically opened..<br/> Inactive partners (result of the command INACT) are not taken into account. |
 | PROF  | PeSIT D or E protocol profile.<br/> The profile options are:<br/> • EXTERN profile: corresponds to the standardized definition of the PeSIT version D protocol<br/> • CFT profile: the PeSIT version D protocol, when the partner also has a Transfer CFT<br/> Its functionality level is greater than the PeSIT D EXTERN profile specifications,<br/> • ANY profile: corresponds to the standardized definition of the PeSIT version E protocol<br/> This profile includes the facilities of the CFT profile, as standard.<br/> Additional facilities are provided between two Transfer CFTs, while remaining in conformity with the PeSIT E standard. These facilities are based on the use of the PI 99 (free PI).<br/> • the DMZ profile (DeMilitarized Zone): corresponds to the normalized definition for the PeSIT protocol, version E E (refer to Managing the Turn)<br/> Note: In server mode, the PROF parameter can take either the EXTERN, CFT or ANY values: indeed, in server mode, the Transfer CFT automatically adapts itself to the profile proposed by the requesting partner. |
 | <a href="../../../command_summary/parameter_intro/rchkw">RCHKW</a> | Size of the receive mode synchronization point acknowledgement anticipation window, expressed as a number of synchronization points.<br/> Negotiated with the sender partner.<br/> RCHKW=0 means that synchronization points are not acknowledged.<br/> RCHKW=1 is equivalent to operation in half-duplex mode.<br/> On LU6.2 networks all non-null values will be forced to 1 during protocol negotiation. |
@@ -5264,7 +5264,7 @@
 | RENAMESEPARATOR  | string  | "." | This parameter only applies to the MOVE method.<br/> You can use no more than two characters from among the following:<br/> .[]()_-<br/> The first character defines the separator before the timestamp. The second one, when present, defines the separator after the timestamp.<br/> For example, using timestamp_separators "[]": - myfile is renamed myfile.[20131025] - myfile.txt is renamed myfile.[20131025].txt |
 | N/A in this version  | string  |   | Metadata used to control user changes.  |
 | USEFSEVENTS<br/> <br/> <a href="#Enable">More information</a> | Boolean  | No  | Set to YES to enable the file system events monitoring service to detect newly available files.  |
-| <a href="../../../command_summary/parameter_intro/userid">USERID</a>  | String  |   | *Available on UNIX and* Windows **<br/> Identifier for a user who can scan a folder. See the section, <a href="../../../../app_integration_intro/intro_folder_monitor/configure_folder_monitoring#Folder2">Folder monitoring using USERCTRL</a>. |
+| <a href="../../../command_summary/parameter_intro/userid">USERID</a>  | String  |   | *Available on UNIX and* **Windows** **<br/> Identifier for a user who can scan a folder. See the section, <a href="../../../../app_integration_intro/intro_folder_monitor/configure_folder_monitoring#Folder2">Folder monitoring using USERCTRL</a>. |
 
 
 
@@ -5885,7 +5885,7 @@
 | --- | --- |
 |   | Use the <code>CFTPROT TYPE = ODETTE </code>command to describe the ODETTE transfer protocol.  |
 | <a href="../../../command_summary/parameter_intro/eerp">EERP</a> | Used to interpret the value of the ORIGINATOR and DESTINATOR fields contained in the EERP message, according to the protocol version.<br/> The End to End ResPonse service generates a message called EERP. This message informs the file sender that the data sent arrived correctly.<br/> The first version of the protocol (1986) specifies that:<br/> • the ORIGINATOR protocol field corresponds to the file sender<br/> • the DESTINATOR protocol field corresponds to the file receiver<br/> The second version (1991) specifies that:<br/> • the ORIGINATOR protocol field corresponds to the EERP sender (i.e. the file receiver)<br/> • the DESTINATOR protocol field corresponds to the EERP receiver (i.e. the file sender)<br/> Note: heck the consistency of the customized values from one end to another. If the sender and receiver have different versions, it is not possible to acknowledge the transfer. |
-| <a href="../../../command_summary/parameter_intro/pad">PAD</a>  | *Deprecated in* Transfer CFT{{&lt; TransferCFT/componentlongname &gt;}} ** 3.9{{&lt; TransferCFT/releasenumber &gt;}}<br/> Option applying "SPECIAL LOGIC" to the data exchange buffers.<br/> This option is negotiated with the partner when the protocol session is established (in the SSID FPDU). If the option is set to NO for one of the partners, the "special logic" is not applied. |
+| <a href="../../../command_summary/parameter_intro/pad">PAD</a>  | *Deprecated in* **Transfer CFT**{{&lt; TransferCFT/componentlongname &gt;}} ** **3.9**{{&lt; TransferCFT/releasenumber &gt;}}<br/> Option applying "SPECIAL LOGIC" to the data exchange buffers.<br/> This option is negotiated with the partner when the protocol session is established (in the SSID FPDU). If the option is set to NO for one of the partners, the "special logic" is not applied. |
 | <a href="../../../command_summary/parameter_intro/rcredit">RCREDIT</a>  | Value of the "credit" (expressed as a number of "DATA" messages) proposed by Transfer CFT when it is server.<br/> This value is negotiated with the value proposed by the requester (see the SCREDIT parameter) when the protocol session is established. |
 | <a href="../../../command_summary/parameter_intro/resync">RESYNC</a>  | Option for restarting a transfer following an interruption.<br/> This option is negotiated with the partner when the connection is established: if the option is set to NO for one of the partners, transfer restarts are not managed. |
 | <a href="../../../command_summary/parameter_intro/rrusize">RRUSIZE</a> | Maximum size of NSDUs (Network Service Data Unit) being received.<br/> This parameter is negotiated with the partner (SRUSIZE parameter if Transfer CFT), the smallest value is selected as the size of NSDUs sent.<br/> Refer to the Transfer CFT <a href="../../../../protocols_start_here">Protocol topics</a> to optimize the definition of the value of this parameter. |
@@ -5909,7 +5909,7 @@
 | <a href="../../../command_summary/parameter_intro/hide99">HIDE99</a> | Optional parameter available only to PESIT protocol definition (TYPE=PESIT) using the ANY profile (PROFIL=ANY/CFT).<br/> • NO (Default value): no information inside PI99 (free message PI Code) is hidden<br/> • YES: hide private information carried by the protocol (physical local path of the file) |
 | <a href="../../../command_summary/parameter_intro/logon">LOGON</a><br/> Only in requester mode PeSIT E | Implementation of the pre-connection phase.<br/> According to the value of this parameter:<br/> **NO**: this phase is not implemented: the requester does not send a message<br/> **YES**: this phase is implemented. The requester sends a 24-byte EBCDIC message as follows:<br/> • QQQ_QQQ_QQQ_LIST, flattened yes - no<br/><br/> • byte 1 to 8: ‘PESIT ’ (PeSIT followed by 3 blank characters) (corresponding to the protocol used)<br/> • byte 9 to 16: requester identifier (NSPART of CFTPART)<br/> • byte 17 to 24: requester password (NSPASSW of CFTPART)<br/> Note: The Transfer CFT server automatically adapts itself to the choice of the requesting partner to send a Logon message or not. |
 | <a href="../../../command_summary/parameter_intro/multart">MULTART</a><br/> Only in sender mode | Option to group several records of the file sent in a given FPDU (multi-record FPDUs).<br/> • in sender mode, MULTART = YES is recommended if the partner supports multi-record FPDUs<br/> The value MULTART = YES is PROHIBITED in this profile<br/> • in receiver mode, the Transfer CFT accepts multi-record FPDUs, regardless of the value of this parameter |
-| <a href="../../../command_summary/parameter_intro/pad">PAD</a> <br/> Only in requester mode CFT profile | *Deprecated in* Transfer CFT{{&lt; TransferCFT/componentlongname &gt;}} ** 3.9{{&lt; TransferCFT/releasenumber &gt;}}<br/> Use of the CRC (Cyclic Redundancy Checksum).<br/> This option is not negotiated: in server mode, Transfer CFT always adapts itself to the choice of the requesting partner.<br/> The PAD = YES option is mandatory for an access through a PAD. |
+| <a href="../../../command_summary/parameter_intro/pad">PAD</a> <br/> Only in requester mode CFT profile | *Deprecated in* **Transfer CFT**{{&lt; TransferCFT/componentlongname &gt;}} ** **3.9**{{&lt; TransferCFT/releasenumber &gt;}}<br/> Use of the CRC (Cyclic Redundancy Checksum).<br/> This option is not negotiated: in server mode, Transfer CFT always adapts itself to the choice of the requesting partner.<br/> The PAD = YES option is mandatory for an access through a PAD. |
 | <a href="../../../command_summary/parameter_intro/part">PART</a>  | List of the partners (maximum of four) for which a PeSIT session, where the transactional turn is cyclically opened..<br/> Inactive partners (result of the command INACT) are not taken into account. |
 | PROF  | PeSIT D or E protocol profile.<br/> The profile options are:<br/> • SIT profile: the PeSIT is then used in the SIT network context.<br /> It is the same in PeSIT version D and version E.<br /> It provides synchronization point management but does not manage:<br/> QQQ_QQQ_QQQ_LIST<br/> • segmentation: the value of the SEGMENT parameter must be set to<br /> NO (SEGMENT = NO)<br/> • or multi-records: the value of the MULTART parameter must be set to<br /> NO (MULTART = NO)<br/> <br/> Note: A sender in the PeSIT SIT profile cannot segment a record sent in several data FPDUs or group several records sent in the same data FPDU<br/> • or compression: the RCOMP and SCOMP parameters are not applicable<br/> • or receive transfer requests<br/> • EXTERN profile: corresponds to the "non-SIT" (external to SIT network) standardized definition of the PeSIT version D protocol<br/> • CFT profile: the PeSIT version D protocol is used outside the context of the SIT network, the partner also having a Transfer CFT<br/> Its functionality level is greater than the PeSIT D EXTERN profile specifications,<br/> • ANY profile: corresponds to the "non-SIT" (external to SIT network) standardized definition of the PeSIT version E protocol<br/> This profile includes the facilities of the CFT profile, as standard.<br/> Additional facilities are provided between two Transfer CFTs, while remaining in conformity with the PeSIT E standard. These facilities are based on the use of the PI 99 (free PI).<br/> • the DMZ profile (DeMilitarized Zone): corresponds to the normalized "hors SIT" definition for the PeSIT protocol, version E E (refer to Managing the Turn)<br/> Note: In server mode, the PROF parameter can take either the EXTERN, CFT or ANY values (corresponding to the "non-SIT" profiles): indeed, in server mode, the Transfer CFT automatically adapts itself to the non-SIT profile proposed by the requesting partner. |
 | <a href="../../../command_summary/parameter_intro/rchkw">RCHKW</a> | Size of the receive mode synchronization point acknowledgement anticipation window, expressed as a number of synchronization points.<br/> Negotiated with the sender partner.<br/> RCHKW=0 means that synchronization points are not acknowledged.<br/> RCHKW=1 is equivalent to operation in half-duplex mode.<br/> On LU6.2 networks all non-null values will be forced to 1 during protocol negotiation. |
@@ -6157,7 +6157,7 @@
 ============================== table nb count(395) ============================================
 
 
-| Parameters | Description  |
+| ****Parameters**** | Description  |
 | --- | --- |
 | <a href="../../../command_summary/parameter_intro/id">ID</a>  | Partner or partner list identifier.<br/> Used to select a single partner or a set of partners, using the special wildcard character "*****".<br/> Example:<br/> ID = PART1: for the partner PART1 only<br /> ID = IB*: for all the partners whose identifier begins with "IB"<br /> ID = *: for all the partners |
 | <a href="../../../command_summary/parameter_intro/type">TYPE</a> | Defines the type of characteristics to be listed.<br/> TYPE can take the predefined values indicated in the Type table. |
@@ -6219,14 +6219,14 @@
 ============================== table nb count(399) ============================================
 
 
-| Parameter | Description |
+| ****Parameter**** | ****Description**** |
 | --- | --- |
 | CONTENT  | Filter to use on the messages written in the active LOG file.  |
 | DATETIMEMAX  | Use to display catalog transfers that happened on or before this end date and time according to the transfer record creation (DATEK, TIMEK).  |
 | DATETIMEMIN  | Use to display catalog transfers that happened on or after this start date and time according to the transfer record creation (DATED, TIMED).  |
 | DIAGI  | Define the diagi catalog transfer field display:<br/> • DIAGI=0: select transfers that have a DIAGI=0<br/> • DIAGI=ERROR: select transfers that have a DIAGI other than 0<br/> • DIAGI=* : select all transfers (default value) |
 | DIRECT  | Transfer direction of the requests.  |
-| EMPTY | Use this parameter to replace the default output of Empty values, usually empty string values.<br/> The default string ANY means that EMPTY is specified in the model. The default EMPTY used is '-' if it is not defined in the model. |
+| EMPTY | Use this parameter to replace the default output of ****Empty**** values, usually empty string values.<br/> The default string ****ANY**** means that EMPTY is specified in the model. The default EMPTY used is '-' if it is not defined in the model. |
 | FILE  | Enter file name  |
 | FMODEL | Complete name or logical name of the XML model file.<br/> This parameter default value is fixed.  |
 | FOUT  | ****PeSIT**** You can extract Transfer CFT messages from the Catalog file, and forward these messages to a specified file using the fout parameter.<br/> The message length for PeSIT ANY profile, when forwarding a message from one CFT to another, has increased from 512 to 4096 bytes. The S/RRUSIZE must be greater than the maximum message length and message information combined (for example, 4127).<br/> The fout parameter enables you to redirect output to a specified file. |
@@ -6325,15 +6325,15 @@
 
 | Heading  | Description  |
 | --- | --- |
-| 1  | Identifier of the partner described in the commands CFTPART (corresponding to the ID parameter) or CFTDEST (one of the PART in the broadcasting list)  |
-| 2  | Transfer state description<br /> The DTSA characters mean:<br/> • **D**irection = S/R (Send/Receive)<br/> • **T**ype = F/M/R (File/Message/Reply)<br/> • **S**tate = D/C/H/K/T/X Disp/Current/Hold/Keep/Terminated/eXecuted)<br/> • **A**ck = A (Acknowledge) |
-| 3  | File identifier (IDF) for a file transfer or message identifier (IDM).  |
-| 4  | Transfer identifier (IDT)  |
-| 5  | If the transfer involves:<br/> • a file: number of records to be sent<br/> • a message: message text truncated to 21 characters |
-| 6  | If the transfer involves:<br/> • a file: number of records sent<br/> • a message: remainder of the message text truncated to 21 characters |
-| 7  | Transfer CFT internal diagnostic code<br /> For a transfer with an error, this field is defined with the Transfer CFT internal diagnostic code (DIAGI) relative to this error<br /> For a correctly completed transfer, this field is set to zero **(1)**  |
-| 8  | Protocol diagnostic code<br /> If the entry concerned is not a generic entry:<br/> • for a transfer with an error, this field is defined with the protocol diagnostic code (DIAGP) relevant to this error **(2)**<br/> • for a correctly completed transfer, this field indicates the obtained compression factor which is documented with the following format: • CP NONE: transfer terminated correctly with no "on line" compression requested<br/> • CP xx%: transfer terminated correctly with a compression factor of xx%<br/> <br/> • for a delayed transfer, this field is defined with:<br/> • • hh:mm:ss: if sent the same day<br/> • dd/mm/yy: if sent the following days<br/> <br/> If the entry concerned is a generic entry, this field is defined with one of the following values:<br/> • RECV ALL: generic entry for a global receive request for all the files with a given IDF<br/> • RECV MSK: generic entry for a global receive request for IDFs with "wildcards"<br/> • MIN CYC: generic entry for cyclic transfers, period expressed in minutes<br/> • DAY CYC: generic entry for cyclic transfers, period expressed in days<br/> • MON CYC: generic entry for cyclic transfers, period expressed in months<br/> • DIFFUS: generic entry for a broadcasting<br/> • COLLECT: generic entry for a collection |
-| 9  | Identifier of the application (IDA) associated with this transfer  |
+| ****1 **** | Identifier of the partner described in the commands CFTPART (corresponding to the ID parameter) or CFTDEST (one of the PART in the broadcasting list)  |
+| ****2 **** | Transfer state description<br /> The DTSA characters mean:<br/> • **D**irection = S/R (Send/Receive)<br/> • **T**ype = F/M/R (File/Message/Reply)<br/> • **S**tate = D/C/H/K/T/X Disp/Current/Hold/Keep/Terminated/eXecuted)<br/> • **A**ck = A (Acknowledge) |
+| ****3 **** | File identifier (IDF) for a file transfer or message identifier (IDM).  |
+| ****4 **** | Transfer identifier (IDT)  |
+| ****5 **** | If the transfer involves:<br/> • a file: number of records to be sent<br/> • a message: message text truncated to 21 characters |
+| ****6 **** | If the transfer involves:<br/> • a file: number of records sent<br/> • a message: remainder of the message text truncated to 21 characters |
+| ****7 **** | Transfer CFT internal diagnostic code<br /> For a transfer with an error, this field is defined with the Transfer CFT internal diagnostic code (DIAGI) relative to this error<br /> For a correctly completed transfer, this field is set to zero **(1)**  |
+| ****8 **** | Protocol diagnostic code<br /> If the entry concerned is not a generic entry:<br/> • for a transfer with an error, this field is defined with the protocol diagnostic code (DIAGP) relevant to this error **(2)**<br/> • for a correctly completed transfer, this field indicates the obtained compression factor which is documented with the following format: • CP NONE: transfer terminated correctly with no "on line" compression requested<br/> • CP xx%: transfer terminated correctly with a compression factor of xx%<br/> <br/> • for a delayed transfer, this field is defined with:<br/> • • hh:mm:ss: if sent the same day<br/> • dd/mm/yy: if sent the following days<br/> <br/> If the entry concerned is a generic entry, this field is defined with one of the following values:<br/> • RECV ALL: generic entry for a global receive request for all the files with a given IDF<br/> • RECV MSK: generic entry for a global receive request for IDFs with "wildcards"<br/> • MIN CYC: generic entry for cyclic transfers, period expressed in minutes<br/> • DAY CYC: generic entry for cyclic transfers, period expressed in days<br/> • MON CYC: generic entry for cyclic transfers, period expressed in months<br/> • DIFFUS: generic entry for a broadcasting<br/> • COLLECT: generic entry for a collection |
+| ****9 **** | Identifier of the application (IDA) associated with this transfer  |
 
 
 
@@ -6557,7 +6557,7 @@
 | --- | --- |
 | <a href="../../../command_summary/parameter_intro/idf">IDF</a> | Model file identifier. |
 | <a href="../../../command_summary/parameter_intro/idtu">IDTU</a> | Local transfer counter identifier. |
-| <a href="../../../command_summary/parameter_intro/part">PART</a><br/> (Mandatory) | Identifier of the partner. |
+| <a href="../../../command_summary/parameter_intro/part">PART</a><br/> **(Mandatory)** | Identifier of the partner. |
 
 
 
@@ -6596,7 +6596,7 @@
 | Parameter  | Description  |
 | --- | --- |
 | <a href="../../../command_summary/parameter_intro/blknum">BLKNUM</a>  | Catalog block number. If the values '*' or ' ' are used then all transfers are selected regardless of the block that they belong to. |
-| <a href="../../../command_summary/parameter_intro/direct">DIRECT</a>  | Transfer direction for the requests in question.<br/> The possible values are:<br/> • BOTH: (default) takes both send transfers and receive transfers into account<br/> • RECV: limits the action to receive transfers<br/> • SEND: limits the action to send transfers |
+| <a href="../../../command_summary/parameter_intro/direct">DIRECT</a>  | Transfer direction for the requests in question.<br/> The possible values are:<br/> • ****BOTH****: (default) takes both send transfers and receive transfers into account<br/> • ****RECV****: limits the action to receive transfers<br/> • ****SEND****: limits the action to send transfers |
 | <a href="../../../command_summary/parameter_intro/force">FORCE</a>  | Indicates whether a request, that was not executed during its time slot should be forced to immediately restart. |
 | <a href="../../../command_summary/parameter_intro/ida">IDA</a> | Local identifier of the transfer assigned by the user or user application.<br/> Several catalog entries may be associated with a given IDA. There is no default value. |
 | <a href="../../../command_summary/parameter_intro/idf">IDF</a>  | Model file identifier.<br/> Several catalog entries may be associated with a given IDF. There is no default value. |
@@ -7869,7 +7869,7 @@
 ============================== table nb count(511) ============================================
 
 
-| MVS, VMS | This parameter is mandatory if the receiver file is a version file (in particular for operation in the open mode and when the sender sends an NFNAME corresponding to a GDG name). |
+| ****MVS, VMS**** | This parameter is mandatory if the receiver file is a version file (in particular for operation in the open mode and when the sender sends an NFNAME corresponding to a GDG name). |
 | --- | --- |
 
 
@@ -8758,10 +8758,10 @@
 | <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/ida">IDA</a>  | Local transfer identifier assigned by the user or user application. The maximum length is 64 characters. |
 | <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/idm">IDM</a>  | Message identifier. The value of this identifier is unrestricted. |
 | <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/idu">IDT</a>  | Identifier of the original transfer acknowledged by this message. |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/msg">MSG</a> | Message |
-| **<a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/part">PART</a> ** | Transfer partner identifier. |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/pri">PRI</a> | Request selection priority. |
-| **<a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/type">TYPE</a> = REPLY** | Characterizes a reply send transfer. |
+| ****<a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/msg">MSG</a>**** | Message |
+| ******<a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/part">PART</a> ****** | Transfer partner identifier. |
+| ****<a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/pri">PRI</a>**** | Request selection priority. |
+| ******<a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/type">TYPE</a> = REPLY****** | Characterizes a reply send transfer. |
 | Other parameters  | For optional parameters common to SEND: see the <a href="../../../c_intro_userinterfaces/command_summary#SEND">SEND</a> command.  |
 
 
@@ -8785,8 +8785,8 @@
 | Topic  | Description  |
 | --- | --- |
 | <a href="create_transfer_environment_start_here">Creating the transfer environment</a> | This topic lists the parameters involved when creating the file transfer environment. |
-| <a href="write_transfer_modes">Write transfer modes</a> | Describes the two write transfer modes, Open and Closed. |
-| <a href="implicit_transfer_modes">Implicit transfer modes</a> | Describes the two read transfer implicit send modes, Open and Closed. |
+| <a href="write_transfer_modes">Write transfer modes</a> | Describes the two write transfer modes, **Open** and **Closed**. |
+| <a href="implicit_transfer_modes">Implicit transfer modes</a> | Describes the two read transfer implicit send modes, **Open** and **Closed**. |
 | <a href="model_and_physical_file_concepts">Model and Physical file concepts</a> | This topic introduces the concepts of Model File Identifiers, IDF, and Physical Files. |
 | <a href="establishing_model_file_identifiers">Establishing model file identifiers</a> | Describes the mechanisms for establishing a correspondence between identifiers, based on the concept of a NIDF network identifier conveyed over the network. |
 
@@ -9066,7 +9066,7 @@
 
 | ID = string1..32 | Unique local identifier of the certificate to be created, replaced or deleted. |
 | --- | --- |
-| [CHECK = YES | NO] | Certificate check during import: this option is only applicable for a user or intermediate authority certificate.<br/> A check is performed:<br/> • To establish whether the root or intermediate authority certificate exists in the local database<br/> • On the certificate signature<br/> • To determine whether the public key matches the private key (if the private key is to be imported)<br/> Command line only |
+| [CHECK = YES | NO] | Certificate check during import: this option is only applicable for a user or intermediate authority certificate.<br/> A check is performed:<br/> • To establish whether the root or intermediate authority certificate exists in the local database<br/> • On the certificate signature<br/> • To determine whether the public key matches the private key (if the private key is to be imported)<br/> **Command line only** |
 | [COMMENT = string1..64] | Comment associated with the certificate: for the CREATE or REPLACE operations only. |
 | IDATA  | Source as base64 or PEM data instead of a file. If you use PKIUTIL IDATA, you cannot also use INAME, and vice versa.  |
 | IKDATA  | Source as base64 or PEM data instead of a file. If you use PKIUTIL IKDATA, you cannot also use IKNAME, and vice versa. |
@@ -9313,9 +9313,9 @@
 
 | Key/certificate standard  | Exported file name  |
 | --- | --- |
-| PGP Public Keyring | useridpacket_pub.asc |
-| PGP Secret Keyring and Public Keyring | useridpacket_sec.asc and useridpacket_pub.asc |
-| X.509 Certificate | certificate alias.der |
+| PGP Public Keyring | **useridpacket**_pub.asc |
+| PGP Secret Keyring and Public Keyring | **useridpacket**_sec.asc and **useridpacket**_pub.asc |
+| X.509 Certificate | **certificate alias.**der |
 
 
 
@@ -9539,7 +9539,7 @@
 | <div > am.passport.instance_id </div>  | Transfer CFT instance ID for PassPort AM <br/> • You must determine your Transfer CFT's PassPort instance name. If it does not match the instance name of **default**, you must add an instance with the correct name.<br/> • The passport.instance_id corresponds to the instance (An instance name is a unique identifier of the installed instance of the component. Check that PassPort and your Transfer CFT have the SAME instance name) of the CSD that is available in PassPort.<br/> • In PassPort, you can view this by selecting **Access** &gt; **Components** &gt; **Transfer CFT** and checking the screen display (default value: default (when you import a component, PassPort assigns it the instance name **default** )). |
 | <div > am.passport.login </div>  | <div > Transfer CFT login for PassPort AM. This user must exist in PassPort and have an Administrator role. This user represents an application user with which Transfer CFT makes requests. </div>  |
 | <div > am.passport.password </div>  | <div > Transfer CFT Instance ID Password for PassPort AM, see above. </div>  |
-| <div > am.passport.superuser </div>  | Enables users to perform any type of action without PassPort AM permission checks.<br/> You *must* set up at least one superuser. Doing so enables you to deactivate or change the PassPort AM connector configuration if the server is not responding.<br/> If the user's name for a session contains a space in the name, you must insert the backslash **\** character where the space occurs.<br/> ****Example****<br/> If you are defining the users "firstname lastname" and "johndoe" as superusers, you would set the am.passport.superuser parameter value to "firstname**\** lastname johndoe".<br/> So for this example, the command is:<br/> <code>CFTUTIL uconfset id = am.passport.superuser, value = "'firstname\ lastname johndoe'"</code> |
+| <div > am.passport.superuser </div>  | Enables users to perform any type of action without PassPort AM permission checks.<br/> You *must* set up at least one superuser. Doing so enables you to deactivate or change the PassPort AM connector configuration if the server is not responding.<br/> If the user's name for a session contains a space in the name, you must insert the backslash **\** character where the space occurs.<br/> ********Example********<br/> If you are defining the users "firstname lastname" and "johndoe" as superusers, you would set the am.passport.superuser parameter value to "firstname**\** lastname johndoe".<br/> So for this example, the command is:<br/> **<code>CFTUTIL uconfset id = am.passport.superuser, value = "'firstname\ lastname johndoe'"</code>** |
 | am.passport.use_ssl  | Enables SSL with PassPort AM.<br/> The server port is *not* the same as the default port when using SSL. |
 | am.passport.ca_cert  | Certification Authority (CA) public certificate to authenticate the PassPort AM server.  |
 | am.passport.csd_file  | Transfer CFT Component Security descriptor file for PassPort AM. The default value is $(cft.install_dir)/extras/PassPort/csd_Transfer_CFT.xml.  |
@@ -9775,7 +9775,7 @@
 | RENAMESEPARATOR  | string  | "." | This parameter only applies to the MOVE method.<br/> You can use no more than two characters from among the following:<br/> .[]()_-<br/> The first character defines the separator before the timestamp. The second one, when present, defines the separator after the timestamp.<br/> For example, using timestamp_separators "[]": - myfile is renamed myfile.[20131025] - myfile.txt is renamed myfile.[20131025].txt |
 | N/A in this version  | string  |   | Metadata used to control user changes.  |
 | USEFSEVENTS<br/> <br/> <a href="../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftfolder#Enable">More information</a> | Boolean  | No  | Set to YES to enable the file system events monitoring service to detect newly available files.  |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/userid">USERID</a>  | String  |   | *Available on UNIX and* Windows **<br/> Identifier for a user who can scan a folder. See the section, <a href="#Folder2">Folder monitoring using USERCTRL</a>. |
+| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/userid">USERID</a>  | String  |   | *Available on UNIX and* **Windows** **<br/> Identifier for a user who can scan a folder. See the section, <a href="#Folder2">Folder monitoring using USERCTRL</a>. |
 
 
 
@@ -10081,10 +10081,10 @@
 ============================== table nb count(655) ============================================
 
 
-| Syntax | rc = cftxx (verb,&amp;ptr,param) |
+| ****Syntax**** | rc = cftxx (verb,&amp;ptr,param) |
 | --- | --- |
 | Element | Definition |
-| cftxx | cftai: simple Transfer CFT catalog querying services<br/> cftaix: extended Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog querying services<br/> cftau: transfer services with syntax analysis<br/> cftac: transfer services without syntax analysis |
+| cftxx | ****cftai****: simple Transfer CFT catalog querying services<br/> ****cftaix****: extended Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog querying services<br/> ****cftau****: transfer services with syntax analysis<br/> ****cftac****: transfer services without syntax analysis |
 | **verb** | Service requested |
 | ptr | Address of the internal control block |
 | param | Parameters specific to the requested service |
@@ -10321,8 +10321,8 @@
 | SELECT | Define selection criteria |
 | NEXT | Read next entry |
 | MODIFY | Modify catalog entry state |
-| SORT | cftaix only<br/> Sort the selected catalog entries |
-| DO | cftaix only<br/> Do the current selection and the requested sort in memory |
+| SORT | ****cftaix only****<br/> ****Sort the selected catalog entries**** |
+| DO | ****cftaix only****<br/> Do the current selection and the requested sort in memory |
 | CLOSE | Close catalog |
 
 
@@ -10333,10 +10333,10 @@
 | &lt;verb&gt; | &lt;param&gt; | Explanation |
 | --- | --- | --- |
 | OPEN | cat | Path name or logical name of the catalog file. If the name is blank, Transfer CFT uses a default name. |
-| SELECT<br/> and SELECT240 | &amp;cftsel | Selection criteria according to the format described in the "Selection data description" in the cftapi.h file.<br/> • cftsel230T for SELECT service<br/> • cftsel240T for SELECT240 service<br/> All the fields must be defined by left-aligned character strings. If a field is equal to binary zeros, it is considered not selective.<br/> This structure can contain:<br/> • The size of the selection criteria field (slength) and the size of the field supporting the catalog entry (clength) in order to avoid recompiling the application program if these two fields are extended.<br/> • The transfer start and end date (BDATE and EDATE) to select transfers performed between these two dates.<br/> • A field can be composed of a mask with the special characters "?" and *". The "?" character replaces any character. The "*" character replaces a character string of any length.<br /> <br /> Examples:<br /> A*D replaces ABCD, ABCED or AID<br /> A??D replaces ABCD, AXYD or AQZD<br /> *CD replaces ABECD, YXZCDor TYUICD<br /> ?CD replaces ACD, XCD or ZCD<br /> ?B* replaces ABCDEF, XBZWEO or *KBWXCV<br /> ???? replaces ABCD, XYZW or HGFD<br/> You should initialize the following:<br/> • The param field to binary zero before defining it<br/> • The slength and clength by "itoa()"<br/> cftaix only<br/> The selection is only taken into account at the time the DO service is called. |
-| NEXT<br/> and<br/> NEXT240 | &amp;cftcat | Next catalog entry according to the format described in the "Selection data description" in the cftapi.h file.<br/> • cftcatT for NEXT service<br/> • cftcat240T for NEXT240 service |
+| SELECT<br/> and SELECT240 | &amp;cftsel | Selection criteria according to the format described in the "**Selection data description**" in the ****cftapi.h**** file.<br/> • cftsel230T for SELECT service<br/> • cftsel240T for SELECT240 service<br/> All the fields must be defined by left-aligned character strings. If a field is equal to binary zeros, it is considered not selective.<br/> This structure can contain:<br/> • The size of the selection criteria field (slength) and the size of the field supporting the catalog entry (clength) in order to avoid recompiling the application program if these two fields are extended.<br/> • The transfer start and end date (BDATE and EDATE) to select transfers performed between these two dates.<br/> • A field can be composed of a mask with the special characters "?" and *". The "?" character replaces any character. The "*" character replaces a character string of any length.<br /> <br /> Examples:<br /> A*D replaces ABCD, ABCED or AID<br /> A??D replaces ABCD, AXYD or AQZD<br /> *CD replaces ABECD, YXZCDor TYUICD<br /> ?CD replaces ACD, XCD or ZCD<br /> ?B* replaces ABCDEF, XBZWEO or *KBWXCV<br /> ???? replaces ABCD, XYZW or HGFD<br/> You should initialize the following:<br/> • The param field to binary zero before defining it<br/> • The slength and clength by "itoa()"<br/> ****cftaix only****<br/> The selection is only taken into account at the time the DO service is called. |
+| NEXT<br/> and<br/> NEXT240 | &amp;cftcat | Next catalog entry according to the format described in the "**Selection data description**" in the ****cftapi.h**** file.<br/> • cftcatT for NEXT service<br/> • cftcat240T for NEXT240 service |
 | MODIFY | &amp;nstate | New state of a transfer to be placed in the catalog entry previously read:<br/> • ‘D’ at Disposal: only valid if the former state is H or K<br/> • ‘H’ Hold: only valid if the former state is D, C or K<br/> • ‘K’ Keep: only valid if the former state is D, C or H<br/> • ‘X’ eXecuted: only valid if the former state is T<br/> • ‘P’ Purge: deletes the catalog entry*. It is only valid if the current state is D, H, K, T or X |
-| SORT | param | cftaix only<br/> Sort options as described in the "Sort structure of the selected catalog entries" in the cftapi.h file.<br/> The function is only taken into account at the time the DO service is called. |
+| SORT | param | ****cftaix only****<br/> Sort options as described in the "**Sort structure of the selected catalog entries**" in the ****cftapi.h**** file.<br/> The function is only taken into account at the time the DO service is called. |
 | DO | " " |   |
 | CLOSE | " " |   |
 
@@ -10481,8 +10481,8 @@
 | &lt;verb&gt; | &lt;param&gt; | Explanation |
 | --- | --- | --- |
 | F-OPEN | D-CAT | Path name or logical name of the catalog file. If the name is blank, Transfer CFTI uses a default name. |
-| F-SELECT | Z-SEL | Selection criteria according to the format described in the "Selection data description" in the cft.apicop file. If a field is blank or equal to binary zeros, it is considered not selective.<br/> This field can contain:<br/> • the size of the selection criteria field (SLENTGTH) and the size of the field supporting the catalog entry (CLENGTH) in order to avoid recompiling the application program if these two fields are extended.<br/> • the transfer start and end date (BDATE and EDATE) to select transfers performed between these two dates.<br/> • a mask with the special characters "?" and *". The "?" character replaces any character. The "*" character replaces a character string of any length.<br /> <br /> Examples:<br /> A*D replaces ABCD, ABCED or AID<br /> A??D replaces ABCD, AXYD or AQZD<br /> *CD replaces ABECD, YXZCDor TYUICD<br /> ?CD replaces ACD, XCD or ZCD<br /> ?B* replaces ABCDEF, XBZWEO or *KBWXCV<br /> ???? replaces ABCD, XYZW or HGFD |
-| F-NEXT | Z-CAT | Next catalog entry according to the format described in the "Selection data description" in the cft.apicop file.<br/> The length of this field is defined by the SELECT service. See the CLENGTH field in the Selection data description. |
+| F-SELECT | Z-SEL | Selection criteria according to the format described in the "S**election data description"** in the ****cft.apicop**** file. If a field is blank or equal to binary zeros, it is considered not selective.<br/> This field can contain:<br/> • the size of the selection criteria field (SLENTGTH) and the size of the field supporting the catalog entry (CLENGTH) in order to avoid recompiling the application program if these two fields are extended.<br/> • the transfer start and end date (BDATE and EDATE) to select transfers performed between these two dates.<br/> • a mask with the special characters "?" and *". The "?" character replaces any character. The "*" character replaces a character string of any length.<br /> <br /> Examples:<br /> A*D replaces ABCD, ABCED or AID<br /> A??D replaces ABCD, AXYD or AQZD<br /> *CD replaces ABECD, YXZCDor TYUICD<br /> ?CD replaces ACD, XCD or ZCD<br /> ?B* replaces ABCDEF, XBZWEO or *KBWXCV<br /> ???? replaces ABCD, XYZW or HGFD |
+| F-NEXT | Z-CAT | Next catalog entry according to the format described in the "S**election data description**" in the ****cft.apicop**** file.<br/> The length of this field is defined by the SELECT service. See the CLENGTH field in the Selection data description. |
 | F-MODIFY | M-STATE | New state of a transfer to be placed in the catalog entry previously read:<br/> • ‘D’ at Disposal: only valid if the former state is H or K<br/> • ‘H’ Hold: only valid if the former state is D, C or K<br/> • ‘K’ Keep: only valid if the former state is D, C or H<br/> • ‘X’ eXecuted: only valid if the former state is T<br/> • ‘P’ Purge: deletes the catalog entry |
 | F-CLOSE |   | No &lt;param&gt; needed |
 
@@ -10507,7 +10507,7 @@
 |  - " -  | CAPI-SEL-FDATE | FDATE criterion incorrect |
 |  - " -  | CAPI-SEL-CDATE | CDATE criterion incorrect |
 |  - " -  | CAPI-SEL-BDATE | BDATE criterion incorrect |
-|  - " -  | CAPI-SEL-DATE | EDATE criterion incorrect |
+|  - " -  | CAPI-SEL-DATE | ****EDATE criterion incorrect**** |
 | **NEXT code only**  | CAPI-CAT-EOF | End of catalog file |
 |  - " -  | CAPI-CAT-READ | Catalog file read error |
 | **MODIFY code only**  | CAPI-MOD-OSTATE | State invalid |
@@ -10581,7 +10581,7 @@
 | &lt;verb&gt; | &lt;param&gt; | Explanation |
 | --- | --- | --- |
 | F-COM | D-COM | The COM command parameter structure is as follows: &lt;medium type&gt; = &lt;Medium name&gt;<br/> The medium type consists in an uppercase letter:<br/> • 'F' for file<br/> • 'T' for the TCP/IP synchronous medium<br/> • 'C' for the configuration file (ConfigFileName)<br/> The medium name is the:<br/> • Filename, if the medium type is 'F'<br/> • Name of the communication channel, if the medium type is 'T'<br/> • Name of the configuration file containing the medium of communication characteristics, if the medium type is C. |
-| F-GETINXFO | Z-XINF | Information about a transfer in the format described in the OAPIINF file. |
+| F-GETINXFO | Z-XINF | Information about a transfer in the format described in the ****OAPIINF**** file. |
 
 
 
@@ -10824,98 +10824,98 @@
 
 | Field | Explanation |
 | --- | --- |
-| mtype | Transfer stage<br /> The possible values are:<br/> • 0 (ALLOC_TYP) before the file is allocated<br/> • 1 (OPEN_TYP) before the file is opened<br/> • 2 (TRANS_TYP) before the start of the transfer<br/> • 3 (DATA_TYP) before a record is sent or after it is received<br/> • 4 (CHECK_TYP) after a synchronization point<br/> • 5 (RESTART_TYP) before repositioning<br/> • 6 (DTEND_TYP) before the end of the file<br/> • 7 (CLOSE_TYP) before the file is closed<br/> • 8 (ENDTR_TYP) before the end of the transfer<br/> • 9 (ABORT_TYP) after a transfer interruption  |
-| masc  | Mask for selecting stages<br /> This field comprises 16 bytes; each byte can take the value 0 or 1 and is associated with a stage:<br/> • Byte 0 =&gt; ALLOC_TYP<br/> • Byte 1 =&gt; OPEN_TYP<br/> • Byte 2 =&gt; TRANS_TYP<br/> • Byte 3 =&gt; DATA_TYP<br/> • Byte 4 =&gt; CHECK_TYP<br/> • Byte 5 =&gt; RESTART_TYP<br/> • Byte 6 =&gt; DTEND_TYP<br/> • Byte 7 =&gt; CLOSE_TYP<br/> • Byte 8 =&gt; ENDTR_TYP<br/> • Byte 9 =&gt; ABORT_TYP<br/> • Bytes 10 to 15 =&gt; Reserved<br/> Byte 0 always equals 1.<br/> If you set a byte to 1, it means that you want to take control during the associated stage<br /> The value of the field mtype indicates the rank of the byte associated with the stage |
-| access  | File access managements under the control of:<br/> • Transfer CFT if set to 0<br /> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} takes charge of all operations; you can, however, change certain features of the file (name, size, format, etc.) at the allocation and opening stages<br/> • The user if set to 1<br /> You are responsible for all operations performed on the file: allocation, opening, read/write, closing, de-allocation |
-| retsync | The return is:<br/> • 0 : synchronous<br /> The user function processes the stage and returns control to the interface.<br/> • 1: asynchronous<br /> The user function returns control to the interface before processing the stage (deferred processing). The transfer is suspended and the interface waits for an end of processing message from the user.<br/> As the user does not yet have the information or tools required to use the possibility of an asynchronous return, the return will always be synchronous  |
-| ret1 | Return code:<br/> • 0 = processing ok<br/> • 9 = refusal and end of transfer<br/> Other values are defined depending on the transfer stage. For more information, refer to the <a href="../using_file_exit_comm_area">Using the Communication Structure</a>. |
-| ret2 | Error message.<br /> This message appears in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog in the DIAGP field (protocol diagnosis). |
-| us_sem | Reserved |
-| us_ctx | Reserved |
-| idexit  | EXIT identifier |
-| exname | User name that must correspond to the value of the exaref parameter of the **exfini** function. |
-| parmexit | User exit parameter |
-| version | Exit version either V24 or higher |
-| language | Language used by the user program:<br/> • C: C language<br/> • O: COBOL |
-| reserv | Size of the user working area that must correspond to the value of the RESERV parameter of the CFTEXIT command |
-| etrace | Reserved |
-| waittask | EXIT task authorized maximum inactivity time (in minutes)<br /> It must correspond to the value of the WAITTASK parameter of the CFTEXIT command.<br /> If set to 1441, the EXIT task is permanent. |
-| part | Partner local identifier  |
-| idf  | File logical identifier |
-| nidf  | File network identifier |
-| idt | Transfer identifier |
-| direct | Transfer direction:<br/> • S: Send<br/> • R: Receive |
-| mode  | Mode<br/> • R: Requester<br/> • S: Server |
-| relance | The possible values are:<br/> • 1: Restart<br/> • 2: Do not restart |
-| prot | Communication protocol |
-| prof | PeSIT only<br/> Profile |
-| spart | Partner sending the file  |
-| rpart | Partner receiving the file |
-| suser | User sending the file |
-| ruser | User receiving the file |
-| fpassw | Password associated with the file |
-| sappl | Application sending the file |
-| rappl | Application receiving the file  |
-| userid | User identifier |
-| groupid | Identifier of the group to which the user belongs  |
-| exec | Name of the end-of-transfer procedure  |
-| fdate | Date associated with the file  |
-| ftime | Time associated with the file |
-| fdisp | File availability  |
-| faction | Action on the file  |
-| state | Transfer state |
-| parm | Private parameter  |
-| comment | Comment |
-| fname | File name  |
-| fksize | Key size |
-| fkloc | Key position  |
-| flrecl | Record size |
-| fblksize | Block size  |
-| frecfm | Record format  |
-| frecfmx | z/OS (MVS) only<br/> Record extended format |
-| fspace | File allocation size |
-| ftype | File type |
-| fcode | Data code |
-| forg | File organization |
-| facc | Access method |
-| fsyst | Operating system  |
-| nfname | File network name |
-| nfver | Version  |
-| nlrecl | Record size  |
-| nblksize | Block size |
-| nrecfm | Record format |
-| nrecfmx | Extended record format (z/OS / MVS)  |
-| nspace | File allocation size |
-| ntype | File type  |
-| ncode | Data code  |
-| norg | File organization  |
-| nsyst | Operating system  |
-| ncomp | Data compression |
-| fcars | Number of bytes written  |
-| frecs | Number of records written  |
-| ecars | Number of bytes before compression and after decompression  |
-| nrecs | Number of records sent  |
-| rpos | Value of last synchronization point  |
-| notify | Notification  |
-| msg | User message |
-| ldata | Length of data sent  |
-| idtu | Local transfer counter identifier |
-| cMode | SSL mode Client/Server |
-| cAuthPolicy | SSL auth Anonymous/Simple/Double |
-| bCipher | SSL cipher suite |
-| sParm | SSL command free parameters |
-| sRemoteUserDn | Remote User certificate Dn |
-| sRemoteIssuerDn | Remote Issuer Dn |
-| sRemoteCaId | Remote CA Alias |
-| sUserCId | User Certificate Alias |
-| sCertFname | File including Remote certificate |
-| sProf | SSL profil Id. |
-| sRemoteSerial | Serial Number |
-| ExitFree | Free Area between all EXITs |
-| nspart | Network first sender partner name |
-| nrpart | Network last receiver partner name |
-| XferCycleId | CycleId of trace occurences |
-| XferObjectcId | Name of the XFB transfer trace class |
+| ****mtype**** | Transfer stage<br /> The possible values are:<br/> • 0 (ALLOC_TYP) before the file is allocated<br/> • 1 (OPEN_TYP) before the file is opened<br/> • 2 (TRANS_TYP) before the start of the transfer<br/> • 3 (DATA_TYP) before a record is sent or after it is received<br/> • 4 (CHECK_TYP) after a synchronization point<br/> • 5 (RESTART_TYP) before repositioning<br/> • 6 (DTEND_TYP) before the end of the file<br/> • 7 (CLOSE_TYP) before the file is closed<br/> • 8 (ENDTR_TYP) before the end of the transfer<br/> • 9 (ABORT_TYP) after a transfer interruption  |
+| ****masc****  | Mask for selecting stages<br /> This field comprises 16 bytes; each byte can take the value 0 or 1 and is associated with a stage:<br/> • Byte 0 =&gt; ALLOC_TYP<br/> • Byte 1 =&gt; OPEN_TYP<br/> • Byte 2 =&gt; TRANS_TYP<br/> • Byte 3 =&gt; DATA_TYP<br/> • Byte 4 =&gt; CHECK_TYP<br/> • Byte 5 =&gt; RESTART_TYP<br/> • Byte 6 =&gt; DTEND_TYP<br/> • Byte 7 =&gt; CLOSE_TYP<br/> • Byte 8 =&gt; ENDTR_TYP<br/> • Byte 9 =&gt; ABORT_TYP<br/> • Bytes 10 to 15 =&gt; Reserved<br/> Byte 0 always equals 1.<br/> If you set a byte to 1, it means that you want to take control during the associated stage<br /> The value of the field mtype indicates the rank of the byte associated with the stage |
+| ****access **** | File access managements under the control of:<br/> • Transfer CFT if set to 0<br /> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} takes charge of all operations; you can, however, change certain features of the file (name, size, format, etc.) at the allocation and opening stages<br/> • The user if set to 1<br /> You are responsible for all operations performed on the file: allocation, opening, read/write, closing, de-allocation |
+| ****retsync**** | The return is:<br/> • 0 : synchronous<br /> The user function processes the stage and returns control to the interface.<br/> • 1: asynchronous<br /> The user function returns control to the interface before processing the stage (deferred processing). The transfer is suspended and the interface waits for an end of processing message from the user.<br/> As the user does not yet have the information or tools required to use the possibility of an asynchronous return, the return will always be synchronous  |
+| ****ret1**** | Return code:<br/> • 0 = processing ok<br/> • 9 = refusal and end of transfer<br/> Other values are defined depending on the transfer stage. For more information, refer to the <a href="../using_file_exit_comm_area">Using the Communication Structure</a>. |
+| ****ret2**** | Error message.<br /> This message appears in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog in the DIAGP field (protocol diagnosis). |
+| ****us_sem**** | Reserved |
+| ****us_ctx**** | Reserved |
+| ****idexit **** | EXIT identifier |
+| ****exname**** | User name that must correspond to the value of the exaref parameter of the **exfini** function. |
+| ****parmexit**** | User exit parameter |
+| ****version**** | Exit version either V24 or higher |
+| ****language**** | Language used by the user program:<br/> • C: C language<br/> • O: COBOL |
+| ****reserv**** | Size of the user working area that must correspond to the value of the RESERV parameter of the CFTEXIT command |
+| ****etrace**** | Reserved |
+| ****waittask**** | EXIT task authorized maximum inactivity time (in minutes)<br /> It must correspond to the value of the WAITTASK parameter of the CFTEXIT command.<br /> If set to 1441, the EXIT task is permanent. |
+| ****part**** | Partner local identifier  |
+| ****idf **** | File logical identifier |
+| ****nidf **** | File network identifier |
+| ****idt**** | Transfer identifier |
+| ****direct**** | Transfer direction:<br/> • S: Send<br/> • R: Receive |
+| ****mode **** | Mode<br/> • R: Requester<br/> • S: Server |
+| ****relance**** | The possible values are:<br/> • 1: Restart<br/> • 2: Do not restart |
+| ****prot**** | Communication protocol |
+| ****prof**** | ****PeSIT only****<br/> Profile |
+| ****spart**** | Partner sending the file  |
+| ****rpart**** | Partner receiving the file |
+| ****suser**** | User sending the file |
+| ****ruser**** | User receiving the file |
+| ****fpassw**** | Password associated with the file |
+| ****sappl**** | Application sending the file |
+| ****rappl**** | Application receiving the file  |
+| ****userid**** | User identifier |
+| ****groupid**** | Identifier of the group to which the user belongs  |
+| ****exec**** | Name of the end-of-transfer procedure  |
+| ****fdate**** | Date associated with the file  |
+| ****ftime**** | Time associated with the file |
+| ****fdisp**** | File availability  |
+| ****faction**** | Action on the file  |
+| ****state**** | Transfer state |
+| ****parm**** | Private parameter  |
+| ****comment**** | Comment |
+| ****fname**** | File name  |
+| ****fksize**** | Key size |
+| ****fkloc**** | Key position  |
+| ****flrecl**** | Record size |
+| ****fblksize**** | Block size  |
+| ****frecfm**** | Record format  |
+| ****frecfmx**** | ****z/OS (MVS) only****<br/> Record extended format |
+| ****fspace**** | File allocation size |
+| ****ftype**** | File type |
+| ****fcode**** | Data code |
+| ****forg**** | File organization |
+| ****facc**** | Access method |
+| ****fsyst**** | Operating system  |
+| ****nfname**** | File network name |
+| ****nfver**** | Version  |
+| ****nlrecl**** | Record size  |
+| ****nblksize**** | Block size |
+| ****nrecfm**** | Record format |
+| ****nrecfmx**** | Extended record format (z/OS / MVS)  |
+| ****nspace**** | File allocation size |
+| ****ntype**** | File type  |
+| ****ncode**** | Data code  |
+| ****norg**** | File organization  |
+| ****nsyst**** | Operating system  |
+| ****ncomp**** | Data compression |
+| ****fcars**** | Number of bytes written  |
+| ****frecs**** | Number of records written  |
+| ****ecars**** | Number of bytes before compression and after decompression  |
+| ****nrecs**** | Number of records sent  |
+| ****rpos**** | Value of last synchronization point  |
+| ****notify**** | Notification  |
+| ****msg**** | User message |
+| ****ldata**** | Length of data sent  |
+| ****idtu**** | Local transfer counter identifier |
+| ****cMode**** | SSL mode Client/Server |
+| ****cAuthPolicy**** | SSL auth Anonymous/Simple/Double |
+| ****bCipher**** | SSL cipher suite |
+| ****sParm**** | SSL command free parameters |
+| ****sRemoteUserDn**** | Remote User certificate Dn |
+| ****sRemoteIssuerDn**** | Remote Issuer Dn |
+| ****sRemoteCaId**** | Remote CA Alias |
+| ****sUserCId**** | User Certificate Alias |
+| ****sCertFname**** | File including Remote certificate |
+| ****sProf**** | SSL profil Id. |
+| ****sRemoteSerial**** | Serial Number |
+| ****ExitFree**** | Free Area between all EXITs |
+| ****nspart**** | Network first sender partner name |
+| ****nrpart**** | Network last receiver partner name |
+| ****XferCycleId**** | CycleId of trace occurences |
+| ****XferObjectcId**** | Name of the XFB transfer trace class |
 
 
 
@@ -12104,7 +12104,7 @@
 ============================== table nb count(733) ============================================
 
 
-| Field | Explanation |
+| ****Field**** | ****Explanation**** |
 | --- | --- |
 | version  | Interface version number<br/> The current version number is "0130". |
 | idexit  | EXIT task identifier |
@@ -15248,7 +15248,7 @@
 | --- | --- |
 | <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/idf">IDF</a> | Model file identifier. |
 | <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/idtu">IDTU</a> | Local transfer counter identifier. |
-| <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/part">PART</a><br/> (Mandatory) | Identifier of the partner. |
+| <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/part">PART</a><br/> **(Mandatory)** | Identifier of the partner. |
 
 
 
@@ -17134,7 +17134,7 @@
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI42E"></span><span id="CFTI43I"></span>CFTI43I Attention: The Transfer CFT license expires in n days<br/> CFTI43I Attention: The Transfer CFT license expires in n days |
 | --- | --- |
 | Explanation | There are 7 days remaining on the license key for Transfer CFT. |
-| Action  | To obtain a new key:<br/> • For an existing installation, use the command cftutil about to retrieve your system information. The **ABOUT** command displays the Transfer CFT product, host, and key information, and characteristics of the platform on which Transfer CFT is installed.<br/> • Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.<br/> QQQ_QQQ_QQQ_LIST<br/> • For a US key, contact: fulfillment@us.axway.com<br/> • For an EMEA or APAC key, contact: product.key@axway.com<br/> <br/> • Provide the hostname and system information for the installed or updated Transfer CFT.<br/> To apply the key:<br/> To apply the license key from the Axway Fulfillment team, either:<br/> • Enter the key directly.<br/> • Enter the key(s) in the indirection file.<br/> <blockquote> **Note**<br/> When working in multi-node you must have one key per node and host.<br/> </blockquote> See the *Apply a license key* section in the Transfer CFT Installation Guide that corresponds with your OS for details. |
+| Action  | To obtain a new key:<br/> • For an existing installation, use the command ****cftutil about**** to retrieve your system information. The **ABOUT** command displays the Transfer CFT product, host, and key information, and characteristics of the platform on which Transfer CFT is installed.<br/> • Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.<br/> QQQ_QQQ_QQQ_LIST<br/> • For a US key, contact: fulfillment@us.axway.com<br/> • For an EMEA or APAC key, contact: product.key@axway.com<br/> <br/> • Provide the hostname and system information for the installed or updated Transfer CFT.<br/> To apply the key:<br/> To apply the license key from the Axway Fulfillment team, either:<br/> • Enter the key directly.<br/> • Enter the key(s) in the indirection file.<br/> <blockquote> **Note**<br/> When working in multi-node you must have one key per node and host.<br/> </blockquote> See the *Apply a license key* section in the Transfer CFT Installation Guide that corresponds with your OS for details. |
 
 
 
@@ -17144,7 +17144,7 @@
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTI42E"></span><span id="CFTI43W"></span>CFTI43W Attention: The Transfer CFT license expires in n days<br/> CFTI43W Attention: The Transfer CFT license expires in n days |
 | --- | --- |
 | Explanation | There are fewer than 7 days remaining on the license key for Transfer CFT. |
-| Action  | To obtain a new key:<br/> • For an existing installation, use the command cftutil about to retrieve your system information. The **ABOUT** command displays the Transfer CFT product, host, and key information, and characteristics of the platform on which Transfer CFT is installed.<br/> • Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.<br/> QQQ_QQQ_QQQ_LIST<br/> • For a US key, contact: fulfillment@us.axway.com<br/> • For an EMEA or APAC key, contact: product.key@axway.com<br/> <br/> • Provide the hostname and system information for the installed or updated Transfer CFT.<br/> To apply the key:<br/> To apply the license key from the Axway Fulfillment team, either:<br/> • Enter the key directly.<br/> • Enter the key(s) in the indirection file.<br/> <blockquote> **Note**<br/> When working in multi-node you must have one key per node and host.<br/> </blockquote> See the *Apply a license key* section in the Transfer CFT Installation Guide that corresponds with your OS for details. |
+| Action  | To obtain a new key:<br/> • For an existing installation, use the command ****cftutil about**** to retrieve your system information. The **ABOUT** command displays the Transfer CFT product, host, and key information, and characteristics of the platform on which Transfer CFT is installed.<br/> • Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.<br/> QQQ_QQQ_QQQ_LIST<br/> • For a US key, contact: fulfillment@us.axway.com<br/> • For an EMEA or APAC key, contact: product.key@axway.com<br/> <br/> • Provide the hostname and system information for the installed or updated Transfer CFT.<br/> To apply the key:<br/> To apply the license key from the Axway Fulfillment team, either:<br/> • Enter the key directly.<br/> • Enter the key(s) in the indirection file.<br/> <blockquote> **Note**<br/> When working in multi-node you must have one key per node and host.<br/> </blockquote> See the *Apply a license key* section in the Transfer CFT Installation Guide that corresponds with your OS for details. |
 
 
 
@@ -17154,7 +17154,7 @@
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTI42E"></span><span id="CFTI43E"></span>CFTI43E Attention: The Transfer CFT license has expired<br/> CFTI43E Attention: The Transfer CFT license has expired |
 | --- | --- |
 | Explanation | The Transfer CFT license key is no longer valid. |
-| Action  | To obtain a new key:<br/> • For an existing installation, use the command cftutil about to retrieve your system information. The **ABOUT** command displays the Transfer CFT product, host, and key information, and characteristics of the platform on which Transfer CFT is installed.<br/> • Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.<br/> QQQ_QQQ_QQQ_LIST<br/> • For a US key, contact: fulfillment@us.axway.com<br/> • For an EMEA or APAC key, contact: product.key@axway.com<br/> <br/> • Provide the hostname and system information for the installed or updated Transfer CFT.<br/> To apply the key:<br/> To apply the license key from the Axway Fulfillment team, either:<br/> • Enter the key directly.<br/> • Enter the key(s) in the indirection file.<br/> <blockquote> **Note**<br/> When working in multi-node you must have one key per node and host.<br/> </blockquote> See the *Apply a license key* section in the Transfer CFT Installation Guide that corresponds with your OS for details. |
+| Action  | To obtain a new key:<br/> • For an existing installation, use the command ****cftutil about**** to retrieve your system information. The **ABOUT** command displays the Transfer CFT product, host, and key information, and characteristics of the platform on which Transfer CFT is installed.<br/> • Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.<br/> QQQ_QQQ_QQQ_LIST<br/> • For a US key, contact: fulfillment@us.axway.com<br/> • For an EMEA or APAC key, contact: product.key@axway.com<br/> <br/> • Provide the hostname and system information for the installed or updated Transfer CFT.<br/> To apply the key:<br/> To apply the license key from the Axway Fulfillment team, either:<br/> • Enter the key directly.<br/> • Enter the key(s) in the indirection file.<br/> <blockquote> **Note**<br/> When working in multi-node you must have one key per node and host.<br/> </blockquote> See the *Apply a license key* section in the Transfer CFT Installation Guide that corresponds with your OS for details. |
 
 
 
@@ -21274,14 +21274,14 @@
 
 | Code  | Description  |
 | --- | --- |
-| 00 | Connection request rejected by the network or break caused by the remote partner |
-| 01 | Time-out for a connection request. The called party is probably not connected to the network. |
-| 02 | Insufficient resources (other than memory) |
-| 03 | Insufficient memory |
-| 04 | The network access point reference passed to the connection is not valid |
-| 08 | Invalid parameter in TCP request sent |
-| 09 | Other cause of rejection |
-| 43 | Invalid local or remote address |
+| ****00**** | Connection request rejected by the network or break caused by the remote partner |
+| ****01**** | Time-out for a connection request. The called party is probably not connected to the network. |
+| ****02**** | Insufficient resources (other than memory) |
+| ****03**** | Insufficient memory |
+| ****04**** | The network access point reference passed to the connection is not valid |
+| ****08**** | Invalid parameter in TCP request sent |
+| ****09**** | Other cause of rejection |
+| ****43**** | Invalid local or remote address |
 
 
 

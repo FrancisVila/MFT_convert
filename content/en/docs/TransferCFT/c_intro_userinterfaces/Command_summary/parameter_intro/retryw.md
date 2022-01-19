@@ -8,14 +8,14 @@
 
 #### CFTTCP
 
-\[RETRYW = { <u>1</u> | n }\]
+****\[RETRYW = { <u>1</u> | n }\]****
 
 The time interval (in minutes) between reconnection attempts.
 
-- 1
+- ****1****
     : default value
 - any other value
-    from 0 to 32767
+    from ****0**** to ****32767****
 
 When specifying multiple hosts in CFTTCP and PROTs/SAPs in CFTPART, Transfer CFT first retries the host and then the PROT/SAP.
 

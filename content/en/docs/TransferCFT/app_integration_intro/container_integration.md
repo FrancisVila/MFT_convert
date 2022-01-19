@@ -84,13 +84,13 @@ When using a container environment however, you cannot use batch mode since Tran
 - REST API
 - Folder monitoring
 
-Application invokes Transfer CFT REST APIs            ![](/Images/TransferCFT/trigger_restapi.png)
+****Application invokes Transfer CFT REST APIs            ![](/Images/TransferCFT/trigger_restapi.png)****
 
  
 
  
 
-Folder monitoring              ![](/Images/TransferCFT/foldermonitoring_trigger.png)
+****Folder monitoring              ![](/Images/TransferCFT/foldermonitoring_trigger.png)****
 
  
 
@@ -108,4 +108,4 @@ The application and Transfer CFT run in different containers. Therefore, for pos
 
  
 
-The application monitors a directory                  ![](/Images/TransferCFT/foldermonitoring_container.png)
+****The application monitors a directory                  ![](/Images/TransferCFT/foldermonitoring_container.png)****

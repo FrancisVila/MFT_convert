@@ -8,7 +8,7 @@
 
 #### CFTPARM
 
-\[RCVALLER = { STOP | CONTINUE }\]
+****\[RCVALLER = { STOP | CONTINUE }\]****
 
 Action to perform if an error occurs when receiving available files
 (with the FILE= ALL option).

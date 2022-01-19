@@ -8,8 +8,8 @@
 
 #### MQUERY, Object = cache
 
-NAME = {<u>CAT</u>
-| COMMAND | CRON | DMZ | STAT}
+****NAME = {<u>CAT</u>
+| COMMAND | CRON | DMZ | STAT}****
 
 Name of the component to be queried.
 This parameter can be set to:
@@ -30,9 +30,9 @@ The name of the process on which the MQUERY command is applied. If NAME is not s
 
 #### CFTCOM, TYPE = FILE
 
-NAME = {filename
+****NAME = {filename
 }    string
-64
+64****
 
 This is the communication filename.
 

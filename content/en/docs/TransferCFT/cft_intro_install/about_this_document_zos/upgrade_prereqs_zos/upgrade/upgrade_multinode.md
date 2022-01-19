@@ -33,7 +33,7 @@ Customize the PMIGR2 step of the JCL MIGRCAT as follows, where you define RECNB,
  
 ```
 
-Submit the procedure ..INSTALL(MIGRCAT).
+****Submit the procedure ..INSTALL(MIGRCAT).****
 
 ## Upgrade the communication media files
 
@@ -59,7 +59,7 @@ Customize the PMIGR2 step of the MIGRCOM procedure and set the variables RECNB, 
 **//     HABFNAME='NO'**
 ```
 
-Submit the procedure ..INSTALL(MIGRCOM).
+****Submit the procedure ..INSTALL(MIGRCOM).****
 
 ## Upgrade the nodes (node x) communication media file
 
@@ -85,7 +85,7 @@ Define the variables RECNB, OLDFIL, TMPFIL and NEWFIL. Replace X with the node n
 **//     HABFNAME='NO'**
 ```
 
-Submit the procedure ..INSTALL(MIGRCOM).
+****Submit the procedure ..INSTALL(MIGRCOM).****
 
 ## Customize the JCL ..INSTALL(MNRMON)
 

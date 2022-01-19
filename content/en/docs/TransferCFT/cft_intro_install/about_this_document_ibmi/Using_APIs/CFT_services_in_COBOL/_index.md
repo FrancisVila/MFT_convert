@@ -2,7 +2,7 @@
     "title": "About Transfer CFT services in COBOL",
     "linkTitle": "Using Transfer CFT services in COBOL",
     "weight": "300"
-}This book begins with this topic
+}This book begins with ****this topic****
 which provides information about using the Transfer CFT{{< TransferCFT/componentshortname  >}} services in COBOL.
 
 The programming interface is implemented by the calling application
@@ -21,7 +21,7 @@ interfaces.
 ## Call syntax
 
 ```
-CALL CFTx USING <verb>
+CALL ****CFTx**** USING <verb>
 <blk>
 <param> <rc>
 ```
@@ -47,7 +47,7 @@ Where:
     variable length that contains the function parameters>param
 - &lt;rc> is the return code
 
-The variables described in this documentation are defined in the cftapi.cop file supplied in the library
+The variables described in this documentation are defined in the ****cftapi.cop**** file supplied in the library
 of delivered modules. The programming example and the corresponding COPY
 files are shipped with the product.
 
@@ -62,5 +62,5 @@ of mnemonics.
 > provided by the Transfer CFT programming interfaces through mnemonics,
 > the corresponding values being able to change without notice.
 
-The return codes are listed in the cftapi.cop
+The return codes are listed in the ****cftapi.cop****
 source file.

@@ -237,7 +237,7 @@ The following list summarizes discontinued functions for Transfer CFT version 3.
 - z/OS Removed the CFTMI23A executable (COM and catalog migration utility) for migrating from version 2.3.2
 - IBM i - Removed the SI\_TEMPLIB library and the CLEANER/BACKGRND program
 
-Platform support
+****Platform support****
 
 Axway no longer delivers 32-bit versions of Transfer CFT, but does offer an automatic migration from an existing 32-bit version to Transfer CFT 3.4 64-bit on 64-bit OS.
 

@@ -8,7 +8,7 @@
 
 #### SWAITCAT
 
-\[ timeout = integer \]
+****\[ timeout = integer \]****
 
 Define the timeout to reach. This is the maximum time in seconds to wait.
 

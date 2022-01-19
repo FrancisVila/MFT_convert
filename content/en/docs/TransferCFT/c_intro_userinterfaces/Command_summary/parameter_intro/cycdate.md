@@ -8,8 +8,8 @@
 
 #### CFTRECV, RECV, CFTSEND, SEND
 
-\[CYCDATE =
-{see comment | date}\]
+****\[CYCDATE =
+{see comment | date}\]****
 
 Upper final date for activating
 the first transfer in a cycle.

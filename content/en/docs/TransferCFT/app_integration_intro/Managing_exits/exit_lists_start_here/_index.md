@@ -27,7 +27,7 @@ requester partner****
 
 No specific parameter setting.
 
-Server sender site
+****Server sender site****
 
 ```
 CFTSEND  ID
@@ -54,16 +54,16 @@ PROG = FileExe
 ### 2. Prepare the selection criteria file
 
 After you have set the parameters for the sender site,
-load the selection criteria file.
+load the ****selection criteria**** file.
 The selection commands contained in this file are described in the section *Selection
 criteria file*. You must load this file on the server **before**
 requesting the catalog.
 
-The LOGICAL name of the Selection
-criteria must be the CFTEXIT command identifier. For z/OS environments, the correspondence between the physical name and the
+The LOGICAL name of the ****Selection
+criteria**** must be the CFTEXIT command identifier. For z/OS environments, the correspondence between the physical name and the
 logical name must be given by the JCL initiating Transfer CFT{{< TransferCFT/componentshortname  >}}.
 
-The name of the Selection criteria
+The name of the ****Selection criteria****
 file may be defined by  either the:
 
 - Physical name in
@@ -82,7 +82,7 @@ After loading the file, you can make a catalog
 request. When you make a file reception request, use the CFTSEND object
 identifier that is associated with the Exit list as the IDF.
 
-Example
+****Example****
 
 ```
 CFTUTILRECV     PART
@@ -94,7 +94,7 @@ The server:
 
 - Recognizes the
     request for the catalog list using the transfer IDF
-- Processes the Selection criteria file
+- Processes the ****Selection criteria**** file
 - Consults the catalog
 - Sends the entries
     selected from the catalog to the requesting partner as fixed-length records.

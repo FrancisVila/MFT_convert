@@ -4,7 +4,7 @@
     "weight": "340"
 }This topic describes how to use the LISTLOG command to display the log content according to certain defined criteria, such as date or node. Additionally, you can filter the log depending on multiple criteria, or view a merged log for several nodes in cluster mode.
 
-Command syntax: listlog &lt;filter list>
+****Command syntax: listlog &lt;filter list>****
 
 
 | Parameter  | Default  | Description  |

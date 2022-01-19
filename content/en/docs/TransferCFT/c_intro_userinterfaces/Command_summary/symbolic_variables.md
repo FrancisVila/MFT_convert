@@ -602,7 +602,7 @@ QQQ\_QQQ\_QQQ
 >
 > ## Defining symbolic variable blacklists for processing scripts
 >
-> UNIX and Windows only
+> **UNIX and Windows only**
 >
 > You can use blacklist characters as a POSIX Regular Extended expression to define forbidden characters in a processing script. To prevent unauthorized actions, do not use these characters in symbolic variables.
 >

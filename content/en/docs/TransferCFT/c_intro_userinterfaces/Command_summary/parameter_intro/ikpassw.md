@@ -8,7 +8,7 @@
 
 #### PKICER, PKIKEY
 
-\[IKPASSW = { string64 | filename } \]
+****\[IKPASSW = { string64 | filename } \]****
 
 Used in PKIUTIL.
 

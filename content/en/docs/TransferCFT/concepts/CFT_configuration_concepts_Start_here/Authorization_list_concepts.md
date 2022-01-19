@@ -9,9 +9,9 @@
 You can define the list of authorized file identifiers for the CFTAUTH in one of the following two ways:
 
 - IDF: Use a list of identifiers
-    for the IDF parameter
+    for the ****IDF**** parameter
 - FNAME: Use a path to the file where
-    the list is saved for the FNAME
+    the list is saved for the ****FNAME****
     parameter
 
 These two methods are mutually exclusive; you cannot use the IDF and FNAME parameters simultaneously.
@@ -46,6 +46,6 @@ IDF = fil21
 
 The log then displays the following message: CFTT25E IDF not authorized &lt;PART =% s IDF =% s>
 
-## Central Governance interoperability
+## ****Central Governance**** interoperability
 
 You cannot create, delete, or manage authorization template lists from the Central Governance UI. However, the list of authorized file identifiers, used to limit partner access to certain folders, is automatically managed in Central Governance for SFTP partners.

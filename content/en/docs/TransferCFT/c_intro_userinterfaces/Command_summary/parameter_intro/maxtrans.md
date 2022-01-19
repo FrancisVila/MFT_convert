@@ -8,7 +8,7 @@
 
 #### CFTPARM
 
-\[MAXTRANS = { <u>256</u> | n} \]
+****\[MAXTRANS = { <u>256</u> | n} \]****
 
 The maximum authorized number of transfers in parallel. When using multi node, this is the number of transfers per node.
 

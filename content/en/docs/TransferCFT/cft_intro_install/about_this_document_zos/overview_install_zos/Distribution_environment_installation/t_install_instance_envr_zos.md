@@ -2,7 +2,7 @@
     "title": "Create a Transfer CFT instance environment",
     "linkTitle": "Create a Transfer CFT instance ",
     "weight": "190"
-}The concept of a target environment has been replaced by what is now referred to as a Transfer CFT instance, or run-time environment. This procedure describes how to install the Transfer CFT instance environment.
+}The concept of a target environment has been replaced by what is now referred to as a Transfer CFT **instance**, or run-time environment. This procedure describes how to install the Transfer CFT instance environment.
 
 If during installation you created both the distribution environment and the Transfer CFT instance environment, you may go directly to [Customize the instance environment](../../t_customize_instance_zos). Otherwise, you must first create your runtime environment.
 
@@ -10,11 +10,11 @@ If during installation you created both the distribution environment and the Tra
 >
 > You require an installed Distribution environment before you can install the instance environment. See Distribution environment installation.
 
-Prerequisites
+****Prerequisites****
 
 Transfer CFT{{< TransferCFT/componentlongname  >}} requires two additional libraries LE (Language Environment), SCEELIB and SCEECPP, which are used in the (B20 LINK) link step.
 
-Procedure
+****Procedure****
 
 1. Make a copy of the JCL. It is recommended that you work from a copy.
 1. From the **distlib.INSTALL** library, customize and submit the **J2IICFT**.

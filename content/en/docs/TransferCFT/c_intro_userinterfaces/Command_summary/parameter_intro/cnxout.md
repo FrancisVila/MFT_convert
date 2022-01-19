@@ -8,7 +8,7 @@
 
 #### CFTTCP
 
-\[cnxout = {2 | n }\]
+****\[cnxout = {2 | n }\]****
 
 Maximum number of sessions for outgoing connections.
 

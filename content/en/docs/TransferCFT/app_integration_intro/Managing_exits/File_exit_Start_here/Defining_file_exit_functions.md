@@ -55,7 +55,7 @@ The initialization function **exfini** must specify the stages at
 which you want to take control. It must supply the address of the **EXFxmp1**
 function to be called if you want to take control at one stage at least.
 
-Restrictions
+****Restrictions****
 
 - You cannot change a user function during the transfer.
 - The initialization function cannot be written in COBOL since its main

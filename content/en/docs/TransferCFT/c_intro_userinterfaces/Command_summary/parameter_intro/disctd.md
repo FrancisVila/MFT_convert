@@ -8,8 +8,8 @@
 
 #### **CFTPROT**
 
-\[DISCTD = { <u>see table below</u> | n} {0..3600}
-\]
+****\[DISCTD = { <u>see table below</u> | n} {0..3600}
+\]****
 
 Wait timeout in seconds before disconnection, in the absence of a new
 transfer request to the partner, in requester mode.

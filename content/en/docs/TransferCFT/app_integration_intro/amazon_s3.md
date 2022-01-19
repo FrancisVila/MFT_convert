@@ -21,7 +21,7 @@ Transfer CFT{{< TransferCFT/transfercftname  >}} implements Amazon S3 services u
 1. For SSL connections to S3 storage, libCURL requires a path to the CA certificates bundle to authenticate the peer. Set this path in the UCONF ssl.certificates.ca\_cert\_bundle parameter.
 1. Access keys are used for the AWS credentials, so each user accessing S3 services must have an account allowing access to S3 services. Define the users and access key information in UCONF. For example:  
     ```
-    CFTUTIL uconfset id=aws.credentials, value=**"**account1 account2**"**
+    CFTUTIL uconfset id=aws.credentials, value=**"******account1 account2******"**
     CFTUTIL uconfset id=aws.credentials.account1.access_key_id, value=**"20_characters_string"**
     CFTUTIL uconfset id=aws.credentials.account1.secret_access_key, value=**"40_characters_string"**
     CFTUTIL uconfset id=aws.credentials.account2.access_key_id, value=**"20_characters_string"**

@@ -19,13 +19,13 @@ modify a technical parameter value.
 
 `UCONFSET id=PARAMETER-KEY,value=STRING`
 
-Example 1
+****Example 1****
 
 Set cft.idparm parameter:
 
 `  UCONFSET   id=cft.idparm,value=IDPARM0`
 
-Example 2
+****Example 2****
 
 Set copilot.general.serverport parameter:
 
@@ -52,14 +52,14 @@ display multiple technical parameter values
 
 `LISTUCONF id=PARAMETER-KEY-PATTERN,scope=ALL|USER|   |DEFAULT,content=BRIEF|FULL|DEBUG`
 
-Example 1
+****Example 1****
 
 Display all Copilot parameters:
 
   LISTUCONF
 id=copilot.\*
 
-Example 2
+****Example 2****
 
 Display all Copilot parameters that have
 been modified:
@@ -67,7 +67,7 @@ been modified:
   LISTUCONF
 id=copilot.\*,scope=USER
 
-Example 3
+****Example 3****
 
 Display all parameters concerning copilot
 with additional information:

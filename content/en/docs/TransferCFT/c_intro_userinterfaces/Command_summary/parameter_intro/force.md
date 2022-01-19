@@ -84,7 +84,7 @@ or CFTSEND object with parameter FORCE set to YES.
 
 #### INACT, DELETE, END, HALT, KEEP, START, RESUME
 
-\[FORCE = {<u>NO</u> | YES}\]
+****\[FORCE = {<u>NO</u> | YES}\]****
 
  
 
@@ -92,7 +92,7 @@ or CFTSEND object with parameter FORCE set to YES.
 
 #### START
 
-\[FORCE = {<u>NO</u> | YES}\]
+****\[FORCE = {<u>NO</u> | YES}\]****
 
 Indicates whether a request, that was not executed during its time slot,
 has been restarted:

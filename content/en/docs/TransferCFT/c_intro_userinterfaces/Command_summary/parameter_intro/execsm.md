@@ -10,8 +10,8 @@
 
 #### CFTPARM
 
-\[EXECSM =
-filename\]    {string 64}
+****\[EXECSM =
+filename\]    {string 64}****
 
 Generic name of the file describing
 the procedures to be executed on completion of the sending of a message.

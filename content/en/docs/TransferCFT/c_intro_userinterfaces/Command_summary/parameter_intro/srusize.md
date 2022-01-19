@@ -12,7 +12,7 @@
 | n} \]    ** { 254..32750}
 
 Maximum size of NSDUs being sent (default = 32750). This parameter is negotiated with
-the partner, rrusize parameter
+the partner, ****rrusize**** parameter
 if Transfer CFT{{< TransferCFT/componentshortname  >}}, the smallest value being adopted as the size of the NSDU
 sent.
 

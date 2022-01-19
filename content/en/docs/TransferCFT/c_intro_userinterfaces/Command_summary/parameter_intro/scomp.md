@@ -13,19 +13,19 @@
 The maximum authorized compression for sending a file.
 
 - rcomp//scomp
-    = 0 (no compression)
+    = ****0**** (no compression)
 - rcomp//scomp
-    = 1 (compression of a string of
+    = ****1**** (compression of a string of
     blanks)
 - rcomp//scomp
-    = 2 (compression of a string of
+    = ****2**** (compression of a string of
     identical characters)
 - rcomp//scomp
-    = 4 (character compression)
+    = ****4**** (character compression)
 - rcomp//scomp
-    = 8 (vertical compression)
+    = ****8**** (vertical compression)
 - rcomp//scomp
-    = 15 (all compressions)
+    = ****15**** (all compressions)
 
 This compression is negotiated between the sender and the receiver.
 

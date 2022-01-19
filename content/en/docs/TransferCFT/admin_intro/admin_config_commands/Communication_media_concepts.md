@@ -24,10 +24,10 @@ you can set the communication medium to:
 - A synchronous communication
     medium supported by the local TCP/IP network (for remote usage, use REST API)
 
-z/OS: You must define one communication
+****z/OS****: You must define one communication
 file for BATCH/TSO applications and one for CICS applications, if needed.
 
-Windows: On a LAN, requests
+****Windows****: On a LAN, requests
 made by Windows applications concerning a Transfer CFT{{< TransferCFT/componentshortname  >}} that is not on the
 same computer can only be accomplished via a file.
 
@@ -63,8 +63,8 @@ program must be consistent with the media opened by Transfer CFT{{< TransferCFT/
 
 ## Transfer CFT{{< TransferCFT/componentshortname  >}} media files
 
-You cannot change the name of the parameter
-file. It constitutes the Transfer CFT{{< TransferCFT/componentshortname  >}} anchor point containing all the data
+You cannot change the name of the **parameter
+file**. It constitutes the Transfer CFT{{< TransferCFT/componentshortname  >}} anchor point containing all the data
 defined by the parameter setting, and in particular the names of the other
 files and media. However, you can establish a correspondence between this
 logical name and a physical name in the flow of Transfer CFT activation commands.
@@ -72,8 +72,8 @@ logical name and a physical name in the flow of Transfer CFT activation commands
 The names of the other Transfer CFT{{< TransferCFT/componentshortname  >}} media are defined by parameter setting,
 although Transfer CFT{{< TransferCFT/componentshortname  >}} has default values.
 
-Transfer CFT{{< TransferCFT/componentshortname  >}}
-media by type of object and parameter
+****Transfer CFT{{< TransferCFT/componentshortname  >}}
+media by type of object and parameter****
 
 <span id="Communication_media_characteristics"></span>
 

@@ -76,9 +76,9 @@ following file names.
 
 | Key/certificate standard  | Exported file name  |
 | --- | --- |
-| PGP Public Keyring | useridpacket_pub.asc |
-| PGP Secret Keyring and Public Keyring | useridpacket_sec.asc and useridpacket_pub.asc |
-| X.509 Certificate | certificate alias.der |
+| PGP Public Keyring | **useridpacket**_pub.asc |
+| PGP Secret Keyring and Public Keyring | **useridpacket**_sec.asc and **useridpacket**_pub.asc |
+| X.509 Certificate | **certificate alias.**der |
 
 
 ### Export procedure

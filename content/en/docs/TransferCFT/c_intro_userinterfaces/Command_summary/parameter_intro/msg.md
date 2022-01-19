@@ -8,7 +8,7 @@
 
 #### SEND
 
-\[msg = string 4096\]
+****\[msg = string 4096\]****
 
 Message in text sent to the partner.
 
@@ -24,7 +24,7 @@ This text may include spaces. It must be included between single quotes
 
 #### WLOG
 
-\[MSG = string255\]
+****\[MSG = string255\]****
 
 Information message to be written in the log file.
 

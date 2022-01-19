@@ -6,9 +6,9 @@
 command is used to suspend a transfer in the catalog when the Transfer CFT is offline. Transfer CFT{{< TransferCFT/componentlongname  >}} must
 be shut down before the command is run and then restarted. The transfer
 must exist in the catalog and be in one of the following phasesteps: in process
-C, available D,
-or hold H. After execution of
-the command, the phasestep is set to K.
+****C****, available ****D****,
+or hold ****H****. After execution of
+the command, the phasestep is set to ****K****.
 
 The command generates a WLOG command which reports the event in the
 LOG file.
@@ -18,5 +18,5 @@ LOG file.
 | --- | --- |
 | <a href="../../../command_summary/parameter_intro/idf">IDF</a> | Model file identifier. |
 | <a href="../../../command_summary/parameter_intro/idtu">IDTU</a> | Local transfer counter identifier. |
-| <a href="../../../command_summary/parameter_intro/part">PART</a><br/> (Mandatory) | Identifier of the partner. |
+| <a href="../../../command_summary/parameter_intro/part">PART</a><br/> **(Mandatory)** | Identifier of the partner. |
 

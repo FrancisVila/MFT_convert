@@ -15,7 +15,7 @@ Odette protocol
 
 Value of the "credit" (expressed as a number of "DATA"
 messages) proposed by Transfer CFT{{< TransferCFT/componentshortname  >}} when it is the requester. Enter a value
-between 1 and 999. The Default value is 4.
+between 1 and 999. The Default value is ****4****.
 
 Transfer CFT{{< TransferCFT/componentshortname  >}} is authorized to send a number of "DATA" protocol
 messages equal to the result of the negotiation (performed when the protocol

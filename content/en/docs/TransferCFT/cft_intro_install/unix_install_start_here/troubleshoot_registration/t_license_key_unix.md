@@ -12,7 +12,7 @@
 
 1. Install Transfer CFT{{< TransferCFT/componentshortname >}}. You can install Transfer CFT{{< TransferCFT/componentshortname >}} without a license key, and enter the key later.
 
-1. After completing the installation, or for an existing installation, use the command cftutil about to retrieve your system information.
+1. After completing the installation, or for an existing installation, use the command ****cftutil about**** to retrieve your system information.
 
     > **Note**
     >
@@ -60,7 +60,7 @@ For example, if you have 2 hosts and 4 nodes, you require 4 keys with at least o
 
 ## About command
 
-Use the CFTUTIL utility to execute the about command to find the CPU ID and general system information as demonstrated in this example.
+Use the CFTUTIL utility to execute the ****about**** command to find the CPU ID and general system information as demonstrated in this example.
 
 ```
 Host information :

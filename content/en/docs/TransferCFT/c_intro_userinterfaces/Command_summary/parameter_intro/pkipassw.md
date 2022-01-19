@@ -8,7 +8,7 @@
 
 #### CFTPARM
 
-\[PKIPASSW = string 1...64\]
+****\[PKIPASSW = string 1...64\]****
 
 The encryption password of the private key in the local certificate
 base. There are two ways to specify the password, by either:
@@ -19,7 +19,7 @@ base. There are two ways to specify the password, by either:
     to a file: The value assigned to the parameter is the name of a file,
     the first record of which contains the password. As such, the file name
     must be prefixed with an #|@, PKIPASSW=#myfile for example, where the password
-    is specified in the myfile file.
+    is specified in the **myfile** file.
     The first file record must contain the password in plain format.
 
 The password is not recorded in the local

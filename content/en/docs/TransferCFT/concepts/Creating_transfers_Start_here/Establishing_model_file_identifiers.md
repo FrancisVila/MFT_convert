@@ -144,8 +144,8 @@ NIDF**
 
 ## Receiver requester
 
-**This
-scenario is only applicable for the protocols PeSIT D CFT profile, PeSIT E.**
+****This
+scenario is only applicable for the protocols PeSIT D CFT profile, PeSIT E.****
 
 If the NIDF parameter is present in the RECV command, the NIDF value
 that is sent on the request to receive the model file locally identified
@@ -185,8 +185,8 @@ file identifier (IDF)/physical file (FNAME)*.
 
 ## Sender server
 
-**This
-scenario is only applicable for the protocols PeSIT D CFT profile, and PeSIT E.**
+****This
+scenario is only applicable for the protocols PeSIT D CFT profile, and PeSIT E.****
 
 On receiving an NIDF, Transfer CFT{{< TransferCFT/componentshortname  >}} checks to see if there is a locked
 SEND command having an NIDF parameter with the same value as the received
@@ -252,9 +252,9 @@ for a received NIDF**
 
 ## Receiver/Requester in selective-receive mode
 
-This
+**This
 scenario is only applicable between two Transfer CFT{{< TransferCFT/componentshortname  >}}s using
-one of the protocols - PeSIT D CFT profile, or PeSIT E.
+one of the protocols - PeSIT D CFT profile, or PeSIT E.**
 
 During a selective receive transfer, the NIDF sent by the receiver requester
 (during a SELECT REQUEST) is equal to the value of the generic IDF even
@@ -312,7 +312,7 @@ extracted from the 11th character onwards of the NIDF string received.
 If there is neither a CFTIDF command nor an IDF parameter defined in
 CFTPROT, the local IDF takes the NIDF value.
 
-Local IDF defined by default for the received
-NIDF
+****Local IDF defined by default for the received
+NIDF****
 
 ![](/Images/TransferCFT/UNDEF_predefined_value.gif)

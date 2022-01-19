@@ -8,7 +8,7 @@
 
 #### CFTCRON
 
-{ *string32* }
+****{ *string32* }****
 
 The identifier that you use to associate a CRONTAB with the CFTPARM object.
 

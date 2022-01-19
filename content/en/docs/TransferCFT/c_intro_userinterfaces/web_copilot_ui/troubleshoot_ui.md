@@ -8,7 +8,7 @@ After a successful installation you can start the Transfer CFT Copilot server, b
 
 Check task manage and verify that the copilot "copxxx" processes are running (as shown below on a Windows platform). For example, Coprestw.\* must be running.
 
-![](/Images/TransferCFT/copui_process.png)
+****![](/Images/TransferCFT/copui_process.png)****
 
 In the Transfer CFT installation, access the &lt;install\_directory>/runtime/run folder &gt; and check the following files for errors or failed steps:
 

@@ -18,7 +18,7 @@ The following source examples are supplied in the toolkit:
 You should develop the exits under the Windows operating system, using
 Microsoft Visual Studio.
 
-Before you begin developing exits
+****Before you begin developing exits****
 
 You are strongly advised to do the following before starting the development
 work itself:
@@ -119,7 +119,7 @@ the section Logical File Names, the paragraph *Using
 a definition file*). This is supplied as a sample and can be used only
 on condition that the file name for the selection criteria is *exitlist.txt.*
 
-Exit example
+****Exit example****
 
 Exit-list
 : on server
@@ -142,7 +142,7 @@ Exit-list
 
 `mode = replace`
 
-Exit-list remote partner side
+****Exit-list remote partner side****
 
 `cftrecv id = texit,`
 

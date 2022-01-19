@@ -8,10 +8,10 @@
 
 #### CFTPROT
 
-**\[RESTART =
-{<u>5</u> | n}\]** {0..32767} 
+******\[RESTART =
+{<u>5</u> | n}\]** {0..32767} ****
 
-In requester mode
+****In requester mode****
 
 Maximum number of transfer restart attempts.
 

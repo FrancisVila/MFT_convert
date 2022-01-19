@@ -124,7 +124,7 @@ The following messages are used by Trusted File, and are located in: $CFTDIRINST
 - xppsrv.msg
 - xppwrap.msg
 
-Refer to the Trusted File 3.6 Reference Guide for details, available on [support.axway.com](https://support.axway.com/).
+Refer to the **Trusted File 3.6 Reference Guide** for details, available on [support.axway.com](https://support.axway.com/).
 
 <span id="Transcod"></span>
 

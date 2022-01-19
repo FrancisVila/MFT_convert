@@ -2,8 +2,8 @@
     "title": "Virtual file association template",
     "linkTitle": "Template to virtual file association CFTIDF",
     "weight": "160"
-}Related
-topics
+}****Related
+topics****
 
 - Command syntax
     [CFTIDF](../../../c_intro_userinterfaces/command_summary#CFTIDF)
@@ -20,13 +20,13 @@ object defines a network identifier for a given partner, and a transfer
 direction, when partners cannot agree on common file identifiers.
 
 The CFTIDF object is used to locally set up this correspondence between
-the local idf and the sent or
-received nidf.
+the local ****idf**** and the sent or
+received ****nidf****.
 
 **For all protocols EXCEPT PeSIT SIT profile**
 
 If partners cannot agree on common file identifiers because of operating
-constraints, the network identifier,
+constraints, the **network identifier,**
 NIDF, can be used to reconcile, for a given partner and transfer
 direction, the local identifier (IDF) with the file identifier supplied
 by (or sent to) the partner.

@@ -8,9 +8,9 @@
 
 #### COPYFILE
 
-**\[OCODE =
+******\[OCODE =
 {<u>internal code determined by the system</u>
-| ASCII | EBCDIC}\]**
+| ASCII | EBCDIC}\]******
 
 Output file data code.
 

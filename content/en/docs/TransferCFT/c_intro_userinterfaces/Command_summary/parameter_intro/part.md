@@ -43,11 +43,11 @@ Identifier of the partner(s) for the selected transfers.
 
 The value of this parameter can be:
 
-- An identifier: the selection only relates
+- ****An identifier****: the selection only relates
     to the transfers performed with this partner
-- A mask: the selection relates to the
+- ****A mask****: the selection relates to the
     transfers with the partners whose identifier corresponds to this mask
-- Omitted: the selection relates to all
+- ****Omitted****: the selection relates to all
     partners. This option is the same as the option PART = \*
 
 If the NPART parameter is defined, the PART parameter is ignored.
@@ -91,7 +91,7 @@ identifier of the partner for which the IDF/NIDF correspondence is valid.**
 **This
 parameter is an informational item that appears in the catalog.**
 
-#### **C**FTPARM
+#### ******C******FTPARM****
 
 **\[PART = *= *string64**\]**
 
@@ -117,11 +117,11 @@ The associated value of this parameter can be:
 
 #### DISPLAY
 
-**\[PART = string\]**
+**\[PART = **string**\]**
 
 #### KSTATE
 
-**\[PART = partner *identifier*\]**
+**\[PART = **partner** *identifier*\]**
 
 #### CFTIDF
 

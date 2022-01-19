@@ -4,17 +4,17 @@
     "weight": "220"
 }Before starting Transfer CFT{{< TransferCFT/componentshortname  >}} with TCP/IP for the first time, you must setup your TCP/IP.
 
-Procedure
+****Procedure****
 
 1. Install and configure
     the TCP/IP layer.
 1. In the SAMPLE folder, configure
-    the PARMTCP.SMP sample file, with the key
+    the PARMTCP.SMP sample file, with the ****key****
     parameter in CFTPARM.
 1. In the SAMPLE folder, configure
-    the sample file PARMTCP.SMP. Configure the nspart
-    and nrpart parameters in CFTPARM,
-    and the host parameter of the
+    the sample file PARMTCP.SMP. Configure the ****nspart****
+    and ****nrpart**** parameters in CFTPARM,
+    and the ****host**** parameter of the
     CFTTCP command.
 1. Start the batch file ..\\CFT\\SAMPLE\\RESETTCP.
 1. Start CFTMAIN.

@@ -18,13 +18,13 @@ size, in bytes.
 This field only applies to the following EXITS:
 
 - Access/EXEC:
-    -   range {0 to 1024}
+    -   range {****0 to 1024****}
     -   default value
-        1024
+        ****1024****
 - file:
-    -   range {0 to 8192}
+    -   range {****0 to 8192****}
     -   default value
-        8192
+        ****8192****
 
 This area is not used by the Transfer CFT{{< TransferCFT/componentshortname  >}} interface. You can use it
 to save the information that you consider necessary for the processing

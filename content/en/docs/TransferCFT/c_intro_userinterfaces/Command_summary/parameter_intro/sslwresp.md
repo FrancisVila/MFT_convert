@@ -8,12 +8,12 @@
 
 #### CFTPARM
 
-\[SSLWRESP =   {1...32767
-} \]
+****\[SSLWRESP =   {1...32767
+} \]****
 
 The timeout granted to an SSL task to start and return
 its initialization status, which can be any
-value from 1 to 32767 seconds.
+value from ****1**** to ****32767**** seconds.
 
 Default values per operating system:
 

@@ -11,7 +11,7 @@ To force heterogeneous mode:
 1. Access the unified configuration utility using either [command line](../uconf_w_cftutil) or the [GUI](../uconf_interface_actions).
 1. Set the following parameter to enable forced heterogeneous exchanges for group file transfers.
 
-****Unix/Windows****
+********Unix/Windows********
 
 
 | Parameter  | Default  | Description  |

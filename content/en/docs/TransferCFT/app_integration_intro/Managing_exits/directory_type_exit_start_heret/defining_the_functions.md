@@ -34,7 +34,7 @@ A directory EXIT task:
 - Calls the initialization
     function **exaini** function in server mode, when a connection is indicated,
     or in requester mode, when a connection request is made. If this function
-    returns a 0 code, the usrfct function
+    returns a 0 code, the ****usrfct**** function
     is called. If not, Transfer CFT{{< TransferCFT/componentshortname >}} considers that the user does not want
     to take control
 
@@ -49,7 +49,7 @@ which you want to take control. It must supply the address of the **usrfct**
 function to be called if the user wants to take control at one stage at
 least.
 
-Restriction
+****Restriction****
 
 The initialization function cannot be written in COBOL since its main
 purpose is to indicate the address of a user function. You must use a

@@ -135,15 +135,15 @@ cft start –n 0
 
 The cft stop command stops one or all nodes. If no node is specified, all nodes are stopped.
 
-Syntax
+****Syntax****
 
 `cft stop [options]`
 
-Options
+****Options****
 
 The -n|-node &lt;node\_id> stops the node &lt;node\_id>.
 
-Usage
+****Usage****
 
 Stops all nodes.
 
@@ -168,17 +168,17 @@ The cft restart command re-stars one or all nodes. If no node is specified all n
 >
 > Node managers must be started first.
 
-Syntax
+****Syntax****
 
 `cft restart [options]`
 
-Options
+****Options****
 
 The -n|-node &lt;node\_id> re-starts the node &lt;node\_id>.
 
 The -ln|-local\_node re-starts all nodes hosted locally that are running on the host from where the command is performed.
 
-Usage
+****Usage****
 
 All nodes are re-started by the node managers.
 
@@ -260,11 +260,11 @@ Return values:
 - 1: all enabled nodes are running
 - 2: not all enabled nodes are running
 
-Syntax
+****Syntax****
 
 `cftping [options]`
 
-Options
+****Options****
 
 - -n|-node &lt;node\_id>: checks the status of the node &lt;node\_id>
 - -v: verbose mode
@@ -301,11 +301,11 @@ Use the CFTUTIL display or CFTUTIL listcat to show catalog transfer records. In 
 
 The cft add\_host command adds a new host entry in the configuration. You must specify the hostname and a host address that is accessible from the other hosts.
 
-Syntax
+****Syntax****
 
 `cft add_host –hostname <hostname> –host <host_address>`
 
-Usage on UNIX/Windows
+****Usage on UNIX/Windows****
 
 1. For the new host, run the installation executable. In the Installation architecture screen, select **Cluster-additional host.**
 1. Complete the installation.
@@ -337,7 +337,7 @@ For specifics on adding a host on z/OS platforms, please see <a href="../../cft
 
 The cft remove\_host command removes a host entry from the configuration.
 
-Syntax
+****Syntax****
 
 `cft remove_host –hostname <hostname> `
 
@@ -361,11 +361,11 @@ Syntax
 
 The cft add\_node command adds a new node to the Transfer CFT{{< TransferCFT/componentshortname  >}} cluster. The number of nodes is incremented (uconf: cft.multi\_node.nodes = N+1) . The internal data files associated with the new node are initialized and the node state is set to DISABLED (uconf:cft.multi\_node.nodes.&lt;node\_id>.nodestate). After adding the new node, you can enable it using the command: cft enable\_node -n x
 
-Syntax
+****Syntax****
 
 `cft add_node`
 
-Usage
+****Usage****
 
 ```
 cft add_node
@@ -379,11 +379,11 @@ cft add_node
 
 The cft enable\_node command enables the specified node. The node state is set from DISABLED to ENABLED\_STOPPED (uconf:cft.multi\_node.nodes.&lt;node\_id>.nodestate).
 
-Syntax
+****Syntax****
 
 `cft enable_node -n -<node_id>`
 
-Usage
+****Usage****
 
 ```
 cft enable_node -n -<node_id>
@@ -400,11 +400,11 @@ The cft disable\_node command disables the node identified by the highest node i
 - Outgoing requests coming from APIs are no longer dispatched to this node.
 - Once the catalog related to the node is empty, the node state is set to DISABLED and the node stops.
 
-Syntax
+****Syntax****
 
 `cft disable_node -n -<node_id>`
 
-Usage
+****Usage****
 
 ```
 cft disable_node -n -<node_id>
@@ -426,11 +426,11 @@ The node number is decremented (uconf: cft.multi\_node.nodes = N-1), and any int
 >
 > After removing a node, you must restart Transfer CFT.
 
-Syntax
+****Syntax****
 
 `cft remove_node –n <the_highest_node_id>`
 
-Usage
+****Usage****
 
 ```
 cft remove_node –n 3

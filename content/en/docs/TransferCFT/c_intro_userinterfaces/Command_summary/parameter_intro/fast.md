@@ -6,7 +6,7 @@
 
 #### SHUT
 
-\[FAST = {<u>NO</u> | YES | KILL}\]
+****\[FAST = {<u>NO</u> | YES | KILL}\]****
 
 Type of shutdown:
 

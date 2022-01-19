@@ -178,4 +178,4 @@ Since you can start or restart a registered Transfer CFT{{< TransferCFT/componen
 
 ## Register with Central Governance
 
-If you intend to implement Central Governance, please refer to the Transfer CFT{{< TransferCFT/componentlongname  >}} *User's Guide &gt; [*Register with* Central Governance](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.
+If you intend to implement Central Governance, please refer to the **Transfer CFT**{{< TransferCFT/componentlongname  >}} *User's Guide &gt; [*Register with* **Central Governance**](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.

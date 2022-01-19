@@ -37,7 +37,7 @@ The following terms are used in this section:
 - PHYSICAL FILE which
     describes the name and physical location of a file type medium
 - If the file name
-    begins with a reserved character, designated by char-file - see the Transfer CFT{{< TransferCFT/componentshortname >}}*Operations Guide* corresponding to your OS,
+    begins with a reserved character, designated by ****char-file**** - see the Transfer CFT{{< TransferCFT/componentshortname >}}*Operations Guide* corresponding to your OS,
     this is a logical name interpreted by Transfer CFT{{< TransferCFT/componentshortname >}}
 - CFTIN and CFTOUT
     for standard task input/output
@@ -62,8 +62,8 @@ The Transfer CFT{{< TransferCFT/componentshortname  >}} medium names can be set 
 
 ### Transfer CFT{{< TransferCFT/componentshortname  >}} media files
 
-You cannot change the name of the parameter
-file. It constitutes the Transfer CFT{{< TransferCFT/componentshortname  >}} anchor point containing all the data
+You cannot change the name of the **parameter
+file**. It constitutes the Transfer CFT{{< TransferCFT/componentshortname  >}} anchor point containing all the data
 defined by the parameter setting, and in particular the names of the other
 files and media. However, you can establish a correspondence between this
 logical name and a physical name in the flow of CFT activation commands.
@@ -71,8 +71,8 @@ logical name and a physical name in the flow of CFT activation commands.
 The names of the other Transfer CFT{{< TransferCFT/componentshortname  >}} media are defined by parameter setting,
 although Transfer CFT{{< TransferCFT/componentshortname  >}} has default values.
 
-Transfer CFT{{< TransferCFT/componentshortname  >}}
-media by type of object and parameter
+****Transfer CFT{{< TransferCFT/componentshortname  >}}
+media by type of object and parameter****
 
 
 | Object  | Parameter  | File type described  |

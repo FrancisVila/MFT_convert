@@ -24,7 +24,7 @@ After you install Transfer CFT you must modify and reinterpret the profile envir
 - Communications
     file
 
-Example of a modified profil**e** file
+****Example of a modified profil**e** file****
 
 `#--------------------------------------------`
 

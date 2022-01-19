@@ -7,7 +7,7 @@ settings, Structure
 in C language, User
 program in C.
 
-Parameter settings
+****Parameter settings****
 
 ```
 /\* CFTPARM Card \*/
@@ -28,12 +28,12 @@ cftexit id = exe1          ,
      mode = replace
 ```
 
-Structure in C
+****Structure in C****
 
-Refer to the exeus.h
+Refer to the ****exeus.h****
 delivered with the Transfer CFT{{< TransferCFT/componentshortname  >}} product samples.
 
-User program in C
+****User program in C****
 
-Refer to the exexmp1.c
+Refer to the ****exexmp1.c****
 delivered with the Transfer CFT{{< TransferCFT/componentshortname  >}} product samples.

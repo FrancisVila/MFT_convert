@@ -393,7 +393,7 @@ password.
 
 ### Error detection - PAD support
 
-Deprecated in Transfer CFT{{< TransferCFT/componentlongname  >}} 3.5
+**Deprecated in Transfer CFT{{< TransferCFT/componentlongname  >}} 3.5**
 
 Through an asynchronous access PAD (Packet
 Assembler/Disassembler),

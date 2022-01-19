@@ -32,7 +32,7 @@ The messages have the following format:
 
 - The message text
 
-Transfer CFT z/OS system interface messages
+****Transfer CFT z/OS system interface messages****
 
 
 | Message | Definition |

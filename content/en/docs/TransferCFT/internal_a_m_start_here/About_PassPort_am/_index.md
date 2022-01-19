@@ -27,7 +27,7 @@ The default roles are as follows:
 - **Application** allows applications to request and manage transfers, and view the Catalog
 - **PartnerManager** allows you to manage partners
 
-Please refer to the [*Transfer CFT *3.9{{< TransferCFT/releasenumber  >}} *Security Guide*](https://docs.axway.com/bundle/TransferCFT_38_SecurityGuide_allOS_en_HTML5/page/Content/security_guide/predefined_privileges.htm) for a complete list of privileges and roles. (Requires login.)
+Please refer to the [*Transfer CFT *3.9**{{< TransferCFT/releasenumber  >}} *Security Guide*](https://docs.axway.com/bundle/TransferCFT_38_SecurityGuide_allOS_en_HTML5/page/Content/security_guide/predefined_privileges.htm) for a complete list of privileges and roles. (Requires login.)
 
 ### Tools
 

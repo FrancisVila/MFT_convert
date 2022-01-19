@@ -8,17 +8,17 @@
 
 #### CFTPARM
 
-\[SSLWTASK = { 1441
-| n }\]... {1...1441}
+****\[SSLWTASK = { 1441
+| n }\]... {1...1441}****
 
 Set the inactivity time, in minutes, of the SSL task. Beyond this value,
 the task is shut down. An SSL task is considered to be idle if it no longer
 manages any sessions.
 
-- 1441:
+- ****1441****:
     Default value. Using this value makes the task permanent
 - Any value
-    from 1 to 1441
+    from ****1**** to ****1441****
 
  
 

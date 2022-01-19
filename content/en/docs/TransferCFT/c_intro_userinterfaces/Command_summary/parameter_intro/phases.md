@@ -6,7 +6,7 @@
 
 ****SWAITCAT****
 
-`[ PHASES =  { A | T | Y | Z | X }  ]`
+**`[ PHASES =  { A | T | Y | Z | X }  ]`**
 
 Where the string ****sizemax= 5****.
 

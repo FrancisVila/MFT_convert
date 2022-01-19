@@ -8,8 +8,8 @@
 
 #### HALT, END, KEEP, SUBMIT, START, DELETE, LISTCAT, DISPLAY, RESUME
 
-**\[IDT =
-{ <u>\*</u> | *transid*}\]**
+******\[IDT =
+{ <u>\*</u> | *transid*}\]******
 
 Transfer identifier. Identifies a transfer for a given partner and transfer
 direction. The value '\*' means that no selection is required on the IDT
@@ -17,8 +17,8 @@ parameter (default value).
 
 #### SEND TYPE = REPLY
 
-**\[IDT =
-*transid* \]**
+******\[IDT =
+*transid* \]******
 
 When sending replies, this corresponds to the original transfer IDT,
 and hence to the corresponding catalog entry (in the RT or RX state, in

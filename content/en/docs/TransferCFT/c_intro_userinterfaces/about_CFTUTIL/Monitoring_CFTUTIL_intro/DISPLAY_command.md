@@ -103,14 +103,14 @@ by lines (mode=line).
 Command syntax: [DISPLAY](../../../command_summary)
 
 
-| Parameter | Description |
+| ****Parameter**** | ****Description**** |
 | --- | --- |
 | CONTENT  | Filter to use on the messages written in the active LOG file.  |
 | DATETIMEMAX  | Use to display catalog transfers that happened on or before this end date and time according to the transfer record creation (DATEK, TIMEK).  |
 | DATETIMEMIN  | Use to display catalog transfers that happened on or after this start date and time according to the transfer record creation (DATED, TIMED).  |
 | DIAGI  | Define the diagi catalog transfer field display:<br/> • DIAGI=0: select transfers that have a DIAGI=0<br/> • DIAGI=ERROR: select transfers that have a DIAGI other than 0<br/> • DIAGI=* : select all transfers (default value) |
 | DIRECT  | Transfer direction of the requests.  |
-| EMPTY | Use this parameter to replace the default output of Empty values, usually empty string values.<br/> The default string ANY means that EMPTY is specified in the model. The default EMPTY used is '-' if it is not defined in the model. |
+| EMPTY | Use this parameter to replace the default output of ****Empty**** values, usually empty string values.<br/> The default string ****ANY**** means that EMPTY is specified in the model. The default EMPTY used is '-' if it is not defined in the model. |
 | FILE  | Enter file name  |
 | FMODEL | Complete name or logical name of the XML model file.<br/> This parameter default value is fixed.  |
 | FOUT  | ****PeSIT**** You can extract Transfer CFT messages from the Catalog file, and forward these messages to a specified file using the fout parameter.<br/> The message length for PeSIT ANY profile, when forwarding a message from one CFT to another, has increased from 512 to 4096 bytes. The S/RRUSIZE must be greater than the maximum message length and message information combined (for example, 4127).<br/> The fout parameter enables you to redirect output to a specified file. |
@@ -137,7 +137,7 @@ Command syntax: [DISPLAY](../../../command_summary)
 
 ****Example 1****
 
-Displays all the fields described in listcat
+Displays all the fields described in ****listcat****
 model concerning all transfers.
 
 ```

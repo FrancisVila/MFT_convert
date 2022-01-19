@@ -8,7 +8,7 @@
 
 #### CFTNET
 
-\[call = {<u>inout</u> | in | out }\]
+****\[call = {<u>inout</u> | in | out }\]****
 
 Call direction possible through this network resource. Select from:
 

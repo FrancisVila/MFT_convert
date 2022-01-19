@@ -8,11 +8,11 @@
 
 #### CFTPARM
 
-\[WAITRESP = {1...32767} \]
+****\[WAITRESP = {1...32767} \]****
 
 The timeout for internal communication between Transfer CFT
 tasks, which can be any
-value from 1 to 32767 seconds.
+value from ****1**** to ****32767**** seconds.
 
 Default values per operating system:
 
@@ -22,7 +22,7 @@ Default values per operating system:
 - 1000: OS/400 (IBM i)
 
 This parameter is used for a synchronous exchange of requests between
-two monitor tasks during the initialization phase. After waitresp
+two monitor tasks during the initialization phase. After ****waitresp****
 seconds without reply, the timeout is interrupted. A CFTS09 message is
 written in the log and the Transfer CFT{{< TransferCFT/componentshortname  >}} initialization stops.
 

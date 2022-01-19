@@ -8,8 +8,8 @@
 
 #### HALT, RESUME, LISTCAT, START, KEEP, DELETE, SUBMIT, END, DISPLAY, KSTATE
 
-\[IDTU = \*
-|string8\]
+****\[IDTU = \*
+|string8\]****
 
 Catalog identifier. It is a unique, local reference to a transfer. You can enter
 string8 as a mask.

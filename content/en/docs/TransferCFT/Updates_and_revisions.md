@@ -2,7 +2,7 @@
     "title": "Changelog",
     "linkTitle": "Changelog",
     "weight": "40"
-}Transfer CFT 3.9{{< TransferCFT/releasenumber  >}}
+}****Transfer CFT 3.9{{< TransferCFT/releasenumber  >}}****
 
 - \[CORE\] Added support for Google Cloud Storage. [Details](../app_integration_intro/google_cloud)
 - \[AM\] Enhanced Internal Access Management to use roles and privileges defined in CFTPARM (as type CFTROLE and CFTPRIV objects) providing more flexibility than simply predefined roles. [Details](../internal_a_m_start_here/uconf_internal_am)
@@ -20,7 +20,7 @@
 - \[DOC\] The User Guide is now available as a PDF. [Details](https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_PDF/resource/Transfer_CFT_UsersGuide_allOS_en.pdf)
 - \[REST API\] Added new query parameters to the GET /transfers REST API. See the Swagger documentation for [details](http://apidocs.axway.com/swagger-ui/index.html?productname=transfercft&productversion=3.8&filename=transfercft-swagger-api.json).
 
-Transfer CFT 3.7
+****Transfer CFT 3.7****
 
 - \[CORE\] Added server-side encryption for AWS S3. [Details](../app_integration_intro/amazon_s3)
 - \[CORE\] Added Access Control List (ACL) policy for uploading files to AWS S3. [Details](../app_integration_intro/amazon_s3)
@@ -46,7 +46,7 @@ Transfer CFT 3.7
 - \[CORE\] Containerized application integration using Kubernetes. [Details](../app_integration_intro/container_integration)
 - \[CORE\] Updated the documentation for the account file in v24 format. Please note the changes in field length as described in the CFTACCNT list. [Details](../admin_intro/admin_config_commands/cftaccnt_concepts)
 
-Transfer CFT 3.6
+****Transfer CFT 3.6****
 
 - \[CORE\] Enhanced the C language and COBOL end-of-transfer (EOT) exits. Details SP1
 - \[IBM i\] Added SAML support on IBM i. Details SP1
@@ -90,7 +90,7 @@ Transfer CFT 3.6
 
  
 
-Transfer CFT 3.5
+****Transfer CFT 3.5****
 
 - \[z/OS\] SFTP standardization means you can now use Transfer CFT z/OS to perform SFTP file transfers (HFS only). Details in the *[Transfer CFT z/OS Installation and Operations Guide](../cft_intro_install/about_this_document_zos)*
 - \[CORE\] Support for SAML 2.0 as an Identity Provides (IdP) with Transfer CFT installations enables Single Sign-On (SSO) for Windows and Unix platforms. [Details](../c_intro_userinterfaces/web_copilot_ui/use_saml)
@@ -105,7 +105,7 @@ Transfer CFT 3.5
 - \[CORE\] Added a UCONF parameter that allows you to blacklist certain characters in a processing script. [Details](../c_intro_userinterfaces/command_summary/symbolic_variables)
 - \[CORE\] You can now use PKIUTIL PKIEXT to export a key in the PKCS#8 format. [Details](../transport_security_start_here/certificates/pkiutil_cli_intro/pkiext)
 
-Transfer CFT 3.4
+****Transfer CFT 3.4****
 
 - \[CORE\] Added support for FACTION=DELETE when sending a group of files in homogeneous mode.
 - \[CORE\] Added support for Microsoft Azure VM instances.
@@ -125,7 +125,7 @@ Transfer CFT 3.4
 - \[AM\] You can now use Central Governance as a form of access management. [Details](../internal_a_m_start_here/fm_access_management)
 - \[Linux/Windows\] Google Cloud Platform support.
 
-Transfer CFT 3.3.2
+****Transfer CFT 3.3.2****
 
 - \[IBM i\] Added support for folder monitoring on the native partition. SP2 [Details](../app_integration_intro/intro_folder_monitor/folder_ibm_i_native)
 - \[z/OS\] Use SAF resources for internal access management mode. SP2 [Details](https://docs.axway.com/bundle/TransferCFT_38_InstallationGuide_mvs_en_PDF/resource/TransferCFT_InstallationGuide_mvs_en.pdf)

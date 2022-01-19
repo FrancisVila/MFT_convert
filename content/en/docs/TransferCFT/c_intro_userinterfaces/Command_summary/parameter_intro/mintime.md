@@ -12,8 +12,8 @@
 
 #### In requester mode
 
-**\[MINTIME =
-{<u>00000000</u> | time}\]**
+******\[MINTIME =
+{<u>00000000</u> | time}\]******
 
 Initial validity time of the transfer on
 the first day (MINDATE).

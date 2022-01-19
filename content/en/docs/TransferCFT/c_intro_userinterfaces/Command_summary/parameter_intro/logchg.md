@@ -6,8 +6,8 @@
 
 #### WLOG
 
-logchg = { NONE | STATIC | DYNAMIC | ALL
-}
+****logchg = { NONE | STATIC | DYNAMIC | ALL
+}****
 
 Log configuration changes:
 

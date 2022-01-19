@@ -25,7 +25,7 @@ other operating systems:
 ## Names of default files used by CFTUTIL
 
 
-| **Objet**  | Default name  |
+| **Objet**  | ****Default name****  |
 | --- | --- |
 | Parameters file  | _CFTPARM  |
 | Partners file  | _CFTPART  |

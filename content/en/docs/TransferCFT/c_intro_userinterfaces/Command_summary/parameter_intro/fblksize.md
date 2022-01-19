@@ -59,8 +59,8 @@ block size and/or the file input/output buffer size.
 
 #### CFTSEND, SEND
 
-\[FBULKSIZ = n\]   {
-0...65536}
+****\[FBULKSIZ = n\]   {
+0...65536}****
 
 Block size of file to be sent.
 

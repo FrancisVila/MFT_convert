@@ -10,12 +10,12 @@
 
 #### CFTRECV, RECV
 
-\[WFNAME =
+****\[WFNAME =
 filename\]  {STRING512}
-OS
+OS****
 
-MVS {String
-248}
+****MVS {String
+248}****
 
 Name of the temporary file used during the transfer.
 
@@ -56,7 +56,7 @@ This parameter can be used for "store and forward" purposes
 (CFTRECV ID = COMMUT command).
 
 
-| MVS, VMS | This parameter is mandatory if the receiver file is a version file (in particular for operation in the open mode and when the sender sends an NFNAME corresponding to a GDG name). |
+| ****MVS, VMS**** | This parameter is mandatory if the receiver file is a version file (in particular for operation in the open mode and when the sender sends an NFNAME corresponding to a GDG name). |
 | --- | --- |
 
 
@@ -67,12 +67,12 @@ during the send, transfer of a group of files in PeSIT CFT/CFT mode.
 
 #### CFTSEND, SEND
 
-**\[WFNAME =
+******\[WFNAME =
 *filename*\]  {STRING
-512}   OS**
+512}   OS******
 
-**MVS {String
-248}**
+******MVS {String
+248}******
 
 Name of the temporary file used to send a group of files selected in
 line with the generic name specified in FNAME.
@@ -82,8 +82,8 @@ target machine. Once sent, it is deleted.
 
 Example:
 
-MVS - IEBCOPY
-procedure for partitioned files (PDSE)
+****MVS - IEBCOPY
+procedure for partitioned files (PDSE)****
 
 For additional information on the file and its structure, refer to the
 *Installation and Operations Guide* specific to your operating system.

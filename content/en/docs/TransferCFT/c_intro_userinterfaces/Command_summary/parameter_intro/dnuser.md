@@ -8,9 +8,9 @@
 
 #### CFTSSL
 
-dnuser='(string1, string2)'
+****dnuser='(string1, string2)'****
 
-Transfer CFT{{< TransferCFT/componentshortname  >}} syntax
+****Transfer CFT{{< TransferCFT/componentshortname  >}} syntax****
 
 The new syntax is listed here. For continued compatibility, you can still use
 the 2.4.x syntax.

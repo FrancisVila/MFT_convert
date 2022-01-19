@@ -24,4 +24,4 @@ Copy your token from the Transfer CFT{{< TransferCFT/componentlongname  >}} UI *
 
 #### Try it out option
 
-The ****Try it out**** option allows you to execute API requests from within the Swagger UI.
+The ******Try it out****** option allows you to execute API requests from within the Swagger UI.

@@ -14,6 +14,6 @@
 
 Sub-address common to the SU (Sub-Units) referenced by this CFTNET.
 
-Mandatory
+**Mandatory**
 
 [Return to Command index](../../)

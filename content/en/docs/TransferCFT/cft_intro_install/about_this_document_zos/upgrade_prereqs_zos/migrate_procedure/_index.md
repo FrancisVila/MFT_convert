@@ -127,7 +127,7 @@ CFTEXT ID=cft.cftaccnt.fname.atts,TYPE=UCONF,FOUT=$EXT
 Etc.
 ```
 
-Submit the procedure ..INSTALL(MIGRUCNF)
+****Submit the procedure ..INSTALL(MIGRUCNF)****
 
 1. Migrate the CATALOG file (MIGRCAT) for a non multi-node environment.
 
@@ -145,7 +145,7 @@ You can set the following variables in the MIGR$SET file and (or) in the PMIGR2 
 | TMPSCAT | 'CYL,(50,10)' | Size allocation for work file.<br/> Use 3 cylinders for every 1000 transfers to be migrated. |
 
 
-Submit the procedure ..INSTALL(MIGRCAT).
+****Submit the procedure ..INSTALL(MIGRCAT).****
 
 1. Migrate the communication media file(s) (MIGRCOM)for a non mutli-node environment.
 
@@ -163,4 +163,4 @@ You can set the following variables in the MIGR$SET file or/and in the PMIGR2 pa
 | TMPSCOM | 'CYL,(10,10)' | Size allocation for work file. |
 
 
-Submit the procedure ..INSTALL(MIGRCOM).
+****Submit the procedure ..INSTALL(MIGRCOM).****

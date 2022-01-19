@@ -117,7 +117,7 @@ The signature provides the following information:
     signature obtained by hashing all of the data in the certificate together
     and encrypting it with the CA's private key
 
-Example
+****Example****
 
 This displays the data and signature sections of a certificate in human-readable
 format:

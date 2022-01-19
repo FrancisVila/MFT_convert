@@ -8,7 +8,7 @@
 
 #### PKICER
 
-\[INAME = filename \]
+****\[INAME = filename \]****
 
 Used in PKIUTIL tool.
 

@@ -10,8 +10,8 @@
 
 #### CFTPARM
 
-\[EXECSFA =
-filename\]    {string 64}
+****\[EXECSFA =
+filename\]    {string 64}****
 
 Generic name of the file describing
 the procedures to be executed on receiving an acknowledgement (REPLY type

@@ -10,8 +10,8 @@
 
 #### CFTACCNT
 
-\[FNAME = filename \]   string
-64
+****\[FNAME = filename \]   string
+64****
 
 Name of the statistical file. This name can be a:
 
@@ -22,8 +22,8 @@ Name of the statistical file. This name can be a:
 
 #### CFTAUTH
 
-\[FNAME = filename \]    string
-512
+****\[FNAME = filename \]    string
+512****
 
 The name of the file where authorized or prohibited users are defined.
 
@@ -34,10 +34,10 @@ The number of identifiers in this list is not limited. Build the file
 using the following rules:
 
 - a record of this
-    file can only contain one idf
+    file can only contain one ****idf****
 - the size of the
     record is limited to 80 characters
-- an idf
+- an ****idf****
     must start in the first column and only the first 32 characters of the
     record are taken into account
 - characters after
@@ -47,15 +47,15 @@ using the following rules:
 - the file can contain
     records of zero length
 
-You cannot complete this field if you have selected the idf
+You cannot complete this field if you have selected the ****idf****
 button in the old Transfer CFT UI.
 
 <span id="fname_CFTCAT"></span>
 
 #### CFTCAT
 
-\[FNAME = filename \]   string
-64
+****\[FNAME = filename \]   string
+64****
 
 Catalog file name. Service files, such as Catalog and Log. This name can be:
 
@@ -183,7 +183,7 @@ Normally, the folder referenced in fname parameter should exist or the transfer 
 
 **Example**
 
-The tree structure is created after the plus special character (+):
+The tree structure is created after the plus special character (****+****):
 
 `FNAME=’/home/cft/runtime/myapp/+user1/files/&idtu.rcv`
 

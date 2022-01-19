@@ -4,7 +4,7 @@
     "weight": "300"
 }This page describes a delivered sample that is designed to create an example directory exit. You can use the TCPPARAM configuration sample that is located in CFTPROD/UTIN.
 
-Before you start
+****Before you start****
 
 Before running the directory exit test, you must make a few changes to the (TCPPARAM) file depending on the type of network used. Edit the file using
 your text editor (EDTF for example) as follows.

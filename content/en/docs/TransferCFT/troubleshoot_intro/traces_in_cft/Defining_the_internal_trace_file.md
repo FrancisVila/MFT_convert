@@ -106,7 +106,7 @@ Where **MODE=DELETE**, only the **ID** parameter is useful.
 
 `[MTRACE = {0   | 0..31}]`
 
-`[PTRACE = {0   | 0..31}]`
+**`[PTRACE = {0   | 0..31}]`**
 
 `START = {CFT   | DELAYED}`
 

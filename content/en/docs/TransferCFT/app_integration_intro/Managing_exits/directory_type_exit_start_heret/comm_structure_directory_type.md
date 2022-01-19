@@ -11,12 +11,12 @@ exit for C language as well as COBOL.
 
 If you want to keep an exit that was created in a version of Transfer
 CFT prior to V2.4, you can continue to use the following communication
-structure exitdU
+structure ****exitdU****
 between the interface and the user program:
 
 `typedef union      {          exausC exaC;          exausO exaO;          char buf[2048];} exitdU, *exitdUp;`
 
-You can create an exit using the V2.4 format exitdnT
+You can create an exit using the V2.4 format ****exitdnT****
 communication structure between the interface and the user program as
 follows:
 
@@ -38,4 +38,4 @@ delivered with the Transfer CFT{{< TransferCFT/componentshortname  >}} product.
 
 If the user program is written in COBOL, the C-COBOL interfacing rules
 must be complied with. Refer to the Transfer CFT{{< TransferCFT/componentshortname  >}} delivered samples defined
-in exaus.cop.
+in ****exaus.cop****.

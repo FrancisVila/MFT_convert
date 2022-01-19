@@ -68,8 +68,8 @@ The available &lt;param> are listed in the following table.
 | &lt;verb&gt; | &lt;param&gt; | Explanation |
 | --- | --- | --- |
 | F-OPEN | D-CAT | Path name or logical name of the catalog file. If the name is blank, Transfer CFTI uses a default name. |
-| F-SELECT | Z-SEL | Selection criteria according to the format described in the "Selection data description" in the cft.apicop file. If a field is blank or equal to binary zeros, it is considered not selective.<br/> This field can contain:<br/> • the size of the selection criteria field (SLENTGTH) and the size of the field supporting the catalog entry (CLENGTH) in order to avoid recompiling the application program if these two fields are extended.<br/> • the transfer start and end date (BDATE and EDATE) to select transfers performed between these two dates.<br/> • a mask with the special characters "?" and *". The "?" character replaces any character. The "*" character replaces a character string of any length.<br /> <br /> Examples:<br /> A*D replaces ABCD, ABCED or AID<br /> A??D replaces ABCD, AXYD or AQZD<br /> *CD replaces ABECD, YXZCDor TYUICD<br /> ?CD replaces ACD, XCD or ZCD<br /> ?B* replaces ABCDEF, XBZWEO or *KBWXCV<br /> ???? replaces ABCD, XYZW or HGFD |
-| F-NEXT | Z-CAT | Next catalog entry according to the format described in the "Selection data description" in the cft.apicop file.<br/> The length of this field is defined by the SELECT service. See the CLENGTH field in the Selection data description. |
+| F-SELECT | Z-SEL | Selection criteria according to the format described in the "S**election data description"** in the ****cft.apicop**** file. If a field is blank or equal to binary zeros, it is considered not selective.<br/> This field can contain:<br/> • the size of the selection criteria field (SLENTGTH) and the size of the field supporting the catalog entry (CLENGTH) in order to avoid recompiling the application program if these two fields are extended.<br/> • the transfer start and end date (BDATE and EDATE) to select transfers performed between these two dates.<br/> • a mask with the special characters "?" and *". The "?" character replaces any character. The "*" character replaces a character string of any length.<br /> <br /> Examples:<br /> A*D replaces ABCD, ABCED or AID<br /> A??D replaces ABCD, AXYD or AQZD<br /> *CD replaces ABECD, YXZCDor TYUICD<br /> ?CD replaces ACD, XCD or ZCD<br /> ?B* replaces ABCDEF, XBZWEO or *KBWXCV<br /> ???? replaces ABCD, XYZW or HGFD |
+| F-NEXT | Z-CAT | Next catalog entry according to the format described in the "S**election data description**" in the ****cft.apicop**** file.<br/> The length of this field is defined by the SELECT service. See the CLENGTH field in the Selection data description. |
 | F-MODIFY | M-STATE | New state of a transfer to be placed in the catalog entry previously read:<br/> • ‘D’ at Disposal: only valid if the former state is H or K<br/> • ‘H’ Hold: only valid if the former state is D, C or K<br/> • ‘K’ Keep: only valid if the former state is D, C or H<br/> • ‘X’ eXecuted: only valid if the former state is T<br/> • ‘P’ Purge: deletes the catalog entry |
 | F-CLOSE |   | No &lt;param&gt; needed |
 
@@ -97,7 +97,7 @@ QQQ\_QQQ\_QQQ
 |  - " -  | CAPI-SEL-FDATE | FDATE criterion incorrect |
 |  - " -  | CAPI-SEL-CDATE | CDATE criterion incorrect |
 |  - " -  | CAPI-SEL-BDATE | BDATE criterion incorrect |
-|  - " -  | CAPI-SEL-DATE | EDATE criterion incorrect |
+|  - " -  | CAPI-SEL-DATE | ****EDATE criterion incorrect**** |
 | **NEXT code only**  | CAPI-CAT-EOF | End of catalog file |
 |  - " -  | CAPI-CAT-READ | Catalog file read error |
 | **MODIFY code only**  | CAPI-MOD-OSTATE | State invalid |

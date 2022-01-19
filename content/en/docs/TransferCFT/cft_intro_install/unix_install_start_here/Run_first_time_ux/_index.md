@@ -41,7 +41,7 @@ After installing Transfer CFT{{< TransferCFT/componentshortname  >}}
 > Caution  
 > These commands generate an initial configuration by creating the configuration files. Any previous configurations, and any data in the communication file, catalog, or log files will be lost.
 
-Sample file details
+****Sample file details****
 
 - cft-tcp.conf: Contains PARM object definitions (PARM, CAT, COM, LOG, ACCNT, PROT, SEND, RECV,...etc.)
 - cft-tcp-part.conf: Contains partner definitions (CFTPART, CFTTCP, CFTSSL)

@@ -8,7 +8,7 @@
 
 #### CFTPROT
 
-\[RPACING = { <u>32767</u> | n } \]  {0...32767}
+****\[RPACING = { <u>32767</u> | n } \]  {0...32767}****
 
 Internal size, in Kbytes, between the two synchronization points for
 the receiver (default = 32767). This value is negotiated with the spacing of the sender.

@@ -8,7 +8,7 @@
 
 #### CFTNET, TYPE = TCP
 
-\[HOST = string64\]
+****\[HOST = string64\]****
 
 Networking IP address of the local resource. If you are defining a proxy, you may only enter one proxy host/port per CFTNET object.
 
@@ -32,13 +32,13 @@ numerical format) or a host name.
 
 #### CFTCOM, TYPE = TCPIP
 
-\[HOST = string64\]
+****\[HOST = string64\]****
 
 Networking IP address of the local resource.
 
 #### CFTTCP, TYPE = TCP
 
-\[HOST = string512\]
+****\[HOST = string512\]****
 
 Networking IP address for the local resource.
 

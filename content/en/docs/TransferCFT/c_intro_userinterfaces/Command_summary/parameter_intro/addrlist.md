@@ -8,7 +8,7 @@
 
 #### CFTCOM
 
-\[addrlist = {string 1...64, string 1...64}\]
+****\[addrlist = {string 1...64, string 1...64}\]****
 
 Use this field to define a list of authorized addresses that you can
 use to connect to the communication media.

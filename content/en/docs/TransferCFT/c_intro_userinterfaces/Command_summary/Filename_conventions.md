@@ -55,7 +55,7 @@ used in FNAME except in the case of an implicit SEND command.
 The ‘&’ character used here replaces the char\_symb character specific
 to each operating system .
 
-Refer to the Transfer CFT{{< TransferCFT/componentshortname  >}} *Installation and Operations Guide* that
+Refer to the **Transfer CFT**{{< TransferCFT/componentshortname  >}} *Installation and Operations Guide* that
 corresponds to your OS.
 
 ### Reconstitute a filename

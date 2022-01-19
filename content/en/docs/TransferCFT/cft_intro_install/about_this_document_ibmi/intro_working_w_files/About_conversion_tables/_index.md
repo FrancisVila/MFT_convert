@@ -49,7 +49,7 @@ The CFTPROD/tabaseb.x binary file is created: it constitutes the conversion tabl
 The following is a full Transfer CFT Transfer CFT IBM i configuration sample for a Windows system, which is a typical and frequent scenario.
 
 ```
-Transfer CFT IBM i configuration
+**Transfer CFT IBM i configuration**
 CFTXLATE MODE=REPLACE,
          ID=TABASEB,
          DIRECT=RECV,
@@ -68,7 +68,7 @@ CFTRECV MODE=REPLACE, ID=………,
           …………………….
  
  
-Transfer CFT WIN/NT configuration
+**Transfer CFT WIN/NT configuration**
 ============
  
 cftrecv  id       = …………,

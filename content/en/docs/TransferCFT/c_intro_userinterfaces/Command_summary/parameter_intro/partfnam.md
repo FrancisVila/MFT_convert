@@ -8,7 +8,7 @@
 
 #### CFTPARM
 
-\[PARTFNAME = filename\]
+****\[PARTFNAME = filename\]****
 
 *This parameter is obsolete for Windows, UNIX, and HP NonStop as the filename is created in CFTPARM  by default.*
 

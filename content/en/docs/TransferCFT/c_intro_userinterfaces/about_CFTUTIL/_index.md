@@ -175,7 +175,7 @@ The help command enables you to get more information on a command and its parame
 
 ```
 > CFTUTIL [to start CFTUTIL]
-help
+**help**
 
 HELP SEND LISTCAT DISPLAY DELETE END HALT
 KEEP START RECV SUBMIT ABOUT LISTCOM SHUT

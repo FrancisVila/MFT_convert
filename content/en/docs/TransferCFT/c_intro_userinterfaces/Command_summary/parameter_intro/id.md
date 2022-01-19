@@ -13,7 +13,7 @@ This affects all Transfer CFT{{< TransferCFT/componentshortname  >}} commands.
 
 #### CFTAUTH
 
-\[ID = identifier \]
+****\[ID = identifier \]****
 
 Authorization list identifier.
 
@@ -32,7 +32,7 @@ keywords SAUTH or RAUTH.
 
 #### CFTCAT
 
-\[ID = identifier \]
+****\[ID = identifier \]****
 
 Identifier for the CFTCAT object.
 
@@ -40,7 +40,7 @@ Identifier for the CFTCAT object.
 
 #### CFTDEST
 
-\[ID = identifier \]
+****\[ID = identifier \]****
 
 Identifier of the list of partners.
 
@@ -51,10 +51,10 @@ the same ID.
 
 #### CFTEXIT
 
-\[ID = identifier \]
+****\[ID = identifier \]****
 
-**See
-Identifier table below**
+******See
+Identifier table below******
 
 Command identifier (32 characters).
 
@@ -177,11 +177,11 @@ Network resource identifier.
 
 #### CFTACCNT, CFTCOM, CFTIDF, CFTNET, CFTTCP, CFTTRACE, CFTAPPL, CFTSSL, CFTEXT, LISTPARM, LISTPART
 
-\[ID = identifier \]
+****\[ID = identifier \]****
 
 #### PKIENTITY
 
-\[ID = identifier \]
+****\[ID = identifier \]****
 
 Identifier for a list of certificate authorities.
 

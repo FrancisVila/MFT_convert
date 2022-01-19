@@ -74,7 +74,7 @@ QQQ\_QQQ\_QQQ split BIG table
 
 | Parameter  | Automatic or default  | Description  | UCONF  |
 | --- | --- | --- | --- |
-| Key |   | Key for Transfer CFT. The key is stored in the $CFTDIRRUNTIME/conf/cft.key.<br/> Without the key you can install, but not start the product. |   |
+| Key |   | Key for Transfer CFT. The key is stored in the $CFTDIRRUNTIME/conf/cft.key.<br/> **Without the key you can install, but not start the product.** |   |
 | Catalog_File_Size  | @default= 10000  | Sets the default catalog size. | cft.cftcat.default_size  |
 | Communication_File_Size  | @default = 1000  | Sets the default communication file size.  | cft.cftcom.default_size  |
 | PESIT_Port  | @default = 1761  | The port number of the PeSiT protocol.<br/>  | samples.pesitany_sap.value  |
@@ -106,11 +106,11 @@ QQQ\_QQQ\_QQQ split BIG table
 | Parameter  | Automatic or default  | Description  | UCONF  |
 | --- | --- | --- | --- |
 | CG_Enable | @default = No | Enter Yes to enable Central Governance connectivity.  | cg.enable  |
-| CG_Host  |   | The Central Governance host address.<br/> If you enabled Central Governance{{< TransferCFT/centralgovernancename  >}}, you must complete this field. | cg.host  |
-| CG_Port | @default = 12553  | Central Governance port.<br/> When CG is enabled, this cannot be empty. | cg.port  |
-| CG_Mutual_Port  | @default = 12554  | The Central Governance port for Mutual Authentication.<br/> If you enabled Central Governance{{< TransferCFT/centralgovernancename  >}}, you must complete this field. | cg.mutual_auth_port  |
-| CG_RestAPI_Port  | @default = 8081  | Specify the port to use to communicate with Central Governance's REST API (this port is only used when am.type=cg).<br/> If you enabled Central Governance{{< TransferCFT/centralgovernancename  >}}, you must complete this field. | cg.restapi_port  |
-| CG_SharedSecret  |   | Specify the shared secret, which is needed to register with the Central Governance server.<br/> If you enabled Central Governance{{< TransferCFT/centralgovernancename  >}}, you must complete this field. | cg.shared_secret  |
+| CG_Host  |   | The Central Governance host address.<br/> **If you enabled Central Governance{{< TransferCFT/centralgovernancename  >}}, you must complete this field.** | cg.host  |
+| CG_Port | @default = 12553  | Central Governance port.<br/> **When CG is enabled, this cannot be empty.** | cg.port  |
+| CG_Mutual_Port  | @default = 12554  | The Central Governance port for Mutual Authentication.<br/> **If you enabled Central Governance{{< TransferCFT/centralgovernancename  >}}, you must complete this field.** | cg.mutual_auth_port  |
+| CG_RestAPI_Port  | @default = 8081  | Specify the port to use to communicate with Central Governance's REST API (this port is only used when am.type=cg).<br/> **If you enabled Central Governance{{< TransferCFT/centralgovernancename  >}}, you must complete this field.** | cg.restapi_port  |
+| CG_SharedSecret  |   | Specify the shared secret, which is needed to register with the Central Governance server.<br/> **If you enabled Central Governance{{< TransferCFT/centralgovernancename  >}}, you must complete this field.** | cg.shared_secret  |
 | CG_ConfigurationPolicy  |   | Specify Central Governance configuration policy to apply on the Transfer CFT instance.  | cg.configuration_policy  |
 | CG_Certificate_Path  | @default = $CFTDIRRUNTIME/conf/pki/passportCA.pem  | Specify Custom Certificate to authenticate Central Governance.  | N/A  |
 
@@ -120,7 +120,7 @@ QQQ\_QQQ\_QQQ split BIG table
 
 | Parameter  | Automatic or default  | Description  | UCONF  |
 | --- | --- | --- | --- |
-| Sentinel_Enable  | @default = No  | Set to Yes to enable Sentinel.<br/> Do not enable this if you have enabled Central Governance{{< TransferCFT/centralgovernancename  >}}. | sentinel.xfb.enable  |
+| Sentinel_Enable  | @default = No  | Set to Yes to enable Sentinel.<br/> **Do not enable this if you have enabled Central Governance{{< TransferCFT/centralgovernancename  >}}.** | sentinel.xfb.enable  |
 | Sentinel_Host  |   | Enter the Sentinel host address.  | sentinel.trkipaddr  |
 | Sentinel_Port  | @default= 1305  | Enter the Sentinel port.<br/> You do not need to define this field if you are registering Transfer CFT with Central Governance{{< TransferCFT/centralgovernancename  >}}. | sentinel.trkipport  |
 | Sentinel_Log_Filter  | @default = EWF  | Sentinel Log Filter: (I)nformation, (W)arning, (E)rror, (F)atal Authorized characters are only I, W, E, F<br/> You can only use each letter once. | sentinel.xfb.log  |

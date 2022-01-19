@@ -6,7 +6,7 @@
 
 ### exit
 
-\[EXIT = identifier \]
+****\[EXIT = identifier \]****
 
 <span id="exit_CFTSEND"></span>
 

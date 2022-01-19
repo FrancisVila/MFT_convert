@@ -8,8 +8,8 @@
 
 #### CFTDEST
 
-\[NOPART = {abort
-| continue | ignore }\]
+****\[NOPART = {abort
+| continue | ignore }\]****
 
 Do not complete this field if you
 completed the fname field.
@@ -17,11 +17,11 @@ completed the fname field.
 Define the actions to perform when a partner in the partner list is
 not found. Options are:
 
-- abort
+- ****abort****
     (default)
-- continue:
+- ****continue****:
     to display an information message and continue processing
-- ignore:
+- ****ignore****:
     continue processing with no information message
 
  

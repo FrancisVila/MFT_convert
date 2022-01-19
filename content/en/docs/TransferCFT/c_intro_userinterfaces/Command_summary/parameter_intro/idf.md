@@ -10,7 +10,7 @@
 
 #### END, START, KEEP, HALT, SUBMIT, DELETE, LISTCAT, DISPLAY, RESUME, KSTATE
 
-\[IDF = identifier\]
+****\[IDF = identifier\]****
 
 File type identifier.
 
@@ -24,14 +24,14 @@ of 20 every 5 seconds.
 
 #### CFTAUTH
 
-\[IDF = {identifier | mask, identifier | mask
-} \]
+****\[IDF = {identifier | mask, identifier | mask
+} ****\]********
 
 List of authorized or prohibited IDF.
 
 Specify a list of up to 200 model file identifiers.
 
-The value associated with each of these idfs
+The value associated with each of these ****idfs****
 can be:
 
 - an explicit file
@@ -42,7 +42,7 @@ can be:
 
 #### CFTETB
 
-\[IDF = identifier\]
+****\[IDF = identifier\]****
 
 Local identifier of the model file associated with this card format
 (ID of CFTSEND/ CFTRECV).
@@ -78,7 +78,7 @@ ALL,     IDF     =    
 
 #### CFTPART
 
-\[IDF = identifier \]
+****\[IDF = identifier \]****
 
 Default 32-character identifier of the file for the partner.
 
@@ -113,7 +113,7 @@ The value of this parameter may be:
     to the NIDF received), the character string must not be more than 64 characters
     long. See the definition of a "substring" of a [symbolic variable](../../symbolic_variables).
 
-Example:
+****Example:****
 
 For a received NIDF containing 19 characters, IDF may take the value:
 IDF=&2.3NIDF&12.5NIDF.
@@ -129,7 +129,7 @@ In the above example, the length of the IDF value is:
 
 #### SEND
 
-\[ IDF = identifier \]
+****\[ IDF = identifier \]****
 
 File identifier.
 
@@ -141,7 +141,7 @@ If the idf is specified, but does not exist, the idf is forced to IDFDEF, you ca
 
 #### RECV
 
-\[ IDF = { identifier | mask } \]
+****\[ IDF = { identifier | mask } \]****
 
 File identifier.
 

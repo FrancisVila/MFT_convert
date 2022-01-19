@@ -15,7 +15,7 @@
 
 ## Procedure
 
-Unix and Windows
+**Unix and Windows**
 
 Execute the following steps:
 

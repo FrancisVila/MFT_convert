@@ -6,7 +6,7 @@
 
 #### CFTSEND
 
-\[ filter = { string } \]
+****\[ filter = { string } \]****
 
 Defines the filter value to be used when filtering using method defined in filtertype.
 

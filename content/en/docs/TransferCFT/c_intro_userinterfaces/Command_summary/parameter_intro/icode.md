@@ -8,7 +8,7 @@
 
 #### COPYFILE
 
-\[ICODE = ASCII, EBCDIC \]
+****\[ICODE = ASCII, EBCDIC \]****
 
 COPYFILE parameter that codes the input file data.
 

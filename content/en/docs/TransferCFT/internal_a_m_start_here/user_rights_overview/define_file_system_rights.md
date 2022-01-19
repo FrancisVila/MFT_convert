@@ -19,7 +19,7 @@ You must give each additional Transfer CFT{{< TransferCFT/componentlongname  >}}
 1. Right-click the ****Transfer CFT{{< TransferCFT/componentshortname >}}**** program folder.
 1. Select ****Properties****.
 1. In the Properties window, select the ****Security**** tab.
-1. In the Security tab, select the user and grant the user read and write rights. Click **OK**.
+1. In the ****Security**** tab, select the user and grant the user read and write rights. Click **OK**.
 
 ## z/OS tasks
 

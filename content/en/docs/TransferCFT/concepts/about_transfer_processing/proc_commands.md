@@ -70,7 +70,7 @@ Depending on the operating system, the temporary file is treated as follows:
 
 ### Directly executing a program or a processing script
 
-Available on Windows and Unix
+**Available on Windows and Unix**
 
 A second method for executing scripts is to directly run a script. This method allows you to put command arguments directly in the exec parameter itself. However, while you may use symbolic variables in the exec, any symbolic variables contained within the script are not replaced during script execution.
 
@@ -133,7 +133,7 @@ The end command monitors the script completion. Depending on the parameter used 
 
 #### Define istate and appstate
 
-Example
+****Example****
 
 ```
 CFTUTIL end part=&PART,idtu=&IDTU,istate=no,appstate="completed"
@@ -141,7 +141,7 @@ CFTUTIL end part=&PART,idtu=&IDTU,istate=no,appstate="completed"
 
 The command CFTUTIL END can be use to set checkpoints in the script execution using the istate=yes (istate is an intermediate state) and APPSTATE value. Doing so allows you to see the step running the script in Transfer CFT{{< TransferCFT/componentshortname  >}}.
 
-Example
+****Example****
 
 ```
 CFTUTIL end part=&PART,idtu=&IDTU,istate=yes,appstate="step_1"CFTUTIL end part=&PART,idtu=&IDTU,istate=yes,appstate="step_2"

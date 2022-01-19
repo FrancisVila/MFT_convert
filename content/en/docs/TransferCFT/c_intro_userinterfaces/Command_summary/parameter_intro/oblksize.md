@@ -8,7 +8,7 @@
 
 #### COPYFILE
 
-\[OBLKSIZE = {IBLKSIZE value | n }\]
+****\[OBLKSIZE = {IBLKSIZE value | n }\]****
 
 Output file block size, in bytes. The value indicated must be greater
 than the value of the OLRECL parameter.  

@@ -6,7 +6,7 @@
 a transfer request only if the partner is pre-defined in the parameter
 settings. This topic describes a mode where Transfer CFT{{< TransferCFT/componentshortname  >}} can accept a
 connection from a partner that is not already defined. This type of partner
-is referred to as a dynamic partner.
+is referred to as a **dynamic partner**.
 
 Transfer CFT{{< TransferCFT/componentshortname  >}} can accept connections from a correspondent not defined
 in advance by:

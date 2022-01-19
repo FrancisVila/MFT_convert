@@ -8,8 +8,8 @@
 
 #### CFTSEND, SEND, CFTRECV, RECV
 
-**\[PRI = {<u>128</u>
-| n}\]** {0..255}\]
+******\[PRI = {<u>128</u>
+| n}\]** {0..255}\]****
 
 Defines the priority for transfer requests.
 

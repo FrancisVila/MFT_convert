@@ -8,8 +8,8 @@
 
 #### CFTCAT, CFTCOM FILE
 
-\[ TLVWRATE = { 0...65535
-} \]
+****\[ TLVWRATE = { 0...65535
+} \]****
 
 The minimum amount of time, in seconds, to wait before resending an alert. When an alert is issued, the wait time is TLVWRATE, in seconds, before resending the alert.
 

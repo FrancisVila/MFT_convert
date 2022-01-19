@@ -2,8 +2,8 @@
     "title": "Catalog attributes ",
     "linkTitle": "CFTCAT - Catalog attributes ",
     "weight": "240"
-}Related
-topics
+}****Related
+topics****
 
 - Command syntax
     [CFTCAT](../../../c_intro_userinterfaces/command_summary#CFTCAT)
@@ -29,7 +29,7 @@ but does not disrupt transfers.
 Catalog functions include a method to recover information about the
 CFT that is using the catalog.
 
-For each PARM, there is one
+For each ****PARM****, there is one
 associated CFTCAT.
 
 ### Catalog levels

@@ -10,15 +10,15 @@
 
 #### CFTPARM
 
-\[WAITTASK = { <u>10</u> | n }\]    {1...1441}
+****\[WAITTASK = { <u>10</u> | n }\]    {1...1441}****
 
 The inactivity time, in minutes, for a file access task before it is terminated:
 
-- 1: Minimum value
-- 10: Waits for 10 minutes after no activity is detected before terminating the task
+- ****1****: Minimum value
+- ****10****: Waits for 10 minutes after no activity is detected before terminating the task
 - **1441**: Makes the task permanent
 
-z/OS: The recommended value is **waittask=5**. This value ensures that existing tasks are reused when possible, and can reduce CPU consumption under heavy transfer loads. When the value is set to 1, unused tasks are eliminated as quickly as possible.
+****z/OS:**** The recommended value is **waittask=5**. This value ensures that existing tasks are reused when possible, and can reduce CPU consumption under heavy transfer loads. When the value is set to 1, unused tasks are eliminated as quickly as possible.
 
 <span id="waittask_CFTEXIT"></span>
 

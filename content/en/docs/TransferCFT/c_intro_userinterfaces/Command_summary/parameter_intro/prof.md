@@ -10,7 +10,7 @@
 
 ****TYPE = PeSIT****
 
-\[PROF = {SIT | CFT | EXTERN | ANY | DMZ }\]
+****\[PROF = {SIT | CFT | EXTERN | ANY | DMZ }\]****
 
 PeSIT
 D or E protocol profile

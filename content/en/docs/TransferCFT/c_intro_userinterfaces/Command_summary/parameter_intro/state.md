@@ -53,13 +53,13 @@ Select one of the following transfer states:
 
 State of the partner:
 
-- ACTIVEBOTH (default)- partner active
+- ****ACTIVEBOTH**** (default)- partner active
     in all modes
-- ACTIVEREQ - partner active in request
+- ****ACTIVEREQ**** - partner active in request
     mode only
-- ACTIVESERV - partner active in server
+- ****ACTIVESERV**** - partner active in server
     mode only
-- NOACTIVE - partner not active
+- ****NOACTIVE**** - partner not active
 
 #### PKICER (PKIUTIL tool)
 

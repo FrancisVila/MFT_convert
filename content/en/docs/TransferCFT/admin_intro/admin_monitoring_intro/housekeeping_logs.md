@@ -17,8 +17,8 @@ for the name of the log file.
 
 ### Rotate procedures
 
-UNIX/Windows
-&lt;/p>
+**UNIX/Windows
+&lt;/i>&lt;/p>**
 
 #### Use the internal log rotation procedure
 
@@ -108,7 +108,7 @@ VALUE ="Excludes from the log all cronjob messages concerning the ID HEARTBEAT"
 
 ## Create a daily log file rotation
 
-Available on Unix, Windows, and iSeries environments
+*Available on Unix, Windows, and iSeries environments*
 
 This section describes how to create daily, rolling log files that are not impacted by the number of Transfer CFT reboots.
 

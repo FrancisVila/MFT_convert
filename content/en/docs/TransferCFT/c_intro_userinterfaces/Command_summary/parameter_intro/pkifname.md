@@ -12,22 +12,22 @@
 
 #### CFTPARM
 
-\[PKIFNAME = filename\]
+****\[PKIFNAME = filename\]****
 
 *Obsolete for Windows and UNIX as this is created in CFTPARM  by default.*
 
 Name of the local certificate internal datafile in which the operation is to
 be performed. On each OS a default name is assigned to the local certificate
-database. The logical filename &CFTPKU
+database. The logical filename ****&CFTPKU****
 can be used.
 
 #### PKIENTITY
 
-\[PKIFNAME = filename\]
+****\[PKIFNAME = filename\]****
 
 Name of the local certificate internal datafile in which the operation is to
 be performed. On each OS a default name is assigned to the local certificate
-database. The logical filename &CFTPKU
+database. The logical filename ****&CFTPKU****
 can be used.
 
  

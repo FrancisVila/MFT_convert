@@ -26,7 +26,7 @@ Using CFTUTIL you can perform the following commands.
 
 ### Activate a partner
 
-Syntax
+****Syntax****
 
 ```
 ACT TYPE=PART,ID=<CFTPART_ID>,MODE=<mode>
@@ -37,7 +37,7 @@ Where:
 - CFTPART\_ID is the identifier for the partner to activate. To activate several partners with a single command, use wildcard characters or meta characters
 - Mode is the mode to be activated, with values: "BOTH" , "B", "REQUESTER", "R" , "SERVER", "S"
 
-Example
+****Example****
 
 To activate a partner called PARIS in both modes, enter:
 
@@ -66,7 +66,7 @@ by the INACT command:
 
 ### Activate Sentinel notifications
 
-Syntax
+****Syntax****
 
 ```
 ACT TYPE=TRK
@@ -76,7 +76,7 @@ All notifications to Sentinel are reactivated. However, the UCONF` sentinel.xfb.
 
 ### Activate a CRON object
 
-Syntax
+****Syntax****
 
 ```
 ACT TYPE=CRON,ID=<CFTCRON_ID>
@@ -84,7 +84,7 @@ ACT TYPE=CRON,ID=<CFTCRON_ID>
 
 Where `CFTCRON_ID` is the identifier of the CRON object to activate. To activate several CRON objects with a single command, use wildcard characters or meta characters.
 
-Example
+****Example****
 
 To activate a CRON referenced by CRON1, enter:
 
@@ -101,7 +101,7 @@ CFTU00I ACT _ Correct (TYPE=CRON,ID=CRON1)
 
 ### Activate a folder object
 
-Syntax
+****Syntax****
 
 ```
 ACT TYPE=FOLDER,ID=<CFTFOLDER_ID>
@@ -109,7 +109,7 @@ ACT TYPE=FOLDER,ID=<CFTFOLDER_ID>
 
 Where `CFTFOLDER_ID` is the identifier to the folder object to activate. To activate several folder objects with a single command, use wildcard characters or meta characters.
 
-Example
+****Example****
 
 To activate the folder referenced by USER1, enter:
 

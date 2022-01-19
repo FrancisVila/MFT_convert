@@ -35,7 +35,7 @@ QQQ\_QQQ\_QQQ
 | <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/state">STATE</a>  | Transfer state.<br/> The default value * means no selection is required to be made on the transfer state. (refer to the Transfer-related successive phases and actions). |
 
 
-Example 1
+****Example 1****
 
 ```
 DELETE        PART = SIE??
@@ -45,7 +45,7 @@ This command deletes all transfers, IDT = \* by default, in the send
 and receive directions, DIRECT = BOTH by default, for the partners whose
 identifier begins with "SIE" and contains 5 characters in all.
 
-Example 2
+****Example 2****
 
 ```
 DELETE

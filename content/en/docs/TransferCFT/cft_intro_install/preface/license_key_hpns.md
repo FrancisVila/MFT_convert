@@ -9,7 +9,7 @@
 
 ## Obtain a license key
 
-1. After completing the installation, or for an existing installation, use the command cftutil about to retrieve your system information.
+1. After completing the installation, or for an existing installation, use the command ****cftutil about**** to retrieve your system information.
 
     > **Note**
     >
@@ -36,7 +36,7 @@ To apply the license key, enter the Transfer CFT key in the indirection file, wh
 
 ## About command
 
-Use the CFTUTIL utility to execute the about command to find the CPU ID and general system information as demonstrated in this example.
+Use the CFTUTIL utility to execute the ****about**** command to find the CPU ID and general system information as demonstrated in this example.
 
 ```
 Host information :

@@ -58,8 +58,8 @@ The available verbs are listed in the following table.
 | SELECT | Define selection criteria |
 | NEXT | Read next entry |
 | MODIFY | Modify catalog entry state |
-| SORT | cftaix only<br/> Sort the selected catalog entries |
-| DO | cftaix only<br/> Do the current selection and the requested sort in memory |
+| SORT | ****cftaix only****<br/> ****Sort the selected catalog entries**** |
+| DO | ****cftaix only****<br/> Do the current selection and the requested sort in memory |
 | CLOSE | Close catalog |
 
 
@@ -69,10 +69,10 @@ The available &lt;param> are listed in the following table.
 | &lt;verb&gt; | &lt;param&gt; | Explanation |
 | --- | --- | --- |
 | OPEN | cat | Path name or logical name of the catalog file. If the name is blank, Transfer CFT uses a default name. |
-| SELECT<br/> and SELECT240 | &amp;cftsel | Selection criteria according to the format described in the "Selection data description" in the cftapi.h file.<br/> • cftsel230T for SELECT service<br/> • cftsel240T for SELECT240 service<br/> All the fields must be defined by left-aligned character strings. If a field is equal to binary zeros, it is considered not selective.<br/> This structure can contain:<br/> • The size of the selection criteria field (slength) and the size of the field supporting the catalog entry (clength) in order to avoid recompiling the application program if these two fields are extended.<br/> • The transfer start and end date (BDATE and EDATE) to select transfers performed between these two dates.<br/> • A field can be composed of a mask with the special characters "?" and *". The "?" character replaces any character. The "*" character replaces a character string of any length.<br /> <br /> Examples:<br /> A*D replaces ABCD, ABCED or AID<br /> A??D replaces ABCD, AXYD or AQZD<br /> *CD replaces ABECD, YXZCDor TYUICD<br /> ?CD replaces ACD, XCD or ZCD<br /> ?B* replaces ABCDEF, XBZWEO or *KBWXCV<br /> ???? replaces ABCD, XYZW or HGFD<br/> You should initialize the following:<br/> • The param field to binary zero before defining it<br/> • The slength and clength by "itoa()"<br/> cftaix only<br/> The selection is only taken into account at the time the DO service is called. |
-| NEXT<br/> and<br/> NEXT240 | &amp;cftcat | Next catalog entry according to the format described in the "Selection data description" in the cftapi.h file.<br/> • cftcatT for NEXT service<br/> • cftcat240T for NEXT240 service |
+| SELECT<br/> and SELECT240 | &amp;cftsel | Selection criteria according to the format described in the "**Selection data description**" in the ****cftapi.h**** file.<br/> • cftsel230T for SELECT service<br/> • cftsel240T for SELECT240 service<br/> All the fields must be defined by left-aligned character strings. If a field is equal to binary zeros, it is considered not selective.<br/> This structure can contain:<br/> • The size of the selection criteria field (slength) and the size of the field supporting the catalog entry (clength) in order to avoid recompiling the application program if these two fields are extended.<br/> • The transfer start and end date (BDATE and EDATE) to select transfers performed between these two dates.<br/> • A field can be composed of a mask with the special characters "?" and *". The "?" character replaces any character. The "*" character replaces a character string of any length.<br /> <br /> Examples:<br /> A*D replaces ABCD, ABCED or AID<br /> A??D replaces ABCD, AXYD or AQZD<br /> *CD replaces ABECD, YXZCDor TYUICD<br /> ?CD replaces ACD, XCD or ZCD<br /> ?B* replaces ABCDEF, XBZWEO or *KBWXCV<br /> ???? replaces ABCD, XYZW or HGFD<br/> You should initialize the following:<br/> • The param field to binary zero before defining it<br/> • The slength and clength by "itoa()"<br/> ****cftaix only****<br/> The selection is only taken into account at the time the DO service is called. |
+| NEXT<br/> and<br/> NEXT240 | &amp;cftcat | Next catalog entry according to the format described in the "**Selection data description**" in the ****cftapi.h**** file.<br/> • cftcatT for NEXT service<br/> • cftcat240T for NEXT240 service |
 | MODIFY | &amp;nstate | New state of a transfer to be placed in the catalog entry previously read:<br/> • ‘D’ at Disposal: only valid if the former state is H or K<br/> • ‘H’ Hold: only valid if the former state is D, C or K<br/> • ‘K’ Keep: only valid if the former state is D, C or H<br/> • ‘X’ eXecuted: only valid if the former state is T<br/> • ‘P’ Purge: deletes the catalog entry*. It is only valid if the current state is D, H, K, T or X |
-| SORT | param | cftaix only<br/> Sort options as described in the "Sort structure of the selected catalog entries" in the cftapi.h file.<br/> The function is only taken into account at the time the DO service is called. |
+| SORT | param | ****cftaix only****<br/> Sort options as described in the "**Sort structure of the selected catalog entries**" in the ****cftapi.h**** file.<br/> The function is only taken into account at the time the DO service is called. |
 | DO | " " |   |
 | CLOSE | " " |   |
 
@@ -88,7 +88,7 @@ system
 
 `CAPI_INT_PTR`: &lt;ptr> parameter invalid
 
-OPEN code only
+****OPEN code only****
 
 `CAPI_MEM_GET`: Memory allocation error
 
@@ -96,7 +96,7 @@ OPEN code only
 
 `CAPI_CAT_OPEN`: Catalog file opening problem
 
-SELECT code only
+****SELECT code only****
 
 `CAPI_SEL_DIRECT`: DIRECTION criterion incorrect
 
@@ -119,13 +119,13 @@ SELECT code only
 `CAPI_SEL_DATE`: EDATE
 criterion incorrect
 
-NEXT code only
+****NEXT code only****
 
 `CAPI_CAT_EOF`: End of catalog file
 
 `CAPI_CAT_READ`: Catalog file read error
 
-MODIFY code only
+****MODIFY code only****
 
 `CAPI_CAT_MODIFY`: cftaix only, Modification error
 
@@ -141,11 +141,11 @@ MODIFY code only
 
 `CAPI_COM_CLOSE`: Communication medium closing problem
 
-SORT code only (cftaix only)
+****SORT code only (cftaix only)****
 
 `CAPI_CATSORT`: sort incorrect
 
-DO code only (cftaix only)
+****DO code only (cftaix only)****
 
 `CAPI_CAT_CLOSE`: Error on closing the catalog
 
@@ -155,7 +155,7 @@ DO code only (cftaix only)
 
 `CAPI_ERREXEC`: Execution error
 
-CLOSE code only
+****CLOSE code only****
 
 `CAPI_MEM_FREE`: Memory de-allocation error
 

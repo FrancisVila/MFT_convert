@@ -18,7 +18,7 @@ Additionally you can:
 
 - **Custom**: Create new roles
 
-Please refer to the [*Transfer CFT *3.9{{< TransferCFT/releasenumber  >}} *Security Guide*](https://docs.axway.com/bundle/TransferCFT_36_SecurityGuide_allOS_en_HTML5/page/Content/security_guide/predefined_privileges.htm) for a complete list of privileges and roles. Login is required. Additionally, the <a href="" class="MCXref xref"> </a> page describes three use cases and their configuration.
+Please refer to the [*Transfer CFT *3.9**{{< TransferCFT/releasenumber  >}} *Security Guide*](https://docs.axway.com/bundle/TransferCFT_36_SecurityGuide_allOS_en_HTML5/page/Content/security_guide/predefined_privileges.htm) for a complete list of privileges and roles. Login is required. Additionally, the <a href="" class="MCXref xref"> </a> page describes three use cases and their configuration.
 
 ## Configuring internal access management
 

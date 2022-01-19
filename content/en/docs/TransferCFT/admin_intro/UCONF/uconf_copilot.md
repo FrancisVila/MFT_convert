@@ -2,11 +2,11 @@
     "title": "UCONF: Copilot server",
     "linkTitle": "Transfer CFT UI server",
     "weight": "290"
-}UNIX
+}****UNIX****
 
 Refer to the [UCONF parameters](../uconf_directory) table for information on copilot.\*.unix parameters.
 
-Alias management
+****Alias management****
 
 You can access customized file system directories via the Transfer CFT{{< TransferCFT/componentshortname  >}} user interface HTTP server using aliases.
 
@@ -20,7 +20,7 @@ To add a new alias, access the Unified Configuration uconf and configure the fol
 | copilot.http.aliases.(alias-id).path  | Path that replaces the alias in the URL  |
 
 
-Security for Cop**i**lot GUI
+****Security for Cop**i**lot GUI****
 
 
 | Parameter  | Description  |
@@ -28,7 +28,7 @@ Security for Cop**i**lot GUI
 | copilot.http.onlyssl  | Enter Yes to restrict the access of the Transfer CFT{{< TransferCFT/componentshortname  >}} UI with https.  |
 
 
-View available drives
+****View available drives****
 
 To view available drives from the ****Edit a file**** icon in the graphical user interface, define the following:
 
@@ -42,7 +42,7 @@ QQQ\_QQQ\_QQQ
 |  - " -  | @NET_DRIVES  | To view network drives.  |
 
 
-Client keep-alive
+****Client keep-alive****
 
 Use this parameter to define the keep-alive interval in seconds for a client session. By default this occurs every 60 seconds.
 
@@ -52,7 +52,7 @@ Use this parameter to define the keep-alive interval in seconds for a client ses
 | copilot.misc.client_keep_alive_delay  | Enter an integer for the delay in seconds.<br/> 60 = default<br/> 0 = no keep-alive |
 
 
-Client timeout
+****Client timeout****
 
 Use this parameter to define the client timeout in minutes. The default value is 30 minutes.
 
@@ -62,7 +62,7 @@ Use this parameter to define the client timeout in minutes. The default value is
 | copilot.misc.ClientTimeout  | Enter an integer for the timeout in minutes.<br/> 30 = default<br/> 0 = no timeout |
 
 
-Web services
+****Web services****
 
 Use this parameter to define the Transfer CFT{{< TransferCFT/componentshortname  >}} Web Services. See also [Setting up Web Services](../../../cft_intro_install/about_this_document_ibmi/using_apis/about_web_services).
 
@@ -73,7 +73,7 @@ Use this parameter to define the Transfer CFT{{< TransferCFT/componentshortname 
 | copilot.webservices.upload_directory  | (dir) $(cft.runtime_dir)/conf/ws_upload  | NA  |
 
 
-Configure Copilot with HTTPS
+****Configure Copilot with HTTPS****
 
 This section describes how to install the certificates that are required to enable HTTPS connections for Copilot. The basic steps are:
 

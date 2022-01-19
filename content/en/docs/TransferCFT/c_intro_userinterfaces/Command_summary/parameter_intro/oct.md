@@ -8,7 +8,7 @@
 
 #### COPYFILE
 
-**\[**| C},\] <u>H</u>{ = OCT
+**********\[******| C},\] <u>H</u>{ = OCT********
 
 Type of output file data compression:
 

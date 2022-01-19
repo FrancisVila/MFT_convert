@@ -8,7 +8,7 @@
 
 #### CFTPROT
 
-\[SAP = string32 \]
+****\[SAP = string32 \]****
 
 Name of the local SAP, Service Access Point, associated with this protocol.
 It is used to identify the access point at which incoming connection requests

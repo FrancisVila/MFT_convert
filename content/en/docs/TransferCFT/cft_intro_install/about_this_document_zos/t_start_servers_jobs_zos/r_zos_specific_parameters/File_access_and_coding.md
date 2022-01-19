@@ -111,7 +111,7 @@ A filename can have different forms:
 - A logical name, associated with a DD card \[ JCL \] or with an ALLOC \[ CLIST \].
 - PDS member name, which is also by completing with the member name between brackets.
 
-Example 
+****Example ****
 
 A DSNAME or a string to request that a file be sent:
 
@@ -141,7 +141,7 @@ Look for the file on the disk CFTRES:
 
 Using parameters ‘VOLUME’ and/or ‘UNIT’ may conflict with DF/SMS file management.
 
-Example
+****Example****
 
 PDS member name to request sending of a member with the file searched for in the catalog:
 
@@ -149,7 +149,7 @@ PDS member name to request sending of a member with the file searched for in the
 SEND FNAME=‘CFT.SEND.FILE(MEMBER)’
 ```
 
-Example
+****Example****
 
 A logical name to select a PARTNERS file:
 

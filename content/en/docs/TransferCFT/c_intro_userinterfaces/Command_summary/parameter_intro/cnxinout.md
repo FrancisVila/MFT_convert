@@ -8,7 +8,7 @@
 
 #### CFTTCP
 
-\[cnxinout = { <u>4</u> | n } \]
+****\[cnxinout = { <u>4</u> | n } \]****
 
 Maximum number of communication sessions.
 

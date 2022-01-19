@@ -8,7 +8,7 @@
 
 #### LISTCAT
 
-\[NPART = { identifier | mask }\]
+****\[NPART = { identifier | mask }\]****
 
 Network name of the transfer partner. The value of this parameter may
 be:

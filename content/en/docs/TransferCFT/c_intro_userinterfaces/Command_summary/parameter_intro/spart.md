@@ -16,7 +16,7 @@ itself to its partner.
 If the NSPART parameter of the CFTPART OBJECT associated with SEND is
 not defined, the SPART value is taken into account.
 
-In requester mode SPART = string64.
+****In requester mode SPART = string64.****
 
 The value of this parameter is usually equal to the identifier (ID parameter
 of the CFTPART object). In this case the NSPART parameter that is sent

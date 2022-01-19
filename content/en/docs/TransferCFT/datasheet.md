@@ -75,7 +75,7 @@ Transfer CFT{{< TransferCFT/componentshortname  >}} is deployed on the operating
 
 ## Cloud storage
 
-Available on Linux-x64 and Windows x64
+**Available on Linux-x64 and Windows x64**
 
 - Amazon Web Services S3 (Amazon Simple Storage Service).
 - Ceph Storage Cluster using the Ceph Object Gateway and its S3 compatible API.

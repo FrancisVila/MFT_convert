@@ -8,7 +8,7 @@
 
 #### DISPLAY
 
-\[ FOUT = file\_name \]
+****\[ FOUT = file\_name \]****
 
 Defines the file that the
 command output is sent to. The file name represent the file where the

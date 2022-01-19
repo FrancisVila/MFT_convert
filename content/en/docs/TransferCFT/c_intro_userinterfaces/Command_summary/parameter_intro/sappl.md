@@ -8,15 +8,15 @@
 
 #### CFTSEND, SEND, RECV
 
-\[SAPPL     =    
-*string*\]
+****\[SAPPL     =    
+*string*\]****
 
-*string8*
+*****string8*
    **PeSIT
-D CFT profile, PeSIT SIT profile, PeSIT E**
+D CFT profile, PeSIT SIT profile, PeSIT E******
 
-string48 PeSIT
-E CFT/CFT
+****string48 PeSIT
+E CFT/CFT****
 
 The identifier of the application sending the. Depending on the protocol
 profile, it is:
@@ -38,14 +38,14 @@ Transfer CFT{{< TransferCFT/componentshortname  >}} does not check:
     permitted by the protocol. Only a check relative to the maximum size of
     48 characters is performed.
 
-PeSIT
+****PeSIT****
 
 In standard PeSIT E or PeSIT E CFT/CFT, the responder/sender
 partner can send and control this field.
 
 In standard PeSIT E, this value is transported in the PI 03. Its maximum
 length is limited by the eight-character standard. The PI 03 contains
-this value concatenated with the value of the suser
+this value concatenated with the value of the ****suser****
 field.
 
 In PeSIT E between two Transfer CFT{{< TransferCFT/componentshortname  >}}s, the value of this SUSER parameter is transported in the PI 99, the value defined in the PI 03 being truncated to 8 characters.

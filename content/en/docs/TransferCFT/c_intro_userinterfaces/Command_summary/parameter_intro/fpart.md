@@ -8,7 +8,7 @@
 
 #### CFTEXT
 
-\[ FPARM = filename \]
+****\[ FPARM = filename \]****
 
 Name of the Partner input file.
 

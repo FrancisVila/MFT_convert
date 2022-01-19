@@ -15,7 +15,7 @@ To enable the heartbeat feature, check that the following [unified configuration
 - sentinel.trkipaddr = sentinel.server.address
 - sentinel.trkipport = Sentinel.qlt/auto.port value (default = 1305)  
 
-****Example****
+********Example********
 
 In Windows this would enable the parameter to activate Heartbeat functioning.
 

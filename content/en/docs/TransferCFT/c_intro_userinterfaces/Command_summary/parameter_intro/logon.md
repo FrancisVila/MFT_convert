@@ -8,8 +8,8 @@
 
 #### CFTPRO
 
-\[LOGON = { YES
-| NO } \]
+****\[LOGON = { YES
+| NO } \]****
 
 Use of the pre-connection phase. Available only in requester mode.
 

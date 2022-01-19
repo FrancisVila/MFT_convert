@@ -8,8 +8,8 @@
 
 #### CFTPROT
 
-\[RCHKW = { 3
-| n }\]
+****\[RCHKW = { 3
+| n }\]****
 
 The maximum number of synchronization points, not acquitted, that are
 authorized by the receiver and negotiated during connection phase.

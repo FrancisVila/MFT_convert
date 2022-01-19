@@ -36,7 +36,7 @@ Before creating a NETBATCH attachment-set, you must call the PROFILE.
 
 From the native command window enter the following to start, for example, CFTUTIL:
 
-Example
+****Example****
 
 ```
 $ YOURCO HOME > volume $DATA14.CFT32AIX

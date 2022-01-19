@@ -14,8 +14,8 @@ a file](#Receiving_a_File)
 [About
 the default CFTRECV object](#About_the_default_CFTRECV_object)
 
-Related
-topics
+****Related
+topics****
 
 - Command syntax
     [CFTRECV](../../../c_intro_userinterfaces/command_summary#CFTRECV)

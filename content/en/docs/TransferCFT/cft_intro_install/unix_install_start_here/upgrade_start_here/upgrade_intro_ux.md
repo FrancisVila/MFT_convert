@@ -90,7 +90,7 @@ Run the Axway Installer in update mode.
 >
 > In this step you are working with a zip file (not a jar as in earlier Installer versions). Do NOT unzip/uncompress the zip file.
 
-Step 2: Upgrade to Transfer CFT 3.9{{< TransferCFT/releasenumber  >}}
+****Step 2: Upgrade to Transfer CFT 3.9{{< TransferCFT/releasenumber  >}}****
 
 > **Note**
 >
@@ -105,7 +105,7 @@ Step 2: Upgrade to Transfer CFT 3.9{{< TransferCFT/releasenumber  >}}
 1. Accept the license and the appropriate installation mode (for example, single installation).
 1. When prompted for the installation directory, enter the path to the existing Transfer CFT installation directory.
 
-Available options
+****Available options****
 
 The following available options are described in detail in [Upgrade options](#Upgrade):
 

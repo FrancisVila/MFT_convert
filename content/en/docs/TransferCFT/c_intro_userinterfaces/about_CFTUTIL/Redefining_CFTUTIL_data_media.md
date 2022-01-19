@@ -104,7 +104,7 @@ CONFIG       TYPE = OUTPUT,
 FNAME = <filename>
 ```
 
-Example 2: define filename
+****Example 2: define filename****
 
 Use this command to define the file with the generic
 &lt;filename> as the Transfer CFT communication medium.

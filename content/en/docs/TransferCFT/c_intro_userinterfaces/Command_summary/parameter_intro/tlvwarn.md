@@ -8,8 +8,8 @@
 
 #### CFTCAT, CFTCOM=FILE
 
-\[ TLVWARN = { 0...100 }
-\]
+****\[ TLVWARN = { 0...100 }
+\]****
 
 Command file usage limit before issuing an alert. Overall, the TLV parameters enable Transfer CFT{{< TransferCFT/componentshortname  >}} to
 issue alerts when a critical CAT or COM threshold is reached based on a percentage of the catalog or communication media being filled, where 0% indicates empty and 100% indicates full.

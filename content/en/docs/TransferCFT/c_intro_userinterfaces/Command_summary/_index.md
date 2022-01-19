@@ -157,7 +157,7 @@ Or
 
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
 
- 
+**** ****
 
 <span id="CFTCAT"></span>
 
@@ -255,7 +255,7 @@ Syntax
 
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
 
- [CFTCOM](../web_copilot_ui/conf_intro/cftcom)
+**** ****[CFTCOM](../web_copilot_ui/conf_intro/cftcom)
 
 [Communication
 media](../../admin_intro/admin_config_commands/communication_media_concepts)
@@ -389,7 +389,7 @@ Syntax
 
 `[ WAITTASK   = { 1441   | n } ]`
 
- CFTEXIT details
+**** ****CFTEXIT details
 
 [Exit
 tasks](../../app_integration_intro/managing_exits)
@@ -539,7 +539,7 @@ Syntax
 
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
 
- [CFTIDF details](../web_copilot_ui/flow_def_intro/cftidf)
+**** ****[CFTIDF details](../web_copilot_ui/flow_def_intro/cftidf)
 
 [File
 template/virtual file association](../../concepts/cft_configuration_concepts_start_here/network_file_identifier_concepts)
@@ -1391,7 +1391,7 @@ Syntax
 
 `[ XLATE   = identifier ]`
 
- [CFTRECV details](../web_copilot_ui/flow_def_intro/cftrecv)
+**** ****[CFTRECV details](../web_copilot_ui/flow_def_intro/cftrecv)
 
 <span id="CFTSEND"></span>
 
@@ -1606,7 +1606,7 @@ Syntax
 
 `[ VERSION   = { TLSV1  | SSLV3 | TLSV1 | SSLV3COMP | TLSV1COMP} ]`
 
-Note: <span id="OP"></span>You can configure Transfer
+****Note****: <span id="OP"></span>You can configure Transfer
 CFT to accept or reject SSL connections based on logical operators used
 within the DN of the certificate. For details refer to [dnuser](parameter_intro/dnuser)
 parameter details.
@@ -2051,7 +2051,7 @@ Syntax
 
 `[ SCOPE = string ]`
 
- [Suspend transfers](../about_cftutil/managing_transfer_states/keep_command)
+**** ****[Suspend transfers](../about_cftutil/managing_transfer_states/keep_command)
 
 <span id="KSTATE"></span>
 
@@ -2101,7 +2101,7 @@ Syntax
 
 `[ STATE   = { *   | string } ]`
 
- [LISTCAT details](../about_cftutil/monitoring_cftutil_intro/listcat_command)
+**** ****[LISTCAT details](../about_cftutil/monitoring_cftutil_intro/listcat_command)
 
 <span id="LISTCOM"></span>
 
@@ -2119,7 +2119,7 @@ Syntax
 
 `[ VERIFY   = { NO   | YES } ]`
 
- [LISTCOM details](../about_cftutil/monitoring_cftutil_intro/listcom_command) 
+**** ****[LISTCOM details](../about_cftutil/monitoring_cftutil_intro/listcom_command)**** ****
 
 <span id="LISTLOG"></span>
 
@@ -2221,7 +2221,7 @@ OBJECT = STATS or PROBE
 
 `[ NAME   = { CAT   | COMMAND | CRON | DMZ | STAT } ]`
 
- [MQUERY details](../../admin_intro/admin_commands_intro/querying_a_component_)
+**** ****[MQUERY details](../../admin_intro/admin_commands_intro/querying_a_component_)
 
 <span id="PURGE"></span>
 

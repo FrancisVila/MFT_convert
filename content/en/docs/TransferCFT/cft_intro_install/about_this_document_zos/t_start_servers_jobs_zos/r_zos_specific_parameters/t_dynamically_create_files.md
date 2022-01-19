@@ -116,8 +116,8 @@ Supported keywords and values include:
 
 **(\*)** For the CFTRECV command (only), you can specify DFSMS parameters in ATTSUSER.
 
-Example 1
-&lt;/p>
+****Example 1
+&lt;/b>&lt;/p>****
 
 To force the creation of the received file in the EAV section of a volume:
 

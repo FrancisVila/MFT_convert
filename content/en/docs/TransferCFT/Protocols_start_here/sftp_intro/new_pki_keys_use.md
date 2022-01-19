@@ -156,7 +156,7 @@ PKIUTIL PKIKEY ID=PUBPEM, IKFORM=PEM, IKNAME=./public.pem, MODE=CREATE
 
 Use the ACT/INACT commands to activate or deactivate, respectively.
 
-Example
+****Example****
 
 Use the LISTPKI command to list available keys:
 

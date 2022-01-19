@@ -68,15 +68,15 @@ Used to obtain part or all of the information of a catalog entry.
 
 The possible values are:
 
-- BRIEF: Displays the most basic, essential information
+- ****BRIEF****: Displays the most basic, essential information
     concerning the selected transfers with one line per transfer
-- EXTEND: Displays information concerning
+- ****EXTEND****: Displays information concerning
     security, exits and end-of-transfer procedures, as well as the BRIEF type
     information with one line per transfer
 - **COMMUT**: Displays a sort of BRIEF output, but contains some network-oriented details
-- FULL: Displays complete information concerning
+- ****FULL****: Displays complete information concerning
     each transfer
-- DEBUG: Displays the most complete output with additional information beyond the FULL content
+- ****DEBUG****: Displays the most complete output with additional information beyond the FULL content
 - **BLKNUM**: Displays the same information as BRIEF, but the **Appli id** and **Appstate** columns are replaced by the **blknum** column
 
 #### LISTCOM
@@ -108,8 +108,8 @@ CFTU00I RETURN _ Correct (CODE=0)
 
 #### LISTPARM, LISTPART
 
-**\[CONTENT =
-{<u>FULL</u> | BRIEF}\]**
+******\[CONTENT =
+{<u>FULL</u> | BRIEF}\]******
 
 Used to obtain part or all of the
 information.
@@ -126,26 +126,26 @@ Level of content included in output:
 
 #### MQUERY (OBJECT=CACHE or SYSTEM)
 
-**\[CONTENT =
+******\[CONTENT =
 { BRIEF
-| FULL | STAT } \]**
+| FULL | STAT } \]******
 
 Used to obtain part or all of the
 information.
 
 #### MQUERY (OBJECT=PROBE or STATS)
 
-**\[CONTENT =
+******\[CONTENT =
 { XMLBRIEF
-| XMLFULL | RAW } \]**
+| XMLFULL | RAW } \]******
 
 Used to obtain part or all of the
 information.
 
 #### DISPLAY
 
-**\[CONTENT =
-listcat\]**
+******\[CONTENT =
+listcat\]******
 
 #### LISTUCONF, UCONFGET
 

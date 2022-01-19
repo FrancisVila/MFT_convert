@@ -6,7 +6,7 @@
 
 The behavior of the values ‘’ and ‘ ’, for FTYPE and FRECFM respectively, are not detailed in the following tables. These values correspond to undefined, which means that the transfer in reception takes the value sent through the network. 
 
-File type when the file does not exist
+****File type when the file does not exist****
 
 The following table lists the different types of files that can be created on an IBM i system if the file to receive does not already exist:
 
@@ -24,7 +24,7 @@ QQQ\_QQQ\_QQQ
 | ‘Z’ | - | SAVF | NA |
 
 
-File type when the file already exists
+****File type when the file already exists****
 
 The following table describes the Transfer CFT{{< TransferCFT/hflongproductname  >}} behavior when trying to receive data in an existing file on the native side of an IBM i system.
 

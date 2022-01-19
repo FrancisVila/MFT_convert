@@ -8,7 +8,7 @@
 
 #### CFTPARM
 
-\[TRANTASK = <u>3</u> | n \]
+****\[TRANTASK = <u>3</u> | n \]****
 
 The maximum number of parallel transfers that a task can handle before starting another task (file access task). The value used may differ from the set value when the TRANTASK is greater than the MAXTRANS/MAXTASK value.
 

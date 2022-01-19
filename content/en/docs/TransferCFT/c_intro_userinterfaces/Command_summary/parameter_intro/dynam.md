@@ -8,7 +8,7 @@
 
 #### CFTPROT
 
-\[dynam = string 1...32 \]
+****\[dynam = string 1...32 \]****
 
 Dynamic partner identifier, of 32 characters, in server mode.
 

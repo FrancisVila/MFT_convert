@@ -49,7 +49,7 @@ If you have the following error in the Transfer CFT log:
 
 `XFBCOPT S99015 Central Governance: sending self-registration request`
 
-`XFBCOPT S99015 navigatorNotifSend: Central Governance: sending self-registration request error: (1103)`
+**`XFBCOPT S99015 navigatorNotifSend: Central Governance: sending self-registration request error: (1103)`**
 
 `Handshake failed (1) SSL_ERROR_SSL(1) - error:14090086:SSL routines: ssl3_get_server_certificate:certificate verify failed`
 

@@ -10,9 +10,9 @@
 
 #### CFTPARM
 
-\[EXECRE = filename\]
+****\[EXECRE = filename\]
    {string
-64}
+64}****
 
 Specify the name of the file describing
 the procedure to execute following a file reception error.

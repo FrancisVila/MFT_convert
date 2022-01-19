@@ -8,11 +8,11 @@
 
 #### CFTPROT
 
-\[SCHKW =  {
+****\[SCHKW =  {
 3
-| n }\]   {0...12}
+| n }\]   {0...12}****
 
-A value between 0 and 12 that represents the maximum for the
+A value between ****0**** and ****12**** that represents the maximum for the
 synchronization points that are not acknowledged (default = 3). This value is negotiated
 with the receiver partner.
 

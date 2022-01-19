@@ -8,9 +8,9 @@
 
 #### CFTFILE (TYPE = PARM, PART, COM, CAT)
 
-\[HABFNAME =
+****\[HABFNAME =
 fname\]    {STRING
-64}
+64}****
 
 Name of the security system initialization
 file.  

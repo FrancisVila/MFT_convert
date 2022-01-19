@@ -13,10 +13,10 @@
 Time at which the Transfer CFT{{< TransferCFT/componentshortname  >}}
 automatically switches to the alternate statistical file.
 
-- 000000
+- ****000000****
     (default value)
-- any
-    other value in the HHMMSS format
+- ****any
+    other value**** in the HHMMSS format
 
 When this parameter is not defined, Transfer CFT{{< TransferCFT/componentshortname  >}} switches statistical
 files daily at midnight.
@@ -28,15 +28,15 @@ files daily at midnight.
 The time at which the monitor automatically switches to the alternate
 log file:
 
-- 000000
+- ****000000****
     (default value)
-- any
-    other value in the HHMMSS format
+- ****any
+    other value**** in the HHMMSS format
 
 When this parameter is not defined, log files are switched daily at
 midnight.
 
-If you define a value for both maxrec
+If you define a value for both ****maxrec****
 and switch fields, log files are automatically switched:
 
 - Every
