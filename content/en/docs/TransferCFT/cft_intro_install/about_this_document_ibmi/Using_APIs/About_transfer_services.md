@@ -17,12 +17,12 @@ The transfer services functions:
     of the command parameters, if the function using the syntax analyzer is
     used
 - Place the command
-    in the Transfer CFT{{< TransferCFT/componentshortname >}} communication medium
+    in the {{< TransferCFT/axwayvariablesComponentShortName >}} communication medium
 
-The processing performed by Transfer CFT{{< TransferCFT/componentshortname  >}} is totally asynchronous.
+The processing performed by {{< TransferCFT/axwayvariablesComponentShortName  >}} is totally asynchronous.
 
 The return code only provides an indication that the function has effectively
-been taken into account but does not necessarily mean that Transfer CFT{{< TransferCFT/componentshortname  >}}
+been taken into account but does not necessarily mean that {{< TransferCFT/axwayvariablesComponentShortName  >}}
 has executed the command correctly. A return code indicating the success
 of the function only means that the command has been correctly placed
 in the communication medium.
@@ -38,7 +38,7 @@ in the communication medium.
 | DELETE | Delete a catalog entry and any transfer in process associated with it |
 | END | Set a transfer status to executed<br/> The transfer is set to the "X" state. This indicates that end-of-transfer procedure has been correctly executed. |
 | SUBMIT | Submit the end-of-transfer procedure |
-| SHUT | Shut down Transfer CFT{{< TransferCFT/componentshortname  >}} |
+| SHUT | Shut down {{< TransferCFT/axwayvariablesComponentShortName  >}} |
 | SWITCH | Switch monitoring files, LOG, STATS... |
 | CLOSEAPI | Free resources allocated at opening of communication medium: memory, network, file |
 | COM | Define communication medium |

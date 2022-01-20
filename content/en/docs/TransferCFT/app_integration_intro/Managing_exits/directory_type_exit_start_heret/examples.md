@@ -6,7 +6,7 @@
 
 ## Parameter settings
 
-With these Transfer CFT{{< TransferCFT/componentshortname  >}} parameter settings, a directory exit task, name
+With these {{< TransferCFT/axwayvariablesComponentShortName  >}} parameter settings, a directory exit task, name
 of the executable module: CFTEXIA, is activated each time Transfer CFT
 is started.
 
@@ -97,19 +97,19 @@ Requester mode, if the partner is:
 ## User program in C
 
 In this example, you want to take control only if the partner
-is a Transfer CFT{{< TransferCFT/componentshortname  >}} dynamic type, or non Transfer CFT{{< TransferCFT/componentshortname  >}}.
+is a {{< TransferCFT/axwayvariablesComponentShortName  >}} dynamic type, or non {{< TransferCFT/axwayvariablesComponentShortName  >}}.
 
 In server mode, you want to
 check the password and address of the calling partner in relation to a
-non Transfer CFT{{< TransferCFT/componentshortname  >}} partner base.
+non {{< TransferCFT/axwayvariablesComponentShortName  >}} partner base.
 
 In
-requester mode, you want to find in a non Transfer CFT{{< TransferCFT/componentshortname  >}}
+requester mode, you want to find in a non {{< TransferCFT/axwayvariablesComponentShortName  >}}
 partner base, the name, network, sap and address of the remote partner
 as well as the network name and password to give to this partner.
 
 To simplify, all of the bases are loaded in the memory with
 the EXIT task.
 
-The user program is delivered with the Transfer CFT{{< TransferCFT/componentshortname  >}} product as EXAXMP1.C
+The user program is delivered with the {{< TransferCFT/axwayvariablesComponentShortName  >}} product as EXAXMP1.C
 in the samples file.

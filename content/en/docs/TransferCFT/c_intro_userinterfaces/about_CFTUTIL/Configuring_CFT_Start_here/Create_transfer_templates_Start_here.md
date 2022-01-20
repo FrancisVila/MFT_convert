@@ -18,8 +18,8 @@ Use the CFTRECV object to:
 
 There is no limit on the number of CFTRECV objects that you can create.
 
-********Related
-topics********
+****<span style="color: #800000;font-weight: bold;text-decoration: underline;">****Related
+topics****</span>****
 
 - Command syntax
     [CFTRECV](../../../command_summary#CFTRECV)
@@ -45,6 +45,6 @@ Use the CFTSEND object to specify:
 There is no limit to the number of CFTSEND objects that you can create.
 
 You can create a default CFTSEND object. The identifier must correspond
-to the file identifier ****idf**** or,
+to the file identifier <span style="font-weight: bold;">****idf****</span> or,
 if this parameter is not defined, the default parameter of the CFTPARM
 object.

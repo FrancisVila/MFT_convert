@@ -55,7 +55,7 @@ Host information :
 \* release = Seven Service Pack 1
 \* distrib =
 Axway information :
-\* product = AMPLIFY{{< TransferCFT/platformorsuiteshortname >}} Transfer CFT
+\* product = {{< TransferCFT/axwayvariablesPlatformorSuiteShortName >}} Transfer CFT
 \* version = 3.3.2_SP1.0
 \* applied-patches =
 \* forbidden-patches =
@@ -82,9 +82,9 @@ CFTU00I ABOUT _ Correct ()
 
 UNIX and Windows only
 
-This executable file retrieves system information, for example information needed to request a key. To use `cfttell`:
+This executable file retrieves system information, for example information needed to request a key. To use <span class="code">`cfttell`</span>:
 
-- Navigate to the` <CFTDIRINSTALL>/bin` directory
+- Navigate to the<span class="code">` <CFTDIRINSTALL>/bin`</span> directory
 - Run cfttell
 
 Options:
@@ -104,21 +104,21 @@ Keys:
 ****Examples****
 
 ```
-C:\\projects>`cfttell target`
+C:\\projects><span class="code">`cfttell target`</span>
 win-x86-64
 ```
 
  
 
 ```
-C:\\projects>`cfttell version`
+C:\\projects><span class="code">`cfttell version`</span>
 3000
 ```
 
  
 
 ```
-C:\\projects>`cfttell hostinfo`
+C:\\projects><span class="code">`cfttell hostinfo`</span>
 CFT version : 3010
 Target : win-x86-32
 Processor architecture : x64

@@ -85,7 +85,7 @@ Where:
 >
 > <!-- -->
 >
-> -   The initial character in HFS filenames is the slash: ( / )
+> -   The initial character in HFS filenames is the slash: ( <span class="span_2">/</span> )
 
 **Example**
 
@@ -141,17 +141,17 @@ Look for the file on the disk CFTRES:
 
 Using parameters ‘VOLUME’ and/or ‘UNIT’ may conflict with DF/SMS file management.
 
-****Example****
+****<span class="span_2">Example</span>****
 
-PDS member name to request sending of a member with the file searched for in the catalog:
+<span class="span_2">PDS member name</span> t<span class="b2Car_2">o request sending of a member with the file searched for in the catalog</span>:
 
 ```
 SEND FNAME=‘CFT.SEND.FILE(MEMBER)’
 ```
 
-****Example****
+****<span class="span_2">Example</span>****
 
-A logical name to select a PARTNERS file:
+<span class="span_2">A logical name</span> t<span class="b2Car_2">o select a PARTNERS file</span>:
 
 ```
 CFTPARM PARTFNAM=$CFTPART
@@ -231,7 +231,7 @@ FNAME=NAME1.NAMEX(MEMBER)
 
 Delivered template:
 
-- `..SAMPLE(CFTPDS)`
+- <span class="code">`..SAMPLE(CFTPDS)`</span>
 
 <span id="Coding GDG filenames"></span>
 

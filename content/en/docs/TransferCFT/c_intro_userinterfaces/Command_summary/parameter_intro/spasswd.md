@@ -18,7 +18,7 @@ Password for the user who is sending the file. You can provide the SPASSWD direc
 
 `* * passwd4`
 
-Or you can use \_AUTH\_ to indicate authentication method as defined in the uconf `cft.server.authentication_method` parameter.
+Or you can use \_AUTH\_ to indicate authentication method as defined in the uconf <span class="code">`cft.server.authentication_method`</span> parameter.
 
 ****Example****
 

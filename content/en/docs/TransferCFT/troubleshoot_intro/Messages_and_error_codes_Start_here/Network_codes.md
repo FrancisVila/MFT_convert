@@ -5,8 +5,8 @@
 }## NCR Common return code - Network interface
 
 The NCR code corresponds to the "cr" code returned by the
-network interface Transfer CFT{{< TransferCFT/componentshortname  >}} functions, using
-the formula: ****ncr = -(cr+20)****
+network interface {{< TransferCFT/axwayvariablesComponentShortName  >}} functions, using
+the formula: <span class="bold_in_para">****ncr = -(cr+20)****</span>
 
 Supply this value to Product Support for troubleshooting operations.
 

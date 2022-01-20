@@ -92,7 +92,7 @@ SEND TYPE = REPLY, ... command. The table below summarizes how
 Transfer CFT defines the PI codes associated with the acknowledgement
 message FPDU.
 
-FPDU related PI codes and the corresponding
+<span class="autonumber"></span>FPDU related PI codes and the corresponding
 Transfer CFT values
 
 

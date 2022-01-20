@@ -8,15 +8,15 @@ You can use the directory exit
 task to modify the parameters used to establish an exit connection with
 a remote partner in server or requester mode. A user subprogram can
 be called each time a session with a partner, or a set of partners, is
-opened depending on the Transfer CFT{{< TransferCFT/componentshortname  >}} parameter setting.
+opened depending on the {{< TransferCFT/axwayvariablesComponentShortName  >}} parameter setting.
 
 Use a directory exit to:
 
 - Server mode -
-    to replace the standard checks performed by Transfer CFT{{< TransferCFT/componentshortname >}} when a remote
+    to replace the standard checks performed by {{< TransferCFT/axwayvariablesComponentShortName >}} when a remote
     partner requests a connection
 - Requester mode -
-    to provide, supplement or modify the parameters Transfer CFT{{< TransferCFT/componentshortname >}} requires
+    to provide, supplement or modify the parameters {{< TransferCFT/axwayvariablesComponentShortName >}} requires
     to establish network and protocol connections with a remote partner
 
 The directory exit parameters can include:
@@ -37,7 +37,7 @@ phase, or start of protocol session.
 
 ## Server mode
 
-When a connection is indicated, Transfer CFT{{< TransferCFT/componentshortname  >}} knows the network name
+When a connection is indicated, {{< TransferCFT/axwayvariablesComponentShortName  >}} knows the network name
 and the calling partner’s password as well as the protocol to use for
 the communication. If the corresponding CFTPROT object contains the identifier
 of a directory EXIT task, the monitor gives control to this task that
@@ -65,7 +65,7 @@ The EXIT can perform checks on a partner:
 
 It can accept or refuse network and protocol connections.
 
-Even if all partners are unknown to Transfer CFT{{< TransferCFT/componentshortname  >}}, the monitor needs
+Even if all partners are unknown to {{< TransferCFT/axwayvariablesComponentShortName  >}}, the monitor needs
 the partner file to operate.
 
 <span id="Requester_mode"></span>
@@ -82,26 +82,26 @@ In requester mode, you can:
     connections
 
 The partner may be known, defined in a CFTPART object, or unknown to
-Transfer CFT{{< TransferCFT/componentshortname  >}}.
+{{< TransferCFT/axwayvariablesComponentShortName  >}}.
 
-Even if all partners are unknown to Transfer CFT{{< TransferCFT/componentshortname  >}}, the Transfer CFT{{< TransferCFT/componentshortname  >}} needs
+Even if all partners are unknown to {{< TransferCFT/axwayvariablesComponentShortName  >}}, the {{< TransferCFT/axwayvariablesComponentShortName  >}} needs
 the partner file to operate.
 
-At the time of a connection request, Transfer CFT{{< TransferCFT/componentshortname  >}} knows the CFTPART
+At the time of a connection request, {{< TransferCFT/axwayvariablesComponentShortName  >}} knows the CFTPART
 object associated with the PART parameter of the SEND or RECV command.
-The Transfer CFT{{< TransferCFT/componentshortname  >}} uses the first protocol of the CFTPART object as communication
+The {{< TransferCFT/axwayvariablesComponentShortName  >}} uses the first protocol of the CFTPART object as communication
 protocol, the other protocols defined in this object being used as backup
 protocols.
 
 The first protocol choice criterion is:
 
 - The partner is
-    known to Transfer CFT{{< TransferCFT/componentshortname >}}: there is a CFTPART object corresponding to the
+    known to {{< TransferCFT/axwayvariablesComponentShortName >}}: there is a CFTPART object corresponding to the
     partner. The first protocol of the CFTPART object containing an EXIT directory
     identifier is chosen. If no protocols of this command contain an EXIT
     directory identifier, the first protocol is chosen
 - The partner is
-    unknown to Transfer CFT{{< TransferCFT/componentshortname >}}: there is no CFTPART object corresponding to the
+    unknown to {{< TransferCFT/axwayvariablesComponentShortName >}}: there is no CFTPART object corresponding to the
     partner. The first protocol of the CFTPARM object that contains an EXIT
     directory identifier is chosen. If none of the protocols of this command
     contains an EXIT directory identifier, the transfer is abandoned, and

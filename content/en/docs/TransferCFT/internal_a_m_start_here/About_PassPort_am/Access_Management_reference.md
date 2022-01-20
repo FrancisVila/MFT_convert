@@ -2,7 +2,7 @@
     "title": "Access management  reference information ",
     "linkTitle": "Reference: access management mapping",
     "weight": "220"
-}This section describes how to configure access management when not using Central Governance.
+}This section describes how to configure access management when not using {{< TransferCFT/PrimaryCGorUM  >}}.
 
 ## Access management mapping in earlier versions
 

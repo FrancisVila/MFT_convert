@@ -12,10 +12,10 @@
 
 The time interval (in minutes) between reconnection attempts.
 
-- ****1****
+- <span style="font-weight: bold;">****1****</span>
     : default value
 - any other value
-    from ****0**** to ****32767****
+    from <span style="font-weight: bold;">****0****</span> to <span style="font-weight: bold;">****32767****</span>
 
 When specifying multiple hosts in CFTTCP and PROTs/SAPs in CFTPART, Transfer CFT first retries the host and then the PROT/SAP.
 

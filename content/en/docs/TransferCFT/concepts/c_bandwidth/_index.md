@@ -48,7 +48,7 @@ QQQ\_QQQ\_QQQ
 | uconf:cft.server.bandwidth.cos  | 1  | Total number of class-of-services including the class number zero.  |
 
 
-\*\* Do not configure the parameters ****weight\_in**** and ****weight\_out**** for the class-of-service 0, as they cannot be used in this context. See [Concepts.](#Concepts)
+\*\* Do not configure the parameters <span class="bold_in_para">****weight\_in****</span> and <span class="bold_in_para">****weight\_out****</span> for the class-of-service 0, as they cannot be used in this context. See [Concepts.](#Concepts)
 
 ### Global parameters
 

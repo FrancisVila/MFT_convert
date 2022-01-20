@@ -8,7 +8,7 @@ If there is a conflict between FGAC privileges based on the same resources, Pass
 
 Grayed options indicate that the associated functionality in the product is deprecated or obsolete.
 
-FGAC privileges
+<span class="autonumber"></span>FGAC privileges
 
 
 | Resource  | Description  | Resource properties  | Resource actions  |

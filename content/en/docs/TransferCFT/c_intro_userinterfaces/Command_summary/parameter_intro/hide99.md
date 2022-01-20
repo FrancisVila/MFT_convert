@@ -8,8 +8,8 @@
 
 #### CFTPROT
 
-****\[HIDE99 = {YES | NO
-} \]****
+****\[HIDE99 = {YES | <span style="text-decoration: underline;">NO
+</span>} \]****
 
 Optional parameter available only to PeSIT protocol definition (TYPE=PESIT)
 using the ANY profile (PROFIL=ANY/CFT).

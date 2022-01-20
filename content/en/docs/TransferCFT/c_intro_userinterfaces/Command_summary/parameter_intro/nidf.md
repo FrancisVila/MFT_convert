@@ -10,9 +10,9 @@
 
 **\[NIDF = string \]**
 
-**IDF
-network identifier. **** This value is transferred in the network.
-  **
+**<span style="font-weight: normal;">IDF
+network identifier.</span><span style="font-weight: bold;"> **** </span><span style="font-weight: normal;">This value is transferred in the network.
+ </span> **
 
 #### SEND, RECV
 

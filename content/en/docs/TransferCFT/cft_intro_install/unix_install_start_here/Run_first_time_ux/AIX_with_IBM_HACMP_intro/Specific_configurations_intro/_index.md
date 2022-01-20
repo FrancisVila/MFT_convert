@@ -2,7 +2,7 @@
     "title": "Unix-specific  values",
     "linkTitle": "Specific Transfer CFT configurations",
     "weight": "230"
-}This topic summarizes Transfer CFT{{< TransferCFT/componentshortname  >}} characteristics that differ from
+}This topic summarizes {{< TransferCFT/axwayvariablesComponentShortName  >}} characteristics that differ from
 other operating systems:
 
 - specific values
@@ -25,7 +25,7 @@ other operating systems:
 ## Names of default files used by CFTUTIL
 
 
-| **Objet**  | ****Default name****  |
+| **Objet**  | <span >****Default name****</span>  |
 | --- | --- |
 | Parameters file  | _CFTPARM  |
 | Partners file  | _CFTPART  |

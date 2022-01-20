@@ -2,7 +2,7 @@
     "title": "Migrating from Transfer CFT 2.4 to 3.9",
     "linkTitle": "Migrating from Transfer CFT 2.4.x",
     "weight": "220"
-}This topic describes how to migrate from Transfer CFT 2.4 to version 3.9{{< TransferCFT/componentversion  >}}. Before starting this migration procedure, review the prerequisites and information on [loading the environment](../). Additionally, you must have installed your new Transfer CFT{{< TransferCFT/componentshortname  >}} 3.9{{< TransferCFT/releasenumber  >}} and applied the most recent service pack.
+}This topic describes how to migrate from Transfer CFT 2.4 to version {{< TransferCFT/axwayvariablesComponentVersion  >}}. Before starting this migration procedure, review the prerequisites and information on [loading the environment](../). Additionally, you must have installed your new {{< TransferCFT/axwayvariablesComponentShortName  >}} {{< TransferCFT/axwayvariablesReleaseNumber  >}} and applied the most recent service pack.
 
 ## Migrating the configuration
 
@@ -15,16 +15,16 @@ Migrate PARM, PART, IDF and other static configuration objects.
 <!-- -->
 
 1. Export your static configuration objects using the command CFTUTIL CFTEXT.  
-    Enter: `CFTUTIL CFTEXT type=all, fout=cft-extract.conf`
+    Enter: <span class="code">`CFTUTIL CFTEXT type=all, fout=cft-extract.conf`</span>
 
 <!-- -->
 
-1. Open the extract configuration files, cft-extract.conf, and update the file paths with those of the Transfer CFT 3.9{{< TransferCFT/componentversion >}} installation.
+1. Open the extract configuration files, cft-extract.conf, and update the file paths with those of the Transfer CFT {{< TransferCFT/axwayvariablesComponentVersion >}} installation.
 
 <!-- -->
 
-1. Load the Transfer CFT 3.9{{< TransferCFT/componentversion >}} environment.
-1. Stop Transfer CFT{{< TransferCFT/hflongproductname >}} if you have not already done so.
+1. Load the Transfer CFT {{< TransferCFT/axwayvariablesComponentVersion >}} environment.
+1. Stop {{< TransferCFT/headerfootervariableshflongproductname >}} if you have not already done so.
 
 <!-- -->
 
@@ -38,14 +38,14 @@ cftinit cft-extract.conf
 
 Migrate the parameters from the Transfer CFT 2.4 trkapi.cfg file.
 
-1. In the trkapi.cfg file, select the parameters you want to import in 3.9{{< TransferCFT/componentversion >}}.
+1. In the trkapi.cfg file, select the parameters you want to import in {{< TransferCFT/axwayvariablesComponentVersion >}}.
 
 <!-- -->
 
 1. Create a script file, for example:
 
-- UNIX:` trkapi-import.sh`
-- Windows:` trkapi-import.bat`
+- UNIX:<span class="code">` trkapi-import.sh`</span>
+- Windows:<span class="code">` trkapi-import.bat`</span>
 
 1. For each parameter you select, add a UCONF command line to your new script file using the format:
 
@@ -55,7 +55,7 @@ UCONFSET id=<parameter_id>, value=<value>
 
 Use the parameter mapping between trkapi and UCONF, as listed in the following table, to specify the correct parameter id.
 
-Parameter mapping between the trkapi.cfg file and UCONF
+<span class="autonumber"></span>Parameter mapping between the trkapi.cfg file and UCONF
 
 
 | Parameter in trkapi.cfg | Parameter names in UCONF |
@@ -75,7 +75,7 @@ Parameter mapping between the trkapi.cfg file and UCONF
 | XFB.Transfer | sentinel.xfb.transfer |
 
 
-1. Load the Transfer CFT 3.9{{< TransferCFT/componentversion >}} environment.
+1. Load the Transfer CFT {{< TransferCFT/axwayvariablesComponentVersion >}} environment.
 
 <!-- -->
 
@@ -94,7 +94,7 @@ CFTUTIL <prefix_character><script_filename>
 
 Migrate parameters from the Transfer CFT 2.4 copconf.ini file.
 
-1. From the copconf.ini file, select the parameters you want to import into version 3.9{{< TransferCFT/componentversion >}}.
+1. From the copconf.ini file, select the parameters you want to import into version {{< TransferCFT/axwayvariablesComponentVersion >}}.
 
 <!-- -->
 
@@ -109,7 +109,7 @@ Migrate parameters from the Transfer CFT 2.4 copconf.ini file.
 
 Use the parameters mapping between copconf and UCONF as listed in the following table to specify the correct parameter id.
 
-Parameter mapping between copconf file and UCONF
+<span class="autonumber"></span>Parameter mapping between copconf file and UCONF
 
 
 | Parameter in copconf.ini | Parameter name in UCONF |
@@ -137,7 +137,7 @@ Parameter mapping between copconf file and UCONF
 | WsiComplience | copilot.webservices.wsicomplience |
 
 
-1. Load the Transfer CFT 3.9{{< TransferCFT/componentversion >}} environment.
+1. Load the Transfer CFT {{< TransferCFT/axwayvariablesComponentVersion >}} environment.
 
 <!-- -->
 
@@ -169,7 +169,7 @@ You must be at Transfer CFT 2.4.1 SP5 or higher before performing this procedure
 PKIUTIL PKIEXT fout=pki-extract.conf
 ```
 
-1. Load the new Transfer CFT 3.9{{< TransferCFT/componentversion >}} environment.
+1. Load the new Transfer CFT {{< TransferCFT/axwayvariablesComponentVersion >}} environment.
 
 <!-- -->
 
@@ -185,7 +185,7 @@ PKIUTIL PKIEXT fout=pki-extract.conf
 PKIUTIL PKIFILE fname=<pki_database_filename>, mode='CREATE’
 ```
 
-1. Import your PKI certificates into Transfer CFT 3.9{{< TransferCFT/componentversion >}} using the command PKIUTIL. Replace the &lt;script\_filename> with the new script file path.
+1. Import your PKI certificates into Transfer CFT {{< TransferCFT/axwayvariablesComponentVersion >}} using the command PKIUTIL. Replace the &lt;script\_filename> with the new script file path.
 
 ```
 PKIUTIL <prefix_character><script_filename>
@@ -213,7 +213,7 @@ PKIUTIL <prefix_character><script_filename>
 CFTMI240 MIGR type=CAT, direct=FROMCAT, ifname=<catalog_2.4_filename>, ofname=catalog_output.xml
 ```
 
-1. Load the Transfer CFT 3.9{{< TransferCFT/componentversion >}} environment.
+1. Load the Transfer CFT {{< TransferCFT/axwayvariablesComponentVersion >}} environment.
 
 <!-- -->
 
@@ -241,7 +241,7 @@ CFTMI MIGR type=CAT, direct=TOCAT, ifname=catalog_output.xml, ofname=<catalog_fi
 CFTMI240 MIGR type=COM, direct=FROMCOM, ifname=<com_2.4_filename>, ofname=com_output.xml
 ```
 
-1. Load Transfer CFT 3.9{{< TransferCFT/componentversion >}} environment.
+1. Load Transfer CFT {{< TransferCFT/axwayvariablesComponentVersion >}} environment.
 
 <!-- -->
 

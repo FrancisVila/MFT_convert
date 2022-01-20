@@ -12,26 +12,26 @@ README.TXT file or the Release Notes supplied with the product. The README.TXT f
 
 ## Product presentation
 
-Transfer CFT{{< TransferCFT/componentshortname  >}} can operate both as client and/or as server. The
-number of simultaneous transfers that Transfer CFT{{< TransferCFT/componentshortname  >}} can support
+{{< TransferCFT/axwayvariablesComponentShortName  >}} can operate both as client and/or as server. The
+number of simultaneous transfers that {{< TransferCFT/axwayvariablesComponentShortName  >}} can support
 is defined by the license key. It is also limited by the properties of
 the networks used. The TCP/IP network is supported.
 
-## Installing Transfer CFT{{< TransferCFT/componentshortname  >}} for Unix
+## Installing {{< TransferCFT/axwayvariablesComponentShortName  >}} for Unix
 
-The installation section describes prerequisites and how to install, migrate, update and uninstalTransfer CFT{{< TransferCFT/componentshortname  >}}.
+The installation section describes prerequisites and how to install, migrate, update and uninstal{{< TransferCFT/axwayvariablesComponentShortName  >}}.
 
 - [Prerequisites](before_you_start_unix/prereqs_overview)
 - [Start the installation](../windows_install_start_here/before_you_start_win/install_transfer_cft_1)
 
 ## UNIX operations
 
-- [Transfer CFT{{< TransferCFT/componentshortname >}}
+- [{{< TransferCFT/axwayvariablesComponentShortName >}}
     UNIX utilities](run_first_time_ux/use_cft_utilities)
 - [Running
-    Transfer CFT{{< TransferCFT/componentshortname >}} for the first time]()
+    {{< TransferCFT/axwayvariablesComponentShortName >}} for the first time]()
 - [Building
-    Transfer CFT{{< TransferCFT/componentshortname >}} API applications](run_first_time_ux/api_applications_start_here)
+    {{< TransferCFT/axwayvariablesComponentShortName >}} API applications](run_first_time_ux/api_applications_start_here)
 - [Activating
     security]()
 - [Specific

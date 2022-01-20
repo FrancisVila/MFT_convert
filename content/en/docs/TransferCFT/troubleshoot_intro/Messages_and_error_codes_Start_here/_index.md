@@ -2,19 +2,19 @@
     "title": "Transfer CFT messages  and error codes",
     "linkTitle": "Messages and error codes",
     "weight": "260"
-}This section lists the different types of messages that Transfer CFT{{< TransferCFT/componentlongname  >}} generates, and corrective actions when applicable. It begins with this section, which describes message formats, severity, and additional conventions used in this documentation.
+}This section lists the different types of messages that {{< TransferCFT/axwayvariablesComponentLongName  >}} generates, and corrective actions when applicable. It begins with this section, which describes message formats, severity, and additional conventions used in this documentation.
 
 ## Message format
 
 ### Format in the documentation
 
-Transfer CFT{{< TransferCFT/componentshortname  >}} messages provide information on the status of the Transfer CFT{{< TransferCFT/componentshortname  >}}. Messages have the general format and supporting information:
+{{< TransferCFT/axwayvariablesComponentShortName  >}} messages provide information on the status of the {{< TransferCFT/axwayvariablesComponentShortName  >}}. Messages have the general format and supporting information:
 
 
-| The message severity is displayed | CFTxxx: the actual message that is displayed on Transfer CFT{{< TransferCFT/componentshortname  >}} |
+| The message severity is displayed | CFTxxx: the actual message that is displayed on {{< TransferCFT/axwayvariablesComponentShortName  >}} |
 | --- | --- |
 | Explanation | The elements, such as variables, in the above message are detailed. |
-| Consequence | Description of what happens to the Transfer CFT{{< TransferCFT/componentshortname  >}}, or lists corrective actions. |
+| Consequence | Description of what happens to the {{< TransferCFT/axwayvariablesComponentShortName  >}}, or lists corrective actions. |
 | Action  | If applicable, add corrective action here.  |
 
 
@@ -22,7 +22,7 @@ Transfer CFT{{< TransferCFT/componentshortname  >}} messages provide information
 
 ### Format in the product
 
-Earlier versions of Transfer CFT{{< TransferCFT/componentshortname  >}} used a different message format
+Earlier versions of {{< TransferCFT/axwayvariablesComponentShortName  >}} used a different message format
 than the version 3.1.3 and higher. The error messages displayed in this document use the former, or earlier version, format. If your system uses
 the CFTLOG parameter Format = V24,
 the log display is as shown below:
@@ -51,7 +51,7 @@ Messages are written according to the following conventions.
 
 ### Message description
 
-The Transfer CFT{{< TransferCFT/componentshortname  >}} messages use the format CFTxnns, for example CFTC01E. The elements that make up the message format are described in the following sections.
+The {{< TransferCFT/axwayvariablesComponentShortName  >}} messages use the format CFTxnns, for example CFTC01E. The elements that make up the message format are described in the following sections.
 
 Where:
 
@@ -65,14 +65,14 @@ Where:
 | Code  | Description  |
 | --- | --- |
 | C  | Catalog: Access to the catalog  |
-| E  | End: Transfer CFT{{< TransferCFT/componentshortname  >}} shutdown phase  |
+| E  | End: {{< TransferCFT/axwayvariablesComponentShortName  >}} shutdown phase  |
 | F  | File: Access to files  |
 | H  | External PeSIT: PeSIT protocol, non-SIT profile and CFT profile  |
-| I  | Init: Transfer CFT{{< TransferCFT/componentshortname  >}} initialization phase  |
+| I  | Init: {{< TransferCFT/axwayvariablesComponentShortName  >}} initialization phase  |
 | N  | Network  |
 | P  | Parameter: Access to parameter files |
-| R  | Request: Requests that Transfer CFT{{< TransferCFT/componentshortname  >}} received from CFTUTIL, applications, or interactive functions  |
-| S  | System: System interface operations by the Transfer CFT{{< TransferCFT/componentshortname  >}}  |
+| R  | Request: Requests that {{< TransferCFT/axwayvariablesComponentShortName  >}} received from CFTUTIL, applications, or interactive functions  |
+| S  | System: System interface operations by the {{< TransferCFT/axwayvariablesComponentShortName  >}}  |
 | T  | Transfers: Actions relating to transfers  |
 | U  | CFTUTIL: Messages from the CFTUTIL utility  |
 | X  | Security: Security system (only in the log)  |
@@ -129,7 +129,7 @@ The table below lists the symbolic variables used in message text.
 | ncs | Network error code specific to the access method and system |
 | net | Network resource identifier (CFTNET command) |
 | part | Local partner identifier (CFTPART command) |
-| prot | Transfer CFT{{< TransferCFT/componentshortname  >}} protocol identifier (CFTPROT command) |
+| prot | {{< TransferCFT/axwayvariablesComponentShortName  >}} protocol identifier (CFTPROT command) |
 | pevent | Protocol event |
 | pid | Process identifier |
 | pstate | Protocol status |

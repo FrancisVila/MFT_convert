@@ -4,7 +4,7 @@
     "weight": "2510"
 }<span id="otype"></span>
 
-### otype
+### {{< TransferCFT/SystemTitle  >}}
 
 #### COPYFILE
 
@@ -13,7 +13,7 @@
 
 **O**utput file type.
 
-Refer to the Transfer CFT{{< TransferCFT/componentshortname  >}} *Operations Guide* corresponding to your
+Refer to the {{< TransferCFT/axwayvariablesComponentShortName  >}} *Operations Guide* corresponding to your
 OS.
 
  

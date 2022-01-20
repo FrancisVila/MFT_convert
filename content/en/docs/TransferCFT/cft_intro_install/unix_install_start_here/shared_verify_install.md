@@ -20,11 +20,11 @@ During the installation, the Transfer CFT installer creates two files in the ins
 
 ## Standalone installations
 
-If you are not using Transfer CFT{{< TransferCFT/transfercftname  >}} with Central Governance{{< TransferCFT/centralgovernancename  >}}, you must provide a certificate in order to be able to use the Transfer CFT{{< TransferCFT/transfercftname  >}} UI. See [Using the web-based browser UI](../../../c_intro_userinterfaces/web_copilot_ui#Connect2) page for details.
+If you are not using {{< TransferCFT/suitevariablesTransferCFTName  >}} with {{< TransferCFT/suitevariablesCentralGovernanceName  >}}, you must provide a certificate in order to be able to use the {{< TransferCFT/suitevariablesTransferCFTName  >}} UI. See [Using the web-based browser UI](../../../c_intro_userinterfaces/web_copilot_ui#Connect2) page for details.
 
-## Register with Central Governance{{< TransferCFT/centralgovernancename  >}}
+## Register with {{< TransferCFT/suitevariablesCentralGovernanceName  >}}
 
-Begin your registration with Central Governance{{< TransferCFT/centralgovernancename  >}} by starting the Copilot server, which launches the registration process.
+Begin your registration with {{< TransferCFT/suitevariablesCentralGovernanceName  >}} by starting the Copilot server, which launches the registration process.
 
 ### Start the Transfer CFT Copilot server
 
@@ -41,25 +41,25 @@ copstart
 ```
 <span id="Verify"></span>
 
-## Verify the Transfer CFT registration with Central Governance{{< TransferCFT/centralgovernancename  >}}
+## Verify the Transfer CFT registration with {{< TransferCFT/suitevariablesCentralGovernanceName  >}}
 
-### Log on Central Governance{{< TransferCFT/centralgovernancename  >}}
+### Log on {{< TransferCFT/suitevariablesCentralGovernanceName  >}}
 
-If you have not already done so, log on Central Governance{{< TransferCFT/centralgovernancename  >}}.
+If you have not already done so, log on {{< TransferCFT/suitevariablesCentralGovernanceName  >}}.
 
-In Central Governance{{< TransferCFT/centralgovernancename  >}} from the **Product** page, check the Product List for your installed Transfer CFT{{< TransferCFT/componentlongname  >}}.
+In {{< TransferCFT/suitevariablesCentralGovernanceName  >}} from the **Product** page, check the Product List for your installed {{< TransferCFT/axwayvariablesComponentLongName  >}}.
 
-See the Troubleshooting installation section in the Transfer CFT{{< TransferCFT/componentlongname  >}} User Guide{{< TransferCFT/doctypeuser  >}} for tips in case of an error.
+See the Troubleshooting installation section in the {{< TransferCFT/axwayvariablesComponentLongName  >}} {{< TransferCFT/suitevariablesDocTypeUser  >}} for tips in case of an error.
 
 ### Start the Transfer CFT server
 
-To start Transfer CFT from the Central Governance{{< TransferCFT/centralgovernancename  >}} interface, use the following procedure.
+To start Transfer CFT from the {{< TransferCFT/suitevariablesCentralGovernanceName  >}} interface, use the following procedure.
 
 1. Click **Products** on the top toolbar to open the page.
 1. Select the product (Transfer CFT) to start.
 1. Click Start. When started successfully, the Status column displays **Started**.
 
-### View the log using Central Governance
+### View the log using {{< TransferCFT/PrimaryCGorUM  >}}
 
 1\. Click the name of the Transfer CFT system on the **Product List** page to open its details page.
 
@@ -75,6 +75,6 @@ The log page is displayed where you can:
 >
 > For details on starting, stopping and viewing the Transfer CFT refer to the Central Governance User Guide.
 
-## Register with Central Governance
+## Register with {{< TransferCFT/PrimaryCGorUM  >}}
 
-If you intend to implement Central Governance, please refer to the **Transfer CFT**{{< TransferCFT/componentlongname  >}} *User's Guide &gt; [*Register with* **Central Governance**](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.
+If you intend to implement {{< TransferCFT/PrimaryCGorUM  >}}, please refer to the {{< TransferCFT/axwayvariablesComponentLongName  >}} *User's Guide &gt; [*Register with* {{< TransferCFT/PrimaryCGorUM  >}}](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.

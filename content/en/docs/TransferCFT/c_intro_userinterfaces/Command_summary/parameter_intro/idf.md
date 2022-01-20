@@ -25,13 +25,13 @@ of 20 every 5 seconds.
 #### CFTAUTH
 
 ****\[IDF = {identifier | mask, identifier | mask
-} ****\]********
+} <span style="font-weight: bold;">****\]****</span>****
 
 List of authorized or prohibited IDF.
 
 Specify a list of up to 200 model file identifiers.
 
-The value associated with each of these ****idfs****
+The value associated with each of these <span style="font-weight: bold;">****idfs****</span>
 can be:
 
 - an explicit file

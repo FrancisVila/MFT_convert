@@ -14,7 +14,7 @@ Earlier versions of Transfer CFT used a different message format than version 3.
 
 CFTLOG FORMAT=\[V23,V24\]
 
-For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
+For V23: <span class="code">`CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`</span>
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
@@ -31,7 +31,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | V23 format<br/> V24 format<br/> Error | <span id="CFTC01E"></span>CFTC01E CFT catalog storage is full <br/> CFTC01E CFT catalog storage is full |
 | --- | --- |
 | Explanation | The catalog storage is full. A command SHUT FAST=KILL is executed. |
-| Consequence | The stored commands can only be retrieved by restarting Transfer CFT{{< TransferCFT/componentshortname  >}}. First purge the Transfer CFT{{< TransferCFT/componentshortname  >}} catalog (and modify the retention dates, for example). |
+| Consequence | The stored commands can only be retrieved by restarting {{< TransferCFT/axwayvariablesComponentShortName  >}}. First purge the {{< TransferCFT/axwayvariablesComponentShortName  >}} catalog (and modify the retention dates, for example). |
 
 
  
@@ -83,7 +83,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTC08I"></span>CFTC08I &amp;str<br/> CFTC08I &amp;str |
 | --- | --- |
-| Explanation  | Possible values for &amp;str are described here. The following messages are displayed when the catalog is purged on Transfer CFT{{< TransferCFT/componentshortname  >}} startup, or at the time set for the daily purge. For example:<br/> ****When there are no transfers to delete:****<br/> <div > <code>Purge StartedPurge catalog-size=1000 in-use=0 pre-filtered=0(0%)Purge Treated: catalog emptyPurge deleted= n treated=n(d%) match=d%.Purge TreatedPurge Treated: no record found to delete</code><br/> </div> ****When there are transfers to delete:****<br/> <div > <code>Catalog: Loading...Catalog: Load DoneCatalog: Size=100, Used=8(8%)Purge Started.Purge catalog-size=100 in-use=8 pre-filtered=8(100)Purge deleted=1 treated=1(12) match=100Purge deleted=2 treated=2(25) match=100….Purge deleted=8 treated=8(100) match=100Purge Treated.</code><br/> </div> ****When Transfer CFT{{< TransferCFT/componentshortname  >}} starts:****<br/> <div > If there are no transfers to delete:<br/> <div > <code>Catalog: Loading...Catalog: Load DoneCatalog: Size= &amp;00, Used=0(0%)</code><br/> </div> If there are transfers to delete:<br/> <div > <code>Catalog: Loading...Catalog: Load DoneCatalog: Size=100, Used=8(8%)</code><br/> </div> </div> ****If there is a problem with the catalog INIT:****<br/> <div > <code>Catalog: RecoveringCatalog: Recovery Done: n errorsCatalog Recovery: n transfers from C to D state</code><br/> </div>  |
+| Explanation  | Possible values for &amp;str are described here. The following messages are displayed when the catalog is purged on {{< TransferCFT/axwayvariablesComponentShortName  >}} startup, or at the time set for the daily purge. For example:<br/> ****When there are no transfers to delete:****<br/> <div > <code>Purge StartedPurge catalog-size=1000 in-use=0 pre-filtered=0(0%)Purge Treated: catalog emptyPurge deleted= n treated=n(d%) match=d%.Purge TreatedPurge Treated: no record found to delete</code><br/> </div> ****When there are transfers to delete:****<br/> <div > <code>Catalog: Loading...Catalog: Load DoneCatalog: Size=100, Used=8(8%)Purge Started.Purge catalog-size=100 in-use=8 pre-filtered=8(100)Purge deleted=1 treated=1(12) match=100Purge deleted=2 treated=2(25) match=100….Purge deleted=8 treated=8(100) match=100Purge Treated.</code><br/> </div> ****When {{< TransferCFT/axwayvariablesComponentShortName  >}} starts:****<br/> <div > If there are no transfers to delete:<br/> <div > <code>Catalog: Loading...Catalog: Load DoneCatalog: Size= &amp;00, Used=0(0%)</code><br/> </div> If there are transfers to delete:<br/> <div > <code>Catalog: Loading...Catalog: Load DoneCatalog: Size=100, Used=8(8%)</code><br/> </div> </div> ****If there is a problem with the catalog INIT:****<br/> <div > <code>Catalog: RecoveringCatalog: Recovery Done: n errorsCatalog Recovery: n transfers from C to D state</code><br/> </div>  |
 
 
  
@@ -118,7 +118,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTC12I"></span>CFTC12I PART=&amp;part STATE=&amp;state DIRECT=&amp;direct TYPE=&amp;type SENTINEL_STATE=&amp;trkstate Deleted<br/> CFTC12I IDTU=&amp;idtu PART=&amp;part STATE=&amp;state PHASE=&amp;phase PHASESTEP=&amp;phasestep DIRECT=&amp;direct TYPE=&amp;type SENTINEL_STATE=&amp;trkstate Deleted |
 | --- | --- |
-| Explanation | This Transfer CFT{{< TransferCFT/componentshortname  >}} message is displayed for each transfer that is deleted when the catalog is purged. Where:<br/> • &amp;state = transfer status (C/D/H/K/T/X)<br/> • &amp;direct = S (send) / R (recv)<br/> • &amp;type = F (file) / M (message)<br/> • &amp;trkstate = Sentinel state<br/> Possible values are:<br/> • TO_EXECUTE<br/> • SUSPENDED<br/> • RECEIVING<br/> • SENDING<br/> • CANCELED<br/> • RECEIVED<br/> • SENT<br/> • CREATED<br/> • INTERRUPTED<br/> • ACKED<br/> • NACKED |
+| Explanation | This {{< TransferCFT/axwayvariablesComponentShortName  >}} message is displayed for each transfer that is deleted when the catalog is purged. Where:<br/> • &amp;state = transfer status (C/D/H/K/T/X)<br/> • &amp;direct = S (send) / R (recv)<br/> • &amp;type = F (file) / M (message)<br/> • &amp;trkstate = Sentinel state<br/> Possible values are:<br/> • TO_EXECUTE<br/> • SUSPENDED<br/> • RECEIVING<br/> • SENDING<br/> • CANCELED<br/> • RECEIVED<br/> • SENT<br/> • CREATED<br/> • INTERRUPTED<br/> • ACKED<br/> • NACKED |
 | Consequence | The command is ignored.<br />  |
 
 
@@ -134,7 +134,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
  
 
 
-| V23 format<br/> V24 format<br/> Error | <span id="CFTC13E"></span>CFTC13E Transfer CFT{{< TransferCFT/componentshortname  >}} catalog resize (xxxx --&gt; yyyy) reached max before expansion<br/> CFTC13I Catalog resize (xxxx --&gt; yyyy) done |
+| V23 format<br/> V24 format<br/> Error | <span id="CFTC13E"></span>CFTC13E {{< TransferCFT/axwayvariablesComponentShortName  >}} catalog resize (xxxx --&gt; yyyy) reached max before expansion<br/> CFTC13I Catalog resize (xxxx --&gt; yyyy) done |
 | --- | --- |
 | Explanation | A dynamic command to automatically expand the catalog failed, as the maximum number of records has already been reached. The catalog size remains unchanged (the &lt;xxxx&gt; value). |
 | Consequence | Normal functioning with existing catalog size, and no catalog expansion occurs. |
@@ -145,7 +145,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTC13E"></span><span id="CFTC15I"></span>CFTC15I Deprecated command not executed BLKNUM=&amp;blknum PART=&amp;part IDT=&amp;idt : Cmd=&amp;cmd&gt;<br/> CFTC15I Deprecated command not executed BLKNUM=&amp;blknum PART=&amp;part IDT=&amp;idt : Cmd=&amp;cmd |
 | --- | --- |
-| Explanation | Set the uconf parameter <code>cft.cftcat.enable_deprecated_blknum=Yes</code> to enable BLKNUM.<br/> <blockquote> **Note**<br/> Regardless of the cft.cftcat.enable_deprecated_blknum parameter setting, BLKNUM is disabled in a multi-node configuration (uconf:cft.multi_node.enable=Yes), and this message is displayed.<br/> </blockquote>  |
+| Explanation | Set the uconf parameter <span ><code>cft.cftcat.enable_deprecated_blknum=Yes</code></span> to enable BLKNUM.<br/> <blockquote> **Note**<br/> Regardless of the cft.cftcat.enable_deprecated_blknum parameter setting, BLKNUM is disabled in a multi-node configuration (uconf:cft.multi_node.enable=Yes), and this message is displayed.<br/> </blockquote>  |
 | Consequence | The command is ignored. |
 
 
@@ -154,7 +154,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTC29W"></span>CFTC29W Catalog Alert fill threshold reached: level=&amp;level , id=CAT0<br/> CFTC29W Catalog Alert fill threshold reached: level=&amp;level ID=&amp;id |
 | --- | --- |
-| Explanation | &amp;level of the catalog space has been used. &amp;level is the amount set by the CFTCAT TLVWARN parameter.<br/> When the critical fill threshold is reached, a message is recorded in the Transfer CFT{{< TransferCFT/componentshortname  >}} log.<br/> A batch in response to the alert, the CFTCAT TLVWEXEC parameter, is submitted. |
+| Explanation | &amp;level of the catalog space has been used. &amp;level is the amount set by the CFTCAT TLVWARN parameter.<br/> When the critical fill threshold is reached, a message is recorded in the {{< TransferCFT/axwayvariablesComponentShortName  >}} log.<br/> A batch in response to the alert, the CFTCAT TLVWEXEC parameter, is submitted. |
 
 
  

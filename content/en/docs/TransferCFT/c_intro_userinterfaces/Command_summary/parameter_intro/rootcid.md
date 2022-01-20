@@ -28,7 +28,7 @@ the identifier of the certificate authority to be deleted or updated.
 
 This parameter allows you to chose the ROOTCID of the certificates to extract or display, respectively.
 
-****Example****
+<span class="bold_in_para">****Example****</span>
 
 ```
 Id.       Root iNum T S C K E  Exp.Date   Delivered to  Delivered by

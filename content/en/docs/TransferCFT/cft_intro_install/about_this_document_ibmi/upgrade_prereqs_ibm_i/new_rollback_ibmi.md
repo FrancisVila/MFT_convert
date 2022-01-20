@@ -66,7 +66,7 @@ Start the rollback process by uploading the Transfer CFT installation package in
 >
 > The user performing the upgrade requires the same rights as for a regular installation or update (\*JOBCTL, \*SPLCTL, and \*ALLOBJ).
 
-1. Call the UPGRADE command for your Transfer CFT{{< TransferCFT/transfercftname >}}. Applying an UPGRADE of a version older than the version of your Transfer CFT{{< TransferCFT/transfercftname >}} rolls it back to this older version, but keeps your configuration.
+1. Call the UPGRADE command for your {{< TransferCFT/suitevariablesTransferCFTName >}}. Applying an UPGRADE of a version older than the version of your {{< TransferCFT/suitevariablesTransferCFTName >}} rolls it back to this older version, but keeps your configuration.
 
 In rollback mode, the UPGRADE command prompt resembles the following screen:
 
@@ -86,7 +86,7 @@ The following fields are mandatory; you should complete as per your system detai
 - CFTPGM: Enter the name of the library containing the binaries of your Transfer CFT to upgrade.
 - CFTPROD: Enter the name of the library containing the working files of your Transfer CFT to upgrade.
 - ROLLBACK: '1': Enables the rollback mode (YES).  
-    ‘2’: Indicates that you are NOT rolling back to a previous Transfer CFT{{< TransferCFT/transfercftname >}} version (NO).
+    ‘2’: Indicates that you are NOT rolling back to a previous {{< TransferCFT/suitevariablesTransferCFTName >}} version (NO).
 - SAVF: This field only displays when you enter '1' in the ROLLBACK field. In this case, enter the name of the SAVF for the version you want to apply. The default value is the name of SAVF for the version that you downloaded.
 
 > **Note**
@@ -116,7 +116,7 @@ To roll back to version 3.6 or lower:
 
 1. Follow the [Upload instructions](#Upload) to upload the rollback version SAVF to a temporary library, for example CFTTMP.
 1. Restore the SAVF in CFTTMP.
-1. Repeat the [Upload instructions](#Upload) to upload the most recent Transfer CFT{{< TransferCFT/transfercftname >}} version SAVF to a second temporary library, for example CFTTMP2.
+1. Repeat the [Upload instructions](#Upload) to upload the most recent {{< TransferCFT/suitevariablesTransferCFTName >}} version SAVF to a second temporary library, for example CFTTMP2.
 1. Add the CFTTMP2 temporary library in the first position of your library list.
 
 ```
@@ -134,8 +134,8 @@ UPGRADE CFTEXTLIB(CFTEXTLIB) CFTPGM(CFTPGM) CFTPROD(CFTPROD) ROLLBACK('1') LIBSA
 
 ### Prerequisites
 
-- Save all the CFTPGM and CFTPROD before installing Transfer CFT 3.9{{< TransferCFT/releasenumber >}}.
-- Install to upgrade from Transfer CFT{{< TransferCFT/hflongproductname >}} 3.4, 3.5, 3.6 (3.x) to Transfer CFT{{< TransferCFT/hflongproductname >}} 3.9{{< TransferCFT/releasenumber >}}.
+- Save all the CFTPGM and CFTPROD before installing Transfer CFT {{< TransferCFT/axwayvariablesReleaseNumber >}}.
+- Install to upgrade from {{< TransferCFT/headerfootervariableshflongproductname >}} 3.4, 3.5, 3.6 (3.x) to {{< TransferCFT/headerfootervariableshflongproductname >}} {{< TransferCFT/axwayvariablesReleaseNumber >}}.
 
 ### Manual procedure
 
@@ -145,7 +145,7 @@ Perform the following tasks (we use 3.x in this example step procedure to indica
 
     CALL PGM(CFTMI) PARM(‘MIGR’ ‘type=CAT, direct=FROMCAT, ifname=CFTPROD/CAT, ofname=CFTUPGLIB/CAT35’)
 
-    Where CFTUPGLIB is a temporary backup library.
+    Where <span style="font-family: 'Courier New';">CFTUPGLIB</span> is a temporary backup library.
 
 1. Downgrade from Transfer CFT 3.6 to Transfer CFT 3.x version:
     1.  Rename CFTPGM and CFTPROD.
@@ -157,7 +157,7 @@ Perform the following tasks (we use 3.x in this example step procedure to indica
 
 1. Import the saved cftcat\_35 to the new Transfer CFT catalog file:
 
-    CFTMI migr type=cat,direct=tocat,ifname=cftcat\_35,ofname=$CFTCATA
+    <span style="font-family: 'Courier New';">CFTMI migr type=cat,direct=tocat,ifname=cftcat\_35,ofname=$CFTCATA</span>
 
 1. On the IBM i system:
 

@@ -4,7 +4,7 @@
     "weight": "250"
 }The internal CycleId is an XFBTransfer Tracked Object attribute. This field has the structure described in the following table.
 
-Internal CycleID structure PeSIT
+<span class="autonumber"></span>Internal CycleID structure PeSIT
 
 QQQ\_QQQ\_D
 
@@ -26,7 +26,7 @@ QQQ\_QQQ\_D
 
  
 
-Internal CycleID structure SFTP
+<span class="autonumber"></span>Internal CycleID structure SFTP
 
 QQQ\_QQQ\_D
 

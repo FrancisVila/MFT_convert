@@ -2,7 +2,7 @@
     "title": "Delivered files, samples, and certificates",
     "linkTitle": "Delivered files and samples ",
     "weight": "230"
-}The samples that are delivered with Transfer CFT use the Transfer CFT preprocessing utility to encode/decode a plaintext file before sending it. This topic describes the various delivered files, samples, and certificates that you can use to complete your TrustedFile{{< TransferCFT/trustedfilename  >}} implementation.
+}The samples that are delivered with Transfer CFT use the Transfer CFT preprocessing utility to encode/decode a plaintext file before sending it. This topic describes the various delivered files, samples, and certificates that you can use to complete your {{< TransferCFT/suitevariablesTrustedFileName  >}} implementation.
 
 Content described in this topic:
 
@@ -26,7 +26,7 @@ Conventions for Transfer CFT with Trusted File content includes:
 
 ## Scripts
 
-Unix scripts
+<span class="autonumber"></span>Unix scripts
 
 
 | Script  | Description  |
@@ -36,7 +36,7 @@ Unix scripts
 | &lt;CFTDIRRUNTIME&gt;/exec/tf_delfile.cmd  | End of transfer procedure to delete the sent ciphered file  |
 
 
-Windows scripts
+<span class="autonumber"></span>Windows scripts
 
 
 | Script  | Description  |
@@ -48,9 +48,9 @@ Windows scripts
 
 <span id="Trusted"></span>
 
-## TrustedFile{{< TransferCFT/trustedfilename  >}} configuration file
+## {{< TransferCFT/suitevariablesTrustedFileName  >}} configuration file
 
-The ****entities.xml**** file is the Trusted File configuration file containing the certificates for Trusted File. This configuration file is customized during Transfer CFT installation with the supplied default private and public certificates, “user1” and “user2”. If you intent to use your own certificates, update the entities.xml file, located at &lt;CFTDIRRUNTIME>/conf/tf/entities.xml.
+The <span class="bold_in_para">****entities.xml**** </span>file is the Trusted File configuration file containing the certificates for Trusted File. This configuration file is customized during Transfer CFT installation with the supplied default private and public certificates, “user1” and “user2”. If you intent to use your own certificates, update the entities.xml file, located at &lt;CFTDIRRUNTIME>/conf/tf/entities.xml.
 
 If you want to use your own certificates and if the option tf.enablepasswordcipher=yes you have to generate a phassphrase using cfttf function:
 
@@ -64,7 +64,7 @@ General Usage: CFTTF -pcfg conffile \[-plain plainFilename\] \[-entitiesLocation
 
 \[-messagesPath messagesPath\] \[-template xmlFilename\]
 
-To generate a passphrase, use the command: `CFTTF -pw [password]`
+To generate a passphrase, use the command: <span class="code">`CFTTF -pw [password]`</span>
 
 ****Example****
 
@@ -80,7 +80,7 @@ See also [How to generate a certificate for Trusted File](../tf_generate_cert).
 
 The following files refer to “user1” and “user2”, which are used in the supplied private certificate. You must update these users if you intend to use your own certificates. These files are located in: &lt;CFTDIRRUNTIME>/conf/tf/.
 
-Sample file descriptions
+<span class="autonumber"></span>Sample file descriptions
 
 
 | File  | Description  |
@@ -110,7 +110,7 @@ The following certificates are located in: &lt;CFTDIRRUNTIME>/conf/tf/.
 
 ## Trusted File messages
 
-The following messages are used by Trusted File, and are located in: `$CFTDIRINSTALL/distrib/tf/english/`****.**** Each file contains a set of error message associated with the type of encoding used.
+The following messages are used by Trusted File, and are located in: <span class="code">`$CFTDIRINSTALL/distrib/tf/english/`</span><span class="bold_in_para">****.****</span> Each file contains a set of error message associated with the type of encoding used.
 
 - xasn.msg
 - xp3.msg
@@ -124,13 +124,13 @@ The following messages are used by Trusted File, and are located in: `$CFTDIRINS
 - xppsrv.msg
 - xppwrap.msg
 
-Refer to the **Trusted File 3.6 Reference Guide** for details, available on [support.axway.com](https://support.axway.com/).
+Refer to the <span class="italic_in_para" style="font-style: italic;">**Trusted File 3.6 Reference Guide**</span> for details, available on [support.axway.com](https://support.axway.com/).
 
 <span id="Transcod"></span>
 
 ## Transcoding table
 
-The **** `<CFTDIRRUNTIME>/conf/tf/transcoding.tbl` **** file contains all available transcoding tables.
+The <span class="bold_in_para"> **** </span>`<CFTDIRRUNTIME>/conf/tf/transcoding.tbl`<span class="bold_in_para"> **** </span>file contains all available transcoding tables.
 
 
 | Table  | Description  |

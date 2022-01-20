@@ -8,26 +8,26 @@
 
 #### SUBMIT, DELETE, END, HALT, KEEP, START, CFTXLATE, CFTETB, LISTCAT
 
-****\[DIRECT = {BOTH
+****\[DIRECT = {<span style="text-decoration: underline;">BOTH</span>
 | SEND | RECV} \]****
 
 Transfer direction that applies to the table.
 
 The possible values are:
 
-- ****BOTH**** - Both send and receive transfers
+- <span style="font-weight: bold;">****BOTH****</span> - Both send and receive transfers
     are taken into account (default, except for CFTETB)
-- ****RECV**** - Limits the action to receive
+- <span style="font-weight: bold;">****RECV****</span> - Limits the action to receive
     transfers
-- ****SEND**** - Limits the action to send transfers
+- <span style="font-weight: bold;">****SEND****</span> - Limits the action to send transfers
 
 #### DISPLAY, CFTAPPL, RESUME
 
-****\[DIRECT = {****CLIENT****| SERVER} \]****
+<span style="font-weight: bold;">****\[DIRECT = {****</span><span style="font-weight: bold;text-decoration: underline;">****CLIENT****</span><span style="font-weight: bold;">****| SERVER} \]****</span>
 
 #### CFTSSL
 
-****\[DIRECT = {CLIENT|
+****\[DIRECT = {<span style="text-decoration: underline;">CLIENT</span>|
 SERVER} \]****
 
 Security profile for the client mode.

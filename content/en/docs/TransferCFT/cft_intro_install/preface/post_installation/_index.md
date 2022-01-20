@@ -2,7 +2,7 @@
     "title": "Post installation",
     "linkTitle": "Post installation",
     "weight": "180"
-}This chapter describes a series of checks that you should perform to verify your Transfer CFT installation. For more information on performing commands and using CFTUTIL, refer to the *Transfer CFT 3.9{{< TransferCFT/releasenumber  >}} [User Guide{{< TransferCFT/doctypeuser  >}}](https://docs.axway.com/u/documentation/transfer_cft/index.htm?version=3.2.4)*.
+}This chapter describes a series of checks that you should perform to verify your Transfer CFT installation. For more information on performing commands and using CFTUTIL, refer to the *Transfer CFT {{< TransferCFT/axwayvariablesReleaseNumber  >}} [{{< TransferCFT/suitevariablesDocTypeUser  >}}](https://docs.axway.com/u/documentation/transfer_cft/index.htm?version=3.2.4)*.
 
 > **Note**
 >
@@ -29,7 +29,7 @@ Start the Transfer CFT server:
 cft start
 ```
 
-Verify that the default ports used in `$CFTDIRRUNTIME/conf/cft-tcp.conf` are available:
+Verify that the default ports used in <span class="code">`$CFTDIRRUNTIME/conf/cft-tcp.conf`</span> are available:
 
 - 1761 (PeSIT Any protocol)
 - 1762 (PeSIT Any protocol with SSL authentication)

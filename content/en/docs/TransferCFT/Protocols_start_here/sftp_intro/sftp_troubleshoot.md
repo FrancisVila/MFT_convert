@@ -6,7 +6,7 @@
 
 ## Start Transfer CFT issues
 
-### Error when starting Transfer CFT{{< TransferCFT/transfercftname  >}}
+### Error when starting {{< TransferCFT/suitevariablesTransferCFTName  >}}
 
 If the following error displays:
 
@@ -80,7 +80,7 @@ CFTT16I _ No implicit send <PART=<part> IDF=<idf> > :
 
 #### Working directory
 
-Here the connection is interrupted because of a `workingdir `issue when connecting to the Transfer CFT SFTP via an SFTP client:
+Here the connection is interrupted because of a <span class="code">`workingdir `</span>issue when connecting to the Transfer CFT SFTP via an SFTP client:
 
 ```
 Error: Unable to open .: received failure with description 'The working directories in CFTSEND and CFTRECV for the IDF are not the same'
@@ -90,7 +90,7 @@ Error: Cannot recover the folder contents
 
 #### SAUTH/RAUTH
 
-These parameters check the authorized IDF for the user. For example, in the following messages an error occurred because when performing a RECV (`get`) command, the IDF was not included in the remote authorization list.
+These parameters check the authorized IDF for the user. For example, in the following messages an error occurred because when performing a RECV (<span class="code">`get`</span>) command, the IDF was not included in the remote authorization list.
 
 ****Server****
 
@@ -143,7 +143,7 @@ Diagi=110 with diagp=00000013
 
 #### Client key does not correspond to server key
 
-When using Transfer CFT{{< TransferCFT/transfercftname  >}} as a client, the server's public key referenced by SRVPUBKEY (CFTSSH direct=Client) does not correspond to the server key.
+When using {{< TransferCFT/suitevariablesTransferCFTName  >}} as a client, the server's public key referenced by SRVPUBKEY (CFTSSH direct=Client) does not correspond to the server key.
 
 ```
 CFTT82E+ DIAGP=KEY DIAGC=The client key doesn't correspond to the server key
@@ -151,7 +151,7 @@ CFTT82E+ DIAGP=KEY DIAGC=The client key doesn't correspond to the server key
 
 Check that the public key stored in the PKI database corresponds with the server's (SRVPUBKEY value). This issue may occur due to a Transfer CFT limitation where when an SFTP server refers to multiple hostkeys (located in `etc/ssh/sshd_config`), the Transfer CFT related hostkey must be placed in the first position.
 
-As shown in the following example, the Transfer CFT public key references the `ssh_host_rsa_key`, an error occurs:
+As shown in the following example, the Transfer CFT public key references the <span class="code">`ssh_host_rsa_key`</span>, an error occurs:
 
 ```
 HostKey /etc/ssh/ssh_host_rsa_key_not_in_CFT
@@ -164,20 +164,20 @@ HostKey /etc/ssh/ssh_host_rsa_key
 
 ## Check updates to the configuration (delay)
 
-The parameters used by SFTP in CFTPARM and CFTPART files are loaded in memory when Transfer CFT{{< TransferCFT/transfercftname  >}} starts and updated every 10 seconds if there is a change in the file.
+The parameters used by SFTP in CFTPARM and CFTPART files are loaded in memory when {{< TransferCFT/suitevariablesTransferCFTName  >}} starts and updated every 10 seconds if there is a change in the file.
 
 <span id="Perform"></span>
 
 ## Perform a trace
 
-If you were not able to remedy the issue as described in the previous sections, you may want to perform an SFTP trace. After performing the following commands, you must restart Transfer CFT{{< TransferCFT/transfercftname  >}}.
+If you were not able to remedy the issue as described in the previous sections, you may want to perform an SFTP trace. After performing the following commands, you must restart {{< TransferCFT/suitevariablesTransferCFTName  >}}.
 
 ```
-Windows
+{{< TransferCFT/PrimaryforWindows >}}
 set XTRACE_CFT_SFTP_LEVEL=5
 set XTRACE_OUTPUT_FILENAME=sftptrace.txt
  
-UNIX{{< TransferCFT/unix >}}
+{{< TransferCFT/suitevariablesUNIX >}}
 export XTRACE_CFT_SFTP_LEVEL=5
 export XTRACE_OUTPUT_FILENAME=sftptrace.txt
 ```

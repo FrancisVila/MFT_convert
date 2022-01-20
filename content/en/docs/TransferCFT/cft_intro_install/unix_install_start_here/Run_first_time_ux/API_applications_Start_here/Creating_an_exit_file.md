@@ -2,7 +2,7 @@
     "title": "Creating  an exit file",
     "linkTitle": "Creating an exit file",
     "weight": "220"
-}The example described in this topic was designed to operate using the ****cft-tcp.conf**** configuration example located in ****&lt;installdir>/runtime/conf****.
+}The example described in this topic was designed to operate using the <span class="bold_in_para">****cft-tcp.conf****</span> configuration example located in <span class="bold_in_para">****&lt;installdir>/runtime/conf****</span>.
 For this example, you should have already customized the
 file using the instructions in [*Running Transfer
 CFT for the First Time*]().
@@ -35,7 +35,7 @@ The *&lt;installdir>/runtime/src/exit/* subdirectory contains:
 The *&lt;installdir>/lib* subdirectory contains the:
 
 - *libcftexf.a*
-    module; this library allows you to use the Transfer CFT{{< TransferCFT/componentshortname >}} file EXITs
+    module; this library allows you to use the {{< TransferCFT/axwayvariablesComponentShortName >}} file EXITs
 
 To generate the sample CFTEXITF application, proceed as follows:
 
@@ -48,13 +48,13 @@ To generate the sample CFTEXITF application, proceed as follows:
 
 1. Access the *&lt;installdir>/runtime/conf/* directory.
 
-1. Generate the Transfer CFT{{< TransferCFT/componentshortname >}} internal datafiles
+1. Generate the {{< TransferCFT/axwayvariablesComponentShortName >}} internal datafiles
     using the *cftinit* utility with the configuration file:
 
     `cftinit cft-tcp.conf`
 
 1. When the *cftinit complete*
-    message is displayed, run Transfer CFT{{< TransferCFT/componentshortname >}} using the cftstart utility:
+    message is displayed, run {{< TransferCFT/axwayvariablesComponentShortName >}} using the cftstart utility:
 
     `cftstart`
 
@@ -68,7 +68,7 @@ To generate the sample CFTEXITF application, proceed as follows:
 
     `cftcatab`
 
-1. Stop Transfer CFT{{< TransferCFT/componentshortname >}} using the *cftstop*
+1. Stop {{< TransferCFT/axwayvariablesComponentShortName >}} using the *cftstop*
     utility:
 
     `cftstop`

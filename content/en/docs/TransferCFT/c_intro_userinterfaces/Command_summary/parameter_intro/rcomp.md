@@ -24,7 +24,7 @@ Default values are:
 | ODETTE  | 1  |
 
 
-See also ****[scomp](../scomp)****.
+See also <span style="font-weight: bold;">****[scomp](../scomp)****</span>.
 
 For more information (usable values etc.), refer to the *Compression*
 topic.

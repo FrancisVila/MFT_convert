@@ -65,7 +65,7 @@ npad=@
 ```
 Axway
 Transfer CFT
-v3.9
+v{{< TransferCFT/PrimaryTransferCFTversionlong >}}
 ```
 
 File sent over the network, when nlrecl=20:
@@ -85,7 +85,7 @@ Input file when flrecl=20:
 ```
 Axway@@@@@@@@@@@@@@@
 Transfer CFT@@@@@@@@
-v3.9@@@@@@@@@@@@@@
+v{{< TransferCFT/PrimaryTransferCFTversionlong >}}@@@@@@@@@@@@@@
 ```
 
 File sent over the network:
@@ -93,7 +93,7 @@ File sent over the network:
 ```
 Axway
 Transfer CFT
-v3.9
+v{{< TransferCFT/PrimaryTransferCFTversionlong >}}
 ```
 
 #### Example of padding a variable format file on the receiver side
@@ -112,7 +112,7 @@ File received from the network:
 ```
 Axway
 Transfer CFT
-v3.9
+v{{< TransferCFT/PrimaryTransferCFTversionlong >}}
 ```
 
 **Output file**
@@ -120,7 +120,7 @@ v3.9
 ```
 Axway@@@@@@@@@@@@@@@
 Transfer CFT@@@@@@@@
-v3.9@@@@@@@@@@@@@@
+v{{< TransferCFT/PrimaryTransferCFTversionlong >}}@@@@@@@@@@@@@@
 ```
 
 #### Example of unpadding a fixed format file on the receiver side
@@ -140,7 +140,7 @@ File received from the network
 ```
 Axway@@@@@@@@@@@@@@@
 Transfer CFT@@@@@@@@
-v3.9@@@@@@@@@@@@@@
+v{{< TransferCFT/PrimaryTransferCFTversionlong >}}@@@@@@@@@@@@@@
 ```
 
 Output file
@@ -148,5 +148,5 @@ Output file
 ```
 Axway
 Transfer CFT
-v3.9
+v{{< TransferCFT/PrimaryTransferCFTversionlong >}}
 ```

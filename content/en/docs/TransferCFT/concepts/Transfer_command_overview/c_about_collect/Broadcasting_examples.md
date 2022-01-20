@@ -2,7 +2,7 @@
     "title": "Types of broadcasts ",
     "linkTitle": "Types of broadcasts",
     "weight": "320"
-}## **<span id="Simple_broadcasting"></span>Simple broadcasting**
+}## **<span id="Simple_broadcasting"></span><span style="font-weight: normal;">Simple broadcasting</span>**
 
 Site A wants to control the broadcasting of a file in its possession,
 but through an intermediate site B.
@@ -24,8 +24,8 @@ This file is received by B as LIST, through the command:
 
 CFTRECV ID=..., FNAME=LIST
 
-- ***2**nd
-    phase*
+- *<span style="font-style: italic;">**2**</span><span style="font-style: normal;">nd
+    phase</span>*
 
 A sends the file to be broadcast to a virtual partner
 C:

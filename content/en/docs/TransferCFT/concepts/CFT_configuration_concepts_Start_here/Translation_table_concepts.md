@@ -23,7 +23,7 @@ proceeds, or OFF LINE to any file using the COPYFILE command.
 
 ## Default translation tables
 
-By default, Transfer CFT{{< TransferCFT/componentshortname  >}} provides 4 internal ASCII/EBCDIC translation
+By default, {{< TransferCFT/axwayvariablesComponentShortName  >}} provides 4 internal ASCII/EBCDIC translation
 tables, two for each transfer direction. These tables are bijective. These correspond loosely to translation between code pages EBCDIC 1047 and ASCII 437, with some small differences.
 
 ## Create a new translation table
@@ -107,8 +107,8 @@ Transfer CFT is delivered with a platform specific tool to help you create an XL
 
 - Mainframes - A JCL is provided to help with creating both local and remote tables. Refer to the CFTXLATE member in the installation library.
 
-- UNIX/Windows - Use the Axway delivered <a href="" class="MCTextPopup popup popupHead">xvi utility Use this utility to update a conversion table.</a>
-    located in the `home/bin` folder.
+- UNIX/Windows - Use the Axway delivered <a href="" class="MCTextPopup popup popupHead">xvi utility<span class="MCTextPopupBody MCTextPopupBody_Closed needs-pie popupBody" aria-hidden="true"><span class="MCTextPopupArrow"> </span>Use this utility to update a conversion table.
+    </span></a> located in the <span class="code">`home/bin`</span> folder.
 
     xvi syntax
 
@@ -163,7 +163,7 @@ of the send translation table (FCODE to NCODE) and if DIRECT = RECV (or
 The identifier
 of these tables is the value of the DEFAULT parameter of the CFTPARM command.
 It is, however, possible to replace, modify or delete these internal tables
-by CFTXLATE commands having this identifier. When Transfer CFT{{< TransferCFT/componentshortname  >}} does not find an associated table for these 4 transfer
+by CFTXLATE commands having this identifier. When {{< TransferCFT/axwayvariablesComponentShortName  >}} does not find an associated table for these 4 transfer
 criteria, it looks for the default table (value of the DEFAULT
 parameter of the CFTPARM command, for the XLATE parameter).
 
@@ -219,7 +219,7 @@ order of priority indicated:
     has been indicated in the CFTPART command  
     (CFTPART XLATE = identifier)
 - the table identifier
-    is the default identifier of the Transfer CFT{{< TransferCFT/componentshortname >}}  
+    is the default identifier of the {{< TransferCFT/axwayvariablesComponentShortName >}}  
     (CFTPARM DEFAULT = identifier)
 
 And if all the following conditions are met:
@@ -235,7 +235,7 @@ And if all the following conditions are met:
 
 ## Limitations and usage restrictions
 
-- ****Central Governance**** **interoperability** Central Governance allows you to use the default translation tables, but not to create new translation tables via the Central Governance user interface. To create and use additional tables, in Transfer CFT  manually create translation tables as described in this section, and refer to them using the XLATE parameter in a SEND or RECV command.
+- {{< TransferCFT/PrimaryCGorUM >}} **interoperability** Central Governance allows you to use the default translation tables, but not to create new translation tables via the Central Governance user interface. To create and use additional tables, in Transfer CFT  manually create translation tables as described in this section, and refer to them using the XLATE parameter in a SEND or RECV command.
 - In the event of file store and forward by partner, there is no translation
     on the intermediate site.
 - You cannot override the default translation table when using COPYFILE.
@@ -305,8 +305,8 @@ The first character is in position 0, and the first position is 00. In this exam
 
 ![](/Images/TransferCFT/temp_translation_table.png)
 
-****Related
-topics****
+****<span style="color: #800000; text-decoration: none; font-weight: normal;">Related
+topics</span>****
 
 - Command syntax
     [CFTXLATE](../../../c_intro_userinterfaces/command_summary#CFTXLATE)

@@ -4,7 +4,7 @@
     "weight": "130"
 }## Preface
 
-The Transfer CFT{{< TransferCFT/componentshortname  >}} Installation Guide provides instructions for installing and deploying your Transfer CFT{{< TransferCFT/componentshortname  >}}.
+The {{< TransferCFT/axwayvariablesComponentShortName  >}} Installation Guide provides instructions for installing and deploying your {{< TransferCFT/axwayvariablesComponentShortName  >}}.
 
 <span id="Installation support format"></span>
 

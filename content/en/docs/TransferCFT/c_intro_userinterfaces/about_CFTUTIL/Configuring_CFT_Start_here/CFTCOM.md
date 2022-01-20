@@ -51,7 +51,7 @@ Use CFTCOM TCP/IP for synchronous Transfer CFT communication on the local netwo
 
 `[ADDRLIST = (string1..64,string1..64…)]`
 
-The `ADDRLIST `parameter is non-functional in that you can only use TCPIP in local networks for synchronous communication.
+The <span class="code">`ADDRLIST `</span>parameter is non-functional in that you can only use TCPIP in local networks for synchronous communication.
 
 `[DISCTS = n]`
 
@@ -127,7 +127,7 @@ type is FILE.
 | <a href="../../../command_summary/parameter_intro/wscan">WSCAN</a> | The frequency, in seconds, with which the Transfer CFT scans the communication file. |
 
 
-****Example****
+<span class="bold_in_para">****Example****</span>
 
 TYPE=FILE
 
@@ -144,9 +144,9 @@ WSCAN = 120
 
 <!-- -->
 
-- The Transfer CFT{{< TransferCFT/componentshortname >}} can be inactive at the time
+- The {{< TransferCFT/axwayvariablesComponentShortName >}} can be inactive at the time
     the commands assigned to it are issued, to the limit of the file size.
-    Commands are taken into account at the time the Transfer CFT{{< TransferCFT/componentshortname >}} is activated,
+    Commands are taken into account at the time the {{< TransferCFT/axwayvariablesComponentShortName >}} is activated,
     if a CFTCOM command relative to this communication file has been defined.
     A communication file can be created by the CFTFILE command.
 

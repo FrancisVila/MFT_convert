@@ -5,14 +5,14 @@
 }This page describes how to configure the environment for a beginning-of-transfer
 type exit, EXITBOT. This EXIT task lets you set the IDF to use, and is executed only in SERVER mode for CFTRECV (if not the requester), for CFTSEND (HOLD state), or for an implicit SEND.
 
-Transfer CFT{{< TransferCFT/transfercftname  >}} delivers both an `exitbot.c` sample to reference, located in the `<install_dir>/runtime/src/exit` folder, and an `exbus.h` header file which defines the API, located in the `<install_dir>/home/inc` folder.
+{{< TransferCFT/suitevariablesTransferCFTName  >}} delivers both an `exitbot.c` sample to reference, located in the `<install_dir>/runtime/src/exit` folder, and an `exbus.h` header file which defines the API, located in the `<install_dir>/home/inc` folder.
 
 <span id="Transfer_state"></span><span id="Title"></span><span id="Configuring_the_environment__End_of_transfer_exit"></span>
 
 ## Procedure
 
 Before you submit this EXIT, you must customize the following
-Transfer CFT{{< TransferCFT/componentshortname  >}} objects:
+{{< TransferCFT/axwayvariablesComponentShortName  >}} objects:
 
 - CFTEXIT: This describes the EXIT environment and how this
     EXIT is activated.
@@ -38,7 +38,7 @@ on the operating system.
 | <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/type">TYPE</a> <br/> (Mandatory) | Available options include: FILE | ACCESS | EXEC | BOT<br/> Use BOT for a beginning-of-transfer exit. |
 
 
-****Example****
+<span class="bold_in_para">****Example**** </span>
 
 The following example provides a minimum of arguments:
 
@@ -60,7 +60,7 @@ QQQ\_QQQ\_QQQ
 
 Please refer to the [CFTPARM](../../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftparm) page for additional parameters and details.
 
-****Example****
+<span class="bold_in_para">****Example**** </span>
 
 The following example provides a minimum number of arguments for CFTPARM:
 

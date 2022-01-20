@@ -2,13 +2,13 @@
     "title": "About the unified configuration tool (UCONF)",
     "linkTitle": "Set UCONF parameters",
     "weight": "220"
-}Configurable Transfer CFT{{< TransferCFT/transfercftname  >}} parameters fall into two basic categories, definable objects or UCONF values. For some Transfer CFT parameters, you can use either method to define parameter values.
+}Configurable {{< TransferCFT/suitevariablesTransferCFTName  >}} parameters fall into two basic categories, definable objects or UCONF values. For some Transfer CFT parameters, you can use either method to define parameter values.
 
-When using Central Governance{{< TransferCFT/centralgovernancename  >}} to manage Transfer CFT{{< TransferCFT/componentshortname  >}}, some parameter values are specific to UCONF and modifiable only through the Central Governance{{< TransferCFT/centralgovernancename  >}} interface or using the UCONF utility as described in this section.
+When using {{< TransferCFT/suitevariablesCentralGovernanceName  >}} to manage {{< TransferCFT/axwayvariablesComponentShortName  >}}, some parameter values are specific to UCONF and modifiable only through the {{< TransferCFT/suitevariablesCentralGovernanceName  >}} interface or using the UCONF utility as described in this section.
 
 ## What is the unified configuration tool?
 
-Transfer CFT{{< TransferCFT/componentshortname  >}} features
+{{< TransferCFT/axwayvariablesComponentShortName  >}} features
 an easy-to-use configuration tool, UCONF, to standardize and merge functioning for all platforms. This interface enables you to
 makes technical parameter value modifications using either CFTUTIL or
 the Copilot UI.
@@ -61,9 +61,9 @@ The [UCONF parameters topic](uconf_directory) contains a complete listing of al
 
 ### UCONF data
 
-When you install Transfer CFT, the `home` directory is created and populated under the `Transfer_CFT` installation directory. This `home `directory contains installation libraries, binaries, and templates. Do not store any personal files in the `home `directory, as they are erased during updates.
+When you install Transfer CFT, the <span class="code">`home`</span> directory is created and populated under the <span class="code">`Transfer_CFT`</span> installation directory. This <span class="code">`home `</span>directory contains installation libraries, binaries, and templates. Do not store any personal files in the <span class="code">`home `</span>directory, as they are erased during updates.
 
-The UCONF data are stored in both a dictionary located in the `Transfer_CFT>home `directory, and in a runtime file in the` Transfer_CFT>runtime>data` directory. You should not modify the default values stored in the `home `UCONF dictionary.
+The UCONF data are stored in both a dictionary located in the <span class="code">`Transfer_CFT>home `</span>directory, and in a runtime file in the<span class="code">` Transfer_CFT>runtime>data`</span> directory. You should not modify the default values stored in the <span class="code">`home `</span>UCONF dictionary.
 
 ****Related topics****
 

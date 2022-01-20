@@ -2,7 +2,7 @@
     "title": "CFTRECV  - Receive templates",
     "linkTitle": "CFTRECV - Default receive templates",
     "weight": "420"
-}This topic describes the Transfer CFT{{< TransferCFT/transfercftname  >}}
+}This topic describes the {{< TransferCFT/suitevariablesTransferCFTName  >}}
 receive template. You can use the CFTRECV object to:
 
 - Give the default

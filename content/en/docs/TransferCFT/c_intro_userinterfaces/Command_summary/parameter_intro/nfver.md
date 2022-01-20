@@ -8,7 +8,7 @@
 
 #### RECV
 
-****NFVER = { 0
+****NFVER = { <span style="text-decoration: underline;">0</span>
 | n }****
 
 Version of the transferred file.
@@ -22,7 +22,7 @@ The values represent the following:
 - n: version -n of
     the file
 
-****Case 2****: NFVER is used alone
+<span style="font-weight: bold;">****Case 2****</span>: NFVER is used alone
 (closed mode with implicit sending from the sender server end).
 
 FNAME = &PART.&IDF (-&NFVER).
@@ -32,12 +32,12 @@ indicated in the NFVER
 
 parameter.
 
-****GDG****
+<span style="font-weight: bold;">****GDG****</span>
 
-****Case 1****: NFVER is used with NFNAME
+<span style="font-weight: bold;">****Case 1****</span>: NFVER is used with NFNAME
 (open mode with implicit sending from the sender server end).
 
-****Example****:
+<span style="font-weight: bold;">****Example****</span>:
 
 ****MVS****
 
@@ -46,10 +46,10 @@ FNAME = &FNAME (-&NFVER).
 The partner sends the GDG file with the root and the version number
 indicated.
 
-****Case 2****: NFVER is used alone
+<span style="font-weight: bold;">****Case 2****</span>: NFVER is used alone
 (closed mode with implicit sending from the sender server end)
 
-****Example****:
+<span style="font-weight: bold;">****Example****</span>:
 
 ****MVS****
 
@@ -58,7 +58,7 @@ FNAME = &TEST.GDG (-&NFVER).
 The partner sends version of the ‘&PART.&IDF’ file indicated
 in the NFVER parameter.
 
-****Note****: if NFVER is not defined,
+<span style="font-weight: bold;">****Note****</span>: if NFVER is not defined,
 the default value is 0.
 
 It is consequently recommended to define one send command (CFTSEND)

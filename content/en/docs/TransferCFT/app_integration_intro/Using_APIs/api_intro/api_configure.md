@@ -2,15 +2,15 @@
     "title": "REST API server configuration",
     "linkTitle": "REST API server configuration",
     "weight": "300"
-}Before you can start using REST API operations with Transfer CFT{{< TransferCFT/transfercftname  >}}, you need to set a few parameters in the Transfer CFT{{< TransferCFT/transfercftname  >}} configuration.
+}Before you can start using REST API operations with {{< TransferCFT/suitevariablesTransferCFTName  >}}, you need to set a few parameters in the {{< TransferCFT/suitevariablesTransferCFTName  >}} configuration.
 
 ## Before you start
 
-The REST server is a Copilot service. To start the REST server, use the `copstart `command to [start Copilot](../../../../admin_intro/manage_copilot).
+The REST server is a Copilot service. To start the REST server, use the <span class="code">`copstart `</span>command to [start Copilot](../../../../admin_intro/manage_copilot).
 
 ## Procedure
 
-Transfer CFT{{< TransferCFT/transfercftname  >}} requires the following configuration settings before you can use REST API.
+{{< TransferCFT/suitevariablesTransferCFTName  >}} requires the following configuration settings before you can use REST API.
 
 1. Enable the Copilot REST API if you did not do so during installation.  
     ```
@@ -27,7 +27,7 @@ Transfer CFT{{< TransferCFT/transfercftname  >}} requires the following configur
     CFTUTIL uconfset id=copilot.ssl.SslCertPassword, value=<ssl pkcs12 certificate password>
     ```  
     These parameter settings are described in [Install a certificate on the server side](../../../../admin_intro/manage_copilot#Install).  
-1. Specify the authentication method, as the client must provide credentials (user/password) to the REST server. Set the UCONF the `copilot.restapi.authentication_method` parameter.  
+1. Specify the authentication method, as the client must provide credentials (user/password) to the REST server. Set the UCONF the <span class="code">`copilot.restapi.authentication_method`</span> parameter.  
     Example  
     ```
     CFTUTIL uconfset id=copilot.restapi.authentication_method, value=system
@@ -38,14 +38,15 @@ The supported authentication methods are:
 
 | Authentication method  | copilot.restapi.authentication_method  | Details  |
 | --- | --- | --- |
-| Operating System  | system  | The user/password is checked against the operating system.<br/> <blockquote> **Note**<br/> We strongly recommend that you set copilot.misc.createprocessasuser=yes when using the system option.<br/> </blockquote> **Unix**<br/> You must use <code>cftsu </code>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to <a href="" >Using system users - UNIX</a> for details.<br/> • Create a group "group1": groupadd group1<br/> • Add user "user1" to group "group1": usermod -a -G group1 user1<br/> **Windows**<br/> You require a superuser (administrative user account) to create a group and assign a user to a group.<br/> • Create a group "group1": net localgroup group1 /add<br/> • Add user "user1" to group "group1": net localgroup group1 user1 /add<br/> <blockquote> **Note**<br/> For a user belonging to a domain, use: domain\user1 instead of user1<br/> </blockquote>  |
-| Access Management  | am  | This methods uses an indirection towards the Access Management system. The user/password is checked by the configured access management system: Flow Manager{{< TransferCFT/flowmanager  >}}, PassPort AM, or internal AM. |
-| xfbadm database<br/> (UNIX and HP NonStop exclusively) | xfbadm  | The user/password is checked using the xfbadm base (see the <a href="../../../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).<br/> A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <code>profile </code>from the runtime directory.<br/> • Create a group "group1" with gid=200: xfbadmgrp add -G group1 -p group1_pw -g 200<br/> • From the user prompt, to add a user "user1" to group "group1"enter: xfbadmusr add -l user1 -p user1_pw -u AUTO -g 200 |
+| Operating System  | system  | The user/password is checked against the operating system.<br/> <blockquote> **Note**<br/> We strongly recommend that you set copilot.misc.createprocessasuser=yes when using the system option.<br/> </blockquote> **Unix**<br/> You must use <span ><code>cftsu </code></span>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to <a href="" >Using system users - UNIX</a> for details.<br/> • Create a group "group1": <span >groupadd group1</span><br/> • Add user "user1" to group "group1": <span >usermod -a -G group1 user1</span><br/> **Windows**<br/> You require a superuser (administrative user account) to create a group and assign a user to a group.<br/> • Create a group "group1": <span >net localgroup group1 /add</span><br/> • Add user "user1" to group "group1": <span >net localgroup group1 user1 /add</span><br/> <blockquote> **Note**<br/> For a user belonging to a domain, use: domain\user1 instead of user1<br/> </blockquote>  |
+| Access Management  | am  | This methods uses an indirection towards the Access Management system. The user/password is checked by the configured access management system: {{< TransferCFT/suitevariablesFlowManager  >}}, PassPort AM, or internal AM. |
+| xfbadm database<br/> (UNIX and HP NonStop exclusively) | xfbadm  | The user/password is checked using the xfbadm base (see the <a href="../../../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).<br/> A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <span ><code>profile </code></span>from the runtime directory.<br/> • Create a group "group1" with gid=200:<span > xfbadmgrp add -G group1 -p group1_pw -g 200</span><br/> • From the user prompt, to add a user "user1" to group "group1"enter: <span >xfbadmusr add -l user1 -p user1_pw -u AUTO -g 200</span> |
 
 
-********<span id="REST"></span>REST API server authentication method********
+********<span class="autonumber"></span><span id="REST"></span>REST API server authentication method********
 
-********![](/Images/TransferCFT/authentication_copilot_server.png)********
+********<span class="autonumber"></span>
+![](/Images/TransferCFT/authentication_copilot_server.png)********
 
 > **Note**
 >

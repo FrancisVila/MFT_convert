@@ -15,7 +15,7 @@ It is used to identify the access point at which incoming connection requests
 for this communication protocol are placed.
 
 The SAP supplied by a requester partner when making its connection request
-is retrieved by the local Transfer CFT{{< TransferCFT/componentshortname  >}}, which uses it to deduce the protocol
+is retrieved by the local {{< TransferCFT/axwayvariablesComponentShortName  >}}, which uses it to deduce the protocol
 to be used. Each CFTPROT command in a given resource class must include
 its specific SAP.
 
@@ -45,14 +45,14 @@ Values of the remote SAPs (service
 access points) associated with each of the protocols defined by the PROT
 parameter.
 
-- For transfers to a Transfer CFT{{< TransferCFT/componentshortname >}} other than
-    the Transfer CFT{{< TransferCFT/componentshortname >}}, the use of this additional information should
+- For transfers to a {{< TransferCFT/axwayvariablesComponentShortName >}} other than
+    the {{< TransferCFT/axwayvariablesComponentShortName >}}, the use of this additional information should
     be looked into on a case by case basis.
-- For transfers to a Transfer CFT{{< TransferCFT/componentshortname >}},
+- For transfers to a {{< TransferCFT/axwayvariablesComponentShortName >}},
     this parameter is used to designate the protocol applied to the partner
-    Transfer CFT{{< TransferCFT/componentshortname >}}. In other words, the "sap" is an additional
+    {{< TransferCFT/axwayvariablesComponentShortName >}}. In other words, the "sap" is an additional
     item of information used to reach a remote application subset (a protocol
-    in the Transfer CFT{{< TransferCFT/componentshortname >}} case) and not only a Transfer CFT{{< TransferCFT/componentshortname >}}.
+    in the {{< TransferCFT/axwayvariablesComponentShortName >}} case) and not only a {{< TransferCFT/axwayvariablesComponentShortName >}}.
 - Each of the values of the parameter represents the "sap" associated
     with the communication protocol, the identifier of which matches in the
     PROT parameter.

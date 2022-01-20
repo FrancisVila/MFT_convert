@@ -5,7 +5,7 @@
 }This table displays the fields and communication structure for the
 directory, end of transfer, and file exits in server mode:
 
-Exit structure
+<span class="autonumber"></span>Exit structure
 
 ```
 char cMode;      /\* Client/Server \*/

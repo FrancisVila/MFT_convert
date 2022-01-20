@@ -177,7 +177,7 @@ MQUERY OBJECT = STR,
 #### Parameters
 
 - OBJECT: Possible values ​​are:
-    -   CACHE: Select to list the Transfer CFT{{< TransferCFT/componentshortname >}} catalog or command cache.
+    -   CACHE: Select to list the {{< TransferCFT/axwayvariablesComponentShortName >}} catalog or command cache.
     -   SYSTEM: Lists system information.
 - CONTENT: Possible values ​​are FUL / BRIEF.
 - NAME: Possible values ​​are:

@@ -18,15 +18,15 @@ size, in bytes.
 This field only applies to the following EXITS:
 
 - Access/EXEC:
-    -   range {****0 to 1024****}
+    -   range {<span style="font-weight: bold;">****0 to 1024****</span>}
     -   default value
-        ****1024****
+        <span style="font-weight: bold;">****1024****</span>
 - file:
-    -   range {****0 to 8192****}
+    -   range {<span style="font-weight: bold;">****0 to 8192****</span>}
     -   default value
-        ****8192****
+        <span style="font-weight: bold;">****8192****</span>
 
-This area is not used by the Transfer CFT{{< TransferCFT/componentshortname  >}} interface. You can use it
+This area is not used by the {{< TransferCFT/axwayvariablesComponentShortName  >}} interface. You can use it
 to save the information that you consider necessary for the processing
 relative to your program.
 

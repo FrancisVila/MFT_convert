@@ -31,7 +31,7 @@ by the protocols used. The parameters describing these names are described in th
 
 Local names are limited
 to the local Transfer CFT, and are recognized as identifiers specific
-to the Transfer CFT{{< TransferCFT/hflongproductname  >}}. The parameters describing these names are indicated in
+to the {{< TransferCFT/headerfootervariableshflongproductname  >}}. The parameters describing these names are indicated in
 the table below:
 
 ****Partner local names****

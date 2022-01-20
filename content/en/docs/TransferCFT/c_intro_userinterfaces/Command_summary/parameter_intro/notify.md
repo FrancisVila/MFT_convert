@@ -27,8 +27,8 @@ The value of this parameter is a left aligned 8-character string.
 The destination of these messages may be, according to the system:
 
 - the
-    Transfer CFT{{< TransferCFT/componentshortname >}} "submitter" corresponding to the standard
-    output associated with the Transfer CFT{{< TransferCFT/componentshortname >}} (the submittal screen,
+    {{< TransferCFT/axwayvariablesComponentShortName >}} "submitter" corresponding to the standard
+    output associated with the {{< TransferCFT/axwayvariablesComponentShortName >}} (the submittal screen,
     for example)  
     The value of the NOTIFY parameter must be then be set to ‘ ’ (8 blank
     characters)
@@ -94,8 +94,8 @@ For the user:
 
 | User OS  | Messages are...  |
 | --- | --- |
-| MVS (z/OS) | Sent by SEND to the specified TSO USERID; in this case, the Transfer CFT{{< TransferCFT/componentshortname  >}} program must be authorized (APF). |
-| VMS | Sent to the "VMS User " designated by its VMS name. In this case, the Transfer CFT{{< TransferCFT/componentshortname  >}} task must have the OPER privilege. |
+| MVS (z/OS) | Sent by SEND to the specified TSO USERID; in this case, the {{< TransferCFT/axwayvariablesComponentShortName  >}} program must be authorized (APF). |
+| VMS | Sent to the "VMS User " designated by its VMS name. In this case, the {{< TransferCFT/axwayvariablesComponentShortName  >}} task must have the OPER privilege. |
 
 
 [Return to Command index](../../)

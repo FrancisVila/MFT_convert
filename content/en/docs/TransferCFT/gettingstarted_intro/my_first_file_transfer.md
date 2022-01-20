@@ -4,7 +4,7 @@
     "weight": "100"
 }After installing your Transfer CFT, you can use the delivered configuration samples and default values to quickly and easily perform your first transfer.
 
-For more information on starting your Transfer CFT{{< TransferCFT/componentshortname  >}}, and basic operational commands, see the section [Start, stop, and Transfer CFT{{< TransferCFT/componentshortname  >}} administrative scripts.](../../admin_intro/start_stop_cft)
+For more information on starting your {{< TransferCFT/axwayvariablesComponentShortName  >}}, and basic operational commands, see the section [Start, stop, and {{< TransferCFT/axwayvariablesComponentShortName  >}} administrative scripts.](../../admin_intro/start_stop_cft)
 
 This topic describes how to:
 
@@ -51,11 +51,11 @@ To display exhaustive transfer details, enter the command:
 CFTUTIL listcat content=debug
 ```
 
-The purpose of the My first file transfer section is to help you feel comfortable with basic Transfer CFT{{< TransferCFT/componentshortname  >}} file transfer commands. Once you understand core file transfer concepts, you can delve into the rich array of parameters that allow you to customize your application integrations and data flows. Additional commands and options are available to help you define the monitoring granularity  for your executed transfers.
+The purpose of the My first file transfer section is to help you feel comfortable with basic {{< TransferCFT/axwayvariablesComponentShortName  >}} file transfer commands. Once you understand core file transfer concepts, you can delve into the rich array of parameters that allow you to customize your application integrations and data flows. Additional commands and options are available to help you define the monitoring granularity  for your executed transfers.
 
 ## What's next?
 
-In the following sections, we'll take a look at additional Transfer CFT{{< TransferCFT/componentshortname  >}} transfer modes, as well as some useful configuration parameters. With Transfer CFT, the transfer initiator can be either the sender of the file or the receiver, as indicated in the examples below. Additionally, in these examples we will use the convention that the requester is the client, so the transfer description may read ****Requester/Sender**** if the client is supplying the file.
+In the following sections, we'll take a look at additional {{< TransferCFT/axwayvariablesComponentShortName  >}} transfer modes, as well as some useful configuration parameters. With Transfer CFT, the transfer initiator can be either the sender of the file or the receiver, as indicated in the examples below. Additionally, in these examples we will use the convention that the requester is the client, so the transfer description may read <span class="bold_in_para">****Requester/Sender****</span> if the client is supplying the file.
 
 > **Note**
 >
@@ -152,7 +152,7 @@ CFTSEND ID=INVOICE, IMPL=NO,....
  
 SEND PART=PARIS, IDF=INVOICE, STATE=HOLD
  
-LISTCAT /\*show transfers in hold state\*/
+LISTCAT <span style="font-size: 8pt;">/\*show transfers in hold state\*/</span>
 ```
 ```
 **/\*REQUESTER/RECEIVER\*/**
@@ -208,7 +208,7 @@ SEND PART=PARIS, IDF=INVOICE, STATE=HOLD, FNAME=FILE_1
 SEND PART=PARIS, IDF=INVOICE, STATE=HOLD, FNAME=FILE_2
 SEND PART=PARIS, IDF=INVOICE, STATE=HOLD, FNAME=FILE_n
  
-LISTCAT /\*would show transfer in hold state\*/
+LISTCAT <span style="font-size: 8pt;">/\*would show transfer in hold state\*/</span>
 ```
 ```
 **/\*REQUESTER/RECEIVER\*/**
@@ -261,7 +261,7 @@ HOST = @<Paris address>
 CFTSEND ID=ORDER, IMPL=YES, FNAME=FILE_TO_SEND....
  
  
-LISTCAT /\*would show transfer in hold state\*/
+LISTCAT <span style="font-size: 8pt;">/\*would show transfer in hold state\*/</span>
 ```
 
  
@@ -591,4 +591,4 @@ LISTCAT
 
 #### Additional information
 
-Once you understand the basic modes and concepts described in this topic, you can then add processing, symbolic variables, scripts and more to your transfers using other Transfer CFT{{< TransferCFT/componentshortname  >}} options and features. See the dedicated sections in this document for details on customizing your transfer flows. A good place to start is [Transfer Concepts](../../concepts/transfer_command_overview), which presents high-level transfer processing concepts, transfer mode details, and procedural topics.
+Once you understand the basic modes and concepts described in this topic, you can then add processing, symbolic variables, scripts and more to your transfers using other {{< TransferCFT/axwayvariablesComponentShortName  >}} options and features. See the dedicated sections in this document for details on customizing your transfer flows. A good place to start is [Transfer Concepts](../../concepts/transfer_command_overview), which presents high-level transfer processing concepts, transfer mode details, and procedural topics.

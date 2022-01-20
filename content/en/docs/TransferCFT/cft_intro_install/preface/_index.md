@@ -6,7 +6,7 @@
 
 This document describes how to install Transfer CFT in a HP NonStop OSS environment.
 
-## About Transfer CFT{{< TransferCFT/componentlongname  >}}
+## About {{< TransferCFT/axwayvariablesComponentLongName  >}}
 
 Transfer CFT is the file transfer component in the Axway MFT platform, and provides a multi-platform, high-volume, file and message transfer service.
 
@@ -14,7 +14,7 @@ For more information on Axway products, visit [www.axway.com](http://www.axway.c
 
 ## Who should read this guide
 
-This guide is intended for enterprise personnel involved in installing software and Axway Professional Services personnel. Familiarity with AMPLIFY{{< TransferCFT/platformorsuiteshortname  >}} products is recommended.
+This guide is intended for enterprise personnel involved in installing software and Axway Professional Services personnel. Familiarity with {{< TransferCFT/axwayvariablesPlatformorSuiteShortName  >}} products is recommended.
 
 This guide presumes you have knowledge of:
 
@@ -27,24 +27,24 @@ Others who may find parts of this guide useful include network or systems admini
 
 ## Installation guide outline
 
-This guide explains how to perform a full installation of Transfer CFT{{< TransferCFT/componentlongname  >}}. It also describes how to:
+This guide explains how to perform a full installation of {{< TransferCFT/axwayvariablesComponentLongName  >}}. It also describes how to:
 
 **Introduction** – Describes any prerequisite software or requirements.
 
 **Install** – Describes how to perform a complete install as well as apply a service pack.
 
-**Post installation** – Provides instructions on how to check if the installation was successful and set up Transfer CFT{{< TransferCFT/componentshortname  >}}. Additionally it describes any tasks to perform before the administrator can log on to the product for initial configuration.
+**Post installation** – Provides instructions on how to check if the installation was successful and set up {{< TransferCFT/axwayvariablesComponentShortName  >}}. Additionally it describes any tasks to perform before the administrator can log on to the product for initial configuration.
 
 **Migrate** – Involves a change in product version and involves a configuration change (migrate partner and parameter files).
 
-**Uninstall** – Describes how you can uninstall Transfer CFT{{< TransferCFT/componentshortname  >}}.
+**Uninstall** – Describes how you can uninstall {{< TransferCFT/axwayvariablesComponentShortName  >}}.
 
 ## Documentation
 
 Transfer CFT provides a complete set of documentation, covering all aspects of using the product. These documents include the following:
 
-- Transfer CFT{{< TransferCFT/componentshortname >}} 3.9 Release Notes
-- AMPLIFY{{< TransferCFT/platformorsuitelongname >}} Supported Platforms Guide
+- {{< TransferCFT/axwayvariablesComponentShortName >}} {{< TransferCFT/PrimaryTransferCFTversionlong >}} Release Notes
+- {{< TransferCFT/axwayvariablesPlatformorSuiteLongName >}} Supported Platforms Guide
 
 > **Note**
 >
@@ -52,4 +52,4 @@ Transfer CFT provides a complete set of documentation, covering all aspects of u
 
 ## Support services
 
-The Axway{{< TransferCFT/companyname  >}} Global Support team provides worldwide 24 x 7 support, subject to validation of your license agreement. Email <support@axway.com> or, for your local support telephone number, visit Axway{{< TransferCFT/companyname  >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a> and click **Contact Axway Support**.
+The {{< TransferCFT/axwayvariablesCompanyName  >}} Global Support team provides worldwide 24 x 7 support, subject to validation of your license agreement. Email <support@axway.com> or, for your local support telephone number, visit {{< TransferCFT/axwayvariablesCompanyName  >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a> and click **Contact Axway Support**.

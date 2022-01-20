@@ -3,13 +3,13 @@
     "linkTitle": "MQUERY - Querying a component ",
     "weight": "300"
 }This page describes how to use the <span id="MQUERY_command"></span>MQUERY
-command to query the various Transfer CFT{{< TransferCFT/componentshortname  >}} components.
+command to query the various {{< TransferCFT/axwayvariablesComponentShortName  >}} components.
 
 You can use this command to check transfers that should have started but are blocked, check a scheduled job that has not started, or to provide information when troubleshooting performance issues as shown in the examples below.
 
 The MQUERY command sends the requested internal information to display in the log.
 
-CFTUTIL command lets you list the allocation of Transfer CFT{{< TransferCFT/transfercftname  >}} connections:
+CFTUTIL command lets you list the allocation of {{< TransferCFT/suitevariablesTransferCFTName  >}} connections:
 
 - The connections by partners (IN,OUT and reserved in “retry”)
 - The connections which are taken by protocols awaiting of FPDU.CONNECT (unknown partner)
@@ -54,7 +54,7 @@ OBJECT = STATS or PROBE
 | Parameter  |  Description  |
 | --- | --- |
 | OBJECT  | Options: <u>CACHE</u> | SYSTEM | STATS | PROBE | TRACE (obsolete)  |
-| NAME  | The options available for the NAME depend on the type of OBJECT to be queried.<br/> If the object = cache (default) then the name can be set to:<br/> • CAT: Query of the catalog cache<br/> • COMMAND: Query of the command cache<br/> • CRON: Query the Transfer CFT{{< TransferCFT/componentshortname  >}} CRON cache<br/> • DMZ: Query of the DMZ cache<br/> • STAT |
+| NAME  | The options available for the NAME depend on the type of OBJECT to be queried.<br/> If the object = cache (default) then the name can be set to:<br/> • CAT: Query of the catalog cache<br/> • COMMAND: Query of the command cache<br/> • CRON: Query the {{< TransferCFT/axwayvariablesComponentShortName  >}} CRON cache<br/> • DMZ: Query of the DMZ cache<br/> • STAT |
 | CONTENT  | If OBJECT=CACHE then you can select from the following values:<br/> BRIEF| FULL | STAT - or - XMLBRIEF| XMLFULL | RAW |
 
 

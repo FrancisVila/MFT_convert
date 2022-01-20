@@ -58,7 +58,7 @@ or receiving).
 
 ### What is a model file identifier?
 
-During a transfer, Transfer CFT{{< TransferCFT/componentshortname  >}} assigns a file identifier. The file
+During a transfer, {{< TransferCFT/axwayvariablesComponentShortName  >}} assigns a file identifier. The file
 is identified with a model file identifier called an IDF. An IDF can be
 seen as a logical class containing one or more physical files.
 
@@ -71,7 +71,7 @@ as required.
 
 The IDF is at the basis of the organization of the local operation:
 control of transfers, connection convention between applications (upstream/downstream)
-and the Transfer CFT{{< TransferCFT/componentshortname  >}}.
+and the {{< TransferCFT/axwayvariablesComponentShortName  >}}.
 
 Although the local operation IDF and the IDF agreed with the remote
 partner generally have the same value, it is possible to use correspondence
@@ -110,7 +110,7 @@ taken into account.
     parameter of CFTPARM
 
 This transmission relates to the partner (server) indicated in the PART
-parameter (see **P*arameter setting
+parameter (see <span style="font-style: italic;">**P**</span>*arameter setting
 example*, in *Partner*).
 
 *At the receiver/server site*, the
@@ -219,7 +219,7 @@ characteristics being defined for each partner using a common IDF naming
 and data type convention. This file management mode is known as the closed
 mode.
 
-In PeSIT D CFT profile and PeSIT E protocol, the Transfer CFT{{< TransferCFT/componentshortname  >}}
+In PeSIT D CFT profile and PeSIT E protocol, the {{< TransferCFT/axwayvariablesComponentShortName  >}}
 also allows a partner to remotely manage this physical file location.
 This management mode is known as the "open mode".
 
@@ -236,7 +236,7 @@ a relative name that consists of a stem and a version number.
 
 Transferring a file designated by an absolute name involves no particularities.
 On the other hand, when the sent or received file is designated by a relative
-name, Transfer CFT{{< TransferCFT/componentshortname  >}} systematically looks for the corresponding absolute
+name, {{< TransferCFT/axwayvariablesComponentShortName  >}} systematically looks for the corresponding absolute
 name, to make sure to be able to return to the same data in the event
 of an incident. Indeed, if the initial relative name is used when restarting
 a transfer, there is a risk of accessing different data (a changeover
@@ -343,7 +343,7 @@ with the following definitions:
     the name of a remote directory (*dirname*) or a generic name, or
     mask, using wildcard characters (*mask*)  
     The syntax convention used corresponds to the one recognized by the
-    sender Transfer CFT{{< TransferCFT/componentshortname >}}.
+    sender {{< TransferCFT/axwayvariablesComponentShortName >}}.
 
 In response, the sender/server selects the files, creates an entry in
 the catalog (with FNAME= *dirname* or *mask*) and send a series
@@ -360,7 +360,7 @@ associated with the text file type on your system.
 
 ### Request to receive several model files
 
-Transfer CFT{{< TransferCFT/componentshortname  >}} provides the possibility of activating the following
+{{< TransferCFT/axwayvariablesComponentShortName  >}} provides the possibility of activating the following
 at the requester end:
 
 - The reception of
@@ -389,7 +389,7 @@ be in locked for sending mode (SEND STATE = HOLD).
 
 **PeSIT D CFT profile, PeSIT E**
 
-A Generic IDF scenario is possible between two Transfer CFT{{< TransferCFT/componentshortname  >}}s using either
+A Generic IDF scenario is possible between two {{< TransferCFT/axwayvariablesComponentShortName  >}}s using either
 the PeSIT D profile, or PeSIT E.
 
 This mechanism is used to receive ONE physical file identified at the
@@ -404,7 +404,7 @@ at the server end, the transfer SEND IDF = IDF1, STATE = HOLD, FNAME =
 Y... , the first transfer pending.
 
 **Example of the first transfer pending
-unlocked by Transfer CFT{{< TransferCFT/componentshortname  >}}**
+unlocked by {{< TransferCFT/axwayvariablesComponentShortName  >}}**
 
 ![](/Images/TransferCFT/First_tx_pending_unlocked_by_CFT.gif)
 
@@ -458,8 +458,8 @@ at the server end.
 
 | **ODETTE**  | Only the following receive command is valid:<br /> RECV IDF = *<br /> Although sequencing is at the sender’s initiative, the receiver end catalog will contain a record corresponding to the global reception request and a record for each reception, in the same way as for the other protocols. This command provides the possibility to change direction and hence globally receive all the files pending at the remote partner end.  |
 | --- | --- |
-| **PeSIT D CFT profile**  | To activate a reception from a requester Transfer CFT{{< TransferCFT/componentshortname  >}} to a server monitor, only the following commands are valid:<br /> RECV IDF = * and RECV IDF = *, FILE = ALL |
-| **PeSIT D CFT profile, PeSIT E**  | Possible between two Transfer CFT{{< TransferCFT/componentshortname  >}}s, using one of these two protocols.<br /> Between two CFTs, this is a special case of selective reception, the command being RECV IDF = *, FILE = ALL  |
+| **PeSIT D CFT profile**  | To activate a reception from a requester {{< TransferCFT/axwayvariablesComponentShortName  >}} to a server monitor, only the following commands are valid:<br /> RECV IDF = * and RECV IDF = *, FILE = ALL |
+| **PeSIT D CFT profile, PeSIT E**  | Possible between two {{< TransferCFT/axwayvariablesComponentShortName  >}}s, using one of these two protocols.<br /> Between two CFTs, this is a special case of selective reception, the command being RECV IDF = *, FILE = ALL  |
 
 
 ### Protection of the model file identifier
@@ -467,7 +467,7 @@ at the server end.
 The CFTAUTH command is used to define the list of IDFs authorized for
 a given partner according to the transfer direction: sending or receiving.
 
-Before activating a SEND command, Transfer CFT{{< TransferCFT/componentshortname  >}} checks that the receiving
+Before activating a SEND command, {{< TransferCFT/axwayvariablesComponentShortName  >}} checks that the receiving
 partner has the right to receive the specified IDF. This mechanism is
 implemented through the parameter setting relationships indicated in the
 following figure.
@@ -476,7 +476,7 @@ following figure.
 
 ![](/Images/TransferCFT/IDF_send_protection.gif)
 
-Similarly, when a RECV command is activated, Transfer CFT{{< TransferCFT/componentshortname  >}} checks that
+Similarly, when a RECV command is activated, {{< TransferCFT/axwayvariablesComponentShortName  >}} checks that
 the sending partner is authorized to send the requested IDF.
 
 This mechanism is implemented through the parameter setting relationships

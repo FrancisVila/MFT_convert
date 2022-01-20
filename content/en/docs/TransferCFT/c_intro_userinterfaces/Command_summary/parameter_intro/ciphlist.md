@@ -20,7 +20,7 @@ Each value defines three algorithms:
 
 ****Server****
 
-This list is compared with the list proposed by the client in order of preference, however the Transfer CFT{{< TransferCFT/componentlongname  >}} order takes precedence over the server ciphlist.
+This list is compared with the list proposed by the client in order of preference, however the {{< TransferCFT/axwayvariablesComponentLongName  >}} order takes precedence over the server ciphlist.
 
 ****Client****
 

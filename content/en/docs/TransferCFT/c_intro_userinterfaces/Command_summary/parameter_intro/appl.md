@@ -8,7 +8,7 @@
 
 #### CFTEXT
 
-All Transfer CFT{{< TransferCFT/componentshortname  >}} application definitions.
+All {{< TransferCFT/axwayvariablesComponentShortName  >}} application definitions.
 
  
 

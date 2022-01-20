@@ -4,7 +4,7 @@
     "weight": "190"
 }The supported operating systems are listed in the [Platform features](../../../datasheet) table.
 
-## Transfer CFT{{< TransferCFT/transfercftname  >}} acting as a SFTP client
+## {{< TransferCFT/suitevariablesTransferCFTName  >}} acting as a SFTP client
 
 ****Put command****
 
@@ -41,7 +41,7 @@ sftp> mput file\*
 
 ****Mget command****
 
-The Transfer CFT{{< TransferCFT/componentlongname  >}} server must be using open mode.
+The {{< TransferCFT/axwayvariablesComponentLongName  >}} server must<span style="font-weight: normal;"> </span>be using open mode.
 
 ```
 recv part=app1,idf=groupoffiles,nfname=(@/#)file\*,file=all
@@ -52,7 +52,7 @@ sftp> mget file\*
 
 ## Transfer CFT client with a Transfer CFT server
 
-This example sends an acknowledgment following a file transfer (`cft_flow` in the example).
+This example sends an acknowledgment following a file transfer (<span class="code">`cft_flow`</span> in the example).
 
 ****On the Transfer CFT 1****
 
@@ -61,7 +61,7 @@ CFTPART ID=CFT_2_SFTP,nspart="cft_1_sftp",nspassw=cft_1_sftp,nrpart="cft_2_sftp"
 CFTTCP ID=CFT_2_SFTP,host=<CFT_2_HOST>
 ```
 
-****On Transfer CFT{{< TransferCFT/componentlongname  >}} 2****
+****On {{< TransferCFT/axwayvariablesComponentLongName  >}} 2****
 
 ```
 CFTPART ID=CFT_1_SFTP,nspart="cft_2_sftp",nspassw=cft_2_sftp,nrpart="cft_1_sftp",nrpassw=cft_1_sftp,sap=<CFT_1_SFTP_PORT>,prot=SFTP
@@ -82,7 +82,7 @@ send part=CFT_1_SFTP,idm=cft_ack,type=reply, msg=completed, idt=&idt(of the **cf
 
 ### Transfer CFT requester downloading multiple files
 
-This example demonstrates receiving multiple files from a Transfer CFT SFTP server and is the equivalent of an `mget file*`.
+This example demonstrates receiving multiple files from a Transfer CFT SFTP server and is the equivalent of an <span class="code">`mget file*`</span>.
 
 ****On the Transfer CFT server****
 
@@ -92,13 +92,13 @@ If you do not define the workingdir, the default value is the runtime directory.
 cftsend id=groupoffiles,impl=yes,fname=&nfname
 ```
 
-****On Transfer CFT{{< TransferCFT/componentlongname  >}} requester****
+****On {{< TransferCFT/axwayvariablesComponentLongName  >}} requester****
 
 ```
 recv part=app1,idf=groupoffiles,nfname=(@/#)test/file\*,file=all
 ```
 
-This results in downloading all remote files in the `test `folder with the path relative to the workingdir.
+This results in downloading all remote files in the <span class="code">`test `</span>folder with the path relative to the workingdir.
 
 ## Transfer CFT client with a SecureTransport server
 
@@ -117,7 +117,7 @@ Server Control: the SSH server is running with **Enable Secure File Transfer Pro
 Port=<ST_SFTP_PORT>
 ```
 
-Accounts: the Account Name is `st_sftp Active` with the Login `Name=st_sftp` and `Password=st_sftp`
+Accounts: the Account Name is <span class="code">`st_sftp Active`</span> with the Login <span class="code">`Name=st_sftp`</span> and <span class="code">`Password=st_sftp`</span>
 
 ```
 send part=ST_SFTP,idf=st_flow,fname=localfiletosend,nfname=remotefile
@@ -152,9 +152,9 @@ PKIUTIL PKIKEY ID=USER2_PUB, IKNAME=USER2_PUB.KEY, IKFORM=SSH
 
 The client must log in as USER1 or USER2, in this example, and provide the corresponding private key as required for server connection.
 
-## Transfer CFT{{< TransferCFT/componentlongname  >}} transcoding when using Central Governance
+## {{< TransferCFT/axwayvariablesComponentLongName  >}} transcoding when using {{< TransferCFT/PrimaryCGorUM  >}}
 
-This example uses two Transfer CFT{{< TransferCFT/componentlongname  >}} applications in Central Governance, where the Source application is a UNIX machine and the Target is a z/OS system. On these applications, navigate to the indicated sections in the flow definition and define the following parameters to enable the transcoding.
+This example uses two {{< TransferCFT/axwayvariablesComponentLongName  >}} applications in {{< TransferCFT/PrimaryCGorUM  >}}, where the Source application is a UNIX machine and the Target is a z/OS system. On these applications, navigate to the indicated sections in the flow definition and define the following parameters to enable the transcoding.
 
 ****On the Source****
 

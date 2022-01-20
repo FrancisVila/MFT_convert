@@ -34,7 +34,7 @@ This virtual cft-ip address must be declared on all the cluster nodes
 
 ### Shared File Systems
 
-On our cluster, the shared file system is `/cft-vg.` (group volume
+On our cluster, the shared file system is <span class="code">`/cft-vg.`</span> (group volume
 cftvg).
 
 You can use several separate file systems to install the configuration,

@@ -12,7 +12,7 @@ A comment is text that is delimited by the character pairs / \* and \*/, which i
 
 An internal command or application consists of the following:
 
-- ****A unique keyword**** that identifies the command (id\_cmd). A keyword is a string composed of a maximum of 8 characters, and begins with an alphabetic character (A-Z, a-z).
+- <span class="bold_in_para">****A unique keyword**** </span>that identifies the command (id\_cmd). A keyword is a string composed of a maximum of 8 characters, and begins with an alphabetic character (A-Z, a-z).
 - ****A list of arguments****
 
 The general command syntax is:

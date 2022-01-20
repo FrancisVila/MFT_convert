@@ -10,12 +10,12 @@ a Transfer CFT Solaris Sun cluster.
 ### Virtual IP address
 
 The virtual IP address of the Transfer CFT service for the Sun Cluster
-is defined for each node of the cluster in the `/etc/hosts` file.
+is defined for each node of the cluster in the <span class="code">`/etc/hosts`</span> file.
 For our tests, we added the following line to this file: `172.17.50.50 cft-ip`
 
 ### Shared file systems
 
-In our development and test cluster, the shared file system is: `/global/cft`.
+In our development and test cluster, the shared file system is: <span class="code">`/global/cft`</span>.
 
 You can use several separate file systems to install the configuration.
 These can include the GDS scripts, the files to be sent, and the files

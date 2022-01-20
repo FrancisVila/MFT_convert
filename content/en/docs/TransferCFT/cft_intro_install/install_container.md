@@ -2,7 +2,7 @@
     "title": "How to install Transfer CFT in a container",
     "linkTitle": "How to install Transfer CFT in a container",
     "weight": "140"
-}There are two methods  for installing and operating a containerized Transfer CFT{{< TransferCFT/transfercftname  >}}, use either Docker Compose or Kubernetes with Helm. This page describes prerequisites and installation instructions needed to help you install Transfer CFT in a container.
+}There are two methods  for installing and operating a containerized {{< TransferCFT/suitevariablesTransferCFTName  >}}, use either Docker Compose or Kubernetes with Helm. This page describes prerequisites and installation instructions needed to help you install Transfer CFT in a container.
 
 The information in this page may be supplemented, corrected, or even contradicted by the README.md file supplied with the product, in which case the README.md file takes precedence.
 
@@ -56,6 +56,6 @@ Use the following links to find more information in the associated README:
 
 ## Download the Transfer CFT Docker image
 
-You can download the Transfer CFT{{< TransferCFT/transfercftname  >}} Docker image from the [Axway support](http://support.axway.com/) site. From the **Downloads** page, search Transfer CFT and click to download the `Transfer_CFT_<version>_DockerImage_allOS_<BN>.zip`.
+You can download the {{< TransferCFT/suitevariablesTransferCFTName  >}} Docker image from the [Axway support](http://support.axway.com/) site. From the **Downloads** page, search Transfer CFT and click to download the <span class="code">`Transfer_CFT_<version>_DockerImage_allOS_<BN>.zip`</span>.
 
  

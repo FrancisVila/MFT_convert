@@ -13,9 +13,9 @@
 
 Implicit send.
 
-When Transfer CFT{{< TransferCFT/componentshortname  >}} operates in sender server mode and there is no SEND
+When {{< TransferCFT/axwayvariablesComponentShortName  >}} operates in sender server mode and there is no SEND
 command (state=HOLD) entered in the catalog for this file identifier,
-the IMPL parameter set to "YES" allows the Transfer CFT{{< TransferCFT/componentshortname  >}} to make available the corresponding file, by automatically generating
+the IMPL parameter set to "YES" allows the {{< TransferCFT/axwayvariablesComponentShortName  >}} to make available the corresponding file, by automatically generating
 a send request. This makes a file permanently available.
 
 > **Note**

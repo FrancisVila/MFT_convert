@@ -60,9 +60,9 @@ In this example the XFER\_CAT\_SELECT request uses the IDTU.
 
 ## Successful response
 
-### Transfer CFT{{< TransferCFT/componentlongname  >}} is down
+### {{< TransferCFT/axwayvariablesComponentLongName  >}} is down
 
-Executing the this request when Copilot is running but Transfer CFT{{< TransferCFT/componentlongname  >}} is not running returns the same response.
+Executing the this request when Copilot is running but {{< TransferCFT/axwayvariablesComponentLongName  >}} is not running returns the same response.
 
 &lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 

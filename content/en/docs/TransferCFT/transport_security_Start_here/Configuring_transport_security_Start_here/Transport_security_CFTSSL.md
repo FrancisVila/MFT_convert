@@ -106,7 +106,7 @@ Each value defines three algorithms:
 This list is submitted to the server which then makes its
 selection, depending on the client's preference.
 
-********<span id="Supported_suites"></span>Supported suites********
+********<span class="autonumber"></span><span id="Supported_suites"></span>Supported suites********
 
 QQQ\_QQQ\_QQQ\_QQQ
 

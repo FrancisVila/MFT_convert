@@ -3,7 +3,7 @@
     "linkTitle": "Management utilities",
     "weight": "180"
 }This section describes Transfer
-CFT UNIX utilities located in the `cft/<installdir>/bin/`
+CFT UNIX utilities located in the <span class="code">`cft/<installdir>/bin/`</span>
 sub-directory after completing installation.
 
 > **Note**
@@ -14,7 +14,7 @@ sub-directory after completing installation.
 
 The utilities described here, do not replace the
 basic commands described elsewhere in this document. Their purpose is
-to simplify common tasks performed with Transfer CFT{{< TransferCFT/componentshortname  >}}.
+to simplify common tasks performed with {{< TransferCFT/axwayvariablesComponentShortName  >}}.
 
 ## Utility descriptions
 
@@ -42,7 +42,7 @@ The following utilities are detailed in this page.
       </tr>
       <tr>
          <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p><a href="#cftcatal">cftcatal</a>  </p>         </td>
-         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>Utility migrating and/or extending the Transfer CFT{{< TransferCFT/componentshortname  >}} catalog
+         <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><p>Utility migrating and/or extending the {{< TransferCFT/axwayvariablesComponentShortName  >}} catalog
 file.  </p>         </td>
       </tr>
       <tr>
@@ -72,7 +72,7 @@ file.  </p>         </td>
 
 ## cftinit
 
-*cftinit* is a general Transfer CFT{{< TransferCFT/componentshortname  >}}
+*cftinit* is a general {{< TransferCFT/axwayvariablesComponentShortName  >}}
 initialization utility.
 
 **Syntax**
@@ -82,14 +82,14 @@ initialization utility.
 **Standard use**
 
 *cftinit* is normally used with a single
-parameter, which is the name of the Transfer CFT{{< TransferCFT/componentshortname  >}} configuration file.
+parameter, which is the name of the {{< TransferCFT/axwayvariablesComponentShortName  >}} configuration file.
 
 `cftinit my_config.cft`
 
 **Advanced use**
 
 You can include several file names in the command line. Normally, all
-Transfer CFT{{< TransferCFT/componentshortname  >}} parameters are declared in a single file. However, for organizational
+{{< TransferCFT/axwayvariablesComponentShortName  >}} parameters are declared in a single file. However, for organizational
 reasons, you may wish to separate the configuration into several files
 (for example, a file describing the CFTPART cards and another file containing
 the CFTPARM, CFTLOG cards, and so on).
@@ -104,7 +104,7 @@ the CFTPARM, CFTLOG cards, and so on).
     is passed as a parameter, the program requests one or more file names.
 - If no name is supplied,
     the program stops.
-- When you run `cftinit`, it creates the catalog and communication files. You can modify the default sizes of these files to suit your requirements by updating the uconf values for `cft.cftcat.default_size` and `cft.cftcom.default_size` (these values are expressed as a number of records).
+- When you run <span class="code">`cftinit`</span>, it creates the catalog and communication files. You can modify the default sizes of these files to suit your requirements by updating the uconf values for <span class="code">`cft.cftcat.default_size`</span> and <span class="code">`cft.cftcom.default_size`</span> (these values are expressed as a number of records).
 
 <span id="cftupdate"></span>
 
@@ -151,7 +151,7 @@ cftutil code 115
 ## cftcatal
 
 You can use the *cftcatal* utility to increase
-the size of the Transfer CFT{{< TransferCFT/componentshortname  >}} catalog file without losing information. In a multi-node environment, this action resizes all nodes.
+the size of the {{< TransferCFT/axwayvariablesComponentShortName  >}} catalog file without losing information. In a multi-node environment, this action resizes all nodes.
 
 **Syntax**
 
@@ -207,7 +207,7 @@ allow you to work in batch mode:
 
 ## xfbadmusr
 
-You can use the `xfbadmusr`
+You can use the <span class="code">`xfbadmusr`</span>
 utility to create, delete, check, and modify a user with access rights
 to the Transfer CFT Copilot server. It can be used in interactive mode associated with
 a command (add, delete, and so on) or in batch mode, specifying each of
@@ -220,12 +220,12 @@ login name.
 
 `xfbadmusr add [-l <login>] [-p <passwd>] [-u   <UID>] [-g <GID>]`
 
-Delete a user. Users in the `group `file are automatically deleted from all the groups
+Delete a user. Users in the <span class="code">`group `</span>file are automatically deleted from all the groups
 with which they are associated.
 
 `xfbadmusr delete [-l <login>]`
 
-Modify a user. If necessary, modifications are applied automatically to the `group `file.
+Modify a user. If necessary, modifications are applied automatically to the <span class="code">`group `</span>file.
 
 `xfbadmusr modify [-l <login>] [-p <passwd>] [-u   <UID>] [-g <GID>]`
 
@@ -247,15 +247,15 @@ is used) or on all existing users.
 You can use the following options to make it easier to enter information,
 or to work in batch mode:
 
-- ****-l
-    &lt; login >****: Login name
-- ****-p
-    &lt; passwd >****: Password
-- ****-u
-    &lt; UID >****: User identifier - When set to AUTO, a UID is generated
+- <span style="font-family: 'Courier New', monospace;font-weight: bold;">****-l
+    &lt; login >****</span>: Login name
+- <span style="font-weight: bold;font-family: 'Courier New', monospace;">****-p
+    &lt; passwd >****</span>: Password
+- <span style="font-weight: bold;font-family: 'Courier New', monospace;">****-u
+    &lt; UID >****</span>: User identifier - When set to AUTO, a UID is generated
     automatically
-- ****-g
-    &lt; GID >****: Group identifier - When set to AUTO, the GID is
+- <span style="font-weight: bold;font-family: 'Courier New', monospace;">****-g
+    &lt; GID >****</span>: Group identifier - When set to AUTO, the GID is
     generated automatically
 
 ****Example****
@@ -310,7 +310,7 @@ The following options can be used with *xvi*:
 
 ## Conversion tables
 
-By default, Transfer CFT{{< TransferCFT/componentshortname  >}} uses internal tables to convert ASCII characters
+By default, {{< TransferCFT/axwayvariablesComponentShortName  >}} uses internal tables to convert ASCII characters
 to EBCDIC and vice versa. They are based on the ASCII character set as
 defined on PC/DOS systems.
 

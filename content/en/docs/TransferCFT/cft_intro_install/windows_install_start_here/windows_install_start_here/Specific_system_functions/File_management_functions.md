@@ -40,7 +40,7 @@ Since this security behavior is time-consuming,you may feel that such behavior i
 
 ### Deactivating the flush function
 
-****Environment variable****
+<span class="bold_in_para">****Environment variable****</span>
 
 #### CFTNOFLUSH
 

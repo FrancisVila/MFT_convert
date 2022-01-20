@@ -8,10 +8,10 @@
 
 #### CFTPART
 
-****\[ CTRLPART = { IGNORE
+****\[ CTRLPART = { <span style="text-decoration: underline;">IGNORE</span>
 | ALL | RPART | SPART } \]****
 
-Optional parameter that is relevant only in server mode. When a transfer is initiated by a remote partner, Transfer CFT{{< TransferCFT/componentshortname  >}} always controls its identity. If the remote sender is not the initial sender, store and forward mode, the Transfer CFT{{< TransferCFT/componentshortname  >}} can choose to control the initial sender identity according to CTRLPART parameter.
+Optional parameter that is relevant only in server mode. When a transfer is initiated by a remote partner, {{< TransferCFT/axwayvariablesComponentShortName  >}} always controls its identity. If the remote sender is not the initial sender, store and forward mode, the {{< TransferCFT/axwayvariablesComponentShortName  >}} can choose to control the initial sender identity according to CTRLPART parameter.
 
 - IGNORE (default): No control of the remote sender identity.
 - ALL: Control of the remote sender identity. If the partner is unknown, the transfer is rejected with message

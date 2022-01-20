@@ -13,11 +13,11 @@ values using the User Interface.
 
 To modify a UCONF value using the graphical user interface:
 
-1. Select the ****Administration****
+1. Select the <span style="font-weight: bold;">****Administration****</span>
     icon at the top of the left pane.
 1. In the left pane object manager,
-    double click ****Configuration Parameters****.
-    The **UCONF** window is displayed.
+    double click <span style="font-weight: bold;">****Configuration Parameters****</span>.
+    The <span style="font-style: italic;">**UCONF**</span> window is displayed.
 1. Double click the file name
     in the right pane to access the values window for that file. The parameter
     window displays three values or settings.
@@ -26,33 +26,33 @@ To modify a UCONF value using the graphical user interface:
     value for this file. For a complete listing of the value in previous versions
     of Transfer CFT and the default value, refer to [UCONF
     settings](../).
-1. Click ****Ok****
+1. Click <span style="font-weight: bold;">****Ok****</span>
     to confirm and close the window.
 
- ****Example****
+ <span style="font-weight: bold;">****Example****</span>
 
-In the **UCONF** window:
+In the <span style="font-style: italic;">**UCONF** </span>window:
 
-1. Click to expand the ****CFT****
+1. Click to expand the <span style="font-weight: bold;">****CFT****</span>
     folder.
-1. Select ****cftcom****.
-1. Double click ****cft.cftcom.default\_size****.
-    The following diagram illustrates the **cft.cftcom.default\_size** window.
+1. Select <span style="font-weight: bold;">****cftcom****</span>.
+1. Double click <span style="font-weight: bold;">****cft.cftcom.default\_size****</span>.
+    The following diagram illustrates the <span style="font-style: italic;">**cft.cftcom.default\_size**</span> window.
 
 The top section briefly describes the configuration
 setting. Three fields are displayed:
 
-- ****Default****:
+- <span style="font-weight: bold;">****Default****</span>:
     the preset default value
-- ****Current****:
+- <span style="font-weight: bold;">****Current****</span>:
     this is the actual setting for the parameter and can contain an environmental
     variable
-- ****Complete****:
+- <span style="font-weight: bold;">****Complete****</span>:
     this field lists or defines the meaning for the current setting (you can
-    think of this as how the system sees or translates the value in the ****Current**** field)
+    think of this as how the system sees or translates the value in the <span style="font-weight: bold;">****Current****</span> field)
 
 1. Modify the value as required.
-    Click ****Ok**** to confirm and close
+    Click <span style="font-weight: bold;">****Ok****</span> to confirm and close
     the window.
 
  

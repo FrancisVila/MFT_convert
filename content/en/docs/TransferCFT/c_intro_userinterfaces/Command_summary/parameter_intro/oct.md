@@ -4,16 +4,16 @@
     "weight": "2410"
 }<span id="oct"></span>
 
-### oct
+### {{< TransferCFT/SystemTitle  >}}
 
 #### COPYFILE
 
-**********\[******| C},\] <u>H</u>{ = OCT********
+******<span style="font-weight: bold;">****\[****</span>**<span style="font-weight: bold;">****| C},\] <u>H</u>{ = OCT****</span>****
 
 Type of output file data compression:
 
-- C: Transfer CFT{{< TransferCFT/componentshortname >}}
-    to Transfer CFT{{< TransferCFT/componentshortname >}} compression
+- C: {{< TransferCFT/axwayvariablesComponentShortName >}}
+    to {{< TransferCFT/axwayvariablesComponentShortName >}} compression
 - H: PeSIT non-SIT
     compression
 

@@ -13,8 +13,8 @@
 ****\[TRK = {<u>"value of TRKSEND/TRKRECV from CFTPARM</u>"
 | ALL | NO | SUMMARY | UNDEFINED}\]****
 
-Specifies how much detail Transfer CFT{{< TransferCFT/componentshortname  >}} provides
-Sentinel about transfers. Transfer CFT{{< TransferCFT/componentshortname  >}} sends detail about the
+Specifies how much detail {{< TransferCFT/axwayvariablesComponentShortName  >}} provides
+Sentinel about transfers. {{< TransferCFT/axwayvariablesComponentShortName  >}} sends detail about the
 transfers in the form of tracked instances.
 
 The possible values of this parameter include:
@@ -37,8 +37,8 @@ The possible values of this parameter include:
 **\[TRK = { ALL
 | NO | SUMMARY | <u>UNDEFINED</u>}\]**
 
-Specification of how much detail Transfer CFT{{< TransferCFT/componentshortname  >}} provides Sentinel about transfers
-with a partner. Transfer CFT{{< TransferCFT/componentshortname  >}} sends detail about the transfers in the form of tracked
+Specification of how much detail {{< TransferCFT/axwayvariablesComponentShortName  >}} provides Sentinel about transfers
+with a partner. {{< TransferCFT/axwayvariablesComponentShortName  >}} sends detail about the transfers in the form of tracked
 instances. The possible values of this parameter include:
 
 - NO: The monitor

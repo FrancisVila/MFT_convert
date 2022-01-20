@@ -13,8 +13,8 @@
 Name of the executable file initializing the resource. Used by some
 UNIX systems.
 
-- Value = ****string
-    32****
+- Value = <span style="font-weight: bold;">****string
+    32****</span>
 
  
 

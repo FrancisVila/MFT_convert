@@ -4,7 +4,7 @@
     "weight": "210"
 }An access token is a unique identifier, or credential, that an application can use to access an API. The token indicates to the API that the holder is authorized to access the API and the resources available to that user or account.
 
-The UCONF `copilot.restapi.api_token_validity` parameter sets the access token's expiration period. By default, the value is set to 0, which disables expiration. You can modify this parameter if you want access tokens to have a specific expiration period. The` token_validity` parameter applies to tokens at the time they are created. Tokens that exist prior to modifying this value retain the expiration date that was set at the time they were created.
+The UCONF <span class="code">`copilot.restapi.api_token_validity`</span> parameter sets the access token's expiration period. By default, the value is set to 0, which disables expiration. You can modify this parameter if you want access tokens to have a specific expiration period. The<span class="code">` token_validity`</span> parameter applies to tokens at the time they are created. Tokens that exist prior to modifying this value retain the expiration date that was set at the time they were created.
 
 > **Note**
 >
@@ -14,12 +14,12 @@ Related information includes:
 
 - Using access tokens with REST APIs, see [Using the Swagger UI](../../../../app_integration_intro/using_apis/api_intro/swagger_intro)
 - Token keys and renewal, please see <a href="../../use_saml" class="MCXref xref">SSO using SAML</a>
-- [Changing the key length](../../../../governance_services_intro/register_cg#manually_activate_cg) for a Central Governance{{< TransferCFT/centralgovernancename >}} certificate
+- [Changing the key length](../../../../governance_services_intro/register_cg#manually_activate_cg) for a {{< TransferCFT/suitevariablesCentralGovernanceName >}} certificate
 - [Bearer authentication](../../../../app_integration_intro/using_apis/api_intro/api_authentication)
 
 ## Create a token
 
-In the Transfer CFT{{< TransferCFT/componentlongname  >}} UI:
+In the {{< TransferCFT/axwayvariablesComponentLongName  >}} UI:
 
 1. Navigate to your user login in the upper right hand corner.
 1. Select **My Access Tokens** in the drop-down menu.  
@@ -29,33 +29,33 @@ In the Transfer CFT{{< TransferCFT/componentlongname  >}} UI:
 
 Alternatively, you can use the Swagger REST API to generate the token.
 
-1. Log on the Swagger UI at `https://<UI_server_host>:<RestApi_port>/cft/api/v1/ui`.
+1. Log on the Swagger UI at <span class="code">`https://<UI_server_host>:<RestApi_port>/cft/api/v1/ui`</span>.
 1. Authenticate with a user.
 1. In the **Miscellaneous** category, select **Post** >** objects/cfttoken** option.
 1. Select **Try it out**.
 1. Select **Execute**.
-1. Copy the `Value `field from the response; this is your generated token.
+1. Copy the <span class="code">`Value `</span>field from the response; this is your generated token.
 
 ## Revoke a token
 
-In the Transfer CFT{{< TransferCFT/componentlongname  >}} UI:
+In the {{< TransferCFT/axwayvariablesComponentLongName  >}} UI:
 
 1. Navigate to the ![](/Images/TransferCFT/security_icon.png) **Security** icon in the left pane.
-1. Click ****Access Tokens**** to open the page.
+1. Click <span class="bold_in_para">****Access Tokens**** </span>to open the page.
 1. Select the user and move to the Token field. Click ![](/Images/TransferCFT/revoke_icon.png) to revoke a token.  
     A different message displays depending on if you are removing the first or second token.
 1. Click **Ok** to confirm that you are removing that user's token.
 
 ## Impact of modifying the private key
 
-Access tokens and SAML headers are signed using the key associated with the certificates referenced by `copilot.ssl.sslcertfile`. If this parameter is not set, but Central Governance or FM is enabled, the governance certificate is used. If you change the certificate that is referenced in `copilot.ssl.sslcertfile` or you modify the   `cg.certificate.governance.key_len `value, the impact is that the corresponding private key changes. This means that once the new key is generated, access tokens and SAML exchanges with the SAML IDP no longer work.
+Access tokens and SAML headers are signed using the key associated with the certificates referenced by `copilot.ssl.sslcertfile`. If this parameter is not set, but {{< TransferCFT/PrimaryCGorUM  >}} or FM is enabled, the governance certificate is used. If you change the certificate that is referenced in `copilot.ssl.sslcertfile` or you modify the   `cg.certificate.governance.key_len `value, the impact is that the corresponding private key changes. This means that once the new key is generated, access tokens and SAML exchanges with the SAML IDP no longer work.
 
 You can see the [Change the private key length](../../../../governance_services_intro/cg_postregister#Change) section for details.
 
 If you change the private key, you must:
 
-1. From the Transfer CFT{{< TransferCFT/transfercftname >}} user interface, revoke all existing API tokens for all users.
-1. From the Transfer CFT{{< TransferCFT/transfercftname >}} user interface, regenerate the API tokens.
+1. From the {{< TransferCFT/suitevariablesTransferCFTName >}} user interface, revoke all existing API tokens for all users.
+1. From the {{< TransferCFT/suitevariablesTransferCFTName >}} user interface, regenerate the API tokens.
 1. Update each REST API client application with the new API token.
 
 > **Note**

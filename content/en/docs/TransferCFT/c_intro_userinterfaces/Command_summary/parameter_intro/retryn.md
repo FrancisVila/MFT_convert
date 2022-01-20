@@ -8,23 +8,23 @@
 
 #### CFTTCP
 
-****\[RETRYN = {4
+****\[RETRYN = {<span style="text-decoration: underline;">4</span>
 | n } \]****
 
 Use this field to specify the number of reconnection attempts to make
-with a time interval of ****retryw****
+with a time interval of <span style="font-weight: bold;">****retryw****</span>
 between attempts.
 
-****4****: default value
+<span style="font-weight: bold;">****4****</span>: default value
 
 - any
-    other value from ****0**** to ****32767****
+    other value from <span style="font-weight: bold;">****0****</span> to <span style="font-weight: bold;">****32767****</span>
 
-When ****retryn**** attempts have been
-made without success, Transfer CFT{{< TransferCFT/componentshortname  >}} divides ****retryn****
-by two and multiplies ****retryw**** by
+When <span style="font-weight: bold;">****retryn**** </span>attempts have been
+made without success, {{< TransferCFT/axwayvariablesComponentShortName  >}} divides <span style="font-weight: bold;">****retryn****</span>
+by two and multiplies <span style="font-weight: bold;">****retryw****</span> by
 two and then begins the sequence again up to the total number of times
-specified ****retrym****.
+specified <span style="font-weight: bold;">****retrym****</span>.
 
 **Example intervals**
 

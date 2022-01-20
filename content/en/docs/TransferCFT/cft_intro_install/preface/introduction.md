@@ -2,7 +2,7 @@
     "title": "Introduction",
     "linkTitle": "Introduction",
     "weight": "150"
-}This document describes how to install Transfer CFT 3.9{{< TransferCFT/hfversion  >}} in a HP NonStop environment. HP NonStop exists on several hardware architectures, such as Itanium and Intel x86. On each of these runs a version of the HP NonStop OS, which is platform dependent. Therefore, there are two different versions of Transfer CFT for HP NonStop:
+}This document describes how to install Transfer CFT {{< TransferCFT/headerfootervariableshfversion  >}} in a HP NonStop environment. HP NonStop exists on several hardware architectures, such as Itanium and Intel x86. On each of these runs a version of the HP NonStop OS, which is platform dependent. Therefore, there are two different versions of Transfer CFT for HP NonStop:
 
 - Transfer CFT for HP NonStop Itanium, which runs specifically on HP NonStop for Itanium processors.
 - Transfer CFT for HP NonStop x86, which runs specifically on HP NonStop for Intel x86 processors.

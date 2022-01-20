@@ -9,8 +9,8 @@ transfer protocols. Transfer protocols include:
 - PeSIT
 - Odette
 
-Related
-topics
+<span style="color: #800000; text-decoration: none; font-weight: normal;">Related
+topics</span>
 
 - Command syntax
     [CFTPROT](../../../c_intro_userinterfaces/command_summary#CFTPROT)

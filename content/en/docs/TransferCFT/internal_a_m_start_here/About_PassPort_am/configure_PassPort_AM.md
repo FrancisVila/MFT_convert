@@ -2,7 +2,7 @@
     "title": "Configuring PassPort AM ",
     "linkTitle": "Configuring PassPort AM",
     "weight": "200"
-}This section describes how to configure access management when not using Central Governance.
+}This section describes how to configure access management when not using {{< TransferCFT/PrimaryCGorUM  >}}.
 
 <span id="Procedure PassPort parameters"></span>
 
@@ -10,9 +10,9 @@
 
 To configure the PassPort AM connection, set the UCONF parameters described
 in this section. From
-the ****Administration**** screen in the
-graphical user interface, access the *Unified Configuration* window. Double-click in the **Unified
-Configuration** window to begin editing parameters.
+the <span style="font-weight: bold;">****Administration****</span> screen in the
+graphical user interface, access the *Unified Configuration* window. Double-click in the <span style="font-weight: normal; font-style: italic;">**Unified
+Configuration**</span> window to begin editing parameters.
 
 1. Define the connection to the PassPort AM server using the UCONF parameters in the following tables. You must define the parameters in the order listed.
 
@@ -33,7 +33,7 @@ Configuration** window to begin editing parameters.
 | am.passport.csd_file  | Transfer CFT Component Security descriptor file for PassPort AM. The default value is $(cft.install_dir)/extras/PassPort/csd_Transfer_CFT.xml.  |
 
 
-1. Set the access management type parameter to PassPort: am.type = passport
+1. Set the access management type parameter to PassPort: <span style="font-family: 'Courier New'; font-size: 11pt;">am.type = passport</span>
 
 > **Note**
 >
@@ -68,7 +68,7 @@ Configuration** window to begin editing parameters.
 
 | Parameter  | Definition  |
 | --- | --- |
-| am.passport.userctrl.check_permissions_on_transfer_execution  | <span id="Check"></span>Check the permissions for the execute action on the transfer resource when the Transfer CFT{{< TransferCFT/componentshortname  >}} user control is enabled (<a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/userctrl">USERCTRL</a>=YES). To disable the permission check, set the following parameter to No. The default is Yes. |
+| am.passport.userctrl.check_permissions_on_transfer_execution  | <span id="Check"></span>Check the permissions for the execute action on the transfer resource when the {{< TransferCFT/axwayvariablesComponentShortName  >}} user control is enabled (<a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/userctrl">USERCTRL</a>=YES). To disable the permission check, set the following parameter to No. The default is Yes. |
 | am.passport.domain  | PassPort AM domain.  |
 | am.passport.max_connections  | Maximum number of connections with PassPort.  |
 | am.passport.pipe_priority  | Pipelining priority mode.  |

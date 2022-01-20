@@ -2,7 +2,7 @@
     "title": "About Windows Application Programming Interfaces (API)",
     "linkTitle": "Building APIs and exits",
     "weight": "230"
-}This section describes the application build features of the Transfer CFT{{< TransferCFT/componentshortname  >}}
+}This section describes the application build features of the {{< TransferCFT/axwayvariablesComponentShortName  >}}
 Windows Application Programming Interfaces, and introduces concepts
 including:
 
@@ -28,16 +28,16 @@ After installation, the` runtime\src` directory contains the API sources develop
 ### Product toolkit
 
 The product comes with a tool kit that enables you to develop an application
-using the Transfer CFT{{< TransferCFT/componentshortname  >}} programming interfaces, Transfer CFT{{< TransferCFT/componentshortname  >}} API applications.
+using the {{< TransferCFT/axwayvariablesComponentShortName  >}} programming interfaces, {{< TransferCFT/axwayvariablesComponentShortName  >}} API applications.
 
-Transfer CFT{{< TransferCFT/componentshortname  >}} API applications examples are written in C: Microsoft Visual
+{{< TransferCFT/axwayvariablesComponentShortName  >}} API applications examples are written in C: Microsoft Visual
 C++ 4.1, Delphi 2 or Visual Basic 5.0.
 
 <span id="Before_developing_your_first_CFT_API_application"></span>
 
-### Before developing your first Transfer CFT{{< TransferCFT/componentshortname  >}} API application
+### Before developing your first {{< TransferCFT/axwayvariablesComponentShortName  >}} API application
 
-Before beginning to write Transfer CFT{{< TransferCFT/componentshortname  >}} API applications, you should:
+Before beginning to write {{< TransferCFT/axwayvariablesComponentShortName  >}} API applications, you should:
 
 1. Read this topic and the topics in [Using
     APIs,.](../../../about_this_document_zos/using_apis)
@@ -47,7 +47,7 @@ Before beginning to write Transfer CFT{{< TransferCFT/componentshortname  >}} AP
     -   Delphi: ..\\CFT\\API\\DELPHI\\SAMPLE\\CFTAPIDP.DPR 
     -   Visual Basic: ..\\CFT\\API\\VBASIC\\SAMPLE\\CFTAPIVB.VBP
 1. Copy
-    APISAMPL, CFTAPIDP or CFTAPIVB in the Transfer CFT{{< TransferCFT/componentshortname >}} folder.
+    APISAMPL, CFTAPIDP or CFTAPIVB in the {{< TransferCFT/axwayvariablesComponentShortName >}} folder.
 1. Start
     APISAMPL, CFTAPIDP or CFTAPIVB.
 1. Rebuild the sample programs
@@ -56,12 +56,12 @@ Before beginning to write Transfer CFT{{< TransferCFT/componentshortname  >}} AP
 1. Run the resulting .EXE to test
     the executables in the sample that you have created.
 
-For issued commands to be interpreted correctly by Transfer CFT{{< TransferCFT/componentshortname  >}}, you must:
+For issued commands to be interpreted correctly by {{< TransferCFT/axwayvariablesComponentShortName  >}}, you must:
 
 1. Define a CFTPART with an id of PART1.
 1. Define a CFTSEND with an id of TEST and fname called TEST.
 1. Set up a file called TEST in the CFT\\SEND directory.
-1. Start Transfer CFT{{< TransferCFT/componentshortname >}}.
+1. Start {{< TransferCFT/axwayvariablesComponentShortName >}}.
 1. Change Windows NT console sessions.
 
 <span id="Design_constraints"></span>
@@ -70,25 +70,25 @@ For issued commands to be interpreted correctly by Transfer CFT{{< TransferCFT/c
 
 ### Design
 
-The Transfer CFT{{< TransferCFT/componentshortname  >}} API functions, which can be called from an application,
-are not re-entrant. This means that all Transfer CFT{{< TransferCFT/componentshortname  >}} API function calls
+The {{< TransferCFT/axwayvariablesComponentShortName  >}} API functions, which can be called from an application,
+are not re-entrant. This means that all {{< TransferCFT/axwayvariablesComponentShortName  >}} API function calls
 made by an application must be made in the same thread.
 
 <span id="Coding_constraints"></span>
 
 ### Coding
 
-A Transfer CFT{{< TransferCFT/componentshortname  >}} API application must comply with two requirements:
+A {{< TransferCFT/axwayvariablesComponentShortName  >}} API application must comply with two requirements:
 
 - When the application
-    starts, but before a Transfer CFT{{< TransferCFT/componentshortname >}} API is called, the Transfer CFT{{< TransferCFT/componentshortname >}} API
+    starts, but before a {{< TransferCFT/axwayvariablesComponentShortName >}} API is called, the {{< TransferCFT/axwayvariablesComponentShortName >}} API
     initialization function must be called in:
 - Visual Basic:
     Cft\_Api\_Open (ByVal Version As String) As Integer
 - C++ or Delphi:
     CftInitialize of prototype BOOL CftInitialize (void)
 - When the application
-    terminates, it must inform Transfer CFT{{< TransferCFT/componentshortname >}} that it is stopping by calling
+    terminates, it must inform {{< TransferCFT/axwayvariablesComponentShortName >}} that it is stopping by calling
     the CftUninitialize function with the following prototype: BOOL
     CftUninitialize ( void )
 
@@ -128,13 +128,13 @@ the following options:
 
 #### Key Options
 
-Link-editing for a Transfer CFT{{< TransferCFT/componentshortname  >}} API application can use all the default
+Link-editing for a {{< TransferCFT/axwayvariablesComponentShortName  >}} API application can use all the default
 options.
 
 #### Key Libraries
 
 In addition to any application libraries, the key libraries required
-to build a Transfer CFT{{< TransferCFT/componentshortname  >}} API application are as follows:
+to build a {{< TransferCFT/axwayvariablesComponentShortName  >}} API application are as follows:
 
 - APICFT.LIB
 - CFTSCP3.LIB
@@ -143,7 +143,7 @@ to build a Transfer CFT{{< TransferCFT/componentshortname  >}} API application a
 
 ### Execution
 
-To execute an application using Transfer CFT{{< TransferCFT/componentshortname  >}}, APIs
+To execute an application using {{< TransferCFT/axwayvariablesComponentShortName  >}}, APIs
 need the following files:
 
 - Necessary dynamic
@@ -158,8 +158,8 @@ need the following files:
 
 These files  must
 be installed with the application executables in C or DELPHI on the Windows
-workstation, so that the application developed with the Transfer CFT{{< TransferCFT/componentshortname  >}} APIs
+workstation, so that the application developed with the {{< TransferCFT/axwayvariablesComponentShortName  >}} APIs
 can run correctly.
 
 A Visual Basic program requires an additional DLL to encapsulate calls
-to the Transfer CFT{{< TransferCFT/componentshortname  >}} APIs \[cftvb.dll\].
+to the {{< TransferCFT/axwayvariablesComponentShortName  >}} APIs \[cftvb.dll\].

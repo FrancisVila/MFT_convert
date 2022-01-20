@@ -25,7 +25,7 @@ There are two ways to specify the password:
     of a file, the first record of which contains the password; in this case,
     the file name must be preceded
     by a # or @ sign depending on the OS. On Windows, for example, IKPASSW=#myfile
-    where the password is specified in the `myfile `file; the first file
+    where the password is specified in the <span class="code">`myfile `</span>file; the first file
     record must contain the password in plain format.
 
 [Return to Command index](../../)

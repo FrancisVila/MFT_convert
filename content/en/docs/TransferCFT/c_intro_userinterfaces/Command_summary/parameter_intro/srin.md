@@ -11,16 +11,16 @@
 ****\[SRIN = { BOTH | NONE | SENDER | RECEIVER
 }\]****
 
-****Server mode only****
+<span style="font-weight: bold;">****Server mode only****</span>
 
 Select the direction of transfers, for either files or messages, authorized
-for this protocol on the Transfer CFT{{< TransferCFT/componentshortname  >}}:
+for this protocol on the {{< TransferCFT/axwayvariablesComponentShortName  >}}:
 
-- ****SENDER****: send transfers only
-- ****RECEIVER****: receive transfers only
-- ****BOTH**** (default value): both send and
+- <span style="font-weight: bold;">****SENDER****</span>: send transfers only
+- <span style="font-weight: bold;">****RECEIVER****</span>: receive transfers only
+- <span style="font-weight: bold;">****BOTH****</span> (default value): both send and
     receive transfers
-- ****NONE****: no transfers
+- <span style="font-weight: bold;">****NONE****</span>: no transfers
 
  
 

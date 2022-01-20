@@ -5,7 +5,7 @@
 }The SWAITCAT command enables a client to wait until
 a given transfer reaches a particular predefined phase, phasestep, or state before acting.
 
-****Command syntax: [SWAITCAT](../../../command_summary)****
+****Command syntax: <span style="font-weight: normal;">[SWAITCAT](../../../command_summary)</span>****
 
 ****Task examples: [SWAITCAT tasks](../sync_transfer_request_tasks)****
 
@@ -62,7 +62,7 @@ SWAITCAT select="EXPRESSION"
 
 ******Expression******
 
-`Select `is a Boolean expression that identifies one transfer.
+<span class="code">`Select `</span>is a Boolean expression that identifies one transfer.
 
 **Syntax**
 
@@ -125,7 +125,7 @@ The Phasesteps parameter is a string that can be composed of D, H, C, K, X, E an
 - \(D\) At disposal: The processing of the Phase is ready to be executed; it is ready to go.
 - \(H\) Hold: The processing of the Phase is on hold and waiting for an action to be executed.
 - \(C\) Processing/Current: The Phase processing is being executed.
-- \(R\) Retry: Retries renaming the file using the `FACTION retryrename `value.
+- \(R\) Retry: Retries renaming the file using the <span class="code">`FACTION retryrename `</span>value.
 - \(X\) Done: This phase step only exists for the Done phase, once all previous phases are complete.
 - \(E\) Exit EOT: This phase step only exists for the Post-processing phase, to signal an [end-of-transfer exit](../../../../app_integration_intro/managing_exits/about_the_end_of_transfer_type_exit).
 

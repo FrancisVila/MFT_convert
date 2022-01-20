@@ -12,7 +12,7 @@ Use to modify a technical parameter value.
 UCONFSET id=PARAMETER-KEY,value=STRING
 ```
 
-After modifying a uconf value, you typically must restart Transfer CFT{{< TransferCFT/componentshortname  >}}. When the parameter flag is set to reconfig (=reconfig), you can use the reconfig command instead of a restart. You can check the parameter flag to see if reconfig is an option for that particular parameter.
+After modifying a uconf value, you typically must restart {{< TransferCFT/axwayvariablesComponentShortName  >}}. When the parameter flag is set to reconfig (=reconfig), you can use the reconfig command instead of a restart. You can check the parameter flag to see if reconfig is an option for that particular parameter.
 
 Using spaces in a UCONFSET command value
 
@@ -31,7 +31,7 @@ retrieve a single technical parameter value.
 UCONFGET id=PARAMETER-KEY
 ```
 
-Results: `PARAMETER-KEY=PARAMETER-VALUE`
+Results: <span class="code">`PARAMETER-KEY=PARAMETER-VALUE`</span>
 
 **UCONFUNSET**
 

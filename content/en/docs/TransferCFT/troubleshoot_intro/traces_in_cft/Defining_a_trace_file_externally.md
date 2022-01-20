@@ -143,7 +143,7 @@ This parameter is a character string, maximum length: 8.
 
 The following example shows how to retrieve a protocol trace. You can use the same steps to perform other types of traces.
 
-1. Start Transfer CFT{{< TransferCFT/componentlongname >}}.
+1. Start {{< TransferCFT/axwayvariablesComponentLongName >}}.
 
 1. Use the command utility CFTTRACE to set and start the following trace, for example:
 
@@ -151,7 +151,7 @@ The following example shows how to retrieve a protocol trace. You can use the sa
 
     CFTTRACE STARTTRC ID=T1,TID=TRC0,PTRACE=28
 
-1. Check that the `CFTATMC `process is started.
+1. Check that the <span class="code">`CFTATMC `</span>process is started.
 
 1. Execute the transfer to trace.
 

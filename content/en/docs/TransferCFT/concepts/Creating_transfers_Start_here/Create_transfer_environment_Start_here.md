@@ -63,7 +63,7 @@ The CFTSEND command is used to specify, for each IDF model file:
 - The file network
     characteristics: values to be sent to the partner, in protocol parameters,
     to describe the file (a physical filename can even be sent - see the definition
-    of the ****Open**** mode further on).  
+    of the <span style="font-weight: bold;">****Open****</span> mode further on).  
       
     The physical characteristics that Transfer CFT is able to locate automatically
     for the local file, can be considered as default values for the corresponding
@@ -94,7 +94,7 @@ The CFTSEND command is used to specify, for each IDF model file:
     taken on the data handled by the monitor during the transfer: translation,
     compression
 - Action performed
-    by the Transfer CFT{{< TransferCFT/componentshortname >}} on the file sent, after the transfer
+    by the {{< TransferCFT/axwayvariablesComponentShortName >}} on the file sent, after the transfer
 - Call to a procedure
     to be executed on completion of the transfer, etc
 - Miscellaneous parameters
@@ -126,7 +126,7 @@ following categories:
 <!-- -->
 
 - Free parameters
-    for the Transfer CFT{{< TransferCFT/componentshortname >}} user:
+    for the {{< TransferCFT/axwayvariablesComponentShortName >}} user:
     -   Sent to the
         receiver: PARM, SAPPL
     -   For local use:
@@ -179,6 +179,6 @@ For the partner file parameters, Nxxxxx of SEND and CFTSEND:
 - This information
     is used by the receiver monitor according to its specific possibilities:
     -   Pending the version and OS, see the description of these possibilities
-        at the level of the CFTRECV command and in the relevant Operations Guide.
+        at the level of the CFTRECV command and in the relevant <span class="italic_in_para">Operations Guide</span>.
 - In all cases:
     the values sent must be valid for the receiver partner.

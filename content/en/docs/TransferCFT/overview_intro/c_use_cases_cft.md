@@ -2,7 +2,7 @@
     "title": "Implementation architectures",
     "linkTitle": "Implementation architectures",
     "weight": "110"
-}This section describes the general types of implementation when using Transfer CFT{{< TransferCFT/componentshortname  >}}, either with multiple Transfer CFT{{< TransferCFT/componentshortname  >}}s or in conjunction with other Axway{{< TransferCFT/companyname  >}} products.
+}This section describes the general types of implementation when using {{< TransferCFT/axwayvariablesComponentShortName  >}}, either with multiple {{< TransferCFT/axwayvariablesComponentShortName  >}}s or in conjunction with other {{< TransferCFT/axwayvariablesCompanyName  >}} products.
 
 - Distributed A2A transfer exchanges
 - Centralized A2A transfer exchanges
@@ -11,7 +11,7 @@
 
 ## Distributed A2A transfer exchanges
 
-A distributed exchange implementation is ideal for implementing back-end application exchanges internally within your corporate network. The implementation is based on Transfer CFT and Central Governance.
+A distributed exchange implementation is ideal for implementing back-end application exchanges internally within your corporate network. The implementation is based on Transfer CFT and {{< TransferCFT/PrimaryCGorUM  >}}.
 
 Use cases include:
 
@@ -22,7 +22,7 @@ Use cases include:
 
 A centralized exchange implementation allows easy integration of new applications and processing flows, while ensuring performance-based, monitored, and secure transactions. All transactions are end-to-end with technical and functional monitoring.
 
-implementation typically meets the needs of the store-to-corporate use case when the data exchanges are confined to the corporate network. The implementation is based on Transfer CFT and Central Governance.
+implementation typically meets the needs of the store-to-corporate use case when the data exchanges are confined to the corporate network. The implementation is based on Transfer CFT and {{< TransferCFT/PrimaryCGorUM  >}}.
 
 Use cases include:
 

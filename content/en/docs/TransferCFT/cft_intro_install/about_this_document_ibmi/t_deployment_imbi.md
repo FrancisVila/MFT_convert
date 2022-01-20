@@ -2,19 +2,19 @@
     "title": "Create an Express Package",
     "linkTitle": "Create an Express Package",
     "weight": "180"
-}A product deployment package in Transfer CFT is called an Express Package. For the iSeries platform, you can create a deployment package for Transfer CFTs to be used with Central Governance{{< TransferCFT/centralgovernancename  >}}, or for standalone Transfer CFTs.
+}A product deployment package in Transfer CFT is called an Express Package. For the iSeries platform, you can create a deployment package for Transfer CFTs to be used with {{< TransferCFT/suitevariablesCentralGovernanceName  >}}, or for standalone Transfer CFTs.
 
-This section describes how to create a reusable and distributable Transfer CFT{{< TransferCFT/componentshortname  >}} package to simplify and ease the task of installing and configuring Transfer CFT{{< TransferCFT/componentshortname  >}}s on multiple servers of the same architecture.
+This section describes how to create a reusable and distributable {{< TransferCFT/axwayvariablesComponentShortName  >}} package to simplify and ease the task of installing and configuring {{< TransferCFT/axwayvariablesComponentShortName  >}}s on multiple servers of the same architecture.
 
 > **Note**
 >
 > You can only install a Transfer CFT Express Package on the same platform as the one on which it was generated.
 
-## Create a deployment package for Transfer CFT{{< TransferCFT/transfercftname  >}}s used with Central Governance
+## Create a deployment package for {{< TransferCFT/suitevariablesTransferCFTName  >}}s used with Central Governance
 
 Perform the following steps:
 
-1. Create a user profile using the command: `CRTUSRPRF`
+1. Create a user profile using the command: <span class="code">`CRTUSRPRF`</span>
 1. Create a temporary library, for example:  
     ```
     CRTLIB CFTTMP
@@ -44,7 +44,7 @@ Perform the following steps:
 
 1. Use Central Governance to deploy and configure your Transfer CFTs as needed.
 
-## Create a Transfer CFT{{< TransferCFT/componentshortname  >}} deployment package for standalone usage
+## Create a {{< TransferCFT/axwayvariablesComponentShortName  >}} deployment package for standalone usage
 
 In this procedure, you must first create a SAVF file that contains all of your necessary configurations for your deployment including:
 
@@ -62,7 +62,7 @@ In this procedure, you must first create a SAVF file that contains all of your n
 
 ### Procedure
 
-On the local machine where you have Transfer CFT{{< TransferCFT/transfercftname  >}} installed:
+On the local machine where you have {{< TransferCFT/suitevariablesTransferCFTName  >}} installed:
 
 1. Create a temporary library that will contain all the items you want to deploy, for example:  
     ```
@@ -76,7 +76,7 @@ On the local machine where you have Transfer CFT{{< TransferCFT/transfercftname 
     ``` 1. CRTSAVF FILE(CFTCONF/CFTCONFSVF) 2. SAVLIB LIB(CFTCONF) DEV(\*SAVF) SAVF(CFTCONF/CFTCONFSVF) 3. Get the CFTCONFSVF.savf (in binary mode)
     ```
 
-On the other machines, where you want to deploy Transfer CFT{{< TransferCFT/transfercftname  >}}:
+On the other machines, where you want to deploy {{< TransferCFT/suitevariablesTransferCFTName  >}}:
 
 1. Create a temporary library, for example:  
     ```

@@ -2,7 +2,7 @@
     "title": "Delivered templates for IBM i (iSeries)",
     "linkTitle": "Delivered templates for IBM i (iSeries)",
     "weight": "350"
-}This topic describes the Axway{{< TransferCFT/companyname  >}} Transfer CFT{{< TransferCFT/componentshortname  >}} API templates and CL programs  for the IBM i (iseries) platform. You may decide to use the delivered samples as a basis for integrating APIs, or as a model to create your own.
+}This topic describes the {{< TransferCFT/axwayvariablesCompanyName  >}} {{< TransferCFT/axwayvariablesComponentShortName  >}} API templates and CL programs  for the IBM i (iseries) platform. You may decide to use the delivered samples as a basis for integrating APIs, or as a model to create your own.
 
 The Transfer CFT IBM i templates are located in the production library (CFTPROD by default), in the CFTSRC folder.
 
@@ -44,41 +44,41 @@ In the **Template** column, click the template link to view the sample template 
 ### I\_TCFTU\_CBL program
 
 ```
-CRTCBLMOD MODULE(<****CFTPGM****>/TCFTU_CBL1) SRCFILE(<****CFTPGM****>/CFTSRC)
+CRTCBLMOD MODULE(<<span class="bold_in_para">****CFTPGM****</span>>/TCFTU_CBL1) SRCFILE(<<span class="bold_in_para">****CFTPGM****</span>>/CFTSRC)
 SRCMBR(TCFTU_CBL1) DBGVIEW(\*ALL) REPLACE(\*YES)
  
-CRTPGM PGM(<****CFTPGM****>/TCFTU_CBL1) MODULE(<******CFTPGM******>/TCFTU_CBL1)
+CRTPGM PGM(<<span class="bold_in_para">****CFTPGM****</span>>/TCFTU_CBL1) MODULE(<******CFTPGM******>/TCFTU_CBL1)
 BNDSRVPGM(<CFTPGM>/LIBAPISRV1) REPLACE(\*YES)
  
-CRTBNDCL PGM(<****CFTPGM****>/I_TCFTU_CB) SRCFILE(<****CFTPGM****>/CFTSRC)
+CRTBNDCL PGM(<<span class="bold_in_para">****CFTPGM****</span>>/I_TCFTU_CB) SRCFILE(<<span class="bold_in_para">****CFTPGM****</span>>/CFTSRC)
 SRCMBR(I_TCFTU_CB) OPTION(\*EVENTF) REPLACE(\*YES) DBGVIEW(\*SOURCE)
  
-CALL PGM(<****CFTPGM****>/I_TCFTU_CB)
+CALL PGM(<<span class="bold_in_para">****CFTPGM****</span>>/I_TCFTU_CB)
 ```
 <span id="INTCAT"></span>
 
 ### I\_INTCAT program
 
 ```
-CRTCBLMOD MODULE(<****CFTPGM****>/INTCAT) SRCFILE(<****CFTPGM****>/CFTSRC)
+CRTCBLMOD MODULE(<<span class="bold_in_para">****CFTPGM****</span>>/INTCAT) SRCFILE(<<span class="bold_in_para">****CFTPGM****</span>>/CFTSRC)
 SRCMBR(INTCAT) DBGVIEW(\*ALL) REPLACE(\*YES)
  
-CRTPGM PGM(<****CFTPGM****>/INTCAT) MODULE(<****CFTPGM****>/INTCAT)
-BNDSRVPGM(<****CFTPGM****>/LIBAPISRV1) REPLACE(\*YES)
+CRTPGM PGM(<<span class="bold_in_para">****CFTPGM****</span>>/INTCAT) MODULE(<<span class="bold_in_para">****CFTPGM****</span>>/INTCAT)
+BNDSRVPGM(<<span class="bold_in_para">****CFTPGM****</span>>/LIBAPISRV1) REPLACE(\*YES)
  
-CRTBNDCL PGM(<****CFTPGM****>/I_INTCAT) SRCFILE(<****CFTPGM****>/CFTSRC)
+CRTBNDCL PGM(<<span class="bold_in_para">****CFTPGM****</span>>/I_INTCAT) SRCFILE(<<span class="bold_in_para">****CFTPGM****</span>>/CFTSRC)
 SRCMBR(I_INTCAT) OPTION(\*EVENTF) REPLACE(\*YES) DBGVIEW(\*SOURCE)
  
-CALL PGM(<****CFTPGM****>/I_INTCAT)
+CALL PGM(<<span class="bold_in_para">****CFTPGM****</span>>/I_INTCAT)
 ```
 <span id="ACCNTPGM"></span>
 
 ### I\_ACCNTPGM program for ACCNT V23
 
 ```
-CRTBNDCBL PGM(<****CFTPGM****>/ACCNTPGM) SRCFILE(<****CFTPGM****>/CFTSRC) SRCMBR(ACCNTPGM) OPTION(\*EVENTF) DBGVIEW(\*SOURCE) REPLACE(\*YES)
+CRTBNDCBL PGM(<<span class="bold_in_para">****CFTPGM****</span>>/ACCNTPGM) SRCFILE(<<span class="bold_in_para">****CFTPGM****</span>>/CFTSRC) SRCMBR(ACCNTPGM) OPTION(\*EVENTF) DBGVIEW(\*SOURCE) REPLACE(\*YES)
  
-CRTBNDCL PGM(<****CFTPGM****>/I_ACCNTPGM) SRCFILE(<****CFTPGM****>/CFTSRC) SRCMBR(I_ACCNTPGM) OPTION(\*EVENTF) REPLACE(\*YES) DBGVIEW(\*SOURCE)
+CRTBNDCL PGM(<<span class="bold_in_para">****CFTPGM****</span>>/I_ACCNTPGM) SRCFILE(<<span class="bold_in_para">****CFTPGM****</span>>/CFTSRC) SRCMBR(I_ACCNTPGM) OPTION(\*EVENTF) REPLACE(\*YES) DBGVIEW(\*SOURCE)
  
 CALL PGM(<CFTPGM>/I_ACCNTPGM)
 ```
@@ -87,9 +87,9 @@ CALL PGM(<CFTPGM>/I_ACCNTPGM)
 ### I\_ACCNT24 program for ACCNT V24
 
 ```
-CRTBNDCBL PGM(<****CFTPGM****>/ACCNTPGM24) SRCFILE(<****CFTPGM****>/CFTSRC) SRCMBR(ACCNTPGM24) OPTION(\*EVENTF) DBGVIEW(\*SOURCE) REPLACE(\*YES)
+CRTBNDCBL PGM(<<span class="bold_in_para">****CFTPGM****</span>>/ACCNTPGM24) SRCFILE(<<span class="bold_in_para">****CFTPGM****</span>>/CFTSRC) SRCMBR(ACCNTPGM24) OPTION(\*EVENTF) DBGVIEW(\*SOURCE) REPLACE(\*YES)
  
-CRTBNDCL PGM(<****CFTPGM****>/I_ACCNT24) SRCFILE(<****CFTPGM****>/CFTSRC) SRCMBR(I_ACCNTPGM) OPTION(\*EVENTF) REPLACE(\*YES) DBGVIEW(\*SOURCE)
+CRTBNDCL PGM(<<span class="bold_in_para">****CFTPGM****</span>>/I_ACCNT24) SRCFILE(<<span class="bold_in_para">****CFTPGM****</span>>/CFTSRC) SRCMBR(I_ACCNTPGM) OPTION(\*EVENTF) REPLACE(\*YES) DBGVIEW(\*SOURCE)
  
-CALL PGM(<****CFTPGM****>/I_ACCNT24)
+CALL PGM(<<span class="bold_in_para">****CFTPGM****</span>>/I_ACCNT24)
 ```

@@ -156,7 +156,7 @@ The following tables list all the fields of the communication structure.
 | Field | Explanation |
 | --- | --- |
 | usraction | Action requested by the user:<br/> • U: UPDATE<br/> • D: DELETE<br/> • N: NONE<br/> Note: If the value of the parameter is N (NONE), any changes to parameters that have been requested, for example, modifications made to the comment field, are ignored. |
-| usrmsg | User message, 80 characters, recorded in the Transfer CFT{{< TransferCFT/componentshortname  >}} LOG file (CFTS18I)<br/> This message can contain the code returned by the user function and other information. |
+| usrmsg | User message, 80 characters, recorded in the {{< TransferCFT/axwayvariablesComponentShortName  >}} LOG file (CFTS18I)<br/> This message can contain the code returned by the user function and other information. |
 
 
 <span id="Additional_information"></span>

@@ -4,9 +4,9 @@
     "weight": "270"
 }UNIX and Windows only
 
-This executable file retrieves system information, for example information needed to request a key. To use `cfttell`:
+This executable file retrieves system information, for example information needed to request a key. To use <span class="code">`cfttell`</span>:
 
-- Navigate to the` <CFTDIRINSTALL>/bin` directory
+- Navigate to the<span class="code">` <CFTDIRINSTALL>/bin`</span> directory
 - Run cfttell
 
 Options:
@@ -26,21 +26,21 @@ Keys:
 ****Examples****
 
 ```
-C:\\projects>`cfttell target`
+C:\\projects><span class="code">`cfttell target`</span>
 win-x86-32
 ```
 
  
 
 ```
-C:\\projects>`cfttell version`
+C:\\projects><span class="code">`cfttell version`</span>
 3000
 ```
 
  
 
 ```
-C:\\projects>`cfttell hostinfo`
+C:\\projects><span class="code">`cfttell hostinfo`</span>
 CFT version : 3010
 Target : win-x86-32
 Processor architecture : x64

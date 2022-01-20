@@ -14,7 +14,7 @@ Earlier versions of Transfer CFT used a different message format than version 3.
 
 CFTLOG FORMAT=\[V23,V24\]
 
-For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
+For V23: <span class="code">`CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`</span>
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
@@ -33,7 +33,7 @@ Certain auto-documented messages, for example CFTA01I, CFTA02W, CFTA03E, CFTA04F
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB01E"></span>CFTB01E PART=&amp;part Context area allocation failure CS=&amp;scs<br/> CFTB01E PART=&amp;part Context area allocation failure CS=&amp;cs |
 | --- | --- |
 | Explanation | Cannot allocate the working area necessary for the transfer. |
-| Consequence | In REQUESTER mode, the transfer is refused with a Transfer CFT{{< TransferCFT/componentshortname  >}} 122 diagnostic code and a MALLOC protocol diagnostic message.<br /> In SERVER mode, the incoming call is rejected.<br/> In this case, as the partner's name is not known, the value UNKNOWN is displayed. |
+| Consequence | In REQUESTER mode, the transfer is refused with a {{< TransferCFT/axwayvariablesComponentShortName  >}} 122 diagnostic code and a MALLOC protocol diagnostic message.<br /> In SERVER mode, the incoming call is rejected.<br/> In this case, as the partner's name is not known, the value UNKNOWN is displayed. |
 
 
  
@@ -51,7 +51,7 @@ Certain auto-documented messages, for example CFTA01I, CFTA02W, CFTA03E, CFTA04F
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB03E"></span>CFTB03E PART=&amp;part Error sending data on network NCR=&amp;ncr NCS=&amp;ncs NET=&amp;net<br/> CFTB03E PART=&amp;part Error sending data on network NCR=&amp;ncr NCS=&amp;cs NET=&amp;net |
 | --- | --- |
 | Explanation | Cannot send a message on the network. |
-| Consequence | The transfer is interrupted with a Transfer CFT{{< TransferCFT/componentshortname  >}} 302 code and a protocol diagnostic message indicating the specific error code of the error occurring during the send request. This code is expressed in hexadecimal form. |
+| Consequence | The transfer is interrupted with a {{< TransferCFT/axwayvariablesComponentShortName  >}} 302 code and a protocol diagnostic message indicating the specific error code of the error occurring during the send request. This code is expressed in hexadecimal form. |
 
 
  
@@ -67,7 +67,7 @@ Certain auto-documented messages, for example CFTA01I, CFTA02W, CFTA03E, CFTA04F
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB07E"></span>CFTB07E PART=&amp;part TFIL task Synchronization error CR=&amp;cr CS=&amp;cs<br/> CFTB07E PART=&amp;part TFIL task Synchronization error CR= &amp;cr CS=&amp;cs |
 | --- | --- |
-| Explanation | Problem encountered when sending an internal Transfer CFT{{< TransferCFT/componentshortname  >}} message to the FILE task. |
+| Explanation | Problem encountered when sending an internal {{< TransferCFT/axwayvariablesComponentShortName  >}} message to the FILE task. |
 | Consequence | The transfer is aborted by the protocol task (network disconnection). However, as the FILE task is not protected by a time-out, the request remains in the C status in the catalog |
 
 
@@ -86,7 +86,7 @@ Certain auto-documented messages, for example CFTA01I, CFTA02W, CFTA03E, CFTA04F
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB09E"></span>CFTB09E PART=&amp;part Network connect req local err NCR=&amp;ncr NCS=&amp;ncs NET=&amp;net<br/> CFTB09E PART=&amp;part Network connect req local err NCR=&amp;ncr NCS=&amp;cs NET=&amp;net |
 | --- | --- |
 | Explanation | Cannot make an outgoing connection request on the network. |
-| Consequence | For a general -6 code (maximum number of connections reached on the resource), the transfer is refused with a Transfer CFT{{< TransferCFT/componentshortname  >}} 416 diagnostic code and a MAXCNX protocol diagnostic message. The transfer will be retried (minimum time-out equal to the WSCAN parameter of the CFTCAT command), without incrementing the retry counter. |
+| Consequence | For a general -6 code (maximum number of connections reached on the resource), the transfer is refused with a {{< TransferCFT/axwayvariablesComponentShortName  >}} 416 diagnostic code and a MAXCNX protocol diagnostic message. The transfer will be retried (minimum time-out equal to the WSCAN parameter of the CFTCAT command), without incrementing the retry counter. |
 
 
  

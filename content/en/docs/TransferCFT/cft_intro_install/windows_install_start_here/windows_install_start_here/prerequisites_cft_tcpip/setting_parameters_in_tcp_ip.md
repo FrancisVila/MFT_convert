@@ -2,7 +2,7 @@
     "title": "Defining TCP/IP parameters  ",
     "linkTitle": "Defining TCP/IP parameters",
     "weight": "240"
-}This topic describes the parameter settings for Transfer CFT{{< TransferCFT/componentshortname  >}} when using
+}This topic describes the parameter settings for {{< TransferCFT/axwayvariablesComponentShortName  >}} when using
 TCP/IP.
 
 <span id="Specific_parameter_settings_for_TCP_IP"></span>
@@ -15,7 +15,7 @@ TCP/IP.
 
 `CFTCONTCP`
 
-This timeout period corresponds to a period for Transfer CFT{{< TransferCFT/componentshortname  >}} to wait
+This timeout period corresponds to a period for {{< TransferCFT/axwayvariablesComponentShortName  >}} to wait
 for a communication to be established. The default timeout period is 120
 seconds.
 
@@ -30,14 +30,14 @@ For a period of 20 seconds:
 
 ### Parameter settings for the initialization phase
 
-Transfer CFT{{< TransferCFT/componentshortname  >}} uses TCP/IP for data transfers with defined remote partners.
+{{< TransferCFT/axwayvariablesComponentShortName  >}} uses TCP/IP for data transfers with defined remote partners.
 It also uses this layer for its own internal exchanges. More particularly
 for exchanges between the cfttpro.exe and cftn\_005.exe processes.
 
 Certain configurations on the TCP/IP network are incompatible with the
-default options set for Transfer CFT{{< TransferCFT/componentshortname  >}} internal exchanges. These configurations
+default options set for {{< TransferCFT/axwayvariablesComponentShortName  >}} internal exchanges. These configurations
 are generally associated with the use of the DNS and DHCP services. To
-remedy these difficulties, Transfer CFT{{< TransferCFT/componentshortname  >}}’s TCP/IP layer can be parameterized
+remedy these difficulties, {{< TransferCFT/axwayvariablesComponentShortName  >}}’s TCP/IP layer can be parameterized
 using the method below:
 
 Define the "TCP LOCALHOSTTYPE" parameter in the cftnet.conf
@@ -69,12 +69,12 @@ Its default value is 127.0.0.1 (the standard IP address of the machine).
 
 Note: These parameters are independent of the value of the HOST field
 in the CFTNET command. They are used for internal communication between
-Transfer CFT{{< TransferCFT/componentshortname  >}} processes when the CFTNET command defines the characteristics
+{{< TransferCFT/axwayvariablesComponentShortName  >}} processes when the CFTNET command defines the characteristics
 of the local resource used for data exchange with remote partners.
 
-****Transfer CFT{{< TransferCFT/componentshortname  >}} with RAS example****
+****{{< TransferCFT/axwayvariablesComponentShortName  >}} with RAS example****
 
-To use Transfer CFT{{< TransferCFT/componentshortname  >}} with RAS, the IP address may be dynamic (DHCP server)
+To use {{< TransferCFT/axwayvariablesComponentShortName  >}} with RAS, the IP address may be dynamic (DHCP server)
 without a predefined host name. You would therefore use the machine’s
 standard IP address of 127.0.0.1  
 To do this, define the two following lines in the cftnet.conf file:  
@@ -83,7 +83,7 @@ To do this, define the two following lines in the cftnet.conf file:
 
 ### Using the TCP/IP via the RAS layer
 
-You can set the Transfer CFT{{< TransferCFT/componentshortname  >}} Windows TCP/IP layer parameters to use
+You can set the {{< TransferCFT/axwayvariablesComponentShortName  >}} Windows TCP/IP layer parameters to use
 the Windows RAS service. This service allows access to a remote TCP/IP
 via a modem using a PSTN line, Public Switched Telephone Network.
 
@@ -91,14 +91,14 @@ These services are always proposed when the two systems are installed.
 The system and network administrators for the machine on which Transfer
 CFT is installed are responsible for configuring these services.
 
-Before attempting to use Transfer CFT{{< TransferCFT/componentshortname  >}} via TCP/IP on RAS, the machine using RAS must integrate with the
+Before attempting to use {{< TransferCFT/axwayvariablesComponentShortName  >}} via TCP/IP on RAS, the machine using RAS must integrate with the
 remote TCP/IP network. This integration is tested once the RAS connection
 has been made. The remote hosts specified
-for Transfer CFT{{< TransferCFT/componentshortname  >}} can be reached by the standard utilities of the TCP/IP
+for {{< TransferCFT/axwayvariablesComponentShortName  >}} can be reached by the standard utilities of the TCP/IP
 layer - PING, TELNET, and so on.
 
-Transfer CFT{{< TransferCFT/componentshortname  >}}’s management of the RAS layer is performed using the Microsoft
-API, the dynamic library rasapi32.dll. When a Transfer CFT{{< TransferCFT/componentshortname  >}} partner
+{{< TransferCFT/axwayvariablesComponentShortName  >}}’s management of the RAS layer is performed using the Microsoft
+API, the dynamic library rasapi32.dll. When a {{< TransferCFT/axwayvariablesComponentShortName  >}} partner
 is configured to utilize a RAS directory entry, it manages the RAS connection
 and disconnection dynamically. The disctd parameter in the CFTPROT command
 states the wait time before the RAS disconnects in the absence of another
@@ -117,7 +117,7 @@ Where:
     either to the name of the remote host, or the IP address of the  
     remote partner
 
-The description of the RAS connections used by Transfer CFT{{< TransferCFT/componentshortname  >}} is located
+The description of the RAS connections used by {{< TransferCFT/axwayvariablesComponentShortName  >}} is located
 in the cftras.ini file, in the Transfer
 CFT `runtime\conf` folder. This file has a standard \*.INI file structure.
 
@@ -163,7 +163,7 @@ CFTNET command.
 To maximize the transfer flow performance in a CFT environment, you
 can modify the TCP Windows variable in the Windows registry database.
 Access the cftnet.conf file and modify the variable: TCP TCPWINDOWSIZE.
-There is no minimum or maximum value. You must run Transfer CFT{{< TransferCFT/componentshortname  >}} to test the new
+There is no minimum or maximum value. You must run {{< TransferCFT/axwayvariablesComponentShortName  >}} to test the new
 variable performance.
 
 Example  

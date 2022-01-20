@@ -64,13 +64,13 @@ In Transfer CFT, the timeout (session persistence) is defined by DISCTS in serv
 **Client configuration**
 
 ```
-CFTPROT id=PESIT, DISCTS=8, DISCTD=8
+CFTPROT id=PESIT, DISCTS=8, DISCTD=<span style="color: #ff0000;">8</span>
 ```
 
 **Server configuration**
 
 ```
-CFTPROT id=PESIT, DISCTS=10, DISCTD=7
+CFTPROT id=PESIT, DISCTS=<span style="color: #ff0000;">10</span>, DISCTD=7
 ```
 
 > **Note**
@@ -117,7 +117,7 @@ Key information :
 \* type = DATE
 \* expire = 2015/11/14
 \* sysname = linux-x86-64
-\* Nb Transfers = 64
+\* Nb Transfers = <span style="color: #ff0000;">64</span>
 \* Nb CPU = 4
 \* Nb Partners = Max
 ```
@@ -247,7 +247,7 @@ attempts are made.
 Use this parameter to specify the number of reconnection attempts to make
 with a time interval of retryw
 between attempts. When retryn attempts have been
-made without success, Transfer CFT{{< TransferCFT/componentshortname  >}} divides retryn
+made without success, {{< TransferCFT/axwayvariablesComponentShortName  >}} divides retryn
 by two and multiplies retryw by
 two and then begins the sequence again up to the total number of times
 specified retrym.

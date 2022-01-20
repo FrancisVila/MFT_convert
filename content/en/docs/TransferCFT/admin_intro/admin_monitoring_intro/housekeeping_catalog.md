@@ -2,7 +2,7 @@
     "title": "Housekeeping for  catalog and output files",
     "linkTitle": "Housekeeping for catalog and output files",
     "weight": "260"
-}Transfer CFT{{< TransferCFT/componentshortname  >}} provides a set of services to track activity related to transfers and their status as well as evaluating the system health.
+}{{< TransferCFT/axwayvariablesComponentShortName  >}} provides a set of services to track activity related to transfers and their status as well as evaluating the system health.
 
 This section describes how to manage the log, catalog, and output files to keep your system running smoothly.
 
@@ -12,7 +12,7 @@ Transfer CFT records all file transfers in its local database, the catalog. The 
 
 ### Automatic catalog expansion
 
-The auto-expand catalog option lets you enlarge the catalog by a preset percentage when an alert is sent that the catalog is reaching its threshold. Additionally you can indicate a script to execute if this expanded limit is exceeded.
+The<span class="italic_in_para"> auto-expand </span>catalog option lets you enlarge the catalog by a preset percentage when an alert is sent that the catalog is reaching its threshold. Additionally you can indicate a script to execute if this expanded limit is exceeded.
 
 #### Overview
 
@@ -25,13 +25,13 @@ If you defined a limit for catalog alerts, TLVCLEAR, once the usage surpasses th
 
 #### Steps
 
-To enable the auto-expand option, with Transfer CFT{{< TransferCFT/componentshortname  >}} running:
+To enable the auto-expand option, with {{< TransferCFT/axwayvariablesComponentShortName  >}} running:
 
 1. Set the uconf values for:
     -   `cft.cftcat.auto_expand_percent `
     -   `cft.cftcat.auto_expand_max_size`
 1. To activate the new values, run the command: CFTUTIL reconfig type = uconf
-    -   If Transfer CFT{{< TransferCFT/componentshortname >}} is stopped when setting uconf values, you do not need to execute the reconfig command.
+    -   If {{< TransferCFT/axwayvariablesComponentShortName >}} is stopped when setting uconf values, you do not need to execute the reconfig command.
 
 
 | Parameter  | Default  | Description  |
@@ -61,7 +61,7 @@ The example is based on the following settings:
 When you reach the TLVWARN (level=80%), the following messages are sent to the log:
 
 ```
-12/10/17 17:53:30  CFTC29W Catalog Alert fill threshold reached: ****level=80%**** ID=CAT0
+12/10/17 17:53:30  CFTC29W Catalog Alert fill threshold reached: <span class="bold_in_para">****level=80%****</span> ID=CAT0
 12/10/17 17:53:30  CFTC13I Catalog resize (100 --> 120) done
 12/10/17 17:54:16  CFTT17I _ STATE=HOLD <IDTU=A0000029 PART=PARIS IDF=TXT IDT=J1718064>
 12/10/17 17:54:16  CFTR12I SEND Treated for USER Nougat  <IDTU=A0000029 PART=PARIS IDF=TXT>
@@ -74,7 +74,7 @@ The new fill rate is now 80/120 = ~67%, which is below TLVCLEAR (70), so the ale
    12/10/17 17:54:16  CFTC30W Catalog Alert cleared : level=67% ID=CAT0
 ```
 
-The message CFTC30W Catalog Alert cleared : **level=67%** indicates that the catalog is sufficient. If it were not, the catalog would be extended again at next alert in TLVWRATE seconds.
+The message <span class="span_1">CFTC30W Catalog Alert cleared : **level=67%** </span>indicates that the catalog is sufficient. If it were not, the catalog would be extended again at next alert in TLVWRATE seconds.
 
 The catalog continues to fill until it reaches 80%. Expanding 20% more would resize the catalog to 144 records, which exceeds the limit (140). If you exceed the limit the following log messages display:
 
@@ -98,7 +98,7 @@ The next time the catalog limit is reached, it can no longer expand. Here, the l
 
 #### Auto-expand option on z/OS
 
-If you are using the `cft.cftcat.auto_expand` parameter in a z/OS environment, refer to the `SHARECAT `parameter in the *Installation and Operation Guide* for OS specific details.
+If you are using the <span class="code">`cft.cftcat.auto_expand`</span> parameter in a z/OS environment, refer to the <span class="code">`SHARECAT `</span>parameter in the *Installation and Operation Guide* for OS specific details.
 
 ### Catalog purge policies
 

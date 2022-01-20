@@ -2,7 +2,7 @@
     "title": "Exit  list error messages",
     "linkTitle": "Exit list error messages",
     "weight": "330"
-}The error messages stored in the Transfer CFT{{< TransferCFT/componentshortname  >}} log
+}The error messages stored in the {{< TransferCFT/axwayvariablesComponentShortName  >}} log
 have the following syntax:
 
 CFTT60I PART= &part IDF=

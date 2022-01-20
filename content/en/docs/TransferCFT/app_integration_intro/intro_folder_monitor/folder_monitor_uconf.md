@@ -5,7 +5,7 @@
 }This section provides a description of how to use Transfer CFT UCONF values to manage folder monitoring. This method is no longer recommended; you should use the CFTFOLDER object method.
 
 - [Configure folder monitoring using UCONF](#Configur)
-- [How Transfer CFT{{< TransferCFT/componentshortname >}} handles monitored files](#How2)
+- [How {{< TransferCFT/axwayvariablesComponentShortName >}} handles monitored files](#How2)
 - [Modify and apply configuration changes](#Modifying_existing_configuration)
 - [Directory configuration examples](#Director)
 - [File-system event monitoring](#File-sys)
@@ -60,7 +60,7 @@ Use the following UCONF parameters to configure folder monitoring for each dire
 
 | UCONF parameter  | Type  | Default | Description  |
 | --- | --- | --- | --- |
-| folder_monitoring.enable  | Boolean  | No  |  • No: No folder monitoring occurs.<br/> • Yes: Enable Transfer CFT{{< TransferCFT/componentshortname  >}} folder monitoring. |
+| folder_monitoring.enable  | Boolean  | No  |  • No: No folder monitoring occurs.<br/> • Yes: Enable {{< TransferCFT/axwayvariablesComponentShortName  >}} folder monitoring. |
 | folder_monitoring.folders  | node  | None  | Add the logical folders to monitor (list of logical identifiers).<br/> You should provide a unique name to identify the set of configuration parameters corresponding to this directory. If you have more than one Folder to monitor, use a space between each logical value.<br/> See the **Comment***** below this table for additional information. |
 | folder_monitoring.folders.<br/> &lt;logical_name&gt;.enable | Boolean  | Yes  | Enables a scan of the folder, where NO deactivates folder monitoring. |
 | folder_monitoring.folders.<br/> &lt;logical_name&gt;.scan_dir | string  | None  | Absolute path name of the top level directory to scan.<br/> This directory must exist before restarting CFT.<br/> *See NOTE. |
@@ -88,14 +88,14 @@ Use the following UCONF parameters to configure folder monitoring for each dire
 >
 > \*You cannot use the following characters in the SCANDIR or WORKDIR definition. Additionally you cannot use a comma (,) in the CFTFOLDER SCANDIR or WORKDIR definition.
 
-- UNIX /
-- For Windows \\ / : \* ? " &lt; > |
+- {{< TransferCFT/PrimaryForunix >}} /
+- For {{< TransferCFT/PrimaryforWindows >}} \\ / : \* ? " &lt; > |
 
-******Comment\*\*\***: You can use CFTUTIL to create the list of folders &lt;logical\_names>. When using CFTUTIL, be careful to correctly enter the command. For example, where FM1, FM2 and FM3 are 3 logical folders to be managed by Transfer CFT{{< TransferCFT/componentshortname  >}}, enter:****
+******Comment\*\*\***: You can use CFTUTIL to create the list of folders &lt;logical\_names>. When using CFTUTIL, be careful to correctly enter the command. For example, where FM1, FM2 and FM3 are 3 logical folders to be managed by {{< TransferCFT/axwayvariablesComponentShortName  >}}, enter:****
 
 `CFTUTIL uconfset id= folder_monitoring.folders, value= "'FM1 FM2 FM3 '"         </code></p>`
 
-## How Transfer CFT{{< TransferCFT/componentshortname  >}} handles monitored files
+## How {{< TransferCFT/axwayvariablesComponentShortName  >}} handles monitored files
 
 This section describes how the various file monitoring parameters work.
 
@@ -116,13 +116,13 @@ For a file to become a candidate to be submitted, the following conditions must 
 
 ## Create or modify a monitored folder and apply configuration changes
 
-The act of starting Transfer CFT causes Transfer CFT to check for and reload configuration changes. Alternatively, you can dynamically execute the `CFTUTIL RECONFIG type=FOLDER` command to check and reload the configuration.
+The act of starting Transfer CFT causes Transfer CFT to check for and reload configuration changes. Alternatively, you can dynamically execute the <span class="code">`CFTUTIL RECONFIG type=FOLDER`</span> command to check and reload the configuration.
 
 Upon reloading, if there are any modified configuration parameters or detected errors in the new configuration, Transfer CFT records these in the log. Additionally, Transfer CFT verifies that the updated configuration is compatible with the contents of the current directories.
 
 In particular, if you change the METHOD parameter from FILE to MOVE without modifying the scan\_dir and work\_dir parameters, and if the work\_dir directory is not empty, Transfer CFT displays an error message in the log and will not monitor the corresponding directory.
 
-To deactivate compatibility checks of a folder’s new configuration, unset the value of the `folder_monitoring.folders.<logical_name>.control `parameter using the `uconfunset `command.
+To deactivate compatibility checks of a folder’s new configuration, unset the value of the <span class="code">`folder_monitoring.folders.<logical_name>.control `</span>parameter using the <span class="code">`uconfunset `</span>command.
 
 **Example**
 
@@ -219,7 +219,7 @@ CFTUTIL uconfset id=folder_monitoring.folders.B.idf , value='TXT'
 CFTUTIL uconfset id=folder_monitoring.folders.B.file_include_filter , value='\*.txt'
 ```
 
-The files to be sent must be moved to the directory that corresponds to the destination partner name, for example `/home/CFT/fm/dir_b/newyork` for the partner named newyork.
+The files to be sent must be moved to the directory that corresponds to the destination partner name, for example <span class="code">`/home/CFT/fm/dir_b/newyork`</span> for the partner named newyork.
 
 #### Directory C requirements
 
@@ -266,9 +266,9 @@ The files to be sent must be moved to the directory that corresponds to the dest
 
 <span id="Folder"></span>
 
-## Folder monitoring using the Transfer CFT{{< TransferCFT/componentshortname  >}} UI
+## Folder monitoring using the {{< TransferCFT/axwayvariablesComponentShortName  >}} UI
 
-From the Transfer CFT{{< TransferCFT/componentshortname  >}} UI, select the ****Unified Configuration**** icon. From the Unified configuration dialog box, select folder\_monitoring. To display all possible parameters, first create at least one folder (folder\_monitoring.folders) for Transfer CFT{{< TransferCFT/componentshortname  >}} to monitor, and click **Apply**.
+From the {{< TransferCFT/axwayvariablesComponentShortName  >}} UI, select the <span class="bold_in_para">****Unified Configuration****</span> icon. From the Unified configuration dialog box, select folder\_monitoring. To display all possible parameters, first create at least one folder (folder\_monitoring.folders) for {{< TransferCFT/axwayvariablesComponentShortName  >}} to monitor, and click **Apply**.
 
 For more information on setting unified configuration parameters, refer to [Using UCONF in CFTUTIL](../../../admin_intro/uconf/uconf_w_cftutil) or [About the unified configuration](../../../admin_intro/uconf) topics.
 

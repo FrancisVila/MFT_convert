@@ -8,7 +8,7 @@
 
 #### CFTSEND, SEND
 
-**\[NFNAME =**{***filename
+**\[NFNAME =**<span style="font-weight: bold;">****{****</span>***filename
 | \*filename*}\]     {string
 512, or string 80 depending on the PeSIT PROF setting}**
 
@@ -34,7 +34,7 @@ The file is transferred providing the following conditions are met:
 
 #### CFTRECV, RECV
 
-**\[NFNAME =**{***filename*
+**\[NFNAME =**<span style="font-weight: bold;">****{****</span>***filename*
 }\]     {string
 512}**
 
@@ -81,7 +81,7 @@ The following variables may be used to form the NFNAME character string:
     &BTIME, &BYEAR, &BMONTH, &BDAY
 
 The ‘&’ character here replaces the char\_symb character specific
-to each operating system (refer to the Transfer CFT{{< TransferCFT/componentshortname  >}} *Operations Guide*
+to each operating system (refer to the {{< TransferCFT/axwayvariablesComponentShortName  >}} *Operations Guide*
 corresponding to your OS).
 
 [Return to Command index](../../)

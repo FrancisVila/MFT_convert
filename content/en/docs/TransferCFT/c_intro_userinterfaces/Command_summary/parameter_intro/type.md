@@ -9,7 +9,7 @@
 #### ABOUT
 
 \[ TYPE
-= { ALL
+= { <span style="text-decoration: underline;">ALL</span>
 | HOST | CFT } \]
 
 Displays
@@ -53,7 +53,7 @@ Type of object to be deactivated.
 TYPE = { FILE
 | TCPIP}
 
-Type of Transfer CFT{{< TransferCFT/componentshortname  >}} communication medium.
+Type of {{< TransferCFT/axwayvariablesComponentShortName  >}} communication medium.
 
 This parameter can take the following values:
 
@@ -111,7 +111,7 @@ The type of exit program, as follows:
 This defines the accounting type. CFTACCNT TYPE parameters are:
 
 - FILE (default value): Data is recorded
-    in the Transfer CFT{{< TransferCFT/componentlongname >}} files defined in the fname
+    in the {{< TransferCFT/axwayvariablesComponentLongName >}} files defined in the fname
     and afname fields.
 - SYST: Data is recorded in the files
     of the operating system accounting utility. Available
@@ -209,12 +209,12 @@ Defines the parameters to extract.
 | ACCNT  | Description of the statistical files  | CFTACCNT  |
 | AUTH  | List of authorized files  | CFTAUTH  |
 | CAT  | Catalog definition  | CFTCAT  |
-| COM  | Description of Transfer CFT{{< TransferCFT/componentshortname  >}} communication methods  | CFTCOM  |
+| COM  | Description of {{< TransferCFT/axwayvariablesComponentShortName  >}} communication methods  | CFTCOM  |
 | IDF  | File "network" identifier  | CFTIDF  |
 | LOG  | Log file description  | CFTLOG  |
 | NET  | Network description  | CFTNET  |
 | PARM  | General parameters  | CFTPARM  |
-| PART  | Partner definition  | CFTPART and Transfer CFT{{< TransferCFT/componentshortname  >}} network  |
+| PART  | Partner definition  | CFTPART and {{< TransferCFT/axwayvariablesComponentShortName  >}} network  |
 | PROT  | Protocol definition  | CFTPROT  |
 | RECV  | Description of the files to be received  | CFTRECV  |
 | SEND  | Description of the files to be sent  | CFTSEND  |
@@ -232,7 +232,7 @@ ALL | AUTH | CAT | COM | ETB | IDF | LOG | NET |PARM | PROT | RECV | SEND
 | XLATE }
 
 Defines the type of parameters to
-list from the Transfer CFT{{< TransferCFT/componentshortname  >}} parameter file.
+list from the {{< TransferCFT/axwayvariablesComponentShortName  >}} parameter file.
 
 TYPE can take the predefined values indicated in the Type table below.
 
@@ -254,10 +254,10 @@ TYPE can take the predefined values indicated in the Type table below.
 | RECV  | Used to query the parameters of the files to be received<br /> These parameters are submitted when CFTRECV commands are entered  |
 | SEND  | Used to query the parameters of the files to be sent<br /> These parameters are submitted when CFTSEND commands are entered  |
 | XLATE  | Used to query translation tables<br /> Translation tables are customized by the CFTXLATE object |
-| CFTFILE | Used to create, empty, or delete Transfer CFT{{< TransferCFT/componentshortname  >}} files |
-| LISTCAT | Used to query the information associated with the selected transfers, recorded in the Transfer CFT{{< TransferCFT/componentshortname  >}} catalog |
+| CFTFILE | Used to create, empty, or delete {{< TransferCFT/axwayvariablesComponentShortName  >}} files |
+| LISTCAT | Used to query the information associated with the selected transfers, recorded in the {{< TransferCFT/axwayvariablesComponentShortName  >}} catalog |
 | DISPLAY | Used to query the information as with the LISTCAT command. It uses an external XML file that lists and describes customized models. These models are used to format the output |
-| ABOUT | Used to display the Transfer CFT{{< TransferCFT/componentshortname  >}} computer characteristics |
+| ABOUT | Used to display the {{< TransferCFT/axwayvariablesComponentShortName  >}} computer characteristics |
 
 
 #### RECONFIG

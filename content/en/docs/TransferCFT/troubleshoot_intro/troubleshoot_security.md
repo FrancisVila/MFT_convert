@@ -188,14 +188,14 @@ ST_QAPS SFK TK ST_QA_AP A2716390 0 0 260 TLSPARSE
 
 ## Unknown CA leads to a failed certificate verification
 
-In Transfer CFT{{< TransferCFT/transfercftname  >}} 3.1.3 and lower, you can perform a SSL transfer even if the certificate chain is not complete (not signed by a ROOT CA). However, for Transfer CFT{{< TransferCFT/transfercftname  >}} 3.2.0 and higher, the certificate chain must be complete for a transfer to succeed.
+In {{< TransferCFT/suitevariablesTransferCFTName  >}} 3.1.3 and lower, you can perform a SSL transfer even if the certificate chain is not complete (not signed by a ROOT CA). However, for {{< TransferCFT/suitevariablesTransferCFTName  >}} 3.2.0 and higher, the certificate chain must be complete for a transfer to succeed.
 
-****When working with multiple Transfer CFT{{< TransferCFT/transfercftname  >}} versions****
+****When working with multiple {{< TransferCFT/suitevariablesTransferCFTName  >}} versions****
 
-Given the differences in certificate verification described above, you could encounter issues when performing SSL transfers between, for example Transfer CFT{{< TransferCFT/transfercftname  >}} 3.1.3 and Transfer CFT{{< TransferCFT/transfercftname  >}} 3.4, depending on your configuration. This section presents an example of two Transfer CFTs where:
+Given the differences in certificate verification described above, you could encounter issues when performing SSL transfers between, for example {{< TransferCFT/suitevariablesTransferCFTName  >}} 3.1.3 and {{< TransferCFT/suitevariablesTransferCFTName  >}} 3.4, depending on your configuration. This section presents an example of two Transfer CFTs where:
 
-- CFT1: is server and is a Transfer CFT{{< TransferCFT/transfercftname >}} 3.1.3
-- CFT2: is client and is a Transfer CFT{{< TransferCFT/transfercftname >}} 3.4
+- CFT1: is server and is a {{< TransferCFT/suitevariablesTransferCFTName >}} 3.1.3
+- CFT2: is client and is a {{< TransferCFT/suitevariablesTransferCFTName >}} 3.4
 
 ****Example****
 
@@ -205,7 +205,7 @@ Given the differences in certificate verification described above, you could enc
 ****Results****
 
 - During a simple authentication, CFT1 sends the A/B certificate chain, which CFT2 refuses because it is not complete (CFT2 requires the entire certificate chain).
-- An error occurs: `SSL Handshake local error [HANDSHAKE_FAILURE] CR = 48 (Unknown CA: certificate verify failed)`
+- An error occurs: <span class="code">`SSL Handshake local error [HANDSHAKE_FAILURE] CR = 48 (Unknown CA: certificate verify failed)`</span>
 
 ****Workaround****
 
@@ -216,7 +216,7 @@ To remedy this situation, on the client (CFT2 in our example):
 
 ****When migrating****
 
-You should be mindful when migrating from Transfer CFT{{< TransferCFT/transfercftname  >}} 3.1.3 or lower, that a previous configuration that was operational may not work with higher versions of Transfer CFT{{< TransferCFT/transfercftname  >}} until you import and define the certificate chain as required for Transfer CFT{{< TransferCFT/transfercftname  >}} versions 3.2.x and higher.
+You should be mindful when migrating from {{< TransferCFT/suitevariablesTransferCFTName  >}} 3.1.3 or lower, that a previous configuration that was operational may not work with higher versions of {{< TransferCFT/suitevariablesTransferCFTName  >}} until you import and define the certificate chain as required for {{< TransferCFT/suitevariablesTransferCFTName  >}} versions 3.2.x and higher.
 
 ## Recovery and trace analysis
 

@@ -10,7 +10,7 @@ concerning correctly terminated transfers (T or X state).
 Two recording modes are available:
 
 - Recording data
-    in Transfer CFT{{< TransferCFT/componentshortname >}} files. When the primary file is full, Transfer CFT{{< TransferCFT/componentshortname >}}
+    in {{< TransferCFT/axwayvariablesComponentShortName >}} files. When the primary file is full, {{< TransferCFT/axwayvariablesComponentShortName >}}
     switches to an alternate file. This mode is available on all operating
     systems.
 - Recording data

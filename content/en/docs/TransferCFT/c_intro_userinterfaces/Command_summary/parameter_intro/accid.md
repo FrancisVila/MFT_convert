@@ -16,13 +16,13 @@ Used when TYPE=SYST
 
 Accounting system file identifier records.
 
-- ****z/OS**** ****Default
-    value: 128.****  
-    This data is written in SMF. The Transfer CFT{{< TransferCFT/componentshortname >}} program must be authorized
+- <span style="font-weight: bold;">****z/OS**** </span> <span style="font-weight: bold;">****Default
+    value: 128.****</span>  
+    This data is written in SMF. The {{< TransferCFT/axwayvariablesComponentShortName >}} program must be authorized
     (APF).
-- ****VMS**** Parameter not applicable.
+- <span style="font-weight: bold;">****VMS****</span> Parameter not applicable.
 
 The default value is 128. The data is
-written in SMF. The Transfer CFT{{< TransferCFT/componentshortname  >}} program must have write access.
+written in SMF. The {{< TransferCFT/axwayvariablesComponentShortName  >}} program must have write access.
 
 [Return to Command index](../../)

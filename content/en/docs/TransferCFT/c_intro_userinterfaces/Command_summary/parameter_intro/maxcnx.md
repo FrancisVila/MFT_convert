@@ -11,7 +11,7 @@
 ****\[MAXCNX     = { <u>384</u>
 | n} \]      {0...MAXTRANS value up to 2000}****
 
-The maximum number of simultaneous connections that Transfer CFT{{< TransferCFT/componentshortname  >}} accepts
+The maximum number of simultaneous connections that {{< TransferCFT/axwayvariablesComponentShortName  >}} accepts
 to establish on a given network resource.
 
 - Enter

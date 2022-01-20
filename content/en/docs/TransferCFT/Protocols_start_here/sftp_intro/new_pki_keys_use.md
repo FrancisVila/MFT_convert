@@ -10,7 +10,7 @@ This section describes how to establish secure sessions and generate keys, impor
 
 ## Using PKIKEYGEN to generate and import a key pair
 
-You can use the `PKIKEYGEN `command to generate a key pair, where it then stores them in the local PKI database.
+You can use the <span class="code">`PKIKEYGEN `</span>command to generate a key pair, where it then stores them in the local PKI database.
 
 ```
 PKIUTIL PKIKEYGEN
@@ -26,7 +26,7 @@ COMMENT="2048-bits RSA key"
 
 ### About PKI formats
 
-The SFTP keys are referenced in the PKI database as a `Keys `identifier.
+The SFTP keys are referenced in the PKI database as a <span class="code">`Keys `</span>identifier.
 
 You can import the following formats in the PKI database:
 
@@ -154,7 +154,7 @@ PKIUTIL PKIKEY ID=PUBPEM, IKFORM=PEM, IKNAME=./public.pem, MODE=CREATE
 
 ## Activate/deactivate a key
 
-Use the `ACT/INACT` commands to activate or deactivate, respectively.
+Use the <span class="code">`ACT/INACT`</span> commands to activate or deactivate, respectively.
 
 ****Example****
 

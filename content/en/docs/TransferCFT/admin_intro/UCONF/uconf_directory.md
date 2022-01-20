@@ -14,7 +14,7 @@ If you have trouble viewing the entire table in your browser, click the arrow ic
 
 Some uconf values contain logical\_name parameter attributes as part of the value, for example `aws.credentials.<logical_name>.access_key_id`. When processed, the logical\_name is replaced by the parent value, and is systematically converted to lower case.
 
-Example when `aws.credientials=Test`
+Example when <span class="code">`aws.credientials=Test`</span>
 
 `CFTUTIL listuconf id=aws.credentials.*`
 

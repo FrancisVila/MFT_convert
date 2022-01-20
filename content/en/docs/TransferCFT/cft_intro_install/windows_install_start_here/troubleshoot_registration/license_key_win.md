@@ -4,18 +4,18 @@
     "weight": "210"
 }******Windows******
 
-You need to apply a valid license key to Transfer CFT{{< TransferCFT/componentshortname  >}} in the following situations:
+You need to apply a valid license key to {{< TransferCFT/axwayvariablesComponentShortName  >}} in the following situations:
 
-- You perform an initial Transfer CFT{{< TransferCFT/componentshortname >}} installation.
+- You perform an initial {{< TransferCFT/axwayvariablesComponentShortName >}} installation.
 - To replace an expired license key (typically after a year).
 
 ## Obtain a license key
 
-1. Install Transfer CFT{{< TransferCFT/componentshortname >}}. You can install Transfer CFT{{< TransferCFT/componentshortname >}} without a license key, and enter the key afterward.
-1. After completing the installation, or for an existing installation, use the command **`cftutil about`** to retrieve your system information. For details see [ABOUT: Displaying product and host information](../../../../c_intro_userinterfaces/about_cftutil/about_command).
+1. Install {{< TransferCFT/axwayvariablesComponentShortName >}}. You can install {{< TransferCFT/axwayvariablesComponentShortName >}} without a license key, and enter the key afterward.
+1. After completing the installation, or for an existing installation, use the command <span class="code" style="font-weight: bold;">**`cftutil about`**</span> to retrieve your system information. For details see [ABOUT: Displaying product and host information](../../../../c_intro_userinterfaces/about_cftutil/about_command).
 1. Contact the Axway Fulfillment team at the appropriate email address, and provide the hostname and system information.
-    -   For a US key, contact: `fulfillment@us.axway.com`
-    -   For an EMEA or APAC key, contact: `product.key@axway.com`
+    -   For a US key, contact: <span class="code">`fulfillment@us.axway.com`</span>
+    -   For an EMEA or APAC key, contact: <span class="code">`product.key@axway.com`</span>
 
 ## Apply a license key
 
@@ -51,7 +51,7 @@ For example, if you have 2 hosts and 4 nodes, you require 4 keys with at least o
 
 ## About command
 
-Use the CFTUTIL utility to execute the **`about `**command to display key and general system information as demonstrated in this example.
+Use the CFTUTIL utility to execute the <span class="code" style="font-weight: bold;">**`about `**</span>command to display key and general system information as demonstrated in this example.
 
 ```
 CFTUTIL about

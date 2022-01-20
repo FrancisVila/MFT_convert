@@ -82,9 +82,9 @@ following types of transfers:
 - Whose activation
     time slot is expired
 - Which is interrupted,
-    in the ****H**** state (except for particular
+    in the <span style="font-weight: bold;">****H****</span> state (except for particular
     cases, see the Transfer CFT *[Codes,
-    Diagnostics and Messages](../../../troubleshoot_intro/messages_and_error_codes_start_here)*) or ****K****
+    Diagnostics and Messages](../../../troubleshoot_intro/messages_and_error_codes_start_here)*) or <span style="font-weight: bold;">****K****</span>
     state
 - Which is refused
     by the partner, for example, if the password is incorrect
@@ -124,7 +124,7 @@ variables](../../../c_intro_userinterfaces/command_summary/symbolic_variables)* 
 be used to define the procedure name, and the symbolic variables which
 can be used in the body of the procedure.
 
-When the transfer is in the ****T****
+When the transfer is in the <span style="font-weight: bold;">****T****</span>
 state, you can submit these procedures, or other external procedures,
 using the SUBMIT command.
 

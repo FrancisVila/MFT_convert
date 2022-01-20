@@ -10,7 +10,7 @@ An additional benefit of synchronous communication is that you can use it for mo
 
 The alternative to synchronous mode is an asynchronous mode, which places the client data in a communication file where it waits to be picked up by the Transfer CFT server, at which point it is then listed in the catalog.
 
-Another difference between modes is that unlike synchronous mode, asynchronous mode does not require that Transfer CFT{{< TransferCFT/componentlongname  >}} be started for the client to send data.
+Another difference between modes is that unlike synchronous mode, asynchronous mode does not require that {{< TransferCFT/axwayvariablesComponentLongName  >}} be started for the client to send data.
 
  
 
@@ -22,7 +22,7 @@ There are two steps to set up synchronous communication in Transfer CFT, configu
 
 ### Configure the server
 
-Use the CFTCOM command to define the synchronous communication settings. In the Central Governance{{< TransferCFT/centralgovernancename  >}} User Guide{{< TransferCFT/doctypeuser  >}}, refer to **Transfer request mode &gt; synchronous**.
+Use the CFTCOM command to define the synchronous communication settings. In the {{< TransferCFT/suitevariablesCentralGovernanceName  >}} {{< TransferCFT/suitevariablesDocTypeUser  >}}, refer to **Transfer request mode &gt; synchronous**.
 
 - Port: Use the Transfer CFT server port that receives the client commands
 - Maximum connection: Set the number of incoming connections on the Transfer CFT server
@@ -90,7 +90,7 @@ CFTUTIL uconfset id=copilot.cft.com, value=’C=<path><config_file>’
 
 #### Web services
 
-When using web services the default media identifier used is the first once declared in the general CFTPARM object. Additionally, you can override this in the web services XML file by adding the desired COM using the format `<axw:CFTCOM_ID>COM0</axw:CFTCOM_ID>` in the SOAP request.
+When using web services the default media identifier used is the first once declared in the general CFTPARM object. Additionally, you can override this in the web services XML file by adding the desired COM using the format <span class="code">`<axw:CFTCOM_ID>COM0</axw:CFTCOM_ID>`</span> in the SOAP request.
 
 #### Transfer CFT UI
 

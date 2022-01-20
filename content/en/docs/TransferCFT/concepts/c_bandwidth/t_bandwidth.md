@@ -4,7 +4,7 @@
     "weight": "220"
 }This topic describes bandwidth session concepts. For parameter details, see the topic [About bandwidth control](../).
 
-In Transfer CFT{{< TransferCFT/componentshortname  >}}, bandwidth control can occur at the following levels:
+In {{< TransferCFT/axwayvariablesComponentShortName  >}}, bandwidth control can occur at the following levels:
 
 - Global
 - Class

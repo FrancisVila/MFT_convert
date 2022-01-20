@@ -75,7 +75,7 @@ PRINT MSG='Transfer IDTU value: %_CAT_IDTU%'
 | _CAT_SUSER  | SUSER parameter value.  |
 | _CAT_TCYCLE  | TCYCLE parameter value.  |
 | _CAT_TIMEB  | Transfer start time.  |
-| _CAT_TIMEC  | TCYCLE parameter value.  |
+| _CAT_TIMEC  | TCYCLE parameter value.<span > </span>  |
 | _CAT_TIMED  | Creation time of the transfer.  |
 | _CAT_TIMEE  | Transfer end time.  |
 | _CAT_TIMEK  | Time of last writing.  |

@@ -4,7 +4,7 @@
     "weight": "1310"
 }<span id="fpart"></span>
 
-### fpart
+### {{< TransferCFT/SystemTitle  >}}
 
 #### CFTEXT
 
@@ -14,7 +14,7 @@ Name of the Partner input file.
 
 Default value: default
 name of the Partner file defined for CFTUTIL for the system concerned.
-Refer to the Transfer CFT{{< TransferCFT/componentshortname  >}} Operations Guide that corresponds with
+Refer to the {{< TransferCFT/axwayvariablesComponentShortName  >}} <span class="italic_in_para">Operations Guide</span> that corresponds with
 your OS.
 
 [Return to Command index](../../)

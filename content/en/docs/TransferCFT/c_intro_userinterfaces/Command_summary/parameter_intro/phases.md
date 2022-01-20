@@ -8,7 +8,7 @@
 
 **`[ PHASES =  { A | T | Y | Z | X }  ]`**
 
-Where the string ****sizemax= 5****.
+Where the string <span class="bold_in_para">****sizemax= 5****</span>.
 
 Possible values:
 

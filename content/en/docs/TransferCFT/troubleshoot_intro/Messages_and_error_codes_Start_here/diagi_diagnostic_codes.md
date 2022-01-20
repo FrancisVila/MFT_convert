@@ -4,7 +4,7 @@
     "weight": "430"
 }<span id="Internal_diagnostic_codes"></span>
 
-## Transfer CFT{{< TransferCFT/componentshortname  >}} internal diagnostic codes
+## {{< TransferCFT/axwayvariablesComponentShortName  >}} internal diagnostic codes
 
 Diagnostic codes provide general information on the cause of the error. It
 is independent of the operating system and of the network access method
@@ -28,19 +28,19 @@ the transfer failure:
 
 - SYS: System error
 - NET: Error detected
-    by the network layers (Transfer CFT{{< TransferCFT/componentshortname >}} layers, manufacturer or network layers)
+    by the network layers ({{< TransferCFT/axwayvariablesComponentShortName >}} layers, manufacturer or network layers)
 - PROT: Fault
     detected by the file transfer protocol
 - FILE: Transferred
     file access error returned by the operating system
 - DATA: Error
-    accessing Transfer CFT{{< TransferCFT/componentshortname >}} basic data: parameter, partners, catalog, communication,
+    accessing {{< TransferCFT/axwayvariablesComponentShortName >}} basic data: parameter, partners, catalog, communication,
     log, statistics and secondary indirection files (lists of partners, files,
     and so on)
 - PARAM: Transfer
     execution error following a parameter setting error
 - AUTH: Transfer
-    denied following an authorization check by Transfer CFT{{< TransferCFT/componentshortname >}}
+    denied following an authorization check by {{< TransferCFT/axwayvariablesComponentShortName >}}
 - OVER: The
     transfer cannot be executed because the monitor's resources are saturated
     or a parameter setting limit has been exceeded
@@ -59,7 +59,7 @@ the transfer failure:
 ## Consequence column in diagnostic codes
 
 The Consequence column provides
-information on the Transfer CFT{{< TransferCFT/componentshortname  >}} behavior following a transfer failure.
+information on the {{< TransferCFT/axwayvariablesComponentShortName  >}} behavior following a transfer failure.
 The resulting status of the transfer D, H or K:
 
 - D: the transfer
@@ -118,7 +118,7 @@ The "No CAT" indication specifies that no
 catalog entry had been created for the transfer when the error occurred.
 The transfer request is rejected.<span id="Internal_diagnostic_codes_table"></span>
 
-DIAGI - Internal diagnostic codes
+<span class="autonumber"></span>DIAGI - Internal diagnostic codes
 table
 
 The following table makes references to DIAGP. For details, please see the [DIAGP section.](../general_protocol_diagnostics)
@@ -419,7 +419,7 @@ D status - RESTART
 
 FILE - Error setting the pointer to a resynchronization point in the file: the restart point requested by the partner is incorrect.
 
-This can occur when the synchronized points are not flushed from the catalog (if the CFTCAT's `updat `parameter is greater than 1, the UCONF`cft.server.catalog.sync.enable` is set to `No`, or both of these are true) due to an unexpected event such as a process, system, or disk crash.
+This can occur when the synchronized points are not flushed from the catalog (if the CFTCAT's `updat `parameter is greater than 1, the UCONF<span class="code">`cft.server.catalog.sync.enable`</span> is set to <span class="code">`No`</span>, or both of these are true) due to an unexpected event such as a process, system, or disk crash.
 
 **Consequence:**
 
@@ -737,7 +737,7 @@ File defined in the FNAME parameter in the CFTRECV object should not exist when 
 
 There was an error while replacing Transfer CFT variables.
 
-The script referenced by `&fname` in the CFTS68E message is not executed.
+The script referenced by <span class="code">`&fname`</span> in the CFTS68E message is not executed.
 
 **Consequence:**
 
@@ -1007,7 +1007,7 @@ D status - RETRY/COMMUT
 
 Up to "RETRYM" retries are performed for the
 transfer and the access data. If the number of retries reaches the value
-in the RETRYM parameter, Transfer CFT{{< TransferCFT/componentshortname  >}} switches the access data.
+in the RETRYM parameter, {{< TransferCFT/axwayvariablesComponentShortName  >}} switches the access data.
 
 The partner access data for the next retry will relate to the next HOST
 parameter (CFTNET command), or the next PROT parameter (CFTPART command).
@@ -1319,7 +1319,7 @@ DIAGP is then set to MAXCNX
 
 D status - NEXT
 
-This status corresponds to a transfer refusal by the Transfer CFT{{< TransferCFT/componentlongname  >}} protocol
+This status corresponds to a transfer refusal by the {{< TransferCFT/axwayvariablesComponentLongName  >}} protocol
 task, even though the scheduler has not reached the MAXTRANS
 limit.
 
@@ -1328,15 +1328,15 @@ after transfers have ended. Please see <a href="../../../concepts/about_parallel
 
 WSCAN related behavior
 
-Technically, the next retry is triggered **wscan** minutes after the previous try. However, sometimes you may have a Transfer CFT{{< TransferCFT/componentlongname  >}} log where the 416 diagnostic codes are not evenly distributed (by the same time intervals). This may occur if the scheduling task believes resources are available and schedules a retry, but in reality the resource is taken.
+Technically, the next retry is triggered **wscan** minutes after the previous try. However, sometimes you may have a {{< TransferCFT/axwayvariablesComponentLongName  >}} log where the 416 diagnostic codes are not evenly distributed (by the same time intervals). This may occur if the scheduling task believes resources are available and schedules a retry, but in reality the resource is taken.
 
-*Unix only* - If the runtime path is too long, a diag 416 issue occurs and a message similar to the following displays in the `cft.out`:
+*Unix only* - If the runtime path is too long, a diag 416 issue occurs and a message similar to the following displays in the <span class="code">`cft.out`</span>:
 
 > `CFTTCPS S_socket : start_soc : bind afunix`
 >
 > `CFTTCPS Invalid argument`
 
-If this error occurs, modify the path to the socket in the [UCONF](../../../admin_intro/uconf/uconf_directory) `cft.unix.stcp.afunix` parameter according to the operating system limit as shown below:
+If this error occurs, modify the path to the socket in the [UCONF](../../../admin_intro/uconf/uconf_directory) <span class="code">`cft.unix.stcp.afunix`</span> parameter according to the operating system limit as shown below:
 
 - AIX: 1023
 - HP-UX: 92
@@ -1397,13 +1397,13 @@ end
 
 #### Diagi code : 421
 
-1. SYS - Error executing a Transfer CFT{{< TransferCFT/transfercftname  >}}file task
+1. SYS - Error executing a {{< TransferCFT/suitevariablesTransferCFTName  >}}file task
 
 **Consequence:**
 
 D status - NEXT
 
-2. SYS - Error executing a Transfer CFT{{< TransferCFT/transfercftname  >}} EXIT task
+2. SYS - Error executing a {{< TransferCFT/suitevariablesTransferCFTName  >}} EXIT task
 
 **Consequence:**
 

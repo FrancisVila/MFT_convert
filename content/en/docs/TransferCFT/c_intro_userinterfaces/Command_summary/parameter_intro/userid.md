@@ -18,18 +18,18 @@ Identifier of the transfer owner.
 This parameter is used in server mode
 to define the transfer owner associated with a CFTRECV object, or a CFTSEND
 IMPL = YES object. If this parameter is not defined, its default value
-is the system "userid" of the server Transfer CFT{{< TransferCFT/componentshortname  >}}.
+is the system "userid" of the server {{< TransferCFT/axwayvariablesComponentShortName  >}}.
 
 This field can include one or more of the following symbolic variables:
 
-- ****&PART****:
+- <span style="font-weight: bold;">****&PART****</span>:
     value substituted by the local identifier of the transfer partner (CFTPART
-    ****id****)
-- ****&SUSER****:
-    value substituted by the SUSER parameter sent between two Transfer CFT{{< TransferCFT/componentshortname >}}s (PeSIT D CFT profile and PeSIT E protocols)
-- &****RUSER****:
-    value substituted by the ****ruser****
-    parameter sent between two Transfer CFT{{< TransferCFT/componentshortname >}}s (PeSIT D CFT profile
+    <span style="font-weight: bold;">****id****</span>)
+- <span style="font-weight: bold;">****&SUSER****</span>:
+    value substituted by the SUSER parameter sent between two {{< TransferCFT/axwayvariablesComponentShortName >}}s (PeSIT D CFT profile and PeSIT E protocols)
+- &<span style="font-weight: bold;">****RUSER****</span>:
+    value substituted by the <span style="font-weight: bold;">****ruser****</span>
+    parameter sent between two {{< TransferCFT/axwayvariablesComponentShortName >}}s (PeSIT D CFT profile
     and PeSIT E protocols)
 
 > **Note**
@@ -40,7 +40,7 @@ This field can include one or more of the following symbolic variables:
 
 ****Windows****
 
-Transfer CFT{{< TransferCFT/componentshortname  >}} can use domain\\user accounts instead of USER, except when using PassPort AM or internal security. To do so, set the USERID value to the format DOMAIN\\USER.
+{{< TransferCFT/axwayvariablesComponentShortName  >}} can use domain\\user accounts instead of USER, except when using PassPort AM or internal security. To do so, set the USERID value to the format DOMAIN\\USER.
 
 #### CFTCRON
 
@@ -50,7 +50,7 @@ The USERID value is used to perform the CRONJOB job submission.
 
 ****All other platforms****
 
-The CRONJOB is executed by the user who started Transfer CFT{{< TransferCFT/transfercftname  >}}; you can use the &USERID variable for information purposes.
+The CRONJOB is executed by the user who started {{< TransferCFT/suitevariablesTransferCFTName  >}}; you can use the &USERID variable for information purposes.
 
 #### CFTAPPL, CLEARCMD
 

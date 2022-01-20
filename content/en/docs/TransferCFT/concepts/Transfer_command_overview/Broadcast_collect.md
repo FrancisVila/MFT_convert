@@ -37,7 +37,7 @@ The broadcasting list can be described by indicating the identifiers
 of the partners in this list, in the PART parameter of the CFTDEST command.
 This limits the number of identifiers.
 
-This diagram represents a SEND command for "mygroup", which is a collection of applications as defined in Central Governance, or CFTPART objects if defined in Transfer CFT.
+This diagram represents a SEND command for "mygroup", which is a collection of applications as defined in {{< TransferCFT/PrimaryCGorUM  >}}, or CFTPART objects if defined in Transfer CFT.
 
 ![](/Images/TransferCFT/temp_broadcast.png)
 
@@ -92,8 +92,8 @@ entries in the catalog corresponding to:
     management
 - Where &lt;file\_symb> is the OS appropriate symbol (# or @)
 
-This virtual transfer is identified by a ****DIAGP****
-code equal to ****DIFFUS****, on querying
+This virtual transfer is identified by a <span style="font-weight: bold;">****DIAGP****</span>
+code equal to <span style="font-weight: bold;">****DIFFUS****</span>, on querying
 the catalog.
 
 - And a generic virtual
@@ -229,9 +229,9 @@ For each partner, the mechanism used is RECV IDF=\*, FILE=ALL. See the paragraph
 for [ODETTE](../../../protocols_start_here/start_here_odette/receiving_transfers) and [PeSIT](../../../protocols_start_here/about_pesit/defining_cftrecv_in_pesit) in the [Protocol](../../../protocols_start_here) sections.
 
 The EXEC parameter of the CFTDEST command is ignored. The end of transfer procedure is only executed when all the transfers
-are correctly completed (COLLECT entry changes to the ****T**** or **X**
+are correctly completed (COLLECT entry changes to the <span style="font-weight: bold;">****T****</span> or **X**
 state). No procedure is submitted for the generic collection entry, which
-remains in ****K**** state when reception
+remains in <span style="font-weight: bold;">****K****</span> state when reception
 is complete.
 
 No error procedure is submitted for created entries that include

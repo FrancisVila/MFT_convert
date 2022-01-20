@@ -40,7 +40,7 @@ When modifying the A03PARM member, adapt any parameters displayed in bold text t
 
 Before you can customize the instance environment, you require a password to generate a key to use for internal encryption. The password you enter must be at least 8 characters long, contain upper and lower case characters as well as numeric and special characters (\*#$!?+-@).
 
-The password is temporarily stored in the '`pswfname`' file, with the syntax `--pass <password>`, and is then removed after installation. See [pswfname](#pswfname) for details.
+The password is temporarily stored in the '<span class="code">`pswfname`</span>' file, with the syntax <span class="code">`--pass <password>`</span>, and is then removed after installation. See [pswfname](#pswfname) for details.
 
 ### Environment customization
 
@@ -71,15 +71,15 @@ The password is temporarily stored in the '`pswfname`' file, with the syntax `--
 
 #### Transfer CFT loadlib management
 
-Transfer CFT{{< TransferCFT/componentlongname  >}} z/OS allows you to concatenate two libraries, a user library and the product library. The user library is not mandatory, but is strongly advised, and should be positioned first.
+{{< TransferCFT/axwayvariablesComponentLongName  >}} z/OS allows you to concatenate two libraries, a user library and the product library. The user library is not mandatory, but is strongly advised, and should be positioned first.
 
 > **Note**
 >
 >  
 
-- A `..USER.LOAD` load is created during the installation.
+- A <span class="code">`..USER.LOAD`</span> load is created during the installation.
 - If the Transfer CFT LOAD is an APF, the USER load must also be an APF.
-- Set `cftuload '&&TARGET".LOAD"'` to manage only one LOAD.
+- Set <span class="code">`cftuload '&&TARGET".LOAD"'`</span> to manage only one LOAD.
 
 
 | Keyword  | Default  | Description  |
@@ -95,7 +95,7 @@ Transfer CFT{{< TransferCFT/componentlongname  >}} z/OS allows you to concatenat
 
 | Keyword  | Default  | Description  |
 | --- | --- | --- |
-| <span id="pswfname"></span>pswfname  | '&amp;&amp;TARGET".UPARM(GENKEY)"'  | The password, required to generate the key for installation, is temporarily stored in the 'pswfname' file (and is removed after installation).<br/> **Syntax**: <code>--pass &lt;password&gt;</code> |
+| <span id="pswfname"></span>pswfname  | '&amp;&amp;TARGET".UPARM(GENKEY)"'  | The password, required to generate the key for installation, is temporarily stored in the 'pswfname' file (and is removed after installation).<br/> **Syntax**: <span ><code>--pass &lt;password&gt;</code></span> |
 | keyfname  | '&amp;&amp;TARGET".CRYPKEY"'  | File in which the generated key is stored.  |
 | sltfname  | '&amp;&amp;TARGET".CRYPSALT"'  | File in which the computed salt is stored.  |
 | stacompat  | 'NO'  | Catalog state compatibility: cft.state_compat  |
@@ -109,16 +109,16 @@ Transfer CFT{{< TransferCFT/componentlongname  >}} z/OS allows you to concatenat
 | cftgroup  | 'Production.zos'  |  Transfer CFT instance GROUP  |
 
 
-#### Transfer CFT Copilot{{< TransferCFT/copilotname  >}} server customization
+#### Transfer CFT {{< TransferCFT/suitevariablesCopilotName  >}} server customization
 
 
 | Keyword  | Default  | Description  |
 | --- | --- | --- |
-| copenable | 'yes'  | Enable the Transfer CFT{{< TransferCFT/transfercftname  >}} Copilot{{< TransferCFT/copilotname  >}} server. |
-| copladdr | '&amp;&amp;HOSTBYADDR'  | Transfer CFT Copilot{{< TransferCFT/copilotname  >}} server TCP/IP address. The key word '&amp;&amp;HOSTBYADDR' is substituted by the result of the REXX function socket ("GETHOSTBYADDR"). (copilot.general.serverhost) |
-| coplport | '1766'  | Transfer CFT Copilot{{< TransferCFT/copilotname  >}} listening port (copilot.general.serverport). |
-| coplsslp  | '1767'  | Copilot server SSL listening port. *Mandatory for Central Governance (copilot.general.ssl_serverport). |
-| coppath  | '/home/AXWAY/CFT32X/inst/cop'  | USS directory for Transfer CFT Copilot{{< TransferCFT/copilotname  >}} server files. (copilot.http.httprootdir)  |
+| copenable | 'yes'  | Enable the {{< TransferCFT/suitevariablesTransferCFTName  >}} {{< TransferCFT/suitevariablesCopilotName  >}} server. |
+| copladdr | '&amp;&amp;HOSTBYADDR'  | Transfer CFT {{< TransferCFT/suitevariablesCopilotName  >}} server TCP/IP address. The key word '&amp;&amp;HOSTBYADDR' is substituted by the result of the REXX function socket ("GETHOSTBYADDR"). (copilot.general.serverhost) |
+| coplport | '1766'  | Transfer CFT {{< TransferCFT/suitevariablesCopilotName  >}} listening port (copilot.general.serverport). |
+| coplsslp  | '1767'  | Copilot server SSL listening port. *Mandatory for {{< TransferCFT/PrimaryCGorUM  >}} (copilot.general.ssl_serverport). |
+| coppath  | '/home/AXWAY/CFT32X/inst/cop'  | USS directory for Transfer CFT {{< TransferCFT/suitevariablesCopilotName  >}} server files. (copilot.http.httprootdir)  |
 | restenable  | 'yes'  | Enable Copilot REST API (Yes/No).  |
 | restport  | '1768'  | Copilot REST API server port  |
 
@@ -160,7 +160,7 @@ Transfer CFT{{< TransferCFT/componentlongname  >}} z/OS allows you to concatenat
 
 #### Parameters for RACF (or SAF enabled) control of Transfer CFT
 
-Use these parameters only with the Transfer CFT{{< TransferCFT/componentshortname  >}} z/OS security setup described in [Setting up RACF Security]().
+Use these parameters only with the {{< TransferCFT/axwayvariablesComponentShortName  >}} z/OS security setup described in [Setting up RACF Security]().
 
 
 | Keyword  | Default  | Description  |
@@ -200,26 +200,26 @@ If you modify the following values, you must un-comment them in the JCL \* CFT$S
 | secobj  | 'SECOBJ'  | Security objects  |
 
 
-#### Central Governance
+#### {{< TransferCFT/PrimaryCGorUM  >}}
 
 
 | Keyword  | Default  | Description  |
 | --- | --- | --- |
-| cgenable  | 'no'  | Enables exchanges with the Central Governance server. (yes | no)  |
-| cghost  | 'cghost'  | Central Governance server host address.  |
+| cgenable  | 'no'  | Enables exchanges with the {{< TransferCFT/PrimaryCGorUM  >}} server. (yes | no)  |
+| cghost  | 'cghost'  | {{< TransferCFT/PrimaryCGorUM  >}} server host address.  |
 | cgport  | 'cgport' ('12553')  | Transfer CFT’s port for registering with Central Governance.  |
-| cgsecret  | 'cgsecret'  | Central Governance shared secret.  |
-| amsusers  | '&amp;%userid()'  | AM superuser(s) for Central Governance.  |
+| cgsecret  | 'cgsecret'  | {{< TransferCFT/PrimaryCGorUM  >}} shared secret.  |
+| amsusers  | '&amp;%userid()'  | AM superuser(s) for {{< TransferCFT/PrimaryCGorUM  >}}.  |
 
 
-#### Secure Relay{{< TransferCFT/securerelayname  >}}
+#### {{< TransferCFT/suitevariablesSecureRelayName  >}}
 
 
 | Keyword  | Default  | Description  |
 | --- | --- | --- |
-| srenable  | 'no'  | Enable/disable Secure Relay{{< TransferCFT/securerelayname  >}}.  |
+| srenable  | 'no'  | Enable/disable {{< TransferCFT/suitevariablesSecureRelayName  >}}.  |
 | srmapath  | '/home/AXWAY/CFT32X/inst'  | USS directory for Secure Relay Master Agent (/xsr is automatically added). &lt;/p&gt;<br/> <blockquote> **Note**<br/> Read only, you can share the directory with other Transfer CFTs.<br/> </blockquote>  |
-| srmarun  | '/home/AXWAY/CFT32X/runtime/xsr'  | Runtime directory for Secure Relay Master Agent; one per instance, with Read/Write rights for Transfer CFT{{< TransferCFT/componentshortname  >}}.  |
+| srmarun  | '/home/AXWAY/CFT32X/runtime/xsr'  | Runtime directory for Secure Relay Master Agent; one per instance, with Read/Write rights for {{< TransferCFT/axwayvariablesComponentShortName  >}}.  |
 | srmacopo  | 'srmacopo'  | Secure Relay Master Agent communication port.  |
 | srrahost  | 'srrahost'  | Secure Relay Router Agent host.  |
 | srraadpo  | '6810'  | Secure Relay Router Agent administration port.  |
@@ -235,7 +235,7 @@ If you modify the following values, you must un-comment them in the JCL \* CFT$S
 | --- | --- | --- | --- |
 | saml_enable  | no  | Enable SAML as the authentication method for this Transfer CFT (the UCONF am.type=saml).  |   |
 | saml_client_id  | '$(cft.instance_id)'  | Specify the Client_ID value to use as issuer for SAML requests. This should match the Identity Provider configuration.  |   |
-| authserver_host  | ' '  | Specify the SAML endpoint for AuthnRequest (HTTP-Redirect binding).<br/> If Keycloak is the Identity Provider, this should resemble: <code>https://authserver.host/auth/realms/\{realm-name}/protocol/saml. authserver_host ' '</code> | 'https://aa.bb.cc.int:8443'  |
+| authserver_host  | ' '  | Specify the SAML endpoint for AuthnRequest (HTTP-Redirect binding).<br/> If Keycloak is the Identity Provider, this should resemble: <span ><code>https://authserver.host/auth/realms/\{realm-name}/protocol/saml. authserver_host ' '</code></span> | 'https://aa.bb.cc.int:8443'  |
 | saml_idp_signonservice  | ' '  | Specify the SAML endpoint for SignonRequest (HTTP-Redirect binding).<br/> If Keycloak is the Identity Provider, this should resemble:<br/> <code>https://authserver.host/auth/realms/\{realm-name}/protocol/saml.</code><br/> <code>saml_idp_signonservice ' '</code> | '/auth/realms/synapses/protocol/saml'  |
 | saml_idp_logoutservice  | ' '  | Specify the endpoint for SAML LogoutRequest (HTTP-Redirect binding).<br/> If Keycloak is the Identity Provider, this should resemble:<br/> <code>https://authserver.host/auth/realms/\{realm-name}/protocol/saml.</code><br/> <code>saml_idp_logoutservice ' '</code> | '/auth/realms/synapses/protocol/saml'  |
 | saml_idp_certificate_path  | ' '  | Specify the path to the certificate that verifies the SAML Identity Provider server's signatures. This certificate is stored in the internal PKI database.  |   |
@@ -256,7 +256,7 @@ You can customize specific prefixes for the following Transfer CFT files.
 | pfx_log  | '*'  | Log file  |
 | pfx_acc  | '*'  | Account fie  |
 | pfx_sec  | '*'  | Security files  |
-| pfx_uconf  | '*'  | Uconf runtime file (1)  |
+| pfx_uconf  | '*'  | Uconf runtime file <span >(1)</span>  |
 
 
 > **Note**
@@ -267,7 +267,7 @@ You can customize specific prefixes for the following Transfer CFT files.
 
 ## Configure the SGINSTAL using UCONF or A12OPTSP
 
-As of Transfer CFT{{< TransferCFT/componentlongname  >}} 3.2.4 SP2, you are no longer required to submit the JOB A12OPTS to generate the SGINSTAL executable in the LOAD library or the USER.LOAD.
+As of {{< TransferCFT/axwayvariablesComponentLongName  >}} 3.2.4 SP2, you are no longer required to submit the JOB A12OPTS to generate the SGINSTAL executable in the LOAD library or the USER.LOAD.
 
 If the executable is not present in the LOAD library, the default values are used in the executables of Transfer CFT: CFTMAIN, CFTCOPL, CFTUTIL, etc. Additionally, you can configure the SGINSTAL macro parameters as UCONF variables.
 
@@ -311,13 +311,13 @@ For continued compatibility, you can generate the Transfer CFT z/OS options tabl
 | PDSESHARING [ <u>NO</u> | YES]  |  • NO (default) = Do not allow others to write to PDSE in sharing mode.<br/> • YES = Allow simultaneous writing to a PDSE file type. Other intervening applications must also use the shared mode option though for sharing to occur.<br/> <blockquote> **Note**<br/> On a shared SYSPLEX you must customize the following z/OS system parameter, either:<br/> </blockquote> • NORMAL: SYSn.PARMLIB member IGDSMSxx to specify PDSESHARING, or<br/> • EXTENDED: SYSn.PARMLIB member IGDSMSxx to specify PDSESHARING<br/> <blockquote> **Note**<br/> The delivered sample uses the value ‘PDSESHARING=YES’.<br/> </blockquote>  |
 | [ROUTCDE = {Value of the ROUTCODE CODE field of the WTO | n}] | The left bit corresponds to 1. The right bit corresponds to 16. The default value ROUTCDE=X‘0008’ corresponds to ROUTCDE=(13).<br/> This value is used with the ‘OPERMSG’ option of the ‘CFTLOG’ parameter.<br/> For the options DESC and ROUTCE, refer to the IBM document Supervisor services and macros, which explains the use of DESCRIPTOR CODES and ROUTCODES. |
 | [SDSFOPT = { <u>USER</u> | MONITOR | IGNORE}]  | How Transfer CFT processes a MODIFY command issued from SDSF:<br/> • USER (default value): the console name defined in SDSF options is used as the user id issuing the command.<br/> • MONITOR: the USERID associated with the monitor is used.<br/> • IGNORE: MODIFY commands issued from SDSF are ignored.<br/> *See Note. |
-| [SHARECAT = { **YES** | NO | INACT }] |  • YES (default value): The catalog is cached in a common dataspace that is shared with the Copilot user interface, the CFTUTIL utility, and so on. This parameter improves catalog reading, especially from the Copilot user interface, when enabled.<br/> QQQ_QQQ_QQQ_LIST<br/> • If the catalog is full and an extension is created (using either the <code>cft.cftcat.auto_expand_*</code> parameters or <code>RECONFIG TYPE=CAT</code>), new records are stored in the extension and not in the cache. Accessing records in the extension may negatively impact performance.<br/><br/> • Do not use YES when implementing a multi-node architecture.<br/> <br/> • NO: The catalog is cached in a dataspace, but the dataspace is not shared.<br/> • INACT: The catalog is not cached, and no dataspace is created.<br/> NO: The catalog is cached in a dataspace, but the dataspace is not shared.<br/> INACT: The catalog is not cached, and no dataspace is created.<br/> <blockquote> **Note**<br/> When the Transfer CFT is an APF-authorized program (Authorized Program Facility), specify if the catalog dataspace cache is available to be read by other Transfer CFT applications.<br/> </blockquote> <blockquote> **Note**<br/> The delivered sample uses the value ‘SHARECAT=YES’.<br/> </blockquote>  |
+| [SHARECAT = { **YES** | NO | INACT }] |  • YES (default value): The catalog is cached in a common dataspace that is shared with the Copilot user interface, the CFTUTIL utility, and so on. This parameter improves catalog reading, especially from the Copilot user interface, when enabled.<br/> QQQ_QQQ_QQQ_LIST<br/> • If the catalog is full and an extension is created (using either the <span ><code>cft.cftcat.auto_expand_*</code></span> parameters or <span ><code>RECONFIG TYPE=CAT</code></span>), new records are stored in the extension and not in the cache. Accessing records in the extension may negatively impact performance.<br/><br/> • Do not use YES when implementing a multi-node architecture.<br/> <br/> • NO: The catalog is cached in a dataspace, but the dataspace is not shared.<br/> • INACT: The catalog is not cached, and no dataspace is created.<br/> NO: The catalog is cached in a dataspace, but the dataspace is not shared.<br/> INACT: The catalog is not cached, and no dataspace is created.<br/> <blockquote> **Note**<br/> When the Transfer CFT is an APF-authorized program (Authorized Program Facility), specify if the catalog dataspace cache is available to be read by other Transfer CFT applications.<br/> </blockquote> <blockquote> **Note**<br/> The delivered sample uses the value ‘SHARECAT=YES’.<br/> </blockquote>  |
 | [SGTRACE = {0 | n}] {1…65535} | Initial value of the SGTRACE trace file.<br/> A value other than 0 may be used if requested by Transfer CFT customer support.<br/> Possible combinations are:<br/> • 1: Network actions (TCP)<br/> • 2: Erroneous actions<br/> • 4: File manager actions<br/> • 8: Read/write to files<br/> • 16: C functions<br/> • 32: Long messages<br/> • 64: Inter-task communication actions<br/> • 128: Program calls and return messages<br/> • 256: Interactive interface actions<br/> • 512: User exit calls<br/> <blockquote> **Note**<br/> When you use the SGTRACE options with the Transfer CFT interface under VTAM, the non-encrypted passwords are listed in the trace records.<br/> </blockquote>  |
 | [SUBOPT = { 0 | 1 | 3 } ]  | Manages 2 statistic lines for a job submitted by Transfer CFT:<br/> • 0: Default. Generates 2 lines at the end of JCL //* SUBMITTED BY:jobname AT DD/MM/YY hh:mm:ss ,USERID=username ,CARDS= 0000000 // .<br/> • 1: Generates only the statistic line at the end of the JCL and no card ‘//’ //* SUBMITTED BY:jobname AT DD/MM/YY hh:mm:ss ,USERID=username ,CARDS= 0000000 .<br/> • 3: Does not generate a line at the end of the JCL. |
 | [TRACE = { <u>128</u> | n}] {4…16383} | Transfer CFT internal trace size (in Kb). |
 | [TAPE = {NOTSUP | <u>UPDATE</u> | OUTPUT}] |  • NOTSUP: Forbids access to tape files for all Transfer CFT programs.<br/> • UPDATE: Default. Enables writing of tape files protected by means of a retaining date or tape library management software.<br/> • OUPUT: The transfer fails in ABDEND 713 if the tape is write-protected by tape library management software, or an expiration date.<br/> <blockquote> **Note**<br/> The delivered sample uses the value ‘TAPE=OUTPUT’.<br/> </blockquote>  |
 | [TSOEDIT = { <u>NO</u> | YES}] | File support with sequence number in columns 73 to 80:<br/> • YES: If the ISPF editor with the ‘NUMBER ON’ option creates them, then the input files read by CFTUTIL can contain an eight-digit sequence number in columns 73 to 80. This sequence number is then ignored by Transfer CFT z/OS.<br/> • NO: Input files are read without changes from CFTUTIL.<br/> <blockquote> **Note**<br/> The delivered sample uses the value ‘TSOEDIT=YES’.<br/> </blockquote>  |
-| [VSAMSUFS = { <u>SHORT</u> | LONG }]  |  • SHORT: VSAM component suffixes are created with .D for KSDS and ESDS, and .I for KSDS.<br/> • LONG: VSAM component suffixes are created with .DATA for KSDS and ESDS, and .INDEX for KSDS.<br/> Alternatively, you can set this parameter using: <code>UCONFSET ID=cft.mvs.sginstal.vsamsufs,value=x</code> |
+| [VSAMSUFS = { <u>SHORT</u> | LONG }]  |  • SHORT: VSAM component suffixes are created with .D for KSDS and ESDS, and .I for KSDS.<br/> • LONG: VSAM component suffixes are created with .DATA for KSDS and ESDS, and .INDEX for KSDS.<br/> Alternatively, you can set this parameter using: <span ><code>UCONFSET ID=cft.mvs.sginstal.vsamsufs,value=x</code></span> |
 
 
 > **Note**

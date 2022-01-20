@@ -9,7 +9,7 @@ associated with this collection; this list is defined in the CFTDEST command.
 The following illustration displays the relationships
 to be established to perform a collection.
 
-********Define a list
+********<span class="autonumber"></span>Define a list
 of partners********
 
 **![](/Images/TransferCFT/Define_list_of_partner_RECV.gif)**
@@ -22,7 +22,7 @@ of partners********
 
 ### About CFTDEST
 
-The Transfer CFT{{< TransferCFT/componentshortname  >}} object for broadcasting lists, CFTDEST, manages the list of partners for distribution and
+The {{< TransferCFT/axwayvariablesComponentShortName  >}} object for broadcasting lists, CFTDEST, manages the list of partners for distribution and
 collection operations. The list of partners can be described in one of
 the following ways:
 
@@ -34,7 +34,7 @@ the following ways:
 These two methods are mutually exclusive. A partner that you include
 in a list cannot itself be a broadcasting list.
 
-Transfer CFT{{< TransferCFT/componentshortname  >}} creates the following items in the catalog:
+{{< TransferCFT/axwayvariablesComponentShortName  >}} creates the following items in the catalog:
 
 - A generic entry
     associated with the transfer command

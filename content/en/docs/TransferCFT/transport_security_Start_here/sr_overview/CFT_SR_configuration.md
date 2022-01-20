@@ -21,15 +21,15 @@ Follow the installation instructions provided in the [Secure Relay RA Installat
 - `<CACertificate>CA_for_RA.der</CACertificate>`
 - `<UserCertificate>USER_for_RA.p12</UserCertificate>`
 
-You need these values when you configure the Master Agent in the Transfer CFT{{< TransferCFT/componentlongname  >}} configuration, where the user certificate that you use must be signed by `CA_for_RA`. You should use the same CA and USER certificate as for the Master Agent.
+You need these values when you configure the Master Agent in the {{< TransferCFT/axwayvariablesComponentLongName  >}} configuration, where the user certificate that you use must be signed by <span class="code">`CA_for_RA`</span>. You should use the same CA and USER certificate as for the Master Agent.
 
-## Configure the Router Agents in Transfer CFT{{< TransferCFT/componentlongname  >}}
+## Configure the Router Agents in {{< TransferCFT/axwayvariablesComponentLongName  >}}
 
-After completing installation, configure the Router Agents in the Transfer CFT{{< TransferCFT/componentlongname  >}} configuration.
+After completing installation, configure the Router Agents in the {{< TransferCFT/axwayvariablesComponentLongName  >}} configuration.
 
-1. Set the value for the number of Router Agents using the `secure_relay.ra` parameter. Transfer CFT{{< TransferCFT/componentlongname >}} generates a set of `secure_relay.ra.n.*` parameters, where the number, *n*, corresponds to the number of Router Agents you defined in this parameter.
+1. Set the value for the number of Router Agents using the `secure_relay.ra` parameter. {{< TransferCFT/axwayvariablesComponentLongName >}} generates a set of `secure_relay.ra.n.*` parameters, where the number, *n*, corresponds to the number of Router Agents you defined in this parameter.
 1. You can use the default values for most fields, but you must customize the` secure_relay.ra.0.dmz` parameter. This value must be unique; for example, you can increment the DMZ0 value by one for each Router Agent so that the  second Router Agent has the value` secure_relay.ra.0.dmz = DMZ1`.
-1. Configure the host address for each Secure Relay host using `secure_relay.ra.0.host`.
+1. Configure the host address for each Secure Relay host using <span class="code">`secure_relay.ra.0.host`</span>.
 
 ****Example of two Router Agent definitions****
 
@@ -37,8 +37,8 @@ After completing installation, configure the Router Agents in the Transfer CFT{{
 secure_relay.ra = 2
  
 secure_relay.ra.0.enable = yes
-secure_relay.ra.0.dmz = DMZ0
-secure_relay.ra.0.host = @hostF
+secure_relay.ra.0.dmz = <span style="color: #ff4500;">DMZ0</span>
+secure_relay.ra.0.host = <span style="color: #ff4500;">@hostF</span>
 secure_relay.ra.0.admin_port = 6810
 secure_relay.ra.0.comm_port = 6811
 secure_relay.ra.0.nb_data_connections = 5
@@ -46,8 +46,8 @@ secure_relay.ra.0.data_channel_ciphering = No
 secure_relay.ra.0.outcall_network_interface =
  
 secure_relay.ra.1.enable = Yes
-secure_relay.ra.1.dmz = DMZ1
-secure_relay.ra.1.host = @hostG
+secure_relay.ra.1.dmz = <span style="color: #ff4500;">DMZ1</span>
+secure_relay.ra.1.host = <span style="color: #ff4500;">@hostG</span>
 secure_relay.ra.1.admin_port = 6810
 secure_relay.ra.1.comm_port = 6811
 secure_relay.ra.1.nb_data_connections = 5
@@ -55,7 +55,7 @@ secure_relay.ra.1.data_channel_ciphering = No
 secure_relay.ra.1.outcall_network_interface =
 ```
 
-## Configure the Master Agent in Transfer CFT{{< TransferCFT/componentlongname  >}}
+## Configure the Master Agent in {{< TransferCFT/axwayvariablesComponentLongName  >}}
 
 Configure the following UCONF parameters to enable the Master Agent communication with the Router Agent:
 
@@ -65,7 +65,7 @@ Configure the following UCONF parameters to enable the Master Agent communicati
 
 ## Enable Secure Relay and configure the Java
 
-In Transfer CFT{{< TransferCFT/componentlongname  >}} from the CFTUTIL prompt, perform the following commands:
+In {{< TransferCFT/axwayvariablesComponentLongName  >}} from the CFTUTIL prompt, perform the following commands:
 
 1. Enable Secure Relay:  
     ```
@@ -76,7 +76,7 @@ In Transfer CFT{{< TransferCFT/componentlongname  >}} from the CFTUTIL prompt, 
     UCONFSET id=cft.jre.java_binary_path ,value=/bin/java
     ```
 
-## Configure Transfer CFT{{< TransferCFT/componentlongname  >}} objects
+## Configure {{< TransferCFT/axwayvariablesComponentLongName  >}} objects
 
 ### Createa CFTNET object
 
@@ -107,7 +107,7 @@ This section describes the CFTPROT object, and how various parameters are relate
 - CFTPROT is related to the CFTNET object through the NET parameter.
 - The SAP parameter is the listening port that is used on the RA side (using the CFTNET HOST parameter as the network interface).
 
-****Example****
+<span class="bold_in_para">****Example**** </span>
 
 This example uses a CFTNET object called NETSR.
 

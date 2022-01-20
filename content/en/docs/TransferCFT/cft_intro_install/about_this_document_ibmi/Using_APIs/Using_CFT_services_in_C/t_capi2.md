@@ -2,13 +2,13 @@
     "title": "About cftapi2",
     "linkTitle": "About cftapi2",
     "weight": "310"
-}The catalog functions enable you to query and modify the catalog. These functions also include a method to recover information about the Transfer CFT{{< TransferCFT/componentshortname  >}} that is using the catalog.
+}The catalog functions enable you to query and modify the catalog. These functions also include a method to recover information about the {{< TransferCFT/axwayvariablesComponentShortName  >}} that is using the catalog.
 
 Additionally, the API catalog supports 32 character identifiers and 512 character file names.
 
 ## Return code values
 
-The return code values are available in the `cftapi2.h` header file, located in the `Transfer_CFT/home/inc` directory (for UNIX/Windows), in the section *Error code fields*.
+The return code values are available in the <span class="code">`cftapi2.h`</span> header file, located in the <span class="code">`Transfer_CFT/home/inc`</span> directory (for UNIX/Windows), in the section *Error code fields*.
 
 ## Data structure
 
@@ -69,8 +69,8 @@ The programmer can set pointers to these data structures. These are then allocat
 
 | Service | CftApi2Catalog *ipcai2_catalog_open(CftApi2Session * session, char *catalog_fname)  |
 | --- | --- |
-| Definition | Opens the Transfer CFT{{< TransferCFT/componentshortname  >}} catalog file. |
-| Parameter | session: Pointer to the CftApi2Session structure returned by the initialization ipcai2_initialize()<br /> catalog_fname: Name of the catalog file. If the file name is "" the API opens the catalog file by default, for example _CFTCATA for Transfer CFT{{< TransferCFT/componentshortname  >}}UNIX. |
+| Definition | Opens the {{< TransferCFT/axwayvariablesComponentShortName  >}} catalog file. |
+| Parameter | session: Pointer to the CftApi2Session structure returned by the initialization ipcai2_initialize()<br /> catalog_fname: Name of the catalog file. If the file name is "" the API opens the catalog file by default, for example _CFTCATA for {{< TransferCFT/axwayvariablesComponentShortName  >}}UNIX. |
 | Return value | This function returns a pointer to the CftApi2Catalog structure. If the returned value is NULL, the catalog cannot be opened and the error code is returned by calling ipcai2_get_errno(). |
 | Remarks | None |
 
@@ -182,7 +182,7 @@ The programmer can set pointers to these data structures. These are then allocat
 | Definition | Modifies the transfer state for the selected catalog. |
 | Parameter | selection: Pointer to a selection carried out by ipcai2_catalog_selection_next() |
 | Return value | None. |
-| Remarks | The Transfer CFT{{< TransferCFT/componentshortname  >}} API must have already opened the communication medium. |
+| Remarks | The {{< TransferCFT/axwayvariablesComponentShortName  >}} API must have already opened the communication medium. |
 
 
  
@@ -201,7 +201,7 @@ The programmer can set pointers to these data structures. These are then allocat
 
 | Service | long ipcai2_monitor_info_get(CftApi2Catalog *catalog, char *param, char *buffer, int bufflen) |
 | --- | --- |
-| Definition | Recovers information about the Transfer CFT{{< TransferCFT/componentshortname  >}}. |
+| Definition | Recovers information about the {{< TransferCFT/axwayvariablesComponentShortName  >}}. |
 | Parameter | catalog: Pointer to the catalog returned by ipcai2_catalog_open()<br /> param: Parameter to recover. The parameter is available in cftapi2.h under “Monitor information parameters” topic : CFTAPI2_MON_INFO__*<br /> buffer: Buffer that was provided the parameter value .<br /> bufflen: Length of the buffer sent to the API. |
 | Return value | If the return code is positive, it contains the last API error code for the session.<br/> If the return code is negative, the buffer is too short. In this case, the code is equal to –n where n is the required length. |
 | Remarks | None. |
@@ -213,7 +213,7 @@ The heading file cftapi2.h and the commented example source files are delivered 
 
 ****Related topics****
 
-[About Transfer CFT{{< TransferCFT/componentshortname  >}} services in C](../)
+[About {{< TransferCFT/axwayvariablesComponentShortName  >}} services in C](../)
 
 [About application
 programming interfaces](../../../../about_this_document_zos/using_apis)

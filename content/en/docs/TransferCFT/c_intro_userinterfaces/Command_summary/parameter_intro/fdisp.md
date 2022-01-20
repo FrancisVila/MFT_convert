@@ -39,7 +39,7 @@ File sharing option:
 }\]****
 
 Presence check indicator of the receiver file used to determine the
-action of the Transfer CFT{{< TransferCFT/componentshortname  >}}:
+action of the {{< TransferCFT/axwayvariablesComponentShortName  >}}:
 
 - NEW: The file must be created by Transfer
     CFT. The transfer is refused if this file already exists

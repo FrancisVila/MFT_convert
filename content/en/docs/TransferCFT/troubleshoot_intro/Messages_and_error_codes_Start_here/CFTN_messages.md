@@ -14,7 +14,7 @@ Earlier versions of Transfer CFT used a different message format than version 3.
 
 CFTLOG FORMAT=\[V23,V24\]
 
-For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
+For V23: <span class="code">`CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`</span>
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
@@ -47,7 +47,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTN04E"></span>CFTN04E Synchronization error (&amp;str) SSLTID=&amp;pid CR=&amp;cr CS=&amp;scs<br/> CFTN04E Synchronization error (&amp;str) SSLTID=&amp;pid _ CR= &amp;cr CS=&amp;cs |
 | --- | --- |
-| Explanation | Problem with sending an internal Transfer CFT{{< TransferCFT/componentshortname  >}} message to a CFTTSSL task. |
+| Explanation | Problem with sending an internal {{< TransferCFT/axwayvariablesComponentShortName  >}} message to a CFTTSSL task. |
 
 
  
@@ -64,7 +64,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | V23 format<br/> V24 format<br/> Error | <span id="CFTN05E"></span>CFTN05E &amp;message<br/> CFTN05E &amp;message |
 | --- | --- |
 | Explanation | A TCP/IP error related to file transfer operations or resource initialization was detected. The message contains the explanation of the error in plain text. |
-| Consequence  | If the error occurs during the Transfer CFT{{< TransferCFT/componentshortname  >}} initialization phase, this phase is stopped. Otherwise, if the error is related to a file transfer, this transfer will not proceed.  |
+| Consequence  | If the error occurs during the {{< TransferCFT/axwayvariablesComponentShortName  >}} initialization phase, this phase is stopped. Otherwise, if the error is related to a file transfer, this transfer will not proceed.  |
 | Action  | For an error occurring during the initialization phase, check the CFTNET definitions. For an error involving a file transfer, check the CFTPART definitions.  |
 
 

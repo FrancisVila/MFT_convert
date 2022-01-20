@@ -6,7 +6,7 @@
 
 ## Platforms
 
-Transfer CFT{{< TransferCFT/componentshortname  >}} is deployed on the operating systems and browsers listed in this information sheet.
+{{< TransferCFT/axwayvariablesComponentShortName  >}} is deployed on the operating systems and browsers listed in this information sheet.
 
 ### Operating systems for x64
 
@@ -82,11 +82,11 @@ Transfer CFT{{< TransferCFT/componentshortname  >}} is deployed on the operating
 
 ## Java
 
-If you are implementing either TrustedFile{{< TransferCFT/trustedfilename  >}} or Secure Relay{{< TransferCFT/securerelayname  >}} with Transfer CFT{{< TransferCFT/transfercftname  >}}, ensure that you have Java JRE 8 installed.
+If you are implementing either {{< TransferCFT/suitevariablesTrustedFileName  >}} or {{< TransferCFT/suitevariablesSecureRelayName  >}} with {{< TransferCFT/suitevariablesTransferCFTName  >}}, ensure that you have Java JRE 8 installed.
 
 ## Standard defaults
 
-The Internet Assigned Numbers Authority (IANA) reserves the TCP ports 1761-1768 for Transfer CFT{{< TransferCFT/componentshortname  >}}. For more information, refer to: [www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?&page=31).
+The Internet Assigned Numbers Authority (IANA) reserves the TCP ports 1761-1768 for {{< TransferCFT/axwayvariablesComponentShortName  >}}. For more information, refer to: [www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?&page=31).
 
 
 | Component  | Port |
@@ -96,12 +96,12 @@ The Internet Assigned Numbers Authority (IANA) reserves the TCP ports 1761-1768 
 | SFTP  | 1763  |
 | COMS  | 1765  |
 | Copilot  | 1766  |
-| Transfer CFT UI (Copilot) server for Central Governance{{< TransferCFT/centralgovernancename  >}}  | 1767  |
+| Transfer CFT UI (Copilot) server for {{< TransferCFT/suitevariablesCentralGovernanceName  >}}  | 1767  |
 | REST API  | 1768  |
-| Central Governance  | 12553  |
-| Central Governance{{< TransferCFT/centralgovernancename  >}} SSL  | 12554  |
-| Secure Relay{{< TransferCFT/securerelayname  >}} MA<br/> ma.comm_port |  <br/> 6801 |
-| Secure Relay{{< TransferCFT/securerelayname  >}} RA<br/> • ra.comm_port<br/> • ra.admin_port |  <br/> • 6811<br/> • 6810 |
+| {{< TransferCFT/PrimaryCGorUM  >}}  | 12553  |
+| {{< TransferCFT/suitevariablesCentralGovernanceName  >}} SSL  | 12554  |
+| {{< TransferCFT/suitevariablesSecureRelayName  >}} MA<br/> ma.comm_port |  <br/> 6801 |
+| {{< TransferCFT/suitevariablesSecureRelayName  >}} RA<br/> • ra.comm_port<br/> • ra.admin_port |  <br/> • 6811<br/> • 6810 |
 
 
 > **Note**

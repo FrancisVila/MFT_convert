@@ -10,13 +10,13 @@ between heterogeneous systems, irrespective of the network communication
 type. You can use the PeSIT protocol on TCP/IP as well as some
 proprietary communication networks.
 
-In this PeSIT protocol sub-book we'll first review PeSIT features, then discuss how PeSIT works in Transfer CFT, the processes involved in partner interactions, and lastly provide a description of PeSIT PI codes in a Transfer CFT{{< TransferCFT/componentshortname  >}} context.
+In this PeSIT protocol sub-book we'll first review PeSIT features, then discuss how PeSIT works in Transfer CFT, the processes involved in partner interactions, and lastly provide a description of PeSIT PI codes in a {{< TransferCFT/axwayvariablesComponentShortName  >}} context.
 
 <span id="PeSIT"></span>
 
 ## Why use PeSIT?
 
-PeSIT features available for Transfer CFT{{< TransferCFT/componentshortname  >}} include:
+PeSIT features available for {{< TransferCFT/axwayvariablesComponentShortName  >}} include:
 
 - [File
     transmission](#File)
@@ -143,9 +143,9 @@ Message
 transfer which enables the transmission of application messages of arbitrary
 length, or end-to-end response acknowledgment messages.
 
-This operation enables items of relatively small information to be exchanged between the partners. A message is accompanied by a minimum of service information and may, for example, be used to acknowledge the correct processing of a received file. Transfer CFT enables you to transmit 512-character user messages (between two Transfer CFT{{< TransferCFT/componentshortname  >}}s the limit is 4096 characters).
+This operation enables items of relatively small information to be exchanged between the partners. A message is accompanied by a minimum of service information and may, for example, be used to acknowledge the correct processing of a received file. Transfer CFT enables you to transmit 512-character user messages (between two {{< TransferCFT/axwayvariablesComponentShortName  >}}s the limit is 4096 characters).
 
-Additionally, Transfer CFT{{< TransferCFT/componentshortname  >}} provides negative acknowledgment capabilities.
+Additionally, {{< TransferCFT/axwayvariablesComponentShortName  >}} provides negative acknowledgment capabilities.
 
 <span id="Store-an"></span>
 

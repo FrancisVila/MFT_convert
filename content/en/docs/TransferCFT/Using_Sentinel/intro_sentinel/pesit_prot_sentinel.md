@@ -14,7 +14,7 @@
 ## Monitoring errors
 
 
-| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{< TransferCFT/componentshortname  >}} |
+| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{< TransferCFT/axwayvariablesComponentShortName  >}} |
 | --- | --- | --- | --- | --- |
 | IsException<br/>  | Integer<br/>  |   | Values:<br/> • 0: The relevant Tracked-Event Message does not describe an exception.<br/> • 1: The relevant Tracked-Event Message describes one or more exceptions. | Not used |
 | IsAlert<br/>  | Integer<br/>  |   | Values:<br/> • 0: No alert is associated with the relevant Tracked-Event Message.<br/> • 1: The relevant Tracked-Event Message is associated with a processing exception that generated an alert. | IsAlert |
@@ -27,12 +27,12 @@
 ## Monitoring tracked-event messages
 
 
-| Sentinel<br/> attribute | Data type | Length | Description | Name in Transfer CFT{{< TransferCFT/componentshortname  >}} |
+| Sentinel<br/> attribute | Data type | Length | Description | Name in {{< TransferCFT/axwayvariablesComponentShortName  >}} |
 | --- | --- | --- | --- | --- |
 | GMTDiff | Int. |   | Positive or negative difference between the GMT (Greenwich Mean Time) and the local time, expressed in minutes. | uconf:sentinel.trkgmtdiff |
 | ProductName | String | 50 | Name of the product that generated the relevant Tracked-Event. For customer applications this name is defined via the Universal Agent. | uconf: sentinel.trkproductname |
 | ProductIPAddr | String | 20 | Domain Name Server (DNS) of the product/application that generated the relevant Tracked Event. | uconf: sentinel.trkproductipaddr |
-| ProductOS | String. | 20 | Operating system of the application that generated the relevant Tracked Event. | Transfer CFT{{< TransferCFT/componentshortname  >}} target |
+| ProductOS | String. | 20 | Operating system of the application that generated the relevant Tracked Event. | {{< TransferCFT/axwayvariablesComponentShortName  >}} target |
 | State | String | 29 | Status of the relevant Tracked Event. The possible values of this attribute depend on the tracked application/product and file transfer protocol used. See <a href="#List" >List of Sentinel states</a> . | PHASE/PHASESTEP combination |
 
 
@@ -41,7 +41,7 @@
 ## Monitoring processing cycles
 
 
-| Sentinel<br/> attribute | Data Type | Length | Description | Name in<br/> Transfer CFT{{< TransferCFT/componentshortname  >}} |
+| Sentinel<br/> attribute | Data Type | Length | Description | Name in<br/> {{< TransferCFT/axwayvariablesComponentShortName  >}} |
 | --- | --- | --- | --- | --- |
 | CycleId | String | 250 | CycleId of the relevant Tracked Event. | TRKR |
 | IsEnd | Int. |   | Values:<br/> • 0: The relevant Processing Cycle is not complete.<br/> • 1 : The relevant Processing Cycle is complete. | IsEnd set to 1 when PHASE=X |
@@ -77,7 +77,7 @@ In the XFBTransfer Tracked Object, the Attributes ‘Direction” and “IsServe
 | RECEIVED | RECEIVED | 0 | 0 | 0 | File data transmission ended |
 | TO_ROUTE | TO_ROUTE | 0 | 0 | 0 | Received file to be routed (only on the relay site in store and forward mode) |
 | POST_PROC | RECEIVED | 0 | 0 | 0 | Post processing in progress |
-| POST_PROC_ABORT | RECEIVED | 0 | 1 | 1 | Post processing aborted by the application (KEEP command) |
+| POST_PROC_ABORT | RECEIVED | 0 | 1 | 1 | <span >Post processing aborted by the application (KEEP command)</span> |
 | ACK_EXPECTED | RECEIVED | 0 | 0 | 0 | Waiting for a local acknowledgement |
 | ACKED | ACKED | 1 | 0 | 0 | Transfer locally acknowledged by the application |
 | POST_PROC_ACK_ABORT | RECEIVED/ACKED/NACKED | 0 | 1 | 1 | Post processing of the Acknowledgement phase aborted by the application (KEEP command) |
@@ -93,7 +93,7 @@ In the XFBTransfer Tracked Object, the Attributes ‘Direction” and “IsServe
 | AVAILABLE | AVAILABLE | 0 | 0 | 0 | Transfer available |
 | SENDING | SENDING | 0 | 0 | 0 | File data transmission in progress |
 | CANCELED | CANCELED | 0 | 1 | 1 | File data transmission locally canceled (KEEP command) |
-| SUSPENDED | SUSPENDED | 0 | 0 | 1 | File data transmission locally suspended (HALT command) |
+| SUSPENDED | SUSPENDED | 0 | 0 | 1 | <span >File data transmission locally suspended (HALT command)</span> |
 | INTERRUPTED | INTERRUPTED | 0 | 1 | 1 | File data transmission remotely suspended |
 | SENT | SENT | 0 | 0 | 0 | File data transmission ended |
 | POST_PROC | SENT | 0 | 0 | 0 | Post processing in progress |
@@ -137,7 +137,7 @@ In the XFBTransfer Tracked Object, the Attributes ‘Direction” and “IsServe
 | INTERRUPTED | INTERRUPTED | 0 | 1 | 1 | File data transmission remotely suspended |
 | SENT | SENT | 0 | 0 | 0 | File data transmission ended |
 | POST_PROC | SENT | 0 | 0 | 0 | Post-processing in progress |
-| POST_PROC_ABORT | SENT | 0 | 1 | 1 | Post-processing aborted by the application (KEEP command) |
+| POST_PROC_ABORT | SENT | 0 | 1 | 1 | <span >Post-processing aborted by the application (KEEP command)</span> |
 | ACK_EXPECTED | SENT | 0 | 0 | 0 | Waiting for a remote acknowledgement |
 | ENDED_TO_ACK | ENDED_TO_ACK | 0 (ack expected)/1 | 0 | 0 | Transfer remotely acknowledged |
 | POST_PROC_ACK_ABORT | SENT/ENDED_TO_ACK/ENDED_TO_NACK | 0 | 1 | 1 | Post-processing of the Acknowledgement phase aborted by the application (KEEP command) |

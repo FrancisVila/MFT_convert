@@ -16,9 +16,9 @@ DISPLAY command redirects the message.
 
 ****PeSIT****
 
-You can extract Transfer CFT{{< TransferCFT/componentshortname  >}} messages from the catalog file, and forward these messages to a specified file using the DISPLAY fout parameter.
+You can extract {{< TransferCFT/axwayvariablesComponentShortName  >}} messages from the catalog file, and forward these messages to a specified file using the DISPLAY fout parameter.
 
-The message length for PeSIT ANY profile, when forwarding a message from oneTransfer CFT{{< TransferCFT/componentlongname  >}} to another, is 4096 bytes. The S/RRUSIZE must be greater than the maximum message length and message information combined (for example, 4127).
+The message length for PeSIT ANY profile, when forwarding a message from one{{< TransferCFT/axwayvariablesComponentLongName  >}} to another, is 4096 bytes. The S/RRUSIZE must be greater than the maximum message length and message information combined (for example, 4127).
 
 LISTUCONF CONTENT=EXTRACT, <a href="#" class="selected">FOUT</a>=out extracts the UCONF (unified configuration).
 

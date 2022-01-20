@@ -2,7 +2,7 @@
     "title": "Synchronous  communication services",
     "linkTitle": "Synchronous communication services in C",
     "weight": "350"
-}This topic describes Transfer CFT{{< TransferCFT/componentshortname  >}} synchronous communication services.
+}This topic describes {{< TransferCFT/axwayvariablesComponentShortName  >}} synchronous communication services.
 
 ## Description of functions
 

@@ -55,42 +55,42 @@ Refer to the programming examples, RPG COPY clauses, and procedures, which are s
 
 ## Creating an API application
 
-The `TCPPARAM` configuration sample is located in `CFTPROD/UTIN`.
+The <span class="code">`TCPPARAM`</span> configuration sample is located in <span class="code">`CFTPROD/UTIN`</span>.
 
 ## Application components
 
-The `<installdir>/runtime/src/capi `subdirectory contains the:
+The <span class="code">`<installdir>/runtime/src/capi `</span>subdirectory contains the:
 
 - Sample source module,
-    called `apixmp1.c,` which interacts with Transfer CFT{{< TransferCFT/componentshortname >}}. This program
-    reads the Transfer CFT{{< TransferCFT/componentshortname >}} catalog and displays its contents in part or in
+    called <span class="code">`apixmp1.c,`</span> which interacts with {{< TransferCFT/axwayvariablesComponentShortName >}}. This program
+    reads the {{< TransferCFT/axwayvariablesComponentShortName >}} catalog and displays its contents in part or in
     full, depending on the restrictions set in the command line.
-- `makefile`
-    compilation procedure, which uses the` apixmp1.c `sample source module
+- <span class="code">`makefile`</span>
+    compilation procedure, which uses the<span class="code">` apixmp1.c `</span>sample source module
     to generate the APIXMPI executable file.
 
-The `CFTPGM `library subdirectory contains the `libapisrv1.srvpgm`
-module required to use Transfer CFT{{< TransferCFT/componentshortname  >}} APIs.
+The <span class="code">`CFTPGM `</span>library subdirectory contains the <span class="code">`libapisrv1.srvpgm`</span>
+module required to use {{< TransferCFT/axwayvariablesComponentShortName  >}} APIs.
 
 ## Generating the application
 
 To generate the *`APIXMP1`* sample program:
 
-1. Access the `<installdir>/runtime/src/capi `directory.
-1. Enter the command:  `gmake`
+1. Access the <span class="code">`<installdir>/runtime/src/capi `</span>directory.
+1. Enter the command:  <span class="code">`gmake`</span>
 
 ## Testing the configuration
 
 To test the configuration:
 
 1. Connect to the IBM session with your Transfer CFT user.
-1. Generate the Transfer CFT{{< TransferCFT/componentshortname >}} internal datafiles
-    using `cftinit` with the configuration file:  
+1. Generate the {{< TransferCFT/axwayvariablesComponentShortName >}} internal datafiles
+    using <span class="code">`cftinit`</span> with the configuration file:  
     CALL PGM(CFTINIT) PARM('CFTPROD/UTIN(TCPPARAM)')
-1. When the` cftinit complete`
-    message is displayed, run Transfer CFT{{< TransferCFT/componentshortname >}} using the command:  
+1. When the<span class="code">` cftinit complete`</span>
+    message is displayed, run {{< TransferCFT/axwayvariablesComponentShortName >}} using the command:  
     cftstart
-1. When the `CFTMAIN process   ID is xxxxx `message is displayed, perform a transfer:  
+1. When the <span class="code">`CFTMAIN process   ID is xxxxx `</span>message is displayed, perform a transfer:  
     CALL PGM(CFTUTIL) PARM(SEND 'part=boston,idf=txt')
 1. Check that the transfer is
     complete:  
@@ -100,12 +100,12 @@ To test the configuration:
 1. Run the sample program on NATIF environment:  
     CALL PGM(APIXMP1)
 
-****Results****
+<span class="bold_in_para">****Results****</span>
 
 The result should correspond to the catalog contents:
 
 > `PART=NEW YORK, IDT=<dynamic identifier>,IDF=TXTPART=BOSTON ,IDT=<dynamic identifier>,IDF=TXTAPIXMP1 _ 2 record(s) found`
 
-Stop Transfer CFT{{< TransferCFT/componentshortname  >}}:
+Stop {{< TransferCFT/axwayvariablesComponentShortName  >}}:
 
 `     cftstop`

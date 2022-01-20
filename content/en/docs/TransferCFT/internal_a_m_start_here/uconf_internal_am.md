@@ -2,7 +2,7 @@
     "title": "Internal access management",
     "linkTitle": "Internal access management",
     "weight": "160"
-}This section describes how to configure Internal AM, which is a type of access management that you can use with or without Central Governance or Flow Manager{{< TransferCFT/flowmanager  >}} governance.
+}This section describes how to configure Internal AM, which is a type of access management that you can use with or without {{< TransferCFT/PrimaryCGorUM  >}} or {{< TransferCFT/suitevariablesFlowManager  >}} governance.
 
 Internal access management is an out-of-the-box access management based on predefined roles and privileges, and a group internal datafile. Groups and their members are defined in this supplied database. Note however that when using this type of access management, there is no super user and the user who installed and starts the Transfer CFT Copilot server must have Administrator rights. <span id="security_base"></span>
 
@@ -18,7 +18,7 @@ Additionally you can:
 
 - **Custom**: Create new roles
 
-Please refer to the [*Transfer CFT *3.9**{{< TransferCFT/releasenumber  >}} *Security Guide*](https://docs.axway.com/bundle/TransferCFT_36_SecurityGuide_allOS_en_HTML5/page/Content/security_guide/predefined_privileges.htm) for a complete list of privileges and roles. Login is required. Additionally, the <a href="" class="MCXref xref"> </a> page describes three use cases and their configuration.
+Please refer to the [*Transfer CFT *{{< TransferCFT/axwayvariablesReleaseNumber  >}} *Security Guide*](https://docs.axway.com/bundle/TransferCFT_36_SecurityGuide_allOS_en_HTML5/page/Content/security_guide/predefined_privileges.htm) for a complete list of privileges and roles. Login is required. Additionally, the <a href="" class="MCXref xref"> </a> page describes three use cases and their configuration.
 
 ## Configuring internal access management
 
@@ -26,7 +26,7 @@ Set the specific group database parameter (see the table below for OS specifics
 
 `uconfset id=am.internal.group_database,value=[ system | safClass | file | xfbadm  ]`
 
-Use the parameters and descriptions in the ****AM Parameters**** table (just below Step 3) to help you customize the internal access management roles. For example, to assign the administrator role to the "admin" group:
+Use the parameters and descriptions in the <span class="bold_in_para">****AM Parameters****</span> table (just below Step 3) to help you customize the internal access management roles. For example, to assign the administrator role to the "admin" group:
 
 
 | AM Parameters  | Default  | Description  |
@@ -51,7 +51,7 @@ Set the access management type:
 
 ## Mapping the group to predefined roles
 
-To use the feature you will need to map the list of groups in the database to the Transfer CFT{{< TransferCFT/componentshortname  >}} predefined roles. Use the following information as a basis for your mapping. You can enter these values either using command line or in the Transfer CFT{{< TransferCFT/componentshortname  >}} UI.
+To use the feature you will need to map the list of groups in the database to the {{< TransferCFT/axwayvariablesComponentShortName  >}} predefined roles. Use the following information as a basis for your mapping. You can enter these values either using command line or in the {{< TransferCFT/axwayvariablesComponentShortName  >}} UI.
 
 
 | Parameter  | Means the user in this group will have the role...  |
@@ -65,7 +65,7 @@ To use the feature you will need to map the list of groups in the database to th
 
 ## Creating or modifying roles
 
-In addition to the out-of-the box roles, you can create new roles or modify existing roles using either the Transfer CFT{{< TransferCFT/transfercftname  >}} user interface or a Transfer CFT{{< TransferCFT/transfercftname  >}} configuration file. You can use new or modified roles on their own or in combination with predefined roles. Please refer to <a href="" class="MCXref xref"> </a> for role-based use case scenarios.
+In addition to the out-of-the box roles, you can create new roles or modify existing roles using either the {{< TransferCFT/suitevariablesTransferCFTName  >}} user interface or a {{< TransferCFT/suitevariablesTransferCFTName  >}} configuration file. You can use new or modified roles on their own or in combination with predefined roles. Please refer to <a href="" class="MCXref xref"> </a> for role-based use case scenarios.
 
 > **Note**
 >
@@ -73,11 +73,11 @@ In addition to the out-of-the box roles, you can create new roles or modify exis
 
 ### Using the configuration file
 
-You can add, remove, or modify roles or privileges in the `role-smp.conf` sample file delivered in `runtime/conf/` directory. After adding or modifying a role or privilege, you must interpret the configuration file.
+You can add, remove, or modify roles or privileges in the <span class="code">`role-smp.conf`</span> sample file delivered in <span class="code">`runtime/conf/`</span> directory. After adding or modifying a role or privilege, you must interpret the configuration file.
 
 ### Using the user interface
 
-In the Transfer CFT{{< TransferCFT/transfercftname  >}} UI, access the General Configuration pane and select either **Privileges** or **Roles**. Options include creating, deleting, modifying, or cloning a role or privilege.
+In the {{< TransferCFT/suitevariablesTransferCFTName  >}} UI, access the General Configuration pane and select either **Privileges** or **Roles**. Options include creating, deleting, modifying, or cloning a role or privilege.
 
  
 
@@ -156,7 +156,7 @@ D am.internal.role.designer =
 D am.internal.role.application =
 ```
 
-Modify the `conf/roles-smp.conf` sample file:
+Modify the <span class="code">`conf/roles-smp.conf`</span> sample file:
 
 ```
 CFTROLE ID = 'TRANSFER CFT ADMINISTRATOR',
@@ -212,7 +212,7 @@ ROLE TRANSFER CFT HELPDESK
 ROLE TRANSFER CFT PARTNERMANAGER
 ```
 
-Modify the `conf/roles-smp.conf` sample file:
+Modify the <span class="code">`conf/roles-smp.conf`</span> sample file:
 
 ```
 CFTROLE ID = 'TRANSFER CFT APPLICATION',

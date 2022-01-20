@@ -13,7 +13,7 @@ of correctly terminated transfers. See also the parameter list
 Two recording modes are available:
 
 - Recording data
-    in Transfer CFT{{< TransferCFT/componentshortname >}} files. When the primary file is full, Transfer CFT{{< TransferCFT/componentshortname >}}
+    in {{< TransferCFT/axwayvariablesComponentShortName >}} files. When the primary file is full, {{< TransferCFT/axwayvariablesComponentShortName >}}
     switches to an alternate file. This mode is available on all operating
     systems.
 - Recording data
@@ -32,12 +32,12 @@ for correctly terminated transfers, that is transfers that are in the
 T or X state. This command is taken into account when the ACCNT parameter
 of the CFTPARM command is defined.
 
-Transfer CFT{{< TransferCFT/componentshortname  >}} authorizes only one identifier of the CFTACCNT type.
+{{< TransferCFT/axwayvariablesComponentShortName  >}} authorizes only one identifier of the CFTACCNT type.
 
 Two recording modes can be used, depending on the system:
 
 - Recording of data
-    in Transfer CFT{{< TransferCFT/componentshortname >}} files. In this case, the CFTACCNT command defines the names of the files receiving
+    in {{< TransferCFT/axwayvariablesComponentShortName >}} files. In this case, the CFTACCNT command defines the names of the files receiving
     the data and their management (parameter setting TYPE = FILE). This mode
     is available on ALL SYSTEMS.
 
@@ -49,7 +49,7 @@ Two recording modes can be used, depending on the system:
     mode is only available on z/OS (MVS) systems.
 
 For more information on the TYPE parameter in the statistical recording
-mode, see [Recording mode TYPE](#Recordin). For each terminated transfer, Transfer CFT{{< TransferCFT/componentshortname  >}} records the information
+mode, see [Recording mode TYPE](#Recordin). For each terminated transfer, {{< TransferCFT/axwayvariablesComponentShortName  >}} records the information
 contained in the following table.
 
 ****CFTACCNT list of headings****
@@ -84,7 +84,7 @@ contained in the following table.
 | File (FRECFM)  | 542  | 234  |
 | Protocol compression code (NCOMP)  | 543  | 235  |
 | Name of the file sent (FNAME)  | 546  | 238  |
-| Transfer CFT{{< TransferCFT/componentshortname  >}} private parameter (PARM)  | 1059  | 303  |
+| {{< TransferCFT/axwayvariablesComponentShortName  >}} private parameter (PARM)  | 1059  | 303  |
 | Sender application identifier (SAPPL)  | 1572  | 384  |
 | Receiver application identifier (RAPPL)  | 1621  | 433  |
 | Partner group (GROUP)  | 1670  | 482 (*)  |
@@ -122,23 +122,23 @@ in the CFTACCNT object, you must define the following parameters as well.
 - maxrec
 - switch
 
-The Transfer CFT{{< TransferCFT/componentshortname  >}} statistical
+The {{< TransferCFT/axwayvariablesComponentShortName  >}} statistical
 file is full when the maximum number of records, the MAXREC parameter,
-is reached. When this happens, the Transfer CFT{{< TransferCFT/componentshortname  >}} switches to an alternate
+is reached. When this happens, the {{< TransferCFT/axwayvariablesComponentShortName  >}} switches to an alternate
 file and executes the procedure defined by the EXEC parameter.
 
 The SWITCH operating command also allows the operator to manually switch
 the statistical file on request.
 
-Transfer CFT{{< TransferCFT/componentshortname  >}} requires at least 1 empty statistical file at the time
+{{< TransferCFT/axwayvariablesComponentShortName  >}} requires at least 1 empty statistical file at the time
 it is activated. If the first file designated by FNAME is not empty, Transfer
 CFT switches to the second file labeled AFNAME. The procedure associated
 with the switching can regenerate an empty file.
 
-The statistical files must be created before the Transfer CFT{{< TransferCFT/componentshortname  >}} is activated.
+The statistical files must be created before the {{< TransferCFT/axwayvariablesComponentShortName  >}} is activated.
 This operation is performed in the command CFTFILE TYPE = ACCNT.
 
-When you shut down Transfer CFT{{< TransferCFT/componentshortname  >}}, using the SHUT command, Transfer CFT{{< TransferCFT/componentshortname  >}}
+When you shut down {{< TransferCFT/axwayvariablesComponentShortName  >}}, using the SHUT command, {{< TransferCFT/axwayvariablesComponentShortName  >}}
 executes the switching procedure to empty the last statistical file in
 process.
 
@@ -152,12 +152,12 @@ in the CFTACCNT object, you must define the ACCID
 parameter as well.
 
 The CFTACCNT command references
-the Transfer CFT{{< TransferCFT/componentshortname  >}} application via the utility.
+the {{< TransferCFT/axwayvariablesComponentShortName  >}} application via the utility.
 
 
 | Protocol  | Details  |
 | --- | --- |
-| z/OS (MVS) | The ACCID parameter identifying the Transfer CFT{{< TransferCFT/componentshortname  >}} application must be defined. |
+| z/OS (MVS) | The ACCID parameter identifying the {{< TransferCFT/axwayvariablesComponentShortName  >}} application must be defined. |
 
 
 Syntax

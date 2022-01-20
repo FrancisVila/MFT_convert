@@ -14,7 +14,7 @@ Earlier versions of Transfer CFT used a different message format than version 3.
 
 CFTLOG FORMAT=\[V23,V24\]
 
-For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
+For V23: <span class="code">`CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`</span>
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
@@ -29,7 +29,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Fatal | <span id="CFTI01F"></span>CFTI01F &amp;str <br/> CFTI01F &amp;str  |
 | --- | --- |
-| Explanation | Internal Transfer CFT{{< TransferCFT/componentshortname  >}} execution error.<br/> The field "&amp;str" can have the following values:<br/> • CFT error &amp;scs:Transfer CFT{{< TransferCFT/componentshortname  >}} inter-task communication system problem (waiting for the CFTMAIN scheduler task queue)<br/> • CFT error _ usage expired:The Transfer CFT{{< TransferCFT/componentshortname  >}} user key (CFTPARM KEY) does not authorize Transfer CFT{{< TransferCFT/componentshortname  >}} execution beyond the expired period<br/> • CFT error _ CFT usage not authorized:The Transfer CFT{{< TransferCFT/componentshortname  >}} user key (CFTPARM KEY) does not authorize Transfer CFT{{< TransferCFT/componentshortname  >}} execution on this operating system or computer<br/> • CFT error _ file keys not available: The Transfer CFT{{< TransferCFT/componentshortname  >}} user keys are stored in an indirection file (CFTPARM KEY parameter); this file cannot be accessed by Transfer CFT{{< TransferCFT/componentshortname  >}}<br/> • CFT error &amp;scs _ Common_area allocation failed:Definition of the memory area common to the Transfer CFT{{< TransferCFT/componentshortname  >}} tasks has failed. This can be caused by insufficient memory<br/> • CFT error &amp;scs _ Mailbox definition failed: Transfer CFT{{< TransferCFT/componentshortname  >}} is unable to link to a mailbox defined by the *CFTOM command<br/> • CFT error &amp;scs _ CFT semaphore definition failed:Transfer CFT{{< TransferCFT/componentshortname  >}} is unable to define an inter-task communications queue<br/> • CFT error _ CFTEXIT ID=&amp;id missing: A Transfer CFT{{< TransferCFT/componentshortname  >}} task dedicated to file EXITs could not be activated (the CFTEXIT command relating to the identifier mentioned (ID) was not found)<br/> • CFT error _ Maximum process CFTEXIT running reached: A Transfer CFT{{< TransferCFT/componentshortname  >}} task dedicated to file EXITs could not be activated (the maximum number of EXIT processes that can be activated has already been reached)<br/> • CFT error &amp;cs _ Initializing process CFTEXIT: A Transfer CFT{{< TransferCFT/componentshortname  >}} task dedicated to file EXITs could not be activated (the maximum number of EXIT processes that can be activated has already been reached)<br/> • CFT error _ &amp;Net Network Access Method Option not authorized by license key:The Transfer CFT{{< TransferCFT/componentshortname  >}} is NOT authorized to use the optional network access method designated by &amp;Net (TCP/IP).<br/> • CFT error _ SSL Protocol Option not authorized by license key:A protocol defined in the CFTPARM object uses the SSL option, but the SSL option is not available with this license key.<br/> • CFT error _ FIPS Compliance Option not authorized by license key:The uconf:cft.fips.enable_compliance parameter is set to Yes, but the FIPS option is not available with this license key.<br/> • CFT error _ File Transfer Acceleration Option not authorized by license key:The uconf:acceleration.enable parameter is set to Yes, but the acceleration option is not available with this license key. |
+| Explanation | Internal {{< TransferCFT/axwayvariablesComponentShortName  >}} execution error.<br/> The field "&amp;str" can have the following values:<br/> • CFT error &amp;scs:{{< TransferCFT/axwayvariablesComponentShortName  >}} inter-task communication system problem (waiting for the CFTMAIN scheduler task queue)<br/> • CFT error _ usage expired:The {{< TransferCFT/axwayvariablesComponentShortName  >}} user key (CFTPARM KEY) does not authorize {{< TransferCFT/axwayvariablesComponentShortName  >}} execution beyond the expired period<br/> • CFT error _ CFT usage not authorized:The {{< TransferCFT/axwayvariablesComponentShortName  >}} user key (CFTPARM KEY) does not authorize {{< TransferCFT/axwayvariablesComponentShortName  >}} execution on this operating system or computer<br/> • CFT error _ file keys not available: The {{< TransferCFT/axwayvariablesComponentShortName  >}} user keys are stored in an indirection file (CFTPARM KEY parameter); this file cannot be accessed by {{< TransferCFT/axwayvariablesComponentShortName  >}}<br/> • CFT error &amp;scs _ Common_area allocation failed:Definition of the memory area common to the {{< TransferCFT/axwayvariablesComponentShortName  >}} tasks has failed. This can be caused by insufficient memory<br/> • CFT error &amp;scs _ Mailbox definition failed: {{< TransferCFT/axwayvariablesComponentShortName  >}} is unable to link to a mailbox defined by the *CFTOM command<br/> • CFT error &amp;scs _ CFT semaphore definition failed:{{< TransferCFT/axwayvariablesComponentShortName  >}} is unable to define an inter-task communications queue<br/> • CFT error _ CFTEXIT ID=&amp;id missing: A {{< TransferCFT/axwayvariablesComponentShortName  >}} task dedicated to file EXITs could not be activated (the CFTEXIT command relating to the identifier mentioned (ID) was not found)<br/> • CFT error _ Maximum process CFTEXIT running reached: A {{< TransferCFT/axwayvariablesComponentShortName  >}} task dedicated to file EXITs could not be activated (the maximum number of EXIT processes that can be activated has already been reached)<br/> • CFT error &amp;cs _ Initializing process CFTEXIT: A {{< TransferCFT/axwayvariablesComponentShortName  >}} task dedicated to file EXITs could not be activated (the maximum number of EXIT processes that can be activated has already been reached)<br/> • CFT error _ &amp;Net Network Access Method Option not authorized by license key:The {{< TransferCFT/axwayvariablesComponentShortName  >}} is NOT authorized to use the optional network access method designated by &amp;Net (TCP/IP).<br/> • CFT error _ SSL Protocol Option not authorized by license key:A protocol defined in the CFTPARM object uses the SSL option, but the SSL option is not available with this license key.<br/> • CFT error _ FIPS Compliance Option not authorized by license key:The uconf:cft.fips.enable_compliance parameter is set to Yes, but the FIPS option is not available with this license key.<br/> • CFT error _ File Transfer Acceleration Option not authorized by license key:The uconf:acceleration.enable parameter is set to Yes, but the acceleration option is not available with this license key. |
 | Consequence | The transfer concerned by the incident is interrupted, which is the K status. |
 | Action | Check parameter settings, analyze the &amp;cs code value to determine, if necessary, the origin of the error:<br/> • CFT error &amp;scs _ LOG stop failed: The message logging task cannot be stopped<br/> • CFT error &amp;scs _ mailbox delete failed: A mailbox defined by a CFTCOM command cannot be deleted |
 | Consequence | The Transfer CFT initialization phase has stopped. |
@@ -41,8 +41,8 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTI01W"></span>CFTI01W &amp;str<br/> CFTI01W &amp;str  |
 | --- | --- |
-| Explanation | CFT error &amp;scs _ Initializing process CFTTFIL: A Transfer CFT{{< TransferCFT/componentshortname  >}} task dedicated to transfer file access could not be activated. |
-| Consequence  | Transfer CFT{{< TransferCFT/componentshortname  >}} is not stopped, and transfers are not interrupted.  |
+| Explanation | CFT error &amp;scs _ Initializing process CFTTFIL: A {{< TransferCFT/axwayvariablesComponentShortName  >}} task dedicated to transfer file access could not be activated. |
+| Consequence  | {{< TransferCFT/axwayvariablesComponentShortName  >}} is not stopped, and transfers are not interrupted.  |
 | Action | No action necessary. |
 
 
@@ -51,9 +51,9 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Fatal | <span id="CFTI02F"></span>CFTI02F Init Error code &amp;scs _ Allocating param. file &amp;fname<br/> CFTI02F Init Error code &amp;scs _ Allocating param. file &amp;fname |
 | --- | --- |
-| Explanation | During Transfer CFT{{< TransferCFT/componentshortname  >}} initialization an error was detected when allocating the Transfer CFT{{< TransferCFT/componentshortname  >}} parameter file. |
+| Explanation | During {{< TransferCFT/axwayvariablesComponentShortName  >}} initialization an error was detected when allocating the {{< TransferCFT/axwayvariablesComponentShortName  >}} parameter file. |
 | Consequence | The Transfer CFT initialization phase has stopped. |
-| Action | Check that the file is not already allocated; if it exists, correct the error and then restart Transfer CFT{{< TransferCFT/componentshortname  >}}. |
+| Action | Check that the file is not already allocated; if it exists, correct the error and then restart {{< TransferCFT/axwayvariablesComponentShortName  >}}. |
 
 
  
@@ -61,9 +61,9 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI03F"></span>CFTI03F Init Error code &amp;scs _ Opening param. file &amp;fname<br/> CFTI03F Init Error code &amp;scs _ Opening param. file &amp;fname |
 | --- | --- |
-| Explanation | During Transfer CFT{{< TransferCFT/componentshortname  >}} initialization an error was detected when opening the Transfer CFT{{< TransferCFT/componentshortname  >}} parameter file. |
+| Explanation | During {{< TransferCFT/axwayvariablesComponentShortName  >}} initialization an error was detected when opening the {{< TransferCFT/axwayvariablesComponentShortName  >}} parameter file. |
 | Consequence | The Transfer CFT initialization phase has stopped. |
-| Action | Correct the error and then restart Transfer CFT{{< TransferCFT/componentshortname  >}}. |
+| Action | Correct the error and then restart {{< TransferCFT/axwayvariablesComponentShortName  >}}. |
 
 
  
@@ -71,9 +71,9 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI04F"></span>CFTI04F Init Error code &amp;scs _ Allocating partners file &amp;fname<br/> CFTI04F Init Error code &amp;scs _ Allocating partners file &amp;fname |
 | --- | --- |
-| Explanation | During Transfer CFT{{< TransferCFT/componentshortname  >}} initialization an error was detected when allocating the Transfer CFT{{< TransferCFT/componentshortname  >}} partner file. |
+| Explanation | During {{< TransferCFT/axwayvariablesComponentShortName  >}} initialization an error was detected when allocating the {{< TransferCFT/axwayvariablesComponentShortName  >}} partner file. |
 | Consequence | The Transfer CFT initialization phase has stopped. |
-| Action | Check that the file is not already allocated, correct the error and then restart Transfer CFT{{< TransferCFT/componentshortname  >}}. |
+| Action | Check that the file is not already allocated, correct the error and then restart {{< TransferCFT/axwayvariablesComponentShortName  >}}. |
 
 
  
@@ -81,9 +81,9 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI05F"></span>CFTI05F Init Error code &amp;scs _ Opening partners file &amp;fname<br/> CFTI05F Init Error code &amp;scs _ Opening partners file &amp;fname |
 | --- | --- |
-| Explanation | During Transfer CFT{{< TransferCFT/componentshortname  >}} initialization an error was detected when opening the Transfer CFT{{< TransferCFT/componentshortname  >}} partner file. |
+| Explanation | During {{< TransferCFT/axwayvariablesComponentShortName  >}} initialization an error was detected when opening the {{< TransferCFT/axwayvariablesComponentShortName  >}} partner file. |
 | Consequence | The Transfer CFT initialization phase has stopped. |
-| Action | Correct the error and then restart Transfer CFT{{< TransferCFT/componentshortname  >}}. |
+| Action | Correct the error and then restart {{< TransferCFT/axwayvariablesComponentShortName  >}}. |
 
 
  
@@ -91,9 +91,9 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI06F"></span>CFTI06F Init Error code &amp;scs _ Allocating catalog file &amp;fname<br/> CFTI06F Init Error code &amp;scs _ Allocating catalog file &amp;fname |
 | --- | --- |
-| Explanation | During Transfer CFT{{< TransferCFT/componentshortname  >}} initialization an error was detected when allocating the Transfer CFT{{< TransferCFT/componentshortname  >}} catalog file. |
+| Explanation | During {{< TransferCFT/axwayvariablesComponentShortName  >}} initialization an error was detected when allocating the {{< TransferCFT/axwayvariablesComponentShortName  >}} catalog file. |
 | Consequence | The Transfer CFT initialization phase has stopped. |
-| Action | Check that the file is not already allocated, correct the error and then restart Transfer CFT{{< TransferCFT/componentshortname  >}}. |
+| Action | Check that the file is not already allocated, correct the error and then restart {{< TransferCFT/axwayvariablesComponentShortName  >}}. |
 
 
  
@@ -101,7 +101,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI08F"></span>CFTI08F Init error _ Protocol process<br/> CFTI08F Init error _ Protocol process |
 | --- | --- |
-| Explanation | During Transfer CFT{{< TransferCFT/componentshortname  >}} initialization an error was detected when activating the Transfer CFT{{< TransferCFT/componentshortname  >}} protocol process. |
+| Explanation | During {{< TransferCFT/axwayvariablesComponentShortName  >}} initialization an error was detected when activating the {{< TransferCFT/axwayvariablesComponentShortName  >}} protocol process. |
 | Consequence | The Transfer CFT initialization phase has stopped. |
 | Action | Inform Transfer CFT Support. |
 
@@ -111,7 +111,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI09F"></span>CFTI09F Init error _ Communication process<br/> CFTI09F Init error _ Communication process |
 | --- | --- |
-| Explanation | During Transfer CFT{{< TransferCFT/componentshortname  >}} initialization an error was detected when activating the Transfer CFT{{< TransferCFT/componentshortname  >}} communication process. |
+| Explanation | During {{< TransferCFT/axwayvariablesComponentShortName  >}} initialization an error was detected when activating the {{< TransferCFT/axwayvariablesComponentShortName  >}} communication process. |
 | Consequence | The Transfer CFT initialization phase has stopped. |
 | Action | Inform Transfer CFT Support. |
 
@@ -121,7 +121,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI10F"></span>CFTI10F Init error _ Logger process<br/> CFTI10F Init error _ Logger process |
 | --- | --- |
-| Explanation | During Transfer CFT{{< TransferCFT/componentshortname  >}} initialization an error was detected when activating the Transfer CFT{{< TransferCFT/componentshortname  >}} message logging process.<br/> It may be a memory allocation or queue definition type system error (or a problem when submitting a message to the queue). |
+| Explanation | During {{< TransferCFT/axwayvariablesComponentShortName  >}} initialization an error was detected when activating the {{< TransferCFT/axwayvariablesComponentShortName  >}} message logging process.<br/> It may be a memory allocation or queue definition type system error (or a problem when submitting a message to the queue). |
 | Consequence | The Transfer CFT initialization phase has stopped. |
 | Action | Inform Product Support. |
 
@@ -131,7 +131,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTI11I"></span>CFTI11I Init complete _ Logger process<br/> CFTI11I Init complete _ Logger process |
 | --- | --- |
-| Explanation | Normal end of Transfer CFT{{< TransferCFT/componentshortname  >}} logging process initialization. |
+| Explanation | Normal end of {{< TransferCFT/axwayvariablesComponentShortName  >}} logging process initialization. |
 
 
  
@@ -139,7 +139,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTI12I"></span>CFTI12I Init complete _ Protocol process<br/> CFTI12I Init complete _ Protocol process |
 | --- | --- |
-| Explanation | Normal end of Transfer CFT{{< TransferCFT/componentshortname  >}} protocol process initialization. |
+| Explanation | Normal end of {{< TransferCFT/axwayvariablesComponentShortName  >}} protocol process initialization. |
 
 
  
@@ -147,7 +147,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTI13I"></span>CFTI13I Init complete _ Communication process<br/> CFTI13I Init complete _ Communication process |
 | --- | --- |
-| Explanation | Normal end of Transfer CFT{{< TransferCFT/componentshortname  >}} communication task initialization. |
+| Explanation | Normal end of {{< TransferCFT/axwayvariablesComponentShortName  >}} communication task initialization. |
 
 
  
@@ -155,7 +155,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI14I"></span>CFTI14I CFT Init complete<br/> CFTI14I CFT Init complete |
 | --- | --- |
-| Explanation | Normal end of Transfer CFT{{< TransferCFT/componentshortname  >}} initialization. |
+| Explanation | Normal end of {{< TransferCFT/axwayvariablesComponentShortName  >}} initialization. |
 
 
  
@@ -183,7 +183,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI17F"></span>CFTI17F Init error _ Account file &amp;fname<br/> CFTI17F Init error _ Account file &amp;fname |
 | --- | --- |
-| Explanation | During the Transfer CFT{{< TransferCFT/componentshortname  >}} initialization phase an error was detected when processing the accounting file (CFTACCNT command). |
+| Explanation | During the {{< TransferCFT/axwayvariablesComponentShortName  >}} initialization phase an error was detected when processing the accounting file (CFTACCNT command). |
 | Consequence | The Transfer CFT initialization phase has stopped. |
 | Action | Check the existence and integrity of the &amp;fname file. |
 
@@ -193,8 +193,8 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI18I"></span>CFTI18I _ &amp;str<br/> CFTI18I _ &amp;str |
 | --- | --- |
-| Explanation | This is a Transfer CFT{{< TransferCFT/componentshortname  >}} welcome message describing the computer environment and the main runtime characteristics, according to the options activated by the software key (KEY parameter):<br/> • Usage of this product is strictly limited to &amp;cpu_id machine: The Transfer CFT{{< TransferCFT/componentshortname  >}} can only be executed on the computer with the designated CPU<br/> • Usage of this product is strictly limited to &amp;label: The Transfer CFT{{< TransferCFT/componentshortname  >}} can only be executed within a specific framework, as designated by &amp;label<br/> • Usage of this product is strictly limited until &amp;date: The Transfer CFT{{< TransferCFT/componentshortname  >}} cannot be executed after the date designated by &amp;date<br/> • &amp;Maxtrans simultaneous transfer(s) is(are) authorized: Transfer CFT{{< TransferCFT/componentshortname  >}} cannot process more than &amp;Maxtrans simultaneous transfers. This value overrides the MAXTRANS parameter in the CFTPARM command<br/> • &amp;Net Network Access Method Option is authorized: The Transfer CFT{{< TransferCFT/componentshortname  >}} is authorized to use the optional network access method designated by &amp;Net (TCP/IP)<br/> QQQ_QQQ_QQQ_LIST<br/> • The information in this message is related to the UCONF setting for server.authentication_method.<br/> • For more information on Access Management parameters, see the Password authentication for synchronous communication media section in <a href="../../../internal_a_m_start_here/about_passport_am/unconf_access_management">Access Management and PassPort AM parameters</a>.<br/> <br/> • &amp;Prot Protocol Option is authorized: Transfer CFT{{< TransferCFT/componentshortname  >}} is authorized to use the protocol option designated by &amp;Prot (Secure PeSIT)<br/> If an attempt is made to use an unauthorized option, such as a network access method or protocol option, Transfer CFT{{< TransferCFT/componentshortname  >}} does not start, and displays a message.<br /> Information messages include:<br/> <div > • FNAME: CFTLOG name<br/> • AFNAME: CFTALOG name<br/> • TYPE: File FNAME: file communication name<br/> • TYPE :Mbx FNAME : mailbox name<br/> • TYPE :TCPIP HOST: host name PORT: port if synchronous communication<br/> </div> If PassPort is used for SSL:<br/> • CFTI18I hostname : addrhost<br/> • CFTI18I port : port number<br/> • See also <a href="../../../internal_a_m_start_here/about_passport_am/unconf_access_management">Access Management and PassPort AM parameters</a>. |
-| Consequence | Transfer CFT{{< TransferCFT/componentshortname  >}} is stopped during the initialization phase. |
+| Explanation | This is a {{< TransferCFT/axwayvariablesComponentShortName  >}} welcome message describing the computer environment and the main runtime characteristics, according to the options activated by the software key (KEY parameter):<br/> • Usage of this product is strictly limited to &amp;cpu_id machine: The {{< TransferCFT/axwayvariablesComponentShortName  >}} can only be executed on the computer with the designated CPU<br/> • Usage of this product is strictly limited to &amp;label: The {{< TransferCFT/axwayvariablesComponentShortName  >}} can only be executed within a specific framework, as designated by &amp;label<br/> • Usage of this product is strictly limited until &amp;date: The {{< TransferCFT/axwayvariablesComponentShortName  >}} cannot be executed after the date designated by &amp;date<br/> • &amp;Maxtrans simultaneous transfer(s) is(are) authorized: {{< TransferCFT/axwayvariablesComponentShortName  >}} cannot process more than &amp;Maxtrans simultaneous transfers. This value overrides the MAXTRANS parameter in the CFTPARM command<br/> • &amp;Net Network Access Method Option is authorized: The {{< TransferCFT/axwayvariablesComponentShortName  >}} is authorized to use the optional network access method designated by &amp;Net (TCP/IP)<br/> QQQ_QQQ_QQQ_LIST<br/> • The information in this message is related to the UCONF setting for server.authentication_method.<br/> • For more information on Access Management parameters, see the Password authentication for synchronous communication media section in <a href="../../../internal_a_m_start_here/about_passport_am/unconf_access_management">Access Management and PassPort AM parameters</a>.<br/> <br/> • &amp;Prot Protocol Option is authorized: {{< TransferCFT/axwayvariablesComponentShortName  >}} is authorized to use the protocol option designated by &amp;Prot (Secure PeSIT)<br/> If an attempt is made to use an unauthorized option, such as a network access method or protocol option, {{< TransferCFT/axwayvariablesComponentShortName  >}} does not start, and displays a message.<br /> Information messages include:<br/> <div > • FNAME: CFTLOG name<br/> • AFNAME: CFTALOG name<br/> • TYPE: File FNAME: file communication name<br/> • TYPE :Mbx FNAME : mailbox name<br/> • TYPE :TCPIP HOST: host name PORT: port if synchronous communication<br/> </div> If PassPort is used for SSL:<br/> • CFTI18I hostname : addrhost<br/> • CFTI18I port : port number<br/> • See also <a href="../../../internal_a_m_start_here/about_passport_am/unconf_access_management">Access Management and PassPort AM parameters</a>. |
+| Consequence | {{< TransferCFT/axwayvariablesComponentShortName  >}} is stopped during the initialization phase. |
 
 
  
@@ -212,7 +212,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTI19I"></span>CFTI19I © Copyright AXWAY,....<br/> CFTI19I © Copyright AXWAY,.... |
 | --- | --- |
-| Explanation | Transfer CFT{{< TransferCFT/componentshortname  >}} copyright message. |
+| Explanation | {{< TransferCFT/axwayvariablesComponentShortName  >}} copyright message. |
 
 
  
@@ -221,7 +221,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | V23 format<br/> V24 format<br/> Fatal | <span id="CFTI20F"></span>CFTI20F Semaphore definition failure CR=&amp;cr CS= &amp;scs<br/> CFTI20F Semaphore definition failure CR=&amp;cr CS= &amp;scs |
 | --- | --- |
 | Explanation | Cannot define the internal communications queue. |
-| Consequence | Transfer CFT{{< TransferCFT/componentshortname  >}} is stopped during its initialization phase. |
+| Consequence | {{< TransferCFT/axwayvariablesComponentShortName  >}} is stopped during its initialization phase. |
 
 
  
@@ -230,7 +230,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI21F"></span>CFTI21F CFTNET=&amp;id Resource define failure CS=&amp;ncs<br/> CFTI21F CFTNET=&amp;id Resource define failure CS=&amp;ncs |
 | --- | --- |
 | Explanation | Cannot define the resource. The resource identifier for this CFTNET command displays in the message. |
-| Consequence | Transfer CFT{{< TransferCFT/componentshortname  >}} is stopped during its initialization phase. |
+| Consequence | {{< TransferCFT/axwayvariablesComponentShortName  >}} is stopped during its initialization phase. |
 
 
  
@@ -239,7 +239,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI22F"></span>CFTI22F CFTPROT=&amp;id Register request failure CS=&amp;ncs<br/> CFTI22F CFTPROT=&amp;id Register request failure CS=&amp;ncs |
 | --- | --- |
 | Explanation | Cannot register the protocol defined in this CFTPROT command. |
-| Consequence | Transfer CFT{{< TransferCFT/componentshortname  >}} is stopped during its initialization phase. |
+| Consequence | {{< TransferCFT/axwayvariablesComponentShortName  >}} is stopped during its initialization phase. |
 
 
  
@@ -248,7 +248,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI23F"></span>CFTI23F MAIN synchronization failure CR=&amp;cr CS=&amp;scs<br/> CFTI23F MAIN synchronization failure CR=&amp;cr CS=&amp;scs |
 | --- | --- |
 | Explanation | Internal synchronization error between the main Transfer CFT task and the protocol task. |
-| Consequence | Transfer CFT{{< TransferCFT/componentshortname  >}} is stopped during its initialization phase. |
+| Consequence | {{< TransferCFT/axwayvariablesComponentShortName  >}} is stopped during its initialization phase. |
 
 
  
@@ -256,7 +256,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTI24I"></span>CFTI24I &amp;str<br/> CFTI24I &amp;str |
 | --- | --- |
-| Explanation | Message displayed when viewing the command cache or the transfer cache: CFTUTIL or CFTINT MQUERY command.<br/> The messages depend on the type of cache concerned (command or catalog):<br/> * TRANSFER CACHE IS EMPTY<br/> The catalog cache is empty.<br/> The messages vary according to the context:Or gives details of the cache information (catalog or command cache) according to the type of information displayed<br/> For a line in the command cache, the information is divided into three parts:<br/> • command execution<br/> • DATE and TIME<br/> • type of command (SWITCH ACCNT, SWITCH LOG or PURGE)<br/> For a transfer, the information is divided into four parts:<br/> • request activation time<br/> • identifier of the partner concerned<br/> • idf identifier and<br/> • IDT value calculated by Transfer CFT{{< TransferCFT/componentshortname  >}} |
+| Explanation | Message displayed when viewing the command cache or the transfer cache: CFTUTIL or CFTINT MQUERY command.<br/> The messages depend on the type of cache concerned (command or catalog):<br/> * TRANSFER CACHE IS EMPTY<br/> The catalog cache is empty.<br/> The messages vary according to the context:Or gives details of the cache information (catalog or command cache) according to the type of information displayed<br/> For a line in the command cache, the information is divided into three parts:<br/> • command execution<br/> • DATE and TIME<br/> • type of command (SWITCH ACCNT, SWITCH LOG or PURGE)<br/> For a transfer, the information is divided into four parts:<br/> • request activation time<br/> • identifier of the partner concerned<br/> • idf identifier and<br/> • IDT value calculated by {{< TransferCFT/axwayvariablesComponentShortName  >}} |
 
 
  
@@ -264,7 +264,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI25I"></span>CFTI25I Init complete _ Security active [&amp;str]<br/> CFTI25I Init complete _ Security active [&amp;str] |
 | --- | --- |
-| Explanation | The description of the message &amp;str specifies the activated security options:<br/> • HAB: Normal end of initialization with activation of the Transfer CFT{{< TransferCFT/componentshortname  >}} security system<br/> • SSL: Normal end of initialization with activation of the SSL protocol<br/> The information in this message is affected by the UCONF setting for access management. For more information, see the am.type parameter and access management options in <a href="../../../internal_a_m_start_here/about_passport_am/unconf_access_management">Access Management and PassPort AM parameters</a>. |
+| Explanation | The description of the message &amp;str specifies the activated security options:<br/> • HAB: Normal end of initialization with activation of the {{< TransferCFT/axwayvariablesComponentShortName  >}} security system<br/> • SSL: Normal end of initialization with activation of the SSL protocol<br/> The information in this message is affected by the UCONF setting for access management. For more information, see the am.type parameter and access management options in <a href="../../../internal_a_m_start_here/about_passport_am/unconf_access_management">Access Management and PassPort AM parameters</a>. |
 
 
  
@@ -272,7 +272,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI26I"></span>CFTI26I Init complete _ Security not active<br/> CFTI26I Init complete _ Security not active |
 | --- | --- |
-| Explanation | Normal end of initialization without activating the Security option (Transfer CFT{{< TransferCFT/componentshortname  >}} security system and the SSL protocol). |
+| Explanation | Normal end of initialization without activating the Security option ({{< TransferCFT/axwayvariablesComponentShortName  >}} security system and the SSL protocol). |
 
 
  
@@ -280,7 +280,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI27F"></span>CFTI27F Init Error code &amp;scs _ Opening security file &amp;file<br/> CFTI27F Init Error code &amp;scs _ Opening security file &amp;file |
 | --- | --- |
-| Explanation | When Transfer CFT{{< TransferCFT/componentshortname  >}} was initialized, a security system open error was detected. |
+| Explanation | When {{< TransferCFT/axwayvariablesComponentShortName  >}} was initialized, a security system open error was detected. |
 | Consequence | The Transfer CFT initialization phase is stopped. |
 | Action | Inform Product Support. |
 
@@ -330,7 +330,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI39I"></span>CFTI39I &amp;str<br/> CFTI39I &amp;str |
 | --- | --- |
-| Explanation | Displays information about the Transfer CFT{{< TransferCFT/componentshortname  >}} Heartbeat. Possible states:<br/> • Enable<br/> • Update UCONF parameters<br/> • Disable |
+| Explanation | Displays information about the {{< TransferCFT/axwayvariablesComponentShortName  >}} Heartbeat. Possible states:<br/> • Enable<br/> • Update UCONF parameters<br/> • Disable |
 
 
  
@@ -363,7 +363,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI42E"></span><span id="CFTI43I"></span>CFTI43I Attention: The Transfer CFT license expires in n days<br/> CFTI43I Attention: The Transfer CFT license expires in n days |
 | --- | --- |
 | Explanation | There are 7 days remaining on the license key for Transfer CFT. |
-| Action  | To obtain a new key:<br/> • For an existing installation, use the command **<code>cftutil about</code>** to retrieve your system information. The **ABOUT** command displays the Transfer CFT product, host, and key information, and characteristics of the platform on which Transfer CFT is installed.<br/> • Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.<br/> QQQ_QQQ_QQQ_LIST<br/> • For a US key, contact: <code>fulfillment@us.axway.com</code><br/> • For an EMEA or APAC key, contact: <code>product.key@axway.com</code><br/> <br/> • Provide the hostname and system information for the installed or updated Transfer CFT.<br/> To apply the key:<br/> To apply the license key from the Axway Fulfillment team, either:<br/> • Enter the key directly.<br/> • Enter the key(s) in the indirection file.<br/> <blockquote> **Note**<br/> When working in multi-node you must have one key per node and host.<br/> </blockquote> See the *Apply a license key* section in the Transfer CFT Installation Guide that corresponds with your OS for details. |
+| Action  | To obtain a new key:<br/> • For an existing installation, use the command <span  >**<code>cftutil about</code>**</span> to retrieve your system information. The **ABOUT** command displays the Transfer CFT product, host, and key information, and characteristics of the platform on which Transfer CFT is installed.<br/> • Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.<br/> QQQ_QQQ_QQQ_LIST<br/> • For a US key, contact: <span ><code>fulfillment@us.axway.com</code></span><br/> • For an EMEA or APAC key, contact: <span ><code>product.key@axway.com</code></span><br/> <br/> • Provide the hostname and system information for the installed or updated Transfer CFT.<br/> To apply the key:<br/> To apply the license key from the Axway Fulfillment team, either:<br/> • Enter the key directly.<br/> • Enter the key(s) in the indirection file.<br/> <blockquote> **Note**<br/> When working in multi-node you must have one key per node and host.<br/> </blockquote> See the *Apply a license key* section in the Transfer CFT Installation Guide that corresponds with your OS for details. |
 
 
  
@@ -372,7 +372,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTI42E"></span><span id="CFTI43W"></span>CFTI43W Attention: The Transfer CFT license expires in n days<br/> CFTI43W Attention: The Transfer CFT license expires in n days |
 | --- | --- |
 | Explanation | There are fewer than 7 days remaining on the license key for Transfer CFT. |
-| Action  | To obtain a new key:<br/> • For an existing installation, use the command **<code>cftutil about</code>** to retrieve your system information. The **ABOUT** command displays the Transfer CFT product, host, and key information, and characteristics of the platform on which Transfer CFT is installed.<br/> • Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.<br/> QQQ_QQQ_QQQ_LIST<br/> • For a US key, contact: <code>fulfillment@us.axway.com</code><br/> • For an EMEA or APAC key, contact: <code>product.key@axway.com</code><br/> <br/> • Provide the hostname and system information for the installed or updated Transfer CFT.<br/> To apply the key:<br/> To apply the license key from the Axway Fulfillment team, either:<br/> • Enter the key directly.<br/> • Enter the key(s) in the indirection file.<br/> <blockquote> **Note**<br/> When working in multi-node you must have one key per node and host.<br/> </blockquote> See the *Apply a license key* section in the Transfer CFT Installation Guide that corresponds with your OS for details. |
+| Action  | To obtain a new key:<br/> • For an existing installation, use the command <span  >**<code>cftutil about</code>**</span> to retrieve your system information. The **ABOUT** command displays the Transfer CFT product, host, and key information, and characteristics of the platform on which Transfer CFT is installed.<br/> • Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.<br/> QQQ_QQQ_QQQ_LIST<br/> • For a US key, contact: <span ><code>fulfillment@us.axway.com</code></span><br/> • For an EMEA or APAC key, contact: <span ><code>product.key@axway.com</code></span><br/> <br/> • Provide the hostname and system information for the installed or updated Transfer CFT.<br/> To apply the key:<br/> To apply the license key from the Axway Fulfillment team, either:<br/> • Enter the key directly.<br/> • Enter the key(s) in the indirection file.<br/> <blockquote> **Note**<br/> When working in multi-node you must have one key per node and host.<br/> </blockquote> See the *Apply a license key* section in the Transfer CFT Installation Guide that corresponds with your OS for details. |
 
 
  
@@ -381,7 +381,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTI42E"></span><span id="CFTI43E"></span>CFTI43E Attention: The Transfer CFT license has expired<br/> CFTI43E Attention: The Transfer CFT license has expired |
 | --- | --- |
 | Explanation | The Transfer CFT license key is no longer valid. |
-| Action  | To obtain a new key:<br/> • For an existing installation, use the command **<code>cftutil about</code>** to retrieve your system information. The **ABOUT** command displays the Transfer CFT product, host, and key information, and characteristics of the platform on which Transfer CFT is installed.<br/> • Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.<br/> QQQ_QQQ_QQQ_LIST<br/> • For a US key, contact: <code>fulfillment@us.axway.com</code><br/> • For an EMEA or APAC key, contact: <code>product.key@axway.com</code><br/> <br/> • Provide the hostname and system information for the installed or updated Transfer CFT.<br/> To apply the key:<br/> To apply the license key from the Axway Fulfillment team, either:<br/> • Enter the key directly.<br/> • Enter the key(s) in the indirection file.<br/> <blockquote> **Note**<br/> When working in multi-node you must have one key per node and host.<br/> </blockquote> See the *Apply a license key* section in the Transfer CFT Installation Guide that corresponds with your OS for details. |
+| Action  | To obtain a new key:<br/> • For an existing installation, use the command <span  >**<code>cftutil about</code>**</span> to retrieve your system information. The **ABOUT** command displays the Transfer CFT product, host, and key information, and characteristics of the platform on which Transfer CFT is installed.<br/> • Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.<br/> QQQ_QQQ_QQQ_LIST<br/> • For a US key, contact: <span ><code>fulfillment@us.axway.com</code></span><br/> • For an EMEA or APAC key, contact: <span ><code>product.key@axway.com</code></span><br/> <br/> • Provide the hostname and system information for the installed or updated Transfer CFT.<br/> To apply the key:<br/> To apply the license key from the Axway Fulfillment team, either:<br/> • Enter the key directly.<br/> • Enter the key(s) in the indirection file.<br/> <blockquote> **Note**<br/> When working in multi-node you must have one key per node and host.<br/> </blockquote> See the *Apply a license key* section in the Transfer CFT Installation Guide that corresponds with your OS for details. |
 
 
  

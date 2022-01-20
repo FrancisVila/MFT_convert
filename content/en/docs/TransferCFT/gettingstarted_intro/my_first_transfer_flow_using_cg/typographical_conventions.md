@@ -3,7 +3,7 @@
     "linkTitle": "Typographical conventions",
     "weight": "200"
 }The typographical conventions specify the
-syntax to use in Transfer CFT{{< TransferCFT/componentshortname  >}} commands, the
+syntax to use in {{< TransferCFT/axwayvariablesComponentShortName  >}} commands, the
 parameters and their values. These rules apply equally for any additional
 parameter information, or information pertaining to the operating system
 or the transfer protocols.
@@ -101,7 +101,7 @@ parameter is:
     \[ \]
 - Reserved for transfer
     cases in PeSIT E
-    profile between two Transfer CFT{{< TransferCFT/componentshortname >}}s
+    profile between two {{< TransferCFT/axwayvariablesComponentShortName >}}s
 
 <span id="Parameter_value_notation_conventions"></span>
 
@@ -152,9 +152,9 @@ notations are used in the detailed parameter descriptions.
 
 When using the CFTUTIL HELP command, as shown in the example below, the following rules apply to parameter values:
 
-- If `STRING `is in upper case, the parameter value is not case sensitive
-- If `String `is mixed case, the parameter value is case sensitive
-- If `STRING or "String"`, the parameter value is only case sensitive when enclosed in quotes
+- If <span class="code">`STRING `</span>is in upper case, the parameter value is not case sensitive
+- If <span class="code">`String `</span>is mixed case, the parameter value is case sensitive
+- If <span class="code">`STRING or "String"`</span>, the parameter value is only case sensitive when enclosed in quotes
 
 ****Example****
 
@@ -206,7 +206,7 @@ in the following table.
 | Identifier: alphanumeric string of 1 to 32 alphanumeric characters and additional characters:<br/> @ # &amp; % ! : - _ + \ / | ? { } [ ] ; * &lt; &gt; ~ ^ | identifier  |
 | Mask: string containing wildcard characters (* and ?) :<br/> When referring to ReGEX expressions, other value are possible. | mask  |
 | Time: string containing 2 to 8 digits  | HHMMSSSS |
-| Transfer identifier assigned by Transfer CFT{{< TransferCFT/componentshortname  >}}  | transid  |
+| Transfer identifier assigned by {{< TransferCFT/axwayvariablesComponentShortName  >}}  | transid  |
 
 
 <span id="OS_specificities"></span>
@@ -294,7 +294,7 @@ protocol variants, indicated as follows:
 | Protocol  | Description  |
 | --- | --- |
 | PeSIT | PeSIT protocol (standard) |
-| PeSIT CFT/CFT | PeSIT protocol used between two Transfer CFT{{< TransferCFT/componentshortname  >}}s |
+| PeSIT CFT/CFT | PeSIT protocol used between two {{< TransferCFT/axwayvariablesComponentShortName  >}}s |
 
 
 <span id="Command_syntax"></span>

@@ -12,7 +12,7 @@
 | Topic  | Description  |
 | --- | --- |
 | <a href="trace_management">Trace management concepts</a> | Describes the concepts behind performing an ATM trace in Transfer CFT. |
-| <a href="parameter_settings">Defining trace in Transfer CFT{{< TransferCFT/componentshortname  >}} parameters</a> | Describes the Transfer CFT general parameter for a trace. |
+| <a href="parameter_settings">Defining trace in {{< TransferCFT/axwayvariablesComponentShortName  >}} parameters</a> | Describes the Transfer CFT general parameter for a trace. |
 | <a href="defining_a_trace_file_externally">Defining a trace file externally (CFTTRACE utility)</a> | Describes how to create or remove a trace file, or to reinitialize it with an empty useable content. |
 | <a href="defining_the_internal_trace_file">Defining the internal trace file (CFTUTIL command)</a> | Describes how to create a trace when Transfer CFT starts, with the possibility of tracing an initialization sequence, or during Transfer CFT operations. |
 | <a href="">Using the start trace command</a> | Describes the start trace command, which is associated with a unique identifier, defines and describes the conditions for starting and selecting traced data, and associates a file identifier. |
@@ -20,14 +20,14 @@
 
 ## About Transfer CFT traces
 
-Transfer CFT traces are managed by the ****A****dvanced
-****T****race ****M****anager
+Transfer CFT traces are managed by the <span style="font-weight: bold;">****A****</span>dvanced
+<span style="font-weight: bold;">****T****</span>race <span style="font-weight: bold;">****M****</span>anager
 (ATM) component.
 
 ATM is a problem resolution assistance tool that is used:
 
 - To save the information
-    exchanged at the Transfer CFT{{< TransferCFT/componentlongname >}} level, in one or more dedicated files
+    exchanged at the {{< TransferCFT/axwayvariablesComponentLongName >}} level, in one or more dedicated files
 
 The information traced relates to protocol information
 (exchanges between Transfer CFT and its remote partners) and/or Transfer

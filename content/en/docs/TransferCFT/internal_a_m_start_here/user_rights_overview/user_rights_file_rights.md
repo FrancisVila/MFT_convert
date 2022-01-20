@@ -4,7 +4,7 @@
     "weight": "240"
 }This section explains the user rights required for system users to [execute files actions,](#Set) which allows a system user to perform all file actions, for example accessing or opening a file. By default, on the sender side the user who initiates the SEND is used, and on the receiver side the USERID specified in the CFTRECV object is used. Additionally this topic describes user rights required to [execute post-transfer procedures.](#Set2)
 
-Before setting user rights, you must define special rights for the account on which Transfer CFT{{< TransferCFT/componentshortname  >}} is running.
+Before setting user rights, you must define special rights for the account on which {{< TransferCFT/axwayvariablesComponentShortName  >}} is running.
 
 <span id="Set"></span>
 
@@ -30,7 +30,7 @@ The following table applies to all Operating Systems:
 
 | USERCTRL | Description |
 | --- | --- |
-| NO  | The Transfer CFT user, that is, the account that started Transfer CFT{{< TransferCFT/componentlongname  >}}, performs all file actions. Default value.  |
+| NO  | The Transfer CFT user, that is, the account that started {{< TransferCFT/axwayvariablesComponentLongName  >}}, performs all file actions. Default value.  |
 | YES  | The USERID performs all file actions.  |
 
 
@@ -66,8 +66,8 @@ This feature allows system users to execute end-of-transfer procedures themselve
 
 To enable this feature:
 
-1. Set `cft.server.exec_as_user` to `Yes`. Scripts are then executed as if by the defined in [USERID](../../../c_intro_userinterfaces/command_summary/parameter_intro/userid).
-1. Define the CFTRECV ****USERID ****option.
+1. Set <span class="code">`cft.server.exec_as_user`</span> to <span class="code">`Yes`</span>. Scripts are then executed as if by the defined in [USERID](../../../c_intro_userinterfaces/command_summary/parameter_intro/userid).
+1. Define the CFTRECV <span class="bold_in_para">****USERID ****</span>option.
 
 > **Note**
 >

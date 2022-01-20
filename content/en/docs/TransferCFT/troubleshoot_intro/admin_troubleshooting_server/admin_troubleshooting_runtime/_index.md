@@ -19,16 +19,16 @@ QQQ\_QQQ\_QQQ
 | Issue vs<br /> Possible causes  | Hard disk bottleneck  | Catalog<br/> full | Network<br/> bottleneck | Memory or processor bottleneck*  | Corrupt<br/> file or DB ** |
 | --- | --- | --- | --- | --- | --- |
 | Performance  | Disk check  |   | Network checks  | Check application  |   |
-| Start issue  | Disk check  | Catalog check  | Network checks  | timeout  | Check Transfer CFT{{< TransferCFT/componentlongname  >}} files  |
-| Unexpected stop  | Disk check  | Catalog check  | Network checks  |   | Check Transfer CFT{{< TransferCFT/componentlongname  >}} files  |
-| Transfer freeze or infinite looping  | Disk check  |   | Network checks  | Check application  | Check Transfer CFT{{< TransferCFT/componentlongname  >}} files  |
+| Start issue  | Disk check  | Catalog check  | Network checks  | timeout  | Check {{< TransferCFT/axwayvariablesComponentLongName  >}} files  |
+| Unexpected stop  | Disk check  | Catalog check  | Network checks  |   | Check {{< TransferCFT/axwayvariablesComponentLongName  >}} files  |
+| Transfer freeze or infinite looping  | Disk check  |   | Network checks  | Check application  | Check {{< TransferCFT/axwayvariablesComponentLongName  >}} files  |
 | SP and updates  | Disk check  |   |   |   |   |
-| Crash  | Disk check  |   | Network checks  |   | Check Transfer CFT{{< TransferCFT/componentlongname  >}} files  |
+| Crash  | Disk check  |   | Network checks  |   | Check {{< TransferCFT/axwayvariablesComponentLongName  >}} files  |
 
 
 \* Axway or third party software.
 
-\*\* Transfer CFT{{< TransferCFT/componentlongname  >}} internal database.
+\*\* {{< TransferCFT/axwayvariablesComponentLongName  >}} internal database.
 
 ## Initial checks and actions
 
@@ -36,7 +36,7 @@ QQQ\_QQQ\_QQQ
 
 - No space left on the device
     -   Free space
-    -   Check Sentinel connectivity anTransfer CFT{{< TransferCFT/componentshortname >}}d verify the size of the runtime/data/trkapi.buf file, which may be voluminous
+    -   Check Sentinel connectivity an{{< TransferCFT/axwayvariablesComponentShortName >}}d verify the size of the runtime/data/trkapi.buf file, which may be voluminous
 - Check for problematic file transfers and output, and clean
 - Check to see if traces are set, which may lead to multiple large files in the "run" directory
 - Check to see if you have enabled dynamic catalog resizing
@@ -69,5 +69,5 @@ These corrective measures are often system dependent.
 ### Check additional products
 
 - Check if another product is consuming all of the CPU/memory
-- Check Central Governance interoperability, such as the Sentinel database
+- Check {{< TransferCFT/PrimaryCGorUM >}} interoperability, such as the {{< TransferCFT/PrimarySentinel >}} database
 - Scripts or end-of-transfer procedures may indirectly

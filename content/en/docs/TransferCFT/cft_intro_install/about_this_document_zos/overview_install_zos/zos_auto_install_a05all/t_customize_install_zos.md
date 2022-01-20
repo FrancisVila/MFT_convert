@@ -12,7 +12,7 @@ For z/OS 2.1, you can export JCL variables:
 
 Export Global
 
-Uncomment `//*     EXPORT SYMLIST=* in CFTENV` member
+Uncomment <span class="code">`//*     EXPORT SYMLIST=* in CFTENV`</span> member
 
 Or
 
@@ -55,7 +55,7 @@ Example:
 //SYSTSPRT DD SYSOUT=&OUT
 //SYSTSIN DD DUMMY
 //    SET QUAL=&CFTENV
-//    ****INCLUDE MEMBER=CFTINC****
+//    <span class="bold_in_para">****INCLUDE MEMBER=CFTINC****</span>
 ```
 
 ## PCFTUTIL / PCFTUTL procedures
@@ -161,7 +161,7 @@ The maximum number of nested )SELs is 32, where:
 >
 > &lt;&gt; or != or |= or NEQ: different from
 
-****Examples****
+<span class="bold_in_para">****Examples****</span>
 
 )SEL &P1 = SITE1: includes the following cards if parameter 1 is equal to SITE1
 

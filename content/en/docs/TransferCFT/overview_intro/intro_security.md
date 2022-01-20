@@ -11,8 +11,8 @@
 - SFTP
 
 After configuring the security system, you define the users and the
-actions that they can make on the various Transfer CFT{{< TransferCFT/componentshortname  >}} objects. These definitions apply to objects declared within the operating
-systems, such as files and batch procedures, as well as Transfer CFT{{< TransferCFT/componentshortname  >}}
+actions that they can make on the various {{< TransferCFT/axwayvariablesComponentShortName  >}} objects. These definitions apply to objects declared within the operating
+systems, such as files and batch procedures, as well as {{< TransferCFT/axwayvariablesComponentShortName  >}}
 objects, commands, transfer requests and internal files.
 
 <span id="Transport_Security"></span>
@@ -28,7 +28,7 @@ Transport Security is ensured through a public key infrastructure (PKI), which y
 > Check the security options
 > included in the license key before attempting to implement in your environment.
 
-For more information on transport security, see the Transfer CFT{{< TransferCFT/componentshortname  >}} [Security](../../transport_security_start_here) topics.
+For more information on transport security, see the {{< TransferCFT/axwayvariablesComponentShortName  >}} [Security](../../transport_security_start_here) topics.
 
 ## Access management
 
@@ -36,15 +36,15 @@ Access management for Transfer CFT refers to the policy that allow users to perf
 
 ## DMZ enabled communication
 
-Transfer CFT{{< TransferCFT/componentshortname  >}}supports communication in the DMZ using Secure Relay. All of the connections that use this Transfer CFT{{< TransferCFT/componentshortname  >}} network resource transmit through Secure Relay for both incoming and outgoing connections.
+{{< TransferCFT/axwayvariablesComponentShortName  >}}supports communication in the DMZ using Secure Relay. All of the connections that use this {{< TransferCFT/axwayvariablesComponentShortName  >}} network resource transmit through Secure Relay for both incoming and outgoing connections.
 
-\*Presently not configurable from the Central Governance interface.
+\*Presently not configurable from the {{< TransferCFT/PrimaryCGorUM  >}} interface.
 
 ## File encryption at rest
 
-Transfer CFT{{< TransferCFT/componentshortname  >}} embeds TrustedFile to encode and decode files in S/MIME, CMS, OpenPGP, XML Signature, XML Encryption, and XAdES (BES and EPES) format. These standards secure data at rest, independently of the data communication method.
+{{< TransferCFT/axwayvariablesComponentShortName  >}} embeds TrustedFile to encode and decode files in S/MIME, CMS, OpenPGP, XML Signature, XML Encryption, and XAdES (BES and EPES) format. These standards secure data at rest, independently of the data communication method.
 
-\*Presently not configurable from the Central Governance interface.
+\*Presently not configurable from the {{< TransferCFT/PrimaryCGorUM  >}} interface.
 
 ## SFTP
 

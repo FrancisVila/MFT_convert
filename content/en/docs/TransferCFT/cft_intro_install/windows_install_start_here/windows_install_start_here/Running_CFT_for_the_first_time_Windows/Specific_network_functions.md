@@ -2,7 +2,7 @@
     "title": "Specific  network functions",
     "linkTitle": "Specific network functions",
     "weight": "250"
-}This topic presents the TCP network supported by Transfer CFT{{< TransferCFT/componentshortname  >}} Windows,
+}This topic presents the TCP network supported by {{< TransferCFT/axwayvariablesComponentShortName  >}} Windows,
 and how to define the network parameters.
 
 <span id="Supported_networks"></span>
@@ -25,7 +25,7 @@ Additionally, the logical key can limit the maximum number of transfers.
 ## Defining network parameters
 
 You implement network functions by entering parameters into
-a single file, `cftnet.conf`, located in the Transfer CFT{{< TransferCFT/componentshortname  >}} `runtime\conf`
+a single file, <span class="code">`cftnet.conf`</span>, located in the {{< TransferCFT/axwayvariablesComponentShortName  >}} `runtime\conf`
 folder.
 
 This file is made up of lines using the same syntax, each
@@ -44,7 +44,7 @@ where:
 
 ****Comments****
 
-To edit a line of comments in the file `CFTNET.CONF`, you can
+To edit a line of comments in the file <span class="code">`CFTNET.CONF`</span>, you can
 place the ‘#’ character in the first column of this line.
 
 ****Example****
@@ -59,8 +59,8 @@ file
 `CFTCFGPATH`
 
 Environment variable defining the sub-folder where the cftnet.conf
-file is located. By default, Transfer CFT{{< TransferCFT/componentshortname  >}} searches for this file in the
+file is located. By default, {{< TransferCFT/axwayvariablesComponentShortName  >}} searches for this file in the
 application default folder.
 
-Transfer CFT{{< TransferCFT/componentshortname  >}} must be stopped when the cftnet.conf file is
+{{< TransferCFT/axwayvariablesComponentShortName  >}} must be stopped when the cftnet.conf file is
 created or modified.

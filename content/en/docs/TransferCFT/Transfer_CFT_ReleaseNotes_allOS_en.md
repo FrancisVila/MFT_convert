@@ -80,7 +80,7 @@ QQQ\_QQQ\_QQQ
 #### User interface comparison
 
 
-| Functionality  | Central Governance<br /> or Flow Manager | Transfer CFT user interface<br />  |
+| Functionality  | Central Governance<br /> <span > or Flow Manager </span> | Transfer CFT user interface<br />  |
 | --- | --- | --- |
 | Administration | X  | X  |
 | Configuration  | X*  | X  |

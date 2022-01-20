@@ -23,12 +23,12 @@
 The manual procedure consists of the following steps, which are detailed below:
 
 1. Set the UCONF parameter values for Central Governance.
-1. Enable Central Governance{{< TransferCFT/centralgovernancename >}}.
+1. Enable {{< TransferCFT/suitevariablesCentralGovernanceName >}}.
 1. Start Copilot to register.
 
 #### Set UCONF values
 
-Use the Central Governance{{< TransferCFT/centralgovernancename  >}} installation values for the following UCONF settings. Transfer CFT{{< TransferCFT/transfercftname  >}} uses these values to identify Central Governance{{< TransferCFT/centralgovernancename  >}}.
+Use the {{< TransferCFT/suitevariablesCentralGovernanceName  >}} installation values for the following UCONF settings. {{< TransferCFT/suitevariablesTransferCFTName  >}} uses these values to identify {{< TransferCFT/suitevariablesCentralGovernanceName  >}}.
 
 - cg.host
 - cg.port
@@ -41,7 +41,7 @@ Use the format:
 CFTUTIL uconfset id=cg.host, value=<host_value>
 ```
 
-#### Enable Central Governance{{< TransferCFT/centralgovernancename  >}}
+#### Enable {{< TransferCFT/suitevariablesCentralGovernanceName  >}}
 
 ```
 CFTUTIL uconfset id=cg.enable, value=yes
@@ -49,6 +49,6 @@ CFTUTIL uconfset id=cg.enable, value=yes
 
 #### Register
 
-Start the Transfer CFT{{< TransferCFT/transfercftname  >}} Copilot to trigger an automatic registration with Central Governance{{< TransferCFT/centralgovernancename  >}}.
+Start the {{< TransferCFT/suitevariablesTransferCFTName  >}} Copilot to trigger an automatic registration with {{< TransferCFT/suitevariablesCentralGovernanceName  >}}.
 
-You can check in the Central Governance **Product List** to confirm that the registration was successful.
+You can check in the {{< TransferCFT/PrimaryCGorUM  >}} **Product List** to confirm that the registration was successful.

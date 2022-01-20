@@ -4,7 +4,7 @@
     "weight": "180"
 }## Delivered certificates
 
-The use of the default certificate supplied with Transfer CFT{{< TransferCFT/componentshortname  >}} is strongly discouraged in a production environment. You should use your own certificates to enhance security.
+The use of the default certificate supplied with {{< TransferCFT/axwayvariablesComponentShortName  >}} is strongly discouraged in a production environment. You should use your own certificates to enhance security.
 
 > **Note**
 >
@@ -18,13 +18,13 @@ For a PEM certificate, you must create a file with a record length equal to the 
 ****Example
 &lt;/b>&lt;/p>****
 
-In this example, assume that your certificate `2k_l1_user1_key.pem` size is 1,191 bytes. Before uploading this certificate to the IBM i server, you would need to create a file with a record length of 1,191 bytes, as follows:
+In this example, assume that your certificate <span class="code">`2k_l1_user1_key.pem`</span> size is 1,191 bytes. Before uploading this certificate to the IBM i server, you would need to create a file with a record length of 1,191 bytes, as follows:
 
 ```
 CRTPF FILE(YOURLIB/PEM_CERT) RCDLEN(1191)
 ```
 
-You can use FTP, for example, to then upload `2k_l1_user1_key.pem` to `YOURLIB/PEM_CERT`.
+You can use FTP, for example, to then upload <span class="code">`2k_l1_user1_key.pem`</span> to <span class="code">`YOURLIB/PEM_CERT`</span>.
 
 - You must transfer PEM certificates in ASCII mode
 - All other certificates can be transferred in binary mode
@@ -35,7 +35,7 @@ You can use 3 type of certificates with Transfer CFT IBM i - PEM, DER, and P12, 
 
 ### Using PEM (ASCII) certificates and keys
 
-To use an ASCII certificate with Transfer CFT{{< TransferCFT/componentlongname  >}}, perform the steps in this section.
+To use an ASCII certificate with {{< TransferCFT/axwayvariablesComponentLongName  >}}, perform the steps in this section.
 
 On the Unix/Windows machine:
 

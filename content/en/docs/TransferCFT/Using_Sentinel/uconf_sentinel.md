@@ -13,7 +13,7 @@
     -   cft.ipv6.disable\_connect
     -   See <a href="../../admin_intro/uconf/uconf_directory" class="MCXref xref">UCONF parameters</a> for parameter details.
 - sentinel.trktname: The path to the overflow file, where the maximum number of messages that the overflow file can store is equal to sentinel.xfb.buffer\_size (not sentinel.trktmaxmsg).
-- `sentinel.trktmaxmsg`: *Obsolete*. The maximum number of messages in the `sentinel.trktname` overflow file is defined by the sentinel.xfb.buffer\_size.
+- <span class="code">`sentinel.trktmaxmsg`</span>: *Obsolete*. The maximum number of messages in the <span class="code">`sentinel.trktname`</span> overflow file is defined by the sentinel.xfb.buffer\_size.
 
 ## Overflow file
 
@@ -23,8 +23,8 @@ Use the following uconf parameters to configure the name and size of the overflo
 
 - sentinel.trktname: The path to the overflow file.
 - sentinel.xfb.buffer\_size: The maximum number of messages that the overflow file can store. Once the maximum value is reached, messages are no longer sent to Sentinel and:
-    -   If `sentinel.xfb.shut` is set to any value other than 0, Transfer CFT stops.
-    -   If `sentinel.xfb.shut` is set to 0, Transfer CFT continues to run.
+    -   If <span class="code">`sentinel.xfb.shut`</span> is set to any value other than 0, Transfer CFT stops.
+    -   If <span class="code">`sentinel.xfb.shut`</span> is set to 0, Transfer CFT continues to run.
 
 > **Note**
 >
@@ -67,7 +67,7 @@ The following table lists the Sentinel parameters in the unified configuration a
 | sentinel.trktmaxmsg  | 100000 (0 indicates no limit)  | TRKTMAXMSG  |
 
 
-For more information on event messages, refer to the Axway Sentinel documentation.
+For more information on event messages, refer to the <span class="italic_in_para">Axway Sentinel</span> documentation.
 
 ## Sentinel Heartbeat implementation parameters
 
@@ -78,7 +78,7 @@ The following table lists the Heartbeat parameters that you can set in the unifi
 | --- | --- | --- |
 | sentinel.heartbeat.enable  | NO  | Enables sending Heartbeats to the Sentinel Server. |
 | sentinel.heartbeat.periodicity  | 300  | The delay in seconds between sending Heartbeats.  |
-| sentinel.heartbeat.script  | $(cft.install_dir)<br/> /extras/sentinel/MFTheartbeat.sh<br/> or<br/> $(cft.install_dir)<br/> \extras\sentinel\MFTheartbeat.bat | Script for executing Heartbeats.  |
+| sentinel.heartbeat.script  | $(cft.install_dir)<br/> /extras/sentinel/MFTheartbeat.sh<br/> <span >or</span><br/> $(cft.install_dir)<br/> \extras\sentinel\MFTheartbeat.bat | Script for executing Heartbeats.  |
 
 
 ## Sentinel parameters
@@ -92,7 +92,7 @@ The following table lists the parameters that you can set in the unified configu
 | sentinel.xfb.transfer.send_relay_site_nidf  | No  | Enables an NIDF on the relay site. This uses an NIDF instead of COMMUT when sending an event to Sentinel using the XFBTransfer object.  |
 
 
-<span id="sentinel.TRKTMODE"></span>\*sentinel.TRKTMODE
+<span class="autonumber"></span><span id="sentinel.TRKTMODE"></span>\*sentinel.TRKTMODE
 
 The mode that Transfer CFT uses to send messages to the Sentinel Server. The possible values of this parameter include:
 
@@ -106,13 +106,13 @@ The mode that Transfer CFT uses to send messages to the Sentinel Server. The pos
 
 ## Sentinel EventTime
 
-By default, the data sent to Sentinel as the EventTime has the format HH:MM:SS. To add milliseconds to the format, HH:MM:SS.sss, set the Transfer CFT UCONF `cft.cftlog.time_precision` parameter, where:
+By default, the data sent to Sentinel as the EventTime has the format HH:MM:SS. To add milliseconds to the format, HH:MM:SS.sss, set the Transfer CFT UCONF <span class="code">`cft.cftlog.time_precision`</span> parameter, where:
 
 - 1 (default): the time in CFTLOG displays in seconds
 - 10: the time in CFTLOG displays in tenths of seconds
 - 100: the time in CFTLOG displays in hundredths of seconds
 
-If the` cft.cftlog.time_precision` value is greater than 1, the Transfer CFT EventTime message sent to Sentinel has the HH:MM:SS.dh0 format.
+If the<span class="code">` cft.cftlog.time_precision`</span> value is greater than 1, the Transfer CFT EventTime message sent to Sentinel has the HH:MM:SS.dh0 format.
 
 **Example**
 
@@ -124,7 +124,7 @@ uconfset id=cft.cftlog.time_precision, value=10
 - 10: the time in CFTLOG displays in tenths of seconds
 - 100: the time in CFTLOG displays in hundredths of seconds
 
-If the` cft.cftlog.time_precision` value is greater than 9, the Transfer CFT EventTime message sent to Sentinel has the HH:MM:SS.dh0 format.
+If the<span class="code">` cft.cftlog.time_precision`</span> value is greater than 9, the Transfer CFT EventTime message sent to Sentinel has the HH:MM:SS.dh0 format.
 
 **Example**
 

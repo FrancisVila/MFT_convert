@@ -68,20 +68,20 @@ Used to obtain part or all of the information of a catalog entry.
 
 The possible values are:
 
-- ****BRIEF****: Displays the most basic, essential information
+- <span style="font-weight: bold;">****BRIEF****</span>: Displays the most basic, essential information
     concerning the selected transfers with one line per transfer
-- ****EXTEND****: Displays information concerning
+- <span style="font-weight: bold;">****EXTEND****</span>: Displays information concerning
     security, exits and end-of-transfer procedures, as well as the BRIEF type
     information with one line per transfer
 - **COMMUT**: Displays a sort of BRIEF output, but contains some network-oriented details
-- ****FULL****: Displays complete information concerning
+- <span style="font-weight: bold;">****FULL****</span>: Displays complete information concerning
     each transfer
-- ****DEBUG****: Displays the most complete output with additional information beyond the FULL content
+- <span style="font-weight: bold;">****DEBUG****</span>: Displays the most complete output with additional information beyond the FULL content
 - **BLKNUM**: Displays the same information as BRIEF, but the **Appli id** and **Appstate** columns are replaced by the **blknum** column
 
 #### LISTCOM
 
-**\[CONTENT = { ACTIVE |
+**\[CONTENT = {<span style="text-decoration: underline;"> ACTIVE</span> |
 FULL }\]**
 
 Used to obtain part or all of the
@@ -90,7 +90,7 @@ information of a catalog entry.
 - ACTIVE: Displays only communication records that are not empty
 - FULL: Displays all communication records
 
-****Example****
+<span class="bold_in_para">****Example****</span>
 
 ```
 LISTCOM CONTENT =FULL
@@ -127,7 +127,7 @@ Level of content included in output:
 #### MQUERY (OBJECT=CACHE or SYSTEM)
 
 ******\[CONTENT =
-{ BRIEF
+{ <span style="text-decoration: underline;">BRIEF</span>
 | FULL | STAT } \]******
 
 Used to obtain part or all of the
@@ -136,7 +136,7 @@ information.
 #### MQUERY (OBJECT=PROBE or STATS)
 
 ******\[CONTENT =
-{ XMLBRIEF
+{ <span style="text-decoration: underline;">XMLBRIEF</span>
 | XMLFULL | RAW } \]******
 
 Used to obtain part or all of the

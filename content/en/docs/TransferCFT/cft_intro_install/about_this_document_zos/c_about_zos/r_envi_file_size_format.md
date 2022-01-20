@@ -43,7 +43,7 @@ The tables in this section provide information about the files and allocation re
 
 ## Instance environment file formats and requirements
 
-The following allocations are required per Transfer CFT{{< TransferCFT/componentshortname  >}}.
+The following allocations are required per {{< TransferCFT/axwayvariablesComponentShortName  >}}.
 
 
 | **File** | **Environment** | **Allocation** |
@@ -80,7 +80,7 @@ The following allocations are required per Transfer CFT{{< TransferCFT/component
 >  
 
 - The *Instance environment* list above does not include files that Transfer CFT creates in its implementation, such as CATALOG, PARM, PART, COM, PKIFILE, LOG, ACCOUNT etc.
-- The persistent cache file for PassPort AM (CFTAM, VSAM KSDS) is created when the UCONF AM.type=passport variable is set to ****Yes****.
+- The persistent cache file for PassPort AM (CFTAM, VSAM KSDS) is created when the UCONF AM.type=passport variable is set to <span class="bold_in_para">****Yes****</span>.
 - To customize INSTALL, SAMPLE, EXEC and UPARM THE library must be PDS and not PDSE.
 
 ****Related topics****

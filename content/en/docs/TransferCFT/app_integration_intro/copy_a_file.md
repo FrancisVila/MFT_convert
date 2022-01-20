@@ -6,7 +6,7 @@
 
 ## Enable the copy file functionality
 
-This functionality is comprised of a delivered configuration and sample script files. To enable the copy file functionality, interpret the `cft-copyfile.conf` configuration file.
+This functionality is comprised of a delivered configuration and sample script files. To enable the copy file functionality, interpret the <span class="code">`cft-copyfile.conf`</span> configuration file.
 
 **Unix**
 
@@ -32,7 +32,7 @@ JCL ..INSTALL(CFTCOPYF)
 CFTUTIL PARAM('#CFTPROD/CPYFILE(CPYFCONF)')
 ```
 
-The configuration file contains two defined partners, COPY\_SRC and COPY\_DST, and a flow called COPYFILE. In the delivered sample configuration file both partners are local, but you can modify the HOST and SAP parameters, in the CFTTCP and CFTPART definitions respectively, to use two different Transfer CFT{{< TransferCFT/componentlongname  >}} instances.
+The configuration file contains two defined partners, COPY\_SRC and COPY\_DST, and a flow called COPYFILE. In the delivered sample configuration file both partners are local, but you can modify the HOST and SAP parameters, in the CFTTCP and CFTPART definitions respectively, to use two different {{< TransferCFT/axwayvariablesComponentLongName  >}} instances.
 
 ## Define a request to copy a file
 
@@ -81,7 +81,7 @@ The same concepts apply for all OS, but there is a different syntax depending on
 
 ### Copied file transfer details
 
-When you view the transfer record for a copied file, either in the catalog or in Central Governance{{< TransferCFT/centralgovernancename  >}}, only certain transfer details display. For the actual copied file, only the FNAMEs, that is the source filename in the sent transfer and the destination filename on reception, are displayed. Other parameters related to the copied file, such as FLRECL, FRECS, FSPACE, and so on, are not available.
+When you view the transfer record for a copied file, either in the catalog or in {{< TransferCFT/suitevariablesCentralGovernanceName  >}}, only certain transfer details display. For the actual copied file, only the FNAMEs, that is the source filename in the sent transfer and the destination filename on reception, are displayed. Other parameters related to the copied file, such as FLRECL, FRECS, FSPACE, and so on, are not available.
 
 > **Note**
 >

@@ -2,7 +2,7 @@
     "title": "Transfer command basics",
     "linkTitle": "Transfer concepts",
     "weight": "140"
-}The transfer concept topics introduce the various Transfer CFT{{< TransferCFT/componentshortname  >}} transfer
+}The transfer concept topics introduce the various {{< TransferCFT/axwayvariablesComponentShortName  >}} transfer
 processes. For general transfer principles, refer to the introductory
 overview section.
 
@@ -37,7 +37,7 @@ There are two ways to supply parameters for a command:
 
 QQQ\_QQQ\_CHECK I put the "For each command" part before the 2 tables. They were after a single table.
 
-For each command, the Transfer CFT{{< TransferCFT/componentshortname  >}} command interface performs the following
+For each command, the {{< TransferCFT/axwayvariablesComponentShortName  >}} command interface performs the following
 actions:
 
 - Checks the syntax

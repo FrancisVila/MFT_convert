@@ -104,11 +104,11 @@ Two command samples contain the VIPAdistribute Statement, which concerns the SYS
 
 ### About REST API
 
-When using REST API (`copilot.restapi.enable=yes`) in a multi-node environment, you must also define the `copilot.restapi.serverport` value in the VIPA configuration. See, for example, the delivered UPARM(TCVIPRN5) and UPARM(TCVIPWG5) files.
+When using REST API (<span class="code">`copilot.restapi.enable=yes`</span>) in a multi-node environment, you must also define the <span class="code">`copilot.restapi.serverport`</span> value in the VIPA configuration. See, for example, the delivered UPARM(TCVIPRN5) and UPARM(TCVIPWG5) files.
 
 ## Define a distribution method
 
-The following examples, `WeightedActive `and `RounRobin`, represent two of the possible load distribution methods that you can use in VIPA. Select a load distribution method, and execute the corresponding VARY OBEYFILE  command once you have finished customizing this option.
+The following examples, <span class="code">`WeightedActive `</span>and <span class="code">`RounRobin`</span>, represent two of the possible load distribution methods that you can use in VIPA. Select a load distribution method, and execute the corresponding VARY OBEYFILE  command once you have finished customizing this option.
 
 **Weighted active example**
 

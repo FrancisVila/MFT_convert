@@ -13,7 +13,7 @@
 
 If the user function manages file accessing, it must de-allocate the
 file and save the zwork working area for subsequent restarting purposes,
-before handing back control to Transfer CFT{{< TransferCFT/componentshortname  >}}.
+before handing back control to {{< TransferCFT/axwayvariablesComponentShortName  >}}.
 
 ### Fields to define
 

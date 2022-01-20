@@ -6,7 +6,7 @@
 
 ## Display information
 
-Use the `CFTUTIL ABOUT` command to display the product information, including the service pack number and patch number.
+Use the <span class="code">`CFTUTIL ABOUT`</span> command to display the product information, including the service pack number and patch number.
 
 ******Results******
 
@@ -28,7 +28,7 @@ To apply a service pack:
 1. Log in as the **CFTINST** user (user with \*ALLOBJ rights).
 1. Create a SAVF on your IBM i system.
 1. Upload the Transfer\_CFT\_3.2.x\_SPx\_os400.bin (in binary mode) to the SAVF you created in Step 2.
-1. Restore the SAVF to a temporary library, add it to your library list, and then launch the `UPDATE `command.
+1. Restore the SAVF to a temporary library, add it to your library list, and then launch the <span class="code">`UPDATE `</span>command.
 1. Complete the required fields:
 
 - In the first field, enter your program library.
@@ -41,7 +41,7 @@ To apply a service pack:
 
 - Press Enter to continue.
 
-    Use the `CFTUTIL ABOUT` command to check the service pack level.
+    Use the <span class="code">`CFTUTIL ABOUT`</span> command to check the service pack level.
 
     Results, for example, after applying SP4:
 
@@ -56,7 +56,7 @@ When you install a service pack, the contents of the home directory are updated,
 1. Stop Transfer CFT.
 1. Create a SAVF on your IBM i system.
 1. Upload the Transfer\_CFT-SPx\_Patchz\_os400.bin (in binary mode) to the SAVF you created in Step 2.
-1. Restore the SAVF to a temporary library, add it to the top of your library list, and then launch the `PATCHER `command.
+1. Restore the SAVF to a temporary library, add it to the top of your library list, and then launch the <span class="code">`PATCHER `</span>command.
 1. Complete the required fields:
 
 - In the first field, enter your CFT program library.
@@ -74,7 +74,7 @@ SAVF for backup . . . . . . . . PATCHSAV Character value
 
 **Results**
 
-Use the `CFTUTIL ABOUT` command to check the patch level.
+Use the <span class="code">`CFTUTIL ABOUT`</span> command to check the patch level.
 
 Results, for example, after applying SP2\_Patch2:
 

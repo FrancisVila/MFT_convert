@@ -4,7 +4,7 @@
     "weight": "2710"
 }<span id="prof"></span>
 
-### prof
+### {{< TransferCFT/SystemTitle  >}}
 
 #### CFTPROT
 
@@ -17,7 +17,7 @@ D or E protocol profile
 
 The profile options are:
 
-****SIT profile****: the
+<span class="bold_in_para">****SIT profile****</span>: the
 PeSIT is then used in the SIT network context. This is the same in PeSIT version D and version E. It provides synchronization point management but does
 not manage:
 
@@ -35,18 +35,18 @@ not manage:
 > in the PeSIT SIT profile cannot segment a record sent in several data
 > FPDUs or group several records sent in the same data FPDU.
 
-****EXTERN profile****:
+<span class="bold_in_para">****EXTERN profile****</span>:
 Corresponds to the “non-SIT” (external to SIT network) standardized definition
 of the PeSIT version D protocol.
 
-****CFT profile****: The
+<span class="bold_in_para">****CFT profile****</span>: The
 PeSIT version D protocol is used outside the context of the SIT network,
-the partner also having a Transfer CFT{{< TransferCFT/componentshortname  >}}. Its functionality level is greater than the PeSIT
+the partner also having a {{< TransferCFT/axwayvariablesComponentShortName  >}}. Its functionality level is greater than the PeSIT
 D EXTERN profile specifications.
 
-****ANY profile****: Corresponds
+<span class="bold_in_para">****ANY profile****</span>: Corresponds
 to the “non-SIT” (external to SIT network) standardized definition of
-the PeSIT version E protocol. This profile includes Transfer CFT{{< TransferCFT/componentshortname  >}} profile facilities
+the PeSIT version E protocol. This profile includes {{< TransferCFT/axwayvariablesComponentShortName  >}} profile facilities
 as standard.
 
 Additional facilities are provided between two Transfer

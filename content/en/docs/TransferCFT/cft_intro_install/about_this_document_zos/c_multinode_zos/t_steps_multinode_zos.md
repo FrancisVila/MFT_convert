@@ -4,7 +4,7 @@
     "weight": "180"
 }**Installing Transfer CFT**
 
-If you have not done so already, begin by performing a standard Transfer CFT z/OS installation. See the [Transfer CFT 3.9{{< TransferCFT/componentversion  >}} z/OS Installation Overview](../../c_about_zos) for information on how to get started. You can set up Transfer CFT multi-node either with multiple nodes and hosts, or multi-node mono-host. This documentation primarily focuses on the multi-node, multi-host scenario.
+If you have not done so already, begin by performing a standard Transfer CFT z/OS installation. See the [Transfer CFT {{< TransferCFT/axwayvariablesComponentVersion  >}} z/OS Installation Overview](../../c_about_zos) for information on how to get started. You can set up Transfer CFT multi-node either with multiple nodes and hosts, or multi-node mono-host. This documentation primarily focuses on the multi-node, multi-host scenario.
 
 If you create a multi-node, mulit-host installation, and the USS Environment for Transfer CFT is not shared between all the hosts, you must install a separate USS Environment on each host. To do this, execute the member COPA010, in the INSTALL library, on each host that is not shared.
 

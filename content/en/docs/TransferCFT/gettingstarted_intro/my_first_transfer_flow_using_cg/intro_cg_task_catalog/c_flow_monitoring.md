@@ -2,17 +2,17 @@
     "title": "Monitor transfers",
     "linkTitle": "Monitor transfers",
     "weight": "320"
-}In the Central Governance interface, select **Flows &gt; Monitoring** to open the Visibility user interface. Click **View\_Flows** to show the list of available searches. For example then, select **View all flows**, then **Execute**.
+}In the {{< TransferCFT/PrimaryCGorUM  >}} interface, select **Flows &gt; Monitoring** to open the Visibility user interface. Click **View\_Flows** to show the list of available searches. For example then, select **View all flows**, then **Execute**.
 
 ******Search for a specific file******
 
-Finds all events of the type Transfer CFT{{< TransferCFT/componentshortname  >}} by the name of the file transferred by the flow.
+Finds all events of the type {{< TransferCFT/axwayvariablesComponentShortName  >}} by the name of the file transferred by the flow.
 
 Click the browse icon to display a list of file names, and select the file name to filter. Or, enter the name of the file to filter.
 
 ******View a given flow******
 
-Finds all events of the type Transfer CFT{{< TransferCFT/componentshortname  >}} by the identifier of the executed flow.
+Finds all events of the type {{< TransferCFT/axwayvariablesComponentShortName  >}} by the identifier of the executed flow.
 
 Click the browse icon to display a list of flows, and select the identifier of the flow to filter. Or, enter the identifier of the flow to filter.
 
@@ -28,11 +28,11 @@ Finds flows by source or target application or both.
 
 Click the browse icon to display a list of applications, and select the application to filter. Or, enter the application to filter.
 
-******View all flows for a given** Transfer CFT{{< TransferCFT/componentshortname  >}}****
+******View all flows for a given** {{< TransferCFT/axwayvariablesComponentShortName  >}}****
 
-Finds flows by source or target Transfer CFT{{< TransferCFT/componentshortname  >}} or both.
+Finds flows by source or target {{< TransferCFT/axwayvariablesComponentShortName  >}} or both.
 
-Click the browse icon to display a list of Transfer CFTs, and select the Transfer CFT{{< TransferCFT/componentshortname  >}} to filter. Or, enter the Transfer CFT{{< TransferCFT/componentshortname  >}} to filter.
+Click the browse icon to display a list of {{< TransferCFT/PrimaryTransferCFTplural  >}}, and select the {{< TransferCFT/axwayvariablesComponentShortName  >}} to filter. Or, enter the {{< TransferCFT/axwayvariablesComponentShortName  >}} to filter.
 
 ******View all flows in error******
 
@@ -46,11 +46,11 @@ Finds all flows in error by source or target application or both.
 
 Click the browse icon to display a list of applications, and select the application to filter. Or, enter the application to filter.
 
-******View all flows in error for a given** Transfer CFT{{< TransferCFT/componentshortname  >}}****
+******View all flows in error for a given** {{< TransferCFT/axwayvariablesComponentShortName  >}}****
 
-Finds all flows in error by source or target Transfer CFT{{< TransferCFT/componentshortname  >}} or both.
+Finds all flows in error by source or target {{< TransferCFT/axwayvariablesComponentShortName  >}} or both.
 
-Click the browse icon to display a list of Transfer CFT{{< TransferCFT/componentshortname  >}}s, and select the Transfer CFT{{< TransferCFT/componentshortname  >}} to filter. Or, enter the Transfer CFT{{< TransferCFT/componentshortname  >}} to filter.
+Click the browse icon to display a list of {{< TransferCFT/axwayvariablesComponentShortName  >}}s, and select the {{< TransferCFT/axwayvariablesComponentShortName  >}} to filter. Or, enter the {{< TransferCFT/axwayvariablesComponentShortName  >}} to filter.
 
 ******View all high priority flows in error******
 
@@ -76,4 +76,4 @@ Finds all flows in error today.
 
 Click the name of the search to execute it. There are no conditions to specify. The search filters by today's date.
 
-****&lt;&lt;**** <a href="../../" class="bold_in_para MCXref xref xrefbold_in_para"><strong><strong>My first transfer flow</strong></strong></a>
+<span class="bold_in_para">****&lt;&lt;**** </span><a href="../../" class="bold_in_para MCXref xref xrefbold_in_para"><strong><strong>My first transfer flow</strong></strong></a>

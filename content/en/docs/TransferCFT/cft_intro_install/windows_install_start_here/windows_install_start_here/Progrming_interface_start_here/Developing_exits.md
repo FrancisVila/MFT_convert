@@ -94,9 +94,9 @@ in the CFTPART command:
 ****Example  
 ****
 
-`CFTPART ID=PART1`  
-`NSPART=*`  
-`NSPASSW = **`  
+<span class="code">`CFTPART ID=PART1`</span>  
+<span class="code">`NSPART=*`</span>  
+<span class="code">`NSPASSW = **`</span>  
 
 In this example, Transfer CFT will request the NSPART
 to be entered when the connection is made for the first time, and for
@@ -115,7 +115,7 @@ of an executable *cftexl.exe* (loaded into memory when the consultation
 takes place), accompanied by a sample file containing the selection criteria,
 *exitlist.txt*, which allows the data to be output by the Exit list
 to be selected from the central site (or from the server). To use the exit list you also need a definition file CFTNMLOG (see
-the section Logical File Names, the paragraph *Using
+the section <span class="italic_in_para">Logical File Names</span>, the paragraph *Using
 a definition file*). This is supplied as a sample and can be used only
 on condition that the file name for the selection criteria is *exitlist.txt.*
 

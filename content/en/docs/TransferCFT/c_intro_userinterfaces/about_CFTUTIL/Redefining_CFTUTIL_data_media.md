@@ -119,7 +119,7 @@ FNAME = <filename>
 
 Use to select a specific communication file.
 
-If the Transfer CFT{{< TransferCFT/hflongproductname  >}} configuration file refers to 2 communication files, for example cftcom1 and cftcom2:
+If the {{< TransferCFT/headerfootervariableshflongproductname  >}} configuration file refers to 2 communication files, for example cftcom1 and cftcom2:
 
 ```
 CFTPARM ID=IDPARM0, ..., COM=(COM1,COM2),....
@@ -137,7 +137,7 @@ CONFIG TYPE=COM,MEDIACOM=FILE,FNAME=$CFTDIRRUNTIME/data/cftcom2
 
 Use to select a TCPIP communication media.
 
-If the Transfer CFT{{< TransferCFT/hflongproductname  >}} configuration file refers to a communication file and a TCPIP communication media:
+If the {{< TransferCFT/headerfootervariableshflongproductname  >}} configuration file refers to a communication file and a TCPIP communication media:
 
 ```
 CFTPARM ID=IDPARM0, ..., COM=(COM,COMS),....

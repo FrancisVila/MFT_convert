@@ -8,7 +8,7 @@
 
 #### CFTNET
 
-**\[CLASS = n\]  **{1..32}
+**\[CLASS = n\]  **{<span style="text-decoration: underline;">1</span>..32}
 
 Class of the local resource used to establish a connection with a partner. Class associated with this network resource.
 
@@ -18,7 +18,7 @@ Class of the local resource used to establish a connection with a partner. Class
 
 #### CFTTCP
 
-**\[CLASS = {1
+**\[CLASS = {<span style="text-decoration: underline;">1</span>
 | n}\]    ** {1 .. 32}
 
 Logical class of the physical link. The maximum is operating system dependent

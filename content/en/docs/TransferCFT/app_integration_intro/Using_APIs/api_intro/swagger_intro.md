@@ -10,11 +10,11 @@ Swagger builds the HTTP frames and sends them to the REST server. However, befor
 
 ****Basic authorization****
 
-Enter your Transfer CFT{{< TransferCFT/componentlongname  >}} login name and password in the **Username/Password** fields. Click **Authorize**.
+Enter your {{< TransferCFT/axwayvariablesComponentLongName  >}} login name and password in the **Username/Password** fields. Click **Authorize**.
 
 ****Bearer authorization****
 
-Copy your token from the Transfer CFT{{< TransferCFT/componentlongname  >}} UI ****My Access Tokens**** page into the ****Value**** field and click Authorize. Click **Authorize**.
+Copy your token from the {{< TransferCFT/axwayvariablesComponentLongName  >}} UI <span class="bold_in_para">****My Access Tokens****</span> page into the <span class="bold_in_para">****Value**** </span>field and click Authorize. Click **Authorize**.
 
 ![](/Images/TransferCFT/authorization_swagger.png)
 
@@ -24,4 +24,4 @@ Copy your token from the Transfer CFT{{< TransferCFT/componentlongname  >}} UI *
 
 #### Try it out option
 
-The ******Try it out****** option allows you to execute API requests from within the Swagger UI.
+The <span class="bold_in_para" style="font-style: italic;">******Try it out******</span> option allows you to execute API requests from within the Swagger UI.

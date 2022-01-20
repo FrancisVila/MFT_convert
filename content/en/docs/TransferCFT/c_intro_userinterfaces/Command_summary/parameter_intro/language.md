@@ -8,7 +8,7 @@
 
 #### CFTEXIT, CFTACCNT
 
-****\[LANGUAGE = { COBOL
+****\[LANGUAGE = { <span style="text-decoration: underline;">COBOL</span>
 | C } \]****
 
 The programming language of the application that uses the statistical

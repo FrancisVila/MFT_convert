@@ -5,7 +5,7 @@
 }## Roles
 
 
-| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{< TransferCFT/componentshortname  >}} |
+| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{< TransferCFT/axwayvariablesComponentShortName  >}} |
 | --- | --- | --- | --- | --- |
 | Direction | Integer | - |  • S: The file is sent (Sender).<br/> • R: The file is received (Receiver). | DIRECT |
 | IsServer | Integer | - |  • 1: The Sender or the Receiver is a Server.<br/> • 0: The Sender the Receiver is a Requester. | FLAG |
@@ -14,7 +14,7 @@
 ## Senders and receivers
 
 
-| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{< TransferCFT/componentshortname  >}} |
+| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{< TransferCFT/axwayvariablesComponentShortName  >}} |
 | --- | --- | --- | --- | --- |
 | Site | String | 25 | Partner alias of the remote partner. | PART |
 | ReceiverId | String | 80 | Name of the Receiver. | NRPART |
@@ -32,7 +32,7 @@
 The product that sends the events is identified with the following:
 
 
-| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{< TransferCFT/componentshortname  >}} |
+| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{< TransferCFT/axwayvariablesComponentShortName  >}} |
 | --- | --- | --- | --- | --- |
 | Location | String | 31 | Unique and logical identifier for the product. | PART parameter of the CFTPARM object. |
 | Monitor | String | 4 | Product name. | “CFT” |
@@ -42,7 +42,7 @@ The product that sends the events is identified with the following:
 ## Transfer users
 
 
-| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{< TransferCFT/componentshortname  >}} |
+| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{< TransferCFT/axwayvariablesComponentShortName  >}} |
 | --- | --- | --- | --- | --- |
 | UserId | String | 25 | Local identifier of the user who owns the transferred file. | USERID |
 | GroupId | String | 25 | Local identifier of the group to which the transfer owner belongs. | GROUPID |
@@ -56,7 +56,7 @@ The product that sends the events is identified with the following:
 ## Transfer identification
 
 
-| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{< TransferCFT/componentshortname  >}} |
+| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{< TransferCFT/axwayvariablesComponentShortName  >}} |
 | --- | --- | --- | --- | --- |
 | IdAppl | String | 25 | If the value of the IsServer attribute is:<br/> • 0: The value of this attribute is the local identifier of the Requester.<br/> • 1: The value of this attribute is empty. | ****IDA**** |
 | Application | String | 80 | Local application/Transfer profile (ST). | IDF |
@@ -86,7 +86,7 @@ The product that sends the events is identified with the following:
 ## Transfer dates and times
 
 
-| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{< TransferCFT/componentshortname  >}} |
+| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{< TransferCFT/axwayvariablesComponentShortName  >}} |
 | --- | --- | --- | --- | --- |
 | CreationDate | Date | - | By default, the system date on which the Sender sent the transfer. The Sender can set this date. The Receiver can filter transfers based on this date. | ****FDATE**** |
 | CreationTime | Time | - | By default, the system time at which the Sender sent the transfer. The Sender can set this time. The Receiver can filter transfers based on this time. | FTIME |
@@ -106,7 +106,7 @@ The product that sends the events is identified with the following:
 ## Transfer protocols
 
 
-| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{< TransferCFT/componentshortname  >}} |
+| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{< TransferCFT/axwayvariablesComponentShortName  >}} |
 | --- | --- | --- | --- | --- |
 | Protocol | String | 25 | Name of the protocol that operates at the Protocol Layer of the transfer. Possible values:<br/> • CFT (PeSIT, version CFT)<br/> • PSIT_HS_E (PeSIT, version E)<br/> • PSIT_HS_D (PeSIT, version D)<br/> • ODT (ODETTE File Transfer Protocol) | Protocol |
 | IsSSL | String | 1 |  • 1: SSL/TLS used for the transfer.<br/> • 0: SSL/TLS not used for the transfer. | SSLMODE |
@@ -117,7 +117,7 @@ The product that sends the events is identified with the following:
 ## Transfer options
 
 
-| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{< TransferCFT/componentshortname  >}} |
+| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{< TransferCFT/axwayvariablesComponentShortName  >}} |
 | --- | --- | --- | --- | --- |
 | Compression | String | 1 | One of the following:<br/> • 0: Undefined<br/> • 1: Horizontal<br/> • 2: Vertical<br/> • 3: Both horizontal and vertical<br/> • 4: Not compressed | ****NCOMP**** |
 | EOTProcedure | String | 255 | Name of the end-of-transfer procedure executed upon the completion of the transfer. | EXEC |
@@ -131,7 +131,7 @@ The product that sends the events is identified with the following:
 ## Transfer size
 
 
-| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{< TransferCFT/componentshortname  >}} |
+| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{< TransferCFT/axwayvariablesComponentShortName  >}} |
 | --- | --- | --- | --- | --- |
 | FileSize | Integer | - | Size of the transferred file. This size is expressed in bytes.<br/> <blockquote> **Note**<br/> For PeSIT, an estimation of size is given at the beginning of the transfer. This value is updated upon completion of the transfer with the real value.<br/> </blockquote>  | ****FSPACE**** |
 | TransmittedBytes | Integer | - | Number of bytes transferred, after decompression, to transfer the file. This size is expressed in bytes.<br/> <blockquote> **Note**<br/> For PeSIT, this value sent is crosschecked by both the sender and receiver.<br/> </blockquote>  | NCAR |
@@ -140,7 +140,7 @@ The product that sends the events is identified with the following:
 ## The structure and content of transfers
 
 
-| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{< TransferCFT/componentshortname  >}} |
+| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{< TransferCFT/axwayvariablesComponentShortName  >}} |
 | --- | --- | --- | --- | --- |
 | CommandType | String | 1 |  • F: File transfer<br/> • M: Message transfer<br/> • A: Message reply<br/> • N: Message nack | TYPE |
 | FileOrganization | String | 25 |  • org_sequential: The transferred data is not indexed.<br/> • indexed: The transferred data is indexed.<br/> • direct: The transferred data is assigned relative access. | FORG |
@@ -155,7 +155,7 @@ The product that sends the events is identified with the following:
 ## Other attribute
 
 
-| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{< TransferCFT/componentshortname  >}} |
+| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{< TransferCFT/axwayvariablesComponentShortName  >}} |
 | --- | --- | --- | --- | --- |
 | IsRelay | String | 1 | If transfer event comes from a relay site:<br/> • 1: Yes<br/> • 0: No | IsRelay |
 | NodeId  | Integer  |   | Identifier of the node that executes the transfer  | NodeID  |

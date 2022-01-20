@@ -4,7 +4,7 @@
     "weight": "350"
 }This topic describes how to configure the environment for a directory
 type exit. Before you submit a directory type EXIT, you must customize
-the following Transfer CFT{{< TransferCFT/componentshortname  >}} objects:
+the following {{< TransferCFT/axwayvariablesComponentShortName  >}} objects:
 
 - [CFTPROT](#Defining_the_CFTPROT_object)
     defines both the application protocol type and profile
@@ -15,7 +15,7 @@ Each CFTEXIT object corresponds to an EXIT task. The number of EXIT
 tasks of all types simultaneously active is limited to a number depending
 on the operating system.
 
-EXIT type directory tasks are activated in memory when Transfer CFT{{< TransferCFT/componentshortname  >}}
+EXIT type directory tasks are activated in memory when {{< TransferCFT/axwayvariablesComponentShortName  >}}
 is started and de-activated when the monitor is shut down.
 
 <span id="Defining_the_CFTPROT_object"></span>
@@ -81,8 +81,8 @@ the EXITA parameter of the related CFTPROT object.
 Optional parameter. Indicates the format
 for the communication area.
 
-- ****V23**** (Default value)
-- ****V24****
+- <span style="font-weight: bold;">****V23**** </span>(Default value)
+- <span style="font-weight: bold;">****V24****</span>
 
 ******\[[LANGUAGE](../../../../c_intro_userinterfaces/command_summary/parameter_intro/language)
 = {COBOL | C}\]******
@@ -91,7 +91,7 @@ Language in which the user program is written.
 
 The possible values are COBOL and C language.
 
-Transfer CFT{{< TransferCFT/componentshortname  >}} uses this attribute to exchange data with the program using
+{{< TransferCFT/axwayvariablesComponentShortName  >}} uses this attribute to exchange data with the program using
 the EXIT via the structure best suited to the language in which it is
 implemented.
 
@@ -105,18 +105,19 @@ Free user field.
 
 Name of the executable module associated with the EXIT task.
 
-This module is built from the interface provided with Transfer CFT{{< TransferCFT/componentshortname  >}} linked
+This module is built from the interface provided with {{< TransferCFT/axwayvariablesComponentShortName  >}} linked
 to the program written by the user. In order to facilitate identification
 of the associated module, it is advised to name it CFTEXIA.
 
 ****\[[RESERV](../../../../c_intro_userinterfaces/command_summary/parameter_intro/reserv)  =
-{<u>1024</u> | n}\]     ****{0 ...1024}    ********
+{<u>1024</u> | n}\]    <span style="font-weight: bold;"> ****{0 ...1024}    ****
+</span>****
 
 Size of the working area reserved for the user.
 
-This area is not used by the Transfer CFT{{< TransferCFT/componentshortname  >}} interface. You can use it
+This area is not used by the {{< TransferCFT/axwayvariablesComponentShortName  >}} interface. You can use it
 to save data required for the processing of the program that you have
-written. This area is de-allocated when the Transfer CFT{{< TransferCFT/componentshortname  >}} interface de-selects
+written. This area is de-allocated when the {{< TransferCFT/axwayvariablesComponentShortName  >}} interface de-selects
 the file.
 
 ******[TYPE](../../../../c_intro_userinterfaces/command_summary/parameter_intro/type) =

@@ -2,7 +2,7 @@
     "title": "Conversion tables ",
     "linkTitle": "Conversion tables",
     "weight": "210"
-}This section describes how to use a conversion table in Transfer CFT Transfer CFT IBM i in the following sections:
+}This section describes how to use a conversion table in Transfer CFT {{< TransferCFT/PrimaryForOS400  >}} in the following sections:
 
 - Using a conversion table
 - Configuration sample
@@ -26,7 +26,7 @@ During Transfer CFT operations conversion problems may occur when:
 
 The default EBCDIC character set used by Transfer CFT has code 297 (EBCDIC France).
 
-The default ASCII character set used by Transfer CFT is not fully compatible with code 850 (IBM multilingual personal computer). For more information refer to the *Transfer CFT User Guide*. ADD LINK
+The default ASCII character set used by Transfer CFT is not fully compatible with code 850 (IBM multilingual personal computer). For more information refer to the *Transfer CFT User Guide*. <span style="color: #b22222;">ADD LINK</span>
 
 Consequently, two files supplied in the production library are used to enter and create a conversion table in Transfer CFT:
 
@@ -46,7 +46,7 @@ The CFTPROD/tabaseb.x binary file is created: it constitutes the conversion tabl
 
 ## Configuration sample
 
-The following is a full Transfer CFT Transfer CFT IBM i configuration sample for a Windows system, which is a typical and frequent scenario.
+The following is a full Transfer CFT {{< TransferCFT/PrimaryForOS400  >}} configuration sample for a Windows system, which is a typical and frequent scenario.
 
 ```
 **Transfer CFT IBM i configuration**

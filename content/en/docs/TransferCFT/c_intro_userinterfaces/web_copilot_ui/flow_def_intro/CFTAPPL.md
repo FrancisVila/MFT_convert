@@ -2,7 +2,7 @@
     "title": "Assigning  a transfer owner",
     "linkTitle": "Transfer owner assignment - CFTAPPL",
     "weight": "240"
-}This section describes how to configure access management when not using Central Governance.
+}This section describes how to configure access management when not using {{< TransferCFT/PrimaryCGorUM  >}}.
 
 For a specified transfer and file or message identifier, Transfer CFT
 assigns the USERID identifier defined in the corresponding CFTAPPL command.
@@ -25,7 +25,7 @@ in this section).
 If neither the corresponding CFTAPPL command nor the default command
 can be found, the transfer is refused.
 
-For more details, refer to Pre-Transfer Controls
+For more details, refer to<span class="italic_in_para"> Pre-Transfer Controls</span>
 and the Requester/Sender and Server/Sender examples in
 the previous topic.
 
@@ -118,7 +118,7 @@ the variable is replaced with the USERID that created the transfer.
 
  
 
-This section describes how to configure access management when not using Central Governance.
+This section describes how to configure access management when not using {{< TransferCFT/PrimaryCGorUM  >}}.
 
 The concept of a local application is used by Transfer CFT when submitting
 transfer requests and executing the associated transfers. It corresponds

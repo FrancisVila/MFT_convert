@@ -6,12 +6,12 @@
 two interfaces and the development kit contents for building APIs.
 
 - Applications communicating
-    with Transfer CFT{{< TransferCFT/componentshortname >}} to submit and monitor transfers or query the catalog,
+    with {{< TransferCFT/axwayvariablesComponentShortName >}} to submit and monitor transfers or query the catalog,
     for example.
 - Exits enabling
     user programs to take control during a send operation.
 
-Transfer CFT{{< TransferCFT/componentshortname  >}} provides a programming interface in C, which require that you have the development kit, C compiler, and associated tools installed on your system.
+{{< TransferCFT/axwayvariablesComponentShortName  >}} provides a programming interface in C, which require that you have the development kit, C compiler, and associated tools installed on your system.
 
 This section then describes how to
 create the following applications:
@@ -27,7 +27,7 @@ create the following applications:
 
 ## Development kit contents
 
-The development kit used to integrate the Transfer CFT{{< TransferCFT/componentshortname  >}} APIs is divided
+The development kit used to integrate the {{< TransferCFT/axwayvariablesComponentShortName  >}} APIs is divided
 into several directories that include the CFTPGM library, which contains all library modules necessary for APIs and exits. These library modules are required to use the corresponding function:
 
 
@@ -39,11 +39,11 @@ into several directories that include the CFTPGM library, which contains all lib
 | libcftexe.srvpgm  | End-of-transfer EXITs  |
 
 
-To generate a user application based on the Transfer CFT{{< TransferCFT/componentshortname  >}} APIs and use
-the file exit function, you must link the following with the `libapisrv1.srvpgm` and `libcftexe.srvpgm` libraries:
+To generate a user application based on the {{< TransferCFT/axwayvariablesComponentShortName  >}} APIs and use
+the file exit function, you must link the following with the <span class="code">`libapisrv1.srvpgm`</span> and <span class="code">`libcftexe.srvpgm`</span> libraries:
 
-- `<installdir>/runtime/src/capi/` containing
+- <span class="code">`<installdir>/runtime/src/capi/`</span> containing
     a command entry and catalog query example
-- `<installdir>/runtime/src/exit/` containing
+- <span class="code">`<installdir>/runtime/src/exit/`</span> containing
     simple examples of file exits, directory exits, and end
     -of-transfer exits

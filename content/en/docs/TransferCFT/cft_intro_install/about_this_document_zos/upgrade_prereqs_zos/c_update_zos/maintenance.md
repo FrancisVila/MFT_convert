@@ -19,7 +19,7 @@ The data set SMPCNTL contains the following model job for receiving SMP/E PTFs.
 
 Edit the sample jobs that are listed in the following table, modifying as necessary (supply a valid JOB JCL card statement, select and modify the dataset qualifier &HLQ& and the Patch number &NNNN&).
 
-The format of a Transfer CFT PTF SYSMOD ID is `P01NNNN`. For example, the PTF `P010003` is comprised of the Patch number 0003, where P01 represents Transfer CFT version 323.
+The format of a Transfer CFT PTF SYSMOD ID is <span class="code">`P01NNNN`</span>. For example, the PTF <span class="code">`P010003`</span> is comprised of the Patch number 0003, where P01 represents Transfer CFT version 323.
 
 The SMPCNTL data set contains the following model job for the SMP/E PTFs maintenance.
 

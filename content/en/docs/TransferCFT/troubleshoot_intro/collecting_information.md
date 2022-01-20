@@ -4,11 +4,11 @@
     "weight": "220"
 }Transfer CFT generates messages that provide information about the processes
 and events that occur on the Transfer CFT. These messages are collected and
-stored in a log file. If you are using Central Governance{{< TransferCFT/centralgovernancename  >}}, in the **Products List** page select the Transfer CFT in question. In the Transfer CFT page, select **Logs** in the right pane to view the Transfer CFT logs.
+stored in a log file. If you are using {{< TransferCFT/suitevariablesCentralGovernanceName  >}}, in the **Products List** page select the Transfer CFT in question. In the Transfer CFT page, select **Logs** in the right pane to view the Transfer CFT logs.
 
 Transfer CFT also generates messages that provide information about
 the state of a transfer. These messages are collected and stored in a
-catalog file. From the Central Governance{{< TransferCFT/centralgovernancename  >}} main menu, select **Flow** &gt; **Monitoring** &gt; and then the type of View, for example **View all flows in error for a given application**.
+catalog file. From the {{< TransferCFT/suitevariablesCentralGovernanceName  >}} main menu, select **Flow** &gt; **Monitoring** &gt; and then the type of View, for example **View all flows in error for a given application**.
 
 <span id="How_to_get_information_when_an_error_occurs"></span>
 
@@ -68,13 +68,13 @@ QQQ\_QQQ\_QQQ
 
 ## Documentation
 
-If an error occurred while running Transfer CFT in Central Governance, you may also want to consult the Central Governance documentation.
+If an error occurred while running Transfer CFT in Central Governance, you may also want to consult the {{< TransferCFT/PrimaryCGorUM  >}} documentation.
 
 Some corrective actions may be operating system specific, so you may also want to refer to:
 
 - Windows
-    operations in the Transfer CFT{{< TransferCFT/transfercftname >}} 3.9{{< TransferCFT/componentversion >}} User Guide{{< TransferCFT/doctypeuser >}}
+    operations in the {{< TransferCFT/suitevariablesTransferCFTName >}} {{< TransferCFT/axwayvariablesComponentVersion >}} {{< TransferCFT/suitevariablesDocTypeUser >}}
 - UNIX
-    operations in the Transfer CFT{{< TransferCFT/transfercftname >}} 3.9{{< TransferCFT/componentversion >}} User Guide{{< TransferCFT/doctypeuser >}}
-- Transfer CFT{{< TransferCFT/transfercftname >}} 3.9{{< TransferCFT/componentversion >}} z/OS Installation and Operation Guide
-- Transfer CFT{{< TransferCFT/transfercftname >}} 3.9{{< TransferCFT/componentversion >}} IBM i Installation and Operation Guide
+    operations in the {{< TransferCFT/suitevariablesTransferCFTName >}} {{< TransferCFT/axwayvariablesComponentVersion >}} {{< TransferCFT/suitevariablesDocTypeUser >}}
+- {{< TransferCFT/suitevariablesTransferCFTName >}} {{< TransferCFT/axwayvariablesComponentVersion >}} z/OS Installation and Operation Guide
+- {{< TransferCFT/suitevariablesTransferCFTName >}} {{< TransferCFT/axwayvariablesComponentVersion >}} IBM i Installation and Operation Guide

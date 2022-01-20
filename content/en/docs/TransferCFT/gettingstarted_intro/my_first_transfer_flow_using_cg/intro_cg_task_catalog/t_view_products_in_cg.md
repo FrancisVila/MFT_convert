@@ -2,7 +2,7 @@
     "title": "View products ",
     "linkTitle": "View products",
     "weight": "230"
-}To view your registered Transfer CFT{{< TransferCFT/componentshortname  >}}s click ****Products**** on the top toolbar to open the Product List page.
+}To view your registered {{< TransferCFT/axwayvariablesComponentShortName  >}}s click <span class="bold_in_para">****Products**** </span>on the top toolbar to open the Product List page.
 
 ![](/Images/TransferCFT/product_list_cg.png)
 
@@ -13,11 +13,11 @@ Copy or note the host name or IP address for each of the three Transfer CFTs tha
 
 | Transfer CFT  | Host name  | Application name  |
 | --- | --- | --- |
-| Transfer CFT{{< TransferCFT/componentshortname  >}} 1  | &lt; host name / IP address &gt;  | MainOffice  |
-| Transfer CFT{{< TransferCFT/componentshortname  >}} 2  | &lt; host name / IP address &gt;  | Store_66  |
-| Transfer CFT{{< TransferCFT/componentshortname  >}} 1  | &lt; host name / IP address &gt;  | Store_89  |
+| {{< TransferCFT/axwayvariablesComponentShortName  >}} 1  | &lt; host name / IP address &gt;  | MainOffice  |
+| {{< TransferCFT/axwayvariablesComponentShortName  >}} 2  | &lt; host name / IP address &gt;  | Store_66  |
+| {{< TransferCFT/axwayvariablesComponentShortName  >}} 1  | &lt; host name / IP address &gt;  | Store_89  |
 
 
  
 
-****&lt;&lt;**** <a href="../../" class="bold_in_para MCXref xref xrefbold_in_para"><strong><strong>My first transfer flow</strong></strong></a>
+<span class="bold_in_para">****&lt;&lt;**** </span><a href="../../" class="bold_in_para MCXref xref xrefbold_in_para"><strong><strong>My first transfer flow</strong></strong></a>

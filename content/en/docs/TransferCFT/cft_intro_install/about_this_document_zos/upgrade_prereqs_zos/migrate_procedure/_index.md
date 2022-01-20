@@ -16,7 +16,7 @@ All migration operations are from the target instance.
 
 The following table lists and describes the MIGR\* members used in a Transfer CFT migration process. If you want to use the delivered procedure, as a first step you need to customize the MIGR$SET member.
 
-Migration Job Control Language (JCL) Statements
+<span class="autonumber"></span>Migration Job Control Language (JCL) Statements
 
 
 | Member name | Purpose |
@@ -127,7 +127,7 @@ CFTEXT ID=cft.cftaccnt.fname.atts,TYPE=UCONF,FOUT=$EXT
 Etc.
 ```
 
-****Submit the procedure ..INSTALL(MIGRUCNF)****
+****<span class="span_1">Submit the procedure</span><span class="span_1"> ..</span><span class="span_1">INSTALL(MIGR</span><span class="span_1">UCNF</span><span class="span_1">)</span>****
 
 1. Migrate the CATALOG file (MIGRCAT) for a non multi-node environment.
 
@@ -145,7 +145,7 @@ You can set the following variables in the MIGR$SET file and (or) in the PMIGR2 
 | TMPSCAT | 'CYL,(50,10)' | Size allocation for work file.<br/> Use 3 cylinders for every 1000 transfers to be migrated. |
 
 
-****Submit the procedure ..INSTALL(MIGRCAT).****
+****<span class="span_1">Submit the procedu</span>re ..INSTALL(MIGRCAT).****
 
 1. Migrate the communication media file(s) (MIGRCOM)for a non mutli-node environment.
 

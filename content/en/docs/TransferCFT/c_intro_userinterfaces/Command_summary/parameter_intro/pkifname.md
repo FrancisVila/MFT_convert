@@ -18,7 +18,7 @@
 
 Name of the local certificate internal datafile in which the operation is to
 be performed. On each OS a default name is assigned to the local certificate
-database. The logical filename ****&CFTPKU****
+database. The logical filename <span style="font-family: 'Courier New', monospace;font-weight: bold;">****&CFTPKU****</span>
 can be used.
 
 #### PKIENTITY
@@ -27,7 +27,7 @@ can be used.
 
 Name of the local certificate internal datafile in which the operation is to
 be performed. On each OS a default name is assigned to the local certificate
-database. The logical filename ****&CFTPKU****
+database. The logical filename <span style="font-family: 'Courier New', monospace;font-weight: bold;">****&CFTPKU****</span>
 can be used.
 
  

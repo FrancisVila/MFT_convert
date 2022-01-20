@@ -10,7 +10,7 @@ The Windows installation directory must not contain any sub-folders or files tha
 
 ## Hardware and software requirements
 
-Before installing Transfer CFT{{< TransferCFT/componentshortname  >}} Windows check the following:
+Before installing {{< TransferCFT/axwayvariablesComponentShortName  >}} Windows check the following:
 
 - OS version
 - Communication
@@ -19,7 +19,7 @@ Before installing Transfer CFT{{< TransferCFT/componentshortname  >}} Windows ch
 These selections affect the minimum hardware and software requirements
 for the product and may be inter-dependent.
 
-Transfer CFT{{< TransferCFT/componentshortname  >}} is based on an external network layer, which must be installed before operating the product. And note that if other applications are running at the same time as Transfer CFT{{< TransferCFT/componentshortname  >}},
+{{< TransferCFT/axwayvariablesComponentShortName  >}} is based on an external network layer, which must be installed before operating the product. And note that if other applications are running at the same time as {{< TransferCFT/axwayvariablesComponentShortName  >}},
 the RAM requirement needs to be increased.
 
 ## Apply a service pack or patch, or upgrade using Central Governance
@@ -33,17 +33,17 @@ To upgrade or install a Transfer CFT Service Pack or patch from Central Governan
 
 User Account Control (UAC) is an option to add security infrastructure on Windows operating systems.
 
-For Windows versions that support UAC, Windows Vista, Windows Server 2008, Windows 7, Windows Server 2008 R2, and Windows 2012, you must disable the UAC when using Central Governance to apply patches, service packs or upgrades for Transfer CFT.
+For Windows versions that support UAC, Windows Vista, Windows Server 2008, Windows 7, Windows Server 2008 R2, and Windows 2012, you must disable the UAC when using {{< TransferCFT/PrimaryCGorUM  >}} to apply patches, service packs or upgrades for Transfer CFT.
 
 1. From the **Start** menu, type UAC and click to search.
 1. In the User Control Account settings pop-up window, set the slider to **Never Notify**.
 1. Click **OK**.
 1. Reboot to make the change effective.
 
-For Windows versions prior to the versions listed above, perform the following steps to add yourself in ****Log on as a service group****:
+For Windows versions prior to the versions listed above, perform the following steps to add yourself in <span class="bold_in_para">****Log on as a service group****</span>:
 
-1. Navigate to ****Start**** **&gt;** ****Control Panel**** **&gt;** ****Administrative Tools**** **&gt;** ****Local Security Policy****.
-1. From the tree, select ****Local Policies**** **&gt;** ****User Rights Assignment**** **&gt;** ****Log on as a service****.
+1. Navigate to<span class="spanboldinpara" style="font-weight: bold;"> ****Start**** </span>**&gt;**<span class="spanboldinpara" style="font-weight: bold;"> ****Control Panel**** </span>**&gt;**<span class="spanboldinpara" style="font-weight: bold;"> ****Administrative Tools****</span> **&gt;**<span class="spanboldinpara" style="font-weight: bold;"> ****Local Security Policy****</span>.
+1. From the tree, select <span class="spanboldinpara" style="font-weight: bold;">****Local Policies**** </span>**&gt;**<span class="spanboldinpara" style="font-weight: bold;"> ****User Rights Assignment**** </span>**&gt;**<span class="spanboldinpara" style="font-weight: bold;"> ****Log on as a service****</span>.
 
 > **Note**
 >
@@ -62,7 +62,7 @@ The following tasks require that you have elevated rights and fail if one of the
 
 - Create or remove shortcuts in Start menu or desktop
 - Create or remove Windows services
-- Installing in %SystemRoot% or %ProgramFiles%
+- Installing in <span class="code_1">%SystemRoot%</span> or <span class="code_1">%ProgramFiles%</span>
 - Running product scripts that require elevated rights
 
 <span id="Windows"></span>
@@ -88,11 +88,11 @@ The user who installs or upgrades Transfer CFT must be an administrator on the s
 
 ## Service mode prerequisites
 
-Note the following prerequisites and limitations when installing Transfer CFT{{< TransferCFT/componentlongname  >}} in service mode.
+Note the following prerequisites and limitations when installing {{< TransferCFT/axwayvariablesComponentLongName  >}} in service mode.
 
-- If you install Transfer CFT{{< TransferCFT/componentlongname >}} in service mode, to launch the service on a specific account you must grant that user service rights to log in.  
+- If you install {{< TransferCFT/axwayvariablesComponentLongName >}} in service mode, to launch the service on a specific account you must grant that user service rights to log in.  
     To grant this right, navigate to **Administrative Tools > Local Security Policy > Local Management > Local Policies**, and select **User Rights Assignment**. Then grant the user **Logon as a Service**.
-- If you install Transfer CFT{{< TransferCFT/componentlongname >}}in service mode but want to launch the service on a Local System Account, be aware that you cannot start Transfer CFT from the Copilot UI.
+- If you install {{< TransferCFT/axwayvariablesComponentLongName >}}in service mode but want to launch the service on a Local System Account, be aware that you cannot start Transfer CFT from the Copilot UI.
 - See also, <a href="../../n_active_active/shared_file_prereq_win" class="MCXref xref">Shared file system prerequisites</a>.
 
 ## Using a mapped drive

@@ -33,7 +33,7 @@
 ============================== table nb count(2) table converted to MD ========================================
 
 
-| Functionality  | Central Governance<br /> or Flow Manager | Transfer CFT user interface<br />  |
+| Functionality  | Central Governance<br /> <span > or Flow Manager </span> | Transfer CFT user interface<br />  |
 | --- | --- | --- |
 | Administration | X  | X  |
 | Configuration  | X*  | X  |
@@ -83,12 +83,12 @@
 | SFTP  | 1763  |
 | COMS  | 1765  |
 | Copilot  | 1766  |
-| Transfer CFT UI (Copilot) server for Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}  | 1767  |
+| Transfer CFT UI (Copilot) server for {{&lt; TransferCFT/suitevariablesCentralGovernanceName &gt;}}  | 1767  |
 | REST API  | 1768  |
-| Central Governance  | 12553  |
-| Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}} SSL  | 12554  |
-| Secure Relay{{&lt; TransferCFT/securerelayname &gt;}} MA<br/> ma.comm_port |  <br/> 6801 |
-| Secure Relay{{&lt; TransferCFT/securerelayname &gt;}} RA<br/> • ra.comm_port<br/> • ra.admin_port |  <br/> • 6811<br/> • 6810 |
+| {{&lt; TransferCFT/PrimaryCGorUM &gt;}}  | 12553  |
+| {{&lt; TransferCFT/suitevariablesCentralGovernanceName &gt;}} SSL  | 12554  |
+| {{&lt; TransferCFT/suitevariablesSecureRelayName &gt;}} MA<br/> ma.comm_port |  <br/> 6801 |
+| {{&lt; TransferCFT/suitevariablesSecureRelayName &gt;}} RA<br/> • ra.comm_port<br/> • ra.admin_port |  <br/> • 6811<br/> • 6810 |
 
 
 
@@ -98,32 +98,32 @@
 | Key element | Originating versions  | Updated versions  | Description  |
 | --- | --- | --- | --- |
 | API and Exits  | all versions  | to any version  | You must recompile any API or Exit programs that are used by Transfer CFT.  |
-| Configuration cache feature<br/> (cft.server.parm.cache_size) | Lower than 3.8  | 3.8 and higher  | <span id="parmcache"></span>The default value is now 5000 instead of zero, making the cache feature active by default.<br/> This means that updates no longer occur dynamically; you can execute <code>RECONFIG </code>type<code>=PARMCACHE </code>or wait for a cache timeout as defined in <code>cft.server.parm.cache_timeout (60 seconds).</code> |
-| cft.listcat_compat = No<br/> cft.state_compat = No | Lower than 3.8  | 3.8 and higher  | Modified the default value for the <code>cft.listcat_compat </code>(lstcompat) and <code> cft.state_compat </code>(stacompat) parameters from YES to NO. |
+| Configuration cache feature<br/> (cft.server.parm.cache_size) | Lower than 3.8  | 3.8 and higher  | <span id="parmcache"></span>The default value is now 5000 instead of zero, making the cache feature active by default.<br/> This means that updates no longer occur dynamically; you can execute <span ><code>RECONFIG </code></span>type<span ><code>=PARMCACHE </code></span>or wait for a cache timeout as defined in <span ><code>cft.server.parm.cache_timeout (60 seconds).</code></span> |
+| cft.listcat_compat = No<br/> cft.state_compat = No | Lower than 3.8  | 3.8 and higher  | Modified the default value for the <span ><code>cft.listcat_compat </code></span>(lstcompat) and <span ><code> cft.state_compat </code></span>(stacompat) parameters from YES to NO. |
 | Amazon S3  | Lower than 3.8  | 3.8 and higher  | When using Amazon S3, the default setting FACTION=VERIFY is no longer ignored.<br/> If you would like to continue to have the same behavior of overwriting the file, please use FACTION=DELETE. Note, though, that the file is not available during the transfer. |
 | CFTUIPREF  | Lower than 3.8  | 3.8 and higher  | After an upgrade you may need to check user privileges for creating filters in the CFTUIPREF object.  |
 | Copilot Java applet  | Lower than 3.8  | 3.8 and higher  | The Copilot Java applet was removed from the product. Users are invited to use the Transfer CFT UI or Flow Manager for a graphical UI experience.  |
 | SQLite database  | 3.7 and lower  | 3.8 and higher  | The CFTPARM object's PARTFNAM and PKIFNAME fields are obsolete for Windows, UNIX, and HP NonStop. |
 | FTYPE=T<br/> *Windows only* | 3.2.4 to 3.7 without appropriate patch or SP*  | 3.8 and higher  | On Windows systems, note the following difference when FTYPE=T.<br/> • For versions 3.2.4 to 3.7 without the patch, an empty line terminated by a 1A character is transmitted.<br/> • Prior to 3.2.4 and for the versions with the SP or patch applied, an empty line terminated by a 1A character is not transmitted.<br/> *3.7 SP1 (patch), 3.3.2 SP8, 3.6 SP3, 3.8 |
-| Visual C++ Redistributable Package for Visual Studio 2019 &lt;/td&gt;  | 3.6 and lower  | 3.7 and higher  | Transfer CFT on Windows requires the **Visual C++ Redistributable Package for Visual Studio 2019** for proper functioning. This provides the necessary library files (DLL) for Transfer CFT.<br/> You must install <code>vcredist_x64.exe</code> prior to installing or upgrading Transfer CFT.<br/> **Issue**<br/> If you perform an upgrade without first installing the Redistributable package, the runtime is not imported and Transfer CFT will not operate correctly. The following information displays in the <code>&lt;installdir&gt;/install.log</code> file:<br/> <code>Script stderr:</code><br/> <code>child killed: unknown signal</code><br/> <code> </code><br/> <code>Fail to import RUNTIME data.</code><br/> <code>Problem running post-install step. Installation may not complete correctly</code><br/> <code>Fail to import RUNTIME data.</code><br/> **Corrective action**<br/> • Install the Redistributable package.<br/> • From the <code>cmd </code>console, load the profile.<br/> • Import the runtime data by running the import command to complete the upgrade.<br/> • Check that the script executed correctly. |
+| Visual C++ Redistributable Package for Visual Studio 2019 &lt;/td&gt;  | 3.6 and lower  | 3.7 and higher  | Transfer CFT on Windows requires the **Visual C++ Redistributable Package for Visual Studio 2019** for proper functioning. This provides the necessary library files (DLL) for Transfer CFT.<br/> You must install <code>vcredist_x64.exe</code> prior to installing or upgrading Transfer CFT.<br/> **Issue**<br/> If you perform an upgrade without first installing the Redistributable package, the runtime is not imported and Transfer CFT will not operate correctly. The following information displays in the <code>&lt;installdir&gt;/install.log</code> file:<br/> <code>Script stderr:</code><br/> <code>child killed: unknown signal</code><br/> <code> </code><br/> <code>Fail to import RUNTIME data.</code><br/> <code>Problem running post-install step. Installation may not complete correctly</code><br/> <code>Fail to import RUNTIME data.</code><br/> **Corrective action**<br/> • Install the Redistributable package.<br/> • From the <span ><code>cmd </code></span>console, load the profile.<br/> • Import the runtime data by running the import command to complete the upgrade.<br/> • Check that the script executed correctly. |
 | LISTPKI  | 3.6 and lower  | 3.7 and higher  | To use the new LISTPKI format, copy the <code>dspcnf.xml</code> model file from <code>&lt;installdir&gt;/distrib/template/conf</code> to the <code>&lt;runtimedir&gt;/conf.</code>  |
 | CFTACCNT  | 3.5 and lower  | 3.6 and higher  | Updated the documentation for the account file in v24 format. Please note the changes in field length as described in the CFTACCNT list. |
 | SORTBY  | 3.5 and lower  | 3.6 and higher  | Catalog records are no longer displayed by IDTU. To have the same display as in previous versions, use the SORTBY parameter as follows:<br /> <code>listcat sortby=idtu</code> |
 | EBICS  | 3.5 and lower  | 3.6 and higher  | Use the Axway EBICS client. Please refer to the <a href="https://docs.axway.com/bundle/EBICSClient_10_allOS_en_HTML5/page/ebics_client_documentation_home.html">EBICS client documentation</a> for product details. |
 | BUFSIZE<br/> FBUFSIZE | 3.3.2 and lower<br/> *Unix and IBM i only* | 3.4, 3.6 SP2 and lower, 3.7 and 3.8 | A BUFSIZE or FBUFSIZE value greater than 32 kiB may lead to Transfer CFT failing to exchange messages between CFTTPRO and CFTTFIL. If you have set a value higher than 32 kiB, please decrease it to 32768.<br/> <blockquote> **Note**<br/> As of 3.6 SP3, 3.8 SP1, and 3.9, the internal value limit is 32768.<br/> </blockquote>  |
-| PKIFNAME  | 3.4 and lower  | 3.5 and higher  | You can no longer reference a certificate with the PKIFNAME format (<code>CFTPARM:PKIFNAME=TXT://certificate</code>). Previously, when implementing an integrated PKI, the PKIFNAME parameter could indicate a flat-file database (<code>PKIFNAME=TXT://certificate</code>). If you were using this kind of file and then migrate, you must manually import all certificates into the PKI database. |
+| PKIFNAME  | 3.4 and lower  | 3.5 and higher  | You can no longer reference a certificate with the PKIFNAME format (<span ><code>CFTPARM:PKIFNAME=TXT://certificate</code></span>). Previously, when implementing an integrated PKI, the PKIFNAME parameter could indicate a flat-file database (<span ><code>PKIFNAME=TXT://certificate</code></span>). If you were using this kind of file and then migrate, you must manually import all certificates into the PKI database. |
 | CFTCRON  | Lower than 3.4  | 3.4 and higher  | An upgrade from a version lower than Transfer CFT 3.4 to 3.4 or higher may fail due to an incorrect time syntax because the CFTCRON time syntax is checked when creating or editing a CFTCRON object.  |
-| PKIPASSW  | 3.3.2 or lower  | 3.4 and higher  | Removed the PKIPASSW parameter from PKI commands (still available for CFTPARM).<br/> <blockquote> **Note**<br/> In earlier versions of Transfer CFT, the PKIPASSW parameter was used for encryption in the multiple PKI commands. This functionality is now replaced by the UCONF crypto.key_fname parameter.<br/> </blockquote> ****Impact****<br/> If you are using PKIEXT to export keys during a manual migration, you must use the same PKIPASSW (CFTPARM object) as was originally used to import the key. Using the same logic, to re-import a key that you extracted using PKIEXT, you require the same CFTPARM <a href="../../c_intro_userinterfaces/command_summary/parameter_intro/pkipassw">PKIPASSW</a>.<br/> For information on exporting keys, please refer to <a href="../../transport_security_start_here/certificates/pkiutil_cli_intro/pkiext">Using PKIEXT</a>. |
+| PKIPASSW  | 3.3.2 or lower  | 3.4 and higher  | Removed the PKIPASSW parameter from PKI commands (still available for CFTPARM).<br/> <blockquote> **Note**<br/> In earlier versions of Transfer CFT, the PKIPASSW parameter was used for encryption in the multiple PKI commands. This functionality is now replaced by the UCONF crypto.key_fname parameter.<br/> </blockquote> <span >****Impact****</span><br/> If you are using PKIEXT to export keys during a manual migration, you must use the same PKIPASSW (CFTPARM object) as was originally used to import the key. Using the same logic, to re-import a key that you extracted using PKIEXT, you require the same CFTPARM <a href="../../c_intro_userinterfaces/command_summary/parameter_intro/pkipassw">PKIPASSW</a>.<br/> For information on exporting keys, please refer to <a href="../../transport_security_start_here/certificates/pkiutil_cli_intro/pkiext">Using PKIEXT</a>. |
 | 32-bit releases  | 3.3.2 and lower  | 3.4 and higher  | End of 32-bit version deliveries.  |
 | Some default values  | 3.3.2 and lower  | 3.4 and higher  |   |
 | cft.server.processing_scripts_variables_blacklist  | 3.3.2 SP3 and lower  | 3.3.2 SP4 and higher  | POSIX Regular Extended expression that defines forbidden characters.  |
-| TLS  | 3.2.x and higher  | not applicable | When migrating to 3.2.x or higher, SSL transfers may fail with a DIAGP e105s86 or e75s89 when performing transfers with the versions listed below (with the error occurring on the remote Transfer CFT{{&lt; TransferCFT/transfercftname &gt;}}).<br/> Affected versions:<br/> • All 3.1.3 SP7 and lower<br/> • All 3.0.1 SP3 and lower<br/> On even older versions, we recommend setting the CFTPROT:CONCAT parameter to No. |
-| CA certificate chains  | 3.1.3 and lower  | 3.2.2 and higher  | In Transfer CFT{{&lt; TransferCFT/transfercftname &gt;}} 3.1.3 and lower, you can perform a SSL transfer even if the certificate chain is not complete (not signed by a ROOT CA).<br/> **Impact**<br/> In Transfer CFT{{&lt; TransferCFT/transfercftname &gt;}} 3.2.2 and higher, the certificate chain must be complete for a transfer to succeed.<br/> For more information, see <a href="../../troubleshoot_intro/admin_troubleshooting_server/troubleshoot_security#Unknown" >Unknown CA leads to a failed certificate verification</a> |
-| PKIPASSW  | 3.1.3 and lower  | 3.3.2 and higher  | When upgrading from 3.1.3 to 3.3.2, first check that the PKIPASSW length value is not greater than 8 characters.<br/> If the value is 8 or less, you can proceed with the upgrade.<br/> If the PKIPASSW value in the CFTPARM command is greater than 8 characters, perform the steps in the solution below.<br/> ****Solution****<br/> Prior to migration you must truncate the password on the Transfer CFT 3.1.3:<br/> • Export the CFTPARM.<br /> <code>CFTUTIL cftext type=parm, fout=file_parm.out</code><br/> • Modify the PKIPASSW in the file. For example, if the old value was <code>PKIPASSW=12345678910</code>, replace it with <code>PKIPASSW=12345678.</code><br/> • Reimport:<br /> <code>CFTUTIL config type=input,fname=file_parm.out</code><br/> • Continue the Transfer CFT 3.3.2 upgrade process. |
-| Copilot client  | 3.1.3 or lower | 3.2.2 and higher  | The Copilot application changed from a Java applet to a Java Web Start program.<br/> ****Impact****<br/> Copilot requires Java 7 or higher. |
-| ROOTCID=NONE  | 3.1.3  | 3.2.2 and higher  | Non authentication method was available in 3.1.3 and lower (anonymous TLS connection).<br/> ****Impact****<br/> This support has been removed in Transfer CFT{{&lt; TransferCFT/transfercftname &gt;}} 3.2.2 and higher. You must update the ROOTCID parameter. |
-| TLS  | 3.1.3 or lower  | 3.2.2 and higher  | To comply with security standards, as of Transfer CFT version 3.2.2 the use of the cipher suites 59, 60, and 61 is restricted to TLS 1.2 exclusively.<br/> ****Impact****<br/> This means that if some of your partners use a version of Transfer CFT lower than 3.2.2 that does not support TLS 1.2, and you are using ciphers 59, 60 and 61, which requires TLS 1.2 in version 3.2.2 and higher, you must add another cipher in the cipher list and remove ciphers 59, 60, 61 from the partner's cipher list.<br/> <blockquote> **Note**<br/> You do not have to remove ciphers 59, 60, 61 in the partner cipher list if you apply the Transfer CFT patch 3.0.1 SP11.<br/> </blockquote>  |
-| Rotate the log  | 3.0.1 or lower  | 3.1.3 and higher  | Changed the switch log feature behavior.<br/> In version 3.0.1 or lower, there were two files that automatically alternated.<br/> ****Impact****<br/> In version 3.1.3 and higher if you want to continue this functionality, you must set the alternate log file's uconf value <code>cft.cftlog.afname</code> to the alternate file path (for example, <code>$CFTRUNTIME/log/cftloga</code>). |
+| TLS  | 3.2.x and higher  | not applicable | When migrating to 3.2.x or higher, SSL transfers may fail with a DIAGP e105s86 or e75s89 when performing transfers with the versions listed below (with the error occurring on the remote {{&lt; TransferCFT/suitevariablesTransferCFTName &gt;}}).<br/> Affected versions:<br/> • All 3.1.3 SP7 and lower<br/> • All 3.0.1 SP3 and lower<br/> On even older versions, we recommend setting the CFTPROT:CONCAT parameter to No. |
+| CA certificate chains  | 3.1.3 and lower  | 3.2.2 and higher  | In {{&lt; TransferCFT/suitevariablesTransferCFTName &gt;}} 3.1.3 and lower, you can perform a SSL transfer even if the certificate chain is not complete (not signed by a ROOT CA).<br/> **Impact**<br/> In {{&lt; TransferCFT/suitevariablesTransferCFTName &gt;}} 3.2.2 and higher, the certificate chain must be complete for a transfer to succeed.<br/> For more information, see <a href="../../troubleshoot_intro/admin_troubleshooting_server/troubleshoot_security#Unknown" >Unknown CA leads to a failed certificate verification</a> |
+| PKIPASSW  | 3.1.3 and lower  | 3.3.2 and higher  | When upgrading from 3.1.3 to 3.3.2, first check that the PKIPASSW length value is not greater than 8 characters.<br/> If the value is 8 or less, you can proceed with the upgrade.<br/> If the PKIPASSW value in the CFTPARM command is greater than 8 characters, perform the steps in the solution below.<br/> <span >****Solution**** </span><br/> Prior to migration you must truncate the password on the Transfer CFT 3.1.3:<br/> • Export the CFTPARM.<br /> <code>CFTUTIL cftext type=parm, fout=file_parm.out</code><br/> • Modify the PKIPASSW in the file. For example, if the old value was <span ><code>PKIPASSW=12345678910</code></span>, replace it with <span ><code>PKIPASSW=12345678.</code></span><br/> • Reimport:<br /> <span ><code>CFTUTIL config type=input,fname=file_parm.out</code></span><br/> • Continue the Transfer CFT 3.3.2 upgrade process. |
+| Copilot client  | 3.1.3 or lower | 3.2.2 and higher  | The Copilot application changed from a Java applet to a Java Web Start program.<br/> <span >****Impact****</span><br/> Copilot requires Java 7 or higher. |
+| ROOTCID=NONE  | 3.1.3  | 3.2.2 and higher  | Non authentication method was available in 3.1.3 and lower (anonymous TLS connection).<br/> <span >****Impact****</span><br/> This support has been removed in {{&lt; TransferCFT/suitevariablesTransferCFTName &gt;}} 3.2.2 and higher. You must update the ROOTCID parameter. |
+| TLS  | 3.1.3 or lower  | 3.2.2 and higher  | To comply with security standards, as of Transfer CFT version 3.2.2 the use of the cipher suites 59, 60, and 61 is restricted to TLS 1.2 exclusively.<br/> <span >****Impact****</span><br/> This means that if some of your partners use a version of Transfer CFT lower than 3.2.2 that does not support TLS 1.2, and you are using ciphers 59, 60 and 61, which requires TLS 1.2 in version 3.2.2 and higher, you must add another cipher in the cipher list and remove ciphers 59, 60, 61 from the partner's cipher list.<br/> <blockquote> **Note**<br/> You do not have to remove ciphers 59, 60, 61 in the partner cipher list if you apply the Transfer CFT patch 3.0.1 SP11.<br/> </blockquote>  |
+| Rotate the log  | 3.0.1 or lower  | 3.1.3 and higher  | Changed the switch log feature behavior.<br/> In version 3.0.1 or lower, there were two files that automatically alternated.<br/> <span >****Impact****</span><br/> In version 3.1.3 and higher if you want to continue this functionality, you must set the alternate log file's uconf value <span ><code>cft.cftlog.afname</code></span> to the alternate file path (for example, <span ><code>$CFTRUNTIME/log/cftloga</code></span>). |
 | Demo certificates  | 3.0.1 or lower  | 3.1.2 and higher  | Axway no longer delivers the template certificates used in the Transfer CFT SSL.<br/> ****Impact****<br/> If you were using the demo certificates, import your proper certificates and replace in the PKI database as the Demo certificates are expired. |
 | CFTPARM <br/> key parameter | 2.7.1 or lower  | 3.0.1 and higher  | If you had the CFTPARM key parameter set directly to a value, you must modify this so that key parameter points to an indirection file containing the license key.  |
 
@@ -206,7 +206,7 @@
 | --- | --- | --- | --- |
 | 1  | Complete prerequisites  | Check and fulfill prerequisites such as obtaining a key or system-specific prerequisites.  | <a href="prereqs_overview" >Prerequisites</a>  |
 | 2  | Download and unzip  | Download the installation package from the support site and unzip.  | <a href="#Download" >Install Transfer CFT</a>  |
-| 3  | Customize the properties file  | Some installation parameters are mandatory to run Transfer CFT.<br/> You can customize the <code>initialize.properties</code> file before the install, use your own file, or use the unmodified default file, but you cannot start Transfer CFT until the mandatory values are set. | <a href="new_install_ux" >Customize the initialize.properties file</a> <a href="../../windows_install_start_here/before_you_start_win/properties_file_win"></a>  |
+| 3  | Customize the properties file  | Some installation parameters are mandatory to run Transfer CFT.<br/> You can customize the <span ><code>initialize.properties</code></span> file before the install, use your own file, or use the unmodified default file, but you cannot start Transfer CFT until the mandatory values are set. | <a href="new_install_ux" >Customize the initialize.properties file</a> <a href="../../windows_install_start_here/before_you_start_win/properties_file_win"></a>  |
 |   | Run chmod  | Make the file executable.  | <a href="install_transfer_cft_1#Make" >Make the file executable</a>  |
 | 4  | Start the installation  | Select the installation mode and run using either the default configuration file or your customized file.  | <a href="install_transfer_cft_1" >Start the installation</a>  |
 | *  | Optional customization  | If you used the default configuration file, you must customize the Transfer CFT settings before starting the product.  |   |
@@ -220,7 +220,7 @@
 | --- | --- | --- |
 | msgmax  | 8192  | Maximum size of a message in bytes.  |
 | msgmnb  | 32768  | Maximum size in bytes on a single IPC message queue.  |
-| msgmni  | 48 per Transfer CFT{{&lt; TransferCFT/componentlongname &gt;}} instance<br/> See <a href="#note_linux">NOTE</a>** | Maximum number of IPC message queue resources allowed.<br/> You require as many message queues as processes per Transfer CFT instance (when using multiple instances, multiply the number of instances by the number of Transfer CFT processes). |
+| msgmni  | 48 per {{&lt; TransferCFT/axwayvariablesComponentLongName &gt;}} instance<br/> See <a href="#note_linux">NOTE</a>** | Maximum number of IPC message queue resources allowed.<br/> You require as many message queues as processes per Transfer CFT instance (when using multiple instances, multiply the number of instances by the number of Transfer CFT processes). |
 | shmall<br/> (shmall*PAGE_SIZE) | 2097152<br/> (8 GB when page_size = 4096) | The total amount of shared memory available on the system is 2097152*4096 bytes (shmall*PAGE_SIZE) which is 8 GB.<br/> This number may be affected by the use of a very large number of Transfer CFT instances. |
 | shmmax  | 3554432: for fewer than 512 transfers in parallel<br/> 67108864: for more than 512 transfers in parallel | Maximum size in bytes for a shared memory segment.  |
 | shmmni  | 4096  | Number of shared memory segment identifiers in the system.<br/> For each Transfer CFT instance you need 2 shared memory segments, so when using multiple instances or multi-node, multiply the number of instances by 2. |
@@ -235,7 +235,7 @@
 ============================== table nb count(14) table converted to MD ========================================
 
 
-| Resource control  | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} minimum value  |
+| Resource control  | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} minimum value  |
 | --- | --- |
 | project.max-shm-memory  | 33554432  |
 | process.max-msg-messages  | 8192  |
@@ -253,12 +253,12 @@
 | SFTP  | 1763  |
 | COMS  | 1765  |
 | Copilot  | 1766  |
-| Transfer CFT UI (Copilot) server for Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}  | 1767  |
+| Transfer CFT UI (Copilot) server for {{&lt; TransferCFT/suitevariablesCentralGovernanceName &gt;}}  | 1767  |
 | REST API  | 1768  |
-| Central Governance  | 12553  |
-| Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}} SSL  | 12554  |
-| Secure Relay{{&lt; TransferCFT/securerelayname &gt;}} MA<br/> ma.comm_port |  <br/> 6801 |
-| Secure Relay{{&lt; TransferCFT/securerelayname &gt;}} RA<br/> • ra.comm_port<br/> • ra.admin_port |  <br/> • 6811<br/> • 6810 |
+| {{&lt; TransferCFT/PrimaryCGorUM &gt;}}  | 12553  |
+| {{&lt; TransferCFT/suitevariablesCentralGovernanceName &gt;}} SSL  | 12554  |
+| {{&lt; TransferCFT/suitevariablesSecureRelayName &gt;}} MA<br/> ma.comm_port |  <br/> 6801 |
+| {{&lt; TransferCFT/suitevariablesSecureRelayName &gt;}} RA<br/> • ra.comm_port<br/> • ra.admin_port |  <br/> • 6811<br/> • 6810 |
 
 
 
@@ -267,9 +267,9 @@
 
 | Type  | Location  | Certificate  | Expires  |
 | --- | --- | --- | --- |
-| Secure Relay{{&lt; TransferCFT/securerelayname &gt;}}  | &lt;Transfer_CFT&gt;/home/distrib/xsr  | SecureRelayCA.pem | November 2021  |
+| {{&lt; TransferCFT/suitevariablesSecureRelayName &gt;}}  | &lt;Transfer_CFT&gt;/home/distrib/xsr  | SecureRelayCA.pem | November 2021  |
 |   |   | SecureRelayMasterAgent.p12  | November 2021  |
-| Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}  | &lt;Transfer_CFT&gt;/runtime/conf/pki  | passportCA.pem  | November 2019  |
+| {{&lt; TransferCFT/suitevariablesCentralGovernanceName &gt;}}  | &lt;Transfer_CFT&gt;/runtime/conf/pki  | passportCA.pem  | November 2019  |
 
 
 
@@ -290,7 +290,7 @@
 | --- | --- | --- | --- |
 | runtimeDir  | ./runtime  | Transfer CFT runtime directory.<br/> Specify the directory where you want to install the Transfer CFT runtime directory.<br/> By default, the runtime directory is installed in a sub-directory of the Transfer CFT installation directory. Use the default directory, or specify a new directory. A runtime directory will be created if it does not already exist.<br/> Directory paths cannot contain spaces. | cft.runtime_dir  |
 | Full_Hostname | @automatic  | Host Address of the local server: FQDN (Fully Qualified Domain Name) or IP Address. See **Note*** | cft.full_hostname  |
-| multinode_hostname  | @automatic  | When not defined, this field is filled with the hostname of the machine where you are installing Transfer CFT{{&lt; TransferCFT/transfercftname &gt;}}, whether it is the first host or an additional host.<br/> If the hostname contains a "." period, the value used consists of the name of the host preceding the first period. For example, "myhost.fqdn.net" would be shortened to "myhost". | cft.multi_node.hostnames  |
+| multinode_hostname  | @automatic  | When not defined, this field is filled with the hostname of the machine where you are installing {{&lt; TransferCFT/suitevariablesTransferCFTName &gt;}}, whether it is the first host or an additional host.<br/> If the hostname contains a "." period, the value used consists of the name of the host preceding the first period. For example, "myhost.fqdn.net" would be shortened to "myhost". | cft.multi_node.hostnames  |
 | multinode_host_address  | @automatic  | If you do not specify a value, the machine's FQDN address is used.<br/> Note that if there is an error in the machine's configuration, the value taken could be incorrect. Be sure to check that you can ping the address, and that it is the value for the cluster network. | cft.multi_node.hostnames.&lt;hostname&gt;.host  |
 | Instance_ID | @default  | The maximum length is 24.  | cft.instance_id  |
 | Instance_Group  |   | Transfer CFT instance group.<br/> The maximum length is 1000. | cft.instance_group  |
@@ -320,7 +320,7 @@
 | PESIT_SSL_Port  | @default = 1762  | The port number of the PeSIT protocol using SSL.  | samples.pesitssl_sap.value  |
 | COMS_Port  | @default = 1765  | The port number of the COMS synchronous communication media.<br/>  | samples.coms_port.value  |
 | Copilot_Port  | @default = 1766  | Sets the port number for the Transfer CFT Copilot server that listens for<br/> incoming unsecured and secured (SSL) connections.<br/> The same port number is used for the Graphical User Interface and Webservices<br/> with or without SSL. | copilot.general.serverport  |
-| Copilot_OnlySSL  | @default = Yes  | When you set to ****Yes****, Copilot only allows SSL connections, and disables use of the HTTP server.<br/> This affects the old Transfer CFT UI, Webservices, and JPI.<br/>  | copilot.http.onlyssl  |
+| Copilot_OnlySSL  | @default = Yes  | When you set to <span >****Yes****</span>, Copilot only allows SSL connections, and disables use of the HTTP server.<br/> This affects the old Transfer CFT UI, Webservices, and JPI.<br/>  | copilot.http.onlyssl  |
 | Copilot_SSL_Port  | @default = 1767  | Sets the port number for the Transfer CFT Copilot server that listens for incoming secured (SSL with mutual authentication) connections. Only used by the Governance.  | copilot.general.ssl_serverport  |
 | UI_DefaultUser_Username<br/> UI_DefaultUser_Password |   | *UNIX systems only*<br/> The default Transfer CFT UI user/password. | N/A  |
 | RESTAPI_Enable<br/> <br/>  | @default = Yes  | Activates the Transfer CFT REST API Server.<br/> The port number used to connect to the REST API server. | copilot.restapi.enable  |
@@ -347,11 +347,11 @@
 | Parameter  | Automatic or default  | Description  | UCONF  |
 | --- | --- | --- | --- |
 | CG_Enable | @default = No | Enter Yes to enable Central Governance connectivity.  | cg.enable  |
-| CG_Host  |   | The Central Governance host address.<br/> **If you enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field.** | cg.host  |
+| CG_Host  |   | The Central Governance host address.<br/> **If you enabled {{&lt; TransferCFT/suitevariablesCentralGovernanceName &gt;}}, you must complete this field.** | cg.host  |
 | CG_Port | @default = 12553  | Central Governance port.<br/> **When CG is enabled, this cannot be empty.** | cg.port  |
-| CG_Mutual_Port  | @default = 12554  | The Central Governance port for Mutual Authentication.<br/> **If you enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field.** | cg.mutual_auth_port  |
-| CG_RestAPI_Port  | @default = 8081  | Specify the port to use to communicate with Central Governance's REST API (this port is only used when am.type=cg).<br/> **If you enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field.** | cg.restapi_port  |
-| CG_SharedSecret  |   | Specify the shared secret, which is needed to register with the Central Governance server.<br/> **If you enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field.** | cg.shared_secret  |
+| CG_Mutual_Port  | @default = 12554  | The Central Governance port for Mutual Authentication.<br/> **If you enabled {{&lt; TransferCFT/suitevariablesCentralGovernanceName &gt;}}, you must complete this field.** | cg.mutual_auth_port  |
+| CG_RestAPI_Port  | @default = 8081  | Specify the port to use to communicate with Central Governance's REST API (this port is only used when am.type=cg).<br/> **If you enabled {{&lt; TransferCFT/suitevariablesCentralGovernanceName &gt;}}, you must complete this field.** | cg.restapi_port  |
+| CG_SharedSecret  |   | Specify the shared secret, which is needed to register with the Central Governance server.<br/> **If you enabled {{&lt; TransferCFT/suitevariablesCentralGovernanceName &gt;}}, you must complete this field.** | cg.shared_secret  |
 | CG_ConfigurationPolicy  |   | Specify Central Governance configuration policy to apply on the Transfer CFT instance.  | cg.configuration_policy  |
 | CG_Certificate_Path  | @default = $CFTDIRRUNTIME/conf/pki/passportCA.pem  | Specify Custom Certificate to authenticate Central Governance.  | N/A  |
 
@@ -362,9 +362,9 @@
 
 | Parameter  | Automatic or default  | Description  | UCONF  |
 | --- | --- | --- | --- |
-| Sentinel_Enable  | @default = No  | Set to Yes to enable Sentinel.<br/> **Do not enable this if you have enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}.** | sentinel.xfb.enable  |
+| Sentinel_Enable  | @default = No  | Set to Yes to enable Sentinel.<br/> **Do not enable this if you have enabled {{&lt; TransferCFT/suitevariablesCentralGovernanceName &gt;}}.** | sentinel.xfb.enable  |
 | Sentinel_Host  |   | Enter the Sentinel host address.  | sentinel.trkipaddr  |
-| Sentinel_Port  | @default= 1305  | Enter the Sentinel port.<br/> You do not need to define this field if you are registering Transfer CFT with Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}. | sentinel.trkipport  |
+| Sentinel_Port  | @default= 1305  | Enter the Sentinel port.<br/> You do not need to define this field if you are registering Transfer CFT with {{&lt; TransferCFT/suitevariablesCentralGovernanceName &gt;}}. | sentinel.trkipport  |
 | Sentinel_Log_Filter  | @default = EWF  | Sentinel Log Filter: (I)nformation, (W)arning, (E)rror, (F)atal Authorized characters are only I, W, E, F<br/> You can only use each letter once. | sentinel.xfb.log  |
 | Sentinel_Transfer_Filter  | @default = ALL  | Sentinel Transfer Filter<br/> Possible values are: ALL, SUMMARY, NO, ERROR | sentinel.xfb.transfer  |
 | Sentinel_Use_SSL  | @default = Yes  | Enables an SSL connection with Sentinel.  | sentinel.xfb.use_ssl  |
@@ -387,12 +387,12 @@
 | Screen  | Description  |
 | --- | --- |
 | Welcome  | Welcome to Transfer CFT landing page.  |
-| License agreement  | Select the check-box "<code>I accept...</code>" to continue with the installation.  |
+| License agreement  | Select the check-box "<span ><code>I accept...</code></span>" to continue with the installation.  |
 | Installation architecture  | Select to install on a single machine, a Cluster - first host, or cluster - additional host.<br/> • Single - Installs a single instance of Transfer CFT on a machine.<br/> • Cluster - Installs Transfer CFT on several machines. Select this option if you want to install Transfer CFT in multi-host/multi-node or in active/passive mode.<br/> • Cluster - First host: Install on a first machine before adding additional machines (nodes). You must install on a first node before you can select the option to install on additional nodes.<br/> • Cluster - Additional host: After installing on the first machine, you can select this option to install on an additional machine(s).<br/> • If you are performing a cluster installation and you enable the multi-node option in the configuration file, this creates an active/active Transfer CFT installation. Otherwise, the installation is active/passive. |
 | Installation Directory  | Specify the directory where you want to install Transfer CFT. This is the directory where the Transfer CFT product files are installed. <blockquote> **Note**<br/> Directory paths cannot contain spaces.<br/> </blockquote>  |
-| Configuration filename  | Enter the path, or navigate, to the configuration file (initialize.properties file) containing details for the Transfer CFT installation. This file defines settings such as hostname, license key, governance options, and so on.<br/> If you do not specify a file, you can continue with the installation, but the installation procedure does not create the runtime directory. (Run the <code>initialize </code>command post installation if you opt to create the runtime directory at a later date.) |
+| Configuration filename  | Enter the path, or navigate, to the configuration file (initialize.properties file) containing details for the Transfer CFT installation. This file defines settings such as hostname, license key, governance options, and so on.<br/> If you do not specify a file, you can continue with the installation, but the installation procedure does not create the runtime directory. (Run the <span ><code>initialize </code></span>command post installation if you opt to create the runtime directory at a later date.) |
 | Generate Encryption Key  | Enter your password and reenter it to confirm. |
-| Ready to install | Click ****Next****to complete the installation process, or ****Back****to review or modify installation options. |
+| Ready to install | Click <span >****Next****</span>to complete the installation process, or <span >****Back****</span>to review or modify installation options. |
 
 
 
@@ -596,9 +596,9 @@
 
 | Topic  | Details  |
 | --- | --- |
-| <a href="creating_an_api_application">Creating an API application</a> | Describes the procedure to create an API application in Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} UNIX. |
-| <a href="creating_an_exit_file">Creating an exit file</a> | Describes how to create an exit file for Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} UNIX. |
-| <a href="creating_a_directory_exit">Creating a directory exit</a> | Describes how to create a directory exit in Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} UNIX. |
+| <a href="creating_an_api_application">Creating an API application</a> | Describes the procedure to create an API application in {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} UNIX. |
+| <a href="creating_an_exit_file">Creating an exit file</a> | Describes how to create an exit file for {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} UNIX. |
+| <a href="creating_a_directory_exit">Creating a directory exit</a> | Describes how to create a directory exit in {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} UNIX. |
 | Creating an accounting exit | Describes how to create an accounting exit in UNIX. |
 
 
@@ -674,7 +674,7 @@
 ============================== table nb count(45) table converted to MD ========================================
 
 
-| **Objet**  | ****Default name****  |
+| **Objet**  | <span >****Default name****</span>  |
 | --- | --- |
 | Parameters file  | _CFTPARM  |
 | Partners file  | _CFTPART  |
@@ -739,7 +739,7 @@
 | --- | --- | --- | --- |
 | 1  | Complete prerequisites  | Check and fulfill prerequisites such as obtaining a key or system-specific prerequisites.  | <a href="prereqs_overview"><img src="/Images/TransferCFT/severityInformation_alt.gif" /></a>  |
 | 2  | Download and unzip  | Download the installation package from the support site and unzip.  | <a href="#Download"><img src="/Images/TransferCFT/severityInformation_alt.gif" /></a>  |
-| 3  | Customize the properties file  | Some installation parameters are mandatory to run Transfer CFT.<br/> You can customize the <code>initialize.properties</code> file before the install, use your own file, or use the unmodified default file, but you cannot start Transfer CFT until the mandatory values are set. | <a href="properties_file_win"><img src="/Images/TransferCFT/severityInformation_alt.gif" /></a>  |
+| 3  | Customize the properties file  | Some installation parameters are mandatory to run Transfer CFT.<br/> You can customize the <span ><code>initialize.properties</code></span> file before the install, use your own file, or use the unmodified default file, but you cannot start Transfer CFT until the mandatory values are set. | <a href="properties_file_win"><img src="/Images/TransferCFT/severityInformation_alt.gif" /></a>  |
 | 4  | Start the installation  | Select the installation mode and run using either the default configuration file or your customized file.  | <a href="install_transfer_cft_1"><img src="/Images/TransferCFT/severityInformation_alt.gif" /></a>  |
 | *  | Optional customization  | If you used the default configuration file, you must customize the Transfer CFT settings before starting the product.  |   |
 
@@ -755,12 +755,12 @@
 | SFTP  | 1763  |
 | COMS  | 1765  |
 | Copilot  | 1766  |
-| Transfer CFT UI (Copilot) server for Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}  | 1767  |
+| Transfer CFT UI (Copilot) server for {{&lt; TransferCFT/suitevariablesCentralGovernanceName &gt;}}  | 1767  |
 | REST API  | 1768  |
-| Central Governance  | 12553  |
-| Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}} SSL  | 12554  |
-| Secure Relay{{&lt; TransferCFT/securerelayname &gt;}} MA<br/> ma.comm_port |  <br/> 6801 |
-| Secure Relay{{&lt; TransferCFT/securerelayname &gt;}} RA<br/> • ra.comm_port<br/> • ra.admin_port |  <br/> • 6811<br/> • 6810 |
+| {{&lt; TransferCFT/PrimaryCGorUM &gt;}}  | 12553  |
+| {{&lt; TransferCFT/suitevariablesCentralGovernanceName &gt;}} SSL  | 12554  |
+| {{&lt; TransferCFT/suitevariablesSecureRelayName &gt;}} MA<br/> ma.comm_port |  <br/> 6801 |
+| {{&lt; TransferCFT/suitevariablesSecureRelayName &gt;}} RA<br/> • ra.comm_port<br/> • ra.admin_port |  <br/> • 6811<br/> • 6810 |
 
 
 
@@ -769,9 +769,9 @@
 
 | Type  | Location  | Certificate  | Expires  |
 | --- | --- | --- | --- |
-| Secure Relay{{&lt; TransferCFT/securerelayname &gt;}}  | &lt;Transfer_CFT&gt;/home/distrib/xsr  | SecureRelayCA.pem | November 2021  |
+| {{&lt; TransferCFT/suitevariablesSecureRelayName &gt;}}  | &lt;Transfer_CFT&gt;/home/distrib/xsr  | SecureRelayCA.pem | November 2021  |
 |   |   | SecureRelayMasterAgent.p12  | November 2021  |
-| Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}  | &lt;Transfer_CFT&gt;/runtime/conf/pki  | passportCA.pem  | November 2019  |
+| {{&lt; TransferCFT/suitevariablesCentralGovernanceName &gt;}}  | &lt;Transfer_CFT&gt;/runtime/conf/pki  | passportCA.pem  | November 2019  |
 
 
 
@@ -792,7 +792,7 @@
 | --- | --- | --- | --- |
 | runtimeDir  | ./runtime  | Transfer CFT runtime directory.<br/> Specify the directory where you want to install the Transfer CFT runtime directory.<br/> By default, the runtime directory is installed in a sub-directory of the Transfer CFT installation directory. Use the default directory, or specify a new directory. A runtime directory will be created if it does not already exist. | cft.runtime_dir  |
 | Full_Hostname | @automatic  | Host Address of the local server: FQDN (Fully Qualified Domain Name) or IP Address. See **Note*** | cft.full_hostname  |
-| multinode_hostname  | @automatic  | When not defined, this field is filled with the hostname of the machine where you are installing Transfer CFT{{&lt; TransferCFT/transfercftname &gt;}}, whether it is the first host or an additional host.<br/> If the hostname contains a "." period, the value used consists of the name of the host preceding the first period. For example, "myhost.fqdn.net" would be shortened to "myhost". | cft.multi_node.hostnames  |
+| multinode_hostname  | @automatic  | When not defined, this field is filled with the hostname of the machine where you are installing {{&lt; TransferCFT/suitevariablesTransferCFTName &gt;}}, whether it is the first host or an additional host.<br/> If the hostname contains a "." period, the value used consists of the name of the host preceding the first period. For example, "myhost.fqdn.net" would be shortened to "myhost". | cft.multi_node.hostnames  |
 | multinode_host_address  | @automatic  | If you do not specify a value, the machine's FQDN address is used.<br/> Note that if there is an error in the machine's configuration, the value taken could be incorrect. Be sure to check that you can ping the address, and that it is the value for the cluster network. | cft.multi_node.hostnames.&lt;hostname&gt;.host  |
 | Instance_ID | @default  | The maximum length is 24.  | cft.instance_id  |
 | Instance_Group  |   | Transfer CFT instance group.<br/> The maximum length is 1000. | cft.instance_group  |
@@ -849,11 +849,11 @@
 | Parameter  | Automatic or default  | Description  | UCONF  |
 | --- | --- | --- | --- |
 | CG_Enable | @default = No | Enter Yes to enable Central Governance connectivity.  | cg.enable  |
-| CG_Host  |   | The Central Governance host address.<br/> **If you enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field.** | cg.host  |
-| CG_Port | @default = 12553  | The Central Governance port.<br/> **If you enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field.** | cg.port  |
-| CG_Mutual_Port  | @default = 12554  | The Central Governance port for Mutual Authentication.<br/> **If you enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field.** | cg.mutual_auth_port  |
-| CG_RestAPI_Port  | @default = 8081  | Specify the port to use to communicate with Central Governance's REST API (this port is only used when am.type=cg).<br/> **If you enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field.** | cg.restapi_port  |
-| CG_SharedSecret  |   | Specify the shared secret, which is needed to register with the Central Governance server.<br/> **If you enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field.** | cg.shared_secret  |
+| CG_Host  |   | The Central Governance host address.<br/> **If you enabled {{&lt; TransferCFT/suitevariablesCentralGovernanceName &gt;}}, you must complete this field.** | cg.host  |
+| CG_Port | @default = 12553  | The Central Governance port.<br/> **If you enabled {{&lt; TransferCFT/suitevariablesCentralGovernanceName &gt;}}, you must complete this field.** | cg.port  |
+| CG_Mutual_Port  | @default = 12554  | The Central Governance port for Mutual Authentication.<br/> **If you enabled {{&lt; TransferCFT/suitevariablesCentralGovernanceName &gt;}}, you must complete this field.** | cg.mutual_auth_port  |
+| CG_RestAPI_Port  | @default = 8081  | Specify the port to use to communicate with Central Governance's REST API (this port is only used when am.type=cg).<br/> **If you enabled {{&lt; TransferCFT/suitevariablesCentralGovernanceName &gt;}}, you must complete this field.** | cg.restapi_port  |
+| CG_SharedSecret  |   | Specify the shared secret, which is needed to register with the Central Governance server.<br/> **If you enabled {{&lt; TransferCFT/suitevariablesCentralGovernanceName &gt;}}, you must complete this field.** | cg.shared_secret  |
 | CG_ConfigurationPolicy  |   | Specify Central Governance configuration policy to apply to the Transfer CFT instance.  | cg.configuration_policy  |
 | CG_Certificate_Path  | @default = $CFTDIRRUNTIME/conf/pki/passportCA.pem  | Specify the Custom Certificate to authenticate Central Governance.  | N/A  |
 
@@ -864,9 +864,9 @@
 
 | Parameter  | Automatic or default  | Description  | UCONF  |
 | --- | --- | --- | --- |
-| Sentinel_Enable  | @default = No  | Set to Yes to enable Sentinel.<br/> **Do not enable this if you have enabled Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}.** | sentinel.xfb.enable  |
+| Sentinel_Enable  | @default = No  | Set to Yes to enable Sentinel.<br/> **Do not enable this if you have enabled {{&lt; TransferCFT/suitevariablesCentralGovernanceName &gt;}}.** | sentinel.xfb.enable  |
 | Sentinel_Host  |   | Enter the Sentinel host address.  | sentinel.trkipaddr  |
-| Sentinel_Port  | @default= 1305  | Enter the Sentinel port.<br/> You do not need to define this field if you are registering Transfer CFT with Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}. | sentinel.trkipport  |
+| Sentinel_Port  | @default= 1305  | Enter the Sentinel port.<br/> You do not need to define this field if you are registering Transfer CFT with {{&lt; TransferCFT/suitevariablesCentralGovernanceName &gt;}}. | sentinel.trkipport  |
 | Sentinel_Log_Filter  | @default = EWF  | Sentinel Log Filter: (I)nformation, (W)arning, (E)rror, (F)atal Authorized characters are only I, W, E, F<br/> You can only use each letter once. | sentinel.xfb.log  |
 | Sentinel_Transfer_Filter  | @default = ALL  | Sentinel Transfer Filter<br/> Possible values are: ALL, SUMMARY, NO, ERROR | sentinel.xfb.transfer  |
 | Sentinel_Use_SSL  | @default = Yes  | Enables an SSL connection with Sentinel.  | sentinel.xfb.use_ssl  |
@@ -916,15 +916,15 @@
 | Screen  | Description  |
 | --- | --- |
 | Welcome  | Welcome to Transfer CFT landing page.  |
-| License agreement  | Select the check-box "<code>I accept...</code>" to continue with the installation.  |
+| License agreement  | Select the check-box "<span ><code>I accept...</code></span>" to continue with the installation.  |
 | Installation architecture  | Select to install on a single machine, a Cluster - first host, or cluster - additional host.<br/> • Single - Installs a single instance of Transfer CFT on a machine.<br/> • Cluster - Installs Transfer CFT on several machines. Select this option if you want to install Transfer CFT in multi-host/multi-node or in active/passive mode.<br/> • Cluster - First host: Install on a first machine before adding additional machines (nodes). You must install on a first node before you can select the option to install on additional nodes.<br/> • Cluster - Additional host: After installing on the first machine, you can select this option to install on an additional machine(s).<br/> • If you are performing a cluster installation and you enable the multi-node option in the configuration file, this creates an active/active Transfer CFT installation. Otherwise, the installation is active/passive. |
 | Installation Directory  | Specify the directory where you want to install Transfer CFT. This is the directory where the Transfer CFT product files are installed.  |
-| Configuration filename  | Enter the path, or navigate, to the configuration file (initialize.properties file) containing details for the Transfer CFT installation. This file defines settings such as hostname, license key, governance options, and so on.<br/> If you do not specify a file, you can continue with the installation, but the installation procedure does not create the runtime directory. (Run the <code>initialize </code>command post installation if you opt to create the runtime directory at a later date.) |
+| Configuration filename  | Enter the path, or navigate, to the configuration file (initialize.properties file) containing details for the Transfer CFT installation. This file defines settings such as hostname, license key, governance options, and so on.<br/> If you do not specify a file, you can continue with the installation, but the installation procedure does not create the runtime directory. (Run the <span ><code>initialize </code></span>command post installation if you opt to create the runtime directory at a later date.) |
 | Generate Encryption Key  | Enter your password and reenter it to confirm. |
-| Ready to install | Click ****Next**** to complete the installation process, or ****Back**** to review or modify installation options. |
-|   | If you plan to integrate Transfer CFT with Central Governance and also plan to use Service mode, please refer to the additional instructions in <a href="../../post_install_transfercft#Service">Service mode set up when using Central Governance</a>.  |
+| Ready to install | Click <span >****Next****</span> to complete the installation process, or <span >****Back****</span> to review or modify installation options. |
+|   | If you plan to integrate Transfer CFT with {{&lt; TransferCFT/PrimaryCGorUM &gt;}} and also plan to use Service mode, please refer to the additional instructions in <a href="../../post_install_transfercft#Service">Service mode set up when using Central Governance</a>.  |
 | Transfer CFT Server Service  | Enter the Service Mode parameters for Transfer CFT.  |
-| Transfer CFT UI Server Service  | Enter the Service Mode parameters for the Transfer CFT{{&lt; TransferCFT/transfercftname &gt;}} UI.  |
+| Transfer CFT UI Server Service  | Enter the Service Mode parameters for the {{&lt; TransferCFT/suitevariablesTransferCFTName &gt;}} UI.  |
 
 
 
@@ -1128,10 +1128,10 @@
 
 | copilot.misc.createprocessasuser  | PassPort AM<br/> status | Rights to define  |
 | --- | --- | --- |
-|  <br/> no | Not activated  | No need to set rights. All Windows users can log on to the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} UI server.  |
-| no | Activated  | If PassPort AM is activated, you must use a PassPort AM user to log on. Check if the AM user has the rights to manage Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}. |
-| yes  | Not activated  | <span id="Define user rights in Windows"></span>The Windows user who is going to log on the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} UI server, must have read and write rights for Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} install folder.<br/> Some user rights must be assigned to the user who launched the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} UI server to permit other Windows users to log on. This is true except if it is the local system account when working in the service mode. The user rights to assign are:<br/> • Adjust memory quotas for a process<br/> • Impersonate a client after authentication (only on Windows 2008)<br/> • Replace a process level token<br/> • Create a token object<br/> To define user rights:<br/> • In a dos command window, enter <code>lusrmgr.msc</code> to open the system users list. Check available users.<br/> • In a dos command window, enter <code>secpol.msc</code> to open the Local Security Policy window.<br/> • Select ****Security Settings &gt; Local Policies &gt; User Rights Assignment****.<br/> • Double-click the required right.<br/> • Click ****Add user or group**** and define.<br/> • Close and re-open the Windows session to take into account the modifications. |
-| yes  | Activated  | Some user rights must be assigned to the user who starts the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} UI server to allow other Windows users to log on, unless it is the local system account working in service mode. The user rights are:<br/> • Adjust memory quotas for a process<br/> • Impersonate a client after authentication (only on Windows 2008)<br/> • Replace a process level token<br/> • Create a token object<br/> • In a dos command window, type <code>lusrmgr.msc</code> to open the system users list. Check available users.<br/> • In a dos command window, type <code>secpol.msc</code> to open the Local Security Policy window.<br/> • Select ****Security Settings &gt; Local Policies &gt; User Rights Assignment****.<br/> • Double-click the required right.<br/> • Click Add user or group and define.<br/> • Close and re-open the Windows session to take into account the modifications.<br/> Additionally, the user who wants to log on the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} UI server must exist both in the Windows system and PassPort AM. The Windows system performs the user authentication, and PassPort AM checks the other rights.<br/> <blockquote> **Note**<br/> The PassPort user name is case-sensitive.<br/> </blockquote>  |
+|  <br/> no | Not activated  | No need to set rights. All Windows users can log on to the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} UI server.  |
+| no | Activated  | If PassPort AM is activated, you must use a PassPort AM user to log on. Check if the AM user has the rights to manage {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}. |
+| yes  | Not activated  | <span id="Define user rights in Windows"></span>The Windows user who is going to log on the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} UI server, must have read and write rights for {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} install folder.<br/> Some user rights must be assigned to the user who launched the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} UI server to permit other Windows users to log on. This is true except if it is the local system account when working in the service mode. The user rights to assign are:<br/> • Adjust memory quotas for a process<br/> • Impersonate a client after authentication (only on Windows 2008)<br/> • Replace a process level token<br/> • Create a token object<br/> To define user rights:<br/> • In a dos command window, enter <span ><code>lusrmgr.msc</code></span> to open the system users list. Check available users.<br/> • In a dos command window, enter <span ><code>secpol.msc</code></span> to open the Local Security Policy window.<br/> • Select <span >****Security Settings &gt; Local Policies &gt; User Rights Assignment****</span>.<br/> • Double-click the required right.<br/> • Click <span >****Add user or group****</span> and define.<br/> • Close and re-open the Windows session to take into account the modifications. |
+| yes  | Activated  | Some user rights must be assigned to the user who starts the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} UI server to allow other Windows users to log on, unless it is the local system account working in service mode. The user rights are:<br/> • Adjust memory quotas for a process<br/> • Impersonate a client after authentication (only on Windows 2008)<br/> • Replace a process level token<br/> • Create a token object<br/> • In a dos command window, type <span ><code>lusrmgr.msc</code></span> to open the system users list. Check available users.<br/> • In a dos command window, type <span ><code>secpol.msc</code></span> to open the Local Security Policy window.<br/> • Select <span >****Security Settings &gt; Local Policies &gt; User Rights Assignment****</span>.<br/> • Double-click the required right.<br/> • Click Add user or group and define.<br/> • Close and re-open the Windows session to take into account the modifications.<br/> Additionally, the user who wants to log on the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} UI server must exist both in the Windows system and PassPort AM. The Windows system performs the user authentication, and PassPort AM checks the other rights.<br/> <blockquote> **Note**<br/> The PassPort user name is case-sensitive.<br/> </blockquote>  |
 
 
 
@@ -1321,12 +1321,12 @@
 | SFTP  | 1763  |
 | COMS  | 1765  |
 | Copilot  | 1766  |
-| Transfer CFT UI (Copilot) server for Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}  | 1767  |
+| Transfer CFT UI (Copilot) server for {{&lt; TransferCFT/suitevariablesCentralGovernanceName &gt;}}  | 1767  |
 | REST API  | 1768  |
-| Central Governance  | 12553  |
-| Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}} SSL  | 12554  |
-| Secure Relay{{&lt; TransferCFT/securerelayname &gt;}} MA<br/> ma.comm_port |  <br/> 6801 |
-| Secure Relay{{&lt; TransferCFT/securerelayname &gt;}} RA<br/> • ra.comm_port<br/> • ra.admin_port |  <br/> • 6811<br/> • 6810 |
+| {{&lt; TransferCFT/PrimaryCGorUM &gt;}}  | 12553  |
+| {{&lt; TransferCFT/suitevariablesCentralGovernanceName &gt;}} SSL  | 12554  |
+| {{&lt; TransferCFT/suitevariablesSecureRelayName &gt;}} MA<br/> ma.comm_port |  <br/> 6801 |
+| {{&lt; TransferCFT/suitevariablesSecureRelayName &gt;}} RA<br/> • ra.comm_port<br/> • ra.admin_port |  <br/> • 6811<br/> • 6810 |
 
 
 
@@ -1335,9 +1335,9 @@
 
 | Type  | Location  | Certificate  | Expires  |
 | --- | --- | --- | --- |
-| Secure Relay{{&lt; TransferCFT/securerelayname &gt;}}  | &lt;Transfer_CFT&gt;/home/distrib/xsr  | SecureRelayCA.pem | November 2021  |
+| {{&lt; TransferCFT/suitevariablesSecureRelayName &gt;}}  | &lt;Transfer_CFT&gt;/home/distrib/xsr  | SecureRelayCA.pem | November 2021  |
 |   |   | SecureRelayMasterAgent.p12  | November 2021  |
-| Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}  | &lt;Transfer_CFT&gt;/runtime/conf/pki  | passportCA.pem  | November 2019  |
+| {{&lt; TransferCFT/suitevariablesCentralGovernanceName &gt;}}  | &lt;Transfer_CFT&gt;/runtime/conf/pki  | passportCA.pem  | November 2019  |
 
 
 
@@ -1525,7 +1525,7 @@
 
 | Keyword  | Default  | Description  |
 | --- | --- | --- |
-| <span id="pswfname"></span>pswfname  | '&amp;&amp;TARGET".UPARM(GENKEY)"'  | The password, required to generate the key for installation, is temporarily stored in the 'pswfname' file (and is removed after installation).<br/> **Syntax**: <code>--pass &lt;password&gt;</code> |
+| <span id="pswfname"></span>pswfname  | '&amp;&amp;TARGET".UPARM(GENKEY)"'  | The password, required to generate the key for installation, is temporarily stored in the 'pswfname' file (and is removed after installation).<br/> **Syntax**: <span ><code>--pass &lt;password&gt;</code></span> |
 | keyfname  | '&amp;&amp;TARGET".CRYPKEY"'  | File in which the generated key is stored.  |
 | sltfname  | '&amp;&amp;TARGET".CRYPSALT"'  | File in which the computed salt is stored.  |
 | stacompat  | 'NO'  | Catalog state compatibility: cft.state_compat  |
@@ -1545,11 +1545,11 @@
 
 | Keyword  | Default  | Description  |
 | --- | --- | --- |
-| copenable | 'yes'  | Enable the Transfer CFT{{&lt; TransferCFT/transfercftname &gt;}} Copilot{{&lt; TransferCFT/copilotname &gt;}} server. |
-| copladdr | '&amp;&amp;HOSTBYADDR'  | Transfer CFT Copilot{{&lt; TransferCFT/copilotname &gt;}} server TCP/IP address. The key word '&amp;&amp;HOSTBYADDR' is substituted by the result of the REXX function socket ("GETHOSTBYADDR"). (copilot.general.serverhost) |
-| coplport | '1766'  | Transfer CFT Copilot{{&lt; TransferCFT/copilotname &gt;}} listening port (copilot.general.serverport). |
-| coplsslp  | '1767'  | Copilot server SSL listening port. *Mandatory for Central Governance (copilot.general.ssl_serverport). |
-| coppath  | '/home/AXWAY/CFT32X/inst/cop'  | USS directory for Transfer CFT Copilot{{&lt; TransferCFT/copilotname &gt;}} server files. (copilot.http.httprootdir)  |
+| copenable | 'yes'  | Enable the {{&lt; TransferCFT/suitevariablesTransferCFTName &gt;}} {{&lt; TransferCFT/suitevariablesCopilotName &gt;}} server. |
+| copladdr | '&amp;&amp;HOSTBYADDR'  | Transfer CFT {{&lt; TransferCFT/suitevariablesCopilotName &gt;}} server TCP/IP address. The key word '&amp;&amp;HOSTBYADDR' is substituted by the result of the REXX function socket ("GETHOSTBYADDR"). (copilot.general.serverhost) |
+| coplport | '1766'  | Transfer CFT {{&lt; TransferCFT/suitevariablesCopilotName &gt;}} listening port (copilot.general.serverport). |
+| coplsslp  | '1767'  | Copilot server SSL listening port. *Mandatory for {{&lt; TransferCFT/PrimaryCGorUM &gt;}} (copilot.general.ssl_serverport). |
+| coppath  | '/home/AXWAY/CFT32X/inst/cop'  | USS directory for Transfer CFT {{&lt; TransferCFT/suitevariablesCopilotName &gt;}} server files. (copilot.http.httprootdir)  |
 | restenable  | 'yes'  | Enable Copilot REST API (Yes/No).  |
 | restport  | '1768'  | Copilot REST API server port  |
 
@@ -1638,11 +1638,11 @@
 
 | Keyword  | Default  | Description  |
 | --- | --- | --- |
-| cgenable  | 'no'  | Enables exchanges with the Central Governance server. (yes | no)  |
-| cghost  | 'cghost'  | Central Governance server host address.  |
+| cgenable  | 'no'  | Enables exchanges with the {{&lt; TransferCFT/PrimaryCGorUM &gt;}} server. (yes | no)  |
+| cghost  | 'cghost'  | {{&lt; TransferCFT/PrimaryCGorUM &gt;}} server host address.  |
 | cgport  | 'cgport' ('12553')  | Transfer CFT’s port for registering with Central Governance.  |
-| cgsecret  | 'cgsecret'  | Central Governance shared secret.  |
-| amsusers  | '&amp;%userid()'  | AM superuser(s) for Central Governance.  |
+| cgsecret  | 'cgsecret'  | {{&lt; TransferCFT/PrimaryCGorUM &gt;}} shared secret.  |
+| amsusers  | '&amp;%userid()'  | AM superuser(s) for {{&lt; TransferCFT/PrimaryCGorUM &gt;}}.  |
 
 
 
@@ -1651,9 +1651,9 @@
 
 | Keyword  | Default  | Description  |
 | --- | --- | --- |
-| srenable  | 'no'  | Enable/disable Secure Relay{{&lt; TransferCFT/securerelayname &gt;}}.  |
+| srenable  | 'no'  | Enable/disable {{&lt; TransferCFT/suitevariablesSecureRelayName &gt;}}.  |
 | srmapath  | '/home/AXWAY/CFT32X/inst'  | USS directory for Secure Relay Master Agent (/xsr is automatically added). &lt;/p&gt;<br/> <blockquote> **Note**<br/> Read only, you can share the directory with other Transfer CFTs.<br/> </blockquote>  |
-| srmarun  | '/home/AXWAY/CFT32X/runtime/xsr'  | Runtime directory for Secure Relay Master Agent; one per instance, with Read/Write rights for Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}.  |
+| srmarun  | '/home/AXWAY/CFT32X/runtime/xsr'  | Runtime directory for Secure Relay Master Agent; one per instance, with Read/Write rights for {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}.  |
 | srmacopo  | 'srmacopo'  | Secure Relay Master Agent communication port.  |
 | srrahost  | 'srrahost'  | Secure Relay Router Agent host.  |
 | srraadpo  | '6810'  | Secure Relay Router Agent administration port.  |
@@ -1670,7 +1670,7 @@
 | --- | --- | --- | --- |
 | saml_enable  | no  | Enable SAML as the authentication method for this Transfer CFT (the UCONF am.type=saml).  |   |
 | saml_client_id  | '$(cft.instance_id)'  | Specify the Client_ID value to use as issuer for SAML requests. This should match the Identity Provider configuration.  |   |
-| authserver_host  | ' '  | Specify the SAML endpoint for AuthnRequest (HTTP-Redirect binding).<br/> If Keycloak is the Identity Provider, this should resemble: <code>https://authserver.host/auth/realms/\{realm-name}/protocol/saml. authserver_host ' '</code> | 'https://aa.bb.cc.int:8443'  |
+| authserver_host  | ' '  | Specify the SAML endpoint for AuthnRequest (HTTP-Redirect binding).<br/> If Keycloak is the Identity Provider, this should resemble: <span ><code>https://authserver.host/auth/realms/\{realm-name}/protocol/saml. authserver_host ' '</code></span> | 'https://aa.bb.cc.int:8443'  |
 | saml_idp_signonservice  | ' '  | Specify the SAML endpoint for SignonRequest (HTTP-Redirect binding).<br/> If Keycloak is the Identity Provider, this should resemble:<br/> <code>https://authserver.host/auth/realms/\{realm-name}/protocol/saml.</code><br/> <code>saml_idp_signonservice ' '</code> | '/auth/realms/synapses/protocol/saml'  |
 | saml_idp_logoutservice  | ' '  | Specify the endpoint for SAML LogoutRequest (HTTP-Redirect binding).<br/> If Keycloak is the Identity Provider, this should resemble:<br/> <code>https://authserver.host/auth/realms/\{realm-name}/protocol/saml.</code><br/> <code>saml_idp_logoutservice ' '</code> | '/auth/realms/synapses/protocol/saml'  |
 | saml_idp_certificate_path  | ' '  | Specify the path to the certificate that verifies the SAML Identity Provider server's signatures. This certificate is stored in the internal PKI database.  |   |
@@ -1690,7 +1690,7 @@
 | pfx_log  | '*'  | Log file  |
 | pfx_acc  | '*'  | Account fie  |
 | pfx_sec  | '*'  | Security files  |
-| pfx_uconf  | '*'  | Uconf runtime file (1)  |
+| pfx_uconf  | '*'  | Uconf runtime file <span >(1)</span>  |
 
 
 
@@ -1720,13 +1720,13 @@
 | PDSESHARING [ <u>NO</u> | YES]  |  • NO (default) = Do not allow others to write to PDSE in sharing mode.<br/> • YES = Allow simultaneous writing to a PDSE file type. Other intervening applications must also use the shared mode option though for sharing to occur.<br/> <blockquote> **Note**<br/> On a shared SYSPLEX you must customize the following z/OS system parameter, either:<br/> </blockquote> • NORMAL: SYSn.PARMLIB member IGDSMSxx to specify PDSESHARING, or<br/> • EXTENDED: SYSn.PARMLIB member IGDSMSxx to specify PDSESHARING<br/> <blockquote> **Note**<br/> The delivered sample uses the value ‘PDSESHARING=YES’.<br/> </blockquote>  |
 | [ROUTCDE = {Value of the ROUTCODE CODE field of the WTO | n}] | The left bit corresponds to 1. The right bit corresponds to 16. The default value ROUTCDE=X‘0008’ corresponds to ROUTCDE=(13).<br/> This value is used with the ‘OPERMSG’ option of the ‘CFTLOG’ parameter.<br/> For the options DESC and ROUTCE, refer to the IBM document Supervisor services and macros, which explains the use of DESCRIPTOR CODES and ROUTCODES. |
 | [SDSFOPT = { <u>USER</u> | MONITOR | IGNORE}]  | How Transfer CFT processes a MODIFY command issued from SDSF:<br/> • USER (default value): the console name defined in SDSF options is used as the user id issuing the command.<br/> • MONITOR: the USERID associated with the monitor is used.<br/> • IGNORE: MODIFY commands issued from SDSF are ignored.<br/> *See Note. |
-| [SHARECAT = { **YES** | NO | INACT }] |  • YES (default value): The catalog is cached in a common dataspace that is shared with the Copilot user interface, the CFTUTIL utility, and so on. This parameter improves catalog reading, especially from the Copilot user interface, when enabled.<br/> QQQ_QQQ_QQQ_LIST<br/> • If the catalog is full and an extension is created (using either the <code>cft.cftcat.auto_expand_*</code> parameters or <code>RECONFIG TYPE=CAT</code>), new records are stored in the extension and not in the cache. Accessing records in the extension may negatively impact performance.<br/><br/> • Do not use YES when implementing a multi-node architecture.<br/> <br/> • NO: The catalog is cached in a dataspace, but the dataspace is not shared.<br/> • INACT: The catalog is not cached, and no dataspace is created.<br/> NO: The catalog is cached in a dataspace, but the dataspace is not shared.<br/> INACT: The catalog is not cached, and no dataspace is created.<br/> <blockquote> **Note**<br/> When the Transfer CFT is an APF-authorized program (Authorized Program Facility), specify if the catalog dataspace cache is available to be read by other Transfer CFT applications.<br/> </blockquote> <blockquote> **Note**<br/> The delivered sample uses the value ‘SHARECAT=YES’.<br/> </blockquote>  |
+| [SHARECAT = { **YES** | NO | INACT }] |  • YES (default value): The catalog is cached in a common dataspace that is shared with the Copilot user interface, the CFTUTIL utility, and so on. This parameter improves catalog reading, especially from the Copilot user interface, when enabled.<br/> QQQ_QQQ_QQQ_LIST<br/> • If the catalog is full and an extension is created (using either the <span ><code>cft.cftcat.auto_expand_*</code></span> parameters or <span ><code>RECONFIG TYPE=CAT</code></span>), new records are stored in the extension and not in the cache. Accessing records in the extension may negatively impact performance.<br/><br/> • Do not use YES when implementing a multi-node architecture.<br/> <br/> • NO: The catalog is cached in a dataspace, but the dataspace is not shared.<br/> • INACT: The catalog is not cached, and no dataspace is created.<br/> NO: The catalog is cached in a dataspace, but the dataspace is not shared.<br/> INACT: The catalog is not cached, and no dataspace is created.<br/> <blockquote> **Note**<br/> When the Transfer CFT is an APF-authorized program (Authorized Program Facility), specify if the catalog dataspace cache is available to be read by other Transfer CFT applications.<br/> </blockquote> <blockquote> **Note**<br/> The delivered sample uses the value ‘SHARECAT=YES’.<br/> </blockquote>  |
 | [SGTRACE = {0 | n}] {1…65535} | Initial value of the SGTRACE trace file.<br/> A value other than 0 may be used if requested by Transfer CFT customer support.<br/> Possible combinations are:<br/> • 1: Network actions (TCP)<br/> • 2: Erroneous actions<br/> • 4: File manager actions<br/> • 8: Read/write to files<br/> • 16: C functions<br/> • 32: Long messages<br/> • 64: Inter-task communication actions<br/> • 128: Program calls and return messages<br/> • 256: Interactive interface actions<br/> • 512: User exit calls<br/> <blockquote> **Note**<br/> When you use the SGTRACE options with the Transfer CFT interface under VTAM, the non-encrypted passwords are listed in the trace records.<br/> </blockquote>  |
 | [SUBOPT = { 0 | 1 | 3 } ]  | Manages 2 statistic lines for a job submitted by Transfer CFT:<br/> • 0: Default. Generates 2 lines at the end of JCL //* SUBMITTED BY:jobname AT DD/MM/YY hh:mm:ss ,USERID=username ,CARDS= 0000000 // .<br/> • 1: Generates only the statistic line at the end of the JCL and no card ‘//’ //* SUBMITTED BY:jobname AT DD/MM/YY hh:mm:ss ,USERID=username ,CARDS= 0000000 .<br/> • 3: Does not generate a line at the end of the JCL. |
 | [TRACE = { <u>128</u> | n}] {4…16383} | Transfer CFT internal trace size (in Kb). |
 | [TAPE = {NOTSUP | <u>UPDATE</u> | OUTPUT}] |  • NOTSUP: Forbids access to tape files for all Transfer CFT programs.<br/> • UPDATE: Default. Enables writing of tape files protected by means of a retaining date or tape library management software.<br/> • OUPUT: The transfer fails in ABDEND 713 if the tape is write-protected by tape library management software, or an expiration date.<br/> <blockquote> **Note**<br/> The delivered sample uses the value ‘TAPE=OUTPUT’.<br/> </blockquote>  |
 | [TSOEDIT = { <u>NO</u> | YES}] | File support with sequence number in columns 73 to 80:<br/> • YES: If the ISPF editor with the ‘NUMBER ON’ option creates them, then the input files read by CFTUTIL can contain an eight-digit sequence number in columns 73 to 80. This sequence number is then ignored by Transfer CFT z/OS.<br/> • NO: Input files are read without changes from CFTUTIL.<br/> <blockquote> **Note**<br/> The delivered sample uses the value ‘TSOEDIT=YES’.<br/> </blockquote>  |
-| [VSAMSUFS = { <u>SHORT</u> | LONG }]  |  • SHORT: VSAM component suffixes are created with .D for KSDS and ESDS, and .I for KSDS.<br/> • LONG: VSAM component suffixes are created with .DATA for KSDS and ESDS, and .INDEX for KSDS.<br/> Alternatively, you can set this parameter using: <code>UCONFSET ID=cft.mvs.sginstal.vsamsufs,value=x</code> |
+| [VSAMSUFS = { <u>SHORT</u> | LONG }]  |  • SHORT: VSAM component suffixes are created with .D for KSDS and ESDS, and .I for KSDS.<br/> • LONG: VSAM component suffixes are created with .DATA for KSDS and ESDS, and .INDEX for KSDS.<br/> Alternatively, you can set this parameter using: <span ><code>UCONFSET ID=cft.mvs.sginstal.vsamsufs,value=x</code></span> |
 
 
 
@@ -1773,8 +1773,8 @@
 
 | Step  | Description  | Member  |
 | --- | --- | --- |
-| 15  | If cgenable=yes:<br/> Create the Axway Central Governance Demonstration Root Certificate. | CFTCGPKI  |
-| 16  | If cgenable=yes:<br/> Transfer CFT to Central Governance registration. | CFTCGREG  |
+| 15  | If cgenable=yes:<br/> Create the Axway {{&lt; TransferCFT/PrimaryCGorUM &gt;}} Demonstration Root Certificate. | CFTCGPKI  |
+| 16  | If cgenable=yes:<br/> Transfer CFT to {{&lt; TransferCFT/PrimaryCGorUM &gt;}} registration. | CFTCGREG  |
 
 
 
@@ -1867,8 +1867,8 @@
 | 13  | <a href="t_configure_optional_features_zos#Create%20a%20Transfer%20CFT%20PKI%20file%C2%A0D43PKI">D43PKI</a><br/> <a href="t_configure_optional_features_zos#Connect%20with%20PassPort%C2%A0D44PASS">D44PASS</a><br/> <a href="t_configure_optional_features_zos">D47SYST</a> | Select one of the options listed for Step 12:<br/> • D43PKI: Create internal datafile for PKI data<br/> • D44PASS: Declare link to PassPort server<br/> • D47SYST: Enable use of system PKI |
 | 14  | <a href="t_install_sentinel_zos">SN05CONF</a> | <a href="t_install_sentinel_zos">Customize Sentinel</a> configuration file |
 | 15  | CFTHEART  | Activate Transfer CFT Heartbeats for Sentinel Dashboards  |
-| 16  | CFTCGREG  | Register Transfer CFT{{&lt; TransferCFT/transfercftname &gt;}} with Central Governance  |
-| 17  | CFTCGPKI  | Used to register Transfer CFT{{&lt; TransferCFT/transfercftname &gt;}} with Central Governance  |
+| 16  | CFTCGREG  | Register {{&lt; TransferCFT/suitevariablesTransferCFTName &gt;}} with {{&lt; TransferCFT/PrimaryCGorUM &gt;}}  |
+| 17  | CFTCGPKI  | Used to register {{&lt; TransferCFT/suitevariablesTransferCFTName &gt;}} with {{&lt; TransferCFT/PrimaryCGorUM &gt;}}  |
 | 18  | XSRRUN  | Launches the Java virtual machine (JVM).<br/> <blockquote> **Note**<br/> Customize JOB card.<br/> </blockquote>  |
 | 19  | XSRA010  | Install files for the Secure Relay Master Agent on the USS environment.  |
 | 20  | XSRA015  | Create the Runtime directory for the Transfer CFT Secure Relay Master Agent.  |
@@ -1991,7 +1991,7 @@
 | cft.multi_node.<br /> cftcom.dispatcher_policy  | Specifies the dispatching policy.<br/> - round_robin: Random dispatching across all nodes occurs.<br/> - node_affinity: Creates a one to one link between a partner and a node. Transfer requests for a given partner will always be performed by the same node. | round_robin  | round_robin,<br/> node_affinity | Yes  |
 | cft.multi_node.<br /> sharedidt.fname | Shared file for global IDT calculation in multi-node | $(cft.runtime_dir)/data/cftsidt | fname | Yes  |
 | cft.multi_node.<br /> sharedidt.enable | Use global IDT calculation method | No | Yes, No | Yes  |
-| cft.multi_node.<br /> shared.filesystem.type | Used to select appropriate consistency enforcement strategy.<br/> If Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} is using NFSv4, you must enter the value <code>nfs </code>in lower case. | unknown | unknown, posix, nfs, cifs | Yes  |
+| cft.multi_node.<br /> shared.filesystem.type | Used to select appropriate consistency enforcement strategy.<br/> If {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} is using NFSv4, you must enter the value <span ><code>nfs </code></span>in lower case. | unknown | unknown, posix, nfs, cifs | Yes  |
 | cft.multi_node.<br /> transfer_recovery_timeout | Timeout in seconds for transfer recovery process (seconds) | 30 | integer | Yes  |
 | cft.multi_node.<br /> transfer_recovery_retry_delay | Delay in seconds for transfer recovery retry (seconds) | 20 | integer | Yes  |
 | cft.multi_node.<br /> connection_retry_delay | Delay in seconds for connection retry between nodes (seconds) | 10 | integer | Yes  |
@@ -2004,12 +2004,12 @@
 | cft.multi_node.<br /> hostnames.&lt;hostname&gt;.<br /> copui_notification_port | Notification port for UI server (copui) in multi-node |   | integer | No  |
 | cft.multi_node.nodes | Number of nodes | 2 | integer from 2 to $(cft.multi_node.max) | No  |
 | cft.multi_node.<br /> nodes.&lt;node_id&gt;.nodestate | Node status | DISABLED | DISABLED,<br/> ENABLED_STOPPED,<br/> ENABLED_STARTED | No  |
-| cft.multi_node.<br /> nodes.&lt;node_id&gt;.state | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} status | STOPPED | INITIALIZING,<br/> STARTING, RUNNING, STOPPING, STOPPED,<br/> ERROR | No  |
+| cft.multi_node.<br /> nodes.&lt;node_id&gt;.state | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} status | STOPPED | INITIALIZING,<br/> STARTING, RUNNING, STOPPING, STOPPED,<br/> ERROR | No  |
 | cft.multi_node.<br /> nodes.&lt;node_id&gt;.pid | CFTMAIN process ID |   | integer | No  |
 | cft.multi_node.<br /> nodes.&lt;node_id&gt;.hostname | Hostname of the server where the node is running on |   | string | No  |
 | cft.multi_node.<br /> nodes.&lt;node_id&gt;.host | Host address of the server where the node is running on. |   | string | No  |
 | cft.multi_node.<br /> nodes.&lt;node_id&gt;.prx_port | Internal node listening port |   | integer | No  |
-| cft.multi_node.<br /> nodes.&lt;node_id&gt;.disabling | Sets flag when disabling Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}. | No | Yes, No | No  |
+| cft.multi_node.<br /> nodes.&lt;node_id&gt;.disabling | Sets flag when disabling {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}. | No | Yes, No | No  |
 | cft.multi_node.listen_port_range  | Defines a port range to use for listening points dedicated to inter-node communication in multi-node, where the range is at least 4 x (number of nodes).<br/> If you are using a firewall, you must use a port range that you can customize in your firewall to accept incoming connections. | NA<br/> (system value is used) |   |   |
 
 
@@ -2141,9 +2141,9 @@
 
 | Type  | Location  | Certificate  | Expires  |
 | --- | --- | --- | --- |
-| Secure Relay{{&lt; TransferCFT/securerelayname &gt;}}  | &lt;Transfer_CFT&gt;/home/distrib/xsr  | SecureRelayCA.pem | November 2021  |
+| {{&lt; TransferCFT/suitevariablesSecureRelayName &gt;}}  | &lt;Transfer_CFT&gt;/home/distrib/xsr  | SecureRelayCA.pem | November 2021  |
 |   |   | SecureRelayMasterAgent.p12  | November 2021  |
-| Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}  | &lt;Transfer_CFT&gt;/runtime/conf/pki  | passportCA.pem  | November 2019  |
+| {{&lt; TransferCFT/suitevariablesCentralGovernanceName &gt;}}  | &lt;Transfer_CFT&gt;/runtime/conf/pki  | passportCA.pem  | November 2019  |
 
 
 
@@ -2705,7 +2705,7 @@
 | JCL  | Description  |
 | --- | --- |
 | A13UXSRA  | To apply a patch to Secure Relay - Master Agent (creates a save file).  |
-| A13UXSRR  | To restore the Transfer CFT Secure Relay{{&lt; TransferCFT/securerelayname &gt;}} environment from a save file in USS environment.  |
+| A13UXSRR  | To restore the Transfer CFT {{&lt; TransferCFT/suitevariablesSecureRelayName &gt;}} environment from a save file in USS environment.  |
 | A13UXSRD  | To delete a save file when a patch is validated.  |
 
 
@@ -2856,10 +2856,10 @@
 
 | Template  | Function  | Services | Description  |
 | --- | --- | --- | --- |
-| CAPI2A | ipcai2_*  |  • ipcai2_initialize-ipcai2_catalog_open-ipcai2_catalog_selection_new<br/> • ipcai2_catalog_selection_set<br/> • ipcai2_catalog_selection_sortby<br/> • ipcai2_catalog_selection_skip<br/> • ipcai2_catalog_selection_next<br/> • ipcai2_catalog_record_get<br/> • ipcai2_catalog_info_get<br/> • ipcai2_catalog_selection_delete<br/> • ipcai2_catalog_close-ipcai2_finalize-<br/> • ipcai2_get_errno_str | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog API sample program, listing all catalog content.  |
-| CAPI2B | ipcai2_*  |  • ipcai2_initialize<br/> • ipcai2_catalog_open<br/> • ipcai2_catalog_selection_new<br/> • ipcai2_catalog_selection_set<br/> • ipcai2_catalog_selection_sortby<br/> • ipcai2_catalog_selection_skip<br/> • ipcai2_catalog_selection_next<br/> • ipcai2_catalog_record_get<br/> • ipcai2_catalog_info_get<br/> • ipcai2_catalog_selection_delete<br/> • ipcai2_catalog_close<br/> • ipcai2_finalize<br/> • ipcai2_get_errno_str | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog API sample program, which changes all Terminated transfers to Ended.  |
-| CAPIC | cftai - cftac - cftau  | OPEN- SELECT - NEXT - MODIFY - CLOSE - SEND -RECV - HALT - START - DELETE  | C Sample for Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} API.  |
-| CAPISYN | cftau  | COM - SEND - GETXINFO - SWAITCAT  | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} communication sample program using Synchronous Communication media (multiple send commands are possible).  |
+| CAPI2A | ipcai2_*  |  • ipcai2_initialize-ipcai2_catalog_open-ipcai2_catalog_selection_new<br/> • ipcai2_catalog_selection_set<br/> • ipcai2_catalog_selection_sortby<br/> • ipcai2_catalog_selection_skip<br/> • ipcai2_catalog_selection_next<br/> • ipcai2_catalog_record_get<br/> • ipcai2_catalog_info_get<br/> • ipcai2_catalog_selection_delete<br/> • ipcai2_catalog_close-ipcai2_finalize-<br/> • ipcai2_get_errno_str | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} catalog API sample program, listing all catalog content.  |
+| CAPI2B | ipcai2_*  |  • ipcai2_initialize<br/> • ipcai2_catalog_open<br/> • ipcai2_catalog_selection_new<br/> • ipcai2_catalog_selection_set<br/> • ipcai2_catalog_selection_sortby<br/> • ipcai2_catalog_selection_skip<br/> • ipcai2_catalog_selection_next<br/> • ipcai2_catalog_record_get<br/> • ipcai2_catalog_info_get<br/> • ipcai2_catalog_selection_delete<br/> • ipcai2_catalog_close<br/> • ipcai2_finalize<br/> • ipcai2_get_errno_str | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} catalog API sample program, which changes all Terminated transfers to Ended.  |
+| CAPIC | cftai - cftac - cftau  | OPEN- SELECT - NEXT - MODIFY - CLOSE - SEND -RECV - HALT - START - DELETE  | C Sample for {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} API.  |
+| CAPISYN | cftau  | COM - SEND - GETXINFO - SWAITCAT  | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} communication sample program using Synchronous Communication media (multiple send commands are possible).  |
 | CAPIW | cftai - cftau  | SEND - OPEN - CLOSE - (SELECT - NEXT) or (SELECT240 - NEXT240)  | Perform a SEND request with an IDA and wait for the transfer to end (completed) until the timer expires or the transfer is aborted.  |
 | CAPIX | cftaix  | OPEN - CLOSE - SELECT (NEXT - NEXT240) - SORT - DO - COUNT  | A C language template for a catalog list with selection and sorting.  |
 
@@ -2870,15 +2870,15 @@
 
 | Template  | Function  | Services | Description  |
 | --- | --- | --- | --- |
-| OAPI2A | ipcai2_*  |  • ipcai2_initialize<br/> • ipcai2_catalog_open<br/> • ipcai2_catalog_selection_new<br/> • ipcai2_catalog_selection_set<br/> • ipcai2_catalog_selection_sortby<br/> • ipcai2_catalog_selection_skip<br/> • ipcai2_catalog_selection_next<br/> • ipcai2_catalog_record_get<br/> • ipcai2_catalog_info_get<br/> • ipcai2_catalog_selection_delete<br/> • ipcai2_catalog_close<br/> • ipcai2_finalize<br/> • ipcai2_get_errno_str | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog API template program, which lists all catalog content.  |
-| OAPI2AS | ipcai2_*  |  • ipcai2_initialize<br/> • ipcai2_catalog_open<br/> • ipcai2_catalog_selection_new<br/> • ipcai2_catalog_selection_set<br/> • ipcai2_catalog_selection_sortby<br/> • ipcai2_catalog_selection_skip<br/> • ipcai2_catalog_selection_next<br/> • ipcai2_catalog_record_get<br/> • ipcai2_catalog_info_get<br/> • ipcai2_catalog_selection_delete<br/> • ipcai2_catalog_close<br/> • ipcai2_finalize<br/> • ipcai2_get_errno_str | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog API template program, which lists all of the catalog content.  |
-| OAPI2B | ipcai2_*  |  • ipcai2_initialize-<br/> • ipcai2_catalog_open<br/> • ipcai2_catalog_selection_new<br/> • ipcai2_catalog_selection_set<br/> • ipcai2_catalog_selection_sortby<br/> • ipcai2_catalog_selection_skip<br/> • ipcai2_catalog_selection_next<br/> • ipcai2_catalog_record_get<br/> • ipcai2_catalog_info_get<br/> • ipcai2_catalog_selection_delete<br/> • ipcai2_catalog_close<br/> • ipcai2_finalize<br/> • ipcai2_get_errno_str | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog API template program, which changes all successful transfers to a completed state.  |
-| OAPI2BS | ipcai2_*  |  • ipcai2_initialize<br/> • ipcai2_catalog_open<br/> • ipcai2_catalog_selection_new<br/> • ipcai2_catalog_selection_set<br/> • ipcai2_catalog_selection_sortby<br/> • ipcai2_catalog_selection_skip<br/> • ipcai2_catalog_selection_next<br/> • ipcai2_catalog_record_get-<br/> • ipcai2_catalog_info_get-<br/> • ipcai2_catalog_selection_delete-<br/> • ipcai2_catalog_close-<br/> • ipcai2_finalize-<br/> • ipcai2_get_errno_str | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog API template program, which changes all successful transfers to the completed state.  |
-| OAPIC | CFTC  | SEND -RECV - HALT - START - DELETE  | Issue Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} commands. |
-| OAPICS | CFTC  | SEND -RECV - HALT - START - DELETE  | Issue Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} commands  |
-| OAPII | CFTI  | OPEN - CLOSE - (SELECT - NEXT) or (SELECT240 - NEXT240)  | List the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog. |
-| OAPIIS | CFTI  | OPEN - CLOSE - (SELECT - NEXT) or (SELECT240 - NEXT240)  | List the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog.  |
-| OAPISYN | cftau  | COM - SEND - GETXINFO - SWAITCAT  | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} communication sample program using the synchronous communication media, where multiple SEND commands are possible.  |
+| OAPI2A | ipcai2_*  |  • ipcai2_initialize<br/> • ipcai2_catalog_open<br/> • ipcai2_catalog_selection_new<br/> • ipcai2_catalog_selection_set<br/> • ipcai2_catalog_selection_sortby<br/> • ipcai2_catalog_selection_skip<br/> • ipcai2_catalog_selection_next<br/> • ipcai2_catalog_record_get<br/> • ipcai2_catalog_info_get<br/> • ipcai2_catalog_selection_delete<br/> • ipcai2_catalog_close<br/> • ipcai2_finalize<br/> • ipcai2_get_errno_str | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} catalog API template program, which lists all catalog content.  |
+| OAPI2AS | ipcai2_*  |  • ipcai2_initialize<br/> • ipcai2_catalog_open<br/> • ipcai2_catalog_selection_new<br/> • ipcai2_catalog_selection_set<br/> • ipcai2_catalog_selection_sortby<br/> • ipcai2_catalog_selection_skip<br/> • ipcai2_catalog_selection_next<br/> • ipcai2_catalog_record_get<br/> • ipcai2_catalog_info_get<br/> • ipcai2_catalog_selection_delete<br/> • ipcai2_catalog_close<br/> • ipcai2_finalize<br/> • ipcai2_get_errno_str | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} catalog API template program, which lists all of the catalog content.  |
+| OAPI2B | ipcai2_*  |  • ipcai2_initialize-<br/> • ipcai2_catalog_open<br/> • ipcai2_catalog_selection_new<br/> • ipcai2_catalog_selection_set<br/> • ipcai2_catalog_selection_sortby<br/> • ipcai2_catalog_selection_skip<br/> • ipcai2_catalog_selection_next<br/> • ipcai2_catalog_record_get<br/> • ipcai2_catalog_info_get<br/> • ipcai2_catalog_selection_delete<br/> • ipcai2_catalog_close<br/> • ipcai2_finalize<br/> • ipcai2_get_errno_str | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} catalog API template program, which changes all successful transfers to a completed state.  |
+| OAPI2BS | ipcai2_*  |  • ipcai2_initialize<br/> • ipcai2_catalog_open<br/> • ipcai2_catalog_selection_new<br/> • ipcai2_catalog_selection_set<br/> • ipcai2_catalog_selection_sortby<br/> • ipcai2_catalog_selection_skip<br/> • ipcai2_catalog_selection_next<br/> • ipcai2_catalog_record_get-<br/> • ipcai2_catalog_info_get-<br/> • ipcai2_catalog_selection_delete-<br/> • ipcai2_catalog_close-<br/> • ipcai2_finalize-<br/> • ipcai2_get_errno_str | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} catalog API template program, which changes all successful transfers to the completed state.  |
+| OAPIC | CFTC  | SEND -RECV - HALT - START - DELETE  | Issue {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} commands. |
+| OAPICS | CFTC  | SEND -RECV - HALT - START - DELETE  | Issue {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} commands  |
+| OAPII | CFTI  | OPEN - CLOSE - (SELECT - NEXT) or (SELECT240 - NEXT240)  | List the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} catalog. |
+| OAPIIS | CFTI  | OPEN - CLOSE - (SELECT - NEXT) or (SELECT240 - NEXT240)  | List the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} catalog.  |
+| OAPISYN | cftau  | COM - SEND - GETXINFO - SWAITCAT  | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} communication sample program using the synchronous communication media, where multiple SEND commands are possible.  |
 | OAPIW | CFTI - CFTU  | SEND, OPEN, CLOSE , (SELECT - NEXT), or (SELECT240 - NEXT240)  | Perform a SEND request with an IDA and wait for the transfer to complete successfully, reach the time out, or abort the transfer.  |
 | OAPIWS | CFTI - CFTU  | SEND - OPEN - CLOSE - (SELECT - NEXT) or (SELECT240 - NEXT240)  | Perform a SEND request with an IDA and wait for the transfer to complete successfully, reach the time out, or abort the transfer.  |
 
@@ -2913,12 +2913,12 @@
 | SFTP  | 1763  |
 | COMS  | 1765  |
 | Copilot  | 1766  |
-| Transfer CFT UI (Copilot) server for Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}}  | 1767  |
+| Transfer CFT UI (Copilot) server for {{&lt; TransferCFT/suitevariablesCentralGovernanceName &gt;}}  | 1767  |
 | REST API  | 1768  |
-| Central Governance  | 12553  |
-| Central Governance{{&lt; TransferCFT/centralgovernancename &gt;}} SSL  | 12554  |
-| Secure Relay{{&lt; TransferCFT/securerelayname &gt;}} MA<br/> ma.comm_port |  <br/> 6801 |
-| Secure Relay{{&lt; TransferCFT/securerelayname &gt;}} RA<br/> • ra.comm_port<br/> • ra.admin_port |  <br/> • 6811<br/> • 6810 |
+| {{&lt; TransferCFT/PrimaryCGorUM &gt;}}  | 12553  |
+| {{&lt; TransferCFT/suitevariablesCentralGovernanceName &gt;}} SSL  | 12554  |
+| {{&lt; TransferCFT/suitevariablesSecureRelayName &gt;}} MA<br/> ma.comm_port |  <br/> 6801 |
+| {{&lt; TransferCFT/suitevariablesSecureRelayName &gt;}} RA<br/> • ra.comm_port<br/> • ra.admin_port |  <br/> • 6811<br/> • 6810 |
 
 
 
@@ -3006,7 +3006,7 @@
 ============================== table nb count(196) table converted to MD ========================================
 
 
-| <h2 id="transfer-cft-transfercftcomponentlongname-3.2.x-and-higher">Transfer CFT{{&lt; TransferCFT/componentlongname &gt;}} 3.2.x and higher</h2>  |
+| <h2 id="transfercftaxwayvariablescomponentlongname-3.2.x-and-higher">{{&lt; TransferCFT/axwayvariablesComponentLongName &gt;}} 3.2.x and higher</h2>  |
 | --- |
 | 1. Common CFT commands <br/> 1. Start Copilot <br/> 2. Stop Copilot <br/> 3. Start Transfer CFT <br/> 4. Stop Transfer CFT <br/> 5. CFTUTIL operations <br/> 6. Manage configuration File<br/> 1. Edit configuration file <br/> 2. Interpret configuration file<br/> 2. Security commands <br/> 1. Edit Security configuration file<br/> 2. Interpret Security configuration<br/> 3. PKIUTIL operation <br/> 3. Administration commands <br/> 1. Reinitialize Transfer CFT parameters<br/> 2. Submit Transfer CFT support request <br/> 4. Create system objects<br/> 1. Create job queue <br/> 2. Create job description <br/> 3. Create subsystem <br/> 4. Add job-queue entry <br/> 5. Create class <br/> 6. Add routing entry <br/> 7. Add communication entry <br/> 8. Change profile <br/> <br/> Note: A highlighted menu item indicates there is a sub-menu. |
 
@@ -3238,7 +3238,7 @@
 | SELECT240 | Specify the selection criteria<br/> This function:<br/> • Is available in CFT v2.4 and higher<br/> • Retrieves identifiers that are longer than 8 to 32 characters<br/> • Checks the syntax used<br/> • Stores the selection criteria in the internal control block |
 | NEXT | Read next entry in the catalog<br/> This function:<br/> • Reads the next entry<br/> • Sets the "catalog entry data" area<br/> The first call to this function must be preceded by a SELECT. |
 | NEXT240 | Read next entry in the catalog<br/> This function:<br/> • Is available in CFT v2.4 and higher<br/> • Retrieves identifiers that are longer than 8 to 32 characters<br/> • Reads the next entry<br/> • Sets the "catalog entry data" area |
-| MODIFY | Modify the state of the current catalog entry or delete this entry from the catalog<br/> This function:<br/> • Retrieves the last entry read from the internal control block<br/> • Checks the state of this entry<br/> • Sends the modification request to Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
+| MODIFY | Modify the state of the current catalog entry or delete this entry from the catalog<br/> This function:<br/> • Retrieves the last entry read from the internal control block<br/> • Checks the state of this entry<br/> • Sends the modification request to {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} |
 | SORT | Sort the selected catalog entries<br/> This function:<br/> • Close the catalog file<br/> • De-allocates the file<br/> • Frees the internal control block<br/> • Resets the internal control block parameter |
 | DO | Execute the current selection and the requested sort in memory |
 | CLOSE | Close catalog file |
@@ -3258,7 +3258,7 @@
 | DELETE | Delete a catalog entry and any transfer in process associated with it |
 | END | Set a transfer status to executed<br/> The transfer is set to the "X" state. This indicates that end-of-transfer procedure has been correctly executed. |
 | SUBMIT | Submit the end-of-transfer procedure |
-| SHUT | Shut down Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
+| SHUT | Shut down {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} |
 | SWITCH | Switch monitoring files, LOG, STATS... |
 | CLOSEAPI | Free resources allocated at opening of communication medium: memory, network, file |
 | COM | Define communication medium |
@@ -3282,8 +3282,8 @@
 | ****Syntax**** | rc = cftxx (verb,&amp;ptr,param) |
 | --- | --- |
 | Element | Definition |
-| cftxx | ****cftai****: simple Transfer CFT catalog querying services<br/> ****cftaix****: extended Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog querying services<br/> ****cftau****: transfer services with syntax analysis<br/> ****cftac****: transfer services without syntax analysis |
-| **verb** | Service requested |
+| cftxx | <span >****cftai****</span>: simple Transfer CFT catalog querying services<br/> <span >****cftaix****</span>: extended {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} catalog querying services<br/> <span >****cftau****</span>: transfer services with syntax analysis<br/> <span >****cftac****</span>: transfer services without syntax analysis |
+| **<span >verb</span>** | Service requested |
 | ptr | Address of the internal control block |
 | param | Parameters specific to the requested service |
 | rc | Return code |
@@ -3342,8 +3342,8 @@
 
 | Service | CftApi2Catalog *ipcai2_catalog_open(CftApi2Session * session, char *catalog_fname)  |
 | --- | --- |
-| Definition | Opens the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog file. |
-| Parameter | session: Pointer to the CftApi2Session structure returned by the initialization ipcai2_initialize()<br /> catalog_fname: Name of the catalog file. If the file name is "" the API opens the catalog file by default, for example _CFTCATA for Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}UNIX. |
+| Definition | Opens the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} catalog file. |
+| Parameter | session: Pointer to the CftApi2Session structure returned by the initialization ipcai2_initialize()<br /> catalog_fname: Name of the catalog file. If the file name is "" the API opens the catalog file by default, for example _CFTCATA for {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}UNIX. |
 | Return value | This function returns a pointer to the CftApi2Catalog structure. If the returned value is NULL, the catalog cannot be opened and the error code is returned by calling ipcai2_get_errno(). |
 | Remarks | None |
 
@@ -3465,7 +3465,7 @@
 | Definition | Modifies the transfer state for the selected catalog. |
 | Parameter | selection: Pointer to a selection carried out by ipcai2_catalog_selection_next() |
 | Return value | None. |
-| Remarks | The Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} API must have already opened the communication medium. |
+| Remarks | The {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} API must have already opened the communication medium. |
 
 
 
@@ -3486,7 +3486,7 @@
 
 | Service | long ipcai2_monitor_info_get(CftApi2Catalog *catalog, char *param, char *buffer, int bufflen) |
 | --- | --- |
-| Definition | Recovers information about the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}. |
+| Definition | Recovers information about the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}. |
 | Parameter | catalog: Pointer to the catalog returned by ipcai2_catalog_open()<br /> param: Parameter to recover. The parameter is available in cftapi2.h under “Monitor information parameters” topic : CFTAPI2_MON_INFO__*<br /> buffer: Buffer that was provided the parameter value .<br /> bufflen: Length of the buffer sent to the API. |
 | Return value | If the return code is positive, it contains the last API error code for the session.<br/> If the return code is negative, the buffer is too short. In this case, the code is equal to –n where n is the required length. |
 | Remarks | None. |
@@ -3503,7 +3503,7 @@
 | SELECT240 | Specify the selection criteria<br/> This function:<br/> • Is available in CFT v2.4 and higher<br/> • Retrieves identifiers that are longer than 8 to 32 characters<br/> • Checks the syntax used<br/> • Stores the selection criteria in the internal control block |
 | NEXT | Read next entry in the catalog<br/> This function:<br/> • Reads the next entry<br/> • Sets the "catalog entry data" area<br/> The first call to this function must be preceded by a SELECT. |
 | NEXT240 | Read next entry in the catalog<br/> This function:<br/> • Is available in CFT v2.4 and higher<br/> • Retrieves identifiers that are longer than 8 to 32 characters<br/> • Reads the next entry<br/> • Sets the "catalog entry data" area |
-| MODIFY | Modify the state of the current catalog entry or delete this entry from the catalog<br/> This function:<br/> • Retrieves the last entry read from the internal control block<br/> • Checks the state of this entry<br/> • Sends the modification request to Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
+| MODIFY | Modify the state of the current catalog entry or delete this entry from the catalog<br/> This function:<br/> • Retrieves the last entry read from the internal control block<br/> • Checks the state of this entry<br/> • Sends the modification request to {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} |
 | SORT | Sort the selected catalog entries<br/> This function:<br/> • Close the catalog file<br/> • De-allocates the file<br/> • Frees the internal control block<br/> • Resets the internal control block parameter |
 | DO | Execute the current selection and the requested sort in memory |
 | CLOSE | Close catalog file |
@@ -3519,7 +3519,7 @@
 | SELECT | Define selection criteria |
 | NEXT | Read next entry |
 | MODIFY | Modify catalog entry state |
-| SORT | ****cftaix only****<br/> ****Sort the selected catalog entries**** |
+| SORT | ****cftaix only****<br/> ****<span >Sort the selected catalog entries</span>**** |
 | DO | ****cftaix only****<br/> Do the current selection and the requested sort in memory |
 | CLOSE | Close catalog |
 
@@ -3531,10 +3531,10 @@
 | &lt;verb&gt; | &lt;param&gt; | Explanation |
 | --- | --- | --- |
 | OPEN | cat | Path name or logical name of the catalog file. If the name is blank, Transfer CFT uses a default name. |
-| SELECT<br/> and SELECT240 | &amp;cftsel | Selection criteria according to the format described in the "**Selection data description**" in the ****cftapi.h**** file.<br/> • cftsel230T for SELECT service<br/> • cftsel240T for SELECT240 service<br/> All the fields must be defined by left-aligned character strings. If a field is equal to binary zeros, it is considered not selective.<br/> This structure can contain:<br/> • The size of the selection criteria field (slength) and the size of the field supporting the catalog entry (clength) in order to avoid recompiling the application program if these two fields are extended.<br/> • The transfer start and end date (BDATE and EDATE) to select transfers performed between these two dates.<br/> • A field can be composed of a mask with the special characters "?" and *". The "?" character replaces any character. The "*" character replaces a character string of any length.<br /> <br /> Examples:<br /> A*D replaces ABCD, ABCED or AID<br /> A??D replaces ABCD, AXYD or AQZD<br /> *CD replaces ABECD, YXZCDor TYUICD<br /> ?CD replaces ACD, XCD or ZCD<br /> ?B* replaces ABCDEF, XBZWEO or *KBWXCV<br /> ???? replaces ABCD, XYZW or HGFD<br/> You should initialize the following:<br/> • The param field to binary zero before defining it<br/> • The slength and clength by "itoa()"<br/> ****cftaix only****<br/> The selection is only taken into account at the time the DO service is called. |
-| NEXT<br/> and<br/> NEXT240 | &amp;cftcat | Next catalog entry according to the format described in the "**Selection data description**" in the ****cftapi.h**** file.<br/> • cftcatT for NEXT service<br/> • cftcat240T for NEXT240 service |
+| SELECT<br/> and SELECT240 | &amp;cftsel | Selection criteria according to the format described in the "<span >**Selection data description**</span>" in the <span >****cftapi.h****</span> file.<br/> • cftsel230T for SELECT service<br/> • cftsel240T for SELECT240 service<br/> All the fields must be defined by left-aligned character strings. If a field is equal to binary zeros, it is considered not selective.<br/> This structure can contain:<br/> • The size of the selection criteria field (slength) and the size of the field supporting the catalog entry (clength) in order to avoid recompiling the application program if these two fields are extended.<br/> • The transfer start and end date (BDATE and EDATE) to select transfers performed between these two dates.<br/> • A field can be composed of a mask with the special characters "?" and *". The "?" character replaces any character. The "*" character replaces a character string of any length.<br /> <br /> Examples:<br /> A*D replaces ABCD, ABCED or AID<br /> A??D replaces ABCD, AXYD or AQZD<br /> *CD replaces ABECD, YXZCDor TYUICD<br /> ?CD replaces ACD, XCD or ZCD<br /> ?B* replaces ABCDEF, XBZWEO or *KBWXCV<br /> ???? replaces ABCD, XYZW or HGFD<br/> You should initialize the following:<br/> • The param field to binary zero before defining it<br/> • The slength and clength by "itoa()"<br/> ****cftaix only****<br/> The selection is only taken into account at the time the DO service is called. |
+| NEXT<br/> and<br/> NEXT240 | &amp;cftcat | Next catalog entry according to the format described in the "<span >**Selection data description**</span>" in the <span >****cftapi.h****</span> file.<br/> • cftcatT for NEXT service<br/> • cftcat240T for NEXT240 service |
 | MODIFY | &amp;nstate | New state of a transfer to be placed in the catalog entry previously read:<br/> • ‘D’ at Disposal: only valid if the former state is H or K<br/> • ‘H’ Hold: only valid if the former state is D, C or K<br/> • ‘K’ Keep: only valid if the former state is D, C or H<br/> • ‘X’ eXecuted: only valid if the former state is T<br/> • ‘P’ Purge: deletes the catalog entry*. It is only valid if the current state is D, H, K, T or X |
-| SORT | param | ****cftaix only****<br/> Sort options as described in the "**Sort structure of the selected catalog entries**" in the ****cftapi.h**** file.<br/> The function is only taken into account at the time the DO service is called. |
+| SORT | param | ****cftaix only****<br/> Sort options as described in the "<span >**Sort structure of the selected catalog entries**</span>" in the <span >****cftapi.h****</span> file.<br/> The function is only taken into account at the time the DO service is called. |
 | DO | " " |   |
 | CLOSE | " " |   |
 
@@ -3598,7 +3598,7 @@
 | DELETE | Delete a catalog entry and any transfer in process associated with it |
 | END | Set a transfer status to executed<br/> The transfer is set to the "X" state. This indicates that end-of-transfer procedure has been correctly executed. |
 | SUBMIT | Submit the end-of-transfer procedure |
-| SHUT | Shut down Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
+| SHUT | Shut down {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} |
 | SWITCH | Switch monitoring files, LOG, STATS... |
 | CLOSEAPI | Free resources allocated at opening of communication medium: memory, network, file |
 | COM | Define communication medium |
@@ -3632,7 +3632,7 @@
 | --- | --- |
 | CAPI_NOERR | No error |
 | CAPI_FUNC_UNDEF | Command not valid |
-| CAPI_CMD_LENGTH | cftau only<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} command string invalid, does not exist, or greater than 1024 characters long  |
+| CAPI_CMD_LENGTH | cftau only<br/> {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} command string invalid, does not exist, or greater than 1024 characters long  |
 | CAPI_KEY_NAME | cftau only<br/> Command syntax incorrect: keyword name incorrect |
 | CAPI_KEY_VALUE | cftau only<br/> Command syntax incorrect: keyword value incorrect |
 | CAPI_MEM_GET | Memory allocation error |
@@ -3653,7 +3653,7 @@
 | SELECT240 | Specify the selection criteria<br/> This function:<br/> • Is available in CFT v2.4 and higher<br/> • Retrieves identifiers that are longer than 8 to 32 characters<br/> • Checks the syntax used<br/> • Stores the selection criteria in the internal control block |
 | NEXT | Read next entry in the catalog<br/> This function:<br/> • Reads the next entry<br/> • Sets the "catalog entry data" area<br/> The first call to this function must be preceded by a SELECT. |
 | NEXT240 | Read next entry in the catalog<br/> This function:<br/> • Is available in CFT v2.4 and higher<br/> • Retrieves identifiers that are longer than 8 to 32 characters<br/> • Reads the next entry<br/> • Sets the "catalog entry data" area |
-| MODIFY | Modify the state of the current catalog entry or delete this entry from the catalog<br/> This function:<br/> • Retrieves the last entry read from the internal control block<br/> • Checks the state of this entry<br/> • Sends the modification request to Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
+| MODIFY | Modify the state of the current catalog entry or delete this entry from the catalog<br/> This function:<br/> • Retrieves the last entry read from the internal control block<br/> • Checks the state of this entry<br/> • Sends the modification request to {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} |
 | SORT | Sort the selected catalog entries<br/> This function:<br/> • Close the catalog file<br/> • De-allocates the file<br/> • Frees the internal control block<br/> • Resets the internal control block parameter |
 | DO | Execute the current selection and the requested sort in memory |
 | CLOSE | Close catalog file |
@@ -3679,8 +3679,8 @@
 | &lt;verb&gt; | &lt;param&gt; | Explanation |
 | --- | --- | --- |
 | F-OPEN | D-CAT | Path name or logical name of the catalog file. If the name is blank, Transfer CFTI uses a default name. |
-| F-SELECT | Z-SEL | Selection criteria according to the format described in the "S**election data description"** in the ****cft.apicop**** file. If a field is blank or equal to binary zeros, it is considered not selective.<br/> This field can contain:<br/> • the size of the selection criteria field (SLENTGTH) and the size of the field supporting the catalog entry (CLENGTH) in order to avoid recompiling the application program if these two fields are extended.<br/> • the transfer start and end date (BDATE and EDATE) to select transfers performed between these two dates.<br/> • a mask with the special characters "?" and *". The "?" character replaces any character. The "*" character replaces a character string of any length.<br /> <br /> Examples:<br /> A*D replaces ABCD, ABCED or AID<br /> A??D replaces ABCD, AXYD or AQZD<br /> *CD replaces ABECD, YXZCDor TYUICD<br /> ?CD replaces ACD, XCD or ZCD<br /> ?B* replaces ABCDEF, XBZWEO or *KBWXCV<br /> ???? replaces ABCD, XYZW or HGFD |
-| F-NEXT | Z-CAT | Next catalog entry according to the format described in the "S**election data description**" in the ****cft.apicop**** file.<br/> The length of this field is defined by the SELECT service. See the CLENGTH field in the Selection data description. |
+| F-SELECT | Z-SEL | Selection criteria according to the format described in the "S<span >**election data description"**</span> in the <span >****cft.apicop****</span> file. If a field is blank or equal to binary zeros, it is considered not selective.<br/> This field can contain:<br/> • the size of the selection criteria field (SLENTGTH) and the size of the field supporting the catalog entry (CLENGTH) in order to avoid recompiling the application program if these two fields are extended.<br/> • the transfer start and end date (BDATE and EDATE) to select transfers performed between these two dates.<br/> • a mask with the special characters "?" and *". The "?" character replaces any character. The "*" character replaces a character string of any length.<br /> <br /> Examples:<br /> A*D replaces ABCD, ABCED or AID<br /> A??D replaces ABCD, AXYD or AQZD<br /> *CD replaces ABECD, YXZCDor TYUICD<br /> ?CD replaces ACD, XCD or ZCD<br /> ?B* replaces ABCDEF, XBZWEO or *KBWXCV<br /> ???? replaces ABCD, XYZW or HGFD |
+| F-NEXT | Z-CAT | Next catalog entry according to the format described in the "S<span >**election data description**</span>" in the <span >****cft.apicop****</span> file.<br/> The length of this field is defined by the SELECT service. See the CLENGTH field in the Selection data description. |
 | F-MODIFY | M-STATE | New state of a transfer to be placed in the catalog entry previously read:<br/> • ‘D’ at Disposal: only valid if the former state is H or K<br/> • ‘H’ Hold: only valid if the former state is D, C or K<br/> • ‘K’ Keep: only valid if the former state is D, C or H<br/> • ‘X’ eXecuted: only valid if the former state is T<br/> • ‘P’ Purge: deletes the catalog entry |
 | F-CLOSE |   | No &lt;param&gt; needed |
 
@@ -3705,7 +3705,7 @@
 |  - " -  | CAPI-SEL-FDATE | FDATE criterion incorrect |
 |  - " -  | CAPI-SEL-CDATE | CDATE criterion incorrect |
 |  - " -  | CAPI-SEL-BDATE | BDATE criterion incorrect |
-|  - " -  | CAPI-SEL-DATE | ****EDATE criterion incorrect**** |
+|  - " -  | CAPI-SEL-DATE | ****<span >EDATE criterion incorrect</span>**** |
 | **NEXT code only**  | CAPI-CAT-EOF | End of catalog file |
 |  - " -  | CAPI-CAT-READ | Catalog file read error |
 | **MODIFY code only**  | CAPI-MOD-OSTATE | State invalid |
@@ -3779,7 +3779,7 @@
 | &lt;verb&gt; | &lt;param&gt; | Explanation |
 | --- | --- | --- |
 | F-COM | D-COM | The COM command parameter structure is as follows: &lt;medium type&gt; = &lt;Medium name&gt;<br/> The medium type consists in an uppercase letter:<br/> • 'F' for file<br/> • 'T' for the TCP/IP synchronous medium<br/> • 'C' for the configuration file (ConfigFileName)<br/> The medium name is the:<br/> • Filename, if the medium type is 'F'<br/> • Name of the communication channel, if the medium type is 'T'<br/> • Name of the configuration file containing the medium of communication characteristics, if the medium type is C. |
-| F-GETINXFO | Z-XINF | Information about a transfer in the format described in the ****OAPIINF**** file. |
+| F-GETINXFO | Z-XINF | Information about a transfer in the format described in the <span >****OAPIINF****</span> file. |
 
 
 
@@ -3796,7 +3796,7 @@
 | DELETE | Delete a catalog entry and any transfer in process associated with it |
 | END | Set a transfer status to executed<br/> The transfer is set to the "X" state. This indicates that end-of-transfer procedure has been correctly executed. |
 | SUBMIT | Submit the end-of-transfer procedure |
-| SHUT | Shut down Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
+| SHUT | Shut down {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} |
 | SWITCH | Switch monitoring files, LOG, STATS... |
 | CLOSEAPI | Free resources allocated at opening of communication medium: memory, network, file |
 | COM | Define communication medium |
@@ -3838,7 +3838,7 @@
 | --- | --- |
 | CAPI-NOERR | No error |
 | CAPI-FUNC-UNDEF | Command not valid |
-| CAPI-CMD-LENGTH | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} command string invalid, does not exist, or greater than 1024 characters long  |
+| CAPI-CMD-LENGTH | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} command string invalid, does not exist, or greater than 1024 characters long  |
 | CAPI-KEY-NAME | Command syntax incorrect: keyword name incorrect |
 | CAPI-KEY-VALUE | Command syntax incorrect: keyword value incorrect |
 | CAPI-MEM-GET | Memory allocation error |
@@ -3852,7 +3852,7 @@
 ============================== table nb count(254) table converted to MD ========================================
 
 
-| <span id="_Toc429559254"></span> <h2 id="transfer-cft-transfercftcomponentlongname-2.7.1">Transfer CFT{{&lt; TransferCFT/componentlongname &gt;}} 2.7.1</h2>  |
+| <span id="_Toc429559254"></span> <h2 id="transfercftaxwayvariablescomponentlongname-2.7.1">{{&lt; TransferCFT/axwayvariablesComponentLongName &gt;}} 2.7.1</h2>  |
 | --- |
 | 1. Customization <br/> 1. CFT parameters <br/> 1. Source member modifications <br/> 2. Interpret selected member <br/> 3. Work with examples <br/> 2. Set up CFTUCONF configuration file <br/> 3. SSL security parameters <br/> 1. Modify SSL configuration file <br/> 2. Interpret SSL configuration file<br/> 3. Start PKIUTIL session <br/> 4. Authorization rights parameters <br/> 1. Modify Authorization rights configuration file <br/> 2. Interpret Authorization rights configuration file <br/> 3. Start SECUTIL session <br/> 2. Operation "CFTUTIL" <br/> 1. Display catalogue - LISTCAT TYPE=ALL <br/> 2. Display partners - LISTPART TYPE=ALL <br/> 3. Display parameters - LISTPARM TYPE=ALL <br/> 4. All CFT Commands <br/> 5. Interpret selected member <br/> 6. Start CFT monitor <br/> 7. Stop CFT monitor - SHUT <br/> 3. COPILOT Server commands<br/> 1. Start COPILOT Server<br/> 2. Stop COPILOT Server |
 
@@ -3861,7 +3861,7 @@
 ============================== table nb count(255) table converted to MD ========================================
 
 
-| <span id="_Toc429559255"></span> <h2 id="transfer-cft-transfercftcomponentlongname-3.0.1">Transfer CFT{{&lt; TransferCFT/componentlongname &gt;}} 3.0.1</h2>  |
+| <span id="_Toc429559255"></span> <h2 id="transfercftaxwayvariablescomponentlongname-3.0.1">{{&lt; TransferCFT/axwayvariablesComponentLongName &gt;}} 3.0.1</h2>  |
 | --- |
 | 1. Customization<br/> 1. CFT parameters<br/> 1. Source member modifications<br/> 2. Interpret selected member <br/> 2. Internal PKI database <br/> 1. Modify SSL configuration file <br/> 2. Interpret SSL configuration file<br/> 3. Internal Access Management<br/> 1. Modify Internal Access Management file <br/> 2. Interpret Internal Access Management file<br/> 3. Start SECUTIL session <br/> 2. CFT Operations<br/> 1. Display catalog - LISTCAT TYPE=ALL <br/> 2. Display partners - LISTPART TYPE=ALL <br/> 3. Display parameters - LISTPARM TYPE=ALL <br/> 4. CFTUTIL <br/> 5. PKIUTIL <br/> 6. Interpret selected member <br/> 7. Start UI Server <br/> 8. Stop UI server <br/> 9. Start CFT monitor <br/> 10. Stop CFT monitor - SHUT  |
 
@@ -3870,7 +3870,7 @@
 ============================== table nb count(256) table converted to MD ========================================
 
 
-| <h2 id="transfer-cft-transfercftcomponentlongname-3.1.3-sp4">Transfer CFT{{&lt; TransferCFT/componentlongname &gt;}} 3.1.3 SP4</h2>  |
+| <h2 id="transfercftaxwayvariablescomponentlongname-3.1.3-sp4">{{&lt; TransferCFT/axwayvariablesComponentLongName &gt;}} 3.1.3 SP4</h2>  |
 | --- |
 | 1. Common Transfer CFT commands <br/> 1. Start Copilot <br/> 2. Stop Copilot <br/> 3. Start CFT <br/> 4. Stop CFT <br/> 5. CFTUTIL operations <br/> 6. Interpret source member <br/> 7. Manage configuration File<br/> 1. Edit configuration file <br/> 2. Interpret configuration file<br/> 2. Security commands <br/> 1. Edit Security configuration file<br/> 2. Interpret Security configuration<br/> 3. PKIUTIL operation <br/> 3. Administration commands <br/> 1. Reinitialize Transfer CFT parameters<br/> 2. Submit Transfer CFT support request <br/> 4. Create system objects<br/> 1. Create job queue <br/> 2. Create job description <br/> 3. Create subsystem <br/> 4. Add job-queue entry <br/> 5. Create class <br/> 6. Add routing entry <br/> 7. Add communication entry <br/> 8. Change profile <br/> Note: A highlighted menu item indicates there is a sub-menu. |
 
@@ -3879,7 +3879,7 @@
 ============================== table nb count(257) table converted to MD ========================================
 
 
-| <h2 id="transfer-cft-transfercftcomponentlongname-3.2.x-and-higher">Transfer CFT{{&lt; TransferCFT/componentlongname &gt;}} 3.2.x and higher</h2>  |
+| <h2 id="transfercftaxwayvariablescomponentlongname-3.2.x-and-higher">{{&lt; TransferCFT/axwayvariablesComponentLongName &gt;}} 3.2.x and higher</h2>  |
 | --- |
 | 1. Common Transfer CFT commands <br/> 1. Start Copilot <br/> 2. Stop Copilot <br/> 3. Start Transfer CFT <br/> 4. Stop Transfer CFT <br/> 5. CFTUTIL operations <br/> 6. Manage configuration File<br/> 1. Edit configuration file <br/> 2. Interpret configuration file<br/> 2. Security commands <br/> 1. Edit Security configuration file<br/> 2. Interpret Security configuration<br/> 3. PKIUTIL operation <br/> 3. Administration commands <br/> 1. Reinitialize Transfer CFT parameters<br/> 2. Submit Transfer CFT support request <br/> 4. Create system objects<br/> 1. Create job queue <br/> 2. Create job description <br/> 3. Create subsystem <br/> 4. Add job-queue entry <br/> 5. Create class <br/> 6. Add routing entry <br/> 7. Add communication entry <br/> 8. Change profile <br/> <br/> Note: A highlighted menu item indicates there is a sub menu. |
 
@@ -3918,7 +3918,7 @@
 
 | Parameter | Default | Description |
 | --- | --- | --- |
-| <span id="cft.guardian.cftwrk"></span>cft.guardian.cftwrk |   | The default working directory for the TACL and NETBATCH scripts.<br/> The parameter is set with the default value of “<code>&lt;</code><code>subvolume</code><code>&gt;UD</code>” (see <a href="#Guardian" >Guardian files</a>) during the Guardian files installation. |
+| <span id="cft.guardian.cftwrk"></span>cft.guardian.cftwrk |   | The default working directory for the TACL and NETBATCH scripts.<br/> The parameter is set with the default value of “<span ><code>&lt;</code></span><span  data-xmlns="http://www.w3.org/TR/REC-html40"><code>subvolume</code></span><span ><code>&gt;UD</code></span>” (see <a href="#Guardian" >Guardian files</a>) during the Guardian files installation. |
 | <span id="cft.guardian.process_name_prefix"></span>cft.guardian.process_name_prefix | LA | The first two letters of the Guardian process names.<br/> Each Transfer CFT process is assigned a name using this prefix and a suffix, which depends on the executable name.<br/> For instance, using the default setting, CFTLOG is run with the name $LALOG with the Guardian convention (or /G/LALOG with the OSS convention).<br/> If empty, no Guardian process name is given.<br/> If you plan to run several instances of Transfer CFT at the same time on the same machine, you should assign each instance a unique value. |
 | <span id="cft.guardian.processor"></span>cft.guardian.processor | -1 | Processor on which Transfer CFT is started.<br/> • -1 indicates that Transfer CFT is started on the processor from which the start-up command is executed<br/> • Processor number |
 | <span id="cft.guardian.backup_processor"></span>cft.guardian.backup_processor | -1 | Backup processor on which Transfer CFT is started.<br/> • -1 indicates that no processor number is assigned<br/> • Backup processor number |
@@ -3947,7 +3947,7 @@
 | ZSPI-TKN-SSID  | The Transfer CFT subsystem ID, whose value is XCF2_VAL_EXTERNAL_SSID. This token is described in the SPI Programming Manual. |
 | ZEMS-TKN-EVENTNUMBER  | The event number, as described in the EMS Manual. Its value is one of the values described in the table below. |
 | XCF2_TKN_SUBJ  | The message subject for which the values are described in the Event messages table below. |
-| XCF2_TKN_MSG  | The message text.<br/> For details about Transfer CFT LOG messages, see the Transfer CFT{{&lt; TransferCFT/componentlongname &gt;}} 3.9{{&lt; TransferCFT/releasenumber &gt;}} <a href="https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/Troubleshooting/Messages_and_Codes/Messages_and_error_codes_Start_here_1.htm">Messages and error codes</a> documentation.<br/> The accounting messages are binary coded data, and are described in the exacct.h header. |
+| XCF2_TKN_MSG  | The message text.<br/> For details about Transfer CFT LOG messages, see the {{&lt; TransferCFT/axwayvariablesComponentLongName &gt;}} {{&lt; TransferCFT/axwayvariablesReleaseNumber &gt;}} <a href="https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/Troubleshooting/Messages_and_Codes/Messages_and_error_codes_Start_here_1.htm">Messages and error codes</a> documentation.<br/> The accounting messages are binary coded data, and are described in the exacct.h header. |
 | ZEMS_TKN_EMPHASIS  | If the value is ZSPI-VAL-TRUE, the event being reported is considered critical. This is the case for ERROR and FATAL log events as well as process errors when using the NonStop mode.  |
 
 
@@ -3961,7 +3961,7 @@
 | 5  | CFT WARN LOG  | Log warning message  |
 | 6  | CFT ERR LOG  | Log error message  |
 | 7  | CFT FAIL LOG  | Log failure message  |
-| 8  | CFT ACCOUNT  | Account message  |
+| 8  | CFT ACCOUNT  | Account<span > message</span>  |
 
 
 
@@ -4109,7 +4109,7 @@
 | Parameter | Value |
 | --- | --- |
 | copilot.http.onlyssl |  • No: Default value.<br/> • Yes: Restricts access to the Copilot server to HTTPS secured connections only.<br/>  |
-| copilot.ssl.SslCipherSuites<br/>  | A comma separated list of cipher suites accepted by the Copilot server.<br/> • “47, 10, 9, 2”: Default value.<br/> <br/> List of supported cipher suites:<br/> • 1 = RSA_WITH_NULL_MD5<br/> • 2 = RSA_WITH_NULL_SHA<br/> • 4 = RSA_WITH_RC4_MD5<br/> • 5 = RSA_WITH_RC4_SHA<br/> • 9 = RSA_WITH_DES_CBC_SHA1<br/> • 10 = RSA_WITH_3DES_EDE_CBC_SHA<br/> • 47 = RSA_WITH_AES_128_CBC_SHA<br/> • 53 = RSA_WITH_AES_256_CBC_SHA<br/> • 59 = RSA_WITH_NULL_SHA256<br/> • 60 = RSA_WITH_AES_128_CBC_SHA256<br/> • 61 = RSA_WITH_AES_256_CBC_SHA256 |
+| copilot.ssl.SslCipherSuites<br/>  | A comma separated list of cipher suites accepted by the Copilot server.<br/> • “47, 10, 9, 2”: Default value.<br/> <br/> List of supported cipher suites:<br/> • 1 = RSA_WITH_NULL_MD5<br/> • 2 = RSA_WITH_NULL_SHA<br/> • 4 = RSA_WITH_RC4_MD5<br/> • 5 = RSA_WITH_RC4_SHA<br/> • 9 = RSA_WITH_DES_CBC_SHA1<br/> • 10 = RSA_WITH_3DES_EDE_CBC_SHA<br/> • 47 = RSA_WITH_AES_128_CBC_SHA<br/> • 53 = RSA_WITH_AES_256_CBC_SHA<br/> • 59 = RSA_WITH_NULL_SHA256<br/> • <span >60 = RSA_WITH_AES_128_CBC_SHA</span><span >2</span><span >56</span><br/> • <span >61 = RSA_WITH_AES_256_CBC_SHA</span><span >2</span><span >56</span> |
 
 
 
@@ -4200,7 +4200,7 @@
 
 |   | Task  | Description  | Details  |
 | --- | --- | --- | --- |
-| 1  | Check your Transfer CFTs in Central Governance.<br />  | In Central Governance select ****Products**** on the top toolbar to open the ****Product List**** page and note the host name of the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}s to use in these exercises. | <a href="intro_cg_task_catalog/t_view_products_in_cg"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 1  | Check your Transfer CFTs in {{&lt; TransferCFT/PrimaryCGorUM &gt;}}.<br />  | In {{&lt; TransferCFT/PrimaryCGorUM &gt;}} select <span >****Products**** </span>on the top toolbar to open the <span >****Product List****</span> page and note the host name of the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}s to use in these exercises. | <a href="intro_cg_task_catalog/t_view_products_in_cg"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 | 2  | Add an application.  | In this example, create three applications to represent the MainOffice, Store_66, and Store_89.  | <a href="intro_cg_task_catalog/t_declareapplication"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 
 
@@ -4210,11 +4210,11 @@
 
 |   | Task  | Description  | Details  |
 | --- | --- | --- | --- |
-| 1  | Define a flow.<br />  | In Central Governance define a flow named Simple_flow and give it the identifier flow01.<br/> Use Store_66 as the Source and the MainOffice as the Target.<br /> Note: You cannot modify the Protocol until you have defined both the Source and Target. | <a href="intro_cg_task_catalog/t_defineflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 2  | Deploy the flow. | In Central Governance you can save now and deploy at a later date, or click Deploy to save and deploy.  | <a href="intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 3  | Create a file to exchange.  | For this example, create a file named SALES_report, and place it in the Store_66's Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} runtime\pub folder .  | <a href="intro_cg_task_catalog/t_create_sample_files"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 4  | Run the SEND command.  | In Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}, run the following command:<br /> CFTUTIL SEND part=&lt;instance_MainOffice&gt;, idf=flow01, fname=pub\SALES_report<br/> Remember, replace &lt;instance_MainOffice&gt; with the Transfer CFT instance for the MainOffice as it displays in the list of applications.<br/> <blockquote> **Note**<br/> Tip The flow Identifier field is equivalent to the Transfer CFT IDF parameter.<br/> </blockquote>  | <a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 5  | Monitor the flow.  | In Central Governance, check the status of the file exchange.  | <a href="intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 1  | Define a flow.<br />  | In {{&lt; TransferCFT/PrimaryCGorUM &gt;}} define a flow named Simple_flow and give it the identifier flow01.<br/> Use Store_66 as the Source and the MainOffice as the Target.<br /> Note: You cannot modify the Protocol until you have defined both the Source and Target. | <a href="intro_cg_task_catalog/t_defineflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 2  | Deploy the flow. | In {{&lt; TransferCFT/PrimaryCGorUM &gt;}} you can save now and deploy at a later date, or click Deploy to save and deploy.  | <a href="intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 3  | Create a file to exchange.  | For this example, create a file named SALES_report, and place it in the Store_66's {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} runtime\pub folder .  | <a href="intro_cg_task_catalog/t_create_sample_files"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 4  | Run the SEND command.  | In {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}, run the following command:<br /> CFTUTIL SEND part=&lt;instance_MainOffice&gt;, idf=flow01, fname=pub\SALES_report<br/> Remember, replace &lt;instance_MainOffice&gt; with the Transfer CFT instance for the MainOffice as it displays in the list of applications.<br/> <blockquote> **Note**<br/> Tip The flow Identifier field is equivalent to the Transfer CFT IDF parameter.<br/> </blockquote>  | <a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 5  | Monitor the flow.  | In {{&lt; TransferCFT/PrimaryCGorUM &gt;}}, check the status of the file exchange.  | <a href="intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 
 
 
@@ -4223,12 +4223,12 @@
 
 |   | Task  | Description  | Details  |
 | --- | --- | --- | --- |
-| 1  | Create a flow.<br />  | In Central Governance define a flow called <code>flow02 </code>with Store_66 as the Source, and the MainOffice as the Target.<br />  | <a href="intro_cg_task_catalog/t_multiple_filesflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 1  | Create a flow.<br />  | In {{&lt; TransferCFT/PrimaryCGorUM &gt;}} define a flow called <span ><code>flow02 </code></span>with Store_66 as the Source, and the MainOffice as the Target.<br />  | <a href="intro_cg_task_catalog/t_multiple_filesflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 | 2  | Enable multiple files for the exchange. | Select the Source, and then File properties. Enable Multiple files. | <a href="intro_cg_task_catalog/t_multiple_files"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 3  | Create the files for the exchange.  | For this example, create a folder called Store_66 in the Store_66 Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} <code>runtime\pub\ </code>directory.<br/> Copy three files to this folder and call them <code>SALES_report</code>, <code>DAILY_news</code>, and <code>INVENTORY</code>. |   |
-| 4  | Deploy the flow.  | In Central Governance you can save, and deploy later, or save and deploy immediately.  | <a href="intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 5  | Run the SEND command.  | In Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}, run the following command: <code>CFTUTIL SEND part=&lt;instance_MainOffice&gt;, idf=flow02, fname=#pub\Store_66\*</code> Remember, replace <code>&lt;instance_MainOffice&gt;</code> with the Transfer CFT instance for the MainOffice as it displays in the list of applications. | <a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 6  | Monitor the flow.  | In Central Governance, check the status of the file exchange.  | <a href="intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 3  | Create the files for the exchange.  | For this example, create a folder called Store_66 in the Store_66 {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} <span ><code>runtime\pub\ </code></span>directory.<br/> Copy three files to this folder and call them <span ><code>SALES_report</code></span>, <span ><code>DAILY_news</code></span>, and <span ><code>INVENTORY</code></span>. |   |
+| 4  | Deploy the flow.  | In {{&lt; TransferCFT/PrimaryCGorUM &gt;}} you can save, and deploy later, or save and deploy immediately.  | <a href="intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 5  | Run the SEND command.  | In {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}, run the following command: <span ><code>CFTUTIL SEND part=&lt;instance_MainOffice&gt;, idf=flow02, fname=#pub\Store_66\*</code></span> Remember, replace <span ><code>&lt;instance_MainOffice&gt;</code></span> with the Transfer CFT instance for the MainOffice as it displays in the list of applications. | <a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 6  | Monitor the flow.  | In {{&lt; TransferCFT/PrimaryCGorUM &gt;}}, check the status of the file exchange.  | <a href="intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 
 
 
@@ -4237,11 +4237,11 @@
 
 |   | Task  | Description  | Details  |
 | --- | --- | --- | --- |
-| 1  | Create an implicit flow.<br />  | In Central Governance define a flow called <code>flow03</code>.<br/> To enable implicit mode, you select ****Target pulls file**** in the flow's General Information page.<br/> Continue to define the flow with the MainOffice as the Target, which will pull the file, and Store_89 as the file Source.<br />  | <a href=""><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 2  | Define the path to the file location.  | In the File properties of the Source, define the path to the file to be sent.<br/> In our example, use the TEST file located in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} runtime /pub folder. |   |
-| 3  | Deploy the flow. | In Central Governance you can save and deploy later, or save and deploy.  | <a href="intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 4  | Run the RECV command.  | In Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}, run the following command: <code>CFTUTIL RECV PART=&lt;instance_Store_89&gt;, IDF=flow03</code> Remember, replace <code>&lt;instance_Store_89&gt;</code> with the Transfer CFT instance for Store_89 as it displays in the list of applications. | <a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 5  | Monitor the flow.  | In Central Governance, check the status of the file exchange.  | <a href="intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 1  | Create an implicit flow.<br />  | In {{&lt; TransferCFT/PrimaryCGorUM &gt;}} define a flow called <span ><code>flow03</code></span>.<br/> To enable implicit mode, you select <span >****Target pulls file****</span> in the flow's <span >General Information</span> page.<br/> Continue to define the flow with the MainOffice as the Target, which will pull the file, and Store_89 as the file Source.<br />  | <a href=""><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 2  | Define the path to the file location.  | In the File properties of the Source, define the path to the file to be sent.<br/> In our example, use the TEST file located in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} runtime /pub folder. |   |
+| 3  | Deploy the flow. | In {{&lt; TransferCFT/PrimaryCGorUM &gt;}} you can save and deploy later, or save and deploy.  | <a href="intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 4  | Run the RECV command.  | In {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}, run the following command: <span ><code>CFTUTIL RECV PART=&lt;instance_Store_89&gt;, IDF=flow03</code></span> Remember, replace <span ><code>&lt;instance_Store_89&gt;</code></span> with the Transfer CFT instance for Store_89 as it displays in the list of applications. | <a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 5  | Monitor the flow.  | In {{&lt; TransferCFT/PrimaryCGorUM &gt;}}, check the status of the file exchange.  | <a href="intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 
 
 
@@ -4250,12 +4250,12 @@
 
 |   | Task  | Description  | Details  |
 | --- | --- | --- | --- |
-| 1  | Create a flow.<br />  | In Central Governance define a flow called <code>flow04</code>. In this flow the MainOffice is the Source with the two stores as the Targets. | <a href="intro_cg_task_catalog/t_defineflow_broadcast"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 1  | Create a flow.<br />  | In {{&lt; TransferCFT/PrimaryCGorUM &gt;}} define a flow called <span ><code>flow04</code></span>. In this flow the MainOffice is the Source with the two stores as the Targets. | <a href="intro_cg_task_catalog/t_defineflow_broadcast"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 | 2  | Enable broadcasting mode.  | In the Source Transfer properties, enable Broadcast list.  | <a href="intro_cg_task_catalog/t_defineflow_broadcast#enable_broadcast_cg"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 3  |   | For this example, copy a file SALES_report to transfer in the Store_66 Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} runtime\pub folder.  |   |
-| 4  | Deploy the flow. | In Central Governance you can save and deploy at a later date, or both save and deploy now.  | <a href="intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 5  | Run the SEND command.  | In Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}, run the following command:<br/> <code>CFTUTIL SEND PART=DEST_stores, IDF=flow04, FNAME=pub/SALES_report</code> | <a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 6  | Monitor the flow.  | In Central Governance, check the status of the file exchange.  | <a href="intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 3  |   | For this example, copy a file SALES_report to transfer in the Store_66 {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} runtime\pub folder.  |   |
+| 4  | Deploy the flow. | In {{&lt; TransferCFT/PrimaryCGorUM &gt;}} you can save and deploy at a later date, or both save and deploy now.  | <a href="intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 5  | Run the SEND command.  | In {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}, run the following command:<br/> <span ><code>CFTUTIL SEND PART=DEST_stores, IDF=flow04, FNAME=pub/SALES_report</code></span> | <a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 6  | Monitor the flow.  | In {{&lt; TransferCFT/PrimaryCGorUM &gt;}}, check the status of the file exchange.  | <a href="intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 
 
 
@@ -4264,12 +4264,12 @@
 
 |   | Task  | Description  | Details  |
 | --- | --- | --- | --- |
-| 1  | Create a flow.<br />  | In Central Governance create a flow called <code>flow05 </code>and define the Source as MainOffice and the stores as the Target.<br /> ****Note****: You cannot define the Protocol until you have defined both the Source and Target. | <a href="intro_cg_task_catalog/t_define_simpleflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 1  | Create a flow.<br />  | In {{&lt; TransferCFT/PrimaryCGorUM &gt;}} create a flow called <span ><code>flow05 </code></span>and define the Source as MainOffice and the stores as the Target.<br /> <span >****Note****</span>: You cannot define the Protocol until you have defined both the Source and Target. | <a href="intro_cg_task_catalog/t_define_simpleflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 | 2  | Enable collect mode.  | In the Collect_flow definition, modify to Target pulls file.  | <a href="intro_cg_task_catalog/t_defineflow_collect"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 | 3  | Define the path to the Target file for each store.  | In the Target (each store) select File properties. In Path field, enter the path to the file to send.  | <a href="intro_cg_task_catalog/t_collect_target_properties"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 4  | Deploy the flow. | In Central Governance you can save and deploy later, or save and deploy.  | <a href="intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 5  | Run the RECV command.  | In Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}, run the following command: <code>CFTUTIL RECV PART=DEST_Stores, IDF=flow05</code>  | <a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 6  | Monitor the flow.  | In Central Governance, check the status of the file exchange.  | <a href="intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 4  | Deploy the flow. | In {{&lt; TransferCFT/PrimaryCGorUM &gt;}} you can save and deploy later, or save and deploy.  | <a href="intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 5  | Run the RECV command.  | In {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}, run the following command: <span ><code>CFTUTIL RECV PART=DEST_Stores, IDF=flow05</code></span>  | <a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 6  | Monitor the flow.  | In {{&lt; TransferCFT/PrimaryCGorUM &gt;}}, check the status of the file exchange.  | <a href="intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 
 
 
@@ -4278,9 +4278,9 @@
 
 | Transfer CFT  | Host  | Application name  |
 | --- | --- | --- |
-| Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} 1  | &lt; hostname 1&gt;  | MainOffice  |
-| Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} 2  | &lt; hostname 2&gt;  | Store_66  |
-| Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} 1  | &lt; hostname 3&gt;  | Store_89  |
+| {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} 1  | &lt; hostname 1&gt;  | MainOffice  |
+| {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} 2  | &lt; hostname 2&gt;  | Store_66  |
+| {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} 1  | &lt; hostname 3&gt;  | Store_89  |
 
 
 
@@ -4289,12 +4289,12 @@
 
 |   | Task  | Description  | Details  |
 | --- | --- | --- | --- |
-| 1<br/> <br/>  | Create a flow.<br/> <br/> <br />  | In Central Governance click ****Flows**** &gt; ****Add flow****.<br/> Create a flow named ****multiple_files_flow****, and give it the identifier ****flow02****.<br/> Define Store_66 as the Source, and MainOffice as the Target.<br/> <br />  | <a href="../intro_cg_task_catalog/t_multiple_filesflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 2<br/>  | Enable a multiple files exchange.<br/>  | Select the Source, and then ****File properties****.<br/> Under Filename select ****Multiple****.<br/>  | <a href="../intro_cg_task_catalog/t_multiple_files"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 3<br/>  | Deploy the flow.<br/>  | In Central Governance click ****Deploy**** to save and deploy.<br/>  | <a href="../intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 4<br/> <br/>  | Add three files for the exchange.<br/> <br/>  | Create a folder, you can name it ****Store_66****, in the Store_66 Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} <code>runtime/pub </code>directory.<br/> Copy three test files to this folder, for example SALES_report, DAILY_news, and INVENTORY.<br/>  |   |
-| 5<br/> <br/> <br/>  | Execute the SEND command.<br/> <br/>  | From the source Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}, run the following command: <code>CFTUTIL SEND part=&lt;instance_target&gt;, idf=flow02, fname=#pub/Store_66/*</code> Remember to replace <code>&lt;instance_target&gt;</code> with the Transfer CFT instance for the target as it displays in your application list.<br/>  | <a href="../../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 6  | Monitor the transfer status.  | In the Central Governance ****Flows**** tab, click ****Monitoring**** to check the status of the file exchange.  | <a href="../intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 1<br/> <br/>  | Create a flow.<br/> <br/> <br />  | In {{&lt; TransferCFT/PrimaryCGorUM &gt;}} click <span >****Flows**** </span>&gt; <span >****Add flow****</span>.<br/> Create a flow named <span >****multiple_files_flow****</span>, and give it the identifier <span >****flow02****</span>.<br/> Define Store_66 as the Source, and MainOffice as the Target.<br/> <br />  | <a href="../intro_cg_task_catalog/t_multiple_filesflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 2<br/>  | Enable a multiple files exchange.<br/>  | Select the Source, and then <span >****File properties****</span>.<br/> Under Filename select <span >****Multiple****</span>.<br/>  | <a href="../intro_cg_task_catalog/t_multiple_files"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 3<br/>  | Deploy the flow.<br/>  | In {{&lt; TransferCFT/PrimaryCGorUM &gt;}} click <span >****Deploy**** </span>to save and deploy.<br/>  | <a href="../intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 4<br/> <br/>  | Add three files for the exchange.<br/> <br/>  | Create a folder, you can name it <span >****Store_66****</span>, in the Store_66 {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} <span ><code>runtime/pub </code></span>directory.<br/> Copy three test files to this folder, for example SALES_report, DAILY_news, and INVENTORY.<br/>  |   |
+| 5<br/> <br/> <br/>  | Execute the SEND command.<br/> <br/>  | From the source {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}, run the following command: <span ><code>CFTUTIL SEND part=&lt;instance_target&gt;, idf=flow02, fname=#pub/Store_66/*</code></span> Remember to replace <span ><code>&lt;instance_target&gt;</code></span> with the Transfer CFT instance for the target as it displays in your application list.<br/>  | <a href="../../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 6  | Monitor the transfer status.  | In the {{&lt; TransferCFT/PrimaryCGorUM &gt;}} <span >****Flows**** </span>tab, click <span >****Monitoring**** </span>to check the status of the file exchange.  | <a href="../intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 
 
 
@@ -4303,11 +4303,11 @@
 
 |   | Task  | Description  | Details  |
 | --- | --- | --- | --- |
-| 1<br/> <br/> <br/>  | Create a flow where the target is the requester.<br/> <br/> <br/> <br />  | In Central Governance click ****Flows**** &gt; ****Add flow****.<br/> Create a flow named ****implicit_flow**** and define the identifier as ****flow03****.<br/> To enable implicit mode, select ****Target pulls file****.<br/> Define the MainOffice as the Target, which will pull the file, and Store_89 as the file Source.<br/> <br />  | <a href="../intro_cg_task_catalog/t_defineflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 2<br/> <br/>  | Define the path to the file location.<br/> <br/>  | In the File properties of the Source, define the path to the file to be sent.<br/> You can use, for example, the <code>TEST </code>file located by default in the source Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}'s <code>runtime/pub</code> folder.<br/>  |   |
-| 3<br/>  | Deploy the flow.<br/>  | In Central Governance click ****Deploy**** to save and deploy.<br/>  | <a href="../intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 4<br/> <br/> <br/>  | Execute the RECV command.<br/> <br/> <br/>  | From the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} (MainOffice), run the following command: <code>CFTUTIL RECV PART=&lt;instance_source&gt;, IDF=flow03</code> Remember in our example the source is Store_89, you should replace <code>&lt;instance_source&gt;</code> with the Transfer CFT instance as it appears in your applications.<br/>  | <a href="../../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 5  | Monitor the file transfer status.  | In Central Governance select the ****Flows**** tab, and click ****Monitoring****.  | <a href="../intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 1<br/> <br/> <br/>  | Create a flow where the target is the requester.<br/> <br/> <br/> <br />  | In {{&lt; TransferCFT/PrimaryCGorUM &gt;}} click <span >****Flows**** </span>&gt; <span >****Add flow****</span>.<br/> Create a flow named <span >****implicit_flow****</span> and define the identifier as <span >****flow03****</span>.<br/> To enable implicit mode, select <span >****Target pulls file****</span>.<br/> Define the MainOffice as the Target, which will pull the file, and Store_89 as the file Source.<br/> <br />  | <a href="../intro_cg_task_catalog/t_defineflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 2<br/> <br/>  | Define the path to the file location.<br/> <br/>  | In the File properties of the Source, define the path to the file to be sent.<br/> You can use, for example, the <span ><code>TEST </code></span>file located by default in the source {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}'s <span ><code>runtime/pub</code></span> folder.<br/>  |   |
+| 3<br/>  | Deploy the flow.<br/>  | In {{&lt; TransferCFT/PrimaryCGorUM &gt;}} click <span >****Deploy**** </span>to save and deploy.<br/>  | <a href="../intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 4<br/> <br/> <br/>  | Execute the RECV command.<br/> <br/> <br/>  | From the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} (MainOffice), run the following command: <span ><code>CFTUTIL RECV PART=&lt;instance_source&gt;, IDF=flow03</code></span> Remember in our example the source is Store_89, you should replace <span ><code>&lt;instance_source&gt;</code></span> with the Transfer CFT instance as it appears in your applications.<br/>  | <a href="../../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 5  | Monitor the file transfer status.  | In {{&lt; TransferCFT/PrimaryCGorUM &gt;}} select the <span >****Flows**** </span>tab, and click <span >****Monitoring****</span>.  | <a href="../intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 
 
 
@@ -4356,12 +4356,12 @@
 
 |   | Task  | Description  | Details  |
 | --- | --- | --- | --- |
-| 1<br/> <br/>  | Create a flow.<br/> <br/> <br />  | In Central Governance click ****Flows**** &gt; ****Add flow****.<br/> Create a flow named ****Broadcast_flow****, and give it the identifier ****flow04****.<br/> In this flow the MainOffice is the Source with the two stores as the Targets. | <a href="../intro_cg_task_catalog/t_defineflow_broadcast"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 1<br/> <br/>  | Create a flow.<br/> <br/> <br />  | In {{&lt; TransferCFT/PrimaryCGorUM &gt;}} click <span >****Flows**** </span>&gt; <span >****Add flow****</span>.<br/> Create a flow named <span >****Broadcast_flow****</span>, and give it the identifier <span >****flow04****</span>.<br/> In this flow the MainOffice is the Source with the two stores as the Targets. | <a href="../intro_cg_task_catalog/t_defineflow_broadcast"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 | 2 | Enable broadcasting mode. | In the Source Transfer properties, enable Broadcast list. | <a href="../intro_cg_task_catalog/t_defineflow_broadcast#enable_broadcast_cg"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 3 | Deploy the flow. | In Central Governance click ****Deploy**** to save and deploy the flow. | <a href="../intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 4 | Create a file for the flow. | For this example, copy a file SALES_report to transfer in the Store_66 Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}<code> runtime/pub </code>folder. |   |
-| 5 | Execute the SEND command. | From the source Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}, run the following command:<br/> <code>CFTUTIL SEND PART=DEST_stores, IDF=flow04, FNAME=pub/SALES_report</code> | <a href="../../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 6  | Monitor the file transfer status.  | In Central Governance select the ****Flows**** tab, and click ****Monitoring****.  | <a href="../intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 3 | Deploy the flow. | In {{&lt; TransferCFT/PrimaryCGorUM &gt;}} click <span >****Deploy**** </span>to save and deploy the flow. | <a href="../intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 4 | Create a file for the flow. | For this example, copy a file SALES_report to transfer in the Store_66 {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}<span ><code> runtime/pub </code></span>folder. |   |
+| 5 | Execute the SEND command. | From the source {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}, run the following command:<br/> <span ><code>CFTUTIL SEND PART=DEST_stores, IDF=flow04, FNAME=pub/SALES_report</code></span> | <a href="../../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 6  | Monitor the file transfer status.  | In {{&lt; TransferCFT/PrimaryCGorUM &gt;}} select the <span >****Flows**** </span>tab, and click <span >****Monitoring****</span>.  | <a href="../intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 
 
 
@@ -4370,12 +4370,12 @@
 
 |   |  Task  | Description  | Details  |
 | --- | --- | --- | --- |
-| 1<br/>  | Create a flow.<br/> <br />  | In Central Governance define a flow named ****Collect_flow****, and give it the identifier ****flow05****.<br/> Use the Source as MainOffice and the stores as the Target.<br />  | <a href="../intro_cg_task_catalog/t_define_simpleflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 1<br/>  | Create a flow.<br/> <br />  | In {{&lt; TransferCFT/PrimaryCGorUM &gt;}} define a flow named <span >****Collect_flow****</span>, and give it the identifier <span >****flow05****</span>.<br/> Use the Source as MainOffice and the stores as the Target.<br />  | <a href="../intro_cg_task_catalog/t_define_simpleflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 | 2 | Enable collect mode. | In the Collect_flow definition, modify so that the Target pulls file. | <a href="../intro_cg_task_catalog/t_defineflow_collect"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 | 3 | Define the path to the Target file for each store.  | In the Target (each store) select File properties. In Path field, enter the path to the file to send. | <a href="../intro_cg_task_catalog/t_collect_target_properties"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 4 | Deploy the flow. | In Central Governance you can save and deploy the flow. | <a href="../intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 5 | Run the RECV command. | In Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}, run the following command: <code></code><code>CFTUTIL RECV PART=DEST_Stores, IDF=flow05</code>  | <a href="../../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
-| 6 | Monitor the file transfer status. | In Central Governance select the ****Flows**** tab, and click ****Monitoring****. | <a href="../intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 4 | Deploy the flow. | In {{&lt; TransferCFT/PrimaryCGorUM &gt;}} you can save and deploy the flow. | <a href="../intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 5 | Run the RECV command. | In {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}, run the following command: <span ><code></code></span><span ><code>CFTUTIL RECV PART=DEST_Stores, IDF=flow05</code></span>  | <a href="../../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 6 | Monitor the file transfer status. | In {{&lt; TransferCFT/PrimaryCGorUM &gt;}} select the <span >****Flows**** </span>tab, and click <span >****Monitoring****</span>. | <a href="../intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
 
 
 
@@ -4430,7 +4430,7 @@
 | Identifier: alphanumeric string of 1 to 32 alphanumeric characters and additional characters:<br/> @ # &amp; % ! : - _ + \ / | ? { } [ ] ; * &lt; &gt; ~ ^ | identifier  |
 | Mask: string containing wildcard characters (* and ?) :<br/> When referring to ReGEX expressions, other value are possible. | mask  |
 | Time: string containing 2 to 8 digits  | HHMMSSSS |
-| Transfer identifier assigned by Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}  | transid  |
+| Transfer identifier assigned by {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}  | transid  |
 
 
 
@@ -4440,7 +4440,7 @@
 | Protocol  | Description  |
 | --- | --- |
 | PeSIT | PeSIT protocol (standard) |
-| PeSIT CFT/CFT | PeSIT protocol used between two Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}s |
+| PeSIT CFT/CFT | PeSIT protocol used between two {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}s |
 
 
 
@@ -4464,9 +4464,9 @@
 
 | Transfer CFT  | Host name  | Application name  |
 | --- | --- | --- |
-| Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} 1  | &lt; host name / IP address &gt;  | MainOffice  |
-| Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} 2  | &lt; host name / IP address &gt;  | Store_66  |
-| Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} 1  | &lt; host name / IP address &gt;  | Store_89  |
+| {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} 1  | &lt; host name / IP address &gt;  | MainOffice  |
+| {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} 2  | &lt; host name / IP address &gt;  | Store_66  |
+| {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} 1  | &lt; host name / IP address &gt;  | Store_89  |
 
 
 
@@ -4475,15 +4475,15 @@
 
 | CG parameter  | CG values  | CFTUTIL parameter  | Description  |
 | --- | --- | --- | --- |
-| Transfer priority  | LOW,<br /> MEDIUM: default,<br /> HIGH,<br /> CUSTOM  | CFTSEND, pri<br /> <br /> LOW -&gt;0<br /> MEDIUM-&gt;128<br /> HIGH-&gt; 255<br /> CUSTOM-&gt; integer between 0...255  | Transfer priorities are equivalent to integer values ranging from 0 (low) to 255 (high).<br /> When Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} reaches the maximum number of transfers allowed, it queues transfers. When an ongoing transfer is finished and a slot is available for a new transfer, the system selects the one with the highest priority.<br /> The same priority is used for the transfer in target side  |
+| Transfer priority  | LOW,<br /> MEDIUM: default,<br /> HIGH,<br /> CUSTOM  | CFTSEND, pri<br /> <br /> LOW -&gt;0<br /> MEDIUM-&gt;128<br /> HIGH-&gt; 255<br /> CUSTOM-&gt; integer between 0...255  | Transfer priorities are equivalent to integer values ranging from 0 (low) to 255 (high).<br /> When {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} reaches the maximum number of transfers allowed, it queues transfers. When an ongoing transfer is finished and a slot is available for a new transfer, the system selects the one with the highest priority.<br /> The same priority is used for the transfer in target side  |
 | Bandwidth allocation  | LOW ,<br /> MEDIUM : default, HIGH  | CFTSEND, cos<br /> LOW -&gt;0<br /> MEDIUM-&gt;1<br /> HIGH-&gt; 2  | The amount of bandwidth allocated to this flow. The value you select determines the data transfer rate for this flow.<br /> The same Bandwidth allocation is used for the transfer in target side  |
 | Transfer state  | Ready: default ,<br /> On hold,<br /> Kept  | CFTSEND, state<br /> <br /> Ready (D) -&gt; DISP<br /> On hold (H) -&gt;HOLD<br /> Kept (K) -&gt;KEEP  | Indicates the state of the transfer request.: Ready, On Hold, Kept.<br /> Field is available in UI only if the Initiator is the source.<br /> If Target is the initiator, in source side the transfer state is ready and the field cannot be configured in CG UI.<br />  |
-| User id  | string, max 32, empty by default  | CFTSEND, userid | Identifier of the transfer owner. If this parameter is not defined, its default value is the system "userid" of the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}.  |
+| User id  | string, max 32, empty by default  | CFTSEND, userid | Identifier of the transfer owner. If this parameter is not defined, its default value is the system "userid" of the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}.  |
 | Detect duplicate transfers  | string max 512, empty by default  | CFTSEND, duplicat  | This field is used in detecting duplicate transfers and may contain a list of symbolic variables separated by a period ".".  |
 | Compress file  | Yes: default,<br /> No  | CFTSEND, comp<br /> <br /> Yes → 15<br /> No → 0  | Indicates whether files are compressed before they are transferred.<br /> Same value will be used for the compression on target side  |
 | On file modification  | Continue transfer: default,<br /> Stop transfer  | CFTSEND , fdisp<br /> Continue transfer -&gt; SHR<br /> Stop transfer-&gt; CHECK  | Available only in source side.<br /> Specify what happens if files are modified during the transfer.  |
 | Action after transfer  | Delete file ,<br /> Delete file content,<br /> None: default  | CFTSEND, faction<br /> <br /> Delete file -&gt; Delete<br /> Delete file content -&gt; Erase<br /> None-&gt; None: default  | Specifies what happens to the file in source side when the transfer is complete.<br /> Delete file – Deletes the file.<br /> Delete file content – Removes the contents of the file but leaves the "end of file" mark at the beginning of the file.<br /> None – No action is performed on the file.  |
-| Delete file on purge  | Ready (D) ,<br /> Transferring (C), On Hold (H),<br /> Kept (K), Transferred (T), Executed (X) default: no selection  | CFTSEND, fdelete<br /> <br /> Ready (D) -&gt;D<br /> Transferring (C) -&gt; C<br /> On Hold (H) -&gt; H<br /> Kept (K) -&gt; K<br /> Transferred (T) -&gt; T<br /> Executed (X) -&gt; X  | Indicates the transfer states of files that will be deleted when you remove the associated transfers from the transfer list or when you purge the transfer list. You can select any combination of statuses. If you do not select anything, files are not deleted even when the associated transfers are removed from the transfer list.<br /> Ready – The transfer is available and can start immediately.<br /> Transferring – The transfer is being executed.<br /> On hold – The transfer was interrupted due to an error, such as a network failure, or by a user.<br /> Kept – The transfer was suspended by Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} or by a user.<br /> Transferred – The transfer was successfully completed.<br /> Executed – The transfer was ended by an application or user.  |
+| Delete file on purge  | Ready (D) ,<br /> Transferring (C), On Hold (H),<br /> Kept (K), Transferred (T), Executed (X) default: no selection  | CFTSEND, fdelete<br /> <br /> Ready (D) -&gt;D<br /> Transferring (C) -&gt; C<br /> On Hold (H) -&gt; H<br /> Kept (K) -&gt; K<br /> Transferred (T) -&gt; T<br /> Executed (X) -&gt; X  | Indicates the transfer states of files that will be deleted when you remove the associated transfers from the transfer list or when you purge the transfer list. You can select any combination of statuses. If you do not select anything, files are not deleted even when the associated transfers are removed from the transfer list.<br /> Ready – The transfer is available and can start immediately.<br /> Transferring – The transfer is being executed.<br /> On hold – The transfer was interrupted due to an error, such as a network failure, or by a user.<br /> Kept – The transfer was suspended by {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} or by a user.<br /> Transferred – The transfer was successfully completed.<br /> Executed – The transfer was ended by an application or user.  |
 | Additional information  | string max 512, empty by default  | CFTSEND, parm  | Use this field for any information you want to provide.  |
 
 
@@ -4496,7 +4496,7 @@
 | Single - &gt; Path  | string max 64  | CFTSEND, fname  | Indicate the single file to be sent.  |
 | Multiple -&gt; Path  | string max 64  | CFTSEND, fname  | If you selected Multiple, the value you enter can be:<br /> A directory name – All the files in this directory will be transferred.<br /> A generic file name, including wildcard characters – Only files that match are transferred. For example, mydirectory/toto*.  |
 | Multiple -&gt; File list  | string max 64  | CFTSEND, selfname  | This field is displayed if you selected Multiple in the Files field.<br /> Specify the name of the file that contains the list of files to be transferred. This file is also referred to as an indirection file. It must contain one file name per record, and that name must start in the first column of the file. The file names contained in the file must not contain an asterisk (*).<br /> When specifying a file here, the Path field is also required.  |
-| Multiple -&gt; Archive name  | string max 64,<br /> &amp;IDF.&amp;idtu.rcv  | CFTSEND, wfname  | Name of the file that contains the set of files to be transmitted. Archive files are sent between systems that have the same operating system (grouped mode). The archive file is created automatically by Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} at the time of the transfer. The file created will be a zip file on Windows systems and a tar file on Linux/UNIX systems. Because Windows systems do not have default compression utilities, Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} for Windows includes zip and unzip utilities.  |
+| Multiple -&gt; Archive name  | string max 64,<br /> &amp;IDF.&amp;idtu.rcv  | CFTSEND, wfname  | Name of the file that contains the set of files to be transmitted. Archive files are sent between systems that have the same operating system (grouped mode). The archive file is created automatically by {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} at the time of the transfer. The file created will be a zip file on Windows systems and a tar file on Linux/UNIX systems. Because Windows systems do not have default compression utilities, {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} for Windows includes zip and unzip utilities.  |
 | File name sent  | string max 64  | CFTSEND, nfname  | Specify the name of the physical file that is to be used during transmission over the network.  |
 | Signature file  | string max 64  | CFTSEND, sigfname  | Specify a file name that contains multiple signatures. The signatures in this file must conform to the format &lt;signature_path&gt; where path is the file path specified in the Path field.  |
 
@@ -4562,12 +4562,12 @@
 | CG parameter  | CG values  | CFTUTIL parameter  | Description  |
 | --- | --- | --- | --- |
 | Transfer state  | Ready: default ,<br /> On hold,<br /> Kept  | CFTRECV, state<br /> <br /> Ready (D) -&gt; DISP<br /> On hold (H) -&gt;HOLD<br /> Kept (K) -&gt;KEEP  | Indicates the state of the transfer request.: Ready, On Hold, Kept<br /> Field is available in UI only if the Initiator is the target.<br /> If Source is the initiator, in Target side the transfer state is ready and the field cannot be configured in CG UI.  |
-| User id  | string, max 32, empty by default  | CFTRECV, userid  | Identifier of the transfer owner. If this parameter is not defined, its default value is the system "userid" of the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}.  |
+| User id  | string, max 32, empty by default  | CFTRECV, userid  | Identifier of the transfer owner. If this parameter is not defined, its default value is the system "userid" of the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}.  |
 | Detect duplicate transfers  | string max 512, empty by default  | CFTRECV, duplicat  | This field is used in detecting duplicate transfers and may contain a list of symbolic variables separated by a period ".".  |
 | No file exists  | Create: default,<br /> Cancel  | CFTRECV | Specifies the action taken if the received file does not already exist.<br /> Create – The file is created.<br /> Cancel – The transfer is refused.  |
 | File exists  | Delete: default,<br /> Cancel,<br /> Overwrite, Overwrite only if empty  | CFTRECV | Specifies the action taken if the received file exists.<br /> Delete – The existing file is deleted.<br /> Cancel – The transfer is refused.<br /> Overwrite – The existing file is overwritten.<br /> Overwrite only if empty – The existing file is overwritten only if it contains no data.  |
 | Aborted transfer  | Keep: Default,<br /> Delete  | CFTRECV, rkerror  | Specifies the action taken if a transfer is terminated due to a file creation error on the target.<br /> Keep – The transfer remains in the transfer list.<br /> Delete – The transfer is removed from the transfer list.  |
-| Delete file on purge  | Ready (D) ,<br /> Transferring (C), On Hold (H),<br /> Kept (K), Transferred (T), Executed (X) default: no selection  | CFTRECV, fdelete<br /> <br /> Ready (D) -&gt;D<br /> Transferring (C) -&gt; C<br /> On Hold (H) -&gt; H<br /> Kept (K) -&gt; K<br /> Transferred (T) -&gt; T<br /> Executed (X) -&gt; X  | Indicates the transfer states of files that will be deleted when you remove the associated transfers from the transfer list or when you purge the transfer list. You can select any combination of statuses. If you do not select anything, files are not deleted even when the associated transfers are removed from the transfer list.<br /> Ready – The transfer is available and can start immediately.<br /> Transferring – The transfer is being executed.<br /> On hold – The transfer was interrupted due to an error, such as a network failure, or by a user.<br /> Kept – The transfer was suspended by Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} or by a user.<br /> Transferred – The transfer was successfully completed.<br /> Executed – The transfer was ended by an application or user.  |
+| Delete file on purge  | Ready (D) ,<br /> Transferring (C), On Hold (H),<br /> Kept (K), Transferred (T), Executed (X) default: no selection  | CFTRECV, fdelete<br /> <br /> Ready (D) -&gt;D<br /> Transferring (C) -&gt; C<br /> On Hold (H) -&gt; H<br /> Kept (K) -&gt; K<br /> Transferred (T) -&gt; T<br /> Executed (X) -&gt; X  | Indicates the transfer states of files that will be deleted when you remove the associated transfers from the transfer list or when you purge the transfer list. You can select any combination of statuses. If you do not select anything, files are not deleted even when the associated transfers are removed from the transfer list.<br /> Ready – The transfer is available and can start immediately.<br /> Transferring – The transfer is being executed.<br /> On hold – The transfer was interrupted due to an error, such as a network failure, or by a user.<br /> Kept – The transfer was suspended by {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} or by a user.<br /> Transferred – The transfer was successfully completed.<br /> Executed – The transfer was ended by an application or user.  |
 
 
 
@@ -4577,7 +4577,7 @@
 | CG parameter  | CG values  | CFTUTIL‑parameter  | Description  |
 | --- | --- | --- | --- |
 | Filename  | string max 64,<br /> Default value: pub\&amp;IDF.&amp;IDTU.&amp;FROOT.RCV  | CFTRECV, fname  | Specify the file name or full path name for the received file or files. This field is required if the initiator of the flow is the source. Default value: pub\&amp;IDF.&amp;IDTU.&amp;FROOT.RCV  |
-| Temporary file  | string max 64  | CFTRECV, wfname  | Specify the name of the temporary file used during the transfer. When the transfer is complete, the temporary file is renamed using the name defined in the Filename field. If you do not specify a value, Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} directly creates the file with the name specified in the Filename field.  |
+| Temporary file  | string max 64  | CFTRECV, wfname  | Specify the name of the temporary file used during the transfer. When the transfer is complete, the temporary file is renamed using the name defined in the Filename field. If you do not specify a value, {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} directly creates the file with the name specified in the Filename field.  |
 
 
 
@@ -4628,9 +4628,9 @@
 
 | Authentication method  | copilot.restapi.authentication_method  | Details  |
 | --- | --- | --- |
-| Operating System  | system  | The user/password is checked against the operating system.<br/> <blockquote> **Note**<br/> We strongly recommend that you set copilot.misc.createprocessasuser=yes when using the system option.<br/> </blockquote> **Unix**<br/> You must use <code>cftsu </code>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to <a href="" >Using system users - UNIX</a> for details.<br/> • Create a group "group1": groupadd group1<br/> • Add user "user1" to group "group1": usermod -a -G group1 user1<br/> **Windows**<br/> You require a superuser (administrative user account) to create a group and assign a user to a group.<br/> • Create a group "group1": net localgroup group1 /add<br/> • Add user "user1" to group "group1": net localgroup group1 user1 /add<br/> <blockquote> **Note**<br/> For a user belonging to a domain, use: domain\user1 instead of user1<br/> </blockquote>  |
-| Access Management  | am  | This methods uses an indirection towards the Access Management system. The user/password is checked by the configured access management system: Flow Manager{{&lt; TransferCFT/flowmanager &gt;}}, PassPort AM, or internal AM. |
-| xfbadm database<br/> (UNIX and HP NonStop exclusively) | xfbadm  | The user/password is checked using the xfbadm base (see the <a href="../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).<br/> A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <code>profile </code>from the runtime directory.<br/> • Create a group "group1" with gid=200: xfbadmgrp add -G group1 -p group1_pw -g 200<br/> • From the user prompt, to add a user "user1" to group "group1"enter: xfbadmusr add -l user1 -p user1_pw -u AUTO -g 200 |
+| Operating System  | system  | The user/password is checked against the operating system.<br/> <blockquote> **Note**<br/> We strongly recommend that you set copilot.misc.createprocessasuser=yes when using the system option.<br/> </blockquote> **Unix**<br/> You must use <span ><code>cftsu </code></span>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to <a href="" >Using system users - UNIX</a> for details.<br/> • Create a group "group1": <span >groupadd group1</span><br/> • Add user "user1" to group "group1": <span >usermod -a -G group1 user1</span><br/> **Windows**<br/> You require a superuser (administrative user account) to create a group and assign a user to a group.<br/> • Create a group "group1": <span >net localgroup group1 /add</span><br/> • Add user "user1" to group "group1": <span >net localgroup group1 user1 /add</span><br/> <blockquote> **Note**<br/> For a user belonging to a domain, use: domain\user1 instead of user1<br/> </blockquote>  |
+| Access Management  | am  | This methods uses an indirection towards the Access Management system. The user/password is checked by the configured access management system: {{&lt; TransferCFT/suitevariablesFlowManager &gt;}}, PassPort AM, or internal AM. |
+| xfbadm database<br/> (UNIX and HP NonStop exclusively) | xfbadm  | The user/password is checked using the xfbadm base (see the <a href="../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).<br/> A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <span ><code>profile </code></span>from the runtime directory.<br/> • Create a group "group1" with gid=200:<span > xfbadmgrp add -G group1 -p group1_pw -g 200</span><br/> • From the user prompt, to add a user "user1" to group "group1"enter: <span >xfbadmusr add -l user1 -p user1_pw -u AUTO -g 200</span> |
 
 
 
@@ -4724,7 +4724,7 @@
 | <a href="../../../command_summary/parameter_intro/tlvwarn">TLVWARN</a> | Catalog usage limit before issuing an alert, as is a percentage of filling, where 0% indicates the file is empty, and 100% that it is full.<br/> When this limit is reached, the CFTCAT/TLVWEXEC is executed. |
 | <a href="../../../command_summary/parameter_intro/timep">TIMEP</a>  | Daily purge time chosen by the user.<br/> The user can program an automatic, cyclic catalog purge. The default purge time is midnight.<br/> <blockquote> **Note**<br/> To completely deactivate purging, set TIMEP = 00000000. Use this option with caution as no automatic purging is performed (at a selected time or at midnight).<br/> </blockquote>  |
 | <a href="../../../command_summary/parameter_intro/updat">UPDAT</a>  | Number of synchronization points between two consecutive updates of the catalog file during a transfer. |
-| <a href="../../../command_summary/parameter_intro/wscan">WSCAN</a>  | Enter the frequency (in minutes) with which Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} scans the catalog file when restarting a transfer: • 5 (default value)<br/> • 1 to 60 |
+| <a href="../../../command_summary/parameter_intro/wscan">WSCAN</a>  | Enter the frequency (in minutes) with which {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} scans the catalog file when restarting a transfer: • 5 (default value)<br/> • 1 to 60 |
 
 
 
@@ -4809,7 +4809,7 @@
 
 | <a href="../../../command_summary/parameter_intro/eerp">EERP</a> | Used to interpret the value of the ORIGINATOR and DESTINATOR fields contained in the EERP message, according to the protocol version.<br/> The End to End ResPonse service generates a message called EERP. This message informs the file sender that the data sent arrived correctly.<br/> The first version of the protocol (1986) specifies that:<br/> • the ORIGINATOR protocol field corresponds to the file sender<br/> • the DESTINATOR protocol field corresponds to the file receiver<br/> The second version (1991) specifies that:<br/> • the ORIGINATOR protocol field corresponds to the EERP sender (i.e. the file receiver)<br/> • the DESTINATOR protocol field corresponds to the EERP receiver (i.e. the file sender)<br/> Note: heck the consistency of the customized values from one end to another. If the sender and receiver have different versions, it is not possible to acknowledge the transfer. |
 | --- | --- |
-| <a href="../../../command_summary/parameter_intro/pad">PAD</a>  | *Deprecated in* **Transfer CFT**{{&lt; TransferCFT/componentlongname &gt;}}**3.9**{{&lt; TransferCFT/releasenumber &gt;}}<br/> Option applying "SPECIAL LOGIC" to the data exchange buffers.<br/> This option is negotiated with the partner when the protocol session is established (in the SSID FPDU). If the option is set to NO for one of the partners, the "special logic" is not applied. |
+| <a href="../../../command_summary/parameter_intro/pad">PAD</a>  | *Deprecated in* {{&lt; TransferCFT/axwayvariablesComponentLongName &gt;}}**{{&lt; TransferCFT/axwayvariablesReleaseNumber &gt;}}<br/> Option applying "SPECIAL LOGIC" to the data exchange buffers.<br/> This option is negotiated with the partner when the protocol session is established (in the SSID FPDU). If the option is set to NO for one of the partners, the "special logic" is not applied. |
 | <a href="../../../command_summary/parameter_intro/rcredit">RCREDIT</a>  | Value of the "credit" (expressed as a number of "DATA" messages) proposed by Transfer CFT when it is server.<br/> This value is negotiated with the value proposed by the requester (see the SCREDIT parameter) when the protocol session is established. |
 | <a href="../../../command_summary/parameter_intro/resync">RESYNC</a>  | Option for restarting a transfer following an interruption.<br/> This option is negotiated with the partner when the connection is established: if the option is set to NO for one of the partners, transfer restarts are not managed. |
 | <a href="../../../command_summary/parameter_intro/rrusize">RRUSIZE</a> | Maximum size of NSDUs (Network Service Data Unit) being received.<br/> This parameter is negotiated with the partner (SRUSIZE parameter if Transfer CFT), the smallest value is selected as the size of NSDUs sent.<br/> Refer to the Transfer CFT <a href="../../../../protocols_start_here">Protocol topics</a> to optimize the definition of the value of this parameter. |
@@ -4831,7 +4831,7 @@
 | <a href="../../../command_summary/parameter_intro/hide99">HIDE99</a> | Optional parameter available only to PESIT protocol definition (TYPE=PESIT) using the ANY profile (PROFIL=ANY/CFT).<br/> • NO (Default value): no information inside PI99 (free message PI Code) is hidden<br/> • YES: hide private information carried by the protocol (physical local path of the file) |
 | <a href="../../../command_summary/parameter_intro/logon">LOGON</a><br/> Only in requester mode PeSIT E | Implementation of the pre-connection phase.<br/> According to the value of this parameter:<br/> • YES: this phase is implemented. The requester sends a 24-byte EBCDIC message as follows:<br/> • • byte 1 to 8: ‘PESIT ’ (PeSIT followed by 3 blank characters) (corresponding to the protocol used)<br/> • byte 9 to 16: requester identifier (NSPART of CFTPART)<br/> • byte 17 to 24: requester password (NSPASSW of CFTPART)<br/> <br/> • NO: this phase is not implemented: the requester does not send a message<br/> Note: The Transfer CFT server automatically adapts itself to the choice of the requesting partner to send a Logon message or not. |
 | <a href="../../../command_summary/parameter_intro/multart">MULTART</a><br/> Only in sender mode | Option to group several records of the file sent in a given FPDU (multi-record FPDUs).<br/> • in sender mode, MULTART = YES is recommended if the partner supports multi-record FPDUs<br/> The value MULTART = YES is PROHIBITED in this profile<br/> • in receiver mode, the Transfer CFT accepts multi-record FPDUs, regardless of the value of this parameter |
-| <a href="../../../command_summary/parameter_intro/pad">PAD</a> <br/> Only in requester mode CFT profile | *Deprecated in* **Transfer CFT**{{&lt; TransferCFT/componentlongname &gt;}}**3.9**{{&lt; TransferCFT/releasenumber &gt;}}<br/> Use of the CRC (Cyclic Redundancy Checksum).<br/> This option is not negotiated: in server mode, Transfer CFT always adapts itself to the choice of the requesting partner.<br/> The PAD = YES option is mandatory for an access through a PAD. |
+| <a href="../../../command_summary/parameter_intro/pad">PAD</a> <br/> Only in requester mode CFT profile | *Deprecated in* {{&lt; TransferCFT/axwayvariablesComponentLongName &gt;}}**{{&lt; TransferCFT/axwayvariablesReleaseNumber &gt;}}<br/> Use of the CRC (Cyclic Redundancy Checksum).<br/> This option is not negotiated: in server mode, Transfer CFT always adapts itself to the choice of the requesting partner.<br/> The PAD = YES option is mandatory for an access through a PAD. |
 | <a href="../../../command_summary/parameter_intro/part">PART</a>  | List of the partners (maximum of four) for which a PeSIT session, where the transactional turn is cyclically opened..<br/> Inactive partners (result of the command INACT) are not taken into account. |
 | PROF  | PeSIT D or E protocol profile.<br/> The profile options are:<br/> • EXTERN profile: corresponds to the standardized definition of the PeSIT version D protocol<br/> • CFT profile: the PeSIT version D protocol, when the partner also has a Transfer CFT<br/> Its functionality level is greater than the PeSIT D EXTERN profile specifications,<br/> • ANY profile: corresponds to the standardized definition of the PeSIT version E protocol<br/> This profile includes the facilities of the CFT profile, as standard.<br/> Additional facilities are provided between two Transfer CFTs, while remaining in conformity with the PeSIT E standard. These facilities are based on the use of the PI 99 (free PI).<br/> • the DMZ profile (DeMilitarized Zone): corresponds to the normalized definition for the PeSIT protocol, version E E (refer to Managing the Turn)<br/> Note: In server mode, the PROF parameter can take either the EXTERN, CFT or ANY values: indeed, in server mode, the Transfer CFT automatically adapts itself to the profile proposed by the requesting partner. |
 | <a href="../../../command_summary/parameter_intro/rchkw">RCHKW</a> | Size of the receive mode synchronization point acknowledgement anticipation window, expressed as a number of synchronization points.<br/> Negotiated with the sender partner.<br/> RCHKW=0 means that synchronization points are not acknowledged.<br/> RCHKW=1 is equivalent to operation in half-duplex mode.<br/> On LU6.2 networks all non-null values will be forced to 1 during protocol negotiation. |
@@ -5240,7 +5240,7 @@
 
 | <span id="Paramete"></span>Parameter  | Type  | Default  | Description  |
 | --- | --- | --- | --- |
-| same as in UCONF<br/> &lt;folder_monitoring.enable&gt; | Boolean  | No  |  • No: No folder monitoring occurs.<br/> • Yes: Enable Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} folder monitoring. |
+| same as in UCONF<br/> &lt;folder_monitoring.enable&gt; | Boolean  | No  |  • No: No folder monitoring occurs.<br/> • Yes: Enable {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} folder monitoring. |
 | ID<br/> **Mandatory** | node  | None  | Add the logical folders to monitor (list of logical identifiers).<br/> You should provide a unique name to identify the set of configuration parameters corresponding to this directory. If you have more than one Folder to monitor, use a space between each logical value. |
 | STATE  | Boolean  | Active  | Enables a scan of the folder.<br/> <blockquote> **Note**<br/> NO = NOACTIVE.<br/> </blockquote>  |
 | SCANDIR<br/> *Mandatory*  | string  | None  | Absolute path name of the top level directory to scan.<br/> This directory must exist before restarting Transfer CFT.<br/> *See <a href="#*char_note">NOTE</a>. |
@@ -5264,7 +5264,7 @@
 | RENAMESEPARATOR  | string  | "." | This parameter only applies to the MOVE method.<br/> You can use no more than two characters from among the following:<br/> .[]()_-<br/> The first character defines the separator before the timestamp. The second one, when present, defines the separator after the timestamp.<br/> For example, using timestamp_separators "[]": - myfile is renamed myfile.[20131025] - myfile.txt is renamed myfile.[20131025].txt |
 | N/A in this version  | string  |   | Metadata used to control user changes.  |
 | USEFSEVENTS<br/> <br/> <a href="#Enable">More information</a> | Boolean  | No  | Set to YES to enable the file system events monitoring service to detect newly available files.  |
-| <a href="../../../command_summary/parameter_intro/userid">USERID</a>  | String  |   | *Available on UNIX and* **Windows** **<br/> Identifier for a user who can scan a folder. See the section, <a href="../../../../app_integration_intro/intro_folder_monitor/configure_folder_monitoring#Folder2">Folder monitoring using USERCTRL</a>. |
+| <a href="../../../command_summary/parameter_intro/userid">USERID</a>  | String  |   | *Available on UNIX and* {{&lt; TransferCFT/PrimaryforWindows &gt;}} **<br/> Identifier for a user who can scan a folder. See the section, <a href="../../../../app_integration_intro/intro_folder_monitor/configure_folder_monitoring#Folder2">Folder monitoring using USERCTRL</a>. |
 
 
 
@@ -5274,7 +5274,7 @@
 | Parameter  | Description  |
 | --- | --- |
 | ID = identifier | Identifier of the security profile. |
-| CIPHLIST = {(num, num, ..)} | List of allowed ciphers (encryption methods).<br/> Each value defines three algorithms:<br/> • Authentication algorithm<br/> • Encryption algorithm<br/> • Sealing algorithm<br/> This list is compared with the list proposed by the client in order of preference, for the purpose of determining the suite to be negotiated.<br/> Transfer CFT{{&lt; TransferCFT/componentlongname &gt;}} supports the following: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc, 3des-cbc, blowfish-cbc.<br/> <blockquote> **Note**<br/> If the field is empty, the default list is: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc.<br/> </blockquote>  |
+| CIPHLIST = {(num, num, ..)} | List of allowed ciphers (encryption methods).<br/> Each value defines three algorithms:<br/> • Authentication algorithm<br/> • Encryption algorithm<br/> • Sealing algorithm<br/> This list is compared with the list proposed by the client in order of preference, for the purpose of determining the suite to be negotiated.<br/> {{&lt; TransferCFT/axwayvariablesComponentLongName &gt;}} supports the following: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc, 3des-cbc, blowfish-cbc.<br/> <blockquote> **Note**<br/> If the field is empty, the default list is: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc.<br/> </blockquote>  |
 | CLIPUBKEY  | When DIRECT=SERVER<br/> Key Id containing the client public key (RSA). When defined, the Transfer CFT server checks that the client public key referenced in CLIPUBKEY matches the public key provided by the client. If an error occurs, the connection is rejected with a DIAGI 433. |
 | Comment  | Free comment.  |
 | DIRECT<br/>  | The security profile is applicable in this mode (SERVER). |
@@ -5292,7 +5292,7 @@
 | Parameter  | Description  |
 | --- | --- |
 | ID = identifier | Identifier of the security profile. |
-| CIPHLIST = {(num, num, ..)} | List of allowed ciphers (encryption methods).<br/> Each value defines three algorithms:<br/> • Authentication algorithm<br/> • Encryption algorithm<br/> • Sealing algorithm<br/> This list is compared with the list proposed by the client in order of preference, for the purpose of determining the suite to be negotiated.<br/> Transfer CFT{{&lt; TransferCFT/componentlongname &gt;}} supports the following: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc, 3des-cbc, blowfish-cbc.<br/> <blockquote> **Note**<br/> If the field is empty, the default list is: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc.<br/> </blockquote>  |
+| CIPHLIST = {(num, num, ..)} | List of allowed ciphers (encryption methods).<br/> Each value defines three algorithms:<br/> • Authentication algorithm<br/> • Encryption algorithm<br/> • Sealing algorithm<br/> This list is compared with the list proposed by the client in order of preference, for the purpose of determining the suite to be negotiated.<br/> {{&lt; TransferCFT/axwayvariablesComponentLongName &gt;}} supports the following: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc, 3des-cbc, blowfish-cbc.<br/> <blockquote> **Note**<br/> If the field is empty, the default list is: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc.<br/> </blockquote>  |
 | CLIPRIVKEY  | When DIRECT=CLIENT Key Id containing the client private key (RSA) to use with key authentication. When defined, Transfer CFT uses key authentication. If an error occurs, the connection is rejected with a DIAGI 433.  |
 | Comment  | Free comment.  |
 | DIRECT | The security profile is applicable in this mode (CLIENT). |
@@ -5334,7 +5334,7 @@
 | [IFORM = PKCS12 | DER | PEM | PKCS7] | Format of the certificate to be imported. It must be specified if the INAME parameter is set. |
 | [IKFORM = PKCS8 | DER | PEM ] | Format of the private key to be imported. This parameter must be specified if the IKNAME parameter is set. *only in command line* |
 | [IKNAME = string1..64] | File from which the private key, which is associated with a user certificate, to be imported or updated must be read.<br/> • This parameter is not significant if the certificate format is PKCS#12 as the certificate and private key are declared in the same source file.<br/> • If you call PKIUTIL with IKDATA, you cannot use IKNAME. |
-| [IKPASSW = string1..64] | Source file protection password. This is the source file protection password, and must be specified for encrypted PEM (PKCS#5), PKCS#8 encrypted private key formats, PKCS#7, or for PKCS#12 certificate formats.<br/> There are two ways to specify the password:<br/> • By value: the value assigned to the parameter is used directly as a password<br/> • By reference to a file: the value assigned to the parameter is the name of a file, the first record of which contains the password; in this case, the file name must be preceded by a # or @ sign depending on the OS. On Windows, for example, IKPASSW=#myfile where the password is specified in the <code>myfile </code>file; the first file record must contain the password in plain format. |
+| [IKPASSW = string1..64] | Source file protection password. This is the source file protection password, and must be specified for encrypted PEM (PKCS#5), PKCS#8 encrypted private key formats, PKCS#7, or for PKCS#12 certificate formats.<br/> There are two ways to specify the password:<br/> • By value: the value assigned to the parameter is used directly as a password<br/> • By reference to a file: the value assigned to the parameter is the name of a file, the first record of which contains the password; in this case, the file name must be preceded by a # or @ sign depending on the OS. On Windows, for example, IKPASSW=#myfile where the password is specified in the <span ><code>myfile </code></span>file; the first file record must contain the password in plain format. |
 | [INAME = string1..128] | Source file containing the certificate to be imported or updated.<br/> • This parameter is not allowed in DELETE mode.<br/> • If you call PKIUTIL with IDATA, you cannot use INAME. |
 | [ITYPE = ALL | USER | ROOT | INTER] | Type of certificate to be imported.<br/> This parameter is mandatory for the modes DELETE (deleting a certificate from the database) and REPLACE (updating a certificate).<br/> This field must be specified for an X.509 certificate, Version 1 or 2. The type of an X.509 version 3 certificate is determined automatically. For version 3, the ITYPE parameter is matched against the type detected:<br/> • ALL: certificate type not checked *only in command line*<br/> • USER: user certificate<br/> • ROOT: root authority certificate<br/> • INTER: intermediate authority certificate |
 | [MODE = REPLACE | CREATE | DELETE] | Action on the certificate. The REPLACE action imports or updates an existing certificate in the database.<br/> If importing a certificate chain, user certificate and all intermediate authority certificates, all certificates are recorded in the local database. The user certificate is recorded with the identifier generated from the ID parameter. Intermediate authority certificates are recorded with internal identifiers in the local internal datafile and cannot be viewed. *only in command line* |
@@ -5350,7 +5350,7 @@
 | Parameter  | Description  |
 | --- | --- |
 | ID  | An identifier is a case-insensitive string with a maximum of 32 characters. If the identifier contains spaces, enclose the identifier in single quotes. (*mandatoryparameter*)  |
-| CERTIFICATES<br />  | A list of up to 100 certificate IDs. Each ID is a case-insensitive string with a maximum of 32 characters. There is no check other than syntax when you insert this parameter, so if you use an ID in the CERTIFICATES list that is the same as a PKIENTITY object ID Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} ignores this ID when loading CFTSSL properties.  |
+| CERTIFICATES<br />  | A list of up to 100 certificate IDs. Each ID is a case-insensitive string with a maximum of 32 characters. There is no check other than syntax when you insert this parameter, so if you use an ID in the CERTIFICATES list that is the same as a PKIENTITY object ID {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} ignores this ID when loading CFTSSL properties.  |
 | MODE | An action on the certificate, CREATE, REPLACE, or DELETE. (default = REPLACE) |
 | PKIFNAME  | The name of the PKI internal datafile to use. (default = $CFTPKU) *only in command line*  |
 
@@ -5562,7 +5562,7 @@
 | <a href="../../../command_summary/parameter_intro/tlvwarn">TLVWARN</a> | Catalog usage limit before issuing an alert, as is a percentage of filling, where 0% indicates the file is empty, and 100% that it is full.<br/> When this limit is reached, the CFTCAT/TLVWEXEC is executed. |
 | <a href="../../../command_summary/parameter_intro/timep">TIMEP</a>  | Daily purge time chosen by the user.<br/> The user can program an automatic, cyclic catalog purge. The default purge time is midnight.<br/> <blockquote> **Note**<br/> To completely deactivate purging, set TIMEP = 00000000. Use this option with caution as no automatic purging is performed (at a selected time or at midnight).<br/> </blockquote>  |
 | <a href="../../../command_summary/parameter_intro/updat">UPDAT</a>  | Number of synchronization points between two consecutive updates of the catalog file during a transfer. |
-| <a href="../../../command_summary/parameter_intro/wscan">WSCAN</a>  | Enter the frequency (in minutes) with which Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} scans the catalog file when restarting a transfer: • 5 (default value)<br/> • 1 to 60 |
+| <a href="../../../command_summary/parameter_intro/wscan">WSCAN</a>  | Enter the frequency (in minutes) with which {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} scans the catalog file when restarting a transfer: • 5 (default value)<br/> • 1 to 60 |
 
 
 
@@ -5885,7 +5885,7 @@
 | --- | --- |
 |   | Use the <code>CFTPROT TYPE = ODETTE </code>command to describe the ODETTE transfer protocol.  |
 | <a href="../../../command_summary/parameter_intro/eerp">EERP</a> | Used to interpret the value of the ORIGINATOR and DESTINATOR fields contained in the EERP message, according to the protocol version.<br/> The End to End ResPonse service generates a message called EERP. This message informs the file sender that the data sent arrived correctly.<br/> The first version of the protocol (1986) specifies that:<br/> • the ORIGINATOR protocol field corresponds to the file sender<br/> • the DESTINATOR protocol field corresponds to the file receiver<br/> The second version (1991) specifies that:<br/> • the ORIGINATOR protocol field corresponds to the EERP sender (i.e. the file receiver)<br/> • the DESTINATOR protocol field corresponds to the EERP receiver (i.e. the file sender)<br/> Note: heck the consistency of the customized values from one end to another. If the sender and receiver have different versions, it is not possible to acknowledge the transfer. |
-| <a href="../../../command_summary/parameter_intro/pad">PAD</a>  | *Deprecated in* **Transfer CFT**{{&lt; TransferCFT/componentlongname &gt;}} ** **3.9**{{&lt; TransferCFT/releasenumber &gt;}}<br/> Option applying "SPECIAL LOGIC" to the data exchange buffers.<br/> This option is negotiated with the partner when the protocol session is established (in the SSID FPDU). If the option is set to NO for one of the partners, the "special logic" is not applied. |
+| <a href="../../../command_summary/parameter_intro/pad">PAD</a>  | *Deprecated in* {{&lt; TransferCFT/axwayvariablesComponentLongName &gt;}} ** {{&lt; TransferCFT/axwayvariablesReleaseNumber &gt;}}<br/> Option applying "SPECIAL LOGIC" to the data exchange buffers.<br/> This option is negotiated with the partner when the protocol session is established (in the SSID FPDU). If the option is set to NO for one of the partners, the "special logic" is not applied. |
 | <a href="../../../command_summary/parameter_intro/rcredit">RCREDIT</a>  | Value of the "credit" (expressed as a number of "DATA" messages) proposed by Transfer CFT when it is server.<br/> This value is negotiated with the value proposed by the requester (see the SCREDIT parameter) when the protocol session is established. |
 | <a href="../../../command_summary/parameter_intro/resync">RESYNC</a>  | Option for restarting a transfer following an interruption.<br/> This option is negotiated with the partner when the connection is established: if the option is set to NO for one of the partners, transfer restarts are not managed. |
 | <a href="../../../command_summary/parameter_intro/rrusize">RRUSIZE</a> | Maximum size of NSDUs (Network Service Data Unit) being received.<br/> This parameter is negotiated with the partner (SRUSIZE parameter if Transfer CFT), the smallest value is selected as the size of NSDUs sent.<br/> Refer to the Transfer CFT <a href="../../../../protocols_start_here">Protocol topics</a> to optimize the definition of the value of this parameter. |
@@ -5900,7 +5900,7 @@
 
 | Parameters | Description |
 | --- | --- |
-|   | Use the <code>CFTPROT TYPE = PESIT </code>command to describe the PeSIT transfer protocol.  |
+|   | Use the <span ><code>CFTPROT TYPE = PESIT </code></span>command to describe the PeSIT transfer protocol.  |
 | <a href="../../../command_summary/parameter_intro/concat">CONCAT</a><br/> Only in sender mode | Option to concatenate FPDUs (File Protocol Data Units) in a given NSDU.<br/> This option is not negotiated. |
 | <a href="../../../command_summary/parameter_intro/cto">CTO</a>  | Minimum duration (in minutes) of the session, Cycle Time Out.<br/> At the end of a transfer, the wait time-out for a nfew transfer is recalculated depending on:<br/> • the time (hour) for opening the session<br/> • the current time<br/> • the wait delay before disconnection (DISCTS for the protocol)<br/> • the duration of the session (CTO)<br/> The session is liberated if no transfer was initiated by the remote partner during the indicated duration. |
 | <a href="../../../command_summary/parameter_intro/cycle">CYCLE</a>  | Periodicity (in minutes) for creation of a protocol session:<br/> • 0: PeSIT session open on startup<br/> • n: periodicity |
@@ -5909,7 +5909,7 @@
 | <a href="../../../command_summary/parameter_intro/hide99">HIDE99</a> | Optional parameter available only to PESIT protocol definition (TYPE=PESIT) using the ANY profile (PROFIL=ANY/CFT).<br/> • NO (Default value): no information inside PI99 (free message PI Code) is hidden<br/> • YES: hide private information carried by the protocol (physical local path of the file) |
 | <a href="../../../command_summary/parameter_intro/logon">LOGON</a><br/> Only in requester mode PeSIT E | Implementation of the pre-connection phase.<br/> According to the value of this parameter:<br/> **NO**: this phase is not implemented: the requester does not send a message<br/> **YES**: this phase is implemented. The requester sends a 24-byte EBCDIC message as follows:<br/> • QQQ_QQQ_QQQ_LIST, flattened yes - no<br/><br/> • byte 1 to 8: ‘PESIT ’ (PeSIT followed by 3 blank characters) (corresponding to the protocol used)<br/> • byte 9 to 16: requester identifier (NSPART of CFTPART)<br/> • byte 17 to 24: requester password (NSPASSW of CFTPART)<br/> Note: The Transfer CFT server automatically adapts itself to the choice of the requesting partner to send a Logon message or not. |
 | <a href="../../../command_summary/parameter_intro/multart">MULTART</a><br/> Only in sender mode | Option to group several records of the file sent in a given FPDU (multi-record FPDUs).<br/> • in sender mode, MULTART = YES is recommended if the partner supports multi-record FPDUs<br/> The value MULTART = YES is PROHIBITED in this profile<br/> • in receiver mode, the Transfer CFT accepts multi-record FPDUs, regardless of the value of this parameter |
-| <a href="../../../command_summary/parameter_intro/pad">PAD</a> <br/> Only in requester mode CFT profile | *Deprecated in* **Transfer CFT**{{&lt; TransferCFT/componentlongname &gt;}} ** **3.9**{{&lt; TransferCFT/releasenumber &gt;}}<br/> Use of the CRC (Cyclic Redundancy Checksum).<br/> This option is not negotiated: in server mode, Transfer CFT always adapts itself to the choice of the requesting partner.<br/> The PAD = YES option is mandatory for an access through a PAD. |
+| <a href="../../../command_summary/parameter_intro/pad">PAD</a> <br/> Only in requester mode CFT profile | *Deprecated in* {{&lt; TransferCFT/axwayvariablesComponentLongName &gt;}} ** {{&lt; TransferCFT/axwayvariablesReleaseNumber &gt;}}<br/> Use of the CRC (Cyclic Redundancy Checksum).<br/> This option is not negotiated: in server mode, Transfer CFT always adapts itself to the choice of the requesting partner.<br/> The PAD = YES option is mandatory for an access through a PAD. |
 | <a href="../../../command_summary/parameter_intro/part">PART</a>  | List of the partners (maximum of four) for which a PeSIT session, where the transactional turn is cyclically opened..<br/> Inactive partners (result of the command INACT) are not taken into account. |
 | PROF  | PeSIT D or E protocol profile.<br/> The profile options are:<br/> • SIT profile: the PeSIT is then used in the SIT network context.<br /> It is the same in PeSIT version D and version E.<br /> It provides synchronization point management but does not manage:<br/> QQQ_QQQ_QQQ_LIST<br/> • segmentation: the value of the SEGMENT parameter must be set to<br /> NO (SEGMENT = NO)<br/> • or multi-records: the value of the MULTART parameter must be set to<br /> NO (MULTART = NO)<br/> <br/> Note: A sender in the PeSIT SIT profile cannot segment a record sent in several data FPDUs or group several records sent in the same data FPDU<br/> • or compression: the RCOMP and SCOMP parameters are not applicable<br/> • or receive transfer requests<br/> • EXTERN profile: corresponds to the "non-SIT" (external to SIT network) standardized definition of the PeSIT version D protocol<br/> • CFT profile: the PeSIT version D protocol is used outside the context of the SIT network, the partner also having a Transfer CFT<br/> Its functionality level is greater than the PeSIT D EXTERN profile specifications,<br/> • ANY profile: corresponds to the "non-SIT" (external to SIT network) standardized definition of the PeSIT version E protocol<br/> This profile includes the facilities of the CFT profile, as standard.<br/> Additional facilities are provided between two Transfer CFTs, while remaining in conformity with the PeSIT E standard. These facilities are based on the use of the PI 99 (free PI).<br/> • the DMZ profile (DeMilitarized Zone): corresponds to the normalized "hors SIT" definition for the PeSIT protocol, version E E (refer to Managing the Turn)<br/> Note: In server mode, the PROF parameter can take either the EXTERN, CFT or ANY values (corresponding to the "non-SIT" profiles): indeed, in server mode, the Transfer CFT automatically adapts itself to the non-SIT profile proposed by the requesting partner. |
 | <a href="../../../command_summary/parameter_intro/rchkw">RCHKW</a> | Size of the receive mode synchronization point acknowledgement anticipation window, expressed as a number of synchronization points.<br/> Negotiated with the sender partner.<br/> RCHKW=0 means that synchronization points are not acknowledged.<br/> RCHKW=1 is equivalent to operation in half-duplex mode.<br/> On LU6.2 networks all non-null values will be forced to 1 during protocol negotiation. |
@@ -6226,10 +6226,10 @@
 | DATETIMEMIN  | Use to display catalog transfers that happened on or after this start date and time according to the transfer record creation (DATED, TIMED).  |
 | DIAGI  | Define the diagi catalog transfer field display:<br/> • DIAGI=0: select transfers that have a DIAGI=0<br/> • DIAGI=ERROR: select transfers that have a DIAGI other than 0<br/> • DIAGI=* : select all transfers (default value) |
 | DIRECT  | Transfer direction of the requests.  |
-| EMPTY | Use this parameter to replace the default output of ****Empty**** values, usually empty string values.<br/> The default string ****ANY**** means that EMPTY is specified in the model. The default EMPTY used is '-' if it is not defined in the model. |
+| EMPTY | Use this parameter to replace the default output of <span >****Empty****</span> values, usually empty string values.<br/> The default string <span >****ANY****</span> means that EMPTY is specified in the model. The default EMPTY used is '-' if it is not defined in the model. |
 | FILE  | Enter file name  |
 | FMODEL | Complete name or logical name of the XML model file.<br/> This parameter default value is fixed.  |
-| FOUT  | ****PeSIT**** You can extract Transfer CFT messages from the Catalog file, and forward these messages to a specified file using the fout parameter.<br/> The message length for PeSIT ANY profile, when forwarding a message from one CFT to another, has increased from 512 to 4096 bytes. The S/RRUSIZE must be greater than the maximum message length and message information combined (for example, 4127).<br/> The fout parameter enables you to redirect output to a specified file. |
+| FOUT  | <span >****PeSIT****</span> You can extract Transfer CFT messages from the Catalog file, and forward these messages to a specified file using the fout parameter.<br/> The message length for PeSIT ANY profile, when forwarding a message from one CFT to another, has increased from 512 to 4096 bytes. The S/RRUSIZE must be greater than the maximum message length and message information combined (for example, 4127).<br/> The fout parameter enables you to redirect output to a specified file. |
 | HELP | Displays help information:<br/> • FIELDS: Output all the fields name available for display model creation<br/> • MODELS: Output all the models available in the current model file |
 | IDA  | Local transfer identifier assigned by the user or user application. This identifier may be a search criterion for the catalog entry asso  |
 | IDF  | File type identifier.  |
@@ -6243,7 +6243,7 @@
 | PHASESTEP  | The processing phase step.  |
 | PIDTU  | The parent idtu is the idtu of the generic transfer. This means that for a group of files, file collection, or for broadcasting, the child transfers are now linked to the parent via the PIDTU.  |
 | RUSER | Displays value as defined in the CONTENT parameter. |
-| SORTBY  | Use this parameter to display information in an alphabetical/alphanumberic order.<br/> For example, to sort by partner name and identifier, enter:<br/> <code>CFTUTIL DISPLAY SORTBY=(PART,IDF)</code><br/> Additionally, you can add a prefix to define the criteria direction. Use <code>+</code> to increase (default) or <code>-</code> to decrease. For example:<br/> <code>CFTUTIL DISPLAY SORTBY=(-IDTU)</code> |
+| SORTBY  | Use this parameter to display information in an alphabetical/alphanumberic order.<br/> For example, to sort by partner name and identifier, enter:<br/> <span ><code>CFTUTIL DISPLAY SORTBY=(PART,IDF)</code></span><br/> Additionally, you can add a prefix to define the criteria direction. Use <span ><code>+</code></span> to increase (default) or <span ><code>-</code></span> to decrease. For example:<br/> <code>CFTUTIL DISPLAY SORTBY=(-IDTU)</code> |
 | STATE  | Defines the transfer request state.  |
 | SUSER | Displays value as defined in the CONTENT parameter. |
 | TYPE  | Defines the concerned type (object, medium, etc.).  |
@@ -6357,12 +6357,12 @@
 | --- | --- | --- |
 | loglevel  | I  | Minimum severity level for the log lines to display.<br/> • I: INFORMATION<br/> • E: ERROR<br/> • W: WARNING<br/> • F: FATAL |
 | lines  | -100  | Defines the number of lines to display from all log files, both current and backup.<br/> • A positive value displays the *x* oldest lines.<br/> • The value zero (0) displays all of the lines.<br/> • A negative value displays the **x** most recent lines.<br/> Enter zero (0), or a positive or negative value between 1 and 10,000. |
-| datemin  | 0  | There are multiple formats to use to define the minimum date for log display.<br/> • Use the format YYMMDD to display logs that happened on or after this date.<br/> • Use a partial date for a more generic display. For example, <code>1604 </code>displays the log since April 2016.<br/> • Use a negative value to display logs for x number of days prior to today. For example, entering -2 displays the log since the day before yesterday, and -0 displays today’s log. |
+| datemin  | 0  | There are multiple formats to use to define the minimum date for log display.<br/> • Use the format YYMMDD to display logs that happened on or after this date.<br/> • Use a partial date for a more generic display. For example, <span ><code>1604 </code></span>displays the log since April 2016.<br/> • Use a negative value to display logs for x number of days prior to today. For example, entering -2 displays the log since the day before yesterday, and -0 displays today’s log. |
 | datetimemin | 0  | Use to display logs that happened on or after this start date and time.  |
 | datetimemax | 99123123595999  | Use to display logs that happened on or before this end date and time.  |
-| datemax  | 991231  | There are multiple formats to use to define the maximum date for log display.<br/> • Use to display logs that happened on or before this date. Use the format: YYMMDD<br/> • You can also enter a partial date. For example, <code>16 </code>displays the log prior to 2016.<br/> • A negative value is interpreted as a number of days before today. For example, -1 displays the log till yesterday (included). |
-| timemin  | 0  |  • Logs only happened at this time or after this time during the day. Use the format HHMMSSss.<br/> • A negative value is interpreted as a number of minutes before the current time. For example, -20 displays the log for the last 20 minutes.<br/> See also <a href="#Time" >Time log precision</a>. |
-| timemax  | 23595999  |  • Logs only happened at this time or before this time during the day. Use the format HHMMSSss.<br/> • A negative value is interpreted as a number of minutes before current time. For example , -20 displays the log with the last 20 minutes filtered out.<br/> See also <a href="#Time" >Time log precision</a>. |
+| datemax  | 991231  | There are multiple formats to use to define the maximum date for log display.<br/> • Use to display logs that happened on or before this date. Use the format: YYMMDD<br/> • You can also enter a partial date. For example, <span ><code>16 </code></span>displays the log prior to 2016.<br/> • A negative value is interpreted as a number of days before today. For example, -1 displays the log till yesterday (included). |
+| timemin  | 0  |  • Logs only happened at this time or after this time during the day. Use the format HHMMSSss.<br/> • A negative value is interpreted as a number of minutes before the current time. For example, -20 displays the log for the last 20 minutes.<br/> <span >See also </span><a href="#Time" >Time log precision</a><span >.</span> |
+| timemax  | 23595999  |  • Logs only happened at this time or before this time during the day. Use the format HHMMSSss.<br/> • <span >A negative value is interpreted as a number of minutes before current time. For example , -20 displays the log with the last 20 minutes filtered out.</span><br/> <span >See also </span><a href="#Time" >Time log precision</a><span >.</span> |
 | pattern  |   | Only displays the log lines that match this specific pattern. Enter any pattern with a maximum of 63 characters.  |
 | displaynodeid  | YES  | Defines if the node ID displays at the beginning of each line in the log. Enter:<br/> • YES: display<br/> • NO: does not display |
 | node  | -  | Defines which nodes you want to display the log for. Specify the node by entering the node number :<br/> • Empty: if you do not define this parameter LISTLOG displays all nodes<br/> • Enter the node number(s) and separate with a comma. Node numbers cannot be more than two digits. For example: 00, 01, 02 |
@@ -6441,7 +6441,7 @@
 | Parameters  | Description  |
 | --- | --- |
 | COMMAND | Request keyword. |
-| INDEX | Request number as displayed by the LISTCOM command.<br/> For example:<br/> • <code>INDEX=*</code> Selects all record numbers.<br/> • <code>INDEX=12345</code> Selects the record number 12345 in the COM file. |
+| INDEX | Request number as displayed by the LISTCOM command.<br/> For example:<br/> • <span ><code>INDEX=*</code></span> Selects all record numbers.<br/> • <span ><code>INDEX=12345</code></span> Selects the record number 12345 in the COM file. |
 | JOBNAME  | Jobname (string 15), which you can combine with wildcard characters.<br/> For example:<br/> • <code>JOBNAME=12345</code><br/> • <code>JOBNAME=123*</code><br/> • <code>JOBNAME=12?45</code> |
 | USERID | Identifier of the request owner. |
 
@@ -6596,7 +6596,7 @@
 | Parameter  | Description  |
 | --- | --- |
 | <a href="../../../command_summary/parameter_intro/blknum">BLKNUM</a>  | Catalog block number. If the values '*' or ' ' are used then all transfers are selected regardless of the block that they belong to. |
-| <a href="../../../command_summary/parameter_intro/direct">DIRECT</a>  | Transfer direction for the requests in question.<br/> The possible values are:<br/> • ****BOTH****: (default) takes both send transfers and receive transfers into account<br/> • ****RECV****: limits the action to receive transfers<br/> • ****SEND****: limits the action to send transfers |
+| <a href="../../../command_summary/parameter_intro/direct">DIRECT</a>  | Transfer direction for the requests in question.<br/> The possible values are:<br/> • <span >****BOTH****</span>: (default) takes both send transfers and receive transfers into account<br/> • <span >****RECV****</span>: limits the action to receive transfers<br/> • <span >****SEND****</span>: limits the action to send transfers |
 | <a href="../../../command_summary/parameter_intro/force">FORCE</a>  | Indicates whether a request, that was not executed during its time slot should be forced to immediately restart. |
 | <a href="../../../command_summary/parameter_intro/ida">IDA</a> | Local identifier of the transfer assigned by the user or user application.<br/> Several catalog entries may be associated with a given IDA. There is no default value. |
 | <a href="../../../command_summary/parameter_intro/idf">IDF</a>  | Model file identifier.<br/> Several catalog entries may be associated with a given IDF. There is no default value. |
@@ -6656,7 +6656,7 @@
 | &lt;  | The left justification of the variable (default value)  |
 | &gt;  | The right justification of the variable  |
 | %  | Indicates use of the <a href="#Separate">separator syntax</a>  |
-|   | These characters can be used in combination, such as ****+:**** or ****&gt;+:****. <br/> See the <a href="#Examples" >Example using optional characters</a> |
+|   | These characters can be used in combination, such as <span >****+:****</span> or <span >****&gt;+:****</span>. <br/> See the <a href="#Examples" >Example using optional characters</a> |
 
 
 
@@ -6671,8 +6671,8 @@
 | &amp;RPART  | 32  | Receiving partner name  |
 | &amp;IPART  | 32  | Intermediate partner name  |
 | &amp;NPART  | 32  | Network name of partner sending data (NSPART or NRPART according to the transfer direction)  |
-| &amp;NSPART  | 24  | Network identifier by which the local Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} identifies itself to its partner  |
-| &amp;NRPART  | 24  | Network identifier by which the remote partner identifies itself to the local Transfer CFT{{&lt; TransferCFT/componentlongname &gt;}} |
+| &amp;NSPART  | 24  | Network identifier by which the local {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} identifies itself to its partner  |
+| &amp;NRPART  | 24  | Network identifier by which the remote partner identifies itself to the local {{&lt; TransferCFT/axwayvariablesComponentLongName &gt;}} |
 
 
 
@@ -6687,7 +6687,7 @@
 | &amp;GROUPID | 32  | Group identifier linked to the userid |
 | &amp;COMMENT  | 160  | Comment indicated in CFTSEND/SEND or CFTRECV/RECV <br/> In listcat content=debug this is attribute is MSG  |
 | &amp;NOTIFY  | 8  | User notified on transfer  |
-| &amp;SJOBNAME  | 15  | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} job name, can be used in exec and cronjob procedures  |
+| &amp;SJOBNAME  | 15  | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} job name, can be used in exec and cronjob procedures  |
 
 
 
@@ -6722,7 +6722,7 @@
 | &amp;DIAGC  | 254  | Complimentary diagnostic code value  |
 | &amp;COMP  | 2  | Compression negotiated for the transfer<br/> Compression negotiated for the transfer<br/> When listcat content=debug this is attribute is FCOMP / COMPNEG |
 | &amp;NBT  | 20  | Number of bytes transferred  |
-| &amp;PRI  | 3  | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} priority for the transfer (0 to 255)  |
+| &amp;PRI  | 3  | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} priority for the transfer (0 to 255)  |
 | &amp;QQ  | 3  | Number of the day in the year associated with the transfer identifier  |
 | &amp;SELFNAME  | 512  | Name of the generic transfer selection file  |
 | &amp;FCODE  | 1  | Code for the data in a file  |
@@ -6840,7 +6840,7 @@
 | &amp;EYEAR  | 2  | Transfer end year |
 | &amp;EMONTH  | 2  | Transfer end month |
 | &amp;EDAY  | 2  | Transfer end day |
-| &amp;TT  | 10  | Transmission duration in seconds (TIMES attribute in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog) |
+| &amp;TT  | 10  | Transmission duration in seconds (TIMES attribute in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} catalog) |
 
 
 
@@ -6849,9 +6849,9 @@
 
 | Symbolic variable  | Maximum length  | Corresponding substituted value  |
 | --- | --- | --- |
-| &amp;FLOG  | 512  | Name of last log file used by Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}  |
-| &amp;FACCNT  | 512  | Name of last statistics file used by Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}  |
-| &amp;FCAT | 512  | Name of catalog used by Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
+| &amp;FLOG  | 512  | Name of last log file used by {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}  |
+| &amp;FACCNT  | 512  | Name of last statistics file used by {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}  |
+| &amp;FCAT | 512  | Name of catalog used by {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} |
 
 
 
@@ -6899,9 +6899,9 @@
 
 > > >  | Symbolic variable >  | Max length >  | Corresponding substituted > value >  |
  --- | --- | --- | --- |
-> > > >  | &amp;CFTNAME<br/> >  | 32 >  | Name of the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} (CFTPARM PART parameter)<br/> >  |
-> >  | &amp;CFTEVENT<br/> >  | 16 >  | The type of job submitted by Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}, see (1) below<br/> >  |
-> >  | &amp;SJOBNAME >  | 15 >  | The Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} jobname, which is the name of the job submitting the cronjob or exec procedure (z/OS) >  |
+> > > >  | &amp;CFTNAME<br/> >  | 32 >  | Name of the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} (CFTPARM PART parameter)<br/> >  |
+> >  | &amp;CFTEVENT<br/> >  | 16 >  | The type of job submitted by {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}, see (1) below<br/> >  |
+> >  | &amp;SJOBNAME >  | 15 >  | The {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} jobname, which is the name of the job submitting the cronjob or exec procedure (z/OS) >  |
 > >  | &amp;CFTVERSION >  | 16 >  | The Transfer CFT version >  |
 > >  | &amp;CFTSP >  | 16 >  | The latest SP applied to the Transfer CFT >  |
 > >  | &amp;CFTPATCH >  | 16 >  | The latest patch applied to the Transfer CFT >  |
@@ -6921,7 +6921,7 @@
 > >  | EXEC for CFTACCNT or CFTLOG >  | &amp;FACCNT, &amp;FLOG >  |
 > >  | TLVCEXEC, TLVWEXEC for CFTCAT >  | &amp;FCAT >  |
 > >  | USERID > parameter of the CFTSEND and CFTRECV commands >  | &amp;RUSER, > &amp;SUSER, &amp;PART >  |
-> >  | EXIT > of the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} CFTSEND/SEND and CFTRECV/RECV commands >  | &amp;IDF >  |
+> >  | EXIT > of the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} CFTSEND/SEND and CFTRECV/RECV commands >  | &amp;IDF >  |
 > >  | FNAME parameter > of CFTDEST >  |  > • &amp;FDATE, &amp;FTIME, &amp;FYEAR, &amp;FMONTH, &amp;FDAY<br /> > <br/> > • &amp;PART, &amp;RPART, &amp;SPART, &amp;NPART, &amp;GROUP<br /> > <br/> > • &amp;SUSER, &amp;RUSER<br /> > <br/> > • &amp;SAPPL, &amp;RAPPL<br /> > <br/> > • &amp;IDF, &amp;PARM, &amp;IDA<br /> > <br/> > • &amp;NIDF<br /> > <br/> > • &amp;NFNAME, &amp;NFVER<br/> > >  |
 > >  | The name of the > identifier of the IDF parameter of the CFTPROT command >  |  > • &amp;NIDF<br/> > >  |
 > >  | The IDA parameter of SEND and CFTSEND >  |  > • &amp;FNAME, &amp;FUNITC, &amp;FUNIT, &amp;FPATH, &amp;FROOT, &amp;FSUF, &amp;NFNAME, &amp;PART, &amp;IDF, &amp;IDTU, &amp;IDT, &amp;IDM, &amp;COMMENT, &amp;SYSDATE, &amp;SYSTIME<br/> > >  |
@@ -7025,7 +7025,7 @@
 | Identifier: alphanumeric string of 1 to 32 alphanumeric characters and additional characters:<br/> @ # &amp; % ! : - _ + \ / | ? { } [ ] ; * &lt; &gt; ~ ^ | identifier  |
 | Mask: string containing wildcard characters (* and ?) :<br/> When referring to ReGEX expressions, other value are possible. | mask  |
 | Time: string containing 2 to 8 digits  | HHMMSSSS |
-| Transfer identifier assigned by Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}  | transid  |
+| Transfer identifier assigned by {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}  | transid  |
 
 
 
@@ -7035,7 +7035,7 @@
 | Protocol  | Description  |
 | --- | --- |
 | PeSIT | PeSIT protocol (standard) |
-| PeSIT CFT/CFT | PeSIT protocol used between two Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}s |
+| PeSIT CFT/CFT | PeSIT protocol used between two {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}s |
 
 
 
@@ -7133,7 +7133,7 @@
 | _CAT_SUSER  | SUSER parameter value.  |
 | _CAT_TCYCLE  | TCYCLE parameter value.  |
 | _CAT_TIMEB  | Transfer start time.  |
-| _CAT_TIMEC  | TCYCLE parameter value.  |
+| _CAT_TIMEC  | TCYCLE parameter value.<span > </span>  |
 | _CAT_TIMED  | Creation time of the transfer.  |
 | _CAT_TIMEE  | Transfer end time.  |
 | _CAT_TIMEK  | Time of last writing.  |
@@ -7219,7 +7219,7 @@
 ============================== table nb count(458) table converted to MD ========================================
 
 
-| **z/OS (MVS)**  | For protocols other than PeSIT, CFT profile, if this parameter is not defined, its value is set as follows: <br/> • For fixed format files: this value equals the largest multiple of FLRECL which is less than the constant (related to the track length) defined on installation (default value: 19069), or FLRECL if FLRECL is greater than this constant<br/> • For variable format files: this value equals the constant (related to the track length) defined on installation of the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} in a z/OS environment (default value: 19065), or to FLRECL + 4 if FLRECL is greater than this constant<br/> • For undefined format files: this value is equal to 32760 |
+| **z/OS (MVS)**  | For protocols other than PeSIT, CFT profile, if this parameter is not defined, its value is set as follows: <br/> • For fixed format files: this value equals the largest multiple of FLRECL which is less than the constant (related to the track length) defined on installation (default value: 19069), or FLRECL if FLRECL is greater than this constant<br/> • For variable format files: this value equals the constant (related to the track length) defined on installation of the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} in a z/OS environment (default value: 19065), or to FLRECL + 4 if FLRECL is greater than this constant<br/> • For undefined format files: this value is equal to 32760 |
 | --- | --- |
 
 
@@ -7331,7 +7331,7 @@
 ============================== table nb count(465) table converted to MD ========================================
 
 
-| **IBM i (OS400), UNIX** | The variable format concept is specific to Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}, and does not correspond to a reality for the systems indicated. A variable format receiver file cannot consequently be interpreted directly by an application, since it contains control information. Unless otherwise specified FRECFM = V is not used. |
+| **IBM i (OS400), UNIX** | The variable format concept is specific to {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}, and does not correspond to a reality for the systems indicated. A variable format receiver file cannot consequently be interpreted directly by an application, since it contains control information. Unless otherwise specified FRECFM = V is not used. |
 | --- | --- |
 
 
@@ -7339,7 +7339,7 @@
 ============================== table nb count(466) table converted to MD ========================================
 
 
-| **OS400, UNIX** | The variable format concept is specific to Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}, and does not correspond to a reality for the systems indicated. The Transfer CFT can only send a variable format file if this file is generated by a COPYFILE command, or already received by Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} (store and forward, for example). Unless otherwise specified FRECFM = V is not used. |
+| **OS400, UNIX** | The variable format concept is specific to {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}, and does not correspond to a reality for the systems indicated. The Transfer CFT can only send a variable format file if this file is generated by a COPYFILE command, or already received by {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} (store and forward, for example). Unless otherwise specified FRECFM = V is not used. |
 | --- | --- |
 
 
@@ -7543,7 +7543,7 @@
 ============================== table nb count(483) table converted to MD ========================================
 
 
-| OS400, UNIX | The variable format concept is specific to Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} and is not valid for the systems indicated. |
+| OS400, UNIX | The variable format concept is specific to {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} and is not valid for the systems indicated. |
 | --- | --- |
 
 
@@ -7613,17 +7613,17 @@
 
 | User OS  | Messages are...  |
 | --- | --- |
-| MVS (z/OS) | Sent by SEND to the specified TSO USERID; in this case, the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} program must be authorized (APF). |
-| VMS | Sent to the "VMS User " designated by its VMS name. In this case, the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} task must have the OPER privilege. |
+| MVS (z/OS) | Sent by SEND to the specified TSO USERID; in this case, the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} program must be authorized (APF). |
+| VMS | Sent to the "VMS User " designated by its VMS name. In this case, the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} task must have the OPER privilege. |
 
 
 
 ============================== table nb count(490) table converted to MD ========================================
 
 
-| PeSIT D EXTERN profile<br /> PeSIT ANY profile<br /> PeSIT E | In PeSIT protocol with the EXTERN profile, the value NFRECFM = U is not known in protocol terms and is changed by the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} to NFRECFM = V. This value (U) is sent with no modification in PeSIT D CFT profile or in PeSIT E from Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} to Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}. |
+| PeSIT D EXTERN profile<br /> PeSIT ANY profile<br /> PeSIT E | In PeSIT protocol with the EXTERN profile, the value NFRECFM = U is not known in protocol terms and is changed by the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} to NFRECFM = V. This value (U) is sent with no modification in PeSIT D CFT profile or in PeSIT E from {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} to {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}. |
 | --- | --- |
-| **ODETTE** | For the ODETTE protocol, refer to the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} *Protocol section* for the use of this parameter. |
+| **ODETTE** | For the ODETTE protocol, refer to the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} *Protocol section* for the use of this parameter. |
 | **PeSIT SIT profile** | The NRECFM = U value is only recognized between two Transfer CFTs. |
 
 
@@ -7631,7 +7631,7 @@
 ============================== table nb count(491) table converted to MD ========================================
 
 
-| **PeSIT D CFT profile<br /> PeSIT E CFT/CFT** | *Default value*<br/> If this parameter is not defined, Transfer CFT assigns a default value, as a function of the:<br/> • local file type (FTYPE parameter),<br/> • operating system of the transfer recipient (SYST parameter of CFTPART).<br/> The default values are indicated in *NTYPE sent by default*. |
+| **PeSIT D CFT profile<br /> PeSIT E CFT/CFT** | *<span >Default value</span>*<br/> If this parameter is not defined, Transfer CFT assigns a default value, as a function of the:<br/> • local file type (FTYPE parameter),<br/> • operating system of the transfer recipient (SYST parameter of CFTPART).<br/> The default values are indicated in *NTYPE sent by default*. |
 | --- | --- |
 | **ODETTE** | The specific value NTYPE = T may be used to request the sending of a file in ODETTE text format. Refer to Managing Protocols. |
 
@@ -7728,7 +7728,7 @@
 
 | PeSIT E standard | In standard PeSIT E, the RUSER parameter value is transported in the PI 04, but its length is limited to 8-characters. Therefore, the PI 04 contains the concatenated value along with the value of the RAPPL parameter. |
 | --- | --- |
-| **<br /> **PeSIT E CFT/CFT | In PeSIT E between 2 Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}s, the RUSER parameter value is transported in the PI 99 if this value exceeds 8 characters. |
+| **<br /> **PeSIT E CFT/CFT | In PeSIT E between 2 {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}s, the RUSER parameter value is transported in the PI 99 if this value exceeds 8 characters. |
 
 
 
@@ -7775,7 +7775,7 @@
 
 | PeSIT E standard | In standard PeSIT E, the SUSER parameter is transported in the PI 03, and its length is limited to 8-characters. Therefore, the PI 03 contains the concatenated value along with the value of the SAPPL parameter. |
 | --- | --- |
-| **<br /> **PeSIT E CFT/CFT | In PeSIT E between 2 Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}s, the SUSER parameter value is transported in the PI 99 if this value is longer than 8 characters. |
+| **<br /> **PeSIT E CFT/CFT | In PeSIT E between 2 {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}s, the SUSER parameter value is transported in the PI 99 if this value is longer than 8 characters. |
 
 
 
@@ -7826,12 +7826,12 @@
 | ACCNT  | Description of the statistical files  | CFTACCNT  |
 | AUTH  | List of authorized files  | CFTAUTH  |
 | CAT  | Catalog definition  | CFTCAT  |
-| COM  | Description of Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} communication methods  | CFTCOM  |
+| COM  | Description of {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} communication methods  | CFTCOM  |
 | IDF  | File "network" identifier  | CFTIDF  |
 | LOG  | Log file description  | CFTLOG  |
 | NET  | Network description  | CFTNET  |
 | PARM  | General parameters  | CFTPARM  |
-| PART  | Partner definition  | CFTPART and Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} network  |
+| PART  | Partner definition  | CFTPART and {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} network  |
 | PROT  | Protocol definition  | CFTPROT  |
 | RECV  | Description of the files to be received  | CFTRECV  |
 | SEND  | Description of the files to be sent  | CFTSEND  |
@@ -7859,10 +7859,10 @@
 | RECV  | Used to query the parameters of the files to be received<br /> These parameters are submitted when CFTRECV commands are entered  |
 | SEND  | Used to query the parameters of the files to be sent<br /> These parameters are submitted when CFTSEND commands are entered  |
 | XLATE  | Used to query translation tables<br /> Translation tables are customized by the CFTXLATE object |
-| CFTFILE | Used to create, empty, or delete Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} files |
-| LISTCAT | Used to query the information associated with the selected transfers, recorded in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog |
+| CFTFILE | Used to create, empty, or delete {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} files |
+| LISTCAT | Used to query the information associated with the selected transfers, recorded in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} catalog |
 | DISPLAY | Used to query the information as with the LISTCAT command. It uses an external XML file that lists and describes customized models. These models are used to format the output |
-| ABOUT | Used to display the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} computer characteristics |
+| ABOUT | Used to display the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} computer characteristics |
 
 
 
@@ -8207,9 +8207,9 @@
 
 | Parameter  | Default  | Description  |
 | --- | --- | --- |
-| cft.ipv6.set_ai_numerichost | Yes  |  • ****Yes****: Use when the host name is numeric to prevent the API system getaddrinfo from performing unnecessary DNS requests for numeric hostnames.<br/> • ****No****: Use DNS requests for all hostnames, including numeric. |
-| cft.ipv6.set_ai_numericserv  | Yes  |  • ****Yes****: Use when the service name is numeric (port number) to prevent the API system getaddrinfo from performing an unnecessary service name translation.<br/> • ****No****: The getaddrinfo system API will perform a service name translation even if unnecessary. |
-| cft.ipv6.use_ipv4_legacy_resolver  | No  |  • ****Yes****: Use legacy IPv4 only with the host and service names resolution APIs, gethostbyname() and getservbyname(). This detects if a performance issue involves IPv6 specific elements such as configuration settings, system API implementation, etc.<br/> • ****No****: Use IPv6 functionality. |
+| cft.ipv6.set_ai_numerichost | Yes  |  • <span >****Yes****</span>: Use when the host name is numeric to prevent the API system getaddrinfo from performing unnecessary DNS requests for numeric hostnames.<br/> • <span >****No****</span>: Use DNS requests for all hostnames, including numeric. |
+| cft.ipv6.set_ai_numericserv  | Yes  |  • <span >****Yes****</span>: Use when the service name is numeric (port number) to prevent the API system getaddrinfo from performing an unnecessary service name translation.<br/> • <span >****No****</span>: The getaddrinfo system API will perform a service name translation even if unnecessary. |
+| cft.ipv6.use_ipv4_legacy_resolver  | No  |  • <span >****Yes****</span>: Use legacy IPv4 only with the host and service names resolution APIs, gethostbyname() and getservbyname(). This detects if a performance issue involves IPv6 specific elements such as configuration settings, system API implementation, etc.<br/> • <span >****No****</span>: Use IPv6 functionality. |
 
 
 
@@ -8218,8 +8218,8 @@
 
 | Parameter  | Description  |
 | --- | --- |
-| ipv6.disable_connect | **No** indicates that an address or a name used by Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} to connect to a host may be either an IPV4 or an IPV6 address. When using a name, this parameter can refer to a list of addresses, of any type. |
-| ipv6.disable_listen  | **No** indicates that an address or name used by Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} to listen for incoming connections may be either an IPV4 or an IPV6 address.<br/> When using a name, this parameter can refer to a list of addresses, of any type. |
+| ipv6.disable_connect | **No** indicates that an address or a name used by {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} to connect to a host may be either an IPV4 or an IPV6 address. When using a name, this parameter can refer to a list of addresses, of any type. |
+| ipv6.disable_listen  | **No** indicates that an address or name used by {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} to listen for incoming connections may be either an IPV4 or an IPV6 address.<br/> When using a name, this parameter can refer to a list of addresses, of any type. |
 
 
 
@@ -8275,7 +8275,7 @@
 ============================== table nb count(533) table converted to MD ========================================
 
 
-| PeSIT E CFT/CFT<br/> PeSIT D CFT profile  | In PeSIT E (CFT to CFT), or PeSIT D CFT profile (transfer between 2 Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}s), the default values taken by the FSPACE, FTYPE, FBLKSIZE, FLRECL and FRECFM parameters are the values sent by the partner (see the CFTSEND object, NSPACE, NTYPE, NBLKSIZE, NLRECL, NRECFM parameters). For open mode operation, the FNAME parameter can also inherit the value of the partner NFNAME parameter.  |
+| PeSIT E CFT/CFT<br/> PeSIT D CFT profile  | In PeSIT E (CFT to CFT), or PeSIT D CFT profile (transfer between 2 {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}s), the default values taken by the FSPACE, FTYPE, FBLKSIZE, FLRECL and FRECFM parameters are the values sent by the partner (see the CFTSEND object, NSPACE, NTYPE, NBLKSIZE, NLRECL, NRECFM parameters). For open mode operation, the FNAME parameter can also inherit the value of the partner NFNAME parameter.  |
 | --- | --- |
 | PeSIT E  | In PeSIT E, the default values taken by the FKEYLEN and FKEYPOS parameters are the values sent by the partner (see the NKEYLEN and NKEYPOS parameters of the CFTSEND object).  |
 | PeSIT SIT profile  | In PeSIT SIT profile, the "file size", "record format" and "record length" information items sent by the protocol are taken as the default values of the FSPACE, FRECFM, FLRECL parameters. |
@@ -8550,7 +8550,7 @@
 | Parameter  | Default value  | Description  |
 | --- | --- | --- |
 | Uconf:cft.listcat_compat  | No  | Defines the LISTCAT display:<br/> • Yes = Display using the former product format, which does not include the new columns. The format in LISTCAT is DTSA.<br/> • No= Display using the product version 3.0 and higher catalog format. The format in LISTCAT is DTSASPP. |
-| Uconf:cft.state_compat  | No  | Defines the transfer states:<br/> • Yes= The phase state is fully compatible with the states in versions prior to 3.0.<br/> • No = The state reflects the phase used in Transfer CFT 3.0 and higher. This uses phase instead of the former states, except during the Transfer phase, when the former state is the same as the phase step.<br/> ****Note****: Uconf:cft.state_compat also impacts the <a href="../ack_phase">acknowledgement</a> behavior if ackstate is set to ignore. |
+| Uconf:cft.state_compat  | No  | Defines the transfer states:<br/> • Yes= The phase state is fully compatible with the states in versions prior to 3.0.<br/> • No = The state reflects the phase used in Transfer CFT 3.0 and higher. This uses phase instead of the former states, except during the Transfer phase, when the former state is the same as the phase step.<br/> <span >****Note****</span>: Uconf:cft.state_compat also impacts the <a href="../ack_phase">acknowledgement</a> behavior if ackstate is set to ignore. |
 
 
 
@@ -8566,7 +8566,7 @@
 | PREMINDATE  | integer  | From this date on, the preprocessing exec file can be launched.  |
 | PREMINTIME  | integer  | From this time on, the preprocessing exec file can be launched.  |
 | ACKEXEC  | string  | The acknowledgement exec file that will be launched after receiving an ACK or NACK.  |
-| ACKSTATE  | REQUIRE/IGNORE  | Specify if Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} should wait for an ACK/NACK to enter the X phase.  |
+| ACKSTATE  | REQUIRE/IGNORE  | Specify if {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} should wait for an ACK/NACK to enter the X phase.  |
 | POSTSTATE  | DISP  | The transfer phase step as it enters the Y phase.  |
 | PREEXEC  | string  | The preprocessing exec file.  |
 | PRESTATE  | DISP/HOLD  | The transfer phase step as it enters the A phase.  |
@@ -8647,7 +8647,7 @@
 ============================== table nb count(556) table converted to MD ========================================
 
 
-| CFTDEST (1) vs<br /> CFTSEND/SEND/CFTRECV/RECV (2)  | PART  | DEST  | CHILDREN  |
+| <span >CFTDEST (1) vs<br /> CFTSEND/SEND/CFTRECV/RECV (2)</span>  | PART  | DEST  | CHILDREN  |
 | --- | --- | --- | --- |
 | FILE  | L1 + L2 + L3  | L1  | L2 + L3  |
 | LIST  | L1 + L2  | L1  | L2  |
@@ -8785,8 +8785,8 @@
 | Topic  | Description  |
 | --- | --- |
 | <a href="create_transfer_environment_start_here">Creating the transfer environment</a> | This topic lists the parameters involved when creating the file transfer environment. |
-| <a href="write_transfer_modes">Write transfer modes</a> | Describes the two write transfer modes, **Open** and **Closed**. |
-| <a href="implicit_transfer_modes">Implicit transfer modes</a> | Describes the two read transfer implicit send modes, **Open** and **Closed**. |
+| <a href="write_transfer_modes">Write transfer modes</a> | Describes the two write transfer modes, <span >**Open**</span> and <span >**Closed**</span>. |
+| <a href="implicit_transfer_modes">Implicit transfer modes</a> | Describes the two read transfer implicit send modes, <span >**Open**</span> and <span >**Closed**</span>. |
 | <a href="model_and_physical_file_concepts">Model and Physical file concepts</a> | This topic introduces the concepts of Model File Identifiers, IDF, and Physical Files. |
 | <a href="establishing_model_file_identifiers">Establishing model file identifiers</a> | Describes the mechanisms for establishing a correspondence between identifiers, based on the concept of a NIDF network identifier conveyed over the network. |
 
@@ -8805,8 +8805,8 @@
 
 | **ODETTE**  | Only the following receive command is valid:<br /> RECV IDF = *<br /> Although sequencing is at the sender’s initiative, the receiver end catalog will contain a record corresponding to the global reception request and a record for each reception, in the same way as for the other protocols. This command provides the possibility to change direction and hence globally receive all the files pending at the remote partner end.  |
 | --- | --- |
-| **PeSIT D CFT profile**  | To activate a reception from a requester Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} to a server monitor, only the following commands are valid:<br /> RECV IDF = * and RECV IDF = *, FILE = ALL |
-| **PeSIT D CFT profile, PeSIT E**  | Possible between two Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}s, using one of these two protocols.<br /> Between two CFTs, this is a special case of selective reception, the command being RECV IDF = *, FILE = ALL  |
+| **PeSIT D CFT profile**  | To activate a reception from a requester {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} to a server monitor, only the following commands are valid:<br /> RECV IDF = * and RECV IDF = *, FILE = ALL |
+| **PeSIT D CFT profile, PeSIT E**  | Possible between two {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}s, using one of these two protocols.<br /> Between two CFTs, this is a special case of selective reception, the command being RECV IDF = *, FILE = ALL  |
 
 
 
@@ -8927,7 +8927,7 @@
 
 | CG field  | CG values  | CFTUTIL <br/> parameter | Description  |
 | --- | --- | --- | --- |
-| Maximum simultaneous transfers  | Linux and Windows: 2-1000 (<u>128</u>)<br/> z/OS and IBM i: 2-990 (<u>128</u>) | MAXTRANS  | The maximum number of simultaneous connections that Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} accepts to establish for a network resource.  |
+| Maximum simultaneous transfers  | Linux and Windows: 2-1000 (<u>128</u>)<br/> z/OS and IBM i: 2-990 (<u>128</u>) | MAXTRANS  | The maximum number of simultaneous connections that {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} accepts to establish for a network resource.  |
 | Connections  | 1-2000 (128)  | MAXCNX  | The maximum number of simultaneous connections that Transfer CFT accepts to establish on a given network resource.  |
 | Disconnect timeout  | 0-3600 (60)  | DISCTR, DISCTC  | The wait timeout for either a response to the protocol connection request or to the partner in the connection, before disconnecting.  |
 
@@ -9073,7 +9073,7 @@
 | [IFORM = PKCS12 | DER | PEM | PKCS7] | Format of the certificate to be imported. It must be specified if the INAME parameter is set. |
 | [IKFORM = PKCS8 | DER | PEM ] | Format of the private key to be imported. This parameter must be specified if the IKNAME parameter is set. |
 | [IKNAME = string1..64] | File from which the private key, that is associated with a user certificate, to be imported or updated must be read.<br/> • This parameter is not significant if the certificate format is PKCS#12 as the certificate and private key are declared in the same source file.<br/> • If you call PKIUTIL with IKDATA, you cannot use IKNAME. |
-| [IKPASSW = string1..64] | Source file protection password. This is the source file protection password, and must be specified for encrypted PEM (PKCS#5), PKCS#8 encrypted private key formats, PKCS#7, or for PKCS#12 certificate formats.<br/> There are two ways to specify the password:<br/> • By value: the value assigned to the parameter is used directly as a password<br/> • By reference to a file: the value assigned to the parameter is the name of a file, the first record of which contains the password; in this case, the file name must be preceded by a # or @ sign depending on the OS. On Windows, for example, IKPASSW=#myfile where the password is specified in the <code>myfile </code>file; the first file record must contain the password in plain format. |
+| [IKPASSW = string1..64] | Source file protection password. This is the source file protection password, and must be specified for encrypted PEM (PKCS#5), PKCS#8 encrypted private key formats, PKCS#7, or for PKCS#12 certificate formats.<br/> There are two ways to specify the password:<br/> • By value: the value assigned to the parameter is used directly as a password<br/> • By reference to a file: the value assigned to the parameter is the name of a file, the first record of which contains the password; in this case, the file name must be preceded by a # or @ sign depending on the OS. On Windows, for example, IKPASSW=#myfile where the password is specified in the <span ><code>myfile </code></span>file; the first file record must contain the password in plain format. |
 | [INAME = string1..128] | Source file containing the certificate to be imported or updated.<br/> • This parameter is not allowed in DELETE mode.<br/> • If you call PKIUTIL with IDATA, you cannot use INAME. |
 | [ITYPE = ALL | USER | ROOT | INTER] | Type of certificate to be imported.<br/> This parameter is mandatory for the modes DELETE (deleting a certificate from the database) and REPLACE (updating a certificate).<br/> This field must be specified for an X.509 certificate, Version 1 or 2. The type of an X.509 version 3 certificate is determined automatically. For version 3, the ITYPE parameter is matched against the type detected:<br/> • ALL: certificate type not checked<br/> • USER: user certificate<br/> • ROOT: root authority certificate<br/> • INTER: intermediate authority certificate |
 | [MODE = REPLACE | CREATE | DELETE] | Action on the certificate. The REPLACE action imports or updates an existing certificate in the database.<br/> If importing a certificate chain, user certificate and all intermediate authority certificates, all certificates are recorded in the local database. The user certificate is recorded with the identifier generated from the ID parameter. Intermediate authority certificates are recorded with internal identifiers in the local internal datafile and cannot be viewed. |
@@ -9224,8 +9224,8 @@
 | tf.proofslocation  | &lt;HOME&gt;/Axway/Transfer_CFT/runtime/data/tf  | References the absolute path to the directory that the product uses to generate proofs  |
 | tf.proofsenabled  | yes  | Indicates whether proofs are enabled or not. This field takes the value yes or no (yes by default). If the value is set to no, the generation of proofs is deactivated  |
 | tf.messageslocation  | &lt;HOME&gt;/Axway/Transfer_CFT/home/distrib/tf/english  | Transfer CFT runtime directory  |
-| tf.entitieslocation  | $HOME/Axway/Transfer_CFT/runtime/conf/tf/entities.xml  | Indicates the TrustedFile configuration path.<br/> If the ****tf.entitieslocationtype**** is:<br/> • Local: Points locally to the entities.xml file by default<br/> • Remote: Configures the PassPort PS server host and listening port. Enter the same values that are used in the unified configuration for the following PassPort values:<br /> &lt;xppServer host="****pki.passport.hostname****"&gt;, &lt;xp3Protocol port="****pki.passport.port****"&gt;<br /> ****Example****: <code>&lt;xppServer host="172.17.171.202"&gt;, &lt;xp3Protocol port="7000"&gt;</code><br/> See <a href="../../admin_intro/uconf/uconf_pki">Unified Configuration: PKI PassPort PS</a>. |
-| tf.entitieslocationtype  | local  | Defines the type of TrustedFile configuration. The configuration path is defined in ****tf.entitieslocation****.<br/> • Local: Indicates that Trusted File is configured in standalone mode (locally)<br/> • Remote: Indicates that Trusted File is configured with PassPort PS using the PassPort PS host and listening port |
+| tf.entitieslocation  | $HOME/Axway/Transfer_CFT/runtime/conf/tf/entities.xml  | Indicates the TrustedFile configuration path.<br/> If the <span >****tf.entitieslocationtype****</span> is:<br/> • Local: Points locally to the entities.xml file by default<br/> • Remote: Configures the PassPort PS server host and listening port. Enter the same values that are used in the unified configuration for the following PassPort values:<br /> &lt;xppServer host="<span >****pki.passport.hostname****</span>"&gt;, &lt;xp3Protocol port="<span >****pki.passport.port****</span>"&gt;<br /> <span >****Example****</span>: <span ><code>&lt;xppServer host="172.17.171.202"&gt;, &lt;xp3Protocol port="7000"&gt;</code></span><br/> See <a href="../../admin_intro/uconf/uconf_pki">Unified Configuration: PKI PassPort PS</a>. |
+| tf.entitieslocationtype  | local  | Defines the type of TrustedFile configuration. The configuration path is defined in <span >****tf.entitieslocation****</span>.<br/> • Local: Indicates that Trusted File is configured in standalone mode (locally)<br/> • Remote: Indicates that Trusted File is configured with PassPort PS using the PassPort PS host and listening port |
 | tf.defaultlocalcharset  | ISO-8859-1  | Default character set for the platform  |
 | tf.transcodingtablelocation  | &lt;HOME&gt;/Axway/Transfer_CFT/runtime/conf/tf/transcoding.tbl  | Absolute path to the character set conversion reference table  |
 | tf.overwritemode  | enable  | Defines how Axway TrustedFile behaves when it must open an existing plain file, acknowledgement or envelope in write mode. If this element is set to the value yes or enable, Axway TrustedFile overwrites the existing output files. Otherwise, it does not open the files and interrupts the current operation with an error message. Its default value is enable  |
@@ -9313,9 +9313,9 @@
 
 | Key/certificate standard  | Exported file name  |
 | --- | --- |
-| PGP Public Keyring | **useridpacket**_pub.asc |
-| PGP Secret Keyring and Public Keyring | **useridpacket**_sec.asc and **useridpacket**_pub.asc |
-| X.509 Certificate | **certificate alias.**der |
+| PGP Public Keyring | <span >**useridpacket**</span>_pub.asc |
+| PGP Secret Keyring and Public Keyring | <span >**useridpacket**</span>_sec.asc and <span >**useridpacket**</span>_pub.asc |
+| X.509 Certificate | <span >**certificate alias.**</span><span>der</span> |
 
 
 
@@ -9370,7 +9370,7 @@
 | secure_relay.ra.N.dmz | String | DMZ0 | Logical name of the DMZ where the Router Agent is running, with a maximum of 32 characters.  |
 | secure_relay.ra.N.host | String | None | Router Agent IP address or FQDN. |
 | secure_relay.ra.N.admin_port | Int | 6810 | Router Agent administration port. |
-| secure_relay.ra.N.comm_port | Int | 6811 | Router Agent communication port.<br/> This parameter is specific to each Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} using the Router Agent. If more than one Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} uses the same Router Agent, each Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} must have a unique value. |
+| secure_relay.ra.N.comm_port | Int | 6811 | Router Agent communication port.<br/> This parameter is specific to each {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} using the Router Agent. If more than one {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} uses the same Router Agent, each {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} must have a unique value. |
 | secure_relay.ra.N. nb_data_connections | Int | 5 | Number of data connections between the Master Agent and the Router Agent.  |
 | secure_relay.ra.N. data_channel_ciphering | Bool | No | Activates data connections ciphering. |
 | secure_relay.ra.N. outcall_network_interface | String | None | Address to bind for outgoing calls. |
@@ -9382,7 +9382,7 @@
 
 | Parameter  | Description  |
 | --- | --- |
-| crypto.key_fname  | The path to the encryption key, which is required at Transfer CFT{{&lt; TransferCFT/componentlongname &gt;}} runtime.<br/> If this parameter is not set (empty), at runtime Transfer CFT{{&lt; TransferCFT/hflongproductname &gt;}} uses a hard-coded key and operates as in Transfer CFT{{&lt; TransferCFT/hflongproductname &gt;}} 3.2.4. |
+| crypto.key_fname  | The path to the encryption key, which is required at {{&lt; TransferCFT/axwayvariablesComponentLongName &gt;}} runtime.<br/> If this parameter is not set (empty), at runtime {{&lt; TransferCFT/headerfootervariableshflongproductname &gt;}} uses a hard-coded key and operates as in {{&lt; TransferCFT/headerfootervariableshflongproductname &gt;}} 3.2.4. |
 | crypto.salt_fname  | The path to the salt file, which is required to renew the key.  |
 
 
@@ -9402,9 +9402,9 @@
 
 | Authentication method  | copilot.restapi.authentication_method  | Details  |
 | --- | --- | --- |
-| Operating System  | system  | The user/password is checked against the operating system.<br/> <blockquote> **Note**<br/> We strongly recommend that you set copilot.misc.createprocessasuser=yes when using the system option.<br/> </blockquote> **Unix**<br/> You must use <code>cftsu </code>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to <a href="" >Using system users - UNIX</a> for details.<br/> • Create a group "group1": groupadd group1<br/> • Add user "user1" to group "group1": usermod -a -G group1 user1<br/> **Windows**<br/> You require a superuser (administrative user account) to create a group and assign a user to a group.<br/> • Create a group "group1": net localgroup group1 /add<br/> • Add user "user1" to group "group1": net localgroup group1 user1 /add<br/> <blockquote> **Note**<br/> For a user belonging to a domain, use: domain\user1 instead of user1<br/> </blockquote>  |
-| Access Management  | am  | This methods uses an indirection towards the Access Management system. The user/password is checked by the configured access management system: Flow Manager{{&lt; TransferCFT/flowmanager &gt;}}, PassPort AM, or internal AM. |
-| xfbadm database<br/> (UNIX and HP NonStop exclusively) | xfbadm  | The user/password is checked using the xfbadm base (see the <a href="../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).<br/> A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <code>profile </code>from the runtime directory.<br/> • Create a group "group1" with gid=200: xfbadmgrp add -G group1 -p group1_pw -g 200<br/> • From the user prompt, to add a user "user1" to group "group1"enter: xfbadmusr add -l user1 -p user1_pw -u AUTO -g 200 |
+| Operating System  | system  | The user/password is checked against the operating system.<br/> <blockquote> **Note**<br/> We strongly recommend that you set copilot.misc.createprocessasuser=yes when using the system option.<br/> </blockquote> **Unix**<br/> You must use <span ><code>cftsu </code></span>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to <a href="" >Using system users - UNIX</a> for details.<br/> • Create a group "group1": <span >groupadd group1</span><br/> • Add user "user1" to group "group1": <span >usermod -a -G group1 user1</span><br/> **Windows**<br/> You require a superuser (administrative user account) to create a group and assign a user to a group.<br/> • Create a group "group1": <span >net localgroup group1 /add</span><br/> • Add user "user1" to group "group1": <span >net localgroup group1 user1 /add</span><br/> <blockquote> **Note**<br/> For a user belonging to a domain, use: domain\user1 instead of user1<br/> </blockquote>  |
+| Access Management  | am  | This methods uses an indirection towards the Access Management system. The user/password is checked by the configured access management system: {{&lt; TransferCFT/suitevariablesFlowManager &gt;}}, PassPort AM, or internal AM. |
+| xfbadm database<br/> (UNIX and HP NonStop exclusively) | xfbadm  | The user/password is checked using the xfbadm base (see the <a href="../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).<br/> A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <span ><code>profile </code></span>from the runtime directory.<br/> • Create a group "group1" with gid=200:<span > xfbadmgrp add -G group1 -p group1_pw -g 200</span><br/> • From the user prompt, to add a user "user1" to group "group1"enter: <span >xfbadmusr add -l user1 -p user1_pw -u AUTO -g 200</span> |
 
 
 
@@ -9551,7 +9551,7 @@
 
 | Parameter  | Definition  |
 | --- | --- |
-| am.passport.userctrl.check_permissions_on_transfer_execution  | <span id="Check"></span>Check the permissions for the execute action on the transfer resource when the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} user control is enabled (<a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/userctrl">USERCTRL</a>=YES). To disable the permission check, set the following parameter to No. The default is Yes. |
+| am.passport.userctrl.check_permissions_on_transfer_execution  | <span id="Check"></span>Check the permissions for the execute action on the transfer resource when the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} user control is enabled (<a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/userctrl">USERCTRL</a>=YES). To disable the permission check, set the following parameter to No. The default is Yes. |
 | am.passport.domain  | PassPort AM domain.  |
 | am.passport.max_connections  | Maximum number of connections with PassPort.  |
 | am.passport.pipe_priority  | Pipelining priority mode.  |
@@ -9592,7 +9592,7 @@
 
 | Sample  | Authentication  | Permissions checking  |
 | --- | --- | --- |
-| examsmp1.c  | System authentication (Windows only)  | Flat file based on flat <a href="" >RBAC Role Based Access Control</a> model  |
+| examsmp1.c  | System authentication (<span >Windows only</span>)  | Flat file based on flat <a href="" >RBAC<span  aria-hidden="true"><span > </span>Role Based Access Control</span></a> model  |
 
 
 
@@ -9653,7 +9653,7 @@
 | Unix | NO  |
 | Windows | YES  |
 | IBM i  | YES  |
-| z/OS  | This functionality was modified in Transfer CFT 3.2.4 SP1:<br/> • Post-SP1: The default value for <code>createprocessasuser </code>is YES.<br/> • Pre-SP1: There is no definable value. The equivalent of <code>createprocessasuser </code>depends on the use of APF. If JOBLIB is not defined as an APF, it is the equivalent of NO. If defined, this is the equivalent of YES. |
+| z/OS  | This functionality was modified in Transfer CFT 3.2.4 SP1:<br/> • Post-SP1: The default value for <span ><code>createprocessasuser </code></span>is YES.<br/> • Pre-SP1: There is no definable value. The equivalent of <code>createprocessasuser </code>depends on the use of APF. If JOBLIB is not defined as an APF, it is the equivalent of NO. If defined, this is the equivalent of YES. |
 
 
 
@@ -9662,7 +9662,7 @@
 
 | USERCTRL | Description |
 | --- | --- |
-| NO  | The Transfer CFT user, that is, the account that started Transfer CFT{{&lt; TransferCFT/componentlongname &gt;}}, performs all file actions. Default value.  |
+| NO  | The Transfer CFT user, that is, the account that started {{&lt; TransferCFT/axwayvariablesComponentLongName &gt;}}, performs all file actions. Default value.  |
 | YES  | The USERID performs all file actions.  |
 
 
@@ -9683,7 +9683,7 @@
 ============================== table nb count(630) table converted to MD ========================================
 
 
-| Feature  |  Manage using Flow Manager{{&lt; TransferCFT/flowmanager &gt;}} or Central Governance  | Supported but not configurable using Central Governance or Flow Manager{{&lt; TransferCFT/flowmanager &gt;}}  |
+| Feature  |  Manage using {{&lt; TransferCFT/suitevariablesFlowManager &gt;}} or {{&lt; TransferCFT/PrimaryCGorUM &gt;}}  | Supported but not configurable using Central Governance or {{&lt; TransferCFT/suitevariablesFlowManager &gt;}}  |
 | --- | --- | --- |
 | Folder monitoring  | yes  | yes  |
 | Multi-node architecture  | no  | yes  |
@@ -9716,7 +9716,7 @@
 | --- | --- |
 | am.passport.cg.organization  | Org<br/> <blockquote> **Note**<br/> You must restart both Transfer CFT and Copilot following a change to this parameter.<br/> </blockquote>  |
 | am.passport.domain  | CG |
-| am.passport.hostname  | &lt;Central Governance host name &gt;  |
+| am.passport.hostname  | &lt;{{&lt; TransferCFT/PrimaryCGorUM &gt;}} host name &gt;  |
 | am.passport.instance_id  | $(cft.instance_group).$(cft.instance_id)  |
 | am.passport.port  | 6666  |
 | am.passport.use_ssl  | Yes  |
@@ -9751,7 +9751,7 @@
 
 | <span id="Paramete"></span>Parameter  | Type  | Default  | Description  |
 | --- | --- | --- | --- |
-| same as in UCONF<br/> &lt;folder_monitoring.enable&gt; | Boolean  | No  |  • No: No folder monitoring occurs.<br/> • Yes: Enable Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} folder monitoring. |
+| same as in UCONF<br/> &lt;folder_monitoring.enable&gt; | Boolean  | No  |  • No: No folder monitoring occurs.<br/> • Yes: Enable {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} folder monitoring. |
 | ID<br/> **Mandatory** | node  | None  | Add the logical folders to monitor (list of logical identifiers).<br/> You should provide a unique name to identify the set of configuration parameters corresponding to this directory. If you have more than one Folder to monitor, use a space between each logical value. |
 | STATE  | Boolean  | Active  | Enables a scan of the folder.<br/> <blockquote> **Note**<br/> NO = NOACTIVE.<br/> </blockquote>  |
 | SCANDIR<br/> *Mandatory*  | string  | None  | Absolute path name of the top level directory to scan.<br/> This directory must exist before restarting Transfer CFT.<br/> *See <a href="#*char_note">NOTE</a>. |
@@ -9775,7 +9775,7 @@
 | RENAMESEPARATOR  | string  | "." | This parameter only applies to the MOVE method.<br/> You can use no more than two characters from among the following:<br/> .[]()_-<br/> The first character defines the separator before the timestamp. The second one, when present, defines the separator after the timestamp.<br/> For example, using timestamp_separators "[]": - myfile is renamed myfile.[20131025] - myfile.txt is renamed myfile.[20131025].txt |
 | N/A in this version  | string  |   | Metadata used to control user changes.  |
 | USEFSEVENTS<br/> <br/> <a href="../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftfolder#Enable">More information</a> | Boolean  | No  | Set to YES to enable the file system events monitoring service to detect newly available files.  |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/userid">USERID</a>  | String  |   | *Available on UNIX and* **Windows** **<br/> Identifier for a user who can scan a folder. See the section, <a href="#Folder2">Folder monitoring using USERCTRL</a>. |
+| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/userid">USERID</a>  | String  |   | *Available on UNIX and* {{&lt; TransferCFT/PrimaryforWindows &gt;}} **<br/> Identifier for a user who can scan a folder. See the section, <a href="#Folder2">Folder monitoring using USERCTRL</a>. |
 
 
 
@@ -9843,8 +9843,8 @@
 
 | Parameter  | UCONF  | Type  | Default<br/> UCONF | Default <br/> CFTFOLDER | Description  |
 | --- | --- | --- | --- | --- | --- |
-| same as in UCONF | folder_monitoring.enable  | Boolean  | No  | No  |  • No: No folder monitoring occurs.<br/> • Yes: Enable Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} folder monitoring. |
-| ID  | folder_monitoring.folders  | node  | None  | None  | Add the logical folders to monitor (list of logical identifiers).<br/> You should provide a unique name to identify the set of configuration parameters corresponding to this directory. If you have more than one Folder to monitor, use a space between each logical value.<br/> See the **Comment***** below this table for additional information. |
+| same as in UCONF | folder_monitoring.enable  | Boolean  | No  | No  |  • No: No folder monitoring occurs.<br/> • Yes: Enable {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} folder monitoring. |
+| ID<span > </span>  | folder_monitoring.folders  | node  | None  | None  | Add the logical folders to monitor (list of logical identifiers).<br/> You should provide a unique name to identify the set of configuration parameters corresponding to this directory. If you have more than one Folder to monitor, use a space between each logical value.<br/> See the **Comment***** below this table for additional information. |
 | STATE  | folder_monitoring.folders.<br/> &lt;logical_name&gt;.enable | Boolean  | Yes  | Active  | Enables a scan of the folder.<br/> Note: NO = NOACTIVE. |
 | SCANDIR  | folder_monitoring.folders.<br/> &lt;logical_name&gt;.scan_dir | string  | None  | None  | Absolute path name of the top level directory to scan.<br/> This directory must exist before restarting Transfer CFT.<br/> *See NOTE. |
 | WORKDIR  | folder_monitoring.folders.<br/> &lt;logical_name&gt;.work_dir | string  | None  | None  | Absolute path name of the top level directory available for file state information. Do not use the same name as you are using for the corresponding SCANDIR.<br/> • If you are using the MOVE method, files that are ready to be submitted are available in the work_dir.<br/> • If you are using the FILE method, the .met files are stored in the work_dir.<br/> <blockquote> **Note**<br/> Caution Never delete any .met files.<br/> </blockquote> *See NOTE. |
@@ -9874,7 +9874,7 @@
 
 | UCONF parameter  | Type  | Default | Description  |
 | --- | --- | --- | --- |
-| folder_monitoring.enable  | Boolean  | No  |  • No: No folder monitoring occurs.<br/> • Yes: Enable Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} folder monitoring. |
+| folder_monitoring.enable  | Boolean  | No  |  • No: No folder monitoring occurs.<br/> • Yes: Enable {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} folder monitoring. |
 | folder_monitoring.folders  | node  | None  | Add the logical folders to monitor (list of logical identifiers).<br/> You should provide a unique name to identify the set of configuration parameters corresponding to this directory. If you have more than one Folder to monitor, use a space between each logical value.<br/> See the **Comment***** below this table for additional information. |
 | folder_monitoring.folders.<br/> &lt;logical_name&gt;.enable | Boolean  | Yes  | Enables a scan of the folder, where NO deactivates folder monitoring. |
 | folder_monitoring.folders.<br/> &lt;logical_name&gt;.scan_dir | string  | None  | Absolute path name of the top level directory to scan.<br/> This directory must exist before restarting CFT.<br/> *See NOTE. |
@@ -9904,7 +9904,7 @@
 
 | Parameter  | Type  | Description  |
 | --- | --- | --- |
-| ssl.certificates.ca_cert_bundle  | string  | Path to the CA certificate bundle. This path can point to either a file containing the CA certificates (for example, <code>/etc/ssl/certs/ca-certificates.crt</code>) or to a directory containing the CA certificates (for example, <code>/etc/ssl/certs/</code>), which are stored individually with their filenames in a hash format.<br/> You can refer to the <a href="https://curl.haxx.se/docs/manpage.html#--cacert">cURL man page</a> for information on the <code>cacert </code>and <code>capath </code>options.<br/> <blockquote> **Note**<br/> You can set this parameter on UNIX systems, however it is not applicable on Windows.<br/> </blockquote> If the certificate bundle is not available on your system, you can download it from: <a href="https://curl.haxx.se/docs/caextract.html">curl.haxx.se/docs/caextract.html</a> (see <a href="https://curl.haxx.se/ca/cacert.pem">cacert.pem</a>). |
+| ssl.certificates.ca_cert_bundle  | string  | Path to the CA certificate bundle. This path can point to either a file containing the CA certificates (for example, <span ><code>/etc/ssl/certs/ca-certificates.crt</code></span>) or to a directory containing the CA certificates (for example, <span ><code>/etc/ssl/certs/</code></span>), which are stored individually with their filenames in a hash format.<br/> You can refer to the <a href="https://curl.haxx.se/docs/manpage.html#--cacert">cURL man page</a> for information on the <span ><code>cacert </code></span>and <span ><code>capath </code></span>options.<br/> <blockquote> **Note**<br/> You can set this parameter on UNIX systems, however it is not applicable on Windows.<br/> </blockquote> If the certificate bundle is not available on your system, you can download it from: <a href="https://curl.haxx.se/docs/caextract.html">curl.haxx.se/docs/caextract.html</a> (see <a href="https://curl.haxx.se/ca/cacert.pem">cacert.pem</a>). |
 
 
 
@@ -9966,7 +9966,7 @@
 | Parameter<span id="storageaccount"></span>  | Type  | Description  |
 | --- | --- | --- |
 | fname  | string (key)  | The fname field corresponds to the S3 services key.  |
-| workingdir  | string  | There are two supported formats. For either, the workingdir field must start with <code>s3://</code> and be followed by the designated items in the order listed:<br/> Format <code>s3://bucket.region</code> :<br/> • the bucket name<br/> • a period (.)<br/> • the region<br/> Format <code>s3://http[s]://endpoint[:port]/bucket</code> :<br/> • http:// or https:// for secure communication<br/> • the endpoint, which can be an IP address or the server's hostname<br/> • a colon (:) and port (if not using the default of 80 for HTTP, 443 for HTTPS)<br/> • a slash (/)<br/> • the bucket name |
+| workingdir  | string  | There are two supported formats. For either, the workingdir field must start with <span ><code>s3://</code></span> and be followed by the designated items in the order listed:<br/> Format <code>s3://bucket.region</code> :<br/> • the bucket name<br/> • a period (.)<br/> • the region<br/> Format <code>s3://http[s]://endpoint[:port]/bucket</code> :<br/> • http:// or https:// for secure communication<br/> • the endpoint, which can be an IP address or the server's hostname<br/> • a colon (:) and port (if not using the default of 80 for HTTP, 443 for HTTPS)<br/> • a slash (/)<br/> • the bucket name |
 | storageaccount  | string  | Points to the access key identifier(s) and the access key secret(s) stored in UCONF. See also <a href="../../c_intro_userinterfaces/command_summary/parameter_intro/storageaccount">storageaccount</a>.  |
 
 
@@ -9976,7 +9976,7 @@
 
 | Parameter  | Type  | Description  |
 | --- | --- | --- |
-| ssl.certificates.ca_cert_bundle  | string  | Path to the CA certificate bundle. This path can point to either a file containing the CA certificates (for example, <code>/etc/ssl/certs/ca-certificates.crt</code>) or to a directory containing the CA certificates (for example, <code>/etc/ssl/certs/</code>), which are stored individually with their filenames in a hash format.<br/> Please refer to the <a href="https://curl.haxx.se/docs/manpage.html#--cacert">cURL man page</a> for information on the <code>cacert </code>and <code>capath </code>options.<br/> If the certificate bundle is not available on your system, you can download it from: <a href="https://curl.haxx.se/docs/caextract.html">curl.haxx.se/docs/caextract.html</a> (download from <a href="https://curl.haxx.se/ca/cacert.pem">cacert.pem</a>). |
+| ssl.certificates.ca_cert_bundle  | string  | Path to the CA certificate bundle. This path can point to either a file containing the CA certificates (for example, <span ><code>/etc/ssl/certs/ca-certificates.crt</code></span>) or to a directory containing the CA certificates (for example, <span ><code>/etc/ssl/certs/</code></span>), which are stored individually with their filenames in a hash format.<br/> Please refer to the <a href="https://curl.haxx.se/docs/manpage.html#--cacert">cURL man page</a> for information on the <span ><code>cacert </code></span>and <span ><code>capath </code></span>options.<br/> If the certificate bundle is not available on your system, you can download it from: <a href="https://curl.haxx.se/docs/caextract.html">curl.haxx.se/docs/caextract.html</a> (download from <a href="https://curl.haxx.se/ca/cacert.pem">cacert.pem</a>). |
 
 
 
@@ -9986,7 +9986,7 @@
 | Parameter<span id="storageaccount"></span>  | Type  | Description  |
 | --- | --- | --- |
 | fname  | string  | Corresponds to the Google Cloud Storage object name.  |
-| workingdir  | string  | The workingdir field must start with gs:// and be followed by the bucket name (as used with gsutil):<br/> <code>gs://my-bucket</code> |
+| workingdir  | string  | The workingdir field must start with gs:// and be followed by the bucket name (as used with gsutil):<br/> <span ><code>gs://my-bucket</code></span> |
 | wfname  | string  | In the CFTRECV command, this specifies the temporary object that is used to upload chunks of the file. The file is then concatenated to the value defined in the FNAME parameter. |
 
 
@@ -10040,9 +10040,9 @@
 
 | Authentication method  | copilot.restapi.authentication_method  | Details  |
 | --- | --- | --- |
-| Operating System  | system  | The user/password is checked against the operating system.<br/> <blockquote> **Note**<br/> We strongly recommend that you set copilot.misc.createprocessasuser=yes when using the system option.<br/> </blockquote> **Unix**<br/> You must use <code>cftsu </code>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to <a href="" >Using system users - UNIX</a> for details.<br/> • Create a group "group1": groupadd group1<br/> • Add user "user1" to group "group1": usermod -a -G group1 user1<br/> **Windows**<br/> You require a superuser (administrative user account) to create a group and assign a user to a group.<br/> • Create a group "group1": net localgroup group1 /add<br/> • Add user "user1" to group "group1": net localgroup group1 user1 /add<br/> <blockquote> **Note**<br/> For a user belonging to a domain, use: domain\user1 instead of user1<br/> </blockquote>  |
-| Access Management  | am  | This methods uses an indirection towards the Access Management system. The user/password is checked by the configured access management system: Flow Manager{{&lt; TransferCFT/flowmanager &gt;}}, PassPort AM, or internal AM. |
-| xfbadm database<br/> (UNIX and HP NonStop exclusively) | xfbadm  | The user/password is checked using the xfbadm base (see the <a href="../../../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).<br/> A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <code>profile </code>from the runtime directory.<br/> • Create a group "group1" with gid=200: xfbadmgrp add -G group1 -p group1_pw -g 200<br/> • From the user prompt, to add a user "user1" to group "group1"enter: xfbadmusr add -l user1 -p user1_pw -u AUTO -g 200 |
+| Operating System  | system  | The user/password is checked against the operating system.<br/> <blockquote> **Note**<br/> We strongly recommend that you set copilot.misc.createprocessasuser=yes when using the system option.<br/> </blockquote> **Unix**<br/> You must use <span ><code>cftsu </code></span>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to <a href="" >Using system users - UNIX</a> for details.<br/> • Create a group "group1": <span >groupadd group1</span><br/> • Add user "user1" to group "group1": <span >usermod -a -G group1 user1</span><br/> **Windows**<br/> You require a superuser (administrative user account) to create a group and assign a user to a group.<br/> • Create a group "group1": <span >net localgroup group1 /add</span><br/> • Add user "user1" to group "group1": <span >net localgroup group1 user1 /add</span><br/> <blockquote> **Note**<br/> For a user belonging to a domain, use: domain\user1 instead of user1<br/> </blockquote>  |
+| Access Management  | am  | This methods uses an indirection towards the Access Management system. The user/password is checked by the configured access management system: {{&lt; TransferCFT/suitevariablesFlowManager &gt;}}, PassPort AM, or internal AM. |
+| xfbadm database<br/> (UNIX and HP NonStop exclusively) | xfbadm  | The user/password is checked using the xfbadm base (see the <a href="../../../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).<br/> A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <span ><code>profile </code></span>from the runtime directory.<br/> • Create a group "group1" with gid=200:<span > xfbadmgrp add -G group1 -p group1_pw -g 200</span><br/> • From the user prompt, to add a user "user1" to group "group1"enter: <span >xfbadmusr add -l user1 -p user1_pw -u AUTO -g 200</span> |
 
 
 
@@ -10084,8 +10084,8 @@
 | ****Syntax**** | rc = cftxx (verb,&amp;ptr,param) |
 | --- | --- |
 | Element | Definition |
-| cftxx | ****cftai****: simple Transfer CFT catalog querying services<br/> ****cftaix****: extended Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog querying services<br/> ****cftau****: transfer services with syntax analysis<br/> ****cftac****: transfer services without syntax analysis |
-| **verb** | Service requested |
+| cftxx | <span >****cftai****</span>: simple Transfer CFT catalog querying services<br/> <span >****cftaix****</span>: extended {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} catalog querying services<br/> <span >****cftau****</span>: transfer services with syntax analysis<br/> <span >****cftac****</span>: transfer services without syntax analysis |
+| **<span >verb</span>** | Service requested |
 | ptr | Address of the internal control block |
 | param | Parameters specific to the requested service |
 | rc | Return code |
@@ -10144,8 +10144,8 @@
 
 | Service | CftApi2Catalog *ipcai2_catalog_open(CftApi2Session * session, char *catalog_fname)  |
 | --- | --- |
-| Definition | Opens the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog file. |
-| Parameter | session: Pointer to the CftApi2Session structure returned by the initialization ipcai2_initialize()<br /> catalog_fname: Name of the catalog file. If the file name is "" the API opens the catalog file by default, for example _CFTCATA for Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}UNIX. |
+| Definition | Opens the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} catalog file. |
+| Parameter | session: Pointer to the CftApi2Session structure returned by the initialization ipcai2_initialize()<br /> catalog_fname: Name of the catalog file. If the file name is "" the API opens the catalog file by default, for example _CFTCATA for {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}UNIX. |
 | Return value | This function returns a pointer to the CftApi2Catalog structure. If the returned value is NULL, the catalog cannot be opened and the error code is returned by calling ipcai2_get_errno(). |
 | Remarks | None |
 
@@ -10267,7 +10267,7 @@
 | Definition | Modifies the transfer state for the selected catalog. |
 | Parameter | selection: Pointer to a selection carried out by ipcai2_catalog_selection_next() |
 | Return value | None. |
-| Remarks | The Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} API must have already opened the communication medium. |
+| Remarks | The {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} API must have already opened the communication medium. |
 
 
 
@@ -10288,7 +10288,7 @@
 
 | Service | long ipcai2_monitor_info_get(CftApi2Catalog *catalog, char *param, char *buffer, int bufflen) |
 | --- | --- |
-| Definition | Recovers information about the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}. |
+| Definition | Recovers information about the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}. |
 | Parameter | catalog: Pointer to the catalog returned by ipcai2_catalog_open()<br /> param: Parameter to recover. The parameter is available in cftapi2.h under “Monitor information parameters” topic : CFTAPI2_MON_INFO__*<br /> buffer: Buffer that was provided the parameter value .<br /> bufflen: Length of the buffer sent to the API. |
 | Return value | If the return code is positive, it contains the last API error code for the session.<br/> If the return code is negative, the buffer is too short. In this case, the code is equal to –n where n is the required length. |
 | Remarks | None. |
@@ -10305,7 +10305,7 @@
 | SELECT240 | Specify the selection criteria<br/> This function:<br/> • Is available in CFT v2.4 and higher<br/> • Retrieves identifiers that are longer than 8 to 32 characters<br/> • Checks the syntax used<br/> • Stores the selection criteria in the internal control block |
 | NEXT | Read next entry in the catalog<br/> This function:<br/> • Reads the next entry<br/> • Sets the "catalog entry data" area<br/> The first call to this function must be preceded by a SELECT. |
 | NEXT240 | Read next entry in the catalog<br/> This function:<br/> • Is available in CFT v2.4 and higher<br/> • Retrieves identifiers that are longer than 8 to 32 characters<br/> • Reads the next entry<br/> • Sets the "catalog entry data" area |
-| MODIFY | Modify the state of the current catalog entry or delete this entry from the catalog<br/> This function:<br/> • Retrieves the last entry read from the internal control block<br/> • Checks the state of this entry<br/> • Sends the modification request to Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
+| MODIFY | Modify the state of the current catalog entry or delete this entry from the catalog<br/> This function:<br/> • Retrieves the last entry read from the internal control block<br/> • Checks the state of this entry<br/> • Sends the modification request to {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} |
 | SORT | Sort the selected catalog entries<br/> This function:<br/> • Close the catalog file<br/> • De-allocates the file<br/> • Frees the internal control block<br/> • Resets the internal control block parameter |
 | DO | Execute the current selection and the requested sort in memory |
 | CLOSE | Close catalog file |
@@ -10321,7 +10321,7 @@
 | SELECT | Define selection criteria |
 | NEXT | Read next entry |
 | MODIFY | Modify catalog entry state |
-| SORT | ****cftaix only****<br/> ****Sort the selected catalog entries**** |
+| SORT | ****cftaix only****<br/> ****<span >Sort the selected catalog entries</span>**** |
 | DO | ****cftaix only****<br/> Do the current selection and the requested sort in memory |
 | CLOSE | Close catalog |
 
@@ -10333,10 +10333,10 @@
 | &lt;verb&gt; | &lt;param&gt; | Explanation |
 | --- | --- | --- |
 | OPEN | cat | Path name or logical name of the catalog file. If the name is blank, Transfer CFT uses a default name. |
-| SELECT<br/> and SELECT240 | &amp;cftsel | Selection criteria according to the format described in the "**Selection data description**" in the ****cftapi.h**** file.<br/> • cftsel230T for SELECT service<br/> • cftsel240T for SELECT240 service<br/> All the fields must be defined by left-aligned character strings. If a field is equal to binary zeros, it is considered not selective.<br/> This structure can contain:<br/> • The size of the selection criteria field (slength) and the size of the field supporting the catalog entry (clength) in order to avoid recompiling the application program if these two fields are extended.<br/> • The transfer start and end date (BDATE and EDATE) to select transfers performed between these two dates.<br/> • A field can be composed of a mask with the special characters "?" and *". The "?" character replaces any character. The "*" character replaces a character string of any length.<br /> <br /> Examples:<br /> A*D replaces ABCD, ABCED or AID<br /> A??D replaces ABCD, AXYD or AQZD<br /> *CD replaces ABECD, YXZCDor TYUICD<br /> ?CD replaces ACD, XCD or ZCD<br /> ?B* replaces ABCDEF, XBZWEO or *KBWXCV<br /> ???? replaces ABCD, XYZW or HGFD<br/> You should initialize the following:<br/> • The param field to binary zero before defining it<br/> • The slength and clength by "itoa()"<br/> ****cftaix only****<br/> The selection is only taken into account at the time the DO service is called. |
-| NEXT<br/> and<br/> NEXT240 | &amp;cftcat | Next catalog entry according to the format described in the "**Selection data description**" in the ****cftapi.h**** file.<br/> • cftcatT for NEXT service<br/> • cftcat240T for NEXT240 service |
+| SELECT<br/> and SELECT240 | &amp;cftsel | Selection criteria according to the format described in the "<span >**Selection data description**</span>" in the <span >****cftapi.h****</span> file.<br/> • cftsel230T for SELECT service<br/> • cftsel240T for SELECT240 service<br/> All the fields must be defined by left-aligned character strings. If a field is equal to binary zeros, it is considered not selective.<br/> This structure can contain:<br/> • The size of the selection criteria field (slength) and the size of the field supporting the catalog entry (clength) in order to avoid recompiling the application program if these two fields are extended.<br/> • The transfer start and end date (BDATE and EDATE) to select transfers performed between these two dates.<br/> • A field can be composed of a mask with the special characters "?" and *". The "?" character replaces any character. The "*" character replaces a character string of any length.<br /> <br /> Examples:<br /> A*D replaces ABCD, ABCED or AID<br /> A??D replaces ABCD, AXYD or AQZD<br /> *CD replaces ABECD, YXZCDor TYUICD<br /> ?CD replaces ACD, XCD or ZCD<br /> ?B* replaces ABCDEF, XBZWEO or *KBWXCV<br /> ???? replaces ABCD, XYZW or HGFD<br/> You should initialize the following:<br/> • The param field to binary zero before defining it<br/> • The slength and clength by "itoa()"<br/> ****cftaix only****<br/> The selection is only taken into account at the time the DO service is called. |
+| NEXT<br/> and<br/> NEXT240 | &amp;cftcat | Next catalog entry according to the format described in the "<span >**Selection data description**</span>" in the <span >****cftapi.h****</span> file.<br/> • cftcatT for NEXT service<br/> • cftcat240T for NEXT240 service |
 | MODIFY | &amp;nstate | New state of a transfer to be placed in the catalog entry previously read:<br/> • ‘D’ at Disposal: only valid if the former state is H or K<br/> • ‘H’ Hold: only valid if the former state is D, C or K<br/> • ‘K’ Keep: only valid if the former state is D, C or H<br/> • ‘X’ eXecuted: only valid if the former state is T<br/> • ‘P’ Purge: deletes the catalog entry*. It is only valid if the current state is D, H, K, T or X |
-| SORT | param | ****cftaix only****<br/> Sort options as described in the "**Sort structure of the selected catalog entries**" in the ****cftapi.h**** file.<br/> The function is only taken into account at the time the DO service is called. |
+| SORT | param | ****cftaix only****<br/> Sort options as described in the "<span >**Sort structure of the selected catalog entries**</span>" in the <span >****cftapi.h****</span> file.<br/> The function is only taken into account at the time the DO service is called. |
 | DO | " " |   |
 | CLOSE | " " |   |
 
@@ -10400,7 +10400,7 @@
 | DELETE | Delete a catalog entry and any transfer in process associated with it |
 | END | Set a transfer status to executed<br/> The transfer is set to the "X" state. This indicates that end-of-transfer procedure has been correctly executed. |
 | SUBMIT | Submit the end-of-transfer procedure |
-| SHUT | Shut down Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
+| SHUT | Shut down {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} |
 | SWITCH | Switch monitoring files, LOG, STATS... |
 | CLOSEAPI | Free resources allocated at opening of communication medium: memory, network, file |
 | COM | Define communication medium |
@@ -10434,7 +10434,7 @@
 | --- | --- |
 | CAPI_NOERR | No error |
 | CAPI_FUNC_UNDEF | Command not valid |
-| CAPI_CMD_LENGTH | cftau only<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} command string invalid, does not exist, or greater than 1024 characters long  |
+| CAPI_CMD_LENGTH | cftau only<br/> {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} command string invalid, does not exist, or greater than 1024 characters long  |
 | CAPI_KEY_NAME | cftau only<br/> Command syntax incorrect: keyword name incorrect |
 | CAPI_KEY_VALUE | cftau only<br/> Command syntax incorrect: keyword value incorrect |
 | CAPI_MEM_GET | Memory allocation error |
@@ -10455,7 +10455,7 @@
 | SELECT240 | Specify the selection criteria<br/> This function:<br/> • Is available in CFT v2.4 and higher<br/> • Retrieves identifiers that are longer than 8 to 32 characters<br/> • Checks the syntax used<br/> • Stores the selection criteria in the internal control block |
 | NEXT | Read next entry in the catalog<br/> This function:<br/> • Reads the next entry<br/> • Sets the "catalog entry data" area<br/> The first call to this function must be preceded by a SELECT. |
 | NEXT240 | Read next entry in the catalog<br/> This function:<br/> • Is available in CFT v2.4 and higher<br/> • Retrieves identifiers that are longer than 8 to 32 characters<br/> • Reads the next entry<br/> • Sets the "catalog entry data" area |
-| MODIFY | Modify the state of the current catalog entry or delete this entry from the catalog<br/> This function:<br/> • Retrieves the last entry read from the internal control block<br/> • Checks the state of this entry<br/> • Sends the modification request to Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
+| MODIFY | Modify the state of the current catalog entry or delete this entry from the catalog<br/> This function:<br/> • Retrieves the last entry read from the internal control block<br/> • Checks the state of this entry<br/> • Sends the modification request to {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} |
 | SORT | Sort the selected catalog entries<br/> This function:<br/> • Close the catalog file<br/> • De-allocates the file<br/> • Frees the internal control block<br/> • Resets the internal control block parameter |
 | DO | Execute the current selection and the requested sort in memory |
 | CLOSE | Close catalog file |
@@ -10481,8 +10481,8 @@
 | &lt;verb&gt; | &lt;param&gt; | Explanation |
 | --- | --- | --- |
 | F-OPEN | D-CAT | Path name or logical name of the catalog file. If the name is blank, Transfer CFTI uses a default name. |
-| F-SELECT | Z-SEL | Selection criteria according to the format described in the "S**election data description"** in the ****cft.apicop**** file. If a field is blank or equal to binary zeros, it is considered not selective.<br/> This field can contain:<br/> • the size of the selection criteria field (SLENTGTH) and the size of the field supporting the catalog entry (CLENGTH) in order to avoid recompiling the application program if these two fields are extended.<br/> • the transfer start and end date (BDATE and EDATE) to select transfers performed between these two dates.<br/> • a mask with the special characters "?" and *". The "?" character replaces any character. The "*" character replaces a character string of any length.<br /> <br /> Examples:<br /> A*D replaces ABCD, ABCED or AID<br /> A??D replaces ABCD, AXYD or AQZD<br /> *CD replaces ABECD, YXZCDor TYUICD<br /> ?CD replaces ACD, XCD or ZCD<br /> ?B* replaces ABCDEF, XBZWEO or *KBWXCV<br /> ???? replaces ABCD, XYZW or HGFD |
-| F-NEXT | Z-CAT | Next catalog entry according to the format described in the "S**election data description**" in the ****cft.apicop**** file.<br/> The length of this field is defined by the SELECT service. See the CLENGTH field in the Selection data description. |
+| F-SELECT | Z-SEL | Selection criteria according to the format described in the "S<span >**election data description"**</span> in the <span >****cft.apicop****</span> file. If a field is blank or equal to binary zeros, it is considered not selective.<br/> This field can contain:<br/> • the size of the selection criteria field (SLENTGTH) and the size of the field supporting the catalog entry (CLENGTH) in order to avoid recompiling the application program if these two fields are extended.<br/> • the transfer start and end date (BDATE and EDATE) to select transfers performed between these two dates.<br/> • a mask with the special characters "?" and *". The "?" character replaces any character. The "*" character replaces a character string of any length.<br /> <br /> Examples:<br /> A*D replaces ABCD, ABCED or AID<br /> A??D replaces ABCD, AXYD or AQZD<br /> *CD replaces ABECD, YXZCDor TYUICD<br /> ?CD replaces ACD, XCD or ZCD<br /> ?B* replaces ABCDEF, XBZWEO or *KBWXCV<br /> ???? replaces ABCD, XYZW or HGFD |
+| F-NEXT | Z-CAT | Next catalog entry according to the format described in the "S<span >**election data description**</span>" in the <span >****cft.apicop****</span> file.<br/> The length of this field is defined by the SELECT service. See the CLENGTH field in the Selection data description. |
 | F-MODIFY | M-STATE | New state of a transfer to be placed in the catalog entry previously read:<br/> • ‘D’ at Disposal: only valid if the former state is H or K<br/> • ‘H’ Hold: only valid if the former state is D, C or K<br/> • ‘K’ Keep: only valid if the former state is D, C or H<br/> • ‘X’ eXecuted: only valid if the former state is T<br/> • ‘P’ Purge: deletes the catalog entry |
 | F-CLOSE |   | No &lt;param&gt; needed |
 
@@ -10507,7 +10507,7 @@
 |  - " -  | CAPI-SEL-FDATE | FDATE criterion incorrect |
 |  - " -  | CAPI-SEL-CDATE | CDATE criterion incorrect |
 |  - " -  | CAPI-SEL-BDATE | BDATE criterion incorrect |
-|  - " -  | CAPI-SEL-DATE | ****EDATE criterion incorrect**** |
+|  - " -  | CAPI-SEL-DATE | ****<span >EDATE criterion incorrect</span>**** |
 | **NEXT code only**  | CAPI-CAT-EOF | End of catalog file |
 |  - " -  | CAPI-CAT-READ | Catalog file read error |
 | **MODIFY code only**  | CAPI-MOD-OSTATE | State invalid |
@@ -10581,7 +10581,7 @@
 | &lt;verb&gt; | &lt;param&gt; | Explanation |
 | --- | --- | --- |
 | F-COM | D-COM | The COM command parameter structure is as follows: &lt;medium type&gt; = &lt;Medium name&gt;<br/> The medium type consists in an uppercase letter:<br/> • 'F' for file<br/> • 'T' for the TCP/IP synchronous medium<br/> • 'C' for the configuration file (ConfigFileName)<br/> The medium name is the:<br/> • Filename, if the medium type is 'F'<br/> • Name of the communication channel, if the medium type is 'T'<br/> • Name of the configuration file containing the medium of communication characteristics, if the medium type is C. |
-| F-GETINXFO | Z-XINF | Information about a transfer in the format described in the ****OAPIINF**** file. |
+| F-GETINXFO | Z-XINF | Information about a transfer in the format described in the <span >****OAPIINF****</span> file. |
 
 
 
@@ -10598,7 +10598,7 @@
 | DELETE | Delete a catalog entry and any transfer in process associated with it |
 | END | Set a transfer status to executed<br/> The transfer is set to the "X" state. This indicates that end-of-transfer procedure has been correctly executed. |
 | SUBMIT | Submit the end-of-transfer procedure |
-| SHUT | Shut down Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
+| SHUT | Shut down {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} |
 | SWITCH | Switch monitoring files, LOG, STATS... |
 | CLOSEAPI | Free resources allocated at opening of communication medium: memory, network, file |
 | COM | Define communication medium |
@@ -10640,7 +10640,7 @@
 | --- | --- |
 | CAPI-NOERR | No error |
 | CAPI-FUNC-UNDEF | Command not valid |
-| CAPI-CMD-LENGTH | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} command string invalid, does not exist, or greater than 1024 characters long  |
+| CAPI-CMD-LENGTH | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} command string invalid, does not exist, or greater than 1024 characters long  |
 | CAPI-KEY-NAME | Command syntax incorrect: keyword name incorrect |
 | CAPI-KEY-VALUE | Command syntax incorrect: keyword value incorrect |
 | CAPI-MEM-GET | Memory allocation error |
@@ -10656,9 +10656,9 @@
 
 | Template  | Function  | Services | Description  |
 | --- | --- | --- | --- |
-| api2xmp1  | ipcai2_*  |  • ipcai2_initialize-ipcai2_catalog_open-ipcai2_catalog_selection_new<br/> • ipcai2_catalog_selection_set-ipcai2_catalog_selection_sortby<br/> • ipcai2_monitor_info_get<br/> • ipcai2_catalog_selection_next-ipcai2_catalog_info_get<br/> • ipcai2_catalog_selection_delete-ipcai2_catalog_close<br/> • ipcai2_finalize | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} Catalog API sample program, which lists all catalog content.<br/> ** Not delivered on z/OS (iseries). |
-| api2xmp2  | ipcai2_*  |  • ipcai2_initialize-ipcai2_catalog_open<br/> • ipcai2_catalog_selection_new<br/> • ipcai2_catalog_selection_set<br/> • ipcai2_catalog_selection_sortby<br/> • ipcai2_monitor_info_get<br/> • ipcai2_catalog_selection_next-<br/> • ipcai2_catalog_info_get<br/> • ipcai2_catalog_selection_delete<br/> • ipcai2_catalog_close<br/> • ipcai2_finalize | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} Catalog API sample program, which changes all Terminated transfers to Ended.<br/> ** Not delivered on z/OS (iseries). |
-| tcftsyn  | cftau  | COM, SEND, GETXINFO, SWAITCAT, CLOSEAPI  | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} Communication and Catalog API sample program using a synchronous communication media.<br/> ** Not delivered on OS/400 or z/OS (iseries). |
+| api2xmp1  | ipcai2_*  |  • ipcai2_initialize-ipcai2_catalog_open-ipcai2_catalog_selection_new<br/> • ipcai2_catalog_selection_set-ipcai2_catalog_selection_sortby<br/> • ipcai2_monitor_info_get<br/> • ipcai2_catalog_selection_next-ipcai2_catalog_info_get<br/> • ipcai2_catalog_selection_delete-ipcai2_catalog_close<br/> • ipcai2_finalize | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} Catalog API sample program, which lists all catalog content.<br/> ** Not delivered on z/OS (iseries). |
+| api2xmp2  | ipcai2_*  |  • ipcai2_initialize-ipcai2_catalog_open<br/> • ipcai2_catalog_selection_new<br/> • ipcai2_catalog_selection_set<br/> • ipcai2_catalog_selection_sortby<br/> • ipcai2_monitor_info_get<br/> • ipcai2_catalog_selection_next-<br/> • ipcai2_catalog_info_get<br/> • ipcai2_catalog_selection_delete<br/> • ipcai2_catalog_close<br/> • ipcai2_finalize | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} Catalog API sample program, which changes all Terminated transfers to Ended.<br/> ** Not delivered on z/OS (iseries). |
+| tcftsyn  | cftau  | COM, SEND, GETXINFO, SWAITCAT, CLOSEAPI  | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} Communication and Catalog API sample program using a synchronous communication media.<br/> ** Not delivered on OS/400 or z/OS (iseries). |
 
 
 
@@ -10702,10 +10702,10 @@
 
 | Template  | Function  | Services | Description  |
 | --- | --- | --- | --- |
-| CAPI2A | ipcai2_*  |  • ipcai2_initialize-ipcai2_catalog_open-ipcai2_catalog_selection_new<br/> • ipcai2_catalog_selection_set<br/> • ipcai2_catalog_selection_sortby<br/> • ipcai2_catalog_selection_skip<br/> • ipcai2_catalog_selection_next<br/> • ipcai2_catalog_record_get<br/> • ipcai2_catalog_info_get<br/> • ipcai2_catalog_selection_delete<br/> • ipcai2_catalog_close-ipcai2_finalize-<br/> • ipcai2_get_errno_str | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog API sample program, listing all catalog content.  |
-| CAPI2B | ipcai2_*  |  • ipcai2_initialize<br/> • ipcai2_catalog_open<br/> • ipcai2_catalog_selection_new<br/> • ipcai2_catalog_selection_set<br/> • ipcai2_catalog_selection_sortby<br/> • ipcai2_catalog_selection_skip<br/> • ipcai2_catalog_selection_next<br/> • ipcai2_catalog_record_get<br/> • ipcai2_catalog_info_get<br/> • ipcai2_catalog_selection_delete<br/> • ipcai2_catalog_close<br/> • ipcai2_finalize<br/> • ipcai2_get_errno_str | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog API sample program, which changes all Terminated transfers to Ended.  |
-| CAPIC | cftai - cftac - cftau  | OPEN- SELECT - NEXT - MODIFY - CLOSE - SEND -RECV - HALT - START - DELETE  | C Sample for Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} API.  |
-| CAPISYN | cftau  | COM - SEND - GETXINFO - SWAITCAT  | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} communication sample program using Synchronous Communication media (multiple send commands are possible).  |
+| CAPI2A | ipcai2_*  |  • ipcai2_initialize-ipcai2_catalog_open-ipcai2_catalog_selection_new<br/> • ipcai2_catalog_selection_set<br/> • ipcai2_catalog_selection_sortby<br/> • ipcai2_catalog_selection_skip<br/> • ipcai2_catalog_selection_next<br/> • ipcai2_catalog_record_get<br/> • ipcai2_catalog_info_get<br/> • ipcai2_catalog_selection_delete<br/> • ipcai2_catalog_close-ipcai2_finalize-<br/> • ipcai2_get_errno_str | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} catalog API sample program, listing all catalog content.  |
+| CAPI2B | ipcai2_*  |  • ipcai2_initialize<br/> • ipcai2_catalog_open<br/> • ipcai2_catalog_selection_new<br/> • ipcai2_catalog_selection_set<br/> • ipcai2_catalog_selection_sortby<br/> • ipcai2_catalog_selection_skip<br/> • ipcai2_catalog_selection_next<br/> • ipcai2_catalog_record_get<br/> • ipcai2_catalog_info_get<br/> • ipcai2_catalog_selection_delete<br/> • ipcai2_catalog_close<br/> • ipcai2_finalize<br/> • ipcai2_get_errno_str | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} catalog API sample program, which changes all Terminated transfers to Ended.  |
+| CAPIC | cftai - cftac - cftau  | OPEN- SELECT - NEXT - MODIFY - CLOSE - SEND -RECV - HALT - START - DELETE  | C Sample for {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} API.  |
+| CAPISYN | cftau  | COM - SEND - GETXINFO - SWAITCAT  | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} communication sample program using Synchronous Communication media (multiple send commands are possible).  |
 | CAPIW | cftai - cftau  | SEND - OPEN - CLOSE - (SELECT - NEXT) or (SELECT240 - NEXT240)  | Perform a SEND request with an IDA and wait for the transfer to end (completed) until the timer expires or the transfer is aborted.  |
 | CAPIX | cftaix  | OPEN - CLOSE - SELECT (NEXT - NEXT240) - SORT - DO - COUNT  | A C language template for a catalog list with selection and sorting.  |
 
@@ -10716,15 +10716,15 @@
 
 | Template  | Function  | Services | Description  |
 | --- | --- | --- | --- |
-| OAPI2A | ipcai2_*  |  • ipcai2_initialize<br/> • ipcai2_catalog_open<br/> • ipcai2_catalog_selection_new<br/> • ipcai2_catalog_selection_set<br/> • ipcai2_catalog_selection_sortby<br/> • ipcai2_catalog_selection_skip<br/> • ipcai2_catalog_selection_next<br/> • ipcai2_catalog_record_get<br/> • ipcai2_catalog_info_get<br/> • ipcai2_catalog_selection_delete<br/> • ipcai2_catalog_close<br/> • ipcai2_finalize<br/> • ipcai2_get_errno_str | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog API template program, which lists all catalog content.  |
-| OAPI2AS | ipcai2_*  |  • ipcai2_initialize<br/> • ipcai2_catalog_open<br/> • ipcai2_catalog_selection_new<br/> • ipcai2_catalog_selection_set<br/> • ipcai2_catalog_selection_sortby<br/> • ipcai2_catalog_selection_skip<br/> • ipcai2_catalog_selection_next<br/> • ipcai2_catalog_record_get<br/> • ipcai2_catalog_info_get<br/> • ipcai2_catalog_selection_delete<br/> • ipcai2_catalog_close<br/> • ipcai2_finalize<br/> • ipcai2_get_errno_str | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog API template program, which lists all of the catalog content.  |
-| OAPI2B | ipcai2_*  |  • ipcai2_initialize-<br/> • ipcai2_catalog_open<br/> • ipcai2_catalog_selection_new<br/> • ipcai2_catalog_selection_set<br/> • ipcai2_catalog_selection_sortby<br/> • ipcai2_catalog_selection_skip<br/> • ipcai2_catalog_selection_next<br/> • ipcai2_catalog_record_get<br/> • ipcai2_catalog_info_get<br/> • ipcai2_catalog_selection_delete<br/> • ipcai2_catalog_close<br/> • ipcai2_finalize<br/> • ipcai2_get_errno_str | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog API template program, which changes all successful transfers to a completed state.  |
-| OAPI2BS | ipcai2_*  |  • ipcai2_initialize<br/> • ipcai2_catalog_open<br/> • ipcai2_catalog_selection_new<br/> • ipcai2_catalog_selection_set<br/> • ipcai2_catalog_selection_sortby<br/> • ipcai2_catalog_selection_skip<br/> • ipcai2_catalog_selection_next<br/> • ipcai2_catalog_record_get-<br/> • ipcai2_catalog_info_get-<br/> • ipcai2_catalog_selection_delete-<br/> • ipcai2_catalog_close-<br/> • ipcai2_finalize-<br/> • ipcai2_get_errno_str | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog API template program, which changes all successful transfers to the completed state.  |
-| OAPIC | CFTC  | SEND -RECV - HALT - START - DELETE  | Issue Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} commands. |
-| OAPICS | CFTC  | SEND -RECV - HALT - START - DELETE  | Issue Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} commands  |
-| OAPII | CFTI  | OPEN - CLOSE - (SELECT - NEXT) or (SELECT240 - NEXT240)  | List the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog. |
-| OAPIIS | CFTI  | OPEN - CLOSE - (SELECT - NEXT) or (SELECT240 - NEXT240)  | List the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog.  |
-| OAPISYN | cftau  | COM - SEND - GETXINFO - SWAITCAT  | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} communication sample program using the synchronous communication media, where multiple SEND commands are possible.  |
+| OAPI2A | ipcai2_*  |  • ipcai2_initialize<br/> • ipcai2_catalog_open<br/> • ipcai2_catalog_selection_new<br/> • ipcai2_catalog_selection_set<br/> • ipcai2_catalog_selection_sortby<br/> • ipcai2_catalog_selection_skip<br/> • ipcai2_catalog_selection_next<br/> • ipcai2_catalog_record_get<br/> • ipcai2_catalog_info_get<br/> • ipcai2_catalog_selection_delete<br/> • ipcai2_catalog_close<br/> • ipcai2_finalize<br/> • ipcai2_get_errno_str | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} catalog API template program, which lists all catalog content.  |
+| OAPI2AS | ipcai2_*  |  • ipcai2_initialize<br/> • ipcai2_catalog_open<br/> • ipcai2_catalog_selection_new<br/> • ipcai2_catalog_selection_set<br/> • ipcai2_catalog_selection_sortby<br/> • ipcai2_catalog_selection_skip<br/> • ipcai2_catalog_selection_next<br/> • ipcai2_catalog_record_get<br/> • ipcai2_catalog_info_get<br/> • ipcai2_catalog_selection_delete<br/> • ipcai2_catalog_close<br/> • ipcai2_finalize<br/> • ipcai2_get_errno_str | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} catalog API template program, which lists all of the catalog content.  |
+| OAPI2B | ipcai2_*  |  • ipcai2_initialize-<br/> • ipcai2_catalog_open<br/> • ipcai2_catalog_selection_new<br/> • ipcai2_catalog_selection_set<br/> • ipcai2_catalog_selection_sortby<br/> • ipcai2_catalog_selection_skip<br/> • ipcai2_catalog_selection_next<br/> • ipcai2_catalog_record_get<br/> • ipcai2_catalog_info_get<br/> • ipcai2_catalog_selection_delete<br/> • ipcai2_catalog_close<br/> • ipcai2_finalize<br/> • ipcai2_get_errno_str | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} catalog API template program, which changes all successful transfers to a completed state.  |
+| OAPI2BS | ipcai2_*  |  • ipcai2_initialize<br/> • ipcai2_catalog_open<br/> • ipcai2_catalog_selection_new<br/> • ipcai2_catalog_selection_set<br/> • ipcai2_catalog_selection_sortby<br/> • ipcai2_catalog_selection_skip<br/> • ipcai2_catalog_selection_next<br/> • ipcai2_catalog_record_get-<br/> • ipcai2_catalog_info_get-<br/> • ipcai2_catalog_selection_delete-<br/> • ipcai2_catalog_close-<br/> • ipcai2_finalize-<br/> • ipcai2_get_errno_str | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} catalog API template program, which changes all successful transfers to the completed state.  |
+| OAPIC | CFTC  | SEND -RECV - HALT - START - DELETE  | Issue {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} commands. |
+| OAPICS | CFTC  | SEND -RECV - HALT - START - DELETE  | Issue {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} commands  |
+| OAPII | CFTI  | OPEN - CLOSE - (SELECT - NEXT) or (SELECT240 - NEXT240)  | List the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} catalog. |
+| OAPIIS | CFTI  | OPEN - CLOSE - (SELECT - NEXT) or (SELECT240 - NEXT240)  | List the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} catalog.  |
+| OAPISYN | cftau  | COM - SEND - GETXINFO - SWAITCAT  | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} communication sample program using the synchronous communication media, where multiple SEND commands are possible.  |
 | OAPIW | CFTI - CFTU  | SEND, OPEN, CLOSE , (SELECT - NEXT), or (SELECT240 - NEXT240)  | Perform a SEND request with an IDA and wait for the transfer to complete successfully, reach the time out, or abort the transfer.  |
 | OAPIWS | CFTI - CFTU  | SEND - OPEN - CLOSE - (SELECT - NEXT) or (SELECT240 - NEXT240)  | Perform a SEND request with an IDA and wait for the transfer to complete successfully, reach the time out, or abort the transfer.  |
 
@@ -10825,11 +10825,11 @@
 | Field | Explanation |
 | --- | --- |
 | ****mtype**** | Transfer stage<br /> The possible values are:<br/> • 0 (ALLOC_TYP) before the file is allocated<br/> • 1 (OPEN_TYP) before the file is opened<br/> • 2 (TRANS_TYP) before the start of the transfer<br/> • 3 (DATA_TYP) before a record is sent or after it is received<br/> • 4 (CHECK_TYP) after a synchronization point<br/> • 5 (RESTART_TYP) before repositioning<br/> • 6 (DTEND_TYP) before the end of the file<br/> • 7 (CLOSE_TYP) before the file is closed<br/> • 8 (ENDTR_TYP) before the end of the transfer<br/> • 9 (ABORT_TYP) after a transfer interruption  |
-| ****masc****  | Mask for selecting stages<br /> This field comprises 16 bytes; each byte can take the value 0 or 1 and is associated with a stage:<br/> • Byte 0 =&gt; ALLOC_TYP<br/> • Byte 1 =&gt; OPEN_TYP<br/> • Byte 2 =&gt; TRANS_TYP<br/> • Byte 3 =&gt; DATA_TYP<br/> • Byte 4 =&gt; CHECK_TYP<br/> • Byte 5 =&gt; RESTART_TYP<br/> • Byte 6 =&gt; DTEND_TYP<br/> • Byte 7 =&gt; CLOSE_TYP<br/> • Byte 8 =&gt; ENDTR_TYP<br/> • Byte 9 =&gt; ABORT_TYP<br/> • Bytes 10 to 15 =&gt; Reserved<br/> Byte 0 always equals 1.<br/> If you set a byte to 1, it means that you want to take control during the associated stage<br /> The value of the field mtype indicates the rank of the byte associated with the stage |
-| ****access **** | File access managements under the control of:<br/> • Transfer CFT if set to 0<br /> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} takes charge of all operations; you can, however, change certain features of the file (name, size, format, etc.) at the allocation and opening stages<br/> • The user if set to 1<br /> You are responsible for all operations performed on the file: allocation, opening, read/write, closing, de-allocation |
+| <span >****masc****</span>  | Mask for selecting stages<br /> This field comprises 16 bytes; each byte can take the value 0 or 1 and is associated with a stage:<br/> • Byte 0 =&gt; ALLOC_TYP<br/> • Byte 1 =&gt; OPEN_TYP<br/> • Byte 2 =&gt; TRANS_TYP<br/> • Byte 3 =&gt; DATA_TYP<br/> • Byte 4 =&gt; CHECK_TYP<br/> • Byte 5 =&gt; RESTART_TYP<br/> • Byte 6 =&gt; DTEND_TYP<br/> • Byte 7 =&gt; CLOSE_TYP<br/> • Byte 8 =&gt; ENDTR_TYP<br/> • Byte 9 =&gt; ABORT_TYP<br/> • Bytes 10 to 15 =&gt; Reserved<br/> Byte 0 always equals 1.<br/> If you set a byte to 1, it means that you want to take control during the associated stage<br /> The value of the field mtype indicates the rank of the byte associated with the stage |
+| ****access **** | File access managements under the control of:<br/> • Transfer CFT if set to 0<br /> {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} takes charge of all operations; you can, however, change certain features of the file (name, size, format, etc.) at the allocation and opening stages<br/> • The user if set to 1<br /> You are responsible for all operations performed on the file: allocation, opening, read/write, closing, de-allocation |
 | ****retsync**** | The return is:<br/> • 0 : synchronous<br /> The user function processes the stage and returns control to the interface.<br/> • 1: asynchronous<br /> The user function returns control to the interface before processing the stage (deferred processing). The transfer is suspended and the interface waits for an end of processing message from the user.<br/> As the user does not yet have the information or tools required to use the possibility of an asynchronous return, the return will always be synchronous  |
 | ****ret1**** | Return code:<br/> • 0 = processing ok<br/> • 9 = refusal and end of transfer<br/> Other values are defined depending on the transfer stage. For more information, refer to the <a href="../using_file_exit_comm_area">Using the Communication Structure</a>. |
-| ****ret2**** | Error message.<br /> This message appears in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog in the DIAGP field (protocol diagnosis). |
+| ****ret2**** | Error message.<br /> This message appears in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} catalog in the DIAGP field (protocol diagnosis). |
 | ****us_sem**** | Reserved |
 | ****us_ctx**** | Reserved |
 | ****idexit **** | EXIT identifier |
@@ -10965,7 +10965,7 @@
 
 | Field  | Description  |
 | --- | --- |
-| ret2 | Error message (up to eight characters)<br /> To be defined in case of transfer refusal (ret1 = 9)<br /> This message appears in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog in the DIAGP (protocol diagnosis) field  |
+| ret2 | Error message (up to eight characters)<br /> To be defined in case of transfer refusal (ret1 = 9)<br /> This message appears in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} catalog in the DIAGP (protocol diagnosis) field  |
 | msg  | Error message (up to 512 characters)<br /> The user function can define this field at each stage<br /> This message is redirected to the standard output  |
 
 
@@ -10977,7 +10977,7 @@
 | --- | --- |
 | / | This field does not apply to the current field  |
 | = | This field keeps the value taken in the previous stage  |
-| x | This field can be modified by the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} (before the call) or by the user function (after the call)  |
+| x | This field can be modified by the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} (before the call) or by the user function (after the call)  |
 | * | This field can be defined by the user function  |
 
 
@@ -10988,7 +10988,7 @@
 | Field  | Description  |
 | --- | --- |
 | masc | Mask used to select stages  |
-| access | File access:<br/> • 0: controlled by Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}<br/> • 1: controlled by the user |
+| access | File access:<br/> • 0: controlled by {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}<br/> • 1: controlled by the user |
 | ret1 | Return code:<br/> • 0: processing ok<br/> • 9: refusal and end of transfer  |
 | ret2 | Error message  |
 | msg | Message sent to the standard output  |
@@ -11320,7 +11320,7 @@
 
 | Field  | Description  |
 | --- | --- |
-| ret1 | Return code:<br/> • 0 = processing ok.<br /> Record not modified<br/> • 4 = end of file<br /> The previous record becomes the last one<br/> • 9 = refusal and end of transfer<br/> If file accessing is managed by Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}:<br/> • 1 = record modified<br /> The user function must modify the ldata field and the zdata parameter. The record length must be consistent with the value of the flrecl field in order not to cause a read or write error.<br/> • 2 = one or more records inserted<br /> At the time the first record is inserted, you can save the current record in the zwork working area before handing back control to Transfer CFT. In the insertion mode (as long as ret1 = 2), the zdata is not defined by Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} in the following DATA_TYP stages and the user can continue to insert as many records as required.<br/> • 3 = record deleted <br /> On returning from the user function, Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} ignores the current record. The record is not sent when in send mode, and not written into the file when in receive mode. |
+| ret1 | Return code:<br/> • 0 = processing ok.<br /> Record not modified<br/> • 4 = end of file<br /> The previous record becomes the last one<br/> • 9 = refusal and end of transfer<br/> If file accessing is managed by {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}:<br/> • 1 = record modified<br /> The user function must modify the ldata field and the zdata parameter. The record length must be consistent with the value of the flrecl field in order not to cause a read or write error.<br/> • 2 = one or more records inserted<br /> At the time the first record is inserted, you can save the current record in the zwork working area before handing back control to Transfer CFT. In the insertion mode (as long as ret1 = 2), the zdata is not defined by {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} in the following DATA_TYP stages and the user can continue to insert as many records as required.<br/> • 3 = record deleted <br /> On returning from the user function, {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} ignores the current record. The record is not sent when in send mode, and not written into the file when in receive mode. |
 | ret2 | Error message  |
 | msg | Message sent to the standard output  |
 | ldata | Record length (in bytes)  |
@@ -11992,7 +11992,7 @@
 
 | Field  | Description  |
 | --- | --- |
-| ret1 | Return code:<br/> • 0: processing ok<br/> • 9: refusal and end of transfer<br/> If file accessing is managed by Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}:<br/> • 1: record modified<br/> • 2: one or more records inserted<br/> • 3: record deleted  |
+| ret1 | Return code:<br/> • 0: processing ok<br/> • 9: refusal and end of transfer<br/> If file accessing is managed by {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}:<br/> • 1: record modified<br/> • 2: one or more records inserted<br/> • 3: record deleted  |
 | ret2 | Error message  |
 | msg | Message sent to the standard output  |
 | rpos | Value of the last synchronization point  |
@@ -12135,7 +12135,7 @@
 | Field | Explanation |
 | --- | --- |
 | ret1 | Return code<br/> • 0: Processing ok<br/> • 1: Transfer CFT must take charge of the call<br/> • 2: Connection refusal<br/> • 9: Processing error |
-| ret2  | Cause of connection refusal if the return code value is 2<br/> • 1: Partner not known<br/> • 2: Password not valid<br/> • 3: Address not known<br/> • 4: Call time not valid<br/> • 5: Communication protocol not valid<br/> • 6: Maximum number of virtual circuits reached<br/> • 7: Maximum number of transfers reached<br/> • 8: Maximum number of partners reached<br/> • 9: Caller taxation refusal<br/> • 10: Network problem<br/> • 255: Other cause of connection refusal<br/> These refusal codes are converted by Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} into internal diagnostic codes.<br/> In server mode, the internal diagnostic codes are converted into protocol diagnostic codes and sent to the calling partner.<br/> In requester mode, the internal diagnostic codes are saved in the catalog. |
+| ret2  | Cause of connection refusal if the return code value is 2<br/> • 1: Partner not known<br/> • 2: Password not valid<br/> • 3: Address not known<br/> • 4: Call time not valid<br/> • 5: Communication protocol not valid<br/> • 6: Maximum number of virtual circuits reached<br/> • 7: Maximum number of transfers reached<br/> • 8: Maximum number of partners reached<br/> • 9: Caller taxation refusal<br/> • 10: Network problem<br/> • 255: Other cause of connection refusal<br/> These refusal codes are converted by {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} into internal diagnostic codes.<br/> In server mode, the internal diagnostic codes are converted into protocol diagnostic codes and sent to the calling partner.<br/> In requester mode, the internal diagnostic codes are saved in the catalog. |
 | diag | Diagnostic code if the return code is not 0 and 1<br/> The contents of this field are used in the EXIT related error. |
 | msg  | User message<br/> If this field is defined, the content is sent to the Transfer CFT standard output. |
 
@@ -12146,7 +12146,7 @@
 
 | Field | Explanation |
 | --- | --- |
-| ptype | Partner type:<br/> • C: normal Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} partner<br/> • D: dynamic Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} partner<br/> • E: non Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} partner |
+| ptype | Partner type:<br/> • C: normal {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} partner<br/> • D: dynamic {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} partner<br/> • E: non {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} partner |
 | part | Partner local identifie |
 | ipart | Intermediate partner local identifier |
 | cpart | Associated store and forward partner identifier |
@@ -12248,7 +12248,7 @@
 | --- | --- |
 | exafref | Address of an (512+1) byte area.<br/> The initialization function can modify this area. |
 | mode | Address of a one-byte area<br/> Processing mode:<br/> • S: call in server mode<br/> • R: call in requester mode (Requester) |
-| part | Address of an (32+1) byte area.<br/> Partner local identifier if this identifier is known to Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}. |
+| part | Address of an (32+1) byte area.<br/> Partner local identifier if this identifier is known to {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}. |
 | parm | Address of an (64+1) byte area.<br/> This area contains the value of the PARM parameter of the CFTEXIT command and can be modified by the initialization function. |
 | language | Address of a one-byte area.<br/> This area contains the value of the LANGUAGE parameter of the CFTEXIT command and can be modified by the initialization function. |
 | function | Address of an area that contains the address of the user function.<br/> If you want to take control, the initialization function must update this area. The mode, part, parm and language parameters are initialized by the interface. The mode, part and parm parameters can be used to select a function when the user has provided several functions.<br/> The user can use the exaref parameter as required. The contents of this parameter are thereafter provided to the user function.<br/> The (n+1) byte areas contain characters up to n bytes long followed by a binary zero. |
@@ -12371,12 +12371,12 @@
 
 | Field  | Explanation  |
 | --- | --- |
-| part  | If this field:<br/> • is empty when the user function is returned from, the partner local identifier "UNDEFPTN" appears in the catalog and on the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} standard output.<br/> • has been modified and if the new identifier is located in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} partner base, Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} sets the ret1 field to 9 (processing error) and the diag field to "PTNEXIST"<br/> • has been modified, during any network or protocol connection attempts that may have been made, the system behaves as if the partner is not known to Transfer CFT |
+| part  | If this field:<br/> • is empty when the user function is returned from, the partner local identifier "UNDEFPTN" appears in the catalog and on the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} standard output.<br/> • has been modified and if the new identifier is located in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} partner base, {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} sets the ret1 field to 9 (processing error) and the diag field to "PTNEXIST"<br/> • has been modified, during any network or protocol connection attempts that may have been made, the system behaves as if the partner is not known to Transfer CFT |
 | ipart  | If the ipart field is defined, a voluntary store and forward or backup mechanism<br /> (omintime = omaxtime) is possible.<br /> The user function is called to provide complete information or modify the intermediate partner information<br /> In the store and forward case, the commutfl field is set to 1. |
-| idprot, idnet, prot and prof  | The idnet, prot and prof fields are connected to the CFTPROT command identifier (idprot). If the idprot field is modified, the new value must correspond to a CFTPROT command ( Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} updates the fields that are associated with it)<br /> If not, Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} sets the ret1 field to 9 (processing error) and the diag field to "NOPROT".<br /> <br/> The protl field indicates the list of Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} parameter setting protocols.  |
+| idprot, idnet, prot and prof  | The idnet, prot and prof fields are connected to the CFTPROT command identifier (idprot). If the idprot field is modified, the new value must correspond to a CFTPROT command ( {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} updates the fields that are associated with it)<br /> If not, {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} sets the ret1 field to 9 (processing error) and the diag field to "NOPROT".<br /> <br/> The protl field indicates the list of {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} parameter setting protocols.  |
 | nspart, nspassw, sap and addr  | If the nspart (and nspassw as applicable), sap and addr fields are not defined when the user function is returned from, the network and protocol connections will not be able to be established<br /> <br /> The maximum length taken into account for the remote partner address depends on the network type:<br/> • Network type = TCP : Length = 64<br/><br/>  |
 | nrpart  | If the field nrpart is empty when the user function is returned from, it is set to the value of the part field.<br/> A network partner is identified by a network name (nrpart).<br/> If the user establishes simultaneous connections with several network partners using the same name, the values of the counters below will be the sum of these connections and will be the same for each partner:<br/> • curreqc: current number of transfers in requester mode, for the given network partner<br/> • cursrvc: current number of transfers in server mode, for the given network<br /> partner |
-| maxrty<br /> and currty  | During network connection attempts, the currty value may be used to assign a new address to the remote partner<br /> This counter is reset to zero each time the remote partner address is changed.<br/> If the currty value reaches the maxrty value, Transfer CFT attempts to go on to the next backup address.<br /> If there are no further backup addresses, Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} attempts to go on to the next backup protocol. If there are no further backup protocols, Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} attempts to perform a backup store and forward<br/> With the directory type EXIT task in requester mode, and one and only one protocol and a single address associated with a partner, Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} attempts the backup store and forward. If the intermediate partner does not exist, the transfer changes to the K state. |
+| maxrty<br /> and currty  | During network connection attempts, the currty value may be used to assign a new address to the remote partner<br /> This counter is reset to zero each time the remote partner address is changed.<br/> If the currty value reaches the maxrty value, Transfer CFT attempts to go on to the next backup address.<br /> If there are no further backup addresses, {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} attempts to go on to the next backup protocol. If there are no further backup protocols, {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} attempts to perform a backup store and forward<br/> With the directory type EXIT task in requester mode, and one and only one protocol and a single address associated with a partner, {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} attempts the backup store and forward. If the intermediate partner does not exist, the transfer changes to the K state. |
 | maxrtyp and currtyp  | During protocol connection attempts, the currtyp value may be used to assign a new protocol to the remote partner<br /> The counter is reset to zero each time the protocol is changed<br/> If the currtyp value reaches the maxrtp value, Transfer CFT attempts to go on to the next backup protocol<br /> If there are no further backup protocol, the transfer changes to the K state<br/> With the directory type EXIT in requester mode, and a single protocol associated with the partner, the transfer changes to the K state  |
 
 
@@ -12543,7 +12543,7 @@
 | Field | Explanation |
 | --- | --- |
 | usraction | Action requested by the user:<br/> • U: UPDATE<br/> • D: DELETE<br/> • N: NONE<br/> Note: If the value of the parameter is N (NONE), any changes to parameters that have been requested, for example, modifications made to the comment field, are ignored. |
-| usrmsg | User message, 80 characters, recorded in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} LOG file (CFTS18I)<br/> This message can contain the code returned by the user function and other information. |
+| usrmsg | User message, 80 characters, recorded in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} LOG file (CFTS18I)<br/> This message can contain the code returned by the user function and other information. |
 
 
 
@@ -12570,11 +12570,11 @@
 | Parameter | Definition |
 | --- | --- |
 | <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/id">ID</a> <br/> (Mandatory) | Command identifier (32 +1). The value of this identifier corresponds to the identifier defined in the EXITEOT parameter of the related CFTPARM object. |
-| <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/format">FORMAT</a> | Indicates the format for the communication area.<br/> • V23 (Default value): The communication area between Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} and user’s exits remains the same.<br/> • V24: The communication area takes into account the length of the new identifier. |
-| <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/language">LANGUAGE</a> | Language in which the user program is written.<br/> The possible values are COBOL and C language.<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} uses this attribute to exchange data with the program using the EXIT via the structure best suited to the language in which it is implemented. |
+| <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/format">FORMAT</a> | Indicates the format for the communication area.<br/> • V23 (Default value): The communication area between {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} and user’s exits remains the same.<br/> • V24: The communication area takes into account the length of the new identifier. |
+| <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/language">LANGUAGE</a> | Language in which the user program is written.<br/> The possible values are COBOL and C language.<br/> {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} uses this attribute to exchange data with the program using the EXIT via the structure best suited to the language in which it is implemented. |
 | <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/parm">PARM</a>  | Free user field (64 +1). |
 | <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/prog">PROG</a>  | Name of the executable module associated with the EXIT task (512 +1). This module is built from the interface provided with Transfer CFT linked to the program written by the user. In order to facilitate identification of the associated module, it is advised to name it CFTEXIE. |
-| <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/reserv">RESERV</a>  | Size of the working area reserved for the user.<br/> This area is not used by the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} interface. You can use it to save data required for the processing of the program that you have written. This area is de-allocated when the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} interface de-selects the file. |
+| <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/reserv">RESERV</a>  | Size of the working area reserved for the user.<br/> This area is not used by the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} interface. You can use it to save data required for the processing of the program that you have written. This area is de-allocated when the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} interface de-selects the file. |
 | <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/type">TYPE</a> <br/> (Mandatory) | EXEC |
 | <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/waittask">WAITTASK</a>  | Time during which a file access task is inactive (in minutes) before being shut down |
 
@@ -12610,7 +12610,7 @@
 
 | Sample  | Authentication  | Permissions checking  |
 | --- | --- | --- |
-| examsmp1.c  | System authentication (Windows only)  | Flat file based on flat <a href="" >RBAC Role Based Access Control</a> model  |
+| examsmp1.c  | System authentication (<span >Windows only</span>)  | Flat file based on flat <a href="" >RBAC<span  aria-hidden="true"><span > </span>Role Based Access Control</span></a> model  |
 
 
 
@@ -12840,7 +12840,7 @@
 | --- | --- | --- | --- |
 | cftai  | OPEN  | cat  | Catalog file  |
 | cftaix  | OPEN  | cat  | Catalog file  |
-| cftau  | COM  | param  | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} communication medium  |
+| cftau  | COM  | param  | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} communication medium  |
 
 
 
@@ -12890,7 +12890,7 @@
 | File (FRECFM)  | 542  | 234  |
 | Protocol compression code (NCOMP)  | 543  | 235  |
 | Name of the file sent (FNAME)  | 546  | 238  |
-| Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} private parameter (PARM)  | 1059  | 303  |
+| {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} private parameter (PARM)  | 1059  | 303  |
 | Sender application identifier (SAPPL)  | 1572  | 384  |
 | Receiver application identifier (RAPPL)  | 1621  | 433  |
 | Partner group (GROUP)  | 1670  | 482 (*)  |
@@ -12907,7 +12907,7 @@
 
 | Protocol  | Details  |
 | --- | --- |
-| z/OS (MVS) | The ACCID parameter identifying the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} application must be defined. |
+| z/OS (MVS) | The ACCID parameter identifying the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} application must be defined. |
 
 
 
@@ -13711,8 +13711,8 @@
 
 | ID  | Default  | Description  |
 | --- | --- | --- |
-| cft.working_dir  | $(cft.runtime_dir)  | Sets the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} work-environment  |
-| cft.idparm  | IDPARM0  | Sets the IDPARM to use in Copilot (GUI) and Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} (optional)  |
+| cft.working_dir  | $(cft.runtime_dir)  | Sets the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} work-environment  |
+| cft.idparm  | IDPARM0  | Sets the IDPARM to use in Copilot (GUI) and {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} (optional)  |
 
 
 
@@ -13786,7 +13786,7 @@
 | copilot.startup.catalog.filter  | Errors  | Filter to use for the catalog display on start up.  |
 | copilot.startup.log  | Yes  | Display/hide log at start up.  |
 | copilot.startup.log.filter  | None  | Filter to use for the log display on start up.  |
-| cft.cftlog.switch_on_stop  | No  | Dictates if the switch log occurs at Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} server shutdown  |
+| cft.cftlog.switch_on_stop  | No  | Dictates if the switch log occurs at {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} server shutdown  |
 
 
 
@@ -13832,8 +13832,8 @@
 
 | Parameter  | Default  | Description  |
 | --- | --- | --- |
-| cft.purge.enable_on_start  | Yes  | Condition if the purge must be run on Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} startup.  |
-| cft.purge.background_on_start  | Yes  | Condition if the purge must be run on Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} startup.  |
+| cft.purge.enable_on_start  | Yes  | Condition if the purge must be run on {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} startup.  |
+| cft.purge.background_on_start  | Yes  | Condition if the purge must be run on {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} startup.  |
 | cft.purge.quantity  | 10  | Number of transfers to delete at once step (only for background).  |
 | cft.purge.periodicity  | 0  | Amount of time between each automatic purge.  |
 
@@ -13876,7 +13876,7 @@
 
 | Parameter  | Default  | Description  |
 | --- | --- | --- |
-| cft.accnt.enable_extended_byte_fields  | No  | For each completed transfer, Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} can record the number of characters in the file (FBYTE) and the number of characters sent over the line (NBYTE).<br/> Possible values are:<br/> • No: The FBYTE and NBYTE fields are filled.<br/> • Yes: The FBYTE_EXTENDED and NBYTE_EXTENDED fields are filled (length=15), and FBYTE and NBYTE are empty (either 0 or blank depending on the CFTACCNT LANG parameter setting). |
+| cft.accnt.enable_extended_byte_fields  | No  | For each completed transfer, {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} can record the number of characters in the file (FBYTE) and the number of characters sent over the line (NBYTE).<br/> Possible values are:<br/> • No: The FBYTE and NBYTE fields are filled.<br/> • Yes: The FBYTE_EXTENDED and NBYTE_EXTENDED fields are filled (length=15), and FBYTE and NBYTE are empty (either 0 or blank depending on the CFTACCNT LANG parameter setting). |
 
 
 
@@ -13886,7 +13886,7 @@
 | Parameter  | Default value  | Description  |
 | --- | --- | --- |
 | Uconf:cft.listcat_compat  | No  | Defines the LISTCAT display:<br/> • Yes = Display using the former product format, which does not include the new columns. The format in LISTCAT is DTSA.<br/> • No= Display using the product version 3.0 and higher catalog format. The format in LISTCAT is DTSASPP. |
-| Uconf:cft.state_compat  | No  | Defines the transfer states:<br/> • Yes= The phase state is fully compatible with the states in versions prior to 3.0.<br/> • No = The state reflects the phase used in Transfer CFT 3.0 and higher. This uses phase instead of the former states, except during the Transfer phase, when the former state is the same as the phase step.<br/> ****Note****: Uconf:cft.state_compat also impacts the <a href="../../../concepts/phase_and_phasestep/ack_phase">acknowledgement</a> behavior if ackstate is set to ignore. |
+| Uconf:cft.state_compat  | No  | Defines the transfer states:<br/> • Yes= The phase state is fully compatible with the states in versions prior to 3.0.<br/> • No = The state reflects the phase used in Transfer CFT 3.0 and higher. This uses phase instead of the former states, except during the Transfer phase, when the former state is the same as the phase step.<br/> <span >****Note****</span>: Uconf:cft.state_compat also impacts the <a href="../../../concepts/phase_and_phasestep/ack_phase">acknowledgement</a> behavior if ackstate is set to ignore. |
 
 
 
@@ -13915,7 +13915,7 @@
 
 | Parameter  | Description  |
 | --- | --- |
-| copilot.http.onlyssl  | Enter Yes to restrict the access of the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} UI with https.  |
+| copilot.http.onlyssl  | Enter Yes to restrict the access of the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} UI with https.  |
 
 
 
@@ -14002,7 +14002,7 @@
 | Parameter | Value |
 | --- | --- |
 | copilot.http.onlyssl |  • No: Default value.<br/> • Yes: Restricts access to the Transfer CFT Copilot server to HTTPS secured connections only. |
-| <span id="copilot.ssl.SslCipherSuites"></span>copilot.ssl.SslCipherSuites<br/>  | A comma separated list of cipher suites accepted by the Transfer CFT Copilot server.<br/> • “47, 10, 9, 2”: Default value.<br/> <br/> List of supported cipher suites:<br/> • 1 = RSA_WITH_NULL_MD5<br/> • 2 = RSA_WITH_NULL_SHA<br/> • 4 = RSA_WITH_RC4_MD5<br/> • 5 = RSA_WITH_RC4_SHA<br/> • 9 = RSA_WITH_DES_CBC_SHA1<br/> • 10 = RSA_WITH_3DES_EDE_CBC_SHA<br/> • 47 = RSA_WITH_AES_128_CBC_SHA<br/> • 53 = RSA_WITH_AES_256_CBC_SHA<br/> • 59 = RSA_WITH_NULL_SHA256<br/> • 60 = RSA_WITH_AES_128_CBC_SHA256<br/> • 61 = RSA_WITH_AES_256_CBC_SHA256 |
+| <span id="copilot.ssl.SslCipherSuites"></span>copilot.ssl.SslCipherSuites<br/>  | A comma separated list of cipher suites accepted by the Transfer CFT Copilot server.<br/> • “47, 10, 9, 2”: Default value.<br/> <br/> List of supported cipher suites:<br/> • 1 = RSA_WITH_NULL_MD5<br/> • 2 = RSA_WITH_NULL_SHA<br/> • 4 = RSA_WITH_RC4_MD5<br/> • 5 = RSA_WITH_RC4_SHA<br/> • 9 = RSA_WITH_DES_CBC_SHA1<br/> • 10 = RSA_WITH_3DES_EDE_CBC_SHA<br/> • 47 = RSA_WITH_AES_128_CBC_SHA<br/> • 53 = RSA_WITH_AES_256_CBC_SHA<br/> • 59 = RSA_WITH_NULL_SHA256<br/> • <span >60 = RSA_WITH_AES_128_CBC_SHA</span><span >2</span><span >56</span><br/> • <span >61 = RSA_WITH_AES_256_CBC_SHA</span><span >2</span><span >56</span> |
 | copilot.ssl.version_min  | Indicates the minimum version of SSL that the Copilot and the REST API server accept.<br/> • Default: tls_1.0<br/> • Possible values are: ssl_3.0 (not recommended), tls_1.0, tls_1.0, tls_1.2 |
 
 
@@ -14012,8 +14012,8 @@
 
 | Parameter  | Description  |
 | --- | --- |
-| ipv6.disable_connect | **No** indicates that an address or a name used by Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} to connect to a host may be either an IPV4 or an IPV6 address. When using a name, this parameter can refer to a list of addresses, of any type. |
-| ipv6.disable_listen  | **No** indicates that an address or name used by Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} to listen for incoming connections may be either an IPV4 or an IPV6 address.<br/> When using a name, this parameter can refer to a list of addresses, of any type. |
+| ipv6.disable_connect | **No** indicates that an address or a name used by {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} to connect to a host may be either an IPV4 or an IPV6 address. When using a name, this parameter can refer to a list of addresses, of any type. |
+| ipv6.disable_listen  | **No** indicates that an address or name used by {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} to listen for incoming connections may be either an IPV4 or an IPV6 address.<br/> When using a name, this parameter can refer to a list of addresses, of any type. |
 
 
 
@@ -14022,9 +14022,9 @@
 
 | Parameter  | Default  | Description  |
 | --- | --- | --- |
-| cft.ipv6.set_ai_numerichost | Yes  |  • ****Yes****: Use when the host name is numeric to prevent the API system getaddrinfo from performing unnecessary DNS requests for numeric hostnames.<br/> • ****No****: Use DNS requests for all hostnames, including numeric. |
-| cft.ipv6.set_ai_numericserv  | Yes  |  • ****Yes****: Use when the service name is numeric (port number) to prevent the API system getaddrinfo from performing an unnecessary service name translation.<br/> • ****No****: |
-| cft.ipv6.use_ipv4_legacy_resolver  | No  |  • ****Yes****: Use legacy IPv4 only host and service names resolution API, namely gethostbyname() and getservbyname(). This detects if the performance issue involves new IPv6 specific material as configuration items, new system API implementation, etc.<br/> • ****No****: Use IPv6 functionality. |
+| cft.ipv6.set_ai_numerichost | Yes  |  • <span >****Yes****</span>: Use when the host name is numeric to prevent the API system getaddrinfo from performing unnecessary DNS requests for numeric hostnames.<br/> • <span >****No****</span>: Use DNS requests for all hostnames, including numeric. |
+| cft.ipv6.set_ai_numericserv  | Yes  |  • <span >****Yes****</span>: Use when the service name is numeric (port number) to prevent the API system getaddrinfo from performing an unnecessary service name translation.<br/> • <span >****No****</span>: |
+| cft.ipv6.use_ipv4_legacy_resolver  | No  |  • <span >****Yes****</span>: Use legacy IPv4 only host and service names resolution API, namely gethostbyname() and getservbyname(). This detects if the performance issue involves new IPv6 specific material as configuration items, new system API implementation, etc.<br/> • <span >****No****</span>: Use IPv6 functionality. |
 
 
 
@@ -14054,10 +14054,10 @@
 | Parameters  | Description  |
 | --- | --- |
 | cft.scheduled_values  | List of scheduled aliases. Use a space to separate alias names.  |
-| cft.scheduled_values.(alias-id).start_time  | Start time using the format MM:HH:DAYS_OF_THE_WEEK. This is the begin time for when a value switches from its existing value to the temporary value. See <a href="#Details,%20days">Details</a> below.  |
+| cft.scheduled_values.(alias-id).start_time  | Start time using the format MM:HH:DAYS_OF_THE_WEEK. This is the begin time for when a value switches from its existing value to the <span >temporary value</span>. See <a href="#Details,%20days">Details</a> below.  |
 | cft.scheduled_values.(alias-id).delay  | Delay using the format MM:HH.<br/> This is the length of time during which the value can be changed. |
 | cft.scheduled_values.(alias-id).id  | The configuration entity id (uconf parameter) that you want to provide scheduling for.  |
-| cft.scheduled_values.(alias-id).value  | Temporary value. This value replaces the existing configuration value for the defined uconf parameter.<br/> To find the existing value, in command line enter:<br/> <code>CFTUTIL uconfget id=&lt;uconf_parameter&gt;</code> |
+| cft.scheduled_values.(alias-id).value  | <span >Temporary value</span>. This value replaces the existing configuration value for the defined uconf parameter.<br/> To find the existing value, in command line enter:<br/> <code>CFTUTIL uconfget id=&lt;uconf_parameter&gt;</code> |
 
 
 
@@ -14192,7 +14192,7 @@
 | Parameter  |  Description  |
 | --- | --- |
 | OBJECT  | Options: <u>CACHE</u> | SYSTEM | STATS | PROBE | TRACE (obsolete)  |
-| NAME  | The options available for the NAME depend on the type of OBJECT to be queried.<br/> If the object = cache (default) then the name can be set to:<br/> • CAT: Query of the catalog cache<br/> • COMMAND: Query of the command cache<br/> • CRON: Query the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} CRON cache<br/> • DMZ: Query of the DMZ cache<br/> • STAT |
+| NAME  | The options available for the NAME depend on the type of OBJECT to be queried.<br/> If the object = cache (default) then the name can be set to:<br/> • CAT: Query of the catalog cache<br/> • COMMAND: Query of the command cache<br/> • CRON: Query the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} CRON cache<br/> • DMZ: Query of the DMZ cache<br/> • STAT |
 | CONTENT  | If OBJECT=CACHE then you can select from the following values:<br/> BRIEF| FULL | STAT - or - XMLBRIEF| XMLFULL | RAW |
 
 
@@ -14280,7 +14280,7 @@
 | cft.multi_node.<br /> cftcom.dispatcher_policy  | Specifies the dispatching policy.<br/> - round_robin: Random dispatching across all nodes occurs.<br/> - node_affinity: Creates a one to one link between a partner and a node. Transfer requests for a given partner will always be performed by the same node. | round_robin  | round_robin,<br/> node_affinity | Yes  |
 | cft.multi_node.<br /> sharedidt.fname | Shared file for global IDT calculation in multi-node | $(cft.runtime_dir)/data/cftsidt | fname | Yes  |
 | cft.multi_node.<br /> sharedidt.enable | Use global IDT calculation method | No | Yes, No | Yes  |
-| cft.multi_node.<br /> shared.filesystem.type | Used to select appropriate consistency enforcement strategy.<br/> If Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} is using NFSv4, you must enter the value <code>nfs </code>in lower case. | unknown | unknown, posix, nfs, cifs | Yes  |
+| cft.multi_node.<br /> shared.filesystem.type | Used to select appropriate consistency enforcement strategy.<br/> If {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} is using NFSv4, you must enter the value <span ><code>nfs </code></span>in lower case. | unknown | unknown, posix, nfs, cifs | Yes  |
 | cft.multi_node.<br /> transfer_recovery_timeout | Timeout in seconds for transfer recovery process (seconds) | 30 | integer | Yes  |
 | cft.multi_node.<br /> transfer_recovery_retry_delay | Delay in seconds for transfer recovery retry (seconds) | 20 | integer | Yes  |
 | cft.multi_node.<br /> connection_retry_delay | Delay in seconds for connection retry between nodes (seconds) | 10 | integer | Yes  |
@@ -14293,12 +14293,12 @@
 | cft.multi_node.<br /> hostnames.&lt;hostname&gt;.<br /> copui_notification_port | Notification port for UI server (copui) in multi-node |   | integer | No  |
 | cft.multi_node.nodes | Number of nodes | 2 | integer from 2 to $(cft.multi_node.max) | No  |
 | cft.multi_node.<br /> nodes.&lt;node_id&gt;.nodestate | Node status | DISABLED | DISABLED,<br/> ENABLED_STOPPED,<br/> ENABLED_STARTED | No  |
-| cft.multi_node.<br /> nodes.&lt;node_id&gt;.state | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} status | STOPPED | INITIALIZING,<br/> STARTING, RUNNING, STOPPING, STOPPED,<br/> ERROR | No  |
+| cft.multi_node.<br /> nodes.&lt;node_id&gt;.state | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} status | STOPPED | INITIALIZING,<br/> STARTING, RUNNING, STOPPING, STOPPED,<br/> ERROR | No  |
 | cft.multi_node.<br /> nodes.&lt;node_id&gt;.pid | CFTMAIN process ID |   | integer | No  |
 | cft.multi_node.<br /> nodes.&lt;node_id&gt;.hostname | Hostname of the server where the node is running on |   | string | No  |
 | cft.multi_node.<br /> nodes.&lt;node_id&gt;.host | Host address of the server where the node is running on. |   | string | No  |
 | cft.multi_node.<br /> nodes.&lt;node_id&gt;.prx_port | Internal node listening port |   | integer | No  |
-| cft.multi_node.<br /> nodes.&lt;node_id&gt;.disabling | Sets flag when disabling Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}. | No | Yes, No | No  |
+| cft.multi_node.<br /> nodes.&lt;node_id&gt;.disabling | Sets flag when disabling {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}. | No | Yes, No | No  |
 | cft.multi_node.listen_port_range  | Defines a port range to use for listening points dedicated to inter-node communication in multi-node, where the range is at least 4 x (number of nodes).<br/> If you are using a firewall, you must use a port range that you can customize in your firewall to accept incoming connections. | NA<br/> (system value is used) |   |   |
 
 
@@ -14390,7 +14390,7 @@
 ============================== table nb count(842) table converted to MD ========================================
 
 
-| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
+| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} |
 | --- | --- | --- | --- | --- |
 | IsException<br/>  | Integer<br/>  |   | Values:<br/> • 0: The relevant Tracked-Event Message does not describe an exception.<br/> • 1: The relevant Tracked-Event Message describes one or more exceptions. | Not used |
 | IsAlert<br/>  | Integer<br/>  |   | Values:<br/> • 0: No alert is associated with the relevant Tracked-Event Message.<br/> • 1: The relevant Tracked-Event Message is associated with a processing exception that generated an alert. | IsAlert |
@@ -14402,12 +14402,12 @@
 ============================== table nb count(843) table converted to MD ========================================
 
 
-| Sentinel<br/> attribute | Data type | Length | Description | Name in Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
+| Sentinel<br/> attribute | Data type | Length | Description | Name in {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} |
 | --- | --- | --- | --- | --- |
 | GMTDiff | Int. |   | Positive or negative difference between the GMT (Greenwich Mean Time) and the local time, expressed in minutes. | uconf:sentinel.trkgmtdiff |
 | ProductName | String | 50 | Name of the product that generated the relevant Tracked-Event. For customer applications this name is defined via the Universal Agent. | uconf: sentinel.trkproductname |
 | ProductIPAddr | String | 20 | Domain Name Server (DNS) of the product/application that generated the relevant Tracked Event. | uconf: sentinel.trkproductipaddr |
-| ProductOS | String. | 20 | Operating system of the application that generated the relevant Tracked Event. | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} target |
+| ProductOS | String. | 20 | Operating system of the application that generated the relevant Tracked Event. | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} target |
 | State | String | 29 | Status of the relevant Tracked Event. The possible values of this attribute depend on the tracked application/product and file transfer protocol used. See <a href="#List" >List of Sentinel states</a> . | PHASE/PHASESTEP combination |
 
 
@@ -14415,7 +14415,7 @@
 ============================== table nb count(844) table converted to MD ========================================
 
 
-| Sentinel<br/> attribute | Data Type | Length | Description | Name in<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
+| Sentinel<br/> attribute | Data Type | Length | Description | Name in<br/> {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} |
 | --- | --- | --- | --- | --- |
 | CycleId | String | 250 | CycleId of the relevant Tracked Event. | TRKR |
 | IsEnd | Int. |   | Values:<br/> • 0: The relevant Processing Cycle is not complete.<br/> • 1 : The relevant Processing Cycle is complete. | IsEnd set to 1 when PHASE=X |
@@ -14434,7 +14434,7 @@
 | RECEIVED | RECEIVED | 0 | 0 | 0 | File data transmission ended |
 | TO_ROUTE | TO_ROUTE | 0 | 0 | 0 | Received file to be routed (only on the relay site in store and forward mode) |
 | POST_PROC | RECEIVED | 0 | 0 | 0 | Post processing in progress |
-| POST_PROC_ABORT | RECEIVED | 0 | 1 | 1 | Post processing aborted by the application (KEEP command) |
+| POST_PROC_ABORT | RECEIVED | 0 | 1 | 1 | <span >Post processing aborted by the application (KEEP command)</span> |
 | ACK_EXPECTED | RECEIVED | 0 | 0 | 0 | Waiting for a local acknowledgement |
 | ACKED | ACKED | 1 | 0 | 0 | Transfer locally acknowledged by the application |
 | POST_PROC_ACK_ABORT | RECEIVED/ACKED/NACKED | 0 | 1 | 1 | Post processing of the Acknowledgement phase aborted by the application (KEEP command) |
@@ -14451,7 +14451,7 @@
 | AVAILABLE | AVAILABLE | 0 | 0 | 0 | Transfer available |
 | SENDING | SENDING | 0 | 0 | 0 | File data transmission in progress |
 | CANCELED | CANCELED | 0 | 1 | 1 | File data transmission locally canceled (KEEP command) |
-| SUSPENDED | SUSPENDED | 0 | 0 | 1 | File data transmission locally suspended (HALT command) |
+| SUSPENDED | SUSPENDED | 0 | 0 | 1 | <span >File data transmission locally suspended (HALT command)</span> |
 | INTERRUPTED | INTERRUPTED | 0 | 1 | 1 | File data transmission remotely suspended |
 | SENT | SENT | 0 | 0 | 0 | File data transmission ended |
 | POST_PROC | SENT | 0 | 0 | 0 | Post processing in progress |
@@ -14497,7 +14497,7 @@
 | INTERRUPTED | INTERRUPTED | 0 | 1 | 1 | File data transmission remotely suspended |
 | SENT | SENT | 0 | 0 | 0 | File data transmission ended |
 | POST_PROC | SENT | 0 | 0 | 0 | Post-processing in progress |
-| POST_PROC_ABORT | SENT | 0 | 1 | 1 | Post-processing aborted by the application (KEEP command) |
+| POST_PROC_ABORT | SENT | 0 | 1 | 1 | <span >Post-processing aborted by the application (KEEP command)</span> |
 | ACK_EXPECTED | SENT | 0 | 0 | 0 | Waiting for a remote acknowledgement |
 | ENDED_TO_ACK | ENDED_TO_ACK | 0 (ack expected)/1 | 0 | 0 | Transfer remotely acknowledged |
 | POST_PROC_ACK_ABORT | SENT/ENDED_TO_ACK/ENDED_TO_NACK | 0 | 1 | 1 | Post-processing of the Acknowledgement phase aborted by the application (KEEP command) |
@@ -14508,7 +14508,7 @@
 ============================== table nb count(849) table converted to MD ========================================
 
 
-| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
+| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} |
 | --- | --- | --- | --- | --- |
 | Direction | Integer | - |  • S: The file is sent (Sender).<br/> • R: The file is received (Receiver). | DIRECT |
 | IsServer | Integer | - |  • 1: The Sender or the Receiver is a Server.<br/> • 0: The Sender the Receiver is a Requester. | FLAG |
@@ -14518,7 +14518,7 @@
 ============================== table nb count(850) table converted to MD ========================================
 
 
-| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
+| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} |
 | --- | --- | --- | --- | --- |
 | Site | String | 25 | Partner alias of the remote partner. | PART |
 | ReceiverId | String | 80 | Name of the Receiver. | NRPART |
@@ -14535,7 +14535,7 @@
 ============================== table nb count(851) table converted to MD ========================================
 
 
-| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
+| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} |
 | --- | --- | --- | --- | --- |
 | Location | String | 31 | Unique and logical identifier for the product. | PART parameter of the CFTPARM object. |
 | Monitor | String | 4 | Product name. | “CFT” |
@@ -14546,7 +14546,7 @@
 ============================== table nb count(852) table converted to MD ========================================
 
 
-| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
+| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} |
 | --- | --- | --- | --- | --- |
 | UserId | String | 25 | Local identifier of the user who owns the transferred file. | USERID |
 | GroupId | String | 25 | Local identifier of the group to which the transfer owner belongs. | GROUPID |
@@ -14561,7 +14561,7 @@
 ============================== table nb count(853) table converted to MD ========================================
 
 
-| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
+| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} |
 | --- | --- | --- | --- | --- |
 | IdAppl | String | 25 | If the value of the IsServer attribute is:<br/> • 0: The value of this attribute is the local identifier of the Requester.<br/> • 1: The value of this attribute is empty. | ****IDA**** |
 | Application | String | 80 | Local application/Transfer profile (ST). | IDF |
@@ -14593,7 +14593,7 @@
 ============================== table nb count(855) table converted to MD ========================================
 
 
-| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
+| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} |
 | --- | --- | --- | --- | --- |
 | CreationDate | Date | - | By default, the system date on which the Sender sent the transfer. The Sender can set this date. The Receiver can filter transfers based on this date. | ****FDATE**** |
 | CreationTime | Time | - | By default, the system time at which the Sender sent the transfer. The Sender can set this time. The Receiver can filter transfers based on this time. | FTIME |
@@ -14614,7 +14614,7 @@
 ============================== table nb count(856) table converted to MD ========================================
 
 
-| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
+| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} |
 | --- | --- | --- | --- | --- |
 | Protocol | String | 25 | Name of the protocol that operates at the Protocol Layer of the transfer. Possible values:<br/> • CFT (PeSIT, version CFT)<br/> • PSIT_HS_E (PeSIT, version E)<br/> • PSIT_HS_D (PeSIT, version D)<br/> • ODT (ODETTE File Transfer Protocol) | Protocol |
 | IsSSL | String | 1 |  • 1: SSL/TLS used for the transfer.<br/> • 0: SSL/TLS not used for the transfer. | SSLMODE |
@@ -14626,7 +14626,7 @@
 ============================== table nb count(857) table converted to MD ========================================
 
 
-| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
+| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} |
 | --- | --- | --- | --- | --- |
 | Compression | String | 1 | One of the following:<br/> • 0: Undefined<br/> • 1: Horizontal<br/> • 2: Vertical<br/> • 3: Both horizontal and vertical<br/> • 4: Not compressed | ****NCOMP**** |
 | EOTProcedure | String | 255 | Name of the end-of-transfer procedure executed upon the completion of the transfer. | EXEC |
@@ -14641,7 +14641,7 @@
 ============================== table nb count(858) table converted to MD ========================================
 
 
-| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
+| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} |
 | --- | --- | --- | --- | --- |
 | FileSize | Integer | - | Size of the transferred file. This size is expressed in bytes.<br/> <blockquote> **Note**<br/> For PeSIT, an estimation of size is given at the beginning of the transfer. This value is updated upon completion of the transfer with the real value.<br/> </blockquote>  | ****FSPACE**** |
 | TransmittedBytes | Integer | - | Number of bytes transferred, after decompression, to transfer the file. This size is expressed in bytes.<br/> <blockquote> **Note**<br/> For PeSIT, this value sent is crosschecked by both the sender and receiver.<br/> </blockquote>  | NCAR |
@@ -14651,7 +14651,7 @@
 ============================== table nb count(859) table converted to MD ========================================
 
 
-| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
+| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} |
 | --- | --- | --- | --- | --- |
 | CommandType | String | 1 |  • F: File transfer<br/> • M: Message transfer<br/> • A: Message reply<br/> • N: Message nack | TYPE |
 | FileOrganization | String | 25 |  • org_sequential: The transferred data is not indexed.<br/> • indexed: The transferred data is indexed.<br/> • direct: The transferred data is assigned relative access. | FORG |
@@ -14667,7 +14667,7 @@
 ============================== table nb count(860) table converted to MD ========================================
 
 
-| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
+| Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} |
 | --- | --- | --- | --- | --- |
 | IsRelay | String | 1 | If transfer event comes from a relay site:<br/> • 1: Yes<br/> • 0: No | IsRelay |
 | NodeId  | Integer  |   | Identifier of the node that executes the transfer  | NodeID  |
@@ -14840,7 +14840,7 @@
 | --- | --- | --- |
 | sentinel.heartbeat.enable  | NO  | Enables sending Heartbeats to the Sentinel Server. |
 | sentinel.heartbeat.periodicity  | 300  | The delay in seconds between sending Heartbeats.  |
-| sentinel.heartbeat.script  | $(cft.install_dir)<br/> /extras/sentinel/MFTheartbeat.sh<br/> or<br/> $(cft.install_dir)<br/> \extras\sentinel\MFTheartbeat.bat | Script for executing Heartbeats.  |
+| sentinel.heartbeat.script  | $(cft.install_dir)<br/> /extras/sentinel/MFTheartbeat.sh<br/> <span >or</span><br/> $(cft.install_dir)<br/> \extras\sentinel\MFTheartbeat.bat | Script for executing Heartbeats.  |
 
 
 
@@ -14958,8 +14958,8 @@
 | StartTime  | Time  | N/A  | If the value of the State attribute is:<br/> • SENT: The value of this attribute is the local time at which the Sender began sending the transfer.<br/> • RECEIVED: The value of this attribute is the local time at which the Receiver began receiving the transfer.<br/> These times are expressed in hh:mn:ss format. | From TIMEB (Catalog)  | From date_begin: time  |  MLHHEUDT<br/> (MVS does not exist in Pelica2 requests) |
 | EndDate  | Date  | N/A  | If the value of the State attribute is:<br/> • SENT: The value of this attribute is the date on which the Sender stopped sending the transfer.<br/> • RECEIVED: The value of this attribute is the date on which the Receiver stopped receiving the transfer.<br/> These dates are expressed in dd.mm.yyyy format. | From DATEE (Catalog)  | From date_end: date  |  MLHDATFT  |
 | EndTime  | Time  | N/A  | If the value of the State attribute is:<br/> • SENT: The value of this attribute is the local time at which the Sender stopped sending the transfer.<br/> • RECEIVED: The value of this attribute is the local time at which the Receiver stopped receiving the transfer.<br/> These times are expressed in hh:mn:ss format. | From TIMEE (Catalog)  | From date_end: time  |  MLHHEUFT  |
-| RequestCreationDate  | Date  | N/A  | If the value of the State attribute is:<br/> • SENT: The value of this attribute is local date of the creation of the file on the Sender side.<br/> • RECEIVED: The value of this attribute is the date of the creation of the file on the Sender side.<br/> ITP: transfer request creation date | From FDATE (Catalog)  | From date_create: date  |  MLHDATR  |
-| RequestCreationTime  | Time  | N/A  | If the value of the State attribute is:<br/> • SENT: The value of this attribute is local time of the creation of the file on the Sender side.<br/> • RECEIVED: The value of this attribute is the time of the creation of the file on the Sender side.<br/> ITP: transfer request creation time. | From FTIME (Catalog)  | From date_create: time  |  MLHTIMR  |
+| RequestCreationDate  | Date  | N/A  | If the value of the State attribute is:<br/> • SENT: The value of this attribute is local date of the creation of the file on the Sender side.<br/> • <span >RECEIVED: The value of this attribute is the date of the creation of the file on the Sender side. </span><br/> <span >ITP: transfer request creation date</span> | From FDATE (Catalog)  | From date_create: date  |  MLHDATR  |
+| RequestCreationTime  | Time  | N/A  | If the value of the State attribute is:<br/> • SENT: The value of this attribute is local time of the creation of the file on the Sender side.<br/> • <span >RECEIVED: The value of this attribute is the time of the creation of the file on the Sender side. </span><br/> <span >ITP: transfer request creation time.</span> | From FTIME (Catalog)  | From date_create: time  |  MLHTIMR  |
 | TransmissionDuration  | Integer  | N/A  | Transfer duration, expressed in seconds.  | From TIMES (Catalog)  | date_end-date_begin  | MLHDATDT - MLHDATFT  |
 
 
@@ -15008,12 +15008,12 @@
 | Sentinel attribute  | Data type  | Length  | Description  | Transfer CFT | InterPEL Core  | InterPEL MVS  |
 | --- | --- | --- | --- | --- | --- | --- |
 | CommandType  | String  | 1  |  • F: File transfer<br/> • M: Message transfer<br/> • A: Message reply<br/> • N: Message nack | TYPE  | type F or M (ack/nack is in "State")  | TYPEREQ={S|C or M} |
-| FileOrganization (ITP Core :FileOrganisation)  | String  | 25  |  • org_sequential: The transferred data is not indexed.<br/> • indexed: The transferred data is indexed.<br/> • direct: The transferred data is assigned relative access. | FORG  | file_org  | GENFILE FORG={AUTO|SEQ|…}  |
+| <span >FileOrganization (ITP Core :</span><span >FileOrganisation)</span>  | String  | 25  |  • org_sequential: The transferred data is not indexed.<br/> • indexed: The transferred data is indexed.<br/> • direct: The transferred data is assigned relative access. | FORG  | file_org  | GENFILE FORG={AUTO|SEQ|…}  |
 | FileType  | String  | 60  | B: The transferred file is a binary file.<br /> J, T, O, X: The transferred file is a text file.  | FTYPE  | file_type  | GENFILE RECFM= {FB | … }  |
 | RecordNumber  | Integer  | N/A  | Number of record in the file. This size is expressed in bytes. <br/> <blockquote> **Note**<br/> For PeSIT, this value sent is crosschecked by both the sender and receiver.<br/> </blockquote>  | FREC  | rec_count  | MLHNBRER  |
 | RecordFormat  | String  | 64  |  • F: Fixed - The transferred data contains fixed-length records.<br/> • V: Variable - The transferred data contains variable-length records.<br/> • U: Undefined - The structure of the transferred data is unknown. | FRECFM  | xfer_rec_fmt:<br/> "F", "V",<br/> "S": Stream<br/> "T" : Text |  MLH1RECF  |
 | RecordSize  | Integer  | N/A  | If the value of RecordFormat attribute is fixed, the value of this attribute is the size of all records in the transferred file, expressed in bytes.<br/> If the value of RecordFormat is variable or undefined, the value of this attribute is the size of the largest record in the transferred file, expressed in bytes. | FLRECL  | rec_len  | GENFILE LRECL=nnn  |
-| Transcoding  | Integer (ITP Core : String)  | (ITP Core: 25)  | Character code of the transferred data:<br/> • A: ASCII<br/> • B: Binary<br/> • E: EBCDIC | FCODE  | From: xfer_data_code,data_code:<br/> A/AT: ASCII (with Transco)<br/> E/ET: EBCDIC (with Transco)<br/> B/BT: Binary (with Transco)<br/> U/UT: Undefined (with Transco) |  FILECODE {A|E|B}  |
+| Transcoding  | <span >Integer </span><span >(ITP Core : String)</span>  | (ITP Core: 25)  | Character code of the transferred data:<br/> • A: ASCII<br/> • B: Binary<br/> • E: EBCDIC | FCODE  | From: xfer_data_code,data_code:<br/> A/AT: ASCII (with Transco)<br/> E/ET: EBCDIC (with Transco)<br/> B/BT: Binary (with Transco)<br/> U/UT: Undefined (with Transco) |  FILECODE {A|E|B}  |
 | TranslationTableId  | String  | 25  | Name of the local translation table use during the transfer (if any).  | XLATE  | N/A (data_code, not set)  | N/A  |
 | BlockSize  | Integer  | N/A  | File block size (used by some OS)  | From FBLKSIZE (Catalog)  | block_size  | N/A  |
 
@@ -15165,11 +15165,11 @@
 | Issue vs<br /> Possible causes  | Hard disk bottleneck  | Catalog<br/> full | Network<br/> bottleneck | Memory or processor bottleneck*  | Corrupt<br/> file or DB ** |
 | --- | --- | --- | --- | --- | --- |
 | Performance  | Disk check  |   | Network checks  | Check application  |   |
-| Start issue  | Disk check  | Catalog check  | Network checks  | timeout  | Check Transfer CFT{{&lt; TransferCFT/componentlongname &gt;}} files  |
-| Unexpected stop  | Disk check  | Catalog check  | Network checks  |   | Check Transfer CFT{{&lt; TransferCFT/componentlongname &gt;}} files  |
-| Transfer freeze or infinite looping  | Disk check  |   | Network checks  | Check application  | Check Transfer CFT{{&lt; TransferCFT/componentlongname &gt;}} files  |
+| Start issue  | Disk check  | Catalog check  | Network checks  | timeout  | Check {{&lt; TransferCFT/axwayvariablesComponentLongName &gt;}} files  |
+| Unexpected stop  | Disk check  | Catalog check  | Network checks  |   | Check {{&lt; TransferCFT/axwayvariablesComponentLongName &gt;}} files  |
+| Transfer freeze or infinite looping  | Disk check  |   | Network checks  | Check application  | Check {{&lt; TransferCFT/axwayvariablesComponentLongName &gt;}} files  |
 | SP and updates  | Disk check  |   |   |   |   |
-| Crash  | Disk check  |   | Network checks  |   | Check Transfer CFT{{&lt; TransferCFT/componentlongname &gt;}} files  |
+| Crash  | Disk check  |   | Network checks  |   | Check {{&lt; TransferCFT/axwayvariablesComponentLongName &gt;}} files  |
 
 
 
@@ -15202,7 +15202,7 @@
 | Parameter  |  Description  |
 | --- | --- |
 | OBJECT  | Options: <u>CACHE</u> | SYSTEM | STATS | PROBE | TRACE (obsolete)  |
-| NAME  | The options available for the NAME depend on the type of OBJECT to be queried.<br/> If the object = cache (default) then the name can be set to:<br/> • CAT: Query of the catalog cache<br/> • COMMAND: Query of the command cache<br/> • CRON: Query the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} CRON cache<br/> • DMZ: Query of the DMZ cache<br/> • STAT |
+| NAME  | The options available for the NAME depend on the type of OBJECT to be queried.<br/> If the object = cache (default) then the name can be set to:<br/> • CAT: Query of the catalog cache<br/> • COMMAND: Query of the command cache<br/> • CRON: Query the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} CRON cache<br/> • DMZ: Query of the DMZ cache<br/> • STAT |
 | CONTENT  | If OBJECT=CACHE then you can select from the following values:<br/> BRIEF| FULL | STAT - or - XMLBRIEF| XMLFULL | RAW |
 
 
@@ -15223,9 +15223,9 @@
 
 | Parameter  | Description  |
 | --- | --- |
-| <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/fname">FNAME</a>  | Selects the Access Management cache file. By default, this is the CFTAM file, which is located in the <code>data </code>folder.  |
+| <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/fname">FNAME</a>  | Selects the Access Management cache file. By default, this is the CFTAM file, which is located in the <span ><code>data </code></span>folder.  |
 | <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/fout">FOUT</a>  | Selects the output file. By default, it is the console.  |
-| <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/id">ID</a>  | Selects the user, or users, for which you want to obtain access rights. By default, the function returns all users.<br/> You can use the wildcard characters <code>*</code> and <code>?</code> to filter the user names. |
+| <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/id">ID</a>  | Selects the user, or users, for which you want to obtain access rights. By default, the function returns all users.<br/> You can use the wildcard characters <span ><code>*</code></span> and <span ><code>?</code></span> to filter the user names. |
 
 
 
@@ -15235,7 +15235,7 @@
 | Parameters  | Description  |
 | --- | --- |
 | COMMAND | Request keyword. |
-| INDEX | Request number as displayed by the LISTCOM command.<br/> For example:<br/> • <code>INDEX=*</code> Selects all record numbers.<br/> • <code>INDEX=12345</code> Selects the record number 12345 in the COM file. |
+| INDEX | Request number as displayed by the LISTCOM command.<br/> For example:<br/> • <span ><code>INDEX=*</code></span> Selects all record numbers.<br/> • <span ><code>INDEX=12345</code></span> Selects the record number 12345 in the COM file. |
 | JOBNAME  | Jobname (string 15), which you can combine with wildcard characters.<br/> For example:<br/> • <code>JOBNAME=12345</code><br/> • <code>JOBNAME=123*</code><br/> • <code>JOBNAME=12?45</code> |
 | USERID | Identifier of the request owner. |
 
@@ -15309,7 +15309,7 @@
 | Parameter | Value |
 | --- | --- |
 | copilot.http.onlyssl |  • No: Default value.<br/> • Yes: Restricts access to the Copilot server to HTTPS secured connections only.<br/>  |
-| copilot.ssl.SslCipherSuites<br/>  | A comma separated list of cipher suites accepted by the Copilot server.<br/> • “47, 10, 9, 2”: Default value.<br/> <br/> List of supported cipher suites:<br/> • 1 = RSA_WITH_NULL_MD5<br/> • 2 = RSA_WITH_NULL_SHA<br/> • 4 = RSA_WITH_RC4_MD5<br/> • 5 = RSA_WITH_RC4_SHA<br/> • 9 = RSA_WITH_DES_CBC_SHA1<br/> • 10 = RSA_WITH_3DES_EDE_CBC_SHA<br/> • 47 = RSA_WITH_AES_128_CBC_SHA<br/> • 53 = RSA_WITH_AES_256_CBC_SHA<br/> • 59 = RSA_WITH_NULL_SHA256<br/> • 60 = RSA_WITH_AES_128_CBC_SHA256<br/> • 61 = RSA_WITH_AES_256_CBC_SHA256 |
+| copilot.ssl.SslCipherSuites<br/>  | A comma separated list of cipher suites accepted by the Copilot server.<br/> • “47, 10, 9, 2”: Default value.<br/> <br/> List of supported cipher suites:<br/> • 1 = RSA_WITH_NULL_MD5<br/> • 2 = RSA_WITH_NULL_SHA<br/> • 4 = RSA_WITH_RC4_MD5<br/> • 5 = RSA_WITH_RC4_SHA<br/> • 9 = RSA_WITH_DES_CBC_SHA1<br/> • 10 = RSA_WITH_3DES_EDE_CBC_SHA<br/> • 47 = RSA_WITH_AES_128_CBC_SHA<br/> • 53 = RSA_WITH_AES_256_CBC_SHA<br/> • 59 = RSA_WITH_NULL_SHA256<br/> • <span >60 = RSA_WITH_AES_128_CBC_SHA</span><span >2</span><span >56</span><br/> • <span >61 = RSA_WITH_AES_256_CBC_SHA</span><span >2</span><span >56</span> |
 
 
 
@@ -15326,10 +15326,10 @@
 ============================== table nb count(906) table converted to MD ========================================
 
 
-| The message severity is displayed | CFTxxx: the actual message that is displayed on Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
+| The message severity is displayed | CFTxxx: the actual message that is displayed on {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} |
 | --- | --- |
 | Explanation | The elements, such as variables, in the above message are detailed. |
-| Consequence | Description of what happens to the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}, or lists corrective actions. |
+| Consequence | Description of what happens to the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}, or lists corrective actions. |
 | Action  | If applicable, add corrective action here.  |
 
 
@@ -15340,14 +15340,14 @@
 | Code  | Description  |
 | --- | --- |
 | C  | Catalog: Access to the catalog  |
-| E  | End: Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} shutdown phase  |
+| E  | End: {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} shutdown phase  |
 | F  | File: Access to files  |
 | H  | External PeSIT: PeSIT protocol, non-SIT profile and CFT profile  |
-| I  | Init: Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} initialization phase  |
+| I  | Init: {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} initialization phase  |
 | N  | Network  |
 | P  | Parameter: Access to parameter files |
-| R  | Request: Requests that Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} received from CFTUTIL, applications, or interactive functions  |
-| S  | System: System interface operations by the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}  |
+| R  | Request: Requests that {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} received from CFTUTIL, applications, or interactive functions  |
+| S  | System: System interface operations by the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}  |
 | T  | Transfers: Actions relating to transfers  |
 | U  | CFTUTIL: Messages from the CFTUTIL utility  |
 | X  | Security: Security system (only in the log)  |
@@ -15398,7 +15398,7 @@
 | ncs | Network error code specific to the access method and system |
 | net | Network resource identifier (CFTNET command) |
 | part | Local partner identifier (CFTPART command) |
-| prot | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} protocol identifier (CFTPROT command) |
+| prot | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} protocol identifier (CFTPROT command) |
 | pevent | Protocol event |
 | pid | Process identifier |
 | pstate | Protocol status |
@@ -15418,7 +15418,7 @@
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB01E"></span>CFTB01E PART=&amp;part Context area allocation failure CS=&amp;scs<br/> CFTB01E PART=&amp;part Context area allocation failure CS=&amp;cs |
 | --- | --- |
 | Explanation | Cannot allocate the working area necessary for the transfer. |
-| Consequence | In REQUESTER mode, the transfer is refused with a Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} 122 diagnostic code and a MALLOC protocol diagnostic message.<br /> In SERVER mode, the incoming call is rejected.<br/> In this case, as the partner's name is not known, the value UNKNOWN is displayed. |
+| Consequence | In REQUESTER mode, the transfer is refused with a {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} 122 diagnostic code and a MALLOC protocol diagnostic message.<br /> In SERVER mode, the incoming call is rejected.<br/> In this case, as the partner's name is not known, the value UNKNOWN is displayed. |
 
 
 
@@ -15438,7 +15438,7 @@
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB03E"></span>CFTB03E PART=&amp;part Error sending data on network NCR=&amp;ncr NCS=&amp;ncs NET=&amp;net<br/> CFTB03E PART=&amp;part Error sending data on network NCR=&amp;ncr NCS=&amp;cs NET=&amp;net |
 | --- | --- |
 | Explanation | Cannot send a message on the network. |
-| Consequence | The transfer is interrupted with a Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} 302 code and a protocol diagnostic message indicating the specific error code of the error occurring during the send request. This code is expressed in hexadecimal form. |
+| Consequence | The transfer is interrupted with a {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} 302 code and a protocol diagnostic message indicating the specific error code of the error occurring during the send request. This code is expressed in hexadecimal form. |
 
 
 
@@ -15456,7 +15456,7 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB07E"></span>CFTB07E PART=&amp;part TFIL task Synchronization error CR=&amp;cr CS=&amp;cs<br/> CFTB07E PART=&amp;part TFIL task Synchronization error CR= &amp;cr CS=&amp;cs |
 | --- | --- |
-| Explanation | Problem encountered when sending an internal Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} message to the FILE task. |
+| Explanation | Problem encountered when sending an internal {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} message to the FILE task. |
 | Consequence | The transfer is aborted by the protocol task (network disconnection). However, as the FILE task is not protected by a time-out, the request remains in the C status in the catalog |
 
 
@@ -15477,7 +15477,7 @@
 | V23 format<br/> V24 format<br/> Error | <span id="CFTB09E"></span>CFTB09E PART=&amp;part Network connect req local err NCR=&amp;ncr NCS=&amp;ncs NET=&amp;net<br/> CFTB09E PART=&amp;part Network connect req local err NCR=&amp;ncr NCS=&amp;cs NET=&amp;net |
 | --- | --- |
 | Explanation | Cannot make an outgoing connection request on the network. |
-| Consequence | For a general -6 code (maximum number of connections reached on the resource), the transfer is refused with a Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} 416 diagnostic code and a MAXCNX protocol diagnostic message. The transfer will be retried (minimum time-out equal to the WSCAN parameter of the CFTCAT command), without incrementing the retry counter. |
+| Consequence | For a general -6 code (maximum number of connections reached on the resource), the transfer is refused with a {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} 416 diagnostic code and a MAXCNX protocol diagnostic message. The transfer will be retried (minimum time-out equal to the WSCAN parameter of the CFTCAT command), without incrementing the retry counter. |
 
 
 
@@ -15543,7 +15543,7 @@
 | V23 format<br/> V24 format<br/> Error | <span id="CFTC01E"></span>CFTC01E CFT catalog storage is full <br/> CFTC01E CFT catalog storage is full |
 | --- | --- |
 | Explanation | The catalog storage is full. A command SHUT FAST=KILL is executed. |
-| Consequence | The stored commands can only be retrieved by restarting Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}. First purge the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog (and modify the retention dates, for example). |
+| Consequence | The stored commands can only be retrieved by restarting {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}. First purge the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} catalog (and modify the retention dates, for example). |
 
 
 
@@ -15601,7 +15601,7 @@
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTC08I"></span>CFTC08I &amp;str<br/> CFTC08I &amp;str |
 | --- | --- |
-| Explanation  | Possible values for &amp;str are described here. The following messages are displayed when the catalog is purged on Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} startup, or at the time set for the daily purge. For example:<br/> ****When there are no transfers to delete:****<br/> <div > <code>Purge StartedPurge catalog-size=1000 in-use=0 pre-filtered=0(0%)Purge Treated: catalog emptyPurge deleted= n treated=n(d%) match=d%.Purge TreatedPurge Treated: no record found to delete</code><br/> </div> ****When there are transfers to delete:****<br/> <div > <code>Catalog: Loading...Catalog: Load DoneCatalog: Size=100, Used=8(8%)Purge Started.Purge catalog-size=100 in-use=8 pre-filtered=8(100)Purge deleted=1 treated=1(12) match=100Purge deleted=2 treated=2(25) match=100….Purge deleted=8 treated=8(100) match=100Purge Treated.</code><br/> </div> ****When Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} starts:****<br/> <div > If there are no transfers to delete:<br/> <div > <code>Catalog: Loading...Catalog: Load DoneCatalog: Size= &amp;00, Used=0(0%)</code><br/> </div> If there are transfers to delete:<br/> <div > <code>Catalog: Loading...Catalog: Load DoneCatalog: Size=100, Used=8(8%)</code><br/> </div> </div> ****If there is a problem with the catalog INIT:****<br/> <div > <code>Catalog: RecoveringCatalog: Recovery Done: n errorsCatalog Recovery: n transfers from C to D state</code><br/> </div>  |
+| Explanation  | Possible values for &amp;str are described here. The following messages are displayed when the catalog is purged on {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} startup, or at the time set for the daily purge. For example:<br/> ****When there are no transfers to delete:****<br/> <div > <code>Purge StartedPurge catalog-size=1000 in-use=0 pre-filtered=0(0%)Purge Treated: catalog emptyPurge deleted= n treated=n(d%) match=d%.Purge TreatedPurge Treated: no record found to delete</code><br/> </div> ****When there are transfers to delete:****<br/> <div > <code>Catalog: Loading...Catalog: Load DoneCatalog: Size=100, Used=8(8%)Purge Started.Purge catalog-size=100 in-use=8 pre-filtered=8(100)Purge deleted=1 treated=1(12) match=100Purge deleted=2 treated=2(25) match=100….Purge deleted=8 treated=8(100) match=100Purge Treated.</code><br/> </div> ****When {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} starts:****<br/> <div > If there are no transfers to delete:<br/> <div > <code>Catalog: Loading...Catalog: Load DoneCatalog: Size= &amp;00, Used=0(0%)</code><br/> </div> If there are transfers to delete:<br/> <div > <code>Catalog: Loading...Catalog: Load DoneCatalog: Size=100, Used=8(8%)</code><br/> </div> </div> ****If there is a problem with the catalog INIT:****<br/> <div > <code>Catalog: RecoveringCatalog: Recovery Done: n errorsCatalog Recovery: n transfers from C to D state</code><br/> </div>  |
 
 
 
@@ -15640,7 +15640,7 @@
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTC12I"></span>CFTC12I PART=&amp;part STATE=&amp;state DIRECT=&amp;direct TYPE=&amp;type SENTINEL_STATE=&amp;trkstate Deleted<br/> CFTC12I IDTU=&amp;idtu PART=&amp;part STATE=&amp;state PHASE=&amp;phase PHASESTEP=&amp;phasestep DIRECT=&amp;direct TYPE=&amp;type SENTINEL_STATE=&amp;trkstate Deleted |
 | --- | --- |
-| Explanation | This Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} message is displayed for each transfer that is deleted when the catalog is purged. Where:<br/> • &amp;state = transfer status (C/D/H/K/T/X)<br/> • &amp;direct = S (send) / R (recv)<br/> • &amp;type = F (file) / M (message)<br/> • &amp;trkstate = Sentinel state<br/> Possible values are:<br/> • TO_EXECUTE<br/> • SUSPENDED<br/> • RECEIVING<br/> • SENDING<br/> • CANCELED<br/> • RECEIVED<br/> • SENT<br/> • CREATED<br/> • INTERRUPTED<br/> • ACKED<br/> • NACKED |
+| Explanation | This {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} message is displayed for each transfer that is deleted when the catalog is purged. Where:<br/> • &amp;state = transfer status (C/D/H/K/T/X)<br/> • &amp;direct = S (send) / R (recv)<br/> • &amp;type = F (file) / M (message)<br/> • &amp;trkstate = Sentinel state<br/> Possible values are:<br/> • TO_EXECUTE<br/> • SUSPENDED<br/> • RECEIVING<br/> • SENDING<br/> • CANCELED<br/> • RECEIVED<br/> • SENT<br/> • CREATED<br/> • INTERRUPTED<br/> • ACKED<br/> • NACKED |
 | Consequence | The command is ignored.<br />  |
 
 
@@ -15658,7 +15658,7 @@
 ============================== table nb count(935) table converted to MD ========================================
 
 
-| V23 format<br/> V24 format<br/> Error | <span id="CFTC13E"></span>CFTC13E Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog resize (xxxx --&gt; yyyy) reached max before expansion<br/> CFTC13I Catalog resize (xxxx --&gt; yyyy) done |
+| V23 format<br/> V24 format<br/> Error | <span id="CFTC13E"></span>CFTC13E {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} catalog resize (xxxx --&gt; yyyy) reached max before expansion<br/> CFTC13I Catalog resize (xxxx --&gt; yyyy) done |
 | --- | --- |
 | Explanation | A dynamic command to automatically expand the catalog failed, as the maximum number of records has already been reached. The catalog size remains unchanged (the &lt;xxxx&gt; value). |
 | Consequence | Normal functioning with existing catalog size, and no catalog expansion occurs. |
@@ -15670,7 +15670,7 @@
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTC13E"></span><span id="CFTC15I"></span>CFTC15I Deprecated command not executed BLKNUM=&amp;blknum PART=&amp;part IDT=&amp;idt : Cmd=&amp;cmd&gt;<br/> CFTC15I Deprecated command not executed BLKNUM=&amp;blknum PART=&amp;part IDT=&amp;idt : Cmd=&amp;cmd |
 | --- | --- |
-| Explanation | Set the uconf parameter <code>cft.cftcat.enable_deprecated_blknum=Yes</code> to enable BLKNUM.<br/> <blockquote> **Note**<br/> Regardless of the cft.cftcat.enable_deprecated_blknum parameter setting, BLKNUM is disabled in a multi-node configuration (uconf:cft.multi_node.enable=Yes), and this message is displayed.<br/> </blockquote>  |
+| Explanation | Set the uconf parameter <span ><code>cft.cftcat.enable_deprecated_blknum=Yes</code></span> to enable BLKNUM.<br/> <blockquote> **Note**<br/> Regardless of the cft.cftcat.enable_deprecated_blknum parameter setting, BLKNUM is disabled in a multi-node configuration (uconf:cft.multi_node.enable=Yes), and this message is displayed.<br/> </blockquote>  |
 | Consequence | The command is ignored. |
 
 
@@ -15680,7 +15680,7 @@
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTC29W"></span>CFTC29W Catalog Alert fill threshold reached: level=&amp;level , id=CAT0<br/> CFTC29W Catalog Alert fill threshold reached: level=&amp;level ID=&amp;id |
 | --- | --- |
-| Explanation | &amp;level of the catalog space has been used. &amp;level is the amount set by the CFTCAT TLVWARN parameter.<br/> When the critical fill threshold is reached, a message is recorded in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} log.<br/> A batch in response to the alert, the CFTCAT TLVWEXEC parameter, is submitted. |
+| Explanation | &amp;level of the catalog space has been used. &amp;level is the amount set by the CFTCAT TLVWARN parameter.<br/> When the critical fill threshold is reached, a message is recorded in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} log.<br/> A batch in response to the alert, the CFTCAT TLVWEXEC parameter, is submitted. |
 
 
 
@@ -15717,7 +15717,7 @@
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF01E"></span>CFTF01E PART=&amp;part IDF=&amp;idf IDT=&amp;idt local file [&amp;fname] creation error &amp;diagi<br/> CFTF01E local file [&amp;fname] creation error &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
 | --- | --- |
 | Explanation | During a transfer request a local error was detected when creating a file. |
-| Consequence | The transfer is not executed. The corresponding entry in the catalog is set to the K state if RKERROR=KEEP and the catalog entry is deleted by the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} if RKERROR=DELETE. |
+| Consequence | The transfer is not executed. The corresponding entry in the catalog is set to the K state if RKERROR=KEEP and the catalog entry is deleted by the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} if RKERROR=DELETE. |
 | Action | Analyze the file access system code, correct the error and try again. |
 
 
@@ -15739,7 +15739,7 @@
 | V23 format<br/> V24 format<br/> Warning | CFTF02W PART=&amp;part IDF=&amp;idf IDT=&amp;idt local file selection error (file not found ignored) &amp;scs<br/> CFTF02W local file selection error (file not found ignored) &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
 | --- | --- |
 | Explanation | During a transfer request, a local error was detected when selecting a file.  |
-| Consequence | When you set <code>filenotfound</code> to <code>ignore</code> in the transfer request, the transfer is executed, the file is ignored, and the corresponding catalog entry is terminated (completed).  |
+| Consequence | When you set <span ><code>filenotfound</code></span> to <span ><code>ignore</code></span> in the transfer request, the transfer is executed, the file is ignored, and the corresponding catalog entry is terminated (completed).  |
 | Action | You can ignore the message.  |
 
 
@@ -15881,7 +15881,7 @@
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF25E"></span>CFTF25E PART=&amp;part IDF=&amp;idf IDT=&amp;idt working file rename error &amp;scs<br/> CFTF25E working file rename error &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &gt; |
 | --- | --- |
 | Explanation | At the end of a transfer using an intermediate file (CFTRECV WFNAME =) an error was detected: the intermediate file could not be renamed. |
-| Consequence | The file is correctly transferred but an error is reported to the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} user. |
+| Consequence | The file is correctly transferred but an error is reported to the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} user. |
 
 
 
@@ -16110,7 +16110,7 @@
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH01E"></span>CFTH01E PART=&amp;part Context area allocation failure CS=&amp;scs<br/> CFTH01E Context area allocation failure &lt;PART=&amp;part CS=&amp;cs&gt; |
 | --- | --- |
 | Explanation | Cannot allocate the working area necessary for the transfer. |
-| Consequence | In REQUESTER mode, the transfer is refused with a Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} 122 diagnostic code and a MALLOC protocol diagnostic message.<br/> In SERVER mode, the incoming call is rejected. In this case, as the partner's name is not known, the value UNKNOWN is displayed. |
+| Consequence | In REQUESTER mode, the transfer is refused with a {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} 122 diagnostic code and a MALLOC protocol diagnostic message.<br/> In SERVER mode, the incoming call is rejected. In this case, as the partner's name is not known, the value UNKNOWN is displayed. |
 
 
 
@@ -16120,7 +16120,7 @@
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH02E"></span>CFTH02E PART=&amp;part TFIL Exchange buffer allocation failure CS=&amp;scs<br/> CFTH02E TFIL Exchange buffer allocation failure &lt;PART=&amp;part CS=&amp;cs&gt; |
 | --- | --- |
 | Explanation | Cannot allocate the working area required to exchange information between the PROTOCOL task and the FILE task. |
-| Consequence | In REQUESTER mode, the transfer is refused with a Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} 122 code and a MALLOC protocol diagnostic message.<br/> In SERVER mode, the incoming call is rejected. In this case, as the partner's name is not known, the value UNKNOWN is displayed. |
+| Consequence | In REQUESTER mode, the transfer is refused with a {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} 122 code and a MALLOC protocol diagnostic message.<br/> In SERVER mode, the incoming call is rejected. In this case, as the partner's name is not known, the value UNKNOWN is displayed. |
 
 
 
@@ -16130,7 +16130,7 @@
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH03E"></span>CFTH03E PART=&amp;part Error sending data on network NCR=&amp;ncr NCS=&amp;ncs NET=&amp;net<br/> CFTH03E Error sending data on network &lt;PART=&amp;part NCR=&amp;ncr NCS=&amp;cs NET=&amp;net&gt; |
 | --- | --- |
 | Explanation | Cannot send a message on the network. |
-| Consequence | The transfer is interrupted with a Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} 302 code and a protocol diagnostic message indicating the specific error code of the error that occurred during the send request. This code is expressed in hexadecimal. |
+| Consequence | The transfer is interrupted with a {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} 302 code and a protocol diagnostic message indicating the specific error code of the error that occurred during the send request. This code is expressed in hexadecimal. |
 
 
 
@@ -16168,7 +16168,7 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH07E"></span>CFTH07E PART=&amp;part TFIL task Synchronization error CR=&amp;cr CS=&amp;scs<br/> CFTH07E TFIL task Synchronization error &lt;PART=&amp;part CR= &amp;cr CS=&amp;cs&gt; |
 | --- | --- |
-| Explanation | Problem encountered when sending a Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} internal message to the FILE task. |
+| Explanation | Problem encountered when sending a {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} internal message to the FILE task. |
 | Consequence | The transfer is aborted by the protocol task (network disconnection). However, as the FILE task is not protected by a time-out, the request remains in the C status in the catalog. |
 
 
@@ -16188,7 +16188,7 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH09E"></span>CFTH09E PART=&amp;part Network connect request local error NCR=&amp;ncr NCS=&amp;ncs<br/> CFTH09E Network connect request local error &lt;PART=&amp;part NCR=&amp;ncr NCS=&amp;cs NET=&amp;net&gt; |
 | --- | --- |
-| Explanation | Cannot make an outgoing connection request on the network. For a general -6 code (maximum number of connections reached on the resource), the transfer is refused with a Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} 416 diagnostic code and a MAXCNX protocol diagnostic message.<br/> The transfer will be retried (minimum time-out equal to the WSCAN parameter of the CFTCAT command), without incrementing the retry counter. |
+| Explanation | Cannot make an outgoing connection request on the network. For a general -6 code (maximum number of connections reached on the resource), the transfer is refused with a {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} 416 diagnostic code and a MAXCNX protocol diagnostic message.<br/> The transfer will be retried (minimum time-out equal to the WSCAN parameter of the CFTCAT command), without incrementing the retry counter. |
 
 
 
@@ -16208,7 +16208,7 @@
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH11E"></span>CFTH11E PART=&amp;part Error Opening session EV=&amp;pevent ST=&amp;pstate<br/> CFTH11E Error Opening session &lt;PART=&amp;part EV=&amp;pevent ST=&amp;pstate&gt; |
 | --- | --- |
 | Explanation | Problem opening a PeSIT session with a remote partner after establishing the network session. |
-| Consequence | The transfer is aborted with a Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} 451 diagnostic code. |
+| Consequence | The transfer is aborted with a {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} 451 diagnostic code. |
 
 
 
@@ -16306,7 +16306,7 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH21E"></span>CFTH21E PART=&amp;part MAIN task Synchronization error CR=&amp;cr CS=&amp;scs<br/> CFTH21E MAIN task Synchronization error &lt;PART=&amp;part CR= &amp;cr CS=&amp;cs&gt; |
 | --- | --- |
-| Explanation | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} internal synchronization error. |
+| Explanation | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} internal synchronization error. |
 
 
 
@@ -16315,7 +16315,7 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH22E"></span>CFTH22E PART=&amp;part rejected DIAGI=&amp;diagi &lt;HOST=&amp;addr&gt;<br/> CFTH22E NPART=&amp;part rejected DIAGI=&amp;diagi &lt;HOST=&amp;pstate&gt; |
 | --- | --- |
-| Explanation | Where:<br/> • addr: The caller's IP address<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} refuses to open a protocol session following a request to do so from a partner.<br/> The message displays the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} diagnostic code. |
+| Explanation | Where:<br/> • addr: The caller's IP address<br/> {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} refuses to open a protocol session following a request to do so from a partner.<br/> The message displays the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} diagnostic code. |
 | Consequence | The transfer is aborted. No trace of this attempt appears in the catalog. |
 
 
@@ -16325,7 +16325,7 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH23E"></span>CFTH23E NPART=&amp;part rejected EVENT=&amp;pevent<br/> CFTH23E PART=&amp;part rejected EVENT=&amp;pevent |
 | --- | --- |
-| Explanation | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} refuses to open a protocol session for internal reasons, following a request to do so from a partner. The event which caused this rejection is displayed in the message. |
+| Explanation | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} refuses to open a protocol session for internal reasons, following a request to do so from a partner. The event which caused this rejection is displayed in the message. |
 | Consequence | The transfer is aborted. No trace of this attempt appears in the catalog. |
 
 
@@ -16366,7 +16366,7 @@
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH27E"></span>CFTH27E PART=&amp;part SYNC FPDU without synchronization<br/> CFTH27E SYNC FPDU without synchronization &lt;PART=&amp;part&gt; |
 | --- | --- |
 | Explanation | A synchronization FPDU was received unexpectedly as the Functional Synchronization Unit was not negotiated at the beginning of the session. |
-| Consequence | The transfer is aborted with a Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} 730 diagnostic code, a protocol violation. |
+| Consequence | The transfer is aborted with a {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} 730 diagnostic code, a protocol violation. |
 
 
 
@@ -16405,7 +16405,7 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTH31E"></span>CFTH31E PART=&amp;part Invalid AckTRANS.END FPDU &amp;str<br/> CFTH31E Invalid AckTRANS.END FPDU &lt;PART=&amp;part &amp;str&gt; |
 | --- | --- |
-| Explanation | The AckTRANSFER.END FPDU sent by the SERVER partner does not conform.<br/> The field "&amp;str" is an explicit character string:<br/> • Byte count mismatch n for n: The number of bytes transferred does not correspond to the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}-maintained counter<br/> • Record count mismatch n for n: The number of records transferred does not correspond to the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}-maintained counter<br/> • Mismatch between header and FPDU size: The FPDU length indicated in the header is not equal to the length of the FPDU received<br/> • Unknown FPDU: The number identifying the received FPDU is not referenced<br/> • Missing PI number n into FPDU: The PI is mandatory for this type of FPDU<br/> • Unknown PI number n into FPDU: The PI is unknown for this type of FPDU<br/> • PGI n in PGI into FPDU: The presence of a PGI embedded in another PGI is invalid<br/> • Invalid length n for PI n into FPDU: The length of the PI is invalid (less than minimum length or greater than maximum length) |
+| Explanation | The AckTRANSFER.END FPDU sent by the SERVER partner does not conform.<br/> The field "&amp;str" is an explicit character string:<br/> • Byte count mismatch n for n: The number of bytes transferred does not correspond to the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}-maintained counter<br/> • Record count mismatch n for n: The number of records transferred does not correspond to the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}-maintained counter<br/> • Mismatch between header and FPDU size: The FPDU length indicated in the header is not equal to the length of the FPDU received<br/> • Unknown FPDU: The number identifying the received FPDU is not referenced<br/> • Missing PI number n into FPDU: The PI is mandatory for this type of FPDU<br/> • Unknown PI number n into FPDU: The PI is unknown for this type of FPDU<br/> • PGI n in PGI into FPDU: The presence of a PGI embedded in another PGI is invalid<br/> • Invalid length n for PI n into FPDU: The length of the PI is invalid (less than minimum length or greater than maximum length) |
 | Consequence | Transfer aborted with DIAGI=220, DIAGP=ATE + PeSIT code. |
 
 
@@ -16673,7 +16673,7 @@
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTH58I"></span>CFTH58I PART=&amp;part IDS=&amp;ids IDF=&amp;idf NIDT=&amp;idt transfer deselected T=&amp;n<br/> CFTH58I transfer deselected &lt;PART=&amp;part IDS=&amp;ids IDF=&amp;idf NIDT=&amp;idt T=&amp;n&gt; |
 | --- | --- |
-| Explanation | A transfer passed the deselection phase in the PeSIT session referred to by the IDS. The IDS is the reference for this particular session context.<br/> The T field indicates the armed time-out for the CFTPROT parameter:<br/> • disctd – requester mode, or<br/> • discts – server mode |
+| Explanation | A transfer passed the deselection phase in the PeSIT session referred to by the IDS. The IDS is the reference for this particular session context.<br/> The T field indicates the armed time-out for the CFTPROT parameter:<br/> • disctd – requester mode, <span >or</span><br/> • discts – server mode |
 
 
 
@@ -16736,7 +16736,7 @@
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTH65I"></span>CFTH65I PART=&amp;part IDS=&amp;ids PESIT DMZ permanent session control call=&amp;n<br/> CFTH65I PESIT DMZ permanent session control call=&amp;n &lt;PART=&amp;part IDS=&amp;ids &gt; |
 | --- | --- |
-| Explanation | Support for permanent links in DMZ.<br/> Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} in DMZ does not give the TURN when there are no more files to send, but sends an FPDU Control Call to the initiator Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} at regular negotiated intervals to prevent the temporization from expiring.<br/> • &amp;ids = Session call id<br/> • &amp;call = interval for the DMZ control call |
+| Explanation | Support for permanent links in DMZ.<br/> {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} in DMZ does not give the TURN when there are no more files to send, but sends an FPDU Control Call to the initiator {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} at regular negotiated intervals to prevent the temporization from expiring.<br/> • &amp;ids = Session call id<br/> • &amp;call = interval for the DMZ control call |
 
 
 
@@ -16763,7 +16763,7 @@
 
 | V23 format<br/> V24 format<br/> Fatal | <span id="CFTI01F"></span>CFTI01F &amp;str <br/> CFTI01F &amp;str  |
 | --- | --- |
-| Explanation | Internal Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} execution error.<br/> The field "&amp;str" can have the following values:<br/> • CFT error &amp;scs:Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} inter-task communication system problem (waiting for the CFTMAIN scheduler task queue)<br/> • CFT error _ usage expired:The Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} user key (CFTPARM KEY) does not authorize Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} execution beyond the expired period<br/> • CFT error _ CFT usage not authorized:The Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} user key (CFTPARM KEY) does not authorize Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} execution on this operating system or computer<br/> • CFT error _ file keys not available: The Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} user keys are stored in an indirection file (CFTPARM KEY parameter); this file cannot be accessed by Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}<br/> • CFT error &amp;scs _ Common_area allocation failed:Definition of the memory area common to the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} tasks has failed. This can be caused by insufficient memory<br/> • CFT error &amp;scs _ Mailbox definition failed: Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} is unable to link to a mailbox defined by the *CFTOM command<br/> • CFT error &amp;scs _ CFT semaphore definition failed:Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} is unable to define an inter-task communications queue<br/> • CFT error _ CFTEXIT ID=&amp;id missing: A Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} task dedicated to file EXITs could not be activated (the CFTEXIT command relating to the identifier mentioned (ID) was not found)<br/> • CFT error _ Maximum process CFTEXIT running reached: A Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} task dedicated to file EXITs could not be activated (the maximum number of EXIT processes that can be activated has already been reached)<br/> • CFT error &amp;cs _ Initializing process CFTEXIT: A Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} task dedicated to file EXITs could not be activated (the maximum number of EXIT processes that can be activated has already been reached)<br/> • CFT error _ &amp;Net Network Access Method Option not authorized by license key:The Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} is NOT authorized to use the optional network access method designated by &amp;Net (TCP/IP).<br/> • CFT error _ SSL Protocol Option not authorized by license key:A protocol defined in the CFTPARM object uses the SSL option, but the SSL option is not available with this license key.<br/> • CFT error _ FIPS Compliance Option not authorized by license key:The uconf:cft.fips.enable_compliance parameter is set to Yes, but the FIPS option is not available with this license key.<br/> • CFT error _ File Transfer Acceleration Option not authorized by license key:The uconf:acceleration.enable parameter is set to Yes, but the acceleration option is not available with this license key. |
+| Explanation | Internal {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} execution error.<br/> The field "&amp;str" can have the following values:<br/> • CFT error &amp;scs:{{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} inter-task communication system problem (waiting for the CFTMAIN scheduler task queue)<br/> • CFT error _ usage expired:The {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} user key (CFTPARM KEY) does not authorize {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} execution beyond the expired period<br/> • CFT error _ CFT usage not authorized:The {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} user key (CFTPARM KEY) does not authorize {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} execution on this operating system or computer<br/> • CFT error _ file keys not available: The {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} user keys are stored in an indirection file (CFTPARM KEY parameter); this file cannot be accessed by {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}<br/> • CFT error &amp;scs _ Common_area allocation failed:Definition of the memory area common to the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} tasks has failed. This can be caused by insufficient memory<br/> • CFT error &amp;scs _ Mailbox definition failed: {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} is unable to link to a mailbox defined by the *CFTOM command<br/> • CFT error &amp;scs _ CFT semaphore definition failed:{{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} is unable to define an inter-task communications queue<br/> • CFT error _ CFTEXIT ID=&amp;id missing: A {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} task dedicated to file EXITs could not be activated (the CFTEXIT command relating to the identifier mentioned (ID) was not found)<br/> • CFT error _ Maximum process CFTEXIT running reached: A {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} task dedicated to file EXITs could not be activated (the maximum number of EXIT processes that can be activated has already been reached)<br/> • CFT error &amp;cs _ Initializing process CFTEXIT: A {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} task dedicated to file EXITs could not be activated (the maximum number of EXIT processes that can be activated has already been reached)<br/> • CFT error _ &amp;Net Network Access Method Option not authorized by license key:The {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} is NOT authorized to use the optional network access method designated by &amp;Net (TCP/IP).<br/> • CFT error _ SSL Protocol Option not authorized by license key:A protocol defined in the CFTPARM object uses the SSL option, but the SSL option is not available with this license key.<br/> • CFT error _ FIPS Compliance Option not authorized by license key:The uconf:cft.fips.enable_compliance parameter is set to Yes, but the FIPS option is not available with this license key.<br/> • CFT error _ File Transfer Acceleration Option not authorized by license key:The uconf:acceleration.enable parameter is set to Yes, but the acceleration option is not available with this license key. |
 | Consequence | The transfer concerned by the incident is interrupted, which is the K status. |
 | Action | Check parameter settings, analyze the &amp;cs code value to determine, if necessary, the origin of the error:<br/> • CFT error &amp;scs _ LOG stop failed: The message logging task cannot be stopped<br/> • CFT error &amp;scs _ mailbox delete failed: A mailbox defined by a CFTCOM command cannot be deleted |
 | Consequence | The Transfer CFT initialization phase has stopped. |
@@ -16776,8 +16776,8 @@
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTI01W"></span>CFTI01W &amp;str<br/> CFTI01W &amp;str  |
 | --- | --- |
-| Explanation | CFT error &amp;scs _ Initializing process CFTTFIL: A Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} task dedicated to transfer file access could not be activated. |
-| Consequence  | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} is not stopped, and transfers are not interrupted.  |
+| Explanation | CFT error &amp;scs _ Initializing process CFTTFIL: A {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} task dedicated to transfer file access could not be activated. |
+| Consequence  | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} is not stopped, and transfers are not interrupted.  |
 | Action | No action necessary. |
 
 
@@ -16787,9 +16787,9 @@
 
 | V23 format<br/> V24 format<br/> Fatal | <span id="CFTI02F"></span>CFTI02F Init Error code &amp;scs _ Allocating param. file &amp;fname<br/> CFTI02F Init Error code &amp;scs _ Allocating param. file &amp;fname |
 | --- | --- |
-| Explanation | During Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} initialization an error was detected when allocating the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} parameter file. |
+| Explanation | During {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} initialization an error was detected when allocating the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} parameter file. |
 | Consequence | The Transfer CFT initialization phase has stopped. |
-| Action | Check that the file is not already allocated; if it exists, correct the error and then restart Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}. |
+| Action | Check that the file is not already allocated; if it exists, correct the error and then restart {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}. |
 
 
 
@@ -16798,9 +16798,9 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI03F"></span>CFTI03F Init Error code &amp;scs _ Opening param. file &amp;fname<br/> CFTI03F Init Error code &amp;scs _ Opening param. file &amp;fname |
 | --- | --- |
-| Explanation | During Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} initialization an error was detected when opening the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} parameter file. |
+| Explanation | During {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} initialization an error was detected when opening the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} parameter file. |
 | Consequence | The Transfer CFT initialization phase has stopped. |
-| Action | Correct the error and then restart Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}. |
+| Action | Correct the error and then restart {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}. |
 
 
 
@@ -16809,9 +16809,9 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI04F"></span>CFTI04F Init Error code &amp;scs _ Allocating partners file &amp;fname<br/> CFTI04F Init Error code &amp;scs _ Allocating partners file &amp;fname |
 | --- | --- |
-| Explanation | During Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} initialization an error was detected when allocating the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} partner file. |
+| Explanation | During {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} initialization an error was detected when allocating the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} partner file. |
 | Consequence | The Transfer CFT initialization phase has stopped. |
-| Action | Check that the file is not already allocated, correct the error and then restart Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}. |
+| Action | Check that the file is not already allocated, correct the error and then restart {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}. |
 
 
 
@@ -16820,9 +16820,9 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI05F"></span>CFTI05F Init Error code &amp;scs _ Opening partners file &amp;fname<br/> CFTI05F Init Error code &amp;scs _ Opening partners file &amp;fname |
 | --- | --- |
-| Explanation | During Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} initialization an error was detected when opening the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} partner file. |
+| Explanation | During {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} initialization an error was detected when opening the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} partner file. |
 | Consequence | The Transfer CFT initialization phase has stopped. |
-| Action | Correct the error and then restart Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}. |
+| Action | Correct the error and then restart {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}. |
 
 
 
@@ -16831,9 +16831,9 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI06F"></span>CFTI06F Init Error code &amp;scs _ Allocating catalog file &amp;fname<br/> CFTI06F Init Error code &amp;scs _ Allocating catalog file &amp;fname |
 | --- | --- |
-| Explanation | During Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} initialization an error was detected when allocating the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog file. |
+| Explanation | During {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} initialization an error was detected when allocating the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} catalog file. |
 | Consequence | The Transfer CFT initialization phase has stopped. |
-| Action | Check that the file is not already allocated, correct the error and then restart Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}. |
+| Action | Check that the file is not already allocated, correct the error and then restart {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}. |
 
 
 
@@ -16842,7 +16842,7 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI08F"></span>CFTI08F Init error _ Protocol process<br/> CFTI08F Init error _ Protocol process |
 | --- | --- |
-| Explanation | During Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} initialization an error was detected when activating the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} protocol process. |
+| Explanation | During {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} initialization an error was detected when activating the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} protocol process. |
 | Consequence | The Transfer CFT initialization phase has stopped. |
 | Action | Inform Transfer CFT Support. |
 
@@ -16853,7 +16853,7 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI09F"></span>CFTI09F Init error _ Communication process<br/> CFTI09F Init error _ Communication process |
 | --- | --- |
-| Explanation | During Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} initialization an error was detected when activating the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} communication process. |
+| Explanation | During {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} initialization an error was detected when activating the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} communication process. |
 | Consequence | The Transfer CFT initialization phase has stopped. |
 | Action | Inform Transfer CFT Support. |
 
@@ -16864,7 +16864,7 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI10F"></span>CFTI10F Init error _ Logger process<br/> CFTI10F Init error _ Logger process |
 | --- | --- |
-| Explanation | During Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} initialization an error was detected when activating the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} message logging process.<br/> It may be a memory allocation or queue definition type system error (or a problem when submitting a message to the queue). |
+| Explanation | During {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} initialization an error was detected when activating the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} message logging process.<br/> It may be a memory allocation or queue definition type system error (or a problem when submitting a message to the queue). |
 | Consequence | The Transfer CFT initialization phase has stopped. |
 | Action | Inform Product Support. |
 
@@ -16875,7 +16875,7 @@
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTI11I"></span>CFTI11I Init complete _ Logger process<br/> CFTI11I Init complete _ Logger process |
 | --- | --- |
-| Explanation | Normal end of Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} logging process initialization. |
+| Explanation | Normal end of {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} logging process initialization. |
 
 
 
@@ -16884,7 +16884,7 @@
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTI12I"></span>CFTI12I Init complete _ Protocol process<br/> CFTI12I Init complete _ Protocol process |
 | --- | --- |
-| Explanation | Normal end of Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} protocol process initialization. |
+| Explanation | Normal end of {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} protocol process initialization. |
 
 
 
@@ -16893,7 +16893,7 @@
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTI13I"></span>CFTI13I Init complete _ Communication process<br/> CFTI13I Init complete _ Communication process |
 | --- | --- |
-| Explanation | Normal end of Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} communication task initialization. |
+| Explanation | Normal end of {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} communication task initialization. |
 
 
 
@@ -16902,7 +16902,7 @@
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI14I"></span>CFTI14I CFT Init complete<br/> CFTI14I CFT Init complete |
 | --- | --- |
-| Explanation | Normal end of Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} initialization. |
+| Explanation | Normal end of {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} initialization. |
 
 
 
@@ -16933,7 +16933,7 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI17F"></span>CFTI17F Init error _ Account file &amp;fname<br/> CFTI17F Init error _ Account file &amp;fname |
 | --- | --- |
-| Explanation | During the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} initialization phase an error was detected when processing the accounting file (CFTACCNT command). |
+| Explanation | During the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} initialization phase an error was detected when processing the accounting file (CFTACCNT command). |
 | Consequence | The Transfer CFT initialization phase has stopped. |
 | Action | Check the existence and integrity of the &amp;fname file. |
 
@@ -16944,8 +16944,8 @@
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI18I"></span>CFTI18I _ &amp;str<br/> CFTI18I _ &amp;str |
 | --- | --- |
-| Explanation | This is a Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} welcome message describing the computer environment and the main runtime characteristics, according to the options activated by the software key (KEY parameter):<br/> • Usage of this product is strictly limited to &amp;cpu_id machine: The Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} can only be executed on the computer with the designated CPU<br/> • Usage of this product is strictly limited to &amp;label: The Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} can only be executed within a specific framework, as designated by &amp;label<br/> • Usage of this product is strictly limited until &amp;date: The Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} cannot be executed after the date designated by &amp;date<br/> • &amp;Maxtrans simultaneous transfer(s) is(are) authorized: Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} cannot process more than &amp;Maxtrans simultaneous transfers. This value overrides the MAXTRANS parameter in the CFTPARM command<br/> • &amp;Net Network Access Method Option is authorized: The Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} is authorized to use the optional network access method designated by &amp;Net (TCP/IP)<br/> QQQ_QQQ_QQQ_LIST<br/> • The information in this message is related to the UCONF setting for server.authentication_method.<br/> • For more information on Access Management parameters, see the Password authentication for synchronous communication media section in <a href="../../../internal_a_m_start_here/about_passport_am/unconf_access_management">Access Management and PassPort AM parameters</a>.<br/> <br/> • &amp;Prot Protocol Option is authorized: Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} is authorized to use the protocol option designated by &amp;Prot (Secure PeSIT)<br/> If an attempt is made to use an unauthorized option, such as a network access method or protocol option, Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} does not start, and displays a message.<br /> Information messages include:<br/> <div > • FNAME: CFTLOG name<br/> • AFNAME: CFTALOG name<br/> • TYPE: File FNAME: file communication name<br/> • TYPE :Mbx FNAME : mailbox name<br/> • TYPE :TCPIP HOST: host name PORT: port if synchronous communication<br/> </div> If PassPort is used for SSL:<br/> • CFTI18I hostname : addrhost<br/> • CFTI18I port : port number<br/> • See also <a href="../../../internal_a_m_start_here/about_passport_am/unconf_access_management">Access Management and PassPort AM parameters</a>. |
-| Consequence | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} is stopped during the initialization phase. |
+| Explanation | This is a {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} welcome message describing the computer environment and the main runtime characteristics, according to the options activated by the software key (KEY parameter):<br/> • Usage of this product is strictly limited to &amp;cpu_id machine: The {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} can only be executed on the computer with the designated CPU<br/> • Usage of this product is strictly limited to &amp;label: The {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} can only be executed within a specific framework, as designated by &amp;label<br/> • Usage of this product is strictly limited until &amp;date: The {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} cannot be executed after the date designated by &amp;date<br/> • &amp;Maxtrans simultaneous transfer(s) is(are) authorized: {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} cannot process more than &amp;Maxtrans simultaneous transfers. This value overrides the MAXTRANS parameter in the CFTPARM command<br/> • &amp;Net Network Access Method Option is authorized: The {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} is authorized to use the optional network access method designated by &amp;Net (TCP/IP)<br/> QQQ_QQQ_QQQ_LIST<br/> • The information in this message is related to the UCONF setting for server.authentication_method.<br/> • For more information on Access Management parameters, see the Password authentication for synchronous communication media section in <a href="../../../internal_a_m_start_here/about_passport_am/unconf_access_management">Access Management and PassPort AM parameters</a>.<br/> <br/> • &amp;Prot Protocol Option is authorized: {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} is authorized to use the protocol option designated by &amp;Prot (Secure PeSIT)<br/> If an attempt is made to use an unauthorized option, such as a network access method or protocol option, {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} does not start, and displays a message.<br /> Information messages include:<br/> <div > • FNAME: CFTLOG name<br/> • AFNAME: CFTALOG name<br/> • TYPE: File FNAME: file communication name<br/> • TYPE :Mbx FNAME : mailbox name<br/> • TYPE :TCPIP HOST: host name PORT: port if synchronous communication<br/> </div> If PassPort is used for SSL:<br/> • CFTI18I hostname : addrhost<br/> • CFTI18I port : port number<br/> • See also <a href="../../../internal_a_m_start_here/about_passport_am/unconf_access_management">Access Management and PassPort AM parameters</a>. |
+| Consequence | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} is stopped during the initialization phase. |
 
 
 
@@ -16965,7 +16965,7 @@
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTI19I"></span>CFTI19I © Copyright AXWAY,....<br/> CFTI19I © Copyright AXWAY,.... |
 | --- | --- |
-| Explanation | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} copyright message. |
+| Explanation | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} copyright message. |
 
 
 
@@ -16975,7 +16975,7 @@
 | V23 format<br/> V24 format<br/> Fatal | <span id="CFTI20F"></span>CFTI20F Semaphore definition failure CR=&amp;cr CS= &amp;scs<br/> CFTI20F Semaphore definition failure CR=&amp;cr CS= &amp;scs |
 | --- | --- |
 | Explanation | Cannot define the internal communications queue. |
-| Consequence | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} is stopped during its initialization phase. |
+| Consequence | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} is stopped during its initialization phase. |
 
 
 
@@ -16985,7 +16985,7 @@
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI21F"></span>CFTI21F CFTNET=&amp;id Resource define failure CS=&amp;ncs<br/> CFTI21F CFTNET=&amp;id Resource define failure CS=&amp;ncs |
 | --- | --- |
 | Explanation | Cannot define the resource. The resource identifier for this CFTNET command displays in the message. |
-| Consequence | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} is stopped during its initialization phase. |
+| Consequence | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} is stopped during its initialization phase. |
 
 
 
@@ -16995,7 +16995,7 @@
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI22F"></span>CFTI22F CFTPROT=&amp;id Register request failure CS=&amp;ncs<br/> CFTI22F CFTPROT=&amp;id Register request failure CS=&amp;ncs |
 | --- | --- |
 | Explanation | Cannot register the protocol defined in this CFTPROT command. |
-| Consequence | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} is stopped during its initialization phase. |
+| Consequence | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} is stopped during its initialization phase. |
 
 
 
@@ -17005,7 +17005,7 @@
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI23F"></span>CFTI23F MAIN synchronization failure CR=&amp;cr CS=&amp;scs<br/> CFTI23F MAIN synchronization failure CR=&amp;cr CS=&amp;scs |
 | --- | --- |
 | Explanation | Internal synchronization error between the main Transfer CFT task and the protocol task. |
-| Consequence | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} is stopped during its initialization phase. |
+| Consequence | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} is stopped during its initialization phase. |
 
 
 
@@ -17014,7 +17014,7 @@
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTI24I"></span>CFTI24I &amp;str<br/> CFTI24I &amp;str |
 | --- | --- |
-| Explanation | Message displayed when viewing the command cache or the transfer cache: CFTUTIL or CFTINT MQUERY command.<br/> The messages depend on the type of cache concerned (command or catalog):<br/> * TRANSFER CACHE IS EMPTY<br/> The catalog cache is empty.<br/> The messages vary according to the context:Or gives details of the cache information (catalog or command cache) according to the type of information displayed<br/> For a line in the command cache, the information is divided into three parts:<br/> • command execution<br/> • DATE and TIME<br/> • type of command (SWITCH ACCNT, SWITCH LOG or PURGE)<br/> For a transfer, the information is divided into four parts:<br/> • request activation time<br/> • identifier of the partner concerned<br/> • idf identifier and<br/> • IDT value calculated by Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
+| Explanation | Message displayed when viewing the command cache or the transfer cache: CFTUTIL or CFTINT MQUERY command.<br/> The messages depend on the type of cache concerned (command or catalog):<br/> * TRANSFER CACHE IS EMPTY<br/> The catalog cache is empty.<br/> The messages vary according to the context:Or gives details of the cache information (catalog or command cache) according to the type of information displayed<br/> For a line in the command cache, the information is divided into three parts:<br/> • command execution<br/> • DATE and TIME<br/> • type of command (SWITCH ACCNT, SWITCH LOG or PURGE)<br/> For a transfer, the information is divided into four parts:<br/> • request activation time<br/> • identifier of the partner concerned<br/> • idf identifier and<br/> • IDT value calculated by {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} |
 
 
 
@@ -17023,7 +17023,7 @@
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI25I"></span>CFTI25I Init complete _ Security active [&amp;str]<br/> CFTI25I Init complete _ Security active [&amp;str] |
 | --- | --- |
-| Explanation | The description of the message &amp;str specifies the activated security options:<br/> • HAB: Normal end of initialization with activation of the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} security system<br/> • SSL: Normal end of initialization with activation of the SSL protocol<br/> The information in this message is affected by the UCONF setting for access management. For more information, see the am.type parameter and access management options in <a href="../../../internal_a_m_start_here/about_passport_am/unconf_access_management">Access Management and PassPort AM parameters</a>. |
+| Explanation | The description of the message &amp;str specifies the activated security options:<br/> • HAB: Normal end of initialization with activation of the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} security system<br/> • SSL: Normal end of initialization with activation of the SSL protocol<br/> The information in this message is affected by the UCONF setting for access management. For more information, see the am.type parameter and access management options in <a href="../../../internal_a_m_start_here/about_passport_am/unconf_access_management">Access Management and PassPort AM parameters</a>. |
 
 
 
@@ -17032,7 +17032,7 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI26I"></span>CFTI26I Init complete _ Security not active<br/> CFTI26I Init complete _ Security not active |
 | --- | --- |
-| Explanation | Normal end of initialization without activating the Security option (Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} security system and the SSL protocol). |
+| Explanation | Normal end of initialization without activating the Security option ({{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} security system and the SSL protocol). |
 
 
 
@@ -17041,7 +17041,7 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTI27F"></span>CFTI27F Init Error code &amp;scs _ Opening security file &amp;file<br/> CFTI27F Init Error code &amp;scs _ Opening security file &amp;file |
 | --- | --- |
-| Explanation | When Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} was initialized, a security system open error was detected. |
+| Explanation | When {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} was initialized, a security system open error was detected. |
 | Consequence | The Transfer CFT initialization phase is stopped. |
 | Action | Inform Product Support. |
 
@@ -17097,7 +17097,7 @@
 
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI39I"></span>CFTI39I &amp;str<br/> CFTI39I &amp;str |
 | --- | --- |
-| Explanation | Displays information about the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} Heartbeat. Possible states:<br/> • Enable<br/> • Update UCONF parameters<br/> • Disable |
+| Explanation | Displays information about the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} Heartbeat. Possible states:<br/> • Enable<br/> • Update UCONF parameters<br/> • Disable |
 
 
 
@@ -17134,7 +17134,7 @@
 | V23 format<br/> V24 format<br/> Information  | <span id="CFTI42E"></span><span id="CFTI43I"></span>CFTI43I Attention: The Transfer CFT license expires in n days<br/> CFTI43I Attention: The Transfer CFT license expires in n days |
 | --- | --- |
 | Explanation | There are 7 days remaining on the license key for Transfer CFT. |
-| Action  | To obtain a new key:<br/> • For an existing installation, use the command **<code>cftutil about</code>** to retrieve your system information. The **ABOUT** command displays the Transfer CFT product, host, and key information, and characteristics of the platform on which Transfer CFT is installed.<br/> • Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.<br/> QQQ_QQQ_QQQ_LIST<br/> • For a US key, contact: <code>fulfillment@us.axway.com</code><br/> • For an EMEA or APAC key, contact: <code>product.key@axway.com</code><br/> <br/> • Provide the hostname and system information for the installed or updated Transfer CFT.<br/> To apply the key:<br/> To apply the license key from the Axway Fulfillment team, either:<br/> • Enter the key directly.<br/> • Enter the key(s) in the indirection file.<br/> <blockquote> **Note**<br/> When working in multi-node you must have one key per node and host.<br/> </blockquote> See the *Apply a license key* section in the Transfer CFT Installation Guide that corresponds with your OS for details. |
+| Action  | To obtain a new key:<br/> • For an existing installation, use the command <span  >**<code>cftutil about</code>**</span> to retrieve your system information. The **ABOUT** command displays the Transfer CFT product, host, and key information, and characteristics of the platform on which Transfer CFT is installed.<br/> • Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.<br/> QQQ_QQQ_QQQ_LIST<br/> • For a US key, contact: <span ><code>fulfillment@us.axway.com</code></span><br/> • For an EMEA or APAC key, contact: <span ><code>product.key@axway.com</code></span><br/> <br/> • Provide the hostname and system information for the installed or updated Transfer CFT.<br/> To apply the key:<br/> To apply the license key from the Axway Fulfillment team, either:<br/> • Enter the key directly.<br/> • Enter the key(s) in the indirection file.<br/> <blockquote> **Note**<br/> When working in multi-node you must have one key per node and host.<br/> </blockquote> See the *Apply a license key* section in the Transfer CFT Installation Guide that corresponds with your OS for details. |
 
 
 
@@ -17144,7 +17144,7 @@
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTI42E"></span><span id="CFTI43W"></span>CFTI43W Attention: The Transfer CFT license expires in n days<br/> CFTI43W Attention: The Transfer CFT license expires in n days |
 | --- | --- |
 | Explanation | There are fewer than 7 days remaining on the license key for Transfer CFT. |
-| Action  | To obtain a new key:<br/> • For an existing installation, use the command **<code>cftutil about</code>** to retrieve your system information. The **ABOUT** command displays the Transfer CFT product, host, and key information, and characteristics of the platform on which Transfer CFT is installed.<br/> • Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.<br/> QQQ_QQQ_QQQ_LIST<br/> • For a US key, contact: <code>fulfillment@us.axway.com</code><br/> • For an EMEA or APAC key, contact: <code>product.key@axway.com</code><br/> <br/> • Provide the hostname and system information for the installed or updated Transfer CFT.<br/> To apply the key:<br/> To apply the license key from the Axway Fulfillment team, either:<br/> • Enter the key directly.<br/> • Enter the key(s) in the indirection file.<br/> <blockquote> **Note**<br/> When working in multi-node you must have one key per node and host.<br/> </blockquote> See the *Apply a license key* section in the Transfer CFT Installation Guide that corresponds with your OS for details. |
+| Action  | To obtain a new key:<br/> • For an existing installation, use the command <span  >**<code>cftutil about</code>**</span> to retrieve your system information. The **ABOUT** command displays the Transfer CFT product, host, and key information, and characteristics of the platform on which Transfer CFT is installed.<br/> • Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.<br/> QQQ_QQQ_QQQ_LIST<br/> • For a US key, contact: <span ><code>fulfillment@us.axway.com</code></span><br/> • For an EMEA or APAC key, contact: <span ><code>product.key@axway.com</code></span><br/> <br/> • Provide the hostname and system information for the installed or updated Transfer CFT.<br/> To apply the key:<br/> To apply the license key from the Axway Fulfillment team, either:<br/> • Enter the key directly.<br/> • Enter the key(s) in the indirection file.<br/> <blockquote> **Note**<br/> When working in multi-node you must have one key per node and host.<br/> </blockquote> See the *Apply a license key* section in the Transfer CFT Installation Guide that corresponds with your OS for details. |
 
 
 
@@ -17154,7 +17154,7 @@
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTI42E"></span><span id="CFTI43E"></span>CFTI43E Attention: The Transfer CFT license has expired<br/> CFTI43E Attention: The Transfer CFT license has expired |
 | --- | --- |
 | Explanation | The Transfer CFT license key is no longer valid. |
-| Action  | To obtain a new key:<br/> • For an existing installation, use the command **<code>cftutil about</code>** to retrieve your system information. The **ABOUT** command displays the Transfer CFT product, host, and key information, and characteristics of the platform on which Transfer CFT is installed.<br/> • Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.<br/> QQQ_QQQ_QQQ_LIST<br/> • For a US key, contact: <code>fulfillment@us.axway.com</code><br/> • For an EMEA or APAC key, contact: <code>product.key@axway.com</code><br/> <br/> • Provide the hostname and system information for the installed or updated Transfer CFT.<br/> To apply the key:<br/> To apply the license key from the Axway Fulfillment team, either:<br/> • Enter the key directly.<br/> • Enter the key(s) in the indirection file.<br/> <blockquote> **Note**<br/> When working in multi-node you must have one key per node and host.<br/> </blockquote> See the *Apply a license key* section in the Transfer CFT Installation Guide that corresponds with your OS for details. |
+| Action  | To obtain a new key:<br/> • For an existing installation, use the command <span  >**<code>cftutil about</code>**</span> to retrieve your system information. The **ABOUT** command displays the Transfer CFT product, host, and key information, and characteristics of the platform on which Transfer CFT is installed.<br/> • Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.<br/> QQQ_QQQ_QQQ_LIST<br/> • For a US key, contact: <span ><code>fulfillment@us.axway.com</code></span><br/> • For an EMEA or APAC key, contact: <span ><code>product.key@axway.com</code></span><br/> <br/> • Provide the hostname and system information for the installed or updated Transfer CFT.<br/> To apply the key:<br/> To apply the license key from the Axway Fulfillment team, either:<br/> • Enter the key directly.<br/> • Enter the key(s) in the indirection file.<br/> <blockquote> **Note**<br/> When working in multi-node you must have one key per node and host.<br/> </blockquote> See the *Apply a license key* section in the Transfer CFT Installation Guide that corresponds with your OS for details. |
 
 
 
@@ -17212,7 +17212,7 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTN04E"></span>CFTN04E Synchronization error (&amp;str) SSLTID=&amp;pid CR=&amp;cr CS=&amp;scs<br/> CFTN04E Synchronization error (&amp;str) SSLTID=&amp;pid _ CR= &amp;cr CS=&amp;cs |
 | --- | --- |
-| Explanation | Problem with sending an internal Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} message to a CFTTSSL task. |
+| Explanation | Problem with sending an internal {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} message to a CFTTSSL task. |
 
 
 
@@ -17231,7 +17231,7 @@
 | V23 format<br/> V24 format<br/> Error | <span id="CFTN05E"></span>CFTN05E &amp;message<br/> CFTN05E &amp;message |
 | --- | --- |
 | Explanation | A TCP/IP error related to file transfer operations or resource initialization was detected. The message contains the explanation of the error in plain text. |
-| Consequence  | If the error occurs during the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} initialization phase, this phase is stopped. Otherwise, if the error is related to a file transfer, this transfer will not proceed.  |
+| Consequence  | If the error occurs during the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} initialization phase, this phase is stopped. Otherwise, if the error is related to a file transfer, this transfer will not proceed.  |
 | Action  | For an error occurring during the initialization phase, check the CFTNET definitions. For an error involving a file transfer, check the CFTPART definitions.  |
 
 
@@ -17313,9 +17313,9 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP01F"></span>CFTP01F CFTPARM &amp;id _ Not found<br/> CFTP01F CFTPARM &amp;id _ Not found |
 | --- | --- |
-| Explanation | The &amp;id identifier of the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} parameter file (see the CFTPARM parameter) is not defined. |
+| Explanation | The &amp;id identifier of the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} parameter file (see the CFTPARM parameter) is not defined. |
 | Consequence | The Transfer CFT initialization phase is stopped. |
-| Action | Check the CFTPARM parameter settings (see the CFTPARM parameter), correct and restart Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}. |
+| Action | Check the CFTPARM parameter settings (see the CFTPARM parameter), correct and restart {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}. |
 
 
 
@@ -17324,9 +17324,9 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP02F"></span>CFTP02F CFTTRACE &amp;id for CFTPARM &amp;id _ Not found<br/> CFTP02F CFTSYST &amp;id for CFTPARM &amp;id _ Not found |
 | --- | --- |
-| Explanation | When initializing Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}, the CFTTRACE &amp;id identifier was not found in the Transfer CFT parameter file. |
+| Explanation | When initializing {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}, the CFTTRACE &amp;id identifier was not found in the Transfer CFT parameter file. |
 | Consequence | The Transfer CFT initialization phase is stopped. |
-| Action | Check the CFTSYST parameter settings (see the CFTPARM parameter), correct and restart Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}. |
+| Action | Check the CFTSYST parameter settings (see the CFTPARM parameter), correct and restart {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}. |
 
 
 
@@ -17335,9 +17335,9 @@
 
 | V23 format<br/> V24 format<br/> Error | CFTP03F CFTLOG &amp;id for CFTPARM &amp;id _ Not found<br/> CFTP03F CFTLOG &amp;id for CFTPARM &amp;id _ Not found |
 | --- | --- |
-| Explanation | During Transfer CFT initialization the CFTLOG &amp;id identifier was not found in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} parameter file. |
+| Explanation | During Transfer CFT initialization the CFTLOG &amp;id identifier was not found in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} parameter file. |
 | Consequence | The Transfer CFT initialization phase is stopped. |
-| Action | Check the CFTLOG parameter settings (see the CFTPARM parameter), correct and restart Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}. |
+| Action | Check the CFTLOG parameter settings (see the CFTPARM parameter), correct and restart {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}. |
 
 
 
@@ -17346,9 +17346,9 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP04F"></span>CFTP04F CFTNET &amp;id for CFTPARM &amp;id _ Not found<br/> CFTP04F CFTNET &amp;id for CFTPARM &amp;id _ Not found |
 | --- | --- |
-| Explanation | During Transfer CFT initialization the CFTNET &amp;id identifier was not found in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} parameter file. |
+| Explanation | During Transfer CFT initialization the CFTNET &amp;id identifier was not found in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} parameter file. |
 | Consequence | The Transfer CFT initialization phase is stopped. |
-| Action | Check the CFTNET parameter settings (see the CFTPARM parameter), correct and restart Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}. |
+| Action | Check the CFTNET parameter settings (see the CFTPARM parameter), correct and restart {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}. |
 
 
 
@@ -17357,7 +17357,7 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP05F"></span>CFTP05F CFTPROT &amp;id for CFTPARM &amp;id_ Not found<br/> CFTP05F CFTPROT &amp;id for CFTPARM &amp;id _ Not found |
 | --- | --- |
-| Explanation | During Transfer CFT initialization the CFTPROT &amp;id identifier was not found in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} parameter file. |
+| Explanation | During Transfer CFT initialization the CFTPROT &amp;id identifier was not found in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} parameter file. |
 | Consequence | The Transfer CFT initialization phase is stopped. |
 | Action | Check the CFTPROT parameter settings (see CFTPROT), correct and restart Transfer CFT. |
 
@@ -17368,9 +17368,9 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP06F"></span>CFTP06F CFTCAT &amp;id for CFTPARM &amp;id _ Not found<br/> CFTP06F CFTCAT &amp;id for CFTPARM &amp;id _ Not found |
 | --- | --- |
-| Explanation | During Transfer CFT initialization the CFTCAT &amp;id identifier was not found in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} parameter file. |
+| Explanation | During Transfer CFT initialization the CFTCAT &amp;id identifier was not found in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} parameter file. |
 | Consequence | The Transfer CFT initialization phase is stopped. |
-| Action | Check the CFTCAT parameter settings (see CFTCAT), correct and restart Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}. |
+| Action | Check the CFTCAT parameter settings (see CFTCAT), correct and restart {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}. |
 
 
 
@@ -17379,9 +17379,9 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP07F"></span>CFTP07F CFTCOM &amp;id for CFTPARM &amp;id _ Not found<br/> CFTP07F CFTCOM &amp;id for CFTPARM &amp;id _ Not found |
 | --- | --- |
-| Explanation | During Transfer CFT initialization the CFTCOM &amp;id identifier was not found in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} parameter file. |
+| Explanation | During Transfer CFT initialization the CFTCOM &amp;id identifier was not found in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} parameter file. |
 | Consequence | The Transfer CFT initialization phase is stopped. |
-| Action | Check the CFTCOM parameter settings (see CFTCOM), correct and restart Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}. |
+| Action | Check the CFTCOM parameter settings (see CFTCOM), correct and restart {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}. |
 
 
 
@@ -17390,9 +17390,9 @@
 
 | V23 format<br/> V24 format<br/> Fatal | <span id="CFTP08F"></span>CFTP08F CFTNET &amp;id for CFTPROT &amp;id _ Not found<br/> CFTP08F CFTNET &amp;id for CFTPROT &amp;id _ Not found |
 | --- | --- |
-| Explanation | During Transfer CFT initialization the CFTNET &amp;id identifier for a given CFTPROT &amp;id protocol was not found in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} parameter file. |
+| Explanation | During Transfer CFT initialization the CFTNET &amp;id identifier for a given CFTPROT &amp;id protocol was not found in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} parameter file. |
 | Consequence | The Transfer CFT initialization phase is stopped. |
-| Action | Check:<br/> • the CFTNET and CFTPROT parameter settings (see the CFT CFTNET and CFTPROT topics)<br/> • the CFTPARM parameter settings<br/> • the list of authorized protocols and network identifiers (NET=(.,.), PROT=(.,.) ) that the number of items in this list does not exceed the maximum authorized quota<br/> Correct and restart Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}. |
+| Action | Check:<br/> • the CFTNET and CFTPROT parameter settings (see the CFT CFTNET and CFTPROT topics)<br/> • the CFTPARM parameter settings<br/> • the list of authorized protocols and network identifiers (NET=(.,.), PROT=(.,.) ) that the number of items in this list does not exceed the maximum authorized quota<br/> Correct and restart {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}. |
 
 
 
@@ -17402,8 +17402,8 @@
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP09F"></span>CFTP09F CFTSEND &amp;id for CFTPARM &amp;id _ No default record found<br/> CFTP09F CFTSEND &amp;id for CFTPARM &amp;id _ No default record found |
 | --- | --- |
 | Explanation | During Transfer CFT initialization the identifier describing the default file characteristics used for send transfers (CFTSEND parameter) is unknown. |
-| Consequence | The Transfer CFT initialization phase cannot continue correctly and Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} is aborted. |
-| Action | Check the CFTPARM (DEFAULT=.) and CFTSEND parameter settings, correct and restart Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}. |
+| Consequence | The Transfer CFT initialization phase cannot continue correctly and {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} is aborted. |
+| Action | Check the CFTPARM (DEFAULT=.) and CFTSEND parameter settings, correct and restart {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}. |
 
 
 
@@ -17413,7 +17413,7 @@
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP10F"></span>CFTP10F CFTRECV &amp;id for CFTPARM &amp;id _ No Default record found<br/> CFTP10F CFTRECV &amp;id for CFTPARM &amp;id _ No Default record found |
 | --- | --- |
 | Explanation | During Transfer CFT initialization the identifier describing the default file characteristics used for receive transfers (CFTRECV parameter) is unknown. |
-| Consequence | The Transfer CFT initialization phase cannot continue correctly and Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} is aborted. |
+| Consequence | The Transfer CFT initialization phase cannot continue correctly and {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} is aborted. |
 | Action | Check CFTPARM (DEFAULT=.) and CFTRECV parameter settings, correct and restart Transfer CFT. |
 
 
@@ -17435,8 +17435,8 @@
 | V23 format<br/> V24 format<br/> Error | <span id="CFTP14F"></span>CFTP14F CFTACCNT &amp;id for CFTPARM &amp;id _ Not found<br/> CFTP14F CFTACCNT &amp;id for CFTPARM &amp;id _ Not found |
 | --- | --- |
 | Explanation | During Transfer CFT initialization the command describing the accounting characteristics (CFTACCNT command), the ID parameter of which corresponds to the ACCNT parameter in the CFTPARM command, was not found. |
-| Consequence | The Transfer CFT initialization phase cannot continue correctly and Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} is aborted. |
-| Action | Check the CFTACCNT parameter settings, correct and restart Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}. |
+| Consequence | The Transfer CFT initialization phase cannot continue correctly and {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} is aborted. |
+| Action | Check the CFTACCNT parameter settings, correct and restart {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}. |
 
 
 
@@ -17447,7 +17447,7 @@
 | --- | --- |
 | Explanation | During Transfer CFT initialization the CFTPROT &amp;idprot card could not be loaded in memory (insufficient space). |
 | Consequence | This card cannot be used for transfers. |
-| Action | Reduce the number of CFTPROT card identifiers in the CFTPARM &amp;idparm command (see the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} topics that correspond to your OS to find out the parameter setting limits). After correcting your parameter settings, restart Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}. |
+| Action | Reduce the number of CFTPROT card identifiers in the CFTPARM &amp;idparm command (see the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} topics that correspond to your OS to find out the parameter setting limits). After correcting your parameter settings, restart {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}. |
 
 
 
@@ -17458,7 +17458,7 @@
 | --- | --- |
 | Explanation | During Transfer CFT initialization the CFTNET &amp;idnet card could not be loaded in memory (insufficient space). |
 | Consequence | This card cannot be used for transfers. |
-| Action | Reduce the number of CFTNET card identifiers in the CFTPARM &amp;idparm command (see the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} topics that correspond to your OS to find out the parameter setting limits).<br/> After correcting your parameter settings, restart Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}. |
+| Action | Reduce the number of CFTNET card identifiers in the CFTPARM &amp;idparm command (see the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} topics that correspond to your OS to find out the parameter setting limits).<br/> After correcting your parameter settings, restart {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}. |
 
 
 
@@ -17469,7 +17469,7 @@
 | --- | --- |
 | Explanation | During Transfer CFT initialization the CFTCOM &amp;idcom card could not be loaded in memory (insufficient space). |
 | Consequence | This card cannot be used for transfers. |
-| Action | Reduce the number of CFTCOM card identifiers in the CFTPARM &amp;idparm command (see the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} topics that correspond to your OS to find out the parameter setting limits).<br/> After correcting your parameter settings, restart Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}. |
+| Action | Reduce the number of CFTCOM card identifiers in the CFTPARM &amp;idparm command (see the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} topics that correspond to your OS to find out the parameter setting limits).<br/> After correcting your parameter settings, restart {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}. |
 
 
 
@@ -17538,7 +17538,7 @@
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTP23W"></span>CFTP23W CFTNET &amp;id for CFTPARM &amp;id uses &amp;net network _ Disabled<br/> CFTP23W CFTNET &amp;id for CFTPARM &amp;id uses &amp;net network _ Disabled |
 | --- | --- |
-| Explanation  | Only CFTNET TCP type protocols are loaded when starting Transfer CFT{{&lt; TransferCFT/componentlongname &gt;}}.  |
+| Explanation  | Only CFTNET TCP type protocols are loaded when starting {{&lt; TransferCFT/axwayvariablesComponentLongName &gt;}}.  |
 | Action  | Remove the unsupported protocols if you no longer want this message to display.  |
 
 
@@ -17548,7 +17548,7 @@
 
 | V23 format<br/> V24 format<br/> Warning  | CFTP24W CFTPROT &amp;id uses CFTNET &amp;id _ Disabled<br/> CFTP24W CFTPROT &amp;id uses CFTNET &amp;id _ Disabled |
 | --- | --- |
-| Explanation  | Only CFTNET TCP type protocols are loaded when starting Transfer CFT{{&lt; TransferCFT/componentlongname &gt;}}.  |
+| Explanation  | Only CFTNET TCP type protocols are loaded when starting {{&lt; TransferCFT/axwayvariablesComponentLongName &gt;}}.  |
 | Action  | Remove the unsupported protocols if you no longer want this message to display.  |
 
 
@@ -17599,7 +17599,7 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR03E"></span>CFTR03E &amp;cmd Failed _ No record found<br/> CFTR03E &amp;cmd Failed _ No record found for &amp;str |
 | --- | --- |
-| Explanation | The &amp;cmd command cannot be associated with any record in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog file (example: deletion of a non-existing record). |
+| Explanation | The &amp;cmd command cannot be associated with any record in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} catalog file (example: deletion of a non-existing record). |
 | Consequence | The command is ignored. |
 | Action | Check the command syntax. |
 
@@ -17612,7 +17612,7 @@
 | --- | --- |
 | Explanation | The length of the &amp;keyw keyword is greater than 8. |
 | Consequence | The command is ignored. |
-| Action | Check the description of this parameter in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} Online documentation, correct the error and then resubmit the command. |
+| Action | Check the description of this parameter in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} Online documentation, correct the error and then resubmit the command. |
 
 
 
@@ -17707,7 +17707,7 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR13E"></span>CFTR13E &amp;cmd Failed _ IDT=&amp;idt not allowed<br/> CFTR13E SEND &amp;cmd PART=&amp;part Failed _ IDT=&amp;idt not allowed |
 | --- | --- |
-| Explanation | During execution of a command (response to a message or transfer for example) the required transfer identifier (&amp;idt) was not found in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog. |
+| Explanation | During execution of a command (response to a message or transfer for example) the required transfer identifier (&amp;idt) was not found in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} catalog. |
 | Consequence | The command is ignored. |
 | Action | Check the parameter settings of the command and the transfer identifier value. |
 
@@ -17718,7 +17718,7 @@
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTR14W"></span>CFTR14W &amp;cmd Failed PART=&amp;part _ No transfer found for this request<br/> CFTR14W &amp;cmd PART=&amp;part Failed _ No transfer found for this request |
 | --- | --- |
-| Explanation | When processing an ACT or INACT command, no transfer in the 'D' state and with DIAGI=430 for ACT or in the 'C' state for INACT was found in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} catalog for the partner(s) designated by &amp;part. |
+| Explanation | When processing an ACT or INACT command, no transfer in the 'D' state and with DIAGI=430 for ACT or in the 'C' state for INACT was found in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} catalog for the partner(s) designated by &amp;part. |
 | Consequence | The command takes effect for any subsequent transfers concerning the partner(s). |
 
 
@@ -17738,7 +17738,7 @@
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTR16I"></span>CFTR16I &amp;message<br/> CFTR16I &amp;message |
 | --- | --- |
-| Explanation | Information concerning either the TURN command or the WLOG command.<br/> QQQ_QQQ_QQQ_LIST<br/> • TURN command: • PART=&amp;part<br/> • MODE=&amp;mode (&amp;str) &amp;mode: create,replace,delete<br/> • &amp;str: “part not found”,”part inact”,”prot DMZ not found” ,”part not in requester mode","commutation not available”,"see omintime,omaxtime”,”already in command cache”,”not into command cache”<br/> <br/> QQQ_QQQ_QQQ_LIST<br/> • WLOG command: • &amp;message displayed in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} LOG<br/>  |
+| Explanation | Information concerning either the TURN command or the WLOG command.<br/> QQQ_QQQ_QQQ_LIST<br/> • TURN command: • PART=&amp;part<br/> • MODE=&amp;mode (&amp;str) &amp;mode: create,replace,delete<br/> • &amp;str: “part not found”,”part inact”,”prot DMZ not found” ,”part not in requester mode","commutation not available”,"see omintime,omaxtime”,”already in command cache”,”not into command cache”<br/> <br/> QQQ_QQQ_QQQ_LIST<br/> • WLOG command: • &amp;message displayed in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} LOG<br/>  |
 
 
 
@@ -17756,7 +17756,7 @@
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTR18W"></span>CFTR18W &amp;message<br/> CFTR18W &amp;message |
 | --- | --- |
-| Explanation | Displays warning status in the WLOG command.<br/> • &amp;message displayed in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} LOG |
+| Explanation | Displays warning status in the WLOG command.<br/> • &amp;message displayed in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} LOG |
 
 
 
@@ -17765,7 +17765,7 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR19E"></span>CFTR19E &amp;message<br/> CFTR19E &amp;message |
 | --- | --- |
-| Explanation | Displays error status in the WLOG command.<br/> • &amp;message displayed in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} LOG |
+| Explanation | Displays error status in the WLOG command.<br/> • &amp;message displayed in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} LOG |
 
 
 
@@ -17828,7 +17828,7 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS02E"></span>CFTS02E PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt DIRECT=&amp;direct &amp;fname not found<br/> CFTS02E _ &amp;fname not found &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt DIRECT=&amp;direct&gt; |
 | --- | --- | --- | --- |
-| Explanation | The &amp;fname procedure was not found for a given transfer (&amp;idt).<br/> This procedure was requested after a file or message transfer or subsequent to an error (see the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} Online documentation, EXEC parameters). |
+| Explanation | The &amp;fname procedure was not found for a given transfer (&amp;idt).<br/> This procedure was requested after a file or message transfer or subsequent to an error (see the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} Online documentation, EXEC parameters). |
 
 
 
@@ -17846,7 +17846,7 @@
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTS04W"></span>CFTS04W Action file &amp;fname is empty<br/> CFTS04W Action file &amp;fname is empty |
 | --- | --- |
-| Explanation | An action is envisaged at the end of a transfer or in the event of an error (see the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} Online documentation, EXECxxx parameters); the file to be submitted is empty. |
+| Explanation | An action is envisaged at the end of a transfer or in the event of an error (see the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} Online documentation, EXECxxx parameters); the file to be submitted is empty. |
 
 
 
@@ -17868,7 +17868,7 @@
 | --- | --- |
 | Explanation | An action was requested at the end of a transfer or in the event of an error. This action is submitted (see the EXECxxx parameters) through a buffer file (&amp;fname).<br/> An access error was detected on this buffer file. |
 | Consequence | The procedure will not be executed. If the action was requested at the end of the transfer, the transfer ends normally. |
-| Action |  • Check that the characteristics of the buffer file are correct (attributes and length).<br/> • Check that it exists (created or defined logically in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} startup procedure).<br/> • Contact Product Support. |
+| Action |  • Check that the characteristics of the buffer file are correct (attributes and length).<br/> • Check that it exists (created or defined logically in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} startup procedure).<br/> • Contact Product Support. |
 
 
 
@@ -17877,7 +17877,7 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS07E"></span>CFTS07E Insufficient space for temporary file<br/> CFTS07E Insufficient space for temporary file |
 | --- | --- |
-| Explanation | An action was requested at the end of a transfer or in the event of an error. This action is submitted (see the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} Online documentation, EXECxxx parameters) through a buffer file (&amp;fname). The space reserved for this file proves insufficient. |
+| Explanation | An action was requested at the end of a transfer or in the event of an error. This action is submitted (see the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} Online documentation, EXECxxx parameters) through a buffer file (&amp;fname). The space reserved for this file proves insufficient. |
 | Consequence | The procedure will not be executed. If the action was requested at the end of the transfer, the transfer ends normally. |
 | Action | Increase the file size, inform Product Support. |
 
@@ -17888,7 +17888,7 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS08E"></span>CFTS08E Error code &amp;scs _ Executing temporary file<br/> CFTS08E Error code &amp;scs _ Executing temporary file |
 | --- | --- |
-| Explanation | The procedure (&amp;fname) could not be executed for a given transfer (&amp;idt).<br/> This procedure was requested at the end of a file or message transfer or in the event of an error (see the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} Online documentation EXECxxx parameters). |
+| Explanation | The procedure (&amp;fname) could not be executed for a given transfer (&amp;idt).<br/> This procedure was requested at the end of a file or message transfer or in the event of an error (see the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} Online documentation EXECxxx parameters). |
 | Consequence | The procedure will not be executed. If the action was requested at the end of the transfer, the transfer ends normally. |
 | Action | Analyze the &amp;scs code and inform Product Support if necessary. |
 
@@ -17909,9 +17909,9 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS11E"></span>CFTS11E Allocation error _ Trying to access temporary file<br/> CFTS11E Allocation error _ Trying to access temporary file |
 | --- | --- |
-| Explanation | An action was requested at the end of a transfer or in the event of an error.<br/> This action is submitted (see the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} Online documentation, EXECxxx parameters) through a buffer file (&amp;fname). An allocation error was detected on this buffer file. |
+| Explanation | An action was requested at the end of a transfer or in the event of an error.<br/> This action is submitted (see the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} Online documentation, EXECxxx parameters) through a buffer file (&amp;fname). An allocation error was detected on this buffer file. |
 | Consequence | The procedure will not be executed. If the action was requested at the end of the transfer, the transfer ends normally. |
-| Action |  • Check that the characteristics of the buffer file are correct (attributes and length).<br/> • Check that it exists (created or defined logically in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} startup procedure).<br/> • Contact Product Support. |
+| Action |  • Check that the characteristics of the buffer file are correct (attributes and length).<br/> • Check that it exists (created or defined logically in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} startup procedure).<br/> • Contact Product Support. |
 
 
 
@@ -17931,7 +17931,7 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS13E"></span>CFTS13E Semaphore failure &amp;cs_CFTTPRO aborted<br/> CFTS13E Semaphore failure &amp;cs_CFTTPRO aborted |
 | --- | --- |
-| Explanation | Problem receiving an internal Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} message by the PROTOCOL task. |
+| Explanation | Problem receiving an internal {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} message by the PROTOCOL task. |
 | Consequence | A message has perhaps been lost; the reactions are unpredictable. |
 | Action | Analyze the &amp;scs code and inform Product Support if necessary. |
 
@@ -17942,7 +17942,7 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS14E"></span>CFTS14E ID=&amp;id error initializing process<br/> CFTS14E Unknown synchronization message CLASS=&amp;class TYPE=&amp;type |
 | --- | --- |
-| Explanation | Cannot run the end of transfer exit task. This message follows the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} message CFTI01. |
+| Explanation | Cannot run the end of transfer exit task. This message follows the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} message CFTI01. |
 | Consequence | No effect on the actual transfer (catalog not updated). The exit is not executed. If an end of transfer procedure was defined, it is run. |
 | Action | Inform Product Support. |
 
@@ -17953,7 +17953,7 @@
 
 | Information | <span id="CFTS15I"></span>CFTS15I PART = &amp;part Kill Session Reference &amp;ctx:&amp;ctx<br/> CFTS15I PART = &amp;part Kill Session Reference &amp;ctx:&amp;ctx |
 | --- | --- |
-| Explanation | Internal message to Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} giving information on the transfer context killed. The &amp;ctx values specify the context concerned. |
+| Explanation | Internal message to {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} giving information on the transfer context killed. The &amp;ctx values specify the context concerned. |
 
 
 
@@ -17962,7 +17962,7 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS16E"></span>CFTS16E Synch. response time-out_End transfer exit<br/> CFTS16E Synch. response time-out _ End of transfer exit |
 | --- | --- |
-| Explanation | The exit task is run but does not respond to the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}. This corresponds to the initial phase establishing communications between the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} and the exit task. |
+| Explanation | The exit task is run but does not respond to the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}. This corresponds to the initial phase establishing communications between the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} and the exit task. |
 | Consequence | None on the actual transfer (catalog not updated). The exit is not executed. If an end of transfer procedure has been defined, it is run. |
 | Action | Inform Product Support. |
 
@@ -17973,8 +17973,8 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS17E"></span>CFTS17E Error code &amp;scs _ Trying to access End transfer exit<br/> CFTS17E Error code &amp;scs _ Trying to access End of transfer exit |
 | --- | --- |
-| Explanation | Error posting a Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} message to the exit task during inter-task communications. |
-| Consequence | None on the actual transfer (catalog not updated). The exit is does not receive any directives from the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}. |
+| Explanation | Error posting a {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} message to the exit task during inter-task communications. |
+| Consequence | None on the actual transfer (catalog not updated). The exit is does not receive any directives from the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}. |
 | Action | Inform Product Support. |
 
 
@@ -18044,7 +18044,7 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS23E"></span>CFTS23E Bad user return code &lt;details&gt;<br/> CFTS23E &amp;str PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt ", &amp;str = Bad End transfer exit version : &amp;ver / &amp;ver<br/> or<br/> CFTS23E &amp;str &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt &gt;") Invalid state transit '&amp;state'-&gt;'&amp;state' or Unknown state &amp;state<br/> or<br/> Unknown action &amp;action or Bad User return code : &amp;scs |
 | --- | --- | --- | --- |
-| Explanation | Error message specific to the end-of-transfer user exit. The details that display in the message depend on the CFTLOG format (v23 or v24).<br/> **Example**<br/> V24 format:<br/> <code>CFTS23E Bad User return code: 4 &lt;IDTU=idtu PART=part1 IDF=idf1 IDT=idt &gt;</code><br/> V23 format:<br/> <code>CFTS23E Bad User return code : 4 PART=part1 IDF=idf1 IDT=idt</code> |
+| Explanation | Error message specific to the end-of-transfer user exit. The details that display in the message depend on the CFTLOG format (v23 or v24).<br/> **Example**<br/> V24 format:<br/> <span ><code>CFTS23E Bad User return code: 4 &lt;IDTU=idtu PART=part1 IDF=idf1 IDT=idt &gt;</code></span><br/> V23 format:<br/> <code>CFTS23E Bad User return code : 4 PART=part1 IDF=idf1 IDT=idt</code> |
 | Consequence | None. |
 
 
@@ -18193,7 +18193,7 @@
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTS41I"></span>CFTS41I Catalog Alert exec &amp;fname executed<br/> CFTS41I Catalog Alert exec &amp;fname executed |
 | --- | --- |
-| Explanation | The procedure &amp;FNAME for a catalog alert was executed.<br/> • When the critical fill threshold is reached, a message CFTC29W is recorded in the Transfer CFT log.<br/> A batch, which is defined by the CFTCAT TLVWEXEC parameter, is submitted.<br/> • When the alert ceases, a message CFTC30W is recorded in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} log.<br/> A batch, which is defined by the CFTCAT TLVCEXEC parameter, is submitted. |
+| Explanation | The procedure &amp;FNAME for a catalog alert was executed.<br/> • When the critical fill threshold is reached, a message CFTC29W is recorded in the Transfer CFT log.<br/> A batch, which is defined by the CFTCAT TLVWEXEC parameter, is submitted.<br/> • When the alert ceases, a message CFTC30W is recorded in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} log.<br/> A batch, which is defined by the CFTCAT TLVCEXEC parameter, is submitted. |
 
 
 
@@ -18202,7 +18202,7 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTS42E"></span>CFTS42E Catalog Alert exec &amp;fname &amp;str" where &amp;str= "not found" or "failed"<br/> CFTS42E Catalog Alert exec &amp;fname &amp;str |
 | --- | --- |
-| Explanation | The procedure &amp;FNAME for a catalog alert was not found or failed on access producing this error.<br/> QQQ_QQQ_QQQ_LIST<br/> • When the critical fill threshold is reached, a message CFTC29W is recorded in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} log.<br /> ==&gt; The batch, which is defined by the CFTCAT TLVWEXEC parameter, is not executed<br/> • When the alert ceases, a message CFTC30W is recorded in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} log<br /> ==&gt; The batch, which is defined by the CFTCAT TLVCEXEC parameter, is not executed. |
+| Explanation | The procedure &amp;FNAME for a catalog alert was not found or failed on access producing this error.<br/> QQQ_QQQ_QQQ_LIST<br/> • When the critical fill threshold is reached, a message CFTC29W is recorded in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} log.<br /> ==&gt; The batch, which is defined by the CFTCAT TLVWEXEC parameter, is not executed<br/> • When the alert ceases, a message CFTC30W is recorded in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} log<br /> ==&gt; The batch, which is defined by the CFTCAT TLVCEXEC parameter, is not executed. |
 
 
 
@@ -18241,7 +18241,7 @@
 | V23 format<br/> V24 format<br/> Fatal  | <span id="CFTS46F"></span>CFTS46F CFTPRX error _ &amp;str<br/> CFTS46F CFTPRX error _ &amp;str |
 | --- | --- |
 | Explanation  | A fatal error occurred in the proxy task (CFTPRX). The error details are in &amp;str.  |
-| Consequence  | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} stops.  |
+| Consequence  | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} stops.  |
 | Action  | If necessary, contact Axway support.  |
 
 
@@ -18281,8 +18281,8 @@
 | V23 format<br/> V24 format<br/> Fatal  | <span id="CFTS50F"></span>CFTS50F CFTJRE error _ &amp;str<br/> CFTS50F CFTJRE error _ &amp;str |
 | --- | --- |
 | Explanation  | A fatal error occurred when starting the CFT Java task (CFTJRE). The error is detailed in &amp;str.  |
-| Consequence  | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} is stopping.  |
-| Action  | If necessary, contact AMPLIFY{{&lt; TransferCFT/platformorsuiteshortname &gt;}} support.  |
+| Consequence  | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} is stopping.  |
+| Action  | If necessary, contact {{&lt; TransferCFT/axwayvariablesPlatformorSuiteShortName &gt;}} support.  |
 
 
 
@@ -18291,9 +18291,9 @@
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS51E"></span>CFTS51E CFTJRE error _ &amp;str<br/> CFTS51E CFTJRE error _ &amp;str |
 | --- | --- |
-| Explanation  | A significant error occurred in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} Java task (CFTJRE). The error is detailed in &amp;str.  |
+| Explanation  | A significant error occurred in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} Java task (CFTJRE). The error is detailed in &amp;str.  |
 | Consequence  | The concerned transfer goes in error.  |
-| Action  | If necessary, contact AMPLIFY{{&lt; TransferCFT/platformorsuiteshortname &gt;}} support.  |
+| Action  | If necessary, contact {{&lt; TransferCFT/axwayvariablesPlatformorSuiteShortName &gt;}} support.  |
 
 
 
@@ -18302,7 +18302,7 @@
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTS52W"></span>CFTS52W CFTJRE _ &amp;str<br/> CFTS52W CFTJRE _ &amp;str |
 | --- | --- |
-| Explanation  | An anomaly occurred in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} Java task (CFTJRE). The anomaly is detailed in &amp;str.  |
+| Explanation  | An anomaly occurred in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} Java task (CFTJRE). The anomaly is detailed in &amp;str.  |
 
 
 
@@ -18311,7 +18311,7 @@
 
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS53I"></span>CFTS53I CFTJRE _ &amp;str<br/> CFTS53I CFTJRE _ &amp;str |
 | --- | --- |
-| Explanation  | Information message from the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} Java task (CFTJRE). The &amp;str value gives additional details.  |
+| Explanation  | Information message from the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} Java task (CFTJRE). The &amp;str value gives additional details.  |
 
 
 
@@ -18321,7 +18321,7 @@
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS54F"></span>CFTS54F CFTACC task fatal CR=&amp;cr &amp;str<br/> CFTS54F CFTACC task fatal CR= &amp;cr &amp;str |
 | --- | --- |
 | Explanation  | A fatal error occurred in the accelerator task (CFTACC). The error is detailed in &amp;str.  |
-| Consequence  | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} is stopping.  |
+| Consequence  | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} is stopping.  |
 | Action  | If necessary, contact Axway support.  |
 
 
@@ -18341,7 +18341,7 @@
 | V23 format<br/> V24 format<br/> Error  | <span id="CFTS56E"></span>CFTS56E Central Governance error (&lt;error_code&gt;) &lt;error_msg&gt;<br/> CFTS56E Central Governance &amp;str", &amp;str = &amp;type error (send): (&amp;code) &amp;message<br/> CFTS56E Central Governance &amp;str", &amp;str = &amp;type error (recv): (&amp;code) &amp;message |
 | --- | --- |
 | Explanation  | An error occurred when executing a &lt;request&gt; on Central Governance. |
-| Consequence  | The Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} instance does not display the correct status.  |
+| Consequence  | The {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} instance does not display the correct status.  |
 
 
 
@@ -18630,7 +18630,7 @@
 | --- | --- |
 | Explanation | The &amp;part partner was not found in the Transfer CFT partner file. |
 | Consequence | The transfer is not executed. The corresponding catalog entry is set to KEEP. |
-| Action | Check the Transfer <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro">CFT parameter settings</a>.<br/> Check the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} parameter settings. |
+| Action | Check the Transfer <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro">CFT parameter settings</a>.<br/> Check the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} parameter settings. |
 
 
 
@@ -18652,7 +18652,7 @@
 | --- | --- |
 | Explanation | The partner has made a selection request and no file is ready to be sent (SEND on HOLD or implicit SEND). |
 | Consequence | The transfer is not executed (no catalog record is created). |
-| Action | Prepare a transfer (SEND state=hold) or declare an implicit send in the Transfer <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro">CFT parameter settings</a>.<br/> Prepare a transfer (SEND state=hold) or declare an implicit send in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} parameter settings. |
+| Action | Prepare a transfer (SEND state=hold) or declare an implicit send in the Transfer <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro">CFT parameter settings</a>.<br/> Prepare a transfer (SEND state=hold) or declare an implicit send in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} parameter settings. |
 
 
 
@@ -18673,7 +18673,7 @@
 | --- | --- |
 | Explanation | The identifier of the list of files authorized for a partner (see <a href="../../../c_intro_userinterfaces/command_summary">CFTPART</a> ) was not found in the Transfer CFT parameter file. |
 | Consequence | The transfer is not executed. The corresponding catalog entry is set to KEEP. |
-| Action | Check the <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro">Transfer CFT parameter</a> settings.<br/> Check the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} parameter setting. |
+| Action | Check the <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro">Transfer CFT parameter</a> settings.<br/> Check the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} parameter setting. |
 
 
 
@@ -19150,9 +19150,9 @@
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT66E"></span>CFTT66E Maximum number of partners authorized by license key reached (using PART=&amp;part)<br/> CFTT66E Maximum number of partners authorized by license key reached (using PART=&amp;part) |
 | --- | --- |
-| Explanation | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} license keys support either a limited or unlimited number of partners. The transfer is treated as if the partner does not exist.  |
+| Explanation | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} license keys support either a limited or unlimited number of partners. The transfer is treated as if the partner does not exist.  |
 | Consequence | An error occurred because you have reached the maximum number of partners allowed by your license key.  |
-| Action | In a command line window, you can enter the command CFTUTIL ABOUT to check the number of partners that your license key authorizes. For additional information on license keys, contact an Axway{{&lt; TransferCFT/companyname &gt;}} sales representative.  |
+| Action | In a command line window, you can enter the command CFTUTIL ABOUT to check the number of partners that your license key authorizes. For additional information on license keys, contact an {{&lt; TransferCFT/axwayvariablesCompanyName &gt;}} sales representative.  |
 
 
 
@@ -19583,7 +19583,7 @@
 
 | V23 format<br/> <br/> V24 format<br/> <br/> Information | <span id="CFTW09I"></span>CFTW09I PART=&amp;part IDF=&amp;idf IDT=&amp;idt CFTSEND &amp;idf NIDF=&amp;nidf XLATE=&amp;xlate<br/> CFTW09I PART=&amp;part IDF=&amp;idf IDT=&amp;idt CFTRECV &amp;idf NIDF=&amp;nidf XLATE=&amp;xlate<br/> CFTW09I CFTSEND &amp;idf &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt NIDF=&amp;nidf XLATE=&amp;xlate&gt;<br/> CFTW09I CFTRECV &amp;idf &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt NIDF=&amp;nidf XLATE=&amp;xlate&gt; |
 | --- | --- |
-| Explanation | Indicates the ID of the CFTSEND or CFTRECV that was actually used.<br/> ****Example****<br/> CFTW09I CFTSEND TRTR &lt;IDTU=A0000024 PART=SERVER IDF=TRTR IDT=I0714504 NIDF=TRTR XLATE=CONV1&gt; |
+| Explanation | Indicates the ID of the CFTSEND or CFTRECV that was actually used.<br/> <span >****Example****</span><br/> CFTW09I CFTSEND TRTR &lt;IDTU=A0000024 PART=SERVER IDF=TRTR IDT=I0714504 NIDF=TRTR XLATE=CONV1&gt; |
 
 
 
@@ -19639,7 +19639,7 @@
 | --- | --- |
 | V23 format<br/> V24 format<br/> Information | <span id="CFTX11I"></span>CFTX11I+ without a generation was done CFTX11I+ without a generation was done |
 | V23 format<br/> V24 format<br/> Information | <span id="CFTX12I"></span>CFTX12I+ Some queer comportements will happenned. CFTX12I+ Some queer comportements will happenned. |
-| Explanation | Modifications have been made to the authorization system, but the system has not been regenerated.<br/> Abnormal behavior may arise when Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} is executed. |
+| Explanation | Modifications have been made to the authorization system, but the system has not been regenerated.<br/> Abnormal behavior may arise when {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} is executed. |
 
 
 
@@ -19699,7 +19699,7 @@
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY06E"></span>CFTY06E CTX=&amp;ctx Certificate Request Message error _ &amp;string<br/> CFTY06E CTX=&amp;ctx Certificate Request Message error _ &amp;string |
 | --- | --- |
-| Explanation | SSL handshake error: a request certificate message, sent by the server, is invalid. According to the error origin, various reasons are given below:<br/> • UNSUPPORTED TYPE FIELD: The server requires an authentication type which is not supported by Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}}.<br/> • INVALID DN LENGTH: The DN (Distinguished Name) length is invalid |
+| Explanation | SSL handshake error: a request certificate message, sent by the server, is invalid. According to the error origin, various reasons are given below:<br/> • UNSUPPORTED TYPE FIELD: The server requires an authentication type which is not supported by {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}}.<br/> • INVALID DN LENGTH: The DN (Distinguished Name) length is invalid |
 | Result | The SSL session in progress is aborted. An alert is sent to the server. |
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY07E"></span>CFTY07E CTX=&amp;ctx System error [&amp;string] CR=&amp;cr CS=&amp;cs<br/> CFTY07E CTX=&amp;ctx System error [&amp;string] CR=&amp;cr CS=&amp;cs |
 | Explanation | SSL handshake error. According to the error origin, various messages are given below. |
@@ -19712,9 +19712,9 @@
 | V23 format<br/> V24 format<br/> Information | CFTY07E CTX=&amp;ctx System error [CTXALLOC] CR=&amp;cr CS=&amp;cs<br/> CFTY07E CTX=&amp;ctx System error [CTXALLOC] CR=&amp;cr CS=&amp;cs |
 | Explanation | Memory allocation error for a new SSL session context:<br/> • CR=-2,-3: Dynamic memory allocation failure<br/> • CR=-9: Maximum context count reached |
 | V23 format<br/> V24 format<br/> Information | CFTY07E CTX=&amp;ctx System error [CTXCHK] CR=&amp;cr CS=&amp;cs<br/> CFTY07E CTX=&amp;ctx System error [CTXCHK] CR=&amp;cr CS=&amp;cs |
-| Explanation | Invalid message received from another Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} task (context is invalid or already free). |
+| Explanation | Invalid message received from another {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} task (context is invalid or already free). |
 | V23 format<br/> V24 format<br/> Information | CFTY07E PROT=&amp;prot SSLPID=&amp;pid HOST=&amp;host synchronization error CR=&amp;cr CS=&amp;scs<br/> CFTY07E PROT=&amp;prot SSLPID=&amp;pid HOST=&amp;host synchronization error CR=&amp;cr CS=&amp;scs |
-| Explanation | Problem with sending an internal Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} message to the protocol task during the SSL initialization phase |
+| Explanation | Problem with sending an internal {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} message to the protocol task during the SSL initialization phase |
 | Consequence | The transfer is aborted |
 | Action | Analyze the &amp;scs code and contact the product support team if necessary |
 
@@ -19773,7 +19773,7 @@
 | --- | --- |
 | Explanation | SSL session handshake failure. |
 | Result | The SSL session in progress is aborted. An alert is sent to the remote entity. |
-| Action | Call the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} hot line.<br/> Analyze the &amp;cr error code (refer to the SSL protocol error codes). Contact the product support team if necessary. |
+| Action | Call the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} hot line.<br/> Analyze the &amp;cr error code (refer to the SSL protocol error codes). Contact the product support team if necessary. |
 
 
 
@@ -19829,7 +19829,7 @@
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY19I"></span>CFTY19I PART=&amp;id SSL=&amp;id opening client session CTX=&amp;ctx on task PID=&amp;pid<br/> CFTY19I PART=&amp;id SSL=&amp;id opening client session CTX=&amp;ctx on task PID=&amp;pid |
 | --- | --- |
-| Explanation | Handshake is started for a new client SSL session. Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} gives a unique reference to it. Using this reference, the session could be tracked. |
+| Explanation | Handshake is started for a new client SSL session. {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} gives a unique reference to it. Using this reference, the session could be tracked. |
 
 
 
@@ -19838,7 +19838,7 @@
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY20I"></span> CFTY20I PROT=&amp;id SSL=&amp;id opening server session CTX=&amp;ctx on task PID=&amp;pid<br/> CFTY20I PROT=&amp;id SSL=&amp;id opening server session CTX=&amp;ctx on task PID=&amp;pid |
 | --- | --- |
-| Explanation | Handshake is started for a new server SSL session. Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} gives a unique reference to it. Using this reference, the session could be tracked. |
+| Explanation | Handshake is started for a new server SSL session. {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} gives a unique reference to it. Using this reference, the session could be tracked. |
 
 
 
@@ -19892,7 +19892,7 @@
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY26I"></span>CFTY26I CTX=&amp;ctx Anonymous &amp;str session<br/> CFTY26I CTX=&amp;ctx Anonymous &amp;str session |
 | --- | --- |
-| Explanation | Opening of a secure session without authentication in either client or server mode. Refer to the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} Online documentation.<br/> • &amp;ctx= context SSL<br/> • str = client or server |
+| Explanation | Opening of a secure session without authentication in either client or server mode. Refer to the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} Online documentation.<br/> • &amp;ctx= context SSL<br/> • str = client or server |
 
 
 
@@ -20096,7 +20096,7 @@
 | --- | --- |
 | Explanation | The command is unknown. |
 | Consequence | Immediate shutdown of the communication utility. |
-| Action | Check the <a href="../../../c_intro_userinterfaces/command_summary">command syntax</a> in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} Online documentation. Correct the error and restart the communication utility.<br/> Check the command syntax in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} Online documentation. Correct the error and restart the communication utility. |
+| Action | Check the <a href="../../../c_intro_userinterfaces/command_summary">command syntax</a> in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} Online documentation. Correct the error and restart the communication utility.<br/> Check the command syntax in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} Online documentation. Correct the error and restart the communication utility. |
 
 
 
@@ -20202,7 +20202,7 @@
 
 | Error | <span id="CFTU20I"></span>CFTU20I: &amp;str |
 | --- | --- |
-| Explanation | CFTUTIL command interpreter information messages.<br/> The &amp;str is self-explanatory and can be of several types:<br/> • Execution header: Information messages indicating the product, release, copyright and execution start date and time<br/> • Execution report: Information messages indicating the number of commands interpreted, the number of errors detected and the execution end date and time<br/> • Dynamic modification of a Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} partner state: Part = &amp;part : &amp;str1<br/> The ACT or INACT command has been executed correctly (&amp;str1 indicates the change of state for the &amp;part partner: initial state -&gt; final state). There are four possible states for a partner:<br/> • ACTIVEBOTH: Partner active in both modes (requester and server)<br/> • NOACTIVE: Partner inactive in both modes<br/> • ACTIVEREQ: Partner active in the requester mode<br/> • ACTIVESERV: Partner active in the server mode |
+| Explanation | CFTUTIL command interpreter information messages.<br/> The &amp;str is self-explanatory and can be of several types:<br/> • Execution header: Information messages indicating the product, release, copyright and execution start date and time<br/> • Execution report: Information messages indicating the number of commands interpreted, the number of errors detected and the execution end date and time<br/> • Dynamic modification of a {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} partner state: Part = &amp;part : &amp;str1<br/> The ACT or INACT command has been executed correctly (&amp;str1 indicates the change of state for the &amp;part partner: initial state -&gt; final state). There are four possible states for a partner:<br/> • ACTIVEBOTH: Partner active in both modes (requester and server)<br/> • NOACTIVE: Partner inactive in both modes<br/> • ACTIVEREQ: Partner active in the requester mode<br/> • ACTIVESERV: Partner active in the server mode |
 
 
 
@@ -20220,7 +20220,7 @@
 
 | Error | <span id="CFTU26E"></span>CFTU26E : &amp;Cmd _ Error (&amp;str) |
 | --- | --- |
-| Explanation | When executing the command, an error was detected. The &amp;str field can be set to one of the following values. Note that the following list is not exhaustive, as the &amp;str field is relatively self-explanatory:<br/> • Parameter file opening error: Execution of the &amp;Cmd command (LISTPARM for example) resulted in an error when opening the parameter file.<br/> • Partners file opening error: Execution of the &amp;Cmd command (LISTPART for example) resulted in an error when opening the partner file.<br/> • Catalog file opening error: Execution of the &amp;Cmd command (LISTCAT for example) resulted in an error when opening the catalog file.<br/> • Media communication file opening error: Execution of the &amp;Cmd command (LISTCOM for example) resulted in an error when opening the communication file.<br/> • File creation error: An error was detected when creating and formatting the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} internal datafile (CFTUTIL CFTFILE TYPE=CAT/LOG/PARM/PART/ command).<br/> • File delete error: An error was detected when executing a request to delete a Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} internal datafile (CFTUTIL CFTFILE TYPE= ,MODE=DELETE command).<br/> • Output file creating error cs=&amp;scs: Execution of the &amp;Cmd command (COPYFILE for example) resulted in an error when creating the output file.<br/> • Input file opening error cs=&amp;scs: Execution of the &amp;Cmd command (COPYFILE for example) resulted in an error when opening the input file.<br/> • &amp;id: Partner record already exists: Command execution, e.g. writing information to the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} partner file, resulted in an attempt to add a record that already existed in the file (the &amp;Cmd command requested is designated by &amp;Id).<br/> • &amp;id: Partner record &amp;str error (&amp;str=writing/reading/selecting): Command execution resulted in a write/read/article selection error in the file (the &amp;Cmd command requested is designated by &amp;Id).<br/> • &amp;id: Parameter record already exists: Command execution, writing information to the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} parameter file, resulted in an attempt to add a record that already existed in the file (&amp;Id being the command identifier).<br/> • &amp;id: Invalid value for NRPART paramete:r Executing the CFTPART command, writing information to the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} partner file, resulted in an attempt to add a record that already existed in the file (&amp;Id being the CFTPART command identifier). In this case, the NRPART parameter is already assigned to an existing CFTPART command.<br/> • &amp;id: Non bijective table: The conversion table specified in the file referenced by the CFTXLATE DIRECT=BOTH command is not bijective (&amp;Id being the command identifier). Check that the conversion table specified is bijective or create one command for each transfer direction (DIRECT=SEND or DIRECT=RECV).<br/> • No partner found: A partner activation or deactivation command (ACT or INACT) resulted in an error. The identifier indicated (ACT ID=&amp;Part) does not correspond to an existing partner identifier (CFTPART ID=&amp;Part).<br/> • Media communication is full: A transfer command (SEND or RECV) could not be written to the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} communication file. The maximum number of requests in the communication file that have not yet been processed by the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} has been reached (<a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/recnb">RECNB</a> parameter in the CFTFILE TYPE=COM command).<br/> • Incompatible compression parameters: Execution of the COPYFILE command resulted in an error when checking the attributes (record length or format, compression code or state).<br/> <a href="../../../admin_intro/admin_commands_intro/copyfile_command" >COPYFILE - Copy files off-line</a><br/><br/> • Compression error: Executing the COPYFILE command resulted in an error during the compression process.<br/> <a href="../../../admin_intro/admin_commands_intro/copyfile_command" >COPYFILE - Copy files off-line</a><br/><br/> • Decompression error: Executing the <a href="../../../admin_intro/admin_commands_intro/copyfile_command">COPYFILE</a> command resulted in an error during the decompression process. Executing the COPYFILE command resulted in an error during the decompression process.<br/> <a href="../../../admin_intro/admin_commands_intro/copyfile_command" >COPYFILE - Copy files off-line</a><br/><br/> • &amp;id: command not authorized: The command specified by the user is not authorized by the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} security system (&amp;id being the command identifier)<br/> • Habilitation opening error: An error was detected when initializing the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} security system; a file required by the system could not be opened correctly. Check that the initialization file exists and is valid (contains the operating rules and indirections pointing to the object and action dictionaries) and ensure that the security system dictionary files exist.<br/> • Create channel failed: An error was detected when creating the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} synchronous communication media. Check that you have enough memory.<br/> • Open channel failed: An error was detected when opening the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} synchronous communication media. Check that the synchronous communication process is launched.<br/> • Channel read error: An error was detected when reading the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} synchronous communication media. Check that the synchronous communication process is launched.<br/> • Channel write error: An error was detected when writing in the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} synchronous communication media. Check that the synchronous communication process is launched.<br/> • Close channel failed: An error was detected when closing the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} synchronous communication media. Check that the communication media is not already closed. |
+| Explanation | When executing the command, an error was detected. The &amp;str field can be set to one of the following values. Note that the following list is not exhaustive, as the &amp;str field is relatively self-explanatory:<br/> • Parameter file opening error: Execution of the &amp;Cmd command (LISTPARM for example) resulted in an error when opening the parameter file.<br/> • Partners file opening error: Execution of the &amp;Cmd command (LISTPART for example) resulted in an error when opening the partner file.<br/> • Catalog file opening error: Execution of the &amp;Cmd command (LISTCAT for example) resulted in an error when opening the catalog file.<br/> • Media communication file opening error: Execution of the &amp;Cmd command (LISTCOM for example) resulted in an error when opening the communication file.<br/> • File creation error: An error was detected when creating and formatting the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} internal datafile (CFTUTIL CFTFILE TYPE=CAT/LOG/PARM/PART/ command).<br/> • File delete error: An error was detected when executing a request to delete a {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} internal datafile (CFTUTIL CFTFILE TYPE= ,MODE=DELETE command).<br/> • Output file creating error cs=&amp;scs: Execution of the &amp;Cmd command (COPYFILE for example) resulted in an error when creating the output file.<br/> • Input file opening error cs=&amp;scs: Execution of the &amp;Cmd command (COPYFILE for example) resulted in an error when opening the input file.<br/> • &amp;id: Partner record already exists: Command execution, e.g. writing information to the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} partner file, resulted in an attempt to add a record that already existed in the file (the &amp;Cmd command requested is designated by &amp;Id).<br/> • &amp;id: Partner record &amp;str error (&amp;str=writing/reading/selecting): Command execution resulted in a write/read/article selection error in the file (the &amp;Cmd command requested is designated by &amp;Id).<br/> • &amp;id: Parameter record already exists: Command execution, writing information to the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} parameter file, resulted in an attempt to add a record that already existed in the file (&amp;Id being the command identifier).<br/> • &amp;id: Invalid value for NRPART paramete:r Executing the CFTPART command, writing information to the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} partner file, resulted in an attempt to add a record that already existed in the file (&amp;Id being the CFTPART command identifier). In this case, the NRPART parameter is already assigned to an existing CFTPART command.<br/> • &amp;id: Non bijective table: The conversion table specified in the file referenced by the CFTXLATE DIRECT=BOTH command is not bijective (&amp;Id being the command identifier). Check that the conversion table specified is bijective or create one command for each transfer direction (DIRECT=SEND or DIRECT=RECV).<br/> • No partner found: A partner activation or deactivation command (ACT or INACT) resulted in an error. The identifier indicated (ACT ID=&amp;Part) does not correspond to an existing partner identifier (CFTPART ID=&amp;Part).<br/> • Media communication is full: A transfer command (SEND or RECV) could not be written to the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} communication file. The maximum number of requests in the communication file that have not yet been processed by the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} has been reached (<a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/recnb">RECNB</a> parameter in the CFTFILE TYPE=COM command).<br/> • Incompatible compression parameters: Execution of the COPYFILE command resulted in an error when checking the attributes (record length or format, compression code or state).<br/> <a href="../../../admin_intro/admin_commands_intro/copyfile_command" >COPYFILE - Copy files off-line</a><br/><br/> • Compression error: Executing the COPYFILE command resulted in an error during the compression process.<br/> <a href="../../../admin_intro/admin_commands_intro/copyfile_command" >COPYFILE - Copy files off-line</a><br/><br/> • Decompression error: Executing the <a href="../../../admin_intro/admin_commands_intro/copyfile_command">COPYFILE</a> command resulted in an error during the decompression process. Executing the COPYFILE command resulted in an error during the decompression process.<br/> <a href="../../../admin_intro/admin_commands_intro/copyfile_command" >COPYFILE - Copy files off-line</a><br/><br/> • &amp;id: command not authorized: The command specified by the user is not authorized by the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} security system (&amp;id being the command identifier)<br/> • Habilitation opening error: An error was detected when initializing the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} security system; a file required by the system could not be opened correctly. Check that the initialization file exists and is valid (contains the operating rules and indirections pointing to the object and action dictionaries) and ensure that the security system dictionary files exist.<br/> • Create channel failed: An error was detected when creating the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} synchronous communication media. Check that you have enough memory.<br/> • Open channel failed: An error was detected when opening the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} synchronous communication media. Check that the synchronous communication process is launched.<br/> • Channel read error: An error was detected when reading the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} synchronous communication media. Check that the synchronous communication process is launched.<br/> • Channel write error: An error was detected when writing in the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} synchronous communication media. Check that the synchronous communication process is launched.<br/> • Close channel failed: An error was detected when closing the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} synchronous communication media. Check that the communication media is not already closed. |
 | Consequence | The command is ignored. |
 | Action | Check the parameter settings, analyze the &amp;scs code if it is set and, if necessary, inform Product Support. |
 
@@ -20279,8 +20279,8 @@
 
 | Code | Meaning  |
 | --- | --- |
-| 00 | VFABORTD - Transfer abort request by Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
-| 01 | VFCAND - Transfer interrupt request by Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} |
+| 00 | VFABORTD - Transfer abort request by {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} |
+| 01 | VFCAND - Transfer interrupt request by {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} |
 | 02 | VFCANR - Response to a transfer interrupt indication |
 | 03 | VFCHKD - Request to set a synchronization point |
 | 04 | VFCHKR - Response to a synchronization point indication |
@@ -20474,7 +20474,7 @@
 | Code  | Protocol  | Meaning  |
 | --- | --- | --- |
 | ABOI_CD | ODETTE | CD send following reception of an ABORT indication (case of a RECV IDF=* command) |
-| ABORT |   | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} transfer abort request |
+| ABORT |   | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} transfer abort request |
 | ABORT_I | ODETTE | ABORT caused by the protocol engine, following detection of an error |
 | CALL OUT |   | Call not made within the authorized call period (see OMINTIME/OMAXTIME - OMINDATE/OMAXDATE parameters of commands CFTPART, etc.) |
 | CATUPDT |   | Catalog update error (at sync point) |
@@ -20484,14 +20484,14 @@
 | COLLECT |   | Indication of a "generic" entry for file collection. This entry does not correspond to an actual transfer |
 | CP |   | Transfer performed without the compression option. This can be caused by the REQUESTER or SERVER partner as compression is negotiated |
 | NONE |   |   |
-| CP nn% |   | Transfer performed with the compression option. The compression rate is then displayed. This rate expresses the number of bytes to be sent in relation to the number of bytes actually sent. The number of bytes to be sent may be different from the number of bytes in the file if the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} truncates or pads records, depending on the parameter settings |
+| CP nn% |   | Transfer performed with the compression option. The compression rate is then displayed. This rate expresses the number of bytes to be sent in relation to the number of bytes actually sent. The number of bytes to be sent may be different from the number of bytes in the file if the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} truncates or pads records, depending on the parameter settings |
 | DAY CYC |   | Indication of a "generic" entry for cyclic transfers (days). This entry does not correspond to an actual transfer |
 | DIFFUS |   | Indication of a "generic" entry for file broadcasting. This entry does not correspond to an actual transfer |
 | DSEL_CN | ODETTE | Reception of a "negative DSELECT RESP" interaction from the file access task: error deselecting the sent file |
 | END_TFIL | ODETTE | Sending of a "RELEASE IND" interaction to the file access task in order to stop the task (information) |
 | ERR INC | ODETTE | Transfer ABORT - Reason not specified |
 | ERRCOMP |   | File compression error - the compression type requested is incompatible with the file data |
-| ERR LREC |   | Error sending or receiving the file data. Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} detects an invalid length for the data read or to be written |
+| ERR LREC |   | Error sending or receiving the file data. {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} detects an invalid length for the data read or to be written |
 | ERR_NCAR |   | Error in the number of characters sent |
 | ERR_NREC |   | Error in the number of records |
 | ERRPROT |   | Protocol error when switching directions |
@@ -20526,16 +20526,16 @@
 | NO NEW |   | Receive file already exists for a reception request: (CFT)RECV FDISP=NEW |
 | NO OLD |   | Receive file does not exist for a reception request: (CFT)RECV FDISP=OLD |
 | NO OPEN |   | Transfer in open mode not authorized (see the OPEN parameter of the partner's CFTPART command) |
-| NO PARM |   | Error due to incorrect Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} parameter settings |
+| NO PARM |   | Error due to incorrect {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} parameter settings |
 | NO PART |   | Partner does not exist (no CFTPART command for this partner identifier) |
 | NO PROT |   | Protocol does not exist (no CFTPROT command for this protocol identifier) |
-| NO TURN | ODETTE | The Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} cannot hand over to the partner (CD) as the partner handed over during the previous exchange |
+| NO TURN | ODETTE | The {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} cannot hand over to the partner (CD) as the partner handed over during the previous exchange |
 | NO XLATE |   | CFTXLATE command not found for this transfer direction, nor for the source and target alphabets |
 | NOCALL |   | The partner cannot be called |
 | NOCTX |   | Message for a missing or inactive context |
 | NOSELECT |   | With the PeSIT protocol, SIT profile, the file selection request (RECV command) is not authorized |
 | NO_FILE | ODETTE | There are no more files to be sent (information) |
-| NPART |   | REQUESTER partner mismatch with SERVER partner in SIT profile. Strict naming and consistency rules are imposed both by Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} and by the PESIT standard. |
+| NPART |   | REQUESTER partner mismatch with SERVER partner in SIT profile. Strict naming and consistency rules are imposed both by {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} and by the PESIT standard. |
 | N_REL_I | ODETTE | Reception of a network outage indication |
 | OPER |   | Transfer interrupt request by the operator |
 | OUT TIME |   | The transfer has exceeded the authorized time slot (MAXDATE, MAXTIME parameters of the command) |
@@ -20543,12 +20543,12 @@
 | RELEASE |   | Unexpected network outage, caused by the remote partner or the network |
 | RESTART0 |   | Transfer interruption (it will be restarted at the beginning of the file) |
 | RESTARTF |   | Transfer interruption (it will be restarted at the restart point) |
-| RTO |   | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} time-out during the transfer phase. This time-out corresponds to the RTO parameter of the CFTPROT command |
+| RTO |   | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} time-out during the transfer phase. This time-out corresponds to the RTO parameter of the CFTPROT command |
 | R_PASSW | ODETTE | The password given by the partner does not correspond to the parameter settings (CFTPART command). |
 | SFNA | ODETTE | Reception of an SFNA FPDU corresponding to a session parameter negotiation problem |
 | SROUT |   | The partner cannot be called (SROUT parameter of the CFTPROT command) |
 | SSY TFIL |   | Error sending data to CFTTFIL |
-| SYPOST |   | Communication error between Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} and the directory EXIT task |
+| SYPOST |   | Communication error between {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} and the directory EXIT task |
 | TFIL | ODETTE | Reception of a transfer ABORT request originating from the file access task |
 | TIMEOUT |   | Monitoring time-out during the connection phase, due particularly to a missing response to a pre-connection (LOGON) string or a CONNECT FPDU. With the SIT profile, there is no pre-connection phase |
 | TSK_EXIT |   | Error initializing a file EXIT task. |
@@ -20602,7 +20602,7 @@
 | 0207 | Transfer DIRECTION negotiation. The value requested by the partner and the SRIN (or SROUT) parameter value are incompatible |
 | 0208 | PAD option negotiation (special logic). The partner requests "special logic" whilst the PAD parameter is set to "NO" (default value) |
 | 0250 | Restart position error. Reception of a restart request (SFID FPDU) but the "no restart" option has been previously negotiated |
-| 0301 | During the protocol recognition phase the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} does not receive the expected string: "ODETTE FTP READY" |
+| 0301 | During the protocol recognition phase the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} does not receive the expected string: "ODETTE FTP READY" |
 | 0350 | The total length of "subrecords" forming the FPDU is different from the FPDU size specified in the SDATAIN field |
 | 0351 | Invalid size for subrecord sent |
 | 0401 | A restart is requested by the partner but the restart option is not set (RESYNC parameter) |
@@ -20613,7 +20613,7 @@
 | 0601 | IDF incompatibility. The received NIDF value does not correspond to the IDF requested (RECV IDF=xxxx command).<br/> Note: the only valid value for the IDF parameter of the RECV request is "*" |
 | 0650 | Reception of a negative A_SELECT |
 | 0701 | Error during the file de-selection phase at the partner end |
-| 0750 | Internal monitor error: attempt to send a DATA FPDU but the "credit" has been completely spent and the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} is waiting for a CDT FPDU |
+| 0750 | Internal monitor error: attempt to send a DATA FPDU but the "credit" has been completely spent and the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} is waiting for a CDT FPDU |
 | 0751 | Record size is greater than the size of the exchange buffer |
 | 0A00 | Local SSRM FPDU formatting error |
 | 0A02 | Local SSID FPDU formatting error |
@@ -21165,7 +21165,7 @@
 ============================== table nb count(1405) table converted to MD ========================================
 
 
-| PeSIT reason code&lt;/th&gt;  | Description&lt;/th&gt;  | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} internal diagnostic  | Service item concerned&lt;/th&gt;  |
+| PeSIT reason code&lt;/th&gt;  | Description&lt;/th&gt;  | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} internal diagnostic  | Service item concerned&lt;/th&gt;  |
 | --- | --- | --- | --- |
 | 100  | Transmission error  | 720  | F.RESTART  |
 
@@ -21174,7 +21174,7 @@
 ============================== table nb count(1406) table converted to MD ========================================
 
 
-| PeSIT reason code&lt;/th&gt;  | Description&lt;/th&gt;  | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} internal diagnostic  | Service item concerned&lt;/th&gt;  |
+| PeSIT reason code&lt;/th&gt;  | Description&lt;/th&gt;  | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} internal diagnostic  | Service item concerned&lt;/th&gt;  |
 | --- | --- | --- | --- |
 | 200  | File characteristics insufficient  | 730  | F.CREATE<br /> F.SELECT  |
 | 201  | System resources temporarily insufficient  | 916  | F.CREATE<br /> F.SELECT  |
@@ -21210,7 +21210,7 @@
 ============================== table nb count(1407) table converted to MD ========================================
 
 
-| PeSIT reason code&lt;/th&gt;  | Description&lt;/th&gt;  | Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} internal diagnostic  | Service item concerned&lt;/th&gt;  |
+| PeSIT reason code&lt;/th&gt;  | Description&lt;/th&gt;  | {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} internal diagnostic  | Service item concerned&lt;/th&gt;  |
 | --- | --- | --- | --- |
 | 300  | Local communication system congested  | 730  | F.CONNECT  |
 | 301  | Identification requested not known  | 909  | F.CONNECT  |
@@ -21264,8 +21264,8 @@
 | 207 | Invalid NSDU size received |
 | 208 | User resources currently insufficient |
 | 209 | End of time-out |
-| 210 | Incorrect number of records. The number transported by the EFID FPDU does not correspond to the number of received records counted by the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} (F- or V-format files) |
-| 211 | Number of characters incorrect. The number transported by the EFID FPDU does not correspond to the number of received characters counted by the Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} (T- or U-format files) |
+| 210 | Incorrect number of records. The number transported by the EFID FPDU does not correspond to the number of received records counted by the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} (F- or V-format files) |
+| 211 | Number of characters incorrect. The number transported by the EFID FPDU does not correspond to the number of received characters counted by the {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} (T- or U-format files) |
 
 
 
@@ -21323,7 +21323,7 @@
 | Topic  | Description  |
 | --- | --- |
 | <a href="trace_management">Trace management concepts</a> | Describes the concepts behind performing an ATM trace in Transfer CFT. |
-| <a href="parameter_settings">Defining trace in Transfer CFT{{&lt; TransferCFT/componentshortname &gt;}} parameters</a> | Describes the Transfer CFT general parameter for a trace. |
+| <a href="parameter_settings">Defining trace in {{&lt; TransferCFT/axwayvariablesComponentShortName &gt;}} parameters</a> | Describes the Transfer CFT general parameter for a trace. |
 | <a href="defining_a_trace_file_externally">Defining a trace file externally (CFTTRACE utility)</a> | Describes how to create or remove a trace file, or to reinitialize it with an empty useable content. |
 | <a href="defining_the_internal_trace_file">Defining the internal trace file (CFTUTIL command)</a> | Describes how to create a trace when Transfer CFT starts, with the possibility of tracing an initialization sequence, or during Transfer CFT operations. |
 | <a href="">Using the start trace command</a> | Describes the start trace command, which is associated with a unique identifier, defines and describes the conditions for starting and selecting traced data, and associates a file identifier. |

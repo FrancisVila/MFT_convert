@@ -23,7 +23,7 @@ and for incoming calls. The SAP can be served for each.
 
 Identifier lists of the CFTNET objects which can be used by the CFT
 monitor. For additional information, see the definition of the CFTNET
-command, and refer to the Transfer CFT{{< TransferCFT/componentshortname  >}} **Operations
-Guide** that corresponds to your OS.
+command, and refer to the {{< TransferCFT/axwayvariablesComponentShortName  >}} <span style="font-style: italic;">**Operations
+Guide**</span> that corresponds to your OS.
 
 [Return to Command index](../../)

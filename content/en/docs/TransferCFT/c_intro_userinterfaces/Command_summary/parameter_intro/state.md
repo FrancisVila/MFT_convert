@@ -10,7 +10,7 @@
 
 #### CFTRECV, CFTSEND, RECV, SEND
 
-**\[STATE = { DISP
+**\[STATE = { <span style="text-decoration: underline;">DISP</span>
 | HOLD | KEEP}\]**
 
 Defines the transfer request state:
@@ -53,18 +53,18 @@ Select one of the following transfer states:
 
 State of the partner:
 
-- ****ACTIVEBOTH**** (default)- partner active
+- <span style="font-weight: bold;">****ACTIVEBOTH****</span> (default)- partner active
     in all modes
-- ****ACTIVEREQ**** - partner active in request
+- <span style="font-weight: bold;">****ACTIVEREQ****</span> - partner active in request
     mode only
-- ****ACTIVESERV**** - partner active in server
+- <span style="font-weight: bold;">****ACTIVESERV****</span> - partner active in server
     mode only
-- ****NOACTIVE**** - partner not active
+- <span style="font-weight: bold;">****NOACTIVE****</span> - partner not active
 
 #### PKICER (PKIUTIL tool)
 
 State is the status of an imported certificate.
-If activated, it can be used by Transfer CFT{{< TransferCFT/componentshortname  >}}. Options are:
+If activated, it can be used by {{< TransferCFT/axwayvariablesComponentShortName  >}}. Options are:
 
 - Act - activated
 - Inact - deactivated

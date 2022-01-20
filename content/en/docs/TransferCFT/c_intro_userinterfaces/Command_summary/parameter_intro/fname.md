@@ -34,10 +34,10 @@ The number of identifiers in this list is not limited. Build the file
 using the following rules:
 
 - a record of this
-    file can only contain one ****idf****
+    file can only contain one <span style="font-weight: bold;">****idf****</span>
 - the size of the
     record is limited to 80 characters
-- an ****idf****
+- an <span style="font-weight: bold;">****idf****</span>
     must start in the first column and only the first 32 characters of the
     record are taken into account
 - characters after
@@ -47,7 +47,7 @@ using the following rules:
 - the file can contain
     records of zero length
 
-You cannot complete this field if you have selected the ****idf****
+You cannot complete this field if you have selected the <span style="font-weight: bold;">****idf****</span>
 button in the old Transfer CFT UI.
 
 <span id="fname_CFTCAT"></span>
@@ -118,7 +118,7 @@ File example:
 
 ![Example file names for distribution list](/Images/TransferCFT/fname_dest_ex.png)
 
-Transfer CFT{{< TransferCFT/componentshortname  >}} does not check the transfer requester access rights for this file.
+{{< TransferCFT/axwayvariablesComponentShortName  >}} does not check the transfer requester access rights for this file.
 
 If FOR=COMMUT (broadcasting by a intermediate
 site):
@@ -179,15 +179,15 @@ The complete path name includes the names of directories, or any other
 organization specific to the environment concerned, used to group files:
 library, catalog, PDSE, etc.
 
-Normally, the folder referenced in `fname ` parameter should exist or the transfer fails. However, depending on your environment, you may use a special character that can be set with the cft.char\_directory\_protect to implicitly create part of a path structure. An OS specific character delimits the path to be created (intermediate directories), where the names of the sub-directories appearing to the right of the character are created. Please see the uconf [char\_directory]() for more information.
+Normally, the folder referenced in <span class="code">`fname `</span> parameter should exist or the transfer fails. However, depending on your environment, you may use a special character that can be set with the cft.char\_directory\_protect to implicitly create part of a path structure. An OS specific character delimits the path to be created (intermediate directories), where the names of the sub-directories appearing to the right of the character are created. Please see the uconf [char\_directory]() for more information.
 
 **Example**
 
-The tree structure is created after the plus special character (****+****):
+The tree structure is created after the plus special character (<span style="color: #b22222; font-weight: bold;">****+****</span>):
 
 `FNAME=’/home/cft/runtime/myapp/+user1/files/&idtu.rcv`
 
-In  this example, the `user1 `and `files` folders are created if they did not already exist.
+In  this example, the `user1 `and <span class="code">`files`</span> folders are created if they did not already exist.
 
 The filename may:
 
@@ -213,7 +213,7 @@ The following variables may be used to form the FNAME character string:
 - &NCHARSET,&FCHARSET
 
 The ‘&’ character here replaces the char\_symb character specific
-to each operating system. Refer to the Transfer CFT{{< TransferCFT/componentshortname  >}} *Operations Guide*
+to each operating system. Refer to the {{< TransferCFT/axwayvariablesComponentShortName  >}} *Operations Guide*
 corresponding to your OS.
 
 ```
@@ -291,7 +291,7 @@ FNAME=filename where the FNAME is expressed as an absolute name:
 FNAME= '/home/cft/runtime/pub/FTEST'
 ```
 
-`FNAME = filename` where the FNAME is expressed in relative name from runtime folder:
+<span class="code">`FNAME = filename`</span> where the FNAME is expressed in relative name from runtime folder:
 
 ```
 FNAME = 'pub/FTEST'

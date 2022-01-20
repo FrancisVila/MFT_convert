@@ -47,8 +47,8 @@ Example
 ```
 CFTSENDS
  
-//LIB    JCLLIB ORDER=(****cftv2****.INSTALL)
-//      INCLUDE MEMBER=****cftenv****
+//LIB    JCLLIB ORDER=(<span class="bold_in_para">****cftv2****</span>.INSTALL)
+//      INCLUDE MEMBER=<span class="bold_in_para">****cftenv****</span>
 //CFTSENDS EXEC PCFTUTIL,PARM='/1=&CFTENV',
 //         QUAL=&CFTENV,OUT=&OUT
 /\* ----  WITH INDIRECT CONFIGURATION FILE ---- \*/

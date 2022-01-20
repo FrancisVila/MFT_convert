@@ -8,7 +8,7 @@
 
 `[ PHASESTEPS = { D | H | C | K | X | T | E } ]`
 
-Where the string ****sizemax=7**** and the default is X.
+Where the string <span class="bold_in_para">****sizemax=7****</span> and the default is X.
 
 During processing, the phasesteps can be:
 

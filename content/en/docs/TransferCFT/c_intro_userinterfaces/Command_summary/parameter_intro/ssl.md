@@ -14,7 +14,7 @@ The identifier for the CFTSSL object that is used as security profiles.
 
 In requester mode, this value is used as the default security profile.
 
-In server mode, Transfer CFT{{< TransferCFT/componentshortname  >}} refuses to start up if it does not find
+In server mode, {{< TransferCFT/axwayvariablesComponentShortName  >}} refuses to start up if it does not find
 the CFTSSL object that corresponds to the identifier specified here.
 
 #### CFTPART

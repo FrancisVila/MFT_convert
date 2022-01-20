@@ -15,10 +15,10 @@ Application integration refers to the transfer of files between applications tha
 
 ## Multi-site integration
 
-Transfer CFT{{< TransferCFT/componentshortname  >}} can be used as part of a multi-site integration where files are transferred between remote locations, such as stores, factories, sites, and data centers of a single enterprise, as well as between partners.
+{{< TransferCFT/axwayvariablesComponentShortName  >}} can be used as part of a multi-site integration where files are transferred between remote locations, such as stores, factories, sites, and data centers of a single enterprise, as well as between partners.
 
 In multi-site integration file transfer, the sites and technology are owned by the same enterprise. Multi-site integration allows for better integration with the systems at the site for increased control and visibility. However, multi-site and business-to-business file transfer patterns must both address security concerns and network usage and bandwidth issues.
 
 ## Portal-based file transfer
 
-For portal-based file transfers, an end user may be using a company portal to upload or download files within that portal. The portal is typically not provided by Axway{{< TransferCFT/companyname  >}}, but the file transfer can be managed by Transfer CFT{{< TransferCFT/componentshortname  >}}. A common use case is a bank portal that provides links to download bank statements or loan documents. The end-user experience is online banking, and behind the scenes, the bank ensures secure file upload and download with the audit, security, and benefits of MFT.
+For portal-based file transfers, an end user may be using a company portal to upload or download files within that portal. The portal is typically not provided by {{< TransferCFT/axwayvariablesCompanyName  >}}, but the file transfer can be managed by {{< TransferCFT/axwayvariablesComponentShortName  >}}. A common use case is a bank portal that provides links to download bank statements or loan documents. The end-user experience is online banking, and behind the scenes, the bank ensures secure file upload and download with the audit, security, and benefits of MFT.

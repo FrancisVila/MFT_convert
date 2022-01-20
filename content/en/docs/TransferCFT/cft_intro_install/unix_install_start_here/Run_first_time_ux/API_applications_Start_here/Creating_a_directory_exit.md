@@ -2,7 +2,7 @@
     "title": "Creating  a directory exit",
     "linkTitle": "Creating a directory exit",
     "weight": "230"
-}The following example was designed from a modified version of the ****cft-tcp.conf**** configuration example, located in ****&lt;installdir>/runtime/conf****. For this example, you should have customized
+}The following example was designed from a modified version of the <span class="bold_in_para">****cft-tcp.conf**** </span>configuration example, located in <span class="bold_in_para">****&lt;installdir>/runtime/conf****</span>. For this example, you should have customized
 at least one of these files, using the instructions in [Running Transfer
 CFT for the first time.]()
 
@@ -35,8 +35,8 @@ the following *cftprot* command:
 
 ```
 cftprot id      = PeSITCFT,
-type`      = PESIT,`  
-`prof`      = CFT,
+type<span class="code">`      = PESIT,`</span>  
+<span class="code">`prof`</span>      = CFT,
 ...
 exita= EXIT_A,
 mode      = replace
@@ -89,7 +89,7 @@ The *&lt;installdir>/runtime/src/exit/* subdirectory contains:
     of a transfer to a partner known to the directory EXIT but not to Transfer
     CFT
 - Activation
-    of a transfer to a partner not known to either Transfer CFT{{< TransferCFT/componentshortname >}} or the directory
+    of a transfer to a partner not known to either {{< TransferCFT/axwayvariablesComponentShortName >}} or the directory
     EXIT
 
 <!-- -->
@@ -100,7 +100,7 @@ The *&lt;installdir>/runtime/src/exit/* subdirectory contains:
 The *&lt;installdir>/lib* subdirectory contains:
 
 - The *libcftexa*.*a*
-    module required to use the Transfer CFT{{< TransferCFT/componentshortname >}} directory EXITs
+    module required to use the {{< TransferCFT/axwayvariablesComponentShortName >}} directory EXITs
 
 To generate the sample CFTEXITA application, proceed as follows.
 
@@ -112,27 +112,27 @@ To generate the sample CFTEXITA application, proceed as follows.
 ## Running the test
 
 1. Access the *&lt;installdir>/runtime/conf* directory.
-1. Generate the Transfer CFT{{< TransferCFT/componentshortname >}} databases
+1. Generate the {{< TransferCFT/axwayvariablesComponentShortName >}} databases
     using *cftinit* the configuration file provided
-    and modified for this EXIT:` cft-tcp.conf`
+    and modified for this EXIT:<span class="code">` cft-tcp.conf`</span>
 1. When the *cftinit complete*
-    message is displayed, run Transfer CFT{{< TransferCFT/componentshortname >}} using the *cftstart* utility: `cftstart`
+    message is displayed, run {{< TransferCFT/axwayvariablesComponentShortName >}} using the *cftstart* utility: <span class="code">`cftstart`</span>
 1. When the *CFTMAIN process
     ID is xxxxx* message is displayed, perform an initial standard transfer
     using the command:  
-    `CFTUTIL send part=BOSTON, idf=TXT`
+    <span class="code">`CFTUTIL send part=BOSTON, idf=TXT`</span>
 1. Now submit a second transfer
     to the NCFT\_OK partner.  
-    `CFTUTIL send part=NCFT_OK,idf=TXT`
+    <span class="code">`CFTUTIL send part=NCFT_OK,idf=TXT`</span>
 1. After a few seconds, you can
     check the transfer state by entering the  
-    command: `cftcatab`
+    command: <span class="code">`cftcatab`</span>
 1. The transfer is successful
     because NRPART01 is defined in the DIRECTORY EXIT as being the EXTPTN01
-    non- Transfer CFT{{< TransferCFT/componentshortname >}} partner.
+    non- {{< TransferCFT/axwayvariablesComponentShortName >}} partner.
 1. Now submit a third transfer
     to the NCFT\_OK partner.  
-    `CFTUTIL send part=NCFT_NOK,idf=TXT`
+    <span class="code">`CFTUTIL send part=NCFT_NOK,idf=TXT`</span>
 1. After a few seconds, you can
     check the transfer state by entering the  
     command:
@@ -142,6 +142,6 @@ To generate the sample CFTEXITA application, proceed as follows.
 The transfer fails because the password is invalid, even though NRPART02
 is defined in the DIRECTORY EXIT.
 
-1. Stop Transfer CFT{{< TransferCFT/componentshortname >}}:
+1. Stop {{< TransferCFT/axwayvariablesComponentShortName >}}:
 
 `cftstop`

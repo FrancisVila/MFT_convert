@@ -23,7 +23,7 @@ A PTF file results from the fixed formatting (80) of an ADRDSSU-type file contai
 >
 > PTF files are cumulative. A basic Transfer CFT z/OS installation can integrate PTFs. If you use this method, apply the PTFs one at a time.
 
-Libraries taken into account during a DUMP ADRDSSU
+<span class="autonumber"></span>Libraries taken into account during a DUMP ADRDSSU
 
 
 | Libraries  | Contents  |
@@ -90,7 +90,7 @@ All of the A13\* JCLs are used to update or apply a Service Pack to Transfer CFT
 
 QQQ\_QQQ\_CHECK check h4 titles
 
-#### JCL updates on Transfer CFT{{< TransferCFT/componentlongname  >}}
+#### JCL updates on {{< TransferCFT/axwayvariablesComponentLongName  >}}
 
 
 | JCL  | Description  |
@@ -104,7 +104,7 @@ QQQ\_QQQ\_CHECK check h4 titles
 | A13SDEL  | To delete a save-load library when a patch is validated, or if the loadlib is restored to reapply a patch.  |
 
 
-#### JCL updates on Copilot{{< TransferCFT/copilotname  >}}
+#### JCL updates on {{< TransferCFT/suitevariablesCopilotName  >}}
 
 
 | JCL  | Description  |
@@ -120,7 +120,7 @@ QQQ\_QQQ\_CHECK check h4 titles
 | JCL  | Description  |
 | --- | --- |
 | A13UXSRA  | To apply a patch to Secure Relay - Master Agent (creates a save file).  |
-| A13UXSRR  | To restore the Transfer CFT Secure Relay{{< TransferCFT/securerelayname  >}} environment from a save file in USS environment.  |
+| A13UXSRR  | To restore the Transfer CFT {{< TransferCFT/suitevariablesSecureRelayName  >}} environment from a save file in USS environment.  |
 | A13UXSRD  | To delete a save file when a patch is validated.  |
 
 

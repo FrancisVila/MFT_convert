@@ -4,13 +4,13 @@
     "weight": "2390"
 }<span id="ocode"></span>
 
-### ocode
+### {{< TransferCFT/SystemTitle  >}}
 
 #### COPYFILE
 
-******\[OCODE =
+**<span style="font-weight: bold;">****\[OCODE =
 {<u>internal code determined by the system</u>
-| ASCII | EBCDIC}\]******
+| ASCII | EBCDIC}\]****</span><span style="font-weight: normal;"> </span>**
 
 Output file data code.
 

@@ -4,24 +4,24 @@
     "weight": "2270"
 }<span id="nopart"></span>
 
-### nopart
+### {{< TransferCFT/SystemTitle  >}}
 
 #### CFTDEST
 
-****\[NOPART = {abort
+****\[NOPART = {<span style="text-decoration: underline;">abort</span>
 | continue | ignore }\]****
 
-Do not complete this field if you
-completed the fname field.
+<span style="font-weight: normal;">Do not complete this field if you
+completed the fname field.</span>
 
 Define the actions to perform when a partner in the partner list is
 not found. Options are:
 
-- ****abort****
+- <span style="font-weight: bold;">****abort****</span>
     (default)
-- ****continue****:
+- <span style="font-weight: bold;">****continue****</span>:
     to display an information message and continue processing
-- ****ignore****:
+- <span style="font-weight: bold;">****ignore****</span>:
     continue processing with no information message
 
  

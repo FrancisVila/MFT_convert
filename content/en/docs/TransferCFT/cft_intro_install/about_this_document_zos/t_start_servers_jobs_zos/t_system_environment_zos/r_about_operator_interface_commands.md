@@ -10,11 +10,11 @@
 
 The z/OS operator interface for Transfer CFT supports two types of commands:
 
-- The Transfer CFT commands described the Command Index
+- The Transfer CFT commands described the <span class="span_20"><span class="span_20">Command Index</span></span>
 
 <!-- -->
 
-- The diagnostic commands described in section Diagnostic commands
+- The diagnostic commands described in section <span class="Hyperlink">Diagnostic commands</span>
 
 ### Types of responses
 

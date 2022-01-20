@@ -4,7 +4,7 @@
     "weight": "220"
 }## File type
 
-The behavior of the values ‘’ and ‘ ’, for FTYPE and FRECFM respectively, are not detailed in the following tables. These values correspond to undefined, which means that the transfer in reception takes the value sent through the network. 
+The behavior of the values ‘’ and ‘ ’, for FTYPE and FRECFM respectively, are not detailed in the following tables. These values correspond to <span style="font-family: 'Courier New';">undefined</span>, which means that the transfer in reception takes the value sent through the network. 
 
 ****File type when the file does not exist****
 
@@ -26,7 +26,7 @@ QQQ\_QQQ\_QQQ
 
 ****File type when the file already exists****
 
-The following table describes the Transfer CFT{{< TransferCFT/hflongproductname  >}} behavior when trying to receive data in an existing file on the native side of an IBM i system.
+The following table describes the {{< TransferCFT/headerfootervariableshflongproductname  >}} behavior when trying to receive data in an existing file on the native side of an IBM i system.
 
 > **Note**
 >

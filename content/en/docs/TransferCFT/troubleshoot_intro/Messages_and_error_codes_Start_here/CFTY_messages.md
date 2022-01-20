@@ -14,7 +14,7 @@ Earlier versions of Transfer CFT used a different message format than version 3.
 
 CFTLOG FORMAT=\[V23,V24\]
 
-For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
+For V23: <span class="code">`CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`</span>
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
@@ -69,7 +69,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY06E"></span>CFTY06E CTX=&amp;ctx Certificate Request Message error _ &amp;string<br/> CFTY06E CTX=&amp;ctx Certificate Request Message error _ &amp;string |
 | --- | --- |
-| Explanation | SSL handshake error: a request certificate message, sent by the server, is invalid. According to the error origin, various reasons are given below:<br/> • UNSUPPORTED TYPE FIELD: The server requires an authentication type which is not supported by Transfer CFT{{< TransferCFT/componentshortname  >}}.<br/> • INVALID DN LENGTH: The DN (Distinguished Name) length is invalid |
+| Explanation | SSL handshake error: a request certificate message, sent by the server, is invalid. According to the error origin, various reasons are given below:<br/> • UNSUPPORTED TYPE FIELD: The server requires an authentication type which is not supported by {{< TransferCFT/axwayvariablesComponentShortName  >}}.<br/> • INVALID DN LENGTH: The DN (Distinguished Name) length is invalid |
 | Result | The SSL session in progress is aborted. An alert is sent to the server. |
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY07E"></span>CFTY07E CTX=&amp;ctx System error [&amp;string] CR=&amp;cr CS=&amp;cs<br/> CFTY07E CTX=&amp;ctx System error [&amp;string] CR=&amp;cr CS=&amp;cs |
 | Explanation | SSL handshake error. According to the error origin, various messages are given below. |
@@ -82,9 +82,9 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | V23 format<br/> V24 format<br/> Information | CFTY07E CTX=&amp;ctx System error [CTXALLOC] CR=&amp;cr CS=&amp;cs<br/> CFTY07E CTX=&amp;ctx System error [CTXALLOC] CR=&amp;cr CS=&amp;cs |
 | Explanation | Memory allocation error for a new SSL session context:<br/> • CR=-2,-3: Dynamic memory allocation failure<br/> • CR=-9: Maximum context count reached |
 | V23 format<br/> V24 format<br/> Information | CFTY07E CTX=&amp;ctx System error [CTXCHK] CR=&amp;cr CS=&amp;cs<br/> CFTY07E CTX=&amp;ctx System error [CTXCHK] CR=&amp;cr CS=&amp;cs |
-| Explanation | Invalid message received from another Transfer CFT{{< TransferCFT/componentshortname  >}} task (context is invalid or already free). |
+| Explanation | Invalid message received from another {{< TransferCFT/axwayvariablesComponentShortName  >}} task (context is invalid or already free). |
 | V23 format<br/> V24 format<br/> Information | CFTY07E PROT=&amp;prot SSLPID=&amp;pid HOST=&amp;host synchronization error CR=&amp;cr CS=&amp;scs<br/> CFTY07E PROT=&amp;prot SSLPID=&amp;pid HOST=&amp;host synchronization error CR=&amp;cr CS=&amp;scs |
-| Explanation | Problem with sending an internal Transfer CFT{{< TransferCFT/componentshortname  >}} message to the protocol task during the SSL initialization phase |
+| Explanation | Problem with sending an internal {{< TransferCFT/axwayvariablesComponentShortName  >}} message to the protocol task during the SSL initialization phase |
 | Consequence | The transfer is aborted |
 | Action | Analyze the &amp;scs code and contact the product support team if necessary |
 
@@ -137,7 +137,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | --- | --- |
 | Explanation | SSL session handshake failure. |
 | Result | The SSL session in progress is aborted. An alert is sent to the remote entity. |
-| Action | Call the Transfer CFT{{< TransferCFT/componentshortname  >}} hot line.<br/> Analyze the &amp;cr error code (refer to the SSL protocol error codes). Contact the product support team if necessary. |
+| Action | Call the {{< TransferCFT/axwayvariablesComponentShortName  >}} hot line.<br/> Analyze the &amp;cr error code (refer to the SSL protocol error codes). Contact the product support team if necessary. |
 
 
  
@@ -187,7 +187,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY19I"></span>CFTY19I PART=&amp;id SSL=&amp;id opening client session CTX=&amp;ctx on task PID=&amp;pid<br/> CFTY19I PART=&amp;id SSL=&amp;id opening client session CTX=&amp;ctx on task PID=&amp;pid |
 | --- | --- |
-| Explanation | Handshake is started for a new client SSL session. Transfer CFT{{< TransferCFT/componentshortname  >}} gives a unique reference to it. Using this reference, the session could be tracked. |
+| Explanation | Handshake is started for a new client SSL session. {{< TransferCFT/axwayvariablesComponentShortName  >}} gives a unique reference to it. Using this reference, the session could be tracked. |
 
 
  
@@ -195,7 +195,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY20I"></span> CFTY20I PROT=&amp;id SSL=&amp;id opening server session CTX=&amp;ctx on task PID=&amp;pid<br/> CFTY20I PROT=&amp;id SSL=&amp;id opening server session CTX=&amp;ctx on task PID=&amp;pid |
 | --- | --- |
-| Explanation | Handshake is started for a new server SSL session. Transfer CFT{{< TransferCFT/componentshortname  >}} gives a unique reference to it. Using this reference, the session could be tracked. |
+| Explanation | Handshake is started for a new server SSL session. {{< TransferCFT/axwayvariablesComponentShortName  >}} gives a unique reference to it. Using this reference, the session could be tracked. |
 
 
  
@@ -243,7 +243,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY26I"></span>CFTY26I CTX=&amp;ctx Anonymous &amp;str session<br/> CFTY26I CTX=&amp;ctx Anonymous &amp;str session |
 | --- | --- |
-| Explanation | Opening of a secure session without authentication in either client or server mode. Refer to the Transfer CFT{{< TransferCFT/componentshortname  >}} Online documentation.<br/> • &amp;ctx= context SSL<br/> • str = client or server |
+| Explanation | Opening of a secure session without authentication in either client or server mode. Refer to the {{< TransferCFT/axwayvariablesComponentShortName  >}} Online documentation.<br/> • &amp;ctx= context SSL<br/> • str = client or server |
 
 
  

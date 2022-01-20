@@ -13,7 +13,7 @@ in relation to each mode.
     server mode, Transfer CFT replies to an incoming connection, re-sent
     by the system communication layers.
 
-For details on using these modes in a Central Unified Flow Management{{< TransferCFT/governance  >}} setting, please refer to the Central Unified Flow Management{{< TransferCFT/governance  >}} User Guide{{< TransferCFT/doctypeuser  >}}.
+For details on using these modes in a Central {{< TransferCFT/suitevariablesGovernance  >}} setting, please refer to the Central {{< TransferCFT/suitevariablesGovernance  >}} {{< TransferCFT/suitevariablesDocTypeUser  >}}.
 
 ## Requester mode overview
 
@@ -44,7 +44,7 @@ network and then operates in server mode.
 
 Steps include:
 
-1. **Receive an incoming call**: Transfer CFT{{< TransferCFT/componentlongname >}} receives an incoming connection on the communication system, which could be rejected depending on Transfer CFT{{< TransferCFT/componentlongname >}} limitations and/or parameter settings.
+1. **Receive an incoming call**: {{< TransferCFT/axwayvariablesComponentLongName >}} receives an incoming connection on the communication system, which could be rejected depending on {{< TransferCFT/axwayvariablesComponentLongName >}} limitations and/or parameter settings.
 1. **Exchange protocol information**: When the network connection is established, the partners participate in an exchange
     of messages in accordance with the chosen protocol.
 1. **Create or select a
@@ -55,12 +55,12 @@ Steps include:
 1. **Disconnect**: On completion of data transfer, the files are closed, the network connection
     is cut after the expiration of the associated hold timeout.
 
-********Example: Sending in requester mode********
+********<span class="autonumber"></span>Example: Sending in requester mode********
 
 ![](/Images/TransferCFT/temp_session1.png)
 
-******** ********
+********<span class="autonumber"></span> ********
 
-********Example: Receiving in requester mode********
+********<span class="autonumber"></span>Example: Receiving in requester mode********
 
 ![](/Images/TransferCFT/temp_session3.png)

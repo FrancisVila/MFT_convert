@@ -39,7 +39,7 @@ The characters following the initial " == " either set certain information for t
     -   A direct TACL procedure execution
     -   This execution type performed by default
     -   This parameter is kept to ensure compatibility with existing batch procedures
-- <span id="CFT^BT^FORCE^ZBAT"></span>== CFT^BT^FORCE^ZBAT ==
+- <span id="CFT^BT^FORCE^ZBAT"></span>== CFT^BT^FORCE^ZBAT<span style="color: #b22222;"> == </span>
     -   Use NetBatch Interface
     -   To specify a given environment, you can declare it in the first line of the actual procedure. Add the following optional values in the first line of the skeleton procedure, in the order listed. If no values are declared, the [UCONF](#UCONF) default values are used.
         -   NetBatch process
@@ -57,10 +57,10 @@ The characters following the initial " == " either set certain information for t
 
 ### Processing
 
-1. Regardless of if the procedure is OSS or native, Transfer CFT{{< TransferCFT/componentlongname >}} creates a temporary file with the following locations and naming conventions:
+1. Regardless of if the procedure is OSS or native, {{< TransferCFT/axwayvariablesComponentLongName >}} creates a temporary file with the following locations and naming conventions:
 
-- OSS: The same as on Transfer CFT{{< TransferCFT/componentlongname >}} Unix: /tmp/CFTxxxx  
-- Native: On the Transfer CFT{{< TransferCFT/componentlongname >}} default [subvolume](#subvolumeUD): CTMPnnnn
+- OSS: The same as on {{< TransferCFT/axwayvariablesComponentLongName >}} Unix: /tmp/CFTxxxx  
+- Native: On the {{< TransferCFT/axwayvariablesComponentLongName >}} default [subvolume](#subvolumeUD): CTMPnnnn
 
 `2> filenames $DATA14.CFT32BUD.*`
 
@@ -68,9 +68,9 @@ The characters following the initial " == " either set certain information for t
 
 `CTMP0001  CTMP0002  CTMP0003  CTMP0004`
 
-Transfer CFT{{< TransferCFT/componentlongname  >}} copies the skeleton in the temporary file, replacing variables with their real values (transfer information, file names, etc.).
+{{< TransferCFT/axwayvariablesComponentLongName  >}} copies the skeleton in the temporary file, replacing variables with their real values (transfer information, file names, etc.).
 
-Depending on the type of procedure, Transfer CFT{{< TransferCFT/componentlongname  >}}:
+Depending on the type of procedure, {{< TransferCFT/axwayvariablesComponentLongName  >}}:
 
 - Starts the script (OSS)
 - Starts the TACL direct processing
@@ -96,7 +96,7 @@ The following unified configuration parameters are specific to HP Nonstop.
 
 | Parameter | Default | Description |
 | --- | --- | --- |
-| <span id="cft.guardian.cftwrk"></span>cft.guardian.cftwrk |   | The default working directory for the TACL and NETBATCH scripts.<br/> The parameter is set with the default value of “<code>&lt;</code><code>subvolume</code><code>&gt;UD</code>” (see <a href="#Guardian" >Guardian files</a>) during the Guardian files installation. |
+| <span id="cft.guardian.cftwrk"></span>cft.guardian.cftwrk |   | The default working directory for the TACL and NETBATCH scripts.<br/> The parameter is set with the default value of “<span ><code>&lt;</code></span><span  data-xmlns="http://www.w3.org/TR/REC-html40"><code>subvolume</code></span><span ><code>&gt;UD</code></span>” (see <a href="#Guardian" >Guardian files</a>) during the Guardian files installation. |
 | <span id="cft.guardian.process_name_prefix"></span>cft.guardian.process_name_prefix | LA | The first two letters of the Guardian process names.<br/> Each Transfer CFT process is assigned a name using this prefix and a suffix, which depends on the executable name.<br/> For instance, using the default setting, CFTLOG is run with the name $LALOG with the Guardian convention (or /G/LALOG with the OSS convention).<br/> If empty, no Guardian process name is given.<br/> If you plan to run several instances of Transfer CFT at the same time on the same machine, you should assign each instance a unique value. |
 | <span id="cft.guardian.processor"></span>cft.guardian.processor | -1 | Processor on which Transfer CFT is started.<br/> • -1 indicates that Transfer CFT is started on the processor from which the start-up command is executed<br/> • Processor number |
 | <span id="cft.guardian.backup_processor"></span>cft.guardian.backup_processor | -1 | Backup processor on which Transfer CFT is started.<br/> • -1 indicates that no processor number is assigned<br/> • Backup processor number |

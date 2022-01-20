@@ -4,7 +4,7 @@
     "weight": "1990"
 }<span id="minlch"></span>
 
-## minlch
+## {{< TransferCFT/SystemTitle  >}}
 
 #### CFTNET
 

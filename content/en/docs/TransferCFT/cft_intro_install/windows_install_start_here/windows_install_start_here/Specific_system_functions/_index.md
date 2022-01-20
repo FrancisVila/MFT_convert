@@ -20,10 +20,10 @@ into the physical name.
 
 ****Example****
 
-The environment variable `[FULL_NAME]` provides a definition
+The environment variable <span class="code">`[FULL_NAME]`</span> provides a definition
 to the operating system as follows:
 
-`FULL_NAME=C:\REP0\REP1\FILE.SUF` which is used as follows by the Transfer
+<span class="code">`FULL_NAME=C:\REP0\REP1\FILE.SUF`</span> which is used as follows by the Transfer
 CFT parameterization: FNAME = $FULL\_NAME
 
 The implementation of a certain number of non-standard functions is

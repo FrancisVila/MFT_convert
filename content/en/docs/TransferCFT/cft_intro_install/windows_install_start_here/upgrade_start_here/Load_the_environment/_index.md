@@ -2,9 +2,9 @@
     "title": "Migration prerequisites",
     "linkTitle": "Perform a manual migration",
     "weight": "220"
-}After performing a Transfer CFT{{< TransferCFT/componentshortname  >}} 3.9 installation, you should update to the most recent service pack.
+}After performing a {{< TransferCFT/axwayvariablesComponentShortName  >}} {{< TransferCFT/PrimaryTransferCFTversionlong  >}} installation, you should update to the most recent service pack.
 
-You require a new license key if you are migrating from a version 2.x Transfer CFT{{< TransferCFT/componentshortname  >}} to a version 3.x.
+You require a new license key if you are migrating from a version 2.x {{< TransferCFT/axwayvariablesComponentShortName  >}} to a version 3.x.
 
 ## Check the impact of new features
 
@@ -18,13 +18,13 @@ Transfer CFT on Windows requires the **Visual C++ Redistributable Package for Vi
 >
 > If the redistribution package is already installed on your Windows system, there is no need to reinstall.
 
-## Install Transfer CFT{{< TransferCFT/componentshortname  >}} 3.9{{< TransferCFT/componentversion  >}}
+## Install {{< TransferCFT/axwayvariablesComponentShortName  >}} {{< TransferCFT/axwayvariablesComponentVersion  >}}
 
-Perform a Transfer CFT{{< TransferCFT/componentshortname  >}} installation, as described in the OS-specific installation section.
+Perform a {{< TransferCFT/axwayvariablesComponentShortName  >}} installation, as described in the OS-specific installation section.
 
 ## Load the environment
 
-Before beginning a standard migration procedure, you must load the old Transfer CFT{{< TransferCFT/componentshortname  >}} environment.
+Before beginning a standard migration procedure, you must load the old {{< TransferCFT/axwayvariablesComponentShortName  >}} environment.
 
 ### Windows procedure
 
@@ -32,7 +32,7 @@ Before beginning a standard migration procedure, you must load the old Transfer 
 
 There is no profile file for Transfer CFT 2.4 in Windows.
 
-To execute a command you must be in the correct directory. Therefore, before starting the migration, change the directory to the version-appropriate Transfer CFT{{< TransferCFT/componentshortname  >}} installation directory.
+To execute a command you must be in the correct directory. Therefore, before starting the migration, change the directory to the version-appropriate {{< TransferCFT/axwayvariablesComponentShortName  >}} installation directory.
 
 #### Transfer CFT 2.5 and higher
 
@@ -44,10 +44,10 @@ After loading the profile, you can execute commands from anywhere.
 
 #### Transfer CFT 2.4
 
-From the console, execute the profile file for your version of Transfer CFT, which is by default located in the home directory. Enter: `. ./ENV_CFT`
+From the console, execute the profile file for your version of Transfer CFT, which is by default located in the home directory. Enter: <span class="code">`. ./ENV_CFT`</span>
 
 #### Transfer CFT 2.5 and higher
 
-From the console, change directory to the Transfer CFT runtime directory and execute the profile file using the command: `. ./profile`
+From the console, change directory to the Transfer CFT runtime directory and execute the profile file using the command: <span class="code">`. ./profile`</span>
 
 After loading the profile, you can execute commands from anywhere.

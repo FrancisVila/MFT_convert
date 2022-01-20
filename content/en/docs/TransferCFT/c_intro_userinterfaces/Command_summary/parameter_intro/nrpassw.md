@@ -16,7 +16,7 @@
 
 Partner sign-on password, authorizing a local site access right check.
 
-The remote partner must submit this password to the local Transfer CFT{{< TransferCFT/componentshortname  >}}, during the connection phase. On the remote partner end, you must declare this
+The remote partner must submit this password to the local {{< TransferCFT/axwayvariablesComponentShortName  >}}, during the connection phase. On the remote partner end, you must declare this
 password as the NSPASSW parameter of the CFTPART object
 used in the transfer.
 

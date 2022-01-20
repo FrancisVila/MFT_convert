@@ -13,11 +13,11 @@
 This parameter enables you to reject an incoming transfer if local file
 attributes don't match the virtual file attributes.
 
-- ****NO****
-    (default value) - Transfer CFT{{< TransferCFT/componentshortname >}} behavior is unchanged, and no check is
+- <span style="font-weight: bold;">****NO****</span>
+    (default value) - {{< TransferCFT/axwayvariablesComponentShortName >}} behavior is unchanged, and no check is
     performed. If the virtual file record length and format do not match the
     FLRECL and FRECFM attributes, the record is truncated or padded.
-- ****YES**** - A record check is performed. FLRECL and FRECFM attributes are compared
+- <span style="font-weight: bold;">****YES****</span> - A record check is performed. FLRECL and FRECFM attributes are compared
     with the virtual file record length and format. If attributes do not match
     the transfer is rejected.
 

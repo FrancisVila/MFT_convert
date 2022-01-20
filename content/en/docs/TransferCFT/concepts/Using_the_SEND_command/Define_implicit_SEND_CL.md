@@ -21,7 +21,7 @@ SEND command parameter:
 
 For SEND command details refer to the following syntax:
 
-![Closed](/Images/TransferCFT/transparent.gif)Syntax
+<span class="MCDropDownHead dropDownHead">![Closed](/Images/TransferCFT/transparent.gif)Syntax</span>
 
 [TYPE](../../../c_intro_userinterfaces/command_summary/parameter_intro/type)
 = FILE

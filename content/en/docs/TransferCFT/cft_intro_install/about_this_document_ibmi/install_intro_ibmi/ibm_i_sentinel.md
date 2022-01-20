@@ -2,7 +2,7 @@
     "title": "Manually enable Sentinel ",
     "linkTitle": "Manually enable Sentinel",
     "weight": "240"
-}When using Central Governance{{< TransferCFT/centralgovernancename  >}}, the visibility features are managed by Central Governance{{< TransferCFT/centralgovernancename  >}}. Do not modify these parameters when running with Central Governance{{< TransferCFT/centralgovernancename  >}}.
+}When using {{< TransferCFT/suitevariablesCentralGovernanceName  >}}, the visibility features are managed by {{< TransferCFT/suitevariablesCentralGovernanceName  >}}. Do not modify these parameters when running with {{< TransferCFT/suitevariablesCentralGovernanceName  >}}.
 
 ## Sentinel configuration parameters
 
@@ -42,7 +42,7 @@ The following table lists the Sentinel parameters in the unified configuration a
 | sentinel.xfb.transfer.send_relay_site_nidf<br/> Enables an NIDF on the relay site. This uses an NIDF instead of COMMUT when sending an event to Sentinel using the XFBTransfer object. | No  |   |
 
 
-For more information on event messages, refer to the Axway Sentinel documentation.
+For more information on event messages, refer to the <span class="italic_in_para">Axway Sentinel</span> documentation.
 
 ## About Transfer CFT heartbeat functionality
 
@@ -64,7 +64,7 @@ Each Transfer CFT environment number n (from 1 to 5) has its own corresponding H
 | sentinel.heartbeat.script  | CFTPROD/HEARTBEAT | Script for executing Heartbeats.  |
 
 
-Example
+<span class="autonumber"></span>Example
 
 ```
 uconfset id=sentinel.heartbeat.enable,value=yes

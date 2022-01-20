@@ -9,7 +9,7 @@
 #### RECV
 
 ****\[ FDATE
-= { 0
+= { <span style="text-decoration: underline;">0</span>
 | date } \]****
 
 File creation date.

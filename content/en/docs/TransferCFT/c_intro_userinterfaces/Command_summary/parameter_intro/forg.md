@@ -27,7 +27,7 @@ allow data to be loaded into a non-sequential organization file (normally
 pre-existing). Depending on the case, the explicit use of parameters such
 as FTYPE, FKEYLEN, FKEYPOS and FORG may be required.
 
-For further information, refer to the Transfer CFT{{< TransferCFT/componentshortname  >}} *"Operations
+For further information, refer to the {{< TransferCFT/axwayvariablesComponentShortName  >}} *"Operations
 Guide"* corresponding to your OS.
 
 [Return to Command index](../../)

@@ -2,13 +2,13 @@
     "title": "Dynamic  partner in server mode",
     "linkTitle": "Dynamic partner in server mode",
     "weight": "370"
-}In server mode, standard Transfer CFT{{< TransferCFT/componentshortname  >}} operations consist of accepting
+}In server mode, standard {{< TransferCFT/axwayvariablesComponentShortName  >}} operations consist of accepting
 a transfer request only if the partner is pre-defined in the parameter
-settings. This topic describes a mode where Transfer CFT{{< TransferCFT/componentshortname  >}} can accept a
+settings. This topic describes a mode where {{< TransferCFT/axwayvariablesComponentShortName  >}} can accept a
 connection from a partner that is not already defined. This type of partner
-is referred to as a **dynamic partner**.
+is referred to as a <span style="font-style: italic;">**dynamic partner**</span>.
 
-Transfer CFT{{< TransferCFT/componentshortname  >}} can accept connections from a correspondent not defined
+{{< TransferCFT/axwayvariablesComponentShortName  >}} can accept connections from a correspondent not defined
 in advance by:
 
 - Using the mechanism
@@ -54,7 +54,7 @@ as many protocols (CFTPROT).
 
 #### Restrictions
 
-A new dynamic partner cannot be created without stopping Transfer CFT{{< TransferCFT/componentshortname  >}},
+A new dynamic partner cannot be created without stopping {{< TransferCFT/axwayvariablesComponentShortName  >}},
 as the latter is linked to a protocol definition that cannot be modified.
 However, modifications to the parameters of a model partner are immediate.
 
@@ -68,7 +68,7 @@ As this parameter is optional, it may happen that only one of them is
 defined, in which case it is rejected.
 
 The parameters IMINTIME and IMAXTIME, which define the call range to
-the Transfer CFT{{< TransferCFT/componentshortname  >}} are also checked.
+the {{< TransferCFT/axwayvariablesComponentShortName  >}} are also checked.
 
 ### Partner network description
 
@@ -106,7 +106,7 @@ SEND PART = part, IDF = idf, STATE = HOLD
 
 Or an equivalent request via CFTAPI ...
 
-As the dynamic partner is not known to Transfer CFT{{< TransferCFT/componentshortname  >}}, the request is
+As the dynamic partner is not known to {{< TransferCFT/axwayvariablesComponentShortName  >}}, the request is
 not taken into account in "H" status, transfer postponed, unless
 the parameter settings authorize the use of the dynamic partner and/or
 the directory type EXIT task, CFTPROT object DYNAM and EXIT parameters.

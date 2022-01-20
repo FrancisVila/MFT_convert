@@ -96,7 +96,7 @@ QQQ\_QQQ\_QQQ      - " -
 
 The following table describes the overflow file definition for the Logger file. In this setup:
 
-- TRKSHAREDFILE=YES is MANDATORY when the logger file is shared between the Event Router{{< TransferCFT/eventroutername >}} and other applications. Set this to NO if the applications are sending messages directly to the Sentinel server without going through the Event Router{{< TransferCFT/eventroutername >}}
+- TRKSHAREDFILE=YES is MANDATORY when the logger file is shared between the {{< TransferCFT/suitevariablesEventRouterName >}} and other applications. Set this to NO if the applications are sending messages directly to the Sentinel server without going through the {{< TransferCFT/suitevariablesEventRouterName >}}
 - The log structure is ONLY used to define a logger file shared between the partitions of the SYSPLEX, and is NOT referenced in any parameters
 
 QQQ\_QQQ\_QQQ

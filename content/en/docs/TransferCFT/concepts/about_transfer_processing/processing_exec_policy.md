@@ -57,7 +57,7 @@ The processing level that is executed when you mix EXEXPRE/EXEC/EXECA and EXESUB
 QQQ\_QQQ\_CHECK check row vs col ...
 
 
-| CFTDEST (1) vs<br /> CFTSEND/SEND/CFTRECV/RECV (2)  | PART  | DEST  | CHILDREN  |
+| <span >CFTDEST (1) vs<br /> CFTSEND/SEND/CFTRECV/RECV (2)</span>  | PART  | DEST  | CHILDREN  |
 | --- | --- | --- | --- |
 | FILE  | L1 + L2 + L3  | L1  | L2 + L3  |
 | LIST  | L1 + L2  | L1  | L2  |
@@ -72,6 +72,6 @@ Group of files request
 
 ## Improve the file layer service reliability
 
-Setting the uconf c`ft.server.transfer.raise_error_when_exec_not_found `parameter to `Yes `(default) raises an error if the defined procedure script is not found, which improves the file layer service reliability.
+Setting the uconf c<span class="code">`ft.server.transfer.raise_error_when_exec_not_found `</span>parameter to <span class="code">`Yes `</span>(default) raises an error if the defined procedure script is not found, which improves the file layer service reliability.
 
 This parameter is applicable to both post-processing (EXEC and EXECE) and ack-processing (ACKEXEC) procedures.

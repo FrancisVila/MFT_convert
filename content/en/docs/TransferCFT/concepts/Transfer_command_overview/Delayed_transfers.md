@@ -21,11 +21,11 @@ If you are in the preprocessing phase and a script exists:
 Transfer phase:
 
 - If it is in the
-    ****H**** HOLD state or ****K****
+    <span style="font-weight: bold;">****H****</span> HOLD state or <span style="font-weight: bold;">****K****</span>
     KEEP state as a result of a transfer error, or an operator command (HALT,
     KEEP, or SEND STATE = HOLD, and so on).
 - If it is in the
-    ****D**** DISP state, but Transfer CFT
+    <span style="font-weight: bold;">****D****</span> DISP state, but Transfer CFT
     does not have the resources required to activate it.
     -   Or if the transfer
         cannot be activated at that time because there is a MINTIME or MINDATE requirement.
@@ -34,7 +34,7 @@ Transfer phase:
 
 The sequencing of Transfer CFT transfers in REQUESTER mode, in which
 Transfer CFT establishes the connection with a remote partner, is governed
-by **activation priority**. When
+by <span style="font-style: italic;">**activation priority**</span>. When
 scanning a list of pending transfers, the transfer having the highest
 priority is activated first. If all transfers have the same priority,
 the first transfer placed in the catalog is the first one activated.
@@ -71,7 +71,7 @@ A partner can have one of the following three states:
 
 #### Ready partners
 
-A **ready** partner is one that
+A <span style="font-style: italic;">**ready**</span> partner is one that
 is placed into a queue organized by priority of the first active transfer.
 Transfers are taken from this partner queue. As soon as a transfer completes,
 the partner is re-organized or removed. By default, a partner is set to
@@ -165,7 +165,7 @@ wait to be activated for the specified date and time remaining in the
 D, at disposal, state. If the request cannot be processed by the Transfer CFT
 before the end of the set time slot, it can no longer be activated. A
 request made after the time slot for activating the transfer time out
-can no longer be activated and changes to the ****K****
+can no longer be activated and changes to the <span style="font-weight: bold;">****K****</span>
 Keep state.
 
 This transfer activation time slot is defined using the MINTIME/MINDATE
@@ -181,7 +181,7 @@ The values of these parameters can be defined either:
         syntax:  
                   parameter = + &lt;relative
         value>
-    -   The ****+**** sign indicates that the
+    -   The <span style="font-weight: bold;">****+****</span> sign indicates that the
         value is a relative value. If the parameter is the "time"
         type, the value is expressed in minutes, and must not exceed 24 (hours)
         less one minute, in other words, the value 1439. If the parameter is

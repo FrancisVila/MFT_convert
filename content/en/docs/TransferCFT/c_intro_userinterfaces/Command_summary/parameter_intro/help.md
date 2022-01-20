@@ -8,7 +8,7 @@
 
 #### DISPLAY
 
-****\[ HELP = { NONE
+****\[ HELP = { <span style="text-decoration: underline;">NONE</span>
 | FIELDS | MODELS | COMMAND } \]****
 
 Displays help information:

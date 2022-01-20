@@ -2,9 +2,9 @@
     "title": "Configure  the environment",
     "linkTitle": "Configuring the environment",
     "weight": "330"
-}This topic describes how to configure the environment for a **file
-type exit**. Before you submit an exit, you must customize the following
-Transfer CFT{{< TransferCFT/componentshortname  >}} objects:
+}This topic describes how to configure the environment for a <span style="font-style: italic;">**file
+type exit**</span>. Before you submit an exit, you must customize the following
+{{< TransferCFT/axwayvariablesComponentShortName  >}} objects:
 
 - CFTSEND: to define
     the parameters associated with the EXIT on sending the file

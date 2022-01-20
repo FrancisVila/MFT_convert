@@ -2,7 +2,7 @@
     "title": "Update, upgrade, or migrate ",
     "linkTitle": "Update, upgrade, or migrate",
     "weight": "190"
-}This section describes how to update, upgrade, or migrate to Transfer CFT 3.9{{< TransferCFT/releasenumber  >}}.
+}This section describes how to update, upgrade, or migrate to Transfer CFT {{< TransferCFT/axwayvariablesReleaseNumber  >}}.
 
 ## About updates
 
@@ -37,12 +37,12 @@ This mode has the following restriction:
 
 ## About manual migrations
 
-The manual migration procedure, used to migrate an existing Transfer CFT to Transfer CFT 3.9{{< TransferCFT/releasenumber  >}}, is described in this document.
+The manual migration procedure, used to migrate an existing Transfer CFT to Transfer CFT {{< TransferCFT/axwayvariablesReleaseNumber  >}}, is described in this document.
 
-The general procedure for migrating from a previous version of Transfer CFT to Transfer CFT 3.9{{< TransferCFT/releasenumber  >}} is:
+The general procedure for migrating from a previous version of Transfer CFT to Transfer CFT {{< TransferCFT/axwayvariablesReleaseNumber  >}} is:
 
 1. Export existing information from the previous version. Details vary depending on the existing Transfer CFT version.
-1. Import the exported information into Transfer CFT 3.9{{< TransferCFT/releasenumber >}}.
+1. Import the exported information into Transfer CFT {{< TransferCFT/axwayvariablesReleaseNumber >}}.
 
 This mode has the following advantages:
 
@@ -53,13 +53,13 @@ This mode has the following advantages:
 
 ### Important information before performing an upgrade or migration procedure
 
-- You must update your Transfer CFT{{< TransferCFT/componentshortname >}} to the most recent service pack version.
-- Backup Transfer CFT{{< TransferCFT/componentshortname >}} before beginning an upgrade or migration procedure.
+- You must update your {{< TransferCFT/axwayvariablesComponentShortName >}} to the most recent service pack version.
+- Backup {{< TransferCFT/axwayvariablesComponentShortName >}} before beginning an upgrade or migration procedure.
 - Before beginning the upgrade or migration procedure stop the existing version of Transfer CFT and the UI server. (I.e., you must stop all cluster nodes as a database migration occurs when performing an upgrade.)
 
 ### About license keys
 
-- You require a new license key if you are migrating from a version 2.x Transfer CFT{{< TransferCFT/componentshortname >}} to a version 3.x.
+- You require a new license key if you are migrating from a version 2.x {{< TransferCFT/axwayvariablesComponentShortName >}} to a version 3.x.
 - For details on how to apply or update a license key, and the new license key location, see the section **Apply a license key**.
 
 > **Note**
@@ -96,6 +96,6 @@ For example:
 1. Copy or create your procedures in the CFTEXEC/UTIN file.
 1. Update the Transfer CFT configuration, meaning all exec values in the TCPPARAM, to use this new library.
 
-## Register with Central Governance
+## Register with {{< TransferCFT/PrimaryCGorUM  >}}
 
-If you intend to implement Central Governance, please refer to the **Transfer CFT**{{< TransferCFT/componentlongname  >}} *User's Guide &gt; [*Register with* **Central Governance**](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.
+If you intend to implement {{< TransferCFT/PrimaryCGorUM  >}}, please refer to the {{< TransferCFT/axwayvariablesComponentLongName  >}} *User's Guide &gt; [*Register with* {{< TransferCFT/PrimaryCGorUM  >}}](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.

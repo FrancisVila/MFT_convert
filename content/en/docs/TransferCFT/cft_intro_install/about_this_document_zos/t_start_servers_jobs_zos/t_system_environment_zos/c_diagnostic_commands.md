@@ -129,7 +129,7 @@ The ABEND command causes an ABEND 0C1 in the operator module. It causes a DUMP o
 
 The ECHO command has no effect, and ends with messages such as the following, which let you check that Transfer CFT is in operating condition:
 
-`'SGOP00I MVSv32x-B102162-2017/03/17'‘SGOP02I Command Complete 18/05/2017, 15:52:03 User=xxxxxx'`
+<span class="code">`'SGOP00I MVSv32x-B102162-2017/03/17'‘SGOP02I Command Complete 18/05/2017, 15:52:03 User=xxxxxx'`</span>
 
 ### CACHE command
 
@@ -237,7 +237,7 @@ TOD of the last DISPATCH
 DTSK03I 0022F000 "CFTTPRO " EPA=00000000 TCB=006F6388 OWN=CFTR223. OS Task
 ```
 
-#### FILES
+#### <span class="span_4"> </span>FILES
 
 ```
 DFIL01I FILE SUMMARY:

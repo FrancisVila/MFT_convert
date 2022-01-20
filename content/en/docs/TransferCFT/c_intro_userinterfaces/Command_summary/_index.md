@@ -2,12 +2,12 @@
     "title": "Transfer CFT command guide and syntax ",
     "linkTitle": "Command guide and parameters",
     "weight": "130"
-}This topic provides a useful list of Transfer CFT{{< TransferCFT/componentshortname  >}} commands,
+}This topic provides a useful list of {{< TransferCFT/axwayvariablesComponentShortName  >}} commands,
 syntax, and parameters. For a more detailed description of the Transfer
 CFT commands, refer to the link displayed below each command
 syntax.
 
-The Transfer CFT{{< TransferCFT/componentshortname  >}} commands are presented in alphabetical order in this
+The {{< TransferCFT/axwayvariablesComponentShortName  >}} commands are presented in alphabetical order in this
 summary. Each
 command is presented with possible parameters and default values.
 
@@ -157,7 +157,7 @@ Or
 
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
 
-**** ****
+<span style="font-weight: bold;">**** ****</span>
 
 <span id="CFTCAT"></span>
 
@@ -209,7 +209,7 @@ Syntax
 
 <span id="CFTCOM"></span>
 
-#### CFTCOM: Defines parameters related to the communication between applications and Transfer CFT{{< TransferCFT/componentshortname  >}}
+#### CFTCOM: Defines parameters related to the communication between applications and {{< TransferCFT/axwayvariablesComponentShortName  >}}
 
 Syntax
 
@@ -255,14 +255,14 @@ Syntax
 
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
 
-**** ****[CFTCOM](../web_copilot_ui/conf_intro/cftcom)
+<span style="font-weight: bold;">**** ****</span>[CFTCOM](../web_copilot_ui/conf_intro/cftcom)
 
 [Communication
 media](../../admin_intro/admin_config_commands/communication_media_concepts)
 
 <span id="CFTCRON"></span>
 
-#### CFTCRON: Define Transfer CFT{{< TransferCFT/componentshortname  >}} cron jobs
+#### CFTCRON: Define {{< TransferCFT/axwayvariablesComponentShortName  >}} cron jobs
 
 Syntax
 
@@ -367,7 +367,7 @@ Syntax
 
  
 
-#### CFTEXIT TYPE = { FILE | ACCESS | EXEC | BOT}
+#### <span style="font-weight: normal;">CFTEXIT TYPE = { FILE | ACCESS | EXEC | BOT}</span>
 
 `ID   = identifier `
 
@@ -389,7 +389,7 @@ Syntax
 
 `[ WAITTASK   = { 1441   | n } ]`
 
-**** ****CFTEXIT details
+<span style="font-weight: bold;">**** ****</span>CFTEXIT details
 
 [Exit
 tasks](../../app_integration_intro/managing_exits)
@@ -417,7 +417,7 @@ configuration](../about_cftutil/configuring_cft_start_here/cftext_command)
 
 <span id="CFTFILE"></span>
 
-#### CFTFILE: Create or delete Transfer CFT{{< TransferCFT/componentshortname  >}} files
+#### CFTFILE: Create or delete {{< TransferCFT/axwayvariablesComponentShortName  >}} files
 
 Syntax
 
@@ -539,7 +539,7 @@ Syntax
 
 `[ MODE   = { REPLACE   | CREATE | DELETE } ]`
 
-**** ****[CFTIDF details](../web_copilot_ui/flow_def_intro/cftidf)
+<span style="font-weight: bold;">**** ****</span>[CFTIDF details](../web_copilot_ui/flow_def_intro/cftidf)
 
 [File
 template/virtual file association](../../concepts/cft_configuration_concepts_start_here/network_file_identifier_concepts)
@@ -676,7 +676,7 @@ resources](../../admin_intro/admin_config_commands/network_resource_concepts)
 
 <span id="CFTPARM"></span>
 
-#### CFTPARM: General Transfer CFT{{< TransferCFT/componentshortname  >}} environment parameters
+#### CFTPARM: General {{< TransferCFT/axwayvariablesComponentShortName  >}} environment parameters
 
 Syntax
 
@@ -1391,7 +1391,7 @@ Syntax
 
 `[ XLATE   = identifier ]`
 
-**** ****[CFTRECV details](../web_copilot_ui/flow_def_intro/cftrecv)
+<span style="font-weight: bold;">**** ****</span>[CFTRECV details](../web_copilot_ui/flow_def_intro/cftrecv)
 
 <span id="CFTSEND"></span>
 
@@ -1606,7 +1606,7 @@ Syntax
 
 `[ VERSION   = { TLSV1  | SSLV3 | TLSV1 | SSLV3COMP | TLSV1COMP} ]`
 
-****Note****: <span id="OP"></span>You can configure Transfer
+<span style="font-weight: bold;">****Note****</span>: <span id="OP"></span>You can configure Transfer
 CFT to accept or reject SSL connections based on logical operators used
 within the DN of the certificate. For details refer to [dnuser](parameter_intro/dnuser)
 parameter details.
@@ -1713,7 +1713,7 @@ Syntax
 
 #### CONFIG: Designate the communication medium and the files accessed by CFTUTIL
 
-Syntax
+<span style="font-weight: normal;">Syntax</span>
 
 CONFIG TYPE = { CAT | INPUT | OUTPUT | PARM | PART }
 
@@ -1833,7 +1833,7 @@ Syntax
 
 <span id="DISPLAY"></span>
 
-#### DISPLAY \[ CONTENT = { listcat | identifier }\]: Display a model-formatted catalog
+#### DISPLAY \[ CONTENT = { <span style="text-decoration: underline;">listcat</span> | identifier }\]: Display a model-formatted catalog
 
 Syntax
 
@@ -2051,7 +2051,7 @@ Syntax
 
 `[ SCOPE = string ]`
 
-**** ****[Suspend transfers](../about_cftutil/managing_transfer_states/keep_command)
+<span style="font-weight: bold;">**** ****</span>[Suspend transfers](../about_cftutil/managing_transfer_states/keep_command)
 
 <span id="KSTATE"></span>
 
@@ -2067,7 +2067,7 @@ Syntax
 
 <span id="LISTCAT"></span>
 
-#### LISTCAT TYPE = { ALL | \* | FILE | MESSAGE | REPLY }: List catalog entries
+#### LISTCAT TYPE = { <span style="text-decoration: underline;">ALL</span> | \* | FILE | MESSAGE | REPLY }: List catalog entries
 
 Syntax
 
@@ -2101,7 +2101,7 @@ Syntax
 
 `[ STATE   = { *   | string } ]`
 
-**** ****[LISTCAT details](../about_cftutil/monitoring_cftutil_intro/listcat_command)
+<span style="font-weight: bold;">**** ****</span>[LISTCAT details](../about_cftutil/monitoring_cftutil_intro/listcat_command)
 
 <span id="LISTCOM"></span>
 
@@ -2119,7 +2119,7 @@ Syntax
 
 `[ VERIFY   = { NO   | YES } ]`
 
-**** ****[LISTCOM details](../about_cftutil/monitoring_cftutil_intro/listcom_command)**** ****
+<span style="font-weight: bold;">**** ****</span>[LISTCOM details](../about_cftutil/monitoring_cftutil_intro/listcom_command)<span style="font-weight: bold;">**** ****</span>
 
 <span id="LISTLOG"></span>
 
@@ -2159,7 +2159,7 @@ No parameters
 
 <span id="LISTPARM"></span>
 
-#### LISTPARM: Display Transfer CFT{{< TransferCFT/componentshortname  >}} partner details
+#### LISTPARM: Display {{< TransferCFT/axwayvariablesComponentShortName  >}} partner details
 
 Syntax
 
@@ -2189,7 +2189,7 @@ Syntax
 
 <span id="MQUERY"></span>
 
-#### MQUERY : Query one or more Transfer CFT{{< TransferCFT/componentshortname  >}} components
+#### MQUERY : Query one or more {{< TransferCFT/axwayvariablesComponentShortName  >}} components
 
 Syntax
 
@@ -2221,7 +2221,7 @@ OBJECT = STATS or PROBE
 
 `[ NAME   = { CAT   | COMMAND | CRON | DMZ | STAT } ]`
 
-**** ****[MQUERY details](../../admin_intro/admin_commands_intro/querying_a_component_)
+<span style="font-weight: bold;">**** ****</span>[MQUERY details](../../admin_intro/admin_commands_intro/querying_a_component_)
 
 <span id="PURGE"></span>
 
@@ -2417,7 +2417,7 @@ Syntax
 
 #### SEND: Request to send transfer
 
-![Closed](/Images/TransferCFT/transparent.gif)Syntax
+<span class="MCDropDownHead dropDownHead">![Closed](/Images/TransferCFT/transparent.gif)Syntax</span>
 
 [TYPE](parameter_intro/type)
 = FILE
@@ -2750,7 +2750,7 @@ SEND TYPE = NACK
 
 <span id="SHUT"></span>
 
-#### SHUT: Shut down Transfer CFT{{< TransferCFT/componentshortname  >}} 
+#### SHUT: Shut down {{< TransferCFT/axwayvariablesComponentShortName  >}} 
 
 Syntax
 
@@ -2758,7 +2758,7 @@ Syntax
 
 `[ RESTART = { YES | NO } ] `
 
-[Manage the Transfer CFT{{< TransferCFT/componentlongname  >}} server: stop the server](../../admin_intro/start_stop_cft#Stop__server)
+[Manage the {{< TransferCFT/axwayvariablesComponentLongName  >}} server: stop the server](../../admin_intro/start_stop_cft#Stop__server)
 
 <span id="START"></span>
 
@@ -2965,7 +2965,7 @@ For more information, see [TYPOGRAPHICAL CONVENTIONS.](../../gettingstarted_intr
 
 ### Symbolic variables
 
-The following symbolic variable syntaxes are valid in a Transfer CFT{{< TransferCFT/componentshortname  >}}
+The following symbolic variable syntaxes are valid in a {{< TransferCFT/axwayvariablesComponentShortName  >}}
 environment:
 
 - &VAR
@@ -3035,7 +3035,7 @@ to [Filename conventions](filename_conventions).
 
 ## Using UCONF
 
-In order to merge functioning for all platforms, Transfer CFT{{< TransferCFT/componentshortname  >}} features a configuration interface that provides product uniformity
+In order to merge functioning for all platforms, {{< TransferCFT/axwayvariablesComponentShortName  >}} features a configuration interface that provides product uniformity
 regardless of platform differences.
 
 The basic CFTUTIL services provided are:

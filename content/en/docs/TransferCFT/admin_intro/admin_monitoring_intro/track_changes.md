@@ -37,7 +37,7 @@ containing:
 - Return message attribute
 - Sentinel.xfb.audit
 
-****Example****
+<span class="bold_in_para">****Example**** </span>
 
 `/Action=CREATE /Object=CFTSEND /id=ZZ /user=My_Company\giovanip /groupid= /owner=      /CrDate=20191204 /CrTime=17471640 /UpdDate=20191204 /UpdTime=17471640`
 

@@ -25,7 +25,7 @@ contact your Axway sales representative.
 
 ## About the WSDL file
 
-To use Web services with Transfer CFT, you need a <a href="" class="MCTextPopup popup popupHead">WSDL Web Services Description Language</a> file. Your installed Transfer CFT product comes with a WSDL file that describes the operations, operation attributes, requests and response structure. You can access the WSDL file from your local installation at:
+To use Web services with Transfer CFT, you need a <a href="" class="MCTextPopup popup popupHead">WSDL<span class="MCTextPopupBody MCTextPopupBody_Closed needs-pie popupBody" aria-hidden="true"><span class="MCTextPopupArrow"> </span>Web Services Description Language</span></a> file. Your installed Transfer CFT product comes with a WSDL file that describes the operations, operation attributes, requests and response structure. You can access the WSDL file from your local installation at:
 
 - On UNIX/Windows: &lt;cft\_installation\_directory>/distrib/copilot/wsdl/copilotcft.wsdl
 - On z/OS: &lt;copilot. http.httprootdir>/wsdl/copilotcft.wsdl
@@ -95,7 +95,7 @@ For more information on WS-I recommendations, visit [http://www.ws-i.org](http:/
 
 ## Limit the number of failed login attempts
 
-Transfer CFT provides brute force protection for logging on the Transfer CFT{{< TransferCFT/transfercftname  >}} UI, REST API, or Web Services when using either the *system* mode or *xfbadm* mode (UNIX and HP NonStop only) authentication. That is, it limits the number of login failure attempts, where both the user and the password are checked to avoid brute force attacks.
+Transfer CFT provides brute force protection for logging on the {{< TransferCFT/suitevariablesTransferCFTName  >}} UI, REST API, or Web Services when using either the *system* mode or *xfbadm* mode (UNIX and HP NonStop only) authentication. That is, it limits the number of login failure attempts, where both the user and the password are checked to avoid brute force attacks.
 
 For other authentication methods, such as PassPort and LDAP, no check is made. You must manage that in the Password Policy of those external tools.
 

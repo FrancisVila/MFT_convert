@@ -24,7 +24,7 @@ partner sends and controls this parameter, where:
 
 | PeSIT E standard | In standard PeSIT E, the RUSER parameter value is transported in the PI 04, but its length is limited to 8-characters. Therefore, the PI 04 contains the concatenated value along with the value of the RAPPL parameter. |
 | --- | --- |
-| **<br /> **PeSIT E CFT/CFT | In PeSIT E between 2 Transfer CFT{{< TransferCFT/componentshortname  >}}s, the RUSER parameter value is transported in the PI 99 if this value exceeds 8 characters. |
+| **<br /> **PeSIT E CFT/CFT | In PeSIT E between 2 {{< TransferCFT/axwayvariablesComponentShortName  >}}s, the RUSER parameter value is transported in the PI 99 if this value exceeds 8 characters. |
 
 
 > **Note**

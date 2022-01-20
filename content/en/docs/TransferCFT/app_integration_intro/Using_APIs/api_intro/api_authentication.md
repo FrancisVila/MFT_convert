@@ -2,7 +2,7 @@
     "title": "Client authentication",
     "linkTitle": "Client authentication ",
     "weight": "310"
-}Transfer CFT{{< TransferCFT/transfercftname  >}} REST API supports *HTTP Basic* and *HTTP Bearer* as the authentication method. Confidentiality is ensured by the use of an HTTPS connection.
+}{{< TransferCFT/suitevariablesTransferCFTName  >}} REST API supports *HTTP Basic* and *HTTP Bearer* as the authentication method. Confidentiality is ensured by the use of an HTTPS connection.
 
 We recommended that you use the HTTP Bearer as opposed to Basic method for the following reasons:
 
@@ -30,7 +30,7 @@ To use the bearer method, you require an access token as described below.
 
 ### Generate an access token
 
-In the Transfer CFT{{< TransferCFT/componentlongname  >}} UI:
+In the {{< TransferCFT/axwayvariablesComponentLongName  >}} UI:
 
 1. Navigate to your user login in the upper right hand corner.
 1. Select **My Access Tokens** in the drop-down menu.  
@@ -52,7 +52,7 @@ curl -X GET "https://localhost:1768/cft/api/v1/transfers" -H "accept: applicatio
 
 ## Limit the number of failed login attempts
 
-Transfer CFT provides brute force protection for logging on the Transfer CFT{{< TransferCFT/transfercftname  >}} UI, REST API, or Web Services when using either the *system* mode or *xfbadm* mode (UNIX and HP NonStop only) authentication. That is, it limits the number of login failure attempts, where both the user and the password are checked to avoid brute force attacks.
+Transfer CFT provides brute force protection for logging on the {{< TransferCFT/suitevariablesTransferCFTName  >}} UI, REST API, or Web Services when using either the *system* mode or *xfbadm* mode (UNIX and HP NonStop only) authentication. That is, it limits the number of login failure attempts, where both the user and the password are checked to avoid brute force attacks.
 
 For other authentication methods, such as PassPort and LDAP, no check is made. You must manage that in the Password Policy of those external tools.
 

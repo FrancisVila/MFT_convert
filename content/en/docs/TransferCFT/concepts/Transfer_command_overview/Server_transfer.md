@@ -110,9 +110,9 @@ may include re-synchronization and compression functions.
 
 When the data transfer is complete, the files are closed, and the network
 connection is cut after the expiration of the associated hold time-out.
-Depending on the protocol, the Transfer CFT{{< TransferCFT/componentshortname  >}} parameter setting allows a network
+Depending on the protocol, the {{< TransferCFT/axwayvariablesComponentShortName  >}} parameter setting allows a network
 session to be held open to permit several transfers to be made in sequence.
 
-Network disconnection is at the initiative of the requesting Transfer CFT{{< TransferCFT/componentshortname  >}}
-or the server Transfer CFT{{< TransferCFT/componentshortname  >}} (see the DISCTD and DISCTS parameters of the CFTPROT
+Network disconnection is at the initiative of the requesting {{< TransferCFT/axwayvariablesComponentShortName  >}}
+or the server {{< TransferCFT/axwayvariablesComponentShortName  >}} (see the DISCTD and DISCTS parameters of the CFTPROT
 command).

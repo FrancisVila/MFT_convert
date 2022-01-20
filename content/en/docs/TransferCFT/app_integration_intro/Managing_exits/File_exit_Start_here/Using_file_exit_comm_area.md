@@ -39,7 +39,7 @@ The symbols used are indicated in the following table.
 | --- | --- |
 | / | This field does not apply to the current field  |
 | = | This field keeps the value taken in the previous stage  |
-| x | This field can be modified by the Transfer CFT{{< TransferCFT/componentshortname  >}} (before the call) or by the user function (after the call)  |
+| x | This field can be modified by the {{< TransferCFT/axwayvariablesComponentShortName  >}} (before the call) or by the user function (after the call)  |
 | * | This field can be defined by the user function  |
 
 
@@ -60,7 +60,7 @@ the stages at which you want to take control by defining the masc parameter.
 | Field  | Description  |
 | --- | --- |
 | masc | Mask used to select stages  |
-| access | File access:<br/> • 0: controlled by Transfer CFT{{< TransferCFT/componentshortname  >}}<br/> • 1: controlled by the user |
+| access | File access:<br/> • 0: controlled by {{< TransferCFT/axwayvariablesComponentShortName  >}}<br/> • 1: controlled by the user |
 | ret1 | Return code:<br/> • 0: processing ok<br/> • 9: refusal and end of transfer  |
 | ret2 | Error message  |
 | msg | Message sent to the standard output  |
@@ -403,16 +403,16 @@ stage.
 
 At the sender end, DIRECT =
 S, the user function is called before the record is sent to the
-remote site, and after the record is read if Transfer CFT{{< TransferCFT/componentshortname  >}} manages file
+remote site, and after the record is read if {{< TransferCFT/axwayvariablesComponentShortName  >}} manages file
 accessing. If file accessing is managed by the user function, the latter
 has to read the record and define the ldata field as well as the zdata
-parameter before handing back control to Transfer CFT{{< TransferCFT/componentshortname  >}}.
+parameter before handing back control to {{< TransferCFT/axwayvariablesComponentShortName  >}}.
 
 At the receiver end, DIRECT = R,
 the user function is called after the record is received, and before the
-record is written if Transfer CFT{{< TransferCFT/componentshortname  >}} manages file accessing. If file accessing
+record is written if {{< TransferCFT/axwayvariablesComponentShortName  >}} manages file accessing. If file accessing
 is managed by the user function, the latter has to write the record before
-handing back control to Transfer CFT{{< TransferCFT/componentshortname  >}}.
+handing back control to {{< TransferCFT/axwayvariablesComponentShortName  >}}.
 
 At this stage (DATA\_TYP) and before the record is sent or after it is
 received, the user function can perform the following operations:
@@ -430,7 +430,7 @@ received, the user function can perform the following operations:
 
 | Field  | Description  |
 | --- | --- |
-| ret1 | Return code:<br/> • 0 = processing ok.<br /> Record not modified<br/> • 4 = end of file<br /> The previous record becomes the last one<br/> • 9 = refusal and end of transfer<br/> If file accessing is managed by Transfer CFT{{< TransferCFT/componentshortname  >}}:<br/> • 1 = record modified<br /> The user function must modify the ldata field and the zdata parameter. The record length must be consistent with the value of the flrecl field in order not to cause a read or write error.<br/> • 2 = one or more records inserted<br /> At the time the first record is inserted, you can save the current record in the zwork working area before handing back control to Transfer CFT. In the insertion mode (as long as ret1 = 2), the zdata is not defined by Transfer CFT{{< TransferCFT/componentshortname  >}} in the following DATA_TYP stages and the user can continue to insert as many records as required.<br/> • 3 = record deleted <br /> On returning from the user function, Transfer CFT{{< TransferCFT/componentshortname  >}} ignores the current record. The record is not sent when in send mode, and not written into the file when in receive mode. |
+| ret1 | Return code:<br/> • 0 = processing ok.<br /> Record not modified<br/> • 4 = end of file<br /> The previous record becomes the last one<br/> • 9 = refusal and end of transfer<br/> If file accessing is managed by {{< TransferCFT/axwayvariablesComponentShortName  >}}:<br/> • 1 = record modified<br /> The user function must modify the ldata field and the zdata parameter. The record length must be consistent with the value of the flrecl field in order not to cause a read or write error.<br/> • 2 = one or more records inserted<br /> At the time the first record is inserted, you can save the current record in the zwork working area before handing back control to Transfer CFT. In the insertion mode (as long as ret1 = 2), the zdata is not defined by {{< TransferCFT/axwayvariablesComponentShortName  >}} in the following DATA_TYP stages and the user can continue to insert as many records as required.<br/> • 3 = record deleted <br /> On returning from the user function, {{< TransferCFT/axwayvariablesComponentShortName  >}} ignores the current record. The record is not sent when in send mode, and not written into the file when in receive mode. |
 | ret2 | Error message  |
 | msg | Message sent to the standard output  |
 | ldata | Record length (in bytes)  |
@@ -440,9 +440,9 @@ received, the user function can perform the following operations:
 
 Records are compressed as a result of a negotiation between the sender
 partner and the receiver partner. At the
-sender end, records are compressed before being sent by the Transfer CFT{{< TransferCFT/componentshortname  >}}. At the receiver end, the
-records are decompressed by the Transfer CFT{{< TransferCFT/componentshortname  >}} immediately after
-they are received. The records Transfer CFT{{< TransferCFT/componentshortname  >}} supplies to the user function
+sender end, records are compressed before being sent by the {{< TransferCFT/axwayvariablesComponentShortName  >}}. At the receiver end, the
+records are decompressed by the {{< TransferCFT/axwayvariablesComponentShortName  >}} immediately after
+they are received. The records {{< TransferCFT/axwayvariablesComponentShortName  >}} supplies to the user function
 are never in compressed form.
 
 The ncomp field designates the compression algorithm used. The default

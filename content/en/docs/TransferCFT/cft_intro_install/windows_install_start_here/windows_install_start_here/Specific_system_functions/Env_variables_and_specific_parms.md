@@ -3,7 +3,7 @@
     "linkTitle": "Environment variables",
     "weight": "230"
 }This topic describes the environment
-variables and the specific parameters used in Transfer CFT{{< TransferCFT/componentshortname  >}} Windows. The ‘\*’ character indicates that all networks are concerned.
+variables and the specific parameters used in {{< TransferCFT/axwayvariablesComponentShortName  >}} Windows. The ‘\*’ character indicates that all networks are concerned.
 
 - Terms annotated with (ve) are symbolic variables.
 - In this list , the character ‘\*’ indicates all networks, meaning that the key word must be set in the CFTNET.CONF file for a given

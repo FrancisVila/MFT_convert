@@ -8,12 +8,12 @@
 
 For all used SSL/TLS, you can use the following uconf parameters:
 
-- `ssl.version_min`: Specify the minimum SSL/TLS version allowed by Transfer CFT connectors.
-- `ssl.ciphersuites`: Specify the SSL/TLS cipher suites negotiated by Transfer CFT connectors.
-- `cft.ssl.version_min`: Specify the minimum SSL/TLS version allowed by Transfer CFT for file transfers.
-- `cft.ssl.version_max`: Specify the maximum/TLS SSL version allowed by Transfer CFT for file transfers.
+- <span class="code">`ssl.version_min`</span>: Specify the minimum SSL/TLS version allowed by Transfer CFT connectors.
+- <span class="code">`ssl.ciphersuites`</span>: Specify the SSL/TLS cipher suites negotiated by Transfer CFT connectors.
+- <span class="code">`cft.ssl.version_min`</span>: Specify the minimum SSL/TLS version allowed by Transfer CFT for file transfers.
+- <span class="code">`cft.ssl.version_max`</span>: Specify the maximum/TLS SSL version allowed by Transfer CFT for file transfers.
 
-Notably and by default, the uconf `copilot.ssl.version_min` value is set to point to the `ssl.version_min` value. However, this can be overridden.
+Notably and by default, the uconf <span class="code" style="font-family: 'Courier New';">`copilot.ssl.version_min`</span> value is set to point to the <span class="code">`ssl.version_min`</span> value. However, this can be overridden.
 
 ### How to secure exchanges with Central Governance / Flow Manager
 
@@ -21,14 +21,14 @@ Connection between Transfer CFT and Central Governance are secured by default us
 
 Set the CA certificate used to authenticate Central Governance:
 
-- Import the CA certificate of Central Governance in the internal PKI database using the PKIUTIL pkicer command (refer to the Transfer CFT 3.9{{< TransferCFT/releasenumber >}} User Guide).
-- Reference the imported certificate Identifier using the following parameter: uconf:cg.ca\_cert\_id  
-    ****Example****  
+- Import the CA certificate of Central Governance in the internal PKI database using the PKIUTIL pkicer command (refer to the Transfer CFT {{< TransferCFT/axwayvariablesReleaseNumber >}} User Guide).
+- Reference the imported certificate Identifier using the following parameter: <span style="font-family: 'Courier New';">uconf:cg.ca\_cert\_id</span>  
+    <span class="bold_in_para" style="font-family: Roboto;">****Example****</span>  
     CFTUTIL uconfset id=cg.ca\_cert\_id, value=CGCA
 
 ### How to SSL/TLS secure the UI
 
-Connections to the Transfer CFT Copilot server are secured by default. To enable HTTP for this connection, set the uconf parameter` copilot.http.onlyssl` to `No`. For more information, please refer to the [Transfer CFT User Guide &gt; Administration &gt; Manage the servers &gt; Manage the Copilot server](https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/administration/manage_copilot.htm) &gt; *Configure Copilot with SSL security* section.
+Connections to the Transfer CFT Copilot server are secured by default. To enable HTTP for this connection, set the uconf parameter<span class="code">` copilot.http.onlyssl`</span> to <span class="code">`No`</span>. For more information, please refer to the [Transfer CFT User Guide &gt; Administration &gt; Manage the servers &gt; Manage the Copilot server](https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/administration/manage_copilot.htm) &gt; *Configure Copilot with SSL security* section.
 
 <span id="__RefHeading___Toc473905788"></span>
 
@@ -38,12 +38,12 @@ If you are managing your flows using Central Governance, please read the associa
 
 ## Secure partner connections without Central Governance / Flow Manager
 
-Flows can be secured with SSL/TLS. To secure your connection, on each side you must define a security profile using the CFTSSL object, which describes how to secure the connection. The SSL object references to CA certificate to trust, and certificate-key pairs. Depending on the uconf `pki.type` parameter, the certificate and private data is fetched using the IDs in the internal PKI database (pki.type=cft), the PassPort PS (pki.type=passport), system PKI database on ZOS (pki.type=system), custom user exit (pki.type=exit).  
-Please refer to the *Transfer CFT Users Guide* ****Security &gt; Configuring transport security &gt; CFTSSL configuration**** for details.
+Flows can be secured with SSL/TLS. To secure your connection, on each side you must define a security profile using the CFTSSL object, which describes how to secure the connection. The SSL object references to CA certificate to trust, and certificate-key pairs. Depending on the uconf <span class="code">`pki.type`</span> parameter, the certificate and private data is fetched using the IDs in the internal PKI database (pki.type=cft), the PassPort PS (pki.type=passport), system PKI database on ZOS (pki.type=system), custom user exit (pki.type=exit).  
+Please refer to the *Transfer CFT Users Guide* <span class="bold_in_para">****Security &gt; Configuring transport security &gt; CFTSSL configuration****</span> for details.
 
-The CFTSSL object ID must be referenced as the SSL parameter of the CFTPROT object for the server configuration, or the CFTPART object for the client configuration. Additionally, on the server additional partner-related control can be performed after SSL/TLS handshake by setting the ID of a CFTSSL object in the SSL parameter of the associated CFTPART object whose DIRECT parameter is set to SERVER. Please refer to the *Transfer CFT Users Guide* ****Security &gt; Configuring transport security &gt; Start here**** for more information.
+The CFTSSL object ID must be referenced as the SSL parameter of the CFTPROT object for the server configuration, or the CFTPART object for the client configuration. Additionally, on the server additional partner-related control can be performed after SSL/TLS handshake by setting the ID of a CFTSSL object in the SSL parameter of the associated CFTPART object whose DIRECT parameter is set to SERVER. Please refer to the *Transfer CFT Users Guide* <span class="bold_in_para">****Security &gt; Configuring transport security &gt; Start here****</span> for more information.
 
-The command used to insert keys and trusted certificate in internal the PKI database is using the PKIUTIL command. Please refer to the *Transfer CFT Users Guide* ****Security &gt; Managing certificates &gt; Command line operations &gt; Start here**** for more information on how to manage certificates and private keys in the internal PKI database.
+The command used to insert keys and trusted certificate in internal the PKI database is using the PKIUTIL command. Please refer to the *Transfer CFT Users Guide*<span class="bold_in_para"> ****Security &gt; Managing certificates &gt; Command line operations &gt; Start here**** </span>for more information on how to manage certificates and private keys in the internal PKI database.
 
 <span id="__RefHeading___Toc473905789"></span>
 
@@ -61,10 +61,10 @@ In addition, this certificate authority also signs the PassPort Product CA which
 
 Best practices are to change the following:
 
-- The certificate authority PassPort Product CA on Central Governance; refer to the *Central Governance* or *Flow Manager Security Guide* > ****Product certificate**** to change this certificate.
+- The certificate authority PassPort Product CA on Central Governance; refer to the *Central Governance* or *Flow Manager Security Guide* > <span class="bold_in_para">****Product certificate****</span> to change this certificate.
 - The certificate authority PassPort CA on Transfer CFT:
     -   Import in the internal PKI database the certificate authority to use using the PKIUTIL pkicer command.
-    -   Reference the imported certificate Identifier using the following parameter: uconf:cg.ca\_cert\_id
+    -   Reference the imported certificate Identifier using the following parameter: <span style="font-family: 'Courier New';">uconf:cg.ca\_cert\_id</span>
 
       
     CFTUTIL uconfset id=cg.ca\_cert\_id, value=CGCA

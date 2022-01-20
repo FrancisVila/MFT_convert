@@ -2,8 +2,8 @@
     "title": "Catalog attributes ",
     "linkTitle": "CFTCAT - Catalog attributes ",
     "weight": "240"
-}****Related
-topics****
+}****<span style="color: #800000; text-decoration: none; font-weight: normal;">Related
+topics</span>****
 
 - Command syntax
     [CFTCAT](../../../c_intro_userinterfaces/command_summary#CFTCAT)
@@ -14,7 +14,7 @@ topics****
 
 ### About the CFTCAT object
 
-The Transfer CFT{{< TransferCFT/componentshortname  >}} catalog displays all Transfer CFT{{< TransferCFT/componentshortname  >}} transfers in list
+The {{< TransferCFT/axwayvariablesComponentShortName  >}} catalog displays all {{< TransferCFT/axwayvariablesComponentShortName  >}} transfers in list
 form. The catalog file contains control data that is associated with transfers.
 A record, that corresponds with a status indicator, exists for each transfer.
 
@@ -29,12 +29,12 @@ but does not disrupt transfers.
 Catalog functions include a method to recover information about the
 CFT that is using the catalog.
 
-For each ****PARM****, there is one
+For each <span style="font-weight: bold;">****PARM****</span>, there is one
 associated CFTCAT.
 
 ### Catalog levels
 
-Catalog levels enable Transfer CFT{{< TransferCFT/componentshortname  >}} to issue alerts
+Catalog levels enable {{< TransferCFT/axwayvariablesComponentShortName  >}} to issue alerts
 when a critical fill threshold, the [TLVWARN](../../../c_intro_userinterfaces/command_summary/parameter_intro/tlvwarn)
 parameter Threshold Limit Value Warning, for the catalog file is reached.
 This alert triggers:

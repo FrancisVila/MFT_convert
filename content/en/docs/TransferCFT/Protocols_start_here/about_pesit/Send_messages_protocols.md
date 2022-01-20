@@ -31,7 +31,7 @@ a message to be sent to a designated Partner.
 
 This command causes a message to be sent
 in response to a previous transfer from the Partner to which the message
-was sent. The partner Transfer CFT{{< TransferCFT/componentshortname  >}} interprets this message as a transfer acknowledgement.
+was sent. The partner {{< TransferCFT/axwayvariablesComponentShortName  >}} interprets this message as a transfer acknowledgement.
 
 Such messages are sent in a connected state; a protocol connection must
 exist between the sender of the message and its recipient. This connection

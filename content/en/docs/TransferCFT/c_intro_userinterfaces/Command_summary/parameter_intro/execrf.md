@@ -26,7 +26,7 @@ This name may include the following symbolic variables:
 - &NIDF
 
 The character ‘&’ designates the char\_symb character defined in
-the Transfer CFT{{< TransferCFT/componentshortname  >}} *Operations Guide* corresponding to your OS.
+the {{< TransferCFT/axwayvariablesComponentShortName  >}} *Operations Guide* corresponding to your OS.
 
 > **Note**
 >

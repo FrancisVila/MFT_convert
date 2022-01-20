@@ -28,7 +28,7 @@ This name may include the following symbolic variables:
 - &TRTYPE
 
 The character ‘&’ designates the char\_symb character defined in
-the Transfer CFT{{< TransferCFT/componentshortname  >}} *Operations Guide* corresponding to your OS.
+the {{< TransferCFT/axwayvariablesComponentShortName  >}} *Operations Guide* corresponding to your OS.
 
 The procedure to execute on receiving an
 acknowledgement following a file send operation.

@@ -5,7 +5,7 @@
 }The following table lists the codes for the PKIU26E PKICER\_Error ( msg
 {150nn/0}) type error message.
 
-PKIUTIL error codes
+<span class="autonumber"></span>PKIUTIL error codes
 
 
 | Code  | Contains  | Meaning  |

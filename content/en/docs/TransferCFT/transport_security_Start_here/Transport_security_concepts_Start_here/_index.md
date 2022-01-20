@@ -43,7 +43,7 @@ and decrypt data. The task of privately choosing the key before ciphering
 data is more problematic as the connected parties share a single key that
 cannot be clearly transmitted to others.
 
-********Symmetrical encryption********
+********<span class="autonumber"></span>Symmetrical encryption********
 
 ![View of symetrical key ](/Images/TransferCFT/encrypt_key.gif)
 
@@ -63,7 +63,7 @@ and exchanged during the handshake phase. They are transmitted using an
 asymmetrical encryption mechanism, which is slower but more secure (RSA)
 than a symmetric encryption mechanism.
 
-********Asymmetrical encryption********
+********<span class="autonumber"></span>Asymmetrical encryption********
 
 ![View of public and private key encryption](/Images/TransferCFT/image004.gif)
 
@@ -87,7 +87,7 @@ Authentication Code),
 is added to each message sent. The standard hash functions used are SHA-1
 or MD5.
 
-********Hash function********
+********<span class="autonumber"></span>Hash function********
 
 ![](/Images/TransferCFT/image005.gif)
 
@@ -110,7 +110,7 @@ to get the public key, such as a certificate, you are sent a random encrypted
 message. If you can decrypt the message, your identity is verified because
 you own the unique private key associated with the public key.
 
-********Proof request![](/Images/TransferCFT/image006.gif)********
+********<span class="autonumber"></span>Proof request![](/Images/TransferCFT/image006.gif)********
 
 When you use TLS and SSL protocols, the client encrypts the symmetrical
 key with the server’s public key. If the server can decrypt the key, the
@@ -131,7 +131,7 @@ the calculated hash code. If the hash code is correct, data integrity
 is accepted, and the sender is as claimed because he had the correct key
 to encrypt the digest.
 
-********Integrity and authentication********
+********<span class="autonumber"></span>Integrity and authentication********
 
 ![](/Images/TransferCFT/temp_integrity_and_auth.png)
 

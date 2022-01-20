@@ -8,7 +8,7 @@
 
 #### CFTPROT
 
-****\[disctc = { 60
+****\[disctc = { <span style="text-decoration: underline;">60</span>
 | 0...3600}\]****
 
 The wait timeout for a response to the protocol connection request

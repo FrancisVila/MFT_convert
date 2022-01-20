@@ -6,7 +6,7 @@
 
 ## Multi-node license keys
 
-Transfer CFT{{< TransferCFT/componentshortname  >}} in multi-node architecture requires a shared file system for use of a multi-node architecture on several hosts (active/active). Additionally, the system must be configured prior to the multi-node installation and the shared disk ready when starting the Copilot server.
+{{< TransferCFT/axwayvariablesComponentShortName  >}} in multi-node architecture requires a shared file system for use of a multi-node architecture on several hosts (active/active). Additionally, the system must be configured prior to the multi-node installation and the shared disk ready when starting the Copilot server.
 
 > **Note**
 >
@@ -21,7 +21,7 @@ Additionally, the key must have the cluster option.
 
 ### Download and uncompress
 
-Download and unzip the Transfer CFT{{< TransferCFT/transfercftname  >}} install package, as described in <a href="../" class="MCXref xref">Install Transfer CFT</a>.
+Download and unzip the {{< TransferCFT/suitevariablesTransferCFTName  >}} install package, as described in <a href="../" class="MCXref xref">Install Transfer CFT</a>.
 
 ### Customize
 
@@ -40,8 +40,8 @@ Create as many copies of the initialize.properties file as you have hosts in the
 ## Install
 
 1. Start the installation.
-1. Transfer\_CFT\_3.9{{< TransferCFT/releasenumber >}}\_Install\_linux-x86-64\_BNXXXXXXXX.exe
-1. ./Transfer\_CFT\_3.9{{< TransferCFT/releasenumber >}}\_Install\_&lt;OS>\_&lt;BN>.run
+1. Transfer\_CFT\_{{< TransferCFT/axwayvariablesReleaseNumber >}}\_Install\_linux-x86-64\_BNXXXXXXXX.exe
+1. ./Transfer\_CFT\_{{< TransferCFT/axwayvariablesReleaseNumber >}}\_Install\_&lt;OS>\_&lt;BN>.run
 1. In the Installation Architecture screen, select **Cluster - first host**.
 1. Complete the installation.
 1. To add a host to create a multi-host, multi-node installation, run the install again. This time select **Cluster - Additional host**.
@@ -59,11 +59,11 @@ By default, these 2 attributes are automatically completed if they are not speci
 
 During the runtime creation and for each host, the multinode\_hostname is used as the basis for the cft.multi\_node.hostnames, where cft.multi\_node.hostnames=Cluster\_short\_hostname1, Cluster\_short\_hostname2, Cluster\_short\_hostname3, Cluster\_short\_hostname4. Using the same logic, the multinode\_host\_addresss is used to create each \_ cft.multi\_node.hostnames.\*\*\*\*.host uconf attribute.
 
-In the silent file (initialize.properties), you can use the same other definitions as in the Transfer CFT 3.9{{< TransferCFT/releasenumber  >}} silent files.
+In the silent file (initialize.properties), you can use the same other definitions as in the Transfer CFT {{< TransferCFT/axwayvariablesReleaseNumber  >}} silent files.
 
 ## Commands
 
-See the [Multi-node commands and management](../../../../about_multinode/multi_node_commands) section for details on using Transfer CFT{{< TransferCFT/transfercftname  >}} commands and cluster management.
+See the [Multi-node commands and management](../../../../about_multinode/multi_node_commands) section for details on using {{< TransferCFT/suitevariablesTransferCFTName  >}} commands and cluster management.
 
 ## Troubleshooting
 

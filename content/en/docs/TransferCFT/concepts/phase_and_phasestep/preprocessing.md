@@ -11,7 +11,7 @@ To notify the end of the processing to Transfer CFT, the preprocessing script mu
 > Caution  
 > The transfer request remains in phase=A and phasestep=C until Transfer CFT receives the END command related to this transfer request.
 
-As the preprocessing phase did not exist in versions prior to Transfer CFT{{< TransferCFT/componentshortname  >}} 3.0, during this phase the former state has the adapted state and is always set to A.
+As the preprocessing phase did not exist in versions prior to {{< TransferCFT/axwayvariablesComponentShortName  >}} 3.0, during this phase the former state has the adapted state and is always set to A.
 
 During this phase, the phase step can be:
 
@@ -22,7 +22,7 @@ During this phase, the phase step can be:
 
 ## State and prestate dependent actions
 
-The following preprocessing actions occur according to the status of the prestate and state. For each of the following cases, set ****PREEXEC**** to an existing script.
+The following preprocessing actions occur according to the status of the prestate and state. For each of the following cases, set <span class="bold_in_para">****PREEXEC****</span> to an existing script.
 
 - Immediate preprocessing then send
     -   PRESTATE =  DISP 
@@ -33,7 +33,7 @@ The following preprocessing actions occur according to the status of the prestat
 - Immediate preprocessing then Hold...waits for a receive or start, and then sends
     -   PRESTATE= DISP
     -   STATE = HOLD
-- Hold ... waits for a receive command, preprocesses, and then sends or
+- Hold ... waits for a receive command, preprocesses, and then sends <span class="italic_in_para">or</span>
 - Hold... waits for start command, preprocesses, repeats Hold ... waits for receive or start then sends
     -   PRESTATE= HOLD
     -   STATE = HOLD

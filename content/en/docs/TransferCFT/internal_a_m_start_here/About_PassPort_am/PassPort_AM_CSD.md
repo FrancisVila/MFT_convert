@@ -2,7 +2,7 @@
     "title": "About the PassPort CSD",
     "linkTitle": "PassPort AM CSD",
     "weight": "190"
-}This section describes how to configure access management when not using Central Governance.
+}This section describes how to configure access management when not using {{< TransferCFT/PrimaryCGorUM  >}}.
 
 The PassPort CSD file provides resources and available actions for Transfer CFT. This CSD file must be accessible on your file system.
 
@@ -22,7 +22,7 @@ After installing Transfer CFT, access the CSD file at:
 | Roles | Customize the sets of privileges assigned to each role. |
 
 
-For more information on customizing the CSD file, refer to the Axway{{< TransferCFT/companyname  >}} PassPort
+For more information on customizing the CSD file, refer to the {{< TransferCFT/axwayvariablesCompanyName  >}} PassPort
 AM documentation available at [support.axway.com]().
 
 ****Related topics****

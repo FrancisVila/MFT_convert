@@ -23,9 +23,9 @@ negative acknowledgement and the Transfer CFT log file displays:
 
 This parameter enables or disables the NACK feature in either a partner or protocol definition for a non Transfer CFT product.
 
-To enable the use of NACK when connecting to products other than Transfer CFT{{< TransferCFT/componentlongname  >}}, set the parameter NACK to YES in the CFTPROT or CFTPART objects.
+To enable the use of NACK when connecting to products other than {{< TransferCFT/axwayvariablesComponentLongName  >}}, set the parameter NACK to YES in the CFTPROT or CFTPART objects.
 
-However, note that the CFTPART NACK value overrides the CFTPROT NACK value. If however, this product does not support a negative acknowledgment, the following error message displays in the log: ` CFTH13E FPDU Remote reject <PART=STREFSSL DIAGI=909 DIAGP=RCO 301>`
+However, note that the CFTPART NACK value overrides the CFTPROT NACK value. If however, this product does not support a negative acknowledgment, the following error message displays in the log: <span class="code">` CFTH13E FPDU Remote reject <PART=STREFSSL DIAGI=909 DIAGP=RCO 301>`</span>
 
 > **Note**
 >

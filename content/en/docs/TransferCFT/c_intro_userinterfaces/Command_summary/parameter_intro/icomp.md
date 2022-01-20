@@ -4,7 +4,7 @@
     "weight": "1500"
 }<span id="icomp"></span>
 
-### icomp
+### {{< TransferCFT/SystemTitle  >}}
 
 #### COPYFILE
 

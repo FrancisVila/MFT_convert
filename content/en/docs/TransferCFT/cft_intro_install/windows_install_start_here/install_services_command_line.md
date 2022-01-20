@@ -12,9 +12,9 @@
 
 ## Install services
 
-### Transfer CFT{{< TransferCFT/componentshortname  >}} services
+### {{< TransferCFT/axwayvariablesComponentShortName  >}} services
 
-1. To install the Transfer CFT{{< TransferCFT/componentshortname >}} service, access the Transfer CFT{{< TransferCFT/componentshortname >}} directory:
+1. To install the {{< TransferCFT/axwayvariablesComponentShortName >}} service, access the {{< TransferCFT/axwayvariablesComponentShortName >}} directory:
 
     `cd %TransferCFT_directory%`
 
@@ -22,25 +22,25 @@
 
     `cscript /nologo home\bin\cftsrvin.vbs n=CFT36`
 
-    Where n= &lt;CFT plus the current version of Transfer CFT{{< TransferCFT/componentshortname >}}>
+    Where <span class="italic_in_para">n</span>= &lt;CFT plus the current version of {{< TransferCFT/axwayvariablesComponentShortName >}}>
 
 ### Copilot services
 
-From the Transfer CFT{{< TransferCFT/componentshortname  >}} home directory, run:
+From the {{< TransferCFT/axwayvariablesComponentShortName  >}} home directory, run:
 
 `copsrv.exe -install <service_name> <displayname> <cftdirruntime>`
 
 ******Example******
 
-For Transfer CFT{{< TransferCFT/componentshortname  >}} version 3.9{{< TransferCFT/componentversion  >}} Copilot you would enter:
+For {{< TransferCFT/axwayvariablesComponentShortName  >}} version {{< TransferCFT/axwayvariablesComponentVersion  >}} Copilot you would enter:
 
 `c:\CFT36\Transfer_CFT\home\bin>copsrv.exe -install CFT_Copilot36 CFT_Copilot36 c:\CFT36\Transfer_CFT\runtime`
 
 ### Activate services
 
-Using CFTUTIL activate the services for both Transfer CFT and Copilot with the uconf `service `configuration parameters.
+Using CFTUTIL activate the services for both Transfer CFT and Copilot with the uconf <span class="code">`service `</span>configuration parameters.
 
-****Example****
+<span class="bold_in_para">****Example****</span>
 
 ```
 uconfset id=cft.nt.service_name, value=CFT36

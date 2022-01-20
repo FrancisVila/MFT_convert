@@ -40,7 +40,7 @@ There are two additional UCONF parameters to use for https connections:
 | Parameter | Value |
 | --- | --- |
 | copilot.http.onlyssl |  • No: Default value.<br/> • Yes: Restricts access to the Copilot server to HTTPS secured connections only.<br/>  |
-| copilot.ssl.SslCipherSuites<br/>  | A comma separated list of cipher suites accepted by the Copilot server.<br/> • “47, 10, 9, 2”: Default value.<br/> <br/> List of supported cipher suites:<br/> • 1 = RSA_WITH_NULL_MD5<br/> • 2 = RSA_WITH_NULL_SHA<br/> • 4 = RSA_WITH_RC4_MD5<br/> • 5 = RSA_WITH_RC4_SHA<br/> • 9 = RSA_WITH_DES_CBC_SHA1<br/> • 10 = RSA_WITH_3DES_EDE_CBC_SHA<br/> • 47 = RSA_WITH_AES_128_CBC_SHA<br/> • 53 = RSA_WITH_AES_256_CBC_SHA<br/> • 59 = RSA_WITH_NULL_SHA256<br/> • 60 = RSA_WITH_AES_128_CBC_SHA256<br/> • 61 = RSA_WITH_AES_256_CBC_SHA256 |
+| copilot.ssl.SslCipherSuites<br/>  | A comma separated list of cipher suites accepted by the Copilot server.<br/> • “47, 10, 9, 2”: Default value.<br/> <br/> List of supported cipher suites:<br/> • 1 = RSA_WITH_NULL_MD5<br/> • 2 = RSA_WITH_NULL_SHA<br/> • 4 = RSA_WITH_RC4_MD5<br/> • 5 = RSA_WITH_RC4_SHA<br/> • 9 = RSA_WITH_DES_CBC_SHA1<br/> • 10 = RSA_WITH_3DES_EDE_CBC_SHA<br/> • 47 = RSA_WITH_AES_128_CBC_SHA<br/> • 53 = RSA_WITH_AES_256_CBC_SHA<br/> • 59 = RSA_WITH_NULL_SHA256<br/> • <span >60 = RSA_WITH_AES_128_CBC_SHA</span><span >2</span><span >56</span><br/> • <span >61 = RSA_WITH_AES_256_CBC_SHA</span><span >2</span><span >56</span> |
 
 
 ## Installing a certificate on the client side
@@ -55,27 +55,27 @@ On Linux, the Java keystore is the only option.
 
 ******Example******
 
-In this section and the example below, we use the sample certificate delivered with Transfer CFT{{< TransferCFT/componentshortname  >}} and located at:
+In this section and the example below, we use the sample certificate delivered with {{< TransferCFT/axwayvariablesComponentShortName  >}} and located at:
 
 `<CFTDIRRUNTIME>/conf/pki/Axway_MFT_Demonstration_Root_Certificate.der`
 
 ### Installing a certificate in the Windows keystore
 
-1. In Windows Explorer, navigate to the certificate `Axway_MFT_Demonstration_Root_Certificate.der` and right-click.
+1. In Windows Explorer, navigate to the certificate <span class="code">`Axway_MFT_Demonstration_Root_Certificate.der`</span> and right-click.
 1. Select the “Install certificate” option.
-1. Follow the screen instructions. Windows automatically imports the certificate into its keystore, in the `Intermediate certificate authorities` folder.
+1. Follow the screen instructions. Windows automatically imports the certificate into its keystore, in the <span class="code">`Intermediate certificate authorities`</span> folder.
 
 ****Alternative method****
 
-1. In Internet Explorer, select ****Tools > Internet Options.****
-1. In the ****Content**** tab select the ****Certificate**** button.
-1. Select ****Import,**** which starts the ****Certificate Import Wizard****.
-1. Click ****Next****, and ****Browse**** to the` Axway_MFT_Demonstration_Root_Certificate.der`.
+1. In Internet Explorer, select <span class="bold_in_para">****Tools > Internet Options.**** </span>
+1. In the <span class="bold_in_para">****Content**** </span>tab select the <span class="bold_in_para">****Certificate**** </span>button.
+1. Select <span class="bold_in_para">****Import,**** </span>which starts the <span class="bold_in_para">****Certificate Import Wizard****</span>.
+1. Click <span class="bold_in_para">****Next****</span>, and <span class="bold_in_para">****Browse**** </span>to the<span class="code">` Axway_MFT_Demonstration_Root_Certificate.der`</span>.
 1. Follow the screen instructions. Windows imports the certificate into its keystore.
 
 ### Installing a certificate in the Java keystore
 
-The Java keystore is a file located at` <installation directory>/jre/lib/security/cacerts`. The default password for this keystore is “changeit”.
+The Java keystore is a file located at<span class="code">` <installation directory>/jre/lib/security/cacerts`</span>. The default password for this keystore is “changeit”.
 
 Use the keytool command as follows to import the Axway\_MFT\_Demonstration\_Root\_Certificate.der certificate into the Java keystore:
 
@@ -92,7 +92,7 @@ keytool –importcert
 The html files used by the Transfer CFT Copilot server to be accessed by a browser are:
 
 - `runtime/wwwroot/admin.html `
-- `runtime/wwwroot/index.html`
+- <span class="code">`runtime/wwwroot/index.html`</span>
 
 These files contain a parameter SSL\_KEYSTORE, which are modifiable. The default value for this parameter is “Windows”, and the only other possible value is “” (empty string).
 

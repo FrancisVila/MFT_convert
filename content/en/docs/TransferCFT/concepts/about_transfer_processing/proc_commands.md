@@ -19,9 +19,9 @@ There are two ways to execute a processing script, either by referencing a templ
 
 ### Executing a template processing script
 
-Using this method, Transfer CFT{{< TransferCFT/componentlongname  >}} creates a temporary file based on the template processing script, and replaces all symbolic variables with the corresponding values as they relate to the transfer. For example, if &IDTU is in the script, it is replaced by the actual transfer value. Transfer CFT{{< TransferCFT/componentlongname  >}} then executes this temporary file.
+Using this method, {{< TransferCFT/axwayvariablesComponentLongName  >}} creates a temporary file based on the template processing script, and replaces all symbolic variables with the corresponding values as they relate to the transfer. For example, if &IDTU is in the script, it is replaced by the actual transfer value. {{< TransferCFT/axwayvariablesComponentLongName  >}} then executes this temporary file.
 
-For example, to run the `myscript.sh` script using this method:
+For example, to run the <span class="code">`myscript.sh`</span> script using this method:
 
 ```
 cftsend id=flow01, exec='exec/myscript.sh'
@@ -74,9 +74,9 @@ Depending on the operating system, the temporary file is treated as follows:
 
 A second method for executing scripts is to directly run a script. This method allows you to put command arguments directly in the exec parameter itself. However, while you may use symbolic variables in the exec, any symbolic variables contained within the script are not replaced during script execution.
 
-For security reasons, you cannot use this method with the SEND/RECV command's PREEXEC, EXEC or ACKEXEC parameters. Doing so generates an error: `CFTT97E cmd prefix not allowed in procedure execution for SEND and RECV commands`.
+For security reasons, you cannot use this method with the SEND/RECV command's PREEXEC, EXEC or ACKEXEC parameters. Doing so generates an error: <span class="code">`CFTT97E cmd prefix not allowed in procedure execution for SEND and RECV commands`</span>.
 
-To implement this method, preface the PREEXEC, EXEC or ACKEXEC value with "`cmd:`". For example:
+To implement this method, preface the PREEXEC, EXEC or ACKEXEC value with "<span class="code">`cmd:`</span>". For example:
 
 ```
 CFTSEND id=flow01, fname=myfile, exec="cmd:myscript.sh &PART &IDT &IDTU"
@@ -110,7 +110,7 @@ You can use the Premindate/Premintime, Postmindate/Postmintime, and Ackmindate/A
 
 ## Throttle processing
 
-In some cases you may want to limit the number of scripts launched in parallel by Transfer CFT{{< TransferCFT/transfercftname  >}} to reduce processing bottlenecks. To do so, set the UCONF `cft.server.max_processing_scripts` parameter to a positive integer to enable and control the number of executed processes.
+In some cases you may want to limit the number of scripts launched in parallel by {{< TransferCFT/suitevariablesTransferCFTName  >}} to reduce processing bottlenecks. To do so, set the UCONF <span class="code">`cft.server.max_processing_scripts`</span> parameter to a positive integer to enable and control the number of executed processes.
 
 > **Note**
 >
@@ -118,7 +118,7 @@ In some cases you may want to limit the number of scripts launched in parallel b
 > When using this parameter, every end-of-transfer procedure must notify Transfer CFT once the processing is complete. This can be done either via an END or KEEP command (in the case of an error). Failure to signal that processing is complete means that new procedures cannot start once the cft.server.max\_processing\_scripts value is reached.
 
 ```
-uconfset id=`cft.server.max_processing_scripts`, value=64
+uconfset id=<span class="code">`cft.server.max_processing_scripts`</span>, value=64
 ```
 
 > **Note**
@@ -129,7 +129,7 @@ uconfset id=`cft.server.max_processing_scripts`, value=64
 
 ### End command
 
-The end command monitors the script completion. Depending on the parameter used (appstate, istate, and diagc) you can, for example, check the progression of the script. The end of processing is marked by a CFTUTIL END with `istate=no` (default).
+The end command monitors the script completion. Depending on the parameter used (appstate, istate, and diagc) you can, for example, check the progression of the script. The end of processing is marked by a CFTUTIL END with <span class="code">`istate=no`</span> (default).
 
 #### Define istate and appstate
 
@@ -139,7 +139,7 @@ The end command monitors the script completion. Depending on the parameter used 
 CFTUTIL end part=&PART,idtu=&IDTU,istate=no,appstate="completed"
 ```
 
-The command CFTUTIL END can be use to set checkpoints in the script execution using the istate=yes (istate is an intermediate state) and APPSTATE value. Doing so allows you to see the step running the script in Transfer CFT{{< TransferCFT/componentshortname  >}}.
+The command CFTUTIL END can be use to set checkpoints in the script execution using the istate=yes (istate is an intermediate state) and APPSTATE value. Doing so allows you to see the step running the script in {{< TransferCFT/axwayvariablesComponentShortName  >}}.
 
 ****Example****
 
@@ -183,7 +183,7 @@ CFTUTIL KEEP part=&PART,idtu=&IDTU,DIAGP=”Error 404”,DIAGC=”File not found
 
 In your script, you can handle restart from intermediate steps checking the &APPSTATE value. So if the script fails for any reason, you can run a CFTUTIL HALT or CFTUTIL keep then using a CFTUTIL SUBMIT you can restart your script, which runs from the checkpoint that you set.
 
-Exa****m****ple  
+Exa<span class="bold_in_para">****m****</span>ple  
 
 ```
 Go to &APPSTATE
@@ -221,7 +221,7 @@ QQQ\_QQQ\_QQQ
 | PREMINDATE  | integer  | From this date on, the preprocessing exec file can be launched.  |
 | PREMINTIME  | integer  | From this time on, the preprocessing exec file can be launched.  |
 | ACKEXEC  | string  | The acknowledgement exec file that will be launched after receiving an ACK or NACK.  |
-| ACKSTATE  | REQUIRE/IGNORE  | Specify if Transfer CFT{{< TransferCFT/componentshortname  >}} should wait for an ACK/NACK to enter the X phase.  |
+| ACKSTATE  | REQUIRE/IGNORE  | Specify if {{< TransferCFT/axwayvariablesComponentShortName  >}} should wait for an ACK/NACK to enter the X phase.  |
 | POSTSTATE  | DISP  | The transfer phase step as it enters the Y phase.  |
 | PREEXEC  | string  | The preprocessing exec file.  |
 | PRESTATE  | DISP/HOLD  | The transfer phase step as it enters the A phase.  |

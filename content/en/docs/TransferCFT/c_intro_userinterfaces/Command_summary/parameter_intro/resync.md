@@ -8,7 +8,7 @@
 
 #### CFTPROT
 
-****\[RESYNC = {NO
+****\[RESYNC = {<span style="text-decoration: underline;">NO</span>
 | YES }\]****
 
 Option for dynamic re-synchronization of exchanges during transfer,

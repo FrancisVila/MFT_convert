@@ -6,7 +6,7 @@
 
 ### pad
 
-**Deprecated in Transfer CFT{{< TransferCFT/componentlongname  >}} 3.5.**
+**Deprecated in {{< TransferCFT/axwayvariablesComponentLongName  >}} 3.5.**
 
 #### CFTPROT`
 
@@ -15,13 +15,13 @@
 ****Pesit Specific****
 
 Option for the use of CRC (cyclic redundancy checksum). Applicable only
-in requester mode. Default is ****No****.
+in requester mode. Default is <span style="font-weight: bold;">****No****</span>.
 
-****Odette****
+<span style="font-weight: bold;">****Odette****</span>
 
 Option applying 'special logic' to the data exchange buffers. If the
 option is set to NO for one of the partners, this 'special logic' is not
-applied. Default is ****No****.
+applied. Default is <span style="font-weight: bold;">****No****</span>.
 
  
 

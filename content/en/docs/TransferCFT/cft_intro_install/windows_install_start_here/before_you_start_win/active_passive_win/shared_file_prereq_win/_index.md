@@ -2,9 +2,9 @@
     "title": "Shared file system prerequisites",
     "linkTitle": "Shared file systems",
     "weight": "210"
-}This section provides general information concerning the prerequisites for shared file systems for the following types of files used with Transfer CFT{{< TransferCFT/transfercftname  >}} in a UNIX environment.
+}This section provides general information concerning the prerequisites for shared file systems for the following types of files used with {{< TransferCFT/suitevariablesTransferCFTName  >}} in a UNIX environment.
 
-- Transfer CFT data files: This refers to all files managed by Transfer CFT{{< TransferCFT/transfercftname >}} other than transferable application files (including database files), which are stored in the Transfer CFT{{< TransferCFT/transfercftname >}} runtime directory.
+- Transfer CFT data files: This refers to all files managed by {{< TransferCFT/suitevariablesTransferCFTName >}} other than transferable application files (including database files), which are stored in the {{< TransferCFT/suitevariablesTransferCFTName >}} runtime directory.
 - Transferable application files: This refers to the files transferred by Transfer CFT.
 
 ## Standalone installation
@@ -33,7 +33,7 @@ You can use any POSIX compliant shared file system for both Transfer CFT data fi
 
 ## Active/active cluster
 
-#### Transfer CFT{{< TransferCFT/transfercftname  >}} data files
+#### {{< TransferCFT/suitevariablesTransferCFTName  >}} data files
 
 **Supported shared file systems for multi-node, multi-host architecture (active/active)**
 
@@ -52,7 +52,7 @@ The following non-exhaustive table lists shared file systems that have been test
 
 \*References to NFSv4 imply any version of NFSv4. All NFSv4 minor versions are supported, for example version 4.2.
 
-#### Transfer CFT{{< TransferCFT/transfercftname  >}} transferable application files
+#### {{< TransferCFT/suitevariablesTransferCFTName  >}} transferable application files
 
 You can use any POSIX compliant shared file system for transferable application files.
 

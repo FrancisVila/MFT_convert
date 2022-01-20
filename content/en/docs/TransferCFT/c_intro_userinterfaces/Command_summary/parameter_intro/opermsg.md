@@ -14,7 +14,7 @@
  **{0..255}
 
 Defines the categories of messages that are intended for the operator. All
-messages are also written in the log file. This is a subset of the Transfer CFT{{< TransferCFT/componentshortname  >}} log messages
+messages are also written in the log file. This is a subset of the {{< TransferCFT/axwayvariablesComponentShortName  >}} log messages
 defined by the algebraic sum of the values indicated in the following
 table.
 
@@ -32,7 +32,7 @@ table.
 
 
 The I, W, E, F types correspond to the type of message indicated in
-the log file. Refer to the Transfer CFT{{< TransferCFT/componentshortname  >}} <a href="../../../../troubleshoot_intro/messages_and_error_codes_start_here" class="MCXref xref">Transfer CFT messages
+the log file. Refer to the {{< TransferCFT/axwayvariablesComponentShortName  >}} <a href="../../../../troubleshoot_intro/messages_and_error_codes_start_here" class="MCXref xref">Transfer CFT messages
 and error codes</a> section.
 
 The value "0" means that no message is sent to the operator.

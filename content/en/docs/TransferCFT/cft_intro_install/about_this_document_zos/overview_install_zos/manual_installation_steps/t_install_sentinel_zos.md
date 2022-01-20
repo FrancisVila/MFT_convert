@@ -103,9 +103,9 @@ The keywords that are displayed in bold should be substituted by the JCL A00CUST
 
 #### Use the LOGGER file in a SYSPLEX  
 
-To create an overflow file (LOGGER) that is available for all SYSPLEX partitions, in the Coupling Facility Resource Manager (CFRM) add the following structure (`&userstr`) to the coupling data set.
+To create an overflow file (LOGGER) that is available for all SYSPLEX partitions, in the Coupling Facility Resource Manager (CFRM) add the following structure (<span class="code">`&userstr`</span>) to the coupling data set.
 
-****Example****
+<span class="bold_in_para">****Example**** </span>
 
 ```
 The following is an example of a structure definition:

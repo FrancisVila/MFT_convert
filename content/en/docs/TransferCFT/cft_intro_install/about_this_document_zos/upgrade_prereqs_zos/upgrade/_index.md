@@ -2,7 +2,7 @@
     "title": "Upgrade ",
     "linkTitle": "Upgrade",
     "weight": "220"
-}This section describes how to upgrade to 3.9{{< TransferCFT/releasenumber  >}} and higher (from versions 3.1.3, 3.2.x, 3.3.x, 3.4, 3.5).
+}This section describes how to upgrade to {{< TransferCFT/axwayvariablesReleaseNumber  >}} and higher (from versions 3.1.3, 3.2.x, 3.3.x, 3.4, 3.5).
 
 Transfer CFT delivers procedures that can help you upgrade instances. The following sections describe how to:
 
@@ -13,7 +13,7 @@ Transfer CFT delivers procedures that can help you upgrade instances. The follow
 1. <a href="#Upgrade" class="MCXref xref">Upgrade the target instance (product environment)</a>
 1. <a href="#Migrate" class="MCXref xref">Upgrade</a>
 
-********Upgrade schema********
+********<span class="autonumber"></span>Upgrade schema********
 
 ![](/Images/TransferCFT/temp_zos_upgrade.png)
 

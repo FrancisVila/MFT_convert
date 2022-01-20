@@ -2,12 +2,12 @@
     "title": "Get started with Web services",
     "linkTitle": "Get started with Web services",
     "weight": "310"
-}This section describes how to get started using Web services with Transfer CFT{{< TransferCFT/componentlongname  >}}. You can use a tool such as SoapUI to create and test SOAP requests. A typical usage for Web services when running Transfer CFT is:
+}This section describes how to get started using Web services with {{< TransferCFT/axwayvariablesComponentLongName  >}}. You can use a tool such as SoapUI to create and test SOAP requests. A typical usage for Web services when running Transfer CFT is:
 
 - To use web services to submit a high number of transfer requests.
 - To trace exchanges using the transfer requests' IDT and IDTU.
 
-When using Web services with Transfer CFT{{< TransferCFT/hflongproductname  >}}, select the type media communication type, either COM FILE or COM TCP, to use for transfer requests (SEND/RECV), or administration services (such as HALT). If you are using Web services with TCP as the selected COM media type, refer to [About synchronous communication](../../../synch_comm_tcpip_intro) for information on configuring the client.
+When using Web services with {{< TransferCFT/headerfootervariableshflongproductname  >}}, select the type media communication type, either COM FILE or COM TCP, to use for transfer requests (SEND/RECV), or administration services (such as HALT). If you are using Web services with TCP as the selected COM media type, refer to [About synchronous communication](../../../synch_comm_tcpip_intro) for information on configuring the client.
 
 ## Prerequisites
 
@@ -26,8 +26,8 @@ Regardless of the mode you select, COM FILE or [COM TCP](../../../synch_comm_tc
 
 ### COM FILE
 
-- Pros: There is no effect on persistence; if Transfer CFT{{< TransferCFT/hflongproductname >}} stops the request is stored in the COM file. Additionally, there is no need to implement error handling on the client side except if the communication file is full (see Note below).
-- Cons: The performance response time per request is at the very least `copilot.cft.timerwaitcftcata` seconds, where the maximum time could be `copilot.cft.timerwaitcftcata` multiplied by the `copilot.cft.nbwaitcftcata` value.
+- Pros: There is no effect on persistence; if {{< TransferCFT/headerfootervariableshflongproductname >}} stops the request is stored in the COM file. Additionally, there is no need to implement error handling on the client side except if the communication file is full (see Note below).
+- Cons: The performance response time per request is at the very least <span class="code">`copilot.cft.timerwaitcftcata`</span> seconds, where the maximum time could be <span class="code">`copilot.cft.timerwaitcftcata`</span> multiplied by the `copilot.cft.nbwaitcftcata` value.
 
 > **Note**
 >
@@ -35,8 +35,8 @@ Regardless of the mode you select, COM FILE or [COM TCP](../../../synch_comm_tc
 
 ### COM TCP
 
-- Pros: Performance is improved due to a faster request response time (under ideal conditions less than 1 second, however the actual time depends on the Transfer CFT process load, as opposed to `copilot.cft.timerwaitcftcata` seconds at the very least if you are using COM FILE).
-- Cons: There is an effect on persistence - if Transfer CFT{{< TransferCFT/hflongproductname >}} stops the request is not recorded. Additionally, error handling must be implemented on the client.
+- Pros: Performance is improved due to a faster request response time (under ideal conditions less than 1 second, however the actual time depends on the Transfer CFT process load, as opposed to <span class="code">`copilot.cft.timerwaitcftcata`</span> seconds at the very least if you are using COM FILE).
+- Cons: There is an effect on persistence - if {{< TransferCFT/headerfootervariableshflongproductname >}} stops the request is not recorded. Additionally, error handling must be implemented on the client.
 
 ## Customize the Transfer CFT COM configuration
 
@@ -50,7 +50,7 @@ Concerning errors when using COM TCP mode, if CFTMAIN stops the connection is l
 
 ### COM TCP or COM FILE
 
-When using either COM FILE or COM TCP, the `copilot.misc.maxnbprocess` defines the maximum number of parallel sessions accepted by the Transfer CFT Copilot server (default is 20). You can modify this value in function with the peaks in parallel requests your system experiences (maximum is 64), however consider the impact of having a high number of parallel processes. Lastly note that each process treats only one application at a time.
+When using either COM FILE or COM TCP, the <span class="code">`copilot.misc.maxnbprocess`</span> defines the maximum number of parallel sessions accepted by the Transfer CFT Copilot server (default is 20). You can modify this value in function with the peaks in parallel requests your system experiences (maximum is 64), however consider the impact of having a high number of parallel processes. Lastly note that each process treats only one application at a time.
 
 Any requests that exceed the limit cause a network error with either a " connection refused" or "connection closed by remote" type of error.
 

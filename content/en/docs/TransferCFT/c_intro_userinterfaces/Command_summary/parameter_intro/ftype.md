@@ -70,7 +70,7 @@ Implicit indicates that the FTYPE is automatically detected by the OS.
 | S | BINARY  | Spanned variable format file (z/OS to z/OS) |
 
 
-HFS file characteristics
+<span class="autonumber"></span>HFS file characteristics
 
 
 | FTYPE  | FCODE  | Type of sent file  |
@@ -110,7 +110,7 @@ QQQ\_QQQ\_QQQ
 
 ****Default FTYPE or FRECFM value****
 
-The behavior of the values ‘’ and ‘ ’, for FTYPE and FRECFM respectively, are not detailed in the following table. These values correspond to `undefined`, meaning that the transfer in emission takes the value of both the file type and the member content..
+The behavior of the values ‘’ and ‘ ’, for FTYPE and FRECFM respectively, are not detailed in the following table. These values correspond to <span class="code">`undefined`</span>, meaning that the transfer in emission takes the value of both the file type and the member content..
 
 
 |   | Default FTYPE | Default FRECFM |

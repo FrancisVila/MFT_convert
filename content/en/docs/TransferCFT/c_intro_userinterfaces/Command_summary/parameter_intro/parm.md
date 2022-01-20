@@ -22,7 +22,7 @@ User message sent to the partner
 with the file transfer.
 
 The value of this parameter can be accessed through the symbolic variable
-**&PARM**.
+<span style="font-style: italic;">**&PARM**</span>.
 
 Important: In PESIT D CFT, a maximum of only 80 characters can be transmitted to the receiver.
 
