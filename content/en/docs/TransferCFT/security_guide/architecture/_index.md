@@ -4,10 +4,9 @@
     "weight": "70"
 }The following diagram depicts the types of connections used.
 
-********<span class="autonumber"></span>Secure connections and descriptions********
+********Secure connections and descriptions********
 
-********<span class="autonumber"></span>
-![](/Images/TransferCFT/sec_features_new.png)********
+********![](/Images/TransferCFT/sec_features_new.png)********
 
 On Unix systems, the user/password database is managed by the xfbadmusr and xfbadmgrp utilities.
 

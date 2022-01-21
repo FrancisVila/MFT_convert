@@ -41,7 +41,7 @@ The following table lists available resources in Transfer CFT with associated ac
 
 ### Generic resources
 
-<span class="autonumber"></span><span id="__RefHeading___Toc473905770"></span>Generic resources
+<span id="__RefHeading___Toc473905770"></span>Generic resources
 
 
 | Resource | Description | Resource actions |
