@@ -1,8 +1,10 @@
 {
     "title": "Test of command parameter formats",
     "linkTitle": "Test of command parameter formats",
-    "weight": "40"
-}## Original from <a href="../original_versions/proc_commands" class="MCXref xref">Use processing scripts</a>
+    "weight": "50"
+}## AAA
+
+## Original from <a href="../original_versions/proc_commands" class="MCXref xref">Use processing scripts</a>
 
 ### SEND, CFTSEND
 

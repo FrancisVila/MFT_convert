@@ -1,7 +1,7 @@
 {
     "title": "Tests of Customize the initialize.properties file ",
     "linkTitle": "Tests of Customize the initialize.properties file",
-    "weight": "50"
+    "weight": "60"
 }## Flat version of <a href="../original_versions/new_install_ux" class="MCXref xref">Customize the initialize.properties file</a>
 
 ### Silent installation

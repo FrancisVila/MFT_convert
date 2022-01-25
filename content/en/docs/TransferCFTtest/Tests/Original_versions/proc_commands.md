@@ -1,7 +1,7 @@
 {
     "title": "Use processing scripts",
     "linkTitle": "Use processing scripts",
-    "weight": "100"
+    "weight": "110"
 }There are 4 stages where you can configure processing - preprocessing, post-processing, ack processing, and for a transfer error. For these, Transfer CFT provides global definitions in the static configuration that are used by default. However, you can override the default scripts, in the CFTSEND, SEND, CFTRECV and RECV commands, using the following parameters:
 
 - `Preexec`: for preprocessing

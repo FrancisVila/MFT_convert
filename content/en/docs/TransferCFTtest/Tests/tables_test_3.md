@@ -1,7 +1,7 @@
 {
     "title": "Test for Migration or upgrade impact and considerations ",
     "linkTitle": "Test for Migration or upgrade impact and considerations ",
-    "weight": "60"
+    "weight": "70"
 }You should be aware of the following features or parameters, which were modified since their inception, and how these changes may impact your upgrade or migration.
 
 ### From all versions to any version

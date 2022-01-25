@@ -1,7 +1,7 @@
 {
     "title": "Customize the initialize.properties file",
     "linkTitle": "Customize the initialize.properties file",
-    "weight": "90"
+    "weight": "100"
 }A common practice is to create a copy of the `initialize.properties ` file, which is located in the downloaded installation package. This gives you an initial intact version should you later need it.
 
 Customize the `initialize.properties ` file. Use the table below to help you with parameter settings; note that the `CryptoKey_Password` is mandatory. Be sure that if you want to use special characters in a configuration file field, you protect the value by enclosing it in double quotation marks ("").

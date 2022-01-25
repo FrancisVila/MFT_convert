@@ -3,6 +3,159 @@
 
 ============================== table nb count(1) ============================================
 
+
+| ID  | Description  |
+| --- | --- |
+| copilot.http.aliases  | List of enabled alias-id  |
+| copilot.http.aliases.(alias-id) alias  | Name of the alias  |
+| copilot.http.aliases.(alias-id).path  | Path that replaces the alias in the URL  |
+
+
+
+============================== table nb count(2) ============================================
+
+
+| Parameter  | Description  |
+| --- | --- |
+| copilot.http.onlyssl  | Enter Yes to restrict the access of the Transfer CFT{{&lt; TransferCFTtest/axwayvariablesComponentShortName &gt;}} user interface with https.  |
+
+
+
+============================== table nb count(3) ============================================
+
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th >Parameter</th>
+<th >Options</th>
+<th >Description</th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td rowspan="3" >copilot.nt.rootdrives</td>
+<td >@REMOVABLE_DRIVES</td>
+<td >To view removable drives such as a USB key, CD, and so on.</td>
+</tr>
+<tr >
+<td >@LOCAL_DRIVES</td>
+<td >To view hard drives.</td>
+</tr>
+<tr >
+<td >@NET_DRIVES</td>
+<td >To view network drives.</td>
+</tr>
+</tbody>
+</table>
+
+
+============================== table nb count(4) ============================================
+
+
+| Parameter  | Value  |
+| --- | --- |
+| copilot.misc.client_keep_alive_delay  | Enter an integer for the delay in seconds.<br/> 60 = default<br/> 0 = no keep-alive |
+
+
+
+============================== table nb count(5) ============================================
+
+
+| Parameter  | Value  |
+| --- | --- |
+| copilot.misc.ClientTimeout  | Enter an integer for the timeout in minutes.<br/> 30 = default<br/> 0 = no timeout |
+
+
+
+============================== table nb count(6) ============================================
+
+
+| Parameter  | Value  | Former value  |
+| --- | --- | --- |
+| copilot.webservices.wsicomplience  | (bool) No  | [WEBSERVICES] WsiComplience  |
+| copilot.webservices.upload_directory  | (dir) $(cft.runtime_dir)/conf/ws_upload  | NA  |
+
+
+
+============================== table nb count(7) ============================================
+
+<table  data-cellspacing="0" >
+<thead>
+<tr >
+<th >Supported format</th>
+<th >Type</th>
+<th >Extension</th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td rowspan="3" >Certificate</td>
+<td >PKCS#12</td>
+<td >p12, pfx, pkcs12</td>
+</tr>
+<tr >
+<td >PEM</td>
+<td >pem</td>
+</tr>
+<tr >
+<td >DER</td>
+<td >der</td>
+</tr>
+<tr >
+<td rowspan="3" >Private key</td>
+<td >PEM</td>
+<td >pem</td>
+</tr>
+<tr >
+<td >DER</td>
+<td >der</td>
+</tr>
+<tr >
+<td >PKCS#8</td>
+<td >key,
+pem</td>
+</tr>
+</tbody>
+</table>
+
+
+============================== table nb count(8) ============================================
+
+
+| Parameter | Value |
+| --- | --- |
+| copilot.ssl.SslCertFile | conf/pki/&lt;my_certificate&gt;.p12 |
+| copilot.ssl.SslCertPassword | Certificate password |
+| copilot.ssl.SslKeyFile | Not used |
+| copilot.ssl.SslKeyPassword | Not used |
+
+
+
+============================== table nb count(9) ============================================
+
+
+| Parameter | Value |
+| --- | --- |
+| copilot.ssl.SslCertFile | conf/pki /&lt;my_certificate&gt;.der *or* .pem |
+| copilot.ssl.SslCertPassword | Not used |
+| copilot.ssl.SslKeyFile | conf/pki /&lt;my_key&gt;.der *or* .pem |
+| copilot.ssl.SslKeyPassword | Key password, which is mandatory if the key file is encrypted PKCS#8 |
+
+
+
+============================== table nb count(10) ============================================
+
+
+| Parameter | Value |
+| --- | --- |
+| copilot.http.onlyssl |  • No: Default value.<br/> • Yes: Restricts access to the Transfer CFT Copilot server to HTTPS secured connections only. |
+| <span id="copilot.ssl.SslCipherSuites"></span>copilot.ssl.SslCipherSuites<br/>  | A comma separated list of cipher suites accepted by the Transfer CFT Copilot server.<br/> • “47, 10, 9, 2”: Default value.<br/> <br/> List of supported cipher suites:<br/> • 1 = RSA_WITH_NULL_MD5<br/> • 2 = RSA_WITH_NULL_SHA<br/> • 4 = RSA_WITH_RC4_MD5<br/> • 5 = RSA_WITH_RC4_SHA<br/> • 9 = RSA_WITH_DES_CBC_SHA1<br/> • 10 = RSA_WITH_3DES_EDE_CBC_SHA<br/> • 47 = RSA_WITH_AES_128_CBC_SHA<br/> • 53 = RSA_WITH_AES_256_CBC_SHA<br/> • 59 = RSA_WITH_NULL_SHA256<br/> • 60 = RSA_WITH_AES_128_CBC_SHA256<br/> • 61 = RSA_WITH_AES_256_CBC_SHA256 |
+| copilot.ssl.version_min  | Indicates the minimum version of SSL that the Copilot and the REST API server accept.<br/> • Default: tls_1.0<br/> • Possible values are: ssl_3.0 (not recommended), tls_1.0, tls_1.0, tls_1.2 |
+
+
+
+============================== table nb count(11) ============================================
+
 <table  data-cellspacing="0" >
 <thead>
 <tr >
@@ -88,7 +241,7 @@
 </table>
 
 
-============================== table nb count(2) ============================================
+============================== table nb count(12) ============================================
 
 <table  data-cellspacing="0" >
 <thead>
@@ -181,7 +334,7 @@ script is relaunched.</td>
 </table>
 
 
-============================== table nb count(3) ============================================
+============================== table nb count(13) ============================================
 
 
 | Parameter  | Value  | Description  |
@@ -203,7 +356,7 @@ script is relaunched.</td>
 
 
 
-============================== table nb count(4) ============================================
+============================== table nb count(14) ============================================
 
 
 | Parameter  | Value  | Description  |
@@ -225,7 +378,7 @@ script is relaunched.</td>
 
 
 
-============================== table nb count(5) ============================================
+============================== table nb count(15) ============================================
 
 
 | Parameter  | Automatic or default  | Description  | UCONF  |
@@ -236,7 +389,7 @@ script is relaunched.</td>
 
 
 
-============================== table nb count(6) ============================================
+============================== table nb count(16) ============================================
 
 
 | Parameter  | Automatic or default  | Description  | UCONF  |
@@ -250,7 +403,7 @@ script is relaunched.</td>
 
 
 
-============================== table nb count(7) ============================================
+============================== table nb count(17) ============================================
 
 
 | Parameter  | Automatic or default  | Description  | UCONF  |
@@ -261,7 +414,7 @@ script is relaunched.</td>
 
 
 
-============================== table nb count(8) ============================================
+============================== table nb count(18) ============================================
 
 
 | Parameter  | Automatic or default  | Description  | UCONF  |
@@ -282,7 +435,7 @@ script is relaunched.</td>
 
 
 
-============================== table nb count(9) ============================================
+============================== table nb count(19) ============================================
 
 
 | Parameter  | Automatic or default  | Description  | UCONF  |
@@ -294,7 +447,7 @@ script is relaunched.</td>
 
 
 
-============================== table nb count(10) ============================================
+============================== table nb count(20) ============================================
 
 
 | Parameter  | Automatic or default  | Description  | UCONF  |
@@ -309,7 +462,7 @@ script is relaunched.</td>
 
 
 
-============================== table nb count(11) ============================================
+============================== table nb count(21) ============================================
 
 
 | Parameter  | Automatic or default  | Description  | UCONF  |
@@ -324,7 +477,7 @@ script is relaunched.</td>
 
 
 
-============================== table nb count(12) ============================================
+============================== table nb count(22) ============================================
 
 
 | Parameter  | Automatic or default  | Description  | UCONF  |
@@ -342,7 +495,7 @@ script is relaunched.</td>
 
 
 
-============================== table nb count(13) ============================================
+============================== table nb count(23) ============================================
 
 
 | Parameter  | Automatic or default  | Description  | UCONF  |
@@ -352,7 +505,7 @@ script is relaunched.</td>
 
 
 
-============================== table nb count(14) ============================================
+============================== table nb count(24) ============================================
 
 
 | Parameter  | Automatic or default  | Description  | UCONF  |
@@ -361,7 +514,7 @@ script is relaunched.</td>
 
 
 
-============================== table nb count(15) ============================================
+============================== table nb count(25) ============================================
 
 <table  data-cellspacing="0" >
 <thead>
@@ -805,7 +958,7 @@ CFTUI_ServicePassword</td>
 </table>
 
 
-============================== table nb count(16) ============================================
+============================== table nb count(26) ============================================
 
 <table  data-cellspacing="0" >
 <thead>
@@ -1249,7 +1402,7 @@ CFTUI_ServicePassword</td>
 </table>
 
 
-============================== table nb count(17) ============================================
+============================== table nb count(27) ============================================
 
 <table  data-cellspacing="0" >
 <thead>
@@ -1336,7 +1489,7 @@ CFTUI_ServicePassword</td>
 </table>
 
 
-============================== table nb count(18) ============================================
+============================== table nb count(28) ============================================
 
 <table  data-cellspacing="0" >
 <thead>
@@ -1429,7 +1582,7 @@ script is relaunched.</td>
 </table>
 
 
-============================== table nb count(19) ============================================
+============================== table nb count(29) ============================================
 
 <table  data-cellspacing="0" >
 <thead>
@@ -1466,7 +1619,7 @@ script is relaunched.</td>
 </table>
 
 
-============================== table nb count(20) ============================================
+============================== table nb count(30) ============================================
 
 <table  data-cellspacing="0" >
 <thead>
@@ -1503,7 +1656,7 @@ script is relaunched.</td>
 </table>
 
 
-============================== table nb count(21) ============================================
+============================== table nb count(31) ============================================
 
 <table  data-cellspacing="0" >
 <thead>
@@ -1536,7 +1689,7 @@ processing script that will allow a SUBMIT to occur at the correct script step.<
 </table>
 
 
-============================== table nb count(22) ============================================
+============================== table nb count(32) ============================================
 
 <table  data-cellspacing="0" >
 <thead>
