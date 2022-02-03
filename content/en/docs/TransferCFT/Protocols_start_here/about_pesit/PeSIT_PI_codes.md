@@ -1,11 +1,12 @@
 {
     "title": "PeSIT PI code descriptions ",
     "linkTitle": "PeSIT PI codes",
-    "weight": "160"
+    "weight": "150"
 }This topic provides a description for each of the PeSIT parameter identifiers, PI,
 codes used with {{< TransferCFT/axwayvariablesComponentShortName  >}}.
 
-## About PeSIT PI codes
+About PeSIT PI codes
+--------------------
 
 During the file transfer phase, as seen in [How PeSIT works](), messages called FPDU (File
 transfer Protocol Data
@@ -22,7 +23,7 @@ Furthermore, each parameter group unit is identified by a numeric code named PGI
 (Parameters Group
 Identifier).
 
-********<span class="autonumber"></span>Parameter identifiers (PI) in the message body negotiate the session********
+********Parameter identifiers (PI) in the message body negotiate the session********
 
 ![](/Images/TransferCFT/temp_PI_format.png)
 
@@ -30,7 +31,8 @@ For more information on the PeSIT protocol, refer to
 documentation published by the GSIT (Groupement pour un Système Interbancaire
 de Télécompensation).
 
-## Descriptions
+Descriptions
+------------
 
 <span id="PI_01"></span>
 
@@ -43,7 +45,7 @@ This field indicates the implementation of transmission error detection.
 ### PI 02 PeSIT diagnostic code
 
 Refer to *[Protocol
-diagnostic codes.](../../../troubleshoot_intro/messages_and_error_codes_start_here/general_protocol_diagnostics)*
+diagnostic codes.](../../../troubleshoot_intro/about_error_codes/about_diagnostic_codes/general_protocol_diagnostics)*
 
 <span id="PI_03__Requester_identification_PeSIT_E"></span>
 
@@ -355,7 +357,7 @@ commands (for a write transfer). In {{< TransferCFT/PrimaryCGorUM  >}}, use the 
 As PeSIT only recognizes three priority levels, the following conversions
 are performed:
 
-- PRI > 128    
+- PRI &gt; 128    
     PI 17 = 0 (high)
 - PRI = 128    
     PI 17 = 1 (medium)
@@ -447,9 +449,7 @@ tolerates sessions in accordance with the value of the SRIN parameter.
 ### PI 23 Resynchronization
 
 This parameter indicates the use of the resynchronization functional
-unit as required.
-
-It is defined using the RESYNC parameter of the
+unit as required. It is defined using the RESYNC parameter of the
 CFTPROT command and is negotiated by both partners at the time
 the protocol connection is established.
 
@@ -664,6 +664,8 @@ In message reception mode, Transfer
 CFT recovers the PI 91 in order to define the &MSG symbolic
 variable.
 
+See the [xlate](../../../c_intro_userinterfaces/command_summary/parameter_intro/xlate) parameter for transcoding details.
+
 <span id="PI_99_Free_message"></span>
 
 ### PI 99 Free message
@@ -679,3 +681,5 @@ the coding, structure or semantics of its contents is imposed by the protocol.
 
 During file sending, PI 99 contains the value in the PARM field of the
 SEND command. Character type coding with a maximum length of 254/512 bytes is permitted depending on the partner type.
+
+See the [xlate](../../../c_intro_userinterfaces/command_summary/parameter_intro/xlate) parameter for transcoding details.

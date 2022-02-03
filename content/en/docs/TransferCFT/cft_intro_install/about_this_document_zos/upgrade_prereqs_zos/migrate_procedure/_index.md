@@ -1,14 +1,16 @@
 {
     "title": "Migration procedure",
     "linkTitle": "Migrate ",
-    "weight": "230"
+    "weight": "240"
 }This section describes the Transfer CFT z/OS migration procedure and the statements you use to complete the process.
 
-## Prerequisites
+Prerequisites
+-------------
 
 Before you start, create a new Transfer CFT instance following the [installation procedure](../../overview_install_zos) in this guide. This is your target instance.
 
-## Overview
+Overview
+--------
 
 Migration consists of extracting the configuration (CFTPARM, CFTPART, UCONF, PKI), the contents of the catalogs, the communication media files from the source instance (old installation), and importing them into the target instance (new installation).
 
@@ -16,7 +18,7 @@ All migration operations are from the target instance.
 
 The following table lists and describes the MIGR\* members used in a Transfer CFT migration process. If you want to use the delivered procedure, as a first step you need to customize the MIGR$SET member.
 
-<span class="autonumber"></span>Migration Job Control Language (JCL) Statements
+Migration Job Control Language (JCL) Statements
 
 
 | Member name | Purpose |
@@ -45,7 +47,8 @@ The PMIGR2 procedure, is comprised of several steps:
 - Import from the work file the data in the target file.
 - List the content of target file.
 
-## Procedure
+Procedure
+---------
 
 This section describes how to migrate the various configuration elements in a non-multi-node environment or in a multi-node environment. Except for the migration of catalogs and the media communication file in a multi node environment, which are described in a specific section *Procedure for mutli-node*.
 
@@ -111,7 +114,9 @@ The JCL ..INSTALL(MIGRUCNF) must be customized to determine UCONF parameters to 
 Replace the line:
 
 ```
-CFTEXT ID=\*,TYPE=UCONF,FOUT=$EXT
+CFTEXT ID=
+\*,TYPE
+=UCONF,FOUT=$EXT
 ```
 
 With the list of UCONF parameters to migrate. For example:
@@ -127,7 +132,7 @@ CFTEXT ID=cft.cftaccnt.fname.atts,TYPE=UCONF,FOUT=$EXT
 Etc.
 ```
 
-****<span class="span_1">Submit the procedure</span><span class="span_1"> ..</span><span class="span_1">INSTALL(MIGR</span><span class="span_1">UCNF</span><span class="span_1">)</span>****
+****Submit the procedure ..INSTALL(MIGRUCNF)****
 
 1. Migrate the CATALOG file (MIGRCAT) for a non multi-node environment.
 
@@ -145,7 +150,7 @@ You can set the following variables in the MIGR$SET file and (or) in the PMIGR2 
 | TMPSCAT | 'CYL,(50,10)' | Size allocation for work file.<br/> Use 3 cylinders for every 1000 transfers to be migrated. |
 
 
-****<span class="span_1">Submit the procedu</span>re ..INSTALL(MIGRCAT).****
+****Submit the procedure ..INSTALL(MIGRCAT).****
 
 1. Migrate the communication media file(s) (MIGRCOM)for a non mutli-node environment.
 

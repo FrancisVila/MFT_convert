@@ -1,15 +1,15 @@
 {
     "title": "idm",
     "linkTitle": "idm",
-    "weight": "1560"
+    "weight": "1550"
 }<span id="idm"></span>
 
 ### idm
 
 #### CFTSEND, SEND
 
-****\[IDM = identifier\]  <span style="font-weight: normal;"> {string
-33}</span>****
+****[IDM = identifier]   {string
+33}****
 
 Message identifier.
 
@@ -24,5 +24,3 @@ IDM.
  
 
 [Return to Command index](../../)
-
- 

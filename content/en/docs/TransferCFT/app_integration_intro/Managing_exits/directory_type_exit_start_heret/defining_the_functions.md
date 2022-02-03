@@ -6,7 +6,7 @@
 A directory EXIT task comprises two modules:
 
 - The interface supplied
-    with {{< TransferCFT/axwayvariablesComponentShortName >}}
+    with {{< TransferCFT/axwayvariablesComponentShortName  >}}
 - The user program
 
 The interface is written in C language. The main entry point of the
@@ -34,13 +34,14 @@ A directory EXIT task:
 - Calls the initialization
     function **exaini** function in server mode, when a connection is indicated,
     or in requester mode, when a connection request is made. If this function
-    returns a 0 code, the <span style="font-weight: bold;">****usrfct****</span> function
-    is called. If not, {{< TransferCFT/axwayvariablesComponentShortName >}} considers that the user does not want
+    returns a 0 code, the ****usrfct**** function
+    is called. If not, {{< TransferCFT/axwayvariablesComponentShortName  >}} considers that the user does not want
     to take control
 
 <span id="Initialization_Function"></span>
 
-## Initialization function
+Initialization function
+-----------------------
 
 ### About the initialization function
 
@@ -82,7 +83,8 @@ Where EXA is defined as:
 
 <span id="User_Function"></span>
 
-## User Function
+User Function
+-------------
 
 
 | Parameter  | Description  |
@@ -100,7 +102,8 @@ Example in C
 
 <span id="Interface_Files"></span>
 
-## Interface files
+Interface files
+---------------
 
 Interface files are listed in the following table.
 

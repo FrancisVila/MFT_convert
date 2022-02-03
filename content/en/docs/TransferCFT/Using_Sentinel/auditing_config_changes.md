@@ -1,7 +1,7 @@
 {
-    "title": "Track configuration changes",
+    "title": "Tracking configuration changes",
     "linkTitle": "Tracking configuration changes",
-    "weight": "200"
+    "weight": "190"
 }The configuration auditing feature enables Transfer CFT to track configuration changes and send this information to the Sentinel
 server. The configuration change can be:
 
@@ -11,24 +11,29 @@ server. The configuration change can be:
 
 > **Note**
 >
-> The configuration change tracking feature described in this section is not available when using Central Governance or Flow Manager as Transfer CFT configuration changes are tracked by those products. Consequently, you cannot set the parameters described in this section using either of these products.
+> Note: The configuration change tracking feature described in this section is not available when using Central Governance or Flow Manager as Transfer CFT configuration changes are tracked by those products. Consequently, you cannot set the parameters described in this section using either of these products.
 
-## Procedure
+Procedure
+---------
 
-> **Note**
->
-> To enable the configuration change audit, set the Sentinel parameter value to uconf:sentinel.xfb.audit=yes in the unified configuration (UCONF).
+To enable configuration change auditing, set the following [unified configuration](../../admin_intro/uconf) (UCONF) parameters:
+
+1. Activate the Sentinel connector by setting `sentinel.xfb.enable=yes`.
+1. Activate the audit by setting `sentinel.xfb.audit=yes.`
 
 **Example**
 
-Using CFTUTIL, for example, define the parameter in UCONFSET as follows:
+Using CFTUTIL, for example, define the parameters as follows:
 
 ```
+CFTUTIL UCONFSET ID= sentinel.xfb.enable
+, value=yes
 CFTUTIL UCONFSET ID=sentinel.xfb.audit,
 value=yes
 ```
 
-### Message Track
+Message Track
+-------------
 
 Message Track is an XML XFBLog message
 containing:
@@ -37,13 +42,14 @@ containing:
 - Return message attribute
 - Sentinel.xfb.audit
 
-<span class="bold_in_para">****Example**** </span>
+****Example****
 
-`/Action=CREATE /Object=CFTSEND /id=ZZ /user=My_Company\giovanip /groupid= /owner=      /CrDate=20191204 /CrTime=17471640 /UpdDate=20191204 /UpdTime=17471640`
-
+```
+/Action=CREATE /Object=CFTSEND /id=ZZ /user=My_Company\\giovanip /groupid= /owner= /CrDate=20191204 /CrTime=17471640 /UpdDate=20191204 /UpdTime=17471640
+```
 <span id="Ident attribute"></span>
 
-#### Ident attribute details
+### Ident attribute details
 
 
 | CFTA0nX  | Details  |
@@ -60,7 +66,7 @@ containing:
 
 <span id="Return message attribute"></span>
 
-#### Return message attribute details
+### Return message attribute details
 
 
 | Attribute  | Details  |
@@ -77,9 +83,10 @@ containing:
 | UpdTime=&amp;updtime  | &amp;updtime is the Update Time for the object  |
 
 
-## Disable XFB.Log
+Disable XFB.Log
+---------------
 
-By default, `sentinel.xfb.log` is set to <span class="code">`IEWF `</span>(information, error, warning, and fatal), which sends Transfer CFT log information to Sentinel. To disable the XFB.Log, use the uconf utility to set this value to ' '.
+By default, `sentinel.xfb.log` is set to `IEWF `(information, error, warning, and fatal), which sends Transfer CFT log information to Sentinel. To disable the XFB.Log, use the uconf utility to set this value to ' '.
 
 ```
 CFTUTIL uconfset id=sentinel.xfb.log, value=' '
@@ -87,5 +94,5 @@ CFTUTIL uconfset id=sentinel.xfb.log, value=' '
 
 ****Related topics****
 
-- UCONF: [unified configuration](../../admin_intro/uconf)
+- UCONF:[unified configuration](../../admin_intro/uconf)
 - [XFBTransfer]()

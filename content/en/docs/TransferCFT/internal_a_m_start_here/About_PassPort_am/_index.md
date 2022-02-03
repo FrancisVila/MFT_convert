@@ -1,19 +1,20 @@
 {
     "title": "About PassPort AM",
     "linkTitle": "PassPort type access management",
-    "weight": "170"
+    "weight": "160"
 }This section describes how to configure access management when not using {{< TransferCFT/PrimaryCGorUM  >}}.
 
-## Concepts
+Concepts
+--------
 
 {{< TransferCFT/axwayvariablesCompanyName  >}} PassPort Access Management centralizes {{< TransferCFT/axwayvariablesComponentShortName  >}} access management. PassPort AM provides:
 
 - Identity and access
-    control for {{< TransferCFT/axwayvariablesCompanyName >}} products
+    control for {{< TransferCFT/axwayvariablesCompanyName  >}} products
 - Authentication
     via a user/password login
 - Authorization enabling
-    user access to {{< TransferCFT/axwayvariablesCompanyName >}} products resources
+    user access to {{< TransferCFT/axwayvariablesCompanyName  >}} products resources
 - Role-based access
     that defines privileges for users
 
@@ -37,7 +38,7 @@ parameters described in [Configuring PassPort AM](configure_passport_am). You ca
 - CFTUTIL: CFTUTIL
     UCONFSET id=, value=
 - Transfer CFT user interface:
-    the [Unified Configuration](../../admin_intro/uconf/uconf_interface_actions) window
+    the [Unified Configuration](../../admin_intro/uconf/uconf_userinterface) window
 
 <span id="CSD file"></span>
 

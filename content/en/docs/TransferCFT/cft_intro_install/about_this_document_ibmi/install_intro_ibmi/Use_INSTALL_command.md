@@ -8,13 +8,13 @@
 - Transfer CFT files to production library
 - Transfer CFT IFS files to IFS directory
 
-After uploading the Transfer CFT IBM i CFT33XL file to the target location, in the Transfer CFT profile you must add the CFTTMP library to the library list. In command line execute:
+After uploading the Transfer CFT IBM i CFT33XL file to the target location, in the Transfer CFT profile you must add the CFTTMP library to the library list. In command line, execute:
 
 `ADDLIBLE LIB(CFTTMP) POSITION(*FIRST)      `
 
 > **Note**
 >
-> The Transfer CFT program library and Transfer CFT production library are created if they do not exist prior to performing this procedure.
+> Note: The Transfer CFT program library and Transfer CFT production library are created if they do not exist prior to performing this procedure.
 
 During the installation you are prompted to configure your installation, for example:
 
@@ -41,7 +41,7 @@ You can also enable:
 - Sentinel
 - SSL
 
-And lastly, you can configure:
+Lastly, you can configure:
 
 - AM type
 - PKI type
@@ -50,13 +50,14 @@ And lastly, you can configure:
 - PeSITany port
 - PeSITssl port
 
-## Executing the INSTALL command 
+Executing the INSTALL command 
+------------------------------
 
-Enter the INSTALL command and press <span class="span_16">PF4</span> to display the Transfer CFT IBM i installation screen.
+Enter the INSTALL command and press PF4 to display the Transfer CFT IBM i installation screen.
 
 > **Note**
 >
-> Pressing ENTER at this stage performs an install using the default values. You can override any default value, as needed.
+> Note: Pressing ENTER at this stage performs an install using the default values. You can override any default value, as needed.
 
 ```
 INSTALL CFT (INSTALL)
@@ -66,8 +67,8 @@ Install on an independent ASP. . . . . . . '2' 1:Yes / 2:No
 
 > **Note**
 >
-> To perform a silent installation, use the CFT Update menu as shown in Perform\_auto\_installation.htm.
+> Note: To perform a silent installation, use the CFT Update menu as shown in Perform_auto_installation.htm.
 
 > **Note**
 >
-> The encryption password to enter for an installation contains special characters. To avoid an issue during installation, please ensure that the encoding of your terminal/keyboard is configured with CCSID 37.
+> Note: The encryption password to enter for an installation contains special characters. To avoid an issue during installation, please ensure that the encoding of your terminal/keyboard is configured with CCSID 37.

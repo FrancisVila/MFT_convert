@@ -1,7 +1,7 @@
 {
     "title": "Sending  messages ",
     "linkTitle": "Sending messages",
-    "weight": "240"
+    "weight": "230"
 }This topic describes the concepts related to sending messages using
 PeSIT and Transfer CFT profiles.
 
@@ -50,7 +50,8 @@ This command sends a negative acknowledgement .
 
 <span id="Examples"></span>
 
-## Examples
+Examples
+--------
 
 #### Example 1
 
@@ -72,7 +73,8 @@ variable &IDT:
 
 <span id="Monitoring_PeSIT_transfer_requests"></span>
 
-## Monitoring PeSIT transfer requests
+Monitoring PeSIT transfer requests
+----------------------------------
 
 Each protocol command or response corresponds to a protocol trace message
 that you can record in the log file. The protocol trace is an optional

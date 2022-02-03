@@ -1,7 +1,7 @@
 {
     "title": "Transfer CFT messages: CFTY",
     "linkTitle": "CFTY messages",
-    "weight": "410"
+    "weight": "400"
 }This topic lists the CFTYxx (CFT xnnx) messages and provides the type, a description, consequence, and corrective actions when applicable.
 
 **Message format**
@@ -12,9 +12,9 @@ Earlier versions of Transfer CFT used a different message format than version 3.
 
 **Example**
 
-CFTLOG FORMAT=\[V23,V24\]
+CFTLOG FORMAT=[V23,V24]
 
-For V23: <span class="code">`CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`</span>
+For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
@@ -177,7 +177,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTY18E"></span>CFTY18E CTX=&amp;ctx &amp;str<br/> CFTY18E CTX=&amp;ctx &amp;str |
 | --- | --- |
-| Explanation | Internal error on calling up the internal PKI. The "&amp;str" field can have the following values:<br/> • PKI_NOT_TREATED : PKI function not treated<br/> • PKI_ERR_CERT_BAD : Incorrect certificate (format error)<br/> • PKI_ERR_CERT_UNSUPPORTED : Certificate not supported<br/> • PKI_ERR_CERT_REVOKED : Certificate revoked<br/> • PKI_ERR_CERT_EXPIRED : Certificate expired<br/> • PKI_ERR_CERT_UNKNOWN : Certificate unknown<br/> • PKI_ERR_CERT_NOT_VALID : Certificate not valid<br/> • PKI_ERR_CERT_BAD_SIGN : Integrity error (incorrect signature)<br/> • PKI_ERR_CERT_BAD_HASH : Integrity error (hash code incorrect)<br/> • PKI_ERR_CERT_BAD_CA :Certification organism certificate invalid<br/> • PKI_ERR_CERT_ALGO_UNSUPPORTED : Unsupported ciphering algorithm<br/> • PKI_ERR_CERT_NOT_FOUND : User certificate not found<br/> • PKI_ERR_CA_NOT_FOUND : Certification organism certificate not found<br/> • PKI_ERR_BAD_KEY : Invalid ciphering key<br/> • PKI_ERR_BUF_TOO_SHORT : Memory buffer size too small<br/> • PKI_ERR_SYS : Internal error linked to the system (memory allotment, system function, and so on)<br/> • PKI_ERR_PARM : Ciphering parameter invalid<br/> • PKI_ERR_OTHERS : Other error (authentication, ciphering, integrity, and so on) |
+| Explanation | Internal error on calling up the internal PKI. The &quot;&amp;str&quot; field can have the following values:<br/> • PKI_NOT_TREATED : PKI function not treated<br/> • PKI_ERR_CERT_BAD : Incorrect certificate (format error)<br/> • PKI_ERR_CERT_UNSUPPORTED : Certificate not supported<br/> • PKI_ERR_CERT_REVOKED : Certificate revoked<br/> • PKI_ERR_CERT_EXPIRED : Certificate expired<br/> • PKI_ERR_CERT_UNKNOWN : Certificate unknown<br/> • PKI_ERR_CERT_NOT_VALID : Certificate not valid<br/> • PKI_ERR_CERT_BAD_SIGN : Integrity error (incorrect signature)<br/> • PKI_ERR_CERT_BAD_HASH : Integrity error (hash code incorrect)<br/> • PKI_ERR_CERT_BAD_CA :Certification organism certificate invalid<br/> • PKI_ERR_CERT_ALGO_UNSUPPORTED : Unsupported ciphering algorithm<br/> • PKI_ERR_CERT_NOT_FOUND : User certificate not found<br/> • PKI_ERR_CA_NOT_FOUND : Certification organism certificate not found<br/> • PKI_ERR_BAD_KEY : Invalid ciphering key<br/> • PKI_ERR_BUF_TOO_SHORT : Memory buffer size too small<br/> • PKI_ERR_SYS : Internal error linked to the system (memory allotment, system function, and so on)<br/> • PKI_ERR_PARM : Ciphering parameter invalid<br/> • PKI_ERR_OTHERS : Other error (authentication, ciphering, integrity, and so on) |
 | Consequence | The transfer is aborted. |
 | Action | Contact the product support team if necessary. |
 
@@ -321,5 +321,3 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | --- | --- |
 | Explanation  | Established a new SFTP server session. &amp;version is the SFTP version negotiated with the partner (&gt;= 3).<br/> • &amp;Authentication is Password, System, PassPortAM, Key or XFBADM.<br/> • &amp;client indicates if you are connected to a Transfer CFT client. |
 
-
- 

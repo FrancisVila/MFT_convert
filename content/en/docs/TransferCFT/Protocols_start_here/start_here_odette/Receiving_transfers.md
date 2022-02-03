@@ -1,7 +1,7 @@
 {
     "title": "Receiving OFTP transfers",
     "linkTitle": "Receiving transfers",
-    "weight": "200"
+    "weight": "190"
 }After you configure the OFTP (ODETTE) environment, as described in [Configuring
 OFTP](../configuring_odette), you must define the transfer environment in the RECV
 object to receive a request.
@@ -22,7 +22,8 @@ request. This topic is broken down into the following sections:
 
 <span id="About_CFTRECV"></span>
 
-## About CFTRECV
+About CFTRECV
+-------------
 
 Regardless of the protocol format conveyed, data code information is
 not sent. In reception mode, the Transfer CFT monitor considers that the
@@ -58,11 +59,11 @@ the file and sets the:
 - NRECFM to V
 - NLRECL to 2048
 
-Each record is delimited by the characters &lt;CR> and &lt;LF>.
-The size of the records is 2048 bytes, &lt;CR> and &lt;LF> not included.
+Each record is delimited by the characters &lt;CR&gt; and &lt;LF&gt;.
+The size of the records is 2048 bytes, &lt;CR&gt; and &lt;LF&gt; not included.
 If a record is longer than 2048 , the monitor interrupts the transfer
 with the diagnostic codes: DIAGI=230,
-DIAGP=LDT\_TXT.
+DIAGP=LDT_TXT.
 
 If the receiver file type is not defined, {{< TransferCFT/axwayvariablesComponentShortName  >}} assigns the value
 contained in the table below, according to the receiving system.
@@ -73,6 +74,7 @@ contained in the table below, according to the receiving system.
 | z/OS (MVS) | ‘ ’  |
 | IBM i (OS400) | E  |
 | UNIX  | T  |
+| OpenVMS (VMS)  | F  |
 
 
 If the FRECFM and FLRECL parameters are not defined or imposed , data
@@ -81,10 +83,10 @@ length of 2048 bytes.
 
 > **Note**
 >
-> To avoid protocol-related
+> Note: To avoid protocol-related
 > problems, a Transfer CFT user subscribing to Atlas400 must request the
-> &lt;CR>/&lt;LF> insert option from their Transpac sales branch.
-> When the &lt;CR>/&lt;LF> delimiter is missing, a delimiter must
+> &lt;CR&gt;/&lt;LF&gt; insert option from their Transpac sales branch.
+> When the &lt;CR&gt;/&lt;LF&gt; delimiter is missing, a delimiter must
 > be inserted every 2046 characters by the OFTP gateway.
 
 <span id="Defining_the_receiving_file_format"></span>
@@ -102,7 +104,7 @@ the:
 - value received
     if NRECMF = F or V
 - negotiated
-    value of the network message size &lt;Rusize> if NRECFM = U
+    value of the network message size &lt;Rusize&gt; if NRECFM = U
 
 You must specify the FCODE and FTYPE.
 
@@ -114,10 +116,10 @@ If the FRECFM and FLRECL parameters are not defined or imposed by type
 For a file in undefined format, if the FLRECL parameter is set to:
 
 - a value greater
-    than the negotiated value of the network message size &lt;Rusize>,
+    than the negotiated value of the network message size &lt;Rusize&gt;,
     the maximum effective length of the records managed by the monitor equals
-    the value &lt;Rusize>
-- the &lt;Rusize>
+    the value &lt;Rusize&gt;
+- the &lt;Rusize&gt;
     or less, the maximum effective length of the records will be the one specified
 
 In all cases, the integrity of the undefined format file is kept: no
@@ -159,7 +161,7 @@ the following tasks:
     parameter is executed
 - A new catalog entry
     is created, indicating that there are no more files to be received. This
-    entry is set to the H state with a diagnostic DIAGP=NO\_FILE.
+    entry is set to the H state with a diagnostic DIAGP=NO_FILE.
 
 For each file being transferred, received, the value of the file identifier,
 the IDF, is imposed by the sending partner and will be the value of the
@@ -185,7 +187,7 @@ Note:
     error during the data transfer phase and retrying is forbidden, the transfer
     (requester mode) is restarted from the beginning of the file
 
-********<span class="autonumber"></span>Example of receiving all the pending
+********Example of receiving all the pending
 files********
 
 ![Site A receives all pending files from Site B](/Images/TransferCFT/Image1689.gif)

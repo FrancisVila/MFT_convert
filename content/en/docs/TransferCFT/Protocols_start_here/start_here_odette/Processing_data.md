@@ -1,7 +1,7 @@
 {
     "title": "Processing  data",
     "linkTitle": "Processing data",
-    "weight": "180"
+    "weight": "170"
 }This topic describes compression functions in Transfer CFT when using
 the OFTP (ODETTE) protocol.
 
@@ -16,7 +16,8 @@ the OFTP (ODETTE) protocol.
 
 <span id="Negotiating_compression"></span>
 
-## Negotiating compression
+Negotiating compression
+-----------------------
 
 The COMPRESSION option is negotiated during the connection phase, on
 sending the Start File Session IDentification
@@ -24,7 +25,7 @@ FPDU.
 
 > **Note**
 >
-> The SCOMP and RCOMP parameters of CFTPROT are used as a basis for
+> Note: The SCOMP and RCOMP parameters of CFTPROT are used as a basis for
 > this compression option negotiation.
 
 This only involves a COMPRESSION OPTION. This means that while the partners
@@ -32,7 +33,7 @@ have the possibility of COMPRESSING files, it is not a MANDATORY REQUIREMENT.
 
 This Compression Option is negotiated as indicated in the figure below.
 
-********<span class="autonumber"></span>Compression option negotiation********
+********Compression option negotiation********
 
 ![Compression Option is negotiated between the initiator (Requester) ad the acceptor (Server)](/Images/TransferCFT/Image1692.gif)
 
@@ -54,7 +55,7 @@ in the general data formatting diagram.
 SENDING files
 
 At the end of each record, Transfer CFT sends the 2 control characters
-&lt;CR> &lt;LF> (0x0D, 0x0A), so as to comply with the ODETTE format
+&lt;CR&gt; &lt;LF&gt; (0x0D, 0x0A), so as to comply with the ODETTE format
 for ‘T’ type files.
 
 RECEIVING files
@@ -64,13 +65,13 @@ If it does, Transfer CFT deletes these characters.
 
 #### Structure of the Data Exchanged
 
-********<span class="autonumber"></span>Structure of the data exchange buffer********
+********Structure of the data exchange buffer********
 
 ![View of structure including the initial Byte, header, and sub-record](/Images/TransferCFT/Image1693.gif)
 
  
 
-********<span class="autonumber"></span>HEADER structure********
+********HEADER structure********
 
 ![Header structure defining bits 0 through 7, which is the last bit of the record](/Images/TransferCFT/Image1694.gif)
 
@@ -86,16 +87,17 @@ longer indicate the sub-record size, as shown in the above diagram, but
 the number of times a single byte is repeated; the byte in question immediately
 follows the HEADER.
 
-********<span class="autonumber"></span>SUBRECORD example********
+********SUBRECORD example********
 
 ![](/Images/TransferCFT/Image1755.gif)
 
-The character ‘44’ (&lt;=> ‘D’ character) is repeated 13 times in
+The character ‘44’ (&lt;=&gt; ‘D’ character) is repeated 13 times in
 succession in the record.
 
 <span id="Change_Direction"></span>
 
-## Change direction
+Change direction
+----------------
 
 The Change direction,
 CD, concept is specific to the OFTP (ODETTE) protocol. CD can be thought
@@ -140,7 +142,7 @@ The Change Direction is sent in THREE specific CASES:
     -   The sender sends the CD to its partner
     -   The transfer direction does not permit this  
     -   The session is interrupted
-    -   All transfer requests are ignored until the next F\_CONNECT\_RQ
+    -   All transfer requests are ignored until the next F_CONNECT_RQ
 
 <!-- -->
 
@@ -152,7 +154,8 @@ The Change Direction is sent in THREE specific CASES:
 
 <span id="End_to_end_messages"></span>
 
-## End-to-end messages
+End-to-end messages
+-------------------
 
 <span id="Sending_an_end_to_end_message"></span>
 
@@ -190,7 +193,7 @@ EERP parameter value:
 
 > **Note**
 >
-> Check the consistency of the end-to-end parameter value settings.
+> Note: Check the consistency of the end-to-end parameter value settings.
 > If a sender has a different version from a receiver, it will not be possible
 > to acknowledge the transfer.
 
@@ -202,7 +205,7 @@ of the SENS transfer parameter (SRIN/SROUT).
 The sending of the EERP is activated by passing a Transfer CFT MESSAGE
 send command. However, the message passed is of a particular type in that
 it is a REPLY type message. See also [Sending
-replies.](../../../concepts/using_the_send_command/sending_replies)
+replies.](../../../concepts/send_command/send_replies)
 
 EERP TRANSMISSION example:
 
@@ -230,7 +233,8 @@ received EERP is not processed.
 
 <span id="Online_Translation"></span>
 
-## Online translation
+Online translation
+------------------
 
 For transmission, the online translation
 mechanism depends on the values of the FCODE and NCODE parameters of the

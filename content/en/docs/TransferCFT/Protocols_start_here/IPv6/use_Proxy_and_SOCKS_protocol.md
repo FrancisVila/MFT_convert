@@ -1,7 +1,7 @@
 {
     "title": "Use  a proxy with SOCKS protocol",
     "linkTitle": "Proxy and SOCKS (CFTNET)",
-    "weight": "170"
+    "weight": "160"
 }A proxy is a program
 that acts as an intermediary between a client and server. It is often
 used to interconnect two networks via a single point.
@@ -24,7 +24,8 @@ This topic describes how to use a proxy and SOCKS, and includes:
 
 <span id="SOCKS"></span>
 
-## SOCKS protocol architecture
+SOCKS protocol architecture
+---------------------------
 
 {{< TransferCFT/axwayvariablesComponentShortName  >}} supports versions 4 and 5 of the SOCKS protocol. A brief
 explanation of the SOCKS protocol is provided in this topic.
@@ -63,7 +64,8 @@ When using SOCKS5, the exchange between client and server consists of:
 
 <span id="Application_in_CFT"></span>
 
-## Using a proxy in {{< TransferCFT/axwayvariablesComponentShortName  >}}
+Using a proxy in {{< TransferCFT/axwayvariablesComponentShortName  >}}
+---------------------------------------------------------------------------
 
 The CFTNET command for a proxy is static. To apply modifications, Transfer
 CFT must be shutdown, the new parameters interpreted (CFTUTIL) and Transfer
@@ -75,7 +77,7 @@ protocol).
 
 > **Note**
 >
-> Transfer CFT only accepts outgoing calls.
+> Note: Transfer CFT only accepts outgoing calls.
 
 The protocols (CFTPROT) and the networks (CFTNET)
 must be declared in the CFTPARM command to be applied by Transfer CFT.
@@ -100,7 +102,7 @@ partner.
 
 - 92 and 93
     for SOCKS4
-- Error code != 5 and > 0 for SOCKS5
+- Error code != 5 and &gt; 0 for SOCKS5
 
 Transfer CFT puts the transfer on hold (K status). The operator must manually restart (START command) the transfer.
 
@@ -112,13 +114,13 @@ The following tables lists common parameters for either SOCKS 4 or SOCKS 5. The 
 | Parameters  | Value  | Description  |
 | --- | --- | --- |
 | **ID** | STRING max_length=32  | Network resource identifier. |
-| CALL | STRING max_length=0  | Call direction possible through this network resource. ('<u>INOUT</u>','OUT','IN') |
+| CALL | STRING max_length=0  | Call direction possible through this network resource. ('<span >INOUT</span>','OUT','IN') |
 | CLASS | Number &lt;1&gt; min=0 max=64  | Logical class for the physical link. |
 | MAXCNX  | Number &lt;32&gt; min=1 max=2000  | Maximum number of simultaneous connections that Transfer CFT accepts to establish on this network resource. |
 | TYPE  | TCP  | Defines the type of network resource. |
 | BUFLEN  | Number &lt;0&gt; min=32 max=32766  | Size of buffers.  |
 | COMMENT  | STRING max_length=80  | Free comment.  |
-| ORIGIN  | STRING max_length=0  | Values include 'CFTUTIL','<u>C</u>','DESIGNER','D','COPILOT','O'.  |
+| ORIGIN  | STRING max_length=0  | Values include 'CFTUTIL','<span >C</span>','DESIGNER','D','COPILOT','O'.  |
 | **INET**  | STRING max_length=32  | Identifier of the CFTNET command defining access to the first network  |
 | **HOST**  | String max_length=64  | Resource address  |
 | **PORT**  | Number &lt;0&gt; min=1 max=65535  | Listening port of the proxy/proxies in the first network  |
@@ -184,7 +186,8 @@ CLASS = '2',
 
 <span id="Setting"></span>
 
-## Setting up a proxy for Copilot
+Setting up a proxy for Copilot
+------------------------------
 
 The proxy implementation for {{< TransferCFT/axwayvariablesComponentShortName  >}} Copilot is handled directly by the Java Socket class, and uses either the SOCKS V4 or V5 protocol. Note that the HTTP proxy that is used to connect to the Transfer CFT Copilot server for downloading is different from the one used for SOCKS 4 data exchange between Copilot client and server. Therefore, you require 2 proxies:
 
@@ -197,7 +200,7 @@ The step is only required for your first log in through a proxy. Copilot retains
 
 To remove proxy and revert to the standard log in, simply remove the proxy address and port settings in the connection dialog box.
 
-********<span class="autonumber"></span>Connect to a product dialog box********
+********Connect to a product dialog box********
 
 ![Copilot Connect to a product login screen ](/Images/TransferCFT/copilot_connection_box.png)
 

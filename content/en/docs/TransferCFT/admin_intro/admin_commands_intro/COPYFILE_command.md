@@ -26,41 +26,41 @@ sent by Transfer CFT and a file to be decompressed after being received.
 
 `OFNAME   = filename `
 
-`[ CREATE   = { ‘   ‘ | YES | NO } ]`
+`[ CREATE   = { ‘   ‘ &#124; YES &#124; NO } ]`
 
-`[ IBLKSIZE   = { 0   | n } ]`
+`[ IBLKSIZE   = { 0   &#124; n } ]`
 
 `[ ICHARSET = string  ]`
 
-`[ ICODE   = { ASCII | EBCDIC } ]`
+`[ ICODE   = { ASCII &#124; EBCDIC } ]`
 
-`[ ICOMP   = { 0   | 15 } ]`
+`[ ICOMP   = { 0   &#124; 15 } ]`
 
-`[ ICT   =  { H   | C } ]`
+`[ ICT   =  { H   &#124; C } ]`
 
-`[ ILRECL   = { 0   | n } ]`
+`[ ILRECL   = { 0   &#124; n } ]`
 
-`[ IRECFM   = { F | V | U } ]`
+`[ IRECFM   = { F &#124; V &#124; U } ]`
 
-`[ ITYPE   = { ‘ ‘ | character } ]`
+`[ ITYPE   = { ‘ ‘ &#124; character } ]`
 
-`[ OBLKSIZE   = { 0 |n  }   ]`
+`[ OBLKSIZE   = { 0 &#124;n  }   ]`
 
 `[ OCHARSET = string  ]`
 
-`[ OCODE   = { ASCII | EBCDIC } ]`
+`[ OCODE   = { ASCII &#124; EBCDIC } ]`
 
-`[ OCOMP   = { 0   | 15 } ]`
+`[ OCOMP   = { 0   &#124; 15 } ]`
 
-`[ OCT   = { H | C } ]`
+`[ OCT   = { H &#124; C } ]`
 
-`[ OLRECL   = { 0   |n } ]`
+`[ OLRECL   = { 0   &#124;n } ]`
 
-`[ ORECFM   = { IRECFM   value | F | V| U } ]`
+`[ ORECFM   = { IRECFM   value &#124; F &#124; V&#124; U } ]`
 
-`[ OSPACE   = { 0   | n } ]`
+`[ OSPACE   = { 0   &#124; n } ]`
 
-`[ OTYPE   = { ‘   ‘ | character } ]`
+`[ OTYPE   = { ‘   ‘ &#124; character } ]`
 
 `[ XLATE = string ]`
 
@@ -116,7 +116,8 @@ in the following table.
 
 <span id="Statistics"></span>
 
-## Statistics
+Statistics
+----------
 
 The utility prints out execution statistics.
 
@@ -142,5 +143,5 @@ The following table indicates the heading contents.
 | 12b  | Expansion rate performed when copying the file  |
 
 
-\(1\) (2): Headings 6 and 6b are mutually
+(1) (2): Headings 6 and 6b are mutually
 exclusive. If heading 6b is displayed, heading 6 is not and vice versa.

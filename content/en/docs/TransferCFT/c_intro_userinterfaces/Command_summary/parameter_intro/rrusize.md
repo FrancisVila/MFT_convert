@@ -1,14 +1,14 @@
 {
     "title": "rrusize",
     "linkTitle": "rrusize",
-    "weight": "2990"
+    "weight": "3010"
 }<span id="rrusize"></span>
 
 ### {{< TransferCFT/SystemTitle  >}}
 
 #### CFTPROT
 
-**\[RRUSIZE = { <u>32750</u> | n} \]    **
+**[RRUSIZE = { <span class="underline">32750</span> &#124; n} ]    **
 { 254...32750 }
 
 Maximum size of NSDUs (Network Service Data Units) being received.

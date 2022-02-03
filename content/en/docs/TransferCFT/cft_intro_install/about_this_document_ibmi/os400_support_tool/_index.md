@@ -2,7 +2,8 @@
     "title": "Troubleshooting",
     "linkTitle": "Troubleshooting",
     "weight": "210"
-}## Using the support tool
+}Using the support tool
+----------------------
 
 To assist Axway Customer Support, the CFTSUPPORT command collects useful information from a Transfer CFT environment including the configuration, Unified Configuration parameters (UCONF), catalog information, log files, and so on. This information is then packaged and stored in a tar file in the specified IFS folder.
 
@@ -36,13 +37,14 @@ Collected information for the Transfer CFT {{< TransferCFT/PrimaryForOS400  >}} 
 | WRKACTJOB  | List system activity  |
 
 
-## Using the CFTSUPPORT command
+Using the CFTSUPPORT command
+----------------------------
 
 The CFTSUPPORT command executes the CFTSUPPORT program, which retrieves information about the Transfer CFT and stores it in a tar file.
 
 > **Note**
 >
-> CFTSUPPORT is currently not supported with an independent ASP (IASP).
+> Note: CFTSUPPORT is currently not supported with an independent ASP (IASP).
 
 You can use Transfer CFT IBM i command line to execute the command:
 
@@ -51,13 +53,13 @@ You can use Transfer CFT IBM i command line to execute the command:
 
 > **Note**
 >
-> Alternatively, from the CFT menu select 3. Administration commands then 2. Submit CFT support request.
+> Note: Alternatively, from the CFT menu select 3. Administration commands then 2. Submit CFT support request.
 
 If the generated CFTSUPPORT.tar is too large, you can compress it prior to sending it to Axway support.
 
 **Example**
 
-In the following example, the command creates the CFTSUPPORT.tar and SAVFOUTQ.bin files in <span class="code">`/home/cft/cftsupport/`</span>.
+In the following example, the command creates the CFTSUPPORT.tar and SAVFOUTQ.bin files in `/home/cft/cftsupport/`.
 
 ```
 CFTSUPPORT IFSPATH('/home/cft/cftsupport')

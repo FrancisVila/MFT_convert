@@ -1,7 +1,7 @@
 {
     "title": "Defining CFTSEND in PeSIT ",
     "linkTitle": "Defining CFTSEND in PeSIT",
-    "weight": "200"
+    "weight": "190"
 }The CFTSEND object contains the parameters controlling the access to
 the data to be sent and the execution of the send process.
 
@@ -56,7 +56,7 @@ in the command are different from those sent by the receiver partner.
 
 > **Note**
 >
-> If the requester/receiver does
+> Note: If the requester/receiver does
 > not set any parameters, it uses the corresponding value sent by the server/sender.
 
 If the partner is a server/receiver,
@@ -153,7 +153,7 @@ from a protocol standpoint to the remote partner. Given that PeSIT only
 recognizes three priority levels, the value sent to the partner will be
 converted as follows:
 
-- PRI > 128: high
+- PRI &gt; 128: high
     priority
 - PRI = 128: average
     priority

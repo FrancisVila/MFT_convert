@@ -1,14 +1,14 @@
 {
     "title": "host",
     "linkTitle": "host",
-    "weight": "1470"
+    "weight": "1460"
 }<span id="host"></span>
 
 ### host
 
 #### CFTNET, TYPE = TCP
 
-****\[HOST = string64\]****
+****[HOST = string64]****
 
 Networking IP address of the local resource. If you are defining a proxy, you may only enter one proxy host/port per CFTNET object.
 
@@ -24,21 +24,21 @@ numerical format) or a host name.
 
 > **Note**
 >
-> The host field can specify IPv4 or IPv6:
+> Note: The host field can specify IPv4 or IPv6:
 
 > `CFTNET TYPE = TCP`
 
-> `HOST = { string | INADDR_ANY | IN6ADDR_ANY | IN4ADDR_ANY }`
+> `HOST = { string &#124; INADDR_ANY &#124; IN6ADDR_ANY &#124; IN4ADDR_ANY }`
 
 #### CFTCOM, TYPE = TCPIP
 
-****\[HOST = string64\]****
+****[HOST = string64]****
 
 Networking IP address of the local resource.
 
 #### CFTTCP, TYPE = TCP
 
-****\[HOST = string512\]****
+****[HOST = string512]****
 
 Networking IP address for the local resource.
 

@@ -6,7 +6,8 @@
 
 Another system can be used as an intermediate partner, in which it must process the SAVF file as a sequential file with a fixed format and a length of 528 (bytes).
 
-## Implementing SAVF file support
+Implementing SAVF file support
+------------------------------
 
 The value Z for the CFTSEND / CFTRECV command FTYPE parameter designates SAVF files. It is mandatory in receive mode (CFTRECV) and optional in send mode (CFTSEND).
 
@@ -16,7 +17,8 @@ The configuration of the other properties (FORG, FRECFM, FLRECL and so on) is ig
 
 The SAVF file access method, implemented in Transfer CFT {{< TransferCFT/PrimaryForOS400  >}}, does not support synchronization points in write mode. This mechanism is however supported in read mode. Consequently, a SAVF file transfer with a receiver {{< TransferCFT/PrimaryForOS400  >}} system will fail during a restart (abort on the receiver side). If the file is sent to a non-{{< TransferCFT/PrimaryForOS400  >}} (intermediate) system, resynchronization (restart points) can be performed in read mode with the sender Transfer CFT {{< TransferCFT/PrimaryForOS400  >}}.
 
-## Using spool files
+Using spool files
+-----------------
 
 In addition to the possibilities available in the SNDCFTSPLF interactive command (see OS-Integrated Commands), spool files can be used in batch mode or in the Transfer CFT configuration.
 

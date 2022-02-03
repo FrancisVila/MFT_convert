@@ -1,7 +1,7 @@
 {
     "title": "Upgrade ",
     "linkTitle": "Upgrade",
-    "weight": "220"
+    "weight": "230"
 }This section describes how to upgrade to {{< TransferCFT/axwayvariablesReleaseNumber  >}} and higher (from versions 3.1.3, 3.2.x, 3.3.x, 3.4, 3.5).
 
 Transfer CFT delivers procedures that can help you upgrade instances. The following sections describe how to:
@@ -11,13 +11,14 @@ Transfer CFT delivers procedures that can help you upgrade instances. The follow
 1. <a href="#Restore" class="MCXref xref">Restore the master copy</a>
 1. <a href="#Copy" class="MCXref xref">Copy the JCLs to upgrade</a>
 1. <a href="#Upgrade" class="MCXref xref">Upgrade the target instance (product environment)</a>
-1. <a href="#Migrate" class="MCXref xref">Upgrade</a>
+1. <a href="#Customiz" class="MCXref xref">Customize the step PMIGR2 JCL MIGRCAT</a>
 
-********<span class="autonumber"></span>Upgrade schema********
+********Upgrade schema********
 
 ![](/Images/TransferCFT/temp_zos_upgrade.png)
 
-## Prerequisites
+Prerequisites
+-------------
 
 Transfer CFT requires the following z/OS version depending on the JES component used:
 
@@ -26,7 +27,8 @@ Transfer CFT requires the following z/OS version depending on the JES componen
 
 <span id="Create"></span>
 
-## Create a master copy
+Create a master copy
+--------------------
 
 A master copy is the product version that you want to use as an upgrade, and can be either a basic Transfer CFT installation, or a specific patch or service pack.
 
@@ -47,7 +49,8 @@ Creates an XMIT file.
 
 <span id="Distribu"></span>
 
-## Distribute the master copy
+Distribute the master copy
+--------------------------
 
 To remotely create an UPLIB library:
 
@@ -71,7 +74,8 @@ Customize variables before submitting the JCL.
 
 <span id="Restore"></span>
 
-## Restore the master copy
+Restore the master copy
+-----------------------
 
 To create an instance:
 
@@ -83,7 +87,8 @@ To create an instance:
 
 <span id="Copy"></span>
 
-## Copy the JCLs to upgrade
+Copy the JCLs to upgrade
+------------------------
 
 Copy the following JCLs from the new instance to the target instance to upgrade:
 
@@ -93,7 +98,8 @@ Copy the following JCLs from the new instance to the target instance to upgrade:
 
 <span id="Upgrade"></span>
 
-## Upgrade the target instance (product environment)
+Upgrade the target instance (product environment)
+-------------------------------------------------
 
 1. Customize the UPGR0010 JCL.
     -   Set the job card.
@@ -157,9 +163,10 @@ Copy the following JCLs from the new instance to the target instance to upgrade:
 
 ****Results****
 
-Now the CFTLOAD variable defined in the CFTENV member refers to the new LOAD. If the upgrade process fails, use the UPRS0010 JCL to restore the instance files. Simply set the job card, and submit the JCL.
+The CFTLOAD variable defined in the CFTENV member refers to the new LOAD. If the upgrade process fails, use the UPRS0010 JCL to restore the instance files. Set the job card, and submit the JCL.
 
-## Upgrade the target instance (DATA)
+Upgrade the target instance (DATA)
+----------------------------------
 
 Customize MIGR$SET:
 
@@ -177,20 +184,19 @@ Customize MIGR$SET:
 
 > **Note**
 >
-> The MIGRCAT procedure migrates the catalog files, one catalog file at a time. You must modify and execute this procedure for each node.
+> Note: The MIGRCAT procedure migrates the catalog files, one catalog file at a time. You must modify and execute this procedure for each node.
 
 > **Note**
 >
-> The JCL MIGRUCNF was fixed in 3.6 SP3.
+> Note: The JCL MIGRUCNF was fixed in 3.6 SP3.
+
+<span id="Customiz"></span>
 
 ### Customize the step PMIGR2 JCL MIGRCAT
 
-If the migration process fails, use the UPRS0010 JCL to restore the instance files. Simply set the job card, and submit the JCL.
+If the migration process fails, use the UPRS0010 JCL to restore the instance files. Set the job card, and submit the JCL.
 
-If the option UPCOPIL is set to 'NO', do not forget to set the UCONF variables:
-
-- UCONFSET ID=cft.install\_dir,VALUE='coppath/home'
-- UCONFSET ID=copilot.HTTP.HttpRootDir,VALUE='coppath/runtime/wwwroot'
+If the option UPCOPIL is set to 'NO', you must set the UCONFSET ID=cft.install_dir,VALUE='coppath/home'
 
 Upgrade the STC CFT and Copilot if needed.
 

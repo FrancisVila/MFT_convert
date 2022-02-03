@@ -1,15 +1,15 @@
 {
     "title": "orecfm",
     "linkTitle": "orecfm",
-    "weight": "2480"
+    "weight": "2500"
 }<span id="orecfm"></span>
 
 ### {{< TransferCFT/SystemTitle  >}}
 
 #### COPYILE
 
-****\[ORECFM = {<u>IRECFM value</u> | F |
-V | U}\]****
+****[ORECFM = {<span class="underline">IRECFM value</span> &#124; F &#124;
+V &#124; U}]****
 
 Output record format:
 
@@ -28,7 +28,7 @@ to V.
 
 | OS  | Details  |
 | --- | --- |
-| UNIX | The value "U" is kept for compatibility with previous versions. It has the same meaning as ORECFM=V. |
+| UNIX | The value &quot;U&quot; is kept for compatibility with previous versions. It has the same meaning as ORECFM=V. |
 
 
  

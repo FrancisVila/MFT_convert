@@ -11,7 +11,7 @@ represents the statistical file.
 
 > **Note**
 >
-> At least one of the two files (either the statistical or alternate statistical file) must be empty prior to starting Transfer CFT.
+> Note: At least one of the two files (either the statistical or alternate statistical file) must be empty prior to starting Transfer CFT.
 
 This example automatically executes the switch procedure at noon.
 

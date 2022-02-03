@@ -18,28 +18,29 @@ While Transfer CFT is still started by the user USERMON, in an APF installation 
     -   A receive is performed by the user USERMON
     -   TEST submits the end-of-transfer procedure
 1. USERCTRL=NO USERID=
-    &lt;ul>&lt;li>A receive is performed by the user USERMON&lt;/li>&lt;li>USERMON submits the end-of-transfer procedure&lt;/li>&lt;/ul>&lt;/li>
+    &lt;ul&gt;&lt;li&gt;A receive is performed by the user USERMON&lt;/li&gt;&lt;li&gt;USERMON submits the end-of-transfer procedure&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
 1. USERCTRL=NO USERID=NON RACF USERID (not in RACF database)
-    &lt;ul>&lt;li>A receive is performed by the user USERMON&lt;/li>&lt;li> USERMON submits the end-of-transfer procedure&lt;/li>&lt;/ul>&lt;/li>
+    &lt;ul&gt;&lt;li&gt;A receive is performed by the user USERMON&lt;/li&gt;&lt;li&gt; USERMON submits the end-of-transfer procedure&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
 1. USERCTRL=YES USERID=TEST
-    &lt;ul>&lt;li>A receive is performed by the user TEST&lt;/li>&lt;li> TEST submits the end-of-transfer procedure&lt;/li>&lt;/ul>&lt;/li>
+    &lt;ul&gt;&lt;li&gt;A receive is performed by the user TEST&lt;/li&gt;&lt;li&gt; TEST submits the end-of-transfer procedure&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
 1. USERCTRL=YES USERID=
-    &lt;ul>&lt;li>A receive is performed by the user USERMON&lt;/li>&lt;li>USERMON submits the end-of-transfer procedure&lt;/li>&lt;/ul>&lt;/li>
+    &lt;ul&gt;&lt;li&gt;A receive is performed by the user USERMON&lt;/li&gt;&lt;li&gt;USERMON submits the end-of-transfer procedure&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
 1. USERCTRL=YES USERID=NON RACF USERID (not in RACF database)
     -   Receive is not performed
     -   End-of transfer procedure not submitted
 
-## Release a resource for receive transfers
+Release a resource for receive transfers
+----------------------------------------
 
-You do not usually need to switch users to perform a resource release. To activate a switch during FREE, set the ..UPARM(CNFENV) FREE\_AS\_USER variable to 1.
+You do not usually need to switch users to perform a resource release. To activate a switch during FREE, set the ..UPARM(CNFENV) FREE_AS_USER variable to 1.
 
 #### Sender side
 
 1. USERCTRL=NO USERID=TEST
-    &lt;ul>&lt;li>A send is performed by the user USERMON&lt;/li>&lt;li>TEST submits the end-of-transfer procedure&lt;/li>&lt;/ul> &lt;!\[CDATA\[ \]\]&gt;&lt;/li>
+    &lt;ul&gt;&lt;li&gt;A send is performed by the user USERMON&lt;/li&gt;&lt;li&gt;TEST submits the end-of-transfer procedure&lt;/li&gt;&lt;/ul&gt; &lt;![CDATA[ ]]&gt;&lt;/li&gt;
 1. USERCTRL=YES USERID=TEST
-    &lt;ul>&lt;li>A send is performed by the user TEST&lt;/li>&lt;li>The transfer procedure is submitted by TEST&lt;/li>&lt;/ul>&lt;/li>
+    &lt;ul&gt;&lt;li&gt;A send is performed by the user TEST&lt;/li&gt;&lt;li&gt;The transfer procedure is submitted by TEST&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
 
 > **Note**
 >
-> Setting the UCONF cft.server.exec\_as\_user variable to ‘NO’ also directly effects the transfer procedure.
+> Note: Setting the UCONF cft.server.exec_as_user variable to ‘NO’ also directly effects the transfer procedure.

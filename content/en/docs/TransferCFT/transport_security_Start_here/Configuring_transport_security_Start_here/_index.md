@@ -1,7 +1,7 @@
 {
     "title": "Configuring  transport security: Start here",
     "linkTitle": "Configuring transport security",
-    "weight": "160"
+    "weight": "150"
 }This section describes how to configure Transfer CFT objects transport
 security configuration. The following topics describe the objects that
 are involved in the Transfer CFT transport security configuration. The
@@ -34,7 +34,8 @@ in this topic:
 
 <span id="About_Transport_Security"></span>
 
-## About transport security
+About transport security
+------------------------
 
 Transport security implementation is a Transfer CFT option that is protected
 by the software key.
@@ -67,7 +68,7 @@ table:
 | --- | --- | --- | --- | --- |
 | 49199 **  | 1  | ECDHE + RSA authentication  | AES-128 GCM  | SHA-256  |
 | 49200 **  | 2  | ECDHE + RSA authentication  | AES-256 GCM  | SHA-384  |
-| 49191 **  | 3  | ECDHE + RSA authentication | AES-128  | SHA-256  |
+| 49191 **  | 3  | <br/> ECDHE + RSA authentication | AES-128  | SHA-256  |
 | 49192**  | 4  | ECDHE + RSA authentication  | AES-256  | SHA-384  |
 | 156 **  | 5  | RSA authentication  | AES 128 GCM  | SHA-256  |
 | 157 **  | 6  | RSA authentication  | AES 256 GCM  | SHA-384  |
@@ -85,11 +86,11 @@ table:
 
 > **Note**
 >
-> \* To comply with security standards, as of Transfer CFT version 3.2.0 the use of the cipher suites 59, 60, and 61 is restricted to TLS 1.2 exclusively. This means that you cannot negotiate a session with another partner (monitor) that is using a TLS version lower than 1.2 with these cipher suites.
+> Note: \* To comply with security standards, as of Transfer CFT version 3.2.0 the use of the cipher suites 59, 60, and 61 is restricted to TLS 1.2 exclusively. This means that you cannot negotiate a session with another partner (monitor) that is using a TLS version lower than 1.2 with these cipher suites.
 
 > **Note**
 >
-> \*\* These cipher suites are only available for Transfer CFT 3.2.2 and higher and are restricted to use with TLS 1.2.
+> Note: \*\* These cipher suites are only available for Transfer CFT 3.2.2 and higher and are restricted to use with TLS 1.2.
 
 Transfer CFT only processes X.509 certificates with an RSA signature.
 Authentication can be one-way or mutual. It is one-way if only the server,
@@ -157,12 +158,12 @@ The certificate import command accepts the following formats:
 - PKCS, Public
     Key Cryptographic
     Standards:
-- PKCS #7 Cryptographic
+- PKCS \#7 Cryptographic
     Message Syntax Standard used for encrypting the data
-- PKCS#12 Personal
+- PKCS\#12 Personal
     Information Exchange Syntax Standard used for storing and transporting
     private keys, certificates, and so on
-- PKCS#8 used
+- PKCS\#8 used
     for storing the private keys, encrypted or decrypted
 
 Transfer CFT then accesses
@@ -181,4 +182,4 @@ this operating mode, a PKI does not need to be implemented.
 
 ### Using delivered SSL templates
 
-Transfer CFT no longer delivers certificates and private key samples in the product packaging. However Transfer CFT does provide a template, which you can update and use as described in the delivered samples (<span class="code">`$CFTDIRRUNTIME\conf`</span>). The file cft-pki.conf describes how to insert a certificate in the local database in the various formats. The file cft-tcp.conf contains general configuration, and commented SSL profiles.
+Transfer CFT no longer delivers certificates and private key samples in the product packaging. However Transfer CFT does provide a template, which you can update and use as described in the delivered samples (`$CFTDIRRUNTIME\conf`). The file cft-pki.conf describes how to insert a certificate in the local database in the various formats. The file cft-tcp.conf contains general configuration, and commented SSL profiles.

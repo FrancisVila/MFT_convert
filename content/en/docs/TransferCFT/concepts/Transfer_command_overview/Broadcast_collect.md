@@ -1,7 +1,7 @@
 {
     "title": "Broadcast and collect",
     "linkTitle": "Broadcast and collect",
-    "weight": "220"
+    "weight": "210"
 }This section describes the following two types of transfer functions, which you can perform in
 requester mode:
 
@@ -14,11 +14,12 @@ requester mode:
 
 > **Note**
 >
-> When using these features with Central Governance, you must enable broadcasting for the flow. For more information, refer to the Central Governance documentation.
+> Note: When using these features with Central Governance, you must enable broadcasting for the flow. For more information, refer to the Central Governance documentation.
 
 <span id="Broadcasting_mode"></span>
 
-## Broadcasting mode
+Broadcasting mode
+-----------------
 
 This mode is used to send a file or a group of files through a single
 send request, to a group of partners where the number of partners in a group is limited to 200. The CFTDEST command
@@ -57,7 +58,7 @@ These two methods are mutually exclusive. The PART parameter cannot
 be used simultaneously with the FNAME parameter in the CFTDEST command.
 
 To broadcast a file called X, with N partners, a SEND
-PART=DEST, IDF=ID\_EM, FNAME=X command generates N+1 transfer entries in
+PART=DEST, IDF=ID_EM, FNAME=X command generates N+1 transfer entries in
 the catalog that corresponds to:
 
 - An entry for each
@@ -75,14 +76,14 @@ T or X state, depending on the compat mode).
 
 > **Note**
 >
-> If the CFTDEST command includes the EXEC=PART parameter, the end of
+> Note: If the CFTDEST command includes the EXEC=PART parameter, the end of
 > send procedure is executed on completion of each transfer.
 
 The post processing procedure in the case of an error is executed for each transfer in the same
 way as for normal transfers.
 
 To broadcast a group of P files if N partners are involved, a SEND PART =
-DEST, IDF = ID\_EM, FNAME = &lt;file\_symb>GROUP command generates N (P+1) +1 transfer
+DEST, IDF = ID_EM, FNAME = &lt;file_symb&gt;GROUP command generates N (P+1) +1 transfer
 entries in the catalog corresponding to:
 
 - An entry for each
@@ -90,24 +91,24 @@ entries in the catalog corresponding to:
 - A generic virtual
     entry which never leads to an effective transfer, used locally for broadcasting
     management
-- Where &lt;file\_symb> is the OS appropriate symbol (# or @)
+- Where &lt;file_symb&gt; is the OS appropriate symbol (\# or @)
 
-This virtual transfer is identified by a <span style="font-weight: bold;">****DIAGP****</span>
-code equal to <span style="font-weight: bold;">****DIFFUS****</span>, on querying
+This virtual transfer is identified by a ****DIAGP****
+code equal to ****DIFFUS****, on querying
 the catalog.
 
 - And a generic virtual
     entry per partner used locally for the management of the group of files
     sent for the partner in question (i.e. N generic entries)
 
-These virtual transfers are identified by a DIAGP code equal to LIST\_FI,
+These virtual transfers are identified by a DIAGP code equal to LIST_FI,
 on querying the catalog.
 
 The associated post processing procedure is activated in this
 case:
 
 - For each end of
-    transfer, of all the files of the group, the "LIST\_FI" entry
+    transfer, of all the files of the group, the "LIST_FI" entry
     changes to the T state
 - On completion of
     broadcasting, when all the partners have received all the files, the DIFFUS
@@ -123,7 +124,8 @@ partners****
 
 <span id="Broadcasting_and_store_and_forward"></span>
 
-## Broadcasting and store and forward
+Broadcasting and store and forward
+----------------------------------
 
 You can use the store and forward mechanism for each transfer to a partner
 that is defined in a broadcasting list. You can also use the SEND command to broadcast from a store and forward
@@ -151,27 +153,24 @@ You can use the following commands as an example to configure a transfer flow fr
 **Step 2**
 
 1. Partner A sends the file to broadcast to a virtual Partner C:
-
 1. ```
     SEND PART=ID_C, FNAME=FILE_TO_BROADCAST,...
     ```
-
 1. On Partner A perform the following command to reach Partner C virtually via Partner B:
-
 1. ```
     CFTPART ID=ID_C,..., OMINTIME=O, OMAXTIME=0, IPART=ID_B
     ```
-    1.  Partner B receives the FILE\_TO\_BROADCAST and sends it on to Partner C (where C is a broadcast list).
-
+    1.  Partner B receives the FILE_TO_BROADCAST and sends it on to Partner C (where C is a broadcast list).
 1. ```
     CFTDEST ID=C, FNAME=LIST, FOR=COMMUT
     ```
 
-    This results in the FILE\_TO\_BROADCAST being sent to all of the partners in the C list of partners.
+    This results in the FILE_TO_BROADCAST being sent to all of the partners in the C list of partners.
 
 <span id="Collecting"></span>
 
-## Collecting
+Collecting
+----------
 
 This section describes the collecting
 mode. The collecting mode is when Transfer CFT receives one or more files
@@ -229,9 +228,9 @@ For each partner, the mechanism used is RECV IDF=\*, FILE=ALL. See the paragraph
 for [ODETTE](../../../protocols_start_here/start_here_odette/receiving_transfers) and [PeSIT](../../../protocols_start_here/about_pesit/defining_cftrecv_in_pesit) in the [Protocol](../../../protocols_start_here) sections.
 
 The EXEC parameter of the CFTDEST command is ignored. The end of transfer procedure is only executed when all the transfers
-are correctly completed (COLLECT entry changes to the <span style="font-weight: bold;">****T****</span> or **X**
+are correctly completed (COLLECT entry changes to the ****T**** or **X**
 state). No procedure is submitted for the generic collection entry, which
-remains in <span style="font-weight: bold;">****K****</span> state when reception
+remains in ****K**** state when reception
 is complete.
 
 No error procedure is submitted for created entries that include

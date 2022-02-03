@@ -28,7 +28,7 @@ The following tables list all the fields of the communication structure.
 
 | ****Field**** | ****Explanation**** |
 | --- | --- |
-| version  | Interface version number<br/> The current version number is "0130". |
+| version  | Interface version number<br/> The current version number is &quot;0130&quot;. |
 | idexit  | EXIT task identifier |
 | exname | User name<br/> The user name is equal to the value of the exaref parameter of the exaini function. |
 | parm | User parameter<br/> The user parameter is equal to the value of the PARM parameter of the CFTEXIT object. |

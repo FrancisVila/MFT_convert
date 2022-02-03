@@ -4,11 +4,13 @@
     "weight": "170"
 }The following are tasks to perform or issues to address before installing Transfer CFT.
 
-## Windows requirements
+Windows requirements
+--------------------
 
 The Windows installation directory must not contain any sub-folders or files that are owned by another user.
 
-## Hardware and software requirements
+Hardware and software requirements
+----------------------------------
 
 Before installing {{< TransferCFT/axwayvariablesComponentShortName  >}} Windows check the following:
 
@@ -22,14 +24,16 @@ for the product and may be inter-dependent.
 {{< TransferCFT/axwayvariablesComponentShortName  >}} is based on an external network layer, which must be installed before operating the product. And note that if other applications are running at the same time as {{< TransferCFT/axwayvariablesComponentShortName  >}},
 the RAM requirement needs to be increased.
 
-## Apply a service pack or patch, or upgrade using Central Governance
+Apply a service pack or patch, or upgrade using Central Governance
+------------------------------------------------------------------
 
 To upgrade or install a Transfer CFT Service Pack or patch from Central Governance, you must:
 
 - Run the Transfer CFT Copilot as administrator.
 - Disable the Windows User Account Control (UAC).
 
-## Configure Windows UAC
+Configure Windows UAC
+---------------------
 
 User Account Control (UAC) is an option to add security infrastructure on Windows operating systems.
 
@@ -40,14 +44,14 @@ For Windows versions that support UAC, Windows Vista, Windows Server 2008, Windo
 1. Click **OK**.
 1. Reboot to make the change effective.
 
-For Windows versions prior to the versions listed above, perform the following steps to add yourself in <span class="bold_in_para">****Log on as a service group****</span>:
+For Windows versions prior to the versions listed above, perform the following steps to add yourself in ****Log on as a service group****:
 
-1. Navigate to<span class="spanboldinpara" style="font-weight: bold;"> ****Start**** </span>**&gt;**<span class="spanboldinpara" style="font-weight: bold;"> ****Control Panel**** </span>**&gt;**<span class="spanboldinpara" style="font-weight: bold;"> ****Administrative Tools****</span> **&gt;**<span class="spanboldinpara" style="font-weight: bold;"> ****Local Security Policy****</span>.
-1. From the tree, select <span class="spanboldinpara" style="font-weight: bold;">****Local Policies**** </span>**&gt;**<span class="spanboldinpara" style="font-weight: bold;"> ****User Rights Assignment**** </span>**&gt;**<span class="spanboldinpara" style="font-weight: bold;"> ****Log on as a service****</span>.
+1. Navigate to ****Start**** **&gt;** ****Control Panel**** **&gt;** ****Administrative Tools**** **&gt;** ****Local Security Policy****.
+1. From the tree, select ****Local Policies**** **&gt;** ****User Rights Assignment**** **&gt;** ****Log on as a service****.
 
 > **Note**
 >
-> On some systems the path may be Start &gt; Control Panel &gt; System and Security &gt; Administrative Tools &gt; Local Security Policy.
+> Note: On some systems the path may be Start &gt; Control Panel &gt; System and Security &gt; Administrative Tools &gt; Local Security Policy.
 
 ### Set administration rights if UAC is enabled
 
@@ -56,46 +60,49 @@ If you do **not** disable the UAC, the installer requires administration rights 
 - Setup with administrator user account: Accept or decline if you want to make changes to your computer.
 - Setup with standard user account: Enter your administrator password first to continue.
 
-## Tasks that required elevated rights
+Tasks that required elevated rights
+-----------------------------------
 
 The following tasks require that you have elevated rights and fail if one of the above setup options was not performed:
 
 - Create or remove shortcuts in Start menu or desktop
 - Create or remove Windows services
-- Installing in <span class="code_1">%SystemRoot%</span> or <span class="code_1">%ProgramFiles%</span>
+- Installing in %SystemRoot% or %ProgramFiles%
 - Running product scripts that require elevated rights
 
 <span id="Windows"></span>
 
 ### 
 
-## User rights prerequisites
+User rights prerequisites
+-------------------------
 
 There are certain Windows-specific tasks you must perform to enable system user authentication and file system rights before using Transfer CFT or the Copilot server.
 
 The following sections describe how to:
 
-- [Define rights before starting the Copilot server (REST API/Transfer CFT UI)](../../../windows_install_start_here/running_cft_for_the_first_time_windows/user_rights_and_interface_win#Define%20rights%20before%20starting%20the%20CFT%C2%A0Navigator%20server)
-- [Define rights before logging on the Copilot server](../../../windows_install_start_here/running_cft_for_the_first_time_windows/user_rights_and_interface_win#Define%20rights%20before%20logging%20on%20the%20CFT%C2%A0Navigator%20server)
 - [Define rights before starting](../../../windows_install_start_here/running_cft_for_the_first_time_windows/user_rights_and_interface_win#Define_rights_before_starting_Transfer_CFT)
 - [Define a domain user](../../../windows_install_start_here/running_cft_for_the_first_time_windows/user_rights_and_interface_win#Define%20domain%20user)
 - [Define folder rights](../../../windows_install_start_here/running_cft_for_the_first_time_windows/user_rights_and_interface_win#Define)
 - [Define system user access](../../../windows_install_start_here/running_cft_for_the_first_time_windows/user_rights_and_interface_win#Define2)
 
-## Run as administrator
+Run as administrator
+--------------------
 
 The user who installs or upgrades Transfer CFT must be an administrator on the system where you are performing the installation.
 
-## Service mode prerequisites
+Service mode prerequisites
+--------------------------
 
 Note the following prerequisites and limitations when installing {{< TransferCFT/axwayvariablesComponentLongName  >}} in service mode.
 
-- If you install {{< TransferCFT/axwayvariablesComponentLongName >}} in service mode, to launch the service on a specific account you must grant that user service rights to log in.  
-    To grant this right, navigate to **Administrative Tools > Local Security Policy > Local Management > Local Policies**, and select **User Rights Assignment**. Then grant the user **Logon as a Service**.
-- If you install {{< TransferCFT/axwayvariablesComponentLongName >}}in service mode but want to launch the service on a Local System Account, be aware that you cannot start Transfer CFT from the Copilot UI.
+- If you install {{< TransferCFT/axwayvariablesComponentLongName  >}} in service mode, to launch the service on a specific account you must grant that user service rights to log in.  
+    To grant this right, navigate to **Administrative Tools &gt; Local Security Policy &gt; Local Management &gt; Local Policies**, and select **User Rights Assignment**. Then grant the user **Logon as a Service**.
+- If you install {{< TransferCFT/axwayvariablesComponentLongName  >}}in service mode but want to launch the service on a Local System Account, be aware that you cannot start Transfer CFT from the Copilot UI.
 - See also, <a href="../../n_active_active/shared_file_prereq_win" class="MCXref xref">Shared file system prerequisites</a>.
 
-## Using a mapped drive
+Using a mapped drive
+--------------------
 
 ### Create a mapped drive
 

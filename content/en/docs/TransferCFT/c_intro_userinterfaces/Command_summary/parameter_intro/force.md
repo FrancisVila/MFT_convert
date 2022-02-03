@@ -1,14 +1,14 @@
 {
     "title": "force",
     "linkTitle": "force",
-    "weight": "1240"
+    "weight": "1230"
 }<span id="force"></span>
 
 ### force
 
 #### CFTRECV
 
-**\[FORCE = {<u>NO</u> | YES}\]**
+**[FORCE = {<span class="underline">NO</span> &#124; YES}]**
 
 Determines the priority with which
 the parameters set in CFTRECV are taken into account relative to the parameters
@@ -29,7 +29,7 @@ set in an associated RECV command.
 
 #### CFTSEND
 
-**\[FORCE = {<u>NO</u> | YES}\]**
+**[FORCE = {<span class="underline">NO</span> &#124; YES}]**
 
 Determines the priority with which
 the parameters set in CFTSEND are taken into account relative to the parameters
@@ -84,7 +84,7 @@ or CFTSEND object with parameter FORCE set to YES.
 
 #### INACT, DELETE, END, HALT, KEEP, START, RESUME
 
-****\[FORCE = {<u>NO</u> | YES}\]****
+****[FORCE = {<span class="underline">NO</span> &#124; YES}]****
 
  
 
@@ -92,7 +92,7 @@ or CFTSEND object with parameter FORCE set to YES.
 
 #### START
 
-****\[FORCE = {<u>NO</u> | YES}\]****
+****[FORCE = {<span class="underline">NO</span> &#124; YES}]****
 
 Indicates whether a request, that was not executed during its time slot,
 has been restarted:

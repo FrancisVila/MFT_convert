@@ -4,7 +4,8 @@
     "weight": "260"
 }The diagnostic commands search for operating errors that occur in Transfer CFT, and should be used under Axway customer support supervision. The commands syntax usage are described in the following sections.
 
-## Diagnostic command descriptions
+Diagnostic command descriptions
+-------------------------------
 
 ### SGTRACE command
 
@@ -129,7 +130,7 @@ The ABEND command causes an ABEND 0C1 in the operator module. It causes a DUMP o
 
 The ECHO command has no effect, and ends with messages such as the following, which let you check that Transfer CFT is in operating condition:
 
-<span class="code">`'SGOP00I MVSv32x-B102162-2017/03/17'‘SGOP02I Command Complete 18/05/2017, 15:52:03 User=xxxxxx'`</span>
+`'SGOP00I MVSv32x-B102162-2017/03/17'‘SGOP02I Command Complete 18/05/2017, 15:52:03 User=xxxxxx'`
 
 ### CACHE command
 
@@ -157,7 +158,8 @@ The cache command is used to control the Transfer CFT catalog cache. There are t
 
 - CACHE LOAD: to force the complete load of the Transfer CFT catalog into the cache. Use extreme care with his command! At end of processing, messages DDIS30I to DDIS32I are displayed.
 
-## The ? command
+The ? command
+-------------
 
 The ? command enables you to find the status of certain Transfer CFT components. Available options include:
 
@@ -237,7 +239,7 @@ TOD of the last DISPATCH
 DTSK03I 0022F000 "CFTTPRO " EPA=00000000 TCB=006F6388 OWN=CFTR223. OS Task
 ```
 
-#### <span class="span_4"> </span>FILES
+#### FILES
 
 ```
 DFIL01I FILE SUMMARY:

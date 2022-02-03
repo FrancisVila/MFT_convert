@@ -1,14 +1,14 @@
 {
     "title": "exita",
     "linkTitle": "exita",
-    "weight": "1000"
+    "weight": "990"
 }<span id="exita"></span>
 
 ### exita
 
 #### CFTPROT
 
-****\[EXITA = identifier\]****
+****[EXITA = identifier]****
 
 Identifier (32 characters) describing
 the directory EXIT.

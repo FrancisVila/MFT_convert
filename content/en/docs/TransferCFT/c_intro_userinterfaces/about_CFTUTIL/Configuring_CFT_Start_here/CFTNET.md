@@ -1,7 +1,7 @@
 {
     "title": "CFTNET  - Network resources",
     "linkTitle": "CFTNET - Network resources",
-    "weight": "380"
+    "weight": "370"
 }<span id="About_the_Generic_CFTNET_command"></span>You can use the CFTNET
 command to define a network access resource. The available CFTNET network
 is:
@@ -37,7 +37,8 @@ topics****
 
 <span id="Defining_TCP_IP__command_line_"></span>
 
-## Defining TCP/IP
+Defining TCP/IP
+---------------
 
 This topic describes how to define the TCP/IP network resources object.
 The CFTNET object for the TCP/IP type allows CFT to identify itself to
@@ -53,15 +54,13 @@ Defining network resources topic.
 
 #### TYPE =  TCP
 
-QQQ\_QQQ\_QQQ
 
-
-| Parameter  | Description  |
+| Parameters  | Description  |
 | --- | --- |
-| <a href="../../../command_summary/parameter_intro/class">CLASS</a> | Class associated with this network resource.<br/> This concept is used to group resources of the same type, so that they can be used indifferently to establish connections with partners. |
-| <a href="../../../command_summary/parameter_intro/host">HOST</a>  | IP address of the local resource. |
-| <a href="../../../command_summary/parameter_intro/maxcnx">MAXCNX</a> | The maximum number of simultaneous connections that Transfer CFT accepts to establish on a given network resource. |
-| <a href="../../../command_summary/parameter_intro/call">CALL</a> | Call direction possible through this network resource. |
+|  <a href="../../../command_summary/parameter_intro/class">CLASS</a> | Class associated with this network resource.<br/> This concept is used to group resources of the same type, so that they can be used indifferently to establish connections with partners. |
+|  <a href="../../../command_summary/parameter_intro/host">HOST</a>  | IP address of the local resource. |
+|  <a href="../../../command_summary/parameter_intro/maxcnx">MAXCNX</a> | The maximum number of simultaneous connections that Transfer CFT accepts to establish on a given network resource. |
+|  <a href="../../../command_summary/parameter_intro/call">CALL</a> | Call direction possible through this network resource. |
 
 
 ****Example****
@@ -87,7 +86,8 @@ may be opened. This resource accepts connections in both directions.
 
 <span id="Defining_remote_TCP__command_line_"></span>
 
-## Defining remote TCP
+Defining remote TCP
+-------------------
 
 Access to a telecommunications network is defined by a CFTNET object.
 Generally speaking, the resource used to access this network is local
@@ -114,7 +114,7 @@ protocol definition on a CFTNET TCP/IP resource, only TCP connection requests
 from interfaces matching the HOST parameter, and also matching the bound
 port number, are accepted.
 
-The keyword INADDR\_ANY that is assigned to the CFTNET card HOST parameter
+The keyword INADDR_ANY that is assigned to the CFTNET card HOST parameter
 has a specific meaning. TCP connection request from all
 interfaces and matching the bound port number are accepted.
 
@@ -122,7 +122,7 @@ Use this command to access to a telecommunications network
 via another network.
 
 
-| Parameter  | Description  |
+| Parameters  | Description  |
 | --- | --- |
 | <a href="../../../command_summary/parameter_intro/class">CLASS</a> | Class associated with this network resource. |
 | <a href="../../../command_summary/parameter_intro/id">ID</a> | Identifier of the network accessed via a proxy. |

@@ -2,13 +2,15 @@
     "title": "z/OS: Installation and Operation",
     "linkTitle": "Prerequisites",
     "weight": "130"
-}## Preface
+}Preface
+-------
 
 The {{< TransferCFT/axwayvariablesComponentShortName  >}} Installation Guide provides instructions for installing and deploying your {{< TransferCFT/axwayvariablesComponentShortName  >}}.
 
 <span id="Installation support format"></span>
 
-## Version
+Version
+-------
 
 The minimum z/OS version depends on the JES:
 
@@ -17,15 +19,17 @@ The minimum z/OS version depends on the JES:
 
 <span id="Installation support format"></span>
 
-## Version format
+Version format
+--------------
 
-To accommodate changing product versions, we use the convention &lt;version> in place of the actual version number in samples and lists.
+To accommodate changing product versions, we use the convention &lt;version&gt; in place of the actual version number in samples and lists.
 
-For example if your Transfer CFT is version 3.3.x, the file ZOS/CFT/&lt;version> would be ZOS/CFT/3.3.x.
+For example if your Transfer CFT is version 3.3.x, the file ZOS/CFT/&lt;version&gt; would be ZOS/CFT/3.3.x.
 
 <span id="Delivery process"></span>
 
-## Delivery - distribution method
+Delivery - distribution method
+------------------------------
 
 Axway delivers Transfer CFT z/OS on the support site: [support.axway.com](https://support.axway.com/). To download the packages from Axway support, you require a user ID and password.
 
@@ -48,7 +52,8 @@ Again, there are 2 product packaging formats in the **`Components\Transfer_CFT_V
 
 <span id="kanchor14"></span>
 
-## Transfer CFT z/OS components
+Transfer CFT z/OS components
+----------------------------
 
 The Transfer CFT z/OS components include:
 
@@ -74,16 +79,17 @@ The Transfer CFT z/OS components include:
 
 <span id="Special"></span>
 
-## Special characters
+Special characters
+------------------
 
 
-|   | Description  | Windows  | Unix  | z/OS  | IBM i  |
-| --- | --- | --- | --- | --- | --- |
-| char_file  | Logical name prefix | $  | _  | $  | +  |
-| char_mask  | Wildcard character  | ?  | ?  | ?  | ?  |
-| char_unit  | Separator character (volume)  | %  | \01  | %  | ;  |
-| char_symb  | Symbolic variable prefix  | &amp;  | &amp;  | &amp;  | ?  |
-| file_symb  | Character introducing a file name passed to CFTUTIL as a parameter  | #  | @  | #  | #  |
+|   | Description  | Windows  | Unix  | OpenVMS  | z/OS  | IBM i  |
+| --- | --- | --- | --- | --- | --- | --- |
+| char_file  | Logical name prefix | $  | _  | No specific character;<br/> logical names are<br/> processed transparently by RMS | $  | +  |
+| char_mask  | Wildcard character  | ?  | ?  | %  | ?  | ?  |
+| char_unit  | Separator character (volume)  | %  | \01  | No volume concept on VMS  | %  | ;  |
+| char_symb  | Symbolic variable prefix  | &amp;  | &amp;  | &amp;  | &amp;  | ?  |
+| file_symb  | Character introducing a file name passed to CFTUTIL as a parameter  | #  | @  | Either # or @  | #  | #  |
 
 
 ****Related topics****

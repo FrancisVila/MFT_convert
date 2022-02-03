@@ -1,20 +1,21 @@
 {
     "title": "Time-saving shortcuts",
     "linkTitle": "How to use autocomplete",
-    "weight": "170"
+    "weight": "160"
 }{{< TransferCFT/suitevariablesTransferCFTName  >}} offers several commands and options that enable you to work more quickly and efficiently. The following sections describe:
 
 - [Using autocompletion](#Using)
-- [Using the <span class="code">`check `</span>command](#Using2)
+- [Using the `check `command](#Using2)
 - [Using the previous/next shortcut](#Previous)
 
 <span id="Using"></span>
 
-## Using bash autocompletion
+Using bash autocompletion
+-------------------------
 
 **UNIX only**
 
-To simplify the use of Transfer CFT commands, you can use the bash autocompletion feature when working in interactive mode. Bash autocompletion is valid for <span class="code">`CFTUTIL`</span>, <span class="code">`PKIUTIL`</span>, and the <span class="code">`cft`</span> commands. This feature intuitively provides commands and available parameters along with a brief description. Additionally, for certain parameters Bash autocompletion proposes a list of possible parameter values, either static or dynamic, depending on the parameter.
+To simplify the use of Transfer CFT commands, you can use the bash autocompletion feature when working in interactive mode. Bash autocompletion is valid for `CFTUTIL`, `PKIUTIL`, and the `cft` commands. This feature intuitively provides commands and available parameters along with a brief description. Additionally, for certain parameters Bash autocompletion proposes a list of possible parameter values, either static or dynamic, depending on the parameter.
 
 - <a href="#Special" class="MCXref xref">Keyboard shortcuts</a>
     -   <a href="#Auto-com" class="MCXref xref">Use the Bash autocompletion keys</a>
@@ -22,11 +23,11 @@ To simplify the use of Transfer CFT commands, you can use the bash autocompletio
 
 > **Note**
 >
-> Bash autocompletion does not display if you enter a command directly after the CFTUTIL keyword. For example, no commands are suggested if you type: CFTUTIL SEND
+> Note: Bash autocompletion does not display if you enter a command directly after the CFTUTIL keyword. For example, no commands are suggested if you type: CFTUTIL SEND
 
 > **Note**
 >
-> You require bash version 2.0.5 or higher.  Additionally, Bash must be loaded prior to loading the Transfer CFT profile.
+> Note: You require bash version 2.0.5 or higher.  Additionally, Bash must be loaded prior to loading the Transfer CFT profile.
 
 <span id="Special"></span>
 
@@ -55,7 +56,7 @@ The CFTUTIL utility uses the following keys as shortcuts when entering a comman
 
 ### Use the Bash autocompletion keys
 
-You can use the **Tab** and **Shift + Tab** keys to display and scroll through available commands, parameters, and values. If you are not familiar with available commands, begin by pressing **Tab** at the <span class="code">`CFTUTIL `</span>prompt; the first command, SEND, displays along with a brief description.
+You can use the **Tab** and **Shift + Tab** keys to display and scroll through available commands, parameters, and values. If you are not familiar with available commands, begin by pressing **Tab** at the `CFTUTIL `prompt; the first command, SEND, displays along with a brief description.
 
 ![](/Images/TransferCFT/Auto_completion_in_CFTUTIL.png)
 
@@ -77,26 +78,27 @@ You can use the **Tab** and **Shift + Tab** keys to display and scroll through a
 
 ### UCONF parameter specifics
 
-To display UCONF parameters, from <span class="code">`ID=`</span> the autocomplete works by completing categories until the period (.) separator is reached.
+To display UCONF parameters, from `ID=` the autocomplete works by completing categories until the period (.) separator is reached.
 
-- For example, cft.multi\_node.cftcom.dispatcher\_policy is comprised of 4 categories (cft, multi\_node, cftcom, and dispatcher\_policy).
+- For example, cft.multi_node.cftcom.dispatcher_policy is comprised of 4 categories (cft, multi_node, cftcom, and dispatcher_policy).
 - Once the ID is complete, a space is appended to the parameter name to indicate the end of the parameter.
 
 ![](/Images/TransferCFT/Auto_completion_in_CFTUTIL_4.png)
 
 <span id="Using2"></span>
 
-## Using the check command
+Using the check command
+-----------------------
 
-The CFTUTIL <span class="code">`CHECK `</span>command validates the coherence of parameters, partners, and the Transfer CFT PKI database.
+The CFTUTIL `CHECK `command validates the coherence of parameters, partners, and the Transfer CFT PKI database.
 
 The syntax is:
 
 ```
-CHECK CONTENT=<u>BRIEF</u>|FULL, FOUT=FileName
+CHECK CONTENT=<span class="underline">BRIEF</span>&#124;FULL, FOUT=FileName
 ```
 
-The <span class="code">`CHECK CONTENT=BRIEF`</span> (default) command verifies that:
+The `CHECK CONTENT=BRIEF` (default) command verifies that:
 
 - All the referenced objects exist
 - Each CFTPART has an associated CFTTCP
@@ -105,7 +107,7 @@ The <span class="code">`CHECK CONTENT=BRIEF`</span> (default) command verifies t
 
 Any encountered errors are displayed in the console, and we highly recommend that you fix them before starting Transfer CFT.
 
-The <span class="code">`CHECK CONTENT=FULL, FOUT=FileName`</span> command also checks that:
+The `CHECK CONTENT=FULL, FOUT=FileName` command also checks that:
 
 - All objects are used
 - No CRONTAB is empty
@@ -114,24 +116,26 @@ The <span class="code">`CHECK CONTENT=FULL, FOUT=FileName`</span> command also c
 
 Where:
 
-- The FOUT option sends the <span class="code">`check `</span>results to a file instead of displaying in the console.
+- The FOUT option sends the `check `results to a file instead of displaying in the console.
 
-You can use the <span class="code">`check`</span>command with <span class="code">`cftinit `</span>and <span class="code">`cftupdate `</span>using the following syntax:
+You can use the `check`command with `cftinit `and `cftupdate `using the following syntax:
 
 - `cftinit -check file`
 - `cftupdate -check file`
 
-Here, the <span class="code">`-check`</span> option is equivalent to running <span class="code">`CFTUTIL CHECK `</span>at the end of a successful cftinit or cftupdate .
+Here, the `-check` option is equivalent to running `CFTUTIL CHECK `at the end of a successful cftinit or cftupdate .
 
 <span id="Previous"></span>
 
-## Using the previous/next shortcut
+Using the previous/next shortcut
+--------------------------------
 
 You can use the **Up/Down Arrow** keys as a shortcut to recall the previous or next command.
 
 <span id="Partial"></span>
 
-## Partial word recognition
+Partial word recognition
+------------------------
 
 To retrieve a command you know, begin by typing the first characters of the command. CFTUTIL returns only the commands starting with those characters. For example type LI and press **Tab**, the commands LISTCAT, LISTLOG, LISTCOM display. You can then use the **Up/Down Arrow** keys to scroll the list.
 
@@ -153,4 +157,4 @@ Use the following uconf parameters to manage the command-history settings.
 
 ### Modify the command list
 
-The file containing the list of commands is a text file that you can edit or remove, and its location is defined in the <span class="code">`cft.readline.history_fname`</span> parameter.
+The file containing the list of commands is a text file that you can edit or remove, and its location is defined in the `cft.readline.history_fname` parameter.

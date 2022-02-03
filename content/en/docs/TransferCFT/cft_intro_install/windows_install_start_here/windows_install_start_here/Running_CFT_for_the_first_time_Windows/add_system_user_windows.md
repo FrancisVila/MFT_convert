@@ -5,13 +5,14 @@
 }This section describes two optional Windows-specific tasks that you can perform to enable system user authentication and file system rights, and which are not mutually exclusive.
 
 - <a href="#Enable3" class="MCXref xref">Enable the file user rights (USERCTRL)</a>
-- <a href="#Enable" class="MCXref xref">How to enable system users - Windows</a>
+- <a href="#How" class="MCXref xref">How to use system user authentication for the user interfaces</a>
 
 You can only use the **user authentication for Copilot** when implementing the deprecated Java based Copilot UI or Web Services. This sort of authentication does not apply to the current Transfer CFT UI or to REST API usage.
 
 <span id="Enable3"></span>
 
-## Enable the file user rights (USERCTRL)
+Enable the file user rights (USERCTRL)
+--------------------------------------
 
 When implementing file user rights with [USERCTRL](../../../../../c_intro_userinterfaces/command_summary/parameter_intro/userctrl), you must run Transfer CFT as a service or start {{< TransferCFT/suitevariablesTransferCFTName  >}} with administrator privileges.
 
@@ -33,14 +34,17 @@ To assign user rights:
 
 To define user rights:
 
-1. In a dos command window, enter <span class="code">`lusrmgr.msc `</span>to open the system users list. Check available users.
-1. In a dos command window, enter <span class="code">`secpol.msc`</span> to open the Local Security Policy window.
-1. Select <span class="bold_in_para">****Security Settings****</span> > <span class="bold_in_para">****Local Policies****</span> > <span class="bold_in_para">****User Rights Assignment****</span>.
+1. In a dos command window, enter `lusrmgr.msc `to open the system users list. Check available users.
+1. In a dos command window, enter `secpol.msc` to open the Local Security Policy window.
+1. Select ****Security Settings**** &gt; ****Local Policies**** &gt; ****User Rights Assignment****.
 1. Double-click the required right.
-1. Click <span class="bold_in_para">****Add user or group****</span> and define.
+1. Click ****Add user or group**** and define.
 1. Close and re-open the Windows session to take into account the modifications.
 
-## How to use system user authentication for the user interfaces
+<span id="How"></span>
+
+How to use system user authentication for the user interfaces
+-------------------------------------------------------------
 
 There are two ways to enable the system user authentication:
 
@@ -49,7 +53,7 @@ There are two ways to enable the system user authentication:
 
 > **Note**
 >
-> Note that the copilot.misc.createprocessasuser parameter is set to Yes for Windows systems by default.
+> Note: Note that the copilot.misc.createprocessasuser parameter is set to Yes for Windows systems by default.
 
 When enabling user authentication for Copilot, you must run the Transfer Copilot server as a service. The following information applies except if you are using the local system account when working in service mode.
 
@@ -64,15 +68,15 @@ The user rights to assign are:
 
 ### Define user rights
 
-1. In a dos command window, enter <span class="code">`lusrmgr.msc`</span> to open the system users list. Check available users.
-1. In a dos command window, enter <span class="code">`secpol.msc`</span> to open the Local Security Policy window.
-1. Select <span class="bold_in_para">****Security Settings****</span> > <span class="bold_in_para">****Local Policies****</span> > <span class="bold_in_para">****User Rights Assignment****</span>.
+1. In a dos command window, enter `lusrmgr.msc` to open the system users list. Check available users.
+1. In a dos command window, enter `secpol.msc` to open the Local Security Policy window.
+1. Select ****Security Settings**** &gt; ****Local Policies**** &gt; ****User Rights Assignment****.
 1. Double-click the required right.
-1. Click <span class="bold_in_para">****Add user or group****</span> and define.
+1. Click ****Add user or group**** and define.
 1. Close and re-open the Windows session to take into account the modifications.
 
 Additionally, the user who wants to log on the {{< TransferCFT/axwayvariablesComponentShortName  >}} UI server must exist both in the Windows system and {{< TransferCFT/suitevariablesCentralGovernanceName  >}} (or PassPort AM). The Windows system performs the user authentication, and {{< TransferCFT/suitevariablesCentralGovernanceName  >}} (or PassPort AM) checks the other rights.
 
 > **Note**
 >
-> If using Central Governance, the user name is case-sensitive.
+> Note: If using Central Governance, the user name is case-sensitive.

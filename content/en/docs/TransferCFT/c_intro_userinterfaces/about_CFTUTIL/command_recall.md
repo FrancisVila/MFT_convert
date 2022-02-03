@@ -1,12 +1,13 @@
 {
     "title": "Use the previous/next command ",
     "linkTitle": "Use previous/next command ",
-    "weight": "190"
+    "weight": "180"
 }You can use the **Up/Down Arrow** keys as a shortcut to recall the previous or next command.
 
 <span id="Partial"></span>
 
-## Partial word recognition
+Partial word recognition
+------------------------
 
 To retrieve a command you know, begin by typing the first characters of the command. CFTUTIL returns only the commands starting with those characters. For example type LI and press **Tab**, the commands LISTCAT, LISTLOG, LISTCOM display. You can then use the **Up/Down Arrow** keys to scroll the list.
 
@@ -28,4 +29,4 @@ Use the following uconf parameters to manage the command-history settings.
 
 ### Modify the command list
 
-The file containing the list of commands is a text file that you can edit or remove, and its location is defined in the <span class="code">`cft.readline.history_fname`</span> parameter.
+The file containing the list of commands is a text file that you can edit or remove, and its location is defined in the `cft.readline.history_fname` parameter.

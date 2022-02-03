@@ -1,8 +1,9 @@
 {
     "title": " Suspend or quit CFTUTIL",
     "linkTitle": "WAIT - Suspend CFTUTIL",
-    "weight": "220"
-}## WAIT
+    "weight": "210"
+}WAIT
+----
 
 <span id="About_the_WAIT_Command"></span>Use this command to suspend the execution of CFTUTIL for
 the time indicated.
@@ -11,13 +12,14 @@ the time indicated.
 
 **Parameters**
 
-**\[DURING = {<u>0</u> | n}\]**
+**[DURING = {<span class="underline">0</span> &#124; n}]**
 
 {0..65535}
 
 Time in seconds that CFTUTIL is deactivated.
 
-## EXIT
+EXIT
+----
 
 The command EXIT quits the CFTUTIL program.
 
@@ -25,7 +27,7 @@ The command EXIT quits the CFTUTIL program.
 
 **Parameters**
 
-**\[exitcode = {<u>0</u> | n}\]**
+**[exitcode = {<span class="underline">0</span> &#124; n}]**
 
 By default there is a code that displays when you use the EXIT command to quit CFTUTIL. However, you can use the exitcode parameter to define a specific exit code, which replaces the default value.
 

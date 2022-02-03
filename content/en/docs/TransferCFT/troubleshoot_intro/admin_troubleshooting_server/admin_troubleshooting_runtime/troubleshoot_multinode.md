@@ -2,7 +2,8 @@
     "title": "Troubleshoot multi-node",
     "linkTitle": "Troubleshoot multi-node",
     "weight": "450"
-}## Multi-node starts but is not functional
+}Multi-node starts but is not functional
+---------------------------------------
 
 ****Symptom****
 
@@ -10,7 +11,7 @@ In a multi-node configuration, if a host address is incorrectly set in uconf, CO
 
 ****How to diagnose****
 
-Once all nodes are started, check the log for this error message "CFTPRX error \_ Failed to connect to NODE0".
+Once all nodes are started, check the log for this error message "CFTPRX error _ Failed to connect to NODE0".
 
 ****How to fix****
 

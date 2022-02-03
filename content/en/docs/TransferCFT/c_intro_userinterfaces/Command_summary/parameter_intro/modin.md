@@ -8,7 +8,7 @@
 
 #### CFTNET
 
-**\[MODIN = {string1...32}\]**
+**[MODIN = {string1...32}]**
 
 Hayes modem initialization string for incoming connections (server mode).
 

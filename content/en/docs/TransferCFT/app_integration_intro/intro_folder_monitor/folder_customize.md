@@ -1,48 +1,51 @@
 {
     "title": "Create inclusion and exclusion filters",
     "linkTitle": "Create inclusion and exclusion filters",
-    "weight": "210"
+    "weight": "190"
 }<span id="Defining"></span>
 
 This topic described some of the more advanced parameter settings for Transfer CFT folder monitoring.
 
-You can use the file\_include\_filter or file\_exclude\_filter parameters to define file name patterns to include or exclude files from folder monitoring.
+You can use the file_include_filter or file_exclude_filter parameters to define file name patterns to include or exclude files from folder monitoring.
 
-The filter\_type parameter value indicates how the comparison of file names against the patterns occurs. The possible filter\_type parameter values are **STRJCMP**, **WILDMAT**. and <span class="bold_in_para">****EREGEX****</span>.
+The filter_type parameter value indicates how the comparison of file names against the patterns occurs. The possible filter_type parameter values are **STRJCMP**, **WILDMAT**. and ****EREGEX****.
 
-## STRJCMP filter
+STRJCMP filter
+--------------
 
 A STRJCMP pattern-matching filter can contain the asterisk (\*) and/or the question mark (?) characters. The STRJCMP filter characters are interpreted as follows:
 
 
 | Character  | Description  | Example  |
 | --- | --- | --- |
-| *  | Indicates any sequence of zero or more characters.  | The filter "*.dat" selects any file name that has the extension ".dat".  |
-| ?  | Indicates any single character.  | The filter "T*.???" selects any file name starting with a 'T' and having an extension of exactly three characters.  |
+| *  | Indicates any sequence of zero or more characters.  | The filter &quot;*.dat&quot; selects any file name that has the extension &quot;.dat&quot;.  |
+| ?  | Indicates any single character.  | The filter &quot;T*.???&quot; selects any file name starting with a 'T' and having an extension of exactly three characters.  |
 
 
 <span id="WILDMAT"></span>
 
-## WILDMAT filter
+WILDMAT filter
+--------------
 
 **Unix/Windows only**
 
-The WILDMAT pattern-matching filter offers more operations than the STRJCMP filter\_type. The WILDMAT filter characters are interpreted as follows, where x and y are used to indicate any character:
+The WILDMAT pattern-matching filter offers more operations than the STRJCMP filter_type. The WILDMAT filter characters are interpreted as follows, where x and y are used to indicate any character:
 
 
 | Character  | Description  | Example  |
 | --- | --- | --- |
-| *  | Indicates any sequence of zero or more characters.  | The filter "*.dat" selects any file name that has the extension ".dat".  |
-| ?  | Indicates any single character.  | The filter "T*.???" selects any file name starting with a 'T' and having an extension of exactly three characters.  |
+| *  | Indicates any sequence of zero or more characters.  | The filter &quot;*.dat&quot; selects any file name that has the extension &quot;.dat&quot;.  |
+| ?  | Indicates any single character.  | The filter &quot;T*.???&quot; selects any file name starting with a 'T' and having an extension of exactly three characters.  |
 | \x  | Indicates that when x is a special character, x is interpreted as a normal character.  | This is generally used to invalidate the meaning of the * and ? characters.  |
-| [x...y]  | Indicates a single character set defined by "x...y".  | The filter [0-9]<br/> indicates any decimal digit. |
+| [x...y]  | Indicates a single character set defined by &quot;x...y&quot;.  | The filter [0-9]<br/> indicates any decimal digit. |
 | -  | Indicates a range of characters. However, the minus character (or hyphen) has no special meaning if it is either the first or the last character in the set. | The filter [0-9a-zA-Z] indicates any alphanumeric character (in English).  |
 | ]  | Has no special meaning if it is the first character in the set.  |   |
-| [^x...y]  | Indicates any character other than those specified in the set "x...y".  | The filter [^0-9]<br/> indicates any character that is not a decimal digit.<br/> The filter [^]-] indicates any character other than a closed bracket or minus sign. |
+| [^x...y]  | Indicates any character other than those specified in the set &quot;x...y&quot;.  | The filter [^0-9]<br/> indicates any character that is not a decimal digit.<br/> The filter [^]-] indicates any character other than a closed bracket or minus sign. |
 | *.[tT][xX][tT]  | Indicates any string terminated by .TXT regardless of the case.  |   |
 
 
-## EREGEX filter
+EREGEX filter
+-------------
 
 EREGEX (extended regular expressions) is the use of special characters and strings to define a search pattern. In Transfer CFT, you can use these search patterns to create filters.
 
@@ -54,11 +57,11 @@ In POSIX-Extended regular expressions, all characters match themselves meaning t
 | .  | Any character except newline (line break)  | *a.c* matches abc  |
 | [ ]  | Or  | *[def]* means d or e or f  |
 | {}  | Exactly  | *{3}* means exactly three  |
-| ()  | Capture group  | *pand(ora|467)* matches pandora OR pand467  |
+| ()  | Capture group  | *pand(ora&#124;467)* matches pandora OR pand467  |
 | *  | 0 or more occurrences of the preceding element  | *ab*c* matches ac, abc, abbc, abbbc, and so on |
 | +  | 1 or more occurrences of the preceding element  | *ab+c* matches abc, abbc, abbbc, and so on, but not ac  |
 | ?  | Zero or one occurrence of the preceding element  | *plurals?* matches plural  |
-| |  | Alternation (matches either the right side or the left) / OR operand  | *ab|cd|ef* matches ab or cd or ef  |
+| &#124;  | Alternation (matches either the right side or the left) / OR operand  | *ab&#124;cd&#124;ef* matches ab or cd or ef  |
 | ^  | Start of a string  | *^a* matches any file that starts with an a  |
 | [^ ...]  | Any single character that is **not** in the class  | *[^/]** matches zero or more occurrences of any character that is not a forward-slash, such as http://  |
 | $  | End of string  | *.*? the end$* matches this is the end  |
@@ -66,19 +69,20 @@ In POSIX-Extended regular expressions, all characters match themselves meaning t
 
 > **Note**
 >
-> EREGEX refers to POSIX Extended Regular Expression. There are multiple tutorials available online to aid in creating search patterns; for additional information on expression syntax please refer to Regular expressions.
+> Note: EREGEX refers to POSIX Extended Regular Expression. There are multiple tutorials available online to aid in creating search patterns; for additional information on expression syntax please refer to Regular expressions.
 
-## Use case
+Use case
+--------
 
-The EREGEX examples describe how to create multiple exclusions using the <span class="code">`INCLUDEFILTER `</span>and <span class="code">`EXCLUDEFILTER `</span>parameters.
+The EREGEX examples describe how to create multiple exclusions using the `INCLUDEFILTER `and `EXCLUDEFILTER `parameters.
 
 ### EREGEX example 1
 
 In this example, the following files are not sent from the specified folder – that is, the following files are excluded:
 
-- out\*.ffs\_lock
-- out\*.jbase\_header
-- out\*.ffs\_db
+- out\*.ffs_lock
+- out\*.jbase_header
+- out\*.ffs_db
 
 ```
 CFTFOLDER ID = 'E',
@@ -97,7 +101,7 @@ FILESIZEMIN = '0',
 FILESIZEMAX = '0',
 FILTERTYPE = 'EREGEX',
 /\* INCLUDEFILTER= '',\*/
-EXCLUDEFILTER= '^out.\*\\.((ffs_lock)|(jbase_header)|(ffs_db))',
+EXCLUDEFILTER= '^out.\*\\.((ffs_lock)&#124;(jbase_header)&#124;(ffs_db))',
 RENAMEMETHOD= 'NONE',
 RENAMESEPARATOR= '.',
 USEFSEVENTS = 'YES',
@@ -114,8 +118,8 @@ STATE = 'ACTIVE',
 METHOD = 'MOVE',
 ....
 FILTERTYPE = 'EREGEX',
-INCLUDEFILTER='^c+' #'^c+'
-EXCLUDEFILTER='(^ca$|^cb$)'
+INCLUDEFILTER='^c+' \#'^c+'
+EXCLUDEFILTER='(^ca$&#124;^cb$)'
 ...
 ```
 

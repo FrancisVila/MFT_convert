@@ -11,7 +11,8 @@
 
 <span id="Modify_the_message_queue_depth"></span>
 
-## Modify the message queue depth
+Modify the message queue depth
+------------------------------
 
 By default, HP-UX only allows a maximum of 256 unread messages to transit
 in a message queue. To customize this information, increase the value
@@ -20,7 +21,7 @@ of the *msgtql* kernel parameter to 8192.
 To customize the message queue:
 
 1. Log in as the root and enter
-    the <span style="font-family: 'Courier New', monospace;">sam</span> command.
+    the sam command.
 1. Select the following sub-menus,
     respectively:
     -   Kernel
@@ -48,14 +49,15 @@ To customize the message queue:
 
 <span id="Modify_the_number_of_files_used_by_a_process"></span>
 
-## Modify the number of files used by a process
+Modify the number of files used by a process
+--------------------------------------------
 
 By default, HP-UX allows a process to open only 64 files. To customize
-this information, increase the value of the <span style="font-family: 'Courier New', monospace;">maxfiles</span>
+this information, increase the value of the maxfiles
 kernel parameter to 1024. To do so:
 
 1. Log in as the *root* and
-    enter the <span style="font-family: 'Courier New', monospace;">sam</span>
+    enter the sam
     command.
 1. Select the following sub-menus:
     -   Kernel
@@ -65,7 +67,7 @@ kernel parameter to 1024. To do so:
 1. Set the pointer to the *maxfiles*
     parameter.
 1. Select the *Modify
-    Configurable Parameter* option in the <span style="font-weight: bold;">****Actions****</span>
+    Configurable Parameter* option in the ****Actions****
     menu.
 1. Enter the new value for this
     parameter.

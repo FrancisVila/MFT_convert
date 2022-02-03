@@ -1,8 +1,9 @@
 {
     "title": "Transfer CFT maintenance (SMP/E)",
     "linkTitle": "Transfer CFT maintenance (SMP/E)",
-    "weight": "230"
-}## Receive the SMP/E PTFs
+    "weight": "240"
+}Receive the SMP/E PTFs
+----------------------
 
 The data set SMPCNTL contains the following model job for receiving SMP/E PTFs.
 
@@ -15,11 +16,12 @@ The data set SMPCNTL contains the following model job for receiving SMP/E PTFs.
 1. Create a new USS subdirectory to receive the maintenance package. The name and path are defined in the $C10RECV JCL (FROMNTS is the new package subdirectory, and SMPNTS DD PATH designates the path prefix).
 1. Use FTP in binary mode to download the pax.Z archive file of the appropriate PTF to this new package subdirectory. The name of the pax.Z archive file is defined in the $C10RECV JCL (STEP UNPAX: pax command).
 
-## Install the SMP/E PTFs maintenance
+Install the SMP/E PTFs maintenance
+----------------------------------
 
 Edit the sample jobs that are listed in the following table, modifying as necessary (supply a valid JOB JCL card statement, select and modify the dataset qualifier &HLQ& and the Patch number &NNNN&).
 
-The format of a Transfer CFT PTF SYSMOD ID is <span class="code">`P01NNNN`</span>. For example, the PTF <span class="code">`P010003`</span> is comprised of the Patch number 0003, where P01 represents Transfer CFT version 323.
+The format of a Transfer CFT PTF SYSMOD ID is `P01NNNN`. For example, the PTF `P010003` is comprised of the Patch number 0003, where P01 represents Transfer CFT version 323.
 
 The SMPCNTL data set contains the following model job for the SMP/E PTFs maintenance.
 
@@ -52,7 +54,8 @@ The following table lists additional sample jobs.
 | $C60PACC  | Performs an ACCEPT (with the CHECK operand) of the PTFs in the distribution zone and libraries.  |
 
 
-## Update the Transfer CFT instance with the maintenance identifier
+Update the Transfer CFT instance with the maintenance identifier
+----------------------------------------------------------------
 
 Edit the sample jobs listed in the table below, modifying as necessary.
 

@@ -1,12 +1,12 @@
 {
     "title": "logchg",
     "linkTitle": "logchg",
-    "weight": "1840"
+    "weight": "1830"
 }### {{< TransferCFT/SystemTitle  >}}
 
 #### WLOG
 
-****logchg = { NONE | STATIC | DYNAMIC | ALL
+****logchg = { NONE &#124; STATIC &#124; DYNAMIC &#124; ALL
 }****
 
 Log configuration changes:

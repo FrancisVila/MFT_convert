@@ -1,7 +1,7 @@
 {
     "title": "Multi-node architecture",
     "linkTitle": "Multi-node architecture",
-    "weight": "170"
+    "weight": "160"
 }This topic describes the {{< TransferCFT/axwayvariablesComponentShortName  >}} multi-node feature, which provides you with horizontal scalability and high availability for failovers. Following a brief review of terms, this topic describes:
 
 - Active/Active clusters
@@ -19,7 +19,8 @@ The {{< TransferCFT/axwayvariablesComponentShortName  >}} active-active architec
 
 *What is a shared file system?* A shared file system is a file system resource that is shared by several hosts.
 
-## Active/active cluster
+Active/active cluster
+---------------------
 
 The Transfer CFT active/active architecture, multi-node with multi-host functionality, includes:
 
@@ -37,7 +38,8 @@ The active/active architecture requires a shared file system.
 - Available exclusively on Transfer CFT V3 (and higher)
 - Supported platforms: Windows, Unix, and z/OS
 
-## Active/passive cluster
+Active/passive cluster
+----------------------
 
 The Transfer CFT active/passive architecture includes:
 
@@ -49,35 +51,36 @@ The active/passive architecture requires a shared file system.
 ### Active/passive features
 
 - Only one active host with only one runtime
-- Available on all {{< TransferCFT/suitevariablesTransferCFTName >}} versions
+- Available on all {{< TransferCFT/suitevariablesTransferCFTName  >}} versions
 - Supported platforms: Windows Server with MSCS , Linux, Solaris, AIX /HACMP, and IBM i
 
-## Multi-node architecture
+Multi-node architecture
+-----------------------
 
 The Transfer CFT multi-node architecture is based on hosts, nodes, a shared file system and a load balancer. Regardless of the number of servers hosting the nodes from outside the cluster, all of the nodes are viewed as a single Transfer CFT instance.
 
 > **Note**
 >
-> This section, and the multi-node sections that follow, are based on an active/active installation.
+> Note: This section, and the multi-node sections that follow, are based on an active/active installation.
 
 The multi-node setup comprises:
 
-- A <span class="bold_in_para">****shared file system****</span> (infrastructure), for multiple nodes to be able to access the same files using the same set configuration. The shared disk provides communication, configuration, partners, data flows, internal datafiles, and application transferable files.
-- A <span class="bold_in_para">****load balancer****</span> (infrastructure), hardware or software, by which incoming connections can pass. The load balancer dispatches the incoming traffic between the different hosts. However, the outgoing traffic does not use the load balancer.
-- One <span class="bold_in_para">****connection dispatcher****</span> per host (Copilot component), checks for incoming connections on the host it is running on and dispatches connections to nodes running on the same host. For z/OS platforms, refer to *VIPA load balancing* in the *Transfer CFT z/OS Installation and Operation Guide*.
-- One <span class="bold_in_para">****node manager****</span> per host (Copilot component), which monitors all nodes. If a node goes down, the node manager detects the inactivity and restarts it if needed, while taking into account the activity of other node managers. The monitoring mechanism is based on locks provided by the file system lock manager or the resource lock manager. Additionally, the node manager has its own watchdog that is used to prevent incorrect behavior after a shared file system auto-unlock, for instance due to NFSv4 lease time. If the watchdog does not receive a keep-alive from the node manager, all local nodes are killed and relock is requested.
-- One <span class="bold_in_para">****synchronous communication media dispatcher**** </span>per host (Copilot component), which allows the use of the synchronous communication media feature in a multi-node environment.
+- A ****shared file system**** (infrastructure), for multiple nodes to be able to access the same files using the same set configuration. The shared disk provides communication, configuration, partners, data flows, internal datafiles, and application transferable files.
+- A ****load balancer**** (infrastructure), hardware or software, by which incoming connections can pass. The load balancer dispatches the incoming traffic between the different hosts. However, the outgoing traffic does not use the load balancer.
+- One ****connection dispatcher**** per host (Copilot component), checks for incoming connections on the host it is running on and dispatches connections to nodes running on the same host. For z/OS platforms, refer to *VIPA load balancing* in the *Transfer CFT z/OS Installation and Operation Guide*.
+- One ****node manager**** per host (Copilot component), which monitors all nodes. If a node goes down, the node manager detects the inactivity and restarts it if needed, while taking into account the activity of other node managers. The monitoring mechanism is based on locks provided by the file system lock manager or the resource lock manager. Additionally, the node manager has its own watchdog that is used to prevent incorrect behavior after a shared file system auto-unlock, for instance due to NFSv4 lease time. If the watchdog does not receive a keep-alive from the node manager, all local nodes are killed and relock is requested.
+- One ****synchronous communication media dispatcher**** per host (Copilot component), which allows the use of the synchronous communication media feature in a multi-node environment.
 
-********<span class="autonumber"></span>Normal functioning********
+********Normal functioning********
 
 ![](/Images/TransferCFT/normal_multinode.png)
 
-********<span class="autonumber"></span>If Host A goes down, then Host B takes over Node 1********
+********If Host A goes down, then Host B takes over Node 1********
 
-********<span class="autonumber"></span>
-![](/Images/TransferCFT/host_down.png)********
+********![](/Images/TransferCFT/host_down.png)********
 
-## Runtime files
+Runtime files
+-------------
 
 All runtime data are stored on a shared file system.
 
@@ -91,25 +94,26 @@ The following internal datafiles are shared between nodes:
 
 The following internal datafiles are node specific, and the filename is flagged by the node identifier:
 
-- Catalog (cftcata00, cftcata01,...) located in &lt;cft\_runtime\_dir>/data
-- Communication media file (cftcom00, cftcom01,...) located in &lt;cft\_runtime\_dir>/data
-- Log files (cftlog00, cftlog01,...) located in &lt;cft\_runtime\_dir>/log
-- Output file (cft00.out, cft01.out,...) located in &lt;cft\_runtime\_dir>/run
-- Account file (cftaccnt00, cftaccnt01,...) located in &lt;cft\_runtime\_dir>/accnt
+- Catalog (cftcata00, cftcata01,...) located in &lt;cft_runtime_dir&gt;/data
+- Communication media file (cftcom00, cftcom01,...) located in &lt;cft_runtime_dir&gt;/data
+- Log files (cftlog00, cftlog01,...) located in &lt;cft_runtime_dir&gt;/log
+- Output file (cft00.out, cft01.out,...) located in &lt;cft_runtime_dir&gt;/run
+- Account file (cftaccnt00, cftaccnt01,...) located in &lt;cft_runtime_dir&gt;/accnt
 
 > **Note**
 >
 > Caution  
 > Transfer CFT is sensitive to the shared file system's performance, as transfer requests perform concurrent access to the database (COM, catalog, parameters). We recommend a high-performance shared file system, a solid-state drive (SSD), a dedicated network link between the clients and the file system server, and low latency &lt; 2ms.
 
-## Failover recovery
+Failover recovery
+-----------------
 
 ### Node failover
 
 There are two possibilities when a node manager detects a node failure:
 
-- If it is a <span class="bold_in_para">****local**** </span>node failover, the node manager automatically attempts to restart the node on the local server.
-- If it is a <span class="bold_in_para">****remote**** </span>node failover, the node manager waits for the remote node manager (if it is still active) to restart the node. If the remote node manager does not restart the node  before the timeout, the local node manager restarts the node on the local server.
+- If it is a ****local**** node failover, the node manager automatically attempts to restart the node on the local server.
+- If it is a ****remote**** node failover, the node manager waits for the remote node manager (if it is still active) to restart the node. If the remote node manager does not restart the node  before the timeout, the local node manager restarts the node on the local server.
 
 After the node is restarted, whether local or remote, it completes all transfer requests that were active when the failure occurred.
 
@@ -127,7 +131,8 @@ Possible scenarios include:
 
 If a node fails during the transfer recovery process, the catalog record is locked in both catalogs until both nodes are available for recovery.
 
-## How local request dispatching works
+How local request dispatching works
+-----------------------------------
 
 In a multi-node architecture there is one primary communication file, and then as many secondary communication files as nodes to control request dispatching.
 
@@ -148,20 +153,21 @@ No breakdown occurs because there is no communication between the nodes. If the 
 
 There are two types of requests, which may be handled differently depending on their type:
 
-1. Transfer requests are dispatched on a single node, according to the defined dispatching rule. The dispatching rule is defined by a UCONF value, the <span class="code">`cft.multi_node.cftcom.dispatcher_policy`</span> parameter.
+1. Transfer requests are dispatched on a single node, according to the defined dispatching rule. The dispatching rule is defined by a UCONF value, the `cft.multi_node.cftcom.dispatcher_policy` parameter.
 1. Dispatching for administrative types of requests are broadcast to all active nodes. For example, using the HALT command to stop a transfer request applies to all nodes.
 
 #### Client transfer request
 
 ![](/Images/TransferCFT/client_multinode_new.png)
 
-## How remote request dispatching works
+How remote request dispatching works
+------------------------------------
 
 All remote requests are going through a load balancer, server transfers, SOAP web-service requests, REST API requests, UI requests (Copilot applet application).
 
 > **Note**
 >
-> For z/OS platforms, refer to VIPA load balancing in the Transfer CFT z/OS Installation and Operation Guide.
+> Note: For z/OS platforms, refer to VIPA load balancing in the Transfer CFT z/OS Installation and Operation Guide.
 
 #### Server transfer dispatching
 
@@ -171,7 +177,8 @@ All remote requests are going through a load balancer, server transfers, SOAP we
 
 ![](/Images/TransferCFT/api_multinode.png)
 
-## Troubleshooting multi-node issues
+Troubleshooting multi-node issues
+---------------------------------
 
 For information on troubleshooting multi-node issues, please refer to <a href="../troubleshoot_intro/admin_troubleshooting_server/admin_troubleshooting_runtime/troubleshoot_multinode" class="MCXref xref">Troubleshoot multi-node</a>.
 

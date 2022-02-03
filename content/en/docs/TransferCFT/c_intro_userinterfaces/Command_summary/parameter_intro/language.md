@@ -1,15 +1,15 @@
 {
     "title": "language",
     "linkTitle": "language",
-    "weight": "1770"
+    "weight": "1760"
 }<span id="language"></span>
 
 ### language
 
 #### CFTEXIT, CFTACCNT
 
-****\[LANGUAGE = { <span style="text-decoration: underline;">COBOL</span>
-| C } \]****
+****[LANGUAGE = { COBOL
+&#124; C } ]****
 
 The programming language of the application that uses the statistical
 data, either:

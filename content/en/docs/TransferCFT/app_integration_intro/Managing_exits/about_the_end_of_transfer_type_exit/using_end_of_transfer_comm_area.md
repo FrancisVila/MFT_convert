@@ -16,20 +16,21 @@ an end of transfer occurs, whether it is normal or abnormal.
 If the transfer terminates abnormally, only some of the fields are completed.
 The remaining fields are reset to:
 
-- <span style="font-weight: bold;">****0****</span>
+- ****0****
     in C
-- <span style="font-weight: bold;">****blank****</span>
+- ****blank****
     in COBOL
 
-If the transfer state is T, the value in the <span style="font-weight: bold;">****diagp****</span>
+If the transfer state is T, the value in the ****diagp****
 field indicates the compression ratio.
 
 <span id="Communication_structure_in_C_language"></span>
 
-## Communication structure in C
+Communication structure in C
+----------------------------
 
 If you want to keep an exit that was created in a version of Transfer
-CFT <span style="font-weight: bold;">****prior****</span> to V2.4, you can continue
+CFT ****prior**** to V2.4, you can continue
 to use the following communication structure exitdU between the interface
 and the user program:
 

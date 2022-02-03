@@ -2,7 +2,8 @@
     "title": "Dynamically create files",
     "linkTitle": "Dynamically create files",
     "weight": "290"
-}## File characteristics overview
+}File characteristics overview
+-----------------------------
 
 Dynamically created Transfer CFT z/OS files have the following characteristics:
 
@@ -28,7 +29,7 @@ The file allocation is in the form SPACE=(BBBB,(PPPP,SSSS)),DCB=(BLKSIZE=BBBB), 
 - PPPP: Primary allocation, which is updated with the % factor defined in JOB A12OPTS ALLPRIM= or ALLONE=
 - SSSS: 10 % of PPPP, which is computed as a % of the primary allocation defined in ALLSEC=, for a single volume allocation, or updated with the % factor defined in ALLNEXT=
 
-Transfer CFT z/OS may also create multi-volume files through the DF/SMS 'ACS ROUTINES', using a DATACLASS that describes striped files. For more information, refer to the IBM documentation DFSMS Storage Administration Reference \[Document Number SC26-7402-xx\].
+Transfer CFT z/OS may also create multi-volume files through the DF/SMS 'ACS ROUTINES', using a DATACLASS that describes striped files. For more information, refer to the IBM documentation DFSMS Storage Administration Reference [Document Number SC26-7402-xx].
 
 <span id="Dynamically creating multi-volume files"></span>
 
@@ -93,7 +94,7 @@ FNAME=‘AN.MVS.DSNAME,keword1=value1,keyword2=value2’
 
 > **Note**
 >
-> Keywords are separated with comma, and must be enclosed in quotes.
+> Note: Keywords are separated with comma, and must be enclosed in quotes.
 
 Supported keywords and values include:
 
@@ -107,7 +108,7 @@ Supported keywords and values include:
 
 > **Note**
 >
-> Concerning expiration dates:
+> Note: Concerning expiration dates:
 
 > -   Expiration dates of 1999365 and 1999366 are considered “never-scratch”.  
 >     Or
@@ -117,7 +118,7 @@ Supported keywords and values include:
 **(\*)** For the CFTRECV command (only), you can specify DFSMS parameters in ATTSUSER.
 
 ****Example 1
-&lt;/b>&lt;/p>****
+&lt;/b&gt;&lt;/p&gt;****
 
 To force the creation of the received file in the EAV section of a volume:
 
@@ -129,10 +130,10 @@ To force the creation of the received file in the EAV section of a volume:
 
 > **Note**
 >
-> The ATTSUSER field is presently not managed by Central Governance.
+> Note: The ATTSUSER field is presently not managed by Central Governance.
 
 Example 2
-&lt;/p>
+&lt;/p&gt;
 
 To create a large (greater than 215,000 records) Transfer CFT catalog:
 

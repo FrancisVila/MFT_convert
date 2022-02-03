@@ -1,5 +1,5 @@
 {
     "title": "Update",
     "linkTitle": "Update",
-    "weight": "210"
+    "weight": "220"
 }This section describes how to update {{< TransferCFT/axwayvariablesComponentLongName  >}} {{< TransferCFT/axwayvariablesReleaseNumber  >}} in a z/OS environment.

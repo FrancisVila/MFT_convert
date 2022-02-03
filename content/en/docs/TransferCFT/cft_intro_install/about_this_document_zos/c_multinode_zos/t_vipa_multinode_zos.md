@@ -6,7 +6,8 @@
 
 After you complete the customization and configuration checks, execute the program commands.
 
-## Procedure overview
+Procedure overview
+------------------
 
 To customize the hosts in your setup and submit the customization, perform the tasks listed in the table.
 
@@ -24,7 +25,8 @@ To customize the hosts in your setup and submit the customization, perform the t
 | 6  | For a z/OS restart, the administrator must do all of the VIPA OBEYFILE commands performed in Step 5 on the z/OS machine.  |
 
 
-## Customize the UPARM(TC\*) members
+Customize the UPARM(TC\*) members
+---------------------------------
 
 The UPARM(TC\*) members customization example is based on a setup two hosts, LPAR1 and LPAR2. For a mono host, multi-node installation, you only need to customize the UPARM(TCPSHAP1).
 
@@ -74,7 +76,8 @@ Example VIPA command to execute:
 v tcpip,tcpip,obeyfile,dsn=...V30X.UPARM(TCPDYMX2)
 ```
 
-## Customize the cluster
+Customize the cluster
+---------------------
 
 Define the cluster address after configuring the DYNAMICXCF on all hosts (that is, the customization of LPAR1 and LPAR2 in the previous section). This host address is the unique host address as seen externally, and should correspond with the one declared in the local CFTNET.
 
@@ -98,17 +101,18 @@ For each listening port configuration (for the SYSPLEX distributor incoming call
 
 > **Note**
 >
-> There is no PORT statement for Copilot. An external Copilot passes via the SYSPLEX distributor directly to the host Copilot. There is one Copilot per host, regardless of the number of Transfer CFT nodes on the host.
+> Note: There is no PORT statement for Copilot. An external Copilot passes via the SYSPLEX distributor directly to the host Copilot. There is one Copilot per host, regardless of the number of Transfer CFT nodes on the host.
 
 Two command samples contain the VIPAdistribute Statement, which concerns the SYSPLEX distributor. There is also a command also for Copilot.
 
 ### About REST API
 
-When using REST API (<span class="code">`copilot.restapi.enable=yes`</span>) in a multi-node environment, you must also define the <span class="code">`copilot.restapi.serverport`</span> value in the VIPA configuration. See, for example, the delivered UPARM(TCVIPRN5) and UPARM(TCVIPWG5) files.
+When using REST API (`copilot.restapi.enable=yes`) in a multi-node environment, you must also define the `copilot.restapi.serverport` value in the VIPA configuration. See, for example, the delivered UPARM(TCVIPRN5) and UPARM(TCVIPWG5) files.
 
-## Define a distribution method
+Define a distribution method
+----------------------------
 
-The following examples, <span class="code">`WeightedActive `</span>and <span class="code">`RounRobin`</span>, represent two of the possible load distribution methods that you can use in VIPA. Select a load distribution method, and execute the corresponding VARY OBEYFILE  command once you have finished customizing this option.
+The following examples, `WeightedActive `and `RounRobin`, represent two of the possible load distribution methods that you can use in VIPA. Select a load distribution method, and execute the corresponding VARY OBEYFILE  command once you have finished customizing this option.
 
 **Weighted active example**
 
@@ -207,5 +211,3 @@ v tcpip,tcpip,obeyfile,dsn=...UPARM(TCVIPRN6)
 ```
 
 You have now customized the VIPA and submitted the programs.
-
- 

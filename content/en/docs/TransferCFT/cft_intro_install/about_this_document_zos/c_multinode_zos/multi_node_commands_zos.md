@@ -4,15 +4,16 @@
     "weight": "230"
 }This topic describes how to manage Transfer CFT nodes, and related actions such as restarting a stopped node, or rebalancing after a fail over.
 
-## cftinit
+cftinit
+-------
 
 The `cftinit` command initializes Transfer CFT internal datafiles. If nothing is specified, then all internal datafiles are initialized, both common and specific
 
 #### Options
 
--c|-common only common internal datafiles are initialized (PARM, PART, main COM)
+-c&#124;-common only common internal datafiles are initialized (PARM, PART, main COM)
 
--n|-node only node specific internal datafiles are initialized (CATALOG, COM, LOG)
+-n&#124;-node only node specific internal datafiles are initialized (CATALOG, COM, LOG)
 
 **Usage**
 
@@ -32,7 +33,8 @@ Specific internal datafiles for node 2 are initialized (CATALOG.N02,COM.N02,LOG1
 
 `..INSTALL(MNINIT)`
 
-## cftcopl
+cftcopl
+-------
 
 The executable `CFTCOPL` starts the Copilot (Node Manager and UI server).
 
@@ -46,7 +48,8 @@ The executable `CFTCOPL` starts the Copilot (Node Manager and UI server).
 
 The files such as COM, CATALOG, or LOG are not assigned in the JCL.
 
-## copstop
+copstop
+-------
 
 The executable `COPSTOP` stops the Copilot (Node Manager and UI server). When stopping a Copilot on a host, all nodes running on this host are stopped and re-started on the other hosts in the cluster.
 
@@ -62,13 +65,14 @@ The executable `COPSTOP` stops the Copilot (Node Manager and UI server). When st
 
 `..INSTALL(COPSTOP)`
 
-## start
+start
+-----
 
 The `start `command starts one or all nodes. If no node is specified, all nodes are started.
 
 > **Note**
 >
-> You must first start the node manager.
+> Note: You must first start the node manager.
 
 **Syntax**
 
@@ -76,7 +80,7 @@ The `start `command starts one or all nodes. If no node is specified, all nodes 
 
 #### Options
 
-The -n|-node &lt;node\_id> starts the node &lt;node\_id>.
+The -n&#124;-node &lt;node_id&gt; starts the node &lt;node_id&gt;.
 
 **Usage**
 
@@ -92,7 +96,8 @@ Node 0 is started by a node manager.
 
 `..INSTALL(MNSTART)`
 
-## stop
+stop
+----
 
 The `stop` command stops one or all nodes. If no node is specified, all nodes are stopped.
 
@@ -102,7 +107,7 @@ The `stop` command stops one or all nodes. If no node is specified, all nodes ar
 
 #### Options
 
-The -n|-node &lt;node\_id> stops the node &lt;node\_id>.
+The -n&#124;-node &lt;node_id&gt; stops the node &lt;node_id&gt;.
 
 **Usage**
 
@@ -118,13 +123,14 @@ Stops node 0.
 
 `..INSTALL(MNSTOP)`
 
-## restart
+restart
+-------
 
 The` restart` command restarts one or all nodes. If no node is specified all nodes are restarted.
 
 > **Note**
 >
-> You must first start the node manager.
+> Note: You must first start the node manager.
 
 **Syntax**
 
@@ -132,9 +138,9 @@ The` restart` command restarts one or all nodes. If no node is specified all nod
 
 **Options**
 
-The `-n|-node <node_id>` re-starts the node &lt;node\_id>.
+The `-n&#124;-node <node_id>` re-starts the node &lt;node_id&gt;.
 
-The `-ln|-local_node` re-starts all nodes hosted locally that are running on the host from where the command is performed.
+The `-ln&#124;-local_node` re-starts all nodes hosted locally that are running on the host from where the command is performed.
 
 **Usage**
 
@@ -154,7 +160,8 @@ All nodes hosted locally are re-started by the node manager.
 
 `..INSTALL(MNRESTAR)`
 
-## add\_host
+add_host
+---------
 
 The `add_host` command adds a new host entry in the configuration. The following UCONF parameters are set:
 
@@ -173,9 +180,10 @@ The `add_host` command adds a new host entry in the configuration. The following
 
 `..INSTALL(MNAHOST)`
 
-## add\_node
+add_node
+---------
 
-The `add_node` command adds a new node to the Transfer CFT cluster. The number of nodes is incremented (uconf: cft.multi\_node.nodes = N+1). The internal datafiles associated with the new node are initialized and the node state is set to DISABLED (uconf:cft.multi\_node.nodes.&lt;node\_id>.nodestate).
+The `add_node` command adds a new node to the Transfer CFT cluster. The number of nodes is incremented (uconf: cft.multi_node.nodes = N+1). The internal datafiles associated with the new node are initialized and the node state is set to DISABLED (uconf:cft.multi_node.nodes.&lt;node_id&gt;.nodestate).
 
 **Syntax**
 
@@ -189,11 +197,12 @@ The `add_node` command adds a new node to the Transfer CFT cluster. The number o
 
 `..INSTALL(MNANODE)`
 
-## remove\_node
+remove_node
+------------
 
-The cft remove\_node command removes the node identified by the higher node id in the Transfer CFT cluster. To remove a node, the node state must be both DISABLED (uconf:cft.multi\_node.nodes.&lt;node\_id>.nodestate) and STOPPED (uconf:cft.multi\_node.nodes.&lt;node\_id>.state).
+The cft remove_node command removes the node identified by the higher node id in the Transfer CFT cluster. To remove a node, the node state must be both DISABLED (uconf:cft.multi_node.nodes.&lt;node_id&gt;.nodestate) and STOPPED (uconf:cft.multi_node.nodes.&lt;node_id&gt;.state).
 
-The node number is decremented (uconf: cft.multi\_node.nodes = N+1) , and any internal datafiles associated with the node are removed.
+The node number is decremented (uconf: cft.multi_node.nodes = N+1) , and any internal datafiles associated with the node are removed.
 
 **Syntax**
 
@@ -207,9 +216,10 @@ The node number is decremented (uconf: cft.multi\_node.nodes = N+1) , and any in
 
 `..INSTALL(MNREMOVE)`
 
-## enable\_node
+enable_node
+------------
 
-The `enable_node` command enables the specified node. The node state is set from DISABLED to ENABLED\_STOPPED (uconf:cft.multi\_node.nodes.&lt;node\_id>.nodestate).
+The `enable_node` command enables the specified node. The node state is set from DISABLED to ENABLED_STOPPED (uconf:cft.multi_node.nodes.&lt;node_id&gt;.nodestate).
 
 **Syntax**
 
@@ -223,9 +233,10 @@ The `enable_node` command enables the specified node. The node state is set from
 
 `..INSTALL(MNENABLE)`
 
-## disable\_node
+disable_node
+-------------
 
-The `disable_node` command disables the specified node. The parameter uconf:cft.multi\_node.nodes.&lt;node\_id>.disabling is set to Yes.
+The `disable_node` command disables the specified node. The parameter uconf:cft.multi_node.nodes.&lt;node_id&gt;.disabling is set to Yes.
 
 - The node unregisters its listening points from the connection dispatcher so that it does not received incoming requests.
 - Outgoing requests coming from APIs are no longer dispatched to this node.
@@ -243,7 +254,8 @@ The `disable_node` command disables the specified node. The parameter uconf:cft.
 
 `..INSTALL(MNDISABL)`
 
-## cftping
+cftping
+-------
 
 The `cftping `command checks the status of one or all enabled nodes. By default the cftping checks status of all nodes.
 
@@ -259,7 +271,7 @@ Return values:
 
 **Options**
 
--n|-node &lt;node\_id> checks the status of the node &lt;node\_id>
+-n&#124;-node &lt;node_id&gt; checks the status of the node &lt;node_id&gt;
 
 -v verbose mode
 
@@ -271,19 +283,22 @@ Return values:
 
 `..INSTALL(MNPING)`
 
-## listlog
+listlog
+-------
 
 Use the CFTUTIL `listlog `command to display the log content, which can be defined according to certain criteria, such as date or node. Additionally, you can filter the log according to multiple criteria, or view a log that is merged for several nodes in cluster mode.
 
-## display/listcat
+display/listcat
+---------------
 
 Use the CFTUTIL `display `or CFTUTIL `listcat `to show catalog transfer records. In multi-node, these commands aggregate all catalog internal datafiles to show catalog transfer records as a unique catalog.
 
 > **Note**
 >
-> The first character in the IDTU corresponds to the node number.
+> Note: The first character in the IDTU corresponds to the node number.
 
-## listnode
+listnode
+--------
 
 The CFTUTIL **`listnode `**displays the status of the Transfer CFT cluster, including information about hosts and nodes that are part of the Transfer CFT multi-node architecture.
 

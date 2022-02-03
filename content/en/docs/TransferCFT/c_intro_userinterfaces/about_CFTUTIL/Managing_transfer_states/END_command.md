@@ -1,7 +1,7 @@
 {
     "title": "END - Confirm the end of processing",
     "linkTitle": "END - Change transfer state",
-    "weight": "310"
+    "weight": "300"
 }You can use the END command to declare
 that the processing script
 (pre, post, or acknowledgement) was executed correctly. More specifically, if there is an associated processing procedure, the PREEXEC, EXEC, ACKEXEC parameters of the CFTPARM,CFTSEND/SEND and CFTRECV/RECV commands are executed.
@@ -9,7 +9,8 @@ that the processing script
 Typically, you submit the END command to Transfer CFT via a processing procedure(s). You can, however, submit it manually. After the END command is executed, once transfers are in the C phasestep the associated
 catalog entry changes to the next phase. See [About phase and phasestep](../../../../concepts/phase_and_phasestep) for details on transfer work flows.
 
-## END parameters
+END parameters
+--------------
 
 There are two categories of parameters that you can use with the END command, those that you can use to select transfers, and those that you use to modify the catalog entry. Parameters that have an affect on the transfer entry in the catalog are listed in the **Modify in catalog** column. All others are parameters are related to the transfers as described in **Select for transfers** only.
 
@@ -47,7 +48,8 @@ There are two categories of parameters that you can use with the END command, t
 | <a href="../../../command_summary/parameter_intro/spasswd">SPASSWD</a>  |   | Modify the SPASSWD, the password for the user who is sending the file.  |
 
 
-## Using the END command
+Using the END command
+---------------------
 
 **Using ISTATE=YES**
 
@@ -71,7 +73,7 @@ CFTR12I END Treated for USER <user> : DIAGC value was "" and is now "step1_compl
 
 **Using ISTATE=NO**
 
-Upon file reception the END command selects the transfer for the defined partner, and modifies the `DIAGC `in the catalog (end\_completed in the catalog), at which point the transfer goes to the next phase because you have set `ISTATE=NO`.
+Upon file reception the END command selects the transfer for the defined partner, and modifies the `DIAGC `in the catalog (end_completed in the catalog), at which point the transfer goes to the next phase because you have set `ISTATE=NO`.
 
 ```
 END

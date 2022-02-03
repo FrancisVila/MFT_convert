@@ -2,7 +2,8 @@
     "title": "About the installed environment",
     "linkTitle": "About the installed environment",
     "weight": "170"
-}## Transfer CFT libraries
+}Transfer CFT libraries
+----------------------
 
 After complete installation of the Transfer CFT product, the procedure will create the following libraries:
 
@@ -15,7 +16,8 @@ After complete installation of the Transfer CFT product, the procedure will crea
     -   SAVF files when you apply Service Pack
     -   CFT specific objects and subsystems
 
-## Transfer CFT specific objects and subsystems
+Transfer CFT specific objects and subsystems
+--------------------------------------------
 
 Transfer CFT IBM i runs on a specific subsystem and use specific objects. These objects are automatically created during the installation, in the production library. These objects are mandatory for Transfer CFT operations, but their name can be customized when executing the INSTALL command (see Install Transfer CFT on the IBM i system). These objects are:
 

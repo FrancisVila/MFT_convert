@@ -17,7 +17,7 @@ The transfer services functions:
     of the command parameters, if the function using the syntax analyzer is
     used
 - Place the command
-    in the {{< TransferCFT/axwayvariablesComponentShortName >}} communication medium
+    in the {{< TransferCFT/axwayvariablesComponentShortName  >}} communication medium
 
 The processing performed by {{< TransferCFT/axwayvariablesComponentShortName  >}} is totally asynchronous.
 
@@ -32,11 +32,11 @@ in the communication medium.
 | --- | --- |
 | SEND | Send transfer request: file, message or reply |
 | RECV | Receive transfer request |
-| HALT | Interrupt one or more send or receive transfers with a given partner.<br/> The interrupted transfers are set to the "H" state and can be restarted at the partner's request. |
-| KEEP | Suspend one or more send or receive transfers with a given partner.<br/> The interrupted transfers are set to the "K" state and can only be restarted by a START command. |
+| HALT | Interrupt one or more send or receive transfers with a given partner.<br/> The interrupted transfers are set to the &quot;H&quot; state and can be restarted at the partner's request. |
+| KEEP | Suspend one or more send or receive transfers with a given partner.<br/> The interrupted transfers are set to the &quot;K&quot; state and can only be restarted by a START command. |
 | START | Start one or more send or receive transfers |
 | DELETE | Delete a catalog entry and any transfer in process associated with it |
-| END | Set a transfer status to executed<br/> The transfer is set to the "X" state. This indicates that end-of-transfer procedure has been correctly executed. |
+| END | Set a transfer status to executed<br/> The transfer is set to the &quot;X&quot; state. This indicates that end-of-transfer procedure has been correctly executed. |
 | SUBMIT | Submit the end-of-transfer procedure |
 | SHUT | Shut down {{< TransferCFT/axwayvariablesComponentShortName  >}} |
 | SWITCH | Switch monitoring files, LOG, STATS... |

@@ -2,7 +2,7 @@
     "title": "Operating Transfer CFT",
     "linkTitle": "Common tasks using menus",
     "weight": "220"
-}From the <span class="italic_in_para">Main Menu</span>, enter the command <span class="code" style="font-weight: bold;">**`cft`**</span> and press <span class="bold_in_para">****Enter****</span> to open the <span class="italic_in_para">Manager Menu</span>.
+}From the Main Menu, enter the command **`cft`** and press ****Enter**** to open the Manager Menu.
 
 Select from:
 

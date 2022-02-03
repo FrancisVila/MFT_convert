@@ -1,14 +1,14 @@
 {
     "title": "fparm",
     "linkTitle": "fparm",
-    "weight": "1300"
+    "weight": "1290"
 }<span id="fparm"></span>
 
 ### fparm
 
 #### CFTEXT
 
-****\[ FPARM = filename \]****
+****[ FPARM = filename ]****
 
 Name of the Parameter input file.
 

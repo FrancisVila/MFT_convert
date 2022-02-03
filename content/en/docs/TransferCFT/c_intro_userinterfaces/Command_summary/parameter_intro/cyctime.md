@@ -1,14 +1,14 @@
 {
     "title": "cyctime",
     "linkTitle": "cyctime",
-    "weight": "600"
+    "weight": "590"
 }<span id="cyctime"></span>
 
 ### cyctime
 
 #### CFTSEND, SEND, CFTRECV, RECV
 
-**\[CYCTIME = {<u>see comment</u> | *time*}\]**
+**[CYCTIME = {<span class="underline">see comment</span> &#124; *time*}]**
 
 The cyctime parameter forms
 part of the CFTSEND and CFTRECV definition. Use the cyctime parameter

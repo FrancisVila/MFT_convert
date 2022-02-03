@@ -14,13 +14,14 @@ If an APF mode is defined on one of the hosts, then you must configure the APF m
 
 After installing Transfer CFT, you must customize this Transfer CFT from a standard standalone installation to a multi-node enabled Transfer CFT. The following sections, which describe how to customize MNINIT and the VIPA programs, are based on a multi-node and multi-host example implementation. If your organization requires a mono-host installation, you can modify the example procedure accordingly.
 
-## Steps
+Steps
+-----
 
 The process consists of customizing the z/OS specific programs and members, checking the Transfer CFT configuration, and then executing the customized programs.
 
 > **Note**
 >
-> To execute the multi-node customization you require administrator rights.
+> Note: To execute the multi-node customization you require administrator rights.
 
 
 | Step  | Task  |
@@ -32,4 +33,4 @@ The process consists of customizing the z/OS specific programs and members, chec
 
 > **Note**
 >
-> Depending on the type of installation you are performing, a Transfer CFT CATALOG file may be created during installation. Additionally, files having the format CATALOG.Nxx (where Nxx represents the node identifier) are created by the MNINIT JCL. The CATALOG file without a suffix is not used, so you can delete this file (the one without the .Nxx suffix). We recommend that you comment the //CFTCAT DD cards in the JCL and procedures. For example, comment the cards in the PCFTUTIL procedure and CFTINC member.
+> Note: Depending on the type of installation you are performing, a Transfer CFT CATALOG file may be created during installation. Additionally, files having the format CATALOG.Nxx (where Nxx represents the node identifier) are created by the MNINIT JCL. The CATALOG file without a suffix is not used, so you can delete this file (the one without the .Nxx suffix). We recommend that you comment the //CFTCAT DD cards in the JCL and procedures. For example, comment the cards in the PCFTUTIL procedure and CFTINC member.

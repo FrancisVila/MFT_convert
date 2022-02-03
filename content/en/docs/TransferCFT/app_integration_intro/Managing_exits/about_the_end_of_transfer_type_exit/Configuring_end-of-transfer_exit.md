@@ -24,11 +24,12 @@ submission call is deactivated, following a time-out or {{< TransferCFT/axwayvar
 
 <span id="Defining_the_CFTEXIT_object"></span>
 
-## Defining the CFTEXIT object
+Defining the CFTEXIT object
+---------------------------
 
-<span class="bold_in_para">****Syntax****</span>
+****Syntax****
 
-`CFTEXITID = identifier,TYPE = EXEC,[FORMAT = { V23   | V24 }][LANGUAGE = {COBOL | C},][MODE = {REPLACE | CREATE | DELETE},][PARM = string,][PROG = {CFTEXIT | string},][RESERV = string ][WAITTASK = {1441 | n}]`
+`CFTEXITID = identifier,TYPE = EXEC,[FORMAT = { V23   &#124; V24 }][LANGUAGE = {COBOL &#124; C},][MODE = {REPLACE &#124; CREATE &#124; DELETE},][PARM = string,][PROG = {CFTEXIT &#124; string},][RESERV = string ][WAITTASK = {1441 &#124; n}]`
 
 
 | Parameter | Definition |
@@ -45,7 +46,8 @@ submission call is deactivated, following a time-out or {{< TransferCFT/axwayvar
 
 <span id="Defining_the_CFTPARM_object"></span>
 
-## Defining the CFTPARM object
+Defining the CFTPARM object
+---------------------------
 
 ****Syntax****
 
@@ -57,5 +59,3 @@ submission call is deactivated, following a time-out or {{< TransferCFT/axwayvar
 | <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/id">ID</a><br/> (Mandatory) | CFTPARM object identifier. |
 | <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/exiteot">EXITEOT</a>  | EXIT identifier. To activate an end-of-transfer EXIT, you must specify an identifier that points to a CFTEXIT object. |
 
-
- 

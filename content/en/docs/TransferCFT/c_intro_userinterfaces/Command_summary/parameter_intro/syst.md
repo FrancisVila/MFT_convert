@@ -1,14 +1,14 @@
 {
     "title": "syst",
     "linkTitle": "syst",
-    "weight": "3450"
+    "weight": "3470"
 }<span id="syst"></span>
 
 ### syst
 
 #### CFTPART
 
-****\[SYST = string \]****
+****[SYST = string ]****
 
 Defines the OS for the partner site.
 

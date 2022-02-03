@@ -1,7 +1,7 @@
 {
     "title": "Receive template ",
     "linkTitle": "Default receive template CFTRECV",
-    "weight": "170"
+    "weight": "160"
 }This topic describes general file reception concepts and the
 CFTRECV template.
 
@@ -14,8 +14,8 @@ a file](#Receiving_a_File)
 [About
 the default CFTRECV object](#About_the_default_CFTRECV_object)
 
-****<span style="color: #800000; font-weight: normal; text-decoration: none;">Related
-topics</span>****
+****Related
+topics****
 
 - Command syntax
     [CFTRECV](../../../c_intro_userinterfaces/command_summary#CFTRECV)
@@ -24,7 +24,8 @@ topics</span>****
 
 <span id="Receive_file_parameter_summary"></span>
 
-## Receive file parameter summary
+Receive file parameter summary
+------------------------------
 
 This section lists the parameters and syntax that you use to create
 a receive file transfer using the command line interface. Certain
@@ -45,7 +46,7 @@ parameters can be classified into categories:
 - protection of the
     parameters set: FORCE
 - free parameters
-    set locally by the {{< TransferCFT/axwayvariablesComponentShortName >}} user: COMMENT, OPERMSG, DELETE, NOTIFY
+    set locally by the {{< TransferCFT/axwayvariablesComponentShortName  >}} user: COMMENT, OPERMSG, DELETE, NOTIFY
 - execution control
     parameters:
 
@@ -87,7 +88,7 @@ the corresponding Fxxxxx parameters:
 | PeSIT E CFT/CFT<br/> PeSIT D CFT profile  | In PeSIT E (CFT to CFT), or PeSIT D CFT profile (transfer between 2 {{< TransferCFT/axwayvariablesComponentShortName  >}}s), the default values taken by the FSPACE, FTYPE, FBLKSIZE, FLRECL and FRECFM parameters are the values sent by the partner (see the CFTSEND object, NSPACE, NTYPE, NBLKSIZE, NLRECL, NRECFM parameters). For open mode operation, the FNAME parameter can also inherit the value of the partner NFNAME parameter.  |
 | --- | --- |
 | PeSIT E  | In PeSIT E, the default values taken by the FKEYLEN and FKEYPOS parameters are the values sent by the partner (see the NKEYLEN and NKEYPOS parameters of the CFTSEND object).  |
-| PeSIT SIT profile  | In PeSIT SIT profile, the "file size", "record format" and "record length" information items sent by the protocol are taken as the default values of the FSPACE, FRECFM, FLRECL parameters. |
+| PeSIT SIT profile  | In PeSIT SIT profile, the &quot;file size&quot;, &quot;record format&quot; and &quot;record length&quot; information items sent by the protocol are taken as the default values of the FSPACE, FRECFM, FLRECL parameters. |
 | ODETTE  | In the ODETTE protocol, the default values of the FRECFM, FLRECL and FSPACE parameters are deduced from the ODETTE parameters received |
 
 
@@ -95,7 +96,8 @@ the corresponding Fxxxxx parameters:
 
 <span id="Receiving_a_File"></span>
 
-## Receiving a file
+Receiving a file
+----------------
 
 The figure below shows the general relationships
 that are established between a user RECV command and the CFTPART and CFTRECV
@@ -103,7 +105,7 @@ parameter setting commands, within the framework of a transfer from a
 single partner.
 
 If there is no CFTRECV command with an identifier
-ID = FI, the default characteristics indicated in the CFTRECV ID = &lt;default>
+ID = FI, the default characteristics indicated in the CFTRECV ID = &lt;default&gt;
 command, are used to supplement those indicated in the RECV command as
 required.
 
@@ -114,7 +116,8 @@ between the RECV file command and {{< TransferCFT/axwayvariablesComponentShortNa
 
 <span id="About_the_default_CFTRECV_object"></span>
 
-## About the CFTRECV template object
+About the CFTRECV template object
+---------------------------------
 
 Use the Initial CFTRECV object to:
 
@@ -206,11 +209,11 @@ The following precedence rule applies globally:
     the parameters of CFTRECV take precedence over those of RECV  
     These parameters themselves take precedence over the protocol values
     received which themselves take precedence over any default file characteristics
-    provided for within some systems, independently of the {{< TransferCFT/axwayvariablesComponentShortName >}} parameter
+    provided for within some systems, independently of the {{< TransferCFT/axwayvariablesComponentShortName  >}} parameter
     setting.
 - Where an already
     existing file is reused to receive the data of a new transfer, it is generally
-    not possible to take new file characteristics into account: {{< TransferCFT/axwayvariablesComponentShortName >}}’s
+    not possible to take new file characteristics into account: {{< TransferCFT/axwayvariablesComponentShortName  >}}’s
     "standard" behavior then simply involves checking that the new
     values are compatible with the existing ones.
 - If data is stored
@@ -222,5 +225,3 @@ The following precedence rule applies globally:
 
 The file received may be stored during the transfer in a temporary file
 which is renamed at the end of the transfer.
-
- 

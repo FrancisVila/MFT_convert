@@ -1,7 +1,7 @@
 {
     "title": "Configuring  OFTP (ODETTE)",
     "linkTitle": "Configuring OFTP",
-    "weight": "160"
+    "weight": "150"
 }This topic describes the objects
 that you must configure to use the OFTP protocol, before submitting a file transfer. The following list describes
 each of the Transfer CFT objects. Each of these objects topics indicates
@@ -24,7 +24,8 @@ and PARTNER files.
 
 <span id="CFTPROT_parameters_in_OFTP"></span>
 
-## CFTPROT parameters in OFTP
+CFTPROT parameters in OFTP
+--------------------------
 
 To designate the Odette protocol, set the TYPE parameter to ODETTE.
 
@@ -39,7 +40,7 @@ session, set the RESYNC parameter to YES.
     catalog), the transfer is resumed from the last synchronization point
     acknowledged during the previous attempt.
 - If RESYNC = NO, no attempt is made in the session to restart interrupted
-    transfers, and the <span class="code">`CFTT71E PART=<part> IDF=<idf> IDT=<idt> remote creation reject 123`</span> message displays in the CFTLOG file.
+    transfers, and the `CFTT71E PART=<part> IDF=<idf> IDT=<idt> remote creation reject 123` message displays in the CFTLOG file.
 
 <span id="Read_time_out"></span>
 
@@ -87,8 +88,8 @@ phase.
 
 > **Note**
 >
-> In accordance with the operation
-> of the Transfer CFT transfer monitor, a transfer in process is acknowledged
+> Note: In accordance with the operation
+> of the Transfer CFT, a transfer in process is acknowledged
 > by determining synchronization points. These points acknowledge the data
 > which have just been transferred. With the Odette protocol, the synchronization
 > points are taken each time a CREDIT is received or sent. All the data

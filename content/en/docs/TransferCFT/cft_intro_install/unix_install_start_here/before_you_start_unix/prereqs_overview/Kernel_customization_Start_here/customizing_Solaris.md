@@ -9,7 +9,8 @@
 
 <span id="Solaris_10"></span>
 
-## Solaris 10
+Solaris 10
+----------
 
 {{< TransferCFT/axwayvariablesComponentShortName  >}} makes extensive use of System V IPC services and file access services. As of the Solaris 10 release, the corresponding configuration parameters are no longer kernel parameters, but instead can be defined as resource controls.
 
@@ -33,13 +34,13 @@ This means that you must modify the corresponding resource controls to meet the 
 
 ### Selecting a project
 
-If you plan to run {{< TransferCFT/axwayvariablesComponentShortName  >}} under the "axway" user account, for example, create a project associated with the user "axway" using the following system command: <span class="code">`projadd -p 201 -G axway -U axway -c "Axway" axway`</span>
+If you plan to run {{< TransferCFT/axwayvariablesComponentShortName  >}} under the "axway" user account, for example, create a project associated with the user "axway" using the following system command: `projadd -p 201 -G axway -U axway -c "Axway" axway`
 
-This command creates the project "axway" and associates the <span class="bold_in_para">****uid axway****</span> and<span class="bold_in_para"> ****gid axway****</span> with this project.
+This command creates the project "axway" and associates the ****uid axway**** and ****gid axway**** with this project.
 
 Alternatively, you may choose to not associate a specific project with {{< TransferCFT/axwayvariablesComponentShortName  >}}. In this case, {{< TransferCFT/axwayvariablesComponentShortName  >}} will run under a project named "default".
 
-For the following command examples, we use "cft\_project" as the name of the project chosen for {{< TransferCFT/axwayvariablesComponentShortName  >}}. This can be either a specific project (named "axway", in the example above) or simply the project "default".
+For the following command examples, we use "cft_project" as the name of the project chosen for {{< TransferCFT/axwayvariablesComponentShortName  >}}. This can be either a specific project (named "axway", in the example above) or simply the project "default".
 
 #### Change the maximum size of global memory segments
 

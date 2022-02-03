@@ -1,28 +1,28 @@
 {
     "title": "class",
     "linkTitle": "class",
-    "weight": "410"
+    "weight": "400"
 }<span id="class"></span>
 
 ### class
 
 #### CFTNET
 
-**\[CLASS = n\]  **{<span style="text-decoration: underline;">1</span>..32}
+**[CLASS = n]  **{1..32}
 
 Class of the local resource used to establish a connection with a partner. Class associated with this network resource.
 
 > **Note**
 >
-> You cannot define two CFTNETs that have the same CLASS value.
+> Note: You cannot define two CFTNETs that have the same CLASS value.
 
 #### CFTTCP
 
-**\[CLASS = {<span style="text-decoration: underline;">1</span>
-| n}\]    ** {1 .. 32}
+**[CLASS = {1
+&#124; n}]    ** {1 .. 32}
 
 Logical class of the physical link. The maximum is operating system dependent
-and equal to NM\_MAX\_CLASS.
+and equal to NM_MAX_CLASS.
 
 Recommended maximum values are:
 

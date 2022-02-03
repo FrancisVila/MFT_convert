@@ -1,13 +1,15 @@
 {
     "title": "Rollback upgrade and restore the catalog",
     "linkTitle": "Rollback upgrade and restore catalog",
-    "weight": "250"
-}## Prerequisites
+    "weight": "260"
+}Prerequisites
+-------------
 
 - You must have made a backup of the environment prior to the upgrade you are rolling back.
-- Upgraded from {{< TransferCFT/headerfootervariableshflongproductname >}} 3.4 or higher to {{< TransferCFT/headerfootervariableshflongproductname >}} {{< TransferCFT/axwayvariablesReleaseNumber >}}
+- Upgraded from {{< TransferCFT/headerfootervariableshflongproductname  >}} 3.4 or higher to {{< TransferCFT/headerfootervariableshflongproductname  >}} {{< TransferCFT/axwayvariablesReleaseNumber  >}}
 
-## Procedure
+Procedure
+---------
 
 1. Export all catalogs. Base your export procedure on the following example:  
     ```
@@ -52,7 +54,8 @@
 
 <span id="Upgrade"></span>
 
-## Upgrade version rollback
+Upgrade version rollback
+------------------------
 
 The following procedure enables you to rollback to the previous state if you have applied a SP or patch. This is useful if there is an incident during the application of a PTF, or when validating a patch.
 

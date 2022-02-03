@@ -1,7 +1,7 @@
 {
     "title": "Configuring  partners",
     "linkTitle": "Configuring partners",
-    "weight": "170"
+    "weight": "160"
 }Transfer CFT OFTP (ODETTE) partners are the sending and receiving installations.
 
 The NSPART and NRPART parameters are used to describe these partners.

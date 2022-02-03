@@ -1,7 +1,7 @@
 {
     "title": "suser",
     "linkTitle": "suser",
-    "weight": "3420"
+    "weight": "3440"
 }<span id="suser"></span>
 
 ### suser
@@ -10,7 +10,7 @@
 
 #### CFTRECV, CFTSEND, SEND, RECV, DISPLAY, LISTCAT
 
-**\[SUSER = *string* 32 \]**
+**[SUSER = *string* 32 ]**
 
 *PeSIT E only*
 
@@ -29,8 +29,8 @@ partner sends and controls this parameter, where:
 
 > **Note**
 >
-> You can use the RUSER and SUSER fields when performing a catalog search. Additionally these fields are integrated into the catalog index. See RUSER.
+> Note: You can use the RUSER and SUSER fields when performing a catalog search. Additionally these fields are integrated into the catalog index. See RUSER.
 
-See [PeSIT extension PI codes]() for information on PI codes.
+See PeSIT extension PI codes for information on PI codes.
 
 [Return to Command index](../../)

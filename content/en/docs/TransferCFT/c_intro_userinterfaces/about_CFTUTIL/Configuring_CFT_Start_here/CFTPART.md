@@ -1,7 +1,7 @@
 {
     "title": "Partners - CFTPART ",
     "linkTitle": "CFTPART - Defining partners",
-    "weight": "400"
+    "weight": "390"
 }This page describes how to define the Partners object (CFTPART ) to set partner
 characteristics. Use this command to describe partner characteristics.
 
@@ -16,7 +16,7 @@ See also:
 | Parameter  | Description  |
 | --- | --- |
 | <a href="../../../command_summary/parameter_intro/comment">COMMENT</a>  | Local comment associated with the partner.<br/> Not used during transfers. May be queried, for example by the LISTPART command. It can consequently be used to locally associate a long text (description in plain language) with the partner. |
-| <a href="../../../command_summary/parameter_intro/commut">COMMUT</a> <br/> Only applicable for a store and forward site | Type of switching supported for this partner.<br/> The following types are possible:<br/> • YES: corresponds to "store and forward" switching<br/> • SERVER: corresponds to "VAN server switching"<br/> • NO: switching is refused for this partner<br/> • PART: store and forward mode is forced in server mode if the recipient specified in the IPART parameter is not the final receiver<br/> Processing according to the switching type is described in Transfer with routing - Store and forward. |
+| <a href="../../../command_summary/parameter_intro/commut">COMMUT</a> <br/> Only applicable for a store and forward site | Type of switching supported for this partner.<br/> The following types are possible:<br/> • YES: corresponds to &quot;store and forward&quot; switching<br/> • SERVER: corresponds to &quot;VAN server switching&quot;<br/> • NO: switching is refused for this partner<br/> • PART: store and forward mode is forced in server mode if the recipient specified in the IPART parameter is not the final receiver<br/> Processing according to the switching type is described in Transfer with routing - Store and forward. |
 | <a href="">COS</a>  | Class of service parameter as it relates to bandwidth control.  |
 | <a href="../../../command_summary/parameter_intro/ctrlpart">CTRLPART</a> | Optional parameter that is relevant only in server mode. When a transfer is initiated by a remote partner, Transfer CFT always controls its identity. If the remote sender is not the initial sender, store and forward mode, the Transfer CFT can choose to control the initial sender identity according to CTRLPART parameter.  |
 | <a href="../../../command_summary/parameter_intro/fcharset">FCHARSET</a>  | Defines the local file encoding. See also <a href="../../../command_summary/parameter_intro/ncharset">ncharset.</a>  |
@@ -41,12 +41,13 @@ See also:
 | <a href="">SSH</a>  | Associates a security profile with a partner definition.  |
 | <a href="../../../command_summary/parameter_intro/ssl">SSL</a>  | The parameter used to associate a security profile with a partner definition.  |
 | <a href="../../../command_summary/parameter_intro/state">STATE</a>  | Partner state. |
-| <a href="../../../command_summary/parameter_intro/syst">SYST</a>  | Type of operating system supporting the partner.<br/> If this parameter is not defined, the partner is considered to have the same operating system as the local computer.<br/> This parameter allows the monitor:<br/> • To find the data code on the partner computer (see the comment for the FCODE parameter of the <a href="../../../../concepts/cft_configuration_concepts_start_here/translation_table_concepts">CFTXLATE</a> command)<br/> • To declare the file type, in this profile and when the partner is the receiver, in terms of its operating system, to the partner Transfer CFT (NTYPE parameter) |
+| <a href="../../../command_summary/parameter_intro/syst">SYST</a>  | Type of operating system supporting the partner.<br/> If this parameter is not defined, the partner is considered to have the same operating system as the local computer.<br/> This parameter allows the monitor:<br/> • To find the data code on the partner computer (see the comment for the FCODE parameter of the <a href="../../../../concepts/transfer_command_overview/using_transcoding/translation_table_concepts">CFTXLATE</a> command)<br/> • To declare the file type, in this profile and when the partner is the receiver, in terms of its operating system, to the partner Transfer CFT (NTYPE parameter) |
 | <a href="../../../command_summary/parameter_intro/trk">TRK</a> | Specification of how much detail Transfer CFT provides Sentinel about transfers. Transfer CFT sends detail about the transfers in the form of tracked instances. |
-| <a href="../../../command_summary/parameter_intro/xlate">XLATE</a>  | Identifier of the translation table used for transfers with this partner.<br/> The translation table is defined by the CFTXLATE ID= &lt;xlate&gt; object.<br/> If this parameter is not defined, the translation tables may also be specified in the SEND/CFTSEND (or RECV/CFTRECV) commands. If these tables are not defined in these commands, the CFTXLATE command ID=&lt;default&gt; specifies them by default. If this command is not included for messages as well as for files, the translation tables that are internal to the monitor are used.<br/> See also <a href="../../../../concepts/cft_configuration_concepts_start_here/translation_table_concepts">Conversion tables: Translation</a>.  |
+| <a href="../../../command_summary/parameter_intro/xlate">XLATE</a>  | Identifier of the translation table used for transfers with this partner.<br/> The translation table is defined by the CFTXLATE ID= &lt;xlate&gt; object.<br/> If this parameter is not defined, the translation tables may also be specified in the SEND/CFTSEND (or RECV/CFTRECV) commands. If these tables are not defined in these commands, the CFTXLATE command ID=&lt;default&gt; specifies them by default. If this command is not included for messages as well as for files, the translation tables that are internal to the monitor are used.<br/> See also <a href="../../../../concepts/transfer_command_overview/using_transcoding/translation_table_concepts">Conversion tables: Translation</a>.  |
 
 
-## CFTUTIL example
+CFTUTIL example
+---------------
 
 ```
 CFTPART     MODE =    

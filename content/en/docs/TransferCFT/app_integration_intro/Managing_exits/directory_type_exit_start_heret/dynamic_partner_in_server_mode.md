@@ -6,7 +6,7 @@
 a transfer request only if the partner is pre-defined in the parameter
 settings. This topic describes a mode where {{< TransferCFT/axwayvariablesComponentShortName  >}} can accept a
 connection from a partner that is not already defined. This type of partner
-is referred to as a <span style="font-style: italic;">**dynamic partner**</span>.
+is referred to as a **dynamic partner**.
 
 {{< TransferCFT/axwayvariablesComponentShortName  >}} can accept connections from a correspondent not defined
 in advance by:
@@ -18,7 +18,8 @@ in advance by:
 - Combining the 2
     mechanisms described above
 
-## Creating a partner from a model
+Creating a partner from a model
+-------------------------------
 
 For incoming calls of unknown origin, where no local partner description
 corresponds to the network name, the user defines a partner CFTPART
@@ -29,7 +30,7 @@ the routing and switching mechanism.
 
 > **Note**
 >
-> For security reasons, the
+> Note: For security reasons, the
 > DYNAM = mechanism is rarely used
 > without also executing additional checks in a directory EXIT task.
 
@@ -90,12 +91,13 @@ The parameters IMINTIME and IMAXTIME are also checked.
 
 > **Note**
 >
-> Apart
+> Note: Apart
 > from checking the resource class, the above checks can be made (or remade)
 > in the directory type EXIT task, if the latter is defined in the protocol
 > description (EXIT parameter of the CFTPROT command).
 
-## Putting a file at disposal on hold
+Putting a file at disposal on hold
+----------------------------------
 
 A file is put at disposal, which means on hold, for a partner by a transfer
 request of the type:

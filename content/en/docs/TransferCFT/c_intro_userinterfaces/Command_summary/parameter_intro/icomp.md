@@ -1,14 +1,14 @@
 {
     "title": "icomp",
     "linkTitle": "icomp",
-    "weight": "1500"
+    "weight": "1490"
 }<span id="icomp"></span>
 
 ### {{< TransferCFT/SystemTitle  >}}
 
 #### COPYFILE
 
-\[ICOMP = {<u>0</u> | 15 \]
+[ICOMP = {<span class="underline">0</span> &#124; 15 ]
 
 Compresses the input file data.
 

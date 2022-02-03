@@ -1,7 +1,7 @@
 {
     "title": "Trace  functions in CFT Windows",
     "linkTitle": "Trace functions",
-    "weight": "290"
+    "weight": "270"
 }This topic introduces trace functions in Transfer CFT Windows. Trace
 functions are processes that concern the system and network sections of
 Transfer CFT. These functions do not concern the application traces implemented

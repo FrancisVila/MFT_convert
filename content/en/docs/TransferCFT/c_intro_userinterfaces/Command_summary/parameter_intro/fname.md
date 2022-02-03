@@ -1,7 +1,7 @@
 {
     "title": "fname",
     "linkTitle": "fname",
-    "weight": "1230"
+    "weight": "1220"
 }<span id="fname"></span>
 
 ### fname
@@ -10,7 +10,7 @@
 
 #### CFTACCNT
 
-****\[FNAME = filename \]   string
+****[FNAME = filename ]   string
 64****
 
 Name of the statistical file. This name can be a:
@@ -22,7 +22,7 @@ Name of the statistical file. This name can be a:
 
 #### CFTAUTH
 
-****\[FNAME = filename \]    string
+****[FNAME = filename ]    string
 512****
 
 The name of the file where authorized or prohibited users are defined.
@@ -34,10 +34,10 @@ The number of identifiers in this list is not limited. Build the file
 using the following rules:
 
 - a record of this
-    file can only contain one <span style="font-weight: bold;">****idf****</span>
+    file can only contain one ****idf****
 - the size of the
     record is limited to 80 characters
-- an <span style="font-weight: bold;">****idf****</span>
+- an ****idf****
     must start in the first column and only the first 32 characters of the
     record are taken into account
 - characters after
@@ -47,14 +47,14 @@ using the following rules:
 - the file can contain
     records of zero length
 
-You cannot complete this field if you have selected the <span style="font-weight: bold;">****idf****</span>
+You cannot complete this field if you have selected the ****idf****
 button in the old Transfer CFT UI.
 
 <span id="fname_CFTCAT"></span>
 
 #### CFTCAT
 
-****\[FNAME = filename \]   string
+****[FNAME = filename ]   string
 64****
 
 Catalog file name. Service files, such as Catalog and Log. This name can be:
@@ -66,7 +66,7 @@ Catalog file name. Service files, such as Catalog and Log. This name can be:
 
 #### CFTCOM, CFTFILE, CONFIG
 
-****\[FNAME = filename \]   {string 64}****
+****[FNAME = filename ]   {string 64}****
 
 <span id="fname_CFTFILE"></span>
 
@@ -76,13 +76,13 @@ Catalog file name. Service files, such as Catalog and Log. This name can be:
 
 #### COPYFILE
 
-****\[FNAME = filename \]   {string 512}****
+****[FNAME = filename ]   {string 512}****
 
 <span id="fname_CFTDEST"></span>
 
 #### CFTDEST
 
-****\[FNAME = filename\]
+****[FNAME = filename]
  {512
 characters }****
 
@@ -145,7 +145,7 @@ The following symbolic variables can be used:
 
 #### CFTRECV, RECV
 
-**\[FNAME = filename\]    {1...512}**
+**[FNAME = filename]    {1...512}**
 
 Name of the physical receiver file,
 filename or complete path name, of the directory.
@@ -179,15 +179,15 @@ The complete path name includes the names of directories, or any other
 organization specific to the environment concerned, used to group files:
 library, catalog, PDSE, etc.
 
-Normally, the folder referenced in <span class="code">`fname `</span> parameter should exist or the transfer fails. However, depending on your environment, you may use a special character that can be set with the cft.char\_directory\_protect to implicitly create part of a path structure. An OS specific character delimits the path to be created (intermediate directories), where the names of the sub-directories appearing to the right of the character are created. Please see the uconf [char\_directory]() for more information.
+Normally, the folder referenced in `fname ` parameter should exist or the transfer fails. However, depending on your environment, you may use a special character that can be set with the cft.char_directory_protect to implicitly create part of a path structure. An OS specific character delimits the path to be created (intermediate directories), where the names of the sub-directories appearing to the right of the character are created. Please see the uconf [char_directory](../../../../cft_intro_install/about_this_document_vms/c_cft_introduction_vms/installation/platform_specific_characters_and_functions) for more information.
 
 **Example**
 
-The tree structure is created after the plus special character (<span style="color: #b22222; font-weight: bold;">****+****</span>):
+The tree structure is created after the plus special character (****+****):
 
 `FNAME=’/home/cft/runtime/myapp/+user1/files/&idtu.rcv`
 
-In  this example, the `user1 `and <span class="code">`files`</span> folders are created if they did not already exist.
+In  this example, the `user1 `and `files` folders are created if they did not already exist.
 
 The filename may:
 
@@ -212,16 +212,17 @@ The following variables may be used to form the FNAME character string:
 - &NFNAME,&FROOT,&FSUF,&FPATH,&FUNITC,&FUNIT,&SFNAME
 - &NCHARSET,&FCHARSET
 
-The ‘&’ character here replaces the char\_symb character specific
+The ‘&’ character here replaces the char_symb character specific
 to each operating system. Refer to the {{< TransferCFT/axwayvariablesComponentShortName  >}} *Operations Guide*
 corresponding to your OS.
 
 ```
-**PeSIT E CFT/CFT**
+**PeSIT E CFT/CFT
 The &FUNIT, &FUNITC, &FPATH, &FROOT and
 &FSUF variables are used so that the FNAME parameter gives the
 full "path" pointing to the file to be written.
 ```
+**
 
 Specific case using &NFNAME symbolic
 variable    
@@ -234,7 +235,8 @@ This variable is only used in the open mode.
 
 *****Receiving a file with versions          *****
 
-**z/OS**
+**z/OS,
+OpenVMS**
 
 This name includes a root and a version number.
 
@@ -248,13 +250,13 @@ by FNAME.
 
 > **Note**
 >
-> When
+> Note: When
 > a temporary file is used, the WFNAME parameter, there may be restrictions
 > related to the operating system. On IBM systems, for example,
 > the type of unit must not appear in the name of the FNAME file.
 
 ```
-**PeSIT E CFT/CFT profile**
+**PeSIT E CFT/CFT profile
 Receiving a group of copied/concatenated files. This
 name must correspond to a directory name if a copy/concatenation
 operation is performed when the files are sent (transfer of a group
@@ -263,17 +265,17 @@ The data received is stored in the temporary file specified
 in the WFNAME  parameter. The files are then deconcatenated in the
 directory specified by FNAME.
 ```
-<span id="fname CFTSEND__CFTRECV__CFTISEND"></span>
+<span id="fname CFTSEND__CFTRECV__CFTISEND"></span>**
 
 #### CFTSEND, SEND
 
-****\[FNAME = {filename | mask | dirname |
-&lt;file-symb>filename | &lt;file-symb>mask | &lt;file-symb>dirname}\]    {string
+****[FNAME = {filename &#124; mask &#124; dirname &#124;
+&lt;file-symb&gt;filename &#124; &lt;file-symb&gt;mask &#124; &lt;file-symb&gt;dirname}]    {string
 512} ****
 
 > **Note**
 >
-> here the &lt;file-symb> character is specific to each system (for example # on Windows and @ on UNIX environments).
+> Note: here the &lt;file-symb&gt; character is specific to each system (for example \# on Windows and @ on UNIX environments).
 
 Name of the local file, directory, indirection file, selection mask
 or selection directory to be sent. The maximum length of a filename value-type
@@ -291,7 +293,7 @@ FNAME=filename where the FNAME is expressed as an absolute name:
 FNAME= '/home/cft/runtime/pub/FTEST'
 ```
 
-<span class="code">`FNAME = filename`</span> where the FNAME is expressed in relative name from runtime folder:
+`FNAME = filename` where the FNAME is expressed in relative name from runtime folder:
 
 ```
 FNAME = 'pub/FTEST'
@@ -303,19 +305,19 @@ FNAME=dirname which transfers a file that contains the list of all files in the 
 FNAME= '/home/cft/runtime/pub' or FNAME= 'pub'
 ```
 
-FNAME=&lt;file-symb>filename which transfers all the files referenced in the list file:
+FNAME=&lt;file-symb&gt;filename which transfers all the files referenced in the list file:
 
 ```
 FNAME= '@/home/cft/runtime/pub/list'
 ```
 
-FNAME=&lt;file-symb>mask  which transfers all the files that correspond to the mask criteria:
+FNAME=&lt;file-symb&gt;mask  which transfers all the files that correspond to the mask criteria:
 
 ```
 FNAME= '@/home/cft/runtime/pub/F\*'
 ```
 
-FNAME=&lt;file-symb>dirname which transfers all the files in dirname folder:
+FNAME=&lt;file-symb&gt;dirname which transfers all the files in dirname folder:
 
 ```
 FNAME= '@/home/cft/runtime/pub'
@@ -324,7 +326,7 @@ FNAME= '@/home/cft/runtime/pub'
 
 #### CFTLOG
 
-**\[FNAME = filename\]
+**[FNAME = filename]
    {string
 64}**
 
@@ -342,7 +344,7 @@ Do not use logical names.
 
 #### CFTXLATE
 
-**\[FNAME = filename\]
+**[FNAME = filename]
   {string
 512}**
 
@@ -355,7 +357,7 @@ specific to the system.
 
 #### EXTAMCACHE
 
-**\[FNAME = filename\]
+**[FNAME = filename]
   {string
 }**
 

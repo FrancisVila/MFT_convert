@@ -16,15 +16,16 @@
 | <a href="transfer_protocol_concepts">CFTPROT</a>  | Transfer protocol  |
 
 
-## What is a service file medium
+What is a service file medium
+-----------------------------
 
 {{< TransferCFT/axwayvariablesComponentShortName  >}} medium refers to any data support or local communication
 means used by {{< TransferCFT/axwayvariablesComponentShortName  >}}. A distinction is made between the media:
 
 - Accessed by the
-    {{< TransferCFT/axwayvariablesComponentShortName >}}
+    {{< TransferCFT/axwayvariablesComponentShortName  >}}
 - Accessed by the
-    {{< TransferCFT/axwayvariablesComponentShortName >}} utility
+    {{< TransferCFT/axwayvariablesComponentShortName  >}} utility
 - Used by the interactive
     functions
 - Used by the programming
@@ -37,8 +38,8 @@ The following terms are used in this section:
 - PHYSICAL FILE which
     describes the name and physical location of a file type medium
 - If the file name
-    begins with a reserved character, designated by <span style="font-weight: bold;">****char-file****</span> - see the {{< TransferCFT/axwayvariablesComponentShortName >}}*Operations Guide* corresponding to your OS,
-    this is a logical name interpreted by {{< TransferCFT/axwayvariablesComponentShortName >}}
+    begins with a reserved character, designated by ****char-file**** - see the {{< TransferCFT/axwayvariablesComponentShortName  >}}*Operations Guide* corresponding to your OS,
+    this is a logical name interpreted by {{< TransferCFT/axwayvariablesComponentShortName  >}}
 - CFTIN and CFTOUT
     for standard task input/output
 - TCP synchronous
@@ -47,23 +48,23 @@ The following terms are used in this section:
 The {{< TransferCFT/axwayvariablesComponentShortName  >}} medium names can be set up for the:
 
 - Programming interface
-    (catalog name, communication medium name with the {{< TransferCFT/axwayvariablesComponentShortName >}}):
+    (catalog name, communication medium name with the {{< TransferCFT/axwayvariablesComponentShortName  >}}):
     by the OPEN and COM services
-- {{< TransferCFT/axwayvariablesComponentShortName >}}:
+- {{< TransferCFT/axwayvariablesComponentShortName  >}}:
     CFTPARM, CFTCOM, CFTCAT, CFTLOG, CFTACCNT objects (the name of the Parameter
     file cannot be changed)
-- {{< TransferCFT/axwayvariablesComponentShortName >}} utility:
+- {{< TransferCFT/axwayvariablesComponentShortName  >}} utility:
     CONFIG command
 - Interactive functions:
     the customization function is used to set the names of the Parameter,
-    Partner, Catalog and Log files, and the {{< TransferCFT/axwayvariablesComponentShortName >}} communication medium
+    Partner, Catalog and Log files, and the {{< TransferCFT/axwayvariablesComponentShortName  >}} communication medium
 
 <span id="CFT_monitor_media"></span>
 
 ### {{< TransferCFT/axwayvariablesComponentShortName  >}} media files
 
-You cannot change the name of the <span style="font-style: italic;">**parameter
-file**</span>. It constitutes the {{< TransferCFT/axwayvariablesComponentShortName  >}} anchor point containing all the data
+You cannot change the name of the **parameter
+file**. It constitutes the {{< TransferCFT/axwayvariablesComponentShortName  >}} anchor point containing all the data
 defined by the parameter setting, and in particular the names of the other
 files and media. However, you can establish a correspondence between this
 logical name and a physical name in the flow of CFT activation commands.

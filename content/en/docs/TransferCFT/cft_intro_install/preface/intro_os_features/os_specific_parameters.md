@@ -2,9 +2,10 @@
     "title": "Operating system specific parameters",
     "linkTitle": "OS specific parameters",
     "weight": "250"
-}## Platform specific characters
+}Platform specific characters
+----------------------------
 
-********<span class="autonumber"></span>{{< TransferCFT/axwayvariablesComponentLongName  >}} Guardian specific values********
+********{{< TransferCFT/axwayvariablesComponentLongName  >}} Guardian specific values********
 
 
 | Notation | Object | Value |
@@ -15,7 +16,7 @@
 | file_symb | Prefix for a file name passed to CFTUTIL as a parameter | @ |
 
 
-********<span class="autonumber"></span>File properties automatically retrieved for send operations********
+********File properties automatically retrieved for send operations********
 
 
 | Notation | Object |
@@ -27,7 +28,7 @@
 | FTYPE | YES |
 
 
-********<span class="autonumber"></span>FTYPE values and associated implicit FCODE default values for send operations********
+********FTYPE values and associated implicit FCODE default values for send operations********
 
 
 | FTYPE | FCODE |
@@ -36,9 +37,9 @@
 | E | ASCII |
 
 
-********<span class="autonumber"></span>FTYPE, FRECFM, and FORG combinations for send operations********
+********FTYPE, FRECFM, and FORG combinations for send operations********
 
-QQQ\_QQQ\_CHECK phrase below
+The last 3 columns in the following table provide the implicit values of each Guardian type for FTYPE, FRECFM, and FORG.
 
 
 | Guardian<br /> type | Guardian<br /> code | File type | FTYPE  | FRECFM  | FORG  |
@@ -53,36 +54,132 @@ QQQ\_QQQ\_CHECK phrase below
 
 > **Note**
 >
-> Empty cells indicate that the information is not significant.
+> Note: Empty cells indicate that the information is not significant.
 
 > **Note**
 >
-> \[1\] You can also send variable length record files by setting FRECFM = V.
+> Note: [1] You can also send variable length record files by setting FRECFM = V.
 
-********<span class="autonumber"></span>FTYPE, FRECFM, and FORG values for receive operations********
+********FTYPE, FRECFM, and FORG values for receive operations********
 
+FTYPE
 
-| FTYPE | FRECFM | FORG  | File Type | Guardian Type | Guardian Code |
-| --- | --- | --- | --- | --- | --- |
-|   | U |   | Binary stream | U | 0 |
-| E |   |   | Edit file | U | 101 |
-|   | F | SEQ  | Fixed sequential | E | 0 |
-|   | V |   | Sequential, variable emulation | E | 1 |
-|   | F  | DIR[2]  | Direct fixed  | R  | 0  |
-|   | V  | DIR [2]  | Direct fixed, variable emulation  | R  | 1  |
-|   | F  | IDX [2]  | Fixed indexed sequential  | K  | 0  |
-|   | V  | IDX [2]  | Indexed sequential, variable emulation  | K  | 1  |
+FRECFM
 
+FORG
+
+File Type
+
+Guardian Type
+
+Guardian Code
+
+ 
+
+U
+
+ 
+
+Binary stream
+
+U
+
+0
+
+E
+
+ 
+
+ 
+
+Edit file
+
+U
+
+101
+
+ 
+
+F
+
+SEQ
+
+Fixed sequential
+
+E
+
+0
+
+ 
+
+V
+
+ 
+
+Sequential, variable emulation
+
+E
+
+1
+
+ 
+
+F
+
+DIR[2]
+
+Direct fixed
+
+R
+
+0
+
+ 
+
+V
+
+DIR [2]
+
+Direct fixed, variable emulation
+
+R
+
+1
+
+ 
+
+F
+
+IDX [2]
+
+Fixed indexed sequential
+
+K
+
+0
+
+ 
+
+V
+
+IDX [2]
+
+Indexed sequential, variable emulation
+
+K
+
+1
 
 > **Note**
 >
-> Empty cells indicate that the information is not significant.
+> Note: Empty cells indicate that the information is not significant.
 
 > **Note**
 >
-> \[2\] Read the file organization from the network, explicitly set FORG to FORG= ‘ ‘. Otherwise, FORG is always sequential (FORG = SEQ).
+> Note: [2] Read the file organization from the network, explicitly set FORG to FORG= ‘ ‘. Otherwise, FORG is always sequential (FORG = SEQ).
 
-## Platform specific parameters and values
+Platform specific parameters and values
+---------------------------------------
 
 ****ATTSUSER****
 
@@ -92,7 +189,7 @@ Use the ATTSUSER parameter to set specific attributes for receiving native files
 
 Forces the file CODE attribute. This value should be consistent with the file structure and the restrictions of the system. If FCODE is not specified, Transfer CFT sets the code per the table iah,n Figure 5.
 
-<span class="bold_in_para">****Example****</span>: <span class="code">`ATTSUSER    = 'FCODE=180'`</span>
+****Example****: `ATTSUSER    = 'FCODE=180'`
 
 The received file is created with 180 as the code.
 
@@ -100,7 +197,7 @@ The received file is created with 180 as the code.
 
 Forces the file FORMAT attribute. This value is either 1 or 2. If FORMAT is not specified, Transfer CFT sets the format according to the estimated size of the received file. A file whose size is greater than 2GB has the format 2, while a file having a size less than 2GB has the format 1.
 
-<span class="bold_in_para">****Example****</span>: <span class="code">`ATTSUSER    = 'FORMAT=2'`</span>
+****Example****: `ATTSUSER    = 'FORMAT=2'`
 
 The received file is created with the format 2.
 
@@ -108,7 +205,7 @@ The received file is created with the format 2.
 
 Additionally, you can use multiple values:
 
-<span class="bold_in_para">****Example****</span>: <span class="code">`ATTSUSER    = ' FCODE=180,FORMAT=1'`</span>
+****Example****: `ATTSUSER    = ' FCODE=180,FORMAT=1'`
 
 The received file is created with the format 1, and 180 as the code.
 
@@ -116,10 +213,10 @@ The received file is created with the format 1, and 180 as the code.
 
 If specified, this parameter forces the BUFFERED attribute for the Guardian file. The possible values are 0 (NO BUFFERED) and 1 (BUFFERED). If not specified, Transfer CFT does not force the attribute. You can find more information on this attribute in the *File Utility Program (FUP) Reference Manual*.
 
-**Example**: <span class="code">`ATTSUSER = 'BUFFERED=1'`</span>
+**Example**: `ATTSUSER = 'BUFFERED=1'`
 
 The received file is created with a BUFFERED attribute set.
 
 > **Note**
 >
-> If a received file has the BUFFERED option, the file write cache is flushed while the PeSIT synchronization points are set. This means that there is no data loss (the file is not altered) if the file transfer is restarted. This applies whether BUFFERED is set on Transfer CFT or by an explicit file creation operation.
+> Note: If a received file has the BUFFERED option, the file write cache is flushed while the PeSIT synchronization points are set. This means that there is no data loss (the file is not altered) if the file transfer is restarted. This applies whether BUFFERED is set on Transfer CFT or by an explicit file creation operation.

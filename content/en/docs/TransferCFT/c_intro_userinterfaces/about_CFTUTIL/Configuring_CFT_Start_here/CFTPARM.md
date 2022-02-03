@@ -1,7 +1,7 @@
 {
     "title": "CFTPARM  - General parameters",
     "linkTitle": "CFTPARM - General parameters",
-    "weight": "390"
+    "weight": "380"
 }The <span id="Defining_CFTPARM"></span>CFTPARM object is used to specify parameters
 that control the operation of Transfer CFT as a whole and to select other
 parameter setting commands to be used at run time. The [Symbolic variables](../../../command_summary/symbolic_variables) topic describes
@@ -81,7 +81,8 @@ with your operating system.
 
 <span id="CFTPARM_command_line_examples"></span>
 
-## CFTPARM command line examples
+CFTPARM command line examples
+-----------------------------
 
 This topic lists and describes an example of the CFTPARM object using
 command line operations to define the CFTPARM object.

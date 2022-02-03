@@ -31,7 +31,7 @@ retrieve a single technical parameter value.
 UCONFGET id=PARAMETER-KEY
 ```
 
-Results: <span class="code">`PARAMETER-KEY=PARAMETER-VALUE`</span>
+Results: `PARAMETER-KEY=PARAMETER-VALUE`
 
 **UCONFUNSET**
 
@@ -51,7 +51,7 @@ UCONFUNSET id=PARAMETER-KEY
 Use to display multiple technical parameter values.
 
 ```
-LISTUCONF id=PARAMETER-KEY-PATTERN,scope=ALL|USER|DEFAULT,content=BRIEF|FULL|DEBUG
+LISTUCONF id=PARAMETER-KEY-PATTERN,scope=ALL&#124;USER&#124;DEFAULT,content=BRIEF&#124;FULL&#124;DEBUG
 ```
 
 RECONFIG TYPE=UCONF

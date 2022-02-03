@@ -1,7 +1,7 @@
 {
     "title": "Communication  media",
     "linkTitle": "Communication media",
-    "weight": "260"
+    "weight": "250"
 }-   [About
     the communication media](#About_the_communication_media)
 - [Defining
@@ -90,6 +90,6 @@ This example causes CFTUTIL to wait a maximum of 120 seconds before disappearing
 
 > **Note**
 >
-> This environment variable
+> Note: This environment variable
 > can be used by all types of Transfer CFT interface: CFTUTIL, Copilot and
 > the Transfer CFT API application.

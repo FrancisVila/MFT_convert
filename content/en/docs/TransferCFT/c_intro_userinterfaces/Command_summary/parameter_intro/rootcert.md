@@ -1,7 +1,7 @@
 {
     "title": "rootcert",
     "linkTitle": "rootcert",
-    "weight": "2940"
+    "weight": "2960"
 }<span id="rootcert"></span>
 
 ### {{< TransferCFT/SystemTitle  >}}
@@ -13,5 +13,3 @@ Enter a string.
  
 
 [Return to Command index](../../)
-
- 

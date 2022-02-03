@@ -21,12 +21,13 @@ topics
 
 <span id="What_is_the_CFTPARM_object_"></span>
 
-## What is the CFTPARM object?
+What is the CFTPARM object?
+---------------------------
 
 The CFTPARM object defines general parameters that:
 
 - Specify the parameters
-    that control {{< TransferCFT/axwayvariablesComponentShortName >}} operations globally
+    that control {{< TransferCFT/axwayvariablesComponentShortName  >}} operations globally
 - Select the other
     parameter setting commands that are taken into account during execution
 
@@ -70,7 +71,8 @@ so on.
 
 <span id="How_does_the_CFTPARM_object_work_"></span>
 
-## How does the CFTPARM object work?
+How does the CFTPARM object work?
+---------------------------------
 
 CFTPARM is the master object and is used, in
 particular, to reference the other configuration objects.

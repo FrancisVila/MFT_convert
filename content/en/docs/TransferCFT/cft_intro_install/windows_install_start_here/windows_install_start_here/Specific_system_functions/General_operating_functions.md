@@ -1,7 +1,7 @@
 {
     "title": "General  operating functions",
     "linkTitle": "General operating functions",
-    "weight": "250"
+    "weight": "240"
 }-   [Logical
     file names](#Logical_file_names)
 - [Using
@@ -9,7 +9,8 @@
 
 <span id="Logical_file_names"></span>
 
-## Logical file names
+Logical file names
+------------------
 
 Transfer CFT can use logical file names in order to designate the physical
 files and, if necessary, to state the characteristics of these files.
@@ -41,7 +42,8 @@ before operating Transfer CFT:
 - Transfer CFT API
     COM command
 
-## Logical working files
+Logical working files
+---------------------
 
 ****Environment variables****
 
@@ -78,7 +80,7 @@ When settings parameters for Transfer CFT, a user wanting to invoke
 a logical file name, must systematically prefix the character string for
 the logical name with the "$" symbol.
 
-Example of a logical name statement: <span class="code">`fname = $CFTCOM`</span>
+Example of a logical name statement: `fname = $CFTCOM`
 
 Using operating system environment variables
 
@@ -100,7 +102,7 @@ is operating in Client/Server with a UNIX Transfer CFT.
 
 > **Note**
 >
-> The CFTFILE command in CFTUTIL does not take into account any
+> Note: The CFTFILE command in CFTUTIL does not take into account any
 > environment variables set and corresponding to the Transfer CFT logical
 > file names. You can overcome this problem in a batch file by using
 > certain operating system functions.
@@ -124,7 +126,8 @@ to CFTUTIL is as follows:
 
 <span id="Using a definition file"></span>
 
-## Using a definition file
+Using a definition file
+-----------------------
 
 Use this method when you want to associate a logical name
 with a physical name and file attributes. Since the content of

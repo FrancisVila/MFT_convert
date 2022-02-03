@@ -1,7 +1,7 @@
 {
     "title": "Requester  transfer",
     "linkTitle": "Requester transfer",
-    "weight": "190"
+    "weight": "180"
 }A requester transfer involves the following steps:
 
 - [Registering

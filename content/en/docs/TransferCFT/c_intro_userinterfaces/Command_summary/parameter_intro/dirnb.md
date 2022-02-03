@@ -1,7 +1,7 @@
 {
     "title": "dirnb",
     "linkTitle": "dirnb",
-    "weight": "710"
+    "weight": "700"
 }<span id="dirnb"></span>
 
 ### dirnb
@@ -10,7 +10,7 @@
 
 *MVS only*
 
-<span style="font-weight: bold;">****\[ DIRNB = n { <u>0</u>...999999 } \]****</span>    
+****[ DIRNB = n { <span class="underline">0</span>...999999 } ]****    
 
 Number of directory blocks used to create a directory.
 

@@ -12,7 +12,8 @@ The {{< TransferCFT/axwayvariablesComponentShortName  >}} z/OS templates are loc
 
 <span id="Assembl"></span>
 
-## Assembler language
+Assembler language
+------------------
 
 
 | Template  | Function  | Services |
@@ -23,7 +24,8 @@ The {{< TransferCFT/axwayvariablesComponentShortName  >}} z/OS templates are loc
 
 <span id="C"></span>
 
-## C language
+C language
+----------
 
 
 | Template  | Function  | Services | Description  |
@@ -38,7 +40,8 @@ The {{< TransferCFT/axwayvariablesComponentShortName  >}} z/OS templates are loc
 
 <span id="COBOL"></span>
 
-## COBOL language
+COBOL language
+--------------
 
 
 | Template  | Function  | Services | Description  |

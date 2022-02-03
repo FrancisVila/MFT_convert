@@ -1,8 +1,9 @@
 {
     "title": "XFBTransfer predefined requests",
     "linkTitle": "XFBTransfer predefined requests",
-    "weight": "240"
-}## XFBTransfer requests
+    "weight": "230"
+}XFBTransfer requests
+--------------------
 
 When you configure Sentinel, you can import a set of predefined XFBTransfer
 requests into the Monitoring interface. The following table describes
@@ -17,10 +18,11 @@ from XFBTransfer.
 | CurrentTransfersAlert | Tracked Instances from the Current Table of XFBTransfer that correspond to an Alert. |
 
 
-## XFBLog request
+XFBLog request
+--------------
 
 When you configure Sentinel with Transfer CFT, you can import
-a predefined request for XFBTransfer <span style="font-style: italic;">**TransferLog**</span>.
+a predefined request for XFBTransfer **TransferLog**.
 This Request retrieves Tracked Instances that describe the contents of
 a {{< TransferCFT/axwayvariablesComponentShortName  >}} log.
 

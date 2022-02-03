@@ -1,14 +1,14 @@
 {
     "title": "Transferable files ",
     "linkTitle": "Transferable files",
-    "weight": "240"
+    "weight": "230"
 }This
 topic describes the Transfer
 CFT parameters that are specific to Windows concerning the characteristics of the transferable file.
 
 - Characteristics
     of files automatically detected on transmission
-    &lt;/li>
+    &lt;/li&gt;
 - FTYPE
     values and FCODE values implicitly associated during transmission
 - FTYPE
@@ -45,7 +45,7 @@ FTYPE = J refers to stream text.The stream text type allows sending a text file 
 
 > **Note**
 >
-> FTYPE J is available in Transfer CFT Transfer CFT 3.0.1 SP7 (UNIX and Windows) and higher.
+> Note: FTYPE J is available in Transfer CFT Transfer CFT 3.0.1 SP7 (UNIX and Windows) and higher.
 
 #### FTYPE and FRECFM values on receipt
 

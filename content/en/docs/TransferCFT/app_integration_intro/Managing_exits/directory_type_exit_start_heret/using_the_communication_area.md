@@ -8,7 +8,8 @@ explains a directory exit in the requester mode.
 
 <span id="Server_Mode"></span>
 
-## Server mode
+Server mode
+-----------
 
 The entire communication structure is defined by the interface before
 the user function is called. You must perform checks concerning the characteristics
@@ -37,14 +38,14 @@ of the calling partner.
 | gfa  | Closed subscriber group number  |
 
 
-When the user function is called, if the partner name <span style="font-weight: bold;">****part****</span>
+When the user function is called, if the partner name ****part****
 is empty, so that the partner local identifier is unknown to Transfer
 CFT, the only fields that contain valid data (imintime and imintime are
 initialized to "23595999" and "00000000" respectively)
 are the above fields in addition to the general information fields.  
-The <span style="font-weight: bold;">****ret1****</span> return code field must
+The ****ret1**** return code field must
 be defined when the user function is returned.  
-If there is a connection refusal, return code value of 2, the <span style="font-weight: bold;">****ret2****</span>
+If there is a connection refusal, return code value of 2, the ****ret2****
 field may be defined to inform the calling partner of the cause of the
 refusal.  
 The content of the diag field appears with the appropriate error message

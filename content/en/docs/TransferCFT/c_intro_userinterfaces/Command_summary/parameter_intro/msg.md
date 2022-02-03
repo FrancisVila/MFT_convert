@@ -8,7 +8,7 @@
 
 #### SEND
 
-****\[msg = string 4096\]****
+****[msg = string 4096]****
 
 Message in text sent to the partner.
 
@@ -22,9 +22,11 @@ String:
 This text may include spaces. It must be included between single quotes
 (‘ ’).
 
+See the [xlate](../xlate) parameter for transcoding details.
+
 #### WLOG
 
-****\[MSG = string255\]****
+****[MSG = string255]****
 
 Information message to be written in the log file.
 

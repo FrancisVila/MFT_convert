@@ -1,7 +1,7 @@
 {
     "title": "Utility commands",
     "linkTitle": "Utility commands",
-    "weight": "250"
+    "weight": "240"
 }This section describes the utility commands.
 
 - Capture

@@ -2,7 +2,7 @@
     "title": "About Transfer CFT services in COBOL",
     "linkTitle": "Using services in COBOL",
     "weight": "320"
-}This book begins with <span style="font-weight: bold;">****this topic****</span>
+}This book begins with ****this topic****
 which provides information about using the {{< TransferCFT/axwayvariablesComponentShortName  >}} services in COBOL.
 
 The programming interface is implemented by the calling application
@@ -18,10 +18,12 @@ interfaces.
 
 <span id="Call Syntax"></span>
 
-## Call syntax
+Call syntax
+-----------
 
 ```
-CALL <span style="font-weight: bold;">****CFTx****</span> USING <verb>
+CALL CFTx
+USING <verb>
 <blk>
 <param> <rc>
 ```
@@ -31,7 +33,7 @@ Where:
 - CFTx indicates:
 
 > -   CFTI:
->     {{< TransferCFT/axwayvariablesComponentShortName >}} catalog querying services
+>     {{< TransferCFT/axwayvariablesComponentShortName  >}} catalog querying services
 >
 > <!-- -->
 >
@@ -40,27 +42,28 @@ Where:
 > -   CFTC:
 >     transfer services without syntax analysis
 
-- &lt;verb> is the  command
+- &lt;verb&gt; is the  command
     you want to process
-- &lt;blk> is the internal control block
+- &lt;blk&gt; is the internal control block
 - &lt; is a character string of
-    variable length that contains the function parameters>param
-- &lt;rc> is the return code
+    variable length that contains the function parameters&gt;param
+- &lt;rc&gt; is the return code
 
-The variables described in this documentation are defined in the <span style="font-weight: bold;">****cftapi.cop****</span> file supplied in the library
+The variables described in this documentation are defined in the ****cftapi.cop**** file supplied in the library
 of delivered modules. The programming example and the corresponding COPY
 files are shipped with the product.
 
-## Return codes
+Return codes
+------------
 
 The return codes are returned by the programming interfaces in the form
 of mnemonics.
 
 > **Note**
 >
-> It is strongly recommended that you test the return codes of services
+> Note: It is strongly recommended that you test the return codes of services
 > provided by the Transfer CFT programming interfaces through mnemonics,
 > the corresponding values being able to change without notice.
 
-The return codes are listed in the <span style="font-family: 'Courier New', monospace;font-weight: bold;">****cftapi.cop****</span>
+The return codes are listed in the ****cftapi.cop****
 source file.

@@ -1,7 +1,7 @@
 {
     "title": "Application integration",
     "linkTitle": "Application integration",
-    "weight": "150"
+    "weight": "140"
 }This section provides information on using the following services and features in {{< TransferCFT/axwayvariablesComponentShortName  >}}:
 
 [About the CFTUTIL interface](../c_intro_userinterfaces/about_cftutil) - Describes the CFTUTIL command line utility used in Transfer CFT.
@@ -39,5 +39,5 @@ scan one or more directories and issue a SEND command.
 
 Defining maximum simultaneous transfers - Describes how to optimize the number of parallel transfers, the number of transfer sessions, and how parameter dependencies affect transfer rates.
 
-[Command Guide](../gettingstarted_intro/my_first_transfer_flow_using_cg/typographical_conventions) - This section provides a comprehensive listing of {{< TransferCFT/axwayvariablesComponentShortName  >}} commands,
+[Command Guide](../c_intro_userinterfaces/command_summary/typographical_conventions) - This section provides a comprehensive listing of {{< TransferCFT/axwayvariablesComponentShortName  >}} commands,
 typographical conventions, command syntax and parameters.

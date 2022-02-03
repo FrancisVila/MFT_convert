@@ -1,14 +1,14 @@
 {
     "title": "object ",
     "linkTitle": "object",
-    "weight": "2370"
+    "weight": "2390"
 }<span id="object"></span>
 
 ### object
 
 #### MQUERY
 
-****\[ OBJECT = { <u>CACHE</u> | SYSTEM | STATS | PROBE } \]****
+****[ OBJECT = { <span class="underline">CACHE</span> &#124; SYSTEM &#124; STATS &#124; PROBE } ]****
 
 **** ****
 
@@ -20,5 +20,3 @@
  
 
 [Return to Command index](../../)
-
- 

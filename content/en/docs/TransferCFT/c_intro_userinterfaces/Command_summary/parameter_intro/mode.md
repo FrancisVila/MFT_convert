@@ -6,27 +6,27 @@
 
 ### mode
 
-#### All {{< TransferCFT/axwayvariablesComponentShortName  >}} commands <span style="font-weight: normal;"> </span>
+#### All {{< TransferCFT/axwayvariablesComponentShortName  >}} commands  
 
-****\[MODE = { <u>REPLACE</u> | CREATE | DELETE }\]****
+****[MODE = { <span class="underline">REPLACE</span> &#124; CREATE &#124; DELETE }]****
 
 Action to do in the parameter or partner database. This parameter applies
 to all commands that affect {{< TransferCFT/axwayvariablesComponentShortName  >}} databases. Possible values:
 
 - REPLACE
-    <span style="font-weight: normal;">(Default value)</span>
+    (Default value)
 - CREATE
 - DELETE
 
 > **Note**
 >
-> Applicable for CFTACCNT, CFTAUTH, CFTCAT, CFTCOM, CFTDEST, CFTEXIT, CFTFILE, CFTIDF,
+> Note: Applicable for CFTACCNT, CFTAUTH, CFTCAT, CFTCOM, CFTDEST, CFTEXIT, CFTFILE, CFTIDF,
 > CFTLOG, CFTNET, CFTPARM, CFTPART, CFTPROT, CFTRECV, CFTSEND,
 > CFTTCP, CFTTRACE, CFTXLATE.
 
 #### DISPLAY
 
-****\[MODE = { ANY | COLUMN | LINE } \]****
+****[MODE = { ANY &#124; COLUMN &#124; LINE } ]****
 
 - ANY / COLUMN: Displays in a column format
 - Line: Displays in a more horizontal and spaced format
@@ -35,8 +35,8 @@ to all commands that affect {{< TransferCFT/axwayvariablesComponentShortName  >}
 
 #### TURN
 
-****\[MODE = { START | CREATE | ACT | INACT }
-\]****
+****[MODE = { START &#124; CREATE &#124; ACT &#124; INACT }
+]****
 
 - INACT: temporarily stops automated calls to a given site
 - ACT: reactivates automated calls after the INACT command
@@ -45,8 +45,8 @@ to all commands that affect {{< TransferCFT/axwayvariablesComponentShortName  >}
 
 #### INACT, ACT
 
-******\[MODE =
-{<u>BOTH</u> | REQUESTER | SERVER} \]******
+******[MODE =
+{<span class="underline">BOTH</span> &#124; REQUESTER &#124; SERVER} ]******
 
 Mode to be reactivated:
 
@@ -58,7 +58,7 @@ You can use the shortcuts B, R, and S in place of the keywords.
 
 > **Note**
 >
-> The MODE parameter is absolute. If you run ACT MODE=SERVER followed by
+> Note: The MODE parameter is absolute. If you run ACT MODE=SERVER followed by
 > ACT MODE=REQUESTER, the partner is not reactivated in both modes,
 > only in REQUESTER mode (corresponding to the most recent command).
 
@@ -73,12 +73,12 @@ The CFTPART command’s STATE parameter is set to:
 
 #### PKIENTITY
 
-****\[MODE = { <u>REPLACE</u> | CREATE | DELETE }\]****
+****[MODE = { <span class="underline">REPLACE</span> &#124; CREATE &#124; DELETE }]****
 
 Action to do in the PKI database. Possible values:
 
 - REPLACE
-    <span style="font-weight: normal;">(Default)</span>
+    (Default)
 - CREATE
 - DELETE
 

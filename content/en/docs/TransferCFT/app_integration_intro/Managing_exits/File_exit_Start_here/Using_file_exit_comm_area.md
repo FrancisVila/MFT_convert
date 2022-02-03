@@ -47,7 +47,8 @@ The return code (ret1) must always be defined.
 
 <span id="Before_the_File_is_Allocated"></span>
 
-## Before the file is allocated
+Before the file is allocated
+----------------------------
 
 This is the first stage in a file transfer. During this stage, you indicate
 the stages at which you want to take control by defining the masc parameter.
@@ -71,7 +72,7 @@ the stages at which you want to take control by defining the masc parameter.
 ### Field values
 
 
-| Field  | Sender mode<br /> Before  | Sender mode<br /> After  | Receiver mode<br /> Before  | Receiver mode<br /> After  |
+| Field | Sender mode<br /> Before  | Sender mode<br /> After  | Receiver mode<br /> Before  | Receiver mode<br /> After<br />  |
 | --- | --- | --- | --- | --- |
 | mtype | 0 | 0 | 0 | 0 |
 | masc | 10000000...000 | * | 10000000...000 | * |
@@ -163,12 +164,13 @@ the stages at which you want to take control by defining the masc parameter.
 | nspart | NSPART | = | NSPART | = |
 | nrpart | NRPART | = | NRPART | = |
 | XferCycleId | TRKR | = | TRKR | = |
-| XferObjectcId | "XFBTransfer" | = | "XFBTransfer" | = |
+| XferObjectcId | &quot;XFBTransfer&quot; | = | &quot;XFBTransfer&quot; | = |
 
 
 <span id="Before_the_File_is_Opened"></span>
 
-## Before the file is opened
+Before the file is opened
+-------------------------
 
 If the user function manages file accessing, it must open the file at
 this stage.
@@ -186,7 +188,7 @@ this stage.
 ### Field values
 
 
-| Field  | Sender mode<br /> Before  | Sender mode<br /> After  | Receiver mode<br /> Before  | Receiver mode<br /> After  |
+|   | Sender mode<br /> Before  | Sender mode<br /> After  | Receiver mode<br /> Before  | Receiver mode<br /> After  |
 | --- | --- | --- | --- | --- |
 | mtype | 1 | 1 | 1 | 1 |
 | masc | = | * | = | * |
@@ -284,7 +286,8 @@ this stage.
 
 <span id="Before_the_Start_of_the_Transfer"></span>
 
-## Before the start of the transfer
+Before the start of the transfer
+--------------------------------
 
 Only a File type EXIT at the sender end, DIRECT = S’ can process this
 stage.
@@ -302,7 +305,7 @@ stage.
 ### Field values
 
 
-| Field  | Sender mode<br /> Before  | Sender mode<br /> After  | Receiver mode<br /> Before  | Receiver mode<br /> After  |
+|   | Sender mode<br /> Before  | Sender mode<br /> After  | Receiver mode<br /> Before  | Receiver mode<br /> After  |
 | --- | --- | --- | --- | --- |
 | mtype | 2 | 2 |   |   |
 | masc | = | * |   |   |
@@ -399,7 +402,8 @@ stage.
 
 <span id="Before_a_Record_is_Sent_or_After_it_is_Received"></span>
 
-## Before a record is sent or after it is received
+Before a record is sent or after it is received
+-----------------------------------------------
 
 At the sender end, DIRECT =
 S, the user function is called before the record is sent to the
@@ -414,7 +418,7 @@ record is written if {{< TransferCFT/axwayvariablesComponentShortName  >}} manag
 is managed by the user function, the latter has to write the record before
 handing back control to {{< TransferCFT/axwayvariablesComponentShortName  >}}.
 
-At this stage (DATA\_TYP) and before the record is sent or after it is
+At this stage (DATA_TYP) and before the record is sent or after it is
 received, the user function can perform the following operations:
 
 - Modify the record
@@ -450,12 +454,12 @@ value of this field is the value specified in the NCOMP parameter of the
 CFTSEND or CFTRECV command associated with the File type EXIT.
 
 The user function can modify the ncomp field at the first stage in the
-transfer (ALLOC\_TYP). A zero value inhibits compression.
+transfer (ALLOC_TYP). A zero value inhibits compression.
 
 ### Field values
 
 
-| Field  | Sender mode<br /> Before  | Sender mode<br /> After  | Receiver mode<br /> Before  | Receiver mode<br /> After  |
+| Field | Sender mode<br /> Before  | Sender mode<br /> After  | Receiver mode<br /> Before  | Receiver mode<br /> After  |
 | --- | --- | --- | --- | --- |
 | mtype | 3 | 3 | 3 | 3 |
 | masc | = | * | = | * |

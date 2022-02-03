@@ -1,7 +1,7 @@
 {
     "title": "CFTPROT  - Transfer protocols",
     "linkTitle": "Protocol - CFTPROT",
-    "weight": "220"
+    "weight": "210"
 }The CFTPROT command defines a file transfer protocol application. This page describes the parameter setting command, and explains the parameters that are negotiated with the remote partner at the time the protocol connection is established.
 
 The following table lists the parameters which are common to all protocols. The CFTPROT TYPE = xxx commands are explained in the tables following the general parameters.
@@ -33,7 +33,7 @@ Use this command to define network parameter settings.
 | <a href="../../../command_summary/parameter_intro/rcomp">RCOMP</a> | Maximum compression authorized on receiving a file.<br/> This compression is negotiated between the sender and the receiver.<br/> A zero value corresponds to no compression.<br/> For more information such as usable values etc., see <a href="../../../command_summary/parameter_intro/compression">Compression</a>. |
 | <a href="../../../command_summary/parameter_intro/restart">RESTART</a> | Maximum number of transfer restart attempts.<br/> An attempt is taken into account as soon as the physical connection with the remote site is correctly established. |
 | <a href="../../../command_summary/parameter_intro/rto">RTO</a>  | Network monitoring time-out (in seconds) excluding the protocol connection/disconnection/break phase.<br/> Corresponds to the wait time-out of a reply to an FPDU before disconnection (READ TIME OUT).<br/> If the value is 0, the wait time-out is infinite. |
-| <a href="../../../command_summary/parameter_intro/sap">SAP</a>  | Name of the local SAP, Service Access Point, associated with this protocol.<br/> Used to identify the "access point" at which incoming connection requests for this communication protocol are placed.<br/> The SAP supplied by a requester partner when making its connection request is retrieved by the local Transfer CFT which uses it to deduce the protocol to be used. Each CFTPROT object in a given resource class must include its specific SAP.<br/> The value of this parameter may be expressed in hexadecimal form. In this case, the first character must be "#" (number sign) (for example: #31 is understood as the ASCII character ‘1’). |
+| <a href="../../../command_summary/parameter_intro/sap">SAP</a>  | Name of the local SAP, Service Access Point, associated with this protocol.<br/> Used to identify the &quot;access point&quot; at which incoming connection requests for this communication protocol are placed.<br/> The SAP supplied by a requester partner when making its connection request is retrieved by the local Transfer CFT which uses it to deduce the protocol to be used. Each CFTPROT object in a given resource class must include its specific SAP.<br/> The value of this parameter may be expressed in hexadecimal form. In this case, the first character must be &quot;#&quot; (number sign) (for example: #31 is understood as the ASCII character ‘1’). |
 | <a href="../../../command_summary/parameter_intro/scomp">SCOMP</a>  | Maximum authorized compression for sending a file.<br/> This compression is negotiated between the sender and the receiver.<br/> A zero value corresponds to no compression. |
 | <a href="../../../command_summary/parameter_intro/srin">SRIN</a>  | Controls the direction of transfers authorized for the Transfer CFT when it is server, accepter of the protocol connection. |
 | <a href="../../../command_summary/parameter_intro/srout">SROUT</a> | Controls the direction of transfers authorized for the Transfer CFT when it is requester (initiator of the protocol connection). |
@@ -42,7 +42,8 @@ Use this command to define network parameter settings.
 
 <span id="Defining_ODETTE"></span>
 
-## Defining ODETTE (OFTP)
+Defining ODETTE (OFTP)
+----------------------
 
 The CFTPROT TYPE = ODETTE command is used to describe the OFTP (ODETTE)
 transfer protocol.
@@ -69,25 +70,26 @@ The [OFTP (ODETTE)](../../../../protocols_start_here/start_here_odette)
 section of the Protocols book contains a detailed explanation of the constraints
 and specifics regarding the use of this particular protocol.
 
-QQQ\_QQQ\_QQQ
+QQQ_QQQ_QQQ
 
 #### Parameters for CFTPROT TYPE = ODETTE
 
 
 | <a href="../../../command_summary/parameter_intro/eerp">EERP</a> | Used to interpret the value of the ORIGINATOR and DESTINATOR fields contained in the EERP message, according to the protocol version.<br/> The End to End ResPonse service generates a message called EERP. This message informs the file sender that the data sent arrived correctly.<br/> The first version of the protocol (1986) specifies that:<br/> • the ORIGINATOR protocol field corresponds to the file sender<br/> • the DESTINATOR protocol field corresponds to the file receiver<br/> The second version (1991) specifies that:<br/> • the ORIGINATOR protocol field corresponds to the EERP sender (i.e. the file receiver)<br/> • the DESTINATOR protocol field corresponds to the EERP receiver (i.e. the file sender)<br/> Note: heck the consistency of the customized values from one end to another. If the sender and receiver have different versions, it is not possible to acknowledge the transfer. |
 | --- | --- |
-| <a href="../../../command_summary/parameter_intro/pad">PAD</a>  | *Deprecated in* {{< TransferCFT/axwayvariablesComponentLongName  >}}**{{< TransferCFT/axwayvariablesReleaseNumber  >}}<br/> Option applying "SPECIAL LOGIC" to the data exchange buffers.<br/> This option is negotiated with the partner when the protocol session is established (in the SSID FPDU). If the option is set to NO for one of the partners, the "special logic" is not applied. |
-| <a href="../../../command_summary/parameter_intro/rcredit">RCREDIT</a>  | Value of the "credit" (expressed as a number of "DATA" messages) proposed by Transfer CFT when it is server.<br/> This value is negotiated with the value proposed by the requester (see the SCREDIT parameter) when the protocol session is established. |
+| <a href="../../../command_summary/parameter_intro/pad">PAD</a>  | *Deprecated in* {{< TransferCFT/axwayvariablesComponentLongName  >}}**{{< TransferCFT/axwayvariablesReleaseNumber  >}}<br/> Option applying &quot;SPECIAL LOGIC&quot; to the data exchange buffers.<br/> This option is negotiated with the partner when the protocol session is established (in the SSID FPDU). If the option is set to NO for one of the partners, the &quot;special logic&quot; is not applied. |
+| <a href="../../../command_summary/parameter_intro/rcredit">RCREDIT</a>  | Value of the &quot;credit&quot; (expressed as a number of &quot;DATA&quot; messages) proposed by Transfer CFT when it is server.<br/> This value is negotiated with the value proposed by the requester (see the SCREDIT parameter) when the protocol session is established. |
 | <a href="../../../command_summary/parameter_intro/resync">RESYNC</a>  | Option for restarting a transfer following an interruption.<br/> This option is negotiated with the partner when the connection is established: if the option is set to NO for one of the partners, transfer restarts are not managed. |
 | <a href="../../../command_summary/parameter_intro/rrusize">RRUSIZE</a> | Maximum size of NSDUs (Network Service Data Unit) being received.<br/> This parameter is negotiated with the partner (SRUSIZE parameter if Transfer CFT), the smallest value is selected as the size of NSDUs sent.<br/> Refer to the Transfer CFT <a href="../../../../protocols_start_here">Protocol topics</a> to optimize the definition of the value of this parameter. |
-| <a href="../../../command_summary/parameter_intro/scredit">SCREDIT</a> | Value of the "credit" (expressed as a number of "DATA" messages) proposed by Transfer CFT when it is the requester.<br/> Transfer CFT is authorized to send a number of "DATA" protocol messages equal to the result of the negotiation (performed when the protocol session is established), before waiting for a new "credit" to be sent by the server. |
+| <a href="../../../command_summary/parameter_intro/scredit">SCREDIT</a> | Value of the &quot;credit&quot; (expressed as a number of &quot;DATA&quot; messages) proposed by Transfer CFT when it is the requester.<br/> Transfer CFT is authorized to send a number of &quot;DATA&quot; protocol messages equal to the result of the negotiation (performed when the protocol session is established), before waiting for a new &quot;credit&quot; to be sent by the server. |
 | <a href="../../../command_summary/parameter_intro/srusize">SRUSIZE</a> | Maximum size of NSDUs (Network Service Data Unit) being sent.<br/> This parameter is negotiated with the partner (RRUSIZE parameter if Transfer CFT), the smallest value being selected as the size of NSDUs sent.<br/> Refer to the <a href="../../../../protocols_start_here">Protocol topics</a> to optimize the definition of the value of this parameter.<br/> MVS connection, the maximum value of SRUSIZE is equal to the value configured in the NCP (or the equivalent) less (-) 6 bytes. |
 | TCP  | Processing method used for protocol messages:<br/> • Transfer CFT: activation of the method specific to Transfer CFT<br/> • OFTP (default value): activation of the standard method (RFC 2204)<br/> This parameter applies in both initiator and responder modes.  |
 
 
 <span id="Defining_PeSIT"></span>
 
-## Defining PeSIT
+Defining PeSIT
+--------------
 
 The CFTPROT TYPE = PESIT command is used to describe the PeSIT transfer
 protocol.
@@ -102,7 +104,7 @@ In PeSIT, the user can specify parameters controlling the:
 
 > **Note**
 >
-> In certain environments,
+> Note: In certain environments,
 > the mechanisms for repositioning in the transferred files are not operational
 > with all the files supported: after a transfer interruption, transfers
 > then begin again from the start of files (see the Transfer CFT Operations
@@ -117,8 +119,6 @@ parameter.
 For a detailed explanation of the constraints and specifics regarding
 the use of each of these variants, refer to the Transfer CFT [Protocols](../../../../protocols_start_here).
 
-QQQ\_QQQ\_QQQ
-
 #### Parameters for CFTPROT TYPE = PESIT
 
 
@@ -127,7 +127,7 @@ QQQ\_QQQ\_QQQ
 | <a href="../../../command_summary/parameter_intro/cto">CTO</a>  | Minimum duration (in minutes) of the session, Cycle Time Out.<br/> At the end of a transfer, the wait time-out for a nfew transfer is recalculated depending on:<br/> • the time (hour) for opening the session<br/> • the current time<br/> • the wait delay before disconnection (DISCTS for the protocol)<br/> • the duration of the session (CTO)<br/> The session is liberated if no transfer was initiated by the remote partner during the indicated duration. |
 | <a href="../../../command_summary/parameter_intro/cycle">CYCLE</a>  | Periodicity (in minutes) for creation of a protocol session:<br/> • 0: PeSIT session open on startup<br/> • n: periodicity |
 | <a href="../../../command_summary/parameter_intro/disctc">DISCTC</a>  | Wait time-out (in seconds) for the reply FPDU (ACONNECT), after the sending of a CONNECT FPDU.<br/> If the value is 0, the wait time-out is infinite. |
-| <a href="../../../command_summary/parameter_intro/disctr">DISCTR</a>  | Network disconnection wait time-out. Wait time-out (in seconds) for the partner site to cut the connection, after sending an "abort" request (ABORT FPDU).<br/> If the value is 0, the wait time-out is infinite. |
+| <a href="../../../command_summary/parameter_intro/disctr">DISCTR</a>  | Network disconnection wait time-out. Wait time-out (in seconds) for the partner site to cut the connection, after sending an &quot;abort&quot; request (ABORT FPDU).<br/> If the value is 0, the wait time-out is infinite. |
 | <a href="../../../command_summary/parameter_intro/hide99">HIDE99</a> | Optional parameter available only to PESIT protocol definition (TYPE=PESIT) using the ANY profile (PROFIL=ANY/CFT).<br/> • NO (Default value): no information inside PI99 (free message PI Code) is hidden<br/> • YES: hide private information carried by the protocol (physical local path of the file) |
 | <a href="../../../command_summary/parameter_intro/logon">LOGON</a><br/> Only in requester mode PeSIT E | Implementation of the pre-connection phase.<br/> According to the value of this parameter:<br/> • YES: this phase is implemented. The requester sends a 24-byte EBCDIC message as follows:<br/> • • byte 1 to 8: ‘PESIT ’ (PeSIT followed by 3 blank characters) (corresponding to the protocol used)<br/> • byte 9 to 16: requester identifier (NSPART of CFTPART)<br/> • byte 17 to 24: requester password (NSPASSW of CFTPART)<br/> <br/> • NO: this phase is not implemented: the requester does not send a message<br/> Note: The Transfer CFT server automatically adapts itself to the choice of the requesting partner to send a Logon message or not. |
 | <a href="../../../command_summary/parameter_intro/multart">MULTART</a><br/> Only in sender mode | Option to group several records of the file sent in a given FPDU (multi-record FPDUs).<br/> • in sender mode, MULTART = YES is recommended if the partner supports multi-record FPDUs<br/> The value MULTART = YES is PROHIBITED in this profile<br/> • in receiver mode, the Transfer CFT accepts multi-record FPDUs, regardless of the value of this parameter |
@@ -149,7 +149,8 @@ QQQ\_QQQ\_QQQ
 
 <span id="SSL_parameter_in_CFTPROT"></span>
 
-## SSL parameter
+SSL parameter
+-------------
 
 The CFTPROT object accepts the optional SSL parameter. For the declared
 protocol, it sets the:
@@ -185,7 +186,7 @@ Syntax:  
 
 `CFTPROT[SSL =     identifier,]`
 
-QQQ\_QQQ\_QQQ
+#### SSL Parameter for CFTPROT
 
 
 | <a href="../../../command_summary/parameter_intro/ssl">SSL</a> | SSL commands Identifier used for security profiles. |
@@ -194,7 +195,8 @@ QQQ\_QQQ\_QQQ
 
 <span id="PeSIT_examples"></span>
 
-## PeSIT example
+PeSIT example
+-------------
 
 PeSIT protocol, ANY profile, associated
 with the data exchange protocol and network resources defined by the CFTNET

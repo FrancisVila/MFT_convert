@@ -8,7 +8,8 @@
 - Security files
 - Secure files
 
-## Program libraries
+Program libraries
+-----------------
 
 The security system requires Transfer CFT programs to be located in APF libraries.
 
@@ -48,13 +49,15 @@ All users executing Transfer CFT commands are assigned to a predefined group (GR
 
 Only the GRPMON group must have the right to execute the CFTMAIN and CFTCOPL programs.
 
-## Security files
+Security files
+--------------
 
 SECINI, SECACT and SECOBJ files must be made available in read mode to all Transfer CFT program users (these files do not contain confidential data).
 
 Although each secure file can point to a dedicated group of security files, this is not recommended, because it may complicate RACF profile management.
 
-## Secure files
+Secure files
+------------
 
 Secure files (PARM, PART, COM, UCONF and CATALOG) access differs according to the user type.
 

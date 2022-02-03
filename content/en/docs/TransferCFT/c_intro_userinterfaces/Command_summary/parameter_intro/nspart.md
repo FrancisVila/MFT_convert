@@ -1,15 +1,15 @@
 {
     "title": "nspart",
     "linkTitle": "nspart",
-    "weight": "2340"
+    "weight": "2360"
 }<span id="nspart"></span>
 
 ### nspart
 
 #### CFTPART
 
-**\[NSPART = {<u>value of the NPART
-parameter of CFTPARM</u> | *string*}\]**
+**[NSPART = {<span class="underline">value of the NPART
+parameter of CFTPARM</span> &#124; *string*}]**
 
 - string24     PeSIT
     E  

@@ -1,14 +1,14 @@
 {
     "title": "fkeylen",
     "linkTitle": "fkeylen",
-    "weight": "1180"
+    "weight": "1170"
 }<span id="fkeylen"></span>
 
 ### fkeylen
 
 #### CFTSEND, CFTRECV, SEND, RECV
 
-****\[FKEYLEN = {0 | n}\]     ****
+****[FKEYLEN = {0 &#124; n}]     ****
 
 ****{
 0...32767}  PeSIT

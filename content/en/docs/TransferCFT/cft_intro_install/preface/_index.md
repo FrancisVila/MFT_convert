@@ -2,17 +2,20 @@
     "title": "HP NonStop: Installation and Operation",
     "linkTitle": "Installation and operation HP NonStop",
     "weight": "130"
-}## Preface
+}Preface
+-------
 
 This document describes how to install Transfer CFT in a HP NonStop OSS environment.
 
-## About {{< TransferCFT/axwayvariablesComponentLongName  >}}
+About {{< TransferCFT/axwayvariablesComponentLongName  >}}
+---------------------------------------------------------------
 
 Transfer CFT is the file transfer component in the Axway MFT platform, and provides a multi-platform, high-volume, file and message transfer service.
 
 For more information on Axway products, visit [www.axway.com](http://www.axway.com/).
 
-## Who should read this guide
+Who should read this guide
+--------------------------
 
 This guide is intended for enterprise personnel involved in installing software and Axway Professional Services personnel. Familiarity with {{< TransferCFT/axwayvariablesPlatformorSuiteShortName  >}} products is recommended.
 
@@ -25,7 +28,8 @@ This guide presumes you have knowledge of:
 
 Others who may find parts of this guide useful include network or systems administrators and other technical or business users.
 
-## Installation guide outline
+Installation guide outline
+--------------------------
 
 This guide explains how to perform a full installation of {{< TransferCFT/axwayvariablesComponentLongName  >}}. It also describes how to:
 
@@ -39,17 +43,19 @@ This guide explains how to perform a full installation of {{< TransferCFT/axwayv
 
 **Uninstall** – Describes how you can uninstall {{< TransferCFT/axwayvariablesComponentShortName  >}}.
 
-## Documentation
+Documentation
+-------------
 
 Transfer CFT provides a complete set of documentation, covering all aspects of using the product. These documents include the following:
 
-- {{< TransferCFT/axwayvariablesComponentShortName >}} {{< TransferCFT/PrimaryTransferCFTversionlong >}} Release Notes
-- {{< TransferCFT/axwayvariablesPlatformorSuiteLongName >}} Supported Platforms Guide
+- {{< TransferCFT/axwayvariablesComponentShortName  >}} {{< TransferCFT/PrimaryTransferCFTversionlong  >}} Release Notes
+- {{< TransferCFT/axwayvariablesPlatformorSuiteLongName  >}} Supported Platforms Guide
 
 > **Note**
 >
-> This document makes references to HP Nonstop documents, such as the EMS Manuel. For any HP documentation referenced in this guide, you should check for the most recent version on the HP Support Center.
+> Note: This document makes references to HP Nonstop documents, such as the EMS Manuel. For any HP documentation referenced in this guide, you should check for the most recent version on the HP Support Center.
 
-## Support services
+Support services
+----------------
 
 The {{< TransferCFT/axwayvariablesCompanyName  >}} Global Support team provides worldwide 24 x 7 support, subject to validation of your license agreement. Email <support@axway.com> or, for your local support telephone number, visit {{< TransferCFT/axwayvariablesCompanyName  >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a> and click **Contact Axway Support**.

@@ -1,7 +1,7 @@
 {
     "title": "Troubleshooting",
     "linkTitle": "Troubleshooting",
-    "weight": "200"
+    "weight": "190"
 }This section provides information on troubleshooting your {{< TransferCFT/axwayvariablesComponentLongName  >}} system, and is comprised of:
 
 [Collecting information](collecting_information) - Describes the messages and error code types and formats, as well as initial steps and checks to perform when a problem arises.

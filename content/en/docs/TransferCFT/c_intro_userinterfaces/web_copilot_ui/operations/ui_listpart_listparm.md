@@ -1,8 +1,9 @@
 {
     "title": "Log",
     "linkTitle": "Log",
-    "weight": "180"
-}## Viewing transfer details in the UI
+    "weight": "170"
+}Viewing transfer details in the UI
+----------------------------------
 
 To view the log of transfers:
 

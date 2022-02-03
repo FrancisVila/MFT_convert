@@ -1,7 +1,7 @@
 {
     "title": "Server  transfer",
     "linkTitle": "Server transfer",
-    "weight": "200"
+    "weight": "190"
 }This topic describes the steps involved in a server transfer. These
 steps include:
 

@@ -1,12 +1,12 @@
 {
     "title": "passw",
     "linkTitle": "passw",
-    "weight": "2560"
+    "weight": "2580"
 }<span id="passw"></span>
 
 #### {{< TransferCFT/SystemTitle  >}}
 
-****\[ PASSW = string \]****
+****[ PASSW = string ]****
 
 length=64
 

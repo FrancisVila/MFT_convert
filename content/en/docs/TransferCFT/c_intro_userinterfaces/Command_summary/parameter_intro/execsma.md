@@ -1,7 +1,7 @@
 {
     "title": "execsma",
     "linkTitle": "execsma",
-    "weight": "930"
+    "weight": "920"
 }<span id="execsma"></span>
 
 ### execsma
@@ -10,7 +10,7 @@
 
 #### CFTPARM
 
-****\[EXECSMA = filename\]
+****[EXECSMA = filename]
    {string
 64}****
 
@@ -19,6 +19,6 @@ receiving an acknowledgement (reply) following sending a file.
 
 > **Note**
 >
-> To use direct script execution instead of the template script processing, preface the &lt;EXEC>value with 'cmd:'. For example, &lt;EXEC>='cmd:myscript.sh &PART &IDT &IDTU'. See Directly processing a program or script for details, examples, restrictions, and support.
+> Note: To use direct script execution instead of the template script processing, preface the &lt;EXEC&gt;value with 'cmd:'. For example, &lt;EXEC&gt;='cmd:myscript.sh &PART &IDT &IDTU'. See Directly processing a program or script for details, examples, restrictions, and support.
 
 [Return to Command index](../../)

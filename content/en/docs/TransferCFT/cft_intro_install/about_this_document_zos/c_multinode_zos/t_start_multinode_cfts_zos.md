@@ -4,24 +4,25 @@
     "weight": "220"
 }After customizing your installation and executing the required z/OS commands, you are ready to start your multi-node Transfer CFTs. Remember that in a z/OS multi-node environment, Copilot acts as the node manager.
 
-## Start a node
+Start a node
+------------
 
-The node manager submits a JCL defined by the UCONF <span class="code">`cft.multi_node.start_node.proc_fname`</span> parameter to start a node. (The default value is ..INSTALL(MNRMON)).
-
-> **Note**
->
-> You can use the UCONF parameter cft.multi\_node.start\_node.user to define a specific node user, but in this case the LOAD must be APF defined. Otherwise, if not set, the node is submitted using the node manager owner by default.
+The node manager submits a JCL defined by the UCONF `cft.multi_node.start_node.proc_fname` parameter to start a node. (The default value is ..INSTALL(MNRMON)).
 
 > **Note**
 >
-> Because the JCL MNRMON is an intermediate JCL, you must customize it.
+> Note: You can use the UCONF parameter cft.multi_node.start_node.user to define a specific node user, but in this case the LOAD must be APF defined. Otherwise, if not set, the node is submitted using the node manager owner by default.
+
+> **Note**
+>
+> Note: Because the JCL MNRMON is an intermediate JCL, you must customize it.
 
 ### Select the start mode for the node
 
 The following sections describe the two ways that you can start a node (customize MNRMAIN).
 
-- STC: <span class="code">`          //STEP010 EXEC PGM=IKJEFT01,PARM='%RXSCFT SC'`</span>
-- JCL: <span class="code">`           //STEP010 EXEC PGM=IKJEFT01,PARM='%RXSCFT SJ'`</span>
+- STC: `          //STEP010 EXEC PGM=IKJEFT01,PARM='%RXSCFT SC'`
+- JCL: `           //STEP010 EXEC PGM=IKJEFT01,PARM='%RXSCFT SJ'`
 
 ### STC
 

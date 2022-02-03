@@ -1,7 +1,7 @@
 {
     "title": "CFTIDF  - Template to virtual file association",
     "linkTitle": "CFTIDF - Template/virtual file association",
-    "weight": "360"
+    "weight": "350"
 }<span id="About_the_CFTIDF_Command"></span>You can use this command to locally establish this correspondence
 between the local IDF and the NIDF sent or received.
 

@@ -4,7 +4,8 @@
     "weight": "150"
 }See the installation if you encounter problems when starting {{< TransferCFT/axwayvariablesComponentLongName  >}}.
 
-## Installed directories
+Installed directories
+---------------------
 
 Once you install the product, the following subdirectories are available:
 
@@ -24,7 +25,7 @@ Once you install the product, the following subdirectories are available:
 
 > **Note**
 >
-> The act of installing Transfer CFT creates a distribution environment that contains product binaries and templates. Do no store any personal files in this environment, or modify existing files in this environment, as they are erased during updates.
+> Note: The act of installing Transfer CFT creates a distribution environment that contains product binaries and templates. Do no store any personal files in this environment, or modify existing files in this environment, as they are erased during updates.
 
 - EULA.html: License agreement (html format)
 - EULA.txt: License agreement (text format)

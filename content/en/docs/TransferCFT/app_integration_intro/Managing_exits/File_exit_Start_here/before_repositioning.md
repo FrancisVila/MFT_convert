@@ -26,7 +26,7 @@ the beginning of the file by setting the ret1 field to 1.
 ### Field values
 
 
-| Field  | Sender mode<br /> Before  | Sender mode<br /> After  | Receiver mode<br /> Before  | Receiver mode<br /> After  |
+| Field | Sender mode<br /> Before  | Sender mode<br /> After  | Receiver mode<br /> Before  | Receiver mode<br /> After  |
 | --- | --- | --- | --- | --- |
 | mtype | 5 | 5 | 5 | 5 |
 | masc | = | * | = | * |

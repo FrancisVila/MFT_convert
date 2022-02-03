@@ -1,14 +1,14 @@
 {
     "title": "nrpassw",
     "linkTitle": "nrpassw",
-    "weight": "2300"
+    "weight": "2320"
 }<span id="nrpassw"></span>
 
 ### nrpassw
 
 #### CFTPART
 
-**\[NRPASSW = string\]**
+**[NRPASSW = string]**
 
 *string32*     SFTP
 
@@ -24,7 +24,7 @@ This parameter value is case sensitive in CFTUTIL commands if you enclose the v
 
 > **Note**
 >
-> If you begin a password with an indirection character (Unix @, Windows #) when using SFTP, it is considered a reference to a file and not part of the password. Please see the SFTP pages for more information.
+> Note: If you begin a password with an indirection character (Unix @, Windows \#) when using SFTP, it is considered a reference to a file and not part of the password. Please see the SFTP pages for more information.
 
  
 

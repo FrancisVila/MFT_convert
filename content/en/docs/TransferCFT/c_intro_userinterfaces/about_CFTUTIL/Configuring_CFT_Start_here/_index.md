@@ -1,15 +1,16 @@
 {
     "title": "About CFTUTIL configuration operations",
     "linkTitle": "Object configuration",
-    "weight": "260"
+    "weight": "250"
 }This topic
 gives an overview of the Transfer CFT configuration and object conventions.
 
-## About the Transfer CFT configuration
+About the Transfer CFT configuration
+------------------------------------
 
-The Transfer CFT initially must have an <span style="font-style: italic;font-weight: bold;">******initial******</span>
+The Transfer CFT initially must have an ******initial******
 default configuration in order to startup. After the initial startup the
-<span style="font-style: italic;font-weight: bold;">******ongoing******</span> Transfer
+******ongoing****** Transfer
 CFT configuration feature enables you to modify parameters while Transfer
 CFT is running. The modifications are taken into account immediately without
 having to shut down the Transfer CFT for most object modifications. When
@@ -21,7 +22,8 @@ command line or the user interface.
 
 <span id="About_parameter_setting_commands"></span>
 
-## About parameter setting commands
+About parameter setting commands
+--------------------------------
 
 During the parameter setting phase, the data describing the Transfer
 CFT environment are entered by:
@@ -47,8 +49,6 @@ Start here.
 
 > **Note**
 >
-> The format that you use to enter commands in CFTUTIL is operating
+> Note: The format that you use to enter commands in CFTUTIL is operating
 > system dependent. For more information, refer to the Operations Manual
 > that corresponds to your operating system.
-
- 

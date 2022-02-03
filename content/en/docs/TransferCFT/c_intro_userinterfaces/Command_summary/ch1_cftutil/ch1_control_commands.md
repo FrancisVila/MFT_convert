@@ -1,7 +1,7 @@
 {
     "title": "Control commands",
     "linkTitle": "Control commands",
-    "weight": "260"
+    "weight": "250"
 }This section describes the control commands.
 
 - IF
@@ -67,7 +67,6 @@ LONG name = I, INIT = 4
      PRINT msg = 'I included between 4 et 5'
     ENDIF
 ```
-
 ```
  
 ```

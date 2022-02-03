@@ -1,7 +1,7 @@
 {
     "title": "KEEP - Suspend  transfers",
     "linkTitle": "KEEP - Suspending transfers",
-    "weight": "330"
+    "weight": "320"
 }This topic describes the KEEP command, which is used to <span id="About_the_KEEP_Command"></span>suspend
 one or all of the send, or one or all of the receive, transfers with selected
 partners.
@@ -10,7 +10,7 @@ The difference between suspending and interrupting, a HALT, is that
 the transfer can only be restarted by a manual operator command, the START
 command.
 
-The suspended transfers are set to the <span style="font-weight: bold;">****K****</span>
+The suspended transfers are set to the ****K****
 phasestep. The monitor ensures the integrity of the data in case of suspension
 and, depending on the protocol used, authorizes the restarting of the
 transfer from the last synchronization point set before the interruption,
@@ -57,11 +57,10 @@ DIRECT = RECV
 This command suspends the receiving of the file PAY from a partner,
 whose identifier begins with PARIS.
 
-## Modify transfer entries parameters
+Modify transfer entries parameters
+----------------------------------
 
 The following tables describes the parameters used to modify a transfer entry in the catalog.
-
-QQQ\_QQQ\_QQQ
 
 
 | Command  | Parameter  | Value  | Description  |

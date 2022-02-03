@@ -6,7 +6,7 @@
 
 > **Note**
 >
-> Transfer CFT supports all POSIX file systems. Active/passive shared disks must be POSIX compliant!
+> Note: Transfer CFT supports all POSIX file systems. Active/passive shared disks must be POSIX compliant!
 
 A cluster installation of Transfer CFT without multi-node is an active/passive installation as described below:
 
@@ -23,19 +23,20 @@ A cluster installation of Transfer CFT without multi-node is an active/passive i
 
 > **Note**
 >
-> After installing applications in active/passive mode, you must implement the cft start, cft stop, and cft status scripts for the cluster.
+> Note: After installing applications in active/passive mode, you must implement the cft start, cft stop, and cft status scripts for the cluster.
 
 ****Shared Directory****
 
 This is the path and name of the directory where you want to create a shared directory for the cluster installation. The shared directory is used to store product data files.
 
-*Windows only* - When installing a Windows multi-host Transfer CFT architecture, we recommend that you use UNC notation, which defines the path to a shared folder using the format<span class="code">` \\server\sharename.`</span>
+*Windows only* - When installing a Windows multi-host Transfer CFT architecture, we recommend that you use UNC notation, which defines the path to a shared folder using the format` \\server\sharename.`
 
 ****Installation Directory****
 
 The path and name of the local directory where you want to install the first cluster.
 
-## Prerequisites
+Prerequisites
+-------------
 
 ### Multi-node license keys
 
@@ -43,7 +44,7 @@ The path and name of the local directory where you want to install the first clu
 
 > **Note**
 >
-> See Shared file system prerequisites for details.
+> Note: See Shared file system prerequisites for details.
 
 You can use a single key for a multi-node installation, as either:
 
@@ -64,26 +65,29 @@ Create as many copies of the initialize.properties file as you have hosts in the
 | CFT_Full_Hostname  | Host Address of the local server: FQDN (Fully Qualified Domain Name) or IP Address.<br/> When you re installing a cluster, there are two ways to define this parameter:<br/> • If you do not set this in the silent file, the installation determines it (if the machine is correctly configured)<br/><br/> • Set the FQDN for each machine in the cluster, that is, for each host installation |
 | --- | --- |
 | Runtimedir  | The runtime directory must be in a shared directory.  |
-| LoadBalancer_Host  | Specify the host address of the load balancer, which is the cluster's public IP address in an active/passive deployment.<br/> <blockquote> **Note**<br/> The load balancer is used to connect to the Transfer CFT Copilot server.<br/> </blockquote>  |
+| LoadBalancer_Host  | Specify the host address of the load balancer, which is the cluster's public IP address in an active/passive deployment.<br/> <blockquote> **Note**<br/> Note: The load balancer is used to connect to the Transfer CFT Copilot server.<br/> </blockquote>  |
 | LoadBalancer_Port  | Specify the load balancer port, which is redirected to the Central Governance dedicated port of the Transfer CFT UI Server.  |
 
 
-## Install
+Install
+-------
 
 1. Start the installation.
-1. Transfer\_CFT\_{{< TransferCFT/axwayvariablesReleaseNumber >}}\_Install\_win-x86-64\_BNXXXXXXXX.exe
-1. ./Transfer\_CFT\_{{< TransferCFT/axwayvariablesReleaseNumber >}}\_Install\_&lt;OS>\_&lt;BN>.run
+1. Transfer_CFT_{{< TransferCFT/axwayvariablesReleaseNumber  >}}_Install_win-x86-64_BNXXXXXXXX.exe
+1. ./Transfer_CFT_{{< TransferCFT/axwayvariablesReleaseNumber  >}}_Install_&lt;OS&gt;_&lt;BN&gt;.run
 1. In the Installation Architecture screen, select **Cluster - first host**.
 1. Complete the installation.
-1. To add a host to create a multi-host installation, run the install <span class="code">`exe/bat`</span> again. This time select **Cluster - Additional host**.
+1. To add a host to create a multi-host installation, run the install `exe/bat` again. This time select **Cluster - Additional host**.
 
-## Silent installation
+Silent installation
+-------------------
 
 This section describes the differences when installing using a silent file for a multi-host installation.
 
 In the silent file (initialize.properties), you can use the same definitions as in the Transfer CFT 3.3.2 silent files.
 
-## Integrate Transfer CFT in a Microsoft Cluster Service (MSCS)
+Integrate Transfer CFT in a Microsoft Cluster Service (MSCS)
+------------------------------------------------------------
 
 ### Prerequisites
 
@@ -92,3 +96,7 @@ Transfer CFT must be installed in service mode.
 ### Define Transfer CFT as a Generic Service Resource
 
 Transfer CFT is a cluster-unaware application. However, you can integrate Transfer CFT in a cluster environment as a Generic Service Resource. Use the Microsoft **High Availability Wizard** to create a **Generic Service**, and from the **Select Service** dialog box select the Transfer CFT service.
+
+### License key
+
+The Transfer CFT license key refers to a specific machine, and is based on the machine's hostname. To allow Transfer CFT to start on both cluster nodes, you need one license key per node. Enter the two license keys in the `%CFTKEY%` file located on the shared disk, one key per line.

@@ -11,9 +11,8 @@
 - System freezes or infinite looping
 - Service pack issues (applying or removing), also for migrating issues, updates
 
-## Common causes
-
-QQQ\_QQQ\_QQQ
+Common causes
+-------------
 
 
 | Issue vs<br /> Possible causes  | Hard disk bottleneck  | Catalog<br/> full | Network<br/> bottleneck | Memory or processor bottleneck*  | Corrupt<br/> file or DB ** |
@@ -30,13 +29,14 @@ QQQ\_QQQ\_QQQ
 
 \*\* {{< TransferCFT/axwayvariablesComponentLongName  >}} internal database.
 
-## Initial checks and actions
+Initial checks and actions
+--------------------------
 
 ### Disk check
 
 - No space left on the device
     -   Free space
-    -   Check Sentinel connectivity an{{< TransferCFT/axwayvariablesComponentShortName >}}d verify the size of the runtime/data/trkapi.buf file, which may be voluminous
+    -   Check Sentinel connectivity an{{< TransferCFT/axwayvariablesComponentShortName  >}}d verify the size of the runtime/data/trkapi.buf file, which may be voluminous
 - Check for problematic file transfers and output, and clean
 - Check to see if traces are set, which may lead to multiple large files in the "run" directory
 - Check to see if you have enabled dynamic catalog resizing
@@ -69,5 +69,5 @@ These corrective measures are often system dependent.
 ### Check additional products
 
 - Check if another product is consuming all of the CPU/memory
-- Check {{< TransferCFT/PrimaryCGorUM >}} interoperability, such as the {{< TransferCFT/PrimarySentinel >}} database
+- Check {{< TransferCFT/PrimaryCGorUM  >}} interoperability, such as the {{< TransferCFT/PrimarySentinel  >}} database
 - Scripts or end-of-transfer procedures may indirectly

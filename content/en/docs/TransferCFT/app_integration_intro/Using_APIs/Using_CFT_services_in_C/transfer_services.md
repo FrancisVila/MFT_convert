@@ -27,7 +27,7 @@ The transfer services functions:
     of the command parameters, if the function using the syntax analyzer is
     used
 - Place the command
-    in the {{< TransferCFT/axwayvariablesComponentShortName >}} communication medium
+    in the {{< TransferCFT/axwayvariablesComponentShortName  >}} communication medium
 
 The processing performed by {{< TransferCFT/axwayvariablesComponentShortName  >}} is totally asynchronous.
 
@@ -42,11 +42,11 @@ in the communication medium.
 | --- | --- |
 | SEND | Send transfer request: file, message or reply |
 | RECV | Receive transfer request |
-| HALT | Interrupt one or more send or receive transfers with a given partner.<br/> The interrupted transfers are set to the "H" state and can be restarted at the partner's request. |
-| KEEP | Suspend one or more send or receive transfers with a given partner.<br/> The interrupted transfers are set to the "K" state and can only be restarted by a START command. |
+| HALT | Interrupt one or more send or receive transfers with a given partner.<br/> The interrupted transfers are set to the &quot;H&quot; state and can be restarted at the partner's request. |
+| KEEP | Suspend one or more send or receive transfers with a given partner.<br/> The interrupted transfers are set to the &quot;K&quot; state and can only be restarted by a START command. |
 | START | Start one or more send or receive transfers |
 | DELETE | Delete a catalog entry and any transfer in process associated with it |
-| END | Set a transfer status to executed<br/> The transfer is set to the "X" state. This indicates that end-of-transfer procedure has been correctly executed. |
+| END | Set a transfer status to executed<br/> The transfer is set to the &quot;X&quot; state. This indicates that end-of-transfer procedure has been correctly executed. |
 | SUBMIT | Submit the end-of-transfer procedure |
 | SHUT | Shut down {{< TransferCFT/axwayvariablesComponentShortName  >}} |
 | SWITCH | Switch monitoring files, LOG, STATS... |
@@ -57,7 +57,8 @@ in the communication medium.
 
 <span id="Call Syntax"></span>
 
-## Call syntax
+Call syntax
+-----------
 
 `rc =      cftau (verb,param)`
 
@@ -68,15 +69,15 @@ Where:
 - cftau indicates
     that syntax analysis is requested
 - cftac indicates that syntax analysis is not requested
-- &lt;verb> is
+- &lt;verb&gt; is
     the command that you want to process
-- &lt;param> is
+- &lt;param&gt; is
     a character string of variable length that contains the command parameters.
     The end of the field is defined by a character initially set to low-value
-- &lt;rc> is the
+- &lt;rc&gt; is the
     return code
 
-The available &lt;verbs> are listed in the following table.
+The available &lt;verbs&gt; are listed in the following table.
 
 
 | &lt;verb&gt; | Service |
@@ -87,7 +88,7 @@ The available &lt;verbs> are listed in the following table.
 | KEEP | Suspend |
 | START | Retry |
 | DELETE | Delete |
-| END | Proceed to "X" state |
+| END | Proceed to &quot;X&quot; state |
 | SUBMIT | Re-submit end-of-transfer procedure |
 | SHUT | Stop monitor |
 | SWITCH | Switching monitoring files<br /> (log, statistics file) |
@@ -97,7 +98,7 @@ The available &lt;verbs> are listed in the following table.
 For more information on the parameter syntax for each command, refer to
 the [Command index](../../../../c_intro_userinterfaces/command_summary).
 
-If &lt;param> is not defined, CFTU will
+If &lt;param&gt; is not defined, CFTU will
 take a default name.
 
 As these media are not available on all systems, the function performs
@@ -113,7 +114,8 @@ if applicable, depending on the command:
 - Type: SWITCH LOG
     or ACCNT
 
-## Return codes
+Return codes
+------------
 
 
 | Mnemonic | Description |
@@ -130,12 +132,13 @@ if applicable, depending on the command:
 | CAPI_INT_ERR3 | Internal error 3 |
 
 
-## Error messages
+Error messages
+--------------
 
 The FIELD and MSG fields of the CFTAPI COPY CLAUSE contain:
 
 - FIELD: name of
-    the incorrect parameter detected by the {{< TransferCFT/axwayvariablesComponentShortName >}} syntax analyzer
+    the incorrect parameter detected by the {{< TransferCFT/axwayvariablesComponentShortName  >}} syntax analyzer
 - MSG:
     -   Either a message
         relative to the error recognized by the syntax analyzer

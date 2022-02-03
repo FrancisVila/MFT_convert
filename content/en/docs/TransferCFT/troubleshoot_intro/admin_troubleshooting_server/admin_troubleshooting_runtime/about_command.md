@@ -2,7 +2,8 @@
     "title": "Display product information",
     "linkTitle": "Display product information",
     "weight": "340"
-}## Use the ABOUT command
+}Use the ABOUT command
+---------------------
 
 Use the ABOUT command to display
 the Transfer CFT product, host, and key information. This command displays the characteristics of the platform
@@ -12,9 +13,9 @@ on which Transfer CFT is installed.
 
 `[ COMMENT   = string ]`
 
-`[ TYPE   = { ALL   | HOST | CFT } ]`
+`[ TYPE   = { ALL   &#124; HOST &#124; CFT } ]`
 
-`[ KEY = { FIRST | ALL } ]`
+`[ KEY = { FIRST &#124; ALL } ]`
 
 ****Parameters****
 
@@ -55,7 +56,8 @@ Host information :
 \* release = Seven Service Pack 1
 \* distrib =
 Axway information :
-\* product = {{< TransferCFT/axwayvariablesPlatformorSuiteShortName >}} Transfer CFT
+\* product = AMPLIFY
+Transfer CFT
 \* version = 3.3.2_SP1.0
 \* applied-patches =
 \* forbidden-patches =
@@ -78,13 +80,14 @@ CFTU00I ABOUT _ Correct ()
 ```
 <span id="CFTTELL"></span>
 
-## Use the cfttell program
+Use the cfttell program
+-----------------------
 
 UNIX and Windows only
 
-This executable file retrieves system information, for example information needed to request a key. To use <span class="code">`cfttell`</span>:
+This executable file retrieves system information, for example information needed to request a key. To use `cfttell`:
 
-- Navigate to the<span class="code">` <CFTDIRINSTALL>/bin`</span> directory
+- Navigate to the` <CFTDIRINSTALL>/bin` directory
 - Run cfttell
 
 Options:
@@ -104,21 +107,21 @@ Keys:
 ****Examples****
 
 ```
-C:\\projects><span class="code">`cfttell target`</span>
+C:\\projects> cfttell target
 win-x86-64
 ```
 
  
 
 ```
-C:\\projects><span class="code">`cfttell version`</span>
+C:\\projects> cfttell version
 3000
 ```
 
  
 
 ```
-C:\\projects><span class="code">`cfttell hostinfo`</span>
+C:\\projects> cfttell hostinfo
 CFT version : 3010
 Target : win-x86-32
 Processor architecture : x64

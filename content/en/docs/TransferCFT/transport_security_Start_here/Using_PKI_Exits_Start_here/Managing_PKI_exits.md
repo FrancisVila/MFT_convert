@@ -1,7 +1,7 @@
 {
     "title": "Managing  PKI exits",
     "linkTitle": "Managing PKI exits",
-    "weight": "220"
+    "weight": "210"
 }This topic describes the steps involved in a PKI exit, as well as how
 PKI exits work in Transfer CFT transport security. PKI processes and concepts
 include:
@@ -33,7 +33,8 @@ types of Transfer CFT processing events.
 
 <span id="PKI_exit_fields"></span>
 
-## PKI exit fields
+PKI exit fields
+---------------
 
 You can access additional transport security fields in
 the End of Transfer
@@ -49,7 +50,8 @@ exits.
 
 <span id="Creating_an_SSL_task"></span>
 
-## Creating an SSL task
+Creating an SSL task
+--------------------
 
 The cftpkie function is systematically called in the StartTask
 phase. According to the Transfer CFT configuration and operating system,
@@ -71,7 +73,8 @@ internal datafile protection password.
 
 <span id="Terminating_an_SSL_task"></span>
 
-## Terminating an SSL task
+Terminating an SSL task
+-----------------------
 
 The EndTask phase is symmetrical to the StartTask phase.
 Each SSL task terminated generates a call to the cftpkie function,
@@ -79,7 +82,8 @@ indicating the EndTask phase.
 
 <span id="Opening_an_SSL_task"></span>
 
-## Opening an SSL task
+Opening an SSL task
+-------------------
 
 The cftpkie function call in the StartHandshake phase
 corresponds to opening an SSL session on an established network connection,
@@ -97,7 +101,8 @@ certain security profile elements.
 
 <span id="Getting_a_CA_list_to_be_sent"></span>
 
-## Sending a CA list
+Sending a CA list
+-----------------
 
 The cftpkie function in the GetCAList phase is only called in
 server mode and corresponds to getting the list of supported authority
@@ -105,7 +110,7 @@ DNs. The remote (client) entity must provide a certificate signed by one
 of these authorities. The following figure indicates the format that the
 cftpkie function must respect when building the list.
 
-********<span class="autonumber"></span>CA list format********
+********CA list format********
 
 ![Format of the certificate showing the corresponding byte for each element](/Images/TransferCFT/Image1876.gif)
 
@@ -128,7 +133,7 @@ the same as the one described in the GetCAList phase.
 The following figure indicates the format that the cftpkie function
 must respect when building the certificate.
 
-********<span class="autonumber"></span>Format of a certificate chain to be sent********
+********Format of a certificate chain to be sent********
 
 ![View of bytes for DER encoding](/Images/TransferCFT/Image1877.gif)
 
@@ -142,7 +147,7 @@ The format of the certificate chain passed to the cftpkie function
 is the same as the one for the GetCertificate phase.
 
 The TLS specification (RFC 2246) defines standard certificate check
-error codes. If a certificate is refused, you must set the iAlertReason\_w
+error codes. If a certificate is refused, you must set the iAlertReason_w
 field to a recognized value. This value is sent to the remote entity prior
 to disconnection.
 
@@ -159,7 +164,8 @@ insufficient_security(71)          internal_error(80)        �
 ```
 <span id="Encrypting_with_the_private_key"></span>
 
-## Encrypting with the private key
+Encrypting with the private key
+-------------------------------
 
 The cftpkie function call in the CryptData phase corresponds
 to encrypting data with the private key associated with the local certificate
@@ -230,7 +236,7 @@ It also contains:
 
 The following figure reviews the PKI exit phases for the server mode.
 
-********<span class="autonumber"></span>PKI Exit Phases in Server Mode********
+********PKI Exit Phases in Server Mode********
 
 ![SSL task execution beginning with a handshake](/Images/TransferCFT/Image1878.gif)
 
@@ -242,7 +248,7 @@ choice is dictated by the security profile (CFTSSL command).
 
 The following figure reviews the PKI exit phases for the client mode.
 
-********<span class="autonumber"></span>PKI exit phases in client mode********
+********PKI exit phases in client mode********
 
 ![SSL Task execution from handshake to the end of the SSL task](/Images/TransferCFT/Image1879.gif)
 

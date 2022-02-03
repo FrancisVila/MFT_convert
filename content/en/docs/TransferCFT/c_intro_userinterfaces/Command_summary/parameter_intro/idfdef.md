@@ -1,7 +1,7 @@
 {
     "title": "idfdef",
     "linkTitle": "idfdef",
-    "weight": "1550"
+    "weight": "1540"
 }### idfdef
 
 Default IDF.

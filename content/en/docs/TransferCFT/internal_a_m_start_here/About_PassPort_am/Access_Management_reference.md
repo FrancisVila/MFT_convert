@@ -1,10 +1,11 @@
 {
     "title": "Access management  reference information ",
     "linkTitle": "Reference: access management mapping",
-    "weight": "220"
+    "weight": "210"
 }This section describes how to configure access management when not using {{< TransferCFT/PrimaryCGorUM  >}}.
 
-## Access management mapping in earlier versions
+Access management mapping in earlier versions
+---------------------------------------------
 
 Prior to the PassPort AM implementation and interoperability, Transfer
 CFT used the following Access Management setup. This information is provided as a reference.
@@ -78,7 +79,8 @@ obj (ID)
                     create
 ```
 
-## About resources and actions
+About resources and actions
+---------------------------
 
 You can map the environment variables as displayed
 in the following examples.

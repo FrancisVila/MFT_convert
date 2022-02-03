@@ -1,7 +1,7 @@
 {
     "title": "Client and server recommendations",
     "linkTitle": "Client and server recommendations",
-    "weight": "240"
+    "weight": "230"
 }This section provides recommendations and examples based on:
 
 - [Client mode outgoing transfers](#Client)
@@ -10,7 +10,8 @@
 
 <span id="Client"></span>
 
-## Client mode
+Client mode
+-----------
 
 If the Transfer CFT instance is mainly used for outgoing transfers it is recommended to set the MAXTRANS to an equal or lower value than the MAXCNX. In fact, Transfer CFT is quite efficient if its transfer scheduler is rejected at the transfer activation level rather than at the connection level.
 
@@ -30,7 +31,7 @@ SUN35-1 SFT XX TEST2 F1517084 14 14 0 CP NONE
 SUN35-2 SFT XX TEST2 F1517085 14 14 0 CP NONE
 SUN35-3 SFT XX TEST2 F1517090 14 14 0 CP NONE
 SUN35-4 SFT XX TEST2 F1517091 14 14 0 CP NONE
-**SUN35-5 SFD TD TEST2 F1517092 0 0 416 MAXCNX**
+SUN35-5 SFD TD TEST2 F1517092 0 0 416 MAXCNX
 ```
 <span id="Session"></span>
 
@@ -61,7 +62,8 @@ Determine the typical daily peak number of incoming and outgoing transfers in pa
 
 <span id="Server"></span>
 
-## Server mode
+Server mode
+-----------
 
 If you use the Transfer CFT mainly for incoming transfers, it is recommended that you set the MAXTRANS to a greater value than (or equal to) the sum of all configured MAXCNX (in the case where you have multiple CFTNET objects).
 
@@ -102,7 +104,8 @@ Determine the typical daily peak incoming and outgoing rate where we assume that
 
 <span id="Impact"></span>
 
-## Impact on scheduling
+Impact on scheduling
+--------------------
 
 In addition to simply looking at the maximum number of sessions, connections, and transfers, it is important to take into consideration how excess transfers are treated.
 
@@ -129,7 +132,7 @@ Transfers are only scheduled after WSCAN minutes, so this value can negatively 
 
 > **Note**
 >
-> The default value is 5, and should in almost all cases be modified. We recommend that you modify the value to 1. Not changing the value could lead to latency issues for either remote MAXTRANS local MAXCNX. See table above.
+> Note: The default value is 5, and should in almost all cases be modified. We recommend that you modify the value to 1. Not changing the value could lead to latency issues for either remote MAXTRANS local MAXCNX. See table above.
 
 #### DISCTS/DISCTD value is set to zero
 
@@ -145,7 +148,7 @@ If RETRYW minutes are set to a high value, this has an impact on when the remote
 
 > **Note**
 >
-> A good rule of thumb is to set this value to 1.
+> Note: A good rule of thumb is to set this value to 1.
 
 ### Negative impact on transfer times
 

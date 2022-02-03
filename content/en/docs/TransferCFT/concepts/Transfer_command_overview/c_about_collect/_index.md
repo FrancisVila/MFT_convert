@@ -9,14 +9,15 @@ associated with this collection; this list is defined in the CFTDEST command.
 The following illustration displays the relationships
 to be established to perform a collection.
 
-********<span class="autonumber"></span>Define a list
+********Define a list
 of partners********
 
 **![](/Images/TransferCFT/Define_list_of_partner_RECV.gif)**
 
 <span id="Broadcasting_lists"></span>
 
-## Broadcast and collection lists
+Broadcast and collection lists
+------------------------------
 
 <span id="About_the_Distribution_list"></span>
 
@@ -43,7 +44,7 @@ in a list cannot itself be a broadcasting list.
 
 > **Note**
 >
-> The number of entries is not cross-checked against
+> Note: The number of entries is not cross-checked against
 > the number of partners in the list.
 
 <span id="Definition_of_a_partner_list"></span>

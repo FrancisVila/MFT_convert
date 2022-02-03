@@ -1,14 +1,14 @@
 {
     "title": "ospace",
     "linkTitle": "ospace",
-    "weight": "2500"
+    "weight": "2520"
 }<span id="ospace"></span>
 
 ### {{< TransferCFT/SystemTitle  >}}
 
 #### COPYFILE
 
-**\[OSPACE = {<u>0</u> | n }\]  **{0..4294967295}
+**[OSPACE = {<span class="underline">0</span> &#124; n }]  **{0..4294967295}
 
 Space to be reserved for the output file, in K-bytes (1 K-byte = 1024
 bytes).

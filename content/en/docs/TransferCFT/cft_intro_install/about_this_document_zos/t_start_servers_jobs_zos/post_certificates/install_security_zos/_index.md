@@ -6,7 +6,8 @@
 
 When installing Transfer CFT, all procedures that update RACF must be performed by users with RACF rights. Other procedures are performed by the Transfer CFT administrator. For information on the Transfer CFT administrator definition, see the H83SAFDA member details.
 
-## Transfer CFT installation procedures
+Transfer CFT installation procedures
+------------------------------------
 
 Transfer CFT software can be installed with or without the security system. In all cases, you must follow the installation procedure indicated in the Transfer CFT z/OS Installation and Operations Guide. The security system is intended to be installed on systems already running Transfer CFT. It is installed in several steps; each represents control levels with increasing severity.
 
@@ -71,7 +72,8 @@ Once the H83SAFDA job is adapted, use this job to create groups and the Transfer
   safcftcl 'safcftcl'             SAF class for CFT profiles    
 ```
 
-## Security system installation procedure
+Security system installation procedure
+--------------------------------------
 
 When the general resource class (safcftcl) is applied by RACF, the authorized user can begin the installation to implement the minimum (Transfer CFT and RACF) resources required to run the security system. You must perform the installation procedures in the order shown in the following table.
 
@@ -82,9 +84,6 @@ When the general resource class (safcftcl) is applied by RACF, the authorized us
 | --- | --- |
 | H84SAFDF | Creates RACF general resource CFT profiles |
 | H85SAFPR | Executes RACF PERMIT commands |
-| H86SAFCR | Creates the LOADMAIN library and SECINI file |
-| H87SECEN | Creates dictionaries, actions and objects |
-| H88INIT | Creates CFT files with the security system enabled (replacing D40INIT) |
 | H88PARM | Edits the parameter file (adds CFTAPPL) |
 | H89SAFAS | Creates CFT file protection profiles with PADS (upgrades from security level 1 to level 2) |
 | H89SAFAU | Sample allowing certain users to modify parameters and/or perform transfers |

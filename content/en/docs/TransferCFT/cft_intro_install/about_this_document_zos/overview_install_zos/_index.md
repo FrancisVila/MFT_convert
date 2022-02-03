@@ -24,6 +24,6 @@ The act of installing Transfer CFT creates a distribution environment that conta
 
 > **Note**
 >
-> You use the distribution environment to create the instance environment, which is your target (runtime).
+> Note: You use the distribution environment to create the instance environment, which is your target (runtime).
 
 The directories that are installed during the installation procedure are described in [Verify your installation](../post_install_zos).

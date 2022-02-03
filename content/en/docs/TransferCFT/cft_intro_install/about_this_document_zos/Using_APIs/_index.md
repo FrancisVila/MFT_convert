@@ -24,7 +24,8 @@ services can be called by programs in COBOL or in C language as described in thi
 
 <span id="About_CFT_Services"></span>
 
-## About {{< TransferCFT/axwayvariablesComponentShortName  >}} services
+About {{< TransferCFT/axwayvariablesComponentShortName  >}} services
+-------------------------------------------------------------------------
 
 You can query information related to correctly completed transfers.
 This information can be accessed in the communication structure.

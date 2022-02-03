@@ -8,11 +8,13 @@
 - File-type Exits
 - Calling APIs in Exits
 
-## Exit lists
+Exit lists
+----------
 
 The exit list is installed automatically as CFTEXILI. For more information, refer to the Transfer CFT {{< TransferCFT/axwayvariablesComponentVersion  >}} documentation on *[*Exit Lists*](https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/Prog/Exits/EXIT_list/exit_lists_start_here.htm)*.
 
-## File type exits
+File type exits
+---------------
 
 For more information on exits in Transfer CFT, refer to the Transfer CFT documentation on [File Exits](https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/Prog/Exits/File_exit/File_exit_Start_here.htm).
 

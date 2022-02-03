@@ -1,7 +1,7 @@
 {
     "title": "Listing parameters - LISTPARM ",
     "linkTitle": "LISTPARM - List parameters",
-    "weight": "480"
+    "weight": "470"
 }This page describes the LISTPARM command. You can use this command
 to query Transfer CFT parameters.
 
@@ -38,7 +38,8 @@ Displays the parameters of all the CFTSEND objects configured.
 
 <span id="Type_table"></span>
 
-#### Type table
+Type table
+----------
 
 TYPE can take the predefined values indicated in the table below.
 
@@ -50,7 +51,7 @@ TYPE can take the predefined values indicated in the table below.
 | AUTH  | Used to query file authorization lists.<br /> These lists are customized by the CFTAUTH objects.  |
 | CAT  | Used to query catalog parameters.<br /> These parameters are submitted when CFTCAT objects are entered. |
 | COM  | Used to query communication media parameters.<br /> These parameters are submitted when CFTCOM objects are entered  |
-| IDF  | Used to query file "network" identifiers.<br /> Identifiers are customized by the CFTIDF objects.  |
+| IDF  | Used to query file &quot;network&quot; identifiers.<br /> Identifiers are customized by the CFTIDF objects.  |
 | LOG  | Used to query log file parameters.<br /> These parameters are submitted when CFTLOG objects are entered.  |
 | NET  | Used to query network characteristic parameters.<br /> These parameters are submitted when CFTNET objects are entered and differ according to the type of network configured.  |
 | PARM  | Used to query general parameters.<br /> These parameters are submitted when CFTPARM objects are entered.  |

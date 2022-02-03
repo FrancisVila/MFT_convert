@@ -1,12 +1,12 @@
 {
     "title": "during",
     "linkTitle": "during",
-    "weight": "790"
+    "weight": "780"
 }<span id="during"></span>
 
 ### during
 
-**\[DURING = {<u>0</u> | n}\]**
+**[DURING = {<span class="underline">0</span> &#124; n}]**
 
 {0..65535}
 

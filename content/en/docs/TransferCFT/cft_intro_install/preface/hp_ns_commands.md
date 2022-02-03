@@ -4,7 +4,8 @@
     "weight": "200"
 }This chapter describes how to use Transfer CFT commands in a Tandem/Guardian environment.
 
-## About the commands
+About the commands
+------------------
 
 Transfer CFT offers a set of commands which can be used interactively or within procedures in your Guardian environment.
 
@@ -16,7 +17,7 @@ You cannot use Transfer CFT Guardian 2.3.2 CFTUTIL commands with Transfer CFT {
 
 ### Available commands
 
-Three types of commands are available in the installed volume.&lt;subvolume>IX:
+Three types of commands are available in the installed volume.&lt;subvolume&gt;IX:
 
 - CFT: management commands to control the Transfer CFT product
 - CFTUTIL: the command line interface for Transfer CFT
@@ -40,7 +41,7 @@ From the native command window enter the following to start, for example, CFTUTI
 
 ```
 $ YOURCO HOME > volume $DATA14.CFT32AIX
-$DATA14 CFT32AIX 1> **CFTUTIL**
+$DATA14 CFT32AIX 1> CFTUTIL
 ```
 
 ### Command structure
@@ -49,7 +50,8 @@ Transfer CFT Guardian commands, other than CFTUTLX, are comprised of TACL macros
 
 CFTUTLX is a Guardian binary that handles the INLINE mode and calls the OSS CFTUTIL. To do so, it creates one or two temporary files in the TACL DEFAULTS. Please ensure that the DEFAULTS point to a location where CFTUTLX can create and delete its temporary files.
 
-## Using commands
+Using commands
+--------------
 
 ### Run a command
 
@@ -94,7 +96,7 @@ There are two ways to redirect Transfer CFT Guardian command output.
 
 #### Redirect output to an OSS file
 
-This is done by using the standard Unix redirection symbol “>”.
+This is done by using the standard Unix redirection symbol “&gt;”.
 
 ```
 $DATA14 CFT36B 16> CFTUTIL about > /home/axway/user1/cftout.txt
@@ -164,9 +166,9 @@ $SAS51 FORD36IX 9> pop CFT^UTLOUT
 
 ### Tracing command execution
 
-To gather command details, Axway support may ask you to set the <span class="code">`CFTUTLX^TRACE^LEVEL`</span> parameter for a <span class="code">`CFTUTLX `</span>command trace.
+To gather command details, Axway support may ask you to set the `CFTUTLX^TRACE^LEVEL` parameter for a `CFTUTLX `command trace.
 
-The <span class="code">`CFTUTLX^TRACE^LEVEL`</span> values are:
+The `CFTUTLX^TRACE^LEVEL` values are:
 
 
 | Value  | Description  | Temporary CFTUTLX files are deleted  |

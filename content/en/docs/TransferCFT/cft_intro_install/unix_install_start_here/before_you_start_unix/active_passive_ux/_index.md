@@ -4,7 +4,8 @@
     "weight": "180"
 }This section describes how to install an active/passive architecture, as described in [About Multi-node architecture.](../../../../about_multinode)
 
-## Prerequisites
+Prerequisites
+-------------
 
 Transfer CFT in multi-host architecture requires:
 
@@ -17,7 +18,7 @@ Transfer CFT in multi-host architecture requires:
 
 > **Note**
 >
-> See Shared file system prerequisites for details.
+> Note: See Shared file system prerequisites for details.
 
 You can use a single key for a multi-node installation, as either:
 
@@ -38,21 +39,21 @@ Create as many copies of the initialize.properties file as you have hosts in the
 | CFT_Full_Hostname  | Host Address of the local server: FQDN (Fully Qualified Domain Name) or IP Address.<br/> When you re installing a cluster, there are two ways to define this parameter:<br/> • If you do not set this in the silent file, the installation determines it (if the machine is correctly configured)<br/><br/> • Set the FQDN for each machine in the cluster, that is, for each host installation |
 | --- | --- |
 | Runtimedir  | The runtime directory must be in a shared directory.  |
-| LoadBalancer_Host  | Specify the host address of the load balancer, which is the cluster's public IP address in an active/passive deployment.<br/> <blockquote> **Note**<br/> The load balancer is used to connect to the Transfer CFT Copilot server.<br/> </blockquote>  |
+| LoadBalancer_Host  | Specify the host address of the load balancer, which is the cluster's public IP address in an active/passive deployment.<br/> <blockquote> **Note**<br/> Note: The load balancer is used to connect to the Transfer CFT Copilot server.<br/> </blockquote>  |
 | LoadBalancer_Port  | Specify the load balancer port, which is redirected to the Central Governance dedicated port of the Transfer CFT UI Server.  |
 
 
-## Install
+Install
+-------
 
 1. Start the installation.
-1. Transfer\_CFT\_{{< TransferCFT/axwayvariablesReleaseNumber >}}\_Install\_win-x86-64\_BNXXXXXXXX.exe
-1. ./Transfer\_CFT\_{{< TransferCFT/axwayvariablesReleaseNumber >}}\_Install\_&lt;OS>\_&lt;BN>.run
+1. Transfer_CFT_{{< TransferCFT/axwayvariablesReleaseNumber  >}}_Install_win-x86-64_BNXXXXXXXX.exe
+1. ./Transfer_CFT_{{< TransferCFT/axwayvariablesReleaseNumber  >}}_Install_&lt;OS&gt;_&lt;BN&gt;.run
 1. In the Installation Architecture screen, select **Cluster - first host**.
 1. Complete the installation.
-1. To add a host to create a multi-host installation, run the install <span class="code">`exe/bat`</span> again. This time select **Cluster - Additional host**.
+1. To add a host to create a multi-host installation, run the install `exe/bat` again. This time select **Cluster - Additional host**.
 
-## Silent installation
+Silent installation
+-------------------
 
 When installing using a silent file for a multihost installation, in the silent file (initialize.properties) you can use the same other definitions as in the Transfer CFT {{< TransferCFT/axwayvariablesReleaseNumber  >}} silent files.
-
- 

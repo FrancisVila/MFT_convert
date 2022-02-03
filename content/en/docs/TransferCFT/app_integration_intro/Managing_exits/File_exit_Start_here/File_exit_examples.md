@@ -138,5 +138,5 @@ The EXFxmp2 user function:
     byte of each non empty record with the ‘?’ character
 
 This sample is delivered with the {{< TransferCFT/axwayvariablesComponentShortName  >}} product.
-Refer to the <span style="font-weight: bold;font-family: 'Courier New', monospace;">****exfxmp2.c****</span> header
+Refer to the ****exfxmp2.c**** header
 in the delivered samples.

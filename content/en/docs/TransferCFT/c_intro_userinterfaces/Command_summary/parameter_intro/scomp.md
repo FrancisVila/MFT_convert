@@ -1,31 +1,31 @@
 {
     "title": "scomp",
     "linkTitle": "scomp",
-    "weight": "3080"
+    "weight": "3100"
 }<span id="scomp"></span>
 
 ### scomp
 
 #### CFTPROT
 
-**\[SCOMP = { <u>0</u> | 15 } \]** 
+**[SCOMP = { <span class="underline">0</span> &#124; 15 } ]** 
 
 The maximum authorized compression for sending a file.
 
 - rcomp//scomp
-    = <span style="font-weight: bold;">****0****</span> (no compression)
+    = ****0**** (no compression)
 - rcomp//scomp
-    = <span style="font-weight: bold;">****1****</span> (compression of a string of
+    = ****1**** (compression of a string of
     blanks)
 - rcomp//scomp
-    = <span style="font-weight: bold;">****2****</span> (compression of a string of
+    = ****2**** (compression of a string of
     identical characters)
 - rcomp//scomp
-    = <span style="font-weight: bold;">****4****</span> (character compression)
+    = ****4**** (character compression)
 - rcomp//scomp
-    = <span style="font-weight: bold;">****8****</span> (vertical compression)
+    = ****8**** (vertical compression)
 - rcomp//scomp
-    = <span style="font-weight: bold;">****15****</span> (all compressions)
+    = ****15**** (all compressions)
 
 This compression is negotiated between the sender and the receiver.
 

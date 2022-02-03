@@ -4,7 +4,8 @@
     "weight": "280"
 }This section describes how to set up RACF software to provide security control for file handling operations. Transfer CFT z/OS uses the SAF security interface, and is compatible with the security software packages that use this interface, in particular RACF.
 
-## File handling operations control
+File handling operations control
+--------------------------------
 
 By default, Transfer CFT implements file handling operations under its own authority.
 
@@ -26,7 +27,8 @@ You can activate more elaborate control in the following cases:
 
 - To request opening a file to be received under the authority of the transfer receiver
 
-## Activate RACF authorization control
+Activate RACF authorization control
+-----------------------------------
 
 The SAF services call (RACF or equivalent) is systematic.
 
@@ -54,7 +56,7 @@ RACF is required when the Internet interface is used to check the PASSWORDs. The
 
 - SAF is not available
 
-In either of these cases, you can log in by entering <span class="span_2">a random value</span> in the PASSWORD field. You then have the privileges of the JOB where you are logged on.
+In either of these cases, you can log in by entering a random value in the PASSWORD field. You then have the privileges of the JOB where you are logged on.
 
 ### RACF and the JAVA user interface
 
@@ -70,7 +72,7 @@ In either of these cases, you can enter any value in the PASSWORD field to conne
 
 > **Note**
 >
-> Transfer CFT z/OS accepts passwords in lower case using RACF or Top-Secret.
+> Note: Transfer CFT z/OS accepts passwords in lower case using RACF or Top-Secret.
 
 <span id="RACF pas"></span>
 
@@ -78,7 +80,7 @@ In either of these cases, you can enter any value in the PASSWORD field to conne
 
 {{< TransferCFT/axwayvariablesComponentLongName  >}} supports the use of a password phrase (RACF) in the user interface, JPIUTIL, REST API, and synchronous API services.
 
-<span class="bold_in_para">****Limitations****</span>
+****Limitations****
 
 - When using the user interface with RACF to enter your password phrase, the confirm password pop-up window does not display after the password phrase expiration.
 - The RACF password phrase can consist of up to 30 characters.

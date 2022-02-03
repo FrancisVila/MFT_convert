@@ -1,7 +1,7 @@
 {
     "title": "About Transfer CFT system users ",
     "linkTitle": "Manage user rights",
-    "weight": "190"
+    "weight": "180"
 }There are two basic types of rights needed to enable {{< TransferCFT/axwayvariablesComponentLongName  >}} flows: the rights required to perform activities, such as starting or configuring Transfer CFT, and the rights that apply to files themselves.
 
 This topic describes the parameters used to manage:
@@ -15,7 +15,8 @@ The <a href="user_rights_security_scenarios" class="MCXref xref">User rights and
 
 This topic begins with a brief review of key user control parameters, followed by a <a href="" class="MCXref xref">User rights use case</a>, step instructions, and then best practices in <a href="user_rights_tips" class="MCXref xref">Recommendations and troubleshooting</a>.
 
-## Procedure overview
+Procedure overview
+------------------
 
 After installing {{< TransferCFT/axwayvariablesComponentLongName  >}} and performing system recommendations, you can configure system users as described in these sections.
 
@@ -24,7 +25,8 @@ After installing {{< TransferCFT/axwayvariablesComponentLongName  >}} and perfor
 - <a href="user_rights_copilot" class="MCXref xref">3. Define client user rights</a>
 - <a href="user_rights_file_rights" class="MCXref xref">4. File actions and procedure execution permissions</a>
 
-## {{< TransferCFT/headerfootervariableshflongproductname  >}} user control parameters
+{{< TransferCFT/headerfootervariableshflongproductname  >}} user control parameters
+----------------------------------------------------------------------------------------
 
 There are two principle {{< TransferCFT/headerfootervariableshflongproductname  >}} parameters that control system users, USERCTRL and copilot.misc.createprocessasuser, which you can use in varying combinations to refine the level of security.
 

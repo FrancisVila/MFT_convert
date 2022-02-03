@@ -1,7 +1,7 @@
 {
     "title": "HALT- Interrupt transfers ",
     "linkTitle": "HALT - Halting a transfer",
-    "weight": "320"
+    "weight": "310"
 }This command is used to suspend one or all the send and/or receive transfers,
 with the partners selected.
 
@@ -78,11 +78,10 @@ HALT
 This command Halts the send transfer of the ACCNT model file for the
 partner HQ.
 
-## Modify transfer entry parameters
+Modify transfer entry parameters
+--------------------------------
 
 The following tables describes the parameters used to modify a transfer entry in the catalog.
-
-QQQ\_QQQ\_CHECK 2 look identical
 
 
 | Command  | Parameter  | Value  | Description  |

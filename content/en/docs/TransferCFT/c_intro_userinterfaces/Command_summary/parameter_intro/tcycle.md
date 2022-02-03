@@ -1,14 +1,14 @@
 {
     "title": "cycle",
     "linkTitle": "tcycle",
-    "weight": "3480"
+    "weight": "3500"
 }<span id="tcycle"></span>
 
 ### cycle
 
 #### CFTSEND, RECV, SEND
 
-****\[TCYCLE = {<u>DAY</u> |MIN | MONTH}\]****
+****[TCYCLE = {<span class="underline">DAY</span> &#124;MIN &#124; MONTH}]****
 
 Transfer cycle period unit. This unit can be:
 

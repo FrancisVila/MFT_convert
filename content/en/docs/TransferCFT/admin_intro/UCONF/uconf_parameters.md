@@ -13,7 +13,7 @@ and grouped into the following categories:
     parameters](#Work)
 - [Common parameters](#Common)
 - [Trace parameters](#Trace)
-- [{{< TransferCFT/axwayvariablesComponentShortName >}}
+- [{{< TransferCFT/axwayvariablesComponentShortName  >}}
     probe configuration](#Transfer2)
 - [Add a character set: transcoding](#Add)
 - [Accounting records](#Statisti)
@@ -22,7 +22,8 @@ and grouped into the following categories:
 
 <span id="Identifi"></span>
 
-## Identifier parameters
+Identifier parameters
+---------------------
 
 
 | UCONF  | Default  |
@@ -34,7 +35,8 @@ and grouped into the following categories:
 
 <span id="Instance"></span>
 
-## Instance parameters
+Instance parameters
+-------------------
 
 
 | ID  | Default  | Former value  |
@@ -55,26 +57,27 @@ and grouped into the following categories:
 
 <span id="Packagin"></span>
 
-## Packaging parameters
+Packaging parameters
+--------------------
 
 The following table lists the UCONF identifiers, default values, and former Windows and UNIX file values.
-&lt;/p>
+&lt;/p&gt;
 
 
 | ID  | Default  | Windows  | UNIX  |
 | --- | --- | --- | --- |
-| cft.runtime_dir  | $(CFTDIRRUNTIME)  |   |   |
-| cft.install_dir  | $(CFTDIRINSTALL)  |   |   |
+| cft.runtime_dir  | $(CFTDIRRUNTIME)  |  |  |
+| cft.install_dir  | $(CFTDIRINSTALL)  |  |  |
 | cft.synchrony_dir  |   |   |   |
 | cft.cftcat.fname | $(cft.runtime_dir)/data/cftcata  | $CFTCATA(cft.ini)  | _CFTCATA  |
-| cft.cftcat.default_size  | 10000  |   |   |
-| cft.cftcom.default_size  | 1000  |   |   |
+| cft.cftcat.default_size  | 10000  |  |  |
+| cft.cftcom.default_size  | 1000  |  |  |
 | cft.cftparm.fname  | $(cft.runtime_dir)/data/cftparm  | $CFTPARM  | _CFTPARM  |
 | cft.cftparm.partfname  | $(cft.runtime_dir)/data/cftpart  | $CFTPART  | _CFTPART  |
 | cft.cftparm.pkifname  | $(cft.runtime_dir)/conf/pki/pkibase  | $CFTPKU  | _CFTPKU  |
 | cft.cftparm.habfname  | $(cft.runtime_dir)/sec.ini  | $CFTHINI  | _CFTHINI  |
 | cft.cftparm.secparm  | $(cft.runtime_dir)/data/secparm  | $CFTHPARM  | _CFTHPARM  |
-| cft.cftparm.keyfname  | $(cft.runtime_dir)/conf/cft.key  |   |   |
+| cft.cftparm.keyfname  | $(cft.runtime_dir)/conf/cft.key  |  |  |
 | cft.cftcom.fname  | $(cft.runtime_dir)/data/cftcom  | $CFTCOM  | _CFTCOM  |
 | cft.cftlog.fname  | $(cft.runtime_dir)/log/cftlog  | $CFTLOG  | _CFTLOG  |
 | cft.cftlog.afname &gt;  | $(cft.runtime_dir)/log/cftalog  | $CFTALOG  | _CFTALOG  |
@@ -84,7 +87,8 @@ The following table lists the UCONF identifiers, default values, and former Wind
 
 <span id="Work"></span>
 
-## Work environment parameters
+Work environment parameters
+---------------------------
 
 
 | ID  | Default  | Description  |
@@ -95,7 +99,8 @@ The following table lists the UCONF identifiers, default values, and former Wind
 
 <span id="Common"></span>
 
-## Common parameters
+Common parameters
+-----------------
 
 Values for ID where the type is Common.
 
@@ -127,7 +132,8 @@ Values for ID where the type is Common.
 
 <span id="Trace"></span>
 
-## Trace parameters
+Trace parameters
+----------------
 
 
 | ID  | Default  | Former value  |
@@ -140,7 +146,8 @@ Values for ID where the type is Common.
 
 <span id="Transfer2"></span>
 
-## {{< TransferCFT/axwayvariablesComponentShortName  >}} probe configuration
+{{< TransferCFT/axwayvariablesComponentShortName  >}} probe configuration
+------------------------------------------------------------------------------
 
 Use the following parameters to define {{< TransferCFT/axwayvariablesComponentShortName  >}} probes.
 
@@ -153,7 +160,8 @@ Use the following parameters to define {{< TransferCFT/axwayvariablesComponentSh
 
 <span id="Add"></span>
 
-## Add a character set: transcoding
+Add a character set: transcoding
+--------------------------------
 
 
 | ID  | Description  |
@@ -162,7 +170,8 @@ Use the following parameters to define {{< TransferCFT/axwayvariablesComponentSh
 | cft.charsets.value.CUSTOM_CHARSET_ID.iconv_map  | Customize the charset that you created. |
 
 
-## Start log and catalog parameters
+Start log and catalog parameters
+--------------------------------
 
 
 | Parameter  | Default  | Description  |
@@ -174,7 +183,8 @@ Use the following parameters to define {{< TransferCFT/axwayvariablesComponentSh
 | cft.cftlog.switch_on_stop  | No  | Dictates if the switch log occurs at {{< TransferCFT/axwayvariablesComponentShortName  >}} server shutdown  |
 
 
-## Automatically expand the catalog
+Automatically expand the catalog
+--------------------------------
 
 
 | Parameter  | Default  | Description  |
@@ -185,7 +195,8 @@ Use the following parameters to define {{< TransferCFT/axwayvariablesComponentSh
 
 See also [Automatic catalog expansion](../../admin_monitoring_intro/auto_expand_catalog).
 
-## Parallel transfers
+Parallel transfers
+------------------
 
 
 | Parameter  | Description  |
@@ -193,7 +204,8 @@ See also [Automatic catalog expansion](../../admin_monitoring_intro/auto_expand_
 | uconf:cft.server.maxtrans  | Modifies the number of parallel transfers. See <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/trantask">trantask</a>.  |
 
 
-## Retrieve subdirectories
+Retrieve subdirectories
+-----------------------
 
 
 | Parameter  | Description  |
@@ -201,7 +213,8 @@ See also [Automatic catalog expansion](../../admin_monitoring_intro/auto_expand_
 | uconf:cft.dirdepth=Yes  | Enables retrieving subdirectories.  |
 
 
-## Synchronous connections
+Synchronous connections
+-----------------------
 
 
 | Parameter  | Description  |
@@ -209,7 +222,8 @@ See also [Automatic catalog expansion](../../admin_monitoring_intro/auto_expand_
 | uconf: cft.server.cftcoms.max_connection  | Defines the number of connections for CFTCOMS.  |
 
 
-## Purge
+Purge
+-----
 
 ### Startup configuration
 
@@ -241,7 +255,8 @@ These parameters modify the amount of time to keep transfers in catalog before p
 
 See also, [Purging the catalog](../../admin_commands_intro/purge_catalog), Transfer states and [LISTCAT.](../../../c_intro_userinterfaces/about_cftutil/monitoring_cftutil_intro/brief_catalog_listing)
 
-## Customizable network sessions
+Customizable network sessions
+-----------------------------
 
 
 | Parameter  | Default  | Description  |
@@ -251,7 +266,8 @@ See also, [Purging the catalog](../../admin_commands_intro/purge_catalog), Trans
 
 <span id="Transfer"></span>
 
-## Transfer requests
+Transfer requests
+-----------------
 
 This parameter lets you use the SEND or RECV command without requiring an [IDF](../../../c_intro_userinterfaces/command_summary/parameter_intro/idf). This means that if you do not define a transfer file identifier, a default value (CFTPART IDF) is used. Exceptions:
 
@@ -266,7 +282,8 @@ This parameter lets you use the SEND or RECV command without requiring an [IDF](
 
 <span id="Statisti"></span>
 
-## Accounting records
+Accounting records
+------------------
 
 
 | Parameter  | Default  | Description  |
@@ -276,18 +293,20 @@ This parameter lets you use the SEND or RECV command without requiring an [IDF](
 
 <span id="Compatib"></span>
 
-## Compatibility
+Compatibility
+-------------
 
 
 | Parameter  | Default value  | Description  |
 | --- | --- | --- |
 | Uconf:cft.listcat_compat  | No  | Defines the LISTCAT display:<br/> • Yes = Display using the former product format, which does not include the new columns. The format in LISTCAT is DTSA.<br/> • No= Display using the product version 3.0 and higher catalog format. The format in LISTCAT is DTSASPP. |
-| Uconf:cft.state_compat  | No  | Defines the transfer states:<br/> • Yes= The phase state is fully compatible with the states in versions prior to 3.0.<br/> • No = The state reflects the phase used in Transfer CFT 3.0 and higher. This uses phase instead of the former states, except during the Transfer phase, when the former state is the same as the phase step.<br/> <span >****Note****</span>: Uconf:cft.state_compat also impacts the <a href="../../../concepts/phase_and_phasestep/ack_phase">acknowledgement</a> behavior if ackstate is set to ignore. |
+| Uconf:cft.state_compat  | No  | Defines the transfer states:<br/> • Yes= The phase state is fully compatible with the states in versions prior to 3.0.<br/> • No = The state reflects the phase used in Transfer CFT 3.0 and higher. This uses phase instead of the former states, except during the Transfer phase, when the former state is the same as the phase step.<br/> ****Note****: Uconf:cft.state_compat also impacts the <a href="../../../concepts/phase_and_phasestep/ack_phase">acknowledgement</a> behavior if ackstate is set to ignore. |
 
 
 <span id="Deactivate_idf"></span>
 
-## Deactivate the default IDF
+Deactivate the default IDF
+--------------------------
 
 You can deactivate the default use of the IDF value for the CFTSEND and CFTRECV commands.
 

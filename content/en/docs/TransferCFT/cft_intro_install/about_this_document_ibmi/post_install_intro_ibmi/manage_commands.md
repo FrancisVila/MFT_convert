@@ -4,7 +4,8 @@
     "weight": "180"
 }This section describes all of the command available to manage your Transfer CFT product.
 
-## Standard commands
+Standard commands
+-----------------
 
 
 | Command | Comment |
@@ -16,7 +17,8 @@
 | CFTMN | This is the procedure to manage Transfer CFT and to configure multi-node. Add the following action(s) to manage your product:<br/> • START<br/> • STOP<br/> • RESTART<br/> • ADD_NODE<br/> • REMOVE_NODE<br/> • ADD_HOST<br/> • REMOVE_HOST<br/> • REMOVE_NODE<br/> • ENABLE_NODE<br/> • DISABLE_NODE<br/> <blockquote> **Note**<br/> CFTMN is the equivalent of cft script for UNIX or Windows.<br/> </blockquote>  |
 
 
-## Deprecated commands
+Deprecated commands
+-------------------
 
 
 | Replace this command...  | With the new command...  |
@@ -28,11 +30,21 @@
 | COPSTOPM | COPSTOP |
 | STOPCOPL | COPSTOP |
 | BACKGROUND_C | BACKGROUND |
-| SNDCFTF  | CFTUTIL (See **Example 1**)  |
-| SNDCFTSPLF  | CFTUTIL (See **Example 2**)  |
+| SNDCFTF  | CFTUTIL (See Example 1)  |
+| SNDCFTSPLF  | CFTUTIL (See Example 2)  |
 | MAJSECINI  | No replacement  |
 | MAJSECENVG  | No replacement  |
 | GENEDICT  | No replacement  |
+| CPYFDBVAR  | No replacement  |
+| FORMATCONF  | No replacement  |
+| XFBOVRDBF  | No replacement  |
+| CFTMG_ALC  | No replacement  |
+| OVRDBF_ALL  | No replacement  |
+| CFTTCOM_@  | No replacement  |
+| FFT10412P, FFT1043P, UFT10412P and UFT1043P  | No replacement  |
+| CFTINS301  | No replacement  |
+| SI_PGM_BT2  | No replacement  |
+| T_QXXCHGDT  | No replacement  |
 
 
 **Example 1**
@@ -50,5 +62,3 @@ Send a spool file:
 ```
 CFTUTIL send PART=<PART>, IDF=<IDF>, FNAME=&FILE/&SPLNBR/&WORK/&JOBNBR
 ```
-
- 

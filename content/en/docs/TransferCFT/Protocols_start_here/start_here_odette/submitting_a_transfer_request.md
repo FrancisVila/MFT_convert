@@ -1,7 +1,7 @@
 {
     "title": "Submitting  a transfer request",
     "linkTitle": "Submitting a transfer request",
-    "weight": "190"
+    "weight": "180"
 }After configuring the OFTP (ODETTE) environment, as described in [Configuring OFTP](../configuring_odette), you must
 define the transfer environment in the following objects:
 
@@ -22,7 +22,8 @@ for the CFTSEND object in ODETTE are defined in the following sections:
 
 <span id="About_CFTSEND_in_Odette"></span>
 
-## About CFTSEND
+About CFTSEND
+-------------
 
 <span id="Data_code"></span>
 
@@ -86,7 +87,7 @@ Set the RECFM parameter to:
 
 > **Note**
 >
-> Do not set the NTYPE parameter.
+> Note: Do not set the NTYPE parameter.
 
 For fixed and variable formats, set the NLRECL parameter to indicate
 the maximum length of records, excluding delimiters if any.

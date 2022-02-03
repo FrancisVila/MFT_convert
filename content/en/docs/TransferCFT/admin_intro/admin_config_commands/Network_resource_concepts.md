@@ -3,10 +3,10 @@
     "linkTitle": "CFTNET - Network resources ",
     "weight": "270"
 }The
-<span style="font-style: italic;">**Network resources**</span> object corresponds to the CFTNET object in the command line operations.
+**Network resources** object corresponds to the CFTNET object in the command line operations.
 
-****<span style="color: #800000; font-weight: normal; text-decoration: none;">Related
-topics</span>****
+****Related
+topics****
 
 - Command syntax
     [CFTNET](../../../c_intro_userinterfaces/command_summary#CFTNET)
@@ -15,12 +15,13 @@ topics</span>****
 
 <span id="What_is_a_local_network_resource_"></span>
 
-## What is a local network resource?
+What is a local network resource?
+---------------------------------
 
 The local network resources object:
 
 - Defines a network
-    resource which, for the {{< TransferCFT/axwayvariablesComponentShortName >}}, is an entity through which connections
+    resource which, for the {{< TransferCFT/axwayvariablesComponentShortName  >}}, is an entity through which connections
     can be established
 - Supplies the Transfer
     CFT with a number of items of information which are required to access
@@ -30,7 +31,7 @@ The local network resources object:
 This object includes:
 
 - Parameters used
-    to manage the {{< TransferCFT/axwayvariablesComponentShortName >}} internal facilities: control of connection
+    to manage the {{< TransferCFT/axwayvariablesComponentShortName  >}} internal facilities: control of connection
     establishing mechanisms for example
 - Parameters describing
     the network environment characteristics defined by the local operating
@@ -52,7 +53,7 @@ Some of the parameters described below are for general use, while others
 are only used by a specific system and/or network access method. The parameters
 whose meaning is common to all networks are described in the CFTNET -
 Generic command paragraph. The specific parameters, grouped by network
-type, are then described in the *CFTNET TYPE = xxx <span style="font-style: normal;">topic</span>*.
+type, are then described in the *CFTNET TYPE = xxx topic*.
 
 The TYPE parameter takes the value TCP/IP.
 
@@ -60,12 +61,13 @@ The check for the maximum number of CFTNET objects managed, performed
 during the parameter updating phase, may differ in certain environments
 from the check performed during {{< TransferCFT/axwayvariablesComponentShortName  >}} execution. When Transfer
 CFT detects an excessive number of CFTNET objects, the following message
-appears: <span style="font-family: 'Courier New', monospace;">CFTP16F
-CFTNET id for CFTPARM id\_Not loading in memory</span>
+appears: CFTP16F
+CFTNET id for CFTPARM id_Not loading in memory
 
 <span id="How_does_the_CFTNET_object_work_"></span>
 
-## How does the CFTNET object work?
+How does the CFTNET object work?
+--------------------------------
 
 CFTNET is the network local resource declaration. It is used to define
 {{< TransferCFT/axwayvariablesComponentShortName  >}} network resources. CFTNET also supplies the {{< TransferCFT/axwayvariablesComponentShortName  >}}
@@ -76,7 +78,7 @@ The CFTNET objects define the network parameters for partners in a given
 group. This information includes:
 
 - Network
-    location of the {{< TransferCFT/axwayvariablesComponentShortName >}} partner
+    location of the {{< TransferCFT/axwayvariablesComponentShortName  >}} partner
 - Time slots
     for calls on the network
 - Connection
@@ -86,7 +88,8 @@ group. This information includes:
 
 <span id="Defining_a_network_and_protocol_environment"></span>
 
-## Defining a network and protocol environment
+Defining a network and protocol environment
+-------------------------------------------
 
 To define the network and protocol environment, you must create an environment
 with the following definitions and links.
@@ -94,7 +97,7 @@ with the following definitions and links.
 These links enable relationships between:
 
 - The resources
-    which can be used by {{< TransferCFT/axwayvariablesComponentShortName >}}
+    which can be used by {{< TransferCFT/axwayvariablesComponentShortName  >}}
 
 Each of these resources is defined by a CFTNET command.
 The associated identifier - ID parameter - has the same value as the one

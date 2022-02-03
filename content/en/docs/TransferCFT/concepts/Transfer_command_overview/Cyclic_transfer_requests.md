@@ -1,7 +1,7 @@
 {
     "title": "Cyclic  transfer requests",
     "linkTitle": "Cyclic transfer requests",
-    "weight": "260"
+    "weight": "250"
 }A cyclic transfer
 request is a periodic, repeated transfer request. The period, the time
 between 2 transfer activation cycles, is defined by the CYCLE and TCYCLE parameters.
@@ -9,7 +9,8 @@ between 2 transfer activation cycles, is defined by the CYCLE and TCYCLE paramet
 - CYCLE: Numeric value for TCYCLE.
 - TCYCLE: The type of period, expressed in minutes (MIN), days (DAY), or months (MONTH).
 
-## Defining the cycle time frame
+Defining the cycle time frame
+-----------------------------
 
 The time frame for a cyclic transfer request is defined by the MINDATE/MINTIME
 and MAXDATE/MAXTIME parameters, and corresponds to the global time during
@@ -24,7 +25,7 @@ and CYCDATE/CYCTIME parameters, where:
 
 > **Note**
 >
-> The CYCDATE/CYCTIME is equivalent to the MAXDATE/MAXTIME for a request. If the request is not executed before the date/time, then the request is not executed (times out).
+> Note: The CYCDATE/CYCTIME is equivalent to the MAXDATE/MAXTIME for a request. If the request is not executed before the date/time, then the request is not executed (times out).
 
 The start time/date and cycle duration
 values are expressed in the following equation:

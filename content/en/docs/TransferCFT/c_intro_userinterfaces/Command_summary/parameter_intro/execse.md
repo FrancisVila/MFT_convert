@@ -1,7 +1,7 @@
 {
     "title": "execse",
     "linkTitle": "execse",
-    "weight": "890"
+    "weight": "880"
 }<span id="execse"></span>
 
 ### execse
@@ -10,7 +10,7 @@
 
 #### CFTPARM
 
-****\[EXECSE = filename\]
+****[EXECSE = filename]
    {string
 64}****
 
@@ -29,11 +29,11 @@ This name may include the following symbolic variables:
 - &DIAGI, &DIAGP
 - &NIDF
 
-The character ‘&’ designates the char\_symb character defined in
+The character ‘&’ designates the char_symb character defined in
 the {{< TransferCFT/axwayvariablesComponentShortName  >}} *Operations Guide* that corresponds with your OS.
 
 > **Note**
 >
-> To use direct script execution instead of the template script processing, preface the &lt;EXEC>value with 'cmd:'. For example, &lt;EXEC>='cmd:myscript.sh &PART &IDT &IDTU'. See Directly processing a program or script for details, examples, restrictions, and support.
+> Note: To use direct script execution instead of the template script processing, preface the &lt;EXEC&gt;value with 'cmd:'. For example, &lt;EXEC&gt;='cmd:myscript.sh &PART &IDT &IDTU'. See Directly processing a program or script for details, examples, restrictions, and support.
 
 [Return to Command index](../../)

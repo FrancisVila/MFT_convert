@@ -1,14 +1,15 @@
 {
     "title": "Scheduling script execution - CFTCRON",
     "linkTitle": "CFTCRON - Script execution scheduling",
-    "weight": "320"
-}The <a href="" class="MCTextPopup popup popupHead">CRONJOB<span class="MCTextPopupBody MCTextPopupBody_Closed needs-pie popupBody" aria-hidden="true"><span class="MCTextPopupArrow"> </span>Job Scheduler</span></a> feature enables Transfer CFT to execute scripts at predetermined
+    "weight": "310"
+}The <a href="" class="MCTextPopup popup popupHead">CRONJOB Job Scheduler</a> feature enables Transfer CFT to execute scripts at predetermined
 dates and times. An example script, `cron-wlog.cmd`, is delivered in the installed product
 packaging ($CFTDIRRUNTIME/exec on Unix/Windows). You can adapt this example to suit your local requirements.
 
 See [Use processing scripts](../../../../concepts/about_transfer_processing/proc_commands) for details on script processing execution methods.
 
-## CRON commands and parameters
+CRON commands and parameters
+----------------------------
 
 This section describes the CRON related commands and parameters.
 
@@ -29,15 +30,16 @@ This section describes the CRON related commands and parameters.
     -   To inactivate CRON1, enter:
 
 For CFTCRON command parameter details, see the [Command reference](../../../command_summary).
-&lt;/p>
+&lt;/p&gt;
 <span id="CFTCRON_time_syntax"></span>
 
-## CFTCRON time syntax
+CFTCRON time syntax
+-------------------
 
 This section provides CFTCRON examples.
 
 The following command inserts the cronjob CRON1 in the crontab CRONTAB1.
-The job my\_exec is executed every 10 minutes once Transfer CFT is started.
+The job my_exec is executed every 10 minutes once Transfer CFT is started.
 This means that the job is submitted on the minute at 0, 10, 20,
 30, 40, 50 minutes of every hour.
 
@@ -65,8 +67,6 @@ minutes, while an upper case M defines months.
 - Italic characters
     are grammar rule non-terminators
 - A, b, c are integers
-
-QQQ\_QQQ\_CHECK - 2 cells merged, left of
 
 
 | Rule | Syntax | Alternate syntax |
@@ -113,7 +113,8 @@ QQQ\_QQQ\_CHECK - 2 cells merged, left of
 | M=1 | Every January, the first at 00:00:00 |
 
 
-## CRONJOB messages
+CRONJOB messages
+----------------
 
 The possible cronjob messages are:
 
@@ -126,7 +127,8 @@ The possible cronjob messages are:
 - CFTS39E &str:
     Error Message about cronjob submit
 
-## CRONJOB symbolic variables
+CRONJOB symbolic variables
+--------------------------
 
 The table below lists the symbolic variables available in the CRONJOB
 procedure. Define these using the EXEC parameter of the CFTCRON command.
@@ -151,4 +153,4 @@ procedure. Define these using the EXEC parameter of the CFTCRON command.
 ****Related
 topics****
 
-- Command syntax<span style="font-weight: bold;"> **** </span>[CFTCRON](../../../command_summary#CFTCRON)
+- Command syntax **** [CFTCRON](../../../command_summary#CFTCRON)

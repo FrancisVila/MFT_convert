@@ -1,18 +1,16 @@
 {
     "title": " file",
     "linkTitle": "file",
-    "weight": "1150"
+    "weight": "1140"
 }<span id="file"></span>
 
 ###  file
 
 #### DISPLAY
 
-****\[ FILE
-= filename \]****
+****[ FILE
+= filename ]****
 
 Enter filename.
 
 [Return to Command index](../../)
-
- 

@@ -4,17 +4,18 @@
     "weight": "250"
 }This section describes how to set up the diagnosis commands, which enable you to perform a search of errors that can occur in Transfer CFT.
 
-## Operator interface interactions
+Operator interface interactions
+-------------------------------
 
 ### Types of commands 
 
 The z/OS operator interface for Transfer CFT supports two types of commands:
 
-- The Transfer CFT commands described the <span class="span_20"><span class="span_20">Command Index</span></span>
+- The Transfer CFT commands described the Command Index
 
 <!-- -->
 
-- The diagnostic commands described in section <span class="Hyperlink">Diagnostic commands</span>
+- The diagnostic commands described in section Diagnostic commands
 
 ### Types of responses
 

@@ -1,7 +1,7 @@
 {
     "title": "lowport",
     "linkTitle": "lowport",
-    "weight": "1850"
+    "weight": "1840"
 }<span id="lowport"></span>
 
 ### lowport
@@ -10,7 +10,7 @@
 
 This parameter is obsolete for this command.
 
-****\[LOWPORT = {5000 | n}\]****
+****[LOWPORT = {5000 &#124; n}]****
 
 TCP/IP only.
 
@@ -25,6 +25,6 @@ Defines the lower limit for the range of outgoing ports (value included).
 
 #### CONFIG  TYPE=COM, MEDIACOM=TCPIP
 
-****\[LOWPORT = {5000 | n}\]****
+****[LOWPORT = {5000 &#124; n}]****
 
 [Return to Command index](../../)

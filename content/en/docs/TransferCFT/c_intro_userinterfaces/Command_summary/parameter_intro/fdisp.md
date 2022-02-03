@@ -1,7 +1,7 @@
 {
     "title": "fdisp",
     "linkTitle": "fdisp",
-    "weight": "1140"
+    "weight": "1130"
 }<span id="fdisp"></span>
 
 ### fdisp
@@ -10,8 +10,8 @@
 
 #### CFTSEND, SEND
 
-****\[FDISP = { SHR
-| CHECK }\]****
+****[FDISP = { SHR
+&#124; CHECK }]****
 
 File sharing option:
 
@@ -22,11 +22,11 @@ File sharing option:
 
 > **Note**
 >
-> The value "OLD" is deprecated and no longer available for SEND/CFTSEND.
+> Note: The value "OLD" is deprecated and no longer available for SEND/CFTSEND.
 
 > **Note**
 >
-> The CHECK feature is disabled on z/OS platforms (no action occurs when FDISP=CHECK).
+> Note: The CHECK feature is disabled on z/OS platforms (no action occurs when FDISP=CHECK).
 
 > **Note**
 >
@@ -35,8 +35,8 @@ File sharing option:
 
 #### CFTRECV, RECV
 
-****\[FDISP = { NEW | OLD | <u>BOTH</u>
-}\]****
+****[FDISP = { NEW &#124; OLD &#124; <span class="underline">BOTH</span>
+}]****
 
 Presence check indicator of the receiver file used to determine the
 action of the {{< TransferCFT/axwayvariablesComponentShortName  >}}:
@@ -55,7 +55,7 @@ The following table shows the combined effect of the FDISP and FACTION parameter
 
 > **Note**
 >
-> There no impact on FDISP when used in combination with RENAME or RETRYRENAME.
+> Note: There no impact on FDISP when used in combination with RENAME or RETRYRENAME.
 
 
 | CFTRECV, FDISP  | CFTRECV, FACTION  | Comments  |

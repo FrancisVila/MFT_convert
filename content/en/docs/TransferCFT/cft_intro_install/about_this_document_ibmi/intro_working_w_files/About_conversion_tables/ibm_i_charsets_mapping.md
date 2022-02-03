@@ -4,7 +4,8 @@
     "weight": "230"
 }Character transcoding defines how data are encoded during the transfer process. This is important when transferring files that do not have the same coding requirements on the sending and receiving systems. See the section **Character set transcoding** in the *Transfer CFT User Guide* for more information.
 
-## NCHARSET and FCHARSET parameter mapping
+NCHARSET and FCHARSET parameter mapping
+---------------------------------------
 
 The following table shows the mapping for the IBM i (OS/400) platform when using the NCHARSET and FCHARSET parameters.
 

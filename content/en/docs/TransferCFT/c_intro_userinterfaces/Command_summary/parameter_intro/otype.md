@@ -1,15 +1,15 @@
 {
     "title": "otype",
     "linkTitle": "otype",
-    "weight": "2510"
+    "weight": "2530"
 }<span id="otype"></span>
 
 ### {{< TransferCFT/SystemTitle  >}}
 
 #### COPYFILE
 
-**\[OTYPE     = {<u>see
-*Operations Guide*</u> | c}\]  OS**
+**[OTYPE     = {<span class="underline">see
+*Operations Guide*</span> &#124; c}]  OS**
 
 **O**utput file type.
 

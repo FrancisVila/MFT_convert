@@ -6,7 +6,8 @@
 
 The JCL **COPFILTR** lets you create a directory under the USS to store the Copilot catalog and log filters. This server directory has read, write, and delete rights for Transfer CFT Copilot users, but is independent of the Copilot component directory.
 
-## Creating a filter directory
+Creating a filter directory
+---------------------------
 
 You use the following JCL and statements to create a filter directory.
 

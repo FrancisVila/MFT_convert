@@ -1,7 +1,7 @@
 {
     "title": "Manage  transfers",
     "linkTitle": "Transfers",
-    "weight": "170"
+    "weight": "160"
 }This section describes transfers, and how to create and
 manage your transfer operations using {{< TransferCFT/axwayvariablesComponentShortName  >}}.
 
@@ -11,7 +11,8 @@ computers. In a transfer, one computer is the sender, the other is the
 receiver. The sender and receiver are linked together by a network. A
 file transfer may consist of sending a file, group of files, or a message.
 
-## Managing transfers in the user interface
+Managing transfers in the user interface
+----------------------------------------
 
 To view the transfers log:
 
@@ -23,9 +24,9 @@ To view the transfers log:
 Available actions to include in the Transfers page include:
 
 
-| UI  | Parameter details  | Description  |
+| UI  | More information  | Description  |
 | --- | --- | --- |
-| New  | <a href="../../../../concepts" >Managing transfers and partners</a>  | Create a new transfer request  |
+| New  | Create a transfer request | Create a new transfer request  |
 | Clone  | No equivalent parameter  | Copy an existing transfer request  |
 | Restart  | <a href="../../../about_cftutil/managing_transfer_states/start_command">Restarting transfers</a> | Restart transfers in the H or K state in the catalog |
 | Delete  | <a href="../../../../admin_intro/admin_commands_intro/delete_command">Deleting catalog entries</a> | Delete one or more catalog entries |
@@ -36,11 +37,12 @@ Available actions to include in the Transfers page include:
 |   | <a href="../../../about_cftutil/managing_transfer_states/resume_command">Retrieving a blocked request</a> | Retrieves, in server mode, a blocked send request that has the *hold* status, if the diagnostic codes are not null |
 |   | <a href="../../../about_cftutil/managing_transfer_states/kstate_command">Suspending a catalog request</a> | Suspend a transfer in the catalog |
 |   | <a href="../../../about_cftutil/managing_transfer_states/clearcmd_command">Deleting a transfer request</a> | Delete a transfer request from the communication file |
-| Ack  | <a href="../../../../concepts/using_the_send_command/sending_replies" >Use the SEND acknowledgement commands</a>  | Send a transfer acknowledgement  |
-| Nack  | <a href="../../../../concepts/using_the_send_command/transfers_neg_ack_pesit" >Sending a negative acknowledgement</a>  | Send a notification indicating an error occurred  |
+| Ack  | <a href="../../../../concepts/send_command/send_replies" >Use the SEND acknowledgement commands</a>  | Send a transfer acknowledgement  |
+| Nack  | <a href="../../../../concepts/send_command/transfers_neg_ack_pesit" >Sending a negative acknowledgement</a>  | Send a notification indicating an error occurred  |
 
 
-## Create transfer requests filters
+Create transfer requests filters
+--------------------------------
 
 To create a new transfer request filter or modify an existing filter:
 
@@ -48,7 +50,8 @@ To create a new transfer request filter or modify an existing filter:
 1. Customize the filter.
 1. Click **Save** if you are modifying and existing filter or **Save as...** if this is a new filter.
 
-## Display transfer request details
+Display transfer request details
+--------------------------------
 
 To display transfer request details:
 
@@ -59,7 +62,8 @@ For details on the transfer states in Transfer CFT,
 refer to Transfer states
 topic.
 
-## Create or modify the page layout
+Create or modify the page layout
+--------------------------------
 
 Optionally you can select a **Layout** in the drop-down menu to use a customized column or filter display. To create a new layout:
 
@@ -69,10 +73,16 @@ Optionally you can select a **Layout** in the drop-down menu to use a customized
 
 > **Note**
 >
-> These page customizations are defined in the CFTUIPREF object.
+> Note: These page customizations are defined in the CFTUIPREF object.
 
-## Troubleshooting transfer filters
+Customize a CSV export file
+---------------------------
 
-<span class="bold_in_para">****Issue****</span>: I cannot create filters
+The {{< TransferCFT/suitevariablesTransferCFTName  >}} UI allows you to export transfer details in a CSV file. If you have modified the default column names in the user interface as describe above in *Create or modify the page layout*, these custom names are used in the CSV file export.
 
-<span class="bold_in_para">****Solution****</span>: Check that you have the MANAGE CFTUIPREF or VIEW CFTUIPREF privilege. This issue may have occurred due to an upgrade.
+Troubleshooting transfer filters
+--------------------------------
+
+****Issue****: I cannot create filters
+
+****Solution****: Check that you have the MANAGE CFTUIPREF or VIEW CFTUIPREF privilege. This issue may have occurred due to an upgrade.

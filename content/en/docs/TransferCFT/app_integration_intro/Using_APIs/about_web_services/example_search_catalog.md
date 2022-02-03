@@ -4,163 +4,167 @@
     "weight": "330"
 }Use this request to search for information in the catalog, for example details about the status of a transfer request.
 
-## XFER\_CAT\_SELECT request with IDTU
+XFER_CAT_SELECT request with IDTU
+-----------------------------------
 
-In this example the XFER\_CAT\_SELECT request uses the IDTU.
+In this example the XFER_CAT_SELECT request uses the IDTU.
 
-&lt;SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+&lt;SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
 
-> &lt;SOAP-ENV:Header>
+> &lt;SOAP-ENV:Header&gt;
 
-> > &lt;m:ClientAuth xmlns:m="http://www.axway.com">
+> > &lt;m:ClientAuth xmlns:m="http://www.axway.com"&gt;
 > >
-> > &lt;m:user &gt;user1&lt;/m:user>encoding="base64"/>
+> > &lt;m:user &gt;user1&lt;/m:user&gt;encoding="base64"/&gt;
 > >
-> > &lt;m:password>user1&lt;/m:password> encoding="base64"/>
+> > &lt;m:password&gt;user1&lt;/m:password&gt; encoding="base64"/&gt;
 > >
-> > &lt;/m:ClientAuth>
+> > &lt;/m:ClientAuth&gt;
 >
-> &lt;/SOAP-ENV:Header>
+> &lt;/SOAP-ENV:Header&gt;
 
-> &lt;SOAP-ENV:Body>
+> &lt;SOAP-ENV:Body&gt;
 >
-> > &lt;m:XFER\_CAT\_SELECT xmlns:m="http://www.axway.com">
+> > &lt;m:XFER_CAT_SELECT xmlns:m="http://www.axway.com"&gt;
 > >
-> > &lt;m:CAT\_FILENAME>$CFTCATA&lt;/m:CAT\_FILENAME>
+> > &lt;m:CAT_FILENAME&gt;$CFTCATA&lt;/m:CAT_FILENAME&gt;
 >
-> &lt;m:PERSISTENCE\_LOCALIZATION>PERSISTENCE\_ON\_WORKSTATION&lt;/m:PERSISTENCE\_LOCALIZATION>
+> &lt;m:PERSISTENCE_LOCALIZATION&gt;PERSISTENCE_ON_WORKSTATION&lt;/m:PERSISTENCE_LOCALIZATION&gt;
 >
-> &lt;m:PERSISTENCE\_ACCESSIBILITY>PERSISTENCE\_USER\_ALL&lt;/m:PERSISTENCE\_ACCESSIBILITY>
+> &lt;m:PERSISTENCE_ACCESSIBILITY&gt;PERSISTENCE_USER_ALL&lt;/m:PERSISTENCE_ACCESSIBILITY&gt;
 >
-> > &lt;m:DIRECT>BOTH&lt;/m:DIRECT>
+> > &lt;m:DIRECT&gt;BOTH&lt;/m:DIRECT&gt;
 > >
-> > &lt;m:IDTU\_ARRAY>
+> > &lt;m:IDTU_ARRAY&gt;
 > >
-> > > &lt;m:IDTU>A0000030&lt;/m:IDTU>
+> > > &lt;m:IDTU&gt;A0000030&lt;/m:IDTU&gt;
 > >
-> > &lt;/m:IDTU\_ARRAY>
+> > &lt;/m:IDTU_ARRAY&gt;
 > >
-> > &lt;m:CONTENT\_SUBSET>
+> > &lt;m:CONTENT_SUBSET&gt;
 > >
-> > > &lt;m:CAT\_CONTENT>CAT\_BRIEF&lt;/m:CAT\_CONTENT>
+> > > &lt;m:CAT_CONTENT&gt;CAT_BRIEF&lt;/m:CAT_CONTENT&gt;
 > > >
-> > > &lt;m:SELECT\_FIELDS\_ARRAY>
+> > > &lt;m:SELECT_FIELDS_ARRAY&gt;
 > > >
-> > > &lt;m:SELECT\_FIELD>String&lt;/m:SELECT\_FIELD>
+> > > &lt;m:SELECT_FIELD&gt;String&lt;/m:SELECT_FIELD&gt;
 > >
-> > > &lt;/m:SELECT\_FIELDS\_ARRAY>
+> > > &lt;/m:SELECT_FIELDS_ARRAY&gt;
 > >
-> > &lt;/m:CONTENT\_SUBSET>
+> > &lt;/m:CONTENT_SUBSET&gt;
 > >
-> > &lt;/m:XFER\_CAT\_SELECT>
+> > &lt;/m:XFER_CAT_SELECT&gt;
 >
-> &lt;/SOAP-ENV:Body>
+> &lt;/SOAP-ENV:Body&gt;
 
-&lt;/SOAP-ENV:Envelope>
+&lt;/SOAP-ENV:Envelope&gt;
 
-## Successful response
+Successful response
+-------------------
 
 ### {{< TransferCFT/axwayvariablesComponentLongName  >}} is down
 
 Executing the this request when Copilot is running but {{< TransferCFT/axwayvariablesComponentLongName  >}} is not running returns the same response.
 
-&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
 
-&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
 
-&lt;soap:Body>
+&lt;soap:Body&gt;
 
-> &lt;XFER\_CAT\_SELECTResponse xmlns="http://www.axway.com">
+> &lt;XFER_CAT_SELECTResponse xmlns="http://www.axway.com"&gt;
 >
-> &lt;CAT\_MAXRECORDS>10000&lt;/CAT\_MAXRECORDS>
+> &lt;CAT_MAXRECORDS&gt;10000&lt;/CAT_MAXRECORDS&gt;
 >
-> &lt;CAT\_CURRENTRECORDS>12&lt;/CAT\_CURRENTRECORDS>
+> &lt;CAT_CURRENTRECORDS&gt;12&lt;/CAT_CURRENTRECORDS&gt;
 >
-> &lt;LISTCAT\_ARRAY>
+> &lt;LISTCAT_ARRAY&gt;
 >
-> &lt;LISTCAT\_SUBSET>
+> &lt;LISTCAT_SUBSET&gt;
 >
-> &lt;CAT\_FREC>14&lt;/CAT\_FREC>
+> &lt;CAT_FREC&gt;14&lt;/CAT_FREC&gt;
 >
-> &lt;CAT\_DIAGI>0&lt;/CAT\_DIAGI>
+> &lt;CAT_DIAGI&gt;0&lt;/CAT_DIAGI&gt;
 >
-> &lt;CAT\_NREC>14&lt;/CAT\_NREC>
+> &lt;CAT_NREC&gt;14&lt;/CAT_NREC&gt;
 >
-> &lt;CAT\_TYPE>FILE&lt;/CAT\_TYPE>
+> &lt;CAT_TYPE&gt;FILE&lt;/CAT_TYPE&gt;
 >
-> &lt;CAT\_IDA>30080&lt;/CAT\_IDA>
+> &lt;CAT_IDA&gt;30080&lt;/CAT_IDA&gt;
 >
-> &lt;CAT\_DIAGC/>
+> &lt;CAT_DIAGC/&gt;
 >
-> &lt;CAT\_IDT>E0314250&lt;/CAT\_IDT>
+> &lt;CAT_IDT&gt;E0314250&lt;/CAT_IDT&gt;
 >
-> &lt;CAT\_IDF>TEST&lt;/CAT\_IDF>
+> &lt;CAT_IDF&gt;TEST&lt;/CAT_IDF&gt;
 >
-> &lt;CAT\_DIAGP>CP NONE&lt;/CAT\_DIAGP>
+> &lt;CAT_DIAGP&gt;CP NONE&lt;/CAT_DIAGP&gt;
 >
-> &lt;CAT\_PART>LOOP&lt;/CAT\_PART>
+> &lt;CAT_PART&gt;LOOP&lt;/CAT_PART&gt;
 >
-> &lt;CAT\_STATE>CAT\_STATE\_CONSUMED&lt;/CAT\_STATE>
+> &lt;CAT_STATE&gt;CAT_STATE_CONSUMED&lt;/CAT_STATE&gt;
 >
-> &lt;CAT\_ACK>false&lt;/CAT\_ACK>
+> &lt;CAT_ACK&gt;false&lt;/CAT_ACK&gt;
 >
-> &lt;CAT\_NACK>false&lt;/CAT\_NACK>
+> &lt;CAT_NACK&gt;false&lt;/CAT_NACK&gt;
 >
-> &lt;CAT\_CFTSTATE>X&lt;/CAT\_CFTSTATE>
+> &lt;CAT_CFTSTATE&gt;X&lt;/CAT_CFTSTATE&gt;
 >
-> &lt;CAT\_DIRECT>SEND&lt;/CAT\_DIRECT>
+> &lt;CAT_DIRECT&gt;SEND&lt;/CAT_DIRECT&gt;
 >
-> &lt;/LISTCAT\_SUBSET>
+> &lt;/LISTCAT_SUBSET&gt;
 >
-> &lt;/LISTCAT\_ARRAY>
+> &lt;/LISTCAT_ARRAY&gt;
 >
-> &lt;RETURN\_CODE>3&lt;/RETURN\_CODE>
+> &lt;RETURN_CODE&gt;3&lt;/RETURN_CODE&gt;
 >
-> &lt;RETURN\_MESSAGE/>
+> &lt;RETURN_MESSAGE/&gt;
 >
-> &lt;/XFER\_CAT\_SELECTResponse>
+> &lt;/XFER_CAT_SELECTResponse&gt;
 
-> &lt;/soap:Body>
+> &lt;/soap:Body&gt;
 
-&lt;/soap:Envelope>
+&lt;/soap:Envelope&gt;
 
 > **Note**
 >
-> To retrieve the Phase, Phasestep and  Appstate statuses you can set the CAT\_CONTENT value to FULL. However, setting the catalog to FULL returns a large number of lines in the catalog.
+> Note: To retrieve the Phase, Phasestep and  Appstate statuses you can set the CAT_CONTENT value to FULL. However, setting the catalog to FULL returns a large number of lines in the catalog.
 
-> &lt;CAT\_PHASE>X&lt;/CAT\_PHASE>
+> &lt;CAT_PHASE&gt;X&lt;/CAT_PHASE&gt;
 >
-> &lt;CAT\_PHASESTEP>X&lt;/CAT\_PHASESTEP>
+> &lt;CAT_PHASESTEP&gt;X&lt;/CAT_PHASESTEP&gt;
 >
-> &lt;CAT\_APPSTATE/>
+> &lt;CAT_APPSTATE/&gt;
 
-## Response when there is no IDTU
+Response when there is no IDTU
+------------------------------
 
-In the following response the return code is 3, successful, but the LISCAT\_ARRAY is empty.
+In the following response the return code is 3, successful, but the LISCAT_ARRAY is empty.
 
-&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
 
-> &lt;soap:Body>
+> &lt;soap:Body&gt;
 >
-> > &lt;XFER\_CAT\_SELECTResponse xmlns="http://www.axway.com">
+> > &lt;XFER_CAT_SELECTResponse xmlns="http://www.axway.com"&gt;
 > >
-> > > &lt;CAT\_MAXRECORDS>10000&lt;/CAT\_MAXRECORDS>
+> > > &lt;CAT_MAXRECORDS&gt;10000&lt;/CAT_MAXRECORDS&gt;
 > > >
-> > > &lt;CAT\_CURRENTRECORDS>12&lt;/CAT\_CURRENTRECORDS>
+> > > &lt;CAT_CURRENTRECORDS&gt;12&lt;/CAT_CURRENTRECORDS&gt;
 > > >
-> > > &lt;LISTCAT\_ARRAY/>
+> > > &lt;LISTCAT_ARRAY/&gt;
 > > >
-> > > &lt;RETURN\_CODE>3&lt;/RETURN\_CODE>
+> > > &lt;RETURN_CODE&gt;3&lt;/RETURN_CODE&gt;
 > > >
-> > > &lt;RETURN\_MESSAGE/>
+> > > &lt;RETURN_MESSAGE/&gt;
 > >
-> > &lt;/XFER\_CAT\_SELECTResponse>
+> > &lt;/XFER_CAT_SELECTResponse&gt;
 >
-> &lt;/soap:Body>
+> &lt;/soap:Body&gt;
 
-&lt;/soap:Envelope>
+&lt;/soap:Envelope&gt;
 
-## Unsuccessful response
+Unsuccessful response
+---------------------
 
 ### Copilot is down
 

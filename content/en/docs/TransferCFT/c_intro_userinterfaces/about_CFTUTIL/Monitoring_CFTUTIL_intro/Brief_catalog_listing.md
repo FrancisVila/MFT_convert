@@ -1,10 +1,11 @@
 {
     "title": "LISTCAT - Brief/Full catalog listings",
-    "linkTitle": "LISTCAT - Brief catalog listing",
-    "weight": "310"
+    "linkTitle": "LISTCAT - Brief list of catalog contents",
+    "weight": "300"
 }<span id="Displayed_catalog_information"></span>
 
-## Displayed catalog information
+Displayed catalog information
+-----------------------------
 
 In the following examples, each field displayed is identified by a number
 which makes reference to the associated comment. The display differs according
@@ -29,7 +30,8 @@ This information is displayed in the following form:
 - q records free
     (r%)
 
-## Parameter descriptions
+Parameter descriptions
+----------------------
 
 <span id="Full_Catalog_listing"></span>
 
@@ -70,10 +72,10 @@ CFTU20I Ending Session on 20/03/2015 Time is 11:30:26
 CFTU20I Session active for 0:00:00
 ```
 
-### LISTCAT CONTENT = BRIEF, NPART = {identifier | mask}
+### LISTCAT CONTENT = BRIEF, NPART = {identifier &#124; mask}
 
 **LISTCAT CONTENT = BRIEF, NPART = {*identifier*
-| *mask*}**
+&#124; *mask*}**
 
 ```
 1          2
@@ -116,7 +118,7 @@ comments**
 | 3  | File identifier (IDF) for a file transfer or message identifier (IDM)  |
 | 4  | Transfer identifier. Transfer identifier assigned by the Transfer CFT (IDT)  |
 | 5  | Transfer CFT internal diagnostic code<br /> For a transfer with an error, this field is defined with the Transfer CFT internal diagnostic code (DIAGI) relative to this error<br /> For a correctly terminated transfer, this field is set to zero (1)  |
-| 6  | Protocol diagnostic code<br /> If the entry concerned is not a generic entry:<br/> • for a transfer with an error, this field is defined with the protocol diagnostic code (DIAGP) relative to this error (2)<br/> • for a correctly terminated transfer, this field indicates the compression factor obtained which is documented as follows:<br/> • • CP NONE: transfer correctly terminated with no "on line" compression requested<br/> • CP xx%: transfer terminated correctly with a compression factor of xx%<br/> <br/> • for a delayed transfer, this field is defined with:<br/> • • hh:mm:ss: if sent the same day<br/> • dd/mm/yy: if sent the following days<br/> <br/> <br/> If the entry concerned is a generic entry, this field is defined with one of the following values:<br/> • RECV ALL: generic entry for a global reception request for all the files with a given IDF<br/> • RECV MSK: generic entry for a global reception request for IDFs with "wildcards"<br/> • MIN CYC: generic entry for cyclic transfers, period expressed in minutes<br/> • DAY CYC: generic entry for cyclic transfers, period expressed in days<br/> • MON CYC: generic entry for cyclic transfers, period expressed in months<br/> • DIFFUS: generic entry for a broadcasting<br/> • COLLECT: generic entry for a collection |
+| 6  | Protocol diagnostic code<br /> If the entry concerned is not a generic entry:<br/> • for a transfer with an error, this field is defined with the protocol diagnostic code (DIAGP) relative to this error (2)<br/> • for a correctly terminated transfer, this field indicates the compression factor obtained which is documented as follows:<br/> • • CP NONE: transfer correctly terminated with no &quot;on line&quot; compression requested<br/> • CP xx%: transfer terminated correctly with a compression factor of xx%<br/> <br/> • for a delayed transfer, this field is defined with:<br/> • • hh:mm:ss: if sent the same day<br/> • dd/mm/yy: if sent the following days<br/> <br/> <br/> If the entry concerned is a generic entry, this field is defined with one of the following values:<br/> • RECV ALL: generic entry for a global reception request for all the files with a given IDF<br/> • RECV MSK: generic entry for a global reception request for IDFs with &quot;wildcards&quot;<br/> • MIN CYC: generic entry for cyclic transfers, period expressed in minutes<br/> • DAY CYC: generic entry for cyclic transfers, period expressed in days<br/> • MON CYC: generic entry for cyclic transfers, period expressed in months<br/> • DIFFUS: generic entry for a broadcasting<br/> • COLLECT: generic entry for a collection |
 | 7  | PARM field<br /> This field is 24 characters long and may be truncated as required  |
 
 
@@ -124,12 +126,12 @@ comments**
 *[Codes
 Diagnostics and Messages](../../../../troubleshoot_intro/messages_and_error_codes_start_here)*.
 
-### For LISTCAT CONTENT = BRIEF, PART = {identifier | mask}
+### For LISTCAT CONTENT = BRIEF, PART = {identifier &#124; mask}
 
 The NPART parameter is not defined.
 
 **LISTCAT CONTENT = BRIEF, PART = {*identifier*
-| *mask*}**
+&#124; *mask*}**
 
 ```
 1            2
@@ -189,7 +191,7 @@ headings contained in this figure.
 | ****5 **** | If the transfer involves:<br/> • a file: number of records to be sent<br/> • a message: message text truncated to 21 characters |
 | ****6 **** | If the transfer involves:<br/> • a file: number of records sent<br/> • a message: remainder of the message text truncated to 21 characters |
 | ****7 **** | Transfer CFT internal diagnostic code<br /> For a transfer with an error, this field is defined with the Transfer CFT internal diagnostic code (DIAGI) relative to this error<br /> For a correctly completed transfer, this field is set to zero **(1)**  |
-| ****8 **** | Protocol diagnostic code<br /> If the entry concerned is not a generic entry:<br/> • for a transfer with an error, this field is defined with the protocol diagnostic code (DIAGP) relevant to this error **(2)**<br/> • for a correctly completed transfer, this field indicates the obtained compression factor which is documented with the following format: • CP NONE: transfer terminated correctly with no "on line" compression requested<br/> • CP xx%: transfer terminated correctly with a compression factor of xx%<br/> <br/> • for a delayed transfer, this field is defined with:<br/> • • hh:mm:ss: if sent the same day<br/> • dd/mm/yy: if sent the following days<br/> <br/> If the entry concerned is a generic entry, this field is defined with one of the following values:<br/> • RECV ALL: generic entry for a global receive request for all the files with a given IDF<br/> • RECV MSK: generic entry for a global receive request for IDFs with "wildcards"<br/> • MIN CYC: generic entry for cyclic transfers, period expressed in minutes<br/> • DAY CYC: generic entry for cyclic transfers, period expressed in days<br/> • MON CYC: generic entry for cyclic transfers, period expressed in months<br/> • DIFFUS: generic entry for a broadcasting<br/> • COLLECT: generic entry for a collection |
+| ****8 **** | Protocol diagnostic code<br /> If the entry concerned is not a generic entry:<br/> • for a transfer with an error, this field is defined with the protocol diagnostic code (DIAGP) relevant to this error **(2)**<br/> • for a correctly completed transfer, this field indicates the obtained compression factor which is documented with the following format: • CP NONE: transfer terminated correctly with no &quot;on line&quot; compression requested<br/> • CP xx%: transfer terminated correctly with a compression factor of xx%<br/> <br/> • for a delayed transfer, this field is defined with:<br/> • • hh:mm:ss: if sent the same day<br/> • dd/mm/yy: if sent the following days<br/> <br/> If the entry concerned is a generic entry, this field is defined with one of the following values:<br/> • RECV ALL: generic entry for a global receive request for all the files with a given IDF<br/> • RECV MSK: generic entry for a global receive request for IDFs with &quot;wildcards&quot;<br/> • MIN CYC: generic entry for cyclic transfers, period expressed in minutes<br/> • DAY CYC: generic entry for cyclic transfers, period expressed in days<br/> • MON CYC: generic entry for cyclic transfers, period expressed in months<br/> • DIFFUS: generic entry for a broadcasting<br/> • COLLECT: generic entry for a collection |
 | ****9 **** | Identifier of the application (IDA) associated with this transfer  |
 
 

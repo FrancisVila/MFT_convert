@@ -1,10 +1,11 @@
 {
     "title": "Creating  transfer templates",
     "linkTitle": "Ongoing CFTRECV",
-    "weight": "430"
+    "weight": "420"
 }<span id="About_the_Ongoing_CFTRECV_object"></span>
 
-## About the ongoing CFTRECV object
+About the ongoing CFTRECV object
+--------------------------------
 
 Use the CFTRECV object to:
 
@@ -18,8 +19,8 @@ Use the CFTRECV object to:
 
 There is no limit on the number of CFTRECV objects that you can create.
 
-****<span style="color: #800000;font-weight: bold;text-decoration: underline;">****Related
-topics****</span>****
+********Related
+topics********
 
 - Command syntax
     [CFTRECV](../../../command_summary#CFTRECV)
@@ -28,7 +29,8 @@ topics****</span>****
 
 <span id="About_the_ongoing_CFTSEND_object"></span>
 
-## About the ongoing CFTSEND object
+About the ongoing CFTSEND object
+--------------------------------
 
 Use the CFTSEND object to specify:
 
@@ -45,6 +47,6 @@ Use the CFTSEND object to specify:
 There is no limit to the number of CFTSEND objects that you can create.
 
 You can create a default CFTSEND object. The identifier must correspond
-to the file identifier <span style="font-weight: bold;">****idf****</span> or,
+to the file identifier ****idf**** or,
 if this parameter is not defined, the default parameter of the CFTPARM
 object.

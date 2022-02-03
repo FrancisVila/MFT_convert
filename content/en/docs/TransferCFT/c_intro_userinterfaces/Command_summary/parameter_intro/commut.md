@@ -1,15 +1,15 @@
 {
     "title": "commut",
     "linkTitle": "commut",
-    "weight": "470"
+    "weight": "460"
 }<span id="commut"></span>
 
 ### commut
 
 #### CFTPART
 
-**\[COMMUT = {<u>YES</u> | NO | SERVER
-| PART }\] **
+**[COMMUT = {<span class="underline">YES</span> &#124; NO &#124; SERVER
+&#124; PART }] **
 
 Only applicable for a store and
 forward site, and indicates the type of switching supported for this partner.
