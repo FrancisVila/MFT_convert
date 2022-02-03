@@ -1,14 +1,14 @@
 {
     "title": "partfnam",
     "linkTitle": "partfnam",
-    "weight": "2550"
+    "weight": "2570"
 }<span id="partfnam"></span>
 
 ### partfnam
 
 #### CFTPARM
 
-****\[PARTFNAME = filename\]****
+****[PARTFNAME = filename]****
 
 *This parameter is obsolete for Windows, UNIX, and HP NonStop as the filename is created in CFTPARM  by default.*
 

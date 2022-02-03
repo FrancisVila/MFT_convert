@@ -1,7 +1,7 @@
 {
     "title": "ackexec",
     "linkTitle": "ackexec",
-    "weight": "250"
+    "weight": "240"
 }### ackexec
 
 #### CFTSEND, CFTRECV, SEND, RECV
@@ -12,6 +12,6 @@ The name of the file that describes the acknowledgement procedure to execute. Se
 
 > **Note**
 >
-> To use direct script execution instead of the template script processing, preface the &lt;EXEC>value with 'cmd:'. For example, &lt;EXEC>='cmd:myscript.sh &PART &IDT &IDTU'. See Directly processing a program or script for details, examples, restrictions, and support.
+> Note: To use direct script execution instead of the template script processing, preface the &lt;EXEC&gt;value with 'cmd:'. For example, &lt;EXEC&gt;='cmd:myscript.sh &PART &IDT &IDTU'. See Directly processing a program or script for details, examples, restrictions, and support.
 
 [Return to Command index](../../)

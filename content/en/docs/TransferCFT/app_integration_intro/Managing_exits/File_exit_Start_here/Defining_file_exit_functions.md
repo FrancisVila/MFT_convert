@@ -14,7 +14,7 @@ involved. It is comprised of the following sections:
 
 A file exit task comprises the following two modules:
 
-- {{< TransferCFT/axwayvariablesComponentShortName >}} interface
+- {{< TransferCFT/axwayvariablesComponentShortName  >}} interface
 - User program
 
 The interface is written in C language. The main entry point of the
@@ -47,7 +47,8 @@ A file type EXIT task:
 
 <span id="Initialization_Function"></span>
 
-## Initialization function
+Initialization function
+-----------------------
 
 ### About the initialization function
 
@@ -80,7 +81,8 @@ The following table lists all the parameters of the initialization function.
 ### Example in C
 
 ```
-long **exfini** ( char     \*ex_name,
+long exfini
+( char     \*ex_name,
           char    
 \*idf,
           char    
@@ -99,7 +101,8 @@ typedef long (\*EXF)
 ```
 <span id="User_function_s_"></span>
 
-## User functions
+User functions
+--------------
 
 The following table describes the parameters involved in the user functions.
 
@@ -128,7 +131,8 @@ long EXFxmp1   (char
 ```
 <span id="Interface_Files"></span>
 
-## Interface files
+Interface files
+---------------
 
 The following table describes the interface files.
 

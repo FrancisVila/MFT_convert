@@ -1,8 +1,9 @@
 {
     "title": "Transfer CFT maintenance (non-SMP/E)",
     "linkTitle": "Transfer CFT maintenance (non-SMP/E)",
-    "weight": "240"
-}## Update or apply a service pack (non-SMP/E)
+    "weight": "250"
+}Update or apply a service pack (non-SMP/E)
+------------------------------------------
 
 This section describes how to install a patch or service pack on your z/OS Transfer CFT using the non-SMP/E method.
 
@@ -15,15 +16,16 @@ Information includes:
 
 <span id="Install update libraries (PTF)"></span>
 
-## Install update libraries
+Install update libraries
+------------------------
 
 A PTF file results from the fixed formatting (80) of an ADRDSSU-type file containing the update libraries. The PTF format is used by all delivery and distribution modes. The PTF files are available at [support.axway.com](http://support.axway.com/).
 
 > **Note**
 >
-> PTF files are cumulative. A basic Transfer CFT z/OS installation can integrate PTFs. If you use this method, apply the PTFs one at a time.
+> Note: PTF files are cumulative. A basic Transfer CFT z/OS installation can integrate PTFs. If you use this method, apply the PTFs one at a time.
 
-<span class="autonumber"></span>Libraries taken into account during a DUMP ADRDSSU
+Libraries taken into account during a DUMP ADRDSSU
 
 
 | Libraries  | Contents  |
@@ -48,7 +50,8 @@ A PTF file results from the fixed formatting (80) of an ADRDSSU-type file contai
 
 <span id="Transfer the PTF file to the host machine"></span>
 
-## Transfer the PTF file to the host machine
+Transfer the PTF file to the host machine
+-----------------------------------------
 
 You can transfer a given PTF file from either the workstation or the host, in binary form, to the central site **distlib.UPLIB** library.
 
@@ -88,10 +91,6 @@ If an FTP server is configured on the workstation, you can use the sample JCL, A
 
 All of the A13\* JCLs are used to update or apply a Service Pack to Transfer CFT as described here.
 
-QQQ\_QQQ\_CHECK check h4 titles
-
-#### JCL updates on {{< TransferCFT/axwayvariablesComponentLongName  >}}
-
 
 | JCL  | Description  |
 | --- | --- |
@@ -102,33 +101,15 @@ QQQ\_QQQ\_CHECK check h4 titles
 | A13PTFLK  | To apply a patch in the Transfer CFT loadlib (create a save library/link-edit).  |
 | A13RSTOR  | To restore the loadlib from a save library.  |
 | A13SDEL  | To delete a save-load library when a patch is validated, or if the loadlib is restored to reapply a patch.  |
-
-
-#### JCL updates on {{< TransferCFT/suitevariablesCopilotName  >}}
-
-
-| JCL  | Description  |
-| --- | --- |
+|   | **Transfer CFT Copilot update**  |
 | A13UCOPA  | To apply a patch to Transfer CFT Copilot (Create a save file).  |
 | A13UCOPR  | To restore the Transfer CFT Navigator environment from a save file in USS environment.  |
 | A13UCOPD  | To delete a save file when a patch is validated.  |
-
-
-#### Transfer CFT - Secure Relay - Master Agent update
-
-
-| JCL  | Description  |
-| --- | --- |
+|   | Transfer CFT - Secure Relay - Master Agent update  |
 | A13UXSRA  | To apply a patch to Secure Relay - Master Agent (creates a save file).  |
 | A13UXSRR  | To restore the Transfer CFT {{< TransferCFT/suitevariablesSecureRelayName  >}} environment from a save file in USS environment.  |
 | A13UXSRD  | To delete a save file when a patch is validated.  |
-
-
-#### Updates on other JCL
-
-
-| JCL  | Description  |
-| --- | --- |
+|   | **Other JCL**  |
 | A13JCL  | To customize the patched JCL.  |
 | A13UCONF  | To update the unified configuration parameter definitions.  |
 | A13XML  | To update the XML library.  |
@@ -138,7 +119,8 @@ QQQ\_QQQ\_CHECK check h4 titles
 
 <span id="Integrate PTF elements using A13PTFLD"></span>
 
-## Integrate PTF elements using A13PTFLD
+Integrate PTF elements using A13PTFLD
+-------------------------------------
 
 After loading PTF files, you must integrate the composing elements of the PTF files into the distribution libraries. Only perform this operation though from one of the Transfer CFT instances environments. 
 
@@ -160,13 +142,14 @@ This JOB takes place in several stages:
 
 > **Note**
 >
-> This operation is displayed in the file distlib.LOG.
+> Note: This operation is displayed in the file distlib.LOG.
 
 For more information, you can consult the patch documentation located in the distlib.DOC library and named DCxxxxxx (xxxxxx are the patch identifiers). These documents describe known incidents, corrections and PTF specifics (exits, and so on). Additionally the library, PTFINFO member, lists all corrected incidents.
 
 <span id="Apply a PTF using A13PTFLK"></span>
 
-## Apply a PTF using A13PTFLK
+Apply a PTF using A13PTFLK
+--------------------------
 
 Usually a patch is applied through a LINK-EDIT. The JCL A13PTFLK is found in the target.INSTALL library.
 
@@ -190,9 +173,10 @@ This JOB runs in several phases:
 
 > **Note**
 >
-> This operation is displayed in the file distlib.LOG.
+> Note: This operation is displayed in the file distlib.LOG.
 
-## Deleting a backup file version
+Deleting a backup file version
+------------------------------
 
 **A13SDEL**
 
@@ -202,15 +186,16 @@ Use this JOB to delete a backup file after you have validated the application of
 
 > **Note**
 >
-> This operation is displayed in the file distlib.LOG.
+> Note: This operation is displayed in the file distlib.LOG.
 
-## Updating the Copilot server
+Updating the Copilot server
+---------------------------
 
 When you apply a patch to the Transfer CFT Copilot server, the update is not automatic.
 
 > **Note**
 >
-> The user applying the PTFs should have write access rights for the ‘cftroot\\wwwroot’ \* directory. The \* cftroot is a customizable parameter (A03PARM member in the target.INSTALL library).
+> Note: The user applying the PTFs should have write access rights for the coppath directory, where coppath is a customizable parameter (A03PARM member in the target.INSTALL library).
 
 The following three JCLs mange the PTFs for Copilot:
 
@@ -220,7 +205,7 @@ The following three JCLs mange the PTFs for Copilot:
 
 > **Note**
 >
-> All of these operations are displayed in the file distlib.LOG.
+> Note: All of these operations are displayed in the file distlib.LOG.
 
 Before submitting the JCL, modify the value associated with the ID=, where xxxxxx is the identifier of the PTF to apply:
 
@@ -234,7 +219,8 @@ Before submitting the JCL, modify the value associated with the ID=, where xxxxx
 
 This JOB updates the member DEFAULT in target.UPARM.
 
-## Automatically applying fixes A13AUTO
+Automatically applying fixes A13AUTO
+------------------------------------
 
 The use of this JCL is optional. It allows you to submit JOB 'A13\*', which runs as described in the patch readme (Distlib..doc(..)). Check the information concerning the application of the patch or service pack's in the associated readme.
 

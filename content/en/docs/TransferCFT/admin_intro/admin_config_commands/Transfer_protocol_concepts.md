@@ -9,8 +9,8 @@ transfer protocols. Transfer protocols include:
 - PeSIT
 - Odette
 
-<span style="color: #800000; text-decoration: none; font-weight: normal;">Related
-topics</span>
+Related
+topics
 
 - Command syntax
     [CFTPROT](../../../c_intro_userinterfaces/command_summary#CFTPROT)
@@ -21,7 +21,8 @@ topics</span>
 
 <span id="About_the_CFTPROT_Transfer_Protocol"></span>
 
-## What is the CFTPROT object?
+What is the CFTPROT object?
+---------------------------
 
 The CFTPROT object defines values to make a transfer with a partner
 possible. The transfer protocol, either PeSIT or Odette, and
@@ -81,7 +82,7 @@ the following:
 
 > **Note**
 >
-> In general, the
+> Note: In general, the
 > parameters beginning with an S control the send transfers operation, and
 > those beginning with an R control the receive transfers operation. This does
 > not necessarily apply when transfers in different directions are performed

@@ -1,7 +1,7 @@
 {
     "title": "General configuration ",
     "linkTitle": "General configuration",
-    "weight": "160"
+    "weight": "150"
 }This page describes the general configuration section of the Transfer CFT UI. You can configure the Transfer CFT from any of the user interfaces while the product is running.
 
 - General parameters - Transfer CFTPARM Describes how to define general parameters that:

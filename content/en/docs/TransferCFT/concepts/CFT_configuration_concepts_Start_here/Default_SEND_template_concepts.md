@@ -1,7 +1,7 @@
 {
     "title": "Creating  a SEND template",
     "linkTitle": "Default send templates CFTSEND",
-    "weight": "180"
+    "weight": "170"
 }This topic describes the
 CFTSEND template object, used to specify the default values for:
 
@@ -23,8 +23,8 @@ CFTPARM object.
 
 Certain default template objects cannot be deleted. The template CFTSEND and CFTRECV objects can not be deleted if they are used by another configuration.
 
-****<span style="color: #800000; text-decoration: none; font-weight: normal;">Related
-topics</span>****
+****Related
+topics****
 
 - Command syntax
     [CFTSEND](../../../c_intro_userinterfaces/command_summary#CFTSEND)
@@ -34,7 +34,8 @@ topics</span>****
 
 <span id="CFTSEND_parameter_details"></span>
 
-## CFTSEND parameter details
+CFTSEND parameter details
+-------------------------
 
 <span id="Parameters_Associated_with_a_Model_File"></span>
 
@@ -43,8 +44,8 @@ topics</span>****
 CFTSEND commands include parameters controlling the access to the data
 to be sent and the send transfer process.
 
-A CFTSEND command (*default <span style="font-style: normal;">command
-excluded</span>*) controls the sending of the model file with the same
+A CFTSEND command (*default command
+excluded*) controls the sending of the model file with the same
 identifier (IDF equal to the ID of the CFTSEND command).
 
 This command is taken into account in one or other of the following
@@ -83,7 +84,7 @@ The CFTSEND command is used to specify, for each model file (IDF):
 - To control
     access to the data to be sent  
     In this case, only the characteristics of the file which do not vary
-    from one transfer to another and which {{< TransferCFT/axwayvariablesComponentShortName >}} cannot locate automatically,
+    from one transfer to another and which {{< TransferCFT/axwayvariablesComponentShortName  >}} cannot locate automatically,
     are generally specified.  
     For example, when the same local physical filename is always associated
     with the model file (IDF), it is logical to specify this name by indicating
@@ -98,7 +99,7 @@ The CFTSEND command is used to specify, for each model file (IDF):
     characteristics: values to be sent to the partner, in protocol parameters,
     to describe the file (a physical filename can even be sent - see open mode).  
       
-    The physical characteristics that {{< TransferCFT/axwayvariablesComponentShortName >}} is able to locate automatically
+    The physical characteristics that {{< TransferCFT/axwayvariablesComponentShortName  >}} is able to locate automatically
     for the local file, can be considered as default values for the corresponding
     CFT SEND parameters (example: local record length: FLRECL), parameters
     which themselves consist of default values for the network characteristics
@@ -137,7 +138,8 @@ The CFTSEND command is used to specify, for each model file (IDF):
 
 <span id="About_default_SEND_parameters"></span>
 
-## About default SEND parameters
+About default SEND parameters
+-----------------------------
 
 This section  explains
 certain categories of the SEND parameters. The parameters can be classified
@@ -210,7 +212,8 @@ Concerning the file parameters for the partner (Nxxxxx of SEND and CFTSEND):
     is used by the receiver monitor and the values sent must be valid for
     the receiver partner
 
-## Sending a file  
+Sending a file  
+----------------
 
 The example below illustrates the relationships to be established between the user SEND command
 and the CFTSEND and CFTPART parameter setting commands.

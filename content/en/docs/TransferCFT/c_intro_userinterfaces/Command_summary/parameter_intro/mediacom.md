@@ -8,8 +8,8 @@
 
 #### CONFIG, TYPE = COM
 
-**\[MEDIACOM = {FILE |** **TCPIP |
-UNDF }\]**
+**[MEDIACOM = {FILE &#124;** **TCPIP &#124;
+UNDF }]**
 
 Defines the communication medium type if this medium is relevant to
 the system.

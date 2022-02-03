@@ -2,7 +2,8 @@
     "title": "About Directory  exits ",
     "linkTitle": "Directory exit",
     "weight": "310"
-}## What is a directory exit?
+}What is a directory exit?
+-------------------------
 
 You can use the directory exit
 task to modify the parameters used to establish an exit connection with
@@ -13,10 +14,10 @@ opened depending on the {{< TransferCFT/axwayvariablesComponentShortName  >}} pa
 Use a directory exit to:
 
 - Server mode -
-    to replace the standard checks performed by {{< TransferCFT/axwayvariablesComponentShortName >}} when a remote
+    to replace the standard checks performed by {{< TransferCFT/axwayvariablesComponentShortName  >}} when a remote
     partner requests a connection
 - Requester mode -
-    to provide, supplement or modify the parameters {{< TransferCFT/axwayvariablesComponentShortName >}} requires
+    to provide, supplement or modify the parameters {{< TransferCFT/axwayvariablesComponentShortName  >}} requires
     to establish network and protocol connections with a remote partner
 
 The directory exit parameters can include:
@@ -35,7 +36,8 @@ phase, or start of protocol session.
 
 <span id="Server_mode"></span>
 
-## Server mode
+Server mode
+-----------
 
 When a connection is indicated, {{< TransferCFT/axwayvariablesComponentShortName  >}} knows the network name
 and the calling partner’s password as well as the protocol to use for
@@ -70,7 +72,8 @@ the partner file to operate.
 
 <span id="Requester_mode"></span>
 
-## Requester mode
+Requester mode
+--------------
 
 In requester mode, you can:
 
@@ -96,12 +99,12 @@ protocols.
 The first protocol choice criterion is:
 
 - The partner is
-    known to {{< TransferCFT/axwayvariablesComponentShortName >}}: there is a CFTPART object corresponding to the
+    known to {{< TransferCFT/axwayvariablesComponentShortName  >}}: there is a CFTPART object corresponding to the
     partner. The first protocol of the CFTPART object containing an EXIT directory
     identifier is chosen. If no protocols of this command contain an EXIT
     directory identifier, the first protocol is chosen
 - The partner is
-    unknown to {{< TransferCFT/axwayvariablesComponentShortName >}}: there is no CFTPART object corresponding to the
+    unknown to {{< TransferCFT/axwayvariablesComponentShortName  >}}: there is no CFTPART object corresponding to the
     partner. The first protocol of the CFTPARM object that contains an EXIT
     directory identifier is chosen. If none of the protocols of this command
     contains an EXIT directory identifier, the transfer is abandoned, and

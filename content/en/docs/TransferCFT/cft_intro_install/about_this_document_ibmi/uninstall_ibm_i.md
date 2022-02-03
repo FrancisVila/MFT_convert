@@ -14,4 +14,4 @@ In the HFS partition remove:
 
 > **Note**
 >
-> The user performing the uninstall must have delete rights for the CFTPGM and CFTPROD libraries, and the files in IFS /home/user/cft3x.
+> Note: The user performing the uninstall must have delete rights for the CFTPGM and CFTPROD libraries, and the files in IFS /home/user/cft3x.

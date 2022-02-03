@@ -1,7 +1,7 @@
 {
     "title": "CFTRECV  - Receive templates",
     "linkTitle": "CFTRECV - Default receive templates",
-    "weight": "420"
+    "weight": "410"
 }This topic describes the {{< TransferCFT/suitevariablesTransferCFTName  >}}
 receive template. You can use the CFTRECV object to:
 
@@ -25,10 +25,10 @@ topics****
 | <a href="../../../command_summary/parameter_intro/comment">COMMENT</a> | Local alphanumeric comment associated with receive transfers. |
 | <a href="../../../command_summary/parameter_intro/cycdate">CYCDATE</a> | Upper final date for activating the first transfer of a cycle. |
 | <a href="../../../command_summary/parameter_intro/cyctime">CYCTIME</a> | Upper limit time for activating the first transfer of a cycle. |
-| <a href="../../../command_summary/parameter_intro/delete">DELETE</a>  | Automatic deletion of the catalog entries in the "X" phase (done) for the corresponding IDF. |
+| <a href="../../../command_summary/parameter_intro/delete">DELETE</a>  | Automatic deletion of the catalog entries in the &quot;X&quot; phase (done) for the corresponding IDF. |
 | <a href="../../../command_summary/parameter_intro/exit">EXIT</a> | Identifier of the CFTEXIT command associated with this transfer. |
 | <a href="../../../command_summary/parameter_intro/faction">FACTION</a> | Action on the file for a receive transfer. |
-| <a href="../../../command_summary/parameter_intro/fblksize">FBLKSIZE</a> | This parameter (in bytes) controls the "blocking factor" of the receiver file records: according to the system, it defines the disk block size and/or the file input/output buffer size. |
+| <a href="../../../command_summary/parameter_intro/fblksize">FBLKSIZE</a> | This parameter (in bytes) controls the &quot;blocking factor&quot; of the receiver file records: according to the system, it defines the disk block size and/or the file input/output buffer size. |
 | <a href="../../../command_summary/parameter_intro/fcharset">FCHARSET</a>  | Defines the local file encoding.  |
 | <a href="../../../command_summary/parameter_intro/fcheck">FCHECK</a> | Checks record length attributes. |
 | <a href="../../../command_summary/parameter_intro/fcode#fcode_CFTSEND">FCODE</a> | Code of the receiver file data (local data code). |

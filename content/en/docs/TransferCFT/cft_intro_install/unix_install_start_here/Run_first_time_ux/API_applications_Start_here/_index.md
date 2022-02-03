@@ -1,7 +1,7 @@
 {
     "title": "About  API applications",
     "linkTitle": "Build API applications and exits",
-    "weight": "190"
+    "weight": "200"
 }This book describes one of two {{< TransferCFT/axwayvariablesComponentShortName  >}} programming interfaces,
 the API applications. This interface enables {{< TransferCFT/axwayvariablesComponentShortName  >}} to work in conjunction
 with external applications.
@@ -11,7 +11,7 @@ which introduces the two application families that can be developed using
 these two interfaces and the development kit contents for building APIs.
 
 - Applications communicating
-    with {{< TransferCFT/axwayvariablesComponentShortName >}} to submit and monitor transfers or query the catalog,
+    with {{< TransferCFT/axwayvariablesComponentShortName  >}} to submit and monitor transfers or query the catalog,
     for example. See [Using APIs.](https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/Prog/API/Using_APIs.htm)
 - Exits enabling
     user programs to take control during a send operation. See [Managing
@@ -35,12 +35,13 @@ create an API application.
 
 <span id="Development_kit_contents"></span>
 
-## Development kit contents
+Development kit contents
+------------------------
 
 The development kit used to integrate the {{< TransferCFT/axwayvariablesComponentShortName  >}} APIs is divided
 into several directories:
 
-- *&lt;installdir>/lib/*
+- *&lt;installdir&gt;/lib/*
     containing all required libraries, in C, including:
 - A *libcftapi.a*
     module: this library is required for any application using the Transfer
@@ -57,8 +58,8 @@ into several directories:
 To generate a user application based on the {{< TransferCFT/axwayvariablesComponentShortName  >}} APIs and use
 the file exit function, you must link the following with the *libcftapi.a* and *libexe.a* libraries.
 
-- &lt;installdir>/runtime/src/capi/ containing
+- &lt;installdir&gt;/runtime/src/capi/ containing
     a command entry and catalog query example
-- &lt;installdir>/runtime/src/exit/ containing
+- &lt;installdir&gt;/runtime/src/exit/ containing
     simple examples of file exits, directory exits, and end
     of transfer exits

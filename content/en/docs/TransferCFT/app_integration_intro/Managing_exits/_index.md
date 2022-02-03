@@ -15,7 +15,7 @@ the environment and activation of an exit
 task. Each CFTEXIT object has an associated exit task. You can activate an exit task using:
 
 - [Command
-    line operations](../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftexit) for the CFTEXIT object
+    line operations](../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftexit) for the CFTEXIT object
 
 <span id="About_the_CFTEXIT_object"></span>
 
@@ -43,7 +43,8 @@ on the operating system.
 
 <span id="Exit_task_concepts"></span>
 
-## Exit task concepts
+Exit task concepts
+------------------
 
 {{< TransferCFT/axwayvariablesComponentShortName  >}} provides a programming interface, called an exit,
 which allows user programs to take control during a transfer.
@@ -73,7 +74,7 @@ be initiated for a given transfer request.
 
 > **Note**
 >
-> For
+> Note: For
 > information on transport security exits, see Configuring
 > Transport Security.
 
@@ -82,13 +83,14 @@ be initiated for a given transfer request.
 The exit list is a file exit task that was written by Axway. It enables the following:
 
 - Remote partners
-    to query the {{< TransferCFT/axwayvariablesComponentShortName >}} catalog of a central site or server
+    to query the {{< TransferCFT/axwayvariablesComponentShortName  >}} catalog of a central site or server
 - The catalog to
     be queried
 
 <span id="Exit_task_architecture"></span>
 
-## Exit task architecture
+Exit task architecture
+----------------------
 
 {{< TransferCFT/axwayvariablesComponentShortName  >}} can activate one or more EXIT tasks, such as calls, scheduling, and so on, which
 are fully managed by the {{< TransferCFT/axwayvariablesComponentShortName  >}}.
@@ -103,14 +105,14 @@ but stays loaded in memory. It remains active for a time that is defined
 by the EXIT type, such as:
 
 - Throughout the
-    {{< TransferCFT/axwayvariablesComponentShortName >}} activity period for the Directory EXIT tasks
+    {{< TransferCFT/axwayvariablesComponentShortName  >}} activity period for the Directory EXIT tasks
 - For an EXIT task
     maximum inactivity time, only for File and End-of-transfer exits
 
 An EXIT task consists of:
 
 - An interface supplied
-    with {{< TransferCFT/axwayvariablesComponentShortName >}}, providing functions for communicating with the Transfer
+    with {{< TransferCFT/axwayvariablesComponentShortName  >}}, providing functions for communicating with the Transfer
     CFT
 - A user program,
     communicating with the interface
@@ -127,7 +129,6 @@ to call.
 The following diagram shows an example
 of a user program with two functions.
 
-********<span class="autonumber"></span>Communication structure********
+********Communication structure********
 
-********<span class="autonumber"></span>
-![Simplified view of a user program communicating with functions](/Images/TransferCFT/cft_exits_2.png)********
+********![Simplified view of a user program communicating with functions](/Images/TransferCFT/cft_exits_2.png)********

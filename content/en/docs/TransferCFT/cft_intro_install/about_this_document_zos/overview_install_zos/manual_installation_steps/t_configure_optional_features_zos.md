@@ -2,11 +2,12 @@
     "title": "Configure optional  features",
     "linkTitle": "Configure optional features",
     "weight": "250"
-}<span id="Create a Transfer CFT PKI file D43PKI"></span><span id="kanchor36"></span>
+}<span id="Create a Transfer CFT PKI file D43PKI"></span><span id="kanchor37"></span>
 
-## Create a Transfer CFT PKI file D43PKI
+Create a Transfer CFT PKI file D43PKI
+-------------------------------------
 
-The <span id="kanchor37"></span>PKI file contains all information necessary to use the SSL component:
+The <span id="kanchor38"></span>PKI file contains all information necessary to use the SSL component:
 
 - Certification authorities
 - Certificates
@@ -22,25 +23,10 @@ It is important to follow these guidelines:
 - Take all appropriate security measures to guarantee the confidentiality of the security data.
 - The usage of data ciphering is subject to legal restrictions that vary from country to country.
 
-<span id="Connect with PassPort D44PASS"></span><span id="kanchor38"></span><span id="kanchor39"></span>
-
-## Connect with PassPort D44PASS
-
-Certificate management can be centralized using Axway PassPort. The certificates are obtained via a server. The D44PASS job enables you to take into account the connection parameters declared in the customization file A03PARM during installation.
-
-**Modifiable parameters**
-
-
-| Variables | Description |
-| --- | --- |
-| pkitype | Values: {passport , cft, system}<br/> [passport]: to manage certificates using PassPort<br/> [cft]: to use the Transfer CFT PKI file (default value)<br/> [system]: PKI 'system' used |
-| pasaddr | PassPort Server address |
-| pasport | PassPort Server port |
-
-
 <span id="_Toc236186612"></span>
 
-## Use a SAF based PKI 
+Use a SAF based PKI 
+--------------------
 
 System Authorization Facility (SAF) based PKI offers a more secured SSL. The optional SAF method uses RACF, or the equivalent, and an optional cryptographic coprocessor to increase data security. To enable the SAF mode of operation you must:
 
@@ -69,7 +55,7 @@ A sample named RACDCERT is delivered in the cftv2.INSTALL library. This RACDCERT
 
 > **Note**
 >
-> Transfer CFT no longer delivers sample certificates.
+> Note: Transfer CFT no longer delivers sample certificates.
 
 For information on SAF compatible security products, such as ACF/2 or TOP-SECRET, refer to the product-supplied documentation.
 
@@ -113,7 +99,7 @@ PARM='DLM=$'
 
 **Variables description**
 
-- ring\_name: A string value matching the RACDCERT RING parameter
+- ring_name: A string value matching the RACDCERT RING parameter
 - userid: A 1 to 7 character string value that matches the RACDCERT ID parameter
 
 The PARM field length is limited to 64 bytes. You must select a RING NAME that conforms to the 64 bytes restriction.
@@ -132,9 +118,10 @@ The SAF definitions are described in the IBM documentation SA22-7691 Security Se
 
 Transfer CFT will perform the DATAGETFIRST/DATAGETNEXT and the CHECKSTATUS operations.
 
-<span id="Communication server C32XMEM"></span><span id="kanchor40"></span>
+<span id="Communication server C32XMEM"></span><span id="kanchor39"></span>
 
-## Communication server C32XMEM
+Communication server C32XMEM
+----------------------------
 
 The communication between the APPLICATION and Transfer CFT is done through a media file, CFTCOM, or a TCPIP interface. On a mainframe an additional media is available, as described in Using a communication server.
 

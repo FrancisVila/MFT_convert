@@ -1,14 +1,14 @@
 {
     "title": "rt",
     "linkTitle": "rt",
-    "weight": "3000"
+    "weight": "3020"
 }<span id="rt"></span>
 
 ### rt
 
 #### CFTCAT
 
-**\[RT = {<u>10</u> | n}\]** {1..99}
+**[RT = {<span class="underline">10</span> &#124; n}]** {1..99}
 
 Number of days after which the catalog entries of terminated receive
 transfers (RT state) are automatically purged.

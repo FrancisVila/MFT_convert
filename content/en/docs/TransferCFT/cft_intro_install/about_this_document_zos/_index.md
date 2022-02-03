@@ -6,7 +6,8 @@
 
 For more information on Axway products, visit [www.axway.com](https://www.axway.com/en).
 
-## Installation guide outline
+Installation guide outline
+--------------------------
 
 This guide explains how to perform a full installation of {{< TransferCFT/axwayvariablesComponentLongName  >}}. It also describes how to:
 
@@ -24,7 +25,8 @@ This guide explains how to perform a full installation of {{< TransferCFT/axwayv
 
 **Troubleshoot the installation or registration process** – Describes the different types of troubleshooting errors you can encounter during installation, upgrade and post-installation.
 
-## Who should read this guide
+Who should read this guide
+--------------------------
 
 This guide is intended for enterprise personnel involved in installing software and Axway Professional Services personnel. Familiarity with {{< TransferCFT/axwayvariablesPlatformorSuiteShortName  >}} products is recommended.
 
@@ -36,13 +38,15 @@ This guide presumes you have knowledge of:
 
 Others who may find parts of this guide useful include network or systems administrators and other technical or business users.
 
-## {{< TransferCFT/suitevariablesTransferCFTName  >}} documentation set
+{{< TransferCFT/suitevariablesTransferCFTName  >}} documentation set
+-------------------------------------------------------------------------
 
 Transfer CFT provides a complete set of documentation, covering all aspects of using the product. These documents include the following:
 
-- {{< TransferCFT/axwayvariablesComponentShortName >}} {{< TransferCFT/PrimaryTransferCFTversionlong >}} Release Notes
-- {{< TransferCFT/axwayvariablesPlatformorSuiteLongName >}} Supported Platforms Guide
+- {{< TransferCFT/axwayvariablesComponentShortName  >}} {{< TransferCFT/PrimaryTransferCFTversionlong  >}} Release Notes
+- {{< TransferCFT/axwayvariablesPlatformorSuiteLongName  >}} Supported Platforms Guide
 
-## Support services
+Support services
+----------------
 
 The {{< TransferCFT/axwayvariablesCompanyName  >}} Global Support team provides worldwide 24 x 7 support, subject to validation of your license agreement. Email <support@axway.com> or, for your local support telephone number, visit [support.axway.com](https://support.axway.com/) and click **Contact Axway Support**.

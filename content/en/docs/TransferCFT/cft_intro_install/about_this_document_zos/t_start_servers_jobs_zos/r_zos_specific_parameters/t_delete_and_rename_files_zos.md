@@ -4,9 +4,10 @@
     "weight": "300"
 }> **Note**
 >
-> Do not use a dash "-" as a special character in z/OS (MVS) file names. This is an invalid system character.
+> Note: Do not use a dash "-" as a special character in z/OS (MVS) file names. This is an invalid system character.
 
-## About files
+About files
+-----------
 
 When renaming a file, Transfer CFT z/OS only releases the unused space if authorized to do so (APF), and if the file is allocated on a single volume. All files deleted by Transfer CFT are removed from the catalog.
 
@@ -28,7 +29,8 @@ The CFTRECV command MACTION=REPLACE parameter controls the files that are receiv
 
 <span id="Share Transfer CFT files"></span>
 
-## Share Transfer CFT files
+Share Transfer CFT files
+------------------------
 
 File sharing characteristics include:
 

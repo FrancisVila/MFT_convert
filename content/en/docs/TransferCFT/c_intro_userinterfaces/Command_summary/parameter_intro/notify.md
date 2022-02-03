@@ -1,7 +1,7 @@
 {
     "title": "notify",
     "linkTitle": "notify",
-    "weight": "2240"
+    "weight": "2260"
 }<span id="notify"></span>
 
 ### notify
@@ -27,8 +27,8 @@ The value of this parameter is a left aligned 8-character string.
 The destination of these messages may be, according to the system:
 
 - the
-    {{< TransferCFT/axwayvariablesComponentShortName >}} "submitter" corresponding to the standard
-    output associated with the {{< TransferCFT/axwayvariablesComponentShortName >}} (the submittal screen,
+    {{< TransferCFT/axwayvariablesComponentShortName  >}} "submitter" corresponding to the standard
+    output associated with the {{< TransferCFT/axwayvariablesComponentShortName  >}} (the submittal screen,
     for example)  
     The value of the NOTIFY parameter must be then be set to ‘ ’ (8 blank
     characters)
@@ -83,9 +83,9 @@ are not significant.
 | Operator console OS | Characters interpreted  | Messages sent to... |
 | --- | --- | --- |
 | MVS (z/OS) | OP  | Operator console(s)  |
-| OS400  | OP  | QSYSOPR "message-queue"  |
+| OS400  | OP  | QSYSOPR &quot;message-queue&quot;  |
 | UNIX  | OP  | Operator console  |
-| VMS  | Opxxxxxx  | System console and output peripheral system LOG file identified by the "xxxxxx" link present in the current monitor execution directory  |
+| VMS  | Opxxxxxx  | System console and output peripheral system LOG file identified by the &quot;xxxxxx&quot; link present in the current monitor execution directory  |
 | Windows | Not applicable  |   |
 
 
@@ -95,7 +95,7 @@ For the user:
 | User OS  | Messages are...  |
 | --- | --- |
 | MVS (z/OS) | Sent by SEND to the specified TSO USERID; in this case, the {{< TransferCFT/axwayvariablesComponentShortName  >}} program must be authorized (APF). |
-| VMS | Sent to the "VMS User " designated by its VMS name. In this case, the {{< TransferCFT/axwayvariablesComponentShortName  >}} task must have the OPER privilege. |
+| VMS | Sent to the &quot;VMS User &quot; designated by its VMS name. In this case, the {{< TransferCFT/axwayvariablesComponentShortName  >}} task must have the OPER privilege. |
 
 
 [Return to Command index](../../)

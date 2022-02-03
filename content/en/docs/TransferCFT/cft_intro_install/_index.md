@@ -13,14 +13,16 @@
 
 Your Transfer CFT installation procedure is dependent on the options you have selected and your environment.
 
-## Known limitations
+Known limitations
+-----------------
 
 In this version, the following actions are not available:
 
 - How to create a product deployment package (ExpressPackage)
 - Automatic migration
 
-## Installation and Operation Guides
+Installation and Operation Guides
+---------------------------------
 
 [Transfer CFT Installation Guide UNIX](unix_install_start_here)
 
@@ -30,24 +32,26 @@ In this version, the following actions are not available:
 
 [Transfer CFT Installation Guide IBM i](https://docs.axway.com/bundle/TransferCFT_38_InstallationGuide_os400_en_PDF/resource/TransferCFT_InstallationGuide_os400_en.pdf)
 
+[Transfer CFT Installation Guide OpenVMS](https://docs.axway.com/bundle/TransferCFT_38_InstallationGuide_vms_en_PDF/resource/TransferCFT_InstallationGuide_vms_en.pdf)
+
 <a href="https://docs.axway.com/bundle/TransferCFT_38_InstallationGuide_HP_NonStop_en_PDF/resource/TransferCFT_InstallationGuide_HP_NonStop_en.pdf" class="buttonstyle">Transfer CFT Installation Guide HP NonStop</a>
 
-## Discontinued support 
+Discontinued support 
+---------------------
 
 Refer to the {{< TransferCFT/suitevariablesTransferCFTName  >}} {{< TransferCFT/axwayvariablesReleaseNumber  >}} Release Notes for changes in supported functionality, networks, protocols, etc.
 
 <span id="Migratio"></span>
 
-## Migration or upgrade impact and considerations
+Migration or upgrade impact and considerations
+----------------------------------------------
 
-You should be aware of the following features or parameters, which were modified since their inception, and how these changes may impact your upgrade or migration. Please see, <a href="mig_impact_considerations" class="MCXref xref">Migration or upgrade impact and considerations</a> .
+You should be aware of the following features or parameters, which were modified since their inception, and how these changes may impact your upgrade or migration. Please see, <a href="mig_impact_considerations" class="MCXref xref">Migration or upgrade impact and considerations</a>.
 
 ### More information
 
-- Additional documentation is available at {{< TransferCFT/axwayvariablesCompanyName >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a>.
+- Additional documentation is available at {{< TransferCFT/axwayvariablesCompanyName  >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a>.
 
 <!-- -->
 
 - Refer to the Axway [Supported Platforms](https://docs.axway.com/bundle/Axway_Products_SupportedPlatforms_allOS_en/resource/Axway_Products_SupportedPlatforms_allOS_en.pdf) document for a complete platform and version listing.
-
- 

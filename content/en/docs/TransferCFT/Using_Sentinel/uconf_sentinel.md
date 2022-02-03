@@ -1,36 +1,38 @@
 {
     "title": "UCONF: Sentinel options",
     "linkTitle": "UCONF: Sentinel options",
-    "weight": "250"
+    "weight": "240"
 }This section describes how to configure the Sentinel monitoring agent, which is part of Transfer CFT, using the following groups of UCONF parameters:
 
 - sentinel.trkxxxxx: These parameters correspond to the trkxxxxx parameter described in the [Sentinel Universal Agent User Guide]() .
 - sentinel.xfb.xxxx: These parameters indicate how the Sentinel monitoring agent is used in Transfer CFT.
 - Additional uconf values are related to the communication between the Sentinel monitoring agent and Sentinel
     -   ssl.ciphersuites
-    -   ssl.version\_min
-    -   ssl.extension.enable\_sni
-    -   cft.ipv6.disable\_connect
+    -   ssl.version_min
+    -   ssl.extension.enable_sni
+    -   cft.ipv6.disable_connect
     -   See <a href="../../admin_intro/uconf/uconf_directory" class="MCXref xref">UCONF parameters</a> for parameter details.
-- sentinel.trktname: The path to the overflow file, where the maximum number of messages that the overflow file can store is equal to sentinel.xfb.buffer\_size (not sentinel.trktmaxmsg).
-- <span class="code">`sentinel.trktmaxmsg`</span>: *Obsolete*. The maximum number of messages in the <span class="code">`sentinel.trktname`</span> overflow file is defined by the sentinel.xfb.buffer\_size.
+- sentinel.trktname: The path to the overflow file, where the maximum number of messages that the overflow file can store is equal to sentinel.xfb.buffer_size (not sentinel.trktmaxmsg).
+- `sentinel.trktmaxmsg`: *Obsolete*. The maximum number of messages in the `sentinel.trktname` overflow file is defined by the sentinel.xfb.buffer_size.
 
-## Overflow file
+Overflow file
+-------------
 
 You can define an overflow file to store Sentinel events if the Sentinel server is not available, for example due to network issues or because the server is stopped. If Sentinel tracking is enabled but the server is not available, the message "CFTS30I XTRK Information Sentinel Connection failed" displays in the log. When the Sentinel connection is available again, the next event triggers the sending of previously-stored events.
 
 Use the following uconf parameters to configure the name and size of the overflow file:
 
 - sentinel.trktname: The path to the overflow file.
-- sentinel.xfb.buffer\_size: The maximum number of messages that the overflow file can store. Once the maximum value is reached, messages are no longer sent to Sentinel and:
-    -   If <span class="code">`sentinel.xfb.shut`</span> is set to any value other than 0, Transfer CFT stops.
-    -   If <span class="code">`sentinel.xfb.shut`</span> is set to 0, Transfer CFT continues to run.
+- sentinel.xfb.buffer_size: The maximum number of messages that the overflow file can store. Once the maximum value is reached, messages are no longer sent to Sentinel and:
+    -   If `sentinel.xfb.shut` is set to any value other than 0, Transfer CFT stops.
+    -   If `sentinel.xfb.shut` is set to 0, Transfer CFT continues to run.
 
 > **Note**
 >
-> The sentinel.trktmaxmsg parameter is obsolete. Sentinel.xfb.buffer\_size defines the maximum number of messages in the sentinel.trktname overflow file.
+> Note: The sentinel.trktmaxmsg parameter is obsolete. Sentinel.xfb.buffer_size defines the maximum number of messages in the sentinel.trktname overflow file.
 
-## Sentinel configuration parameters
+Sentinel configuration parameters
+---------------------------------
 
 The following table lists the Sentinel parameters in the unified configuration and the corresponding former Sentinel parameter.
 
@@ -40,10 +42,10 @@ The following table lists the Sentinel parameters in the unified configuration a
 | sentinel.xfb.enable  | NO  | XFB.Sentinel (trkapi.cfg)  |
 | sentinel.xfb.transfer | ALL | XFB.Transfer (trkapi.cfg) &lt;/p&gt; |
 | sentinel.xfb.shut | 0 &lt;/p&gt; | XFB.Shut (trkapi.cfg) &lt;/p&gt; |
-| sentinel.xfb.log | IEWF<br/> <blockquote> **Note**<br/> To disable, set to ' '.<br/> </blockquote>  | XFB.Log (trkapi.cfg) &lt;/p&gt; |
+| sentinel.xfb.log | IEWF<br/> <blockquote> **Note**<br/> Note: To disable, set to ' '.<br/> </blockquote>  | XFB.Log (trkapi.cfg) &lt;/p&gt; |
 | sentinel.trktname | $(cft.runtime_dir)/data/trkapi.buf  | TRKTNAME (trkapi.cfg)  |
 | sentinel.trksharedfile  | No  | TRKSHAREDFILE  |
-| sentinel.trklenmsg  |   | TRKLENMSG  |
+| sentinel.trklenmsg  |  | TRKLENMSG  |
 | sentinel.trklocmaxtime  | 300  | TRKLOCMAXTIME  |
 | sentinel.trktmode (*<a href="#*sentinel.TRKTMODE">see below</a>) | RETRY | TRKTMODE  |
 | sentinel.trktconnretry  | 60 | TRKTCONNRETRY  |
@@ -56,7 +58,7 @@ The following table lists the Sentinel parameters in the unified configuration a
 | sentinel.trkipport  | 1761  | TRKIPPORT  |
 | sentinel.trk_min_port  | 5000  | TRK_MIN_PORT  |
 | sentinel.trk_max_port  | 32000 | TRK_MAX_PORT  |
-| sentinel.trkipaddr_bkup |   | TRKIPADDR_BKUP  |
+| sentinel.trkipaddr_bkup |  | TRKIPADDR_BKUP  |
 | sentinel.trkipport_bkup  | 1761  | TRKIPPORT_BKUP  |
 | sentinel.trk_min_port_bkup  | 5000  | TRK_MIN_PORT_BKUP  |
 | sentinel.trk_max_port_bkup  | 32000  | TRK_MAX_PORT_BKUP  |
@@ -67,9 +69,10 @@ The following table lists the Sentinel parameters in the unified configuration a
 | sentinel.trktmaxmsg  | 100000 (0 indicates no limit)  | TRKTMAXMSG  |
 
 
-For more information on event messages, refer to the <span class="italic_in_para">Axway Sentinel</span> documentation.
+For more information on event messages, refer to the Axway Sentinel documentation.
 
-## Sentinel Heartbeat implementation parameters
+Sentinel Heartbeat implementation parameters
+--------------------------------------------
 
 The following table lists the Heartbeat parameters that you can set in the unified configuration.
 
@@ -78,10 +81,11 @@ The following table lists the Heartbeat parameters that you can set in the unifi
 | --- | --- | --- |
 | sentinel.heartbeat.enable  | NO  | Enables sending Heartbeats to the Sentinel Server. |
 | sentinel.heartbeat.periodicity  | 300  | The delay in seconds between sending Heartbeats.  |
-| sentinel.heartbeat.script  | $(cft.install_dir)<br/> /extras/sentinel/MFTheartbeat.sh<br/> <span >or</span><br/> $(cft.install_dir)<br/> \extras\sentinel\MFTheartbeat.bat | Script for executing Heartbeats.  |
+| sentinel.heartbeat.script  | $(cft.install_dir)<br/> /extras/sentinel/MFTheartbeat.sh<br/> or<br/> $(cft.install_dir)<br/> \extras\sentinel\MFTheartbeat.bat | Script for executing Heartbeats.  |
 
 
-## Sentinel parameters
+Sentinel parameters
+-------------------
 
 The following table lists the parameters that you can set in the unified configuration.
 
@@ -92,7 +96,7 @@ The following table lists the parameters that you can set in the unified configu
 | sentinel.xfb.transfer.send_relay_site_nidf  | No  | Enables an NIDF on the relay site. This uses an NIDF instead of COMMUT when sending an event to Sentinel using the XFBTransfer object.  |
 
 
-<span class="autonumber"></span><span id="sentinel.TRKTMODE"></span>\*sentinel.TRKTMODE
+<span id="sentinel.TRKTMODE"></span>\*sentinel.TRKTMODE
 
 The mode that Transfer CFT uses to send messages to the Sentinel Server. The possible values of this parameter include:
 
@@ -104,15 +108,16 @@ The mode that Transfer CFT uses to send messages to the Sentinel Server. The pos
 - Differ: Transfer CFT saves incoming messages in the overflow file.
 - Retry: (default mode) Behaves as in the immediate mode (above), except that if the connection to the Sentinel Server fails, the application repeats connection attempts every `n` minutes. To configure the retry period set the UCONF sentinel.TRKTCONNRETRY parameter.
 
-## Sentinel EventTime
+Sentinel EventTime
+------------------
 
-By default, the data sent to Sentinel as the EventTime has the format HH:MM:SS. To add milliseconds to the format, HH:MM:SS.sss, set the Transfer CFT UCONF <span class="code">`cft.cftlog.time_precision`</span> parameter, where:
+By default, the data sent to Sentinel as the EventTime has the format HH:MM:SS. To add milliseconds to the format, HH:MM:SS.sss, set the Transfer CFT UCONF `cft.cftlog.time_precision` parameter, where:
 
 - 1 (default): the time in CFTLOG displays in seconds
 - 10: the time in CFTLOG displays in tenths of seconds
 - 100: the time in CFTLOG displays in hundredths of seconds
 
-If the<span class="code">` cft.cftlog.time_precision`</span> value is greater than 1, the Transfer CFT EventTime message sent to Sentinel has the HH:MM:SS.dh0 format.
+If the` cft.cftlog.time_precision` value is greater than 1, the Transfer CFT EventTime message sent to Sentinel has the HH:MM:SS.dh0 format.
 
 **Example**
 
@@ -124,10 +129,15 @@ uconfset id=cft.cftlog.time_precision, value=10
 - 10: the time in CFTLOG displays in tenths of seconds
 - 100: the time in CFTLOG displays in hundredths of seconds
 
-If the<span class="code">` cft.cftlog.time_precision`</span> value is greater than 9, the Transfer CFT EventTime message sent to Sentinel has the HH:MM:SS.dh0 format.
+If the` cft.cftlog.time_precision` value is greater than 9, the Transfer CFT EventTime message sent to Sentinel has the HH:MM:SS.dh0 format.
 
 **Example**
 
 ```
 uconfset id=cft.cftlog.time_precision, value=10
 ```
+
+Sentinel cycle link metadata
+----------------------------
+
+The UCONF `sentinel.xfb.cyclelink.metadata` model defines the metadata attribute that Transfer CFT adds when it generates a Sentinel cycle link message. Please see <a href="../../c_intro_userinterfaces/command_summary/symbolic_variables" class="MCXref xref">Symbolic variables</a> for available symbolic variables.

@@ -10,9 +10,10 @@ The Transfer CFT *instance* is the environment that the user configures for oper
 
 The tables in this section provide information about the files and allocation requirements for the distribution and instance environments. Note that an ESD installation requires an additional 1100 disk cylinders (3390 disk) of space.
 
-<span id="Distribution_environment file_formats_and_requirements_"></span><span id="kanchor75"></span>
+<span id="Distribution_environment file_formats_and_requirements_"></span><span id="kanchor74"></span>
 
-## Distribution environment file formats and requirements
+Distribution environment file formats and requirements
+------------------------------------------------------
 
 
 | File  | Info  | Allocation in cylinders  |
@@ -39,9 +40,10 @@ The tables in this section provide information about the files and allocation re
 | PKIMSG  | Trusted File messages<br/> PO – FB - 4090<br/> DSNTYPE=LIBRARY | 1  |
 
 
-<span id="Instance"></span><span id="kanchor76"></span>
+<span id="Instance"></span><span id="kanchor75"></span>
 
-## Instance environment file formats and requirements
+Instance environment file formats and requirements
+--------------------------------------------------
 
 The following allocations are required per {{< TransferCFT/axwayvariablesComponentShortName  >}}.
 
@@ -53,7 +55,6 @@ The following allocations are required per {{< TransferCFT/axwayvariablesCompone
 | SAMPLEO | PO – FB – 80<br/> DSNTYPE=LIBRARY | SPACE = (27920,(100,100,-)) |
 | SAMPLEC | PO – VB - 255<br/> DSNTYPE=LIBRARY | SPACE = (27920,(100,100,-)) |
 | SAMPLEA  | PO – FB - 80 DSNTYPE=LIBRARY | SPACE = (27920,(100,100,-))  |
-| cftroot/wwwroot | ZFS directory<br/> (Copilot) | 25 Mega |
 | EXEC | PO – FB – 80<br/> DSNTYPE=PDS | SPACE = (3120,(195,195,30)) |
 | XSR  | ZFS directory<br/> (Secure Relay) |   |
 | XMLLIB | PO – VB – 4090<br/> DSNTYPE=LIBRARY | SPACE = (27998,(100,50,-)) |
@@ -76,11 +77,9 @@ The following allocations are required per {{< TransferCFT/axwayvariablesCompone
 
 
 > **Note**
->
->  
 
 - The *Instance environment* list above does not include files that Transfer CFT creates in its implementation, such as CATALOG, PARM, PART, COM, PKIFILE, LOG, ACCOUNT etc.
-- The persistent cache file for PassPort AM (CFTAM, VSAM KSDS) is created when the UCONF AM.type=passport variable is set to <span class="bold_in_para">****Yes****</span>.
+- The persistent cache file for PassPort AM (CFTAM, VSAM KSDS) is created when the UCONF AM.type=passport variable is set to ****Yes****.
 - To customize INSTALL, SAMPLE, EXEC and UPARM THE library must be PDS and not PDSE.
 
 ****Related topics****

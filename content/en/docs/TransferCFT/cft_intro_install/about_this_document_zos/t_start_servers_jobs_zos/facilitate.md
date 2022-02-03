@@ -9,20 +9,20 @@ You require the following environments in order to install and deploy Transfer C
 - Distribution environment
 - Transfer CFT run-time instance environment
 
-For a detailed description of these environments, see <a href="../../overview_install_zos/distribution_environment_installation" class="MCXref xref">Non-SMP/E: Create the distribution environment</a> .
+For a detailed description of these environments, see <a href="../../overview_install_zos/distribution_environment_installation" class="MCXref xref">Non-SMP/E: Create the distribution environment</a>.
 
 ****Deployment overview****
 
 The following sections describe how to:
 
 - [Create a master copy](#Create) (1)
-    &lt;/li>
+    &lt;/li&gt;
 - [Distribute the master copy](#Distribu) (2)
-    &lt;/li>
+    &lt;/li&gt;
 - [Restore the master copy](#Restore) (3)
-    &lt;/li>
+    &lt;/li&gt;
 - [Install the instance](#Install) (4)
-    &lt;/li>
+    &lt;/li&gt;
 
 ![](/Images/TransferCFT/temp_zos_deploy.png)
 
@@ -31,15 +31,16 @@ The following sections describe how to:
 ****Deploy a patch or service pack****
 
 - [Generate a patch or service pack](#Generate) (1)
-    &lt;/li>
+    &lt;/li&gt;
 - [Transfer the generated patch or service pack](#Transfer) (2)
-    &lt;/li>
+    &lt;/li&gt;
 - [Apply the patch or service pack](#Apply) (3)
-    &lt;/li>
+    &lt;/li&gt;
 
 ![](/Images/TransferCFT/temp_deploy_sp_zos.png)
 
-## Overview
+Overview
+--------
 
 The reference environment includes:
 
@@ -47,7 +48,8 @@ The reference environment includes:
 - A reference instance for applied patches and service packs from which procedures will be submitted
 - Optionally, an instance called 'model' that allows you to deliver specific or modified objects.
 
-## Prerequisite
+Prerequisite
+------------
 
 ****Minimum version 324 SP2****
 
@@ -55,7 +57,8 @@ If you are working in a Transfer CFT 3.2.4 SP1 or earlier environment, update to
 
 <span id="Create"></span>
 
-## Create a master copy
+Create a master copy
+--------------------
 
 A master copy is the product version that you want to deploy, and can be either a basic Transfer CFT installation, or a specific patch or service pack level.
 
@@ -74,7 +77,8 @@ You must customize the following 4 variables before submitting the JCL.
 
 <span id="Distribu"></span>
 
-## Distribute the master copy
+Distribute the master copy
+--------------------------
 
 Use the A33GSND JCL to transfer the following elements via FTP:
 
@@ -83,7 +87,7 @@ Use the A33GSND JCL to transfer the following elements via FTP:
 
 > **Note**
 >
-> Customize variables before submitting the JCL.
+> Note: Customize variables before submitting the JCL.
 
 - Common variables:
     -   ADDRESS Remote address
@@ -100,7 +104,8 @@ Use the A33GSND JCL to transfer the following elements via FTP:
 
 <span id="Restore"></span>
 
-## Restore the master copy
+Restore the master copy
+-----------------------
 
 1. Customize the following variables before submitting the A33IMAS JCL.
     -   QUAL: identifies the prefix under which the Transfer CFT instance is restored
@@ -111,7 +116,8 @@ Use the A33GSND JCL to transfer the following elements via FTP:
 
 <span id="Install"></span>
 
-## Install the instance
+Install the instance
+--------------------
 
 1. Use A00CUSTO JCL to customize the instance.
 1. Customize the following variables before submitting the JCL:
@@ -125,11 +131,12 @@ Use the A33GSND JCL to transfer the following elements via FTP:
 
 > **Note**
 >
-> ZFS file creation is not taken into account in this process.
+> Note: ZFS file creation is not taken into account in this process.
 
 <span id="Generate"></span>
 
-## Generate a patch or service pack
+Generate a patch or service pack
+--------------------------------
 
 ### Prerequisites
 
@@ -148,7 +155,8 @@ The reference target environment must be up to date.
 
 <span id="Transfer"></span>
 
-## Transfer the generated patch or service pack
+Transfer the generated patch or service pack
+--------------------------------------------
 
 You can use the **A33GSND JCL** to transfer the following elements via FTP:
 
@@ -173,11 +181,12 @@ Customize the variables before submitting the JCL.
 
 <span id="Apply"></span>
 
-## Apply the patch or service pack
+Apply the patch or service pack
+-------------------------------
 
 > **Note**
 >
-> Save the Transfer CFT LOAD, as well as the Copilot USS environment prior to applying a patch.
+> Note: Save the Transfer CFT LOAD, as well as the Copilot USS environment prior to applying a patch.
 
 1. Customize the A33IPTF JCL delivered in the UPLIB library, and transferred by A33GSND:  
     ```

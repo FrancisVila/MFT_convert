@@ -1,7 +1,7 @@
 {
     "title": "Partner  call limitations",
     "linkTitle": "Partner call  limitations",
-    "weight": "240"
+    "weight": "230"
 }This topic describes the limitations on partner connections.
 
 ### Number of connections
@@ -26,7 +26,7 @@ cases must be considered:
 This parameter setting is a device for setting the switching by the
 intermediate partner (IPART).
 
-- OMINTIME > OMAXTIME
+- OMINTIME &gt; OMAXTIME
 
 The parameter setting defines a time slot spread over 2 days. Outgoing
 calls are authorized each day between OMINTIME and OMAXTIME the next day.
@@ -46,7 +46,7 @@ Outgoing calls are authorized each day between OMINTIME and OMAXTIME.
 In server mode, the following cases
 have to be considered:
 
-- IMINTIME > IMAXTIME
+- IMINTIME &gt; IMAXTIME
 
 This parameter setting defines a time slot spread over two days. Incoming
 calls are authorized each day between IMINTIME and IMAXTIME the next day.

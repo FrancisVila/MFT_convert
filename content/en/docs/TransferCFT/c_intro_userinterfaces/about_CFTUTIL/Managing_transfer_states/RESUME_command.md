@@ -1,23 +1,25 @@
 {
     "title": "RESUME  - Retrieve a blocked transfer",
     "linkTitle": "RESUME - Retrieving a blocked request",
-    "weight": "350"
+    "weight": "340"
 }This topic describes the <span id="About_the_RESUME_Command"></span>RESUME
 command. This command retrieves, in server mode, a blocked send request
 that has a *hold* phasestep, and has a diagnostic codes other than zero.
 
-The <span style="font-style: italic;">**requester**</span> may either:
+The **requester** may either:
 
 - Restart the receive
     operation, or
 - Start a new receive
     operation
 
-QQQ\_QQQ\_QQQ
+Description:
 
 Use this command to retrieve, in server mode, a blocked
 send request with the hold phasestep, the diagnostic codes of which
-are not null. This command resets the diagnostic code to 0 and the diagnostic
+are not null.
+
+This command resets the diagnostic code to 0 and the diagnostic
 code to HOLD.
 
 
@@ -45,7 +47,7 @@ RESUME
 PART = NEW_YORK5
 ```
 
-Retrieval of all the transfers in server mode with partner NEW\_YORK5.
+Retrieval of all the transfers in server mode with partner NEW_YORK5.
 
 #### Example 2
 
@@ -55,5 +57,5 @@ PART = NEW_YORK5,
 IDF = PAY
 ```
 
-Retrieval of the transfers in server mode with partner NEW\_YORK5 for
+Retrieval of the transfers in server mode with partner NEW_YORK5 for
 the PAYs IDF.

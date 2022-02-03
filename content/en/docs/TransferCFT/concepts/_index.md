@@ -1,8 +1,9 @@
 {
     "title": "Managing transfers and partners",
-    "linkTitle": "Managing transfers and partners",
-    "weight": "110"
-}## Transfer concepts
+    "linkTitle": "Transfers and partners",
+    "weight": "100"
+}Transfer concepts
+-----------------
 
 This section describes transfers, and how to create and
 manage your transfer operations using {{< TransferCFT/axwayvariablesComponentShortName  >}}.
@@ -13,7 +14,8 @@ computers. In a transfer, one computer is the sender, the other is the
 receiver. The sender and receiver are linked together by a network. A
 file transfer may consist of sending a file, group of files, or a message.
 
-## Transfer objects
+Transfer objects
+----------------
 
 Transfer CFT requires a certain number parameters, such as the protocol, to successfully perform transfers with partners.
 
@@ -26,7 +28,8 @@ a set of *objects* that allow you to define these transfer related parameters. P
 
 However, your out-of-the-box Transfer CFT can perform a basic loop transfer without any additional configuration. Additionally, the Transfer CFT installation provides samples that you can use as a templates to get started. For more information on samples and performing a verification transfer, refer to the Post installation section in your OS specific *Transfer CFT Installation Guide*.
 
-## Transfer types
+Transfer types
+--------------
 
 In Transfer
 CFT there are 3 types of transfers:
@@ -35,9 +38,10 @@ CFT there are 3 types of transfers:
 - Replies (acknowledgments)
 - Messages
 
-See also, [Transfer command basics.](transfer_command_overview)
+See also,[Transfer command basics.](transfer_command_overview)
 
-## Transfer commands
+Transfer commands
+-----------------
 
 {{< TransferCFT/axwayvariablesComponentShortName  >}} uses two commands for transfer requests:
 
@@ -60,7 +64,8 @@ Additionally, there are basic [transfer control commands](../c_intro_userinterfa
 
 <span id="Transfer_owners"></span>
 
-## Identifiers
+Identifiers
+-----------
 
 ### Model files: IDF
 
@@ -100,7 +105,8 @@ by the {{< TransferCFT/axwayvariablesComponentShortName  >}} as a specific trans
 
 <span id="Transfer_identifier__IDT"></span><span id="Catalog_identifier__IDTU"></span>
 
-## Transfer records &lt;/h2>
+Transfer records &lt;/h2&gt;
+----------------------------
 
 All transfer requests, either SEND or RECV, are recorded and saved in
 the Transfer CFT catalog file.
@@ -129,7 +135,7 @@ In this example the partner is PARIS, and the file to send is called REPORT1.
 
 {{< TransferCFT/axwayvariablesComponentShortName  >}} enables the transferring sequential files, or files seen
 as such. These files can be accessed through one of the operating system
-access methods . See [File locations: Model and physical files](creating_transfers_start_here/model_and_physical_file_concepts).
+access methods . See [File locations: Model and physical files](create_transfers_start_here/model_and_physical_file_concepts).
 
 When a transfer occurs, it is labeled with an identifier. There are
 two additional types of identifiers, besides the IDM and IDF, that can correspond with a transfer:

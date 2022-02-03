@@ -4,7 +4,8 @@
     "weight": "150"
 }The following are the system requirements for {{< TransferCFT/axwayvariablesComponentShortName  >}}.
 
-## About the {{< TransferCFT/axwayvariablesComponentShortName  >}} environment
+About the {{< TransferCFT/axwayvariablesComponentShortName  >}} environment
+--------------------------------------------------------------------------------
 
 ### Unix/Linux system prerequisites
 
@@ -17,7 +18,8 @@ Transfer CFT requires that you install the appropriate library for your operatin
 
 Refer to the {{< TransferCFT/axwayvariablesPlatformorSuiteLongName  >}} Supported Platforms guide available on {{< TransferCFT/axwayvariablesCompanyName  >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a>.
 
-## Disk space and RAM requirements
+Disk space and RAM requirements
+-------------------------------
 
 {{< TransferCFT/axwayvariablesComponentLongName  >}} has the following hardware requirements:
 
@@ -26,7 +28,8 @@ Refer to the {{< TransferCFT/axwayvariablesPlatformorSuiteLongName  >}} Supporte
 - RAM Requirement
     -   128 Megabyte: minimum dedicated per host
 
-## Java
+Java
+----
 
 If you intend to implement Secure Relay you require Java 8, which is not delivered with Transfer CFT (except on HP PARISC and WIN IA64 where only Java 6 is delivered).
 

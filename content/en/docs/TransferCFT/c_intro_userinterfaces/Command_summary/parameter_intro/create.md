@@ -1,14 +1,14 @@
 {
     "title": "create",
     "linkTitle": "create",
-    "weight": "560"
+    "weight": "550"
 }<span id="create"></span>
 
 ### create
 
 #### COPYFILE
 
-\[CREATE = {<u>‘ ’</u> | YES | NO},\]
+[CREATE = {<span class="underline">‘ ’</span> &#124; YES &#124; NO},]
 
 Options when creating an output file:
 

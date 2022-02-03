@@ -4,7 +4,8 @@
     "weight": "300"
 }This page lists the various {{< TransferCFT/axwayvariablesComponentLongName  >}} ports used for communication between processes, for both single and multi-node installations, which can be used for health checks or transfer-related operations.
 
-## Single node deployment
+Single node deployment
+----------------------
 
 
 | Usage  | Process  | Configurable  | Configuration Parameter  | Network Interface  |
@@ -21,7 +22,8 @@
 | Secure Relay heartbeat service  | CFTPRX  | Yes  | secure_relay.ma.heartbeat_service.port  | secure_relay.ma.heartbeat_service.host  |
 
 
-## Multi-node deployment
+Multi-node deployment
+---------------------
 
 
 | Usage  | Process  | Configurable  | Configuration Parameter  | Network Interface  |

@@ -1,8 +1,9 @@
 {
     "title": "XFBTransfer Tracked Object attributes",
     "linkTitle": "XFBTransfer Tracked Object attribute",
-    "weight": "240"
-}## Roles
+    "weight": "230"
+}Roles
+-----
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{< TransferCFT/axwayvariablesComponentShortName  >}} |
@@ -11,7 +12,8 @@
 | IsServer | Integer | - |  • 1: The Sender or the Receiver is a Server.<br/> • 0: The Sender the Receiver is a Requester. | FLAG |
 
 
-## Senders and receivers
+Senders and receivers
+---------------------
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{< TransferCFT/axwayvariablesComponentShortName  >}} |
@@ -27,7 +29,8 @@
 | OriginalSenderId | String | 80 | Name of the original Sender when using Store and Forward, otherwise the same as the SenderId. | NORIG |
 
 
-## Product identification
+Product identification
+----------------------
 
 The product that sends the events is identified with the following:
 
@@ -39,7 +42,8 @@ The product that sends the events is identified with the following:
 | MonitorVersion | String | 25 | Product version. | Product version (see CFTUTIL about). |
 
 
-## Transfer users
+Transfer users
+--------------
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{< TransferCFT/axwayvariablesComponentShortName  >}} |
@@ -53,7 +57,8 @@ The product that sends the events is identified with the following:
 | SUser | String | 30 | Optional local identifier of the user who sent the transfer. | SUSER |
 
 
-## Transfer identification
+Transfer identification
+-----------------------
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{< TransferCFT/axwayvariablesComponentShortName  >}} |
@@ -72,7 +77,8 @@ The product that sends the events is identified with the following:
 | Flowname | String | 100 | Parameter to define a flow name in Central Governance for monitoring purposes. | Flowname (v3.1.x) |
 
 
-## Transfer validity periods
+Transfer validity periods
+-------------------------
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> product |
@@ -83,7 +89,8 @@ The product that sends the events is identified with the following:
 | LatestTime | Time | - | Time at which the validity period ends. | TIMEMAX |
 
 
-## Transfer dates and times
+Transfer dates and times
+------------------------
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{< TransferCFT/axwayvariablesComponentShortName  >}} |
@@ -101,25 +108,29 @@ The product that sends the events is identified with the following:
 | RequestCreationDate | Date | - | If the value of the State attribute is:<br/> • SENT: The value of this attribute is local date of the creation of the file on the Sender side.<br/> • RECEIVED: The value of this attribute is the date of the creation of the file on the Sender side. | DATEK |
 | RequestCreationTime | Time | - | If the value of the State attribute is:<br/> • SENT: The value of this attribute is local time of the creation of the file on the Sender side.<br/> • RECEIVED: The value of this attribute is the time of the creation of the file on the Sender side. | TIMEK |
 | TransmissionDuration | Integer | - | Transfer duration, expressed in seconds. | TIMES |
+| EventTimestamp  | String  | 100  | The event time, in milliseconds, indicating the exact time the event occurred on Transfer CFT, rather than the time the event reaches Sentinel.<br/> You can use the a tool, such as <a href="https://www.epochconverter.com/">EpochConverter</a>, to convert the timestamp into a human-readable date.<br/> **Example**<br/> If the EventTimeStamp is 1631110828, the equivalent in GMT is Wednesday 8 September 2021 14:20:28.<br/> <blockquote> **Note**<br/> Note: Introduced in the XFBTransfer TO as of the version 5.5.<br/> </blockquote>  | N/A  |
+| EventDateTime  | String  | 50  | The date and time event indicating the exact time the event occurred on Transfer CFT, rather than the date and time the event reaches Sentinel. This is a UTC standard value and follows the ISO 8601 format.<br/> **Example**<br/> 2021-07-28T08:32:30.049708Z<br/> <blockquote> **Note**<br/> Note: Introduced in the XFBTransfer TO as of the version 5.5.<br/> </blockquote>  | N/A  |
 
 
-## Transfer protocols
+Transfer protocols
+------------------
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{< TransferCFT/axwayvariablesComponentShortName  >}} |
 | --- | --- | --- | --- | --- |
-| Protocol | String | 25 | Name of the protocol that operates at the Protocol Layer of the transfer. Possible values:<br/> • CFT (PeSIT, version CFT)<br/> • PSIT_HS_E (PeSIT, version E)<br/> • PSIT_HS_D (PeSIT, version D)<br/> • ODT (ODETTE File Transfer Protocol) | Protocol |
+| Protocol | String | 25 | Name of the protocol that operates at the Protocol Layer of the transfer. Possible values:<br/> • CFT (PeSIT, version CFT)<br/> • PSIT_HS_E (PeSIT, version E)<br/> • PSIT_HS_D (PeSIT, version D)<br/> • ODT (ODETTE File Transfer Protocol)<br/> • SFTP | Protocol |
 | IsSSL | String | 1 |  • 1: SSL/TLS used for the transfer.<br/> • 0: SSL/TLS not used for the transfer. | SSLMODE |
 | SSLAuth | String | 1 |  • S: The Server sent X.509 certificates to the Requester.<br/> • B: Both the Server and the Requester sent X.509 certificates to each other.<br/> • N: Neither the Server nor the Requester sent X.509 certificates. | SSLAUTH |
 | SSLCypher | String | 2 | The cipher suite that the Server and the Requester used during the SSL/TLS session. | SSLCIPH |
 
 
-## Transfer options
+Transfer options
+----------------
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{< TransferCFT/axwayvariablesComponentShortName  >}} |
 | --- | --- | --- | --- | --- |
-| Compression | String | 1 | One of the following:<br/> • 0: Undefined<br/> • 1: Horizontal<br/> • 2: Vertical<br/> • 3: Both horizontal and vertical<br/> • 4: Not compressed | ****NCOMP**** |
+| Compression | String | 1 | One of the following:<br/> • 0: Undefined<br/> • 1: Horizontal<br/> • 2: Vertical<br/> • 3: Both horizontal and vertical<br/> • 4: Not compressed | NCOMP |
 | EOTProcedure | String | 255 | Name of the end-of-transfer procedure executed upon the completion of the transfer. | EXEC |
 | Priority | Integer | - | Transfer priority. Receivers process transfers in the order of their priority. The range of possible values for this attribute is 0 to 255. The lowest priority is zero. The highest priority is 255.  | PRI |
 | RetryMaxNumber | Integer | - | Maximum number of times that the Sender can attempt to send transfers. | RETRYM |
@@ -128,16 +139,18 @@ The product that sends the events is identified with the following:
 | TransferType | String | 1 | One of the following:<br/> • S: The Sender sent a single transfer to a single Receiver.<br/> • F: The transfer belongs to a group of transfers that the Sender sent to a single Receiver. For each transfer in the group, the product generated one Processing Cycle.<br/> • D: The Receiver belongs to a group of Receivers to whom the Sender sent the transfer (diffusion). For each Receiver in the group, the product generated one Processing Cycle. | FILTYP |
 
 
-## Transfer size
+Transfer size
+-------------
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{< TransferCFT/axwayvariablesComponentShortName  >}} |
 | --- | --- | --- | --- | --- |
-| FileSize | Integer | - | Size of the transferred file. This size is expressed in bytes.<br/> <blockquote> **Note**<br/> For PeSIT, an estimation of size is given at the beginning of the transfer. This value is updated upon completion of the transfer with the real value.<br/> </blockquote>  | ****FSPACE**** |
-| TransmittedBytes | Integer | - | Number of bytes transferred, after decompression, to transfer the file. This size is expressed in bytes.<br/> <blockquote> **Note**<br/> For PeSIT, this value sent is crosschecked by both the sender and receiver.<br/> </blockquote>  | NCAR |
+| FileSize | Integer | - | Size of the transferred file. This size is expressed in bytes.<br/> <blockquote> **Note**<br/> Note: For PeSIT, an estimation of size is given at the beginning of the transfer. This value is updated upon completion of the transfer with the real value.<br/> </blockquote>  | FSPACE |
+| TransmittedBytes | Integer | - | Number of bytes transferred, after decompression, to transfer the file. This size is expressed in bytes.<br/> <blockquote> **Note**<br/> Note: For PeSIT, this value sent is crosschecked by both the sender and receiver.<br/> </blockquote>  | NCAR |
 
 
-## The structure and content of transfers
+The structure and content of transfers
+--------------------------------------
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{< TransferCFT/axwayvariablesComponentShortName  >}} |
@@ -145,14 +158,15 @@ The product that sends the events is identified with the following:
 | CommandType | String | 1 |  • F: File transfer<br/> • M: Message transfer<br/> • A: Message reply<br/> • N: Message nack | TYPE |
 | FileOrganization | String | 25 |  • org_sequential: The transferred data is not indexed.<br/> • indexed: The transferred data is indexed.<br/> • direct: The transferred data is assigned relative access. | FORG |
 | FileType | String | 60 |  • B: The transferred file is a binary file.<br/> • J, T, O, X: The transferred file is a text file. | FTYPE |
-| RecordNumber | Integer |   | Number of record in the file. This size is expressed in bytes.<br/> <blockquote> **Note**<br/> For PeSIT, this value sent is crosschecked by both the sender and receiver.<br/> </blockquote>  | FREC |
+| RecordNumber | Integer |   | Number of record in the file. This size is expressed in bytes.<br/> <blockquote> **Note**<br/> Note: For PeSIT, this value sent is crosschecked by both the sender and receiver.<br/> </blockquote>  | FREC |
 | RecordFormat | String | 64 |  • F: fixed - The transferred data contains fixed-length records.<br/> • V: variable - The transferred data contains variable-length records.<br/> • U: undefined - The structure of the transferred data is unknown. | FRECFM |
 | RecordSize | Integer |   |  • If the value of RecordFormat attribute is fixed, the value of this attribute is the size of all records in the transferred file, expressed in bytes.<br/> • If the value of RecordFormat is variable or undefined, the value of this attribute is the size of the largest record in the transferred file, expressed in bytes. | FLRECL |
 | Transcoding | Integer |   | Character code of the transferred data:<br/> • A: ASCII<br/> • B: Binary<br/> • E: EBCDIC | FCODE |
 | TranslationTableId | String | 25 | Name of the local translation table use during the transfer (if any). | XLATE |
 
 
-## Other attribute
+Other attribute
+---------------
 
 
 | Sentinel<br/> attribute | Data type | Length | Description | Name in<br/> {{< TransferCFT/axwayvariablesComponentShortName  >}} |

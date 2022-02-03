@@ -47,7 +47,7 @@ Before beginning to write {{< TransferCFT/axwayvariablesComponentShortName  >}} 
     -   Delphi: ..\\CFT\\API\\DELPHI\\SAMPLE\\CFTAPIDP.DPR 
     -   Visual Basic: ..\\CFT\\API\\VBASIC\\SAMPLE\\CFTAPIVB.VBP
 1. Copy
-    APISAMPL, CFTAPIDP or CFTAPIVB in the {{< TransferCFT/axwayvariablesComponentShortName >}} folder.
+    APISAMPL, CFTAPIDP or CFTAPIVB in the {{< TransferCFT/axwayvariablesComponentShortName  >}} folder.
 1. Start
     APISAMPL, CFTAPIDP or CFTAPIVB.
 1. Rebuild the sample programs
@@ -61,12 +61,13 @@ For issued commands to be interpreted correctly by {{< TransferCFT/axwayvariable
 1. Define a CFTPART with an id of PART1.
 1. Define a CFTSEND with an id of TEST and fname called TEST.
 1. Set up a file called TEST in the CFT\\SEND directory.
-1. Start {{< TransferCFT/axwayvariablesComponentShortName >}}.
+1. Start {{< TransferCFT/axwayvariablesComponentShortName  >}}.
 1. Change Windows NT console sessions.
 
 <span id="Design_constraints"></span>
 
-## Constraints
+Constraints
+-----------
 
 ### Design
 
@@ -81,14 +82,14 @@ made by an application must be made in the same thread.
 A {{< TransferCFT/axwayvariablesComponentShortName  >}} API application must comply with two requirements:
 
 - When the application
-    starts, but before a {{< TransferCFT/axwayvariablesComponentShortName >}} API is called, the {{< TransferCFT/axwayvariablesComponentShortName >}} API
+    starts, but before a {{< TransferCFT/axwayvariablesComponentShortName  >}} API is called, the {{< TransferCFT/axwayvariablesComponentShortName  >}} API
     initialization function must be called in:
 - Visual Basic:
-    Cft\_Api\_Open (ByVal Version As String) As Integer
+    Cft_Api_Open (ByVal Version As String) As Integer
 - C++ or Delphi:
     CftInitialize of prototype BOOL CftInitialize (void)
 - When the application
-    terminates, it must inform {{< TransferCFT/axwayvariablesComponentShortName >}} that it is stopping by calling
+    terminates, it must inform {{< TransferCFT/axwayvariablesComponentShortName  >}} that it is stopping by calling
     the CftUninitialize function with the following prototype: BOOL
     CftUninitialize ( void )
 
@@ -113,11 +114,11 @@ the following options:
 
 <!-- -->
 
-- D\_X86=1 /\*
+- D_X86=1 /\*
     Machine code generation for Intel x 86 processors \*/
 - DWIN32 /\* Win
     32 application \*/
-- D\_MT /\* Multi-thread
+- D_MT /\* Multi-thread
     application \*/
 - G3 /\* Machine
     code generation compatible with 386 processors and compatibles \*/
@@ -162,4 +163,4 @@ workstation, so that the application developed with the {{< TransferCFT/axwayvar
 can run correctly.
 
 A Visual Basic program requires an additional DLL to encapsulate calls
-to the {{< TransferCFT/axwayvariablesComponentShortName  >}} APIs \[cftvb.dll\].
+to the {{< TransferCFT/axwayvariablesComponentShortName  >}} APIs [cftvb.dll].

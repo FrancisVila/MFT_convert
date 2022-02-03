@@ -46,7 +46,7 @@ EXIT programs are located in the library containing the CFTMAIN program.
 
 > **Note**
 >
-> The GRPMON group must be the only group in charge of Transfer CFT (CFTMAIN) execution, for all Transfer CFT environments that depend on the same RACF mechanism and regardless of their role (production or test). This group has no reason to have specific access rights with regard to the files that are sent or received, as transfers (FNAME and WFNAME file allocation and EXEC procedure submission) are performed with the user of the transfer owner.
+> Note: The GRPMON group must be the only group in charge of Transfer CFT (CFTMAIN) execution, for all Transfer CFT environments that depend on the same RACF mechanism and regardless of their role (production or test). This group has no reason to have specific access rights with regard to the files that are sent or received, as transfers (FNAME and WFNAME file allocation and EXEC procedure submission) are performed with the user of the transfer owner.
 
 ### Configuration group (GRPAPRM)
 

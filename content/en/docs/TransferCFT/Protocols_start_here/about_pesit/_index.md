@@ -1,8 +1,9 @@
 {
     "title": "About the PeSIT protocol",
     "linkTitle": "PeSIT protocol",
-    "weight": "130"
-}## What is PeSIT?
+    "weight": "120"
+}What is PeSIT?
+--------------
 
 PeSIT is an end-to-end public protocol designed to provide a reliable
 and normalized interface for user applications to exchange files and messages
@@ -14,7 +15,8 @@ In this PeSIT protocol sub-book we'll first review PeSIT features, then discuss
 
 <span id="PeSIT"></span>
 
-## Why use PeSIT?
+Why use PeSIT?
+--------------
 
 PeSIT features available for {{< TransferCFT/axwayvariablesComponentShortName  >}} include:
 
@@ -154,6 +156,7 @@ Additionally, {{< TransferCFT/axwayvariablesComponentShortName  >}} provides neg
 The relay store-and-forward mode is available with automatic routing from one partner to another via intermediate
 partners.
 
-## PeSIT diagnostic codes
+PeSIT diagnostic codes
+----------------------
 
 provides PeSIT reason and diagnostic code information, error codes, and FPDU values.

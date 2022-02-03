@@ -1,7 +1,7 @@
 {
     "title": "Procedure examples",
     "linkTitle": "Procedure examples",
-    "weight": "230"
+    "weight": "220"
 }The command files described below provide the outlines for establishing
 end of transfer procedures using a syntax applicable to the Windows NT
 operating system.
@@ -94,7 +94,6 @@ SITEA,
      IDT     =    
 A0112102
 ```
-
 <span id="Sending_a_response_message"></span>
 
 #### Sending a response message
@@ -103,7 +102,7 @@ In PeSIT D CFT profile, PeSIT E or ODETTE protocols, the end of transfer
 procedure can activate the sending to the party of a response message
 intended to inform that the transfer has been correctly completed. At
 the party end, the initial transfer entry changes to the (supplementary)
-<span style="font-weight: bold;">****A****</span> Acknowledged state.
+****A**** Acknowledged state.
 
 The end of receive procedure described in this third example, is used
 to activate this transmission on receiving a file with an identifier (IDF)

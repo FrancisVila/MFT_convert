@@ -1,7 +1,7 @@
 {
     "title": "Configure exchanges that use SSL",
     "linkTitle": "Configure exchanges that use SSL",
-    "weight": "260"
+    "weight": "250"
 }There are two ways to configure Transfer CFT with Secure Relay using the TLS protocol:
 
 - End-to-end SSL: The remote peer communicates with Transfer CFT via Secure Relay (RA) using end-to-end SSL.
@@ -9,7 +9,7 @@
 
 The communication between the Master Agent (MA) and {{< TransferCFT/axwayvariablesComponentLongName  >}} occurs over a plain-text channel.
 
-<span class="autonumber"></span>End-to-end SSL compared with SSL termination
+End-to-end SSL compared with SSL termination
 
 ![](/Images/TransferCFT/sr_schema.png)
 
@@ -22,7 +22,8 @@ This page describes how to create and configure the following Transfer CFT objec
 
 SSL termination in Secure Relay is possible using the internal PKI database. As such, the internal PKI base (pki.type=cft), rootcid, and usercid correspond to certificates stored in the internal PKI database.
 
-## End-to-end SSL
+End-to-end SSL
+--------------
 
 ### Create a CFTNET object
 
@@ -30,7 +31,7 @@ SSL termination in Secure Relay is possible using the internal PKI database. As 
     -   TYPE=TCP
     -   PROTOCOL=SR
 1. Define the mandatory parameters RECALLHOST, HOST, and SSLTERM.
-    -   RECALLHOST: The host address on which the Master Agent calls Transfer CFT when<span style="color: #ff0000;"> </span>Secure Relay receives an incoming call. If Transfer CFT and the Master Agent run of the same host, use the loopback network interface (for example, 127.0.0.1) instead of the public network interface.
+    -   RECALLHOST: The host address on which the Master Agent calls Transfer CFT when Secure Relay receives an incoming call. If Transfer CFT and the Master Agent run of the same host, use the loopback network interface (for example, 127.0.0.1) instead of the public network interface.
     -   HOST: Designates the network interface that is used on the Router Agent side.
     -   SSLTERM: Set this Boolean to NO for end-to-end SSL.
 
@@ -38,7 +39,6 @@ SSL termination in Secure Relay is possible using the internal PKI database. As 
 
 ```
 CFTNET id = NETSRSSL,
-
 type = TCP,
 call = INOUT,
 class = 2,
@@ -46,7 +46,6 @@ host = <network_interface_used_by_Router_Agent>,
 protocol = SR,
 recallhost = 127.0.0.1, /\*network_interface_used_by_CFT\*/
 sslterm = NO
-
 ```
 
 ### Create a CFTPROT object
@@ -63,12 +62,10 @@ This example uses a CFTNET object called NETSRSSL.
 
 ```
 CFTPROT id = PESITSSL,
-
 net = NETSRSSL,
 sap = 1762,
 ssl = PESITSSL,
 prof = ANY
-
 ```
 
 ### Create a CFTSSL object
@@ -84,7 +81,6 @@ Here the CFTSSL object is used for incoming connections (direct=server).
 
 ```
 CFTSSL id = PESITSSL,
-
 version = TLSV1COMP,
 direct = SERVER,
 verify = NONE,
@@ -92,21 +88,19 @@ usercid = AXWMFTUSER,
 rootcid = AXWMFTCA,
 ciphlist = (47),
 passw = <user_cid_password>
-**NOTE**: You must enter a value in this field even if you are using "pki.type=cft", which normally does not require a password.
-
+NOTE
+: You must enter a value in this field even if you are using "pki.type=cft", which normally does not require a password.
  
 ```
 
-Here the CFTSSL object is used for incoming connections (direct=client).
+This CFTSSL object is used for incoming connections (direct=client).
 
 ```
 CFTSSL id = PESITSSL,
-
 version = TLSV1COMP,
 direct = CLIENT,
 rootcid = AXWMFTCA,
 ciphlist = (47)
-
 ```
 
 ### Create CFTPART and CFTTCP objects
@@ -137,15 +131,16 @@ host = <remote_partner_host_address>
 
 #### Prerequisites
 
-- You require an installed Secure Relay Router Agent 2.7.3 that has a license for FIPS mode. Please refer to the *Secure Relay Router Agent 2.7.3 documentation* at [docs.axway.com](https://docs.axway.com/bundle) for more information.
-- Your {{< TransferCFT/axwayvariablesComponentLongName >}} license key requires the FIPS option.
+- You require an installed Secure Relay Router Agent 2.7.4 that has a license for FIPS mode. Please refer to the *Secure Relay Router Agent 2.7.4 documentation* at [docs.axway.com](https://docs.axway.com/bundle) for more information.
+- Your {{< TransferCFT/axwayvariablesComponentLongName  >}} license key requires the FIPS option.
 
 #### Configure the Master Agent in {{< TransferCFT/axwayvariablesComponentLongName  >}}
 
-1. Go to the in the` $CFTDIRINSTALL/distrib/xsr/` folder, and rename the <span class="code">`iaik_jce-3.16.jar`</span> file as `iaik_jce-3.16.unused.`
-1. Move the <span class="code">`entrust-toolkit-8.0.36.jar`</span> file from the <span class="code">`$CFTDIRINSTALL/distrib/xsr/fips`</span> folder to the <span class="code">`$CFTDIRINSTALL/distrib/xsr/`</span> folder.
+1. Go to the in the` $CFTDIRINSTALL/distrib/xsr/` folder, and rename the `iaik_jce-3.16.jar` file as `iaik_jce-3.16.unused.`
+1. Move the `entrust-toolkit-8.0.36.jar` file from the `$CFTDIRINSTALL/distrib/xsr/fips` folder to the `$CFTDIRINSTALL/distrib/xsr/` folder.
 
-## SSL termination with Secure Relay
+SSL termination with Secure Relay
+---------------------------------
 
 ### Create a CFTNET object
 
@@ -161,7 +156,6 @@ host = <remote_partner_host_address>
 
 ```
 CFTNET id = NETSRSSL,
-
 type = TCP,
 call = INOUT,
 class = 2,
@@ -169,7 +163,6 @@ host = <network_interface_used_by_Router_Agent>,
 protocol = SR,
 recallhost = 127.0.0.1, /\*network_interface_used_by_CFT\*/
 sslterm = YES
-
 ```
 
 ### Create a CFTPROT object
@@ -186,12 +179,10 @@ This example uses a CFTNET object called NETSRSSL.
 
 ```
 CFTPROT id = PESITSSL,
-
 net = NETSRSSL,
 sap = 1762,
 ssl = PESITSSL,
 prof = ANY
-
 ```
 
 ### Create a CFTSSL object
@@ -207,7 +198,6 @@ Here the CFTSSL object is used for incoming connections (direct=server).
 
 ```
 CFTSSL id = PESITSSL,
-
 version = TLSV1COMP,
 direct = SERVER,
 verify = NONE,
@@ -215,8 +205,8 @@ usercid = AXWMFTUSER,
 rootcid = AXWMFTCA,
 ciphlist = (47),
 passw = <user_cid_password>
-**NOTE**: You must enter a value in this field even if you are using "pki.type=cft", which normally does not require a password.
-
+NOTE
+: You must enter a value in this field even if you are using "pki.type=cft", which normally does not require a password.
  
 ```
 
@@ -224,12 +214,10 @@ Here the CFTSSL object is used for incoming connections (direct=client).
 
 ```
 CFTSSL id = PESITSSL,
-
 version = TLSV1COMP,
 direct = CLIENT,
 rootcid = AXWMFTCA,
 ciphlist = (47)
-
 ```
 
 ### Create CFTPART and CFTTCP objects

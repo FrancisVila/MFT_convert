@@ -1,7 +1,7 @@
 {
     "title": "START  - Restart transfers",
     "linkTitle": "START - Restarting transfers",
-    "weight": "360"
+    "weight": "350"
 }This topic describes the START command and its parameters.
 
 Only the Transfer CFT requesting the transfer can initiate
@@ -20,7 +20,7 @@ after scanning the catalog if the required resources are available.
 | Parameter  | Description  |
 | --- | --- |
 | <a href="../../../command_summary/parameter_intro/blknum">BLKNUM</a>  | Catalog block number. If the values '*' or ' ' are used then all transfers are selected regardless of the block that they belong to. |
-| <a href="../../../command_summary/parameter_intro/direct">DIRECT</a>  | Transfer direction for the requests in question.<br/> The possible values are:<br/> • <span >****BOTH****</span>: (default) takes both send transfers and receive transfers into account<br/> • <span >****RECV****</span>: limits the action to receive transfers<br/> • <span >****SEND****</span>: limits the action to send transfers |
+| <a href="../../../command_summary/parameter_intro/direct">DIRECT</a>  | Transfer direction for the requests in question.<br/> The possible values are:<br/> • ****BOTH****: (default) takes both send transfers and receive transfers into account<br/> • ****RECV****: limits the action to receive transfers<br/> • ****SEND****: limits the action to send transfers |
 | <a href="../../../command_summary/parameter_intro/force">FORCE</a>  | Indicates whether a request, that was not executed during its time slot should be forced to immediately restart. |
 | <a href="../../../command_summary/parameter_intro/ida">IDA</a> | Local identifier of the transfer assigned by the user or user application.<br/> Several catalog entries may be associated with a given IDA. There is no default value. |
 | <a href="../../../command_summary/parameter_intro/idf">IDF</a>  | Model file identifier.<br/> Several catalog entries may be associated with a given IDF. There is no default value. |

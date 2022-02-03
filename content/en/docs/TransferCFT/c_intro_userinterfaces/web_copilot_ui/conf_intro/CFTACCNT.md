@@ -1,8 +1,8 @@
 {
     "title": "Accounting records - CFTACCNT  ",
     "linkTitle": "Accounting - CFTACCNT",
-    "weight": "240"
-}<span id="About_CFTACCNT"></span>This page describes the <span id="kanchor47"></span>CFTACCNT command.
+    "weight": "230"
+}<span id="About_CFTACCNT"></span>This page describes the <span id="kanchor46"></span>CFTACCNT command.
 
 Use this command to define the recording mode of the statistical data
 concerning correctly terminated transfers (T or X state).
@@ -10,7 +10,7 @@ concerning correctly terminated transfers (T or X state).
 Two recording modes are available:
 
 - Recording data
-    in {{< TransferCFT/axwayvariablesComponentShortName >}} files. When the primary file is full, {{< TransferCFT/axwayvariablesComponentShortName >}}
+    in {{< TransferCFT/axwayvariablesComponentShortName  >}} files. When the primary file is full, {{< TransferCFT/axwayvariablesComponentShortName  >}}
     switches to an alternate file. This mode is available on all operating
     systems.
 - Recording data
@@ -27,14 +27,15 @@ topics****
     [How to define transfer
     accounting records](../../../../admin_intro/admin_config_commands/cftaccnt_concepts)
 
-## Parameter descriptions
+Parameter descriptions
+----------------------
 
 
 | Parameter  | Description  |
 | --- | --- |
 | ID | Identifier of the CFTACCNT command. |
 | MODE  | Select to perform one of the following:<br/> • CREATE<br/> • REPLACE<br/> • DELETE |
-| <a href="../../../command_summary/parameter_intro/type#type_CFTACCNT">TYPE</a>  | Defines the accounting type.<br/> • FILE: statistical data is recorded in the Transfer CFT files described by the FNAME and AFNAME parameters.<br/> • SYST: statistical data is recorded in a "system" file, through an interface with the system accounting utility. If TYPE=SYST then you must define ACCID. |
+| <a href="../../../command_summary/parameter_intro/type#type_CFTACCNT">TYPE</a>  | Defines the accounting type.<br/> • FILE: statistical data is recorded in the Transfer CFT files described by the FNAME and AFNAME parameters.<br/> • SYST: statistical data is recorded in a &quot;system&quot; file, through an interface with the system accounting utility. If TYPE=SYST then you must define ACCID. |
 | <a href="../../../command_summary/parameter_intro/accid#accid_CFTACCNT">ACCID</a>  | Only used if TYPE=SYST Accounting system file identifier records. |
 | COMMENT  |   |
 | LANGUAGE | Programming language of the application using the statistical data recorded.<br/> • COBOL<br/> • C |
@@ -45,7 +46,8 @@ topics****
 | <a href="../../../command_summary/parameter_intro/switch#switch">SWITCH</a>  | Time at which Transfer CFT automatically switches to the alternate statistical file.<br/> When this parameter is not defined, Transfer CFT switches statistical files daily at midnight. |
 
 
-## Examples
+Examples
+--------
 
 ****TYPE = FILE****
 

@@ -1,16 +1,17 @@
 {
     "title": "Generate and manage keys",
     "linkTitle": "Generate and manage keys",
-    "weight": "180"
-}The supported operating systems are listed in the [Platform features](../../../datasheet) table.
+    "weight": "170"
+}******T**he supported operating systems are listed in the** [Platform features](../../../datasheet) **table.********
 
 This section describes how to establish secure sessions and generate keys, import etc. in the context of SFTP.
 
 <span id="Use"></span>
 
-## Using PKIKEYGEN to generate and import a key pair
+Use PKIKEYGEN to generate and import a key pair
+-----------------------------------------------
 
-You can use the <span class="code">`PKIKEYGEN `</span>command to generate a key pair, where it then stores them in the local PKI database.
+You can use the `PKIKEYGEN `command to generate a key pair, where it then stores them in the local PKI database.
 
 ```
 PKIUTIL PKIKEYGEN
@@ -22,24 +23,25 @@ MODE=CREATE,
 COMMENT="2048-bits RSA key"
 ```
 
-## Using PKIKEY to manage keys
+Use PKIKEY to manage keys
+-------------------------
 
 ### About PKI formats
 
-The SFTP keys are referenced in the PKI database as a <span class="code">`Keys `</span>identifier.
+The SFTP keys are referenced in the PKI database as a `Keys `identifier.
 
 You can import the following formats in the PKI database:
 
 - Raw DER format
 - PEM format for RSA private and public key, beginning with “BEGIN RSA PRIVATE KEY” or “BEGIN RSA PUBLIC KEY”, or X.509 public key, beginning with “BEGIN PUBLIC KEY”
-- Encrypted PEM format for RSA private key (PKCS #5), beginning with "BEGIN RSA PRIVATE KEY " and "Proc-Type: 4,ENCRYPTED"
+- Encrypted PEM format for RSA private key (PKCS \#5), beginning with "BEGIN RSA PRIVATE KEY " and "Proc-Type: 4,ENCRYPTED"
 - PKCS8 format, beginning with “BEGIN PRIVATE KEY” or “BEGIN ENCRYPTED PRIVATE KEY”
 - SSH2 format, beginning with “BEGIN SSH2 PUBLIC KEY”
 - ssh-rsa format, beginning with “ssh-rsa”
 
 > **Note**
 >
-> When using the ssh-keygen tool, keys are usually generated in encrypted PEM format, which you can import using the PKIKEY command.
+> Note: When using the ssh-keygen tool, keys are usually generated in encrypted PEM format, which you can import using the PKIKEY command.
 
 ****Restrictions****
 
@@ -56,16 +58,16 @@ The PKIKEY command is similar to the PKICER command. Parameters include:
 
 | Parameter  | Description  |
 | --- | --- |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/pkifname">PKIFNAME</a>: | The PKI database file ($CFTPKU by default) *only in command line* |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/id">ID</a>:  | The PKIKEY identifier  |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/comment">COMMENT</a>:  | Free comment  |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/state">STATE</a>:  | The state of the imported key (ACT or INACT). You cannot use deactivated keys (state=INACT) for SFTP  |
-| <a href="">IKDATA</a>:  | Use base-64 data instead of a file (where the format corresponds with ikform)  |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/iform">IKFORM</a>:  | The key format (DER, PEM, PKCS8, SSH or KPRIV). The "SSH" value includes the SSH2 format and the ssh-rsa format  |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/ikname">IKNAME</a>: | The key file to import *only in command line*  |
-| <a href="">IKPUB</a>: | Text-only public key in ssh-rsa format *only in command line*  |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/ikpassw">IKPASSW</a>: | The key file protection password in PKCS8 or encrypted PEM (PKCS #5)  |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/mode">MODE</a>:  | The action to perform (CREATE, REPLACE, DELETE) *only in command line*  |
+| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/pkifname">PKIFNAME</a> | The PKI database file ($CFTPKU by default) *only in command line* |
+| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/id">ID</a>  | The PKIKEY identifier  |
+| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/comment">COMMENT</a>  | Free comment  |
+| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/state">STATE</a>  | The state of the imported key (ACT or INACT). You cannot use deactivated keys (state=INACT) for SFTP  |
+| <a href="">IKDATA</a>  | Use base-64 data instead of a file (where the format corresponds with ikform)  |
+| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/iform">IKFORM</a>  | The key format (DER, PEM, PKCS8, SSH or KPRIV). The &quot;SSH&quot; value includes the SSH2 format and the ssh-rsa format  |
+| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/ikname">IKNAME</a> | The key file to import *only in command line*  |
+| <a href="">IKPUB</a> | Text-only public key in ssh-rsa format *only in command line*  |
+| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/ikpassw">IKPASSW</a> | The key file protection password in PKCS8 or encrypted PEM (PKCS #5)  |
+| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/mode">MODE</a>  | The action to perform (CREATE, REPLACE, DELETE) *only in command line*  |
 
 
 ### Import existing keys
@@ -78,7 +80,7 @@ If you already have keys that you want to use, you can import them as described 
 PKIUTIL PKIKEY ID=PRIVATE,COMMENT="My_note",IKFORM=PKCS8,IKPASSW="MyPassw", IKNAME=./conf/pki/private.pk8,MODE=CREATE
 ```
 
-****Import with encrypted PEM (PKCS#5) format****
+****Import with encrypted PEM (PKCS\#5) format****
 
 ```
 PKIUTIL PKIKEY ID=PRIVATE,COMMENT="My_note",IKFORM=PEM,IKPASSW="MyPassw", IKNAME=./conf/pki/private.pem,MODE=CREATE
@@ -96,7 +98,7 @@ PKIUTIL PKIKEY ID=PRIVATE,COMMENT="My_note",IKFORM=PEM,IKPASSW="MyPassw", IKNAME
 
 > **Note**
 >
-> If a PEM encrypted key is generated using OpenSSL with FIPS, for example with "ssh-keygen", you cannot import it into Transfer CFT. To use this key, convert it to PKCS#8 using the command: openssl pkcs8 -topk8 -v2 aes128 -in &lt;key> -out &lt;key.pk8>
+> Note: If a PEM encrypted key is generated using OpenSSL with FIPS, for example with "ssh-keygen", you cannot import it into Transfer CFT. To use this key, convert it to PKCS\#8 using the command: openssl pkcs8 -topk8 -v2 aes128 -in &lt;key&gt; -out &lt;key.pk8&gt;
 
 ****Import with private.rsa format****
 
@@ -152,16 +154,56 @@ PKIUTIL PKIKEY ID=PUBPEM, IKFORM=PEM, IKNAME=./public.pem, MODE=CREATE
 >
 > `-----END PUBLIC KEY-----     `
 
-## Activate/deactivate a key
+Example to create and import a private key
+------------------------------------------
 
-Use the <span class="code">`ACT/INACT`</span> commands to activate or deactivate, respectively.
+This section describes how to create a private key for a user, import the key in the local PKI base, and deploy the associated public key on the SFTP server. In the following examples, the user is called `user2`.
+
+### Example using ssh-keygen
+
+1. Generate a public/private key pair:  
+    ```  
+     > ssh-keygen -t rsa -b 2048 -f user2
+    ```
+1. Import the private key in the local PKI base:  
+    ```
+    PKIUTIL pkikey id='USER2@localhost', ikname='user2', ikpassw='<passphrase>', ikform='pem'
+    ```
+1. Deploy the public key on the SFTP server. On a {{< TransferCFT/axwayvariablesComponentLongName  >}} server, use the following command to import the key:  
+    ```  
+     > PKIUTIL pkikey id='USER2', ikname='user2.pub', ikform='ssh'
+    ```
+
+### Example using OpenSSL
+
+1. Generate the private key:  
+    ```  
+     > openssl genrsa -out private.key 2048
+    ```
+1. Generate the associated public key:  
+    ```  
+     > openssl rsa -pubout -in private.key -out public.key
+    ```
+1. Import the private key in the local PKI database:  
+    ```  
+     > PKIUTIL pkikey id='USER2@localhost', ikname='private.key', ikform='pem'
+    ```
+1. Deploy the public key on the SFTP server. On a {{< TransferCFT/axwayvariablesComponentLongName  >}} server, use the following command to import the key:  
+    ```  
+     > PKIUTIL pkikey id='USER2', ikname='public.key', ikform='pem'
+    ```
+
+Activate/deactivate a key
+-------------------------
+
+Use the `ACT/INACT` commands to activate or deactivate, respectively.
 
 ****Example****
 
 Use the LISTPKI command to list available keys:
 
 ```
->**LISTPKI**
+>LISTPKI
 Keys:
 Id. S K Bits
 ---------------- - - ----
@@ -173,15 +215,17 @@ PKIU00I LISTPKI _ Correct ()
 
 ****Example****
 
-This example demonstrates key deactivation where **I** indicates \[INACT\] and **A** indicates \[ACT\].
+This example demonstrates key deactivation where **I** indicates [INACT] and **A** indicates [ACT].
 
 ```
 >listpki
 Keys:
 Id. S K Bits
 -----------
-CFT_SSH_PRIV **A** x 2048
-CFT_SSH_PUB   **A**     2048
+CFT_SSH_PRIV A
+x 2048
+CFT_SSH_PUB   A
+    2048
  
 >inact type=key
  
@@ -189,6 +233,8 @@ CFT_SSH_PUB   **A**     2048
 Keys:
 Id. S K Bits
 -----------
-CFT_SSH_PRIV **I** x 2048
-CFT_SSH_PUB   **I**     2048
+CFT_SSH_PRIV I
+x 2048
+CFT_SSH_PUB   I
+    2048
 ```

@@ -1,14 +1,14 @@
 {
     "title": "cnxinout",
     "linkTitle": "cnxinout",
-    "weight": "430"
+    "weight": "420"
 }<span id="cnxinout"></span>
 
 ### cnxinout
 
 #### CFTTCP
 
-****\[cnxinout = { <u>4</u> | n } \]****
+****[cnxinout = { <span class="underline">4</span> &#124; n } ]****
 
 Maximum number of communication sessions.
 

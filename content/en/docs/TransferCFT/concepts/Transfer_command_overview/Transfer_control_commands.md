@@ -1,7 +1,7 @@
 {
     "title": "Transfer control commands",
     "linkTitle": "Transfer control commands",
-    "weight": "170"
+    "weight": "160"
 }This topic describes the transfer control commands and provides a link
 to more information on these commands. The transfer control commands can
 be used to:

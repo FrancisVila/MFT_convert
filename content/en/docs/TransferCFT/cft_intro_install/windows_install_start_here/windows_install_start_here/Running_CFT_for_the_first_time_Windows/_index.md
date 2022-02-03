@@ -9,29 +9,31 @@ start {{< TransferCFT/axwayvariablesComponentShortName  >}} for the first time i
 - [Start Transfer
     CFT using a command](#Starting_CFT)
 - [Shut
-    down {{< TransferCFT/axwayvariablesComponentShortName >}} using a command](#Shutting_down_CFT)
-- [Start or stop {{< TransferCFT/headerfootervariableshflongproductname >}} via a user interface](#Start)
+    down {{< TransferCFT/axwayvariablesComponentShortName  >}} using a command](#Shutting_down_CFT)
+- [Start or stop {{< TransferCFT/headerfootervariableshflongproductname  >}} via a user interface](#Start)
 - [Service mode](#Service)
 - [Start the CFTW desktop window](#Start2)
 
 <span id="Operations_to_perform_before_starting_CFT"></span>
 
-## Set the environment
+Set the environment
+-------------------
 
 After installing {{< TransferCFT/axwayvariablesComponentShortName  >}}
 , but before starting {{< TransferCFT/axwayvariablesComponentShortName  >}} you should:
 
-- Execute the <span class="code">`profile.bat`</span> in the {{< TransferCFT/axwayvariablesComponentShortName >}} runtime directory to define environment
-    variables, or execute <span class="code">`profile.ps1`</span> if you are using Windows PowerShell instead of Batch.
+- Execute the `profile.bat` in the {{< TransferCFT/axwayvariablesComponentShortName  >}} runtime directory to define environment
+    variables, or execute `profile.ps1` if you are using Windows PowerShell instead of Batch.
 - Create a new set of Transfer
     CFT working files, parameters, partners, catalog, communication file, logs,
     use the sample configuration files cft-tcp.conf and cft-tcp-part.conf in the `runtime\conf` directory. You can configure these during the product installation or manually after installation.
-- Use <span class="code">`cftinit <configuration_file>`</span> > and/or <span class="code">`cftupdate`</span> to interpret the parameter and
+- Use `cftinit <configuration_file>` &gt; and/or `cftupdate` to interpret the parameter and
     partner files.  
     ```
     cftinit conf\\cft-tcp.conf
     cftupdate conf\\cft-tcp-part.conf
-    ```  
+    ```
+      
     or  
     ```
     cftinit conf\\cft-tcp.conf conf\\cft-tcp-part.conf
@@ -44,8 +46,8 @@ After installing {{< TransferCFT/axwayvariablesComponentShortName  >}}
 
 ****Sample file details****
 
-- <span class="code">`cft-tcp.conf`</span>: Contains PARM object definitions (PARM, CAT, COM, LOG, ACCNT, PROT, SEND, RECV,...etc.).
-- <span class="code">`cft-tcp-part.conf`</span>: Contains partner definitions (CFTPART, CFTTCP, CFTSSL).
+- `cft-tcp.conf`: Contains PARM object definitions (PARM, CAT, COM, LOG, ACCNT, PROT, SEND, RECV,...etc.).
+- `cft-tcp-part.conf`: Contains partner definitions (CFTPART, CFTTCP, CFTSSL).
 
 Delivered partners are:
 
@@ -56,39 +58,41 @@ Delivered partners are:
 ### Start and stop commands
 
 
-| Version 2.7.1 and higher  | Version 2.7.0 and lower  |
-| --- | --- |
-| cft start  | cftstart  |
-| cft stop  | cftstop  |
-| cft status  | cftstatus  |
-| cft force-stop  | cftstop -kill  |
-| cft force-stop -kill  | cftstop -forcedkill  |
+| Commands  |
+| --- |
+| cft start  |
+| cft stop  |
+| cft status  |
+| cft force-stop  |
+| cft force-stop -kill  |
 
 
 > **Note**
 >
-> The cftstart and cftstop commands, from version 2.7.0 and earlier, are redirected to the standardized commands for continued compatibility.
+> Note: The cftstart and cftstop commands, from version 2.7.0 and earlier, are redirected to the standardized commands for continued compatibility.
 
 <span id="Starting_CFT"></span>
 
-## Start {{< TransferCFT/axwayvariablesComponentShortName  >}} using a command
+Start {{< TransferCFT/axwayvariablesComponentShortName  >}} using a command
+--------------------------------------------------------------------------------
 
-If you have not already done so, from the runtime directory execute the <span class="code">`profile.bat`</span> to set the {{< TransferCFT/axwayvariablesComponentShortName  >}} environment.
-Then in the same <span class="code">`dos `</span>session, enter the command: <span class="code">`cft start`</span>
+If you have not already done so, from the runtime directory execute the `profile.bat` to set the {{< TransferCFT/axwayvariablesComponentShortName  >}} environment.
+Then in the same `dos `session, enter the command: `cft start`
 
 <span id="Shutting_down_CFT"></span>
 
-## Shut down {{< TransferCFT/axwayvariablesComponentShortName  >}} using a command
+Shut down {{< TransferCFT/axwayvariablesComponentShortName  >}} using a command
+------------------------------------------------------------------------------------
 
 You can use one of the following methods to shut down Transfer CFT:
 
-- <span class="code">`CFTUTIL `</span>utility  
+- `CFTUTIL `utility  
     ```
     CFTUTIL shut fast=no
     *or*
     CFTUTIL shut fast=yes
     ```
-- <span class="code">`cft  utility`</span> using stop  
+- `cft  utility` using stop  
     ```
     cft stop
     ```
@@ -97,25 +101,28 @@ For more information, see the administrative commands in [Manage the Transfer CF
 
 <span id="Start"></span>
 
-## Start or stop {{< TransferCFT/headerfootervariableshflongproductname  >}} using a user interface
+Start or stop {{< TransferCFT/headerfootervariableshflongproductname  >}} using a user interface
+-----------------------------------------------------------------------------------------------------
 
 You can also use either [Central Governance](https://docs.axway.com/bundle/CentralGovernance_113_UsersGuide_allOS_en_HTML5/page/Content/CentralGov/operations/t_startCFT.htm) or the Transfer CFT Copilot UI to start or shut down {{< TransferCFT/headerfootervariableshflongproductname  >}}.
 
 <span id="Service"></span>
 
-## Service mode
+Service mode
+------------
 
-You can retroactively install Service mode for {{< TransferCFT/axwayvariablesComponentShortName  >}}. Use the Installer <span class="bold_in_para">****Configure**** </span>mode to install and uninstall the services for the {{< TransferCFT/axwayvariablesComponentShortName  >}} Server and {{< TransferCFT/axwayvariablesComponentShortName  >}} Copilot. To launch the Installer in **Configure** mode, from the <span class="bold_in_para">****Start**** </span>menu select<span class="bold_in_para"> ****Axway Software &gt; Axway {{< TransferCFT/axwayvariablesComponentShortName  >}} &gt; Configure****</span>.
+You can retroactively install Service mode for {{< TransferCFT/axwayvariablesComponentShortName  >}}. Use the Installer ****Configure**** mode to install and uninstall the services for the {{< TransferCFT/axwayvariablesComponentShortName  >}} Server and {{< TransferCFT/axwayvariablesComponentShortName  >}} Copilot. To launch the Installer in **Configure** mode, from the ****Start**** menu select ****Axway Software &gt; Axway {{< TransferCFT/axwayvariablesComponentShortName  >}} &gt; Configure****.
 
 <span id="Start2"></span>
 
-## Start the CFTW desktop window
+Start the CFTW desktop window
+-----------------------------
 
 You can use the Windows utility `cftw.exe` to open a desktop window that displays the {{< TransferCFT/axwayvariablesComponentLongName  >}} log messages and processes list in separate tabs. The `cft start` command automatically launches this cftw.exe utility when the UCONF parameter `cft.nt.start_graphmode` is set to **`Yes `**(default value).
 
 > **Note**
 >
-> When Transfer CFT is running as a service, you must have the service configured to authorize desktop interaction, and you must manually launch the cftw.exe.
+> Note: When Transfer CFT is running as a service, you must have the service configured to authorize desktop interaction, and you must manually launch the cftw.exe.
 
 If {{< TransferCFT/axwayvariablesComponentLongName  >}}is not running, use the `-wait `option with cftw so that the utility waits for {{< TransferCFT/axwayvariablesComponentLongName  >}} to start instead of exiting immediately.
 

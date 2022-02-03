@@ -1,7 +1,7 @@
 {
     "title": "id",
     "linkTitle": "id",
-    "weight": "1520"
+    "weight": "1510"
 }<span id="id"></span>
 
 ### id
@@ -13,7 +13,7 @@ This affects all {{< TransferCFT/axwayvariablesComponentShortName  >}} commands.
 
 #### CFTAUTH
 
-****\[ID = identifier \]****
+****[ID = identifier ]****
 
 Authorization list identifier.
 
@@ -32,7 +32,7 @@ keywords SAUTH or RAUTH.
 
 #### CFTCAT
 
-****\[ID = identifier \]****
+****[ID = identifier ]****
 
 Identifier for the CFTCAT object.
 
@@ -40,7 +40,7 @@ Identifier for the CFTCAT object.
 
 #### CFTDEST
 
-****\[ID = identifier \]****
+****[ID = identifier ]****
 
 Identifier of the list of partners.
 
@@ -51,7 +51,7 @@ the same ID.
 
 #### CFTEXIT
 
-****\[ID = identifier \]****
+****[ID = identifier ]****
 
 ******See
 Identifier table below******
@@ -78,8 +78,8 @@ commands listed below.
 
 #### CFTPARM
 
-****\[ID = identifier
-\]****
+****[ID = identifier
+]****
 
 Identifier of the CFTPARM command.
 
@@ -96,8 +96,8 @@ the monitor uses the default value 'IDPARM0'.
 
 #### CFTPART
 
-****\[ID = identifier
-\]****
+****[ID = identifier
+]****
 
 Local partner identifier.
 
@@ -105,8 +105,8 @@ Local partner identifier.
 
 #### CFTPROT
 
-****\[ID =
-identifier \]****
+****[ID =
+identifier ]****
 
 CFTPROT command identifier.
 
@@ -117,8 +117,8 @@ taken by the CFTPARM PROT parameter.
 
 #### CFTLOG
 
-****\[ID = identifier
-\]****
+****[ID = identifier
+]****
 
 Identifier of the CFTLOG command.
 
@@ -126,8 +126,8 @@ Identifier of the CFTLOG command.
 
 #### CFTXLATE
 
-****\[ID = identifier
-\]****
+****[ID = identifier
+]****
 
 Translation table identifier.
 
@@ -138,8 +138,8 @@ of DIRECT, FCODE or NCODE are different.
 
 #### CFTRECV
 
-****\[ID = identifier
-\]****
+****[ID = identifier
+]****
 
 Local model file identifier (IDF)
 
@@ -158,8 +158,8 @@ store and forward site. If not, the store and forward is refused.
 
 #### CFTSEND
 
-****\[ID = identifier
-\]****
+****[ID = identifier
+]****
 
 Local
 identifier of the model file (IDF) to be sent.
@@ -177,23 +177,23 @@ Network resource identifier.
 
 #### CFTACCNT, CFTCOM, CFTIDF, CFTNET, CFTTCP, CFTTRACE, CFTAPPL, CFTSSL, CFTEXT, LISTPARM, LISTPART
 
-****\[ID = identifier \]****
+****[ID = identifier ]****
 
 #### PKIENTITY
 
-****\[ID = identifier \]****
+****[ID = identifier ]****
 
 Identifier for a list of certificate authorities.
 
 #### EXTAMCACHE
 
-**\[ ID = identifier \]**
+**[ ID = identifier ]**
 
 Selects the user, or users, for which you want to obtain access rights.
 
 #### CFTUIPREF
 
-**\[ ID = identifier \]**
+**[ ID = identifier ]**
 
 Identifier for the user interface preferences.
 

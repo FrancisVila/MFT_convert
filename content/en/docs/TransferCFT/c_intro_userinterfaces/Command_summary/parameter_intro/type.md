@@ -1,16 +1,16 @@
 {
     "title": "type",
     "linkTitle": "type",
-    "weight": "3640"
+    "weight": "3660"
 }<span id="type"></span>
 
 ### type
 
 #### ABOUT
 
-\[ TYPE
-= { <span style="text-decoration: underline;">ALL</span>
-| HOST | CFT } \]
+[ TYPE
+= { ALL
+&#124; HOST &#124; CFT } ]
 
 Displays
 the Transfer CFT product, host, and key information.
@@ -19,8 +19,8 @@ the Transfer CFT product, host, and key information.
 
 #### ACT
 
-\[TYPE = PART | TRK | CRON | FOLDER 
-\]
+[TYPE = PART &#124; TRK &#124; CRON &#124; FOLDER 
+]
 
 Type of object to be deactivated.
 
@@ -33,8 +33,8 @@ Type of object to be deactivated.
 
 #### INACT
 
-\[TYPE = PART | TRK | CRON | FOLDER
-\]
+[TYPE = PART &#124; TRK &#124; CRON &#124; FOLDER
+]
 
 Type of object to be deactivated.
 
@@ -51,7 +51,7 @@ Type of object to be deactivated.
 #### CFTCOM
 
 TYPE = { FILE
-| TCPIP}
+&#124; TCPIP}
 
 Type of {{< TransferCFT/axwayvariablesComponentShortName  >}} communication medium.
 
@@ -66,7 +66,7 @@ This parameter can take the following values:
 
 #### CFTNET
 
-\[TYPE = { TCP } \] 
+[TYPE = { TCP } ] 
 
 Defines the type of network resource. This parameter can take the following
 values, according to the system:
@@ -76,7 +76,7 @@ values, according to the system:
 
 #### CFTIDF
 
-TYPE = { RECV | SEND}
+TYPE = { RECV &#124; SEND}
 
 The transfer direction for which this correspondence is valid. Select
 either:
@@ -90,8 +90,8 @@ either:
 
 #### CFTEXIT
 
-\[TYPE = {FILE
-| ACCESS | EXEC | BOT }\] 
+[TYPE = {FILE
+&#124; ACCESS &#124; EXEC &#124; BOT }] 
 
 The type of exit program, as follows:
 
@@ -105,13 +105,13 @@ The type of exit program, as follows:
 
 #### CFTACCNT
 
-\[TYPE = {FILE
-| SYST }\] 
+[TYPE = {FILE
+&#124; SYST }] 
 
 This defines the accounting type. CFTACCNT TYPE parameters are:
 
 - FILE (default value): Data is recorded
-    in the {{< TransferCFT/axwayvariablesComponentLongName >}} files defined in the fname
+    in the {{< TransferCFT/axwayvariablesComponentLongName  >}} files defined in the fname
     and afname fields.
 - SYST: Data is recorded in the files
     of the operating system accounting utility. Available
@@ -121,7 +121,7 @@ This defines the accounting type. CFTACCNT TYPE parameters are:
 
 #### CFTPROT
 
-\[TYPE = {PeSIT | ODETTE  }\]
+[TYPE = {PeSIT &#124; ODETTE  }]
 
 Type
 of transfer protocol.
@@ -134,7 +134,7 @@ of transfer protocol.
 
 #### LISTPART
 
-TYPE ={ALL | DEST | PART | TCP}
+TYPE ={ALL &#124; DEST &#124; PART &#124; TCP}
 
 <span id="Type_table1"></span>
 
@@ -153,8 +153,8 @@ TYPE ={ALL | DEST | PART | TCP}
 
 #### CONFIG
 
-TYPE = {CAT | COM | INPUT | OUTPUT
-| PARM | PART}
+TYPE = {CAT &#124; COM &#124; INPUT &#124; OUTPUT
+&#124; PARM &#124; PART}
 
 Defines the medium concerned.
 
@@ -173,7 +173,7 @@ Defines the medium concerned.
 
 #### SWITCH
 
-\[TYPE = {LOG | ACCNT}\]
+[TYPE = {LOG &#124; ACCNT}]
 
 Defines the switch action for CFTLOG or CFTACCNT. File types are:
 
@@ -193,8 +193,8 @@ Defines the switch action for CFTLOG or CFTACCNT. File types are:
 
 #### CFTEXT
 
-\[TYPE = {[see Type
-table below](#Type_table) }\]
+[TYPE = {[see Type
+table below](#Type_table) }]
 
 Defines the parameters to extract.
 
@@ -210,7 +210,7 @@ Defines the parameters to extract.
 | AUTH  | List of authorized files  | CFTAUTH  |
 | CAT  | Catalog definition  | CFTCAT  |
 | COM  | Description of {{< TransferCFT/axwayvariablesComponentShortName  >}} communication methods  | CFTCOM  |
-| IDF  | File "network" identifier  | CFTIDF  |
+| IDF  | File &quot;network&quot; identifier  | CFTIDF  |
 | LOG  | Log file description  | CFTLOG  |
 | NET  | Network description  | CFTNET  |
 | PARM  | General parameters  | CFTPARM  |
@@ -227,9 +227,9 @@ Defines the parameters to extract.
 
 #### LISTPARM
 
-TYPE = {ACCNT |
-ALL | AUTH | CAT | COM | ETB | IDF | LOG | NET |PARM | PROT | RECV | SEND
-| XLATE }
+TYPE = {ACCNT &#124;
+ALL &#124; AUTH &#124; CAT &#124; COM &#124; ETB &#124; IDF &#124; LOG &#124; NET &#124;PARM &#124; PROT &#124; RECV &#124; SEND
+&#124; XLATE }
 
 Defines the type of parameters to
 list from the {{< TransferCFT/axwayvariablesComponentShortName  >}} parameter file.
@@ -246,7 +246,7 @@ TYPE can take the predefined values indicated in the Type table below.
 | AUTH  | Used to query file authorization lists<br /> These lists are customized by the CFTAUTH commands  |
 | CAT  | Used to query catalog parameters<br /> These parameters are submitted when CFTCAT commands are entered  |
 | COM  | Used to query communication media parameters<br /> These parameters are submitted when CFTCOM commands are entered  |
-| IDF  | Used to query file "network" identifiers<br /> Identifiers are customized by the CFTIDF commands  |
+| IDF  | Used to query file &quot;network&quot; identifiers<br /> Identifiers are customized by the CFTIDF commands  |
 | LOG  | Used to query log file parameters<br /> These parameters are submitted when CFTLOG commands are entered  |
 | NET  | Used to query network characteristic parameters<br /> These parameters are submitted when CFTNET commands are entered and differ according to the type of network configured  |
 | PARM  | Used to query general parameters<br /> These parameters are submitted when CFTPARM commands are entered  |
@@ -262,7 +262,7 @@ TYPE can take the predefined values indicated in the Type table below.
 
 #### RECONFIG
 
-TYPE = { CRON | UCONF | CAT | FOLDER | PARMCACHE | AM}
+TYPE = { CRON &#124; UCONF &#124; CAT &#124; FOLDER &#124; PARMCACHE &#124; AM}
 
 - CAT: Resize the catalog while the Transfer CFT is running (hot catalog resizing)
 - CRON: Reload the CFTCRON objects

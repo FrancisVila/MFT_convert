@@ -8,26 +8,25 @@
 
 <span id="mindate_CFTRECV"></span><span id="mindate_CFTSEND"></span>
 
-#### CFTRECV, CFTSEND, SEND, RECV
+#### CFTRECV, CFTSEND
 
-****Only taken into account in requester
+****Only used in requester
 mode****
 
-**\[MINDATE = {current system date | date}\] **
+**[MINDATE = { <span class="underline">10000101</span> &#124; date }] **
 
-Minimum transfer validity date.
+Minimum, or initial, transfer validity date.
 
-The value ‘date’ may be expressed:
+Define the date as:
 
-- Explicitly
-    (absolute date)
-- Or,
-    in RECV or SEND commands, relative to the date the command is taken into
-    account. This value is then expressed as a number of days.
+- Explicit: Enter the absolute
+    date using the format YYYYMMDD (year, month, day).
+- Relative: Enter a value, preceded by the plus sign (`+`), that is  relative to the date the command is taken into account. The value is
+    expressed in days.
 
 ****Example****
 
-MINDATE = +2 means that the transfer initial validity date is 2 days
+`MINDATE = +2` means that the initial validity date for the transfer is 2 days
 after the date the command is taken into account.
 
 [Return to Command index](../../)

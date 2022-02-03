@@ -1,7 +1,7 @@
 {
     "title": "Transfer CFT messages: CFTT ",
     "linkTitle": "CFTT messages",
-    "weight": "380"
+    "weight": "370"
 }This topic lists the CFTTxx (CFT xnnx) messages and provides the type, a description, consequence, and corrective actions when applicable.
 
 **Message format**
@@ -12,18 +12,16 @@ Earlier versions of Transfer CFT used a different message format than version 3.
 
 **Example**
 
-CFTLOG FORMAT=\[V23,V24\]
+CFTLOG FORMAT=[V23,V24]
 
-For V23: <span class="code">`CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`</span>
+For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
-
-QQQ\_QQQ\_CHECK maybe convert tables to sections (see CFTTmessages\_test2.htm)
 
 
 | V23 format<br/> V24 format<br/> Error | CFTT00E CFT request warning _ &amp;str<br/> CFTT00E CFT request warning - &amp;str |
 | --- | --- |
-| Explanation | An error may have occurred during a request sent to the Transfer CFT. The &amp;str message label specifies the possible type of error:<br/> • Unknown protocol request: Internal error of the Transfer CFT, which receives an unexpected protocol event<br/> • Unknown oper request: The operator command received is unknown<br/> • Not computable state: The transfer is not possible (status other than "D" (Available)<br/> • Transfer for myself rejected: The target of the transfer is the local site (CFTPARM PART field) The Transfer CFT therefore refuses to activate a transfer to itself<br/> • Logger currently unreachable: A SWITCH command, switching log files, was attempted while the LOG task (CFT log) was not (or no longer) active<br/> • Ignored (Catalog Full): The catalog was 100% full and so the last SEND (or RECV) command could not be processed; if it was submitted via the Transfer CFT communication file, it is stored in the file and the associated communication process stops (for more information, refer to the CFTC01W message)<br/> • Request syntax error: There is a syntax error in the request; inform Product Support<br/> • Catalog request unknown :The request is invalid<br/> • Unknown process request: An internal Transfer CFT error was detected; inform Product Support<br/> • Unknown file request: An internal Transfer CFT error was detected; inform Product Support<br/> • Transfer already in progress: An attempt was made to restart a transfer in progress; the transfer was not restarted<br/> • File already transferred: An attempt was made to restart a terminated transfer; the transfer was not restarted<br/> • &amp;file: A read error was detected on the authorizations file (&amp;file); inform Product Support<br/> • Access Exit Task unreachable: &amp;diagp: The directory exit task cannot be accessed (DIAGP specifies the cause); inform Product Support<br/> • Request Ignored : time-out: The request was not processed by the Transfer CFT (end time limit exceeded)<br/> • Unable to attach Client mailbox: Attachment to the client application was rejected<br/> • Unable to send data to Client mailbox: Data cannot be sent to the client application |
+| Explanation | An error may have occurred during a request sent to the Transfer CFT. The &amp;str message label specifies the possible type of error:<br/> • Unknown protocol request: Internal error of the Transfer CFT, which receives an unexpected protocol event<br/> • Unknown oper request: The operator command received is unknown<br/> • Not computable state: The transfer is not possible (status other than &quot;D&quot; (Available)<br/> • Transfer for myself rejected: The target of the transfer is the local site (CFTPARM PART field) The Transfer CFT therefore refuses to activate a transfer to itself<br/> • Logger currently unreachable: A SWITCH command, switching log files, was attempted while the LOG task (CFT log) was not (or no longer) active<br/> • Ignored (Catalog Full): The catalog was 100% full and so the last SEND (or RECV) command could not be processed; if it was submitted via the Transfer CFT communication file, it is stored in the file and the associated communication process stops (for more information, refer to the CFTC01W message)<br/> • Request syntax error: There is a syntax error in the request; inform Product Support<br/> • Catalog request unknown :The request is invalid<br/> • Unknown process request: An internal Transfer CFT error was detected; inform Product Support<br/> • Unknown file request: An internal Transfer CFT error was detected; inform Product Support<br/> • Transfer already in progress: An attempt was made to restart a transfer in progress; the transfer was not restarted<br/> • File already transferred: An attempt was made to restart a terminated transfer; the transfer was not restarted<br/> • &amp;file: A read error was detected on the authorizations file (&amp;file); inform Product Support<br/> • Access Exit Task unreachable: &amp;diagp: The directory exit task cannot be accessed (DIAGP specifies the cause); inform Product Support<br/> • Request Ignored : time-out: The request was not processed by the Transfer CFT (end time limit exceeded)<br/> • Unable to attach Client mailbox: Attachment to the client application was rejected<br/> • Unable to send data to Client mailbox: Data cannot be sent to the client application |
 
 
  
@@ -154,9 +152,13 @@ QQQ\_QQQ\_CHECK maybe convert tables to sections (see CFTTmessages\_test2.htm)
  
 
 
-| V23 format<br/> V24 format<br/> Error | <span id="CFTT15E"></span>CFTT15E NPART=&amp;part _ Not found, possibly truncated to 24 characters<br/> CFTT15E NPART=&amp;part _ Not found, possibly truncated to 24 characters |
+| V23 format<br/> V24 format<br/> Error | <span id="CFTT15E"></span>CFTT15E NPART=&amp;part _ Not found<br/> CFTT15E NPART Not found &lt;NPART=%s&gt; |
 | --- | --- |
-| Explanation | The network identifier of the &amp;part partner was not found in the Transfer CFT partner file.<br/> A protocol limitation may have truncated the partner to 24 characters. |
+| Explanation  | The network identifier of the &amp;part partner was not found in the Transfer CFT partner file.  |
+| Consequence  | The transfer is not executed. The corresponding catalog entry is set to KEEP.  |
+| Action  | Check the Transfer CFT parameter settings.  |
+| V23 format<br/> V24 format<br/> Error | CFTT15E NPART=&amp;part _ Not found, possibly truncated to 24 characters<br/> CFTT15E NPART=&amp;part _ Not found, possibly truncated to 24 characters |
+| Explanation | The network identifier of the &amp;part partner was not found in the Transfer CFT partner file. A protocol limitation may have truncated the partner to 24 characters. |
 | Consequence | The transfer is not executed. The corresponding catalog entry is set to KEEP. |
 | Action | Check the Transfer CFT parameter settings and limit the partner ID to 24 characters.  |
 
@@ -224,7 +226,7 @@ QQQ\_QQQ\_CHECK maybe convert tables to sections (see CFTTmessages\_test2.htm)
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT22E"></span>CFTT22E &amp;str PART=&amp;part IDF=&amp;idf IDT=&amp;idt_ &amp;str<br/> CFTT22E _&amp;str &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; &amp;str |
 | --- | --- |
-| Explanation | Connection refused due to user authentication failure (rpasswd, spasswd error).<br/> The &amp;str provides additional information.<br/> For more information, see <a href="">Password management</a>. |
+| Explanation | Connection refused due to user authentication failure (rpasswd, spasswd error).<br/> The &amp;str provides additional information.<br/> For more information, see <a href="../../../transport_security_start_here/password_management">Password management</a>. |
 | Consequence | The transfer is not executed. |
 | Action | Check the &amp;str, correct, and retry. |
 
@@ -280,7 +282,7 @@ QQQ\_QQQ\_CHECK maybe convert tables to sections (see CFTTmessages\_test2.htm)
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT28E"></span>CFTT28E No outgoing CV configured on Network<br/> CFTT28E No outgoing CV configured on Network |
 | --- | --- |
 | Explanation | An outgoing call attempt was made on a network resource configured with the CALL = IN parameter (CFTNET command). |
-| Consequence | The requester transfer cannot be executed.<br/> The catalog entry is set to the K state with a protocol diagnostic code (DIAGP): "L 0B 22" - 0B meaning that network access is forbidden.<br/> If another protocol (CFTPROT) using another network resource (CFTNET) is declared for this partner (PROT parameter of the CFTPART command), Transfer CFT will make another attempt on this resource. |
+| Consequence | The requester transfer cannot be executed.<br/> The catalog entry is set to the K state with a protocol diagnostic code (DIAGP): &quot;L 0B 22&quot; - 0B meaning that network access is forbidden.<br/> If another protocol (CFTPROT) using another network resource (CFTNET) is declared for this partner (PROT parameter of the CFTPART command), Transfer CFT will make another attempt on this resource. |
 | Action | Change the parameter settings so that the protocol designated for the partner points to a network resource available for outgoing calls. |
 
 
@@ -346,7 +348,7 @@ QQQ\_QQQ\_CHECK maybe convert tables to sections (see CFTTmessages\_test2.htm)
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTT35W"></span>CFTT35W PART=&amp;part IDF=&amp;idf IDT=&amp;idt DELETE file &amp;fname Failed _&amp;str<br/> CFTT35W DELETE file &amp;fname Failed _&amp;str &lt;IDTU=&amp;idtu PART = &amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
 | --- | --- |
 | Explanation | A DELETE command is executed on a catalog request (in receive mode and in a non-terminated H or K state).<br/> The receive file corresponding to this request could not be deleted.<br/> “ ” (no label): The file cannot be deleted; inform Product Support<br/> • Allocate file error: File allocation error<br/> • Open file error File open error<br/> • Close file error: File closing error<br/> • Free file error: File release error<br/> • Allocate memory error: Memory allocation error |
-| Consequence | The request is deleted from the catalog but the user is notified that the &amp;wfname file has not been deleted. |
+| Consequence | The request is deleted from the catalog but the user is notified that the &amp;wfname file was not deleted. |
 
 
  
@@ -363,7 +365,7 @@ QQQ\_QQQ\_CHECK maybe convert tables to sections (see CFTTmessages\_test2.htm)
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT37I"></span>CFTT37I PART=&amp;part _ Not found and ignored for CFTDEST &amp;id<br/> CFTT37I _ Not found and ignored for CFTDEST &amp;id &lt;IDTU=&amp;idtu PART=&amp;part&gt; |
 | --- | --- |
-| Explanation | The new parameter NOPART for the CFTDEST command can have on of the following values: ABORT (default value), CONTINUE, or IGNORE.<br/> • ABORT: Transfer CFT continues functioning as it was before the request for change.<br/> No transfer is generated if a partner does not exist in the list of partners defined in the PART parameter. If the list of partners is defined in the PART parameter. If the list of partners is defined in a file (FNAME parameter) the transfers carried out for the only for existing partners and the treatment is identical to that for the NOPART=CONTINUE option.<br/> • CONTINUE: If the partner does not exist, Transfer CFT indicates this in a message in the LOG.<br/> CFTT32E PART=idpart Not found. Pass the transfer in SFK diagi 408 and continue the transfers for the other partners. The generic post remains in the K state and the end of transfer procedure is not executed.<br/> • IGNORE:<br/> • If a partner does not exist in the list, Transfer CFT ignores the partner (there is no transfer) and moves on to the next partner.<br/> • A message is displayed in the LOG CFTT37I PART=idpart _ Not found and ignored for CFTDEST iddest<br/> • The generic job passes to the T state and is under the end of transfer procedure. |
+| Explanation | The NOPART parameter for the CFTDEST command can have on of the following values: ABORT (default), CONTINUE, or IGNORE.<br/> • ABORT: Transfer CFT continues functioning as it was before the request for change. No transfer is generated if a partner does not exist in the list of partners defined in the PART parameter. If the list of partners is defined in the PART parameter. If the list of partners is defined in a file (FNAME parameter) the transfers carried out for the only for existing partners and the treatment is identical to that for the NOPART=CONTINUE option.<br/> • CONTINUE: If the partner does not exist, Transfer CFT indicates this in a message in the LOG. CFTT32E PART=idpart Not found. Pass the transfer in SFK diagi 408 and continue the transfers for the other partners. The generic post remains in the K state and the end of transfer procedure is not executed.<br/> • IGNORE: • If a partner does not exist in the list, Transfer CFT ignores the partner (there is no transfer) and moves on to the next partner.<br/> • A message is displayed in the LOG CFTT37I PART=idpart _ Not found and ignored for CFTDEST iddest<br/> • The generic job passes to the T state and is under the end of transfer procedure.<br/>  |
 
 
  
@@ -448,9 +450,8 @@ QQQ\_QQQ\_CHECK maybe convert tables to sections (see CFTTmessages\_test2.htm)
  
 
 
-| V23 formats<br /> Error  | <span id="CFTT47W"></span>CFTT47W PART=&amp;part IDF=&amp;idf IDT=&amp;idt PROTOCOL=&amp;prot SSLid=&amp;id DIRECT=CLIENT _ Cannot find SSL security profil<br/> CFTT47W PART=&amp;part SSLid=&amp;id DIRECT=SERVER _ No SSL security profile for additional checks |
+| V23 format<br /> V24 format<br /> Warning | <span id="CFTT47W"></span>CFTT47W PART=&amp;part IDF=&amp;idf IDT=&amp;idt PROTOCOL=&amp;prot SSLid=&amp;id DIRECT=CLIENT _ Cannot find SSL security profil<br/> CFTT47W _ Cannot find SSL security profil &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt PROTOCOL=&amp;prot SSLID=&amp;id DIRECT=CLIENT&gt;<br/> CFTT47W PART=&amp;part SSLid=&amp;id DIRECT=SERVER _ No SSL security profile for additional checks<br/> CFTT47W _ No SSL security profile for additional checks &lt;PART=&amp;part SSLID=&amp;id DIRECT=SERVER&gt; |
 | --- | --- |
-| V24 formats | CFTT47W _ Cannot find SSL security profil &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt PROTOCOL=&amp;prot SSLID=&amp;id<br/> CFTT47W _ No SSL security profile for additional checks &lt;PART=&amp;part SSLID=&amp;id DIRECT=SERVER&gt; |
 | Explanation | The transfer attempt for partner &amp;part uses a non-existent CFTSSL (&amp;sslid). |
 | Action | Check the configuration and add the missing profile. |
 
@@ -534,7 +535,7 @@ QQQ\_QQQ\_CHECK maybe convert tables to sections (see CFTTmessages\_test2.htm)
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT57I"></span>CFTT57I PART=&amp;part IDF=&amp;idf IDT=&amp;idt IDS=&amp;ids,&amp;str transfer started<br/> CFTT57I &amp;str transfer started &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt IDS=&amp;ids&gt; |
 | --- | --- |
-| Explanation | The transfer has been started either by the requester (&amp;str = requester) or by the server (&amp;str = server).<br/> <blockquote> **Note**<br/> IDS refers to the session identifier.<br/> </blockquote>  |
+| Explanation | The transfer has been started either by the requester (&amp;str = requester) or by the server (&amp;str = server).<br/> <blockquote> **Note**<br/> Note: IDS refers to the session identifier.<br/> </blockquote>  |
 
 
  
@@ -542,14 +543,14 @@ QQQ\_QQQ\_CHECK maybe convert tables to sections (see CFTTmessages\_test2.htm)
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT58I"></span>CFTT58I PART=&amp;part IDF=&amp;idf IDT=&amp;idt IDS=&amp;ids,&amp;str transfer ended<br/> CFTT58I &amp;str transfer ended &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt IDS=&amp;ids&gt; |
 | --- | --- |
-| Explanation | The transfer has been completed either by the requester (&amp;str = requester) or by the server (&amp;str = server).<br/> <blockquote> **Note**<br/> IDS refers to the session identifier.<br/> </blockquote>  |
+| Explanation | The transfer has been completed either by the requester (&amp;str = requester) or by the server (&amp;str = server).<br/> <blockquote> **Note**<br/> Note: IDS refers to the session identifier.<br/> </blockquote>  |
 
 
  
 
 
-| V23 format<br/> V24 format<br/> Information | <span id="CFTT59I"></span>CFTT59I PART=&amp;part IDM=&amp;idf IDT=&amp;idt ,&amp;str &lt;message|reply&gt; transferred<br/> CFTT59I &amp;str &lt;message|reply&gt; transferred &lt;IDTU=&amp;idtu PART=&amp;part IDM=&amp;idm IDT=&amp;idt&gt; |
-| --- | --- | --- | --- |
+| V23 format<br/> V24 format<br/> Information | <span id="CFTT59I"></span>CFTT59I PART=&amp;part IDM=&amp;idf IDT=&amp;idt ,&amp;str &lt;message&#124;reply&gt; transferred<br/> CFTT59I &amp;str &lt;message&#124;reply&gt; transferred &lt;IDTU=&amp;idtu PART=&amp;part IDM=&amp;idm IDT=&amp;idt&gt; |
+| --- | --- |
 | Explanation | The message or the reply has been sent either by the requester (&amp;str = requester) or by the server (&amp;str = server). |
 
 
@@ -576,7 +577,7 @@ QQQ\_QQQ\_CHECK maybe convert tables to sections (see CFTTmessages\_test2.htm)
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT62E"></span>CFTT62E PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp<br/> CFTT62E &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
 | --- | --- |
-| Explanation | The transfer was interrupted by the operator (&amp;diagp = "OPER") or by the file EXIT (&amp;diagp represents the phase of the EXIT which prompted the interruption = "ALLOC", "OPEN", TRANS or CLOSE). |
+| Explanation | The transfer was interrupted by the operator (&amp;diagp = &quot;OPER&quot;) or by the file EXIT (&amp;diagp represents the phase of the EXIT which prompted the interruption = &quot;ALLOC&quot;, &quot;OPEN&quot;, TRANS or CLOSE). |
 | Consequence | The transfer is aborted. The corresponding catalog entry is set to HOLD (after a HALT command from the operator or an interrupt by the EXIT), KEEP (after a KEEP command from the operator). |
 | Action | After an interruption by the operator, the transfer can be restarted manually (START command).<br/> After interruption by a file EXIT, the action is to be defined by the engineers responsible for this file EXIT. |
 
@@ -711,8 +712,8 @@ QQQ\_QQQ\_CHECK maybe convert tables to sections (see CFTTmessages\_test2.htm)
  
 
 
-| V23 format<br/> V24 format<br/> Error | <span id="CFTT75E"></span>CFTT75E PART=&amp;part IDF=&amp;idf IDT=&amp;idt connect reject &amp;diagi ,&amp;diagp<br/> CFTT75E connect reject &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
-| --- | --- | --- |
+| V23 format<br/> V24 format<br/> Error | <span id="CFTT75E"></span>CFTT75E PART=&amp;part IDF=&amp;idf IDT=&amp;idt connect reject &amp;diagi ,&amp;diagp<br/> CFTT75E connect reject &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf &#124; IDM=&amp;idm] IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
+| --- | --- |
 | Explanation | The connection request was rejected by the partner. |
 | Consequence | The transfer failed. If the called number was engaged or a network incident occurred (for example), the transfer will be retried several times (see the RETRYM, RETRYN and RETRYW parameters).<br/> If all retries fail, the transfer is not executed and the corresponding catalog entry is set to KEEP. |
 | Action | Analyze the internal &amp;diagi error code for the transfer and try to correct it. |
@@ -788,8 +789,8 @@ QQQ\_QQQ\_CHECK maybe convert tables to sections (see CFTTmessages\_test2.htm)
  
 
 
-| V23 format<br/> V24 format<br/> Error | <span id="CFTT82E"></span>CFTT82E PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt transfer aborted &amp;diagi ,&amp;diagp<br/> CFTT82E transfer aborted &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
-| --- | --- | --- | --- |
+| V23 format<br/> V24 format<br/> Error | <span id="CFTT82E"></span>CFTT82E PART=&amp;part [IDF=&amp;idf &#124; IDM=&amp;idm] IDT=&amp;idt transfer aborted &amp;diagi ,&amp;diagp<br/> CFTT82E transfer aborted &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf &#124; IDM=&amp;idm] IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
+| --- | --- |
 | Explanation | A serious error was detected.<br/> ****Example****<br/> 19/02/19 16:01:37 CFTT82E Transfer aborted &lt;IDTU=A0000008 PART=PARIS_KEY IDF=AS3SR IDT=B1916013 DIAGI=110<br/> 19/02/19 16:01:37 CFTT82E+ DIAGP=00000002 DIAGC=File not found: zohs.bat&gt; |
 | Consequence | The transfer is interrupted and the corresponding catalog entry is set to KEEP. |
 | Action | Correct the error and try again. |
@@ -798,8 +799,8 @@ QQQ\_QQQ\_CHECK maybe convert tables to sections (see CFTTmessages\_test2.htm)
  
 
 
-| V23 format<br/> V24 format<br/> Error | <span id="CFTT82W"></span>CFTT82W PART=&amp;part IDF=&amp;idf IDT=&amp;idt transfer aborted (file not found ignored) &amp;diagi ,&amp;diagp<br/> CFTT82W transfer aborted (file not found ignored) &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
-| --- | --- | --- |
+| V23 format<br/> V24 format<br/> Error | <span id="CFTT82W"></span>CFTT82W PART=&amp;part IDF=&amp;idf IDT=&amp;idt transfer aborted (file not found ignored) &amp;diagi ,&amp;diagp<br/> CFTT82W transfer aborted (file not found ignored) &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf &#124; IDM=&amp;idm] IDT=&amp;idt &amp;diagi ,&amp;diagp&gt; |
+| --- | --- |
 | Explanation | File not found error was detected. |
 | Consequence | The transfer ignore the file not found problem and pass to X phase. |
 | Action | Ignore the error. |
@@ -808,8 +809,8 @@ QQQ\_QQQ\_CHECK maybe convert tables to sections (see CFTTmessages\_test2.htm)
  
 
 
-| V23 format<br/> V24 format<br/> Information | <span id="CFTT83I"></span>CFTT83I PART=&amp;part IDF=&amp;idf IDT=&amp;idt change direction(CD) for request<br/> CFTT83I change direction(CD) for request &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt&gt; |
-| --- | --- | --- |
+| V23 format<br/> V24 format<br/> Information | <span id="CFTT83I"></span>CFTT83I PART=&amp;part IDF=&amp;idf IDT=&amp;idt change direction(CD) for request<br/> CFTT83I change direction(CD) for request &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf &#124; IDM=&amp;idm] IDT=&amp;idt&gt; |
+| --- | --- |
 | Explanation | This message is only displayed for the ODETTE protocol and a RECV command. It indicates that the remote partner has accepted its turn to transmit. |
 
 
@@ -826,7 +827,7 @@ QQQ\_QQQ\_CHECK maybe convert tables to sections (see CFTTmessages\_test2.htm)
 
 | V23 format<br/> V24 format<br/> Information | CFTT86I FNAME=&amp;fname S=ByteCount<br/> CFTT86I FNAME=&amp;fname S=ByteCount |
 | --- | --- |
-| Explanation | Name of the file sent or received and the number of bytes in the file. This new message completes the CFTT54I message. Name of the file sent or received and the number of bytes in the file. This message completes the CFTT54I message. |
+| Explanation | Name of the file sent or received and the number of bytes in the file. This message completes the CFTT54I message. Name of the file sent or received and the number of bytes in the file. This message completes the CFTT54I message. |
 
 
  
@@ -834,7 +835,7 @@ QQQ\_QQQ\_CHECK maybe convert tables to sections (see CFTTmessages\_test2.htm)
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT87I"></span>CFTT87I PART=&amp;part IDS=&amp;ids Change direction(TURN) received<br/> CFTT87I Change direction(TURN) received&lt;PART=&amp;part IDS=&amp;ids&gt; |
 | --- | --- |
-| Explanation | In the case of PeSIT protocol in a DMZ profile, the token (TURN) has been received by the partner &amp;part, where IDS is the reference for the session context. |
+| Explanation | For the PeSIT protocol in a DMZ profile, the token (TURN) has been received by the partner &amp;part, where IDS is the reference for the session context. |
 
 
  
@@ -848,22 +849,23 @@ QQQ\_QQQ\_CHECK maybe convert tables to sections (see CFTTmessages\_test2.htm)
  
 
 
-| V23 format<br/> V24 format<br/> Information | <span id="CFTT89I"></span>CFTT89I PART=&amp;part IDF=&amp;idf IDT=&amp;idt Faction on FNAME=&amp;fname : &amp;str+"deleted" or "erased"<br/> CFTT89I Faction on FNAME=&amp;fname : &amp;str+"deleted" or "erased" &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
+| V23 format<br/> V24 format<br/> Information | <span id="CFTT89I"></span>CCFTT89I PART=&amp;part IDF=&amp;idf IDT=&amp;idt [FACTION on FNAME ] or [NACTION on NFNAME]=&amp;fname : &amp;str+&quot;deleted&quot; or &quot;erased&quot;<br/> CFTT89I [FACTION on FNAME ] or [NACTION on NFNAME] =&amp;fname : &amp;str+&quot;deleted&quot; or &quot;erased&quot; &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
 | --- | --- |
-| Explanation | Delete or erase message for a file after using the FACTION parameter in a transfer command (either SEND or RECV).<br/> The file is either erased or deleted (FACTION=ERASE or FACTION=DELETE) at the end of the transfer. |
-| Information  | CFTT89I Faction on FNAME=&amp;srcfile as &amp;archivefile &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt;  |
-| Explanation  | Archive message for a file after using the FACTION parameter in a transfer command (either SEND or RECV).<br/> The file is archived (FACTION=ARCHIVE) at the end of the transfer. |
+| Explanation |  • <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/faction">FACTION</a>=ERASE or DELETE erased or deleted the file (FNAME) as follows: • When using the SEND command, the action occurred after the transfer completed.<br/> • When using the RECV command, the action occurred before the transfer.<br/> <br/> • <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/naction">NACTION</a>=DELETE was used in a RECV command, which deleted the file (NFNAME) at the end of the transfer. This option is only available when using SFTP. |
+| Information  | CFTT89I [FACTION on FNAME ] or [NACTION on NFNAME]=&amp;srcfile archived as &amp;archivefile &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt;  |
+| Explanation  |  • <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/faction"></a><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/faction">FACTION</a>=ARCHIVE was used in a SEND command, which archived the file (FNAME) at end of the SEND transfer.<br/> • <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/naction"></a><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/naction">NACTION</a>=ARCHIVE was used in a RECV command, which archived the file (NFNAME) at the end of the RECV transfer. This option is only available when using SFTP. |
 
 
  
 
 
-| V23 format<br/> V24 format<br/> Warning | <span id="CFTT90W"></span>CFTT90W IDF=&amp;idf IDT=&amp;idt Faction on FNAME=&amp;fname : erase failed cs<br/> CFTT90W IDF=&amp;idf IDT=&amp;idt Faction on FNAME=&amp;fname : erase failed &amp;scs |
+| V23 format<br/> V24 format<br/> Warning | <span id="CFTT90W"></span>CFTT90W IDF=&amp;idf IDT=&amp;idt [FACTION on FNAME ] or [NACTION on NFNAME]=&amp;fname : [erase or delete] failed cs<br/> CFTT90W IDF=&amp;idf IDT=&amp;idt [FACTION on FNAME ] or [NACTION on NFNAME]=&amp;fname : [erase or delete] failed cs |
 | --- | --- |
-| Explanation | At the end of a transfer, if the parameter FACTION=ERASE cannot be carried out (for example, if the file is already used by another user) the transfer moves to the T state.  |
-| Warning | CFTT90W IDF=&amp;idf IDT=&amp;idt Faction on FNAME=&amp;fname : delete failed cs |
-| Explanation | At the end of a transfer, if the parameter FACTION=DELETE cannot be carried out (for example, if the file is already used by another user) the transfer moves to the T state.  |
-| Action | Delete or erase the file manually. |
+| Explanation  | Failed to delete or erase the file (FNAME/NFNAME) and the transfer has completed (T state). This failure might occur if the file to be deleted or erased was being used, for example.<br/> When using the following commands:<br/> • SEND <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/faction">FACTION</a>=ERASE or DELETE, the action occurs after the transfer completed.<br/> • RECV <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/faction">FACTION</a>=ERASE or DELETE, the action occurs before the transfer.<br/> • RECV <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/naction">NACTION</a>=DELETE, the action occurs after the transfer completed. Only available when using SFTP. |
+| Action | Check the following:<br/> • <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/faction">FACTION</a>: Manually delete or erase the remote file (FNAME).<br/> • <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/naction">NACTION</a>: Manually delete the remote file (NFNAME). This option is only available when using SFTP. |
+| Warning  | CFTT90W IDF=&amp;idf IDT=&amp;idt NARCHIVEFNAME undefined and NACTION=ARCHIVE  |
+| Explanation  | If you have set <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/naction">NACTION</a>=ARCHIVE, you must define the NARCHIVEFNAME.  |
+| Action  | Define the <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/narchivename">NARCHIVEFNAME</a> parameter. This parameter is only available when using SFTP.  |
 
 
  
@@ -915,7 +917,7 @@ QQQ\_QQQ\_CHECK maybe convert tables to sections (see CFTTmessages\_test2.htm)
 
 
 
-| V23 format<br/> V24 format<br/> Error | <span id="CFTT97E"></span>CFTT97E cmd prefix not allowed in procedure execution for SEND and RECV commands",<br/> CFTT97E cmd prefix not allowed in procedure execution for SEND and RECV commands |
+| V23 format<br/> V24 format<br/> Error | <span id="CFTT97E"></span>CFTT97E cmd prefix not allowed in procedure execution for SEND and RECV commands&quot;,<br/> CFTT97E cmd prefix not allowed in procedure execution for SEND and RECV commands<br/>  |
 | --- | --- |
 | Explanation  |   |
 
@@ -927,5 +929,3 @@ QQQ\_QQQ\_CHECK maybe convert tables to sections (see CFTTmessages\_test2.htm)
 | --- | --- |
 | Explanation  | The configuration has the same <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/wfname">WFNAME</a> as the RECV FNAME and so the renaming is ignored.  |
 
-
- 

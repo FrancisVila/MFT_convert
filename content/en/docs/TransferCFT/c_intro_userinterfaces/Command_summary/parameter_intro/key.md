@@ -1,14 +1,14 @@
 {
     "title": "key",
     "linkTitle": "key",
-    "weight": "1750"
+    "weight": "1740"
 }<span id="key"></span>
 
 ### key
 
 #### ABOUT
 
-****\[ KEY = { <u>FIRST</u> | ALL } \]****
+****[ KEY = { <span class="underline">FIRST</span> &#124; ALL } ]****
 
 Defines the number of keys that display.
 
@@ -17,18 +17,18 @@ Defines the number of keys that display.
 
 #### CFTPARM
 
-****\[ KEY = { string 80 } \]****
+****[ KEY = { string 80 } ]****
 
 The {{< TransferCFT/axwayvariablesComponentShortName  >}} user key. You can enter a string of up to 80 characters, which is comprised of the indirection character and file name (file containing the key).
 
 > **Note**
 >
-> You do not directly set the key with this parameter.
+> Note: You do not directly set the key with this parameter.
 
-Enter the name of the indirection file (preceded by the &lt;file-symb> character specific to each system) that contains the set of keys associated with the {{< TransferCFT/axwayvariablesComponentShortName  >}}. The post-installation default values are:
+Enter the name of the indirection file (preceded by the &lt;file-symb&gt; character specific to each system) that contains the set of keys associated with the {{< TransferCFT/axwayvariablesComponentShortName  >}}. The post-installation default values are:
 
 - Unix and HP NonStop: @conf/cft.key
-- Windows: #conf/cft.key
+- Windows: \#conf/cft.key
 
 The key is associated with the contractual conditions for using the software. It is specific to the product host operating system, and the hostname or the CPU ID of the machine (depending on the OS).
 

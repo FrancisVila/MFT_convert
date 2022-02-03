@@ -1,12 +1,12 @@
 {
     "title": "pretimeout",
     "linkTitle": "pretimeout",
-    "weight": "2690"
+    "weight": "2710"
 }### pretimeout
 
 #### SEND
 
-****\[ PRETIMEOUT = { <u>0</u>..3600 } \]****
+****[ PRETIMEOUT = { <span class="underline">0</span>..3600 } ]****
 
 Timeout for switching the phase step to K if no END is received during preprocessing.
 

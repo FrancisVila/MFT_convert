@@ -6,7 +6,8 @@
 
 <span id="Format"></span>
 
-## Format options
+Format options
+--------------
 
 Use the [FRECFM](../../../c_intro_userinterfaces/command_summary/parameter_intro/frecfm) and [NRECFM](../../../c_intro_userinterfaces/command_summary/parameter_intro/nrecfm) parameters to set the record format.
 
@@ -24,7 +25,8 @@ When using a variable format, FPAD and NPAD define the character to use to unpad
 
 <span id="Paramete"></span>
 
-## Parameters
+Parameters
+----------
 
 `FPAD = character`
 
@@ -42,9 +44,10 @@ This parameter defines the padding character at the network level.
 
 > **Note**
 >
-> In addition to printable characters, you can also enter a non-printable character for NPAD or FPAD using the hexadecimal syntax: 0xHH. For example: 0xFC, 0xab, 0x00
+> Note: In addition to printable characters, you can also enter a non-printable character for NPAD or FPAD using the hexadecimal syntax: 0xHH. For example: 0xFC, 0xab, 0x00
 
-## Usage
+Usage
+-----
 
 After the input or output file in each example a representation depicts the file sent or received over the network.
 
@@ -65,7 +68,7 @@ npad=@
 ```
 Axway
 Transfer CFT
-v{{< TransferCFT/PrimaryTransferCFTversionlong >}}
+v 3.10
 ```
 
 File sent over the network, when nlrecl=20:
@@ -85,7 +88,8 @@ Input file when flrecl=20:
 ```
 Axway@@@@@@@@@@@@@@@
 Transfer CFT@@@@@@@@
-v{{< TransferCFT/PrimaryTransferCFTversionlong >}}@@@@@@@@@@@@@@
+v 3.10
+@@@@@@@@@@@@@@
 ```
 
 File sent over the network:
@@ -93,7 +97,7 @@ File sent over the network:
 ```
 Axway
 Transfer CFT
-v{{< TransferCFT/PrimaryTransferCFTversionlong >}}
+v 3.10
 ```
 
 #### Example of padding a variable format file on the receiver side
@@ -112,7 +116,7 @@ File received from the network:
 ```
 Axway
 Transfer CFT
-v{{< TransferCFT/PrimaryTransferCFTversionlong >}}
+v 3.10
 ```
 
 **Output file**
@@ -120,7 +124,8 @@ v{{< TransferCFT/PrimaryTransferCFTversionlong >}}
 ```
 Axway@@@@@@@@@@@@@@@
 Transfer CFT@@@@@@@@
-v{{< TransferCFT/PrimaryTransferCFTversionlong >}}@@@@@@@@@@@@@@
+v 3.10
+@@@@@@@@@@@@@@
 ```
 
 #### Example of unpadding a fixed format file on the receiver side
@@ -140,7 +145,8 @@ File received from the network
 ```
 Axway@@@@@@@@@@@@@@@
 Transfer CFT@@@@@@@@
-v{{< TransferCFT/PrimaryTransferCFTversionlong >}}@@@@@@@@@@@@@@
+v 3.10
+@@@@@@@@@@@@@@
 ```
 
 Output file
@@ -148,5 +154,5 @@ Output file
 ```
 Axway
 Transfer CFT
-v{{< TransferCFT/PrimaryTransferCFTversionlong >}}
+v 3.10
 ```

@@ -1,14 +1,15 @@
 {
-    "title": "Configure send mode on IFS",
+    "title": "Configure send mode for files (IFS)",
     "linkTitle": "Configure send mode (IFS)",
     "weight": "220"
-}## File types
+}File types
+----------
 
 The following table lists the different types of files that can be used according to the type of data to be sent when using IFS.
 
 > **Note**
 >
-> The FRECFM possibilities for all FTYPE are: ‘V’, ‘F’, and ‘ ’ .
+> Note: The FRECFM possibilities for all FTYPE are: ‘V’, ‘F’, and ‘ ’ .
 
 
 | FTYPE  | Type of sent file  |
@@ -17,20 +18,21 @@ The following table lists the different types of files that can be used accordin
 | ‘D’ , ‘ ’  | Text  |
 | ‘E’  | Text  |
 | ‘Z’  | Binary  |
-| ‘J’  | Stream text is an alternative way to transfer a text file. Every line of a file must end with an LF or CR/LF. However, during a transfer the CR/LF are changed to LFs. This enables a quicker reading, and a faster transfer.<br/> When using stream text (FTYPE=J), the sender and the receiver must both have the FTYPE set to J. Setting only the sender or receiver to FTYPE=J results in unexpected content for the transferred file.<br/> <blockquote> **Note**<br/> This transfer mode is not available for native side transfers.<br/> </blockquote>  |
+| ‘J’  | Stream text is an alternative way to transfer a text file. Every line of a file must end with an LF or CR/LF. However, during a transfer the CR/LF are changed to LFs. This enables a quicker reading, and a faster transfer.<br/> When using stream text (FTYPE=J), the sender and the receiver must both have the FTYPE set to J. Setting only the sender or receiver to FTYPE=J results in unexpected content for the transferred file.<br/> <blockquote> **Note**<br/> Note: This transfer mode is not available for native side transfers.<br/> </blockquote>  |
 
 
 ****Key****
 
 When sending a file from the part of an IBM i machine in text mode, the file is expected to be a standard text file. This means that every line of the file to transfer is finished either by a LF, either by a CR/LF. If not, the file is considered to be binary and Transfer CFT cannot read it. Use the binary mode to allow it to be transferred.
 
-## Sending a group of IFS files
+Sending a group of IFS files
+----------------------------
 
 ### Send using a generic name
 
 This section describes how to send a group of files using a send command where there is one transfer per file.
 
-When defining the filename, you must put a &lt;file-symb> character (system-specific) before the FNAME parameter value. {{< TransferCFT/PrimaryForOS400  >}} environments use the ‘#’ and ‘£’ symbols.
+When defining the filename, you must put a &lt;file-symb&gt; character (system-specific) before the FNAME parameter value. {{< TransferCFT/PrimaryForOS400  >}} environments use the ‘\#’ and ‘£’ symbols.
 
 Use one of the following commands to send a group of files using a generic name:
 

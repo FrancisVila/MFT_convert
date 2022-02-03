@@ -8,11 +8,13 @@ The templates titles are listed in the following tables according to OS and lang
 
 - All platform C language templates
 - Specific z/OS templates
+- OpenVMS templates
 - IBM i templates
 
-## All platform C language templates
+All platform C language templates
+---------------------------------
 
-The following C language templates are delivered on UNIX, Windows, IBM i (OS/400), with the exceptions as noted in the table below.
+The following C language templates are delivered on UNIX, Windows, OpenVMS, IBM i (OS/400), with the exceptions as noted in the table below.
 
 
 | Template  | Function  | Services | Description  |

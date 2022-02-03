@@ -1,7 +1,7 @@
 {
     "title": "Transfer concatenation ",
     "linkTitle": "Establishing a connection",
-    "weight": "230"
+    "weight": "220"
 }The figure below shows a concatenation of one-way send transfers. If
 the time interval between two requests remains below the values of the
 time-out parameters DISCTD (at the requester end) and DISCTS
@@ -15,7 +15,7 @@ It is consequently best to correctly set up the wait time-outs between
 transfers to optimize the use of network resources and avoid performance
 being degraded by the systematic establishing of a protocol connection.
 
-<span class="autonumber"></span>Time-out role
+Time-out role
 
 ![Protocol session time out role betweeen a requester and server ](/Images/TransferCFT/Timeout_role3.gif)
 
@@ -34,10 +34,10 @@ for the same pair of requester and server identifiers. In particular,
 a requester cannot request a transfer with its partner over a connection
 for which it was initially server.
 
-<span class="autonumber"></span>One-way protocol connection
+One-way protocol connection
 
 ![One way protocol session connection between requester and server](/Images/TransferCFT/One_way_protocol_connection.gif)
 
-<span class="autonumber"></span>Two-way protocol connection
+Two-way protocol connection
 
 ![Two way protocol session connection between requester and server](/Images/TransferCFT/Two_way_protocol_connection.gif)

@@ -1,7 +1,7 @@
 {
     "title": "EERP",
     "linkTitle": "eerp",
-    "weight": "810"
+    "weight": "800"
 }<span id="EERP"></span>
 
 ### EERP
@@ -28,7 +28,7 @@ The second version (1991) specifies that:
 
 > **Note**
 >
-> You must check the consistency of the customized values from one
+> Note: You must check the consistency of the customized values from one
 > end to another. Indeed, if the sender and receiver have different versions,
 > it is not possible to acknowledge the transfer.
 

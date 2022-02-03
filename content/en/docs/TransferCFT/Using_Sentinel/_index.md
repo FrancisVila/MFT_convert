@@ -1,8 +1,9 @@
 {
     "title": "Monitoring",
     "linkTitle": "Monitoring",
-    "weight": "180"
-}## Monitoring Transfer CFT with Sentinel
+    "weight": "170"
+}Monitoring Transfer CFT with Sentinel
+-------------------------------------
 
 You can use Sentinel to collect information about targeted Transfer CFT processing events. Sentinel enables you to generate graphic representations of these events (Dashboards) that you can then statistically and visually analyze, and respond to.
 
@@ -12,7 +13,8 @@ Before you use the Sentinel tracking tools with Transfer CFT, you should become 
 user interface.
 For Sentinel documentation, go to{{< TransferCFT/axwayvariablesCompanyName  >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a>.
 
-## Required components
+Required components
+-------------------
 
 To use Sentinel to monitor Transfer CFT you require the following components:
 
@@ -24,11 +26,13 @@ To use Sentinel to monitor Transfer CFT you require the following components:
 
 You can install all components on the same machine or on different machines, and use the same or different platforms. When installed on the same machine, you can configure either a single or multiple users to access the components. Additionally when installed on the same machine, you can use the same database for the Composer and Sentinel server.
 
-## Transfer CFT processing
+Transfer CFT processing
+-----------------------
 
 A Sentinel monitoring agent resides natively on Transfer CFT. This agent generates Tracked Event Messages that contain data about Transfer CFT processing events. The agent then sends the Tracked-Event messages to the Sentinel server environment.
 
-## Sentinel processing
+Sentinel processing
+-------------------
 
 In the Server environment, the Acquisition Server contains Tracked Objects. A Tracked Object is a model containing a set of attributes that describe an application event. Each incoming Tracked-Event Message contains a name field that indicates the name of the Tracked Object that is to be used with that message. Using the specified Tracked Object, the Acquisition Server extracts the data from the fields of the Tracked-Event Message, and writes the data to a specific table in the Tracking Database.
 
@@ -37,11 +41,12 @@ For Transfer CFT monitoring, Sentinel uses the following Tracked Objects (TO):
 - [XFBTransfer](intro_sentinel)
 - [XFBLog](xfblog)
 
-## Requests
+Requests
+--------
 
 Once data is recorded in the Tracking database, you can then use the full array of Sentinel functionalities to track the flow of messages in Transfer CFT as well as in other applications across your network.
 
-Sentinel uses sets of executable SQL instructions known as <span class="bold_in_para">****Requests****</span> to retrieve data from tables in the Tracking Database. Transfer CFT provides a set of predefined Requests that you can use in Sentinel to facilitate retrieval of data specific to Transfer CFT events.
+Sentinel uses sets of executable SQL instructions known as ****Requests**** to retrieve data from tables in the Tracking Database. Transfer CFT provides a set of predefined Requests that you can use in Sentinel to facilitate retrieval of data specific to Transfer CFT events.
 
 You can use a set of predefined [Requests](xfbtransfer_request)
 to:

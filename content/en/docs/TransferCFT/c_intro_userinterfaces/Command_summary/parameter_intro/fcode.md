@@ -1,7 +1,7 @@
 {
     "title": "fcode",
     "linkTitle": "fcode",
-    "weight": "1100"
+    "weight": "1090"
 }<span id="fcode"></span>
 
 ### **<span id="fcode_CFTAUTH"></span>**fcode
@@ -25,8 +25,8 @@ default value supported.
 
 #### CFTRECV, RECV
 
-**\[FCODE = {<span style="text-decoration: underline;">depending
-on FTYPE</span> | ASCII | BINARY | EBCDIC}\]   **
+**[FCODE = {depending
+on FTYPE &#124; ASCII &#124; BINARY &#124; EBCDIC}]   **
 
 **C**ode of the receiver file data (local file encoding).
 
@@ -62,7 +62,7 @@ At each receive transfer:
 - if
     the data received is in ASCII and the local data is in EBCDIC, or vice-versa,
     translation is always performed: translation according to an external
-    table, or, by default, translation according to the {{< TransferCFT/axwayvariablesComponentShortName >}} internal
+    table, or, by default, translation according to the {{< TransferCFT/axwayvariablesComponentShortName  >}} internal
     table
 - if
     the data received and the local data have the same code, ASCII or EBCDIC,
@@ -85,7 +85,7 @@ This code is:
 
 #### CFTSEND, SEND
 
-****\[FCODE = {ASCII | BINARY | EBCDIC}\]****
+****[FCODE = {ASCII &#124; BINARY &#124; EBCDIC}]****
 
 Code of the data to be sent.
 

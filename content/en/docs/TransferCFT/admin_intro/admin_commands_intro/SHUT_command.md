@@ -7,22 +7,14 @@ Transfer CFT, using either an immediate or delayed shutdown.
 
 Syntax
 
-`[ FAST   = { NO   | YES | KILL } ]`
+`[ FAST   = { NO   &#124; YES &#124; KILL } ]`
 
-`[ RESTART = { YES | NO } ]`
-
-QQQ\_QQQ\_QQQ split table
-
-**Description**
-
-Use this command to request the Transfer CFT immediate
-or delayed shutdown.
-
-**Parameters**
+`[ RESTART = { YES &#124; NO } ]`
 
 
-| Parameter  | Description  |
+| Command or Parameter  | Description  |
 | --- | --- |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/fast">FAST</a>  | Type of shutdown. |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/restart">RESTART</a>  | Manages restart.  |
+| **SHUT** command | Use this command to request the Transfer CFT immediate or delayed shutdown. |
+|  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/fast">FAST</a>  | Type of shutdown. |
+|  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/restart">RESTART</a>  | Manages restart.  |
 

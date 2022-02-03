@@ -1,31 +1,32 @@
 {
     "title": "Troubleshooting installations and upgrades",
     "linkTitle": "Troubleshoot installation and upgrades",
-    "weight": "190"
+    "weight": "180"
 }This page describes how to locate the various {{< TransferCFT/suitevariablesTransferCFTName  >}} installation logs when troubleshooting, and the files you made want to have ready if you need to contact Axway Support.
 
 If an issue occurs while performing an installation or an upgrade, check for errors in the following places. Perform these steps before attempting to roll back in the case of an upgrade.
 
-1. If you performed an upgrade from a version prior to v3.6, look for errors in the <span class="code">`install.log`</span> located in the <span class="code">`axway.installer`</span> directory.
-1. Check for errors in the <span class="code">`install.log`</span> in the <span class="code">`CFT`</span> directory (if this is a new installation or you upgraded from a version that did not use the Axway installer).
-1. Navigate to the runtime directory and check the <span class="code">`.up `</span>folder contents.
-1. Again from the runtime directory, check the <span class="code">`copupd `</span>folder contents. This folder is only available after performing a {{< TransferCFT/suitevariablesTransferCFTName >}} update or upgrade when using {{< TransferCFT/suitevariablesCentralGovernanceName >}} or {{< TransferCFT/suitevariablesFlowManager >}}. In the <span class="code">`copupd `</span>folder, navigate to the<span class="code">` log > install`</span> file.
+1. If you performed an upgrade from a version prior to v3.6, look for errors in the `install.log` located in the `axway.installer` directory.
+1. Check for errors in the `install.log` in the `CFT` directory (if this is a new installation or you upgraded from a version that did not use the Axway installer).
+1. Navigate to the runtime directory and check the `.up `folder contents.
+1. Again from the runtime directory, check the `copupd `folder contents. This folder is only available after performing a {{< TransferCFT/suitevariablesTransferCFTName  >}} update or upgrade when using {{< TransferCFT/suitevariablesCentralGovernanceName  >}} or {{< TransferCFT/suitevariablesFlowManager  >}}. In the `copupd `folder, navigate to the` log > install` file.
 1. Be ready to supply all of these files to Axway support if you cannot troubleshoot the issue with any errors found in the logs.
 
-## Transfer CFT Copilot server issues
+Transfer CFT Copilot server issues
+----------------------------------
 
 ### Copilot doesn't start
 
 - Check that the port is not already used by another application.
-- Close all active sessions, use the syntax: <span class="code">`copstop -f`</span>
-- Check that there are no orphan "<span class="code">`cop*`</span>" processes. If there are, manually kill these processes.
+- Close all active sessions, use the syntax: `copstop -f`
+- Check that there are no orphan "`cop*`" processes. If there are, manually kill these processes.
 
 {{< TransferCFT/axwayvariablesComponentShortName  >}} server
 
 ### Cannot start my {{< TransferCFT/axwayvariablesComponentShortName  >}}
 
-- Check your {{< TransferCFT/axwayvariablesComponentShortName >}} log in Central Governance.
-- From the local {{< TransferCFT/axwayvariablesComponentShortName >}} runtime, try to manually start the server. If you cannot manually start the server, refer to *[Support tools](https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/Troubleshooting/support_tools.htm)* in the {{< TransferCFT/axwayvariablesComponentLongName >}}{{< TransferCFT/suitevariablesDocTypeUser >}}.
+- Check your {{< TransferCFT/axwayvariablesComponentShortName  >}} log in Central Governance.
+- From the local {{< TransferCFT/axwayvariablesComponentShortName  >}} runtime, try to manually start the server. If you cannot manually start the server, refer to *[Support tools](https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/Troubleshooting/support_tools.htm)* in the {{< TransferCFT/axwayvariablesComponentLongName  >}}{{< TransferCFT/suitevariablesDocTypeUser  >}}.
 
 ### Runtime directory error
 
@@ -42,7 +43,8 @@ If you get a **Warning***Problem running post-install step* message at the end o
 1. Remove the files created by the unsuccessful installation.
 1. Repeat the installation procedure.
 
-## Multi-node multihost installation issues
+Multi-node multihost installation issues
+----------------------------------------
 
 ### Second node or host fails to install
 
@@ -52,28 +54,29 @@ While performing a multihost multi-node installation, where the user has a diffe
 
 Warning: The directory
 
-/mnt/CFT36MNLIN\_BN12807000/runtime
+/mnt/CFT36MNLIN_BN12807000/runtime
 
 is not writable by the current user
 
 To resolve this issue, using a different user perform the following commands on all hosts that are involved in the multihost, multi-node installation:
 
 1. Open an SSH session on the machine and run the following command to change the UID, for example:  
-    <span class="code">`sudo usermod -u 1005 ithomas`</span>  
-    Where `1005 `is the desired common UID, and <span class="code">`ithomas `</span>is the user common to all of the UNIX hosts.
+    `sudo usermod -u 1005 ithomas`  
+    Where `1005 `is the desired common UID, and `ithomas `is the user common to all of the UNIX hosts.
 1. Run the command to change the GID, for example:  
     `sudo groupmod -g 1006 ithomas`  
-    Where <span class="code">`1006 `</span>is the desired common GID, and <span class="code">`ithomas `</span>is the group to which the user <span class="code">`ithomas `</span>belongs.
+    Where `1006 `is the desired common GID, and `ithomas `is the group to which the user `ithomas `belongs.
 
 For more information, please refer to the [NFS](http://nfs.sourceforge.net/nfs-howto/ar01s07.html#pemission_issues) documentation.
 
-## Installer does not run
+Installer does not run
+----------------------
 
 When the /tmp directory and the user's homedir have the noexec option, InstallBuilder does not work:
 
 EX:
 
-Transfer\_CFT\_3.6\_Install\_linux-x86-64\_BN12807000.run --mode unattended --conf-file /opt/xip/cft36/initialize.properties
+Transfer_CFT_3.6_Install_linux-x86-64_BN12807000.run --mode unattended --conf-file /opt/xip/cft36/initialize.properties
 
 Unable to initialize installer.
 
@@ -87,10 +90,10 @@ Create a temporary / home on an unprotected disk
 
 sudo mkdir / instcft
 
-sudo chown &lt;user>: &lt;user> / instcft
+sudo chown &lt;user&gt;: &lt;user&gt; / instcft
 
-export HOME = / instcft => unprotected disk
+export HOME = / instcft =&gt; unprotected disk
 
-./Transfer\_CFT\_3.7\_Install\_linux-x86-64\_BN13015241.run --mode unattended
+./Transfer_CFT_3.7_Install_linux-x86-64_BN13015241.run --mode unattended
 
 Solution 3 should work for the client as long as the HOME points to a directory where it has execution rig

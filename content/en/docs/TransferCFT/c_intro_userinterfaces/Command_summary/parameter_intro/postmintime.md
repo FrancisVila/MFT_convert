@@ -1,7 +1,7 @@
 {
     "title": "postmintime",
     "linkTitle": "postmintime",
-    "weight": "2640"
+    "weight": "2660"
 }### postmintime
 
 #### SEND
@@ -11,9 +11,9 @@ Schedules the post-processing exec file processing time.
 You can express the time value:
 
 - Explicitly
-    (absolute time)
+    as an absolute time.
 - In
     the command, relative to the time the command is taken into
-    account
+    account.
 
 [Return to Command index](../../)

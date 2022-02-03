@@ -1,7 +1,7 @@
 {
     "title": "Partner  access mechanisms ",
     "linkTitle": "Partner access mechanisms",
-    "weight": "230"
+    "weight": "220"
 }A SEND/RECV transfer command can perform one or more transfers with:
 
 A single partner
@@ -41,7 +41,7 @@ This mechanism is based on the names of each of the parties involved.
 To optimize use of the parameter setting possibilities, the following
 is indicated:
 
-- The {{< TransferCFT/axwayvariablesComponentShortName >}}
+- The {{< TransferCFT/axwayvariablesComponentShortName  >}}
     parameters defining the names of the parties involved
 - The recognition
     mechanism itself, based on the network names

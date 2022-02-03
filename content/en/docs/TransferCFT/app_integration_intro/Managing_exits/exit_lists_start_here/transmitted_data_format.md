@@ -8,7 +8,8 @@ of the transmitted data.
 
 <span id="Format_of_the_record_sent_in_V2"></span>
 
-## File selection criteria
+File selection criteria
+-----------------------
 
 ****Example****
 
@@ -26,16 +27,17 @@ Where:
     of the records sent
 - FORMAT: Indicates the file format of the communication area.
 
-## Format of sent records
+Format of sent records
+----------------------
 
-Indicates the file format of the communication area, where values are <u>1</u>, 2 C, T, J, or X (<span class="code">`1 `</span>is the default).
+Indicates the file format of the communication area, where values are <span class="underline">1</span>, 2 C, T, J, or X (`1 `is the default).
 
 ****Format 1****
 
 Displays using the same format as in {{< TransferCFT/headerfootervariableshflongproductname  >}} 3.5 and lower.
 
-- Format V23: The record is truncated if LRECL&lt;503 or padded with spaces if LRECL>503.
-- Format V24: The record is truncated if LRECL&lt;1569 or padded with spaces if LRECL>1569.
+- Format V23: The record is truncated if LRECL&lt;503 or padded with spaces if LRECL&gt;503.
+- Format V24: The record is truncated if LRECL&lt;1569 or padded with spaces if LRECL&gt;1569.
 
 
 | Type  | V24 length  | V23 length  | Description  |
@@ -95,7 +97,7 @@ The fields are as described in the following table, where the field size depends
 
 Each field is separated by a comma.
 
-For example: <span class="code">`S,X,X,X,MARTIN,PARIS,BIN,L1111482,2,,128,20191211,11481147,,,,,0,CP NONE`</span>
+For example: `S,X,X,X,MARTIN,PARIS,BIN,L1111482,2,,128,20191211,11481147,,,,,0,CP NONE`
 
 ****Format T: TSV - Tab Separated Value****
 
@@ -116,14 +118,15 @@ Each field is separated by a tab.
 <TOTAL>2</TOTAL></CAT>      
 ```
 
-## Determine the LRECL 
+Determine the LRECL 
+--------------------
 
-If **LRECL>4096** or **LRECL&lt;109**, the record length is
+If **LRECL&gt;4096** or **LRECL&lt;109**, the record length is
 forced to 503.
 
 - The unused *Cata* field is forced blank or to
     0, in the case of a length.  
-    The record is truncated if LRECL&lt;503 or padded with spaces if LRECL>503
+    The record is truncated if LRECL&lt;503 or padded with spaces if LRECL&gt;503
     (LRECL is a PARM parameter).
 - The **User parameter** field corresponds to the PARM parameter of
     the CFTSEND or SEND command.
@@ -176,11 +179,11 @@ significant items such as the filename, which depends on the selected version.
 
 ****Format version V23****
 
-109 is the minimum length. If n&lt;109 or n>4096, the default value 503 is used.
+109 is the minimum length. If n&lt;109 or n&gt;4096, the default value 503 is used.
 
 ****Format version V24****
 
-629 is the minimum length. If n&lt;629 or n>4096, the default value 1569 is used.
+629 is the minimum length. If n&lt;629 or n&gt;4096, the default value 1569 is used.
 
 - SEND = selection
     criteria for send transfers

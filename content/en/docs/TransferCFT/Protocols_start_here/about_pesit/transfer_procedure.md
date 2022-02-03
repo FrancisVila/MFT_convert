@@ -1,7 +1,7 @@
 {
     "title": "Transfer  procedure ",
     "linkTitle": "Transfer procedure",
-    "weight": "220"
+    "weight": "210"
 }This topic describes the following PeSIT transfer procedure processes and concepts:
 
 - [Establishing a connection](#Establishing_a_connection)
@@ -13,7 +13,8 @@ For a detailed example of the transfer settings for a server and requester site,
 
 <span id="Establishing_a_connection"></span>
 
-## Establishing a connection
+Establishing a connection
+-------------------------
 
 Following a transfer request, the requesting Transfer CFT:
 
@@ -46,7 +47,8 @@ and error codes](../../../troubleshoot_intro/messages_and_error_codes_start_here
 
 <span id="Transfer_Concatenation"></span>
 
-## Transfer concatenation
+Transfer concatenation
+----------------------
 
 The figure below shows a concatenation of one-way send transfers. If
 the time interval between two requests remains below the values of the
@@ -90,7 +92,8 @@ for which it was initially server.
 
 <span id="Transfer_Identifier"></span>
 
-## Transfer identifiers
+Transfer identifiers
+--------------------
 
 The transfer identifier (IDT) is a label associated by Transfer CFT
 to each transfer. The IDT uniquely identifies a transfer for a given partner
@@ -133,7 +136,8 @@ partner.
 
 <span id="Transfer_Retries"></span>
 
-## Transfer retries
+Transfer retries
+----------------
 
 A transfer is resumed, after an interruption, by means of a manual command
 at the initiative of the requesting partner or automatically by Transfer

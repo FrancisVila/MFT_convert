@@ -1,7 +1,7 @@
 {
     "title": "Transfer CFT messages:  CFTF",
     "linkTitle": "CFTF messages",
-    "weight": "310"
+    "weight": "300"
 }This topic lists the CFTFxx (CFT xnnx) messages and provides the type, a description, consequence, and corrective actions when applicable.
 
 **Message format**
@@ -12,9 +12,9 @@ Earlier versions of Transfer CFT used a different message format than version 3.
 
 **Example**
 
-CFTLOG FORMAT=\[V23,V24\]
+CFTLOG FORMAT=[V23,V24]
 
-For V23: <span class="code">`CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`</span>
+For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
@@ -42,7 +42,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | V23 format<br/> V24 format<br/> Warning | CFTF02W PART=&amp;part IDF=&amp;idf IDT=&amp;idt local file selection error (file not found ignored) &amp;scs<br/> CFTF02W local file selection error (file not found ignored) &amp;scs &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt |
 | --- | --- |
 | Explanation | During a transfer request, a local error was detected when selecting a file.  |
-| Consequence | When you set <span ><code>filenotfound</code></span> to <span ><code>ignore</code></span> in the transfer request, the transfer is executed, the file is ignored, and the corresponding catalog entry is terminated (completed).  |
+| Consequence | When you set filenotfound to ignore in the transfer request, the transfer is executed, the file is ignored, and the corresponding catalog entry is terminated (completed).  |
 | Action | You can ignore the message.  |
 
 
@@ -197,7 +197,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> V23 format<br/> V24 format<br/> Warning | <span id="CFTF30W"></span>CFTF30W PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagc<br/> CFTF30W +PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;str<br/> CFTF30W &amp;diagc &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &gt;<br/> CFTF30W+&amp;str &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &gt; |
 | --- | --- |
-| Explanation | After an error, an additional message or two containing the DIAGC zones are displayed:<br/> • CFTF02E PART=&amp;part IDF=&amp;idf IDT=&amp;idt local file selection error xxxx<br/> • CFTF30W PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagc<br/> • CFTF30W+U=&lt;user&gt; F=&lt;file&gt; PART=&amp;part IDF=&amp;idf IDT=&amp;idt<br/> Where &amp;diagc could be:<br/> • SFM_ALLOC: file not found<br/><br/> • SFM_ALLOC: CFTSU socket: connection refused (this occurs when USERCTRL is set to yes, but the user does not have read-file privileges - *Unix only*)<br/> • HTTP 403: when using AWS the DNS connection was refused |
+| Explanation | After an error, an additional message or two containing the DIAGC zones are displayed:<br/> • CFTF02E PART=&amp;part IDF=&amp;idf IDT=&amp;idt local file selection error xxxx<br/> • CFTF30W PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagc<br/> • CFTF30W+U=&lt;user&gt; F=&lt;file&gt; PART=&amp;part IDF=&amp;idf IDT=&amp;idt<br/> Where &amp;diagc could be:<br/> • SFM_ALLOC: file not found<br/><br/> • SFM_ALLOC: CFTSU socket: connection refused (this occurs when USERCTRL is set to yes, but the user does not have read-file privileges - Unix only)<br/> • HTTP 403: when using AWS the DNS connection was refused |
 | Action  | If the connection was refused for AWS, check that the server DNS is correctly configured. See the <a href="../../../app_integration_intro/amazon_s3">Amazon 3 (ASW) troubleshooting</a> section. |
 
 
@@ -261,16 +261,14 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | Action  | Add the NFNAME parameter in your RECV command.  |
 
 
- 
 
-
-| V23 format<br/> V24 format<br/> Information | <span id="CFTF40I"></span>CFTF40I The file &amp;fname has been removed<br/> CFTF40I The file &amp;fname has been removed |
+| V23 format<br/> V24 format<br/> Information | <span id="CFTF40I"></span>CFTF40I The file &amp;fname has been removed &lt;PART=&amp;part IDS=&amp;ids&gt;<br/> CFTF40I The file &amp;fname has been removed &lt;PART=&amp;part IDS=&amp;ids&gt; |
 | --- | --- |
 | Explanation | A file was removed per an SFTP client request. |
 
 
 
-| V23 format<br/> V24 format<br/> Error | <span id="CFTF41E"></span>CFTF41E The file &amp;fname can't be removed for reason code &amp;reason<br/> CFTF41E The file &amp;fname can't be removed for reason code &amp;reason |
+| V23 format<br/> V24 format<br/> Error | <span id="CFTF41E"></span>CFTF41E The file &amp;fname can't be removed for reason code &amp;reason &lt;PART=&amp;part IDS=&amp;ids&gt;<br/> CFTF41E The file &amp;fname can't be removed for reason code &amp;reason &lt;PART=&amp;part IDS=&amp;ids&gt; |
 | --- | --- |
 | Explanation | Could not remove the file. |
 | Action  | Check the reason to code and take the appropriate action if possible. |
@@ -279,7 +277,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
  
 
 
-| V23 format<br/> V24 format<br/> Information | <span id="CFTF42I"></span>CFTF42I The directory &amp;fname has been removed<br/> CFTF42I The directory &amp;fname has been removed |
+| V23 format<br/> V24 format<br/> Information | <span id="CFTF42I"></span>CFTF42I The directory &amp;fname has been removed &lt;PART=&amp;part IDS=&amp;ids&gt;<br/> CFTF42I The directory &amp;fname has been removed &lt;PART=&amp;part IDS=&amp;ids&gt; |
 | --- | --- |
 | Explanation | A directory has been removed as requested by a SFTP client. |
 
@@ -287,7 +285,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
  
 
 
-| V23 format<br/> V24 format<br/> Error | <span id="CFTF43E"></span>CFTF43E The directory &amp;fname can't be removed for reason code &amp;reason<br/> CFTF43E The directory &amp;fname can't be removed for reason code &amp;reason |
+| V23 format<br/> V24 format<br/> Error | <span id="CFTF43E"></span>CFTF43E The directory &amp;fname can't be removed for reason code &amp;reason &lt;PART=&amp;part IDS=&amp;ids&gt;<br/> CFTF43E The directory &amp;fname can't be removed for reason code &amp;reason &lt;PART=&amp;part IDS=&amp;ids&gt; |
 | --- | --- |
 | Explanation | Cannot remove the directory. |
 | Action  | Check the reason code and take the appropriate action if possible. |
@@ -296,17 +294,18 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
  
 
 
-| V23 format<br/> V24 format<br/> Information | <span id="CFTF43E"></span>CFTF44E The directory &amp;fname has been created<br/> CFTF44I The directory &amp;fname has been created |
+| V23 format<br/> V24 format<br/> Information  | <span id="CFTF44I"></span>CFTF44I The directory &amp;fname has been created &lt;PART=&amp;part IDS=&amp;ids&gt;<br/> CFTF44I The directory &amp;fname has been created &lt;PART=&amp;part IDS=&amp;ids&gt; |
 | --- | --- |
-| Explanation | Created a directory per a SFTP client request.  |
+| Explanation  | A directory was created per an SFTP client request.  |
 
 
  
 
 
-| V23 format<br/> V24 format<br/> Information  | <span id="CFTF44I"></span>CFTF44I The directory &amp;fname has been created<br/> CFTF44I The directory &amp;fname has been created |
+| V23 format<br/> V24 format<br/> Error | <span id="CFTF45E"></span>CFTF45E The directory %s can't be created for reason code &amp;reason %d &lt;PART=%s IDS=&amp;ids&gt;<br/> CFTF45E The directory %s can't be created for reason code &amp;reason %d &lt;PART=%s IDS=&amp;ids&gt; |
 | --- | --- |
-| Explanation  | A directory has been created as requested by a SFTP client.  |
+| Explanation | Cannot create the directory.  |
+| Action  | Check the reason code, take appropriate steps, and retry as needed.  |
 
 
  
@@ -354,9 +353,9 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
  
 
 
-| V23 format<br/> V24 format<br/> Warning  | <span id="CFTF51W"></span>CFTF51W The file &amp;fname can't been archived into &amp;archivefname for reason code &amp;reason<br/> CFTF51W The &amp;fname file can't be archived as &amp;newfname due to reason code &amp;reason |
+| V23 format<br/> V24 format<br/> Warning  | <span id="CFTF51W"></span>CFTF51W [Faction or Naction]: The &amp;fname file can't be archived as &amp;archivefname due to reason code &amp;reason<br/> CFTF51W [Faction or Naction]: The &amp;fname file can't be archived as &amp;archivefname due to reason code &amp;reason |
 | --- | --- |
-| Explanation  | Could not move the file at the end of the transfer. Check <a href="">ARCHIVEDIR</a> and <a href="">ARCHIVEFNAME</a>.  |
+| Explanation  | Could not move the file at the end of the transfer.<br/> • FACTION: See <a href="">ARCHIVEDIR</a> and <a href="">ARCHIVEFNAME</a> for details.<br/> • NACTION: Specific to the SFTP protocol when using the RECV command. See <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/narchivename">NARCHIVEFNAME</a> for details. |
 
 
 

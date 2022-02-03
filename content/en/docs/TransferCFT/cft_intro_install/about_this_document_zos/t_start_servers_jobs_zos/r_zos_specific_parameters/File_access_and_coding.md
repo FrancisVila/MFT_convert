@@ -15,7 +15,8 @@ This section describes file properties and how to code Transfer CFT filenames.
 
 <span id="File access overview"></span>
 
-## File access overview
+File access overview
+--------------------
 
 Transfer CFT z/OS has read or write access to the following files:
 
@@ -42,7 +43,8 @@ Transfer CFT z/OS cannot transfer the following files:
 
 <span id="Coding file names zOS"></span>
 
-## About coding filenames
+About coding filenames
+----------------------
 
 Transfer CFT z/OS uses the following coding to handle files:
 
@@ -85,7 +87,7 @@ Where:
 >
 > <!-- -->
 >
-> -   The initial character in HFS filenames is the slash: ( <span class="span_2">/</span> )
+> -   The initial character in HFS filenames is the slash: ( / )
 
 **Example**
 
@@ -99,16 +101,17 @@ FILENAME
 
 > **Note**
 >
-> The two % signs are mandatory only if the VOLUME parameter or the UNIT parameter has been specified.
+> Note: The two % signs are mandatory only if the VOLUME parameter or the UNIT parameter has been specified.
 
 <span id="Filename"></span>
 
-## Filename forms
+Filename forms
+--------------
 
 A filename can have different forms:
 
 - A DSNAME or a string coded in form ‘VOLUME%UNIT%DSNAME’ (VOLUME and UNIT are often optional).
-- A logical name, associated with a DD card \[ JCL \] or with an ALLOC \[ CLIST \].
+- A logical name, associated with a DD card [ JCL ] or with an ALLOC [ CLIST ].
 - PDS member name, which is also by completing with the member name between brackets.
 
 ****Example ****
@@ -141,17 +144,17 @@ Look for the file on the disk CFTRES:
 
 Using parameters ‘VOLUME’ and/or ‘UNIT’ may conflict with DF/SMS file management.
 
-****<span class="span_2">Example</span>****
+****Example****
 
-<span class="span_2">PDS member name</span> t<span class="b2Car_2">o request sending of a member with the file searched for in the catalog</span>:
+PDS member name to request sending of a member with the file searched for in the catalog:
 
 ```
 SEND FNAME=‘CFT.SEND.FILE(MEMBER)’
 ```
 
-****<span class="span_2">Example</span>****
+****Example****
 
-<span class="span_2">A logical name</span> t<span class="b2Car_2">o select a PARTNERS file</span>:
+A logical name to select a PARTNERS file:
 
 ```
 CFTPARM PARTFNAM=$CFTPART
@@ -188,7 +191,8 @@ An alternate way to specify full-length DF/SMS parameters is described in [DF/SM
 
 <span id="Coding filenames with DDNAME"></span>
 
-## Code filenames with DDNAME 
+Code filenames with DDNAME 
+---------------------------
 
 Transfer CFT z/OS uses the following coding to refer to a DDNAME declared in the JCL:
 
@@ -203,7 +207,8 @@ FNAME=$CFTCAT
 ```
 <span id="Coding PDS filenames"></span>
 
-## Coding PDS filenames
+Coding PDS filenames
+--------------------
 
 Transfer CFT z/OS handles PDS files one member at a time. Transfer CFT z/OS processes PDS files:
 
@@ -215,13 +220,13 @@ Transfer CFT z/OS handles PDS files one member at a time. Transfer CFT z/OS proc
 
 <!-- -->
 
-- For the entire PDS, by setting FNAME=#DSNAME or #DSNAME(\*)
+- For the entire PDS, by setting FNAME=\#DSNAME or \#DSNAME(\*)
 
 > **Note**
 >
-> The second syntax is recommended as it is the syntax to use for heterogeneous transfers.
+> Note: The second syntax is recommended as it is the syntax to use for heterogeneous transfers.
 
-- For a selected subset of members, using the ’\*’ character to replace a character string or ’?’ to replace one character and by setting FNAME=#DSNAME(ME?BER\*)
+- For a selected subset of members, using the ’\*’ character to replace a character string or ’?’ to replace one character and by setting FNAME=\#DSNAME(ME?BER\*)
 
 A PDS file is coded as:
 
@@ -231,11 +236,12 @@ FNAME=NAME1.NAMEX(MEMBER)
 
 Delivered template:
 
-- <span class="code">`..SAMPLE(CFTPDS)`</span>
+- `..SAMPLE(CFTPDS)`
 
 <span id="Coding GDG filenames"></span>
 
-## Code GDG filenames
+Code GDG filenames
+------------------
 
 A GDG filename is coded as:
 
@@ -247,7 +253,7 @@ FNAME=NAME1.NAMEX(+n)
 
 > **Note**
 >
-> Transfer CFT z/OS does not allow the concatenation of all versions of a GDG file.
+> Note: Transfer CFT z/OS does not allow the concatenation of all versions of a GDG file.
 
 Delivered templates:
 

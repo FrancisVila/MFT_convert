@@ -1,7 +1,7 @@
 {
     "title": "Store  and forward concepts",
     "linkTitle": "Store and forward modes",
-    "weight": "270"
+    "weight": "260"
 }The store and forward mode enables you to route files from one computer
 to another via one or more intermediate relays (computers or communication sites). For example, when sending a file from computer A to computer C, where A and C are either not directly connected or have a connection problem, the file is routed via computer B.
 
@@ -11,31 +11,33 @@ another.
 
 > **Note**
 >
-> This document describes the relay process as it relates to Transfer CFT. You can perform relay transfers using other Axway products as the intermediary site.
+> Note: This document describes the relay process as it relates to Transfer CFT. You can perform relay transfers using other Axway products as the intermediary site.
 
 > **Note**
 >
-> If you are using access management, you must define the CFTAPPL with the ID=COMMUT.
+> Note: If you are using access management, you must define the CFTAPPL with the ID=COMMUT.
 
 The following illustration features 3 Transfer CFTs, where the protocol may be the same or different between relay points:
 
-- Source \[Initial Sender A\]
-- Relay \[Store and Forward B\]
-- Target \[Final Receiver C\]
+- Source [Initial Sender A]
+- Relay [Store and Forward B]
+- Target [Final Receiver C]
 
 **Routing a transfer via a relay**
 
 ![](/Images/TransferCFT/temp_store.png)
 
-## Restrictions
+Restrictions
+------------
 
-- You cannot use a distribution list on the relay site when using {{< TransferCFT/suitevariablesFlowManager >}} or {{< TransferCFT/suitevariablesCentralGovernanceName >}}.
+- You cannot use a distribution list on the relay site when using {{< TransferCFT/suitevariablesFlowManager  >}} or {{< TransferCFT/suitevariablesCentralGovernanceName  >}}.
 
 <!-- -->
 
-- {{< TransferCFT/axwayvariablesComponentLongName >}} store and forward mode is only possible from a requester/sender (write transfers only, not read).
+- {{< TransferCFT/axwayvariablesComponentLongName  >}} store and forward mode is only possible from a requester/sender (write transfers only, not read).
 
-## Store and forward mode protocols
+Store and forward mode protocols
+--------------------------------
 
 To route a file transfer, you must identify the partners involved
 in the transfer, the initial sender and final receiver of the transfer.
@@ -49,15 +51,17 @@ For these protocols, the objects transferred can be files or messages,
 in write mode only, for sender requester mode.
 
 These protocols manage the acknowledgement messages following
-the reception of a file. See the SEND TYPE = [REPLY](../../using_the_send_command/sending_replies) command. The PeSIT
+the reception of a file. See the SEND TYPE = [REPLY](../../send_command/send_replies) command. The PeSIT
 profile protocol also manages the sending of messages.
-See the SEND TYPE = [MESSAGE](../../using_the_send_command/send_messages_cl) command.
+See the SEND TYPE = [MESSAGE](../../send_command/send_messages_cl) command.
 
-## Using store and forward with Flow Manager
+Using store and forward with Flow Manager
+-----------------------------------------
 
 If you are using {{< TransferCFT/suitevariablesFlowManager  >}} or {{< TransferCFT/suitevariablesCentralGovernanceName  >}} to manage your Transfer CFT flows, the store and forward functionality may also be referred to as a relay in the flow. Please refer to the [Transfer CFT store and forward](https://docs.axway.com/bundle/FlowManager_20_allOS_en_HTML5/page/transfer_cft_store_and_forward.html) page in the {{< TransferCFT/suitevariablesFlowManager  >}} {{< TransferCFT/suitevariablesDocTypeUser  >}}.
 
-## Using store and forward with standalone {{< TransferCFT/PrimaryTransferCFTplural  >}}
+Using store and forward with standalone {{< TransferCFT/PrimaryTransferCFTplural  >}}
+------------------------------------------------------------------------------------------
 
 If you are using {{< TransferCFT/suitevariablesTransferCFTName  >}} without additional governance, you can manage store and forward as described below.
 
@@ -94,7 +98,7 @@ There are two ways for the sender to initiate a store and forward transfer:
 
 <!-- -->
 
-- <span class="code">`send part=<FINAL PARTNER>, ipart=<RELAY>,...`</span>
+- `send part=<FINAL PARTNER>, ipart=<RELAY>,...`
 
 <span id="Store_and_forward_sites"></span>
 
@@ -152,7 +156,7 @@ procedures. You can use the typical [symbolic variables](../../../c_intro_userin
 
 ### Forced store and forward processing with COMMUT=PART
 
-<span class="bold_in_para">****PeSIT protocol only****</span>
+****PeSIT protocol only****
 
 You can use the use this option to force a store and forward on an intermediate site without knowing the final partner.
 
@@ -212,11 +216,12 @@ The difference lies in the type of protocols.
 
 > **Note**
 >
-> entries and that these entries are linked. In the example above, there would be two entries for the single "report" transfer.
+> Note: entries and that these entries are linked. In the example above, there would be two entries for the single "report" transfer.
 
 <span id="Store"></span>
 
-## Broadcasting on a store and forward site
+Broadcasting on a store and forward site
+----------------------------------------
 
 This section describes how to use a partner broadcasting list with store and forward.
 
@@ -307,7 +312,8 @@ From the initiator site A, execute:
 send part=cd,idf=broadcast,fname=pub/FTEST
 ```
 
-## Broadcast list acknowledgements
+Broadcast list acknowledgements
+-------------------------------
 
 To acknowledge a store and forward file (or message) transfer, the final partner (or partners) sends(send) a TYPE=REPLY message to the initial partner (the zero values of the OMINTIME and OMAXTIME parameters of the associated CFTPART command force the routing of the REPLY via the intermediate partner B IPART=B).
 

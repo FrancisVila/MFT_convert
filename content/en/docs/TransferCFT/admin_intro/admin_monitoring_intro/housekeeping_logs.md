@@ -6,7 +6,8 @@
 
 It is readable by the user via the Central Governance user interface or the CFTUTIL listlog command.
 
-## Rotate or switch log files
+Rotate or switch log files
+--------------------------
 
 You can customize either the rotate or switch procedure to archive and clean out old log files.
 
@@ -18,15 +19,15 @@ for the name of the log file.
 ### Rotate procedures
 
 **UNIX/Windows
-&lt;/i>&lt;/p>**
+&lt;/i&gt;&lt;/p&gt;**
 
 #### Use the internal log rotation procedure
 
-To enable the internal log rotation procedure, leave the EXEC parameter set to empty (EXEC=''). The internal procedure uses the UCONF cft.cftlog.backup\_count parameter to define the maximum number of log archives to keep.
+To enable the internal log rotation procedure, leave the EXEC parameter set to empty (EXEC=''). The internal procedure uses the UCONF cft.cftlog.backup_count parameter to define the maximum number of log archives to keep.
 
 #### Use a custom log rotation procedure
 
-To create a custom log rotation procedure, you can use the sample file `rotate.cmd`, which is delivered with {{< TransferCFT/axwayvariablesComponentShortName  >}} in the &lt;runtime/exec> directory, as a basis for your own procedure.
+To create a custom log rotation procedure, you can use the sample file `rotate.cmd`, which is delivered with {{< TransferCFT/axwayvariablesComponentShortName  >}} in the &lt;runtime/exec&gt; directory, as a basis for your own procedure.
 
 ### Switch procedure
 
@@ -38,11 +39,11 @@ You can manage the switch procedure using various methods that include, but not 
 
 <!-- -->
 
-- Archiving: Transfer CFT log files are stored in the runtime directory, log file names are cftlog-&lt;timestamp> where timestamp is the date and time the switch procedure switch.cmd is triggered by {{< TransferCFT/axwayvariablesComponentShortName >}}.
+- Archiving: Transfer CFT log files are stored in the runtime directory, log file names are cftlog-&lt;timestamp&gt; where timestamp is the date and time the switch procedure switch.cmd is triggered by {{< TransferCFT/axwayvariablesComponentShortName  >}}.
 
 > **Note**
 >
-> At least one of the two files (either the log or alternate log file) must be empty prior to starting Transfer CFT.
+> Note: At least one of the two files (either the log or alternate log file) must be empty prior to starting Transfer CFT.
 
 #### Use the SWITCH command
 
@@ -56,19 +57,17 @@ A file can automatically be switched to another file by means of one of 4 events
 
 - a daily schedule
     set by the SWITCH parameter
-
 - the number of records
     written in the current log file exceeds the limit set by the MAXREC parameter
     or, depending on the OS, the file is full
-
-- {{< TransferCFT/axwayvariablesComponentShortName >}} is
+- {{< TransferCFT/axwayvariablesComponentShortName  >}} is
     shut down via the SHUT command  
 
     > **Note**
     >
-    > To customize the switch that occurs when Transfer CFT shuts down, modify the UCONF parameter cft.cftlog.switch\_on\_stop=YES (the default value is NO).
+    > Note: To customize the switch that occurs when Transfer CFT shuts down, modify the UCONF parameter cft.cftlog.switch_on_stop=YES (the default value is NO).
 
-- {{< TransferCFT/axwayvariablesComponentShortName >}} is
+- {{< TransferCFT/axwayvariablesComponentShortName  >}} is
     activated
 
 #### Limit entries in the log
@@ -83,16 +82,17 @@ When {{< TransferCFT/axwayvariablesComponentShortName  >}} sends log messages to
 UCONFSET id=sentinel.xfb.log,value=F
 ```
 
-## Creating an exclusion log filter
+Creating an exclusion log filter
+--------------------------------
 
 {{< TransferCFT/axwayvariablesComponentShortName  >}} can filter log messages according to predefined filters to exclude certain types of messages. To create a filter, customize the following uconf parameters to create the required filter pattern with one or more of the following characteristics:
 
-- cft.server.log.exclude\_filters = ID1 ID2 ID3
+- cft.server.log.exclude_filters = ID1 ID2 ID3
     -   Space separated list of filter identifiers
     -   Only the log filters in the list are activated
-- cft.server.log.exclude\_filters.ID.pattern=
+- cft.server.log.exclude_filters.ID.pattern=
     -   The pattern matches a Log messages that is to be excluded from all logs (log output, log file and Sentinel)
-- cft.server.log.exclude\_filters.ID.comment=
+- cft.server.log.exclude_filters.ID.comment=
     -   A free field that you can use to describe the filter
 
 **Example**
@@ -106,7 +106,8 @@ CFTUTIL UCONFSET ID =cft.server.log.exclude_filters.cron_heartbeat.comment,
 VALUE ="Excludes from the log all cronjob messages concerning the ID HEARTBEAT"
 ```
 
-## Create a daily log file rotation
+Create a daily log file rotation
+--------------------------------
 
 *Available on Unix, Windows, and iSeries environments*
 
@@ -118,7 +119,7 @@ If you need to check the current switch hour for the log, using CFTUTIL enter:
 mquery name=command
 ```
 
-Then enter the <span class="code">`listlog `</span>command:
+Then enter the `listlog `command:
 
 ```
 listlog
@@ -140,12 +141,13 @@ This results in the switch being executed automatically every night at midnight,
 
 - The `cftlog` file in the `$CFTDIRLOG `folder (runtime/log) that has no extension is the current day's log.
 - The` cftlog.n` is the log file corresponding to the current day *- n* days. For example, if today is Sunday, `cftlog.2` would be Friday's log file.
-- There are a total of 7 log files in the folder, one for each day, as the <span class="code">`backup_count`</span> value is 6 (6 backups plus 1 current).
+- There are a total of 7 log files in the folder, one for each day, as the `backup_count` value is 6 (6 backups plus 1 current).
 
-## Configure log to switch only when the current file is full
+Configure log to switch only when the current file is full
+----------------------------------------------------------
 
 If you would like to switch the log file only when the maximum number of records is reached, and not automatically switch on starting, set the following:
 
 1. Using CFTUTIL, set the following uconf values:
-1. Modify the <span class="code">`CFTLOG `</span>object by setting the predetermined number of records, the <span class="code">`MAXREC `</span>parameter. When this value is reached the log is switched.
+1. Modify the `CFTLOG `object by setting the predetermined number of records, the `MAXREC `parameter. When this value is reached the log is switched.
 1. Restart after modifying values.

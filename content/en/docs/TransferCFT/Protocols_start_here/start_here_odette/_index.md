@@ -1,7 +1,7 @@
 {
     "title": "OFTP  (ODETTE): Start here",
     "linkTitle": "OFTP protocol",
-    "weight": "140"
+    "weight": "130"
 }This section describes how to configure the OFTP (ODETTE) protocol for
 Transfer CFT. This topic begins
 with an overview of the OFTP file transfer protocol describing:
@@ -33,7 +33,8 @@ to configure them:
 
 <span id="About_OFTP"></span><span id="OFTP__ODETTE__features"></span>
 
-### OFTP (ODETTE) features
+OFTP (ODETTE) features
+----------------------
 
 OFTP (ODETTE) protocol standards were defined to facilitate the transmission
 of information between partners, or centers, and the motor vehicle industry.
@@ -48,7 +49,7 @@ sector.
 The data can be checked by an application initiated by the end-of-transfer
 procedures.
 
-#### General features
+### General features
 
 The general characteristics of the OFTP (ODETTE) protocol are as follows:
 
@@ -63,7 +64,7 @@ The general characteristics of the OFTP (ODETTE) protocol are as follows:
 - File reception
     acknowledgement possibility
 
-#### Specific features
+### Specific features
 
 The particular characteristics of the OFTP (ODETTE) protocol are as
 follows:
@@ -99,7 +100,8 @@ to:
 
 <span id="Network_message_structure"></span>
 
-### Network message structure
+Network message structure
+-------------------------
 
 A protocol message is called a FPDU, a File
 Protocol Data

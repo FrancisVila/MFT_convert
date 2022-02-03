@@ -1,7 +1,7 @@
 {
     "title": "Configure simultaneous transfers",
     "linkTitle": "Configure simultaneous transfers",
-    "weight": "220"
+    "weight": "210"
 }The maximum number of simultaneous transfers in Transfer CFT is managed by a combination of global parameters, partner settings, and the license key.
 
 The objective of this section is to help you understand the global and partner parameters, and provide configuration recommendations in order to assist you in optimizing your file transfer volume.
@@ -17,11 +17,12 @@ Contents include:
 
 > **Note**
 >
-> Some parameters benefit from further tuning if using a multi node architecture. See also Multi-node partner configuration.
+> Note: Some parameters benefit from further tuning if using a multi node architecture. See also Multi-node partner configuration.
 
 <span id="Global"></span>
 
-## Global settings
+Global settings
+---------------
 
 The global settings define the connection and session parameters on the local Transfer CFT side.
 
@@ -53,7 +54,7 @@ You can also set the maximum number of simultaneous sessions using the UCONF par
 
 > **Note**
 >
-> We recommend using the default value for cft.server.max\_session.
+> Note: We recommend using the default value for cft.server.max_session.
 
 #### DISCTD/DISCTS
 
@@ -64,18 +65,19 @@ In Transfer CFT, the timeout (session persistence) is defined by DISCTS in serv
 **Client configuration**
 
 ```
-CFTPROT id=PESIT, DISCTS=8, DISCTD=<span style="color: #ff0000;">8</span>
+CFTPROT id=PESIT, DISCTS=8, DISCTD= 8
 ```
 
 **Server configuration**
 
 ```
-CFTPROT id=PESIT, DISCTS=<span style="color: #ff0000;">10</span>, DISCTD=7
+CFTPROT id=PESIT, DISCTS= 10
+, DISCTD=7
 ```
 
 > **Note**
 >
-> We recommend setting these values to 60 seconds or less.
+> Note: We recommend setting these values to 60 seconds or less.
 
 ### Transfer execution
 
@@ -117,7 +119,7 @@ Key information :
 \* type = DATE
 \* expire = 2015/11/14
 \* sysname = linux-x86-64
-\* Nb Transfers = <span style="color: #ff0000;">64</span>
+\* Nb Transfers = 64
 \* Nb CPU = 4
 \* Nb Partners = Max
 ```
@@ -140,7 +142,7 @@ CFTPARM ID=IDPARM0,MAXTASK=n, ...
 
 > **Note**
 >
-> There is a one to one relationship between a transfer and its task. That is, the task cannot be shared, so it is recommended to set the MAXTASK to less than or equal to MAXTRANS.
+> Note: There is a one to one relationship between a transfer and its task. That is, the task cannot be shared, so it is recommended to set the MAXTASK to less than or equal to MAXTRANS.
 
 #### TRANTASK
 
@@ -171,11 +173,12 @@ This parameter defines the frequency, in minutes, with which Transfer CFT scans 
 
 > **Note**
 >
-> The WSCAN scheduling retries continues indefinitely until the transfer can be executed.
+> Note: The WSCAN scheduling retries continues indefinitely until the transfer can be executed.
 
 <span id="Partner"></span>
 
-## Partner settings
+Partner settings
+----------------
 
 This section provides information and examples concerning the session parameters at partner level.
 
@@ -235,7 +238,7 @@ This parameter defines the retry period following a network interruption. This i
 
 > **Note**
 >
-> The RETRYW scheduling retries is limited by the RETRYM number.
+> Note: The RETRYW scheduling retries is limited by the RETRYM number.
 
 #### RETRYM
 

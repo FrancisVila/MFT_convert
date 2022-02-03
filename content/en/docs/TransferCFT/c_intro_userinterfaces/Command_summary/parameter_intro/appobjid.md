@@ -1,14 +1,14 @@
 {
     "title": "appobjid",
     "linkTitle": "appobjid",
-    "weight": "310"
+    "weight": "300"
 }<span id="appobjid"></span>
 
 ### appobjid
 
 #### SEND, RECV
 
-****\[appobjid = string \]****
+****[appobjid = string ]****
 
 Tracked object name.
 
@@ -18,8 +18,8 @@ application events.
 The possible values of this parameter include:
 
 - XFB.Transfer
-    This tracked object describes {{< TransferCFT/axwayvariablesComponentShortName >}} file and message transfers
+    This tracked object describes {{< TransferCFT/axwayvariablesComponentShortName  >}} file and message transfers
 - XFB.Log This
-    tracked object describes the contents of {{< TransferCFT/axwayvariablesComponentShortName >}} log files
+    tracked object describes the contents of {{< TransferCFT/axwayvariablesComponentShortName  >}} log files
 
 [Return to Command index](../../)

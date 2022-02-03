@@ -1,14 +1,14 @@
 {
     "title": "fout",
     "linkTitle": "fout",
-    "weight": "1280"
+    "weight": "1270"
 }<span id="fout"></span>
 
 ### fout
 
 #### DISPLAY
 
-****\[ FOUT = file\_name \]****
+****[ FOUT = file_name ]****
 
 Defines the file that the
 command output is sent to. The file name represent the file where the
@@ -24,7 +24,7 @@ LISTUCONF CONTENT=EXTRACT, <a href="#" class="selected">FOUT</a>=out extracts th
 
 #### EXTAMCACHE
 
-**\[ FOUT = file\_name \]
+**[ FOUT = file_name ]
   **
 
 Defines the file where the

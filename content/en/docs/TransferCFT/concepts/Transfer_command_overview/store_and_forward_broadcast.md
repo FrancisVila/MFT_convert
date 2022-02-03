@@ -1,7 +1,7 @@
 {
     "title": "Broadcasting on a store and forward site",
     "linkTitle": "Store and forward broadcasts",
-    "weight": "280"
+    "weight": "270"
 }This section describes how to use a partner broadcasting list with store and forward.
 
 To broadcast a file from a store and forward site:
@@ -91,7 +91,8 @@ From the initiator site A, execute:
 send part=cd,idf=broadcast,fname=pub/FTEST
 ```
 
-## Broadcast list acknowledgements
+Broadcast list acknowledgements
+-------------------------------
 
 To acknowledge a store and forward file (or message) transfer, the final partner (or partners) sends(send) a TYPE=REPLY message to the initial partner (the zero values of the OMINTIME and OMAXTIME parameters of the associated CFTPART command force the routing of the REPLY via the intermediate partner B IPART=B).
 

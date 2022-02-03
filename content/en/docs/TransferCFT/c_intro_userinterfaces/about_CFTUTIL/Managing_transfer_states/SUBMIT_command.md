@@ -1,7 +1,7 @@
 {
     "title": "SUBMIT  - Submit a processing procedure",
     "linkTitle": "SUBMIT - Submitting an end-of-transfer",
-    "weight": "370"
+    "weight": "360"
 }This topic describes the SUBMIT command, which is used to submit a processing procedure for a selected
 transfer.
 

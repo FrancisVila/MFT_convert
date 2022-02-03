@@ -1,32 +1,32 @@
 {
     "title": "Apply a license key",
     "linkTitle": "Apply a license key",
-    "weight": "190"
+    "weight": "180"
 }You need to apply a valid license key to Transfer CFT in the following situations:
 
 - You perform an initial Transfer CFT installation.
 - To replace an expired license key (typically after a year).
 - A hardware upgrade changes the CPU ID (only applicable on certain UNIX).
 
-## Obtain a license key
+Obtain a license key
+--------------------
 
-1. Install {{< TransferCFT/axwayvariablesComponentShortName >}}. You can install {{< TransferCFT/axwayvariablesComponentShortName >}} without a license key, and enter the key later.
-
-1. After completing the installation, or for an existing installation, use the command <span class="code" style="font-weight: bold;">**`cftutil about`**</span> to retrieve your system information.
+1. Install {{< TransferCFT/axwayvariablesComponentShortName  >}}. You can install {{< TransferCFT/axwayvariablesComponentShortName  >}} without a license key, and enter the key later.
+1. After completing the installation, or for an existing installation, use the command **`cftutil about`** to retrieve your system information.
 
     > **Note**
     >
-    > Use the ABOUT command to display
+    > Note: Use the ABOUT command to display
     > the Transfer CFT product, host, and key information. This command displays the characteristics of the platform
     > on which Transfer CFT is installed.
 
 1. Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.
-    -   For a US key, contact: <span class="code">`fulfillment@us.axway.com`</span>
-    -   For an EMEA or APAC key, contact: <span class="code">`product.key@axway.com`</span>
-
+    -   For a US key, contact: `fulfillment@us.axway.com`
+    -   For an EMEA or APAC key, contact: `product.key@axway.com`
 1. Provide the hostname and system information for the installed or updated Transfer CFT.
 
-## Apply a license key
+Apply a license key
+-------------------
 
 Normally you enter the key that you received from the Axway Fulfillment team during the installation process. However, to apply the license key at a later date, enter the key(s) in the indirection file, which is referred to in the CFTPARM KEY parameter. See the **KEY** parameter for an example and details.
 
@@ -58,9 +58,10 @@ For example, if you have 2 hosts and 4 nodes, you require 4 keys with at least o
 - 2 keys that are configured to reference the first host, and the 2 other keys configured to reference to the second host
 - 3 keys that are configured to reference the first host, and 1 that is configured to reference to the second host
 
-## About command
+About command
+-------------
 
-Use the CFTUTIL utility to execute the <span class="code" style="font-weight: bold;">**`about `**</span>command to find the CPU ID and general system information as demonstrated in this example.
+Use the CFTUTIL utility to execute the **`about `**command to find the CPU ID and general system information as demonstrated in this example.
 
 ```
 Host information :
@@ -74,4 +75,4 @@ Host information :
 \* distrib = unknown
 ```
 
-In this example, the CPU ID is <span class="bold_in_para"> ****F8C721F8C721F8C7****</span>. Your information, including the cpuid, will differ from the example.
+In this example, the CPU ID is ****F8C721F8C721F8C7****. Your information, including the cpuid, will differ from the example.

@@ -1,14 +1,14 @@
 {
     "title": "TLS security profiles - CFTSSL",
     "linkTitle": "Security",
-    "weight": "180"
+    "weight": "170"
 }The CFTSSL object describes a security
 profile. The DIRECT parameter indicates the mode to which the security
 profile applies: DIRECT=CLIENT for client mode or DIRECT=SERVER for server
 mode.
 
-Transfer CFT opens an SSL session in client mode for any secure file
-or message transfer in requester mode. Transfer CFT opens an SSL session
+Transfer CFT opens a secure session in client mode for any secure file
+or message transfer in requester mode. Transfer CFT opens a secure session
 in server mode for any incoming call requiring a secure protocol.
 
 The properties of each SSL session opened by Transfer CFT in both client
@@ -31,5 +31,4 @@ profile. The DIRECT parameter indicates the mode to which the security
 profile applies: DIRECT=CLIENT for client mode or DIRECT=SERVER for server
 mode.
 
-See <a href="../../../transport_security_start_here/configuring_transport_security_start_here/transport_security_cftssl" class="MCXref xref">Transport
-security in CFTSSL</a> for a description of available parameters.
+See <a href="../../../transport_security_start_here/configuring_transport_security_start_here/transport_security_cftssl" class="MCXref xref">Transport security in CFTSSL</a>for a description of available parameters.

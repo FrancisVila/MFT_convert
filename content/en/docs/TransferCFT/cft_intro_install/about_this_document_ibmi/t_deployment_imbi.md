@@ -8,13 +8,14 @@ This section describes how to create a reusable and distributable {{< TransferCF
 
 > **Note**
 >
-> You can only install a Transfer CFT Express Package on the same platform as the one on which it was generated.
+> Note: You can only install a Transfer CFT Express Package on the same platform as the one on which it was generated.
 
-## Create a deployment package for {{< TransferCFT/suitevariablesTransferCFTName  >}}s used with Central Governance
+Create a deployment package for {{< TransferCFT/suitevariablesTransferCFTName  >}}s used with Central Governance
+---------------------------------------------------------------------------------------------------------------------
 
 Perform the following steps:
 
-1. Create a user profile using the command: <span class="code">`CRTUSRPRF`</span>
+1. Create a user profile using the command: `CRTUSRPRF`
 1. Create a temporary library, for example:  
     ```
     CRTLIB CFTTMP
@@ -40,11 +41,12 @@ Perform the following steps:
 
 > **Note**
 >
-> If you want to add or modify the installation parameters, you must run the INSTALL command after selecting F4. Answer the prompted questions to configure the product for your production. At the end of your first installation, press F9 to execute the recall command. This command must be used for all your deployments.
+> Note: If you want to add or modify the installation parameters, you must run the INSTALL command after selecting F4. Answer the prompted questions to configure the product for your production. At the end of your first installation, press F9 to execute the recall command. This command must be used for all your deployments.
 
 1. Use Central Governance to deploy and configure your Transfer CFTs as needed.
 
-## Create a {{< TransferCFT/axwayvariablesComponentShortName  >}} deployment package for standalone usage
+Create a {{< TransferCFT/axwayvariablesComponentShortName  >}} deployment package for standalone usage
+-----------------------------------------------------------------------------------------------------------
 
 In this procedure, you must first create a SAVF file that contains all of your necessary configurations for your deployment including:
 
@@ -53,7 +55,7 @@ In this procedure, you must first create a SAVF file that contains all of your n
 
 > **Note**
 >
-> If you create partners to export, DO NOT use the NSPART parameter in the CFTPART definition. The target Transfer CFT instead uses the CFTPARM PART/NPART values.
+> Note: If you create partners to export, DO NOT use the NSPART parameter in the CFTPART definition. The target Transfer CFT instead uses the CFTPARM PART/NPART values.
 
 - Flows (CFTSEND and CFTRECV)
 - SSL certificates
@@ -73,7 +75,8 @@ On the local machine where you have {{< TransferCFT/suitevariablesTransferCFTNam
     CPYF FROMFILE(CFTPROD/UTIN) TOFILE(CFTCONF/UTIN) FROMMBR(CGPARAM) TOMBR(TCPPARAM)
     ```
 1. Create a backup for your library CFTCONF, for example:  
-    ``` 1. CRTSAVF FILE(CFTCONF/CFTCONFSVF) 2. SAVLIB LIB(CFTCONF) DEV(\*SAVF) SAVF(CFTCONF/CFTCONFSVF) 3. Get the CFTCONFSVF.savf (in binary mode)
+    ```  
+     1. CRTSAVF FILE(CFTCONF/CFTCONFSVF) 2. SAVLIB LIB(CFTCONF) DEV(\*SAVF) SAVF(CFTCONF/CFTCONFSVF) 3. Get the CFTCONFSVF.savf (in binary mode)
     ```
 
 On the other machines, where you want to deploy {{< TransferCFT/suitevariablesTransferCFTName  >}}:
@@ -83,7 +86,8 @@ On the other machines, where you want to deploy {{< TransferCFT/suitevariablesTr
     CRTLIB CFTTMP
     ```
 1. Create two save file (\*SAVF) in the CFTTMP library, for example:  
-    ``` 1. CRTSAVF FILE(CFTTMP/CFT32XL) TEXT('Transfer CFT Distribution') 2. CRTSAVF FILE(CFTTMP/CFTCONFSVF) TEXT('CFT configuration')
+    ```  
+     1. CRTSAVF FILE(CFTTMP/CFT32XL) TEXT('Transfer CFT Distribution') 2. CRTSAVF FILE(CFTTMP/CFTCONFSVF) TEXT('CFT configuration')
     ```
 1. Use FTP in binary mode to send the save file to an Iserie system. Open an FTP session, and enter:  
     ```
@@ -104,21 +108,23 @@ On the other machines, where you want to deploy {{< TransferCFT/suitevariablesTr
 
 > **Note**
 >
-> When you run INSTALL without parameters, you run the default installation with the CFTPGM and CFTPROD libraries.
+> Note: When you run INSTALL without parameters, you run the default installation with the CFTPGM and CFTPROD libraries.
 
 > **Note**
 >
-> As of Transfer CFT 3.3.2, you can define the user for the Transfer CFT installation. This user can be different from the current user. From the INSTALL command, select F4 (Prompt) and modify the USERINST value. This user must exist on the machine; if it does not, you can use the CRTUSRPRF command to create it.
+> Note: As of Transfer CFT 3.3.2, you can define the user for the Transfer CFT installation. This user can be different from the current user. From the INSTALL command, select F4 (Prompt) and modify the USERINST value. This user must exist on the machine; if it does not, you can use the CRTUSRPRF command to create it.
 
 1. Restore the Transfer CFT configuration save file, for example:  
     ```
     RSTLIB SAVLIB(CFTCONF) DEV(\*SAVF) SAVF(CFTTMP/CFTCONFSVF) RSTLIB(CFTPROD)
     ```
 1. Apply your configuration to your new environment, for example:  
-    ``` 1. CFTUTIL PARAM('#CFTPROD/<CFTCONF>) 2. PKIUTIL PARAM('#CFTPROD/<PKICONF>')
+    ```  
+     1. CFTUTIL PARAM('\#CFTPROD/<CFTCONF>) 2. PKIUTIL PARAM('\#CFTPROD/<PKICONF>')
     ```
 
-## Limitations
+Limitations
+-----------
 
 - Transfer CFT Express Package does not support cluster mode installations.
 - Transfer CFT Express Package cannot embed a Transfer CFT upgrade pack.

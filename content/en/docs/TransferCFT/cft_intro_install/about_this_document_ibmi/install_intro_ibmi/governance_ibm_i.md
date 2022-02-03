@@ -4,13 +4,14 @@
     "weight": "230"
 }This section describes how to manually modify the Transfer CFT configuration to enable Central Governance connectivity in command line.
 
-## Prerequisites
+Prerequisites
+-------------
 
 1. Stop Transfer CFT and Copilot if running.
 1. Ensure that all UCONF values used to identify a Transfer CFT instance are defined. These parameters include:
-    -   cft.full\_hostname
-    -   cft.instance\_id
-    -   cft.instance\_group
+    -   cft.full_hostname
+    -   cft.instance_id
+    -   cft.instance_group
 
       
     Use the format:  
@@ -18,12 +19,13 @@
     CFTUTIL uconfset id=cft.instance_id, value=<cft_id>
     ```
 
-## Procedure
+Procedure
+---------
 
 The manual procedure consists of the following steps, which are detailed below:
 
 1. Set the UCONF parameter values for Central Governance.
-1. Enable {{< TransferCFT/suitevariablesCentralGovernanceName >}}.
+1. Enable {{< TransferCFT/suitevariablesCentralGovernanceName  >}}.
 1. Start Copilot to register.
 
 #### Set UCONF values
@@ -32,8 +34,8 @@ Use the {{< TransferCFT/suitevariablesCentralGovernanceName  >}} installation va
 
 - cg.host
 - cg.port
-- cg.mutual\_auth\_port
-- cg.shared\_secret
+- cg.mutual_auth_port
+- cg.shared_secret
 
 Use the format:
 

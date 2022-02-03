@@ -13,7 +13,8 @@
 - Transfer CFT can detect and use available CPACF features (hardware assist). CPACF is a free IBM feature for the z/Series.
 - The SSL handshake may use a lot of CPU cycles depending on the length of the asymmetric (RSA) key. Using an IBM Crypto Express coprocessor, along with a supporting PKI exit, may improve performance.
 
-## Using zIIP
+Using zIIP
+----------
 
 This section describes how Transfer CFT z/OS uses zIIP capability for Transfer CFT compression. The System z Integrated Information Processor, zIIP, is a special purpose engine available on IBM z9 and z10 mainframes that enables you to significantly reduce the cost of computing by reducing CPU consumption.
 
@@ -23,7 +24,8 @@ To use the zIIP feature:
 - You require a minimum z/OS version of 1.10.
 - Set ziipsup to 1 to activate. You can modify this in the member of target.UPARM(CNFENV), which by default is set to 0.
 
-## Cryptographic devices and supported algorithms
+Cryptographic devices and supported algorithms
+----------------------------------------------
 
 ### Available SSL cryptographic devices
 

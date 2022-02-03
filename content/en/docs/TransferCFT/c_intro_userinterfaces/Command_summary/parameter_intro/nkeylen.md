@@ -1,7 +1,7 @@
 {
     "title": "nkeylen",
     "linkTitle": "nkeylen",
-    "weight": "2210"
+    "weight": "2230"
 }<span id="nkeylen"></span>
 
 ### nkeylen
@@ -10,7 +10,7 @@
 
 PeSIT E
 
-**\[NKEYLEN = <u>{FKEYLEN value</u> | n}\]**
+**[NKEYLEN = <span class="underline">{FKEYLEN value</span> &#124; n}]**
 
 Length (in bytes) of the key of an indexed file.
 

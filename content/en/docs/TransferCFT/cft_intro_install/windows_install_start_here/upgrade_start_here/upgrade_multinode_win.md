@@ -1,28 +1,31 @@
 {
     "title": "Upgrade a Transfer CFT multi-node installation",
     "linkTitle": "Upgrade a multi-node installation",
-    "weight": "200"
+    "weight": "190"
 }This section describes how to upgrade from a Transfer CFT 3.1.3, 3.2.x, 3.3.2, or 3.4 multi-node, multihost installation to Transfer CFT {{< TransferCFT/axwayvariablesReleaseNumber  >}}.
 
 As of {{< TransferCFT/axwayvariablesComponentLongName  >}} 3.4 there is no separate upgrade package, you use the installation package to perform an upgrade procedure as described in the sections below.
 
 <span id="Before"></span>
 
-## Before you start
+Before you start
+----------------
 
 Before beginning the upgrade procedure, download the Transfer CFT installation kit available at [support.axway.com](https://support.axway.com/).
 
 > **Note**
 >
-> Remember that Transfer CFT clusters must be fully stopped while performing an upgrade.
+> Note: Remember that Transfer CFT clusters must be fully stopped while performing an upgrade.
 
-## Limitation
+Limitation
+----------
 
 During an upgrade, if the CFTCOM file path is greater than 64 characters the COM file is not migrated, and you must migrate it manually.
 
-## Procedure
+Procedure
+---------
 
-For details on shared disks, node commands, and other multi-node considerations, refer to the *Transfer CFT {{< TransferCFT/axwayvariablesReleaseNumber  >}} User Guide &gt; Manage multi-node architecture*. For more information on Upgrading Transfer CFT, see <a href="../upgrade_intro_win" class="MCXref xref">Upgrade Transfer CFT</a> for Windows.
+For details on shared disks, node commands, and other multi-node considerations, refer to the *Transfer CFT {{< TransferCFT/axwayvariablesReleaseNumber  >}} User Guide &gt; Manage multi-node architecture*. For more information on Upgrading Transfer CFT, see <a href="../upgrade_intro_win" class="MCXref xref">Upgrade Transfer CFT</a>for Windows.
 
 ### Upgrade all hosts
 
@@ -30,27 +33,27 @@ For details on shared disks, node commands, and other multi-node considerations,
     ```
     copstop -f
     ```
-
 1. Connect to the first machine and execute the following command:
-
 1. ```
-    .\\Transfer_CFT_{{< TransferCFT/axwayvariablesReleaseNumber >}}_Install_win-x86-64_<BN>.exe --architecture first_host --installdir <installdir>
+    .\\Transfer_CFT_ 3.10
+    _Install_win-x86-64_<BN>.exe --architecture first_host --installdir <installdir>
     ```
 
      
 
 1. For each additional host, connect to the machine and execute the following command:  
     ```
-    .\\Transfer_CFT_{{< TransferCFT/axwayvariablesReleaseNumber >}}_Install_win-x86-64_<BN>.exe --architecture additional_host --runtimedir <runtimedir>
+    .\\Transfer_CFT_ 3.10
+    _Install_win-x86-64_<BN>.exe --architecture additional_host --runtimedir <runtimedir>
     ```
 
 - Use the two following parameters, depending on if this is the first host or an additional host:
-    -   <span class="code">`architecture `</span>and <span class="code">`installdir `</span>(first\_host), *or*
-    -   <span class="code">`architecture `</span>and <span class="code">`runtimedir `</span>(additional\_host)
+    -   `architecture `and `installdir `(first_host), *or*
+    -   `architecture `and `runtimedir `(additional_host)
 - Where:
-    -   --architecture &lt;architecture>: Installation architecture (first\_host or additional\_host).
-    -   --installdir &lt;installdir>: For a legacy upgrade, this is the directory where the Axway Installer was installed. When this parameter is assigned, it overwrites any reference in the configuration file (first\_host).
-    -   --runtimedir &lt;runtimedir>: For a legacy upgrade, this is the shared data directory where the Axway Installer was installed. When this parameter is assigned, it overwrites any reference in the configuration file (additional\_host).
+    -   --architecture &lt;architecture&gt;: Installation architecture (first_host or additional_host).
+    -   --installdir &lt;installdir&gt;: For a legacy upgrade, this is the directory where the Axway Installer was installed. When this parameter is assigned, it overwrites any reference in the configuration file (first_host).
+    -   --runtimedir &lt;runtimedir&gt;: For a legacy upgrade, this is the shared data directory where the Axway Installer was installed. When this parameter is assigned, it overwrites any reference in the configuration file (additional_host).
 
 ### Restart the upgraded Transfer CFT multihost multi-node environment
 
@@ -83,7 +86,8 @@ For details on shared disks, node commands, and other multi-node considerations,
 
 Once Transfer CFT has been upgraded on a host you can start that instance, there is no need to wait until Transfer CFT is upgraded on every host.
 
-## Post upgrade
+Post upgrade
+------------
 
 After completing the upgrade procedure, your Transfer CFT {{< TransferCFT/axwayvariablesComponentVersion  >}}, exec scripts are operational. However, you must rebuild your programs that use APIs and exits.
 

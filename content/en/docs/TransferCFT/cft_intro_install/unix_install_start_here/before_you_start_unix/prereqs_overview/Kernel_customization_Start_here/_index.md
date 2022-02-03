@@ -24,12 +24,13 @@ customization procedures are described for the following systems:
 
 > **Note**
 >
-> No additional steps are necessary to modify the IBM AIX kernel as the ODM (Object Data Manager) manages this.
+> Note: No additional steps are necessary to modify the IBM AIX kernel as the ODM (Object Data Manager) manages this.
 
 For additional information on customization issues,
 contact your system administrator or the manufacturer's support service.
 
-## Customization details
+Customization details
+---------------------
 
 Kernel customization concerns one or more of the following aspects:
 
@@ -57,4 +58,4 @@ Note:
     are based on a standard system, which is the default configuration
     used when the operating system was installed. If you have already changed
     a specific setting for another application, the current parameter value
-    must be increased by the one recommended for {{< TransferCFT/axwayvariablesComponentShortName >}}.
+    must be increased by the one recommended for {{< TransferCFT/axwayvariablesComponentShortName  >}}.

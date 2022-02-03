@@ -1,8 +1,9 @@
 {
     "title": "Networks and protocols",
     "linkTitle": "Networks and protocols",
-    "weight": "100"
-}## File transfer protocols
+    "weight": "90"
+}File transfer protocols
+-----------------------
 
 A file transfer protocol is
 a set of rules governing connections and file-based data interchange between
@@ -24,4 +25,4 @@ CFT concepts, mechanisms, parameters and protocol concepts.
 
 > **Note**
 >
-> When using Central Governance or Flow Manager with Transfer CFT, the CFTPROT, CFTSEND CFTRECV objects are managed by the governance service. This means that some parameters described in this section are not applicable or should not be edited.
+> Note: When using Central Governance or Flow Manager with Transfer CFT, the CFTPROT, CFTSEND CFTRECV objects are managed by the governance service. This means that some parameters described in this section are not applicable or should not be edited.

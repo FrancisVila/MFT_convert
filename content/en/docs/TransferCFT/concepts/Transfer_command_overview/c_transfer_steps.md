@@ -1,7 +1,7 @@
 {
     "title": "Requester and server modes",
     "linkTitle": "Transfer steps",
-    "weight": "180"
+    "weight": "170"
 }Transfer CFT mechanisms differ depending on if the Transfer CFT is operating in
 requester mode or server mode, as mentioned in the <a href="" class="MCXref xref">Introduction</a>. This section describes the transfer steps
 in relation to each mode.
@@ -15,7 +15,8 @@ in relation to each mode.
 
 For details on using these modes in a Central {{< TransferCFT/suitevariablesGovernance  >}} setting, please refer to the Central {{< TransferCFT/suitevariablesGovernance  >}} {{< TransferCFT/suitevariablesDocTypeUser  >}}.
 
-## Requester mode overview
+Requester mode overview
+-----------------------
 
 Transfer CFT is able to send and receive files, and send messages. Although
 the receiver file can be dynamically created, directories or libraries
@@ -37,14 +38,15 @@ Steps include:
 1. **Disconnect**: On completion of data transfer, the files are closed, the network connection
     is cut after the expiration of the associated hold timeout.
 
-## Server mode overview
+Server mode overview
+--------------------
 
 Transfer CFT accepts transfer requests from the
 network and then operates in server mode.
 
 Steps include:
 
-1. **Receive an incoming call**: {{< TransferCFT/axwayvariablesComponentLongName >}} receives an incoming connection on the communication system, which could be rejected depending on {{< TransferCFT/axwayvariablesComponentLongName >}} limitations and/or parameter settings.
+1. **Receive an incoming call**: {{< TransferCFT/axwayvariablesComponentLongName  >}} receives an incoming connection on the communication system, which could be rejected depending on {{< TransferCFT/axwayvariablesComponentLongName  >}} limitations and/or parameter settings.
 1. **Exchange protocol information**: When the network connection is established, the partners participate in an exchange
     of messages in accordance with the chosen protocol.
 1. **Create or select a
@@ -55,12 +57,12 @@ Steps include:
 1. **Disconnect**: On completion of data transfer, the files are closed, the network connection
     is cut after the expiration of the associated hold timeout.
 
-********<span class="autonumber"></span>Example: Sending in requester mode********
+********Example: Sending in requester mode********
 
 ![](/Images/TransferCFT/temp_session1.png)
 
-********<span class="autonumber"></span> ********
+******** ********
 
-********<span class="autonumber"></span>Example: Receiving in requester mode********
+********Example: Receiving in requester mode********
 
 ![](/Images/TransferCFT/temp_session3.png)

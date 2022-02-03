@@ -1,7 +1,7 @@
 {
     "title": "Monitoring CFT activity:  Start here",
     "linkTitle": "Monitoring activities",
-    "weight": "270"
+    "weight": "260"
 }This section provides the command line operations that you can use to display
 the Transfer CFT Catalog contents. It begins with this introductory topic
 and is comprised of the topics listed in the table below.
@@ -19,5 +19,3 @@ and is comprised of the topics listed in the table below.
 | <a href="../managing_transfer_states/swaitcat_concepts">SWAITCAT - Wait before processing</a> | The SWAITCAT command enables a client (CFTUTIL/CAPI/...) to wait until a given transfer reaches a particular predefined state before acting. |
 | Using Sentinel | Describes how Transfer CFT sends details about sent messages or transfers to Axway Sentinel which centralizes the tracking of transfers. In Axway Sentinel, you can create and execute requests that retrieve and display these details. |
 
-
- 

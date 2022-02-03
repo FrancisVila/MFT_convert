@@ -1,42 +1,42 @@
 {
     "title": "switch",
     "linkTitle": "switch",
-    "weight": "3430"
+    "weight": "3450"
 }<span id="switch"></span>
 
 ### switch
 
 #### CFTACCNT
 
-**\[SWITCH = {<u>00000000</u> | *time*}\]**
+**[SWITCH = {<span class="underline">00000000</span> &#124; *time*}]**
 
 Time at which the {{< TransferCFT/axwayvariablesComponentShortName  >}}
 automatically switches to the alternate statistical file.
 
-- <span style="font-weight: bold;">****000000****</span>
+- ****000000**00**
     (default value)
-- <span style="font-weight: bold;">****any
-    other value****</span> in the HHMMSS format
+- ****any
+    other value**** in the HHMMSSCC format
 
 When this parameter is not defined, {{< TransferCFT/axwayvariablesComponentShortName  >}} switches statistical
 files daily at midnight.
 
 #### CFTLOG
 
-**\[SWITCH = {<u>00000000</u> | *time*}\]**
+**[SWITCH = {<span class="underline">00000000</span> &#124; *time*}]**
 
 The time at which the monitor automatically switches to the alternate
 log file:
 
-- <span style="font-weight: bold;">****000000****</span>
+- ****00000000****
     (default value)
-- <span style="font-weight: bold;">****any
-    other value****</span> in the HHMMSS format
+- ****any
+    other value**** in the HHMMSSCC format
 
 When this parameter is not defined, log files are switched daily at
 midnight.
 
-If you define a value for both <span style="font-weight: bold;">****maxrec****</span>
+If you define a value for both ****maxrec****
 and switch fields, log files are automatically switched:
 
 - Every

@@ -1,7 +1,7 @@
 {
     "title": "Certificate concepts",
     "linkTitle": "Certificate concepts",
-    "weight": "190"
+    "weight": "180"
 }This topic describes the following certificate principles:
 
 - [Establishing
@@ -13,7 +13,8 @@
 
 <span id="Establishing_a_trust_relationship"></span>
 
-## Establishing a trust relationship
+Establishing a trust relationship
+---------------------------------
 
 Certificate Authorities
 (CAs) are entities that validate identities and issue certificates. They
@@ -34,7 +35,8 @@ for further details about Public Key Infrastructure.
 
 <span id="CA_hierarchy"></span>
 
-## CA hierarchy
+CA hierarchy
+------------
 
 In large organizations, it may be appropriate to delegate the responsibility
 for issuing certificates to several different certificate authorities.
@@ -48,7 +50,7 @@ You can delegate certificate-issuing responsibilities to subordinate
 CAs. The X.509 standard includes a model for setting up a hierarchy of
 CAs as shown in the following figure.
 
-********<span class="autonumber"></span>CA hierarchy********
+********CA hierarchy********
 
 ![Relationship between the Root CA and related certificates, such as Asia and Europe](/Images/TransferCFT/certificates3.gif)
 
@@ -83,7 +85,7 @@ root of the hierarchy. A certificate chain is formed that way:
     contains the name (DN) of that certificate's issuer, which is the same
     as the subject name of the next certificate in the chain
 
-********<span class="autonumber"></span>Certificate chains********
+********Certificate chains********
 
 ![View of Trusted Root CA with some related certificates being Untrusted certificates](/Images/TransferCFT/certificates2.gif)
 
@@ -123,7 +125,7 @@ certificate chain is well formed, valid, properly signed, and trustworthy:
 
 The following figure presents an example of this process.
 
-********<span class="autonumber"></span>Verifying a certificate chain********
+********Verifying a certificate chain********
 
 ![Validity checks on Untrusted Authorities, where Root CA is a Trusted Authority](/Images/TransferCFT/certificate1.gif)
 
@@ -131,7 +133,8 @@ The following figure presents an example of this process.
 
 <span id="Certificate_syntax_and_formats"></span>
 
-## Certificate syntax and formats
+Certificate syntax and formats
+------------------------------
 
 X509 Certificates are defined in ISO x509 according to a descriptive
 syntax called ASN1 (Abstract Syntax Notation
@@ -209,7 +212,8 @@ the base64 is mandatory for compatibility with MIME.
 
 A commonly used file extension is pem.
 
-## TLS certificate concepts
+TLS certificate concepts
+------------------------
 
 TLS certificates require the following key usages:
 

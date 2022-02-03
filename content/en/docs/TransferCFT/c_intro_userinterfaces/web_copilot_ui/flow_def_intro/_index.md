@@ -1,7 +1,7 @@
 {
     "title": "Flow definitions",
     "linkTitle": "Flow definitions",
-    "weight": "170"
+    "weight": "160"
 }This page outlines the flow management section of the Transfer CFT UI.
 
 - Partners: Define a partner and set partner characteristics

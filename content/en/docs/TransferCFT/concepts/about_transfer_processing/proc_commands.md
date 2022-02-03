@@ -1,7 +1,7 @@
 {
     "title": "Use processing scripts",
     "linkTitle": "Standard use of processing commands",
-    "weight": "180"
+    "weight": "170"
 }There are 4 stages where you can configure processing - preprocessing, post-processing, ack processing, and for a transfer error. For these, Transfer CFT provides global definitions in the static configuration that are used by default. However, you can override the default scripts, in the CFTSEND, SEND, CFTRECV and RECV commands, using the following parameters:
 
 - `Preexec`: for preprocessing
@@ -11,9 +11,10 @@
 
 > **Note**
 >
-> The exceptions to these rules are described in the following sections.
+> Note: The exceptions to these rules are described in the following sections.
 
-## Methods for executing processing scripts
+Methods for executing processing scripts
+----------------------------------------
 
 There are two ways to execute a processing script, either by referencing a template processing script, or by directly executing a program or a processing script. In either method, you can use symbolic variables, though they are processed differently as described below.
 
@@ -21,7 +22,7 @@ There are two ways to execute a processing script, either by referencing a templ
 
 Using this method, {{< TransferCFT/axwayvariablesComponentLongName  >}} creates a temporary file based on the template processing script, and replaces all symbolic variables with the corresponding values as they relate to the transfer. For example, if &IDTU is in the script, it is replaced by the actual transfer value. {{< TransferCFT/axwayvariablesComponentLongName  >}} then executes this temporary file.
 
-For example, to run the <span class="code">`myscript.sh`</span> script using this method:
+For example, to run the `myscript.sh` script using this method:
 
 ```
 cftsend id=flow01, exec='exec/myscript.sh'
@@ -45,26 +46,28 @@ CFTUTIL END PART=PART01, IDTU=A0000001
 
 Depending on the operating system, the temporary file is treated as follows:
 
-- Windows: The temporary file is automatically deleted.
+Windows: The temporary file is automatically deleted.
 
-- z/OS: The temporary file is automatically deleted.
+- To keep temporary files, you can set CFTNODEL as described in <a href="../../../cft_intro_install/windows_install_start_here/windows_install_start_here/running_cft_for_the_first_time_windows/transfer_procedures_win" class="MCXref xref">Transfer scripts and temporary files</a>.
 
-- IBM i: The temporary file is automatically deleted.
+z/OS: Transfer CFT writes directly to a JES internal reader.
 
-- UNIX: You must add the following lines at the end of the template processing script:
+IBM i: The temporary file is automatically deleted. [voir RDS]
 
-    `rm $0 `
+OpenVMS:The temporary file is automatically deleted. [voir RDS]
 
-    `rm $0.err`
+UNIX: You must add the following lines at the end of the template processing script:
 
-- HP NonStop native environment: You must perform the following steps to remove the temporary file:
-    &lt;ul>&lt;li>#PURGE \[#IN\]&lt;/li>&lt;li>The same BTPURGE procedure as in the previous version is delivered and can be executed&lt;/li>&lt;span class="code">&lt;code>RUN &lt;subvolume>UP.BTPURGE \[#DEFAULTS\]&lt;/code>&lt;/span>&lt;/ul>&lt;/li>
+`rm $0 `
 
-- HP NonStop OSS environment: You must add the following lines at the end of the template processing script:
+`rm $0.err`
 
-    `rm $0 `
+- See <a href="../../../cft_intro_install/unix_install_start_here/run_first_time_ux/run_first_time_ux/cft_temporary_files" class="MCXref xref">Transfer scripts and temporary files</a>for more information.
 
-    `rm $0.err`
+HP NonStop
+
+-  native environment: You must perform the following steps to remove the temporary file:
+    &lt;ul&gt;&lt;li&gt;\#PURGE [\#IN]&lt;/li&gt;&lt;li&gt;The same BTPURGE procedure as in the previous version is delivered and can be executed&lt;/li&gt;&lt;span class="code"&gt;&lt;code&gt;RUN &lt;subvolume&gt;UP.BTPURGE [\#DEFAULTS]&lt;/code&gt;&lt;/span&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;OSS environment: You must add the following lines at the end of the template processing script: &lt;p class="code"&gt;&lt;code&gt;rm $0 &lt;/code&gt;&lt;/p&gt;&lt;p class="code"&gt;&lt;code&gt;rm $0.err&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
 
 <span id="Directly"></span>
 
@@ -74,9 +77,9 @@ Depending on the operating system, the temporary file is treated as follows:
 
 A second method for executing scripts is to directly run a script. This method allows you to put command arguments directly in the exec parameter itself. However, while you may use symbolic variables in the exec, any symbolic variables contained within the script are not replaced during script execution.
 
-For security reasons, you cannot use this method with the SEND/RECV command's PREEXEC, EXEC or ACKEXEC parameters. Doing so generates an error: <span class="code">`CFTT97E cmd prefix not allowed in procedure execution for SEND and RECV commands`</span>.
+For security reasons, you cannot use this method with the SEND/RECV command's PREEXEC, EXEC or ACKEXEC parameters. Doing so generates an error: `CFTT97E cmd prefix not allowed in procedure execution for SEND and RECV commands`.
 
-To implement this method, preface the PREEXEC, EXEC or ACKEXEC value with "<span class="code">`cmd:`</span>". For example:
+To implement this method, preface the PREEXEC, EXEC or ACKEXEC value with "`cmd:`". For example:
 
 ```
 CFTSEND id=flow01, fname=myfile, exec="cmd:myscript.sh &PART &IDT &IDTU"
@@ -85,7 +88,8 @@ CFTSEND id=flow01, fname=myfile, exec="cmd:myscript.sh &PART &IDT &IDTU"
 To call a program, for example CFTUTIL, you can use a similar syntax as shown here:
 
 ```
-CFTSEND id=flow01, fname=myfile, exec="cmd:**CFTUTIL** end part=&PART, idt=&IDT, direct=SEND"
+CFTSEND id=flow01, fname=myfile, exec="cmd:CFTUTIL
+ end part=&PART, idt=&IDT, direct=SEND"
 ```
 
 ****Limitations Unix only****
@@ -104,32 +108,36 @@ If a command is incorrect and cannot be executed, the transfer remains in the ph
 > Tip  
 > Refer to man execve for an exhaustive list, since after a fork in the processes Transfer CFT does not retrieve the EXEC failure.
 
-## Schedule processing
+Schedule processing
+-------------------
 
 You can use the Premindate/Premintime, Postmindate/Postmintime, and Ackmindate/Ackmintime parameters to schedule script processing activity. Additionally you can use prestate=Hold to wait for a START to start pre-processing.
 
-## Throttle processing
+Throttle processing
+-------------------
 
-In some cases you may want to limit the number of scripts launched in parallel by {{< TransferCFT/suitevariablesTransferCFTName  >}} to reduce processing bottlenecks. To do so, set the UCONF <span class="code">`cft.server.max_processing_scripts`</span> parameter to a positive integer to enable and control the number of executed processes.
+In some cases you may want to limit the number of scripts launched in parallel by {{< TransferCFT/suitevariablesTransferCFTName  >}} to reduce processing bottlenecks. To do so, set the UCONF `cft.server.max_processing_scripts` parameter to a positive integer to enable and control the number of executed processes.
 
 > **Note**
 >
 > Caution  
-> When using this parameter, every end-of-transfer procedure must notify Transfer CFT once the processing is complete. This can be done either via an END or KEEP command (in the case of an error). Failure to signal that processing is complete means that new procedures cannot start once the cft.server.max\_processing\_scripts value is reached.
+> When using this parameter, every end-of-transfer procedure must notify Transfer CFT once the processing is complete. This can be done either via an END or KEEP command (in the case of an error). Failure to signal that processing is complete means that new procedures cannot start once the cft.server.max_processing_scripts value is reached.
 
 ```
-uconfset id=<span class="code">`cft.server.max_processing_scripts`</span>, value=64
+uconfset id= cft.server.max_processing_scripts
+, value=64
 ```
 
 > **Note**
 >
-> This parameter does not apply to the execution of transfer error scripts.
+> Note: This parameter does not apply to the execution of transfer error scripts.
 
-## Commands in scripts
+Commands in scripts
+-------------------
 
 ### End command
 
-The end command monitors the script completion. Depending on the parameter used (appstate, istate, and diagc) you can, for example, check the progression of the script. The end of processing is marked by a CFTUTIL END with <span class="code">`istate=no`</span> (default).
+The end command monitors the script completion. Depending on the parameter used (appstate, istate, and diagc) you can, for example, check the progression of the script. The end of processing is marked by a CFTUTIL END with `istate=no` (default).
 
 #### Define istate and appstate
 
@@ -183,7 +191,7 @@ CFTUTIL KEEP part=&PART,idtu=&IDTU,DIAGP=”Error 404”,DIAGC=”File not found
 
 In your script, you can handle restart from intermediate steps checking the &APPSTATE value. So if the script fails for any reason, you can run a CFTUTIL HALT or CFTUTIL keep then using a CFTUTIL SUBMIT you can restart your script, which runs from the checkpoint that you set.
 
-Exa<span class="bold_in_para">****m****</span>ple  
+Exa****m****ple  
 
 ```
 Go to &APPSTATE
@@ -203,112 +211,244 @@ WLOG MSG="script error at step &appstate"
 
 You can change the maxduration for a transfer restart using the maxduration parameter in the START command.
 
-## Command parameters
+Command parameters
+------------------
 
 ### SEND, CFTSEND
 
-The following table lists the parameters of the SEND and CFTSEND commands.
+Command
 
-QQQ\_QQQ\_QQQ
+Parameter
 
+Value
 
-| Parameter  | Value  | Description  |
-| --- | --- | --- |
-| ACKMINDATE  | integer  | From this date on, the acknowledgement exec file can be launched.  |
-| ACKMINTIME  | integer  | From this time on, the acknowledgement exec file can be launched.  |
-| POSTMINDATE  | integer  | From this date on, the post processing exec file can be launched.  |
-| POSTMINTIME  | integer  | From this time on, the post processing exec file can be launched.  |
-| PREMINDATE  | integer  | From this date on, the preprocessing exec file can be launched.  |
-| PREMINTIME  | integer  | From this time on, the preprocessing exec file can be launched.  |
-| ACKEXEC  | string  | The acknowledgement exec file that will be launched after receiving an ACK or NACK.  |
-| ACKSTATE  | REQUIRE/IGNORE  | Specify if {{< TransferCFT/axwayvariablesComponentShortName  >}} should wait for an ACK/NACK to enter the X phase.  |
-| POSTSTATE  | DISP  | The transfer phase step as it enters the Y phase.  |
-| PREEXEC  | string  | The preprocessing exec file.  |
-| PRESTATE  | DISP/HOLD  | The transfer phase step as it enters the A phase.  |
-| EXECSUBPRE  | LIST/SUBF/FILE  | Group of files: execution policy for preprocessing phase.  |
-| EXECSUB  | LIST/SUBF/FILE  | Group of files: execution policy for post-processing phase.  |
-| EXECSUBA  | LIST/SUBF/FILE  | Group of files: execution policy for acknowledgement phase.  |
+Description
 
+SEND, CFTSEND
+
+ACKMINDATE
+
+integer
+
+From this date on, the acknowledgement exec file can be launched.
+
+ACKMINTIME
+
+integer
+
+From this time on, the acknowledgement exec file can be launched.
+
+POSTMINDATE
+
+integer
+
+From this date on, the post processing exec file can be launched.
+
+POSTMINTIME
+
+integer
+
+From this time on, the post processing exec file can be launched.
+
+PREMINDATE
+
+integer
+
+From this date on, the preprocessing exec file can be launched.
+
+PREMINTIME
+
+integer
+
+From this time on, the preprocessing exec file can be launched.
+
+ACKEXEC
+
+string
+
+The acknowledgement exec file that will be launched after receiving an ACK or NACK.
+
+ACKSTATE
+
+REQUIRE/IGNORE
+
+Specify if {{< TransferCFT/axwayvariablesComponentShortName  >}} should wait for an ACK/NACK to enter the X phase.
+
+POSTSTATE
+
+DISP
+
+The transfer phase step as it enters the Y phase.
+
+PREEXEC
+
+string
+
+The preprocessing exec file.
+
+PRESTATE
+
+DISP/HOLD
+
+The transfer phase step as it enters the A phase.
+
+EXECSUBPRE
+
+LIST/SUBF/FILE
+
+Group of files: execution policy for preprocessing phase.
+
+EXECSUB
+
+LIST/SUBF/FILE
+
+Group of files: execution policy for post-processing phase.
+
+EXECSUBA
+
+LIST/SUBF/FILE
+
+Group of files: execution policy for acknowledgement phase.
 
 ### END
 
-QQQ\_QQQ\_QQQ
+Command
 
-The following table lists the parameters of the END command.
+Parameter
 
+Value
 
-| Parameter  | Value  | Description  |
-| --- | --- | --- |
-| DIAGC  | string  | Specify a comment.  |
-| FNAME  | string  | Modify the FNAME.  |
-| NFNAME  | string  | Modify the NFNAME.  |
-| SIGFNAME  | string  | Modify the SIGFNAME.  |
-| RAPPL  | string  | Modify the RAPPL.  |
-| SAPPL  | string  | Modify the SAPPL.  |
-| RUSER  | string  | Modify the RUSER.  |
-| SUSER  | string  | Modify the SUSER.  |
-| RPASSWD  | string  | Modify the RPASSWD.  |
-| SPASSWD  | string  | Modify the SPASSWD.  |
-| ISTATE  | NO/YES  | Indicates:<br/> • YES: The END command is only a checkpoint.<br/> • NO (default): This is the final end command indicating that the processing is over. Once the END completes, the transfer enters the next phase. |
-| PHASE  | char  | The transfer phase at which the command is applied.  |
-| PHASE STEP  | char  | The phase step at which the command is applied.  |
-| APPSTATE  | string  | Specify an application state for the processing script that will help the script to restart at the right step if the script is relaunched.  |
+Description
 
+END
+
+DIAGC
+
+string
+
+Specify a comment.
+
+FNAME
+
+string
+
+Modify the FNAME.
+
+NFNAME
+
+string
+
+Modify the NFNAME.
+
+SIGFNAME
+
+string
+
+Modify the SIGFNAME.
+
+RAPPL
+
+string
+
+Modify the RAPPL.
+
+SAPPL
+
+string
+
+Modify the SAPPL.
+
+RUSER
+
+string
+
+Modify the RUSER.
+
+SUSER
+
+string
+
+Modify the SUSER.
+
+RPASSWD
+
+string
+
+Modify the RPASSWD.
+
+SPASSWD
+
+string
+
+Modify the SPASSWD.
+
+ISTATE
+
+NO/YES
+
+Indicates:
+
+- YES: The END command is only a checkpoint.
+- NO (default): This is the final end command indicating that the processing is over. Once the END completes, the transfer enters the next phase.
+
+PHASE
+
+char
+
+The transfer phase at which the command is applied.
+
+PHASE STEP
+
+char
+
+The phase step at which the command is applied.
+
+APPSTATE
+
+string
+
+Specify an application state for the processing
+script that will help the script to restart at the right step if the
+script is relaunched.
 
 ### KEEP
 
-QQQ\_QQQ\_QQQ
 
-The following table lists the parameters of the KEEP command.
-
-
-| Parameter  | Value  | Description  |
-| --- | --- | --- |
-| DIAGP  | string  | Specify a customized error that will be set for DIAGP in the catalog.  |
-| DIAGC  | string  | Specify a customized error that will be set for DIAGC in the catalog.  |
-| PHASE  | char  | The transfer phase at which the command is applied.  |
-| PHASE STEP  | char  | The phase step at which the command is applied.  |
+| Command  | Parameter  | Value  | Description  |
+| --- | --- | --- | --- |
+| KEEP  | DIAGP  | string  | Specify a customized error that will be set for DIAGP in the catalog.  |
+| KEEP  | DIAGC  | string  | Specify a customized error that will be set for DIAGC in the catalog.  |
+| KEEP  | PHASE  | char  | The transfer phase at which the command is applied.  |
+| KEEP  | PHASE STEP  | char  | The phase step at which the command is applied.  |
 
 
 ### HALT
 
-QQQ\_QQQ\_QQQ
 
-The following table lists the parameters of the HALT command.
-
-
-| Parameter  | Value  | Description  |
-| --- | --- | --- |
-| DIAGP  | string  | Specify a customized error that will be set for DIAGP in the catalog.  |
-| DIAGC  | string  | Specify a customized error that will be set for DIAGC in the catalog.  |
-| PHASE  | char  | The transfer phase at which the command is applied.  |
-| PHASE STEP  | char  | The phase step at which the command is applied.  |
+| Command  | Parameter  | Value  | Description  |
+| --- | --- | --- | --- |
+| HALT  | DIAGP  | string  | Specify a customized error that will be set for DIAGP in the catalog.  |
+| HALT  | DIAGC  | string  | Specify a customized error that will be set for DIAGC in the catalog.  |
+| HALT  | PHASE  | char  | The transfer phase at which the command is applied.  |
+| HALT  | PHASE STEP  | char  | The phase step at which the command is applied.  |
 
 
 ### SUBMIT
 
-QQQ\_QQQ\_QQQ
 
-The following table lists the parameters of the SUBMIT command.
-
-
-| Parameter  | Value  | Description  |
-| --- | --- | --- |
-| APPSTATE  | string  | Specify an application state for the processing script that will allow a SUBMIT to occur at the correct script step.  |
-| PHASE  | char  | The transfer phase at which the command is applied.  |
-| PHASE STEP  | char  | The phase step at which the command is applied.  |
+| Command  | Parameter  | Value  | Description  |
+| --- | --- | --- | --- |
+| SUBMIT  | APPSTATE  | string  | Specify an application state for the processing script that will allow a SUBMIT to occur at the correct script step.  |
+| - &quot; -  | PHASE  | char  | The transfer phase at which the command is applied.  |
+| - &quot; -  | PHASE STEP  | char  | The phase step at which the command is applied.  |
 
 
 ### START
 
-QQQ\_QQQ\_QQQ
 
-The following table lists the parameters of the START command.
-
-
-| Parameter  | Value  | Description  |
-| --- | --- | --- |
-| PHASE  | char  | The transfer phase at which the command is applied.  |
-| MAXDURATION  | integer  | Restart a transfer that reached its maxduration, time in minutes {<u>0</u>...32767}.  |
-| PHASE STEP  | char  | The phase step at which the command is applied.  |
+| Command  | Parameter  | Value  | Description  |
+| --- | --- | --- | --- |
+| START  | PHASE  | char  | The transfer phase at which the command is applied.  |
+| - &quot; -  | MAXDURATION  | integer  | Restart a transfer that reached its maxduration, time in minutes {<span >0</span>...32767}.  |
+| - &quot; -  | PHASE STEP  | char  | The phase step at which the command is applied.  |
 

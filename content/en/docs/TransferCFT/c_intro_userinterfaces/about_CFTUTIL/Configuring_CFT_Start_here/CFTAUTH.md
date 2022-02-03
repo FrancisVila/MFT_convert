@@ -1,9 +1,16 @@
 {
     "title": "Authorized flow definitions - CFTAUTH  ",
     "linkTitle": "CFTAUTH - Authorized templates",
-    "weight": "290"
+    "weight": "280"
 }<span id="Listing_model_file_identifiers__IDF_"></span>This section describes
-the CFTAUTH command and parameters you use to create lists of authorized or unauthorized file transfer identifiers.
+the CFTAUTH command and parameters you use to create lists of authorized or unauthorized file transfer identifiers. For each CFTAUTH object, you can define either an FNAME or an IDF using the following syntax:
+
+```
+CFTAUTH     ID = <authorization_list_1>,
+IDF = <file ID>
+CFTAUTH     ID = <authorization_list_2>,
+FNAME = <filename>
+```
 
 ****Related
 topics****
@@ -15,7 +22,7 @@ authorized/unauthorized identifiers list](../../../../concepts/cft_configuration
 
 | Parameter  | Description  |
 | --- | --- |
-| <a href="../../../command_summary/parameter_intro/id">ID</a> | Authorization list identifier. If the identifier is prefixed by"<code>NOT</code>", the object indicates a list of forbidden file identifiers. |
+| <a href="../../../command_summary/parameter_intro/id">ID</a> | Authorization list identifier. If the identifier is prefixed by&quot;<code>NOT</code>&quot;, the object indicates a list of forbidden file identifiers. For example, CFTAUTH ID = NOTSIBM1. |
 | <a href="../../../command_summary/parameter_intro/fname">FNAME</a> | The name of the file where authorized or unauthorized file identifiers (IDF) are listed.<br/> Each element of the list in this file can be:<br/> • An explicit file identifier, or<br/> • A mask (using wildcards '*?'), where all of the file identifiers corresponding to this mask are affected<br/> There is no limit to the number of identifiers in this list. |
 | <a href="../../../command_summary/parameter_intro/idf">IDF</a> | List of authorized or unauthorized IDFs.<br/> The value associated with each of these IDFs may be:<br/> • An explicit file identifier, or<br/> • A mask (using wildcards '*?'), where all of the file identifiers corresponding to this mask are affected by the command |
 

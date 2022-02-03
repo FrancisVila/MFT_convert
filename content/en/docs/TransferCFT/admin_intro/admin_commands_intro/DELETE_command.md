@@ -13,12 +13,10 @@ is a temporary file.
 For any selected set of transfers, transfers are processed in batches
 of 20 transfers every 5 seconds.
 
-QQQ\_QQQ\_QQQ
-
-## List of parameters of DELETE command
+**Description**: Use this command to delete one or more catalog entries.
 
 
-| DELETE <br /> Parameters  | Description  |
+| Parameter  | Description  |
 | --- | --- |
 | <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/blknum">BLKNUM</a>  | Block number. If the values '*' or ' ' are used then all transfers are selected regardless of the block that they belong to. |
 | <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/direct">DIRECT</a>  | Transfer direction for the requests in question.<br/> The possible values are:<br/> • BOTH: (default) takes both send transfers and receive transfers into account<br/> • RECV: limits the action to receive transfers<br/> • SEND: limits the action to send transfers |
@@ -51,12 +49,9 @@ identifier begins with "SIE" and contains 5 characters in all.
 DELETE
 PART = HQ,
  
- 
 DIRECT = SEND,
  
- 
 IDF = ACCNT
- 
 ```
 
 This command deletes all transfers, IDT = \* by default, in the send

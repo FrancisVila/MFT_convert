@@ -1,7 +1,7 @@
 {
     "title": "Connection and maximum transfer troubleshooting",
-    "linkTitle": "Connection / maximum transfer troubleshooting",
-    "weight": "250"
+    "linkTitle": "Connection and maximum transfer troubleshooting",
+    "weight": "240"
 }This section provides transfer examples that demonstrate parameter dependencies and typical log outputs, including errors, which you may encounter when using similar values. The goal is to understand the effect of parameter combinations, and be able to adapt settings to your particular needs.
 
 The following examples show the output from both the server and requester sides.
@@ -15,13 +15,15 @@ See <a href="../session_troubleshooting" class="MCXref xref">Session related tro
 
 See the <a href="../faq" class="MCXref xref">Frequently asked questions</a> for common questions and answers on parameter usage, license keys, and so on.
 
-## Remote (partner) diagnostic codes
+Remote (partner) diagnostic codes
+---------------------------------
 
-When troubleshooting, remember that if the [DIAG](../../../troubleshoot_intro/messages_and_error_codes_start_here/diagi_diagnostic_codes) is greater than 500, it refers to a remote issue. To find the actual DIAG, subtract 500 from the displayed code. If the DIAG is 962, for example, the issue is a remote problem corresponding to DIAG 462 (no data sent on network).
+When troubleshooting, remember that if the [DIAG](../../../troubleshoot_intro/about_error_codes/about_diagnostic_codes/diagi_diagnostic_codes) is greater than 500, it refers to a remote issue. To find the actual DIAG, subtract 500 from the displayed code. If the DIAG is 962, for example, the issue is a remote problem corresponding to DIAG 462 (no data sent on network).
 
 <span id="Example:"></span>
 
-## Examples
+Examples
+--------
 
 <span id="Example:4"></span>
 
@@ -138,13 +140,13 @@ The transfers are executed quickly, in rapid succession because {{< TransferCFT/
 
 > **Note**
 >
-> Remember one session is kept for incoming connections, so in this case only two sessions were used.
+> Note: Remember one session is kept for incoming connections, so in this case only two sessions were used.
 
 `MAXTRANS=3, MAXCNX=6, DISCTD=120 (seconds session is still open)`
 
 ```
 ...
-15/06/23 <u>17:40:46</u> CFTT53I Requester file selected <IDTU=A0000VKQ PART=SUN35-1 IDF=BIN IDT=F2402472>
+15/06/23 <span class="underline">17:40:46</span> CFTT53I Requester file selected <IDTU=A0000VKQ PART=SUN35-1 IDF=BIN IDT=F2402472>
 15/06/23 17:40:46 CFTT55I Requester file opened <IDTU=A0000VKQ PART=SUN35-1 IDF=BIN IDT=F2402472>
 ...
 15/06/23 17:40:47 CFTH56I PESIT Requester session opened <PART=SUN35-2 IDS=00004 pi7=03:10240 HOST=127.0.0.1>
@@ -155,13 +157,13 @@ The transfers are executed quickly, in rapid succession because {{< TransferCFT/
 15/06/23 17:40:47 CFTT54I Requester file deselected <IDTU=A0000VKQ PART=SUN35-1 IDF=BIN IDT=F2402472>
 ...
  
-15/06/23 <u>17:40:47</u> CFTH56I PESIT Requester session opened <PART=SUN35-3 IDS=00006 pi7=03:10240 HOST=127.0.0.1>
+15/06/23 <span class="underline">17:40:47</span> CFTH56I PESIT Requester session opened <PART=SUN35-3 IDS=00006 pi7=03:10240 HOST=127.0.0.1>
 15/06/23 17:40:47 CFTH56I PESIT Requester session opened <PART=SUN35-4 IDS=00005 pi7=03:10240 HOST=127.0.0.1>
 15/06/23 17:40:47 CFTT57I Requester transfer started <IDTU=A0000VKS PART=SUN35-3 IDF=BIN IDT=F2402474 >
 ...
 15/06/23 17:40:47 CFTT56I Requester file closed <IDTU=A0000VKU PART=SUN35-5 IDF=BIN IDT=F2402480>
 15/06/23 17:40:47 CFTT54I Requester file deselected <IDTU=A0000VKU PART=SUN35-5 IDF=BIN IDT=F2402480>
-15/06/23 <u>17:40:47</u> CFTT88I+<IDTU=A0000VKU WORKINGDIR= FNAME=pub/FTEST NBC=7104>
+15/06/23 <span class="underline">17:40:47</span> CFTT88I+<IDTU=A0000VKU WORKINGDIR= FNAME=pub/FTEST NBC=7104>
 ```
 
 **Scenario 2**
@@ -170,13 +172,13 @@ In Scenario 2 Transfer CFT is limited by the session, meaning that the same 5 p
 
 > **Note**
 >
-> DISCTD has an effect on latency.
+> Note: DISCTD has an effect on latency.
 
 `MAXTRANS=6, MAXCNX=3, DISCTD=120 (seconds session is still open)`
 
 ```
 ...
-15/06/23 <u>17:58:21</u> CFTI34I PID=10956 CFTTFIL Task started successfully
+15/06/23 <span class="underline">17:58:21</span> CFTI34I PID=10956 CFTTFIL Task started successfully
 15/06/23 17:58:21 CFTT53I Requester file selected <IDTU=A0000VL2 PART=SUN35-1 IDF=T1 IDT=F2402492>
 15/06/23 17:58:21 CFTT55I Requester file opened <IDTU=A0000VL2 PART=SUN35-1 IDF=T1 IDT=F2402492>
 ...
@@ -188,7 +190,7 @@ In Scenario 2 Transfer CFT is limited by the session, meaning that the same 5 p
 ...
 15/06/23 18:00:43 CFTT56I Requester file closed <IDTU=A0000VL6 PART=SUN35-5 IDF=T1 IDT=F2402500>
 15/06/23 18:00:43 CFTT54I Requester file deselected <IDTU=A0000VL6 PART=SUN35-5 IDF=T1 IDT=F2402500>
-15/06/23 <u>18:00:48</u> CFTH61I PESIT Server session closed <PART=SUN35-5 IDS=00012>
+15/06/23 <span class="underline">18:00:48</span> CFTH61I PESIT Server session closed <PART=SUN35-5 IDS=00012>
 ```
 
 Related topics

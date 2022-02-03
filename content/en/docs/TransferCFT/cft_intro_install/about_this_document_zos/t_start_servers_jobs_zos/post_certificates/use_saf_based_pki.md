@@ -15,4 +15,4 @@
 
 > **Note**
 >
-> A SAF PKI implementation in Transfer CFT requires that the ‘ring-specific profile checking' (RDATALIB class) be activated.
+> Note: A SAF PKI implementation in Transfer CFT requires that the ‘ring-specific profile checking' (RDATALIB class) be activated.

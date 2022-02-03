@@ -8,12 +8,13 @@ of correctly terminated transfers. See also the parameter list
 
 <span id="About_the_CFTACCNT_object"></span>
 
-## About the CFTACCNT object
+About the CFTACCNT object
+-------------------------
 
 Two recording modes are available:
 
 - Recording data
-    in {{< TransferCFT/axwayvariablesComponentShortName >}} files. When the primary file is full, {{< TransferCFT/axwayvariablesComponentShortName >}}
+    in {{< TransferCFT/axwayvariablesComponentShortName  >}} files. When the primary file is full, {{< TransferCFT/axwayvariablesComponentShortName  >}}
     switches to an alternate file. This mode is available on all operating
     systems.
 - Recording data
@@ -37,7 +38,7 @@ of the CFTPARM command is defined.
 Two recording modes can be used, depending on the system:
 
 - Recording of data
-    in {{< TransferCFT/axwayvariablesComponentShortName >}} files. In this case, the CFTACCNT command defines the names of the files receiving
+    in {{< TransferCFT/axwayvariablesComponentShortName  >}} files. In this case, the CFTACCNT command defines the names of the files receiving
     the data and their management (parameter setting TYPE = FILE). This mode
     is available on ALL SYSTEMS.
 
@@ -101,7 +102,8 @@ To use the account file in an application, you must refer to the header file tha
 
 <span id="Recordin"></span>
 
-## Recording mode TYPE
+Recording mode TYPE
+-------------------
 
 This section describes the parameters to define the type of recording
 mode. You can select from either the saving the recorded information in
@@ -176,15 +178,15 @@ CFTACCNT TYPE = FILE
 
 `[ EXEC   = filename ]`
 
-`[ LANGUAGE   = { COBOL   | C } ]`
+`[ LANGUAGE   = { COBOL   &#124; C } ]`
 
-`[ MAXREC   = { 0   | n } ]`
+`[ MAXREC   = { 0   &#124; n } ]`
 
-`[ MODE   = { REPLACE   | CREATE | DELETE } ]`
+`[ MODE   = { REPLACE   &#124; CREATE &#124; DELETE } ]`
 
-`[ SWITCH   = { 00000000   | time } ]`
+`[ SWITCH   = { 00000000   &#124; time } ]`
 
-`[ FORMAT   = { V23   | 23 | V24 | 24} ]`
+`[ FORMAT   = { V23   &#124; 23 &#124; V24 &#124; 24} ]`
 
  
 
@@ -198,8 +200,8 @@ CFTACCNT TYPE = SYST
 
 `[ COMMENT   = string ]`
 
-`[ FORMAT   = { V23   | 23 | V24 | 24} ]`
+`[ FORMAT   = { V23   &#124; 23 &#124; V24 &#124; 24} ]`
 
-`[ LANGUAGE   = { COBOL   | C } ]`
+`[ LANGUAGE   = { COBOL   &#124; C } ]`
 
-`[ MODE   = { REPLACE   | CREATE | DELETE } ]`
+`[ MODE   = { REPLACE   &#124; CREATE &#124; DELETE } ]`

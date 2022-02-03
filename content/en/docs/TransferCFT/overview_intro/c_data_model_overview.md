@@ -4,9 +4,7 @@
     "weight": "170"
 }The purpose of {{< TransferCFT/axwayvariablesComponentShortName  >}} is to exchange and
 manage files transfers, meaning a file
-exchange between two or more computers.
-
-In any file exchange, one computer is the sender,
+exchange between two or more computers. In any file exchange, one computer is the sender,
 and another is the receiver. The two computers are linked together by
 a network (TCP/IP). A file transfer consists of sending:
 
@@ -19,7 +17,8 @@ Prior to creating new data flows with {{< TransferCFT/axwayvariablesComponentSho
 
 <span id="Defining_partners__Start_here"></span><span id="CFTPART___Definition_of_a_Partner"></span>
 
-## What is a {{< TransferCFT/axwayvariablesComponentShortName  >}} partner?
+What is a {{< TransferCFT/axwayvariablesComponentShortName  >}} partner?
+-----------------------------------------------------------------------------
 
 In {{< TransferCFT/axwayvariablesComponentShortName  >}} a partner is
 a logical entity such as a bank, a government agency, or trading partner, which can
@@ -30,9 +29,9 @@ When you define a partner you require two sets of information to create a minima
 
 > **Note**
 >
-> For the Transfer CFT network definition, the typical usage is CFTTCP.
+> Note: For the Transfer CFT network definition, the typical usage is CFTTCP.
 
-#### Partner definition
+### Partner definition
 
 The CFTPART/CFTTCP commands describe the following required characteristics of each partner's environment:
 
@@ -42,12 +41,12 @@ The CFTPART/CFTTCP commands describe the following required characteristics of e
 
 <span id="Associated_configuration_parameters"></span>
 
-#### Associated parameters
+### Associated parameters
 
 For each partner definition some of the parameters in the partner description
 refer to the local environment, while others refer to the remote environment. This means that each partner definition consists of a mix of parameters, some of which relate expressly to your remote partner, and others that are specific to your local environment.
 
-#### Basic definition
+### Basic definition
 
 The partial list of parameters described in this section are required for a new partner, but the default values for most other parameters typically are sufficient for a new user.
 
@@ -69,7 +68,7 @@ For your network connection, CFTTCP, you should define the:
 - Host: Hostname or IP address of the remote partner
 - Class: this refers to the network used, as defined in your local environment by a CFTNET object
 
-#### {{< TransferCFT/axwayvariablesComponentShortName  >}} protocols
+### {{< TransferCFT/axwayvariablesComponentShortName  >}} protocols
 
 {{< TransferCFT/axwayvariablesComponentShortName  >}} supports the following standard protocols:
 
@@ -81,36 +80,39 @@ For each protocol used, there are corresponding values for the
 parameters controlling the size of messages, the compression
 of data, the possibility of resuming a transfer after an incident, etc.
 
-## Data flow modes
+Data flow modes
+---------------
 
 Transferring files consists of defining characteristics for partners and your flows. The previous section provided details on basic partner parameters and concepts. This section defines the concepts you will need in order to create data flows.
 
 There are 4 {{< TransferCFT/axwayvariablesComponentShortName  >}} modes that relate to data transfer. Two modes relate to uploading or downloading data, and the other two relate to who instigates the flow. We'll begin by discussing who begins the data flow conversation.
 
-- <span class="bold_in_para">****Requester mode****</span>: This is the partner that initiates the connection. It is important to note that <span class="italic_in_para">this </span>is the beginning<span class="italic_in_para"> </span>of the<span class="italic_in_para"> protocol </span>connection and not the start of a transfer. The requester waits for the server (remote partner) to accept the connection. They can then mutually identify, and depending on the definition, exchange data transfer attributes.
-- <span class="bold_in_para">****Server mode****</span>: This partner is available for transfer requests coming from the network. If it recognizes the partner and protocol, it can accept and proceed with recording the request in the catalog.
+- ****Requester mode****: This is the partner that initiates the connection. It is important to note that this is the beginning of the protocol connection and not the start of a transfer. The requester waits for the server (remote partner) to accept the connection. They can then mutually identify, and depending on the definition, exchange data transfer attributes.
+- ****Server mode****: This partner is available for transfer requests coming from the network. If it recognizes the partner and protocol, it can accept and proceed with recording the request in the catalog.
 
 The next two mode definitions refer to which partner is sending the data, either a message or a file. The terms used in {{< TransferCFT/axwayvariablesComponentShortName  >}} are:
 
-- <span class="bold_in_para">****Sender mode****</span>: Transfers or uploads the available data to a remote partner.
-- <span class="bold_in_para">****Receiver****</span> **mode**: Downloads available data, either a file or message, from the partner.
+- ****Sender mode****: Transfers or uploads the available data to a remote partner.
+- ****Receiver**** **mode**: Downloads available data, either a file or message, from the partner.
 
 Additional parameters define attributes for scanning folders for files, updating the catalog, creating transfer records, and so on.
 
-## Model files
+Model files
+-----------
 
 Every file transfer requires a model as part of the data flow definition. By default, {{< TransferCFT/axwayvariablesComponentShortName  >}} provides a model so that you do not have to create this object, the IDF (logical file identifier), in order to perform your first file transfers. Once you feel comfortable with {{< TransferCFT/axwayvariablesComponentShortName  >}} commands and configuration concepts, you can modify the model attributes, such as the file name, translation, compression, end-of-transfer scripts, and so on.
 
 - When sending, the CFTSEND ID describes the characteristics of the local file to send
 - When receiving, the CFTRECV ID describes the characteristics of the file to receive locally
 
-## File transfer concepts
+File transfer concepts
+----------------------
 
 Most of the tasks that {{< TransferCFT/axwayvariablesComponentShortName  >}} performs
 involve configuring and executing file transfers, as well as processing
 information if necessary.
 
-### Basic commands for sending and receiving data
+### Commands for sending and receiving data
 
 {{< TransferCFT/axwayvariablesComponentShortName  >}} provides models for sending and receiving data:
 
@@ -134,7 +136,7 @@ Application to
 - Requests
     submitted through the programming interface
 - Requests
-    submitted through the {{< TransferCFT/axwayvariablesComponentShortName >}} utility or GUI
+    submitted through the {{< TransferCFT/axwayvariablesComponentShortName  >}} utility or GUI
 
 {{< TransferCFT/axwayvariablesComponentShortName  >}} to application:
 
@@ -164,7 +166,8 @@ the following types of information:
 
 <span id="Creating_the_default_SEND_template__Start_here"></span>
 
-## About model templates for sending and receiving
+About model templates for sending and receiving
+-----------------------------------------------
 
 ### Send models
 
@@ -181,10 +184,6 @@ CFTSEND template object, used to specify the default values for:
 - An authorized time
     slot and default user associated with the transfers
 
-<span id="CFTSEND_parameter_details"></span>
-
-### 
-
 <span id="Receive_file_parameter_summary"></span>
 
 ### Receive models
@@ -199,7 +198,3 @@ CFTRECV template object, used to specify the default values for:
     compression, call to a user EXIT, an end-of-transfer procedure...)
 - Authorize the default
     time slot and default user associated with the transfers
-
-<span id="Parameters_Associated_with_a_Model_File"></span>
-
-### 

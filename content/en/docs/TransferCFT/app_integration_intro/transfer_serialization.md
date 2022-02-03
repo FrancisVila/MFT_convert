@@ -17,7 +17,8 @@ Additional serialization rules:
 
 <span id="Using"></span>
 
-## Using serialization
+Using serialization
+-------------------
 
 Serialization is supported in REQUESTER mode for send and receive operations except for cyclic requests and RECV file=all.
 
@@ -36,7 +37,7 @@ SEND PART=PARIS, IDF=BIN, SERIAL=X, IDA=A
 SEND PART=PARIS, IDF=BIN, SERIAL=X, IDA=B
 SEND PART=PARIS, IDF=BIN, SERIAL=X, IDA=C
  
-**Results**
+Results
 CFTT57I Requester transfer started <IDTU=<transfer A> PART=PARIS IDF=BIN
 CFTT58I Requester transfer ended <IDTU=<transfer A> PART=PARIS IDF=BIN
 CFTR12I END Treated for USER <my user> <PART=PARIS IDF=BIN >
@@ -59,7 +60,7 @@ SEND PART=PARIS, IDF=BIN, SERIAL=Y, IDA=A
 SEND PART=PARIS, IDF=BIN, SERIAL=Y, IDA=B
 SEND PART=PARIS, IDF=BIN, SERIAL=Y, IDA=C
  
-**Results**
+Results
 CFTT57I Requester transfer started <IDTU=<transfer A> PART=PARIS IDF=BIN
 CFTT58I Requester transfer ended <IDTU=<transfer A> PART=PARIS IDF=BIN
  
@@ -76,7 +77,7 @@ CFTR12I END [for transfer C] Treated for USER <my user> <PART=PARIS IDF=BIN >
 
 > **Note**
 >
-> SEND requests are not serialized with RECV request. Send and receive procedures can have two different values for the SERIAL parameter.
+> Note: SEND requests are not serialized with RECV request. Send and receive procedures can have two different values for the SERIAL parameter.
 
 **<span id="Example_3"></span>Example 3**
 
@@ -90,7 +91,7 @@ SEND PART=RS43, IDF=BIN, SERIAL=X, IDA=A, ACKSTATE=REQUIRE
 SEND PART=RS43, IDF=BIN, SERIAL=X, IDA=B, ACKSTATE=REQUIRE
 SEND PART=RS43, IDF=BIN, SERIAL=X, IDA=C, ACKSTATE=REQUIRE
  
-**Results**
+Results
 CFTT57I Requester transfer started <IDTU=<transfer A> PART=RS43 IDF=BIN
 CFTT58I Requester transfer ended <IDTU=<transfer A> PART=RS43 IDF=BIN
 CFTT59I Server reply transferred <IDT=<IDT transfer A> PART=RS43 IDM=BIN

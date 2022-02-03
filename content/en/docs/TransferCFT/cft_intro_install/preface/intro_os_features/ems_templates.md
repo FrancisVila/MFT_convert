@@ -10,9 +10,10 @@ For general information on how an application obtains event messages from a subs
 
 > **Note**
 >
-> For any HP documentation referenced in this guide, you should check for the most recent version on the HP Support Center.
+> Note: For any HP documentation referenced in this guide, you should check for the most recent version on the HP Support Center.
 
-## Event messages format
+Event messages format
+---------------------
 
 {{< TransferCFT/axwayvariablesComponentLongName  >}} Guardian events were also available in the previous 2.3 version, with the main difference being that each {{< TransferCFT/axwayvariablesComponentLongName  >}} process was defined as a sub system. In contrast, {{< TransferCFT/axwayvariablesComponentLongName  >}} version {{< TransferCFT/axwayvariablesReleaseNumber  >}} only has one defined sub-system.
 
@@ -28,7 +29,7 @@ All messages have the following tokens:
 | ZEMS_TKN_EMPHASIS  | If the value is ZSPI-VAL-TRUE, the event being reported is considered critical. This is the case for ERROR and FATAL log events as well as process errors when using the NonStop mode.  |
 
 
-<span class="autonumber"></span>Event messages
+Event messages
 
 The following table shows the relationship between the event, the subject, and the message type.
 
@@ -39,10 +40,11 @@ The following table shows the relationship between the event, the subject, and t
 | 5  | CFT WARN LOG  | Log warning message  |
 | 6  | CFT ERR LOG  | Log error message  |
 | 7  | CFT FAIL LOG  | Log failure message  |
-| 8  | CFT ACCOUNT  | Account<span > message</span>  |
+| 8  | CFT ACCOUNT  | Account message  |
 
 
-## Activate event log messages
+Activate event log messages
+---------------------------
 
 The CFTLOG object defines the Transfer CFT log file declarations. The name of the destination is provided in the fname parameter, which can be:
 
@@ -58,7 +60,7 @@ You can use the NOTIFY parameter of the CFTLOG object to combine the two destina
 
 > **Note**
 >
-> Refer to the Transfer CFT 3.9 Users Guide, available on the documentation portal, for a description of the CFTLOG object parameters.
+> Note: Refer to the Transfer CFT 3.10 Users Guide, available on the documentation portal, for a description of the CFTLOG object parameters.
 
 **Example**
 
@@ -75,7 +77,8 @@ opermsg= 240,
  
 ```
 
-## Activate event accounting messages
+Activate event accounting messages
+----------------------------------
 
 The CFTACCNT object defines the destinations for the statistical data concerning terminated transfers (accounting messages). The possible destinations provided in the fname parameter are:
 
@@ -91,7 +94,8 @@ CFTACCNT ID=ACCNT1, TYPE=FILE, FNAME=$COL,...,MODE=REPLACE
 CFTPARM ID=IDPARM0,...,ACCNT=ACCNT1,MODE=REPLACE
 ```
 
-## Transfer CFT EMS
+Transfer CFT EMS
+----------------
 
 The CFTPLATE file contains the Transfer CFT templates to be concatenated with the system template for an EMS collector.
 

@@ -2,17 +2,18 @@
     "title": "Start A00CUSTO to customize installation files",
     "linkTitle": " Customize installation files (A00CUSTO)",
     "weight": "200"
-}<span id="Customizing JCL A00CUSTO parameters"></span><span id="kanchor77"></span>
+}<span id="Customizing JCL A00CUSTO parameters"></span><span id="kanchor76"></span>
 
-## Customize JCL A00CUSTO parameters
+Customize JCL A00CUSTO parameters
+---------------------------------
 
-The A00CUSTO JOB customizes the installation files. The customization is done directly in the installation library instance environment. You must quit the file editing program and library before you execute the SUBMIT. If you do not first quit these programs before executing the SUBMIT, the message <span class="code">`Waiting for data set `</span>is returned. If you performed an Installer installation, these parameters are already customized.
+The A00CUSTO JOB customizes the installation files. The customization is done directly in the installation library instance environment. You must quit the file editing program and library before you execute the SUBMIT. If you do not first quit these programs before executing the SUBMIT, the message `Waiting for data set `is returned. If you performed an Installer installation, these parameters are already customized.
 
 ### Installed directories
 
 > **Note**
 >
-> Do NOT customize the distribution environment.
+> Note: Do NOT customize the distribution environment.
 
 
 | Variables  | Description  |
@@ -24,13 +25,15 @@ The A00CUSTO JOB customizes the installation files. The customization is done di
 
 You can repeat A00CUSTO several times to customize any parameters that were not customized.
 
-## Advanced parameters
+Advanced parameters
+-------------------
 
 To make any modifications to advanced parameters you must do this prior to starting the A05ALL JCL.
 
 The parameters can be modified in the A12OPTSP member. For more information, refer to [Set standard JCL parameters A12OPTSP](../t_customize_instance_zos#Selectin).
 
-## Replay the customization
+Replay the customization
+------------------------
 
 After completing the initial A00CUSTO customization, you can use the JCL A04RPLAY to repeat this process. This JCL recopies the members from distribution environment to the target environment (including the INSTALL, EXEC, UPARM and SAMPLE libraries).
 

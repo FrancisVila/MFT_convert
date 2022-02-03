@@ -2,10 +2,7 @@
     "title": "Multi-node architecture",
     "linkTitle": "Multi-node architecture",
     "weight": "160"
-}This topic describes the Transfer CFT multi-node feature, which provides you with horizontal scalability and high availability for failovers. See the <a href="" class="MCTextPopup popup popupHead">Active/active<span class="MCTextPopupBody MCTextPopupBody_Closed needs-pie popupBody" aria-hidden="true"><span class="MCTextPopupArrow"> </span>You configure two or more Transfer CFTs, up to four nodes, each having an independent workload. These nodes will then run as individual nodes until a fail over occurs.
-When a fail over occurs, one of the other nodes takes over from the failed node. This secondary node offers services to new and existing transfer requests and tasks, until the original node resumes activity.
-When the failed node restarts, a manual intervention required in Transfer CFT, it resumes its connections from the secondary or replacement node.
-To summarize, when a fail over occurs the external Transfer CFT is oblivious to any change. The requests are directed to the sysplex distributor, which resubmits any uncommitted transactions to the replacement node. During fail back, the connection returns to the original node.</span></a> description for conceptual information.
+}This topic describes the Transfer CFT multi-node feature, which provides you with horizontal scalability and high availability for failovers. See the <a href="" class="MCTextPopup popup popupHead">Active/active You configure two or more Transfer CFTs, up to four nodes, each having an independent workload. These nodes will then run as individual nodes until a fail over occurs. When a fail over occurs, one of the other nodes takes over from the failed node. This secondary node offers services to new and existing transfer requests and tasks, until the original node resumes activity. When the failed node restarts, a manual intervention required in Transfer CFT, it resumes its connections from the secondary or replacement node. To summarize, when a fail over occurs the external Transfer CFT is oblivious to any change. The requests are directed to the sysplex distributor, which resubmits any uncommitted transactions to the replacement node. During fail back, the connection returns to the original node.</a> description for conceptual information.
 
 Multi-node benefits for {{< TransferCFT/axwayvariablesComponentShortName  >}} include:
 
@@ -13,7 +10,8 @@ Multi-node benefits for {{< TransferCFT/axwayvariablesComponentShortName  >}} in
 - High availability: active/active including patch management on an active cluster, and automatic node restart after fail over.
 - Traffic management: load balancing between nodes using sysplex with VIPA distribution methods.
 
-## Before you start
+Before you start
+----------------
 
 Check that the user that starts Copilot and Transfer CFT has:
 
@@ -27,7 +25,8 @@ The user ID for the user that starts Copilot and Transfer CFT has a 7-characters
 
 <span id="Prerequi"></span>
 
-## Prerequisites
+Prerequisites
+-------------
 
 Transfer CFT in multi-node architecture can use a single key for a multi-node installation (which is stored in the PDS member: UPARM(PRODKEY)) as either:
 
@@ -40,7 +39,8 @@ Additionally, the key must have the cluster option.
 - The Transfer CFT configuration files (PARM, PART, COM, CAT) and services files (LOG, ACCNT) must implement SMS (system-managed storage).
 - The SHARECAT parameter in the SGINSTAL macro (INSTALL(A12OPTS) and INSTALL(A12OPTSP) members) must be set to ‘NO’ or ‘INACT’.
 
-## Architecture
+Architecture
+------------
 
 The Transfer CFT multi-node architecture is based on hosts, nodes, and a shared file system. Regardless of the number of servers hosting the nodes from outside the cluster, the nodes are viewed as a single machine on a network.
 
@@ -64,7 +64,8 @@ A shared file system is a file system resource that where data is shared by seve
 
 The shared file system for {{< TransferCFT/axwayvariablesComponentShortName  >}} z/OS is a DASD (direct-access storage device) in a SYSPLEX environment.
 
-## Concepts
+Concepts
+--------
 
 - Transfer CFT provides one **node manager** per host that monitors every node and checks that its nodes are active. If a node goes down, the node manager detects the inactivity and takes over that node's activity.
 - For multiple nodes to be able to access the same files, using the same set configuration, the system requires the use of a shared file system. The shared disk provides communication, configuration, partners, data flows, databases and nodes. In the following illustration, you can see that the shared data includes parameter files and configuration settings.
@@ -81,7 +82,8 @@ The shared file system for {{< TransferCFT/axwayvariablesComponentShortName  >}}
 - The SYSPLEX distributor uses either the round robin or the weight active distribution method.
 - The SYSPLEX distributor dispatches the incoming connection to one of the LPAR (host).
 
-## Service descriptions
+Service descriptions
+--------------------
 
 ### Copilot
 
@@ -95,7 +97,7 @@ Typically, when a node is not running correctly, the node manager tries to start
 
 > **Note**
 >
-> Copilot can be registered to ARM (A12OPTS ARM=YES), but the Transfer CFTs cannot. If a host fails, the ARM will not restart that host's Copilot on another host.
+> Note: Copilot can be registered to ARM (A12OPTS ARM=YES), but the Transfer CFTs cannot. If a host fails, the ARM will not restart that host's Copilot on another host.
 
 ### PORT statement (connection dispatcher)
 
@@ -138,9 +140,10 @@ The following databases are node specific, and the filename is flagged by the no
 
 > **Note**
 >
-> When using multi-node architecture, the allocated space in the catalog file is 10% greater than when working in a standalone Transfer CFT.
+> Note: When using multi-node architecture, the allocated space in the catalog file is 10% greater than when working in a standalone Transfer CFT.
 
-## Recovery
+Recovery
+--------
 
 ### Node recovery
 
@@ -169,7 +172,8 @@ Possible scenarios include:
 
 In the case of node failure during the transfer recovery process, the catalog record is locked in both catalogs until both nodes are available for recovery.
 
-## Limitations
+Limitations
+-----------
 
 Note the following restrictions:
 

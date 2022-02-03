@@ -1,7 +1,7 @@
 {
     "title": "Defining  CFTTCP",
     "linkTitle": "CFTXXX - Default networks",
-    "weight": "470"
+    "weight": "460"
 }This topic describes the CFTTCP command. Use this command to define the network parameters of partners
 for a given type of network.
 
@@ -28,9 +28,11 @@ topics****
 
 <span id="CFTXXX_CFTTCP_cmd"></span>
 
-## CFTTCP
+CFTTCP
+------
 
-****z/OS, IBM i , UNIX, Windows****
+****z/OS, IBM i , UNIX, OpenVMS,
+Windows****
 
 The CFTTCP command defines the network parameters associated with a
 partner for a TCP/IP connection.
@@ -55,7 +57,7 @@ with a partner for a TCP/IP connection.
 | Parameter  | Description  |
 | --- | --- |
 | <a href="../../../command_summary/parameter_intro/host">HOST</a> | HOST = (string64, string64, …) |
-| <a href="../../../command_summary/parameter_intro/verify">VERIFY</a> | Option to verify the IIP address (HOST) on an incoming connection request (the first 'n' digits of the caller number are checked).<br/> If VERIFY = 0, no verification is performed.<br/> <br/> The correspondent IP address or the list of correspondent IP addresses with which the user wants to start a session. The maximum number of addresses for this list is 4.<br/> This address (expressed in the form of a character string) may be defined:<br/> • either with the real IP address in the "dot notation" (for example: 192.9.200.10)<br/> • or with the logical name HOSTNAME associated with the real IP address and configured in the corresponding "database" file (HOST), supplied with any TCP/IP package |
+| <a href="../../../command_summary/parameter_intro/verify">VERIFY</a> | Option to verify the IIP address (HOST) on an incoming connection request (the first 'n' digits of the caller number are checked).<br/> If VERIFY = 0, no verification is performed.<br/> <br/> The correspondent IP address or the list of correspondent IP addresses with which the user wants to start a session. The maximum number of addresses for this list is 4.<br/> This address (expressed in the form of a character string) may be defined:<br/> • either with the real IP address in the &quot;dot notation&quot; (for example: 192.9.200.10)<br/> • or with the logical name HOSTNAME associated with the real IP address and configured in the corresponding &quot;database&quot; file (HOST), supplied with any TCP/IP package |
 | <a href="../../../command_summary/parameter_intro/class">CLASS</a>  | Class of the TCP local resource(s) used to establish the connection with the partner.<br/> This class value is defined in the CFTNET command corresponding to the network access method used to communicate with the partner.<br/> This parameter is used for an outgoing connection request, to select this CFTTCP using the protocol imposed by CFTPART (this mechanism allowing several CFTTCP commands to be associated with a CFTPART command).<br/> This parameter gives rise to a simple verification for an incoming connection request. |
 | <a href="">IMINTIME</a>  | The minimum time of the authorized time slot for calls coming over this type of network, or with the partner if defined in CFTPART, before which the partner cannot be called. |
 | <a href="../../../command_summary/parameter_intro/imaxtime">IMAXTIME</a> | The maximum time of the authorized time slot for calls coming over this type of network, or with a partner if defined in CFTPART, after which the partner can no longer be called. |

@@ -1,19 +1,17 @@
 {
     "title": "fdate",
     "linkTitle": "fdate",
-    "weight": "1120"
+    "weight": "1110"
 }<span id="fdate"></span>
 
 ### fdate
 
 #### RECV
 
-****\[ FDATE
-= { <span style="text-decoration: underline;">0</span>
-| date } \]****
+****[ FDATE
+= { 0
+&#124; date } ]****
 
 File creation date.
 
 [Return to Command index](../../)
-
- 

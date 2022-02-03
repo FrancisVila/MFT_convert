@@ -1,7 +1,7 @@
 {
     "title": "dnuser",
     "linkTitle": "dnuser",
-    "weight": "770"
+    "weight": "760"
 }<span id="dnuser"></span>
 
 ### dnuser
@@ -25,7 +25,7 @@ the 2.4.x syntax.
 
 > **Note**
 >
-> The different attributes of the dnuser or dnissuer string
+> Note: The different attributes of the dnuser or dnissuer string
 > are separated by the '/' character.
 
 [Return to Command index](../../)

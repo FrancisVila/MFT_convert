@@ -4,7 +4,8 @@
     "weight": "230"
 }After depositing a transfer command, such as the loop-back test, the following messages are displayed.
 
-## Example
+Example
+-------
 
 `SEND PART=LOOP,IDF=TEST,FNAME=CFTPROD/TEST`
 

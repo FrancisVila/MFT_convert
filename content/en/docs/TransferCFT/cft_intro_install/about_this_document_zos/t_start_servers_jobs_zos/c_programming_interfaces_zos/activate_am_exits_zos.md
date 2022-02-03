@@ -4,16 +4,19 @@
     "weight": "300"
 }<span id="Activat"></span>
 
-## Activating a platform-generic exit
+Activating a platform-generic exit
+----------------------------------
 
-1. Check that the '<span class="code">`am.exit.custom.safclass.value`</span>' parameter is not set to a value.
-1. Ensure that the parameter '<span class="code">`am.exit.custom.rbac_fname.value`</span>' is associated with a correct configuration file.
+1. Check that the '`am.exit.custom.safclass.value`' parameter is not set to a value.
+1. Ensure that the parameter '`am.exit.custom.rbac_fname.value`' is associated with a correct configuration file.
 
-## API and CFTUTIL
+API and CFTUTIL
+---------------
 
 Unified configuration file (UCONF) must be allocated in the execution JCL.
 
-## JCL(s) to adapt
+JCL(s) to adapt
+---------------
 
 H84SAFDF: TO CREATE CFT GENERAL RESOURCE CLASS PROFILES
 

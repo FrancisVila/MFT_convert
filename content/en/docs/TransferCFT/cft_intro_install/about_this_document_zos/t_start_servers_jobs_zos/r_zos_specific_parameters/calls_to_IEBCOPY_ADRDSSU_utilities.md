@@ -4,7 +4,8 @@
     "weight": "320"
 }The Z/OS utility call function enables you to transfer files that are not directly readable by Transfer CFT. The IEBCOPY and ADRDSSU utilities are supported. The following sections describe this operating mode.
 
-## Common rules for utility calls
+Common rules for utility calls
+------------------------------
 
 Utilities are called to:
 
@@ -26,7 +27,7 @@ Respect the following rules:
 
 The following parameters are required:
 
-- The # character is necessary at the head of FNAME (hexadecimal code 7B)
+- The \# character is necessary at the head of FNAME (hexadecimal code 7B)
 
 <!-- -->
 
@@ -58,9 +59,10 @@ The following parameters are required:
 <!-- -->
 
 - MACTION=REPLACE controls the replacement of members or files
-- FTYPE=’\_’ creates a PDSE (hexadecimal X’6D’)
+- FTYPE=’_’ creates a PDSE (hexadecimal X’6D’)
 
-## Use IEBCOPY
+Use IEBCOPY
+-----------
 
 An IEBCOPY call enables the transfer to all members, or to a selected group of members, of a PDS file. For LOAD MODULES you must use IEBCOPY.
 
@@ -95,9 +97,10 @@ Restrictions:
 - IEBCOPY compatible utilities are not supported
 - You cannot transfer members of a load library from unlike libraries (PDS from/to PDSE)
 
-## Using ADRDSSU
+Using ADRDSSU
+-------------
 
-ADRDSSU enables the transfer of one or more files, or you can transfer all files using the joker character ‘\_’. It is recommended that you use this utility for all files except the sequential files:
+ADRDSSU enables the transfer of one or more files, or you can transfer all files using the joker character ‘_’. It is recommended that you use this utility for all files except the sequential files:
 
 - VSAM
 
@@ -127,7 +130,7 @@ Where:
 
 <!-- -->
 
-- If present it must terminate with ‘\_’
+- If present it must terminate with ‘_’
 
 <!-- -->
 
@@ -135,11 +138,11 @@ Where:
 
 <!-- -->
 
-- DSNGEN is a file name ending with ‘\_’; this is the only file (catalog or not) that is not transferred
+- DSNGEN is a file name ending with ‘_’; this is the only file (catalog or not) that is not transferred
 
 <!-- -->
 
-- DSNGEN contains several ‘\_’;  in this case it is a model that is interpreted according to the following rules:
+- DSNGEN contains several ‘_’;  in this case it is a model that is interpreted according to the following rules:
 
 #### Rules for interpreting DSNGEN
 
@@ -248,8 +251,6 @@ The ADRDSSU command also uses the parameter:
 The combination RENAMEU+REPLACEU will always replace existing files.
 
 > **Note**
->
->  
 
 - The created files are identical to the initial file.
 
@@ -257,7 +258,8 @@ The combination RENAMEU+REPLACEU will always replace existing files.
 
 - Transfer CFT forces the RECALL HSM of migrated files to be restored.
 
-## Additional messages
+Additional messages
+-------------------
 
 If processing is correct, Transfer CFT displays two CFTF30W messages containing:
 
@@ -275,7 +277,8 @@ For an IEBCOPY, a report file is generated. This report contains a DSNAME (MEMBE
 
 This file is automatically deleted by Transfer CFT when the catalog post is deleted.
 
-## Error messages
+Error messages
+--------------
 
 When an error occurs, a message is displayed for either:
 
@@ -293,7 +296,8 @@ Refer to the related IBM documents for explanations, or see the IEBCOPY and ADRD
 
 The SGTRACE 12 fine control option enables the recording of detailed traces in the SGTRACE file.
 
-## Utility performance
+Utility performance
+-------------------
 
 Transfer CFT z/OS calls a single external utility at a given time. Memory use is as follows:
 

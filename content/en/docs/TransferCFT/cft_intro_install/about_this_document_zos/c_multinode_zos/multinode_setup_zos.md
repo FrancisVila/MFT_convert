@@ -4,7 +4,8 @@
     "weight": "250"
 }This section describes how to set up and manage your multi-node environment.
 
-## Start the Transfer CFT cluster
+Start the Transfer CFT cluster
+------------------------------
 
 ### Start all node managers
 
@@ -14,7 +15,8 @@ For each host submit the JCL: **` MNRMNG`**
 
 On *one* of the hosts in the cluster, submit the JCL: **`start JCL MNSTART`**
 
-## Stop the Transfer CFT cluster
+Stop the Transfer CFT cluster
+-----------------------------
 
 ### Stop all nodes
 
@@ -24,7 +26,8 @@ On *one* of the hosts in the cluster, submit the JCL:**` stop JCL MNSTOP`**
 
 For each host, submit the JCL: **`copstop JCL COPSTOP`**
 
-## Add a node to the Transfer CFT cluster
+Add a node to the Transfer CFT cluster
+--------------------------------------
 
 In this example the Transfer CFT cluster accounts at the beginning two nodes, node 0 and node 1.
 
@@ -36,7 +39,7 @@ The node 2 is created. The cluster is composed of three nodes: node 0, node 1 an
 
 > **Note**
 >
-> When adding a node, you must add the corresponding new license for that node in a license-key file ..UPARM(PRODKEY) by default.
+> Note: When adding a node, you must add the corresponding new license for that node in a license-key file ..UPARM(PRODKEY) by default.
 
 ### Enable a node
 
@@ -46,11 +49,12 @@ Once the new node has been added, you can now enable it using the command:**` en
 
 The node 2 can be started using the command:**` start -n 2 (JCL MNSTART)`**
 
-## Remove a node from the Transfer CFT cluster
+Remove a node from the Transfer CFT cluster
+-------------------------------------------
 
 > **Note**
 >
-> Only the last node can be removed.
+> Note: Only the last node can be removed.
 
 ### Disable the last node
 
@@ -68,7 +72,8 @@ Enter:**`  remove_node –n <node_id> (JCL MNREMOVE)`**
 
 <span id="Rebalanc"></span>
 
-## Rebalance after a fail over
+Rebalance after a fail over
+---------------------------
 
 Once the failed node manager is running again, you can rebalance the cluster by re-starting one or multiple nodes.
 

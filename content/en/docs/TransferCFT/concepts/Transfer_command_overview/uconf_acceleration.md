@@ -4,7 +4,8 @@
     "weight": "310"
 }To enable acceleration set the uconf values as recommended in this section.
 
-## About transfer acceleration
+About transfer acceleration
+---------------------------
 
 **UNIX/Windows only**
 
@@ -19,9 +20,10 @@ The {{< TransferCFT/axwayvariablesComponentShortName  >}} acceleration feature o
 
 UDT is a transport protocol that {{< TransferCFT/axwayvariablesComponentShortName  >}} can use to manage applications over high-speed networks. UDT uses UDP, a lower layer message, to transfer bulk data.
 
-## Configuring accelerated communication
+Configuring accelerated communication
+-------------------------------------
 
-To enable accelerated communication in CFTUTIL use the unified configuration command <span class="code">`UCONFSET`</span>.
+To enable accelerated communication in CFTUTIL use the unified configuration command `UCONFSET`.
 
 ### Basic configuration
 
@@ -40,14 +42,14 @@ You can globally enable or disable the acceleration function in the {{< Transfer
 #### Example in CFTUTIL
 
 ```
-<span class="code">`CFTUTIL UCONFSET ID=acceleration.enable, VALUE=yes`</span>  
-<span class="code">`CFTUTIL UCONFSET ID=acceleration.udt   ,    VALUE=NET1`</span>  
-<span class="code">`CFTUTIL UCONFSET ID=acceleration.ptcp  ,   VALUE=NET0 NET_TEST`</span>
+CFTUTIL UCONFSET ID=acceleration.enable, VALUE=yes  
+CFTUTIL UCONFSET ID=acceleration.udt ,    VALUE=NET1  
+CFTUTIL UCONFSET ID=acceleration.ptcp ,   VALUE=NET0 NET_TEST
 ```
 
-In this example, all protocols (CFTPROT objects) using NET1 are accelerated by UDT, and those using NET0 and NET\_TEST are accelerated by pTCP.
+In this example, all protocols (CFTPROT objects) using NET1 are accelerated by UDT, and those using NET0 and NET_TEST are accelerated by pTCP.
 
-Network resources that are scheduled to use acceleration functionality should have their own class number in order to avoid conflicts with other network resources, one for UDT and another for pTCP. In example above, NET1 could have a class number of 4, and NET0 and NET\_TEST could have a class number of 5. Additionally, partners using these network resources should also have the same class number as corresponding NET.
+Network resources that are scheduled to use acceleration functionality should have their own class number in order to avoid conflicts with other network resources, one for UDT and another for pTCP. In example above, NET1 could have a class number of 4, and NET0 and NET_TEST could have a class number of 5. Additionally, partners using these network resources should also have the same class number as corresponding NET.
 
 **Example**
 
@@ -84,26 +86,27 @@ Additional attribute parameters are available for advanced users. The default va
 
 #### UDT parameters
 
-Refer to the [UCONF parameters](../../../admin_intro/uconf/uconf_directory) table <span class="code">`acceleration.udt.<logicalID>`</span>.
+Refer to the [UCONF parameters](../../../admin_intro/uconf/uconf_directory) table `acceleration.udt.<logicalID>`.
 
 #### pTCP parameters
 
-Refer to the [UCONF parameters](../../../admin_intro/uconf/uconf_directory) table <span class="code">`acceleration.ptcp.<logicalID>`</span>.
+Refer to the [UCONF parameters](../../../admin_intro/uconf/uconf_directory) table `acceleration.ptcp.<logicalID>`.
 
 > **Note**
 >
-> Transfer CFT versions that use the newer pTCP protocol cannot perform pTCP exchanges with Transfer CFTs using the earlier pTCP version. See Protocols and networks for more information.
+> Note: Transfer CFT versions that use the newer pTCP protocol cannot perform pTCP exchanges with Transfer CFTs using the earlier pTCP version. See Protocols and networks for more information.
 
 <span id="uconf_ptcp"></span>
 
-## pTCP protocol versions
+pTCP protocol versions
+----------------------
 
 {{< TransferCFT/axwayvariablesComponentShortName  >}} 3.0.1 SP2 and higher, and {{< TransferCFT/axwayvariablesComponentShortName  >}} 2.7.1 SP6, support a more recent version of the pTCP protocol than previously supported by {{< TransferCFT/axwayvariablesComponentShortName  >}}. This newer version of pTCP offers the following advantages:
 
 - Multi-node architecture support
 - Exchange capability with Axway SecureTransport
 
-Note that the new pTCP support is <span class="bold_in_para">****not**** </span>compatible with the previously used version of pTCP. This means that {{< TransferCFT/axwayvariablesComponentShortName  >}} 3.0.1 SP2 and higher, and {{< TransferCFT/axwayvariablesComponentShortName  >}} 2.7.1 SP6, <span class="bold_in_para">****cannot**** </span>exchange files with earlier versions of {{< TransferCFT/axwayvariablesComponentShortName  >}} using the pTCP protocol.
+Note that the new pTCP support is ****not**** compatible with the previously used version of pTCP. This means that {{< TransferCFT/axwayvariablesComponentShortName  >}} 3.0.1 SP2 and higher, and {{< TransferCFT/axwayvariablesComponentShortName  >}} 2.7.1 SP6, ****cannot**** exchange files with earlier versions of {{< TransferCFT/axwayvariablesComponentShortName  >}} using the pTCP protocol.
 
 For more information on supported platforms and transfer acceleration, refer to [Platform-specific functionality]().
 

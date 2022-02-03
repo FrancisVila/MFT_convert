@@ -4,7 +4,8 @@
     "weight": "240"
 }When using {{< TransferCFT/suitevariablesCentralGovernanceName  >}}, the visibility features are managed by {{< TransferCFT/suitevariablesCentralGovernanceName  >}}. Do not modify these parameters when running with {{< TransferCFT/suitevariablesCentralGovernanceName  >}}.
 
-## Sentinel configuration parameters
+Sentinel configuration parameters
+---------------------------------
 
 The following table lists the Sentinel parameters in the unified configuration and the corresponding former Sentinel parameter.
 
@@ -17,7 +18,7 @@ The following table lists the Sentinel parameters in the unified configuration a
 | sentinel.xfb.log | IEWF | XFB.Log (TRKCNF) &lt;/p&gt; |
 | sentinel.trktname | $(cft.runtime_dir)<br /> /data/trkapi.buf  | TRKTNAME (TRKCNF)  |
 | sentinel.trksharedfile  | No  | TRKSHAREDFILE  |
-| sentinel.trklenmsg  |   | TRKLENMSG  |
+| sentinel.trklenmsg  |  | TRKLENMSG  |
 | sentinel.trklocmaxtime  | 300  | TRKLOCMAXTIME  |
 | sentinel.trktmode  | DIFFER | TRKTMODE  |
 | sentinel.trktconnretry  | 60 | TRKTCONNRETRY  |
@@ -30,7 +31,7 @@ The following table lists the Sentinel parameters in the unified configuration a
 | sentinel.trkipport  | 1761  | TRKIPPORT  |
 | sentinel.trk_min_port  | 5000  | TRK_MIN_PORT  |
 | sentinel.trk_max_port  | 32000 | TRK_MAX_PORT  |
-| sentinel.trkipaddr_bkup |   | TRKIPADDR_BKUP  |
+| sentinel.trkipaddr_bkup |  | TRKIPADDR_BKUP  |
 | sentinel.trkipport_bkup  | 1761  | TRKIPPORT_BKUP  |
 | sentinel.trk_min_port_bkup  | 5000  | TRK_MIN_PORT_BKUP  |
 | sentinel.trk_max_port_bkup  | 32000  | TRK_MAX_PORT_BKUP  |
@@ -42,9 +43,10 @@ The following table lists the Sentinel parameters in the unified configuration a
 | sentinel.xfb.transfer.send_relay_site_nidf<br/> Enables an NIDF on the relay site. This uses an NIDF instead of COMMUT when sending an event to Sentinel using the XFBTransfer object. | No  |   |
 
 
-For more information on event messages, refer to the <span class="italic_in_para">Axway Sentinel</span> documentation.
+For more information on event messages, refer to the Axway Sentinel documentation.
 
-## About Transfer CFT heartbeat functionality
+About Transfer CFT heartbeat functionality
+------------------------------------------
 
 When the Transfer CFT heartbeat function is activated, it sends the attributes to the Axway Sentinel server via TRKUTIL.
 
@@ -64,7 +66,7 @@ Each Transfer CFT environment number n (from 1 to 5) has its own corresponding H
 | sentinel.heartbeat.script  | CFTPROD/HEARTBEAT | Script for executing Heartbeats.  |
 
 
-<span class="autonumber"></span>Example
+Example
 
 ```
 uconfset id=sentinel.heartbeat.enable,value=yes

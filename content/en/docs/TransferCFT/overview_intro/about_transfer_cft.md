@@ -25,11 +25,12 @@ As a transfer exchange system, {{< TransferCFT/axwayvariablesComponentShortName 
 
 - An agile architecture
 
-********<span class="autonumber"></span>High-level view of Transfer CFT in an enterprise architecture********
+********High-level view of Transfer CFT in an enterprise architecture********
 
 ****![View of Transfer CFT in A2A operations within a corporate network](/Images/TransferCFT/2013_g_TransferCFT_Corporate_Network_new.png)****
 
-## Services and features
+Services and features
+---------------------
 
 {{< TransferCFT/axwayvariablesSolutionLongName  >}} offers the following value added features to set it apart from FTP and other generic file transfer services on the market.
 

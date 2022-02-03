@@ -1,14 +1,14 @@
 {
     "title": "CIPHLIST",
     "linkTitle": "ciphlist",
-    "weight": "400"
+    "weight": "390"
 }<span id="ciphlist"></span>
 
 ### CIPHLIST
 
 #### CFTSSL
 
-****\[CIPHLIST = {(num, num, ..)}\]****
+****[CIPHLIST = {(num, num, ..)}]****
 
 List of the algorithms supported.
 
@@ -27,5 +27,3 @@ This list is compared with the list proposed by the client in order of preferenc
 This list is submitted to the server which then makes its selection, depending on the client's preference.
 
 [Return to Command index](../../)
-
- 

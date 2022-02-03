@@ -1,14 +1,14 @@
 {
     "title": "call",
     "linkTitle": "call",
-    "weight": "360"
+    "weight": "350"
 }<span id="call"></span>
 
 ### call
 
 #### CFTNET
 
-****\[call = {<u>inout</u> | in | out }\]****
+****[call = {<span class="underline">inout</span> &#124; in &#124; out }]****
 
 Call direction possible through this network resource. Select from:
 

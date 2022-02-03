@@ -8,7 +8,8 @@
 - File-sharing options in z/OS
 - Submitting JOBs
 
-## Create files in z/OS
+Create files in z/OS
+--------------------
 
 Transfer CFT z/OS creates files:
 
@@ -64,7 +65,8 @@ This default value can conflict with the installation options or EXITS, and the 
 
 The VSAM files are created by dynamic calls to IDCAMS. In this case, the parameter VOLUME is mandatory, unless DF/SMS assumes a default value.
 
-## File-sharing options in z/OS
+File-sharing options in z/OS
+----------------------------
 
 Transfer CFT z/OS allows file-sharing with the operating system, with the following options:
 
@@ -93,7 +95,8 @@ Transfer CFT z/OS does not permit deleting:
 
 - A file allocated by another user
 
-## Manage files by DF/SMS
+Manage files by DF/SMS
+----------------------
 
 Transfer CFT z/OS creates files compatible with DF/SMS, where:
 
@@ -107,7 +110,8 @@ Transfer CFT z/OS creates files compatible with DF/SMS, where:
 
 - The ACS ROUTINES, in certain cases, must be adapted to the Transfer CFT operating mode
 
-## Submit JOBs 
+Submit JOBs 
+------------
 
 Transfer CFT constructs and submits JOBs from any type of file that can be read by Transfer CFT. By default, the JOB is submitted with the USERID of the user requesting the transfer.
 
@@ -135,7 +139,7 @@ Where:
 
 > **Note**
 >
-> The SUBOPT parameter in the SGINSTAL macro (A12OPTS member) may affect the automation.
+> Note: The SUBOPT parameter in the SGINSTAL macro (A12OPTS member) may affect the automation.
 
 ### Support for the SHUT RESTART=YES command
 

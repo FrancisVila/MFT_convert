@@ -2,7 +2,8 @@
     "title": "Post-installation",
     "linkTitle": "Post-installation",
     "weight": "160"
-}## Transfer CFT in production
+}Transfer CFT in production
+--------------------------
 
 This chapter describes how to operate Transfer CFT, and is comprised of the following sections:
 
@@ -18,14 +19,16 @@ This chapter describes how to operate Transfer CFT, and is comprised of the foll
 
 <span id="Transfer"></span>
 
-## Transfer CFT menu usage
+Transfer CFT menu usage
+-----------------------
 
 Other than during installation, which runs the Transfer CFT manager automatically, you can enter one of the following commands to start the manager:
 
 - `CFT`
 - `CALL CFTMENU`
 
-## Create Transfer CFT system object
+Create Transfer CFT system object
+---------------------------------
 
 Now that you have installed your {{< TransferCFT/headerfootervariableshflongproductname  >}}, you will want to recreate Transfer CFT objects. Proceed to the Transfer CFT menu and press 4 to access the following options:
 
@@ -61,7 +64,8 @@ Add a communication entry to link the subsystem created in step 3 with the JOBD 
 
 Change the user profile of the current user to specify that the user now uses the JOBD in step 2, and subsequently the subsystem and JOBQ created in the other steps and linked with the JOBD.
 
-## Verify your installation
+Verify your installation
+------------------------
 
 See the installation if you encounter problems with starting {{< TransferCFT/axwayvariablesComponentLongName  >}}.
 
@@ -71,8 +75,9 @@ The act of installing Transfer CFT creates a library that contains product binar
 
 > **Note**
 >
-> By default, this library is called CFTPGM.
+> Note: By default, this library is called CFTPGM.
 
-## Register with {{< TransferCFT/PrimaryCGorUM  >}}
+Register with {{< TransferCFT/PrimaryCGorUM  >}}
+-----------------------------------------------------
 
 If you intend to implement {{< TransferCFT/PrimaryCGorUM  >}}, please refer to the {{< TransferCFT/axwayvariablesComponentLongName  >}} *User's Guide &gt; [*Register with* {{< TransferCFT/PrimaryCGorUM  >}}](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.

@@ -18,14 +18,15 @@ to be included in the application using the {{< TransferCFT/axwayvariablesCompon
 
 <span id="Call_Syntax"></span>
 
-## Call syntax
+Call syntax
+-----------
 
 
 | ****Syntax**** | rc = cftxx (verb,&amp;ptr,param) |
 | --- | --- |
 | Element | Definition |
-| cftxx | <span >****cftai****</span>: simple Transfer CFT catalog querying services<br/> <span >****cftaix****</span>: extended {{< TransferCFT/axwayvariablesComponentShortName  >}} catalog querying services<br/> <span >****cftau****</span>: transfer services with syntax analysis<br/> <span >****cftac****</span>: transfer services without syntax analysis |
-| **<span >verb</span>** | Service requested |
+| cftxx | ****cftai****: simple Transfer CFT catalog querying services<br/> ****cftaix****: extended {{< TransferCFT/axwayvariablesComponentShortName  >}} catalog querying services<br/> ****cftau****: transfer services with syntax analysis<br/> ****cftac****: transfer services without syntax analysis |
+| **verb** | Service requested |
 | ptr | Address of the internal control block |
 | param | Parameters specific to the requested service |
 | rc | Return code |
@@ -38,7 +39,7 @@ of mnemonics.
 
 > **Note**
 >
-> It is strongly recommended that you test the return codes of services
+> Note: It is strongly recommended that you test the return codes of services
 > provided by the Transfer CFT programming interfaces through mnemonics.
 > The corresponding values may change without notice.
 

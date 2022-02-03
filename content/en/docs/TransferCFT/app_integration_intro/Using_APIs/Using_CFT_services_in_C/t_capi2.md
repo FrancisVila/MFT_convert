@@ -6,11 +6,13 @@
 
 Additionally, the API catalog supports 32 character identifiers and 512 character file names.
 
-## Return code values
+Return code values
+------------------
 
-The return code values are available in the <span class="code">`cftapi2.h`</span> header file, located in the <span class="code">`Transfer_CFT/home/inc`</span> directory (for UNIX/Windows), in the section *Error code fields*.
+The return code values are available in the `cftapi2.h` header file, located in the `Transfer_CFT/home/inc` directory (for UNIX/Windows), in the section *Error code fields*.
 
-## Data structure
+Data structure
+--------------
 
 The data structures that are used by the API are as follows:
 
@@ -21,7 +23,8 @@ The data structures that are used by the API are as follows:
 
 The programmer can set pointers to these data structures. These are then allocated and initialized by the API.
 
-## API functions
+API functions
+-------------
 
 
 | Service | CftApi2Session *ipcai2_initialize () |
@@ -70,7 +73,7 @@ The programmer can set pointers to these data structures. These are then allocat
 | Service | CftApi2Catalog *ipcai2_catalog_open(CftApi2Session * session, char *catalog_fname)  |
 | --- | --- |
 | Definition | Opens the {{< TransferCFT/axwayvariablesComponentShortName  >}} catalog file. |
-| Parameter | session: Pointer to the CftApi2Session structure returned by the initialization ipcai2_initialize()<br /> catalog_fname: Name of the catalog file. If the file name is "" the API opens the catalog file by default, for example _CFTCATA for {{< TransferCFT/axwayvariablesComponentShortName  >}}UNIX. |
+| Parameter | session: Pointer to the CftApi2Session structure returned by the initialization ipcai2_initialize()<br /> catalog_fname: Name of the catalog file. If the file name is &quot;&quot; the API opens the catalog file by default, for example _CFTCATA for {{< TransferCFT/axwayvariablesComponentShortName  >}}UNIX. |
 | Return value | This function returns a pointer to the CftApi2Catalog structure. If the returned value is NULL, the catalog cannot be opened and the error code is returned by calling ipcai2_get_errno(). |
 | Remarks | None |
 

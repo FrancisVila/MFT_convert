@@ -1,8 +1,9 @@
 {
     "title": "Using  the ACT and INACT commands",
     "linkTitle": "Using ACT and INACT",
-    "weight": "230"
-}## Activating or deactivating a certificate
+    "weight": "220"
+}Activating or deactivating a certificate
+----------------------------------------
 
 ****Syntax****
 
@@ -16,9 +17,9 @@
 
 `TYPE = string`
 
-QQQ\_QQQ\_QQQ
+ 
 
-Use the ACT and INACT commands to activate or deactivate
+Description: Use the ACT and INACT commands to activate or deactivate
 one or more certificates in the local database. If a root
 or intermediate authority certificate is deactivated, all dependent certificates
 (user or intermediate authorities) are automatically deactivated.

@@ -1,7 +1,7 @@
 {
     "title": "Transfer command basics",
     "linkTitle": "Transfer concepts",
-    "weight": "140"
+    "weight": "130"
 }The transfer concept topics introduce the various {{< TransferCFT/axwayvariablesComponentShortName  >}} transfer
 processes. For general transfer principles, refer to the introductory
 overview section.
@@ -9,7 +9,8 @@ overview section.
 The transfer commands are
 divided in categories depending on their function.
 
-## Entering a command
+Entering a command
+------------------
 
 There are multiple interfaces that you can use to enter Transfer CFT commands, such as the Transfer CFT command utility CFTUTIL or client user interface.
 
@@ -21,7 +22,8 @@ C:\\Axwaycft313sp1\\Transfer_CFT\\runtime> CFTUTIL  
 1:[CFU]
 ```
 
-## Entering parameters
+Entering parameters
+-------------------
 
 There are two ways to supply parameters for a command:
 
@@ -33,9 +35,23 @@ There are two ways to supply parameters for a command:
 
 <span id="Transfer_associated_commands"></span>
 
-## Using basic transfer associated commands
+Using basic transfer associated commands
+----------------------------------------
 
-QQQ\_QQQ\_CHECK I put the "For each command" part before the 2 tables. They were after a single table.
+The commands associated with the transfers are listed in the table below.
+
+
+| Type | Command | Description |
+| --- | --- | --- |
+| Transfers  | <a href="">SEND</a>  | Send files, messages, or replies (acknowledgments)  |
+| - &quot; -  | <a href="">RECV</a>  | Receive files  |
+| Actions on transfers  | <a href="../../admin_intro/admin_commands_intro/delete_command">DELETE</a> | Delete catalog entries  |
+| - &quot; -  | <a href="../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/halt_command">HALT</a> | Stop transfers  |
+| - &quot; -  | <a href="../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/keep_command">KEEP</a> | Suspend transfers  |
+| - &quot; -  | <a href="../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/start_command">START</a> | Restart transfers  |
+| - &quot; -  | <a href="../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/submit_command">SUBMIT</a> | Submit an end-of-transfer procedure |
+| - &quot; -  | <a href="../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/end_command">END</a> | Declare that flow is finished |
+
 
 For each command, the {{< TransferCFT/axwayvariablesComponentShortName  >}} command interface performs the following
 actions:
@@ -44,33 +60,3 @@ actions:
     of the command
 - Puts the command
     in the Transfer CFT communication medium
-
-### Send/Receive Transfer commands
-
-
-| Command | Description |
-| --- | --- |
-| <a href="">SEND</a>  | Send files, messages, or replies (acknowledgments)  |
-| <a href="">RECV</a>  | Receive files  |
-| <a href="../../admin_intro/admin_commands_intro/delete_command">DELETE</a> | Delete catalog entries  |
-| <a href="../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/halt_command">HALT</a> | Stop transfers  |
-| <a href="../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/keep_command">KEEP</a> | Suspend transfers  |
-| <a href="../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/start_command">START</a> | Restart transfers  |
-| <a href="../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/submit_command">SUBMIT</a> | Submit an end-of-transfer procedure |
-| <a href="../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/end_command">END</a> | Declare that flow is finished |
-
-
-### Actions on transfers 
-
-
-| Command | Description |
-| --- | --- |
-| <a href="">SEND</a>  | Send files, messages, or replies (acknowledgments)  |
-| <a href="">RECV</a>  | Receive files  |
-| <a href="../../admin_intro/admin_commands_intro/delete_command">DELETE</a> | Delete catalog entries  |
-| <a href="../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/halt_command">HALT</a> | Stop transfers  |
-| <a href="../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/keep_command">KEEP</a> | Suspend transfers  |
-| <a href="../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/start_command">START</a> | Restart transfers  |
-| <a href="../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/submit_command">SUBMIT</a> | Submit an end-of-transfer procedure |
-| <a href="../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/end_command">END</a> | Declare that flow is finished |
-

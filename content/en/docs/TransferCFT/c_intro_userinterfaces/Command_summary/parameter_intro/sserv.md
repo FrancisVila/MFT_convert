@@ -1,12 +1,12 @@
 {
     "title": "sserv",
     "linkTitle": "sserv",
-    "weight": "3320"
-}### **<span id="sserv"></span><span style="font-weight: bold;">****sserv****</span>**
+    "weight": "3340"
+}### **<span id="sserv"></span>****sserv******
 
 #### **CFTPROT**
 
-**\[SSERV = {see table below | *identifier*}\]**
+**[SSERV = {see table below &#124; *identifier*}]**
 
 Identifies the service, or protocol
 variant, required of the incoming partner.
@@ -23,12 +23,10 @@ for incoming calls.
 
 | PeSIT profile  | Details  |
 | --- | --- |
-| PeSIT ANY  | The SSERV = GSIT value is used in requester mode for exchanges via TCP/IP.<br /> Use of this parameter value does not affect the message, which contains the "PeSIT" value.  |
+| PeSIT ANY  | The SSERV = GSIT value is used in requester mode for exchanges via TCP/IP.<br /> Use of this parameter value does not affect the message, which contains the &quot;PeSIT&quot; value.  |
 | PeSIT SIT | The default value is: SSERV = ‘ ’ as this parameter is ineffective. In the SIT profile, there is no Log in message. |
 
 
  
 
 [Return to Command index](../../)
-
- 

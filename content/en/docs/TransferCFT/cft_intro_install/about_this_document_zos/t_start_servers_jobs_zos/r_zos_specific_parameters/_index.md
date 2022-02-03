@@ -2,14 +2,16 @@
     "title": "Working with files and coding",
     "linkTitle": "About files and coding",
     "weight": "260"
-}## Specific parameters for z/OS
+}Specific parameters for z/OS
+----------------------------
 
 This section describes the parameters and values that are specific to Transfer CFT z/OS and information about:
 
 - Transferable files
 - Filename coding
 
-## Transferable files
+Transferable files
+------------------
 
 File characteristics that are found automatically for sending are listed in the following table.
 
@@ -42,13 +44,11 @@ File characteristics that are found automatically for sending are listed in the 
 
 > **Note**
 >
-> Variable SPANNED files can be routed through an intermediary Transfer CFT for the PeSIT protocol only (ANY profile). In this case, the file received on Transfer CFT z/OS is always in the ‘U’ format.
+> Note: Variable SPANNED files can be routed through an intermediary Transfer CFT for the PeSIT protocol only (ANY profile). In this case, the file received on Transfer CFT z/OS is always in the ‘U’ format.
 
 The PDS files copied by IEBCOPY are also received in the ‘U’ format, which is compatible with IEBCOPY.
 
 **Receiving values for FORG, FTYPE and FRECFM**
-
-QQQ\_QQQ\_QQQ weird colspans in original
 
 
 | FORG  | FTYPE  | FRECFM  |  Type of receive file  |

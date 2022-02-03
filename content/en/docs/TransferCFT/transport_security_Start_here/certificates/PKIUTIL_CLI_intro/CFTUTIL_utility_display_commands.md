@@ -1,7 +1,7 @@
 {
     "title": "CFTUTIL utility display commands",
     "linkTitle": "CFTUTIL display command",
-    "weight": "220"
+    "weight": "210"
 }This topic describes the Transfer CFT display command for Transfer CFT transport security.
 
 <span id="Displaying_the_CFTSSL_commands"></span>

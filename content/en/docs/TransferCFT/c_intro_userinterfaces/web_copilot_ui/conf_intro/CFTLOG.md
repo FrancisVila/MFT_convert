@@ -1,7 +1,7 @@
 {
     "title": "Transfer log file",
     "linkTitle": "Log file - CFTLOG",
-    "weight": "200"
+    "weight": "190"
 }Use this command to defines the log file declarations. Transfer CFT
 records any significant events that occur during a transfer.
 
@@ -32,7 +32,7 @@ topics
 | <a href="../../../command_summary/parameter_intro/switch">SWITCH</a> | Time at which the Transfer CFT performs an automatic switch. When this parameter is not defined, log files are switched daily at midnight. |
 
 
-<span class="bold_in_para">****Example**** </span>
+****Example****
 
 This command defines the log file names:
 

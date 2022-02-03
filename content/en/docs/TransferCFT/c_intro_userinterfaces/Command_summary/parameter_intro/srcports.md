@@ -1,7 +1,7 @@
 {
     "title": "srcports",
     "linkTitle": "srcports",
-    "weight": "3280"
+    "weight": "3300"
 }<span id="srcports"></span>
 
 ### srcports
@@ -10,7 +10,7 @@ This parameter is obsolete for CFTNET proxies.
 
 #### CFTNET
 
-\[ SRCPORTS = {str15, str15, ... str15} \]
+[ SRCPORTS = {str15, str15, ... str15} ]
 
 A list of local ports that can contain up to 16 instances of str15. Use this parameter to define ranges of available local ports according to your environment (depending on firewall settings).
 

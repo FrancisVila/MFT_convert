@@ -26,6 +26,7 @@ The Menu bar is comprised of the options:
 
 To select an option, position the cursor on the appropriate menu in the bar and click to select. Some of these menus include sub-menus.
 
-## Example
+Example
+-------
 
-Select <span class="bold_in_para">****2 Network manage****</span>r, and then select <span class="bold_in_para">****10 Start communications trace****</span>. The Network manager screen is displayed.
+Select ****2 Network manage****r, and then select ****10 Start communications trace****. The Network manager screen is displayed.

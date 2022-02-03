@@ -4,12 +4,13 @@
     "weight": "200"
 }This section provides general information concerning the prerequisites for shared file systems for the following types of files used with {{< TransferCFT/suitevariablesTransferCFTName  >}} in a UNIX environment.
 
-- Transfer CFT data files: This refers to all files managed by {{< TransferCFT/suitevariablesTransferCFTName >}} other than transferable application files (including database files), which are stored in the {{< TransferCFT/suitevariablesTransferCFTName >}} runtime directory.
+- Transfer CFT data files: This refers to all files managed by {{< TransferCFT/suitevariablesTransferCFTName  >}} other than transferable application files (including database files), which are stored in the {{< TransferCFT/suitevariablesTransferCFTName  >}} runtime directory.
 - Transferable application files: This refers to the files transferred by Transfer CFT.
 
 <span id="Standalo"></span>
 
-## Standalone installation
+Standalone installation
+-----------------------
 
 You can use any POSIX compliant shared file system for both Transfer CFT data files and transferable application files.
 
@@ -29,11 +30,13 @@ The following table lists the file systems that are supported and tested with Tr
 
 \*References to NFSv4 imply any version of NFSv4. All NFSv4 minor versions are supported, for example version 4.2.
 
-## Active/passive cluster
+Active/passive cluster
+----------------------
 
 You can use any POSIX compliant shared file system for both Transfer CFT data files and transferable application files. Please see the [Supported file systems](#Supported_fs_ux_standalone) in the Standalone installation section.
 
-## Active/active cluster
+Active/active cluster
+---------------------
 
 #### {{< TransferCFT/suitevariablesTransferCFTName  >}} data files
 
@@ -47,6 +50,7 @@ The following non-exhaustive table lists shared file systems that have been test
 | AIX  | GPFS, NFSv4*  | NFSv3, CXFS, VeritasSF  |
 | HP-UX  | NFSv4*  | NFSv3, CXFS, VeritasSF  |
 | Linux-x86  | GPFS, GFS2, NFSv4*, AWS EFS  | NFSv3, CXFS, ACFS, OCFSv1, OCFSv2, QFS, VeritasSF  |
+| OpenVMS  | RMS  |   |
 | Solaris  | NFSv4*  | NFSv3, CXFS, QFS, VeritasSF  |
 | Windows-x86  | SMB/CIFS, GPFS  | CXFS, NFS  |
 | z/OS  | Sharing DASD across Sysplex  |   |
@@ -60,7 +64,8 @@ You can use any POSIX compliant shared file system for transferable application 
 
 Please see the [Supported file systems](#Supported_fs_ux_standalone) in the Standalone installation section.
 
-## NFS prerequisite
+NFS prerequisite
+----------------
 
 When implementing a multihost, multi-node architecture, the Transfer CFT user must have read and write access to any folder and files on all hosts. Across all hosts in the implementation, you should ensure that they are using the same UID number.
 

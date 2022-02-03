@@ -19,9 +19,9 @@ Run the UNINSTAL JCL, which:
 
 > **Note**
 >
-> You must manually modify the JCL, by default the distribution environment is not removed (see lines 000018, 000081, and 000082 in the example).
+> Note: You must manually modify the JCL, by default the distribution environment is not removed (see lines 000018, 000081, and 000082 in the example).
 
-<span class="autonumber"></span>Example
+Example
 
 ```
 000014 //\* 2 phases in this JCL:

@@ -1,15 +1,16 @@
 {
     "title": "segment",
     "linkTitle": "segment",
-    "weight": "3120"
+    "weight": "3140"
 }<span id="segment"></span>
 
-## segment
+segment
+-------
 
 #### CFTPROT
 
-**\[SEGMENT     = { NO
-| <u>YES</u> }\]** Only in sender mode          **Profile = ANY**
+**[SEGMENT     = { NO
+&#124; <span class="underline">YES</span> }]** Only in sender mode          **Profile = ANY**
 
 Option to segment file records in several FPDUs.
 
@@ -25,7 +26,7 @@ This option is not negotiated.
 <!-- -->
 
 - **YES** (default): "Systematic"
-    segmentation, which is implemented by {{< TransferCFT/suitevariablesTransferCFTName >}} to complete a "data unit" (NSDU).
+    segmentation, which is implemented by {{< TransferCFT/suitevariablesTransferCFTName  >}} to complete a "data unit" (NSDU).
     This option relates to all record sizes, and is only effective
     if used with the option CONCAT = YES.
 
@@ -39,5 +40,3 @@ the FPDUs of segmented records regardless of the local value of the SEGMENT
 parameter.
 
 [Return to Command index](../../)
-
- 

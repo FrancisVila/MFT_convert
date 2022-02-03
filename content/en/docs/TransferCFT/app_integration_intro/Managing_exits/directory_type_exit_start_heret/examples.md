@@ -4,7 +4,8 @@
     "weight": "380"
 }<span id="Parameter_Settings"></span>
 
-## Parameter settings
+Parameter settings
+------------------
 
 With these {{< TransferCFT/axwayvariablesComponentShortName  >}} parameter settings, a directory exit task, name
 of the executable module: CFTEXIA, is activated each time Transfer CFT
@@ -94,7 +95,8 @@ Requester mode, if the partner is:
 
 <span id="User_program_in_C"></span>
 
-## User program in C
+User program in C
+-----------------
 
 In this example, you want to take control only if the partner
 is a {{< TransferCFT/axwayvariablesComponentShortName  >}} dynamic type, or non {{< TransferCFT/axwayvariablesComponentShortName  >}}.

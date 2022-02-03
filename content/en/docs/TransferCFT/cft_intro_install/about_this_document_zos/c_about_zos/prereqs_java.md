@@ -2,11 +2,13 @@
     "title": "Java",
     "linkTitle": "Java  ",
     "weight": "170"
-}## {{< TransferCFT/suitevariablesSecureRelayName  >}} prerequisites
+}{{< TransferCFT/suitevariablesSecureRelayName  >}} prerequisites
+---------------------------------------------------------------------
 
 When using Secure Relay, Java 8 must be installed in the same environment as the Transfer CFT installation. The Master Agent is managed, but the Router Agent can be in another environment.
 
-## Java requirements for Transfer CFT z/OS
+Java requirements for Transfer CFT z/OS
+---------------------------------------
 
 Begin by checking if the z/OS system already has a Java environment available. {{< TransferCFT/suitevariablesSecureRelayName  >}} requires a SDK Java Version 8. If you do not have this Java level installed, visit the IBM Java website for z/OS.
 

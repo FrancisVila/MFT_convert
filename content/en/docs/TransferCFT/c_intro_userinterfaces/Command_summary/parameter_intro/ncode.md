@@ -1,7 +1,7 @@
 {
     "title": "ncode",
     "linkTitle": "ncode",
-    "weight": "2120"
+    "weight": "2140"
 }<span id="ncode"></span>
 
 ### ncode
@@ -10,8 +10,8 @@
 
 #### CFTSEND, SEND
 
-****\[NCODE = { '\_' | ASCII
-| BINARY | EBCDIC}\]****
+****[NCODE = { '_' &#124; ASCII
+&#124; BINARY &#124; EBCDIC}]****
 
 ****PeSIT****
 
@@ -41,7 +41,7 @@ The following values explicitly or implicitly determine the action:
     with an external translation table (see the use of the XLATE parameter)
 - If NCODE is
     not FCODE, ASCII/EBCDIC or EBCDIC/ASCII translation is always performed,
-    whether by means of an external translation table or the {{< TransferCFT/axwayvariablesComponentShortName >}}
+    whether by means of an external translation table or the {{< TransferCFT/axwayvariablesComponentShortName  >}}
     internal translation table
 
 In the PeSIT protocol Transfer
@@ -69,8 +69,8 @@ For further information, refer to *[Protocols](../../../../protocols_start_here)
 
 #### CFTRECV
 
-****\[NCODE = { '\_' | ASCII
-| BINARY | EBCDIC}\]****
+****[NCODE = { '_' &#124; ASCII
+&#124; BINARY &#124; EBCDIC}]****
 
 ****SFTP only****
 
@@ -93,7 +93,7 @@ Regardless of the FTYPE, when using SFTP, the end-of-line in the received file i
 
 #### CFTXLATE
 
-****\[NCODE = {ASCII | EBCDIC}\]****
+****[NCODE = {ASCII &#124; EBCDIC}]****
 
 Code of data sent over the network.
 

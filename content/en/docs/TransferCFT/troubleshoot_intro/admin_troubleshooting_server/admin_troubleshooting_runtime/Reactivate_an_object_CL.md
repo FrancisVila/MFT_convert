@@ -20,7 +20,8 @@ the ACT command to reactivate:
 | <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/type">TYPE</a>  | Object to reactivate:<br/> • PART<br/> • TRK<br/> • CRON<br/> • FOLDER |
 
 
-## Using the ACT command
+Using the ACT command
+---------------------
 
 Using CFTUTIL you can perform the following commands.
 
@@ -34,8 +35,8 @@ ACT TYPE=PART,ID=<CFTPART_ID>,MODE=<mode>
 
 Where:
 
-- <span style="font-family: 'Courier New';">CFTPART\_ID</span> is the identifier for the partner to activate. To activate several partners with a single command, use wildcard characters or meta characters
-- <span style="font-family: 'Courier New';">Mode</span> is the mode to be activated, with values: "BOTH" , "B", "REQUESTER", "R" , "SERVER", "S"
+- CFTPART_ID is the identifier for the partner to activate. To activate several partners with a single command, use wildcard characters or meta characters
+- Mode is the mode to be activated, with values: "BOTH" , "B", "REQUESTER", "R" , "SERVER", "S"
 
 ****Example****
 

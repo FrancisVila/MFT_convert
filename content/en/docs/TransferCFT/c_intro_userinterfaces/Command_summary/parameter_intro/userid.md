@@ -1,7 +1,7 @@
 {
     "title": "userid",
     "linkTitle": "userid",
-    "weight": "3690"
+    "weight": "3710"
 }<span id="userid"></span>
 
 ### userid
@@ -10,8 +10,8 @@
 
 #### CFTRECV, **<span id="userid_CFTSEND"></span>**CFTSEND
 
-******\[USERID =
-{"<u>Transfer CFT userid</u>" | *string32* }\]******
+******[USERID =
+{"<span class="underline">Transfer CFT userid</span>" &#124; *string32* }]******
 
 Identifier of the transfer owner.
 
@@ -22,19 +22,19 @@ is the system "userid" of the server {{< TransferCFT/axwayvariablesComponentShor
 
 This field can include one or more of the following symbolic variables:
 
-- <span style="font-weight: bold;">****&PART****</span>:
+- ****&PART****:
     value substituted by the local identifier of the transfer partner (CFTPART
-    <span style="font-weight: bold;">****id****</span>)
-- <span style="font-weight: bold;">****&SUSER****</span>:
-    value substituted by the SUSER parameter sent between two {{< TransferCFT/axwayvariablesComponentShortName >}}s (PeSIT D CFT profile and PeSIT E protocols)
-- &<span style="font-weight: bold;">****RUSER****</span>:
-    value substituted by the <span style="font-weight: bold;">****ruser****</span>
-    parameter sent between two {{< TransferCFT/axwayvariablesComponentShortName >}}s (PeSIT D CFT profile
+    ****id****)
+- ****&SUSER****:
+    value substituted by the SUSER parameter sent between two {{< TransferCFT/axwayvariablesComponentShortName  >}}s (PeSIT D CFT profile and PeSIT E protocols)
+- &****RUSER****:
+    value substituted by the ****ruser****
+    parameter sent between two {{< TransferCFT/axwayvariablesComponentShortName  >}}s (PeSIT D CFT profile
     and PeSIT E protocols)
 
 > **Note**
 >
-> If a SEND or RECV command is used for the transfer, the identifier
+> Note: If a SEND or RECV command is used for the transfer, the identifier
 > of the transfer owner is the system "userid" of the user having
 > activated the command.
 
@@ -70,7 +70,7 @@ Maximum length 32 characters.
 
 > **Note**
 >
-> Using a different user (USERID) is not available on Linux if the event mode is enabled (USEFSEVENTS=YES).
+> Note: Using a different user (USERID) is not available on Linux if the event mode is enabled (USEFSEVENTS=YES).
 
 When implementing file user rights with USERCTRL on Windows systems, you must run Transfer CFT as a service. Please see <a href="../../../../cft_intro_install/windows_install_start_here/windows_install_start_here/running_cft_for_the_first_time_windows/add_system_user_windows" class="MCXref xref">How to enable system users - Windows</a> for more information.
 

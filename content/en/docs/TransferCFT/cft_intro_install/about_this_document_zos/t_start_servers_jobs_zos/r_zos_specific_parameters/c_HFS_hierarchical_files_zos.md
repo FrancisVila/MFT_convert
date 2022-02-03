@@ -2,9 +2,9 @@
     "title": "HFS hierarchical files",
     "linkTitle": "HFS hierarchical files",
     "weight": "310"
-}The <a href="" class="MCTextPopup popup popupHead">HFS<span class="MCTextPopupBody MCTextPopupBody_Closed needs-pie popupBody" aria-hidden="true"><span class="MCTextPopupArrow"> </span>Hierarchical File System </span></a> data architecture is consecutive and non-structured for records and blocks. The HFS files are installed in hierarchical disk spaces, and divided into directories and sub-directories according to UNIX conventions.
+}The <a href="" class="MCTextPopup popup popupHead">HFS Hierarchical File System</a> data architecture is consecutive and non-structured for records and blocks. The HFS files are installed in hierarchical disk spaces, and divided into directories and sub-directories according to UNIX conventions.
 
-HFS files are managed either by applications that work in an UNIX/OMVS environment, or by applications that use the <a href="" class="MCTextPopup popup popupHead">USS<span class="MCTextPopupBody MCTextPopupBody_Closed needs-pie popupBody" aria-hidden="true"><span class="MCTextPopupArrow"> </span>UNIX System Services</span></a>, such as the management and access interface.
+HFS files are managed either by applications that work in an UNIX/OMVS environment, or by applications that use the <a href="" class="MCTextPopup popup popupHead">USS UNIX System Services</a>, such as the management and access interface.
 
 Transfer CFT only accepts the complete name from the root directory. All file name components are separated by the ‘/’ character. The complete name is limited to 248 characters.
 
@@ -15,7 +15,8 @@ Transfer CFT z/OS can only access HFS files for a transfer. This excludes any ot
 - Does not support generic sending of HFS in homogeneous mode.
 - The CFTUTIL utility COPYFILE function does not work with HFS files.
 
-## HFS file names
+HFS file names
+--------------
 
 File names coded in the FNAME=, WFNAME=, and NFNAME= parameters must follow the UNIX conventions for file identification. This means that the files values for the parameters associated with FNAME=, and WFNAME= parameters must be coded between quotes “…”.
 
@@ -39,7 +40,7 @@ FNAME =/home/qualcft/\*\*
 
 > **Note**
 >
-> A single asterisk \* only selects the file in the immediate folder.
+> Note: A single asterisk \* only selects the file in the immediate folder.
 
 ### HFS file characteristics
 

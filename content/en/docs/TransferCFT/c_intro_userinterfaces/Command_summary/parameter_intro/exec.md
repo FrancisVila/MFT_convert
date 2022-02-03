@@ -1,7 +1,7 @@
 {
     "title": "exec",
     "linkTitle": "exec",
-    "weight": "830"
+    "weight": "820"
 }<span id="exec"></span>
 
 ### exec
@@ -10,7 +10,7 @@
 
 #### CFTSEND, CFTRECV, SEND, RECV
 
-****\[EXEC = filename\]...{string 512}****
+****[EXEC = filename]...{string 512}****
 
 Specify the name of the file that defines the end-of-transfer procedure.
 
@@ -41,19 +41,19 @@ to in CFTPARM. See [Symbolic variables](../../symbolic_variables).
     -   If the file does
         not exist, an error message is generated and no processing is executed on completion of the transfer (even
         if the EXECSF parameter of the CFTPARM command is defined).
-    -   If EXEC is set to \_NONE\_, then no processing is executed even if there is a defined EXECSF or EXECRF.
+    -   If EXEC is set to _NONE_, then no processing is executed even if there is a defined EXECSF or EXECRF.
 - If this EXEC parameter is not defined, the EXECSF or EXECRF parameter
     of the CFTPARM command is taken into account.
 
 > **Note**
 >
-> To use direct script execution instead of the template script processing, preface the &lt;EXEC>value with 'cmd:'. For example, &lt;EXEC>='cmd:myscript.sh &PART &IDT &IDTU'. See Directly processing a program or script for details, examples, restrictions, and support.
+> Note: To use direct script execution instead of the template script processing, preface the &lt;EXEC&gt;value with 'cmd:'. For example, &lt;EXEC&gt;='cmd:myscript.sh &PART &IDT &IDTU'. See Directly processing a program or script for details, examples, restrictions, and support.
 
 <span id="exec_CFTLOG"></span>
 
 #### CFTLOG
 
-****\[EXEC = filename\]
+****[EXEC = filename]
    {string
 64}****
 
@@ -67,7 +67,7 @@ the name of the last log file used before switching (current file).
 
 #### CFTACCNT
 
-****\[EXEC = filename\]    {string 64}****
+****[EXEC = filename]    {string 64}****
 
 Name of the procedure to be executed when {{< TransferCFT/axwayvariablesComponentShortName  >}} switches to the
 other statistical file.
@@ -79,7 +79,7 @@ contains the name of the last statistical file used before switching.
 
 #### CFTDEST
 
-**\[EXEC = { <u>DEST</u> | PART | CHILDREN }\]**
+**[EXEC = { <span class="underline">DEST</span> &#124; PART &#124; CHILDREN }]**
 
 The end-of-transfer procedure submit
 mode.
@@ -96,16 +96,16 @@ mode.
 
 #### SUBMIT
 
-**\[EXEC = filename\]**
+**[EXEC = filename]**
 
 #### CFTCRON
 
-****\[EXEC = filename\]...{string 512}****
+****[EXEC = filename]...{string 512}****
 
 Specify the name of the file that describes the CRONJOB procedure.
 
 > **Note**
 >
-> To use direct script execution instead of the template script processing, preface the &lt;EXEC>value with 'cmd:'. For example, &lt;EXEC>='cmd:myscript.sh &PART &IDT &IDTU'. See Directly processing a program or script for details, examples, restrictions, and support.
+> Note: To use direct script execution instead of the template script processing, preface the &lt;EXEC&gt;value with 'cmd:'. For example, &lt;EXEC&gt;='cmd:myscript.sh &PART &IDT &IDTU'. See Directly processing a program or script for details, examples, restrictions, and support.
 
 [Return to Command index](../../)

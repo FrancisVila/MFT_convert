@@ -1,6 +1,6 @@
 {
     "title": "Setting unified configuration  values",
-    "linkTitle": "Using CFTUTIL to set UCONF values",
+    "linkTitle": "Modifying UCONF fields with CFTUTIL",
     "weight": "260"
 }From a command line window, you can use the CFTUTIL utility to view
 and modify UCONF parameters. To view the contents and types of variables, you can create a list.
@@ -50,7 +50,7 @@ return a specified parameter to the default value
 **LISTUCONF**:
 display multiple technical parameter values
 
-`LISTUCONF id=PARAMETER-KEY-PATTERN,scope=ALL|USER|   |DEFAULT,content=BRIEF|FULL|DEBUG`
+`LISTUCONF id=PARAMETER-KEY-PATTERN,scope=ALL&#124;USER&#124;   &#124;DEFAULT,content=BRIEF&#124;FULL&#124;DEBUG`
 
 ****Example 1****
 
@@ -79,7 +79,7 @@ id=copilot.\*,content=FULL
 
 Use the [content](../../../c_intro_userinterfaces/command_summary/parameter_intro/content) parameter to define output properties:
 
-<span class="code">`LISTUCONF CONTENT=EXTRACT|DEBUG|PROPS`</span>
+`LISTUCONF CONTENT=EXTRACT&#124;DEBUG&#124;PROPS`
 
 Where:
 
@@ -91,4 +91,4 @@ Where:
 
 To output the content into a file use with the [FOUT](../../../c_intro_userinterfaces/command_summary/parameter_intro/fout) parameter:
 
-<span class="code">`CFTUTIL LISTUCONF FOUT=fname`</span>
+`CFTUTIL LISTUCONF FOUT=fname`

@@ -1,71 +1,31 @@
 {
     "title": "SFTP quick start!",
     "linkTitle": "SFTP quick start!",
-    "weight": "140"
-}The supported operating systems are listed in the [Platform features](../../../datasheet) table.
+    "weight": "130"
+}******T**he supported operating systems are listed in the** [Platform features](../../../datasheet) **table.********
 
-This page provides a bare-bones configuration for you to begin to explore using SFTP for file transfers. When you are ready for a more advanced configuration, refer to the [Client configuration](../sftp_client) and [Server configuration](../sftp_server) pages.
+This page provides a bare-bones configuration for you to begin to explore using SFTP for file transfers. When you are ready for a more advanced configuration, refer to the [Client configuration](../sftp_client) and [Server configuration](../sftp_server) pages. If you prefer video step instructions, please see the [How to configure an SFTP flow](#How) demo below.
 
-## What you need
+What you need
+-------------
 
 An installed Transfer CFT that acts as the server, and FileZilla (or similar) to use as the client.
 
-## Step overview
+Procedure
+---------
 
-1. Generate and import the server keys.
-1. Interpret the template for the server configuration.
-1. Use the provided connection details in the client.
-1. Drag and drop your file!
 
-## Tasks on the {{< TransferCFT/suitevariablesTransferCFTName  >}} server
+| **On the Transfer CFT server**  |   |
+| --- | --- |
+| 1. Generate and import the server keys.  | Generate the server's public/private key pair using the <code>pkikeygen </code>utility, which automatically puts the key pair in the PKI database (CFTPKU).<br/> ```  PKIUTIL pkikeygen id=SRV_PRIV_KEY, keylen=2048 ```  |
+| 2. Interpret the template for the server configuration.  | From the runtime directory, interpret the <code>cft-sftp.conf</code> template (click <a href="">here</a> to view the template). Remember, Transfer CFT and the Transfer CFT Copilot server must be stopped.<br/> ```  cftinit conf/cft-sftp.conf ```  |
+| **On the client**  |   |
+| 3. Enter the server connection details.  | Start FileZilla and enter the following connection details: • Host: sftp://&lt;host address of the {{< TransferCFT/suitevariablesTransferCFTName  >}} server&gt;<br/> • Port: 1763 (if you used the SAP from the template)<br/> • Username: user1<br/> • Password: TheUser1Password<br /> <br/> <blockquote> **Note**<br/> Tip The username and password are case sensitive.<br/> </blockquote><br/> Click **Quickconnect** to connect. Click **OK** to accept the pop-up to accept the key.<br /> ![](/Images/TransferCFT/fz_client_popup.png)  |
+| 4. Drag and drop files to <code>FLOW01 </code>or <code>FLOW02 </code>to perform file transfers.  | ![](/Images/TransferCFT/fz_client.png) |
 
-### 1. Generate and import keys
 
-Generate the server's public/private key pair using the <span class="code">`pkikeygen `</span>utility, which automatically puts the key pair in the PKI database (CFTPKU).
-
-```
-PKIUTIL pkikeygen id=SRV_PRIV_KEY, keylen=2048
-```
-
-### 2. Interpret the predefined SFTP template
-
-From the runtime directory, interpret the <span class="code">`cft-sftp.conf`</span> template (click [here]() to view the template). Remember, Transfer CFT and the Transfer CFT Copilot server must be stopped.
-
-```
-cftinit conf/cft-sftp.conf
-```
-
-This example uses the most basic type of authentication. However, the <span class="code">`cft-sftp.conf`</span> template includes examples of multiple types of authentication, as described in detail in [SSH concepts](../sftp_keys_concepts).
-
-## Tasks on the FileZilla client
-
-### 3. Enter server connection details
-
-1. Start Filezilla and enter the following connection details:
-
-- Host: sftp://&lt;host address of the {{< TransferCFT/suitevariablesTransferCFTName >}} server>
-
-- Port: 1763 (if you used the SAP from the template)
-
-- Username: user1
-
-- Password: TheUser1Password  
-
-    > **Note**
-    >
-    > Tip  
-    > The username and password are case sensitive.
-
-Click **Quickconnect** to connect.
-
-Click **OK** to accept the pop-up to accept the key.  
-![](/Images/TransferCFT/fz_client_popup.png)
-
-### 4. Perform a file transfer
-
-Drag and drop files to <span class="code">`FLOW01 `</span>or <span class="code">`FLOW02 `</span>to perform file transfers.
-
-![](/Images/TransferCFT/fz_client.png)
+Check the results
+-----------------
 
 You can check the Transfer CFT log for details.
 
@@ -107,3 +67,7 @@ IDT=C2610430>
 00 19/03/26 10:43:08 CFTT88I+<IDTU=A0000001 WORKINGDIR=sftp/user1/flow01
 FNAME=FLOW01/stdio NBC=147998 DURATION=0s>
 ```
+<span id="How"></span>
+
+How to configure an SFTP flow - video
+-------------------------------------

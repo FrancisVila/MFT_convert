@@ -1,7 +1,7 @@
 {
     "title": "nlrecl",
     "linkTitle": "nlrecl",
-    "weight": "2230"
+    "weight": "2250"
 }<span id="nlrecl"></span>
 
 ### nlrecl
@@ -10,8 +10,8 @@
 
 #### CFTSEND, SEND
 
-**\[NLRECL = { <u>FLRECL</u>** **<u>value</u>**
-**| n}\]**
+**[NLRECL = { <span class="underline">FLRECL</span>** **<span class="underline">value</span>**
+**&#124; n}]**
 
 For records of:
 

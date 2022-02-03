@@ -1,14 +1,14 @@
 {
     "title": "netband",
     "linkTitle": "netband",
-    "weight": "2150"
+    "weight": "2170"
 }<span id="netband"></span>
 
 ### {{< TransferCFT/SystemTitle  >}}
 
 ****CFTSEND, CFTRECV****
 
-****\[ NETBAND = { 1...16 } \]****
+****[ NETBAND = { 1...16 } ]****
 
 The outgoing port range is controlled by the CFTNET object SRCPORTS
 parameter. There is a maximum of 16 port ranges that can be defined for
@@ -30,5 +30,3 @@ If NETBAND = 3, the third value is used as the outgoing port range.
  
 
 [Return to Command index](../../)
-
- 

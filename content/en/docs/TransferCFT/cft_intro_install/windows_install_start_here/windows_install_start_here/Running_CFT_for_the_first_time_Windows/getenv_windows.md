@@ -11,13 +11,14 @@ When loading the profile, the files that are loaded depend on if you are using B
 
 > **Note**
 >
-> When executing cft commands such as CFTUTIL or PKIUTIL in PowerShell, you must remove all spaces surrounding the comma (,). For example, instead of the command CFTUTIL send part=paris , idf=test enter CFTUTIL send part=paris,idf=test.
+> Note: When executing cft commands such as CFTUTIL or PKIUTIL in PowerShell, you must remove all spaces surrounding the comma (,). For example, instead of the command CFTUTIL send part=paris , idf=test enter CFTUTIL send part=paris,idf=test.
 
-## How to define additional Transfer CFT environment variables
+How to define additional Transfer CFT environment variables
+-----------------------------------------------------------
 
-1. In the <span class="code">`%CFTDIRRUNTIME%/profile.d `</span>directory, create a new file with <span class="code">`.bat`</span> as the suffix. In this file, add your customized variables as follows. For example:  
+1. In the `%CFTDIRRUNTIME%/profile.d `directory, create a new file with `.bat` as the suffix. Add your customized variables in this file as follows. For example:  
     set MYVARIABLE01=TheVariableValue01  
     set MYVARIABLE02=TheVariableValue02
-1. Execute the <span class="code">`profile `</span>command.
+1. Execute the `profile `command.
 
-See also, [Windows-specific system functions](../../specific_system_functions).
+See also the details on using [symbolic variables](../../../../../c_intro_userinterfaces/command_summary/symbolic_variables).

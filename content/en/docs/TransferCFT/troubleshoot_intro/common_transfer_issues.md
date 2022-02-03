@@ -1,13 +1,14 @@
 {
     "title": "Troubleshooting common transfer issues",
     "linkTitle": "Troubleshoot common transfer issues",
-    "weight": "240"
-}## Diagi=302 
+    "weight": "230"
+}Diagi=302 
+----------
 
 
 | Event | Consequence |
 | --- | --- |
-| NET - Network link broken (cut-off, time-out) outside the connection phase. DIAGP is then set to VNRELI | D status - RETRY/COMMUT<br /> Up to "RETRYM" number or retries are performed for the transfer and the access data. If the number of retries reaches the value in the RETRYM parameter, Transfer CFT switches the access data.<br/> • The partner access data for the next retry will relate to the next IP address parameter (CFTNET command), or the next PROT parameter (CFTPART command). The restart counter is reset to 0.<br/> • If the protocol used is the last in the list, the transfer is either switched to the backup partner (IPART parameter of the CFTPART command) or aborted with code 405, while maintaining the diagnostic code (DIAGP) of the last retry |
+| NET - Network link broken (cut-off, time-out) outside the connection phase. DIAGP is then set to VNRELI | D status - RETRY/COMMUT<br /> Up to &quot;RETRYM&quot; number or retries are performed for the transfer and the access data. If the number of retries reaches the value in the RETRYM parameter, Transfer CFT switches the access data.<br/> • The partner access data for the next retry will relate to the next IP address parameter (CFTNET command), or the next PROT parameter (CFTPART command). The restart counter is reset to 0.<br/> • If the protocol used is the last in the list, the transfer is either switched to the backup partner (IPART parameter of the CFTPART command) or aborted with code 405, while maintaining the diagnostic code (DIAGP) of the last retry |
 
 
 The network link can break  during the connection phase or the transfer phase. If it occurs while trying to connect to the remote partner, remember that a remote partner is defined by 2 objects:
@@ -26,15 +27,16 @@ The network link can break  during the connection phase or the transfer phase. 
 | The remote host is still unreachable |   |
 | Check your hardware | Unplugged network cable...<br /> Remote host down due to fire, flood, etc. |
 | Host is reachable but the remote port is not |   |
-| Try with a telnet (&lt;host&gt; &lt;sap&gt;) or ftp (&lt;host&gt; &lt;sap&gt;) |  • The remote port is reachable via telnet when you have the following message: "Escape character is '^]'." (Ctrl+$ to escape) <br/><br/> • The remote port is reachable via ftp when you have the following message: Connected to &lt;host&gt; (Ctrl + C to escape)<br/> |
+| Try with a telnet (&lt;host&gt; &lt;sap&gt;) or ftp (&lt;host&gt; &lt;sap&gt;) |  • The remote port is reachable via telnet when you have the following message: &quot;Escape character is '^]'.&quot; (Ctrl+$ to escape) <br/><br/> • The remote port is reachable via ftp when you have the following message: Connected to &lt;host&gt; (Ctrl + C to escape)<br/> |
 | Host and port are reachable but I still have the diagnostic code 302 |   |
 | Check the diagp error | If diagp = R 0 2f2, the remote partner closed the connection due to the following reasons:<br/> • Incompatibility between TCP and pTCP (the remote is configured in pTCP network protocol whereas you are in TCP)<br/><br/> • The cft.server.max_session value is not equal to 0 but is less than the MAXCNX one (in CFTNET object)<br/><br/> • The remote MAXCNX is reached<br/> |
-|   | If diagp = R 01 280 or R 00 280, the timeout was reached because of:<br/> • A network issue (router, firewall, or other application...) <br/><br/> • An incompatibility in the IP protocol version:<br/><br/> • Check that locally and remotely all is configured with the same IP version (IPV4 , IPV6). &lt;/li&gt;&lt;li value="2"&gt;Check the following uconf values: cft.ipv6.disable_listen cft.ipv6.disable_connect &lt;br/&gt;HOST value (CFTNET object).yes (the default value) &lt;/li&gt;&lt;/ol&gt; &lt;ul&gt;&lt;li&gt;&lt;p&gt;Try a Transfer CFT packet analyzer such as &lt;a  href="https://www.wireshark.org/"&gt;Wireshark&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt; |
+|   | If diagp = R 01 280 or R 00 280, the timeout was reached because of:<br/> • A network issue (router, firewall, or other application...) <br/><br/> • An incompatibility in the IP protocol version:<br/><br/> • Check that locally and remotely all is configured with the same IP version (IPV4 , IPV6). &lt;/li&gt;&lt;li value=&quot;2&quot;&gt;Check the following uconf values: cft.ipv6.disable_listen cft.ipv6.disable_connect &lt;br/&gt;HOST value (CFTNET object).yes (the default value) &lt;/li&gt;&lt;/ol&gt; &lt;ul&gt;&lt;li&gt;&lt;p&gt;Try a Transfer CFT packet analyzer such as &lt;a class=&quot;Hyperlink_1&quot; href=&quot;https://www.wireshark.org/&quot;&gt;Wireshark&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt; |
 | Still have the diagnostic code 302 and don't understand the diagp |   |
 | Check the traces  | Check the contents of the following file:<br/> UNIX: Transfer_CFT/runtime/run folder &gt; cft.out file<br/> • Windows: Transfer_CFT\runtime\run folder &gt; cftnet.trc file<br/> |
 
 
-## Diagi=26x
+Diagi=26x
+---------
 
 
 | Code | Event | Consequence |
@@ -56,8 +58,8 @@ Authentication implies having certificates and private keys. In Transfer CFT, th
 - Local PKI database
 
     In a Transfer CFT local PKI database, the private key is encrypted  by the PKIUTIL PKICER command (such as PKICER). the pkipassw parameter in the PKICER command is used to encrypt the private key in the local database  
-    PKIUTIL PKICER ID=user1,iname=cert1.der,ikname=cert1k.der,pkipassw=&lt;password> .  
-    All private keys  must be stored in PKI database with the same &lt;password>.  As Transfer CFT must have access to the private key, the CFTPARM object must refer to the same value in the PKIPASSW parameter 
+    PKIUTIL PKICER ID=user1,iname=cert1.der,ikname=cert1k.der,pkipassw=&lt;password&gt; .  
+    All private keys  must be stored in PKI database with the same &lt;password&gt;.  As Transfer CFT must have access to the private key, the CFTPARM object must refer to the same value in the PKIPASSW parameter 
 
 <!-- -->
 
@@ -66,7 +68,8 @@ Authentication implies having certificates and private keys. In Transfer CFT, th
     The private key is stored in an entity and can be accessed, using the PASSW parameter. This parameter is the password of for the CFTSSL object and allows Transfer CFT to access the private key.  
     For more information on other common SSL errors, see <a href="../admin_troubleshooting_server/troubleshoot_security" class="MCXref xref">Troubleshoot security errors</a>.
 
-## Diagi=230 
+Diagi=230 
+----------
 
 When the network session is opened and if a secured connection is required (SSL handshake), you may have a protocol session. During the protocol exchange:
 

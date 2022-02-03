@@ -1,7 +1,7 @@
 {
     "title": "Managing  certificates",
     "linkTitle": "Managing certificates",
-    "weight": "170"
+    "weight": "160"
 }<span id="What_you_will_find_in_this_book"></span>This topic
 describes security certificates, and the following security concepts:
 
@@ -10,11 +10,13 @@ describes security certificates, and the following security concepts:
 - [Database
     protection](#Database_protection)
 
-## Central Governance certificate management
+Central Governance certificate management
+-----------------------------------------
 
-When using Transfer CFT with Central Governance, certificate management is performed by {{< TransferCFT/suitevariablesCentralGovernanceName  >}}. See [ {{< TransferCFT/suitevariablesCentralGovernanceName  >}} registration concepts](../../governance_services_intro/cg_register_overview) for details on certificates during installation and registration.
+When using Transfer CFT with Central Governance, certificate management is performed by {{< TransferCFT/suitevariablesCentralGovernanceName  >}}. See[ {{< TransferCFT/suitevariablesCentralGovernanceName  >}} registration concepts](../../governance_services_intro/cg_register_overview) for details on certificates during installation and registration.
 
-## What is a certificate?
+What is a certificate?
+----------------------
 
 A certificate is an electronic document used to identify an individual,
 a server, a company, or other entity and to associate that identity with
@@ -41,7 +43,8 @@ to anyone through its own certificate.
 
 <span id="Overview_of_Certificate_Standards"></span>
 
-## Certificate standards overview
+Certificate standards overview
+------------------------------
 
 The following sections give an overview of certificate fields as defined
 by ISO in the X509 standard.
@@ -127,14 +130,14 @@ Certificate:
 Data:
 Version: v3 (0x2)
 Serial Number: 3 (0x3)
-Signature Algorithm: PKCS #1 MD5 With RSA Encryption
+Signature Algorithm: PKCS \#1 MD5 With RSA Encryption
 Issuer: OU=Axway Certificate Authority, O=Axway, C=US
 Validity:
 Not Before: Fri Oct 17 18:36:25 2018
-Not After: Sun Oct 17 18:36:25 {{< TransferCFT/Primarycodecopyright >}}
+Not After: Sun Oct 17 18:36:25 2022
 Subject: CN=Albert Dupont, OU=Marketing, O=Axway, C=US
 Subject Public Key Info:
-Algorithm: PKCS #1 RSA Encryption
+Algorithm: PKCS \#1 RSA Encryption
 Public Key:
 Modulus:
 00:ca:fa:79:98:8f:19:f8:d7:de:e4:49:80:48:e6:2a:2a:86:
@@ -157,7 +160,7 @@ Key Identifier:
 f2:f2:06:59:90:18:47:51:f5:89:33:5a:31:7a:e6:5c:fb:36:
 26:c9
 Signature:
-Algorithm: PKCS #1 MD5 With RSA Encryption
+Algorithm: PKCS \#1 MD5 With RSA Encryption
 Signature:
 6d:23:af:f3:d3:b6:7a:df:90:df:cd:7e:18:6c:01:69:8e:54:65:fc:06:
 30:43:34:d1:63:1f:06:7d:c3:40:a8:2a:82:c1:a4:83:2a:fb:2e:8f:fb:
@@ -169,7 +172,8 @@ dd:c4
 ```
 <span id="Database_protection"></span>
 
-## Database protection
+Database protection
+-------------------
 
 A database record corresponds to a certificate, regardless of whether
 it is from a root authority, an intermediate authority, or a user. In
@@ -186,7 +190,8 @@ and encrypted for the private key. They are also sealed.
 Private key encryption is based on a password that must be passed as
 an argument in the PKICER command.
 
-## Complete CA certificate chains
+Complete CA certificate chains
+------------------------------
 
 In {{< TransferCFT/suitevariablesTransferCFTName  >}} 3.1.3 and lower, you can perform a SSL transfer even if the certificate chain is not complete (not signed by a ROOT CA). However, for {{< TransferCFT/suitevariablesTransferCFTName  >}} 3.2.0 and higher, the certificate chain must be complete for a transfer to succeed.
 

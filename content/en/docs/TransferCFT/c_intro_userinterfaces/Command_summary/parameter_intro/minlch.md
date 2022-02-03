@@ -4,11 +4,12 @@
     "weight": "1990"
 }<span id="minlch"></span>
 
-## {{< TransferCFT/SystemTitle  >}}
+{{< TransferCFT/SystemTitle  >}}
+-------------------------------------
 
 #### CFTNET
 
-****\[MINLCH = {1 | n}\] {0..512}****
+****[MINLCH = {1 &#124; n}] {0..512}****
 
 ****OS400****
 

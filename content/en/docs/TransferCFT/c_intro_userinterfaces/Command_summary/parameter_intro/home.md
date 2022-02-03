@@ -1,7 +1,7 @@
 {
     "title": "&HOME",
     "linkTitle": "_HOME_",
-    "weight": "1460"
+    "weight": "1450"
 }### &HOME
 
 A keyword to use with the [WORKINGDIR](../workingdir) parameter.
@@ -13,4 +13,4 @@ You can use the &HOME keyword in CFTSEND and CFTRECV command file names, script 
 
 > **Note**
 >
-> For more information on system users, refer to the platform specific guide, UNIX:Using system users or Windows: Using system users.
+> Note: For more information on system users, refer to the platform specific guide, UNIX:Using system users or Windows: Using system users.

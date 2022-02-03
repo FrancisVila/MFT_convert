@@ -8,8 +8,8 @@
 
 #### CFTNET
 
-****\[MAXCNX     = { <u>384</u>
-| n} \]      {0...MAXTRANS value up to 2000}****
+****[MAXCNX     = { <span class="underline">384</span>
+&#124; n} ]      {0...MAXTRANS value up to 2000}****
 
 The maximum number of simultaneous connections that {{< TransferCFT/axwayvariablesComponentShortName  >}} accepts
 to establish on a given network resource.
@@ -22,6 +22,6 @@ to establish on a given network resource.
 
 > **Note**
 >
-> On Unix systems, setting the MAXCNX value to higher than 1020 has no impact.
+> Note: On Unix systems, setting the MAXCNX value to higher than 1020 has no impact.
 
 [Return to Command index](../../)

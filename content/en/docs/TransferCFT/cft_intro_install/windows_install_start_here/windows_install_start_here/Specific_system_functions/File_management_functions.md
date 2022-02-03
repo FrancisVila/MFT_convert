@@ -1,7 +1,7 @@
 {
     "title": "File  management functions",
     "linkTitle": "File management functions",
-    "weight": "270"
+    "weight": "260"
 }-   [Managing
     file flushes](#Managing_file_flushes)
 - [Managing
@@ -15,7 +15,8 @@
 
 <span id="About_file_management_functions"></span>
 
-## About file management functions
+About file management functions
+-------------------------------
 
 <span id="Managing_file_flushes"></span>
 
@@ -40,7 +41,7 @@ Since this security behavior is time-consuming,you may feel that such behavior i
 
 ### Deactivating the flush function
 
-<span class="bold_in_para">****Environment variable****</span>
+****Environment variable****
 
 #### CFTNOFLUSH
 
@@ -59,7 +60,8 @@ flushes continue to occur.
 
 <span id="Managing_access_conflicts_to_CFT_working_files"></span>
 
-## Managing access conflicts with Transfer CFT working files
+Managing access conflicts with Transfer CFT working files
+---------------------------------------------------------
 
 In certain operating configurations, particularly in a Transfer
 CFT/Server – Transfer CFT/Client architecture, the Transfer CFT working
@@ -94,7 +96,8 @@ files before a fail message is posted.
 
 <span id="Recognizing_file_types"></span>
 
-## Recognizing file types
+Recognizing file types
+----------------------
 
 The Windows operating systems only handle files known as binary "stream"
 files. Therefore, with these operating systems you do not know
@@ -126,11 +129,11 @@ The CFTSUFX file is made up of lines that may consist of:
 - The definition
     of a suffix, possible followed by a comment
 
-A comment is any item of text beginning with the character ‘#’.
+A comment is any item of text beginning with the character ‘\#’.
 
 A suffix is defined in accordance with the following syntax:
 
-&lt;suffix of 1 to 3 letters>=&lt;letter defining the file type>
+&lt;suffix of 1 to 3 letters&gt;=&lt;letter defining the file type&gt;
 
 Only characters supported by the operating system can be within the
 first 1-3 letters defining the suffix. Wild cards, ‘?’ and ‘\*’ cannot
@@ -163,8 +166,8 @@ generated, provided the parameterization is adequate, by Transfer CFT
 or by its COPYFILE utility. In the Transfer CFT parameter setting, this
 type of file is characterized by the letter "V".
 
-Adding types for the Transfer CFT/Server
-– Transfer CFT/Client architecture
+Adding types for the Transfer CFT/Server – Transfer CFT/Client architecture
+---------------------------------------------------------------------------
 
 In this architecture, you can operate Transfer CFT/Client
 Windows with a UNIX Transfer CFT/Server.
@@ -225,11 +228,11 @@ case
 
 ****Environment variable****
 
-#### CFT\_CSFN
+#### CFT_CSFN
 
 Transfer CFT/Windows does not differentiate between upper and lower
 case in the suffix names described in the suffix file. Such differentiation
-does take place if the environment variable CFT\_CSFN is set.
+does take place if the environment variable CFT_CSFN is set.
 
 For example:
 
@@ -237,13 +240,14 @@ For example:
 
 <span id="Sending_a_group_of_files"></span>
 
-## Sending a group of files
+Sending a group of files
+------------------------
 
 This section describes how to create a command to send a group
 of files. To better understand this section, refer to the following general group file information:
 
 - [Sending
-    a group of files](../../../../../concepts/using_the_send_command/send_group_of_files_cl)
+    a group of files](../../../../../concepts/send_command/send_group_of_files_cl)
 - The [FNAME](../../../../../c_intro_userinterfaces/command_summary/parameter_intro/fname)
     and [WFNAME](../../../../../c_intro_userinterfaces/command_summary/parameter_intro/wfname) parameters
     in the CFTSEND and CFTRECV commands
@@ -252,7 +256,7 @@ A group file send request takes place implicitly when the value of the FNAME par
 for the CFTSEND command has the following two characteristics:
 
 - The first character
-    is a surrogate character ‘#’
+    is a surrogate character ‘\#’
 - The FNAME parameter
     states a folder, or contains meta-characters
 
@@ -275,7 +279,7 @@ systems (not the same file system).
 It is not necessary for the SYST parameter between standardized systems
 to contain data.
 
-#### Sending a group of files in mixed mode
+### Sending a group of files in mixed mode
 
 Transfer CFT detects that it is in a mixed environment because the SYST
 parameter of the CFTPART command contains data and is different from the
@@ -287,7 +291,7 @@ meta-characters is the object of a special transfer.
 This request to send generates as many posts in the catalogue as there
 are files to transfer.
 
-#### Sending a group of files in standardized mode
+### Sending a group of files in standardized mode
 
 The fact that Transfer CFT is sending a group of files in standardized
 mode allows the supplementary functions described below to be implemented.
@@ -348,13 +352,13 @@ These batch files are automatically called by the following parameters:
 The other batch call parameters are unused, and therefore
 insignificant.
 
-#### Parameter setting
+### Parameter setting
 
 To implement the transfer of a group of files in standardized
 mode, the conditions on the Transfer CFT parameters are as follows:
 
 - The parameter FNAME
-    in the CFTSEND command is in the form of #&lt;string>, in which &lt;string>
+    in the CFTSEND command is in the form of \#&lt;string&gt;, in which &lt;string&gt;
     indicates a folder or contains meta-characters
 - The parameter WFNAME
     of the CFTSEND command is a string indicating the name of the out file
@@ -389,6 +393,7 @@ transferring groups of files in mixed mode.
 
 <span id="Disabling_the_homogeneous_mode"></span>
 
-## Disabling the homogeneous mode
+Disabling the homogeneous mode
+------------------------------
 
-Use the unified configuration parameter [uconf:cft.server.force\_heterogeneous\_mode](../../../../../admin_intro/uconf/uconf_heterogeneous_mode) to enable forced heterogeneous mode exchanges, and disable homogeneous mode.
+Use the unified configuration parameter [uconf:cft.server.force_heterogeneous_mode](../../../../../admin_intro/uconf/uconf_heterogeneous_mode) to enable forced heterogeneous mode exchanges, and disable homogeneous mode.

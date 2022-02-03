@@ -1,8 +1,8 @@
 {
     "title": "Manage the database ciphering key",
     "linkTitle": "Manage the database ciphering key",
-    "weight": "230"
-}This topic describes how to manage the ciphering key using the <span class="bold_in_para">****cftcrypt**** </span>tool,  which ciphers all passwords. Information includes:
+    "weight": "220"
+}This topic describes how to manage the ciphering key using the ****cftcrypt**** tool,  which ciphers all passwords. Information includes:
 
 - Overview
 - Command description
@@ -12,15 +12,17 @@
     -   Generate a key
     -   Import the configuration
 
-## Overview
+Overview
+--------
 
 All passwords stored in the UCONF dictionary, or in the {{< TransferCFT/axwayvariablesComponentLongName  >}} databases (for example, CFTPART, CFTPARM) are cyphered using the key generated at installation. If you are performing an upgrade, all passwords are cyphered using a hard-coded key. We recommend that you generate an encryption key as described in [Generate an encryption](#Generate).
 
 > **Note**
 >
-> The encryption key is mandatory to use the embedded SecureRelay.
+> Note: The encryption key is mandatory to use the embedded SecureRelay.
 
-## cftcrypt command
+cftcrypt command
+----------------
 
 ****Syntax****
 
@@ -41,7 +43,7 @@ Genkey options:
 Renewkey options:
 
 - pkitmp: Temporary file where the PKI configuration is stored.
-- pkipref : Prefix for certificates temporary files (z/OS only, on all other systems the non modifiable <span class="code">`cftcrtmp `</span> value is the prefix, for example, an exported certificate could have a name such as "cftcrtmpROOT0001").
+- pkipref : Prefix for certificates temporary files (z/OS only, on all other systems the non modifiable `cftcrtmp ` value is the prefix, for example, an exported certificate could have a name such as "cftcrtmpROOT0001").
 - noremove: Do not remove the temporary file; you can use this to keep track of what has been exported.
 - nopki:  Do not export/import the PKI base.
 - pass: Password.
@@ -50,9 +52,9 @@ Renewkey options:
 
 > **Note**
 >
-> Passwords must contain at least 8 characters, lower case, upper case, numeric and special characters(\*#$!?+-@).
+> Note: Passwords must contain at least 8 characters, lower case, upper case, numeric and special characters(\*\#$!?+-@).
 
-Use the following command to generate an encryption key using the provided password. This creates the <span class="code">`--keyfname`</span> and <span class="code">`--saltfname`</span> files, and references them in UCONF.
+Use the following command to generate an encryption key using the provided password. This creates the `--keyfname` and `--saltfname` files, and references them in UCONF.
 
 ```
 cftcrypt --genkey --keyfname FILENAME --saltfname FILENAME --pass PASSWORD
@@ -67,15 +69,16 @@ cftcrypt --genkey --keyfname FILENAME --saltfname FILENAME --pass PASSWORD
 | crypto.salt_fname  | The path to the salt file, which is required to renew the key.  |
 
 
-## Renew the encryption key
+Renew the encryption key
+------------------------
 
-To renew an encryption key run the <span class="code">`renewkey`</span> command:
+To renew an encryption key run the `renewkey` command:
 
 ```
 cftcrypt --renewkey --keyfname FILENAME --saltfname FILENAME --oldpass PASSWORD --pass PASSWORD
 ```
 
-The command succeeds if the referenced key and salt files exist and the <span class="code">`oldpass `</span>matches the password used to generate the previous key. This command exports the configuration, generates a new encryption key, and imports the configuration.
+The command succeeds if the referenced key and salt files exist and the `oldpass `matches the password used to generate the previous key. This command exports the configuration, generates a new encryption key, and imports the configuration.
 
 ****Platform specifics****
 
@@ -85,16 +88,17 @@ The command succeeds if the referenced key and salt files exist and the <span cl
 
 The cftcrypt tool automatically exports/imports the PKI database when you perform a key renewal. However, to avoid potential issues, the process stops and an error is returned if an issue is detected during the PKI export/import.
 
-- To perform a key renewal with an empty PKI base or without a PKI file, you can use: <span class="code">` cftcrypt --renewkey --nopki `</span>
-- To facilitate debugging, you can use the <span class="code">`--noremove`</span> option, so that the temporary files used by cftcrypt are not deleted. See the <span class="code">`cftcrypt --help `</span>for more information.
+- To perform a key renewal with an empty PKI base or without a PKI file, you can use: ` cftcrypt --renewkey --nopki `
+- To facilitate debugging, you can use the `--noremove` option, so that the temporary files used by cftcrypt are not deleted. See the `cftcrypt --help `for more information.
 
 <span id="Generate"></span>
 
-## Generate an encryption key following an upgrade
+Generate an encryption key following an upgrade
+-----------------------------------------------
 
 It is highly recommended that you generate an encryption key when you upgrade a Transfer CFT 3.2.4 or lower to Transfer CFT 3.3.2 or higher. For example:
 
-1. From the {{< TransferCFT/headerfootervariableshflongproductname >}} runtime directory, perform the extract to export the configuration.  
+1. From the {{< TransferCFT/headerfootervariableshflongproductname  >}} runtime directory, perform the extract to export the configuration.  
     ```
     CFTUTIL cftext fout=cft332.cfg
     ```
@@ -109,7 +113,7 @@ It is highly recommended that you generate an encryption key when you upgrade a 
 1. Import the PKI database.  
     ```
     PKIUTIL @ PKI.EXT
-    (or PKIUTIL # PKI.EXT depending on your system)
+    (or PKIUTIL \# PKI.EXT depending on your system)
     ```
 1. Import the configuration.  
     ```
@@ -118,4 +122,4 @@ It is highly recommended that you generate an encryption key when you upgrade a 
 
 > **Note**
 >
-> On z/OS platforms, use the JCL CFTGNKEY to generate the key.
+> Note: On z/OS platforms, use the JCL CFTGNKEY to generate the key.

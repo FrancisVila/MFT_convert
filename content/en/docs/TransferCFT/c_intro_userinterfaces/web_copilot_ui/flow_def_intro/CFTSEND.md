@@ -1,7 +1,7 @@
 {
     "title": "CFTSEND - Send template",
     "linkTitle": "Send templates - CFTSEND ",
-    "weight": "210"
+    "weight": "200"
 }This topic describes how to define the CFTSEND
 template. Use this command to SEND a file or files to a partner.
 
@@ -18,12 +18,12 @@ topics****
 | Parameter  | Description  |
 | --- | --- |
 | <a href="../../../command_summary/parameter_intro/ackexec">ACKEXEC</a>  | Name of the file describing the procedure to be executed when receiving an acknowledgement reply for the transfer.  |
-| <a href="">ARCHIVEFNAME</a>  | The archived source file name after transfer completion if FACTION=ARCHIVE.<br/> <blockquote> **Note**<br/> The fname and archivefname must be on the same volume (all platforms).<br/> </blockquote>  |
+| <a href="">ARCHIVEFNAME</a>  | The archived source file name after transfer completion if FACTION=ARCHIVE.<br/> <blockquote> **Note**<br/> Note: The fname and archivefname must be on the same volume (all platforms).<br/> </blockquote>  |
 | <a href="../../../command_summary/parameter_intro/comment">COMMENT</a> | Local alphanumeric comment associated with the send transfer. |
 | <a href="../../../command_summary/parameter_intro/cycdate">CYCDATE</a> | Upper final date for activating the first transfer of a cycle. |
 | <a href="../../../command_summary/parameter_intro/cycle">CYCLE</a> | Number of units defining the transfer cycle period. |
 | <a href="../../../command_summary/parameter_intro/cyctime">CYCTIME</a> | Upper limit time for activating the first transfer of a cycle. |
-| <a href="../../../command_summary/parameter_intro/delete">DELETE</a>  | Automatic deletion of the catalog entries in the "X" phase (done) for the corresponding IDF. |
+| <a href="../../../command_summary/parameter_intro/delete">DELETE</a>  | Automatic deletion of the catalog entries in the &quot;X&quot; phase (done) for the corresponding IDF. |
 | <a href="../../../command_summary/parameter_intro/delete">EXEC</a> | Name of the file describing the procedure to be executed on completion of the transfer. |
 | <a href="../../../command_summary/parameter_intro/execsub">EXECSUB</a> | Submission policy of the end-of-transfer procedure, when sending a group of files.  |
 | <a href="../../../command_summary/parameter_intro/execsuba">EXECSUBA</a>  | Submission policy of the procedure to launch receiving acknowledgement, when sending a group of files.  |
@@ -68,7 +68,7 @@ topics****
 | <a href="../../../command_summary/parameter_intro/preexec">PREEXEC</a>  | Name of the file describing the procedure to be executed before the transfer, as per the preprocessing phase.  |
 | <a href="../../../command_summary/parameter_intro/pri">PRI</a> | Send request selection priority. |
 | <a href="../../../command_summary/parameter_intro/ruser">RUSER</a> | Identifier of the file receiver user. |
-| <a href="../../../command_summary/parameter_intro/selfname">SELFNAME</a>  | Name of the file that contains the list of files selected for sending.<br/> <blockquote> **Note**<br/> When using SELFNAME and FACTION=DELETE, the FNAME must be a directory and not a MASK. For example, #dir is deleted, whereas #dir/* is ignored.<br/> </blockquote>  |
+| <a href="../../../command_summary/parameter_intro/selfname">SELFNAME</a>  | Name of the file that contains the list of files selected for sending.<br/> <blockquote> **Note**<br/> Note: When using SELFNAME and FACTION=DELETE, the FNAME must be a directory and not a MASK. For example, #dir is deleted, whereas #dir/* is ignored.<br/> </blockquote>  |
 | <a href="../../../command_summary/parameter_intro/sourceappl">SOURCEAPPL</a>  | The identifier of the local file sender application.  |
 | <a href="../../../command_summary/parameter_intro/spart">SPART</a>  | Network designation by which the local Transfer CFT monitor identifies itself to its partner. |
 | <a href="../../../command_summary/parameter_intro/state">STATE</a> | Defines the transfer request state. |
@@ -96,14 +96,15 @@ table for examples and details.
 | Format  | Processing  |
 | --- | --- |
 | <a href="../../../command_summary/filename_conventions">FNAME = filename</a>  | Sends a file or a version of a file  |
-| FNAME = {mask | dirname}  | Lists a directory  |
+| FNAME = {mask &#124; dirname}  | Lists a directory  |
 | <a href="">FNAME = #filename</a>  | Sends a group of files, the list of which is located in the specified file  |
-| FNAME = {#mask | #dirname}  |  • Sends a group of files selected in line with the generic name specified (#mask)<br/> • Sends all files in the directory specified (#dirname)  |
+| FNAME = {#mask &#124; #dirname}  |  • Sends a group of files selected in line with the generic name specified (#mask)<br/> • Sends all files in the directory specified (#dirname)  |
 
 
 <span id="Example"></span>
 
-## Examples
+Examples
+--------
 
 This section provides examples on how to define the CFTSEND template.
 

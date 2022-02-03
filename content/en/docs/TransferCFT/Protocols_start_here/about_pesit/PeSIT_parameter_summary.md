@@ -1,7 +1,7 @@
 {
     "title": "PI to parameter mapping",
     "linkTitle": "PeSIT parameter summary",
-    "weight": "170"
+    "weight": "160"
 }The following table shows the correspondence between
 standardized PI codes and Transfer CFT defined values.
 
