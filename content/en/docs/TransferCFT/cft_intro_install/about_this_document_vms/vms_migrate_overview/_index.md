@@ -31,7 +31,7 @@ The following methods are available for updating your Transfer CFT product versi
 
 An upgrade is the process of updating to a newer, enhanced version of the software.
 
-For more information, go to <a href="" class="MCXref xref">Manually upgrade Transfer CFT </a> or <a href="#Upgradin" class="MCXref xref">Manually upgrade a Transfer CFT 3.0.1 or 3.1.3 multi-node installation</a>.
+For more information, go to [Manually upgrade a Transfer CFT 3.0.1 or 3.1.3 multi-node installation]().
 
 This mode has the following advantages:
 
@@ -94,4 +94,4 @@ CFTUTIL about
 
 ### More information
 
-If you encounter issues when migrating Transfer CFT, contact Axway Sphere at <a href="https://support.axway.com/" class="Hyperlink_1_1">support.axway.com.</a>
+If you encounter issues when migrating Transfer CFT, contact Axway Sphere at [support.axway.com.](https://support.axway.com/)

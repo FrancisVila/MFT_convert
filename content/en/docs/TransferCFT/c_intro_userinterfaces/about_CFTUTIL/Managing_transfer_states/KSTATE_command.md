@@ -16,7 +16,7 @@ LOG file.
 
 | Parameter  | Description  |
 | --- | --- |
-| <a href="../../../command_summary/parameter_intro/idf">IDF</a> | Model file identifier. |
-| <a href="../../../command_summary/parameter_intro/idtu">IDTU</a> | Local transfer counter identifier. |
-| <a href="../../../command_summary/parameter_intro/part">PART</a><br/> **(Mandatory)** | Identifier of the partner. |
+| [IDF](../../../command_summary/parameter_intro/idf) | Model file identifier. |
+| [IDTU](../../../command_summary/parameter_intro/idtu) | Local transfer counter identifier. |
+| [PART](../../../command_summary/parameter_intro/part)<br/> **(Mandatory)** | Identifier of the partner. |
 

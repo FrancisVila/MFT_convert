@@ -13,7 +13,7 @@ The UCONF `copilot.restapi.api_token_validity` parameter sets the access token'
 Related information includes:
 
 - Using access tokens with REST APIs, see [Using the Swagger UI](../../../../app_integration_intro/using_apis/api_intro/swagger_intro)
-- Token keys and renewal, please see <a href="../../use_saml" class="MCXref xref">SSO using SAML</a>
+- Token keys and renewal, please see [SSO using SAML](../../use_saml)
 - [Changing the key length](../../../../governance_services_intro/register_cg#manually_activate_cg) for a {{< TransferCFT/suitevariablesCentralGovernanceName  >}} certificate
 - [Bearer authentication](../../../../app_integration_intro/using_apis/api_intro/api_authentication)
 

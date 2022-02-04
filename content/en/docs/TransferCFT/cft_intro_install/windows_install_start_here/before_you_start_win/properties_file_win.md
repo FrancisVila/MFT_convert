@@ -31,7 +31,7 @@ If you do not enclose this value in "", the string is interpreted as: `CryptoKey
 | --- | --- | --- | --- |
 | Installation architecture  | @default = single  | Defines single or cluster mode installation.<br/> Values: single, first_host, additional_host | N/A  |
 | installdir  |   | Transfer CFT installation directory.  | cft.install_dir  |
-| accept_general_conditions  | NO  | Set to YES to accept the General Terms and Conditions in the product <a href="https://www.axway.com/en/legal/contract-documents">license</a> when performing a silent installation.  |   |
+| accept_general_conditions  | NO  | Set to YES to accept the General Terms and Conditions in the product [license](https://www.axway.com/en/legal/contract-documents) when performing a silent installation.  |   |
 
 
 ****Basic installation parameters****

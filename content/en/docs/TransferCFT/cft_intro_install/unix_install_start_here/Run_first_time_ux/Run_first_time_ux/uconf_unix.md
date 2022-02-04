@@ -32,7 +32,7 @@ System user
 | --- | --- |
 | cft.unix.cftsu.afunix  | Defines the address family file for inter-process communications.  |
 | cft.unix.cftsu.isservice  | Defines the use of CFTSU as a service.  |
-| cft.unix.cftsu.fname  | Specify the absolute path name to the CFTSU to execute when the user control is enabled, to enable upgrading without being the system administrator. See Unix: <a href="../t_adding_system_user_unix">Using system users</a>. |
+| cft.unix.cftsu.fname  | Specify the absolute path name to the CFTSU to execute when the user control is enabled, to enable upgrading without being the system administrator. See Unix: [Using system users](../t_adding_system_user_unix). |
 
 
 <span id="Separat"></span>

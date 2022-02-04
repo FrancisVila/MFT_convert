@@ -58,13 +58,13 @@ the partner.
 
 | Parameter  | Description  |
 | --- | --- |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/exec">EXEC</a> | Filename. |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/ida">IDA</a>  | Local transfer identifier assigned by the user or user application. The maximum length is 64 characters. |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/idm">IDM</a>  | Message identifier. The value of this identifier is unrestricted. |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/idu">IDT</a>  | Identifier of the original transfer acknowledged by this message. |
-| ****<a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/msg">MSG</a>**** | Message |
-| ******<a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/part">PART</a> ****** | Transfer partner identifier. |
-| ****<a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/pri">PRI</a>**** | Request selection priority. |
-| ******<a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/type">TYPE</a> = REPLY****** | Characterizes a reply send transfer. |
-| Others  | FOR OPTIONAL PARAMETERS COMMON TO SEND: see the <a href="../../../c_intro_userinterfaces/command_summary#SEND">SEND</a> command.  |
+| [EXEC](../../../c_intro_userinterfaces/command_summary/parameter_intro/exec) | Filename. |
+| [IDA](../../../c_intro_userinterfaces/command_summary/parameter_intro/ida)  | Local transfer identifier assigned by the user or user application. The maximum length is 64 characters. |
+| [IDM](../../../c_intro_userinterfaces/command_summary/parameter_intro/idm)  | Message identifier. The value of this identifier is unrestricted. |
+| [IDT](../../../c_intro_userinterfaces/command_summary/parameter_intro/idu)  | Identifier of the original transfer acknowledged by this message. |
+| ****[MSG](../../../c_intro_userinterfaces/command_summary/parameter_intro/msg)**** | Message |
+| ******[PART](../../../c_intro_userinterfaces/command_summary/parameter_intro/part) ****** | Transfer partner identifier. |
+| ****[PRI](../../../c_intro_userinterfaces/command_summary/parameter_intro/pri)**** | Request selection priority. |
+| ******[TYPE](../../../c_intro_userinterfaces/command_summary/parameter_intro/type) = REPLY****** | Characterizes a reply send transfer. |
+| Others  | FOR OPTIONAL PARAMETERS COMMON TO SEND: see the [SEND](../../../c_intro_userinterfaces/command_summary#SEND) command.  |
 

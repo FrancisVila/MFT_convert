@@ -186,7 +186,7 @@ CRTLIB LIB(CFTUPGLIB)
     RNMOBJ OBJ(QSYS/CFTPROD) OBJTYPE(\*LIB) NEWOBJ(CFTPRODSAV)
     RNMOBJ OBJ(QSYS/CFTPGM) OBJTYPE(\*LIB) NEWOBJ(CFTPGMSAV)
     ```
-1. You can now install the new Transfer CFT version. See <a href="../../install_intro_ibmi/use_install_command" class="MCXref xref">About the INSTALL command</a>.
+1. You can now install the new Transfer CFT version. See [About the INSTALL command](../../install_intro_ibmi/use_install_command).
 1. Import the configuration.
 
     -   Import your static configuration objects using the command:
@@ -273,7 +273,7 @@ CRTLIB LIB(CFTUPGLIB)
     RNMOBJ OBJ(QSYS/CFTPROD) OBJTYPE(\*LIB) NEWOBJ(CFTPRODSAV)
     RNMOBJ OBJ(QSYS/CFTPGM) OBJTYPE(\*LIB) NEWOBJ(CFTPGMSAV)
     ```
-1. You can now install the new Transfer CFT version. See <a href="../../install_intro_ibmi/use_install_command" class="MCXref xref">About the INSTALL command</a>.
+1. You can now install the new Transfer CFT version. See [About the INSTALL command](../../install_intro_ibmi/use_install_command).
 1. Import the configuration that you saved in the temporary directory created in Step 3:
     ```
     CFTINIT FILES('CFTUPGLIB/EXTCONF')

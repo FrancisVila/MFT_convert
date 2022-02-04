@@ -13,7 +13,7 @@ The delivered sample provides two services, authentication and permissions check
 
 | Sample  | Authentication  | Permissions checking  |
 | --- | --- | --- |
-| examsmp1.c  | System authentication (Windows only)  | Flat file based on flat <a href="" >RBAC Role Based Access Control</a> model  |
+| examsmp1.c  | System authentication (Windows only)  | Flat file based on flat [RBAC Role Based Access Control]() model  |
 
 
 ### Building the dynamic library associated with the sample
@@ -31,7 +31,7 @@ The output is a library located at `<CFTDIRRUNTIME>/lib/libcftexam.(so/dll)`.
 Flat file based on flat RBAC 
 -----------------------------
 
-To check users rights, Axway delivers a sample flat file based on flat <a href="" class="MCTextPopup popup popupHead">RBAC Role Based Access Control</a> (Role Based Access Control) located in: `<CFTDIRRUNTME>/conf/exam.csv`. This file contains a set of permission and user assignments.
+To check users rights, Axway delivers a sample flat file based on flat [RBAC Role Based Access Control]() (Role Based Access Control) located in: `<CFTDIRRUNTME>/conf/exam.csv`. This file contains a set of permission and user assignments.
 
 ![Simplied diagram of relationship between users, roles and permissions](/Images/TransferCFT/am_exits_rbac.GIF)
 

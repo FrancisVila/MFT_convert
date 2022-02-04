@@ -136,7 +136,7 @@ Before performing an upgrade be certain to review the section [Important informa
 
 ### Overview
 
-You can perform an upgrade by installing Transfer CFT {{< TransferCFT/axwayvariablesReleaseNumber  >}} over an existing Transfer CFT 3.2.4 installation using the procedure described in <a href="" class="MCXref xref">Install Transfer CFT</a>. However, the installation directory `<installation_directory>` should point to the installation directory of the existing Transfer CFT 3.2.4 installation. You can then provide the same additional parameters.
+You can perform an upgrade by installing Transfer CFT {{< TransferCFT/axwayvariablesReleaseNumber  >}} over an existing Transfer CFT 3.2.4 installation using the procedure described in [Install Transfer CFT](). However, the installation directory `<installation_directory>` should point to the installation directory of the existing Transfer CFT 3.2.4 installation. You can then provide the same additional parameters.
 
 The installation procedure upgrades Transfer CFT, where the configuration of the existing installation is exported, and is automatically re-imported after the upgrade.
 

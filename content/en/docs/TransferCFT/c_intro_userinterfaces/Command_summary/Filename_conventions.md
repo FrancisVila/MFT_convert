@@ -68,7 +68,7 @@ corresponds to your OS.
 
 ### Reconstitute a filename
 
-A filename can be composed of different elements, such as the unit, path, root, and suffix. When transferring a file between disparate systems, you can use symbolic variables to reconstruct the original filename at the receiving end. See <a href="../symbolic_variables" class="MCXref xref">Symbolic variables</a> for details.
+A filename can be composed of different elements, such as the unit, path, root, and suffix. When transferring a file between disparate systems, you can use symbolic variables to reconstruct the original filename at the receiving end. See [Symbolic variables](../symbolic_variables) for details.
 
 ### Specific case of the &NFNAME symbolic variable (PeSIT CFT/CFT)
 

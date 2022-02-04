@@ -16,8 +16,8 @@ without it being explicitly requested.
 
 | Parameter  | Description  |
 | --- | --- |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/impl">IMPL</a>  | The implicit send makes a file available. Select from:<br/> • YES<br/> • NO<br/> This parameter must be set to NO for the default model file description. |
-| Other parameters | For other SEND parameters refer to <a href="../send_command_basics">Sending files</a>.  |
+| [IMPL](../../../c_intro_userinterfaces/command_summary/parameter_intro/impl)  | The implicit send makes a file available. Select from:<br/> • YES<br/> • NO<br/> This parameter must be set to NO for the default model file description. |
+| Other parameters | For other SEND parameters refer to [Sending files](../send_command_basics).  |
 
 
 For SEND command details refer to the following syntax:

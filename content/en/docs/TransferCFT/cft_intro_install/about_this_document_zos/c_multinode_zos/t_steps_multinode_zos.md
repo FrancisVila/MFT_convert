@@ -26,9 +26,9 @@ The process consists of customizing the z/OS specific programs and members, chec
 
 | Step  | Task  |
 | --- | --- |
-| 1  | Customize <a href="../t_vipa_multinode_zos">VIPA</a> programs and execute the customized members, including the following tasks.<br/> For each LPAR:<br/> • Enable the port sharing (to execute on each LPAR) - Share Listening port: (protocol port (e.g. PESIT and port PESIT SSL))<br/> • Identified all ports (protocol ports) to share on the LPAR<br/> • Define the LPAR dynamic XCF address (DYNAMICXCF)<br/> On the first LPAR<br/> • Define the cluster address (VIPA)<br/> • Define the port balancing between the LPAR |
-| 2  | Customize <a href="">MNINIT</a>.  |
-| 3  | <a href="../t_submit_mninit_zos">Execute</a> the customized MNINIT. |
+| 1  | Customize [VIPA](../t_vipa_multinode_zos) programs and execute the customized members, including the following tasks.<br/> For each LPAR:<br/> • Enable the port sharing (to execute on each LPAR) - Share Listening port: (protocol port (e.g. PESIT and port PESIT SSL))<br/> • Identified all ports (protocol ports) to share on the LPAR<br/> • Define the LPAR dynamic XCF address (DYNAMICXCF)<br/> On the first LPAR<br/> • Define the cluster address (VIPA)<br/> • Define the port balancing between the LPAR |
+| 2  | Customize [MNINIT]().  |
+| 3  | [Execute](../t_submit_mninit_zos) the customized MNINIT. |
 
 
 > **Note**

@@ -27,12 +27,12 @@ alphabets for:
 
 | Parameter  | Description  |
 | --- | --- |
-| <a href="../../../command_summary/parameter_intro/id">ID</a>  | Translation table identifier.<br/> Several CFTXLATE commands may have the same identifier, if the values of DIRECT, FCODE or NCODE are different. |
-| <a href="../../../command_summary/parameter_intro/direct">DIRECT</a>  | Transfer direction for which the table applies:<br/> • SEND: translation table for send transfers<br/> • RECV: translation table for receive transfers<br/> • BOTH: translation table which can be used for send transfers and receive transfers<br/> If the value of the parameter is BOTH, the data read in the file allows a translation table for send transfers (SEND) to be created. The translation table for receive transfers (RECV) is deduced automatically.<br/> To provide for bijection (i.e. any character of the source alphabet translated into the target alphabet, and then re-translated from the target alphabet into the source alphabet, takes up its initial value again), the table has to contain 256 different values. It is not essential to strictly comply with this principle for transfer applications using reduced alphabets. |
-| <a href="../../../command_summary/parameter_intro/ncode">NCODE</a> | Code of data sent over the network. |
-| <a href="">TABLE</a>  | A digital representation of the table as a hexadecimal string.  |
-| <a href="../../../command_summary/parameter_intro/fcode">FCODE</a>  | Data code of the file sent. |
-| <a href="../../../command_summary/parameter_intro/fname">FNAME</a>  | Name of the file containing the description of the translation table. This file must have a sequential organization. Examples of such files are given with the various products (refer to the Operations Guide specific to each system). |
+| [ID](../../../command_summary/parameter_intro/id)  | Translation table identifier.<br/> Several CFTXLATE commands may have the same identifier, if the values of DIRECT, FCODE or NCODE are different. |
+| [DIRECT](../../../command_summary/parameter_intro/direct)  | Transfer direction for which the table applies:<br/> • SEND: translation table for send transfers<br/> • RECV: translation table for receive transfers<br/> • BOTH: translation table which can be used for send transfers and receive transfers<br/> If the value of the parameter is BOTH, the data read in the file allows a translation table for send transfers (SEND) to be created. The translation table for receive transfers (RECV) is deduced automatically.<br/> To provide for bijection (i.e. any character of the source alphabet translated into the target alphabet, and then re-translated from the target alphabet into the source alphabet, takes up its initial value again), the table has to contain 256 different values. It is not essential to strictly comply with this principle for transfer applications using reduced alphabets. |
+| [NCODE](../../../command_summary/parameter_intro/ncode) | Code of data sent over the network. |
+| [TABLE]()  | A digital representation of the table as a hexadecimal string.  |
+| [FCODE](../../../command_summary/parameter_intro/fcode)  | Data code of the file sent. |
+| [FNAME](../../../command_summary/parameter_intro/fname)  | Name of the file containing the description of the translation table. This file must have a sequential organization. Examples of such files are given with the various products (refer to the Operations Guide specific to each system). |
 
 
 **Example using FNAME**

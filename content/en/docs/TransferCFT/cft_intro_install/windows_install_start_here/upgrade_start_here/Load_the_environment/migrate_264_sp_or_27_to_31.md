@@ -9,7 +9,7 @@ Migrating the main configuration and UCONF parameters
 
 You can migrate the PARM, PART, IDF, other static configuration objects and UCONF parameters as follows:
 
-1. Load the former Transfer CFT environment. See the <a href="../../../../unix_install_start_here/upgrade_start_here/load_the_environment" class="MCXref xref">Migration prerequisites</a> for details.
+1. Load the former Transfer CFT environment. See the [Migration prerequisites](../../../../unix_install_start_here/upgrade_start_here/load_the_environment) for details.
 
 <!-- -->
 

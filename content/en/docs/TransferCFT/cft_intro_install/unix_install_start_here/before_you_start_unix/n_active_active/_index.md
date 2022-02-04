@@ -22,7 +22,7 @@ Additionally, the key must have the cluster option.
 
 ### Download and uncompress
 
-Download and unzip the {{< TransferCFT/suitevariablesTransferCFTName  >}} install package, as described in <a href="../" class="MCXref xref">Install Transfer CFT</a>.
+Download and unzip the {{< TransferCFT/suitevariablesTransferCFTName  >}} install package, as described in [Install Transfer CFT](../).
 
 ### Customize
 
@@ -72,4 +72,4 @@ See the [Multi-node commands and management](../../../../about_multinode/multi_n
 Troubleshooting
 ---------------
 
-Please see <a href="../../../../troubleshoot_intro/admin_troubleshooting_server/admin_troubleshooting_runtime/troubleshoot_multinode" class="MCXref xref">Troubleshoot multi-node</a>.
+Please see [Troubleshoot multi-node](../../../../troubleshoot_intro/admin_troubleshooting_server/admin_troubleshooting_runtime/troubleshoot_multinode).

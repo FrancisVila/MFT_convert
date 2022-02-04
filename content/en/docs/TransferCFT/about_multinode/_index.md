@@ -180,7 +180,7 @@ All remote requests are going through a load balancer, server transfers, SOAP we
 Troubleshooting multi-node issues
 ---------------------------------
 
-For information on troubleshooting multi-node issues, please refer to <a href="../troubleshoot_intro/admin_troubleshooting_server/admin_troubleshooting_runtime/troubleshoot_multinode" class="MCXref xref">Troubleshoot multi-node</a>.
+For information on troubleshooting multi-node issues, please refer to [Troubleshoot multi-node](../troubleshoot_intro/admin_troubleshooting_server/admin_troubleshooting_runtime/troubleshoot_multinode).
 
 ****Related topics****
 

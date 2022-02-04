@@ -8,7 +8,7 @@ topics****
 - Command syntax
     [CFTIDF](../../../c_intro_userinterfaces/command_summary#CFTIDF)
 - Object concepts
-    <a href="#" class="selected">Template to virtual file association</a>
+    [Template to virtual file association](#)
 
 <span id="About_the_CFTIDF_object"></span>
 

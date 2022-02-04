@@ -2,7 +2,7 @@
     "title": "Create users and set security rights",
     "linkTitle": "Create users and set security rights",
     "weight": "200"
-}This section describes the user rights procedures that you must perform prior to installing Transfer CFT IBM i. Additionally, verify that your operating system and environment requirements are met as described in <a href="../" class="MCXref xref">Prerequisites</a>.
+}This section describes the user rights procedures that you must perform prior to installing Transfer CFT IBM i. Additionally, verify that your operating system and environment requirements are met as described in [Prerequisites](../).
 
 Prior to installation, ensure the following:
 

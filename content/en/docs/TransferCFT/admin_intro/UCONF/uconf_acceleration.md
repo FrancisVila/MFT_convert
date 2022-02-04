@@ -1,7 +1,7 @@
 {
     "title": "UCONF: Transfer acceleration",
     "linkTitle": "Transfer acceleration ",
-    "weight": "310"
+    "weight": "300"
 }To enable acceleration set the uconf values as recommended in this section.
 
 About transfer acceleration

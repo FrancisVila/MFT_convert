@@ -99,7 +99,7 @@ Note the following prerequisites and limitations when installing {{< TransferCFT
 - If you install {{< TransferCFT/axwayvariablesComponentLongName  >}} in service mode, to launch the service on a specific account you must grant that user service rights to log in.  
     To grant this right, navigate to **Administrative Tools &gt; Local Security Policy &gt; Local Management &gt; Local Policies**, and select **User Rights Assignment**. Then grant the user **Logon as a Service**.
 - If you install {{< TransferCFT/axwayvariablesComponentLongName  >}}in service mode but want to launch the service on a Local System Account, be aware that you cannot start Transfer CFT from the Copilot UI.
-- See also, <a href="../../n_active_active/shared_file_prereq_win" class="MCXref xref">Shared file system prerequisites</a>.
+- See also, [Shared file system prerequisites](../../n_active_active/shared_file_prereq_win).
 
 Using a mapped drive
 --------------------

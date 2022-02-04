@@ -15,9 +15,9 @@ the ACT command to reactivate:
 
 | Parameter | Description |
 | --- | --- |
-| <a href="../../command_summary/parameter_intro/id">ID</a>  | Identifier for the object to be reactivated. To reactivate several objects with a single command, use wildcard characters or meta characters. |
-| <a href="../../command_summary/parameter_intro/mode">MODE</a> | Mode to be reactivated on partners (only when TYPE=PART object):<br/> • BOTH (default)<br/> • REQUESTER<br/> • SERVER<br/> You can use the shortcuts B, R and S in place of the keywords. |
-| <a href="../../command_summary/parameter_intro/type">TYPE</a>  | Object to reactivate:<br/> • PART<br/> • TRK<br/> • CRON<br/> • FOLDER |
+| [ID](../../command_summary/parameter_intro/id)  | Identifier for the object to be reactivated. To reactivate several objects with a single command, use wildcard characters or meta characters. |
+| [MODE](../../command_summary/parameter_intro/mode) | Mode to be reactivated on partners (only when TYPE=PART object):<br/> • BOTH (default)<br/> • REQUESTER<br/> • SERVER<br/> You can use the shortcuts B, R and S in place of the keywords. |
+| [TYPE](../../command_summary/parameter_intro/type)  | Object to reactivate:<br/> • PART<br/> • TRK<br/> • CRON<br/> • FOLDER |
 
 
 Using the ACT command

@@ -1,7 +1,7 @@
 {
     "title": "Automatic  catalog expansion",
     "linkTitle": "Automatic  catalog expansion",
-    "weight": "300"
+    "weight": "290"
 }The auto-expand catalog option lets you enlarge the catalog by a preset percentage when an alert is sent that the catalog is reaching its threshold. Additionally you can indicate a script to execute if this expanded limit is exceeded.
 
 Overview

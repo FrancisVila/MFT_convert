@@ -2,7 +2,7 @@
     "title": "Migrate from Transfer CFT 2.4.1",
     "linkTitle": "Migrate from Transfer CFT 2.4.1",
     "weight": "250"
-}This section describes how to migrate from Transfer CFT 2.4 to version {{< TransferCFT/PrimaryTransferCFTversionlong  >}}. Before starting the migration procedure you must perform the steps described in <a href="../vms_migrate_before_you_start#Importan" class="MCXref xref">Before you start</a>.
+}This section describes how to migrate from Transfer CFT 2.4 to version {{< TransferCFT/PrimaryTransferCFTversionlong  >}}. Before starting the migration procedure you must perform the steps described in [Before you start](../vms_migrate_before_you_start#Importan).
 
 Migrate the configuration
 -------------------------
@@ -11,7 +11,7 @@ Migrate the configuration
 
 Migrate the PARM, PART, IDF and other static configuration objects.
 
-1. Load the Transfer CFT 2.4 environment. See the <a href="../vms_migrate_before_you_start" class="MCXref xref">Before you start</a> for details.
+1. Load the Transfer CFT 2.4 environment. See the [Before you start](../vms_migrate_before_you_start) for details.
 1. Export your static configuration objects using the CFTUTIL CFTEXT command. Enter:  
       
     ```

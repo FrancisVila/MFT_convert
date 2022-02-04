@@ -29,11 +29,11 @@ Depending on which method you plan to use, follow the corresponding link to the 
 
 | Element | Instructions |
 | --- | --- |
-| Docker Engine  | <a href="https://docs.docker.com/engine/install/" >https://docs.docker.com/engine/install/</a>  |
-| Docker-Compose  | <a href="https://docs.docker.com/compose/install/">https://</a><a href="https://docs.docker.com/compose/install/">docs.docker.com/</a><a href="https://docs.docker.com/compose/install/">compose/install/</a>  |
-| Kubernetes  | <a href="https://kubernetes.io/docs/tasks/tools/install-kubectl/" >https://kubernetes.io/docs/tasks/tools/install-kubectl/</a>  |
-| Helm  | <a href="https://helm.sh/docs/intro/install/" >https://helm.sh/docs/intro/install/</a>  |
-| Git  | <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" >https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</a> |
+| Docker Engine  | [https://docs.docker.com/engine/install/](https://docs.docker.com/engine/install/)  |
+| Docker-Compose  | [compose/install/](https://docs.docker.com/compose/install/)  |
+| Kubernetes  | [https://kubernetes.io/docs/tasks/tools/install-kubectl/](https://kubernetes.io/docs/tasks/tools/install-kubectl/)  |
+| Helm  | [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/)  |
+| Git  | [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) |
 
 
 Download the Transfer CFT repository

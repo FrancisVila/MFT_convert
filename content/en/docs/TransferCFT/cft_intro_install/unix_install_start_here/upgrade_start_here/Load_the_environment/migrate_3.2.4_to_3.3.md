@@ -15,7 +15,7 @@ Stop Transfer CFT and the Copilot server before starting the migration.
 
 Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters as follows:
 
-1. Load the former Transfer CFT 3.x environment. See the <a href="../" class="MCXref xref">Migration prerequisites</a> for details.
+1. Load the former Transfer CFT 3.x environment. See the [Migration prerequisites](../) for details.
 1. Export your static configuration objects using the command CFTUTIL CFTEXT. Enter:  
     ```
     CFTUTIL CFTEXT type=all, fout=cft-extract.conf

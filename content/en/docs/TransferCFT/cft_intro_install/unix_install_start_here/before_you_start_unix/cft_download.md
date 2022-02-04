@@ -7,7 +7,7 @@
 - Download the installation package from {{< TransferCFT/axwayvariablesCompanyName  >}} Sphere.
 - Uncompress or unzip the package.
 
-The installation package is a zip archive. It contains the product, a configuration template file called `initialize.properties`, and the installation program files. For details on customizing the template file, see <a href="../new_install_ux" class="MCXref xref">Customize the initialize.properties file</a>
+The installation package is a zip archive. It contains the product, a configuration template file called `initialize.properties`, and the installation program files. For details on customizing the template file, see [Customize the initialize.properties file](../new_install_ux)
 
 > **Note**
 >

@@ -151,7 +151,7 @@ This command:
 - Specifies the transfer
     direction
 
-See also <a href="#" class="selected">Transfer owner CFTAPPL</a>.
+See also [Transfer owner CFTAPPL](#).
 
 <span id="Pre_transfer_controls"></span>
 

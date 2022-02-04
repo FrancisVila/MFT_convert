@@ -72,6 +72,6 @@ Maximum length 32 characters.
 >
 > Note: Using a different user (USERID) is not available on Linux if the event mode is enabled (USEFSEVENTS=YES).
 
-When implementing file user rights with USERCTRL on Windows systems, you must run Transfer CFT as a service. Please see <a href="../../../../cft_intro_install/windows_install_start_here/windows_install_start_here/running_cft_for_the_first_time_windows/add_system_user_windows" class="MCXref xref">How to enable system users - Windows</a> for more information.
+When implementing file user rights with USERCTRL on Windows systems, you must run Transfer CFT as a service. Please see [How to enable system users - Windows](../../../../cft_intro_install/windows_install_start_here/windows_install_start_here/running_cft_for_the_first_time_windows/add_system_user_windows) for more information.
 
 [Return to Command index](../../)

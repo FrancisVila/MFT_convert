@@ -25,4 +25,4 @@ In the ****Flow List**** page click ****Add flow**** and perform the following s
 > Tip  
 > Existing Transfer CFT users may want to refer to the Transfer CFT to Central Governance parameter mapping in the sections see Flow definition: Target and Flow definition: Source.
 
-****&lt;&lt;**** <a href="../../" class="bold_in_para MCXref xref xrefbold_in_para"><strong><strong>My first transfer flow</strong></strong></a>
+****&lt;&lt;**** [](../../)

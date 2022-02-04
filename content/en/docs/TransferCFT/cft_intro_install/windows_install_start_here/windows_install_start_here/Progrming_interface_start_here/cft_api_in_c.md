@@ -2,7 +2,7 @@
     "title": "Building  an API in C",
     "linkTitle": "Building API in C",
     "weight": "260"
-}This section explains how to build Transfer CFT API samples in C. You can also refer to the {{< TransferCFT/axwayvariablesComponentShortName  >}} *User Guide <a href="../../../../about_this_document_zos/using_apis" class="MCXref xref">About APIs</a> topics* for information such as links to sample files.
+}This section explains how to build Transfer CFT API samples in C. You can also refer to the {{< TransferCFT/axwayvariablesComponentShortName  >}} *User Guide [About APIs](../../../../about_this_document_zos/using_apis) topics* for information such as links to sample files.
 
 The API samples and the makefile used to build them are located in your {{< TransferCFT/axwayvariablesComponentLongName  >}} `<installdir>\runtime\src\capi` directory.
 

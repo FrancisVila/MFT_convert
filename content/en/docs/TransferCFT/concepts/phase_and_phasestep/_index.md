@@ -6,10 +6,10 @@
 
 This topic presents processing ****concepts****, step overviews in the following sections:
 
-- <a href="#Types" class="MCXref xref">Types of processing phases</a>
-- <a href="#Types2" class="MCXref xref">Phasesteps in each phase</a>
-- <a href="#About" class="MCXref xref">About backward compatibility</a>
-- <a href="#Example" class="MCXref xref">Example usage</a>
+- [Types of processing phases](#Types)
+- [Phasesteps in each phase](#Types2)
+- [About backward compatibility](#About)
+- [Example usage](#Example)
 
 <span id="Types"></span>
 

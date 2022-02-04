@@ -2,7 +2,7 @@
     "title": "CFTROLE",
     "linkTitle": "Roles - CFTROLE",
     "weight": "250"
-}Set the roles, which define a type of user and application permission. See also <a href="../../../../internal_a_m_start_here/fm_access_management" class="MCXref xref">Access Management using Flow Manager</a>
+}Set the roles, which define a type of user and application permission. See also [Access Management using Flow Manager](../../../../internal_a_m_start_here/fm_access_management)
 
 ### Using CFTROLE
 

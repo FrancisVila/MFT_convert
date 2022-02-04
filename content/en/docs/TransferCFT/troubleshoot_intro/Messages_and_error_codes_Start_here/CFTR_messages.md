@@ -193,7 +193,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | V23 format<br/> V24 format<br/> Error | <span id="CFTR20E"></span>CFTR20E &amp;message<br/> CFTR20E &amp;message |
 | Explanation | Error messages originating from the folder monitoring functionality.<br/> Usually triggered by error conditions encountered on file manipulation as renaming, deleting. |
 | Warning  | CFTR20W &amp;message  |
-| Explanation | Warning message related to the folder monitoring feature.<br/> Indicates that a system error concerning the event subsystem occurred (see <a href="../../../app_integration_intro/intro_folder_monitor/configure_folder_monitoring">USEFSEVENT</a>=YES). |
+| Explanation | Warning message related to the folder monitoring feature.<br/> Indicates that a system error concerning the event subsystem occurred (see [USEFSEVENT](../../../app_integration_intro/intro_folder_monitor/configure_folder_monitoring)=YES). |
 | V23 format<br/> V24 format<br/> Fatal | <span id="CFTR20F"></span>CFTR20F &amp;message<br/> CFTR20F &amp;message |
 | Explanation | Fatal messages originating from the folder monitoring functionality.<br/> Indicates that a severe error condition was encountered and is preventing this functionality from proceeding normally. |
 

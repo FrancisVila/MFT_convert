@@ -43,14 +43,14 @@ The commands associated with the transfers are listed in the table below.
 
 | Type | Command | Description |
 | --- | --- | --- |
-| Transfers  | <a href="">SEND</a>  | Send files, messages, or replies (acknowledgments)  |
-| - &quot; -  | <a href="">RECV</a>  | Receive files  |
-| Actions on transfers  | <a href="../../admin_intro/admin_commands_intro/delete_command">DELETE</a> | Delete catalog entries  |
-| - &quot; -  | <a href="../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/halt_command">HALT</a> | Stop transfers  |
-| - &quot; -  | <a href="../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/keep_command">KEEP</a> | Suspend transfers  |
-| - &quot; -  | <a href="../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/start_command">START</a> | Restart transfers  |
-| - &quot; -  | <a href="../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/submit_command">SUBMIT</a> | Submit an end-of-transfer procedure |
-| - &quot; -  | <a href="../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/end_command">END</a> | Declare that flow is finished |
+| Transfers  | [SEND]()  | Send files, messages, or replies (acknowledgments)  |
+| - &quot; -  | [RECV]()  | Receive files  |
+| Actions on transfers  | [DELETE](../../admin_intro/admin_commands_intro/delete_command) | Delete catalog entries  |
+| - &quot; -  | [HALT](../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/halt_command) | Stop transfers  |
+| - &quot; -  | [KEEP](../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/keep_command) | Suspend transfers  |
+| - &quot; -  | [START](../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/start_command) | Restart transfers  |
+| - &quot; -  | [SUBMIT](../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/submit_command) | Submit an end-of-transfer procedure |
+| - &quot; -  | [END](../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/end_command) | Declare that flow is finished |
 
 
 For each command, the {{< TransferCFT/axwayvariablesComponentShortName  >}} command interface performs the following

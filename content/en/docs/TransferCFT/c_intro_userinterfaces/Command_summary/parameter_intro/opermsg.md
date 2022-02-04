@@ -35,7 +35,7 @@ table, where:
 
 
 The I, W, E, F types correspond to the type of message in
-the log file. See {{< TransferCFT/axwayvariablesComponentShortName  >}} <a href="../../../../troubleshoot_intro/messages_and_error_codes_start_here" class="MCXref xref">Transfer CFT messages and error codes</a> for more information.
+the log file. See {{< TransferCFT/axwayvariablesComponentShortName  >}} [Transfer CFT messages and error codes](../../../../troubleshoot_intro/messages_and_error_codes_start_here) for more information.
 
 The value "0", which is the default, means that no message is sent to the operator.
 

@@ -195,4 +195,4 @@ Complete CA certificate chains
 
 In {{< TransferCFT/suitevariablesTransferCFTName  >}} 3.1.3 and lower, you can perform a SSL transfer even if the certificate chain is not complete (not signed by a ROOT CA). However, for {{< TransferCFT/suitevariablesTransferCFTName  >}} 3.2.0 and higher, the certificate chain must be complete for a transfer to succeed.
 
-For more information, see <a href="../../troubleshoot_intro/admin_troubleshooting_server/troubleshoot_security#Unknown" class="MCXref xref">Unknown CA leads to a failed certificate verification</a>
+For more information, see [Unknown CA leads to a failed certificate verification](../../troubleshoot_intro/admin_troubleshooting_server/troubleshoot_security#Unknown)

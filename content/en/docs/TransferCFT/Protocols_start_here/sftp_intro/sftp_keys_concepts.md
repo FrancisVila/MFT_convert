@@ -9,7 +9,7 @@ An SSH session is established in two steps:
 - Agree on and establish encryption to protect future communication.
 - Authenticate the user and determine if access to the server should be granted.
 
-If you are already familiar with SSH concepts are ready for details on configuring the CFTSSH object, please see <a href="../../../c_intro_userinterfaces/web_copilot_ui/cftssl/cftssh" class="MCXref xref">CFTSSH - Security profile</a>.
+If you are already familiar with SSH concepts are ready for details on configuring the CFTSSH object, please see [CFTSSH - Security profile](../../../c_intro_userinterfaces/web_copilot_ui/cftssl/cftssh).
 
 > **Note**
 >

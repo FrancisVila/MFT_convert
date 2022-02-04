@@ -38,7 +38,7 @@ cftprot id = SFTP,
 Add the server public key in the PKI database
 ---------------------------------------------
 
-Use the PKIKEY command to add the server public key in the PKI database. For more information, see <a href="../new_pki_keys_use" class="MCXref xref">Generate and manage keys</a>.
+Use the PKIKEY command to add the server public key in the PKI database. For more information, see [Generate and manage keys](../new_pki_keys_use).
 
 ```
 PKIKEY id=SRV_PUB_KEY, ikname='serv.pub', ikform=ssh
@@ -47,7 +47,7 @@ PKIKEY id=SRV_PUB_KEY, ikname='serv.pub', ikform=ssh
 Add the client private key in the PKI database (PKIKEYGEN or PKIKEY)
 --------------------------------------------------------------------
 
-You can use either the PKIKEYGEN command or the PKIKEY command to add the client private key in the server database if you are using key authentication (or dual authentication). For more information, see <a href="../new_pki_keys_use" class="MCXref xref">Generate and manage keys</a>.
+You can use either the PKIKEYGEN command or the PKIKEY command to add the client private key in the server database if you are using key authentication (or dual authentication). For more information, see [Generate and manage keys](../new_pki_keys_use).
 
 ****Example****
 
@@ -91,7 +91,7 @@ A CFTPART object represents an application with one SFTP user per application (
 Set the type of authentication
 ------------------------------
 
-Select the type of authentication to use from the options listed in this section. For more information, see <a href="../sftp_keys_concepts" class="MCXref xref">SSH session concepts</a>.
+Select the type of authentication to use from the options listed in this section. For more information, see [SSH session concepts](../sftp_keys_concepts).
 
 <span id="Password"></span>
 

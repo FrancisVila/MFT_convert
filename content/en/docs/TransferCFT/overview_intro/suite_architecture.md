@@ -1,6 +1,6 @@
 {
     "title": "Axway AMPLIFY architecture",
-    "linkTitle": "Axway AMPLIFY architecture",
+    "linkTitle": "Axway Amplify architecture",
     "weight": "120"
 }Axway {{< TransferCFT/axwayvariablesPlatformorSuiteLongName  >}} Managed File Transfer provides a product platform aimed at increasing the
 efficiency of business processes. This platform enables you to integrate

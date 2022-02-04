@@ -11,7 +11,7 @@ Sentinel provides you with tools that help you create pre-programmed automatic r
 
 Before you use the Sentinel tracking tools with Transfer CFT, you should become familiar with the Sentinel concepts and
 user interface.
-For Sentinel documentation, go to{{< TransferCFT/axwayvariablesCompanyName  >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a>.
+For Sentinel documentation, go to{{< TransferCFT/axwayvariablesCompanyName  >}} Support at [https://support.axway.com](https://support.axway.com/).
 
 Required components
 -------------------
@@ -64,4 +64,4 @@ You can set Sentinel to repeatedly execute requests. This
 means that you can retrieve and display transfer details as soon as
 Sentinel receives them from Transfer CFT.
 
-For more information, refer to the Axway *Sentinel* documentation available on the support site, {{< TransferCFT/axwayvariablesCompanyName  >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a>..
+For more information, refer to the Axway *Sentinel* documentation available on the support site, {{< TransferCFT/axwayvariablesCompanyName  >}} Support at [https://support.axway.com](https://support.axway.com/)..

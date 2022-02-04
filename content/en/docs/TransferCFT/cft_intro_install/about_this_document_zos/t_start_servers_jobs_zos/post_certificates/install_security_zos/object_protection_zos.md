@@ -68,7 +68,7 @@ CFTAPPL.DEFAULT      USER(usercmd)    ACCESS(read)
 
 If the RACF return code is equal to zero, the Transfer CFT program lists the entry.
 
-<a href="../file_lists_zos" class="MCXref xref">Transfer CFT z/OS files</a> explains the commands controlled by the Transfer CFT programs.
+[Transfer CFT z/OS files](../file_lists_zos) explains the commands controlled by the Transfer CFT programs.
 
 <span id="Transfer"></span>
 

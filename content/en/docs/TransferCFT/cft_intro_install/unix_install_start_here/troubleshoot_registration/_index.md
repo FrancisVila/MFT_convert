@@ -65,7 +65,7 @@ You can use the CFTUTIL CHECK command to validate the coherence of parameters, p
 CHECK CONTENT=BRIEF&#124;FULL, FOUT=FileName
 ```
 
-See also, <a href="../../../c_intro_userinterfaces/about_cftutil/check_command" class="MCXref xref">Use the check command</a>.
+See also, [Use the check command](../../../c_intro_userinterfaces/about_cftutil/check_command).
 
 ### Registration or Copilot connection issue
 

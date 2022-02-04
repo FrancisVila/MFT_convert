@@ -1,12 +1,12 @@
 {
     "title": "Disable UCONF integrity control",
     "linkTitle": "Disable UCONF integrity control",
-    "weight": "350"
+    "weight": "340"
 }*Available on Unix, Windows, and HP NonStop*
 
 The integrity control checks for corrupted records in the CFTUCONF database file. If a record is corrupted, it is displayed in the trace `cft.out `file and it is no longer accessible. Deleting this record is the only available action.
 
-Integrity control is activated by default `(-`<a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/mac" class="code"><code>mac</code></a>`=yes`). To disable integrity control for the UCONF dictionary, add the `-mac=no` parameter to the `cftruntime `command either when creating the runtime environment or regenerating the uconf file:
+Integrity control is activated by default `(-`[](../../../c_intro_userinterfaces/command_summary/parameter_intro/mac)`=yes`). To disable integrity control for the UCONF dictionary, add the `-mac=no` parameter to the `cftruntime `command either when creating the runtime environment or regenerating the uconf file:
 
 Unix syntax:
 

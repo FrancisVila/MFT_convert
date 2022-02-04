@@ -5,7 +5,7 @@
 }****Transfer CFT 3.10****
 
 - [CORE] Support 64-character identifiers for CFTSSH and PKIKEY.
-- [CORE] Added a user audit log that tracks user authentication, administration, configuration, and denied transfer actions. [Details](../admin_intro/user_auditing)
+- [CORE] Added a user audit log that tracks user authentication, administration, configuration, and denied transfer actions. [Details](../transport_security_start_here/user_auditing)
 - [CORE] Support using a group of files to send to or receive from: Google Cloud Storage [Details](../app_integration_intro/google_cloud) or Amazon S3 [Details](../app_integration_intro/amazon_s3)
 - [CORE] Support for Microsoft Azure Blob Storage and using a group of files to send to or receive from ABS. [Details](../app_integration_intro/ms_blob)
 - [CORE] Added new UCONF `pki.expiration.check` parameters to enable warning concerning certificate expiration in the CFTLOG. [Details](../admin_intro/uconf/uconf_directory)

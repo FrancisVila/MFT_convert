@@ -9,7 +9,7 @@ You require a new license key if you are migrating from a version 2.x {{< Transf
 Check the impact of new features
 --------------------------------
 
-Before starting the migration, we highly recommend that you review the features changes listed in <a href="../../../#Migratio" class="MCXref xref">Migration or upgrade impact and considerations</a>
+Before starting the migration, we highly recommend that you review the features changes listed in [Migration or upgrade impact and considerations](../../../#Migratio)
 
 System requirements
 -------------------

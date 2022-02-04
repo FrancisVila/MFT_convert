@@ -21,10 +21,10 @@ This table presents a high-level overview of the installation process. By defaul
 
 |   | Step  | Details  | More info  |
 | --- | --- | --- | --- |
-| 1  | Complete prerequisites  | Check and fulfill prerequisites such as obtaining a key or system-specific prerequisites.  | <a href="prereqs_overview">![](/Images/TransferCFT/severityInformation_alt.gif)</a>  |
+| 1  | Complete prerequisites  | Check and fulfill prerequisites such as obtaining a key or system-specific prerequisites.  | [![](/Images/TransferCFT/severityInformation_alt.gif)](prereqs_overview)  |
 | 2  | Download and unzip  | Download the installation package from the support site and unzip.  |   |
 | 3  | Customize the properties file  | Some installation parameters are mandatory to run Transfer CFT.<br/> You can customize the <code>initialize.properties</code> file before the install, use your own file, or use the unmodified default file, but you cannot start Transfer CFT until the mandatory values are set. |   |
-| 4  | Start the installation  | Select the installation mode and run using either the default configuration file or your customized file.  | <a href="install_transfer_cft_1">![](/Images/TransferCFT/severityInformation_alt.gif)</a>  |
+| 4  | Start the installation  | Select the installation mode and run using either the default configuration file or your customized file.  | [![](/Images/TransferCFT/severityInformation_alt.gif)](install_transfer_cft_1)  |
 | *  | Optional customization  | If you used the default configuration file, you must customize the Transfer CFT settings before starting the product.  |   |
 
 

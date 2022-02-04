@@ -1,7 +1,7 @@
 {
     "title": "Using cfttell",
     "linkTitle": "CFTTELL - Retrieve system information",
-    "weight": "270"
+    "weight": "260"
 }UNIX and Windows only
 
 This executable file retrieves system information, for example information needed to request a key. To use `cfttell`:

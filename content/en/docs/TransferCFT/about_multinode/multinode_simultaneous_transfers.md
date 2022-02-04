@@ -16,7 +16,7 @@ The MAXCNX and MAXTRANS parameters control the Transfer CFT maximum number of s
 
 If you have limited resources, set the MAXTRANS to a low value. If resources are not limited, a rule of thumb might be to set MAXTRANS to the sum of all partner CNXINOUT values (maximum value of 1000).
 
-See also <a href="../../concepts/about_parallel_transfers" class="MCXref xref">Configure simultaneous transfers</a>.
+See also [Configure simultaneous transfers](../../concepts/about_parallel_transfers).
 
 Session parameters
 ------------------

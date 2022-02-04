@@ -18,7 +18,7 @@ Procedure
 | **On the Transfer CFT server**  |   |
 | --- | --- |
 | 1. Generate and import the server keys.  | Generate the server's public/private key pair using the <code>pkikeygen </code>utility, which automatically puts the key pair in the PKI database (CFTPKU).<br/> ```  PKIUTIL pkikeygen id=SRV_PRIV_KEY, keylen=2048 ```  |
-| 2. Interpret the template for the server configuration.  | From the runtime directory, interpret the <code>cft-sftp.conf</code> template (click <a href="">here</a> to view the template). Remember, Transfer CFT and the Transfer CFT Copilot server must be stopped.<br/> ```  cftinit conf/cft-sftp.conf ```  |
+| 2. Interpret the template for the server configuration.  | From the runtime directory, interpret the <code>cft-sftp.conf</code> template (click [here]() to view the template). Remember, Transfer CFT and the Transfer CFT Copilot server must be stopped.<br/> ```  cftinit conf/cft-sftp.conf ```  |
 | **On the client**  |   |
 | 3. Enter the server connection details.  | Start FileZilla and enter the following connection details: • Host: sftp://&lt;host address of the {{< TransferCFT/suitevariablesTransferCFTName  >}} server&gt;<br/> • Port: 1763 (if you used the SAP from the template)<br/> • Username: user1<br/> • Password: TheUser1Password<br /> <br/> <blockquote> **Note**<br/> Tip The username and password are case sensitive.<br/> </blockquote><br/> Click **Quickconnect** to connect. Click **OK** to accept the pop-up to accept the key.<br /> ![](/Images/TransferCFT/fz_client_popup.png)  |
 | 4. Drag and drop files to <code>FLOW01 </code>or <code>FLOW02 </code>to perform file transfers.  | ![](/Images/TransferCFT/fz_client.png) |

@@ -6,12 +6,12 @@
 
 Transfer CFT delivers procedures that can help you upgrade instances. The following sections describe how to:
 
-1. <a href="#Create" class="MCXref xref">Create a master copy</a>
-1. <a href="#Distribu" class="MCXref xref">Distribute the master copy</a>
-1. <a href="#Restore" class="MCXref xref">Restore the master copy</a>
-1. <a href="#Copy" class="MCXref xref">Copy the JCLs to upgrade</a>
-1. <a href="#Upgrade" class="MCXref xref">Upgrade the target instance (product environment)</a>
-1. <a href="#Customiz" class="MCXref xref">Customize the step PMIGR2 JCL MIGRCAT</a>
+1. [Create a master copy](#Create)
+1. [Distribute the master copy](#Distribu)
+1. [Restore the master copy](#Restore)
+1. [Copy the JCLs to upgrade](#Copy)
+1. [Upgrade the target instance (product environment)](#Upgrade)
+1. [Customize the step PMIGR2 JCL MIGRCAT](#Customiz)
 
 ********Upgrade schema********
 

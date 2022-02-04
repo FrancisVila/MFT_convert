@@ -184,7 +184,7 @@ The NFSv4 locking lease period affects the Transfer CFT delay required to detect
 
 ### Perform a NAS failover
 
-When using NAS failover in a multihost-multinode architecture, you must stop the cluster prior to performing the failover. For information on starting and stopping a cluster, see <a href="../../../../../../about_multinode/multi_node_commands" class="MCXref xref">Multi-node commands and management</a>
+When using NAS failover in a multihost-multinode architecture, you must stop the cluster prior to performing the failover. For information on starting and stopping a cluster, see [Multi-node commands and management](../../../../../../about_multinode/multi_node_commands)
 
 1. Stop the {{< TransferCFT/suitevariablesTransferCFTName  >}} cluster.
 1. Perform the failover.
@@ -215,7 +215,7 @@ The recommendations in this section apply to a Transfer CFT multi-node, multi-h
 
 When using AWS EFS, you cannot set the server options; only the client is configurable.
 
-This system is based on NFSv4. For more information on NFSv4, please see <a href="#Using" class="MCXref xref">Using NFSv4</a>.
+This system is based on NFSv4. For more information on NFSv4, please see [Using NFSv4](#Using).
 
 This shared file system has features that impact performance, as compared to a traditional NFS:
 

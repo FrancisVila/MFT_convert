@@ -30,39 +30,39 @@ The following utilities are detailed in this page.
    </thead>
    <tbody>
       <tr>
-         <td><a href="#cftinit">cftinit</a>         </td>
+         <td>[cftinit](#cftinit)         </td>
          <td>General Transfer CFT initialization utility.         </td>
       </tr>
       <tr>
-         <td><a href="#cftutil">cftutil</a>         </td>
+         <td>[cftutil](#cftutil)         </td>
          <td>Simplified display of the standard CFTUTIL commands.         </td>
       </tr>
       <tr>
-         <td><a href="#cftupdate">cftupdate</a>         </td>
+         <td>[cftupdate](#cftupdate)         </td>
          <td>Management Utility updating the Transfer CFT configuration.         </td>
       </tr>
       <tr>
-         <td><p><a href="#cftcatal">cftcatal</a>  </p>         </td>
+         <td><p>[cftcatal](#cftcatal)  </p>         </td>
          <td><p>Utility migrating and/or extending the {{< TransferCFT/axwayvariablesComponentShortName  >}} catalog file.  </p>         </td>
       </tr>
       <tr>
-         <td><p><a href="#xfbadm">xfbadmgrp</a>  </p>         </td>
+         <td><p>[xfbadmgrp](#xfbadm)  </p>         </td>
          <td><p>Group management utility (all users accessing the Transfer CFT Copilot server).  </p>         </td>
       </tr>
       <tr>
-         <td><p><a href="#xfbadmusr1">xfbadmusr</a>  </p>         </td>
+         <td><p>[xfbadmusr](#xfbadmusr1)  </p>         </td>
          <td><p>Utility managing users accessing the Transfer CFT Copilot server.  </p>         </td>
       </tr>
       <tr>
-         <td><p><a href="#xvi">xvi</a>  </p>         </td>
+         <td><p>[xvi](#xvi)  </p>         </td>
          <td><p>Utility processing the conversion tables.  </p>         </td>
       </tr>
       <tr>
-         <td><p><a href="#Conversion_tables">atoe</a>  </p>         </td>
+         <td><p>[atoe](#Conversion_tables)  </p>         </td>
          <td><p>ISO 8859-1 ASCII to EBCDIC conversion table.  </p>         </td>
       </tr>
       <tr>
-         <td><p><a href="#Conversion_tables">etoa</a>  </p>         </td>
+         <td><p>[etoa](#Conversion_tables)  </p>         </td>
          <td><p>EBCDIC to ISO 8859-1 ASCII conversion table.  </p>         </td>
       </tr>
    </tbody>

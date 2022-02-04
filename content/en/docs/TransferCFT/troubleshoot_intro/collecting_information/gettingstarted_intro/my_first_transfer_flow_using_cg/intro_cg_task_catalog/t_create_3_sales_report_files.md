@@ -8,4 +8,4 @@ For these exercises copy the files to each of the `<Transfer_CFT directory>\runt
 
  
 
-****&lt;&lt;**** <a href="../../" class="bold_in_para MCXref xref xrefbold_in_para"><strong><strong>My first transfer flow</strong></strong></a>
+****&lt;&lt;**** [](../../)

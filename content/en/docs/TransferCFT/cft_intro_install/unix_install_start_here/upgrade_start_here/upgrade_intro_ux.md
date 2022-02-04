@@ -2,7 +2,7 @@
     "title": "Upgrade  Transfer CFT ",
     "linkTitle": "Upgrade Transfer CFT",
     "weight": "160"
-}This section explains how to upgrade an existing Transfer CFT from 3.1.3 or higher to{{< TransferCFT/axwayvariablesComponentShortName  >}} {{< TransferCFT/PrimaryTransferCFTversionlong  >}}. It begins by detailing the prerequisites for a standalone (non multi-node) upgrade. For details on upgrading a multi-node installation, see <a href="../upgrade_multinode_ux#top" class="MCXref xref">Upgrade a Transfer CFT multi-node installation</a>.
+}This section explains how to upgrade an existing Transfer CFT from 3.1.3 or higher to{{< TransferCFT/axwayvariablesComponentShortName  >}} {{< TransferCFT/PrimaryTransferCFTversionlong  >}}. It begins by detailing the prerequisites for a standalone (non multi-node) upgrade. For details on upgrading a multi-node installation, see [Upgrade a Transfer CFT multi-node installation](../upgrade_multinode_ux#top).
 
 About upgrades
 --------------
@@ -35,7 +35,7 @@ Limitations
 
 During an upgrade, if the CFTCOM file path is greater than 64 characters the COM file is not migrated, and you must migrate it manually.
 
-When upgrading from {{< TransferCFT/suitevariablesTransferCFTName  >}} 3.1.3 to 3.3.2 or higher, check that the PKIPASSW length value in the CFT 3.1.3 version (source) is not greater than 8 characters. If it is, truncate the password as described in <a href="../../../mig_impact_considerations" class="MCXref xref">Migration or upgrade impact and considerations</a>
+When upgrading from {{< TransferCFT/suitevariablesTransferCFTName  >}} 3.1.3 to 3.3.2 or higher, check that the PKIPASSW length value in the CFT 3.1.3 version (source) is not greater than 8 characters. If it is, truncate the password as described in [Migration or upgrade impact and considerations](../../../mig_impact_considerations)
 
 Use {{< TransferCFT/PrimaryCGorUM  >}} to upgrade {{< TransferCFT/suitevariablesTransferCFTName  >}}
 --------------------------------------------------------------------------------------------------------------

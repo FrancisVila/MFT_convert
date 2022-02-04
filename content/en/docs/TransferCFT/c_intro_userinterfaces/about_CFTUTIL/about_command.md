@@ -22,9 +22,9 @@ on which Transfer CFT is installed.
 
 | Parameter  | Description  |
 | --- | --- |
-| <a href="../../command_summary/parameter_intro/comment">COMMENT</a> | Free comment.<br/> This comment is displayed and can be used to indicate a specific item of information, such as the customer name.<br/> This information is then used to determine a software license key. |
-| <a href="../../command_summary/parameter_intro/type">TYPE</a>  | Displays the Transfer CFT product, host, and key information.  |
-| <a href="../../command_summary/parameter_intro/key">KEY</a>  | Defines the number of keys that display.  |
+| [COMMENT](../../command_summary/parameter_intro/comment) | Free comment.<br/> This comment is displayed and can be used to indicate a specific item of information, such as the customer name.<br/> This information is then used to determine a software license key. |
+| [TYPE](../../command_summary/parameter_intro/type)  | Displays the Transfer CFT product, host, and key information.  |
+| [KEY](../../command_summary/parameter_intro/key)  | Defines the number of keys that display.  |
 
 
 ****Example****

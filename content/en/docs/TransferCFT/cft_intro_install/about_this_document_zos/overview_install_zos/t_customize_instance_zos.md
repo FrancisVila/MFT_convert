@@ -9,8 +9,8 @@
 Customize parameters in the JCL
 -------------------------------
 
-- <a href="#Modifying_A03PARM" class="MCXref xref">Set standard JCL parameters A03PARM</a>
-- <a href="#Selectin" class="MCXref xref">Configure the SGINSTAL using UCONF or A12OPTSP</a>
+- [Set standard JCL parameters A03PARM](#Modifying_A03PARM)
+- [Configure the SGINSTAL using UCONF or A12OPTSP](#Selectin)
 
 Execute the JOB:
 

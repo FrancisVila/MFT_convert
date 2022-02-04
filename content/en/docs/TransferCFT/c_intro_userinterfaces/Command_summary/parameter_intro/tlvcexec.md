@@ -20,7 +20,7 @@ alert generates 2 actions:
 - Sends a message
     to the LOG
 - Executes
-    a batch to react to the alert, the <a href="#" class="selected">TLVWEXEC</a>
+    a batch to react to the alert, the [TLVWEXEC](#)
     parameter
 
 > **Note**
@@ -41,7 +41,7 @@ alert generates 2 actions:
 - Sends a message
     to the LOG
 - Executes
-    a batch to react to the alert, the <a href="#" class="selected">TLVWEXEC</a>
+    a batch to react to the alert, the [TLVWEXEC](#)
     parameter
 
 > **Note**

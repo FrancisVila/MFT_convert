@@ -25,7 +25,7 @@ It is highly recommended that you either customize the RH, SH, RT, ST, etc. para
 
 When the catalog is full, the following error message is displayed: `CFTC29W Catalog Alert fill threshold reached: level=100% ID=CAT0`
 
-Please see the <a href="../../../../admin_intro/admin_monitoring_intro/housekeeping_catalog" class="MCXref xref">Housekeeping for catalog and output files</a> for best practices, or the <a href="../../../../troubleshoot_intro/admin_troubleshooting_server/admin_troubleshooting_runtime/troubleshoot_catalog" class="MCXref xref">Troubleshoot the catalog</a> page for solutions if the catalog is full and Transfer CFT has stopped.
+Please see the [Troubleshoot the catalog](../../../../admin_intro/admin_monitoring_intro/housekeeping_catalog) page for solutions if the catalog is full and Transfer CFT has stopped.
 
 #### RECONFIG
 

@@ -164,7 +164,7 @@ The recommendations in this section apply to a Transfer CFT multi-node, multi-h
 
 When using AWS EFS, you cannot set the server options; only the client is configurable.
 
-This system is based on NFSv4. For more information on NFSv4, please see <a href="#Using" class="MCXref xref">Using NFS</a>.
+This system is based on NFSv4. For more information on NFSv4, please see [Using NFS](#Using).
 
 This shared file system has features that impact performance, as compared to a traditional NFS:
 

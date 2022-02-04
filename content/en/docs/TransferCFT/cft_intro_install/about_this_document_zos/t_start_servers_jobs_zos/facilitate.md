@@ -9,7 +9,7 @@ You require the following environments in order to install and deploy Transfer C
 - Distribution environment
 - Transfer CFT run-time instance environment
 
-For a detailed description of these environments, see <a href="../../overview_install_zos/distribution_environment_installation" class="MCXref xref">Non-SMP/E: Create the distribution environment</a>.
+For a detailed description of these environments, see [Non-SMP/E: Create the distribution environment](../../overview_install_zos/distribution_environment_installation).
 
 ****Deployment overview****
 

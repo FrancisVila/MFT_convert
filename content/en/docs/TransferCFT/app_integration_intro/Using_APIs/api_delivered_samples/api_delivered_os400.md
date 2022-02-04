@@ -32,11 +32,11 @@ In the **Template** column, click the template link to view the sample template 
 
 | Template  | Function  | Services | Description  |
 | --- | --- | --- | --- |
-| <a href="">TCFTI_RPG</a>  | CFTI  | OPEN - CLOSE - NEXT - SELECT- MODIF  | Using CFTI function (CFTAPI V23 structure )  |
-| <a href="">TCFTI2_RPG</a>  | cftaix  | OPEN - CLOSE - SELECT240 - NEXT240 - SORT - DO -  | Using CFTIX function (CFTAPI V24 structure )  |
-| <a href="">TCFTU_RP1</a>  | CFTU  | SEND - DELETE  | Tests the CFTU, CFTC functions (asynchronous API)  |
-| <a href="">TCFTU_RP1N</a>  | CFTU  | SEND  | Using PLIST for receiving the SEND command  |
-| <a href="">TCFTU_RP2</a>  | CFTU  | COM, SEND, GETXINFO, CLOSEAPI  | Tests the CFTU function (synchronous API)  |
+| [TCFTI_RPG]()  | CFTI  | OPEN - CLOSE - NEXT - SELECT- MODIF  | Using CFTI function (CFTAPI V23 structure )  |
+| [TCFTI2_RPG]()  | cftaix  | OPEN - CLOSE - SELECT240 - NEXT240 - SORT - DO -  | Using CFTIX function (CFTAPI V24 structure )  |
+| [TCFTU_RP1]()  | CFTU  | SEND - DELETE  | Tests the CFTU, CFTC functions (asynchronous API)  |
+| [TCFTU_RP1N]()  | CFTU  | SEND  | Using PLIST for receiving the SEND command  |
+| [TCFTU_RP2]()  | CFTU  | COM, SEND, GETXINFO, CLOSEAPI  | Tests the CFTU function (synchronous API)  |
 
 
 How to compile and execute a COBOL sample

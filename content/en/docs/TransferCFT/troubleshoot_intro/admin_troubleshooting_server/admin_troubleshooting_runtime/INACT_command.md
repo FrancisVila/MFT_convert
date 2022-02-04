@@ -21,10 +21,10 @@ Command guide: [INACT](../../../../c_intro_userinterfaces/command_summary#INACT)
 
 | Parameter  | Description  |
 | --- | --- |
-| <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/id">ID</a>  | Identifier for the object to be deactivated. To deactivate several objects with a single command, use wildcard characters or meta characters. |
-| <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/type">TYPE</a>  | Object to be deactivated:<br/> • PART<br/> • TRK<br/> • CRON<br/> • FOLDER |
-| <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/mode">MODE</a>  | Mode to be deactivated on partners (only when TYPE=PART object):<br/> • BOTH (default)<br/> • REQUESTER<br/> • SERVER<br/> You can use the shortcuts B, R and S in place of the keywords. |
-| <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/force">FORCE</a> |  • YES: Stops any transfers in progress involving the deactivated partners.<br/> • NO: Default value, transfers progress normally. |
+| [ID](../../../../c_intro_userinterfaces/command_summary/parameter_intro/id)  | Identifier for the object to be deactivated. To deactivate several objects with a single command, use wildcard characters or meta characters. |
+| [TYPE](../../../../c_intro_userinterfaces/command_summary/parameter_intro/type)  | Object to be deactivated:<br/> • PART<br/> • TRK<br/> • CRON<br/> • FOLDER |
+| [MODE](../../../../c_intro_userinterfaces/command_summary/parameter_intro/mode)  | Mode to be deactivated on partners (only when TYPE=PART object):<br/> • BOTH (default)<br/> • REQUESTER<br/> • SERVER<br/> You can use the shortcuts B, R and S in place of the keywords. |
+| [FORCE](../../../../c_intro_userinterfaces/command_summary/parameter_intro/force) |  • YES: Stops any transfers in progress involving the deactivated partners.<br/> • NO: Default value, transfers progress normally. |
 
 
 Using the INACT command

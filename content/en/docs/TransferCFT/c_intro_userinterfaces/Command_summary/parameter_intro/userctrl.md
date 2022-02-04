@@ -22,8 +22,8 @@ Use this field to define the file access control. You can use the UserCtrl param
 > Caution  
 > Windows only - You cannot use a UNC or mapped drive (as opposed to files on a local disk) when USERCTRL=YES. Note though that even when USERCTRL=NO, you cannot access files on a local or remote disk under another account.
 
-- For details in UNIX, please see <a href="../../../../cft_intro_install/unix_install_start_here/run_first_time_ux/run_first_time_ux/t_adding_system_user_unix#Manually" class="MCXref xref">Enable the file user rights (USERCTRL)</a>
-- For details in Windows, please see <a href="../../../../cft_intro_install/windows_install_start_here/windows_install_start_here/running_cft_for_the_first_time_windows/add_system_user_windows#Enable3" class="MCXref xref">Enable the file user rights (USERCTRL)</a>
+- For details in UNIX, please see [Enable the file user rights (USERCTRL)](../../../../cft_intro_install/unix_install_start_here/run_first_time_ux/run_first_time_ux/t_adding_system_user_unix#Manually)
+- For details in Windows, please see [Enable the file user rights (USERCTRL)](../../../../cft_intro_install/windows_install_start_here/windows_install_start_here/running_cft_for_the_first_time_windows/add_system_user_windows#Enable3)
 
  
 

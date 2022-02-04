@@ -48,7 +48,7 @@ Depending on the operating system, the temporary file is treated as follows:
 
 Windows: The temporary file is automatically deleted.
 
-- To keep temporary files, you can set CFTNODEL as described in <a href="../../../cft_intro_install/windows_install_start_here/windows_install_start_here/running_cft_for_the_first_time_windows/transfer_procedures_win" class="MCXref xref">Transfer scripts and temporary files</a>.
+- To keep temporary files, you can set CFTNODEL as described in [Transfer scripts and temporary files](../../../cft_intro_install/windows_install_start_here/windows_install_start_here/running_cft_for_the_first_time_windows/transfer_procedures_win).
 
 z/OS: Transfer CFT writes directly to a JES internal reader.
 
@@ -62,7 +62,7 @@ UNIX: You must add the following lines at the end of the template processing scr
 
 `rm $0.err`
 
-- See <a href="../../../cft_intro_install/unix_install_start_here/run_first_time_ux/run_first_time_ux/cft_temporary_files" class="MCXref xref">Transfer scripts and temporary files</a>for more information.
+- See [Transfer scripts and temporary files](../../../cft_intro_install/unix_install_start_here/run_first_time_ux/run_first_time_ux/cft_temporary_files)for more information.
 
 HP NonStop
 

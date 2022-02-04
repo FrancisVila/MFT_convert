@@ -4,8 +4,8 @@
     "weight": "180"
 }{{< TransferCFT/axwayvariablesComponentLongName  >}}s 3.1.3 or higher can register with {{< TransferCFT/PrimaryCGorUM  >}} in one of two ways:
 
-- <a href="#Automati" class="MCXref xref">Automatically activate connectivity</a>
-- <a href="#manually_activate_cg" class="MCXref xref">Manually activate connectivity</a>
+- [Automatically activate connectivity](#Automati)
+- [Manually activate connectivity](#manually_activate_cg)
 
 <span id="Automati"></span>
 
@@ -44,7 +44,7 @@ Prior to the registration, you must ensure that the JCL CFTMON (`copilot.misc.cf
 
 ### Procedure
 
-All commands in this section are performed using CFTUTIL unless stated otherwise. For details on the UCONF parameters referenced in this section, please see <a href="" class="MCXref xref">UCONF: Central Governance options</a>.
+All commands in this section are performed using CFTUTIL unless stated otherwise. For details on the UCONF parameters referenced in this section, please see [UCONF: Central Governance options]().
 
 #### Disable previously used connectors
 
@@ -181,7 +181,7 @@ Use the CFTUTIL CHECK command to validate the coherence of parameters, partners,
 CHECK CONTENT=BRIEF&#124;FULL, FOUT=FileName
 ```
 
-Check the list in the output for errors and correct all errors before attempting registration. See also, <a href="../../c_intro_userinterfaces/about_cftutil/check_command" class="MCXref xref">Use the check command</a>.
+Check the list in the output for errors and correct all errors before attempting registration. See also, [Use the check command](../../c_intro_userinterfaces/about_cftutil/check_command).
 
 Register or re-register
 -----------------------

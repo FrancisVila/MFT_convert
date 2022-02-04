@@ -1,7 +1,7 @@
 {
     "title": "COPYFILE  - Copy files off-line",
     "linkTitle": "COPYFILE - Copy files off-line",
-    "weight": "280"
+    "weight": "270"
 }The COPYFILE command is used
 to copy a sequential file performing the following operations:
 
@@ -71,27 +71,27 @@ When using ICHARSET and OCHARSET, all file types are supported except Binary (B
 
 | Parameter  | Description  |
 | --- | --- |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/create">CREATE</a> | Output file creation option. |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/iblksize">IBLKSIZE</a>  | Defines the block size of the input file, in bytes.<br/>  |
-| <a href="">ICHARSET</a>  | Defines the input file encoding.  |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/icode">ICODE</a>  | Codes the input file data. Internal code managed by the system, either ASCII, or EBCDIC. |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/icomp">ICOMP</a>  | Compresses the input file data.<br/> The value 0 means that there is no compression. The possible values (cpr) are indicated in <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/compression">Compression</a>. |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/ict">ICT</a>  | Type of input file data compression. The value of ICOMP must be compatible with the compression type. |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/ifname">IFNAME</a>  | Name of the input file to be copied. |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/ilrecl">ILRECL</a><br/> <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/ilrecl">see comments</a><br/>  | For records of:<br/> • Fixed format (IFRECFM = F): input file record size<br/> • Variable format (IFRECFM = V): maximum record size |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/irecfm">IRECFM</a><br/> see the specific Operations Guide | Input file record format:<br/> • F: fixed<br/> • V: variable<br/> • U: undefined |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/itype">ITYPE</a> | Input file type.<br/> Refer to the Operations Guide corresponding to your OS.  |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/oblksize">OBLKSIZE</a> OS | Output file block size (in bytes). The value indicated must be greater than the value of the OLRECL parameter. |
-| <a href="">OCHARSET</a>  | Defines the output file encoding.  |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/ocode">OCODE</a> | Codes the output file data. |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/ocomp">OCOMP</a>  | Compresses the output file data. |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/oct">OCT</a> | Type of output file data compression. The value of OCOMP must be compatible with the compression type. |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/ofname">OFNAME </a> | Output file name. |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/olrecl">OLRECL</a> | Record formats, expressed in bytes. |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/orecfm">ORECFM</a>  | Output record format. |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/ospace">OSPACE</a> | Space to be reserved for the output file, in K-bytes (1 K-byte = 1024 bytes). |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/otype">OTYPE</a>  | Output file type. |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/xlate">XLATE</a>  | Defines the translation table used for the copyfile.  |
+| [CREATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/create) | Output file creation option. |
+| [IBLKSIZE](../../../c_intro_userinterfaces/command_summary/parameter_intro/iblksize)  | Defines the block size of the input file, in bytes.<br/>  |
+| [ICHARSET]()  | Defines the input file encoding.  |
+| [ICODE](../../../c_intro_userinterfaces/command_summary/parameter_intro/icode)  | Codes the input file data. Internal code managed by the system, either ASCII, or EBCDIC. |
+| [Compression](../../../c_intro_userinterfaces/command_summary/parameter_intro/icomp). |
+| [ICT](../../../c_intro_userinterfaces/command_summary/parameter_intro/ict)  | Type of input file data compression. The value of ICOMP must be compatible with the compression type. |
+| [IFNAME](../../../c_intro_userinterfaces/command_summary/parameter_intro/ifname)  | Name of the input file to be copied. |
+| [see comments](../../../c_intro_userinterfaces/command_summary/parameter_intro/ilrecl)<br/>  | For records of:<br/> • Fixed format (IFRECFM = F): input file record size<br/> • Variable format (IFRECFM = V): maximum record size |
+| [IRECFM](../../../c_intro_userinterfaces/command_summary/parameter_intro/irecfm)<br/> see the specific Operations Guide | Input file record format:<br/> • F: fixed<br/> • V: variable<br/> • U: undefined |
+| [ITYPE](../../../c_intro_userinterfaces/command_summary/parameter_intro/itype) | Input file type.<br/> Refer to the Operations Guide corresponding to your OS.  |
+| [OBLKSIZE](../../../c_intro_userinterfaces/command_summary/parameter_intro/oblksize) OS | Output file block size (in bytes). The value indicated must be greater than the value of the OLRECL parameter. |
+| [OCHARSET]()  | Defines the output file encoding.  |
+| [OCODE](../../../c_intro_userinterfaces/command_summary/parameter_intro/ocode) | Codes the output file data. |
+| [OCOMP](../../../c_intro_userinterfaces/command_summary/parameter_intro/ocomp)  | Compresses the output file data. |
+| [OCT](../../../c_intro_userinterfaces/command_summary/parameter_intro/oct) | Type of output file data compression. The value of OCOMP must be compatible with the compression type. |
+| [OFNAME ](../../../c_intro_userinterfaces/command_summary/parameter_intro/ofname) | Output file name. |
+| [OLRECL](../../../c_intro_userinterfaces/command_summary/parameter_intro/olrecl) | Record formats, expressed in bytes. |
+| [ORECFM](../../../c_intro_userinterfaces/command_summary/parameter_intro/orecfm)  | Output record format. |
+| [OSPACE](../../../c_intro_userinterfaces/command_summary/parameter_intro/ospace) | Space to be reserved for the output file, in K-bytes (1 K-byte = 1024 bytes). |
+| [OTYPE](../../../c_intro_userinterfaces/command_summary/parameter_intro/otype)  | Output file type. |
+| [XLATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/xlate)  | Defines the translation table used for the copyfile.  |
 |   |   |
 
 

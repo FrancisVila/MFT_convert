@@ -1,7 +1,7 @@
 {
     "title": "Manage configuration updates - RECONFIG",
     "linkTitle": "RECONFIG - Modify the configuration",
-    "weight": "320"
+    "weight": "310"
 }Use this command to manage configuration updates for the types listed below.
 
 ********Syntax********
@@ -64,7 +64,7 @@ CFTUTIL RECONFIG TYPE=PARMCACHE
 
 ****AM****
 
-Reload roles (CFTROLE) and privileges (CFTPRIV). You can manually create these objects or they can be deployed via Flow Manager. For more information on CFTROLEs and CFTPRIVs, please see <a href="../../../internal_a_m_start_here/fm_access_management" class="MCXref xref">Access Management using Flow Manager</a>. For example:
+Reload roles (CFTROLE) and privileges (CFTPRIV). You can manually create these objects or they can be deployed via Flow Manager. For more information on CFTROLEs and CFTPRIVs, please see [Access Management using Flow Manager](../../../internal_a_m_start_here/fm_access_management). For example:
 
 ```
 CFTUTIL RECONFIG TYPE=AM

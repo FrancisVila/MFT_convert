@@ -1,7 +1,7 @@
 {
     "title": " Housekeeping for log files",
     "linkTitle": "Housekeeping for log files ",
-    "weight": "270"
+    "weight": "260"
 }Transfer CFT logs all events, log messages, in a dedicated log file. While this information helps in detecting problems, it is important to note that the size of the Transfer CFT log files continually increases if no precautions are taken.
 
 It is readable by the user via the Central Governance user interface or the CFTUTIL listlog command.

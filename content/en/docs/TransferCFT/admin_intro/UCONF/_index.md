@@ -1,7 +1,7 @@
 {
     "title": "About the unified configuration tool (UCONF)",
     "linkTitle": "Set UCONF parameters",
-    "weight": "220"
+    "weight": "210"
 }Configurable {{< TransferCFT/suitevariablesTransferCFTName  >}} parameters fall into two basic categories, definable objects or UCONF values. For some Transfer CFT parameters, you can use either method to define parameter values.
 
 When using {{< TransferCFT/suitevariablesCentralGovernanceName  >}} to manage {{< TransferCFT/axwayvariablesComponentShortName  >}}, some parameter values are specific to UCONF and modifiable only through the {{< TransferCFT/suitevariablesCentralGovernanceName  >}} interface or using the UCONF utility as described in this section.

@@ -17,8 +17,8 @@ Using bash autocompletion
 
 To simplify the use of Transfer CFT commands, you can use the bash autocompletion feature when working in interactive mode. Bash autocompletion is valid for `CFTUTIL`, `PKIUTIL`, and the `cft` commands. This feature intuitively provides commands and available parameters along with a brief description. Additionally, for certain parameters Bash autocompletion proposes a list of possible parameter values, either static or dynamic, depending on the parameter.
 
-- <a href="#Special" class="MCXref xref">Keyboard shortcuts</a>
-    -   <a href="#Auto-com" class="MCXref xref">Use the Bash autocompletion keys</a>
+- [Keyboard shortcuts](#Special)
+    -   [Use the Bash autocompletion keys](#Auto-com)
     -   [UCONF parameter specifics](#UCONF%C2%A0pa)
 
 > **Note**

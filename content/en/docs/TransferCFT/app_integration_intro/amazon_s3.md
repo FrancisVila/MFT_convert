@@ -45,7 +45,7 @@ The following tables describe Transfer CFT's Amazon S3-related parameters.
 
 | Parameter  | Type  | Description  |
 | --- | --- | --- |
-| ssl.certificates.ca_cert_bundle  | string  | Path to the CA certificate bundle. This path can point to either a file containing the CA certificates (for example, <code>/etc/ssl/certs/ca-certificates.crt</code>) or to a directory containing the CA certificates (for example, <code>/etc/ssl/certs/</code>), which are stored individually with their filenames in a hash format.<br/> You can refer to the <a href="https://curl.haxx.se/docs/manpage.html#--cacert">cURL man page</a> for information on the <code>cacert </code>and <code>capath </code>options.<br/> <blockquote> **Note**<br/> Note: You can set this parameter on UNIX systems, however it is not applicable on Windows.<br/> </blockquote> If the certificate bundle is not available on your system, you can download it from: <a href="https://curl.haxx.se/docs/caextract.html">curl.haxx.se/docs/caextract.html</a> (see <a href="https://curl.haxx.se/ca/cacert.pem">cacert.pem</a>). |
+| ssl.certificates.ca_cert_bundle  | string  | Path to the CA certificate bundle. This path can point to either a file containing the CA certificates (for example, <code>/etc/ssl/certs/ca-certificates.crt</code>) or to a directory containing the CA certificates (for example, <code>/etc/ssl/certs/</code>), which are stored individually with their filenames in a hash format.<br/> You can refer to the [cacert.pem](https://curl.haxx.se/docs/manpage.html#--cacert)). |
 
 
 **Credentials**
@@ -55,7 +55,7 @@ Credential parameters identify who is making a request and whether access is all
 
 | Parameter  | Type  | Description  |
 | --- | --- | --- |
-| aws.credentials  | node  | List of <a href="#storageaccount">STORAGEACCOUNT</a> values where each STORAGEACCOUNT consists of an access key pair.  |
+| aws.credentials  | node  | List of [STORAGEACCOUNT](#storageaccount) values where each STORAGEACCOUNT consists of an access key pair.  |
 | aws.credentials.&lt;storageaccount&gt;.access_key_id  | string  | Access key ID, a 20-character, alphanumeric sequence. |
 | aws.credentials.&lt;storageaccount&gt;.secret_access_key  | passwd  | Secret access key, a 40-character sequence. |
 
@@ -75,7 +75,7 @@ Server-side encryption type with Amazon S3.
 
 | Parameter  | Type  | Description  |
 | --- | --- | --- |
-| aws.credentials.&lt;storageaccount&gt;.encryption_type  | string  | Type of server-side encryption to use:<br/> • None: No encryption on Amazon S3 objects<br/> • sse-s3: Server-side encryption with AES 256<br/> • sse-kms: Server-side encryption with Key Management Service<br/> See the <a href="#globally_encrypt">example</a> for details on encrypting files. |
+| aws.credentials.&lt;storageaccount&gt;.encryption_type  | string  | Type of server-side encryption to use:<br/> • None: No encryption on Amazon S3 objects<br/> • sse-s3: Server-side encryption with AES 256<br/> • sse-kms: Server-side encryption with Key Management Service<br/> See the [example](#globally_encrypt) for details on encrypting files. |
 | aws.credentials.&lt;storageaccount&gt;.encryption_key_id  | string  | Key identifier for SSE-KMS encryption use; you must provide the full ID of the encryption key for the server. |
 
 
@@ -125,7 +125,7 @@ You must include the following parameters in your [CFTSEND/CFTRECV](../../c_intr
 | --- | --- | --- |
 | fname  | string (key)  | The fname field corresponds to the S3 services key.  |
 | workingdir  | string  | There are two supported formats. For either, the workingdir field must start with <code>s3://</code> and be followed by the designated items in the order listed:<br/> • <code>s3://bucket.region</code><br /> • the bucket name<br/> • a period (.)<br/> • the region<br/> <br/> • <code>s3://http[s]://endpoint[:port]/bucket</code><br /> • http:// or https:// for secure communication<br/> • the endpoint, which can be an IP address or the server's hostname<br/> • a colon (:) and port (if not using the default of 80 for HTTP, 443 for HTTPS)<br/> • a slash (/)<br/> • the bucket name<br/>  |
-| storageaccount  | string  | Points to the access key identifier(s) and the access key secret(s) stored in UCONF. See also <a href="../../c_intro_userinterfaces/command_summary/parameter_intro/storageaccount">storageaccount</a>.  |
+| storageaccount  | string  | Points to the access key identifier(s) and the access key secret(s) stored in UCONF. See also [storageaccount](../../c_intro_userinterfaces/command_summary/parameter_intro/storageaccount).  |
 
 
 You can use the following example as a basis for configuring a CFTSEND and CFTRECV:

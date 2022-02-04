@@ -2,7 +2,7 @@
     "title": "CFTPRIV",
     "linkTitle": "Privileges - CFTPRIV",
     "weight": "240"
-}Use this procedure to view a list of privileges and descriptions and perform related tasks in the user interface. See also <a href="../../../../internal_a_m_start_here/fm_access_management" class="MCXref xref">Access Management using Flow Manager</a>
+}Use this procedure to view a list of privileges and descriptions and perform related tasks in the user interface. See also [Access Management using Flow Manager](../../../../internal_a_m_start_here/fm_access_management)
 
 ### Using CFTPRIV
 
@@ -15,7 +15,7 @@ Privileges give users authorization to access and perform actions in the user in
 | comment | String80 | Comment |
 | resource | String32 | Resource on which this privilege applies |
 | actions | List of String32 | Actions authorized on the resource (1 to 16 actions) |
-| condition | String256 | Condition to check for authorizing (<a href="#Specifyi">see below</a>) |
+| condition | String256 | Condition to check for authorizing ([see below](#Specifyi)) |
 
 
 Example of CFTPRIV in a configuration file:

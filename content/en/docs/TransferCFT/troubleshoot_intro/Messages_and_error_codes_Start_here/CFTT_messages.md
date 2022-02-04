@@ -146,7 +146,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | --- | --- |
 | Explanation | The &amp;part partner was not found in the Transfer CFT partner file. |
 | Consequence | The transfer is not executed. The corresponding catalog entry is set to KEEP. |
-| Action | Check the Transfer <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro">CFT parameter settings</a>.<br/> Check the {{< TransferCFT/axwayvariablesComponentShortName  >}} parameter settings. |
+| Action | Check the Transfer [CFT parameter settings](../../../c_intro_userinterfaces/command_summary/parameter_intro).<br/> Check the {{< TransferCFT/axwayvariablesComponentShortName  >}} parameter settings. |
 
 
  
@@ -170,7 +170,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | --- | --- |
 | Explanation | The partner has made a selection request and no file is ready to be sent (SEND on HOLD or implicit SEND). |
 | Consequence | The transfer is not executed (no catalog record is created). |
-| Action | Prepare a transfer (SEND state=hold) or declare an implicit send in the Transfer <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro">CFT parameter settings</a>.<br/> Prepare a transfer (SEND state=hold) or declare an implicit send in the {{< TransferCFT/axwayvariablesComponentShortName  >}} parameter settings. |
+| Action | Prepare a transfer (SEND state=hold) or declare an implicit send in the Transfer [CFT parameter settings](../../../c_intro_userinterfaces/command_summary/parameter_intro).<br/> Prepare a transfer (SEND state=hold) or declare an implicit send in the {{< TransferCFT/axwayvariablesComponentShortName  >}} parameter settings. |
 
 
  
@@ -187,9 +187,9 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT18E"></span>CFTT18E PART=&amp;part IDF=&amp;idf CFTAUTH id=&amp;id _ Not found<br/> CFTT18E PART=&amp;part IDF=&amp;idf CFTAUTH id=&amp;id _ Not found |
 | --- | --- |
-| Explanation | The identifier of the list of files authorized for a partner (see <a href="../../../c_intro_userinterfaces/command_summary">CFTPART</a> ) was not found in the Transfer CFT parameter file. |
+| Explanation | The identifier of the list of files authorized for a partner (see [CFTPART](../../../c_intro_userinterfaces/command_summary) ) was not found in the Transfer CFT parameter file. |
 | Consequence | The transfer is not executed. The corresponding catalog entry is set to KEEP. |
-| Action | Check the <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro">Transfer CFT parameter</a> settings.<br/> Check the {{< TransferCFT/axwayvariablesComponentShortName  >}} parameter setting. |
+| Action | Check the [Transfer CFT parameter](../../../c_intro_userinterfaces/command_summary/parameter_intro) settings.<br/> Check the {{< TransferCFT/axwayvariablesComponentShortName  >}} parameter setting. |
 
 
  
@@ -226,7 +226,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT22E"></span>CFTT22E &amp;str PART=&amp;part IDF=&amp;idf IDT=&amp;idt_ &amp;str<br/> CFTT22E _&amp;str &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; &amp;str |
 | --- | --- |
-| Explanation | Connection refused due to user authentication failure (rpasswd, spasswd error).<br/> The &amp;str provides additional information.<br/> For more information, see <a href="../../../transport_security_start_here/password_management">Password management</a>. |
+| Explanation | Connection refused due to user authentication failure (rpasswd, spasswd error).<br/> The &amp;str provides additional information.<br/> For more information, see [Password management](../../../transport_security_start_here/password_management). |
 | Consequence | The transfer is not executed. |
 | Action | Check the &amp;str, correct, and retry. |
 
@@ -443,7 +443,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT47E"></span>CFTT47E PART=&amp;part IDF=&amp;idf IDT=&amp;idt PROTOCOL=&amp;id _ Cannot find SSL security profil<br/> CFTT47E _ Cannot find SSL security profil &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt PROTOCOL=&amp;prot&gt; |
 | --- | --- |
-| Explanation | The attempted transfer the &amp;part partner cannot be performed because the security profile was not found. For more information on SSL definition for CFTPART, see the <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/ssl">SSL</a> parameter description. |
+| Explanation | The attempted transfer the &amp;part partner cannot be performed because the security profile was not found. For more information on SSL definition for CFTPART, see the [SSL](../../../c_intro_userinterfaces/command_summary/parameter_intro/ssl) parameter description. |
 | Consequence | The transfer can not be carried out. |
 
 
@@ -479,7 +479,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT50E"></span>CFTT50E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Duplicate transfer with IDTU=<br/> CFTT50E _ Duplicate transfer with IDTU=&amp;idtu &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
 | --- | --- |
-| Explanation | A duplicate transfer occurred. IDTU=&amp;idtu is the previously performed transfer.<br/> For more information, see the <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/duplicat">DUPLICAT</a> field details. |
+| Explanation | A duplicate transfer occurred. IDTU=&amp;idtu is the previously performed transfer.<br/> For more information, see the [DUPLICAT](../../../c_intro_userinterfaces/command_summary/parameter_intro/duplicat) field details. |
 
 
  
@@ -597,7 +597,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | --- | --- |
 | Explanation | The default IDF functionality is disabled for the command. |
 | Consequence | The transfer is not executed and has the status K. The DIAGP also reflects this status. |
-| Action | For parameter details, see <a href="../../../admin_intro/uconf/uconf_parameters">UCONF: General unified configuration parameters</a>. |
+| Action | For parameter details, see [UCONF: General unified configuration parameters](../../../admin_intro/uconf/uconf_parameters). |
 
 
  
@@ -851,9 +851,9 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Information | <span id="CFTT89I"></span>CCFTT89I PART=&amp;part IDF=&amp;idf IDT=&amp;idt [FACTION on FNAME ] or [NACTION on NFNAME]=&amp;fname : &amp;str+&quot;deleted&quot; or &quot;erased&quot;<br/> CFTT89I [FACTION on FNAME ] or [NACTION on NFNAME] =&amp;fname : &amp;str+&quot;deleted&quot; or &quot;erased&quot; &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
 | --- | --- |
-| Explanation |  • <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/faction">FACTION</a>=ERASE or DELETE erased or deleted the file (FNAME) as follows: • When using the SEND command, the action occurred after the transfer completed.<br/> • When using the RECV command, the action occurred before the transfer.<br/> <br/> • <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/naction">NACTION</a>=DELETE was used in a RECV command, which deleted the file (NFNAME) at the end of the transfer. This option is only available when using SFTP. |
+| Explanation |  • [NACTION](../../../c_intro_userinterfaces/command_summary/parameter_intro/faction)=DELETE was used in a RECV command, which deleted the file (NFNAME) at the end of the transfer. This option is only available when using SFTP. |
 | Information  | CFTT89I [FACTION on FNAME ] or [NACTION on NFNAME]=&amp;srcfile archived as &amp;archivefile &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt;  |
-| Explanation  |  • <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/faction"></a><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/faction">FACTION</a>=ARCHIVE was used in a SEND command, which archived the file (FNAME) at end of the SEND transfer.<br/> • <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/naction"></a><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/naction">NACTION</a>=ARCHIVE was used in a RECV command, which archived the file (NFNAME) at the end of the RECV transfer. This option is only available when using SFTP. |
+| Explanation  |  • [NACTION](../../../c_intro_userinterfaces/command_summary/parameter_intro/faction)=ARCHIVE was used in a RECV command, which archived the file (NFNAME) at the end of the RECV transfer. This option is only available when using SFTP. |
 
 
  
@@ -861,11 +861,11 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Warning | <span id="CFTT90W"></span>CFTT90W IDF=&amp;idf IDT=&amp;idt [FACTION on FNAME ] or [NACTION on NFNAME]=&amp;fname : [erase or delete] failed cs<br/> CFTT90W IDF=&amp;idf IDT=&amp;idt [FACTION on FNAME ] or [NACTION on NFNAME]=&amp;fname : [erase or delete] failed cs |
 | --- | --- |
-| Explanation  | Failed to delete or erase the file (FNAME/NFNAME) and the transfer has completed (T state). This failure might occur if the file to be deleted or erased was being used, for example.<br/> When using the following commands:<br/> • SEND <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/faction">FACTION</a>=ERASE or DELETE, the action occurs after the transfer completed.<br/> • RECV <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/faction">FACTION</a>=ERASE or DELETE, the action occurs before the transfer.<br/> • RECV <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/naction">NACTION</a>=DELETE, the action occurs after the transfer completed. Only available when using SFTP. |
-| Action | Check the following:<br/> • <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/faction">FACTION</a>: Manually delete or erase the remote file (FNAME).<br/> • <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/naction">NACTION</a>: Manually delete the remote file (NFNAME). This option is only available when using SFTP. |
+| Explanation  | Failed to delete or erase the file (FNAME/NFNAME) and the transfer has completed (T state). This failure might occur if the file to be deleted or erased was being used, for example.<br/> When using the following commands:<br/> • SEND [NACTION](../../../c_intro_userinterfaces/command_summary/parameter_intro/faction)=DELETE, the action occurs after the transfer completed. Only available when using SFTP. |
+| Action | Check the following:<br/> • [NACTION](../../../c_intro_userinterfaces/command_summary/parameter_intro/faction): Manually delete the remote file (NFNAME). This option is only available when using SFTP. |
 | Warning  | CFTT90W IDF=&amp;idf IDT=&amp;idt NARCHIVEFNAME undefined and NACTION=ARCHIVE  |
-| Explanation  | If you have set <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/naction">NACTION</a>=ARCHIVE, you must define the NARCHIVEFNAME.  |
-| Action  | Define the <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/narchivename">NARCHIVEFNAME</a> parameter. This parameter is only available when using SFTP.  |
+| Explanation  | If you have set [NACTION](../../../c_intro_userinterfaces/command_summary/parameter_intro/naction)=ARCHIVE, you must define the NARCHIVEFNAME.  |
+| Action  | Define the [NARCHIVEFNAME](../../../c_intro_userinterfaces/command_summary/parameter_intro/narchivename) parameter. This parameter is only available when using SFTP.  |
 
 
  
@@ -927,5 +927,5 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Error | <span id="CFTT98W"></span>CFTT98W PART=%-8.8s IDF=%-8.8s IDT=%.8s Rename ignored because WFNAME equals FNAME,<br/> CFTT98W Rename ignored because WFNAME equals FNAME &lt;IDTU=%.8s PART=%s IDF=%s IDT=%.8s&gt; |
 | --- | --- |
-| Explanation  | The configuration has the same <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/wfname">WFNAME</a> as the RECV FNAME and so the renaming is ignored.  |
+| Explanation  | The configuration has the same [WFNAME](../../../c_intro_userinterfaces/command_summary/parameter_intro/wfname) as the RECV FNAME and so the renaming is ignored.  |
 

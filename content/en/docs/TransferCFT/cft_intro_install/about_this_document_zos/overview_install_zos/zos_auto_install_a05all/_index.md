@@ -15,7 +15,7 @@ The A05ALL JCL automatically runs the following members.
 | 1  | Create and initialize instance files: UCONF, UCONFRUN, FTEST, MONLOG, and LOG.  | A06FILES  |
 | 2  | Assemble and link-edit SGINSTAL for Transfer CFT z/OS options.<br/> Non-SMP/E installation mode. &lt;/p&gt; | A12AOPTS  |
 | 3  | Link-edit all Transfer CFT modules.<br/> Non-SMP/E installation mode. &lt;/p&gt; | B20LINK  |
-| 4  | Generate an encryption key. See also <a href="../t_customize_instance_zos#Password">Password encryption</a>.  | CFTGNKEY  |
+| 4  | Generate an encryption key. See also [Password encryption](../t_customize_instance_zos#Password).  | CFTGNKEY  |
 |   | **5.A** *or* **5.B**  |   |
 | 5.A  | If cgenable is set to no:<br/> • Sets the uconf variables: • cft.runtime_dir<br/> • cft.listcat_compat<br/> • cft.state_compat<br/> <br/> • Generates the SAMPLE(CFTPARM) parameter sample from the SAMPLE(ZCFTPARM) template<br/> • Generates the SFTP SAMPLE(CFTSFTP) parameter sample from the SAMPLE(ZCFTSFTP) template | CFT$SET  |
 | 5.B  | If cgenable is set to yes:<br/> • Sets the uconf variables for Central Governance<br/> • Generates the Transfer CFT parameters sample from a template | CFT$SETC  |

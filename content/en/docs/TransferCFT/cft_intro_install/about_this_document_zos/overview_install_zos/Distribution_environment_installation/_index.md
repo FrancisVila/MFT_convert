@@ -33,7 +33,7 @@ Download the installation library from ESD 
 ### Required configuration
 
 - An FTP client that permits the transfer of files to the z/OS host
-- Download the ESD file from {{< TransferCFT/axwayvariablesCompanyName  >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a>
+- Download the ESD file from {{< TransferCFT/axwayvariablesCompanyName  >}} Support at [https://support.axway.com](https://support.axway.com/)
 
 > **Note**
 >

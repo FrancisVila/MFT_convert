@@ -7,12 +7,12 @@
 
 This section describes how to use the SEND command to perform a file transfer. It begins with the simple examples and builds in complexity. However, there are many Transfer CFT parameters that can help you customize your flows, which are described in feature specific topics. Examples in this page are divided into the following umbrella categories:
 
-- <a href="#Use" class="MCXref xref">Use or override default values</a>
-- <a href="#Use2" class="MCXref xref">Use file name parameters</a>
-- <a href="#Use3" class="MCXref xref">Use scheduling features</a>
-- <a href="#Execute" class="MCXref xref">Execute pre and post transfer activities</a>
-- <a href="#Use4" class="MCXref xref">Use visibility features to link an application to a transfer</a>
-- <a href="#Miscella" class="MCXref xref">Miscellaneous send features</a>
+- [Use or override default values](#Use)
+- [Use file name parameters](#Use2)
+- [Use scheduling features](#Use3)
+- [Execute pre and post transfer activities](#Execute)
+- [Use visibility features to link an application to a transfer](#Use4)
+- [Miscellaneous send features](#Miscella)
 
 See also the details on using [symbolic variables](../../c_intro_userinterfaces/command_summary/symbolic_variables).
 
@@ -91,7 +91,7 @@ send part=store1, idf=newmodel, fname=@pub/sourcefiles/list
 >
 > Note: The indirection character means that you are reading the file as if it contains file. Be careful that the file you are using contains a list of files.
 
-For more information, see <a href="send_group_of_files_cl#Sending_files_designated_by_an_indirection_file" class="MCXref xref">Use an indirection file</a>.
+For more information, see [Use an indirection file](send_group_of_files_cl#Sending_files_designated_by_an_indirection_file).
 
 #### Send files that match a mask
 
@@ -185,7 +185,7 @@ send part=store1, idf=newmodel, state=hold
 
 ### Perform a send at a specific time
 
-You can use the mintime and mindate parameters to schedule a transfer for a given date and time. These can be relative or absolute values; for more information see Delayed transfers in <a href="../transfer_command_overview/delayed_transfers" class="MCXref xref">Transfer scheduling</a>.
+You can use the mintime and mindate parameters to schedule a transfer for a given date and time. These can be relative or absolute values; for more information see Delayed transfers in [Transfer scheduling](../transfer_command_overview/delayed_transfers).
 
 ```
 send part=store1, idf=newmodel, mindate= 20150924, mintime=204500
@@ -193,7 +193,7 @@ send part=store1, idf=newmodel, mindate= 20150924, mintime=204500
 
 ### How to define a periodic send
 
-You can use the cycle and tcycle parameters to define a periodic send. See <a href="../transfer_command_overview/cyclic_transfer_requests" class="MCXref xref">Cyclic transfer requests</a>.
+You can use the cycle and tcycle parameters to define a periodic send. See [Cyclic transfer requests](../transfer_command_overview/cyclic_transfer_requests).
 
 ```
 send part=store1, idf=newmodel, cycle=7, tcycle=day

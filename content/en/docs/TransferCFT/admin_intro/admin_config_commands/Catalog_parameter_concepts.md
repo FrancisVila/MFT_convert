@@ -1,7 +1,7 @@
 {
     "title": "Catalog attributes ",
     "linkTitle": "CFTCAT - Catalog attributes ",
-    "weight": "240"
+    "weight": "230"
 }****Related
 topics****
 

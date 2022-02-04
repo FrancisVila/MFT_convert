@@ -76,4 +76,4 @@ Finds all flows in error today.
 
 Click the name of the search to execute it. There are no conditions to specify. The search filters by today's date.
 
-****&lt;&lt;**** <a href="../../" class="bold_in_para MCXref xref xrefbold_in_para"><strong><strong>My first transfer flow</strong></strong></a>
+****&lt;&lt;**** [](../../)

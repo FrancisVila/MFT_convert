@@ -37,7 +37,7 @@ Perform the following steps:
     ```
 1. Install a Transfer CFT 3.2.4 with Central Governance (you must use this command for all iSeries Transfer CFT deployments).
 
-- See the example and options described in the INSTALL section and customize to suit your business needs. Details on <a href="../install_intro_ibmi/perform_auto_installation" class="MCXref xref">Silent installation</a>.
+- See the example and options described in the INSTALL section and customize to suit your business needs. Details on [Silent installation](../install_intro_ibmi/perform_auto_installation).
 
 > **Note**
 >

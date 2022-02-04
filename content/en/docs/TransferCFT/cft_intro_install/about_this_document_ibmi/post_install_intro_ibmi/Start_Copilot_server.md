@@ -7,7 +7,7 @@
 Start the Copilot server
 ------------------------
 
-This section describes how to start the Transfer CFT Copilot server via either a menu or command. For more information on calling menus, see <a href="../#Transfer" class="MCXref xref">Transfer CFT menu usage</a>.
+This section describes how to start the Transfer CFT Copilot server via either a menu or command. For more information on calling menus, see [Transfer CFT menu usage](../#Transfer).
 
 ****Menu****
 

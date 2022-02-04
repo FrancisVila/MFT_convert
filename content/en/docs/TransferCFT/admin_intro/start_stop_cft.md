@@ -9,7 +9,7 @@
 
 You can use Central Governance to stop, start, check status, and restart a Transfer CFT, or alternatively use the administration commands and scripts provided in this section to manage the application.
 
-When opening a new session to manage your {{< TransferCFT/axwayvariablesComponentShortName  >}}, you must first set the environmental parameters. See <a href="#Set" class="MCXref xref">Set the Transfer CFT profile</a>.
+When opening a new session to manage your {{< TransferCFT/axwayvariablesComponentShortName  >}}, you must first set the environmental parameters. See [Set the Transfer CFT profile](#Set).
 
 - [Start {{< TransferCFT/axwayvariablesComponentShortName  >}} server](#Start)
     -   Standard start
@@ -109,7 +109,7 @@ Use the following command to start {{< TransferCFT/axwayvariablesComponentShortN
 cft start
 ```
 
-In Windows only you can also use the Start menu or automatically start the server in Service Mode. See <a href="#Windows2" class="MCXref xref">Windows tasks</a>.
+In Windows only you can also use the Start menu or automatically start the server in Service Mode. See [Windows tasks](#Windows2).
 
 #### Start and suspend interactive mode
 

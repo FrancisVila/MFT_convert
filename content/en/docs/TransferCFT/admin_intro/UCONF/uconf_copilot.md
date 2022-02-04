@@ -1,7 +1,7 @@
 {
     "title": "UCONF: Copilot server",
     "linkTitle": "Transfer CFT UI server",
-    "weight": "290"
+    "weight": "280"
 }****UNIX****
 
 Refer to the [UCONF parameters](../uconf_directory) table for information on `copilot.*.unix `parameters.

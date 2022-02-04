@@ -17,4 +17,4 @@ For these exercises repeat the steps and create 3 applications, MainOffice, Stor
 
 ![](/Images/TransferCFT/create_application_w_cg.png)
 
-****&lt;&lt;**** <a href="../../" class="bold_in_para MCXref xref xrefbold_in_para"><strong><strong>My first transfer flow</strong></strong></a>
+****&lt;&lt;**** [](../../)

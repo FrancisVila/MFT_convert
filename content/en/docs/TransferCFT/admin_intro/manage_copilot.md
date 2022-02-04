@@ -207,7 +207,7 @@ Use these parameter to configure the REST API server. See also [Transfer CFT RES
 | --- | --- | --- | --- |
 | copilot.restapi.enable  | bool  | No  | Enable/disable the REST API service:<br/> • Yes: enable<br/> • No: disable |
 | copilot.restapi.serverport  | int  | 1768  | REST API server port. |
-| copilot.restapi.authentication_method  | string  | system (Windows)<br/> xfbadm (UNIX) | Defines authentication method.<br/> <br/> See also, <a href="../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities#xfbadmusr1">xfbadmusr utilitiy.</a> |
+| copilot.restapi.authentication_method  | string  | system (Windows)<br/> xfbadm (UNIX) | Defines authentication method.<br/> <br/> See also, [xfbadmusr utilitiy.](../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities#xfbadmusr1) |
 | copilot.restapi.nb_workers  | int  | 4  | Number of activated workers that process the REST API requests.  |
 | copilot.restapi.maxclient  | int  | 256  | Number of client connections handled per REST worker.  |
 | copilot.restapi.coms_id  | string  | coms  | The TCPIP CFTCOM object identifier used by the REST API server to communicate with the Transfer CFT server.<br/> Leave empty to use the COM file instead. |
@@ -301,7 +301,7 @@ There are two additional UCONF parameters to use for HTTPS connections:
 | Parameter | Value |
 | --- | --- |
 | copilot.http.onlyssl |  • No: Default value.<br/> • Yes: Restricts access to the Transfer CFT Copilot server to HTTPS secured connections only. |
-| <span id="copilot.ssl.SslCipherSuites"></span>copilot.ssl.SslCipherSuites<br/>  | A comma separated list of cipher suites accepted by the Transfer CFT Copilot server, for example: “47, 10, 9, 2”.<br/> See the <a href="../../transport_security_start_here/manage_cipher_suites#cipher_suites">Supported cipher suites</a> for details. |
+| <span id="copilot.ssl.SslCipherSuites"></span>copilot.ssl.SslCipherSuites<br/>  | A comma separated list of cipher suites accepted by the Transfer CFT Copilot server, for example: “47, 10, 9, 2”.<br/> See the [Supported cipher suites](../../transport_security_start_here/manage_cipher_suites#cipher_suites) for details. |
 
 
 ### Install a certificate on the client side

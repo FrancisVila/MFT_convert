@@ -168,8 +168,8 @@ The FILE  method has some drawbacks that the MOVE method does not, especially r
 
 ****Related topics****
 
-- <a href="../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftfolder" class="MCXref xref">Folder monitoring CFTFOLDER</a>
-- <a href="folder_ibm_i_native" class="MCXref xref">Folder monitoring IBM i native files</a>
-- <a href="folder_monitor_uconf" class="MCXref xref">Deprecated folder monitoring (UCONF)</a>
-- <a href="migrate_uconf_cftfolder" class="MCXref xref">Migrate to CFTFOLDER folder monitoring</a>
-- <a href="folder_customize" class="MCXref xref">Create inclusion and exclusion filters</a>
+- [Folder monitoring CFTFOLDER](../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftfolder)
+- [Folder monitoring IBM i native files](folder_ibm_i_native)
+- [Deprecated folder monitoring (UCONF)](folder_monitor_uconf)
+- [Migrate to CFTFOLDER folder monitoring](migrate_uconf_cftfolder)
+- [Create inclusion and exclusion filters](folder_customize)

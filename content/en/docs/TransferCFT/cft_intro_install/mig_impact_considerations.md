@@ -515,7 +515,7 @@ In {{< TransferCFT/suitevariablesTransferCFTName  >}} 3.1.3 and lower, you can p
 
 In {{< TransferCFT/suitevariablesTransferCFTName  >}} 3.2.2 and higher, the certificate chain must be complete for a transfer to succeed.
 
-For more information, see <a href="../../troubleshoot_intro/admin_troubleshooting_server/troubleshoot_security#Unknown" class="MCXref xref">Unknown CA leads to a failed certificate verification</a>
+For more information, see [Unknown CA leads to a failed certificate verification](../../troubleshoot_intro/admin_troubleshooting_server/troubleshoot_security#Unknown)
 
 PKIPASSW
 

@@ -12,8 +12,8 @@ The following JCLs are contained in the INSTALL library. Execute the JCLs in the
 
 | Step  | JCL  | Description  |
 | --- | --- | --- |
-| 1  | <a href="../t_customize_instance_zos#Modifying_A03PARM">A03PARM</a> | Customize file parameters |
-| 2  | <a href="../installation_parameters_to_customize">A00CUSTO</a> | Customize JOBs installation |
+| 1  | [A03PARM](../t_customize_instance_zos#Modifying_A03PARM) | Customize file parameters |
+| 2  | [A00CUSTO](../installation_parameters_to_customize) | Customize JOBs installation |
 | 3  | A06FILES  | Create and initialize instance files  |
 | 4  | A12OPTS | Select options for Transfer CFT operations<br/> *Optional step* |
 
@@ -24,7 +24,7 @@ After performing Steps 1 -4, you can either continue with the following step-by-
 | Step  | JCL  | Description  |
 | --- | --- | --- |
 | 5  | B20LINK | General LINK-EDIT of Transfer CFT modules. Submit for non-SMP/E installations. |
-| 6  | CFTGNKEY  | Generate an encryption key. See also <a href="../t_customize_instance_zos#Password">Password encryption</a>.  |
+| 6  | CFTGNKEY  | Generate an encryption key. See also [Password encryption](../t_customize_instance_zos#Password).  |
 | 7  | COPA010 |   |
 
 
@@ -33,10 +33,10 @@ After performing Steps 1 -4, you can either continue with the following step-by-
 
 | Step  | JCL  | Description  |
 | --- | --- | --- |
-| 8  | <a href="../zos_auto_install_a05all/t_customize_install_zos#JOB%C2%A0H80EXEC">CFT$SET</a><br/> CFT$SETC  | Select one of the two options available for this step to set the UCONF variables and create Transfer CFT parameters from a template.<br/> • CFT$SET: When not using Central Governance.<br/> • CFT$SETC: When using Central Governance. |
-| 9  | <a href="../zos_auto_install_a05all/t_customize_install_zos#D40INIT">D40INIT</a> | Format the Transfer CFT work files |
-| 10  | <a href="../t_customize_instance_zos">E50PARM</a>  | CFTPARM configuration example  |
-| 11  | <a href="t_configure_navigator_server_zos">COPA020</a> | <a href="t_configure_navigator_server_zos">Configure Transfer CFT Copilot server</a> |
+| 8  | [CFT$SET](../zos_auto_install_a05all/t_customize_install_zos#JOB%C2%A0H80EXEC)<br/> CFT$SETC  | Select one of the two options available for this step to set the UCONF variables and create Transfer CFT parameters from a template.<br/> • CFT$SET: When not using Central Governance.<br/> • CFT$SETC: When using Central Governance. |
+| 9  | [D40INIT](../zos_auto_install_a05all/t_customize_install_zos#D40INIT) | Format the Transfer CFT work files |
+| 10  | [E50PARM](../t_customize_instance_zos)  | CFTPARM configuration example  |
+| 11  | [Configure Transfer CFT Copilot server](t_configure_navigator_server_zos) |
 
 
 ### Optional steps
@@ -45,8 +45,8 @@ After performing Steps 1 -4, you can either continue with the following step-by-
 | Step  | JCL  | Description  |
 | --- | --- | --- |
 | 12  | C32XMEM | Communication server |
-| 13  | <a href="t_configure_optional_features_zos#Create%20a%20Transfer%20CFT%20PKI%20file%C2%A0D43PKI">D43PKI</a><br/> <a href="t_configure_optional_features_zos#Connect%20with%20PassPort%C2%A0D44PASS">D44PASS</a><br/> <a href="t_configure_optional_features_zos">D47SYST</a> | Select one of the options listed for Step 12:<br/> • D43PKI: Create internal datafile for PKI data<br/> • D44PASS: Declare link to PassPort server<br/> • D47SYST: Enable use of system PKI |
-| 14  | <a href="t_install_sentinel_zos">SN05CONF</a> | <a href="t_install_sentinel_zos">Customize Sentinel</a> configuration file |
+| 13  | [D47SYST](t_configure_optional_features_zos#Create%20a%20Transfer%20CFT%20PKI%20file%C2%A0D43PKI) | Select one of the options listed for Step 12:<br/> • D43PKI: Create internal datafile for PKI data<br/> • D44PASS: Declare link to PassPort server<br/> • D47SYST: Enable use of system PKI |
+| 14  | [Customize Sentinel](t_install_sentinel_zos) configuration file |
 | 15  | CFTHEART  | Activate Transfer CFT Heartbeats for Sentinel Dashboards  |
 | 16  | CFTCGREG  | Register {{< TransferCFT/suitevariablesTransferCFTName  >}} with {{< TransferCFT/PrimaryCGorUM  >}}  |
 | 17  | CFTCGPKI  | Used to register {{< TransferCFT/suitevariablesTransferCFTName  >}} with {{< TransferCFT/PrimaryCGorUM  >}}  |

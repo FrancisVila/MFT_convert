@@ -122,6 +122,6 @@ If the sends an **404 not found** reply when connecting to the URL, please check
 
 Check:
 
-- If the server sends an **invalid credential** reply, check that the UCONF `copilot.restapi.authentication_method` and `am.type` parameters are consistent with the **REST API server authentication method** diagram. Please see <a href="../#Authentication_methods" class="MCXref xref">Authentication methods</a>
+- If the server sends an **invalid credential** reply, check that the UCONF `copilot.restapi.authentication_method` and `am.type` parameters are consistent with the **REST API server authentication method** diagram. Please see [Authentication methods](../#Authentication_methods)
 - If the server sends an **insufficient rights** reply, this indicates that access management is enabled (either {{< TransferCFT/PrimaryCGorUM  >}} or internal AM) and that you do not have the CONNECT privilege on the SERVICE:UI resource.
 - If you are using the **predefined filters** and there seem to be missing transfers or messages, it is possible that they are not displaying due to a difference in time between the client and the server. This is because the predefined filters use the client time and not the server time.

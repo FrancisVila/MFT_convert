@@ -1,7 +1,7 @@
 {
     "title": "PURGE  - Purging the catalog",
     "linkTitle": "PURGE - Purge the catalog",
-    "weight": "310"
+    "weight": "300"
 }This topic describes how to delete records which have exceeded the retention
 time in the catalog. Transfer CFT provides the following purge options:
 
@@ -16,7 +16,7 @@ time in the catalog. Transfer CFT provides the following purge options:
 | Command or parameter  | Description  |
 | --- | --- |
 | PURGE  | Use this command to delete records which have exceeded the retention time indicated in the Transfer CFT parameter setting. You can set the purge time to meet your requirements and Transfer CFT activity.  |
-|  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/timep">TIMEP</a> | Purge time selected by the user.<br/> You can deactivate the next purge function by setting TIMEP = 00000000. Use care with this operation due to a risk of catalog overloading with a loss of performance, or overflow.<br/> If the next purge is part of a cycle, see the CFTCAT TIMEP parameter, the entire cycle is deleted, and not just the next occurrence of this cycle. |
+|  [TIMEP](../../../c_intro_userinterfaces/command_summary/parameter_intro/timep) | Purge time selected by the user.<br/> You can deactivate the next purge function by setting TIMEP = 00000000. Use care with this operation due to a risk of catalog overloading with a loss of performance, or overflow.<br/> If the next purge is part of a cycle, see the CFTCAT TIMEP parameter, the entire cycle is deleted, and not just the next occurrence of this cycle. |
 
 
 <span id="Startup"></span>

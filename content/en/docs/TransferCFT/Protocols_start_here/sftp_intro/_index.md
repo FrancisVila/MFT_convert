@@ -8,7 +8,7 @@
 
 - The client begins the TCP handshake with the server, negotiates the secured connection, checks that the server's identity matches previously recorded information, and provides credentials to authenticate.
 
-Please see <a href="sftp_keys_concepts" class="MCXref xref">SSH session concepts</a> for session concepts and SSH object details.
+Please see [SSH session concepts](sftp_keys_concepts) for session concepts and SSH object details.
 
 <span id="Supporte2"></span>
 

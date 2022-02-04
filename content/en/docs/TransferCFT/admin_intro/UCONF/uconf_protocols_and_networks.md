@@ -1,7 +1,7 @@
 {
     "title": "UCONF: IPv6  options",
     "linkTitle": "IPv6  options",
-    "weight": "300"
+    "weight": "290"
 }{{< TransferCFT/axwayvariablesComponentShortName  >}} provides support for both IPV4 and IPV6.
 
 ### Enable IPv6

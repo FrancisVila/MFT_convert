@@ -297,7 +297,7 @@ Please refer to the CFTPARM page for additional parameters and details
 | --- | --- |
 | version | Exit version<br/> The value of this parameter is used to identify the version of the EXIT task supplied. |
 | comment | Local comment<br/> This field can be modified by the user program. Any modifications are taken into account when the catalog is updated (if usraction = UPDATE with or without change of state). |
-| state | State requested on UPDATE (D, H, K, X). See <a href="../#Transfer_state">Transfer states.</a> |
+| state | State requested on UPDATE (D, H, K, X). See [Transfer states.](../#Transfer_state) |
 
 
 <span id="Information_returned_by_the_user"></span>

@@ -1,7 +1,7 @@
 {
     "title": "Force heterogeneous mode for a group of files",
     "linkTitle": "Forcing heterogeneous mode",
-    "weight": "320"
+    "weight": "310"
 }In {{< TransferCFT/axwayvariablesComponentShortName  >}} both homogeneous and heterogeneous mode are enabled by default. However, you may want to ensure that groups of files are transferred using only the heterogeneous mode. The UCONF configuration parameter` cft.server.force_heterogeneous_mode` allows you to do this, effectively disabling homogeneous mode even if the partner is configured for homogeneous exchanges.
 
 For more information on sending groups of files and heterogeneous mode exchanges, see [Sending a group of files](../../../concepts/send_command/send_group_of_files_cl).

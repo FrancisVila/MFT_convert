@@ -116,7 +116,7 @@ If the provided IDF does not belong to either the SAUTH or RAUTH list, on the se
 Add the server key in the PKI database (PKIKEYGEN or PKIKEY)
 ------------------------------------------------------------
 
-You can use either the PKIKEYGEN command or the PKIKEY command to add the server key in the database. For more information, see <a href="../new_pki_keys_use" class="MCXref xref">Generate and manage keys</a>.
+You can use either the PKIKEYGEN command or the PKIKEY command to add the server key in the database. For more information, see [Generate and manage keys](../new_pki_keys_use).
 
 ****Example****
 
@@ -160,7 +160,7 @@ A CFTPART object represents an application, with one SFTP user per application 
 Set the type of authentication
 ------------------------------
 
-Select the appropriate type of authentication to use from the options listed in this section. For more information, please see <a href="../sftp_keys_concepts" class="MCXref xref">SSH session concepts</a>
+Select the appropriate type of authentication to use from the options listed in this section. For more information, please see [SSH session concepts](../sftp_keys_concepts)
 (SFTP).
 
 <span id="Password"></span>

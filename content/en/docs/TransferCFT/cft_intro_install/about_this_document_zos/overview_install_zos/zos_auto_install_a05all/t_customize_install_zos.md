@@ -134,7 +134,7 @@ The target.EXEC library contains an example of Transfer CFT procedures:
 - CRONSHUT: Sample of the JCL that is submitted at Transfer CFT shutdown
 - EXECIDF: End of file reception procedure sample with conditional steps
 - EXECIFD2: The value of the IDF is checked among a list of values ​​by a REXX that sets a return code
-- EXECIDF3: The JCL is conditional and uses the )SEL and )ENDSEL syntax - see <a href="#Syntax" class="MCXref xref">Syntax for )SEL and )ENDSEL</a>
+- EXECIDF3: The JCL is conditional and uses the )SEL and )ENDSEL syntax - see [Syntax for )SEL and )ENDSEL](#Syntax)
 
 These procedures are customized during the A00CUSTO phase.
 

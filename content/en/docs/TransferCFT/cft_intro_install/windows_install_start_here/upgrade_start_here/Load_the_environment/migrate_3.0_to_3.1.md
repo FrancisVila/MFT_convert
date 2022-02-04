@@ -17,7 +17,7 @@ Single node architecture
 
 Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters as follows:
 
-1. Load former Transfer CFT 3.0.1 or 3.1.x environment. See the <a href="../../../../unix_install_start_here/upgrade_start_here/load_the_environment" class="MCXref xref">Migration prerequisites</a> for details.
+1. Load former Transfer CFT 3.0.1 or 3.1.x environment. See the [Migration prerequisites](../../../../unix_install_start_here/upgrade_start_here/load_the_environment) for details.
 1. Export your static configuration objects using the command CFTUTIL CFTEXT. Enter:  
     ```
     CFTUTIL CFTEXT type=all, fout=cft-extract.conf

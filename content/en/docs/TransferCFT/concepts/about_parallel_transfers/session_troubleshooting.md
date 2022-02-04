@@ -4,10 +4,10 @@
     "weight": "250"
 }This section provides transfer examples that demonstrate parameter dependencies and typical log outputs, including errors, which you may encounter when using similar values. The goal is to understand the effect of parameter combinations, and be able to adapt settings to your particular needs.
 
-- <a href="#Example:" class="MCXref xref">Example: cft.server.max_session is less than MAXCNX</a>
-- <a href="#Example:2" class="MCXref xref">Example: cft.server.max_session is greater than MAXCNX</a>
+- [Example: cft.server.max_session is less than MAXCNX](#Example:)
+- [Example: cft.server.max_session is greater than MAXCNX](#Example:2)
 
-See the <a href="../faq" class="MCXref xref">Frequently asked questions</a> for common questions and answers on parameter usage, license keys, and so on.
+See the [Frequently asked questions](../faq) for common questions and answers on parameter usage, license keys, and so on.
 
 Remote (partner) diagnostic codes
 ---------------------------------

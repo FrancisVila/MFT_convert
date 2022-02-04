@@ -1,7 +1,7 @@
 {
     "title": "Housekeeping for  catalog and output files",
     "linkTitle": "Housekeeping for catalog and output files",
-    "weight": "260"
+    "weight": "250"
 }{{< TransferCFT/axwayvariablesComponentShortName  >}} provides a set of services to track activity related to transfers and their status as well as evaluating the system health.
 
 This section describes how to manage the log, catalog, and output files to keep your system running smoothly.
@@ -171,7 +171,7 @@ To apply the dynamic configuration parameters change:
 CFTUTIL reconfig type=UCONF
 ```
 
-For information on the RECONFIG command, please see <a href="../../admin_commands_intro/reconfig" class="MCXref xref">Manage configuration updates - RECONFIG</a>.
+For information on the RECONFIG command, please see [Manage configuration updates - RECONFIG](../../admin_commands_intro/reconfig).
 
 #### Purge per template definitions
 

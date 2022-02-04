@@ -171,4 +171,4 @@ These values are:
 - 4: Trace of the
     data field
 
-<a href="#" class="selected">Back to top</a>
+[Back to top](#)

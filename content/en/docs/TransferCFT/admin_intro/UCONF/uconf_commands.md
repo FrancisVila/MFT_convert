@@ -1,7 +1,7 @@
 {
     "title": " UCONF commands",
     "linkTitle": "UCONF commands",
-    "weight": "240"
+    "weight": "230"
 }You can use the following commands to modify configuration values, check for defaults, or get more information about a parameter. For additional information on the unified configuration, see the section using the [unified configuration utility](../).
 
 **UCONFSET**

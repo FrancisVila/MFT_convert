@@ -84,7 +84,7 @@ Privileges give users authorization to access and perform actions in the user in
 | comment | String80 | Comment |
 | resource | String32 | Resource on which this privilege applies |
 | actions | List of String32 | Actions authorized on the resource (1 to 16 actions) |
-| condition | String256 | Condition to check for authorizing (<a href="#Specifyi">see below</a>) |
+| condition | String256 | Condition to check for authorizing ([see below](#Specifyi)) |
 
 
 Example of CFTPRIV in a configuration file:

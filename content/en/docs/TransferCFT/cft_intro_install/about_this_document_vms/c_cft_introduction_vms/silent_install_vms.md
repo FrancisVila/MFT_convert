@@ -6,4 +6,4 @@
 
 To use silent mode, you must first install {{< TransferCFT/axwayvariablesComponentLongName  >}} and create a template answer file in your `sys$update` directory. You can then use this file to duplicate installations on other machines without repeatedly running the installer and entering the same parameters, as the silent mode takes the parameter values from existing or generated answer files.
 
-For details and instructions, refer to <a href="../vms_deployment#Install" class="MCXref xref">Install and generate a deployment package</a>
+For details and instructions, refer to [Install and generate a deployment package](../vms_deployment#Install)

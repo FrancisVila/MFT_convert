@@ -44,7 +44,7 @@ and switch fields, log files are automatically switched:
 - Depending
     on the number of records in the file
 
-See also <a href="../../../../admin_intro/admin_monitoring_intro/housekeeping_logs" class="MCXref xref">Housekeeping for log files</a>.
+See also [Housekeeping for log files](../../../../admin_intro/admin_monitoring_intro/housekeeping_logs).
 
  
 

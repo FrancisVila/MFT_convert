@@ -58,4 +58,4 @@ Transfer CFT provides a complete set of documentation, covering all aspects of u
 Support services
 ----------------
 
-The {{< TransferCFT/axwayvariablesCompanyName  >}} Global Support team provides worldwide 24 x 7 support, subject to validation of your license agreement. Email <support@axway.com> or, for your local support telephone number, visit {{< TransferCFT/axwayvariablesCompanyName  >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a> and click **Contact Axway Support**.
+The {{< TransferCFT/axwayvariablesCompanyName  >}} Global Support team provides worldwide 24 x 7 support, subject to validation of your license agreement. Email <support@axway.com> or, for your local support telephone number, visit {{< TransferCFT/axwayvariablesCompanyName  >}} Support at [https://support.axway.com](https://support.axway.com/) and click **Contact Axway Support**.

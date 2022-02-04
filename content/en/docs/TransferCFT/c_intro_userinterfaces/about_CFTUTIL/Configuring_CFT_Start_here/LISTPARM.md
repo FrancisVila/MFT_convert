@@ -15,9 +15,9 @@ the execution report is written on the standard CFTUTIL program output.
 
 | Parameters  | Description  |
 | --- | --- |
-| <a href="../../../command_summary/parameter_intro/id">ID</a>  | Identifier of the Transfer CFT command selected using the TYPE parameter.<br/> Used to limit the query to this identifier. |
-| <a href="../../../command_summary/parameter_intro/part">PART</a> <br/> For TYPE = IDF | Partner identifier.<br/> Used to limit the search to the IDFs defined in the CFTIDF objects, relative to this partner. |
-| <a href="../../../command_summary/parameter_intro/type">TYPE</a> | Defines the type of object to be selected.<br/> TYPE can take the predefined values indicated in the <a href="#Type_table">Type table</a>. |
+| [ID](../../../command_summary/parameter_intro/id)  | Identifier of the Transfer CFT command selected using the TYPE parameter.<br/> Used to limit the query to this identifier. |
+| [PART](../../../command_summary/parameter_intro/part) <br/> For TYPE = IDF | Partner identifier.<br/> Used to limit the search to the IDFs defined in the CFTIDF objects, relative to this partner. |
+| [Type table](../../../command_summary/parameter_intro/type). |
 
 
 ****Example****

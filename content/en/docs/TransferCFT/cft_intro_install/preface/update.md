@@ -6,7 +6,7 @@
 
 The procedure consists of installing a service pack over an existing Transfer CFT installation of the same version. The update procedure uses the same format as for an installation.
 
-If you are not familiar with the installation procedure, you may want to first read<a href="../installation" class="MCXref xref">Install Transfer CFT</a>.
+If you are not familiar with the installation procedure, you may want to first read[Install Transfer CFT](../installation).
 
 Procedure
 ---------

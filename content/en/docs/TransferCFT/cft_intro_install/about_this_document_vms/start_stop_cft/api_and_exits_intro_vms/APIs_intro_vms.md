@@ -2,7 +2,7 @@
     "title": "Using Application programming interfaces (API)",
     "linkTitle": "Using APIs",
     "weight": "240"
-}You perform Transfer CFT service calls differently depending on the programming language that you use (C or COBOL). For more information, refer to the programming topics in <a href="../../../../about_this_document_zos/using_apis" class="MCXref xref">About APIs</a>
+}You perform Transfer CFT service calls differently depending on the programming language that you use (C or COBOL). For more information, refer to the programming topics in [About APIs](../../../../about_this_document_zos/using_apis)
 
 The Transfer CFT service called (CFTI, CFTU or CFTC) executes the request, either with or without analyzing command syntax, and then initializes the response zone.
 

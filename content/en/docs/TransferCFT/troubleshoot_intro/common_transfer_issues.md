@@ -66,7 +66,7 @@ Authentication implies having certificates and private keys. In Transfer CFT, th
 - PassPort PKI
 
     The private key is stored in an entity and can be accessed, using the PASSW parameter. This parameter is the password of for the CFTSSL object and allows Transfer CFT to access the private key.  
-    For more information on other common SSL errors, see <a href="../admin_troubleshooting_server/troubleshoot_security" class="MCXref xref">Troubleshoot security errors</a>.
+    For more information on other common SSL errors, see [Troubleshoot security errors](../admin_troubleshooting_server/troubleshoot_security).
 
 Diagi=230 
 ----------

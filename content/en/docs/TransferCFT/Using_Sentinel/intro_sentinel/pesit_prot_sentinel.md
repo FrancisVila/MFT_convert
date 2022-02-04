@@ -4,10 +4,10 @@
     "weight": "220"
 }This section provides information on the following attributes:
 
-- <a href="#Monitori" class="MCXref xref">Monitoring errors</a>
-- <a href="#Monitori2" class="MCXref xref">Monitoring tracked-event messages</a>
-- <a href="#Monitori3" class="MCXref xref">Monitoring processing cycles</a>
-- <a href="#List" class="MCXref xref">List of Sentinel states</a>
+- [Monitoring errors](#Monitori)
+- [Monitoring tracked-event messages](#Monitori2)
+- [Monitoring processing cycles](#Monitori3)
+- [List of Sentinel states](#List)
 
 <span id="Monitori"></span>
 
@@ -35,7 +35,7 @@ Monitoring tracked-event messages
 | ProductName | String | 50 | Name of the product that generated the relevant Tracked-Event. For customer applications this name is defined via the Universal Agent. | uconf: sentinel.trkproductname |
 | ProductIPAddr | String | 20 | Domain Name Server (DNS) of the product/application that generated the relevant Tracked Event. | uconf: sentinel.trkproductipaddr |
 | ProductOS | String. | 20 | Operating system of the application that generated the relevant Tracked Event. | {{< TransferCFT/axwayvariablesComponentShortName  >}} target |
-| State | String | 29 | Status of the relevant Tracked Event. The possible values of this attribute depend on the tracked application/product and file transfer protocol used. See <a href="#List" >List of Sentinel states</a>. | PHASE/PHASESTEP combination |
+| State | String | 29 | Status of the relevant Tracked Event. The possible values of this attribute depend on the tracked application/product and file transfer protocol used. See [List of Sentinel states](#List). | PHASE/PHASESTEP combination |
 
 
 <span id="Monitori3"></span>

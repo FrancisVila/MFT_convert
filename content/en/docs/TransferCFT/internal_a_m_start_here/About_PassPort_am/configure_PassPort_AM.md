@@ -71,7 +71,7 @@ Optional PassPort AM
 
 | Parameter  | Definition  |
 | --- | --- |
-| am.passport.userctrl.check_permissions_on_transfer_execution  | <span id="Check"></span>Check the permissions for the execute action on the transfer resource when the {{< TransferCFT/axwayvariablesComponentShortName  >}} user control is enabled (<a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/userctrl">USERCTRL</a>=YES). To disable the permission check, set the following parameter to No. The default is Yes. |
+| am.passport.userctrl.check_permissions_on_transfer_execution  | <span id="Check"></span>Check the permissions for the execute action on the transfer resource when the {{< TransferCFT/axwayvariablesComponentShortName  >}} user control is enabled ([USERCTRL](../../../c_intro_userinterfaces/command_summary/parameter_intro/userctrl)=YES). To disable the permission check, set the following parameter to No. The default is Yes. |
 | am.passport.domain  | PassPort AM domain.  |
 | am.passport.max_connections  | Maximum number of connections with PassPort.  |
 | am.passport.pipe_priority  | Pipelining priority mode.  |

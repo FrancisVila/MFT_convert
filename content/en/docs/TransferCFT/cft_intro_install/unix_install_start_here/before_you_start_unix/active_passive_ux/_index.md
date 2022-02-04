@@ -10,7 +10,7 @@ Prerequisites
 Transfer CFT in multi-host architecture requires:
 
 - A shared file system
-- You must configure the system prior to the multi-node installation, and the shared disk should be ready when you start the Transfer CFT Copilot server. See <a href="../../../windows_install_start_here/before_you_start_win/n_active_active/shared_file_prereq_win" class="MCXref xref">Shared file system prerequisites</a> for details.
+- You must configure the system prior to the multi-node installation, and the shared disk should be ready when you start the Transfer CFT Copilot server. See [Shared file system prerequisites](../../../windows_install_start_here/before_you_start_win/n_active_active/shared_file_prereq_win) for details.
 
 ### License keys
 
@@ -29,7 +29,7 @@ Additionally, the key must have the cluster option.
 
 ### Download and uncompress
 
-Download and unzip the {{< TransferCFT/suitevariablesTransferCFTName  >}} install package, as described in <a href="../" class="MCXref xref">Install Transfer CFT</a>.
+Download and unzip the {{< TransferCFT/suitevariablesTransferCFTName  >}} install package, as described in [Install Transfer CFT](../).
 
 ### Customize
 

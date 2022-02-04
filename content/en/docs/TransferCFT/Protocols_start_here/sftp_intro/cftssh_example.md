@@ -213,7 +213,7 @@ For Amazon S3 you can optionally add a sub-folder to the `workingdir `to restric
 WORKINGDIR = 's3://cft-test-ci.eu-west-3/pub/share',
 ```
 
-For GCS, see the <a href="../../../app_integration_intro/google_cloud" class="MCXref xref">Google Cloud Storage</a> page for configuration details, and note that the `workingdir `value must start with `gs://` followed by the bucket name, `gs://my-bucket`.
+For GCS, see the [Google Cloud Storage](../../../app_integration_intro/google_cloud) page for configuration details, and note that the `workingdir `value must start with `gs://` followed by the bucket name, `gs://my-bucket`.
 
 ```
 WORKINGDIR = 'gs://cft-test-ci.eu-west-3/pub/share',

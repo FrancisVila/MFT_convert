@@ -4,8 +4,8 @@
     "weight": "240"
 }This section describes two optional Windows-specific tasks that you can perform to enable system user authentication and file system rights, and which are not mutually exclusive.
 
-- <a href="#Enable3" class="MCXref xref">Enable the file user rights (USERCTRL)</a>
-- <a href="#How" class="MCXref xref">How to use system user authentication for the user interfaces</a>
+- [Enable the file user rights (USERCTRL)](#Enable3)
+- [How to use system user authentication for the user interfaces](#How)
 
 You can only use the **user authentication for Copilot** when implementing the deprecated Java based Copilot UI or Web Services. This sort of authentication does not apply to the current Transfer CFT UI or to REST API usage.
 

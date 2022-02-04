@@ -35,9 +35,9 @@ The EXECSUBPRE, EXECSUB and EXECSUBA parameters define the execution policy for 
 
 | Parameter  | Command  | Description  |
 | --- | --- | --- |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/execsubpre">EXECSUBPRE</a>  | CFTSEND, SEND  | Execution policy for the PREEXEC script.  |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/execsub">EXECSUB</a>  | CFTSEND, SEND  | Execution policy for the EXEC and EXECE scripts.  |
-| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/execsuba">EXECSUBA</a>  | CFTSEND, SEND  | Execution policy for the ACKEXEC script to execute at the acknowledgment phase.  |
+| [EXECSUBPRE](../../../c_intro_userinterfaces/command_summary/parameter_intro/execsubpre)  | CFTSEND, SEND  | Execution policy for the PREEXEC script.  |
+| [EXECSUB](../../../c_intro_userinterfaces/command_summary/parameter_intro/execsub)  | CFTSEND, SEND  | Execution policy for the EXEC and EXECE scripts.  |
+| [EXECSUBA](../../../c_intro_userinterfaces/command_summary/parameter_intro/execsuba)  | CFTSEND, SEND  | Execution policy for the ACKEXEC script to execute at the acknowledgment phase.  |
 
 
 These parameters can have the values:

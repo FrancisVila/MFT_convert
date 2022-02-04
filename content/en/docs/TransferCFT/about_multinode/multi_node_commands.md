@@ -328,7 +328,7 @@ The cft add_host command adds a new host entry in the configuration. You must sp
 
 Please refer to the OS-appropriate installation guide  for installation program details.
 
-For specifics on adding a host on z/OS platforms, please see <a href="../../cft_intro_install/about_this_document_zos/c_multinode_zos/t_vipa_multinode_zos" class="MCXref xref">Customize the VIPA and execute commands</a>, and for details on adding a host in OpenVMS please see <a href="../../cft_intro_install/about_this_document_vms/start_stop_cft/t_working_in_multinode" class="MCXref xref">Working in a multi-node environment</a><a href="" class="MCXref xref">Managing multi-node</a>
+For specifics on adding a host on z/OS platforms, please see [Managing multi-node](../../cft_intro_install/about_this_document_zos/c_multinode_zos/t_vipa_multinode_zos)
 
 > **Note**
 >

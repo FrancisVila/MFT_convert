@@ -32,7 +32,7 @@ Use the CFTXLATE object to define translation tables between 2 alphabets. A defi
     code type (NCODE: ASCII or EBCDIC)
 - Translation table file name (FNAME)
 
-See <a href="translation_table_concepts" class="MCXref xref">Define translation tables</a> for step instructions.
+See [Define translation tables](translation_table_concepts) for step instructions.
 
 Using extended character sets
 -----------------------------
@@ -51,4 +51,4 @@ parameter defines the remote and network data encoding. These parameters, FCHARS
 - CFTPART
 - CFTPROT
 
-See <a href="use_extended_character_sets" class="MCXref xref">Using extended character sets</a> for step instructions.
+See [Using extended character sets](use_extended_character_sets) for step instructions.

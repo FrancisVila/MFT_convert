@@ -16,7 +16,7 @@ To customize the hosts in your setup and submit the customization, perform the t
 
 | Step  | Task  |
 | --- | --- |
-| 1  | If you have not done so, customize <a href="">MNINIT</a>.  |
+| 1  | If you have not done so, customize [MNINIT]().  |
 | 2  | Customize the UPARM(TC*) members.<br/> The example (below) demonstrates how to customize LPAR1 and LPAR2. If you have additional machines in your configuration, repeat this step for each host machine. For a single host installation, you only customize UPARM(TCPSHAP1). |
 | 3  | Perform a Transfer CFT configuration check:<br/> • Verify that the CFTNET object host parameter corresponds with what you defined for the VIPA.<br/> • Verify that the CFTNET command SRCPORT parameter is set to 1. |
 | 4  | Submit the MNINIT. The Transfer CFT is now configured for multi-node.  |

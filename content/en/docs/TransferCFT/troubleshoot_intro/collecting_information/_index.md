@@ -24,7 +24,7 @@ correct using the diagnostic information provided there, see
 As you go through the questions in **Performing checks**, note your responses. If you need to submit
 a Support request this information can help you to save time.
 
-<a href="#Finding_OS_specific_relevant_information" class="MCXref xref">Documentation</a> lists related documentation that you may want to consult.
+[Documentation](#Finding_OS_specific_relevant_information) lists related documentation that you may want to consult.
 
 Performing checks
 -----------------

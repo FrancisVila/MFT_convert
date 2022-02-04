@@ -14,7 +14,7 @@ There are two types of installation:
 
 - Upgrade: This installation procedure renames the previous {{< TransferCFT/axwayvariablesComponentShortName  >}} subdirectories and generates a new standard installation directory structure.
 
-See the <a href="../../preinstallation#Product" class="MCXref xref">Product license key</a> section for information on the license key and the end user license.
+See the [Product license key](../../preinstallation#Product) section for information on the license key and the end user license.
 
 Pre-installation
 ----------------

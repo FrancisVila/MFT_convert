@@ -1,7 +1,7 @@
 {
     "title": "UCONF: Configuration scheduling",
     "linkTitle": "Configuration scheduling",
-    "weight": "330"
+    "weight": "320"
 }In {{< TransferCFT/axwayvariablesComponentShortName  >}} you can define daily periods where dynamic configuration variables can be changed. For example, you might want to schedule that the value for cft.purge.sx can be modified during the period between 15:30 and 19:30.
 
 ****Steps overview****
@@ -14,7 +14,7 @@
 | Parameters  | Description  |
 | --- | --- |
 | cft.scheduled_values  | List of scheduled aliases. Use a space to separate alias names.  |
-| cft.scheduled_values.(alias-id).start_time  | Start time using the format MM:HH:DAYS_OF_THE_WEEK. This is the begin time for when a value switches from its existing value to the temporary value. See <a href="#Details,%20days">Details</a> below.  |
+| cft.scheduled_values.(alias-id).start_time  | Start time using the format MM:HH:DAYS_OF_THE_WEEK. This is the begin time for when a value switches from its existing value to the temporary value. See [Details](#Details,%20days) below.  |
 | cft.scheduled_values.(alias-id).delay  | Delay using the format MM:HH.<br/> This is the length of time during which the value can be changed. |
 | cft.scheduled_values.(alias-id).id  | The configuration entity id (uconf parameter) that you want to provide scheduling for.  |
 | cft.scheduled_values.(alias-id).value  | Temporary value. This value replaces the existing configuration value for the defined uconf parameter.<br/> To find the existing value, in command line enter:<br/> <code>CFTUTIL uconfget id=&lt;uconf_parameter&gt;</code> |

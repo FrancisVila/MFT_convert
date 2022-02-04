@@ -1,7 +1,7 @@
 {
     "title": "Tracking configuration changes",
     "linkTitle": "Tracking Transfer CFT configuration changes",
-    "weight": "280"
+    "weight": "270"
 }The configuration auditing feature enables Transfer CFT to track configuration changes and send this information to the Sentinel
 server. The configuration change can be:
 

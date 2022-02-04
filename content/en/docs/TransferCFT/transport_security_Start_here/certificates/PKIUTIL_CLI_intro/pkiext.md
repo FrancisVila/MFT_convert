@@ -19,7 +19,7 @@ You can use a mix of the ID and TYPE parameters to create extraction filters. 
 | FOUT | Name of the file where the command’s standard output is redirected.<br/> This generated file can then be interpreted directly by PKIUTIL.<br/> If this parameter is not defined, the standard output is displayed. |
 | [ INUM = {number0...99} ]  | Internal number for the intermediate certificates in an imported chain of certificates (in the PKI database). You can use this option to select a specific intermediate certificate.  |
 | PASSWORD  | The password length must be between 4 and 64 characters.<br/> • When using a password, PKIEXT exports a certificate/key pair in PKCS#12 format instead of DER (certificate) and KPRIV (key). &lt;/li&gt;<br/> • When using a password, PKIEXT exports a key in PKCS#8 format instead of KPRIV. &lt;/li&gt; |
-| ROOTCID  | The certificate authority ID. See an example usage in <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/rootcid">ROOTCID</a>.  |
+| ROOTCID  | The certificate authority ID. See an example usage in [ROOTCID](../../../../c_intro_userinterfaces/command_summary/parameter_intro/rootcid).  |
 | TYPE  | This parameter defines the certificate or key type to be extracted.<br/> Possible values:<br/> • ALL: extracts ROOT, INTER, and USER in PKICER, PKIKEY, and PKIENTITY<br/> • USER<br/> • ROOT<br/> • INTER<br/> • ENTITY<br/> • KEY<br/> • CERT: extracts ROOT, INTER, and USER in PKICER |
 
 

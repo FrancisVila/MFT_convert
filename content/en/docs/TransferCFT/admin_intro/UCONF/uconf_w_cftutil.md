@@ -1,7 +1,7 @@
 {
     "title": "Setting unified configuration  values",
     "linkTitle": "Modifying UCONF fields with CFTUTIL",
-    "weight": "260"
+    "weight": "250"
 }From a command line window, you can use the CFTUTIL utility to view
 and modify UCONF parameters. To view the contents and types of variables, you can create a list.
 Enter the command:

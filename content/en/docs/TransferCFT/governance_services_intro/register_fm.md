@@ -31,7 +31,7 @@ Manually activate connectivity
 
 This section describes the steps to register your {{< TransferCFT/axwayvariablesComponentLongName  >}} with {{< TransferCFT/suitevariablesFlowManager  >}}. The procedure is the same for either an on-premise or SaaS {{< TransferCFT/suitevariablesFlowManager  >}}, with the exception of the two steps described in [Define the {{< TransferCFT/suitevariablesFlowManager  >}} Agent](#Define).
 
-All commands in this section are performed using CFTUTIL unless stated otherwise. For details on the UCONF parameters referenced in this section, please see <a href="" class="MCXref xref">UCONF: Central Governance options</a>.
+All commands in this section are performed using CFTUTIL unless stated otherwise. For details on the UCONF parameters referenced in this section, please see [UCONF: Central Governance options]().
 
 #### Define UCONF parameters used for {{< TransferCFT/axwayvariablesComponentLongName  >}} instance identification
 
@@ -172,7 +172,7 @@ Use the CFTUTIL CHECK command to validate the coherence of parameters, partners,
 CHECK CONTENT=BRIEF&#124;FULL, FOUT=FileName
 ```
 
-Check the list in the output for errors and correct all errors before attempting registration. See also, <a href="../../c_intro_userinterfaces/about_cftutil/check_command" class="MCXref xref">Use the check command</a>.
+Check the list in the output for errors and correct all errors before attempting registration. See also, [Use the check command](../../c_intro_userinterfaces/about_cftutil/check_command).
 
 Register or re-register
 -----------------------

@@ -9,8 +9,8 @@
 
 Otherwise you can go to:
 
-- <a href="#Start" class="MCXref xref">Start the Transfer CFT Copilot server</a>
-- <a href="#Start2" class="MCXref xref">Start Transfer CFT</a>
+- [Start the Transfer CFT Copilot server](#Start)
+- [Start Transfer CFT](#Start2)
 
 For information on user rights, refer to the topic [Defining user rights UNIX](../../../unix_install_start_here/run_first_time_ux/run_first_time_ux/user_rights_and_interface_unix).
 
@@ -141,7 +141,7 @@ This option is only available on Windows systems and must be selected during the
 Start the Transfer CFT Copilot server
 -------------------------------------
 
-If you have implemented {{< TransferCFT/PrimaryCGorUM  >}}, starting Copilot launches the registration process. For more information, see the topic <a href="../../../../governance_services_intro/cg_register_overview" class="MCXref xref">Registration overview</a>.
+If you have implemented {{< TransferCFT/PrimaryCGorUM  >}}, starting Copilot launches the registration process. For more information, see the topic [Registration overview](../../../../governance_services_intro/cg_register_overview).
 
 ******Windows******
 

@@ -28,17 +28,17 @@ Available actions to include in the Transfers page include:
 | --- | --- | --- |
 | New  | Create a transfer request | Create a new transfer request  |
 | Clone  | No equivalent parameter  | Copy an existing transfer request  |
-| Restart  | <a href="../../../about_cftutil/managing_transfer_states/start_command">Restarting transfers</a> | Restart transfers in the H or K state in the catalog |
-| Delete  | <a href="../../../../admin_intro/admin_commands_intro/delete_command">Deleting catalog entries</a> | Delete one or more catalog entries |
-|   | <a href="../../../about_cftutil/managing_transfer_states/keep_command">Suspending transfers</a> | Suspend one or all of the send and/or receive transfers with selected partners |
-|   | <a href="../../../about_cftutil/managing_transfer_states/submit_command">Submitting an end-of-tranfser</a> | Submit an end-of-transfer procedure for each selected transfer |
-| Halt  | <a href="../../../about_cftutil/managing_transfer_states/halt_command">Halting a transfer</a> | Suspend one or all the send and/or receive transfers, with the partners selected |
-| End  | <a href="../../../about_cftutil/managing_transfer_states/end_command">Declaring executed transfers</a> | Declare that all the operations related to the end-of-transfer, send and receive, have been executed correctly |
-|   | <a href="../../../about_cftutil/managing_transfer_states/resume_command">Retrieving a blocked request</a> | Retrieves, in server mode, a blocked send request that has the *hold* status, if the diagnostic codes are not null |
-|   | <a href="../../../about_cftutil/managing_transfer_states/kstate_command">Suspending a catalog request</a> | Suspend a transfer in the catalog |
-|   | <a href="../../../about_cftutil/managing_transfer_states/clearcmd_command">Deleting a transfer request</a> | Delete a transfer request from the communication file |
-| Ack  | <a href="../../../../concepts/send_command/send_replies" >Use the SEND acknowledgement commands</a>  | Send a transfer acknowledgement  |
-| Nack  | <a href="../../../../concepts/send_command/transfers_neg_ack_pesit" >Sending a negative acknowledgement</a>  | Send a notification indicating an error occurred  |
+| Restart  | [Restarting transfers](../../../about_cftutil/managing_transfer_states/start_command) | Restart transfers in the H or K state in the catalog |
+| Delete  | [Deleting catalog entries](../../../../admin_intro/admin_commands_intro/delete_command) | Delete one or more catalog entries |
+|   | [Suspending transfers](../../../about_cftutil/managing_transfer_states/keep_command) | Suspend one or all of the send and/or receive transfers with selected partners |
+|   | [Submitting an end-of-tranfser](../../../about_cftutil/managing_transfer_states/submit_command) | Submit an end-of-transfer procedure for each selected transfer |
+| Halt  | [Halting a transfer](../../../about_cftutil/managing_transfer_states/halt_command) | Suspend one or all the send and/or receive transfers, with the partners selected |
+| End  | [Declaring executed transfers](../../../about_cftutil/managing_transfer_states/end_command) | Declare that all the operations related to the end-of-transfer, send and receive, have been executed correctly |
+|   | [Retrieving a blocked request](../../../about_cftutil/managing_transfer_states/resume_command) | Retrieves, in server mode, a blocked send request that has the *hold* status, if the diagnostic codes are not null |
+|   | [Suspending a catalog request](../../../about_cftutil/managing_transfer_states/kstate_command) | Suspend a transfer in the catalog |
+|   | [Deleting a transfer request](../../../about_cftutil/managing_transfer_states/clearcmd_command) | Delete a transfer request from the communication file |
+| Ack  | [Use the SEND acknowledgement commands](../../../../concepts/send_command/send_replies)  | Send a transfer acknowledgement  |
+| Nack  | [Sending a negative acknowledgement](../../../../concepts/send_command/transfers_neg_ack_pesit)  | Send a notification indicating an error occurred  |
 
 
 Create transfer requests filters

@@ -25,7 +25,7 @@ During an upgrade, if the CFTCOM file path is greater than 64 characters the COM
 Procedure
 ---------
 
-For details on shared disks, node commands, and other multi-node considerations, refer to the *Transfer CFT {{< TransferCFT/axwayvariablesReleaseNumber  >}} User Guide &gt; Manage multi-node architecture*. For more information on Upgrading Transfer CFT, see <a href="../upgrade_intro_win" class="MCXref xref">Upgrade Transfer CFT</a>for Windows.
+For details on shared disks, node commands, and other multi-node considerations, refer to the *Transfer CFT {{< TransferCFT/axwayvariablesReleaseNumber  >}} User Guide &gt; Manage multi-node architecture*. For more information on Upgrading Transfer CFT, see [Upgrade Transfer CFT](../upgrade_intro_win)for Windows.
 
 ### Upgrade all hosts
 

@@ -27,7 +27,7 @@ contact your Axway sales representative.
 About the WSDL file
 -------------------
 
-To use Web services with Transfer CFT, you need a <a href="" class="MCTextPopup popup popupHead">WSDL Web Services Description Language</a> file. Your installed Transfer CFT product comes with a WSDL file that describes the operations, operation attributes, requests and response structure. You can access the WSDL file from your local installation at:
+To use Web services with Transfer CFT, you need a [WSDL Web Services Description Language]() file. Your installed Transfer CFT product comes with a WSDL file that describes the operations, operation attributes, requests and response structure. You can access the WSDL file from your local installation at:
 
 - On UNIX/Windows: &lt;cft_installation_directory&gt;/distrib/copilot/wsdl/copilotcft.wsdl
 - On z/OS: &lt;copilot. http.httprootdir&gt;/wsdl/copilotcft.wsdl

@@ -7,7 +7,7 @@
 Replace habilitation
 --------------------
 
-Use the` ..INSTALL library (H81$AMEX)` JCL to activate the new security method. See <a href="../../t_start_servers_jobs_zos/post_certificates/install_security_zos/implement_security_zos" class="MCXref xref">Implement security</a> for more information on security.
+Use the` ..INSTALL library (H81$AMEX)` JCL to activate the new security method. See [Implement security](../../t_start_servers_jobs_zos/post_certificates/install_security_zos/implement_security_zos) for more information on security.
 
 ### Configuration file
 

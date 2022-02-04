@@ -19,7 +19,7 @@ Use to display catalog transfers that happened on or after this start date and t
 - Relative values are: -1, -1M, -1H, -1D
 - Absolute values are: YYYYMMDDhhmmss with a maximum of 14 characters
 
-You can use this parameter in combination with <a href="../datetimemax" class="MCXref xref">datetimemax</a>.
+You can use this parameter in combination with [datetimemax](../datetimemax).
 
 ****Relative example****
 

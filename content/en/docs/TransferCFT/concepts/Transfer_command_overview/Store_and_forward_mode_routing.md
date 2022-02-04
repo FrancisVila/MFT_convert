@@ -80,7 +80,7 @@ the {{< TransferCFT/axwayvariablesComponentShortName  >}} on the store and forwa
 | --- | --- | --- |
 | YES  | Yes, immediately  | The a file is immediately sent to the intended partner. Default value.  |
 | NO  | No, no file forwarding  | The file transfer is refused because the partner is not able to perform the store and forward.  |
-| SERVER  | Yes, after processing  | Sending the file occurs at the initiative of the store and forward site. This mode is also known as <a href="#VAN_server_Store_and_forward_processing">Store and forward with a VAN server</a>.  |
+| SERVER  | Yes, after processing  | Sending the file occurs at the initiative of the store and forward site. This mode is also known as [Store and forward with a VAN server](#VAN_server_Store_and_forward_processing).  |
 | PART  | Yes, immediately  | This forced store and forward occurs in server mode. If the recipient that is defined in the IPART parameter is not the final recipient, the received file is immediately sent on to the target partner.  |
 
 

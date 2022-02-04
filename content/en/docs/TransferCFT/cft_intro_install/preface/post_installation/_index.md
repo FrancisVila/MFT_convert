@@ -90,4 +90,4 @@ http://MyHostName:1766
 
 If you have activated the Central Governance connectivity, you can [Verify the Transfer CFT registration with Central Governance](../../unix_install_start_here/run_first_time_ux/shared_verify_install#Verify).
 
-Transfer CFT HP NonStop provides a start-process supervisor (CFTSUP) that can restart the Transfer CFT server or UI server in the case of an unexpected product stop. For more information, see <a href="hp_ns_sup" class="MCXref xref">Use the NonStop mode</a>.
+Transfer CFT HP NonStop provides a start-process supervisor (CFTSUP) that can restart the Transfer CFT server or UI server in the case of an unexpected product stop. For more information, see [Use the NonStop mode](hp_ns_sup).

@@ -50,8 +50,8 @@ Deprecated parameters are gray and noted as (deprecated).
 
 | Internal AM parameters  | Default  | Description  |
 | --- | --- | --- |
-| am.internal.group_database  | file (z/OS)<br/> system (all other platforms) | Group database where group members are defined.<br/> • system (UNIX, Windows, and IBM i): the groups are defined in the OS group database (Unix, Windows, IBM i - see <a href="../../cft_intro_install/about_this_document_ibmi/install_intro_ibmi/access-managment_ibmi">security base</a>, and OpenVMS)<br/> • system (z/OS only): the service 'IRRSEQ00' is used to recall the user's groups from RACF, for example: • USER001 ADMIN OPERATOR PARTNER DESIGNER TRANSFER<br/><br/> • USER002 DESIGNER<br/><br/> <br/> • safClass (z/OS only): the resources are defined in the SAF (System Authorization Facility) where Transfer CFT maps the groups to resources - see the *<a href="../../cft_intro_install/about_this_document_zos">*Transfer CFT z/OS Installation and Operation Guide*</a>* for details<br/><br/> • file (z/OS, and OpenVMS): a variable file containing a users list and a groups list<br/> • xfbadm (UNIX, HP NonStop): the groups are defined in the xfbadm database - see <a href="" >Transfer CFT control utilities</a> |
-| am.internal.group_database.fname  |   | If you set<code> am.internal.group_database=file</code>, you must define this file name, which is a variable file containing the groups associated with each user.<br/> For example:<br/> • USER001 group01 group02 group04<br/> • USER002 group04 group05<br/> Where the groups are mapped as shown in the example <a href="#Mapping">mapping</a> table below. |
+| am.internal.group_database  | file (z/OS)<br/> system (all other platforms) | Group database where group members are defined.<br/> • system (UNIX, Windows, and IBM i): the groups are defined in the OS group database (Unix, Windows, IBM i - see [Transfer CFT control utilities](../../cft_intro_install/about_this_document_ibmi/install_intro_ibmi/access-managment_ibmi) |
+| am.internal.group_database.fname  |   | If you set<code> am.internal.group_database=file</code>, you must define this file name, which is a variable file containing the groups associated with each user.<br/> For example:<br/> • USER001 group01 group02 group04<br/> • USER002 group04 group05<br/> Where the groups are mapped as shown in the example [mapping](#Mapping) table below. |
 | am.internal.persistence_timeout  | 300  | Delay in seconds between updating the list of group that a user belongs to. |
 | am.internal.role.admin <sup>(deprecated)</sup>  |   | Admin role and groups mapping. This role enables you to perform all administrative tasks. List of groups (blank separator) |
 | am.internal.role.helpdesk <sup>(deprecated)</sup>  |   | Help Desk role and groups mapping. This role enables you to view the log, transfers and configuration. List of groups (blank separator) |
@@ -171,7 +171,7 @@ Here, the new HELPDESK and APPLICATION roles override the predefined HELPDESK an
 Internal access management use cases
 ------------------------------------
 
-This section describes three configuration scenarios when using <a href="#" class="selected">internal access management</a> with roles and privileges. Use cases include:
+This section describes three configuration scenarios when using [internal access management](#) with roles and privileges. Use cases include:
 
 - Predefined roles and privileges without the CFTPRIV and CFTROLE objects
 - Customized roles and privileges with the CFTPRIV and CFTROLE objects

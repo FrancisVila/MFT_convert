@@ -105,7 +105,7 @@ Description
 The default working directory for the TACL and NETBATCH scripts.
 
 The parameter is set with the default value of “`<``subvolume``>UD`”
-(see <a href="#Guardian" class="MCXref xref">Guardian files</a>) during the Guardian
+(see [Guardian files](#Guardian)) during the Guardian
 files installation.
 
 <span id="cft.guardian.process_name_prefix"></span>cft.guardian.process_name_prefix

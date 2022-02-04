@@ -25,7 +25,7 @@ if possible:
 
 - Product version
 - Operating system
-- cft_support (see <a href="#" class="selected">Support tools</a>)
+- cft_support (see [Support tools](#))
 
 To submit a Support request, you can do the following:
 
@@ -119,4 +119,4 @@ information, and retrieve previously saved Transfer CFT information.
 
 You may need to initiate tracing in order to assist Transfer CFT Support
 service if an error occurs. The Transfer CFT Support service can analyze
-the traces to better help you resolve the issue. See <a href="../../../../troubleshoot_intro/atm_traces" class="MCXref xref">How to use ATM traces</a>
+the traces to better help you resolve the issue. See [How to use ATM traces](../../../../troubleshoot_intro/atm_traces)

@@ -25,7 +25,7 @@ All messages have the following tokens:
 | ZSPI-TKN-SSID  | The Transfer CFT subsystem ID, whose value is XCF2_VAL_EXTERNAL_SSID. This token is described in the SPI Programming Manual. |
 | ZEMS-TKN-EVENTNUMBER  | The event number, as described in the EMS Manual. Its value is one of the values described in the table below. |
 | XCF2_TKN_SUBJ  | The message subject for which the values are described in the Event messages table below. |
-| XCF2_TKN_MSG  | The message text.<br/> For details about Transfer CFT LOG messages, see the {{< TransferCFT/axwayvariablesComponentLongName  >}} {{< TransferCFT/axwayvariablesReleaseNumber  >}} <a href="https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/Troubleshooting/Messages_and_Codes/Messages_and_error_codes_Start_here_1.htm">Messages and error codes</a> documentation.<br/> The accounting messages are binary coded data, and are described in the exacct.h header. |
+| XCF2_TKN_MSG  | The message text.<br/> For details about Transfer CFT LOG messages, see the {{< TransferCFT/axwayvariablesComponentLongName  >}} {{< TransferCFT/axwayvariablesReleaseNumber  >}} [Messages and error codes](https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/Troubleshooting/Messages_and_Codes/Messages_and_error_codes_Start_here_1.htm) documentation.<br/> The accounting messages are binary coded data, and are described in the exacct.h header. |
 | ZEMS_TKN_EMPHASIS  | If the value is ZSPI-VAL-TRUE, the event being reported is considered critical. This is the case for ERROR and FATAL log events as well as process errors when using the NonStop mode.  |
 
 

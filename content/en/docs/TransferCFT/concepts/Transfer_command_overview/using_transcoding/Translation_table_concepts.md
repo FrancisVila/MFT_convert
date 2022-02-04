@@ -81,7 +81,7 @@ CA8F1BB93C3DE19D90BBB3DAFAEA3E41
 Transfer CFT is delivered with a platform specific tool to help you create an XLATE table.
 
 - Mainframes - A JCL is provided to help with creating both local and remote tables. Refer to the CFTXLATE member in the installation library.
-- UNIX/Windows - Use the Axway delivered <a href="" class="MCTextPopup popup popupHead">xvi utility Use this utility to update a conversion table.</a> located in the `home/bin` folder.
+- UNIX/Windows - Use the Axway delivered [xvi utility Use this utility to update a conversion table.]() located in the `home/bin` folder.
 
     xvi syntax
 

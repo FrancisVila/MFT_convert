@@ -38,7 +38,7 @@ QQQ_QQQ_CHECK maybe convert this to text? the cell in 3x2 will be big
 | Configuration filename  | Enter the path, or navigate, to the configuration file (initialize.properties file) containing details for the Transfer CFT installation. This file defines settings such as hostname, license key, governance options, and so on.<br/> If you do not specify a file, you can continue with the installation, but the installation procedure does not create the runtime directory. (Run the <code>initialize </code>command post installation if you opt to create the runtime directory at a later date.) |
 | Generate Encryption Key  | Enter your password and reenter it to confirm. |
 | Ready to install | Click ****Next**** to complete the installation process, or ****Back**** to review or modify installation options. |
-|   | If you plan to integrate Transfer CFT with {{< TransferCFT/PrimaryCGorUM  >}} and also plan to use Service mode, please refer to the additional instructions in <a href="../../windows_install_start_here/post_install_transfercft#Service">Service mode set up when using Central Governance</a>.  |
+|   | If you plan to integrate Transfer CFT with {{< TransferCFT/PrimaryCGorUM  >}} and also plan to use Service mode, please refer to the additional instructions in [Service mode set up when using Central Governance](../../windows_install_start_here/post_install_transfercft#Service).  |
 | Transfer CFT Server Service  | Enter the Service Mode parameters for Transfer CFT.  |
 | Transfer CFT UI Server Service  | Enter the Service Mode parameters for the {{< TransferCFT/suitevariablesTransferCFTName  >}} UI.  |
 

@@ -16,11 +16,11 @@ This table presents a high-level overview of the installation process. By defaul
 
 |   | Step  | Details  | More info  |
 | --- | --- | --- | --- |
-| 1  | Complete prerequisites  | Check and fulfill prerequisites such as obtaining a key or system-specific prerequisites.  | <a href="prereqs_overview" >Prerequisites</a>  |
+| 1  | Complete prerequisites  | Check and fulfill prerequisites such as obtaining a key or system-specific prerequisites.  | [Prerequisites](prereqs_overview)  |
 | 2  | Download and unzip  | Download the installation package from the support site and unzip.  | Download the installation package  |
-| 3  | Customize the properties file  | Some installation parameters are mandatory to run Transfer CFT.<br/> You can customize the <code>initialize.properties</code> file before the install, use your own file, or use the unmodified default file, but you cannot start Transfer CFT until the mandatory values are set. | <a href="new_install_ux#top" >Customize the initialize.properties file</a><a href="../../windows_install_start_here/before_you_start_win/properties_file_win"></a>  |
-|   | Run chmod  | Make the file executable.  | <a href="install_transfer_cft_1#Make" >Make the file executable</a>  |
-| 4  | Start the installation  | Select the installation mode and run using either the default configuration file or your customized file.  | <a href="install_transfer_cft_1" >Start the installation</a>  |
+| 3  | Customize the properties file  | Some installation parameters are mandatory to run Transfer CFT.<br/> You can customize the <code>initialize.properties</code> file before the install, use your own file, or use the unmodified default file, but you cannot start Transfer CFT until the mandatory values are set. | [](new_install_ux#top)  |
+|   | Run chmod  | Make the file executable.  | [Make the file executable](install_transfer_cft_1#Make)  |
+| 4  | Start the installation  | Select the installation mode and run using either the default configuration file or your customized file.  | [Start the installation](install_transfer_cft_1)  |
 | *  | Optional customization  | If you used the default configuration file, you must customize the Transfer CFT settings before starting the product.  |   |
 
 
@@ -55,7 +55,7 @@ Before running the InstallBuilder, ensure that the` /tmp `directory and the user
 
 ### Installation configuration file
 
-The {{< TransferCFT/axwayvariablesComponentLongName  >}} installation is based on a delivered configuration file called `initialize.properties` that provides as series of default values to simplify installation. As described in <a href="new_install_ux" class="MCXref xref">Customize the initialize.properties file</a>, you can make a copy of this file and customize it prior to running the installation procedure.
+The {{< TransferCFT/axwayvariablesComponentLongName  >}} installation is based on a delivered configuration file called `initialize.properties` that provides as series of default values to simplify installation. As described in [Customize the initialize.properties file](new_install_ux), you can make a copy of this file and customize it prior to running the installation procedure.
 
 ### Installation modes
 

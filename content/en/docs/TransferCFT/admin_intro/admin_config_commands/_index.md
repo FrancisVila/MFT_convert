@@ -1,19 +1,19 @@
 {
     "title": "Administrative configuration commands",
     "linkTitle": "Manage the configuration",
-    "weight": "210"
+    "weight": "200"
 }The topics in this section describe how to use command line operations to administer Transfer CFT configuration options, and is comprised of the following:
 
 
 | Command  | Description  |
 | --- | --- |
-| <a href="cftaccnt_concepts">CFTACCNT</a>  | Recording mode for statistical data  |
-| <a href="catalog_parameter_concepts">CFTCAT</a>  | Catalog attributes  |
-| <a href="communication_media_concepts">CFTCOM</a>  | Communication media  |
-| <a href="../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftlog">CFTLOG</a>  | Transfer log files  |
-| <a href="network_resource_concepts">CFTNET</a>  | Network resources  |
-| <a href="cftparm_general_parameters">CFTPARM</a>  | General parameters definition  |
-| <a href="transfer_protocol_concepts">CFTPROT</a>  | Transfer protocol  |
+| [CFTACCNT](cftaccnt_concepts)  | Recording mode for statistical data  |
+| [CFTCAT](catalog_parameter_concepts)  | Catalog attributes  |
+| [CFTCOM](communication_media_concepts)  | Communication media  |
+| [CFTLOG](../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftlog)  | Transfer log files  |
+| [CFTNET](network_resource_concepts)  | Network resources  |
+| [CFTPARM](cftparm_general_parameters)  | General parameters definition  |
+| [CFTPROT](transfer_protocol_concepts)  | Transfer protocol  |
 
 
 What is a service file medium

@@ -1,7 +1,7 @@
 {
     "title": "Manage monitoring ",
     "linkTitle": "Manage monitoring",
-    "weight": "240"
+    "weight": "230"
 }This section provides information and recommendations for administrative monitoring activities in {{< TransferCFT/axwayvariablesComponentShortName  >}} and includes:
 
 - [Housekeeping for log files](housekeeping_logs)

@@ -8,7 +8,7 @@
 - For node 01: cftlog01.1, cftlog01.2, cftlog01.3...
 - For node 02: cftlog02.1, cftlog02.2, cftlog02.3...
 
-See also [CFTLOG](../../../web_copilot_ui/conf_intro/cftlog), the [exec](../../../command_summary/parameter_intro/exec) parameter, and <a href="../../../../admin_intro/admin_monitoring_intro/housekeeping_logs" class="MCXref xref">Housekeeping for log files</a>.
+See also [CFTLOG](../../../web_copilot_ui/conf_intro/cftlog), the [exec](../../../command_summary/parameter_intro/exec) parameter, and [Housekeeping for log files](../../../../admin_intro/admin_monitoring_intro/housekeeping_logs).
 
 Setting the unified configuration
 ---------------------------------

@@ -88,7 +88,7 @@ SET DEF DKB200:[CFT_EXPORT]
     RENAME DKB200:[CFTREF.CFT322.CFT]RUNTIME.DIR
     DKB200:[CFTREF.CFT322.CFT]RUNTIME_SAVE.DIR
     ```
-1. You can now install the new Transfer CFT version. See <a href="../../c_cft_introduction_vms/installation/t_install_single_host" class="MCXref xref">Installing Transfer CFT on a single host</a>.
+1. You can now install the new Transfer CFT version. See [Installing Transfer CFT on a single host](../../c_cft_introduction_vms/installation/t_install_single_host).
 1. Import the configuration.
     -   Import the configuration that you saved previously in the temporary directory created in [Step 3](#step3_single).
 
@@ -192,7 +192,7 @@ SET DEF DKB200:[CFT_EXPORT]
 - For each additional hostname (n°*x*):
     -   Rename the INSTALL directory:
 
-You can now install the new Transfer CFT version. See <a href="../../c_cft_introduction_vms/t_install_multiple_host" class="MCXref xref">Installing Transfer CFT on multiple hosts</a>.
+You can now install the new Transfer CFT version. See [Installing Transfer CFT on multiple hosts](../../c_cft_introduction_vms/t_install_multiple_host).
 
 Import the configuration that you saved previously in the temporary directory created in [Step 3](#temp_dir_step3).
 

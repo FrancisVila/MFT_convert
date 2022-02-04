@@ -198,7 +198,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | V23 format<br/> V24 format<br/> V23 format<br/> V24 format<br/> Warning | <span id="CFTF30W"></span>CFTF30W PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagc<br/> CFTF30W +PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;str<br/> CFTF30W &amp;diagc &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &gt;<br/> CFTF30W+&amp;str &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &gt; |
 | --- | --- |
 | Explanation | After an error, an additional message or two containing the DIAGC zones are displayed:<br/> • CFTF02E PART=&amp;part IDF=&amp;idf IDT=&amp;idt local file selection error xxxx<br/> • CFTF30W PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagc<br/> • CFTF30W+U=&lt;user&gt; F=&lt;file&gt; PART=&amp;part IDF=&amp;idf IDT=&amp;idt<br/> Where &amp;diagc could be:<br/> • SFM_ALLOC: file not found<br/><br/> • SFM_ALLOC: CFTSU socket: connection refused (this occurs when USERCTRL is set to yes, but the user does not have read-file privileges - Unix only)<br/> • HTTP 403: when using AWS the DNS connection was refused |
-| Action  | If the connection was refused for AWS, check that the server DNS is correctly configured. See the <a href="../../../app_integration_intro/amazon_s3">Amazon 3 (ASW) troubleshooting</a> section. |
+| Action  | If the connection was refused for AWS, check that the server DNS is correctly configured. See the [Amazon 3 (ASW) troubleshooting](../../../app_integration_intro/amazon_s3) section. |
 
 
  
@@ -215,7 +215,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 | V23 format<br/> V24 format<br/> Error | <span id="CFTF32E"></span>CFTF32E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Maximum number of rename retries reached<br/> CFTF32E Maximum number of rename retries reached &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; |
 | --- | --- |
 | Explanation | Maximum number of rename retries reached &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt;. |
-| Action  | Check why the filename exists (when it should not).<br/> Correct filename issue, for example manually rename the filename in question.<br/> Restart the transfer.<br/> See also <a href="../../../app_integration_intro/spoolout">Post-transfer file renaming</a>. |
+| Action  | Check why the filename exists (when it should not).<br/> Correct filename issue, for example manually rename the filename in question.<br/> Restart the transfer.<br/> See also [Post-transfer file renaming](../../../app_integration_intro/spoolout). |
 
 
  
@@ -355,7 +355,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 | V23 format<br/> V24 format<br/> Warning  | <span id="CFTF51W"></span>CFTF51W [Faction or Naction]: The &amp;fname file can't be archived as &amp;archivefname due to reason code &amp;reason<br/> CFTF51W [Faction or Naction]: The &amp;fname file can't be archived as &amp;archivefname due to reason code &amp;reason |
 | --- | --- |
-| Explanation  | Could not move the file at the end of the transfer.<br/> • FACTION: See <a href="">ARCHIVEDIR</a> and <a href="">ARCHIVEFNAME</a> for details.<br/> • NACTION: Specific to the SFTP protocol when using the RECV command. See <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/narchivename">NARCHIVEFNAME</a> for details. |
+| Explanation  | Could not move the file at the end of the transfer.<br/> • FACTION: See [NARCHIVEFNAME]() for details. |
 
 
 

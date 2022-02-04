@@ -4,7 +4,7 @@
     "weight": "270"
 }This section describes how to migrate Transfer CFT 3.0.1 or 3.1.3 to version {{< TransferCFT/PrimaryTransferCFTversionlong  >}}. It is divided in 2 sections, the first section describes migration for a single-node architecture, and the second section describes migration for a multi-node architecture. Lastly, there are instructions explaining what would be needed to migrate from a single-node architecture to multi node architecture.
 
-****Be sure to first read the <a href="../vms_migrate_before_you_start" class="MCXref xref">Before you start</a>.****
+****Be sure to first read the [Before you start](../vms_migrate_before_you_start).****
 
 > **Note**
 >
@@ -19,7 +19,7 @@ Single node architecture
 
 Migrate the PARM, PART, IDF, other static configuration objects, and UCONF parameters as follows:
 
-1. Load the former Transfer CFT 3.0.1 or 3.1.3 environment. See the <a href="../vms_migrate_before_you_start" class="MCXref xref">Before you start</a> for details.
+1. Load the former Transfer CFT 3.0.1 or 3.1.3 environment. See the [Before you start](../vms_migrate_before_you_start) for details.
 1. Export your static configuration objects using the `CFTUTIL CFTEXT` command. Enter:  
     ```
     CFTUTIL CFTEXT type=all, fout=cft-extract.conf

@@ -6,14 +6,14 @@
 
 The following examples show the output from both the server and requester sides.
 
-- <a href="#Example:4" class="MCXref xref">Example: the number of transfers exceeds the CNXINOUT</a>
-- <a href="#Example:3" class="MCXref xref">Example: MAXCNX is greater than MAXTRANS</a>
-- <a href="#Example:4" class="MCXref xref">Example: the number of transfers exceeds the CNXINOUT</a>
-- <a href="#Example:5" class="MCXref xref">Example: MAXCNX greater than MAXTRANS with session limit</a>
+- [Example: the number of transfers exceeds the CNXINOUT](#Example:4)
+- [Example: MAXCNX is greater than MAXTRANS](#Example:3)
+- [Example: the number of transfers exceeds the CNXINOUT](#Example:4)
+- [Example: MAXCNX greater than MAXTRANS with session limit](#Example:5)
 
-See <a href="../session_troubleshooting" class="MCXref xref">Session related troubleshooting</a> for session related output.
+See [Session related troubleshooting](../session_troubleshooting) for session related output.
 
-See the <a href="../faq" class="MCXref xref">Frequently asked questions</a> for common questions and answers on parameter usage, license keys, and so on.
+See the [Frequently asked questions](../faq) for common questions and answers on parameter usage, license keys, and so on.
 
 Remote (partner) diagnostic codes
 ---------------------------------

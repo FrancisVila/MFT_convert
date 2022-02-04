@@ -4,10 +4,10 @@
     "weight": "250"
 }This section describes two optional UNIX-specific tasks that you can perform to enable system user authentication and file system rights, and which are not mutually exclusive.
 
-- <a href="#Manually" class="MCXref xref">Enable the file user rights (USERCTRL)</a>
-    -   <a href="#Automati2" class="MCXref xref">Transfer CFT starts the CFTSU process</a>
-    -   <a href="#Manually2" class="MCXref xref">User starts the CFTSUD process</a>
-- <a href="#Enable2" class="MCXref xref">How to use system user authentication for the user interfaces</a>
+- [Enable the file user rights (USERCTRL)](#Manually)
+    -   [Transfer CFT starts the CFTSU process](#Automati2)
+    -   [User starts the CFTSUD process](#Manually2)
+- [How to use system user authentication for the user interfaces](#Enable2)
 
 <span id="Manually"></span>
 

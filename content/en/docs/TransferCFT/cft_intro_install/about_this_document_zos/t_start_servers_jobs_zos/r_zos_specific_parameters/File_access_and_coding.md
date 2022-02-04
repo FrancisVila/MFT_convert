@@ -6,12 +6,12 @@
 
 This section describes file properties and how to code Transfer CFT filenames.
 
-- <a href="#File%20access%20overview" class="MCXref xref">File access overview</a>
-- <a href="#Coding%20file%20names%20zOS" class="MCXref xref">About coding filenames</a>
-- <a href="#Filename" class="MCXref xref">Filename forms</a>
-- <a href="#Coding%20filenames%20with%20DDNAME" class="MCXref xref">Code filenames with DDNAME </a>
-- <a href="#Coding%20PDS%20filenames" class="MCXref xref">Coding PDS filenames</a>
-- <a href="#Coding%20GDG%20filenames" class="MCXref xref">Code GDG filenames</a>
+- [File access overview](#File%20access%20overview)
+- [About coding filenames](#Coding%20file%20names%20zOS)
+- [Filename forms](#Filename)
+- [Code filenames with DDNAME ](#Coding%20filenames%20with%20DDNAME)
+- [Coding PDS filenames](#Coding%20PDS%20filenames)
+- [Code GDG filenames](#Coding%20GDG%20filenames)
 
 <span id="File access overview"></span>
 

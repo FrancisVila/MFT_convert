@@ -1,7 +1,7 @@
 {
     "title": "Communication  media ",
     "linkTitle": "CFTCOM - Communication media ",
-    "weight": "250"
+    "weight": "240"
 }The CFTCOM object defines the communication media used by {{< TransferCFT/axwayvariablesComponentShortName  >}}.
 You can define as many CFTCOM objects as needed.
 

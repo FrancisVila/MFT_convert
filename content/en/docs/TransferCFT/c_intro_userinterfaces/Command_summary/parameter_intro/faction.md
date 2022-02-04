@@ -85,4 +85,4 @@ The following table shows the combined effect of the FDISP and FACTION parameter
 | z/OS | For VSAM files, only FACTION = ERASE is accepted. |
 
 
-[Return to Command index](../../)<a href="#" class="selected"> </a>
+[Return to Command index](../../)[ ](#)

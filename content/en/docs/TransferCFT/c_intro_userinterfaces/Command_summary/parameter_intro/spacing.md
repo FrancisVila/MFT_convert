@@ -24,6 +24,6 @@ Interval in Kbytes between synchronization points being sent (default = 32767).
     CFTs). Each synchronization point acknowledged may constitute a resumption
     point for a subsequent restart in the event a transfer is interrupted.
 
-If you are using Amazon S3 with Transfer CFT, please see <a href="../../../../app_integration_intro/amazon_s3" class="MCXref xref">Amazon S3/Ceph cloud storage</a>for SPACING recommendations and limitations.
+If you are using Amazon S3 with Transfer CFT, please see [Amazon S3/Ceph cloud storage](../../../../app_integration_intro/amazon_s3)for SPACING recommendations and limitations.
 
 [Return to Command index](../../)

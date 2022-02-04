@@ -17,15 +17,15 @@ For new users
 
 [About {{< TransferCFT/axwayvariablesComponentShortName  >}}](overview_intro/about_transfer_cft)
 
-<a href="overview_intro/c_cg_concepts" class="hyperlink">What are governance services?</a>
+[What are governance services?](overview_intro/c_cg_concepts)
 
 [Use command line](c_intro_userinterfaces/about_cftutil)
 
 [Basic administrative tasks](admin_intro/start_stop_cft)
 
-<a href="troubleshoot_intro/collecting_information/gettingstarted_intro/my_first_transfer_flow_using_cg" class="MCXref xref">My first transfer flow</a>
+[My first transfer flow](troubleshoot_intro/collecting_information/gettingstarted_intro/my_first_transfer_flow_using_cg)
 
-<a href="troubleshoot_intro/collecting_information/gettingstarted_intro/my_first_file_transfer" class="MCXref xref">My first file transfer (CL)</a>
+[My first file transfer (CL)](troubleshoot_intro/collecting_information/gettingstarted_intro/my_first_file_transfer)
 
 [CFTUTIL basics and help](troubleshoot_intro/collecting_information/gettingstarted_intro/my_first_transfer_flow_using_cg)
 
@@ -91,15 +91,15 @@ Third-Party Licenses (login required) [PDF](https://support.axway.com/en/documen
 Additional resources
 --------------------
 
-<a href="https://apidocs.axway.com/swagger-ui/index.html?productname=transfercft&amp;productversion=3.8&amp;filename=transfercft-swagger-api.json" class="hyperlink">Transfer CFT REST API Swagger</a>
+[Transfer CFT REST API Swagger](https://apidocs.axway.com/swagger-ui/index.html?productname=transfercft&amp;productversion=3.8&amp;filename=transfercft-swagger-api.json)
 
-<a href="https://docs.axway.com/bundle/Axway_Products_SupportedPlatforms_allOS_en/resource/Axway_Products_SupportedPlatforms_allOS_en.pdf" class="hyperlink">Axway Supported Platforms</a>
+[Axway Supported Platforms](https://docs.axway.com/bundle/Axway_Products_SupportedPlatforms_allOS_en/resource/Axway_Products_SupportedPlatforms_allOS_en.pdf)
 
-<a href="https://apidocs.axway.com/swagger-ui/index.html?productname=transfercft&amp;productversion=3.8&amp;filename=transfercft-swagger-api.json" class="hyperlink">Axway Flow Manager</a>
+[Axway Flow Manager](https://apidocs.axway.com/swagger-ui/index.html?productname=transfercft&amp;productversion=3.8&amp;filename=transfercft-swagger-api.json)
 
-<a href="https://support.axway.com/" class="hyperlink">Axway Support</a>
+[Axway Support](https://support.axway.com/)
 
-<a href="https://community.axway.com/s/" class="hyperlink">Axway Community</a>
+[Axway Community](https://community.axway.com/s/)
 
 Other
 -----

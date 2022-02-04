@@ -167,7 +167,7 @@ Deploy and install the deployment package
 
 To deploy and install the package:
 
-1. Create or import the `product_name.ANS` file in the `sys$update` directory. See <a href="#Install" class="MCXref xref">Install and generate a deployment package</a> for details.
+1. Create or import the `product_name.ANS` file in the `sys$update` directory. See [Install and generate a deployment package](#Install) for details.
 1. Execute the new installation.
 1. ```
     $@sys$update:vmsinstal cft035 DKB0:[TRANSFER_CFT_V3_5_VMS-ALPHA.INSTALL] OPTIONS A

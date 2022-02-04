@@ -11,7 +11,7 @@ Migrating the configuration
 
 Migrate PARM, PART, IDF and other static configuration objects.
 
-1. Load the Transfer CFT 2.4 environment. See the <a href="../../../../unix_install_start_here/upgrade_start_here/load_the_environment" class="MCXref xref">Migration prerequisites</a> for details.
+1. Load the Transfer CFT 2.4 environment. See the [Migration prerequisites](../../../../unix_install_start_here/upgrade_start_here/load_the_environment) for details.
 
 <!-- -->
 

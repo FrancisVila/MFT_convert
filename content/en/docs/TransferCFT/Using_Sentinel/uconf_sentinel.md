@@ -11,7 +11,7 @@
     -   ssl.version_min
     -   ssl.extension.enable_sni
     -   cft.ipv6.disable_connect
-    -   See <a href="../../admin_intro/uconf/uconf_directory" class="MCXref xref">UCONF parameters</a> for parameter details.
+    -   See [UCONF parameters](../../admin_intro/uconf/uconf_directory) for parameter details.
 - sentinel.trktname: The path to the overflow file, where the maximum number of messages that the overflow file can store is equal to sentinel.xfb.buffer_size (not sentinel.trktmaxmsg).
 - `sentinel.trktmaxmsg`: *Obsolete*. The maximum number of messages in the `sentinel.trktname` overflow file is defined by the sentinel.xfb.buffer_size.
 
@@ -47,7 +47,7 @@ The following table lists the Sentinel parameters in the unified configuration a
 | sentinel.trksharedfile  | No  | TRKSHAREDFILE  |
 | sentinel.trklenmsg  |  | TRKLENMSG  |
 | sentinel.trklocmaxtime  | 300  | TRKLOCMAXTIME  |
-| sentinel.trktmode (*<a href="#*sentinel.TRKTMODE">see below</a>) | RETRY | TRKTMODE  |
+| sentinel.trktmode (*[see below](#*sentinel.TRKTMODE)) | RETRY | TRKTMODE  |
 | sentinel.trktconnretry  | 60 | TRKTCONNRETRY  |
 | sentinel.trkretrydelay  | 10 | TRKRETRYDELAY  |
 | sentinel.trkretrynb  | 6 | TRKRETRYNB  |
@@ -140,4 +140,4 @@ uconfset id=cft.cftlog.time_precision, value=10
 Sentinel cycle link metadata
 ----------------------------
 
-The UCONF `sentinel.xfb.cyclelink.metadata` model defines the metadata attribute that Transfer CFT adds when it generates a Sentinel cycle link message. Please see <a href="../../c_intro_userinterfaces/command_summary/symbolic_variables" class="MCXref xref">Symbolic variables</a> for available symbolic variables.
+The UCONF `sentinel.xfb.cyclelink.metadata` model defines the metadata attribute that Transfer CFT adds when it generates a Sentinel cycle link message. Please see [Symbolic variables](../../c_intro_userinterfaces/command_summary/symbolic_variables) for available symbolic variables.

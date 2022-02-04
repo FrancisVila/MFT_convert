@@ -505,4 +505,4 @@ name &lt;*filename*&gt;:
 
 `          CFTAUTH       ID          =       AUTH2,                           FNAME     =     <filename>`
 
-The authorized or prohibited IDFs are indicated in this file.<a href="#" class="selected"> </a>
+The authorized or prohibited IDFs are indicated in this file.[ ](#)

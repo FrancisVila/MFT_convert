@@ -13,4 +13,4 @@ This function is referred to as transfer serialization. However, a failed
 transfer that has an ****H**** or ****K**** state does not block activation of
 subsequent requests for this same partner.
 
-Please see <a href="../../../app_integration_intro/transfer_serialization" class="MCXref xref">Transfer serialization</a> for a detailed explanation.
+Please see [Transfer serialization](../../../app_integration_intro/transfer_serialization) for a detailed explanation.

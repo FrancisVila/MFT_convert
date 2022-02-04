@@ -17,7 +17,7 @@ Use to display catalog transfers that happened on or before this end date and ti
 - Relative values are: -1, -1M, -1H, -1D
 - Absolute values are: YYYYMMDDhhmmss with a maximum of 14 characters
 
-You can use this parameter in combination with <a href="../datetimemin" class="MCXref xref">datetimemin</a>.
+You can use this parameter in combination with [datetimemin](../datetimemin).
 
 ****Relative example****
 

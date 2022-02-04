@@ -1,7 +1,7 @@
 {
     "title": "General  parameters definition",
     "linkTitle": "CFTPARM - General parameters definition ",
-    "weight": "280"
+    "weight": "270"
 }This topic describes how to define the general {{< TransferCFT/axwayvariablesComponentShortName  >}} parameter, which corresponds to the CFTPARM object
 in the command line operations.
 
