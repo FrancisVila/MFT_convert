@@ -2,7 +2,7 @@
 
 This is a trial for publishing SecureTransport docs with markdown, and also other MFT products. It is branched off the Axway-Open-Docs initiative.
 
-## How to clone and launch on your PC
+## How to clone and launch on your PC 
 
 To try out this repo locally on your computer:
 
