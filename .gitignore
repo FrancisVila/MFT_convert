@@ -1,26 +1,6 @@
-
+build/
 public/
 resources/
 node_modules/
 tech-doc-hugo
 
-# JDT-specific (Eclipse Java Development Tools)
-.classpath
-
-# Eclipse Core
-.project
-.settings/
-
-# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
-*.iml
-.idea/
-
-#Mac
-.DS_Store
-st-convert.key
-
-fontawesome_all/*
-TransferCFTtest/*
-content/en/docs/TransferCFTtest/*
-static/Images/TransferCFTtest/*
-layouts/shortcodes/TransferCFTtest/*
