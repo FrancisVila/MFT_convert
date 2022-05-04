@@ -1,5 +1,5 @@
-baseURL = "https://axway-open-docs.netlify.app/"
-title = "Amplify API Management"
+baseURL = "https://amplify-central.netlify.app/"
+title = "Axway-Open-Docs"
 
 enableRobotsTXT = true
 
@@ -34,7 +34,7 @@ blog = "/:section/:year/:month/:day/:slug/"
 
 ## Markup config
 [markup]
-  #defaultMarkdownHandler = "blackFriday" # goldmark is the default
+  defaultMarkdownHandler = "blackFriday"
   
   [markup.blackFriday]
   plainIDAnchors = true
@@ -47,7 +47,7 @@ blog = "/:section/:year/:month/:day/:slug/"
   
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = true #this overrides the default setting of false and allows goldmark to render HTML as well as Markdown
+      #unsafe = true #this overrides the default setting of false
 
 # Image processing configuration.
 [imaging]
@@ -64,8 +64,8 @@ id = "UA-56643615-3"
 
 [languages]
 [languages.en]
-# title = ""
-# description = ""
+title = "Axway Documentation"
+description = "Axway Documentation"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
@@ -81,7 +81,7 @@ privacy_policy = "https://www.axway.com/en/privacy-statement"
 version_menu = "Releases"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/Axway/axway-open-docs"
+github_repo = "https://github.com/Axway/amplify-central"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
 # github_project_repo = "https://github.com/google/docsy"
 
@@ -115,7 +115,7 @@ footer_about_disable = true
 # If you want this feature, but occasionally need to remove the "Feedback" section from a single page,
 # add "hide_feedback: true" to the page's front matter.
 [params.ui.feedback]
-enable = false
+enable = true
 # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
 yes = 'Glad to hear it! Please <a href="https://github.com/Axway/axway-open-docs/issues/new">tell us how we can improve</a>.'
 no = 'Sorry to hear that. Please <a href="https://github.com/Axway/axway-open-docs/issues/new">tell us how we can improve</a>.'
