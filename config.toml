@@ -1,7 +1,5 @@
-# fvila edited
-# baseURL = "https://axway-open-docs.netlify.app/"
-baseURL = "https://axway-mft-convert.netlify.app/"
-title = "Axway-Open-Docs"
+baseURL = "https://axway-open-docs.netlify.app/"
+title = "Amplify API Management"
 
 enableRobotsTXT = true
 
@@ -10,7 +8,7 @@ theme = ["docsy"]
 
 # Will give values to .Lastmod etc.
 enableGitInfo = true
- 
+
 # Language settings
 contentDir = "content/en"
 defaultContentLanguage = "en"
@@ -66,8 +64,8 @@ id = "UA-56643615-3"
 
 [languages]
 [languages.en]
-title = "MFT documentation"
-description = "MFT documentation"
+# title = ""
+# description = ""
 languageName ="English"
 # Weight used for sorting.
 weight = 1
@@ -96,6 +94,9 @@ github_repo = "https://github.com/Axway/axway-open-docs"
 # Enable Algolia search
 algolia_docsearch = true
 
+# Enable syntax highlighting and copy buttons on code blocks with Prism
+prism_syntax_highlighting = true
+
 # User interface configuration
 [params.ui]
 # Enable to show the side bar menu in its compact state.
@@ -114,7 +115,7 @@ footer_about_disable = true
 # If you want this feature, but occasionally need to remove the "Feedback" section from a single page,
 # add "hide_feedback: true" to the page's front matter.
 [params.ui.feedback]
-enable = true
+enable = false
 # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
 yes = 'Glad to hear it! Please <a href="https://github.com/Axway/axway-open-docs/issues/new">tell us how we can improve</a>.'
 no = 'Sorry to hear that. Please <a href="https://github.com/Axway/axway-open-docs/issues/new">tell us how we can improve</a>.'

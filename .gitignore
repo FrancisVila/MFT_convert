@@ -1,6 +1,7 @@
 
 public/
 resources/
+build/
 node_modules/
 tech-doc-hugo
 
@@ -17,10 +18,3 @@ tech-doc-hugo
 
 #Mac
 .DS_Store
-st-convert.key
-
-fontawesome_all/*
-TransferCFTtest/*
-content/en/docs/TransferCFTtest/*
-static/Images/TransferCFTtest/*
-layouts/shortcodes/TransferCFTtest/*
